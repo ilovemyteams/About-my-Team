@@ -11,8 +11,7 @@
         "@typescript-eslint",
         "react-hooks",
         "unused-imports",
-        "prettier",
-        "plugin:react-hooks/recommended"
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {

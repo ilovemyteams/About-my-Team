@@ -6,9 +6,10 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint --fix",
-        "prepare": "husky install",
-        "lint-staged": "lint-staged",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+        "lint": "eslint --fix",
+        "prepare": "husky",
+        "pre-commit": "lint-staged",
         "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo "
     },
     "dependencies": {
@@ -37,10 +38,10 @@
         "typescript": "^5.3.3"
     },
     "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx}": [
+        "*.*": [
             "eslint --fix",
             "eslint",
-            "prettier --write --ignore-unknown"
+            "prettier --write"
         ]
     },
     "husky": {
