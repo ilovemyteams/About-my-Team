@@ -1,1 +1,6 @@
-{ "Home": { "title": "Назва сайту" } }
+{
+    "Home": {
+        "title": "Назва сайту",
+        "description": "We create immediacy in the digital world: impressive landing pages and turnkey sites"
+    }
+}

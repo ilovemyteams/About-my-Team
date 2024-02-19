@@ -1,8 +1,7 @@
 import React from "react";
+import { getTranslations } from "next-intl/server";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
-import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
     params: { locale },
