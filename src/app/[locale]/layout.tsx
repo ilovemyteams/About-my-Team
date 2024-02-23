@@ -1,7 +1,36 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
-import { Inter } from "next/font/google";
 import "./globals.css";
+
+import localFont from "next/font/local";
+
+const caviar = localFont({
+    src: [
+        {
+            path: "./../fonts/CaviarDreams/CaviarDreams.ttf",
+            weight: "400",
+            style: "normal",
+        },
+
+        {
+            path: "./../fonts/CaviarDreams/CaviarDreams_Bold.ttf",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+    variable: "--font-caviar",
+});
+
+const geist = localFont({
+    src: [
+        {
+            path: "./../fonts/Geist/Geist-Regular.woff2",
+            weight: "400",
+            style: "normal",
+        },
+    ],
+    variable: "--font-geist",
+});
 
 export async function generateMetadata({
     params: { locale },
@@ -16,8 +45,6 @@ export async function generateMetadata({
     };
 }
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function LocaleLayout({
     children,
     params: { locale },
@@ -27,7 +54,9 @@ export default function LocaleLayout({
 }>) {
     return (
         <html lang={locale}>
-            <body className={inter.className}>{children}</body>
+            <body className={`${caviar.variable} ${geist.variable}`}>
+                {children}
+            </body>
         </html>
     );
 }
