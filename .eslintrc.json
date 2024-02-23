@@ -5,13 +5,15 @@
         "next",
         "next/core-web-vitals",
         "plugin:react-hooks/recommended",
+        "plugin:jest/recommended",
         "prettier"
     ],
     "plugins": [
         "@typescript-eslint",
         "react-hooks",
         "unused-imports",
-        "prettier"
+        "prettier",
+        "jest"
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {
