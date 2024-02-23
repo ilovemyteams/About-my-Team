@@ -62,6 +62,12 @@ const config: Config = {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
             },
+            colors: {
+                purple: {
+                    50: "#BFB4FF",
+                    200: "#1F0033",
+                },
+            },
         },
     },
 
