@@ -1,14 +1,13 @@
 import HomeTest from "@/src/components/Home";
 import { useTranslations } from "next-intl";
-import { SmallPageTitle } from "./components/shared/SmallPageTitle";
+import { ServicesSection } from "./components/services/ServicesSection";
 
 export default function Home() {
     const t = useTranslations("Home");
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-            <div className=" bg-purple-200 w-[100vw]">
-                <SmallPageTitle>small page title</SmallPageTitle>
-            </div>
+        <main className="flex min-h-screen flex-col items-center justify-between">
+            <ServicesSection />
+
             <h1 className="font-caviar text-5xl">Fonts (for QA)</h1>
             <div className="flex gap-[40px]">
                 <div>
