@@ -10,20 +10,11 @@ const caviar = localFont({
             weight: "400",
             style: "normal",
         },
-        {
-            path: "./fonts/CaviarDreams/CaviarDreams_Italic.ttf",
-            weight: "400",
-            style: "italic",
-        },
+
         {
             path: "./fonts/CaviarDreams/CaviarDreams_Bold.ttf",
             weight: "700",
             style: "normal",
-        },
-        {
-            path: "./fonts/CaviarDreams/CaviarDreams_BoldItalic.ttf",
-            weight: "700",
-            style: "italic",
         },
     ],
     variable: "--font-caviar",
