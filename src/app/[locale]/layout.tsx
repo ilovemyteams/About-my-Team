@@ -7,13 +7,13 @@ import localFont from "next/font/local";
 const caviar = localFont({
     src: [
         {
-            path: "./../fonts/CaviarDreams/CaviarDreams.ttf",
+            path: "../../fonts/CaviarDreams/CaviarDreams.ttf",
             weight: "400",
             style: "normal",
         },
 
         {
-            path: "./../fonts/CaviarDreams/CaviarDreams_Bold.ttf",
+            path: "../../fonts/CaviarDreams/CaviarDreams_Bold.ttf",
             weight: "700",
             style: "normal",
         },
@@ -24,7 +24,7 @@ const caviar = localFont({
 const geist = localFont({
     src: [
         {
-            path: "./../fonts/Geist/Geist-Regular.woff2",
+            path: "../../fonts/Geist/Geist-Regular.woff2",
             weight: "400",
             style: "normal",
         },
