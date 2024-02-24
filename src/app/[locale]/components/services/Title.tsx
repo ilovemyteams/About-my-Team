@@ -11,7 +11,7 @@ export const Title = () => {
                     <SmallPageTitle className="min-w-[75px] ml-1 mr-3 h-[21px] flex items-center">
                         {t("pageTitle")}
                     </SmallPageTitle>
-                    <span className="">{t("titleFirstRow")}</span>
+                    <span>{t("titleFirstRow")}</span>
                 </div>
                 <span>{t("titleSecondRow")}</span>
             </h2>
