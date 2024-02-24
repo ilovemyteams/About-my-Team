@@ -8,7 +8,7 @@ export const Title = () => {
         <div>
             <h2 className="font-caviar text-5xl flex flex-col">
                 <div className="flex">
-                    <SmallPageTitle className="min-w-[75px] ml-[0.25rem] mr-[0.75rem] h-[21px] flex items-center">
+                    <SmallPageTitle className="min-w-[75px] ml-1 mr-3 h-[21px] flex items-center">
                         {t("pageTitle")}
                     </SmallPageTitle>
                     <span className="">{t("titleFirstRow")}</span>
