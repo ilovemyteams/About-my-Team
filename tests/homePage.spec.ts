@@ -1,8 +1,11 @@
 import { test, expect } from "@playwright/test";
 
-test("homePageNudeTest", async ({ page }) => {
-    await page.goto("/uk", { waitUntil: "load" });
-    await page.getByText("SMALL PAGE TITLE").click();
-    await page.getByText("Назва сайту").click();
-    await page.getByRole("heading", { name: "TEST JEST" }).click();
+test("test", async ({ page }) => {
+    await page.goto("/uk");
+    await expect(
+        page.getByRole("heading", { name: "Fonts (for QA)" })
+    ).toBeVisible();
+    await expect(
+        page.getByRole("heading", { name: "TEST JEST" })
+    ).toBeVisible();
 });
