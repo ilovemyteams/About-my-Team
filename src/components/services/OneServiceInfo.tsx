@@ -9,7 +9,7 @@ export const OneServiceInfo = ({ children, title }: OneServiceInfoProps) => {
                 <div className="w-6 h-6 bg-purple-100"></div>
                 <h3>{title}</h3>
             </div>
-            <div className="font-geist cursor-pointer line-clamp-3 hover:line-clamp-none">
+            <div className="cursor-pointer line-clamp-3 hover:line-clamp-none">
                 {children}
             </div>
         </div>
