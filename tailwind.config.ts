@@ -65,14 +65,20 @@ const config: Config = {
             colors: {
                 purple: {
                     50: "#BFB4FF",
+                    100: "#A258FF",
                     200: "#1F0033",
+                    stroke: "#5F3F87",
                 },
                 white: "#FBF8FF",
+                black: "#000000",
                 grey: "#D4D4D4",
             },
         },
     },
+    variants: {
+        lineClamp: ["hover"],
+    },
 
-    plugins: [],
+    plugins: [require("@tailwindcss/line-clamp")],
 };
 export default config;
