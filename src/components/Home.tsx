@@ -5,7 +5,7 @@ const HomeTest = () => {
         <div>
             <h1>TEST JEST</h1>
         </div>
-        <h1>Test</h1>
+        <h1>Second Test</h1>
     );
 };
 export default HomeTest;
