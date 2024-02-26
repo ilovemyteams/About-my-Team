@@ -81,10 +81,6 @@ const config: Config = {
             },
         },
     },
-    variants: {
-        lineClamp: ["hover"],
-    },
-
-    plugins: [require("@tailwindcss/line-clamp")],
+    plugins: [],
 };
 export default config;
