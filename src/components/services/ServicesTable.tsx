@@ -6,32 +6,32 @@ export const ServicesTable = () => {
 
     return (
         <div className="grid grid-cols-4 grid-rows-2 gap-x-0 gap-y-0">
-            <div className="m-w-[270px] row-span-1 border border-purple-stroke border-t-0 border-l-0">
+            <div className="row-span-1 border border-purple-stroke border-t-0 border-l-0">
                 <OneServiceInfo title={getTranslation("BATitle")}>
                     {getTranslation("BAText")}
                 </OneServiceInfo>
             </div>
-            <div className="m-w-[270px] row-span-1 border border-purple-stroke border-t-0 border-l-0">
+            <div className="row-span-1 border border-purple-stroke border-t-0 border-l-0">
                 <OneServiceInfo title={getTranslation("devTitle")}>
                     {getTranslation("devText")}
                 </OneServiceInfo>
             </div>
-            <div className="m-w-[270px] row-span-1 border border-purple-stroke border-t-0 border-l-0">
+            <div className="row-span-1 border border-purple-stroke border-t-0 border-l-0">
                 <OneServiceInfo title={getTranslation("designTitle")}>
                     {getTranslation("designText")}
                 </OneServiceInfo>
             </div>
-            <div className="m-w-[270px] row-span-1 border-purple-stroke border-b-[1px] ">
+            <div className=" row-span-1 border-purple-stroke border-b-[1px] ">
                 <OneServiceInfo title={getTranslation("QATitle")}>
                     {getTranslation("QAText")}
                 </OneServiceInfo>{" "}
             </div>
-            <div className="m-w-[270px] row-span-1  border-purple-stroke border-r-[1px]">
+            <div className="row-span-1  border-purple-stroke border-r-[1px]">
                 <OneServiceInfo title={getTranslation("consultationTitle")}>
                     {getTranslation("consultationText")}
                 </OneServiceInfo>
             </div>
-            <div className="m-w-[270px] row-span-1  border-purple-stroke border-r-[1px]">
+            <div className=" row-span-1  border-purple-stroke border-r-[1px]">
                 <OneServiceInfo title={getTranslation("allServicesTitle")}>
                     {getTranslation("allServicesText")}
                 </OneServiceInfo>{" "}
@@ -40,6 +40,7 @@ export const ServicesTable = () => {
             <div className="col-span-2 row-span-1 px-4 py-[65px] flex flex-col items-center">
                 <p className="mb-6">{getTranslation("contactUs")}</p>
 
+                {/* TODO:this button will be a generic component */}
                 <button className="w-[258px] h-[56px] text-black bg-purple-stroke">
                     button
                 </button>
