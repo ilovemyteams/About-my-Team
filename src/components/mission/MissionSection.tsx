@@ -1,10 +1,10 @@
 import { Section } from "../shared/Section";
-import { Title } from "./Title";
+import { MissionTitle } from "./MissionTitle";
 
 export const MissionSection = () => {
     return (
         <Section>
-            <Title />
+            <MissionTitle />
         </Section>
     );
 };

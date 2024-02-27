@@ -5,9 +5,12 @@
     },
     "Mission": {
         "pageTitle": "наша місія",
-        "titleFirstRow": "Створюємо вражаючі",
-        "titleSecondRow": "цифрові продукти",
-        "titleThirdRow": "разом з ідеальною командою"
+        "titleFirstWord": "Створюємо ",
+        "titleSecondWord": "вражаючі",
+        "titleThirdWord": "цифрові",
+        "titleFourthWord": " продукти",
+        "titleFifthWord": "разом",
+        "titleOtherWords": " з ідеальною командою"
     },
     "Services": {
         "pageTitle": "послуги",
