@@ -20,5 +20,21 @@
         "allServicesTitle": "Комплексна послгуа",
         "allServicesText": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти На нашому сайті",
         "contactUs": "Отримайте вичерпну консультацію з нашим менеджером, якщо маєте якісь питання, або не можете вибрати послугу, чи маєте сумніви"
+    },
+    "OurTeam": {
+        "pageTitle": "команда",
+        "pageBigTitle": "Обери свою ідеальну команду",
+        "listTitle": "учасники",
+        "listItemDes": "Дизайнери",
+        "listItemDev": "Розробники",
+        "listItemQA": "Тестувальники",
+        "listItemBA": "Бізнес аналітики",
+        "listItemPM": "Проджект менеджери",
+        "participantName": "Сусанна Салата",
+        "participantPosition": "product manager",
+        "hoverButton": "переглянути профіль",
+        "teamsList": "команди",
+        "team1": "Команда I Love My Team",
+        "team2": "Команда Ферма"
     }
 }

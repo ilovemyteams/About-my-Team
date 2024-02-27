@@ -1,5 +1,6 @@
 import HomeTest from "@/src/components/Home";
 import { ServicesSection } from "../../components/services/ServicesSection";
+import { SectionOurTeam } from "@/src/components/sectionOurTeam/SectionOurTeam";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             </div>
             <div className="ml-[80px]">
                 <ServicesSection />
+                <SectionOurTeam />
                 <HomeTest />
             </div>
         </main>
