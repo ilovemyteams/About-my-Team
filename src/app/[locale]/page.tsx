@@ -1,5 +1,6 @@
 import HomeTest from "@/src/components/Home";
 import { ServicesSection } from "../../components/services/ServicesSection";
+import { MissionSection } from "@/src/components/mission/MissionSection";
 import { SectionOurTeam } from "@/src/components/sectionOurTeam/SectionOurTeam";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
                 <p>botton</p>
             </div>
             <div className="ml-[80px]">
+                <MissionSection />
                 <ServicesSection />
                 <SectionOurTeam />
                 <HomeTest />

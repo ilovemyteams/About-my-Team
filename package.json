@@ -9,7 +9,7 @@
         "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
         "lint": "eslint --fix",
         "test": "jest",
-        "prepare": "husky",
+        "prepare": "husky install",
         "pre-commit": "lint-staged",
         "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo "
     },
