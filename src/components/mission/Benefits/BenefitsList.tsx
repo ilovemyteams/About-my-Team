@@ -8,11 +8,11 @@ export const BenefitsList = () => {
         getTranslation("secondBenefit"),
         getTranslation("thirdBenefit"),
     ];
-    console.log(benefitsList);
+
     return (
-        <ul className="flex flex-col justify-center gap-[49px] min-w-[540px] min-h-[298px]">
-            {benefitsList.map((item, idx) => (
-                <BenefitsItem key={idx}>{item}</BenefitsItem>
+        <ul className="flex flex-col justify-center gap-[49px] min-w-[540px] h-[298px]">
+            {benefitsList.map((benefit, idx) => (
+                <BenefitsItem key={idx}>{benefit}</BenefitsItem>
             ))}
         </ul>
     );
