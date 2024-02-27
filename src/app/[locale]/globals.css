@@ -5,6 +5,7 @@
 :root {
     --color-grey: #d4d4d4;
     --background-color: #1f0033;
+    --font-geist: Geist;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,6 +40,7 @@ ul {
 body {
     color: var(--color-grey);
     background-color: var(--background-color);
+    font-family: var(--font-geist);
 }
 
 @layer utilities {
