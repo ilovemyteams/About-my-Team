@@ -7,11 +7,18 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "16px",
+                pc: "60px",
+            },
+        },
         screens: {
-            mobile: "320px",
-            tablet: "768px",
-            laptop: "1280px",
-            desktop: "1536px",
+            mob: "320px",
+            tab: "768px",
+            pc: "1280px",
+            desk: "1536px",
         },
         fontSize: {
             xs: "12px",
@@ -38,6 +45,12 @@ const config: Config = {
             ],
             "2xl": [
                 "24px",
+                {
+                    fontWeight: "700",
+                },
+            ],
+            "3xl": [
+                "28px",
                 {
                     fontWeight: "700",
                 },
@@ -71,14 +84,16 @@ const config: Config = {
             colors: {
                 purple: {
                     50: "#BFB4FF",
+                    100: "#A258FF",
                     200: "#1F0033",
+                    stroke: "#5F3F87",
                 },
                 white: "#FBF8FF",
+                black: "#000000",
                 grey: "#D4D4D4",
             },
         },
     },
-
     plugins: [],
 };
 export default config;

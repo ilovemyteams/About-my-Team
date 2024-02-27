@@ -4,10 +4,18 @@ import { MissionSection } from "@/src/components/mission/MissionSection";
 
 export default function Home() {
     return (
-        <main className="max-w-[1920px] pl-[80px] mx-auto">
-            <MissionSection />
-            <ServicesSection />
-            <HomeTest />
+        <main className="">
+            {/*TO:DO basic styles for the side bar */}
+            <div className="fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 flex flex-col justify-between">
+                <p>top</p>
+                <p>center</p>
+                <p>botton</p>
+            </div>
+            <div className="ml-[80px]">
+                <MissionSection />
+                <ServicesSection />
+                <HomeTest />
+            </div>
         </main>
     );
 }
