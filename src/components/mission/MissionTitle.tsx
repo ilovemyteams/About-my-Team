@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import { SmallPageTitle } from "../shared/SmallPageTitle";
+import { TitleWrapper } from "../shared/TitleWrapper";
 
 export const MissionTitle = () => {
     const getTranslation = useTranslations("Mission");
 
     return (
         <div>
-            <h2 className="font-caviar text-5xl flex items-start">
+            <TitleWrapper className="flex items-start">
                 <SmallPageTitle className="ml-1 mr-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
@@ -30,7 +31,7 @@ export const MissionTitle = () => {
                         {getTranslation("titleOtherWords")}
                     </p>
                 </div>
-            </h2>
+            </TitleWrapper>
         </div>
     );
 };
