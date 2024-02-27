@@ -7,6 +7,13 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "16px",
+                pc: "60px",
+            },
+        },
         screens: {
             mob: "320px",
             tab: "768px",
@@ -38,6 +45,12 @@ const config: Config = {
             ],
             "2xl": [
                 "24px",
+                {
+                    fontWeight: "700",
+                },
+            ],
+            "3xl": [
+                "28px",
                 {
                     fontWeight: "700",
                 },

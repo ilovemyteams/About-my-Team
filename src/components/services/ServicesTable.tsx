@@ -1,3 +1,4 @@
+import { Button } from "../shared/Button";
 import { OneServiceInfo } from "./OneServiceInfo";
 import { useTranslations } from "next-intl";
 
@@ -39,11 +40,8 @@ export const ServicesTable = () => {
 
             <div className="col-span-2 row-span-1 px-4 py-[65px] flex flex-col items-center">
                 <p className="mb-6">{getTranslation("contactUs")}</p>
-
-                {/* TODO:this button will be a generic component */}
-                <button className="w-[258px] h-[56px] text-black bg-purple-stroke">
-                    button
-                </button>
+                {/* TODO: Update button text and styles when design is ready */}
+                <Button>Button</Button>
             </div>
         </div>
     );
