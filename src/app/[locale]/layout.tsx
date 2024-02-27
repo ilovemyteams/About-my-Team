@@ -1,6 +1,7 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import "./globals.css";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 import localFont from "next/font/local";
 
@@ -52,11 +53,15 @@ export default function LocaleLayout({
     children: React.ReactNode;
     params: { locale: string };
 }>) {
+    const messages = useMessages();
+
     return (
         <html lang={locale}>
-            <body className={`${caviar.variable} ${geist.variable}`}>
-                {children}
-            </body>
+            <NextIntlClientProvider locale={locale} messages={messages}>
+                <body className={`${caviar.variable} ${geist.variable}`}>
+                    {children}
+                </body>
+            </NextIntlClientProvider>
         </html>
     );
 }

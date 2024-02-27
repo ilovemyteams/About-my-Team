@@ -15,7 +15,6 @@ const config: Config = {
             },
         },
         screens: {
-            mob: "320px",
             tab: "768px",
             pc: "1280px",
             desk: "1536px",
@@ -72,6 +71,12 @@ const config: Config = {
             ],
         },
         extend: {
+            transitionProperty: {
+                height: "height",
+            },
+            variants: {
+                height: ["responsive", "hover", "focus"],
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
