@@ -8,13 +8,12 @@ export const MissionSection = () => {
     return (
         <Section>
             <MissionTitle />
-            <div className="flex gap-[90px] justify-center">
-                <div className="min-w-[511px] min-h-[530px] ml-[-60px] bg-purple-100"></div>
-                <div className="flex flex-col justify-center gap-[84px]">
-                    <BenefitsList />
-                    <Button className="ml-auto">Button</Button>
-                </div>
+            <div className="relative flex flex-col justify-start items-end gap-y-[84px] ">
+                <div className="absolute top-[-64px] left-0 w-[511px] h-[530px] ml-[-60px] bg-purple-100"></div>
+                <BenefitsList />
+                <Button className="">Button</Button>
             </div>
+
             <StagesList />
         </Section>
     );

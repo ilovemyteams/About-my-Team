@@ -10,7 +10,7 @@ export const StagesList = () => {
         getTranslation("maintenance"),
     ];
     return (
-        <ul className="flex justify-between mt-[52px]">
+        <ul className="flex justify-between mt-[80px]">
             {stagesList.map((stage, idx) => (
                 <li key={idx}>
                     <span className="text-sm text-purple-50">
