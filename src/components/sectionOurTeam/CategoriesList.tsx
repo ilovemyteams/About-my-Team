@@ -14,7 +14,11 @@ export const CategoriesList = () => {
 
     return (
         <ul>
-            <SmallPageTitle>{getTranslation("listTitle")}</SmallPageTitle>
+            <div className="mb-5">
+                <SmallPageTitle className="mb-8">
+                    {getTranslation("listTitle")}
+                </SmallPageTitle>
+            </div>
             {categoriesList.map((category, idx) => (
                 <ListItem key={idx}>{category}</ListItem>
             ))}

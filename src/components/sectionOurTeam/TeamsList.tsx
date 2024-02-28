@@ -6,11 +6,17 @@ export const TeamsList = () => {
     const getTranslation = useTranslations("OurTeam");
     const teamList = [getTranslation("team1"), getTranslation("team2")];
     return (
-        <ul>
-            <SmallPageTitle>{getTranslation("teamsList")}</SmallPageTitle>
-            {teamList.map((team, idx) => (
-                <ListItem key={idx}>{team}</ListItem>
-            ))}    
-        </ul>
+        <>
+            <ul>
+                <div className="mb-5">
+                    <SmallPageTitle>
+                        {getTranslation("teamsList")}
+                    </SmallPageTitle>
+                </div>
+                {teamList.map((team, idx) => (
+                    <ListItem key={idx}>{team}</ListItem>
+                ))}
+            </ul>
+        </>
     );
 };
