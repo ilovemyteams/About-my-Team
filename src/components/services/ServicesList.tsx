@@ -8,44 +8,40 @@ export const ServicesList = () => {
         {
             title: getTranslation("BATitle"),
             text: getTranslation("BAText"),
-            borderClasses:
-                "border-purple-stroke border-b-[1px] pc:border-t-0 tab:border-r-[1px]",
         },
         {
             title: getTranslation("devTitle"),
             text: getTranslation("devText"),
-            borderClasses:
-                "border-purple-stroke border-b-[1px] pc:border-r-[1px]",
         },
         {
             title: getTranslation("designTitle"),
             text: getTranslation("designText"),
-            borderClasses:
-                "border-purple-stroke border-b-[1px] tab:border-r-[1px]",
         },
         {
             title: getTranslation("QATitle"),
             text: getTranslation("QAText"),
-            borderClasses: "border-purple-stroke border-b-[1px]",
         },
         {
             title: getTranslation("consultationTitle"),
             text: getTranslation("consultationText"),
-            borderClasses:
-                "border-purple-stroke border-b-[1px] pc:border-b-0 tab:border-r-[1px]",
         },
         {
             title: getTranslation("allServicesTitle"),
             text: getTranslation("allServicesText"),
-            borderClasses:
-                "border-purple-stroke border-b-[1px] pc:border-b-0 pc:border-r-[1px]",
         },
     ];
 
     return (
         <>
             {serviceItems.map((item, index) => (
-                <li key={index} className={item.borderClasses}>
+                <li
+                    key={index}
+                    className={`border-purple-stroke border-b-[1px] tab:odd:border-r-[1px] 
+                    first-of-type:border-t-[1px] tab:first-of-type:border-t-0
+                    ${(index === 4 || index === 5) && "tab:border-b-0"}
+                    ${index !== 3 ? "pc:border-r-[1px]" : "pc:border-r-0"}
+                    `}
+                >
                     <OneServiceInfo title={item.title}>
                         {item.text}
                     </OneServiceInfo>

@@ -98,9 +98,6 @@ const config: Config = {
             ],
         },
         extend: {
-            transitionProperty: {
-                height: "height",
-            },
             variants: {
                 height: ["responsive", "hover", "focus"],
             },
