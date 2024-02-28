@@ -7,7 +7,7 @@ export default defineConfig({
     testDir: "./tests",
     fullyParallel: true,
     forbidOnly: !!process.env.CI,
-    retries: process.env.CI ? 2 : 0,
+    retries: process.env.CI ? 2 : 0, //This indicates that if the tests are run in a CI environment, they are allowed to make 2 retries on failure (retries), and if the tests are run locally, they are allowed to make no retries (retries: 0).
     workers: process.env.CI ? 1 : undefined,
     reporter: process.env.CI ? "github" : "list",
     use: {
