@@ -7,46 +7,65 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "16px",
+                pc: "60px",
+            },
+        },
+        screens: {
+            mob: "320px",
+            tab: "768px",
+            pc: "1280px",
+            desk: "1536px",
+        },
         fontSize: {
-            xs: " 0.75rem",
-            sm: "0.875rem",
-            base: "1rem",
+            xs: "12px",
+            sm: "14px",
+            base: "16px",
             baseb: [
-                "1.0rem",
+                "16px",
                 {
                     fontWeight: "700",
                 },
             ],
             lg: [
-                "1.125rem",
+                "18px",
                 {
                     fontWeight: "700",
                 },
             ],
-            xl: "1.25rem",
+            xl: "20px",
             xlb: [
-                "1.25rem",
+                "20px",
                 {
                     fontWeight: "700",
                 },
             ],
             "2xl": [
-                "1.5rem",
+                "24px",
+                {
+                    fontWeight: "700",
+                },
+            ],
+            "3xl": [
+                "28px",
                 {
                     fontWeight: "700",
                 },
             ],
             "4xl": [
-                "2.5rem",
+                "40px",
                 {
-                    lineHeight: "3.25rem",
+                    lineHeight: "52px",
                     fontWeight: "700",
                 },
             ],
             "5xl": [
-                "3.0rem",
+                "48px",
                 {
-                    lineHeight: "3.0rem",
+                    lineHeight: "48px",
 
                     fontWeight: "700",
                 },
@@ -65,12 +84,16 @@ const config: Config = {
             colors: {
                 purple: {
                     50: "#BFB4FF",
+                    100: "#A258FF",
                     200: "#1F0033",
+                    stroke: "#5F3F87",
                 },
+                white: "#FBF8FF",
+                black: "#000000",
+                grey: "#D4D4D4",
             },
         },
     },
-
     plugins: [],
 };
 export default config;
