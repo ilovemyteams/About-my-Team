@@ -11,7 +11,7 @@ export const OneServiceInfo = ({ children, title }: OneServiceInfoProps) => {
     const toggleShowMore = () => setIsShownMore(!isShownMore);
 
     return (
-        <div className="flex flex-col justify-between min-h-[190px] pc:h-[270px] pc:px-4 py-6">
+        <div className="flex flex-col justify-between min-h-[190px] pc:h-[270px] tab:px-4 py-6">
             <div className="flex gap-2">
                 <div className="w-6 h-6 bg-purple-100"></div>
                 <h3 className="font-caviar text-xlb">{title}</h3>
