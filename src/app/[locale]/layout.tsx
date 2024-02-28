@@ -1,7 +1,7 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
-import "./globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import "./globals.css";
 
 import localFont from "next/font/local";
 
