@@ -2,11 +2,11 @@ import { useTranslations } from "next-intl";
 
 interface ShowMoreButtonProps {
     toggleShowMore: () => void;
-    isSwownMore: boolean;
+    isShownMore: boolean;
 }
 export const ShowMoreButton = ({
     toggleShowMore,
-    isSwownMore,
+    isShownMore,
 }: ShowMoreButtonProps) => {
     const getTranslation = useTranslations("Services");
 
@@ -15,7 +15,7 @@ export const ShowMoreButton = ({
             onClick={toggleShowMore}
             className="text-start text-purple-100 underline  decoration-solid pc:hidden"
         >
-            {!isSwownMore
+            {!isShownMore
                 ? getTranslation("showMore")
                 : getTranslation("showLess")}
         </button>

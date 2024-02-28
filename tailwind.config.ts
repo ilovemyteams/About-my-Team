@@ -20,37 +20,64 @@ const config: Config = {
             desk: "1536px",
         },
         fontSize: {
-            xs: "12px",
-            sm: "14px",
-            base: "16px",
+            xs: [
+                "12px",
+                {
+                    lineHeight: "15px",
+                },
+            ],
+            sm: [
+                "14px",
+                {
+                    lineHeight: "17px",
+                },
+            ],
+            base: [
+                "16px",
+                {
+                    lineHeight: "20px",
+                },
+            ],
             baseb: [
                 "16px",
                 {
+                    lineHeight: "20px",
                     fontWeight: "700",
                 },
             ],
             lg: [
                 "18px",
                 {
+                    lineHeight: "23px",
                     fontWeight: "700",
                 },
             ],
-            xl: "20px",
+
+            xl: [
+                "20px",
+                {
+                    lineHeight: "25px",
+                },
+            ],
+
             xlb: [
                 "20px",
                 {
+                    lineHeight: "25px",
                     fontWeight: "700",
                 },
             ],
             "2xl": [
                 "24px",
                 {
+                    lineHeight: "30px",
                     fontWeight: "700",
                 },
             ],
             "3xl": [
                 "28px",
                 {
+                    lineHeight: "35px",
                     fontWeight: "700",
                 },
             ],
