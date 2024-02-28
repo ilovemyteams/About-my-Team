@@ -55,7 +55,14 @@ export default function LocaleLayout({
     return (
         <html lang={locale}>
             <body className={`${caviar.variable} ${geist.variable}`}>
-                {children}
+                {/*TO:DO basic styles for the side bar */}
+                <header className="fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 flex flex-col justify-between">
+                    <p>top</p>
+                    <p>center</p>
+                    <p>botton</p>
+                </header>
+                <main>{children}</main>
+                <footer></footer>
             </body>
         </html>
     );
