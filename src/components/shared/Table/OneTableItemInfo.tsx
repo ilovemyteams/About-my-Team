@@ -1,19 +1,28 @@
 "use client";
 import { useState } from "react";
-import { ShowMoreButton } from "../shared/ShowMoreButton";
+import { ShowMoreButton } from "../ShowMoreButton";
+import { ItemNumber } from "./ItemNumber";
 
-interface OneServiceInfoProps {
+interface OneTableItemInfoProps {
     children: string;
     title?: string;
+    isIconShown?: boolean;
+    itemNumber?: number;
 }
-export const OneServiceInfo = ({ children, title }: OneServiceInfoProps) => {
+export const OneTableItemInfo = ({
+    children,
+    title,
+    isIconShown = true,
+    itemNumber,
+}: OneTableItemInfoProps) => {
     const [isShownMore, setIsShownMore] = useState<boolean>(false);
     const toggleShowMore = () => setIsShownMore(!isShownMore);
 
     return (
-        <div className="flex flex-col justify-between min-h-[190px] pc:h-[270px] tab:px-4 py-6">
+        <div className="relative flex flex-col gap-4 min-h-[190px] pc:justify-between pc:min-h-[270px] tab:px-4 py-6">
+            <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2">
-                <div className="w-6 h-6 bg-purple-100"></div>
+                {isIconShown && <div className="w-6 h-6 bg-purple-100"></div>}
                 <h3 className="font-caviar text-xlb">{title}</h3>
             </div>
             <div
@@ -21,7 +30,6 @@ export const OneServiceInfo = ({ children, title }: OneServiceInfoProps) => {
             >
                 {children}
             </div>
-
             <ShowMoreButton
                 toggleShowMore={toggleShowMore}
                 isShownMore={isShownMore}
