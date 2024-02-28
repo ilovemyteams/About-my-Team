@@ -3,7 +3,7 @@ import { Title } from "./Title";
 import { CategoriesList } from "./CategoriesList";
 import { TeamsList } from "./TeamsList";
 
-export const SectionOurTeam = () => {
+export const OurTeamSection = () => {
     return (
         <Section>
             <Title />
