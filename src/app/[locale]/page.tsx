@@ -4,7 +4,7 @@ import { MissionSection } from "@/src/components/mission/MissionSection";
 
 export default function Home() {
     return (
-        <div className="ml-[80px]">
+        <div className="pc:ml-[80px]">
             <MissionSection />
             <ServicesSection />
             <HomeTest />
