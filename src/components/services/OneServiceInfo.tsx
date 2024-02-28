@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ShowMoreButton } from "./ShowMoreButton";
+import { ShowMoreButton } from "../shared/ShowMoreButton";
 
 interface OneServiceInfoProps {
     children: string;
