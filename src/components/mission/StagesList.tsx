@@ -10,9 +10,9 @@ export const StagesList = () => {
         getTranslation("maintenance"),
     ];
     return (
-        <ul className="flex justify-between mt-[80px]">
+        <ul className="flex flex-wrap gap-x-16 gap-y-3 justify-center pc:justify-between mt-[40px] pc:mt-[80px]">
             {stagesList.map((stage, idx) => (
-                <li key={idx}>
+                <li className="min-w-[100px]" key={idx}>
                     <span className="text-sm text-purple-50">
                         {stage.toUpperCase()}
                     </span>
