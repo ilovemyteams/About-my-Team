@@ -1,6 +1,6 @@
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
-import { BenefitsList } from "./sectionBenefits/BenefitsList";
+import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./MissionTitle";
 import { StagesList } from "./StagesList";
 
