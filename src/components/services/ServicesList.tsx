@@ -38,8 +38,10 @@ export const ServicesList = () => {
                     key={index}
                     className={`border-purple-stroke border-b-[1px] tab:odd:border-r-[1px] 
                     first-of-type:border-t-[1px] tab:first-of-type:border-t-0
-                    ${(index === 4 || index === 5) && "tab:border-b-0"}
-                    ${index !== 3 ? "pc:border-r-[1px]" : "pc:border-r-0"}
+                    tab:[&:nth-child(5)]:border-b-0
+                    tab:[&:nth-child(6)]:border-b-0
+                    pc:border-r-[1px]
+                    pc:[&:nth-last-child(4)]:border-r-0
                     `}
                 >
                     <OneServiceInfo title={item.title}>
