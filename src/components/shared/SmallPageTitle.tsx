@@ -14,7 +14,7 @@ export const SmallPageTitle = ({
     const uppercaseChildren = children.toUpperCase();
 
     return (
-        <span className={`font-geist text-sm text-purple-50 ${className} `}>
+        <span className={`text-sm text-purple-50 ${className} `}>
             {uppercaseChildren}
         </span>
     );
