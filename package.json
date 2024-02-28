@@ -1,4 +1,5 @@
 {
+
   "name": "about-my-team",
   "version": "0.1.0",
   "private": true,
@@ -60,6 +61,7 @@
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+
     }
   }
 }
