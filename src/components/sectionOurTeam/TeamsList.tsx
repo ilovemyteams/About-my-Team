@@ -7,12 +7,8 @@ export const TeamsList = () => {
     const teamList = [getTranslation("team1"), getTranslation("team2")];
     return (
         <>
-            <ul>
-                <div className="mb-5">
-                    <SmallPageTitle>
-                        {getTranslation("teamsList")}
-                    </SmallPageTitle>
-                </div>
+            <SmallPageTitle>{getTranslation("teamsList")}</SmallPageTitle>
+            <ul className="mt-5">
                 {teamList.map((team, idx) => (
                     <ListItem key={idx}>{team}</ListItem>
                 ))}

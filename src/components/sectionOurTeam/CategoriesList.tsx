@@ -13,15 +13,15 @@ export const CategoriesList = () => {
     ];
 
     return (
-        <ul>
-            <div className="mb-5">
-                <SmallPageTitle className="mb-8">
-                    {getTranslation("listTitle")}
-                </SmallPageTitle>
-            </div>
-            {categoriesList.map((category, idx) => (
-                <ListItem key={idx}>{category}</ListItem>
-            ))}
-        </ul>
+        <>
+            <SmallPageTitle className="mb-8">
+                {getTranslation("listTitle")}
+            </SmallPageTitle>
+            <ul className="mt-5">
+                {categoriesList.map((category, idx) => (
+                    <ListItem key={idx}>{category}</ListItem>
+                ))}
+            </ul>
+        </>
     );
 };
