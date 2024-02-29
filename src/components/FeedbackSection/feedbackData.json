@@ -2,6 +2,7 @@
     {
         "name": "Medhurst, Quitzon and Ortiz",
         "image": "https://loremflickr.com/640/480/cats",
+        "video": "https://www.youtube.com/watch?v=1wkPMUZ9vX4",
         "type": "lending page",
         "discription": "Quis ab fuga deserunt possimus ducimus voluptatum dolor veritatis. Pariatur provident ipsum. Neque adipisci assumenda reprehenderit consequuntur neque voluptatibus repellat. Iusto incidunt deleniti perspiciatis consequuntur nemo provident. Amet excepturi fuga ex. Beatae possimus doloribus velit voluptates.",
         "id": "1"
@@ -16,6 +17,7 @@
     {
         "name": "Hickle, Aufderhar and Reichert",
         "image": "https://loremflickr.com/640/480/cats",
+        "video": "https://www.youtube.com/watch?v=668nUCeBHyY",
         "type": "інтернет магазин",
         "discription": "Possimus quibusdam doloribus maiores vel sed vitae. Distinctio enim necessitatibus illo repellat nam rem. Aut itaque repudiandae molestias ullam sint.",
         "id": "3"
@@ -30,13 +32,14 @@
     {
         "name": "Fritsch - McKenzie",
         "image": "https://loremflickr.com/640/480/cats",
+        "video": "https://www.youtube.com/watch?v=nqye02H_H6I",
         "type": "корпоративний сайт",
         "discription": "Minus exercitationem quasi. Dicta at illo distinctio eius aliquid nobis. Culpa sed aperiam. Animi praesentium ut officia corporis ratione rerum minima dolorum nam. Cum placeat tenetur velit amet. Iste repudiandae vel nisi magnam reiciendis iste repudiandae.",
         "id": "5"
     },
     {
         "name": "Gulgowski, Adams and Watsica",
-        "image": "https://loremflickr.com/640/480/cats",
+        "image": "https://loremflickr.com/cache/resized/65535_52739371103_565f7dde3f_z_640_480_nofilter.jpg",
         "type": "персональний сайт",
         "discription": "Reiciendis veniam quisquam animi fugit. Atque aperiam officia. Tenetur cum nulla. Voluptates ea magnam ratione eos repellat harum quam sint. Molestiae nisi officiis impedit dolor eos ducimus. Facere beatae occaecati aliquid.",
         "id": "6"
@@ -78,7 +81,7 @@
     },
     {
         "name": "Gerlach - Baumbach",
-        "image": "https://loremflickr.com/640/480/cats",
+        "image": "https://loremflickr.com/cache/resized/65535_52859145479_0c1ddb6433_c_640_480_nofilter.jpg",
         "type": "lending page",
         "discription": "Dolorum cum nemo reprehenderit vitae architecto. Ut repudiandae corrupti maxime beatae natus sed et adipisci occaecati. Ea nisi quasi asperiores dolores harum. Eos quo architecto beatae error tempora ad libero tempora. Nobis magni ea est iste quos atque praesentium dignissimos nesciunt.",
         "id": "12"
