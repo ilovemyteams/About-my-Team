@@ -1,5 +1,5 @@
 import HomeTest from "@/src/components/Home";
-import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/joinTheTeamSection";
+import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
