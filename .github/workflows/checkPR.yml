@@ -13,6 +13,6 @@ jobs:
                   node-version: 20.x.x
                   cache: npm
             - run: npm ci
-            - run: npm lint
-            - run: npm test
+            - run: npm run lint
             - run: npm run type-check
+            - run: npm run test
