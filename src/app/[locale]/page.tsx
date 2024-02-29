@@ -1,6 +1,6 @@
 import HomeTest from "@/src/components/Home";
-import { MissionSection } from "@/src/components/mission/MissionSection";
-import { OurTeamSection } from "@/src/components/sectionOurTeam/OurTeamSection";
+import { MissionSection } from "@/src/components/missionSection/MissionSection";
+import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 
