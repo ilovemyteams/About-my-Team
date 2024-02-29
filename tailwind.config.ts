@@ -116,6 +116,7 @@ const config: Config = {
                     100: "#A258FF",
                     200: "#1F0033",
                     stroke: "#5F3F87",
+                    dark: "#3C1E63",
                 },
                 white: "#FBF8FF",
                 black: "#000000",
