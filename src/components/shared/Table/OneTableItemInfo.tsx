@@ -26,7 +26,6 @@ export const OneTableItemInfo = ({
     useEffect(() => {
         if (contentRef.current) {
             const contentHeight = contentRef.current?.scrollHeight;
-            console.log("Content Height:", contentHeight);
             setIsButtonShown(contentHeight > TEXT_CONTAINER_HEIGHT);
         }
     }, [elementWidth]);
