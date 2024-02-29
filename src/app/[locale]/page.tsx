@@ -5,7 +5,7 @@ import { OurTeamSection } from "@/src/components/sectionOurTeam/OurTeamSection";
 
 export default function Home() {
     return (
-        <div className="ml-[80px]">
+        <div className="pc:ml-[80px]">
             <MissionSection />
             <ServicesSection />
             <OurTeamSection />
