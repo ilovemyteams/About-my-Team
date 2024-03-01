@@ -51,6 +51,7 @@ export const StagesTable = () => {
         <Table>
             <TableItemsList
                 items={stagesItems}
+                isIconShown={false}
                 className={`border-purple-stroke border-b-[1px] 
                 first-of-type:border-t-[1px] 
                 [&:nth-child(5)]:hidden pc:[&:nth-child(5)]:block
