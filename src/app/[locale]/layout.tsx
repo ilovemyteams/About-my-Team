@@ -1,9 +1,10 @@
 import React from "react";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import "./globals.css";
-
 import localFont from "next/font/local";
+import { ThemeProvider } from "../../components/header/themeProvider";
+import { ThemeSwitcher } from "../../components/header/ThemeSwitcher";
+import "./globals.css";
 
 const caviar = localFont({
     src: [
@@ -56,16 +57,22 @@ export default function LocaleLayout({
     const messages = useMessages();
 
     return (
-        <html lang={locale}>
+        <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body className={`${caviar.variable} ${geist.variable}`}>
-                    {/*TO:DO basic styles for the side bar */}
-                    <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between">
-                        <p>top</p>
-                        <p>center</p>
-                        <p>botton</p>
-                    </header>
-                    <main>{children}</main>
+                    <ThemeProvider>
+                        {/*TO:DO basic styles for the side bar */}
+                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between">
+                            <ThemeSwitcher />
+                            <p>top</p>
+                            <p>center</p>
+                            <p>botton</p>
+                        </header>
+                        {/*TO:DO basic styles for the dark theme */}
+                        <main className="dark:bg-purple-200  dark:text-grey text-purple-200">
+                            {children}
+                        </main>
+                    </ThemeProvider>
                     <footer></footer>
                 </body>
             </NextIntlClientProvider>
