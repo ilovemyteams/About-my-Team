@@ -1,4 +1,5 @@
 import HomeTest from "@/src/components/Home";
+import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
@@ -14,6 +15,7 @@ export default function Home() {
             <WriteUsSection />
             <ServicesSection />
             <StagesSection />
+            <HireUsSection />
             <OurTeamSection />
             <HomeTest />
         </div>
