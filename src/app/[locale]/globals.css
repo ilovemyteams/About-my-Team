@@ -37,7 +37,6 @@ ul {
 
 body {
     color: var(--color-grey);
-    background-color: var(--background-color);
     font-family: var(--font-geist);
 }
 
