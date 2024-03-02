@@ -10,7 +10,7 @@ export const HireUsTitle = () => {
                 {getTranslation("pageTitle")}
             </SmallPageTitle>
             <TitleCTAWrapper className="pc:w-[70%]">
-                <p>{getTranslation("title")}</p>
+                {getTranslation("title")}
             </TitleCTAWrapper>
         </div>
     );
