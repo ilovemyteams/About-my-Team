@@ -2,8 +2,8 @@ import React from "react";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
-import { ThemeProvider } from "../../components/header/themeProvider";
-import { ThemeSwitcher } from "../../components/header/ThemeSwitcher";
+import { ThemeProvider } from "@/src/providers/ThemeProvider";
+import { ThemeSwitcher } from "@/src/components/header/ThemeSwitcher";
 import "./globals.css";
 
 const caviar = localFont({
@@ -62,7 +62,7 @@ export default function LocaleLayout({
                 <body className={`${caviar.variable} ${geist.variable}`}>
                     <ThemeProvider>
                         {/*TO:DO basic styles for the side bar */}
-                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between">
+                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between py-2">
                             <ThemeSwitcher />
                             <p>top</p>
                             <p>center</p>
@@ -72,8 +72,8 @@ export default function LocaleLayout({
                         <main className="dark:bg-purple-200  dark:text-grey text-purple-200">
                             {children}
                         </main>
+                        <footer></footer>
                     </ThemeProvider>
-                    <footer></footer>
                 </body>
             </NextIntlClientProvider>
         </html>

@@ -33,7 +33,7 @@ export function ThemeSwitcher() {
                 />
                 <div className="relative w-[66px] h-[28px]">
                     <div
-                        className={`absolute w-[22px] h-[22px] rounded-full translate-y-[3px] 
+                        className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px] 
                         ${resolvedTheme === "dark" ? "translate-x-[40px] bg-grey" : "translate-x-[3px]  bg-purple-200"} 
                         transition-transform duration-300 ease-in-out`}
                     ></div>
