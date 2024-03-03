@@ -1,20 +1,23 @@
 import Image from "next/image";
 import { SmallPageTitle } from "../shared/SmallPageTitle";
+import { TopBox } from "./TopBox";
 
 export const PortfolioCard = () => {
     return (
-        <div>
+        <div className="relative -mx-4">
             <Image
                 src="https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg"
                 alt="Picture"
                 width={320}
                 height={384}
             />
-            <div>Design</div>
-            <div>Logo Design</div>
-            <div>Web Development</div>
-            <div>
-                <p>01</p>
+            <div className="flex">
+                <div>
+                    <TopBox>Design</TopBox>
+                    <TopBox>Logo Design</TopBox>
+                    <TopBox>Web Development</TopBox>
+                </div>
+                <TopBox>01</TopBox>
             </div>
             <div>
                 <h4>I love my team</h4>
