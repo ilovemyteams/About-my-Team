@@ -4,13 +4,11 @@
 
 :root {
     --color-grey: #d4d4d4;
-    --background-color: #1f0033;
     --font-geist: Geist;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #1f0033;
         --color-grey: #d4d4d4;
     }
 }
@@ -39,7 +37,6 @@ ul {
 
 body {
     color: var(--color-grey);
-    background-color: var(--background-color);
     font-family: var(--font-geist);
 }
 
