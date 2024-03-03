@@ -3,6 +3,17 @@
         "title": "Назва сайту",
         "description": "Створюємо миттєвість у цифровому світі: ефектні лендінги та сайти під ключ"
     },
+    "Portfolio": {
+        "pageTitle": "портфоліо",
+        "titleMob": "Реалізовані проекти, які вже допомагають розвивати ідеї та бізнес наших замовників",
+        "titleFirstWord": "Реалізовані ",
+        "titleSecondWord": "проекти, ",
+        "titleThirdWord": "які вже ",
+        "titleFourthWord": "допомагають ",
+        "titleFifthWord": "розвивати ідеї",
+        "titleSixthWord": "та бізнес нашим ",
+        "titleSeventhWord": "замовникам"
+    },
     "Mission": {
         "pageTitle": "наша місія",
         "titleFirstWord": "Створюємо ",
