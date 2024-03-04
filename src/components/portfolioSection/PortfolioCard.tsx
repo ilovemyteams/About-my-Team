@@ -1,14 +1,23 @@
 import Image from "next/image";
 import { TopBox } from "./TopBox";
 import { BottomBox } from "./BottomBox";
+import { PortfolioDataItem } from "./portfolioData";
+import { useTranslations } from "next-intl";
 
-export const PortfolioCard = () => {
+interface PortfolioItemProps {
+    item: PortfolioDataItem;
+}
+
+export const PortfolioCard = ({ item }: PortfolioItemProps) => {
+    const getTranslation = useTranslations();
+    const { image, siteView, description, name } = item;
+    const siteTypeUp = siteView.toUpperCase();
     return (
         <>
             <div className="relative -mx-4 w-80 h-96">
                 <Image
-                    src="https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg"
-                    alt="Picture"
+                    src={image}
+                    alt={name}
                     fill
                     style={{
                         objectFit: "cover",
@@ -26,17 +35,13 @@ export const PortfolioCard = () => {
 
                 <div className="absolute bottom-6 mx-4">
                     <BottomBox className="font-caviar font-bold text-xl mb-1">
-                        I love my team
+                        {getTranslation(`${name}`)}
                     </BottomBox>
 
                     <BottomBox className="text-sm font-normal text-purple-50 mb-3">
-                        ЛЕНДІНГ
+                        {siteTypeUp}
                     </BottomBox>
-                    <BottomBox>
-                        На нашому сайті ви знайдете інформацію про вже
-                        реалізовані проекти та команди, які стояли за їхнім
-                        створенням,
-                    </BottomBox>
+                    <BottomBox>{getTranslation(`${description}`)}</BottomBox>
                 </div>
             </div>
         </>
