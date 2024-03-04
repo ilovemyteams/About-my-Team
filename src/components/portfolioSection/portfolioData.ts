@@ -37,7 +37,7 @@ export const PortfolioData = (): PortfolioDataItem[] => {
         },
         {
             name: getTranslation("siteNameWithId4"),
-            image: "https://loremflickr.com/640/480/cats",
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg",
             siteView: getTranslation("businessCard"),
             description: getTranslation("descriptionId4"),
             id: "04",
