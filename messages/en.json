@@ -2,5 +2,8 @@
     "Home": {
         "title": "App Title",
         "description": "We create immediacy in the digital world: impressive landing pages and turnkey sites"
+    },
+    "Mission": {
+        "pageTitle": "our mission"
     }
 }

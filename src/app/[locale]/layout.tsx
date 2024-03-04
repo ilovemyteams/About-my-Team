@@ -3,7 +3,6 @@ import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
-import { ThemeSwitcher } from "@/src/components/header/ThemeSwitcher";
 import "./globals.css";
 
 const caviar = localFont({
@@ -62,8 +61,7 @@ export default function LocaleLayout({
                 <body className={`${caviar.variable} ${geist.variable}`}>
                     <ThemeProvider>
                         {/*TO:DO basic styles for the side bar */}
-                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between py-2">
-                            <ThemeSwitcher />
+                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-tranarent pc:flex flex-col justify-between py-2">
                             <p>top</p>
                             <p>center</p>
                             <p>botton</p>
