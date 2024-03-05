@@ -26,12 +26,12 @@ export const PortfolioCarouselVertical: React.FC<
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <section className="min-w-full">
-            <div className="overflow-hidden -mx-4  h-296" ref={emblaRef}>
-                <div className="embla__container flex flex-col gap-4  bg-white">
+        <section className="min-w-full ">
+            <div className="overflow-hidden h-[784px] bg-white" ref={emblaRef}>
+                <div className="embla__container flex flex-col h-96 -mt-4">
                     {projects.map(project => (
                         <div
-                            className="embla__slide flex-[0_0_100%] "
+                            className="embla__slide flex-[0_0_50%] pt-4 w-full"
                             key={project.id}
                         >
                             <PortfolioCard item={project} />
