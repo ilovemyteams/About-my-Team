@@ -58,7 +58,11 @@ export default function LocaleLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                <body className={`${caviar.variable} ${geist.variable}`}>
+                <body
+                    className={`${caviar.variable} ${geist.variable}  
+                    after:h-[220px] after:content-heart after:absolute after:bottom-0 after:left-[17px] after:overflow-hidden
+                    before:content-triangles before:absolute before:bottom-[50%] before:translate-y-[50%] before:right-0 before:overflow-hidden`}
+                >
                     <ThemeProvider>
                         {/*TO:DO basic styles for the side bar */}
                         <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-tranarent pc:flex flex-col justify-between py-2">
