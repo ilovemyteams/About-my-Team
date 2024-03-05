@@ -2,6 +2,7 @@ import HomeTest from "@/src/components/Home";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
+import { QaSection } from "@/src/components/sectionQA/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 
@@ -12,6 +13,7 @@ export default function Home() {
             <JoinTheTeamSection />
             <ServicesSection />
             <StagesSection />
+            <QaSection />
             <OurTeamSection />
             <HomeTest />
         </div>
