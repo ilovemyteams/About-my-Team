@@ -4,16 +4,18 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import useEmblaCarousel from "embla-carousel-react";
 import { NextButton, PrevButton, usePrevNextButtons } from "./ArrowVertical";
+import { PortfolioDataItem } from "../portfolioData";
+import { PortfolioCard } from "../PortfolioCard";
 
 type PortfolioCarouselVerticalProps = {
-    slides: number[];
+    projects: PortfolioDataItem[];
     options?: EmblaOptionsType;
 };
 
 export const PortfolioCarouselVertical: React.FC<
     PortfolioCarouselVerticalProps
 > = props => {
-    const { slides, options } = props;
+    const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
     const {
@@ -25,16 +27,14 @@ export const PortfolioCarouselVertical: React.FC<
 
     return (
         <section className="min-w-full">
-            <div className="overflow-hidden -mx-4" ref={emblaRef}>
-                <div className="embla__container h-96 backface-hidden flex flex-col gap-4  bg-white">
-                    {slides.map(index => (
+            <div className="overflow-hidden -mx-4  h-296" ref={emblaRef}>
+                <div className="embla__container flex flex-col gap-4  bg-white">
+                    {projects.map(project => (
                         <div
                             className="embla__slide flex-[0_0_100%] "
-                            key={index}
+                            key={project.id}
                         >
-                            <div className="embla__slide__number">
-                                {index + 1}
-                            </div>
+                            <PortfolioCard item={project} />
                         </div>
                     ))}
                 </div>
