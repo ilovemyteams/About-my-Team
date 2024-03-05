@@ -130,6 +130,13 @@ const config: Config = {
                 triangles: 'url("/images/Triangles.svg")',
             },
         },
+        backgroundImage: {
+            bgImage: 'url("/images/bgImage.png")',
+            heart: 'url("/images/Heart.svg")',
+            triangles: 'url("/images/Triangles.svg")',
+            portfolioGradient:
+                "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+        },
     },
     plugins: [],
 };

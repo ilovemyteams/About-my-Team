@@ -59,9 +59,11 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable}  
-                    after:h-[220px] after:content-heart after:absolute after:bottom-0 after:left-[17px] after:overflow-hidden
-                    before:content-triangles before:absolute before:bottom-[50%] before:translate-y-[50%] before:right-0 before:overflow-hidden`}
+                    className={`${caviar.variable} ${geist.variable} 
+                    h-[100vh] bg-purple-200
+                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  after:z-[-1]
+                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
+                    `}
                 >
                     <ThemeProvider>
                         {/*TO:DO basic styles for the side bar */}
@@ -71,9 +73,7 @@ export default function LocaleLayout({
                             <p>botton</p>
                         </header>
                         {/*TO:DO basic styles for the dark theme */}
-                        <main className="dark:bg-purple-200  dark:text-grey text-purple-200">
-                            {children}
-                        </main>
+                        <main>{children}</main>
                         <footer></footer>
                     </ThemeProvider>
                 </body>
