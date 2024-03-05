@@ -51,17 +51,17 @@ export const PortfolioData = (): PortfolioDataItem[] => {
             id: "04",
         },
         {
-            name: getTranslation("siteNameWithId4"),
+            name: getTranslation("siteNameWithId5"),
             image: "https://loremflickr.com/640/480/cats",
 
             siteView: getTranslation("corporateSite"),
             implementations: ["Design", "Logo Design", "Web Development"],
 
-            description: getTranslation("descriptionId4"),
+            description: getTranslation("descriptionId5"),
             id: "05",
         },
         {
-            name: getTranslation("siteNameWithId4"),
+            name: getTranslation("siteNameWithId6"),
             image: "https://loremflickr.com/640/480/cats",
             siteView: getTranslation("blog"),
             implementations: [
@@ -70,7 +70,7 @@ export const PortfolioData = (): PortfolioDataItem[] => {
                 "Testing",
             ],
 
-            description: getTranslation("descriptionId4"),
+            description: getTranslation("descriptionId6"),
             id: "06",
         },
     ];
