@@ -5,12 +5,14 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { NextButton, PrevButton, usePrevNextButtons } from "./ArrowVertical";
 
-type PropType = {
+type PortfolioCarouselVerticalProps = {
     slides: number[];
     options?: EmblaOptionsType;
 };
 
-const PortfolioCarouselVertical: React.FC<PropType> = props => {
+export const PortfolioCarouselVertical: React.FC<
+    PortfolioCarouselVerticalProps
+> = props => {
     const { slides, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
@@ -53,5 +55,3 @@ const PortfolioCarouselVertical: React.FC<PropType> = props => {
         </section>
     );
 };
-
-export default PortfolioCarouselVertical;

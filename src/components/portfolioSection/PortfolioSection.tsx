@@ -1,7 +1,7 @@
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { PortfolioCarousel } from "./PortfolioCarousel";
-import PortfolioCarouselVertical from "./PortfolioCarouselVertical";
+import { PortfolioCarouselVertical } from "./PortfolioCarouselVertical";
 import { PortfolioTitle } from "./PortfolioTitle";
 import { EmblaOptionsType } from "embla-carousel";
 
