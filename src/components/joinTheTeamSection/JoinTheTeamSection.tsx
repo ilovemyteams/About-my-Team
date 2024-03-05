@@ -10,7 +10,7 @@ export const JoinTheTeamSection = () => {
             <TitleCTAWrapper className="pc:w-[70%]">
                 {getTranslation("title")}
             </TitleCTAWrapper>
-            <Button>Button</Button>
+            <Button color="grey">Долучитися</Button>
         </SectionCTA>
     );
 };
