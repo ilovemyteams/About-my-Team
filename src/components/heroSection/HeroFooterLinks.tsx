@@ -7,12 +7,14 @@ export const HeroFooterLinks = () => {
 
     return (
         <div className="flex justify-between items-baseline mt-8">
-            <Image
-                src="/images/CoffeeCup.svg"
-                width={31}
-                height={45}
-                alt="Buy me a coffe logo"
-            />
+            <Link href="#" target="_blank" className="pointer">
+                <Image
+                    src="/images/CoffeeCup.svg"
+                    width={31}
+                    height={45}
+                    alt="Buy me a coffe logo"
+                />
+            </Link>
             <Link href="#portfolio" className="pointer">
                 {getTranslation("portfolioLink")}
             </Link>

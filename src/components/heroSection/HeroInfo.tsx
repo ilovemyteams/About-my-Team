@@ -14,7 +14,7 @@ export const HeroInfo = () => {
                 similique, a perspiciatis.
             </p>
             <div className="flex flex-col gap-6 mt-[96px]">
-                <Button>{getTranslation("joinUs")}</Button>
+                <Button color="grey">{getTranslation("joinUs")}</Button>
                 <Button>{getTranslation("order")}</Button>
             </div>
         </div>

@@ -13,7 +13,7 @@ export const Button = ({ children, color = "red", className }: ButtonProps) => {
             hover:after:transition-opacity hover:after:duration-500 hover:after:ease-out hover:before:transition-opacity hover:before:duration-500 hover:before:ease-out after:content-[''] after:absolute after:bottom-[2px] 
              after:left-0 after:h-[1px] after:w-[270px] after:opacity-0 
              before:content-[''] before:absolute before:bottom-[5px] before:left-0 before:h-[1px] before:w-[270px]
-             before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 hover:before:delay-700 focus:before:opacity-100 focus:after:opacity-0 focus:outline-none focus-within:outline-none ${className}`}
+             before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 pc:hover:before:delay-700 focus:before:opacity-100 focus:after:opacity-0 focus:outline-none focus-within:outline-none ${className}`}
         >
             {children.toLowerCase()}
         </button>
