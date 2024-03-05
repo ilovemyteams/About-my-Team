@@ -1,7 +1,5 @@
-import { ReactNode } from "react";
-
 interface TitleCTAWrapperProps {
-    children: ReactNode;
+    children: string;
     className?: string;
 }
 

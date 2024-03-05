@@ -6,6 +6,7 @@ const config: Config = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
+    darkMode: "class",
     theme: {
         container: {
             center: true,
@@ -122,6 +123,7 @@ const config: Config = {
                 white: "#FBF8FF",
                 black: "#000000",
                 grey: "#D4D4D4",
+                red: "#FB7185",
             },
         },
     },
