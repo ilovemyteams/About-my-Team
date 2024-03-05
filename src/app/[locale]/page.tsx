@@ -1,4 +1,5 @@
 import HomeTest from "@/src/components/Home";
+import FeedbackSection from "@/src/components/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
@@ -13,6 +14,7 @@ export default function Home() {
         <div className="pc:ml-[80px] h-[100vh] overflow-y-auto">
             <HeroSection />
             <MissionSection />
+            <FeedbackSection />
             <JoinTheTeamSection />
             <WriteUsSection />
             <ServicesSection />
