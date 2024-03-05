@@ -2,5 +2,8 @@
     "Home": {
         "title": "Nazwa aplikacji",
         "description": "Tworzenie bezpośredniości w cyfrowym świecie: imponujące witryny pod klucz"
+    },
+    "Mission": {
+        "pageTitle": "nasza misja"
     }
 }

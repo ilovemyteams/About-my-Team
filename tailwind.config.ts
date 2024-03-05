@@ -123,6 +123,7 @@ const config: Config = {
                 white: "#FBF8FF",
                 black: "#000000",
                 grey: "#D4D4D4",
+                red: "#FB7185",
             },
         },
     },
