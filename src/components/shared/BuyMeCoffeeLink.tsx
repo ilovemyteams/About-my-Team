@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BUY_ME_COFFEE = "https://www.buymeacoffee.com/susanna.salata";
 
-export const BuyMeCoffee = () => {
+export const BuyMeCoffeeLink = () => {
     return (
         <Link
             href={BUY_ME_COFFEE}
