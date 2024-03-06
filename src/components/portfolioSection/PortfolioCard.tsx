@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { TopBox } from "./TopBox";
-import { BottomBox } from "./BottomBox";
+
 import { PortfolioDataItem } from "./portfolioData";
 
 interface PortfolioItemProps {
@@ -25,22 +24,22 @@ export const PortfolioCard = ({ item }: PortfolioItemProps) => {
                 <div className="flex absolute mt-6 mx-4">
                     <div>
                         {implementations.map((implementation, index) => (
-                            <TopBox key={index} className="mr-2 mb-2">
+                            <div key={index} className="mr-2 mb-2">
                                 {implementation}
-                            </TopBox>
+                            </div>
                         ))}
                     </div>
-                    <TopBox className="h-8">{id}</TopBox>
+                    <div className="h-8">{id}</div>
                 </div>
 
                 <div className="absolute bottom-6 mx-4">
-                    <BottomBox className="font-caviar font-bold text-xl mb-1">
+                    <div className="font-caviar font-bold text-xl mb-1">
                         {name}
-                    </BottomBox>
+                    </div>
 
-                    <BottomBox className="text-sm font-normal text-purple-50 mb-3">
+                    <div className="text-sm font-normal text-purple-50 mb-3">
                         {siteTypeUp}
-                    </BottomBox>
+                    </div>
                 </div>
             </div>
         </>
