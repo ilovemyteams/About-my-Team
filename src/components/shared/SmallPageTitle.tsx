@@ -15,7 +15,7 @@ export const SmallPageTitle = ({
 
     return (
         <span
-            className={`inline-block mb-2 tab:mb-0 text-sm text-purple-50 ${className} `}
+            className={`inline-block mb-2 tab:mb-0 text-sm text-red ${className} `}
         >
             {uppercaseChildren}
         </span>
