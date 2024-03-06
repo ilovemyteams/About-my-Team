@@ -22,7 +22,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId1"),
             siteView: getTranslation("lending"),
             linkToSite: "www.selo",
-            feedback: getTranslation("feddbackId1"),
+            feedback: getTranslation("feedbackId1"),
             id: "01",
         },
         {
@@ -32,7 +32,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId2"),
             siteView: getTranslation("site"),
             linkToSite: "www.alisainwonderworld",
-            feedback: getTranslation("feddbackId2"),
+            feedback: getTranslation("feedbackId2"),
             id: "02",
         },
         {
@@ -43,7 +43,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId3"),
             siteView: getTranslation("internetShop"),
             linkToSite: "www.smaragdovemisto",
-            feedback: getTranslation("feddbackId3"),
+            feedback: getTranslation("feedbackId3"),
             id: "03",
         },
         {
@@ -53,7 +53,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId4"),
             siteView: getTranslation("businessCard"),
             linkToSite: "www.baron",
-            feedback: getTranslation("feddbackId4"),
+            feedback: getTranslation("feedbackId4"),
             id: "04",
         },
         {
@@ -63,7 +63,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId5"),
             siteView: getTranslation("corporateSite"),
             linkToSite: "www.malomander",
-            feedback: getTranslation("feddbackId5"),
+            feedback: getTranslation("feedbackId5"),
             id: "05",
         },
         {
@@ -73,7 +73,7 @@ export const FeedbackData = (): FeedbackDataItem[] => {
             reviewerRole: getTranslation("reviewerRoleWId6"),
             siteView: getTranslation("blog"),
             linkToSite: "www.judimudi",
-            feedback: getTranslation("feddbackId6"),
+            feedback: getTranslation("feedbackId6"),
             id: "06",
         },
     ];
