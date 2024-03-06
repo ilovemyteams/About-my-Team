@@ -15,14 +15,15 @@ export default function Home() {
         <div className="pc:ml-[80px] h-[100vh] overflow-y-auto">
             <HeroSection />
             <MissionSection />
-            <FeedbackSection />
             <PortfolioSection />
             <JoinTheTeamSection />
+            <FeedbackSection />
             <WriteUsSection />
             <ServicesSection />
+            <JoinTheTeamSection />
             <StagesSection />
-            <HireUsSection />
             <OurTeamSection />
+            <HireUsSection />
             <HomeTest />
         </div>
     );
