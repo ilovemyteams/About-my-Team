@@ -1,34 +1,64 @@
 "use client";
-import React, { useCallback } from "react";
+import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { EmblaOptionsType } from "embla-carousel";
 
-export function PortfolioCarousel() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-    const scrollPrev = useCallback(() => {
-        if (emblaApi) emblaApi.scrollPrev();
-    }, [emblaApi]);
-    const scrollNext = useCallback(() => {
-        if (emblaApi) emblaApi.scrollNext();
-    }, [emblaApi]);
+import { PortfolioDataItem } from "../portfolioData";
+import { PortfolioCard } from "../PortfolioCard";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "../../portfolioSection/Slider/ArrowVertical";
+
+type PortfolioCarouselProps = {
+    projects: PortfolioDataItem[];
+    options?: EmblaOptionsType;
+};
+
+export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
+    const { projects, options } = props;
+    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+
+    // const scrollPrev = useCallback(() => {
+    //     if (emblaApi) emblaApi.scrollPrev();
+    // }, [emblaApi]);
+    // const scrollNext = useCallback(() => {
+    //     if (emblaApi) emblaApi.scrollNext();
+    // }, [emblaApi]);
+    const {
+        prevBtnDisabled,
+        nextBtnDisabled,
+        onPrevButtonClick,
+        onNextButtonClick,
+    } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className="embla ">
-            <div className="embla__viewport overflow-hidden" ref={emblaRef}>
-                <div className="embla__container flex  ">
-                    <div className="embla__slide flex-[0_0_100%]">Slide 1</div>
-                    <div className="embla__slide flex-[0_0_100%]">Slide 2</div>
-                    <div className="embla__slide flex-[0_0_100%]">Slide 3</div>
-                    <div className="embla__slide flex-[0_0_100%]">Slide 4</div>
-                    <div className="embla__slide flex-[0_0_100%]">Slide 5</div>
-                    <div className="embla__slide flex-[0_0_100%]">Slide 6</div>
+        <div className="embla min-w-full">
+            <div className="overflow-hidden" ref={emblaRef}>
+                <div className=" flex ">
+                    {projects.map(project => (
+                        <div
+                            key={project.id}
+                            className="embla__slide flex-[0_0_50%] w-full"
+                        >
+                            <PortfolioCard item={project} />
+                        </div>
+                    ))}
                 </div>
-                <button className="embla__prev" onClick={scrollPrev}>
-                    Prev
-                </button>
-                <button className="embla__next" onClick={scrollNext}>
-                    Next
-                </button>
+                <div className="embla__controls">
+                    <div className="embla__buttons">
+                        <PrevButton
+                            onClick={onPrevButtonClick}
+                            disabled={prevBtnDisabled}
+                        />
+                        <NextButton
+                            onClick={onNextButtonClick}
+                            disabled={nextBtnDisabled}
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
-}
+};
