@@ -6,6 +6,7 @@ import { FeedbackData } from "./feedbackData";
 
 const feedbackItems = FeedbackData();
 const feedbackItem = feedbackItems[1];
+console.log(feedbackItem);
 
 const FeedbackSection = () => {
     return (
