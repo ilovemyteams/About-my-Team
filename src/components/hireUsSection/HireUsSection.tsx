@@ -1,25 +1,29 @@
 import { useTranslations } from "next-intl";
 import { Button } from "../shared/Button";
 import { SectionCTA } from "../shared/SectionCTA";
-import { HireUsTitle } from "./HireUsTitle";
+import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 
 export const HireUsSection = () => {
-    const getTranslation = useTranslations("HireUs");
+    const getTranslation = useTranslations();
     return (
         <SectionCTA className="">
-            <HireUsTitle />
+            <TitleCTAWrapper className="pc:w-[70%]">
+                {getTranslation("HireUs.title")}
+            </TitleCTAWrapper>
             <div className="flex justify-between items-center mt-[100px]">
                 <div className="text-base">
-                    <p className="mb-4">{getTranslation("workingHours")}</p>
+                    <p className="mb-4">
+                        {getTranslation("HireUs.workingHours")}
+                    </p>
                     <a
-                        href={`mailto:${getTranslation("email")}`}
+                        href={`mailto:${getTranslation("HireUs.email")}`}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {getTranslation("email")}
+                        {getTranslation("HireUs.email")}
                     </a>
                 </div>
-                <Button>Button</Button>
+                <Button>{getTranslation("Buttons.order")}</Button>
             </div>
         </SectionCTA>
     );
