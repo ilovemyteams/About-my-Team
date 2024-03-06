@@ -118,6 +118,8 @@ const config: Config = {
                     200: "#1F0033",
                     300: "#54148A",
                     stroke: "#5F3F87",
+                    stroke03: "rgba(162, 88, 255, 0.3)",
+
                     dark: "#3C1E63",
                 },
                 white: "#FBF8FF",

@@ -5,7 +5,15 @@ const BUY_ME_COFFEE = "https://www.buymeacoffee.com/susanna.salata";
 
 export const BuyMeCoffee = () => {
     return (
-        <Link href={BUY_ME_COFFEE} target="_blank" className="pointer">
+        <Link
+            href={BUY_ME_COFFEE}
+            target="_blank"
+            className="pointer relative w-[48px] h-[48px] flex justify-center items-center
+            after:content-[''] after:absolute after:w-[48px] after:h-[48px] after:top-0 after:left-0 
+            hover:after:transition-opacity hover:after:duration-500 hover:after:ease-out
+            after:opacity-0 after:bg-purple-stroke03 
+            hover:after:opacity-100 hover:after:blur-[2px] hover:after:rounded-full 	"
+        >
             <Image
                 src="/images/CoffeeCup.svg"
                 width={31}
