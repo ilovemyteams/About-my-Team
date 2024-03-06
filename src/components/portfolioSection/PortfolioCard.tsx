@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { TopBox } from "./TopBox";
-import { BottomBox } from "./BottomBox";
 import { PortfolioDataItem } from "./portfolioData";
 
 interface PortfolioItemProps {
@@ -12,35 +10,40 @@ export const PortfolioCard = ({ item }: PortfolioItemProps) => {
     const siteTypeUp = siteView.toUpperCase();
     return (
         <>
-            <div className="relative w-80 h-96">
+            <div className="relative min-w-[50%] h-[400px]">
                 <Image
                     src={image}
                     alt={name}
                     fill
+                    sizes="min-w-[50%] h-[400px]"
                     style={{
                         objectFit: "cover",
                     }}
                 />
+                <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioGradient">
+                    <div className="absolute top-5 left-5">
+                        <h3 className="font-caviar font-bold text-xl mb-1">
+                            {name}
+                        </h3>
 
-                <div className="flex absolute mt-6 mx-4">
-                    <div>
-                        {implementations.map((implementation, index) => (
-                            <TopBox key={index} className="mr-2 mb-2">
-                                {implementation}
-                            </TopBox>
-                        ))}
+                        <p className="text-sm font-bold text-purple-50 mb-4">
+                            {siteTypeUp}
+                        </p>
+
+                        <div className="flex gap-2">
+                            {implementations.map((implementation, index) => (
+                                <div
+                                    key={index}
+                                    className="font-caviar font-bold text-base px-3 py-[6px] border border-[#D4D4D4]"
+                                >
+                                    {implementation}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                    <TopBox className="h-8">{id}</TopBox>
-                </div>
-
-                <div className="absolute bottom-6 mx-4">
-                    <BottomBox className="font-caviar font-bold text-xl mb-1">
-                        {name}
-                    </BottomBox>
-
-                    <BottomBox className="text-sm font-normal text-purple-50 mb-3">
-                        {siteTypeUp}
-                    </BottomBox>
+                    <div className="absolute flex border  border-[#D4D4D4] w-[30px] h-7 top-5 right-5 items-center justify-center">
+                        {id}
+                    </div>
                 </div>
             </div>
         </>

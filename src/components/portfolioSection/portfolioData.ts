@@ -33,7 +33,7 @@ export const PortfolioData = (): PortfolioDataItem[] => {
         },
         {
             name: getTranslation("siteNameWithId3"),
-            image: "https://loremflickr.com/640/480/cats",
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146240/samples/people/jazz.jpg",
             video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
             siteView: getTranslation("internetShop"),
             implementations: ["Design", "Logo Design", "Web Development"],
@@ -52,7 +52,7 @@ export const PortfolioData = (): PortfolioDataItem[] => {
         },
         {
             name: getTranslation("siteNameWithId5"),
-            image: "https://loremflickr.com/640/480/cats",
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146244/samples/ecommerce/accessories-bag.jpg",
 
             siteView: getTranslation("corporateSite"),
             implementations: ["Design", "Logo Design", "Web Development"],
@@ -62,7 +62,7 @@ export const PortfolioData = (): PortfolioDataItem[] => {
         },
         {
             name: getTranslation("siteNameWithId6"),
-            image: "https://loremflickr.com/640/480/cats",
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146267/cld-sample.jpg",
             siteView: getTranslation("blog"),
             implementations: [
                 "Business Analysis",

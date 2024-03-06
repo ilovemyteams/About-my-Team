@@ -20,12 +20,6 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
-    // const scrollPrev = useCallback(() => {
-    //     if (emblaApi) emblaApi.scrollPrev();
-    // }, [emblaApi]);
-    // const scrollNext = useCallback(() => {
-    //     if (emblaApi) emblaApi.scrollNext();
-    // }, [emblaApi]);
     const {
         prevBtnDisabled,
         nextBtnDisabled,
@@ -34,9 +28,9 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className="embla min-w-full">
-            <div className="overflow-hidden" ref={emblaRef}>
-                <div className=" flex ">
+        <div className="relative embla min-w-full">
+            <div className=" overflow-hidden" ref={emblaRef}>
+                <div className=" flex">
                     {projects.map(project => (
                         <div
                             key={project.id}
@@ -46,8 +40,8 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls">
-                    <div className="embla__buttons">
+                <div className="embla__controls absolute -top-24 right-0 z-[1250]">
+                    <div className="embla__buttons flex gap-3">
                         <PrevButton
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}

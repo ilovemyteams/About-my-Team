@@ -1,7 +1,6 @@
 "use server";
 import { Section } from "../shared/Section";
 import { PortfolioCarousel } from "./Slider/PortfolioCarousel";
-// import { PortfolioCarouselVertical } from "./Slider/PortfolioCarouselVertical";
 import { PortfolioTitle } from "./Title/PortfolioTitle";
 import { EmblaOptionsType } from "embla-carousel";
 import { PortfolioData } from "./portfolioData";
@@ -15,10 +14,6 @@ export const PortfolioSection = () => {
             <PortfolioTitle />
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 <PortfolioCarousel projects={SLIDES} options={OPTIONS} />
-                {/* <PortfolioCarouselVertical
-                    projects={SLIDES}
-                    options={OPTIONS}
-                /> */}
             </div>
         </Section>
     );
