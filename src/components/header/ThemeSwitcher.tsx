@@ -2,17 +2,31 @@
 
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
+import Cookies from "js-cookie";
 
 export function ThemeSwitcher() {
     const { setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState<boolean>(false);
 
     useEffect(() => {
+        const storedTheme = Cookies.get("theme");
+        if (
+            storedTheme &&
+            (storedTheme === "dark" || storedTheme === "light")
+        ) {
+            setTheme(storedTheme);
+        }
+        console.log(storedTheme);
         setMounted(true);
-    }, []);
+    }, [setTheme]);
+
 
     const handleChange = () => {
+        const newTheme = resolvedTheme === "dark" ? "light" : "dark";
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
+        Cookies.set("theme", newTheme)
+        window.location.reload();
+
     };
 
     if (!mounted) {
