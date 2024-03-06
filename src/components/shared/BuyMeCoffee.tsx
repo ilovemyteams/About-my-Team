@@ -12,7 +12,8 @@ export const BuyMeCoffee = () => {
             after:content-[''] after:absolute after:w-[48px] after:h-[48px] after:top-0 after:left-0 
             hover:after:transition-opacity hover:after:duration-500 hover:after:ease-out
             after:opacity-0 after:bg-purple-stroke03 
-            hover:after:opacity-100 hover:after:blur-[2px] hover:after:rounded-full 	"
+            hover:after:opacity-100 hover:after:blur-[2px] hover:after:rounded-full
+            focus:after:opacity-100 focus:after:blur-[2px] focus:after:rounded-full focus:outline-none focus-within:outline-none"
         >
             <Image
                 src="/images/CoffeeCup.svg"
