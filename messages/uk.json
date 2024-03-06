@@ -51,6 +51,14 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
+    "Feedback": {
+        "pageTitle": "відгуки",
+        "titleMob": "Що про нас говорять наші клієнти",
+        "titleFirstWord": "Що про нас ",
+        "titleSecondWord": "говорять",
+        "titleThirdWord": "наші ",
+        "titleFourthWord": "клієнти"
+    },
     "JoinTheTeam": {
         "title": "Розкажи про свої унікальні можливості та приєднуйся до нашої команди"
     },
