@@ -7,7 +7,7 @@ const FeedbackSection = () => {
         <Section>
             <FeedbackTitle />
 
-            <Button className="">Button</Button>
+            <Button className="">Поділитися</Button>
         </Section>
     );
 };
