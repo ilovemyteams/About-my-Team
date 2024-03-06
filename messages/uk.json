@@ -3,6 +3,9 @@
         "title": "Назва сайту",
         "description": "Створюємо миттєвість у цифровому світі: ефектні лендінги та сайти під ключ"
     },
+    "Hero": {
+        "portfolioLink": "Портфоліо"
+    },
     "Mission": {
         "pageTitle": "наша місія",
         "titleFirstWord": "Створюємо ",
@@ -95,5 +98,11 @@
         "teamsList": "команди",
         "team1": "Команда I Love My Team",
         "team2": "Команда Ферма"
+    },
+    "Buttons": {
+        "order": "Замовити",
+        "joinUs": "Долучитися",
+        "allProjects": "Всі проекти",
+        "allQuestions": "Всі питання"
     }
 }

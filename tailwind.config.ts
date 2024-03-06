@@ -118,6 +118,8 @@ const config: Config = {
                     200: "#1F0033",
                     300: "#54148A",
                     stroke: "#5F3F87",
+                    stroke03: "rgba(162, 88, 255, 0.3)",
+
                     dark: "#3C1E63",
                 },
                 white: "#FBF8FF",
@@ -125,6 +127,17 @@ const config: Config = {
                 grey: "#D4D4D4",
                 red: "#FB7185",
             },
+            content: {
+                heart: 'url("/images/Heart.svg")',
+                triangles: 'url("/images/Triangles.svg")',
+            },
+        },
+        backgroundImage: {
+            bgImage: 'url("/images/bgImage.png")',
+            heart: 'url("/images/Heart.svg")',
+            triangles: 'url("/images/Triangles.svg")',
+            portfolioGradient:
+                "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
         },
     },
     plugins: [],
