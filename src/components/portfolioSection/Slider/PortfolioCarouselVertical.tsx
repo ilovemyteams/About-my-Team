@@ -5,10 +5,10 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
 import { PortfolioCard } from "../PortfolioCard";
-import { PortfolioDataItem } from "../portfolioData";
+import { PortfolioDataItemType } from "../portfolioData";
 
 type PortfolioCarouselVerticalProps = {
-    projects: PortfolioDataItem[];
+    projects: PortfolioDataItemType[];
     options?: EmblaOptionsType;
 };
 
