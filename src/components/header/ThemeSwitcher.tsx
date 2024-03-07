@@ -15,16 +15,18 @@ export function ThemeSwitcher() {
             (storedTheme === "dark" || storedTheme === "light")
         ) {
             setTheme(storedTheme);
+        } else {
+            setTheme("dark");
         }
+
         setMounted(true);
     }, [setTheme]);
 
     const handleChange = () => {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
-        Cookies.set("theme", newTheme)
+        Cookies.set("theme", newTheme);
         window.location.reload();
-
     };
 
     if (!mounted) {
@@ -49,7 +51,7 @@ export function ThemeSwitcher() {
                 <div className="relative w-[66px] h-[28px]">
                     <div
                         className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px] 
-                        ${resolvedTheme === "dark" ? "translate-x-[40px] bg-purple-stroke" : "translate-x-[3px]  bg-purple-stroke"} 
+                        ${resolvedTheme === "dark" ? "translate-x-[3px] bg-purple-stroke" : "translate-x-[40px]  bg-purple-stroke"} 
                         transition-transform duration-300 ease-in-out`}
                     ></div>
                 </div>
