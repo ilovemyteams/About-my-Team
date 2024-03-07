@@ -16,9 +16,7 @@ export const PortfolioCard = ({ item }: PortfolioItemProps) => {
                     alt={name}
                     fill
                     sizes="min-w-[50%] h-[400px]"
-                    style={{
-                        objectFit: "cover",
-                    }}
+                    className="object-cover"
                 />
                 <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioGradient">
                     <div className="absolute top-5 left-5">
