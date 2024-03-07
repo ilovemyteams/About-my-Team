@@ -6,7 +6,7 @@ const GITHUB_URL = "/";
 
 export const SocialLinks = () => {
     return (
-        <div>
+        <div className="flex flex-col gap-2">
             <a
                 href={LINKEDIN_URL}
                 target="_blank"

@@ -14,7 +14,7 @@ export const Button = ({ children, color = "red", className }: ButtonProps) => {
              after:left-0 after:h-[0.8px] after:w-[270px] after:opacity-0 before:content-[''] before:absolute before:bottom-[4px] before:left-0 before:h-[1px] before:w-[270px]
              before:opacity-0 pc:hover:after:opacity-100 pc:hover:before:opacity-100 pc:hover:before:delay-[400ms] focus:before:opacity-100 focus:after:opacity-0 focus:outline-none focus-within:outline-none ${className}`}
         >
-            <span className="inline-block transform pc:group-hover:translate-y-[-13%] pc:group-focus:translate-y-[0%] transition duration-[600ms] ease-out">
+            <span className="inline-block transform pc:group-hover:translate-y-[-12%] pc:group-focus:translate-y-[0%] transition duration-[600ms] ease-out">
                 {children.toLowerCase()}
             </span>
         </button>

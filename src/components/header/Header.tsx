@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { SocialLinks } from "./SocialLinks";
 import { LogoLink } from "./LogoLink";
+import { BurgerMenuButton } from "./BurgerMenuButton";
+import { SocialLinks } from "./SocialLinks";
 
 export const Header = () => {
     return (
@@ -9,13 +9,7 @@ export const Header = () => {
                 justify-between py-8 border-solid border-r-[1px] border-purple-stroke"
         >
             <LogoLink />
-            <Image
-                src="/images/burger.svg"
-                width="0"
-                height="0"
-                alt="Burger menu"
-                className="w-[40px] h-auto"
-            />
+            <BurgerMenuButton />
             <SocialLinks />
         </header>
     );
