@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
+import { cookies } from "next/headers";
 import "./globals.css";
 
 const caviar = localFont({
@@ -54,15 +55,17 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
+    const cookieStore = cookies();
+    const userTheme = cookieStore.get("theme") || { value: "dark" };
 
     return (
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
                     className={`${caviar.variable} ${geist.variable} 
-                    h-[100vh] bg-purple-200
-                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  after:z-[-1]
-                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
+                    h-[100vh] ${userTheme?.value === "dark" ? "bg-purple-200" : "bg-grey"}
+                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  
+                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden
                     `}
                 >
                     <ThemeProvider>
