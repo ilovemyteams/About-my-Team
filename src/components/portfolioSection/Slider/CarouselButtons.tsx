@@ -72,7 +72,7 @@ export const PrevButton: React.FC<ButtonType> = props => {
     );
 };
 
-export const NextButton: React.FC<PropType> = props => {
+export const NextButton: React.FC<ButtonType> = props => {
     const { ...restProps } = props;
 
     return (

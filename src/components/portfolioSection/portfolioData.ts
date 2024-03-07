@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-export interface PortfolioDataItem {
+export interface PortfolioDataItemType {
     name: string;
     image: string;
     video?: string;
@@ -10,7 +10,7 @@ export interface PortfolioDataItem {
     id: string;
 }
 
-export const PortfolioData = (): PortfolioDataItem[] => {
+export const PortfolioData = (): PortfolioDataItemType[] => {
     const getTranslation = useTranslations("Portfolio");
     return [
         {

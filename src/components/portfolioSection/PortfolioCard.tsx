@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { PortfolioDataItem } from "./portfolioData";
+import { PortfolioDataItemType } from "./portfolioData";
 
 interface PortfolioItemProps {
-    item: PortfolioDataItem;
+    item: PortfolioDataItemType;
 }
 
 export const PortfolioCard = ({ item }: PortfolioItemProps) => {

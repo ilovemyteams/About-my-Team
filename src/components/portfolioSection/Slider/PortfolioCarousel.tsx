@@ -3,12 +3,12 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 
-import { PortfolioDataItem } from "../portfolioData";
+import { PortfolioDataItemType } from "../portfolioData";
 import { PortfolioCard } from "../PortfolioCard";
 import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
 
 type PortfolioCarouselProps = {
-    projects: PortfolioDataItem[];
+    projects: PortfolioDataItemType[];
     options?: EmblaOptionsType;
 };
 
