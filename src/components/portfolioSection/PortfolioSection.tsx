@@ -1,4 +1,3 @@
-"use server";
 import { Section } from "../shared/Section";
 import { PortfolioCarousel } from "./Slider/PortfolioCarousel";
 import { PortfolioTitle } from "./Title/PortfolioTitle";

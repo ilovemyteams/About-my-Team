@@ -5,11 +5,7 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { PortfolioDataItem } from "../portfolioData";
 import { PortfolioCard } from "../PortfolioCard";
-import {
-    NextButton,
-    PrevButton,
-    usePrevNextButtons,
-} from "../../portfolioSection/Slider/ArrowVertical";
+import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItem[];
