@@ -25,7 +25,7 @@ export function Accordion({ item }: AccordionProps) {
                         width="0"
                         height="0"
                         alt="Share icon"
-                        className={`w-6 h-auto ${accordionOpen ? "transition-all" : "transition-transform rotate-180 duration-300 ease-in-out"}`}
+                        className={`w-[40px] h-auto ${accordionOpen ? "transition-all" : "transition-transform rotate-180 duration-300 ease-in-out"}`}
                     />
                 </button>
                 <div
