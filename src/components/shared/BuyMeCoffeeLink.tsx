@@ -16,7 +16,7 @@ export const BuyMeCoffeeLink = () => {
             focus:after:opacity-100 focus:after:blur-[2px] focus:after:rounded-full focus:outline-none focus-within:outline-none"
         >
             <Image
-                src="/images/CoffeeCup.svg"
+                src="/images/coffeeCup.svg"
                 width={31}
                 height={45}
                 alt="Buy me a coffe logo"

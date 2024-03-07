@@ -134,10 +134,13 @@ const config: Config = {
         },
         backgroundImage: {
             bgImage: 'url("/images/bgImage.png")',
-            heart: 'url("/images/Heart.svg")',
-            triangles: 'url("/images/Triangles.svg")',
+            heart: 'url("/images/heart.svg")',
+            triangles: 'url("/images/triangles.svg")',
+            check: 'url("/images/check.svg")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+            CTAGradient:
+                "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
         },
     },
     plugins: [],
