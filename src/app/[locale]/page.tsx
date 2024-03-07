@@ -15,8 +15,8 @@ export default function Home() {
         <div className="pc:ml-[80px] h-[100vh] overflow-y-auto">
             <HeroSection />
             <MissionSection />
-            <PortfolioSection />
             <JoinTheTeamSection />
+            <PortfolioSection />
             <FeedbackSection />
             <WriteUsSection />
             <ServicesSection />

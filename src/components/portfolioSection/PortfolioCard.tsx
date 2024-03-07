@@ -7,7 +7,7 @@ interface PortfolioItemProps {
 
 export const PortfolioCard = ({ item }: PortfolioItemProps) => {
     const { image, siteView, name, implementations, id } = item;
-    const siteTypeUp = siteView.toUpperCase();
+    const siteTypeUp = siteView?.toUpperCase();
     return (
         <>
             <div className="relative min-w-[50%] h-[400px]">
