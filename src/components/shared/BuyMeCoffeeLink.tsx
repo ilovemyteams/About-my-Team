@@ -1,11 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
 
 const BUY_ME_COFFEE = "https://www.buymeacoffee.com/susanna.salata";
 
 export const BuyMeCoffeeLink = () => {
     return (
-        <Link
+        <a
             href={BUY_ME_COFFEE}
             target="_blank"
             className="pointer relative w-[48px] h-[48px] flex justify-center items-center
@@ -21,6 +20,6 @@ export const BuyMeCoffeeLink = () => {
                 height={45}
                 alt="Buy me a coffe logo"
             />
-        </Link>
+        </a>
     );
 };
