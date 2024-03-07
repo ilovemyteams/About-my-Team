@@ -65,8 +65,8 @@ export default function LocaleLayout({
                 <body
                     className={`${caviar.variable} ${geist.variable} 
                     h-[100vh] ${userTheme?.value === "dark" ? "bg-purple-200" : "bg-grey"}
-                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  
-                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden
+                    after:h-[230px] after:content-heart after:absolute after:bottom-0 after:left-[100px] after:overflow-hidden  after:z-[-1]
+                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
                     `}
                 >
                     <ThemeProvider>
