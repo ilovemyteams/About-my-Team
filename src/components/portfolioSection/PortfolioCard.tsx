@@ -41,7 +41,7 @@ export const PortfolioCard = ({ item }: PortfolioItemProps) => {
                             ))}
                         </div>
                     </div>
-                    <div className="absolute flex border  border-[#D4D4D4] w-[30px] h-7 top-5 right-5 items-center justify-center">
+                    <div className="absolute flex  w-[30px] h-7 top-5 right-5 items-center justify-center">
                         {id}
                     </div>
                 </div>
