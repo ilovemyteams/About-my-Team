@@ -16,10 +16,8 @@ export function ThemeSwitcher() {
         ) {
             setTheme(storedTheme);
         }
-        console.log(storedTheme);
         setMounted(true);
     }, [setTheme]);
-
 
     const handleChange = () => {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
