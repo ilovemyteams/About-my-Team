@@ -32,7 +32,7 @@ export const PortfolioCard = ({ item }: PortfolioItemProps) => {
                             {implementations.map((implementation, index) => (
                                 <div
                                     key={index}
-                                    className="font-caviar font-bold text-base px-3 py-[6px] border border-[#D4D4D4]"
+                                    className="font-caviar font-bold text-base px-3 py-[6px] border border-grey"
                                 >
                                     {implementation}
                                 </div>
