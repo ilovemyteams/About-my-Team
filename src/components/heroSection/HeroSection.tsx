@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Section } from "../shared/Section";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../header/ThemeSwitcher";
+import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 import { HeroInfo } from "./HeroInfo";
 import { HeroFooterLinks } from "./HeroFooterLinks";
