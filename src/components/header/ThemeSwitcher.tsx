@@ -26,7 +26,7 @@ export function ThemeSwitcher() {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
         Cookies.set("theme", newTheme);
-        window.location.reload();
+        typeof window !== "undefined" && window.location.reload();
     };
 
     if (!mounted) {
