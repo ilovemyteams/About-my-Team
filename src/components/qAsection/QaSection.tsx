@@ -11,9 +11,7 @@ export const QaSection = () => {
         <>
             <Section className="relative">
                 <TitleQA />
-                <ButtonShare className="absolute right-[60px] top-[23px] mb-[64px] my-[8px]">
-                    {getTranslation("buttonShare")}
-                </ButtonShare>
+                <ButtonShare className="absolute right-[60px] top-[23px] mb-[64px] my-[8px]" />
                 <QuestionsList />
                 <Button className="float-right">
                     {getTranslation("button")}

@@ -20,26 +20,16 @@ export function Accordion({ item }: AccordionProps) {
                     className="flex justify-between w-full"
                 >
                     <summary>{item.question}</summary>
-                    {accordionOpen ? (
-                        <Image
-                            src="/images/icon-up.svg"
-                            width="0"
-                            height="0"
-                            alt="Share icon"
-                            className="w-6 h-auto"
-                        />
-                    ) : (
-                        <Image
-                            src="/images/icon-down.svg"
-                            width="0"
-                            height="0"
-                            alt="Share icon"
-                            className="w-6 h-auto"
-                        />
-                    )}
+                    <Image
+                        src="/images/iconUp.svg"
+                        width="0"
+                        height="0"
+                        alt="Share icon"
+                        className={`w-6 h-auto ${accordionOpen ? "transition-all" : "transition-transform rotate-180 duration-300 ease-in-out"}`}
+                    />
                 </button>
                 <div
-                    className={`grid overflow-hidden transition-all duration-300 ease-in-out text-sm 
+                    className={`mt-[8px] grid overflow-hidden transition-all duration-300 ease-in-out text-sm 
             ${
                 accordionOpen
                     ? "grid-rows-[2fr] opacity-100"
