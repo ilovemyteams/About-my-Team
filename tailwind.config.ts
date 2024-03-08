@@ -136,7 +136,7 @@ const config: Config = {
             bgImage: 'url("/images/bgImage.png")',
             heart: 'url("/images/heart.svg")',
             triangles: 'url("/images/triangles.svg")',
-            check: 'url("/images/check.svg")',
+            heartHeaderMenu: 'url("/images/heartHeaderMenu.svg")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
             CTAGradient:
