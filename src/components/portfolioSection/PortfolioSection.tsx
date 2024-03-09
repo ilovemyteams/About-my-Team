@@ -6,7 +6,7 @@ import { PortfolioData } from "./portfolioData";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const projects = PortfolioData();
+    const projects = PortfolioData;
     const SLIDES = projects;
     return (
         <Section>

@@ -1,12 +1,22 @@
 import Image from "next/image";
-import { PortfolioDataItemType } from "./portfolioData";
 
-interface PortfolioItemProps {
-    item: PortfolioDataItemType;
+export interface PortfolioCardItemProps {
+    data: {
+        id: number;
+        image: string;
+        video?: string;
+        implementations: string[];
+    };
+    localizationData: { name: string; siteView: string; description: string };
 }
 
-export const PortfolioCard = ({ item }: PortfolioItemProps) => {
-    const { image, siteView, name, implementations, id } = item;
+export const PortfolioCard = ({
+    data,
+    localizationData,
+}: PortfolioCardItemProps) => {
+    const { image, implementations, id } = data;
+    const { siteView, name } = localizationData;
+
     const siteTypeUp = siteView?.toUpperCase();
     return (
         <>

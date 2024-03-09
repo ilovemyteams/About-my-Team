@@ -3,18 +3,23 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 
-import { PortfolioDataItemType } from "../portfolioData";
 import { PortfolioCard } from "../PortfolioCard";
 import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
+import { useLocale } from "next-intl";
+import { PortfolioDataItemType } from "../portfolioData";
+
+
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItemType[];
     options?: EmblaOptionsType;
 };
+type Locale = "uk" | "en" | "pl";
 
 export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const locale = useLocale();
 
     const {
         prevBtnDisabled,
@@ -29,10 +34,13 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                 <div className=" flex">
                     {projects.map(project => (
                         <div
-                            key={project.id}
+                            key={project.data.id}
                             className="embla__slide flex-[0_0_50%] w-full"
                         >
-                            <PortfolioCard item={project} />
+                            <PortfolioCard
+                                data={project.data}
+                                localizationData={project[locale as Locale]}
+                            />
                         </div>
                     ))}
                 </div>
