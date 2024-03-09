@@ -3,7 +3,7 @@ import { useState } from "react";
 import { LogoLink } from "./LogoLink";
 import { BurgerMenuButton } from "./BurgerMenuButton";
 import { SocialLinks } from "./SocialLinks";
-import { HeaderMenu } from "./HeaderMenu";
+import { HeaderMenu } from "./HeaderMenu/HeaderMenu";
 
 export const Header = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);

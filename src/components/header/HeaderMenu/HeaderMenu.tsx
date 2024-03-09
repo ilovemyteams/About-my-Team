@@ -1,10 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "../shared/Button";
-import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+import { Button } from "../../shared/Button";
+import LocaleSwitcher from "../../shared/LocaleSwitcher";
+import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "./HeaderMenuList";
-import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
+import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 
 interface HeaderMenuProps {
     isHeaderMenuOpened: boolean;

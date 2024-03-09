@@ -21,13 +21,13 @@ export const BurgerMenuButton = ({
         >
             <div className="pointer w-[40px] h-[40px] rotate-0 transition-all duration-[600ms] ease-out">
                 <span
-                    className={`block absolute w-full h-[3px] bg-grey rotate-0 transition-all duration-500 ease-out origin-right-center ${isHeaderMenuOpened ? firstLineTransformStyles : firstLineBaseStyles}`}
+                    className={`block absolute w-full h-[3px] bg-grey rotate-0 transition-transform-opacity duration-300 ease-out origin-right-center ${isHeaderMenuOpened ? firstLineTransformStyles : firstLineBaseStyles}`}
                 ></span>
                 <span
                     className={`block absolute left-0 w-full h-[3px] mb-[6px] bg-grey rotate-0 transition-transform duration-300 ease-out origin-right-center ${isHeaderMenuOpened ? secondLineTransformStyles : secondLineBaseStyles}`}
                 ></span>
                 <span
-                    className={`block absolute left-0 w-full h-[3px] bg-grey rotate-0 transition-all duration-300 ease-out origin-right-center ${isHeaderMenuOpened ? thirdLineTransformStyles : thirdLineBaseStyles}`}
+                    className={`block absolute left-0 w-full h-[3px] bg-grey rotate-0 transition-transform duration-300 ease-out origin-right-center ${isHeaderMenuOpened ? thirdLineTransformStyles : thirdLineBaseStyles}`}
                 ></span>
             </div>
         </button>
