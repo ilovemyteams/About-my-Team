@@ -4,7 +4,7 @@ import { FeedbackTitle } from "./Title/FeedbackTitle";
 
 const FeedbackSection = () => {
     return (
-        <Section>
+        <Section id="feedback">
             <FeedbackTitle />
 
             <Button className="">Button</Button>
