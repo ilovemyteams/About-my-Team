@@ -6,7 +6,7 @@ import { HeaderMenuList } from "./HeaderMenuList";
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
 
 interface HeaderMenuProps {
-    isHederMenuOpened: boolean;
+    isHeaderMenuOpened: boolean;
     setIsHeaderMenuOpened: (
         value: boolean | ((prev: boolean) => boolean)
     ) => void;
@@ -16,14 +16,14 @@ const openedStyles = "w-[calc(100vw-80px)]";
 const closedStyles = "w-0";
 
 export const HeaderMenu = ({
-    isHederMenuOpened = false,
+    isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
     const getTranslation = useTranslations("Buttons");
 
     return (
         <div
-            className={`${isHederMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 flex flex-col justify-between h-[100vh] py-[32px] overflow-hidden transition-width duration-[600ms] ease-out bg-grey dark:bg-purple-400`}
+            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 flex flex-col justify-between h-[100vh] py-[32px] overflow-hidden transition-width duration-[600ms] ease-out bg-grey dark:bg-purple-400`}
         >
             <div className="flex flex-col justify-between w-[1200px] h-full px-[60px] mx-[calc((100vw-1280px)/2)]">
                 <div className="overflow-hidden w-full flex gap-[183px] justify-end relative z-10">

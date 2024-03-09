@@ -6,9 +6,9 @@ import { SocialLinks } from "./SocialLinks";
 import { HeaderMenu } from "./HeaderMenu";
 
 export const Header = () => {
-    const [isHederMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
     const toggleHeaderMenuOpen = () =>
-        setIsHeaderMenuOpened(!isHederMenuOpened);
+        setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
     return (
         <header>
@@ -17,11 +17,14 @@ export const Header = () => {
                 justify-between py-8 border-solid border-r-[1px] border-purple-stroke"
             >
                 <LogoLink />
-                <BurgerMenuButton toggleHeaderMenuOpen={toggleHeaderMenuOpen} />
+                <BurgerMenuButton
+                    isHeaderMenuOpened={isHeaderMenuOpened}
+                    toggleHeaderMenuOpen={toggleHeaderMenuOpen}
+                />
                 <SocialLinks />
             </div>
             <HeaderMenu
-                isHederMenuOpened={isHederMenuOpened}
+                isHeaderMenuOpened={isHeaderMenuOpened}
                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
             />
         </header>
