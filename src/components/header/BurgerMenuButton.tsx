@@ -1,8 +1,14 @@
 import Image from "next/image";
 
-export const BurgerMenuButton = () => {
+interface BurgerMenuButtonProps {
+    toggleHeaderMenuOpen: () => void;
+}
+
+export const BurgerMenuButton = ({
+    toggleHeaderMenuOpen,
+}: BurgerMenuButtonProps) => {
     return (
-        <button type="button">
+        <button type="button" onClick={toggleHeaderMenuOpen}>
             <Image
                 src="/images/burger.svg"
                 width="0"

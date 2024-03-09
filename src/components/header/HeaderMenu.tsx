@@ -5,17 +5,33 @@ import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { HeaderMenuList } from "./HeaderMenuList";
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
 
-export const HeaderMenu = () => {
+interface HeaderMenuProps {
+    isHederMenuOpened: boolean;
+    setIsHeaderMenuOpened: () => boolean;
+}
+
+const openedStyles = "block";
+const closedStyles = "hidden";
+
+export const HeaderMenu = ({
+    isHederMenuOpened = false,
+    setIsHeaderMenuOpened,
+}: HeaderMenuProps) => {
     const getTranslation = useTranslations("Buttons");
+
     return (
-        <div className="absolute top-0 left-[80px] z-20 flex flex-col justify-between w-[calc(100vw-80px)] h-[100vh] p-x-[60px] py-[32px] container bg-purple-200">
-            <div className="flex gap-[204px] justify-end relative z-10">
+        <div
+            className={`${isHederMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 flex flex-col justify-between w-[calc(100vw-80px)] h-[100vh] p-x-[60px] py-[32px] container bg-grey dark:bg-purple-400`}
+        >
+            <div className="flex gap-[183px] justify-end relative z-10">
                 <LocaleSwitcher />
                 <ThemeSwitcher />
             </div>
             <div className="flex justify-between">
                 <div className="flex flex-col justify-between w-[36%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
-                    <HeaderMenuList />
+                    <HeaderMenuList
+                        setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+                    />
                     <Button className="mt-[64px]">
                         {getTranslation("order")}
                     </Button>

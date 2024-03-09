@@ -117,9 +117,9 @@ const config: Config = {
                     100: "#A258FF",
                     200: "#1F0033",
                     300: "#54148A",
+                    400: "#09002E",
                     stroke: "#5F3F87",
                     stroke03: "rgba(162, 88, 255, 0.3)",
-
                     dark: "#3C1E63",
                 },
                 white: "#FBF8FF",
@@ -137,6 +137,7 @@ const config: Config = {
             heart: 'url("/images/heart.svg")',
             triangles: 'url("/images/triangles.svg")',
             heartHeaderMenu: 'url("/images/heartHeaderMenu.svg")',
+            headerMenuBackground: 'url("/images/headerMenuBackground.png")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
             CTAGradient:

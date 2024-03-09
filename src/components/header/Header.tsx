@@ -1,9 +1,15 @@
+"use client";
+import { useState } from "react";
 import { LogoLink } from "./LogoLink";
 import { BurgerMenuButton } from "./BurgerMenuButton";
 import { SocialLinks } from "./SocialLinks";
 import { HeaderMenu } from "./HeaderMenu";
 
 export const Header = () => {
+    const [isHederMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const toggleHeaderMenuOpen = () =>
+        setIsHeaderMenuOpened(!isHederMenuOpened);
+
     return (
         <header>
             <div
@@ -11,10 +17,13 @@ export const Header = () => {
                 justify-between py-8 border-solid border-r-[1px] border-purple-stroke"
             >
                 <LogoLink />
-                <BurgerMenuButton />
+                <BurgerMenuButton toggleHeaderMenuOpen={toggleHeaderMenuOpen} />
                 <SocialLinks />
             </div>
-            <HeaderMenu />
+            <HeaderMenu
+                isHederMenuOpened={isHederMenuOpened}
+                setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+            />
         </header>
     );
 };

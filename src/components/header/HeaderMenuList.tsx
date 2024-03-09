@@ -2,7 +2,15 @@ import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 
-export const HeaderMenuList = () => {
+interface HeaderMenuListProps {
+    setIsHeaderMenuOpened: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
+}
+
+export const HeaderMenuList = ({
+    setIsHeaderMenuOpened,
+}: HeaderMenuListProps) => {
     const getTranslation = useTranslations();
     const menuList = [
         { name: getTranslation("Mission.pageTitle"), id: "mission" },
@@ -22,6 +30,7 @@ export const HeaderMenuList = () => {
                 >
                     <Link
                         href={`/${locale}#${id}`}
+                        onClick={() => setIsHeaderMenuOpened(false)}
                         className="border-solid border-b-[1px] border-purple-stroke hover:border-transparent transition-color duration-300 ease-out"
                     >
                         {name}
