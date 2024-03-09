@@ -4,11 +4,14 @@ type PortfolioDataItemTranslation = {
 
     description: string;
 };
-export type PortfolioDataItemType = {
+type DataType = {
     id: number;
     image: string;
     video?: string;
     implementations: string[];
+};
+export type PortfolioDataItemType = {
+    data: DataType;
     uk: PortfolioDataItemTranslation;
     en: PortfolioDataItemTranslation;
     pl: PortfolioDataItemTranslation;
@@ -16,10 +19,11 @@ export type PortfolioDataItemType = {
 
 export const PortfolioData: PortfolioDataItemType[] = [
     {
-        id: 1,
-
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
-        implementations: ["Design", "Logo Design", "Web Development"],
+        data: {
+            id: 1,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
+            implementations: ["Design", "Logo Design", "Web Development"],
+        },
         uk: {
             name: "I love my team",
             siteView: "лендінг",
@@ -38,9 +42,11 @@ export const PortfolioData: PortfolioDataItemType[] = [
         },
     },
     {
-        id: 2,
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146269/cld-sample-4.jpg",
-        implementations: ["Design", "Web Development"],
+        data: {
+            id: 2,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146269/cld-sample-4.jpg",
+            implementations: ["Design", "Web Development"],
+        },
         uk: {
             name: "Аліса в країні чудес",
             siteView: "персональний сайт",
@@ -59,10 +65,12 @@ export const PortfolioData: PortfolioDataItemType[] = [
         },
     },
     {
-        id: 3,
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146240/samples/people/jazz.jpg",
-        implementations: ["Design", "Logo Design", "Web Development"],
-        video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
+        data: {
+            id: 3,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146240/samples/people/jazz.jpg",
+            implementations: ["Design", "Logo Design", "Web Development"],
+            video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
+        },
         uk: {
             name: "Смарагдове місто",
             siteView: "інтернет магазин",
@@ -81,9 +89,11 @@ export const PortfolioData: PortfolioDataItemType[] = [
         },
     },
     {
-        id: 4,
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg",
-        implementations: ["Design", "Business Analysis", "Web Development"],
+        data: {
+            id: 4,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg",
+            implementations: ["Design", "Business Analysis", "Web Development"],
+        },
         uk: {
             name: "Барон Мюнхаузен",
             siteView: "сайт візитівка",
@@ -102,9 +112,11 @@ export const PortfolioData: PortfolioDataItemType[] = [
         },
     },
     {
-        id: 5,
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146244/samples/ecommerce/accessories-bag.jpg",
-        implementations: ["Design", "Logo Design", "Web Development"],
+        data: {
+            id: 5,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146244/samples/ecommerce/accessories-bag.jpg",
+            implementations: ["Design", "Logo Design", "Web Development"],
+        },
         uk: {
             name: "Маломандер",
             siteView: "корпоративний сайт",
@@ -123,9 +135,15 @@ export const PortfolioData: PortfolioDataItemType[] = [
         },
     },
     {
-        id: 6,
-        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146267/cld-sample.jpg",
-        implementations: ["Business Analysis", "Web Development", "Testing"],
+        data: {
+            id: 6,
+            image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146267/cld-sample.jpg",
+            implementations: [
+                "Business Analysis",
+                "Web Development",
+                "Testing",
+            ],
+        },
         uk: {
             name: "Джуді Муді",
             siteView: "блог",
