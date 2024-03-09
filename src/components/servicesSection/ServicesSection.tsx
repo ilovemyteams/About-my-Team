@@ -4,7 +4,7 @@ import { Title } from "./Title";
 
 export const ServicesSection = () => {
     return (
-        <Section>
+        <Section id="services">
             <Title />
             <ServicesTable />
         </Section>

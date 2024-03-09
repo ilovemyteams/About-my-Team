@@ -19,7 +19,7 @@
         "titleSeventhWord": "замовникам"
     },
     "Mission": {
-        "pageTitle": "наша місія",
+        "pageTitle": "Наша місія",
         "titleFirstWord": "Створюємо ",
         "titleSecondWord": "вражаючі ",
         "titleThirdWord": "цифрові",
@@ -36,8 +36,11 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
+    "Portfolio": {
+        "pageTitle": "Портфоліо"
+    },
     "Feedback": {
-        "pageTitle": "відгуки",
+        "pageTitle": "Відгуки",
         "titleMob": "Що про нас говорять наші клієнти",
         "titleFirstWord": "Що про нас ",
         "titleSecondWord": "говорять",
@@ -51,7 +54,7 @@
         "title": "Хочу стати вашим задоволеним клієнтом"
     },
     "Services": {
-        "pageTitle": "послуги",
+        "pageTitle": "Послуги",
         "titleFirstRow": "Реалізуємо цифрові продукти",
         "titleSecondRow": "для вашого бізнесу",
         "BATitle": "Бізнес-аналіз",
@@ -72,7 +75,7 @@
     },
 
     "Stages": {
-        "pageTitle": "процес",
+        "pageTitle": "Процес",
         "mainTitle": "Послідовність роботи",
         "firstStepTitle": "Отримання вашої ідеї Консультація",
         "firstStepText": "Після отримання вашої заявки, зв’язуємось з вами протягом робочого дня",
@@ -96,7 +99,7 @@
         "email": "i.love.my.team.2023@gmail.com"
     },
     "OurTeam": {
-        "pageTitle": "команда",
+        "pageTitle": "Команда",
         "pageBigTitle": "Обери свою ідеальну команду",
         "listTitle": "учасники",
         "listItemDes": "Дизайнери",
