@@ -1,16 +1,9 @@
 import Image from "next/image";
-import { cookies } from "next/headers";
 
 export const BackgroundImages = () => {
-    const cookieStore = cookies();
-    const userTheme = cookieStore.get("theme") || { value: "dark" };
-
     return (
         <>
-            <div
-                className={`h-[100vh] absolute w-screen blur-[100px] overflow-hidden z-[-1]
-                          ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
-            >
+            <div className="h-[100vh] absolute w-screen blur-[100px] overflow-hidden z-[-1]">
                 <Image
                     src="/images/bgImages/leftBottom.svg"
                     width="0"

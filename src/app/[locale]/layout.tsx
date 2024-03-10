@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { cookies } from "next/headers";
 import "./globals.css";
 
 const caviar = localFont({
@@ -57,11 +58,15 @@ export default function LocaleLayout({
 }>) {
     const messages = useMessages();
 
+    const cookieStore = cookies();
+    const userTheme = cookieStore.get("theme") || { value: "dark" };
+
     return (
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable} overflow-hidden `}
+                    className={`${caviar.variable} ${geist.variable} overflow-hidden
+                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
                     <BackgroundImages />
                     <ThemeProvider>
