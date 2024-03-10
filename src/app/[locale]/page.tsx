@@ -1,5 +1,4 @@
 import HomeTest from "@/src/components/Home";
-import FeedbackSection from "@/src/components/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
@@ -17,7 +16,7 @@ export default function Home() {
             <MissionSection />
             <JoinTheTeamSection />
             <PortfolioSection />
-            <FeedbackSection />
+
             <WriteUsSection />
             <ServicesSection />
             <JoinTheTeamSection />
