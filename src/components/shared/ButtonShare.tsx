@@ -21,7 +21,7 @@ export const ButtonShare = ({ className }: ButtonShareProps) => {
                     width="0"
                     height="0"
                     alt="Share icon"
-                    className="w-[24px] h-auto hover:fill-red group-hover:text-red group-focus:fill-red"
+                    className="w-[24px] h-auto hover:stroke-red group-hover:text-red group-focus:fill-red"
                 />
             </div>
         </button>
