@@ -28,7 +28,7 @@ export const PortfolioCard = ({
                     sizes="min-w-[50%] h-[400px]"
                     className="object-cover"
                 />
-                <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioGradient">
+                <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioSectionGradient">
                     <div className="absolute top-5 left-5">
                         <h3 className="font-caviar font-bold text-xl mb-1">
                             {name}
