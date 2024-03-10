@@ -9,9 +9,11 @@ export const QaSection = () => {
     const getTranslation = useTranslations("Q&A");
     return (
         <>
-            <Section className="relative">
-                <TitleQA />
-                <ButtonShare className="absolute right-[60px] top-[23px] mb-[64px] my-[8px]" />
+            <Section>
+                <div className="flex">
+                    <TitleQA />
+                    <ButtonShare className="ml-auto right-[60px] mt-[27px] mb-[64px] my-[8px]" />
+                </div>
                 <QuestionsList />
                 <Button className="float-right">
                     {getTranslation("button")}
