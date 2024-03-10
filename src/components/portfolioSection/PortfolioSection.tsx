@@ -6,7 +6,7 @@ import { portfolioData } from "./portfolioData";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    // Оскільки слайдер плануємо перевикористовувати, залишила так, щоб на наступному збагнути як треба буде.
+    // Since we plan to reuse the slider, I left it so that I can figure it out as necessary on the next one.
     const projects = portfolioData;
     const SLIDES = projects;
     return (
