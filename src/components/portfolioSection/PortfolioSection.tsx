@@ -2,11 +2,11 @@ import { Section } from "../shared/Section";
 import { PortfolioCarousel } from "./Slider/PortfolioCarousel";
 import { PortfolioTitle } from "./Title/PortfolioTitle";
 import { EmblaOptionsType } from "embla-carousel";
-import { PortfolioData } from "./portfolioData";
+import { portfolioData } from "./portfolioData";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const projects = PortfolioData;
+    const projects = portfolioData;
     const SLIDES = projects;
     return (
         <Section>

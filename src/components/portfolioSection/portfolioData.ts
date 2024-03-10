@@ -17,7 +17,7 @@ export type PortfolioDataItemType = {
     pl: PortfolioDataItemTranslation;
 };
 
-export const PortfolioData: PortfolioDataItemType[] = [
+export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: 1,
