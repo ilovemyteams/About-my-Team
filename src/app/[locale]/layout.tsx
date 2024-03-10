@@ -4,6 +4,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { cookies } from "next/headers";
+import { Header } from "@/src/components/header/Header";
 import "./globals.css";
 
 const caviar = localFont({
@@ -63,18 +64,13 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
                     className={`${caviar.variable} ${geist.variable} 
-                    h-[100vh] ${userTheme?.value === "dark" ? "bg-purple-200" : "bg-grey"}
-                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  
-                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden
+                    h-[100vh] ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}
+                    after:h-[230px] after:content-heart after:absolute after:bottom-0 after:left-[100px] after:overflow-hidden after:z-[-1]
+                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
                     `}
                 >
                     <ThemeProvider>
-                        {/*TO:DO basic styles for the side bar */}
-                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-tranarent pc:flex flex-col justify-between py-2">
-                            <p>top</p>
-                            <p>center</p>
-                            <p>botton</p>
-                        </header>
+                        <Header />
                         {/*TO:DO basic styles for the dark theme */}
                         <main>{children}</main>
                         <footer></footer>

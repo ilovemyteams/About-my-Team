@@ -5,7 +5,7 @@ import { TeamsList } from "./TeamsList";
 
 export const OurTeamSection = () => {
     return (
-        <Section>
+        <Section id="team">
             <Title />
             <CategoriesList />
             <TeamsList />
