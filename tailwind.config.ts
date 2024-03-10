@@ -101,6 +101,7 @@ const config: Config = {
         extend: {
             variants: {
                 height: ["responsive", "hover", "focus"],
+                fill: ["hover", "focus"],
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

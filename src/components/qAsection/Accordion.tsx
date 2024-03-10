@@ -14,7 +14,7 @@ export function Accordion({ item }: AccordionProps) {
 
     return (
         <>
-            <div className="py-[16px] min-h-[72px] border-b-[1px]">
+            <div className="py-[16px] min-h-[72px] border-b-[1px] border-purple-stroke">
                 <button
                     onClick={() => setAccordionOpen(!accordionOpen)}
                     className="flex justify-between w-full"
