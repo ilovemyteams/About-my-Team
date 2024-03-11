@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { LogoLink } from "./LogoLink";
 import { BurgerMenuButton } from "./BurgerMenuButton";
-import { SocialLinks } from "./SocialLinks";
+import { SocialLinksList } from "./SocialLinksList";
 import { HeaderMenu } from "./HeaderMenu/HeaderMenu";
 
 export const Header = () => {
@@ -21,7 +21,7 @@ export const Header = () => {
                     isHeaderMenuOpened={isHeaderMenuOpened}
                     toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                 />
-                <SocialLinks />
+                <SocialLinksList />
             </div>
             <HeaderMenu
                 isHeaderMenuOpened={isHeaderMenuOpened}
