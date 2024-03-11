@@ -138,6 +138,9 @@ const config: Config = {
             triangles: 'url("/images/triangles.svg")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+            portfolioSectionGradient:
+                "linear-gradient(to left, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+
             CTAGradient:
                 "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
         },
