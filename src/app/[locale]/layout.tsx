@@ -1,10 +1,11 @@
 import React from "react";
+import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
-import { cookies } from "next/headers";
 import { Header } from "@/src/components/header/Header";
+import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import "./globals.css";
 
 const caviar = localFont({
@@ -56,6 +57,7 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
+
     const cookieStore = cookies();
     const userTheme = cookieStore.get("theme") || { value: "dark" };
 
@@ -63,15 +65,12 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable} 
-                    h-[100vh] ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}
-                    after:h-[230px] after:content-heart after:absolute after:bottom-0 after:left-[100px] after:overflow-hidden after:z-[-1]
-                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
-                    `}
+                    className={`${caviar.variable} ${geist.variable} overflow-hidden
+                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
+                    <BackgroundImages />
                     <ThemeProvider>
                         <Header />
-                        {/*TO:DO basic styles for the dark theme */}
                         <main>{children}</main>
                         <footer></footer>
                     </ThemeProvider>

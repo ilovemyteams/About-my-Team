@@ -30,7 +30,9 @@ export function ThemeSwitcher() {
     };
 
     if (!mounted) {
-        return <div className="bg-transparent w-[66px] h-[28px]"></div>;
+        return (
+            <div className="w-[66px] h-[28px] border border-purple-stroke rounded-[32px]"></div>
+        );
     }
 
     // TODO: update switcher border colors for light theme when design is ready
@@ -52,7 +54,7 @@ export function ThemeSwitcher() {
                     <div
                         className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px] 
                         ${resolvedTheme === "dark" ? "translate-x-[3px] bg-purple-stroke" : "translate-x-[40px]  bg-purple-stroke"} 
-                        transition-transform duration-300 ease-in-out`}
+                        transition-transform duration-300 ease-out`}
                     ></div>
                 </div>
             </label>
