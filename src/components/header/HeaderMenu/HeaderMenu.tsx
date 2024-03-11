@@ -5,7 +5,7 @@ import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "./HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
-import { BackgroundImages } from "./BbackgroundImages";
+import { BackgroundImages } from "./BackgroundImages";
 
 interface HeaderMenuProps {
     isHeaderMenuOpened: boolean;
