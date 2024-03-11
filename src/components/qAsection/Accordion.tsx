@@ -38,11 +38,11 @@ export function Accordion({ item }: AccordionProps) {
                     className={`mt-[8px] grid overflow-hidden transition-transform duration-300 ease-out text-sm 
             ${
                 isAccordionOpen
-                    ? "grid-rows-[2fr] opacity-100"
+                    ? "grid-rows-[2fr] transition-opacity duration-1000 opacity-100"
                     : "grid-rows-[0fr] opacity-0"
             }`}
                 >
-                    <p className="overflow-hidden font-geist text-base mb-[16px] pt-0 mt-o">
+                    <p className="overflow-hidden text-base mb-[16px] pt-0 mt-o">
                         {item.answer}
                     </p>
                 </div>
