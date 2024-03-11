@@ -63,7 +63,7 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button embla__button--prev w-12 h-12 border-t border-b border-purple-stroke hover:border-red "
+            className="embla__button--prev w-12 h-12 border-t border-b border-purple-stroke hover:border-red group"
             type="button"
             {...restProps}
         >
@@ -77,7 +77,7 @@ export const NextButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button embla__button--next w-12 h-12 border-t border-b border-purple-stroke rotate-180  hover:border-red "
+            className="embla__button--next w-12 h-12 border-t border-b border-purple-stroke rotate-180 hover:border-red group "
             type="button"
             {...restProps}
         >
