@@ -102,6 +102,9 @@ const config: Config = {
             variants: {
                 height: ["responsive", "hover", "focus"],
             },
+            width: {
+                "80": "calc(100vw - 80px)",
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
@@ -133,9 +136,6 @@ const config: Config = {
             },
         },
         backgroundImage: {
-            bgImage: 'url("/images/bgImage.png")',
-            heart: 'url("/images/heart.svg")',
-            triangles: 'url("/images/triangles.svg")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
             portfolioSectionGradient:

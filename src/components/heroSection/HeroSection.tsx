@@ -14,11 +14,12 @@ export const HeroSection = () => {
                 <ThemeSwitcher />
             </div>
             <Image
-                className="mt-[63px]"
                 src="/images/heroTitle.svg"
-                width={810}
-                height={162}
+                width="0"
+                height="0"
                 alt="I love my team"
+                loading="eager"
+                className="mt-[63px] w-[810px] h-[162px]"
             />
             <div className="flex justify-between ">
                 <HeroInfo />
