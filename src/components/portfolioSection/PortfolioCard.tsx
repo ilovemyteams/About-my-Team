@@ -34,7 +34,7 @@ export const PortfolioCard = ({
                             {name}
                         </h3>
 
-                        <p className="text-sm font-bold text-purple-50 mb-4">
+                        <p className="text-sm font-normal text-purple-50 mb-4">
                             {siteTypeUp}
                         </p>
 
