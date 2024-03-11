@@ -18,12 +18,14 @@ export function Accordion({ item }: AccordionProps) {
 
     return (
         <>
-            <div className="py-[16px] min-h-[72px] border-b-[1px] border-purple-stroke">
+            <div className="min-h-[98px] border-b-[1px] border-purple-stroke">
                 <button
                     onClick={changeStateAccordion}
-                    className="flex justify-between w-full"
+                    className="flex justify-between items-center w-full"
                 >
-                    <summary className="text-xlb">{item.question}</summary>
+                    <summary className="mt-[16px] pb-[16px] font-caviar text-left  text-xlb">
+                        {item.question}
+                    </summary>
                     <Image
                         src="/images/iconUp.svg"
                         width="0"
@@ -40,7 +42,7 @@ export function Accordion({ item }: AccordionProps) {
                     : "grid-rows-[0fr] opacity-0"
             }`}
                 >
-                    <p className="overflow-hidden font-geist text-base py-[16px]">
+                    <p className="overflow-hidden font-geist text-base mb-[16px] pt-0 mt-o">
                         {item.answer}
                     </p>
                 </div>
