@@ -6,7 +6,7 @@ export const HeroInfo = () => {
 
     return (
         <div className="w-[50%] pt-6">
-            <p className="max-w-[450px] pc:h-[100px] pc:mb-[96px]">
+            <p className="max-w-[450px] pc:mb-[154px]">
                 {getTranslation("Hero.heroInfoText")}
             </p>
             <div className="flex flex-col gap-6 mt-[96px]">
