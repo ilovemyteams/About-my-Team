@@ -2,14 +2,19 @@ import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-const HOME_URL = "/";
+interface LogoLinkProps {
+    setIsHeaderMenuOpened: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
+}
 
-export const LogoLink = () => {
+export const LogoLink = ({ setIsHeaderMenuOpened }: LogoLinkProps) => {
     const locale = useLocale();
 
     return (
         <Link
-            href={`${HOME_URL}${locale}`}
+            href={`/${locale}`}
+            onClick={() => setIsHeaderMenuOpened(false)}
             className="cursor-pointer w-[68px] h-[62px]"
         >
             <Image
