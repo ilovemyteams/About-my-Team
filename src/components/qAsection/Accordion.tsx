@@ -19,24 +19,26 @@ export function Accordion({ item }: AccordionProps) {
                     onClick={() => setAccordionOpen(!accordionOpen)}
                     className="flex justify-between w-full"
                 >
-                    <summary>{item.question}</summary>
+                    <summary className="text-xlb">{item.question}</summary>
                     <Image
                         src="/images/iconUp.svg"
                         width="0"
                         height="0"
-                        alt="Share icon"
-                        className={`w-[40px] h-auto ${accordionOpen ? "transition-all" : "transition-transform rotate-180 duration-300 ease-in-out"}`}
+                        alt="Open and close answer icon"
+                        className={`w-[40px] h-auto ${accordionOpen ? "transition-transform" : "transition-transform rotate-180 duration-300 ease-out"}`}
                     />
                 </button>
                 <div
-                    className={`mt-[8px] grid overflow-hidden transition-all duration-300 ease-in-out text-sm 
+                    className={`mt-[8px] grid overflow-hidden transition-transform duration-300 ease-in-out text-sm 
             ${
                 accordionOpen
                     ? "grid-rows-[2fr] opacity-100"
                     : "grid-rows-[0fr] opacity-0"
             }`}
                 >
-                    <p className="overflow-hidden ">{item.answer}</p>
+                    <p className="overflow-hidden font-geist text-base py-[16px]">
+                        {item.answer}
+                    </p>
                 </div>
             </div>
         </>
