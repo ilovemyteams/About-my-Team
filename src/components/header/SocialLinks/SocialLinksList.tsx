@@ -1,8 +1,16 @@
 import { SocialLink } from "./SocialLink";
 
 const socialLinksData = [
-    { url: "/", image: "linkedin.svg", alt: "Linkedin" },
-    { url: "/", image: "behance.svg", alt: "Behance" },
+    {
+        url: "https://www.linkedin.com/in/susanna-salata/",
+        image: "linkedin.svg",
+        alt: "Linkedin",
+    },
+    {
+        url: "https://www.behance.net/aboutmyteam",
+        image: "behance.svg",
+        alt: "Behance",
+    },
     { url: "/", image: "github.svg", alt: "GitHub" },
 ];
 
