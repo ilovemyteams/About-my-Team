@@ -10,7 +10,7 @@ export const PortfolioSection = () => {
     const projects = portfolioData;
     const SLIDES = projects;
     return (
-        <Section>
+        <Section id="portfolio">
             <PortfolioTitle />
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 <PortfolioCarousel projects={SLIDES} options={OPTIONS} />
