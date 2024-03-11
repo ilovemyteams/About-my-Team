@@ -16,8 +16,8 @@ export const BuyMeCoffeeLink = ({ className }: BuyMeCoffeeLinkProps) => {
             after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:top-0 after:left-0 after:bg-purple-stroke03 
             after:scale-0 after:origin-center after:transition-transform after:ease-out after:duration-[600ms] 
             hover:after:scale-100 hover:after:blur-[2px] hover:after:w-[56px] hover:after:h-[56px]
-            focus:after:scale-100  focus:after:blur-[2px] focus:after:w-[56px] focus:after:h-[56px] 
-            focus:outline-none focus-within:outline-none ${className}`}
+            focus-visible:after:scale-100  focus-visible:after:blur-[2px] focus-visible:after:w-[56px] focus-visible:after:h-[56px] 
+            focus-visible:outline-none focus-within:outline-none ${className}`}
         >
             <Image
                 src="/images/coffeeCup.svg"
