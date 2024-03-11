@@ -4,13 +4,13 @@ import { MobTitle } from "./MobTitle";
 import { TitleWrapper } from "../../shared/TitleWrapper";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 
-export const FeedbackTitle = () => {
-    const getTranslation = useTranslations("Feedback");
+export const PortfolioTitle = () => {
+    const getTranslation = useTranslations("Portfolio");
 
     return (
         <div>
             <TitleWrapper className="flex flex-col pc:flex-row items-start">
-                <SmallPageTitle className="m-w-16 ml-1 mt-3 mr-3 flex items-center">
+                <SmallPageTitle className="ml-1 mr-3 mt-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
                 <DeskTitle />
