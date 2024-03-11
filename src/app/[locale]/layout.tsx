@@ -65,7 +65,7 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable}
+                    className={`${caviar.variable} ${geist.variable} overflow-hidden
                     ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
                     <BackgroundImages />

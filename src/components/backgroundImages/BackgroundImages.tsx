@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const BackgroundImages = () => {
     return (
-        <div className="fixed w-screen h-[100vh] z-[-10]">
-            <div className="absolute h-full w-full blur-[100px] z-[-10]">
+        <>
+            <div className="h-[100vh] absolute w-screen blur-[100px] overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/leftBottom.svg"
                     width="0"
@@ -27,7 +27,7 @@ export const BackgroundImages = () => {
                 />
             </div>
 
-            <div className="absolute right-0 top-0 flex items-end h-[786px] w-[569px] z-[-10] ">
+            <div className="absolute right-0 top-0 flex items-end h-[786px] w-[569px] overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/curve.svg"
                     width="0"
@@ -46,6 +46,6 @@ export const BackgroundImages = () => {
                     className="w-[357px] h-[315px]"
                 />
             </div>
-        </div>
+        </>
     );
 };

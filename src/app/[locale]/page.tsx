@@ -12,7 +12,7 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 
 export default function Home() {
     return (
-        <div className="pc:ml-[80px]">
+        <div className="pc:ml-[80px] h-[100vh] overflow-y-auto">
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
