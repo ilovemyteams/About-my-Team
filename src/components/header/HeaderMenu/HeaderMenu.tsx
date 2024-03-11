@@ -13,7 +13,7 @@ interface HeaderMenuProps {
     ) => void;
 }
 
-const openedStyles = "w-[calc(100vw-80px)]";
+const openedStyles = "w-80";
 const closedStyles = "w-0";
 
 export const HeaderMenu = ({
@@ -26,7 +26,7 @@ export const HeaderMenu = ({
         <div
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] py-[32px] overflow-hidden transition-width duration-[600ms] ease-out bg-grey dark:bg-purple-400`}
         >
-            <div className="flex flex-col justify-between w-[calc(100vw-80px)] h-full px-[60px]">
+            <div className="flex flex-col justify-between w-80 h-full px-[60px]">
                 <div className="overflow-hidden w-full flex gap-[183px] justify-end relative z-10">
                     <LocaleSwitcher />
                     <ThemeSwitcher />

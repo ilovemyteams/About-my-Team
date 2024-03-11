@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { LogoLink } from "./LogoLink";
 import { BurgerMenuButton } from "./BurgerMenuButton";
-import { SocialLinksList } from "./SocialLinksList";
+import { SocialLinksList } from "./SocialLinks/SocialLinksList";
 import { HeaderMenu } from "./HeaderMenu/HeaderMenu";
 
 export const Header = () => {
