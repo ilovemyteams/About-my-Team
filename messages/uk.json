@@ -6,6 +6,18 @@
     "Hero": {
         "portfolioLink": "Портфоліо"
     },
+    "Portfolio": {
+        "pageTitle": "портфоліо",
+        "titleMobFirst": "Реалізовані проекти, які вже допомагають розвивати ідеї",
+        "titleMobSecond": "та бізнес наших замовників",
+        "titleFirstWord": "Реалізовані ",
+        "titleSecondWord": "проекти, ",
+        "titleThirdWord": "які вже ",
+        "titleFourthWord": "допомагають ",
+        "titleFifthWord": "розвивати ",
+        "titleSixthWord": "ідеї та бізнес нашим ",
+        "titleSeventhWord": "замовникам"
+    },
     "Mission": {
         "pageTitle": "Наша місія",
         "titleFirstWord": "Створюємо ",
@@ -23,9 +35,6 @@
         "development": "розробка",
         "promotion": "просування",
         "maintenance": "підтримка"
-    },
-    "Portfolio": {
-        "pageTitle": "Портфоліо"
     },
     "Feedback": {
         "pageTitle": "Відгуки",
