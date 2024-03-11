@@ -10,13 +10,17 @@ interface AccordionProps {
 }
 
 export function Accordion({ item }: AccordionProps) {
-    const [accordionOpen, setAccordionOpen] = useState(false);
+    const [isAccordionOpen, setAccordionOpen] = useState(false);
+
+    const changeStateAccordion = () => {
+        setAccordionOpen(isAccordionOpen => !isAccordionOpen);
+    };
 
     return (
         <>
             <div className="py-[16px] min-h-[72px] border-b-[1px] border-purple-stroke">
                 <button
-                    onClick={() => setAccordionOpen(!accordionOpen)}
+                    onClick={changeStateAccordion}
                     className="flex justify-between w-full"
                 >
                     <summary className="text-xlb">{item.question}</summary>
@@ -25,13 +29,13 @@ export function Accordion({ item }: AccordionProps) {
                         width="0"
                         height="0"
                         alt="Open and close answer icon"
-                        className={`w-[40px] h-auto ${accordionOpen ? "transition-transform" : "transition-transform rotate-180 duration-300 ease-out"}`}
+                        className={`w-[40px] h-auto ${isAccordionOpen ? "transition-transform" : "transition-transform rotate-180 duration-300 ease-out"}`}
                     />
                 </button>
                 <div
-                    className={`mt-[8px] grid overflow-hidden transition-transform duration-300 ease-in-out text-sm 
+                    className={`mt-[8px] grid overflow-hidden transition-transform duration-300 ease-out text-sm 
             ${
-                accordionOpen
+                isAccordionOpen
                     ? "grid-rows-[2fr] opacity-100"
                     : "grid-rows-[0fr] opacity-0"
             }`}
