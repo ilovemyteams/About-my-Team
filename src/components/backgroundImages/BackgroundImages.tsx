@@ -27,7 +27,7 @@ export const BackgroundImages = () => {
                 />
             </div>
 
-            <div className="absolute right-0 top-0 flex items-end h-[786px] w-[569px] overflow-hidden z-[-10] ">
+            <div className="absolute right-0 top-0 flex items-end h-[786px] w-[569px] overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/curve.svg"
                     width="0"

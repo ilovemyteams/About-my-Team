@@ -9,6 +9,9 @@ export interface PortfolioCardItemProps {
     };
     localizationData: { name: string; siteView: string; description: string };
 }
+function formatNumberWithLeadingZero(num: number): string {
+    return num.toString().padStart(2, "0");
+}
 
 export const PortfolioCard = ({
     data,
@@ -18,6 +21,7 @@ export const PortfolioCard = ({
     const { siteView, name } = localizationData;
 
     const siteTypeUp = siteView?.toUpperCase();
+    const idFormater = formatNumberWithLeadingZero(id);
     return (
         <>
             <div className="relative min-w-[50%] h-[400px]">
@@ -30,11 +34,11 @@ export const PortfolioCard = ({
                 />
                 <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioSectionGradient">
                     <div className="absolute top-5 left-5">
-                        <h3 className="font-caviar font-bold text-xl mb-1">
+                        <h3 className="font-caviar font-bold text-xl mb-[6px]">
                             {name}
                         </h3>
 
-                        <p className="text-sm font-bold text-purple-50 mb-4">
+                        <p className="text-sm font-normal text-red mb-4">
                             {siteTypeUp}
                         </p>
 
@@ -50,7 +54,7 @@ export const PortfolioCard = ({
                         </div>
                     </div>
                     <div className="absolute flex  w-[30px] h-7 top-5 right-5 items-center justify-center">
-                        {id}
+                        {idFormater}
                     </div>
                 </div>
             </div>

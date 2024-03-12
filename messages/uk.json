@@ -8,7 +8,7 @@
         "portfolioLink": "Портфоліо"
     },
     "Portfolio": {
-        "pageTitle": "портфоліо",
+        "pageTitle": "Портфоліо",
         "titleMobFirst": "Реалізовані проекти, які вже допомагають розвивати ідеї",
         "titleMobSecond": "та бізнес наших замовників",
         "titleFirstWord": "Реалізовані ",
@@ -37,6 +37,7 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
+
     "Feedback": {
         "pageTitle": "Відгуки",
         "titleMob": "Що про нас говорять наші клієнти",
