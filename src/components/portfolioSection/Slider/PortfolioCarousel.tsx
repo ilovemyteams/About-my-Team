@@ -32,7 +32,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                     {projects.map(project => (
                         <div
                             key={project.data.id}
-                            className="embla__slide flex-[0_0_50%] w-full"
+                            className="embla__slide flex-[0_0_100%] tab:flex-[0_0_50%] w-full"
                         >
                             <PortfolioCard
                                 data={project.data}
@@ -41,7 +41,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls absolute -top-[118px] right-0 ">
+                <div className="embla__controls tab:absolute -top-[118px] right-0 mt-6 ">
                     <div className="embla__buttons flex gap-6">
                         <PrevButton
                             onClick={onPrevButtonClick}
