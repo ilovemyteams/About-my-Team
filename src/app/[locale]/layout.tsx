@@ -72,7 +72,6 @@ export default function LocaleLayout({
                     <ThemeProvider>
                         <Header />
                         <main>{children}</main>
-                        <footer></footer>
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>
