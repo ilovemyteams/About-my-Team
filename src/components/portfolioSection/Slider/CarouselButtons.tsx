@@ -63,14 +63,11 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button--prev flex justify-center items-center w-12 h-12 border-t border-b border-red group 
-            after:content-[''] after:absolute  after:w-[0px] after:h-[0px] after:rounded-full  after:bg-purple-stroke03 
-            after:scale-0 after:origin-center after:ease-out after:duration-[600ms] after:blur-[2px]
-            hover:after:transition-scale hover:after:ease-out hover:after:duration-[600ms] 
-            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-12 hover:after:h-12
-            focus-visible:after:transition-scale focus-visible:after:ease-out focus-visible:after:duration-[600ms]
-            focus-visible:after:scale-100  focus-visible:after:blur-[2px] focus-visible:after:w-12 focus-visible:after:h-12 
-            focus-visible:outline-none focus-within:outline-none"
+            className="embla__button--prev flex justify-center items-center w-12 h-12 
+            border-t border-b border-red group
+            focus-visible:after:w-12 focus-visible:after:h-12  
+            hover:after:w-12 hover:after:h-12
+            icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within"
             type="button"
             {...restProps}
         >
@@ -84,14 +81,11 @@ export const NextButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button--next relative flex justify-center items-center w-12 h-12 border-t border-b border-red rotate-180 group 
-            after:content-[''] after:absolute  after:w-[0px] after:h-[0px] after:rounded-full  after:bg-purple-stroke03 
-            after:scale-0 after:origin-center after:ease-out after:duration-[600ms] after:blur-[2px]
-            hover:after:transition-scale hover:after:ease-out hover:after:duration-[600ms] 
-            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-12 hover:after:h-12
-            focus-visible:after:transition-scale focus-visible:after:ease-out focus-visible:after:duration-[600ms]
-            focus-visible:after:scale-100  focus-visible:after:blur-[2px] focus-visible:after:w-12 focus-visible:after:h-12 
-            focus-visible:outline-none focus-within:outline-none
+            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+            border-t border-b border-red group
+            focus-visible:after:w-12 focus-visible:after:h-12  
+            hover:after:w-12 hover:after:h-12
+            icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within
             "
             type="button"
             {...restProps}
