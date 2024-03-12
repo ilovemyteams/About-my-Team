@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import Link from "next/link";
 
 export const MenuFooter = () => {
     const getTranslation = useTranslations();
@@ -16,11 +16,11 @@ export const MenuFooter = () => {
 
     const locale = useLocale();
     return (
-        <ul className="flex flex-start mr-[236px] font-geist text-base [&>*:last-child]:mr-0 ">
+        <ul className="flex flex-start mr-[236px] gap-[24px] font-geist text-base [&>*:last-child]:mr-0 ">
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
-                    className="py-0.5 p-[2px] mr-[24px] text-base leading-6 tracking-normal text-left"
+                    className="py-0.5 p-[2px] text-base leading-6 tracking-normal text-left"
                 >
                     <Link
                         href={`/${locale}#${id}`}
