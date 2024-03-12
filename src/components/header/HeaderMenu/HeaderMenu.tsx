@@ -14,8 +14,8 @@ interface HeaderMenuProps {
     ) => void;
 }
 
-const openedStyles = "fixed w-80";
-const closedStyles = "absolute w-0";
+const openedStyles = "w-80";
+const closedStyles = "w-0";
 
 export const HeaderMenu = ({
     isHeaderMenuOpened = false,
@@ -25,10 +25,10 @@ export const HeaderMenu = ({
 
     return (
         <div
-            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} top-0 left-[80px] z-20 h-[100vh] overflow-clip transition-width duration-[600ms] ease-out
+            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
             bg-grey dark:bg-purple-400`}
         >
-            <BackgroundImages isHeaderMenuOpened={isHeaderMenuOpened} />
+            <BackgroundImages />
             <div className="py-[32px]">
                 <div className="flex flex-col justify-between w-80 h-full px-[60px]">
                     <div className="overflow-hidden w-full flex gap-[183px] justify-end relative z-20">

@@ -11,7 +11,7 @@ export const Header = () => {
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
     return (
-        <header>
+        <header className="fixed top-0 left-0 h-[100vh] z-20">
             <div
                 className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] z-20 bg-transparent pc:flex flex-col items-center
                 justify-between py-8 border-solid border-r-[1px] border-purple-stroke"

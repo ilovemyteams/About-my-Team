@@ -1,18 +1,9 @@
 import Image from "next/image";
 
-interface BackgroundImagesProps {
-    isHeaderMenuOpened: boolean;
-}
-
-const menuOpenedStyles = "fixed";
-const menuClosedStyles = "absolute";
-
-export const BackgroundImages = ({
-    isHeaderMenuOpened,
-}: BackgroundImagesProps) => {
+export const BackgroundImages = () => {
     return (
         <div
-            className={`h-[100vh] w-80 blur-[100px] overflow-hidden z-[10] ${isHeaderMenuOpened ? menuOpenedStyles : menuClosedStyles}`}
+            className={`absolute h-[100vh] w-80 blur-[100px] overflow-hidden z-[10]`}
         >
             <Image
                 src="/images/bgImages/leftBottom.svg"
