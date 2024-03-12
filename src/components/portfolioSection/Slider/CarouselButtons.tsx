@@ -5,6 +5,7 @@ import React, {
     useState,
 } from "react";
 import { EmblaCarouselType } from "embla-carousel";
+import { ArrowIcon } from "./ArrowIcon";
 
 type UsePrevNextButtonsType = {
     prevBtnDisabled: boolean;
@@ -62,11 +63,13 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button embla__button--prev"
+            className="embla__button--prev flex justify-center items-center w-12 h-12 
+            border-t border-b border-red group
+            icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within"
             type="button"
             {...restProps}
         >
-            PrevButton
+            <ArrowIcon />
         </button>
     );
 };
@@ -76,11 +79,14 @@ export const NextButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button embla__button--next"
+            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+            border-t border-b border-red group
+            icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within
+            "
             type="button"
             {...restProps}
         >
-            NextButton
+            <ArrowIcon />
         </button>
     );
 };

@@ -130,6 +130,9 @@ const config: Config = {
                 grey: "#D4D4D4",
                 red: "#FB7185",
             },
+            fill: {
+                stroke: "#5F3F87",
+            },
             content: {
                 heart: 'url("/images/Heart.svg")',
                 triangles: 'url("/images/Triangles.svg")',
