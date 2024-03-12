@@ -136,5 +136,15 @@
         "allQuestions": "Всі питання",
         "share": "Поділитися"
 
+    },
+    "Footer": {
+        "titleFirstWord": "Починайте ",
+        "titleSecondWord": "втілення ",
+        "titleThirdWord": "своїх ",
+        "titleFourthWord": "бізнес ",
+        "titleFifthWord": "ідей ",
+        "titleSixthWord": "разом ",
+        "titleSeventhWord": "з нами",
+        "privacyPolicy": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
     }
 }

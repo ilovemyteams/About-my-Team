@@ -9,6 +9,7 @@ import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSec
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { FooterSection } from "@/src/components/footerSection/FooterSection";
 
 export default function Home() {
     return (
@@ -25,6 +26,7 @@ export default function Home() {
             <OurTeamSection />
             <QaSection />
             <HireUsSection />
+            <FooterSection />
             <HomeTest />
         </div>
     );
