@@ -1,37 +1,58 @@
+"use client";
+import useEmblaCarousel from "embla-carousel-react";
+import { EmblaOptionsType } from "embla-carousel";
 import { PortfolioCard } from "./PortfolioCard";
-import { useLocale } from "next-intl";
 import { porfolioData } from "./PortfolioData";
-
-interface PortfolioItem {
-    id: number;
-    img: string;
-    uk: { name: string; type: string };
-    en: { name: string; type: string };
-    pl: { name: string; type: string };
-}
+import { useLocale } from "next-intl";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "../../shared/SliderComponents/CarouselButtons";
 
 type Locale = "uk" | "en" | "pl";
+const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 
 export const PortfolioSlider = () => {
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const locale = useLocale();
 
-    /*ToDo: Implement Slider */
+    const {
+        prevBtnDisabled,
+        nextBtnDisabled,
+        onPrevButtonClick,
+        onNextButtonClick,
+    } = usePrevNextButtons(emblaApi);
+
     return (
-        <div className="max-w-[50%] flex flex-col justify-end">
-            <div className="flex gap-6 justify-end mb-12">
-                <div className="w-12 h-12 bg-purple-100"></div>
-                <div className="w-12 h-12 bg-purple-100"></div>
+        <div className="embla flex flex-col items-end ">
+            <div className="embla__controls mb-12">
+                <div className="embla__buttons flex gap-6 ">
+                    <PrevButton
+                        onClick={onPrevButtonClick}
+                        disabled={prevBtnDisabled}
+                    />
+                    <NextButton
+                        onClick={onNextButtonClick}
+                        disabled={nextBtnDisabled}
+                    />
+                </div>
             </div>
-            <ul>
-                {porfolioData.map((data: PortfolioItem) => (
-                    <li key={data.id}>
-                        <PortfolioCard
-                            data={data[locale as Locale]}
-                            img={data.img}
-                        />
-                    </li>
-                ))}
-            </ul>
+            <div className="pc:w-[540px] overflow-hidden" ref={emblaRef}>
+                <div className="flex">
+                    {porfolioData.map(data => (
+                        <div
+                            key={data.id}
+                            className="embla__slide pc:w-[540px]"
+                        >
+                            <PortfolioCard
+                                data={data[locale as Locale]}
+                                img={data.img}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };
