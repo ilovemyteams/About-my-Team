@@ -7,7 +7,7 @@ import { TitleFooter } from "./TitleFooter/TitleFooter";
 
 export const Footer = () => {
     return (
-        <footer id="footer" className="container pc:mb-[40px]">
+        <footer className="container pc:mb-[40px]">
             <div className="border-y-[1px] border-solid border-purple-stroke">
                 <TitleFooter />
                 <div className="flex items-baseline pb-0 mb-[28px] justify-between">

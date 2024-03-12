@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import "./globals.css";
-import { Footer } from "@/src/components/footerSection/Footer";
+import { Footer } from "@/src/components/footer/Footer";
 
 const caviar = localFont({
     src: [
