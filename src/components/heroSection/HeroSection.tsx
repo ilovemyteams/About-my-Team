@@ -8,7 +8,7 @@ import { HeroFooterLinks } from "./HeroFooterLinks";
 
 export const HeroSection = () => {
     return (
-        <Section className="pt-8">
+        <Section className="py-8">
             <div className="flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
                 <ThemeSwitcher />
@@ -19,7 +19,7 @@ export const HeroSection = () => {
                 height="0"
                 alt="I love my team"
                 loading="eager"
-                className="mt-[63px] mb-6 w-[810px] h-[162px]"
+                className="mt-[63px] w-[810px] h-[162px]"
             />
             <div className="flex justify-between ">
                 <HeroInfo />

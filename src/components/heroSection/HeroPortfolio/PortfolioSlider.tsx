@@ -1,8 +1,8 @@
 "use client";
+import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { PortfolioCard } from "./PortfolioCard";
 import { porfolioData } from "./PortfolioData";
-import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
 import {
     NextButton,
