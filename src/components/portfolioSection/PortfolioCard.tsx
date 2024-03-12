@@ -30,11 +30,11 @@ export const PortfolioCard = ({
                 />
                 <div className="absolute bottom-0 block min-w-full h-[142px] bg-portfolioSectionGradient">
                     <div className="absolute top-5 left-5">
-                        <h3 className="font-caviar font-bold text-xl mb-1">
+                        <h3 className="font-caviar font-bold text-xl mb-[6px]">
                             {name}
                         </h3>
 
-                        <p className="text-sm font-normal text-purple-50 mb-4">
+                        <p className="text-sm font-normal text-red mb-4">
                             {siteTypeUp}
                         </p>
 
