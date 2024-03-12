@@ -37,7 +37,7 @@ export const BackgroundImages = () => {
                 />
             </div>
 
-            <div className="absolute left-[100px] bottom-0 h-[230px] w-[357px] overflow-hidden z-[-10]">
+            <div className="absolute hidden pc:block left-[100px] bottom-0 h-[230px] w-[357px] overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/heart.svg"
                     width="0"
