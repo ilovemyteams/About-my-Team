@@ -38,9 +38,7 @@ export const PortfolioCard = ({
                             {name}
                         </h3>
 
-                        <p className="text-sm font-normal text-red mb-4">
-                            {siteTypeUp}
-                        </p>
+                        <p className="text-sm text-red mb-4">{siteTypeUp}</p>
 
                         <div className="flex gap-2">
                             {implementations.map((implementation, index) => (
