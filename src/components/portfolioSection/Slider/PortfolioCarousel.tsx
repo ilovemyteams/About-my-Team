@@ -41,7 +41,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls absolute -top-24 right-0 ">
+                <div className="embla__controls absolute -top-[118px] right-0 ">
                     <div className="embla__buttons flex gap-6">
                         <PrevButton
                             onClick={onPrevButtonClick}

@@ -63,12 +63,14 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button--prev w-12 h-12 border-t border-b border-purple-stroke hover:border-red group 
-            after:content-[''] after:absolute after:w-[48px] after:h-[48px] after:top-0 after:left-0
-            hover:after:transition-opacity hover:after:duration-600 hover:after:ease-out
-            after:opacity-0 hover:after:opacity-100 hover:after:blur-[2px] hover:after:rounded-full
-            focus:after:opacity-100 focus:after:blur-[2px] focus:after:rounded-full focus:outline-none focus-within:outline-none
-            after:bg-purple-stroke03"
+            className="embla__button--prev flex justify-center items-center w-12 h-12 border-t border-b border-red group 
+            after:content-[''] after:absolute  after:w-[0px] after:h-[0px] after:rounded-full  after:bg-purple-stroke03 
+            after:scale-0 after:origin-center after:ease-out after:duration-[600ms] after:blur-[2px]
+            hover:after:transition-scale hover:after:ease-out hover:after:duration-[600ms] 
+            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-12 hover:after:h-12
+            focus-visible:after:transition-scale focus-visible:after:ease-out focus-visible:after:duration-[600ms]
+            focus-visible:after:scale-100  focus-visible:after:blur-[2px] focus-visible:after:w-12 focus-visible:after:h-12 
+            focus-visible:outline-none focus-within:outline-none"
             type="button"
             {...restProps}
         >
@@ -82,7 +84,15 @@ export const NextButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button--next w-12 h-12 border-t border-b border-purple-stroke rotate-180 hover:border-red group "
+            className="embla__button--next relative flex justify-center items-center w-12 h-12 border-t border-b border-red rotate-180 group 
+            after:content-[''] after:absolute  after:w-[0px] after:h-[0px] after:rounded-full  after:bg-purple-stroke03 
+            after:scale-0 after:origin-center after:ease-out after:duration-[600ms] after:blur-[2px]
+            hover:after:transition-scale hover:after:ease-out hover:after:duration-[600ms] 
+            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-12 hover:after:h-12
+            focus-visible:after:transition-scale focus-visible:after:ease-out focus-visible:after:duration-[600ms]
+            focus-visible:after:scale-100  focus-visible:after:blur-[2px] focus-visible:after:w-12 focus-visible:after:h-12 
+            focus-visible:outline-none focus-within:outline-none
+            "
             type="button"
             {...restProps}
         >
