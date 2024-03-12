@@ -46,19 +46,19 @@ body {
     }
 }
 @layer components {
-    .icon-hover-rouded-purple {
-        @apply after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 after:scale-0 after:origin-center after:ease-out after:duration-[600ms] after:blur-[2px];
+    .icon-hover-rounded-purple {
+        @apply after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 after:scale-0 after:origin-center after:ease-in-out after:duration-[600ms] after:blur-[2px];
     }
 
-    .icon-hover-rouded-purple:hover {
-        @apply after:scale-100 after:blur-[2px] transform transition-transform after:h-12 after:w-12 ease-out duration-[600ms];
+    .icon-hover-rounded-purple:hover {
+        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12;
     }
 
-    .icon-hover-rouded-purple:focus-visible {
-        @apply after:scale-100 after:blur-[2px] transform transition-transform after:h-12 after:w-12 ease-out duration-[600ms] outline-none;
+    .icon-hover-rounded-purple:focus-visible {
+        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12 outline-none;
     }
 
-    .icon-hover-rouded-purple:focus-within {
+    .icon-hover-rounded-purple:focus-within {
         @apply outline-none;
     }
 }
