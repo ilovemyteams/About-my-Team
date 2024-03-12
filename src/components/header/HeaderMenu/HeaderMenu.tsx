@@ -25,7 +25,7 @@ export const HeaderMenu = ({
 
     return (
         <div
-            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
+            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} fixed top-0 left-[80px] z-20 h-[100vh] overflow-clip transition-width duration-[600ms] ease-out
             bg-grey dark:bg-purple-400`}
         >
             <BackgroundImages />
