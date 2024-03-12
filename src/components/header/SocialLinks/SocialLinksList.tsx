@@ -11,7 +11,11 @@ const socialLinksData = [
         image: "behance.svg",
         alt: "Behance",
     },
-    { url: "/", image: "github.svg", alt: "GitHub" },
+    {
+        url: "https://github.com/ilovemyteams/About-my-Team",
+        image: "github.svg",
+        alt: "GitHub",
+    },
 ];
 
 export const SocialLinksList = () => {
