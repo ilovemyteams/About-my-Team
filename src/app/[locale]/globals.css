@@ -51,11 +51,11 @@ body {
     }
 
     .icon-hover-rouded-purple:hover {
-        @apply after:scale-100 after:blur-[2px] transform transition-transform ease-out duration-[600ms];
+        @apply after:scale-100 after:blur-[2px] transform transition-transform after:h-12 after:w-12 ease-out duration-[600ms];
     }
 
     .icon-hover-rouded-purple:focus-visible {
-        @apply after:scale-100 after:blur-[2px] transform transition-transform ease-out duration-[600ms] outline-none;
+        @apply after:scale-100 after:blur-[2px] transform transition-transform after:h-12 after:w-12 ease-out duration-[600ms] outline-none;
     }
 
     .icon-hover-rouded-purple:focus-within {

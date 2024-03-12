@@ -65,8 +65,6 @@ export const PrevButton: React.FC<ButtonType> = props => {
         <button
             className="embla__button--prev flex justify-center items-center w-12 h-12 
             border-t border-b border-red group
-            focus-visible:after:w-12 focus-visible:after:h-12  
-            hover:after:w-12 hover:after:h-12
             icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within"
             type="button"
             {...restProps}
@@ -83,8 +81,6 @@ export const NextButton: React.FC<ButtonType> = props => {
         <button
             className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
             border-t border-b border-red group
-            focus-visible:after:w-12 focus-visible:after:h-12  
-            hover:after:w-12 hover:after:h-12
             icon-hover-rouded-purple icon-hover-rouded-purple:hover icon-hover-rouded-purple:focus-visible icon-hover-rouded-purple:focus-within
             "
             type="button"
