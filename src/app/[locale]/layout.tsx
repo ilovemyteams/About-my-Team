@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import "./globals.css";
+import { Footer } from "@/src/components/footerSection/Footer";
 
 const caviar = localFont({
     src: [
@@ -72,6 +73,7 @@ export default function LocaleLayout({
                     <ThemeProvider>
                         <Header />
                         <main>{children}</main>
+                        <Footer />
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>

@@ -1,11 +1,11 @@
 import { ButtonShare } from "../shared/ButtonShare";
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
-import { Copywright } from "./Copyright";
+import { Copyright } from "./Copyright";
 import { MenuFooter } from "./MenuFooter";
 import { PrivacyPolicy } from "./PrivacyPolicy";
 import { TitleFooter } from "./TitleFooter/TitleFooter";
 
-export const FooterSection = () => {
+export const Footer = () => {
     return (
         <footer id="footer" className="container pc:mb-[40px]">
             <div className="border-y-[1px] border-solid border-purple-stroke">
@@ -19,7 +19,7 @@ export const FooterSection = () => {
                 </div>
             </div>
             <div className="flex mt-[18.5px] justify-between">
-                <Copywright />
+                <Copyright />
                 <PrivacyPolicy />
             </div>
         </footer>

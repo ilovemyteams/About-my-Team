@@ -37,7 +37,6 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
-
     "Feedback": {
         "pageTitle": "Відгуки",
         "titleMob": "Що про нас говорять наші клієнти",
@@ -72,7 +71,6 @@
         "showMore": "Більше",
         "showLess": "Менше"
     },
-
     "Stages": {
         "pageTitle": "Процес",
         "mainTitle": "Послідовність роботи",
@@ -113,7 +111,6 @@
         "team1": "Команда I Love My Team",
         "team2": "Команда Ферма"
     },
-
     "Q&A": {
         "pageTitle": "q&a",
         "pageBigTitle": "Відповіді на часті питання",
@@ -136,7 +133,6 @@
         "allProjects": "Всі проекти",
         "allQuestions": "Всі питання",
         "share": "Поділитися"
-
     },
     "Footer": {
         "titleFirstWord": "Починайте ",
