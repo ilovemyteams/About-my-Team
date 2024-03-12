@@ -31,7 +31,7 @@ export const HeaderMenuList = ({
                     <Link
                         href={`/${locale}#${id}`}
                         onClick={() => setIsHeaderMenuOpened(false)}
-                        className="border-solid border-b-[1px] border-purple-stroke hover:border-transparent transition-color duration-300 ease-out"
+                        className="border-solid border-b-[1px] border-purple-stroke hover:border-grey transition-color duration-300 ease-out"
                     >
                         {name}
                     </Link>
