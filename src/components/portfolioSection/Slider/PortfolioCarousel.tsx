@@ -4,7 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
 import { PortfolioCard } from "../PortfolioCard";
-import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "../../shared/SliderComponents/CarouselButtons";
 import { PortfolioDataItemType } from "../portfolioData";
 
 type PortfolioCarouselProps = {
