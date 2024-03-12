@@ -16,22 +16,20 @@ export const MenuFooter = () => {
 
     const locale = useLocale();
     return (
-        <>
-            <ul className="flex flex-start mr-[236px] font-geist text-base [&>*:last-child]:mr-0 ">
-                {menuList.map(({ name, id }, idx) => (
-                    <li
-                        key={idx}
-                        className="py-0.5 p-[2px] mr-[24px] text-base leading-6 tracking-normal text-left"
+        <ul className="flex flex-start mr-[236px] font-geist text-base [&>*:last-child]:mr-0 ">
+            {menuList.map(({ name, id }, idx) => (
+                <li
+                    key={idx}
+                    className="py-0.5 p-[2px] mr-[24px] text-base leading-6 tracking-normal text-left"
+                >
+                    <Link
+                        href={`/${locale}#${id}`}
+                        className="text-base font-normal font-geist hover:text-red focus:text-red transition ease-out duration-300"
                     >
-                        <Link
-                            href={`/${locale}#${id}`}
-                            className="text-base font-normal font-geist hover:text-red focus:text-red"
-                        >
-                            {name}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </>
+                        {name}
+                    </Link>
+                </li>
+            ))}
+        </ul>
     );
 };
