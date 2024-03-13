@@ -37,9 +37,8 @@
     },
     "Feedback": {
         "pageTitle": "Відгуки",
-        "titleMob": "Що про нас говорять наші клієнти",
         "titleFirstWord": "Що про нас ",
-        "titleSecondWord": "говорять",
+        "titleSecondWord": "говорять ",
         "titleThirdWord": "наші ",
         "titleFourthWord": "клієнти"
     },
