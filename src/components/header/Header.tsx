@@ -12,7 +12,7 @@ export const Header = () => {
 
     useEffect(() => {
         isHeaderMenuOpened
-            ? setTimeout(() => (document.body.style.overflow = "hidden"), 500)
+            ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
 
