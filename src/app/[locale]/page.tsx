@@ -9,7 +9,7 @@ import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSec
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
-import FeedbackSection from "@/src/components/feedbackSection/FeedbackSection";
+import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 
 export default function Home() {
     return (
