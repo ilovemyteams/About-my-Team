@@ -4,7 +4,7 @@ import { StagesTitle } from "./StagesTitle";
 
 export const StagesSection = () => {
     return (
-        <Section>
+        <Section id="stages">
             <StagesTitle />
             <StagesTable />
         </Section>

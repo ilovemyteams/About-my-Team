@@ -9,13 +9,14 @@ const greyColor = "text-grey border-grey after:bg-grey before:bg-grey";
 export const Button = ({ children, color = "red", className }: ButtonProps) => {
     return (
         <button
-            className={`${color === "red" ? redColor : greyColor} relative w-[270px] h-[56px] font-caviar text-2xl border-solid border-y-[1px]
-            hover:after:transition-opacity hover:after:duration-500 hover:after:ease-out hover:before:transition-opacity hover:before:duration-500 hover:before:ease-out after:content-[''] after:absolute after:bottom-[2px] 
-             after:left-0 after:h-[1px] after:w-[270px] after:opacity-0 
-             before:content-[''] before:absolute before:bottom-[5px] before:left-0 before:h-[1px] before:w-[270px]
-             before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 pc:hover:before:delay-700 focus:before:opacity-100 focus:after:opacity-0 focus:outline-none focus-within:outline-none ${className}`}
+            className={`group ${color === "red" ? redColor : greyColor} relative w-[270px] h-[56px] font-caviar text-2xl border-solid border-y-[1px]
+            pc:hover:after:transition-opacity pc:hover:after:duration-200 pc:hover:after:ease-out pc:hover:before:transition-opacity pc:hover:before:duration-200 pc:hover:before:ease-out after:content-[''] after:absolute after:bottom-[2px] 
+             after:left-0 after:h-[0.8px] after:w-[270px] after:opacity-0 before:content-[''] before:absolute before:bottom-[4px] before:left-0 before:h-[1px] before:w-[270px]
+             before:opacity-0 pc:hover:after:opacity-100 pc:hover:before:opacity-100 pc:hover:before:delay-[400ms] focus:before:opacity-100 focus:after:opacity-0 focus:outline-none focus-within:outline-none ${className}`}
         >
-            {children.toLowerCase()}
+            <span className="inline-block transform pc:group-hover:translate-y-[-12%] pc:group-focus:translate-y-[0%] transition duration-[600ms] ease-out">
+                {children.toLowerCase()}
+            </span>
         </button>
     );
 };

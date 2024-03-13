@@ -102,6 +102,9 @@ const config: Config = {
             variants: {
                 height: ["responsive", "hover", "focus"],
             },
+            width: {
+                "80": "calc(100vw - 80px)",
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
@@ -117,9 +120,9 @@ const config: Config = {
                     100: "#A258FF",
                     200: "#1F0033",
                     300: "#54148A",
+                    400: "#09002E",
                     stroke: "#5F3F87",
                     stroke03: "rgba(162, 88, 255, 0.3)",
-
                     dark: "#3C1E63",
                 },
                 white: "#FBF8FF",
@@ -127,17 +130,22 @@ const config: Config = {
                 grey: "#D4D4D4",
                 red: "#FB7185",
             },
+            fill: {
+                stroke: "#5F3F87",
+            },
             content: {
                 heart: 'url("/images/Heart.svg")',
                 triangles: 'url("/images/Triangles.svg")',
             },
         },
         backgroundImage: {
-            bgImage: 'url("/images/bgImage.png")',
-            heart: 'url("/images/Heart.svg")',
-            triangles: 'url("/images/Triangles.svg")',
             portfolioGradient:
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+            portfolioSectionGradient:
+                "linear-gradient(to left, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+
+            CTAGradient:
+                "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
         },
     },
     plugins: [],

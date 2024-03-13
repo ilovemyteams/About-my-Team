@@ -10,7 +10,6 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-grey: #d4d4d4;
-        background-color: #1f0033;
     }
 }
 
@@ -44,5 +43,22 @@ body {
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+}
+@layer components {
+    .icon-hover-rounded-purple {
+        @apply after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 after:scale-0 after:origin-center after:ease-in-out after:duration-[600ms] after:blur-[2px];
+    }
+
+    .icon-hover-rounded-purple:hover {
+        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12;
+    }
+
+    .icon-hover-rounded-purple:focus-visible {
+        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12 outline-none;
+    }
+
+    .icon-hover-rounded-purple:focus-within {
+        @apply outline-none;
     }
 }

@@ -10,7 +10,7 @@ export const BenefitsList = () => {
     ];
 
     return (
-        <ul className="flex flex-col justify-center gap-4 pc:gap-[49px] min-w-[288px] pc:min-w-[540px] pc:h-[298px] pc:ml-[570px]">
+        <ul className="flex flex-col justify-center gap-4 w-full pc:gap-[40px] pc:w-1/2 ">
             {benefitsList.map((benefit, idx) => (
                 <BenefitsItem key={idx}>{benefit}</BenefitsItem>
             ))}

@@ -1,8 +1,11 @@
 import React from "react";
+import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
+import { Header } from "@/src/components/header/Header";
+import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import "./globals.css";
 
 const caviar = localFont({
@@ -55,24 +58,19 @@ export default function LocaleLayout({
 }>) {
     const messages = useMessages();
 
+    const cookieStore = cookies();
+    const userTheme = cookieStore.get("theme") || { value: "dark" };
+
     return (
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable} 
-                    h-[100vh] bg-purple-200
-                    after:h-[221px] after:content-heart after:absolute after:bottom-0 after:left-[34px] after:overflow-hidden  after:z-[-1]
-                    before:content-triangles before:absolute before:top-0 before:right-0 before:h-[100vh] before:overflow-hidden before:z-[-1]
-                    `}
+                    className={`${caviar.variable} ${geist.variable} overflow-x-hidden
+                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
+                    <BackgroundImages />
                     <ThemeProvider>
-                        {/*TO:DO basic styles for the side bar */}
-                        <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-tranarent pc:flex flex-col justify-between py-2">
-                            <p>top</p>
-                            <p>center</p>
-                            <p>botton</p>
-                        </header>
-                        {/*TO:DO basic styles for the dark theme */}
+                        <Header />
                         <main>{children}</main>
                         <footer></footer>
                     </ThemeProvider>
