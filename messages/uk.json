@@ -36,7 +36,6 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
-
     "Feedback": {
         "pageTitle": "Відгуки",
         "titleFirstWord": "Що про нас ",
@@ -70,7 +69,6 @@
         "showMore": "Більше",
         "showLess": "Менше"
     },
-
     "Stages": {
         "pageTitle": "Процес",
         "mainTitle": "Послідовність роботи",
@@ -111,7 +109,6 @@
         "team1": "Команда I Love My Team",
         "team2": "Команда Ферма"
     },
-
     "Q&A": {
         "pageTitle": "q&a",
         "pageBigTitle": "Відповіді на часті питання",
@@ -134,5 +131,15 @@
         "allProjects": "Всі проекти",
         "allQuestions": "Всі питання",
         "share": "Поділитися"
+    },
+    "Footer": {
+        "titleFirstWord": "Починайте ",
+        "titleSecondWord": "втілення ",
+        "titleThirdWord": "своїх ",
+        "titleFourthWord": "бізнес ",
+        "titleFifthWord": "ідей ",
+        "titleSixthWord": "разом ",
+        "titleSeventhWord": "з нами",
+        "privacyPolicy": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
     }
 }
