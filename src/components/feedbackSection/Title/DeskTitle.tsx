@@ -9,7 +9,6 @@ export const DeskTitle = () => {
                 <span className="pc:text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
-                ,
             </p>
             <p className="ml-[-72px]">
                 {getTranslation("titleThirdWord")}
