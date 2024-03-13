@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LogoLink } from "./LogoLink";
 import { BurgerMenuButton } from "./BurgerMenuButton";
 import { SocialLinksList } from "./SocialLinks/SocialLinksList";
@@ -9,6 +9,12 @@ export const Header = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
+
+    useEffect(() => {
+        isHeaderMenuOpened
+            ? setTimeout(() => (document.body.style.overflow = "hidden"), 500)
+            : (document.body.style.overflow = "");
+    }, [isHeaderMenuOpened]);
 
     return (
         <header className="fixed top-0 left-0 h-[100vh] z-20">

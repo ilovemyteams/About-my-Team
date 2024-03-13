@@ -72,9 +72,6 @@ export default function LocaleLayout({
                     <ThemeProvider>
                         <Header />
                         <main>{children}</main>
-                        <footer className="ml-[80px]">
-                            Тестовий футер. Треба відступ 80 пікселів зліва
-                        </footer>
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>

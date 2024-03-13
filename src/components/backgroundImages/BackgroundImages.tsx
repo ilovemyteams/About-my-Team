@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const BackgroundImages = () => {
     return (
-        <div className="fixed">
+        <div className="fixed z-[-10]">
             <div className="h-[100vh] absolute w-screen blur-[100px] overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/leftBottom.svg"
