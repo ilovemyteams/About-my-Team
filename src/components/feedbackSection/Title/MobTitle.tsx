@@ -10,7 +10,7 @@ export const MobTitle = () => {
                 <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
-                ,{getTranslation("titleThirdWord")}
+                {getTranslation("titleThirdWord")}
                 <span className="text-purple-100">
                     {getTranslation("titleFourthWord")}
                 </span>
