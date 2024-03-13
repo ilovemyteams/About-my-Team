@@ -17,7 +17,7 @@ export const BackgroundImages = () => {
                 width="0"
                 height="0"
                 alt="background image circle"
-                className={`absolute right-[320px] bottom-0 w-[540px] h-[270px] z-[10]`}
+                className={`absolute right-[240px] bottom-0 w-[540px] h-[270px] z-[10]`}
             />
             <Image
                 src="/images/bgImages/rightTop.svg"
