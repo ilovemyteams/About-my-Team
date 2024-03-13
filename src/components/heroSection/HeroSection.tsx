@@ -8,8 +8,8 @@ import { HeroFooterLinks } from "./HeroFooterLinks";
 
 export const HeroSection = () => {
     return (
-        <Section className="py-8">
-            <div className="flex gap-[204px] justify-end relative z-10">
+        <Section className="pt-8">
+            <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
                 <ThemeSwitcher />
             </div>
