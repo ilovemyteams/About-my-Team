@@ -8,7 +8,7 @@ export const MissionTitle = () => {
     const getTranslation = useTranslations("Mission");
 
     return (
-        <div>
+        <>
             <TitleWrapper className="flex flex-col pc:flex-row items-start">
                 <SmallPageTitle className="ml-1 mr-3 mt-4 flex items-center">
                     {getTranslation("pageTitle")}
@@ -16,6 +16,6 @@ export const MissionTitle = () => {
                 <DesktopTitle />
                 <MobileTitle />
             </TitleWrapper>
-        </div>
+        </>
     );
 };
