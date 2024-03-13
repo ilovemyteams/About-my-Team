@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { Footer } from "@/src/components/footer/Footer";
 import "./globals.css";
 
 const caviar = localFont({
@@ -65,14 +66,14 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable} overflow-hidden
+                    className={`${caviar.variable} ${geist.variable} overflow-x-hidden
                     ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
                     <BackgroundImages />
                     <ThemeProvider>
                         <Header />
                         <main>{children}</main>
-                        <footer></footer>
+                        <Footer />
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>

@@ -4,7 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
 import { PortfolioCard } from "../PortfolioCard";
-import { NextButton, PrevButton, usePrevNextButtons } from "./CarouselButtons";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "../../shared/SliderComponents/CarouselButtons";
 import { PortfolioDataItemType } from "../portfolioData";
 
 type PortfolioCarouselProps = {
@@ -32,7 +36,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                     {projects.map(project => (
                         <div
                             key={project.data.id}
-                            className="embla__slide flex-[0_0_50%] w-full"
+                            className="embla__slide flex-[0_0_100%] tab:flex-[0_0_50%] w-full"
                         >
                             <PortfolioCard
                                 data={project.data}
@@ -41,7 +45,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls absolute -top-[118px] right-0 ">
+                <div className="embla__controls tab:absolute -top-[118px] right-0 mt-6 ">
                     <div className="embla__buttons flex gap-6">
                         <PrevButton
                             onClick={onPrevButtonClick}

@@ -4,9 +4,21 @@ export const MobTitle = () => {
     const getTranslation = useTranslations("Portfolio");
 
     return (
-        <>
-            <p className="pc:hidden">{getTranslation("titleMobFirst")}</p>
-            <p className="pc:hidden">{getTranslation("titleMobSecond")}</p>
-        </>
+        <div className="pc:hidden">
+            <p>
+                {getTranslation("titleFirstWord")}
+                <span className="text-purple-100">
+                    {getTranslation("titleSecondWord")}
+                </span>
+                ,{getTranslation("titleThirdWord")}
+                <span className="text-purple-100">
+                    {getTranslation("titleFourthWord")}
+                </span>
+                {getTranslation("titlePartForMob")}
+                <span className="text-purple-100">
+                    {getTranslation("titleSeventhWord")}
+                </span>
+            </p>
+        </div>
     );
 };

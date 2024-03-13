@@ -9,11 +9,10 @@
     },
     "Portfolio": {
         "pageTitle": "Портфоліо",
-        "titleMobFirst": "Реалізовані проекти, які вже допомагають розвивати ідеї",
-        "titleMobSecond": "та бізнес наших замовників",
+        "titlePartForMob": "розвивати ідеї та бізнес нашим ",
         "titleFirstWord": "Реалізовані ",
-        "titleSecondWord": "проекти, ",
-        "titleThirdWord": "які вже ",
+        "titleSecondWord": "проекти",
+        "titleThirdWord": " які вже ",
         "titleFourthWord": "допомагають ",
         "titleFifthWord": "розвивати ",
         "titleSixthWord": "ідеї та бізнес нашим ",
@@ -37,7 +36,6 @@
         "promotion": "просування",
         "maintenance": "підтримка"
     },
-
     "Feedback": {
         "pageTitle": "Відгуки",
         "titleMob": "Що про нас говорять наші клієнти",
@@ -72,7 +70,6 @@
         "showMore": "Більше",
         "showLess": "Менше"
     },
-
     "Stages": {
         "pageTitle": "Процес",
         "mainTitle": "Послідовність роботи",
@@ -113,7 +110,6 @@
         "team1": "Команда I Love My Team",
         "team2": "Команда Ферма"
     },
-
     "Q&A": {
         "pageTitle": "q&a",
         "pageBigTitle": "Відповіді на часті питання",
@@ -136,5 +132,15 @@
         "allProjects": "Всі проекти",
         "allQuestions": "Всі питання",
         "share": "Поділитися"
+    },
+    "Footer": {
+        "titleFirstWord": "Починайте ",
+        "titleSecondWord": "втілення ",
+        "titleThirdWord": "своїх ",
+        "titleFourthWord": "бізнес ",
+        "titleFifthWord": "ідей ",
+        "titleSixthWord": "разом ",
+        "titleSeventhWord": "з нами",
+        "privacyPolicy": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
     }
 }
