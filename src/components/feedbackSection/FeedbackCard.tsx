@@ -31,11 +31,11 @@ export const FeedbackCard = ({
                 <Image
                     src={image}
                     alt={siteName}
-                    fill
-                    sizes="min-w-[100%] h-[220px]"
+                    width={540}
+                    height={346}
                     className="object-cover "
                 />
-                <div className="">
+                <div className="mt-4">
                     <div className="">
                         <Image
                             src="/images/quote.png"
@@ -43,18 +43,22 @@ export const FeedbackCard = ({
                             width={48}
                             height={32}
                         />
-                        <p>{feedbackText}</p>
-                        <p>{reviewer}</p>
-                        <p>{reviewerRole}</p>
-                        <div>
-                            <h3 className="font-caviar font-bold text-lg tab:text-xl mb-[6px]">
+                        <p className="my-4 text-sm">{feedbackText}</p>
+                        <p className="font-caviar font-bold text-base mb-1">
+                            {reviewer}
+                        </p>
+                        <p className="text-xs mb-6">{reviewerRole}</p>
+                        <div className="border-t border-b border-grey">
+                            <h3 className="font-caviar text-baseb mt-2 mb-[6px] tab:text-xl ">
                                 {siteName}
                             </h3>
 
-                            <p className="text-xs tab:text-sm font-normal text-red mb-4">
+                            <p className="text-xs tab:text-sm  text-purple-50">
                                 {siteTypeUp}
                             </p>
-                            <p>{siteLink}</p>
+                            <a href="" className="block mb-4 underline">
+                                {siteLink}
+                            </a>
                         </div>
                     </div>
                 </div>
