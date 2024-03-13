@@ -1,4 +1,4 @@
-import HomeTest from "@/src/components/Home";
+// import HomeTest from "@/src/components/Home";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
@@ -9,14 +9,16 @@ import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSec
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 
 export default function Home() {
     return (
-        <div className="pc:ml-[80px] h-[100vh] overflow-y-auto">
+        <div className="pc:ml-[80px]">
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
             <PortfolioSection />
+            <FeedbackSection />
             <WriteUsSection />
             <ServicesSection />
             <JoinTheTeamSection />
@@ -24,7 +26,7 @@ export default function Home() {
             <OurTeamSection />
             <QaSection />
             <HireUsSection />
-            <HomeTest />
+            {/* <HomeTest /> */}
         </div>
     );
 }

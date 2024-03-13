@@ -6,6 +6,7 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { Footer } from "@/src/components/footer/Footer";
 import "./globals.css";
 
 const caviar = localFont({
@@ -74,7 +75,7 @@ export default function LocaleLayout({
                         {/* TODO: delete after mobile header is ready */}
                         <div className="h-[80px] bg-purple-200 tab:hidden"></div>
                         <main>{children}</main>
-                        <footer></footer>
+                        <Footer />
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>

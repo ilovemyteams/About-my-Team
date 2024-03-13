@@ -12,7 +12,7 @@
         "titlePartForMob": "розвивати ідеї та бізнес нашим ",
         "titleFirstWord": "Реалізовані ",
         "titleSecondWord": "проекти",
-        "titleThirdWord": ", які вже ",
+        "titleThirdWord": " які вже ",
         "titleFourthWord": "допомагають ",
         "titleFifthWord": "розвивати ",
         "titleSixthWord": "ідеї та бізнес нашим ",
@@ -26,27 +26,24 @@
         "titleFourthWord": " продукти ",
         "titleFifthWord": "разом",
         "titleOtherWords": " з ідеальною командою",
-        "titleMobile": "Створюємо вражаючі цифрові продукти разом з ідеальною командою",
         "firstBenefit": "Дизайн, розробка і тестування - це лише частина нашої роботи. Наші команди здатні на значно більше, коли разом.",
         "secondBenefit": "Ми пропонуємо комплексні рішення для бізнесу",
-        "thirdBenefit": "Працюючи з нами, ви економите час та гроші на формуванні та злагодженні роботи, бо ми від старту вже високоефективна команда!",
+        "thirdBenefit": "Працюючи з нами, ви економите час та гроші, бо ми від старту вже високоефективна команда",
         "consultations": "консультації",
         "planning": "планування",
         "development": "розробка",
         "promotion": "просування",
         "maintenance": "підтримка"
     },
-
     "Feedback": {
         "pageTitle": "Відгуки",
-        "titleMob": "Що про нас говорять наші клієнти",
         "titleFirstWord": "Що про нас ",
-        "titleSecondWord": "говорять",
+        "titleSecondWord": "говорять ",
         "titleThirdWord": "наші ",
         "titleFourthWord": "клієнти"
     },
     "JoinTheTeam": {
-        "title": "Розкажи про свої унікальні можливості та приєднуйся до нашої команди"
+        "title": "Розкажи про свої унікальні можливості та стань частиною нашої команди"
     },
     "WriteUs": {
         "title": "Хочу стати вашим задоволеним клієнтом"
@@ -71,7 +68,6 @@
         "showMore": "Більше",
         "showLess": "Менше"
     },
-
     "Stages": {
         "pageTitle": "Процес",
         "mainTitle": "Послідовність роботи",
@@ -112,7 +108,6 @@
         "team1": "Команда I Love My Team",
         "team2": "Команда Ферма"
     },
-
     "Q&A": {
         "pageTitle": "q&a",
         "pageBigTitle": "Відповіді на часті питання",
@@ -135,5 +130,15 @@
         "allProjects": "Всі проекти",
         "allQuestions": "Всі питання",
         "share": "Поділитися"
+    },
+    "Footer": {
+        "titleFirstWord": "Починайте ",
+        "titleSecondWord": "втілення ",
+        "titleThirdWord": "своїх ",
+        "titleFourthWord": "бізнес ",
+        "titleFifthWord": "ідей ",
+        "titleSixthWord": "разом ",
+        "titleSeventhWord": "з нами",
+        "privacyPolicy": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ"
     }
 }
