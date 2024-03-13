@@ -1,21 +1,10 @@
-import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
-import { FeedbackCardFirstPart, FeedbackCardSecondPart } from "./FeedbackCard";
 import { FeedbackTitle } from "./Title/FeedbackTitle";
-import { FeedbackData } from "./feedbackData";
-
-const feedbackItems = FeedbackData();
-const feedbackItem = feedbackItems[1];
-console.log(feedbackItem);
 
 const FeedbackSection = () => {
     return (
-        <Section>
+        <Section id="feedback">
             <FeedbackTitle />
-            <FeedbackCardFirstPart item={feedbackItem} />
-            <FeedbackCardSecondPart item={feedbackItem} />
-
-            <Button className="">Button</Button>
         </Section>
     );
 };
