@@ -18,7 +18,7 @@ export type FeedbackDataItemType = {
     pl: FeedbackDataItemTranslation;
 };
 
-export const portfolioData: FeedbackDataItemType[] = [
+export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "01",
