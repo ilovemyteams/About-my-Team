@@ -1,7 +1,7 @@
 type FeedbackDataItemTranslation = {
     siteName: string;
     siteView: string;
-    reveiwer: string;
+    reviewer: string;
     reviewerRole: string;
     feedbackText: string;
 };
@@ -28,7 +28,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "На селі",
             siteView: "лендінг",
-            reveiwer: "Тетяна",
+            reviewer: "Тетяна",
             reviewerRole: "Підприємець, власник ферми",
             feedbackText:
                 "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням",
@@ -36,7 +36,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Na seli",
             siteView: "lending",
-            reveiwer: "Tetiana",
+            reviewer: "Tetiana",
             reviewerRole: "Entrepreneur, farm owner",
             feedbackText:
                 "On our website you will find information about already implemented projects and the teams behind their creation",
@@ -44,7 +44,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Na seli",
             siteView: "lądowanie",
-            reveiwer: "Tatiana",
+            reviewer: "Tatiana",
             reviewerRole: "Przedsiębiorca, właściciel gospodarstwa rolnego",
             feedbackText:
                 "Na naszej stronie znajdziesz informacje o już zrealizowanych projektach i zespołach stojących za ich powstaniem",
@@ -59,7 +59,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "Аліса в країні чудес",
             siteView: "персональний сайт",
-            reveiwer: "Аліса",
+            reviewer: "Аліса",
             reviewerRole: "Власник бізнесу",
             feedbackText:
                 "Алісі набридло сидіти без діла на березі. Разів зо два вона зазирнула в книжку, що її читала сестра, але там не було ні рисунків, ні малюнків, а без них книжка не книжка, — гадала Аліса.",
@@ -67,7 +67,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Alisa in Wonderwold",
             siteView: "personal site",
-            reveiwer: "Аліса",
+            reviewer: "Аліса",
             reviewerRole: "Business owner",
             feedbackText:
                 "Alice was tired of sitting idly on the shore. Once or twice she looked into the book that her sister was reading, but there were no pictures or drawings, and without them a book is not a book, - thought Alice.",
@@ -75,7 +75,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Alicja w Krainie Czarów",
             siteView: "strona osobista",
-            reveiwer: "Alicja",
+            reviewer: "Alicja",
             reviewerRole: "Właściciel firmy",
             feedbackText:
                 "Alicja była zmęczona bezczynnym siedzeniem na brzegu. Raz czy dwa zajrzała do książki, którą czytała jej siostra, ale nie było tam żadnych obrazków ani rysunków, a bez nich książka nie jest książką – pomyślała Alicja.",
@@ -91,7 +91,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "Смарагдове місто",
             siteView: "інтернет магазин",
-            reveiwer: "Страшила",
+            reviewer: "Страшила",
             reviewerRole: "Власник магазину",
             feedbackText:
                 "Довга товстезна гадюка обплелась навколо стовпа і ритмічно похитувала своєю плескатою головою. І чимало ще всіляких див і страхітливих речей було в просторій печері Гінгеми.",
@@ -99,7 +99,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Smaragdove misto",
             siteView: "Internet-shop",
-            reveiwer: "Strashyla",
+            reviewer: "Strashyla",
             reviewerRole: "Shop owner",
             feedbackText:
                 "A long fat viper entwined itself around the post and rhythmically shook its flattened head. And there were many other wonders and terrifying things in the spacious cave of Gingema.",
@@ -107,7 +107,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Smaragdove misto",
             siteView: "Sklep internetowy",
-            reveiwer: "Strashyla",
+            reviewer: "Strashyla",
             reviewerRole: "Właściciel sklepu",
             feedbackText:
                 "Długa, gruba żmija owinęła się wokół słupa i rytmicznie potrząsała spłaszczoną głową. W przestronnej jaskini Gingema było wiele innych cudów i przerażających rzeczy.",
@@ -122,7 +122,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "Барон Мюнхаузен",
             siteView: "сайт візитівка",
-            reveiwer: "Барон Мюнхаузен",
+            reviewer: "Барон Мюнхаузен",
             reviewerRole: "Ріелтор, власник компанії",
             feedbackText:
                 "Прокинувшись, Мюнхгаузен побачив, що лежить не в полі, а в якомусь містечку, а згори почулося іржання. Кінь висів на вершку дзвіниці, прив'язаний просто до хреста.",
@@ -130,7 +130,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Baron Munchausen",
             siteView: "website business card",
-            reveiwer: "Baron Munchausen",
+            reviewer: "Baron Munchausen",
             reviewerRole: "Realtor, company owner",
             feedbackText:
                 "Waking up, Munchausen saw that he was not lying in a field, but in some town, and a roar was heard from above. The horse was hanging on top of the bell tower, tied just to the cross.",
@@ -138,7 +138,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Baron Munchausen",
             siteView: "wizytówka strony internetowej",
-            reveiwer: "Baron Munchausen",
+            reviewer: "Baron Munchausen",
             reviewerRole: "Pośrednik nieruchomości, właściciel firmy",
             feedbackText:
                 "Budząc się, Munchausen zobaczył, że nie leży na polu, ale w jakimś mieście, a z góry słychać było ryk. Koń wisiał na szczycie dzwonnicy, przywiązany tuż do krzyża.",
@@ -153,7 +153,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "Маламандер",
             siteView: "корпоративний сайт",
-            reveiwer: "Тарас",
+            reviewer: "Тарас",
             reviewerRole: "Власник трейдингової компанії",
             feedbackText:
                 "Герберт і Вайолет беруться відшукати хоч якісь зачіпки... що приводять їх до легенди про моторошного маламандера..",
@@ -161,7 +161,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Malamander",
             siteView: "corporate site",
-            reveiwer: "Taras",
+            reviewer: "Taras",
             reviewerRole: "Owner of a trading company",
             feedbackText:
                 "Herbert and Violet set out to find at least some clues... which lead them to the legend of the creepy malamander..",
@@ -169,7 +169,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Malamander",
             siteView: "witryna firmowa",
-            reveiwer: "Taras",
+            reviewer: "Taras",
             reviewerRole: "Właściciel firmy handlowej",
             feedbackText:
                 "Herbert i Violet wyruszają na poszukiwanie wskazówek, które doprowadzą ich do legendy o przerażającym malamandrze.",
@@ -184,7 +184,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         uk: {
             siteName: "Джуді Муді",
             siteView: "блог",
-            reveiwer: "Джуді",
+            reviewer: "Джуді",
             reviewerRole: "Блогиня, власниця сайту",
             feedbackText:
                 "На Вас чекає знайомство з кумедною дівчинкою на ім’я Джуді Муді, у якої частенько змінюється настрій.",
@@ -192,7 +192,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         en: {
             siteName: "Judy Moody",
             siteView: "blog",
-            reveiwer: "Judy",
+            reviewer: "Judy",
             reviewerRole: "Blogger, site owner",
             feedbackText:
                 "You will meet a funny girl named Judy Moody, who often changes her mood.",
@@ -200,7 +200,7 @@ export const portfolioData: FeedbackDataItemType[] = [
         pl: {
             siteName: "Judy Moody",
             siteView: "blogu",
-            reveiwer: "Judy",
+            reviewer: "Judy",
             reviewerRole: "Bloger, właściciel serwisu",
             feedbackText:
                 "Poznasz zabawną dziewczynę o imieniu Judy Moody, która często zmienia swój nastrój.",
