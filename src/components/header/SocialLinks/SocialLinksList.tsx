@@ -12,7 +12,7 @@ const socialLinksData = [
         alt: "Behance",
     },
     {
-        url: "https://github.com/ilovemyteams/About-my-Team",
+        url: "https://github.com/ilovemyteams",
         image: "github.svg",
         alt: "GitHub",
     },
