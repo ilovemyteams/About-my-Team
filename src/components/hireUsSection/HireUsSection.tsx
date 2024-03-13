@@ -10,7 +10,7 @@ export const HireUsSection = () => {
             <TitleCTAWrapper className="pc:w-[70%]">
                 {getTranslation("HireUs.title")}
             </TitleCTAWrapper>
-            <div className="flex justify-between items-center mt-[100px]">
+            <div className="flex flex-col gap-y-8 pc:flex-row pc:gap-0 justify-between items-center mt-6 pc:mt-[100px]">
                 <div className="text-base">
                     <p className="mb-4">
                         {getTranslation("HireUs.workingHours")}
