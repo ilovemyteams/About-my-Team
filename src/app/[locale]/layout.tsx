@@ -6,8 +6,8 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
-import "./globals.css";
 import { Footer } from "@/src/components/footer/Footer";
+import "./globals.css";
 
 const caviar = localFont({
     src: [
