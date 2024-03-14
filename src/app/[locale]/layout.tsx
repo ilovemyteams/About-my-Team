@@ -75,7 +75,7 @@ export default function LocaleLayout({
                         {/* TODO: delete after mobile header is ready */}
                         <div className="h-[80px] bg-purple-200 tab:hidden"></div>
                         <main>{children}</main>
-                        {/* <Footer /> */}
+                        <Footer />
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>

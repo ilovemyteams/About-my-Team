@@ -16,7 +16,7 @@ export default function Home() {
         <div className="pc:ml-[80px]">
             <HeroSection />
             <MissionSection />
-            {/* <JoinTheTeamSection />
+            <JoinTheTeamSection />
             <PortfolioSection />
             <FeedbackSection />
             <WriteUsSection />
@@ -25,7 +25,7 @@ export default function Home() {
             <StagesSection />
             <OurTeamSection />
             <QaSection />
-            <HireUsSection /> */}
+            <HireUsSection />
             {/* <HomeTest /> */}
         </div>
     );
