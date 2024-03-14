@@ -46,7 +46,7 @@ export const PortfolioSlider = () => {
                     {porfolioData.map(data => (
                         <div
                             key={data.id}
-                            className="embla__slide flex-[0_0_100%]  w-full "
+                            className="embla__slide flex-[0_0_100%] w-full "
                         >
                             <PortfolioCard
                                 data={data[locale as Locale]}
