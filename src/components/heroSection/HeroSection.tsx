@@ -21,7 +21,7 @@ export const HeroSection = () => {
                 loading="eager"
                 className="h-[88px] pc:mt-[63px] w-[810px] pc:h-[162px]"
             />
-            <div className="flex flex-col items-center pc:pjustify-between pc:flex-row">
+            <div className="flex flex-col items-center pc:justify-between pc:flex-row">
                 <HeroInfo />
                 <PortfolioSlider />
             </div>
