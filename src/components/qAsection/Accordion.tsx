@@ -39,23 +39,18 @@ export function Accordion({ item }: AccordionProps) {
                                 width="0"
                                 height="0"
                                 alt="Open and close answer icon"
-                                className={`w-[40px] h-[40px]  ${isAccordionOpen ? "" : "transition rotate-180 duration-300 ease-out"}`}
+                                className={`w-[40px] h-[40px]  duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
                             />
                         </div>
                     </div>
                 </button>
-                <div
-                    className={`mt-0 grid overflow-hidden transition-transform duration-1000 linear text-sm 
-            ${
-                isAccordionOpen
-                    ? "grid-rows-[1fr] transition-opacity opacity-100 mb-[16px]"
-                    : "grid-rows-[0fr] opacity-0 h-0"
-            }`}
+
+                <p
+                    className={`overflow-hidden text-sm pc:text-base mt-0 transition-opacity duration-300 ease-out
+                ${isAccordionOpen ? "opacity-100 mb-[16px]" : "opacity-0 h-0"}`}
                 >
-                    <p className="overflow-hidden text-sm pc:text-base">
-                        {item.answer}
-                    </p>
-                </div>
+                    {item.answer}
+                </p>
             </div>
         </>
     );
