@@ -22,7 +22,7 @@ export const HeaderMenuList = ({
     ];
     const locale = useLocale();
     return (
-        <ul>
+        <ul className="w-[43%]">
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
