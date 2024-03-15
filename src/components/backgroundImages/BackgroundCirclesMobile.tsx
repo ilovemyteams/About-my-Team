@@ -1,8 +1,16 @@
 import Image from "next/image";
 
-export const BackgroundCirclesMobile = () => {
+interface BackgroundCirclesProps {
+    className?: string;
+}
+
+export const BackgroundCirclesMobile = ({
+    className,
+}: BackgroundCirclesProps) => {
     return (
-        <div className="pc:hidden h-[100vh] absolute w-screen blur-[100px] overflow-hidden z-[-10]">
+        <div
+            className={`pc:hidden absolute z-[-10] w-screen h-[100vh] blur-[100px] overflow-hidden ${className}`}
+        >
             <Image
                 src="/images/bgImages/leftBottomMobile.svg"
                 width="0"

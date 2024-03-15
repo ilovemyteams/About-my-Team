@@ -17,8 +17,8 @@ export const HeaderMenuList = ({
         { name: getTranslation("Portfolio.pageTitle"), id: "portfolio" },
         { name: getTranslation("Feedback.pageTitle"), id: "feedback" },
         { name: getTranslation("Services.pageTitle"), id: "services" },
-        { name: getTranslation("Stages.pageTitle"), id: "stages" },
         { name: getTranslation("OurTeam.pageTitle"), id: "team" },
+        { name: getTranslation("Stages.pageTitle"), id: "stages" },
     ];
     const locale = useLocale();
     return (
@@ -26,7 +26,7 @@ export const HeaderMenuList = ({
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
-                    className="font-caviar text-baseb pc:text-3xl mt-[28px] pc:[&:not(:last-child)]:mb-[26px]"
+                    className="font-caviar text-baseb pc:text-3xl mt-[20px] mb-2 pc:[&:not(:last-child)]:mb-[26px] pc:mt-0"
                 >
                     <Link
                         href={`/${locale}#${id}`}

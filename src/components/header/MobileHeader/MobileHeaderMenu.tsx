@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Button } from "@/src/components/shared/Button";
-import { HeaderMenuList } from "../../DesktopHeader/DesktopHeaderMenu/HeaderMenuList";
+import { HeaderMenuList } from "../HeaderMenuList";
 import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
 import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
-import { SocialLinksList } from "../../SocialLinks/SocialLinksList";
+import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
+import { BackgroundCirclesMobile } from "@/src/components/backgroundImages/BackgroundCirclesMobile";
 
 const openedStyles = "h-80";
 const closedStyles = "h-0";
@@ -22,8 +23,9 @@ export const MobileHeaderMenu = ({
             className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
     bg-grey dark:bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
+            <BackgroundCirclesMobile className="top-[-80px]" />
             <div className="flex flex-col justify-between items-center h-80 p-4">
-                <div className="flex justify-between z-20 w-full mb-2">
+                <div className="flex justify-between z-20 w-full">
                     <LocaleSwitcher />
                     <ThemeSwitcher />
                 </div>
@@ -41,8 +43,8 @@ export const MobileHeaderMenu = ({
                     />
                 </div>
 
-                <Button className="mt-[32px]">{getTranslation("order")}</Button>
-                <div className="flex justify-between w-full mt-[20px]">
+                <Button>{getTranslation("order")}</Button>
+                <div className="flex justify-between w-full">
                     <BuyMeCoffeeLink />
                     <SocialLinksList />
                 </div>

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { LogoLink } from "../LogoLink";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
-import { DesktopHeaderMenu } from "./DesktopHeaderMenu/DesktopHeaderMenu";
+import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 
 export const DesktopHeader = () => {
