@@ -10,7 +10,7 @@ export const HeroFooterLinks = () => {
             <BuyMeCoffeeLink className="hidden pc:block" />
             <Link
                 href="#portfolio"
-                className="relative pointer after:border-b-[1px] after:border-grey after:w-full after:content-[''] after:absolute after:left-0 after:bottom-[3px]
+                className="relative pointer font-caviar text-lg after:border-b-[1px] after:border-grey after:w-full after:content-[''] after:absolute after:left-0 after:bottom-[3px]
                 transition ease-out duration-300 pc:hover:text-red pc:hover:after:border-red   after:transition after:ease-out after:duration-300"
             >
                 {getTranslation("portfolioLink")}

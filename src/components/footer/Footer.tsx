@@ -7,7 +7,7 @@ import { TitleFooter } from "./TitleFooter/TitleFooter";
 
 export const Footer = () => {
     return (
-        <footer className="w-auto ml-[80px] px-[60px] pc:mb-[40px] ">
+        <footer className="hidden w-auto ml-[80px] px-[60px] pc:mb-[40px] pc:block ">
             <div className="border-y-[1px] border-solid border-purple-stroke">
                 <TitleFooter />
                 <div className="flex items-baseline pb-0 mb-[28px] justify-between">
