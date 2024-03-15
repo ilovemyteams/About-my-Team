@@ -6,7 +6,7 @@ import { ButtonShare } from "../shared/ButtonShare";
 export const QaSection = () => {
     return (
         <>
-            <Section className="hidden">
+            <Section>
                 <div className="flex">
                     <TitleQA />
                     <ButtonShare className="ml-auto mr-[5px] right-[60px] mt-[27px] mb-[64px] my-[8px]" />
