@@ -5,8 +5,8 @@ import LocaleSwitcher from "../../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "./HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../../shared/BuyMeCoffeeLink";
-import { BackgroundImages } from "./BackgroundImages";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
+import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
 
 const openedStyles = "w-80";
 const closedStyles = "w-0";
@@ -19,10 +19,10 @@ export const DesktopHeaderMenu = ({
 
     return (
         <div
-            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] overflow-hidden transition-height duration-[600ms] ease-out
-            bg-grey dark:bg-purple-400`}
+            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
+        bg-grey dark:bg-purple-400`}
         >
-            <BackgroundImages />
+            <BackgroundCircles className="left-[-80px]" zIndex="z-10" />
             <div className="flex flex-col justify-between w-80 h-[100vh] py-[32px] px-[60px]">
                 <div className="flex justify-end gap-[183px] w-full relative z-20">
                     <LocaleSwitcher />

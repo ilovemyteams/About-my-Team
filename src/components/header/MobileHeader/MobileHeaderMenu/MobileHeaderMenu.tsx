@@ -19,7 +19,7 @@ export const MobileHeaderMenu = ({
 
     return (
         <div
-            className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-width duration-[600ms] ease-out
+            className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
     bg-grey dark:bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
             <div className="flex flex-col justify-between items-center h-80 p-4">
