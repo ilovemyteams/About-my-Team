@@ -20,7 +20,7 @@ export const DesktopHeader = () => {
     return (
         <div className={`hidden pc:block absolute top-0 left-0 h-[100vh]`}>
             <div className="absolute z-20 w-[80px] overflow-hidden bg-grey dark:bg-purple-400">
-                <BackgroundCircles zIndex="z-10" />
+                <BackgroundCircles />
                 <div
                     className="flex flex-col items-center justify-between z-20 w-[80px] h-[100vh] 
                 py-8 border-solid border-r-[1px] border-purple-stroke"
