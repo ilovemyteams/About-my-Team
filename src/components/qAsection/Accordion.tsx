@@ -18,34 +18,39 @@ export function Accordion({ item }: AccordionProps) {
 
     return (
         <>
-            <div className="min-h-[98px] border-b-[1px] border-purple-stroke">
-                <button
-                    onClick={changeStateAccordion}
-                    className="flex justify-between items-center w-full"
-                >
-                    <summary className="mt-[16px] pb-[16px] font-caviar text-left  text-xlb">
-                        {item.question}
-                    </summary>
-                    <Image
-                        src="/images/iconUp.svg"
-                        width="0"
-                        height="0"
-                        alt="Open and close answer icon"
-                        className={`w-[40px] h-auto ${isAccordionOpen ? "transition-transform" : "transition-transform rotate-180 duration-300 ease-out"}`}
-                    />
+            <div className="min-h-[72px] pc:min-h-[98px] border-b-[1px] border-purple-stroke">
+                <button onClick={changeStateAccordion} className="w-full">
+                    <div className="flex justify-between my-[16px] pc:mb-[32px]">
+                        <div>
+                            <summary className="flex-none font-caviar self-center h-auto text-left py-0 text-baseb pc:text-xlb ">
+                                {item.question}
+                            </summary>
+                        </div>
+                        <div
+                            className="flex-none cursor-pointer w-[48px] h-[48px] flex justify-center items-center
+            after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 
+            after:scale-0 after:origin-center after:blur-[2px] after:transition-scale after:ease-out after:duration-[600ms]
+            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-[48px] hover:after:h-[48px]
+            focus-visible:after:scale-100 focus-visible:after:blur-[2px] focus-visible:after:w-[48px] focus-visible:after:h-[48px] 
+            focus-visible:outline-none focus-within:outline-none"
+                        >
+                            <Image
+                                src="/images/iconUp.svg"
+                                width="0"
+                                height="0"
+                                alt="Open and close answer icon"
+                                className={`w-[40px] h-[40px]  duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
+                            />
+                        </div>
+                    </div>
                 </button>
-                <div
-                    className={`mt-[8px] grid overflow-hidden transition-transform duration-300 ease-out text-sm 
-            ${
-                isAccordionOpen
-                    ? "grid-rows-[2fr] transition-opacity duration-1000 opacity-100"
-                    : "grid-rows-[0fr] opacity-0"
-            }`}
+
+                <p
+                    className={`text-geist text-sm overflow-hidden mb-[8px] transition-[max-height] duration-[300ms] ease-in-out 
+                    ${isAccordionOpen ? "max-h-[300px]" : "max-h-0"}`}
                 >
-                    <p className="overflow-hidden text-base mb-[16px] pt-0 mt-o">
-                        {item.answer}
-                    </p>
-                </div>
+                    {item.answer}
+                </p>
             </div>
         </>
     );
