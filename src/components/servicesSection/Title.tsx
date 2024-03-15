@@ -7,7 +7,7 @@ export const Title = () => {
     return (
         <TitleWrapper className="flex flex-col">
             <div className="flex flex-col pc:flex-row">
-                <SmallPageTitle className="min-w-[75px] ml-1 mr-3 h-[21px] flex items-center">
+                <SmallPageTitle className="min-w-[75px] ml-1 mr-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
                 <div className="w-[280px] tab:w-auto">
