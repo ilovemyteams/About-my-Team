@@ -54,7 +54,7 @@ export const HeaderMenu = ({
                             />
                         </div>
                     </div>
-                    <BuyMeCoffeeLink className="relative z-20 ml-auto overflow-hidden" />
+                    <BuyMeCoffeeLink className="relative z-20 ml-auto" />
                 </div>
             </div>
         </div>
