@@ -18,7 +18,7 @@ export const BuyMeCoffeeLink = ({
             href={BUY_ME_COFFEE}
             target="_blank"
             rel="noopener noreferrer"
-            className={`pointer  group  w-[56px] h-[56px]       
+            className={`pointer relative group  w-[56px] h-[56px]  flex justify-center items-center     
                         icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
              ${className}`}
         >
