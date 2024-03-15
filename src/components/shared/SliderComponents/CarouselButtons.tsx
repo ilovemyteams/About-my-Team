@@ -63,7 +63,7 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
-            className="embla__button--prev flex justify-center items-center w-12 h-12 
+            className="embla__button--prev flex justify-center items-center w-12 h-12 relative
             border-t border-b border-red group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
             type="button"
