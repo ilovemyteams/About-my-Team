@@ -26,7 +26,7 @@ export const HeaderMenuList = ({
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
-                    className="font-caviar text-3xl [&:not(:last-child)]:mb-[26px]"
+                    className="font-caviar text-baseb pc:text-3xl mt-[28px] pc:[&:not(:last-child)]:mb-[26px]"
                 >
                     <Link
                         href={`/${locale}#${id}`}

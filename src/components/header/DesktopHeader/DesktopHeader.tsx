@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { LogoLink } from "./LogoLink";
-import { BurgerMenuButton } from "./BurgerMenuButton";
-import { SocialLinksList } from "./SocialLinks/SocialLinksList";
-import { HeaderMenu } from "./HeaderMenu/HeaderMenu";
+import { LogoLink } from "../LogoLink";
+import { BurgerMenuButton } from "../BurgerMenuButton";
+import { SocialLinksList } from "../SocialLinks/SocialLinksList";
+import { DesktopHeaderMenu } from "./DesktopHeaderMenu/DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
@@ -17,10 +17,10 @@ export const DesktopHeader = () => {
     }, [isHeaderMenuOpened]);
 
     return (
-        <div className="hidden pc:block fixed top-0 left-0 h-[100vh] z-20">
+        <div className="hidden pc:block absolute top-0 left-0 h-[100vh] z-20">
             <div
-                className="fixed top-0 left-0 w-[80px] h-[100vh] z-20 bg-transparent pc:flex flex-col items-center
-                justify-between py-8 border-solid border-r-[1px] border-purple-stroke"
+                className="flex flex-col items-center justify-between z-20 w-[80px] h-[100vh] 
+                bg-transparent py-8 border-solid border-r-[1px] border-purple-stroke"
             >
                 <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
                 <BurgerMenuButton
@@ -29,7 +29,7 @@ export const DesktopHeader = () => {
                 />
                 <SocialLinksList />
             </div>
-            <HeaderMenu
+            <DesktopHeaderMenu
                 isHeaderMenuOpened={isHeaderMenuOpened}
                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
             />

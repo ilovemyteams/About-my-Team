@@ -20,7 +20,7 @@ const socialLinksData = [
 
 export const SocialLinksList = () => {
     return (
-        <ul className="flex flex-col gap-2">
+        <ul className="flex pc:flex-col gap-2">
             {socialLinksData.map(({ url, image, alt }, idx) => (
                 <li key={idx}>
                     <SocialLink url={url} image={image} alt={alt} />
