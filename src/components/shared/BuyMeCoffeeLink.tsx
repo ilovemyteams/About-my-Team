@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { CircleHoverWrapper } from "./CircleHoverWrapper";
 import { useTranslations } from "next-intl";
 
 interface BuyMeCoffeeLinkProps {
@@ -19,23 +18,23 @@ export const BuyMeCoffeeLink = ({
             href={BUY_ME_COFFEE}
             target="_blank"
             rel="noopener noreferrer"
-            className={`pointer ${className}`}
+            className={`pointer  group  w-[56px] h-[56px]       
+                        icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+             ${className}`}
         >
-            <CircleHoverWrapper className="w-[56px] h-[56px]">
-                <Image
-                    src="/images/coffeeCup.svg"
-                    width="0"
-                    height="0"
-                    alt="Buy me a coffe logo"
-                    className="w-12 h-12"
-                />
-                <p
-                    className={`absolute font-caviar text-2xl top-0  translate-y-1/2 w-max opacity-0 
+            <Image
+                src="/images/coffeeCup.svg"
+                width="0"
+                height="0"
+                alt="Buy me a coffe logo"
+                className="w-12 h-12"
+            />
+            <p
+                className={`absolute font-caviar text-2xl top-0  translate-y-1/2 w-max opacity-0 
                     invisible group-hover:visible  group-hover:opacity-100 duration-[600ms] group-hover:ease-in  transition-opacity transition-visibility ${textClassName}`}
-                >
-                    {getTranslation("buyMeACoffe")}
-                </p>
-            </CircleHoverWrapper>
+            >
+                {getTranslation("buyMeACoffe")}
+            </p>
         </a>
     );
 };

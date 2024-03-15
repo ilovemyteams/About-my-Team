@@ -6,7 +6,6 @@ import React, {
 } from "react";
 import { EmblaCarouselType } from "embla-carousel";
 import { ArrowIcon } from "../../portfolioSection/Slider/ArrowIcon";
-import { CircleHoverWrapper } from "../CircleHoverWrapper";
 
 type UsePrevNextButtonsType = {
     prevBtnDisabled: boolean;
@@ -63,15 +62,15 @@ export const PrevButton: React.FC<ButtonType> = props => {
     const { ...restProps } = props;
 
     return (
-        <CircleHoverWrapper className="w-[48px] h-[48px]">
-            <button
-                className="embla__button--prev flex justify-center items-center w-12 h-12 border-t border-b border-red group cursor-pointer"
-                type="button"
-                {...restProps}
-            >
-                <ArrowIcon />
-            </button>
-        </CircleHoverWrapper>
+        <button
+            className="embla__button--prev flex justify-center items-center w-12 h-12 
+            border-t border-b border-red group
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
+            type="button"
+            {...restProps}
+        >
+            <ArrowIcon />
+        </button>
     );
 };
 
@@ -79,14 +78,15 @@ export const NextButton: React.FC<ButtonType> = props => {
     const { ...restProps } = props;
 
     return (
-        <CircleHoverWrapper className="w-[48px] h-[48px]">
-            <button
-                className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180 border-t border-b border-red group cursor-pointer"
-                type="button"
-                {...restProps}
-            >
-                <ArrowIcon />
-            </button>
-        </CircleHoverWrapper>
+        <button
+            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+            border-t border-b border-red group
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            "
+            type="button"
+            {...restProps}
+        >
+            <ArrowIcon />
+        </button>
     );
 };
