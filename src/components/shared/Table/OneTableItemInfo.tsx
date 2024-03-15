@@ -36,7 +36,7 @@ export const OneTableItemInfo = ({
             className="relative flex flex-col gap-4 justify-between min-h-[190px] pc:min-h-[270px] tab:px-4 py-6 overflow-hidden"
         >
             <ItemNumber itemNumber={itemNumber} />
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
                 {isIconShown && (
                     <div className="w-[18px] h-[18px] border-red border-[3px]"></div>
                 )}
