@@ -12,7 +12,7 @@ export const SocialLink = ({ url, image, alt }: SocialLinkProps) => {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
+            className="relative cursor-pointer flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
         >
             <Image
