@@ -12,6 +12,7 @@ const config: Config = {
             center: true,
             padding: {
                 DEFAULT: "16px",
+                tab: "24px",
                 pc: "60px",
             },
         },
