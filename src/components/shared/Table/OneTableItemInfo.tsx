@@ -47,7 +47,7 @@ export const OneTableItemInfo = ({
                 className={`cursor-pointer text-base pc:max-h-[60px] hover:max-h-[300px]
                 line-clamp-3 pc:overflow-hidden pc:text-ellipsis
                 pc:hover:line-clamp-none ${isShownMore ? "line-clamp-none max-h-[200px]" : "line-clamp-3 max-h-[60px] "}
-                transition-[max-height] duration-[600ms] ease-in-out overflow-hidden
+                transition-[max-height] duration-[600ms] ease-in overflow-hidden
                 `}
             >
                 {children}
