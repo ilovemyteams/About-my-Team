@@ -31,7 +31,7 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className=" embla ">
+        <div className=" embla relative">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
                     {feedbacks.map(feedback => (
@@ -46,7 +46,7 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls  tab:absolute -top-[118px] right-0 ">
+                <div className="embla__controls mt-6 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
                     <div className="embla__buttons flex gap-6">
                         <PrevButton
                             onClick={onPrevButtonClick}
