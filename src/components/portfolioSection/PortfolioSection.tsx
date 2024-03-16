@@ -6,9 +6,7 @@ import { portfolioData } from "./portfolioData";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    // TODO Since we plan to reuse the slider, I left it so that I can figure it out as necessary on the next one.
-    const projects = portfolioData;
-    const SLIDES = projects;
+    const SLIDES = portfolioData;
     return (
         <Section id="portfolio">
             <PortfolioTitle />
