@@ -19,7 +19,7 @@ export const BackgroundFigures = () => {
                     width="0"
                     height="0"
                     alt="background image curve"
-                    className="w-[272px] h-[244px] object-cover relative right-[-136px] top-[-25px] z-[-10]"
+                    className="w-[272px] h-[244px] object-cover relative right-[-136px] top-[-81px] z-[-10]"
                 />
             </div>
 

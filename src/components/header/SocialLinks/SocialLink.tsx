@@ -12,19 +12,15 @@ export const SocialLink = ({ url, image, alt }: SocialLinkProps) => {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer w-[48px] h-[48px] flex justify-center items-center
-            after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 
-            after:scale-0 after:origin-center after:blur-[2px] after:transition-scale after:ease-out after:duration-[600ms]
-            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-[48px] hover:after:h-[48px]
-            focus-visible:after:scale-100 focus-visible:after:blur-[2px] focus-visible:after:w-[48px] focus-visible:after:h-[48px] 
-            focus-visible:outline-none focus-within:outline-none"
+            className="relative cursor-pointer flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
         >
             <Image
                 src={`/images/${image}`}
                 width="0"
                 height="0"
                 alt={alt}
-                className="w-[48px] h-auto"
+                className="w-full h-auto"
             />
         </a>
     );
