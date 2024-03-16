@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ButtonShare } from "../shared/ButtonShare";
 
 export interface FeedbackCardItemProps {
     data: {
@@ -27,39 +28,50 @@ export const FeedbackCard = ({
     const siteTypeUp = siteView?.toUpperCase();
     return (
         <>
-            <div className=" ">
-                <Image
-                    src={image}
-                    alt={siteName}
-                    width={540}
-                    height={346}
-                    className="object-cover "
-                />
-                <div className="mt-4">
-                    <div className="">
+            <div className=" tab:flex tab:flex-row-reverse tab:justify-between tab:gap-[90px]">
+                <div>
+                    <Image
+                        src={image}
+                        alt={siteName}
+                        fill
+                        sizes="min-w-[100%] h-[220px] tab:min-w-[50%] tab:h-[400px]"
+                        className="object-cover "
+                    />
+                    <div className="  mt-4 pc:mt-0">
                         <Image
                             src="/images/quote.png"
                             alt="Quote"
                             width={48}
                             height={32}
                         />
-                        <p className="my-4 text-sm">{feedbackText}</p>
-                        <p className="font-caviar font-bold text-base mb-1">
+                        <p className="my-4 text-sm pc:text-xl h-[136px]">
+                            {feedbackText}
+                        </p>
+                        <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light ">
                             {reviewer}
                         </p>
                         <p className="text-xs mb-6">{reviewerRole}</p>
-                        <div className="border-t border-b border-grey">
-                            <h3 className="font-caviar text-baseb mt-2 mb-[6px] tab:text-xl ">
+                    </div>
+                </div>
+                <div className="mt-4 pc:mt-0 tab:flex  tab:justify-between tab:gap-[90px]">
+                    <div className="border-t border-b pt-[10px] pb-4 border-grey tab:flex tab:justify-between pc:min-w-[450px] pc:max-w-[50%]">
+                        <div>
+                            <h3 className="font-caviar text-baseb mb-[6px] pc:text-xlb  tab:text-xl ">
                                 {siteName}
                             </h3>
 
-                            <p className="text-xs tab:text-sm  text-purple-50">
+                            <p className="text-xs tab:text-sm pc:font-light text-purple-50">
                                 {siteTypeUp}
                             </p>
-                            <a href="" className="block mb-4 underline">
+                        </div>
+                        <div className="tab:flex tab:items-end">
+                            <a href="" className="block underline pc:text-lg">
                                 {siteLink}
                             </a>
                         </div>
+                    </div>
+                    <div className="hidden tab:block ">
+                        <ButtonShare className="mt-[45px] pc:text-lg" />
                     </div>
                 </div>
             </div>
