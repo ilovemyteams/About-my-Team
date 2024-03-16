@@ -7,7 +7,10 @@ export const HeroFooterLinks = () => {
 
     return (
         <div className="flex justify-end mx-[auto] mt-[-20px] max-w-[540px] pc:mx-0 pc:max-w-[none] pc:justify-between pc:items-baseline pc:mt-8">
-            <BuyMeCoffeeLink className="hidden pc:flex" />
+            <BuyMeCoffeeLink
+                className="hidden pc:flex"
+                textClassName="left-[56px]"
+            />
             <Link
                 href="#portfolio"
                 className="relative pointer font-caviar text-lg after:border-b-[1px] after:border-grey after:w-full after:content-[''] after:absolute after:left-0 after:bottom-[3px]

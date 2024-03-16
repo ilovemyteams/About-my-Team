@@ -51,11 +51,11 @@ body {
     }
 
     .icon-hover-rounded-purple:hover {
-        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12;
+        @apply after:scale-100 after:blur-[2px] after:h-full after:w-full;
     }
 
     .icon-hover-rounded-purple:focus-visible {
-        @apply after:scale-100 after:blur-[2px] after:h-12 after:w-12 outline-none;
+        @apply after:scale-100 after:blur-[2px] after:h-full after:w-full outline-none;
     }
 
     .icon-hover-rounded-purple:focus-within {
