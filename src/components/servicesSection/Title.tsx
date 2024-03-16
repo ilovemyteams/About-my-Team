@@ -6,7 +6,7 @@ export const Title = () => {
     const getTranslation = useTranslations("Services");
     return (
         <TitleWrapper className="flex flex-col">
-            <div className="flex flex-col pc:flex-row">
+            <div className="flex flex-col tab:flex-row">
                 <SmallPageTitle className="min-w-[75px] ml-1 mr-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
