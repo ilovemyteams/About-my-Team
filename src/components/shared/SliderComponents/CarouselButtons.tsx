@@ -5,7 +5,7 @@ import React, {
     useState,
 } from "react";
 import { EmblaCarouselType } from "embla-carousel";
-import { ArrowIcon } from "../../portfolioSection/Slider/ArrowIcon";
+import { ArrowIcon } from "./ArrowIcon";
 
 type UsePrevNextButtonsType = {
     prevBtnDisabled: boolean;
