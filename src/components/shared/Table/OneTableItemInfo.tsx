@@ -33,16 +33,22 @@ export const OneTableItemInfo = ({
     return (
         <div
             ref={elementRef}
-            className="relative flex flex-col gap-4 justify-between min-h-[190px] pc:min-h-[270px] tab:px-4 py-6"
+            className="relative flex flex-col gap-4 justify-between min-h-[190px] pc:min-h-[270px] tab:px-4 py-6 overflow-hidden"
         >
             <ItemNumber itemNumber={itemNumber} />
-            <div className="flex gap-2">
-                {isIconShown && <div className="w-6 h-6 bg-purple-100"></div>}
+            <div className="flex gap-2 items-center">
+                {isIconShown && (
+                    <div className="w-[18px] h-[18px] border-red border-[3px]"></div>
+                )}
                 <h3 className="font-caviar text-xlb">{title}</h3>
             </div>
             <div
                 ref={contentRef}
-                className={`cursor-pointer text-base line-clamp-3  hover:h-max pc:hover:line-clamp-none ${isShownMore && "line-clamp-none"}`}
+                className={`cursor-pointer text-base pc:max-h-[60px] hover:max-h-[300px]
+                line-clamp-3 pc:overflow-hidden pc:text-ellipsis
+                pc:hover:line-clamp-none ${isShownMore ? "line-clamp-none max-h-[200px]" : "line-clamp-3 max-h-[60px] "}
+                transition-[max-height] duration-[600ms] ease-in overflow-hidden
+                `}
             >
                 {children}
             </div>
