@@ -1,22 +1,16 @@
-import { useLocale } from "next-intl";
+import { EmblaOptionsType } from "embla-carousel";
 import { Section } from "../shared/Section";
-import { FeedbackCard } from "./FeedbackCard";
 import { FeedbackTitle } from "./Title/FeedbackTitle";
-import { FeedbackDataItemType, feedbackData } from "./feedbackData";
-
-type Locale = "uk" | "en" | "pl";
-
-const feedback: FeedbackDataItemType = feedbackData[1];
+import { feedbackData } from "./feedbackData";
+import { FeedbackSlider } from "./FeedbackSlider";
 
 export const FeedbackSection = () => {
-    const locale = useLocale();
+    const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
+    const SLIDES = feedbackData;
     return (
         <Section id="feedback">
             <FeedbackTitle />
-            <FeedbackCard
-                data={feedback.data}
-                localizationData={feedback[locale as Locale]}
-            />
+            <FeedbackSlider feedbacks={SLIDES} options={OPTIONS} />
         </Section>
     );
 };
