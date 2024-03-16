@@ -83,13 +83,21 @@ const config: Config = {
                 },
             ],
             "4xl": [
+                "32px",
+                {
+                    lineHeight: "32px",
+                    fontWeight: "700",
+                },
+            ],
+
+            "5xl": [
                 "40px",
                 {
                     lineHeight: "52px",
                     fontWeight: "700",
                 },
             ],
-            "5xl": [
+            "6xl": [
                 "48px",
                 {
                     lineHeight: "48px",

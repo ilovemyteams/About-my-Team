@@ -33,7 +33,7 @@ export const OneTableItemInfo = ({
     return (
         <div
             ref={elementRef}
-            className="relative flex flex-col gap-4 justify-between min-h-[190px] tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden"
+            className="relative flex flex-col gap-4 justify-between tab:justify-normal pc:justify-between  min-h-[190px] tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden"
         >
             <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2 items-center">
