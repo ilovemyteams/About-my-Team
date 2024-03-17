@@ -7,7 +7,7 @@ type FeedbackDataItemTranslation = {
 };
 type DataType = {
     id: string;
-    image: string;
+    image?: string;
     video?: string;
     siteLink: string;
 };
