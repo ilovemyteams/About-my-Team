@@ -154,18 +154,18 @@ const config: Config = {
                         transform: "scale(1)",
                         opacity: "1",
                     },
-                    "17%, 34%": {
+                    "10%, 20%, 35%, 45%": {
                         transform: "scale(0.7)",
                         opacity: "0",
                     },
-                    "50%, 100%": {
+                    "25%, 50%, 100%": {
                         transform: "scale(1)",
                         opacity: "1",
                     },
                 },
             },
             animation: {
-                pulsation: "pulsation 600ms ease-in 2",
+                pulsation: "pulsation 1000ms ease-in 2",
             },
         },
         backgroundImage: {
