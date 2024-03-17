@@ -1,20 +1,38 @@
+"use client";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
-import { useTranslations } from "next-intl";
 
 export const MissionSection = () => {
     const getTranslation = useTranslations("Buttons");
+    const { ref, inView } = useInView({
+        /* Optional options */
+        threshold: 0.7,
+    });
     return (
         <Section id="mission">
-            <MissionTitle />
-            <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
-                <BenefitsList />
-                <Button>{getTranslation("order")}</Button>
+            <div ref={ref}>
+                <MissionTitle />
+                <div className="flex justify-around items-center">
+                    <Image
+                        src="/images/missionHeart.svg"
+                        width="0"
+                        height="0"
+                        alt="animated image heart"
+                        className={`w-[231px] h-auto pc:w-[418px] ${inView && "animate-pulsation"}`}
+                    />
+                    <div className="relative flex flex-col justify-start items-center gap-y-[40px] pc:gap-y-[84px] pc:w-[45%]">
+                        <BenefitsList />
+                        <Button>{getTranslation("order")}</Button>
+                    </div>
+                </div>
+                <StagesList />
             </div>
-            <StagesList />
         </Section>
     );
 };
