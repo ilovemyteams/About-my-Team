@@ -39,7 +39,7 @@ export const FeedbackCard = ({
 
                 <div className="h-[239px] mb-6 mt-4 tab:w-[360px] pc:w-[450px] tab:my-0 tab:h-[302px]">
                     <Image
-                        src="/images/quote.png"
+                        src="/images/quote_opt.svg"
                         alt="Quote"
                         width={48}
                         height={32}
