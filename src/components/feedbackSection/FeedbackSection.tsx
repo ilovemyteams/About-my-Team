@@ -6,11 +6,10 @@ import { FeedbackSlider } from "./FeedbackSlider";
 
 export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const SLIDES = feedbackData;
     return (
         <Section id="feedback">
             <FeedbackTitle />
-            <FeedbackSlider feedbacks={SLIDES} options={OPTIONS} />
+            <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
         </Section>
     );
 };

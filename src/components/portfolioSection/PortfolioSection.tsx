@@ -6,12 +6,11 @@ import { portfolioData } from "./portfolioData";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const SLIDES = portfolioData;
     return (
         <Section id="portfolio">
             <PortfolioTitle />
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
-                <PortfolioCarousel projects={SLIDES} options={OPTIONS} />
+                <PortfolioCarousel projects={portfolioData} options={OPTIONS} />
             </div>
         </Section>
     );
