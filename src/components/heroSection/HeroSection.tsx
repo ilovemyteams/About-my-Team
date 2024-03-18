@@ -19,9 +19,9 @@ export const HeroSection = () => {
                 height="0"
                 alt="I love my team"
                 loading="eager"
-                className="h-[88px] pc:mt-[63px] w-[810px] pc:h-[162px]"
+                className="h-[88px] pc:mt-[20px] w-[810px] pc:h-[162px]"
             />
-            <div className="flex flex-col items-center pc:justify-between pc:flex-row">
+            <div className="flex flex-col items-center pc:items-baseline pc:justify-between pc:flex-row">
                 <HeroInfo />
                 <PortfolioSlider />
             </div>
