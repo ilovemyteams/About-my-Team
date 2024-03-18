@@ -26,7 +26,7 @@ export const PortfolioSlider = () => {
 
     return (
         <div className="embla w-full overflow-hidden max-w-[540px] flex flex-col-reverse mt-8 items-start pc:mt-0 pc:flex-col pc:items-end ">
-            <div className="embla__controls pc:mb-12">
+            <div className="embla__controls pc:mb-6">
                 <div className="embla__buttons flex gap-6 ">
                     <PrevButton
                         onClick={onPrevButtonClick}
