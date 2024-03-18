@@ -11,8 +11,7 @@ import { StagesList } from "./StagesList";
 export const MissionSection = () => {
     const getTranslation = useTranslations("Buttons");
     const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: 0.7,
+        threshold: 0.75,
     });
     return (
         <Section id="mission">
@@ -24,7 +23,7 @@ export const MissionSection = () => {
                         width="0"
                         height="0"
                         alt="animated image heart"
-                        className={`w-[231px] h-auto pc:w-[418px] ${inView && "animate-pulsation"}`}
+                        className={`hidden tab:block w-[231px] h-auto pc:w-[418px] ${inView && "animate-pulsation"}`}
                     />
                     <div className="relative flex flex-col justify-start items-center gap-y-[40px] pc:gap-y-[84px] pc:w-[45%]">
                         <BenefitsList />

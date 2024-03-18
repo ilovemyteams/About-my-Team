@@ -158,14 +158,14 @@ const config: Config = {
                         transform: "scale(0.7)",
                         opacity: "0",
                     },
-                    "25%, 50%, 100%": {
+                    "25%, 50%": {
                         transform: "scale(1)",
                         opacity: "1",
                     },
                 },
             },
             animation: {
-                pulsation: "pulsation 1000ms ease-in 2",
+                pulsation: "pulsation 1200ms ease-in 2",
             },
         },
         backgroundImage: {
