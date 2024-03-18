@@ -31,7 +31,7 @@ export const MobileHeaderMenu = ({
                 </div>
 
                 <div className="flex justify-between items-center w-full tab:min-h-[510px] mb-8 tab:mb-0">
-                    <div className="flex flex-col justify-around w-[43%] h-full tab: border-solid tab:border-r-[1px] tab:border-purple-stroke">
+                    <div className="flex flex-col justify-around w-[43%] h-full tab:border-solid tab:border-r-[1px] tab:border-purple-stroke">
                         <HeaderMenuList
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
