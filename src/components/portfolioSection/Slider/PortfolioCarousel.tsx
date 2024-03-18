@@ -10,12 +10,13 @@ import {
     usePrevNextButtons,
 } from "../../shared/SliderComponents/CarouselButtons";
 import { PortfolioDataItemType } from "../portfolioData";
+import { LocaleType } from "@/types/LocaleType";
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItemType[];
     options?: EmblaOptionsType;
 };
-type Locale = "uk" | "en" | "pl";
+type Locale = LocaleType;
 
 export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;

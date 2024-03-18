@@ -11,12 +11,13 @@ import {
     PrevButton,
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
+import { LocaleType } from "@/types/LocaleType";
 
 type FeedbackSliderProps = {
     feedbacks: FeedbackDataItemType[];
     options?: EmblaOptionsType;
 };
-type Locale = "uk" | "en" | "pl";
+type Locale = LocaleType;
 
 export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
