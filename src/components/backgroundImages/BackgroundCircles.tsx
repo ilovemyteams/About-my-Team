@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-export const BackgroundCircles = () => {
+interface BackgroundCirclesProps {
+    className?: string;
+    classNameLeftCircle?: string;
+}
+
+export const BackgroundCircles = ({
+    className,
+    classNameLeftCircle,
+}: BackgroundCirclesProps) => {
     return (
         <div
             className={`h-[100vh] absolute overflow-hidden z-[-10] ${className}`}
