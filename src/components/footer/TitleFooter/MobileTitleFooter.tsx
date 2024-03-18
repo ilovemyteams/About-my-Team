@@ -1,23 +1,25 @@
 import { useTranslations } from "next-intl";
 
-export const DesktopTitleFooter = () => {
+export const MobileTitleFooter = () => {
     const getTranslation = useTranslations("Footer");
     return (
-        <div className="hidden pc:block pc:mb-[139px]">
+        <div className="mt-[20px] pc:hidden">
             <p>
                 {getTranslation("titleFirstWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
-                {getTranslation("titleThirdWord")}
             </p>
             <p className="pc:ml-[180px]">
-                {getTranslation("titleFourthWord")}
-                <span className="pc:text-purple-100">
+                {getTranslation("titleThirdWord")}
+                <span className="text-purple-100">
+                    {getTranslation("titleFourthWord")}
                     {getTranslation("titleFifthWord")}
                 </span>
+            </p>
+            <p>
                 {getTranslation("titleSixthWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleSeventhWord")}
                 </span>
             </p>
