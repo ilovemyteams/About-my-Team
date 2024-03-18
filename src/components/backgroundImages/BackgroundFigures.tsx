@@ -23,7 +23,7 @@ export const BackgroundFigures = () => {
                 />
             </div>
 
-            <div className="fixed left-[6px] bottom-5  w-[206px] h-[182px] overflow-hidden z-[-10] pc:w-[357px] pc:h-[230px] pc:left-[100px] pc:bottom-0 ">
+            <div className="pc:hidden fixed left-[6px] bottom-5 w-[206px] h-[182px] overflow-hidden z-[-10] pc:w-[357px] pc:h-[230px] pc:left-[100px] pc:bottom-0 ">
                 <Image
                     src="/images/bgImages/heart.svg"
                     width="0"

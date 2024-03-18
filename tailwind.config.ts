@@ -148,6 +148,25 @@ const config: Config = {
                 heart: 'url("/images/Heart.svg")',
                 triangles: 'url("/images/Triangles.svg")',
             },
+            keyframes: {
+                pulsation: {
+                    "0%": {
+                        transform: "scale(1)",
+                        opacity: "1",
+                    },
+                    "10%, 20%, 35%, 45%": {
+                        transform: "scale(0.7)",
+                        opacity: "0",
+                    },
+                    "25%, 50%": {
+                        transform: "scale(1)",
+                        opacity: "1",
+                    },
+                },
+            },
+            animation: {
+                pulsation: "pulsation 1200ms ease-in 2",
+            },
         },
         backgroundImage: {
             portfolioGradient:
