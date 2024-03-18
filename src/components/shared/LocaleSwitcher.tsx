@@ -29,7 +29,7 @@ export default function LocaleSwitcher() {
                                 : " text-purple-stroke"
                         }
                     >
-                        {curLocale}
+                        {curLocale === "uk" ? "ua" : curLocale}
                     </Link>
                 </li>
             ))}
