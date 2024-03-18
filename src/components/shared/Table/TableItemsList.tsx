@@ -12,7 +12,7 @@ interface TableItemsProps {
     isIconShown?: boolean;
     textClassName?: string;
     isShowMoreButton?: boolean;
-    stagesClassName?: string;
+    sectionClassName?: string;
 }
 
 export const TableItemsList = ({
@@ -21,12 +21,12 @@ export const TableItemsList = ({
     isIconShown,
     textClassName,
     isShowMoreButton,
-    stagesClassName,
+    sectionClassName,
 }: TableItemsProps) => {
     return (
         <>
             {items.map((item, index) => (
-                <li key={index} className={stagesClassName}>
+                <li key={index} className={`  ${sectionClassName}`}>
                     <OneTableItemInfo
                         title={item.title}
                         isIconShown={isIconShown}

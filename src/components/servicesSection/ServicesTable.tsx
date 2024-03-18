@@ -37,9 +37,9 @@ export const ServicesTable = () => {
         <Table>
             <TableItemsList
                 items={serviceItems}
-                className="tab:[&:nth-child(odd)]:border-r-0 pc:border-[1px]"
+                className="tab:[&:nth-child(odd)]:border-r-0 pc:border-[1px] pc:[&:nth-child(odd)]:border-r-[1px] "
             />
-            <li className="col-span-2 row-span-1 py-[40px] pc:px-4 pc:py-[65px] flex flex-col items-center">
+            <li className="col-span-2 row-span-1 py-[40px] tab:h-[210px] pc:h-[270px] pc:px-4 pc:py-[65px] flex flex-col items-center">
                 <p className="mb-6 max-w-[361px]">
                     {getTranslation("Services.contactUs")}
                 </p>
