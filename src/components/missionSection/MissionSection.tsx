@@ -25,7 +25,7 @@ export const MissionSection = () => {
                         alt="animated image heart"
                         className={`hidden tab:block w-[231px] h-auto pc:w-[418px] ${inView && "animate-pulsation"}`}
                     />
-                    <div className="relative flex flex-col justify-start items-center gap-y-[40px] pc:gap-y-[84px] pc:w-[45%]">
+                    <div className="relative flex flex-col justify-start items-center gap-y-[40px] pc:gap-y-[84px] tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
                         <Button>{getTranslation("order")}</Button>
                     </div>
