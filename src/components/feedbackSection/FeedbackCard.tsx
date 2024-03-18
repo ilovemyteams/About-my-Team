@@ -4,7 +4,7 @@ import { ButtonShare } from "../shared/ButtonShare";
 export interface FeedbackCardItemProps {
     data: {
         id: string;
-        image: string;
+        image?: string;
         video?: string;
         siteLink: string;
     };
@@ -21,7 +21,10 @@ export const FeedbackCard = ({
     data,
     localizationData,
 }: FeedbackCardItemProps) => {
-    const { image, siteLink } = data;
+    const {
+        image = "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
+        siteLink,
+    } = data;
     const { siteName, siteView, reviewer, reviewerRole, feedbackText } =
         localizationData;
 
