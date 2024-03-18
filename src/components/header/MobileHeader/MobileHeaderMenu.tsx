@@ -24,13 +24,13 @@ export const MobileHeaderMenu = ({
     bg-grey dark:bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
             <BackgroundCirclesMobile className="top-[-80px]" />
-            <div className="flex flex-col justify-between items-center h-80 p-4 overflow-y-auto">
+            <div className="flex flex-col justify-between items-center h-80 p-4 mb-2 tab:mb-0 overflow-y-auto">
                 <div className="flex justify-between z-20 w-full">
                     <LocaleSwitcher />
                     <ThemeSwitcher />
                 </div>
 
-                <div className="flex justify-between items-center w-full">
+                <div className="flex justify-between items-center w-full mb-8 tab:mb-0">
                     <HeaderMenuList
                         setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                     />
@@ -44,7 +44,7 @@ export const MobileHeaderMenu = ({
                 </div>
 
                 <Button>{getTranslation("order")}</Button>
-                <div className="flex justify-between w-full">
+                <div className="flex justify-between w-full mt-[20px] tab:mt-0">
                     <BuyMeCoffeeLink />
                     <SocialLinksList />
                 </div>
