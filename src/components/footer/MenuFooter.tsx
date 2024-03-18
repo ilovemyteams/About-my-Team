@@ -20,7 +20,7 @@ export const MenuFooter = () => {
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
-                    className="mb-[8px] last:mb-0 pc:my-0 pc:py-0.5 pc:p-[2px] leading-6 tracking-normal text-left"
+                    className="gap-[8px] pc:my-0 pc:py-0.5 pc:p-[2px] leading-6 tracking-normal text-left"
                 >
                     <div className="py-[10px] pc:py-0">
                         <Link
