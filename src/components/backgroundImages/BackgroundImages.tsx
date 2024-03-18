@@ -5,7 +5,7 @@ import { BackgroundFigures } from "./BackgroundFigures";
 export const BackgroundImages = () => {
     return (
         <div className="fixed z-[-10]">
-            <BackgroundCircles />
+            <BackgroundCircles className="hidden w-screen pc:block " />
             <BackgroundCirclesMobile />
             <BackgroundFigures />
         </div>
