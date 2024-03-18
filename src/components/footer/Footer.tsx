@@ -7,20 +7,22 @@ import { TitleFooter } from "./TitleFooter/TitleFooter";
 
 export const Footer = () => {
     return (
-        <footer className="hidden w-auto ml-[80px] px-[60px] pc:mb-[40px] pc:block ">
+        <footer className="block w-auto mx-[16px] pc:ml-[80px] pc:px-[60px] pc:mb-[40px] pc:block ">
             <div className="border-y-[1px] border-solid border-purple-stroke">
                 <TitleFooter />
-                <div className="flex items-baseline pb-0 mb-[28px] justify-between">
+                <div className="mb-[16px] flex pc:items-baseline pb-0 pc:mb-[28px] justify-between">
                     <MenuFooter />
-                    <div className="flex gap-[105px] items-baseline">
+                    <div className="flex flex-col justify-between items-center pc:flex-row pc:gap-[92px] pc:items-baseline">
                         <BuyMeCoffeeLink />
-                        <ButtonShare />
+                        <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
+                            <ButtonShare />
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="flex mt-[18.5px] justify-between">
-                <Copyright />
+            <div className="flex flex-col justify-center items-center pb-0 my-[20px] pc:mt-[18.5px] pc:flex-row-reverse pc:justify-between">
                 <PrivacyPolicy />
+                <Copyright />
             </div>
         </footer>
     );
