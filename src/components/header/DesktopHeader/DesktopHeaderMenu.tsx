@@ -22,7 +22,7 @@ export const DesktopHeaderMenu = ({
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
         bg-grey dark:bg-purple-400`}
         >
-            <BackgroundCircles className="left-[-80px]" />
+            <BackgroundCircles className="left-[-80px] w-[100vw]" />
             <div className="flex flex-col justify-between w-80 h-[100vh] py-[32px] px-[60px]">
                 <div className="flex justify-end gap-[183px] w-full relative z-20">
                     <LocaleSwitcher />
