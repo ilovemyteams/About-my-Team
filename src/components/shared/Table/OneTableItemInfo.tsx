@@ -40,7 +40,7 @@ export const OneTableItemInfo = ({
                 {isIconShown && (
                     <div className="w-[18px] h-[18px] border-red border-[3px]"></div>
                 )}
-                <h3 className="font-caviar text-xlb">{title}</h3>
+                <h3 className="font-caviar text-xlb text-white">{title}</h3>
             </div>
             <div
                 ref={contentRef}
