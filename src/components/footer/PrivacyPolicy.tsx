@@ -5,7 +5,7 @@ export const PrivacyPolicy = () => {
     return (
         <a
             href=""
-            className="text-sm hover:text-red focus:text-red transition ease-out duration-300"
+            className="mb-[20px] pc:mb-0 text-sm hover:text-red focus:text-red transition ease-out duration-300"
         >
             {getTranslation("privacyPolicy")}
         </a>
