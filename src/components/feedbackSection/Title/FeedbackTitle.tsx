@@ -9,7 +9,7 @@ export const FeedbackTitle = () => {
 
     return (
         <div>
-            <TitleWrapper className="flex flex-col pc:flex-row items-start">
+            <TitleWrapper className="flex flex-col tab:flex-row items-start">
                 <SmallPageTitle className="ml-1 mr-3 mt-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
