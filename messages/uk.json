@@ -96,7 +96,7 @@
     "OurTeam": {
         "pageTitle": "Команда",
         "pageBigTitle": "Обери свою ідеальну команду",
-        "listTitle": "УЧАСНИКИ",
+        "listTitle": "учасники",
         "listItemDes": "Дизайнери",
         "listItemDev": "Розробники",
         "listItemQA": "Тестувальники",
@@ -105,7 +105,7 @@
         "participantName": "Сусанна Салата",
         "participantPosition": "product manager",
         "hoverButton": "переглянути профіль",
-        "teamsList": "КОМАНДИ",
+        "teamsList": "команди",
         "team1": "I Love My Team",
         "team2": "Ферма"
     },

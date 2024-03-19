@@ -7,7 +7,7 @@ export const TeamsList = () => {
     return (
         <>
             <span className="font-geist font-normal text-sm text-purple-50">
-                {getTranslation("teamsList")}
+                {getTranslation("teamsList").toUpperCase()}
             </span>
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] ">
                 {teamList.map((team, idx) => (

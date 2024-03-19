@@ -14,7 +14,7 @@ export const CategoriesList = () => {
     return (
         <>
             <span className="font-geist font-normal text-sm text-purple-50 mb-8">
-                {getTranslation("listTitle")}
+                {getTranslation("listTitle").toUpperCase()}
             </span>
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] ">
                 {categoriesList.map((category, idx) => (

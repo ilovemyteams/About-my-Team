@@ -8,9 +8,9 @@ type DataType = {
     imageURL?: string;
     position: string;
     pricePerHour: string;
-    projectsExperience: string;
-    socialLinks: [];
-    instruments: [];
+    projectsExperience: string[];
+    socialLinks: string[];
+    tools: [];
 };
 
 export type MemberDataItemType = {
@@ -26,10 +26,10 @@ export const membersData: MemberDataItemType[] = [
             id: "1",
             imageURL: "",
             position: "product manager",
-            projectsExperience: "www.website.ua",
+            projectsExperience: ["www.website.ua"],
             pricePerHour: "100",
-            socialLinks: [],
-            instruments: [],
+            socialLinks: ["linkedin", "behance", "github"],
+            tools: [],
         },
         ua: {
             name: "Сусанна Салата",
