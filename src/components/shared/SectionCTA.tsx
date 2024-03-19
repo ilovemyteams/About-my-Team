@@ -9,7 +9,7 @@ export const SectionCTA = ({ children, className }: SectionCTAProps) => {
     return (
         <div className="bg-CTAGradient">
             <section
-                className={`container py-[48px] pc:p-[60px] mb-[80px] pc:mb-[100px] ${className}`}
+                className={`container max-w-[540px] tab:max-w-full py-[48px] pc:p-[60px] mb-[80px] pc:mb-[100px] ${className}`}
             >
                 {children}
             </section>
