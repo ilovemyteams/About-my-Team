@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { LogoLink } from "../LogoLink";
 import { BurgerMenuButton } from "../BurgerMenuButton";
-import { MobileHeaderMenu } from "./MobileHeaderMenu";
+import { MobileHeaderMenu } from "./MobileTabletHeaderMenu";
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 
 export const MobileHeader = () => {

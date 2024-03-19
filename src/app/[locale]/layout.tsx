@@ -33,6 +33,11 @@ const geist = localFont({
             weight: "400",
             style: "normal",
         },
+        {
+            path: "../../fonts/Geist/Geist-Light.woff2",
+            weight: "300",
+            style: "normal",
+        },
     ],
     variable: "--font-geist",
 });

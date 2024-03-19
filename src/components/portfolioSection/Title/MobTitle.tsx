@@ -4,7 +4,7 @@ export const MobTitle = () => {
     const getTranslation = useTranslations("Portfolio");
 
     return (
-        <div className="pc:hidden">
+        <div className="tab:hidden">
             <p>
                 {getTranslation("titleFirstWord")}
                 <span className="text-purple-100">
