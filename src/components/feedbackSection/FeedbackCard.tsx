@@ -47,7 +47,7 @@ export const FeedbackCard = ({
                         width={48}
                         height={32}
                     />
-                    <p className="my-4 tab:my-6 pc:my-[16px] text-sm tab:text-base pc:text-xl h-[136px] tab:h-[139px] pc:h-[175px]">
+                    <p className="my-4 tab:my-6 pc:my-[16px] font-light text-sm tab:text-base pc:text-xl h-[136px] tab:h-[139px] pc:h-[175px]">
                         {feedbackText}
                     </p>
                     <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light ">
@@ -63,7 +63,7 @@ export const FeedbackCard = ({
                             {siteName}
                         </h3>
 
-                        <p className="text-xs pc:text-sm pc:font-light text-purple-50">
+                        <p className="text-xs pc:text-sm font-light text-purple-50">
                             {siteTypeUp}
                         </p>
                     </div>
