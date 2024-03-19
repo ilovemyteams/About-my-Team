@@ -23,7 +23,7 @@ export const MissionSection = () => {
                         width="0"
                         height="0"
                         alt="animated image heart"
-                        className={`hidden tab:block min-w-[231px] w-[32%] h-auto pc:min-w-[418px] pc:w-[39%] ${inView && "animate-pulsation"}`}
+                        className={`hidden tab:block min-w-[231px] w-[32%] h-auto pc:min-w-[418px] ${inView && "animate-pulsation"}`}
                     />
                     <div className="relative flex flex-col justify-start items-center gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />

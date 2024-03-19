@@ -4,7 +4,7 @@ export const MobileTitle = () => {
     const getTranslation = useTranslations("Mission");
 
     return (
-        <p className="pc:hidden">
+        <p className="tab:hidden">
             {getTranslation("titleFirstWord")}
             <span className="text-purple-100">
                 {getTranslation("titleSecondWord")}
