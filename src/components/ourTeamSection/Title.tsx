@@ -5,8 +5,8 @@ import { TitleWrapper } from "../shared/TitleWrapper";
 export const Title = () => {
     const getTranslation = useTranslations("OurTeam");
     return (
-        <TitleWrapper className="flex items-start">
-            <SmallPageTitle className="min-w-[75px] ml-1 mr-3 h-[21px] flex items-center">
+        <TitleWrapper className="flex justify-start items-center">
+            <SmallPageTitle className="min-w-[75px] ml-1 mr-3 h-[21px] flex">
                 {getTranslation("pageTitle")}
             </SmallPageTitle>
             <p>{getTranslation("pageBigTitle")}</p>
