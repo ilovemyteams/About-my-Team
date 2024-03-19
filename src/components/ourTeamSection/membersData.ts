@@ -2,14 +2,24 @@ type MemberDataItemTranslation = {
     name: string;
     about: string;
     services: string;
+    team: string;
+    category: string;
 };
+
+type SocialLinks = {
+    linkedin: string;
+    behance?: string;
+    github?: string;
+    telegram?: string;
+};
+
 type DataType = {
     id: string;
     imageURL?: string;
     position: string;
     pricePerHour: string;
     projectsExperience: string[];
-    socialLinks: string[];
+    socialLinks: SocialLinks;
     tools: [];
 };
 
@@ -28,7 +38,9 @@ export const membersData: MemberDataItemType[] = [
             position: "product manager",
             projectsExperience: ["www.website.ua"],
             pricePerHour: "100",
-            socialLinks: ["linkedin", "behance", "github"],
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/susanna-salata/",
+            },
             tools: [],
         },
         ua: {
@@ -36,16 +48,22 @@ export const membersData: MemberDataItemType[] = [
             about: "Орієнтований на результат",
             services:
                 "Створення зручних для користувачів та ефективних для бізнесу web застосунків різного рівня складності. Фокусуюсь на поєднанні максимальної функціональності та естетичності для досягнення бездоганного результату.",
+            team: "I Love My Team",
+            category: "product manager",
         },
         en: {
             name: "Susanna Salata",
             about: "Result oriented",
             services: "There will be text in English",
+            team: "I Love My Team",
+            category: "product manager",
         },
         pl: {
             name: "Susanna Salata",
             about: "There will be text in Polish",
             services: "There will be text in Polish",
+            team: "I Love My Team",
+            category: "product manager",
         },
     },
 ];
