@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { ListItem } from "./ListItem";
-import { SmallPageTitle } from "../shared/SmallPageTitle";
 
 export const CategoriesList = () => {
     const getTranslation = useTranslations("OurTeam");
@@ -14,10 +13,10 @@ export const CategoriesList = () => {
 
     return (
         <>
-            <SmallPageTitle className="mb-8">
+            <span className="font-geist font-normal text-sm text-purple-50 mb-8">
                 {getTranslation("listTitle")}
-            </SmallPageTitle>
-            <ul className="mt-5">
+            </span>
+            <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] ">
                 {categoriesList.map((category, idx) => (
                     <ListItem key={idx}>{category}</ListItem>
                 ))}
