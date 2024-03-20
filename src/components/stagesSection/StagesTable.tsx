@@ -55,7 +55,6 @@ export const StagesTable = () => {
                 isShowMoreButton={false}
                 textClassName="line-clamp-none max-h-full"
                 sectionClassName="[&:nth-child(5)]:hidden pc:[&:nth-child(5)]:block"
-                className="pc:border"
             />
         </Table>
     );
