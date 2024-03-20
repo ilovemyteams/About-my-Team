@@ -3,14 +3,18 @@ import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
-import { PortfolioCard } from "../PortfolioCard";
+import { PortfolioCard } from "./PortfolioCard";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../../shared/SliderComponents/CarouselButtons";
-import { PortfolioDataItemType } from "../portfolioData";
+} from "../shared/SliderComponents/CarouselButtons";
+import { PortfolioDataItemType } from "./portfolioData";
 import { LocaleType } from "@/types/LocaleType";
+import {
+    SliderDots,
+    useDotButton,
+} from "../shared/SliderComponents/SliderDots";
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItemType[];
@@ -22,6 +26,8 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const locale = useLocale();
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
 
     const {
         prevBtnDisabled,
@@ -52,6 +58,19 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}
                         />
+                        <div className="embla__dots flex gap-3 items-center">
+                            {scrollSnaps.map((_, index) => (
+                                <SliderDots
+                                    key={index}
+                                    onClick={() => onDotButtonClick(index)}
+                                    className={"slider-dot".concat(
+                                        index === selectedIndex
+                                            ? " slider-dot--selected"
+                                            : ""
+                                    )}
+                                />
+                            ))}
+                        </div>
                         <NextButton
                             onClick={onNextButtonClick}
                             disabled={nextBtnDisabled}
