@@ -52,13 +52,13 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-6 tab:mt-0">
-                    <div className="embla__buttons flex gap-6">
+                <div className="embla__controls  tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-6 tab:mt-0">
+                    <div className="embla__buttons flex justify-between gap-6">
                         <PrevButton
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}
                         />
-                        <div className="embla__dots flex gap-3 items-center">
+                        <div className="tab:hidden embla__dots flex gap-3 items-center">
                             {scrollSnaps.map((_, index) => (
                                 <SliderDots
                                     key={index}
