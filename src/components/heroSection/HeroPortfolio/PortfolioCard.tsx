@@ -9,14 +9,14 @@ interface PortfolioCardProps {
 
 export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
     return (
-        <div className="relative w-portfolioHerocard min-h-[236px] max-w-[540px] pc:w-[540px] pc:h-[350px] bg-purple-400">
-            {!img ? (
+        <div className="relative w-portfolioHerocard min-h-[236px] aspect-[540/350] max-w-[540px] pc:w-[540px]  bg-CTAGradient">
+            {img ? (
                 <Image
                     src={img}
                     width={540}
                     height="0"
                     alt={data.name}
-                    className="min-w-[288px] pc:w-[540px] pc:h-[350px]"
+                    className="min-w-[288px] h-auto pc:w-[540px]"
                 />
             ) : (
                 <NoImageHerat />
