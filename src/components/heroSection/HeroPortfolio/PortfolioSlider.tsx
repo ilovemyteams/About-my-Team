@@ -25,7 +25,7 @@ export const PortfolioSlider = () => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className="embla overflow-hidden w-portfolioHerocard max-w-[540px] flex flex-col-reverse mt-8 items-start pc:mt-0 pc:flex-col pc:items-end ">
+        <div className="embla overflow-hidden w-portfolioHeroCard max-w-[540px] flex flex-col-reverse mt-8 items-start pc:mt-0 pc:flex-col pc:items-end ">
             <div className="embla__controls pc:mb-6">
                 <div className="embla__buttons flex gap-6 ">
                     <PrevButton
