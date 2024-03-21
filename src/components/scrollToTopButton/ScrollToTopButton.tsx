@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { IconUp } from "../shared/IconUp";
 
 export const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -26,10 +27,10 @@ export const ScrollToTopButton = () => {
     return (
         <>
             <button
-                className={`${isVisible ? "block" : "hidden"} fixed bottom-[264px] right-[60px]`}
+                className={`${isVisible ? "block" : "hidden"} text-grey fixed bottom-[264px] right-[60px] w-[64px] h-[64px] p-3 rounded-full color-grey after:content-[''] after:absolute after:top-0 after:left-0 after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 bg-opacity-80 after:blur-[2px]`}
                 onClick={scrollToTop}
             >
-                scroll to top
+                <IconUp />
             </button>
         </>
     );
