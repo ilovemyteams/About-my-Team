@@ -62,12 +62,33 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                             {scrollSnaps.map((_, index) => (
                                 <SliderDots
                                     key={index}
+                                    style={{
+                                        display:
+                                            selectedIndex === 0
+                                                ? index === selectedIndex + 2
+                                                    ? "flex"
+                                                    : ""
+                                                : selectedIndex ===
+                                                    projects.length - 1
+                                                  ? index === selectedIndex - 2
+                                                      ? "flex"
+                                                      : ""
+                                                  : selectedIndex === index ||
+                                                      selectedIndex - 1 ===
+                                                          index ||
+                                                      selectedIndex + 1 ===
+                                                          index
+                                                    ? "flex"
+                                                    : "",
+                                    }}
                                     onClick={() => onDotButtonClick(index)}
-                                    className={"slider-dot".concat(
+                                    className={`slider-dot ${
                                         index === selectedIndex
-                                            ? " slider-dot--selected"
+                                            ? "slider-dot--selected"
                                             : ""
-                                    )}
+                                    } 
+                                    ${index > selectedIndex + 1 || index < selectedIndex - 1 ? "hidden" : ""} 
+                                   `}
                                 />
                             ))}
                         </div>
