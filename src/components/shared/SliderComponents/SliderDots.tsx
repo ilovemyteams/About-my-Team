@@ -43,7 +43,6 @@ export const useDotButton = (
         emblaApi.on("reInit", onSelect);
         emblaApi.on("select", onSelect);
     }, [emblaApi, onInit, onSelect]);
-    console.log(selectedIndex);
     return {
         selectedIndex,
         scrollSnaps,
