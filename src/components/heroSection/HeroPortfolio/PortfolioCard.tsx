@@ -10,7 +10,7 @@ interface PortfolioCardProps {
 export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
     return (
         <div className="relative w-portfolioHerocard min-h-[236px] aspect-[540/350] max-w-[540px] pc:w-[540px]  bg-CTAGradient">
-            {img ? (
+            {!img ? (
                 <Image
                     src={img}
                     width={540}
