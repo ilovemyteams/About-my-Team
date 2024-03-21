@@ -13,7 +13,7 @@ import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSectio
 
 export default function Home() {
     return (
-        <div className="mt-[80px] pc:mt-[0px] pc:ml-[80px]">
+        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px]">
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
