@@ -10,9 +10,7 @@ interface PortfolioCardProps {
 export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
     return (
         <div className="relative w-portfolioHerocard min-h-[236px] aspect-[540/350] max-w-[540px] pc:w-[540px]  bg-CTAGradient">
-            {img ? (
-                <NoImageHerat />
-            ) : (
+            {!img ? (
                 <Image
                     src={img}
                     width={540}
@@ -20,6 +18,8 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
                     alt={data.name}
                     className="min-w-[288px] h-auto pc:w-[540px]"
                 />
+            ) : (
+                <NoImageHerat />
             )}
 
             <div className="absolute bottom-0 h-[74px] pc:h-[94px] bg-transporante w-full min-w-[288px] max-w-[540px] pc:w-[540px] bg-portfolioGradient opacity-60"></div>

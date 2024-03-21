@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const NoImageHerat = ({ className }: { className?: string }) => {
+export const NoImageHeart = ({ className }: { className?: string }) => {
     return (
         <Image
             src="/images/heartHeaderMenu.svg"
