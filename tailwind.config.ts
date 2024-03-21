@@ -113,6 +113,7 @@ const config: Config = {
             },
             width: {
                 "80": "calc(100vw - 80px)",
+                portfolioHeroCard: "calc(100vw - 32px)",
             },
             height: {
                 "80": "calc(100dvh - 80px)",
