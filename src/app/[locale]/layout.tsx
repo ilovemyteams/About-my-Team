@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { Footer } from "@/src/components/footer/Footer";
+import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import "./globals.css";
 
 const caviar = localFont({
@@ -79,6 +80,7 @@ export default function LocaleLayout({
                         <Header />
                         <main>{children}</main>
                         <Footer />
+                        <ScrollToTopButton />
                     </ThemeProvider>
                 </body>
             </NextIntlClientProvider>
