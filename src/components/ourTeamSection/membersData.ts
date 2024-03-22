@@ -1,6 +1,6 @@
 import { ToolsProp } from "@/types/ToolsProp";
 
-type MemberDataItemTranslation = {
+export type MemberDataItemTranslation = {
     name: string;
     about: string;
     services: string;
@@ -8,14 +8,14 @@ type MemberDataItemTranslation = {
     category: string;
 };
 
-type SocialLinks = {
+export type SocialLinks = {
     linkedin: string;
     behance?: string;
     github?: string;
     telegram?: string;
 };
 
-type DataType = {
+export type DataType = {
     id: string;
     imageURL?: string;
     position: string;
