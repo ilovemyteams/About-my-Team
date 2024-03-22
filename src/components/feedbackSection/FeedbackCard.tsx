@@ -46,6 +46,14 @@ export const FeedbackCard = ({
                         </p>
                         <p className="text-xs ml-2 ">{reviewerRole}</p>
                     </div>
+                    <div className="tab:hidden absolute bottom-[15px] right-3 cursor-pointer">
+                        <Image
+                            src="/images/webSiteIcon_opt.svg"
+                            alt="siteLink"
+                            width={24}
+                            height={24}
+                        />
+                    </div>
                 </div>
 
                 <div className="h-[185px] tab:mb-6 my-4 px-2 tab:min-w-[360px] tab:max-w-[50%] pc:min-w-[450px] tab:my-0 tab:h-[302px]">
