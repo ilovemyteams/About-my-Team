@@ -1,3 +1,5 @@
+import { ToolsProp } from "@/types/ToolsProp";
+
 type MemberDataItemTranslation = {
     name: string;
     about: string;
@@ -20,7 +22,7 @@ type DataType = {
     pricePerHour: string;
     projectsExperience: string[];
     socialLinks: SocialLinks;
-    tools: [];
+    tools: ToolsProp;
 };
 
 export type MemberDataItemType = {
@@ -41,7 +43,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
             },
-            tools: [],
+            tools: { jira: "jira", atlassian: "atlassian" },
         },
         ua: {
             name: "Сусанна Салата",
