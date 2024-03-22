@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { IconUp } from "../shared/IconUp";
+import { IconUp } from "../shared/Icons/IconUp";
 
 interface AccordionProps {
     item: {
@@ -34,7 +34,9 @@ export function Accordion({ item }: AccordionProps) {
             focus-visible:after:scale-100 focus-visible:after:blur-[2px] focus-visible:after:w-[48px] focus-visible:after:h-[48px] 
             focus-visible:outline-none focus-within:outline-none"
                         >
-                            <IconUp />
+                            <IconUp
+                                className={`w-[40px] h-[40px] duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
+                            />
                         </div>
                     </div>
                 </button>
