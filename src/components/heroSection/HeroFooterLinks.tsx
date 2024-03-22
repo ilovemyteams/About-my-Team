@@ -6,10 +6,14 @@ export const HeroFooterLinks = () => {
     const getTranslation = useTranslations("Hero");
 
     return (
-        <div className="flex justify-end mx-[auto] mt-[-20px] max-w-[540px] pc:mx-0 pc:max-w-[none] pc:justify-between pc:items-baseline pc:mt-2">
+        <div
+            className="flex justify-end mx-[auto] mt-[-20px] max-w-[540px] 
+        tab:mt-8
+        tab:mx-0 tab:max-w-[none] tab:justify-between tab:items-baseline pc:mt-2"
+        >
             <BuyMeCoffeeLink
-                className="hidden pc:flex"
-                textClassName="left-[56px]"
+                className="hidden tab:flex"
+                textClassName="pc:left-[56px]"
             />
             <Link
                 href="#portfolio"
