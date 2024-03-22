@@ -5,6 +5,7 @@ import { ItemNumber } from "./ItemNumber";
 import { useElementWidth } from "@/src/hooks/useElementWidth";
 
 const TEXT_CONTAINER_HEIGHT = 60;
+
 interface OneTableItemInfoProps {
     children: string;
     title?: string;
@@ -12,7 +13,6 @@ interface OneTableItemInfoProps {
     itemNumber?: number;
     textClassName?: string;
     isShowMoreButton?: boolean;
-    className?: string;
 }
 export const OneTableItemInfo = ({
     children,
@@ -20,7 +20,6 @@ export const OneTableItemInfo = ({
     isIconShown = true,
     itemNumber,
     textClassName,
-    className,
     isShowMoreButton = true,
 }: OneTableItemInfoProps) => {
     const { elementRef, elementWidth } = useElementWidth<HTMLDivElement>();
@@ -39,13 +38,9 @@ export const OneTableItemInfo = ({
     return (
         <div
             ref={elementRef}
-            className={`relative flex flex-col gap-4 justify-between min-h-[150px] 
-            border-purple-stroke border-b-[1px]  first-of-type:border-t-[1px] 
-            tab:[&:nth-child(2)]:border-t-[1px] 
-            tab:justify-normal pc:justify-between  
-            tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden
-            
-            ${className}`}
+            className="relative flex flex-col gap-4 justify-between min-h-[150px] 
+                        tab:justify-normal pc:justify-between
+                        tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden"
         >
             <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2 items-center">

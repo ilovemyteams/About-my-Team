@@ -38,7 +38,7 @@ export function ThemeSwitcher() {
     // TODO: update switcher border colors for light theme when design is ready
     return (
         <div
-            className={`hidden relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
+            className={` relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">
                 <input
