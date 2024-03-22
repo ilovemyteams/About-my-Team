@@ -9,6 +9,8 @@ import {
     PrevButton,
     usePrevNextButtons,
 } from "../../shared/SliderComponents/CarouselButtons";
+import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 
 type Locale = "uk" | "en" | "pl";
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
@@ -16,6 +18,8 @@ const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 export const PortfolioSlider = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const locale = useLocale();
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
 
     const {
         prevBtnDisabled,
@@ -27,10 +31,16 @@ export const PortfolioSlider = () => {
     return (
         <div className="embla overflow-hidden w-portfolioHeroCard tab:w-[50%] tab:min-w-[360px] max-w-[540px] flex flex-col-reverse mt-8 items-start  tab:mt-0 tab:flex-col tab:items-end ">
             <div className="embla__controls tab:mb-6">
-                <div className="embla__buttons flex gap-6 ">
+                <div className="embla__buttons flex gap-4 ">
                     <PrevButton
                         onClick={onPrevButtonClick}
                         disabled={prevBtnDisabled}
+                    />
+                    <SliderDotsBox
+                        scrollSnaps={scrollSnaps}
+                        selectedIndex={selectedIndex}
+                        sliders={porfolioData}
+                        onDotButtonClick={onDotButtonClick}
                     />
                     <NextButton
                         onClick={onNextButtonClick}
