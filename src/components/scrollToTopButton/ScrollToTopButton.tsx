@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { IconUp } from "../shared/IconUp";
+import { IconUp } from "../shared/Icons/IconUp";
 
 export const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
