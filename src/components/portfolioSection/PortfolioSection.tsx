@@ -1,5 +1,5 @@
 import { Section } from "../shared/Section";
-import { PortfolioCarousel } from "./Slider/PortfolioCarousel";
+import { PortfolioCarousel } from "./PortfolioCarousel";
 import { PortfolioTitle } from "./Title/PortfolioTitle";
 import { EmblaOptionsType } from "embla-carousel";
 import { portfolioData } from "./portfolioData";

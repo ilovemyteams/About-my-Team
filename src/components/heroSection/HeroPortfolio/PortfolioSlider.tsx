@@ -25,8 +25,8 @@ export const PortfolioSlider = () => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className="embla overflow-hidden w-portfolioHeroCard max-w-[540px] flex flex-col-reverse mt-8 items-start pc:mt-0 pc:flex-col pc:items-end ">
-            <div className="embla__controls pc:mb-6">
+        <div className="embla overflow-hidden w-portfolioHeroCard tab:w-[50%] tab:min-w-[360px] max-w-[540px] flex flex-col-reverse mt-8 items-start  tab:mt-0 tab:flex-col tab:items-end ">
+            <div className="embla__controls tab:mb-6">
                 <div className="embla__buttons flex gap-6 ">
                     <PrevButton
                         onClick={onPrevButtonClick}
@@ -39,10 +39,10 @@ export const PortfolioSlider = () => {
                 </div>
             </div>
             <div
-                className="mb-6 pc:mb-0 max-w-[540px] pc:min-w-[540px] overflow-hidden"
+                className="mb-6 tab:mb-0 tab:w-[100%] pc:mb-0 max-w-[540px] tab:min-w-[360px] pc:min-w-[540px] overflow-hidden"
                 ref={emblaRef}
             >
-                <div className="flex max-w-[540px] tab:min-w-[auto] pc:min-w-[540px]">
+                <div className="flex max-w-[540px] tab:w-[100%] tab:min-w-[360px] pc:min-w-[540px]">
                     {porfolioData.map(data => (
                         <div
                             key={data.id}
