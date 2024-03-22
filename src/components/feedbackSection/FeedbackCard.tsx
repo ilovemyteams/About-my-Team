@@ -46,13 +46,15 @@ export const FeedbackCard = ({
                         </p>
                         <p className="text-xs ml-2 ">{reviewerRole}</p>
                     </div>
-                    <div className="tab:hidden absolute bottom-[15px] right-3 cursor-pointer">
-                        <Image
-                            src="/images/webSiteIcon_opt.svg"
-                            alt="siteLink"
-                            width={24}
-                            height={24}
-                        />
+                    <div className="tab:hidden absolute bottom-[15px] right-3">
+                        <a href={siteLink}>
+                            <Image
+                                src="/images/webSiteIcon_opt.svg"
+                                alt="siteLink"
+                                width={24}
+                                height={24}
+                            />
+                        </a>
                     </div>
                 </div>
 
