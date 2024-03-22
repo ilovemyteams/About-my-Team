@@ -2,6 +2,7 @@ import { Section } from "../shared/Section";
 import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
 import { MenuMobileTeamSection } from "./MenuMobileTeamSection";
+import { MemberCard } from "./MemberCard";
 
 export const OurTeamSection = () => {
     return (
@@ -14,6 +15,7 @@ export const OurTeamSection = () => {
                 </div>
             </div>
             <MenuMobileTeamSection />
+            <MemberCard />
         </Section>
     );
 };
