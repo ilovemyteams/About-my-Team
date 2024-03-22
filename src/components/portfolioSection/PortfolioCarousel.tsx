@@ -11,10 +11,8 @@ import {
 } from "../shared/SliderComponents/CarouselButtons";
 import { PortfolioDataItemType } from "./portfolioData";
 import { LocaleType } from "@/types/LocaleType";
-import {
-    SliderDots,
-    useDotButton,
-} from "../shared/SliderComponents/SliderDots";
+import { useDotButton } from "../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItemType[];
@@ -58,40 +56,12 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}
                         />
-                        <div className="tab:hidden embla__dots flex gap-3 items-center">
-                            {scrollSnaps.map((_, index) => (
-                                <SliderDots
-                                    key={index}
-                                    style={{
-                                        display:
-                                            selectedIndex === 0
-                                                ? index === selectedIndex + 2
-                                                    ? "flex"
-                                                    : ""
-                                                : selectedIndex ===
-                                                    projects.length - 1
-                                                  ? index === selectedIndex - 2
-                                                      ? "flex"
-                                                      : ""
-                                                  : selectedIndex === index ||
-                                                      selectedIndex - 1 ===
-                                                          index ||
-                                                      selectedIndex + 1 ===
-                                                          index
-                                                    ? "flex"
-                                                    : "",
-                                    }}
-                                    onClick={() => onDotButtonClick(index)}
-                                    className={`slider-dot ${
-                                        index === selectedIndex
-                                            ? "slider-dot--selected"
-                                            : ""
-                                    } 
-                                    ${index > selectedIndex + 1 || index < selectedIndex - 1 ? "hidden" : ""} 
-                                   `}
-                                />
-                            ))}
-                        </div>
+                        <SliderDotsBox
+                            scrollSnaps={scrollSnaps}
+                            selectedIndex={selectedIndex}
+                            sliders={projects}
+                            onDotButtonClick={onDotButtonClick}
+                        />
                         <NextButton
                             onClick={onNextButtonClick}
                             disabled={nextBtnDisabled}
