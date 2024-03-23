@@ -178,6 +178,8 @@ const config: Config = {
 
             CTAGradient:
                 "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
+            feedbackMobCardGradient:
+                "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
         },
     },
     plugins: [],
