@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { IconShare } from "./IconShare";
+import { IconShare } from "./Icons/IconShare";
 
 interface ButtonShareProps {
     className?: string;

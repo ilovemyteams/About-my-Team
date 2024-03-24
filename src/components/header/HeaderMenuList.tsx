@@ -22,11 +22,11 @@ export const HeaderMenuList = ({
     ];
     const locale = useLocale();
     return (
-        <ul className="w-[43%]">
+        <ul>
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
-                    className="font-caviar text-baseb pc:text-3xl mt-[20px] mb-2 pc:[&:not(:last-child)]:mb-[26px] pc:mt-0"
+                    className="font-caviar text-baseb tab:text-3xl mt-[20px] tab:mt-6 mb-2 pc:[&:not(:last-child)]:mb-[26px] pc:mt-0"
                 >
                     <Link
                         href={`/${locale}#${id}`}

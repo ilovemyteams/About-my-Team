@@ -1,23 +1,26 @@
 import { useTranslations } from "next-intl";
 
-export const MobTitle = () => {
-    const getTranslation = useTranslations("Portfolio");
-
+export const TabletDesktopTitle = () => {
+    const getTranslation = useTranslations("Mission");
     return (
-        <div className="tab:hidden">
+        <div className="hidden tab:block">
             <p>
                 {getTranslation("titleFirstWord")}
                 <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
-                ,{getTranslation("titleThirdWord")}
+            </p>
+            <p>
+                {getTranslation("titleThirdWord")}
                 <span className="text-purple-100">
                     {getTranslation("titleFourthWord")}
                 </span>
-                {getTranslation("titlePartForMob")}
+            </p>
+            <p className="ml-[82px] pc:ml-[167px]">
                 <span className="text-purple-100">
-                    {getTranslation("titleSeventhWord")}
+                    {getTranslation("titleFifthWord")}
                 </span>
+                {getTranslation("titleOtherWords")}
             </p>
         </div>
     );
