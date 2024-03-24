@@ -15,14 +15,14 @@ export const LogoLink = ({ setIsHeaderMenuOpened }: LogoLinkProps) => {
         <Link
             href={`/${locale}`}
             onClick={() => setIsHeaderMenuOpened(false)}
-            className="cursor-pointer w-[48px] h-[42px] pc:w-[68px] pc:h-[62px]"
+            className="cursor-pointer w-[48px] h-[42px] tab:w-[56px] tab:h-[49px]"
         >
             <Image
                 src="/images/logo.svg"
                 width="0"
                 height="0"
                 alt="Logo icon"
-                className="w-[48px] pc:w-[68px] h-auto"
+                className="w-[48px] tab:w-[56px] h-auto"
             />
         </Link>
     );
