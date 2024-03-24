@@ -12,6 +12,8 @@ import {
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
 import { LocaleType } from "@/types/LocaleType";
+import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { useDotButton } from "../shared/SliderComponents/SliderDots";
 
 type FeedbackSliderProps = {
     feedbacks: FeedbackDataItemType[];
@@ -23,6 +25,8 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const locale = useLocale();
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
 
     const {
         prevBtnDisabled,
@@ -47,11 +51,17 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls mt-6 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
-                    <div className="embla__buttons flex gap-6">
+                <div className="embla__controls mt-4 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
+                    <div className="embla__buttons flex gap-4 tab:gap-6 justify-center">
                         <PrevButton
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}
+                        />
+                        <SliderDotsBox
+                            scrollSnaps={scrollSnaps}
+                            selectedIndex={selectedIndex}
+                            sliders={feedbacks}
+                            onDotButtonClick={onDotButtonClick}
                         />
                         <NextButton
                             onClick={onNextButtonClick}
