@@ -27,10 +27,10 @@ export function Accordion({ item }: AccordionProps) {
                             </summary>
                         </div>
                         <div
-                            className="flex-none cursor-pointer w-[48px] h-[48px] flex justify-center items-center
+                            className="flex-none cursor-pointer w-[40px] h-[40px] flex justify-center items-center
             after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 
             after:scale-0 after:origin-center after:blur-[2px] after:transition-scale after:ease-out after:duration-[600ms]
-            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-[48px] hover:after:h-[48px]
+            pc:hover:after:scale-100 pc:hover:after:blur-[2px] pc:hover:after:w-[48px] pc:hover:after:h-[48px]
             focus-visible:after:scale-100 focus-visible:after:blur-[2px] focus-visible:after:w-[48px] focus-visible:after:h-[48px] 
             focus-visible:outline-none focus-within:outline-none"
                         >
@@ -39,7 +39,7 @@ export function Accordion({ item }: AccordionProps) {
                                 width="0"
                                 height="0"
                                 alt="Open and close answer icon"
-                                className={`w-[40px] h-[40px]  duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
+                                className={`w-[24px] h-[24px]  duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
                             />
                         </div>
                     </div>
