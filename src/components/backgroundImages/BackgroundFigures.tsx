@@ -13,13 +13,22 @@ export const BackgroundFigures = () => {
                 />
             </div>
 
+            <div className="hidden pc:hidden tab:flex  fixed items-end overflow-hidden z-[-10] tab:h-[518px] tab:w-[497px] ">
+                <Image
+                    src="/images/bgImages/curveTablet.svg"
+                    width="0"
+                    height="0"
+                    alt="background image curve"
+                    className="fixed tab:object-none tab:object-left  tab:top-[-195px] tab:right-[-200px] tab:w-[497px] tab:h-[518px] z-[-10]"
+                />
+            </div>
             <div className="fixed tab:hidden flex items-end w-[272px] h-[244px] right-0 overflow-hidden z-[-10]">
                 <Image
                     src="/images/bgImages/curveMobile.svg"
                     width="0"
                     height="0"
                     alt="background image curve"
-                    className="w-[272px] h-[244px] object-cover relative right-[-136px] top-[-81px] z-[-10]"
+                    className="w-[272px] h-[244px] object-cover relative right-[-136px] top-[-22px] z-[-10]"
                 />
             </div>
 
