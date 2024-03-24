@@ -1,4 +1,4 @@
-import { ToolsProp } from "@/types/ToolsProp";
+//import { ToolsProp } from "@/types/ToolsProp";
 
 export type MemberDataItemTranslation = {
     name: string;
@@ -22,7 +22,7 @@ export type DataType = {
     pricePerHour: string;
     projectsExperience: string[];
     socialLinks: SocialLinks;
-    tools: ToolsProp;
+    tools: string[]; //ToolsProp;
 };
 
 export type MemberDataItemType = {
@@ -43,7 +43,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
             },
-            tools: { jira: "jira", atlassian: "atlassian" },
+            tools: ["jira", "atlassian"],
         },
         ua: {
             name: "Сусанна Салата",
@@ -51,7 +51,7 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Створення зручних для користувачів та ефективних для бізнесу web застосунків різного рівня складності. Фокусуюсь на поєднанні максимальної функціональності та естетичності для досягнення бездоганного результату.",
             team: "I Love My Team",
-            category: "product manager",
+            category: "продукт менеджери",
         },
         en: {
             name: "Susanna Salata",
