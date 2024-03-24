@@ -165,9 +165,24 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+                brokenHeart: {
+                    "0%": {
+                        transform: "rotate(40deg)",
+                    },
+                    "10%": {
+                        transform: "rotate(30deg)",
+                    },
+                    "50%": {
+                        transform: "rotate(20deg)",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg)",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
+                brokenHeart: "brokenHeart 3000ms ease-in",
             },
         },
         backgroundImage: {
