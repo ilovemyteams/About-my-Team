@@ -24,7 +24,7 @@ export const MobileTabletHeaderMenu = ({
     bg-grey dark:bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
             <BackgroundCirclesMobile className="top-[-80px]" />
-            <div className="flex flex-col justify-between items-center max-w-[540px] mx-auto tab:max-w-full h-80 p-4 tab:px-6 tab:py-[80px] mb-2 tab:mb-0 overflow-y-auto">
+            <div className="flex flex-col justify-between items-center max-w-[540px] mx-auto tab:max-w-full h-70 p-4 tab:px-6 tab:py-[80px] mb-2 tab:mb-0 overflow-y-auto">
                 <div className="flex justify-between tab:justify-end tab:gap-[111px] z-20 w-full">
                     <LocaleSwitcher />
                     <ThemeSwitcher />
