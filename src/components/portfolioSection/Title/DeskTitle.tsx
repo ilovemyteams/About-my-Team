@@ -3,24 +3,24 @@ import { useTranslations } from "next-intl";
 export const DeskTitle = () => {
     const getTranslation = useTranslations("Portfolio");
     return (
-        <div className="hidden pc:block">
+        <div className="hidden desk:block">
             <p>
                 {getTranslation("titleFirstWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
                 ,
             </p>
-            <p>
+            <p className="tab:-ml-[105px] pc:ml-0">
                 {getTranslation("titleThirdWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleFourthWord")}
                 </span>
-                {getTranslation("titleFifthWord")}
+                {getTranslation("titleFifthWordDesk")}
             </p>
             <p className="-ml-[105px]">
-                {getTranslation("titleSixthWord")}
-                <span className="pc:text-purple-100">
+                {getTranslation("titleSixthWordDesk")}
+                <span className="text-purple-100">
                     {getTranslation("titleSeventhWord")}
                 </span>
             </p>

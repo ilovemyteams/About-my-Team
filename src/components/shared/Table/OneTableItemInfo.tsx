@@ -5,17 +5,22 @@ import { ItemNumber } from "./ItemNumber";
 import { useElementWidth } from "@/src/hooks/useElementWidth";
 
 const TEXT_CONTAINER_HEIGHT = 60;
+
 interface OneTableItemInfoProps {
     children: string;
     title?: string;
     isIconShown?: boolean;
     itemNumber?: number;
+    textClassName?: string;
+    isShowMoreButton?: boolean;
 }
 export const OneTableItemInfo = ({
     children,
     title,
     isIconShown = true,
     itemNumber,
+    textClassName,
+    isShowMoreButton = true,
 }: OneTableItemInfoProps) => {
     const { elementRef, elementWidth } = useElementWidth<HTMLDivElement>();
     const contentRef = useRef<HTMLDivElement>(null);
@@ -33,14 +38,16 @@ export const OneTableItemInfo = ({
     return (
         <div
             ref={elementRef}
-            className="relative flex flex-col gap-4 justify-between tab:justify-normal pc:justify-between  min-h-[190px] tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden"
+            className="relative flex flex-col gap-4 justify-between min-h-[150px] 
+                        tab:justify-normal pc:justify-between
+                        tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden"
         >
             <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2 items-center">
                 {isIconShown && (
                     <div className="w-[18px] h-[18px] border-red border-[3px]"></div>
                 )}
-                <h3 className="font-caviar text-xlb">{title}</h3>
+                <h3 className="font-caviar text-xlb text-white">{title}</h3>
             </div>
             <div
                 ref={contentRef}
@@ -50,11 +57,12 @@ export const OneTableItemInfo = ({
                 pc:max-h-[60px] pc:overflow-hidden 
                 pc:hover:line-clamp-none ${isShownMore ? "line-clamp-none max-h-[160px]" : "line-clamp-3 max-h-[60px] tab:max-h-full pc:max-h-[60px] "}
                 transition-[max-height] duration-[600ms] ease-in overflow-hidden
+                ${textClassName}
                 `}
             >
                 {children}
             </div>
-            {isButtonShown && (
+            {isButtonShown && isShowMoreButton && (
                 <ShowMoreButton
                     toggleShowMore={toggleShowMore}
                     isShownMore={isShownMore}
