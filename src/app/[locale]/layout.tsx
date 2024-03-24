@@ -1,9 +1,14 @@
 import React from "react";
+import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import "./globals.css";
-
 import localFont from "next/font/local";
+import { ThemeProvider } from "@/src/providers/ThemeProvider";
+import { Header } from "@/src/components/header/Header";
+import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { Footer } from "@/src/components/footer/Footer";
+import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+import "./globals.css";
 
 const caviar = localFont({
     src: [
@@ -27,6 +32,11 @@ const geist = localFont({
         {
             path: "../../fonts/Geist/Geist-Regular.woff2",
             weight: "400",
+            style: "normal",
+        },
+        {
+            path: "../../fonts/Geist/Geist-Light.woff2",
+            weight: "300",
             style: "normal",
         },
     ],
@@ -55,18 +65,23 @@ export default function LocaleLayout({
 }>) {
     const messages = useMessages();
 
+    const cookieStore = cookies();
+    const userTheme = cookieStore.get("theme") || { value: "dark" };
+
     return (
-        <html lang={locale}>
+        <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                <body className={`${caviar.variable} ${geist.variable}`}>
-                    {/*TO:DO basic styles for the side bar */}
-                    <header className="hidden pc:fixed top-0 left-0 w-[80px] h-[100vh] bg-purple-100 pc:flex flex-col justify-between">
-                        <p>top</p>
-                        <p>center</p>
-                        <p>botton</p>
-                    </header>
-                    <main>{children}</main>
-                    <footer></footer>
+                <body
+                    className={`${caviar.variable} ${geist.variable} overflow-x-hidden
+                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
+                >
+                    <BackgroundImages />
+                    <ThemeProvider>
+                        <Header />
+                        <main>{children}</main>
+                        <Footer />
+                        <ScrollToTopButton />
+                    </ThemeProvider>
                 </body>
             </NextIntlClientProvider>
         </html>

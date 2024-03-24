@@ -13,7 +13,7 @@ export const ShowMoreButton = ({
     return (
         <button
             onClick={toggleShowMore}
-            className="text-start text-purple-100 underline  decoration-solid pc:hidden"
+            className="text-start text-purple-100 underline  decoration-solid tab:hidden"
         >
             {!isShownMore
                 ? getTranslation("showMore")

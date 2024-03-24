@@ -6,11 +6,13 @@ const config: Config = {
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
+    darkMode: "class",
     theme: {
         container: {
             center: true,
             padding: {
                 DEFAULT: "16px",
+                tab: "24px",
                 pc: "60px",
             },
         },
@@ -82,13 +84,21 @@ const config: Config = {
                 },
             ],
             "4xl": [
+                "32px",
+                {
+                    lineHeight: "32px",
+                    fontWeight: "700",
+                },
+            ],
+
+            "5xl": [
                 "40px",
                 {
                     lineHeight: "52px",
                     fontWeight: "700",
                 },
             ],
-            "5xl": [
+            "6xl": [
                 "48px",
                 {
                     lineHeight: "48px",
@@ -100,6 +110,13 @@ const config: Config = {
         extend: {
             variants: {
                 height: ["responsive", "hover", "focus"],
+            },
+            width: {
+                "80": "calc(100vw - 80px)",
+                portfolioHeroCard: "calc(100vw - 32px)",
+            },
+            height: {
+                "80": "calc(100dvh - 80px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -116,13 +133,53 @@ const config: Config = {
                     100: "#A258FF",
                     200: "#1F0033",
                     300: "#54148A",
+                    400: "#09002E",
                     stroke: "#5F3F87",
+                    stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
                 },
                 white: "#FBF8FF",
                 black: "#000000",
                 grey: "#D4D4D4",
+                red: "#FB7185",
             },
+            fill: {
+                stroke: "#5F3F87",
+            },
+            content: {
+                heart: 'url("/images/Heart.svg")',
+                triangles: 'url("/images/Triangles.svg")',
+            },
+            keyframes: {
+                pulsation: {
+                    "0%": {
+                        transform: "scale(1)",
+                        opacity: "1",
+                    },
+                    "10%, 20%, 35%, 45%": {
+                        transform: "scale(0.7)",
+                        opacity: "0",
+                    },
+                    "25%, 50%": {
+                        transform: "scale(1)",
+                        opacity: "1",
+                    },
+                },
+            },
+            animation: {
+                pulsation: "pulsation 1200ms ease-in 2",
+            },
+        },
+        backgroundImage: {
+            portfolioGradient:
+                "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+            portfolioSectionGradient:
+                "linear-gradient(to left, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+
+            CTAGradient:
+                "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
+            feedbackMobCardGradient:
+                "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
         },
     },
     plugins: [],

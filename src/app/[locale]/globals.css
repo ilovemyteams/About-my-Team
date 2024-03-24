@@ -4,13 +4,11 @@
 
 :root {
     --color-grey: #d4d4d4;
-    --background-color: #1f0033;
     --font-geist: Geist;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #1f0033;
         --color-grey: #d4d4d4;
     }
 }
@@ -39,12 +37,34 @@ ul {
 
 body {
     color: var(--color-grey);
-    background-color: var(--background-color);
     font-family: var(--font-geist);
 }
 
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+}
+@layer components {
+    .icon-hover-rounded-purple {
+        @apply pc:after:content-[''] pc:after:absolute pc:after:w-[0px] pc:after:h-[0px] pc:after:rounded-full pc:after:bg-purple-stroke03 pc:after:scale-0 pc:after:origin-center pc:after:ease-in-out pc:after:duration-[600ms] pc:after:blur-[2px];
+    }
+
+    .icon-hover-rounded-purple:hover {
+        @apply pc:after:scale-100 pc:after:blur-[2px] pc:after:h-full pc:after:w-full;
+    }
+
+    .icon-hover-rounded-purple:focus-visible {
+        @apply pc:after:scale-100 pc:after:blur-[2px] pc:after:h-full pc:after:w-full pc:outline-none;
+    }
+
+    .icon-hover-rounded-purple:focus-within {
+        @apply pc:outline-none;
+    }
+    .slider-dot {
+        @apply appearance-none bg-transparent inline-flex cursor-pointer border border-red p-0 m-0 w-2 h-2 rounded-full;
+    }
+    .slider-dot--selected {
+        @apply bg-red justify-center;
     }
 }
