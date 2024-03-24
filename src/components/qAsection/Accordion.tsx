@@ -26,7 +26,7 @@ export function Accordion({ item }: AccordionProps) {
                         </summary>
                     </div>
                     <div
-                        className="flex-none cursor-pointer w-[48px] h-[48px] flex justify-center items-center
+                        className="flex-none cursor-pointer w-[40px] h-[40px] flex justify-center items-center
             after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full text-red after:bg-purple-stroke03 
             after:scale-0 after:origin-center after:blur-[2px] after:transition-scale after:ease-out after:duration-[600ms]
             pc:hover:after:scale-100 pc:hover:after:blur-[2px] pc:hover:after:w-[48px] pc:hover:after:h-[48px]

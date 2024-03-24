@@ -10,9 +10,7 @@ export const TitleQA = () => {
                 <SmallPageTitle className="ml-0 mx-auto pr-[10px] flex justify-center ">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
-                <span className="w-[280px] pc:w-auto">
-                    {getTranslation("pageBigTitle")}
-                </span>
+                <span className="w-auto">{getTranslation("pageBigTitle")}</span>
             </div>
         </TitleWrapper>
     );
