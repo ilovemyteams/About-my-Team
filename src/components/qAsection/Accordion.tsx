@@ -30,7 +30,7 @@ export function Accordion({ item }: AccordionProps) {
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
                     >
                         <IconUp
-                            className={`w-[24px] h-[24px] duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
+                            className={`w-[40px] h-[40px] duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
                         />
                     </div>
                 </div>
