@@ -165,6 +165,8 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+
+                //broken heart for 404 page
                 pulsationHeart: {
                     "0%": {
                         transform: "scale(1)",
@@ -182,28 +184,58 @@ const config: Config = {
                         transform: "scale(1)",
                     },
                 },
-
                 brokenHeart: {
                     "0%": {
                         transform:
                             "rotate(0deg) translateX(29) translateY(-7px)",
                     },
-                    "10%": {
+                    "10%, 30%": {
                         transform:
                             "rotate(-3deg) translateX(27px) translateY(-7px) ",
                     },
-                    "30%": {
-                        transform:
-                            "rotate(-3deg) translateX(27px) translateY(-7px) ",
-                    },
-                    "50%": {
+                    "70%, 90%": {
                         transform:
                             "rotate(-30deg) translateX(5px) translateY(0px)",
                     },
-
                     "100%": {
                         transform:
+                            "rotate(-55deg) translateX(-35px) translateY(7px)",
+                    },
+                },
+                brokenHeartTablet: {
+                    "0%": {
+                        transform:
+                            "rotate(0deg) translateX(56) translateY(-15px)",
+                    },
+                    "10%, 30%": {
+                        transform:
+                            "rotate(-3deg) translateX(50px) translateY(-15px) ",
+                    },
+                    "70%, 90%": {
+                        transform:
                             "rotate(-30deg) translateX(5px) translateY(0px)",
+                    },
+                    "100%": {
+                        transform:
+                            "rotate(-55deg) translateX(-65px) translateY(15px)",
+                    },
+                },
+                brokenHeartPC: {
+                    "0%": {
+                        transform:
+                            "rotate(0deg) translateX(98) translateY(-26px)",
+                    },
+                    "10%, 30%": {
+                        transform:
+                            "rotate(-3deg) translateX(90px) translateY(-26px) ",
+                    },
+                    "70%, 90%": {
+                        transform:
+                            "rotate(-30deg) translateX(20px) translateY(0px)",
+                    },
+                    "100%": {
+                        transform:
+                            "rotate(-55deg) translateX(-120px) translateY(15px)",
                     },
                 },
             },
@@ -211,6 +243,8 @@ const config: Config = {
                 pulsation: "pulsation 1200ms ease-in 2",
                 pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
                 brokenHeart: "brokenHeart 3000ms ease-in",
+                brokenHeartTablet: "brokenHeartTablet 3000ms ease-in",
+                brokenHeartPC: "brokenHeartPC 3000ms ease-in",
             },
         },
         backgroundImage: {
