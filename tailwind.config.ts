@@ -165,6 +165,24 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+                pulsationHeart: {
+                    "0%": {
+                        transform: "scale(1)",
+                    },
+                    "25%": {
+                        transform: "scale(1.18)",
+                    },
+                    "50%": {
+                        transform: "scale(1)",
+                    },
+                    "75%": {
+                        transform: "scale(1.18)",
+                    },
+                    "100%": {
+                        transform: "scale(1)",
+                    },
+                },
+
                 brokenHeart: {
                     "0%": {
                         transform:
@@ -172,56 +190,26 @@ const config: Config = {
                     },
                     "10%": {
                         transform:
-                            "rotate(-10deg) translateX(20px) translateY(-7px)",
-                    },
-                    "20%": {
-                        transform:
-                            "rotate(-15deg) translateX(15px) translateY(-7px)",
+                            "rotate(-3deg) translateX(27px) translateY(-7px) ",
                     },
                     "30%": {
                         transform:
-                            "rotate(-25deg) translateX(10px) translateY(-2px)",
+                            "rotate(-3deg) translateX(27px) translateY(-7px) ",
                     },
-                    "40%": {
+                    "50%": {
                         transform:
                             "rotate(-30deg) translateX(5px) translateY(0px)",
                     },
 
-                    "60%": {
-                        transform:
-                            "rotate(-35deg) translateX(0px) translateY(0px)",
-                    },
-                    // "80%": {
-                    //     transform:
-                    //         "rotate(-35deg) translateX(-2px) translateY(4px)",
-                    // },
-
                     "100%": {
                         transform:
-                            "rotate(-50deg) translateX(-24px) translateY(14px)",
+                            "rotate(-30deg) translateX(5px) translateY(0px)",
                     },
-                    // "20%": {
-                    //     transform:
-                    //         "rotate(-10deg) translateX(-12px) translateY(-4px)",
-                    // },
-
-                    // "40%": {
-                    //     transform:
-                    //         "rotate(-30deg) translateX(-20px) translateY(8px)",
-                    // },
-                    // "50%": {
-                    //     transform:
-                    //         "rotate(-35deg) translateX(-25px) translateY(10px)",
-                    // },
-                    // translateX(-40px)
-                    // "100%": {
-                    //     transform:
-                    //         "rotate(-50deg) translateX(-50px) translateY(-8px)",
-                    // },
                 },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
+                pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
                 brokenHeart: "brokenHeart 3000ms ease-in",
             },
         },
