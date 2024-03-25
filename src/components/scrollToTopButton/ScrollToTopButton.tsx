@@ -27,7 +27,7 @@ export const ScrollToTopButton = () => {
     return (
         <>
             <button
-                className={`${isVisible ? "block" : "hidden"} text-grey fixed bottom-[164px] right-[8px] tab:right-[28px] pc:right-[60px] w-[64px] h-[64px] p-3 rounded-full color-grey after:content-[''] after:absolute after:top-0 after:left-0 after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 after:bg-opacity-40 after:blur-[2px]`}
+                className={`${isVisible ? "block" : "hidden"} fixed bottom-[68px] tab:bottom-[164px] right-[8px] tab:right-[28px] pc:right-[60px] w-[48px] h-[48px] tab:w-[64px] tab:h-[64px] p-1 tab:p-3 rounded-full text-grey after:content-[''] after:absolute after:top-0 after:left-0 after:z-[-10] after:w-[48px] after:h-[48px] tab:after:w-[64px] tab:after:h-[64px] after:rounded-full after:bg-purple-100 after:bg-opacity-40 after:blur-[2px]`}
                 onClick={scrollToTop}
             >
                 <IconUp />
