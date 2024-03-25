@@ -20,61 +20,165 @@ export const CustomerForm = () => {
             initialValues={initialValues}
             onSubmit={values => console.log(values)}
         >
-            {({ dirty, isValid }) => (
-                <Form>
-                    <label htmlFor="name">
-                        {getTranslation("namePlaceholder")}
+            {({ values, status, setStatus, dirty, isValid }) => (
+                <Form className="flex flex-col items-center">
+                    <label className="relative w-full h-[32px] mt-[28px] mb-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("namePlaceholder")}
+                        </p>
+                        <Field
+                            name="name"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "name"
+                                    ? getTranslation("namePlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("name")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage name="name" component="p"></ErrorMessage>
                     </label>
-                    <Field name="name" type="text" autoComplete="on"></Field>
-                    <ErrorMessage name="name" component="p"></ErrorMessage>
-                    <label htmlFor="email">
-                        {getTranslation("emailPlaceholder")}
+                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("emailPlaceholder")}
+                        </p>
+                        <Field
+                            name="email"
+                            type="email"
+                            autoComplete="on"
+                            placeholder={
+                                status === "email"
+                                    ? getTranslation("emailPlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("email")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
+                          font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage name="email" component="p"></ErrorMessage>
                     </label>
-                    <Field name="email" type="text" autoComplete="on"></Field>
-                    <ErrorMessage name="email" component="p"></ErrorMessage>
-                    <label htmlFor="telegram">
-                        {getTranslation("telegramPlaceholder")}
+                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("telegramPlaceholder")}
+                        </p>
+                        <Field
+                            name="telegram"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "telegram"
+                                    ? getTranslation("telegramPlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("telegram")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
+                      font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage
+                            name="telegram"
+                            component="p"
+                        ></ErrorMessage>
+                    </label>
+                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("linkedinPlaceholder")}
+                        </p>
+                        <Field
+                            name="linkedin"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "linkedin"
+                                    ? getTranslation("linkedinPlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("linkedin")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
+                  font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage
+                            name="linkedin"
+                            component="p"
+                        ></ErrorMessage>
+                    </label>
+                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("instagramPlaceholder")}
+                        </p>
+                        <Field
+                            name="instagram"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "instagram"
+                                    ? getTranslation("instagramPlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("instagram")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
+              font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage
+                            name="instagram"
+                            component="p"
+                        ></ErrorMessage>
+                    </label>
+                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                        <p
+                            className={`absolute ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                        >
+                            {getTranslation("facebookPlaceholder")}
+                        </p>
+                        <Field
+                            name="facebook"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "facebook"
+                                    ? getTranslation("facebookPlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("facebook")}
+                            onBlur={() => setStatus("")}
+                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
+          font-caviar text-baseb placeholder-purple-stroke"
+                        ></Field>
+                        <ErrorMessage
+                            name="facebook"
+                            component="p"
+                        ></ErrorMessage>
                     </label>
                     <Field
-                        name="telegram"
+                        as="textarea"
+                        name="message"
                         type="text"
                         autoComplete="on"
+                        placeholder={getTranslation("messagePlaceholder")}
+                        className="block appearance-none w-full h-[96px] mb-8 bg-transparent focus:outline-none border-b-[1px]
+                         border-purple-stroke font-caviar text-baseb placeholder:text-caviar placeholder-purple-stroke"
                     ></Field>
-                    <ErrorMessage name="telegram" component="p"></ErrorMessage>
-                    <label htmlFor="linkedin">
-                        {getTranslation("linkedinPlaceholder")}
-                    </label>
-                    <Field
-                        name="linkedin"
-                        type="text"
-                        autoComplete="on"
-                    ></Field>
-                    <ErrorMessage name="linkedin" component="p"></ErrorMessage>
-                    <label htmlFor="instagram">
-                        {getTranslation("instagramPlaceholder")}
-                    </label>
-                    <Field
-                        name="instagram"
-                        type="text"
-                        autoComplete="on"
-                    ></Field>
-                    <ErrorMessage name="instagram" component="p"></ErrorMessage>
-                    <label htmlFor="facebook">
-                        {getTranslation("facebookPlaceholder")}
-                    </label>
-                    <Field
-                        name="facebook"
-                        type="text"
-                        autoComplete="on"
-                    ></Field>
-                    <ErrorMessage name="facebook" component="p"></ErrorMessage>
-                    <label htmlFor="message">
-                        {getTranslation("messagePlaceholder")}
-                    </label>
-                    <Field name="message" type="text" autoComplete="on"></Field>
                     <ErrorMessage name="message" component="p"></ErrorMessage>
-                    <p>{getTranslation("requiredField")}</p>
-                    <p>
+                    <p className="mb-2 text-xs">
+                        {getTranslation("requiredField")}
+                    </p>
+                    <p className="mb-8 text-xs bg-purple-100">
                         {getTranslation("informedAgreement")}{" "}
                         <a href="/" target="_blank" rel="noopener noreferrer">
                             {getTranslation("rulesLink")}

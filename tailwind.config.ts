@@ -22,6 +22,12 @@ const config: Config = {
             desk: "1536px",
         },
         fontSize: {
+            xxs: [
+                "10px",
+                {
+                    lineHeight: "15px",
+                },
+            ],
             xs: [
                 "12px",
                 {
