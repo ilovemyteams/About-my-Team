@@ -167,17 +167,57 @@ const config: Config = {
                 },
                 brokenHeart: {
                     "0%": {
-                        transform: "rotate(40deg)",
+                        transform:
+                            "rotate(0deg) translateX(29) translateY(-7px)",
                     },
                     "10%": {
-                        transform: "rotate(30deg)",
+                        transform:
+                            "rotate(-10deg) translateX(20px) translateY(-7px)",
                     },
-                    "50%": {
-                        transform: "rotate(20deg)",
+                    "20%": {
+                        transform:
+                            "rotate(-15deg) translateX(15px) translateY(-7px)",
                     },
+                    "30%": {
+                        transform:
+                            "rotate(-25deg) translateX(10px) translateY(-2px)",
+                    },
+                    "40%": {
+                        transform:
+                            "rotate(-30deg) translateX(5px) translateY(0px)",
+                    },
+
+                    "60%": {
+                        transform:
+                            "rotate(-35deg) translateX(0px) translateY(0px)",
+                    },
+                    // "80%": {
+                    //     transform:
+                    //         "rotate(-35deg) translateX(-2px) translateY(4px)",
+                    // },
+
                     "100%": {
-                        transform: "rotate(0deg)",
+                        transform:
+                            "rotate(-50deg) translateX(-24px) translateY(14px)",
                     },
+                    // "20%": {
+                    //     transform:
+                    //         "rotate(-10deg) translateX(-12px) translateY(-4px)",
+                    // },
+
+                    // "40%": {
+                    //     transform:
+                    //         "rotate(-30deg) translateX(-20px) translateY(8px)",
+                    // },
+                    // "50%": {
+                    //     transform:
+                    //         "rotate(-35deg) translateX(-25px) translateY(10px)",
+                    // },
+                    // translateX(-40px)
+                    // "100%": {
+                    //     transform:
+                    //         "rotate(-50deg) translateX(-50px) translateY(-8px)",
+                    // },
                 },
             },
             animation: {

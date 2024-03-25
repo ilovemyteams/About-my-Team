@@ -11,11 +11,14 @@ export const BrokenHeart = () => {
                 width="0"
                 height="0"
                 alt="Broken heart icon"
-                className="w-[67px] tab:w-[128px] pc:w-[229px]  h-auto
-                animate-brokenHeart"
+                className="w-[67px]
+                translate-x-[29px] translate-y-[-8px]
+               
+                 tab:w-[128px] pc:w-[229px]  h-auto
+              animate-brokenHeart
+                "
                 style={{
                     animationFillMode: "forwards",
-                    transform: "rotate(45deg)",
                     animationDelay: "3s",
                 }}
             />
