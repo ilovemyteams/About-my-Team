@@ -16,16 +16,12 @@ export const MenuMobileTeamSection = () => {
         <div className="tab:hidden pc:hidden">
             <button
                 onClick={changeStateMenu}
-                className="w-full flex justify-between items-center font-caviar text-baseb border-[1px] border-purple-stroke py-[14px] px-[16px]"
+                className="h-[48px] w-full flex justify-between items-center font-caviar text-baseb border-[1px] border-purple-stroke py-[14px] px-[16px]"
             >
                 <p>{getTranslation("menuTopTitle")}</p>
                 <div
-                    className="flex-none cursor-pointer w-[24px] h-[24px] flex justify-center items-center
-            after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full text-red after:bg-purple-stroke03 
-            after:scale-0 after:origin-center after:blur-[2px] after:transition-scale after:ease-out after:duration-[600ms]
-            hover:after:scale-100 hover:after:blur-[2px] hover:after:w-[48px] hover:after:h-[48px]
-            focus-visible:after:scale-100 focus-visible:after:blur-[2px] focus-visible:after:w-[48px] focus-visible:after:h-[48px] 
-            focus-visible:outline-none focus-within:outline-none"
+                    className="relative cursor-pointer flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within pc:text-red "
                 >
                     <IconUp
                         className={`w-[24px] h-[24px] text-red duration-300 ease-out transition-transform  ${isOpen ? "rotate-0" : "rotate-180 "}`}

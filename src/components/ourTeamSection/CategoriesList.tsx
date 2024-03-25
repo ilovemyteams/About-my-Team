@@ -12,7 +12,7 @@ export const CategoriesList = () => {
     ];
 
     return (
-        <div className="tab:pt-[12px]">
+        <div className="pt-[12px]">
             <span className="font-geist font-normal text-sm text-purple-50 mb-8 pc:mt-[12px]">
                 {getTranslation("listTitle").toUpperCase()}
             </span>
