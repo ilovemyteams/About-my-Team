@@ -8,7 +8,7 @@ export const QaSection = () => {
         <Section>
             <div className="flex">
                 <TitleQA />
-                <ButtonShare className="my-0 tab:gap-2 ml-auto right-[60px] pc:mt-[27px] mb-[64px] pc:my-[8px]" />
+                <ButtonShare className="tab:gap-2 ml-auto right-[60px] pc:mt-[27px] mb-[64px] pc:my-[8px]" />
             </div>
             <QuestionsList />
         </Section>
