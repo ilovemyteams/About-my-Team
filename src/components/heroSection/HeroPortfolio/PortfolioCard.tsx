@@ -14,7 +14,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
                         tab:aspect-[360/300] pc:aspect-[540/350]  
                         pc:w-[540px]  bg-CTAGradient"
         >
-            {!img ? (
+            {img ? (
                 <Image
                     src={img}
                     width={540}

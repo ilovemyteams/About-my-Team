@@ -9,7 +9,7 @@ export const BackgroundCirclesMobile = ({
 }: BackgroundCirclesProps) => {
     return (
         <div
-            className={`pc:hidden absolute z-[-10] w-screen h-[100vh] overflow-hidden ${className}`}
+            className={`tab:hidden absolute z-[-10] w-screen h-[100vh] overflow-hidden ${className}`}
         >
             <Image
                 src="/images/bgImages/leftBottomMobile.svg"

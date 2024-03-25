@@ -29,9 +29,9 @@ export const PortfolioSlider = () => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className="embla overflow-hidden w-portfolioHeroCard tab:w-[50%] tab:min-w-[360px] max-w-[540px] flex flex-col-reverse mt-8 items-start  tab:mt-0 tab:flex-col tab:items-end ">
-            <div className="embla__controls tab:mb-6">
-                <div className="embla__buttons flex gap-4 ">
+        <div className="embla overflow-hidden w-portfolioHeroCard tab:w-[50%] tab:min-w-[360px] max-w-[540px] flex flex-col-reverse mt-8  tab:mt-0 tab:flex-col tab:items-end ">
+            <div className="embla__controls tab:mb-6 w-[176px] max-w-[176px] mx-[auto] tab:mx-0 tab:w-[auto]">
+                <div className="embla__buttons flex justify-between tab:gap-6">
                     <PrevButton
                         onClick={onPrevButtonClick}
                         disabled={prevBtnDisabled}
