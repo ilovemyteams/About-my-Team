@@ -29,7 +29,7 @@ export const CustomerForm = () => {
                 <Form className="flex flex-col items-center mt-[16px]">
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("namePlaceholder")}
                         </p>
@@ -50,7 +50,7 @@ export const CustomerForm = () => {
                     </label>
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("emailPlaceholder")}
                         </p>
@@ -71,7 +71,7 @@ export const CustomerForm = () => {
                     </label>
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("telegramPlaceholder")}
                         </p>
@@ -95,7 +95,7 @@ export const CustomerForm = () => {
                     </label>
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("linkedinPlaceholder")}
                         </p>
@@ -119,7 +119,7 @@ export const CustomerForm = () => {
                     </label>
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("instagramPlaceholder")}
                         </p>
@@ -143,7 +143,7 @@ export const CustomerForm = () => {
                     </label>
                     <label className={labelStyles}>
                         <p
-                            className={`absolute ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`absolute tansition-transform duration-300 ease-out ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("facebookPlaceholder")}
                         </p>
@@ -184,7 +184,11 @@ export const CustomerForm = () => {
                             {getTranslation("rulesLink")}
                         </a>
                     </p>
-                    <Button type="submit" disabled={!(dirty && isValid)}>
+                    <Button
+                        type="submit"
+                        disabled={!(dirty && isValid)}
+                        color="grey"
+                    >
                         {getTranslation("submitButton")}
                     </Button>
                 </Form>
