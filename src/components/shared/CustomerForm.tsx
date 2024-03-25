@@ -3,6 +3,11 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
 import { Button } from "./Button";
 
+const labelStyles =
+    "relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke";
+const fieldStyles =
+    "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
+
 export const CustomerForm = () => {
     const getTranslation = useTranslations("CustomerForm");
 
@@ -21,8 +26,8 @@ export const CustomerForm = () => {
             onSubmit={values => console.log(values)}
         >
             {({ values, status, setStatus, dirty, isValid }) => (
-                <Form className="flex flex-col items-center">
-                    <label className="relative w-full h-[32px] mt-[28px] mb-3 border-b-[1px] text-baseb border-purple-stroke">
+                <Form className="flex flex-col items-center mt-[16px]">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -39,11 +44,11 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("name")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage name="name" component="p"></ErrorMessage>
                     </label>
-                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -60,12 +65,11 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("email")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
-                          font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage name="email" component="p"></ErrorMessage>
                     </label>
-                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -82,15 +86,14 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("telegram")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
-                      font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage
                             name="telegram"
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -107,15 +110,14 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("linkedin")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
-                  font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage
                             name="linkedin"
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -132,15 +134,14 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("instagram")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
-              font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage
                             name="instagram"
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className="relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke">
+                    <label className={labelStyles}>
                         <p
                             className={`absolute ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
@@ -157,8 +158,7 @@ export const CustomerForm = () => {
                             }
                             onFocus={() => setStatus("facebook")}
                             onBlur={() => setStatus("")}
-                            className="block appearance-none w-full h-full bg-transparent focus:outline-none
-          font-caviar text-baseb placeholder-purple-stroke"
+                            className={fieldStyles}
                         ></Field>
                         <ErrorMessage
                             name="facebook"
