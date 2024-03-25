@@ -116,7 +116,8 @@ const config: Config = {
                 portfolioHeroCard: "calc(100vw - 32px)",
             },
             height: {
-                "80": "calc(100dvh - 80px)",
+                "70": "calc(100dvh - 80px)",
+                "80": "calc(100vh - 80px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
