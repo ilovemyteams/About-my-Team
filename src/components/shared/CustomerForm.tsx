@@ -28,6 +28,7 @@ export const CustomerForm = () => {
         <Formik
             initialValues={initialValues}
             onSubmit={values => console.log(values)}
+            initialStatus="name"
         >
             {({ values, status, setStatus, dirty, isValid }) => (
                 <Form className="flex flex-col items-center mt-[16px]">
@@ -43,7 +44,6 @@ export const CustomerForm = () => {
                             name="name"
                             type="text"
                             autoComplete="on"
-                            autoFocus={true}
                             placeholder={
                                 status === "name"
                                     ? getTranslation("namePlaceholder")
