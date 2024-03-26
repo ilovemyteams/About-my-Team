@@ -16,7 +16,7 @@ export const MenuFooter = () => {
 
     const locale = useLocale();
     return (
-        <ul className="pc:flex flex-start gap-[24px] font-geist text-base">
+        <ul className="tab:flex flex-start gap-[24px] font-geist text-base">
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
