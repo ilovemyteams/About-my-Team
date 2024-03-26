@@ -41,6 +41,8 @@ export const membersData: MemberDataItemType[] = [
             pricePerHour: "100",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
+                github: "",
+                telegram: "",
             },
             tools: ["jira", "atlassian"],
         },
