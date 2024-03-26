@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import { Button } from "./Button";
 
 const labelStyles =
-    "relative w-full h-[32px] my-3 border-b-[1px] text-baseb border-purple-stroke";
+    "relative w-full h-[32px] my-3 border-b-[1px] text-baseb tansition-color duration-300 ease-out";
+const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
 
@@ -27,9 +28,11 @@ export const CustomerForm = () => {
         >
             {({ values, status, setStatus, dirty, isValid }) => (
                 <Form className="flex flex-col items-center mt-[16px]">
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("namePlaceholder")}
                         </p>
@@ -48,9 +51,11 @@ export const CustomerForm = () => {
                         ></Field>
                         <ErrorMessage name="name" component="p"></ErrorMessage>
                     </label>
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.email || status === "email" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("emailPlaceholder")}
                         </p>
@@ -69,9 +74,11 @@ export const CustomerForm = () => {
                         ></Field>
                         <ErrorMessage name="email" component="p"></ErrorMessage>
                     </label>
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.telegram || status === "telegram" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("telegramPlaceholder")}
                         </p>
@@ -93,9 +100,11 @@ export const CustomerForm = () => {
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.linkedin || status === "linkedin" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("linkedinPlaceholder")}
                         </p>
@@ -117,9 +126,11 @@ export const CustomerForm = () => {
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.instagram || status === "instagram" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("instagramPlaceholder")}
                         </p>
@@ -141,9 +152,11 @@ export const CustomerForm = () => {
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <label className={labelStyles}>
+                    <label
+                        className={`${labelStyles} ${values.facebook || status === "facebook" ? "border-grey" : "border-purple-stroke"}`}
+                    >
                         <p
-                            className={`absolute tansition-transform duration-300 ease-out ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
+                            className={`${textLabelStyles} ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
                             {getTranslation("facebookPlaceholder")}
                         </p>
@@ -178,9 +191,14 @@ export const CustomerForm = () => {
                     <p className="mb-2 text-xs">
                         {getTranslation("requiredField")}
                     </p>
-                    <p className="mb-8 text-xs bg-purple-100">
+                    <p className="mb-8 text-xs">
                         {getTranslation("informedAgreement")}{" "}
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <a
+                            href="/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-purple-50"
+                        >
                             {getTranslation("rulesLink")}
                         </a>
                     </p>
