@@ -13,7 +13,7 @@ export const categoryNames: СategoryNamesProp[] = [
         en: "developers",
     },
     { name: "designers", ua: "дизайнери", pl: "designers", en: "designers" },
-    { name: "qa", ua: "тестувальники", pl: "qa", en: "qa" },
+    { name: "qas", ua: "тестувальники", pl: "qa", en: "qa" },
     {
         name: "business-analytics",
         ua: "бізнес-аналітики",
