@@ -4,7 +4,9 @@ import { useTranslations } from "next-intl";
 import { Button } from "./Button";
 
 const labelStyles =
-    "relative w-full h-[32px] my-3 border-b-[1px] text-baseb tansition-color duration-300 ease-out";
+    "relative w-full h-[32px] my-3 border-b-[1px] text-base tansition-color duration-300 ease-out";
+const labelTextAreaStyles =
+    "relative w-full h-[108px] my-8 border-b-[1px] text-base tansition-color duration-300 ease-out";
 const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
@@ -185,10 +187,10 @@ export const CustomerForm = () => {
                         ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} h-[108px] mb-8 ${values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelTextAreaStyles} ${values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
-                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-[5%] text-xxs" : "top-[25%] text-base"}`}
+                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-[0%] text-xxs" : "top-[20%] text-base"}`}
                         >
                             {getTranslation("messagePlaceholder")}
                         </p>
@@ -211,20 +213,22 @@ export const CustomerForm = () => {
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <p className="w-full mb-2 text-xs">
-                        {getTranslation("requiredField")}
-                    </p>
-                    <p className="w-full mb-8 text-xs">
-                        {getTranslation("informedAgreement")}{" "}
-                        <a
-                            href="/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-50"
-                        >
-                            {getTranslation("rulesLink")}
-                        </a>
-                    </p>
+                    <div className="w-full">
+                        <p className="max-w-[372px] mb-2 text-xs tab:text-sm">
+                            {getTranslation("requiredField")}
+                        </p>
+                        <p className="max-w-[372px] mb-8 text-xs tab:text-sm">
+                            {getTranslation("informedAgreement")}{" "}
+                            <a
+                                href="/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-purple-50"
+                            >
+                                {getTranslation("rulesLink")}
+                            </a>
+                        </p>
+                    </div>
                     <Button
                         type="submit"
                         disabled={!(dirty && isValid)}
