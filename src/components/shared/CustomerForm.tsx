@@ -8,6 +8,7 @@ const labelStyles =
 const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
+const errorStyles = "";
 
 export const CustomerForm = () => {
     const getTranslation = useTranslations("CustomerForm");
@@ -40,6 +41,7 @@ export const CustomerForm = () => {
                             name="name"
                             type="text"
                             autoComplete="on"
+                            autoFocus={true}
                             placeholder={
                                 status === "name"
                                     ? getTranslation("namePlaceholder")
@@ -49,7 +51,11 @@ export const CustomerForm = () => {
                             onBlur={() => setStatus("")}
                             className={fieldStyles}
                         ></Field>
-                        <ErrorMessage name="name" component="p"></ErrorMessage>
+                        <ErrorMessage
+                            name="name"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
                         className={`${labelStyles} ${values.email || status === "email" ? "border-grey" : "border-purple-stroke"}`}
@@ -178,20 +184,37 @@ export const CustomerForm = () => {
                             component="p"
                         ></ErrorMessage>
                     </label>
-                    <Field
-                        as="textarea"
-                        name="message"
-                        type="text"
-                        autoComplete="on"
-                        placeholder={getTranslation("messagePlaceholder")}
-                        className="block appearance-none w-full h-[96px] mb-8 bg-transparent focus:outline-none border-b-[1px]
-                         border-purple-stroke font-caviar text-baseb placeholder:text-caviar placeholder-purple-stroke"
-                    ></Field>
-                    <ErrorMessage name="message" component="p"></ErrorMessage>
-                    <p className="mb-2 text-xs">
+                    <label
+                        className={`${labelStyles} h-[108px] mb-8 ${values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                    >
+                        <p
+                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-[5%] text-xxs" : "top-[25%] text-base"}`}
+                        >
+                            {getTranslation("messagePlaceholder")}
+                        </p>
+                        <Field
+                            as="textarea"
+                            name="message"
+                            type="text"
+                            autoComplete="on"
+                            placeholder={
+                                status === "message"
+                                    ? getTranslation("messagePlaceholder")
+                                    : ""
+                            }
+                            onFocus={() => setStatus("message")}
+                            onBlur={() => setStatus("")}
+                            className={`${fieldStyles} pt-6`}
+                        ></Field>
+                        <ErrorMessage
+                            name="message"
+                            component="p"
+                        ></ErrorMessage>
+                    </label>
+                    <p className="w-full mb-2 text-xs">
                         {getTranslation("requiredField")}
                     </p>
-                    <p className="mb-8 text-xs">
+                    <p className="w-full mb-8 text-xs">
                         {getTranslation("informedAgreement")}{" "}
                         <a
                             href="/"
