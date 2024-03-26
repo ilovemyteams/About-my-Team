@@ -8,14 +8,11 @@ interface ButtonShareProps {
 export const ButtonShare = ({ className }: ButtonShareProps) => {
     const getTranslation = useTranslations("Buttons");
     return (
-        <button
-            type="button"
-            className={`h-[25px] flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red pc:focus:text-red transition ease-out duration-300 ${className}`}
-        >
+        <div className={` ${className}`}>
             <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
                 {getTranslation("share")}
             </p>
             <IconShare />
-        </button>
+        </div>
     );
 };
