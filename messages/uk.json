@@ -100,15 +100,8 @@
         "pageBigTitle": "Обери свою ідеальну команду",
         "menuTopTitle": "Обрати",
         "listTitle": "учасники",
-        "listItemDes": "Дизайнери",
-        "listItemDev": "Розробники",
-        "listItemQA": "Тестувальники",
-        "listItemBA": "Бізнес-аналітики",
-        "listItemPM": "Проджект-менеджери",
         "hoverButton": "переглянути профіль",
         "teamsList": "команди",
-        "team1": "I Love My Team",
-        "team2": "Ферма"
     },
     "Q&A": {
         "pageTitle": "q&a",
