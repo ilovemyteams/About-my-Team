@@ -1,4 +1,5 @@
 import React from "react";
+import { Providers } from "./providers";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -70,13 +71,15 @@ export default function LocaleLayout({
                     className={`${caviar.variable} ${geist.variable} overflow-x-hidden
                     ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
-                    <BackgroundImages />
-                    <ThemeProvider>
-                        <Header />
-                        <main>{children}</main>
-                        <Footer />
-                        <ScrollToTopButton />
-                    </ThemeProvider>
+                    <Providers>
+                        <BackgroundImages />
+                        <ThemeProvider>
+                            <Header />
+                            <main>{children}</main>
+                            <Footer />
+                            <ScrollToTopButton />
+                        </ThemeProvider>
+                    </Providers>
                 </body>
             </NextIntlClientProvider>
         </html>
