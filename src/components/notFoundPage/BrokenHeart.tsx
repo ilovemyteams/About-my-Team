@@ -3,7 +3,7 @@ import Image from "next/image";
 export const BrokenHeart = () => {
     return (
         <div
-            className="flex justify-end w-[203px] mx-[auto] tab:w-[386px]  pc:w-[675px] animate-pulsationBrokenHeart"
+            className="flex justify-center w-[203px] mx-[auto] tab:w-[386px]  pc:w-[675px] animate-pulsationBrokenHeart"
             style={{ animationDelay: "1s" }}
         >
             <Image
