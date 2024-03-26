@@ -2,28 +2,28 @@ import Image from "next/image";
 
 export const BrokenHeart = () => {
     return (
-        <div
-            className="flex justify-center w-[203px] mx-[auto] tab:w-[386px]  pc:w-[675px] animate-pulsationBrokenHeart"
-            style={{ animationDelay: "1s" }}
-        >
+        <div className="flex justify-center w-[203px] mx-[auto] tab:justify-end tab:w-[386px] pc:w-[675px] animate-pulsationBrokenHeart  animate-delay-1000">
             <Image
                 src="/images/heart404left.svg"
                 width="0"
                 height="0"
                 alt="Broken heart icon"
                 className="w-[67px] h-auto
-                translate-x-[29px] translate-y-[-8.5px] animate-brokenHeart
-               
-                tab:translate-x-[56px] tab:translate-y-[-15.5px]
+                translate-x-[29px] translate-y-[-8.5px] animate-brokenHeart animate-delay-[1400ms]
+
+                tab:translate-x-[55px] tab:translate-y-[-17.6px]
                 tab:w-[128px] 
-                tab:animate-brokenHeartTablet
-                
-                pc:translate-x-[98px] pc:translate-y-[-26px]
-                pc:w-[229px]  
-                pc:animate-brokenHeartPC"
+                tab:animate-brokenHeartTablet1
+                tab:animate-delay-[1400ms]
+
+                pc:translate-x-[98px] pc:translate-y-[-28px]
+                pc:w-[229.17px]  
+                pc:animate-brokenHeartPC
+                pc:animate-delay-[1400ms]
+                "
+                //TODO: fill-mode-forwards from tailwind doesn't have influence, need to find solution
                 style={{
                     animationFillMode: "forwards",
-                    animationDelay: "1.4s",
                 }}
             />
             <Image

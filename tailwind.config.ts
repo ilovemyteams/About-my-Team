@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
     content: [
@@ -244,7 +245,7 @@ const config: Config = {
                 pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
                 brokenHeart: "brokenHeart 3000ms ease-in",
                 brokenHeartTablet: "brokenHeartTablet 3000ms ease-in",
-                brokenHeartPC: "brokenHeartPC 3000ms ease-in",
+                brokenHeartPC: "brokenHeartPC 3000ms ease-in ",
             },
         },
         backgroundImage: {
@@ -259,6 +260,17 @@ const config: Config = {
                 "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(function ({ matchUtilities, theme }) {
+            matchUtilities(
+                {
+                    "animate-delay": value => ({
+                        animationDelay: value,
+                    }),
+                },
+                { values: theme("transitionDelay") }
+            );
+        }),
+    ],
 };
 export default config;
