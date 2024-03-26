@@ -6,13 +6,11 @@ export const TitleQA = () => {
     const getTranslation = useTranslations("Q&A");
     return (
         <TitleWrapper className="flex flex-col">
-            <div className="flex flex-col items-center pc:flex-row">
+            <div className="flex flex-col justify-between items-center pc:flex-row">
                 <SmallPageTitle className="ml-0 mx-auto pr-[10px] flex justify-center ">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
-                <span className="w-[280px] pc:w-auto">
-                    {getTranslation("pageBigTitle")}
-                </span>
+                <span className="w-auto">{getTranslation("pageBigTitle")}</span>
             </div>
         </TitleWrapper>
     );
