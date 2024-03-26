@@ -38,6 +38,7 @@ ul {
 body {
     color: var(--color-grey);
     font-family: var(--font-geist);
+    font-weight: 300;
 }
 
 @layer utilities {
