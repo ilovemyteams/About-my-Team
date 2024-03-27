@@ -3,12 +3,12 @@ import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
+import { Providers } from "./Providers";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import "./globals.css";
-import { Providers } from "./Providers";
 
 const caviar = localFont({
     src: [
