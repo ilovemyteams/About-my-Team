@@ -15,7 +15,7 @@ export const TeamsList = () => {
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] after:absolute after:border-b-[1px] after:border-purple-stroke after:left-[32px] tab:after:left-0 after:w-[169px]">
                 {portfolioData.map((project, idx) => (
                     <ListItem key={idx}>
-                        {project[locale as LocaleType].name}
+                        {project[locale as LocaleType]?.name}
                     </ListItem>
                 ))}
             </ul>
