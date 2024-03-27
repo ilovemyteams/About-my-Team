@@ -3,13 +3,12 @@ import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
-import { ProvidersNextUI } from "./providersNextUI";
-import { ThemeProvider } from "@/src/providers/ThemeProvider";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import "./globals.css";
+import { Providers } from "./Providers";
 
 const caviar = localFont({
     src: [
@@ -71,15 +70,13 @@ export default function LocaleLayout({
                     className={`${caviar.variable} ${geist.variable} overflow-x-hidden
                     ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
-                    <ProvidersNextUI>
-                        <BackgroundImages />
-                        <ThemeProvider>
-                            <Header />
-                            <main>{children}</main>
-                            <Footer />
-                            <ScrollToTopButton />
-                        </ThemeProvider>
-                    </ProvidersNextUI>
+                    <BackgroundImages />
+                    <Providers>
+                        <Header />
+                        <main>{children}</main>
+                        <Footer />
+                        <ScrollToTopButton />
+                    </Providers>
                 </body>
             </NextIntlClientProvider>
         </html>
