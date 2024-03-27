@@ -5,7 +5,7 @@ import { SharePopover } from "../shared/SharePopover";
 
 export const QaSection = () => {
     return (
-        <Section>
+        <Section className="relative">
             <div className="flex">
                 <TitleQA />
                 <SharePopover />
