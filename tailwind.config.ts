@@ -20,6 +20,7 @@ const config: Config = {
             tab: "768px",
             pc: "1280px",
             desk: "1536px",
+            deskxl: "1920px",
         },
         fontSize: {
             xs: [
@@ -73,6 +74,13 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
+                    fontWeight: "300",
+                },
+            ],
+            "2xlb": [
+                "24px",
+                {
+                    lineHeight: "30px",
                     fontWeight: "700",
                 },
             ],
@@ -102,6 +110,14 @@ const config: Config = {
                 "48px",
                 {
                     lineHeight: "48px",
+
+                    fontWeight: "700",
+                },
+            ],
+            "7xl": [
+                "64px",
+                {
+                    lineHeight: "64px",
 
                     fontWeight: "700",
                 },
