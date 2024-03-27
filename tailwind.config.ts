@@ -243,9 +243,9 @@ const config: Config = {
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
                 pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
-                brokenHeart: "brokenHeart 3000ms ease-in",
-                brokenHeartTablet: "brokenHeartTablet 3000ms ease-in",
-                brokenHeartPC: "brokenHeartPC 3000ms ease-in ",
+                brokenHeart: "brokenHeart 3000ms ease-in forwards",
+                brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
+                brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
             },
         },
         backgroundImage: {

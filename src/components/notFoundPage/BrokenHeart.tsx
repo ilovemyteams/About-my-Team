@@ -19,12 +19,7 @@ export const BrokenHeart = () => {
                 pc:translate-x-[98px] pc:translate-y-[-28px]
                 pc:w-[229.17px]  
                 pc:animate-brokenHeartPC
-                pc:animate-delay-[1400ms]
-                "
-                //TODO: fill-mode-forwards from tailwind doesn't have influence, need to find solution
-                style={{
-                    animationFillMode: "forwards",
-                }}
+                pc:animate-delay-[1400ms]"
             />
             <Image
                 src="/images/heart404right.svg"
