@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 import { nextui } from "@nextui-org/react";
 
 const config: Config = {
@@ -22,6 +23,7 @@ const config: Config = {
             tab: "768px",
             pc: "1280px",
             desk: "1536px",
+            deskxl: "1920px",
         },
         fontSize: {
             xs: [
@@ -75,6 +77,13 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
+                    fontWeight: "300",
+                },
+            ],
+            "2xlb": [
+                "24px",
+                {
+                    lineHeight: "30px",
                     fontWeight: "700",
                 },
             ],
@@ -104,6 +113,14 @@ const config: Config = {
                 "48px",
                 {
                     lineHeight: "48px",
+
+                    fontWeight: "700",
+                },
+            ],
+            "7xl": [
+                "64px",
+                {
+                    lineHeight: "64px",
 
                     fontWeight: "700",
                 },
@@ -168,9 +185,86 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+
+                //broken heart for 404 page
+                pulsationHeart: {
+                    "0%": {
+                        transform: "scale(1)",
+                    },
+                    "25%": {
+                        transform: "scale(1.18)",
+                    },
+                    "50%": {
+                        transform: "scale(1)",
+                    },
+                    "75%": {
+                        transform: "scale(1.18)",
+                    },
+                    "100%": {
+                        transform: "scale(1)",
+                    },
+                },
+                brokenHeart: {
+                    "0%": {
+                        transform:
+                            "rotate(0deg) translateX(29) translateY(-7px)",
+                    },
+                    "10%, 30%": {
+                        transform:
+                            "rotate(-3deg) translateX(27px) translateY(-7px) ",
+                    },
+                    "70%, 90%": {
+                        transform:
+                            "rotate(-30deg) translateX(5px) translateY(0px)",
+                    },
+                    "100%": {
+                        transform:
+                            "rotate(-55deg) translateX(-35px) translateY(7px)",
+                    },
+                },
+                brokenHeartTablet: {
+                    "0%": {
+                        transform:
+                            "rotate(0deg) translateX(56) translateY(-17.6px)",
+                    },
+                    "10%, 30%": {
+                        transform:
+                            "rotate(-3deg) translateX(50px) translateY(-17.6px) ",
+                    },
+                    "70%, 90%": {
+                        transform:
+                            "rotate(-30deg) translateX(5px) translateY(0px)",
+                    },
+                    "100%": {
+                        transform:
+                            "rotate(-55deg) translateX(-65px) translateY(15px)",
+                    },
+                },
+                brokenHeartPC: {
+                    "0%": {
+                        transform:
+                            "rotate(0deg) translateX(98) translateY(-26px)",
+                    },
+                    "10%, 30%": {
+                        transform:
+                            "rotate(-3deg) translateX(90px) translateY(-26px) ",
+                    },
+                    "70%, 90%": {
+                        transform:
+                            "rotate(-30deg) translateX(20px) translateY(0px)",
+                    },
+                    "100%": {
+                        transform:
+                            "rotate(-55deg) translateX(-120px) translateY(15px)",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
+                pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
+                brokenHeart: "brokenHeart 3000ms ease-in forwards",
+                brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
+                brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
             },
         },
         backgroundImage: {
@@ -185,6 +279,18 @@ const config: Config = {
                 "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
         },
     },
-    plugins: [nextui()],
+    plugins: [
+        nextui(),
+        plugin(function ({ matchUtilities, theme }) {
+            matchUtilities(
+                {
+                    "animate-delay": value => ({
+                        animationDelay: value,
+                    }),
+                },
+                { values: theme("transitionDelay") }
+            );
+        }),
+    ],
 };
 export default config;

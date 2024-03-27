@@ -1,0 +1,25 @@
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
+import { Button } from "../shared/Button";
+
+export const NotFoundInfo = () => {
+    const getTranslation = useTranslations("NotFound");
+    const locale = useLocale();
+
+    return (
+        <div className="flex flex-col gap-8 items-center mt-8 tab:max-w-[309px] tab:gap-4 pc:max-w-[376px]">
+            <p className="font-caviar font-bold leading-none text-purple-stroke  text-[113px] tab:text-[156px] pc:text-[209px]">
+                404
+            </p>
+            <div className="text-center">
+                <p className="font-caviar  text-white text-2xl mb-4 tab:text-3xl pc:text-4xl">
+                    {getTranslation("title")}
+                </p>
+                <p>{getTranslation("info")}</p>
+            </div>
+            <Link href={`/${locale}`} className="tab:mt-6">
+                <Button>{getTranslation("button")}</Button>
+            </Link>
+        </div>
+    );
+};

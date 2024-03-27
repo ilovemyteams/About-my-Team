@@ -29,7 +29,7 @@ export const LogoLink = ({ setIsHeaderMenuOpened }: LogoLinkProps) => {
                 width="0"
                 height="0"
                 alt="Logo icon"
-                className="absolute top-0 z-[-10] w-full h-auto scale-0 pc:group-hover:scale-[1.41] transition-transform delay-[600ms] ease-in"
+                className="absolute top-0 z-[-10] w-full h-auto scale-0 pc:group-hover:scale-[1.41] group-active:scale-[1.91] pc:group-active:scale-[1.41] pc:transition-transform pc:delay-[600ms] pc:ease-in"
             />
         </Link>
     );
