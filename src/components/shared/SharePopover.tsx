@@ -6,10 +6,12 @@ import {
     PopoverContent,
     Button,
 } from "@nextui-org/react";
-import { ButtonShare } from "./ButtonShare";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { ButtonShare } from "./ButtonShare";
 
 export const SharePopover = () => {
+    const getTranslation = useTranslations("SharePopover");
     const [isOpen, setIsOpen] = useState(false);
     const onClose = () => {
         setIsOpen(false);
@@ -36,10 +38,12 @@ export const SharePopover = () => {
                 </Button>
                 <div className="my-[72px] border-t w-[268px] h-[240px] border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
-                        Поділитись посиланням через:
+                        {getTranslation("shareLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke"></div>
-                    <p className="text-base mt-6 mb-4">Скопіювати посилання:</p>
+                    <p className="text-base mt-6 mb-4">
+                        {getTranslation("copyLink")}
+                    </p>
                     <div className="h-12 border border-purple-stroke "></div>
                 </div>
             </PopoverContent>

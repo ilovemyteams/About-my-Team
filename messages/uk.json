@@ -145,5 +145,9 @@
         "titleSeventhWord": "з нами",
         "privacyPolicy": "ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ",
         "copyright": "2024, I love my team"
+    },
+    "SharePopover": {
+        "shareLink": "Поділитись посиланням через:",
+        "copyLink": "Скопіювати посилання:"
     }
 }
