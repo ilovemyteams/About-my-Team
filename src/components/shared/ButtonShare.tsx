@@ -13,7 +13,7 @@ export const ButtonShare = ({ className }: ButtonShareProps) => {
             className={`h-[25px] flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red pc:focus:text-red 
             pc:transition pc:ease-out pc:duration-300 active:text-red ${className}`}
         >
-            <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
+            <p className="hidden pc:block pc:border-b-[1px] pc:border-current">
                 {getTranslation("share")}
             </p>
             <IconShare />

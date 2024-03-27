@@ -6,9 +6,11 @@ import { ButtonShare } from "../shared/ButtonShare";
 export const QaSection = () => {
     return (
         <Section>
-            <div className="flex">
+            <div className="flex tab:justify-between">
                 <TitleQA />
-                <ButtonShare className="tab:gap-2 ml-auto right-[60px] pc:mt-[27px] mb-[64px] pc:my-[8px]" />
+                <div className="tab:flex tab:justify-center tab:w-[48px] tab:h-[48px]">
+                    <ButtonShare className="tab:gap-2 ml-auto right-[60px] pc:mt-[27px] mb-[64px] pc:my-[8px]" />
+                </div>
             </div>
             <QuestionsList />
         </Section>
