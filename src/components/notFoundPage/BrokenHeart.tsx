@@ -13,7 +13,7 @@ export const BrokenHeart = () => {
 
                 tab:translate-x-[55px] tab:translate-y-[-17.6px]
                 tab:w-[128px] 
-                tab:animate-brokenHeartTablet1
+                tab:animate-brokenHeartTablet
                 tab:animate-delay-[1400ms]
 
                 pc:translate-x-[98px] pc:translate-y-[-28px]

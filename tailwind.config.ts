@@ -206,11 +206,11 @@ const config: Config = {
                 brokenHeartTablet: {
                     "0%": {
                         transform:
-                            "rotate(0deg) translateX(56) translateY(-15px)",
+                            "rotate(0deg) translateX(56) translateY(-17.6px)",
                     },
                     "10%, 30%": {
                         transform:
-                            "rotate(-3deg) translateX(50px) translateY(-15px) ",
+                            "rotate(-3deg) translateX(50px) translateY(-17.6px) ",
                     },
                     "70%, 90%": {
                         transform:
