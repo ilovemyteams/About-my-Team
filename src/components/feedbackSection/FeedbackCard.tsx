@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ButtonShare } from "../shared/ButtonShare";
 
 export interface FeedbackCardItemProps {
     data: {
@@ -97,9 +96,6 @@ export const FeedbackCard = ({
                             {siteLink}
                         </a>
                     </div>
-                </div>
-                <div className="hidden tab:flex tab:min-w-[320px] tab:justify-end tab:max-w-[50%] mt-10">
-                    <ButtonShare className=" " />
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import { ButtonShare } from "../shared/ButtonShare";
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
+import { SharePopover } from "../shared/SharePopover";
 import { Copyright } from "./Copyright";
 import { MenuFooter } from "./MenuFooter";
 import { PrivacyPolicy } from "./PrivacyPolicy";
@@ -15,7 +15,7 @@ export const Footer = () => {
                     <div className="flex flex-col justify-between items-center pc:flex-row pc:gap-[92px] pc:items-baseline">
                         <BuyMeCoffeeLink />
                         <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
-                            <ButtonShare />
+                            <SharePopover />
                         </div>
                     </div>
                 </div>

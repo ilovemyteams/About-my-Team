@@ -8,10 +8,10 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ButtonShare } from "./ButtonShare";
+import { IconShare } from "./Icons/IconShare";
 
 export const SharePopover = () => {
-    const getTranslation = useTranslations("SharePopover");
+    const getTranslation = useTranslations();
     const [isOpen, setIsOpen] = useState(false);
     const onClose = () => {
         setIsOpen(false);
@@ -20,7 +20,10 @@ export const SharePopover = () => {
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
                 <Button className="absolute -top-3 right-4 bg-transparent h-12 min-w-12 px-0 flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red pc:focus:text-red  pc:transition pc:ease-out pc:duration-300 active:text-red">
-                    <ButtonShare />
+                    <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
+                        {getTranslation("Buttons.share")}
+                    </p>
+                    <IconShare />
                 </Button>
             </PopoverTrigger>
             <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 bg-purple-400 border border-purple-stroke">
@@ -38,11 +41,11 @@ export const SharePopover = () => {
                 </Button>
                 <div className="my-[72px] border-t w-[268px] h-[240px] border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
-                        {getTranslation("shareLink")}
+                        {getTranslation("SharePopover.shareLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke"></div>
                     <p className="text-base mt-6 mb-4">
-                        {getTranslation("copyLink")}
+                        {getTranslation("SharePopover.copyLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke "></div>
                 </div>
