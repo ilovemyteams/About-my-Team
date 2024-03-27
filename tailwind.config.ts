@@ -20,6 +20,7 @@ const config: Config = {
             tab: "768px",
             pc: "1280px",
             desk: "1536px",
+            deskxl: "1920px",
         },
         fontSize: {
             xs: [
