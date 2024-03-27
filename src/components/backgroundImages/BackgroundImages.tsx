@@ -4,7 +4,7 @@ import { BackgroundCirclesTablet } from "./BackgroundCirclesTablet";
 
 export const BackgroundImages = () => {
     return (
-        <div className="fixed z-[-10]]">
+        <div className="fixed z-[-10]">
             <BackgroundCircles />
             <BackgroundCirclesTablet />
             <BackgroundCirclesMobile />
