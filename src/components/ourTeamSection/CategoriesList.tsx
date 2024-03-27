@@ -6,7 +6,6 @@ import { LocaleType } from "@/types/LocaleType";
 export const CategoriesList = () => {
     const getTranslation = useTranslations("OurTeam");
     const locale = useLocale();
-    type Locale = LocaleType;
 
     return (
         <div className="pt-[12px]">
@@ -16,7 +15,7 @@ export const CategoriesList = () => {
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px]">
                 {categoryNames.map((categoryName, idx) => (
                     <ListItem key={idx}>
-                        {categoryName[locale as Locale]}
+                        {categoryName[locale as LocaleType]}
                     </ListItem>
                 ))}
             </ul>
