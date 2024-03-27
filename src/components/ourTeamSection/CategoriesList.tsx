@@ -1,9 +1,12 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { ListItem } from "./ListItem";
 import { categoryNames } from "./data/categoryNames";
+import { LocaleType } from "@/types/LocaleType";
 
 export const CategoriesList = () => {
     const getTranslation = useTranslations("OurTeam");
+    const locale = useLocale();
+    type Locale = LocaleType;
 
     return (
         <div className="pt-[12px]">
@@ -11,9 +14,9 @@ export const CategoriesList = () => {
                 {getTranslation("listTitle").toUpperCase()}
             </span>
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px]">
-                {categoryNames.map(({ ua }, idx) => (
+                {categoryNames.map((categoryName, idx) => (
                     <ListItem key={idx}>
-                        {ua.charAt(0).toUpperCase() + ua.slice(1)}
+                        {categoryName[locale as Locale]}
                     </ListItem>
                 ))}
             </ul>

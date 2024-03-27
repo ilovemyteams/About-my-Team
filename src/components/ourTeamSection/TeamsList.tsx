@@ -1,9 +1,12 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { ListItem } from "./ListItem";
 import { portfolioData } from "../portfolioSection/portfolioData";
+import { LocaleType } from "@/types/LocaleType";
 
 export const TeamsList = () => {
     const getTranslation = useTranslations("OurTeam");
+    const locale = useLocale();
+    type Locale = LocaleType;
 
     return (
         <>
@@ -11,10 +14,9 @@ export const TeamsList = () => {
                 {getTranslation("teamsList").toUpperCase()}
             </span>
             <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] after:absolute after:border-b-[1px] after:border-purple-stroke after:left-[32px] tab:after:left-0 after:w-[169px]">
-                {portfolioData.map((item, idx) => (
+                {portfolioData.map((project, idx) => (
                     <ListItem key={idx}>
-                        {item.uk.name.charAt(0).toUpperCase() +
-                            item.uk.name.slice(1)}
+                        {project[locale as Locale].name}
                     </ListItem>
                 ))}
             </ul>

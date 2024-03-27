@@ -1,24 +1,39 @@
 type СategoryNamesProp = {
     name: string;
-    ua: string;
+    uk: string;
     pl: string;
     en: string;
 };
 
 export const categoryNames: СategoryNamesProp[] = [
     {
-        name: "developers",
-        ua: "розробники",
-        pl: "developers",
-        en: "developers",
+        name: "Developers",
+        uk: "Розробники",
+        pl: "Developers",
+        en: "Developers",
     },
-    { name: "designers", ua: "дизайнери", pl: "designers", en: "designers" },
-    { name: "qas", ua: "тестувальники", pl: "qa", en: "qa" },
     {
-        name: "business-analytics",
-        ua: "бізнес-аналітики",
-        pl: "designers",
-        en: "designers",
+        name: "Designers",
+        uk: "Дизайнери",
+        pl: "Designers",
+        en: "Designers",
     },
-    { name: "managers", ua: "менеджери", pl: "designers", en: "designers" },
+    {
+        name: "Qas",
+        uk: "тестувальники",
+        pl: "QA",
+        en: "QA",
+    },
+    {
+        name: "Business-analytics",
+        uk: "Бізнес-аналітики",
+        pl: "Business-analytics",
+        en: "Business-analytics",
+    },
+    {
+        name: "Managers",
+        uk: "Менеджери",
+        pl: "Managers",
+        en: "Managers",
+    },
 ];

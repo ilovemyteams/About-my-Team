@@ -17,7 +17,7 @@ export type DataType = {
     imageURL?: string;
     position: string;
     categoryName: string;
-    pricePerHour: string;
+    pricePerHour?: string;
     projectsExperience: string[];
     socialLinks: SocialLinks;
     tools: string[];
@@ -25,7 +25,7 @@ export type DataType = {
 
 export type MemberDataItemType = {
     data: DataType;
-    ua: MemberDataItemTranslation;
+    uk: MemberDataItemTranslation;
     en: MemberDataItemTranslation;
     pl: MemberDataItemTranslation;
 };
@@ -46,7 +46,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: ["jira", "atlassian"],
         },
-        ua: {
+        uk: {
             name: "Сусанна Салата",
             about: "Орієнтований на результат",
             services:
