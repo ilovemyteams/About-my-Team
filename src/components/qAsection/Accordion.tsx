@@ -27,7 +27,8 @@ export function Accordion({ item }: AccordionProps) {
                     </div>
                     <div
                         className="relative cursor-pointer text-red flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within"
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
                     >
                         <IconUp
                             className={`w-[40px] h-[40px] duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
