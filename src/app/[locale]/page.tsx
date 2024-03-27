@@ -23,9 +23,9 @@ export default function Home() {
             <FeedbackSection />
             <WriteUsSection />
             <ServicesSection />
+            <OurTeamSection />
             <JoinTheTeamSection />
             <StagesSection />
-            <OurTeamSection />
             <QaSection />
             <HireUsSection />
             {/* <HomeTest /> */}

@@ -21,6 +21,7 @@ const config: Config = {
             tab: "768px",
             pc: "1280px",
             desk: "1536px",
+            deskxl: "1920px",
         },
         fontSize: {
             xs: [
@@ -74,6 +75,13 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
+                    fontWeight: "300",
+                },
+            ],
+            "2xlb": [
+                "24px",
+                {
+                    lineHeight: "30px",
                     fontWeight: "700",
                 },
             ],
@@ -107,6 +115,14 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "7xl": [
+                "64px",
+                {
+                    lineHeight: "64px",
+
+                    fontWeight: "700",
+                },
+            ],
         },
         extend: {
             variants: {
@@ -117,7 +133,8 @@ const config: Config = {
                 portfolioHeroCard: "calc(100vw - 32px)",
             },
             height: {
-                "80": "calc(100dvh - 80px)",
+                "70": "calc(100dvh - 80px)",
+                "80": "calc(100vh - 80px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

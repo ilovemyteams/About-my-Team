@@ -7,9 +7,9 @@ export const HeroFooterLinks = () => {
 
     return (
         <div
-            className="flex justify-end mx-[auto] mt-[-20px] max-w-[540px] 
-        tab:mt-8
-        tab:mx-0 tab:max-w-[none] tab:justify-between tab:items-baseline pc:mt-2"
+            className="flex justify-center mx-[auto] mt-6 max-w-[540px] 
+                       tab:mt-8
+                       tab:mx-0 tab:max-w-[none] tab:justify-between tab:items-baseline pc:mt-2"
         >
             <BuyMeCoffeeLink
                 className="hidden tab:flex"
@@ -18,7 +18,8 @@ export const HeroFooterLinks = () => {
             <Link
                 href="#portfolio"
                 className="relative pointer font-caviar text-lg border-b-[1px] border-grey 
-                transition-color ease-out duration-300 pc:hover:text-red pc:hover:border-red"
+                pc:transition-color pc:ease-out pc:duration-300 pc:hover:text-red pc:hover:border-red
+                active:text-red"
             >
                 {getTranslation("portfolioLink")}
             </Link>

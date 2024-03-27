@@ -8,7 +8,7 @@ export const porfolioData = [
     },
     {
         id: 2,
-        img: "/images/picture.png",
+        img: "",
         uk: { name: "I love my team", type: "інтернет-магазин 2" },
         en: { name: "I love my team", type: "e-shop" },
         pl: { name: "I love my team", type: "e-shop-pl" },
