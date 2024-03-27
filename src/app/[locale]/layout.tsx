@@ -30,11 +30,6 @@ const caviar = localFont({
 const geist = localFont({
     src: [
         {
-            path: "../../fonts/Geist/Geist-Regular.woff2",
-            weight: "400",
-            style: "normal",
-        },
-        {
             path: "../../fonts/Geist/Geist-Light.woff2",
             weight: "300",
             style: "normal",

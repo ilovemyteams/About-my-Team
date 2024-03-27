@@ -38,6 +38,7 @@ ul {
 body {
     color: var(--color-grey);
     font-family: var(--font-geist);
+    font-weight: 300;
 }
 
 @layer utilities {
@@ -47,7 +48,8 @@ body {
 }
 @layer components {
     .icon-hover-rounded-purple {
-        @apply pc:after:content-[''] pc:after:absolute pc:after:w-[0px] pc:after:h-[0px] pc:after:rounded-full pc:after:bg-purple-stroke03 pc:after:scale-0 pc:after:origin-center pc:after:ease-in-out pc:after:duration-[600ms] pc:after:blur-[2px];
+        @apply after:content-[''] after:absolute after:w-[0px] after:h-[0px] after:rounded-full after:bg-purple-stroke03 after:scale-0
+         after:origin-center pc:after:transition-transform pc:after:ease-in-out pc:after:duration-[600ms] after:blur-[2px];
     }
 
     .icon-hover-rounded-purple:hover {
@@ -55,11 +57,14 @@ body {
     }
 
     .icon-hover-rounded-purple:focus-visible {
-        @apply pc:after:scale-100 pc:after:blur-[2px] pc:after:h-full pc:after:w-full pc:outline-none;
+        @apply pc:after:scale-100 pc:after:blur-[2px] pc:after:h-full pc:after:w-full outline-none;
     }
 
     .icon-hover-rounded-purple:focus-within {
         @apply pc:outline-none;
+    }
+    .icon-hover-rounded-purple:active {
+        @apply after:scale-100 after:blur-[2px] after:h-full after:w-full;
     }
     .slider-dot {
         @apply appearance-none bg-transparent inline-flex cursor-pointer border border-red p-0 m-0 w-2 h-2 rounded-full;
