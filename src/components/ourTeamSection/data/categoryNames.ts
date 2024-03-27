@@ -7,31 +7,31 @@ type СategoryNamesProp = {
 
 export const categoryNames: СategoryNamesProp[] = [
     {
-        categoryName: "Developer",
+        categoryName: "developer",
         uk: "Розробники",
         pl: "Developers",
         en: "Developers",
     },
     {
-        categoryName: "Designer",
+        categoryName: "designer",
         uk: "Дизайнери",
         pl: "Designers",
         en: "Designers",
     },
     {
-        categoryName: "Qa",
+        categoryName: "qa",
         uk: "Тестувальники",
         pl: "QA",
         en: "QA",
     },
     {
-        categoryName: "Business-analytic",
+        categoryName: "business-analytic",
         uk: "Бізнес-аналітики",
         pl: "Business-analytics",
         en: "Business-analytics",
     },
     {
-        categoryName: "Manager",
+        categoryName: "manager",
         uk: "Менеджери",
         pl: "Managers",
         en: "Managers",
