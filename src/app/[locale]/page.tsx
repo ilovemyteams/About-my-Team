@@ -14,7 +14,7 @@ import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundF
 
 export default function Home() {
     return (
-        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px]">
+        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
             <BackgroundFigures />
             <HeroSection />
             <MissionSection />
