@@ -15,7 +15,7 @@ export const BenefitsItem = ({ children }: BenefitsItemProps) => {
                 alt="Check icon"
                 className="w-6 h-auto"
             />
-            <p className="text-base pc:text-xl">{children}</p>
+            <p className="text-base pc:text-xl desk:text-2xl">{children}</p>
         </li>
     );
 };

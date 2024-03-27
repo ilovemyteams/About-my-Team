@@ -11,7 +11,7 @@ export const HireUsSection = () => {
                 {getTranslation("HireUs.title")}
             </TitleCTAWrapper>
             <div className="flex flex-col gap-y-8 tab:flex-row pc:gap-0 justify-between items-center mt-6 pc:mt-[100px]">
-                <div className="text-base">
+                <div className="text-base desk:text-2xl">
                     <p className="mb-4">
                         {getTranslation("HireUs.workingHours")}
                     </p>
