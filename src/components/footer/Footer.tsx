@@ -7,7 +7,7 @@ import { TitleFooter } from "./TitleFooter/TitleFooter";
 
 export const Footer = () => {
     return (
-        <footer className="relative tab:hidden w-auto mx-[16px] pc:ml-[80px] pc:px-[60px] pc:mb-[40px] pc:block ">
+        <footer className="relative pb-5 tab:hidden w-auto mx-[16px] pc:ml-[80px] pc:px-[60px] pc:pb-[40px] pc:block ">
             <div className="border-y-[1px] border-solid border-purple-stroke">
                 <TitleFooter />
                 <div className="mb-[16px] flex pc:items-baseline pb-0 pc:mb-[28px] justify-between">
@@ -20,7 +20,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center pb-0 my-[20px] pc:mt-[18.5px] pc:flex-row-reverse pc:justify-between">
+            <div className="flex flex-col justify-center items-center pb-0 mt-[20px] pc:mt-[18.5px] pc:flex-row-reverse pc:justify-between">
                 <PrivacyPolicy />
                 <Copyright />
             </div>
