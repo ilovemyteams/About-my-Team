@@ -35,9 +35,9 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             initialStatus="name"
         >
             {({ values, status, setStatus, dirty, isValid }) => (
-                <Form className="flex flex-col items-center mt-[16px]">
+                <Form className="flex flex-col items-center pt-[16px] border-t-[1px] border-purple-stroke">
                     <label
-                        className={`${labelStyles} ${values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles}  ${values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
