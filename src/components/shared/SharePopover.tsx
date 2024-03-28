@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { IconShare } from "./Icons/IconShare";
 
-export const SharePopover = () => {
+export const SharePopover = ({ className }: { className: string }) => {
     const getTranslation = useTranslations();
     const [isOpen, setIsOpen] = useState(false);
     const onClose = () => {
@@ -19,7 +19,11 @@ export const SharePopover = () => {
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
-                <Button className="absolute -top-3 right-4 bg-transparent h-12 min-w-12 px-0 flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red pc:focus:text-red  pc:transition pc:ease-out pc:duration-300 active:text-red">
+                <Button
+                    data-focus={false}
+                    data-hover={false}
+                    className={className}
+                >
                     <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
                         {getTranslation("Buttons.share")}
                     </p>
