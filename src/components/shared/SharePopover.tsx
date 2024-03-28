@@ -32,7 +32,7 @@ export const SharePopover = ({ className }: { className: string }) => {
                 <Button
                     type="button"
                     onClick={onClose}
-                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent"
+                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active"
                 >
                     <Image
                         src="/images/closeX.svg"
