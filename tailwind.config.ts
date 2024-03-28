@@ -134,6 +134,7 @@ const config: Config = {
             height: {
                 "70": "calc(100dvh - 80px)",
                 "80": "calc(100vh - 80px)",
+                "120": "calc(100vh - 120px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

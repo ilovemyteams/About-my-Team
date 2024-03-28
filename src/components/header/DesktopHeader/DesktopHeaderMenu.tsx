@@ -8,7 +8,7 @@ import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
 
-const openedStyles = "w-80";
+const openedStyles = "w-80 deskxl:w-120";
 const closedStyles = "w-0";
 
 export const DesktopHeaderMenu = ({
