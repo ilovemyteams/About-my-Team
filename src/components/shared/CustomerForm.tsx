@@ -3,6 +3,10 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
 import { Button } from "./Button";
 
+interface CustomerFormProps {
+    onClose?: () => void;
+}
+
 const labelStyles =
     "relative w-full h-[32px] my-3 border-b-[1px] text-base tansition-color duration-300 ease-out";
 const labelTextAreaStyles =
@@ -12,7 +16,7 @@ const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
 const errorStyles = "";
 
-export const CustomerForm = () => {
+export const CustomerForm = ({ onClose }: CustomerFormProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const initialValues = {
@@ -231,7 +235,8 @@ export const CustomerForm = () => {
                     </div>
                     <Button
                         type="submit"
-                        disabled={!(dirty && isValid)}
+                        disabled={dirty && isValid}
+                        onClick={onClose}
                         color="grey"
                     >
                         {getTranslation("submitButton")}
