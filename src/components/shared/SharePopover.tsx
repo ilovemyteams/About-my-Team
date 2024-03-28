@@ -20,9 +20,7 @@ export const SharePopover = ({ className }: { className: string }) => {
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
                 <Button
-                    data-focus={false}
-                    data-hover={false}
-                    className={className}
+                    className={`bg-transparent h-12 min-w-12 px-0 flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red  pc:transition pc:ease-out pc:duration-300 active:text-red ${className}`}
                 >
                     <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
                         {getTranslation("Buttons.share")}
