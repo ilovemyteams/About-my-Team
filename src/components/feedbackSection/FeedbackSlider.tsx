@@ -36,7 +36,7 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     } = usePrevNextButtons(emblaApi);
 
     return (
-        <div className=" embla relative">
+        <div className=" embla relative tab:hidden">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
                     {feedbacks.map(feedback => (

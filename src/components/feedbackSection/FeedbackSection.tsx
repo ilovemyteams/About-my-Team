@@ -4,6 +4,7 @@ import { FeedbackTitle } from "./Title/FeedbackTitle";
 import { feedbackData } from "./feedbackData";
 import { FeedbackSlider } from "./FeedbackSlider";
 import { SharePopover } from "../shared/SharePopover";
+import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
 
 export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
@@ -11,6 +12,7 @@ export const FeedbackSection = () => {
         <Section id="feedback" className="relative">
             <FeedbackTitle />
             <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
+            <FeedbackSliderFromTab feedbacks={feedbackData} options={OPTIONS} />
             <SharePopover className="absolute -top-3 right-4" />
         </Section>
     );
