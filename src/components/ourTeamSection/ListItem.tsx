@@ -4,8 +4,12 @@ interface ListItemProps {
 
 export const ListItem = ({ children }: ListItemProps) => {
     return (
-        <li className="w-64 py-0.5 px-0 mb-3 text-base leading-6 tracking-normal text-left">
-            <p className="text-xl font-normal font-caviar">{children}</p>
-        </li>
+        <div className="p-[6px]">
+            <li className=" h-[20px] tab:h-[32px] tab:w-64 tab:py-0.5 px-0 leading-6 tracking-normal text-left">
+                <p className=" text-baseb tab:font-bold  text-grey font-caviar">
+                    {children}
+                </p>
+            </li>
+        </div>
     );
 };
