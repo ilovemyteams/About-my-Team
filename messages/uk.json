@@ -143,6 +143,10 @@
         "info": "Ми не змогли знайти сторінку, яку Ви шукаєте. Можливо, сталася помилка",
         "button": "на головну"
     },
+    "SharePopover": {
+        "shareLink": "Поділитись посиланням через:",
+        "copyLink": "Скопіювати посилання:"
+    },
     "CustomerForm": {
         "namePlaceholder": "Ваше ім'я*",
         "emailPlaceholder": "E-mail*",
