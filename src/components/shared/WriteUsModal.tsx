@@ -21,7 +21,8 @@ export const WriteUsModal = () => {
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement="center"
-                scrollBehavior="inside"
+                size="3xl"
+                classNames={{ body: "px-[60px] py-[72px] bg-purple-400" }}
             >
                 <ModalContent>
                     <ModalBody>
