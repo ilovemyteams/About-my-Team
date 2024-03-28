@@ -129,12 +129,12 @@ const config: Config = {
             },
             width: {
                 "80": "calc(100vw - 80px)",
+                "120": "calc(100vw - 120px)",
                 portfolioHeroCard: "calc(100vw - 32px)",
             },
             height: {
                 "70": "calc(100dvh - 80px)",
                 "80": "calc(100vh - 80px)",
-                "120": "calc(100vh - 120px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
