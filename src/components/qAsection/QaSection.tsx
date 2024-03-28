@@ -1,16 +1,14 @@
 import { Section } from "../shared/Section";
 import { TitleQA } from "./TitleQA";
 import { QuestionsList } from "./QuestionsList";
-import { ButtonShare } from "../shared/ButtonShare";
+import { SharePopover } from "../shared/SharePopover";
 
 export const QaSection = () => {
     return (
-        <Section>
-            <div className="flex tab:justify-between">
+        <Section className="relative">
+            <div className="flex">
                 <TitleQA />
-                <div className="tab:flex tab:justify-center tab:w-[48px] tab:h-[48px]">
-                    <ButtonShare className="tab:gap-2 ml-auto right-[60px] pc:mt-[27px] mb-[64px] pc:my-[8px]" />
-                </div>
+                <SharePopover className="absolute -top-3 right-4" />
             </div>
             <QuestionsList />
         </Section>

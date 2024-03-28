@@ -3,7 +3,7 @@ import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
-import { ThemeProvider } from "@/src/providers/ThemeProvider";
+import { Providers } from "./Providers";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { Footer } from "@/src/components/footer/Footer";
@@ -67,16 +67,16 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
-                    className={`${caviar.variable} ${geist.variable} overflow-x-hidden
+                    className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                     ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-grey"}`}
                 >
-                    <BackgroundImages />
-                    <ThemeProvider>
+                    <Providers>
+                        <BackgroundImages />
                         <Header />
                         <main>{children}</main>
                         <Footer />
                         <ScrollToTopButton />
-                    </ThemeProvider>
+                    </Providers>
                 </body>
             </NextIntlClientProvider>
         </html>
