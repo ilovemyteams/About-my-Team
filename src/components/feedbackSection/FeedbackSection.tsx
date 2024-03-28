@@ -11,7 +11,7 @@ export const FeedbackSection = () => {
         <Section id="feedback" className="relative">
             <FeedbackTitle />
             <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
-            <SharePopover className="absolute -top-3 right-4" />
+            <SharePopover className="absolute -top-3 right-4 tab:static tab:items-end tab:mt-4 tab:ml-auto pc:mt-5" />
         </Section>
     );
 };
