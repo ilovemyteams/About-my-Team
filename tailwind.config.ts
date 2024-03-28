@@ -75,7 +75,6 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
-                    fontWeight: "300",
                 },
             ],
             "2xlb": [
