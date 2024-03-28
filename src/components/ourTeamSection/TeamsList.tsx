@@ -1,16 +1,22 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { ListItem } from "./ListItem";
-import { SmallPageTitle } from "../shared/SmallPageTitle";
+import { portfolioData } from "../portfolioSection/portfolioData";
+import { LocaleType } from "@/types/LocaleType";
 
 export const TeamsList = () => {
     const getTranslation = useTranslations("OurTeam");
-    const teamList = [getTranslation("team1"), getTranslation("team2")];
+    const locale = useLocale();
+
     return (
         <>
-            <SmallPageTitle>{getTranslation("teamsList")}</SmallPageTitle>
-            <ul className="mt-5">
-                {teamList.map((team, idx) => (
-                    <ListItem key={idx}>{team}</ListItem>
+            <span className="font-geist text-sm text-purple-50">
+                {getTranslation("teamsList").toUpperCase()}
+            </span>
+            <ul className="[&>*:first-child]:mt-[12px] [&>*:last-child]:mb-[12px] after:absolute after:border-b-[1px] after:border-purple-stroke after:left-[32px] tab:after:left-0 after:w-[169px]">
+                {portfolioData.map((project, idx) => (
+                    <ListItem key={idx}>
+                        {project[locale as LocaleType]?.name}
+                    </ListItem>
                 ))}
             </ul>
         </>

@@ -1,14 +1,17 @@
 import { Section } from "../shared/Section";
 import { Title } from "./Title";
-import { CategoriesList } from "./CategoriesList";
-import { TeamsList } from "./TeamsList";
+import { MenuTeamSection } from "./MenuTeamSection";
 
 export const OurTeamSection = () => {
     return (
         <Section id="team">
             <Title />
-            <CategoriesList />
-            <TeamsList />
+            <div className="flex flex-col tab:flex-row tab:justify-between pc:h-[584px]">
+                <MenuTeamSection />
+                <div className="border-[1px] border-purple-stroke">
+                    Members cards
+                </div>
+            </div>
         </Section>
     );
 };

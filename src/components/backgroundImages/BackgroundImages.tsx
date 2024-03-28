@@ -1,7 +1,6 @@
 import { BackgroundCircles } from "./BackgroundCircles";
 import { BackgroundCirclesMobile } from "./BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "./BackgroundCirclesTablet";
-import { BackgroundFigures } from "./BackgroundFigures";
 
 export const BackgroundImages = () => {
     return (
@@ -9,7 +8,6 @@ export const BackgroundImages = () => {
             <BackgroundCircles />
             <BackgroundCirclesTablet />
             <BackgroundCirclesMobile />
-            <BackgroundFigures />
         </div>
     );
 };

@@ -11,11 +11,13 @@ import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 import { CustomerForm } from "@/src/components/shared/CustomerForm";
+import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 
 export default function Home() {
     return (
-        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px]">
+        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
             <CustomerForm />
+            <BackgroundFigures />
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
