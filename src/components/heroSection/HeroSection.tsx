@@ -19,9 +19,8 @@ export const HeroSection = () => {
                 height="0"
                 alt="I love my team"
                 loading="eager"
-                className="h-[88px] pc:mt-[20px] w-[810px] tab:h-[145px] pc:h-[162px]
-                tab:mb-5 pc:mb-0
-                "
+                className="w-[288px] tab:w-[720px] pc:w-[810px]  deskxl:w-[1000px] h-auto  
+                          tab:mb-5 pc:mt-[20px] pc:mb-0"
             />
             <div className="relative flex flex-col items-center pc:items-baseline tab:justify-between tab:flex-row">
                 <HeroInfo />

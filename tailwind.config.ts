@@ -83,7 +83,6 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
-                    fontWeight: "300",
                 },
             ],
             "2xlb": [
@@ -138,6 +137,7 @@ const config: Config = {
             },
             width: {
                 "80": "calc(100vw - 80px)",
+                "120": "calc(100vw - 120px)",
                 portfolioHeroCard: "calc(100vw - 32px)",
             },
             height: {

@@ -10,7 +10,13 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { IconShare } from "./Icons/IconShare";
 
-export const SharePopover = ({ className }: { className: string }) => {
+export const SharePopover = ({
+    className,
+    trigerShowShareText,
+}: {
+    className: string;
+    trigerShowShareText: boolean;
+}) => {
     const getTranslation = useTranslations();
     const [isOpen, setIsOpen] = useState(false);
     const onClose = () => {
@@ -22,13 +28,25 @@ export const SharePopover = ({ className }: { className: string }) => {
                 <button
                     className={`bg-transparent h-12 min-w-12 justify-center items-center focus:outline-none px-0 flex gap-2 text-grey font-caviar tab:text-lg pc:hover:text-red  pc:transition pc:ease-out pc:duration-300 active:text-red ${className}`}
                 >
-                    <p className="hidden tab:block tab:border-b-[1px] tab:border-current">
+                    <p
+                        className={
+                            trigerShowShareText
+                                ? `hidden pc:block tab:border-b-[1px] tab:border-current`
+                                : `hidden tab:block tab:border-b-[1px] tab:border-current`
+                        }
+                    >
                         {getTranslation("Buttons.share")}
                     </p>
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 bg-purple-400 border border-purple-stroke">
+            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 border-purple-stroke">
+                <Image
+                    src="/images/bgImages/shareMob.svg"
+                    fill
+                    alt="background image"
+                    className="object-cover absolute inset-0 w-[300px] h-[384px] z-[-10] "
+                />
                 <Button
                     type="button"
                     onClick={onClose}
@@ -41,12 +59,12 @@ export const SharePopover = ({ className }: { className: string }) => {
                         height={24}
                     />
                 </Button>
-                <div className="my-[72px] border-t w-[268px] h-[240px] border-purple-stroke ">
+                <div className="flex flex-col border-t w-[268px]  border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.shareLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke"></div>
-                    <p className="text-base mt-6 mb-4">
+                    <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke "></div>
