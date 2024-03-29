@@ -26,6 +26,12 @@ const config: Config = {
             deskxl: "1920px",
         },
         fontSize: {
+            xxs: [
+                "10px",
+                {
+                    lineHeight: "15px",
+                },
+            ],
             xs: [
                 "12px",
                 {
@@ -162,6 +168,7 @@ const config: Config = {
                 black: "#000000",
                 grey: "#D4D4D4",
                 red: "#FB7185",
+                backdrop: "#030303",
             },
             fill: {
                 stroke: "#5F3F87",
