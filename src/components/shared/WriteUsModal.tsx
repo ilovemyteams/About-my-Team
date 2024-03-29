@@ -19,7 +19,7 @@ export const WriteUsModal = () => {
                 placement="center"
                 shouldBlockScroll={false}
                 hideCloseButton={true}
-                className="min-w-[320px] tab:min-w-[660px] pc:min-w-[750px] h-[792px] tab:h-[789px] pc:h-[813px]
+                className="w-[320px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:h-[789px] pc:h-[813px]
                 px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
                 bg-purple-400"
             >
@@ -29,7 +29,21 @@ export const WriteUsModal = () => {
                         alt="background"
                         width="0"
                         height="0"
-                        className="fixed top-0 left-0 z-[-10] w-full h-auto object-cover"
+                        className="tab:hidden absolute top-0 left-0 z-[-10] w-[320px] h-auto object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktop.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        className="hidden pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
                     />
                     <button
                         type="button"
