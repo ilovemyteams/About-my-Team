@@ -26,6 +26,7 @@ export const WriteUsModal = ({ className }: WriteUsModalProps) => {
                 className="w-[320px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:h-[789px] pc:h-[813px]
                 px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
                 bg-purple-400"
+                classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
             >
                 <ModalContent className="h-full m-0">
                     <Image

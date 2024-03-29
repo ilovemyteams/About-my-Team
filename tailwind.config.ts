@@ -168,6 +168,7 @@ const config: Config = {
                 black: "#000000",
                 grey: "#D4D4D4",
                 red: "#FB7185",
+                backdrop: "#030303",
             },
             fill: {
                 stroke: "#5F3F87",
