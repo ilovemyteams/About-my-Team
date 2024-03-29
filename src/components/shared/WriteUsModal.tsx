@@ -6,12 +6,16 @@ import Image from "next/image";
 import { Button } from "./Button";
 import { CustomerForm } from "./CustomerForm";
 
-export const WriteUsModal = () => {
+interface WriteUsModalProps {
+    className?: string;
+}
+
+export const WriteUsModal = ({ className }: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
 
     return (
-        <>
+        <div className={className}>
             <Button onClick={onOpen}>{getTranslation("order")}</Button>
             <Modal
                 isOpen={isOpen}
@@ -62,6 +66,6 @@ export const WriteUsModal = () => {
                     <CustomerForm onClose={onClose} />
                 </ModalContent>
             </Modal>
-        </>
+        </div>
     );
 };
