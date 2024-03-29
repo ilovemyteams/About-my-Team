@@ -15,7 +15,10 @@ export const Footer = () => {
                     <div className="flex flex-col justify-between items-center pc:flex-row pc:gap-[92px] pc:items-baseline">
                         <BuyMeCoffeeLink />
                         <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
-                            <SharePopover className="absolute -top-3 right-4" />
+                            <SharePopover
+                                className="absolute -top-3 right-4"
+                                trigerShowShareText={true}
+                            />
                         </div>
                     </div>
                 </div>
