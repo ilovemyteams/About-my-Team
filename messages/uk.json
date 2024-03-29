@@ -146,5 +146,18 @@
     "SharePopover": {
         "shareLink": "Поділитись посиланням через:",
         "copyLink": "Скопіювати посилання:"
+    },
+    "CustomerForm": {
+        "namePlaceholder": "Ваше ім'я*",
+        "emailPlaceholder": "E-mail*",
+        "telegramPlaceholder": "Telegram/нік",
+        "linkedinPlaceholder": "Linkedin",
+        "instagramPlaceholder": "Instagram",
+        "facebookPlaceholder": "Facebook",
+        "messagePlaceholder": "Ваше повідомлення*",
+        "requiredField": "*Поля, обов'язкові для заповнення",
+        "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
+        "rulesLink": "Правилами обробки персональних даних",
+        "submitButton": "Надіслати"
     }
 }
