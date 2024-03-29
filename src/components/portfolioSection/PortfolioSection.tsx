@@ -13,7 +13,10 @@ export const PortfolioSection = () => {
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 <PortfolioCarousel projects={portfolioData} options={OPTIONS} />
             </div>
-            <SharePopover className="absolute -top-3 right-4" />
+            <SharePopover
+                className="absolute -top-3 right-4 tab:static tab:items-end tab:ml-auto tab:mt-4 pc:mt-5"
+                trigerShowShareText={false}
+            />
         </Section>
     );
 };
