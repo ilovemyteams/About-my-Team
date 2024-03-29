@@ -40,7 +40,14 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 bg-purple-400 border border-purple-stroke">
+            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 bg-transparent border-purple-stroke">
+                <Image
+                    src="/images/bgImages/shareMob.svg"
+                    width="0"
+                    height="0"
+                    alt="background image"
+                    className="absolute inset-0 w-[300px] h-[384px] z-[-10] "
+                />
                 <Button
                     type="button"
                     onClick={onClose}
@@ -53,12 +60,12 @@ export const SharePopover = ({
                         height={24}
                     />
                 </Button>
-                <div className="my-[72px] border-t w-[268px] h-[240px] border-purple-stroke ">
+                <div className="flex flex-col border-t w-[268px]  border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.shareLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke"></div>
-                    <p className="text-base mt-6 mb-4">
+                    <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
                     <div className="h-12 border border-purple-stroke "></div>
