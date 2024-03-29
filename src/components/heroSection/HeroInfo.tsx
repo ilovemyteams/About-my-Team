@@ -7,8 +7,8 @@ export const HeroInfo = () => {
     return (
         <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
             <p
-                className="text-xl max-w-[450px] pc:mb-[154px] pc:static
-                           tab:absolute tab:left-0 tab:top-0"
+                className="text-xl pc:mb-[154px] pc:static
+                           tab:absolute tab:left-0 tab:top-0 deskxl:text-2xl deskxl:mb-[173px]"
             >
                 {getTranslation("Hero.heroInfoText")}
             </p>
