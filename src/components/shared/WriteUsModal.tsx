@@ -24,6 +24,13 @@ export const WriteUsModal = () => {
                 bg-purple-400"
             >
                 <ModalContent className="h-full m-0">
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        className="fixed top-0 left-0 z-[-10] w-full h-auto object-cover"
+                    />
                     <button
                         type="button"
                         onClick={onClose}
