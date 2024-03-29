@@ -40,13 +40,12 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 bg-transparent border-purple-stroke">
+            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 border-purple-stroke">
                 <Image
                     src="/images/bgImages/shareMob.svg"
-                    width="0"
-                    height="0"
+                    fill
                     alt="background image"
-                    className="absolute inset-0 w-[300px] h-[384px] z-[-10] "
+                    className="object-cover absolute inset-0 w-[300px] h-[384px] z-[-10] "
                 />
                 <Button
                     type="button"
