@@ -16,7 +16,7 @@ export const MenuFooter = () => {
 
     const locale = useLocale();
     return (
-        <ul className="tab:flex flex-start gap-[24px] font-geist text-base">
+        <ul className="tab:flex flex-start gap-[24px] font-geist text-base deskxl:text-lg">
             {menuList.map(({ name, id }, idx) => (
                 <li
                     key={idx}
@@ -25,7 +25,7 @@ export const MenuFooter = () => {
                     <div className="py-[10px] pc:py-0">
                         <Link
                             href={`/${locale}#${id}`}
-                            className="text-base font-normal font-geist hover:text-red focus:text-red transition ease-out duration-300"
+                            className="text-base deskxl:text-lg font-normal font-geist hover:text-red focus:text-red transition ease-out duration-300"
                         >
                             {name}
                         </Link>

@@ -6,18 +6,18 @@ export const DesktopTitleFooter = () => {
         <div className="hidden pc:block">
             <p>
                 {getTranslation("titleFirstWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}
                 </span>
                 {getTranslation("titleThirdWord")}
             </p>
             <p className="pc:ml-[180px]">
                 {getTranslation("titleFourthWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleFifthWord")}
                 </span>
                 {getTranslation("titleSixthWord")}
-                <span className="pc:text-purple-100">
+                <span className="text-purple-100">
                     {getTranslation("titleSeventhWord")}
                 </span>
             </p>

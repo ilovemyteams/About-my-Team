@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export const MobileTitleFooter = () => {
     const getTranslation = useTranslations("Footer");
     return (
-        <div className="mt-[20px] pc:hidden">
+        <div className="tab:hidden">
             <p>
                 {getTranslation("titleFirstWord")}
                 <span className="text-purple-100">
