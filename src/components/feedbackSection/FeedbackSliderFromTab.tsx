@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
-
+import { motion } from "framer-motion";
 import { FeedbackDataItemType } from "./feedbackData";
 import {
     NextButton,
@@ -13,7 +14,6 @@ import {
 import { LocaleType } from "@/types/LocaleType";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
-import Image from "next/image";
 import { FeedbackCardTextFromTab } from "./FeedbackCardTextFromTab";
 
 type FeedbackSliderProps = {
@@ -38,7 +38,10 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
 
     return (
         <div className=" embla relative">
-            <div className=" overflow-hidden" ref={emblaRef}>
+            <div
+                className=" overflow-hidden tab:min-w-[320px] tab:max-w-[44.44%] ml-auto tab:mb-[176px]"
+                ref={emblaRef}
+            >
                 <div className=" flex">
                     {feedbacks.map(({ data, en }) => (
                         <div
@@ -54,7 +57,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                                 alt={en.siteName}
                                 width={540}
                                 height={346}
-                                className=" object-cover min-w-[220px] h-[220px] tab:min-w-[320px] tab:h-[302px] pc:w-[540px] pc:h-[346px]"
+                                className=" object-cover tab:min-w-[320px] tab:h-[302px] pc:w-[540px] pc:h-[346px]"
                             />
                         </div>
                     ))}
@@ -78,12 +81,32 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                     </div>
                 </div>
             </div>
-            {feedbacks.map(feedback => (
-                <div key={feedback.data.id}>
-                    <FeedbackCardTextFromTab
-                        data={feedback.data}
-                        localizationData={feedback[locale as Locale]}
-                    />
+            {feedbacks.map((feedback, index) => (
+                <div
+                    key={feedback.data.id}
+                    className={`${index === selectedIndex ? "block absolute top-0 left-0 overflow-hidden" : "hidden"}`}
+                >
+                    <motion.div
+                        initial={{
+                            opacity: 1,
+                            y: -500,
+                        }}
+                        animate={{
+                            opacity: index === selectedIndex ? 1 : 0,
+                            y: index === selectedIndex ? 0 : -500,
+                        }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 160,
+                            damping: 100,
+                        }}
+                        className="w-full"
+                    >
+                        <FeedbackCardTextFromTab
+                            data={feedback.data}
+                            localizationData={feedback[locale as Locale]}
+                        />
+                    </motion.div>
                 </div>
             ))}
         </div>
