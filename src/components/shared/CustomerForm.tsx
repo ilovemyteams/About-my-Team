@@ -1,6 +1,7 @@
 "use client";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
+import { writeUsFormValidationSchema } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "./Button";
 
 interface CustomerFormProps {
@@ -33,6 +34,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             initialValues={initialValues}
             onSubmit={values => console.log(values)}
             initialStatus="name"
+            validationSchema={writeUsFormValidationSchema}
         >
             {({ values, status, setStatus, dirty, isValid }) => (
                 <Form className="flex flex-col items-center pt-[16px] border-t-[1px] border-purple-stroke">
