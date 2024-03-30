@@ -166,6 +166,11 @@
         "nameAllowedSymbols": "В імені допустимі лише літери та знаки - (дефіс) і '(апостроф) або “”(лапки)",
         "wrongEmail": "Невірний формат E-mail",
         "russianEmails": "Ми не працюємо з москалями",
-        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів"
+        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "russianEmails": "Ми не працюємо з москалями",
+        "wrongLinkedin": "Неправильна адреса linkedin",
+        "wrongInstagram": "Неправильна адреса instagram",
+        "wrongFacebook": "Неправильна адреса facebook",
+        "wrongTelegram": "Неправильна адреса telegram"
     }
 }
