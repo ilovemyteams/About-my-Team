@@ -57,7 +57,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("name")}
-                            onBlur={() => console.log(errors)}
+                            onBlur={() => setStatus("")}
                             className={`${fieldStyles} ${errors.name ? "text-error" : "text-grey"}`}
                         ></Field>
                         <p className={errorStyles}>{errors.name}</p>
