@@ -1,6 +1,9 @@
 import * as yup from "yup";
 import { useTranslations } from "next-intl";
 
+const nameRegex =
+    /^(?![!~№;%:?*()_+=0987654321₴@#$&/\\.,]+$)[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ’'\-\s]|[ҐґЄєІіЇї]+$/;
+
 const emailRegex =
     /^([a-zA-Z0-9]+){1}([a-zA-Z0-9?'"`#$%&*+-_./|^{}~]+){1}@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,3})$/;
 
@@ -23,6 +26,7 @@ export const WriteUsValidation = () => {
             .string()
             .min(2, getTranslation("nameMinMaxSymbols"))
             .max(30, getTranslation("nameMinMaxSymbols"))
+            .matches(nameRegex, getTranslation("nameAllowedSymbols"))
             .required(getTranslation("required")),
         email: yup
             .string()
