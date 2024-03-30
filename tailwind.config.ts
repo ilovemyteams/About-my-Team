@@ -169,6 +169,7 @@ const config: Config = {
                 grey: "#D4D4D4",
                 red: "#FB7185",
                 backdrop: "#030303",
+                error: "#D60000",
             },
             fill: {
                 stroke: "#5F3F87",
