@@ -37,11 +37,12 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             onSubmit={values => console.log(values)}
             initialStatus="name"
             validationSchema={validationSchema}
+            validateOnBlur={false}
         >
             {({ values, status, setStatus, dirty, isValid, errors }) => (
                 <Form className="flex flex-col items-center pt-[16px] border-t-[1px] border-purple-stroke">
                     <label
-                        className={`${labelStyles}  ${values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles}  ${values.name || status === "name" ? "border-grey" : "border-purple-stroke"} ${errors.name && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -64,7 +65,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.name}</p>
                     </label>
                     <label
-                        className={`${labelStyles} ${values.email || status === "email" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${values.email || status === "email" ? "border-grey" : "border-purple-stroke"} ${errors.email && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -87,7 +88,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.email}</p>
                     </label>
                     <label
-                        className={`${labelStyles} ${values.telegram || status === "telegram" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${values.telegram || status === "telegram" ? "border-grey" : "border-purple-stroke"} ${errors.telegram && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -110,7 +111,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.telegram}</p>
                     </label>
                     <label
-                        className={`${labelStyles} ${values.linkedin || status === "linkedin" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${values.linkedin || status === "linkedin" ? "border-grey" : "border-purple-stroke"} ${errors.linkedin && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -133,7 +134,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.linkedin}</p>
                     </label>
                     <label
-                        className={`${labelStyles} ${values.instagram || status === "instagram" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${values.instagram || status === "instagram" ? "border-grey" : "border-purple-stroke"} ${errors.instagram && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -156,7 +157,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.instagram}</p>
                     </label>
                     <label
-                        className={`${labelStyles} ${values.facebook || status === "facebook" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${values.facebook || status === "facebook" ? "border-grey" : "border-purple-stroke"} ${errors.facebook && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
@@ -179,7 +180,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p className={errorStyles}>{errors.facebook}</p>
                     </label>
                     <label
-                        className={`${labelTextAreaStyles} ${values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelTextAreaStyles} ${values.message || status === "message" ? "border-grey" : "border-purple-stroke"} ${errors.message && "border-error"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.message || status === "message" ? "top-[0%] text-xxs" : "top-[20%] text-base"}`}
