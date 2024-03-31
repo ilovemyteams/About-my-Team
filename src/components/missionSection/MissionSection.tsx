@@ -1,18 +1,17 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
+import { WriteUsModal } from "../shared/WriteUsModal";
 
 export const MissionSection = () => {
-    const getTranslation = useTranslations("Buttons");
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
+
     return (
         <Section id="mission" className="tab:min-h-[505px]">
             <div ref={ref}>
@@ -27,7 +26,7 @@ export const MissionSection = () => {
                     />
                     <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
-                        <Button>{getTranslation("order")}</Button>
+                        <WriteUsModal />
                     </div>
                 </div>
                 <StagesList />

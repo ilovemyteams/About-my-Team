@@ -18,6 +18,12 @@ export const Footer = () => {
                     <MenuFooter />
                     <div className="flex items-end pc:flex-row ">
                         <BuyMeCoffeeLink />
+                        <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
+                            <SharePopover
+                                className="absolute -top-3 right-4"
+                                trigerShowShareText={true}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
