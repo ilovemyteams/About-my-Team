@@ -159,5 +159,17 @@
         "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
         "rulesLink": "Правилами обробки персональних даних",
         "submitButton": "Надіслати"
+    },
+    "Errors": {
+        "required": "Дане поле обов’язкове до заповнення",
+        "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
+        "nameAllowedSymbols": "В імені допустимі лише літери та знаки - (дефіс) і '(апостроф) або “”(лапки)",
+        "wrongEmail": "Невірний формат E-mail",
+        "russianEmails": "Ми не працюємо з москалями",
+        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "wrongLinkedin": "Неправильна адреса linkedin",
+        "wrongInstagram": "Неправильна адреса instagram",
+        "wrongFacebook": "Неправильна адреса facebook",
+        "wrongTelegram": "Неправильна адреса telegram"
     }
 }
