@@ -14,7 +14,7 @@ export const FeedbackSection = () => {
             <div className="tab:hidden">
                 <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
             </div>
-            <div className="hidden tab:block ">
+            <div className="hidden tab:block tab:pb-[75px] pc:pb-[78px]">
                 <FeedbackSliderFromTab
                     feedbacks={feedbackData}
                     options={OPTIONS}
