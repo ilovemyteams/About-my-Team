@@ -11,8 +11,8 @@ export const FeedbackCardTextFromTab = ({
 
     const siteTypeUp = siteView?.toUpperCase();
     return (
-        <div className="flex flex-col tab:min-h-[377px] border border-purple-stroke tab:border-0">
-            <div className="tab:h-[302px]  px-2 tab:min-w-[360px] tab:max-w-[50%] pc:min-w-[450px] ">
+        <div className="flex flex-col tab:min-h-[377px] border border-purple-stroke tab:border-0 tab:min-w-[360px] tab:max-w-[50%] pc:min-w-[450px] pc:max-w-[41.66%]">
+            <div className="tab:h-[302px]  px-2  ">
                 <Image
                     src="/images/quote_opt.svg"
                     alt="Quote"

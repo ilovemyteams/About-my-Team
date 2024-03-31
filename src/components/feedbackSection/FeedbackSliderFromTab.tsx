@@ -39,7 +39,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
     return (
         <div className=" embla relative">
             <div
-                className=" overflow-hidden tab:min-w-[320px] tab:max-w-[44.44%] ml-auto tab:mb-[176px]"
+                className=" overflow-hidden tab:min-w-[320px] tab:max-w-[44.44%] ml-auto tab:mb-[176px] pc:min-w-[540px] pc:max-w-[50%]"
                 ref={emblaRef}
             >
                 <div className=" flex">
@@ -97,8 +97,8 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                         }}
                         transition={{
                             type: "spring",
-                            stiffness: 160,
-                            damping: 100,
+                            stiffness: 200,
+                            damping: 50,
                         }}
                         className="w-full"
                     >
