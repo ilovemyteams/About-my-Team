@@ -1,12 +1,11 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "../../shared/Button";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "../HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
+import { WriteUsModal } from "../../shared/WriteUsModal";
 
 const openedStyles = "w-80 deskxl:w-120";
 const closedStyles = "w-0";
@@ -15,8 +14,6 @@ export const DesktopHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
-    const getTranslation = useTranslations("Buttons");
-
     return (
         <div
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
@@ -30,13 +27,11 @@ export const DesktopHeaderMenu = ({
                         <ThemeSwitcher />
                     </div>
                     <div className="flex justify-between w-full overflow-hidden relative z-20">
-                        <div className="flex flex-col justify-center min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
+                        <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
                             <HeaderMenuList
                                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                             />
-                            <Button className="mt-[64px]">
-                                {getTranslation("order")}
-                            </Button>
+                            <WriteUsModal />
                         </div>
                         <div className="flex justify-center items-center min-w-[618px] w-[57%] h-auto overflow-hidden">
                             <Image
