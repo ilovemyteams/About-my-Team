@@ -1,8 +1,7 @@
 import * as yup from "yup";
 import { useTranslations } from "next-intl";
 
-const nameRegex =
-    /^(?![!~№;%:?*()_+=0987654321₴@#$&/\\.,]*$)[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ’'`\-\sҐґЄєІіЇї]+$/;
+const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'\-"`\\s]+$/;
 
 const emailRegex =
     /^([a-zA-Z0-9]+){1}([a-zA-Z0-9?'"`#$%&*+-_./|^{}~]+){1}@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,3})$/;

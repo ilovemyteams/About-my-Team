@@ -37,7 +37,6 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             onSubmit={values => console.log(values)}
             initialStatus="name"
             validationSchema={validationSchema}
-            validateOnBlur={false}
         >
             {({ values, status, setStatus, dirty, isValid, errors }) => (
                 <Form className="flex flex-col items-center pt-[16px] border-t-[1px] border-purple-stroke">
