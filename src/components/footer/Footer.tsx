@@ -13,17 +13,16 @@ export const Footer = () => {
         >
             <div className="border-y-[1px] border-solid border-purple-stroke desk:mx-auto">
                 <TitleFooter />
-                <SharePopover className="absolute top-[90px] tab:top-[76px] tab:right-[30px] pc:flex pc:top-[100px] right-[16px] pc:right-[60px] deskxl:top-[141px]" />
+                <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
+                    <SharePopover
+                        className="absolute top-[90px] tab:top-[76px] tab:right-[30px] pc:flex pc:top-[100px] right-[16px] pc:right-[60px] deskxl:top-[141px]"
+                        trigerShowShareText={true}
+                    />
+                </div>
                 <div className="mb-[16px] flex tab:items-end tab:h-[48px] tab:mb-[24px] pc:mb-[28px] justify-between">
                     <MenuFooter />
                     <div className="flex items-end pc:flex-row ">
                         <BuyMeCoffeeLink />
-                        <div className="flex w-[48px] h-[48px] justify-center pc:w-auto">
-                            <SharePopover
-                                className="absolute -top-3 right-4"
-                                trigerShowShareText={true}
-                            />
-                        </div>
                     </div>
                 </div>
             </div>
