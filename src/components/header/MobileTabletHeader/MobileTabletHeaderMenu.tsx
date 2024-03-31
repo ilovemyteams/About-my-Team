@@ -1,11 +1,10 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "@/src/components/shared/Button";
 import { HeaderMenuList } from "../HeaderMenuList";
 import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
 import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
+import { WriteUsModal } from "../../shared/WriteUsModal";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCirclesMobile } from "@/src/components/backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
@@ -17,8 +16,6 @@ export const MobileTabletHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
-    const getTranslation = useTranslations("Buttons");
-
     return (
         <div
             className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
@@ -37,9 +34,7 @@ export const MobileTabletHeaderMenu = ({
                         <HeaderMenuList
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
-                        <Button className="hidden tab:block">
-                            {getTranslation("order")}
-                        </Button>
+                        <WriteUsModal className="hidden tab:block" />
                     </div>
                     <Image
                         src="/images/heartHeaderMenu.svg"
@@ -50,9 +45,7 @@ export const MobileTabletHeaderMenu = ({
                     />
                 </div>
 
-                <Button className="tab:hidden">
-                    {getTranslation("order")}
-                </Button>
+                <WriteUsModal className="tab:hidden" />
                 <div className="flex justify-between w-full mt-[20px] tab:mt-0">
                     <BuyMeCoffeeLink />
                     <SocialLinksList />

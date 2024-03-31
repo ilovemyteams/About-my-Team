@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Button } from "../shared/Button";
+import { WriteUsModal } from "../shared/WriteUsModal";
+import { JoinUsButton } from "../shared/JoinUsButton";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations();
@@ -13,8 +14,8 @@ export const HeroInfo = () => {
                 {getTranslation("Hero.heroInfoText")}
             </p>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                <Button>{getTranslation("Buttons.order")}</Button>
-                <Button color="grey">{getTranslation("Buttons.joinUs")}</Button>
+                <WriteUsModal />
+                <JoinUsButton />
             </div>
         </div>
     );
