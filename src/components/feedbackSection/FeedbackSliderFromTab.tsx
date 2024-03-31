@@ -57,7 +57,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                                 alt={en.siteName}
                                 width={540}
                                 height={346}
-                                className=" object-cover tab:min-w-[320px] tab:h-[302px] pc:w-[540px] pc:h-[346px]"
+                                className="object-cover tab:h-[302px] w-full pc:h-[346px]"
                             />
                         </div>
                     ))}
@@ -84,7 +84,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
             {feedbacks.map((feedback, index) => (
                 <div
                     key={feedback.data.id}
-                    className={`${index === selectedIndex ? "block absolute top-0 left-0 overflow-hidden" : "hidden"}`}
+                    className={`${index === selectedIndex ? "block absolute top-0 left-0 overflow-hidden tab:min-w-[360px] tab:max-w-[50%] pc:min-w-[450px] pc:max-w-[41.7%]" : "hidden"}`}
                 >
                     <motion.div
                         initial={{
