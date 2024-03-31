@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <footer
             className="relative container pb-5 tab:pb-[40px] pc:m-0 pc:max-w-full pc:pl-[140px] max-w-[540px] tab:max-w-full
-         desk:max-w-[1456px] desk:pl-[60px] desk:mx-auto desk:left-[40px] deskxl:left-[60px]"
+         desk:max-w-[1456px] desk:mx-auto desk:left-[40px] desk:pl-[60px] deskxl:left-[60px]"
         >
             <div className="border-y-[1px] border-solid border-purple-stroke desk:mx-auto">
                 <TitleFooter />
