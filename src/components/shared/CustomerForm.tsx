@@ -15,7 +15,8 @@ const labelTextAreaStyles =
 const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
-const errorStyles = "absolute bottom-[-20px] right-0 text-xxs text-error";
+const errorStyles =
+    "absolute bottom-[-20px] right-0 text-xxs text-error text-right";
 
 export const CustomerForm = ({ onClose }: CustomerFormProps) => {
     const getTranslation = useTranslations("CustomerForm");
