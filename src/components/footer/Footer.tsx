@@ -7,8 +7,11 @@ import { TitleFooter } from "./TitleFooter/TitleFooter";
 
 export const Footer = () => {
     return (
-        <footer className="relative container pb-5 tab:pb-[40px] pc:m-0 pc:left-[80px] max-w-[540px] tab:max-w-full pc:max-w-[1200px] desk:max-w-[1456px] deskxl:mx-auto">
-            <div className="border-y-[1px] border-solid border-purple-stroke">
+        <footer
+            className="relative container pb-5 tab:pb-[40px] pc:m-0 pc:max-w-full pc:pl-[140px] max-w-[540px] tab:max-w-full
+         desk:max-w-[1456px] desk:pl-[60px] desk:mx-auto desk:left-[40px] deskxl:left-[60px]"
+        >
+            <div className="border-y-[1px] border-solid border-purple-stroke desk:mx-auto">
                 <TitleFooter />
                 <SharePopover className="absolute top-[90px] tab:hidden pc:flex pc:top-[100px] right-[16px] pc:right-[60px] deskxl:top-[141px]" />
                 <div className="mb-[16px] flex tab:items-end tab:h-[48px] tab:mb-[24px] pc:mb-[28px] justify-between">
