@@ -89,11 +89,11 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                     <motion.div
                         initial={{
                             opacity: 1,
-                            y: -500,
+                            y: 500,
                         }}
                         animate={{
                             opacity: index === selectedIndex ? 1 : 0,
-                            y: index === selectedIndex ? 0 : -500,
+                            y: index === selectedIndex ? 0 : 500,
                         }}
                         transition={{
                             type: "spring",
