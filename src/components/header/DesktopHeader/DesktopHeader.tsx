@@ -5,6 +5,7 @@ import { BurgerMenuButton } from "../BurgerMenuButton";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
+import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
@@ -21,6 +22,7 @@ export const DesktopHeader = () => {
         <div className={`hidden pc:block absolute top-0 left-0 h-[100vh]`}>
             <div className="absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden bg-grey dark:bg-purple-400">
                 <BackgroundCircles />
+                <BackgroundCirclesBigScreens />
                 <div
                     className="flex flex-col items-center justify-between z-20 w-[80px] deskxl:w-[120px] h-[100vh] 
                 py-8 border-solid border-r-[1px] border-purple-stroke"

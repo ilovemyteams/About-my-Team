@@ -1,4 +1,5 @@
 import { BackgroundCircles } from "./BackgroundCircles";
+import { BackgroundCirclesBigScreens } from "./BackgroundCircles1536BigScreens";
 import { BackgroundCirclesMobile } from "./BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "./BackgroundCirclesTablet";
 
@@ -8,6 +9,7 @@ export const BackgroundImages = () => {
             <BackgroundCircles />
             <BackgroundCirclesTablet />
             <BackgroundCirclesMobile />
+            <BackgroundCirclesBigScreens />
         </div>
     );
 };
