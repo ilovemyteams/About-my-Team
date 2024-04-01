@@ -13,6 +13,7 @@ export const FeedbackSection = () => {
             <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
             <SharePopover
                 className="absolute -top-3 right-4 tab:right-6 tab:top-[414px] tab:items-end pc:right-[60px] pc:top-[526px]"
+                id="feedback"
                 trigerShowShareText={false}
             />
         </Section>
