@@ -9,9 +9,9 @@ interface CustomerFormProps {
 }
 
 const labelStyles =
-    "relative w-full h-[32px] my-3 border-b-[1px] text-base tansition-color duration-300 ease-out";
+    "relative w-full h-[32px] my-3 border-b-[1px] text-base transition-color duration-300 ease-out";
 const labelTextAreaStyles =
-    "relative w-full h-[108px] my-8 border-b-[1px] text-base tansition-color duration-300 ease-out";
+    "relative w-full h-[108px] my-8 border-b-[1px] text-base transition-color duration-300 ease-out";
 const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
@@ -46,7 +46,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("namePlaceholder")}
+                            {getTranslation("nameLabel")}
                         </p>
                         <Field
                             name="name"
@@ -69,7 +69,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("emailPlaceholder")}
+                            {getTranslation("emailLabel")}
                         </p>
                         <Field
                             name="email"
@@ -92,7 +92,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("telegramPlaceholder")}
+                            {getTranslation("telegramLabel")}
                         </p>
                         <Field
                             name="telegram"
@@ -115,7 +115,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("linkedinPlaceholder")}
+                            {getTranslation("linkedinLabel")}
                         </p>
                         <Field
                             name="linkedin"
@@ -138,7 +138,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("instagramPlaceholder")}
+                            {getTranslation("instagramLabel")}
                         </p>
                         <Field
                             name="instagram"
@@ -161,7 +161,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("facebookPlaceholder")}
+                            {getTranslation("facebookLabel")}
                         </p>
                         <Field
                             name="facebook"
@@ -184,7 +184,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                         <p
                             className={`${textLabelStyles} ${values.message || status === "message" ? "top-[0%] text-xxs" : "top-[20%] text-base"}`}
                         >
-                            {getTranslation("messagePlaceholder")}
+                            {getTranslation("messageLabel")}
                         </p>
                         <Field
                             as="textarea"
