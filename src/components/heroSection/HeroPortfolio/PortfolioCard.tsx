@@ -23,6 +23,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
                     className="min-w-[288px] aspect-[288/236] tab:min-w-[360px] pc:w-[540px]
                     tab:aspect-[360/300] pc:aspect-[540/350]  
                     deskxl:w-[668px] deskxl:aspect-[668/428]  deskxl:max-w-[668px] 
+                    object-cover
                     "
                 />
             ) : (
