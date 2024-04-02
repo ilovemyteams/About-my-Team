@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { SectionCTA } from "../shared/SectionCTA";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
-import { WriteUsModal } from "../shared/WriteUsModal";
+import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
 
 export const HireUsSection = () => {
     const getTranslation = useTranslations("HireUs");

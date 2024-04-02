@@ -4,7 +4,7 @@ import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
 import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
-import { WriteUsModal } from "../../shared/WriteUsModal";
+import { WriteUsModal } from "../../shared/WriteUs/WriteUsModal";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCirclesMobile } from "@/src/components/backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";

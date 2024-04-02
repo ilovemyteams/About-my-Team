@@ -1,8 +1,9 @@
 "use client";
+import { useState } from "react";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { appendToSheet } from "@/src/api/appendToSheetData";
 
 interface CustomerFormProps {
@@ -30,6 +31,8 @@ const errorStyles =
     "absolute bottom-[-20px] right-0 text-xxs text-error text-right";
 
 export const CustomerForm = ({ onClose }: CustomerFormProps) => {
+    const [isLoading, setIsLoading] = useState(false);
+
     const getTranslation = useTranslations("CustomerForm");
     const validationSchema = WriteUsValidation();
 
@@ -43,17 +46,25 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
         message: "",
     };
 
-    const submitForm = (values: ValuesWriteUsFormType) => {
-        const newRow = {
-            name: values.name,
-            email: values.email,
-            telegram: values.telegram,
-            linkedin: values.linkedin,
-            instagram: values.instagram,
-            facebook: values.facebook,
-            message: values.message,
-        };
-        appendToSheet(newRow);
+    const submitForm = async (values: ValuesWriteUsFormType) => {
+        try {
+            setIsLoading(true);
+            const newRow = {
+                name: values.name.trim(),
+                email: values.email.toLowerCase().trim(),
+                telegram: values.telegram.trim(),
+                linkedin: values.linkedin.trim(),
+                instagram: values.instagram.trim(),
+                facebook: values.facebook.trim(),
+                message: values.message.trim(),
+            };
+            await appendToSheet(newRow);
+            onClose?.();
+        } catch (error) {
+            return error;
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -284,8 +295,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                     </div>
                     <Button
                         type="submit"
-                        disabled={!(dirty && isValid)}
-                        onClick={onClose}
+                        disabled={!(dirty && isValid) || isLoading}
                         color="grey"
                     >
                         {getTranslation("submitButton")}

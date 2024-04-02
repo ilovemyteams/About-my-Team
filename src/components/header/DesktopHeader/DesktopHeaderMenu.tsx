@@ -5,7 +5,7 @@ import { HeaderMenuList } from "../HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
-import { WriteUsModal } from "../../shared/WriteUsModal";
+import { WriteUsModal } from "../../shared/WriteUs/WriteUsModal";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
 
 const openedStyles = "w-80 deskxl:w-120";

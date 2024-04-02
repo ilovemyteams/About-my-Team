@@ -5,7 +5,7 @@ import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
-import { WriteUsModal } from "../shared/WriteUsModal";
+import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({

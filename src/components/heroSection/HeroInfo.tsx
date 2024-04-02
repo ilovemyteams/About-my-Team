@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { WriteUsModal } from "../shared/WriteUsModal";
+import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
 import { JoinUsButton } from "../shared/JoinUsButton";
 
 export const HeroInfo = () => {

@@ -1,7 +1,7 @@
 import { Table } from "../shared/Table/Table";
 import { TableItemsList } from "../shared/Table/TableItemsList";
 import { useTranslations } from "next-intl";
-import { WriteUsModal } from "../shared/WriteUsModal";
+import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
 
 export const ServicesTable = () => {
     const getTranslation = useTranslations();

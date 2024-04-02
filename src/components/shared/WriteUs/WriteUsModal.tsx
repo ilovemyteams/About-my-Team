@@ -3,7 +3,7 @@
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 
 interface WriteUsModalProps {
