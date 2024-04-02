@@ -1,5 +1,5 @@
 "use client";
-import { Field, Form, Formik } from "formik";
+import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "./Button";
@@ -9,9 +9,9 @@ interface CustomerFormProps {
 }
 
 const labelStyles =
-    "relative w-full h-[32px] my-3 border-b-[1px] text-base tansition-color duration-300 ease-out";
+    "relative w-full h-[32px] my-3 border-b-[1px] text-base transition-color duration-300 ease-out";
 const labelTextAreaStyles =
-    "relative w-full h-[108px] my-8 border-b-[1px] text-base tansition-color duration-300 ease-out";
+    "relative w-full h-[108px] my-8 border-b-[1px] text-base transition-color duration-300 ease-out";
 const textLabelStyles = "absolute tansition-transform duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke";
@@ -38,15 +38,24 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             initialStatus="name"
             validationSchema={validationSchema}
         >
-            {({ values, status, setStatus, dirty, isValid, errors }) => (
+            {({
+                values,
+                status,
+                setStatus,
+                dirty,
+                isValid,
+                errors,
+                touched,
+                handleBlur,
+            }) => (
                 <Form className="flex flex-col items-center pt-[16px] border-t-[1px] border-purple-stroke">
                     <label
-                        className={`${labelStyles}  ${errors.name ? "border-error" : values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles}  ${touched.name && errors.name ? "border-error" : values.name || status === "name" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.name || status === "name" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("namePlaceholder")}
+                            {getTranslation("nameLabel")}
                         </p>
                         <Field
                             name="name"
@@ -58,18 +67,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("name")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.name ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.name && errors.name ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.name}</p>
+                        <ErrorMessage
+                            name="name"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} ${errors.email ? "border-error" : values.email || status === "email" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${touched.email && errors.email ? "border-error" : values.email || status === "email" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.email || status === "email" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("emailPlaceholder")}
+                            {getTranslation("emailLabel")}
                         </p>
                         <Field
                             name="email"
@@ -81,18 +94,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("email")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.email ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.email && errors.email ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.email}</p>
+                        <ErrorMessage
+                            name="email"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} ${errors.telegram ? "border-error" : values.telegram || status === "telegram" ? "border-grey" : "border-purple-stroke"} `}
+                        className={`${labelStyles} ${touched.telegram && errors.telegram ? "border-error" : values.telegram || status === "telegram" ? "border-grey" : "border-purple-stroke"} `}
                     >
                         <p
                             className={`${textLabelStyles} ${values.telegram || status === "telegram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("telegramPlaceholder")}
+                            {getTranslation("telegramLabel")}
                         </p>
                         <Field
                             name="telegram"
@@ -104,18 +121,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("telegram")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.telegram ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.telegram && errors.telegram ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.telegram}</p>
+                        <ErrorMessage
+                            name="telegram"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} ${errors.linkedin ? "border-error" : values.linkedin || status === "linkedin" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${touched.linkedin && errors.linkedin ? "border-error" : values.linkedin || status === "linkedin" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.linkedin || status === "linkedin" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("linkedinPlaceholder")}
+                            {getTranslation("linkedinLabel")}
                         </p>
                         <Field
                             name="linkedin"
@@ -127,18 +148,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("linkedin")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.linkedin ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.linkedin && errors.linkedin ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.linkedin}</p>
+                        <ErrorMessage
+                            name="linkedin"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} ${errors.instagram ? "border-error" : values.instagram || status === "instagram" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${touched.instagram && errors.instagram ? "border-error" : values.instagram || status === "instagram" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.instagram || status === "instagram" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("instagramPlaceholder")}
+                            {getTranslation("instagramLabel")}
                         </p>
                         <Field
                             name="instagram"
@@ -150,18 +175,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("instagram")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.instagram ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.instagram && errors.instagram ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.instagram}</p>
+                        <ErrorMessage
+                            name="instagram"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelStyles} ${errors.facebook ? "border-error" : values.facebook || status === "facebook" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelStyles} ${touched.facebook && errors.facebook ? "border-error" : values.facebook || status === "facebook" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.facebook || status === "facebook" ? "top-[-55%] text-xxs" : "top-[10%] text-base"}`}
                         >
-                            {getTranslation("facebookPlaceholder")}
+                            {getTranslation("facebookLabel")}
                         </p>
                         <Field
                             name="facebook"
@@ -173,18 +202,22 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("facebook")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} ${errors.facebook ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} ${touched.facebook && errors.facebook ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.facebook}</p>
+                        <ErrorMessage
+                            name="facebook"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <label
-                        className={`${labelTextAreaStyles} ${errors.message ? "border-error" : values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                        className={`${labelTextAreaStyles} ${touched.message && errors.message ? "border-error" : values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
                     >
                         <p
                             className={`${textLabelStyles} ${values.message || status === "message" ? "top-[0%] text-xxs" : "top-[20%] text-base"}`}
                         >
-                            {getTranslation("messagePlaceholder")}
+                            {getTranslation("messageLabel")}
                         </p>
                         <Field
                             as="textarea"
@@ -197,14 +230,18 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                                     : ""
                             }
                             onFocus={() => setStatus("message")}
-                            onBlur={() => setStatus("")}
-                            className={`${fieldStyles} pt-6 ${errors.message ? "text-error" : "text-grey"}`}
+                            onBlur={handleBlur}
+                            className={`${fieldStyles} pt-6 ${touched.message && errors.message ? "text-error" : "text-grey"}`}
                         ></Field>
-                        <p className={errorStyles}>{errors.message}</p>
+                        <ErrorMessage
+                            name="message"
+                            component="p"
+                            className={errorStyles}
+                        ></ErrorMessage>
                     </label>
                     <div className="w-full">
                         <p
-                            className={`max-w-[372px] mb-2 text-xs tab:text-sm ${errors.name || errors.email || errors.message ? "text-error" : "text-grey"}`}
+                            className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-grey"}`}
                         >
                             {getTranslation("requiredField")}
                         </p>
