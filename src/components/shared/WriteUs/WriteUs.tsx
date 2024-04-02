@@ -4,14 +4,19 @@ import { useTranslations } from "next-intl";
 import { NotificationModal } from "./NotificationModal";
 import { WriteUsModal } from "./WriteUsModal";
 
-export const WriteUs = () => {
+interface WriteUsProps {
+    className?: string;
+}
+
+export const WriteUs = ({ className }: WriteUsProps) => {
     const [isError, setIsError] = useState(false);
-    const [isNotificationShawn, setIsNotificationShawn] = useState(false);
+    const [isNotificationShawn, setIsNotificationShawn] = useState(true);
 
     const getTranslation = useTranslations("Notifications");
     return (
         <>
             <WriteUsModal
+                className={className}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
             />

@@ -74,7 +74,7 @@ export const CustomerForm = ({
             return error;
         } finally {
             setIsLoading(false);
-                 setIsNotificationShawn(true);
+            setIsNotificationShawn(true);
         }
     };
 

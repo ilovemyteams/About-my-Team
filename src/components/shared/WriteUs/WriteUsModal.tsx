@@ -41,7 +41,7 @@ export const WriteUsModal = ({
                         alt="background"
                         width="0"
                         height="0"
-                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-cover"
+                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-contain"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
