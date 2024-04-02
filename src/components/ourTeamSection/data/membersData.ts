@@ -34,7 +34,8 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "1",
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=drive_link",
             position: "product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
@@ -69,7 +70,8 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "2",
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/file/d/1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9/view?usp=drive_link",
             position: "Graphic Designer/ UX UI Designer",
             categoryName: "designer",
             projectsExperience: ["www.website.ua"],
@@ -205,7 +207,8 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "5",
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/file/d/18H3nSMwOWVGQEImzAqvA_g155njZ1LoO/view?usp=drive_link",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
