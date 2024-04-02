@@ -6,6 +6,7 @@ import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 
 interface WriteUsModalProps {
+    isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
     setIsNotificationShawn: (
         value: boolean | ((prev: boolean) => boolean)
@@ -14,6 +15,7 @@ interface WriteUsModalProps {
 }
 
 export const WriteUsModal = ({
+    isError,
     setIsError,
     setIsNotificationShawn,
     className,
@@ -60,7 +62,8 @@ export const WriteUsModal = ({
                     <button
                         type="button"
                         onClick={onClose}
-                        className="absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple
+                        disabled={isError}
+                        className="cursor-pointer absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
                     >
