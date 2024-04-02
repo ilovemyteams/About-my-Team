@@ -37,7 +37,7 @@ export const ServicesTable = () => {
         <Table>
             <TableItemsList items={serviceItems} />
             <li className="col-span-2 row-span-1 py-[40px] tab:h-[210px] pc:h-[270px] pc:px-4 pc:py-[65px] flex flex-col items-center">
-                <p className="mb-6 max-w-[361px]">
+                <p className="mb-6 max-w-[361px] deskxl:text-lg">
                     {getTranslation("Services.contactUs")}
                 </p>
                 <WriteUsModal />
