@@ -3,9 +3,20 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "./Button";
+import { appendToSheet } from "@/src/api/appendToSheetData";
 
 interface CustomerFormProps {
     onClose?: () => void;
+}
+
+export interface ValuesWriteUsFormType {
+    name: string;
+    email: string;
+    telegram: string;
+    linkedin: string;
+    instagram: string;
+    facebook: string;
+    message: string;
 }
 
 const labelStyles =
@@ -31,10 +42,24 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
         facebook: "",
         message: "",
     };
+
+    const submitForm = (values: ValuesWriteUsFormType) => {
+        const newRow = {
+            name: values.name,
+            email: values.email,
+            telegram: values.telegram,
+            linkedin: values.linkedin,
+            instagram: values.instagram,
+            facebook: values.facebook,
+            message: values.message,
+        };
+        appendToSheet(newRow);
+    };
+
     return (
         <Formik
             initialValues={initialValues}
-            onSubmit={values => console.log(values)}
+            onSubmit={submitForm}
             initialStatus="name"
             validationSchema={validationSchema}
         >
