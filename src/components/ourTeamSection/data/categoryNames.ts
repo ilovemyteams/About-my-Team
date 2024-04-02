@@ -1,4 +1,4 @@
-type СategoryNamesProp = {
+export type СategoryNamesProp = {
     categoryName: string;
     uk: string;
     pl: string;
