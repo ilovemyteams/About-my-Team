@@ -1,7 +1,7 @@
 import { Table } from "../shared/Table/Table";
 import { TableItemsList } from "../shared/Table/TableItemsList";
 import { useTranslations } from "next-intl";
-import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
+import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const ServicesTable = () => {
     const getTranslation = useTranslations();
@@ -40,7 +40,7 @@ export const ServicesTable = () => {
                 <p className="mb-6 max-w-[361px] deskxl:text-lg">
                     {getTranslation("Services.contactUs")}
                 </p>
-                <WriteUsModal />
+                <WriteUs />
             </li>
         </Table>
     );

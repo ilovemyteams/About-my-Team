@@ -8,6 +8,10 @@ import { appendToSheet } from "@/src/api/appendToSheetData";
 
 interface CustomerFormProps {
     onClose?: () => void;
+    setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+    setIsNotificationShawn: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
 }
 
 export interface ValuesWriteUsFormType {
@@ -30,10 +34,15 @@ const fieldStyles =
 const errorStyles =
     "absolute bottom-[-20px] right-0 text-xxs text-error text-right";
 
-export const CustomerForm = ({ onClose }: CustomerFormProps) => {
+export const CustomerForm = ({
+    onClose,
+    setIsError,
+    setIsNotificationShawn,
+}: CustomerFormProps) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const getTranslation = useTranslations("CustomerForm");
+
     const validationSchema = WriteUsValidation();
 
     const initialValues = {
@@ -61,9 +70,11 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
             await appendToSheet(newRow);
             onClose?.();
         } catch (error) {
+            setIsError(true);
             return error;
         } finally {
             setIsLoading(false);
+                 setIsNotificationShawn(true);
         }
     };
 

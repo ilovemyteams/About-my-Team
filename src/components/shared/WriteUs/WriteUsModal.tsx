@@ -1,5 +1,4 @@
 "use client";
-
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -7,10 +6,18 @@ import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 
 interface WriteUsModalProps {
+    setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+    setIsNotificationShawn: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
     className?: string;
 }
 
-export const WriteUsModal = ({ className }: WriteUsModalProps) => {
+export const WriteUsModal = ({
+    setIsError,
+    setIsNotificationShawn,
+    className,
+}: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
 
@@ -64,7 +71,11 @@ export const WriteUsModal = ({ className }: WriteUsModalProps) => {
                             height={24}
                         />
                     </button>
-                    <CustomerForm onClose={onClose} />
+                    <CustomerForm
+                        onClose={onClose}
+                        setIsError={setIsError}
+                        setIsNotificationShawn={setIsNotificationShawn}
+                    />
                 </ModalContent>
             </Modal>
         </div>

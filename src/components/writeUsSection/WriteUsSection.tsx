@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 import { SectionCTA } from "../shared/SectionCTA";
-import { WriteUsModal } from "../shared/WriteUs/WriteUsModal";
+import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const WriteUsSection = () => {
     const getTranslation = useTranslations("WriteUs");
@@ -10,7 +10,7 @@ export const WriteUsSection = () => {
             <TitleCTAWrapper className="tab:w-[50%] pc:w-[70%]">
                 {getTranslation("title")}
             </TitleCTAWrapper>
-            <WriteUsModal />
+            <WriteUs />
         </SectionCTA>
     );
 };
