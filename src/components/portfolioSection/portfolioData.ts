@@ -5,7 +5,7 @@ type PortfolioDataItemTranslation = {
     description: string;
 };
 type DataType = {
-    id: string;
+    id: number;
     image: string;
     video?: string;
     implementations: string[];
@@ -20,7 +20,7 @@ export type PortfolioDataItemType = {
 export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
-            id: "1",
+            id: 1,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
             implementations: ["Design", "Logo Design", "Web Development"],
         },
@@ -43,7 +43,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
-            id: "2",
+            id: 2,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146269/cld-sample-4.jpg",
             implementations: ["Design", "Web Development"],
         },
@@ -66,7 +66,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
-            id: "3",
+            id: 3,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146240/samples/people/jazz.jpg",
             implementations: ["Design", "Logo Design", "Web Development"],
             video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
@@ -90,7 +90,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
-            id: "4",
+            id: 4,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg",
             implementations: ["Design", "Business Analysis", "Web Development"],
         },
@@ -113,7 +113,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
-            id: "5",
+            id: 5,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146244/samples/ecommerce/accessories-bag.jpg",
             implementations: ["Design", "Logo Design", "Web Development"],
         },
@@ -136,7 +136,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
-            id: "6",
+            id: 6,
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146267/cld-sample.jpg",
             implementations: [
                 "Business Analysis",

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { portfolioData } from "../portfolioSection/portfolioData";
@@ -11,12 +10,12 @@ import { IconUp } from "../shared/Icons/IconUp";
 interface MenuMobileProps {
     selectedOption: {
         optionName: string;
-        optionValue: string;
+        optionValue: string | number;
     };
     setSelectedOption: Dispatch<
         SetStateAction<{
             optionName: string;
-            optionValue: string;
+            optionValue: string | number;
         }>
     >;
 }
@@ -33,7 +32,7 @@ export const MenuTeamSectionMobile = ({
         projectId,
     }: {
         option: string;
-        projectId: string;
+        projectId: string | number;
     }) => {
         const selected = {
             optionName: option,
