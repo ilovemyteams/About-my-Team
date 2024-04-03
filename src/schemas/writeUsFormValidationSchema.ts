@@ -47,7 +47,7 @@ export const WriteUsValidation = () => {
         message: yup
             .string()
             .min(10, getTranslation("messageMinMaxSymbols"))
-            .max(30, getTranslation("messageMinMaxSymbols"))
+            .max(300, getTranslation("messageMinMaxSymbols"))
             .required(getTranslation("required")),
     });
 

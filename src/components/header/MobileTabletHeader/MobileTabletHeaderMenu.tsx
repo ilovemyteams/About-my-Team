@@ -4,7 +4,7 @@ import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
 import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
-import { WriteUsModal } from "../../shared/WriteUsModal";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCirclesMobile } from "@/src/components/backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
@@ -34,7 +34,7 @@ export const MobileTabletHeaderMenu = ({
                         <HeaderMenuList
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
-                        <WriteUsModal className="hidden tab:block" />
+                        <WriteUs className="hidden tab:block" />
                     </div>
                     <Image
                         src="/images/heartHeaderMenu.svg"
@@ -45,7 +45,7 @@ export const MobileTabletHeaderMenu = ({
                     />
                 </div>
 
-                <WriteUsModal className="tab:hidden" />
+                <WriteUs className="tab:hidden" />
                 <div className="flex justify-between w-full mt-[20px] tab:mt-0">
                     <BuyMeCoffeeLink />
                     <SocialLinksList />
