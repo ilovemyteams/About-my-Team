@@ -53,7 +53,7 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] h-[384px] p-0 border-purple-stroke">
+            <PopoverContent className="relative rounded-none w-[300px] pc:w-[408px] h-[384px] p-0 border-purple-stroke">
                 <Image
                     src="/images/bgImages/shareMob.svg"
                     fill
@@ -72,14 +72,19 @@ export const SharePopover = ({
                         height={24}
                     />
                 </Button>
-                <div className="flex flex-col border-t w-[268px]  border-purple-stroke ">
+                <div className="flex flex-col border-t w-[268px] pc:w-[360px] border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.shareLink")}
                     </p>
                     <div className=" h-12 border border-purple-stroke">
                         <ul className="flex ">
-                            <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <TelegramShareButton url={urlShare}>
+                            <li className="flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                                <TelegramShareButton
+                                    url={urlShare}
+                                    className="relative flex justify-center items-center w-12 h-12 
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
+                                >
                                     <Image
                                         src="/images/telegramIcon.svg"
                                         alt="Telegram Icon"
@@ -88,8 +93,13 @@ export const SharePopover = ({
                                     />
                                 </TelegramShareButton>
                             </li>
-                            <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <FacebookShareButton url={urlShare}>
+                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                                <FacebookShareButton
+                                    url={urlShare}
+                                    className="relative flex justify-center items-center w-12 h-12 
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
+                                >
                                     <Image
                                         src="/images/fbIcon.svg"
                                         alt="Facebook Icon"
@@ -98,8 +108,13 @@ export const SharePopover = ({
                                     />
                                 </FacebookShareButton>
                             </li>
-                            <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <LinkedinShareButton url={urlShare}>
+                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                                <LinkedinShareButton
+                                    url={urlShare}
+                                    className="relative flex justify-center items-center w-12 h-12 
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
+                                >
                                     <Image
                                         src="/images/linkedin.svg"
                                         alt="Linkedin Icon"
@@ -108,8 +123,13 @@ export const SharePopover = ({
                                     />
                                 </LinkedinShareButton>
                             </li>
-                            <li className=" flex w-[72px] h-12 justify-center items-center">
-                                <WhatsappShareButton url={urlShare}>
+                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center">
+                                <WhatsappShareButton
+                                    url={urlShare}
+                                    className="relative flex justify-center items-center w-12 h-12 
+            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
+                                >
                                     <Image
                                         src="/images/whatsAppIcon.svg"
                                         alt="WhatsApp Icon"
@@ -125,18 +145,22 @@ export const SharePopover = ({
                     </p>
                     <CopyLinkButton link={urlShare}>
                         <div className="flex h-12 border border-purple-stroke ">
-                            <div className=" flex w-[240px] h-12 px-[14px] justify-start items-center ">
+                            <div className=" flex w-[240px] pc:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px]">
                                 <Image
                                     src="/images/linkIcon.svg"
                                     alt="Link Icon"
                                     width={20}
                                     height={20}
-                                    className="mr-[6px]"
                                 />
-                                <p className="w-[180px] truncate">{urlShare}</p>
+                                <p className="w-[180px] pc:w-[250px] truncate text-start">
+                                    {urlShare}
+                                </p>
                             </div>
 
-                            <div className=" flex w-12 h-12 justify-center items-center border-l border-purple-stroke">
+                            <div
+                                className="relative flex w-12 h-12 justify-center items-center border-l border-purple-stroke  icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            icon-hover-rounded-purple:active"
+                            >
                                 <Image
                                     src="/images/copyIcon.svg"
                                     alt="Close button"
