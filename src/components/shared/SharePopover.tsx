@@ -40,8 +40,8 @@ export const SharePopover = ({
                     <p
                         className={
                             trigerShowShareText
-                                ? `hidden pc:block tab:border-b-[1px] tab:border-current`
-                                : `hidden tab:block tab:border-b-[1px] tab:border-current`
+                                ? `hidden pc:block tab:border-b tab:border-current`
+                                : `hidden tab:block tab:border-b tab:border-current`
                         }
                     >
                         {getTranslation("Buttons.share")}

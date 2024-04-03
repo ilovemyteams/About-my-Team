@@ -12,10 +12,12 @@ export const NotFoundInfo = () => {
                 404
             </p>
             <div className="text-center">
-                <p className="font-caviar  text-white text-2xl mb-4 tab:text-3xl pc:text-4xl">
+                <p className="font-caviar  text-white text-2xlb mb-4 tab:text-3xl pc:text-4xl">
                     {getTranslation("title")}
                 </p>
-                <p>{getTranslation("info")}</p>
+                <p className="pc:text-xl pc:max-w-[356px] pc:text-start">
+                    {getTranslation("info")}
+                </p>
             </div>
             <Link href={`/${locale}`} className="tab:mt-6">
                 <Button>{getTranslation("button")}</Button>

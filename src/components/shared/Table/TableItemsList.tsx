@@ -29,7 +29,7 @@ export const TableItemsList = ({
                     key={index}
                     className={`border-purple-stroke border-b-[1px] first-of-type:border-t-[1px]   
                     tab:[&:nth-child(2)]:border-t-[1px] 
-                    pc:border-r-[1px] pc:[&:nth-child(1)]:border-l-[1px] pc:[&:nth-child(5)]:border-l-[1px] pc:[&:nth-child(3)]:border-t-[1px]
+                    pc:border-r-[1px] pc:[&:nth-child(1)]:border-l-[1px] pc:[&:nth-child(3)]:border-t-[1px]
                     pc:[&:nth-child(4)]:border-t-[1px]
                     ${sectionClassName}`}
                 >

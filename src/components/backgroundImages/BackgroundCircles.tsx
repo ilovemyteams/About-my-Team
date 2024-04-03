@@ -7,7 +7,7 @@ interface BackgroundCirclesProps {
 export const BackgroundCircles = ({ className }: BackgroundCirclesProps) => {
     return (
         <div
-            className={`hidden pc:block h-[100vh] absolute w-screen overflow-hidden z-[-10] ${className}`}
+            className={`hidden  pc:block h-[100vh] desk:hidden absolute w-screen overflow-hidden z-[-10] ${className}`}
         >
             <Image
                 src="/images/bgImages/leftBottom.svg"
