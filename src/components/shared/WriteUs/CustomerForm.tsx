@@ -279,7 +279,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("message")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} pt-6 ${touched.message && errors.message ? "text-error" : "text-grey"}`}
+                            className={`${fieldStyles} pt-6 resize-none ${touched.message && errors.message ? "text-error" : "text-grey"}`}
                         ></Field>
                         <ErrorMessage
                             name="message"
