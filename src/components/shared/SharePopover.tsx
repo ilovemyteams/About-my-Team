@@ -13,7 +13,7 @@ import {
     TelegramShareButton,
     WhatsappShareButton,
 } from "react-share";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { IconShare } from "./Icons/IconShare";
 
 export const SharePopover = ({
@@ -30,7 +30,12 @@ export const SharePopover = ({
     const onClose = () => {
         setIsOpen(false);
     };
-    const locale = useLocale();
+    const pathname = window.location.pathname;
+    const urlShare = id
+        ? window.location.origin + pathname + `#${id}`
+        : window.location.origin + pathname;
+    console.log(urlShare);
+
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
@@ -75,7 +80,7 @@ export const SharePopover = ({
                     <div className=" h-12 border border-purple-stroke">
                         <ul className="flex ">
                             <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <TelegramShareButton url={`/${locale}#${id}`}>
+                                <TelegramShareButton url={urlShare}>
                                     <Image
                                         src="/images/telegramIcon.svg"
                                         alt="Telegram Icon"
@@ -85,7 +90,7 @@ export const SharePopover = ({
                                 </TelegramShareButton>
                             </li>
                             <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <FacebookShareButton url={`/${locale}#${id}`}>
+                                <FacebookShareButton url={urlShare}>
                                     <Image
                                         src="/images/fbIcon.svg"
                                         alt="Facebook Icon"
@@ -95,7 +100,7 @@ export const SharePopover = ({
                                 </FacebookShareButton>
                             </li>
                             <li className=" flex w-[72px] h-12 justify-center items-center border-r border-purple-stroke">
-                                <LinkedinShareButton url={`/${locale}#${id}`}>
+                                <LinkedinShareButton url={urlShare}>
                                     <Image
                                         src="/images/linkedin.svg"
                                         alt="Linkedin Icon"
@@ -105,7 +110,7 @@ export const SharePopover = ({
                                 </LinkedinShareButton>
                             </li>
                             <li className=" flex w-[72px] h-12 justify-center items-center">
-                                <WhatsappShareButton url={`/${locale}#${id}`}>
+                                <WhatsappShareButton url={urlShare}>
                                     <Image
                                         src="/images/whatsAppIcon.svg"
                                         alt="WhatsApp Icon"

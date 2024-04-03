@@ -15,6 +15,7 @@ export const PortfolioSection = () => {
             </div>
             <SharePopover
                 className="absolute -top-3 right-4 tab:static tab:items-end tab:ml-auto tab:mt-4 pc:mt-5"
+                id="portfolio"
                 trigerShowShareText={false}
             />
         </Section>
