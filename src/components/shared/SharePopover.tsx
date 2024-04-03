@@ -31,10 +31,15 @@ export const SharePopover = ({
     const onClose = () => {
         setIsOpen(false);
     };
-    const pathname = window.location.pathname;
+    const pathname =
+        typeof window !== "undefined" ? window.location.pathname : "";
     const urlShare = id
-        ? window.location.origin + pathname + `#${id}`
-        : window.location.origin + pathname;
+        ? typeof window !== "undefined"
+            ? window.location.origin + pathname + `#${id}`
+            : ""
+        : typeof window !== "undefined"
+          ? window.location.origin + pathname
+          : "";
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
