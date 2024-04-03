@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { ReactNode } from "react";
 
 const copyToClipboard = async (text: string): Promise<void> => {
