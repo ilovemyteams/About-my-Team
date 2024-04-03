@@ -58,7 +58,7 @@ export const OneTableItemInfo = ({
                 pc:max-h-[60px] pc:overflow-hidden 
                 pc:hover:line-clamp-none ${isShownMore ? "line-clamp-none max-h-[160px] deskxl:max-h-[190px] " : "line-clamp-3 max-h-[60px] tab:max-h-full pc:max-h-[60px] deskxl:max-h-[70px] "}
                 transition-[max-height] duration-[600ms] ease-in overflow-hidden
-                deskxl:text-lg  
+                deskxl:text-lg  deskxl:font-light
                 ${textClassName}
                 `}
             >
