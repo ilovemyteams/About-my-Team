@@ -19,7 +19,7 @@ export const MobileTabletHeaderMenu = ({
     return (
         <div
             className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
-    bg-grey dark:bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
+                     bg-purple-400 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
             <BackgroundCirclesMobile className="top-[-80px]" />
             <BackgroundCirclesTablet className="top-[-80px]" />
