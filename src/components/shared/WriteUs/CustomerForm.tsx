@@ -1,11 +1,28 @@
 "use client";
+import { useState } from "react";
+import Image from "next/image";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
-import { Button } from "./Button";
+import { Button } from "../Button";
+import { appendToSheet } from "@/src/api/appendToSheetData";
 
 interface CustomerFormProps {
     onClose?: () => void;
+    setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+    setIsNotificationShawn: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
+}
+
+export interface ValuesWriteUsFormType {
+    name: string;
+    email: string;
+    telegram: string;
+    linkedin: string;
+    instagram: string;
+    facebook: string;
+    message: string;
 }
 
 const labelStyles =
@@ -18,8 +35,15 @@ const fieldStyles =
 const errorStyles =
     "absolute bottom-[-20px] right-0 text-xxs text-error text-right";
 
-export const CustomerForm = ({ onClose }: CustomerFormProps) => {
+export const CustomerForm = ({
+    onClose,
+    setIsError,
+    setIsNotificationShawn,
+}: CustomerFormProps) => {
+    const [isLoading, setIsLoading] = useState(false);
+
     const getTranslation = useTranslations("CustomerForm");
+
     const validationSchema = WriteUsValidation();
 
     const initialValues = {
@@ -31,10 +55,34 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
         facebook: "",
         message: "",
     };
+
+    const submitForm = async (values: ValuesWriteUsFormType) => {
+        try {
+            setIsLoading(true);
+            const newRow = {
+                name: values.name.trim(),
+                email: values.email.toLowerCase().trim(),
+                telegram: values.telegram.trim(),
+                linkedin: values.linkedin.trim(),
+                instagram: values.instagram.trim(),
+                facebook: values.facebook.trim(),
+                message: values.message.trim(),
+            };
+            await appendToSheet(newRow);
+            onClose?.();
+        } catch (error) {
+            setIsError(true);
+            return error;
+        } finally {
+            setIsLoading(false);
+            setIsNotificationShawn(true);
+        }
+    };
+
     return (
         <Formik
             initialValues={initialValues}
-            onSubmit={values => console.log(values)}
+            onSubmit={submitForm}
             initialStatus="name"
             validationSchema={validationSchema}
         >
@@ -231,7 +279,7 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                             }
                             onFocus={() => setStatus("message")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} pt-6 ${touched.message && errors.message ? "text-error" : "text-grey"}`}
+                            className={`${fieldStyles} pt-6 resize-none ${touched.message && errors.message ? "text-error" : "text-grey"}`}
                         ></Field>
                         <ErrorMessage
                             name="message"
@@ -257,14 +305,23 @@ export const CustomerForm = ({ onClose }: CustomerFormProps) => {
                             </a>
                         </p>
                     </div>
-                    <Button
-                        type="submit"
-                        disabled={!(dirty && isValid)}
-                        onClick={onClose}
-                        color="grey"
-                    >
-                        {getTranslation("submitButton")}
-                    </Button>
+                    <div className="relative">
+                        <Button
+                            type="submit"
+                            disabled={!(dirty && isValid) || isLoading}
+                            color="grey"
+                        >
+                            {getTranslation("submitButton")}
+                        </Button>
+                        <Image
+                            src="/images/loader.svg"
+                            alt="background"
+                            width={40}
+                            height={40}
+                            className={`${isLoading ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
+                             tab:left-[8px] animate-rotation`}
+                        />
+                    </div>
                 </Form>
             )}
         </Formik>
