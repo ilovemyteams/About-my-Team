@@ -15,6 +15,7 @@ import {
 } from "react-share";
 import { useTranslations } from "next-intl";
 import { IconShare } from "./Icons/IconShare";
+import CopyLinkButton from "./CopyLinkButton";
 
 export const SharePopover = ({
     className,
@@ -124,7 +125,20 @@ export const SharePopover = ({
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
-                    <div className="h-12 border border-purple-stroke "></div>
+                    <div className="flex h-12 border border-purple-stroke ">
+                        <div className=" flex w-[240px] h-12 justify-center items-center ">
+                            <Image
+                                src="/images/linkIcon.svg"
+                                alt="Link Icon"
+                                width={20}
+                                height={20}
+                            />
+                            {urlShare}
+                        </div>
+                        <div className=" flex w-12 h-12 justify-center items-center border-l border-purple-stroke">
+                            <CopyLinkButton link={urlShare} />
+                        </div>
+                    </div>
                 </div>
             </PopoverContent>
         </Popover>
