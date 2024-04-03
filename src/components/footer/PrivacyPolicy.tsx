@@ -5,9 +5,9 @@ export const PrivacyPolicy = () => {
     return (
         <a
             href=""
-            className="mb-[20px] pc:mb-0 text-sm hover:text-red focus:text-red transition ease-out duration-300"
+            className="mb-[20px] tab:mb-0 text-sm hover:text-red focus:text-red transition ease-out duration-300 deskxl:text-base"
         >
-            {getTranslation("privacyPolicy")}
+            {getTranslation("privacyPolicy").toUpperCase()}
         </a>
     );
 };
