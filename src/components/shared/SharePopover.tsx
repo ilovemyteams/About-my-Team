@@ -35,8 +35,6 @@ export const SharePopover = ({
     const urlShare = id
         ? window.location.origin + pathname + `#${id}`
         : window.location.origin + pathname;
-    console.log(urlShare);
-
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
@@ -125,20 +123,29 @@ export const SharePopover = ({
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
-                    <div className="flex h-12 border border-purple-stroke ">
-                        <div className=" flex w-[240px] h-12 justify-center items-center ">
-                            <Image
-                                src="/images/linkIcon.svg"
-                                alt="Link Icon"
-                                width={20}
-                                height={20}
-                            />
-                            {urlShare}
+                    <CopyLinkButton link={urlShare}>
+                        <div className="flex h-12 border border-purple-stroke ">
+                            <div className=" flex w-[240px] h-12 px-[14px] justify-start items-center ">
+                                <Image
+                                    src="/images/linkIcon.svg"
+                                    alt="Link Icon"
+                                    width={20}
+                                    height={20}
+                                    className="mr-[6px]"
+                                />
+                                <p className="w-[180px] truncate">{urlShare}</p>
+                            </div>
+
+                            <div className=" flex w-12 h-12 justify-center items-center border-l border-purple-stroke">
+                                <Image
+                                    src="/images/copyIcon.svg"
+                                    alt="Close button"
+                                    width={18}
+                                    height={20}
+                                />
+                            </div>
                         </div>
-                        <div className=" flex w-12 h-12 justify-center items-center border-l border-purple-stroke">
-                            <CopyLinkButton link={urlShare} />
-                        </div>
-                    </div>
+                    </CopyLinkButton>
                 </div>
             </PopoverContent>
         </Popover>

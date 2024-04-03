@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { ReactNode } from "react";
 
 const copyToClipboard = async (text: string): Promise<void> => {
     try {
@@ -10,21 +10,18 @@ const copyToClipboard = async (text: string): Promise<void> => {
     }
 };
 
-const CopyLinkButton = ({ link }: { link: string }) => {
+const CopyLinkButton = ({
+    link,
+    children,
+}: {
+    link: string;
+    children: ReactNode;
+}) => {
     const handleCopyLink = () => {
         copyToClipboard(link);
     };
 
-    return (
-        <button onClick={handleCopyLink}>
-            <Image
-                src="/images/copyIcon.svg"
-                alt="Close button"
-                width={18}
-                height={20}
-            />
-        </button>
-    );
+    return <button onClick={handleCopyLink}>{children}</button>;
 };
 
 export default CopyLinkButton;
