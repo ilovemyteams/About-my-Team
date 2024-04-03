@@ -30,8 +30,6 @@ export const NotificationModal = ({
 }: NotififcationModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
-    console.log(isError, isNotificationShawn);
-
     useEffect(() => {
         if (isNotificationShawn) {
             onOpen();

@@ -38,13 +38,13 @@ export const WriteUsModal = ({
                 bg-purple-400"
                 classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
             >
-                <ModalContent className="h-full m-0">
+                <ModalContent className="w-full h-full m-0">
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
                         alt="background"
                         width="0"
                         height="0"
-                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-contain"
+                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"

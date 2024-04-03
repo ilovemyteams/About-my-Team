@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
@@ -304,13 +305,23 @@ export const CustomerForm = ({
                             </a>
                         </p>
                     </div>
-                    <Button
-                        type="submit"
-                        disabled={!(dirty && isValid) || isLoading}
-                        color="grey"
-                    >
-                        {getTranslation("submitButton")}
-                    </Button>
+                    <div className="relative">
+                        <Button
+                            type="submit"
+                            disabled={!(dirty && isValid) || isLoading}
+                            color="grey"
+                        >
+                            {getTranslation("submitButton")}
+                        </Button>
+                        <Image
+                            src="/images/loader.svg"
+                            alt="background"
+                            width={40}
+                            height={40}
+                            className={`${isLoading ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
+                             tab:left-[8px] animate-rotation`}
+                        />
+                    </div>
                 </Form>
             )}
         </Formik>
