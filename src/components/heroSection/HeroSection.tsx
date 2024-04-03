@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Section } from "../shared/Section";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+// import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 import { HeroInfo } from "./HeroInfo";
 import { HeroFooterLinks } from "./HeroFooterLinks";
@@ -11,7 +11,7 @@ export const HeroSection = () => {
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
-                <ThemeSwitcher />
+                {/* <ThemeSwitcher /> */}
             </div>
             <Image
                 src="/images/heroTitle.svg"

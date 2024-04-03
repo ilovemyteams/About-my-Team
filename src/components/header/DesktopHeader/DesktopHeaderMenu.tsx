@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
+// import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "../HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
@@ -26,7 +26,7 @@ export const DesktopHeaderMenu = ({
                 <div className="flex flex-col justify-between w-80 deskxl:w-120 desk:max-w-[1456px] px-[60px] py-[32px] h-[100vh] mx-auto">
                     <div className="flex justify-end gap-[204px] w-full relative z-20">
                         <LocaleSwitcher />
-                        <ThemeSwitcher />
+                        {/* <ThemeSwitcher /> */}
                     </div>
                     <div className="flex justify-between w-full overflow-hidden relative z-20">
                         <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">

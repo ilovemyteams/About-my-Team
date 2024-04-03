@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { HeaderMenuList } from "../HeaderMenuList";
-import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
+// import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
 import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -26,7 +26,7 @@ export const MobileTabletHeaderMenu = ({
             <div className="flex flex-col justify-between items-center max-w-[540px] mx-auto tab:max-w-full h-70 p-4 tab:px-6 tab:py-[80px] mb-2 tab:mb-0 overflow-y-auto">
                 <div className="flex justify-between tab:justify-end tab:gap-[111px] z-20 w-full">
                     <LocaleSwitcher />
-                    <ThemeSwitcher />
+                    {/* <ThemeSwitcher /> */}
                 </div>
 
                 <div className="flex justify-between items-center w-full tab:min-h-[510px] mb-8 tab:mb-0">
