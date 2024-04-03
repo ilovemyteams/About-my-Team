@@ -38,7 +38,7 @@ export const FeedbackCardTextFromTab = ({
                     </p>
                 </div>
                 <div className="tab:mt-[25px]">
-                    <a href="" className="block underline font-caviar text-lg">
+                    <a href="" className="block border-b font-caviar text-lg">
                         {siteLink}
                     </a>
                 </div>
