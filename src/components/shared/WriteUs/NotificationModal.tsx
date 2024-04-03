@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 import {
     Modal,
     ModalContent,
@@ -10,8 +11,6 @@ import {
 import Image from "next/image";
 
 interface NotififcationModalProps {
-    title: string;
-    textMessage: string;
     isNotificationShawn: boolean;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
@@ -21,14 +20,13 @@ interface NotififcationModalProps {
 }
 
 export const NotificationModal = ({
-    title,
-    textMessage,
     isNotificationShawn,
     isError,
     setIsError,
     setIsNotificationShawn,
 }: NotififcationModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+    const getTranslation = useTranslations("Notifications");
 
     useEffect(() => {
         if (isNotificationShawn) {
@@ -111,9 +109,15 @@ export const NotificationModal = ({
                     <h3
                         className={`font-caviar text-3xl mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
                     >
-                        {title}
+                        {isError
+                            ? getTranslation("somethingWrong")
+                            : getTranslation("thankYou")}
                     </h3>
-                    <p className="text-base text-center">{textMessage}</p>
+                    <p className="text-base text-center">
+                        {isError
+                            ? getTranslation("tryAgain")
+                            : getTranslation("waitResponse")}
+                    </p>
                 </ModalBody>
             </ModalContent>
         </Modal>
