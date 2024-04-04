@@ -10,12 +10,12 @@ import { IconUp } from "../shared/Icons/IconUp";
 interface MenuMobileProps {
     selectedOption: {
         optionName: string;
-        optionValue: string | number;
+        optionValue: string;
     };
     setSelectedOption: Dispatch<
         SetStateAction<{
             optionName: string;
-            optionValue: string | number;
+            optionValue: string;
         }>
     >;
 }
@@ -32,7 +32,7 @@ export const MenuTeamSectionMobile = ({
         projectId,
     }: {
         option: string;
-        projectId: string | number;
+        projectId: string;
     }) => {
         const selected = {
             optionName: option,
