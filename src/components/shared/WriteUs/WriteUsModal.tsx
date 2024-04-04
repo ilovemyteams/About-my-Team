@@ -44,7 +44,7 @@ export const WriteUsModal = ({
                         alt="background"
                         width="0"
                         height="0"
-                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-cover"
+                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
@@ -64,6 +64,7 @@ export const WriteUsModal = ({
                         type="button"
                         onClick={onClose}
                         disabled={isError}
+                        aria-label="close button"
                         className="cursor-pointer absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
