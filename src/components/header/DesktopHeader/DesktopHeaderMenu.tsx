@@ -18,7 +18,7 @@ export const DesktopHeaderMenu = ({
     return (
         <div
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-        bg-grey dark:bg-purple-400`}
+           bg-purple-400`}
         >
             <BackgroundCircles className="left-[-80px]" />
             <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
