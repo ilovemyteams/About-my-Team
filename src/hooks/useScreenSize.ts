@@ -3,21 +3,21 @@ import { SCREEN_NAMES } from "../constants/screenNames";
 import { SCREEN_SIZES } from "../constants/screenSizes";
 
 export const useScreenSize = () => {
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(0);
     const { tablet, pc, desktop, desktopXl } = SCREEN_SIZES;
     const { mobileName, tabletName, pcName, desktopName, desktopXlName } =
         SCREEN_NAMES;
 
     useLayoutEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerWidth);
+            setWidth(window?.innerWidth);
         };
 
         handleResize();
-        window.addEventListener("resize", handleResize);
+        window?.addEventListener("resize", handleResize);
 
         return () => {
-            window.removeEventListener("resize", handleResize);
+            window?.removeEventListener("resize", handleResize);
         };
     }, []);
 

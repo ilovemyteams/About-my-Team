@@ -2,6 +2,8 @@
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
@@ -23,6 +25,8 @@ export const WriteUsModal = ({
 }: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
+    const screenSizeName = useScreenSize();
+    const { mobileName, tabletName } = SCREEN_NAMES;
 
     return (
         <div className={className}>
@@ -31,7 +35,10 @@ export const WriteUsModal = ({
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement="center"
-                shouldBlockScroll={false}
+                shouldBlockScroll={
+                    screenSizeName !== mobileName &&
+                    screenSizeName !== tabletName
+                }
                 hideCloseButton={true}
                 className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:h-[789px] pc:h-[813px]
                 px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
