@@ -16,6 +16,9 @@ export const ScrollToTopButton = () => {
             }
         };
         window.addEventListener("scroll", toggleVisible);
+        return () => {
+            window.removeEventListener("scroll", toggleVisible);
+        };
     }, []);
 
     const scrollToTop = () => {
