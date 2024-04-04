@@ -266,6 +266,14 @@ const config: Config = {
                             "rotate(-55deg) translateX(-120px) translateY(15px)",
                     },
                 },
+                rotate: {
+                    "0%": {
+                        transform: "rotate(0deg)",
+                    },
+                    "100%": {
+                        transform: "rotate(360deg)",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
@@ -273,6 +281,7 @@ const config: Config = {
                 brokenHeart: "brokenHeart 3000ms ease-in forwards",
                 brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
                 brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
+                rotation: "rotate 1800ms linear infinite",
             },
         },
         backgroundImage: {

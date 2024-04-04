@@ -1,8 +1,10 @@
 import Image from "next/image";
 
 export interface PortfolioCardItemProps {
+    index: number;
     data: {
-        id: number;
+        id: string;
+
         image: string;
         video?: string;
         implementations: string[];
@@ -14,14 +16,15 @@ function formatNumberWithLeadingZero(num: number): string {
 }
 
 export const PortfolioCard = ({
+    index,
     data,
     localizationData,
 }: PortfolioCardItemProps) => {
-    const { image, implementations, id } = data;
+    const { image, implementations } = data;
     const { siteView, name } = localizationData;
-
+    const projectNumber = index + 1;
     const siteTypeUp = siteView?.toUpperCase();
-    const idFormater = formatNumberWithLeadingZero(id);
+    const idFormater = formatNumberWithLeadingZero(projectNumber);
     return (
         <>
             <div className="relative min-w-[100%] h-[330px] tab:min-w-[50%] pc:h-[400px]">

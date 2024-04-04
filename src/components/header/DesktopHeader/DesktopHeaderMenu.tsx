@@ -5,7 +5,7 @@ import { HeaderMenuList } from "../HeaderMenuList";
 import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { HeaderMenuProps } from "@/types/HeaderMenuProps";
 import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
-import { WriteUsModal } from "../../shared/WriteUsModal";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
 
 const openedStyles = "w-80 deskxl:w-120";
@@ -18,7 +18,7 @@ export const DesktopHeaderMenu = ({
     return (
         <div
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-        bg-grey dark:bg-purple-400`}
+           bg-purple-400`}
         >
             <BackgroundCircles className="left-[-80px]" />
             <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
@@ -33,7 +33,7 @@ export const DesktopHeaderMenu = ({
                             <HeaderMenuList
                                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                             />
-                            <WriteUsModal />
+                            <WriteUs />
                         </div>
                         <div className="flex justify-center items-center min-w-[618px] w-[57%] h-auto overflow-hidden">
                             <Image

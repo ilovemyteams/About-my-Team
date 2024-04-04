@@ -1,16 +1,26 @@
 "use client";
-
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
+import { IconCloseX } from "../Icons/IconCloseX";
 
 interface WriteUsModalProps {
+    isError: boolean;
+    setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
+    setIsNotificationShawn: (
+        value: boolean | ((prev: boolean) => boolean)
+    ) => void;
     className?: string;
 }
 
-export const WriteUsModal = ({ className }: WriteUsModalProps) => {
+export const WriteUsModal = ({
+    isError,
+    setIsError,
+    setIsNotificationShawn,
+    className,
+}: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
 
@@ -28,7 +38,7 @@ export const WriteUsModal = ({ className }: WriteUsModalProps) => {
                 bg-purple-400"
                 classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
             >
-                <ModalContent className="h-full m-0">
+                <ModalContent className="w-full h-full m-0">
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
                         alt="background"
@@ -53,18 +63,18 @@ export const WriteUsModal = ({ className }: WriteUsModalProps) => {
                     <button
                         type="button"
                         onClick={onClose}
-                        className="absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple
+                        disabled={isError}
+                        className="cursor-pointer absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
                     >
-                        <Image
-                            src="/images/closeX.svg"
-                            alt="Close button"
-                            width={24}
-                            height={24}
-                        />
+                        <IconCloseX />
                     </button>
-                    <CustomerForm onClose={onClose} />
+                    <CustomerForm
+                        onClose={onClose}
+                        setIsError={setIsError}
+                        setIsNotificationShawn={setIsNotificationShawn}
+                    />
                 </ModalContent>
             </Modal>
         </div>
