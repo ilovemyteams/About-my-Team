@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="border-y-[1px] border-solid border-purple-stroke desk:mx-auto">
                 <TitleFooter />
                 <SharePopover
-                    className="absolute top-[90px] tab:top-[76px] tab:right-[30px] pc:flex pc:top-[100px] right-[16px] pc:right-[60px] deskxl:top-[141px]"
+                    className="absolute top-[90px] tab:top-[64px] pc:top-[82px] right-[16px] pc:right-[60px] deskxl:top-[129px]"
                     trigerShowShareText={true}
                 />
                 <div className="mb-[16px] flex tab:items-end tab:h-[48px] tab:mb-[24px] pc:mb-[28px] justify-between">
