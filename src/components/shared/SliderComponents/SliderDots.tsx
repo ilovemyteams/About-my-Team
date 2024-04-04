@@ -61,7 +61,11 @@ export const SliderDots: React.FC<PropType> = props => {
     const { children, ...restProps } = props;
 
     return (
-        <button type="button" {...restProps}>
+        <button
+            aria-label="show next or previous slide button"
+            type="button"
+            {...restProps}
+        >
             {children}
         </button>
     );

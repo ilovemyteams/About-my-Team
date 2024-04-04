@@ -16,7 +16,7 @@ export const DesktopHeaderMenu = ({
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
     return (
-        <div
+        <nav
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
            bg-purple-400`}
         >
@@ -26,7 +26,7 @@ export const DesktopHeaderMenu = ({
                 <div className="flex flex-col justify-between w-80 deskxl:w-120 desk:max-w-[1456px] px-[60px] py-[32px] h-[100vh] mx-auto">
                     <div className="flex justify-end gap-[204px] w-full relative z-20">
                         <LocaleSwitcher />
-                        <ThemeSwitcher />
+                        <ThemeSwitcher id="DesktopHeaderMenuThemeSwitcher" />
                     </div>
                     <div className="flex justify-between w-full overflow-hidden relative z-20">
                         <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
@@ -48,6 +48,6 @@ export const DesktopHeaderMenu = ({
                     <BuyMeCoffeeLink className="relative z-20 ml-auto" />
                 </div>
             </div>
-        </div>
+        </nav>
     );
 };
