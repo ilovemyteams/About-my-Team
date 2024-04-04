@@ -5,7 +5,7 @@ import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
-import { WriteUsModal } from "../shared/WriteUsModal";
+import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({
@@ -26,7 +26,7 @@ export const MissionSection = () => {
                     />
                     <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
-                        <WriteUsModal />
+                        <WriteUs />
                     </div>
                 </div>
                 <StagesList />

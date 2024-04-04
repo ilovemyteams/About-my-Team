@@ -18,7 +18,7 @@ export const MobileTabletHeader = () => {
     }, [isHeaderMenuOpened]);
     return (
         <div className="pc:hidden absolute top-0 left-0 w-[100vw]">
-            <div className="absolute z-20 h-[80px] overflow-hidden bg-grey dark:bg-purple-400">
+            <div className="absolute z-20 h-[80px] overflow-hidden bg-purple-400">
                 <BackgroundCirclesMobile />
                 <BackgroundCirclesTablet />
                 <div className=" w-[100vw] h-[80px] px-[24px] py-[15px] border-solid border-b-[1px] border-purple-stroke ">

@@ -180,5 +180,11 @@
         "wrongInstagram": "Неправильна адреса instagram",
         "wrongFacebook": "Неправильна адреса facebook",
         "wrongTelegram": "Неправильна адреса telegram"
+    },
+    "Notifications": {
+        "thankYou": "Дякуємо!",
+        "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
+        "somethingWrong": "Щось пішло не так",
+        "tryAgain": "Спробуйте надіслати форму ще раз"
     }
 }
