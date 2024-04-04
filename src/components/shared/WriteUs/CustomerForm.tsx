@@ -26,12 +26,12 @@ export interface ValuesWriteUsFormType {
 }
 
 const labelStyles =
-    "relative w-full h-[60px] py-[13px] text-base transition-color duration-300 ease-out";
+    "relative appearance-none w-full h-[60px] py-[13px] outline-none text-base";
 const labelTextAreaStyles =
-    "relative w-full h-[108px] pb-[13px] text-base transition-color duration-300 ease-out";
-const textLabelStyles = "absolute duration-300 ease-out";
+    "relative w-full h-[108px] pb-[13px] outline-none text-base";
+const textLabelStyles = "absolute transition-translate duration-300 ease-out";
 const fieldStyles =
-    "block appearance-none w-full h-full py-[7px] bg-transparent focus:outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
+    "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
@@ -114,7 +114,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("name")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles}   ${touched.name && errors.name ? "border-error text-error" : values.name || status === "name" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles} ${touched.name && errors.name ? "border-error text-error" : values.name || status === "name" ? "border-grey text-grey" : "border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="name"
