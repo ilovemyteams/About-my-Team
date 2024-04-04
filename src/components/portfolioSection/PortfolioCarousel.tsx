@@ -38,13 +38,14 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
         <div className="relative embla min-w-full">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
-                    {projects.map(project => (
+                    {projects.map((project, index) => (
                         <div
                             key={project.data.id}
                             className="embla__slide flex-[0_0_100%] tab:flex-[0_0_50%] w-full"
                         >
                             <PortfolioCard
                                 data={project.data}
+                                index={index}
                                 localizationData={project[locale as Locale]}
                             />
                         </div>
