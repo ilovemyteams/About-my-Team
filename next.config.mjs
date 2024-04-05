@@ -22,9 +22,6 @@ const nextConfig = {
 
         return config;
     },
-    env: {
-        GOOGLE_SERVICE_PRIVATE_KEY: process.env.GOOGLE_SERVICE_PRIVATE_KEY,
-    },
 };
 
 export default withNextIntl(nextConfig);
