@@ -80,7 +80,7 @@ export const membersData: MemberDataItemType[] = [
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
                 github: "",
-                telegram: "",
+                telegram: "https://t.me/NazarenkoAnastasiya",
             },
             tools: [
                 "figma",
@@ -122,7 +122,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
                 github: "https://github.com/OlenaPosternak",
-                telegram: "",
+                telegram: "https://t.me/Posternak_Olena",
             },
             tools: [
                 "HTML",
@@ -169,7 +169,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
                 github: "https://github.com/OlgaMykhailova",
-                telegram: "",
+                telegram: "https://t.me/Olya_Kaktusya",
             },
             tools: [
                 "HTML",
@@ -260,7 +260,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
-                telegram: "",
+                telegram: "https://t.me/iryna_stoliarova",
             },
             tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
         },
@@ -297,7 +297,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
-                telegram: "",
+                telegram: "https://t.me/R_Katrine",
             },
             tools: [
                 "Jira",
@@ -445,7 +445,7 @@ export const membersData: MemberDataItemType[] = [
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
-                telegram: "",
+                telegram: "https://t.me/Dari_Chap",
             },
             tools: [
                 "Jira",
