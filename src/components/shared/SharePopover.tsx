@@ -40,6 +40,8 @@ export const SharePopover = ({
         : typeof window !== "undefined"
           ? window.location.origin + pathname
           : "";
+    const shareButtonStyles =
+        "relative flex justify-center items-center w-12 h-12 icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active";
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
@@ -86,9 +88,8 @@ export const SharePopover = ({
                             <li className="flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <TelegramShareButton
                                     url={urlShare}
-                                    className="relative flex justify-center items-center w-12 h-12 
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+                                    className={shareButtonStyles}
+                                    title={`i love my team ${id ? `#${id}` : ``}`}
                                 >
                                     <Image
                                         src="/images/telegramIcon.svg"
@@ -101,9 +102,8 @@ export const SharePopover = ({
                             <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <FacebookShareButton
                                     url={urlShare}
-                                    className="relative flex justify-center items-center w-12 h-12 
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+                                    className={shareButtonStyles}
+                                    title={`i love my team ${id ? `#${id}` : ``}`}
                                 >
                                     <Image
                                         src="/images/fbIcon.svg"
@@ -116,9 +116,9 @@ export const SharePopover = ({
                             <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <LinkedinShareButton
                                     url={urlShare}
-                                    className="relative flex justify-center items-center w-12 h-12 
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+                                    className={shareButtonStyles}
+                                    title={`i love my team ${id ? `#${id}` : ``}`}
+                                    summary="Here can be our discription :)"
                                 >
                                     <Image
                                         src="/images/linkedin.svg"
@@ -131,9 +131,9 @@ export const SharePopover = ({
                             <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center">
                                 <WhatsappShareButton
                                     url={urlShare}
-                                    className="relative flex justify-center items-center w-12 h-12 
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+                                    className={shareButtonStyles}
+                                    title={`i love my team ${id ? `#${id}` : ``}`}
+                                    separator=" - "
                                 >
                                     <Image
                                         src="/images/whatsAppIcon.svg"
@@ -163,8 +163,7 @@ export const SharePopover = ({
                             </div>
 
                             <div
-                                className="relative flex w-12 h-12 justify-center items-center border-l border-purple-stroke  icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+                                className={`${shareButtonStyles} border-l border-purple-stroke`}
                             >
                                 <Image
                                     src="/images/copyIcon.svg"
