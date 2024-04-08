@@ -198,7 +198,7 @@ const config: Config = {
                     "0%": {
                         transform: "rotate(0deg)",
                     },
-                    "25%, 45%": {
+                    "25%, 30%": {
                         transform: "rotate(115deg)",
                     },
                     "65%, 85%": {
