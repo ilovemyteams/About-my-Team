@@ -69,9 +69,22 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
-                <meta property="og:title" content="Заголовок вашої сторінки" />
-                <meta property="og:description" content="Опис вашої сторінки" />
-                <meta property="og:image" content="/images/iLMT2.jpeg" />
+                <meta
+                    name="title"
+                    property="og:title"
+                    content="Заголовок вашої сторінки"
+                />
+                <meta name="type" property="og:type" content="website" />
+                <meta
+                    name="description"
+                    property="og:description"
+                    content="Опис вашої сторінки"
+                />
+                <meta
+                    name="image"
+                    property="og:image"
+                    content="/images/iLMT2.jpeg"
+                />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
