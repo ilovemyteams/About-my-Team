@@ -194,6 +194,21 @@ const config: Config = {
                     },
                 },
 
+                curveRotate: {
+                    "0%": {
+                        transform: "rotate(0deg)",
+                    },
+                    "25%, 45%": {
+                        transform: "rotate(115deg)",
+                    },
+                    "65%, 85%": {
+                        transform: "rotate(35deg)",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg)",
+                    },
+                },
+
                 //broken heart for 404 page
                 pulsationHeart: {
                     "0%": {
@@ -282,6 +297,7 @@ const config: Config = {
                 brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
                 brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
                 rotation: "rotate 1800ms linear infinite",
+                curveRotation: "curveRotate 3500ms linear 1",
             },
         },
         backgroundImage: {

@@ -27,8 +27,8 @@ export const QaSection = () => {
                         src="/images/curve.svg"
                         width="0"
                         height="0"
-                        alt="animated image heart"
-                        className={`hidden pc:block absolute top-[-16px] left-[-254px] min-w-[485px] h-auto ${inView && "animate-pulsation"}`}
+                        alt="animated image curve"
+                        className={`hidden pc:block absolute top-[-16px] left-[-254px] min-w-[485px] h-auto ${inView && "animate-curveRotation"}`}
                     />
                     <QuestionsList />
                 </div>
