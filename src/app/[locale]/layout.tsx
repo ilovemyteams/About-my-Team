@@ -65,6 +65,9 @@ export default function LocaleLayout({
 
     return (
         <html lang={locale} suppressHydrationWarning>
+            <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
                     className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
