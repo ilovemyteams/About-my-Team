@@ -26,7 +26,7 @@ export const OurTeamSection = () => {
                     setSelectedOption={setSelectedOption}
                 />
                 <MenuTeamSection />
-                <div className="border-[1px] border-purple-stroke">
+                <div className="mt-[24px] border-[1px] border-purple-stroke">
                     <MemberCard data={membersData[0]} />
                 </div>
             </div>
