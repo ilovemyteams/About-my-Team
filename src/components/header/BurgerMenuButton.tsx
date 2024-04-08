@@ -15,6 +15,7 @@ export const BurgerMenuButton = ({
 }: BurgerMenuButtonProps) => {
     return (
         <button
+            aria-label="open menu button"
             type="button"
             onClick={toggleHeaderMenuOpen}
             className="relative w-12 h-12 p-[7.2px] pc:p-1 flex justify-center items-center icon-hover-rounded-purple icon-hover-rounded-purple:hover

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Cookies from "js-cookie";
 
-export function ThemeSwitcher() {
+export function ThemeSwitcher({ id }: { id: string }) {
     const { setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState<boolean>(false);
 
@@ -38,6 +38,7 @@ export function ThemeSwitcher() {
     // TODO: update switcher border colors for light theme and set display block when design is ready
     return (
         <div
+            id={id}
             className={`hidden relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">

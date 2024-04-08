@@ -19,6 +19,7 @@ export const Button = ({
 }: ButtonProps) => {
     return (
         <button
+            aria-label="contact button"
             type={type}
             disabled={disabled}
             onClick={onClick}

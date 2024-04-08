@@ -17,8 +17,12 @@ export function Accordion({ item }: AccordionProps) {
     };
 
     return (
-        <div className="min-h-[72px] pc:min-h-[98px] border-b-[1px] border-purple-stroke">
-            <button onClick={changeStateAccordion} className="w-full">
+        <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] border-purple-stroke">
+            <button
+                aria-label="open answer button"
+                onClick={changeStateAccordion}
+                className="w-full"
+            >
                 <div className="flex justify-between my-[16px] pc:mb-[32px]">
                     <div>
                         <summary className="flex-none font-caviar text-white self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
@@ -43,6 +47,6 @@ export function Accordion({ item }: AccordionProps) {
             >
                 {item.answer}
             </p>
-        </div>
+        </li>
     );
 }

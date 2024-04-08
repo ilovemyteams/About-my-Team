@@ -11,7 +11,7 @@ export const HeroSection = () => {
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
-                <ThemeSwitcher />
+                <ThemeSwitcher id="HeroSectionThemeSwitcher" />
             </div>
             <Image
                 src="/images/heroTitle.svg"
