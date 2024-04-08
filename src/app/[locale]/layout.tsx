@@ -49,9 +49,7 @@ export async function generateMetadata({
         title: t("title"),
         description: t("description"),
         openGraph: {
-            title: "i Love My Team",
             description: t("description"),
-            imege: "/images/iLMT2.jpeg",
             type: "website",
         },
     };
@@ -73,6 +71,17 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                <meta
+                    name="title"
+                    property="og:title"
+                    content="Заголовок вашої сторінки"
+                />
+                <meta name="type" property="og:type" content="website" />
+                <meta
+                    name="image"
+                    property="og:image"
+                    content="/images/iLMT2.jpeg"
+                />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
