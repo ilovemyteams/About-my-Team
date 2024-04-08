@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { SocialLink } from "../header/SocialLinks/SocialLink";
+import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 //import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "./data/membersData";
 import { useLocale } from "next-intl";
@@ -11,7 +11,7 @@ interface MemberCardProps {
     data: MemberDataItemType;
 }
 export const MemberCard = ({ data }: MemberCardProps) => {
-    const { id, imageURL, position } = data.data;
+    const { id, imageURL, position, socialLinks } = data.data;
     const locale = useLocale();
     console.log(imageURL);
 
@@ -28,7 +28,11 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                     <h4>{data[locale as LocaleType]?.name}</h4>
                     <div>
                         <p>{position}</p>
-                        <SocialLink url="" />
+                        <SocialLinkSmallMemberCard
+                            url={socialLinks.linkedin}
+                            image={"/public/images/linkedin.svg"}
+                            alt={"Linkedin"}
+                        />
                     </div>
                 </div>
             </div>

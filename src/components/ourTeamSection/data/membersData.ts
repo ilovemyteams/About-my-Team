@@ -289,7 +289,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "7",
             imageURL:
-                "https://drive.google.com/file/d/106VQNm8dEBMDwXBeVKkQEtViW1GurUak/view?usp=drive_link",
+                "https://drive.google.com/file/d/1O0gd8VAJLvKbOsip4e6WwaH9WTUu9sX9/view?usp=drive_link",
             position: "QA",
             categoryName: "qa",
             projectsExperience: ["www.site.ua"],

@@ -1,5 +1,5 @@
 import { Section } from "../shared/Section";
-import { TitleQA } from "./TitleQA";
+import { TitleQA } from "./TitleQa/TitleQA";
 import { QuestionsList } from "./QuestionsList";
 import { SharePopover } from "../shared/SharePopover";
 

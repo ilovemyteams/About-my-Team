@@ -93,6 +93,7 @@ export const NotificationModal = ({
                     <button
                         type="button"
                         onClick={closeNotification}
+                        aria-label="close button"
                         className="cursor-pointer absolute top-[2px] right-4 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
