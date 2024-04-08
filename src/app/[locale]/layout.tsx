@@ -69,6 +69,8 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                <meta property="og:title" content="Заголовок вашої сторінки" />
+                <meta property="og:description" content="Опис вашої сторінки" />
                 <meta
                     property="og:image"
                     content="https://drive.google.com/uc?export=view&id=1vLCmYLAKv-ykFp1yWj9b_29tHP6eOiPv"
