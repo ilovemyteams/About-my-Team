@@ -46,7 +46,7 @@ export async function generateMetadata({
     const t = await getTranslations({ locale, namespace: "Home" });
 
     return {
-        title: t("title"),
+        title: "i Love My Team",
         description: t("description"),
         openGraph: {
             description: t("description"),
@@ -74,7 +74,7 @@ export default function LocaleLayout({
                 <meta
                     name="title"
                     property="og:title"
-                    content="Заголовок вашої сторінки"
+                    content="i Love My Team"
                 />
                 <meta name="type" property="og:type" content="website" />
                 <meta
