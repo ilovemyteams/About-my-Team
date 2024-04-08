@@ -20,7 +20,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             <li key={id} className="list-none">
                 <div className="">
                     <Image
-                        src={imageURL}
+                        src="" //imageURL
                         width={288}
                         height={158}
                         alt={data[locale as LocaleType]?.name}
