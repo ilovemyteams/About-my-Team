@@ -20,7 +20,11 @@ const CopyLinkButton = ({
         copyToClipboard(link);
     };
 
-    return <button onClick={handleCopyLink}>{children}</button>;
+    return (
+        <button aria-label="copy share link button" onClick={handleCopyLink}>
+            {children}
+        </button>
+    );
 };
 
 export default CopyLinkButton;
