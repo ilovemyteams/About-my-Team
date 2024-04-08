@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
-//import { NoImageHeart } from "../shared/NoImageHeart";
+import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "./data/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
@@ -11,36 +11,41 @@ interface MemberCardProps {
     data: MemberDataItemType;
 }
 export const MemberCard = ({ data }: MemberCardProps) => {
-    const { id, imageURL, position, socialLinks } = data.data;
+    const { imageURL, position, socialLinks } = data.data;
     const locale = useLocale();
 
     return (
-        <div className="w-[288px} h-[240px] border-[1px] border-purple-stroke tab:max-w-full ">
-            <li key={id} className="list-none">
-                <div className="">
+        <div className="max-w-[288px] max-h-[240px] box-border border-[1px] border-purple-stroke tab:w-[250px] tab:h-[270px] pc:w-[270px] pc:h-[292px] ">
+            <div className="max-w-[288px] max-h-[158px] relative overflow-hidden tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px]">
+                {imageURL ? (
                     <Image
                         src={imageURL}
-                        width={288}
+                        width={284}
                         height={158}
+                        objectFit="cover"
+                        className="bg-white "
                         alt={data[locale as LocaleType]?.name}
                     />
-                    <div className="mt-[8px] ml-[8px] mb-[12px]">
-                        <h4 className="font-caviar text-baseb mb-[4px]">
-                            {data[locale as LocaleType]?.name}
-                        </h4>
-                        <div className="flex font-geist text-xs justify-between items-center">
-                            <p className="py-[1.5px]">
-                                {position.toUpperCase()}
-                            </p>
-                            <SocialLinkSmallMemberCard
-                                url={socialLinks.linkedin}
-                                image={"linkedin.svg"}
-                                alt={"Linkedin"}
-                            />
-                        </div>
-                    </div>
+                ) : (
+                    <NoImageHeart className="w-[43%] tab:w-[50%]" />
+                )}
+            </div>
+
+            <div className="mt-[8px] ml-[8px] mb-[12px]">
+                <h4 className="font-caviar text-baseb text-white mb-[4px]">
+                    {data[locale as LocaleType]?.name}
+                </h4>
+                <div className="flex font-geist text-xs justify-between items-center">
+                    <p className="text-purple-50 py-[1.5px]">
+                        {position.toUpperCase()}
+                    </p>
+                    <SocialLinkSmallMemberCard
+                        url={socialLinks.linkedin}
+                        image={"linkedin.svg"}
+                        alt={"Linkedin"}
+                    />
                 </div>
-            </li>
+            </div>
         </div>
     );
 };

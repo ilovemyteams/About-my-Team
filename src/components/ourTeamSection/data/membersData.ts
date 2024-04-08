@@ -35,8 +35,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "1",
             imageURL:
-                //"https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=drive_link",
-                "https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=sharing",
+                "https://drive.google.com/uc?export=view&id=1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th",
             position: "product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
@@ -72,7 +71,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "2",
             imageURL:
-                "https://drive.google.com/file/d/1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9",
             position: "Graphic Designer/ UX UI Designer",
             categoryName: "designer",
             projectsExperience: ["www.website.ua"],
@@ -115,7 +114,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "3",
             imageURL:
-                "https://drive.google.com/file/d/1HVqkdA5SXIYY3LS1hu3AuREcm8tpMeiB/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1HVqkdA5SXIYY3LS1hu3AuREcm8tpMeiB",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
@@ -162,7 +161,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "4",
             imageURL:
-                "https://drive.google.com/file/d/1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
@@ -209,7 +208,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "5",
             imageURL:
-                "https://drive.google.com/file/d/18H3nSMwOWVGQEImzAqvA_g155njZ1LoO/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=18H3nSMwOWVGQEImzAqvA_g155njZ1LoO",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
@@ -253,7 +252,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "6",
             imageURL:
-                "https://drive.google.com/file/d/1mYt2uFc8zwv8ML17_0Ur09-QBebFeFko/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1mYt2uFc8zwv8ML17_0Ur09-QBebFeFko",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["www.site.ua"],
@@ -290,7 +289,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "7",
             imageURL:
-                "https://drive.google.com/file/d/1O0gd8VAJLvKbOsip4e6WwaH9WTUu9sX9/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1O0gd8VAJLvKbOsip4e6WwaH9WTUu9sX9",
             position: "QA",
             categoryName: "qa",
             projectsExperience: ["www.site.ua"],
@@ -336,7 +335,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "8",
             imageURL:
-                "https://drive.google.com/file/d/1-dja5FnlCvSdAl5kF9d6rvI4UXGQpYY8/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1-dja5FnlCvSdAl5kF9d6rvI4UXGQpYY8",
             position: "QA",
             categoryName: "qa",
             projectsExperience: [
@@ -394,7 +393,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "9",
             imageURL:
-                "https://drive.google.com/file/d/1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR",
+            //https://drive.google.com/file/d/1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR/view?usp=sharing
             position: "BA",
             categoryName: "business-analytic",
             projectsExperience: [""],
@@ -439,7 +439,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "10",
             imageURL:
-                "https://drive.google.com/file/d/1DpxD47mPfO1QguB1Il7Nw1pW6uMlEikd/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1DpxD47mPfO1QguB1Il7Nw1pW6uMlEikd",
             position: "PM/SM",
             categoryName: "manager",
             projectsExperience: [""],
@@ -485,7 +485,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "11",
             imageURL:
-                "https://drive.google.com/file/d/1N_1jwFLVPJB060F7E1bjQgQHrD4DsCdh/view?usp=drive_link",
+                "https://drive.google.com/uc?export=view&id=1N_1jwFLVPJB060F7E1bjQgQHrD4DsCdh",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: [""],

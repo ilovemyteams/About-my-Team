@@ -3,10 +3,9 @@
 import { Section } from "../shared/Section";
 import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
-import { MemberCard } from "./MemberCard";
-import { membersData } from "./data/membersData";
 import { MenuTeamSectionMobile } from "./MenuTeamSectionMobile";
 import { useState } from "react";
+import { MemberCardsList } from "./MemberCardsList";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -27,7 +26,7 @@ export const OurTeamSection = () => {
                 />
                 <MenuTeamSection />
                 <div className="mt-[24px] border-[1px] border-purple-stroke">
-                    <MemberCard data={membersData[0]} />
+                    <MemberCardsList />
                 </div>
             </div>
         </Section>
