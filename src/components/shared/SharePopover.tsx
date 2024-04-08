@@ -31,6 +31,8 @@ export const SharePopover = ({
     const onClose = () => {
         setIsOpen(false);
     };
+    const siteTitle = getTranslation("Home.title");
+    const siteDescription = getTranslation("Home.description");
     const pathname =
         typeof window !== "undefined" ? window.location.pathname : "";
     const urlShare = id
@@ -90,7 +92,7 @@ export const SharePopover = ({
                                 <TelegramShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`i love my team ${id ? `#${id}` : ``}`}
+                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
                                     <Image
                                         src="/images/telegramIcon.svg"
@@ -104,7 +106,7 @@ export const SharePopover = ({
                                 <FacebookShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`i love my team ${id ? `#${id}` : ``}`}
+                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
                                     <Image
                                         src="/images/fbIcon.svg"
@@ -118,8 +120,8 @@ export const SharePopover = ({
                                 <LinkedinShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`i love my team ${id ? `#${id}` : ``}`}
-                                    summary="Here can be our discription :)"
+                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
+                                    summary={siteDescription}
                                 >
                                     <Image
                                         src="/images/linkedin.svg"
@@ -133,7 +135,7 @@ export const SharePopover = ({
                                 <WhatsappShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`i love my team ${id ? `#${id}` : ``}`}
+                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                     separator=" - "
                                 >
                                     <Image
