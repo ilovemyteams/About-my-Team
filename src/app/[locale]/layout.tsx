@@ -49,7 +49,7 @@ export async function generateMetadata({
         title: t("title"),
         description: t("description"),
         openGraph: {
-            title: t("title"),
+            title: "i Love My Team",
             description: t("description"),
             imege: "/images/iLMT2.jpeg",
             type: "website",
