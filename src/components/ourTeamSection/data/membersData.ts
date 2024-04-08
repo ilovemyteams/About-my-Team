@@ -35,7 +35,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "1",
             imageURL:
-                "https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=drive_link",
+                //"https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=drive_link",
+                "https://drive.google.com/file/d/1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th/view?usp=sharing",
             position: "product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
