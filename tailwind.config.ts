@@ -297,7 +297,7 @@ const config: Config = {
                 brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
                 brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
                 rotation: "rotate 1800ms linear infinite",
-                curveRotation: "curveRotate 3500ms linear 1",
+                curveRotation: "curveRotate 3500ms ease-out 1",
             },
         },
         backgroundImage: {
