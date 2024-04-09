@@ -43,13 +43,13 @@ export async function generateMetadata({
 }: {
     params: { locale: string };
 }) {
-    const t = await getTranslations({ locale, namespace: "Home" });
+    const getTranslation = await getTranslations({ locale, namespace: "Home" });
 
     return {
         title: "i Love My Team",
-        description: t("description"),
+        description: getTranslation("description"),
         openGraph: {
-            description: t("description"),
+            description: getTranslation("description"),
             type: "website",
         },
     };
