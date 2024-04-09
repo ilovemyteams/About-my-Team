@@ -5,6 +5,7 @@ import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
 import { MenuTeamSectionMobile } from "./MenuTeamSectionMobile";
 import { useState } from "react";
+import { MemberCardsList } from "./MemberCardsList";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -24,8 +25,8 @@ export const OurTeamSection = () => {
                     setSelectedOption={setSelectedOption}
                 />
                 <MenuTeamSection />
-                <div className="border-[1px] border-purple-stroke">
-                    Members cards
+                <div className="mt-[24px] border-[1px] border-purple-stroke">
+                    <MemberCardsList />
                 </div>
             </div>
         </Section>
