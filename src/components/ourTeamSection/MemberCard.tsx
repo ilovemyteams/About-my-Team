@@ -23,7 +23,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                         width={284}
                         height={158}
                         objectFit="cover"
-                        className="bg-white "
+                        className="hover:scale-110 cursor-pointer"
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
