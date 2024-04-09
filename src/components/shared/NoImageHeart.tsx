@@ -7,7 +7,7 @@ export const NoImageHeart = ({ className }: { className?: string }) => {
             width={240}
             height="0"
             alt="logo heart"
-            className={`min-w-[123px] max-w-[240px] h-auto absolute top-0 right-0 ${className}`}
+            className={`min-w-[102px] max-w-[240px] h-auto ${className}`}
         />
     );
 };

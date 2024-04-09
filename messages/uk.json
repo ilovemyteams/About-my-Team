@@ -101,7 +101,8 @@
         "menuTopTitle": "Обрати",
         "listTitle": "учасники",
         "hoverButton": "переглянути профіль",
-        "teamsList": "команди"
+        "teamsList": "команди",
+        "yourPhoto": "Тут може бути твоє фото"
     },
     "Q&A": {
         "pageTitle": "q&a",
