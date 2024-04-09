@@ -19,15 +19,13 @@ export const OurTeamSection = () => {
     return (
         <Section id="team">
             <Title />
-            <div className="flex flex-col tab:flex-row tab:justify-between pc:h-[584px]">
+            <div className="flex flex-col tab:flex-row tab:justify-between">
                 <MenuTeamSectionMobile
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
                 />
                 <MenuTeamSection />
-                <div className="mt-[24px] border-[1px] border-purple-stroke">
-                    <MemberCardsList />
-                </div>
+                <MemberCardsList />
             </div>
         </Section>
     );

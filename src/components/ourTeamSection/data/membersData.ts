@@ -72,7 +72,7 @@ export const membersData: MemberDataItemType[] = [
             id: "2",
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9",
-            position: "Graphic Designer/ UX UI Designer",
+            position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["www.website.ua"],
             pricePerHour: "",

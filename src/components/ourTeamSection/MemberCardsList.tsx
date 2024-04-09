@@ -3,7 +3,7 @@ import { membersData } from "./data/membersData";
 
 export const MemberCardsList = () => {
     return (
-        <ul className="block tab:flex-col">
+        <ul className="flex flex-wrap">
             {membersData.map(data => (
                 <li key={data.data.id} className="list-none">
                     <MemberCard data={data} />
