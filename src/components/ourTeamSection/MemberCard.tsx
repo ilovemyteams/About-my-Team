@@ -23,14 +23,14 @@ export const MemberCard = ({ data }: MemberCardProps) => {
         >
             <div
                 className="min-w-[286px] aspect-[288/158]
-             relative  tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px]"
+             relative  tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px] overflow-hidden"
             >
                 {imageURL ? (
                     <Image
                         src={imageURL}
                         width={286}
                         height={158}
-                        className="hover:scale-110 cursor-pointer object-cover w-full aspect-[286/158]"
+                        className="hover:scale-110 cursor-pointer object-cover w-full"
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
