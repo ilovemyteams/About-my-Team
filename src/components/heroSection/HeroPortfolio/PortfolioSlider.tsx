@@ -11,7 +11,7 @@ import {
 import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
 import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 import { LocaleType } from "@/types/LocaleType";
-import { portfolioData } from "../../portfolioSection/portfolioData";
+import { portfolioData } from "../../shared/mockedData/portfolioData";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 
