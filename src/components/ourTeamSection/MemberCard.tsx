@@ -26,12 +26,12 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
-                    <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-0 right-0 " />
+                    <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
                 )}
             </div>
 
             <div className="min-h-[106px] flex flex-col justify-between">
-                <h4 className="font-caviar text-baseb text-white">
+                <h4 className="font-caviar text-baseb text-white pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>
                 <div className="flex font-geist text-xs justify-between items-center">
