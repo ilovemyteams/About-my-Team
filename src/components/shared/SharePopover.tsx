@@ -67,6 +67,7 @@ export const SharePopover = ({
                 <Image
                     src="/images/bgImages/shareMob.svg"
                     fill
+                    priority
                     alt="background image"
                     className="object-cover absolute inset-0 w-[300px] h-[384px] z-[-10] "
                 />
