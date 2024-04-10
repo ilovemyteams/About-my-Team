@@ -10,6 +10,11 @@ const nextConfig = {
                 hostname: "res.cloudinary.com",
                 port: "",
             },
+            {
+                protocol: "https",
+                hostname: "drive.google.com",
+                port: "",
+            },
         ],
         domains: ["drive.google.com"],
     },
