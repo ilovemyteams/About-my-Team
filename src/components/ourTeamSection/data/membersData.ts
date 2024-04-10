@@ -81,7 +81,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/ihordrn/",
                 github: "https://github.com/Mazayw",
-                telegram: "",
+                telegram: "https://t.me/ihordrn",
             },
             tools: [
                 "Figma",
