@@ -95,10 +95,10 @@
         "email": "i.love.my.team.2023@gmail.com"
     },
     "OurTeam": {
-        "pageTitle": "Команда",
+        "pageTitle": "команда",
         "pageBigTitle": "Обери свою ідеальну команду",
         "menuTopTitle": "Обрати",
-        "listTitle": "учасники",
+        "listTitle": "спеціалісти",
         "hoverButton": "переглянути профіль",
         "teamsList": "команди"
     },
