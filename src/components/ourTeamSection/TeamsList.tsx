@@ -1,6 +1,6 @@
 import { useTranslations, useLocale } from "next-intl";
 import { ListItem } from "./ListItem";
-import { portfolioData } from "../portfolioSection/portfolioData";
+import { portfolioData } from "../shared/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 export const TeamsList = () => {
