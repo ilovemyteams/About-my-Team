@@ -22,7 +22,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
            "
         >
             <div
-                className="min-w-[286px] aspect-[288/158]
+                className="min-w-[286px] aspect-[288/240]
              relative  tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px] overflow-hidden"
             >
                 {imageURL ? (
