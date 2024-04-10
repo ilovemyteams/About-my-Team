@@ -49,20 +49,20 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Сусанна Салата",
-            about: "Орієнтований на результат",
+            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
                 "Консультування, менторинг, стратегічне планування, бюджетування, управління проектами та командами, SCRUM Master",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
-            about: "Result oriented",
+            about: "Work should bring inspiration and satisfaction, not just money.",
             services: "There will be text in English",
             team: "I Love My Team",
         },
         pl: {
             name: "Susanna Salata",
-            about: "There will be text in Polish",
+            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
             services: "There will be text in Polish",
             team: "I Love My Team",
         },
@@ -70,6 +70,97 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "2",
+            imageURL: "",
+            position: "fullstack developer",
+            categoryName: "developers",
+            projectsExperience: [
+                "https://baza-trainee.tech/ua",
+                "https://murrfecto.site/",
+            ],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/ihordrn/",
+                github: "https://github.com/Mazayw",
+                telegram: "",
+            },
+            tools: [
+                "Figma",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "MongoDB",
+                "PosgreSQL",
+                "CI/CD",
+                "Docker",
+                "DevOps",
+            ],
+        },
+        uk: {
+            name: "Ігор Дронішинець",
+            about: "Про себе цитата",
+            services:
+                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Ihor Dronishynets",
+            about: "There will be text in English",
+            services:
+                "Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Ihor Dronishynets",
+            about: "There will be text in Polish",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "3",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1mYt2uFc8zwv8ML17_0Ur09-QBebFeFko",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["www.site.ua"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
+                behance: "https://www.behance.net/iryna_stoliarova",
+                telegram: "https://t.me/iryna_stoliarova",
+            },
+            tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+        },
+        uk: {
+            name: "Ірина Столярова",
+            about: "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
+            services:
+                "Я надаю повний спектр послуг з розробки дизайну продуктів, включаючи дослідження ринку, аналіз конкурентів, дослідження користувачів, інформаційну архітектуру, та інтерактивні прототипи. ",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Iryna Stoliarova",
+            about: "Good design, first of all, needs to solve problems.",
+            services:
+                "I’ve been providing the full design service for products, including market research, competitor analysis, user research, information architecture, concepts, interactive prototypes.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Iryna Stoliarova",
+            about: "There will be text in Polish",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "4",
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9",
             position: "Graphic Designer",
@@ -79,7 +170,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
-                github: "",
+                behance: "https://www.behance.net/ad952d63",
                 telegram: "https://t.me/NazarenkoAnastasiya",
             },
             tools: [
@@ -105,100 +196,6 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Anastasiia Nazarenko",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "3",
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1HVqkdA5SXIYY3LS1hu3AuREcm8tpMeiB",
-            position: "FrontEnd Developer",
-            categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/posternak-olena/",
-                github: "https://github.com/OlenaPosternak",
-                telegram: "https://t.me/Posternak_Olena",
-            },
-            tools: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "NextJS",
-                "Taitwind",
-                "MUI",
-                "MongoDB",
-                "Node.js",
-            ],
-        },
-        uk: {
-            name: "Олена Постернак",
-            about: "Якась офігенна цитата про себе",
-            services:
-                "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olena Posternak",
-            about: "Something encredible about you",
-            services: "There will be text in English",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olena Posternak",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "4",
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC",
-            position: "FrontEnd Developer",
-            categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/olgamykhailova/",
-                github: "https://github.com/OlgaMykhailova",
-                telegram: "https://t.me/Olya_Kaktusya",
-            },
-            tools: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "NextJS",
-                "React Native",
-                "Tailwind",
-                "Node.js",
-                "MongoDB",
-            ],
-        },
-        uk: {
-            name: "Ольша Михайлова",
-            about: "Якась офігенна цитата про себе",
-            services:
-                "Моя мета - розробка веб-застосунків, що вражають своєю зручністю для користувачів та ефективністю для бізнесу. Я прагну створювати продукти різного рівня складності, що забезпечують не лише функціональність, але й естетичність. Мій підхід полягає в тому, щоб допомагати клієнтам досягати бездоганних результатів шляхом поєднання максимальної корисності та привабливого дизайну у кожному проекті.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olga Mykhailova",
-            about: "Something encredible about you",
-            services: "There will be text in English",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olga Mykhailova",
             about: "There will be text in Polish",
             services: "There will be text in Polish",
             team: "I Love My Team",
@@ -252,34 +249,44 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "6",
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1mYt2uFc8zwv8ML17_0Ur09-QBebFeFko",
-            position: "UI/UX designer",
-            categoryName: "designer",
-            projectsExperience: ["www.site.ua"],
+                "https://drive.google.com/uc?export=view&id=1N_1jwFLVPJB060F7E1bjQgQHrD4DsCdh",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: [""],
             pricePerHour: "",
             socialLinks: {
-                linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
-                behance: "https://www.behance.net/iryna_stoliarova",
-                telegram: "https://t.me/iryna_stoliarova",
+                linkedin:
+                    "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
+                github: "https://github.com/NataPas2021",
+                telegram: "https://t.me/NataFFFenka",
             },
-            tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+            tools: [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Typescript",
+                "Redux Toolkit",
+                "React",
+                "Next.js",
+                "Node.js",
+                "Jira",
+                "Trello",
+            ],
         },
         uk: {
-            name: "Ірина Столярова",
-            about: "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
-            services:
-                "Я надаю повний спектр послуг з розробки дизайну продуктів, включаючи дослідження ринку, аналіз конкурентів, дослідження користувачів, інформаційну архітектуру, та інтерактивні прототипи. ",
+            name: "Наталія Пащенко",
+            about: "Не існує неможливого, потрібно просто знайти правильний шлях",
+            services: "Тут буде шось таки написано",
             team: "I Love My Team",
         },
         en: {
-            name: "Iryna Stoliarova",
-            about: "Good design, first of all, needs to solve problems.",
-            services:
-                "I’ve been providing the full design service for products, including market research, competitor analysis, user research, information architecture, concepts, interactive prototypes.",
+            name: "Nataliia Pashchenko",
+            about: "Text in en",
+            services: "Text in en",
             team: "I Love My Team",
         },
         pl: {
-            name: "Iryna Stoliarova",
+            name: "Daria Cherviakova",
             about: "There will be text in Polish",
             services: "There will be text in Polish",
             team: "I Love My Team",
@@ -288,6 +295,100 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "7",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1HVqkdA5SXIYY3LS1hu3AuREcm8tpMeiB",
+            position: "FrontEnd Developer",
+            categoryName: "developer",
+            projectsExperience: ["www.site.ua"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/posternak-olena/",
+                github: "https://github.com/OlenaPosternak",
+                telegram: "https://t.me/Posternak_Olena",
+            },
+            tools: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "Taitwind",
+                "MUI",
+                "MongoDB",
+                "Node.js",
+            ],
+        },
+        uk: {
+            name: "Олена Постернак",
+            about: "Якась офігенна цитата про себе",
+            services:
+                "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olena Posternak",
+            about: "Something encredible about you",
+            services: "There will be text in English",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olena Posternak",
+            about: "There will be text in Polish",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "8",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC",
+            position: "FrontEnd Developer",
+            categoryName: "developer",
+            projectsExperience: ["www.site.ua"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/olgamykhailova/",
+                github: "https://github.com/OlgaMykhailova",
+                telegram: "https://t.me/Olya_Kaktusya",
+            },
+            tools: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "React Native",
+                "Tailwind",
+                "Node.js",
+                "MongoDB",
+            ],
+        },
+        uk: {
+            name: "Ольша Михайлова",
+            about: "Якась офігенна цитата про себе",
+            services:
+                "Моя мета - розробка веб-застосунків, що вражають своєю зручністю для користувачів та ефективністю для бізнесу. Я прагну створювати продукти різного рівня складності, що забезпечують не лише функціональність, але й естетичність. Мій підхід полягає в тому, щоб допомагати клієнтам досягати бездоганних результатів шляхом поєднання максимальної корисності та привабливого дизайну у кожному проекті.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olga Mykhailova",
+            about: "Something encredible about you",
+            services: "There will be text in English",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olga Mykhailova",
+            about: "There will be text in Polish",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "9",
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O0gd8VAJLvKbOsip4e6WwaH9WTUu9sX9",
             position: "QA",
@@ -333,7 +434,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "8",
+            id: "10",
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1-dja5FnlCvSdAl5kF9d6rvI4UXGQpYY8",
             position: "QA",
@@ -391,53 +492,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "9",
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR",
-            //https://drive.google.com/file/d/1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR/view?usp=sharing
-            position: "BA",
-            categoryName: "business-analytic",
-            projectsExperience: [""],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
-                telegram: "",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Google Sheets/Docs.",
-                "UML",
-                "BPMN notations",
-                "Draw.io",
-                "Visio",
-                "Lucidchart",
-                "Figma",
-            ],
-        },
-        uk: {
-            name: "Ольга Кучальська",
-            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
-            services:
-                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olha Kuchalska",
-            about: "Text in en",
-            services: "Text in en",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olha Kuchalska",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "10",
+            id: "11",
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1DpxD47mPfO1QguB1Il7Nw1pW6uMlEikd",
             position: "PM/SM",
@@ -483,46 +538,44 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "11",
+            id: "12",
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1N_1jwFLVPJB060F7E1bjQgQHrD4DsCdh",
-            position: "Fullstack Developer",
-            categoryName: "developer",
+                "https://drive.google.com/uc?export=view&id=1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR",
+            position: "BA",
+            categoryName: "business-analytic",
             projectsExperience: [""],
             pricePerHour: "",
             socialLinks: {
-                linkedin:
-                    "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
-                github: "https://github.com/NataPas2021",
-                telegram: "",
+                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
+                telegram: "https://t.me/o_kuchalska",
             },
             tools: [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Typescript",
-                "Redux Toolkit",
-                "React",
-                "Next.js",
-                "Node.js",
                 "Jira",
-                "Trello",
+                "Confluence",
+                "Google Sheets/Docs.",
+                "UML",
+                "BPMN notations",
+                "Draw.io",
+                "Visio",
+                "Lucidchart",
+                "Figma",
             ],
         },
         uk: {
-            name: "Наталія Пащенко",
-            about: "Не існує неможливого, потрібно просто знайти правильний шлях",
-            services: "Тут буде шось таки написано",
+            name: "Ольга Кучальська",
+            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
+            services:
+                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
             team: "I Love My Team",
         },
         en: {
-            name: "Nataliia Pashchenko",
+            name: "Olha Kuchalska",
             about: "Text in en",
             services: "Text in en",
             team: "I Love My Team",
         },
         pl: {
-            name: "Daria Cherviakova",
+            name: "Olha Kuchalska",
             about: "There will be text in Polish",
             services: "There will be text in Polish",
             team: "I Love My Team",
