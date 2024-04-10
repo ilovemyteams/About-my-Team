@@ -1,7 +1,7 @@
 "use client";
 import { useState, Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { portfolioData } from "../portfolioSection/portfolioData";
+import { portfolioData } from "../shared/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 import { categoryNames } from "./data/categoryNames";
 import { СategoryNamesProp } from "./data/categoryNames";
