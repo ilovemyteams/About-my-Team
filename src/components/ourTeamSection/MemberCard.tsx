@@ -15,22 +15,14 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const locale = useLocale();
 
     return (
-        <div
-            className=" min-w-[288px] aspect-[288/240]
-          border-[1px] border-purple-stroke 
-          tab:w-[250px] tab:h-[270px] pc:w-[270px] pc:h-[292px]
-           "
-        >
-            <div
-                className="min-w-[286px] aspect-[288/240]
-             relative  tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px] overflow-hidden"
-            >
+        <div className="pt-2 pl-[6px] flex flex-col justify-between">
+            <div className="relative min-w-[128px] aspect-[128/150] pr-[6px]">
                 {imageURL ? (
                     <Image
                         src={imageURL}
-                        width={286}
-                        height={158}
-                        className="hover:scale-110 cursor-pointer object-cover w-full"
+                        width={246}
+                        height={196}
+                        className="hover:scale-105 cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
@@ -38,12 +30,14 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 )}
             </div>
 
-            <div className="mt-3 ml-3">
+            <div className="min-h-[106px] flex flex-col justify-between">
                 <h4 className="font-caviar text-baseb text-white">
                     {data[locale as LocaleType]?.name}
                 </h4>
                 <div className="flex font-geist text-xs justify-between items-center">
-                    <p className="text-purple-50">{position.toUpperCase()}</p>
+                    <p className="text-purple-50 w-min">
+                        {position.toUpperCase()}
+                    </p>
                     <SocialLinkSmallMemberCard
                         url={socialLinks.linkedin}
                         image={"linkedin.svg"}
