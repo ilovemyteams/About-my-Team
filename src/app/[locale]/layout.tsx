@@ -9,7 +9,6 @@ import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundIm
 import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import "./globals.css";
-
 const caviar = localFont({
     src: [
         {
@@ -17,7 +16,6 @@ const caviar = localFont({
             weight: "400",
             style: "normal",
         },
-
         {
             path: "../../fonts/CaviarDreams/CaviarDreams_Bold.ttf",
             weight: "700",
@@ -26,7 +24,6 @@ const caviar = localFont({
     ],
     variable: "--font-caviar",
 });
-
 const geist = localFont({
     src: [
         {
@@ -37,7 +34,6 @@ const geist = localFont({
     ],
     variable: "--font-geist",
 });
-
 export async function generateMetadata({
     params: { locale },
 }: {
@@ -50,10 +46,10 @@ export async function generateMetadata({
         description: getTranslation("description"),
         openGraph: {
             description: getTranslation("description"),
+            type: "website",
         },
     };
 }
-
 export default function LocaleLayout({
     children,
     params: { locale },
@@ -64,7 +60,6 @@ export default function LocaleLayout({
     const messages = useMessages();
     const cookieStore = cookies();
     const userTheme = cookieStore.get("theme") || { value: "dark" };
-
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
