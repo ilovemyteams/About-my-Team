@@ -3,8 +3,8 @@ import { useState, Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { portfolioData } from "../shared/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
-import { categoryNames } from "./data/categoryNames";
-import { СategoryNamesProp } from "./data/categoryNames";
+import { categoryNames } from "../shared/mockedData/categoryNames";
+import { СategoryNamesProp } from "../shared/mockedData/categoryNames";
 import { IconUp } from "../shared/Icons/IconUp";
 
 interface MenuMobileProps {

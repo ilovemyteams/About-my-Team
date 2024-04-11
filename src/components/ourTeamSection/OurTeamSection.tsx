@@ -6,7 +6,7 @@ import { MenuTeamSection } from "./MenuTeamSection";
 import { MenuTeamSectionMobile } from "./MenuTeamSectionMobile";
 import { useEffect, useState } from "react";
 import { MemberCardsList } from "./MemberCardsList";
-import { membersData } from "./data/membersData";
+import { membersData } from "../shared/mockedData/membersData";
 import { portfolioData } from "../shared/mockedData/portfolioData";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data

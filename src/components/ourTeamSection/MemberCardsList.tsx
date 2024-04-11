@@ -11,7 +11,7 @@ import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
-import { MemberDataItemType } from "./data/membersData";
+import { MemberDataItemType } from "../shared/mockedData/membersData";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
