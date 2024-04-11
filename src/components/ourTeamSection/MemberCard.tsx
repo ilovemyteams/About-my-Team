@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 import { NoImageHeart } from "../shared/NoImageHeart";
-import { MemberDataItemType } from "./data/membersData";
+import { MemberDataItemType } from "../shared/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
 interface MemberCardProps {

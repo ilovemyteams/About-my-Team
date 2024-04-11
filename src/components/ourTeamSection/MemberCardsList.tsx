@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
     NextButton,
@@ -9,9 +9,9 @@ import {
 import { EmblaOptionsType } from "embla-carousel";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { membersData } from "./data/membersData";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { MemberDataItemType } from "../shared/mockedData/membersData";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
@@ -19,7 +19,13 @@ const OPTIONS: EmblaOptionsType = {
     slidesToScroll: 2,
 };
 
-export const MemberCardsList = () => {
+export const MemberCardsList = ({
+    membersData,
+    optionType,
+}: {
+    membersData: MemberDataItemType[];
+    optionType: string;
+}) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
@@ -30,6 +36,17 @@ export const MemberCardsList = () => {
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+
+    const isFirstRender = useRef(true);
+
+    useEffect(() => {
+        if (!isFirstRender.current && emblaApi) {
+            // Reset the slider to the first slide whenever optionType changes
+            emblaApi.scrollTo(0);
+        } else {
+            isFirstRender.current = false;
+        }
+    }, [optionType, emblaApi, membersData]);
 
     return (
         <div className="relative embla min-w-full tab:hidden">
@@ -44,13 +61,15 @@ export const MemberCardsList = () => {
                                 <MemberCard data={data} />
                             </li>
                         ))}
-                        <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
-                            <JoinUsCard />
-                        </li>
+                        {optionType === "person" && (
+                            <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
+                                <JoinUsCard />
+                            </li>
+                        )}
                     </>
                 </ul>
                 <div className="embla__controls  mt-[16px] ">
-                    <div className="embla__buttons flex justify-center gap-4">
+                    <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto]">
                         <PrevButton
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}

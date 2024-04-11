@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 import { ListItem } from "./ListItem";
-import { categoryNames } from "./data/categoryNames";
+import { categoryNames } from "../shared/mockedData/categoryNames";
 import { LocaleType } from "@/types/LocaleType";
 
 export const CategoriesList = () => {
