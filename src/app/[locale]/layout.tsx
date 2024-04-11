@@ -93,7 +93,7 @@ export default function LocaleLayout({
                 <meta
                     name="image"
                     property="og:image"
-                    content="/images/imageForSharing.jpeg"
+                    content="https://drive.google.com/uc?export=view&id=1DDIgwyieVWglqDissESxHSCJHUsRRVbs"
                 />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
