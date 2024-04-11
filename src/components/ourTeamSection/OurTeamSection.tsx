@@ -43,6 +43,7 @@ export const OurTeamSection = () => {
             }
         }
     }, [selectedOption]);
+
     return (
         <Section id="team">
             <Title />

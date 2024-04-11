@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
     NextButton,
@@ -36,6 +36,17 @@ export const MemberCardsList = ({
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+
+    const isFirstRender = useRef(true);
+
+    useEffect(() => {
+        if (!isFirstRender.current && emblaApi) {
+            // Reset the slider to the first slide whenever optionType changes
+            emblaApi.scrollTo(0);
+        } else {
+            isFirstRender.current = false;
+        }
+    }, [optionType, emblaApi]);
 
     return (
         <div className="relative embla min-w-full tab:hidden">
