@@ -52,12 +52,6 @@ export async function generateMetadata({
     return {
         title: getTranslation("title"),
         description: getTranslation("description"),
-        openGraph: {
-            title: getTranslation("title"),
-            description: getTranslation("description"),
-            type: "website",
-            image: "/images/imageForSharing.jpeg",
-        },
     };
 }
 
@@ -71,6 +65,7 @@ export default function LocaleLayout({
     const messages = useMessages();
     const getTranslation = useTranslations("Home");
     const openGraphTitle = getTranslation("title");
+    const openGraphDescription = getTranslation("description");
     const cookieStore = cookies();
     const userTheme = cookieStore.get("theme") || { value: "dark" };
 
@@ -83,6 +78,12 @@ export default function LocaleLayout({
                     property="og:title"
                     content={openGraphTitle}
                 />
+                <meta
+                    name="description"
+                    property="og:description"
+                    content={openGraphDescription}
+                />
+                <meta name="type" property="og:type" content="website" />
                 <meta
                     name="image"
                     property="og:image"
