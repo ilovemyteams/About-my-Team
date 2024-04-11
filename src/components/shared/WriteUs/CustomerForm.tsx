@@ -33,7 +33,7 @@ const textLabelStyles = "absolute transition-translate duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
 const textAreaStyles =
-    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-purple-stroke scrollbar-track-transparent";
+    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
