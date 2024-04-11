@@ -52,6 +52,12 @@ export async function generateMetadata({
     return {
         title: getTranslation("title"),
         description: getTranslation("description"),
+        openGraph: {
+            title: getTranslation("title"),
+            description: getTranslation("description"),
+            type: "website",
+            image: "/images/imageForSharing.jpeg",
+        },
     };
 }
 
