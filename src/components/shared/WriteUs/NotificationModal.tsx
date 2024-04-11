@@ -84,7 +84,7 @@ export const NotificationModal = ({
                     src={
                         isError
                             ? "/images/bgImagesNotification/bgErrorNotificationDesktop.png"
-                            : "/images/bgImagesNotification/bgOkNotificationsDesktop.png"
+                            : "/images/bgImagesNotification/bgOkNotificationDesktop.png"
                     }
                     alt="background"
                     width="0"
