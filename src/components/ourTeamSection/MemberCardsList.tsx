@@ -46,7 +46,7 @@ export const MemberCardsList = ({
         } else {
             isFirstRender.current = false;
         }
-    }, [optionType, emblaApi]);
+    }, [optionType, emblaApi, membersData]);
 
     return (
         <div className="relative embla min-w-full tab:hidden">
