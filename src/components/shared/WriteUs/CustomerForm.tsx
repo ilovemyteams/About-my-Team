@@ -26,12 +26,14 @@ export interface ValuesWriteUsFormType {
 }
 
 const labelStyles =
-    "relative appearance-none w-full h-[60px] py-[13px] outline-none text-base";
+    "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
 const labelTextAreaStyles =
-    "relative w-full h-[108px] pb-[13px] outline-none text-base";
+    "relative w-full h-[122px] pb-[12px] outline-none text-base";
 const textLabelStyles = "absolute transition-translate duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
+const textAreaStyles =
+    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
@@ -249,37 +251,41 @@ export const CustomerForm = ({
                     </label>
                     <label className={`${labelTextAreaStyles}`}>
                         <p
-                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-[5px] text-xxs" : "top-[25px] text-base"}`}
+                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-0 text-xxs" : "top-[20px] text-base"}`}
                         >
                             {getTranslation("messageLabel")}
                         </p>
-                        <Field
-                            as="textarea"
-                            name="message"
-                            type="text"
-                            autoComplete="on"
-                            placeholder={
-                                status === "message"
-                                    ? getTranslation("messagePlaceholder")
-                                    : ""
-                            }
-                            onFocus={() => setStatus("message")}
-                            onBlur={handleBlur}
-                            className={`${fieldStyles} pt-6 pb-1 resize-none ${touched.message && errors.message ? "border-error text-error" : values.message || status === "message" ? "border-grey text-grey" : "border-purple-stroke"}`}
-                        ></Field>
+                        <div
+                            className={`pb-[7px] border-b-[1px] ${touched.message && errors.message ? "border-error" : values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                        >
+                            <Field
+                                as="textarea"
+                                name="message"
+                                type="text"
+                                autoComplete="on"
+                                placeholder={
+                                    status === "message"
+                                        ? getTranslation("messagePlaceholder")
+                                        : ""
+                                }
+                                onFocus={() => setStatus("message")}
+                                onBlur={handleBlur}
+                                className={`${textAreaStyles} resize-none ${touched.message && errors.message ? "text-error" : "text-grey"}`}
+                            ></Field>
+                        </div>
                         <ErrorMessage
                             name="message"
                             component="p"
                             className={errorStyles}
                         ></ErrorMessage>
                     </label>
-                    <div className="w-full mt-8">
+                    <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
                         <p
                             className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-grey"}`}
                         >
                             {getTranslation("requiredField")}
                         </p>
-                        <p className="max-w-[372px] mb-8 text-xs tab:text-sm">
+                        <p className="max-w-[372px] text-xs tab:text-sm">
                             {getTranslation("informedAgreement")}{" "}
                             <a
                                 href="/"

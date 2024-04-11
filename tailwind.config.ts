@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 import { nextui } from "@nextui-org/react";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 const config: Config = {
     content: [
@@ -314,6 +315,10 @@ const config: Config = {
     },
     plugins: [
         nextui(),
+        tailwindScrollbar({
+            nocompatible: true,
+            preferredStrategy: "pseudoelements",
+        }),
         plugin(function ({ matchUtilities, theme }) {
             matchUtilities(
                 {
