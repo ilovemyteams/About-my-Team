@@ -26,12 +26,14 @@ export interface ValuesWriteUsFormType {
 }
 
 const labelStyles =
-    "relative appearance-none w-full h-[60px] py-[13px] outline-none text-base";
+    "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
 const labelTextAreaStyles =
-    "relative w-full h-[108px] pb-[13px] outline-none text-base";
+    "relative w-full h-[115px] pb-[12px] outline-none text-base";
 const textLabelStyles = "absolute transition-translate duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
+const textAreaStyles =
+    "block appearance-none w-full h-[80px] mt-[20px] pb-[7px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-purple-stroke scrollbar-track-transparent";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
@@ -249,7 +251,7 @@ export const CustomerForm = ({
                     </label>
                     <label className={`${labelTextAreaStyles}`}>
                         <p
-                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-[5px] text-xxs" : "top-[25px] text-base"}`}
+                            className={`${textLabelStyles} ${values.message || status === "message" ? "top-0 text-xxs" : "top-[20px] text-base"}`}
                         >
                             {getTranslation("messageLabel")}
                         </p>
@@ -265,7 +267,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("message")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} pt-6 pb-1 resize-none ${touched.message && errors.message ? "border-error text-error" : values.message || status === "message" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${textAreaStyles} resize-none ${touched.message && errors.message ? "border-error text-error" : values.message || status === "message" ? "border-grey text-grey" : "border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="message"
