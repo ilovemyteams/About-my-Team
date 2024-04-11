@@ -40,7 +40,7 @@ export const WriteUsModal = ({
                     screenSizeName !== tabletName
                 }
                 hideCloseButton={true}
-                className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:h-[789px] pc:h-[813px]
+                className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:min-h-[789px] pc:min-h-[813px]
                 px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
                 bg-purple-400"
                 classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
