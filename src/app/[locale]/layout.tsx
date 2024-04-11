@@ -1,7 +1,11 @@
 import React from "react";
 import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import {
+    NextIntlClientProvider,
+    useMessages,
+    useTranslations,
+} from "next-intl";
 import localFont from "next/font/local";
 import { Providers } from "./providers";
 import { Header } from "@/src/components/header/Header";
@@ -52,6 +56,7 @@ export async function generateMetadata({
             title: getTranslation("title"),
             description: getTranslation("description"),
             type: "website",
+            image: "/images/imageForSharing.jpeg",
         },
     };
 }
@@ -64,7 +69,8 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
-
+    const getTranslation = useTranslations("Home");
+    const openGraphTitle = getTranslation("title");
     const cookieStore = cookies();
     const userTheme = cookieStore.get("theme") || { value: "dark" };
 
@@ -72,6 +78,11 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                <meta
+                    name="title"
+                    property="og:title"
+                    content={openGraphTitle}
+                />
                 <meta
                     name="image"
                     property="og:image"
