@@ -15,28 +15,29 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const locale = useLocale();
 
     return (
-        <div className="max-w-[288px]  box-border border-[1px] border-purple-stroke tab:w-[250px] tab:h-[270px] pc:w-[270px] pc:h-[292px] ">
-            <div className="max-w-[288px] relative overflow-hidden tab:m-[8px] pc:m-[12px] tab:w-[234px] tab:h-[187px] pc:w-[246px] pc:h-[196px]">
+        <div className="pt-2 pl-[6px] flex flex-col justify-between">
+            <div className="relative min-w-[128px] aspect-[128/150] pr-[6px]">
                 {imageURL ? (
                     <Image
                         src={imageURL}
-                        width={284}
-                        height={158}
-                        objectFit="cover"
-                        className="hover:scale-110 cursor-pointer"
+                        width={246}
+                        height={196}
+                        className="hover:scale-105 cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
-                    <NoImageHeart className="w-[43%] tab:w-[50%]" />
+                    <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
                 )}
             </div>
 
-            <div className="mt-3 ml-3">
-                <h4 className="font-caviar text-baseb text-white">
+            <div className="min-h-[106px] flex flex-col justify-between">
+                <h4 className="font-caviar text-baseb text-white pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>
                 <div className="flex font-geist text-xs justify-between items-center">
-                    <p className="text-purple-50">{position.toUpperCase()}</p>
+                    <p className="text-purple-50 w-min">
+                        {position.toUpperCase()}
+                    </p>
                     <SocialLinkSmallMemberCard
                         url={socialLinks.linkedin}
                         image={"linkedin.svg"}

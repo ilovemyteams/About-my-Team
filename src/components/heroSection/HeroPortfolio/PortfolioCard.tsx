@@ -27,7 +27,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
                     "
                 />
             ) : (
-                <NoImageHeart className="w-[43%] tab:w-[50%]" />
+                <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-0 right-0" />
             )}
 
             <div
