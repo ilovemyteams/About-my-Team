@@ -63,9 +63,10 @@ export const NotificationModal = ({
                             : "/images/bgImagesNotification/bgOkNotificationMobile.png"
                     }
                     alt="background"
-                    width={320}
-                    height={420}
-                    className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-full object-cover"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
                 />
                 <Image
                     src={
@@ -74,9 +75,10 @@ export const NotificationModal = ({
                             : "/images/bgImagesNotification/bgOkNotificationTablet.png"
                     }
                     alt="background"
-                    width={464}
-                    height={434}
-                    className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] object-cover"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
                 />
                 <Image
                     src={
@@ -85,9 +87,10 @@ export const NotificationModal = ({
                             : "/images/bgImagesNotification/bgOkNotificationsDesktop.png"
                     }
                     alt="background"
-                    width={464}
-                    height={474}
-                    className="hidden pc:block absolute top-0 left-0 z-[-10] object-cover"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="hidden pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
                 />
                 <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
                     <button
@@ -108,7 +111,7 @@ export const NotificationModal = ({
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
                     <h3
-                        className={`font-caviar text-3xl mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
+                        className={`font-caviar text-3xl text-white mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
                     >
                         {isError
                             ? getTranslation("somethingWrong")
