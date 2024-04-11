@@ -78,7 +78,7 @@ export default function LocaleLayout({
                 <meta
                     name="image"
                     property="og:image"
-                    content="/images/imageForSharing.jpegs"
+                    content="/images/imageForSharing.jpeg"
                 />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
