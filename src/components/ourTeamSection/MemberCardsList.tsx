@@ -9,9 +9,9 @@ import {
 import { EmblaOptionsType } from "embla-carousel";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { membersData } from "./data/membersData";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { MemberDataItemType } from "./data/membersData";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
@@ -19,7 +19,11 @@ const OPTIONS: EmblaOptionsType = {
     slidesToScroll: 2,
 };
 
-export const MemberCardsList = () => {
+export const MemberCardsList = ({
+    membersData,
+}: {
+    membersData: MemberDataItemType[];
+}) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);

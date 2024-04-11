@@ -14,6 +14,7 @@ export type SocialLinks = {
 
 export type DataType = {
     id: string;
+    projectId: string[];
     imageURL?: string;
     position: string;
     categoryName: string;
@@ -34,6 +35,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "1",
+            projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Sutjc_CekGMbvenbBJoHSF9lXY9rd3Th",
             position: "product manager",
@@ -70,6 +72,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "2",
+            projectId: ["1", "2", "3"],
             imageURL: "",
             position: "fullstack developer",
             categoryName: "developers",
@@ -124,6 +127,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "3",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mYt2uFc8zwv8ML17_0Ur09-QBebFeFko",
             position: "UI/UX designer",
@@ -161,6 +165,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "4",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Bj_dvqxrkExvf2u_xkVtYmcGpULJdvb9",
             position: "Graphic Designer",
@@ -204,6 +209,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "5",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18H3nSMwOWVGQEImzAqvA_g155njZ1LoO",
             position: "Fullstack Developer",
@@ -248,6 +254,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "6",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1N_1jwFLVPJB060F7E1bjQgQHrD4DsCdh",
             position: "Fullstack Developer",
@@ -295,6 +302,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "7",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1HVqkdA5SXIYY3LS1hu3AuREcm8tpMeiB",
             position: "FrontEnd Developer",
@@ -342,6 +350,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "8",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mLIlC5M9RMw5_HevjeD08sL_7L2G8zYC",
             position: "FrontEnd Developer",
@@ -389,6 +398,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "9",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O0gd8VAJLvKbOsip4e6WwaH9WTUu9sX9",
             position: "QA",
@@ -435,6 +445,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "10",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1-dja5FnlCvSdAl5kF9d6rvI4UXGQpYY8",
             position: "QA",
@@ -493,6 +504,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "11",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1DpxD47mPfO1QguB1Il7Nw1pW6uMlEikd",
             position: "PM/SM",
@@ -539,6 +551,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "12",
+            projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1vb-DnGie_sbcLma-PFlmDCsVzrFRSNJR",
             position: "BA",

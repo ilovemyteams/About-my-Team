@@ -11,11 +11,13 @@ interface MenuMobileProps {
     selectedOption: {
         optionName: string;
         optionValue: string;
+        optionType: string;
     };
     setSelectedOption: Dispatch<
         SetStateAction<{
             optionName: string;
             optionValue: string;
+            optionType: string;
         }>
     >;
 }
@@ -30,13 +32,16 @@ export const MenuTeamSectionMobile = ({
     const handleOptionSelectProjectTeam = ({
         option,
         projectId,
+        optionType,
     }: {
         option: string;
         projectId: string;
+        optionType: string;
     }) => {
         const selected = {
             optionName: option,
             optionValue: projectId,
+            optionType,
         };
         setSelectedOption(selected);
         setIsOpen(false);
@@ -46,6 +51,7 @@ export const MenuTeamSectionMobile = ({
         const selected = {
             optionName: category[locale as LocaleType],
             optionValue: category.categoryName,
+            optionType: "person",
         };
         setSelectedOption(selected);
         setIsOpen(false);
@@ -74,7 +80,7 @@ export const MenuTeamSectionMobile = ({
             >
                 <div className="py-3 px-4">
                     <p className="text-sm text-purple-50 pb-3">
-                        {getTranslation("teamsList").toUpperCase()}
+                        {getTranslation("teamsList")}
                     </p>
                     <ul
                         className="relative flex flex-col gap-[12px] pb-3  text-baseb font-caviar
@@ -88,6 +94,7 @@ export const MenuTeamSectionMobile = ({
                                         option: project[locale as LocaleType]
                                             ?.name,
                                         projectId: project.data.id,
+                                        optionType: "team",
                                     })
                                 }
                                 className={`${selectedOption.optionValue === project.data.id ? "text-red" : "text-grey"}`}
