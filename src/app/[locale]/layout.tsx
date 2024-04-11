@@ -56,7 +56,7 @@ export async function generateMetadata({
             title: getTranslation("title"),
             description: getTranslation("description"),
             type: "website",
-            image: "https://drive.google.com/uc?export=view&id=1DDIgwyieVWglqDissESxHSCJHUsRRVbs",
+            image: "/images/imageForSharing.jpeg",
         },
     };
 }
@@ -93,7 +93,7 @@ export default function LocaleLayout({
                 <meta
                     name="image"
                     property="og:image"
-                    content="https://drive.google.com/uc?export=view&id=1DDIgwyieVWglqDissESxHSCJHUsRRVbs"
+                    content="/images/imageForSharing.jpegs"
                 />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
