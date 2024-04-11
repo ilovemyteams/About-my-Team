@@ -69,7 +69,7 @@ export const MemberCardsList = ({
                     </>
                 </ul>
                 <div className="embla__controls  mt-[16px] ">
-                    <div className="embla__buttons flex justify-center gap-4">
+                    <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto]">
                         <PrevButton
                             onClick={onPrevButtonClick}
                             disabled={prevBtnDisabled}
