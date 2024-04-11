@@ -56,7 +56,7 @@ export async function generateMetadata({
             title: getTranslation("title"),
             description: getTranslation("description"),
             type: "website",
-            image: "/images/imageForSharing.jpeg",
+            image: "https://drive.google.com/uc?export=view&id=1DDIgwyieVWglqDissESxHSCJHUsRRVbs",
         },
     };
 }
