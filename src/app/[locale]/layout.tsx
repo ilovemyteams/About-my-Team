@@ -49,6 +49,7 @@ export async function generateMetadata({
         title: getTranslation("title"),
         description: getTranslation("description"),
         openGraph: {
+            title: getTranslation("title"),
             description: getTranslation("description"),
             type: "website",
         },
@@ -71,12 +72,6 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
-                <meta
-                    name="title"
-                    property="og:title"
-                    content="i Love My Team"
-                />
-                <meta name="type" property="og:type" content="website" />
                 <meta
                     name="image"
                     property="og:image"
