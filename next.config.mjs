@@ -17,6 +17,9 @@ const nextConfig = {
             },
         ],
     },
+    env: {
+        metadataBase: "https://about-my-team-zeta.vercel.app",
+    },
     webpack: (config, { isServer }) => {
         if (!isServer) {
             config.resolve.fallback.fs = false;
