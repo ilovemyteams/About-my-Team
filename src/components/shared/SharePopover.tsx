@@ -63,7 +63,7 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] pc:w-[408px] h-[384px] p-0 border-purple-stroke">
+            <PopoverContent className="relative rounded-none w-[300px] tab:w-[408px] h-[384px] p-0 border-purple-stroke">
                 <Image
                     src="/images/bgImages/shareMob.svg"
                     fill
@@ -83,13 +83,13 @@ export const SharePopover = ({
                         height={24}
                     />
                 </Button>
-                <div className="flex flex-col border-t w-[268px] pc:w-[360px] border-purple-stroke ">
+                <div className="flex flex-col border-t w-[268px] tab:w-[360px] border-purple-stroke ">
                     <p className="text-base mt-9 mb-4">
                         {getTranslation("SharePopover.shareLink")}
                     </p>
                     <div className=" h-12 border border-purple-stroke">
                         <ul className="flex ">
-                            <li className="flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <TelegramShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -103,7 +103,7 @@ export const SharePopover = ({
                                     />
                                 </TelegramShareButton>
                             </li>
-                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <FacebookShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -117,7 +117,7 @@ export const SharePopover = ({
                                     />
                                 </FacebookShareButton>
                             </li>
-                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
                                 <LinkedinShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -132,7 +132,7 @@ export const SharePopover = ({
                                     />
                                 </LinkedinShareButton>
                             </li>
-                            <li className=" flex w-[72px] pc:w-[90px] h-12 justify-center items-center">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center">
                                 <WhatsappShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -154,14 +154,14 @@ export const SharePopover = ({
                     </p>
                     <CopyLinkButton link={urlShare}>
                         <div className="flex h-12 border border-purple-stroke ">
-                            <div className=" flex w-[240px] pc:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px]">
+                            <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px]">
                                 <Image
                                     src="/images/linkIcon.svg"
                                     alt="Link Icon"
                                     width={20}
                                     height={20}
                                 />
-                                <p className="w-[180px] pc:w-[250px] truncate text-start">
+                                <p className="w-[180px] tab:w-[250px] truncate text-start">
                                     {urlShare}
                                 </p>
                             </div>

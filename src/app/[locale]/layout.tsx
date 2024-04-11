@@ -46,7 +46,7 @@ export async function generateMetadata({
     const getTranslation = await getTranslations({ locale, namespace: "Home" });
 
     return {
-        title: "i Love My Team",
+        title: getTranslation("title"),
         description: getTranslation("description"),
         openGraph: {
             description: getTranslation("description"),

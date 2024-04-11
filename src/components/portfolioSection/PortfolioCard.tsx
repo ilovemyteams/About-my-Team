@@ -31,9 +31,9 @@ export const PortfolioCard = ({
                 <Image
                     src={image}
                     alt={name}
-                    fill
+                    layout="fill"
+                    objectFit="cover"
                     sizes="min-w-[100%] h-[330px] tab:min-w-[50%] pc:h-[400px]"
-                    className="object-cover"
                 />
                 <div className="absolute bottom-0 block min-w-full h-[134px] tab:h-[130px] pc:h-[142px] bg-portfolioSectionGradient">
                     <div className="absolute top-5 left-2 tab:top-[18px] tab:left-4 pc:left-5 pc:top-5">
