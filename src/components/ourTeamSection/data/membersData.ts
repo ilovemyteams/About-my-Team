@@ -75,7 +75,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1", "2", "3"],
             imageURL: "",
             position: "fullstack developer",
-            categoryName: "developers",
+            categoryName: "developer",
             projectsExperience: [
                 "https://baza-trainee.tech/ua",
                 "https://murrfecto.site/",

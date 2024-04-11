@@ -21,8 +21,10 @@ const OPTIONS: EmblaOptionsType = {
 
 export const MemberCardsList = ({
     membersData,
+    optionType,
 }: {
     membersData: MemberDataItemType[];
+    optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
@@ -48,9 +50,11 @@ export const MemberCardsList = ({
                                 <MemberCard data={data} />
                             </li>
                         ))}
-                        <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
-                            <JoinUsCard />
-                        </li>
+                        {optionType === "person" && (
+                            <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
+                                <JoinUsCard />
+                            </li>
+                        )}
                     </>
                 </ul>
                 <div className="embla__controls  mt-[16px] ">

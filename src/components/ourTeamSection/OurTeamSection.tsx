@@ -52,7 +52,10 @@ export const OurTeamSection = () => {
                     setSelectedOption={setSelectedOption}
                 />
                 <MenuTeamSection />
-                <MemberCardsList membersData={filteredData} />
+                <MemberCardsList
+                    membersData={filteredData}
+                    optionType={selectedOption.optionType}
+                />
             </div>
         </Section>
     );
