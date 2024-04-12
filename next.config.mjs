@@ -16,7 +16,6 @@ const nextConfig = {
                 port: "",
             },
         ],
-        domains: ["drive.google.com"],
     },
     webpack: (config, { isServer }) => {
         if (!isServer) {
