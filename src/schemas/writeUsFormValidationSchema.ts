@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'\-"`\\s]+$/;
 
 const emailRegex =
-    /^([a-zA-Z0-9]+){1}([a-zA-Z0-9?'"`#$%&*+-_./|^{}~]+){1}@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,3})$/;
+    /^([a-zA-Z0-9]+)([a-zA-Z0-9?'"`#$%&*+_./|^{}~]+)?@([a-zA-Z0-9_\-.]+)([.][a-zA-Z]{2,3})$/;
 
 const wrongRuEmailsRegex =
     /^([a-zA-Z0-9]+){1}([a-zA-Z0-9?'"`#$%&*+-_./|^{}~]+){1}@((?!.*\.(ru|рф|su)$)[a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,3})$/;
