@@ -3,6 +3,12 @@
         "title": "i Love My Team",
         "description": "Zespół dbający o Twoje potrzeby. Razem możemy więcej i lepiej!"
     },
+
+    "Hero": {
+        "heroInfoText": "Zespół, który dba o Twoje potrzeby",
+        "portfolioLink": "Realizacje"
+    },
+
     "Mission": {
         "pageTitle": "nasza misja"
     }
