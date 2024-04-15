@@ -10,7 +10,7 @@ export const Title = () => {
                 <SmallPageTitle className="min-w-[75px] ml-1 mr-3 flex items-center">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
-                <div className="w-[280px] tab:w-auto">
+                <div className="w-[262px] tab:w-auto">
                     <span>{getTranslation("titleFirstRow1")}</span>
                     <span className="text-purple-100">
                         <span className="hidden pc:inline-block w-1">
