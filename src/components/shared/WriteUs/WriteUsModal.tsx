@@ -67,17 +67,19 @@ export const WriteUsModal = ({
                         height="0"
                         className="hidden pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
                     />
+
                     <button
                         type="button"
                         onClick={onClose}
                         disabled={isError}
                         aria-label="close button"
-                        className="cursor-pointer absolute top-2 right-4 pc:top-3 pc:right-3 h-12 w-12 p-3 disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
+                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
                     >
                         <IconCloseX />
                     </button>
+
                     <CustomerForm
                         onClose={onClose}
                         setIsError={setIsError}
