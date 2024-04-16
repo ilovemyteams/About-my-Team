@@ -42,7 +42,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             description: "descriptionId1",
         },
         pl: {
-            name: "siteNameWithId1",
+            name: "I love my team",
             siteView: "lending",
             description: "descriptionId1",
         },
