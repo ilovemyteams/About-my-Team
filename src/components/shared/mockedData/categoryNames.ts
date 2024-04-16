@@ -22,7 +22,7 @@ export const categoryNames: СategoryNamesProp[] = [
         categoryName: "qa",
         uk: "Тестувальники",
         pl: "Testerzy Oprogramowania",
-        en: "QA",
+        en: "QA engineers",
     },
     {
         categoryName: "business-analytic",
