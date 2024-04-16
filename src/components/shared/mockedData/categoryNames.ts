@@ -9,13 +9,13 @@ export const categoryNames: СategoryNamesProp[] = [
     {
         categoryName: "developer",
         uk: "Розробники",
-        pl: "Developers",
+        pl: "Deweloperzy",
         en: "Developers",
     },
     {
         categoryName: "designer",
         uk: "Дизайнери",
-        pl: "Designers",
+        pl: "Projektanci",
         en: "Designers",
     },
     {

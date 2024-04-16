@@ -9,7 +9,184 @@
         "portfolioLink": "Realizacje"
     },
 
+    "Portfolio": {
+        "pageTitle": "Realizacje",
+        "titlePartForMob": "rozwinąć pomysły i biznesy naszych ",
+        "titleFirstWord": "Realizowane ",
+        "titleSecondWord": "projekty",
+        "titleThirdWord": " które ",
+        "titleFourthWord": "pomogły ",
+        "titleFifthWord": "rozwinąć ",
+        "titleFifthWordDesk": "rozwinąć pomysły",
+        "titleSixthWord": "pomysły i biznesy naszych ",
+        "titleSixthWordDesk": "i biznesy naszych ",
+        "titleSeventhWord": "klientów"
+    },
+
     "Mission": {
-        "pageTitle": "nasza misja"
+        "pageTitle": "Nasza misja",
+        "titleFirstWord": "Tworzenie ",
+        "titleSecondWord": "imponujących ",
+        "titleThirdWord": "cyfrowych",
+        "titleFourthWord": " produktów ",
+        "titleFifthWord": "z",
+        "titleOtherWords": " doskonałym zespołem",
+        "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem.",
+        "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
+        "thirdBenefit": "Zaoszczędzisz czas i pieniądze - od początku jestesmy bardzo wydajnym zespołem",
+        "consultations": "konsultacje",
+        "planning": "planowanie",
+        "development": "rozwój",
+        "promotion": "promocja",
+        "maintenance": "wsparcie"
+    },
+    "Feedback": {
+        "pageTitle": "Recenzje",
+        "titleFirstWord": "Co mówią ",
+        "titleSecondWord": "o nas ",
+        "titleThirdWord": "nasi ",
+        "titleFourthWord": "klienci"
+    },
+    "JoinTheTeam": {
+        "title": "Розкажи про свої унікальні можливості та стань частиною нашої команди"
+    },
+    "WriteUs": {
+        "title": "Chcę zostać zadowolonym klientem"
+    },
+    "Services": {
+        "pageTitle": "Usługi",
+        "titleFirstRow1": "Tworzymy",
+        "titleFirstRow2": " produkty cyfrowe",
+        "titleSecondRow": "dla Twojego biznesu",
+        "BATitle": "Analiza biznesowa",
+        "BAText": "Аналітика допомагає бізнесу будувати роботу та розвиватись на фактах, а не на здогадах чи інтуїції",
+        "designTitle": "Projekt",
+        "designText": "Дизайнер відмальовує прототип кожної сторінки, на якому схематично зображує розташування блоків, розміщення ілюстрацій і тексту. Тільки після затвердження прототипу із замовником ми приступаємо до створення дизайну сайту",
+        "devTitle": "Rozwój",
+        "devText": "На етапі розробки прототип сайту оживає та набуває потрібного функціоналу, підключаются бази даних та втілюються можливості оплати та наповнення сайту контентом",
+        "QATitle": "Testowanie",
+        "QAText": "На етапі тестування йде перевірка працездатності сайту і його відповідність вимогам. Оцінюється робота функціоналу, зручність використання, оптимізація під різні браузери та розміри екранів та швидкість завантаження.",
+        "supportTitle": "Wsparcie",
+        "supportText": "Представник команди навчає співробітників клієнта роботі із сайтом, щоб надалі клієнт міг самостійно оновлювати контент на своєму сайті.",
+        "allServicesTitle": "Pełny zakres usług",
+        "allServicesText": "Комплексний та системний підхід з єдиним менеджментом проєкту (замовнику не треба шукати виконавців для окремих завдань – все робиться одним підрядником, включно з пошуком чи рекомендацією субпідрядників)",
+        "contactUs": "Uzyskaj konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
+        "showMore": "Більше",
+        "showLess": "Менше"
+    },
+    "Stages": {
+        "pageTitle": "Przetworzyć",
+        "mainTitle": "Sekwencja pracy",
+        "firstStepTitle": "Отримання вашої ідеї",
+        "firstStepText": "Po otrzymaniu zgłoszenia skontaktujemy się z Tobą w ciągu jednego dnia roboczego",
+        "secondStepTitle": "Zbieranie i opis wymagań produktowych",
+        "secondStepText": "Затвердження вимог та очікувань - найважливіший етап у створенні унікального продукту",
+        "thirdStepTitle": "Koncepcja projektu",
+        "thirdStepText": "Demonstracja pierwszych szkiców i struktury serwisu, zatwierdzenie zmian",
+        "fourthStepTitle": "Początek rozwoju",
+        "fourthStepText": "Po zakończeniu prac oddajemy Ci wszystkie materiały, które dla Ciebie opracowaliśmy",
+        "fifthStepTitle": "Testowanie strony internetowej",
+        "fifthStepText": "Після успішного проходження етапу тестування ресурс переноситься на домен клієнта і підключається хостинг",
+        "sixthStepTitle": "Передача сайту",
+        "sixthStepText": "Після завершення тестування і підключення всіх сервісів ресурс і всі права на нього передаються клієнту",
+        "seventhStepTitle": "Підтримка",
+        "seventhStepText": "У процесі експлуатації веб-сайту вже після запуску є ймовірність виявити якісь помилки у відображенні сторінок або інші проблеми. У такому разі клієнт може звернутися до команди для усунення помилок"
+    },
+    "HireUs": {
+        "pageTitle": "połączenie",
+        "title": "Gotowy do zlecenia projektu?",
+        "workingHours": "Odpowiadamy codziennie od 10 do 18",
+        "email": "i.love.my.team.2023@gmail.com"
+    },
+    "OurTeam": {
+        "pageTitle": "Zespół",
+        "pageBigTitle": "Wybierz swój idealny zespół",
+        "menuTopTitle": "Обрати",
+        "listTitle": "спеціалісти",
+        "teamsList": "Zespoły",
+        "yourPhoto": "Тут може бути твоє фото"
+    },
+    "Q&A": {
+        "pageTitle": "q&a",
+        "mobileBigTitlePart1": "Odpowiedzi na  ",
+        "mobileBigTitlePart2": "często zadawane pytania",
+        "pageBigTitle": "Odpowiedzi na często zadawane pytania",
+        "question1": "Co wybrać - landing page czy pełnoprawną stronę internetową?",
+        "answer1": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням, а також детальні профілі кожного учасника команди з описом їхніх навичок, технологічного стеку, посиланнями на соціальні мережі та контактними даними. ",
+        "question2": "Potrzebuję strony internetowej. Od czego zacząć?",
+        "answer2": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням, а також детальні профілі кожного учасника команди з описом їхніх навичок, технологічного стеку, посиланнями на соціальні мережі та контактними даними. ",
+        "question3": "Jakie są ramy czasowe opracowania gotowego produktu?",
+        "answer3": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням, а також детальні профілі кожного учасника команди з описом їхніх навичок, технологічного стеку, посиланнями на соціальні мережі та контактними даними. ",
+        "question4": "Ile kosztuje stworzenie strony internetowej?",
+        "answer4": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням, а також детальні профілі кожного учасника команди з описом їхніх навичок, технологічного стеку, посиланнями на соціальні мережі та контактними даними. ",
+        "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
+        "answer5": "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням, а також детальні профілі кожного учасника команди з описом їхніх навичок, технологічного стеку, посиланнями на соціальні мережі та контактними даними. "
+    },
+    "Buttons": {
+        "order": "Zamówić",
+        "joinUs": "Dołączyć",
+        "allProjects": "Всі проекти",
+        "allQuestions": "Wszystkie pytania",
+        "share": "Udostępnić",
+        "buyMeACoffe": "Пригостити кавою"
+    },
+    "Footer": {
+        "titleFirstWord": "Zacznij ",
+        "titleSecondWord": "wdrażać ",
+        "titleThirdWord": "swoje ",
+        "titleFourthWord": "pomysły ",
+        "titleFifthWord": "biznesowe ",
+        "titleSixthWord": "",
+        "titleSeventhWord": "z nami",
+        "privacyPolicy": "polityka prywatności",
+        "copyright": "2024, I love my team"
+    },
+    "NotFound": {
+        "title": "Сторінка не знайдена",
+        "info": "Ми не змогли знайти сторінку, яку Ви шукаєте. Можливо, сталася помилка",
+        "button": "на головну"
+    },
+    "SharePopover": {
+        "shareLink": "Поділитись посиланням через:",
+        "copyLink": "Скопіювати посилання:"
+    },
+    "CustomerForm": {
+        "nameLabel": "Ваше ім'я*",
+        "emailLabel": "E-mail*",
+        "telegramLabel": "Telegram/нік",
+        "linkedinLabel": "Linkedin",
+        "instagramLabel": "Instagram",
+        "facebookLabel": "Facebook",
+        "messageLabel": "Ваше повідомлення*",
+        "namePlaceholder": "Susanna",
+        "emailPlaceholder": "example@gmail.com",
+        "telegramPlaceholder": "t.me/susannasalata або @susanna",
+        "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
+        "instagramPlaceholder": "instagram.com/susannasalata",
+        "facebookPlaceholder": "facebook.com/susannasalata",
+        "messagePlaceholder": "Ваше повідомлення важливе для нас",
+        "requiredField": "*Поля, обов'язкові для заповнення",
+        "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
+        "rulesLink": "Правилами обробки персональних даних",
+        "submitButton": "Надіслати"
+    },
+    "Errors": {
+        "required": "Дане поле обов’язкове до заповнення",
+        "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
+        "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
+        "wrongEmail": "Невірний формат E-mail",
+        "russianEmails": "Ми не працюємо з москалями",
+        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "wrongLinkedin": "Неправильна адреса linkedin",
+        "wrongInstagram": "Неправильна адреса instagram",
+        "wrongFacebook": "Неправильна адреса facebook",
+        "wrongTelegram": "Неправильна адреса telegram"
+    },
+    "Notifications": {
+        "thankYou": "Дякуємо!",
+        "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
+        "somethingWrong": "Щось пішло не так",
+        "tryAgain": "Спробуйте надіслати форму ще раз",
+        "linkIsCopied": "Посилання скопійоване"
     }
 }
