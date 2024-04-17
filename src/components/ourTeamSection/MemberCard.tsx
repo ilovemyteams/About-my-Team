@@ -15,14 +15,14 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const locale = useLocale();
 
     return (
-        <div className="pt-2 pl-[6px] flex flex-col justify-between">
-            <div className="relative min-w-[128px] aspect-[128/150] pr-[6px]">
+        <div className="pt-2 pl-[6px] flex flex-col justify-between tab:w-[250px] tab:border-purple-stroke tab:border-1 ">
+            <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:aspect-[234/187] ">
                 {imageURL ? (
                     <Image
                         src={imageURL}
                         width={246}
                         height={196}
-                        className="hover:scale-105 cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
+                        className="hover:scale-105 cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full tab:aspect-[234/187]"
                         alt={data[locale as LocaleType]?.name}
                     />
                 ) : (
