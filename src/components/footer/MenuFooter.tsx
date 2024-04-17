@@ -12,6 +12,7 @@ export const MenuFooter = () => {
         { name: getTranslation("Services.pageTitle"), id: "services" },
         { name: getTranslation("OurTeam.pageTitle"), id: "team" },
         { name: getTranslation("Stages.pageTitle"), id: "stages" },
+        { name: getTranslation("Q&A.pageTitle").toUpperCase(), id: "qa" },
     ];
 
     const locale = useLocale();
