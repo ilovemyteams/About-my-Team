@@ -1,0 +1,104 @@
+"use client";
+import React, { useRef, useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import {
+    NextButton,
+    PrevButton,
+    usePrevNextButtons,
+} from "../shared/SliderComponents/CarouselButtons";
+import { EmblaOptionsType } from "embla-carousel";
+// import { JoinUsCard } from "./JoinUsCard";
+import { MemberCard } from "./MemberCard";
+import { useDotButton } from "../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { MemberDataItemType } from "../shared/mockedData/membersData";
+
+const OPTIONS: EmblaOptionsType = {
+    loop: true,
+    align: "start",
+    slidesToScroll: 1,
+};
+
+export const MemberCardsListTablet = ({
+    membersData,
+    optionType,
+}: {
+    membersData: MemberDataItemType[];
+    optionType: string;
+}) => {
+    const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
+
+    const {
+        prevBtnDisabled,
+        nextBtnDisabled,
+        onPrevButtonClick,
+        onNextButtonClick,
+    } = usePrevNextButtons(emblaApi);
+
+    const isFirstRender = useRef(true);
+
+    useEffect(() => {
+        if (!isFirstRender.current && emblaApi) {
+            // Reset the slider to the first slide whenever optionType changes
+            emblaApi.scrollTo(0);
+        } else {
+            isFirstRender.current = false;
+        }
+    }, [optionType, emblaApi, membersData]);
+
+    const renderCards = () => {
+        const cards = [];
+        for (let i = 0; i < membersData.length; i += 4) {
+            const chunk = membersData.slice(i, i + 4);
+            const cardGroup = (
+                <li
+                    key={`group-${i / 4}`}
+                    className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke flex flex-wrap tab:border-0"
+                >
+                    {chunk.map(data => (
+                        <MemberCard key={data.data.id} data={data} />
+                    ))}
+                </li>
+            );
+            cards.push(cardGroup);
+        }
+        return cards;
+    };
+
+    return (
+        <div className="relative embla min-w-full tab:min-w-[auto]">
+            <div className="embla__controls absolute top-[-80px] right-0">
+                <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto] tab:w-[120px]">
+                    <PrevButton
+                        onClick={onPrevButtonClick}
+                        disabled={prevBtnDisabled}
+                    />
+                    <SliderDotsBox
+                        scrollSnaps={scrollSnaps}
+                        selectedIndex={selectedIndex}
+                        sliders={membersData}
+                        onDotButtonClick={onDotButtonClick}
+                    />
+                    <NextButton
+                        onClick={onNextButtonClick}
+                        disabled={nextBtnDisabled}
+                    />
+                </div>
+            </div>
+            <div className=" overflow-hidden  tab:w-[500px]" ref={emblaRef}>
+                <ul className="flex gap-0 ">
+                    <>
+                        {renderCards()}
+                        {/* {optionType === "person" && (
+                            <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px] tab:border-0">
+                                <JoinUsCard />
+                            </li>
+                        )} */}
+                    </>
+                </ul>
+            </div>
+        </div>
+    );
+};
