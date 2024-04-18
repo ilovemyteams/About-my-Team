@@ -71,11 +71,11 @@
         "allServicesTitle": "Pełny zakres usług",
         "allServicesText": "Комплексний та системний підхід з єдиним менеджментом проєкту (замовнику не треба шукати виконавців для окремих завдань – все робиться одним підрядником, включно з пошуком чи рекомендацією субпідрядників)",
         "contactUs": "Uzyskaj konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
-        "showMore": "Більше",
-        "showLess": "Менше"
+        "showMore": "Pokazać więcej",
+        "showLess": "Pokazać mniej"
     },
     "Stages": {
-        "pageTitle": "Przetworzyć",
+        "pageTitle": "Proces",
         "mainTitle": "Sekwencja pracy",
         "firstStepTitle": "Отримання вашої ідеї",
         "firstStepText": "Po otrzymaniu zgłoszenia skontaktujemy się z Tobą w ciągu jednego dnia roboczego",
@@ -87,7 +87,7 @@
         "fourthStepText": "Po zakończeniu prac oddajemy Ci wszystkie materiały, które dla Ciebie opracowaliśmy",
         "fifthStepTitle": "Testowanie strony internetowej",
         "fifthStepText": "Після успішного проходження етапу тестування ресурс переноситься на домен клієнта і підключається хостинг",
-        "sixthStepTitle": "Передача сайту",
+        "sixthStepTitle": "Przenesienie funkcjonalności strony",
         "sixthStepText": "Після завершення тестування і підключення всіх сервісів ресурс і всі права на нього передаються клієнту",
         "seventhStepTitle": "Підтримка",
         "seventhStepText": "У процесі експлуатації веб-сайту вже після запуску є ймовірність виявити якісь помилки у відображенні сторінок або інші проблеми. У такому разі клієнт може звернутися до команди для усунення помилок"
@@ -102,7 +102,7 @@
         "pageTitle": "Zespół",
         "pageBigTitle": "Wybierz swój idealny zespół",
         "menuTopTitle": "Обрати",
-        "listTitle": "спеціалісти",
+        "listTitle": "specjaliści",
         "teamsList": "Zespoły",
         "yourPhoto": "Тут може бути твоє фото"
     },
@@ -125,7 +125,7 @@
     "Buttons": {
         "order": "Zamówić",
         "joinUs": "Dołączyć",
-        "allProjects": "Всі проекти",
+        "allProjects": "Wszystkie projekty",
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
         "buyMeACoffe": "Пригостити кавою"
@@ -136,35 +136,35 @@
         "titleThirdWord": "swoje ",
         "titleFourthWord": "pomysły ",
         "titleFifthWord": "biznesowe ",
-        "titleSixthWord": "",
-        "titleSeventhWord": "z nami",
+        "titleSixthWord": "razem z ",
+        "titleSeventhWord": "nami",
         "privacyPolicy": "polityka prywatności",
         "copyright": "2024, I love my team"
     },
     "NotFound": {
-        "title": "Сторінка не знайдена",
+        "title": "Nie znaleziono strony",
         "info": "Ми не змогли знайти сторінку, яку Ви шукаєте. Можливо, сталася помилка",
-        "button": "на головну"
+        "button": "do strony głównej"
     },
     "SharePopover": {
         "shareLink": "Поділитись посиланням через:",
         "copyLink": "Скопіювати посилання:"
     },
     "CustomerForm": {
-        "nameLabel": "Ваше ім'я*",
+        "nameLabel": "Twoje imię*",
         "emailLabel": "E-mail*",
         "telegramLabel": "Telegram/нік",
         "linkedinLabel": "Linkedin",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
-        "messageLabel": "Ваше повідомлення*",
+        "messageLabel": "Twoja wiadomość*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
         "telegramPlaceholder": "t.me/susannasalata або @susanna",
         "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
         "instagramPlaceholder": "instagram.com/susannasalata",
         "facebookPlaceholder": "facebook.com/susannasalata",
-        "messagePlaceholder": "Ваше повідомлення важливе для нас",
+        "messagePlaceholder": "Twoja wiadomość jest dla nas ważna",
         "requiredField": "*Поля, обов'язкові для заповнення",
         "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
         "rulesLink": "Правилами обробки персональних даних",
@@ -174,19 +174,19 @@
         "required": "Дане поле обов’язкове до заповнення",
         "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
         "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
-        "wrongEmail": "Невірний формат E-mail",
-        "russianEmails": "Ми не працюємо з москалями",
+        "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
+        "russianEmails": "Nie współpracujemy z Moskalami",
         "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
-        "wrongLinkedin": "Неправильна адреса linkedin",
-        "wrongInstagram": "Неправильна адреса instagram",
-        "wrongFacebook": "Неправильна адреса facebook",
-        "wrongTelegram": "Неправильна адреса telegram"
+        "wrongLinkedin": "Nieprawidłowy adres linkedin",
+        "wrongInstagram": "Nieprawidłowy adres instagram",
+        "wrongFacebook": "Nieprawidłowy adres facebook",
+        "wrongTelegram": "Nieprawidłowy adres telegram"
     },
     "Notifications": {
-        "thankYou": "Дякуємо!",
+        "thankYou": "Dziękujemy!",
         "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
         "somethingWrong": "Щось пішло не так",
         "tryAgain": "Спробуйте надіслати форму ще раз",
-        "linkIsCopied": "Посилання скопійоване"
+        "linkIsCopied": "Link skopiowany"
     }
 }

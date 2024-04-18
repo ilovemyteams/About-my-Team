@@ -85,7 +85,7 @@
         "fourthStepText": "After we complete the work, we will give you all the materials that were developed for you",
         "fifthStepTitle": "Testing of the website",
         "fifthStepText": "After the stage of testing is successfully passed, the resource is transferred to the customer's domain and the hosting is connected",
-        "sixthStepTitle": "Передача сайту",
+        "sixthStepTitle": "Transfer of the website",
         "sixthStepText": "After the testing is finished and all the services are connected, the resource with its permissions is given to the customer",
         "seventhStepTitle": "Support",
         "seventhStepText": "While using the web-site after its start, the customer can come across with some mistakes in the pages' display or others. In this situation the customer can address the team to eliminate the mistakes"
@@ -134,35 +134,35 @@
         "titleThirdWord": "your ",
         "titleFourthWord": "business ",
         "titleFifthWord": "ideas ",
-        "titleSixthWord": "with ",
+        "titleSixthWord": "together with ",
         "titleSeventhWord": "us",
         "privacyPolicy": "privacy policy",
         "copyright": "2024, I love my team"
     },
     "NotFound": {
-        "title": "Сторінка не знайдена",
+        "title": "Page not found",
         "info": "Ми не змогли знайти сторінку, яку Ви шукаєте. Можливо, сталася помилка",
-        "button": "на головну"
+        "button": "to the home page"
     },
     "SharePopover": {
-        "shareLink": "Поділитись посиланням через:",
+        "shareLink": "Share the link via:",
         "copyLink": "Copy the link:"
     },
     "CustomerForm": {
-        "nameLabel": "Ваше ім'я*",
+        "nameLabel": "Your name*",
         "emailLabel": "E-mail*",
-        "telegramLabel": "Telegram/нік",
+        "telegramLabel": "Telegram/nickname",
         "linkedinLabel": "Linkedin",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
-        "messageLabel": "Ваше повідомлення*",
+        "messageLabel": "Your message*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
         "telegramPlaceholder": "t.me/susannasalata or @susanna",
         "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
         "instagramPlaceholder": "instagram.com/susannasalata",
         "facebookPlaceholder": "facebook.com/susannasalata",
-        "messagePlaceholder": "Ваше повідомлення важливе для нас",
+        "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Поля, обов'язкові для заповнення",
         "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
         "rulesLink": "Правилами обробки персональних даних",
@@ -172,19 +172,19 @@
         "required": "Дане поле обов’язкове до заповнення",
         "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
         "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
-        "wrongEmail": "Невірний формат E-mail",
-        "russianEmails": "Ми не працюємо з москалями",
+        "wrongEmail": "Invalid E-mail format",
+        "russianEmails": "We do not work with Muscovites",
         "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
-        "wrongLinkedin": "Неправильна адреса linkedin",
-        "wrongInstagram": "Неправильна адреса instagram",
-        "wrongFacebook": "Неправильна адреса facebook",
-        "wrongTelegram": "Неправильна адреса telegram"
+        "wrongLinkedin": "Incorrect linkedin address",
+        "wrongInstagram": "Incorrect instagram address",
+        "wrongFacebook": "Incorrect facebook address",
+        "wrongTelegram": "Incorrect telegram address"
     },
     "Notifications": {
         "thankYou": "Thank you!",
         "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
         "somethingWrong": "Something went wrong",
         "tryAgain": "Спробуйте надіслати форму ще раз",
-        "linkIsCopied": "Посилання скопійоване"
+        "linkIsCopied": "Link copied"
     }
 }

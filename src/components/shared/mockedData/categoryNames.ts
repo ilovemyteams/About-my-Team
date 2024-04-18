@@ -27,13 +27,13 @@ export const categoryNames: СategoryNamesProp[] = [
     {
         categoryName: "business-analytic",
         uk: "Бізнес-аналітики",
-        pl: "Business-analytics",
+        pl: "Analitycy biznesowi",
         en: "Business-analytics",
     },
     {
         categoryName: "manager",
         uk: "Менеджери",
-        pl: "Managers",
+        pl: "Menedżerowie",
         en: "Managers",
     },
 ];
