@@ -521,7 +521,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
-            position: "Project Manager/Scrum Master",
+            position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: [""],
             pricePerHour: "",
