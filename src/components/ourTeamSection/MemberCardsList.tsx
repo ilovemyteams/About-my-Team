@@ -12,6 +12,8 @@ import { MemberCard } from "./MemberCard";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { MemberDataItemType } from "../shared/mockedData/membersData";
+import Link from "next/link";
+import { MemberCardText } from "./MemberCardText";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
@@ -51,23 +53,27 @@ export const MemberCardsList = ({
     return (
         <div className="relative embla min-w-full tab:hidden">
             <div className=" overflow-hidden" ref={emblaRef}>
-                <ul className="flex gap-0">
-                    <>
-                        {membersData.map(data => (
-                            <li
-                                key={data.data.id}
-                                className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]"
-                            >
+                <div className="flex gap-0">
+                    {membersData.map((data, index) => (
+                        <div
+                            key={data.data.id}
+                            className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]"
+                        >
+                            <Link href={`/member/${index}`}>
                                 <MemberCard data={data} />
-                            </li>
-                        ))}
-                        {optionType === "person" && (
-                            <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
-                                <JoinUsCard />
-                            </li>
-                        )}
-                    </>
-                </ul>
+                            </Link>
+                            <MemberCardText
+                                position={data.data.position}
+                                socialLinks={data.data.socialLinks}
+                            />
+                        </div>
+                    ))}
+                    {optionType === "person" && (
+                        <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
+                            <JoinUsCard />
+                        </li>
+                    )}
+                </div>
                 <div className="embla__controls  mt-[16px] ">
                     <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto]">
                         <PrevButton
