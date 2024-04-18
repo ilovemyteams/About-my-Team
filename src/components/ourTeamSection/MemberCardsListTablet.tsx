@@ -7,7 +7,7 @@ import {
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
 import { EmblaOptionsType } from "embla-carousel";
-// import { JoinUsCard } from "./JoinUsCard";
+import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
@@ -52,20 +52,35 @@ export const MemberCardsListTablet = ({
 
     const renderCards = () => {
         const cards = [];
-        for (let i = 0; i < membersData.length; i += CARDS_PER_PAGE_TABLET) {
-            const chunk = membersData.slice(i, i + CARDS_PER_PAGE_TABLET);
+        const isShowJoinUs = membersData.length % CARDS_PER_PAGE_TABLET;
+        const totalPages = Math.ceil(
+            membersData.length / CARDS_PER_PAGE_TABLET
+        );
+
+        for (let i = 0; i < totalPages; i++) {
+            const start = i * CARDS_PER_PAGE_TABLET;
+            const end = start + CARDS_PER_PAGE_TABLET;
+            const chunk = membersData.slice(start, end);
+
+            const isLastPage = i === totalPages - 1;
+
             const cardGroup = (
                 <li
-                    key={`group-${i / CARDS_PER_PAGE_TABLET}`}
+                    key={`group-${i}`}
                     className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke grid grid-cols-2  tab:border-0"
                 >
                     {chunk.map(data => (
                         <MemberCard key={data.data.id} data={data} />
                     ))}
+                    {isLastPage &&
+                        isShowJoinUs > 0 &&
+                        optionType === "person" && <JoinUsCard />}
                 </li>
             );
+
             cards.push(cardGroup);
         }
+
         return cards;
     };
 
@@ -90,16 +105,7 @@ export const MemberCardsListTablet = ({
                 </div>
             </div>
             <div className=" overflow-hidden" ref={emblaRef}>
-                <ul className="flex gap-0 ">
-                    <>
-                        {renderCards()}
-                        {/* {optionType === "person" && (
-                            <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px] tab:border-0">
-                                <JoinUsCard />
-                            </li>
-                        )} */}
-                    </>
-                </ul>
+                <ul className="flex gap-0 ">{renderCards()}</ul>
             </div>
         </div>
     );
