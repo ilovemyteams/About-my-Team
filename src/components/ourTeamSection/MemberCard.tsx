@@ -2,16 +2,15 @@
 
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "../shared/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-interface MemberCardProps {
+export interface MemberCardProps {
     data: MemberDataItemType;
 }
 export const MemberCard = ({ data }: MemberCardProps) => {
-    const { imageURL, position, socialLinks } = data.data;
+    const { imageURL } = data.data;
     const locale = useLocale();
 
     return (
@@ -30,20 +29,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 )}
             </div>
 
-            <div className="min-h-[106px] flex flex-col justify-between">
+            <div className="min-h-[60px] flex flex-col justify-between">
                 <h4 className="font-caviar text-baseb text-white pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>
-                <div className="flex font-geist text-xs justify-between items-center">
-                    <p className="text-purple-50 w-min">
-                        {position.toUpperCase()}
-                    </p>
-                    <SocialLinkSmallMemberCard
-                        url={socialLinks.linkedin}
-                        image={"linkedin.svg"}
-                        alt={"Linkedin"}
-                    />
-                </div>
             </div>
         </div>
     );
