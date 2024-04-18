@@ -16,7 +16,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
 
     return (
         <div
-            className="pt-2 pl-[6px] flex flex-col justify-between  tab:odd:border-r-[1px] tab:border-purple-stroke 
+            className="pt-2 pl-[6px] flex flex-col justify-between  
+            tab:odd:border-r-[1px] tab:border-purple-stroke 
         tab:[&:nth-child(1)]:border-b-[1px] tab:[&:nth-child(2)]:border-b-[1px]
         tab:pl-2 tab:aspect-[250/270]"
         >
