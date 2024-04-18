@@ -47,7 +47,7 @@ export const OurTeamSection = () => {
     return (
         <Section id="team">
             <Title />
-            <div className="flex flex-col gap-6 tab:flex-row tab:justify-between">
+            <div className="flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}

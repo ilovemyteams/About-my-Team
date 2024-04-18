@@ -70,7 +70,7 @@ export const MemberCardsListTablet = ({
     };
 
     return (
-        <div className="hidden tab:block relative embla min-w-full tab:min-w-[auto]">
+        <div className="hidden tab:block relative embla min-w-full tab:min-w-[auto] tab:min-h-[540px]">
             <div className="embla__controls absolute top-[-80px] right-0">
                 <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto] tab:w-[120px]">
                     <PrevButton
