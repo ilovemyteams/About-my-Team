@@ -26,7 +26,16 @@ export const OneTableItemInfo = ({
     const contentRef = useRef<HTMLDivElement>(null);
     const [isShownMore, setIsShownMore] = useState<boolean>(false);
     const [isButtonShown, setIsButtonShown] = useState<boolean>(true);
-    const toggleShowMore = () => setIsShownMore(!isShownMore);
+    const toggleShowMore = () => {
+        const contentElement = contentRef?.current;
+        setIsShownMore(!isShownMore);
+        !isShownMore
+            ? contentElement?.classList.remove("line-clamp-3")
+            : setTimeout(
+                  () => contentElement?.classList.add("line-clamp-3"),
+                  600
+              );
+    };
 
     useEffect(() => {
         if (contentRef.current) {
@@ -34,6 +43,23 @@ export const OneTableItemInfo = ({
             setIsButtonShown(contentHeight > TEXT_CONTAINER_HEIGHT);
         }
     }, [elementWidth]);
+
+    const handleMouseEnter = () => {
+        const contentElement = contentRef?.current;
+        if (contentElement) {
+            contentElement.classList.remove("pc:line-clamp-3");
+        }
+    };
+
+    const handleMouseLeave = () => {
+        const contentElement = contentRef?.current;
+        if (contentElement) {
+            setTimeout(
+                () => contentElement.classList.add("pc:line-clamp-3"),
+                600
+            );
+        }
+    };
 
     return (
         <div
@@ -52,15 +78,14 @@ export const OneTableItemInfo = ({
             </div>
             <div
                 ref={contentRef}
-                className={`cursor-pointer text-base  hover:max-h-[160px] deskxl:hover:max-h-[190px] line-clamp-3 
-                tab:line-clamp-none
+                className={`cursor-pointer text-base deskxl:text-lg deskxl:font-light overflow-hidden
+                ${isShownMore ? "max-h-[160px] deskxl:max-h-[190px]" : "max-h-[60px] tab:max-h-full pc:max-h-[60px] deskxl:max-h-[70px] "}
+                tab:max-h-full pc:max-h-[60px] deskxl:max-h-[70px] hover:max-h-[160px] hover:deskxl:max-h-[190px]
                 pc:line-clamp-3 
-                pc:max-h-[60px] pc:overflow-hidden 
-                pc:hover:line-clamp-none ${isShownMore ? "line-clamp-none max-h-[160px] deskxl:max-h-[190px] " : "line-clamp-3 max-h-[60px] tab:max-h-full pc:max-h-[60px] deskxl:max-h-[70px] "}
-                transition-[max-height] duration-[600ms] ease-in overflow-hidden
-                deskxl:text-lg  deskxl:font-light
-                ${textClassName}
+                 transition-[max-height] duration-[600ms] ease-in ${textClassName}             
                 `}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
                 {children}
             </div>
