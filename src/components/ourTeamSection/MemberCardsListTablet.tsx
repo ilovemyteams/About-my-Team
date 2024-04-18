@@ -67,7 +67,7 @@ export const MemberCardsListTablet = ({
             const cardGroup = (
                 <li
                     key={`group-${i}`}
-                    className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke grid grid-cols-2  tab:border-0"
+                    className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0"
                 >
                     {chunk.map(data => (
                         <MemberCard key={data.data.id} data={data} />
