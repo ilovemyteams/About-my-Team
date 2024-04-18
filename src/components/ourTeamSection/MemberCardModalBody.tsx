@@ -37,10 +37,24 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     ];
 
     return (
-        <div className="relative w-[288px] h-auto mx-auto">
-            <div className="absolute top-0 right-0 text-sm py-[2px] px-[4px] text-purple-50 border-[1px] border-r-0 border-purple-stroke">{`from ${pricePerHour} $/h`}</div>
-            <div className="relative p-[8px] border-[1px] border-purple-stroke">
-                <div className="h-[60px] flex items-end gap-[8px] mt-[8px] mb-[16px]">
+        <div className="relative w-[288px] h-auto mx-auto ">
+            <button
+                type="button"
+                className="flex my-2 ml-auto w-12 h-12 justify-center items-center"
+            >
+                <Image
+                    src="/images/closeX.svg"
+                    alt="Close button"
+                    width={24}
+                    height={24}
+                />
+            </button>
+            <div className="p-[8px] pt-0 border border-purple-stroke">
+                <div className="flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
+                    {`from ${pricePerHour} $/h`}
+                </div>
+
+                <div className="h-[60px] flex items-end gap-[8px] -mt-1 mb-[16px]">
                     <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
                         {imageURL ? (
                             <Image
@@ -66,35 +80,35 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 <ul>
                     <li className="mb-[16px]">
                         <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-[5px]"></div>
+                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("about")}
                             </span>
                         </div>
-                        <p className="max-h-[85px] text-sm ">
+                        <p className="max-h-[85px] text-sm ml-4">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
                     <li className="mb-[16px]">
                         <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-[5px]"></div>
+                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("services")}
                             </span>
                         </div>
 
-                        <p className="w-full text-sm ">
+                        <p className="text-sm ml-4">
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>
                     <li className="mb-[16px]">
                         <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-[5px]"></div>
+                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("tools")}
                             </span>
                         </div>
-                        <ul className="h-[80px] overflow-hidden flex flex-wrap text-sm ">
+                        <ul className="h-[80px] overflow-hidden flex flex-wrap text-sm ml-3">
                             {tools.map((tool, idx) => (
                                 <li
                                     key={idx}
@@ -107,17 +121,17 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                     </li>
                     <li className="mb-[8px]">
                         <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-[5px]"></div>
+                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
 
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("projectsExperience")}
                             </span>
                         </div>
-                        <p className="text-sm ">{projectsExperience}</p>
+                        <p className="text-sm ml-4">{projectsExperience}</p>
                     </li>
                 </ul>
                 <SharePopover
-                    className="absolute bottom-[10px] right-0"
+                    className="absolute bottom-[44px] right-0"
                     trigerShowShareText={true}
                 />
             </div>
@@ -125,7 +139,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 {memberSocialLinks.map(({ url, image, alt }, idx) => (
                     <li
                         key={idx}
-                        className="flex w-full h-[32px] justify-center border-[1px] border-purple-stroke"
+                        className="flex w-full h-[34px] justify-center items-center border-[1px] border-purple-stroke"
                     >
                         <div className="w-[24px] h-[24px]">
                             <a
@@ -139,9 +153,8 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 <Image
                                     src={image}
                                     alt={alt}
-                                    width="0"
-                                    height="0"
-                                    className="w-[24px] h-[24px] object-cover"
+                                    width="24"
+                                    height="24"
                                 />
                             </a>
                         </div>
