@@ -13,6 +13,8 @@ import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { MemberDataItemType } from "../shared/mockedData/membersData";
 
+const CARDS_PER_PAGE_TABLET = 4;
+
 const OPTIONS: EmblaOptionsType = {
     loop: true,
     align: "start",
@@ -50,11 +52,11 @@ export const MemberCardsListTablet = ({
 
     const renderCards = () => {
         const cards = [];
-        for (let i = 0; i < membersData.length; i += 4) {
-            const chunk = membersData.slice(i, i + 4);
+        for (let i = 0; i < membersData.length; i += CARDS_PER_PAGE_TABLET) {
+            const chunk = membersData.slice(i, i + CARDS_PER_PAGE_TABLET);
             const cardGroup = (
                 <li
-                    key={`group-${i / 4}`}
+                    key={`group-${i / CARDS_PER_PAGE_TABLET}`}
                     className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke grid grid-cols-2  tab:border-0"
                 >
                     {chunk.map(data => (
