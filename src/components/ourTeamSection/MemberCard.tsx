@@ -15,7 +15,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const locale = useLocale();
 
     return (
-        <div className="pt-2 pl-[6px] flex flex-col justify-between tab:w-[250px] tab:h-[270px] tab:border-purple-stroke tab:border-1 ">
+        <div className="pt-2 pl-[6px] flex flex-col justify-between  tab:border-purple-stroke tab:border-1 ">
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:aspect-[234/187] ">
                 {imageURL ? (
                     <Image

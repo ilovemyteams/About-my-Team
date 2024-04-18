@@ -55,7 +55,7 @@ export const MemberCardsListTablet = ({
             const cardGroup = (
                 <li
                     key={`group-${i / 4}`}
-                    className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke flex flex-wrap tab:border-0"
+                    className="embla__slide flex-[0_0_100%] w-full border-[1px] border-purple-stroke grid grid-cols-2  tab:border-0"
                 >
                     {chunk.map(data => (
                         <MemberCard key={data.data.id} data={data} />
@@ -68,7 +68,7 @@ export const MemberCardsListTablet = ({
     };
 
     return (
-        <div className="relative embla min-w-full tab:min-w-[auto]">
+        <div className="hidden tab:block relative embla min-w-full tab:min-w-[auto]">
             <div className="embla__controls absolute top-[-80px] right-0">
                 <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto] tab:w-[120px]">
                     <PrevButton
@@ -87,7 +87,7 @@ export const MemberCardsListTablet = ({
                     />
                 </div>
             </div>
-            <div className=" overflow-hidden  tab:w-[500px]" ref={emblaRef}>
+            <div className=" overflow-hidden" ref={emblaRef}>
                 <ul className="flex gap-0 ">
                     <>
                         {renderCards()}
