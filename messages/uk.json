@@ -185,5 +185,11 @@
         "somethingWrong": "Щось пішло не так",
         "tryAgain": "Спробуйте надіслати форму ще раз",
         "linkIsCopied": "Посилання скопійоване"
+    },
+    "MemberCardModal": {
+        "about": "Про себе",
+        "services": "Послуги",
+        "tools": "Інструменти",
+        "projectsExperience": "Проекти/Досвід"
     }
 }
