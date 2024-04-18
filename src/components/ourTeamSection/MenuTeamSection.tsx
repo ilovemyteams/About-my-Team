@@ -99,7 +99,7 @@ export const MenuTeamSection = ({
                                         optionType: "team",
                                     })
                                 }
-                                className={`${selectedOption.optionValue === project.data.id ? "text-red" : "text-grey"}`}
+                                className={`${selectedOption.optionValue === project.data.id ? "text-red" : "text-grey"} cursor-pointer `}
                             >
                                 {project[locale as LocaleType]?.name}
                             </li>
@@ -115,7 +115,7 @@ export const MenuTeamSection = ({
                                 onClick={() =>
                                     handleOptionSelectCategory(category)
                                 }
-                                className={`${selectedOption.optionValue === category.categoryName ? "text-red" : "text-grey"}`}
+                                className={`${selectedOption.optionValue === category.categoryName ? "text-red" : "text-grey"} cursor-pointer `}
                             >
                                 {category[locale as LocaleType]}
                             </li>
