@@ -1,7 +1,7 @@
 import { EmblaOptionsType } from "embla-carousel";
 import { Section } from "../shared/Section";
 import { FeedbackTitle } from "./Title/FeedbackTitle";
-import { feedbackData } from "../shared/mockedData/feedbackData";
+import { feedbackData } from "../../mockedData/feedbackData";
 import { FeedbackSlider } from "./FeedbackSlider";
 import { SharePopover } from "../shared/SharePopover";
 import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";

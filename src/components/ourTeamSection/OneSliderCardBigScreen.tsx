@@ -1,6 +1,6 @@
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { MemberDataItemType } from "../shared/mockedData/membersData";
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 

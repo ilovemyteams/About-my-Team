@@ -5,7 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
-import { FeedbackDataItemType } from "../shared/mockedData/feedbackData";
+import { FeedbackDataItemType } from "../../mockedData/feedbackData";
 import {
     NextButton,
     PrevButton,

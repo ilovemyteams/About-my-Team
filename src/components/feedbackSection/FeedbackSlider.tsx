@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { useLocale } from "next-intl";
 
-import { FeedbackDataItemType } from "../shared/mockedData/feedbackData";
+import { FeedbackDataItemType } from "../../mockedData/feedbackData";
 import { FeedbackCard } from "./FeedbackCard";
 import {
     NextButton,

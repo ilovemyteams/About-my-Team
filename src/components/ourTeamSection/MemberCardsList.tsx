@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { MemberDataItemType } from "../shared/mockedData/membersData";
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {

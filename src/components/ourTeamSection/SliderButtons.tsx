@@ -6,7 +6,7 @@ import {
 } from "../shared/SliderComponents/CarouselButtons";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
-import { MemberDataItemType } from "../shared/mockedData/membersData";
+import { MemberDataItemType } from "../../mockedData/membersData";
 
 interface SliderButtonsProps {
     membersData: MemberDataItemType[];
