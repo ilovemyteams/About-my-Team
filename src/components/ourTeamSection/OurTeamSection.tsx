@@ -5,9 +5,9 @@ import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
 import { useEffect, useState } from "react";
 import { MemberCardsList } from "./MemberCardsList";
-import { membersData } from "../shared/mockedData/membersData";
-import { portfolioData } from "../shared/mockedData/portfolioData";
-import { MemberCardsLisBigScreens } from "./MemberCardsLisBigScreens";
+import { membersData } from "../../mockedData/membersData";
+import { portfolioData } from "../../mockedData/portfolioData";
+import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -56,7 +56,7 @@ export const OurTeamSection = () => {
                     membersData={filteredData}
                     optionType={selectedOption.optionType}
                 />
-                <MemberCardsLisBigScreens
+                <MemberCardsListBigScreens
                     membersData={filteredData}
                     optionType={selectedOption.optionType}
                 />

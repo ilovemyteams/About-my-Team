@@ -2,7 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
-import { MemberDataItemType } from "../shared/mockedData/membersData";
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { SliderButtons } from "./SliderButtons";
 import { OneSliderCardBigScreen } from "./OneSliderCardBigScreen";
 
@@ -12,7 +12,7 @@ const OPTIONS: EmblaOptionsType = {
     slidesToScroll: 1,
 };
 
-export const MemberCardsLisBigScreens = ({
+export const MemberCardsListBigScreens = ({
     membersData,
     optionType,
 }: {

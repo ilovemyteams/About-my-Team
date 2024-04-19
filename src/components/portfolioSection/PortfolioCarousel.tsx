@@ -9,7 +9,7 @@ import {
     PrevButton,
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
-import { PortfolioDataItemType } from "../shared/mockedData/portfolioData";
+import { PortfolioDataItemType } from "../../mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
