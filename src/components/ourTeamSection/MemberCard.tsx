@@ -18,8 +18,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
         <div
             className="pt-2 pl-[6px] flex flex-col justify-between  
             tab:odd:border-r-[1px] tab:border-purple-stroke 
-        tab:[&:nth-child(1)]:border-b-[1px] tab:[&:nth-child(2)]:border-b-[1px]
-        tab:pl-2 tab:aspect-[250/270]"
+            tab:[&:nth-child(1)]:border-b-[1px] tab:[&:nth-child(2)]:border-b-[1px]
+            tab:pl-2 tab:aspect-[250/270]"
         >
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] tab:mr-2 tab:mb-2 ">
                 {imageURL ? (

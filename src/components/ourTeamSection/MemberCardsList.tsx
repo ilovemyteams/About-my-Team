@@ -1,17 +1,11 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import {
-    NextButton,
-    PrevButton,
-    usePrevNextButtons,
-} from "../shared/SliderComponents/CarouselButtons";
 import { EmblaOptionsType } from "embla-carousel";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { useDotButton } from "../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { MemberDataItemType } from "../shared/mockedData/membersData";
+import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
@@ -27,15 +21,6 @@ export const MemberCardsList = ({
     optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-        useDotButton(emblaApi);
-
-    const {
-        prevBtnDisabled,
-        nextBtnDisabled,
-        onPrevButtonClick,
-        onNextButtonClick,
-    } = usePrevNextButtons(emblaApi);
 
     const isFirstRender = useRef(true);
 
@@ -68,24 +53,7 @@ export const MemberCardsList = ({
                         )}
                     </>
                 </ul>
-                <div className="embla__controls  mt-[16px] ">
-                    <div className="embla__buttons flex justify-between gap-4 w-[176px] mx-[auto]">
-                        <PrevButton
-                            onClick={onPrevButtonClick}
-                            disabled={prevBtnDisabled}
-                        />
-                        <SliderDotsBox
-                            scrollSnaps={scrollSnaps}
-                            selectedIndex={selectedIndex}
-                            sliders={membersData}
-                            onDotButtonClick={onDotButtonClick}
-                        />
-                        <NextButton
-                            onClick={onNextButtonClick}
-                            disabled={nextBtnDisabled}
-                        />
-                    </div>
-                </div>
+                <SliderButtons membersData={membersData} emblaApi={emblaApi} />
             </div>
         </div>
     );
