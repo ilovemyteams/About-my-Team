@@ -34,11 +34,57 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
+            id: "0",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["www.website.ua"],
+            pricePerHour: "25",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/susanna-salata/",
+                github: "",
+                telegram: "",
+            },
+            tools: [
+                "UML",
+                "BPMN 2.0",
+                "SDLC",
+                "SQL",
+                "Python",
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs",
+            ],
+        },
+        uk: {
+            name: "Сусанна Салата",
+            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services:
+                "Консультування, менторинг, стратегічне планування, бюджетування, управління проектами та командами, SCRUM Master",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Susanna Salata",
+            about: "Work should bring inspiration and satisfaction, not just money.",
+            services: "There will be text in English",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Susanna Salata",
+            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "1",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
-            position: "Business Analyst",
+            position: "Product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
             pricePerHour: "25",
