@@ -364,7 +364,7 @@ export const membersData: MemberDataItemType[] = [
             id: "8",
             projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=10gAhNYllJvPMyj0qlVcZUcXWCui4hhZf",
+                "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
