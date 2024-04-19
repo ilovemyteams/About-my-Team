@@ -34,11 +34,57 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
+            id: "0",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["www.website.ua"],
+            pricePerHour: "25",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/susanna-salata/",
+                github: "",
+                telegram: "",
+            },
+            tools: [
+                "UML",
+                "BPMN 2.0",
+                "SDLC",
+                "SQL",
+                "Python",
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs",
+            ],
+        },
+        uk: {
+            name: "Сусанна Салата",
+            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services:
+                "Консультування, менторинг, стратегічне планування, бюджетування, управління проектами та командами, SCRUM Master",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Susanna Salata",
+            about: "Work should bring inspiration and satisfaction, not just money.",
+            services: "There will be text in English",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Susanna Salata",
+            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: "There will be text in Polish",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "1",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
-            position: "product manager",
+            position: "Product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
             pricePerHour: "25",
@@ -341,20 +387,20 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Олена Постернак",
-            about: "Якась офігенна цитата про себе",
+            about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
             services:
                 "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
             team: "I Love My Team",
         },
         en: {
             name: "Olena Posternak",
-            about: "Something encredible about you",
+            about: "Small things matter. It’s often they, that make life more comfortable.",
             services: "There will be text in English",
             team: "I Love My Team",
         },
         pl: {
             name: "Olena Posternak",
-            about: "There will be text in Polish",
+            about: "Small things matter. It’s often they, that make life more comfortable.",
             services: "There will be text in Polish",
             team: "I Love My Team",
         },
@@ -364,7 +410,7 @@ export const membersData: MemberDataItemType[] = [
             id: "8",
             projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=10gAhNYllJvPMyj0qlVcZUcXWCui4hhZf",
+                "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["www.site.ua"],
@@ -389,14 +435,14 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Ольга Михайлова",
-            about: "Якась офігенна цитата про себе",
+            about: "Люблю знаходити елегантні рішення для складних задач.",
             services:
                 "Моя мета - розробка веб-застосунків, що вражають своєю зручністю для користувачів та ефективністю для бізнесу. Я прагну створювати продукти різного рівня складності, що забезпечують не лише функціональність, але й естетичність. Мій підхід полягає в тому, щоб допомагати клієнтам досягати бездоганних результатів шляхом поєднання максимальної корисності та привабливого дизайну у кожному проекті.",
             team: "I Love My Team",
         },
         en: {
             name: "Olga Mykhailova",
-            about: "Something encredible about you",
+            about: "I enjoy finding elegant solutions to difficult tasks.",
             services: "There will be text in English",
             team: "I Love My Team",
         },
@@ -413,7 +459,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
-            position: "QA",
+            position: "QA engineer",
             categoryName: "qa",
             projectsExperience: ["www.site.ua"],
             pricePerHour: "",
@@ -462,7 +508,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
-            position: "QA",
+            position: "QA engineer",
             categoryName: "qa",
             projectsExperience: [
                 "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
@@ -521,7 +567,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
-            position: "PM/SM",
+            position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: [""],
             pricePerHour: "",
@@ -568,7 +614,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
-            position: "BA",
+            position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: [""],
             pricePerHour: "",
