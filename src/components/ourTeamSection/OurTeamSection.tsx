@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { MemberCardsList } from "./MemberCardsList";
 import { membersData } from "../shared/mockedData/membersData";
 import { portfolioData } from "../shared/mockedData/portfolioData";
-import { MemberCardsListTablet } from "./MemberCardsListTablet";
+import { MemberCardsLisBigScreens } from "./MemberCardsLisBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -56,7 +56,7 @@ export const OurTeamSection = () => {
                     membersData={filteredData}
                     optionType={selectedOption.optionType}
                 />
-                <MemberCardsListTablet
+                <MemberCardsLisBigScreens
                     membersData={filteredData}
                     optionType={selectedOption.optionType}
                 />
