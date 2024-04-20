@@ -1,4 +1,4 @@
-import { SocialLinks } from "../shared/mockedData/membersData";
+import { SocialLinks } from "@/src/mockedData/membersData";
 import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 
 interface MemberCardTextProp {

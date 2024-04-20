@@ -3,8 +3,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
 //import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 import { SharePopover } from "../shared/SharePopover";
-import { MemberDataItemType } from "../shared/mockedData/membersData";
 import { NoImageHeart } from "../shared/NoImageHeart";
+import { MemberDataItemType } from "@/src/mockedData/membersData";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;

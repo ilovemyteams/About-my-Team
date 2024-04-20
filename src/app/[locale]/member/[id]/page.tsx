@@ -1,6 +1,6 @@
 import { Modal } from "@/src/components/Modal/Modal";
 import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
-import { membersData } from "@/src/components/shared/mockedData/membersData";
+import { membersData } from "@/src/mockedData/membersData";
 import Image from "next/image";
 import React from "react";
 
