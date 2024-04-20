@@ -11,10 +11,6 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
     const pathname = usePathname();
     if (pathname === `/${locale}`) return null;
 
-    console.log(router);
-    console.log(pathname);
-    console.log(locale);
-
     return (
         <div>
             <Link
