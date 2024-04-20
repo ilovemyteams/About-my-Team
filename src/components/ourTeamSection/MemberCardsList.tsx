@@ -54,12 +54,12 @@ export const MemberCardsList = ({
         <div className="relative embla min-w-full tab:hidden">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className="flex gap-0">
-                    {membersData.map((data, index) => (
+                    {membersData.map(data => (
                         <div
                             key={data.data.id}
                             className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]"
                         >
-                            <Link href={`/member/${index}`}>
+                            <Link href={`/member/${data.data.id}`}>
                                 <MemberCard data={data} />
                             </Link>
                             <MemberCardText

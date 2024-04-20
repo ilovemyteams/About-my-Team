@@ -57,9 +57,11 @@ export async function generateMetadata({
 
 export default function LocaleLayout({
     children,
+    modal,
     params: { locale },
 }: Readonly<{
     children: React.ReactNode;
+    modal: React.ReactNode;
     params: { locale: string };
 }>) {
     const messages = useMessages();
@@ -91,7 +93,10 @@ export default function LocaleLayout({
                     <Providers>
                         <BackgroundImages />
                         <Header />
-                        <main>{children}</main>
+                        <main>
+                            {children}
+                            {modal}
+                        </main>
                         <Footer />
                         <ScrollToTopButton />
                     </Providers>
