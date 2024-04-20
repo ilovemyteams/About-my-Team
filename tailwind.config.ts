@@ -140,6 +140,7 @@ const config: Config = {
                 "80": "calc(100vw - 80px)",
                 "120": "calc(100vw - 120px)",
                 portfolioHeroCard: "calc(100vw - 32px)",
+                teamTab: "calc(100% - 27vw - 12px)",
             },
             height: {
                 "70": "calc(100dvh - 80px)",

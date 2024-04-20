@@ -2,7 +2,7 @@ import { Section } from "../shared/Section";
 import { PortfolioCarousel } from "./PortfolioCarousel";
 import { PortfolioTitle } from "./Title/PortfolioTitle";
 import { EmblaOptionsType } from "embla-carousel";
-import { portfolioData } from "../shared/mockedData/portfolioData";
+import { portfolioData } from "../../mockedData/portfolioData";
 import { SharePopover } from "../shared/SharePopover";
 
 export const PortfolioSection = () => {
