@@ -3,11 +3,11 @@
 import { Section } from "../shared/Section";
 import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
-import { MenuTeamSectionMobile } from "./MenuTeamSectionMobile";
 import { useEffect, useState } from "react";
 import { MemberCardsList } from "./MemberCardsList";
-import { membersData } from "../shared/mockedData/membersData";
-import { portfolioData } from "../shared/mockedData/portfolioData";
+import { membersData } from "../../mockedData/membersData";
+import { portfolioData } from "../../mockedData/portfolioData";
+import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -47,13 +47,16 @@ export const OurTeamSection = () => {
     return (
         <Section id="team">
             <Title />
-            <div className="flex flex-col gap-6 tab:flex-row tab:justify-between">
-                <MenuTeamSectionMobile
+            <div className="flex flex-col gap-3 tab:flex-row tab:justify-between">
+                <MenuTeamSection
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
                 />
-                <MenuTeamSection />
                 <MemberCardsList
+                    membersData={filteredData}
+                    optionType={selectedOption.optionType}
+                />
+                <MemberCardsListBigScreens
                     membersData={filteredData}
                     optionType={selectedOption.optionType}
                 />
