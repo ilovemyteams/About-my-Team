@@ -11,14 +11,12 @@ interface MemberPageProps {
 }
 
 const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
-    console.log(params.id);
     const displayedMember = membersData.find(
         member => member.data.id === params.id
     );
     if (!displayedMember) {
         return <p>Member not found</p>;
     }
-    console.log(displayedMember);
     return (
         <Modal>
             <Image
