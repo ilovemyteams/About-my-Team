@@ -34,7 +34,7 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "0",
+            id: "SusannaSalataBA",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
@@ -80,7 +80,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "1",
+            id: "SusannaSalataPM",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
@@ -126,7 +126,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "2",
+            id: "IhorDronishynets",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
@@ -182,7 +182,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "3",
+            id: "IrynaStoliarova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
@@ -220,7 +220,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "4",
+            id: "AnastasiiaNazarenko",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1dZgahuKLMKs9t3Fn0TChx7YyKFiyOAYd",
@@ -264,7 +264,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "5",
+            id: "IrynaTrynkal",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
@@ -309,7 +309,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "6",
+            id: "NataliiaPashchenko",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
@@ -359,7 +359,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "7",
+            id: "OlenaPosternak",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
@@ -407,7 +407,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "8",
+            id: "OlgaMykhailova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
@@ -455,7 +455,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "9",
+            id: "KaterynaRubanik",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
@@ -504,7 +504,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "10",
+            id: "KaterynaPogrebna",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
@@ -563,7 +563,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "11",
+            id: "DariaCherviakova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
@@ -610,7 +610,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "12",
+            id: "OlhaKuchalska",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
