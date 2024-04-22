@@ -34,7 +34,7 @@ export const MemberCardsListBigScreens = ({
 
     return (
         <div
-            className="hidden tab:block relative embla min-w-full tab:min-w-[auto] tab:w-teamTab  tab:aspect-[500/540] border-1 border-purple-stroke
+            className="hidden tab:block relative embla min-w-full tab:min-w-[auto] tab:w-teamTab tab:aspect-[500/540] border-1 border-purple-stroke
                        pc:aspect-[810/584]"
         >
             <SliderButtons membersData={membersData} emblaApi={emblaApi} />
