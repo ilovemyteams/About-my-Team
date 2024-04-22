@@ -10,6 +10,7 @@ interface ButtonProps {
 }
 
 const userTheme = Cookies.get("theme") || { value: "dark" };
+
 const redColor =
     userTheme === "dark"
         ? "text-red border-red after:bg-red before:bg-red"
