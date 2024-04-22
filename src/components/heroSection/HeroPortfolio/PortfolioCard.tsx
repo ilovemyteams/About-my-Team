@@ -32,7 +32,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
 
             <div
                 className="absolute bottom-0 h-[74px] pc:h-[94px] bg-transporante w-full min-w-[288px] max-w-[540px] pc:w-[540px] 
-            deskxl:w-[668px] deskxl:max-w-[668px] deskxl:h-[110px] bg-portfolioGradient opacity-60"
+            deskxl:w-[668px] deskxl:max-w-[668px] deskxl:h-[110px] dark:bg-portfolioGradient bg-portfolioGradientLight dark:opacity-60"
             ></div>
             <div className="absolute bottom-0 p-4 pc:p-6 deskxl:p-8 h-[74px] pc:h-[94px] deskxl:h-[110px] z-10">
                 <p className="font-caviar text-lg pc:text-xl font-bold">

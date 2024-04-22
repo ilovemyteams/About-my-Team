@@ -159,10 +159,12 @@ const config: Config = {
                 purple: {
                     50: "#BFB4FF",
                     100: "#A258FF",
+                    130: "#7424B7",
                     200: "#1F0033",
                     300: "#54148A",
                     400: "#09002E",
                     stroke: "#5F3F87",
+                    strokeLight: "#C7C0F3",
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
                 },
@@ -307,15 +309,17 @@ const config: Config = {
         },
         backgroundImage: {
             portfolioGradient:
-                "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+                "linear-gradient(to right, #1E003D 0%, #3C0566 50%, #6607B1 100%)",
+            portfolioGradientLight:
+                "linear-gradient(to right, #F9F8FF 0%, #F9F4FF 22%, #EDE4FF 43%, #DBCAFF 64%, #C8ADFF 83%, #B490FF 100%)",
             portfolioSectionGradient:
-                "linear-gradient(to left, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
+                "linear-gradient(to left, #1E003D 0%, #3C0566 50%, #6607B1 100%)",
             CTAGradient:
-                "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
+                "linear-gradient(to right, #6607B1 0%, #3C0566 50%, #1E003D 100%)",
             CTAGradientLight:
-                "linear-gradient(to right, #B490FF 0% , #C8ADFF 19%, #E4D7FF 38%, #F0E9FF 60%, #FBF8FF 77%, #FEFDFF 100%)",
+                "linear-gradient(to right, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
             feedbackMobCardGradient:
-                "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
+                "linear-gradient(to right, #1E003D99 0%, #3C056699 50%, #6607B199 100%)",
             sharePopoverGradient:
                 "linear-gradient(to bottom left, #410093 0%, #09002E 50%, #4E0B92 100%)",
         },

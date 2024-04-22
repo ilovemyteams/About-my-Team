@@ -26,18 +26,14 @@ export function ThemeSwitcher({ id }: { id: string }) {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
         Cookies.set("theme", newTheme);
-        // typeof window !== "undefined" && window.location.reload();
     };
 
     if (!mounted) {
         return (
-            <div className="w-[66px] h-[28px] border border-purple-stroke rounded-[32px]"></div>
+            <div className="w-[66px] h-[28px] border dark:border-purple-stroke border-greyLight rounded-[32px]"></div>
         );
     }
 
-    console.log(resolvedTheme);
-
-    // TODO: update switcher border colors for light theme and set display block when design is ready
     return (
         <div
             id={id}
