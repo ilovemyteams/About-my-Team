@@ -1,8 +1,9 @@
-import { Modal } from "@/src/components/Modal/Modal";
-import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
-import { membersData } from "@/src/mockedData/membersData";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
+import { Modal } from "@/src/components/ourTeamSection/Modal";
+import { membersData } from "@/src/mockedData/membersData";
 
 interface MemberPageProps {
     params: {
@@ -15,7 +16,8 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
         member => member.data.id === params.id
     );
     if (!displayedMember) {
-        return <p>Member not found</p>;
+        notFound();
+        return null;
     }
     return (
         <Modal>
