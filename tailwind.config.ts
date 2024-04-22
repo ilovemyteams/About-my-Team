@@ -171,6 +171,7 @@ const config: Config = {
                 grey: "#D4D4D4",
                 greyLight: "#5C4E6D",
                 red: "#FB7185",
+                redLight: "#DE007F",
                 backdrop: "#030303",
                 error: "#D60000",
             },

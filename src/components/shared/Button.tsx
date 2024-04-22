@@ -1,3 +1,5 @@
+import Cookies from "js-cookie";
+
 interface ButtonProps {
     children: string;
     color?: "red" | "grey";
@@ -6,8 +8,16 @@ interface ButtonProps {
     disabled?: boolean;
     onClick?: () => void;
 }
-const redColor = "text-red border-red after:bg-red before:bg-red";
-const greyColor = "text-grey border-grey after:bg-grey before:bg-grey";
+
+const userTheme = Cookies.get("theme") || { value: "dark" };
+const redColor =
+    userTheme === "dark"
+        ? "text-red border-red after:bg-red before:bg-red"
+        : "text-redLight border-redLight after:bg-redLight before:bg-redLight";
+const greyColor =
+    userTheme === "dark"
+        ? "text-grey border-grey after:bg-grey before:bg-grey"
+        : "text-greyLight border-greyLight after:bg-greyLight before:bg-greyLight";
 
 export const Button = ({
     children,
