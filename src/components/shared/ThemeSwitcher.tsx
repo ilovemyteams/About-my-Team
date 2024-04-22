@@ -26,7 +26,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
         setTheme(resolvedTheme === "dark" ? "light" : "dark");
         Cookies.set("theme", newTheme);
-        typeof window !== "undefined" && window.location.reload();
+        // typeof window !== "undefined" && window.location.reload();
     };
 
     if (!mounted) {
@@ -35,11 +35,13 @@ export function ThemeSwitcher({ id }: { id: string }) {
         );
     }
 
+    console.log(resolvedTheme);
+
     // TODO: update switcher border colors for light theme and set display block when design is ready
     return (
         <div
             id={id}
-            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
+            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] dark:border-purple-stroke border-greyLight`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">
                 <input
@@ -53,9 +55,9 @@ export function ThemeSwitcher({ id }: { id: string }) {
                 />
                 <div className="relative w-[66px] h-[28px]">
                     <div
-                        className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px] 
-                        ${resolvedTheme === "dark" ? "translate-x-[3px] bg-purple-stroke" : "translate-x-[40px]  bg-purple-stroke"} 
-                        transition-transform duration-300 ease-out`}
+                        className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px]
+                        ${resolvedTheme === "dark" ? "translate-x-[3px]" : "translate-x-[40px]"} 
+                        dark:bg-purple-stroke  bg-greyLight transition-transform duration-300 ease-out`}
                     ></div>
                 </div>
             </label>

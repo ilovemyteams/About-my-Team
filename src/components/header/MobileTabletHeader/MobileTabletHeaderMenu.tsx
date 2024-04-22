@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Cookies from "js-cookie";
 import { HeaderMenuList } from "../HeaderMenuList";
 import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
 import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
@@ -17,14 +16,12 @@ export const MobileTabletHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
-    const userTheme = Cookies.get("theme") || { value: "dark" };
-
     return (
         <nav
             className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
-            ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"} ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
+            dark:bg-purple-400 bg-white-100 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
-            <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+            <div className={`dark:block hidden`}>
                 <BackgroundCirclesMobile className="top-[-80px]" />
                 <BackgroundCirclesTablet className="top-[-80px]" />
             </div>

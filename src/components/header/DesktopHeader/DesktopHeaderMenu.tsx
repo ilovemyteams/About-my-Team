@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Cookies from "js-cookie";
+import { useTheme } from "next-themes";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "../HeaderMenuList";
@@ -16,13 +16,14 @@ export const DesktopHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
-    const userTheme = Cookies.get("theme") || { value: "dark" };
+    const { resolvedTheme } = useTheme();
+
     return (
         <nav
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-            ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
+            ${resolvedTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
         >
-            <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+            <div className={`${resolvedTheme === "dark" ? "block" : "hidden"}`}>
                 <BackgroundCircles className="left-[-80px]" />
                 <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
             </div>

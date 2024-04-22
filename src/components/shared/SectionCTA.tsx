@@ -7,7 +7,7 @@ interface SectionCTAProps {
 
 export const SectionCTA = ({ children, className }: SectionCTAProps) => {
     return (
-        <div className="bg-CTAGradient">
+        <div className={`dark:bg-CTAGradient bg-CTAGradientLight`}>
             <section
                 className={`container max-w-[540px] tab:max-w-full desk:max-w-[1456px] py-[48px] pc:p-[60px] mb-[80px] pc:mb-[100px] ${className}`}
             >

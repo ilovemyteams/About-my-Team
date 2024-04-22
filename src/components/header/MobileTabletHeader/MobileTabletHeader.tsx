@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Cookies from "js-cookie";
 import { LogoLink } from "../LogoLink";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -9,10 +8,9 @@ import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCircle
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
-
-    const userTheme = Cookies.get("theme") || { value: "dark" };
 
     useEffect(() => {
         isHeaderMenuOpened
@@ -20,11 +18,13 @@ export const MobileTabletHeader = () => {
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
     return (
-        <div className="pc:hidden absolute top-0 left-0 w-[100vw]">
+        <div
+            className={`pc:hidden absolute top-0 left-0 w-[100vw] dark:bg-purple-400 bg-white-100`}
+        >
             <div
-                className={`absolute z-20 h-[80px] overflow-hidden ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
+                className={`absolute z-20 h-[80px] overflow-hidden bg-inherit`}
             >
-                <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+                <div className={`dark:block hidden`}>
                     <BackgroundCirclesMobile />
                     <BackgroundCirclesTablet />
                 </div>

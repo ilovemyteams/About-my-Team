@@ -172,6 +172,7 @@ const config: Config = {
                 greyLight: "#5C4E6D",
                 red: "#FB7185",
                 redLight: "#DE007F",
+                disabledLight: "#B097CE",
                 backdrop: "#030303",
                 error: "#D60000",
             },
@@ -309,9 +310,10 @@ const config: Config = {
                 "linear-gradient(to right, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
             portfolioSectionGradient:
                 "linear-gradient(to left, #1E003D 0% , #3C0566 50%, #6607B1 100%)",
-
             CTAGradient:
                 "linear-gradient(to right, #6607B1 0% , #3C0566 50%, #1E003D 100%)",
+            CTAGradientLight:
+                "linear-gradient(to right, #B490FF 0% , #C8ADFF 19%, #E4D7FF 38%, #F0E9FF 60%, #FBF8FF 77%, #FEFDFF 100%)",
             feedbackMobCardGradient:
                 "linear-gradient(to right, #1E003D99 0% , #3C056699 50%, #6607B199 100%)",
             sharePopoverGradient:
