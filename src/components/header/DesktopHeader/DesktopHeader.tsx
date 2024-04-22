@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
 import { LogoLink } from "../LogoLink";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -12,6 +13,8 @@ export const DesktopHeader = () => {
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
+    const userTheme = Cookies.get("theme") || { value: "dark" };
+
     useEffect(() => {
         isHeaderMenuOpened
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
@@ -20,9 +23,13 @@ export const DesktopHeader = () => {
 
     return (
         <div className={`hidden pc:block absolute top-0 left-0 h-[100vh]`}>
-            <div className="absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden bg-purple-400">
-                <BackgroundCircles />
-                <BackgroundCirclesBigScreens />
+            <div
+                className={`absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
+            >
+                <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+                    <BackgroundCircles />
+                    <BackgroundCirclesBigScreens />
+                </div>
                 <div
                     className="flex flex-col items-center justify-between z-20 w-[80px] deskxl:w-[120px] h-[100vh] 
                 py-8 border-solid border-r-[1px] border-purple-stroke"

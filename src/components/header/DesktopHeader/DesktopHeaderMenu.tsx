@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Cookies from "js-cookie";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "../HeaderMenuList";
@@ -15,13 +16,16 @@ export const DesktopHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
+    const userTheme = Cookies.get("theme") || { value: "dark" };
     return (
         <nav
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-           bg-purple-400`}
+            ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
         >
-            <BackgroundCircles className="left-[-80px]" />
-            <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
+            <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+                <BackgroundCircles className="left-[-80px]" />
+                <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
+            </div>
             <div className="w-80 deskxl:w-120">
                 <div className="flex flex-col justify-between w-80 deskxl:w-120 desk:max-w-[1456px] px-[60px] py-[32px] h-[100vh] mx-auto">
                     <div className="flex justify-end gap-[204px] w-full relative z-20">

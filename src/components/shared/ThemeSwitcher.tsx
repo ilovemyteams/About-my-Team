@@ -31,7 +31,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
 
     if (!mounted) {
         return (
-            <div className="hidden w-[66px] h-[28px] border border-purple-stroke rounded-[32px]"></div>
+            <div className="w-[66px] h-[28px] border border-purple-stroke rounded-[32px]"></div>
         );
     }
 
@@ -39,7 +39,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
     return (
         <div
             id={id}
-            className={`hidden relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
+            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${resolvedTheme === "dark" ? " border-purple-stroke" : " border-purple-stroke"}`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">
                 <input

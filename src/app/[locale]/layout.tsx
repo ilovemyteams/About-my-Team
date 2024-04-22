@@ -86,7 +86,7 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
                     className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
-                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-purple-400"}`}
+                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-white-100"}`}
                 >
                     <Providers>
                         <BackgroundImages />

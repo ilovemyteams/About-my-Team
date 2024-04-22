@@ -166,7 +166,7 @@ const config: Config = {
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
                 },
-                white: "#FBF8FF",
+                white: { 100: "#FFFFFF", 200: "#FBF8FF" },
                 black: "#000000",
                 grey: "#D4D4D4",
                 red: "#FB7185",

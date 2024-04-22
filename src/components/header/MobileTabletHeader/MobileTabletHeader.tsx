@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
 import { LogoLink } from "../LogoLink";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -11,6 +12,8 @@ export const MobileTabletHeader = () => {
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
+    const userTheme = Cookies.get("theme") || { value: "dark" };
+
     useEffect(() => {
         isHeaderMenuOpened
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
@@ -18,9 +21,13 @@ export const MobileTabletHeader = () => {
     }, [isHeaderMenuOpened]);
     return (
         <div className="pc:hidden absolute top-0 left-0 w-[100vw]">
-            <div className="absolute z-20 h-[80px] overflow-hidden bg-purple-400">
-                <BackgroundCirclesMobile />
-                <BackgroundCirclesTablet />
+            <div
+                className={`absolute z-20 h-[80px] overflow-hidden ${userTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
+            >
+                <div className={`${userTheme === "dark" ? "block" : "hidden"}`}>
+                    <BackgroundCirclesMobile />
+                    <BackgroundCirclesTablet />
+                </div>
                 <div className=" w-[100vw] h-[80px] px-[24px] py-[15px] border-solid border-b-[1px] border-purple-stroke ">
                     <div className="flex justify-between items-center max-w-[540px] tab:max-w-full mx-auto">
                         <LogoLink
