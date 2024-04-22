@@ -5,8 +5,6 @@ import { EmblaOptionsType } from "embla-carousel";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { MemberDataItemType } from "../../mockedData/membersData";
-import Link from "next/link";
-import { MemberCardText } from "./MemberCardText";
 import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {
@@ -38,27 +36,21 @@ export const MemberCardsList = ({
     return (
         <div className="relative embla min-w-full tab:hidden">
             <div className=" overflow-hidden" ref={emblaRef}>
-                <div className="flex gap-0">
+                <ul className="flex gap-0">
                     {membersData.map(data => (
-                        <div
+                        <li
                             key={data.data.id}
                             className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]"
                         >
-                            <Link href={`/member/${data.data.id}`}>
-                                <MemberCard data={data} />
-                            </Link>
-                            <MemberCardText
-                                position={data.data.position}
-                                socialLinks={data.data.socialLinks}
-                            />
-                        </div>
+                            <MemberCard data={data} />
+                        </li>
                     ))}
                     {optionType === "person" && (
                         <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-stroke [&:not(:last-child)]:border-r-[0px] even:ml-[-1px]">
                             <JoinUsCard />
                         </li>
                     )}
-                </div>
+                </ul>
                 <SliderButtons membersData={membersData} emblaApi={emblaApi} />
             </div>
         </div>
