@@ -169,6 +169,7 @@ const config: Config = {
                 white: { 100: "#FFFFFF", 200: "#FBF8FF" },
                 black: "#000000",
                 grey: "#D4D4D4",
+                greyLight: "#5C4E6D",
                 red: "#FB7185",
                 backdrop: "#030303",
                 error: "#D60000",
