@@ -38,11 +38,11 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 )}
             </div>
 
-            <div className="flex flex-col justify-between min-h-[144px] tab:min-h-[84px] ">
+            <div className="flex flex-col justify-between min-h-[129px] tab:min-h-[84px] ">
                 <h4 className="font-caviar text-baseb text-white pr-2 min-h-[60px] tab:min-h-[40px] mb-[14px] tab:mb-1">
                     {data[locale as LocaleType]?.name}
                 </h4>
-                <p className="text-purple-50 font-geist text-xs mr-12 mb-[10px] tab:w-[76%] tab:mr-0">
+                <p className="text-purple-50 font-geist text-xs mr-10 mb-[10px] tab:w-[76%] tab:mr-0">
                     {position.toUpperCase()}
                 </p>
             </div>
