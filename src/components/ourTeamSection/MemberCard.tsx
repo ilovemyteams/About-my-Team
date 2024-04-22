@@ -1,12 +1,11 @@
 "use client";
-
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import Link from "next/link";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
-import Link from "next/link";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
