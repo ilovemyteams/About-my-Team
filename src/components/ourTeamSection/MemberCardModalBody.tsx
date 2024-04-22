@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
-//import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
 import { SharePopover } from "../shared/SharePopover";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "@/src/mockedData/membersData";

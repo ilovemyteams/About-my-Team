@@ -20,7 +20,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
             <div className="w-[320px] h-auto pb-4 overflow-hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[100]">
                 <button
                     onClick={() => {
-                        router.back();
+                        router.push(`/${locale}#team`);
                     }}
                     type="button"
                     className="flex my-2 ml-auto w-12 h-12 justify-center items-center "
