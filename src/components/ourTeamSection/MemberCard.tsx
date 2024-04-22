@@ -44,7 +44,9 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 </h4>
             </div>
             <div className="flex pl-[6px] font-geist text-xs justify-between items-center">
-                <p className="text-purple-50 w-min">{position.toUpperCase()}</p>
+                <p className="text-purple-50 mr-12 min-h-12 flex items-center tab:w-full">
+                    {position.toUpperCase()}
+                </p>
                 <SocialLinkSmallMemberCard
                     url={socialLinks.linkedin}
                     image={"linkedin.svg"}
