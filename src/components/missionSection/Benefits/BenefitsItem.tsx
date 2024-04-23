@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { IconCheck } from "../../shared/Icons/IconCheck";
 
 interface BenefitsItemProps {
     children: string;
@@ -8,14 +8,12 @@ interface BenefitsItemProps {
 export const BenefitsItem = ({ children }: BenefitsItemProps) => {
     return (
         <li className="flex gap-3 items-start">
-            <Image
-                src="/images/check.svg"
-                width="0"
-                height="0"
-                alt="Check icon"
-                className="w-6 h-auto"
-            />
-            <p className="text-base pc:text-xl deskxl:text-2xl">{children}</p>
+            <div>
+                <IconCheck className="w-6 h-auto dark:text-red text-redLight" />
+            </div>
+            <p className="max-w-full text-base pc:text-xl deskxl:text-2xl">
+                {children}
+            </p>
         </li>
     );
 };

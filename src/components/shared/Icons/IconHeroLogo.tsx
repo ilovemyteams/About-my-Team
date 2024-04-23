@@ -1,8 +1,8 @@
-interface iconUpProps {
+interface iconHeroLogoProps {
     className?: string;
 }
 
-export const IconHeroLogo = ({ className }: iconUpProps) => {
+export const IconHeroLogo = ({ className }: iconHeroLogoProps) => {
     return (
         <svg
             width="0"

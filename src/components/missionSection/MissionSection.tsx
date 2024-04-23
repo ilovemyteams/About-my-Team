@@ -31,7 +31,7 @@ export const MissionSection = () => {
                         alt="animated image heart"
                         className={`hidden pc:block w-[32%] h-auto min-w-[297px] max-w-full ${inView && "animate-pulsation"}`}
                     />
-                    <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] tab:w-[48%] pc:w-[45%]">
+                    <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] w-full tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
                         <WriteUs />
                     </div>
