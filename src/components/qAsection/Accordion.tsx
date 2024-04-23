@@ -25,7 +25,7 @@ export function Accordion({ item }: AccordionProps) {
             >
                 <div className="flex justify-between my-[16px] pc:mb-[32px]">
                     <div>
-                        <summary className="flex-none font-caviar text-white-200 self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
+                        <summary className="flex-none font-caviar dark:text-white-200 text-purple-200 self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
                             {item.question}
                         </summary>
                     </div>
