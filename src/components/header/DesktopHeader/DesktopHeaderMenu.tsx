@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { useTheme } from "next-themes";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { HeaderMenuList } from "../HeaderMenuList";
@@ -16,14 +15,12 @@ export const DesktopHeaderMenu = ({
     isHeaderMenuOpened = false,
     setIsHeaderMenuOpened,
 }: HeaderMenuProps) => {
-    const { resolvedTheme } = useTheme();
-
     return (
         <nav
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-            ${resolvedTheme === "dark" ? "bg-purple-400" : "bg-white-100"}`}
+            dark:bg-purple-400 bg-white-100`}
         >
-            <div className={`${resolvedTheme === "dark" ? "block" : "hidden"}`}>
+            <div className={`dark:block hidden`}>
                 <BackgroundCircles className="left-[-80px]" />
                 <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
             </div>
