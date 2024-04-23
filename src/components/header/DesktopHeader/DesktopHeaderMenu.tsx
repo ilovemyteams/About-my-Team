@@ -31,7 +31,7 @@ export const DesktopHeaderMenu = ({
                         <ThemeSwitcher id="DesktopHeaderMenuThemeSwitcher" />
                     </div>
                     <div className="flex justify-between w-full overflow-hidden relative z-20">
-                        <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
+                        <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-strokeLight dark:border-purple-stroke">
                             <HeaderMenuList
                                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                             />

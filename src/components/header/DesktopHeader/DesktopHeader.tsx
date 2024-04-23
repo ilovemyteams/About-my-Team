@@ -21,18 +21,19 @@ export const DesktopHeader = () => {
 
     return (
         <div
-            className={`hidden pc:block absolute top-0 left-0 h-[100vh] dark:bg-purple-400 bg-white-100`}
+            className={`hidden pc:block absolute top-0 left-0 w-[80px] h-[100vh] dark:bg-purple-400 bg-white-100 
+            border-solid border-r-[1px] border-purple-strokeLight dark:border-purple-stroke`}
         >
             <div
-                className={`absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden bg-inherit`}
+                className={`absolute z-20 w-full deskxl:w-[120px] overflow-hidden`}
             >
                 <div className={`dark:block hidden`}>
                     <BackgroundCircles />
                     <BackgroundCirclesBigScreens />
                 </div>
                 <div
-                    className="flex flex-col items-center justify-between z-20 w-[80px] deskxl:w-[120px] h-[100vh] 
-                py-8 border-solid border-r-[1px] border-purple-stroke"
+                    className="flex flex-col items-center justify-between z-20 w-full deskxl:w-[120px] h-[100vh] 
+                py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
                     <BurgerMenuButton
