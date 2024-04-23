@@ -18,7 +18,7 @@ export const MobileTabletHeaderMenu = ({
 }: HeaderMenuProps) => {
     return (
         <nav
-            className={`absolute top-[80px] left-[0px] z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
+            className={`absolute top-[80px] left-0 z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
             dark:bg-purple-400 bg-white-100 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
             <div className={`dark:block hidden`}>

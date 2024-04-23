@@ -19,16 +19,16 @@ export const MobileTabletHeader = () => {
     }, [isHeaderMenuOpened]);
     return (
         <div
-            className={`pc:hidden absolute top-0 left-0 w-[100vw] dark:bg-purple-400 bg-white-100`}
+            className={`pc:hidden absolute top-0 left-0 w-[100vw] dark:bg-none dark:bg-purple-400 bg-headerGradientLight`}
         >
             <div
-                className={`absolute z-20 h-[80px] overflow-hidden bg-inherit`}
+                className={`absolute z-20 h-[80px] overflow-hidden bg-headerGradientLight dark:bg-none dark:bg-purple-400`}
             >
                 <div className={`dark:block hidden`}>
                     <BackgroundCirclesMobile />
                     <BackgroundCirclesTablet />
                 </div>
-                <div className=" w-[100vw] h-[80px] px-[24px] py-[15px] border-solid border-b-[1px] border-purple-stroke ">
+                <div className=" w-[100vw] h-[80px] px-[24px] py-[15px] border-none dark:border-solid dark:border-b-[1px] dark:border-purple-stroke">
                     <div className="flex justify-between items-center max-w-[540px] tab:max-w-full mx-auto">
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}

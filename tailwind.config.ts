@@ -324,6 +324,9 @@ const config: Config = {
                 "linear-gradient(to right, #1E003D99 0%, #3C056699 50%, #6607B199 100%)",
             sharePopoverGradient:
                 "linear-gradient(to bottom left, #410093 0%, #09002E 50%, #4E0B92 100%)",
+            headerGradientLight:
+                "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
+            none: "none",
         },
     },
     plugins: [
