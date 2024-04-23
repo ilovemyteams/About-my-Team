@@ -314,6 +314,8 @@ const config: Config = {
                 "linear-gradient(to right, #F9F8FF 0%, #F9F4FF 22%, #EDE4FF 43%, #DBCAFF 64%, #C8ADFF 83%, #B490FF 100%)",
             portfolioSectionGradient:
                 "linear-gradient(to left, #1E003D 0%, #3C0566 50%, #6607B1 100%)",
+            portfolioSectionGradientLight:
+                "linear-gradient(to left, #A175FF 0%, #B28DFF 19%, #D0B9FF 37%, #E9DEFF 54%, #F6EFFF 75%, #F9F8FF 100%)",
             CTAGradient:
                 "linear-gradient(to right, #6607B1 0%, #3C0566 50%, #1E003D 100%)",
             CTAGradientLight:
