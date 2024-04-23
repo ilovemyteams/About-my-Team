@@ -69,6 +69,6 @@ body {
         @apply appearance-none bg-transparent inline-flex cursor-pointer border border-red p-0 m-0 w-2 h-2 rounded-full;
     }
     .slider-dot--selected {
-        @apply bg-red justify-center;
+        @apply bg-redLight dark:bg-red justify-center;
     }
 }
