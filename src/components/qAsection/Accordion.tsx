@@ -17,7 +17,7 @@ export function Accordion({ item }: AccordionProps) {
     };
 
     return (
-        <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] border-purple-stroke">
+        <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] dark:border-purple-stroke border-purple-strokeLight">
             <button
                 aria-label="open answer button"
                 onClick={changeStateAccordion}
