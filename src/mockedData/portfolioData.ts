@@ -31,18 +31,18 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
         },
         uk: {
-            name: "I love my team",
+            name: "i love my team",
             siteView: "лендінг",
             description:
                 "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням",
         },
         en: {
-            name: "I love my team",
+            name: "i love my team",
             siteView: "lending",
             description: "descriptionId1",
         },
         pl: {
-            name: "I love my team",
+            name: "i love my team",
             siteView: "lending",
             description: "descriptionId1",
         },
