@@ -181,10 +181,6 @@ const config: Config = {
             fill: {
                 stroke: "#5F3F87",
             },
-            content: {
-                heart: 'url("/images/Heart.svg")',
-                triangles: 'url("/images/Triangles.svg")',
-            },
             keyframes: {
                 pulsation: {
                     "0%": {
