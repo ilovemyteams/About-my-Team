@@ -4,6 +4,9 @@ import { locales } from "../../i18n";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
+const activeStyle = "dark:text-red text-redLight";
+const inactiveStyle = "dark:text-purple-stroke text-disabledLight";
+
 export default function LocaleSwitcher() {
     const locale = useLocale();
 
@@ -24,9 +27,7 @@ export default function LocaleSwitcher() {
                     <Link
                         href={redirectedPathName(curLocale)}
                         className={
-                            curLocale === locale
-                                ? " text-red"
-                                : " text-purple-stroke"
+                            curLocale === locale ? activeStyle : inactiveStyle
                         }
                     >
                         {curLocale === "uk" ? "ua" : curLocale}

@@ -9,6 +9,7 @@ import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCi
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
@@ -19,10 +20,16 @@ export const DesktopHeader = () => {
     }, [isHeaderMenuOpened]);
 
     return (
-        <div className={`hidden pc:block absolute top-0 left-0 h-[100vh]`}>
-            <div className="absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden bg-purple-400">
-                <BackgroundCircles />
-                <BackgroundCirclesBigScreens />
+        <div
+            className={`hidden pc:block absolute top-0 left-0 h-[100vh] dark:bg-purple-400 bg-white-100`}
+        >
+            <div
+                className={`absolute z-20 w-[80px] deskxl:w-[120px] overflow-hidden bg-inherit`}
+            >
+                <div className={`dark:block hidden`}>
+                    <BackgroundCircles />
+                    <BackgroundCirclesBigScreens />
+                </div>
                 <div
                     className="flex flex-col items-center justify-between z-20 w-[80px] deskxl:w-[120px] h-[100vh] 
                 py-8 border-solid border-r-[1px] border-purple-stroke"

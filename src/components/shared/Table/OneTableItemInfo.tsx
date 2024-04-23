@@ -72,9 +72,11 @@ export const OneTableItemInfo = ({
             <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2 items-center">
                 {isIconShown && (
-                    <div className="w-[18px] h-[18px] border-red border-[3px]"></div>
+                    <div className="w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
                 )}
-                <h3 className="font-caviar text-xlb text-white">{title}</h3>
+                <h3 className="font-caviar text-xlb dark:text-white-200 text-purple-200">
+                    {title}
+                </h3>
             </div>
             <div
                 ref={contentRef}

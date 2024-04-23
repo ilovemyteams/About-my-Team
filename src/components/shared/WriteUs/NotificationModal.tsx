@@ -111,7 +111,7 @@ export const NotificationModal = ({
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
                     <h3
-                        className={`font-caviar text-3xl text-white mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
+                        className={`font-caviar text-3xl text-white-200 mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
                     >
                         {isError
                             ? getTranslation("somethingWrong")

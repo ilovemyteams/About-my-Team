@@ -11,7 +11,7 @@ export const Footer = () => {
             className="relative container pb-5 tab:pb-[40px] pc:m-0 pc:max-w-full pc:pl-[140px] max-w-[540px] tab:max-w-full
          desk:max-w-[1456px] desk:mx-auto desk:left-[40px] desk:pl-[60px] deskxl:left-[60px]"
         >
-            <div className="border-y-[1px] border-solid border-purple-stroke desk:mx-auto">
+            <div className="border-y-[1px] border-solid dark:border-purple-stroke border-purple-strokeLight desk:mx-auto">
                 <TitleFooter />
                 <SharePopover
                     className="absolute top-[90px] tab:top-[64px] pc:top-[82px] right-[16px] pc:right-[60px] deskxl:top-[129px]"
