@@ -75,10 +75,9 @@ export const MenuTeamSection = ({
                 />
             </div>
             <div
-                className={`${isOpen ? "max-h-[1280px]" : "max-h-0"} tab:max-h-full tab:h-full absolute top-12 z-10 min-w-[288px] max-w-[540px] w-full 
+                className={`${isOpen ? "max-h-[1280px]" : "max-h-0"} tab:max-h-full tab:h-full dark:bg-purple-400 bg-white-100 absolute top-12 z-10 min-w-[288px] max-w-[540px] w-full 
                     transition-[max-height] duration-[300ms] overflow-hidden 
-                    tab:static tab:border-[1px] tab:border-purple-stroke tab:w-[27vw] tab:min-w-[208px]
-                    `}
+                    tab:static tab:border-[1px] tab:border-purple-stroke tab:w-[27vw] tab:min-w-[208px]`}
             >
                 <div className="py-3 px-4 tab:px-[1.05vw] tab:min-h-[540px]">
                     <p className="text-sm dark:text-purple-50 text-purple-130 pb-3">
