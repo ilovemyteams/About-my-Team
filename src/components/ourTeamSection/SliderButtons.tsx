@@ -32,6 +32,7 @@ export const SliderButtons = ({
                 <PrevButton
                     onClick={onPrevButtonClick}
                     disabled={prevBtnDisabled}
+                    className={`${prevBtnDisabled ? "fill-stroke" : ""}`}
                 />
                 <SliderDotsBox
                     scrollSnaps={scrollSnaps}
@@ -42,6 +43,7 @@ export const SliderButtons = ({
                 <NextButton
                     onClick={onNextButtonClick}
                     disabled={nextBtnDisabled}
+                    className={`${prevBtnDisabled ? "fill-stroke" : ""}`}
                 />
             </div>
         </div>

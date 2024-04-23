@@ -59,37 +59,37 @@ type ButtonType = PropsWithChildren<
 >;
 
 export const PrevButton: React.FC<ButtonType> = props => {
-    const { ...restProps } = props;
+    const { className, disabled, ...restProps } = props;
 
     return (
         <button
             aria-label="show previous slide button"
-            className="embla__button--prev flex justify-center items-center w-12 h-12 relative
-            tab:border-t tab:border-b border-red group
+            className={`embla__button--prev flex justify-center items-center w-12 h-12 relative
+            tab:border-t tab:border-b group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+            icon-hover-rounded-purple:active ${disabled ? "border-purple-stroke" : "border-red"}`}
             type="button"
             {...restProps}
         >
-            <ArrowIcon />
+            <ArrowIcon className={className} />
         </button>
     );
 };
 
 export const NextButton: React.FC<ButtonType> = props => {
-    const { ...restProps } = props;
+    const { className, disabled, ...restProps } = props;
 
     return (
         <button
             aria-label="show next slide button"
-            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
-            tab:border-t tab:border-b border-red group
+            className={`embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+            tab:border-t tab:border-b  group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+            icon-hover-rounded-purple:active ${disabled ? "border-purple-stroke" : "border-red"}`}
             type="button"
             {...restProps}
         >
-            <ArrowIcon />
+            <ArrowIcon className={className} />
         </button>
     );
 };
