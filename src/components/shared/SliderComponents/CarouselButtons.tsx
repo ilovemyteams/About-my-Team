@@ -65,7 +65,7 @@ export const PrevButton: React.FC<ButtonType> = props => {
         <button
             aria-label="show previous slide button"
             className="embla__button--prev flex justify-center items-center w-12 h-12 relative
-            tab:border-t tab:border-b border-red group
+            tab:border-t tab:border-b dark:border-red border-redLight dark:text-red text-redLight group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active"
             type="button"
@@ -83,7 +83,7 @@ export const NextButton: React.FC<ButtonType> = props => {
         <button
             aria-label="show next slide button"
             className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
-            tab:border-t tab:border-b border-red group
+            tab:border-t tab:border-b dark:border-red border-redLight dark:text-red text-redLight group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active"
             type="button"
