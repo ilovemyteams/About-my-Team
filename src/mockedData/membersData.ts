@@ -37,7 +37,7 @@ export const membersData: MemberDataItemType[] = [
             id: "SusannaSalataBA",
             projectId: [],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["www.website.ua"],
@@ -83,7 +83,7 @@ export const membersData: MemberDataItemType[] = [
             id: "SusannaSalataPM",
             projectId: ["1", "2", "3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Product manager",
             categoryName: "manager",
             projectsExperience: ["www.website.ua"],
