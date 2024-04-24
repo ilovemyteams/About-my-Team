@@ -4,8 +4,8 @@ import { locales } from "../../i18n";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const activeStyle = "dark:text-red text-redLight";
-const inactiveStyle = "dark:text-purple-stroke text-disabledLight";
+const activeStyle = "outline-none dark:text-red text-redLight";
+const inactiveStyle = "outline-none dark:text-purple-stroke text-disabledLight";
 
 export default function LocaleSwitcher() {
     const locale = useLocale();
