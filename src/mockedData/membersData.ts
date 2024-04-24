@@ -62,19 +62,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, менторинг, стратегічне планування, бюджетування, управління проектами та командами, SCRUM Master",
+                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
-            services: "There will be text in English",
+            services:
+                "Consulting, business process analysis, strategic planning, budgeting, project and team management, product development. Mentoring for beginners in IT",
             team: "I Love My Team",
         },
         pl: {
             name: "Susanna Salata",
             about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services: "There will be text in Polish",
+            services:
+                "Konsulting, analiza procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów. Mentoring dla początkujących w IT",
             team: "I Love My Team",
         },
     },
@@ -108,19 +110,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, менторинг, стратегічне планування, бюджетування, управління проектами та командами, SCRUM Master",
+                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
-            services: "There will be text in English",
+            services:
+                "Consulting, business process analysis, strategic planning, budgeting, project and team management, product development. Mentoring for beginners in IT",
             team: "I Love My Team",
         },
         pl: {
             name: "Susanna Salata",
             about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services: "There will be text in Polish",
+            services:
+                "Konsulting, analiza procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów. Mentoring dla początkujących w IT",
             team: "I Love My Team",
         },
     },
@@ -170,13 +174,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ihor Dronishynets",
             about: "There will be text in English",
             services:
-                "Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
+                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer",
             team: "I Love My Team",
         },
         pl: {
             name: "Ihor Dronishynets",
             about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            services:
+                "Pełny cykl rozwoju strony internetowej od logo i brandingu do wydania produktu i przekazania praw dostępu klientowi.",
             team: "I Love My Team",
         },
     },
@@ -208,13 +213,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Iryna Stoliarova",
             about: "Good design, first of all, needs to solve problems.",
             services:
-                "I’ve been providing the full design service for products, including market research, competitor analysis, user research, information architecture, concepts, interactive prototypes.",
+                "I provide a full range of product design services, including market research, competitor analysis, user research, information architecture, and interactive prototypes.",
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Stoliarova",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            about: "Dobry projekt powinien przede wszystkim rozwiązywać problemy.",
+            services:
+                "Zapewniam pełen zakres usług projektowania produktów, w tym badania rynku, analizę konkurencji, badania użytkowników, architekturę informacji i interaktywne prototypy.",
             team: "I Love My Team",
         },
     },
@@ -252,13 +258,15 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Anastasiia Nazarenko",
             about: "Designer is a planner with a sense of beauty",
-            services: "There will be text in English",
+            services:
+                "Designing logos, company branding, drawing illustrations, creating simple animations. Media for social networks, typography, knowledge of UX/UI design, infographics",
             team: "I Love My Team",
         },
         pl: {
             name: "Anastasiia Nazarenko",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            about: "Projektant to strateg z poczuciem piękna.",
+            services:
+                "Projektowanie logo, branding firmy, tworzenie ilustracji lub prostych animacji, obsługa portali społecznościowych, typografia, znajomość projektowania UX/UIinfografiki",
             team: "I Love My Team",
         },
     },
@@ -297,13 +305,15 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Iryna Trynkal",
             about: "Something encredible about you",
-            services: "There will be text in English",
+            services:
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account best practices. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js. Creating and managing backend APIs to ensure communication between the frontend and the server. Implementation of user authentication and granting access rights to ensure application security. Combining front-end and back-end components to create a single, working application.",
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Trynkal",
             about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            services:
+                "Projektowanie i tworzenie stron internetowych przy użyciu HTML, CSS i JavaScript z uwzględnieniem najlepszych praktyk. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js. Tworzenie i zarządzanie backendowymi interfejsami API w celu zapewnienia komunikacji między frontendem a serwerem. Wdrażanie uwierzytelniania użytkowników i przyznawanie praw dostępu w celu zapewnienia bezpieczeństwa dla aplikacji. Łączenie komponentów front-end i back-end w celu stworzenia pojedynczej, działającej aplikacji.",
             team: "I Love My Team",
         },
     },
@@ -395,13 +405,15 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Olena Posternak",
             about: "Small things matter. It’s often they, that make life more comfortable.",
-            services: "There will be text in English",
+            services:
+                "I specialize in web application development, taking into account best practices. I create interactive applications using various JavaScript frameworks and libraries. My main goal is to provide users with a comfortable and convenient experience of using web applications.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olena Posternak",
             about: "Small things matter. It’s often they, that make life more comfortable.",
-            services: "There will be text in Polish",
+            services:
+                "Specjalizuję się w tworzeniu aplikacji internetowych, biorąc pod uwagę najlepsze praktyki. Tworzę interaktywne aplikacje przy użyciu różnych frameworków i bibliotek JavaScript. Moim głównym celem jest zapewnienie użytkownikom wygodnego i komfortowego korzystania z aplikacji internetowych.",
             team: "I Love My Team",
         },
     },
@@ -443,13 +455,15 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Olga Mykhailova",
             about: "I enjoy finding elegant solutions to difficult tasks.",
-            services: "There will be text in English",
+            services:
+                "My goal is to develop web applications that impress with their user-friendliness and business efficiency. I strive to create products of varying levels of complexity that provide not only functionality but also aesthetics. My approach is to help clients achieve flawless results by combining maximum utility and attractive design in every project.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olga Mykhailova",
             about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            services:
+                "Moim celem jest tworzenie aplikacji internetowych, które są bardzo łatwe w obsłudze i bardzo efektywne biznesowo. Staram się tworzyć produkty o różnym poziomie złożoności, które zapewniają nie tylko funkcjonalność, ale także estetykę. Moje podejście polega na pomaganiu klientom w osiąganiu najlepszych wyników poprzez łączenie maksymalnej użyteczności i atrakcyjnego wyglądu w każdym projekcie.",
             team: "I Love My Team",
         },
     },
@@ -486,19 +500,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Катерина Рубанік",
             about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту",
             services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API",
+                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Rubanik",
-            about: "Text in en",
-            services: "Text in en",
+            about: "QA engineer with experience in software testing. I have the skills to test, analyze and detect errors to ensure the impeccable quality of the product",
+            services:
+                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "I Love My Team",
         },
         pl: {
             name: "Kateryna Rubanik",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            about: "QA Inżynier z doświadczeniem w testowaniu oprogramowania. Posiadam umiejętności testowania, analizowania i wykrywania błędów w celu zapewnienia nienagannej jakości produktu",
+            services:
+                "Tworzenie dokumentacji testów (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Wykonanie testów internetowych/mobilnych, testów API.",
             team: "I Love My Team",
         },
     },
@@ -550,14 +566,16 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Kateryna Pogrebna",
-            about: "Text in en",
-            services: "Text in en",
+            about: "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
+            services:
+                "Manual functional and non-functional testing. UI/UX, API, database, and performance testing. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
             team: "I Love My Team",
         },
         pl: {
             name: "Kateryna Pogrebna",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            about: "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
+            services:
+                "Manualne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie integracyjne, badanie produktu, analiza domeny, testowanie ról i dostępów, testowanie eksploarycjne, testowanie regresyjne. Dokumentacja: User Stories, Plan testów, Strategia testów, Lista kontrolna, Przypadki testowe, Raport błędów, Raport z testów.",
             team: "I Love My Team",
         },
     },
@@ -597,14 +615,16 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Daria Cherviakova",
-            about: "Text in en",
-            services: "Text in en",
+            about: "Junior Project Manager/ Scrum Master with a desire for professional growth. I manage the process, ensure effective communication and fulfillment of goals.",
+            services:
+                "I provide services as a junior Project Manager. I coordinate and facilitate the implementation of projects in accordance with the Scrum methodology.",
             team: "I Love My Team",
         },
         pl: {
             name: "Daria Cherviakova",
-            about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i realizację celów.",
+            services:
+                "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
             team: "I Love My Team",
         },
     },
@@ -636,7 +656,7 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Ольга Кучальська",
-            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
+            about: "Цитата про себе ",
             services:
                 "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
             team: "I Love My Team",
@@ -644,13 +664,15 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Olha Kuchalska",
             about: "Text in en",
-            services: "Text in en",
+            services:
+                "Analysis of the customer's business needs. Data analysis. Market and competitor analysis. Developing, analyzing, organizing and formalizing requirements. Comunication management between developers and stakeholders. Writing technical documentation, user-story. Basic testing skills and SQL knowledge. Knowledge of SDLC, agile methodologies and basic management knowledge. Excellent communication skills.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olha Kuchalska",
             about: "There will be text in Polish",
-            services: "There will be text in Polish",
+            services:
+                "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
             team: "I Love My Team",
         },
     },
