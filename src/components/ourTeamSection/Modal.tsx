@@ -16,6 +16,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
             <Link
                 href={`/${locale}#team`}
                 className="w-full h-full bg-[rgba(3,3,3,0.8)] fixed top-0 left-0 z-[20]"
+                scroll={false}
             />
             <div className="w-[320px] h-auto pb-4 overflow-hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21]">
                 <button
