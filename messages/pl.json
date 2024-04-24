@@ -128,7 +128,7 @@
         "allProjects": "Wszystkie projekty",
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
-        "buyMeACoffe": "Пригостити кавою"
+        "buyMeACoffe": "Poczęstować kawą"
     },
     "Footer": {
         "titleFirstWord": "Zacznij ",
@@ -147,36 +147,36 @@
         "button": "do strony głównej"
     },
     "SharePopover": {
-        "shareLink": "Поділитись посиланням через:",
-        "copyLink": "Скопіювати посилання:"
+        "shareLink": "Udostępnij łącze przez",
+        "copyLink": "Kopiuj łącze:"
     },
     "CustomerForm": {
         "nameLabel": "Twoje imię*",
         "emailLabel": "E-mail*",
-        "telegramLabel": "Telegram/нік",
+        "telegramLabel": "Telegram/pseudonim",
         "linkedinLabel": "Linkedin",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Twoja wiadomość*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/susannasalata або @susanna",
+        "telegramPlaceholder": "t.me/susannasalata albo @susanna",
         "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
         "instagramPlaceholder": "instagram.com/susannasalata",
         "facebookPlaceholder": "facebook.com/susannasalata",
         "messagePlaceholder": "Twoja wiadomość jest dla nas ważna",
         "requiredField": "*Поля, обов'язкові для заповнення",
-        "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
-        "rulesLink": "Правилами обробки персональних даних",
-        "submitButton": "Надіслати"
+        "informedAgreement": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na ",
+        "rulesLink": "Warunki przetwarzania danych osobowych",
+        "submitButton": "Wyślij"
     },
     "Errors": {
-        "required": "Дане поле обов’язкове до заповнення",
-        "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
-        "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
+        "required": "To pole jest obowiązkowe",
+        "nameMinMaxSymbols": "Nazwa musi zawierać od 2 do 30 znaków",
+        "nameAllowedSymbols": "Dozwolone litery i znaki: myślnik, apostrof, cudzysłów)",
         "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
         "russianEmails": "Nie współpracujemy z Moskalami",
-        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "messageMinMaxSymbols": "Pole musi zawierać od 10 do 300 znaków",
         "wrongLinkedin": "Nieprawidłowy adres linkedin",
         "wrongInstagram": "Nieprawidłowy adres instagram",
         "wrongFacebook": "Nieprawidłowy adres facebook",
@@ -184,9 +184,9 @@
     },
     "Notifications": {
         "thankYou": "Dziękujemy!",
-        "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
-        "somethingWrong": "Щось пішло не так",
-        "tryAgain": "Спробуйте надіслати форму ще раз",
+        "waitResponse": "Wiadomość została wysłana. Nasz menedżer wkrótce się skontaktuje",
+        "somethingWrong": "Coś poszło nie tak",
+        "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
     }
 }

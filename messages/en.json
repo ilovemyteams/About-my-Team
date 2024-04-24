@@ -164,17 +164,17 @@
         "facebookPlaceholder": "facebook.com/susannasalata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Поля, обов'язкові для заповнення",
-        "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
-        "rulesLink": "Правилами обробки персональних даних",
-        "submitButton": "Надіслати"
+        "informedAgreement": "By clicking the “Submit” button, you agree to the",
+        "rulesLink": "Terms of Personal Data Processing",
+        "submitButton": "Send"
     },
     "Errors": {
-        "required": "Дане поле обов’язкове до заповнення",
-        "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
-        "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
+        "required": "This field is required",
+        "nameMinMaxSymbols": "The name must contain from 2 to 30 characters",
+        "nameAllowedSymbols": "Allowed letters and characters: hyphen, apostrophe, quotation marks)",
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
-        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",
@@ -182,9 +182,9 @@
     },
     "Notifications": {
         "thankYou": "Thank you!",
-        "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
+        "waitResponse": "Your message has been sent. Our manager will contact you shortly",
         "somethingWrong": "Something went wrong",
-        "tryAgain": "Спробуйте надіслати форму ще раз",
+        "tryAgain": "Please try to send the form again",
         "linkIsCopied": "Link copied"
     }
 }
