@@ -49,7 +49,8 @@ export const SharePopover = ({
             <PopoverTrigger>
                 <button
                     aria-label="share button"
-                    className={`bg-transparent h-12 min-w-12 justify-center items-center focus:outline-none px-0 flex gap-2 font-caviar tab:text-lg dark:pc:hover:text-red pc:hover:text-redLight pc:transition pc:ease-out pc:duration-300 active:text-red ${className}`}
+                    className={`bg-transparent h-12 min-w-12 justify-center items-center focus:outline-none px-0 flex gap-2 font-caviar tab:text-lg dark:pc:hover:text-red pc:hover:text-redLight
+                    dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight ${className}`}
                 >
                     <p
                         className={
