@@ -17,7 +17,7 @@ export function Accordion({ item }: AccordionProps) {
     };
 
     return (
-        <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] border-purple-stroke">
+        <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] dark:border-purple-stroke border-purple-strokeLight">
             <button
                 aria-label="open answer button"
                 onClick={changeStateAccordion}
@@ -25,12 +25,12 @@ export function Accordion({ item }: AccordionProps) {
             >
                 <div className="flex justify-between my-[16px] pc:mb-[32px]">
                     <div>
-                        <summary className="flex-none font-caviar text-white self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
+                        <summary className="flex-none font-caviar dark:text-white-200 text-purple-200 self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
                             {item.question}
                         </summary>
                     </div>
                     <div
-                        className="relative cursor-pointer text-red flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
+                        className="relative cursor-pointer dark:text-red text-redLight flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active"
                     >

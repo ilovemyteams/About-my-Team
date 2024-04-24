@@ -1,5 +1,4 @@
 import React from "react";
-import { cookies } from "next/headers";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
@@ -66,9 +65,6 @@ export default function LocaleLayout({
 }>) {
     const messages = useMessages();
 
-    const cookieStore = cookies();
-    const userTheme = cookieStore.get("theme") || { value: "dark" };
-
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
@@ -88,7 +84,7 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <body
                     className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
-                    ${userTheme?.value === "dark" ? "bg-purple-400" : "bg-purple-400"}`}
+                   dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                 >
                     <Providers>
                         <BackgroundImages />

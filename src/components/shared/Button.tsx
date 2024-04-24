@@ -6,8 +6,6 @@ interface ButtonProps {
     disabled?: boolean;
     onClick?: () => void;
 }
-const redColor = "text-red border-red after:bg-red before:bg-red";
-const greyColor = "text-grey border-grey after:bg-grey before:bg-grey";
 
 export const Button = ({
     children,
@@ -17,6 +15,10 @@ export const Button = ({
     disabled = false,
     onClick,
 }: ButtonProps) => {
+    const redColor =
+        "dark:text-red dark:border-red dark:after:bg-red dark:before:bg-red text-redLight border-redLight after:bg-redLight before:bg-redLight";
+    const greyColor =
+        "dark:text-grey dark:border-grey dark:after:bg-grey dark:before:bg-grey text-greyLight border-greyLight after:bg-greyLight before:bg-greyLight";
     return (
         <button
             aria-label="contact button"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IconWebSite } from "../shared/Icons/IconWebSite";
 
 export interface FeedbackCardItemProps {
     data: {
@@ -36,7 +37,7 @@ export const FeedbackCard = ({
                     height={346}
                     className=" object-cover min-w-[220px] h-[220px] "
                 />
-                <div className="absolute bottom-0 left-0 min-w-full h-[55px] bg-feedbackMobCardGradient">
+                <div className="absolute bottom-0 left-0 min-w-full h-[55px] dark:bg-feedbackMobCardGradient bg-feedbackMobCardGradientLight">
                     <p className="font-caviar font-bold text-base mt-2 mb-1 ml-2 ">
                         {reviewer}
                     </p>
@@ -44,12 +45,7 @@ export const FeedbackCard = ({
                 </div>
                 <div className="absolute bottom-[15px] right-3">
                     <a href={siteLink}>
-                        <Image
-                            src="/images/webSiteIcon_opt.svg"
-                            alt="siteLink"
-                            width={24}
-                            height={24}
-                        />
+                        <IconWebSite />
                     </a>
                 </div>
             </div>

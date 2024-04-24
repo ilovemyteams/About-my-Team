@@ -13,7 +13,7 @@ export const ArrowIcon = ({ className }: ArrowIconProps) => {
         >
             <path
                 d="m21.154 1.37 2.414 2.413-12.379 12.379 12.379 12.379-2.414 2.413L6.44 16.162 21.154 1.37Z"
-                fill="fill-stroke"
+                fill="currentColor"
             />
         </svg>
     );

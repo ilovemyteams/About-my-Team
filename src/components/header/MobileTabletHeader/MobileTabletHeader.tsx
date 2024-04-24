@@ -8,6 +8,7 @@ import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCircle
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
@@ -17,11 +18,16 @@ export const MobileTabletHeader = () => {
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
     return (
-        <div className="pc:hidden absolute top-0 left-0 w-[100vw]">
-            <div className="absolute z-20 h-[80px] overflow-hidden bg-purple-400">
-                <BackgroundCirclesMobile />
-                <BackgroundCirclesTablet />
-                <div className=" w-[100vw] h-[80px] px-[24px] py-[15px] border-solid border-b-[1px] border-purple-stroke ">
+        <div
+            className={`pc:hidden absolute top-0 left-0 w-[100vw] h-[80px] dark:bg-none dark:bg-purple-400 bg-headerGradientLight 
+            border-b-transparent dark:border-solid dark:border-b-[1px] dark:border-purple-stroke`}
+        >
+            <div className={`absolute z-20 w-full overflow-hidden`}>
+                <div className={`dark:block hidden`}>
+                    <BackgroundCirclesMobile />
+                    <BackgroundCirclesTablet />
+                </div>
+                <div className="w-full px-[24px] py-[15px]">
                     <div className="flex justify-between items-center max-w-[540px] tab:max-w-full mx-auto">
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}

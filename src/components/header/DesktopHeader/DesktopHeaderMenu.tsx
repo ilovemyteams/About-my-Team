@@ -18,10 +18,12 @@ export const DesktopHeaderMenu = ({
     return (
         <nav
             className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-width duration-[600ms] ease-out
-           bg-purple-400`}
+            dark:bg-purple-400 bg-white-100`}
         >
-            <BackgroundCircles className="left-[-80px]" />
-            <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
+            <div className={`dark:block hidden`}>
+                <BackgroundCircles className="left-[-80px]" />
+                <BackgroundCirclesBigScreens className="left-[-80px] deskxl:left-[-120px]" />
+            </div>
             <div className="w-80 deskxl:w-120">
                 <div className="flex flex-col justify-between w-80 deskxl:w-120 desk:max-w-[1456px] px-[60px] py-[32px] h-[100vh] mx-auto">
                     <div className="flex justify-end gap-[204px] w-full relative z-20">
@@ -29,7 +31,7 @@ export const DesktopHeaderMenu = ({
                         <ThemeSwitcher id="DesktopHeaderMenuThemeSwitcher" />
                     </div>
                     <div className="flex justify-between w-full overflow-hidden relative z-20">
-                        <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-stroke">
+                        <div className="flex flex-col justify-center gap-y-[64px] min-w-[402px] w-[37%] py-[48px] border-solid border-r-[1px] border-purple-strokeLight dark:border-purple-stroke">
                             <HeaderMenuList
                                 setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                             />

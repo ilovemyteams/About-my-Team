@@ -83,7 +83,7 @@ export const NextButton: React.FC<ButtonType> = props => {
         <button
             aria-label="show next slide button"
             className={`embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
-            tab:border-t tab:border-b  group
+            tab:border-t tab:border-b dark: border-redLight dark:text-red text-redLight group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active ${disabled ? "border-purple-stroke" : "border-red"}`}
             type="button"

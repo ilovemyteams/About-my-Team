@@ -9,7 +9,7 @@ export const Providers = ({ children, ...props }: ThemeProviderProps) => {
         <NextUIProvider>
             <NextThemesProvider
                 attribute="class"
-                defaultTheme="system"
+                defaultTheme="dark"
                 enableSystem
                 {...props}
             >

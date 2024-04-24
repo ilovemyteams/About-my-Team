@@ -1,8 +1,8 @@
-interface iconUpProps {
+interface iconCloseXProps {
     className?: string;
 }
 
-export const IconCloseX = ({ className }: iconUpProps) => {
+export const IconCloseX = ({ className }: iconCloseXProps) => {
     return (
         <svg
             width="24"

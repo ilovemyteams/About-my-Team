@@ -26,7 +26,8 @@ export const MenuFooter = () => {
                     <div className="py-[10px] pl-1 tab:py-0">
                         <Link
                             href={`/${locale}#${id}`}
-                            className="text-base deskxl:text-lg font-normal font-geist hover:text-red focus:text-red transition ease-out duration-300"
+                            className="text-base deskxl:text-lg font-normal font-geist dark:pc:hover:text-red pc:hover:text-redLight 
+                            dark:pc:focus-visible:text-red pc:focus:text-redLight transition-color ease-out duration-300"
                         >
                             {name}
                         </Link>
