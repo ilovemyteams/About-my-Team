@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
 
 export const FeedbackCardTextFromTab = ({
@@ -13,11 +13,10 @@ export const FeedbackCardTextFromTab = ({
     return (
         <div className="flex flex-col tab:h-[377px] pc:h-[426px] ">
             <div className="tab:h-[302px] pc:h-[348px] ">
-                <Image
-                    src="/images/quote_opt.svg"
-                    alt="Quote"
-                    width={48}
-                    height={32}
+                <IconQuote
+                    className={
+                        "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight"
+                    }
                 />
                 <p className="tab:my-6 pc:my-[16px] font-light tab:text-base pc:text-xl tab:h-[139px] pc:h-[175px]">
                     {feedbackText}
