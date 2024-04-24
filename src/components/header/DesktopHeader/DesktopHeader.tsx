@@ -21,7 +21,7 @@ export const DesktopHeader = () => {
 
     return (
         <div
-            className={`hidden pc:block absolute top-0 left-0 w-[80px] desk:w-[120px] h-[100vh] dark:bg-purple-400 bg-white-100 
+            className={`hidden pc:block absolute top-0 left-0 w-[80px] deskxl:w-[120px] h-[100vh] dark:bg-purple-400 bg-white-100 
             border-solid border-r-[1px] border-purple-strokeLight dark:border-purple-stroke`}
         >
             <div className={`absolute z-20 w-full overflow-hidden`}>
