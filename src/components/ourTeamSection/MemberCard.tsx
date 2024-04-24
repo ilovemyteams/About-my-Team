@@ -16,10 +16,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
 
     return (
         <div
-            className="pt-2 pl-[6px] flex flex-col justify-between
+            className="pt-2 pl-[6px] flex flex-col 
             tab:odd:border-r-[1px] tab:border-purple-stroke 
             tab:[&:nth-child(1)]:border-b-[1px] tab:[&:nth-child(2)]:border-b-[1px]
-            tab:pl-2 tab:aspect-[250/270]"
+            tab:pl-2 "
         >
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] tab:mr-2 mb-2  ">
                 {imageURL ? (
@@ -37,7 +37,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 )}
             </div>
 
-            <div className="min-h-[106px] tab:min-h-[59px] flex flex-col justify-between">
+            <div className="min-h-[88px] tab:min-h-[59px] flex flex-col justify-between">
                 <h4 className="font-caviar text-baseb text-white-200 pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>
