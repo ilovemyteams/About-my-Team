@@ -17,9 +17,9 @@ export const HeroFooterLinks = () => {
             />
             <Link
                 href="#portfolio"
-                className="relative pointer font-caviar text-lg border-b-[1px] dark:border-grey border-greyLight
+                className="relative pointer font-caviar text-lg border-b-[1px] outline-none dark:border-grey border-greyLight
                 pc:transition-color pc:ease-out pc:duration-300 dark:pc:hover:text-red pc:hover:text-redLight dark:pc:hover:border-red pc:hover:border-redLight
-                active:text-red"
+                dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight"
             >
                 {getTranslation("portfolioLink")}
             </Link>

@@ -28,7 +28,7 @@ export const FeedbackCard = ({
     const { siteName, reviewer, reviewerRole, feedbackText } = localizationData;
 
     return (
-        <div className="flex flex-col min-h-[390px] border border-purple-stroke">
+        <div className="flex flex-col min-h-[390px] border dark:border-purple-stroke border-purple-strokeLight">
             <div className="relative">
                 <Image
                     src={image}
