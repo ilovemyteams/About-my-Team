@@ -26,7 +26,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteLink: "www.naseli.com",
         },
         uk: {
-            siteName: "На селі",
+            siteName: "Смачно на Селі",
             siteView: "лендінг",
             reviewer: "Тетяна",
             reviewerRole: "Підприємець, власник ферми",
@@ -34,7 +34,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Чудовий дизайн та класна ідея! Ще крутіша вийшла реалізація. я не думав, що нудну діяльність фемера на землі можна так цікаво обіграти. покупці моїх овочів у захваті від мого сайту. я тільки висадив першу росаду в теплицю, а вже отримав 100 замовлень на майбутній урожай помідорів.",
         },
         en: {
-            siteName: "Na seli",
+            siteName: "Smachno na Seli ",
             siteView: "lending",
             reviewer: "Tetiana",
             reviewerRole: "Entrepreneur, farm owner",
@@ -42,7 +42,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "On our website you will find information about already implemented projects and the teams behind their creation",
         },
         pl: {
-            siteName: "Na seli",
+            siteName: "Smaczno na Seli",
             siteView: "lądowanie",
             reviewer: "Tatiana",
             reviewerRole: "Przedsiębiorca, właściciel gospodarstwa rolnego",
@@ -98,7 +98,7 @@ export const feedbackData: FeedbackDataItemType[] = [
         },
         en: {
             siteName: "Smaragdove misto",
-            siteView: "Internet-shop",
+            siteView: "online store",
             reviewer: "Strashyla",
             reviewerRole: "Shop owner",
             feedbackText:
@@ -106,7 +106,7 @@ export const feedbackData: FeedbackDataItemType[] = [
         },
         pl: {
             siteName: "Smaragdove misto",
-            siteView: "Sklep internetowy",
+            siteView: "sklep internetowy",
             reviewer: "Strashyla",
             reviewerRole: "Właściciel sklepu",
             feedbackText:
