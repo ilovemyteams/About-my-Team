@@ -7,7 +7,12 @@ export const JoinUsButton = () => {
     const getTranslation = useTranslations();
 
     return (
-        <a href={JOIN_US_LINK} target="_blank" rel="noopener noreferrer">
+        <a
+            href={JOIN_US_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="outline-none"
+        >
             <Button color="grey">{getTranslation("Buttons.joinUs")}</Button>
         </a>
     );

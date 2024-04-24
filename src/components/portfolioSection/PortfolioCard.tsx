@@ -40,7 +40,7 @@ export const PortfolioCard = ({
                         {name}
                     </h3>
 
-                    <p className="text-xs tab:text-sm font-normal text-red mb-4 tab:mb-3 pc:mb-[18px]">
+                    <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight mb-4 tab:mb-3 pc:mb-[18px]">
                         {siteTypeUp}
                     </p>
 

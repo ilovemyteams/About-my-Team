@@ -21,7 +21,7 @@ export function Accordion({ item }: AccordionProps) {
             <button
                 aria-label="open answer button"
                 onClick={changeStateAccordion}
-                className="w-full"
+                className="w-full outline-none"
             >
                 <div className="flex justify-between my-[16px] pc:mb-[32px]">
                     <div>

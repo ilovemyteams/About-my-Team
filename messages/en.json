@@ -45,7 +45,7 @@
         "titleFourthWord": "us"
     },
     "JoinTheTeam": {
-        "title": "Tell us about your unique opportunities and join our team"
+        "title": "Tell us about your unique skills and join our team"
     },
     "WriteUs": {
         "title": "I want to become your satisfied client"
@@ -66,7 +66,7 @@
         "supportTitle": "Support",
         "supportText": "Team representative teaches the customer's employees to work with the web-site, to enable the customer to update the website's content in future.",
         "allServicesTitle": "Comprehensive service",
-        "allServicesText": "Comprehensive and systematic approach with the project management ",
+        "allServicesText": "A comprehensive and systematic approach with unified project management (the customer does not need to look for contractors for individual tasks - everything is done by one contractor, including the search or recommendation of subcontractors)",
         "contactUs": "Get a comprehensive consultation with our manager if you have any questions",
         "showMore": "Show more",
         "showLess": "Show less"
@@ -75,10 +75,10 @@
     "Stages": {
         "pageTitle": "Portfolio",
         "mainTitle": "Work sequence",
-        "firstStepTitle": "Отримання вашої ідеї",
+        "firstStepTitle": "Getting ideas",
         "firstStepText": "After we receive your application, we will contact you within a day",
         "secondStepTitle": "Сollection and description of requirements",
-        "secondStepText": "Затвердження вимог та очікувань - найважливіший етап у створенні унікального продукту",
+        "secondStepText": "Acceptance of requirements and expectations is the most important step in creating a unique product",
         "thirdStepTitle": "Design concept",
         "thirdStepText": "Demonstration of the primary design, reviews and instructions, approval of changes",
         "fourthStepTitle": "Start of the development",
@@ -102,7 +102,7 @@
         "menuTopTitle": "Choose",
         "listTitle": "specialists",
         "teamsList": "teams",
-        "yourPhoto": "Тут може бути твоє фото"
+        "yourPhoto": "Your photo can be here"
     },
     "Q&A": {
         "pageTitle": "q&a",
@@ -126,7 +126,7 @@
         "allProjects": "All projects",
         "allQuestions": "All questions",
         "share": "Share",
-        "buyMeACoffe": "By me a coffee"
+        "buyMeACoffe": "Treat with coffee"
     },
     "Footer": {
         "titleFirstWord": "Start ",
@@ -141,7 +141,7 @@
     },
     "NotFound": {
         "title": "Page not found",
-        "info": "Ми не змогли знайти сторінку, яку Ви шукаєте. Можливо, сталася помилка",
+        "info": "We could not find the page you are looking for. There may have been an error",
         "button": "to the home page"
     },
     "SharePopover": {
@@ -164,17 +164,17 @@
         "facebookPlaceholder": "facebook.com/susannasalata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Поля, обов'язкові для заповнення",
-        "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
-        "rulesLink": "Правилами обробки персональних даних",
-        "submitButton": "Надіслати"
+        "informedAgreement": "By clicking the “Submit” button, you agree to the",
+        "rulesLink": "Terms of Personal Data Processing",
+        "submitButton": "Send"
     },
     "Errors": {
-        "required": "Дане поле обов’язкове до заповнення",
-        "nameMinMaxSymbols": "Ім’я повинно містити від 2 до 30 символів",
-        "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки)",
+        "required": "This field is required",
+        "nameMinMaxSymbols": "The name must contain from 2 to 30 characters",
+        "nameAllowedSymbols": "Allowed letters and characters: hyphen, apostrophe, quotation marks)",
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
-        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",
@@ -182,9 +182,9 @@
     },
     "Notifications": {
         "thankYou": "Thank you!",
-        "waitResponse": "Ваше повідомлення надіслане. Наш менеджер зв’яжеться з вами найближчим часом",
+        "waitResponse": "Your message has been sent. Our manager will contact you shortly",
         "somethingWrong": "Something went wrong",
-        "tryAgain": "Спробуйте надіслати форму ще раз",
+        "tryAgain": "Please try to send the form again",
         "linkIsCopied": "Link copied"
     }
 }
