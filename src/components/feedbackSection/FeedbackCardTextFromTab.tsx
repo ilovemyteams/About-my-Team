@@ -27,13 +27,13 @@ export const FeedbackCardTextFromTab = ({
                 </p>
                 <p className="text-xs ">{reviewerRole}</p>
             </div>
-            <div className=" tab:flex tab:justify-between border-t border-b border-purple-stroke pt-[10px] pb-4 tab:py-[14px] tab:min-w-[360px] pc:min-w-[450px] ">
+            <div className=" tab:flex tab:justify-between border-t border-b dark:border-purple-stroke border-purple-strokeLight pt-[10px] pb-4 tab:py-[14px] tab:min-w-[360px] pc:min-w-[450px] ">
                 <div>
                     <h3 className="font-caviar text-baseb tab:mb-[10px] pc:mb-[6px] pc:text-xlb   ">
                         {siteName}
                     </h3>
 
-                    <p className="text-xs pc:text-sm font-light text-purple-50">
+                    <p className="text-xs pc:text-sm font-light dark:text-purple-50 text-purple-130">
                         {siteTypeUp}
                     </p>
                 </div>
