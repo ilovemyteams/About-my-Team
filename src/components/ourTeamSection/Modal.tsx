@@ -18,13 +18,16 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                 className="w-full h-full bg-[rgba(3,3,3,0.8)] fixed top-0 left-0 z-[20]"
                 scroll={false}
             />
-            <div className="w-[320px] h-auto pb-4 overflow-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21]">
+            <div className="w-[320px] h-auto pb-[64px] overflow-hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21] bg-purple-400">
                 <button
                     onClick={() => {
                         router.push(`/${locale}#team`);
                     }}
                     type="button"
-                    className="flex my-2 ml-auto w-12 h-12 justify-center items-center "
+                    className="flex my-2 ml-auto mr-4 w-12 h-12 justify-center items-center 
+                    icon-hover-rounded-purple icon-hover-rounded-purple:hover 
+                    icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+                    icon-hover-rounded-purple:active "
                 >
                     <Image
                         src="/images/closeX.svg"

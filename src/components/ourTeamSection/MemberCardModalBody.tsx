@@ -36,7 +36,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     ];
 
     return (
-        <div className="relative w-[288px] h-auto mx-auto overflow-auto">
+        <div className="relative w-[288px] h-auto mx-auto ">
             <div className="p-[8px] pt-0 border border-purple-stroke">
                 <div className="flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
                     {`from ${pricePerHour} $/h`}
@@ -136,7 +136,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 rel="noopener noreferrer"
                                 className="cursor-pointer flex justify-center items-center w-[24px] h-[24px] pc:p-3
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active"
+            icon-hover-rounded-purple:active "
                             >
                                 <Image
                                     src={image}
