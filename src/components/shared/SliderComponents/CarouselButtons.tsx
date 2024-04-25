@@ -66,8 +66,12 @@ export const PrevButton: React.FC<ButtonType> = props => {
             aria-label="show previous slide button"
             className={`embla__button--prev flex justify-center items-center w-12 h-12 relative
             tab:border-t tab:border-b  group
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            ${disabled ? "dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]" : "dark:border-red border-redLight dark:text-red text-redLight group"}`}
+             icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+            ${
+                disabled
+                    ? "cursor-not-allowed dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
+                    : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
+            }`}
             type="button"
             {...restProps}
         >
@@ -84,12 +88,12 @@ export const NextButton: React.FC<ButtonType> = props => {
             aria-label="show next slide button"
             className={`embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
             tab:border-t tab:border-b  group
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
+           icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active 
             ${
                 disabled
-                    ? "dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
-                    : "dark:border-red border-redLight dark:text-red text-redLight group"
+                    ? "cursor-not-allowed dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
+                    : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
             }`}
             type="button"
             {...restProps}
