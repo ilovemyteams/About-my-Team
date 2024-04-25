@@ -115,7 +115,15 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 {getTranslation("projectsExperience")}
                             </span>
                         </div>
-                        <p className="text-sm ml-4">{projectsExperience}</p>
+                        <ul>
+                            {projectsExperience.map((project, index) => (
+                                <li key={index}>
+                                    <a href={project} className="text-sm ml-4">
+                                        {project}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
                     </li>
                 </ul>
                 <SharePopover
