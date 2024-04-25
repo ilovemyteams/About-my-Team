@@ -325,7 +325,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: [""],
+            projectsExperience: ["www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -587,7 +587,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: [""],
+            projectsExperience: ["www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -636,7 +636,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: [""],
+            projectsExperience: ["www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
