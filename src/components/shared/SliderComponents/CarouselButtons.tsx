@@ -59,7 +59,7 @@ type ButtonType = PropsWithChildren<
 >;
 
 export const PrevButton: React.FC<ButtonType> = props => {
-    const { className, disabled, ...restProps } = props;
+    const { disabled, ...restProps } = props;
 
     return (
         <button
@@ -69,19 +69,19 @@ export const PrevButton: React.FC<ButtonType> = props => {
              icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             ${
                 disabled
-                    ? "cursor-not-allowed dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
+                    ? "cursor-default dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
                     : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
             }`}
             type="button"
             {...restProps}
         >
-            <ArrowIcon className={className} />
+            <ArrowIcon />
         </button>
     );
 };
 
 export const NextButton: React.FC<ButtonType> = props => {
-    const { className, disabled, ...restProps } = props;
+    const { disabled, ...restProps } = props;
 
     return (
         <button
@@ -92,13 +92,13 @@ export const NextButton: React.FC<ButtonType> = props => {
             icon-hover-rounded-purple:active 
             ${
                 disabled
-                    ? "cursor-not-allowed dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
+                    ? "cursor-default dark:border-purple-stroke dark:text-purple-stroke border-[#B097CE] text-[#B097CE]"
                     : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
             }`}
             type="button"
             {...restProps}
         >
-            <ArrowIcon className={className} />
+            <ArrowIcon />
         </button>
     );
 };
