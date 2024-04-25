@@ -117,7 +117,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                         </div>
                         <ul>
                             {projectsExperience.map((project, index) => (
-                                <li key={index}>
+                                <li key={index} className="px-0">
                                     <a href={project} className="text-sm ml-4">
                                         {project}
                                     </a>
