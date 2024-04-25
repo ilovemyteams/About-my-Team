@@ -17,9 +17,9 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     return (
         <div
             className="pt-2 pl-[6px] flex flex-col 
-            tab:odd:border-r-[1px] tab:border-purple-stroke 
-            tab:[&:nth-child(1)]:border-b-[1px] tab:[&:nth-child(2)]:border-b-[1px]
-            tab:pl-2 "
+            tab:border-r-[1px] tab:border-purple-stroke 
+            tab:[&:nth-child(1)]:border-b tab:[&:nth-child(2)]:border-b tab:[&:nth-child(odd)]:border-l
+            tab:pl-2 tab:aspect-[250/270] justify-between "
         >
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] tab:mr-2 mb-2  ">
                 {imageURL ? (
