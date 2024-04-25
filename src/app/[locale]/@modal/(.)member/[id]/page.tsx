@@ -17,7 +17,6 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     );
     if (!displayedMember) {
         notFound();
-        return null;
     }
     return (
         <Modal>
