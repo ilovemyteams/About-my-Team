@@ -68,7 +68,6 @@ export const PrevButton: React.FC<ButtonType> = props => {
             tab:border-t tab:border-b  group
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             ${disabled ? "border-purple-stroke text-purple-stroke" : "dark:border-red border-redLight dark:text-red text-redLight group"}`}
-            // disabled:border-purple-stroke disabled:text-purple-stroke dark:border-red border-redLight dark:text-red text-redLight group"
             type="button"
             {...restProps}
         >
@@ -88,7 +87,6 @@ export const NextButton: React.FC<ButtonType> = props => {
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active 
             ${disabled ? "border-purple-stroke text-purple-stroke" : "dark:border-red border-redLight dark:text-red text-redLight group"}`}
-            // dark:border-red border-redLight dark:text-red text-redLight  disabled:border-purple-stroke disabled:text-purple-stroke group"
             type="button"
             {...restProps}
         >
