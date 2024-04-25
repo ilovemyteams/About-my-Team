@@ -42,7 +42,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                     {`from ${pricePerHour} $/h`}
                 </div>
 
-                <div className="h-[60px] flex items-end gap-[8px] -mt-1 mb-[16px]">
+                <div className="h-[60px] flex items-end gap-[8px] -mt-1 mb-4">
                     <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
                         {imageURL ? (
                             <Image
@@ -57,7 +57,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                         )}
                     </div>
                     <div className="">
-                        <p className="font-caviar font-bold text-sm text-white mb-[4px]">
+                        <p className="font-caviar font-bold text-sm text-white mb-1">
                             {data[locale as LocaleType]?.name}
                         </p>
                         <p className="text-xs text-purple-50">
@@ -66,9 +66,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                     </div>
                 </div>
                 <ul>
-                    <li className="mb-[16px]">
-                        <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
+                    <li className="mb-4">
+                        <div className="flex items-center mb-2">
+                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("about")}
                             </span>
@@ -77,9 +77,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
-                    <li className="mb-[16px]">
-                        <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
+                    <li className="mb-4">
+                        <div className="flex items-center mb-2">
+                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("services")}
                             </span>
@@ -89,9 +89,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>
-                    <li className="mb-[16px]">
-                        <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
+                    <li className="mb-4">
+                        <div className="flex items-center mb-2">
+                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("tools")}
                             </span>
@@ -100,16 +100,16 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             {tools.map((tool, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex-auto justify-center items-center mx-[4px] my-[8px] border-[1px] border-grey px-[8px] py-[4.5px] text-sm "
+                                    className="flex-auto justify-center items-center mx-1 my-2 border border-grey px-2 py-[4.5px] text-sm "
                                 >
                                     {tool}
                                 </li>
                             ))}
                         </ul>
                     </li>
-                    <li className="mb-[8px]">
-                        <div className="flex items-center mb-[8px]">
-                            <div className="w-[8px] h-[8px] border-red border-[2px] mr-2"></div>
+                    <li className="mb-2">
+                        <div className="flex items-center my-2">
+                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
 
                             <span className="font-caviar text-sm font-bold text-white">
                                 {getTranslation("projectsExperience")}
@@ -127,9 +127,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 {memberSocialLinks.map(({ url, image, alt }, idx) => (
                     <li
                         key={idx}
-                        className="flex w-full h-[34px] justify-center items-center border-[1px] border-purple-stroke"
+                        className="flex w-full h-[34px] justify-center items-center border border-purple-stroke"
                     >
-                        <div className="w-[24px] h-[24px]">
+                        <div className="w-6 h-6">
                             <a
                                 href={url}
                                 target="_blank"
