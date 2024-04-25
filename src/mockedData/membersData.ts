@@ -193,7 +193,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",

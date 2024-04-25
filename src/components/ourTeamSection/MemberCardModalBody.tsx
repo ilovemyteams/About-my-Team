@@ -100,7 +100,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             {tools.map((tool, idx) => (
                                 <li
                                     key={idx}
-                                    className="flex-auto justify-center items-center mx-1 my-2 border border-grey px-2 py-[4.5px] text-sm "
+                                    className=" mx-1 my-2 border border-grey px-2 py-[4.5px] text-sm "
                                 >
                                     {tool}
                                 </li>
