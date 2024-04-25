@@ -72,7 +72,7 @@ export default function LocaleLayout({
                 <meta
                     name="title"
                     property="og:title"
-                    content="i Love My Team"
+                    content="i love my team"
                 />
                 <meta name="type" property="og:type" content="website" />
                 <meta

@@ -11,7 +11,7 @@ import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
-    optionName: "i Love My Team",
+    optionName: "i love my team",
     optionValue: "1",
     optionType: "team",
 };
