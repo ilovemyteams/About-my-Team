@@ -40,7 +40,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
@@ -88,7 +88,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Product manager",
             categoryName: "manager",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
@@ -232,7 +232,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1dZgahuKLMKs9t3Fn0TChx7YyKFiyOAYd",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -278,7 +278,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
@@ -325,7 +325,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -375,7 +375,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -425,7 +425,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
@@ -475,7 +475,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -587,7 +587,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -636,7 +636,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
