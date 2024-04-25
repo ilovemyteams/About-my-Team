@@ -90,8 +90,8 @@ export default function LocaleLayout({
                         <BackgroundImages />
                         <Header />
                         <main>
-                            {children}
                             {modal}
+                            {children}
                         </main>
                         <Footer />
                         <ScrollToTopButton />
