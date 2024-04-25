@@ -317,56 +317,56 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
-    {
-        data: {
-            id: "NataliiaPashchenko",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
-            position: "Fullstack Developer",
-            categoryName: "developer",
-            projectsExperience: ["https://www.website.ua"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin:
-                    "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
-                github: "https://github.com/NataPas2021",
-                telegram: "https://t.me/NataFFFenka",
-            },
-            tools: [
-                "React",
-                "Next.js",
-                "Node.js",
-                "MongoDB",
-                "Javascript",
-                "Typescript",
-                "Redux Toolkit",
-                "HTML",
-                "CSS",
-                "Postman",
-                "Jira",
-                "Trello",
-            ],
-        },
-        uk: {
-            name: "Наталія Пащенко",
-            about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
-            services: "Тут буде шось таки написано",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Nataliia Pashchenko",
-            about: "All is possible, you just need to find the right way",
-            services: "Text in en",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Nataliia Pashchenko",
-            about: "Wszystko jest możliwe, trzeba tylko znaleźć właściwą drogę",
-            services: "There will be text in Polish",
-            team: "I Love My Team",
-        },
-    },
+    // {
+    //     data: {
+    //         id: "NataliiaPashchenko",
+    //         projectId: ["1"],
+    //         imageURL:
+    //             "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
+    //         position: "Fullstack Developer",
+    //         categoryName: "developer",
+    //         projectsExperience: ["https://www.website.ua"],
+    //         pricePerHour: "",
+    //         socialLinks: {
+    //             linkedin:
+    //                 "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
+    //             github: "https://github.com/NataPas2021",
+    //             telegram: "https://t.me/NataFFFenka",
+    //         },
+    //         tools: [
+    //             "React",
+    //             "Next.js",
+    //             "Node.js",
+    //             "MongoDB",
+    //             "Javascript",
+    //             "Typescript",
+    //             "Redux Toolkit",
+    //             "HTML",
+    //             "CSS",
+    //             "Postman",
+    //             "Jira",
+    //             "Trello",
+    //         ],
+    //     },
+    //     uk: {
+    //         name: "Наталія Пащенко",
+    //         about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
+    //         services: "Тут буде шось таки написано",
+    //         team: "I Love My Team",
+    //     },
+    //     en: {
+    //         name: "Nataliia Pashchenko",
+    //         about: "All is possible, you just need to find the right way",
+    //         services: "Text in en",
+    //         team: "I Love My Team",
+    //     },
+    //     pl: {
+    //         name: "Nataliia Pashchenko",
+    //         about: "Wszystko jest możliwe, trzeba tylko znaleźć właściwą drogę",
+    //         services: "There will be text in Polish",
+    //         team: "I Love My Team",
+    //     },
+    // },
     {
         data: {
             id: "OlenaPosternak",
