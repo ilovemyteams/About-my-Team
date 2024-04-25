@@ -18,29 +18,26 @@ export const OneSliderCardBigScreen = ({
     const cards = [];
     const isShowJoinUs = membersData.length % CARDS_PER_PAGE;
     const totalPages = Math.ceil(membersData.length / CARDS_PER_PAGE);
-    console.log(isShowJoinUs);
+
     for (let i = 0; i < totalPages; i++) {
         const start = i * CARDS_PER_PAGE;
         const end = start + CARDS_PER_PAGE;
         const chunk = membersData.slice(start, end);
 
         const isLastPage = i === totalPages - 1;
-        console.log(isLastPage);
+
         const cardGroup = (
-            <>
-                <li
-                    key={`group-${i}`}
-                    className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0 pc:grid-cols-3"
-                >
-                    {chunk.map(data => (
-                        <MemberCard key={data.data.id} data={data} />
-                    ))}
-                </li>
-                <li className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0 pc:grid-cols-3">
-                    {" "}
-                    {isLastPage && optionType === "person" && <JoinUsCard />}
-                </li>
-            </>
+            <li
+                key={`group-${i}`}
+                className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0 pc:grid-cols-3"
+            >
+                {chunk.map(data => (
+                    <MemberCard key={data.data.id} data={data} />
+                ))}
+                {isLastPage && isShowJoinUs > 0 && optionType === "person" && (
+                    <JoinUsCard />
+                )}
+            </li>
         );
 
         cards.push(cardGroup);
