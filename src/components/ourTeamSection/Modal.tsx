@@ -27,7 +27,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                     className="flex my-2 ml-auto mr-4 w-12 h-12 justify-center items-center 
                     icon-hover-rounded-purple icon-hover-rounded-purple:hover 
                     icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-                    icon-hover-rounded-purple:active "
+                    icon-hover-rounded-purple:active relative"
                 >
                     <Image
                         src="/images/closeX.svg"
