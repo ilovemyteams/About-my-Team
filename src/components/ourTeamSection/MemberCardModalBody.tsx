@@ -117,7 +117,10 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                         </div>
                         <ul>
                             {projectsExperience.map((project, index) => (
-                                <li key={index} className="px-0">
+                                <li
+                                    key={index}
+                                    className="px-0 dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
+                                >
                                     <a href={project} className="text-sm ml-4">
                                         {project}
                                     </a>
