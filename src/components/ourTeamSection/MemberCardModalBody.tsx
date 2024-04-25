@@ -136,7 +136,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 rel="noopener noreferrer"
                                 className="cursor-pointer flex justify-center items-center w-[24px] h-[24px] pc:p-3
             icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active "
+            icon-hover-rounded-purple:active relative"
                             >
                                 <Image
                                     src={image}
