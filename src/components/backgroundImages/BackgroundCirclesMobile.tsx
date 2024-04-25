@@ -16,7 +16,7 @@ export const BackgroundCirclesMobile = ({
                 width="0"
                 height="0"
                 alt="background image circle"
-                className="absolute left-0 bottom-0 w-[120px] h-[136px] z-[-10] "
+                className="hidden dark:block absolute left-0 bottom-0 w-[120px] h-[136px] z-[-10] "
             />
 
             <Image
@@ -24,7 +24,7 @@ export const BackgroundCirclesMobile = ({
                 width="0"
                 height="0"
                 alt="background image circle"
-                className="absolute right-0 top-0 w-[320px] h-[319px] z-[-10] "
+                className="hidden dark:block absolute right-0 top-0 w-[320px] h-[319px] z-[-10] "
             />
         </div>
     );
