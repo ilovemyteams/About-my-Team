@@ -28,7 +28,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             src={imageURL}
                             width={246}
                             height={196}
-                            className="hover:scale-105 cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full tab:aspect-[234/186]"
+                            className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full tab:aspect-[234/186]"
                             alt={data[locale as LocaleType]?.name}
                         />
                     </Link>
