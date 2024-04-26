@@ -11,6 +11,7 @@ export const IconCloseX = ({ className }: iconCloseXProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
+            arai-label="close icon"
         >
             <path
                 d="M1 0.999756L25 24.9998"

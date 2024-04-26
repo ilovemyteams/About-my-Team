@@ -4,6 +4,7 @@ export const IconShare = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="w-[24px] h-[24px]"
+            aria-label="share icon"
         >
             <path
                 d="M9 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"

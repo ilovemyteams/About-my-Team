@@ -10,6 +10,7 @@ export const IconWebSite = ({ className }: IconWebSiteProps) => {
             height="24"
             fill="none"
             className={className}
+            aria-label="website icon"
         >
             <path
                 fill="currentColor"
