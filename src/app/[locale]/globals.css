@@ -6,8 +6,11 @@
     --color-grey: #d4d4d4;
     --font-geist: Geist;
 }
-:root:has(.no-doc-scroll) {
-    overflow: hidden;
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        overflow-x: hidden;
+    }
 }
 
 a {

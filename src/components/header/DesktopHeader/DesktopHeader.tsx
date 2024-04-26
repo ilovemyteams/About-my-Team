@@ -25,10 +25,8 @@ export const DesktopHeader = () => {
             border-solid border-r-[1px] border-purple-strokeLight dark:border-purple-stroke`}
         >
             <div className={`absolute z-20 w-full overflow-hidden`}>
-                <div className={`dark:block hidden`}>
-                    <BackgroundCircles />
-                    <BackgroundCirclesBigScreens />
-                </div>
+                <BackgroundCircles />
+                <BackgroundCirclesBigScreens />
                 <div
                     className="flex flex-col items-center justify-between z-20 w-full deskxl:w-[120px] h-[100vh] 
                 py-8 "

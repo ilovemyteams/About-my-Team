@@ -16,21 +16,28 @@ export const BackgroundCirclesTablet = ({
                 width="0"
                 height="0"
                 alt="background image circle"
-                className={`absolute left-0 bottom-0 w-[365px] h-[284px] z-[-10]`}
+                className={`hidden dark:block absolute left-0 bottom-0 w-[365px] h-[284px] z-[-10]`}
             />
             <Image
                 src="/images/bgImages/rightBottomTablet.svg"
                 width="0"
                 height="0"
                 alt="background image circle"
-                className={`absolute right-0 bottom-0 w-[474px] h-[284px] z-[-10]`}
+                className={`hidden dark:block absolute right-0 bottom-0 w-[474px] h-[284px] z-[-10]`}
             />
             <Image
                 src="/images/bgImages/rightTopTablet.svg"
                 width="0"
                 height="0"
                 alt="background image circle"
-                className={`absolute right-0 top-0 w-[388px] h-[328px] z-[-10] `}
+                className={`hidden dark:block absolute right-0 top-0 w-[388px] h-[328px] z-[-10] `}
+            />
+            <Image
+                src="/images/bgImages/rightTopTabletLight.svg"
+                width="0"
+                height="0"
+                alt="background image circle"
+                className={`block dark:hidden absolute right-0 top-0 w-[372px] h-[620px] z-[-10] `}
             />
         </div>
     );

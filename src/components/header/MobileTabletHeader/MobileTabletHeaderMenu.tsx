@@ -21,10 +21,9 @@ export const MobileTabletHeaderMenu = ({
             className={`absolute top-[80px] left-0 z-20 w-[100vw] overflow-hidden transition-height duration-[600ms] ease-out
             dark:bg-purple-400 bg-white-100 ${isHeaderMenuOpened ? openedStyles : closedStyles}`}
         >
-            <div className={`dark:block hidden`}>
-                <BackgroundCirclesMobile className="top-[-80px]" />
-                <BackgroundCirclesTablet className="top-[-80px]" />
-            </div>
+            <BackgroundCirclesMobile className="top-[-80px]" />
+            <BackgroundCirclesTablet className="top-[-80px]" />
+
             <div className="flex flex-col justify-between items-center max-w-[540px] mx-auto tab:max-w-full h-70 p-4 tab:px-6 tab:py-[80px] mb-2 tab:mb-0 overflow-y-auto">
                 <div className="flex justify-between tab:justify-end tab:gap-[111px] z-20 w-full">
                     <LocaleSwitcher />
