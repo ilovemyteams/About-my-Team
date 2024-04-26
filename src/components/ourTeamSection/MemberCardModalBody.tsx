@@ -36,8 +36,8 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     ];
 
     return (
-        <div className="relative w-[288px] h-auto mx-auto ">
-            <div className="p-[8px] pt-0 border border-purple-stroke">
+        <div className="relative w-[288px] h-auto mx-auto">
+            <div className="p-[8px] pt-0 border border-purple-stroke border-b-0 ">
                 <div className="flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
                     {`from ${pricePerHour} $/h`}
                 </div>
@@ -142,7 +142,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 {memberSocialLinks.map(({ url, image, alt }, idx) => (
                     <li
                         key={idx}
-                        className="flex w-full h-[34px] justify-center items-center border border-purple-stroke"
+                        className="flex w-full h-[34px] justify-center items-center border border-purple-stroke odd:border-r-0"
                     >
                         <div className="w-6 h-6">
                             <a
