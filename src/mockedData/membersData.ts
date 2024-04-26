@@ -34,13 +34,13 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "0",
+            id: "SusannaSalataBA",
             projectId: [],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
@@ -82,13 +82,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "1",
+            id: "SusannaSalataPM",
             projectId: ["1", "2", "3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1wY-mU1aDMhD6Ncmdto8JqkxaXlOQAI2K",
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Product manager",
             categoryName: "manager",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
@@ -130,7 +130,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "2",
+            id: "IhorDronishynets",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
@@ -187,13 +187,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "3",
+            id: "IrynaStoliarova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -226,13 +226,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "4",
+            id: "AnastasiiaNazarenko",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1dZgahuKLMKs9t3Fn0TChx7YyKFiyOAYd",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["www.website.ua"],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -272,13 +272,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "5",
+            id: "IrynaTrynkal",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
@@ -317,65 +317,65 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
+    // {
+    //     data: {
+    //         id: "NataliiaPashchenko",
+    //         projectId: ["1"],
+    //         imageURL:
+    //             "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
+    //         position: "Fullstack Developer",
+    //         categoryName: "developer",
+    //         projectsExperience: ["https://www.website.ua"],
+    //         pricePerHour: "",
+    //         socialLinks: {
+    //             linkedin:
+    //                 "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
+    //             github: "https://github.com/NataPas2021",
+    //             telegram: "https://t.me/NataFFFenka",
+    //         },
+    //         tools: [
+    //             "React",
+    //             "Next.js",
+    //             "Node.js",
+    //             "MongoDB",
+    //             "Javascript",
+    //             "Typescript",
+    //             "Redux Toolkit",
+    //             "HTML",
+    //             "CSS",
+    //             "Postman",
+    //             "Jira",
+    //             "Trello",
+    //         ],
+    //     },
+    //     uk: {
+    //         name: "Наталія Пащенко",
+    //         about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
+    //         services: "Тут буде шось таки написано",
+    //         team: "I Love My Team",
+    //     },
+    //     en: {
+    //         name: "Nataliia Pashchenko",
+    //         about: "All is possible, you just need to find the right way",
+    //         services: "Text in en",
+    //         team: "I Love My Team",
+    //     },
+    //     pl: {
+    //         name: "Nataliia Pashchenko",
+    //         about: "Wszystko jest możliwe, trzeba tylko znaleźć właściwą drogę",
+    //         services: "There will be text in Polish",
+    //         team: "I Love My Team",
+    //     },
+    // },
     {
         data: {
-            id: "6",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1N0oakYRn0f1YOAnieUE-adpZxotiolx6",
-            position: "Fullstack Developer",
-            categoryName: "developer",
-            projectsExperience: [""],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin:
-                    "https://www.linkedin.com/in/nataliia-pashchenko-frontenddeveloper/",
-                github: "https://github.com/NataPas2021",
-                telegram: "https://t.me/NataFFFenka",
-            },
-            tools: [
-                "React",
-                "Next.js",
-                "Node.js",
-                "MongoDB",
-                "Javascript",
-                "Typescript",
-                "Redux Toolkit",
-                "HTML",
-                "CSS",
-                "Postman",
-                "Jira",
-                "Trello",
-            ],
-        },
-        uk: {
-            name: "Наталія Пащенко",
-            about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
-            services: "Тут буде шось таки написано",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Nataliia Pashchenko",
-            about: "All is possible, you just need to find the right way",
-            services: "Text in en",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Nataliia Pashchenko",
-            about: "Wszystko jest możliwe, trzeba tylko znaleźć właściwą drogę",
-            services: "There will be text in Polish",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "7",
+            id: "OlenaPosternak",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -419,13 +419,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "8",
+            id: "OlgaMykhailova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
@@ -469,13 +469,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "9",
+            id: "KaterynaRubanik",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["www.site.ua"],
+            projectsExperience: ["https://www.site.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -520,7 +520,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "10",
+            id: "KaterynaPogrebna",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
@@ -581,13 +581,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "11",
+            id: "DariaCherviakova",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: [""],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -630,13 +630,13 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "12",
+            id: "OlhaKuchalska",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: [""],
+            projectsExperience: ["https://www.website.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",

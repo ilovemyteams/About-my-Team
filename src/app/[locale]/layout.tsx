@@ -56,9 +56,11 @@ export async function generateMetadata({
 
 export default function LocaleLayout({
     children,
+    modal,
     params: { locale },
 }: Readonly<{
     children: React.ReactNode;
+    modal: React.ReactNode;
     params: { locale: string };
 }>) {
     const messages = useMessages();
@@ -70,7 +72,7 @@ export default function LocaleLayout({
                 <meta
                     name="title"
                     property="og:title"
-                    content="i Love My Team"
+                    content="i love my team"
                 />
                 <meta name="type" property="og:type" content="website" />
                 <meta
@@ -87,7 +89,10 @@ export default function LocaleLayout({
                     <Providers>
                         <BackgroundImages />
                         <Header />
-                        <main>{children}</main>
+                        <main>
+                            {modal}
+                            {children}
+                        </main>
                         <Footer />
                         <ScrollToTopButton />
                     </Providers>

@@ -136,7 +136,7 @@
         "titleSixthWord": "разом ",
         "titleSeventhWord": "з нами",
         "privacyPolicy": "політика конфіденційності",
-        "copyright": "2024, I love my team"
+        "copyright": "2024, i love my team"
     },
     "NotFound": {
         "title": "Сторінка не знайдена",
@@ -185,5 +185,11 @@
         "somethingWrong": "Щось пішло не так",
         "tryAgain": "Спробуйте надіслати форму ще раз",
         "linkIsCopied": "Посилання скопійоване"
+    },
+    "MemberCardModal": {
+        "about": "Про себе",
+        "services": "Послуги",
+        "tools": "Інструменти",
+        "projectsExperience": "Проекти/Досвід"
     }
 }
