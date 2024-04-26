@@ -66,14 +66,14 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                     </div>
                 </div>
                 <ul>
-                    <li className="mb-4">
+                    <li className="mb-4 ">
                         <div className="flex items-center mb-2">
                             <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
-                            <span className="font-caviar text-sm font-bold text-white">
+                            <span className="font-caviar text-sm font-bold text-white ">
                                 {getTranslation("about")}
                             </span>
                         </div>
-                        <p className="max-h-[85px] text-sm ml-4">
+                        <p className="h-auto text-sm ml-4">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
@@ -85,7 +85,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             </span>
                         </div>
 
-                        <p className="text-sm ml-4">
+                        <p className="text-sm ml-4 h-auto">
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>
