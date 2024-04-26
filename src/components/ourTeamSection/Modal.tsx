@@ -23,6 +23,9 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                     onClick={() => {
                         router.push(`/${locale}#team`);
                     }}
+                    onTouchStart={() => {
+                        router.push(`/${locale}#team`);
+                    }}
                     type="button"
                     className="flex my-2 ml-auto mr-4 w-12 h-12 justify-center items-center 
                     icon-hover-rounded-purple icon-hover-rounded-purple:hover 
