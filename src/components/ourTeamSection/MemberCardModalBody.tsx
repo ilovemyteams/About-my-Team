@@ -121,7 +121,11 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                     key={index}
                                     className="px-0 dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                                 >
-                                    <a href={project} className="text-sm ml-4">
+                                    <a
+                                        target="_blank"
+                                        href={project}
+                                        className="text-sm ml-4"
+                                    >
                                         {project}
                                     </a>
                                 </li>
