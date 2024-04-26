@@ -23,10 +23,8 @@ export const MobileTabletHeader = () => {
             border-b-transparent dark:border-solid dark:border-b-[1px] dark:border-purple-stroke`}
         >
             <div className={`absolute z-20 w-full overflow-hidden`}>
-                <div className={`dark:block hidden`}>
-                    <BackgroundCirclesMobile />
-                    <BackgroundCirclesTablet />
-                </div>
+                <BackgroundCirclesMobile />
+                <BackgroundCirclesTablet />
                 <div className="w-full px-[24px] py-[15px]">
                     <div className="flex justify-between items-center max-w-[540px] tab:max-w-full mx-auto">
                         <LogoLink

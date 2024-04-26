@@ -11,6 +11,7 @@ export const IconHeroLogo = ({ className }: iconHeroLogoProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
+            aria-label="logo icon"
         >
             <path
                 d="M374.983 118.942L354.339 161.998H346.155L370.799 110.293L335.182 35.8054H344.667L374.983 101.273L405.299 35.8054H414.692L374.983 119.035V118.942Z"
