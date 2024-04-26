@@ -51,6 +51,7 @@ export const WriteUsModal = ({
                         alt="background"
                         width="0"
                         height="0"
+                        sizes="100%"
                         className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
                     />
                     <Image
@@ -58,6 +59,7 @@ export const WriteUsModal = ({
                         alt="background"
                         width="0"
                         height="0"
+                        sizes="100%"
                         className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
                     <Image
@@ -65,7 +67,16 @@ export const WriteUsModal = ({
                         alt="background"
                         width="0"
                         height="0"
-                        className="hidden pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
+                        sizes="100%"
+                        className="hidden dark:pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktopLight.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
                     />
 
                     <button

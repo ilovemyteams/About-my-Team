@@ -90,7 +90,19 @@ export const NotificationModal = ({
                     width="0"
                     height="0"
                     sizes="100%"
-                    className="hidden pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
+                    className="hidden dark:pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
+                />
+                <Image
+                    src={
+                        isError
+                            ? "/images/bgImagesNotification/bgErrorNotificationDesktopLight.png"
+                            : "/images/bgImagesNotification/bgOkNotificationDesktopLight.png"
+                    }
+                    alt="background"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
                 />
                 <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
                     <button
