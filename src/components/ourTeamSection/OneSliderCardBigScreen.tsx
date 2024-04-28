@@ -18,6 +18,8 @@ export const OneSliderCardBigScreen = ({
     const cards = [];
     const isShowJoinUs = membersData.length % CARDS_PER_PAGE;
     const totalPages = Math.ceil(membersData.length / CARDS_PER_PAGE);
+    const pcBorderJoinUs = membersData.length % 6;
+    const tabBorderJoinUs = membersData.length % 4;
 
     for (let i = 0; i < totalPages; i++) {
         const start = i * CARDS_PER_PAGE;
@@ -35,7 +37,10 @@ export const OneSliderCardBigScreen = ({
                     <MemberCard key={data.data.id} data={data} />
                 ))}
                 {isLastPage && isShowJoinUs > 0 && optionType === "person" && (
-                    <JoinUsCard />
+                    <JoinUsCard
+                        pcBorderJoinUs={pcBorderJoinUs}
+                        tabBorderJoinUs={tabBorderJoinUs}
+                    />
                 )}
             </li>
         );
