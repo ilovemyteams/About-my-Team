@@ -24,7 +24,7 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
                 src="/images/bgModalMember/imageModalMemberCardMob.png"
                 alt="BG for modal mobile"
                 fill
-                className="object-cover absolute inset-0 w-[320px] h-[679px] -z-[5]"
+                className="object-cover absolute inset-0 -z-[5]"
             />
             <MemberCardModalBody data={displayedMember} />
         </Modal>

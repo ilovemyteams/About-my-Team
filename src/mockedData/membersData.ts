@@ -131,7 +131,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "IhorDronishynets",
-            projectId: ["1", "2", "3"],
+            projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
             position: "fullstack developer",
