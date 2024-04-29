@@ -49,8 +49,7 @@ export const NotificationModal = ({
             isDismissable={false}
             isKeyboardDismissDisabled={true}
             className="justify-between min-w-[320px] max-w-[360px] tab:min-w-[464px] max-h-[420px] tab:h-[434px] pc:h-[474px]
-            p-[16px] m-0 overflow-y-auto tab:overflow-y-visible
-            bg-purple-400"
+            p-[16px] m-0 overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
             classNames={{
                 backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"} `,
             }}
