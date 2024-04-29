@@ -142,6 +142,8 @@ const config: Config = {
                 portfolioHeroCard: "calc(100vw - 32px)",
                 teamTab: "calc(100% - 27vw - 12px)",
                 teamPC: "calc(100% - 19vw - 24px)",
+                teamDesk: "calc(100% - 286px - 24px)",
+                teamDeskxl: "calc(100% - 232px - 24px)",
             },
             height: {
                 "70": "calc(100dvh - 80px)",
@@ -326,6 +328,8 @@ const config: Config = {
             headerGradientLight:
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
+            memberMenuGradient:
+                "linear-gradient(to right, #4F0A86 0%, #20003F 100%)",
         },
     },
     plugins: [
