@@ -52,7 +52,7 @@ export const NotificationModal = ({
             p-[16px] m-0 overflow-y-auto tab:overflow-y-visible
             bg-purple-400"
             classNames={{
-                backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-backdrop bg-opacity-80"} `,
+                backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"} `,
             }}
         >
             <ModalContent className="w-full h-full m-0">

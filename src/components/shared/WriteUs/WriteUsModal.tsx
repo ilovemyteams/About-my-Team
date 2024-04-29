@@ -43,7 +43,10 @@ export const WriteUsModal = ({
                 className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:min-h-[789px] pc:min-h-[813px]
                 px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
                 bg-purple-400"
-                classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
+                classNames={{
+                    backdrop:
+                        "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
+                }}
             >
                 <ModalContent className="w-full h-full m-0">
                     <Image
