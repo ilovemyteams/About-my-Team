@@ -98,7 +98,8 @@ export const MenuTeamSection = ({
                                         optionType: "team",
                                     })
                                 }
-                                className={`${selectedOption.optionValue === project.data.id ? "text-red" : ""} cursor-pointer `}
+                                className={`${selectedOption.optionValue === project.data.id ? "dark:text-red text-redLight" : ""} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
                                 {project[locale as LocaleType]?.name}
                             </li>
@@ -114,7 +115,8 @@ export const MenuTeamSection = ({
                                 onClick={() =>
                                     handleOptionSelectCategory(category)
                                 }
-                                className={`${selectedOption.optionValue === category.categoryName ? "text-red" : ""} cursor-pointer `}
+                                className={`${selectedOption.optionValue === category.categoryName ? "dark:text-red text-redLight" : ""} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
                                 {category[locale as LocaleType]}
                             </li>
