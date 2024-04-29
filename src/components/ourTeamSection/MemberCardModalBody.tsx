@@ -36,7 +36,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     ];
 
     return (
-        <div className="relative min-w-[288px] h-auto mx-4 tab:mx-6">
+        <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
             <Image
                 src="/images/bgModalMember/imageModalMemberCardMob.png"
                 alt="BG for modal mobile"
