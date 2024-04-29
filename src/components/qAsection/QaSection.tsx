@@ -12,13 +12,13 @@ export const QaSection = () => {
     });
 
     return (
-        <Section id="qa" className="relative">
+        <Section id="faq" className="relative">
             <div ref={ref}>
                 <div className="flex">
                     <TitleQA />
                     <SharePopover
                         className="absolute top-3 right-4 tab:top-0 tab:right-4 pc:right-[60px]"
-                        id="qa"
+                        id="faq"
                         trigerShowShareText={true}
                     />
                 </div>
