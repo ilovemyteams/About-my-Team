@@ -46,6 +46,7 @@ export const NotificationModal = ({
             isOpen={isOpen}
             onOpenChange={onOpenChange}
             placement="center"
+            radius="none"
             hideCloseButton={true}
             isDismissable={false}
             isKeyboardDismissDisabled={true}
@@ -91,6 +92,30 @@ export const NotificationModal = ({
                     height="0"
                     sizes="100%"
                     className="hidden dark:pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
+                />
+                <Image
+                    src={
+                        isError
+                            ? "/images/bgImagesNotification/bgErrorNotificationMobileLight.png"
+                            : "/images/bgImagesNotification/bgOkNotificationMobileLight.png"
+                    }
+                    alt="background"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
+                />
+                <Image
+                    src={
+                        isError
+                            ? "/images/bgImagesNotification/bgErrorNotificationTabletLight.png"
+                            : "/images/bgImagesNotification/bgOkNotificationTabletLight.png"
+                    }
+                    alt="background"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="hidden tab:block dark:hidden pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
                 />
                 <Image
                     src={

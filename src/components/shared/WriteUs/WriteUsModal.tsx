@@ -35,6 +35,7 @@ export const WriteUsModal = ({
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement="center"
+                radius="none"
                 shouldBlockScroll={
                     screenSizeName !== mobileName &&
                     screenSizeName !== tabletName
