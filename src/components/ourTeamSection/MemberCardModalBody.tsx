@@ -38,11 +38,13 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     return (
         <div className="relative w-[288px] h-auto mx-auto">
             <div className="p-[8px] pt-0 border border-purple-stroke border-b-0 ">
-                <div className="flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
-                    {`from ${pricePerHour} $/h`}
-                </div>
+                {pricePerHour && (
+                    <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
+                        {`from ${pricePerHour} $/h`}
+                    </div>
+                )}
 
-                <div className="h-[60px] flex items-end gap-[8px] -mt-1 mb-4">
+                <div className="h-[60px] flex items-end gap-[8px] my-4 ml-2">
                     <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
                         {imageURL ? (
                             <Image
@@ -116,20 +118,22 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             </span>
                         </div>
                         <ul>
-                            {projectsExperience.map((project, index) => (
-                                <li
-                                    key={index}
-                                    className="px-0 truncate w-[230px] dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
-                                >
-                                    <a
-                                        target="_blank"
-                                        href={project}
-                                        className="text-sm ml-4"
+                            {projectsExperience
+                                .slice(0, 3)
+                                .map((project, index) => (
+                                    <li
+                                        key={index}
+                                        className="px-0 truncate w-[230px] dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                                     >
-                                        {project}
-                                    </a>
-                                </li>
-                            ))}
+                                        <a
+                                            target="_blank"
+                                            href={project}
+                                            className="text-sm ml-4"
+                                        >
+                                            {project}
+                                        </a>
+                                    </li>
+                                ))}
                         </ul>
                     </li>
                 </ul>
