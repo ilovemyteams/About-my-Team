@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
 import { Modal } from "@/src/components/ourTeamSection/Modal";
 import { membersData } from "@/src/mockedData/membersData";
+import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/MemberCardModalBodyTab";
 
 interface MemberPageProps {
     params: {
@@ -21,12 +22,13 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     return (
         <Modal>
             <Image
-                src="/images/bgModalMember/imageModalMemberCardMob.png"
+                src="/images/bgModalMember/bgImageMemberModalTab.png"
                 alt="BG for modal mobile"
                 fill
-                className="object-cover absolute inset-0 -z-[5]"
+                className="hidden tab:block object-cover absolute inset-0 -z-[5]"
             />
             <MemberCardModalBody data={displayedMember} />
+            <MemberCardModalBodyTab data={displayedMember} />
         </Modal>
     );
 };
