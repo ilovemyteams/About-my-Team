@@ -9,6 +9,7 @@ import {
     useDisclosure,
 } from "@nextui-org/react";
 import Image from "next/image";
+import { IconCloseX } from "../Icons/IconCloseX";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;
@@ -45,14 +46,14 @@ export const NotificationModal = ({
             isOpen={isOpen}
             onOpenChange={onOpenChange}
             placement="center"
+            radius="none"
             hideCloseButton={true}
             isDismissable={false}
             isKeyboardDismissDisabled={true}
             className="justify-between min-w-[320px] max-w-[360px] tab:min-w-[464px] max-h-[420px] tab:h-[434px] pc:h-[474px]
-            p-[16px] m-0 overflow-y-auto tab:overflow-y-visible
-            bg-purple-400"
+            p-[16px] m-0 overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
             classNames={{
-                backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-backdrop bg-opacity-80"} `,
+                backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"}`,
             }}
         >
             <ModalContent className="w-full h-full m-0">
@@ -66,7 +67,7 @@ export const NotificationModal = ({
                     width="0"
                     height="0"
                     sizes="100%"
-                    className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
+                    className="dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
                 />
                 <Image
                     src={
@@ -78,7 +79,7 @@ export const NotificationModal = ({
                     width="0"
                     height="0"
                     sizes="100%"
-                    className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
+                    className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
                 />
                 <Image
                     src={
@@ -91,6 +92,30 @@ export const NotificationModal = ({
                     height="0"
                     sizes="100%"
                     className="hidden dark:pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
+                />
+                <Image
+                    src={
+                        isError
+                            ? "/images/bgImagesNotification/bgErrorNotificationMobileLight.png"
+                            : "/images/bgImagesNotification/bgOkNotificationMobileLight.png"
+                    }
+                    alt="background"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
+                />
+                <Image
+                    src={
+                        isError
+                            ? "/images/bgImagesNotification/bgErrorNotificationTabletLight.png"
+                            : "/images/bgImagesNotification/bgOkNotificationTabletLight.png"
+                    }
+                    alt="background"
+                    width="0"
+                    height="0"
+                    sizes="100%"
+                    className="hidden tab:block dark:hidden pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
                 />
                 <Image
                     src={
@@ -113,17 +138,12 @@ export const NotificationModal = ({
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
                     >
-                        <Image
-                            src="/images/closeX.svg"
-                            alt="Close button"
-                            width={24}
-                            height={24}
-                        />
+                        <IconCloseX />
                     </button>
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
                     <h3
-                        className={`font-caviar text-3xl text-white-200 mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
+                        className={`font-caviar text-3xl text-purple-200 dark:text-white-200 mt-6 mb-4 tab:text-4xl ${isError ? "pc:text-5xl" : "pc:text-6xl"}`}
                     >
                         {isError
                             ? getTranslation("somethingWrong")

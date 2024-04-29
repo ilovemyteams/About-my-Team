@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
 import { appendToSheet } from "@/src/api/appendToSheetData";
+import { IconLoader } from "../Icons/IconLoader";
 
 interface CustomerFormProps {
     onClose?: () => void;
@@ -31,9 +31,9 @@ const labelTextAreaStyles =
     "relative w-full h-[122px] pb-[12px] outline-none text-base";
 const textLabelStyles = "absolute transition-translate duration-300 ease-out";
 const fieldStyles =
-    "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
+    "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
 const textAreaStyles =
-    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
+    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
@@ -98,7 +98,7 @@ export const CustomerForm = ({
                 touched,
                 handleBlur,
             }) => (
-                <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-stroke">
+                <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
                     <label className={`${labelStyles}`}>
                         <p
                             className={`${textLabelStyles} ${values.name || status === "name" ? "top-0 text-xxs" : "top-[20px] text-base"}`}
@@ -116,7 +116,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("name")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} ${touched.name && errors.name ? "border-error text-error" : values.name || status === "name" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles} ${touched.name && errors.name ? "border-error text-error" : values.name || status === "name" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="name"
@@ -141,7 +141,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("email")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} ${touched.email && errors.email ? "border-error text-error" : values.email || status === "email" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles} ${touched.email && errors.email ? "border-error text-error" : values.email || status === "email" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="email"
@@ -166,7 +166,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("telegram")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles} ${touched.telegram && errors.telegram ? "border-error text-error" : values.telegram || status === "telegram" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles} ${touched.telegram && errors.telegram ? "border-error text-error" : values.telegram || status === "telegram" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="telegram"
@@ -191,7 +191,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("linkedin")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles}  ${touched.linkedin && errors.linkedin ? "border-error text-error" : values.linkedin || status === "linkedin" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles}  ${touched.linkedin && errors.linkedin ? "border-error text-error" : values.linkedin || status === "linkedin" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="linkedin"
@@ -216,7 +216,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("instagram")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles}  ${touched.instagram && errors.instagram ? "border-error text-error" : values.instagram || status === "instagram" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles}  ${touched.instagram && errors.instagram ? "border-error text-error" : values.instagram || status === "instagram" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="instagram"
@@ -241,7 +241,7 @@ export const CustomerForm = ({
                             }
                             onFocus={() => setStatus("facebook")}
                             onBlur={handleBlur}
-                            className={`${fieldStyles}  ${touched.facebook && errors.facebook ? "border-error text-error" : values.facebook || status === "facebook" ? "border-grey text-grey" : "border-purple-stroke"}`}
+                            className={`${fieldStyles}  ${touched.facebook && errors.facebook ? "border-error text-error" : values.facebook || status === "facebook" ? "border-purple-200 text-purple-200 dark:border-grey dark:text-grey" : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         ></Field>
                         <ErrorMessage
                             name="facebook"
@@ -256,7 +256,7 @@ export const CustomerForm = ({
                             {getTranslation("messageLabel")}
                         </p>
                         <div
-                            className={`pb-[7px] border-b-[1px] ${touched.message && errors.message ? "border-error" : values.message || status === "message" ? "border-grey" : "border-purple-stroke"}`}
+                            className={`pb-[7px] border-b-[1px] ${touched.message && errors.message ? "border-error" : values.message || status === "message" ? "border-purple-200  dark:border-grey " : "border-purple-strokeLight dark:border-purple-stroke"}`}
                         >
                             <Field
                                 as="textarea"
@@ -270,7 +270,7 @@ export const CustomerForm = ({
                                 }
                                 onFocus={() => setStatus("message")}
                                 onBlur={handleBlur}
-                                className={`${textAreaStyles} resize-none ${touched.message && errors.message ? "text-error" : "text-grey"}`}
+                                className={`${textAreaStyles} resize-none ${touched.message && errors.message ? "text-error" : "text-purple-200 dark:text-grey"}`}
                             ></Field>
                         </div>
                         <ErrorMessage
@@ -281,17 +281,17 @@ export const CustomerForm = ({
                     </label>
                     <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
                         <p
-                            className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-grey"}`}
+                            className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-purple-200 dark:text-grey"}`}
                         >
                             {getTranslation("requiredField")}
                         </p>
                         <p className="max-w-[372px] text-xs tab:text-sm">
-                            {getTranslation("informedAgreement")}{" "}
+                            {getTranslation("informedAgreement")}
                             <a
                                 href="/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-purple-50"
+                                className="text-purple-130 dark:text-purple-50"
                             >
                                 {getTranslation("rulesLink")}
                             </a>
@@ -305,13 +305,9 @@ export const CustomerForm = ({
                         >
                             {getTranslation("submitButton")}
                         </Button>
-                        <Image
-                            src="/images/loader.svg"
-                            alt="background"
-                            width={40}
-                            height={40}
+                        <IconLoader
                             className={`${isLoading ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
-                             tab:left-[8px] animate-rotation`}
+                             tab:left-[8px] w-[40px] h-[40px] animate-rotation`}
                         />
                     </div>
                 </Form>

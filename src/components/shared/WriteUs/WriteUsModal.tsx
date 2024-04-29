@@ -35,15 +35,18 @@ export const WriteUsModal = ({
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement="center"
+                radius="none"
                 shouldBlockScroll={
                     screenSizeName !== mobileName &&
                     screenSizeName !== tabletName
                 }
                 hideCloseButton={true}
                 className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] max-h-[792px] tab:min-h-[789px] pc:min-h-[813px]
-                px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible
-                bg-purple-400"
-                classNames={{ backdrop: "bg-backdrop bg-opacity-80" }}
+                px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
+                classNames={{
+                    backdrop:
+                        "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
+                }}
             >
                 <ModalContent className="w-full h-full m-0">
                     <Image
@@ -52,7 +55,7 @@ export const WriteUsModal = ({
                         width="0"
                         height="0"
                         sizes="100%"
-                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
+                        className="hidden dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
@@ -60,7 +63,7 @@ export const WriteUsModal = ({
                         width="0"
                         height="0"
                         sizes="100%"
-                        className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
+                        className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktop.png"
@@ -69,6 +72,22 @@ export const WriteUsModal = ({
                         height="0"
                         sizes="100%"
                         className="hidden dark:pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobileLight.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTabletLight.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className="hidden tab:block pc:hidden dark:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktopLight.png"
@@ -84,7 +103,7 @@ export const WriteUsModal = ({
                         onClick={onClose}
                         disabled={isError}
                         aria-label="close button"
-                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
+                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight dark:disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
                          icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
                          icon-hover-rounded-purple:active"
                     >
