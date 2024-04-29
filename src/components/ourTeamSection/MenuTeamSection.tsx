@@ -66,7 +66,7 @@ export const MenuTeamSection = ({
         <div onClick={toggleList} className="relative ">
             <div
                 className="tab:hidden flex items-center justify-between h-12 min-w-[288px] max-w-[540px] pl-[16px] pr-[4px]
-                  text-red text-baseb font-caviar
+                  text-red text-baseb font-caviar bg-memberMenuGradient
                   relative outline-none border-[1px] border-purple-stroke"
             >
                 <p>{selectedOption?.optionName}</p>
@@ -75,7 +75,7 @@ export const MenuTeamSection = ({
                 />
             </div>
             <div
-                className={`${isOpen ? "max-h-[1280px]" : "max-h-0"} tab:max-h-full tab:h-full dark:bg-CTAGradient bg-CTAGradientLight tab:dark:bg-none tab:bg-none dark:bg-purple-400 bg-white-100 absolute top-12 z-10 min-w-[288px] max-w-[540px] w-full 
+                className={`${isOpen ? "max-h-[1280px]" : "max-h-0"} tab:max-h-full tab:h-full bg-memberMenuGradient  dark:bg-purple-400 bg-white-100 absolute top-12 z-10 min-w-[288px] max-w-[540px] w-full 
                     transition-[max-height] duration-[300ms] overflow-hidden 
                     tab:static tab:border-[1px] tab:border-purple-stroke tab:w-[27vw] pc:max-w-[286px] tab:min-w-[208px] pc:w-[19vw] pc:min-w-[246px] deskxl:w-[232px]`}
             >

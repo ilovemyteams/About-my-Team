@@ -328,6 +328,8 @@ const config: Config = {
             headerGradientLight:
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
+            memberMenuGradient:
+                "linear-gradient(to right, #4F0A86 0%, #20003F 100%)",
         },
     },
     plugins: [
