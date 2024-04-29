@@ -55,7 +55,7 @@ export const WriteUsModal = ({
                         width="0"
                         height="0"
                         sizes="100%"
-                        className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
+                        className="hidden dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
@@ -63,7 +63,7 @@ export const WriteUsModal = ({
                         width="0"
                         height="0"
                         sizes="100%"
-                        className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
+                        className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktop.png"
@@ -72,6 +72,22 @@ export const WriteUsModal = ({
                         height="0"
                         sizes="100%"
                         className="hidden dark:pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobileLight.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
+                    />
+                    <Image
+                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTabletLight.png"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className="hidden tab:block pc:hidden dark:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktopLight.png"
