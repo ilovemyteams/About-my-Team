@@ -62,7 +62,7 @@ export const PortfolioCard = ({
                         {implementations.map((implementation, index) => (
                             <div
                                 key={index}
-                                className="text-xs pc:text-base px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-grey"
+                                className="text-xs pc:text-base px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
                             >
                                 {implementation}
                             </div>
