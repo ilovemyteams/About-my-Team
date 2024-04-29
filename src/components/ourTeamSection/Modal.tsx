@@ -18,7 +18,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                 className="w-full h-full bg-[rgba(3,3,3,0.8)] fixed top-0 left-0 z-[20] no-doc-scroll"
                 scroll={false}
             />
-            <div className="min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px] h-auto max-h-[95vh] pb-[64px] overflow-y-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21] bg-purple-400">
+            <div className="min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px] h-auto max-h-[95vh] pb-[64px] tab:pb-[72px] overflow-y-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21] bg-purple-400">
                 <button
                     onClick={() => {
                         router.push(`/${locale}#team`);
