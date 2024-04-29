@@ -57,7 +57,7 @@ export const JoinUsCard = ({
         tab:border-1 tab:border-purple-stroke tab:min-w-[250px]  tab:px-12 tab:border-l-0 tab:border-t-0 
         ${borderRightPC} ${borderBottomPC} ${borderRightTab} ${borderBottomTab} ${borderRightDeskXL} ${borderBottomDeskXL} `}
         >
-            <p className="text-baseb text-center">
+            <p className="text-xlb font-caviar text-center">
                 {getTranslation("yourPhoto")}
             </p>
 
