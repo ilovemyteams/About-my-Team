@@ -11,7 +11,7 @@ export const TitleQA = () => {
                 <SmallPageTitle className="px-[4px] mt-[2px] ml-0 mx-auto mr-[10px] mb-[10px] tab:mr-3 flex  ">
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
-                <span className="hidden tab:block w-auto pc:max-w-[700px] desk:max-w-[none]">
+                <span className="hidden tab:block w-auto pc:max-w-[700px] desk:max-w-[900px]">
                     {getTranslation("pageBigTitle")}
                 </span>
                 <MobileBigTitleQa />
