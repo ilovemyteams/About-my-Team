@@ -48,6 +48,13 @@ export const BackgroundCirclesBigScreens = ({
                 className={`hidden dark:deskxl:block absolute right-0 top-0 w-[671px] h-[569px] z-[-10] `}
             />
             <Image
+                src="/images/bgImages/rightTop1536screenLight.svg"
+                width="0"
+                height="0"
+                alt="background image circle"
+                className={`block deskxl:hidden dark:hidden absolute right-0 top-0 w-[689px] h-[689px] z-[-10] `}
+            />
+            <Image
                 src="/images/bgImages/rightTop1920screenLight.svg"
                 width="0"
                 height="0"
