@@ -34,8 +34,9 @@ export const MemberCardsListBigScreens = ({
 
     return (
         <div
-            className="hidden tab:block relative embla min-w-full tab:min-w-[auto] tab:min-h-[540px] pc:min-h-[584px] tab:aspect-[500/540] tab:w-teamTab pc:w-teamPC border-1 border-purple-stroke
-                       pc:aspect-[810/584]"
+            className="hidden tab:block relative embla min-w-full tab:min-w-[auto] tab:min-h-[540px] pc:min-h-[584px] tab:aspect-[500/540] tab:w-teamTab 
+            pc:w-teamPC border-1 border-purple-stroke pc:aspect-[810/584] deskxl:aspect-[1080/584]
+            desk:w-teamDesk deskxl:w-teamDeskxl"
         >
             <SliderButtons membersData={membersData} emblaApi={emblaApi} />
             <div className=" overflow-hidden" ref={emblaRef}>

@@ -142,6 +142,8 @@ const config: Config = {
                 portfolioHeroCard: "calc(100vw - 32px)",
                 teamTab: "calc(100% - 27vw - 12px)",
                 teamPC: "calc(100% - 19vw - 24px)",
+                teamDesk: "calc(100% - 286px - 24px)",
+                teamDeskxl: "calc(100% - 232px - 24px)",
             },
             height: {
                 "70": "calc(100dvh - 80px)",
