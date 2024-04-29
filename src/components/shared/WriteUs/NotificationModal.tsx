@@ -66,7 +66,7 @@ export const NotificationModal = ({
                     width="0"
                     height="0"
                     sizes="100%"
-                    className="tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
+                    className="dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
                 />
                 <Image
                     src={
@@ -78,7 +78,7 @@ export const NotificationModal = ({
                     width="0"
                     height="0"
                     sizes="100%"
-                    className="hidden tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
+                    className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
                 />
                 <Image
                     src={
