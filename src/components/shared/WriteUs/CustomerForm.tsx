@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
 import { appendToSheet } from "@/src/api/appendToSheetData";
+import { IconLoader } from "../Icons/IconLoader";
 
 interface CustomerFormProps {
     onClose?: () => void;
@@ -286,7 +286,7 @@ export const CustomerForm = ({
                             {getTranslation("requiredField")}
                         </p>
                         <p className="max-w-[372px] text-xs tab:text-sm">
-                            {getTranslation("informedAgreement")}{" "}
+                            {getTranslation("informedAgreement")}
                             <a
                                 href="/"
                                 target="_blank"
@@ -305,13 +305,9 @@ export const CustomerForm = ({
                         >
                             {getTranslation("submitButton")}
                         </Button>
-                        <Image
-                            src="/images/loader.svg"
-                            alt="background"
-                            width={40}
-                            height={40}
+                        <IconLoader
                             className={`${isLoading ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
-                             tab:left-[8px] animate-rotation`}
+                             tab:left-[8px] w-[40px] h-[40px] animate-rotation`}
                         />
                     </div>
                 </Form>
