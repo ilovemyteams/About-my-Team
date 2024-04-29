@@ -163,7 +163,7 @@
         "instagramPlaceholder": "instagram.com/susannasalata",
         "facebookPlaceholder": "facebook.com/susannasalata",
         "messagePlaceholder": "Your message is important to us",
-        "requiredField": "*Поля, обов'язкові для заповнення",
+        "requiredField": "*Fields required to be filled in",
         "informedAgreement": "By clicking the “Submit” button, you agree to the",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send"
