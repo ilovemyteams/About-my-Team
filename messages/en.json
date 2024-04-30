@@ -186,5 +186,11 @@
         "somethingWrong": "Something went wrong",
         "tryAgain": "Please try to send the form again",
         "linkIsCopied": "Link copied"
+    },
+    "MemberCardModal": {
+        "about": "Про себе",
+        "services": "Послуги",
+        "tools": "Інструменти",
+        "projectsExperience": "Проекти/Досвід"
     }
 }

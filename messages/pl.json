@@ -188,5 +188,11 @@
         "somethingWrong": "Coś poszło nie tak",
         "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
+    },
+    "MemberCardModal": {
+        "about": "Про себе",
+        "services": "Послуги",
+        "tools": "Інструменти",
+        "projectsExperience": "Проекти/Досвід"
     }
 }
