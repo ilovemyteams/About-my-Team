@@ -37,12 +37,12 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
 
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
-            <Image
+            {/* <Image
                 src="/images/bgModalMember/imageModalMemberCardMob.png"
                 alt="BG for modal mobile"
                 fill
                 className="object-cover absolute top-[-64px] -z-[5]"
-            />
+            /> */}
             <div className="p-[8px] pt-0 border border-purple-stroke border-b-0 ">
                 {pricePerHour && (
                     <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">

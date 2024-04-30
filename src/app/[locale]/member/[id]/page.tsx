@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
 import { Modal } from "@/src/components/ourTeamSection/Modal";
@@ -21,12 +20,6 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     }
     return (
         <Modal>
-            <Image
-                src="/images/bgModalMember/bgImageMemberModalTab.png"
-                alt="BG for modal mobile"
-                fill
-                className="hidden tab:block object-cover absolute inset-0 -z-[5]"
-            />
             <MemberCardModalBody data={displayedMember} />
             <MemberCardModalBodyTab data={displayedMember} />
         </Modal>
