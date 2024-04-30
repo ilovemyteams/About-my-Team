@@ -387,7 +387,7 @@ export const membersData: MemberDataItemType[] = [
                 "NextJS",
                 "TypeScript",
                 "JavaScript",
-                "Taitwind",
+                "Tailwind",
                 "MUI",
                 "MongoDB",
                 "Node.js",
@@ -425,7 +425,9 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["https://www.site.ua"],
+
+            projectsExperience: ["https://github.com/OlgaMykhailova"],
+
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
@@ -433,28 +435,28 @@ export const membersData: MemberDataItemType[] = [
                 telegram: "https://t.me/Olya_Kaktusya",
             },
             tools: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "TypeScript",
                 "React",
                 "NextJS",
-                "React Native",
+                "TypeScript",
+                "JavaScript",
                 "Tailwind",
+                "React Native",
                 "Node.js",
                 "MongoDB",
+                "HTML",
+                "CSS",
             ],
         },
         uk: {
             name: "Ольга Михайлова",
-            about: "Люблю знаходити елегантні рішення для складних задач.",
+            about: "Люблю знаходити елегантні рішення для складних задач",
             services:
-                "Моя мета - розробка веб-застосунків, що вражають своєю зручністю для користувачів та ефективністю для бізнесу. Я прагну створювати продукти різного рівня складності, що забезпечують не лише функціональність, але й естетичність. Мій підхід полягає в тому, щоб допомагати клієнтам досягати бездоганних результатів шляхом поєднання максимальної корисності та привабливого дизайну у кожному проекті.",
+                "Створення зручних для користувачів та ефективних для бізнесу web-застосунків різного рівня складності. Фокусуюсь на поєднанні максимальної функціональності та естетичності для досягнення бездоганного результату",
             team: "I Love My Team",
         },
         en: {
             name: "Olga Mykhailova",
-            about: "I enjoy finding elegant solutions to difficult tasks.",
+            about: "I enjoy finding elegant solutions to difficult tasks",
             services:
                 "My goal is to develop web applications that impress with their user-friendliness and business efficiency. I strive to create products of varying levels of complexity that provide not only functionality but also aesthetics. My approach is to help clients achieve flawless results by combining maximum utility and attractive design in every project.",
             team: "I Love My Team",
