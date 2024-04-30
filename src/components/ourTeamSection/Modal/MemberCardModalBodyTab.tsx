@@ -7,6 +7,7 @@ import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { MemberSocialLinks } from "./MemberSocialLinks";
 import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberTools } from "./MemberTools";
+import { MemberLiSquare } from "./MemberLiSquare";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
@@ -65,47 +66,27 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
             <div className="mx-4">
                 <ul className="mt-11">
                     <li className="mb-4 ">
-                        <div className="flex items-center mb-[6px]">
-                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
-                            <span className="font-caviar text-base font-bold text-white ">
-                                {getTranslation("about")}
-                            </span>
-                        </div>
+                        <MemberLiSquare text={getTranslation("about")} />
                         <p className="h-auto text-base ml-2">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
                     <li className="mb-4">
-                        <div className="flex items-center mb-[6px]">
-                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
-                            <span className="font-caviar text-base font-bold text-white">
-                                {getTranslation("services")}
-                            </span>
-                        </div>
-
+                        <MemberLiSquare text={getTranslation("services")} />
                         <p className="text-base ml-2 h-auto">
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>
                     <li className="mb-4">
-                        <div className="flex items-center mb-[6px]">
-                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
-
-                            <span className="font-caviar text-base font-bold text-white">
-                                {getTranslation("projectsExperience")}
-                            </span>
-                        </div>
+                        <MemberLiSquare
+                            text={getTranslation("projectsExperience")}
+                        />
                         <MemberProjectExperience
                             projectsExperience={projectsExperience}
                         />
                     </li>
                     <li className="mb-4">
-                        <div className="flex items-center mb-[6px]">
-                            <div className="w-2 h-2 border-red border-[2px] mr-2"></div>
-                            <span className="font-caviar text-base font-bold text-white">
-                                {getTranslation("tools")}
-                            </span>
-                        </div>
+                        <MemberLiSquare text={getTranslation("tools")} />
                         <MemberTools tools={tools} />
                     </li>
                 </ul>
