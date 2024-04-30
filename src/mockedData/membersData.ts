@@ -194,7 +194,7 @@ export const membersData: MemberDataItemType[] = [
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
@@ -376,7 +376,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
                 github: "https://github.com/OlenaPosternak",
@@ -426,7 +426,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
                 github: "https://github.com/OlgaMykhailova",
@@ -476,7 +476,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA engineer",
             categoryName: "qa",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -588,7 +588,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["https://www.website.ua"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
                 telegram: "https://t.me/Dari_Chap",
