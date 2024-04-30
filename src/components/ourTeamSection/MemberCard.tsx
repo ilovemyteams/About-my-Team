@@ -39,7 +39,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 </Link>
             </div>
 
-            <div className="min-h-[88px] tab:min-h-[59px] pc:min-h-[72px] flex flex-col justify-between">
+            <div className="min-h-[100px] tab:min-h-[59px] pc:min-h-[72px] flex flex-col justify-between content-between">
                 <h4 className="font-caviar text-baseb text-white-200 pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>
