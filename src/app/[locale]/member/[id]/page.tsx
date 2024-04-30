@@ -1,9 +1,9 @@
 import React from "react";
 import { notFound } from "next/navigation";
-import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
-import { Modal } from "@/src/components/ourTeamSection/Modal";
+import { MemberCardModalBody } from "@/src/components/ourTeamSection/Modal/MemberCardModalBody";
+import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
-import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/MemberCardModalBodyTab";
+import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/Modal/MemberCardModalBodyTab";
 
 interface MemberPageProps {
     params: {
