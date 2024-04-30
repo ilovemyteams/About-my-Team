@@ -329,7 +329,7 @@ const config: Config = {
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
             memberMenuGradient:
-                "linear-gradient(to right, #4F0A86 0%, #20003F 100%)",
+                "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
         },
     },
     plugins: [
