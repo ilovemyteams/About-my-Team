@@ -4,6 +4,9 @@ import { LocaleType } from "@/types/LocaleType";
 import { SharePopover } from "../shared/SharePopover";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
+import { MemberSocialLinks } from "./MemberSocialLinks";
+import { MemberProjectExperience } from "./MemberProjectExperience";
+import { MemberTools } from "./MemberTools";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
@@ -22,27 +25,8 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
 
-    const memberSocialLinks = [
-        {
-            url: socialLinks.telegram,
-            image: "/images/telegramIcon.svg",
-            alt: "Telegram",
-        },
-        {
-            url: socialLinks.linkedin,
-            image: "/images/linkedin.svg",
-            alt: "Linkedin",
-        },
-    ];
-
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
-            {/* <Image
-                src="/images/bgModalMember/imageModalMemberCardMob.png"
-                alt="BG for modal mobile"
-                fill
-                className="object-cover absolute top-[-64px] -z-[5]"
-            /> */}
             <div className="p-[8px] pt-0 border border-purple-stroke border-b-0 ">
                 {pricePerHour && (
                     <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
@@ -104,16 +88,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 {getTranslation("tools")}
                             </span>
                         </div>
-                        <ul className="h-[80px] overflow-hidden flex flex-wrap text-sm ml-3">
-                            {tools.map((tool, idx) => (
-                                <li
-                                    key={idx}
-                                    className=" mx-1 my-2 border border-grey px-2 py-[4.5px] text-sm "
-                                >
-                                    {tool}
-                                </li>
-                            ))}
-                        </ul>
+                        <MemberTools tools={tools} />
                     </li>
                     <li className="mb-2">
                         <div className="flex items-center my-2">
@@ -123,24 +98,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 {getTranslation("projectsExperience")}
                             </span>
                         </div>
-                        <ul>
-                            {projectsExperience
-                                .slice(0, 3)
-                                .map((project, index) => (
-                                    <li
-                                        key={index}
-                                        className="px-0 truncate w-[230px] dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
-                                    >
-                                        <a
-                                            target="_blank"
-                                            href={project}
-                                            className="text-sm ml-4"
-                                        >
-                                            {project}
-                                        </a>
-                                    </li>
-                                ))}
-                        </ul>
+                        <MemberProjectExperience
+                            projectsExperience={projectsExperience}
+                        />
                     </li>
                 </ul>
                 <SharePopover
@@ -148,32 +108,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                     trigerShowShareText={true}
                 />
             </div>
-            <ul className="flex justify-between ">
-                {memberSocialLinks.map(({ url, image, alt }, idx) => (
-                    <li
-                        key={idx}
-                        className="flex w-full h-[34px] justify-center items-center border border-purple-stroke odd:border-r-0"
-                    >
-                        <div className="w-6 h-6">
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cursor-pointer flex justify-center items-center w-[24px] h-[24px] pc:p-3
-            icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            icon-hover-rounded-purple:active relative"
-                            >
-                                <Image
-                                    src={image}
-                                    alt={alt}
-                                    width="24"
-                                    height="24"
-                                />
-                            </a>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+            <MemberSocialLinks socialLinks={socialLinks} />
         </div>
     );
 };
