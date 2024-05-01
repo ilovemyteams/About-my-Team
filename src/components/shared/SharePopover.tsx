@@ -21,10 +21,12 @@ export const SharePopover = ({
     className,
     id,
     trigerShowShareText,
+    hiddenTextForMemberModal,
 }: {
     className: string;
     id?: string;
     trigerShowShareText: boolean;
+    hiddenTextForMemberModal?: boolean;
 }) => {
     const getTranslation = useTranslations();
     const [isOpen, setIsOpen] = useState(false);
@@ -44,6 +46,11 @@ export const SharePopover = ({
           : "";
     const shareButtonStyles =
         "relative flex justify-center items-center w-12 h-12 icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active";
+    const isShowText = hiddenTextForMemberModal
+        ? "hidden"
+        : trigerShowShareText
+          ? "hidden pc:block pc:border-b pc:border-current"
+          : "hidden tab:block tab:border-b tab:border-current";
     return (
         <Popover isOpen={isOpen} onOpenChange={setIsOpen} placement="top-start">
             <PopoverTrigger>
@@ -52,13 +59,7 @@ export const SharePopover = ({
                     className={`bg-transparent h-12 min-w-12 justify-center items-center focus:outline-none px-0 flex gap-2 font-caviar tab:text-lg dark:pc:hover:text-red pc:hover:text-redLight
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight ${className}`}
                 >
-                    <p
-                        className={
-                            trigerShowShareText
-                                ? `hidden pc:block tab:border-b tab:border-current`
-                                : `hidden tab:block tab:border-b tab:border-current`
-                        }
-                    >
+                    <p className={isShowText}>
                         {getTranslation("Buttons.share")}
                     </p>
                     <IconShare />
