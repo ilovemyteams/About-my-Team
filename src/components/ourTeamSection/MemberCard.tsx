@@ -32,6 +32,9 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full 
                             tab:aspect-[234/186] pc:aspect-[246/196]"
                             alt={data[locale as LocaleType]?.name}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL="/images/bgModalMember/bgPhotoMemberCardTab.webp"
                         />
                     ) : (
                         <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
