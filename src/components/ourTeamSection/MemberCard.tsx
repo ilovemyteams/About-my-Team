@@ -5,7 +5,8 @@ import Link from "next/link";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
-import { SocialLinkSmallMemberCard } from "./SocialLinkSmallMemberCard";
+import { SocialLink } from "../header/SocialLinks/SocialLink";
+import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
@@ -13,6 +14,7 @@ export interface MemberCardProps {
 export const MemberCard = ({ data }: MemberCardProps) => {
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
+    const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
 
     return (
         <div
@@ -50,10 +52,9 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                     <p className="text-purple-50 mr-12 min-h-12 flex items-center tab:w-full">
                         {position.toUpperCase()}
                     </p>
-                    <SocialLinkSmallMemberCard
+                    <SocialLink
                         url={socialLinks.linkedin}
-                        image={"linkedin.svg"}
-                        alt={"Linkedin"}
+                        image={iconLinkedin}
                     />
                 </div>
             </div>
