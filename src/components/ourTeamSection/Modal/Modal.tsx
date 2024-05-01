@@ -21,16 +21,22 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
             <div className="p-0 min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px] h-auto max-h-[95vh]   overflow-y-auto fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[21] bg-purple-400">
                 <div className="h-auto relative pb-[64px] pt-2 tab:pb-[72px] tab:pt-3">
                     <Image
-                        src="/images/bgModalMember/imageModalMemberCardMob.png"
+                        src="/images/bgModalMember/bgImageMemberModalMob.webp"
                         alt="BG for modal mobile"
                         fill
                         className="tab:hidden object-cover absolute top-0 right-0 -z-[5]"
                     />
                     <Image
-                        src="/images/bgModalMember/bgImageMemberModalTab.png"
+                        src="/images/bgModalMember/bgImageMemberModalTab.webp"
                         alt="BG for modal tablet"
                         fill
-                        className="hidden tab:block object-cover absolute top-0 right-0 -z-[5]"
+                        className="hidden tab:block pc:hidden object-cover absolute top-0 right-0 -z-[5]"
+                    />
+                    <Image
+                        src="/images/bgModalMember/bgImageMemberModalPC.webp"
+                        alt="BG for modal pc"
+                        fill
+                        className="hidden pc:block object-cover absolute top-0 right-0 -z-[5]"
                     />
                     <button
                         onClick={() => {
