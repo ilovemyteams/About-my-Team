@@ -76,12 +76,12 @@ export const MemberSocialLinks = ({
                     tab:border-0 tab:border-t tab:[&:nth-child(1)]:border-r
                     pc:[&:nth-child(2)]:border-r"
                 >
-                    <div className="w-6 h-6">
+                    <div className="w-8 h-8">
                         <a
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="cursor-pointer flex justify-center items-center w-[24px] h-[24px]
+                            className="cursor-pointer flex justify-center items-center w-[32px] h-[32px]
 icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
 icon-hover-rounded-purple:active relative"
                         >
