@@ -194,7 +194,7 @@ export const membersData: MemberDataItemType[] = [
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
@@ -279,7 +279,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
@@ -297,21 +297,21 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Ірина Тринкаль",
-            about: "Якась офігенна цитата про себе",
+            about: "Можливо все, на неможливе просто потрібно більше часу.",
             services:
                 "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та Node.js. Створення та управління бекенд API для забезпечення комунікації між фронтендом та сервером. Впровадження аутентифікації користувачів та надання прав доступу для забезпечення безпеки додатків. Поєднання компонентів фронтенду та бекенду для створення єдиної, працюючої програми.",
             team: "I Love My Team",
         },
         en: {
             name: "Iryna Trynkal",
-            about: "Something encredible about you",
+            about: "Anything is possible, the impossible just takes longer.",
             services:
                 "Develop and style web pages using HTML, CSS, and JavaScript, taking into account best practices. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js. Creating and managing backend APIs to ensure communication between the frontend and the server. Implementation of user authentication and granting access rights to ensure application security. Combining front-end and back-end components to create a single, working application.",
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Trynkal",
-            about: "There will be text in Polish",
+            about: "Wszystko jest możliwe, niemożliwe wymaga tylko więcej czasu.",
             services:
                 "Projektowanie i tworzenie stron internetowych przy użyciu HTML, CSS i JavaScript z uwzględnieniem najlepszych praktyk. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js. Tworzenie i zarządzanie backendowymi interfejsami API w celu zapewnienia komunikacji między frontendem a serwerem. Wdrażanie uwierzytelniania użytkowników i przyznawanie praw dostępu w celu zapewnienia bezpieczeństwa dla aplikacji. Łączenie komponentów front-end i back-end w celu stworzenia pojedynczej, działającej aplikacji.",
             team: "I Love My Team",
@@ -376,7 +376,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
                 github: "https://github.com/OlenaPosternak",
@@ -425,7 +425,9 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
             position: "FrontEnd Developer",
             categoryName: "developer",
+
             projectsExperience: ["https://github.com/OlgaMykhailova"],
+
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
@@ -476,7 +478,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA engineer",
             categoryName: "qa",
             projectsExperience: ["https://www.site.ua"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -588,7 +590,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["https://www.website.ua"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
                 telegram: "https://t.me/Dari_Chap",
