@@ -45,6 +45,15 @@ export async function generateMetadata({
     const getTranslation = await getTranslations({ locale, namespace: "Home" });
 
     return {
+        metadataBase: new URL("https://about-my-team-zeta.vercel.app"),
+        alternates: {
+            canonical: "/",
+            languages: {
+                en: "/en",
+                pl: "/pl",
+                uk: "/uk",
+            },
+        },
         title: getTranslation("title"),
         description: getTranslation("description"),
         openGraph: {
