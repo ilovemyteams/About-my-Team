@@ -60,7 +60,7 @@ export const MemberSocialLinks = ({
     ];
 
     const memberSocialLinks =
-        screenSizeName === (tabletName || mobileName)
+        screenSizeName === mobileName || screenSizeName === tabletName
             ? memberSocialLinksTab
             : socialLinks.github
               ? memberSocialLinksPCGit
