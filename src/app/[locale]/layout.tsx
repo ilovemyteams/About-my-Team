@@ -7,6 +7,7 @@ import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
 
 const caviar = localFont({
@@ -104,6 +105,7 @@ export default function LocaleLayout({
                         </main>
                         <Footer />
                         <ScrollToTopButton />
+                        <CookiesComponent />
                     </Providers>
                 </body>
             </NextIntlClientProvider>
