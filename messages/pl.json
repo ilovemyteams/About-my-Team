@@ -188,5 +188,10 @@
         "somethingWrong": "Coś poszło nie tak",
         "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
+    },
+    "Cookies": {
+        "text": " Цей сайт використовує файли cookies для правильної роботи і покращення сервісу. Якщо ви погоджуєтесь з їхнім використанням, натисніть ОК. Більше інформації в ",
+        "policy": "Політика конфіденційності.",
+        "button": "ok"
     }
 }
