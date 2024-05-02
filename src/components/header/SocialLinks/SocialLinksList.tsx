@@ -1,7 +1,7 @@
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { SocialLink } from "./SocialLink";
+import { SocialLink } from "../../shared/SocialLink";
 
 const socialLinksData = [
     {

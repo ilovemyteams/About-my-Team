@@ -5,7 +5,7 @@ import Link from "next/link";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
-import { SocialLink } from "../header/SocialLinks/SocialLink";
+import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 
 export interface MemberCardProps {

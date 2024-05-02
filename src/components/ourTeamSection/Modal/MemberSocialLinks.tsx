@@ -3,7 +3,7 @@ import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconTelegram } from "../../shared/Icons/IconTelegram";
-import { SocialLink } from "../../header/SocialLinks/SocialLink";
+import { SocialLink } from "../../shared/SocialLink";
 
 export const MemberSocialLinks = ({
     socialLinks,
