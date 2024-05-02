@@ -15,7 +15,7 @@ export const MemberSocialLinks = ({
     const iconGithub = <IconGithub className="w-5 h-5" />;
     const iconBehance = <IconBehance className="w-6 h-6" />;
     const classLiSocialLink =
-        "flex w-full h-[34px] justify-center items-center border border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
+        "flex w-full h-[34px] tab:h-10 justify-center items-center border border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
 
     return (
         <ul className="flex justify-between ">
