@@ -27,17 +27,29 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 ">
                 <Link href={`/${locale}/member/${id}`}>
                     {imageURL ? (
-                        <Image
-                            src={imageURL}
-                            width={246}
-                            height={196}
-                            className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full 
+                        <>
+                            <Image
+                                src={imageURL}
+                                width={148}
+                                height={150}
+                                className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full"
+                                alt={data[locale as LocaleType]?.name}
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL="/images/bgModalMember/plugMemberCardMob.webp"
+                            />
+                            <Image
+                                src={imageURL}
+                                width={246}
+                                height={196}
+                                className="hidden tab:block hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
                             tab:aspect-[234/186] pc:aspect-[246/196]"
-                            alt={data[locale as LocaleType]?.name}
-                            loading="lazy"
-                            placeholder="blur"
-                            blurDataURL="/images/bgModalMember/bgPhotoMemberCardTab.webp"
-                        />
+                                alt={data[locale as LocaleType]?.name}
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL="/images/bgModalMember/plugMemberModalTab.webp"
+                            />
+                        </>
                     ) : (
                         <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
                     )}
