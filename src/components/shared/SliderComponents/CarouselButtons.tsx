@@ -63,15 +63,13 @@ export const PrevButton: React.FC<ButtonType> = props => {
 
     return (
         <button
+            disabled={disabled}
             aria-label="show previous slide button"
-            className={`embla__button--prev flex justify-center items-center w-12 h-12 relative
+            className="embla__button--prev flex justify-center items-center w-12 h-12 relative
             tab:border-t tab:border-b  group
              icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-            ${
-                disabled
-                    ? "cursor-default dark:border-purple-stroke dark:text-purple-stroke border-disabledLight text-disabledLight"
-                    : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
-            }`}
+            disabled:dark:border-purple-stroke disabled:dark:text-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
+            icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
             type="button"
             {...restProps}
         >
@@ -85,16 +83,14 @@ export const NextButton: React.FC<ButtonType> = props => {
 
     return (
         <button
+            disabled={disabled}
             aria-label="show next slide button"
-            className={`embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
             tab:border-t tab:border-b  group
            icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
             icon-hover-rounded-purple:active 
-            ${
-                disabled
-                    ? "cursor-default dark:border-purple-stroke dark:text-purple-stroke border-disabledLight text-disabledLight"
-                    : "icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
-            }`}
+            disabled:dark:border-purple-stroke disabled:dark:text-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
+            icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
             type="button"
             {...restProps}
         >
