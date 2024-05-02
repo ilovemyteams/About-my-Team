@@ -23,8 +23,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
             <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 ">
-                {imageURL ? (
-                    <Link href={`/member/${id}`}>
+                <Link href={`/${locale}/member/${id}`}>
+                    {imageURL ? (
                         <Image
                             src={imageURL}
                             width={246}
@@ -33,13 +33,13 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             tab:aspect-[234/186] pc:aspect-[246/196]"
                             alt={data[locale as LocaleType]?.name}
                         />
-                    </Link>
-                ) : (
-                    <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
-                )}
+                    ) : (
+                        <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
+                    )}
+                </Link>
             </div>
 
-            <div className="min-h-[88px] tab:min-h-[59px] pc:min-h-[72px] flex flex-col justify-between">
+            <div className="min-h-[100px] tab:min-h-[59px] pc:min-h-[72px] flex flex-col justify-between content-between">
                 <h4 className="font-caviar text-baseb text-white-200 pr-2">
                     {data[locale as LocaleType]?.name}
                 </h4>

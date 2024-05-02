@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
-import { MemberCardModalBody } from "@/src/components/ourTeamSection/MemberCardModalBody";
-import { Modal } from "@/src/components/ourTeamSection/Modal";
+import { MemberCardModalBody } from "@/src/components/ourTeamSection/Modal/MemberCardModalBody";
+import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
+import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/Modal/MemberCardModalBodyTab";
 
 interface MemberPageProps {
     params: {
@@ -20,13 +20,8 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     }
     return (
         <Modal>
-            <Image
-                src="/images/bgModalMember/imageModalMemberCardMob.png"
-                alt="BG for modal mobile"
-                fill
-                className="object-cover absolute inset-0 -z-[5]"
-            />
             <MemberCardModalBody data={displayedMember} />
+            <MemberCardModalBodyTab data={displayedMember} />
         </Modal>
     );
 };

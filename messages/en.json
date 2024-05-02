@@ -187,9 +187,17 @@
         "tryAgain": "Please try to send the form again",
         "linkIsCopied": "Link copied"
     },
-    "Cookies": {
+
+    "MemberCardModal": {
+        "about": "Про себе",
+        "services": "Послуги",
+        "tools": "Інструменти",
+        "projectsExperience": "Проекти/Досвід"
+    },
+  
+      "Cookies": {
         "text": " Цей сайт використовує файли cookies для правильної роботи і покращення сервісу. Якщо ви погоджуєтесь з їхнім використанням, натисніть ОК. Більше інформації в ",
         "policy": "Політика конфіденційності.",
         "button": "ok"
-    }
+      }
 }
