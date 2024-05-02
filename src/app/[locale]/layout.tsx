@@ -45,7 +45,7 @@ export async function generateMetadata({
     const getTranslation = await getTranslations({ locale, namespace: "Home" });
 
     return {
-        metadataBase: new URL("https://about-my-team-zeta.vercel.app"),
+        metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
         alternates: {
             canonical: "/",
             languages: {
