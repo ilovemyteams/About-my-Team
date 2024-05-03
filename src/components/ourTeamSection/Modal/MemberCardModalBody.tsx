@@ -44,6 +44,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 height={60}
                                 objectFit="cover"
                                 alt={data[locale as LocaleType]?.name}
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL="/images/bgModalMember/plugMemberModalMob.webp"
                             />
                         ) : (
                             <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />

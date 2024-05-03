@@ -283,7 +283,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
-                telegram: "",
+                telegram: "https://t.me/iramira333",
             },
             tools: [
                 "HTML",
