@@ -7,6 +7,7 @@ import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
 import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
+import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
     isError: boolean;
@@ -49,49 +50,8 @@ export const WriteUsModal = ({
                 }}
             >
                 <ModalContent className="relative w-full h-full m-0">
+                    <BgImagesTablet />
                     <BgImagesDesktop />
-                    {/* <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
-                    />
-
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobileLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTabletLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden tab:block pc:hidden dark:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktopLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
-                    /> */}
-
                     <button
                         type="button"
                         onClick={onClose}
