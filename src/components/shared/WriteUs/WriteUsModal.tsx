@@ -8,6 +8,7 @@ import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
 import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
 import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
+import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
 
 interface WriteUsModalProps {
     isError: boolean;
@@ -50,6 +51,7 @@ export const WriteUsModal = ({
                 }}
             >
                 <ModalContent className="relative w-full h-full m-0">
+                    <BgImagesMobile />
                     <BgImagesTablet />
                     <BgImagesDesktop />
                     <button
@@ -63,7 +65,6 @@ export const WriteUsModal = ({
                     >
                         <IconCloseX />
                     </button>
-
                     <CustomerForm
                         onClose={onClose}
                         setIsError={setIsError}
