@@ -8,8 +8,8 @@ import {
     ModalBody,
     useDisclosure,
 } from "@nextui-org/react";
-import Image from "next/image";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;
@@ -56,79 +56,8 @@ export const NotificationModal = ({
                 backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"}`,
             }}
         >
-            <ModalContent className="w-full h-full m-0">
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationMobile.png"
-                            : "/images/bgImagesNotification/bgOkNotificationMobile.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationTablet.png"
-                            : "/images/bgImagesNotification/bgOkNotificationTablet.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationDesktop.png"
-                            : "/images/bgImagesNotification/bgOkNotificationDesktop.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden dark:pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationMobileLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationMobileLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationTabletLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationTabletLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden tab:block dark:hidden pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationDesktopLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationDesktopLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
-                />
+            <ModalContent className="relative w-full h-full m-0">
+                <BgImagesMobile />
                 <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
                     <button
                         type="button"

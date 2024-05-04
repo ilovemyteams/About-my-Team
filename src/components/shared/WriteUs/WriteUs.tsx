@@ -9,7 +9,7 @@ interface WriteUsProps {
 
 export const WriteUs = ({ className }: WriteUsProps) => {
     const [isError, setIsError] = useState(false);
-    const [isNotificationShawn, setIsNotificationShawn] = useState(false);
+    const [isNotificationShawn, setIsNotificationShawn] = useState(true);
 
     return (
         <>

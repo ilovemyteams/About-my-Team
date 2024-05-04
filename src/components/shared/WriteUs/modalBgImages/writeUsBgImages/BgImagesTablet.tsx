@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const BgImagesTablet = () => {
     return (
-        <div>
+        <>
             <Image
                 src="/images/bgImagesModalWriteUs/rightTopTablet.svg"
                 alt="background"
@@ -43,6 +43,6 @@ export const BgImagesTablet = () => {
                 sizes="100%"
                 className="hidden tab:block pc:hidden dark:hidden absolute bottom-0 left-0 z-[-10] w-[388px] h-[263px]"
             />
-        </div>
+        </>
     );
 };
