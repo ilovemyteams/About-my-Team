@@ -54,6 +54,7 @@ export const WriteUsModal = ({
                     <BgImagesMobile />
                     <BgImagesTablet />
                     <BgImagesDesktop />
+
                     <button
                         type="button"
                         onClick={onClose}
