@@ -1,12 +1,12 @@
 "use client";
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
 
 interface WriteUsModalProps {
     isError: boolean;
@@ -48,8 +48,9 @@ export const WriteUsModal = ({
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
                 }}
             >
-                <ModalContent className="w-full h-full m-0">
-                    <Image
+                <ModalContent className="relative w-full h-full m-0">
+                    <BgImagesDesktop />
+                    {/* <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
                         alt="background"
                         width="0"
@@ -65,14 +66,7 @@ export const WriteUsModal = ({
                         sizes="100%"
                         className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
                     />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktop.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
-                    />
+
                     <Image
                         src="/images/bgImagesModalWriteUs/bgModalWriteUsMobileLight.png"
                         alt="background"
@@ -96,7 +90,7 @@ export const WriteUsModal = ({
                         height="0"
                         sizes="100%"
                         className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
-                    />
+                    /> */}
 
                     <button
                         type="button"
