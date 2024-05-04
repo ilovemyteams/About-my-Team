@@ -6,7 +6,6 @@ import {
     PopoverContent,
     Button,
 } from "@nextui-org/react";
-import Image from "next/image";
 import {
     FacebookShareButton,
     LinkedinShareButton,
@@ -20,6 +19,12 @@ import { BgImagesMobile } from "./WriteUs/modalBgImages/notificationModalBgImage
 import { BgImagesTablet } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
 import { BgImagesDesktop } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
 import { IconCloseX } from "./Icons/IconCloseX";
+import { IconTelegram } from "./Icons/IconTelegram";
+import { IconLinkedin } from "./Icons/IconLinkedin";
+import { IconFacebook } from "./Icons/IconFacebook";
+import { IconWhatsapp } from "./Icons/IconWhatsapp";
+import { IconLink } from "./Icons/IconLink";
+import { IconCopy } from "./Icons/IconCopy";
 
 export const SharePopover = ({
     className,
@@ -86,62 +91,42 @@ export const SharePopover = ({
                     </p>
                     <div className=" h-12 border border-purple-strokeLight dark:border-purple-stroke">
                         <ul className="flex ">
-                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
+                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <TelegramShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
                                     title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
-                                    <Image
-                                        src="/images/telegramIcon.svg"
-                                        alt="Telegram Icon"
-                                        width={20}
-                                        height={16}
-                                    />
+                                    <IconTelegram />
                                 </TelegramShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <FacebookShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
                                     title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
-                                    <Image
-                                        src="/images/fbIcon.svg"
-                                        alt="Facebook Icon"
-                                        width={10.5}
-                                        height={20}
-                                    />
+                                    <IconFacebook />
                                 </FacebookShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <LinkedinShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
                                     title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                     summary={siteDescription}
                                 >
-                                    <Image
-                                        src="/images/linkedin.svg"
-                                        alt="Linkedin Icon"
-                                        width={24}
-                                        height={24}
-                                    />
+                                    <IconLinkedin className="w-6 h-6" />
                                 </LinkedinShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center text-purple-130 dark:text-purple-50">
                                 <WhatsappShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
                                     title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                     separator=" - "
                                 >
-                                    <Image
-                                        src="/images/whatsAppIcon.svg"
-                                        alt="WhatsApp Icon"
-                                        width={24}
-                                        height={24}
-                                    />
+                                    <IconWhatsapp className="w-6 h-6" />
                                 </WhatsappShareButton>
                             </li>
                         </ul>
@@ -151,27 +136,17 @@ export const SharePopover = ({
                     </p>
                     <CopyLinkButton link={urlShare}>
                         <div className="flex h-12 border border-purple-strokeLight dark:border-purple-stroke">
-                            <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px]">
-                                <Image
-                                    src="/images/linkIcon.svg"
-                                    alt="Link Icon"
-                                    width={20}
-                                    height={20}
-                                />
+                            <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px] text-purple-130 dark:text-purple-50">
+                                <IconLink />
                                 <p className="w-[180px] tab:w-[250px] truncate text-start text-purple-200 dark:text-grey">
                                     {urlShare}
                                 </p>
                             </div>
 
                             <div
-                                className={`${shareButtonStyles} border-l border-purple-strokeLight dark:border-purple-stroke`}
+                                className={`${shareButtonStyles} border-l text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke`}
                             >
-                                <Image
-                                    src="/images/copyIcon.svg"
-                                    alt="Close button"
-                                    width={18}
-                                    height={20}
-                                />
+                                <IconCopy />
                             </div>
                         </div>
                     </CopyLinkButton>

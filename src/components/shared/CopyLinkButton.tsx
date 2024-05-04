@@ -47,7 +47,7 @@ const CopyLinkButton = ({
                 </div>
             )}
             {notCopied && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 text-purple-200 dark:text-grey">
                     <p>{getTranslation("somethingWrong")}</p>
                 </div>
             )}

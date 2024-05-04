@@ -11,6 +11,7 @@ export const IconLoader = ({ className }: iconLoaderProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
+            aria-label="loader"
         >
             <path
                 d="M20 3.33356V10.0002"
