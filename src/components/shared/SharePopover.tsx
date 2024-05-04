@@ -16,6 +16,9 @@ import {
 import { useTranslations } from "next-intl";
 import { IconShare } from "./Icons/IconShare";
 import CopyLinkButton from "./CopyLinkButton";
+import { BgImagesMobile } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
 
 export const SharePopover = ({
     className,
@@ -65,14 +68,10 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] tab:w-[408px] h-[384px] p-0 border-purple-stroke bg-sharePopoverGradient ">
-                <Image
-                    src="/images/bgImages/shareMob.svg"
-                    fill
-                    priority
-                    alt="background image"
-                    className="object-cover absolute inset-0 w-[300px] h-[384px] z-[-10] "
-                />
+            <PopoverContent className="relative rounded-none w-[300px] tab:w-[408px] h-[384px] p-0 border-purple-stroke bg-white-100 dark:bg-purple-400 ">
+                <BgImagesMobile />
+                <BgImagesTablet />
+                <BgImagesDesktop />
                 <Button
                     type="button"
                     onClick={onClose}
