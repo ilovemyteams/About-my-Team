@@ -19,6 +19,7 @@ import CopyLinkButton from "./CopyLinkButton";
 import { BgImagesMobile } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
 import { BgImagesDesktop } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { IconCloseX } from "./Icons/IconCloseX";
 
 export const SharePopover = ({
     className,
@@ -68,29 +69,24 @@ export const SharePopover = ({
                     <IconShare />
                 </button>
             </PopoverTrigger>
-            <PopoverContent className="relative rounded-none w-[300px] tab:w-[408px] h-[384px] p-0 border-purple-stroke bg-white-100 dark:bg-purple-400 ">
+            <PopoverContent className="relative rounded-none w-[300px] tab:w-[408px] h-[384px] p-0 border-purple-strokeLight dark:border-purple-stroke bg-white-100 dark:bg-purple-400 ">
                 <BgImagesMobile />
                 <BgImagesTablet />
                 <BgImagesDesktop />
                 <Button
                     type="button"
                     onClick={onClose}
-                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active"
+                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent text-greyLight dark:text-grey icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active"
                 >
-                    <Image
-                        src="/images/closeX.svg"
-                        alt="Close button"
-                        width={24}
-                        height={24}
-                    />
+                    <IconCloseX />
                 </Button>
-                <div className="flex flex-col border-t w-[268px] tab:w-[360px] border-purple-stroke ">
-                    <p className="text-base mt-9 mb-4">
+                <div className="flex flex-col border-t w-[268px] tab:w-[360px] border-purple-strokeLight dark:border-purple-stroke">
+                    <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">
                         {getTranslation("SharePopover.shareLink")}
                     </p>
-                    <div className=" h-12 border border-purple-stroke">
+                    <div className=" h-12 border border-purple-strokeLight dark:border-purple-stroke">
                         <ul className="flex ">
-                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
                                 <TelegramShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -104,7 +100,7 @@ export const SharePopover = ({
                                     />
                                 </TelegramShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
                                 <FacebookShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -118,7 +114,7 @@ export const SharePopover = ({
                                     />
                                 </FacebookShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-stroke">
+                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r border-purple-strokeLight dark:border-purple-stroke">
                                 <LinkedinShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
@@ -150,11 +146,11 @@ export const SharePopover = ({
                             </li>
                         </ul>
                     </div>
-                    <p className="text-base mt-9 mb-4">
+                    <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
                     <CopyLinkButton link={urlShare}>
-                        <div className="flex h-12 border border-purple-stroke ">
+                        <div className="flex h-12 border border-purple-strokeLight dark:border-purple-stroke">
                             <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px]">
                                 <Image
                                     src="/images/linkIcon.svg"
@@ -162,13 +158,13 @@ export const SharePopover = ({
                                     width={20}
                                     height={20}
                                 />
-                                <p className="w-[180px] tab:w-[250px] truncate text-start">
+                                <p className="w-[180px] tab:w-[250px] truncate text-start text-purple-200 dark:text-grey">
                                     {urlShare}
                                 </p>
                             </div>
 
                             <div
-                                className={`${shareButtonStyles} border-l border-purple-stroke`}
+                                className={`${shareButtonStyles} border-l border-purple-strokeLight dark:border-purple-stroke`}
                             >
                                 <Image
                                     src="/images/copyIcon.svg"
