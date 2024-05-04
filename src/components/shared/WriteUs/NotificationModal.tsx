@@ -10,6 +10,7 @@ import {
 } from "@nextui-org/react";
 import { IconCloseX } from "../Icons/IconCloseX";
 import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;
@@ -58,6 +59,7 @@ export const NotificationModal = ({
         >
             <ModalContent className="relative w-full h-full m-0">
                 <BgImagesMobile />
+                <BgImagesTablet />
                 <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
                     <button
                         type="button"
