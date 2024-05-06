@@ -1,12 +1,14 @@
 "use client";
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { Button } from "../Button";
 import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
+import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
+import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
 
 interface WriteUsModalProps {
     isError: boolean;
@@ -48,55 +50,10 @@ export const WriteUsModal = ({
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
                 }}
             >
-                <ModalContent className="w-full h-full m-0">
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobile.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTablet.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktop.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden dark:pc:block absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsMobileLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[792px] object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsTabletLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden tab:block pc:hidden dark:hidden absolute top-0 left-0 z-[-10] min-w-[660px] h-auto object-cover"
-                    />
-                    <Image
-                        src="/images/bgImagesModalWriteUs/bgModalWriteUsDesktopLight.png"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] min-w-[750px] h-auto object-cover"
-                    />
+                <ModalContent className="relative w-full h-full m-0">
+                    <BgImagesMobile />
+                    <BgImagesTablet />
+                    <BgImagesDesktop />
 
                     <button
                         type="button"
@@ -109,7 +66,6 @@ export const WriteUsModal = ({
                     >
                         <IconCloseX />
                     </button>
-
                     <CustomerForm
                         onClose={onClose}
                         setIsError={setIsError}

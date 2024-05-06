@@ -10,6 +10,9 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;
@@ -50,85 +53,17 @@ export const NotificationModal = ({
             hideCloseButton={true}
             isDismissable={false}
             isKeyboardDismissDisabled={true}
-            className="justify-between min-w-[320px] max-w-[360px] tab:min-w-[464px] max-h-[420px] tab:h-[434px] pc:h-[474px]
+            className="justify-between min-w-[320px] max-w-[360px] tab:min-w-[464px] max-h-[420px] tab:min-h-[434px] pc:min-h-[474px]
             p-[16px] m-0 overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
             classNames={{
                 backdrop: `${isError ? "bg-backdrop bg-opacity-0" : "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"}`,
             }}
         >
-            <ModalContent className="w-full h-full m-0">
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationMobile.png"
-                            : "/images/bgImagesNotification/bgOkNotificationMobile.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="dark:block tab:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationTablet.png"
-                            : "/images/bgImagesNotification/bgOkNotificationTablet.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden dark:tab:block pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationDesktop.png"
-                            : "/images/bgImagesNotification/bgOkNotificationDesktop.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden dark:pc:block absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationMobileLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationMobileLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="block tab:hidden dark:hidden absolute top-0 left-0 z-[-10] w-full h-[420px]"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationTabletLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationTabletLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden tab:block dark:hidden pc:hidden absolute top-0 left-0 z-[-10] w-full h-[434px] object-cover"
-                />
-                <Image
-                    src={
-                        isError
-                            ? "/images/bgImagesNotification/bgErrorNotificationDesktopLight.png"
-                            : "/images/bgImagesNotification/bgOkNotificationDesktopLight.png"
-                    }
-                    alt="background"
-                    width="0"
-                    height="0"
-                    sizes="100%"
-                    className="hidden pc:block dark:hidden absolute top-0 left-0 z-[-10] w-full h-[474px] object-cover"
-                />
+            <ModalContent className="relative w-full h-full m-0">
+                <BgImagesMobile />
+                <BgImagesTablet />
+                <BgImagesDesktop />
+
                 <ModalHeader className="relative min-h-[64px] border-b-[1px] border-purple-stroke">
                     <button
                         type="button"
@@ -154,6 +89,22 @@ export const NotificationModal = ({
                             ? getTranslation("tryAgain")
                             : getTranslation("waitResponse")}
                     </p>
+                    <Image
+                        src="/images/bgImagesNotification/heart.svg"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className={`${isError ? "hidden" : "block"} w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8`}
+                    />
+                    <Image
+                        src="/images/bgImagesNotification/brokenHeart.svg"
+                        alt="background"
+                        width="0"
+                        height="0"
+                        sizes="100%"
+                        className={`${isError ? "block" : "hidden"} w-[177px] h-[129px] tab:w-[192px] tab:h-[127px] pc:w-[238px] pc:h-[157px] mt-[52px] tab:mt-[46px] pc:mt-[53px]`}
+                    />
                 </ModalBody>
             </ModalContent>
         </Modal>
