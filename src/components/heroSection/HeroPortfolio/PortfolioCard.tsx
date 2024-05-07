@@ -12,7 +12,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
         <div
             className="relative w-portfolioHeroCard tab:w-[100%] min-h-[236px] aspect-[288/236] max-w-[540px] 
                         tab:aspect-[360/300] pc:aspect-[540/350]  
-                        pc:w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428]  deskxl:max-w-[668px]  bg-CTAGradient"
+                        pc:w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428] deskxl:max-w-[668px] bg-CTAGradientLight dark:bg-CTAGradient"
         >
             {img ? (
                 <Image

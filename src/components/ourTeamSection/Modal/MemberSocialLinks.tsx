@@ -15,7 +15,7 @@ export const MemberSocialLinks = ({
     const iconGithub = <IconGithub className="w-5 h-5" />;
     const iconBehance = <IconBehance className="w-6 h-6" />;
     const classLiSocialLink =
-        "flex w-full h-[34px] tab:h-10 justify-center items-center border border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
+        "flex w-full h-[34px] tab:h-10 justify-center items-center border border-purple-strokeLight dark:border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
 
     return (
         <ul className="flex justify-between ">
@@ -25,7 +25,7 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.telegram}
                             image={iconTelegram}
-                            classname="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
                 </li>
@@ -38,7 +38,7 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.github}
                             image={iconGithub}
-                            classname="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
                 </li>
@@ -51,7 +51,7 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.behance}
                             image={iconBehance}
-                            classname="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
                 </li>
@@ -62,7 +62,7 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.linkedin}
                             image={iconLinkedin}
-                            classname="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
                 </li>
