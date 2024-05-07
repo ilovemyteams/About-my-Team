@@ -44,8 +44,6 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                                 className="w-[206px] h-[170px]  object-cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL="/images/bgModalMember/plugMemberModalTab.webp"
                             />
                         ) : (
                             <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
