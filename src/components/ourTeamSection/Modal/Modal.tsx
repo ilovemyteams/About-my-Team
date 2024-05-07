@@ -18,7 +18,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
         <div>
             <Link
                 href={`/${locale}#team`}
-                className="w-full h-full bg-[rgba(3,3,3,0.8)] fixed top-0 left-0 z-[20] no-doc-scroll"
+                className="w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll"
                 scroll={false}
             />
             <div
