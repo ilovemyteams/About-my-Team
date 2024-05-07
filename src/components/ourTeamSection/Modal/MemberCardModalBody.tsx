@@ -2,12 +2,12 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
 import { SharePopover } from "../../shared/SharePopover";
-import { NoImageHeart } from "../../shared/NoImageHeart";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { MemberSocialLinks } from "./MemberSocialLinks";
 import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberTools } from "./MemberTools";
 import { MemberLiSquare } from "./MemberLiSquare";
+import { IconProfile } from "../../shared/Icons/IconProfile";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
@@ -45,11 +45,11 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 objectFit="cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL="/images/bgModalMember/plugMemberModalMob.webp"
                             />
                         ) : (
-                            <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
+                            <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                                <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                            </div>
                         )}
                     </div>
                     <div className="">
