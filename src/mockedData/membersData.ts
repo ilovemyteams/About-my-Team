@@ -421,8 +421,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "OlgaMykhailova",
             projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
+
             position: "FrontEnd Developer",
             categoryName: "developer",
 

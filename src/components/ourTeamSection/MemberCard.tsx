@@ -2,11 +2,11 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { NoImageHeart } from "../shared/NoImageHeart";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
+import { IconProfile } from "../shared/Icons/IconProfile";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
@@ -35,8 +35,6 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                                 className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL="/images/bgModalMember/plugMemberCardMob.webp"
                             />
                             <Image
                                 src={imageURL}
@@ -46,12 +44,12 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             tab:aspect-[234/186] pc:aspect-[246/196]"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL="/images/bgModalMember/plugMemberModalTab.webp"
                             />
                         </>
                     ) : (
-                        <NoImageHeart className="w-[43%] tab:w-[50%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
+                        <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                            <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                        </div>
                     )}
                 </Link>
             </div>
