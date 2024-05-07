@@ -54,7 +54,7 @@ export const SharePopover = ({
           ? window.location.origin + pathname
           : "";
     const shareButtonStyles =
-        "relative flex justify-center items-center w-12 h-12 icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active";
+        "relative flex justify-center items-center w-12 h-12 icon-hover-rounded-purple";
     const isShowText = hiddenTextForMemberModal
         ? "hidden"
         : trigerShowShareText
@@ -81,7 +81,7 @@ export const SharePopover = ({
                 <Button
                     type="button"
                     onClick={onClose}
-                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent text-greyLight dark:text-grey icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within icon-hover-rounded-purple:active"
+                    className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent text-greyLight dark:text-grey icon-hover-rounded-purple"
                 >
                     <IconCloseX />
                 </Button>

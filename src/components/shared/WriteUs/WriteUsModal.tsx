@@ -60,9 +60,8 @@ export const WriteUsModal = ({
                         onClick={onClose}
                         disabled={isError}
                         aria-label="close button"
-                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight dark:disabled:text-purple-stroke bg-transparent icon-hover-rounded-purple
-                         icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-                         icon-hover-rounded-purple:active"
+                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
                     >
                         <IconCloseX />
                     </button>

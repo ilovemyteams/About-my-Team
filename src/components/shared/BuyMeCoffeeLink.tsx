@@ -19,8 +19,7 @@ export const BuyMeCoffeeLink = ({
             target="_blank"
             rel="noopener noreferrer"
             className={`pointer relative group w-[56px] h-[56px] flex justify-center items-center     
-                        icon-hover-rounded-purple icon-hover-rounded-purple:hover icon-hover-rounded-purple:focus-visible icon-hover-rounded-purple:focus-within
-                        icon-hover-rounded-purple:active ${className}`}
+                        icon-hover-rounded-purple ${className}`}
         >
             <IconBuyMeCoffee className="w-12 h-12" />
             <p
