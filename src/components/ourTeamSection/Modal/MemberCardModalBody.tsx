@@ -28,9 +28,9 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
 
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
-            <div className="p-[8px] pt-0 border border-purple-stroke border-b-0 ">
+            <div className="p-[8px] pt-0 border border-purple-strokeLight dark:border-purple-stroke border-b-0 ">
                 {pricePerHour && (
-                    <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
+                    <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
                         {`from ${pricePerHour} $/h`}
                     </div>
                 )}
@@ -53,10 +53,10 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                         )}
                     </div>
                     <div className="">
-                        <p className="font-caviar font-bold text-sm text-white mb-1">
+                        <p className="font-caviar font-bold text-sm text-purple-200 dark:text-white mb-1">
                             {data[locale as LocaleType]?.name}
                         </p>
-                        <p className="text-xs text-purple-50">
+                        <p className="text-xs text-purple-130 dark:text-purple-50">
                             {position.toUpperCase()}
                         </p>
                     </div>
@@ -64,7 +64,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 <ul>
                     <li className="mb-4 ">
                         <MemberLiSquare text={getTranslation("about")} />
-                        <p className="h-auto text-sm ml-4">
+                        <p className="h-auto text-sm ml-4 ">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>

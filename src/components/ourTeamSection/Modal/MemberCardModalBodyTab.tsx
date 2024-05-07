@@ -27,13 +27,13 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
 
     return (
-        <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-stroke">
+        <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
             {pricePerHour && (
-                <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
+                <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
                     {`from ${pricePerHour} $/h`}
                 </div>
             )}
-            <div className="flex flex-col justify-between border-r border-purple-stroke">
+            <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
                 <div>
                     <div className="w-[206px] h-[170px] relative mx-4 mt-11">
                         {imageURL ? (
@@ -55,7 +55,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                         <p className="font-caviar font-bold text-base text-white mb-1 min-h-[40px]">
                             {data[locale as LocaleType]?.name}
                         </p>
-                        <p className="text-xs text-purple-50">
+                        <p className="text-xs text-purple-130 dark:text-purple-50">
                             {position.toUpperCase()}
                         </p>
                     </div>
