@@ -70,9 +70,14 @@ export const MenuTeamSection = ({
                   relative outline-none border-[1px] border-purple-stroke"
             >
                 <p>{selectedOption?.optionName}</p>
-                <IconUp
-                    className={`w-[40px] h-[40px] transition-rotate duration-300 ease-out  ${isOpen ? "rotate-0" : "rotate-180 "}`}
-                />
+                <div
+                    className="relative flex justify-center items-center after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-purple-stroke03
+          after:active:h-full after:active:w-full"
+                >
+                    <IconUp
+                        className={`w-[40px] h-[40px] transition-rotate duration-300 ease-out  ${isOpen ? "rotate-0" : "rotate-180 "}`}
+                    />
+                </div>
             </div>
             <div
                 className={`${isOpen ? "max-h-[1280px]" : "max-h-0"} tab:max-h-full tab:h-full bg-memberMenuGradient  dark:bg-purple-400 bg-white-100 absolute top-12 z-10 min-w-[288px] max-w-[540px] w-full 
