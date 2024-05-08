@@ -71,7 +71,7 @@ export const MenuTeamSection = ({
             >
                 <p>{selectedOption?.optionName}</p>
                 <div
-                    className="relative flex justify-center items-center after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-purple-stroke03
+                    className="relative flex justify-center items-center after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-purple-stroke03 after:blur-[2px]
           after:active:h-full after:active:w-full"
                 >
                     <IconUp
