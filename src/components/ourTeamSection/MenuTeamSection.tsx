@@ -71,8 +71,8 @@ export const MenuTeamSection = ({
             >
                 <p>{selectedOption?.optionName}</p>
                 <div
-                    className="relative flex justify-center items-center after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-purple-stroke03 after:blur-[2px]
-          after:active:h-full after:active:w-full"
+                    className="relative flex justify-center items-center icon-hover-rounded-purple
+                    icon-hover-rounded-purple:active"
                 >
                     <IconUp
                         className={`w-[40px] h-[40px] transition-rotate duration-300 ease-out  ${isOpen ? "rotate-0" : "rotate-180 "}`}
