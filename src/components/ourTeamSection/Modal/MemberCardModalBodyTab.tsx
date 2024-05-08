@@ -2,12 +2,12 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
 import { SharePopover } from "../../shared/SharePopover";
-import { NoImageHeart } from "../../shared/NoImageHeart";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { MemberSocialLinks } from "./MemberSocialLinks";
 import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberTools } from "./MemberTools";
 import { MemberLiSquare } from "./MemberLiSquare";
+import { IconProfile } from "../../shared/Icons/IconProfile";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
@@ -27,13 +27,13 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
 
     return (
-        <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-stroke">
+        <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
             {pricePerHour && (
-                <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-50 border border-r-0 border-t-0 border-purple-stroke">
+                <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
                     {`from ${pricePerHour} $/h`}
                 </div>
             )}
-            <div className="flex flex-col justify-between border-r border-purple-stroke">
+            <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
                 <div>
                     <div className="w-[206px] h-[170px] relative mx-4 mt-11">
                         {imageURL ? (
@@ -44,18 +44,18 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                                 className="w-[206px] h-[170px]  object-cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL="/images/bgModalMember/plugMemberModalTab.webp"
                             />
                         ) : (
-                            <NoImageHeart className="w-[43%] absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%]" />
+                            <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                                <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                            </div>
                         )}
                     </div>
                     <div className="flex flex-col justify-between content-between min-h-[60px] ml-5 mt-[25px]">
                         <p className="font-caviar font-bold text-base text-white mb-1 min-h-[40px]">
                             {data[locale as LocaleType]?.name}
                         </p>
-                        <p className="text-xs text-purple-50">
+                        <p className="text-xs text-purple-130 dark:text-purple-50">
                             {position.toUpperCase()}
                         </p>
                     </div>

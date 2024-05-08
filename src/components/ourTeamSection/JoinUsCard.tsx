@@ -54,7 +54,7 @@ export const JoinUsCard = ({
         <div
             className={`min-w-[128px] py-10 px-[8.5px] flex flex-col items-center gap-12 
             tab:aspect-[250/270] pc:aspect-[270/292]
-        tab:border-1 tab:border-purple-stroke tab:min-w-[250px]  tab:px-12 tab:border-l-0 tab:border-t-0 
+        tab:border-1 tab:border-purple-strokeLight dark:tab:border-purple-stroke tab:min-w-[250px]  tab:px-12 tab:border-l-0 tab:border-t-0 
         ${borderRightPC} ${borderBottomPC} ${borderRightTab} ${borderBottomTab} ${borderRightDeskXL} ${borderBottomDeskXL} `}
         >
             <p className="text-xlb font-caviar text-center">
