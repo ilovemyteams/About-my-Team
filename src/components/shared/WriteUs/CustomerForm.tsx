@@ -25,6 +25,9 @@ export interface ValuesWriteUsFormType {
     message: string;
 }
 
+const POLICY_URL =
+    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+
 const labelStyles =
     "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
 const labelTextAreaStyles =
@@ -288,7 +291,7 @@ export const CustomerForm = ({
                         <p className="max-w-[372px] text-xs tab:text-sm">
                             {getTranslation("informedAgreement")}
                             <a
-                                href="/"
+                                href={POLICY_URL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-purple-130 dark:text-purple-50"
