@@ -60,18 +60,18 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
         },
         uk: {
-            name: "На селі",
+            name: "Смачно! на селі",
             siteView: "інтернет магазин",
             description:
                 "Алісі набридло сидіти без діла на березі. Разів зо два вона зазирнула в книжку, що її читала сестра, але там не було ні рисунків, ні малюнків, а без них книжка не книжка, — гадала Аліса.",
         },
         en: {
-            name: "Na seli",
+            name: "Smachno! na seli",
             siteView: "internetShop",
             description: "descriptionId2",
         },
         pl: {
-            name: "Na seli",
+            name: "Smachno! na seli",
             siteView: "internetShop",
             description: "descriptionId2",
         },
