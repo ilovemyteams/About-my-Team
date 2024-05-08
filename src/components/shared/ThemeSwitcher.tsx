@@ -30,14 +30,14 @@ export function ThemeSwitcher({ id }: { id: string }) {
 
     if (!mounted) {
         return (
-            <div className="w-[66px] h-[28px] border dark:border-purple-stroke border-greyLight rounded-[32px]"></div>
+            <div className="w-[66px] h-[28px] border dark:border-grey border-greyLight rounded-[32px]"></div>
         );
     }
 
     return (
         <div
             id={id}
-            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] dark:border-purple-stroke border-greyLight`}
+            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] dark:border-grey border-greyLight`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">
                 <input
@@ -53,7 +53,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
                     <div
                         className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px]
                         ${resolvedTheme === "dark" ? "translate-x-[3px]" : "translate-x-[40px]"} 
-                        dark:bg-purple-stroke  bg-greyLight transition-transform duration-300 ease-out`}
+                        dark:bg-grey  bg-greyLight transition-transform duration-300 ease-out`}
                     ></div>
                 </div>
             </label>
