@@ -59,9 +59,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                     {data[locale as LocaleType]?.name}
                 </h4>
                 <div className="flex font-geist text-xs justify-between items-center relative">
-
                     <p className="text-purple-130 dark:text-purple-50 tab:mr-12 min-h-12 flex items-center tab:w-full">
-
                         {position.toUpperCase()}
                     </p>
                     <SocialLink
