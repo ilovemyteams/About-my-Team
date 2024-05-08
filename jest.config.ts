@@ -14,7 +14,7 @@ const config: Config = {
     setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
     testPathIgnorePatterns: [
         "/node_modules/",
-        "\\.spec\\.ts$", // Regex to match test files ending with .playwright.test.js
+        "\\.spec\\.ts$", // Regex to match test files ending with .spec.ts
     ],
 };
 
