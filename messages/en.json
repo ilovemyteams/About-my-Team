@@ -73,7 +73,7 @@
     },
 
     "Stages": {
-        "pageTitle": "Portfolio",
+        "pageTitle": "Stages",
         "mainTitle": "Work sequence",
         "firstStepTitle": "Getting ideas",
         "firstStepText": "After we receive your application, we will contact you within a day",
@@ -164,7 +164,7 @@
         "facebookPlaceholder": "facebook.com/susannasalata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields required to be filled in",
-        "informedAgreement": "By clicking the “Submit” button, you agree to the",
+        "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send"
     },
@@ -189,15 +189,15 @@
     },
 
     "MemberCardModal": {
-        "about": "Про себе",
-        "services": "Послуги",
-        "tools": "Інструменти",
-        "projectsExperience": "Проекти/Досвід"
+        "about": "About us",
+        "services": "Services",
+        "tools": "Tools",
+        "projectsExperience": "Projects/Experience"
     },
-  
-      "Cookies": {
-        "text": " Цей сайт використовує файли cookies для правильної роботи і покращення сервісу. Якщо ви погоджуєтесь з їхнім використанням, натисніть ОК. Більше інформації в ",
-        "policy": "Політика конфіденційності.",
+
+    "Cookies": {
+        "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click OK. More information in the  ",
+        "policy": "Privacy Policy.",
         "button": "ok"
-      }
+    }
 }
