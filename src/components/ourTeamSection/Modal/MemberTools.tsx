@@ -4,7 +4,7 @@ export const MemberTools = ({ tools }: { tools: string[] }) => {
             {tools.map((tool, idx) => (
                 <li
                     key={idx}
-                    className="mx-1 my-2 tab:my-1 border border-grey px-2 py-[4.5px] text-sm tab:text-base"
+                    className="mx-1 my-2 tab:my-1 border border-greyLight dark:border-grey px-2 py-[4.5px] text-sm tab:text-base"
                 >
                     {tool}
                 </li>

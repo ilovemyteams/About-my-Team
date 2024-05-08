@@ -56,18 +56,18 @@ body {
     }
 
     .icon-hover-rounded-purple:hover {
-        @apply enabled:pc:after:h-full pc:after:w-full;
+        @apply pc:after:h-full pc:after:w-full;
     }
 
     .icon-hover-rounded-purple:focus-visible {
-        @apply enabled:pc:after:h-full pc:after:w-full outline-none;
+        @apply pc:after:h-full pc:after:w-full outline-none;
     }
 
     .icon-hover-rounded-purple:focus-within {
-        @apply enabled:pc:outline-none;
+        @apply pc:outline-none;
     }
     .icon-hover-rounded-purple:active {
-        @apply enabled:after:h-full after:w-full;
+        @apply after:h-full after:w-full;
     }
     .slider-dot {
         @apply appearance-none bg-transparent inline-flex cursor-pointer border border-red p-0 m-0 w-2 h-2 rounded-full;
