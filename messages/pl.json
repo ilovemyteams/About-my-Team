@@ -190,14 +190,14 @@
         "linkIsCopied": "Link skopiowany"
     },
     "MemberCardModal": {
-        "about": "Про себе",
-        "services": "Послуги",
-        "tools": "Інструменти",
-        "projectsExperience": "Проекти/Досвід"
+        "about": "O nas",
+        "services": "Usługi",
+        "tools": "Narzędzia",
+        "projectsExperience": "Projekty/Doświadczenie"
     },
-      "Cookies": {
-        "text": " Цей сайт використовує файли cookies для правильної роботи і покращення сервісу. Якщо ви погоджуєтесь з їхнім використанням, натисніть ОК. Більше інформації в ",
-        "policy": "Політика конфіденційності.",
+    "Cookies": {
+        "text": "Ta strona używa plików cookie do prawidłowego funkcjonowania i ulepszania serwisu. Jeśli zgadzasz się na ich użycie, kliknij OK. Więcej informacji w ",
+        "policy": "Polityce Prywatności.",
         "button": "ok"
     }
 }
