@@ -158,7 +158,7 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Світлана Кондратенко",
-            about: "&ldquo; Хтось має з тим розібратись?&ldquo; - Я людина, яка з тим розбирається!",
+            about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
             services:
                 "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
             team: "Смачно! на селі",
@@ -522,7 +522,10 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: [
+                "www.ilovemyteam.online",
+                "kuharskyivulyk.com.ua",
+            ],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -573,7 +576,10 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: [
+                "www.ilovemyteam.online",
+                "kuharskyivulyk.com.ua",
+            ],
 
             pricePerHour: "10",
             socialLinks: {
@@ -1028,7 +1034,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "HannaHorbenko",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1fp6JW8_U85A9JRP3GWZ8wq9TgmP1mggd",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
