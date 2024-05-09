@@ -9,7 +9,7 @@ export const TitleCTAWrapper = ({
 }: TitleCTAWrapperProps) => {
     return (
         <h2
-            className={`font-caviar text-2xlb tab:text-3xl pc:text-5xl deskxl:text-6xl text-center tab:text-left ${className}`}
+            className={`font-caviar text-2xlb tab:text-3xl pc:text-5xl deskxl:text-6xl text-center tab:text-left text-purple-200 dark:text-grey ${className}`}
         >
             {children}
         </h2>
