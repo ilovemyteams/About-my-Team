@@ -944,7 +944,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "VolodymyrDehtiarev",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1nfCVkBnKMTCaP8p504qw3kUGv4i_nl4i",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
