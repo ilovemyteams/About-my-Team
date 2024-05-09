@@ -284,6 +284,53 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "EugeneSerdiuk",
+            projectId: ["2"],
+            imageURL: "",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["https://batatfarm.com/"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/eugene-serdyuk/",
+                github: "https://github.com/Gituservn",
+                telegram: "",
+            },
+            tools: [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "NodeJs",
+                "ReduxJS",
+                "MongoDB",
+                "PosgreSQL",
+                "HTML",
+                "CSS",
+            ],
+        },
+        uk: {
+            name: "Євген Сердюк",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Eugene Serdiuk",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Eugene Serdiuk",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
             id: "IrynaTrynkal",
             projectId: ["1"],
             imageURL:
@@ -703,54 +750,7 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
-    {
-        data: {
-            id: "OlhaKuchalska",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
-                telegram: "https://t.me/o_kuchalska",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Google Sheets/Docs.",
-                "UML",
-                "BPMN notations",
-                "Draw.io",
-                "Visio",
-                "Lucidchart",
-                "Figma",
-            ],
-        },
-        uk: {
-            name: "Ольга Кучальська",
-            about: "Цитата про себе ",
-            services:
-                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olha Kuchalska",
-            about: "Text in en",
-            services:
-                "Analysis of the customer's business needs. Data analysis. Market and competitor analysis. Developing, analyzing, organizing and formalizing requirements. Comunication management between developers and stakeholders. Writing technical documentation, user-story. Basic testing skills and SQL knowledge. Knowledge of SDLC, agile methodologies and basic management knowledge. Excellent communication skills.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olha Kuchalska",
-            about: "There will be text in Polish",
-            services:
-                "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
-            team: "I Love My Team",
-        },
-    },
+
     {
         data: {
             id: "SvitlanaKondratenko",
@@ -802,6 +802,54 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "OlhaKuchalska",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
+                telegram: "https://t.me/o_kuchalska",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs.",
+                "UML",
+                "BPMN notations",
+                "Draw.io",
+                "Visio",
+                "Lucidchart",
+                "Figma",
+            ],
+        },
+        uk: {
+            name: "Ольга Кучальська",
+            about: "Цитата про себе ",
+            services:
+                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olha Kuchalska",
+            about: "Text in en",
+            services:
+                "Analysis of the customer's business needs. Data analysis. Market and competitor analysis. Developing, analyzing, organizing and formalizing requirements. Comunication management between developers and stakeholders. Writing technical documentation, user-story. Basic testing skills and SQL knowledge. Knowledge of SDLC, agile methodologies and basic management knowledge. Excellent communication skills.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olha Kuchalska",
+            about: "There will be text in Polish",
+            services:
+                "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "MariiaPopova",
             projectId: ["2"],
             imageURL: "",
@@ -843,53 +891,6 @@ export const membersData: MemberDataItemType[] = [
         },
     },
 
-    {
-        data: {
-            id: "EugeneSerdiuk",
-            projectId: ["2"],
-            imageURL: "",
-            position: "Fullstack Developer",
-            categoryName: "developer",
-            projectsExperience: ["https://batatfarm.com/"],
-            pricePerHour: "7",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/eugene-serdyuk/",
-                github: "https://github.com/Gituservn",
-                telegram: "",
-            },
-            tools: [
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "NextJS",
-                "NodeJs",
-                "ReduxJS",
-                "MongoDB",
-                "PosgreSQL",
-                "HTML",
-                "CSS",
-            ],
-        },
-        uk: {
-            name: "Євген Сердюк",
-            about: "Цитата про себе",
-            services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Eugene Serdiuk",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Eugene Serdiuk",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
-            team: "Smachno! na seli",
-        },
-    },
     {
         data: {
             id: "DenisSlivinskyi",
@@ -997,7 +998,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "OlenaChornobryvets",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1dgTU9cl1a02ZoC35oCDbjnANSX_HX0kY",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["https://batatfarm.com/"],
