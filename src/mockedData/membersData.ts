@@ -10,6 +10,7 @@ export type SocialLinks = {
     behance?: string;
     github?: string;
     telegram?: string;
+    googleDrive?: string;
 };
 
 export type DataType = {
@@ -682,15 +683,14 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: [
-                "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
-                "www.ilovemyteam.online",
-            ],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/katerynapogrebna",
                 github: "https://github.com/KaterynaPogrebna/QA_Portfolio/tree/416fd293cdd4fac83f5101e6e5768c52188af7a6/API",
                 telegram: "https://t.me/ek_kat",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
             },
             tools: [
                 "Postman",
