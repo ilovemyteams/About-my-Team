@@ -502,7 +502,7 @@ export const membersData: MemberDataItemType[] = [
                 "Swagger",
                 "Chrome DevTools",
                 "SQL",
-                "Githab",
+                "GitHub",
                 "VSCode",
                 "Jira",
                 "Trello",
