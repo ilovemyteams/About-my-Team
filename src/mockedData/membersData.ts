@@ -52,6 +52,8 @@ export const membersData: MemberDataItemType[] = [
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
                 telegram: "https://t.me/Susanna_Salata",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1B1WBgmIX0vWCvLZKrqqsh5iwKYIRF-Gv?usp=sharing",
             },
             tools: [
                 "SDLC",
@@ -804,6 +806,8 @@ export const membersData: MemberDataItemType[] = [
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
                 telegram: "https://t.me/Susanna_Salata",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1B1WBgmIX0vWCvLZKrqqsh5iwKYIRF-Gv?usp=sharing",
             },
             tools: [
                 "BPMN 2.0",
