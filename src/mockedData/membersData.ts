@@ -87,6 +87,58 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "VladShumkov",
+            projectId: ["1", "2"],
+            imageURL: "",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: [
+                "https://www.ilovemyteam.online/uk",
+                "https://batatfarm.com/",
+            ],
+            pricePerHour: "20",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/vladyslav-shumkov/",
+                github: "https://github.com/IiIymik",
+                telegram: "https://t.me/IiIymik",
+            },
+            tools: [
+                "Python",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "MongoDB",
+                "PosgreSQL",
+                "CI/CD",
+                "Docker",
+                "DevOps",
+                "HTML",
+                "CSS",
+            ],
+        },
+        uk: {
+            name: "Влад Шумков",
+            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
+            services:
+                "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Vlad Shumkov",
+            about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Vlad Shumkov",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
             id: "IhorDronishynets",
             projectId: ["1", "2"],
             imageURL:
@@ -789,58 +841,7 @@ export const membersData: MemberDataItemType[] = [
             team: "Smachno! na seli",
         },
     },
-    {
-        data: {
-            id: "VladShumkov",
-            projectId: ["1", "2"],
-            imageURL: "",
-            position: "Fullstack Developer",
-            categoryName: "developer",
-            projectsExperience: [
-                "https://www.ilovemyteam.online/uk",
-                "https://batatfarm.com/",
-            ],
-            pricePerHour: "20",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/vladyslav-shumkov/",
-                github: "https://github.com/IiIymik",
-                telegram: "https://t.me/IiIymik",
-            },
-            tools: [
-                "Python",
-                "JavaScript",
-                "TypeScript",
-                "React",
-                "NextJS",
-                "MongoDB",
-                "PosgreSQL",
-                "CI/CD",
-                "Docker",
-                "DevOps",
-                "HTML",
-                "CSS",
-            ],
-        },
-        uk: {
-            name: "Влад Шумков",
-            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
-            services:
-                "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Vlad Shumkov",
-            about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
-            services: "Тут має бути переклад на англ",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Vlad Shumkov",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
-            team: "Smachno! na seli",
-        },
-    },
+
     {
         data: {
             id: "EugeneSerdiuk",
