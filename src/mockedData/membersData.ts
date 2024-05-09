@@ -207,7 +207,7 @@ export const membersData: MemberDataItemType[] = [
                 behance: "https://www.behance.net/iryna_stoliarova",
                 telegram: "https://t.me/iryna_stoliarova",
             },
-            tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+            tools: ["Figma", "Jira", "Adobe Photoshop", "Adobe Illustrator"],
         },
         uk: {
             name: "Ірина Столярова",
@@ -549,7 +549,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/katerynapogrebna",
                 github: "https://github.com/KaterynaPogrebna/QA_Portfolio/tree/416fd293cdd4fac83f5101e6e5768c52188af7a6/API",
-                telegram: "",
+                telegram: "https://t.me/ek_kat",
             },
             tools: [
                 "Postman",
@@ -723,7 +723,7 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Світлана Кондратенко",
-            about: "Цитата про себе",
+            about: "&ldquo; Хтось має з тим розібратись?&ldquo; - Я людина, яка з тим розбирається!",
             services:
                 "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
             team: "Смачно! на селі",
@@ -765,7 +765,7 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Марія Попова",
-            about: "Цитата про себе",
+            about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
             services:
                 "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка",
             team: "Смачно! на селі",
@@ -817,14 +817,14 @@ export const membersData: MemberDataItemType[] = [
         },
         uk: {
             name: "Влад Шумков",
-            about: "Цитата про себе",
+            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
             services:
                 "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
             team: "Смачно! на селі",
         },
         en: {
             name: "Vlad Shumkov",
-            about: "I am a seasoned software developer with a strong foundation in frontend technologies like React, Redux, and Next.js, dedicated to building intuitive user interfaces. My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
+            about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
             services: "Тут має бути переклад на англ",
             team: "Smachno! na seli",
         },
@@ -950,7 +950,7 @@ export const membersData: MemberDataItemType[] = [
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
-                github: "",
+                github: "https://github.com/VladimirDegt",
                 telegram: "https://t.me/VladimirDegtr",
             },
             tools: [
@@ -1059,7 +1059,7 @@ export const membersData: MemberDataItemType[] = [
             ],
         },
         uk: {
-            name: "Анна Горбенко",
+            name: "Ганна Горбенко",
             about: "Цитата про себе",
             services: "Тут має бути переклад на укр",
             team: "Смачно! на селі",
