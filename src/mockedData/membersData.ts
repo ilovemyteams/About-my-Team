@@ -41,10 +41,10 @@ export const membersData: MemberDataItemType[] = [
             position: "Product manager",
             categoryName: "manager",
             projectsExperience: [
-                "https://www.ilovemyteam.online/uk",
-                "https://batatfarm.com/",
-                "https://theatermag.com.ua/",
-                "https://baza-trainee.tech/ua",
+                "www.ilovemyteam.online",
+                "batatfarm.com",
+                "theatermag.com.ua",
+                "baza-trainee.tech",
             ],
             pricePerHour: "25",
             socialLinks: {
@@ -92,7 +92,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "Graphic Designer/ UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["https://batatfarm.com/"],
+            projectsExperience: ["batatfarm.com"],
             pricePerHour: "14",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/mariia-popova-uiux",
@@ -134,7 +134,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["https://batatfarm.com/"],
+            projectsExperience: ["batatfarm.com"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin:
@@ -184,10 +184,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "https://www.ilovemyteam.online/uk",
-                "https://batatfarm.com/",
-            ],
+            projectsExperience: ["www.ilovemyteam.online", "batatfarm.com"],
             pricePerHour: "20",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/vladyslav-shumkov/",
@@ -238,9 +235,9 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack developer",
             categoryName: "developer",
             projectsExperience: [
-                "https://www.ilovemyteam.online/uk",
-                "https://batatfarm.com/",
-                "https://baza-trainee.tech/ua",
+                "www.ilovemyteam.online",
+                "batatfarm.com",
+                "baza-trainee.tech",
                 //"https://murrfecto.site/",
             ],
             pricePerHour: "18",
@@ -296,7 +293,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -335,7 +332,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -380,7 +377,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["https://batatfarm.com/"],
+            projectsExperience: ["batatfarm.com"],
             pricePerHour: "7",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/eugene-serdyuk/",
@@ -428,7 +425,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
@@ -525,10 +522,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "https://github.com/OlenaPosternak",
-                "https://www.ilovemyteam.online/uk",
-            ],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -579,10 +573,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: [
-                "https://github.com/OlgaMykhailova",
-                "https://www.ilovemyteam.online/uk",
-            ],
+            projectsExperience: ["www.ilovemyteam.online"],
 
             pricePerHour: "10",
             socialLinks: {
@@ -633,10 +624,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: [
-                "https://www.ilovemyteam.online/uk",
-                "https://baza-trainee.tech/ua",
-            ],
+            projectsExperience: ["www.ilovemyteam.online", "baza-trainee.tech"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
@@ -690,7 +678,7 @@ export const membersData: MemberDataItemType[] = [
             categoryName: "qa",
             projectsExperience: [
                 "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
-                "https://www.ilovemyteam.online/uk",
+                "www.ilovemyteam.online",
             ],
             pricePerHour: "",
             socialLinks: {
@@ -750,7 +738,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -799,7 +787,12 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["https://www.website.ua"],
+            projectsExperience: [
+                "www.ilovemyteam.online",
+                "batatfarm.com",
+                "theatermag.com.ua",
+                "baza-trainee.tech",
+            ],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
@@ -849,7 +842,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: ["www.ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
@@ -897,10 +890,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=19t3e6QnD3Xm5Pwtq5NRdElfN5OAr9GB3",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "https://batatfarm.com/",
-                "https://zolochivska.com.ua/",
-            ],
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
             pricePerHour: "7",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/denis-slivinskyi/",
@@ -951,10 +941,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "https://batatfarm.com/",
-                "https://zolochivska.com.ua/",
-            ],
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
@@ -1001,7 +988,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1dgTU9cl1a02ZoC35oCDbjnANSX_HX0kY",
             position: "QA Engineer",
             categoryName: "qa",
-            projectsExperience: ["https://batatfarm.com/"],
+            projectsExperience: ["batatfarm.com"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/olenachornobryvets",
@@ -1044,7 +1031,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "QA Engineer",
             categoryName: "qa",
-            projectsExperience: ["https://batatfarm.com/"],
+            projectsExperience: ["batatfarm.com"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
@@ -1094,10 +1081,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL: "",
             position: "QA Engineer",
             categoryName: "qa",
-            projectsExperience: [
-                "https://batatfarm.com/",
-                "https://baza-trainee.tech/ua",
-            ],
+            projectsExperience: ["batatfarm.com", "baza-trainee.tech"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/anna-klyba/",
