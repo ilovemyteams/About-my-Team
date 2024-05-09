@@ -3,6 +3,12 @@ export const MemberProjectExperience = ({
 }: {
     projectsExperience: string[];
 }) => {
+    const addProtocol = (url: string) => {
+        if (!/^https?:\/\//i.test(url)) {
+            return `https://${url}`;
+        }
+        return url;
+    };
     return (
         <ul>
             {projectsExperience.slice(0, 3).map((project, index) => (
@@ -12,7 +18,7 @@ export const MemberProjectExperience = ({
                 >
                     <a
                         target="_blank"
-                        href={project}
+                        href={addProtocol(project)}
                         className="text-sm ml-4 tab:text-base tab:ml-2"
                     >
                         {project}
