@@ -34,54 +34,6 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "SusannaSalataBA",
-            projectId: [],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: ["https://www.website.ua"],
-            pricePerHour: "25",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/susanna-salata/",
-                github: "",
-                telegram: "",
-            },
-            tools: [
-                "UML",
-                "BPMN 2.0",
-                "SDLC",
-                "SQL",
-                "Python",
-                "Jira",
-                "Confluence",
-                "Google Sheets/Docs",
-            ],
-        },
-        uk: {
-            name: "Сусанна Салата",
-            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
-            services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Susanna Salata",
-            about: "Work should bring inspiration and satisfaction, not just money.",
-            services:
-                "Consulting, business process analysis, strategic planning, budgeting, project and team management, product development. Mentoring for beginners in IT",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Susanna Salata",
-            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services:
-                "Konsulting, analiza procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów. Mentoring dla początkujących w IT",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
             id: "SusannaSalataPM",
             projectId: ["1", "2", "3"],
             imageURL:
@@ -174,14 +126,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ігор Дронішинець",
             about: "Про себе цитата",
             services:
-                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику",
+                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама",
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
             about: "There will be text in English",
             services:
-                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer",
+                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
             team: "I Love My Team",
         },
         pl: {
@@ -490,12 +442,16 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["https://www.ilovemyteam.online/uk"],
+            projectsExperience: [
+                "https://www.ilovemyteam.online/uk",
+                "https://baza-trainee.tech/ua",
+            ],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
                 telegram: "https://t.me/R_Katrine",
+                github: "",
             },
             tools: [
                 "Postman",
@@ -641,6 +597,56 @@ export const membersData: MemberDataItemType[] = [
             about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i realizację celów.",
             services:
                 "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "SusannaSalataBA",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["https://www.website.ua"],
+            pricePerHour: "25",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/susanna-salata/",
+                github: "https://github.com/Susanna-Salata",
+                telegram: "https://t.me/Susanna_Salata",
+            },
+            tools: [
+                "BPMN 2.0",
+                "SDLC",
+                "User story",
+                "Jira",
+                "Trello",
+                "Confluence",
+                "Slack",
+                "Figma",
+                "Miro",
+                "Google Sheets/Docs",
+                "SQL",
+                "Python",
+            ],
+        },
+        uk: {
+            name: "Сусанна Салата",
+            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services:
+                "Аналіз бізнес-потреб замовника, ринку і конкурентів, маркетингових та виробничих дани. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами, розробниками і стейкхолдерами. Аналіз та управління ризиками. Менторинг для початківців в ІТ",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Susanna Salata",
+            about: "Work should bring inspiration and satisfaction, not just money.",
+            services: "Переклад",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Susanna Salata",
+            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: "Переклад",
             team: "I Love My Team",
         },
     },
