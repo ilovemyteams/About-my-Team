@@ -87,6 +87,97 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "MariiaPopova",
+            projectId: ["2"],
+            imageURL: "",
+            position: "Graphic Designer/ UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["https://batatfarm.com/"],
+            pricePerHour: "14",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/mariia-popova-uiux",
+                behance: "https://www.behance.net/64fee160",
+                telegram: "https://t.me/MaraPopova",
+            },
+            tools: [
+                "Graphic Design",
+                "Figma",
+                "Jira",
+                "Procreate",
+                "Adobe Photoshop",
+            ],
+        },
+        uk: {
+            name: "Марія Попова",
+            about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
+            services:
+                "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Mariia Popova",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Mariia Popova",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "SvitlanaKondratenko",
+            projectId: ["2"],
+            imageURL: "",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["https://batatfarm.com/"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/svitlana-kondratenko-35b51228",
+                github: "",
+                telegram: "http://t.me/Svitlana_Kondr",
+            },
+            tools: [
+                "BPMN 2.0",
+                "SDLC",
+                "User story",
+                "Jira",
+                "Confluence",
+                "Trello",
+                "Miro",
+                "Figma",
+                "Google Sheets/Docs",
+                "Slack",
+                "Teams",
+            ],
+        },
+        uk: {
+            name: "Світлана Кондратенко",
+            about: "&ldquo; Хтось має з тим розібратись?&ldquo; - Я людина, яка з тим розбирається!",
+            services:
+                "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Svitlana Kondratenko",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Svitlana Kondratenko",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
             id: "VladShumkov",
             projectId: ["1", "2"],
             imageURL:
@@ -750,56 +841,6 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
-
-    {
-        data: {
-            id: "SvitlanaKondratenko",
-            projectId: ["2"],
-            imageURL: "",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: ["https://batatfarm.com/"],
-            pricePerHour: "10",
-            socialLinks: {
-                linkedin:
-                    "https://www.linkedin.com/in/svitlana-kondratenko-35b51228",
-                github: "",
-                telegram: "http://t.me/Svitlana_Kondr",
-            },
-            tools: [
-                "BPMN 2.0",
-                "SDLC",
-                "User story",
-                "Jira",
-                "Confluence",
-                "Trello",
-                "Miro",
-                "Figma",
-                "Google Sheets/Docs",
-                "Slack",
-                "Teams",
-            ],
-        },
-        uk: {
-            name: "Світлана Кондратенко",
-            about: "&ldquo; Хтось має з тим розібратись?&ldquo; - Я людина, яка з тим розбирається!",
-            services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Svitlana Kondratenko",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Svitlana Kondratenko",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
-            team: "Smachno! na seli",
-        },
-    },
     {
         data: {
             id: "OlhaKuchalska",
@@ -890,7 +931,6 @@ export const membersData: MemberDataItemType[] = [
             team: "Smachno! na seli",
         },
     },
-
     {
         data: {
             id: "DenisSlivinskyi",
