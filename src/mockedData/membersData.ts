@@ -89,7 +89,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "VladShumkov",
             projectId: ["1", "2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: [
@@ -240,7 +241,7 @@ export const membersData: MemberDataItemType[] = [
             id: "AnastasiiaNazarenko",
             projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1dZgahuKLMKs9t3Fn0TChx7YyKFiyOAYd",
+                "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["https://www.ilovemyteam.online/uk"],
