@@ -53,7 +53,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                         )}
                     </div>
                     <div className="">
-                        <p className="font-caviar font-bold text-sm text-purple-200 dark:text-white mb-1">
+                        <p className="font-caviar font-bold text-sm text-purple-200 dark:text-white-200 mb-1">
                             {data[locale as LocaleType]?.name}
                         </p>
                         <p className="text-xs text-purple-130 dark:text-purple-50">

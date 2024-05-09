@@ -52,7 +52,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                         )}
                     </div>
                     <div className="flex flex-col justify-between content-between min-h-[60px] ml-5 mt-[25px]">
-                        <p className="font-caviar font-bold text-base text-white mb-1 min-h-[40px]">
+                        <p className="font-caviar font-bold text-base  text-purple-200 dark:text-white-200 mb-1 min-h-[40px]">
                             {data[locale as LocaleType]?.name}
                         </p>
                         <p className="text-xs text-purple-130 dark:text-purple-50">

@@ -16,6 +16,10 @@ export const MemberSocialLinks = ({
     const iconBehance = <IconBehance className="w-6 h-6" />;
     const classLiSocialLink =
         "flex w-full h-[34px] tab:h-10 justify-center items-center border border-purple-strokeLight dark:border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
+    const borderLeft =
+        !socialLinks.telegram && !socialLinks.github && !socialLinks.behance
+            ? "border-l"
+            : "border-l-0";
 
     return (
         <ul className="flex justify-between ">
@@ -57,7 +61,9 @@ export const MemberSocialLinks = ({
                 </li>
             )}
             {socialLinks.linkedin && (
-                <li className={`${classLiSocialLink} border-l-0 pc:border-r-0`}>
+                <li
+                    className={`${classLiSocialLink} ${borderLeft} pc:border-r-0`}
+                >
                     <div className="w-8 h-8">
                         <SocialLink
                             url={socialLinks.linkedin}
