@@ -891,51 +891,10 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "MariiaPopova",
-            projectId: ["2"],
-            imageURL: "",
-            position: "Graphic Designer/ UI/UX designer",
-            categoryName: "designer",
-            projectsExperience: ["https://batatfarm.com/"],
-            pricePerHour: "14",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/mariia-popova-uiux",
-                behance: "https://www.behance.net/64fee160",
-                telegram: "https://t.me/MaraPopova",
-            },
-            tools: [
-                "Graphic Design",
-                "Figma",
-                "Jira",
-                "Procreate",
-                "Adobe Photoshop",
-            ],
-        },
-        uk: {
-            name: "Марія Попова",
-            about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
-            services:
-                "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Mariia Popova",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Mariia Popova",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
-            team: "Smachno! na seli",
-        },
-    },
-    {
-        data: {
             id: "DenisSlivinskyi",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=19t3e6QnD3Xm5Pwtq5NRdElfN5OAr9GB3",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: [
