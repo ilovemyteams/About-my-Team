@@ -41,7 +41,7 @@ export const MemberSocialLinks = ({
             )}
             {socialLinks.github && (
                 <li
-                    className={`${classLiSocialLink} hidden pc:flex pc:border-r`}
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
                 >
                     <div className="flex w-8 h-8 justify-center items-center">
                         <SocialLink
@@ -54,7 +54,7 @@ export const MemberSocialLinks = ({
             )}
             {socialLinks.googleDrive && (
                 <li
-                    className={`${classLiSocialLink} hidden pc:flex pc:border-r`}
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
                 >
                     <div className="flex w-8 h-8 justify-center items-center">
                         <SocialLink
@@ -67,7 +67,7 @@ export const MemberSocialLinks = ({
             )}
             {socialLinks.behance && (
                 <li
-                    className={`${classLiSocialLink} hidden pc:flex pc:border-r`}
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
                 >
                     <div className="w-8 h-8">
                         <SocialLink
