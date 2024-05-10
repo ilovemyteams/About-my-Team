@@ -42,7 +42,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Product manager",
             categoryName: "manager",
             projectsExperience: [
-                "www.ilovemyteam.online",
+                "ilovemyteam.online",
                 "batatfarm.com",
                 "theatermag.com.ua",
                 "baza-trainee.tech",
@@ -187,7 +187,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["www.ilovemyteam.online", "batatfarm.com"],
+            projectsExperience: ["ilovemyteam.online", "batatfarm.com"],
             pricePerHour: "20",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/vladyslav-shumkov/",
@@ -238,7 +238,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack developer",
             categoryName: "developer",
             projectsExperience: [
-                "www.ilovemyteam.online",
+                "ilovemyteam.online",
                 "batatfarm.com",
                 "baza-trainee.tech",
                 //"https://murrfecto.site/",
@@ -296,7 +296,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -335,7 +335,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -428,7 +428,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
@@ -525,10 +525,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "www.ilovemyteam.online",
-                "kuharskyivulyk.com.ua",
-            ],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -579,10 +576,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: [
-                "www.ilovemyteam.online",
-                "kuharskyivulyk.com.ua",
-            ],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
 
             pricePerHour: "10",
             socialLinks: {
@@ -633,7 +627,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["www.ilovemyteam.online", "baza-trainee.tech"],
+            projectsExperience: ["ilovemyteam.online", "baza-trainee.tech"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
@@ -685,7 +679,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/katerynapogrebna",
@@ -746,7 +740,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -796,7 +790,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: [
-                "www.ilovemyteam.online",
+                "ilovemyteam.online",
                 "batatfarm.com",
                 "theatermag.com.ua",
                 "baza-trainee.tech",
@@ -852,7 +846,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["www.ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
