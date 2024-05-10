@@ -4,6 +4,7 @@ import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconTelegram } from "../../shared/Icons/IconTelegram";
 import { SocialLink } from "../../shared/SocialLink";
+import { IconGoogleDrive } from "../../shared/Icons/IconGoogleDrive";
 
 export const MemberSocialLinks = ({
     socialLinks,
@@ -14,8 +15,16 @@ export const MemberSocialLinks = ({
     const iconLinkedin = <IconLinkedin className="w-6 h-6 " />;
     const iconGithub = <IconGithub className="w-5 h-5" />;
     const iconBehance = <IconBehance className="w-6 h-6" />;
+    const iconGoogleDrive = <IconGoogleDrive className="" />;
     const classLiSocialLink =
         "flex w-full h-[34px] tab:h-10 justify-center items-center border border-purple-strokeLight dark:border-purple-stroke [&:nth-child(2)]:border-l-0 tab:border-0 tab:border-t ";
+    const borderLeft =
+        !socialLinks.telegram &&
+        !socialLinks.github &&
+        !socialLinks.behance &&
+        !socialLinks.googleDrive
+            ? "border-l"
+            : "border-l-0";
 
     return (
         <ul className="flex justify-between ">
@@ -32,7 +41,7 @@ export const MemberSocialLinks = ({
             )}
             {socialLinks.github && (
                 <li
-                    className={`${classLiSocialLink} hidden pc:flex pc:border-r`}
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
                 >
                     <div className="flex w-8 h-8 justify-center items-center">
                         <SocialLink
@@ -43,9 +52,22 @@ export const MemberSocialLinks = ({
                     </div>
                 </li>
             )}
+            {socialLinks.googleDrive && (
+                <li
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
+                >
+                    <div className="flex w-8 h-8 justify-center items-center">
+                        <SocialLink
+                            url={socialLinks.googleDrive}
+                            image={iconGoogleDrive}
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                        />
+                    </div>
+                </li>
+            )}
             {socialLinks.behance && (
                 <li
-                    className={`${classLiSocialLink} hidden pc:flex pc:border-r`}
+                    className={`${classLiSocialLink} hidden tab:flex tab:border-r`}
                 >
                     <div className="w-8 h-8">
                         <SocialLink
@@ -57,7 +79,9 @@ export const MemberSocialLinks = ({
                 </li>
             )}
             {socialLinks.linkedin && (
-                <li className={`${classLiSocialLink} border-l-0 pc:border-r-0`}>
+                <li
+                    className={`${classLiSocialLink} ${borderLeft} pc:border-r-0`}
+                >
                     <div className="w-8 h-8">
                         <SocialLink
                             url={socialLinks.linkedin}
