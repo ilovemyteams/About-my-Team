@@ -64,13 +64,13 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 <ul>
                     <li className="mb-4 ">
                         <MemberLiSquare text={getTranslation("about")} />
-                        <p className="h-auto text-sm ml-4 ">
+                        <p className="h-auto text-sm mx-4 ">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
                     <li className="mb-4">
                         <MemberLiSquare text={getTranslation("services")} />
-                        <p className="text-sm ml-4 h-auto">
+                        <p className="text-sm mx-4 h-auto">
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>
