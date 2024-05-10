@@ -1129,4 +1129,53 @@ export const membersData: MemberDataItemType[] = [
             team: "Smachno! na seli",
         },
     },
+    {
+        data: {
+            id: "AntonChertok",
+            projectId: [""],
+            imageURL: "",
+            position: "Front-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anton-chertok/",
+                github: "https://github.com/chertoha",
+                telegram: "https://t.me/chertoha",
+            },
+            tools: [
+                "React",
+                "NextJs",
+                "TypeScript",
+                "Redux",
+                "Tailwind",
+                "Material UI",
+                "Docker",
+                "CI/CD",
+                "NodeJs",
+                "Express",
+                "NestJs",
+                "Postgres",
+            ],
+        },
+        uk: {
+            name: "Антон Черток",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Anton Chertok",
+            about: "Nothing will work unless you do",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Anton Chertok",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
 ];
