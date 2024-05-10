@@ -92,7 +92,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "MariiaPopova",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
             position: "Graphic Designer/ UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["batatfarm.com"],
@@ -134,7 +135,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "SvitlanaKondratenko",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1LHJIjTws0sAAYnDztAepbuRq54OPydpH",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com"],
@@ -377,7 +379,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "EugeneSerdiuk",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=15hnEzYCWoYdbyQ2odDZxQVx5ruAfjOuQ",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com"],
@@ -1084,7 +1087,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "AnnaKlyba",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1V-icZV2Ugq3h5uP89suS4qbNeF4Crcd7",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com", "baza-trainee.tech"],
