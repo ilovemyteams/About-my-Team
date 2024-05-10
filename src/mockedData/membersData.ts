@@ -375,7 +375,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["https://www.site.ua"],
+            projectsExperience: ["https://github.com/OlenaPosternak"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -411,7 +411,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Olena Posternak",
-            about: "Small things matter. It’s often they, that make life more comfortable.",
+            about: "Małe rzeczy są ważne. Często sprawiają, że życie staje się wygodniejsze.",
             services:
                 "Specjalizuję się w tworzeniu aplikacji internetowych, biorąc pod uwagę najlepsze praktyki. Tworzę interaktywne aplikacje przy użyciu różnych frameworków i bibliotek JavaScript. Moim głównym celem jest zapewnienie użytkownikom wygodnego i komfortowego korzystania z aplikacji internetowych.",
             team: "I Love My Team",
@@ -456,14 +456,14 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Olga Mykhailova",
-            about: "I enjoy finding elegant solutions to difficult tasks",
+            about: "I like to find elegant solutions to complex problems.",
             services:
                 "My goal is to develop web applications that impress with their user-friendliness and business efficiency. I strive to create products of varying levels of complexity that provide not only functionality but also aesthetics. My approach is to help clients achieve flawless results by combining maximum utility and attractive design in every project.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olga Mykhailova",
-            about: "There will be text in Polish",
+            about: "Lubię znajdować eleganckie rozwiązania złożonych problemów.",
             services:
                 "Moim celem jest tworzenie aplikacji internetowych, które są bardzo łatwe w obsłudze i bardzo efektywne biznesowo. Staram się tworzyć produkty o różnym poziomie złożoności, które zapewniają nie tylko funkcjonalność, ale także estetykę. Moje podejście polega na pomaganiu klientom w osiąganiu najlepszych wyników poprzez łączenie maksymalnej użyteczności i atrakcyjnego wyglądu w każdym projekcie.",
             team: "I Love My Team",

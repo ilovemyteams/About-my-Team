@@ -32,8 +32,8 @@ const CopyLinkButton = ({
         >
             {children}
             {copied && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 flex gap-4 h-12 w-[242px] border border-purple-stroke">
-                    <div className="flex justify-center items-center w-12 h-full border-r border-purple-stroke">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 flex gap-4 h-12 w-[242px] border border-purple-strokeLight dark:border-purple-stroke">
+                    <div className="flex justify-center items-center w-12 h-full border-r border-purple-strokeLight dark:border-purple-stroke">
                         <Image
                             src="/images/logo.svg"
                             width="24"
@@ -41,13 +41,13 @@ const CopyLinkButton = ({
                             alt="logo icon"
                         />
                     </div>
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center text-purple-200 dark:text-grey">
                         <p>{getTranslation("linkIsCopied")}</p>
                     </div>
                 </div>
             )}
             {notCopied && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 text-purple-200 dark:text-grey">
                     <p>{getTranslation("somethingWrong")}</p>
                 </div>
             )}

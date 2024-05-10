@@ -18,7 +18,7 @@ export const TabTitle = () => {
                 </span>
                 {getTranslation("titleFifthWord")}
             </p>
-            <p className="-ml-[105px]">
+            <p className="-ml-[105px] max-w-[700px]">
                 {getTranslation("titleSixthWord")}
                 <span className="text-purple-100">
                     {getTranslation("titleSeventhWord")}
