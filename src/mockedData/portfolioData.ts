@@ -21,7 +21,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "1",
-            image: "https://drive.google.com/uc?export=view&id=1vLCmYLAKv-ykFp1yWj9b_29tHP6eOiPv",
+            image: "https://drive.google.com/uc?export=view&id=1IKcAJZnWJFqIM-3X-WSAxwS3mysVVsYw",
             implementations: [
                 "Idea",
                 "Design",
@@ -50,7 +50,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "2",
-            image: "https://drive.google.com/uc?export=view&id=1ZcvPOChrBY7KnazjQi3sJ5B9R1wP2qL1",
+            image: "https://drive.google.com/uc?export=view&id=1gYYRuu7SMlrk8tsRI9-BcS_fqYUdsjoU",
             implementations: [
                 "Idea",
                 "Design",
@@ -79,7 +79,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "3",
-            image: "https://drive.google.com/uc?export=view&id=1hN9avcbjmCQ0s4ORJjg75_KbXL3nMoRJ",
+            image: "https://drive.google.com/uc?export=view&id=11KnheYYs0CKXVkSPDmqnAHCJeVbP8f6D",
             implementations: [
                 "Idea",
                 "Design",
