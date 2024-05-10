@@ -41,7 +41,7 @@ export function Accordion({ item }: AccordionProps) {
             </button>
 
             <p
-                className={`text-geist text-sm tab:text-base deskxl:text-lg overflow-hidden mb-[8px] transition-[max-height] duration-[300ms] ease-in-out 
+                className={`text-geist text-sm tab:text-base deskxl:text-lg overflow-hidden mb-[8px] transition-[max-height] duration-[600ms] ease-in 
                     ${isAccordionOpen ? "max-h-[300px]" : "max-h-0"}`}
             >
                 {item.answer}
