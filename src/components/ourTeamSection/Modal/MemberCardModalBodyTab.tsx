@@ -56,7 +56,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                         <p className="font-caviar font-bold text-base  text-purple-200 dark:text-white-200 mb-1 min-h-[40px]">
                             {data[locale as LocaleType]?.name}
                         </p>
-                        <p className="text-xs text-purple-130 dark:text-purple-50">
+                        <p className="text-sm text-purple-130 dark:text-purple-50">
                             {position.toUpperCase()}
                         </p>
                     </div>
