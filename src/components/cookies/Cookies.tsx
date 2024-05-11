@@ -5,6 +5,9 @@ import Cookies from "js-cookie";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 
+const POLICY_URL =
+    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+
 export const CookiesComponent = () => {
     const [isAccepted, setIsAccepted] = useState(true);
     const cookiesValue = Cookies.get("isAccetedCookies");
@@ -34,7 +37,7 @@ export const CookiesComponent = () => {
                 <div className="pc:w-[60%]">
                     {getTranslation("text")}{" "}
                     <a
-                        href="/"
+                        href={POLICY_URL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="dark:text-purple-50 text-purple-130"

@@ -21,7 +21,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "1",
-            image: "https://drive.google.com/uc?export=view&id=1vLCmYLAKv-ykFp1yWj9b_29tHP6eOiPv",
+            image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
             implementations: [
                 "Idea",
                 "Design",
@@ -50,7 +50,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "2",
-            image: "https://drive.google.com/uc?export=view&id=1ZcvPOChrBY7KnazjQi3sJ5B9R1wP2qL1",
+            image: "https://drive.google.com/uc?export=view&id=1-zVmDm8fSgCwP3TzDVQM_Hu08vCbJi2A",
             implementations: [
                 "Idea",
                 "Design",
@@ -60,18 +60,18 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
         },
         uk: {
-            name: "На селі",
+            name: "Смачно! на селі",
             siteView: "інтернет магазин",
             description:
                 "Алісі набридло сидіти без діла на березі. Разів зо два вона зазирнула в книжку, що її читала сестра, але там не було ні рисунків, ні малюнків, а без них книжка не книжка, — гадала Аліса.",
         },
         en: {
-            name: "Na seli",
+            name: "Smachno! na seli",
             siteView: "internetShop",
             description: "descriptionId2",
         },
         pl: {
-            name: "Na seli",
+            name: "Smachno! na seli",
             siteView: "internetShop",
             description: "descriptionId2",
         },
@@ -79,7 +79,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "3",
-            image: "https://drive.google.com/uc?export=view&id=1hN9avcbjmCQ0s4ORJjg75_KbXL3nMoRJ",
+            image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             implementations: [
                 "Idea",
                 "Design",

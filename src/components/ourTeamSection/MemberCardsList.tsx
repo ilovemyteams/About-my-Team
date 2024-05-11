@@ -32,23 +32,26 @@ export const MemberCardsList = ({
             isFirstRender.current = false;
         }
     }, [optionType, emblaApi, membersData]);
-
+    const numberOfMembers = membersData.length;
+    const lastBorder =
+        (numberOfMembers === 1 || numberOfMembers === 2) &&
+        optionType !== "person"
+            ? "border-r"
+            : "border-r-0";
     return (
         <div className="relative embla min-w-full tab:hidden">
             <div className=" overflow-hidden" ref={emblaRef}>
-                <ul className="flex gap-0">
+                <ul className="flex gap-0 ">
                     {membersData.map(data => (
                         <li
                             key={data.data.id}
-
-                            className="embla__slide flex-[0_0_50%] w-teamMob border-[1px] border-purple-strokeLight dark:border-purple-stroke border-r-[0px] even:ml-[-1px]"
-
+                            className={`embla__slide mama flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
                         >
                             <MemberCard data={data} />
                         </li>
                     ))}
                     {optionType === "person" && (
-                        <li className="embla__slide flex-[0_0_50%] w-full border-[1px] border-purple-strokeLight dark:border-purple-stroke border-r-[0px] ">
+                        <li className="embla__slide papa flex-[0_0_50%] w-full border border-purple-strokeLight dark:border-purple-stroke border-r-0 even:ml-[-1px]">
                             <JoinUsCard />
                         </li>
                     )}

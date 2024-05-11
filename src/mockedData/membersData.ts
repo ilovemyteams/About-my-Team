@@ -10,6 +10,7 @@ export type SocialLinks = {
     behance?: string;
     github?: string;
     telegram?: string;
+    googleDrive?: string;
 };
 
 export type DataType = {
@@ -34,28 +35,35 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "SusannaSalataBA",
-            projectId: [],
+            id: "SusannaSalataPM",
+            projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: ["https://www.website.ua"],
+            position: "Product manager",
+            categoryName: "manager",
+            projectsExperience: [
+                "ilovemyteam.online",
+                "batatfarm.com",
+                "theatermag.com.ua",
+                "baza-trainee.tech",
+            ],
             pricePerHour: "25",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
-                github: "",
-                telegram: "",
+                github: "https://github.com/Susanna-Salata",
+                telegram: "https://t.me/Susanna_Salata",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1B1WBgmIX0vWCvLZKrqqsh5iwKYIRF-Gv?usp=sharing",
             },
             tools: [
-                "UML",
-                "BPMN 2.0",
                 "SDLC",
-                "SQL",
-                "Python",
-                "Jira",
-                "Confluence",
-                "Google Sheets/Docs",
+                "Strategia",
+                "Planning",
+                "Budgeting",
+                "Consulting",
+                "Business Analysis",
+                "Data Analysis",
+                "A/B test",
             ],
         },
         uk: {
@@ -82,50 +90,145 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "SusannaSalataPM",
-            projectId: ["1", "2", "3"],
+            id: "MariiaPopova",
+            projectId: ["2"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
-            position: "Product manager",
-            categoryName: "manager",
-            projectsExperience: ["https://www.website.ua"],
-            pricePerHour: "25",
+                "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
+            position: "Graphic Designer/ UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "14",
             socialLinks: {
-                linkedin: "https://www.linkedin.com/in/susanna-salata/",
-                github: "",
-                telegram: "",
+                linkedin: "https://www.linkedin.com/in/mariia-popova-uiux",
+                behance: "https://www.behance.net/64fee160",
+                telegram: "https://t.me/MaraPopova",
             },
             tools: [
-                "UML",
-                "BPMN 2.0",
-                "SDLC",
-                "SQL",
-                "Python",
+                "Graphic Design",
+                "Figma",
                 "Jira",
-                "Confluence",
-                "Google Sheets/Docs",
+                "Procreate",
+                "Adobe Photoshop",
             ],
         },
         uk: {
-            name: "Сусанна Салата",
-            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            name: "Марія Попова",
+            about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
             services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ",
-            team: "I Love My Team",
+                "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка",
+            team: "Смачно! на селі",
         },
         en: {
-            name: "Susanna Salata",
-            about: "Work should bring inspiration and satisfaction, not just money.",
-            services:
-                "Consulting, business process analysis, strategic planning, budgeting, project and team management, product development. Mentoring for beginners in IT",
-            team: "I Love My Team",
+            name: "Mariia Popova",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
         },
         pl: {
-            name: "Susanna Salata",
-            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            name: "Mariia Popova",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "SvitlanaKondratenko",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1LHJIjTws0sAAYnDztAepbuRq54OPydpH",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/svitlana-kondratenko-35b51228",
+                github: "",
+                telegram: "http://t.me/Svitlana_Kondr",
+            },
+            tools: [
+                "BPMN 2.0",
+                "SDLC",
+                "User story",
+                "Jira",
+                "Confluence",
+                "Trello",
+                "Miro",
+                "Figma",
+                "Google Sheets/Docs",
+                "Slack",
+                "Teams",
+            ],
+        },
+        uk: {
+            name: "Світлана Кондратенко",
+            about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
             services:
-                "Konsulting, analiza procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów. Mentoring dla początkujących w IT",
-            team: "I Love My Team",
+                "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Svitlana Kondratenko",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Svitlana Kondratenko",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "VladShumkov",
+            projectId: ["1", "2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["ilovemyteam.online", "batatfarm.com"],
+            pricePerHour: "20",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/vladyslav-shumkov/",
+                github: "https://github.com/IiIymik",
+                telegram: "https://t.me/IiIymik",
+            },
+            tools: [
+                "Python",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "MongoDB",
+                "PosgreSQL",
+                "CI/CD",
+                "Docker",
+                "DevOps",
+                "HTML",
+                "CSS",
+            ],
+        },
+        uk: {
+            name: "Влад Шумков",
+            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
+            services:
+                "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Vlad Shumkov",
+            about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Vlad Shumkov",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
         },
     },
     {
@@ -134,13 +237,15 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
-            position: "fullstack developer",
+            position: "Fullstack developer",
             categoryName: "developer",
             projectsExperience: [
-                "https://baza-trainee.tech/ua",
+                "ilovemyteam.online",
+                "batatfarm.com",
+                "baza-trainee.tech",
                 //"https://murrfecto.site/",
             ],
-            pricePerHour: "",
+            pricePerHour: "18",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/ihordrn/",
                 github: "https://github.com/Mazayw",
@@ -167,14 +272,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ігор Дронішинець",
             about: "Про себе цитата",
             services:
-                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику",
+                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама",
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
             about: "There will be text in English",
             services:
-                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer",
+                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
             team: "I Love My Team",
         },
         pl: {
@@ -193,14 +298,14 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["https://www.site.ua"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
                 telegram: "https://t.me/iryna_stoliarova",
             },
-            tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator"],
+            tools: ["Figma", "Jira", "Adobe Photoshop", "Adobe Illustrator"],
         },
         uk: {
             name: "Ірина Столярова",
@@ -229,10 +334,10 @@ export const membersData: MemberDataItemType[] = [
             id: "AnastasiiaNazarenko",
             projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1dZgahuKLMKs9t3Fn0TChx7YyKFiyOAYd",
+                "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["https://www.website.ua"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -272,13 +377,61 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "EugeneSerdiuk",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=15hnEzYCWoYdbyQ2odDZxQVx5ruAfjOuQ",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/eugene-serdyuk/",
+                github: "https://github.com/Gituservn",
+                telegram: "",
+            },
+            tools: [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "NodeJs",
+                "ReduxJS",
+                "MongoDB",
+                "PosgreSQL",
+                "HTML",
+                "CSS",
+            ],
+        },
+        uk: {
+            name: "Євген Сердюк",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Eugene Serdiuk",
+            about: "Цитата про себе на англ",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Eugene Serdiuk",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
             id: "IrynaTrynkal",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["https://www.site.ua"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
@@ -375,7 +528,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["https://github.com/OlenaPosternak"],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -426,7 +579,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: ["https://github.com/OlgaMykhailova"],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
 
             pricePerHour: "10",
             socialLinks: {
@@ -477,19 +630,20 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["https://www.site.ua"],
+            projectsExperience: ["ilovemyteam.online", "baza-trainee.tech"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
                 telegram: "https://t.me/R_Katrine",
+                github: "",
             },
             tools: [
                 "Postman",
                 "Swagger",
                 "Chrome DevTools",
                 "SQL",
-                "Githab",
+                "GitHub",
                 "VSCode",
                 "Jira",
                 "Trello",
@@ -528,14 +682,14 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: [
-                "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
-            ],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/katerynapogrebna",
                 github: "https://github.com/KaterynaPogrebna/QA_Portfolio/tree/416fd293cdd4fac83f5101e6e5768c52188af7a6/API",
-                telegram: "",
+                telegram: "https://t.me/ek_kat",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
             },
             tools: [
                 "Postman",
@@ -589,7 +743,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: ["https://www.website.ua"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
@@ -632,13 +786,70 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "SusannaSalataBA",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: [
+                "ilovemyteam.online",
+                "batatfarm.com",
+                "theatermag.com.ua",
+                "baza-trainee.tech",
+            ],
+            pricePerHour: "25",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/susanna-salata/",
+                github: "https://github.com/Susanna-Salata",
+                telegram: "https://t.me/Susanna_Salata",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1B1WBgmIX0vWCvLZKrqqsh5iwKYIRF-Gv?usp=sharing",
+            },
+            tools: [
+                "BPMN 2.0",
+                "SDLC",
+                "User story",
+                "Jira",
+                "Trello",
+                "Confluence",
+                "Slack",
+                "Figma",
+                "Miro",
+                "Google Sheets/Docs",
+                "SQL",
+                "Python",
+            ],
+        },
+        uk: {
+            name: "Сусанна Салата",
+            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services:
+                "Аналіз бізнес-потреб замовника, ринку і конкурентів, маркетингових та виробничих дани. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами, розробниками і стейкхолдерами. Аналіз та управління ризиками. Менторинг для початківців в ІТ",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Susanna Salata",
+            about: "Work should bring inspiration and satisfaction, not just money.",
+            services: "Переклад",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Susanna Salata",
+            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: "Переклад",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "OlhaKuchalska",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["https://www.website.ua"],
+            projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
@@ -676,6 +887,299 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
             team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "DenisSlivinskyi",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=19t3e6QnD3Xm5Pwtq5NRdElfN5OAr9GB3",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/denis-slivinskyi/",
+                github: "https://github.com/Denis-isnotavailable",
+                telegram: "https://t.me/d_e_n_i_s_s_s_s",
+            },
+            tools: [
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "NextJS",
+                "NodeJs",
+                "ReduxJS",
+                "MongoDB",
+                "PosgreSQL",
+                "Jira",
+                "Postman",
+                "Figma",
+                "Git/GitHub",
+                "HTML",
+                "CSS",
+            ],
+        },
+        uk: {
+            name: "Денис Слівінський",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та NodeJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Denis Slivinskyi",
+            about: "Real stupidity beats artificial intelligence every time",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Denis Slivinskyi",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "VolodymyrDehtiarev",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1nfCVkBnKMTCaP8p504qw3kUGv4i_nl4i",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
+                github: "https://github.com/VladimirDegt",
+                telegram: "https://t.me/VladimirDegtr",
+            },
+            tools: [
+                "React",
+                "Redux",
+                "NextJs",
+                "NestJS",
+                "PosgreSQL",
+                "MongoDB",
+                "TypeScript",
+                "CI/CD",
+                "Docker",
+            ],
+        },
+        uk: {
+            name: "Володимир Дегтярев",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Volodymyr Dehtiarev",
+            about: "Nothing will work unless you do",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Volodymyr Dehtiarev",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "OlenaChornobryvets",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1dgTU9cl1a02ZoC35oCDbjnANSX_HX0kY",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/olenachornobryvets",
+                github: "https://github.com/alen8d",
+                telegram: "",
+            },
+            tools: [
+                "Postman",
+                "SQL",
+                "Jira",
+                "Azure DevOps",
+                "Git",
+                "DevTools",
+            ],
+        },
+        uk: {
+            name: "Олена Чорнобривець",
+            about: "Цитата про себе",
+            services:
+                "Ручне мобільне/веб тестування, API тестування, створення тестової документації: тест кейс, чекліст, баг репорт",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Olena Chornobryvets",
+            about: "Quality assurance means preventing errors",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Olena Chornobryvets",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "HannaHorbenko",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1fp6JW8_U85A9JRP3GWZ8wq9TgmP1mggd",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/hanna-horbenko-80a589279/",
+                github: "https://github.com/hanna-horbenko",
+                telegram: "https://t.me/hanna_horbenko",
+            },
+            tools: [
+                "Postman",
+                "SQL",
+                "DevTools",
+                "Jira",
+                "TestRail",
+                "Figma",
+                "DBeaver",
+                "Android Studio",
+                "Genymotion",
+                "Git/GitHub",
+                "Terminal",
+                "VSCode",
+            ],
+        },
+        uk: {
+            name: "Ганна Горбенко",
+            about: "Цитата про себе",
+            services: "Тут має бути переклад на укр",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Hanna Horbenko",
+            about: "QA for me it's like a digital detective. The investigation process fascinates me!",
+            services:
+                "Manual QA, Black/Grey testing, Web/Mobile testing, System testing, Regression, Sanity, Smoke, Ad-Hoc, With test cases, Functional, Compatibility, Usability, Test design techniques. Test documentation: Test plan, Test cases, Checklists, Bug reports, Knowledge of SDLC, Waterfall, Agile concepts knowledge (Scrum, Kanban), Knowledge of STLC, Git and Terminal, SQL (MySQL, SQLite, DBeaver)",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Hanna Horbenko",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "AnnaKlyba",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1V-icZV2Ugq3h5uP89suS4qbNeF4Crcd7",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com", "baza-trainee.tech"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anna-klyba/",
+                github: "https://github.com/AnnaKlyba",
+                telegram: "",
+            },
+            tools: [
+                "Postman",
+                "Swagger",
+                "Web DevTools",
+                "SQL",
+                "Git",
+                "Jira",
+                "Trello",
+                "TestRail",
+                "HTML/CSS",
+                "Terminal",
+                "DBeaver",
+                "Zendesk",
+            ],
+        },
+        uk: {
+            name: "Анна Клиба",
+            about: "Цитата про себе",
+            services:
+                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Anna Klyba",
+            about: "QA is the key to reliability and trust in the product",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Anna Klyba",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "AntonChertok",
+            projectId: [""],
+            imageURL: "",
+            position: "Front-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anton-chertok/",
+                github: "https://github.com/chertoha",
+                telegram: "https://t.me/chertoha",
+            },
+            tools: [
+                "React",
+                "NextJs",
+                "TypeScript",
+                "Redux",
+                "Tailwind",
+                "Material UI",
+                "Docker",
+                "CI/CD",
+                "NodeJs",
+                "Express",
+                "NestJs",
+                "Postgres",
+            ],
+        },
+        uk: {
+            name: "Антон Черток",
+            about: "Цитата про себе",
+            services:
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Anton Chertok",
+            about: "Nothing will work unless you do",
+            services: "Тут має бути переклад на англ",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Anton Chertok",
+            about: "Цитата про себе на польській",
+            services: "Тут має бути переклад на польську",
+            team: "Smachno! na seli",
         },
     },
 ];
