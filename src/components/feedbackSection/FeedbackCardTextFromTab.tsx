@@ -24,7 +24,9 @@ export const FeedbackCardTextFromTab = ({
                 <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
                     {reviewer}
                 </p>
-                <p className="text-xs ">{reviewerRole}</p>
+                <p className="text-xs text-purple-200 dark:text-white-200">
+                    {reviewerRole}
+                </p>
             </div>
             <div className=" tab:flex tab:justify-between border-t border-b dark:border-purple-stroke border-purple-strokeLight pt-[10px] pb-4 tab:py-[14px] tab:min-w-[360px] pc:min-w-[450px] ">
                 <div>
