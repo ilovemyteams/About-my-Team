@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "i love my team",
-        "description": "A team that cares about your needs. Together we can do more and better! Your future product is in the safe( or reliable better to write?) hands of our specialists - trust us and enjoy the cooperation and the result!"
+        "description": "A team that cares about your needs. Together we can do more and better! Your future product is in the reliable hands of our specialists - trust us and enjoy the cooperation and the result!"
     },
     "Hero": {
         "heroInfoText": "IT team that takes care of your needs",
@@ -158,10 +158,10 @@
         "messageLabel": "Your message*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/susannasalata or @susanna",
-        "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
-        "instagramPlaceholder": "instagram.com/susannasalata",
-        "facebookPlaceholder": "facebook.com/susannasalata",
+        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
+        "instagramPlaceholder": "instagram.com/susanna-salata",
+        "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields required to be filled in",
         "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
