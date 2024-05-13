@@ -35,7 +35,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
             deskxl:w-[668px] deskxl:max-w-[668px] deskxl:h-[110px] dark:bg-portfolioGradient bg-portfolioGradientLight dark:opacity-60"
             ></div>
             <div className="absolute bottom-0 p-4 pc:p-6 deskxl:p-8 h-[74px] pc:h-[94px] deskxl:h-[110px] z-10">
-                <p className="font-caviar text-lg pc:text-xl font-bold">
+                <p className="font-caviar text-lg pc:text-xl font-bold text-purple-200 dark:text-white-200">
                     {data?.name}
                 </p>
                 <SmallPageTitle className="text-xs pc:text-sm">

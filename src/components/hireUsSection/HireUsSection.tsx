@@ -11,7 +11,7 @@ export const HireUsSection = () => {
                 {getTranslation("title")}
             </TitleCTAWrapper>
             <div className="flex flex-col gap-y-8 tab:flex-row pc:gap-0 justify-between items-center mt-6 pc:mt-[100px]">
-                <div className="text-base deskxl:text-2xl">
+                <div className="text-base deskxl:text-2xl text-purple-200 dark:text-grey">
                     <p className="mb-4">{getTranslation("workingHours")}</p>
                     <a
                         href={`mailto:${getTranslation("email")}`}

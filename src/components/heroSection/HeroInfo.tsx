@@ -9,7 +9,7 @@ export const HeroInfo = () => {
         <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
             <h1
                 className="text-xl pc:mb-[154px] pc:static
-                           tab:absolute tab:left-0 tab:top-0 deskxl:text-2xl deskxl:mb-[173px]"
+                           tab:absolute tab:left-0 tab:top-0 deskxl:text-2xl text-purple-200 dark:text-grey deskxl:mb-[173px]"
             >
                 {getTranslation("Hero.heroInfoText")}
             </h1>

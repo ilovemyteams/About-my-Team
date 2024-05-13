@@ -36,7 +36,7 @@ export const PortfolioCard = ({
             />
             <div className="absolute -bottom-0 block min-w-full h-[134px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
                 <div className="absolute top-5 left-2 tab:top-[18px] tab:left-4 pc:left-5 pc:top-5">
-                    <h3 className="font-caviar font-bold text-lg tab:text-xl mb-[6px]">
+                    <h3 className="font-caviar font-bold text-lg tab:text-xl mb-[6px] text-purple-200 dark:text-grey">
                         {name}
                     </h3>
 
