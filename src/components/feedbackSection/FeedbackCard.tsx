@@ -37,8 +37,8 @@ export const FeedbackCard = ({
                     height={346}
                     className=" object-cover min-w-[220px] h-[220px] "
                 />
-                <div className="absolute bottom-0 left-0 min-w-full h-[55px] dark:bg-feedbackMobCardGradient bg-feedbackMobCardGradientLight">
-                    <p className="font-caviar font-bold text-base mt-2 mb-1 ml-2 text-purple-200 dark:text-white-200">
+                <div className="absolute bottom-0 left-0 min-w-full h-[55px] dark:bg-feedbackMobCardGradient bg-feedbackMobCardGradientLight text-purple-200 dark:text-white-200">
+                    <p className="font-caviar font-bold text-base mt-2 mb-1 ml-2">
                         {reviewer}
                     </p>
                     <p className="text-xs ml-2 ">{reviewerRole}</p>

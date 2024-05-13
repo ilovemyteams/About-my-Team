@@ -50,7 +50,7 @@ export const PortfolioCard = ({
                                 return (
                                     <div
                                         key={index}
-                                        className="text-xs pc:text-base px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-grey"
+                                        className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
                                     >
                                         {implementation}
                                     </div>
@@ -62,14 +62,14 @@ export const PortfolioCard = ({
                         {implementations.map((implementation, index) => (
                             <div
                                 key={index}
-                                className="text-xs pc:text-base px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
+                                className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
                             >
                                 {implementation}
                             </div>
                         ))}
                     </div>
                 </div>
-                <div className="absolute font-caviar font-bold text-base flex w-[30px] h-7 top-5 right-2 tab:top-4 tab:right-4 pc:right-5 pc:top-5 items-center justify-center">
+                <div className="absolute font-caviar font-bold text-base text-purple-200 dark:text-grey flex w-[30px] h-7 top-5 right-2 tab:top-4 tab:right-4 pc:right-5 pc:top-5 items-center justify-center">
                     {idFormater}
                 </div>
             </div>
