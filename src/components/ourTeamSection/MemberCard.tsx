@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
@@ -15,6 +16,15 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
+    const { theme } = useTheme();
+    const blurDataURLMob =
+        theme === "dark"
+            ? "/images/plugMemberCardMobDark.webp"
+            : "/images/plugMemberCardMobDark.webp";
+    const blurDataURLTab =
+        theme === "dark"
+            ? "/images/plugMemberModalTab.webp"
+            : "/images/plugMemberModalTab.webp";
 
     return (
         <div
@@ -32,18 +42,22 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                                 src={imageURL}
                                 width={128}
                                 height={150}
-                                className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full"
+                                className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full dark:bg-CTAGradient bg-CTAGradientLight"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={blurDataURLMob}
                             />
                             <Image
                                 src={imageURL}
                                 width={246}
                                 height={196}
                                 className="hidden tab:block hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
-                            tab:aspect-[234/186] pc:aspect-[246/196]"
+                            tab:aspect-[234/186] pc:aspect-[246/196] dark:bg-CTAGradient bg-CTAGradientLight"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={blurDataURLTab}
                             />
                         </>
                     ) : (
