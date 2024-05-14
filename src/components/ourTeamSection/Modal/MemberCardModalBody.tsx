@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
@@ -8,21 +9,13 @@ import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberTools } from "./MemberTools";
 import { MemberLiSquare } from "./MemberLiSquare";
 import { IconProfile } from "../../shared/Icons/IconProfile";
-
-const themesBlurDataURL = {
-    light: "/images/plugMemberModal.webp",
-    dark: "/images/plugMemberModalDark.webp",
-};
+import { useTheme } from "next-themes";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
-    theme: "light" | "dark";
 }
 
-export const MemberCardModalBody = ({
-    data,
-    theme,
-}: MemberCardModalBodyProp) => {
+export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     const {
         imageURL,
         position,
@@ -31,10 +24,18 @@ export const MemberCardModalBody = ({
         projectsExperience,
         socialLinks,
     } = data.data;
+    const { theme } = useTheme();
+    // const themesBlurDataURL = {
+    //     light: "/images/plugMemberModal.webp",
+    //     dark: "/images/plugMemberModalDark.webp",
+    // };
 
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
-    const blurDataURLMob = themesBlurDataURL[theme];
+    const blurDataURLMob =
+        theme === "dark"
+            ? "/images/plugMemberModalDark.webp"
+            : "/images/plugMemberModal.webp";
 
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
@@ -46,7 +47,7 @@ export const MemberCardModalBody = ({
                 )}
 
                 <div className="h-[60px] flex items-end gap-[8px] my-4 ml-2">
-                    <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
+                    <div className="w-[60px] h-[60px] rounded-full overflow-hidden dark:bg-CTAGradient bg-CTAGradientLight">
                         {imageURL ? (
                             <Image
                                 src={imageURL}
