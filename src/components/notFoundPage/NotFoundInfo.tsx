@@ -12,7 +12,7 @@ export const NotFoundInfo = () => {
                 404
             </p>
             <div className="text-center">
-                <p className="font-caviar text-white-200 text-2xlb mb-4 tab:text-3xl pc:text-4xl">
+                <p className="font-caviar text-purple-200 dark:text-white-200 text-2xlb mb-4 tab:text-3xl pc:text-4xl">
                     {getTranslation("title")}
                 </p>
                 <p className="pc:text-xl pc:max-w-[356px] pc:text-start">
