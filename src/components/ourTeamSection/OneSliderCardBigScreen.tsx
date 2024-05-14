@@ -1,4 +1,3 @@
-import { useTheme } from "next-themes";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { MemberDataItemType } from "../../mockedData/membersData";
@@ -12,8 +11,6 @@ export const OneSliderCardBigScreen = ({
     membersData: MemberDataItemType[];
     optionType: string;
 }) => {
-    const { theme } = useTheme();
-    const myTheme = theme === "dark" ? "dark" : "light";
     const screenSizeName = useScreenSize();
     const { tabletName, desktopXlName } = SCREEN_NAMES;
     const CARDS_PER_PAGE =
@@ -43,11 +40,7 @@ export const OneSliderCardBigScreen = ({
                 className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0 pc:grid-cols-3 deskxl:grid-cols-4"
             >
                 {chunk.map(data => (
-                    <MemberCard
-                        key={data.data.id}
-                        data={data}
-                        theme={myTheme}
-                    />
+                    <MemberCard key={data.data.id} data={data} />
                 ))}
                 {isLastPage && isShowJoinUs > 0 && optionType === "person" && (
                     <JoinUsCard
