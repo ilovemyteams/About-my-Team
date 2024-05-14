@@ -2,6 +2,7 @@
 import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
+import { useTheme } from "next-themes";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { MemberDataItemType } from "../../mockedData/membersData";
@@ -23,7 +24,8 @@ export const MemberCardsList = ({
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
 
     const isFirstRender = useRef(true);
-
+    const { theme } = useTheme();
+    const myTheme = theme === "dark" ? "dark" : "light";
     useEffect(() => {
         if (!isFirstRender.current && emblaApi) {
             // Reset the slider to the first slide whenever optionType changes
@@ -47,7 +49,7 @@ export const MemberCardsList = ({
                             key={data.data.id}
                             className={`embla__slide mama flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
                         >
-                            <MemberCard data={data} />
+                            <MemberCard data={data} theme={myTheme} />
                         </li>
                     ))}
                     {optionType === "person" && (

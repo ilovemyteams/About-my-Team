@@ -9,11 +9,20 @@ import { MemberTools } from "./MemberTools";
 import { MemberLiSquare } from "./MemberLiSquare";
 import { IconProfile } from "../../shared/Icons/IconProfile";
 
+const themesBlurDataURL = {
+    light: "/images/plugMemberModal.webp",
+    dark: "/images/plugMemberModalDark.webp",
+};
+
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
+    theme: "light" | "dark";
 }
 
-export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
+export const MemberCardModalBody = ({
+    data,
+    theme,
+}: MemberCardModalBodyProp) => {
     const {
         imageURL,
         position,
@@ -25,6 +34,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
 
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
+    const blurDataURLMob = themesBlurDataURL[theme];
 
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
@@ -45,6 +55,8 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 objectFit="cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={blurDataURLMob}
                             />
                         ) : (
                             <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">

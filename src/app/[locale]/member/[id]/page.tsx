@@ -1,4 +1,5 @@
 import React from "react";
+import { useTheme } from "next-themes";
 import { notFound } from "next/navigation";
 import { MemberCardModalBody } from "@/src/components/ourTeamSection/Modal/MemberCardModalBody";
 import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
@@ -18,9 +19,12 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     if (!displayedMember) {
         notFound();
     }
+    const { theme } = useTheme();
+    const myTheme = theme === "dark" ? "dark" : "light";
+
     return (
         <Modal>
-            <MemberCardModalBody data={displayedMember} />
+            <MemberCardModalBody data={displayedMember} theme={myTheme} />
             <MemberCardModalBodyTab data={displayedMember} />
         </Modal>
     );

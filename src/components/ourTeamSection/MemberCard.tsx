@@ -1,30 +1,30 @@
-"use client";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
 
+const themesBlurDataURLMob = {
+    light: "/images/plugMemberMob.webp",
+    dark: "/images/plugMemberMobDark.webp",
+};
+const themesBlurDataURLTab = {
+    light: "/images/plugMemberTab.webp",
+    dark: "/images/plugMemberTabDark.webp",
+};
 export interface MemberCardProps {
     data: MemberDataItemType;
+    theme: "light" | "dark";
 }
-export const MemberCard = ({ data }: MemberCardProps) => {
+export const MemberCard = ({ data, theme }: MemberCardProps) => {
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
-    const { theme } = useTheme();
-    const blurDataURLMob =
-        theme === "dark"
-            ? "/images/plugMemberMobDark.webp"
-            : "/images/plugMemberMob.webp";
-    const blurDataURLTab =
-        theme === "dark"
-            ? "/images/plugMemberTabDark.webp"
-            : "/images/plugMemberTab.webp";
+    const blurDataURLMob = themesBlurDataURLMob[theme];
+    const blurDataURLTab = themesBlurDataURLTab[theme];
 
     return (
         <div
