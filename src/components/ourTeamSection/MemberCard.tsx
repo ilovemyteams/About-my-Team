@@ -8,6 +8,7 @@ import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
 import { useTheme } from "next-themes";
+import ThemedImage from "./ThermedImage";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
@@ -21,10 +22,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
         theme === "dark"
             ? "/images/plugMemberTabDark.webp"
             : "/images/plugMemberTab.webp";
-    const blurDataURLMob =
-        theme === "dark"
-            ? "/images/plugMemberMobDark.webp"
-            : "/images/plugMemberMob.webp";
+    // const blurDataURLMob =
+    //     theme === "dark"
+    //         ? "/images/plugMemberMobDark.webp"
+    //         : "/images/plugMemberMob.webp";
 
     return (
         <div
@@ -38,15 +39,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 <Link href={`/${locale}/member/${id}`}>
                     {imageURL ? (
                         <>
-                            <Image
+                            <ThemedImage
                                 src={imageURL}
-                                width={128}
-                                height={150}
                                 className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
                                 alt={data[locale as LocaleType]?.name}
-                                loading="lazy"
-                                placeholder="blur"
-                                blurDataURL={blurDataURLMob}
                             />
                             <Image
                                 src={imageURL}
