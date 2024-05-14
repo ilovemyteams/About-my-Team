@@ -19,12 +19,12 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { theme } = useTheme();
     const blurDataURLMob =
         theme === "dark"
-            ? "/images/plugMemberCardMobDark.webp"
-            : "/images/plugMemberCardMobDark.webp";
+            ? "/images/plugMemberMobDark.webp"
+            : "/images/plugMemberMob.webp";
     const blurDataURLTab =
         theme === "dark"
-            ? "/images/plugMemberModalTab.webp"
-            : "/images/plugMemberModalTab.webp";
+            ? "/images/plugMemberTabDark.webp"
+            : "/images/plugMemberTab.webp";
 
     return (
         <div
