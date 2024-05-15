@@ -29,8 +29,8 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
     const blurDataURLTab =
         theme === "dark"
-            ? "/images/plugMemberTabDark.webp"
-            : "/images/plugMemberTab.webp";
+            ? "/images/plugMemberModalDark.svg"
+            : "/images/plugMemberModal.svg";
 
     return (
         <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
@@ -41,7 +41,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
             )}
             <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
                 <div>
-                    <div className="w-[206px] h-[170px] relative mx-4 mt-11">
+                    <div className="w-[206px] h-[170px] relative mx-4 mt-11 dark:bg-CTAGradient bg-CTAGradientLight">
                         {imageURL ? (
                             <Image
                                 src={imageURL}

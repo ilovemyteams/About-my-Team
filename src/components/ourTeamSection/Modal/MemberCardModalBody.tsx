@@ -1,4 +1,5 @@
 "use client";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
@@ -9,7 +10,6 @@ import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberTools } from "./MemberTools";
 import { MemberLiSquare } from "./MemberLiSquare";
 import { IconProfile } from "../../shared/Icons/IconProfile";
-import { useTheme } from "next-themes";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;
@@ -25,17 +25,13 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
         socialLinks,
     } = data.data;
     const { theme } = useTheme();
-    // const themesBlurDataURL = {
-    //     light: "/images/plugMemberModal.webp",
-    //     dark: "/images/plugMemberModalDark.webp",
-    // };
 
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
     const blurDataURLMob =
         theme === "dark"
-            ? "/images/plugMemberModalDark.webp"
-            : "/images/plugMemberModal.webp";
+            ? "/images/plugMemberModalDark.svg"
+            : "/images/plugMemberModal.svg";
 
     return (
         <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
