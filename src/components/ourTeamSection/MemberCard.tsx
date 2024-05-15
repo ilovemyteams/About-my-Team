@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import Link from "next/link";
@@ -7,25 +6,14 @@ import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
-import { useTheme } from "next-themes";
-import ThemedImage from "./ThermedImage";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
 }
 export const MemberCard = ({ data }: MemberCardProps) => {
-    const { theme } = useTheme();
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
-    const blurDataURLTab =
-        theme === "dark"
-            ? "/images/plugMemberTabDark.webp"
-            : "/images/plugMemberTab.webp";
-    // const blurDataURLMob =
-    //     theme === "dark"
-    //         ? "/images/plugMemberMobDark.webp"
-    //         : "/images/plugMemberMob.webp";
 
     return (
         <div
@@ -39,10 +27,13 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 <Link href={`/${locale}/member/${id}`}>
                     {imageURL ? (
                         <>
-                            <ThemedImage
+                            <Image
                                 src={imageURL}
+                                width={128}
+                                height={150}
                                 className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
                                 alt={data[locale as LocaleType]?.name}
+                                loading="lazy"
                             />
                             <Image
                                 src={imageURL}
@@ -52,8 +43,6 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             tab:aspect-[234/186] pc:aspect-[246/196] dark:bg-CTAGradient bg-CTAGradientLight"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL={blurDataURLTab}
                             />
                         </>
                     ) : (
