@@ -3,6 +3,10 @@ import { jwt } from "./googleJWT";
 
 const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID || "";
 
+console.log("jwt", jwt);
+
+console.log("SPREADSHEET_ID", SPREADSHEET_ID);
+
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID, jwt);
 
 export const appendToSheet = async (data: Record<string, string>) => {
