@@ -5,6 +5,9 @@ export const TabletDesktopTitle = () => {
     return (
         <div className="hidden tab:block">
             <p>
+                <span className="text-purple-100">
+                    {getTranslation("titleZeroWord")}
+                </span>
                 {getTranslation("titleFirstWord")}
                 <span className="text-purple-100">
                     {getTranslation("titleSecondWord")}

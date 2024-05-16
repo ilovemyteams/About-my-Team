@@ -22,6 +22,7 @@
     },
     "Mission": {
         "pageTitle": "Наша місія",
+        "titleZeroWord": "",
         "titleFirstWord": "Створюємо ",
         "titleSecondWord": "вражаючі ",
         "titleThirdWord": "цифрові",
