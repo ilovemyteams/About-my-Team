@@ -24,10 +24,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             pc:[&:nth-child(3)]:border-b pc:border-r pc:[&:nth-child(3)]:border-r-transparent pc:[&:nth-child(6)]:border-r-transparent
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
-            <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-10]">
-                <Link href={`/${locale}/member/${id}`}>
+            <Link href={`/${locale}/member/${id}`}>
+                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2]">
                     <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto z-[-1]">
-                        <IconHeart className="w-full h-full" />
+                        <IconHeart className="w-full h-full " />
                     </div>
                     {imageURL ? (
                         <>
@@ -54,9 +54,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
                         </div>
                     )}
-                </Link>
-            </div>
-
+                </div>
+            </Link>
             <div className="min-h-[100px] tab:min-h-[59px] pc:min-h-[72px] flex flex-col justify-between content-between">
                 <h4 className="font-caviar text-baseb text-purple-200 dark:text-white-200 pr-2">
                     {data[locale as LocaleType]?.name}
