@@ -6,6 +6,7 @@ import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
+import { IconHeart } from "../shared/Icons/IconHeart";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
@@ -23,8 +24,11 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             pc:[&:nth-child(3)]:border-b pc:border-r pc:[&:nth-child(3)]:border-r-transparent pc:[&:nth-child(6)]:border-r-transparent
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
-            <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight">
+            <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-10]">
                 <Link href={`/${locale}/member/${id}`}>
+                    <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto z-[-1]">
+                        <IconHeart className="w-full h-full" />
+                    </div>
                     {imageURL ? (
                         <>
                             <Image
@@ -40,7 +44,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                                 width={246}
                                 height={196}
                                 className="hidden tab:block hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
-                            tab:aspect-[234/186] pc:aspect-[246/196] dark:bg-CTAGradient bg-CTAGradientLight"
+                            tab:aspect-[234/186] pc:aspect-[246/196] "
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
                             />
