@@ -13,7 +13,7 @@ type DataType = {
 };
 export type FeedbackDataItemType = {
     data: DataType;
-    uk: FeedbackDataItemTranslation;
+    ua: FeedbackDataItemTranslation;
     en: FeedbackDataItemTranslation;
     pl: FeedbackDataItemTranslation;
 };
@@ -25,7 +25,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1ZcvPOChrBY7KnazjQi3sJ5B9R1wP2qL1",
             siteLink: "batatfarm.com",
         },
-        uk: {
+        ua: {
             siteName: "Смачно! на селі",
             siteView: "інтернет магазин",
             reviewer: "Сергій",
@@ -54,7 +54,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146269/cld-sample-4.jpg",
             siteLink: "www.alisawonder.com",
         },
-        uk: {
+        ua: {
             siteName: "Аліса в країні чудес",
             siteView: "персональний сайт",
             reviewer: "Аліса",
@@ -86,7 +86,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
             siteLink: "www.smaragdovemisto.com",
         },
-        uk: {
+        ua: {
             siteName: "Смарагдове місто",
             siteView: "інтернет магазин",
             reviewer: "Страшила",
@@ -117,7 +117,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146260/samples/balloons.jpg",
             siteLink: "www.baronmunchausen.com",
         },
-        uk: {
+        ua: {
             siteName: "Барон Мюнхаузен",
             siteView: "сайт візитівка",
             reviewer: "Барон Мюнхаузен",
@@ -148,7 +148,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146244/samples/ecommerce/accessories-bag.jpg",
             siteLink: "www.malamander.com",
         },
-        uk: {
+        ua: {
             siteName: "Маламандер",
             siteView: "корпоративний сайт",
             reviewer: "Тарас",
@@ -179,7 +179,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146267/cld-sample.jpg",
             siteLink: "www.judymoody.ua",
         },
-        uk: {
+        ua: {
             siteName: "Джуді Муді",
             siteView: "блог",
             reviewer: "Джуді",
