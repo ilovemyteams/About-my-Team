@@ -1,8 +1,6 @@
-interface IconProfileProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconProfile = ({ className }: IconProfileProps) => {
+export const IconProfile = ({ className }: IconProps) => {
     return (
         <svg
             width="122"

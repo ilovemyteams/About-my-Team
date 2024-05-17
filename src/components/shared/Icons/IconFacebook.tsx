@@ -1,8 +1,6 @@
-interface iconFacebookProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconFacebook = ({ className }: iconFacebookProps) => {
+export const IconFacebook = ({ className }: IconProps) => {
     return (
         <svg
             width="11"

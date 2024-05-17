@@ -1,8 +1,6 @@
-interface iconQuoteProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconQuote = ({ className }: iconQuoteProps) => {
+export const IconQuote = ({ className }: IconProps) => {
     return (
         <svg
             width="48"

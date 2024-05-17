@@ -1,8 +1,6 @@
-interface IconCopyProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconCopy = ({ className }: IconCopyProps) => {
+export const IconCopy = ({ className }: IconProps) => {
     return (
         <svg
             width="18"

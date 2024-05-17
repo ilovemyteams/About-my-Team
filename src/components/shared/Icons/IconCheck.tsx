@@ -1,8 +1,6 @@
-interface IconCheckProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconCheck = ({ className }: IconCheckProps) => {
+export const IconCheck = ({ className }: IconProps) => {
     return (
         <svg
             width="0"

@@ -1,8 +1,6 @@
-interface iconHeroLogoProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconHeroLogo = ({ className }: iconHeroLogoProps) => {
+export const IconHeroLogo = ({ className }: IconProps) => {
     return (
         <svg
             width="0"

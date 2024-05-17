@@ -1,8 +1,6 @@
-interface iconBgCurveMobileProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconBgCurveMobile = ({ className }: iconBgCurveMobileProps) => {
+export const IconBgCurveMobile = ({ className }: IconProps) => {
     return (
         <svg
             width="0"

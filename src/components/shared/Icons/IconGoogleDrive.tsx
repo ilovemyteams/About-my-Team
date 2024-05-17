@@ -1,8 +1,6 @@
-interface iconGoogleDrive {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconGoogleDrive = ({ className }: iconGoogleDrive) => {
+export const IconGoogleDrive = ({ className }: IconProps) => {
     return (
         <svg
             width="20"

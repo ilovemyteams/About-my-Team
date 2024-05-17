@@ -1,8 +1,6 @@
-interface iconLoaderProps {
-    className?: string;
-}
+import { IconProps } from "./iconProps.interface";
 
-export const IconLoader = ({ className }: iconLoaderProps) => {
+export const IconLoader = ({ className }: IconProps) => {
     return (
         <svg
             width="0"
