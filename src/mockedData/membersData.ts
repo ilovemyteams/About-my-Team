@@ -27,7 +27,7 @@ export type DataType = {
 
 export type MemberDataItemType = {
     data: DataType;
-    uk: MemberDataItemTranslation;
+    ua: MemberDataItemTranslation;
     en: MemberDataItemTranslation;
     pl: MemberDataItemTranslation;
 };
@@ -66,7 +66,7 @@ export const membersData: MemberDataItemType[] = [
                 "A/B test",
             ],
         },
-        uk: {
+        ua: {
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
@@ -111,7 +111,7 @@ export const membersData: MemberDataItemType[] = [
                 "Adobe Photoshop",
             ],
         },
-        uk: {
+        ua: {
             name: "Марія Попова",
             about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
             services:
@@ -161,7 +161,7 @@ export const membersData: MemberDataItemType[] = [
                 "Teams",
             ],
         },
-        uk: {
+        ua: {
             name: "Світлана Кондратенко",
             about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
             services:
@@ -211,7 +211,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Влад Шумков",
             about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
             services:
@@ -268,7 +268,7 @@ export const membersData: MemberDataItemType[] = [
                 "React",
             ],
         },
-        uk: {
+        ua: {
             name: "Ігор Дронішинець",
             about: "Про себе цитата",
             services:
@@ -307,7 +307,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: ["Figma", "Jira", "Adobe Photoshop", "Adobe Illustrator"],
         },
-        uk: {
+        ua: {
             name: "Ірина Столярова",
             about: "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
             services:
@@ -353,7 +353,7 @@ export const membersData: MemberDataItemType[] = [
                 "Jira",
             ],
         },
-        uk: {
+        ua: {
             name: "Анастасія Назаренко",
             about: "Дизайнер - це стратег з почуттям прекрасного.",
             services:
@@ -403,7 +403,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Євген Сердюк",
             about: "Цитата про себе",
             services:
@@ -448,7 +448,7 @@ export const membersData: MemberDataItemType[] = [
                 "Node.js",
             ],
         },
-        uk: {
+        ua: {
             name: "Ірина Тринкаль",
             about: "Можливо все, на неможливе просто потрібно більше часу.",
             services:
@@ -501,7 +501,7 @@ export const membersData: MemberDataItemType[] = [
     //             "Trello",
     //         ],
     //     },
-    //     uk: {
+    //     ua: {
     //         name: "Наталія Пащенко",
     //         about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
     //         services: "Тут буде шось таки написано",
@@ -548,7 +548,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Олена Постернак",
             about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
             services:
@@ -600,7 +600,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Ольга Михайлова",
             about: "Люблю знаходити елегантні рішення для складних задач",
             services:
@@ -652,7 +652,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Катерина Рубанік",
             about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту",
             services:
@@ -713,7 +713,7 @@ export const membersData: MemberDataItemType[] = [
                 "Exploratory Testing Chrome Extension",
             ],
         },
-        uk: {
+        ua: {
             name: "Катерина Погребна",
             about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
             services:
@@ -762,7 +762,7 @@ export const membersData: MemberDataItemType[] = [
                 "Gantt Chart",
             ],
         },
-        uk: {
+        ua: {
             name: "Дар'я Червякова",
             about: "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
             services:
@@ -821,7 +821,7 @@ export const membersData: MemberDataItemType[] = [
                 "Python",
             ],
         },
-        uk: {
+        ua: {
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
@@ -867,7 +867,7 @@ export const membersData: MemberDataItemType[] = [
                 "Figma",
             ],
         },
-        uk: {
+        ua: {
             name: "Ольга Кучальська",
             about: "Цитата про себе ",
             services:
@@ -921,7 +921,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Денис Слівінський",
             about: "Цитата про себе",
             services:
@@ -968,7 +968,7 @@ export const membersData: MemberDataItemType[] = [
                 "Docker",
             ],
         },
-        uk: {
+        ua: {
             name: "Володимир Дегтярев",
             about: "Цитата про себе",
             services:
@@ -1012,7 +1012,7 @@ export const membersData: MemberDataItemType[] = [
                 "DevTools",
             ],
         },
-        uk: {
+        ua: {
             name: "Олена Чорнобривець",
             about: "Цитата про себе",
             services:
@@ -1063,7 +1063,7 @@ export const membersData: MemberDataItemType[] = [
                 "VSCode",
             ],
         },
-        uk: {
+        ua: {
             name: "Ганна Горбенко",
             about: "Цитата про себе",
             services: "Тут має бути переклад на укр",
@@ -1113,7 +1113,7 @@ export const membersData: MemberDataItemType[] = [
                 "Zendesk",
             ],
         },
-        uk: {
+        ua: {
             name: "Анна Клиба",
             about: "Цитата про себе",
             services:
@@ -1162,7 +1162,7 @@ export const membersData: MemberDataItemType[] = [
                 "Postgres",
             ],
         },
-        uk: {
+        ua: {
             name: "Антон Черток",
             about: "Цитата про себе",
             services:

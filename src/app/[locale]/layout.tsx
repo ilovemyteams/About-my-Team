@@ -52,7 +52,7 @@ export async function generateMetadata({
             languages: {
                 en: "/en",
                 pl: "/pl",
-                uk: "/uk",
+                ua: "/ua",
             },
         },
         title: getTranslation("title"),
