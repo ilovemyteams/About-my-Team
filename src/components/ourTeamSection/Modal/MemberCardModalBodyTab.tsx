@@ -1,5 +1,4 @@
 "use client";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleType } from "@/types/LocaleType";
@@ -24,13 +23,8 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
         projectsExperience,
         socialLinks,
     } = data.data;
-    const { theme } = useTheme();
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
-    const blurDataURLTab =
-        theme === "dark"
-            ? "/images/plugMemberModalDark.svg"
-            : "/images/plugMemberModal.svg";
 
     return (
         <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
@@ -41,22 +35,19 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
             )}
             <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
                 <div>
-                    <div className="w-[206px] h-[170px] relative mx-4 mt-11 dark:bg-CTAGradient bg-CTAGradientLight">
-                        {imageURL ? (
+                    <div className="w-[206px] h-[170px] relative mx-4 mt-11 ">
+                        <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                            <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                        </div>
+                        {imageURL && (
                             <Image
                                 src={imageURL}
                                 width={206}
                                 height={170}
-                                className="w-[206px] h-[170px]  object-cover"
+                                className="absolute top-0 left-0 w-[206px] h-[170px]  object-cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                placeholder="blur"
-                                blurDataURL={blurDataURLTab}
                             />
-                        ) : (
-                            <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                                <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
-                            </div>
                         )}
                     </div>
 
