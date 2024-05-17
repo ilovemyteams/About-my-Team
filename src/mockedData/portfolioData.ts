@@ -12,7 +12,7 @@ type DataType = {
 };
 export type PortfolioDataItemType = {
     data: DataType;
-    uk: PortfolioDataItemTranslation;
+    ua: PortfolioDataItemTranslation;
     en: PortfolioDataItemTranslation;
     pl: PortfolioDataItemTranslation;
 };
@@ -30,7 +30,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
         },
-        uk: {
+        ua: {
             name: "i love my team",
             siteView: "лендінг",
             description:
@@ -59,7 +59,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
         },
-        uk: {
+        ua: {
             name: "Смачно! на селі",
             siteView: "інтернет магазин",
             description:
@@ -89,7 +89,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
         },
-        uk: {
+        ua: {
             name: "Український театр",
             siteView: "вебсайт",
             description:
