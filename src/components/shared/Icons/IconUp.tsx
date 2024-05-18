@@ -1,4 +1,4 @@
-import { IconProps } from "./iconProps.interface";
+import { IconProps } from "../../../../types/iconProps.interface";
 
 export const IconUp = ({ className }: IconProps) => {
     return (

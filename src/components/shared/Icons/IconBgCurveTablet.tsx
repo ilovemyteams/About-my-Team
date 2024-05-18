@@ -1,4 +1,4 @@
-import { IconProps } from "./iconProps.interface";
+import { IconProps } from "../../../../types/iconProps.interface";
 
 export const IconBgCurveTablet = ({ className }: IconProps) => {
     return (

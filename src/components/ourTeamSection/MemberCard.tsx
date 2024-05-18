@@ -27,14 +27,6 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             <Link href={`/${locale}/member/${id}`}>
                 <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2]">
                     <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto z-[-1]">
-                        {/* <Image
-                            src="/images/bgImagesNotification/heart.svg"
-                            alt="background"
-                            width="0"
-                            height="0"
-                            sizes="100%"
-                            className="w-full h-full"
-                        /> */}
                         <IconHeart className="w-full h-full " />
                     </div>
                     {imageURL ? (
