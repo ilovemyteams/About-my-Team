@@ -45,7 +45,11 @@ export const FeedbackCard = ({
                     <p className="text-xs ml-2 ">{reviewerRole}</p>
                 </div>
                 <div className="absolute bottom-[15px] right-3">
-                    <a target="_blank" href={addProtocol(siteLink)}>
+                    <a
+                        target="_blank"
+                        href={addProtocol(siteLink)}
+                        rel="noopener noreferrer"
+                    >
                         <IconWebSite />
                     </a>
                 </div>

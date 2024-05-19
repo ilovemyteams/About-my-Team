@@ -44,6 +44,7 @@ export const FeedbackCardTextFromTab = ({
                     <a
                         target="_blank"
                         href={addProtocol(siteLink)}
+                        rel="noopener noreferrer"
                         className="block border-b dark:border-grey border-greyLight dark:pc:hover:text-red dark:pc:hover:border-red pc:hover:border-redLight
                          pc:hover:text-redLight dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight 
                          dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
