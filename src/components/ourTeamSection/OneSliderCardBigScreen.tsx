@@ -12,14 +12,20 @@ export const OneSliderCardBigScreen = ({
     optionType: string;
 }) => {
     const screenSizeName = useScreenSize();
-    const { tabletName, desktopXlName } = SCREEN_NAMES;
-    const CARDS_PER_PAGE =
-        screenSizeName === tabletName
-            ? 4
-            : screenSizeName === desktopXlName
-              ? 8
-              : 6;
+    const { desktopXlName, pcName, desktopName, tabletName } = SCREEN_NAMES;
+    let CARDS_PER_PAGE = 1;
 
+    if (screenSizeName === desktopXlName) {
+        CARDS_PER_PAGE = 8;
+    } else if (screenSizeName === pcName || screenSizeName === desktopName) {
+        CARDS_PER_PAGE = 6;
+    } else if (screenSizeName === tabletName) {
+        CARDS_PER_PAGE = 4;
+    }
+
+    if (CARDS_PER_PAGE === 1) {
+        return null;
+    }
     const cards = [];
     const isShowJoinUs = membersData.length % CARDS_PER_PAGE;
     const totalPages = Math.ceil(membersData.length / CARDS_PER_PAGE);
