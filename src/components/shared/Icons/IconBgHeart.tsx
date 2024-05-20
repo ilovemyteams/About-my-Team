@@ -1,8 +1,6 @@
-interface IconBgHeartProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconBgHeart = ({ className }: IconBgHeartProps) => {
+export const IconBgHeart = ({ className }: IconProps) => {
     return (
         <svg
             width="359"

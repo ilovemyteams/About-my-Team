@@ -5,6 +5,9 @@ export const MobileTitle = () => {
 
     return (
         <p className="tab:hidden">
+            <span className="text-purple-100">
+                {getTranslation("titleZeroWord")}
+            </span>
             {getTranslation("titleFirstWord")}
             <span className="text-purple-100">
                 {getTranslation("titleSecondWord")}

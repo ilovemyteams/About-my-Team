@@ -23,7 +23,6 @@ export const MemberCardsList = ({
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
 
     const isFirstRender = useRef(true);
-
     useEffect(() => {
         if (!isFirstRender.current && emblaApi) {
             // Reset the slider to the first slide whenever optionType changes

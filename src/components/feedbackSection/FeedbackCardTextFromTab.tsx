@@ -1,3 +1,4 @@
+import { addProtocol } from "@/src/utils/addProtocol";
 import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
 
@@ -10,6 +11,7 @@ export const FeedbackCardTextFromTab = ({
         localizationData;
 
     const siteTypeUp = siteView?.toUpperCase();
+
     return (
         <div className="flex flex-col tab:h-[377px] pc:h-[426px] ">
             <div className="tab:h-[302px] pc:h-[348px] ">
@@ -40,7 +42,9 @@ export const FeedbackCardTextFromTab = ({
                 </div>
                 <div className="tab:mt-[25px]">
                     <a
-                        href=""
+                        target="_blank"
+                        href={addProtocol(siteLink)}
+                        rel="noopener noreferrer"
                         className="block border-b dark:border-grey border-greyLight dark:pc:hover:text-red dark:pc:hover:border-red pc:hover:border-redLight
                          pc:hover:text-redLight dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight 
                          dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
