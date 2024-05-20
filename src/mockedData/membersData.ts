@@ -342,7 +342,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
-                behance: "https://www.behance.net/ad952d63",
+                behance: "https://www.behance.net/nazarenko_anastasiya",
                 telegram: "https://t.me/NazarenkoAnastasiya",
             },
             tools: [

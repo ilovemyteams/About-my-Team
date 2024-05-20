@@ -9,19 +9,20 @@
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
-        "titlePartForMob": "to develop our customers' ",
+        "titlePartForMob": "our customers' ",
         "titleFirstWord": "Implemented  ",
         "titleSecondWord": "projects",
         "titleThirdWord": " that have already ",
-        "titleFourthWord": "helped ",
-        "titleFifthWord": "to develop",
-        "titleFifthWordDesk": "to develop",
+        "titleFourthWord": "helped to develop ",
+        "titleFifthWord": "",
+        "titleFifthWordDesk": "",
         "titleSixthWord": "our customers'  ",
         "titleSixthWordDesk": "our customers' ",
         "titleSeventhWord": "businesses"
     },
     "Mission": {
         "pageTitle": "Our mission",
+        "titleZeroWord": "",
         "titleFirstWord": "Create ",
         "titleSecondWord": "impressive ",
         "titleThirdWord": "digital",
@@ -41,8 +42,8 @@
         "pageTitle": "Reviews",
         "titleFirstWord": "What our ",
         "titleSecondWord": "customers ",
-        "titleThirdWord": "say about ",
-        "titleFourthWord": "us"
+        "titleThirdWord": "say ",
+        "titleFourthWord": "about us"
     },
     "JoinTheTeam": {
         "title": "Tell us about your unique skills and join our team"
@@ -134,8 +135,8 @@
         "titleThirdWord": "your ",
         "titleFourthWord": "business ",
         "titleFifthWord": "ideas ",
-        "titleSixthWord": "together with ",
-        "titleSeventhWord": "us",
+        "titleSixthWord": "together ",
+        "titleSeventhWord": "with us",
         "privacyPolicy": "privacy policy",
         "copyright": "2024, i love my team"
     },

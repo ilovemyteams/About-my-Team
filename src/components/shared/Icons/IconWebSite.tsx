@@ -1,8 +1,6 @@
-interface IconWebSiteProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconWebSite = ({ className }: IconWebSiteProps) => {
+export const IconWebSite = ({ className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

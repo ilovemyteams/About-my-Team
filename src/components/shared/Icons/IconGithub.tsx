@@ -1,8 +1,6 @@
-interface iconGithubProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconGithub = ({ className }: iconGithubProps) => {
+export const IconGithub = ({ className }: IconProps) => {
     return (
         <svg
             width="29"

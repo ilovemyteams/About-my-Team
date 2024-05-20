@@ -1,8 +1,6 @@
-interface iconBgCurveDesktopProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconBgCurveDesktop = ({ className }: iconBgCurveDesktopProps) => {
+export const IconBgCurveDesktop = ({ className }: IconProps) => {
     return (
         <svg
             width="0"

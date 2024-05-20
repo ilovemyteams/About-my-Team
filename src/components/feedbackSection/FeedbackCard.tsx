@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { IconWebSite } from "../shared/Icons/IconWebSite";
+import { addProtocol } from "@/src/utils/addProtocol";
 
 export interface FeedbackCardItemProps {
     data: {
@@ -44,7 +45,11 @@ export const FeedbackCard = ({
                     <p className="text-xs ml-2 ">{reviewerRole}</p>
                 </div>
                 <div className="absolute bottom-[15px] right-3">
-                    <a href={siteLink}>
+                    <a
+                        target="_blank"
+                        href={addProtocol(siteLink)}
+                        rel="noopener noreferrer"
+                    >
                         <IconWebSite />
                     </a>
                 </div>

@@ -13,6 +13,7 @@ import { IconCloseX } from "../Icons/IconCloseX";
 import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
 import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { IconHeart } from "../Icons/IconHeart";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;
@@ -87,12 +88,8 @@ export const NotificationModal = ({
                             ? getTranslation("tryAgain")
                             : getTranslation("waitResponse")}
                     </p>
-                    <Image
-                        src="/images/bgImagesNotification/heart.svg"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
+
+                    <IconHeart
                         className={`${isError ? "hidden" : "block"} w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8`}
                     />
                     <Image

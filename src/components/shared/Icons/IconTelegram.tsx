@@ -1,8 +1,6 @@
-interface iconTelegramProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconTelegram = ({ className }: iconTelegramProps) => {
+export const IconTelegram = ({ className }: IconProps) => {
     return (
         <svg
             width="21"

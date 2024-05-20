@@ -36,8 +36,11 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                 )}
 
                 <div className="h-[60px] flex items-end gap-[8px] my-4 ml-2">
-                    <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
-                        {imageURL ? (
+                    <div className="relative w-[60px] h-[60px] rounded-full overflow-hidden ">
+                        <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                            <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                        </div>
+                        {imageURL && (
                             <Image
                                 src={imageURL}
                                 width={60}
@@ -45,11 +48,8 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                                 objectFit="cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
+                                className="absolute top-0 left-0"
                             />
-                        ) : (
-                            <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                                <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
-                            </div>
                         )}
                     </div>
                     <div className="">

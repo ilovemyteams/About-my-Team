@@ -1,8 +1,6 @@
-interface IconWhatsappProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconWhatsapp = ({ className }: IconWhatsappProps) => {
+export const IconWhatsapp = ({ className }: IconProps) => {
     return (
         <svg
             width="20"
