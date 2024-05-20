@@ -88,7 +88,6 @@ export const NotificationModal = ({
                             ? getTranslation("tryAgain")
                             : getTranslation("waitResponse")}
                     </p>
-
                     <IconHeart
                         className={`${isError ? "hidden" : "block"} w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8`}
                     />
