@@ -46,6 +46,7 @@ export const WriteUsValidation = () => {
             .matches(facebookRegex, getTranslation("wrongFacebook")),
         message: yup
             .string()
+            .trim()
             .min(10, getTranslation("messageMinMaxSymbols"))
             .max(300, getTranslation("messageMinMaxSymbols"))
             .required(getTranslation("required")),
