@@ -380,7 +380,7 @@ export const membersData: MemberDataItemType[] = [
             id: "EugeneSerdiuk",
             projectId: ["2"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=15hnEzYCWoYdbyQ2odDZxQVx5ruAfjOuQ",
+                "https://drive.google.com/uc?export=view&id=1Me_DV0bkJvBLGxPBQbrmGjS5uK-VcW8z",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com"],
