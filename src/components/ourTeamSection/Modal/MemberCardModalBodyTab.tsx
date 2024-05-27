@@ -29,7 +29,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
         <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
             {pricePerHour && (
                 <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
-                    {`from ${pricePerHour} $/h`}
+                    {`${getTranslation("from")} ${pricePerHour} $/${getTranslation("h")}`}
                 </div>
             )}
             <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
