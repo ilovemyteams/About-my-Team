@@ -3,7 +3,7 @@ import { IconHeart } from "../shared/Icons/IconHeart";
 
 const preLoadingCard = (
     <>
-        <div className="relative min-w-[128px] overflow-hidden tab:min-w-[230px] tab:aspect-[230/180] pc:aspect-[246/184] tab:mr-2 pc:mr-3 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight">
+        <div className="relative min-w-[128px] overflow-hidden tab:min-w-[230px] tab:aspect-[230/180] pc:aspect-[246/184] tab:mr-2 pc:mr-3 pc:mb-3 dark:bg-CTAGDarcModalradient bg-CTAGradientLight">
             <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto">
                 <IconHeart className="w-full h-full " />
             </div>

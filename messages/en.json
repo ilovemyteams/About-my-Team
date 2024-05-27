@@ -190,10 +190,12 @@
     },
 
     "MemberCardModal": {
-        "about": "About us",
+        "about": "About myself",
         "services": "Services",
         "tools": "Tools",
-        "projectsExperience": "Projects/Experience"
+        "projectsExperience": "Projects/Experience",
+        "from": "from",
+        "h": "h"
     },
 
     "Cookies": {
