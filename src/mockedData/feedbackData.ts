@@ -29,7 +29,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Смачно! на селі",
             siteView: "інтернет магазин",
             reviewer: "Сергій",
-            reviewerRole: "Підприємець, власник ферми",
+            reviewerRole: "Підприємець та власник ферми",
             feedbackText:
                 "Чудовий дизайн та класна ідея! Ще крутіша вийшла реалізація. Я не думав, що нудну діяльність фермера на землі можна так цікаво обіграти. Покупці моїх овочів у захваті від мого сайту. Я тільки висадив першу розсаду в теплицю, а вже отримав 100 замовлень на майбутній врожай помідорів.",
         },
@@ -37,15 +37,17 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Smachno! na seli",
             siteView: "online store",
             reviewer: "Sergii",
-            reviewerRole: "Entrepreneur, farm owner",
-            feedbackText: "Переклад на анг",
+            reviewerRole: "Entrepreneur and the farm owner.",
+            feedbackText:
+                "Great design and a cool idea! the implementation was even better. I had never thought that the boring work of a farmer could be shown in such an amusing manner. my customers are delighted with my site. I've just planted the first dew in the greenhouse, and already received 100 orders for the next tomato harvest.",
         },
         pl: {
             siteName: "Smachno! na seli",
             siteView: "sklep internetowy",
             reviewer: "Sergii",
-            reviewerRole: "Przedsiębiorca, właściciel gospodarstwa rolnego",
-            feedbackText: "Переклад на поль",
+            reviewerRole: "Przedsiębiorca i właściciel gospodarstwa",
+            feedbackText:
+                "Świetny projekt i fajny pomysł! Realizacja była nawet jeszcze lepsza. Nie sądziłem, że nudną działalność rolnika można odtworzyć w tak interesujący sposób. Moi klienci są zachwyceni moją stronę internetową. Właśnie zasadziłem pierwsze sadzonki w szklarni i otrzymałem już 100 zamówień na następne zbiory pomidorów.",
         },
     },
 ];
