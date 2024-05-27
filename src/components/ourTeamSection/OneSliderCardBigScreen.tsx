@@ -4,6 +4,11 @@ import { MemberDataItemType } from "../../mockedData/membersData";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { Skeleton } from "./Skeleton";
+import {
+    DESKXL_CARDS_PER_PAGE,
+    PC_CARDS_PER_PAGE,
+    TABLET_CARDS_PER_PAGE,
+} from "@/src/constants/cardsPerPage";
 
 export const OneSliderCardBigScreen = ({
     membersData,
@@ -17,11 +22,11 @@ export const OneSliderCardBigScreen = ({
     let CARDS_PER_PAGE = 1;
 
     if (screenSizeName === desktopXlName) {
-        CARDS_PER_PAGE = 8;
+        CARDS_PER_PAGE = DESKXL_CARDS_PER_PAGE;
     } else if (screenSizeName === pcName || screenSizeName === desktopName) {
-        CARDS_PER_PAGE = 6;
+        CARDS_PER_PAGE = PC_CARDS_PER_PAGE;
     } else if (screenSizeName === tabletName) {
-        CARDS_PER_PAGE = 4;
+        CARDS_PER_PAGE = TABLET_CARDS_PER_PAGE;
     }
 
     const cards = [];
