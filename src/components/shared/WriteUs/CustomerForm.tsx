@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
+import axios from "axios";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
-import { appendToSheet } from "@/src/api/appendToSheetData";
 import { IconLoader } from "../Icons/IconLoader";
 
 interface CustomerFormProps {
@@ -64,7 +64,7 @@ export const CustomerForm = ({
     const submitForm = async (values: ValuesWriteUsFormType) => {
         try {
             setIsLoading(true);
-            const newRow = {
+            const data = {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
                 telegram: values.telegram.trim(),
@@ -73,7 +73,14 @@ export const CustomerForm = ({
                 facebook: values.facebook.trim(),
                 message: values.message.trim(),
             };
-            await appendToSheet(newRow);
+            await axios({
+                method: "post",
+                url: "/api/sendData",
+                data,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             onClose?.();
         } catch (error) {
             setIsError(true);

@@ -18,7 +18,10 @@ const INITIAL_OPTIONS = {
 
 export const OurTeamSection = () => {
     const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
-    const [filteredData, setFilteredData] = useState(membersData);
+    const defaultMembersData = membersData.filter(member => {
+        return member.data.projectId.includes("1");
+    });
+    const [filteredData, setFilteredData] = useState(defaultMembersData);
 
     useEffect(() => {
         if (selectedOption.optionType === "person") {

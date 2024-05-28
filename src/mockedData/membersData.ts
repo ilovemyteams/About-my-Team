@@ -27,7 +27,7 @@ export type DataType = {
 
 export type MemberDataItemType = {
     data: DataType;
-    uk: MemberDataItemTranslation;
+    ua: MemberDataItemTranslation;
     en: MemberDataItemTranslation;
     pl: MemberDataItemTranslation;
 };
@@ -66,7 +66,7 @@ export const membersData: MemberDataItemType[] = [
                 "A/B test",
             ],
         },
-        uk: {
+        ua: {
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
@@ -111,7 +111,7 @@ export const membersData: MemberDataItemType[] = [
                 "Adobe Photoshop",
             ],
         },
-        uk: {
+        ua: {
             name: "Марія Попова",
             about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
             services:
@@ -120,14 +120,14 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Mariia Popova",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Mariia Popova",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -161,7 +161,7 @@ export const membersData: MemberDataItemType[] = [
                 "Teams",
             ],
         },
-        uk: {
+        ua: {
             name: "Світлана Кондратенко",
             about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
             services:
@@ -170,14 +170,14 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Svitlana Kondratenko",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Svitlana Kondratenko",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -211,7 +211,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Влад Шумков",
             about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
             services:
@@ -221,13 +221,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Vlad Shumkov",
             about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
-            services: "Тут має бути переклад на англ",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Vlad Shumkov",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -268,23 +268,23 @@ export const membersData: MemberDataItemType[] = [
                 "React",
             ],
         },
-        uk: {
+        ua: {
             name: "Ігор Дронішинець",
-            about: "Про себе цитата",
+            about: "",
             services:
                 "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама",
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
-            about: "There will be text in English",
+            about: "",
             services:
                 "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
             team: "I Love My Team",
         },
         pl: {
             name: "Ihor Dronishynets",
-            about: "There will be text in Polish",
+            about: "",
             services:
                 "Pełny cykl rozwoju strony internetowej od logo i brandingu do wydania produktu i przekazania praw dostępu klientowi.",
             team: "I Love My Team",
@@ -307,7 +307,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: ["Figma", "Jira", "Adobe Photoshop", "Adobe Illustrator"],
         },
-        uk: {
+        ua: {
             name: "Ірина Столярова",
             about: "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
             services:
@@ -342,7 +342,7 @@ export const membersData: MemberDataItemType[] = [
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
-                behance: "https://www.behance.net/ad952d63",
+                behance: "https://www.behance.net/nazarenko_anastasiya",
                 telegram: "https://t.me/NazarenkoAnastasiya",
             },
             tools: [
@@ -353,7 +353,7 @@ export const membersData: MemberDataItemType[] = [
                 "Jira",
             ],
         },
-        uk: {
+        ua: {
             name: "Анастасія Назаренко",
             about: "Дизайнер - це стратег з почуттям прекрасного.",
             services:
@@ -380,7 +380,7 @@ export const membersData: MemberDataItemType[] = [
             id: "EugeneSerdiuk",
             projectId: ["2"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=15hnEzYCWoYdbyQ2odDZxQVx5ruAfjOuQ",
+                "https://drive.google.com/uc?export=view&id=1Me_DV0bkJvBLGxPBQbrmGjS5uK-VcW8z",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com"],
@@ -403,23 +403,23 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Євген Сердюк",
-            about: "Цитата про себе",
+            about: "",
             services:
                 "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
-            about: "Цитата про себе на англ",
-            services: "Тут має бути переклад на англ",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Eugene Serdiuk",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -448,7 +448,7 @@ export const membersData: MemberDataItemType[] = [
                 "Node.js",
             ],
         },
-        uk: {
+        ua: {
             name: "Ірина Тринкаль",
             about: "Можливо все, на неможливе просто потрібно більше часу.",
             services:
@@ -501,7 +501,7 @@ export const membersData: MemberDataItemType[] = [
     //             "Trello",
     //         ],
     //     },
-    //     uk: {
+    //     ua: {
     //         name: "Наталія Пащенко",
     //         about: "Можливо досягти чого завгодно, потрібно лише знайти правильний шлях",
     //         services: "Тут буде шось таки написано",
@@ -548,7 +548,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Олена Постернак",
             about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
             services:
@@ -600,7 +600,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Ольга Михайлова",
             about: "Люблю знаходити елегантні рішення для складних задач",
             services:
@@ -652,7 +652,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Катерина Рубанік",
             about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту",
             services:
@@ -713,7 +713,7 @@ export const membersData: MemberDataItemType[] = [
                 "Exploratory Testing Chrome Extension",
             ],
         },
-        uk: {
+        ua: {
             name: "Катерина Погребна",
             about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
             services:
@@ -762,7 +762,7 @@ export const membersData: MemberDataItemType[] = [
                 "Gantt Chart",
             ],
         },
-        uk: {
+        ua: {
             name: "Дар'я Червякова",
             about: "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
             services:
@@ -821,7 +821,7 @@ export const membersData: MemberDataItemType[] = [
                 "Python",
             ],
         },
-        uk: {
+        ua: {
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
@@ -831,13 +831,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
-            services: "Переклад",
+            services: "",
             team: "I Love My Team",
         },
         pl: {
             name: "Susanna Salata",
             about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services: "Переклад",
+            services: "",
             team: "I Love My Team",
         },
     },
@@ -867,23 +867,23 @@ export const membersData: MemberDataItemType[] = [
                 "Figma",
             ],
         },
-        uk: {
+        ua: {
             name: "Ольга Кучальська",
-            about: "Цитата про себе ",
+            about: "",
             services:
                 "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
             team: "I Love My Team",
         },
         en: {
             name: "Olha Kuchalska",
-            about: "Text in en",
+            about: "",
             services:
                 "Analysis of the customer's business needs. Data analysis. Market and competitor analysis. Developing, analyzing, organizing and formalizing requirements. Comunication management between developers and stakeholders. Writing technical documentation, user-story. Basic testing skills and SQL knowledge. Knowledge of SDLC, agile methodologies and basic management knowledge. Excellent communication skills.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olha Kuchalska",
-            about: "There will be text in Polish",
+            about: "h",
             services:
                 "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
             team: "I Love My Team",
@@ -921,9 +921,9 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
         },
-        uk: {
+        ua: {
             name: "Денис Слівінський",
-            about: "Цитата про себе",
+            about: "Справжня дурість щоразу перемагає штучний інтелект",
             services:
                 "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та NodeJS.",
             team: "Смачно! на селі",
@@ -931,13 +931,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Denis Slivinskyi",
             about: "Real stupidity beats artificial intelligence every time",
-            services: "Тут має бути переклад на англ",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Denis Slivinskyi",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -968,9 +968,9 @@ export const membersData: MemberDataItemType[] = [
                 "Docker",
             ],
         },
-        uk: {
+        ua: {
             name: "Володимир Дегтярев",
-            about: "Цитата про себе",
+            about: "Нічого не вийде, якщо ви цього не зробите",
             services:
                 "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
             team: "Смачно! на селі",
@@ -978,13 +978,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Volodymyr Dehtiarev",
             about: "Nothing will work unless you do",
-            services: "Тут має бути переклад на англ",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Volodymyr Dehtiarev",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -1012,9 +1012,9 @@ export const membersData: MemberDataItemType[] = [
                 "DevTools",
             ],
         },
-        uk: {
+        ua: {
             name: "Олена Чорнобривець",
-            about: "Цитата про себе",
+            about: "Забезпечення якості означає запобігання помилкам",
             services:
                 "Ручне мобільне/веб тестування, API тестування, створення тестової документації: тест кейс, чекліст, баг репорт",
             team: "Смачно! на селі",
@@ -1022,13 +1022,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Olena Chornobryvets",
             about: "Quality assurance means preventing errors",
-            services: "Тут має бути переклад на англ",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Olena Chornobryvets",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -1063,10 +1063,10 @@ export const membersData: MemberDataItemType[] = [
                 "VSCode",
             ],
         },
-        uk: {
+        ua: {
             name: "Ганна Горбенко",
-            about: "Цитата про себе",
-            services: "Тут має бути переклад на укр",
+            about: "QA для мене це як цифровий детектив. Процес розслідування мене захоплює!",
+            services: "",
             team: "Смачно! на селі",
         },
         en: {
@@ -1078,8 +1078,8 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Hanna Horbenko",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -1113,9 +1113,9 @@ export const membersData: MemberDataItemType[] = [
                 "Zendesk",
             ],
         },
-        uk: {
+        ua: {
             name: "Анна Клиба",
-            about: "Цитата про себе",
+            about: "QA є ключем до надійності та довіри до продукту",
             services:
                 "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
             team: "Смачно! на селі",
@@ -1123,13 +1123,13 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Anna Klyba",
             about: "QA is the key to reliability and trust in the product",
-            services: "Тут має бути переклад на англ",
+            services: "",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Anna Klyba",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
+            about: "",
+            services: "",
             team: "Smachno! na seli",
         },
     },
@@ -1162,7 +1162,7 @@ export const membersData: MemberDataItemType[] = [
                 "Postgres",
             ],
         },
-        uk: {
+        ua: {
             name: "Антон Черток",
             about: "Цитата про себе",
             services:

@@ -318,6 +318,9 @@ const config: Config = {
                 "linear-gradient(to left, #A175FF 0%, #B28DFF 19%, #D0B9FF 37%, #E9DEFF 54%, #F6EFFF 75%, #F9F8FF 100%)",
             CTAGradient:
                 "linear-gradient(to right, #6607B1 0%, #3C0566 50%, #1E003D 100%)",
+            CTAGDarcModalradient:
+                "linear-gradient(to right, #6607B1 0%, #3C0566 25%, #1E003D 100%)",
+
             CTAGradientLight:
                 "linear-gradient(to right, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
             feedbackMobCardGradient:

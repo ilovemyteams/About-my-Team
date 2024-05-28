@@ -30,7 +30,7 @@ export default function LocaleSwitcher() {
                             curLocale === locale ? activeStyle : inactiveStyle
                         }
                     >
-                        {curLocale === "uk" ? "ua" : curLocale}
+                        {curLocale}
                     </Link>
                 </li>
             ))}

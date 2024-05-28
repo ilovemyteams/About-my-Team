@@ -1,8 +1,6 @@
-interface iconBehanceProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconBehance = ({ className }: iconBehanceProps) => {
+export const IconBehance = ({ className }: IconProps) => {
     return (
         <svg
             width="32"

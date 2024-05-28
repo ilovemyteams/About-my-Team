@@ -18,6 +18,7 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     if (!displayedMember) {
         notFound();
     }
+
     return (
         <Modal>
             <MemberCardModalBody data={displayedMember} />

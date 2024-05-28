@@ -22,7 +22,6 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
         projectsExperience,
         socialLinks,
     } = data.data;
-
     const getTranslation = useTranslations("MemberCardModal");
     const locale = useLocale();
 
@@ -30,25 +29,24 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
         <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
             {pricePerHour && (
                 <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
-                    {`from ${pricePerHour} $/h`}
+                    {`${getTranslation("from")} ${pricePerHour} $/${getTranslation("h")}`}
                 </div>
             )}
             <div className="flex flex-col justify-between border-r border-purple-strokeLight dark:border-purple-stroke">
                 <div>
-                    <div className="w-[206px] h-[170px] relative mx-4 mt-11">
-                        {imageURL ? (
+                    <div className="w-[206px] h-[170px] relative mx-4 mt-11 ">
+                        <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                            <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
+                        </div>
+                        {imageURL && (
                             <Image
                                 src={imageURL}
                                 width={206}
                                 height={170}
-                                className="w-[206px] h-[170px]  object-cover"
+                                className="absolute top-0 left-0 w-[206px] h-[170px]  object-cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
                             />
-                        ) : (
-                            <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                                <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
-                            </div>
                         )}
                     </div>
 

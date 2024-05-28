@@ -33,7 +33,7 @@ export const BgImagesMobile = () => {
                 width="0"
                 height="0"
                 sizes="100%"
-                className="block tab:hidden dark:hidden absolute bottom-0 left-0 z-[-10] w-[320px] h-[248px]"
+                className="block tab:hidden dark:hidden absolute bottom-0 left-0 z-[-10] w-[320px] min-h-[232px]"
             />
         </>
     );

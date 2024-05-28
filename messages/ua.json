@@ -22,6 +22,7 @@
     },
     "Mission": {
         "pageTitle": "Наша місія",
+        "titleZeroWord": "",
         "titleFirstWord": "Створюємо ",
         "titleSecondWord": "вражаючі ",
         "titleThirdWord": "цифрові",
@@ -157,10 +158,10 @@
         "messageLabel": "Ваше повідомлення*",
         "namePlaceholder": "Сусанна",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/susannasalata або @susanna",
-        "linkedinPlaceholder": "linkedin.com/ln/susannasalata",
-        "instagramPlaceholder": "instagram.com/susannasalata",
-        "facebookPlaceholder": "facebook.com/susannasalata",
+        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
+        "instagramPlaceholder": "instagram.com/susanna-salata",
+        "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Ваше повідомлення важливе для нас",
         "requiredField": "*Поля, обов'язкові для заповнення",
         "informedAgreement": "Натискаючи кнопку “Надіслати”, ви погоджуєтесь з ",
@@ -190,7 +191,9 @@
         "about": "Про себе",
         "services": "Послуги",
         "tools": "Інструменти",
-        "projectsExperience": "Проекти/Досвід"
+        "projectsExperience": "Проекти/Досвід",
+        "from": "від",
+        "h": "год"
     },
     "Cookies": {
         "text": " Цей сайт використовує файли cookies для правильної роботи і покращення сервісу. Якщо ви погоджуєтесь з їхнім використанням, натисніть ОК. Більше інформації в ",

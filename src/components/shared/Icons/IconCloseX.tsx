@@ -1,8 +1,6 @@
-interface iconCloseXProps {
-    className?: string;
-}
+import { IconProps } from "../../../../types/iconProps.interface";
 
-export const IconCloseX = ({ className }: iconCloseXProps) => {
+export const IconCloseX = ({ className }: IconProps) => {
     return (
         <svg
             width="24"
