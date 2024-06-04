@@ -34,7 +34,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             src={imageURL}
                             width={246}
                             height={196}
-                            className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
+                            className="cursor-pointer object-cover min-w-[128px]  w-full 
                                 aspect-[128/150] tab:aspect-[234/186] pc:aspect-[246/196] "
                             alt={data[locale as LocaleType]?.name}
                             loading="lazy"
