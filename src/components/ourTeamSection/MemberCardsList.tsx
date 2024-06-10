@@ -44,13 +44,13 @@ export const MemberCardsList = ({
                     {membersData.map(data => (
                         <li
                             key={data.data.id}
-                            className={`embla__slide mama flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
+                            className={`embla__slide  flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
                         >
                             <MemberCard data={data} />
                         </li>
                     ))}
                     {optionType === "person" && (
-                        <li className="embla__slide papa flex-[0_0_50%] w-full border border-purple-strokeLight dark:border-purple-stroke border-r-0 even:ml-[-1px]">
+                        <li className="embla__slide  flex-[0_0_50%] w-full border border-purple-strokeLight dark:border-purple-stroke border-r-0 even:ml-[-1px]">
                             <JoinUsCard />
                         </li>
                     )}

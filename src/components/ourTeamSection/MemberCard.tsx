@@ -30,25 +30,15 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                         <IconHeart className="w-full h-full " />
                     </div>
                     {imageURL ? (
-                        <>
-                            <Image
-                                src={imageURL}
-                                width={128}
-                                height={150}
-                                className="tab:hidden hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px] aspect-[128/150] w-full "
-                                alt={data[locale as LocaleType]?.name}
-                                loading="lazy"
-                            />
-                            <Image
-                                src={imageURL}
-                                width={246}
-                                height={196}
-                                className="hidden tab:block hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
-                            tab:aspect-[234/186] pc:aspect-[246/196] "
-                                alt={data[locale as LocaleType]?.name}
-                                loading="lazy"
-                            />
-                        </>
+                        <Image
+                            src={imageURL}
+                            width={246}
+                            height={196}
+                            className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
+                                aspect-[128/150] tab:aspect-[234/186] pc:aspect-[246/196] "
+                            alt={data[locale as LocaleType]?.name}
+                            loading="lazy"
+                        />
                     ) : (
                         <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
                             <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
