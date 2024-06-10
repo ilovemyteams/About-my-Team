@@ -39,7 +39,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Sergii",
             reviewerRole: "Entrepreneur and the farm owner.",
             feedbackText:
-                "Great design and a cool idea! the implementation was even better. I had never thought that the boring work of a farmer could be shown in such an amusing manner. my customers are delighted with my site. I've just planted the first dew in the greenhouse, and already received 100 orders for the next tomato harvest.",
+                "Great design and a cool idea! The implementation was even better. I had never thought that the boring work of a farmer could be shown in such an amusing manner. My customers are delighted with my site. I've just planted the first seedlings in the greenhouse, and already received 100 orders for the next tomato harvest.",
         },
         pl: {
             siteName: "Smachno! na seli",
