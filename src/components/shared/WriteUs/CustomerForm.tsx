@@ -32,7 +32,7 @@ const labelStyles =
     "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
 const labelTextAreaStyles =
     "relative w-full h-[122px] pb-[12px] outline-none text-base";
-const textLabelStyles = "absolute transition-translate duration-300 ease-out";
+const textLabelStyles = "absolute transition-[top] duration-300 ease-out";
 const fieldStyles =
     "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
 const textAreaStyles =
