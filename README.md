@@ -5,7 +5,21 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with
 
 ## Getting Started
 
-First, run the development server:
+First, make sure you have Node.js installed on your machine
+
+Second, open the terminal in your IDE and install the necessary dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Third, open the terminal in your IDE and run the development server:
 
 ```bash
 npm run dev
@@ -19,6 +33,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 result.
+
+## Warning
+
+To work with the project, you need an .env file, which you can get from the
+developers.
 
 ## Learn More
 
