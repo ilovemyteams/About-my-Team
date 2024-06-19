@@ -11,11 +11,11 @@ import { portfolioData } from "../../mockedData/portfolioData";
 import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
-// const INITIAL_OPTIONS = {
-//     optionName: "i love my team",
-//     optionValue: "1",
-//     optionType: "team",
-// };
+const INITIAL_OPTIONS = {
+    optionName: "i love my team",
+    optionValue: "1",
+    optionType: "team",
+};
 
 export const OurTeamSection = () => {
     const router = useRouter();
@@ -23,9 +23,12 @@ export const OurTeamSection = () => {
     const searchParams = useSearchParams();
 
     const getInitialOptionFromUrl = () => {
-        const optionValue = searchParams.get("optionValue") || "1";
-        const optionType = searchParams.get("optionType") || "team";
-        const optionName = searchParams.get("optionName") || "i love my team";
+        const optionValue =
+            searchParams.get("optionValue") || INITIAL_OPTIONS.optionValue;
+        const optionType =
+            searchParams.get("optionType") || INITIAL_OPTIONS.optionType;
+        const optionName =
+            searchParams.get("optionName") || INITIAL_OPTIONS.optionName;
         return {
             optionName,
             optionValue,
