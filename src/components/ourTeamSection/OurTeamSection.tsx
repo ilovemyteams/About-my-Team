@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import { Section } from "../shared/Section";
 import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
@@ -10,20 +11,43 @@ import { portfolioData } from "../../mockedData/portfolioData";
 import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
-const INITIAL_OPTIONS = {
-    optionName: "i love my team",
-    optionValue: "1",
-    optionType: "team",
-};
+// const INITIAL_OPTIONS = {
+//     optionName: "i love my team",
+//     optionValue: "1",
+//     optionType: "team",
+// };
 
 export const OurTeamSection = () => {
-    const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+
+    const getInitialOptionFromUrl = () => {
+        const optionValue = searchParams.get("optionValue") || "1";
+        const optionType = searchParams.get("optionType") || "team";
+        const optionName = searchParams.get("optionName") || "i love my team";
+        return {
+            optionName,
+            optionValue,
+            optionType,
+        };
+    };
+
+    const [selectedOption, setSelectedOption] = useState(
+        getInitialOptionFromUrl
+    );
     const defaultMembersData = membersData.filter(member => {
         return member.data.projectId.includes("1");
     });
     const [filteredData, setFilteredData] = useState(defaultMembersData);
 
     useEffect(() => {
+        const params = new URLSearchParams();
+        params.set("optionValue", selectedOption.optionValue);
+        params.set("optionType", selectedOption.optionType);
+        params.set("optionName", selectedOption.optionName);
+        router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+
         if (selectedOption.optionType === "person") {
             const filtered = membersData.filter(
                 member =>
@@ -45,7 +69,7 @@ export const OurTeamSection = () => {
                 setFilteredData([]);
             }
         }
-    }, [selectedOption]);
+    }, [pathname, router, selectedOption]);
 
     return (
         <Section id="team">
