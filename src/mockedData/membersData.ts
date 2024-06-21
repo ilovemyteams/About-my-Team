@@ -298,7 +298,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "greyplaza.com.ua"],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -579,7 +579,11 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "greyplaza.com.ua",
+                "kuharskyivulyk.com.ua",
+            ],
 
             pricePerHour: "10",
             socialLinks: {
