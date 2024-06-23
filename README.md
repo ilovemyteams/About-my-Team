@@ -60,3 +60,16 @@ from the creators of Next.js.
 Check out our
 [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
 details.
+
+### Sanity
+
+### Important files and folders
+
+| File(s)                           | Description                                              |
+| --------------------------------- | -------------------------------------------------------- |
+| `sanity.config.ts`                |  Config file for Sanity Studio                           |
+| `sanity.cli.ts`                   |  Config file for Sanity CLI                              |
+| `/src/app/studio/[[...tool]].tsx` |  Where Sanity Studio is mounted                          |
+| `/schemas`                        |  Where Sanity Studio gets its content types from         |
+| `/plugins`                        |  Where the advanced Sanity Studio customization is setup |
+| `/lib/api.ts`,`/lib/image.ts`     | Configuration for the Sanity Content Lake client         |
