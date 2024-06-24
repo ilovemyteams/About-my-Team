@@ -46,7 +46,9 @@ import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 
 const blocks = [portableTextType, portableTextSimpleType];
 
-const documents = [];
+import { colorThemeType } from "./documents/colorTheme";
+
+const documents = [colorThemeType];
 
 import { homeType } from "./singletons/homeType";
 import { settingsType } from "./singletons/settingsType";
