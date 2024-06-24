@@ -1,5 +1,5 @@
 import { TagIcon } from "@sanity/icons";
-import pluralize from "pluralize-esm";
+// import pluralize from "pluralize-esm";
 import { defineField } from "sanity";
 
 export const productFeaturesType = defineField({
@@ -35,19 +35,19 @@ export const productFeaturesType = defineField({
             validation: Rule => Rule.required(),
         }),
     ],
-    preview: {
-        // select: {
-        //     products: "products",
-        // },
-        prepare({ products = [] }) {
-            return {
-                subtitle: "Products",
-                title:
-                    products.length > 0
-                        ? pluralize("product", products.length, true)
-                        : "No products",
-                media: TagIcon,
-            };
-        },
-    },
+    // preview: {
+    //     // select: {
+    //     //     products: "products",
+    //     // },
+    //     prepare({ products = [] }) {
+    //         return {
+    //             subtitle: "Products",
+    //             title:
+    //                 products.length > 0
+    //                     ? pluralize("product", products.length, true)
+    //                     : "No products",
+    //             media: TagIcon,
+    //         };
+    //     },
+    // },
 });
