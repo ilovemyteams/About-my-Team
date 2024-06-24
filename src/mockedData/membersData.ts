@@ -748,7 +748,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
                 telegram: "https://t.me/Dari_Chap",
@@ -954,7 +954,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
                 github: "https://github.com/VladimirDegt",
