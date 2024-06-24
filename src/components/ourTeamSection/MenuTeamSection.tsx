@@ -1,12 +1,12 @@
 "use client";
 import { useState, Dispatch, SetStateAction, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useRouter, useSearchParams } from "next/navigation";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 import { categoryNames } from "../../mockedData/categoryNames";
 import { СategoryNamesProp } from "../../mockedData/categoryNames";
 import { IconUp } from "../shared/Icons/IconUp";
-import { useRouter, useSearchParams } from "next/navigation";
 
 interface MenuProps {
     selectedOption: {
