@@ -13,7 +13,7 @@ const socialLinksData = [
         image: <IconBehance />,
     },
     {
-        url: "https://github.com/Ilovemyteam",
+        url: "https://github.com/Ilovemyteams",
         image: <IconGithub />,
     },
 ];
