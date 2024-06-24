@@ -1,5 +1,6 @@
 "use client";
 import { useState, Dispatch, SetStateAction } from "react";
+import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
@@ -28,6 +29,7 @@ export const MenuTeamSection = ({
 }: MenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const locale = useLocale();
+    const router = useRouter();
     const getTranslation = useTranslations("OurTeam");
 
     const handleOptionSelectProjectTeam = ({
@@ -44,6 +46,13 @@ export const MenuTeamSection = ({
             optionValue: projectId,
             optionType,
         };
+        const params = new URLSearchParams();
+        params.set("optionName", selected.optionName);
+        params.set("optionValue", selected.optionValue);
+        params.set("optionType", selected.optionType);
+        const query = params.toString();
+        const hash = `#team`;
+        router.replace(`?${query}${hash}`, { scroll: false });
         setSelectedOption(selected);
         setIsOpen(false);
     };
@@ -54,6 +63,13 @@ export const MenuTeamSection = ({
             optionValue: category.categoryName,
             optionType: "person",
         };
+        const params = new URLSearchParams();
+        params.set("optionName", selected.optionName);
+        params.set("optionValue", selected.optionValue);
+        params.set("optionType", selected.optionType);
+        const query = params.toString();
+        const hash = `#team`;
+        router.replace(`?${query}${hash}`, { scroll: false });
         setSelectedOption(selected);
         setIsOpen(false);
     };

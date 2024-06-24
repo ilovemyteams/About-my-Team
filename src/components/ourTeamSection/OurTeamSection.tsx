@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { membersData, MemberDataItemType } from "../../mockedData/membersData";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { Section } from "../shared/Section";
@@ -22,7 +22,6 @@ const INITIAL_OPTIONS: Option = {
 };
 
 export const OurTeamSection = () => {
-    const router = useRouter();
     const searchParams = useSearchParams();
 
     const getInitialOptionFromUrl = () => {
@@ -45,18 +44,6 @@ export const OurTeamSection = () => {
     const [filteredData, setFilteredData] = useState<MemberDataItemType[]>([]);
 
     useEffect(() => {
-        const updateUrlWithOption = () => {
-            const params = new URLSearchParams();
-            params.set("optionName", selectedOption.optionName);
-            params.set("optionValue", selectedOption.optionValue);
-            params.set("optionType", selectedOption.optionType);
-            const query = params.toString();
-            const hash = `#team`;
-            router.replace(`?${query}${hash}`, { scroll: false });
-        };
-
-        updateUrlWithOption();
-
         if (selectedOption.optionType === "person") {
             const filtered = membersData.filter(
                 member =>
@@ -76,7 +63,7 @@ export const OurTeamSection = () => {
                 setFilteredData([]);
             }
         }
-    }, [selectedOption, router]);
+    }, [selectedOption]);
 
     return (
         <Section id="team">
