@@ -1,51 +1,82 @@
 "use client";
-
+import { useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { membersData, MemberDataItemType } from "../../mockedData/membersData";
+import { portfolioData } from "../../mockedData/portfolioData";
 import { Section } from "../shared/Section";
 import { Title } from "./Title";
 import { MenuTeamSection } from "./MenuTeamSection";
-import { useEffect, useState } from "react";
 import { MemberCardsList } from "./MemberCardsList";
-import { membersData } from "../../mockedData/membersData";
-import { portfolioData } from "../../mockedData/portfolioData";
 import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 
-//TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
-const INITIAL_OPTIONS = {
+type Option = {
+    optionName: string;
+    optionValue: string;
+    optionType: string;
+};
+
+const INITIAL_OPTIONS: Option = {
     optionName: "i love my team",
     optionValue: "1",
     optionType: "team",
 };
 
 export const OurTeamSection = () => {
-    const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
-    const defaultMembersData = membersData.filter(member => {
-        return member.data.projectId.includes("1");
-    });
-    const [filteredData, setFilteredData] = useState(defaultMembersData);
+    const router = useRouter();
+    const searchParams = useSearchParams();
+
+    const getInitialOptionFromUrl = () => {
+        const optionValue =
+            searchParams.get("optionValue") || INITIAL_OPTIONS.optionValue;
+        const optionType =
+            searchParams.get("optionType") || INITIAL_OPTIONS.optionType;
+        const optionName =
+            searchParams.get("optionName") || INITIAL_OPTIONS.optionName;
+        return {
+            optionName,
+            optionValue,
+            optionType,
+        };
+    };
+
+    const [selectedOption, setSelectedOption] = useState<Option>(
+        getInitialOptionFromUrl
+    );
+    const [filteredData, setFilteredData] = useState<MemberDataItemType[]>([]);
 
     useEffect(() => {
+        const updateUrlWithOption = () => {
+            const params = new URLSearchParams();
+            params.set("optionName", selectedOption.optionName);
+            params.set("optionValue", selectedOption.optionValue);
+            params.set("optionType", selectedOption.optionType);
+            const query = params.toString();
+            const hash = `#team`;
+            router.replace(`?${query}${hash}`, { scroll: false });
+        };
+
+        updateUrlWithOption();
+
         if (selectedOption.optionType === "person") {
             const filtered = membersData.filter(
                 member =>
                     member.data.categoryName === selectedOption.optionValue
             );
-
             setFilteredData(filtered);
         } else {
             const project = portfolioData.find(
                 project => project.data.id === selectedOption.optionValue
             );
             if (project) {
-                const filteredMembers = membersData.filter(member => {
-                    return member.data.projectId.includes(project.data.id);
-                });
-
+                const filteredMembers = membersData.filter(member =>
+                    member.data.projectId.includes(project.data.id)
+                );
                 setFilteredData(filteredMembers);
             } else {
                 setFilteredData([]);
             }
         }
-    }, [selectedOption]);
+    }, [selectedOption, router]);
 
     return (
         <Section id="team">
@@ -67,3 +98,5 @@ export const OurTeamSection = () => {
         </Section>
     );
 };
+
+export default OurTeamSection;
