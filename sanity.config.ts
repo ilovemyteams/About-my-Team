@@ -5,12 +5,20 @@
  */
 
 import { visionTool } from "@sanity/vision";
-import { defineConfig } from "sanity";
+import { defineConfig, isDev } from "sanity";
 import { structureTool } from "sanity/structure";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId } from "./sanity/lib/api";
-import { schema } from "./sanity/schema";
+import { schema } from "./sanity/schemas";
+import { structure } from "./sanity/structure";
+import { colorInput } from "@sanity/color-input";
+import { media, mediaAssetSource } from "sanity-plugin-media";
+import { documentInternationalization } from "@sanity/document-internationalization";
+import { internationalizedArray } from "sanity-plugin-internationalized-array";
+import { SUPPORTED_LANGUAGES } from "./sanity/constants";
+
+const devOnlyPlugins = [visionTool({ defaultApiVersion: apiVersion })];
 
 export default defineConfig({
     basePath: "/studio",
@@ -20,11 +28,40 @@ export default defineConfig({
     // Add and edit the content schema in the './sanity/schema' folder
     schema,
     plugins: [
-        structureTool(),
+        structureTool({ structure }),
+        media(),
+        colorInput(),
         // Vision is a tool that lets you query your content with GROQ in the studio
         // https://www.sanity.io/docs/the-vision-plugin
-        visionTool({ defaultApiVersion: apiVersion }),
+        ...(isDev ? devOnlyPlugins : []),
         // Add an image asset source for Unsplash
         unsplashImageAsset(),
+        documentInternationalization({
+            // Required configuration
+            supportedLanguages: SUPPORTED_LANGUAGES,
+            schemaTypes: ["home", "settings"],
+        }),
+        internationalizedArray({
+            languages: SUPPORTED_LANGUAGES,
+            defaultLanguages: ["en"],
+            fieldTypes: ["string"],
+        }),
     ],
+
+    form: {
+        file: {
+            assetSources: previousAssetSources => {
+                return previousAssetSources.filter(
+                    assetSource => assetSource !== mediaAssetSource
+                );
+            },
+        },
+        image: {
+            assetSources: previousAssetSources => {
+                return previousAssetSources.filter(
+                    assetSource => assetSource === mediaAssetSource
+                );
+            },
+        },
+    },
 });

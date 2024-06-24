@@ -16,6 +16,8 @@
     "dependencies": {
         "@nextui-org/react": "^2.2.10",
         "@sanity/client": "^6.20.1",
+        "@sanity/color-input": "^3.1.1",
+        "@sanity/document-internationalization": "^3.0.0",
         "@sanity/image-url": "^1.0.2",
         "@sanity/preview-url-secret": "^1.6.17",
         "@sanity/vision": "^3.47.1",
@@ -39,6 +41,8 @@
         "sanity": "^3.47.1",
         "sanity-plugin-asset-source-unsplash": "^3.0.1",
         "sanity-plugin-iframe-pane": "^3.1.6",
+        "sanity-plugin-internationalized-array": "^2.0.0",
+        "sanity-plugin-media": "^2.2.5",
         "styled-components": "^6.1.11",
         "tailwind-scrollbar": "^3.1.0",
         "yup": "^1.4.0"
