@@ -528,7 +528,11 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "cosmith.io",
+                "kuharskyivulyk.com.ua",
+            ],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -748,7 +752,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
                 telegram: "https://t.me/Dari_Chap",
@@ -954,7 +958,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
                 github: "https://github.com/VladimirDegt",
