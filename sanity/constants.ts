@@ -16,8 +16,8 @@ export const GROUPS = [
 
 // References to include in 'internal' links
 export const PAGE_REFERENCES = [
-    //   {type: 'collection'},
     { type: "home" },
+    //   {type: 'collection'},
     //   {type: 'page'},
     //   {type: 'product'},
 ];
