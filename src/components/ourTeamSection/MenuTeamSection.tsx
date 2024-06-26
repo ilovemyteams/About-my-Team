@@ -91,7 +91,6 @@ export const MenuTeamSection = ({
             optionValue: category.categoryName,
             optionType: "person",
         };
-        console.log(selected);
         setSelectedOption(selected);
         setIsOpen(false);
         router.push(`/${locale}?option=${category.categoryName}#team`);
