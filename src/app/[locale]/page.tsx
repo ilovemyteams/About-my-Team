@@ -11,12 +11,14 @@ import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
+import { loadHomePage } from "@/sanity/utils/loadQuery";
 
-export default function Home() {
+export default async function Home() {
+    const {data} = await loadHomePage();
     return (
         <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
             <BackgroundFigures />
-            <HeroSection />
+            <HeroSection hero={data.hero ?? {}}/>
             <MissionSection />
             <JoinTheTeamSection />
             <PortfolioSection />

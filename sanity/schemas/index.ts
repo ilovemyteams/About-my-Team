@@ -1,4 +1,5 @@
 import { type SchemaTypeDefinition } from "sanity";
+import { durationType } from "./objects/global/durationType";
 import { accordionGroupType } from "./objects/module/accordionGroupType";
 import { accordionType } from "./objects/module/accordionType";
 import { calloutType } from "./objects/module/calloutType";
@@ -18,7 +19,8 @@ import { menuLinksType } from "./objects/global/menuLinksType";
 import { menuType } from "./objects/global/menuType";
 import { notFoundPageType } from "./objects/global/notFoundPageType";
 import { seoType } from "./objects/seoType";
-
+import { timelineType } from "./objects/global/timelineType";
+import { milestoneType } from "./objects/global/milestoneType";
 // Objects used as annotations must be imported first
 const annotations = [linkEmailType, linkExternalType, linkInternalType];
 
@@ -39,6 +41,9 @@ const objects = [
     menuType,
     notFoundPageType,
     seoType,
+    timelineType,
+    milestoneType,
+    durationType,
 ];
 
 import { portableTextType } from "./portableText/portableTextType";
@@ -47,8 +52,9 @@ import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 const blocks = [portableTextType, portableTextSimpleType];
 
 import { colorThemeType } from "./documents/colorTheme";
+import { pageType } from "./documents/pageType";
 
-const documents = [colorThemeType];
+const documents = [colorThemeType, pageType];
 
 import { homeType } from "./singletons/homeType";
 import { settingsType } from "./singletons/settingsType";

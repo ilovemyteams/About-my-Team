@@ -6,7 +6,7 @@ import { HeroInfo } from "./HeroInfo";
 import { HeroFooterLinks } from "./HeroFooterLinks";
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
 
-export const HeroSection = () => {
+export const HeroSection = ({hero}) => {
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
@@ -18,7 +18,7 @@ export const HeroSection = () => {
                           tab:mb-5 pc:mt-[20px] pc:mb-0`}
             />
             <div className="relative flex flex-col items-center pc:items-baseline tab:justify-between tab:flex-row">
-                <HeroInfo />
+                <HeroInfo hero={hero}/>
                 <PortfolioSlider />
             </div>
             <HeroFooterLinks />
