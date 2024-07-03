@@ -1,6 +1,7 @@
+import { useTranslations } from "next-intl";
+
 import { Table } from "../shared/Table/Table";
 import { TableItemsList } from "../shared/Table/TableItemsList";
-import { useTranslations } from "next-intl";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const ServicesTable = () => {

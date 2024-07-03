@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+
 import blocksToText from "../../../utils/blocksToText";
 
 export const accordionGroupType = defineField({

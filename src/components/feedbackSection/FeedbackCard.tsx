@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { IconWebSite } from "../shared/Icons/IconWebSite";
+
 import { addProtocol } from "@/src/utils/addProtocol";
+
+import { IconWebSite } from "../shared/Icons/IconWebSite";
 
 export interface FeedbackCardItemProps {
     data: {

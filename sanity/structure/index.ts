@@ -1,6 +1,6 @@
-import { settingsType } from "./../schemas/singletons/settingsType";
-import { homeType } from "./../schemas/singletons/homeType";
 import { pageStructure } from "./../plugins/settings";
+import { homeType } from "./../schemas/singletons/homeType";
+import { settingsType } from "./../schemas/singletons/settingsType";
 
 export const singletonPagesType = [
     homeType.name,

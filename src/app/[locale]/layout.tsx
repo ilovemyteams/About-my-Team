@@ -1,14 +1,17 @@
-import React from "react";
-import { getTranslations } from "next-intl/server";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import localFont from "next/font/local";
-import { Providers } from "./providers";
-import { Header } from "@/src/components/header/Header";
-import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
-import { Footer } from "@/src/components/footer/Footer";
-import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
-import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
+
+import localFont from "next/font/local";
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import React from "react";
+
+import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { CookiesComponent } from "@/src/components/cookies/Cookies";
+import { Footer } from "@/src/components/footer/Footer";
+import { Header } from "@/src/components/header/Header";
+import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+
+import { Providers } from "./providers";
 
 const caviar = localFont({
     src: [

@@ -1,10 +1,11 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+
 import { Section } from "../shared/Section";
-import { TitleQA } from "./TitleQa/TitleQA";
-import { QuestionsList } from "./QuestionsList";
 import { SharePopover } from "../shared/SharePopover";
+import { QuestionsList } from "./QuestionsList";
+import { TitleQA } from "./TitleQa/TitleQA";
 
 export const QaSection = () => {
     const { ref, inView } = useInView({

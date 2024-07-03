@@ -1,10 +1,11 @@
 import { SocialLinks } from "@/src/mockedData/membersData";
-import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
+
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
+import { IconGoogleDrive } from "../../shared/Icons/IconGoogleDrive";
+import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
 import { IconTelegram } from "../../shared/Icons/IconTelegram";
 import { SocialLink } from "../../shared/SocialLink";
-import { IconGoogleDrive } from "../../shared/Icons/IconGoogleDrive";
 
 export const MemberSocialLinks = ({
     socialLinks,

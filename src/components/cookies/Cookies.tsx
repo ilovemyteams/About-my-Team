@@ -1,9 +1,10 @@
 "use client";
-import { useState } from "react";
-import { Button } from "../shared/Button";
 import Cookies from "js-cookie";
-import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import { useEffect, useRef } from "react";
+
+import { Button } from "../shared/Button";
 
 const POLICY_URL =
     "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";

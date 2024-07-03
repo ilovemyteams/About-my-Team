@@ -1,5 +1,7 @@
 import { defineField, defineType } from "sanity";
 
+import { Milestone, Timeline } from "../../../../types/sanity.types";
+
 export const timelineType = defineType({
     name: "timeline",
     title: "Timeline",
@@ -41,7 +43,13 @@ export const timelineType = defineType({
                             items: "milestones",
                             title: "title",
                         },
-                        prepare({ items, title }) {
+                        prepare({
+                            items,
+                            title,
+                        }: {
+                            items?: Milestone[];
+                            title?: string;
+                        }) {
                             const hasItems = items && items.length > 0;
                             const milestoneNames =
                                 hasItems &&
@@ -67,7 +75,7 @@ export const timelineType = defineType({
         select: {
             items: "items",
         },
-        prepare({ items }: { items: { title: string }[] }) {
+        prepare({ items }: { items?: Timeline["items"] }) {
             const hasItems = items && items.length > 0;
             const timelineNames =
                 hasItems && items.map(timeline => timeline.title).join(", ");

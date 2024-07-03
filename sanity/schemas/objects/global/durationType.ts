@@ -1,6 +1,6 @@
 import { defineField } from "sanity";
 
-import { DurationInput } from "../../../components/duration/DurationInput.tsx";
+import { DurationInput } from "../../../components/duration/DurationInput";
 
 export const durationType = defineField({
     type: "object",

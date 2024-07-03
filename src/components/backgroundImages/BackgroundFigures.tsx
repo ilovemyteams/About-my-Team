@@ -1,6 +1,6 @@
 import { IconBgCurveDesktop } from "../shared/Icons/IconBgCurveDesktop";
-import { IconBgCurveTablet } from "../shared/Icons/IconBgCurveTablet";
 import { IconBgCurveMobile } from "../shared/Icons/IconBgCurveMobile";
+import { IconBgCurveTablet } from "../shared/Icons/IconBgCurveTablet";
 import { IconBgHeart } from "../shared/Icons/IconBgHeart";
 
 export const BackgroundFigures = () => {

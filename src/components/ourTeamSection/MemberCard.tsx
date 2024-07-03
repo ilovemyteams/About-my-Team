@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { useLocale } from "next-intl";
 import Link from "next/link";
-import { MemberDataItemType } from "../../mockedData/membersData";
+import { useLocale } from "next-intl";
+
 import { LocaleType } from "@/types/LocaleType";
-import { SocialLink } from "../shared/SocialLink";
+
+import { MemberDataItemType } from "../../mockedData/membersData";
+import { IconHeart } from "../shared/Icons/IconHeart";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
-import { IconHeart } from "../shared/Icons/IconHeart";
+import { SocialLink } from "../shared/SocialLink";
 
 export interface MemberCardProps {
     data: MemberDataItemType;

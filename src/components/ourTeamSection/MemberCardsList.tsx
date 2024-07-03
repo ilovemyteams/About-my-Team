@@ -1,10 +1,11 @@
 "use client";
-import React, { useRef, useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
+import React, { useEffect, useRef } from "react";
+
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {

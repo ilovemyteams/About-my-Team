@@ -3,7 +3,7 @@
  */
 
 import { type DocumentDefinition } from "sanity";
-import { type StructureResolver, ListItemBuilder } from "sanity/structure";
+import { ListItemBuilder, type StructureResolver } from "sanity/structure";
 
 const hiddenDocTypes = (listItem: ListItemBuilder) => {
     const id = listItem.getId();
@@ -21,9 +21,11 @@ export const singletonPlugin = (types: string[]) => {
         document: {
             // Hide 'Singletons (such as Home)' from new document options
             // https://user-images.githubusercontent.com/81981/195728798-e0c6cf7e-d442-4e58-af3a-8cd99d7fcc28.png
+            // @ts-expect-error: Parameter 'prev' implicitly has an 'any' type.
             newDocumentOptions: (prev, { creationContext }) => {
                 if (creationContext.type === "global") {
                     return prev.filter(
+                        // @ts-expect-error: Parameter 'templateItem' implicitly has an 'any' type.
                         templateItem => !types.includes(templateItem.templateId)
                     );
                 }
@@ -31,8 +33,10 @@ export const singletonPlugin = (types: string[]) => {
                 return prev;
             },
             // Removes the "duplicate" action on the Singletons (such as Home)
+            // @ts-expect-error: Parameter 'prev' implicitly has an 'any' type.
             actions: (prev, { schemaType }) => {
                 if (types.includes(schemaType)) {
+                    // @ts-expect-error: Parameter 'templateItem' implicitly has an 'any' type.
                     return prev.filter(({ action }) => action !== "duplicate");
                 }
 

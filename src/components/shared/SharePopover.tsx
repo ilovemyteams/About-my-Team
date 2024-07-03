@@ -1,30 +1,31 @@
 "use client";
-import React, { useState } from "react";
 import {
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
     Button,
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
 } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
+import React, { useState } from "react";
 import {
     FacebookShareButton,
     LinkedinShareButton,
     TelegramShareButton,
     WhatsappShareButton,
 } from "react-share";
-import { useTranslations } from "next-intl";
-import { IconShare } from "./Icons/IconShare";
+
 import CopyLinkButton from "./CopyLinkButton";
+import { IconCloseX } from "./Icons/IconCloseX";
+import { IconCopy } from "./Icons/IconCopy";
+import { IconFacebook } from "./Icons/IconFacebook";
+import { IconLink } from "./Icons/IconLink";
+import { IconLinkedin } from "./Icons/IconLinkedin";
+import { IconShare } from "./Icons/IconShare";
+import { IconTelegram } from "./Icons/IconTelegram";
+import { IconWhatsapp } from "./Icons/IconWhatsapp";
+import { BgImagesDesktop } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
-import { BgImagesDesktop } from "./WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { IconCloseX } from "./Icons/IconCloseX";
-import { IconTelegram } from "./Icons/IconTelegram";
-import { IconLinkedin } from "./Icons/IconLinkedin";
-import { IconFacebook } from "./Icons/IconFacebook";
-import { IconWhatsapp } from "./Icons/IconWhatsapp";
-import { IconLink } from "./Icons/IconLink";
-import { IconCopy } from "./Icons/IconCopy";
 
 export const SharePopover = ({
     className,

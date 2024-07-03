@@ -1,6 +1,6 @@
-import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 interface LogoLinkProps {
     setIsHeaderMenuOpened: (

@@ -1,13 +1,15 @@
 import Image from "next/image";
-import { HeaderMenuList } from "../HeaderMenuList";
-import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
-import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
-import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
-import { SocialLinksList } from "../SocialLinks/SocialLinksList";
-import { WriteUs } from "../../shared/WriteUs/WriteUs";
-import { HeaderMenuProps } from "@/types/HeaderMenuProps";
+
 import { BackgroundCirclesMobile } from "@/src/components/backgroundImages/BackgroundCirclesMobile";
+import { BuyMeCoffeeLink } from "@/src/components/shared/BuyMeCoffeeLink";
+import LocaleSwitcher from "@/src/components/shared/LocaleSwitcher";
+import { ThemeSwitcher } from "@/src/components/shared/ThemeSwitcher";
+import { HeaderMenuProps } from "@/types/HeaderMenuProps";
+
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
+import { HeaderMenuList } from "../HeaderMenuList";
+import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 
 const openedStyles = "h-80";
 const closedStyles = "h-0";

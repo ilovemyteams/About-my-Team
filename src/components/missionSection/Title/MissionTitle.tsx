@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 import { TitleWrapper } from "../../shared/TitleWrapper";
 import { MobileTitle } from "./MobileTitle";

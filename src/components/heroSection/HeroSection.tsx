@@ -1,12 +1,16 @@
-import { Section } from "../shared/Section";
-import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../shared/ThemeSwitcher";
-import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
-import { HeroInfo } from "./HeroInfo";
-import { HeroFooterLinks } from "./HeroFooterLinks";
+import { Home } from "../../../types/sanity.types";
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
+import LocaleSwitcher from "../shared/LocaleSwitcher";
+import { Section } from "../shared/Section";
+import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+import { HeroFooterLinks } from "./HeroFooterLinks";
+import { HeroInfo } from "./HeroInfo";
+import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 
-export const HeroSection = ({hero}) => {
+export interface HomePageProps {
+    data: Home | null;
+}
+export const HeroSection = ({ data }: HomePageProps) => {
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
@@ -18,7 +22,7 @@ export const HeroSection = ({hero}) => {
                           tab:mb-5 pc:mt-[20px] pc:mb-0`}
             />
             <div className="relative flex flex-col items-center pc:items-baseline tab:justify-between tab:flex-row">
-                <HeroInfo hero={hero}/>
+                <HeroInfo data={data} />
                 <PortfolioSlider />
             </div>
             <HeroFooterLinks />

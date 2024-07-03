@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
-import { TitleWrapper } from "../../shared/TitleWrapper";
+
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 import { MobileBigTitleQa } from "./MobileBigTitleQa";
 
 export const TitleQA = () => {

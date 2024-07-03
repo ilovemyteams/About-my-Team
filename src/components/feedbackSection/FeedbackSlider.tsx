@@ -1,19 +1,20 @@
 "use client";
-import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
+import React from "react";
+
+import { LocaleType } from "@/types/LocaleType";
 
 import { FeedbackDataItemType } from "../../mockedData/feedbackData";
-import { FeedbackCard } from "./FeedbackCard";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
-import { LocaleType } from "@/types/LocaleType";
-import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { FeedbackCard } from "./FeedbackCard";
 
 type FeedbackSliderProps = {
     feedbacks: FeedbackDataItemType[];

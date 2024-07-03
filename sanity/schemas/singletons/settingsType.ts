@@ -5,7 +5,7 @@ import {
     MenuIcon,
     SearchIcon,
 } from "@sanity/icons";
-import { defineType, defineField } from "sanity";
+import { defineField, defineType } from "sanity";
 
 const TITLE = "Settings";
 

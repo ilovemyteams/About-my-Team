@@ -1,18 +1,20 @@
 "use client";
-import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
-import { PortfolioCard } from "./PortfolioCard";
+import React from "react";
+
+import { LocaleType } from "@/types/LocaleType";
+
+import { PortfolioDataItemType } from "../../mockedData/portfolioData";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
 } from "../shared/SliderComponents/CarouselButtons";
-import { PortfolioDataItemType } from "../../mockedData/portfolioData";
-import { LocaleType } from "@/types/LocaleType";
 import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+import { PortfolioCard } from "./PortfolioCard";
 
 type PortfolioCarouselProps = {
     projects: PortfolioDataItemType[];

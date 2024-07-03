@@ -1,5 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import { IconUp } from "../shared/Icons/IconUp";
 
 export const ScrollToTopButton = () => {

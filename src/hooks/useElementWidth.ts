@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useCallback, useState } from "react";
 
 export function useElementWidth<T extends HTMLElement>() {
     const [elementWidth, setElementWidth] = useState<number>(0);

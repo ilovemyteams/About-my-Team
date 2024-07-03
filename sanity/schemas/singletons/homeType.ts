@@ -1,5 +1,6 @@
 import { HomeIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+
 import { GROUPS } from "../../constants";
 
 const TITLE = "Home";

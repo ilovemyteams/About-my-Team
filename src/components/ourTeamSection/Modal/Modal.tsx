@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import { useRouter, usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import React from "react";
+
+import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { BgImagesDesktop } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesMobile";
 import { BgImagesTablet } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesTablet";
-import { IconCloseX } from "../../shared/Icons/IconCloseX";
 
 export const Modal = ({ children }: { children: React.ReactNode }) => {
     const locale = useLocale();

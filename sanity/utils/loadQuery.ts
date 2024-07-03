@@ -4,10 +4,10 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
-import { homePageQuery, settingsQuery } from "../lib/queries";
 
+import { Home } from "../../types/sanity.types";
 import { readToken } from "../lib/api";
-
+import { homePageQuery, settingsQuery } from "../lib/queries";
 const serverClient = getClient({ token: readToken });
 
 /**
@@ -25,7 +25,7 @@ export const loadQuery = ((query, params = {}, options = {}) => {
         perspective = draftMode().isEnabled ? "previewDrafts" : "published",
     } = options;
     // Don't cache by default
-    let revalidate: NextFetchRequestConfig["revalidate"] = 0;
+    let revalidate: number | boolean = 0;
     // If `next.tags` is set, and we're not using the CDN, then it's safe to cache
     if (!usingCdn && Array.isArray(options.next?.tags)) {
         revalidate = false;
@@ -57,7 +57,7 @@ export function loadSettings() {
 }
 
 export function loadHomePage() {
-    return loadQuery(
+    return loadQuery<Home | null>(
         homePageQuery,
         {},
         { next: { tags: ["home"] } }

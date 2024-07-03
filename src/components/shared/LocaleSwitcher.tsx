@@ -1,8 +1,9 @@
 "use client";
-import { useLocale } from "next-intl";
-import { locales } from "../../i18n";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+
+import { locales } from "../../i18n";
 
 const activeStyle = "outline-none dark:text-red text-redLight";
 const inactiveStyle = "outline-none dark:text-purple-stroke text-disabledLight";

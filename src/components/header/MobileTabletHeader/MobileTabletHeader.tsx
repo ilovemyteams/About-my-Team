@@ -1,10 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
-import { LogoLink } from "../LogoLink";
-import { BurgerMenuButton } from "../BurgerMenuButton";
-import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
+import { useEffect, useState } from "react";
+
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { BurgerMenuButton } from "../BurgerMenuButton";
+import { LogoLink } from "../LogoLink";
+import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);

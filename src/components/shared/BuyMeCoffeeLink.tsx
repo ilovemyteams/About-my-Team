@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { IconBuyMeCoffee } from "./Icons/IconBuyMeCoffee";
 
 interface BuyMeCoffeeLinkProps {

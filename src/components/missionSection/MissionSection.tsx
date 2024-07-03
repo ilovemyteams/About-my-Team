@@ -1,11 +1,12 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+
 import { Section } from "../shared/Section";
-import { BenefitsList } from "./Benefits/BenefitsList";
-import { MissionTitle } from "./Title/MissionTitle";
-import { StagesList } from "./StagesList";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { BenefitsList } from "./Benefits/BenefitsList";
+import { StagesList } from "./StagesList";
+import { MissionTitle } from "./Title/MissionTitle";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({

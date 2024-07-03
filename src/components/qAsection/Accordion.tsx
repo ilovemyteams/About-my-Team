@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+
 import { IconUp } from "../shared/Icons/IconUp";
 
 interface AccordionProps {

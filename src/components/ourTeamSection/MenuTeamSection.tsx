@@ -1,10 +1,12 @@
 "use client";
-import { useState, Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { portfolioData } from "../../mockedData/portfolioData";
+import { Dispatch, SetStateAction, useState } from "react";
+
 import { LocaleType } from "@/types/LocaleType";
+
 import { categoryNames } from "../../mockedData/categoryNames";
 import { СategoryNamesProp } from "../../mockedData/categoryNames";
+import { portfolioData } from "../../mockedData/portfolioData";
 import { IconUp } from "../shared/Icons/IconUp";
 
 interface MenuProps {
