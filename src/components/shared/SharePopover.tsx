@@ -46,13 +46,16 @@ export const SharePopover = ({
     const siteDescription = getTranslation("Home.description");
     const pathname =
         typeof window !== "undefined" ? window.location.pathname : "";
-    const urlShare = id
-        ? typeof window !== "undefined"
-            ? window.location.origin + pathname + `#${id}`
-            : ""
-        : typeof window !== "undefined"
-          ? window.location.origin + pathname
-          : "";
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const urlShare =
+        typeof window !== "undefined"
+            ? id
+                ? search
+                    ? window.location.origin + pathname + search + `#${id}`
+                    : window.location.origin + pathname + `#${id}`
+                : window.location.origin + pathname
+            : "";
+
     const shareButtonStyles =
         "relative flex justify-center items-center w-12 h-12 icon-hover-rounded-purple";
     const isShowText = hiddenTextForMemberModal
