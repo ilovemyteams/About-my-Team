@@ -8,6 +8,7 @@ import { MemberCardsList } from "./MemberCardsList";
 import { membersData } from "../../mockedData/membersData";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
+import { SharePopover } from "../shared/SharePopover";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {
@@ -48,9 +49,9 @@ export const OurTeamSection = () => {
     }, [selectedOption]);
 
     return (
-        <Section id="team">
+        <Section id="team" className="relative">
             <Title />
-            <div className="flex flex-col gap-3 tab:flex-row tab:justify-between">
+            <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
@@ -64,6 +65,11 @@ export const OurTeamSection = () => {
                     optionType={selectedOption.optionType}
                 />
             </div>
+            <SharePopover
+                className="absolute -top-3 right-4 tab:static tab:items-end tab:ml-auto tab:mt-4 pc:mt-5"
+                id="team"
+                trigerShowShareText={false}
+            />
         </Section>
     );
 };

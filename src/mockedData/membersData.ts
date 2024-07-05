@@ -298,7 +298,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "greyplaza.com.ua"],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -528,7 +528,11 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "cosmith.io",
+                "kuharskyivulyk.com.ua",
+            ],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -579,7 +583,11 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
 
-            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "greyplaza.com.ua",
+                "kuharskyivulyk.com.ua",
+            ],
 
             pricePerHour: "10",
             socialLinks: {
@@ -744,7 +752,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
                 telegram: "https://t.me/Dari_Chap",
@@ -950,7 +958,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/volodymyr-dehtiarev",
                 github: "https://github.com/VladimirDegt",
@@ -1130,55 +1138,6 @@ export const membersData: MemberDataItemType[] = [
             name: "Anna Klyba",
             about: "",
             services: "",
-            team: "Smachno! na seli",
-        },
-    },
-    {
-        data: {
-            id: "AntonChertok",
-            projectId: [""],
-            imageURL: "",
-            position: "Front-end Developer",
-            categoryName: "developer",
-            projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
-            pricePerHour: "10",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/anton-chertok/",
-                github: "https://github.com/chertoha",
-                telegram: "https://t.me/chertoha",
-            },
-            tools: [
-                "React",
-                "NextJs",
-                "TypeScript",
-                "Redux",
-                "Tailwind",
-                "Material UI",
-                "Docker",
-                "CI/CD",
-                "NodeJs",
-                "Express",
-                "NestJs",
-                "Postgres",
-            ],
-        },
-        ua: {
-            name: "Антон Черток",
-            about: "Цитата про себе",
-            services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Anton Chertok",
-            about: "Nothing will work unless you do",
-            services: "Тут має бути переклад на англ",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Anton Chertok",
-            about: "Цитата про себе на польській",
-            services: "Тут має бути переклад на польську",
             team: "Smachno! na seli",
         },
     },
