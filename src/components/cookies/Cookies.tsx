@@ -25,7 +25,6 @@ export const CookiesComponent = () => {
     const handleClick = () => {
         setIsAccepted(true);
         Cookies.set("isAccetedCookies", "true");
-        console.log(isAccepted);
     };
 
     return (
