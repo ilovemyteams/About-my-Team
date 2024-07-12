@@ -9,6 +9,7 @@ import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
+import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 const caviar = localFont({
     src: [
@@ -92,22 +93,24 @@ export default function LocaleLayout({
                 />
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                <body
-                    className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
+                <PreviousURLProvider>
+                    <body
+                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
-                >
-                    <Providers>
-                        <BackgroundImages />
-                        <Header />
-                        <main>
-                            {modal}
-                            {children}
-                        </main>
-                        <Footer />
-                        <ScrollToTopButton />
-                        <CookiesComponent />
-                    </Providers>
-                </body>
+                    >
+                        <Providers>
+                            <BackgroundImages />
+                            <Header />
+                            <main>
+                                {modal}
+                                {children}
+                            </main>
+                            <Footer />
+                            <ScrollToTopButton />
+                            <CookiesComponent />
+                        </Providers>
+                    </body>
+                </PreviousURLProvider>
             </NextIntlClientProvider>
         </html>
     );
