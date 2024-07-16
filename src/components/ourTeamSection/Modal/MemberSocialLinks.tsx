@@ -26,6 +26,11 @@ export const MemberSocialLinks = ({
             ? "border-l"
             : "border-l-0";
 
+    const borderLeftMob =
+        !socialLinks.telegram &&
+        (socialLinks.github || socialLinks.behance || socialLinks.googleDrive)
+            ? "[&:nth-child(2)]:border-l"
+            : "border-l-0";
     return (
         <ul className="flex justify-between ">
             {socialLinks.telegram && (
@@ -80,7 +85,20 @@ export const MemberSocialLinks = ({
             )}
             {socialLinks.linkedin && (
                 <li
-                    className={`${classLiSocialLink} ${borderLeft} pc:border-r-0`}
+                    className={`${classLiSocialLink} tab:hidden ${borderLeft} ${borderLeftMob} pc:border-r-0`}
+                >
+                    <div className="w-8 h-8">
+                        <SocialLink
+                            url={socialLinks.linkedin}
+                            image={iconLinkedin}
+                            className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
+                        />
+                    </div>
+                </li>
+            )}
+            {socialLinks.linkedin && (
+                <li
+                    className={`${classLiSocialLink} hidden tab:flex ${borderLeft} pc:border-r-0`}
                 >
                     <div className="w-8 h-8">
                         <SocialLink
