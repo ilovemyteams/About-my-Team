@@ -33,7 +33,6 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                             onClick={() => {
                                 router.push(previousURL);
                             }}
-                            // onTouchStart={() => router.push(previousURL)}
                             type="button"
                             className="flex mb-2 ml-auto mr-4 tab:mr-6 tab:mb-3 w-12 h-12 justify-center items-center 
 
