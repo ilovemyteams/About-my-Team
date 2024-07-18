@@ -1,18 +1,25 @@
 "use client";
+import { useLocale } from "next-intl";
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 interface PreviousURLContextType {
     previousURL: string;
     setPreviousURL: (url: string) => void;
+    slideId: number;
+    setSlideId: (id: number) => void;
 }
 const PreviousURLContext = createContext<PreviousURLContextType | undefined>(
     undefined
 );
 export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
-    const [previousURL, setPreviousURL] = useState<string>("");
+    const locale = useLocale();
+    const [previousURL, setPreviousURL] = useState<string>(`/${locale}#team`);
+    const [slideId, setSlideId] = useState<number>(0);
 
     return (
-        <PreviousURLContext.Provider value={{ previousURL, setPreviousURL }}>
+        <PreviousURLContext.Provider
+            value={{ previousURL, setPreviousURL, slideId, setSlideId }}
+        >
             {children}
         </PreviousURLContext.Provider>
     );
