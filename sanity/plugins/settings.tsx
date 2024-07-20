@@ -26,7 +26,10 @@ export const singletonPlugin = (types: string[]) => {
                 if (creationContext.type === "global") {
                     return prev.filter(
                         // @ts-expect-error: Parameter 'templateItem' implicitly has an 'any' type.
-                        templateItem => !types.includes(templateItem.templateId)
+                        templateItem => {
+                            console.log(templateItem);
+                            return !types.includes(templateItem.templateId);
+                        }
                     );
                 }
 

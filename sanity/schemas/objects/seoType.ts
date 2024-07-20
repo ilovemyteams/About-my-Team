@@ -12,7 +12,7 @@ export const seoType = defineField({
     fields: [
         defineField({
             name: "title",
-            type: "string",
+            type: "internationalizedArrayString",
             validation: Rule =>
                 Rule.max(50).warning(
                     "Longer titles may be truncated by search engines"

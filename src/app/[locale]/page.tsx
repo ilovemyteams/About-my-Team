@@ -13,8 +13,9 @@ import { ServicesSection } from "@/src/components/servicesSection/ServicesSectio
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 
-export default async function HomePage() {
-    const initial = await loadHomePage();
+type HopePageProps = { params: { locale: string } };
+export default async function HomePage(props: HopePageProps) {
+    const initial = await loadHomePage(props.params.locale);
 
     return (
         <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">

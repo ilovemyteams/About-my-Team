@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 
 export const homePageQuery = groq`
-  *[_type == "home"][0]`;
+  *[_type == "home" && language == $language][0]`;
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{

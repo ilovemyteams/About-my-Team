@@ -56,10 +56,10 @@ export function loadSettings() {
     );
 }
 
-export function loadHomePage() {
+export function loadHomePage(language = "ua") {
     return loadQuery<Home | null>(
         homePageQuery,
-        {},
+        { language },
         { next: { tags: ["home"] } }
     );
 }

@@ -6,5 +6,10 @@ export const singletonPagesType = [
     homeType.name,
     settingsType.name,
     "media.tag",
+    "translation.metadata",
+    "home-en",
+    "home-ua",
+    "settings-en",
+    "settings-ua",
 ];
 export const structure = pageStructure([homeType, settingsType]);
