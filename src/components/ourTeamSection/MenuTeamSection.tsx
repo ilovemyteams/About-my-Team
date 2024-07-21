@@ -1,6 +1,7 @@
 "use client";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import { LocaleType } from "@/types/LocaleType";
 
@@ -31,6 +32,41 @@ export const MenuTeamSection = ({
     const [isOpen, setIsOpen] = useState(false);
     const locale = useLocale();
     const getTranslation = useTranslations("OurTeam");
+    const router = useRouter();
+    const searchParams = useSearchParams();
+
+    useEffect(() => {
+        const option = searchParams.get("option");
+        if (option) {
+            const category = categoryNames.find(
+                category => category.categoryName === option
+            );
+            if (category) {
+                setSelectedOption({
+                    optionName: category[locale as LocaleType],
+                    optionValue: category.categoryName,
+                    optionType: "person",
+                });
+            } else {
+                const project = portfolioData.find(
+                    project => project.data.id === option
+                );
+                if (project) {
+                    setSelectedOption({
+                        optionName: project[locale as LocaleType]?.name,
+                        optionValue: project.data.id,
+                        optionType: "team",
+                    });
+                }
+            }
+        } else {
+            setSelectedOption({
+                optionName: "i love my team",
+                optionValue: "1",
+                optionType: "team",
+            });
+        }
+    }, [searchParams, locale, setSelectedOption]);
 
     const handleOptionSelectProjectTeam = ({
         option,
@@ -48,6 +84,7 @@ export const MenuTeamSection = ({
         };
         setSelectedOption(selected);
         setIsOpen(false);
+        router.push(`/${locale}?option=${projectId}#team`);
     };
 
     const handleOptionSelectCategory = (category: СategoryNamesProp) => {
@@ -58,6 +95,7 @@ export const MenuTeamSection = ({
         };
         setSelectedOption(selected);
         setIsOpen(false);
+        router.push(`/${locale}?option=${category.categoryName}#team`);
     };
 
     const toggleList = () => {
