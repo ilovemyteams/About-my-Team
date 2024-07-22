@@ -19,7 +19,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { setPreviousURL } = usePreviousURL();
 
     const savingFilteredListURL = () => {
-        setPreviousURL(window.location.href);
+        const url = window.location.href;
+        url.slice(-2) === `${locale}`
+            ? setPreviousURL(`${window.location.href}#team`)
+            : setPreviousURL(window.location.href);
     };
 
     return (
