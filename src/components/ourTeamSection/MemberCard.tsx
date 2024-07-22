@@ -9,6 +9,8 @@ import { IconProfile } from "../shared/Icons/IconProfile";
 import { IconHeart } from "../shared/Icons/IconHeart";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
+const END_OF_URL = -5;
+
 export interface MemberCardProps {
     data: MemberDataItemType;
 }
@@ -19,7 +21,10 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { setPreviousURL } = usePreviousURL();
 
     const savingFilteredListURL = () => {
-        setPreviousURL(window.location.href);
+        const url = window.location.href;
+        url.slice(END_OF_URL) !== `#team`
+            ? setPreviousURL(`${window.location.href}#team`)
+            : setPreviousURL(window.location.href);
     };
 
     return (
