@@ -32,6 +32,9 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
     const handleClose = () => {
         router.push(previousURL || `/${locale}#team`);
     };
+    const stopPropagation = (event: React.MouseEvent) => {
+        event.stopPropagation();
+    };
 
     return (
         <div>
@@ -40,6 +43,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                 className="w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll"
             >
                 <div
+                    onClick={stopPropagation}
                     className="p-0 min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
             -translate-x-1/2 -translate-y-1/2 z-[21] bg-white-100 dark:bg-purple-400"
                 >
