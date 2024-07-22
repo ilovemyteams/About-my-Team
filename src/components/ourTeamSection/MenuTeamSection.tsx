@@ -67,6 +67,7 @@ export const MenuTeamSection = ({
             });
         }
     }, [searchParams, locale, setSelectedOption]);
+    const DEFAULT_SLIDE_ID = 0;
 
     const handleOptionSelectProjectTeam = ({
         option,
@@ -85,7 +86,9 @@ export const MenuTeamSection = ({
         setSelectedOption(selected);
         setIsOpen(false);
         setSlideId(0);
-        router.push(`/${locale}?option=${projectId}&slideId=0#team`);
+        router.push(
+            `/${locale}?option=${projectId}&slideId=${DEFAULT_SLIDE_ID}#team`
+        );
     };
 
     const handleOptionSelectCategory = (category: СategoryNamesProp) => {
@@ -98,7 +101,7 @@ export const MenuTeamSection = ({
         setIsOpen(false);
         setSlideId(0);
         router.push(
-            `/${locale}?option=${category.categoryName}&slideId=0#team`
+            `/${locale}?option=${category.categoryName}&slideId=${DEFAULT_SLIDE_ID}#team`
         );
     };
 

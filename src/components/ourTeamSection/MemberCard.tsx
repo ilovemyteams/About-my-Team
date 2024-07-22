@@ -20,7 +20,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
 
     const savingFilteredListURL = () => {
         const url = window.location.href;
-        url.slice(-5) !== `#team`
+        const END_OF_URL = -5;
+        url.slice(END_OF_URL) !== `#team`
             ? setPreviousURL(`${window.location.href}#team`)
             : setPreviousURL(window.location.href);
     };
