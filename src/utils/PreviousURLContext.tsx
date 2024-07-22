@@ -1,6 +1,7 @@
 "use client";
 import { useLocale } from "next-intl";
 import React, { createContext, useContext, useState, ReactNode } from "react";
+import { DEFAULT_SLIDE_ID } from "../constants/defaultSlideId";
 
 interface PreviousURLContextType {
     previousURL: string;
@@ -14,7 +15,7 @@ const PreviousURLContext = createContext<PreviousURLContextType | undefined>(
 export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
     const locale = useLocale();
     const [previousURL, setPreviousURL] = useState<string>(`/${locale}#team`);
-    const [slideId, setSlideId] = useState<number>(0);
+    const [slideId, setSlideId] = useState<number>(DEFAULT_SLIDE_ID);
 
     return (
         <PreviousURLContext.Provider

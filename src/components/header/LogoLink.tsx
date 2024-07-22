@@ -1,3 +1,4 @@
+import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { useLocale } from "next-intl";
 import Image from "next/image";
@@ -18,7 +19,7 @@ export const LogoLink = ({ setIsHeaderMenuOpened }: LogoLinkProps) => {
             href={`/${locale}`}
             onClick={() => {
                 setIsHeaderMenuOpened(false);
-                setSlideId(0);
+                setSlideId(DEFAULT_SLIDE_ID);
             }}
             className="group relative flex items-center justify-center pc:w-[79px] deskxl:w-[100px] pc:h-[71px] deskxl:h-[90px] cursor-pointer"
         >

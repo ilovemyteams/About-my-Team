@@ -8,6 +8,7 @@ import { categoryNames } from "../../mockedData/categoryNames";
 import { СategoryNamesProp } from "../../mockedData/categoryNames";
 import { IconUp } from "../shared/Icons/IconUp";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
 
 interface MenuProps {
     selectedOption: {
@@ -67,7 +68,6 @@ export const MenuTeamSection = ({
             });
         }
     }, [searchParams, locale, setSelectedOption]);
-    const DEFAULT_SLIDE_ID = 0;
 
     const handleOptionSelectProjectTeam = ({
         option,
