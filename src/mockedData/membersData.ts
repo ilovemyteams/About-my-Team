@@ -435,7 +435,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
