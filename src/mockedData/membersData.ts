@@ -675,7 +675,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Kateryna Rubanik",
             about: "QA engineer with experience in software testing. I have the skills to test, analyze and identify errors to ensure flawless product quality.",
             services:
-                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.Creation of test documentation (test plans, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "I Love My Team",
         },
         pl: {
