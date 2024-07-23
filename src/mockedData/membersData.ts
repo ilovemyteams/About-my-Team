@@ -689,7 +689,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "KaterynaPogrebna",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
             position: "QA engineer",
