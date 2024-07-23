@@ -70,14 +70,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ",
+                "Консалтинг, аналіз та налаштування бізнес-процесів, стратегічне планування, бюджетування, управління проєктами та командами, розробка продуктів та антикризове управління проєктами та продуктами. Менторство для початківців в IT.",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
             services:
-                "Consulting, business process analysis, strategic planning, budgeting, project and team management, product development. Mentoring for beginners in IT",
+                "Consulting, business process analysis and setup, strategic planning, budgeting, project and team management, product development, and crisis management for projects and products. Mentoring for beginners in IT.",
             team: "I Love My Team",
         },
         pl: {
@@ -113,15 +113,16 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Марія Попова",
-            about: "Щоб б ти не робив, роби це з любовʼю. Адже в результаті це буде відчуватись",
+            about: "Що б ви не робили, робіть це з любов'ю. Зрештою, це відчується.",
             services:
-                "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка",
+                "Дизайн продуктів і веб-додатків, розробка логотипу, брендинг компанії, створення ілюстрацій. Медіа для соціальних мереж, типографіки, UX/UI дизайну та інфографіки.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Mariia Popova",
-            about: "",
-            services: "",
+            about: "Whatever you do, do it with love. In the end, it will be felt.",
+            services:
+                "Product and web application design, logo development, company branding, and creation of illustrations. Media for social networks, typography, UX/UI design, and infographics.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -163,15 +164,16 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Світлана Кондратенко",
-            about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
+            about: `«Хтось має це розібратися?» - Я людина, яка розбирається!`,
             services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
+                "Аналіз потреб клієнтів, аналіз ринку та конкурентів. Розробка, аналіз, організація та формалізація вимог. Написання технічної документації та історій користувачів. Знання SDLC, гнучких методологій та базові навички управління.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Svitlana Kondratenko",
-            about: "",
-            services: "",
+            about: `"Someone needs to sort this out?" - I am the person who sorts it out! `,
+            services:
+                "Customer business needs analysis, market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -213,15 +215,16 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Влад Шумков",
-            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає строгим стандартам і очікуванням клієнтів.",
+            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає суворим стандартам і очікуванням клієнтів.",
             services:
-                "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
+                "Розробка сайтів будь-якої складності, інтернет-магазинів, посадкових сторінок. Наставництво для початківців Frontend-розробників",
             team: "Смачно! на селі",
         },
         en: {
             name: "Vlad Shumkov",
             about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
-            services: "",
+            services:
+                "Development of websites of any complexity, e-commerce stores, and landing pages. Mentoring for beginner Frontend Developers",
             team: "Smachno! na seli",
         },
         pl: {
@@ -272,14 +275,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ігор Дронішинець",
             about: "",
             services:
-                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама",
+                "Розробка сайту повного циклу від створення логотипу та брендбуку до випуску продукції та передачі прав доступу замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама.",
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
             about: "",
             services:
-                "Full cycle of website development from logo and branding to product release and transfer of access rights to the Customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising",
+                "Full-cycle website development from logo creation and brand book to production release and transfer of access rights to the customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising.",
             team: "I Love My Team",
         },
         pl: {
@@ -318,7 +321,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Iryna Stoliarova",
             about: "Good design, first of all, needs to solve problems.",
             services:
-                "I provide a full range of product design services, including market research, competitor analysis, user research, information architecture, and interactive prototypes.",
+                "I’ve been providing the full design service for products, including market research, competitor analysis, user research, information architecture, concepts, interactive prototypes.",
             team: "I Love My Team",
         },
         pl: {
@@ -357,14 +360,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Анастасія Назаренко",
             about: "Дизайнер - це стратег з почуттям прекрасного.",
             services:
-                "Розробка логотипів, брендінгу компаній, малювання ілюстрацій, створення нескладних анімацій. Медіа для соц мереж, типографія, знання з UX/UI дизайну, інфографіка",
+                "Розробка логотипів, брендинг компанії, малювання ілюстрацій, створення простих анімацій. Медіа для соціальних мереж, типографіки, UX/UI дизайну та інфографіки.",
             team: "I Love My Team",
         },
         en: {
             name: "Anastasiia Nazarenko",
             about: "Designer is a planner with a sense of beauty",
             services:
-                "Designing logos, company branding, drawing illustrations, creating simple animations. Media for social networks, typography, knowledge of UX/UI design, infographics",
+                "Development of logos, company branding, drawing illustrations, and creating simple animations. Media for social networks, typography, UX/UI design, and infographics.",
             team: "I Love My Team",
         },
         pl: {
@@ -407,13 +410,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Євген Сердюк",
             about: "",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+                "Розробка та оформлення веб-сторінок за допомогою HTML, CSS і JavaScript з увагою до семантики та реагування на різні розміри екрана. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next.js. Розробка бекенда за допомогою Node.js і NestJS.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
             about: "",
-            services: "",
+            services:
+                "Development and styling of web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -452,14 +456,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ірина Тринкаль",
             about: "Можливо все, на неможливе просто потрібно більше часу.",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та Node.js. Створення та управління бекенд API для забезпечення комунікації між фронтендом та сервером. Впровадження аутентифікації користувачів та надання прав доступу для забезпечення безпеки додатків. Поєднання компонентів фронтенду та бекенду для створення єдиної, працюючої програми.",
+                "Розробка та оформлення веб-сторінок за допомогою HTML, CSS і JavaScript з акцентом на семантику та реакцію на різні розміри екрана. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних додатків за допомогою JavaScript і Node.js. Створення та керування серверними API для забезпечення зв’язку між зовнішнім інтерфейсом і сервером. Впровадження автентифікації користувачів і контролю доступу для забезпечення безпеки програми. Інтеграція зовнішніх і бекенд-компонентів для створення єдиної функціональної програми.",
             team: "I Love My Team",
         },
         en: {
             name: "Iryna Trynkal",
             about: "Anything is possible, the impossible just takes longer.",
             services:
-                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account best practices. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js. Creating and managing backend APIs to ensure communication between the frontend and the server. Implementation of user authentication and granting access rights to ensure application security. Combining front-end and back-end components to create a single, working application.",
+                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js. Creation and management of backend APIs to ensure communication between frontend and server. Implementation of user authentication and access control to ensure application security. Integration of frontend and backend components to create a unified, functioning application.",
             team: "I Love My Team",
         },
         pl: {
@@ -556,14 +560,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Олена Постернак",
             about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
             services:
-                "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
+                "Спеціалізуюсь на розробці веб-додатків, з акцентом на семантику та реакцію на різні розміри екрану. Я створюю інтерактивні програми, використовуючи різні фреймворки та бібліотеки JavaScript. Моя головна мета — надати користувачам комфортні та зручні веб-додатки.",
             team: "I Love My Team",
         },
         en: {
             name: "Olena Posternak",
             about: "Small things matter. It’s often they, that make life more comfortable.",
             services:
-                "I specialize in web application development, taking into account best practices. I create interactive applications using various JavaScript frameworks and libraries. My main goal is to provide users with a comfortable and convenient experience of using web applications.",
+                "I specialize in developing web applications with a focus on semantics and responsiveness to different screen sizes. I create interactive applications using various JavaScript frameworks and libraries. My primary goal is to provide users with a comfortable and convenient web application experience.",
             team: "I Love My Team",
         },
         pl: {
@@ -610,16 +614,16 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Михайлова",
-            about: "Люблю знаходити елегантні рішення для складних задач",
+            about: "Люблю знаходити елегантні рішення для складних задач.",
             services:
-                "Створення зручних для користувачів та ефективних для бізнесу web-застосунків різного рівня складності. Фокусуюсь на поєднанні максимальної функціональності та естетичності для досягнення бездоганного результату",
+                "Створення зручних і ефективних для бізнесу веб-додатків різної складності. Зосередьтеся на поєднанні максимальної функціональності та естетики для досягнення бездоганних результатів.",
             team: "I Love My Team",
         },
         en: {
             name: "Olga Mykhailova",
-            about: "I like to find elegant solutions to complex problems.",
+            about: "I enjoy finding elegant solutions to difficult tasks.",
             services:
-                "My goal is to develop web applications that impress with their user-friendliness and business efficiency. I strive to create products of varying levels of complexity that provide not only functionality but also aesthetics. My approach is to help clients achieve flawless results by combining maximum utility and attractive design in every project.",
+                "Creation of user-friendly and business-effective web applications of varying complexity. Focus on combining maximum functionality and aesthetics to achieve impeccable results.",
             team: "I Love My Team",
         },
         pl: {
@@ -664,14 +668,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Катерина Рубанік",
             about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту",
             services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування APIСтворення тестової документації (плани тестування, чек-листи, тестові випадки, звіти про помилки). Проведення веб/мобільного тестування, тестування API.",
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Rubanik",
-            about: "QA engineer with experience in software testing. I have the skills to test, analyze and detect errors to ensure the impeccable quality of the product",
+            about: "QA engineer with experience in software testing. I have the skills to test, analyze and identify errors to ensure flawless product quality.",
             services:
-                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.Creation of test documentation (test plans, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "I Love My Team",
         },
         pl: {
@@ -725,14 +729,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Катерина Погребна",
             about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
             services:
-                "Ручне функціональне, нефункціональне тестування. Тестування UI/UX, API, баз даних та продуктивності.Тестування вимог, аналіз середовищ, кросплатформене тестування, дослідження продукту, доменний аналіз, тестування ролей доступу, дослідницьке тестування, регресійне тестування.Документація: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
+                "Ручне функціональне та нефункціональне тестування. Тестування UI/UX, API, баз даних і продуктивності. Тестування вимог, аналіз середовища, міжплатформне тестування, дослідження продукту, аналіз домену, тестування ролей доступу, пошукове тестування, регресійне тестування. Документація: історія користувача, план тестування, стратегія тестування, контрольний список, тестовий приклад, звіт про помилку, звіт про тестування.",
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Pogrebna",
             about: "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
             services:
-                "Manual functional and non-functional testing. UI/UX, API, database, and performance testing. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
+                "Manual functional and non-functional testing. Testing UI/UX, API, databases, and performance. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
             team: "I Love My Team",
         },
         pl: {
@@ -833,13 +837,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів, маркетингових та виробничих дани. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами, розробниками і стейкхолдерами. Аналіз та управління ризиками. Менторинг для початківців в ІТ",
+                "Аналіз потреб клієнтів, аналіз ринку та конкурентів, а також аналіз маркетингових і виробничих даних. Розробка, аналіз, організація та формалізація вимог. Управління вимогами, координація розробників і зацікавлених сторін. Аналіз та управління ризиками. Менторство для початківців в ІТ.",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
-            services: "",
+            services:
+                "Customer business needs analysis, market and competitor analysis, and analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
             team: "I Love My Team",
         },
         pl: {
@@ -879,14 +884,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Ольга Кучальська",
             about: "",
             services:
-                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
+                "Аналіз потреб бізнесу клієнтів. Аналіз даних. Аналіз ринку та конкурентів. Розробка, аналіз, організація та формалізація вимог. Управління вимогами між розробниками та зацікавленими сторонами. Написання технічної документації та історій користувачів. Базові навички тестування та знання SQL. Розуміння SDLC, гнучких методологій та базових навичок управління. Відмінні комунікативні навички.",
             team: "I Love My Team",
         },
         en: {
             name: "Olha Kuchalska",
             about: "",
             services:
-                "Analysis of the customer's business needs. Data analysis. Market and competitor analysis. Developing, analyzing, organizing and formalizing requirements. Comunication management between developers and stakeholders. Writing technical documentation, user-story. Basic testing skills and SQL knowledge. Knowledge of SDLC, agile methodologies and basic management knowledge. Excellent communication skills.",
+                "Customer business needs analysis. Data analysis. Market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Requirements management between developers and stakeholders. Writing technical documentation and user stories. Basic testing skills and knowledge of SQL. Understanding of SDLC, agile methodologies, and basic management skills. Excellent communication skills.",
             team: "I Love My Team",
         },
         pl: {
@@ -933,13 +938,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Денис Слівінський",
             about: "Справжня дурість щоразу перемагає штучний інтелект",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та NodeJS.",
+                "Розробка та оформлення веб-сторінок за допомогою HTML, CSS і JavaScript з акцентом на семантику та реакцію на різні розміри екрана. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних додатків за допомогою JavaScript і Node.js.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Denis Slivinskyi",
             about: "Real stupidity beats artificial intelligence every time",
-            services: "",
+            services:
+                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -980,13 +986,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Володимир Дегтярев",
             about: "Нічого не вийде, якщо ви цього не зробите",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+                "Розробка та оформлення веб-сторінок за допомогою HTML, CSS і JavaScript з акцентом на семантику та реакцію на різні розміри екрана. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних додатків за допомогою JavaScript і Node.js.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Volodymyr Dehtiarev",
             about: "Nothing will work unless you do",
-            services: "",
+            services:
+                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS. ",
             team: "Smachno! na seli",
         },
         pl: {
@@ -1022,15 +1029,16 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олена Чорнобривець",
-            about: "Забезпечення якості означає запобігання помилкам",
+            about: "Забезпечення якості означає запобігання помилкам.",
             services:
-                "Ручне мобільне/веб тестування, API тестування, створення тестової документації: тест кейс, чекліст, баг репорт",
+                "Ручне мобільне/веб-тестування, тестування API, створення тестової документації: тестові випадки, чек-листи, звіти про помилки.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Olena Chornobryvets",
-            about: "Quality assurance means preventing errors",
-            services: "",
+            about: "Quality assurance means preventing errors.",
+            services:
+                "Manual mobile/web testing, API testing, creation of test documentation: test cases, checklists, bug reports.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -1074,14 +1082,15 @@ export const membersData: MemberDataItemType[] = [
         ua: {
             name: "Ганна Горбенко",
             about: "QA для мене це як цифровий детектив. Процес розслідування мене захоплює!",
-            services: "",
+            services:
+                "Ручна перевірка якості, чорно-сіре тестування, веб-тестування/тестування мобільних пристроїв, системне тестування, регресія, осудність, дим, спеціальне тестування, із тестовими випадками, функціональність, сумісність, зручність використання, методи розробки тестів. Тестова документація: тестовий план, тестові випадки, контрольні списки, звіти про помилки, знання SDLC, Waterfall, знання концепцій Agile (Scrum, Kanban), знання STLC, Git і Terminal, SQL (MySQL, SQLite, DBeaver).",
             team: "Смачно! на селі",
         },
         en: {
             name: "Hanna Horbenko",
             about: "QA for me it's like a digital detective. The investigation process fascinates me!",
             services:
-                "Manual QA, Black/Grey testing, Web/Mobile testing, System testing, Regression, Sanity, Smoke, Ad-Hoc, With test cases, Functional, Compatibility, Usability, Test design techniques. Test documentation: Test plan, Test cases, Checklists, Bug reports, Knowledge of SDLC, Waterfall, Agile concepts knowledge (Scrum, Kanban), Knowledge of STLC, Git and Terminal, SQL (MySQL, SQLite, DBeaver)",
+                "Manual QA, Black/Grey testing, Web/Mobile testing, System testing, Regression, Sanity, Smoke, Ad-Hoc, With test cases, Functional, Compatibility, Usability, Test design techniques. Test documentation: Test plan, Test cases, Checklists, Bug reports, Knowledge of SDLC, Waterfall, Agile concepts knowledge (Scrum, Kanban), Knowledge of STLC, Git and Terminal, SQL (MySQL, SQLite, DBeaver).",
             team: "Smachno! na seli",
         },
         pl: {
@@ -1125,13 +1134,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Анна Клиба",
             about: "QA є ключем до надійності та довіри до продукту",
             services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+                "Створення тестової документації (плани тестування, чек-листи, тестові випадки, звіти про помилки). Проведення веб/мобільного тестування, тестування API.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Anna Klyba",
             about: "QA is the key to reliability and trust in the product",
-            services: "",
+            services:
+                "Creation of test documentation (test plans, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "Smachno! na seli",
         },
         pl: {
