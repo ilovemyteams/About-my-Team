@@ -368,14 +368,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Anastasiia Nazarenko",
             about: "Designer is a planner with a sense of beauty",
             services:
-                "Development of logos, company branding, drawing illustrations, and creating simple animations. Media for social networks, typography, UX/UI design, and infographics.",
+                "Logo design, company branding, illustration (raster and vector), and simple animation. Media for social networks, typography, UX/UI design and infographics.",
             team: "I Love My Team",
         },
         pl: {
             name: "Anastasiia Nazarenko",
             about: "Projektant to strateg z wyczuciem piękna.",
             services:
-                "Projektowanie logo, branding firmy, ilustracje, proste animacje. Media społecznościowe, typografia, projektowanie UX/UI i infografiki.",
+                "Projektowanie logo, branding firmy, ilustracje (rastrowe oraz wektorowe), proste animacje. Media społecznościowe, typografia, projektowanie UX/UI i infografiki..",
             team: "I Love My Team",
         },
     },
