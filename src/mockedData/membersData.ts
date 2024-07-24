@@ -405,14 +405,14 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Євген Сердюк",
-            about: "",
+            about: "Зараз все зробимо!",
             services:
                 "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
-            about: "",
+            about: "Let's do everything now!",
             services: "",
             team: "Smachno! na seli",
         },
