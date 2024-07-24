@@ -399,7 +399,7 @@ export const membersData: MemberDataItemType[] = [
                 "TypeScript",
                 "React",
                 "NextJS",
-                "NodeJs",
+                "Node.js",
                 "ReduxJS",
                 "MongoDB",
                 "PosgreSQL",
@@ -411,7 +411,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Євген Сердюк",
             about: "Зараз все зробимо!",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node js та NestJS.",
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next. Розробка бекенду з використанням Node.js та NestJS.",
             team: "Смачно! на селі",
         },
         en: {
@@ -874,7 +874,7 @@ export const membersData: MemberDataItemType[] = [
                 "TypeScript",
                 "React",
                 "NextJS",
-                "NodeJs",
+                "Node.js",
                 "ReduxJS",
                 "MongoDB",
                 "PosgreSQL",
