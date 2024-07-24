@@ -84,7 +84,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Susanna Salata",
             about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
             services:
-                "Konsulting, analiza procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów. Mentoring dla początkujących w IT",
+                "Doradztwo, analiza i dostosowywanie procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów oraz zarządzanie kryzysowe projektami i produktami. Mentoring dla początkujących w IT.",
             team: "I Love My Team",
         },
     },
@@ -230,7 +230,8 @@ export const membersData: MemberDataItemType[] = [
         pl: {
             name: "Vlad Shumkov",
             about: "",
-            services: "",
+            services:
+                "Tworzenie stron internetowych o dowolnej złożoności, sklepów e-commerce i stron internetowych typu landing page. Mentoring dla początkujących programistów Frontend.",
             team: "Smachno! na seli",
         },
     },
@@ -273,14 +274,14 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ігор Дронішинець",
-            about: "",
+            about: "Ефективно перетворюю складні завдання на прості та зрозумілі рішення.",
             services:
                 "Розробка сайту повного циклу від створення логотипу та брендбуку до випуску продукції та передачі прав доступу замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама.",
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
-            about: "",
+            about: "Effectively transform complex tasks into simple and comprehensible solutions.",
             services:
                 "Full-cycle website development from logo creation and brand book to production release and transfer of access rights to the customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising.",
             team: "I Love My Team",
@@ -289,7 +290,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Ihor Dronishynets",
             about: "",
             services:
-                "Pełny cykl rozwoju strony internetowej od logo i brandingu do wydania produktu i przekazania praw dostępu klientowi.",
+                "Tworzenie stron internetowych w pełnym cyklu, od stworzenia logo i księgi znaku po wprowadzenie produktu na rynek i przekazanie praw dostępu klientowi. Projektowanie graficzne, opracowywanie logo i identyfikacji wizualnej, drukowanie, projektowanie etykiet i opakowań, reklama zewnętrzna.",
             team: "I Love My Team",
         },
     },
@@ -326,7 +327,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Iryna Stoliarova",
-            about: "Dobry projekt powinien przede wszystkim rozwiązywać problemy.",
+            about: "Dobry design powinien przede wszystkim rozwiązywać problemy.",
             services:
                 "Zapewniam pełen zakres usług projektowania produktów, w tym badania rynku, analizę konkurencji, badania użytkowników, architekturę informacji i interaktywne prototypy.",
             team: "I Love My Team",
@@ -372,9 +373,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Anastasiia Nazarenko",
-            about: "Projektant to strateg z poczuciem piękna.",
+            about: "Projektant to strateg z wyczuciem piękna.",
             services:
-                "Projektowanie logo, branding firmy, tworzenie ilustracji lub prostych animacji, obsługa portali społecznościowych, typografia, znajomość projektowania UX/UIinfografiki",
+                "Projektowanie logo, branding firmy, ilustracje, proste animacje. Media społecznościowe, typografia, projektowanie UX/UI i infografiki.",
             team: "I Love My Team",
         },
     },
@@ -470,7 +471,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Iryna Trynkal",
             about: "Wszystko jest możliwe, niemożliwe wymaga tylko więcej czasu.",
             services:
-                "Projektowanie i tworzenie stron internetowych przy użyciu HTML, CSS i JavaScript z uwzględnieniem najlepszych praktyk. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js. Tworzenie i zarządzanie backendowymi interfejsami API w celu zapewnienia komunikacji między frontendem a serwerem. Wdrażanie uwierzytelniania użytkowników i przyznawanie praw dostępu w celu zapewnienia bezpieczeństwa dla aplikacji. Łączenie komponentów front-end i back-end w celu stworzenia pojedynczej, działającej aplikacji.",
+                "Tworzenie i projektowanie stron internetowych przy użyciu HTML, CSS i JavaScript z naciskiem na semantykę i responsywność dla różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js. Tworzenie i zarządzanie API serwera w celu zapewnienia komunikacji między interfejsem zewnętrznym a serwerem. Wdrażanie uwierzytelniania użytkowników i kontroli dostępu w celu zapewnienia bezpieczeństwa aplikacji. Integracja komponentów zewnętrznych i backendowych w celu stworzenia jednej funkcjonalnej aplikacji.",
             team: "I Love My Team",
         },
     },
@@ -560,7 +561,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Олена Постернак",
             about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
             services:
-                "Спеціалізуюсь на розробці веб-додатків, з акцентом на семантику та реакцію на різні розміри екрану. Я створюю інтерактивні програми, використовуючи різні фреймворки та бібліотеки JavaScript. Моя головна мета — надати користувачам комфортні та зручні веб-додатки.",
+                "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
             team: "I Love My Team",
         },
         en: {
@@ -574,7 +575,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Olena Posternak",
             about: "Małe rzeczy są ważne. Często sprawiają, że życie staje się wygodniejsze.",
             services:
-                "Specjalizuję się w tworzeniu aplikacji internetowych, biorąc pod uwagę najlepsze praktyki. Tworzę interaktywne aplikacje przy użyciu różnych frameworków i bibliotek JavaScript. Moim głównym celem jest zapewnienie użytkownikom wygodnego i komfortowego korzystania z aplikacji internetowych.",
+                "Specjalizuje się w tworzeniu aplikacji internetowych z naciskiem na semantykę i responsywność na różnych rozmiarach ekranu. Tworzę interaktywne aplikacje przy użyciu różnych frameworków i bibliotek JavaScript. Moim głównym celem jest zapewnienie użytkownikom wygodnych i funkcjonalnych aplikacji internetowych.",
             team: "I Love My Team",
         },
     },
@@ -628,9 +629,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Olga Mykhailova",
-            about: "Lubię znajdować eleganckie rozwiązania złożonych problemów.",
+            about: "Uwielbiam znajdować eleganckie rozwiązania złożonych problemów.",
             services:
-                "Moim celem jest tworzenie aplikacji internetowych, które są bardzo łatwe w obsłudze i bardzo efektywne biznesowo. Staram się tworzyć produkty o różnym poziomie złożoności, które zapewniają nie tylko funkcjonalność, ale także estetykę. Moje podejście polega na pomaganiu klientom w osiąganiu najlepszych wyników poprzez łączenie maksymalnej użyteczności i atrakcyjnego wyglądu w każdym projekcie.",
+                "Tworzenie przyjaznych dla użytkownika i skutecznych aplikacji biznesowych o różnym stopniu złożoności. Koncentrujemy się na łączeniu maksymalnej funkcjonalności i estetyki, aby osiągnąć nieskazitelne rezultaty.",
             team: "I Love My Team",
         },
     },
@@ -680,9 +681,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Kateryna Rubanik",
-            about: "QA Inżynier z doświadczeniem w testowaniu oprogramowania. Posiadam umiejętności testowania, analizowania i wykrywania błędów w celu zapewnienia nienagannej jakości produktu",
+            about: "Inżynier QA z doświadczeniem w testowaniu oprogramowania. Posiadam umiejętności testowania, analizowania i wykrywania błędów w celu zapewnienia nienagannej jakości produktu.",
             services:
-                "Tworzenie dokumentacji testów (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Wykonanie testów internetowych/mobilnych, testów API.",
+                "Tworzenie dokumentacji testowej (plany testów, listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
             team: "I Love My Team",
         },
     },
@@ -743,14 +744,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Kateryna Pogrebna",
             about: "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
             services:
-                "Manualne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie integracyjne, badanie produktu, analiza domeny, testowanie ról i dostępów, testowanie eksploarycjne, testowanie regresyjne. Dokumentacja: User Stories, Plan testów, Strategia testów, Lista kontrolna, Przypadki testowe, Raport błędów, Raport z testów.",
+                "Ręczne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie międzyplatformowe, badanie produktu, analiza domeny, testowanie ról dostępu, testowanie eksploracyjne, testowanie regresyjne. Dokumentacja: historia użytkownika, plan testów, strategia testów, lista kontrolna, przypadek testowy, raport o błędzie, raport z testów.",
             team: "I Love My Team",
         },
     },
     {
         data: {
             id: "DariaCherviakova",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
             position: "Project Manager/ Scrum Master",
@@ -790,7 +791,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Daria Cherviakova",
-            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i realizację celów.",
+            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i osiąganie celów.",
             services:
                 "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
             team: "I Love My Team",
@@ -850,14 +851,15 @@ export const membersData: MemberDataItemType[] = [
         pl: {
             name: "Susanna Salata",
             about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services: "",
+            services:
+                "Analiza potrzeb klientów, analiza rynku i konkurencji oraz analiza danych marketingowych i produkcyjnych. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami, koordynacja deweloperów i interesariuszy. Analiza i zarządzanie ryzykiem. Mentoring dla początkujących w IT.",
             team: "I Love My Team",
         },
     },
     {
         data: {
             id: "OlhaKuchalska",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
@@ -896,9 +898,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Olha Kuchalska",
-            about: "h",
+            about: "",
             services:
-                "Analiza potrzeb biznesowych klienta. Analiza danych. Analiza rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formułowanie wymagań. Zarządzanie wymaganiami pomiędzy programistami i interesariuszami. Pisanie dokumentacji technicznej, historii użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania. Doskonałe umiejętności komunikacyjne.",
+                "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
             team: "I Love My Team",
         },
     },
