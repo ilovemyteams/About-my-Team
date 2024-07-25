@@ -127,8 +127,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Mariia Popova",
-            about: "",
-            services: "",
+            about: "Cokolwiek robisz, rób to z miłością. W końcu to się odczuwa.",
+            services:
+                "Projektowanie produktów i aplikacji internetowych, tworzenie logo, branding firmy, ilustracje. Media dla sieci społecznościowych, typografia, projektowanie UX/UI, infografiki.",
             team: "Smachno! na seli",
         },
     },
@@ -178,8 +179,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Svitlana Kondratenko",
-            about: "",
-            services: "",
+            about: "„Ktoś musi się tym zająć?” - Ja jestem osobą, która to zrobi!",
+            services:
+                "Analiza potrzeb biznesowych klienta, rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formalizowanie wymagań. Pisanie dokumentacji technicznej, user-story. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania.",
             team: "Smachno! na seli",
         },
     },
@@ -229,7 +231,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Vlad Shumkov",
-            about: "",
+            about: "Stawiam na jasną komunikację, dzięki czemu każdy projekt spełnia rygorystyczne standardy i oczekiwania klientów.",
             services:
                 "Tworzenie stron internetowych o dowolnej złożoności, sklepów e-commerce i stron internetowych typu landing page. Mentoring dla początkujących programistów Frontend.",
             team: "Smachno! na seli",
@@ -361,21 +363,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Анастасія Назаренко",
             about: "Дизайнер - це стратег з почуттям прекрасного.",
             services:
-                "Розробка логотипів, брендинг компанії, малювання 2D ілюстрацій (растрових і векторних), створення простих анімацій. Медіа для соціальних мереж, типографіка, інфографіка. Знання з UX/UI дизайну.",
+                "Я пропоную широкий спектр творчих послуг, включаючи розробку логотипів та брендинг компанії. Моя спеціалізація охоплює створення 2D ілюстрацій (растрових і векторних) та простих анімацій для візуалізації ваших ідей. Я також займаюся розробкою медіа для соціальних мереж, типографіки та інфографіки. Маю ґрунтовні знання у сфері UX/UI дизайну, що забезпечує естетичність і зручність використання ваших проектів.",
             team: "I Love My Team",
         },
         en: {
             name: "Anastasiia Nazarenko",
             about: "Designer is a planner with a sense of beauty",
             services:
-                "Logo design, company branding, illustration (raster and vector), and simple animation. Media for social networks, typography, UX/UI design and infographics.",
+                "I offer a range of creative services including logo design and company branding. I specialize in crafting 2D illustrations, both raster and vector, and can create simple animations to bring your ideas to life. My expertise extends to designing media for social networks, typography, and infographics. I also have a solid foundation in UX/UI design, ensuring that your projects are not only visually appealing but also user-friendly and effective.",
             team: "I Love My Team",
         },
         pl: {
             name: "Anastasiia Nazarenko",
             about: "Projektant to strateg z wyczuciem piękna.",
             services:
-                "Projektowanie logo, branding firmy, ilustracje (rastrowe oraz wektorowe), proste animacje. Media społecznościowe, typografia, projektowanie UX/UI i infografiki..",
+                "Oferuję szeroki zakres usług kreatywnych, w tym projektowanie logo i branding firmy. Specjalizuję się w tworzeniu ilustracji 2D, zarówno rastrowych, jak i wektorowych, oraz prostych animacji, które ożywią Twoje pomysły. Moja ekspertyza obejmuje również projektowanie mediów społecznościowych, typografię i infografiki. Posiadam solidne podstawy w projektowaniu UX/UI, co gwarantuje, że Twoje projekty będą nie tylko estetyczne, ale także przyjazne dla użytkownika i skuteczne.",
             team: "I Love My Team",
         },
     },
@@ -423,8 +425,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Eugene Serdiuk",
-            about: "",
-            services: "",
+            about: "Teraz to zrobimy!",
+            services:
+                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i NodeJS.",
             team: "Smachno! na seli",
         },
     },
@@ -902,8 +905,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Denis Slivinskyi",
-            about: "",
-            services: "",
+            about: "Prawdziwa głupota za każdym razem pokonuje sztuczną inteligencję.",
+            services:
+                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i NodeJS.",
             team: "Smachno! na seli",
         },
     },
@@ -950,8 +954,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Volodymyr Dehtiarev",
-            about: "",
-            services: "",
+            about: "Nie będzie działać, jeśli tego nie zrobisz.",
+            services:
+                "Tworzenie i stylizacja stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu React i Next. Rozwój backendu przy użyciu Node js i NestJS.",
             team: "Smachno! na seli",
         },
     },
@@ -995,8 +1000,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Olena Chornobryvets",
-            about: "",
-            services: "",
+            about: "Zapewnienie jakości to zapobieganie błędom.",
+            services:
+                "Ręczne testowanie mobilne/webowe, testowanie API, tworzenie dokumentacji testowej: przypadek testowy, lista kontrolna, raport o błędach.",
             team: "Smachno! na seli",
         },
     },
@@ -1047,8 +1053,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Hanna Horbenko",
-            about: "",
-            services: "",
+            about: "QA jest dla mnie jak cyfrowy detektyw. Proces śledczy jest dla mnie fascynujący!",
+            services:
+                "Testowanie ręczne, testowanie czarne/szare, testowanie sieciowe/mobilne, testowanie systemowe, testowanie regresji, testowanie poprawności, dymne testowanie, testowanie spontaniczne, z przypadkami testowymi, testowanie funkcjonalne, testowanie kompatybilności, testowanie użyteczności, techniki projektowania testów. Dokumentacja testowa: Plan testów, Przypadki testowe, Listy kontrolne, Raporty błędów. Znajomość SDLC, modelu Waterfall, koncepcji Agile (Scrum, Kanban), STLC, Git i Terminal, SQL (MySQL, SQLite, DBeaver).",
             team: "Smachno! na seli",
         },
     },
@@ -1098,8 +1105,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Anna Klyba",
-            about: "",
-            services: "",
+            about: "QA jest kluczem do niezawodności i zaufania do produktu.",
+            services:
+                "Tworzenie dokumentacji testowej (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Testy internetowe/mobilne, testy API.",
             team: "Smachno! na seli",
         },
     },
