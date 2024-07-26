@@ -837,21 +837,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Кучальська",
-            about: "",
+            about: "Єдиний спосіб робити свою роботу добре — це любити її. Я люблю свою роботу!",
             services:
                 "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
             team: "I Love My Team",
         },
         en: {
             name: "Olha Kuchalska",
-            about: "",
+            about: "The only way to do your job well is to love it. I love my job!",
             services:
                 "Customer business needs analysis. Data analysis. Market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Requirements management between developers and stakeholders. Writing technical documentation and user stories. Basic testing skills and knowledge of SQL. Understanding of SDLC, agile methodologies, and basic management skills. Excellent communication skills.",
             team: "I Love My Team",
         },
         pl: {
             name: "Olha Kuchalska",
-            about: "",
+            about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
             services:
                 "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
             team: "I Love My Team",
