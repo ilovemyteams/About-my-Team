@@ -907,7 +907,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Denis Slivinskyi",
             about: "Prawdziwa głupota za każdym razem pokonuje sztuczną inteligencję.",
             services:
-                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i NodeJS.",
+                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js.",
             team: "Smachno! na seli",
         },
     },
@@ -956,7 +956,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Volodymyr Dehtiarev",
             about: "Nie będzie działać, jeśli tego nie zrobisz.",
             services:
-                "Tworzenie i stylizacja stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu React i Next. Rozwój backendu przy użyciu Node js i NestJS.",
+                "Tworzenie i stylizacja stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu React i Next. Rozwój backendu przy użyciu Node.js i NestJS.",
             team: "Smachno! na seli",
         },
     },
