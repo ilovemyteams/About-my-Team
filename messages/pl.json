@@ -11,16 +11,16 @@
 
     "Portfolio": {
         "pageTitle": "Wdrożone ",
-        "titlePartForMob": "rozwinąć pomysły i biznesy naszych ",
+        "titlePartForMob": "naszych dotychczasowych ",
         "titleFirstWord": "Wdrożone ",
         "titleSecondWord": "projekty",
-        "titleThirdWord": "które ",
-        "titleFourthWord": "pomogły rozwinąć działalność",
+        "titleThirdWord": " które ",
+        "titleFourthWord": "pomogły rozwinąć działalność ",
         "titleFifthWord": "",
         "titleFifthWordDesk": "",
-        "titleSixthWord": "działalność naszych dotychczasowych ",
-        "titleSixthWordDesk": "naszych dotychczasowych klientów",
-        "titleSeventhWord": ""
+        "titleSixthWord": "naszych dotychczasowych ",
+        "titleSixthWordDesk": "naszych dotychczasowych",
+        "titleSeventhWord": " klientów"
     },
 
     "Mission": {
