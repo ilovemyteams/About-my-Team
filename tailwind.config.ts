@@ -168,6 +168,8 @@ const config: Config = {
                     300: "#54148A",
                     400: "#09002E",
                     stroke: "#5F3F87",
+                    strokeFormLebel: "#A088BF",
+                    strokeFormLebelLight: "#B097CE",
                     strokeLight: "#C7C0F3",
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
