@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+    "https://docs.google.com/document/d/1OdqkzzgBu96xJ5nc66WbIXSEKytWRTG2vWRRFy5IUb8/edit";
 
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");
