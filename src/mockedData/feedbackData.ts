@@ -50,4 +50,35 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Świetny projekt i fajny pomysł! Realizacja była nawet jeszcze lepsza. Nie sądziłem, że nudną działalność rolnika można odtworzyć w tak interesujący sposób. Moi klienci są zachwyceni moją stronę internetową. Właśnie zasadziłem pierwsze sadzonki w szklarni i otrzymałem już 100 zamówień na następne zbiory pomidorów.",
         },
     },
+    {
+        data: {
+            id: "02",
+            image: "",
+            siteLink: "protection.in.ua",
+        },
+        ua: {
+            siteName: "Міграційний Адвокат",
+            siteView: "вебсайт",
+            reviewer: "Антоній Курц",
+            reviewerRole: "Адвокат, власник сайту",
+            feedbackText:
+                "Дякую команді за допомогу в систематизації та втіленні моїх ідей, незважаючи на нові побажання та зміни текстів, робота виконувалась вчасно, а спілкування було приємним та професійним, з результатом, що повністю задовольняє мої потреби. Щиро рекомендую цю команду!",
+        },
+        en: {
+            siteName: "Migration Lawyer",
+            siteView: "website",
+            reviewer: "Antonii Kurts",
+            reviewerRole: "Lawyer, site owner",
+            feedbackText:
+                "Thank you to the team for helping to systematize and bring my ideas to life; despite new requests and text changes, the work was completed on time, communication was pleasant and professional, and the result fully meets my needs. I highly recommend this team!",
+        },
+        pl: {
+            siteName: "Adwokat ds. migracji",
+            siteView: "website",
+            reviewer: "Antonii Kurts",
+            reviewerRole: "Adwokat, właściciel serwisu",
+            feedbackText:
+                "Dziękuję zespołowi za pomoc w usystematyzowaniu i realizacji moich pomysłów; pomimo nowych życzeń i zmian tekstów, praca została ukończona na czas, komunikacja była przyjemna i profesjonalna, a wynik w pełni spełnia moje oczekiwania. Gorąco polecam ten zespół!",
+        },
+    },
 ];
