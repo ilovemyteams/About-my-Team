@@ -489,11 +489,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "ilovemyteam.online",
-                "cosmith.io",
-                "kuharskyivulyk.com.ua",
-            ],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
