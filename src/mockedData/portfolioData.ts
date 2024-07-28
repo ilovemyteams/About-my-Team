@@ -109,7 +109,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "4",
-            image: "",
+            image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
         ua: {
