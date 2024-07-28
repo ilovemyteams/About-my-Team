@@ -70,7 +70,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Antonii Kurts",
             reviewerRole: "Owner of a law office",
             feedbackText:
-                "Thank you to the team for helping to systematize and bring my ideas to life; despite new requests and text changes, the work was completed on time, communication was pleasant and professional, and the result fully meets my needs. I highly recommend this team!",
+                "Thanks to the team for helping me to systematize and implement my ideas, despite new requests and changes to the texts, the work was done on time, and the communication was pleasant and professional, and the result fully satisfied my needs. I sincerely recommend this team!",
         },
         pl: {
             siteName: "Adwokat ds. migracji",
@@ -78,7 +78,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Antonii Kurts",
             reviewerRole: "Właściciel kancelarii prawnej",
             feedbackText:
-                "Dziękuję zespołowi za pomoc w usystematyzowaniu i realizacji moich pomysłów; pomimo nowych życzeń i zmian tekstów, praca została ukończona na czas, komunikacja była przyjemna i profesjonalna, a wynik w pełni spełnia moje oczekiwania. Gorąco polecam ten zespół!",
+                "Dziękuję zespołowi za pomoc w organizacji i realizacji moich pomysłów, pomimo nowych życzeń i zmian w tekstach, praca została wykonana na czas, a komunikacja była przyjemna i profesjonalna, z wynikiem, który w pełni spełnia moje wymagania. Szczerze polecam ten zespół!",
         },
     },
 ];
