@@ -125,7 +125,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "The website offers legal services in the field of migration law, including the protection of citizens' rights in the State Migration Service of Ukraine and consultations on citizenship issues. Here you can find information about lawyers, their services, and contact details.",
         },
         pl: {
-            name: "Adwokat ds. migracji",
+            name: "Prawnik imigracyjny",
             siteView: "website",
             description:
                 "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",

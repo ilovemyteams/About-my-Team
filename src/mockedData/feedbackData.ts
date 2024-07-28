@@ -60,7 +60,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Міграційний Адвокат",
             siteView: "вебсайт",
             reviewer: "Антоній Курц",
-            reviewerRole: "Адвокат, власник сайту",
+            reviewerRole: "Власник юридичної компанії",
             feedbackText:
                 "Дякую команді за допомогу в систематизації та втіленні моїх ідей, незважаючи на нові побажання та зміни текстів, робота виконувалась вчасно, а спілкування було приємним та професійним, з результатом, що повністю задовольняє мої потреби. Щиро рекомендую цю команду!",
         },
@@ -68,7 +68,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Migration Lawyer",
             siteView: "website",
             reviewer: "Antonii Kurts",
-            reviewerRole: "Lawyer, site owner",
+            reviewerRole: "Owner of a law office",
             feedbackText:
                 "Thank you to the team for helping to systematize and bring my ideas to life; despite new requests and text changes, the work was completed on time, communication was pleasant and professional, and the result fully meets my needs. I highly recommend this team!",
         },
@@ -76,7 +76,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Adwokat ds. migracji",
             siteView: "website",
             reviewer: "Antonii Kurts",
-            reviewerRole: "Adwokat, właściciel serwisu",
+            reviewerRole: "Właściciel kancelarii prawnej",
             feedbackText:
                 "Dziękuję zespołowi za pomoc w usystematyzowaniu i realizacji moich pomysłów; pomimo nowych życzeń i zmian tekstów, praca została ukończona na czas, komunikacja była przyjemna i profesjonalna, a wynik w pełni spełnia moje oczekiwania. Gorąco polecam ten zespół!",
         },
