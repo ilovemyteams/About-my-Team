@@ -418,7 +418,7 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Eugene Serdiuk",
-            about: "Let's do everything now!",
+            about: "We'll do it now!",
             services:
                 "Development and styling of web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
@@ -903,7 +903,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Denis Slivinskyi",
             about: "Real stupidity beats artificial intelligence every time",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js.",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -952,7 +952,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Volodymyr Dehtiarev",
             about: "Nothing will work unless you do",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS. ",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS. ",
             team: "Smachno! na seli",
         },
         pl: {
