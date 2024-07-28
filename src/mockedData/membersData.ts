@@ -37,8 +37,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "SusannaSalataPM",
             projectId: ["1", "2", "3"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
+            imageURL: "",
             position: "Product manager",
             categoryName: "manager",
             projectsExperience: [

@@ -6,7 +6,6 @@ import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
-import { IconHeart } from "../shared/Icons/IconHeart";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 const END_OF_URL = -5;
@@ -40,9 +39,6 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 onClick={savingFilteredListURL}
             >
                 <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2]">
-                    <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto z-[-1]">
-                        <IconHeart className="w-full h-full " />
-                    </div>
                     {imageURL ? (
                         <Image
                             src={imageURL}
