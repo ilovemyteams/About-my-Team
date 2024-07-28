@@ -794,14 +794,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів, маркетингових та виробничих дани. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами, розробниками і стейкхолдерами. Аналіз та управління ризиками. Менторинг для початківців в ІТ.",
+                "Аналіз потреб клієнтів, аналіз ринку та конкурентів, а також аналіз маркетингових і виробничих даних. Розробка, аналіз, організація та формалізація вимог. Управління вимогами, координація розробників і зацікавлених сторін. Аналіз та управління ризиками. Менторство для початківців ІТ.",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
             services:
-                "Customer business needs analysis, market and competitor analysis, and analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
+                "Analysis of customer needs, market and competitor analysis, as well as analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
             team: "I Love My Team",
         },
         pl: {
@@ -952,7 +952,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Volodymyr Dehtiarev",
             about: "Nothing will work unless you do",
             services:
-                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS. ",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
         },
         pl: {
