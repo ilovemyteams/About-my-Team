@@ -70,7 +70,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ.",
+                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
             team: "I Love My Team",
         },
         en: {
@@ -174,7 +174,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Svitlana Kondratenko",
             about: `"Someone needs to sort this out?" - I am the person who sorts it out! `,
             services:
-                "Customer business needs analysis, market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
+                "Analysis of the customer's business needs, market and competitor analysis. Development, analysis, organization, and formalization of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
             team: "Smachno! na seli",
         },
         pl: {
