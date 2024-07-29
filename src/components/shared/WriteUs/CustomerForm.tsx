@@ -89,7 +89,7 @@ export const CustomerForm = ({
         }
     };
     const locale = useLocale();
-    const PolicyURL = selectedLink(locale);
+    const policyURL = selectedLink(locale);
 
     return (
         <Formik
@@ -298,7 +298,7 @@ export const CustomerForm = ({
                         <p className="max-w-[372px] text-xs tab:text-sm">
                             {getTranslation("informedAgreement")}
                             <a
-                                href={PolicyURL}
+                                href={policyURL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-purple-130 dark:text-purple-50"

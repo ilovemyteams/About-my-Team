@@ -12,7 +12,7 @@ export const CookiesComponent = () => {
     const cookiesRef = useRef<HTMLDivElement>(null);
     const getTranslation = useTranslations("Cookies");
     const locale = useLocale();
-    const PolicyURL = selectedLink(locale);
+    const policyURL = selectedLink(locale);
 
     useEffect(() => {
         if (cookiesValue) {
@@ -36,7 +36,7 @@ export const CookiesComponent = () => {
                 <div className="pc:w-[60%]">
                     {getTranslation("text")}{" "}
                     <a
-                        href={PolicyURL}
+                        href={policyURL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="dark:text-purple-50 text-purple-130"

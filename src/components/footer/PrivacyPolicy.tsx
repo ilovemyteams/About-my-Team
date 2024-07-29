@@ -4,10 +4,10 @@ import { useLocale, useTranslations } from "next-intl";
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");
     const locale = useLocale();
-    const PolicyURL = selectedLink(locale);
+    const policyURL = selectedLink(locale);
     return (
         <a
-            href={PolicyURL}
+            href={policyURL}
             target="_blank"
             rel="noopener noreferrer"
             className="mb-[20px] tab:mb-0 text-sm outline-none dark:pc:hover:text-red pc:hover:text-redLight 
