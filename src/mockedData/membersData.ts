@@ -424,7 +424,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Eugene Serdiuk",
             about: "We'll do it now!",
             services:
-                "Development and style web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using Node.js and NestJS.",
             team: "Smachno! na seli",
         },
         pl: {
