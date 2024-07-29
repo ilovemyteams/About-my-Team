@@ -70,7 +70,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продукту. Менторинг для початківців в ІТ.",
+                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
             team: "I Love My Team",
         },
         en: {
@@ -174,7 +174,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Svitlana Kondratenko",
             about: `"Someone needs to sort this out?" - I am the person who sorts it out! `,
             services:
-                "Customer business needs analysis, market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
+                "Analysis of the customer's business needs, market and competitor analysis. Development, analysis, organization, and formalization of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -299,12 +299,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "IrynaStoliarova",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online", "greyplaza.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "greyplaza.com.ua",
+                "protection.in.ua",
+            ],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -338,12 +342,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "AnastasiiaNazarenko",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -418,7 +422,7 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Eugene Serdiuk",
-            about: "Let's do everything now!",
+            about: "We'll do it now!",
             services:
                 "Development and styling of web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
@@ -434,7 +438,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "IrynaTrynkal",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
@@ -489,11 +493,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: [
-                "ilovemyteam.online",
-                "cosmith.io",
-                "kuharskyivulyk.com.ua",
-            ],
+            projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
@@ -594,12 +594,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "KaterynaRubanik",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online", "baza-trainee.tech"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "protection.in.ua",
+                "baza-trainee.tech",
+            ],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
@@ -623,7 +627,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Катерина Рубанік",
-            about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту",
+            about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту.",
             services:
                 "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
             team: "I Love My Team",
@@ -794,14 +798,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів, маркетингових та виробничих дани. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами, розробниками і стейкхолдерами. Аналіз та управління ризиками. Менторинг для початківців в ІТ.",
+                "Аналіз потреб клієнтів, аналіз ринку та конкурентів, а також аналіз маркетингових і виробничих даних. Розробка, аналіз, організація та формалізація вимог. Управління вимогами, координація розробників і зацікавлених сторін. Аналіз та управління ризиками. Менторство для початківців ІТ.",
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
             about: "Work should bring inspiration and satisfaction, not just money.",
             services:
-                "Customer business needs analysis, market and competitor analysis, and analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
+                "Analysis of customer needs, market and competitor analysis, as well as analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
             team: "I Love My Team",
         },
         pl: {
@@ -903,7 +907,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Denis Slivinskyi",
             about: "Real stupidity beats artificial intelligence every time",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js.",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -952,7 +956,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Volodymyr Dehtiarev",
             about: "Nothing will work unless you do",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS. ",
+                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
         },
         pl: {
