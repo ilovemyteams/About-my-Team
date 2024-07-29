@@ -219,7 +219,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Влад Шумков",
             about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає суворим стандартам і очікуванням клієнтів.",
             services:
-                "Розробка сайтів будь-якої складності, інтернет магазинів та лендінгів. Менторинг для початківців Frontend Devs",
+                "Розробка сайтів будь-якої складності, інтернет-магазинів, посадкових сторінок. Наставництво для початківців Frontend-розробників.",
             team: "Смачно! на селі",
         },
         en: {
@@ -233,7 +233,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Vlad Shumkov",
             about: "Stawiam na jasną komunikację, dzięki czemu każdy projekt spełnia rygorystyczne standardy i oczekiwania klientów.",
             services:
-                "Tworzenie stron internetowych o dowolnej złożoności, sklepów e-commerce i stron internetowych typu landing page. Mentoring dla początkujących programistów Frontend.",
+                "Tworzenie stron internetowych o dowolnej złożoności, sklepów internetowych, stron docelowych. Mentoring dla początkujących programistów Frontend.",
             team: "Smachno! na seli",
         },
     },
@@ -417,14 +417,14 @@ export const membersData: MemberDataItemType[] = [
             name: "Євген Сердюк",
             about: "Зараз все зробимо!",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next.js. Розробка бекенду з використанням Node.js та NestJS.",
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next.js. Розробка серверних застосунків з використанням Node.js та NestJS.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
             about: "We'll do it now!",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
+                "Development and style web pages using HTML, CSS, and JavaScript with attention to semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
             team: "Smachno! na seli",
         },
         pl: {
@@ -474,7 +474,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Iryna Trynkal",
             about: "Anything is possible, the impossible just takes longer.",
             services:
-                "Development and styling of web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js. Creation and management of backend APIs to ensure communication between frontend and server. Implementation of user authentication and access control to ensure application security. Integration of frontend and backend components to create a unified, functioning application.",
+                "Development and style web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js. Creation and management of backend APIs to ensure communication between frontend and server. Implementation of user authentication and access control to ensure application security. Integration of frontend and backend components to create a unified, functioning application.",
             team: "I Love My Team",
         },
         pl: {
@@ -1105,7 +1105,7 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Anna Klyba",
-            about: "QA is the key to reliability and trust in the product",
+            about: "QA is the key to product reliability and trust.",
             services:
                 "Creation of test documentation (test plans, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "Smachno! na seli",
