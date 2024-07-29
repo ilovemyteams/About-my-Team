@@ -26,6 +26,9 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
+import { teamType } from "./objects/global/teamType";
+import { teamSectionType } from "./objects/module/teamSectionType";
+import { socialLinksType } from "./objects/global/socialLinksType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -52,6 +55,9 @@ const objects: ObjectDefinition[] = [
     timelineType,
     milestoneType,
     durationType,
+    teamType,
+    teamSectionType,
+    socialLinksType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
