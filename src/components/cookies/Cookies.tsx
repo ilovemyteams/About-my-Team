@@ -4,9 +4,7 @@ import { Button } from "../shared/Button";
 import Cookies from "js-cookie";
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-
-const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+import { POLICY_URL } from "@/src/constants/policyURL";
 
 export const CookiesComponent = () => {
     const [isAccepted, setIsAccepted] = useState(true);

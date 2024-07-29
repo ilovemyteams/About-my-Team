@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
 import { IconLoader } from "../Icons/IconLoader";
+import { POLICY_URL } from "@/src/constants/policyURL";
 
 interface CustomerFormProps {
     onClose?: () => void;
@@ -24,9 +25,6 @@ export interface ValuesWriteUsFormType {
     facebook: string;
     message: string;
 }
-
-const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
 
 const labelStyles =
     "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
