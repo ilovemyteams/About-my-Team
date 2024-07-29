@@ -2,11 +2,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
 import { IconLoader } from "../Icons/IconLoader";
-import { POLICY_URL } from "@/src/constants/policyURL";
+import { selectedLink } from "@/src/utils/selectedLink";
 
 interface CustomerFormProps {
     onClose?: () => void;
@@ -88,6 +88,8 @@ export const CustomerForm = ({
             setIsNotificationShawn(true);
         }
     };
+    const locale = useLocale();
+    const PolicyURL = selectedLink(locale);
 
     return (
         <Formik
@@ -296,7 +298,7 @@ export const CustomerForm = ({
                         <p className="max-w-[372px] text-xs tab:text-sm">
                             {getTranslation("informedAgreement")}
                             <a
-                                href={POLICY_URL}
+                                href={PolicyURL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-purple-130 dark:text-purple-50"
