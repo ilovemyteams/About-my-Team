@@ -1,11 +1,13 @@
-import { POLICY_URL } from "@/src/constants/policyURL";
-import { useTranslations } from "next-intl";
+import { selectedLink } from "@/src/utils/selectedLink";
+import { useLocale, useTranslations } from "next-intl";
 
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");
+    const locale = useLocale();
+    const policyURL = selectedLink(locale);
     return (
         <a
-            href={POLICY_URL}
+            href={policyURL}
             target="_blank"
             rel="noopener noreferrer"
             className="mb-[20px] tab:mb-0 text-sm outline-none dark:pc:hover:text-red pc:hover:text-redLight 
