@@ -299,12 +299,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "IrynaStoliarova",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online", "greyplaza.com.ua"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "greyplaza.com.ua",
+                "protection.in.ua",
+            ],
             pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
@@ -338,12 +342,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "AnastasiiaNazarenko",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
             position: "Graphic Designer",
             categoryName: "designer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
             pricePerHour: "",
             socialLinks: {
                 linkedin:
@@ -434,7 +438,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "IrynaTrynkal",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
             position: "Fullstack Developer",
@@ -590,12 +594,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "KaterynaRubanik",
-            projectId: ["1"],
+            projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
             position: "QA engineer",
             categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online", "baza-trainee.tech"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "protection.in.ua",
+                "baza-trainee.tech",
+            ],
             pricePerHour: "5",
             socialLinks: {
                 linkedin:
