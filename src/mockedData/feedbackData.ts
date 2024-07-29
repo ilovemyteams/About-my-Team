@@ -73,7 +73,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Thanks to the team for helping me to systematize and implement my ideas, despite new requests and changes to the texts, the work was done on time, and the communication was pleasant and professional, and the result fully satisfied my needs. I sincerely recommend this team!",
         },
         pl: {
-            siteName: "Adwokat ds. migracji",
+            siteName: "Prawnik imigracyjny",
             siteView: "website",
             reviewer: "Antonii Kurts",
             reviewerRole: "Właściciel kancelarii prawnej",
