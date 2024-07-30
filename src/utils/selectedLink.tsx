@@ -5,9 +5,12 @@ import {
 } from "../constants/policyURL";
 
 export const selectedLink = (locale: string): string => {
-    return locale === "ua"
-        ? POLICY_URL_UA
-        : locale === "en"
-          ? POLICY_URL_EN
-          : POLICY_URL_PL;
+    switch (locale) {
+        case "ua":
+            return POLICY_URL_UA;
+        case "pl":
+            return POLICY_URL_PL;
+        default:
+            return POLICY_URL_EN;
+    }
 };
