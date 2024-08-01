@@ -10,6 +10,7 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+import Script from "next/script";
 
 const caviar = localFont({
     src: [
@@ -91,6 +92,20 @@ export default function LocaleLayout({
                     property="og:image"
                     content="/images/imageForSharing.jpeg"
                 />
+                {/* Google Tag Manager */}
+                <Script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-TVFD6CM2B4"
+                ></Script>
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-TVFD6CM2B4');
+                  `}
+                </Script>
+                {/* End Google Tag Manager */}
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
