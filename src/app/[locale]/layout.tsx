@@ -9,6 +9,8 @@ import { Footer } from "@/src/components/footer/Footer";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
+import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+import Script from "next/script";
 
 const caviar = localFont({
     src: [
@@ -90,24 +92,40 @@ export default function LocaleLayout({
                     property="og:image"
                     content="/images/imageForSharing.jpeg"
                 />
+                {/* Google Tag Manager */}
+                <Script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=G-TVFD6CM2B4"
+                ></Script>
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-TVFD6CM2B4');
+                  `}
+                </Script>
+                {/* End Google Tag Manager */}
             </head>
             <NextIntlClientProvider locale={locale} messages={messages}>
-                <body
-                    className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
+                <PreviousURLProvider>
+                    <body
+                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
-                >
-                    <Providers>
-                        <BackgroundImages />
-                        <Header />
-                        <main>
-                            {modal}
-                            {children}
-                        </main>
-                        <Footer />
-                        <ScrollToTopButton />
-                        <CookiesComponent />
-                    </Providers>
-                </body>
+                    >
+                        <Providers>
+                            <BackgroundImages />
+                            <Header />
+                            <main>
+                                {modal}
+                                {children}
+                            </main>
+                            <Footer />
+                            <ScrollToTopButton />
+                            <CookiesComponent />
+                        </Providers>
+                    </body>
+                </PreviousURLProvider>
             </NextIntlClientProvider>
         </html>
     );

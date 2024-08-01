@@ -50,4 +50,35 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Świetny projekt i fajny pomysł! Realizacja była nawet jeszcze lepsza. Nie sądziłem, że nudną działalność rolnika można odtworzyć w tak interesujący sposób. Moi klienci są zachwyceni moją stronę internetową. Właśnie zasadziłem pierwsze sadzonki w szklarni i otrzymałem już 100 zamówień na następne zbiory pomidorów.",
         },
     },
+    {
+        data: {
+            id: "02",
+            image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
+            siteLink: "protection.in.ua",
+        },
+        ua: {
+            siteName: "Міграційний Адвокат",
+            siteView: "вебсайт",
+            reviewer: "Антоній Курц",
+            reviewerRole: "Власник юридичної компанії",
+            feedbackText:
+                "Дякую команді за допомогу в систематизації та втіленні моїх ідей, незважаючи на нові побажання та зміни текстів, робота виконувалась вчасно, а спілкування було приємним та професійним, з результатом, що повністю задовольняє мої потреби. Щиро рекомендую цю команду!",
+        },
+        en: {
+            siteName: "Migration Lawyer",
+            siteView: "website",
+            reviewer: "Antonii Kurts",
+            reviewerRole: "Owner of a law office",
+            feedbackText:
+                "Thanks to the team for helping me to systematize and implement my ideas, despite new requests and changes to the texts, the work was done on time, and the communication was pleasant and professional, and the result fully satisfied my needs. I sincerely recommend this team!",
+        },
+        pl: {
+            siteName: "Prawnik imigracyjny",
+            siteView: "website",
+            reviewer: "Antonii Kurts",
+            reviewerRole: "Właściciel kancelarii prawnej",
+            feedbackText:
+                "Dziękuję zespołowi za pomoc w organizacji i realizacji moich pomysłów, pomimo nowych życzeń i zmian w tekstach, praca została wykonana na czas, a komunikacja była przyjemna i profesjonalna, z wynikiem, który w pełni spełnia moje wymagania. Szczerze polecam ten zespół!",
+        },
+    },
 ];

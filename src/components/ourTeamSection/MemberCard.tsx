@@ -6,7 +6,9 @@ import { LocaleType } from "@/types/LocaleType";
 import { SocialLink } from "../shared/SocialLink";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
-import { IconHeart } from "../shared/Icons/IconHeart";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+
+const END_OF_URL = -5;
 
 export interface MemberCardProps {
     data: MemberDataItemType;
@@ -15,6 +17,14 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
+    const { setPreviousURL } = usePreviousURL();
+
+    const savingFilteredListURL = () => {
+        const url = window.location.href;
+        url.slice(END_OF_URL) !== `#team`
+            ? setPreviousURL(`${window.location.href}#team`)
+            : setPreviousURL(window.location.href);
+    };
 
     return (
         <div
@@ -24,11 +34,11 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             pc:[&:nth-child(3)]:border-b pc:border-r pc:[&:nth-child(3)]:border-r-transparent pc:[&:nth-child(6)]:border-r-transparent
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
-            <Link href={`/${locale}/member/${id}`}>
+            <Link
+                href={`/${locale}/member/${id}`}
+                onClick={savingFilteredListURL}
+            >
                 <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2]">
-                    <div className="absolute top-0 right-0 w-[65%] tab:w-[45%] h-auto z-[-1]">
-                        <IconHeart className="w-full h-full " />
-                    </div>
                     {imageURL ? (
                         <Image
                             src={imageURL}

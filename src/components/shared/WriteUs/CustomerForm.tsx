@@ -2,10 +2,11 @@
 import { useState } from "react";
 import axios from "axios";
 import { Field, Form, Formik, ErrorMessage } from "formik";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { Button } from "../Button";
 import { IconLoader } from "../Icons/IconLoader";
+import { selectedLink } from "@/src/utils/selectedLink";
 
 interface CustomerFormProps {
     onClose?: () => void;
@@ -25,18 +26,15 @@ export interface ValuesWriteUsFormType {
     message: string;
 }
 
-const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
-
 const labelStyles =
     "relative appearance-none w-full h-[60px] py-[12px] outline-none text-base";
 const labelTextAreaStyles =
     "relative w-full h-[122px] pb-[12px] outline-none text-base";
 const textLabelStyles = "absolute transition-[top] duration-300 ease-out";
 const fieldStyles =
-    "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke border-b-[1px] text-base transition-color duration-300 ease-out";
+    "block appearance-none w-full h-full py-[7px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeFormLebelLight dark:placeholder-purple-strokeFormLebel border-b-[1px] text-base transition-color duration-300 ease-out";
 const textAreaStyles =
-    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
+    "block appearance-none w-full h-[80px] mt-[20px] pr-[5px] bg-transparent outline-none font-caviar text-baseb placeholder-purple-strokeFormLebelLight dark:placeholder-purple-strokeFormLebel text-base transition-color duration-300 ease-out scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent";
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
@@ -90,6 +88,8 @@ export const CustomerForm = ({
             setIsNotificationShawn(true);
         }
     };
+    const locale = useLocale();
+    const policyURL = selectedLink(locale);
 
     return (
         <Formik
@@ -298,7 +298,7 @@ export const CustomerForm = ({
                         <p className="max-w-[372px] text-xs tab:text-sm">
                             {getTranslation("informedAgreement")}
                             <a
-                                href={POLICY_URL}
+                                href={policyURL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-purple-130 dark:text-purple-50"

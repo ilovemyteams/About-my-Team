@@ -1,18 +1,18 @@
 "use client";
 import { useState } from "react";
-import { Button } from "../shared/Button";
 import Cookies from "js-cookie";
 import { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
-
-const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+import { useLocale, useTranslations } from "next-intl";
+import { Button } from "../shared/Button";
+import { selectedLink } from "@/src/utils/selectedLink";
 
 export const CookiesComponent = () => {
     const [isAccepted, setIsAccepted] = useState(true);
     const cookiesValue = Cookies.get("isAccetedCookies");
     const cookiesRef = useRef<HTMLDivElement>(null);
     const getTranslation = useTranslations("Cookies");
+    const locale = useLocale();
+    const policyURL = selectedLink(locale);
 
     useEffect(() => {
         if (cookiesValue) {
@@ -25,7 +25,6 @@ export const CookiesComponent = () => {
     const handleClick = () => {
         setIsAccepted(true);
         Cookies.set("isAccetedCookies", "true");
-        console.log(isAccepted);
     };
 
     return (
@@ -37,7 +36,7 @@ export const CookiesComponent = () => {
                 <div className="pc:w-[60%]">
                     {getTranslation("text")}{" "}
                     <a
-                        href={POLICY_URL}
+                        href={policyURL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="dark:text-purple-50 text-purple-130"
