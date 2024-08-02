@@ -2,6 +2,7 @@ import React from "react";
 import { getTranslations } from "next-intl/server";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Providers } from "./providers";
 import { Header } from "@/src/components/header/Header";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
@@ -10,7 +11,8 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
-import Script from "next/script";
+
+const GA_TAG = process.env.GA_ID || " ";
 
 const caviar = localFont({
     src: [
@@ -92,21 +94,8 @@ export default function LocaleLayout({
                     property="og:image"
                     content="/images/imageForSharing.jpeg"
                 />
-                {/* Google Tag Manager */}
-                <Script
-                    async
-                    src="https://www.googletagmanager.com/gtag/js?id=G-YJX8B6P29M"
-                ></Script>
-                <Script id="google-analytics" strategy="afterInteractive">
-                    {`
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-                    gtag('config', 'G-YJX8B6P29M');
-                  `}
-                </Script>
-                {/* End Google Tag Manager */}
             </head>
+            <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
