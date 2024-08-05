@@ -11,7 +11,7 @@
         "pageTitle": "Портфоліо",
         "titlePartForMob": "розвивати ідеї та бізнес нашим ",
         "titleFirstWord": "Реалізовані ",
-        "titleSecondWord": "проекти",
+        "titleSecondWord": "проєкти",
         "titleThirdWord": " які вже ",
         "titleFourthWord": "допомагають ",
         "titleFifthWord": "розвивати ",
@@ -92,7 +92,7 @@
     },
     "HireUs": {
         "pageTitle": "зв'язок",
-        "title": "Готові замовити проект?",
+        "title": "Готові замовити проєкт?",
         "workingHours": "Відповідаємо щоденно з 10 до 18",
         "email": "i.love.my.team.2023@gmail.com"
     },
@@ -191,7 +191,7 @@
         "about": "Про себе",
         "services": "Послуги",
         "tools": "Інструменти",
-        "projectsExperience": "Проекти/Досвід",
+        "projectsExperience": "Проєкти/Досвід",
         "from": "від",
         "h": "год"
     },
