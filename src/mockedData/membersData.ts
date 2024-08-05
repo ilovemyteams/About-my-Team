@@ -1122,7 +1122,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "TetianaSeletska",
             projectId: ["1"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1mPUXf8ifPVMmTU_ef_jH0GfBWCunBsxW",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
@@ -1144,14 +1145,14 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Тетяна Селецька",
-            about: "Мета без плану - це просто бажання. В мен завжди є план.",
+            about: "Мета без плану - це просто бажання. В мене завжди є план.",
             services:
                 "Займаюся організацією та плануванням проєктів, включаючи розробку детальних планів і визначення ключових етапів для успішного виконання. Відповідаю за координацію команди, забезпечуючи чітку комунікацію та ефективну співпрацю між учасниками. Регулярно відстежую прогрес на щоденних мітингах, аналізую виконання завдань і вчасно виявляю відхилення. Активно займаюся вирішенням виникаючих проблем і питань, що дозволяє уникнути затримок і забезпечити дотримання термінів.",
             team: "I Love My Team",
         },
         en: {
             name: "Tetiana Seletska",
-            about: "A goal without a plan is just a wishю I always have a plan.",
+            about: "A goal without a plan is just a wish. I always have a plan.",
             services:
                 "I organize and plan projects, including developing detailed plans and identifying key milestones for successful execution. I am responsible for coordinating the team, ensuring clear communication and effective collaboration between participants. I regularly monitor progress at daily meetings, analyze the implementation of tasks and identify deviations in a timely manner. I am actively involved in solving problems and issues that arise, which allows me to avoid delays and ensure that deadlines are met.",
             team: "I Love My Team",
@@ -1168,7 +1169,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "OksanaLuchko",
             projectId: ["1"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1wGCOxPKTkU42QK_w6wO66fmSdAdNHvPB",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
@@ -1191,21 +1193,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Лучко",
-            about: "",
+            about: "Я завжди готова вчитися новому та застосовувати свої знання на практиці. Буду рада долучитися до вашої команди та внести свій внесок у забезпечення якості програмного забезпечення.",
             services:
                 "Створення тестової документації (чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
             team: "I Love My Team",
         },
         en: {
             name: "Oksana Luchko",
-            about: "",
+            about: "I am always ready to learn new things and apply my knowledge in practice. I would be happy to join your team and contribute to software quality assurance.",
             services:
                 "Creation of test documentation (checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "I Love My Team",
         },
         pl: {
             name: "Oksana Luchko",
-            about: "",
+            about: "Zawsze jestem gotowy uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
             services:
                 "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
             team: "I Love My Team",
@@ -1305,7 +1307,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "EduardSafronov",
             projectId: ["1"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1ylZZ7ClhWx-wZWnITV3lI8MFxYv3Xfw_",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -1353,7 +1356,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "NadiaHubchuk",
             projectId: ["1"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1CtrIlXU6_7nmlPdi9QiGZRGgyqztHxU1",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -1368,7 +1372,8 @@ export const membersData: MemberDataItemType[] = [
                 "REST",
                 "GitHub",
                 "SQL",
-                "HTML/CSS",
+                "HTML",
+                "CSS",
                 "VSCode",
                 "TestRail/Jira/Trello",
             ],
