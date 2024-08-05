@@ -824,7 +824,7 @@ export const membersData: MemberDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: [],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olha-kuchalska",
@@ -1116,6 +1116,280 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Tworzenie dokumentacji testowej (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Testy internetowe/mobilne, testy API.",
             team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "TetianaSeletska",
+            projectId: ["1"],
+            imageURL: "",
+            position: "Project Manager/ Scrum Master",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/tetiana-seletska",
+                telegram: "https://t.me/Tatrusha1",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Miro",
+                "Figma",
+                "Notion",
+                "Google Sheets/Docs",
+                "Slack",
+                "Teams",
+            ],
+        },
+        ua: {
+            name: "Тетяна Селецька",
+            about: "Мета без плану - це просто бажання. В мен завжди є план.",
+            services:
+                "Займаюся організацією та плануванням проєктів, включаючи розробку детальних планів і визначення ключових етапів для успішного виконання. Відповідаю за координацію команди, забезпечуючи чітку комунікацію та ефективну співпрацю між учасниками. Регулярно відстежую прогрес на щоденних мітингах, аналізую виконання завдань і вчасно виявляю відхилення. Активно займаюся вирішенням виникаючих проблем і питань, що дозволяє уникнути затримок і забезпечити дотримання термінів.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Tetiana Seletska",
+            about: "A goal without a plan is just a wishю I always have a plan.",
+            services:
+                "I organize and plan projects, including developing detailed plans and identifying key milestones for successful execution. I am responsible for coordinating the team, ensuring clear communication and effective collaboration between participants. I regularly monitor progress at daily meetings, analyze the implementation of tasks and identify deviations in a timely manner. I am actively involved in solving problems and issues that arise, which allows me to avoid delays and ensure that deadlines are met.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Tetiana Seletska",
+            about: "Cel bez planu to tylko życzenie. Ja zawsze mam plan.",
+            services:
+                "Organizuję i planuję projekty, w tym opracowuję szczegółowe plany i określam kluczowe kamienie milowe dla pomyślnej realizacji. Odpowiadam za koordynację zespołu, zapewniając jasną komunikację i efektywną współpracę między uczestnikami. Regularnie monitoruję postępy podczas codziennych spotkań, analizuję realizację zadań i w odpowiednim czasie identyfikuję odchylenia. Proaktywnie odpowiadam na wszelkie pojawiające się kwestie i pytania, co pomaga uniknąć opóźnień i zapewnić dotrzymanie terminów.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "OksanaLuchko",
+            projectId: ["1"],
+            imageURL: "",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
+            pricePerHour: "4",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
+                github: "",
+                telegram: "https://t.me/Sysen8474",
+            },
+            tools: [
+                "TestRail/Qase",
+                "Jira/Mantis",
+                "Trello",
+                "Chrome Devtools",
+                "JMeter",
+                "GitHub",
+                "Postman/Swager",
+                "Figma",
+            ],
+        },
+        ua: {
+            name: "Оксана Лучко",
+            about: "",
+            services:
+                "Створення тестової документації (чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Oksana Luchko",
+            about: "",
+            services:
+                "Creation of test documentation (checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Oksana Luchko",
+            about: "",
+            services:
+                "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "HannaTruba",
+            projectId: ["1"],
+            imageURL: "",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/hanna-truba-032964227",
+                telegram: "https://t.me/Hanna_Truba",
+            },
+            tools: [
+                "Wrike",
+                "Jira",
+                "Google Sheets",
+                "Google Analytics",
+                "Tableau",
+                "Mindmaps",
+                "Canva",
+            ],
+        },
+        ua: {
+            name: "Ганна Труба",
+            about: "Люди йдуть до людей! Ніколи не нехтуй людським фактором у бізнесі!",
+            services:
+                "Досвідчений бізнес-аналітик з понад трьома роками роботи в міжнародному холдингу, спеціалізуюсь на аналізі та налаштуванні бізнес-процесів, стратегічному плануванні, бюджетуванні, управлінні проєктами, розробці продуктів. Мої компетенції уналежнюють розробку та реалізацію стратегій позиціонування, аналіз ринку та конкурентів, створення ефективних маркетингових кампаній. Активно користюсь сучасними методами дослідження, такі як критичний дискурс-аналіз, для глибшого розуміння комунікацій та їхнього впливу.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Hanna Truba",
+            about: "People go to people! Never neglect the human factor in business!",
+            services:
+                "An experienced business analyst with over three years of work in an international holding, specializing in business process analysis and optimization, strategic planning, budgeting, project management, and product development. My competencies include the development and implementation of positioning strategies, market and competitor analysis, and the creation of effective marketing campaigns. I actively use modern research methods, such as critical discourse analysis, for a deeper understanding of communications and their impact.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Hanna Truba",
+            about: "Ludzie idą do ludzi! Nigdy nie lekceważ czynnika ludzkiego w biznesie!",
+            services:
+                "Doświadczony analityk biznesowy z ponad trzyletnim doświadczeniem w pracy w międzynarodowym holdingu, specjalizujący się w analizie i optymalizacji procesów biznesowych, planowaniu strategicznym, budżetowaniu, zarządzaniu projektami oraz rozwoju produktów. Moje kompetencje obejmują opracowywanie i wdrażanie strategii pozycjonowania, analizę rynku i konkurencji oraz tworzenie skutecznych kampanii marketingowych. Aktywnie korzystam z nowoczesnych metod badawczych, takich jak krytyczna analiza dyskursu, aby głębiej zrozumieć komunikację i jej wpływ.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "OlenaHolubonkova",
+            projectId: ["1"],
+            imageURL: "",
+            position: "Marketer",
+            categoryName: "marketer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/olena-holubonkova/",
+                telegram: "https://t.me/Golubyonkova",
+            },
+            tools: [
+                "PESTEL",
+                "SWOT",
+                "JBD",
+                "BKG matrix",
+                "McKinsey matrix",
+                "7P model",
+                "Mindmaps",
+            ],
+        },
+        ua: {
+            name: "Олена Голубьонкова",
+            about: "Маркетинг - це все! І все є маркетингом!",
+            services:
+                "Маркетингові дослідження галузі, ринку, споживачів. Системний стратегічний аналіз. Допомога у формулюванні та структуруванні цілей бізнесу. Розробка системи маркетингових стратегій для досягнення поставлених цілей. Система маркетингу для створення нових продуктів (товарів, послуг, програмних продуктів) та виведення їх на ринок.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olena Holubonkova",
+            about: "Marketing is everything! And everything is marketing!",
+            services:
+                "Marketing research of industry, market, and consumers. System strategic analysis. Help in formulating and structuring business goals. Development of a system of marketing strategies to achieve the set goals. Marketing system for creating new products (goods, services, software products) and bringing them to market.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olena Holubonkova",
+            about: "Marketing jest wszystkim! A wszystko jest marketingiem!",
+            services:
+                "Badania marketingowe branży, rynku, konsumentów. Usystematyzowana analiza strategiczna. Pomoc w formułowaniu i strukturyzacji celów biznesowych. Opracowanie systemu strategii marketingowych umożliwiających osiągnięcie wyznaczonych celów. Marketingowy system tworzenia nowych produktów (towarów, usług, oprogramowania) i wprowadzania ich na rynek.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "EduardSafronov",
+            projectId: ["1"],
+            imageURL: "",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/edsafronov",
+                github: "",
+                telegram: "https://t.me/EdgarMarsik",
+            },
+            tools: [
+                "Postman",
+                "Chrome DevTools",
+                "SQL",
+                "Github",
+                "Python",
+                "PyCaharm",
+                "PyTest",
+                "Jira",
+                "HTML/CSS",
+            ],
+        },
+        ua: {
+            name: "Едуард Сафронов",
+            about: "QA-інженер з тестування програмного забезпечення. Спеціалізуюся на тестуванні, аналізі та виявленні дефектів для забезпечення високої якості продукту. Автоматизоване тестування на Python.",
+            services:
+                "Створюю сучасну тестову документацію: чек-листи, тест-кейси, тест-плани, звіти про баги. Комплексне веб- та мобільне тестування, включаючи тестування API.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Eduard Safronov",
+            about: "QA-engineer for software testing. I specialise in testing, analysing, and identifying defects to ensure high product quality. Automated testing in Python.",
+            services:
+                "I create modern test documentation: checklists, test cases, test plans, bug reports. Comprehensive web and mobile testing, including API testing.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Eduard Safronovo",
+            about: "Inżynier QA zajmujący się testowaniem oprogramowania. Specjalizuję się w testowaniu, analizowaniu i identyfikowaniu defektów w celu zapewnienia wysokiej jakości produktu. Zautomatyzowane testowanie w Pythonie.",
+            services:
+                "Tworzę nowoczesną dokumentację testową: listy kontrolne, przypadki testowe, plany testów, raporty błędów. Kompleksowe testy webowe i mobilne, w tym testy API.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "NadiaHubchuk",
+            projectId: ["1"],
+            imageURL: "",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
+                github: "",
+                telegram: "",
+            },
+            tools: [
+                "Postman/Swager/Chrome Devtools",
+                "REST",
+                "GitHub",
+                "SQL",
+                "HTML/CSS",
+                "VSCode",
+                "TestRail/Jira/Trello",
+            ],
+        },
+        ua: {
+            name: "Надія Губчук",
+            about: "",
+            services: "",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Nadia Hubchuk",
+            about: "",
+            services: "",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Nadia Hubchuk",
+            about: "",
+            services: "",
+            team: "I Love My Team",
         },
     },
 ];
