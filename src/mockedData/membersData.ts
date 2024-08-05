@@ -1266,7 +1266,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olena-holubonkova/",
                 telegram: "https://t.me/Golubyonkova",
@@ -1361,7 +1361,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
                 github: "",
