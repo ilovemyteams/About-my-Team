@@ -25,4 +25,22 @@ export const PAGE_REFERENCES = [
 export const SUPPORTED_LANGUAGES = [
     { id: "ua", title: "Ukraine" },
     { id: "en", title: "English" },
+    { id: "pl", title: "Polish" },
+];
+
+export const ROLES = [
+    {
+        title: "FrontEnd developer",
+        value: "developer",
+    },
+    {
+        title: "BackEnd developer",
+        value: "developer",
+    },
+    { title: "Designer", value: "designer" },
+    { title: "Business Analyst", value: "business-analytic" },
+    { title: "Project manager", value: "manager" },
+    { title: "Designer", value: "designer" },
+    { title: "QA engineer", value: "qa" },
+    { title: "Marketer", value: "marketer" },
 ];

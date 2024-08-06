@@ -30,11 +30,6 @@ export const homeType = defineField({
             type: "seo",
             group: "seo",
         }),
-        defineField({
-            name: "team",
-            type: "teamSection",
-            group: "editorial",
-        }),
     ],
     preview: {
         prepare() {
