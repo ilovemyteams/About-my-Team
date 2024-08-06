@@ -14,7 +14,7 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_HIDDEN_FROM_SEARCH_ENGINES =
-    process.env.IS_HIDDEN_FROM_SEARCH_ENGINES || false;
+    process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
 
 const caviar = localFont({
     src: [
@@ -80,7 +80,6 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
-
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
