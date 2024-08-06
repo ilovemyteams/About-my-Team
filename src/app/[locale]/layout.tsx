@@ -13,6 +13,8 @@ import "./globals.css";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 const GA_TAG = process.env.GA_ID || " ";
+const IS_HIDDEN_FROM_SEARCH_ENGINES =
+    process.env.IS_HIDDEN_FROM_SEARCH_ENGINES || false;
 
 const caviar = localFont({
     src: [
@@ -83,6 +85,9 @@ export default function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                {IS_HIDDEN_FROM_SEARCH_ENGINES && (
+                    <meta name="robots" content="noindex,nofollow" />
+                )}
                 <meta
                     name="title"
                     property="og:title"
