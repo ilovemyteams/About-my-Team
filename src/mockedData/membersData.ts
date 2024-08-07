@@ -604,7 +604,7 @@ export const membersData: MemberDataItemType[] = [
                 "protection.in.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "5",
+            pricePerHour: "7",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -1207,7 +1207,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Oksana Luchko",
-            about: "Zawsze jestem gotowy uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
+            about: "Zawsze jestem gotowa uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
             services:
                 "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
             team: "I Love My Team",
@@ -1372,15 +1372,15 @@ export const membersData: MemberDataItemType[] = [
             tools: [
                 "Postman",
                 "Chrome DevTools",
-                "Swager",
+                "SQL",
+                "Jira",
+                "VSCode",
+                "TestRail",
                 "REST",
                 "HTML/CSS",
-                "VSCode",
-                "GitHub",
-                "SQL",
-                "TestRail",
-                "Jira",
                 "Trello",
+                "GitHub",
+                "Swager",
             ],
         },
         ua: {
