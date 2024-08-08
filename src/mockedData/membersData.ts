@@ -1120,6 +1120,154 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "OksanaLuchko",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1wGCOxPKTkU42QK_w6wO66fmSdAdNHvPB",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
+                github: "",
+                telegram: "https://t.me/Sysen8474",
+            },
+            tools: [
+                "TestRail",
+                "Jira",
+                "Trello",
+                "Chrome Devtools",
+                "JMeter",
+                "GitHub",
+                "Postman",
+                "Figma",
+            ],
+        },
+        ua: {
+            name: "Оксана Лучко",
+            about: "Я завжди готова вчитися новому та застосовувати свої знання на практиці. Буду рада долучитися до вашої команди та внести свій внесок у забезпечення якості програмного забезпечення.",
+            services:
+                "Створення тестової документації (чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Oksana Luchko",
+            about: "I am always ready to learn new things and apply my knowledge in practice. I would be happy to join your team and contribute to software quality assurance.",
+            services:
+                "Creation of test documentation (checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Oksana Luchko",
+            about: "Zawsze jestem gotowa uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
+            services:
+                "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "NadiaHubchuk",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1CtrIlXU6_7nmlPdi9QiGZRGgyqztHxU1",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
+                github: "",
+                telegram: "",
+            },
+            tools: [
+                "Postman",
+                "Chrome DevTools",
+                "SQL",
+                "Jira",
+                "VSCode",
+                "TestRail",
+                "REST",
+                "HTML/CSS",
+                "Trello",
+                "GitHub",
+                "Swager",
+            ],
+        },
+        ua: {
+            name: "Надія Губчук",
+            about: "Основна моя задача впевнитися, що продукт працює без збоїв, виявляючи помилки та недоліки, які можуть завадити вашим користувачам насолоджуватися ним. Чим раніше, тим краще!",
+            services:
+                "Створення test-case, checklist, bug report. Рев’ю вимог. Тестування web- та mob- додатків. Тестування API Postman.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Nadia Hubchuk",
+            about: "My top priority is making sure your product runs smoothly by spotting any bugs or issues that could affect user enjoyment. The sooner, the better!",
+            services:
+                "Creating test cases, checklists, bug reports. Requirements review. Testing of web and mob applications. Testing Postman API.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Nadia Hubchuk",
+            about: "Moim głównym zadaniem jest upewnianie się, że produkt działa płynnie, znajdowanie błędów i wad, które mogą uniemożliwić użytkownikom korzystanie z niego. Im szybciej tym lepiej!",
+            services:
+                "Tworzenie przypadku testowego, listy kontrolnej, raportu o błędzie. Przegląd wymagań. Testowanie aplikacji webowych i mobowych. Testowanie API Postmana.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "EduardSafronov",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1ylZZ7ClhWx-wZWnITV3lI8MFxYv3Xfw_",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/edsafronov",
+                github: "",
+                telegram: "https://t.me/EdgarMarsik",
+            },
+            tools: [
+                "Postman",
+                "Chrome DevTools",
+                "SQL",
+                "Github",
+                "Python",
+                "PyCaharm",
+                "PyTest",
+                "Jira",
+                "HTML/CSS",
+            ],
+        },
+        ua: {
+            name: "Едуард Сафронов",
+            about: "QA-інженер з тестування програмного забезпечення. Спеціалізуюся на тестуванні, аналізі та виявленні дефектів для забезпечення високої якості продукту. Автоматизоване тестування на Python.",
+            services:
+                "Створюю сучасну тестову документацію: чек-листи, тест-кейси, тест-плани, звіти про баги. Комплексне веб- та мобільне тестування, включаючи тестування API.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Eduard Safronov",
+            about: "QA-engineer for software testing. I specialise in testing, analysing, and identifying defects to ensure high product quality. Automated testing in Python.",
+            services:
+                "I create modern test documentation: checklists, test cases, test plans, bug reports. Comprehensive web and mobile testing, including API testing.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Eduard Safronovo",
+            about: "Inżynier QA zajmujący się testowaniem oprogramowania. Specjalizuję się w testowaniu, analizowaniu i identyfikowaniu defektów w celu zapewnienia wysokiej jakości produktu. Zautomatyzowane testowanie w Pythonie.",
+            services:
+                "Tworzę nowoczesną dokumentację testową: listy kontrolne, przypadki testowe, plany testów, raporty błędów. Kompleksowe testy webowe i mobilne, w tym testy API.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "TetianaSeletska",
             projectId: ["1"],
             imageURL:
@@ -1167,49 +1315,45 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OksanaLuchko",
+            id: "YuliyaBorys",
             projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1wGCOxPKTkU42QK_w6wO66fmSdAdNHvPB",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
-            pricePerHour: "5",
+                "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
             socialLinks: {
-                linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
-                github: "",
-                telegram: "https://t.me/Sysen8474",
+                linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
+                telegram: "http://t.me/yuliyaborys",
             },
             tools: [
-                "TestRail",
                 "Jira",
-                "Trello",
-                "Chrome Devtools",
-                "JMeter",
-                "GitHub",
-                "Postman",
-                "Figma",
+                "Confluence",
+                "Google Forms",
+                "BPML (Draw.io, Figma)",
+                "Miro",
             ],
         },
         ua: {
-            name: "Оксана Лучко",
-            about: "Я завжди готова вчитися новому та застосовувати свої знання на практиці. Буду рада долучитися до вашої команди та внести свій внесок у забезпечення якості програмного забезпечення.",
+            name: "Юлія Борис",
+            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
             services:
-                "Створення тестової документації (чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
             team: "I Love My Team",
         },
         en: {
-            name: "Oksana Luchko",
-            about: "I am always ready to learn new things and apply my knowledge in practice. I would be happy to join your team and contribute to software quality assurance.",
+            name: "Yuliya Borys",
+            about: "A business analyst is a bridge between the business and the development team!",
             services:
-                "Creation of test documentation (checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
             team: "I Love My Team",
         },
         pl: {
-            name: "Oksana Luchko",
-            about: "Zawsze jestem gotowa uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
+            name: "Yuliya Borys",
+            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
             services:
-                "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
+                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
             team: "I Love My Team",
         },
     },
@@ -1302,150 +1446,6 @@ export const membersData: MemberDataItemType[] = [
             about: "Marketing jest wszystkim! A wszystko jest marketingiem!",
             services:
                 "Badania marketingowe branży, rynku, konsumentów. Usystematyzowana analiza strategiczna. Pomoc w formułowaniu i strukturyzacji celów biznesowych. Opracowanie systemu strategii marketingowych umożliwiających osiągnięcie wyznaczonych celów. Marketingowy system tworzenia nowych produktów (towarów, usług, oprogramowania) i wprowadzania ich na rynek.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "EduardSafronov",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1ylZZ7ClhWx-wZWnITV3lI8MFxYv3Xfw_",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
-            socialLinks: {
-                linkedin: "http://www.linkedin.com/in/edsafronov",
-                github: "",
-                telegram: "https://t.me/EdgarMarsik",
-            },
-            tools: [
-                "Postman",
-                "Chrome DevTools",
-                "SQL",
-                "Github",
-                "Python",
-                "PyCaharm",
-                "PyTest",
-                "Jira",
-                "HTML/CSS",
-            ],
-        },
-        ua: {
-            name: "Едуард Сафронов",
-            about: "QA-інженер з тестування програмного забезпечення. Спеціалізуюся на тестуванні, аналізі та виявленні дефектів для забезпечення високої якості продукту. Автоматизоване тестування на Python.",
-            services:
-                "Створюю сучасну тестову документацію: чек-листи, тест-кейси, тест-плани, звіти про баги. Комплексне веб- та мобільне тестування, включаючи тестування API.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Eduard Safronov",
-            about: "QA-engineer for software testing. I specialise in testing, analysing, and identifying defects to ensure high product quality. Automated testing in Python.",
-            services:
-                "I create modern test documentation: checklists, test cases, test plans, bug reports. Comprehensive web and mobile testing, including API testing.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Eduard Safronovo",
-            about: "Inżynier QA zajmujący się testowaniem oprogramowania. Specjalizuję się w testowaniu, analizowaniu i identyfikowaniu defektów w celu zapewnienia wysokiej jakości produktu. Zautomatyzowane testowanie w Pythonie.",
-            services:
-                "Tworzę nowoczesną dokumentację testową: listy kontrolne, przypadki testowe, plany testów, raporty błędów. Kompleksowe testy webowe i mobilne, w tym testy API.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "NadiaHubchuk",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1CtrIlXU6_7nmlPdi9QiGZRGgyqztHxU1",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
-                github: "",
-                telegram: "",
-            },
-            tools: [
-                "Postman",
-                "Chrome DevTools",
-                "SQL",
-                "Jira",
-                "VSCode",
-                "TestRail",
-                "REST",
-                "HTML/CSS",
-                "Trello",
-                "GitHub",
-                "Swager",
-            ],
-        },
-        ua: {
-            name: "Надія Губчук",
-            about: "Основна моя задача впевнитися, що продукт працює без збоїв, виявляючи помилки та недоліки, які можуть завадити вашим користувачам насолоджуватися ним. Чим раніше, тим краще!",
-            services:
-                "Створення test-case, checklist, bug report. Рев’ю вимог. Тестування web- та mob- додатків. Тестування API Postman.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Nadia Hubchuk",
-            about: "My top priority is making sure your product runs smoothly by spotting any bugs or issues that could affect user enjoyment. The sooner, the better!",
-            services:
-                "Creating test cases, checklists, bug reports. Requirements review. Testing of web and mob applications. Testing Postman API.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Nadia Hubchuk",
-            about: "Moim głównym zadaniem jest upewnianie się, że produkt działa płynnie, znajdowanie błędów i wad, które mogą uniemożliwić użytkownikom korzystanie z niego. Im szybciej tym lepiej!",
-            services:
-                "Tworzenie przypadku testowego, listy kontrolnej, raportu o błędzie. Przegląd wymagań. Testowanie aplikacji webowych i mobowych. Testowanie API Postmana.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "YuliyaBorys",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
-                telegram: "http://t.me/yuliyaborys",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Google Forms",
-                "BPML (Draw.io, Figma)",
-                "Miro",
-            ],
-        },
-        ua: {
-            name: "Юлія Борис",
-            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
-            services:
-                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Yuliya Borys",
-            about: "A business analyst is a bridge between the business and the development team!",
-            services:
-                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Yuliya Borys",
-            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
-            services:
-                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
             team: "I Love My Team",
         },
     },
