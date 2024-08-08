@@ -25,4 +25,5 @@ export const PAGE_REFERENCES = [
 export const SUPPORTED_LANGUAGES = [
     { id: "ua", title: "Ukraine" },
     { id: "en", title: "English" },
+    { id: "pl", title: "Polish" },
 ];
