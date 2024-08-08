@@ -348,7 +348,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "",
+            pricePerHour: "12",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
@@ -444,7 +444,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "10",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
@@ -494,7 +494,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
-            pricePerHour: "10",
+            pricePerHour: "20",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
                 github: "https://github.com/OlenaPosternak",
@@ -1174,7 +1174,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
-            pricePerHour: "4",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
                 github: "",
@@ -1219,10 +1219,10 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mXIyJyg9SoQzeIQxZ116CofCnMu7pbwJ",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
+            position: "Marketer",
+            categoryName: "marketer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
+            pricePerHour: "20",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/hanna-truba-032964227",
                 telegram: "https://t.me/Hanna_Truba",
@@ -1402,6 +1402,50 @@ export const membersData: MemberDataItemType[] = [
             about: "Moim głównym zadaniem jest upewnianie się, że produkt działa płynnie, znajdowanie błędów i wad, które mogą uniemożliwić użytkownikom korzystanie z niego. Im szybciej tym lepiej!",
             services:
                 "Tworzenie przypadku testowego, listy kontrolnej, raportu o błędzie. Przegląd wymagań. Testowanie aplikacji webowych i mobowych. Testowanie API Postmana.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "YuliyaBorys",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
+                telegram: "http://t.me/yuliyaborys",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Forms",
+                "BPML (Draw.io, Figma)",
+                "Miro",
+            ],
+        },
+        ua: {
+            name: "Юлія Борис",
+            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
+            services:
+                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Yuliya Borys",
+            about: "A business analyst is a bridge between the business and the development team!",
+            services:
+                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Yuliya Borys",
+            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
+            services:
+                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
             team: "I Love My Team",
         },
     },
