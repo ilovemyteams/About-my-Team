@@ -44,3 +44,18 @@ export const ROLES = [
     { title: "QA engineer", value: "qa" },
     { title: "Marketer", value: "marketer" },
 ];
+
+export const SOCIAL_LINKS = [
+    { title: "LinkedIn", value: "linkedin" },
+    { title: "Telegram", value: "telegram" },
+    { title: "Github", value: "github" },
+    { title: "Behance", value: "behance" },
+    { title: "GoogleDrive", value: "googleDrive" },
+    { title: "WhatsApp", value: "whatsapp" },
+    { title: "YouTube", value: "youtube" },
+    { title: "Pinterest", value: "pinterest" },
+    { title: "Email", value: "email" },
+    { title: "Facebook", value: "facebook" },
+    { title: "Instagram", value: "instagram" },
+    { title: "Twitter", value: "twitter" },
+];
