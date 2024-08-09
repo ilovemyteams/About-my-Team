@@ -11,6 +11,7 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 
 const GA_TAG = process.env.GA_ID || " ";
 
@@ -107,7 +108,10 @@ export default function LocaleLayout({
                             <Header />
                             <main>
                                 {modal}
-                                {children}
+                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                    <BackgroundFigures />
+                                    {children}
+                                </div>
                             </main>
                             <Footer />
                             <ScrollToTopButton />

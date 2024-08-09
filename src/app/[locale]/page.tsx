@@ -10,12 +10,10 @@ import { ServicesSection } from "@/src/components/servicesSection/ServicesSectio
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
-import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 
 export default function Home() {
     return (
-        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-            <BackgroundFigures />
+        <>
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
@@ -29,6 +27,6 @@ export default function Home() {
             <QaSection />
             <HireUsSection />
             {/* <HomeTest /> */}
-        </div>
+        </>
     );
 }
