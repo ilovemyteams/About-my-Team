@@ -39,8 +39,6 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
     const stopPropagation = (event: React.MouseEvent) => {
         event.stopPropagation();
     };
-
-    console.log(localeInURL(locale));
     return (
         <div>
             <div
