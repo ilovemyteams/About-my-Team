@@ -5,7 +5,6 @@ Allow: /
 # *
 User-agent: *
 Disallow: /api/*
-Disallow: /studio/*
 
 # Host
 Host: https://about-my-team-zeta.vercel.app/
