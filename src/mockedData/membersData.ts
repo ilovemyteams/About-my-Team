@@ -1363,7 +1363,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "10",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olena-holubonkova/",
                 telegram: "https://t.me/Golubyonkova",
