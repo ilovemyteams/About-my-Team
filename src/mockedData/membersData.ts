@@ -1219,55 +1219,6 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "EduardSafronov",
-            projectId: ["1"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1ylZZ7ClhWx-wZWnITV3lI8MFxYv3Xfw_",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
-            socialLinks: {
-                linkedin: "http://www.linkedin.com/in/edsafronov",
-                github: "",
-                telegram: "https://t.me/EdgarMarsik",
-            },
-            tools: [
-                "Postman",
-                "Chrome DevTools",
-                "SQL",
-                "Github",
-                "Python",
-                "PyCaharm",
-                "PyTest",
-                "Jira",
-                "HTML/CSS",
-            ],
-        },
-        ua: {
-            name: "Едуард Сафронов",
-            about: "QA-інженер з тестування програмного забезпечення. Спеціалізуюся на тестуванні, аналізі та виявленні дефектів для забезпечення високої якості продукту. Автоматизоване тестування на Python.",
-            services:
-                "Створюю сучасну тестову документацію: чек-листи, тест-кейси, тест-плани, звіти про баги. Комплексне веб- та мобільне тестування, включаючи тестування API.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Eduard Safronov",
-            about: "QA-engineer for software testing. I specialise in testing, analysing, and identifying defects to ensure high product quality. Automated testing in Python.",
-            services:
-                "I create modern test documentation: checklists, test cases, test plans, bug reports. Comprehensive web and mobile testing, including API testing.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Eduard Safronovo",
-            about: "Inżynier QA zajmujący się testowaniem oprogramowania. Specjalizuję się w testowaniu, analizowaniu i identyfikowaniu defektów w celu zapewnienia wysokiej jakości produktu. Zautomatyzowane testowanie w Pythonie.",
-            services:
-                "Tworzę nowoczesną dokumentację testową: listy kontrolne, przypadki testowe, plany testów, raporty błędów. Kompleksowe testy webowe i mobilne, w tym testy API.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
             id: "TetianaSeletska",
             projectId: ["1"],
             imageURL:
