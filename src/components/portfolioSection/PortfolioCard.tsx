@@ -17,13 +17,11 @@ function formatNumberWithLeadingZero(num: number): string {
 }
 
 export const PortfolioCard = ({
-    index,
     data,
     localizationData,
 }: PortfolioCardItemProps) => {
     const { image, siteLink, implementations } = data;
     const { siteView, name } = localizationData;
-    const projectNumber = index + 1;
     const siteTypeUp = siteView?.toUpperCase();
     return (
         <div className="relative min-w-[100%] h-[330px] tab:min-w-[50%] pc:h-[400px]">
