@@ -6,6 +6,7 @@ type PortfolioDataItemTranslation = {
 };
 type DataType = {
     id: string;
+    siteLink?: string;
     image: string;
     video?: string;
     implementations: string[];
@@ -21,6 +22,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "1",
+            siteLink: "ilovemyteam.online",
             image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
             implementations: [
                 "Idea",
@@ -50,6 +52,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "2",
+            siteLink: "batatfarm.com",
             image: "https://drive.google.com/uc?export=view&id=1-zVmDm8fSgCwP3TzDVQM_Hu08vCbJi2A",
             implementations: [
                 "Idea",
@@ -109,6 +112,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "4",
+            siteLink: "protection.in.ua",
             image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
