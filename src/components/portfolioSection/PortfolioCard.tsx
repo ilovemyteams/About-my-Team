@@ -1,6 +1,4 @@
-import { addProtocol } from "@/src/utils/addProtocol";
 import Image from "next/image";
-import { IconGoToSite } from "../shared/Icons/IconGoToSite";
 import { GoToSiteLink } from "../shared/GoToSiteLink";
 
 export interface PortfolioCardItemProps {
