@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
+import { localeInURL } from "@/src/utils/localeInURL";
 
 export const MenuFooter = () => {
     const getTranslation = useTranslations();
@@ -25,7 +26,7 @@ export const MenuFooter = () => {
                 >
                     <div className="py-[10px] pl-1 tab:py-0">
                         <Link
-                            href={`/${locale}#${id}`}
+                            href={`/${localeInURL(locale)}#${id}`}
                             className="text-base deskxl:text-lg font-normal font-geist outline-none text-purple-200 dark:text-grey dark:pc:hover:text-red pc:hover:text-redLight 
                             dark:pc:focus:text-red pc:focus:text-redLight dark:active:text-red active:text-redLight transition-color ease-out duration-300"
                         >
