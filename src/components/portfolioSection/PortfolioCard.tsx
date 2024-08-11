@@ -1,5 +1,7 @@
 import { addProtocol } from "@/src/utils/addProtocol";
 import Image from "next/image";
+import { IconGoToSite } from "../shared/Icons/IconGoToSite";
+import { GoToSiteLink } from "../shared/GoToSiteLink";
 
 export interface PortfolioCardItemProps {
     index: number;
@@ -31,27 +33,15 @@ export const PortfolioCard = ({
             />
             <div className="absolute -bottom-0 block min-w-full h-[134px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
                 <div className="px-2 py-5 tab:p-4 pc:p-5">
-                    <h3 className="font-caviar font-bold text-lg tab:text-xl mb-[6px] text-purple-200 dark:text-grey">
-                        {name}
-                    </h3>
-                    <div className="flex justify-between items-center mb-4 tab:mb-3 pc:mb-[18px]">
-                        <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight ">
-                            {siteTypeUp}
-                        </p>
-                        {siteLink && (
-                            <a
-                                target="_blank"
-                                href={addProtocol(siteLink)}
-                                rel="noopener noreferrer"
-                                className="block border-b dark:border-grey border-greyLight dark:pc:hover:text-red dark:pc:hover:border-red pc:hover:border-redLight
-                         pc:hover:text-redLight dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight 
-                         dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
-                         transition-color ease-out duration-300"
-                            >
-                                {siteLink}
-                            </a>
-                        )}
+                    <div className="flex justify-between items-center mb-[6px]">
+                        <h3 className="font-caviar font-bold text-lg tab:text-xl  text-purple-200 dark:text-grey">
+                            {name}
+                        </h3>
+                        {siteLink && <GoToSiteLink siteLink={siteLink} />}
                     </div>
+                    <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight mb-4 tab:mb-3 pc:mb-[18px]">
+                        {siteTypeUp}
+                    </p>
 
                     <div className="flex gap-2 pc:hidden">
                         {implementations.map((implementation, index) => {
