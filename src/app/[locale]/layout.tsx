@@ -1,5 +1,4 @@
 import "./globals.css";
-import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
@@ -11,6 +10,7 @@ import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import { Providers } from "./providers";
 

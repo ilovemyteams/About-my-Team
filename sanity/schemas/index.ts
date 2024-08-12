@@ -10,6 +10,7 @@ import { footerType } from "./objects/global/footerType";
 import { menuType } from "./objects/global/menuType";
 import { milestoneType } from "./objects/global/milestoneType";
 import { notFoundPageType } from "./objects/global/notFoundPageType";
+import { socialLinksType } from "./objects/global/socialLinksType";
 import { timelineType } from "./objects/global/timelineType";
 import { linkEmailType } from "./objects/link/linkEmailType";
 import { linkExternalType } from "./objects/link/linkExternalType";
@@ -26,8 +27,6 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
-
-import { socialLinksType } from "./objects/global/socialLinksType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,

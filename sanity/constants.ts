@@ -47,7 +47,6 @@ export const SITE_STATUS = [
     { title: "Recruiting a team", value: "recruitingTeam" },
     { title: "Development", value: "development" },
     { title: "Completed", value: "completed" },
-    { id: "pl", title: "Polish" },
 ];
 
 export const ROLES = [
