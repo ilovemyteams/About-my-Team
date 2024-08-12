@@ -21,7 +21,7 @@
         "titleSeventhWord": "замовникам"
     },
     "Mission": {
-        "pageTitle": "Наша місія",
+        "pageTitle": "Про нас",
         "titleZeroWord": "",
         "titleFirstWord": "Створюємо ",
         "titleSecondWord": "вражаючі ",
@@ -122,10 +122,11 @@
     "Buttons": {
         "order": "Замовити",
         "joinUs": "Долучитися",
-        "allProjects": "Wszystkie projekty",
-        "allQuestions": "Wszystkie pytania",
+        "allProjects": "Всі проєкти",
+        "allQuestions": "Всі питання",
         "share": "Поділитися",
-        "buyMeACoffe": "Пригостити кавою"
+        "buyMeACoffe": "Пригостити кавою",
+        "learnMore": "Дізнатися більше"
     },
     "Footer": {
         "titleFirstWord": "Починайте ",

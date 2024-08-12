@@ -6,11 +6,20 @@ import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { Button } from "../shared/Button";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
+    const getTranslation = useTranslations("Buttons");
+    const router = useRouter();
+
+    const handleButtonClick = () => {
+        router.push("/about");
+    };
 
     return (
         <Section id="mission" className="tab:min-h-[505px]">
@@ -33,7 +42,9 @@ export const MissionSection = () => {
                     />
                     <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] w-full tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
-                        <WriteUs />
+                        <Button onClick={handleButtonClick}>
+                            {getTranslation("learnMore")}
+                        </Button>
                     </div>
                 </div>
                 <StagesList />
