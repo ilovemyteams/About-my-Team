@@ -1,3 +1,4 @@
+"use client";
 import { useLocale, useTranslations } from "next-intl";
 import { Section } from "../shared/Section";
 import { LinkGoBack } from "../shared/LinkGoBack";
@@ -7,19 +8,22 @@ import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 
 export const HeroAbout = () => {
     const getTranslation = useTranslations("AboutPage");
+    const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <Breadcrumbs
-                classNames={{ base: "bg-purple-100 h-12" }}
+                separator="/"
                 itemClasses={{
-                    item: "text-purple-100 text-sm h-12",
-                    separator: "text-purple-100",
+                    separator: "px-1",
                 }}
-                variant="solid"
             >
-                <BreadcrumbItem>Home</BreadcrumbItem>
-                <BreadcrumbItem>Music</BreadcrumbItem>
+                <BreadcrumbItem>
+                    {getTranslationBreadcrumbs("breadcrumbItemHome")}
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                    {getTranslationBreadcrumbs("breadcrumbItemAbout")}
+                </BreadcrumbItem>
             </Breadcrumbs>
             <div className="flex justify-end">
                 <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
