@@ -126,7 +126,8 @@
         "allQuestions": "Всі питання",
         "share": "Поділитися",
         "buyMeACoffe": "Пригостити кавою",
-        "learnMore": "Дізнатися більше"
+        "learnMore": "Дізнатися більше",
+        "goBack": "Назад"
     },
     "Footer": {
         "titleFirstWord": "Починайте ",
@@ -203,6 +204,10 @@
     "AboutPage": {
         "title": "Про ",
         "titleAccent": "нас",
+        "contentItem1": "про засновницю",
+        "contentItem2": "як все починалось",
+        "contentItem3": "про команду",
+        "contentItem4": "презентація",
         "missionAccent": "Наша місія ",
         "missionDescription": "—  надихати і розвивати команду, масштабувати і підтримувати замовників, розширювати партнерства",
         "goalAccent": "Наша мета ",

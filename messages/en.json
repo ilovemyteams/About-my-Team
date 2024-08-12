@@ -21,7 +21,7 @@
         "titleSeventhWord": "businesses"
     },
     "Mission": {
-        "pageTitle": "Our mission",
+        "pageTitle": "About us",
         "titleZeroWord": "",
         "titleFirstWord": "Create ",
         "titleSecondWord": "impressive ",
@@ -127,7 +127,8 @@
         "allQuestions": "All questions",
         "share": "Share",
         "buyMeACoffe": "Treat with coffee",
-        "learnMore": "Learn more"
+        "learnMore": "Learn more",
+        "goBack": "Back"
     },
     "Footer": {
         "titleFirstWord": "Start ",
@@ -206,6 +207,10 @@
     "AboutPage": {
         "title": "About ",
         "titleAccent": "us",
+        "contentItem1": "about the founder",
+        "contentItem2": "how it all started",
+        "contentItem3": "about the team",
+        "contentItem4": "presentation",
         "missionAccent": "Our mission ",
         "missionDescription": "is to inspire and develop the team, scale and support customers, and expand partnerships",
         "goalAccent": "Our goal ",

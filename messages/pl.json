@@ -24,7 +24,7 @@
     },
 
     "Mission": {
-        "pageTitle": "Nasza misja",
+        "pageTitle": "O nas",
         "titleZeroWord": "Tworzenie ",
         "titleFirstWord": "imponujących ",
         "titleSecondWord": "",
@@ -129,7 +129,8 @@
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
         "buyMeACoffe": "Poczęstować kawą",
-        "learnMore": "Dowiedz się więcej"
+        "learnMore": "Dowiedz się więcej",
+        "goBack": "Powrót"
     },
     "Footer": {
         "titleFirstWord": "Zacznij ",
@@ -206,6 +207,10 @@
     "AboutPage": {
         "title": "O ",
         "titleAccent": "nas",
+        "contentItem1": "o założycielce",
+        "contentItem2": "jak to wszystko się zaczęło",
+        "contentItem3": "o zespole",
+        "contentItem4": "prezentacja",
         "missionAccent": "Naszą misją ",
         "missionDescription": "jest inspirowanie i rozwijanie zespołu, skalowanie i wspieranie klientów oraz rozwój partnerstw",
         "goalAccent": "Naszym celem ",
