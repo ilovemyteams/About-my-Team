@@ -26,6 +26,8 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
+
+import { socialLinksType } from "./objects/global/socialLinksType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -52,6 +54,7 @@ const objects: ObjectDefinition[] = [
     timelineType,
     milestoneType,
     durationType,
+    socialLinksType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -71,8 +74,14 @@ const documents: DocumentDefinition[] = [colorThemeType, pageType];
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
+import { teamType } from "./singletons/teamType";
 
-const singletons: DocumentDefinition[] = [homeType, settingsType, projectType];
+const singletons: DocumentDefinition[] = [
+    homeType,
+    teamType,
+    settingsType,
+    projectType,
+];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
     types: [
