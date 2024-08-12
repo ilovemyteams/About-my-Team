@@ -82,6 +82,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "3",
+            siteLink: "theatermag.com.ua",
             image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             implementations: [
                 "Idea",
