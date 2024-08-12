@@ -49,6 +49,14 @@ export const SITE_STATUS = [
     { title: "Completed", value: "completed" },
 ];
 
+export const STAGES = [
+    { title: "Idea", value: "idea" },
+    { title: "Design", value: "design" },
+    { title: "Development", value: "development" },
+    { title: "Delivery", value: "delivery" },
+    { title: "Support", value: "support" },
+];
+
 export const ROLES = [
     {
         title: "FrontEnd developer",
