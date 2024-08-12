@@ -246,5 +246,9 @@
         "finallySixth": "процесу ",
         "finallySeventhAccent": "взаємодії",
         "finallyEighth": ", незалежно від того — ви учасник команди чи замовник."
+    },
+    "Breadcrumbs": {
+        "breadcrumbItemHome": "Про Головна",
+        "breadcrumbItemAbout": "Про нас"
     }
 }

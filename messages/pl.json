@@ -248,5 +248,9 @@
         "finallySixth": "z procesu ",
         "finallySeventhAccent": "współpracy",
         "finallyEighth": ", niezależnie od tego, czy jesteś członkiem zespołu, czy klientem."
+    },
+    "Breadcrumbs": {
+        "breadcrumbItemHome": "Główna",
+        "breadcrumbItemAbout": "O nas"
     }
 }

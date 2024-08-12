@@ -249,5 +249,9 @@
         "finallySixth": "process of ",
         "finallySeventhAccent": "interaction",
         "finallyEighth": ", regardless of whether you are a team member or a customer."
+    },
+    "Breadcrumbs": {
+        "breadcrumbItemHome": "Home",
+        "breadcrumbItemAbout": "About us"
     }
 }
