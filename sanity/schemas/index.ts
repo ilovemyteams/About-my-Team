@@ -69,9 +69,10 @@ import { pageType } from "./documents/pageType";
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
 import { homeType } from "./singletons/homeType";
+import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 
-const singletons: DocumentDefinition[] = [homeType, settingsType];
+const singletons: DocumentDefinition[] = [homeType, settingsType, projectType];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
     types: [
