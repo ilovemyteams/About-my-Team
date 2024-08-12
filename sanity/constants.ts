@@ -34,14 +34,22 @@ export const ROLES = [
         value: "developer",
     },
     {
+        title: "Fullstack developer",
+        value: "developer",
+    },
+    {
         title: "BackEnd developer",
         value: "developer",
     },
-    { title: "Designer", value: "designer" },
+    { title: "Graphic designer/UI/UX designer", value: "designer" },
+    { title: "Graphic designer", value: "designer" },
+    { title: "UI/UX designer", value: "designer" },
+    { title: "QA engineer", value: "qa" },
     { title: "Business Analyst", value: "business-analytic" },
     { title: "Project manager", value: "manager" },
-    { title: "Designer", value: "designer" },
-    { title: "QA engineer", value: "qa" },
+    { title: "Product manager", value: "manager" },
+    { title: "Project manager/Scrum master", value: "manager" },
+    { title: "Scrum master", value: "manager" },
     { title: "Marketer", value: "marketer" },
 ];
 
