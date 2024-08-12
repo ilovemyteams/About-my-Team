@@ -338,6 +338,8 @@ const config: Config = {
                 "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
             memberMenuGradientLight:
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
+            PresentationGradient:
+                "linear-gradient(to right, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
         },
     },
     plugins: [
