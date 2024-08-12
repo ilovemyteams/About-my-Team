@@ -3,6 +3,7 @@ import { Section } from "../shared/Section";
 import { useTranslations } from "next-intl";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { SocialLink } from "../shared/SocialLink";
+import { IconQuote } from "../shared/Icons/IconQuote";
 
 export const QuoteSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -17,10 +18,15 @@ export const QuoteSection = () => {
                 height={356}
             />
             <div>
-                <p>&ldquo; {getTranslation("quoteP1")}</p>
-                <p>{getTranslation("quoteP2")} &ldquo;</p>
+                <IconQuote
+                    className={
+                        "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight"
+                    }
+                />
+                <p>{getTranslation("quoteP1")}</p>
+                <p>{getTranslation("quoteP2")}</p>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center border-y dark:border-purple-stroke border-purple-strokeLight">
                 <div>
                     <p>{getTranslation("author")}</p>
                     <p>{getTranslation("authorsRole")}</p>
