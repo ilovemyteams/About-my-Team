@@ -2,7 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Section } from "../shared/Section";
 import { LinkGoBack } from "../shared/LinkGoBack";
 import { localeInURL } from "@/src/utils/localeInURL";
-import { PageContentList } from "./pageContentList";
+import { PageContentList } from "./PageContentList";
 
 export const HeroAbout = () => {
     const getTranslation = useTranslations("AboutPage");
