@@ -12,21 +12,24 @@ export const HeroAbout = () => {
     const locale = useLocale();
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
-            <Breadcrumbs
-                separator="/"
-                itemClasses={{
-                    separator: "px-1",
-                }}
-            >
-                <BreadcrumbItem>
-                    {getTranslationBreadcrumbs("breadcrumbItemHome")}
-                </BreadcrumbItem>
-                <BreadcrumbItem>
-                    {getTranslationBreadcrumbs("breadcrumbItemAbout")}
-                </BreadcrumbItem>
-            </Breadcrumbs>
-            <div className="flex justify-end">
-                <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
+            <div className="flex items-center justify-between">
+                <Breadcrumbs
+                    separator="/"
+                    itemClasses={{
+                        separator: "px-1",
+                        item: "dark:text-purple-50 text-greyLight text-xs",
+                    }}
+                >
+                    <BreadcrumbItem href="/">
+                        {getTranslationBreadcrumbs("breadcrumbItemHome")}
+                    </BreadcrumbItem>
+                    <BreadcrumbItem href="/about" className="underline">
+                        {getTranslationBreadcrumbs("breadcrumbItemAbout")}
+                    </BreadcrumbItem>
+                </Breadcrumbs>
+                <div className="flex justify-end">
+                    <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
+                </div>
             </div>
             <h1>
                 {getTranslation("title")}{" "}
