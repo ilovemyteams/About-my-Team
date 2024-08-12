@@ -5,7 +5,6 @@ import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
-import { WriteUs } from "../shared/WriteUs/WriteUs";
 import { Button } from "../shared/Button";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
