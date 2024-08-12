@@ -14,6 +14,8 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 
 const GA_TAG = process.env.GA_ID || " ";
+const IS_SHOWN_TO_SEARCH_ENGINES =
+    process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
 
 const caviar = localFont({
     src: [
@@ -79,11 +81,13 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
-
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                {IS_SHOWN_TO_SEARCH_ENGINES && (
+                    <meta name="robots" content="noindex,nofollow" />
+                )}
                 <meta
                     name="title"
                     property="og:title"

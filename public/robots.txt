@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/*
+
+# Host
+Host: https://www.ilovemyteam.online
+
+# Sitemaps
+Sitemap: https://www.ilovemyteam.online/sitemap.xml
