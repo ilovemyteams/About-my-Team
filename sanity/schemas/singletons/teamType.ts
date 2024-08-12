@@ -1,5 +1,6 @@
-import { defineArrayMember, defineField } from "sanity";
 import { UsersIcon } from "@sanity/icons";
+import { defineArrayMember, defineField } from "sanity";
+
 import { ROLES } from "@/sanity/constants";
 
 interface NameItem {
@@ -44,7 +45,6 @@ export const teamType = defineField({
         defineField({
             name: "about",
             description: "Team member's short description",
-
             type: "object",
             fields: [
                 defineField({

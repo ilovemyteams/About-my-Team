@@ -60,12 +60,12 @@ export const projectType = defineField({
             },
             validation: rule => rule.required(),
         }),
-        //TODO when teamType is ready
-        // defineField({
-        //     name: "teamMembers",
-        //     type: "array",
-        //     of: [defineArrayMember({ type: "team" })],
-        // }),
+        defineField({
+            name: "teamMembers",
+            description: "Team members who worked on the project",
+            type: "array",
+            of: [{ type: "reference", to: [{ type: "team" }] }],
+        }),
         defineField({
             name: "URL",
             description: "Link to the project",
