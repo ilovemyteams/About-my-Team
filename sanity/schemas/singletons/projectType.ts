@@ -12,14 +12,14 @@ export const projectType = defineField({
         defineField({
             name: "title",
             description: "Project title",
-            type: "string",
+            type: "internationalizedArrayString",
             title: "Title",
             validation: rule => rule.max(35).required(),
         }),
         defineField({
             name: "description",
             description: "Short project description",
-            type: "string",
+            type: "internationalizedArrayString",
             title: "Description",
         }),
         defineField({
@@ -38,7 +38,7 @@ export const projectType = defineField({
         defineField({
             name: "type",
             description: "Specify the site type",
-            type: "string",
+            type: "internationalizedArrayString",
             title: "Site type",
             validation: rule => rule.required(),
         }),
@@ -53,12 +53,12 @@ export const projectType = defineField({
         // defineField({
         //     name: "teamMembers",
         //     type: "array",
-        //     of: [defineArrayMember({ type: "teamMembers" })],
+        //     of: [defineArrayMember({ type: "team" })],
         // }),
         defineField({
             name: "URL",
             description: "Link to the project",
-            type: "url",
+            type: "linkExternal",
             title: "Project URL",
         }),
         defineField({
