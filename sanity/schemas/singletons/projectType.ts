@@ -1,6 +1,8 @@
 import { ProjectsIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
+import { SITE_CATEGORY, SITE_STATUS } from "@/sanity/constants";
+
 const TITLE = "Projects";
 
 export const projectType = defineField({
@@ -14,12 +16,12 @@ export const projectType = defineField({
             description: "Project title",
             type: "internationalizedArrayString",
             title: "Title",
-            validation: rule => rule.max(35).required(),
+            validation: rule => rule.required(),
         }),
         defineField({
             name: "description",
             description: "Short project description",
-            type: "internationalizedArrayString",
+            type: "internationalizedArrayText",
             title: "Description",
         }),
         defineField({
@@ -36,10 +38,13 @@ export const projectType = defineField({
             title: "End date",
         }),
         defineField({
-            name: "type",
-            description: "Specify the site type",
-            type: "internationalizedArrayString",
-            title: "Site type",
+            name: "siteCategory",
+            description: "Specify the site category",
+            type: "string",
+            title: "Site category",
+            options: {
+                list: SITE_CATEGORY,
+            },
             validation: rule => rule.required(),
         }),
         defineField({
@@ -47,6 +52,9 @@ export const projectType = defineField({
             description: "The current stage of the project",
             type: "string",
             title: "Status",
+            options: {
+                list: SITE_STATUS,
+            },
             validation: rule => rule.required(),
         }),
         //TODO when teamType is ready

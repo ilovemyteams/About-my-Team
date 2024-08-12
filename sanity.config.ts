@@ -44,8 +44,8 @@ export default defineConfig({
         }),
         internationalizedArray({
             languages: SUPPORTED_LANGUAGES,
-            defaultLanguages: ["en"],
-            fieldTypes: ["string"],
+            defaultLanguages: ["ua"],
+            fieldTypes: ["string", "text"],
         }),
         singletonPlugin(singletonPagesType),
     ],
