@@ -3,11 +3,14 @@ import { defineField } from "sanity";
 
 import { SITE_CATEGORY, SITE_STATUS } from "@/sanity/constants";
 
-const TITLE = "Projects";
+interface TitleItem {
+    _key: string;
+    value: string;
+}
 
 export const projectType = defineField({
     name: "project",
-    title: TITLE,
+    title: "Projects",
     type: "document",
     icon: ProjectsIcon,
     fields: [
@@ -78,9 +81,19 @@ export const projectType = defineField({
         }),
     ],
     preview: {
-        prepare() {
+        select: {
+            title: "title",
+
+            media: "image",
+        },
+        prepare({ title, media }) {
+            const englishTitle =
+                (title as TitleItem[]).find(
+                    (item: TitleItem) => item._key === "en"
+                )?.value || "No title";
             return {
-                title: TITLE,
+                title: `${englishTitle || "No title"}`,
+                media: media || undefined,
             };
         },
     },
