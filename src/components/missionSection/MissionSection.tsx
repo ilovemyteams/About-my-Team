@@ -6,7 +6,7 @@ import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
 import { StagesList } from "./StagesList";
 import { Button } from "../shared/Button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
 export const MissionSection = () => {
@@ -14,10 +14,11 @@ export const MissionSection = () => {
         threshold: 0.75,
     });
     const getTranslation = useTranslations("Buttons");
+    const locale = useLocale();
     const router = useRouter();
 
     const handleButtonClick = () => {
-        router.push("/about");
+        router.push(`/${locale}/about`);
     };
 
     return (
