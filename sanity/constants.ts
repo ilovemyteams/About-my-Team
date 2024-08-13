@@ -28,6 +28,35 @@ export const SUPPORTED_LANGUAGES = [
     { id: "pl", title: "Polish" },
 ];
 
+export const SITE_CATEGORY = [
+    {
+        title: "Landing",
+        value: "landing",
+    },
+    {
+        title: "Website",
+        value: "website",
+    },
+    {
+        title: "Online store",
+        value: "onlineStore",
+    },
+];
+
+export const SITE_STATUS = [
+    { title: "Recruiting a team", value: "recruitingTeam" },
+    { title: "Development", value: "development" },
+    { title: "Completed", value: "completed" },
+];
+
+export const STAGES = [
+    { title: "Idea", value: "idea" },
+    { title: "Design", value: "design" },
+    { title: "Development", value: "development" },
+    { title: "Delivery", value: "delivery" },
+    { title: "Support", value: "support" },
+];
+
 export const ROLES = [
     {
         title: "FrontEnd developer",
