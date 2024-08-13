@@ -31,7 +31,8 @@ export const PresentationSection = () => {
                     className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 tab:translate-y-0
                 w-[64px] h-[64px] p-3 rounded-full after:content-[''] after:absolute after:top-0 after:left-0 
                 after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 
-                after:bg-opacity-40 after:blur-[2px] outline-none rotate-90"
+                after:bg-opacity-40 after:blur-[2px] outline-none rotate-90 dark:pc:hover:text-red pc:hover:text-redLight
+                    dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                     onClick={() => alert("You are watching a presentation")}
                 >
                     <IconUp />
