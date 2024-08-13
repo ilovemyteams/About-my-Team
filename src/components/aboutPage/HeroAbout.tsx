@@ -11,8 +11,8 @@ export const HeroAbout = () => {
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
-        <Section className="pt-8 tab:pt-12 pc:pt-8">
-            <div className="flex items-center justify-between mb-4">
+        <Section className="pt-8 tab:pt-12 pc:pt-[100px]">
+            <div className="flex items-center justify-between mb-4 pc:mb-[102px]">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -35,8 +35,8 @@ export const HeroAbout = () => {
                     <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
                 </div>
             </div>
-            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9">
-                <h1 className="font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl">
+            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px]">
+                <h1 className="font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl">
                     {getTranslation("title")}
                     <span className="text-purple-100">
                         {getTranslation("titleAccent")}
@@ -44,14 +44,14 @@ export const HeroAbout = () => {
                 </h1>
                 <PageContentList />
             </div>
-            <div className=" font-caviar text-lg tab:text-xlb">
-                <p className="mb-[34px] tab:w-[360px] tab:mb-[81px]">
+            <div className=" font-caviar text-lg tab:text-xlb pc:text-[32px] pc:leading-9">
+                <p className="mb-[34px] tab:w-[360px] tab:mb-[81px] pc:w-[451px] pc:mb-[35px]">
                     <span className="text-purple-100">
                         {getTranslation("missionAccent")}
                     </span>
                     {getTranslation("missionDescription")}
                 </p>
-                <p className="tab:w-[360px] ml-auto mr-0">
+                <p className="tab:w-[360px] ml-auto mr-0 pc:w-[536px]">
                     <span className="text-purple-100">
                         {getTranslation("goalAccent")}
                     </span>

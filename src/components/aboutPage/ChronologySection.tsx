@@ -8,7 +8,7 @@ export const ChronologySection = () => {
 
     return (
         <Section id="chronology" className="tab:pt-5">
-            <h2 className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-9">
+            <h2 className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-9 pc:text-6xl">
                 {getTranslation("inceptionTitle")}
                 <span className="text-purple-100">
                     {getTranslation("inceptionTitleAccent")}

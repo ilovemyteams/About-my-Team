@@ -10,7 +10,7 @@ export const QuoteSection = () => {
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
 
     return (
-        <Section className="pt-8 tab:pt-[89px]">
+        <Section className="pt-8 tab:pt-[89px] pc:pt-5">
             <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 tab:items-end">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh"

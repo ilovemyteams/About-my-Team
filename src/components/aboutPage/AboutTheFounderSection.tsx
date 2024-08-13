@@ -8,7 +8,7 @@ export const AboutTheFounderSection = () => {
 
     return (
         <Section id="founder" className="tab:pt-5">
-            <h2 className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-8">
+            <h2 className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-8 pc:text-6xl">
                 {getTranslation("aboutOwnerTitle")}
                 <span className="text-purple-100">
                     {getTranslation("aboutOwnerTitleAccent")}
