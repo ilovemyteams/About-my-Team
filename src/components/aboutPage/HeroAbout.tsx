@@ -11,7 +11,7 @@ export const HeroAbout = () => {
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
-        <Section className="pt-8 tab:pt-[100px] pc:pt-8">
+        <Section className="pt-8 tab:pt-12 pc:pt-8">
             <div className="flex items-center justify-between mb-4">
                 <Breadcrumbs
                     separator="/"
@@ -31,21 +31,23 @@ export const HeroAbout = () => {
                     <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
                 </div>
             </div>
-            <h1 className="font-caviar text-3xl mb-6">
-                {getTranslation("title")}
-                <span className="text-purple-100">
-                    {getTranslation("titleAccent")}
-                </span>
-            </h1>
-            <PageContentList />
-            <div className=" font-caviar text-lg ">
-                <p className="mb-[34px]">
+            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9">
+                <h1 className="font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl">
+                    {getTranslation("title")}
+                    <span className="text-purple-100">
+                        {getTranslation("titleAccent")}
+                    </span>
+                </h1>
+                <PageContentList />
+            </div>
+            <div className=" font-caviar text-lg tab:text-xlb">
+                <p className="mb-[34px] tab:w-[360px] tab:mb-[81px]">
                     <span className="text-purple-100">
                         {getTranslation("missionAccent")}
                     </span>
                     {getTranslation("missionDescription")}
                 </p>
-                <p>
+                <p className="tab:w-[360px] ml-auto mr-0">
                     <span className="text-purple-100">
                         {getTranslation("goalAccent")}
                     </span>

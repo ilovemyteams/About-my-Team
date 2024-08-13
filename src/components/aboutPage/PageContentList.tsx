@@ -11,7 +11,7 @@ export const PageContentList = () => {
         { name: getTranslation("contentItem4"), id: "presentation" },
     ];
     return (
-        <ul className="flex flex-wrap gap-y-4 justify-between mb-6">
+        <ul className="flex flex-wrap gap-y-4 justify-between mb-6 tab:mb-0 tab:gap-4">
             {contentList.map((content, idx) => (
                 <li key={idx}>
                     <Link
