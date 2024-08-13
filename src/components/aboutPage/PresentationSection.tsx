@@ -1,6 +1,8 @@
+"use client";
 import { useTranslations } from "next-intl";
 import { Section } from "../shared/Section";
 import Image from "next/image";
+import { IconUp } from "../shared/Icons/IconUp";
 
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -13,7 +15,7 @@ export const PresentationSection = () => {
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className=" tab:relative bg-PresentationGradient mb-[80px] tab:mb-[100px]">
+            <div className="relative bg-PresentationGradient mb-[80px] tab:mb-[100px]">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb"
                     alt={getTranslation("psesentationAlt")}
@@ -24,6 +26,16 @@ export const PresentationSection = () => {
                 <p className="hidden tab:block tab:absolute top-[109px] text-4xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
                     {getTranslation("learnMoreAboutUs")}
                 </p>
+                <button
+                    aria-label="play button"
+                    className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 tab:translate-y-0
+                w-[64px] h-[64px] p-3 rounded-full after:content-[''] after:absolute after:top-0 after:left-0 
+                after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 
+                after:bg-opacity-40 after:blur-[2px] outline-none rotate-90"
+                    onClick={() => alert("You are watching a presentation")}
+                >
+                    <IconUp />
+                </button>
             </div>
             <p className="font-caviar text-xlb tab:w-[534px] mx-auto">
                 <span className="text-purple-100">
