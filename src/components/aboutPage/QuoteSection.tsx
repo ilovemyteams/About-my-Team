@@ -10,26 +10,29 @@ export const QuoteSection = () => {
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
 
     return (
-        <Section>
+        <Section className="pt-8">
             <Image
                 src="https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh"
                 alt={getTranslation("authorPhotoAlt")}
                 width={538}
                 height={356}
+                className="mb-10"
             />
-            <div>
+            <div className="w-[208px] mx-auto mb-10 text-sm">
                 <IconQuote
                     className={
-                        "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight"
+                        "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight mb-4"
                     }
                 />
-                <p>{getTranslation("quoteP1")}</p>
+                <p className="mb-4">{getTranslation("quoteP1")}</p>
                 <p>{getTranslation("quoteP2")}</p>
             </div>
-            <div className="flex justify-between items-center border-y dark:border-purple-stroke border-purple-strokeLight">
+            <div className="flex justify-between items-center border-y dark:border-purple-stroke border-purple-strokeLight py-2">
                 <div>
-                    <p>{getTranslation("author")}</p>
-                    <p>{getTranslation("authorsRole")}</p>
+                    <p className="font-caviar text-baseb">
+                        {getTranslation("author")}
+                    </p>
+                    <p className="text-xs">{getTranslation("authorsRole")}</p>
                 </div>
                 <div>
                     <SocialLink

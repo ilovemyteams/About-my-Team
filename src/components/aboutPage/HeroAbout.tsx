@@ -12,7 +12,7 @@ export const HeroAbout = () => {
     const locale = useLocale();
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-4">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -31,15 +31,15 @@ export const HeroAbout = () => {
                     <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
                 </div>
             </div>
-            <h1>
-                {getTranslation("title")}{" "}
+            <h1 className="font-caviar text-3xl mb-6">
+                {getTranslation("title")}
                 <span className="text-purple-100">
                     {getTranslation("titleAccent")}
                 </span>
             </h1>
             <PageContentList />
-            <div>
-                <p>
+            <div className=" font-caviar text-lg ">
+                <p className="mb-[34px]">
                     <span className="text-purple-100">
                         {getTranslation("missionAccent")}
                     </span>

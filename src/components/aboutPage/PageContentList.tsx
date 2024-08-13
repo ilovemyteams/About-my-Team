@@ -1,20 +1,25 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import Link from "next/link";
 
 export const PageContentList = () => {
     const getTranslation = useTranslations("AboutPage");
+    const locale = useLocale();
     const contentList = [
-        getTranslation("contentItem1"),
-        getTranslation("contentItem2"),
-        getTranslation("contentItem3"),
-        getTranslation("contentItem4"),
+        { name: getTranslation("contentItem1"), id: "founder" },
+        { name: getTranslation("contentItem2"), id: "chronology" },
+        { name: getTranslation("contentItem3"), id: "aboutteam" },
+        { name: getTranslation("contentItem4"), id: "presentation" },
     ];
     return (
-        <ul className="flex flex-wrap gap-x-1 gap-y-1 justify-between tab:gap-0 tab:justify-between mt-[40px] tab:mt-[56px] pc:mt-[46px]">
+        <ul className="flex flex-wrap gap-y-4 justify-between mb-6">
             {contentList.map((content, idx) => (
                 <li key={idx}>
-                    <span className="text-xs dark:text-purple-50 text-purple-130">
-                        {content.toUpperCase()}
-                    </span>
+                    <Link
+                        href={`/${locale}/about#${content.id}`}
+                        className="text-xs dark:text-purple-50 text-purple-130"
+                    >
+                        {content.name.toUpperCase()}
+                    </Link>
                 </li>
             ))}
         </ul>

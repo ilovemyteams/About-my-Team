@@ -6,14 +6,14 @@ export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section>
-            <h2>
+        <Section id="presentation">
+            <h2 className="font-caviar text-3xl mb-6 text-center">
                 {getTranslation("learnMoreAboutUsTitle")}
                 <span className="text-purple-100">
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="bg-PresentationGradient">
+            <div className="bg-PresentationGradient mb-[80px]">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb"
                     alt={getTranslation("psesentationAlt")}
@@ -22,7 +22,7 @@ export const PresentationSection = () => {
                     className=" relative -z-[1]"
                 />
             </div>
-            <p>
+            <p className="font-caviar text-xlb">
                 <span className="text-purple-100">
                     {getTranslation("finallyFirstAccent")}
                 </span>

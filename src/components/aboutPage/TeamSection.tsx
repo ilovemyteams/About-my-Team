@@ -6,8 +6,8 @@ export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section>
-            <h2>
+        <Section id="aboutteam">
+            <h2 className="font-caviar text-3xl mb-6 w-[190px]">
                 {getTranslation("sectionTeamTitle")}
                 <span className="text-purple-100">
                     {getTranslation("sectionTeamTitleAccent")}
@@ -18,8 +18,9 @@ export const TeamSection = () => {
                 alt={getTranslation("sectionTeamAlt")}
                 width={1441}
                 height={831}
+                className="mb-6"
             />
-            <p>{getTranslation("sectionTeamText")}</p>
+            <p className="text-base">{getTranslation("sectionTeamText")}</p>
         </Section>
     );
 };
