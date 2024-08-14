@@ -298,6 +298,23 @@ const config: Config = {
                         transform: "rotate(360deg)",
                     },
                 },
+                triangleRotate: {
+                    "0%": {
+                        transform: "rotate(0deg)",
+                        animationDelay: "200ms",
+                    },
+                    "25%": {
+                        transform: "rotate(75deg)",
+                        animationDelay: "400ms",
+                    },
+                    "50%": {
+                        transform: "rotate(30deg)",
+                        animationDelay: "600ms",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg)",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
@@ -307,6 +324,7 @@ const config: Config = {
                 brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
                 rotation: "rotate 1800ms linear infinite",
                 curveRotation: "curveRotate 3700ms ease-out 1",
+                triangleRotation: "triangleRotate 3000ms ease-out 2",
             },
         },
         backgroundImage: {
