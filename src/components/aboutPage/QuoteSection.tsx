@@ -11,15 +11,15 @@ export const QuoteSection = () => {
 
     return (
         <Section className="pt-8 tab:pt-[89px] pc:pt-5">
-            <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 tab:items-end">
+            <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 pc:gap-[91px] tab:items-stretch">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh"
                     alt={getTranslation("authorPhotoAlt")}
                     width={538}
                     height={356}
-                    className="mb-10 tab:mb-0"
+                    className="mb-10 tab:mb-0 "
                 />
-                <div>
+                <div className=" flex flex-col justify-between ">
                     <div className="w-[65vw] tab:w-[47vw] mx-auto mb-10 text-sm tab:text-base pc:text-xl">
                         <IconQuote
                             className={
