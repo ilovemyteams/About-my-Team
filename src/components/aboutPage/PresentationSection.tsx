@@ -15,7 +15,7 @@ export const PresentationSection = () => {
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
+            <div className="hidden relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb"
                     alt={getTranslation("psesentationAlt")}
@@ -23,7 +23,7 @@ export const PresentationSection = () => {
                     height={627}
                     className=" relative -z-[1]"
                 />
-                <p className="hidden tab:block tab:absolute top-[109px] pc:top-[207px] text-4xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                <p className="hidden tab:block tab:absolute top-[109px] pc:top-[207px] text-4xl pc:text-6xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
                     {getTranslation("learnMoreAboutUs")}
                 </p>
                 <button

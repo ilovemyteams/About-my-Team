@@ -5,14 +5,22 @@ import { LinkGoBack } from "../shared/LinkGoBack";
 import { localeInURL } from "@/src/utils/localeInURL";
 import { PageContentList } from "./PageContentList";
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 export const HeroAbout = () => {
+    const { ref, inView } = useInView({
+        threshold: 0.75,
+    });
     const getTranslation = useTranslations("AboutPage");
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
         <Section className="pt-8 tab:pt-12 pc:pt-[100px]">
-            <div className="flex items-center justify-between mb-4 pc:mb-[102px]">
+            <div
+                ref={ref}
+                className="flex items-center justify-between mb-4 pc:mb-[102px]"
+            >
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -51,12 +59,32 @@ export const HeroAbout = () => {
                     </span>
                     {getTranslation("missionDescription")}
                 </p>
-                <p className="tab:w-[360px] tab:ml-[52%] tab:mr-0 pc:w-[536px]">
-                    <span className="text-purple-100">
-                        {getTranslation("goalAccent")}
-                    </span>
-                    {getTranslation("goalDescription")}
-                </p>
+                <div className="tab:flex justify-between">
+                    <div className="relative mt-[-48px] pc:mt-[-113px] pc:ml-[98px]">
+                        <Image
+                            src="/images/triangle.svg"
+                            width="0"
+                            height="0"
+                            alt="animated image triangle"
+                            className={`hidden absolute tab:block min-w-[200px] pc:min-w-[385px] w-[20%] h-auto ${inView && "animate-triangleRotation"} hover:animate-triangleRotation`}
+                        />
+                        <Image
+                            src="/images/trapeze.svg"
+                            width="0"
+                            height="0"
+                            alt="animated image trapeze"
+                            className={`hidden tab:block min-w-[200px] pc:min-w-[385px] tab:ml-7 pc:ml-[51px] w-[20%] h-auto ${inView && "animate-trapezeRotation"} hover:animate-trapezeRotation`}
+                        />
+                    </div>
+                    <div className="tab:w-[48%]">
+                        <p className="tab:w-[350px] tab:mr-0 pc:w-[536px]">
+                            <span className="text-purple-100">
+                                {getTranslation("goalAccent")}
+                            </span>
+                            {getTranslation("goalDescription")}
+                        </p>
+                    </div>
+                </div>
             </div>
         </Section>
     );

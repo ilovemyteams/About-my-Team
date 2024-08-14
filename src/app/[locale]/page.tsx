@@ -10,10 +10,12 @@ import { ServicesSection } from "@/src/components/servicesSection/ServicesSectio
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
+import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 
 export default function Home() {
     return (
         <>
+            <BackgroundFiguresMain />
             <HeroSection />
             <MissionSection />
             <JoinTheTeamSection />
