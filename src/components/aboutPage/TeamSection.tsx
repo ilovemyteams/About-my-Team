@@ -16,9 +16,9 @@ export const TeamSection = () => {
             </h2>
             <div className="pc:flex pc:gap-[102px]">
                 <Image
-                    src="https://drive.google.com/uc?export=view&id=1n5hpC_COy1tUvAS8AyTahI_n1YuNA5fp "
+                    src="https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff"
                     alt={getTranslation("sectionTeamAlt")}
-                    width={1441}
+                    width={1442}
                     height={831}
                     className="mb-6 tab:mb-8 pc:w-[58.3%] pc:mb-0"
                 />
