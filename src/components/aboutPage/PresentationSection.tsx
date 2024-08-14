@@ -8,14 +8,14 @@ export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section id="presentation" className="tab:pt-5 tab:mb-[100px]">
+        <Section id="presentation" className="tab:pt-5 tab:mb-[100px] pc:pt-0">
             <h2 className="font-caviar text-3xl mb-6 text-center tab:hidden">
                 {getTranslation("learnMoreAboutUsTitle")}
                 <span className="text-purple-100">
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="relative bg-PresentationGradient mb-[80px] tab:mb-[100px]">
+            <div className="relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
                 <Image
                     src="https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb"
                     alt={getTranslation("psesentationAlt")}
@@ -23,12 +23,12 @@ export const PresentationSection = () => {
                     height={627}
                     className=" relative -z-[1]"
                 />
-                <p className="hidden tab:block tab:absolute top-[109px] text-4xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                <p className="hidden tab:block tab:absolute top-[109px] pc:top-[207px] text-4xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
                     {getTranslation("learnMoreAboutUs")}
                 </p>
                 <button
                     aria-label="play button"
-                    className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 tab:translate-y-0
+                    className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 tab:translate-y-0 pc:top-[262px]
                 w-[64px] h-[64px] p-3 rounded-full after:content-[''] after:absolute after:top-0 after:left-0 
                 after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 
                 after:bg-opacity-40 after:blur-[2px] outline-none rotate-90 dark:pc:hover:text-red pc:hover:text-redLight
@@ -38,7 +38,7 @@ export const PresentationSection = () => {
                     <IconUp />
                 </button>
             </div>
-            <p className="font-caviar text-xlb tab:w-[534px] mx-auto">
+            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] mx-auto">
                 <span className="text-purple-100">
                     {getTranslation("finallyFirstAccent")}
                 </span>

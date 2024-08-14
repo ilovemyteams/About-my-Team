@@ -51,7 +51,7 @@ export const HeroAbout = () => {
                     </span>
                     {getTranslation("missionDescription")}
                 </p>
-                <p className="tab:w-[360px] ml-auto mr-0 pc:w-[536px]">
+                <p className="tab:w-[360px] tab:ml-[52%] tab:mr-0 pc:w-[536px]">
                     <span className="text-purple-100">
                         {getTranslation("goalAccent")}
                     </span>

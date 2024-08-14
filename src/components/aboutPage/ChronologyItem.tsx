@@ -18,7 +18,9 @@ export const ChronologyItem = ({ data }: ChronologyItemProp) => {
                     {data[locale as LocaleType]?.date}
                 </p>
             </div>
-            <p className="text-base">{data[locale as LocaleType]?.text}</p>
+            <div className="tab:h-[45%]">
+                <p className="text-base">{data[locale as LocaleType]?.text}</p>
+            </div>
         </>
     );
 };

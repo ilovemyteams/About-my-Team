@@ -20,7 +20,7 @@ export const QuoteSection = () => {
                     className="mb-10 tab:mb-0"
                 />
                 <div>
-                    <div className="w-[65vw] tab:w-[47vw] mx-auto mb-10 text-sm tab:text-base">
+                    <div className="w-[65vw] tab:w-[47vw] mx-auto mb-10 text-sm tab:text-base pc:text-xl">
                         <IconQuote
                             className={
                                 "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight mb-4 tab:mb-6"
@@ -31,10 +31,10 @@ export const QuoteSection = () => {
                     </div>
                     <div className="flex justify-between items-center border-y dark:border-purple-stroke border-purple-strokeLight py-2">
                         <div>
-                            <p className="font-caviar text-baseb ">
+                            <p className="font-caviar text-baseb pc:text-3xl">
                                 {getTranslation("author")}
                             </p>
-                            <p className="text-xs">
+                            <p className="text-xs pc:text-base">
                                 {getTranslation("authorsRole")}
                             </p>
                         </div>
