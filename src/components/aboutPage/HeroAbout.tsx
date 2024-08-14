@@ -60,7 +60,7 @@ export const HeroAbout = () => {
                     {getTranslation("missionDescription")}
                 </p>
                 <div className="tab:flex justify-between">
-                    <div className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-113px] pc:ml-[98px]">
+                    <div className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-93px] pc:ml-[98px]">
                         <Image
                             src="/images/triangle.svg"
                             width="0"
