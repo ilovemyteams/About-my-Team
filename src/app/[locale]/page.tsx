@@ -1,4 +1,3 @@
-// import HomeTest from "@/src/components/Home";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
@@ -28,7 +27,6 @@ export default function Home() {
             <StagesSection />
             <QaSection />
             <HireUsSection />
-            {/* <HomeTest /> */}
         </>
     );
 }
