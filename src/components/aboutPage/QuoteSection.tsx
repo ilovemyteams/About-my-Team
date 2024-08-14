@@ -17,10 +17,10 @@ export const QuoteSection = () => {
                     alt={getTranslation("authorPhotoAlt")}
                     width={538}
                     height={356}
-                    className="mb-10 tab:mb-0 "
+                    className="mb-10 tab:mb-0 object-cover"
                 />
-                <div className=" flex flex-col justify-between ">
-                    <div className="w-[65vw] tab:w-[47vw] mx-auto mb-10 text-sm tab:text-base pc:text-xl">
+                <div className="flex flex-col justify-between tab:w-[50%] tab:min-w-[360px] pc:w-[41.7%] pc:min-w-[451px]">
+                    <div className=" mx-auto mb-10 text-sm tab:text-base pc:text-xl">
                         <IconQuote
                             className={
                                 "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight mb-4 tab:mb-6"
