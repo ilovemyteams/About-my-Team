@@ -10,17 +10,14 @@ import Image from "next/image";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({
-        threshold: 0.75,
+        threshold: 1,
     });
     const getTranslation = useTranslations("AboutPage");
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
         <Section className="pt-8 tab:pt-12 pc:pt-[100px]">
-            <div
-                ref={ref}
-                className="flex items-center justify-between mb-4 pc:mb-[102px]"
-            >
+            <div className="flex items-center justify-between mb-4 pc:mb-[102px]">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -60,7 +57,10 @@ export const HeroAbout = () => {
                     {getTranslation("missionDescription")}
                 </p>
                 <div className="tab:flex justify-between">
-                    <div className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-73px] pc:ml-[98px]">
+                    <div
+                        ref={ref}
+                        className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-73px] pc:ml-[98px]"
+                    >
                         <Image
                             src="/images/triangle.svg"
                             width="0"
