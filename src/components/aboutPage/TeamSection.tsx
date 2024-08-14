@@ -16,7 +16,7 @@ export const TeamSection = () => {
             </h2>
             <div className="pc:flex pc:gap-[102px]">
                 <Image
-                    src="https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff "
+                    src="https://drive.google.com/uc?export=view&id=1n5hpC_COy1tUvAS8AyTahI_n1YuNA5fp "
                     alt={getTranslation("sectionTeamAlt")}
                     width={1441}
                     height={831}
