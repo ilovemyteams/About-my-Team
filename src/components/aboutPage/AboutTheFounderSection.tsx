@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
 import Image from "next/image";
+import { Section } from "../shared/Section";
 import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
+
+const SUSANNASPHOTOLINK =
+    "https://drive.google.com/uc?export=view&id=1j2sHd4yuBnbgXsl-lZsZypeu-mKlruVI";
 
 export const AboutTheFounderSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -16,7 +19,7 @@ export const AboutTheFounderSection = () => {
             </h2>
             <div className="tab:flex tab:gap-10 pc:gap-[90px] tab:justify-between tab:mb-6 pc:mb-10">
                 <Image
-                    src="https://drive.google.com/uc?export=view&id=1j2sHd4yuBnbgXsl-lZsZypeu-mKlruVI"
+                    src={SUSANNASPHOTOLINK}
                     alt={getTranslation("aboutOwnerPhotoAlt")}
                     width={449}
                     height={503}

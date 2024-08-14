@@ -1,19 +1,26 @@
 import Image from "next/image";
-import { Section } from "../shared/Section";
 import { useTranslations } from "next-intl";
+import { Section } from "../shared/Section";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { SocialLink } from "../shared/SocialLink";
 import { IconQuote } from "../shared/Icons/IconQuote";
+import { membersData } from "@/src/mockedData/membersData";
+
+const SUSANNASPORTRAITLINK =
+    "https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh";
 
 export const QuoteSection = () => {
     const getTranslation = useTranslations("AboutPage");
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
-
+    const SusannasData = membersData.find(
+        member => member.data.id === "SusannaSalataPM"
+    );
+    const SusannasLi = SusannasData?.data.socialLinks.linkedin;
     return (
         <Section className="pt-8 tab:pt-[89px] pc:pt-5">
             <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 pc:gap-[91px] tab:items-stretch">
                 <Image
-                    src="https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh"
+                    src={SUSANNASPORTRAITLINK}
                     alt={getTranslation("authorPhotoAlt")}
                     width={538}
                     height={356}
@@ -39,10 +46,12 @@ export const QuoteSection = () => {
                             </p>
                         </div>
                         <div>
-                            <SocialLink
-                                url="https://www.linkedin.com/in/susanna-salata/"
-                                image={iconLinkedin}
-                            />
+                            {SusannasLi && (
+                                <SocialLink
+                                    url={SusannasLi}
+                                    image={iconLinkedin}
+                                />
+                            )}
                         </div>
                     </div>
                 </div>

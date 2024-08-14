@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
 import Image from "next/image";
+import { Section } from "../shared/Section";
 import { JoinUsButton } from "../shared/JoinUsButton";
+
+const TEAMTOGETHERPHOTO =
+    "https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff";
 
 export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -16,7 +19,7 @@ export const TeamSection = () => {
             </h2>
             <div className="pc:flex pc:gap-[102px]">
                 <Image
-                    src="https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff"
+                    src={TEAMTOGETHERPHOTO}
                     alt={getTranslation("sectionTeamAlt")}
                     width={1442}
                     height={831}
