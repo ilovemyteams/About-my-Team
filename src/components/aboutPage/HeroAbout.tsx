@@ -60,13 +60,20 @@ export const HeroAbout = () => {
                     {getTranslation("missionDescription")}
                 </p>
                 <div className="tab:flex justify-between">
-                    <div>
+                    <div className="relative mt-[-48px] pc:mt-[-113px] pc:ml-[98px]">
                         <Image
                             src="/images/triangle.svg"
                             width="0"
                             height="0"
                             alt="animated image triangle"
-                            className={`hidden tab:block min-w-[144px] w-[20%] h-auto ${inView && "animate-triangleRotation"}`}
+                            className={`hidden absolute tab:block min-w-[200px] pc:min-w-[385px] w-[20%] h-auto ${inView && "animate-triangleRotation"} hover:animate-triangleRotation`}
+                        />
+                        <Image
+                            src="/images/trapeze.svg"
+                            width="0"
+                            height="0"
+                            alt="animated image trapeze"
+                            className={`hidden tab:block min-w-[200px] pc:min-w-[385px] tab:ml-7 pc:ml-[51px] w-[20%] h-auto ${inView && "animate-trapezeRotation"} hover:animate-trapezeRotation`}
                         />
                     </div>
                     <div className="tab:w-[48%]">
