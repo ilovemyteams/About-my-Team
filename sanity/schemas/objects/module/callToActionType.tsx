@@ -23,7 +23,7 @@ export const callToActionType = defineField({
         defineField({
             name: "description",
             title: "Section description (optional)",
-            type: "internationalizedArrayText",
+            type: "internationalizedArrayPortableTextSimple",
         }),
     ],
     preview: {
