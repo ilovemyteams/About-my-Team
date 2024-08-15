@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
 import { Section } from "../shared/Section";
+import { ScrollShadow } from "@nextui-org/react";
 
 const SUSANNAS_PHOTO_LINK =
     "https://drive.google.com/uc?export=view&id=1j2sHd4yuBnbgXsl-lZsZypeu-mKlruVI";
@@ -18,16 +19,19 @@ export const AboutTheFounderSection = () => {
                     {getTranslation("aboutOwnerTitleAccent")}
                 </span>
             </h2>
-            <div className="tab:flex tab:gap-10 pc:gap-[90px] tab:mb-6 pc:mb-10 tab:items-stretch">
-                <Image
-                    src={SUSANNAS_PHOTO_LINK}
-                    alt={getTranslation("aboutOwnerPhotoAlt")}
-                    width={449}
-                    height={503}
-                    className="mb-6 mx-auto tab:aspect-[322/364] tab:mx-0 tab:mb-0"
-                />
-                <div>
-                    <div className="border-y dark:border-purple-stroke border-purple-strokeLight text-sm tab:text-base tab:min-w-[360px] tab:w-[47vw] pc:text-xl tab:h-[364px] tab:overflow-scroll">
+            <div className="tab:flex tab:gap-10 pc:gap-[90px] tab:mb-6 pc:mb-10 ">
+                <div className="tab:min-w-[320px]  w-full tab:aspect-[320/364] pc:aspect-[246/196]">
+                    <Image
+                        src={SUSANNAS_PHOTO_LINK}
+                        alt={getTranslation("aboutOwnerPhotoAlt")}
+                        width={449}
+                        height={503}
+                        className="mb-6 mx-auto tab:mx-0 tab:mb-0 object-cover tab:min-w-[320px]  w-full 
+                                tab:aspect-[320/364] pc:aspect-[246/196]"
+                    />
+                </div>
+                <div className="tab:min-h-[360px] tab:max-h-[486px] aspect-[360/364] object-cover border-y dark:border-purple-stroke border-purple-strokeLight">
+                    <ScrollShadow className="tab:py-3 tab:min-h-[360px] tab:max-h-[486px] aspect-[360/364] object-cover  text-sm tab:text-base tab:min-w-[360px] tab:w-[47vw] pc:text-xl  tab:overflow-scroll">
                         <p className="mb-6 pc:mb-10">
                             {getTranslation("aboutOwnerP1")}
                         </p>
@@ -44,7 +48,7 @@ export const AboutTheFounderSection = () => {
                             {getTranslation("aboutOwnerP5")}
                         </p>
                         <IconHeartWeb className="dark:text-purple-stroke text-purple-strokeLight ml-auto mr-0 tab:w-[96px] tab:h-auto" />
-                    </div>
+                    </ScrollShadow>
                 </div>
             </div>
         </Section>
