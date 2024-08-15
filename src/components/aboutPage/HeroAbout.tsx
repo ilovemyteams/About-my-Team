@@ -61,21 +61,21 @@ export const HeroAbout = () => {
                 <div className="tab:flex justify-between">
                     <div
                         ref={ref}
-                        className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-73px] pc:ml-[98px]"
+                        className="hidden tab:block tab:relative mt-[-48px] pc:mt-[-43px] tab:ml-7 pc:ml-[58px] group"
                     >
                         <Image
                             src="/images/triangle.svg"
                             width="0"
                             height="0"
                             alt="animated image triangle"
-                            className={`hidden absolute tab:block min-w-[200px] pc:min-w-[385px] w-[20%] h-auto ${inView && "animate-triangleRotation"}`}
+                            className={`hidden absolute tab:block min-w-[200px] tab:w-[26vw] pc:w-[30vw] pc:min-w-[385px] pc:max-w-[500px] h-auto ${inView && "animate-triangleRotation"} group-hover:animate-triangleRotation`}
                         />
                         <Image
                             src="/images/trapeze.svg"
                             width="0"
                             height="0"
                             alt="animated image trapeze"
-                            className={`hidden tab:block min-w-[200px] pc:min-w-[385px] tab:ml-7 pc:ml-[51px] w-[20%] h-auto ${inView && "animate-trapezeRotation"}`}
+                            className={`hidden tab:block min-w-[200px] tab:w-[26vw] pc:w-[30vw] pc:min-w-[385px] pc:max-w-[500px] tab:ml-7 pc:ml-[51px] h-auto ${inView && "animate-trapezeRotation"} group-hover:animate-trapezeRotation`}
                         />
                     </div>
                     <div className="tab:w-[48%]">
