@@ -1,68 +1,24 @@
-import { BlockElementIcon, ImageIcon } from "@sanity/icons";
-import { defineArrayMember, defineField } from "sanity";
+import { BlockElementIcon } from "@sanity/icons";
+import { defineField } from "sanity";
 
 export const callToActionType = defineField({
     name: "callToAction",
     title: "Call to action",
     type: "object",
     icon: BlockElementIcon,
-    fieldsets: [
-        {
-            name: "copy",
-            title: "Copy",
-        },
-    ],
+
     fields: [
         defineField({
-            name: "layout",
-            type: "string",
-            initialValue: "left",
-            options: {
-                direction: "horizontal",
-                layout: "radio",
-                list: [
-                    {
-                        title: "Content / Copy",
-                        value: "left",
-                    },
-                    {
-                        title: "Copy / Content",
-                        value: "right",
-                    },
-                ],
-            },
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
             name: "title",
+            title: "Section title",
             type: "string",
             validation: Rule => Rule.required(),
-            fieldset: "copy",
         }),
         defineField({
-            name: "portableText",
-            type: "text",
-            rows: 2,
-            fieldset: "copy",
-        }),
-        defineField({
-            name: "link",
-            type: "array",
-            of: [{ type: "linkInternal" }, { type: "linkExternal" }],
-            validation: Rule => Rule.max(1),
-            fieldset: "copy",
-        }),
-        defineField({
-            name: "content",
-            type: "array",
-            validation: Rule => Rule.required().max(1),
-            of: [
-                defineArrayMember({
-                    icon: ImageIcon,
-                    type: "image",
-                    options: { hotspot: true },
-                }),
-            ],
+            name: "ctaButton",
+            title: "CTA Button",
+            type: "ctaButton",
+            validation: Rule => Rule.required(),
         }),
     ],
     preview: {
