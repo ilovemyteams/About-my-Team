@@ -1,7 +1,8 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Section } from "../shared/Section";
+import { useTranslations } from "next-intl";
+
 import { JoinUsButton } from "../shared/JoinUsButton";
+import { Section } from "../shared/Section";
 
 const TEAM_TOGETHER_PHOTO =
     "https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff";

@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
-import { IconLinkedin } from "../shared/Icons/IconLinkedin";
-import { SocialLink } from "../shared/SocialLink";
-import { IconQuote } from "../shared/Icons/IconQuote";
+
 import { membersData } from "@/src/mockedData/membersData";
+
+import { IconLinkedin } from "../shared/Icons/IconLinkedin";
+import { IconQuote } from "../shared/Icons/IconQuote";
+import { Section } from "../shared/Section";
+import { SocialLink } from "../shared/SocialLink";
 
 const SUSANNAS_PORTRAIT_LINK =
     "https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh";

@@ -1,7 +1,8 @@
-import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Section } from "../shared/Section";
+import { useTranslations } from "next-intl";
+
 import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
+import { Section } from "../shared/Section";
 
 const SUSANNAS_PHOTO_LINK =
     "https://drive.google.com/uc?export=view&id=1j2sHd4yuBnbgXsl-lZsZypeu-mKlruVI";

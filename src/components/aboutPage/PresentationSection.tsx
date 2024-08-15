@@ -1,8 +1,9 @@
 "use client";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Section } from "../shared/Section";
+import { useTranslations } from "next-intl";
+
 import { IconUp } from "../shared/Icons/IconUp";
+import { Section } from "../shared/Section";
 
 const TEAMTOGETHERPHOTO =
     "https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb";

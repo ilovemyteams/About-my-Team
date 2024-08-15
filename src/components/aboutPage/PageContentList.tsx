@@ -1,5 +1,5 @@
-import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export const PageContentList = () => {
     const getTranslation = useTranslations("AboutPage");

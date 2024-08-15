@@ -1,12 +1,14 @@
 "use client";
-import { useLocale, useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
-import { LinkGoBack } from "../shared/LinkGoBack";
-import { localeInURL } from "@/src/utils/localeInURL";
-import { PageContentList } from "./PageContentList";
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import { useInView } from "react-intersection-observer";
+
+import { localeInURL } from "@/src/utils/localeInURL";
+
+import { LinkGoBack } from "../shared/LinkGoBack";
+import { Section } from "../shared/Section";
+import { PageContentList } from "./PageContentList";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({

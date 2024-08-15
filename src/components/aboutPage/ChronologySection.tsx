@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
+
 import { chronologyData } from "@/src/mockedData/chronologyData";
+
+import { Section } from "../shared/Section";
 import { ChronologyItem } from "./ChronologyItem";
 
 export const ChronologySection = () => {

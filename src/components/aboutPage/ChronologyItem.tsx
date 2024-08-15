@@ -1,4 +1,5 @@
 import { useLocale } from "next-intl";
+
 import { ChronologyDataTypeItem } from "@/src/mockedData/chronologyData";
 import { LocaleType } from "@/types/LocaleType";
 
