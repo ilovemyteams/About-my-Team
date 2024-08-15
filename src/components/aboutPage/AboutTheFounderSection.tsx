@@ -20,7 +20,7 @@ export const AboutTheFounderSection = () => {
                 </span>
             </h2>
             <div className="tab:flex tab:gap-10 pc:gap-[90px] tab:mb-6 pc:mb-10 ">
-                <div className="tab:min-w-[322px]  w-[44.7%] tab:aspect-[322/364] pc:aspect-[449/503]">
+                <div className="tab:min-w-[322px] max-w-[330px] tab:max-w-full tab:w-[44.7%] tab:aspect-[322/364] pc:aspect-[449/503]">
                     <Image
                         src={SUSANNAS_PHOTO_LINK}
                         alt={getTranslation("aboutOwnerPhotoAlt")}
