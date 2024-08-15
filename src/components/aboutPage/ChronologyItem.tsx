@@ -1,6 +1,6 @@
+import { useLocale } from "next-intl";
 import { ChronologyDataTypeItem } from "@/src/mockedData/chronologyData";
 import { LocaleType } from "@/types/LocaleType";
-import { useLocale } from "next-intl";
 
 interface ChronologyItemProp {
     data: ChronologyDataTypeItem;

@@ -1,7 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { Section } from "../shared/Section";
 import Image from "next/image";
+import { Section } from "../shared/Section";
 import { IconUp } from "../shared/Icons/IconUp";
 
 const TEAMTOGETHERPHOTO =
