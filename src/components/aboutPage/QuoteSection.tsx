@@ -6,7 +6,7 @@ import { SocialLink } from "../shared/SocialLink";
 import { IconQuote } from "../shared/Icons/IconQuote";
 import { membersData } from "@/src/mockedData/membersData";
 
-const SUSANNASPORTRAITLINK =
+const SUSANNAS_PORTRAIT_LINK =
     "https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh";
 
 export const QuoteSection = () => {
@@ -20,7 +20,7 @@ export const QuoteSection = () => {
         <Section className="pt-8 tab:pt-[89px] pc:pt-5">
             <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 pc:gap-[91px] tab:items-stretch">
                 <Image
-                    src={SUSANNASPORTRAITLINK}
+                    src={SUSANNAS_PORTRAIT_LINK}
                     alt={getTranslation("authorPhotoAlt")}
                     width={538}
                     height={356}

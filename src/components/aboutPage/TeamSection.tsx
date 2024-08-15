@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Section } from "../shared/Section";
 import { JoinUsButton } from "../shared/JoinUsButton";
 
-const TEAMTOGETHERPHOTO =
+const TEAM_TOGETHER_PHOTO =
     "https://drive.google.com/uc?export=view&id=1HHP778It3VeUawC0iExt6mLa8293zqff";
 
 export const TeamSection = () => {
@@ -19,7 +19,7 @@ export const TeamSection = () => {
             </h2>
             <div className="pc:flex pc:gap-[102px]">
                 <Image
-                    src={TEAMTOGETHERPHOTO}
+                    src={TEAM_TOGETHER_PHOTO}
                     alt={getTranslation("sectionTeamAlt")}
                     width={1442}
                     height={831}
