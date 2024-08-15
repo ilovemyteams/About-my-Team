@@ -8,12 +8,12 @@ export const ctaButtonType = defineField({
         defineField({
             name: "buttonName",
             title: "Button name",
-            type: "string",
+            type: "internationalizedArrayString",
             validation: Rule => Rule.required(),
         }),
         defineField({
             name: "link",
-            title: "Button link",
+            title: "Button link (optional)",
             type: "linkExternal",
         }),
     ],

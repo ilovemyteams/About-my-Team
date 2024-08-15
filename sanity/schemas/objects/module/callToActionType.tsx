@@ -11,7 +11,7 @@ export const callToActionType = defineField({
         defineField({
             name: "title",
             title: "Section title",
-            type: "string",
+            type: "internationalizedArrayString",
             validation: Rule => Rule.required(),
         }),
         defineField({
@@ -19,6 +19,11 @@ export const callToActionType = defineField({
             title: "CTA Button",
             type: "ctaButton",
             validation: Rule => Rule.required(),
+        }),
+        defineField({
+            name: "description",
+            title: "Section description (optional)",
+            type: "internationalizedArrayText",
         }),
     ],
     preview: {
