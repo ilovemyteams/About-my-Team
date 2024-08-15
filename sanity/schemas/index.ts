@@ -27,6 +27,11 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
+import {
+    missioItemType,
+    ourMissionHomeType,
+} from "./objects/module/ourMissionHomeType";
+import { sectionTitleType } from "./objects/global/sectionTitleType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -54,6 +59,10 @@ const objects: ObjectDefinition[] = [
     milestoneType,
     durationType,
     socialLinksType,
+    ourMissionHomeType,
+    sectionTitleType,
+    missioItemType,
+    subSectionLinkType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -74,6 +83,7 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
+import { subSectionLinkType } from "./objects/global/subSectionLinkType";
 
 const singletons: DocumentDefinition[] = [
     homeType,
