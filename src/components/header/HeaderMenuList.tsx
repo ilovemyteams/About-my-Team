@@ -1,7 +1,8 @@
-import { localeInURL } from "@/src/utils/localeInURL";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
-import Link from "next/link";
+
+import { localeInURL } from "@/src/utils/localeInURL";
 
 interface HeaderMenuListProps {
     setIsHeaderMenuOpened: (
