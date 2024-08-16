@@ -15,7 +15,7 @@ export const ChronologyItem = ({ data }: ChronologyItemProp) => {
                 <h5 className="text-xlb">
                     {data[locale as LocaleType]?.title}
                 </h5>
-                <p className="text-[36px] leading-[45px] font-bold text-purple-dark">
+                <p className="text-[36px] leading-[45px] font-bold dark:text-purple-stroke text-purple-strokeLight">
                     {data[locale as LocaleType]?.date}
                 </p>
             </div>
