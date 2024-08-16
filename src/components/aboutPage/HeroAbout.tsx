@@ -12,7 +12,7 @@ import { PageContentList } from "./PageContentList";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({
-        threshold: 1,
+        threshold: 0.75,
     });
     const getTranslation = useTranslations("AboutPage");
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
