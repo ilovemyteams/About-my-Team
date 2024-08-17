@@ -1,6 +1,5 @@
-import { localeInURL } from "@/src/utils/localeInURL";
-import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
 export const MainPageNavList = () => {
     const getTranslation = useTranslations();
