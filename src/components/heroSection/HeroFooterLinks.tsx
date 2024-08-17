@@ -25,7 +25,6 @@ export const HeroFooterLinks = () => {
                     {getTranslation("portfolioLink")}
                 </Link>
             </div>
-            <MainPageNavList />
         </>
     );
 };
