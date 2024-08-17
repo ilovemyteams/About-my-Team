@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { localeInURL } from "@/src/utils/localeInURL";
 
 export const MenuFooter = () => {
     const locale = useLocale();
