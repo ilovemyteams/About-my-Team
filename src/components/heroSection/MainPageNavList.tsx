@@ -14,11 +14,11 @@ export const MainPageNavList = () => {
     ];
     const locale = useLocale();
     return (
-        <ul className="flex flex-wrap gap-y-4 gap-x-[18%] justify-center mt-[40px] tab:mt-[56px] pc:mt-[46px] tab:gap-4">
+        <ul className="flex flex-wrap gap-y-4 gap-x-[18%] justify-center tab:justify-between mt-[40px] tab:mt-[56px] pc:mt-[46px] tab:gap-4">
             {navList.map((content, idx) => (
                 <li key={idx}>
                     <Link
-                        href={`/${locale}/about#${content.id}`}
+                        href={`/${locale}#${content.id}`}
                         className="text-xs dark:text-purple-50 text-purple-130 dark:pc:hover:text-red pc:hover:text-redLight
                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                     >

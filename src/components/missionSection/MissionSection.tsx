@@ -1,13 +1,13 @@
 "use client";
-import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import { useInView } from "react-intersection-observer";
+
+import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
-import { StagesList } from "./StagesList";
-import { Button } from "../shared/Button";
-import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({
@@ -47,7 +47,6 @@ export const MissionSection = () => {
                         </Button>
                     </div>
                 </div>
-                <StagesList />
             </div>
         </Section>
     );
