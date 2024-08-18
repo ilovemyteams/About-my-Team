@@ -63,6 +63,7 @@ const objects: ObjectDefinition[] = [
     sectionTitleType,
     missioItemType,
     subSectionLinkType,
+    buttonType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -84,12 +85,14 @@ import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
 import { subSectionLinkType } from "./objects/global/subSectionLinkType";
-
+import { aboutUsType } from "./singletons/aboutUsType";
+import { buttonType } from "./objects/global/buttonType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
+    aboutUsType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

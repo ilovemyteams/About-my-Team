@@ -22,12 +22,17 @@ export const ourMissionHomeType = defineField({
         defineField({
             name: "sectionTitleType",
             type: "sectionTitleType",
-            title: "Our Missions Section Title",
+            title: "Title of the section. Please, please choose proper color of the text for each language.",
         }),
         defineField({
             name: "shortDescription",
             type: "array",
             of: [defineArrayMember({ type: "missionItemDescription" })],
+        }),
+        defineField({
+            name: "learnMoreButton",
+            type: "button",
+            title: "Learn More Button",
         }),
         defineField({
             name: "internalLinks",
