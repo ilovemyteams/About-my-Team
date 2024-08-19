@@ -32,6 +32,8 @@ import {
     ourMissionHomeType,
 } from "./objects/module/ourMissionHomeType";
 import { sectionTitleType } from "./objects/global/sectionTitleType";
+import { subSectionLinkType } from "./objects/global/subSectionLinkType";
+
 import { buttonType } from "./objects/global/buttonType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
@@ -61,6 +63,10 @@ const objects: ObjectDefinition[] = [
     durationType,
     socialLinksType,
     buttonType,
+    missioItemType,
+    ourMissionHomeType,
+    sectionTitleType,
+    subSectionLinkType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -81,9 +87,7 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
-import { subSectionLinkType } from "./objects/global/subSectionLinkType";
 import { aboutUsType } from "./singletons/aboutUsType";
-import { buttonType } from "./objects/global/buttonType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
