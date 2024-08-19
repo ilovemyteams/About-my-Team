@@ -29,7 +29,8 @@
         "**/*.tsx",
         "**/**/*.ts",
         "**/**/*.tsx",
-        ".next/types/**/*.ts"
+        ".next/types/**/*.ts",
+        "sanity/schemas/objects/global/sectionTitleType.ts"
     ],
     "exclude": ["node_modules", ".next"]
 }

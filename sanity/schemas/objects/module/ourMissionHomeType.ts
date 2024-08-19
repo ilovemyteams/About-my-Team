@@ -54,9 +54,11 @@ export const ourMissionHomeType = defineField({
             type: "button",
             title: "Learn More Button",
         }),
+
         defineField({
             name: "internalLinks",
             type: "array",
+            title: "List of Uppercase titles (link is optional)",
             of: [defineArrayMember({ type: "subSectionLink" })],
         }),
     ],

@@ -1,33 +1,31 @@
-import { defineField, defineType } from "sanity";
+import { defineField, defineType, defineArrayMember } from "sanity";
 import { maxLengthValidator } from "../../../utils/maxLengthValidator";
+import { AccentText } from "@/sanity/components/accentText/AccentText";
 
-const MAX_LENGHT = 30;
-
-const colorAnnotation = defineField({
-    name: "color",
-    title: "Color",
-    type: "object",
-    fields: [
-        defineField({
-            name: "colorValue",
-            title: "Color Value",
-            type: "color",
-        }),
-    ],
-});
+const MAX_LENGHT = 100;
 
 const createTitleField = (name: string, title: string, maxLength: number) =>
     defineField({
         name,
         type: "array",
-        title,
         of: [
-            {
-                type: "block",
+            defineArrayMember({
+                lists: [
+                    { title: "Bullet", value: "bullet" },
+                    { title: "Numbered", value: "number" },
+                ],
                 marks: {
-                    annotations: [colorAnnotation],
+                    decorators: [
+                        {
+                            title: "Purple",
+                            value: "purple",
+                            icon: () => "🟣",
+                            component: AccentText,
+                        },
+                    ],
                 },
-            },
+                type: "block",
+            }),
         ],
         validation: Rule =>
             Rule.required().custom(maxLengthValidator(maxLength)),
