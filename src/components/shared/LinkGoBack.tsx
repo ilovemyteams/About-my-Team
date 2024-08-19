@@ -1,6 +1,7 @@
-import { useTranslations } from "next-intl";
-import { IconGoBack } from "./Icons/IconGoBack";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+
+import { IconGoBack } from "./Icons/IconGoBack";
 
 export const LinkGoBack = ({
     className,
