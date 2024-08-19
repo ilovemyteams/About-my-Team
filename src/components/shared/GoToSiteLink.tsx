@@ -1,4 +1,5 @@
 import { addProtocol } from "@/src/utils/addProtocol";
+
 import { IconGoToSite } from "./Icons/IconGoToSite";
 
 export const GoToSiteLink = ({ siteLink }: { siteLink: string }) => {

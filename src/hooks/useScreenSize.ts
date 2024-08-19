@@ -1,4 +1,5 @@
-import { useState, useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
+
 import { SCREEN_NAMES } from "../constants/screenNames";
 import { SCREEN_SIZES } from "../constants/screenSizes";
 

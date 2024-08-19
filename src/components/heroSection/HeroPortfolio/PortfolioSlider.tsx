@@ -1,17 +1,19 @@
 "use client";
-import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
-import { PortfolioCard } from "./PortfolioCard";
+import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
+
+import { LocaleType } from "@/types/LocaleType";
+
+import { portfolioData } from "../../../mockedData/portfolioData";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
 } from "../../shared/SliderComponents/CarouselButtons";
-import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
 import { useDotButton } from "../../shared/SliderComponents/SliderDots";
-import { LocaleType } from "@/types/LocaleType";
-import { portfolioData } from "../../../mockedData/portfolioData";
+import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+import { PortfolioCard } from "./PortfolioCard";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 

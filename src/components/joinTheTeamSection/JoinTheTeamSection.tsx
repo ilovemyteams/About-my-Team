@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
-import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
-import { SectionCTA } from "../shared/SectionCTA";
+
 import { JoinUsButton } from "../shared/JoinUsButton";
+import { SectionCTA } from "../shared/SectionCTA";
+import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 
 export const JoinTheTeamSection = () => {
     const getTranslation = useTranslations("JoinTheTeam");

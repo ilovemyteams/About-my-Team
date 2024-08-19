@@ -1,12 +1,14 @@
 import Image from "next/image";
+
+import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
+import { HeaderMenuProps } from "@/types/HeaderMenuProps";
+
+import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
-import { HeaderMenuList } from "../HeaderMenuList";
-import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
-import { HeaderMenuProps } from "@/types/HeaderMenuProps";
-import { BackgroundCircles } from "@/src/components/backgroundImages/BackgroundCircles";
 import { WriteUs } from "../../shared/WriteUs/WriteUs";
-import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { HeaderMenuList } from "../HeaderMenuList";
 
 const openedStyles = "w-80 deskxl:w-120";
 const closedStyles = "w-0";

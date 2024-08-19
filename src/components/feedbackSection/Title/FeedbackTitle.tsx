@@ -1,8 +1,9 @@
 import { useTranslations } from "next-intl";
-import { TitleWrapper } from "../../shared/TitleWrapper";
+
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import { MobTitle } from "./MobTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 import { DeskTitle } from "./DeskTitle";
+import { MobTitle } from "./MobTitle";
 
 export const FeedbackTitle = () => {
     const getTranslation = useTranslations("Feedback");

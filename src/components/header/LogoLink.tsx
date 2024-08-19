@@ -1,8 +1,9 @@
-import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
-import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useLocale } from "next-intl";
+
+import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 interface LogoLinkProps {
     setIsHeaderMenuOpened: (

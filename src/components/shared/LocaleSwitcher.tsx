@@ -1,7 +1,8 @@
 "use client";
-import { useLocale } from "next-intl";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+
 import { locales } from "@/src/config";
 
 const activeStyle = "outline-none dark:text-red text-redLight";

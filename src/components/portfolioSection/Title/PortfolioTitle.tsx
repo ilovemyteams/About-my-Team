@@ -1,9 +1,10 @@
 import { useTranslations } from "next-intl";
-import { TabTitle } from "./TabTitle";
-import { MobTitle } from "./MobTitle";
-import { TitleWrapper } from "../../shared/TitleWrapper";
+
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 import { DeskTitle } from "./DeskTitle";
+import { MobTitle } from "./MobTitle";
+import { TabTitle } from "./TabTitle";
 
 export const PortfolioTitle = () => {
     const getTranslation = useTranslations("Portfolio");

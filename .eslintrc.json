@@ -30,8 +30,8 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "@typescript-eslint/no-explicit-any": "error",
-        "simple-import-sort/imports": "warn",
-        "simple-import-sort/exports": "warn"
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
     },
     "root": true
 }
