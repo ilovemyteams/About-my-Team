@@ -13,7 +13,7 @@ export const buttonType = defineField({
         }),
         defineField({
             name: "buttonLink",
-            title: "Button link",
+            title: "Button type link",
             type: "string",
             options: {
                 list: [
@@ -21,7 +21,6 @@ export const buttonType = defineField({
                     { title: "Internal", value: "internal" },
                     { title: "External", value: "external" },
                 ],
-                layout: "radio",
             },
             initialValue: "noLink",
             validation: Rule => Rule.required(),
