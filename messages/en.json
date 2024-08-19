@@ -21,7 +21,7 @@
         "titleSeventhWord": "businesses"
     },
     "Mission": {
-        "pageTitle": "Our mission",
+        "pageTitle": "About us",
         "titleZeroWord": "",
         "titleFirstWord": "Create ",
         "titleSecondWord": "impressive ",
@@ -126,7 +126,9 @@
         "allProjects": "All projects",
         "allQuestions": "All questions",
         "share": "Share",
-        "buyMeACoffe": "Treat with coffee"
+        "buyMeACoffe": "Treat with coffee",
+        "learnMore": "Learn more",
+        "goBack": "Back"
     },
     "Footer": {
         "titleFirstWord": "Start ",
@@ -201,5 +203,52 @@
         "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click OK. More information in the  ",
         "policy": "Privacy Policy.",
         "button": "ok"
+    },
+    "AboutPage": {
+        "title": "About ",
+        "titleAccent": "us",
+        "contentItem1": "about the founder",
+        "contentItem2": "how it all started",
+        "contentItem3": "about the team",
+        "contentItem4": "presentation",
+        "missionAccent": "Our mission ",
+        "missionDescription": "is to inspire and develop the team, scale and support customers, and expand partnerships",
+        "goalAccent": "Our goal ",
+        "goalDescription": "is to create amazing digital products together with the perfect team",
+        "quoteP1": "Our team members are equal and valuable regardless of their role, gender, age, orientation, or status. We work in a cohesive and high-quality manner, with respect and support.",
+        "quoteP2": "Team integrity is the key to the success of our projects.",
+        "authorPhotoAlt": "Portrait photo of founder Susanna Salata",
+        "author": "Susanna Salata",
+        "authorsRole": "founder and project manager",
+        "aboutOwnerTitle": "About ",
+        "aboutOwnerTitleAccent": "the founder",
+        "aboutOwnerP1": "Susanna is ambitious, courageous, and highly motivated. Her energy and drive energize her teams and inspire the self-development of everyone who works with her in person. She is a person who always exceeds the expectations of customers, partners, colleagues, and mentees. A strong leader inspires others to follow and listen, which is why Susanna excels in leadership and management. Not afraid of difficult tasks and challenges, she just does what she loves and does it well!",
+        "aboutOwnerP2": "Customers describe her as a professional, responsible, structured, and reliable person. Sometimes she is tough and principled, but always convincing. It is not always easy to work with her, but the result is worth it because it exceeds expectations.",
+        "aboutOwnerP3": "Partners say that her beliefs and values are unwavering, and her will and principles are unbreakable. She knows what she wants, how, when, and on what terms. Her main condition is a win-win partnership, without compromise.",
+        "aboutOwnerP4": "Colleagues emphasize that she is always one step ahead, has answers to all questions, is democratic and tolerant in her management style, and is motivating and inspiring in communication.",
+        "aboutOwnerP5": "Mentees say that she is ruthless! Her consultations and mentoring sessions never give ready-made answers, they encourage you to think and understand yourself, technologies, and tools.",
+        "aboutOwnerPhotoAlt": "The founder is standing on the roof of a tall building and behind her there is a wonderful view of the city",
+        "inceptionTitle": "How it all ",
+        "inceptionTitleAccent": "started",
+        "sectionTeamTitle": "Our values ",
+        "sectionTeamTitleAccent": "and team",
+        "sectionTeamText": "A team is now the most valuable asset in any company. A team is not just a group of people who are going to do something together; these are individuals united by shared values, goals, and beliefs! Our teams are cohesive, independent and highly effective.",
+        "sectionTeamAlt": "The image is divided into twelve equal rectangles, in which are placed the photo cards of all project participants",
+        "learnMoreAboutUs": "Learn more about us",
+        "learnMoreAboutUsTitle": "Learn ",
+        "learnMoreAboutUsTitleAccent": "more about us",
+        "psesentationAlt": "Openspace with people working at computers",
+        "finallyFirstAccent": "Working ",
+        "finallySecond": "with a truly self-organized team, you ",
+        "finallyThirdAccent": "will enjoy ",
+        "finallyFourth": "not only a good work result, but ",
+        "finallyFifthAccent": "also the ",
+        "finallySixth": "process of ",
+        "finallySeventhAccent": "interaction",
+        "finallyEighth": ", regardless of whether you are a team member or a customer."
+    },
+    "Breadcrumbs": {
+        "breadcrumbItemHome": "Home",
+        "breadcrumbItemAbout": "About us"
     }
 }

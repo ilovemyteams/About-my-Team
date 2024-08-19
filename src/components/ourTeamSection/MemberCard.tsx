@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { useLocale } from "next-intl";
 import Link from "next/link";
-import { MemberDataItemType } from "../../mockedData/membersData";
+import { useLocale } from "next-intl";
+
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
-import { SocialLink } from "../shared/SocialLink";
+
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { SocialLink } from "../shared/SocialLink";
 
 const END_OF_URL = -5;
 

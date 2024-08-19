@@ -1,19 +1,20 @@
 "use client";
-import { useEffect } from "react";
-import { useTranslations } from "next-intl";
 import {
     Modal,
+    ModalBody,
     ModalContent,
     ModalHeader,
-    ModalBody,
     useDisclosure,
 } from "@nextui-org/react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useEffect } from "react";
+
 import { IconCloseX } from "../Icons/IconCloseX";
+import { IconHeart } from "../Icons/IconHeart";
+import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
-import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { IconHeart } from "../Icons/IconHeart";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;

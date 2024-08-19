@@ -1,12 +1,14 @@
 "use client";
-import React, { useRef, useEffect, useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
 import { EmblaOptionsType } from "embla-carousel";
+import useEmblaCarousel from "embla-carousel-react";
+import React, { useCallback, useEffect, useRef } from "react";
+
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+
+import { MemberDataItemType } from "../../mockedData/membersData";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { SliderButtons } from "./SliderButtons";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,

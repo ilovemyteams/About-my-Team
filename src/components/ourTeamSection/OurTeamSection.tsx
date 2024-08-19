@@ -1,14 +1,15 @@
 "use client";
 
-import { Section } from "../shared/Section";
-import { Title } from "./Title";
-import { MenuTeamSection } from "./MenuTeamSection";
 import { useEffect, useState } from "react";
-import { MemberCardsList } from "./MemberCardsList";
+
 import { membersData } from "../../mockedData/membersData";
 import { portfolioData } from "../../mockedData/portfolioData";
-import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
+import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
+import { MemberCardsList } from "./MemberCardsList";
+import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
+import { MenuTeamSection } from "./MenuTeamSection";
+import { Title } from "./Title";
 
 //TODO: INITIAL_OPTIONS will be changed on fetch from portfolio data
 const INITIAL_OPTIONS = {

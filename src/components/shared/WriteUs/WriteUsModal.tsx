@@ -1,14 +1,16 @@
 "use client";
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
+
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
+import { useScreenSize } from "@/src/hooks/useScreenSize";
+
 import { Button } from "../Button";
-import { CustomerForm } from "./CustomerForm";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { CustomerForm } from "./CustomerForm";
 import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
-import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
+import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
     isError: boolean;

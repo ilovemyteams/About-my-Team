@@ -1,14 +1,15 @@
-import { JoinUsCard } from "./JoinUsCard";
-import { MemberCard } from "./MemberCard";
-import { MemberDataItemType } from "../../mockedData/membersData";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { Skeleton } from "./Skeleton";
 import {
     DESKXL_CARDS_PER_PAGE,
     PC_CARDS_PER_PAGE,
     TABLET_CARDS_PER_PAGE,
 } from "@/src/constants/cardsPerPage";
+import { SCREEN_NAMES } from "@/src/constants/screenNames";
+import { useScreenSize } from "@/src/hooks/useScreenSize";
+
+import { MemberDataItemType } from "../../mockedData/membersData";
+import { JoinUsCard } from "./JoinUsCard";
+import { MemberCard } from "./MemberCard";
+import { Skeleton } from "./Skeleton";
 
 export const OneSliderCardBigScreen = ({
     membersData,

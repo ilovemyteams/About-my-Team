@@ -1,8 +1,10 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import { useElementWidth } from "@/src/hooks/useElementWidth";
+
 import { ShowMoreButton } from "../ShowMoreButton";
 import { ItemNumber } from "./ItemNumber";
-import { useElementWidth } from "@/src/hooks/useElementWidth";
 
 const TEXT_CONTAINER_HEIGHT = 60;
 

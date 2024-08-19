@@ -1,10 +1,12 @@
 "use client";
-import { useState } from "react";
 import Cookies from "js-cookie";
-import { useEffect, useRef } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Button } from "../shared/Button";
+import { useState } from "react";
+import { useEffect, useRef } from "react";
+
 import { selectedLink } from "@/src/utils/selectedLink";
+
+import { Button } from "../shared/Button";
 
 export const CookiesComponent = () => {
     const [isAccepted, setIsAccepted] = useState(true);

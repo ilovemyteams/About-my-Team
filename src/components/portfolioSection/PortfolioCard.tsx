@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { GoToSiteLink } from "../shared/GoToSiteLink";
 
 export interface PortfolioCardItemProps {

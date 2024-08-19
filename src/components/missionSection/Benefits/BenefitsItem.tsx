@@ -1,4 +1,5 @@
 import React from "react";
+
 import { IconCheck } from "../../shared/Icons/IconCheck";
 
 interface BenefitsItemProps {
