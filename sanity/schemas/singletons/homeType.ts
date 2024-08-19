@@ -25,6 +25,27 @@ export const homeType = defineField({
             group: "editorial",
         }),
         defineField({
+            name: "ctaSectionJoinUs",
+            type: "callToAction",
+            title: "CTA Section Join us",
+            description: "Call to action section Join us",
+            group: "cta",
+        }),
+        defineField({
+            name: "ctaSectionWriteUs",
+            type: "callToAction",
+            title: "CTA Section Write us",
+            description: "Call to action section Write us",
+            group: "cta",
+        }),
+        defineField({
+            name: "ctaSectionOrder",
+            type: "callToAction",
+            title: "CTA Section Order",
+            description: "Call to action section Ready to order",
+            group: "cta",
+        }),
+        defineField({
             name: "seo",
             title: "SEO",
             type: "seo",
