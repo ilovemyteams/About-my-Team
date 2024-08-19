@@ -6,7 +6,7 @@ import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
 import { Section } from "../shared/Section";
 
 const SUSANNAS_PHOTO_LINK =
-    "https://drive.google.com/uc?export=view&id=1DSYQV3h_eU4qa7Zuddsqb3oPl73e161E ";
+    "https://drive.google.com/uc?export=view&id=1DAo5hUD2benS711OALVoLpos9R1qssTC ";
 
 export const AboutTheFounderSection = () => {
     const getTranslation = useTranslations("AboutPage");
