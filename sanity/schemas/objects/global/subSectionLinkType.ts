@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { PreviewItem } from "@/sanity/interfaces/interfaces";
 
 export const subSectionLinkType = defineField({
     name: "subSectionLink",
@@ -17,4 +18,18 @@ export const subSectionLinkType = defineField({
             type: "linkInternal",
         }),
     ],
+    preview: {
+        select: {
+            title: "linkName",
+        },
+        prepare({ title = [] }) {
+            const englisTitle =
+                (title as PreviewItem[]).find(
+                    (item: PreviewItem) => item._key === "en"
+                )?.value || "No title";
+            return {
+                title: englisTitle,
+            };
+        },
+    },
 });
