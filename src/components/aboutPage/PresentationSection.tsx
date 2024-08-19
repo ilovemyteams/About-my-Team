@@ -5,9 +5,6 @@ import { useTranslations } from "next-intl";
 import { IconUp } from "../shared/Icons/IconUp";
 import { Section } from "../shared/Section";
 
-const TEAMTOGETHERPHOTO =
-    "https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb";
-
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
@@ -21,7 +18,7 @@ export const PresentationSection = () => {
             </h2>
             <div className="hidden relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
                 <Image
-                    src={TEAMTOGETHERPHOTO}
+                    src="/images/team.png"
                     alt={getTranslation("psesentationAlt")}
                     width={1200}
                     height={627}
