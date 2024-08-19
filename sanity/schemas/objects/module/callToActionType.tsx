@@ -17,7 +17,7 @@ export const callToActionType = defineField({
         defineField({
             name: "ctaButton",
             title: "CTA Button",
-            type: "ctaButton",
+            type: "button",
             validation: Rule => Rule.required(),
         }),
         defineField({
