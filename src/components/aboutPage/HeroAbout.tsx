@@ -9,6 +9,8 @@ import { localeInURL } from "@/src/utils/localeInURL";
 import { LinkGoBack } from "../shared/LinkGoBack";
 import { Section } from "../shared/Section";
 import { PageContentList } from "./PageContentList";
+import LocaleSwitcher from "../shared/LocaleSwitcher";
+import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({
@@ -18,7 +20,11 @@ export const HeroAbout = () => {
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
-        <Section className="pt-8 tab:pt-12 pc:pt-[100px]">
+        <Section className="pt-8 tab:pt-12 pc:pt-8">
+            <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
+                <LocaleSwitcher />
+                <ThemeSwitcher id="HeroSectionThemeSwitcher" />
+            </div>
             <div className="flex items-center justify-between mb-4 pc:mb-[102px]">
                 <Breadcrumbs
                     separator="/"
@@ -42,7 +48,7 @@ export const HeroAbout = () => {
                 </div>
             </div>
             <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px]">
-                <h1 className="font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl">
+                <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl">
                     {getTranslation("title")}
                     <span className="text-purple-100">
                         {getTranslation("titleAccent")}
