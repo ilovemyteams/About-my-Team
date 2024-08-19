@@ -1,4 +1,4 @@
-import { ComposeIcon, SearchIcon } from "@sanity/icons";
+import { ComposeIcon, SearchIcon, PublishIcon } from "@sanity/icons";
 // Field groups used through schema types
 export const GROUPS = [
     {
@@ -11,6 +11,11 @@ export const GROUPS = [
         name: "seo",
         title: "SEO",
         icon: SearchIcon,
+    },
+    {
+        name: "cta",
+        title: "CTA",
+        icon: PublishIcon,
     },
 ];
 
