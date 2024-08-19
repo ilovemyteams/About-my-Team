@@ -10,7 +10,7 @@ export const PresentationSection = () => {
 
     return (
         <Section id="presentation" className="tab:pt-5 tab:mb-[100px] pc:pt-0">
-            <h2 className="hidden font-caviar text-3xl mb-6 text-center tab:hidden">
+            <h2 className="hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6 text-center tab:hidden">
                 {getTranslation("learnMoreAboutUsTitle")}
                 <span className="text-purple-100">
                     {getTranslation("learnMoreAboutUsTitleAccent")}

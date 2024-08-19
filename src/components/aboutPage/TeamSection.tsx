@@ -9,7 +9,7 @@ export const TeamSection = () => {
 
     return (
         <Section id="aboutteam" className="tab:pt-5">
-            <h2 className="font-caviar text-3xl mb-6 w-[190px] tab:text-4xl tab:mb-8 tab:w-auto pc:text-6xl">
+            <h2 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 w-[190px] tab:text-4xl tab:mb-8 tab:w-auto pc:text-6xl">
                 {getTranslation("sectionTeamTitle")}
                 <span className="text-purple-100">
                     {getTranslation("sectionTeamTitleAccent")}
