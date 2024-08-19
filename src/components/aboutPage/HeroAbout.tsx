@@ -25,12 +25,12 @@ export const HeroAbout = () => {
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
             </div>
-            <div className="flex items-center justify-between mb-4 pc:mb-[102px]">
+            <div className="flex items-center justify-between mb-4 pc:mb-12">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
                         separator: "px-1",
-                        item: "dark:text-purple-50 text-greyLight text-xs dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
+                        item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
                     }}
                 >
                     <BreadcrumbItem href="/">

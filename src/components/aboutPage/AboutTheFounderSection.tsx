@@ -12,7 +12,7 @@ export const AboutTheFounderSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section id="founder" className="tab:pt-5">
+        <Section id="founder" className="tab:pt-5 pc:pt-0">
             <h2 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:text-4xl tab:mb-8 pc:text-6xl pc:mb-10 pc:ml-[51%]">
                 {getTranslation("aboutOwnerTitle")}
                 <span className="text-purple-100">

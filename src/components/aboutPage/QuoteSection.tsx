@@ -19,7 +19,7 @@ export const QuoteSection = () => {
     );
     const SusannasLi = SusannasData?.data.socialLinks.linkedin;
     return (
-        <Section className="pt-8 tab:pt-[89px] pc:pt-5">
+        <Section className="pt-8 tab:pt-5 pc:pt-0">
             <div className="tab:flex tab:flex-row-reverse tab:justify-between tab:gap-10 pc:gap-[91px] tab:items-stretch">
                 <Image
                     src={SUSANNAS_PORTRAIT_LINK}

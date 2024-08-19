@@ -18,7 +18,7 @@ export const PageContentList = () => {
                 <li key={idx}>
                     <Link
                         href={`/${localeInURL(locale)}about#${id}`}
-                        className="text-xs dark:text-purple-50 text-purple-130 dark:pc:hover:text-red pc:hover:text-redLight
+                        className="text-xs pc:text-sm desk:text-base dark:text-purple-50 text-purple-130 dark:pc:hover:text-red pc:hover:text-redLight
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                     >
                         {name.toUpperCase()}
