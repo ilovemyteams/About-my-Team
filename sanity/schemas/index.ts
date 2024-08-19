@@ -32,6 +32,7 @@ import {
     ourMissionHomeType,
 } from "./objects/module/ourMissionHomeType";
 import { sectionTitleType } from "./objects/global/sectionTitleType";
+import { buttonType } from "./objects/global/buttonType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -59,10 +60,6 @@ const objects: ObjectDefinition[] = [
     milestoneType,
     durationType,
     socialLinksType,
-    ourMissionHomeType,
-    sectionTitleType,
-    missioItemType,
-    subSectionLinkType,
     buttonType,
 ];
 

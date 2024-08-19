@@ -25,11 +25,6 @@ export const homeType = defineField({
             group: "editorial",
         }),
         defineField({
-            name: "ourMissionHome",
-            type: "ourMissionHome",
-            group: "editorial",
-        }),
-        defineField({
             name: "seo",
             title: "SEO",
             type: "seo",
