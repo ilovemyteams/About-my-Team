@@ -7,10 +7,10 @@ import { useInView } from "react-intersection-observer";
 import { localeInURL } from "@/src/utils/localeInURL";
 
 import { LinkGoBack } from "../shared/LinkGoBack";
-import { Section } from "../shared/Section";
-import { PageContentList } from "./PageContentList";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
+import { Section } from "../shared/Section";
 import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+import { PageContentList } from "./PageContentList";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({
