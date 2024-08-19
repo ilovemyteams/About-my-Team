@@ -1,4 +1,5 @@
 "use client";
+import { YouTubeEmbed } from "@next/third-parties/google";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -10,12 +11,20 @@ export const PresentationSection = () => {
 
     return (
         <Section id="presentation" className="tab:pt-5 tab:mb-[100px] pc:pt-0">
-            <h2 className="hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6 text-center tab:hidden">
+            <h2 className=" text-purple-200 dark:text-grey font-caviar text-3xl mb-6 text-center tab:hidden">
                 {getTranslation("learnMoreAboutUsTitle")}
                 <span className="text-purple-100">
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
+            <div className="mx-auto w-auto justify-center mb-[80px] tab:mb-[100px] pc:mb-[160px]">
+                <YouTubeEmbed
+                    videoid="l6gElGqS5vM"
+                    params="rel=0"
+                    style="margin-left:auto; margin-right:auto"
+                />
+            </div>
+
             <div className="hidden relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
                 <Image
                     src="/images/team.png"
