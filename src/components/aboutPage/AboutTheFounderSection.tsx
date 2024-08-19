@@ -6,7 +6,7 @@ import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
 import { Section } from "../shared/Section";
 
 const SUSANNAS_PHOTO_LINK =
-    "https://drive.google.com/uc?export=view&id=1DAo5hUD2benS711OALVoLpos9R1qssTC ";
+    "https://drive.google.com/uc?export=view&id=1DAo5hUD2benS711OALVoLpos9R1qssTC";
 
 export const AboutTheFounderSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -20,20 +20,20 @@ export const AboutTheFounderSection = () => {
                 </span>
             </h2>
             <div className="tab:flex tab:gap-10 pc:gap-[90px] tab:mb-6 pc:mb-10 ">
-                <div className="tab:min-w-[322px] max-w-[330px] tab:max-w-full tab:w-[44.7%] tab:aspect-[322/364] pc:aspect-[449/503]">
+                <div className="tab:min-w-[322px] max-w-[330px] tab:max-w-full tab:w-[44.7%] tab:aspect-[322/364] pc:aspect-[449/2]">
                     <Image
                         src={SUSANNAS_PHOTO_LINK}
                         alt={getTranslation("aboutOwnerPhotoAlt")}
                         width={449}
-                        height={503}
+                        height={502}
                         className="mb-6 mx-auto tab:mx-0 tab:mb-0 object-cover tab:min-w-[322px]  w-full 
-                                tab:aspect-[322/364] pc:aspect-[449/503] pc:min-w-[449px]"
+                                tab:aspect-[322/364] pc:aspect-[449/502] pc:min-w-[449px]"
                     />
                 </div>
-                <div className="tab:w-[50%] tab:min-h-[360px] tab:aspect-[360/364] pc:min-h-[503px] pc:aspect-[539/503] tab:object-cover tab:border-y dark:border-purple-stroke border-purple-strokeLight">
+                <div className="tab:w-[50%] tab:min-h-[360px] tab:aspect-[360/364] pc:min-h-[502px] pc:aspect-[539/502] tab:object-cover tab:border-y dark:border-purple-stroke border-purple-strokeLight">
                     <ScrollShadow
                         hideScrollBar
-                        className="tab:py-4 pc:py-5 tab:min-h-[360px]  tab:aspect-[360/364] pc:min-h-[503px] pc:max-w-[668px] pc:aspect-[539/503] tab:object-cover w-full text-sm tab:text-base tab:min-w-[360px] pc:min-w-[539px]  pc:w-[42vw] pc:text-xl  tab:overflow-scroll"
+                        className="tab:py-4 pc:py-5 tab:min-h-[360px]  tab:aspect-[360/364] pc:min-h-[502px] pc:max-w-[668px] pc:aspect-[539/502] tab:object-cover w-full text-sm tab:text-base tab:min-w-[360px] pc:min-w-[539px]  pc:w-[42vw] pc:text-xl  tab:overflow-scroll"
                     >
                         <p className="mb-6 pc:mb-10">
                             {getTranslation("aboutOwnerP1")}
