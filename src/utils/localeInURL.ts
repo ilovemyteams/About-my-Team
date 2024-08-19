@@ -4,3 +4,10 @@ export const localeInURL = (locale: string) => {
     }
     return `${locale}/`;
 };
+
+export const switchLocaleInURL = (locale: string) => {
+    if (locale === "ua") {
+        return "";
+    }
+    return locale;
+};
