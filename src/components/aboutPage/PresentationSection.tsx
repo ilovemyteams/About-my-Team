@@ -24,11 +24,7 @@ export const PresentationSection = () => {
                     style="margin-left:auto; margin-right:auto"
                 />
 
-                <div className="absolute z-10 inset-0 flex justify-center items-center">
-                    <div className="relative w-[720px]">
-                        <ImageWithAnimation />
-                    </div>
-                </div>
+                <ImageWithAnimation />
             </div>
             <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] mx-auto">
                 <span className="text-purple-100">
