@@ -31,7 +31,6 @@ import {
     missioItemType,
     ourMissionHomeType,
 } from "./objects/module/ourMissionHomeType";
-import { sectionTitleType } from "./objects/global/sectionTitleType";
 import { subSectionLinkType } from "./objects/global/subSectionLinkType";
 
 import { buttonType } from "./objects/global/buttonType";
@@ -65,7 +64,6 @@ const objects: ObjectDefinition[] = [
     buttonType,
     missioItemType,
     ourMissionHomeType,
-    sectionTitleType,
     subSectionLinkType,
 ];
 
@@ -75,8 +73,13 @@ const arrays: ArrayDefinition[] = [menuLinksType];
 
 import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 import { portableTextType } from "./portableText/portableTextType";
+import { portableTextColorType } from "./portableText/portableTextColorType";
 
-const blocks: ArrayDefinition[] = [portableTextType, portableTextSimpleType];
+const blocks: ArrayDefinition[] = [
+    portableTextType,
+    portableTextSimpleType,
+    portableTextColorType,
+];
 
 import { colorThemeType } from "./documents/colorTheme";
 import { pageType } from "./documents/pageType";

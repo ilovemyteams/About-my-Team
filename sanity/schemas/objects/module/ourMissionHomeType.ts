@@ -37,8 +37,8 @@ export const ourMissionHomeType = defineField({
     type: "object",
     fields: [
         defineField({
-            name: "sectionTitleType",
-            type: "sectionTitleType",
+            name: "sectionTitle",
+            type: "internationalizedArrayPortableTextColor",
             title: "Title of the section. Please, please choose proper color of the text for each language.",
         }),
         defineField({
