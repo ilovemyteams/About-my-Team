@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { IconUp } from "../shared/Icons/IconUp";
 
@@ -10,15 +10,21 @@ const ImageWithAnimation = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [contentHidden, setContentHidden] = useState(false);
     const [pointerEvents, setPointerEvents] = useState<"auto" | "none">("auto");
+    const [imageVisible, setImageVisible] = useState(true);
 
     const handleClick = () => {
         setContentHidden(true);
+        setImageVisible(false);
         setTimeout(() => {
             setIsClicked(true);
             setPointerEvents("none");
         }, 500);
     };
-
+    useEffect(() => {
+        if (isClicked) {
+            setImageVisible(false);
+        }
+    }, [isClicked]);
     const getTranslation = useTranslations("AboutPage");
 
     const fragments = Array.from({ length: 16 });
@@ -31,18 +37,18 @@ const ImageWithAnimation = () => {
             <div className="relative w-[720px]">
                 <div className="relative mx-auto min-w-[288px] max-w-[720px] min-h-[162px] max-h-[405px] aspect-[288/162] overflow-hidden">
                     {!isClicked ? (
-                        <motion.div className="relative dark:bg-PresentationGradient bg-PresentationGradientLigth min-w-[288px] max-w-[720px] min-h-[162px] max-h-[405px] aspect-[288/162] cursor-pointer">
+                        <motion.div className="relative dark:bg-PresentationGradient bg-PresentationGradientLigth min-w-[288px] max-w-[720px] min-h-[162px] max-h-[405px] aspect-[288/162] cursor-pointer ">
                             <Image
                                 src="/images/imageForSharing.jpeg"
                                 alt="Presentation"
                                 layout="fill"
                                 objectFit="cover"
-                                className="relative z-[-1] aspect-[288/162]"
+                                className={`relative z-[-1] aspect-[288/162] ${imageVisible ? "opacity-100 " : "opacity-0 "} transition-opacity duration-1000`}
                             />
                             <motion.p
                                 className="hidden text-purple-200 dark:text-grey tab:block tab:absolute z-20 top-[109px]  text-4xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap"
                                 animate={{ opacity: contentHidden ? 0 : 1 }}
-                                transition={{ duration: 0.5 }}
+                                transition={{ duration: 1 }}
                             >
                                 {getTranslation("learnMoreAboutUs")}
                             </motion.p>
@@ -54,7 +60,7 @@ const ImageWithAnimation = () => {
                 after:bg-opacity-40 after:blur-[2px] outline-none rotate-90 dark:pc:hover:text-red pc:hover:text-redLight
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
                                 animate={{ opacity: contentHidden ? 0 : 1 }}
-                                transition={{ duration: 0.5 }}
+                                transition={{ duration: 1 }}
                                 onClick={handleClick}
                             >
                                 <IconUp />
@@ -65,14 +71,17 @@ const ImageWithAnimation = () => {
                             <motion.div
                                 key={index}
                                 className="absolute w-1/4 h-1/4"
-                                initial={{ x: 0, y: 0, opacity: 1 }}
+                                initial={{ opacity: 1 }} // Починає з непрозорості
                                 animate={{
-                                    opacity: 0,
+                                    opacity: 0, // Поступово стає невидимим
                                     x: (Math.random() - 0.5) * 600,
                                     y: (Math.random() - 0.5) * 600,
                                     rotate: Math.random() * 360,
                                 }}
-                                transition={{ duration: 3 }}
+                                transition={{
+                                    duration: 4,
+                                    delay: 0.3, // Затримка перед початком анімації
+                                }}
                                 style={{
                                     backgroundImage: `url('/images/team.png')`,
                                     backgroundSize: "400% 400%",
