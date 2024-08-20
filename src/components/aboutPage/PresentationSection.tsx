@@ -17,7 +17,7 @@ export const PresentationSection = () => {
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="relative  mx-auto w-[720px] mb-[80px] tab:mb-[100px] pc:mb-[160px]">
+            <div className="relative  mx-auto max-w-[720px] mb-[80px] tab:mb-[100px] pc:mb-[160px]">
                 <YouTubeEmbed
                     videoid="px98Nw4r484"
                     params="rel=0"
