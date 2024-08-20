@@ -7,19 +7,33 @@ export const heroType = defineField({
     fields: [
         defineField({
             name: "title",
-            type: "text",
-            rows: 3,
+            title: "Hero title",
+            type: "internationalizedArrayText",
+            validation: Rule => Rule.required(),
         }),
         defineField({
-            name: "description",
-            type: "text",
-            rows: 3,
+            name: "buttonJoinUS",
+            title: "Button Join Us",
+            type: "button",
+            validation: Rule => Rule.required(),
         }),
         defineField({
-            name: "link",
-            type: "array",
-            of: [{ type: "linkInternal" }, { type: "linkExternal" }],
-            validation: Rule => Rule.max(1),
+            name: "buttonWriteUs",
+            title: "Button Write Us",
+            type: "button",
+            validation: Rule => Rule.required(),
+        }),
+        defineField({
+            name: "buttonBuyMeCoffee",
+            title: "Button Buy me a coffee",
+            type: "button",
+            validation: Rule => Rule.required(),
+        }),
+        defineField({
+            name: "buttonPortfolio",
+            title: "Button Portfolio",
+            type: "button",
+            validation: Rule => Rule.required(),
         }),
     ],
 });
