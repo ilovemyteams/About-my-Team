@@ -85,11 +85,11 @@
         "fourthStepTitle": "Start of the development",
         "fourthStepText": "After we complete the work, we will give you all the materials that were developed for you",
         "fifthStepTitle": "Testing of the website",
-        "fifthStepText": "After the stage of testing is successfully passed, the resource is transferred to the customer's domain and the hosting is connected",
+        "fifthStepText": "After the successful completion of the testing phase, the resource is transferred to the client's domain and integrated with the hosting",
         "sixthStepTitle": "Transfer of the website",
-        "sixthStepText": "After the testing is finished and all the services are connected, the resource with its permissions is given to the customer",
+        "sixthStepText": "After testing and integration of all services, the resource, along with all rights to it, is transferred to the client",
         "seventhStepTitle": "Support",
-        "seventhStepText": "While using the web-site after its start, the customer can come across with some mistakes in the pages' display or others. In this situation the customer can address the team to eliminate the mistakes"
+        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them"
     },
     "HireUs": {
         "pageTitle": "connection",
