@@ -8,7 +8,7 @@ export const aboutUsItemType = defineField({
     type: "object",
     fields: [
         defineField({
-            name: "About us",
+            name: "AboutUs",
             description: "About us short description",
             type: "internationalizedArrayString",
             title: "About us Item",
