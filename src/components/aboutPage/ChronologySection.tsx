@@ -9,8 +9,8 @@ export const ChronologySection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section id="chronology" className="tab:pt-5 pc:pt-0">
-            <h2 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:text-4xl tab:mb-9 pc:text-6xl">
+        <Section id="chronology" className="tab:pt-5 pc:pt-0 desk:mt-5">
+            <h2 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:text-4xl tab:mb-9 desk:mb-10 pc:text-6xl desk:text-7xl">
                 {getTranslation("inceptionTitle")}
                 <span className="text-purple-100">
                     {getTranslation("inceptionTitleAccent")}

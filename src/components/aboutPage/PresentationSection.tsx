@@ -9,7 +9,10 @@ export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section id="presentation" className="tab:pt-5 tab:mb-[100px] pc:pt-0">
+        <Section
+            id="presentation"
+            className="tab:pt-5 tab:mb-[100px] pc:pt-0 desk:mt-5"
+        >
             <h2 className="hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6 text-center tab:hidden">
                 {getTranslation("learnMoreAboutUsTitle")}
                 <span className="text-purple-100">
@@ -39,7 +42,7 @@ export const PresentationSection = () => {
                     <IconUp />
                 </button>
             </div>
-            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] mx-auto">
+            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] desk:w-[1113px] mx-auto">
                 <span className="text-purple-100">
                     {getTranslation("finallyFirstAccent")}
                 </span>

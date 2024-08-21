@@ -25,7 +25,7 @@ export const HeroAbout = () => {
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
             </div>
-            <div className="flex items-center justify-between mb-4 pc:mb-12">
+            <div className="flex items-center justify-between mb-4 pc:mb-12 desk:mb-[52px]">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -47,8 +47,8 @@ export const HeroAbout = () => {
                     <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
                 </div>
             </div>
-            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px]">
-                <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl">
+            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">
+                <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl desk:text-7xl">
                     {getTranslation("title")}
                     <span className="text-purple-100">
                         {getTranslation("titleAccent")}
