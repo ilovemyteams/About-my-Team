@@ -37,6 +37,13 @@ export const aboutUsHomeSectionType = defineField({
     type: "object",
     fields: [
         defineField({
+            name: "sectionId",
+            type: "string",
+            title: "Section Id",
+            description: "Unique id of the section. It is used for navigation.",
+            validation: Rule => Rule.required(),
+        }),
+        defineField({
             name: "sectionTitle",
             type: "internationalizedArrayPortableColorTitle",
             title: "Title of the section. Please, please choose proper color of the text for each language.",
