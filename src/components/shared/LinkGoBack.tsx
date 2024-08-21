@@ -19,7 +19,7 @@ export const LinkGoBack = ({
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight ${className}`}
         >
             <IconGoBack />
-            <p className="border-b-[2px] border-current h-[22px]">
+            <p className="border-b border-current h-[17px] tab:h-[22px]">
                 {getTranslation("goBack")}
             </p>
         </Link>
