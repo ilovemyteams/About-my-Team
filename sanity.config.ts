@@ -49,7 +49,7 @@ export default defineConfig({
                 "string",
                 "text",
                 "portableTextSimple",
-                "portableTextColor",
+                "portableColorTitle",
             ],
         }),
         singletonPlugin(singletonPagesType),

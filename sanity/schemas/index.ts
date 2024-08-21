@@ -28,10 +28,9 @@ import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
 import {
-    missioItemType,
-    ourMissionHomeType,
-} from "./objects/module/ourMissionHomeType";
-import { subSectionLinkType } from "./objects/global/subSectionLinkType";
+    aboutUsItemType,
+    aboutUsHomeSectionType,
+} from "./objects/module/aboutUsHomeType";
 
 import { buttonType } from "./objects/global/buttonType";
 // Objects used as annotations must be imported first
@@ -62,9 +61,8 @@ const objects: ObjectDefinition[] = [
     durationType,
     socialLinksType,
     buttonType,
-    missioItemType,
-    ourMissionHomeType,
-    subSectionLinkType,
+    aboutUsItemType,
+    aboutUsHomeSectionType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -73,12 +71,12 @@ const arrays: ArrayDefinition[] = [menuLinksType];
 
 import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 import { portableTextType } from "./portableText/portableTextType";
-import { portableTextColorType } from "./portableText/portableTextColorType";
+import { portableColorTitleType } from "./portableText/portableColorTitleType";
 
 const blocks: ArrayDefinition[] = [
     portableTextType,
     portableTextSimpleType,
-    portableTextColorType,
+    portableColorTitleType,
 ];
 
 import { colorThemeType } from "./documents/colorTheme";

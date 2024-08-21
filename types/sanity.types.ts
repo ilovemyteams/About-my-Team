@@ -453,19 +453,17 @@ export type PortableText = Array<
       } & Instagram)
 >;
 
-export type PortableTextColor = Array<{
+export type PortableColorTitle = Array<{
     children?: Array<{
         marks?: Array<"purple" | string>;
         text?: string;
         _type: "span";
         _key: string;
     }>;
-    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
-    listItem?: "bullet" | "number";
+    style?: "normal";
     markDefs?: Array<{
         _key: string;
     }>;
-    level?: number;
     _type: "block";
     _key: string;
 }>;
@@ -747,7 +745,7 @@ export type AllSanitySchemaTypes =
     | AccordionGroup
     | PortableTextSimple
     | PortableText
-    | PortableTextColor
+    | PortableColorTitle
     | LinkInternal
     | LinkExternal
     | LinkEmail

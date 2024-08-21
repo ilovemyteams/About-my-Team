@@ -25,8 +25,8 @@ export const homeType = defineField({
             group: "editorial",
         }),
         defineField({
-            name: "ourMissionHome",
-            type: "ourMissionHome",
+            name: "aboutUsHomeSection",
+            type: "aboutUsHomeSection",
             group: "editorial",
         }),
         defineField({

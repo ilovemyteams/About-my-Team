@@ -2,21 +2,21 @@ import { defineField, defineArrayMember } from "sanity";
 import { CheckmarkIcon } from "@sanity/icons";
 import { PreviewItem } from "@/sanity/interfaces/interfaces";
 
-export const missioItemType = defineField({
-    name: "missionItemDescription",
-    title: "Mission Item",
+export const aboutUsItemType = defineField({
+    name: "aboutUsItem",
+    title: "About us Item",
     type: "object",
     fields: [
         defineField({
-            name: "Mission",
-            description: "Mission short description",
+            name: "About us",
+            description: "About us short description",
             type: "internationalizedArrayString",
-            title: "Mission item",
+            title: "About us Item",
         }),
     ],
     preview: {
         select: {
-            title: "Mission",
+            title: "About us",
         },
         prepare({ title = [] }) {
             const englisTitle =
@@ -31,32 +31,25 @@ export const missioItemType = defineField({
     },
 });
 
-export const ourMissionHomeType = defineField({
-    name: "ourMissionHome",
-    title: "Our Missions Section",
+export const aboutUsHomeSectionType = defineField({
+    name: "aboutUsHomeSection",
+    title: "About us Section",
     type: "object",
     fields: [
         defineField({
             name: "sectionTitle",
-            type: "internationalizedArrayPortableTextColor",
+            type: "internationalizedArrayPortableColorTitle",
             title: "Title of the section. Please, please choose proper color of the text for each language.",
         }),
         defineField({
             name: "shortDescription",
             type: "array",
-            of: [defineArrayMember({ type: "missionItemDescription" })],
+            of: [defineArrayMember({ type: "aboutUsItem" })],
         }),
         defineField({
             name: "learnMoreButton",
             type: "button",
             title: "Learn More Button",
-        }),
-
-        defineField({
-            name: "internalLinks",
-            type: "array",
-            title: "List of Uppercase titles (link is optional)",
-            of: [defineArrayMember({ type: "subSectionLink" })],
         }),
     ],
 });
