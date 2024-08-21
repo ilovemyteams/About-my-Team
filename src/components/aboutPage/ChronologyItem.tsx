@@ -12,7 +12,7 @@ export const ChronologyItem = ({ data }: ChronologyItemProp) => {
     return (
         <>
             <div className="flex font-caviar items-center justify-between">
-                <h5 className="text-xlb  text-purple-200 dark:text-grey">
+                <h5 className="text-xlb  text-purple-200 dark:text-[#FBF8FF]">
                     {data[locale as LocaleType]?.title}
                 </h5>
                 <p className="text-[36px] leading-[45px] pc:text-6xl font-bold dark:text-purple-stroke text-purple-strokeLight">
