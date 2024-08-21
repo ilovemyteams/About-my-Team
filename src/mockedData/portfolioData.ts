@@ -6,6 +6,7 @@ type PortfolioDataItemTranslation = {
 };
 type DataType = {
     id: string;
+    siteLink?: string;
     image: string;
     video?: string;
     implementations: string[];
@@ -21,6 +22,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "1",
+            siteLink: "ilovemyteam.online",
             image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
             implementations: [
                 "Idea",
@@ -50,6 +52,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "2",
+            siteLink: "batatfarm.com",
             image: "https://drive.google.com/uc?export=view&id=1-zVmDm8fSgCwP3TzDVQM_Hu08vCbJi2A",
             implementations: [
                 "Idea",
@@ -79,6 +82,7 @@ export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
             id: "3",
+            siteLink: "theatermag.com.ua",
             image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             implementations: [
                 "Idea",
@@ -104,6 +108,32 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Ukrainian theater",
             siteView: "website",
             description: "descriptionId3",
+        },
+    },
+    {
+        data: {
+            id: "4",
+            siteLink: "protection.in.ua",
+            image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
+            implementations: ["Design", "Development", "Testing", "Support"],
+        },
+        ua: {
+            name: "Міграційний Адвокат",
+            siteView: "вебсайт",
+            description:
+                "Сайт пропонує юридичні послуги в сфері міграційного права, включаючи захист прав громадян у Державній міграційній службі України та консультації з питань громадянства. Тут можна знайти інформацію про адвокатів, їхні послуги та контакти для зв'язку.",
+        },
+        en: {
+            name: "Migration Lawyer",
+            siteView: "website",
+            description:
+                "The website offers legal services in the field of migration law, including the protection of citizens' rights in the State Migration Service of Ukraine and consultations on citizenship issues. Here you can find information about lawyers, their services, and contact details.",
+        },
+        pl: {
+            name: "Prawnik imigracyjny",
+            siteView: "website",
+            description:
+                "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",
         },
     },
 ];

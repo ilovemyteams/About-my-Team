@@ -11,7 +11,7 @@ export const IconHeart = ({ className }: IconProps) => {
             className={className}
             aria-label="heart icon"
         >
-            <g opacity="0.1">
+            <g opacity="0.4">
                 <path
                     d="M30.707 15.2269H15.3004L33.9405 2.2477L30.707 15.2269Z"
                     fill="#EDE2FF"
