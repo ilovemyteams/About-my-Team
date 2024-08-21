@@ -3,6 +3,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
+import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
 
 import { categoryNames } from "../../mockedData/categoryNames";
@@ -34,6 +36,7 @@ export const MenuTeamSection = ({
     const getTranslation = useTranslations("OurTeam");
     const router = useRouter();
     const searchParams = useSearchParams();
+    const { setSlideId } = usePreviousURL();
 
     useEffect(() => {
         const option = searchParams.get("option");
@@ -84,7 +87,10 @@ export const MenuTeamSection = ({
         };
         setSelectedOption(selected);
         setIsOpen(false);
-        router.push(`/${locale}?option=${projectId}#team`);
+        setSlideId(0);
+        router.push(
+            `/${locale}?option=${projectId}&slideId=${DEFAULT_SLIDE_ID}#team`
+        );
     };
 
     const handleOptionSelectCategory = (category: СategoryNamesProp) => {
@@ -95,7 +101,10 @@ export const MenuTeamSection = ({
         };
         setSelectedOption(selected);
         setIsOpen(false);
-        router.push(`/${locale}?option=${category.categoryName}#team`);
+        setSlideId(0);
+        router.push(
+            `/${locale}?option=${category.categoryName}&slideId=${DEFAULT_SLIDE_ID}#team`
+        );
     };
 
     const toggleList = () => {

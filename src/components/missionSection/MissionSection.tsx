@@ -1,20 +1,30 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
+import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
-import { WriteUs } from "../shared/WriteUs/WriteUs";
+
 import { BenefitsList } from "./Benefits/BenefitsList";
-import { StagesList } from "./StagesList";
+
 import { MissionTitle } from "./Title/MissionTitle";
 
 export const MissionSection = () => {
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
+    const getTranslation = useTranslations("Buttons");
+    const locale = useLocale();
+    const router = useRouter();
+
+    const handleButtonClick = () => {
+        router.push(`/${locale}/about`);
+    };
 
     return (
-        <Section id="mission" className="tab:min-h-[505px]">
+        <Section id="aboutus" className="tab:min-h-[505px]">
             <div ref={ref}>
                 <MissionTitle />
                 <div className="flex justify-around items-center">
@@ -34,10 +44,11 @@ export const MissionSection = () => {
                     />
                     <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] w-full tab:w-[48%] pc:w-[45%]">
                         <BenefitsList />
-                        <WriteUs />
+                        <Button onClick={handleButtonClick}>
+                            {getTranslation("learnMore")}
+                        </Button>
                     </div>
                 </div>
-                <StagesList />
             </div>
         </Section>
     );
