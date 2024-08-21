@@ -40,7 +40,7 @@ export const QuoteSection = () => {
                     </div>
                     <div className="flex justify-between items-center border-y dark:border-purple-stroke border-purple-strokeLight py-2">
                         <div>
-                            <p className="text-purple-200 dark:text-[#FBF8FF] font-caviar text-baseb pc:text-3xl">
+                            <p className="text-purple-200 dark:text-white-200 font-caviar text-baseb pc:text-3xl">
                                 {getTranslation("author")}
                             </p>
                             <p className="text-xs pc:text-base">
