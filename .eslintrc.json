@@ -29,7 +29,9 @@
         "prefer-const": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "@typescript-eslint/no-explicit-any": "error"
+        "@typescript-eslint/no-explicit-any": "error",
+        "simple-import-sort/imports": "warn",
+        "simple-import-sort/exports": "warn"
     },
     "root": true
 }
