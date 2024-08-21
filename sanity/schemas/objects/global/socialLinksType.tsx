@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+
 import { SOCIAL_LINKS } from "@/sanity/constants";
 
 export const socialLinksType = defineField({

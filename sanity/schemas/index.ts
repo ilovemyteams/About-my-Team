@@ -5,6 +5,7 @@ import {
     type SchemaTypeDefinition,
 } from "sanity";
 
+import { buttonType } from "./objects/global/buttonType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
 import { menuType } from "./objects/global/menuType";
@@ -27,7 +28,6 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
-import { buttonType } from "./objects/global/buttonType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,

@@ -6,9 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
-
 import { BenefitsList } from "./Benefits/BenefitsList";
-
 import { MissionTitle } from "./Title/MissionTitle";
 
 export const MissionSection = () => {

@@ -1,7 +1,6 @@
+import { loadHomePage } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
-import { loadHomePage } from "@/sanity/utils/loadQuery";
-
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";

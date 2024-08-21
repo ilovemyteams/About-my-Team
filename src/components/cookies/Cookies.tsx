@@ -1,10 +1,9 @@
 "use client";
-import { useState } from "react";
-
-import { useLocale, useTranslations } from "next-intl";
-
 import Cookies from "js-cookie";
+import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
 import { useEffect, useRef } from "react";
+
 import { selectedLink } from "@/src/utils/selectedLink";
 
 import { Button } from "../shared/Button";

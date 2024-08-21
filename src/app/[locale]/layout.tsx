@@ -4,14 +4,13 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
-
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
-
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
