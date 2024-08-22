@@ -12,7 +12,13 @@ export const TeamSection = () => {
 
     return (
         <Section id="aboutteam" className="tab:pt-5 pc:pt-0 desk:mt-5">
-            <h2 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 w-[190px] tab:text-4xl tab:mb-8 desk:mb-10 tab:w-auto pc:text-6xl desk:text-7xl">
+            <h2 className=" tab:hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6">
+                {getTranslation("sectionTeamTitle")} <br />
+                <span className="text-purple-100">
+                    {getTranslation("sectionTeamTitleAccent")}
+                </span>
+            </h2>
+            <h2 className=" hidden tab:block text-purple-200 dark:text-grey font-caviar tab:text-4xl tab:mb-8 desk:mb-10 tab:w-auto pc:text-6xl desk:text-7xl">
                 {getTranslation("sectionTeamTitle")}
                 <span className="text-purple-100">
                     {getTranslation("sectionTeamTitleAccent")}
