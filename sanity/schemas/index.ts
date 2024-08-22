@@ -31,8 +31,8 @@ import {
     aboutUsItemType,
     aboutUsHomeSectionType,
 } from "./objects/module/aboutUsHomeType";
-
 import { buttonType } from "./objects/global/buttonType";
+import { anchorLinkType } from "./objects/global/anchorLinkType";
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -63,6 +63,7 @@ const objects: ObjectDefinition[] = [
     buttonType,
     aboutUsItemType,
     aboutUsHomeSectionType,
+    anchorLinkType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";

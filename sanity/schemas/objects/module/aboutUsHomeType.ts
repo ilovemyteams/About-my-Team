@@ -38,9 +38,8 @@ export const aboutUsHomeSectionType = defineField({
     fields: [
         defineField({
             name: "sectionId",
-            type: "string",
-            title: "Section Id",
-            description: "Unique id of the section. It is used for navigation.",
+            type: "anchorLink",
+            title: "Anchor Link",
             validation: Rule => Rule.required(),
         }),
         defineField({
