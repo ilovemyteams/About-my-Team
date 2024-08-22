@@ -33,10 +33,10 @@ export const HeroAbout = () => {
                         item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
                     }}
                 >
-                    <BreadcrumbItem href="/">
+                    <BreadcrumbItem href={`/${localeInURL(locale)}`}>
                         {getTranslationBreadcrumbs("breadcrumbItemHome")}
                     </BreadcrumbItem>
-                    <BreadcrumbItem href="/about">
+                    <BreadcrumbItem>
                         <p className="dark:text-red text-redLight">
                             {" "}
                             {getTranslationBreadcrumbs("breadcrumbItemAbout")}
