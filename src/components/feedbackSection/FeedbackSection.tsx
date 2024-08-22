@@ -1,10 +1,11 @@
 import { EmblaOptionsType } from "embla-carousel";
-import { Section } from "../shared/Section";
-import { FeedbackTitle } from "./Title/FeedbackTitle";
+
 import { feedbackData } from "../../mockedData/feedbackData";
-import { FeedbackSlider } from "./FeedbackSlider";
+import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
+import { FeedbackSlider } from "./FeedbackSlider";
 import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
+import { FeedbackTitle } from "./Title/FeedbackTitle";
 
 export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };

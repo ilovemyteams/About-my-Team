@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
-import { LocaleType } from "@/types/LocaleType";
-import { SharePopover } from "../../shared/SharePopover";
+
 import { MemberDataItemType } from "@/src/mockedData/membersData";
-import { MemberSocialLinks } from "./MemberSocialLinks";
-import { MemberProjectExperience } from "./MemberProjectExperience";
-import { MemberTools } from "./MemberTools";
-import { MemberLiSquare } from "./MemberLiSquare";
+import { LocaleType } from "@/types/LocaleType";
+
 import { IconProfile } from "../../shared/Icons/IconProfile";
+import { SharePopover } from "../../shared/SharePopover";
+import { MemberLiSquare } from "./MemberLiSquare";
+import { MemberProjectExperience } from "./MemberProjectExperience";
+import { MemberSocialLinks } from "./MemberSocialLinks";
+import { MemberTools } from "./MemberTools";
 
 interface MemberCardModalBodyProp {
     data: MemberDataItemType;

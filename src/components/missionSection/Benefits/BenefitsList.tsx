@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { BenefitsItem } from "./BenefitsItem";
 
 export const BenefitsList = () => {

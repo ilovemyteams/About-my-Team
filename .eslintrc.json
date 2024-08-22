@@ -13,7 +13,8 @@
         "react-hooks",
         "unused-imports",
         "prettier",
-        "jest"
+        "jest",
+        "simple-import-sort"
     ],
     "parser": "@typescript-eslint/parser",
     "rules": {
@@ -24,10 +25,13 @@
             }
         ],
         "@typescript-eslint/no-unused-vars": "error",
+        "unused-imports/no-unused-imports": "error",
         "prefer-const": "error",
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
-        "@typescript-eslint/no-explicit-any": "error"
+        "@typescript-eslint/no-explicit-any": "error",
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error"
     },
     "root": true
 }

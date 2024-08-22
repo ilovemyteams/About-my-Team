@@ -1,11 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
-import { LogoLink } from "../LogoLink";
-import { BurgerMenuButton } from "../BurgerMenuButton";
-import { SocialLinksList } from "../SocialLinks/SocialLinksList";
-import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
+import { useEffect, useState } from "react";
+
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { BurgerMenuButton } from "../BurgerMenuButton";
+import { LogoLink } from "../LogoLink";
+import { SocialLinksList } from "../SocialLinks/SocialLinksList";
+import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);

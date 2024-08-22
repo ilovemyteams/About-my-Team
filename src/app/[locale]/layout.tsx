@@ -1,16 +1,20 @@
-import React from "react";
-import { getTranslations } from "next-intl/server";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import localFont from "next/font/local";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import { Providers } from "./providers";
-import { Header } from "@/src/components/header/Header";
-import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
-import { Footer } from "@/src/components/footer/Footer";
-import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
-import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import "./globals.css";
+
+import { GoogleAnalytics } from "@next/third-parties/google";
+import localFont from "next/font/local";
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import React from "react";
+
+import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
+import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { CookiesComponent } from "@/src/components/cookies/Cookies";
+import { Footer } from "@/src/components/footer/Footer";
+import { Header } from "@/src/components/header/Header";
+import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+
+import { Providers } from "./providers";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
@@ -111,7 +115,10 @@ export default function LocaleLayout({
                             <Header />
                             <main>
                                 {modal}
-                                {children}
+                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                    <BackgroundFigures />
+                                    {children}
+                                </div>
                             </main>
                             <Footer />
                             <ScrollToTopButton />

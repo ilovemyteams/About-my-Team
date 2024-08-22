@@ -1,5 +1,6 @@
-import { selectedLink } from "@/src/utils/selectedLink";
 import { useLocale, useTranslations } from "next-intl";
+
+import { selectedLink } from "@/src/utils/selectedLink";
 
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");

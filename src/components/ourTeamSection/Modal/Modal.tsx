@@ -1,23 +1,29 @@
 "use client";
-import React, { useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
+import React, { useEffect } from "react";
+
+import { localeInURL } from "@/src/utils/localeInURL";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+
+import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { BgImagesDesktop } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesMobile";
 import { BgImagesTablet } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesTablet";
-import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 export const Modal = ({ children }: { children: React.ReactNode }) => {
-    const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
     const { previousURL } = usePreviousURL();
+    const locale = useLocale();
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
-            if (event.key === "Escape" && pathname !== `/${locale}`) {
-                router.push(previousURL || `/${locale}#team`);
+            if (
+                event.key === "Escape" &&
+                pathname !== `/${localeInURL(locale)}`
+            ) {
+                router.push(previousURL || `/${localeInURL(locale)}#team`);
             }
         };
 
@@ -25,17 +31,16 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
         return () => {
             document.removeEventListener("keydown", handleEsc);
         };
-    }, [locale, pathname, router, previousURL]);
+    }, [pathname, router, previousURL, locale]);
 
-    if (pathname === `/${locale}`) return null;
+    if (pathname === `/${localeInURL(locale)}`) return null;
 
     const handleClose = () => {
-        router.push(previousURL || `/${locale}#team`);
+        router.push(previousURL || `/${localeInURL(locale)}#team`);
     };
     const stopPropagation = (event: React.MouseEvent) => {
         event.stopPropagation();
     };
-
     return (
         <div>
             <div

@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import Image from "next/image";
 
 interface PortfolioCardProps {
     data: { name: string; siteView: string };

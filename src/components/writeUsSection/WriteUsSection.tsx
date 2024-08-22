@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
-import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
+
 import { SectionCTA } from "../shared/SectionCTA";
+import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const WriteUsSection = () => {

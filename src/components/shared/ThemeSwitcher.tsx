@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
 import Cookies from "js-cookie";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function ThemeSwitcher({ id }: { id: string }) {
     const { setTheme, resolvedTheme } = useTheme();

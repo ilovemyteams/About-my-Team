@@ -24,7 +24,7 @@
     },
 
     "Mission": {
-        "pageTitle": "Nasza misja",
+        "pageTitle": "O nas",
         "titleZeroWord": "Tworzenie ",
         "titleFirstWord": "imponujących ",
         "titleSecondWord": "",
@@ -32,7 +32,7 @@
         "titleFourthWord": "cyfrowych produktów ",
         "titleFifthWord": " ",
         "titleOtherWords": "z doskonałym zespołem",
-        "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem.",
+        "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem",
         "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
         "thirdBenefit": "Zaoszczędzisz czas i pieniądze - od początku jesteśmy bardzo wydajnym zespołem",
         "consultations": "konsultacje",
@@ -87,11 +87,11 @@
         "fourthStepTitle": "Początek rozwoju",
         "fourthStepText": "Po zakończeniu prac oddajemy Ci wszystkie materiały, które dla Ciebie opracowaliśmy",
         "fifthStepTitle": "Testowanie strony internetowej",
-        "fifthStepText": "Po pomyślnym przejściu etapu testowania zasób jest przenoszony do domeny klienta, a hosting jest podłączany",
+        "fifthStepText": "Po skutecznym zakończeniu etapu testowania zasób jest przenoszony do domeny klienta i integrowany z hostingiem",
         "sixthStepTitle": "Przeniesienie funkcjonalności strony",
-        "sixthStepText": "Po zakończeniu testów i podłączeniu wszystkich usług zasób i wszystkie prawa do niego są przenoszone na klienta",
-        "seventhStepTitle": "Obsługa",
-        "seventhStepText": "W procesie obsługi strony internetowej po jej uruchomieniu istnieje szansa, że pojawią się błędy w wyświetlaniu stron lub inne problemy. W takim przypadku klient może skontaktować się z zespołem w celu aby wyeliminować błędy"
+        "sixthStepText": "Po przeprowadzeniu testów i integracji wszystkich usług, zasób wraz ze wszystkimi prawami do niego zostaje przekazany do dyspozycji klienta",
+        "seventhStepTitle": "Wsparcie",
+        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia"
     },
     "HireUs": {
         "pageTitle": "połączenie",
@@ -128,7 +128,9 @@
         "allProjects": "Wszystkie projekty",
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
-        "buyMeACoffe": "Poczęstować kawą"
+        "buyMeACoffe": "Poczęstować kawą",
+        "learnMore": "Dowiedz się więcej",
+        "goBack": "Powrót"
     },
     "Footer": {
         "titleFirstWord": "Zacznij ",
@@ -201,5 +203,52 @@
         "text": "Ta strona używa plików cookie do prawidłowego funkcjonowania i ulepszania serwisu. Jeśli zgadzasz się na ich użycie, kliknij OK. Więcej informacji w ",
         "policy": "Polityce Prywatności.",
         "button": "ok"
+    },
+    "AboutPage": {
+        "title": "O ",
+        "titleAccent": "nas",
+        "contentItem1": "o założycielce",
+        "contentItem2": "jak to wszystko się zaczęło",
+        "contentItem3": "o zespole",
+        "contentItem4": "prezentacja",
+        "missionAccent": "Naszą misją ",
+        "missionDescription": "jest inspirowanie i rozwijanie zespołu, skalowanie i wspieranie klientów oraz rozwój partnerstw",
+        "goalAccent": "Naszym celem ",
+        "goalDescription": "jest tworzenie niesamowitych produktów cyfrowych wraz z idealnym zespołem",
+        "quoteP1": "Członkowie naszych zespołów są równi i wartościowi, niezależnie od ich roli, płci, wieku, orientacji czy statusu. Pracujemy zgranie i jakościowo, z szacunkiem i wsparciem.",
+        "quoteP2": "Integralność zespołu jest kluczem do sukcesu naszych projektów.",
+        "authorPhotoAlt": "Zdjęcie portretowe założycielki Susanny Salaty",
+        "author": "Susanna Salata",
+        "authorsRole": "założycielka i menedżerka projektu",
+        "aboutOwnerTitle": "Informacje o ",
+        "aboutOwnerTitleAccent": "założycielce",
+        "aboutOwnerP1": "Susanna jest ambitna, odważna i wysoce zmotywowana. Jej energia i zapał dodają energii jej zespołom i inspirują do samorozwoju każdego, kto z nią współpracuje. Jest osobą, która zawsze przekracza oczekiwania klientów, partnerów, kolegów i swoich mentee. Przywództwo i zarządzanie są dla niej łatwe, ponieważ chcesz podążać i słuchać silnego lidera. Nie boi się złożonych zadań i wyzwań, po prostu robi to, co lubi i robi to doskonale!",
+        "aboutOwnerP2": "Klienci opisują ją jako osobę profesjonalną, odpowiedzialną, zorganizowaną i niezawodną. Czasami jest twarda i uparta, ale zawsze przekonująca. Współpraca z nią nie zawsze jest łatwa, ale wyniki zawsze są tego warte, ponieważ przekraczają oczekiwania.",
+        "aboutOwnerP3": "Partnerzy mówią, że jej przekonania i wartości są niezachwiane, a jej wola i zasady są nie do złamania. Ona wie, czego chce, jak, kiedy i na jakich warunkach. A jej głównym warunkiem jest partnerstwo korzystne dla obu stron, bez kompromisów.",
+        "aboutOwnerP4": "Koledzy mówią, że jest zawsze o krok do przodu i ma odpowiedzi na wszystkie pytania, jest demokratyczna i tolerancyjna w zarządzaniu, motywująca i inspirująca w komunikacji.",
+        "aboutOwnerP5": "Mentee mówią, że jest bezwzględna! Jej konsultacje i sesje mentorskie nigdy nie dają gotowych odpowiedzi, zachęcają do myślenia i zrozumienia siebie, technologii i narzędzi.",
+        "aboutOwnerPhotoAlt": "Założycielka stoi na dachu wysokiego budynku, a za nią roztacza się wspaniały widok na miasto",
+        "inceptionTitle": "Jak to wszystko się ",
+        "inceptionTitleAccent": "zaczęło",
+        "sectionTeamTitle": "Nasze wartości ",
+        "sectionTeamTitleAccent": "i zespół",
+        "sectionTeamText": "Zespół jest bardzo ważną częścią każdej firmy. Zespół to nie tylko grupa ludzi, którzy spotykają się, aby coś razem robić. To ludzie zjednoczeni wartościami, celami i przekonaniami! Nasze zespoły są zgrane, samodzielne i wysoce efektywne.",
+        "sectionTeamAlt": "Obraz podzielony jest na dwanaście równych prostokątów, w których umieszczone są fotokarty wszystkich uczestników projektu",
+        "learnMoreAboutUs": "Dowiedz się o nas więcej",
+        "learnMoreAboutUsTitle": "Dowiedz ",
+        "learnMoreAboutUsTitleAccent": "się o nas więcej",
+        "psesentationAlt": "Openspace z ludźmi pracującymi przy komputerach",
+        "finallyFirstAccent": "Pracując ",
+        "finallySecond": "z naprawdę samoorganizującym się zespołem, ",
+        "finallyThirdAccent": "doświadczysz satysfakcji ",
+        "finallyFourth": "nie tylko z dobrego wyniku pracy, ale także ",
+        "finallyFifthAccent": "",
+        "finallySixth": "",
+        "finallySeventhAccent": "z procesu współpracy",
+        "finallyEighth": ", niezależnie od tego, czy jesteś członkiem zespołu, czy klientem"
+    },
+    "Breadcrumbs": {
+        "breadcrumbItemHome": "Główna",
+        "breadcrumbItemAbout": "O nas"
     }
 }

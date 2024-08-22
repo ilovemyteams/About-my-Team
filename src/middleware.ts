@@ -1,11 +1,11 @@
 import createMiddleware from "next-intl/middleware";
 
-export default createMiddleware({
-    // A list of all locales that are supported
-    locales: ["ua", "en", "pl"],
+import { defaultLocale, localePrefix, locales } from "./config";
 
-    // Used when no locale matches
-    defaultLocale: "ua",
+export default createMiddleware({
+    locales,
+    defaultLocale,
+    localePrefix,
     localeDetection: false,
 });
 
