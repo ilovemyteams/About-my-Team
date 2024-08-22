@@ -1,13 +1,14 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-const POLICY_URL =
-    "https://docs.google.com/document/d/15HKGntO49g31dABMHtYPvmoMHeIjAvZyzIcSR9HQ-lA/edit";
+import { selectedLink } from "@/src/utils/selectedLink";
 
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");
+    const locale = useLocale();
+    const policyURL = selectedLink(locale);
     return (
         <a
-            href={POLICY_URL}
+            href={policyURL}
             target="_blank"
             rel="noopener noreferrer"
             className="mb-[20px] tab:mb-0 text-sm outline-none dark:pc:hover:text-red pc:hover:text-redLight 

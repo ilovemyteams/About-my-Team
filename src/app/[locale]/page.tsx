@@ -1,6 +1,5 @@
-// import HomeTest from "@/src/components/Home";
 import { loadHomePage } from "@/sanity/utils/loadQuery";
-import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
+import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
@@ -18,8 +17,8 @@ export default async function HomePage(props: HopePageProps) {
     const initial = await loadHomePage(props.params.locale);
 
     return (
-        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-            <BackgroundFigures />
+        <>
+            <BackgroundFiguresMain />
             <HeroSection data={initial.data} />
             <MissionSection />
             <JoinTheTeamSection />
@@ -32,7 +31,6 @@ export default async function HomePage(props: HopePageProps) {
             <StagesSection />
             <QaSection />
             <HireUsSection />
-            {/* <HomeTest /> */}
-        </div>
+        </>
     );
 }
