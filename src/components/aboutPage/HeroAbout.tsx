@@ -44,7 +44,7 @@ export const HeroAbout = () => {
                     </BreadcrumbItem>
                 </Breadcrumbs>
                 <div className="flex justify-end">
-                    <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
+                    <LinkGoBack linkBack={`/${localeInURL(locale)}#aboutus`} />
                 </div>
             </div>
             <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">
