@@ -21,7 +21,7 @@ import { calloutType } from "./objects/module/calloutType";
 import { callToActionType } from "./objects/module/callToActionType";
 import { gridItemType } from "./objects/module/gridItemType";
 import { gridType } from "./objects/module/gridType";
-import { heroType } from "./objects/module/heroType";
+import { heroHomeType } from "./objects/module/heroHomeType";
 import { imageCallToActionType } from "./objects/module/imageCallToActionType";
 import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
@@ -43,7 +43,7 @@ const objects: ObjectDefinition[] = [
     footerType,
     gridItemType,
     gridType,
-    heroType,
+    heroHomeType,
     imageCallToActionType,
     imageFeaturesType,
     imageFeatureType,

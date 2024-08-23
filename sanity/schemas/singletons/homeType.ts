@@ -21,7 +21,7 @@ export const homeType = defineField({
         }),
         defineField({
             name: "hero",
-            type: "hero",
+            type: "heroHome",
             group: "editorial",
         }),
         defineField({
