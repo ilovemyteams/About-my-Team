@@ -22,7 +22,7 @@ export const MissionSection = () => {
     };
 
     return (
-        <Section id="mission" className="tab:min-h-[505px]">
+        <Section id="aboutus" className="tab:min-h-[505px]">
             <div ref={ref}>
                 <MissionTitle />
                 <div className="flex justify-around items-center">

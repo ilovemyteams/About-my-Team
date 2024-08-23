@@ -25,7 +25,7 @@ export const HeroAbout = () => {
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
             </div>
-            <div className="flex items-center justify-between mb-4 pc:mb-12">
+            <div className="flex items-center justify-between mb-4 pc:mb-12 desk:mb-[52px]">
                 <Breadcrumbs
                     separator="/"
                     itemClasses={{
@@ -33,10 +33,10 @@ export const HeroAbout = () => {
                         item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
                     }}
                 >
-                    <BreadcrumbItem href="/">
+                    <BreadcrumbItem href={`/${localeInURL(locale)}`}>
                         {getTranslationBreadcrumbs("breadcrumbItemHome")}
                     </BreadcrumbItem>
-                    <BreadcrumbItem href="/about">
+                    <BreadcrumbItem>
                         <p className="dark:text-red text-redLight">
                             {" "}
                             {getTranslationBreadcrumbs("breadcrumbItemAbout")}
@@ -44,11 +44,11 @@ export const HeroAbout = () => {
                     </BreadcrumbItem>
                 </Breadcrumbs>
                 <div className="flex justify-end">
-                    <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
+                    <LinkGoBack linkBack={`/${localeInURL(locale)}#aboutus`} />
                 </div>
             </div>
-            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px]">
-                <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl">
+            <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">
+                <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl desk:text-7xl">
                     {getTranslation("title")}
                     <span className="text-purple-100">
                         {getTranslation("titleAccent")}
