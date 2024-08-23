@@ -1,10 +1,12 @@
 import "./globals.css";
 
+import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import React from "react";
 
+import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
@@ -13,6 +15,10 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import { Providers } from "./providers";
+
+const GA_TAG = process.env.GA_ID || " ";
+const IS_SHOWN_TO_SEARCH_ENGINES =
+    process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
 
 const caviar = localFont({
     src: [
@@ -78,11 +84,13 @@ export default function LocaleLayout({
     params: { locale: string };
 }>) {
     const messages = useMessages();
-
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="icon" href="/favicon.ico" sizes="any" />
+                {IS_SHOWN_TO_SEARCH_ENGINES && (
+                    <meta name="robots" content="noindex,nofollow" />
+                )}
                 <meta
                     name="title"
                     property="og:title"
@@ -95,6 +103,7 @@ export default function LocaleLayout({
                     content="/images/imageForSharing.jpeg"
                 />
             </head>
+            <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
@@ -106,7 +115,10 @@ export default function LocaleLayout({
                             <Header />
                             <main>
                                 {modal}
-                                {children}
+                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                    <BackgroundFigures />
+                                    {children}
+                                </div>
                             </main>
                             <Footer />
                             <ScrollToTopButton />

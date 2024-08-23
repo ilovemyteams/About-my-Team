@@ -168,6 +168,8 @@ const config: Config = {
                     300: "#54148A",
                     400: "#09002E",
                     stroke: "#5F3F87",
+                    strokeFormLebel: "#A088BF",
+                    strokeFormLebelLight: "#B097CE",
                     strokeLight: "#C7C0F3",
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
@@ -296,6 +298,40 @@ const config: Config = {
                         transform: "rotate(360deg)",
                     },
                 },
+                triangleRotate: {
+                    "0%": {
+                        transform: "rotate(0deg)",
+                        animationDelay: "200ms",
+                    },
+                    "25%": {
+                        transform: "rotate(75deg)",
+                        animationDelay: "400ms",
+                    },
+                    "50%": {
+                        transform: "rotate(30deg)",
+                        animationDelay: "600ms",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg)",
+                    },
+                },
+                trapezeRotate: {
+                    "0%": {
+                        transform: "rotate(0deg)",
+                        animationDelay: "200ms",
+                    },
+                    "25%": {
+                        transform: "rotate(-70deg)",
+                        animationDelay: "400ms",
+                    },
+                    "50%": {
+                        transform: "rotate(-30deg)",
+                        animationDelay: "600ms",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg)",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 1200ms ease-in 2",
@@ -305,6 +341,8 @@ const config: Config = {
                 brokenHeartPC: "brokenHeartPC 3000ms ease-in forwards",
                 rotation: "rotate 1800ms linear infinite",
                 curveRotation: "curveRotate 3700ms ease-out 1",
+                triangleRotation: "triangleRotate 3000ms ease-out 2",
+                trapezeRotation: "trapezeRotate 3000ms ease-out 2",
             },
         },
         backgroundImage: {
@@ -336,6 +374,8 @@ const config: Config = {
                 "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
             memberMenuGradientLight:
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
+            PresentationGradient:
+                "linear-gradient(to right, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
         },
     },
     plugins: [

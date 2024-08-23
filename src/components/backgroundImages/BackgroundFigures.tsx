@@ -1,7 +1,6 @@
 import { IconBgCurveDesktop } from "../shared/Icons/IconBgCurveDesktop";
 import { IconBgCurveMobile } from "../shared/Icons/IconBgCurveMobile";
 import { IconBgCurveTablet } from "../shared/Icons/IconBgCurveTablet";
-import { IconBgHeart } from "../shared/Icons/IconBgHeart";
 
 export const BackgroundFigures = () => {
     return (
@@ -20,9 +19,6 @@ export const BackgroundFigures = () => {
             </div>
             <div className="fixed tab:hidden flex items-end w-[272px] h-[244px] right-0 overflow-hidden z-[-10]">
                 <IconBgCurveMobile className="w-[272px] h-[244px] object-cover relative right-[-136px] top-[-22px] z-[-10] text-purple-strokeLight dark:text-purple-stroke" />
-            </div>
-            <div className="tab:hidden fixed left-[6px] bottom-5 w-[206px] h-[182px] overflow-hidden z-[-10] pc:w-[357px] pc:h-[230px] pc:left-[100px] pc:bottom-0 ">
-                <IconBgHeart className="w-[206px] h-[182px] pc:w-[357px] pc:h-[315px] text-purple-strokeLight dark:text-purple-stroke" />
             </div>
         </>
     );
