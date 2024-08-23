@@ -1,7 +1,7 @@
+import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { IconGoBack } from "./Icons/IconGoBack";
-import { useRouter } from "next/navigation";
 
 export const GoBackButton = ({ className }: { className?: string }) => {
     const getTranslation = useTranslations("Buttons");
