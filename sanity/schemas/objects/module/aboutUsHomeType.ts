@@ -19,13 +19,13 @@ export const aboutUsItemType = defineField({
             title: "About us",
         },
         prepare({ title = [] }) {
-            const englisTitle =
+            const englishTitle =
                 (title as PreviewItem[]).find(
                     (item: PreviewItem) => item._key === "en"
                 )?.value || "No title";
             return {
                 icon: CheckmarkIcon,
-                title: englisTitle,
+                title: englishTitle,
             };
         },
     },
