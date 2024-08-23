@@ -11,6 +11,7 @@ import LocaleSwitcher from "../shared/LocaleSwitcher";
 import { Section } from "../shared/Section";
 import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { PageContentList } from "./PageContentList";
+import { useRouter } from "next/navigation";
 
 export const HeroAbout = () => {
     const { ref, inView } = useInView({
@@ -19,6 +20,9 @@ export const HeroAbout = () => {
     const getTranslation = useTranslations("AboutPage");
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
+    const router = useRouter();
+
+    console.log(`/${localeInURL(locale)}`);
     return (
         <Section className="pt-8 tab:pt-12 pc:pt-8">
             <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
@@ -44,7 +48,7 @@ export const HeroAbout = () => {
                     </BreadcrumbItem>
                 </Breadcrumbs>
                 <div className="flex justify-end">
-                    <LinkGoBack linkBack={`/${localeInURL(locale)}#aboutus`} />
+                    <LinkGoBack linkBack={router.back()} />
                 </div>
             </div>
             <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">
