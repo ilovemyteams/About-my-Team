@@ -1,12 +1,7 @@
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
 import { MainPageNavList } from "./MainPageNavList";
 
 export const HeroFooterLinks = () => {
-    const getTranslation = useTranslations("Hero");
-
     return (
         <>
             <div
