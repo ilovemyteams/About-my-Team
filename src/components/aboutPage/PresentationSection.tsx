@@ -1,12 +1,15 @@
 "use client";
 
 import { YouTubeEmbed } from "@next/third-parties/google";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Section } from "../shared/Section";
+import { selectedLocalePresentation } from "@/src/utils/selectedLocalePresentation";
 
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
+    const locale = useLocale();
+    const selectedPresentation = selectedLocalePresentation(locale);
 
     return (
         <Section
@@ -25,7 +28,7 @@ export const PresentationSection = () => {
             >
                 <div className="mx-auto max-w-[720px]">
                     <YouTubeEmbed
-                        videoid="ZQZUW88jdGM"
+                        videoid={selectedPresentation}
                         params="rel=0"
                         style="margin-left:auto; margin-right:auto;"
                     />
