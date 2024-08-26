@@ -3,8 +3,9 @@
 import { YouTubeEmbed } from "@next/third-parties/google";
 import { useLocale, useTranslations } from "next-intl";
 
-import { Section } from "../shared/Section";
 import { selectedLocalePresentation } from "@/src/utils/selectedLocalePresentation";
+
+import { Section } from "../shared/Section";
 
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
