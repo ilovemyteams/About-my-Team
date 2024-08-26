@@ -4,7 +4,6 @@ import { YouTubeEmbed } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
 import { Section } from "../shared/Section";
-import ImageWithAnimation from "./ImageWithAnimation";
 
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
@@ -20,16 +19,20 @@ export const PresentationSection = () => {
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="relative  mx-auto max-w-[720px] mb-[80px] tab:mb-[100px] pc:mb-[160px]">
-                <YouTubeEmbed
-                    videoid="px98Nw4r484"
-                    params="rel=0"
-                    style="margin-left:auto; margin-right:auto"
-                />
-
-                <ImageWithAnimation />
+            <div
+                className="mx-auto pc:py-[101px] pc:w-[890px] pc:h-[608px] mb-[80px] tab:mb-[100px] pc:mb-[160px] desk:mb-[120px] pc:border dark:border-purple-stroke border-purple-strokeLight
+            desk:w-[1262px] desk:h-[614px] desk:pt-[100px] desk:pb-[109px]"
+            >
+                <div className="mx-auto max-w-[720px]">
+                    <YouTubeEmbed
+                        videoid="ZQZUW88jdGM"
+                        params="rel=0"
+                        style="margin-left:auto; margin-right:auto;"
+                    />
+                </div>
             </div>
-            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] desk:w-[1113px] mx-auto">
+
+            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[890px] desk:w-[1113px] mx-auto">
                 <span className="text-purple-100">
                     {getTranslation("finallyFirstAccent")}
                 </span>
