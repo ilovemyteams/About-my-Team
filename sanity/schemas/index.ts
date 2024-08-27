@@ -28,6 +28,12 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
+import {
+    aboutUsItemType,
+    aboutUsHomeSectionType,
+} from "./objects/module/aboutUsHomeType";
+import { anchorLinkType } from "./objects/global/anchorLinkType";
+
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
     linkEmailType,
@@ -56,6 +62,9 @@ const objects: ObjectDefinition[] = [
     durationType,
     socialLinksType,
     buttonType,
+    aboutUsItemType,
+    aboutUsHomeSectionType,
+    anchorLinkType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -64,8 +73,13 @@ const arrays: ArrayDefinition[] = [menuLinksType];
 
 import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 import { portableTextType } from "./portableText/portableTextType";
+import { portableColorTitleType } from "./portableText/portableColorTitleType";
 
-const blocks: ArrayDefinition[] = [portableTextType, portableTextSimpleType];
+const blocks: ArrayDefinition[] = [
+    portableTextType,
+    portableTextSimpleType,
+    portableColorTitleType,
+];
 
 import { colorThemeType } from "./documents/colorTheme";
 import { pageType } from "./documents/pageType";
@@ -76,12 +90,13 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
-
+import { aboutUsType } from "./singletons/aboutUsType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
+    aboutUsType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

@@ -453,6 +453,21 @@ export type PortableText = Array<
       } & Instagram)
 >;
 
+export type PortableColorTitle = Array<{
+    children?: Array<{
+        marks?: Array<"purple" | string>;
+        text?: string;
+        _type: "span";
+        _key: string;
+    }>;
+    style?: "normal";
+    markDefs?: Array<{
+        _key: string;
+    }>;
+    _type: "block";
+    _key: string;
+}>;
+
 export type LinkInternal = {
     _type: "linkInternal";
     reference?: {
@@ -730,6 +745,7 @@ export type AllSanitySchemaTypes =
     | AccordionGroup
     | PortableTextSimple
     | PortableText
+    | PortableColorTitle
     | LinkInternal
     | LinkExternal
     | LinkEmail
