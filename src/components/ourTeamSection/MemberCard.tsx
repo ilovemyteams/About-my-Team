@@ -10,8 +10,6 @@ import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
 import { SocialLink } from "../shared/SocialLink";
 
-const END_OF_URL = -5;
-
 export interface MemberCardProps {
     data: MemberDataItemType;
 }
