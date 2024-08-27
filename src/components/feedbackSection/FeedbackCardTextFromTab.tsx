@@ -2,12 +2,13 @@ import { addProtocol } from "@/src/utils/addProtocol";
 
 import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
+import { IconFacebook } from "../shared/Icons/IconFacebook";
 
 export const FeedbackCardTextFromTab = ({
     data,
     localizationData,
 }: FeedbackCardItemProps) => {
-    const { siteLink } = data;
+    const { siteLink, feedbackLink } = data;
     const { siteName, siteView, reviewer, reviewerRole, feedbackText } =
         localizationData;
 
@@ -24,9 +25,23 @@ export const FeedbackCardTextFromTab = ({
                 <p className="tab:my-6 pc:my-[16px] font-light tab:text-base pc:text-xl tab:h-[139px] pc:h-[175px]">
                     {feedbackText}
                 </p>
-                <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
-                    {reviewer}
-                </p>
+                <div className="flex gap-3 items-center mb-1">
+                    <p className="font-caviar font-bold text-base  pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
+                        {reviewer}
+                    </p>
+                    {feedbackLink && (
+                        <a
+                            target="_blank"
+                            href={feedbackLink}
+                            rel="noopener noreferrer"
+                            className=" text-purple-130 dark:text-purple-50 dark:pc:hover:text-red pc:hover:text-redLight
+                    dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
+                        >
+                            <IconFacebook />
+                        </a>
+                    )}{" "}
+                </div>
+
                 <p className="text-xs text-purple-200 dark:text-white-200">
                     {reviewerRole}
                 </p>
