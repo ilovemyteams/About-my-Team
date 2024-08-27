@@ -33,7 +33,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Сергій",
             reviewerRole: "Підприємець та власник ферми",
             feedbackText:
-                "Сайт створений завдяки невтомній Сусанні Салаті, яка не просто зробила з командою сайт, а буквально заставила мене ворушитися в цьому напрямку. Тепер сайт вирішує одну з моїх проблем – для мене значно спростився процес відправки замовлень по всій Україні поштою. Більше не треба щоразу заповнювати свої дані в гугл-формі – один раз зареєструвався на сайті і все!",
+                "Сайт створений завдяки невтомній Сусанні Салаті, яка не просто зробила з командою сайт, а й заставила мене ворушитися в цьому напрямку. Тепер для мене значно спростився процес відправки замовлень по всій Україні поштою. Більше не треба щоразу заповнювати свої дані в гугл-формі – один раз зареєструвався на сайті і все!",
         },
         en: {
             siteName: "Smachno! na seli",
@@ -41,7 +41,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Sergii",
             reviewerRole: "Entrepreneur and the farm owner.",
             feedbackText:
-                "The website was created thanks to the tireless Susanna Salata, who not only made the website with her team but also pushed me to move in this direction. Now the website solves one of my problems—it has significantly simplified the process of sending orders all over Ukraine by mail. You no longer need to fill in your data in a Google form every time - you just register on the site once and that's it!",
+                "Great design and a cool idea! The implementation was even better. I had never thought that the boring work of a farmer could be shown in such an amusing manner. My customers are delighted with my site. I've just planted the first seedlings in the greenhouse, and already received 100 orders for the next tomato harvest.",
         },
         pl: {
             siteName: "Smachno! na seli",
