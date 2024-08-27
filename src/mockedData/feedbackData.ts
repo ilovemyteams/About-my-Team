@@ -10,6 +10,7 @@ type DataType = {
     image?: string;
     video?: string;
     siteLink: string;
+    feedbackLink?: string;
 };
 export type FeedbackDataItemType = {
     data: DataType;
@@ -24,6 +25,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             id: "01",
             image: "https://drive.google.com/uc?export=view&id=1ZcvPOChrBY7KnazjQi3sJ5B9R1wP2qL1",
             siteLink: "batatfarm.com",
+            feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B/",
         },
         ua: {
             siteName: "Смачно! на селі",
@@ -39,7 +41,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Sergii",
             reviewerRole: "Entrepreneur and the farm owner.",
             feedbackText:
-                "Great design and a cool idea! The implementation was even better. I had never thought that the boring work of a farmer could be shown in such an amusing manner. My customers are delighted with my site. I've just planted the first seedlings in the greenhouse, and already received 100 orders for the next tomato harvest.",
+                "The website was created thanks to the tireless Susanna Salata, who not only made the website with her team but also pushed me to move in this direction. Now the website solves one of my problems—it has significantly simplified the process of sending orders all over Ukraine by mail. You no longer need to fill in your data in a Google form every time - you just register on the site once and that's it!",
         },
         pl: {
             siteName: "Smachno! na seli",
