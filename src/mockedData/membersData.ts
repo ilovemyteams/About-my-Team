@@ -550,7 +550,7 @@ export const membersData: MemberDataItemType[] = [
                 "kuharskyivulyk.com.ua",
             ],
 
-            pricePerHour: "10",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
                 github: "https://github.com/OlgaMykhailova",
