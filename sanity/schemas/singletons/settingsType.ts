@@ -70,6 +70,11 @@ export const settingsType = defineType({
             type: "seo",
             group: "seo",
         }),
+        defineField({
+            name: "buttonBuyMeCoffee",
+            title: "Button Buy me a coffee",
+            type: "button",
+        }),
     ],
     preview: {
         prepare() {

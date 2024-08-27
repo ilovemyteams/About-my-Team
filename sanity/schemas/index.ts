@@ -5,6 +5,7 @@ import {
     type SchemaTypeDefinition,
 } from "sanity";
 
+import { anchorLinkType } from "./objects/global/anchorLinkType";
 import { buttonType } from "./objects/global/buttonType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
@@ -16,23 +17,22 @@ import { timelineType } from "./objects/global/timelineType";
 import { linkEmailType } from "./objects/link/linkEmailType";
 import { linkExternalType } from "./objects/link/linkExternalType";
 import { linkInternalType } from "./objects/link/linkInternalType";
+import {
+    aboutUsHomeSectionType,
+    aboutUsItemType,
+} from "./objects/module/aboutUsHomeType";
 import { accordionGroupType } from "./objects/module/accordionGroupType";
 import { accordionType } from "./objects/module/accordionType";
 import { calloutType } from "./objects/module/calloutType";
 import { callToActionType } from "./objects/module/callToActionType";
 import { gridItemType } from "./objects/module/gridItemType";
 import { gridType } from "./objects/module/gridType";
-import { heroType } from "./objects/module/heroType";
+import { heroHomeType } from "./objects/module/heroHomeType";
 import { imageCallToActionType } from "./objects/module/imageCallToActionType";
 import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
-import {
-    aboutUsItemType,
-    aboutUsHomeSectionType,
-} from "./objects/module/aboutUsHomeType";
-import { anchorLinkType } from "./objects/global/anchorLinkType";
 
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
@@ -49,7 +49,7 @@ const objects: ObjectDefinition[] = [
     footerType,
     gridItemType,
     gridType,
-    heroType,
+    heroHomeType,
     imageCallToActionType,
     imageFeaturesType,
     imageFeatureType,
@@ -71,9 +71,9 @@ import { menuLinksType } from "./objects/global/menuLinksType";
 
 const arrays: ArrayDefinition[] = [menuLinksType];
 
+import { portableColorTitleType } from "./portableText/portableColorTitleType";
 import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
 import { portableTextType } from "./portableText/portableTextType";
-import { portableColorTitleType } from "./portableText/portableColorTitleType";
 
 const blocks: ArrayDefinition[] = [
     portableTextType,
@@ -86,11 +86,11 @@ import { pageType } from "./documents/pageType";
 
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
+import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
-import { aboutUsType } from "./singletons/aboutUsType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
