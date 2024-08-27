@@ -376,6 +376,8 @@ const config: Config = {
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
             PresentationGradient:
                 "linear-gradient(to right, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
+            PresentationGradientLigth:
+                "linear-gradient(to right, #D3B0FFDE 0%, #F2EBFFDE 100%)",
         },
     },
     plugins: [

@@ -1,12 +1,16 @@
 "use client";
-import Image from "next/image";
-import { useTranslations } from "next-intl";
 
-import { IconUp } from "../shared/Icons/IconUp";
+import { YouTubeEmbed } from "@next/third-parties/google";
+import { useLocale, useTranslations } from "next-intl";
+
+import { selectedLocalePresentation } from "@/src/utils/selectedLocalePresentation";
+
 import { Section } from "../shared/Section";
 
 export const PresentationSection = () => {
     const getTranslation = useTranslations("AboutPage");
+    const locale = useLocale();
+    const selectedPresentation = selectedLocalePresentation(locale);
 
     return (
         <Section
@@ -19,30 +23,20 @@ export const PresentationSection = () => {
                     {getTranslation("learnMoreAboutUsTitleAccent")}
                 </span>
             </h2>
-            <div className="hidden relative bg-PresentationGradient mb-[80px] tab:mb-[100px] pc:mb-[160px]">
-                <Image
-                    src="/images/team.png"
-                    alt={getTranslation("psesentationAlt")}
-                    width={1200}
-                    height={627}
-                    className=" relative -z-[1]"
-                />
-                <p className="hidden tab:block tab:absolute top-[109px] pc:top-[207px] text-4xl pc:text-6xl font-caviar left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                    {getTranslation("learnMoreAboutUs")}
-                </p>
-                <button
-                    aria-label="play button"
-                    className=" absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 tab:translate-y-0 pc:top-[262px]
-                w-[64px] h-[64px] p-3 rounded-full after:content-[''] after:absolute after:top-0 after:left-0 
-                after:z-[-10] after:w-[64px] after:h-[64px] after:rounded-full after:bg-purple-100 
-                after:bg-opacity-40 after:blur-[2px] outline-none rotate-90 dark:pc:hover:text-red pc:hover:text-redLight
-                    dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
-                    onClick={() => alert("You are watching a presentation")}
-                >
-                    <IconUp />
-                </button>
+            <div
+                className="mx-auto pc:py-[101px] pc:w-[890px] pc:h-[608px] mb-[80px] tab:mb-[100px] pc:mb-[160px] desk:mb-[120px] pc:border dark:border-purple-stroke border-purple-strokeLight
+            desk:w-[1262px] desk:h-[614px] desk:pt-[100px] desk:pb-[109px]"
+            >
+                <div className="mx-auto max-w-[720px]">
+                    <YouTubeEmbed
+                        videoid={selectedPresentation}
+                        params="rel=0"
+                        style="margin-left:auto; margin-right:auto;"
+                    />
+                </div>
             </div>
-            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[892px] desk:w-[1113px] mx-auto">
+
+            <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[890px] desk:w-[1113px] mx-auto">
                 <span className="text-purple-100">
                     {getTranslation("finallyFirstAccent")}
                 </span>

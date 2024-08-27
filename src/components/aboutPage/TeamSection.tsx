@@ -24,15 +24,15 @@ export const TeamSection = () => {
                     {getTranslation("sectionTeamTitleAccent")}
                 </span>
             </h2>
-            <div className="pc:flex pc:gap-[102px]">
+            <div className="pc:flex pc:gap-[102px] desk:gap-[100px]">
                 <Image
                     src={TEAM_TOGETHER_PHOTO}
                     alt={getTranslation("sectionTeamAlt")}
                     width={1442}
                     height={831}
-                    className="mb-6 tab:mb-8 pc:w-[58.3%] desk:w-[47%] pc:mb-0"
+                    className="mb-6 tab:mb-8 pc:w-[58.3%] desk:w-[55.2%] pc:mb-0"
                 />
-                <div className="flex flex-col justify-center pc:justify-between ">
+                <div className="flex flex-col justify-center pc:justify-between desk:w-[494px]">
                     <p className="text-base pc:text-xl desk:text-2xl tab:w-[534px] pc:w-auto tab:mx-auto mb-6 Tab:mb-8">
                         {getTranslation("sectionTeamText")}
                     </p>
