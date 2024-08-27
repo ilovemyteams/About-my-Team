@@ -1,8 +1,8 @@
 import { addProtocol } from "@/src/utils/addProtocol";
 
+import { IconFacebook } from "../shared/Icons/IconFacebook";
 import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
-import { IconFacebook } from "../shared/Icons/IconFacebook";
 
 export const FeedbackCardTextFromTab = ({
     data,

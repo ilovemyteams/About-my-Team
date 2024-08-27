@@ -2,8 +2,8 @@ import Image from "next/image";
 
 import { addProtocol } from "@/src/utils/addProtocol";
 
-import { IconGoToSite } from "../shared/Icons/IconGoToSite";
 import { IconFacebook } from "../shared/Icons/IconFacebook";
+import { IconGoToSite } from "../shared/Icons/IconGoToSite";
 
 export interface FeedbackCardItemProps {
     data: {
