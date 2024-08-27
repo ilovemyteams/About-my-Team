@@ -39,7 +39,7 @@ export const FeedbackCardTextFromTab = ({
                         >
                             <IconFacebook />
                         </a>
-                    )}{" "}
+                    )}
                 </div>
 
                 <p className="text-xs text-purple-200 dark:text-white-200">
