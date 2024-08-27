@@ -16,40 +16,38 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
     const pathname = usePathname();
     const { previousURL } = usePreviousURL();
     const locale = useLocale();
-    const [isModalOpen, setIsModalOpen] = useState(true); // Ініціалізуємо стан
+    const [isModalOpen, setIsModalOpen] = useState(true);
 
     useEffect(() => {
         const closeModal = () => {
-            // Перевірка, чи містить pathname слово 'member'
             if (!pathname.includes("member")) {
-                setIsModalOpen(false); // Закриваємо модалку
+                setIsModalOpen(false);
             } else {
-                setIsModalOpen(true); // Відкриваємо модалку, якщо ми на сторінці member
+                setIsModalOpen(true);
             }
         };
 
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
                 router.push(previousURL || `/${localeInURL(locale)}#team`);
-                setIsModalOpen(false); // Закриваємо модалку при натисканні Escape
+                setIsModalOpen(false);
             }
         };
 
         document.addEventListener("keydown", handleEsc);
 
-        closeModal(); // Викликаємо функцію закриття модалки при завантаженні
+        closeModal();
 
         return () => {
             document.removeEventListener("keydown", handleEsc);
         };
     }, [pathname, router, previousURL, locale]);
 
-    // Якщо модалка має бути закритою, не відображаємо її
     if (!isModalOpen) return null;
 
     const handleClose = () => {
         router.push(previousURL || `/${localeInURL(locale)}#team`);
-        setIsModalOpen(false); // Закриваємо модалку при натисканні кнопки закриття
+        setIsModalOpen(false);
     };
 
     return (
