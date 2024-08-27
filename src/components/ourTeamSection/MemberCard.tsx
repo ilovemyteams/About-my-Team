@@ -25,7 +25,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             const requiredPartURL = url.split("#");
             return setPreviousURL(`${requiredPartURL[0]}#team`);
         }
-        setPreviousURL(window.location.href);
+        setPreviousURL(`${window.location.href}#team`);
     };
 
     return (
