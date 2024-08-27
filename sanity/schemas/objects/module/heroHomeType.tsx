@@ -32,11 +32,5 @@ export const heroHomeType = defineField({
             type: "button",
             validation: Rule => Rule.required(),
         }),
-        defineField({
-            name: "buttonBuyMeCoffee",
-            title: "Button Buy me a coffee",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
     ],
 });
