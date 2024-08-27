@@ -23,9 +23,11 @@ export const MemberCard = ({ data }: MemberCardProps) => {
 
     const savingFilteredListURL = () => {
         const url = window.location.href;
-        url.slice(END_OF_URL) !== `#team`
-            ? setPreviousURL(`${window.location.href}#team`)
-            : setPreviousURL(window.location.href);
+        if (url.includes("#")) {
+            const requiredPartURL = url.split("#");
+            return setPreviousURL(`${requiredPartURL[0]}#team`);
+        }
+        setPreviousURL(window.location.href);
     };
 
     return (
