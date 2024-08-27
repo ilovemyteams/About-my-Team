@@ -1,5 +1,6 @@
-import { defineField, defineArrayMember } from "sanity";
 import { CheckmarkIcon } from "@sanity/icons";
+import { defineArrayMember, defineField } from "sanity";
+
 import { PreviewItem } from "@/sanity/interfaces/interfaces";
 
 export const aboutUsItemType = defineField({
@@ -45,7 +46,7 @@ export const aboutUsHomeSectionType = defineField({
         defineField({
             name: "sectionTitle",
             type: "internationalizedArrayPortableColorTitle",
-            title: "Title of the section. Please, please choose proper color of the text for each language.",
+            title: "Title of the section. Please, choose proper color of the text for each language.",
         }),
         defineField({
             name: "shortDescription",
