@@ -1,12 +1,7 @@
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-
 import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
 import { MainPageNavList } from "./MainPageNavList";
 
 export const HeroFooterLinks = () => {
-    const getTranslation = useTranslations("Hero");
-
     return (
         <>
             <div
@@ -18,14 +13,6 @@ export const HeroFooterLinks = () => {
                     className="hidden tab:flex"
                     textClassName="pc:left-[56px]"
                 />
-                <Link
-                    href="#portfolio"
-                    className="relative pointer font-caviar text-lg border-b-[1px] outline-none dark:border-grey border-greyLight
-                pc:transition-color pc:ease-out pc:duration-300 dark:pc:hover:text-red pc:hover:text-redLight dark:pc:hover:border-red pc:hover:border-redLight
-                dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight"
-                >
-                    {getTranslation("portfolioLink")}
-                </Link>
             </div>
             <MainPageNavList />
         </>
