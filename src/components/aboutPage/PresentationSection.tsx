@@ -17,14 +17,8 @@ export const PresentationSection = () => {
             id="presentation"
             className="tab:pt-5 tab:mb-[100px] pc:pt-0 desk:mt-5"
         >
-            <h2 className="hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6 text-center tab:hidden">
-                {getTranslation("learnMoreAboutUsTitle")}
-                <span className="text-purple-100">
-                    {getTranslation("learnMoreAboutUsTitleAccent")}
-                </span>
-            </h2>
             <div
-                className="mx-auto pc:py-[101px] pc:w-[890px] pc:h-[608px] mb-[80px] tab:mb-[100px] pc:mb-[160px] desk:mb-[120px] pc:border dark:border-purple-stroke border-purple-strokeLight
+                className=" hidden mx-auto pc:py-[101px] pc:w-[890px] pc:h-[608px] mb-[80px] tab:mb-[100px] pc:mb-[160px] desk:mb-[120px] pc:border dark:border-purple-stroke border-purple-strokeLight
             desk:w-[1262px] desk:h-[614px] desk:pt-[100px] desk:pb-[109px]"
             >
                 <div className="mx-auto max-w-[720px]">
