@@ -93,12 +93,14 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
+import { siteCategoryType } from "./singletons/siteCategoryType";
 
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
+    siteCategoryType,
     aboutUsType,
 ];
 

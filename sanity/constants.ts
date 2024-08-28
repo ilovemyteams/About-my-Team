@@ -34,21 +34,6 @@ export const SUPPORTED_LANGUAGES = [
     { id: "pl", title: "Polish" },
 ];
 
-export const SITE_CATEGORY = [
-    {
-        title: "Landing",
-        value: "landing",
-    },
-    {
-        title: "Website",
-        value: "website",
-    },
-    {
-        title: "Online store",
-        value: "onlineStore",
-    },
-];
-
 export const SITE_STATUS = [
     { title: "Recruiting a team", value: "recruitingTeam" },
     { title: "Development", value: "development" },
