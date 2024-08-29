@@ -13,19 +13,11 @@ export const reviewType = defineField({
     icon: CommentIcon,
     fields: [
         defineField({
-            name: "projectName",
+            name: "project",
             type: "reference",
             to: [{ type: "project" }],
-            validation: rule => rule.required(),
-        }),
-        defineField({
-            name: "reviewAuthor",
-            type: "reference",
-            to: [{ type: "project" }],
-            title: "Review author",
-            options: {
-                filter: "",
-            },
+            title: "Project name",
+            description: "Select the project for which the review was written",
             validation: rule => rule.required(),
         }),
         defineField({
@@ -36,9 +28,9 @@ export const reviewType = defineField({
         }),
         defineField({
             name: "reviewUrl",
+            type: "linkExternal",
             title: "Review link (optional)",
             description: "Review link to an external resource",
-            type: "linkExternal",
         }),
     ],
     preview: {

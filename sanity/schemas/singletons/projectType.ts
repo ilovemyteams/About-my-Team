@@ -31,11 +31,13 @@ export const projectType = defineField({
             name: "customers",
             type: "array",
             title: "Customers",
+            description: "Enter information about project customers",
             of: [
                 defineArrayMember({
                     type: "customer",
                 }),
             ],
+            validation: rule => rule.required(),
         }),
         defineField({
             name: "startDate",
