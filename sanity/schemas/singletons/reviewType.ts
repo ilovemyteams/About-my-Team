@@ -13,15 +13,19 @@ export const reviewType = defineField({
     icon: CommentIcon,
     fields: [
         defineField({
-            name: "name",
-            type: "internationalizedArrayString",
-            title: "Client name",
+            name: "projectName",
+            type: "reference",
+            to: [{ type: "project" }],
             validation: rule => rule.required(),
         }),
         defineField({
-            name: "position",
-            type: "internationalizedArrayString",
-            title: "Client position",
+            name: "reviewAuthor",
+            type: "reference",
+            to: [{ type: "project" }],
+            title: "Review author",
+            options: {
+                filter: "",
+            },
             validation: rule => rule.required(),
         }),
         defineField({
@@ -30,15 +34,9 @@ export const reviewType = defineField({
             title: "Review text",
             validation: rule => rule.required(),
         }),
-
         defineField({
-            name: "project",
-            type: "reference",
-            to: [{ type: "project" }],
-            validation: rule => rule.required(),
-        }),
-        defineField({
-            name: "review",
+            name: "reviewUrl",
+            title: "Review link (optional)",
             description: "Review link to an external resource",
             type: "linkExternal",
         }),

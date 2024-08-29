@@ -33,6 +33,7 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { seoType } from "./objects/seoType";
+import { customerType } from "./objects/global/customerType";
 
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
@@ -65,6 +66,7 @@ const objects: ObjectDefinition[] = [
     aboutUsItemType,
     aboutUsHomeSectionType,
     anchorLinkType,
+    customerType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
