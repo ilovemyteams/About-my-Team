@@ -6,6 +6,12 @@ export const portfolioHomeType = defineField({
     type: "object",
     fields: [
         defineField({
+            name: "sectionId",
+            type: "anchorLink",
+            title: "Anchor Link",
+            validation: Rule => Rule.required(),
+        }),
+        defineField({
             name: "title",
             title: "Portfolio title",
             description:
