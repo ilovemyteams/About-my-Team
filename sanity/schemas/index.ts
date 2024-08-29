@@ -91,11 +91,13 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
+import { reviewType } from "./singletons/reviewType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
+    reviewType,
     aboutUsType,
 ];
 
