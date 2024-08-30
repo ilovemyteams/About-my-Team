@@ -10,7 +10,7 @@ export const MemberProjectExperience = ({
             {projectsExperience.slice(0, 3).map((project, index) => (
                 <li
                     key={index}
-                    className="px-0 truncate w-[230px] tab:w-[442px]"
+                    className="px-0 truncate w-[230px] tab:w-[425px]"
                 >
                     <a
                         target="_blank"
