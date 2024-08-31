@@ -18,6 +18,7 @@ export const teamType = defineField({
             description: "Team member's name",
             type: "internationalizedArrayString",
             title: "Name",
+            validation: rule => rule.required(),
         }),
         defineField({
             name: "role",
@@ -25,6 +26,7 @@ export const teamType = defineField({
             type: "string",
             title: "Role",
             options: { list: ROLES },
+            validation: rule => rule.required(),
         }),
         defineField({
             name: "price",
@@ -36,6 +38,7 @@ export const teamType = defineField({
             name: "isAvaliblePerson",
             description: "Would you like to show the price on the website?",
             type: "string",
+            initialValue: "Show price",
             options: {
                 list: ["Show price", "Do not show price"],
                 layout: "radio",
@@ -45,60 +48,21 @@ export const teamType = defineField({
         defineField({
             name: "about",
             description: "Team member's short description",
-            type: "object",
-            fields: [
-                defineField({
-                    name: "en",
-                    title: "English",
-                    type: "text",
-                    rows: 2,
-                }),
-                defineField({
-                    name: "ua",
-                    title: "Ukrainian",
-                    type: "text",
-                    rows: 2,
-                }),
-                defineField({
-                    name: "pl",
-                    title: "Polish",
-                    type: "text",
-                    rows: 2,
-                }),
-            ],
+            type: "internationalizedArrayText",
+            validation: rule => rule.required(),
         }),
         defineField({
             name: "services",
             description: "Team member's full description/services",
-            type: "object",
-            fields: [
-                defineField({
-                    name: "en",
-                    title: "English",
-                    type: "text",
-                    rows: 5,
-                }),
-                defineField({
-                    name: "ua",
-                    title: "Ukrainian",
-                    type: "text",
-                    rows: 5,
-                }),
-                defineField({
-                    name: "pl",
-                    title: "Polish",
-                    type: "text",
-                    rows: 5,
-                }),
-            ],
+            type: "internationalizedArrayText",
+            validation: rule => rule.required(),
         }),
-        //TODO: add after creating projects page
-        // defineField({
-        //     name: "projects",
-        //     title: "Projects",
-        //     type: "array",
-        //     of: [{ type: "reference", to: [{ type: "project" }] }],
-        // }),
+        defineField({
+            name: "projects",
+            title: "Projects",
+            type: "array",
+            of: [{ type: "reference", to: [{ type: "project" }] }],
+        }),
         defineField({
             name: "photo",
             type: "image",
