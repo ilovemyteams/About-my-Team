@@ -1,7 +1,7 @@
 import { ProjectsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { SITE_CATEGORY, SITE_STATUS, STAGES } from "@/sanity/constants";
+import { SITE_STATUS, STAGES } from "@/sanity/constants";
 
 interface TitleItem {
     _key: string;
@@ -53,15 +53,14 @@ export const projectType = defineField({
             title: "End date",
         }),
         defineField({
-            name: "siteCategory",
+            name: "category",
             description: "Specify the site category",
-            type: "string",
             title: "Site category",
-            options: {
-                list: SITE_CATEGORY,
-            },
+            type: "reference",
+            to: [{ type: "siteCategory" }],
             validation: rule => rule.required(),
         }),
+
         defineField({
             name: "status",
             description: "The current stage of the project",

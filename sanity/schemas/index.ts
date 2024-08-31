@@ -32,6 +32,7 @@ import { imageCallToActionType } from "./objects/module/imageCallToActionType";
 import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
+import { portfolioHomeType } from "./objects/module/portfolioHomeType";
 import { seoType } from "./objects/seoType";
 import { customerType } from "./objects/global/customerType";
 
@@ -66,6 +67,7 @@ const objects: ObjectDefinition[] = [
     aboutUsItemType,
     aboutUsHomeSectionType,
     anchorLinkType,
+    portfolioHomeType,
     customerType,
 ];
 
@@ -93,13 +95,11 @@ import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
 import { teamType } from "./singletons/teamType";
-import { reviewType } from "./singletons/reviewType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
-    reviewType,
     aboutUsType,
 ];
 
