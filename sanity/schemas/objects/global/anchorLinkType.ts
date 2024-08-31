@@ -11,14 +11,15 @@ export const anchorLinkType = defineType({
             name: "anchorId",
             type: "string",
             description:
-                'Enter a unique value for the page if you want this slice to show up in the "Jump To" actions',
+                'Enter a unique value for the section if you want this slice to show up in the "Jump To" menu',
+            validation: Rule => Rule.required(),
         },
         {
-            title: "Title",
-            name: "title",
-            type: "string",
-            description:
-                "Optional: The slice title will be used if this is left blank",
+            title: "Subtitle",
+            name: "subtitle",
+            type: "internationalizedArrayString",
+            description: "Enter a small section subtitle",
+            validation: Rule => Rule.required(),
         },
     ],
 

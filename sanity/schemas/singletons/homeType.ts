@@ -21,6 +21,7 @@ export const homeType = defineField({
         }),
         defineField({
             name: "hero",
+            title: "Hero section",
             type: "heroHome",
             group: "editorial",
         }),
@@ -35,6 +36,12 @@ export const homeType = defineField({
             title: "CTA Section Join us",
             description: "Call to action section Join us",
             group: "cta",
+        }),
+        defineField({
+            name: "portfolioHome",
+            title: "Portfolio section",
+            type: "portfolioHome",
+            group: "editorial",
         }),
         defineField({
             name: "ctaSectionWriteUs",
