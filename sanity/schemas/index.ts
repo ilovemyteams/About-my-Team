@@ -69,6 +69,7 @@ const objects: ObjectDefinition[] = [
     anchorLinkType,
     portfolioHomeType,
     customerType,
+    servicesHomeType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -90,6 +91,7 @@ import { pageType } from "./documents/pageType";
 
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
+import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
