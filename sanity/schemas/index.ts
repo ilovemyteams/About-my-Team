@@ -7,6 +7,7 @@ import {
 
 import { anchorLinkType } from "./objects/global/anchorLinkType";
 import { buttonType } from "./objects/global/buttonType";
+import { customerType } from "./objects/global/customerType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
 import { menuType } from "./objects/global/menuType";
@@ -34,7 +35,6 @@ import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { portfolioHomeType } from "./objects/module/portfolioHomeType";
 import { seoType } from "./objects/seoType";
-import { customerType } from "./objects/global/customerType";
 
 // Objects used as annotations must be imported first
 const annotations: ObjectDefinition[] = [
@@ -94,6 +94,7 @@ import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { settingsType } from "./singletons/settingsType";
+import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
 const singletons: DocumentDefinition[] = [
     homeType,
@@ -101,6 +102,7 @@ const singletons: DocumentDefinition[] = [
     settingsType,
     projectType,
     aboutUsType,
+    siteCategoryType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
