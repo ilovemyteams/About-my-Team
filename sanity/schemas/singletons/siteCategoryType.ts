@@ -1,10 +1,6 @@
 import { LaunchIcon } from "@sanity/icons";
 import { defineField } from "sanity";
-
-interface TitleItem {
-    _key: string;
-    value: string;
-}
+import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const siteCategoryType = defineField({
     name: "siteCategory",
@@ -24,8 +20,8 @@ export const siteCategoryType = defineField({
         },
         prepare({ title }) {
             const englishTitle =
-                (title as TitleItem[]).find(
-                    (item: TitleItem) => item._key === "en"
+                (title as FieldItem[]).find(
+                    (item: FieldItem) => item._key === "en"
                 )?.value || "No title";
             return {
                 title: `${englishTitle || "No title"}`,

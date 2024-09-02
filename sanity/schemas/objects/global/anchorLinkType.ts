@@ -1,9 +1,6 @@
 import { defineType } from "sanity";
 
-interface TitleItem {
-    _key: string;
-    value: string;
-}
+import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const anchorLinkType = defineType({
     title: "Anchor Link",
@@ -25,7 +22,7 @@ export const anchorLinkType = defineType({
             options: {
                 source: (_, options) => {
                     const parent = options.parent as {
-                        subtitle?: TitleItem[];
+                        subtitle?: FieldItem[];
                     };
 
                     if (parent?.subtitle) {
@@ -40,11 +37,33 @@ export const anchorLinkType = defineType({
                     input.toLowerCase().replace(/\s+/g, "-").slice(0, 50),
             },
             validation: Rule =>
-                Rule.custom(value => {
-                    // Якщо slug пустий, видаємо помилку
-                    if (!value) {
-                        return 'Enter the "subtitle" field in English, this field is required to generate an Anchor Id';
+                Rule.custom((value, context) => {
+                    const parent = context.parent as {
+                        subtitle?: FieldItem[];
+                    };
+
+                    const currentValue = (value as { current?: string })
+                        .current;
+
+                    if (parent?.subtitle) {
+                        const enSubtitle =
+                            parent.subtitle.find(item => item._key === "en")
+                                ?.value || "";
+
+                        const expectedSlug = enSubtitle
+                            .toLowerCase()
+                            .replace(/\s+/g, "-")
+                            .slice(0, 50);
+
+                        if (currentValue !== expectedSlug) {
+                            return "The Anchor Id must match the English subtitle. Regenerate Anchor Id.";
+                        }
                     }
+
+                    if (!value) {
+                        return "The Anchor Id is required.";
+                    }
+
                     return true;
                 }).required(),
         },
@@ -52,13 +71,10 @@ export const anchorLinkType = defineType({
 
     preview: {
         select: {
-            title: "Anchor Id",
-            anchorId: "anchorId",
+            title: "anchorId.current",
         },
-
-        prepare: ({ title, anchorId }) => ({
-            title,
-            subtitle: anchorId,
+        prepare: ({ title }) => ({
+            title: title || "No Anchor Id",
         }),
     },
 });

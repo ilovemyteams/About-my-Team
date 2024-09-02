@@ -1,4 +1,4 @@
-export interface PreviewItem {
+export interface FieldItem {
     _key: string;
     value: string;
 }
