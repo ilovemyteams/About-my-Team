@@ -1,5 +1,6 @@
 import { LaunchIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+
 import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const siteCategoryType = defineField({

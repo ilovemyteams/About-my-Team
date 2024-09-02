@@ -44,6 +44,12 @@ export const homeType = defineField({
             group: "editorial",
         }),
         defineField({
+            name: "reviewsHome",
+            title: "Reviews section",
+            type: "reviewsHome",
+            group: "editorial",
+        }),
+        defineField({
             name: "ctaSectionWriteUs",
             type: "callToAction",
             title: "CTA Section Write us",
