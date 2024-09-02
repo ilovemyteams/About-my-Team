@@ -28,6 +28,18 @@ export const projectType = defineField({
             title: "Description",
         }),
         defineField({
+            name: "customers",
+            type: "array",
+            title: "Customers",
+            description: "Enter information about project customers",
+            of: [
+                defineArrayMember({
+                    type: "customer",
+                }),
+            ],
+            validation: rule => rule.required(),
+        }),
+        defineField({
             name: "startDate",
             description: "The project start date",
             type: "datetime",
