@@ -1,7 +1,7 @@
 import { CheckmarkIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { PreviewItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const aboutUsItemType = defineField({
     name: "aboutUsItem",
@@ -21,8 +21,8 @@ export const aboutUsItemType = defineField({
         },
         prepare({ title = [] }) {
             const englishTitle =
-                (title as PreviewItem[]).find(
-                    (item: PreviewItem) => item._key === "en"
+                (title as FieldItem[]).find(
+                    (item: FieldItem) => item._key === "en"
                 )?.value || "No title";
             return {
                 icon: CheckmarkIcon,
