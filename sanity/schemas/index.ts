@@ -71,6 +71,7 @@ const objects: ObjectDefinition[] = [
     portfolioHomeType,
     customerType,
     reviewsHomeType,
+    servicesHomeType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -92,10 +93,12 @@ import { pageType } from "./documents/pageType";
 
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
+import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { reviewType } from "./singletons/reviewType";
+import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
@@ -107,6 +110,7 @@ const singletons: DocumentDefinition[] = [
     reviewType,
     aboutUsType,
     siteCategoryType,
+    serviceType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

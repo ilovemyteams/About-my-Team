@@ -5,7 +5,7 @@ import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const siteCategoryType = defineField({
     name: "siteCategory",
-    title: "Site category",
+    title: "Site categories",
     type: "document",
     icon: LaunchIcon,
     fields: [
