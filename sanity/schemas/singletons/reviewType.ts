@@ -1,10 +1,7 @@
 import { CommentIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-interface TitleItem {
-    _key: string;
-    value: string;
-}
+import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const reviewType = defineField({
     name: "review",
@@ -40,13 +37,15 @@ export const reviewType = defineField({
         prepare({ title }) {
             if (!title) {
                 return {
-                    title: "No title",
+                    title: "No review title",
                 };
             }
             const englishTitle =
-                (title as TitleItem[]).find(
-                    (item: TitleItem) => item._key === "en"
-                )?.value || "No title";
+                `Review "${
+                    (title as FieldItem[]).find(
+                        (item: FieldItem) => item._key === "en"
+                    )?.value
+                }"` || "No review title";
             return {
                 title: englishTitle,
             };

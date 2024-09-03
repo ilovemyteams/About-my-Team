@@ -1,8 +1,8 @@
 import { defineField } from "sanity";
 
-export const portfolioHomeType = defineField({
-    name: "portfolioHome",
-    title: "Portfolio",
+export const reviewsHomeType = defineField({
+    name: "reviewsHome",
+    title: "Reviews",
     type: "object",
     fields: [
         defineField({
@@ -13,19 +13,19 @@ export const portfolioHomeType = defineField({
         }),
         defineField({
             name: "title",
-            title: "Portfolio title",
+            title: "Reviews title",
             description:
                 "Сhoose the accent color of specific words for each language",
             type: "internationalizedArrayPortableColorTitle",
             validation: Rule => Rule.required(),
         }),
         defineField({
-            name: "portfolioSlider",
-            title: "Portfolio slider",
+            name: "reviewsSlider",
+            title: "Reviews slider",
             description:
-                "Choose the projects that should be displayed in the slider",
+                "Choose the reviews that should be displayed in the slider",
             type: "array",
-            of: [{ type: "reference", to: [{ type: "project" }] }],
+            of: [{ type: "reference", to: [{ type: "review" }] }],
             validation: Rule => Rule.required(),
         }),
     ],

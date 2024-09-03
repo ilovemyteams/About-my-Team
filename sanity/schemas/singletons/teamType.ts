@@ -2,11 +2,8 @@ import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
 import { ROLES } from "@/sanity/constants";
+import { FieldItem } from "@/sanity/interfaces/interfaces";
 
-interface NameItem {
-    _key: string;
-    value: string;
-}
 export const teamType = defineField({
     name: "team",
     title: "Team member's card",
@@ -86,8 +83,8 @@ export const teamType = defineField({
         },
         prepare({ name = [], subtitle, media }) {
             const englishName =
-                (name as NameItem[]).find(
-                    (item: NameItem) => item._key === "en"
+                (name as FieldItem[]).find(
+                    (item: FieldItem) => item._key === "en"
                 )?.value || "No name";
 
             return {
