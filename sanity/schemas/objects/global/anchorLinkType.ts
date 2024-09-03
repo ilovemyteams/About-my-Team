@@ -43,7 +43,7 @@ export const anchorLinkType = defineType({
                     };
 
                     const currentValue = (value as { current?: string })
-                        .current;
+                        ?.current;
 
                     if (parent?.subtitle) {
                         const enSubtitle =
