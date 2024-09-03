@@ -34,6 +34,7 @@ import { imageFeaturesType } from "./objects/module/imageFeaturesType";
 import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { portfolioHomeType } from "./objects/module/portfolioHomeType";
+import { reviewsHomeType } from "./objects/module/reviewsHomeType";
 import { seoType } from "./objects/seoType";
 
 // Objects used as annotations must be imported first
@@ -69,6 +70,7 @@ const objects: ObjectDefinition[] = [
     anchorLinkType,
     portfolioHomeType,
     customerType,
+    reviewsHomeType,
     servicesHomeType,
 ];
 
@@ -95,6 +97,7 @@ import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
+import { reviewType } from "./singletons/reviewType";
 import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
@@ -104,6 +107,7 @@ const singletons: DocumentDefinition[] = [
     teamType,
     settingsType,
     projectType,
+    reviewType,
     aboutUsType,
     siteCategoryType,
     serviceType,
