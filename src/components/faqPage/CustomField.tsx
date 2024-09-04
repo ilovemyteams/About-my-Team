@@ -33,6 +33,15 @@ export const CustomField = ({
         value === "" && setIsLabelUp(false);
     };
 
+    const heightStyles =
+        type === "textarea" ? "h-[76px] pc:h-[68px]" : "h-[28px]";
+
+    const borderStyles = isError
+        ? "border-error focus:border-error text-error"
+        : value === ""
+          ? "border-purple-strokeLight dark:border-purple-stroke focus:border-greyLight dark:focus:border-grey text-inherit"
+          : "border-greyLight dark:border-grey focus:border-greyLight dark:focus:border-grey text-inherit";
+
     return (
         <label className="block relative w-full appearance-non pb-[12px] outline-none text-base font-normal">
             <p
@@ -50,7 +59,7 @@ export const CustomField = ({
                 placeholder={isLabelUp ? placeholder : ""}
                 onFocus={onFocusField}
                 onBlur={onBlur}
-                className={`block w-full bg-transparent py-1 outline-none border-b-[1px] ${type === "textarea" ? "h-[76px] pc:h-[68px]" : "h-[28px]"} ${isError ? "border-error" : value === "" ? "border-purple-strokeLight dark:border-purple-stroke" : "border-grey"} ${isError ? "focus:border-error text-error" : "focus:border-grey text-inherit"} font-caviar text-baseb placeholder-purple-strokeFormLebelLight dark:placeholder-purple-strokeFormLebel resize-none scroll`}
+                className={`block w-full bg-transparent py-1 outline-none border-b-[1px] ${heightStyles}  ${borderStyles} font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke resize-none scroll`}
             ></Field>
             <ErrorMessage
                 name={name}
