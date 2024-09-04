@@ -58,7 +58,13 @@ export const teamType = defineField({
             name: "projects",
             title: "Projects",
             type: "array",
-            of: [{ type: "reference", to: [{ type: "project" }] }],
+            of: [
+                { type: "linkExternal" },
+                {
+                    type: "reference",
+                    to: [{ type: "project" }],
+                },
+            ],
         }),
         defineField({
             name: "photo",
