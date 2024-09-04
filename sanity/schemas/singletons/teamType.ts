@@ -1,7 +1,6 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { ROLES } from "@/sanity/constants";
 import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const teamType = defineField({
@@ -20,9 +19,9 @@ export const teamType = defineField({
         defineField({
             name: "role",
             description: "Team member's role",
-            type: "string",
             title: "Role",
-            options: { list: ROLES },
+            type: "reference",
+            to: { type: "specialist" },
             validation: rule => rule.required(),
         }),
         defineField({
@@ -85,7 +84,7 @@ export const teamType = defineField({
     preview: {
         select: {
             name: "name",
-            subtitle: "role",
+            subtitle: "role.title",
             media: "photo",
         },
         prepare({ name = [], subtitle, media }) {

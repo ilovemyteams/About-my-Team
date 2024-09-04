@@ -1,11 +1,11 @@
-import { RocketIcon } from "@sanity/icons";
+import { WrenchIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
 export const toolType = defineField({
     name: "tool",
     title: "Tools",
     type: "document",
-    icon: RocketIcon,
+    icon: WrenchIcon,
     fields: [
         defineField({
             name: "title",
