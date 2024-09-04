@@ -6,7 +6,7 @@ import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const teamType = defineField({
     name: "team",
-    title: "Team member's card",
+    title: "Team members",
     type: "document",
     icon: UsersIcon,
     fields: [
@@ -72,7 +72,8 @@ export const teamType = defineField({
         defineField({
             name: "tools",
             type: "array",
-            of: [defineArrayMember({ type: "string" })],
+            of: [{ type: "reference", to: [{ type: "tool" }] }],
+            validation: rule => rule.required(),
         }),
     ],
     preview: {

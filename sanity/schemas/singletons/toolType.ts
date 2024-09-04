@@ -1,8 +1,6 @@
 import { RocketIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
-
 export const toolType = defineField({
     name: "tool",
     title: "Tools",
@@ -11,28 +9,10 @@ export const toolType = defineField({
     fields: [
         defineField({
             name: "title",
-            type: "internationalizedArrayString",
+            type: "string",
             title: "Tool title",
+            description: "Enter tool name, for example React, Jira, Figma etc.",
             validation: rule => rule.required(),
         }),
     ],
-    preview: {
-        select: {
-            title: "title",
-        },
-        prepare({ title }) {
-            if (!title) {
-                return {
-                    title: "No title",
-                };
-            }
-            const englishTitle =
-                (title as FieldItem[]).find(
-                    (item: FieldItem) => item._key === "en"
-                )?.value || "No title";
-            return {
-                title: englishTitle,
-            };
-        },
-    },
 });
