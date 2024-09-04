@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'"`\s-]+$/;
+export const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'"`\s-]+$/;
 
-const emailRegex =
+export const emailRegex =
     /^(?!.*\.\.)(?!.*[.-]@)(?!@.*[.-]$)([a-zA-Z0-9._%+\-'"#$&*/|^{}~]+(?<!\.)@(?=[a-zA-Z0-9.-]{1,63}\.[a-zA-Z]{2,}$)(?![.-])[a-zA-Z0-9.-]+(?<![.-]))$/;
 
-const wrongRuEmailsRegex =
+export const wrongRuEmailsRegex =
     /^([a-zA-Z0-9._%+\-'"#$&*/|^{}~]+(?<!\.)@([a-zA-Z0-9_\-.]+)(?!.*\.(ru|рф|su)$)([.][a-zA-Z]{2,}))$/;
 
 const telegramRegex = /(t\.me|@)/;
