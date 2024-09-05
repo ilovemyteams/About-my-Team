@@ -23,7 +23,7 @@ export const stagesHomeType = defineField({
             name: "stagesList",
             title: "Stages list",
             description:
-                "Choose the services that should be displayed in the stages section",
+                "Enter the services that should be displayed in the stages section",
             type: "array",
             of: [defineArrayMember({ type: "stage" })],
             validation: Rule => Rule.required().min(7).max(7),
