@@ -35,6 +35,8 @@ import { imageFeatureType } from "./objects/module/imageFeatureType";
 import { instagramType } from "./objects/module/instagramType";
 import { portfolioHomeType } from "./objects/module/portfolioHomeType";
 import { reviewsHomeType } from "./objects/module/reviewsHomeType";
+import { stagesHomeType } from "./objects/module/stagesHomeType";
+import { teamHomeType } from "./objects/module/teamHomeType";
 import { seoType } from "./objects/seoType";
 
 // Objects used as annotations must be imported first
@@ -72,6 +74,7 @@ const objects: ObjectDefinition[] = [
     customerType,
     reviewsHomeType,
     servicesHomeType,
+    teamHomeType,
     stagesHomeType,
 ];
 
@@ -103,8 +106,6 @@ import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
-import { stageType } from "./singletons/stageType";
-import { stagesHomeType } from "./objects/module/stagesHomeType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
@@ -114,7 +115,6 @@ const singletons: DocumentDefinition[] = [
     aboutUsType,
     siteCategoryType,
     serviceType,
-    stageType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

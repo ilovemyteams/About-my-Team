@@ -49,31 +49,6 @@ export const STAGES = [
     { title: "Support", value: "support" },
 ];
 
-export const ROLES = [
-    {
-        title: "FrontEnd developer",
-        value: "frontendDeveloper",
-    },
-    {
-        title: "Fullstack developer",
-        value: "fullstackDeveloper",
-    },
-    {
-        title: "BackEnd developer",
-        value: "backendDeveloper",
-    },
-    { title: "Graphic designer/UI/UX designer", value: "designer" },
-    { title: "Graphic designer", value: "graphicDesigner" },
-    { title: "UI/UX designer", value: "uiUxDesigner" },
-    { title: "QA engineer", value: "qa" },
-    { title: "Business Analyst", value: "business-analytic" },
-    { title: "Project manager", value: "projectManager" },
-    { title: "Product manager", value: "productManager" },
-    { title: "Project manager/Scrum master", value: "manager" },
-    { title: "Scrum master", value: "scrumMaster" },
-    { title: "Marketer", value: "marketer" },
-];
-
 export const SOCIAL_LINKS = [
     { title: "LinkedIn", value: "linkedin" },
     { title: "Telegram", value: "telegram" },
