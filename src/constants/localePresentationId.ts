@@ -1,5 +1,5 @@
-export const PRESENTATION_UA = "ZQZUW88jdGM";
+export const PRESENTATION_UA = "uC7nWNG3PPc";
 
-export const PRESENTATION_EN = "-p1MqPFz6EE";
+export const PRESENTATION_EN = "RnZuHR-exzc";
 
-export const PRESENTATION_PL = "6OAOo-Zt9ms";
+export const PRESENTATION_PL = "bMt2ZP0tABQ";
