@@ -417,21 +417,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Євген Сердюк",
             about: "Зараз все зробимо!",
             services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next.js. Розробка серверних застосунків з використанням Node.js та NestJS.",
+                "Розробка та підтримка Web-додатків з урахуванням семантичної верстки та адаптивного дизайну до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та NodeJS. Робота з базами даних MongoDB, PosgreSQ.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
             about: "We'll do it now!",
             services:
-                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using Node.js and NestJS.",
+                "Development and support of Web applications with semantic layout and responsive design for different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and NodeJS. Working with MongoDB, PosgreSQ databases.",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Eugene Serdiuk",
             about: "Teraz to zrobimy!",
             services:
-                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i NodeJS.",
+                "Rozwój i wsparcie aplikacji internetowych z semantycznym układem i responsywnym designem dla różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Rozwój aplikacji serwerowych. przy użyciu JavaScript i NodeJS. Praca z bazami danych MongoDB i PosgreSQ.",
             team: "Smachno! na seli",
         },
     },
@@ -1398,6 +1398,164 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Badania marketingowe branży, rynku, konsumentów. Usystematyzowana analiza strategiczna. Pomoc w formułowaniu i strukturyzacji celów biznesowych. Opracowanie systemu strategii marketingowych umożliwiających osiągnięcie wyznaczonych celów. Marketingowy system tworzenia nowych produktów (towarów, usług, oprogramowania) i wprowadzania ich na rynek.",
             team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "MartaMorintseva",
+            projectId: ["2"],
+            imageURL: "",
+            position: "QA engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/marta-morincewa",
+                telegram: "",
+                github: "",
+            },
+            tools: [
+                "ISTQB",
+                "Jira",
+                "Postman",
+                "Swagger",
+                "SQL",
+                "Git",
+                "DBeaver",
+                "JSON",
+                "XML",
+                "Zephyr Squad",
+                "Java",
+                "Docker",
+            ],
+        },
+        ua: {
+            name: "Марта Морінцева",
+            about: "Командна робота — це мистецтво перетворювати індивідуальні таланти у досконалий продукт.",
+            services:
+                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти).  Проведення веб тестування, UX/UI тестування, Functional testing. тестування API. Робота з Базами даних.",
+            team: "Smachno! na seli",
+        },
+        en: {
+            name: "Marta Morintseva",
+            about: "Teamwork is the art of transforming individual talents into a perfect product.",
+            services:
+                "Creation of test documentation (test plan, checklists, test cases, bug reports). Web testing, UX/UI testing, Functional testing, API testing. Working with databases.",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Marta Morintseva",
+            about: "Praca zespołowa to sztuka przekształcania indywidualnych talentów w doskonały produkt.",
+            services:
+                "Tworzenie dokumentacji testowej (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Testowanie stron internetowych, testowanie UX/UI, testowanie funkcjonalne, testowanie API. Praca z bazami danych.",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "IrynaShevchenko",
+            projectId: ["2"],
+            imageURL: "",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/irishashevchenko",
+                telegram: "https://t.me/Bickac",
+                github: "",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs/Forms",
+                "BPMN notations (Draw.io, Miro, Camunda)",
+                "Slack",
+                "Notion",
+                "SDLC",
+                "User story",
+                "Figma",
+                "Moqups",
+                "Balsamiq",
+            ],
+        },
+        ua: {
+            name: "Ірина Шевченко",
+            about: "Зараз подумаємо, потім обговоримо, а далі реалізуємо.",
+            services:
+                "Комунікативні навички. Збір та аналіз вимог, їх опис в User Story, оновлення документації, малювання BPMN-діаграм. Створення скетчів, мокапів, варфреймів. Розуміння SDLC, гнучких методологій та навичок управління.",
+            team: "Smachno! na seli",
+        },
+        en: {
+            name: "Iryna Shevchenko",
+            about: "Now we'll think, then we'll discuss, and after that, we'll implement.",
+            services:
+                "Communication skills. Gathering and analyzing requirements, documenting them in User Stories, updating documentation, creating BPMN diagrams. Creating sketches, mockups, wireframes. Understanding SDLC, agile methodologies, and management skills.",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Iryna Shevchenko",
+            about: "Teraz pomyślimy, potem omówimy, a następnie zrealizujemy.",
+            services:
+                "Umiejętności komunikacyjne. Zbieranie i analizowanie wymagań, ich opis w User Stories, aktualizacja dokumentacji, rysowanie diagramów BPMN. Tworzenie szkiców, mockupów, makietów. Zrozumienie SDLC, zwinnych metodologii i umiejętności zarządzania.",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "OlenaHalushka",
+            projectId: ["2", "3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/olena-halushka",
+                behance: "https://www.behance.net/olenahalushka",
+                telegram: "https://t.me/rainy_bird",
+            },
+            tools: [
+                "Figma",
+                "Photoshop",
+                "Maze",
+                "ProtoPie",
+                "Notion",
+                "Jira",
+                "Confluence",
+                "Bootstrap grid system",
+                "color theory",
+                "typography",
+                "prototyping",
+                "quantitative research",
+                "interwievs",
+                "CJM",
+                "Kano model",
+                "user flow",
+                "information architecture",
+            ],
+        },
+        ua: {
+            name: "Олена Галушка",
+            about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
+            services:
+                "Створення дизайну для мобільних застосунків та веб сайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Jorney Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, variables. Unmoderated User testing. Презентація. Обробка фото та зображень.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Olena Halushka",
+            about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
+            services:
+                "Creation of design for mobile applications and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Compilation of user flow, information architecture, personas. Product hypotheses, jobs to be done, Customer Journey Map, prioritization according to the Kano model. Prototypes, UI design, adaptive creation of UI kits, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Olena Halushka",
+            about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
+            services:
+                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Jorney Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
+            team: "Smachno! na seli",
         },
     },
 ];
