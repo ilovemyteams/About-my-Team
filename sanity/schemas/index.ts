@@ -108,6 +108,9 @@ import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
 import { stageType } from "./objects/global/stageType";
+import { specialistType } from "./singletons/specialistType";
+import { toolType } from "./singletons/toolType";
+import { specialistCategoryType } from "./singletons/specialistCategories";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
@@ -117,6 +120,9 @@ const singletons: DocumentDefinition[] = [
     aboutUsType,
     siteCategoryType,
     serviceType,
+    specialistType,
+    specialistCategoryType,
+    toolType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
