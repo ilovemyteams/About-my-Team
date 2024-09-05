@@ -1,12 +1,11 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { ROLES } from "@/sanity/constants";
 import { FieldItem } from "@/sanity/interfaces/interfaces";
 
 export const teamType = defineField({
     name: "team",
-    title: "Team member's card",
+    title: "Team members",
     type: "document",
     icon: UsersIcon,
     fields: [
@@ -20,9 +19,9 @@ export const teamType = defineField({
         defineField({
             name: "role",
             description: "Team member's role",
-            type: "string",
             title: "Role",
-            options: { list: ROLES },
+            type: "reference",
+            to: { type: "specialist" },
             validation: rule => rule.required(),
         }),
         defineField({
@@ -58,7 +57,13 @@ export const teamType = defineField({
             name: "projects",
             title: "Projects",
             type: "array",
-            of: [{ type: "reference", to: [{ type: "project" }] }],
+            of: [
+                { type: "linkExternal" },
+                {
+                    type: "reference",
+                    to: [{ type: "project" }],
+                },
+            ],
         }),
         defineField({
             name: "photo",
@@ -72,13 +77,14 @@ export const teamType = defineField({
         defineField({
             name: "tools",
             type: "array",
-            of: [defineArrayMember({ type: "string" })],
+            of: [{ type: "reference", to: [{ type: "tool" }] }],
+            validation: rule => rule.required(),
         }),
     ],
     preview: {
         select: {
             name: "name",
-            subtitle: "role",
+            subtitle: "role.title",
             media: "photo",
         },
         prepare({ name = [], subtitle, media }) {

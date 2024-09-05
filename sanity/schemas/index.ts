@@ -72,6 +72,7 @@ const objects: ObjectDefinition[] = [
     customerType,
     reviewsHomeType,
     servicesHomeType,
+    teamHomeType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -102,6 +103,10 @@ import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
+import { toolType } from "./singletons/toolType";
+import { specialistType } from "./singletons/specialistType";
+import { specialistCategoryType } from "./singletons/specialistCategories";
+import { teamHomeType } from "./objects/module/teamHomeType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
@@ -111,6 +116,9 @@ const singletons: DocumentDefinition[] = [
     aboutUsType,
     siteCategoryType,
     serviceType,
+    toolType,
+    specialistCategoryType,
+    specialistType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

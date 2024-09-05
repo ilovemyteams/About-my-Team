@@ -35,4 +35,9 @@ export const linkExternalType = defineField({
             initialValue: true,
         }),
     ],
+    preview: {
+        select: {
+            title: "url",
+        },
+    },
 });
