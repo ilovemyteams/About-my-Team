@@ -1,4 +1,4 @@
-import { defineField } from "sanity";
+import { defineArrayMember, defineField } from "sanity";
 
 export const stagesHomeType = defineField({
     name: "stagesHome",
@@ -25,7 +25,7 @@ export const stagesHomeType = defineField({
             description:
                 "Choose the services that should be displayed in the stages section",
             type: "array",
-            of: [{ type: "reference", to: [{ type: "stage" }] }],
+            of: [defineArrayMember({ type: "stage" })],
             validation: Rule => Rule.required().min(7).max(7),
         }),
     ],

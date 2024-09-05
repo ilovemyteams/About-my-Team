@@ -76,6 +76,7 @@ const objects: ObjectDefinition[] = [
     servicesHomeType,
     teamHomeType,
     stagesHomeType,
+    stageType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -106,6 +107,7 @@ import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
 import { teamType } from "./singletons/teamType";
+import { stageType } from "./objects/global/stageType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
