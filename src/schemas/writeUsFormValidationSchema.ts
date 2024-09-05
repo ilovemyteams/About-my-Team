@@ -1,13 +1,9 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-export const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'"`\s-]+$/;
-
-export const emailRegex =
-    /^(?!.*\.\.)(?!.*[.-]@)(?!@.*[.-]$)([a-zA-Z0-9._%+\-'"#$&*/|^{}~]+(?<!\.)@(?=[a-zA-Z0-9.-]{1,63}\.[a-zA-Z]{2,}$)(?![.-])[a-zA-Z0-9.-]+(?<![.-]))$/;
-
-export const wrongRuEmailsRegex =
-    /^([a-zA-Z0-9._%+\-'"#$&*/|^{}~]+(?<!\.)@([a-zA-Z0-9_\-.]+)(?!.*\.(ru|рф|su)$)([.][a-zA-Z]{2,}))$/;
+import { EmailValidation } from "./shared/emailValidation";
+import { MessageValidation } from "./shared/messageValidation";
+import { NameValidation } from "./shared/nameValidation";
 
 const telegramRegex = /(t\.me|@)/;
 
@@ -19,19 +15,13 @@ const facebookRegex = /facebook\.com/;
 
 export const WriteUsValidation = () => {
     const getTranslation = useTranslations("Errors");
+    const nameValidation = NameValidation();
+    const emailValidation = EmailValidation();
+    const messageValidation = MessageValidation();
 
     const writeUsFormValidationSchema = yup.object().shape({
-        name: yup
-            .string()
-            .min(2, getTranslation("nameMinMaxSymbols"))
-            .max(30, getTranslation("nameMinMaxSymbols"))
-            .matches(nameRegex, getTranslation("nameAllowedSymbols"))
-            .required(getTranslation("required")),
-        email: yup
-            .string()
-            .matches(emailRegex, getTranslation("wrongEmail"))
-            .matches(wrongRuEmailsRegex, getTranslation("russianEmails"))
-            .required(getTranslation("required")),
+        name: nameValidation,
+        email: emailValidation,
         telegram: yup
             .string()
             .matches(telegramRegex, getTranslation("wrongTelegram")),
@@ -44,12 +34,7 @@ export const WriteUsValidation = () => {
         facebook: yup
             .string()
             .matches(facebookRegex, getTranslation("wrongFacebook")),
-        message: yup
-            .string()
-            .trim()
-            .min(10, getTranslation("messageMinMaxSymbols"))
-            .max(300, getTranslation("messageMinMaxSymbols"))
-            .required(getTranslation("required")),
+        message: messageValidation,
     });
 
     return writeUsFormValidationSchema;
