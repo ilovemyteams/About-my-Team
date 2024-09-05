@@ -1404,7 +1404,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "MartaMorintseva",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1cjstQ443wX1x8qerPgwXC109fAiUvZMN",
             position: "QA engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -1455,7 +1456,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "IrynaShevchenko",
             projectId: ["2"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1axCkf35Z3dykmd3mRPVfvPo2gMmx-zZn",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com"],
@@ -1506,7 +1508,7 @@ export const membersData: MemberDataItemType[] = [
             id: "OlenaHalushka",
             projectId: ["2", "3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
+                "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
