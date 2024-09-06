@@ -128,14 +128,19 @@
         "buyMeACoffe": "Пригостити кавою",
         "learnMore": "Дізнатися більше",
         "goBack": "Назад",
-        "writeUs": "написати"
+        "writeUs": "написати",
+        "readMore": "Читати далі"
+    },
+    "Badges": {
+        "readTimeSingular": " хв читати",
+        "readTimePlural": " хв читати"
     },
     "Footer": {
         "titleFirstWord": "Починайте ",
         "titleSecondWord": "втілення ",
         "titleThirdWord": "своїх ",
-        "titleFourthWord": "",
-        "titleFifthWord": "бізнес-ідей ",
+        "titleFourthWord": "бізнес ",
+        "titleFifthWord": "ідей ",
         "titleSixthWord": "разом ",
         "titleSeventhWord": "з нами",
         "privacyPolicy": "політика конфіденційності",

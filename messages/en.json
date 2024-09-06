@@ -129,7 +129,12 @@
         "buyMeACoffe": "Treat with coffee",
         "learnMore": "Learn more",
         "goBack": "Back",
-        "writeUs": "write to us"
+        "writeUs": "write to us",
+        "readMore": "Read more"
+    },
+    "Badges": {
+        "readTimeSingular": " min to read",
+        "readTimePlural": " mins to read"
     },
     "Footer": {
         "titleFirstWord": "Start ",
