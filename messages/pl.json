@@ -170,7 +170,9 @@
         "requiredField": "*Pola wymagane do wypełnienia",
         "informedAgreement": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na ",
         "rulesLink": "Warunki przetwarzania danych osobowych",
-        "submitButton": "Wyślij"
+        "submitButton": "Wyślij",
+        "questionLabel": "Twoje pytanie*",
+        "questionPlaceholder": "Twoje pytanie*"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -250,5 +252,9 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas"
+    },
+    "FaqPage": {
+        "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!",
+        "ctaButton": "napisz"
     }
 }

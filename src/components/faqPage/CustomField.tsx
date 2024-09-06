@@ -1,5 +1,5 @@
 import { ErrorMessage, Field } from "formik";
-import { FocusEvent, useState } from "react";
+import { FocusEvent } from "react";
 
 interface CustomFieldProps {
     value: string;
@@ -10,6 +10,8 @@ interface CustomFieldProps {
     isError: boolean;
     autoFocus: boolean;
     handleBlur: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+    status: null | string;
+    setStatus: (status: null | string) => void;
 }
 
 export const CustomField = ({
@@ -21,15 +23,16 @@ export const CustomField = ({
     isError,
     autoFocus,
     handleBlur,
+    status,
+    setStatus,
 }: CustomFieldProps) => {
-    const [isLabelUp, setIsLabelUp] = useState(false);
     const onFocusField = () => {
-        !isLabelUp && setIsLabelUp(true);
+        setStatus(name);
     };
 
     const onBlur = (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         handleBlur(e);
-        value === "" && setIsLabelUp(false);
+        setStatus(null);
     };
 
     const heightStyles =
@@ -41,10 +44,12 @@ export const CustomField = ({
           ? "border-purple-strokeLight dark:border-purple-stroke focus:border-greyLight dark:focus:border-grey text-inherit"
           : "border-greyLight dark:border-grey focus:border-greyLight dark:focus:border-grey text-inherit";
 
+    const isActiveEmptyField = status === name || value !== "";
+
     return (
         <label className="block relative w-full appearance-non pb-[12px] outline-none text-base font-normal">
             <p
-                className={`relative transition-[top] h-[20px] duration-300 ease-out ${isLabelUp ? "top-0 text-xxs" : "top-[20px]  text-base"}`}
+                className={`relative transition-[top] h-[20px] duration-300 ease-out ${isActiveEmptyField ? "top-0 text-xxs" : "top-[20px]  text-base"}`}
             >
                 {label}
             </p>
@@ -55,7 +60,7 @@ export const CustomField = ({
                 name={name}
                 type={"text"}
                 autoComplete="on"
-                placeholder={isLabelUp ? placeholder : ""}
+                placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
                 onBlur={onBlur}
                 className={`block w-full bg-transparent py-1 outline-none border-b-[1px] ${heightStyles}  ${borderStyles} font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke resize-none scroll`}
