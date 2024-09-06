@@ -1,5 +1,5 @@
 import { ErrorMessage, Field } from "formik";
-import { useState } from "react";
+import { FocusEvent, useState } from "react";
 
 interface CustomFieldProps {
     value: string;
@@ -9,8 +9,7 @@ interface CustomFieldProps {
     placeholder: string;
     isError: boolean;
     autoFocus: boolean;
-
-    handleBlur: (e: unknown) => void;
+    handleBlur: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
 export const CustomField = ({
@@ -28,7 +27,7 @@ export const CustomField = ({
         !isLabelUp && setIsLabelUp(true);
     };
 
-    const onBlur = (e: unknown) => {
+    const onBlur = (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         handleBlur(e);
         value === "" && setIsLabelUp(false);
     };
