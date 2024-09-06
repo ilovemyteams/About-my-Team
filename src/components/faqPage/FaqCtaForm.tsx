@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Form, Formik } from "formik";
 import { useLocale, useTranslations } from "next-intl";
 import { Dispatch, SetStateAction, useState } from "react";
@@ -50,7 +51,14 @@ export const FaqCtaForm = ({
                 email: values.email.toLowerCase().trim(),
                 message: values.message.trim(),
             };
-            console.log(data);
+            await axios({
+                method: "post",
+                url: "/api/sendQuestion",
+                data,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
 
             onClose();
         } catch (error) {
