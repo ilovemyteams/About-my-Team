@@ -40,12 +40,12 @@ export const portfolioData: PortfolioDataItemType[] = [
         },
         en: {
             name: "i love my team",
-            siteView: "lending",
+            siteView: "landing",
             description: "descriptionId1",
         },
         pl: {
             name: "i love my team",
-            siteView: "lending",
+            siteView: "landing",
             description: "descriptionId1",
         },
     },
