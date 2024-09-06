@@ -128,9 +128,9 @@
         "share": "Share",
         "buyMeACoffe": "Treat with coffee",
         "learnMore": "Learn more",
-        "goBack": "Back",
         "writeUs": "write to us",
-        "readMore": "Read more"
+        "readMore": "Read more",
+        "goBack": "Back"
     },
     "Badges": {
         "readTimeSingular": " min to read",
