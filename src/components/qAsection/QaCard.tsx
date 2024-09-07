@@ -35,7 +35,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                     alt={imageAltText}
                     width="300"
                     height="200"
-                    className="object-cover w-full tab:w-[300px] h-[200px]"
+                    className="object-cover w-auto tab:w-[300px] h-[200px]"
                 />
 
                 <div className="flex flex-col justify-between">
