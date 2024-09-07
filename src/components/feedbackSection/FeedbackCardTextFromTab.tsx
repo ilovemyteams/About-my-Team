@@ -7,7 +7,7 @@ export const FeedbackCardTextFromTab = ({
     data,
     localizationData,
 }: FeedbackCardItemProps) => {
-    const { siteLink } = data;
+    const { siteLink, feedbackLink } = data;
     const { siteName, siteView, reviewer, reviewerRole, feedbackText } =
         localizationData;
 
@@ -21,9 +21,31 @@ export const FeedbackCardTextFromTab = ({
                         "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight"
                     }
                 />
-                <p className="tab:my-6 pc:my-[16px] font-light tab:text-base pc:text-xl tab:h-[139px] pc:h-[175px]">
-                    {feedbackText}
-                </p>
+                <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[175px]">
+                    {!feedbackLink && (
+                        <p className="tab:text-base pc:text-xl">
+                            {feedbackText}
+                        </p>
+                    )}
+                    {feedbackLink && (
+                        <>
+                            <p className="tab:text-base pc:text-xl tab:h-[103px] pc:h-[126px] pc:mb-2 overflow-hidden line-clamp-5 break-words">
+                                {feedbackText}
+                            </p>
+                            <a
+                                target="_blank"
+                                href={addProtocol(feedbackLink)}
+                                rel="noopener noreferrer"
+                                className="text-purple-100 text-sm pc:text-base border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
+                dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight
+                dark:active:border-red active:border-redLight dark:pc:hover:border-red pc:hover:border-redLight
+                dark:pc:focus:border-red pc:focus:border-redLight"
+                            >
+                                Весь відгук
+                            </a>
+                        </>
+                    )}
+                </div>
                 <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
                     {reviewer}
                 </p>

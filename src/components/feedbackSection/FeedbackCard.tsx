@@ -66,21 +66,28 @@ export const FeedbackCard = ({
 
             <div className="h-[186px] px-2 pt-4 pb-2 flex flex-col justify-between">
                 <div>
-                    <p className="text-sm h-[86px] overflow-hidden line-clamp-5 break-words">
-                        &ldquo; {feedbackText} &ldquo;
-                    </p>
+                    {!feedbackLink && (
+                        <p className="text-sm h-[120px]">
+                            &ldquo; {feedbackText} &ldquo;
+                        </p>
+                    )}
                     {feedbackLink && (
-                        <a
-                            target="_blank"
-                            href={addProtocol(feedbackLink)}
-                            rel="noopener noreferrer"
-                            className="text-purple-100 text-sm border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
+                        <>
+                            <p className="text-sm h-[86px] overflow-hidden line-clamp-5 break-words">
+                                &ldquo; {feedbackText} &ldquo;
+                            </p>
+                            <a
+                                target="_blank"
+                                href={addProtocol(feedbackLink)}
+                                rel="noopener noreferrer"
+                                className="text-purple-100 text-sm border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight
                 dark:active:border-red active:border-redLight dark:pc:hover:border-red pc:hover:border-redLight
                 dark:pc:focus:border-red pc:focus:border-redLight"
-                        >
-                            Весь відгук
-                        </a>
+                            >
+                                Весь відгук
+                            </a>
+                        </>
                     )}
                 </div>
 
