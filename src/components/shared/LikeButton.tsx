@@ -13,14 +13,17 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
         setIsActive(!isActive);
     };
 
-    const style = isActive ? "text-red mb-1" : "text-grey mb-1";
+    const style = isActive
+        ? "text-red mb-1 animate-pulsationBrokenHeart"
+        : "text-grey mb-1";
     return (
         <button
             onClick={toggleLike}
             className="flex items-center gap-2 mx-[3px] my-2"
+            aria-label="Like"
         >
             <div className={style}>
-                <IconLike />
+                <IconLike isActive={isActive} />
             </div>
             <span>{likes}</span>
         </button>
