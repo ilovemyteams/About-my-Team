@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { readingTimeEstimation as rte } from "@/src/utils/readingTimeEstimation";
+import { getReadingTimeEstimation as rte } from "@/src/utils/getReadingTimeEstimation";
 
 export type ReadTimeEstProps = {
     text: string;

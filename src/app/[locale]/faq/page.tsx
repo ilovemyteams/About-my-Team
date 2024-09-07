@@ -2,12 +2,11 @@
 
 import { useTranslations } from "next-intl";
 
-import { Section } from "@/src/components/shared/Section";
 import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
 
-import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
-
+import { Section } from "@/src/components/shared/Section";
 import { QaCard } from "../../../components/qAsection/QaCard";
+import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
 
 const IMAGE = normalizeGoogleDriveImgUrls(
     "https://drive.google.com/file/d/1ThWQ10FdymqFnc0ELdC_O4892o-eaK9m/view?usp=drive_link"
