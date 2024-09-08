@@ -577,6 +577,9 @@ export type Home = {
     language?: string;
     hero?: Hero;
     seo?: Seo;
+    ctaSectionJoinUs?: CallToAction;
+    ctaSectionOrder?: CallToAction;
+    ctaSectionWriteUs?: CallToAction;
 };
 
 export type SanityImageCrop = {
