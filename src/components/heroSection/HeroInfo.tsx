@@ -9,6 +9,8 @@ export interface HomePageProps {
 }
 export const HeroInfo = ({ data }: HomePageProps) => {
     const getTranslation = useTranslations();
+    console.log(data?.ctaSectionJoinUs?.ctaButton?.buttonName);
+    console.log(data?.ctaSectionOrder?.ctaButton?.buttonName);
     return (
         <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
             <h1
@@ -20,8 +22,20 @@ export const HeroInfo = ({ data }: HomePageProps) => {
                     : getTranslation("Hero.heroInfoText")}
             </h1>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                <WriteUs />
-                <JoinUsButton />
+                {data?.ctaSectionOrder?.ctaButton?.buttonName && (
+                    <WriteUs
+                        buttonName={
+                            data?.ctaSectionOrder?.ctaButton?.buttonName
+                        }
+                    />
+                )}
+                {data?.ctaSectionJoinUs?.ctaButton?.buttonName && (
+                    <JoinUsButton
+                        buttonName={
+                            data?.ctaSectionJoinUs?.ctaButton?.buttonName
+                        }
+                    />
+                )}
             </div>
         </div>
     );

@@ -292,31 +292,56 @@ export type GridItem = {
     }>;
 };
 
+// export type CallToAction = {
+//     _type: "callToAction";
+//     layout?: "left" | "right";
+//     title?: string;
+//     portableText?: string;
+//     link?: Array<
+//         | ({
+//               _key: string;
+//           } & LinkInternal)
+//         | ({
+//               _key: string;
+//           } & LinkExternal)
+//     >;
+//     content?: Array<{
+//         asset?: {
+//             _ref: string;
+//             _type: "reference";
+//             _weak?: boolean;
+//             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+//         };
+//         hotspot?: SanityImageHotspot;
+//         crop?: SanityImageCrop;
+//         _type: "image";
+//         _key: string;
+//     }>;
+// };
+export type InternationalizedArrayPortableTextSimpleValue = {
+    _type: "internationalizedArrayPortableTextSimpleValue";
+    value?: PortableTextSimple;
+};
+
+export type InternationalizedArrayPortableTextSimple = Array<
+    {
+        _key: string;
+    } & InternationalizedArrayPortableTextSimpleValue
+>;
+
+export type Button = {
+    _type: "button";
+    buttonName?: InternationalizedArrayString;
+    buttonLink?: "noLink" | "internal" | "external";
+    linkInternal?: LinkInternal;
+    linkExternal?: LinkExternal;
+};
+
 export type CallToAction = {
     _type: "callToAction";
-    layout?: "left" | "right";
-    title?: string;
-    portableText?: string;
-    link?: Array<
-        | ({
-              _key: string;
-          } & LinkInternal)
-        | ({
-              _key: string;
-          } & LinkExternal)
-    >;
-    content?: Array<{
-        asset?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-        };
-        hotspot?: SanityImageHotspot;
-        crop?: SanityImageCrop;
-        _type: "image";
-        _key: string;
-    }>;
+    title?: InternationalizedArrayString;
+    ctaButton?: Button;
+    description?: InternationalizedArrayPortableTextSimple;
 };
 
 export type Callout = {
@@ -577,6 +602,9 @@ export type Home = {
     language?: string;
     hero?: Hero;
     seo?: Seo;
+    ctaSectionJoinUs?: CallToAction;
+    ctaSectionOrder?: CallToAction;
+    ctaSectionWriteUs?: CallToAction;
 };
 
 export type SanityImageCrop = {
