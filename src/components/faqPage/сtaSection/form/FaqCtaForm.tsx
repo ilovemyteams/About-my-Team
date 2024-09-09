@@ -3,11 +3,11 @@ import { Form, Formik } from "formik";
 import { useLocale, useTranslations } from "next-intl";
 import { Dispatch, SetStateAction } from "react";
 
+import { Button } from "@/src/components/shared/Button";
+import { IconLoader } from "@/src/components/shared/Icons/IconLoader";
 import { FaqWriteQuestionValidation } from "@/src/schemas/faqWriteQuestionValidationSchema";
 import { selectedLink } from "@/src/utils/selectedLink";
 
-import { Button } from "../shared/Button";
-import { IconLoader } from "../shared/Icons/IconLoader";
 import { CustomField } from "./CustomField";
 
 interface FormValues {

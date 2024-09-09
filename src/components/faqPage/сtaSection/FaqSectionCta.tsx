@@ -2,10 +2,11 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-import { SectionCTA } from "../shared/SectionCTA";
-import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
-import { NotificationModal } from "../shared/WriteUs/NotificationModal";
-import { FaqCtaModal } from "./FaqCtaModal";
+import { SectionCTA } from "@/src/components/shared/SectionCTA";
+import { TitleCTAWrapper } from "@/src/components/shared/TitleCTAWrapper";
+import { NotificationModal } from "@/src/components/shared/WriteUs/NotificationModal";
+
+import { FaqCtaModal } from "./modal/FaqCtaModal";
 
 export const FaqSectionCta = () => {
     const getTranslation = useTranslations("FaqPage");

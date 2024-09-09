@@ -2,12 +2,13 @@ import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 import { Dispatch, SetStateAction } from "react";
 
-import { Button } from "../shared/Button";
-import { IconCloseX } from "../shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "../shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "../shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "../shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
-import { FaqCtaForm } from "./FaqCtaForm";
+import { Button } from "@/src/components/shared/Button";
+import { IconCloseX } from "@/src/components/shared/Icons/IconCloseX";
+import { BgImagesDesktop } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
+
+import { FaqCtaForm } from "../form/FaqCtaForm";
 
 interface FaqCtaModalProps {
     setIsError: Dispatch<SetStateAction<boolean>>;
