@@ -77,6 +77,7 @@ const objects: ObjectDefinition[] = [
     teamHomeType,
     stagesHomeType,
     stageType,
+    faqHomeType,
 ];
 
 import { menuLinksType } from "./objects/global/menuLinksType";
@@ -98,25 +99,28 @@ import { pageType } from "./documents/pageType";
 
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
+import { stageType } from "./objects/global/stageType";
+import { faqHomeType } from "./objects/module/faqHomeType";
 import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { aboutUsType } from "./singletons/aboutUsType";
+import { faqType } from "./singletons/faqType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { reviewType } from "./singletons/reviewType";
 import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
-import { teamType } from "./singletons/teamType";
-import { stageType } from "./objects/global/stageType";
-import { specialistType } from "./singletons/specialistType";
-import { toolType } from "./singletons/toolType";
 import { specialistCategoryType } from "./singletons/specialistCategories";
+import { specialistType } from "./singletons/specialistType";
+import { teamType } from "./singletons/teamType";
+import { toolType } from "./singletons/toolType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
     settingsType,
     projectType,
     reviewType,
+    faqType,
     aboutUsType,
     siteCategoryType,
     serviceType,

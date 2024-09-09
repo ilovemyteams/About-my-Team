@@ -48,6 +48,7 @@ export default defineConfig({
             fieldTypes: [
                 "string",
                 "text",
+                "portableText",
                 "portableTextSimple",
                 "portableColorTitle",
             ],
