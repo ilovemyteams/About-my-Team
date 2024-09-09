@@ -98,6 +98,7 @@ import { pageType } from "./documents/pageType";
 
 const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
+import { stageType } from "./objects/global/stageType";
 import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { aboutUsType } from "./singletons/aboutUsType";
 import { homeType } from "./singletons/homeType";
@@ -106,11 +107,10 @@ import { reviewType } from "./singletons/reviewType";
 import { serviceType } from "./singletons/serviceType";
 import { settingsType } from "./singletons/settingsType";
 import { siteCategoryType } from "./singletons/siteCategoryType";
-import { teamType } from "./singletons/teamType";
-import { stageType } from "./objects/global/stageType";
-import { specialistType } from "./singletons/specialistType";
-import { toolType } from "./singletons/toolType";
 import { specialistCategoryType } from "./singletons/specialistCategories";
+import { specialistType } from "./singletons/specialistType";
+import { teamType } from "./singletons/teamType";
+import { toolType } from "./singletons/toolType";
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
