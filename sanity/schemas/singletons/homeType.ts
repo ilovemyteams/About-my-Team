@@ -13,13 +13,6 @@ export const homeType = defineField({
     groups: GROUPS,
     fields: [
         defineField({
-            // should match 'languageField' plugin configuration setting, if customized
-            name: "language",
-            type: "string",
-            readOnly: true,
-            hidden: true,
-        }),
-        defineField({
             name: "hero",
             title: "Hero section",
             type: "heroHome",
