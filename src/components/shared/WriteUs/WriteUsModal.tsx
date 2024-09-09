@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { HomePageProps } from "@/types/sanityInterfaces";
 
 import { Button } from "../Button";
 import { IconCloseX } from "../Icons/IconCloseX";
@@ -14,6 +15,7 @@ import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
     isError: boolean;
+    data?: HomePageProps;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
     setIsNotificationShawn: (
         value: boolean | ((prev: boolean) => boolean)
@@ -21,20 +23,28 @@ interface WriteUsModalProps {
     className?: string;
 }
 
-export const WriteUsModal = ({
-    isError,
-    setIsError,
-    setIsNotificationShawn,
-    className,
-}: WriteUsModalProps) => {
+export const WriteUsModal = (
+    {
+        isError,
+        setIsError,
+        setIsNotificationShawn,
+        className,
+    }: WriteUsModalProps,
+    { data }: HomePageProps
+) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
+    console.log(data?.ctaSectionJoinUs?.title);
 
     return (
         <div className={className}>
-            <Button onClick={onOpen}>{getTranslation("order")}</Button>
+            <Button onClick={onOpen}>
+                {data?.ctaSectionJoinUs?.title
+                    ? data.ctaSectionJoinUs.title
+                    : getTranslation("order")}
+            </Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}

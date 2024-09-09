@@ -1,12 +1,10 @@
 import { useTranslations } from "next-intl";
 
-import { Home } from "../../../types/sanity.types";
+import { HomePageProps } from "@/types/sanityInterfaces";
+
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
-export interface HomePageProps {
-    data: Home | null;
-}
 export const HeroInfo = ({ data }: HomePageProps) => {
     const getTranslation = useTranslations();
     return (
@@ -20,7 +18,7 @@ export const HeroInfo = ({ data }: HomePageProps) => {
                     : getTranslation("Hero.heroInfoText")}
             </h1>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                <WriteUs />
+                {data?.ctaSectionJoinUs && <WriteUs data={data} />}
                 <JoinUsButton />
             </div>
         </div>
