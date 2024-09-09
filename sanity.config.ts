@@ -40,7 +40,7 @@ export default defineConfig({
         documentInternationalization({
             // Required configuration
             supportedLanguages: SUPPORTED_LANGUAGES,
-            schemaTypes: ["home", "settings"],
+            schemaTypes: ["settings"],
         }),
         internationalizedArray({
             languages: SUPPORTED_LANGUAGES,
@@ -48,6 +48,7 @@ export default defineConfig({
             fieldTypes: [
                 "string",
                 "text",
+                "portableText",
                 "portableTextSimple",
                 "portableColorTitle",
             ],

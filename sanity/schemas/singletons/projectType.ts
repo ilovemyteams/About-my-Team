@@ -83,6 +83,16 @@ export const projectType = defineField({
             name: "image",
             description: "Project image to show in portfolio",
             type: "image",
+            fields: [
+                {
+                    name: "caption",
+                    type: "internationalizedArrayString",
+                    title: "Caption",
+                    description:
+                        "A brief description of what is shown in the picture",
+                    validation: rule => rule.required(),
+                },
+            ],
             title: "Project image",
             validation: rule => rule.required(),
         }),
