@@ -33,6 +33,7 @@ export const faqType = defineField({
         }),
         defineField({
             name: "image",
+            title: "Question image",
             description: "Question image to show in the all questions page",
             type: "image",
             fields: [
@@ -45,15 +46,15 @@ export const faqType = defineField({
                     validation: rule => rule.required(),
                 },
             ],
-            title: "Question image",
             validation: rule => rule.required(),
         }),
     ],
     preview: {
         select: {
             title: "question",
+            media: "image",
         },
-        prepare({ title }) {
+        prepare({ title, media }) {
             if (!title) {
                 return {
                     title: "No question title",
@@ -65,6 +66,7 @@ export const faqType = defineField({
                 )?.value || "No question title";
             return {
                 title: englishTitle,
+                media: media || undefined,
             };
         },
     },
