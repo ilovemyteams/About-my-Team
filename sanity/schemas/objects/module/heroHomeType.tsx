@@ -4,6 +4,10 @@ export const heroHomeType = defineField({
     name: "heroHome",
     title: "Hero",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "title",

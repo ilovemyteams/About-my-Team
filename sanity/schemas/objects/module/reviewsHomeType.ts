@@ -4,6 +4,10 @@ export const reviewsHomeType = defineField({
     name: "reviewsHome",
     title: "Reviews",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",

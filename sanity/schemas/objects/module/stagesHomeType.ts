@@ -4,6 +4,10 @@ export const stagesHomeType = defineField({
     name: "stagesHome",
     title: "Stages",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",

@@ -6,7 +6,10 @@ export const callToActionType = defineField({
     title: "Call to action",
     type: "object",
     icon: BlockElementIcon,
-
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "title",

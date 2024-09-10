@@ -4,6 +4,10 @@ export const buttonType = defineField({
     name: "button",
     title: "Button",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "buttonName",

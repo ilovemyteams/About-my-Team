@@ -1,7 +1,7 @@
 import { HelpCircleIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const faqType = defineField({
     name: "faq",
@@ -9,6 +9,14 @@ export const faqType = defineField({
     type: "document",
     icon: HelpCircleIcon,
     fields: [
+        defineField({
+            name: "numberOfLikes",
+            type: "number",
+            title: "Number of likes",
+            description:
+                "The number of likes is a read-only field and will be updated by customers through the webpage.",
+            readOnly: true,
+        }),
         defineField({
             name: "question",
             type: "internationalizedArrayString",

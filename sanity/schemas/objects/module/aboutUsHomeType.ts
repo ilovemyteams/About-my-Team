@@ -1,7 +1,7 @@
 import { CheckmarkIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const aboutUsItemType = defineField({
     name: "aboutUsItem",
@@ -36,6 +36,10 @@ export const aboutUsHomeSectionType = defineField({
     name: "aboutUsHomeSection",
     title: "About us Section",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",
