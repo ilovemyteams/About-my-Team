@@ -14,18 +14,18 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
     };
 
     const style = isActive
-        ? "text-red mb-1 animate-pulsationBrokenHeart"
-        : "text-grey mb-1";
+        ? "text-red my-2 animate-pulsationBrokenHeart"
+        : "text-grey my-2";
     return (
         <button
             onClick={toggleLike}
-            className="text-purple-50 flex items-center gap-2 mx-[3px] my-2"
+            className="text-purple-50 flex gap-2 "
             aria-label="Like"
         >
             <div className={style}>
                 <IconLike isActive={isActive} />
             </div>
-            <span>{likes}</span>
+            <span className="py-2.5">{likes}</span>
         </button>
     );
 };
