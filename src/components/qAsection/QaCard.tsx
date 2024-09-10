@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { EstimatedReadingTime } from "../shared/EstimatedReadingTime";
 import LikeButton from "../shared/LikeButton";
-import { ReadTimeEst } from "../shared/ReadTimeEst";
 import { SharePopover } from "../shared/SharePopover";
 export interface FaqCardItemProps {
     data: {
@@ -48,7 +48,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                     </h2>
                     <p className="font-geist text-sm text-grey">{answerText}</p>
                     <div className="flex justify-between">
-                        <ReadTimeEst
+                        <EstimatedReadingTime
                             className="text-purple-50"
                             text={answerText}
                         />
