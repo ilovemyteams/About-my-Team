@@ -20,19 +20,23 @@ export const HeroInfo = ({ data }: HomePageProps) => {
                     : getTranslation("Hero.heroInfoText")}
             </h1>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                {data?.ctaSectionOrder?.ctaButton?.buttonName && (
+                {data?.ctaSectionOrder?.ctaButton?.buttonName ? (
                     <WriteUs
                         buttonName={
                             data?.ctaSectionOrder?.ctaButton?.buttonName
                         }
                     />
+                ) : (
+                    <WriteUs />
                 )}
-                {data?.ctaSectionJoinUs?.ctaButton?.buttonName && (
+                {data?.ctaSectionJoinUs?.ctaButton?.buttonName ? (
                     <JoinUsButton
                         buttonName={
                             data?.ctaSectionJoinUs?.ctaButton?.buttonName
                         }
                     />
+                ) : (
+                    <JoinUsButton />
                 )}
             </div>
         </div>
