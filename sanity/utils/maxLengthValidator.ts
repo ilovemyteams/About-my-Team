@@ -1,10 +1,12 @@
-import { PortableTextSimple } from "@/types/sanity.types";
+import { PortableColorTitle, PortableTextSimple } from "@/types/sanity.types";
 
 import { calculateTotalLength } from "./calculateTotalLength";
 
 export const maxLengthValidator =
     (maxLength: number) =>
-    (value: PortableTextSimple | undefined): true | string => {
+    (
+        value: PortableTextSimple | PortableColorTitle | undefined
+    ): true | string => {
         if (Array.isArray(value)) {
             const length = calculateTotalLength(value);
             return (
