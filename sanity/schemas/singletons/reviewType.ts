@@ -1,7 +1,7 @@
 import { CommentIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const reviewType = defineField({
     name: "review",

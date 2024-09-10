@@ -2,7 +2,7 @@ import { ProjectsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const projectType = defineField({
     name: "project",

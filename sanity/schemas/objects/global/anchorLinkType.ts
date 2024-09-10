@@ -1,6 +1,6 @@
 import { defineType } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const anchorLinkType = defineType({
     title: "Anchor Link",
