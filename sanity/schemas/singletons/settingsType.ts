@@ -22,8 +22,8 @@ export const settingsType = defineType({
             icon: MenuIcon,
         },
         {
-            name: "productOptions",
-            title: "Product options",
+            name: "buttons",
+            title: "Buttons",
             icon: ControlsIcon,
         },
         {
@@ -74,6 +74,7 @@ export const settingsType = defineType({
             name: "buttonBuyMeCoffee",
             title: "Button Buy me a coffee",
             type: "button",
+            group: "buttons",
             options: {
                 collapsed: false,
                 collapsible: true,
