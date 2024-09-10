@@ -10,11 +10,11 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
-import { IconCloseX } from "../Icons/IconCloseX";
-import { IconHeart } from "../Icons/IconHeart";
-import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { IconCloseX } from "../../Icons/IconCloseX";
+import { IconHeart } from "../../Icons/IconHeart";
+import { BgImagesDesktop } from "../modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "../modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "../modalBgImages/notificationModalBgImages/BgImagesTablet";
 
 interface NotififcationModalProps {
     isNotificationShawn: boolean;

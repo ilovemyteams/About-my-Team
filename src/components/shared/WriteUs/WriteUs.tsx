@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { NotificationModal } from "./NotificationModal";
+import { NotificationModal } from "../SendUserDataModals/modals/NotificationModal";
 import { WriteUsModal } from "./WriteUsModal";
 
 interface WriteUsProps {

@@ -7,10 +7,10 @@ import { useScreenSize } from "@/src/hooks/useScreenSize";
 
 import { Button } from "../Button";
 import { IconCloseX } from "../Icons/IconCloseX";
+import { BgImagesDesktop } from "../SendUserDataModals/modalBgImages/formModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "../SendUserDataModals/modalBgImages/formModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "../SendUserDataModals/modalBgImages/formModalBgImages/BgImagesTablet";
 import { CustomerForm } from "./CustomerForm";
-import { BgImagesDesktop } from "./modalBgImages/writeUsBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
-import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
     isError: boolean;

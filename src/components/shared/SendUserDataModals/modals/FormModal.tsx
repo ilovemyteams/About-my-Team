@@ -1,30 +1,51 @@
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
-import { useTranslations } from "next-intl";
-import { Dispatch, SetStateAction } from "react";
+import axios from "axios";
+import { Dispatch, ElementType, SetStateAction } from "react";
 
 import { Button } from "@/src/components/shared/Button";
 import { IconCloseX } from "@/src/components/shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "@/src/components/shared/WriteUs/modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "@/src/components/shared/SendUserDataModals/modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "@/src/components/shared/SendUserDataModals/modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "@/src/components/shared/SendUserDataModals/modalBgImages/notificationModalBgImages/BgImagesTablet";
 
-import { FaqCtaForm } from "../form/FaqCtaForm";
-
-interface FaqCtaModalProps {
+interface FormModalProps {
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotification: Dispatch<SetStateAction<boolean>>;
+    formComponent: ElementType;
+    triggerBtnTitle: string;
 }
 
-export const FaqCtaModal = ({
+export const FormModal = ({
     setIsError,
     setIsNotification,
-}: FaqCtaModalProps) => {
+    formComponent: FormComponent,
+    triggerBtnTitle,
+}: FormModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
-    const getTranslation = useTranslations("FaqPage");
+
+    const submitFn = async (path: string, data: { [key: string]: string }) => {
+        try {
+            await axios({
+                method: "post",
+                url: path,
+                data,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+            onClose();
+        } catch (error) {
+            setIsError(true);
+            return error;
+        } finally {
+            setIsNotification(true);
+        }
+    };
 
     return (
         <>
-            <Button onClick={onOpen}>{getTranslation("ctaButton")}</Button>
+            <Button onClick={onOpen}>{triggerBtnTitle}</Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
@@ -51,11 +72,7 @@ export const FaqCtaModal = ({
                     >
                         <IconCloseX />
                     </button>
-                    <FaqCtaForm
-                        onClose={onClose}
-                        setIsError={setIsError}
-                        setIsNotification={setIsNotification}
-                    />
+                    <FormComponent submitFn={submitFn} />
                 </ModalContent>
             </Modal>
         </>

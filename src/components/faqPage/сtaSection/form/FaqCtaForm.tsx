@@ -1,14 +1,10 @@
-import axios from "axios";
 import { Form, Formik } from "formik";
-import { useLocale, useTranslations } from "next-intl";
-import { Dispatch, SetStateAction } from "react";
+import { useTranslations } from "next-intl";
 
-import { Button } from "@/src/components/shared/Button";
-import { IconLoader } from "@/src/components/shared/Icons/IconLoader";
+import { CustomField } from "@/src/components/shared/FormParts/CustomField";
+import { PolicyLabel } from "@/src/components/shared/FormParts/PolicyLabel";
+import { SubmitButton } from "@/src/components/shared/FormParts/SubmitButton";
 import { FaqWriteQuestionValidation } from "@/src/schemas/faqWriteQuestionValidationSchema";
-import { selectedLink } from "@/src/utils/selectedLink";
-
-import { CustomField } from "./CustomField";
 
 interface FormValues {
     name: string;
@@ -18,16 +14,10 @@ interface FormValues {
 
 export type StatusType = null | string;
 interface FaqCtaFormProps {
-    onClose: () => void;
-    setIsError: Dispatch<SetStateAction<boolean>>;
-    setIsNotification: Dispatch<SetStateAction<boolean>>;
+    submitFn: (path: string, data: { [key: string]: string }) => void;
 }
 
-export const FaqCtaForm = ({
-    onClose,
-    setIsError,
-    setIsNotification,
-}: FaqCtaFormProps) => {
+export const FaqCtaForm = ({ submitFn }: FaqCtaFormProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const validationSchema = FaqWriteQuestionValidation();
@@ -40,32 +30,14 @@ export const FaqCtaForm = ({
 
     const initialStatus: StatusType = null;
 
-    const locale = useLocale();
-    const policyURL = selectedLink(locale);
-
     const onSubmit = async (values: FormValues) => {
-        try {
-            const data = {
-                name: values.name.trim(),
-                email: values.email.toLowerCase().trim(),
-                message: values.message.trim(),
-            };
-            await axios({
-                method: "post",
-                url: "/api/sendQuestion",
-                data,
-                headers: {
-                    "Content-Type": "application/json",
-                },
-            });
+        const data = {
+            name: values.name.trim(),
+            email: values.email.toLowerCase().trim(),
+            message: values.message.trim(),
+        };
 
-            onClose();
-        } catch (error) {
-            setIsError(true);
-            return error;
-        } finally {
-            setIsNotification(true);
-        }
+        submitFn("/api/sendQuestion", data);
     };
 
     return (
@@ -80,14 +52,17 @@ export const FaqCtaForm = ({
                 errors,
                 touched,
                 handleSubmit,
-                handleBlur,
+
                 isValid,
                 dirty,
                 status,
                 setStatus,
                 isSubmitting,
             }) => (
-                <Form onSubmit={handleSubmit} className="flex flex-col ">
+                <Form
+                    onSubmit={handleSubmit}
+                    className="flex flex-col items-center"
+                >
                     <div className="w-full h-[1px] bg-purple-strokeLight dark:bg-purple-stroke mb-3"></div>
                     <CustomField
                         name="name"
@@ -97,7 +72,6 @@ export const FaqCtaForm = ({
                         placeholder={getTranslation("namePlaceholder")}
                         isError={!!(errors.name && touched.name)}
                         autoFocus={true}
-                        handleBlur={handleBlur}
                         status={status}
                         setStatus={setStatus}
                     />
@@ -109,7 +83,6 @@ export const FaqCtaForm = ({
                         placeholder={getTranslation("emailPlaceholder")}
                         isError={!!(errors.email && touched.email)}
                         autoFocus={false}
-                        handleBlur={handleBlur}
                         status={status}
                         setStatus={setStatus}
                     />
@@ -121,7 +94,6 @@ export const FaqCtaForm = ({
                         placeholder={getTranslation("questionLabel")}
                         isError={!!(errors.message && touched.message)}
                         autoFocus={false}
-                        handleBlur={handleBlur}
                         status={status}
                         setStatus={setStatus}
                     />
@@ -137,32 +109,13 @@ export const FaqCtaForm = ({
                         >
                             {getTranslation("requiredField")}
                         </p>
-                        <p className="max-w-[65%]">
-                            {getTranslation("informedAgreement")}
-                            <a
-                                href={policyURL}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-purple-130 dark:text-purple-50"
-                            >
-                                {getTranslation("rulesLink")}
-                            </a>
-                        </p>
+                        <PolicyLabel />
                     </div>
-                    <div className="relative mx-auto">
-                        <Button
-                            type="submit"
-                            color="grey"
-                            className="mx-auto"
-                            disabled={!dirty || !isValid}
-                        >
-                            {getTranslation("submitButton")}
-                        </Button>
-                        <IconLoader
-                            className={`${isSubmitting ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
-                             tab:left-[8px] w-[40px] h-[40px] animate-rotation`}
-                        />
-                    </div>
+                    <SubmitButton
+                        isActiveLoader={isSubmitting}
+                        isDisabled={!dirty || !isValid || isSubmitting}
+                        title={getTranslation("submitButton")}
+                    />
                 </Form>
             )}
         </Formik>
