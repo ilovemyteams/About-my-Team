@@ -9,7 +9,7 @@ const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
 export const JoinUsButton = ({
     buttonName,
 }: {
-    buttonName: InternationalizedArrayString;
+    buttonName?: InternationalizedArrayString;
 }) => {
     const getTranslation = useTranslations();
     const buttonNameString = String(buttonName);
