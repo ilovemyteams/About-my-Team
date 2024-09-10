@@ -1,8 +1,10 @@
+import { PortableTextSimple } from "@/types/sanity.types";
+
 import { calculateTotalLength } from "./calculateTotalLength";
 
 export const maxLengthValidator =
     (maxLength: number) =>
-    (value: any): true | string => {
+    (value: PortableTextSimple | undefined): true | string => {
         if (Array.isArray(value)) {
             const length = calculateTotalLength(value);
             return (

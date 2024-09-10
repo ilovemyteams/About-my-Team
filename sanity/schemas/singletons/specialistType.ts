@@ -1,5 +1,5 @@
-import { defineField } from "sanity";
 import { RobotIcon } from "@sanity/icons";
+import { defineField } from "sanity";
 
 export const specialistType = defineField({
     name: "specialist",
