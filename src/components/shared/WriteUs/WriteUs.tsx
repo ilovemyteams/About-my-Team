@@ -8,7 +8,7 @@ import { WriteUsModal } from "./WriteUsModal";
 
 interface WriteUsProps {
     className?: string;
-    buttonName: InternationalizedArrayString;
+    buttonName?: InternationalizedArrayString;
 }
 
 export const WriteUs = ({ className, buttonName }: WriteUsProps) => {
