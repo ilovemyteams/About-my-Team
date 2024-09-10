@@ -15,5 +15,11 @@ export const headerType = defineField({
             title: "Header Navigation Menu",
             of: [{ type: "menuItem" }],
         }),
+        defineField({
+            name: "socialLinks",
+            type: "array",
+            title: "Header Social Links",
+            of: [{ type: "socialLinks" }],
+        }),
     ],
 });

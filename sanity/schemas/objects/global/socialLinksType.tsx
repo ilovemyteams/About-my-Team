@@ -16,7 +16,7 @@ export const socialLinksType = defineField({
         }),
         defineField({
             name: "url",
-            type: "url",
+            type: "linkExternal",
             title: "URL",
         }),
     ],
