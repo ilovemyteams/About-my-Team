@@ -34,7 +34,6 @@ export const WriteUsModal = ({
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
-    console.log("WriteUsModal", buttonName);
     const buttonNameString = String(buttonName);
 
     return (
