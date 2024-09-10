@@ -52,7 +52,7 @@ export const settingsType = defineType({
         }),
         defineField({
             name: "footer",
-            type: "footerSettings",
+            type: "footer",
             group: "navigation",
         }),
 
