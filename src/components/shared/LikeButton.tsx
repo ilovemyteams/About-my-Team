@@ -19,7 +19,7 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
     return (
         <button
             onClick={toggleLike}
-            className="flex items-center gap-2 mx-[3px] my-2"
+            className="text-purple-50 flex items-center gap-2 mx-[3px] my-2"
             aria-label="Like"
         >
             <div className={style}>
