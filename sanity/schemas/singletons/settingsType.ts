@@ -46,8 +46,8 @@ export const settingsType = defineType({
             hidden: true,
         }),
         defineField({
-            name: "menu",
-            type: "menu",
+            name: "header",
+            type: "header",
             group: "navigation",
         }),
         defineField({
