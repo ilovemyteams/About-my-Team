@@ -14,7 +14,7 @@ import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
-    buttonName: InternationalizedArrayString;
+    buttonName?: InternationalizedArrayString;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
     setIsNotificationShawn: (
