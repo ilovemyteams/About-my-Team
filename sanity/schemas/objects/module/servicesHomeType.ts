@@ -34,11 +34,5 @@ export const servicesHomeType = defineField({
             type: "internationalizedArrayText",
             validation: Rule => Rule.required(),
         }),
-        defineField({
-            name: "buttonWriteUs",
-            title: "Button Write Us",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
     ],
 });
