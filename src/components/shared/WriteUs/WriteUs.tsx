@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import { FormModal } from "../ModalsWithForm/modals/FormModal";
@@ -13,6 +14,8 @@ export const WriteUs = ({ className }: WriteUsProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
 
+    const getTranslation = useTranslations("Buttons");
+
     return (
         <>
             <FormModal
@@ -21,7 +24,7 @@ export const WriteUs = ({ className }: WriteUsProps) => {
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
                 formComponent={CustomerForm}
-                triggerBtnTitle="title"
+                triggerBtnTitle={getTranslation("order")}
             />
             <NotificationModal
                 isNotificationShawn={isNotificationShawn}

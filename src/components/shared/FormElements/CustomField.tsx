@@ -1,4 +1,5 @@
 import { ErrorMessage, Field } from "formik";
+import { FocusEvent } from "react";
 
 interface CustomFieldProps {
     value: string;
@@ -10,6 +11,7 @@ interface CustomFieldProps {
     autoFocus: boolean;
     status: null | string;
     setStatus: (status: null | string) => void;
+    handleBlur: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
 export const CustomField = ({
@@ -22,23 +24,25 @@ export const CustomField = ({
     autoFocus,
     status,
     setStatus,
+    handleBlur,
 }: CustomFieldProps) => {
     const onFocusField = () => {
         setStatus(name);
     };
 
-    const onBlurField = () => {
+    const onBlurField = (
+        e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         setStatus(null);
+        handleBlur(e);
     };
 
     const heightStyles =
         type === "textarea" ? "h-[76px] pc:h-[68px]" : "h-[28px]";
 
-    const borderStyles = isError
+    const borderAndColorStyles = isError
         ? "border-error focus:border-error text-error"
-        : value === ""
-          ? "border-purple-strokeLight dark:border-purple-stroke focus:border-greyLight dark:focus:border-grey text-inherit"
-          : "border-greyLight dark:border-grey focus:border-greyLight dark:focus:border-grey text-inherit";
+        : `text-purple-200 dark:text-grey focus:border-greyLight dark:focus:border-grey ${value === "" ? "border-purple-strokeLight dark:border-purple-stroke" : "border-greyLight dark:border-grey"}`;
 
     const isActiveEmptyField = status === name || value !== "";
 
@@ -59,7 +63,7 @@ export const CustomField = ({
                 placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
                 onBlur={onBlurField}
-                className={`block w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none ${heightStyles}  ${borderStyles} font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke resize-none scroll`}
+                className={`block appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
             <ErrorMessage
                 name={name}

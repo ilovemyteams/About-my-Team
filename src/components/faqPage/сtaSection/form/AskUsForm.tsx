@@ -61,7 +61,7 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                 errors,
                 touched,
                 handleSubmit,
-
+                handleBlur,
                 isValid,
                 dirty,
                 status,
@@ -83,6 +83,7 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                         autoFocus={true}
                         status={status}
                         setStatus={setStatus}
+                        handleBlur={handleBlur}
                     />
                     <CustomField
                         name="email"
@@ -94,6 +95,7 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                         autoFocus={false}
                         status={status}
                         setStatus={setStatus}
+                        handleBlur={handleBlur}
                     />
                     <CustomField
                         name="message"
@@ -105,6 +107,7 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                         autoFocus={false}
                         status={status}
                         setStatus={setStatus}
+                        handleBlur={handleBlur}
                     />
                     <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2">
                         <p

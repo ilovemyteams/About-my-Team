@@ -9,7 +9,7 @@ export const PolicyLabel = () => {
     const policyURL = selectedLink(locale);
 
     return (
-        <p className="max-w-[65%]">
+        <p className="max-w-[65%] text-xs tab:text-sm">
             {getTranslation("informedAgreement")}
             <a
                 href={policyURL}
