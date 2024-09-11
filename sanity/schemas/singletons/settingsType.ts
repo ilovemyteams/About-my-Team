@@ -74,6 +74,31 @@ export const settingsType = defineType({
             name: "buttonBuyMeCoffee",
             title: "Button Buy me a coffee",
             type: "button",
+            group: "buttons",
+            options: {
+                collapsed: false,
+                collapsible: true,
+            },
+        }),
+        defineField({
+            name: "buttonJoinUS",
+            title: "Button Join Us",
+            type: "button",
+            group: "buttons",
+            options: {
+                collapsed: false,
+                collapsible: true,
+            },
+        }),
+        defineField({
+            name: "buttonOrder",
+            title: "Button Order",
+            type: "button",
+            group: "buttons",
+            options: {
+                collapsed: false,
+                collapsible: true,
+            },
         }),
     ],
     preview: {
