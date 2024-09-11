@@ -10,11 +10,13 @@ import { NotificationModal } from "./modals/NotificationModal";
 interface ModalsWithFormProps {
     formComponent: ComponentType<FormInModalProps>;
     triggerBtnTitle: string;
+    className?: string;
 }
 
 export const ModalsWithForm = ({
     formComponent: FormComponent,
     triggerBtnTitle,
+    className,
 }: ModalsWithFormProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
@@ -27,6 +29,7 @@ export const ModalsWithForm = ({
                 setIsNotificationShawn={setIsNotificationShawn}
                 formComponent={FormComponent}
                 triggerBtnTitle={triggerBtnTitle}
+                className={className}
             />
 
             <NotificationModal
