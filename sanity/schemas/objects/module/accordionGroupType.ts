@@ -7,6 +7,10 @@ export const accordionGroupType = defineField({
     title: "Accordion Group",
     type: "object",
     icon: false,
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "title",

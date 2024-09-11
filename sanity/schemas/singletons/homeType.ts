@@ -87,12 +87,6 @@ export const homeType = defineField({
             description: "Call to action section Ready to order",
             group: "cta",
         }),
-        defineField({
-            name: "seo",
-            title: "SEO",
-            type: "seo",
-            group: "seo",
-        }),
     ],
     preview: {
         prepare() {

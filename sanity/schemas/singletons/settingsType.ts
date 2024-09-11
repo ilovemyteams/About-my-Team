@@ -14,6 +14,10 @@ export const settingsType = defineType({
     title: TITLE,
     type: "document",
     icon: CogIcon,
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     groups: [
         {
             default: true,

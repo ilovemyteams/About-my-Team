@@ -4,6 +4,10 @@ export const servicesHomeType = defineField({
     name: "servicesHome",
     title: "Services",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",

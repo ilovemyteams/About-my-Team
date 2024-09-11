@@ -4,6 +4,10 @@ export const portfolioHomeType = defineField({
     name: "portfolioHome",
     title: "Portfolio",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",
