@@ -10,7 +10,8 @@ import { buttonType } from "./objects/global/buttonType";
 import { customerType } from "./objects/global/customerType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
-import { menuType } from "./objects/global/menuType";
+import { headerType } from "./objects/global/headerType";
+import { menuItemType } from "./objects/global/menuItemType";
 import { milestoneType } from "./objects/global/milestoneType";
 import { notFoundPageType } from "./objects/global/notFoundPageType";
 import { socialLinksType } from "./objects/global/socialLinksType";
@@ -59,7 +60,7 @@ const objects: ObjectDefinition[] = [
     imageFeaturesType,
     imageFeatureType,
     instagramType,
-    menuType,
+    headerType,
     notFoundPageType,
     seoType,
     timelineType,
@@ -78,11 +79,10 @@ const objects: ObjectDefinition[] = [
     stagesHomeType,
     stageType,
     faqHomeType,
+    menuItemType,
 ];
 
-import { menuLinksType } from "./objects/global/menuLinksType";
-
-const arrays: ArrayDefinition[] = [menuLinksType];
+const arrays: ArrayDefinition[] = [];
 
 import { portableColorTitleType } from "./portableText/portableColorTitleType";
 import { portableTextSimpleType } from "./portableText/portableTextSimpleType";
