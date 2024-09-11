@@ -46,13 +46,13 @@ export const settingsType = defineType({
             hidden: true,
         }),
         defineField({
-            name: "menu",
-            type: "menu",
+            name: "header",
+            type: "header",
             group: "navigation",
         }),
         defineField({
             name: "footer",
-            type: "footerSettings",
+            type: "footer",
             group: "navigation",
         }),
 
@@ -74,31 +74,6 @@ export const settingsType = defineType({
             name: "buttonBuyMeCoffee",
             title: "Button Buy me a coffee",
             type: "button",
-            group: "buttons",
-            options: {
-                collapsed: false,
-                collapsible: true,
-            },
-        }),
-        defineField({
-            name: "buttonJoinUS",
-            title: "Button Join Us",
-            type: "button",
-            group: "buttons",
-            options: {
-                collapsed: false,
-                collapsible: true,
-            },
-        }),
-        defineField({
-            name: "buttonOrder",
-            title: "Button Order",
-            type: "button",
-            group: "buttons",
-            options: {
-                collapsed: false,
-                collapsible: true,
-            },
         }),
     ],
     preview: {

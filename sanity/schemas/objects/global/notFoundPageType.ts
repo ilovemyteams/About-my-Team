@@ -5,6 +5,10 @@ export const notFoundPageType = defineField({
     title: "404 page",
     type: "object",
     group: "notFoundPage",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "title",
