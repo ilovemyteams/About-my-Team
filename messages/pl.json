@@ -130,7 +130,8 @@
         "share": "Udostępnić",
         "buyMeACoffe": "Poczęstować kawą",
         "learnMore": "Dowiedz się więcej",
-        "goBack": "Powrót"
+        "goBack": "Powrót",
+        "writeUs": "napisz do nas"
     },
     "Footer": {
         "titleFirstWord": "Zacznij ",
@@ -254,7 +255,6 @@
         "breadcrumbItemAbout": "O nas"
     },
     "FaqPage": {
-        "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!",
-        "ctaButton": "napisz do nas"
+        "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
     }
 }

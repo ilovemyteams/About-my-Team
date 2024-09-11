@@ -1,11 +1,9 @@
-"use client";
 import { useTranslations } from "next-intl";
 
 import { SectionCTA } from "@/src/components/shared/SectionCTA";
-import { SendUserDataModals } from "@/src/components/shared/SendUserDataModals/SendUserDataModals";
 import { TitleCTAWrapper } from "@/src/components/shared/TitleCTAWrapper";
 
-import { FaqCtaForm } from "./form/FaqCtaForm";
+import { AskUsModal } from "./modal/AskUsModal";
 
 export const FaqSectionCta = () => {
     const getTranslation = useTranslations("FaqPage");
@@ -15,10 +13,7 @@ export const FaqSectionCta = () => {
             <TitleCTAWrapper className="tab:flex-1">
                 {getTranslation("ctaText")}
             </TitleCTAWrapper>
-            <SendUserDataModals
-                formComponent={FaqCtaForm}
-                triggerBtnTitle={getTranslation("ctaButton")}
-            />
+            <AskUsModal />
         </SectionCTA>
     );
 };

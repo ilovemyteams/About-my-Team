@@ -2,21 +2,13 @@
 import axios from "axios";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useLocale, useTranslations } from "next-intl";
-import { useState } from "react";
 
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { selectedLink } from "@/src/utils/selectedLink";
+import { FormInModalProps } from "@/types/FormInModalProps";
 
 import { Button } from "../Button";
 import { IconLoader } from "../Icons/IconLoader";
-
-interface CustomerFormProps {
-    onClose?: () => void;
-    setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
-    setIsNotificationShawn: (
-        value: boolean | ((prev: boolean) => boolean)
-    ) => void;
-}
 
 export interface ValuesWriteUsFormType {
     name: string;
@@ -40,13 +32,7 @@ const textAreaStyles =
 const errorStyles =
     "absolute bottom-[-2px] right-0 text-xxs text-error text-right";
 
-export const CustomerForm = ({
-    onClose,
-    setIsError,
-    setIsNotificationShawn,
-}: CustomerFormProps) => {
-    const [isLoading, setIsLoading] = useState(false);
-
+export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const validationSchema = WriteUsValidation();
@@ -62,8 +48,7 @@ export const CustomerForm = ({
     };
 
     const submitForm = async (values: ValuesWriteUsFormType) => {
-        try {
-            setIsLoading(true);
+        const onSendData = async () => {
             const data = {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
@@ -75,20 +60,14 @@ export const CustomerForm = ({
             };
             await axios({
                 method: "post",
-                url: "/api/sendData",
+                url: "/api/sendCustomerData",
                 data,
                 headers: {
                     "Content-Type": "application/json",
                 },
             });
-            onClose?.();
-        } catch (error) {
-            setIsError(true);
-            return error;
-        } finally {
-            setIsLoading(false);
-            setIsNotificationShawn(true);
-        }
+        };
+        await notificationHandler(onSendData);
     };
     const locale = useLocale();
     const policyURL = selectedLink(locale);
@@ -109,6 +88,7 @@ export const CustomerForm = ({
                 errors,
                 touched,
                 handleBlur,
+                isSubmitting,
             }) => (
                 <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
                     <label className={`${labelStyles}`}>
@@ -312,13 +292,13 @@ export const CustomerForm = ({
                     <div className="relative">
                         <Button
                             type="submit"
-                            disabled={!(dirty && isValid) || isLoading}
+                            disabled={!(dirty && isValid) || isSubmitting}
                             color="grey"
                         >
                             {getTranslation("submitButton")}
                         </Button>
                         <IconLoader
-                            className={`${isLoading ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
+                            className={`${isSubmitting ? "block" : "hidden"} absolute top-[4px] left-[4px] tab:top-[8px]
                              tab:left-[8px] w-[40px] h-[40px] animate-rotation`}
                         />
                     </div>

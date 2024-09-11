@@ -59,7 +59,7 @@ export const CustomField = ({
                 placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
                 onBlur={onBlurField}
-                className={`block w-full bg-transparent py-1 outline-none border-b-[1px] ${heightStyles}  ${borderStyles} font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke resize-none scroll`}
+                className={`block w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none ${heightStyles}  ${borderStyles} font-caviar text-baseb placeholder-purple-strokeLight dark:placeholder-purple-stroke resize-none scroll`}
             ></Field>
             <ErrorMessage
                 name={name}

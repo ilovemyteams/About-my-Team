@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 
-import { NotificationModal } from "../SendUserDataModals/modals/NotificationModal";
-import { WriteUsModal } from "./WriteUsModal";
+import { FormModal } from "../ModalsWithForm/modals/FormModal";
+import { NotificationModal } from "../ModalsWithForm/modals/NotificationModal";
+import { CustomerForm } from "./CustomerForm";
 
 interface WriteUsProps {
     className?: string;
@@ -14,11 +15,13 @@ export const WriteUs = ({ className }: WriteUsProps) => {
 
     return (
         <>
-            <WriteUsModal
+            <FormModal
                 className={className}
                 isError={isError}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
+                formComponent={CustomerForm}
+                triggerBtnTitle="title"
             />
             <NotificationModal
                 isNotificationShawn={isNotificationShawn}

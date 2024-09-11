@@ -1,10 +1,12 @@
+import axios from "axios";
 import { Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
 
-import { CustomField } from "@/src/components/shared/FormParts/CustomField";
-import { PolicyLabel } from "@/src/components/shared/FormParts/PolicyLabel";
-import { SubmitButton } from "@/src/components/shared/FormParts/SubmitButton";
+import { CustomField } from "@/src/components/shared/FormElements/CustomField";
+import { PolicyLabel } from "@/src/components/shared/FormElements/PolicyLabel";
+import { SubmitButton } from "@/src/components/shared/FormElements/SubmitButton";
 import { FaqWriteQuestionValidation } from "@/src/schemas/faqWriteQuestionValidationSchema";
+import { FormInModalProps } from "@/types/FormInModalProps";
 
 interface FormValues {
     name: string;
@@ -13,11 +15,8 @@ interface FormValues {
 }
 
 export type StatusType = null | string;
-interface FaqCtaFormProps {
-    submitFn: (path: string, data: { [key: string]: string }) => void;
-}
 
-export const FaqCtaForm = ({ submitFn }: FaqCtaFormProps) => {
+export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const validationSchema = FaqWriteQuestionValidation();
@@ -31,13 +30,23 @@ export const FaqCtaForm = ({ submitFn }: FaqCtaFormProps) => {
     const initialStatus: StatusType = null;
 
     const onSubmit = async (values: FormValues) => {
-        const data = {
-            name: values.name.trim(),
-            email: values.email.toLowerCase().trim(),
-            message: values.message.trim(),
+        const onSendData = async () => {
+            const data = {
+                name: values.name.trim(),
+                email: values.email.toLowerCase().trim(),
+                message: values.message.trim(),
+            };
+            await axios({
+                method: "post",
+                url: "/api/sendQuestionData",
+                data,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
         };
 
-        submitFn("/api/sendQuestion", data);
+        await notificationHandler(onSendData);
     };
 
     return (

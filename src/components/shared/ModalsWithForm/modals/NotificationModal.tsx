@@ -16,7 +16,7 @@ import { BgImagesDesktop } from "../modalBgImages/notificationModalBgImages/BgIm
 import { BgImagesMobile } from "../modalBgImages/notificationModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "../modalBgImages/notificationModalBgImages/BgImagesTablet";
 
-interface NotififcationModalProps {
+interface NotificationModalProps {
     isNotificationShawn: boolean;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
@@ -30,7 +30,7 @@ export const NotificationModal = ({
     isError,
     setIsError,
     setIsNotificationShawn,
-}: NotififcationModalProps) => {
+}: NotificationModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Notifications");
 

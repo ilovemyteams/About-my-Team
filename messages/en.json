@@ -128,7 +128,8 @@
         "share": "Share",
         "buyMeACoffe": "Treat with coffee",
         "learnMore": "Learn more",
-        "goBack": "Back"
+        "goBack": "Back",
+        "writeUs": "write to us"
     },
     "Footer": {
         "titleFirstWord": "Start ",
@@ -254,7 +255,6 @@
         "breadcrumbItemAbout": "About us"
     },
     "FaqPage": {
-        "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!",
-        "ctaButton": "write to us"
+        "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
     }
 }

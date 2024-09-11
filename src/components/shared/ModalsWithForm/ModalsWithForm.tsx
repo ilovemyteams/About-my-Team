@@ -1,19 +1,21 @@
 "use client";
 
-import { ElementType, useState } from "react";
+import { ComponentType, useState } from "react";
+
+import { FormInModalProps } from "@/types/FormInModalProps";
 
 import { FormModal } from "./modals/FormModal";
 import { NotificationModal } from "./modals/NotificationModal";
 
-interface SendUserDataModalsProps {
-    formComponent: ElementType;
+interface ModalsWithFormProps {
+    formComponent: ComponentType<FormInModalProps>;
     triggerBtnTitle: string;
 }
 
-export const SendUserDataModals = ({
+export const ModalsWithForm = ({
     formComponent: FormComponent,
     triggerBtnTitle,
-}: SendUserDataModalsProps) => {
+}: ModalsWithFormProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
 
@@ -21,7 +23,8 @@ export const SendUserDataModals = ({
         <>
             <FormModal
                 setIsError={setIsError}
-                setIsNotification={setIsNotificationShawn}
+                isError={isError}
+                setIsNotificationShawn={setIsNotificationShawn}
                 formComponent={FormComponent}
                 triggerBtnTitle={triggerBtnTitle}
             />
