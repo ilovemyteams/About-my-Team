@@ -78,11 +78,6 @@ export const settingsType = defineType({
             name: "buttonBuyMeCoffee",
             title: "Button Buy me a coffee",
             type: "button",
-            group: "buttons",
-            options: {
-                collapsed: false,
-                collapsible: true,
-            },
         }),
     ],
     preview: {

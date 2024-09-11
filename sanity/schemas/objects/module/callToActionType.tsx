@@ -18,12 +18,6 @@ export const callToActionType = defineField({
             validation: Rule => Rule.required(),
         }),
         defineField({
-            name: "ctaButton",
-            title: "CTA Button",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
             name: "description",
             title: "Section description (optional)",
             type: "internationalizedArrayPortableTextSimple",

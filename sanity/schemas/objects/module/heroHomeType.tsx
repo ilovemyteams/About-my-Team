@@ -24,17 +24,5 @@ export const heroHomeType = defineField({
             of: [{ type: "reference", to: [{ type: "project" }] }],
             validation: Rule => Rule.required(),
         }),
-        defineField({
-            name: "buttonJoinUS",
-            title: "Button Join Us",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
-            name: "buttonWriteUs",
-            title: "Button Write Us",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
     ],
 });
