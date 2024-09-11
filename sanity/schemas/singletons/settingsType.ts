@@ -63,7 +63,7 @@ export const settingsType = defineType({
         // Not found page
         defineField({
             name: "notFoundPage",
-            title: "404 page",
+            title: "Page 404",
             type: "notFoundPage",
             group: "notFoundPage",
         }),

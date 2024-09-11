@@ -2,7 +2,7 @@ import { defineField } from "sanity";
 
 export const notFoundPageType = defineField({
     name: "notFoundPage",
-    title: "404 page",
+    title: "Page 404",
     type: "object",
     group: "notFoundPage",
     options: {
@@ -12,13 +12,19 @@ export const notFoundPageType = defineField({
     fields: [
         defineField({
             name: "title",
-            type: "string",
+            title: "Page 404 Title",
+            type: "internationalizedArrayString",
             validation: Rule => Rule.required(),
         }),
         defineField({
-            name: "body",
-            type: "text",
-            rows: 2,
+            name: "description",
+            title: "Page description (optional)",
+            type: "internationalizedArrayText",
+        }),
+        defineField({
+            name: "goToHomeButton",
+            title: "Go to The Home Button",
+            type: "button",
         }),
     ],
 });
