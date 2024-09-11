@@ -1,7 +1,7 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const teamType = defineField({
     name: "team",

@@ -4,6 +4,10 @@ export const servicesHomeType = defineField({
     name: "servicesHome",
     title: "Services",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",
@@ -32,12 +36,6 @@ export const servicesHomeType = defineField({
             name: "description",
             title: "Services description",
             type: "internationalizedArrayText",
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
-            name: "buttonWriteUs",
-            title: "Button Write Us",
-            type: "button",
             validation: Rule => Rule.required(),
         }),
     ],

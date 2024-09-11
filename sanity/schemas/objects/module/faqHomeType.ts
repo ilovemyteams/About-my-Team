@@ -4,6 +4,10 @@ export const faqHomeType = defineField({
     name: "faqHome",
     title: "FAQ",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "sectionId",

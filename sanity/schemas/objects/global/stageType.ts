@@ -1,7 +1,7 @@
 import { ActivityIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/sanity/interfaces/interfaces";
+import { FieldItem } from "@/types/FieldItemProps";
 
 export const stageType = defineField({
     name: "stage",

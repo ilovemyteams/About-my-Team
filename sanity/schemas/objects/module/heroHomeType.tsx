@@ -4,6 +4,10 @@ export const heroHomeType = defineField({
     name: "heroHome",
     title: "Hero",
     type: "object",
+    options: {
+        collapsed: false,
+        collapsible: true,
+    },
     fields: [
         defineField({
             name: "title",
@@ -18,18 +22,6 @@ export const heroHomeType = defineField({
                 "Choose the projects that should be displayed in the slider",
             type: "array",
             of: [{ type: "reference", to: [{ type: "project" }] }],
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
-            name: "buttonJoinUS",
-            title: "Button Join Us",
-            type: "button",
-            validation: Rule => Rule.required(),
-        }),
-        defineField({
-            name: "buttonWriteUs",
-            title: "Button Write Us",
-            type: "button",
             validation: Rule => Rule.required(),
         }),
     ],
