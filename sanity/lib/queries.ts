@@ -20,6 +20,7 @@ export const homePageQuery = groq`
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
+  ...,
     footer,
     menuItems[]->{
       _type,
@@ -27,5 +28,6 @@ export const settingsQuery = groq`
       title
     },
     ogImage,
+    buttonJoinUS {"buttonName":buttonName[_key == $language][0].value}
   }
 `;
