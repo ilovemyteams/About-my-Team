@@ -28,6 +28,6 @@ export const settingsQuery = groq`
       title
     },
     ogImage,
-    buttonJoinUS {"buttonName":buttonName[_key == $language][0].value}
+    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value}
   }
 `;
