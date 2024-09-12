@@ -1560,4 +1560,488 @@ export const membersData: MemberDataItemType[] = [
             team: "Smachno! na seli",
         },
     },
+    {
+        data: {
+            id: "NataliIstominaBA",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "12",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/natali-istomina/",
+                telegram: "https://t.me/istomina_nn",
+            },
+            tools: [
+                "Business Analysis",
+                "User Stories",
+                "Use Cases",
+                "User flow",
+                "SRS",
+                "BPMN",
+                "Wireframes",
+                "Software requirements",
+            ],
+        },
+        ua: {
+            name: "Наталі Істоміна",
+            about: "",
+            services:
+                "Спеціалізуюсь на аналізі бізнес-процесів, розробці користувацьких історій, сценаріїв використання та вимог до програмного забезпечення. Маю досвід роботи з BPMN, створюю вайрфрейми та технічні завдання.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Natali Istomina",
+            about: "",
+            services:
+                "Business Analyst with expertise in analyzing business processes, developing user stories, use cases, and defining software requirements. Proficient in BPMN, wireframing, and creating detailed technical specifications.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Natali Istomina",
+            about: "",
+            services:
+                "Specjalizuję się w analizie procesów biznesowych, tworzeniu historii użytkowników, scenariuszy użycia i wymagań dotyczących oprogramowania. Mam doświadczenie w pracy z BPMN, tworzę makiety i specyfikacje techniczne.",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "NataliIstominaMarket",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
+            position: "Marketers",
+            categoryName: "marketer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "12",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/natali-istomina/",
+                telegram: "https://t.me/istomina_nn",
+            },
+            tools: [
+                "Product Management",
+                "Building a go-to-market strategy",
+                "New product development and launch",
+                "Outdoor advertising",
+                "Audio advertising",
+                "Brand marketing",
+                "PR",
+                "SMM",
+                "Project Management",
+            ],
+        },
+        ua: {
+            name: "Наталі Істоміна",
+            about: "",
+            services:
+                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проектами та розробкою споживчих упаковок.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Natali Istomina",
+            about: "",
+            services:
+                "Product Marketing Specialist. Experienced in developing and launching new retail confectionery products. Skilled in go-to-market strategies, branding, PR, SMM, and outdoor/audio advertising. Proficient in project management and consumer packaging design.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Natali Istomina",
+            about: "",
+            services:
+                "Specjalizuję się w analizie procesów biznesowych, tworzeniu historii użytkowników, scenariuszy użycia i wymagań dotyczących oprogramowania. Mam doświadczenie w pracy z BPMN, tworzę makiety i specyfikacje techniczne.",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "MilaMaksymenko",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1RjBfHBr05T_fuzgTswljLGrPXnnC9PIN",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/liudmyla-maksymenko-748938229/",
+                telegram: "https://t.me/luma1990",
+                behance: "https://www.behance.net/4b4ea84c",
+            },
+            tools: [
+                "Figma",
+                "Photoshop",
+                "Jira",
+                "prototyping",
+                "CJM",
+                "user persona",
+                "empathy mapping",
+                "user flow",
+                "user interviews",
+                "competitor analysis",
+                "understanding of basic principles of composition",
+                "typography",
+                "color theory",
+            ],
+        },
+        ua: {
+            name: "Міла Максименко",
+            about: "",
+            services:
+                "Створення дизайну для веб сайтів та мобільних застосунків враховуючи цілі бізнесу та потреби користувачів. Респонсивний дизайн. Проведення досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів). Опрацювання отриманої інформації, створення персон, юзер флоу, карт емпатій. Розробка варфреймів, UI дизайну, UI кітів. ",
+            team: "Український театр",
+        },
+        en: {
+            name: "Mila Maksymenko",
+            about: "",
+            services:
+                "Creation of design for websites and mobile applications, taking into account business goals and user needs. Responsive design. Conducting research (user surveys, in-depth interviews, competitor analysis). Processing of received information, creation of personas, user flow, empathy maps. Development of wireframes, UI design, UI kit.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Mila Maksymenko",
+            about: "",
+            services:
+                "Tworzenie projektów dla stron internetowych i aplikacji mobilnych, uwzględniając cele biznesowe i potrzeby użytkowników. Projektowanie responsywne. Przeprowadzanie badań (ankiety użytkowników, wywiady pogłębione, analiza konkurencji). Analiza zebranych informacji, tworzenie person, ścieżek użytkownika, map empatii. Opracowywanie makietów, projektowanie UI, zestawów UI.",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "VeronikaZlobina",
+            projectId: ["3"],
+            imageURL: "",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/vrnkzlbn/",
+                telegram: "https://t.me/vronells",
+                behance: "https://www.behance.net/vrnkzlbn",
+            },
+            tools: [
+                "Figma",
+                "Adobe Photoshop",
+                "competitor and TA analysis",
+                "user personas",
+                "user flow",
+                "JTBD",
+                "CJM",
+                "understanding basic principles of composition",
+                "color theory",
+                "typography",
+                "prototyping",
+                "animation",
+            ],
+        },
+        ua: {
+            name: "Вероніка Злобіна",
+            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль",
+            services:
+                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів",
+            team: "Український театр",
+        },
+        en: {
+            name: "Veronika Zlobina",
+            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort",
+            services:
+                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, proprietary designs and animation. Creating banners and posts for Instagram or pictures for Telegram bots",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Veronika Zlobina",
+            about: "",
+            services: "",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "AntonChertok",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=16evkhxhlshI1i5u9n-Gus4vQebOq3bLt",
+            position: "Front-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anton-chertok/",
+                telegram: "https://t.me/chertoha",
+                github: "https://github.com/chertoha",
+            },
+            tools: [
+                "React.js",
+                "Next.js",
+                "JS",
+                "TS",
+                "Redux",
+                "Tailwind",
+                "Material UI",
+                "Node.js",
+                "Express",
+                "Nest.js",
+                "Postgres",
+                "Docker",
+                "CI/CD",
+            ],
+        },
+        ua: {
+            name: "Антон Черток",
+            about: "Великий результат досягається через увагу до деталей і прагнення до простоти",
+            services:
+                "Спеціалізуюся на створенні сучасних, адаптивних і високоефективних інтерфейсів користувача, приділяючи особливу увагу якості коду, зменшенню кількості помилок і простоті підтримки. Використовую найкращі підходи для забезпечення швидкої розробки та масштабованості проектів. Маю досвід розробки додатків, які можуть працювати як повністю на стороні користувача, так і частково на сервері, що забезпечує оптимальну швидкість завантаження, високу продуктивність і кращу видимість у пошукових системах. Створюю стильні та зручні інтерфейси, що відповідають сучасним стандартам дизайну. Також забезпечую повну інтеграцію з необхідними сервісами та автоматизацію процесів розробки, що дозволяє швидко і ефективно впроваджувати нові функції та оновлення.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Anton Chertok",
+            about: "Great results come from paying attention to details and striving for simplicity",
+            services:
+                "Specializes in creating modern, adaptive, and high-performance user interfaces, with a strong focus on code quality, reducing errors, and ease of maintenance. Best practices are employed to ensure rapid development and scalability of projects. Experience includes developing applications that can operate entirely on the client side or partially on the server side, ensuring optimal load times, high performance, and better search engine visibility. Designs are stylish and user-friendly, adhering to modern design standards. Seamless integration with necessary services is ensured, along with automation of development processes, allowing for the quick and efficient implementation of new features and updates.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Anton Chertok",
+            about: "",
+            services: "",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "DmytroBulakhov",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1NCPJGG6hYCqa-HIt2qbAVc3uNVKqu3h7",
+            position: "Front-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/dmytro-bulakhov/",
+                telegram: "https://t.me/psycameron",
+                github: "https://github.com/Psycameron",
+            },
+            tools: [
+                "React.js",
+                "Next.js",
+                "JS",
+                "TS",
+                "Redux",
+                "Tailwind",
+                "Material UI",
+                "Node.js",
+                "Express",
+                "RTK Query",
+            ],
+        },
+        ua: {
+            name: "Дмитро Булахов",
+            about: "Випадковості - не випадкові.",
+            services:
+                "Створення сучасних веб-додатків різної складності. Забезпечення повної адаптивності та оптимізації всіх веб-додатків для різних пристроїв і розмірів екранів. Впровадження безпечних механізмів аутентифікації та авторизації.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Dmytro Bulakhov",
+            about: "Accidents are not random.",
+            services: "",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "DmytroBulakhov",
+            about: "Przypadki nie są przypadkowe.",
+            services: "",
+            team: "Ukrainian theater",
+        },
+    },
+
+    {
+        data: {
+            id: "AnatoliiOmelchenko",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1ft3N7N8MCPAXGHb6BH3HGzpEfepkXyaF",
+            position: "Back-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anatolii-omelchenko/",
+                telegram: "https://t.me/Anatolii_Omelchenko",
+                github: "https://github.com/Anatolii-Omelchenko",
+            },
+            tools: [
+                "Java",
+                "Kotlin",
+                "Spring",
+                "Spring Boot",
+                "Hibernate",
+                "Redis",
+                "Postgres",
+                "Docker",
+                "CI/CD",
+                "REST",
+            ],
+        },
+        ua: {
+            name: "Анатолій Омельченко",
+            about: "Я завжди прагну, щоб усе працювало ідеально.  Можливо, це трохи перфекціонізм, але я вірю, що якість у деталях.",
+            services:
+                "Розробка та підтримка серверних додатків на Java/Kotlin, створення та інтеграція REST API, оптимізація продуктивності систем, управління базами даних, забезпечення високого рівня безпеки, автоматизація бізнес-процесів.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Anatolii Omelchenko",
+            about: "",
+            services:
+                "Development and maintenance of server applications in Java/Kotlin, creation and integration of REST APIs, system performance optimization, database management, high-level security assurance, and business process automation.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Anatolii Omelchenko",
+            about: "",
+            services:
+                "Tworzenie i utrzymanie aplikacji serwerowych w Java/Kotlin, tworzenie i integracja REST API, optymalizacja wydajności systemów, zarządzanie bazami danych, zapewnienie wysokiego poziomu bezpieczeństwa oraz automatyzacja procesów biznesowych.",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "OleksandrMeshcherskyi",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=12N2hSCNCiHj2v__i5SCk5bfepXtBwyuW",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/alexandr-mescherskiy/",
+                telegram: "https://t.me/AlexandrMescherskiy",
+                github: "https://github.com/mescherskiy",
+            },
+            tools: [
+                "Java",
+                "Spring Boot",
+                "SQL",
+                "PostgreSQL",
+                "Hibernate",
+                "Docker",
+                "OpenAPI",
+                "MinIO",
+                "Groovy",
+            ],
+        },
+        ua: {
+            name: "Олександр Мещерський",
+            about: "",
+            services:
+                "Розробляю сучасні серверні додатки, інтегрую бізнес-логіку, особливу увагу приділяю безпеці та в той же час простоті коду. Працюю з SQL та NoSQL, хмарними сервісами, REST, меседж-брокерами. Також маю досвід та навички роботи з фронтенд-інструментами (Javascript, Typescript, React, Next, Redux.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Oleksandr Meshcherskyi",
+            about: "Never give up",
+            services: "",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Oleksandr Meshcherskyi",
+            about: "",
+            services: "",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "SvitlanaKrokhmalna",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1rSkmS0DR2FpT-lPkHyTXo3Qtfm1uE0uo",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/krokhmalna/",
+                telegram: "https://t.me/SvitlanaKrokh",
+                github: "http://github.com/SvitlanaKrok",
+            },
+            tools: ["Jira", "Postman", "SQL", "HTML/CSS", "JavaScript"],
+        },
+        ua: {
+            name: "Світлана Крохмальна",
+            about: "Гарно розроблений та відтестований продукт принесе користь та задоволення замовнику. Якісна та тісна робота в команді створить цей продукт.",
+            services:
+                "Створення тест плану та тестової стратегії. Написання тест кейсів, smoke та regression checklists. Виконання: smoke, API, functional, non-functional, regression, retesting and end-to-endтестування. Створення багрепортів в Jira. Супровід процесів розвитку команди.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Svitlana Krokhmalna",
+            about: "A well-designed and tested product will bring value and satisfaction to the customer. High-quality and close teamwork will create this product.",
+            services:
+                "Creating a test plan and test strategy. Writing test cases, smoke and regression checklists. Execution: smoke, API, functional, non-functional, regression, retesting and end-to-end testing. Creating bug reports in Jira. Support of team development processes.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Svitlana Krokhmalna",
+            about: "Dobrze zaprojektowany i przetestowany produkt przyniesie klientowi korzyści i satysfakcję. Wysoka jakość i ścisła praca zespołowa pozwolą stworzyć ten produkt.",
+            services:
+                "Tworzenie planu testów i strategii testowania. Pisanie przypadków testowych, list kontrolnych testów dymnych i regresji. Wykonywanie: testów dymnych, API, funkcjonalnych, niefunkcjonalnych, regresji, ponownych testów i testów kompleksowych. Tworzenie raportów błędów w Jira. Wsparcie procesów rozwoju zespołu",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "OksanaOnopriienko",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/oksana-onopriienko",
+                telegram: "https://t.me/Oksana_Onopriienko",
+                github: "https://github.com/Ksenya-77",
+            },
+            tools: [
+                "Jira",
+                "Postman",
+                "SQL",
+                "TestRail",
+                "JSON",
+                "HTML",
+                "CSS",
+                "Trello",
+            ],
+        },
+        ua: {
+            name: "Оксана Онопрієнко",
+            about: "На мене можна покластися в будь-яких умовах!",
+            services:
+                "Проведення ручного тестування програмного забезпечення. Написання тест-кейсів, чеклістів та звітів про помилки. API тестування з використанням Postman. Впровадження процесів якості та зниження дефектів після релізу.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Oksana Onopriienko",
+            about: "You can rely on me in any situation!",
+            services:
+                "Conducting manual software testing. Writing test cases, checklists, and bug reports. API testing using Postman. Implementation of quality processes and post-release defect reduction.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Oksana Onopriienko",
+            about: "Na mnie można polegać w każdej sytuacji!",
+            services:
+                "Przeprowadzanie ręcznych testów oprogramowania. Pisanie przypadków testowych, list kontrolnych i raportów o błędach. Testowanie API przy użyciu Postman. Wdrażanie procesów jakości i redukcja defektów po wersji.",
+            team: "Ukrainian theater",
+        },
+    },
 ];
