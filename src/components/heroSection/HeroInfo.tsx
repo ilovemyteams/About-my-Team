@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { Home } from "../../../types/sanity.types";
+import { Home } from "@/types/sanity.types";
+
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
