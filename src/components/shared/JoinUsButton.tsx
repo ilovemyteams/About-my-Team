@@ -1,18 +1,20 @@
 import { useTranslations } from "next-intl";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { loadButtonsSettingsQuery } from "@/sanity/utils/loadQuery";
 
 import { Button } from "./Button";
 
 const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
 
-export const JoinUsButton = ({
-    buttonName,
-}: {
-    buttonName?: InternationalizedArrayString;
-}) => {
+export default async function JoinUsButton({ locale }: { locale: string }) {
     const getTranslation = useTranslations();
-    const buttonNameString = String(buttonName);
+    const { data } = await loadButtonsSettingsQuery(locale);
+
+    console.log(data?.buttonJoinUS?.buttonName);
+
+    const buttonName = data?.buttonJoinUS?.buttonName
+        ? String(data.buttonJoinUS.buttonName)
+        : getTranslation("Buttons.joinUs");
 
     return (
         <a
@@ -21,11 +23,7 @@ export const JoinUsButton = ({
             rel="noopener noreferrer"
             className="outline-none"
         >
-            <Button color="grey">
-                {buttonNameString
-                    ? buttonNameString
-                    : getTranslation("Buttons.joinUs")}
-            </Button>
+            <Button color="grey">{buttonName}</Button>
         </a>
     );
-};
+}
