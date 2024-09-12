@@ -1,7 +1,7 @@
 import { CaseIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const specialistCategoryType = defineField({
     name: "specialistCategory",
@@ -27,8 +27,8 @@ export const specialistCategoryType = defineField({
                 };
             }
             const englishTitle =
-                (title as FieldItem[]).find(
-                    (item: FieldItem) => item._key === "en"
+                (title as InternationalizedArrayString).find(
+                    item => item._key === "en"
                 )?.value || "No title";
             return {
                 title: englishTitle,
