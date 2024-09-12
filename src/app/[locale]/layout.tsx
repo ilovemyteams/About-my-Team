@@ -86,7 +86,7 @@ export default async function LocaleLayout({
 }>) {
     const shareData = await loadSettings(locale);
     const messages = await getMessages();
-    console.log("layout", shareData);
+    console.log(shareData.data?.buttonJoinUS);
 
     return (
         <html lang={locale} suppressHydrationWarning>

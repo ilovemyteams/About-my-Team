@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { JoinUsButton } from "../shared/JoinUsButton";
+import JoinUsButton from "../shared/JoinUsButton";
 import { Section } from "../shared/Section";
 
 const TEAM_TOGETHER_PHOTO =
@@ -9,6 +9,7 @@ const TEAM_TOGETHER_PHOTO =
 
 export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");
+    const locale = useLocale();
 
     return (
         <Section id="aboutteam" className="tab:pt-5 pc:pt-0 desk:mt-5">
@@ -31,7 +32,7 @@ export const TeamSection = () => {
                         {getTranslation("sectionTeamText")}
                     </p>
                     <div className="mx-auto  pc:mx-0">
-                        <JoinUsButton />
+                        <JoinUsButton locale={locale} />
                     </div>
                 </div>
             </div>

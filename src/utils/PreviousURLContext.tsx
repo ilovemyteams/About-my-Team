@@ -20,7 +20,12 @@ export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
 
     return (
         <PreviousURLContext.Provider
-            value={{ previousURL, setPreviousURL, slideId, setSlideId }}
+            value={{
+                previousURL,
+                setPreviousURL,
+                slideId,
+                setSlideId,
+            }}
         >
             {children}
         </PreviousURLContext.Provider>
