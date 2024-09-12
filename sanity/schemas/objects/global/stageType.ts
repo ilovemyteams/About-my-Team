@@ -1,7 +1,7 @@
 import { ActivityIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const stageType = defineField({
     name: "stage",
@@ -33,8 +33,8 @@ export const stageType = defineField({
                 };
             }
             const englishTitle =
-                (title as FieldItem[]).find(
-                    (item: FieldItem) => item._key === "en"
+                (title as InternationalizedArrayString).find(
+                    item => item._key === "en"
                 )?.value || "No title";
             return {
                 title: englishTitle,

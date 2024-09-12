@@ -2,7 +2,7 @@ import { ProjectsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const projectType = defineField({
     name: "project",
@@ -120,8 +120,8 @@ export const projectType = defineField({
         },
         prepare({ title, media }) {
             const englishTitle =
-                (title as FieldItem[]).find(
-                    (item: FieldItem) => item._key === "en"
+                (title as InternationalizedArrayString).find(
+                    item => item._key === "en"
                 )?.value || "No title";
             return {
                 title: `${englishTitle || "No title"}`,

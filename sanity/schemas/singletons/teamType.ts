@@ -1,7 +1,7 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const teamType = defineField({
     name: "team",
@@ -89,8 +89,8 @@ export const teamType = defineField({
         },
         prepare({ name = [], subtitle, media }) {
             const englishName =
-                (name as FieldItem[]).find(
-                    (item: FieldItem) => item._key === "en"
+                (name as InternationalizedArrayString).find(
+                    item => item._key === "en"
                 )?.value || "No name";
 
             return {
