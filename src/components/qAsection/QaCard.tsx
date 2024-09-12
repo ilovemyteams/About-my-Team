@@ -28,37 +28,37 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
     const { questionText, answerText, imageAltText } = localizationData;
 
     return (
-        <div className="container">
-            <div className="flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-stroke">
-                <Image
-                    src={image}
-                    alt={imageAltText}
-                    width="300"
-                    height="200"
-                    className="object-cover w-auto tab:w-[300px] h-[200px]"
-                />
+        <div className="container mb-3 tab:mb-2.5 flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
+            <Image
+                src={image}
+                alt={imageAltText}
+                width="300"
+                height="200"
+                className="object-cover w-auto tab:w-[300px] h-[200px] tab:my-auto"
+            />
 
-                <div className="flex flex-col justify-between">
-                    <div className="flex justify-between">
-                        <LikeButton likes={likes} />
-                        <SharePopover className="" trigerShowShareText={true} />
-                    </div>
-                    <h2 className="font-caviar text-white-200 text-lg">
-                        {questionText}
-                    </h2>
-                    <p className="font-geist text-sm text-grey">{answerText}</p>
-                    <div className="flex justify-between">
-                        <EstimatedReadingTime
-                            className="text-purple-50"
-                            text={answerText}
-                        />
-                        <button
-                            onClick={() => alert("Transition to full article")}
-                            className="font-geist text-purple-100 tab:text-purple-130 pc:text-purple-100 underline underline-offset-2"
-                        >
-                            {getTranslation("readMore")}
-                        </button>
-                    </div>
+            <div className="flex flex-col">
+                <div className="flex justify-between">
+                    <LikeButton likes={likes} />
+                    <SharePopover className="" trigerShowShareText={true} />
+                </div>
+                <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
+                    {questionText}
+                </h2>
+                <p className="font-geist text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
+                    {answerText}
+                </p>
+                <div className="flex justify-between">
+                    <EstimatedReadingTime
+                        className="text-purple-100 dark:text-purple-50"
+                        text={answerText}
+                    />
+                    <button
+                        onClick={() => alert("Transition to full article")}
+                        className="font-geist text-purple-130 dark:text-purple-100 dark:tab:text-purple-130 dark:pc:text-purple-100 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 dark:tab:before:border-purple-130dark: pc:before:border-purple-100"
+                    >
+                        {getTranslation("readMore")}
+                    </button>
                 </div>
             </div>
         </div>
