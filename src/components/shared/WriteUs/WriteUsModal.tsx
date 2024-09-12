@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 import { Button } from "../Button";
 import { IconCloseX } from "../Icons/IconCloseX";
@@ -13,6 +14,7 @@ import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
+    buttonName?: InternationalizedArrayString;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
     setIsNotificationShawn: (
@@ -26,15 +28,19 @@ export const WriteUsModal = ({
     setIsError,
     setIsNotificationShawn,
     className,
+    buttonName,
 }: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
+    const buttonNameString = String(buttonName);
 
     return (
         <div className={className}>
-            <Button onClick={onOpen}>{getTranslation("order")}</Button>
+            <Button onClick={onOpen}>
+                {buttonNameString ? buttonNameString : getTranslation("order")}
+            </Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}

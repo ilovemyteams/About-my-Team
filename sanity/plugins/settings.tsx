@@ -27,7 +27,6 @@ export const singletonPlugin = (types: string[]) => {
                     return prev.filter(
                         // @ts-expect-error: Parameter 'templateItem' implicitly has an 'any' type.
                         templateItem => {
-                            console.log(templateItem);
                             return !types.includes(templateItem.templateId);
                         }
                     );
