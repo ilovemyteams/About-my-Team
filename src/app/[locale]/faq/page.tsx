@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
+import { Section } from "@/src/components/shared/Section";
 import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
 
 import { Section } from "@/src/components/shared/Section";
