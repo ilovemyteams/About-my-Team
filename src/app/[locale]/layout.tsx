@@ -2,10 +2,11 @@ import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import { getTranslations } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations } from "next-intl/server";
 import React from "react";
 
+import { loadSettings } from "@/sanity/utils/loadQuery";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
@@ -74,7 +75,7 @@ export async function generateMetadata({
     };
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
     children,
     modal,
     params: { locale },
@@ -83,7 +84,10 @@ export default function LocaleLayout({
     modal: React.ReactNode;
     params: { locale: string };
 }>) {
-    const messages = useMessages();
+    const shareData = await loadSettings(locale);
+    const messages = await getMessages();
+    console.log("layout", shareData);
+
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
@@ -112,7 +116,12 @@ export default function LocaleLayout({
                     >
                         <Providers>
                             <BackgroundImages />
-                            <Header />
+                            {shareData.data ? (
+                                <Header data={shareData.data} />
+                            ) : (
+                                <Header />
+                            )}
+
                             <main>
                                 {modal}
                                 <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
