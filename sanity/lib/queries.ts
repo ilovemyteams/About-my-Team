@@ -31,3 +31,9 @@ export const settingsQuery = groq`
     buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value}
   }
 `;
+
+export const buttonsSettingsQuery = groq`
+*[_type == "settings"][0]{
+    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value}
+  }
+`;
