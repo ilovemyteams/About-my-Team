@@ -4,13 +4,14 @@ import { loadButtonsSettingsQuery } from "@/sanity/utils/loadQuery";
 
 import { Button } from "./Button";
 
-const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
-
 export default async function JoinUsButton({ locale }: { locale: string }) {
     const getTranslation = useTranslations();
     const { data } = await loadButtonsSettingsQuery(locale);
+    const JOIN_US_LINK = data?.buttonJoinUS?.linkExternal?.url
+        ? data.buttonJoinUS.linkExternal.url
+        : "https://forms.gle/nhbFek3qZYQgo9V19";
 
-    console.log(data?.buttonJoinUS?.buttonName);
+    console.log(data?.buttonJoinUS?.linkExternal?.url);
 
     const buttonName = data?.buttonJoinUS?.buttonName
         ? String(data.buttonJoinUS.buttonName)
