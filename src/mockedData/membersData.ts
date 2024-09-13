@@ -1503,63 +1503,7 @@ export const membersData: MemberDataItemType[] = [
             team: "Smachno! na seli",
         },
     },
-    {
-        data: {
-            id: "OlenaHalushka",
-            projectId: ["2", "3"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
-            position: "UI/UX designer",
-            categoryName: "designer",
-            projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
-            pricePerHour: "9",
-            socialLinks: {
-                linkedin: "http://www.linkedin.com/in/olena-halushka",
-                behance: "https://www.behance.net/olenahalushka",
-                telegram: "https://t.me/rainy_bird",
-            },
-            tools: [
-                "Figma",
-                "Photoshop",
-                "Maze",
-                "ProtoPie",
-                "Notion",
-                "Jira",
-                "Confluence",
-                "Bootstrap grid system",
-                "color theory",
-                "typography",
-                "prototyping",
-                "quantitative research",
-                "interwievs",
-                "CJM",
-                "Kano model",
-                "user flow",
-                "information architecture",
-            ],
-        },
-        ua: {
-            name: "Олена Галушка",
-            about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
-            services:
-                "Створення дизайну для мобільних застосунків та веб сайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Jorney Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, variables. Unmoderated User testing. Презентація. Обробка фото та зображень.",
-            team: "Смачно! на селі",
-        },
-        en: {
-            name: "Olena Halushka",
-            about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
-            services:
-                "Creation of design for mobile applications and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Compilation of user flow, information architecture, personas. Product hypotheses, jobs to be done, Customer Journey Map, prioritization according to the Kano model. Prototypes, UI design, adaptive creation of UI kits, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
-            team: "Smachno! na seli",
-        },
-        pl: {
-            name: "Olena Halushka",
-            about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
-            services:
-                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Jorney Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
-            team: "Smachno! na seli",
-        },
-    },
+
     {
         data: {
             id: "NataliIstominaBA",
@@ -1569,7 +1513,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["theatermag.com.ua"],
-            pricePerHour: "12",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/natali-istomina/",
                 telegram: "https://t.me/istomina_nn",
@@ -1859,6 +1803,55 @@ export const membersData: MemberDataItemType[] = [
             team: "Ukrainian theater",
         },
     },
+    {
+        data: {
+            id: "EvgeniyMalysh",
+            projectId: ["3"],
+            imageURL: "",
+            position: "Backend Developer",
+            categoryName: "developer",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/evhen-malysh-0443231a5/",
+                github: "https://github.com/malyshevhen",
+            },
+            tools: [
+                "Java",
+                "Maven",
+                "Spring",
+                "Spring Boot",
+                "Security OAuth2",
+                "Hibernate",
+                "Redis",
+                "PostgreSQL",
+                "Swagger",
+                "Docker",
+                "CI/CD",
+                "JUnit 5",
+                "Spock",
+                "Testcontainers",
+            ],
+        },
+        ua: {
+            name: "Євген Малиш",
+            about: "",
+            services: "",
+            team: "Український театр",
+        },
+        en: {
+            name: "Evhen Malysh",
+            about: "",
+            services: "",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Evhen Malysh",
+            about: "",
+            services: "",
+            team: "Ukrainian theater",
+        },
+    },
 
     {
         data: {
@@ -1866,7 +1859,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1ft3N7N8MCPAXGHb6BH3HGzpEfepkXyaF",
-            position: "Back-end Developer",
+            position: "Backend Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
             pricePerHour: "10",
@@ -1994,6 +1987,63 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Tworzenie planu testów i strategii testowania. Pisanie przypadków testowych, list kontrolnych testów dymnych i regresji. Wykonywanie: testów dymnych, API, funkcjonalnych, niefunkcjonalnych, regresji, ponownych testów i testów kompleksowych. Tworzenie raportów błędów w Jira. Wsparcie procesów rozwoju zespołu",
             team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "OlenaHalushka",
+            projectId: ["2", "3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/olena-halushka",
+                behance: "https://www.behance.net/olenahalushka",
+                telegram: "https://t.me/rainy_bird",
+            },
+            tools: [
+                "Figma",
+                "Photoshop",
+                "Maze",
+                "ProtoPie",
+                "Notion",
+                "Jira",
+                "Confluence",
+                "Bootstrap grid system",
+                "color theory",
+                "typography",
+                "prototyping",
+                "quantitative research",
+                "interwievs",
+                "CJM",
+                "Kano model",
+                "user flow",
+                "information architecture",
+            ],
+        },
+        ua: {
+            name: "Олена Галушка",
+            about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
+            services:
+                "Створення дизайну для мобільних застосунків та веб сайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Jorney Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, variables. Unmoderated User testing. Презентація. Обробка фото та зображень.",
+            team: "Смачно! на селі",
+        },
+        en: {
+            name: "Olena Halushka",
+            about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
+            services:
+                "Creation of design for mobile applications and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Compilation of user flow, information architecture, personas. Product hypotheses, jobs to be done, Customer Journey Map, prioritization according to the Kano model. Prototypes, UI design, adaptive creation of UI kits, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Olena Halushka",
+            about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
+            services:
+                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Jorney Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
+            team: "Smachno! na seli",
         },
     },
     {
