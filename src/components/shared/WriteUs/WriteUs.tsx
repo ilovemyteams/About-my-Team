@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { InternationalizedArrayString } from "@/sanity.types";
 
 import { NotificationModal } from "./NotificationModal";
 import { WriteUsModal } from "./WriteUsModal";

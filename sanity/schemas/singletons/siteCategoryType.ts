@@ -1,7 +1,7 @@
 import { LaunchIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { InternationalizedArrayString } from "@/sanity.types";
 
 export const siteCategoryType = defineField({
     name: "siteCategory",

@@ -1,7 +1,7 @@
 import { CommentIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { InternationalizedArrayString } from "@/sanity.types";
 
 export const reviewType = defineField({
     name: "review",

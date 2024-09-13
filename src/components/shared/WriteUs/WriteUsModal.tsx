@@ -2,9 +2,9 @@
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { useTranslations } from "next-intl";
 
+import { InternationalizedArrayString } from "@/sanity.types";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 import { Button } from "../Button";
 import { IconCloseX } from "../Icons/IconCloseX";

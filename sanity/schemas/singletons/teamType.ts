@@ -1,7 +1,7 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { InternationalizedArrayString } from "@/sanity.types";
 
 export const teamType = defineField({
     name: "team",

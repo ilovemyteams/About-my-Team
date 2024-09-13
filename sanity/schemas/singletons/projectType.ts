@@ -1,8 +1,8 @@
 import { ProjectsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
+import { InternationalizedArrayString } from "@/sanity.types";
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const projectType = defineField({
     name: "project",
