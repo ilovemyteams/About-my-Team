@@ -1,6 +1,6 @@
 import { defineType } from "sanity";
 
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const anchorLinkType = defineType({
     title: "Anchor Link",
@@ -22,7 +22,7 @@ export const anchorLinkType = defineType({
             options: {
                 source: (_, options) => {
                     const parent = options.parent as {
-                        subtitle?: FieldItem[];
+                        subtitle?: InternationalizedArrayString;
                     };
 
                     if (parent?.subtitle) {
@@ -39,7 +39,7 @@ export const anchorLinkType = defineType({
             validation: Rule =>
                 Rule.custom((value, context) => {
                     const parent = context.parent as {
-                        subtitle?: FieldItem[];
+                        subtitle?: InternationalizedArrayString;
                     };
 
                     const currentValue = (value as { current?: string })

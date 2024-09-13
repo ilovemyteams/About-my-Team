@@ -1,7 +1,7 @@
 import { CommentIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { FieldItem } from "@/types/FieldItemProps";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const reviewType = defineField({
     name: "review",
@@ -42,8 +42,8 @@ export const reviewType = defineField({
             }
             const englishTitle =
                 `Review "${
-                    (title as FieldItem[]).find(
-                        (item: FieldItem) => item._key === "en"
+                    (title as InternationalizedArrayString).find(
+                        item => item._key === "en"
                     )?.value
                 }"` || "No review title";
             return {
