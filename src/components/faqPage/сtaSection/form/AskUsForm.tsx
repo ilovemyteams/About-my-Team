@@ -14,8 +14,6 @@ interface FormValues {
     message: string;
 }
 
-export type StatusType = null | string;
-
 export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
@@ -26,8 +24,6 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
         email: "",
         message: "",
     };
-
-    const initialStatus: StatusType = null;
 
     const onSubmit = async (values: FormValues) => {
         const onSendData = async () => {
@@ -52,7 +48,7 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
     return (
         <Formik
             initialValues={initialValue}
-            initialStatus={initialStatus}
+            initialStatus={"name"}
             validationSchema={validationSchema}
             onSubmit={onSubmit}
         >
