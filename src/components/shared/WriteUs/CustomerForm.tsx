@@ -62,7 +62,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         <Formik
             initialValues={initialValues}
             onSubmit={submitForm}
-            initialStatus="name"
             validationSchema={validationSchema}
         >
             {({

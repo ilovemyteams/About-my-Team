@@ -48,7 +48,6 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
     return (
         <Formik
             initialValues={initialValue}
-            initialStatus={"name"}
             validationSchema={validationSchema}
             onSubmit={onSubmit}
         >
