@@ -1,6 +1,5 @@
+import { InternationalizedArrayString } from "@/sanity.types";
 import { defineType } from "sanity";
-
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const anchorLinkType = defineType({
     title: "Anchor Link",
