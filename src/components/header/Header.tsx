@@ -1,4 +1,5 @@
 import { Settings } from "@/sanity.types";
+
 import { DesktopHeader } from "./DesktopHeader/DesktopHeader";
 import { MobileTabletHeader } from "./MobileTabletHeader/MobileTabletHeader";
 

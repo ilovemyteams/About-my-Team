@@ -3,8 +3,8 @@ import "server-only";
 import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
+import { Home, Settings } from "@/sanity.types";
 import { getClient } from "@/sanity/lib/client";
-import { Home, Settings } from "@/types/sanity.types";
 
 import { readToken } from "../lib/api";
 import {
