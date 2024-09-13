@@ -1,5 +1,4 @@
 import { ErrorMessage, Field } from "formik";
-import { FocusEvent } from "react";
 
 interface CustomFieldProps {
     value: string;
@@ -11,7 +10,6 @@ interface CustomFieldProps {
     autoFocus: boolean;
     status: null | string;
     setStatus: (status: null | string) => void;
-    handleBlur: (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
 }
 
 export const CustomField = ({
@@ -24,17 +22,9 @@ export const CustomField = ({
     autoFocus,
     status,
     setStatus,
-    handleBlur,
 }: CustomFieldProps) => {
     const onFocusField = () => {
         setStatus(name);
-    };
-
-    const onBlurField = (
-        e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        setStatus(null);
-        handleBlur(e);
     };
 
     const heightStyles =
@@ -62,7 +52,6 @@ export const CustomField = ({
                 autoComplete="on"
                 placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
-                onBlur={onBlurField}
                 className={`block appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
             <ErrorMessage

@@ -73,7 +73,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 isValid,
                 errors,
                 touched,
-                handleBlur,
                 isSubmitting,
             }) => (
                 <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
@@ -85,7 +84,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={true}
                         isError={!!(touched.name && errors.name)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -97,7 +95,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={false}
                         isError={!!(touched.email && errors.email)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -109,7 +106,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={false}
                         isError={!!(touched.telegram && errors.telegram)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -121,7 +117,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={false}
                         isError={!!(touched.linkedin && errors.linkedin)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -133,7 +128,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={false}
                         isError={!!(touched.instagram && errors.instagram)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -145,7 +139,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="text"
                         autoFocus={false}
                         isError={!!(touched.facebook && errors.facebook)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
@@ -157,7 +150,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                         type="textarea"
                         autoFocus={false}
                         isError={!!(touched.message && errors.message)}
-                        handleBlur={handleBlur}
                         setStatus={setStatus}
                         status={status}
                     />
