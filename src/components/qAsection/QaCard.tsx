@@ -45,7 +45,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                 <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
                     {questionText}
                 </h2>
-                <p className="font-geist text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
+                <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
                     {answerText}
                 </p>
                 <div className="flex justify-between">
@@ -55,7 +55,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                     />
                     <button
                         onClick={() => alert("Transition to full article")}
-                        className="font-geist text-purple-130 dark:text-purple-100 dark:tab:text-purple-130 dark:pc:text-purple-100 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 dark:tab:before:border-purple-130dark: pc:before:border-purple-100"
+                        className="text-purple-130 dark:text-purple-100 dark:tab:text-purple-130 dark:pc:text-purple-100 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 dark:tab:before:border-purple-130 dark:pc:before:border-purple-100"
                     >
                         {getTranslation("readMore")}
                     </button>
