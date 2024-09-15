@@ -11,7 +11,7 @@ interface WriteUsProps {
     buttonName?: InternationalizedArrayString;
 }
 
-export const WriteUs = ({ className, buttonName }: WriteUsProps) => {
+export const WriteUs = ({ className }: WriteUsProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
 
@@ -22,7 +22,6 @@ export const WriteUs = ({ className, buttonName }: WriteUsProps) => {
                 isError={isError}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
-                buttonName={buttonName}
             />
             <NotificationModal
                 isNotificationShawn={isNotificationShawn}
