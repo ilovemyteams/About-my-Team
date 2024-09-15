@@ -7,15 +7,6 @@ export const homePageQuery = groq`
   ...,
     "title": title[_key == $language][0].value
   },
-  ctaSectionJoinUs {
-  ...,
-    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}
-  },
-  ctaSectionOrder {
-  ...,
-    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}
-  },
- 
 }`;
 
 export const settingsQuery = groq`
