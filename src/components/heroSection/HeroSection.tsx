@@ -1,4 +1,4 @@
-import { Home } from "@/sanity.types";
+import { Home } from "@/types/sanity.types";
 
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../shared/LocaleSwitcher";

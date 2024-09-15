@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 
-import { Home } from "@/sanity.types";
+import { Home } from "@/types/sanity.types";
 
 import JoinUsButton from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";

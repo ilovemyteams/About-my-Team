@@ -1,7 +1,7 @@
 import { ActivityIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/sanity.types";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const stageType = defineField({
     name: "stage",

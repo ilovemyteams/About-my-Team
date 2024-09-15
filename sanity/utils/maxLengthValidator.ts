@@ -1,4 +1,4 @@
-import { PortableColorTitle, PortableTextSimple } from "@/sanity.types";
+import { PortableColorTitle, PortableTextSimple } from "@/types/sanity.types";
 
 import { calculateTotalLength } from "./calculateTotalLength";
 

@@ -19,12 +19,13 @@ export const settingsQuery = groq`
       title
     },
     ogImage,
-    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value}
   }
 `;
 
 export const buttonsSettingsQuery = groq`
 *[_type == "settings"][0]{
-    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value}
+    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},
+    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value}
+
   }
 `;
