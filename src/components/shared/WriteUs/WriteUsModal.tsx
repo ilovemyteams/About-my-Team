@@ -1,8 +1,8 @@
 "use client";
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-import { InternationalizedArrayString } from "@/sanity.types";
+import { loadButtonsSettingsQuery } from "@/sanity/utils/loadQuery";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 
@@ -14,7 +14,6 @@ import { BgImagesMobile } from "./modalBgImages/writeUsBgImages/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/writeUsBgImages/BgImagesTablet";
 
 interface WriteUsModalProps {
-    buttonName?: InternationalizedArrayString;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
     setIsNotificationShawn: (
@@ -23,24 +22,24 @@ interface WriteUsModalProps {
     className?: string;
 }
 
-export const WriteUsModal = ({
+// eslint-disable-next-line @next/next/no-async-client-component
+export default async function WriteUsModal({
     isError,
     setIsError,
     setIsNotificationShawn,
     className,
-    buttonName,
-}: WriteUsModalProps) => {
+}: WriteUsModalProps) {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+    const locale = useLocale();
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
-    const buttonNameString = String(buttonName);
+    const { data } = await loadButtonsSettingsQuery(locale);
+    console.log(data?.buttonOrder?.buttonName);
 
     return (
         <div className={className}>
-            <Button onClick={onOpen}>
-                {buttonNameString ? buttonNameString : getTranslation("order")}
-            </Button>
+            <Button onClick={onOpen}>{getTranslation("order")}</Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
@@ -82,4 +81,4 @@ export const WriteUsModal = ({
             </Modal>
         </div>
     );
-};
+}
