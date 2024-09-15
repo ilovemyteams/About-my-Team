@@ -1,8 +1,7 @@
 "use client";
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-import { loadButtonsSettingsQuery } from "@/sanity/utils/loadQuery";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 
@@ -22,20 +21,16 @@ interface WriteUsModalProps {
     className?: string;
 }
 
-// eslint-disable-next-line @next/next/no-async-client-component
-export default async function WriteUsModal({
+export const WriteUsModal = ({
     isError,
     setIsError,
     setIsNotificationShawn,
     className,
-}: WriteUsModalProps) {
+}: WriteUsModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
-    const locale = useLocale();
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
-    const { data } = await loadButtonsSettingsQuery(locale);
-    console.log(data?.buttonOrder?.buttonName);
 
     return (
         <div className={className}>
@@ -81,4 +76,4 @@ export default async function WriteUsModal({
             </Modal>
         </div>
     );
-}
+};
