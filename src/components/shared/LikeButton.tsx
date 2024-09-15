@@ -13,19 +13,20 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
         setIsActive(!isActive);
     };
 
-    const style = isActive
+    const likeIconStyle = isActive
         ? "text-redLight dark:text-red animate-pulsationBrokenHeart"
         : "text-greyLight dark:text-grey";
     return (
         <button
             onClick={toggleLike}
-            className="border text-purple-100 tab:text-purple-130 dark:text-purple-50 flex gap-2"
+            className="text-purple-100 tab:text-purple-130 dark:text-purple-50 flex items-center gap-x-2"
             aria-label="Like"
         >
-            <div className={`${style} my-auto`}>
-                <IconLike isActive={isActive} />
-            </div>
-            <span className="my-auto">{likes}</span>
+            <IconLike
+                className={`pb-0.5 ${likeIconStyle} my-auto`}
+                isActive={isActive}
+            />
+            {likes}
         </button>
     );
 };
