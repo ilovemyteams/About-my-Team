@@ -2,15 +2,15 @@ import { useTranslations } from "next-intl";
 
 import { getReadingTimeEstimation as rte } from "@/src/utils/getReadingTimeEstimation";
 
-export type EstimatedReadingTimeProps = {
+export type EstimatedReadingTimeCounterProps = {
     text: string;
     className?: string;
 };
 
-export const EstimatedReadingTime = ({
+export const EstimatedReadingTimeCounter = ({
     text,
     className = "",
-}: EstimatedReadingTimeProps) => {
+}: EstimatedReadingTimeCounterProps) => {
     const getTranslation = useTranslations("Badges");
     const readTime = rte(text);
     const textValue =
