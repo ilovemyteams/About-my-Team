@@ -12,7 +12,9 @@ import { ServicesSection } from "@/src/components/servicesSection/ServicesSectio
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 
-type HopePageProps = { params: { locale: string } };
+type HopePageProps = {
+    params: { locale: string };
+};
 export default async function HomePage(props: HopePageProps) {
     const initial = await loadHomePage(props.params.locale);
 
