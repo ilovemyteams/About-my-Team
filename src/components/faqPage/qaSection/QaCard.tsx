@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { EstimatedReadingTimeCounter } from "../shared/EstimatedReadingTimeCounter";
-import LikeButton from "../shared/LikeButton";
-import { SharePopover } from "../shared/SharePopover";
+import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
+import LikeButton from "../../shared/LikeButton";
+import { SharePopover } from "../../shared/SharePopover";
 export interface FaqCardItemProps {
     data: {
         id: number;
