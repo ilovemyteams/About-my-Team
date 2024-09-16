@@ -1657,7 +1657,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "VeronikaZlobina",
             projectId: ["3"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1uiJss2kZE8k04-lTV07vIUQQk_-3dR8f",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["theatermag.com.ua"],
@@ -1807,7 +1808,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "EvgeniyMalysh",
             projectId: ["3"],
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1AjBCSRShpXihOxgvQ0VX2T1B6GLAs7jY",
             position: "Backend Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
