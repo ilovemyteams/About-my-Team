@@ -7,9 +7,9 @@ import { localeInURL } from "@/src/utils/localeInURL";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesMobile";
-import { BgImagesTablet } from "../../shared/WriteUs/modalBgImages/writeUsBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesTablet";
 
 export const Modal = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
@@ -59,7 +59,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                 <div
                     onClick={e => e.stopPropagation()}
                     className="p-0 min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
-            -translate-x-1/2 -translate-y-1/2 z-[21] bg-white-100 dark:bg-purple-400 scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent"
+            -translate-x-1/2 -translate-y-1/2 z-[21] bg-white-100 dark:bg-purple-400 scroll"
                 >
                     <div className="h-auto relative pb-[64px] pt-2 tab:pb-[72px] tab:pt-3">
                         <BgImagesMobile />

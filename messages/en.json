@@ -128,7 +128,8 @@
         "share": "Share",
         "buyMeACoffe": "Treat with coffee",
         "learnMore": "Learn more",
-        "goBack": "Back"
+        "goBack": "Back",
+        "writeUs": "write to us"
     },
     "Footer": {
         "titleFirstWord": "Start ",
@@ -168,7 +169,9 @@
         "requiredField": "*Fields required to be filled in",
         "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
         "rulesLink": "Terms of Personal Data Processing",
-        "submitButton": "Send"
+        "submitButton": "Send",
+        "questionLabel": "Your question*",
+        "questionPlaceholder": "Your question*"
     },
     "Errors": {
         "required": "This field is required",
@@ -250,5 +253,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Home",
         "breadcrumbItemAbout": "About us"
+    },
+    "FaqPage": {
+        "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
     }
 }
