@@ -77,8 +77,9 @@ export const LocaleLayout = ({
       title
     },
     ogImage,
-    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value}
-
+    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},
+    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
+    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
   }
 `);
             setDataSettings(settingsSanityData);
