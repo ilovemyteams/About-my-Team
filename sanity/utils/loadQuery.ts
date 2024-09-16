@@ -7,11 +7,7 @@ import { getClient } from "@/sanity/lib/client";
 import { Home, Settings } from "@/types/sanity.types";
 
 import { readToken } from "../lib/api";
-import {
-    buttonsSettingsQuery,
-    homePageQuery,
-    settingsQuery,
-} from "../lib/queries";
+import { homePageQuery, settingsQuery } from "../lib/queries";
 const serverClient = getClient({ token: readToken });
 
 /**
@@ -55,14 +51,6 @@ export const loadQuery = ((query, params = {}, options = {}) => {
 export function loadSettings(language = "ua") {
     return loadQuery<Settings | null>(
         settingsQuery,
-        { language },
-        { next: { tags: ["settings", "home"] } }
-    );
-}
-
-export function loadButtonsSettingsQuery(language = "ua") {
-    return loadQuery<Settings | null>(
-        buttonsSettingsQuery,
         { language },
         { next: { tags: ["settings", "home"] } }
     );
