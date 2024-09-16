@@ -1,20 +1,20 @@
+"use client";
 import { useTranslations } from "next-intl";
 
-import { loadButtonsSettingsQuery } from "@/sanity/utils/loadQuery";
+import { useDataSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { Button } from "./Button";
 
-export default async function JoinUsButton({ locale }: { locale: string }) {
+export const JoinUsButton = () => {
+    const { dataSettings } = useDataSettingsContext();
     const getTranslation = useTranslations();
-    const { data } = await loadButtonsSettingsQuery(locale);
-    const JOIN_US_LINK = data?.buttonJoinUS?.linkExternal?.url
-        ? data.buttonJoinUS.linkExternal.url
+    console.log(dataSettings?.buttonJoinUS?.buttonName);
+    const JOIN_US_LINK = dataSettings?.buttonJoinUS?.linkExternal?.url
+        ? dataSettings.buttonJoinUS.linkExternal.url
         : "https://forms.gle/nhbFek3qZYQgo9V19";
 
-    console.log(data?.buttonJoinUS?.linkExternal?.url);
-
-    const buttonName = data?.buttonJoinUS?.buttonName
-        ? String(data.buttonJoinUS.buttonName)
+    const buttonName = dataSettings?.buttonJoinUS?.buttonName
+        ? dataSettings.buttonJoinUS.buttonName.toString()
         : getTranslation("Buttons.joinUs");
 
     return (
@@ -27,4 +27,4 @@ export default async function JoinUsButton({ locale }: { locale: string }) {
             <Button color="grey">{buttonName}</Button>
         </a>
     );
-}
+};

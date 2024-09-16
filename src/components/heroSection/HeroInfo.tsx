@@ -1,17 +1,13 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-import { Home } from "@/types/sanity.types";
-
-import JoinUsButton from "../shared/JoinUsButton";
+import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { HomePageProps } from "./HeroSection";
 
-export interface HomePageProps {
-    data: Home | null;
-}
 export const HeroInfo = ({ data }: HomePageProps) => {
     const heroTitle = String(data?.hero?.title);
     const getTranslation = useTranslations();
-    const locale = useLocale();
+
     return (
         <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
             <h1
@@ -23,24 +19,8 @@ export const HeroInfo = ({ data }: HomePageProps) => {
                     : getTranslation("Hero.heroInfoText")}
             </h1>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                {/* {data?.ctaSectionOrder?.ctaButton?.buttonName ? (
-                    <WriteUs
-                        buttonName={
-                            data?.ctaSectionOrder?.ctaButton?.buttonName
-                        }
-                    />
-                ) : ( */}
                 <WriteUs />
-                {/* )}
-                {data?.ctaSectionJoinUs?.ctaButton?.buttonName ? (
-                    <JoinUsButton
-                        buttonName={
-                            data?.ctaSectionJoinUs?.ctaButton?.buttonName
-                        }
-                    />
-                ) : ( */}
-                <JoinUsButton locale={locale} />
-                {/* )} */}
+                <JoinUsButton />
             </div>
         </div>
     );
