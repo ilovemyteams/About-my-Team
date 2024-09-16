@@ -20,7 +20,8 @@ export const settingsQuery = groq`
     },
     ogImage,
     buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},
-    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value}
+    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
+    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
 
   }
 `;
