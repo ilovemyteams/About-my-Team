@@ -1,6 +1,6 @@
 import { defineField, defineType } from "sanity";
 
-import { Milestone, Timeline } from "../../../../sanity.types";
+import { Milestone, Timeline } from "@/types/sanity.types";
 
 export const timelineType = defineType({
     name: "timeline",
