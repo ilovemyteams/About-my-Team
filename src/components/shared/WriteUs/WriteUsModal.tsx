@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { useDataSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { Button } from "../Button";
 import { IconCloseX } from "../Icons/IconCloseX";
@@ -27,14 +28,20 @@ export const WriteUsModal = ({
     setIsNotificationShawn,
     className,
 }: WriteUsModalProps) => {
+    const { dataSettings } = useDataSettingsContext();
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Buttons");
     const screenSizeName = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
 
+    const buttonOrderName = dataSettings?.buttonOrder?.buttonName
+        ? dataSettings.buttonOrder.buttonName.toString()
+        : getTranslation("order");
+
+    console.log(buttonOrderName);
     return (
         <div className={className}>
-            <Button onClick={onOpen}>{getTranslation("order")}</Button>
+            <Button onClick={onOpen}>{buttonOrderName}</Button>
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}

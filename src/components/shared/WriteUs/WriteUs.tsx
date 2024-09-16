@@ -1,14 +1,11 @@
 "use client";
 import { useState } from "react";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
-
 import { NotificationModal } from "./NotificationModal";
 import { WriteUsModal } from "./WriteUsModal";
 
 interface WriteUsProps {
     className?: string;
-    buttonName?: InternationalizedArrayString;
 }
 
 export const WriteUs = ({ className }: WriteUsProps) => {
