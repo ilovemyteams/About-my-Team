@@ -1,12 +1,12 @@
+"use client";
 import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
-import React from "react";
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import React, { useEffect, useState } from "react";
 
-import { loadSettings } from "@/sanity/utils/loadQuery";
+import { getClient } from "@/sanity/lib/client";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
@@ -14,6 +14,8 @@ import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+import { DataSettingsProvider } from "@/src/utils/SettingsSanityContext";
+import { Settings } from "@/types/sanity.types";
 
 import { Providers } from "./providers";
 
@@ -49,33 +51,7 @@ const geist = localFont({
     variable: "--font-geist",
 });
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
-    const getTranslation = await getTranslations({ locale, namespace: "Home" });
-
-    return {
-        metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-        alternates: {
-            canonical: "/",
-            languages: {
-                en: "/en",
-                pl: "/pl",
-                ua: "/ua",
-            },
-        },
-        title: getTranslation("title"),
-        description: getTranslation("description"),
-        openGraph: {
-            description: getTranslation("description"),
-            type: "website",
-        },
-    };
-}
-
-export default async function LocaleLayout({
+export const LocaleLayout = ({
     children,
     modal,
     params: { locale },
@@ -83,10 +59,32 @@ export default async function LocaleLayout({
     children: React.ReactNode;
     modal: React.ReactNode;
     params: { locale: string };
-}>) {
-    const shareData = await loadSettings(locale);
-    const messages = await getMessages();
-    console.log(shareData.data?.buttonJoinUS);
+}>) => {
+    const messages = useMessages();
+
+    const [dataSettings, setDataSettings] = useState<Settings | null>(null);
+
+    useEffect(() => {
+        async function fetchDataSettings() {
+            const client = getClient();
+            const settingsSanityData = await client.fetch(`
+  *[_type == "settings"][0]{
+  ...,
+    footer,
+    menuItems[]->{
+      _type,
+      "slug": slug.current,
+      title
+    },
+    ogImage,
+    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value}
+
+  }
+`);
+            setDataSettings(settingsSanityData);
+        }
+        fetchDataSettings();
+    }, [locale]);
 
     return (
         <html lang={locale} suppressHydrationWarning>
@@ -110,32 +108,29 @@ export default async function LocaleLayout({
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
-                    <body
-                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
+                    <DataSettingsProvider value={{ dataSettings }}>
+                        <body
+                            className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
-                    >
-                        <Providers>
-                            <BackgroundImages />
-                            {shareData.data ? (
-                                <Header data={shareData.data} />
-                            ) : (
+                        >
+                            <Providers>
+                                <BackgroundImages />
                                 <Header />
-                            )}
-
-                            <main>
-                                {modal}
-                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-                                    <BackgroundFigures />
-                                    {children}
-                                </div>
-                            </main>
-                            <Footer />
-                            <ScrollToTopButton />
-                            <CookiesComponent />
-                        </Providers>
-                    </body>
+                                <main>
+                                    {modal}
+                                    <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                        <BackgroundFigures />
+                                        {children}
+                                    </div>
+                                </main>
+                                <Footer />
+                                <ScrollToTopButton />
+                                <CookiesComponent />
+                            </Providers>
+                        </body>
+                    </DataSettingsProvider>
                 </PreviousURLProvider>
             </NextIntlClientProvider>
         </html>
     );
-}
+};
