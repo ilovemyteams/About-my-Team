@@ -6,12 +6,12 @@ import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 import { Button } from "./Button";
 
 export const JoinUsButton = () => {
-    const getTranslation = useTranslations();
+    const getTranslation = useTranslations("Buttons");
     const { data } = useSettingsContext();
 
     const buttonNameString = data?.buttonJoinUS?.buttonName
-        ? data?.buttonJoinUS?.buttonName.toString()
-        : getTranslation("Buttons.joinUs");
+        ? data.buttonJoinUS.buttonName.toString()
+        : getTranslation("joinUs");
 
     const JOIN_US_LINK = data?.buttonJoinUS?.linkExternal?.url
         ? data.buttonJoinUS.linkExternal.url
