@@ -1,31 +1,30 @@
 import React, { createContext, useContext } from "react";
 
 import { Settings } from "@/types/sanity.types";
-
-interface DataSettingsContextType {
-    dataSettings: Settings | null;
+interface SettingsContextType {
+    data: Settings | null;
 }
 
-export const DataSettingsContext = createContext<
-    DataSettingsContextType | undefined
->(undefined);
+export const SettingsContext = createContext<SettingsContextType | undefined>(
+    undefined
+);
 
-export const DataSettingsProvider = ({
+export const SettingsContextProvider = ({
     children,
     value,
 }: {
     children: React.ReactNode;
-    value: DataSettingsContextType;
+    value: SettingsContextType;
 }) => {
     return (
-        <DataSettingsContext.Provider value={value}>
+        <SettingsContext.Provider value={value}>
             {children}
-        </DataSettingsContext.Provider>
+        </SettingsContext.Provider>
     );
 };
 
-export const useDataSettingsContext = () => {
-    const context = useContext(DataSettingsContext);
+export const useSettingsContext = () => {
+    const context = useContext(SettingsContext);
     if (!context) {
         throw new Error(
             "useDataSettingsContext must be used within a DataProvider"
