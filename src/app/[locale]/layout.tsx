@@ -14,7 +14,7 @@ import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
-import { DataSettingsProvider } from "@/src/utils/SettingsSanityContext";
+import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 import { Settings } from "@/types/sanity.types";
 
 import { Providers } from "./providers";
@@ -62,7 +62,7 @@ export const LocaleLayout = ({
 }>) => {
     const messages = useMessages();
 
-    const [dataSettings, setDataSettings] = useState<Settings | null>(null);
+    const [data, setData] = useState<Settings | null>(null);
 
     useEffect(() => {
         async function fetchDataSettings() {
@@ -82,11 +82,11 @@ export const LocaleLayout = ({
     buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
   }
 `);
-            setDataSettings(settingsSanityData);
+            setData(settingsSanityData);
         }
         fetchDataSettings();
     }, [locale]);
-
+    console.log(data);
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
@@ -109,7 +109,7 @@ export const LocaleLayout = ({
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
-                    <DataSettingsProvider value={{ dataSettings }}>
+                    <SettingsContextProvider value={{ data }}>
                         <body
                             className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
@@ -129,7 +129,7 @@ export const LocaleLayout = ({
                                 <CookiesComponent />
                             </Providers>
                         </body>
-                    </DataSettingsProvider>
+                    </SettingsContextProvider>
                 </PreviousURLProvider>
             </NextIntlClientProvider>
         </html>
