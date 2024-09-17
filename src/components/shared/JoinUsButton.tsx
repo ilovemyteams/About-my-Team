@@ -5,8 +5,6 @@ import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { Button } from "./Button";
 
-const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
-
 export const JoinUsButton = () => {
     const getTranslation = useTranslations();
     const { data } = useSettingsContext();
@@ -14,6 +12,10 @@ export const JoinUsButton = () => {
     const buttonNameString = data?.buttonJoinUS?.buttonName
         ? data?.buttonJoinUS?.buttonName.toString()
         : getTranslation("Buttons.joinUs");
+
+    const JOIN_US_LINK = data?.buttonJoinUS?.linkExternal?.url
+        ? data.buttonJoinUS.linkExternal.url
+        : "https://forms.gle/nhbFek3qZYQgo9V19";
 
     return (
         <a
