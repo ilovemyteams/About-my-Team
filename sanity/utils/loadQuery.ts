@@ -4,8 +4,8 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
+import { Home } from "@/types/sanity.types";
 
-import { Home } from "../../types/sanity.types";
 import { readToken } from "../lib/api";
 import { homePageQuery, settingsQuery } from "../lib/queries";
 const serverClient = getClient({ token: readToken });
