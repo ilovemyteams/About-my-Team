@@ -12,7 +12,7 @@ export const IconLike = ({ isActive, className }: IconLikeProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
-            aria-label="Like"
+            aria-label="Heart-shaped icon"
         >
             <path
                 fillRule="evenodd"

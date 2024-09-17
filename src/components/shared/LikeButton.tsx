@@ -20,7 +20,7 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
         <button
             onClick={toggleLike}
             className="text-purple-100 tab:text-purple-130 dark:text-purple-50 flex items-center gap-x-2"
-            aria-label="Like"
+            aria-label="Like button"
         >
             <IconLike
                 className={`pb-0.5 ${likeIconStyle} my-auto`}
