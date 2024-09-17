@@ -17,7 +17,9 @@ export const HeroInfo = ({ data }: HomePageProps) => {
                 className="text-xl pc:mb-[154px] pc:static
                            tab:absolute tab:left-0 tab:top-0 deskxl:text-2xl text-purple-200 dark:text-grey deskxl:mb-[173px]"
             >
-                {getTranslation("Hero.heroInfoText")}
+                {data?.hero?.title
+                    ? data.hero.title.toString()
+                    : getTranslation("Hero.heroInfoText")}
             </h1>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
                 <WriteUs />
