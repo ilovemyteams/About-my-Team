@@ -28,7 +28,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
     const { questionText, answerText, imageAltText } = localizationData;
 
     return (
-        <div className="container mb-3 tab:mb-2.5 flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
+        <div className="tab:mb-2.5 flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
             <Image
                 src={image}
                 alt={imageAltText}

@@ -14,15 +14,19 @@ export const QaCardList = () => {
     const getTranslation = useTranslations("Q&A");
     const ITER: number[] = [1, 2, 3, 4, 5];
 
-    return ITER.map(i => (
-        <QaCard
-            key={i}
-            data={{ id: i, image: IMAGE, likes: i }}
-            localizationData={{
-                questionText: getTranslation(`question${i}`),
-                answerText: getTranslation(`answer${i}`),
-                imageAltText: "Illustration",
-            }}
-        />
-    ));
+    return (
+        <div className="flex flex-col gap-3">
+            {ITER.map(i => (
+                <QaCard
+                    key={i}
+                    data={{ id: i, image: IMAGE, likes: i }}
+                    localizationData={{
+                        questionText: getTranslation(`question${i}`),
+                        answerText: getTranslation(`answer${i}`),
+                        imageAltText: "Illustration",
+                    }}
+                />
+            ))}
+        </div>
+    );
 };
