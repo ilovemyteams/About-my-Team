@@ -29,9 +29,7 @@ export const SettingsContextProvider = ({
 export const useSettingsContext = () => {
     const context = useContext(SettingsContext);
     if (context === undefined) {
-        throw new Error(
-            "useDataSettingsContext must be used within a DataProvider"
-        );
+        throw new Error("Something went wrong");
     }
     return context;
 };
