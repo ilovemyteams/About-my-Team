@@ -9,7 +9,6 @@ export interface HomePageProps {
     data: Home | null;
 }
 export const HeroInfo = ({ data }: HomePageProps) => {
-    console.log(data?.hero?.title);
     const getTranslation = useTranslations();
     return (
         <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
