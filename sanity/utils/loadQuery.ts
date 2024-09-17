@@ -4,7 +4,7 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
-import { Home } from "@/types/sanity.types";
+import { Home, Settings } from "@/types/sanity.types";
 
 import { readToken } from "../lib/api";
 import { homePageQuery, settingsQuery } from "../lib/queries";
@@ -48,10 +48,10 @@ export const loadQuery = ((query, params = {}, options = {}) => {
  * Loaders that are used in more than one place are declared here, otherwise they're colocated with the component
  */
 
-export function loadSettings() {
-    return loadQuery(
+export function loadSettings(language = "ua") {
+    return loadQuery<Settings | null>(
         settingsQuery,
-        {},
+        { language },
         { next: { tags: ["settings", "home"] } }
     );
 }
