@@ -1,18 +1,19 @@
+"use client";
 import { useTranslations } from "next-intl";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { Button } from "./Button";
 
 const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
 
-export const JoinUsButton = ({
-    buttonName,
-}: {
-    buttonName?: InternationalizedArrayString;
-}) => {
+export const JoinUsButton = () => {
     const getTranslation = useTranslations();
-    const buttonNameString = String(buttonName);
+    const { data } = useSettingsContext();
+
+    const buttonNameString = data?.buttonJoinUS?.buttonName
+        ? data?.buttonJoinUS?.buttonName.toString()
+        : getTranslation("Buttons.joinUs");
 
     return (
         <a
@@ -21,11 +22,7 @@ export const JoinUsButton = ({
             rel="noopener noreferrer"
             className="outline-none"
         >
-            <Button color="grey">
-                {buttonNameString
-                    ? buttonNameString
-                    : getTranslation("Buttons.joinUs")}
-            </Button>
+            <Button color="grey">{buttonNameString}</Button>
         </a>
     );
 };
