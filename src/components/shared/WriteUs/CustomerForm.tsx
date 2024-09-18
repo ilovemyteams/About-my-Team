@@ -59,7 +59,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         try {
             await notificationHandler(onSendData);
         } catch (error) {
-            console.dir(error);
             return error;
         }
     };
