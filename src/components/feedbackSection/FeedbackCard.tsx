@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { addProtocol } from "@/src/utils/addProtocol";
 
@@ -25,6 +26,8 @@ export const FeedbackCard = ({
     data,
     localizationData,
 }: FeedbackCardItemProps) => {
+    const getTranslation = useTranslations("Feedback");
+
     const {
         image = "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
         siteLink,
@@ -85,7 +88,7 @@ export const FeedbackCard = ({
                 dark:active:border-red active:border-redLight dark:pc:hover:border-red pc:hover:border-redLight
                 dark:pc:focus:border-red pc:focus:border-redLight"
                             >
-                                Весь відгук
+                                {getTranslation("feedbackLink")}
                             </a>
                         </>
                     )}
