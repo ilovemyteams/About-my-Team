@@ -47,7 +47,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "25",
+            pricePerHour: "21",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
@@ -494,7 +494,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
-            pricePerHour: "20",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/posternak-olena/",
                 github: "https://github.com/OlenaPosternak",
@@ -771,7 +771,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "25",
+            pricePerHour: "21",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
@@ -1317,7 +1317,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "20",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/hanna-truba-032964227",
                 telegram: "https://t.me/Hanna_Truba",
@@ -1553,49 +1553,53 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "NataliIstominaMarket",
+            id: "VeronikaZlobina",
             projectId: ["3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
-            position: "Marketers",
-            categoryName: "marketer",
+                "https://drive.google.com/uc?export=view&id=1uiJss2kZE8k04-lTV07vIUQQk_-3dR8f",
+            position: "UI/UX designer",
+            categoryName: "designer",
             projectsExperience: ["theatermag.com.ua"],
-            pricePerHour: "12",
+            pricePerHour: "9",
             socialLinks: {
-                linkedin: "https://www.linkedin.com/in/natali-istomina/",
-                telegram: "https://t.me/istomina_nn",
+                linkedin: "https://www.linkedin.com/in/vrnkzlbn/",
+                telegram: "https://t.me/vronells",
+                behance: "https://www.behance.net/vrnkzlbn",
             },
             tools: [
-                "Product Management",
-                "Building a go-to-market strategy",
-                "New product development and launch",
-                "Outdoor advertising",
-                "Audio advertising",
-                "Brand marketing",
-                "PR",
-                "SMM",
-                "Project Management",
+                "Figma",
+                "Adobe Photoshop",
+                "competitor and TA analysis",
+                "user personas",
+                "user flow",
+                "JTBD",
+                "CJM",
+                "understanding basic principles of composition",
+                "color theory",
+                "typography",
+                "prototyping",
+                "animation",
             ],
         },
         ua: {
-            name: "Наталі Істоміна",
-            about: "",
+            name: "Вероніка Злобіна",
+            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
             services:
-                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проєктами та розробкою споживчих упаковок.",
+                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
             team: "Український театр",
         },
         en: {
-            name: "Natali Istomina",
-            about: "",
+            name: "Veronika Zlobina",
+            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort.",
             services:
-                "Product Marketing Specialist. Experienced in developing and launching new retail confectionery products. Skilled in go-to-market strategies, branding, PR, SMM, and outdoor/audio advertising. Proficient in project management and consumer packaging design.",
+                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, prototyping and animation. Creation of banners and posts for Instagram or pictures for Telegram bots.",
             team: "Ukrainian theater",
         },
         pl: {
-            name: "Natali Istomina",
-            about: "",
+            name: "Veronika Zlobina",
+            about: "Udany projekt to nie tylko piękno, ale także prostota, która pomaga użytkownikom osiągnąć ich cele bez dodatkowego wysiłku.",
             services:
-                "Specjalista ds. marketingu produktowego. Mam doświadczenie w rozwijaniu i wprowadzaniu na rynek nowych produktów (słodycze na rynek detaliczny), tworzeniu strategii wejścia na rynek, a także w brandingu, PR, SMM i opracowywaniu kampanii reklamowych (outdoor, audio). Posiadam umiejętności zarządzania projektami oraz doświadczenie w projektowaniu opakowań.",
+                "Tworzenie projektów stron landing page, stron internetowych i aplikacji mobilnych. Prowadzenie badań UX (analiza konkurencji i grupy docelowej, wywiady), opracowywanie specyfikacji technicznych, tworzenie przepływu użytkowników i architektury informacji, JTBD i CJM; Projektowanie UX/UI, projektowanie responsywne, tworzenie stylu, przestrzeganie identyfikacji wizualnej, prototypowanie i animacja. Tworzenie banerów i postów na Instagram lub zdjęć dla botów w Telegramie.",
             team: "Ukrainian theater",
         },
     },
@@ -1653,58 +1657,7 @@ export const membersData: MemberDataItemType[] = [
             team: "Ukrainian theater",
         },
     },
-    {
-        data: {
-            id: "VeronikaZlobina",
-            projectId: ["3"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1uiJss2kZE8k04-lTV07vIUQQk_-3dR8f",
-            position: "UI/UX designer",
-            categoryName: "designer",
-            projectsExperience: ["theatermag.com.ua"],
-            pricePerHour: "9",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/vrnkzlbn/",
-                telegram: "https://t.me/vronells",
-                behance: "https://www.behance.net/vrnkzlbn",
-            },
-            tools: [
-                "Figma",
-                "Adobe Photoshop",
-                "competitor and TA analysis",
-                "user personas",
-                "user flow",
-                "JTBD",
-                "CJM",
-                "understanding basic principles of composition",
-                "color theory",
-                "typography",
-                "prototyping",
-                "animation",
-            ],
-        },
-        ua: {
-            name: "Вероніка Злобіна",
-            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
-            services:
-                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
-            team: "Український театр",
-        },
-        en: {
-            name: "Veronika Zlobina",
-            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort.",
-            services:
-                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, prototyping and animation. Creation of banners and posts for Instagram or pictures for Telegram bots.",
-            team: "Ukrainian theater",
-        },
-        pl: {
-            name: "Veronika Zlobina",
-            about: "Udany projekt to nie tylko piękno, ale także prostota, która pomaga użytkownikom osiągnąć ich cele bez dodatkowego wysiłku.",
-            services:
-                "Tworzenie projektów stron landing page, stron internetowych i aplikacji mobilnych. Prowadzenie badań UX (analiza konkurencji i grupy docelowej, wywiady), opracowywanie specyfikacji technicznych, tworzenie przepływu użytkowników i architektury informacji, JTBD i CJM; Projektowanie UX/UI, projektowanie responsywne, tworzenie stylu, przestrzeganie identyfikacji wizualnej, prototypowanie i animacja. Tworzenie banerów i postów na Instagram lub zdjęć dla botów w Telegramie.",
-            team: "Ukrainian theater",
-        },
-    },
+
     {
         data: {
             id: "AntonChertok",
@@ -1869,7 +1822,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Backend Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/anatolii-omelchenko/",
                 telegram: "https://t.me/Anatolii_Omelchenko",
@@ -2006,6 +1959,55 @@ export const membersData: MemberDataItemType[] = [
             team: "Ukrainian theater",
         },
     },
+
+    {
+        data: {
+            id: "OksanaOnopriienko",
+            projectId: ["3"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["theatermag.com.ua"],
+            pricePerHour: "9",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/oksana-onopriienko",
+                telegram: "https://t.me/Oksana_Onopriienko",
+                github: "https://github.com/Ksenya-77",
+            },
+            tools: [
+                "Jira",
+                "Postman",
+                "SQL",
+                "TestRail",
+                "JSON",
+                "HTML",
+                "CSS",
+                "Trello",
+            ],
+        },
+        ua: {
+            name: "Оксана Онопрієнко",
+            about: "На мене можна покластися в будь-яких умовах!",
+            services:
+                "Проведення ручного тестування програмного забезпечення. Написання тест-кейсів, чеклістів та звітів про помилки. API тестування з використанням Postman. Впровадження процесів якості та зниження дефектів після релізу.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Oksana Onopriienko",
+            about: "You can rely on me in any situation!",
+            services:
+                "Conducting manual software testing. Writing test cases, checklists, and bug reports. API testing using Postman. Implementation of quality processes and post-release defect reduction.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Oksana Onopriienko",
+            about: "Na mnie można polegać w każdej sytuacji!",
+            services:
+                "Przeprowadzanie ręcznych testów oprogramowania. Pisanie przypadków testowych, list kontrolnych i raportów o błędach. Testowanie API przy użyciu Postman. Wdrażanie procesów jakości i redukcja defektów po wersji.",
+            team: "Ukrainian theater",
+        },
+    },
     {
         data: {
             id: "OlenaHalushka",
@@ -2061,54 +2063,6 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Jorney Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
             team: "Smachno! na seli",
-        },
-    },
-    {
-        data: {
-            id: "OksanaOnopriienko",
-            projectId: ["3"],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["theatermag.com.ua"],
-            pricePerHour: "9",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/oksana-onopriienko",
-                telegram: "https://t.me/Oksana_Onopriienko",
-                github: "https://github.com/Ksenya-77",
-            },
-            tools: [
-                "Jira",
-                "Postman",
-                "SQL",
-                "TestRail",
-                "JSON",
-                "HTML",
-                "CSS",
-                "Trello",
-            ],
-        },
-        ua: {
-            name: "Оксана Онопрієнко",
-            about: "На мене можна покластися в будь-яких умовах!",
-            services:
-                "Проведення ручного тестування програмного забезпечення. Написання тест-кейсів, чеклістів та звітів про помилки. API тестування з використанням Postman. Впровадження процесів якості та зниження дефектів після релізу.",
-            team: "Український театр",
-        },
-        en: {
-            name: "Oksana Onopriienko",
-            about: "You can rely on me in any situation!",
-            services:
-                "Conducting manual software testing. Writing test cases, checklists, and bug reports. API testing using Postman. Implementation of quality processes and post-release defect reduction.",
-            team: "Ukrainian theater",
-        },
-        pl: {
-            name: "Oksana Onopriienko",
-            about: "Na mnie można polegać w każdej sytuacji!",
-            services:
-                "Przeprowadzanie ręcznych testów oprogramowania. Pisanie przypadków testowych, list kontrolnych i raportów o błędach. Testowanie API przy użyciu Postman. Wdrażanie procesów jakości i redukcja defektów po wersji.",
-            team: "Ukrainian theater",
         },
     },
 ];
