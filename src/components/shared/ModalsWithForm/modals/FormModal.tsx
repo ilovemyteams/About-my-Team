@@ -41,6 +41,7 @@ export const FormModal = ({
             onClose();
         } catch (error) {
             setIsError(true);
+            throw new Error("Form submission failed", { cause: error });
         } finally {
             setIsNotificationShawn(true);
         }

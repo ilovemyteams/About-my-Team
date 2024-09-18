@@ -41,8 +41,11 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                 },
             });
         };
-
-        await notificationHandler(onSendData);
+        try {
+            await notificationHandler(onSendData);
+        } catch (error) {
+            return error;
+        }
     };
 
     return (
