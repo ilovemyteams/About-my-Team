@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 import { addProtocol } from "@/src/utils/addProtocol";
 
 import { IconQuote } from "../shared/Icons/IconQuote";
@@ -7,6 +9,8 @@ export const FeedbackCardTextFromTab = ({
     data,
     localizationData,
 }: FeedbackCardItemProps) => {
+    const getTranslation = useTranslations("Feedback");
+
     const { siteLink, feedbackLink } = data;
     const { siteName, siteView, reviewer, reviewerRole, feedbackText } =
         localizationData;
@@ -41,7 +45,7 @@ export const FeedbackCardTextFromTab = ({
                 dark:active:border-red active:border-redLight dark:pc:hover:border-red pc:hover:border-redLight
                 dark:pc:focus:border-red pc:focus:border-redLight"
                             >
-                                Весь відгук
+                                {getTranslation("feedbackLink")}
                             </a>
                         </>
                     )}
