@@ -31,5 +31,5 @@ export const projectQuery = groq`
 {"title": title[_key == $language][0].value, 
   image {"caption":caption[_key == $language][0].value, "asset": asset->url}, 
   stages, URL, 
-  "category":category._ref}
+  "category":category->categoryName[_key == $language][0].value}
 `;
