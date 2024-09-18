@@ -1581,7 +1581,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Наталі Істоміна",
             about: "",
             services:
-                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проектами та розробкою споживчих упаковок.",
+                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проєктами та розробкою споживчих упаковок.",
             team: "Український театр",
         },
         en: {
@@ -1595,7 +1595,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Natali Istomina",
             about: "",
             services:
-                "Specjalizuję się w analizie procesów biznesowych, tworzeniu historii użytkowników, scenariuszy użycia i wymagań dotyczących oprogramowania. Mam doświadczenie w pracy z BPMN, tworzę makiety i specyfikacje techniczne.",
+                "Specjalista ds. marketingu produktowego. Mam doświadczenie w rozwijaniu i wprowadzaniu na rynek nowych produktów (słodycze na rynek detaliczny), tworzeniu strategii wejścia na rynek, a także w brandingu, PR, SMM i opracowywaniu kampanii reklamowych (outdoor, audio). Posiadam umiejętności zarządzania projektami oraz doświadczenie w projektowaniu opakowań.",
             team: "Ukrainian theater",
         },
     },
@@ -1633,21 +1633,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Міла Максименко",
-            about: "",
+            about: "Краса в деталях.",
             services:
-                "Створення дизайну для веб сайтів та мобільних застосунків враховуючи цілі бізнесу та потреби користувачів. Респонсивний дизайн. Проведення досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів). Опрацювання отриманої інформації, створення персон, юзер флоу, карт емпатій. Розробка варфреймів, UI дизайну, UI кітів. ",
+                "Створення дизайну для вебсайтів та мобільних застосунків враховуючи цілі бізнесу та потреби користувачів. Респонсивний дизайн. Проведення досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів). Опрацювання отриманої інформації, створення персон, юзер флоу, карт емпатій. Розробка варфреймів, UI дизайну, UI кітів. ",
             team: "Український театр",
         },
         en: {
             name: "Mila Maksymenko",
-            about: "",
+            about: "Beauty is in the details.",
             services:
                 "Creation of design for websites and mobile applications, taking into account business goals and user needs. Responsive design. Conducting research (user surveys, in-depth interviews, competitor analysis). Processing of received information, creation of personas, user flow, empathy maps. Development of wireframes, UI design, UI kit.",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Mila Maksymenko",
-            about: "",
+            about: "Piękno tkwi w szczegółach.",
             services:
                 "Tworzenie projektów dla stron internetowych i aplikacji mobilnych, uwzględniając cele biznesowe i potrzeby użytkowników. Projektowanie responsywne. Przeprowadzanie badań (ankiety użytkowników, wywiady pogłębione, analiza konkurencji). Analiza zebranych informacji, tworzenie person, ścieżek użytkownika, map empatii. Opracowywanie makietów, projektowanie UI, zestawów UI.",
             team: "Ukrainian theater",
@@ -1685,22 +1685,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Вероніка Злобіна",
-            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль",
+            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
             services:
-                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів",
+                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
             team: "Український театр",
         },
         en: {
             name: "Veronika Zlobina",
-            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort",
+            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort.",
             services:
-                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, proprietary designs and animation. Creating banners and posts for Instagram or pictures for Telegram bots",
+                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, prototyping and animation. Creation of banners and posts for Instagram or pictures for Telegram bots.",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Veronika Zlobina",
-            about: "",
-            services: "",
+            about: "Udany projekt to nie tylko piękno, ale także prostota, która pomaga użytkownikom osiągnąć ich cele bez dodatkowego wysiłku.",
+            services:
+                "Tworzenie projektów stron landing page, stron internetowych i aplikacji mobilnych. Prowadzenie badań UX (analiza konkurencji i grupy docelowej, wywiady), opracowywanie specyfikacji technicznych, tworzenie przepływu użytkowników i architektury informacji, JTBD i CJM; Projektowanie UX/UI, projektowanie responsywne, tworzenie stylu, przestrzeganie identyfikacji wizualnej, prototypowanie i animacja. Tworzenie banerów i postów na Instagram lub zdjęć dla botów w Telegramie.",
             team: "Ukrainian theater",
         },
     },
@@ -1737,22 +1738,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Антон Черток",
-            about: "Великий результат досягається через увагу до деталей і прагнення до простоти",
+            about: "Великий результат досягається через увагу до деталей і прагнення до простоти.",
             services:
-                "Спеціалізуюся на створенні сучасних, адаптивних і високоефективних інтерфейсів користувача, приділяючи особливу увагу якості коду, зменшенню кількості помилок і простоті підтримки. Використовую найкращі підходи для забезпечення швидкої розробки та масштабованості проектів. Маю досвід розробки додатків, які можуть працювати як повністю на стороні користувача, так і частково на сервері, що забезпечує оптимальну швидкість завантаження, високу продуктивність і кращу видимість у пошукових системах. Створюю стильні та зручні інтерфейси, що відповідають сучасним стандартам дизайну. Також забезпечую повну інтеграцію з необхідними сервісами та автоматизацію процесів розробки, що дозволяє швидко і ефективно впроваджувати нові функції та оновлення.",
+                "Спеціалізуюся на створенні сучасних, адаптивних і високоефективних інтерфейсів користувача, приділяючи особливу увагу якості коду, зменшенню кількості помилок і простоті підтримки. Використовую найкращі підходи для забезпечення швидкої розробки та масштабованості проєктів. Маю досвід розробки додатків, які можуть працювати як повністю на стороні користувача, так і частково на сервері, що забезпечує оптимальну швидкість завантаження, високу продуктивність і кращу видимість у пошукових системах. Створюю стильні та зручні інтерфейси, що відповідають сучасним стандартам дизайну. Також забезпечую повну інтеграцію з необхідними сервісами та автоматизацію процесів розробки, що дозволяє швидко і ефективно впроваджувати нові функції та оновлення.",
             team: "Український театр",
         },
         en: {
             name: "Anton Chertok",
-            about: "Great results come from paying attention to details and striving for simplicity",
+            about: "Great results are achieved through attention to detail and a pursuit of simplicity.",
             services:
-                "Specializes in creating modern, adaptive, and high-performance user interfaces, with a strong focus on code quality, reducing errors, and ease of maintenance. Best practices are employed to ensure rapid development and scalability of projects. Experience includes developing applications that can operate entirely on the client side or partially on the server side, ensuring optimal load times, high performance, and better search engine visibility. Designs are stylish and user-friendly, adhering to modern design standards. Seamless integration with necessary services is ensured, along with automation of development processes, allowing for the quick and efficient implementation of new features and updates.",
+                "Specializes in creating modern, adaptive, and high-performance user interfaces, with a strong focus on code quality, reducing errors, and ease of maintenance. Best practices are employed to ensure the rapid development and scalability of projects. Experience includes developing applications that can operate entirely on the client side or partially on the server side, ensuring optimal load times, high performance, and better search engine visibility. Designs are stylish and user-friendly, adhering to modern design standards. Seamless integration with necessary services is ensured, along with automation of development processes, allowing for the quick and efficient implementation of new features and updates.",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Anton Chertok",
-            about: "",
-            services: "",
+            about: "Doskonałe wyniki osiąga się dzięki dbałości o szczegóły i przywiązaniu do prostoty.",
+            services:
+                "Specjalizuję się w tworzeniu nowoczesnych, responsywnych i wysoce wydajnych interfejsów użytkownika, zwracając szczególną uwagę na jakość kodu, redukcję błędów i łatwość wsparcia. Korzystam z najlepszych praktyk, aby zapewnić szybki rozwój i skalowalność projektów. Mam doświadczenie w tworzeniu aplikacji, które mogą działać zarówno w pełni po stronie użytkownika, jak i częściowo na serwerze, co zapewnia optymalną szybkość ładowania, wysoką wydajność i lepszą widoczność w wyszukiwarkach. Tworzę stylowe i przyjazne dla użytkownika interfejsy, które spełniają nowoczesne standardy projektowania. Zapewniam również pełną integrację z niezbędnymi usługami i automatyzuję procesy deweloperskie, co pozwala na szybkie i sprawne wdrażanie nowych funkcji i aktualizacji.",
             team: "Ukrainian theater",
         },
     },
@@ -1778,7 +1780,7 @@ export const membersData: MemberDataItemType[] = [
                 "TS",
                 "Redux",
                 "Tailwind",
-                "Material UI",
+                "MUI",
                 "Node.js",
                 "Express",
                 "RTK Query",
@@ -1788,25 +1790,27 @@ export const membersData: MemberDataItemType[] = [
             name: "Дмитро Булахов",
             about: "Випадковості - не випадкові.",
             services:
-                "Створення сучасних веб-додатків різної складності. Забезпечення повної адаптивності та оптимізації всіх веб-додатків для різних пристроїв і розмірів екранів. Впровадження безпечних механізмів аутентифікації та авторизації.",
+                "Створення сучасних вебдодатків різної складності. Забезпечення повної адаптивності та оптимізації всіх вебдодатків для різних пристроїв і розмірів екранів. Впровадження безпечних механізмів аутентифікації та авторизації.",
             team: "Український театр",
         },
         en: {
             name: "Dmytro Bulakhov",
             about: "Accidents are not random.",
-            services: "",
+            services:
+                "Development of modern web applications of varying complexity. Ensuring full adaptability and optimization of all web applications for different devices and screen sizes. Implementation of secure authentication and authorization mechanisms.",
             team: "Ukrainian theater",
         },
         pl: {
-            name: "DmytroBulakhov",
+            name: "Dmytro Bulakhov",
             about: "Przypadki nie są przypadkowe.",
-            services: "",
+            services:
+                "Rozwój nowoczesnych aplikacji internetowych o różnym stopniu złożoności. Zapewnienie pełnej adaptowalności i optymalizacji wszystkich aplikacji internetowych dla różnych urządzeń i rozmiarów ekranu. Wdrożenie bezpiecznych mechanizmów uwierzytelniania i autoryzacji.",
             team: "Ukrainian theater",
         },
     },
     {
         data: {
-            id: "EvgeniyMalysh",
+            id: "EvhenMalysh",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1AjBCSRShpXihOxgvQ0VX2T1B6GLAs7jY",
@@ -1824,11 +1828,9 @@ export const membersData: MemberDataItemType[] = [
                 "Spring",
                 "Spring Boot",
                 "Security OAuth2",
-                "Hibernate",
-                "Redis",
                 "PostgreSQL",
+                "Hibernate",
                 "Swagger",
-                "Docker",
                 "CI/CD",
                 "JUnit 5",
                 "Spock",
@@ -1837,20 +1839,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Євген Малиш",
-            about: "",
-            services: "",
+            about: "Я можу зробити все, що завгодно. Питання лише в часі",
+            services:
+                "Розробка та підтримка безпечного високопродуктивного API-сервера на Java з повнотекстовим пошуком на базі Hibernate ORM, Search Apache Lucene. Cтворення Open-API документації для REST API. Реалізація безпеки на основі OAuth2, OpenID Connect з використанням Spring Secutiry на основі JWT токенів.",
             team: "Український театр",
         },
         en: {
             name: "Evhen Malysh",
-            about: "",
-            services: "",
+            about: "I can do anything. It's just a matter of time.",
+            services:
+                "Development and support of a secure high-performance Java API server with full-text search based on Hibernate ORM, Search Apache Lucene. Creation of Open-API documentation for the REST API. Implementation of security based on OAuth2, OpenID Connect using Spring Security based on JWT tokens",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Evhen Malysh",
-            about: "",
-            services: "",
+            about: "Mogę zrobić wszystko. To tylko kwestia czasu.",
+            services:
+                "Rozwój i wsparcie bezpiecznego, wysokowydajnego serwera Java API z wyszukiwaniem pełnotekstowym opartym na Hibernate ORM, Search Apache Lucene. Stworzenie dokumentacji Open-API dla REST API. Wdrożenie zabezpieczeń opartych na OAuth2, OpenID Connect przy użyciu Spring Security w oparciu o tokeny JWT.",
             team: "Ukrainian theater",
         },
     },
@@ -1885,21 +1890,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анатолій Омельченко",
-            about: "Я завжди прагну, щоб усе працювало ідеально.  Можливо, це трохи перфекціонізм, але я вірю, що якість у деталях.",
+            about: "Я завжди прагну, щоб усе працювало ідеально. Можливо, це трохи перфекціонізм, але я вірю, що якість у деталях.",
             services:
                 "Розробка та підтримка серверних додатків на Java/Kotlin, створення та інтеграція REST API, оптимізація продуктивності систем, управління базами даних, забезпечення високого рівня безпеки, автоматизація бізнес-процесів.",
             team: "Український театр",
         },
         en: {
             name: "Anatolii Omelchenko",
-            about: "",
+            about: "I always strive to make everything work perfectly. It might be a bit of perfectionism, but I believe that quality lies in the details.",
             services:
                 "Development and maintenance of server applications in Java/Kotlin, creation and integration of REST APIs, system performance optimization, database management, high-level security assurance, and business process automation.",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Anatolii Omelchenko",
-            about: "",
+            about: "Zawsze chcę, aby wszystko działało idealnie.  Może to odrobina perfekcjonizmu, ale wierzę, że jakość tkwi w szczegółach.",
             services:
                 "Tworzenie i utrzymanie aplikacji serwerowych w Java/Kotlin, tworzenie i integracja REST API, optymalizacja wydajności systemów, zarządzanie bazami danych, zapewnienie wysokiego poziomu bezpieczeństwa oraz automatyzacja procesów biznesowych.",
             team: "Ukrainian theater",
@@ -1934,21 +1939,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олександр Мещерський",
-            about: "",
+            about: "Ніколи не здавайтеся.",
             services:
-                "Розробляю сучасні серверні додатки, інтегрую бізнес-логіку, особливу увагу приділяю безпеці та в той же час простоті коду. Працюю з SQL та NoSQL, хмарними сервісами, REST, меседж-брокерами. Також маю досвід та навички роботи з фронтенд-інструментами (Javascript, Typescript, React, Next, Redux.",
+                "Розробляю сучасні серверні додатки, інтегрую бізнес-логіку, особливу увагу приділяю безпеці та в той же час простоті коду. Працюю з SQL та NoSQL, хмарними сервісами, REST, меседж-брокерами. Також маю досвід та навички роботи з фронтенд-інструментами (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
             team: "Український театр",
         },
         en: {
             name: "Oleksandr Meshcherskyi",
-            about: "Never give up",
-            services: "",
+            about: "Never give up.",
+            services:
+                "I develop modern server applications, integrate business logic, and pay special attention to security and simplicity of code. I work with SQL and NoSQL, cloud services, REST, and message brokers. I also have experience and skills in front-end tools (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Oleksandr Meshcherskyi",
-            about: "",
-            services: "",
+            about: "Nigdy się nie poddawaj.",
+            services:
+                "Tworzę nowoczesne aplikacje serwerowe, integruję logikę biznesową, zwracam szczególną uwagę na bezpieczeństwo i prostotę kodu. Pracuję z SQL i NoSQL, usługami w chmurze, REST i brokerami wiadomości. Posiadam również doświadczenie i umiejętności w zakresie narzędzi front-endowych (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
             team: "Ukrainian theater",
         },
     },
@@ -1967,13 +1974,21 @@ export const membersData: MemberDataItemType[] = [
                 telegram: "https://t.me/SvitlanaKrokh",
                 github: "http://github.com/SvitlanaKrok",
             },
-            tools: ["Jira", "Postman", "SQL", "HTML/CSS", "JavaScript"],
+            tools: [
+                "Jira",
+                "Postman",
+                "SQL",
+                "HTML/CSS",
+                "JavaScript",
+                "Cypress",
+                "TypeScript",
+            ],
         },
         ua: {
             name: "Світлана Крохмальна",
             about: "Гарно розроблений та відтестований продукт принесе користь та задоволення замовнику. Якісна та тісна робота в команді створить цей продукт.",
             services:
-                "Створення тест плану та тестової стратегії. Написання тест кейсів, smoke та regression checklists. Виконання: smoke, API, functional, non-functional, regression, retesting and end-to-endтестування. Створення багрепортів в Jira. Супровід процесів розвитку команди.",
+                "Створення тест плану та тестової стратегії. Написання тест кейсів, smoke та regression checklists. Виконання: smoke, API, functional, non-functional, regression, retesting and end-to-end тестування. Створення багрепортів в Jira. Супровід процесів розвитку команди.",
             team: "Український театр",
         },
         en: {
@@ -1987,7 +2002,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Svitlana Krokhmalna",
             about: "Dobrze zaprojektowany i przetestowany produkt przyniesie klientowi korzyści i satysfakcję. Wysoka jakość i ścisła praca zespołowa pozwolą stworzyć ten produkt.",
             services:
-                "Tworzenie planu testów i strategii testowania. Pisanie przypadków testowych, list kontrolnych testów dymnych i regresji. Wykonywanie: testów dymnych, API, funkcjonalnych, niefunkcjonalnych, regresji, ponownych testów i testów kompleksowych. Tworzenie raportów błędów w Jira. Wsparcie procesów rozwoju zespołu",
+                "Tworzenie planu testów i strategii testowania. Pisanie przypadków testowych, list kontrolnych testów dymnych i regresji. Wykonywanie: testów dymnych, API, funkcjonalnych, niefunkcjonalnych, regresji, ponownych testów i testów kompleksowych. Tworzenie raportów błędów w Jira. Wsparcie procesów rozwoju zespołu.",
             team: "Ukrainian theater",
         },
     },
