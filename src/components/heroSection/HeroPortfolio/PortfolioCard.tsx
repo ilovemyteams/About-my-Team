@@ -35,10 +35,10 @@ export const PortfolioCard = ({ data }: { data: Project }) => {
             ></div>
             <div className="absolute bottom-0 p-4 pc:p-6 deskxl:p-8 h-[74px] pc:h-[94px] deskxl:h-[110px] z-10">
                 <p className="font-caviar text-lg pc:text-xl font-bold text-purple-200 dark:text-white-200">
-                    {data?.title ? data.title.toString() : "no name"}
+                    {data?.title ? data.title.toString() : "Project name"}
                 </p>
                 <SmallPageTitle className="text-xs pc:text-sm">
-                    {data?.category ? data.category.toString() : "no category"}
+                    {data?.category ? data.category.toString() : "site"}
                 </SmallPageTitle>
             </div>
         </div>
