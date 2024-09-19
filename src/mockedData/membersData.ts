@@ -70,7 +70,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Сусанна Салата",
             about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
             services:
-                "Консультування, аналіз бізнес процесів, стратегічне планування, бюджетування, управління проектами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
+                "Консультування, аналіз бізнес-процесів, стратегічне планування, бюджетування, управління проєктами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
             team: "I Love My Team",
         },
         en: {
@@ -1585,7 +1585,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Вероніка Злобіна",
             about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
             services:
-                "Створення дизайну для лендінгів, веб сайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтервью), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, пропитипи да анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
+                "Створення дизайну для лендінгів, вебсайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтерв'ю), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, прототипи та анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
             team: "Український театр",
         },
         en: {
@@ -2047,21 +2047,21 @@ export const membersData: MemberDataItemType[] = [
             name: "Олена Галушка",
             about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
             services:
-                "Створення дизайну для мобільних застосунків та веб сайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Jorney Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, variables. Unmoderated User testing. Презентація. Обробка фото та зображень.",
+                "Створення дизайну для мобільних застосунків та вебсайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Journey Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, змінні. Немодероване юзабіліті тестування. Презентація. Обробка фото та зображень.",
             team: "Смачно! на селі",
         },
         en: {
             name: "Olena Halushka",
             about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
             services:
-                "Creation of design for mobile applications and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Compilation of user flow, information architecture, personas. Product hypotheses, jobs to be done, Customer Journey Map, prioritization according to the Kano model. Prototypes, UI design, adaptive creation of UI kits, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
+                "Designing mobile apps and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Creation of user flow, information architecture, personas. Also, product hypotheses, jobs to be done, Customer Journey Map, prioritization by Kano model. Prototypes, UI design, adaptive UI cats, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
             team: "Smachno! na seli",
         },
         pl: {
             name: "Olena Halushka",
             about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
             services:
-                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Jorney Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
+                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Journey Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
             team: "Smachno! na seli",
         },
     },
