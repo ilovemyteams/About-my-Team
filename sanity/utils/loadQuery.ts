@@ -4,10 +4,10 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
-import { Home, Settings } from "@/types/sanity.types";
+import { Home, Project, Settings } from "@/types/sanity.types";
 
 import { readToken } from "../lib/api";
-import { homePageQuery, settingsQuery } from "../lib/queries";
+import { homePageQuery, projectQuery, settingsQuery } from "../lib/queries";
 const serverClient = getClient({ token: readToken });
 
 /**
@@ -61,6 +61,14 @@ export function loadHomePage(language = "ua") {
         homePageQuery,
         { language },
         { next: { tags: ["home"] } }
+    );
+}
+
+export function loadProjects(language = "ua") {
+    return loadQuery<Project[] | null>(
+        projectQuery,
+        { language },
+        { next: { tags: ["project"] } }
     );
 }
 
