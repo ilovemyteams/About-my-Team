@@ -309,7 +309,7 @@ export const membersData: MemberDataItemType[] = [
                 "greyplaza.com.ua",
                 "protection.in.ua",
             ],
-            pricePerHour: "15",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
@@ -550,7 +550,7 @@ export const membersData: MemberDataItemType[] = [
                 "kuharskyivulyk.com.ua",
             ],
 
-            pricePerHour: "15",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
                 github: "https://github.com/OlgaMykhailova",
@@ -1127,7 +1127,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
-            pricePerHour: "6",
+            pricePerHour: "4",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
                 github: "",
@@ -1363,7 +1363,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "15",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olena-holubonkova/",
                 telegram: "https://t.me/Golubyonkova",
@@ -1457,7 +1457,7 @@ export const membersData: MemberDataItemType[] = [
             id: "IrynaShevchenko",
             projectId: ["2"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1axCkf35Z3dykmd3mRPVfvPo2gMmx-zZn",
+                "https://drive.google.com/uc?export=view&id=14d7tOm2EEpI4xG-worNliutU5hnwOpCe",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com"],
@@ -1506,6 +1506,54 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
+            id: "NataliIstominaMarket",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
+            position: "Marketer",
+            categoryName: "marketer",
+            projectsExperience: [],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/natali-istomina/",
+                telegram: "https://t.me/istomina_nn",
+            },
+            tools: [
+                "Product Management",
+                "Building a go-to-market strategy",
+                "New product development and launch",
+                "Outdoor advertising",
+                "Audio advertising",
+                "Brand marketing",
+                "PR",
+                "SMM",
+                "Project Management",
+            ],
+        },
+        ua: {
+            name: "Наталі Істоміна",
+            about: "Я знаю як успішно вивести ваш продукт на ринок і почати заробляти на ньому.",
+            services:
+                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проєктами та розробкою споживчих упаковок.",
+            team: "Український театр",
+        },
+        en: {
+            name: "Natali Istomina",
+            about: "I know how to successfully bring your product to the market and start making money on it.",
+            services:
+                "Product Marketing Specialist. Experienced in developing and launching new retail confectionery products. Skilled in go-to-market strategies, branding, PR, SMM, and outdoor/audio advertising. Proficient in project management and consumer packaging design.",
+            team: "Ukrainian theater",
+        },
+        pl: {
+            name: "Natali Istomina",
+            about: "Wiem, jak skutecznie wprowadzić Twój produkt na rynek i zacząć na nim zarabiać.",
+            services:
+                "Specjalista ds. marketingu produktowego. Mam doświadczenie w rozwijaniu i wprowadzaniu na rynek nowych produktów (słodycze na rynek detaliczny), tworzeniu strategii wejścia na rynek, a także w brandingu, PR, SMM i opracowywaniu kampanii reklamowych (outdoor, audio). Posiadam umiejętności zarządzania projektami oraz doświadczenie w projektowaniu opakowań.",
+            team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
             id: "NataliIstominaBA",
             projectId: ["3"],
             imageURL:
@@ -1531,21 +1579,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Наталі Істоміна",
-            about: "",
+            about: "Будь-які неструктуровані вимоги до продукту я можу передати в схемах, діаграмах чи таблицях  ",
             services:
                 "Спеціалізуюсь на аналізі бізнес-процесів, розробці користувацьких історій, сценаріїв використання та вимог до програмного забезпечення. Маю досвід роботи з BPMN, створюю вайрфрейми та технічні завдання.",
             team: "Український театр",
         },
         en: {
             name: "Natali Istomina",
-            about: "",
+            about: "I can present any unstructured product requirements in diagrams, charts, or tables.",
             services:
                 "Business Analyst with expertise in analyzing business processes, developing user stories, use cases, and defining software requirements. Proficient in BPMN, wireframing, and creating detailed technical specifications.",
             team: "Ukrainian theater",
         },
         pl: {
             name: "Natali Istomina",
-            about: "",
+            about: "Wszelkie niestrukturalne wymagania dotyczące produktu mogę przekazać w schematach, diagramach lub tabelach.",
             services:
                 "Specjalizuję się w analizie procesów biznesowych, tworzeniu historii użytkowników, scenariuszy użycia i wymagań dotyczących oprogramowania. Mam doświadczenie w pracy z BPMN, tworzę makiety i specyfikacje techniczne.",
             team: "Ukrainian theater",
