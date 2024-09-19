@@ -36,10 +36,10 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
             ></div>
             <div className="absolute bottom-0 p-4 pc:p-6 deskxl:p-8 h-[74px] pc:h-[94px] deskxl:h-[110px] z-10">
                 <p className="font-caviar text-lg pc:text-xl font-bold text-purple-200 dark:text-white-200">
-                    {data?.name ? data?.name : "Site name"}
+                    {data?.name ? data.name : "Site name"}
                 </p>
                 <SmallPageTitle className="text-xs pc:text-sm">
-                    {data?.siteView ? data?.siteView : "site"}
+                    {data?.siteView ? data.siteView : "site"}
                 </SmallPageTitle>
             </div>
         </div>
