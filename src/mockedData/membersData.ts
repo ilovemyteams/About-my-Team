@@ -444,7 +444,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "15",
+            pricePerHour: "10",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
@@ -1127,7 +1127,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
-            pricePerHour: "4",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
                 github: "",
@@ -1175,7 +1175,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "6",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
                 github: "",
