@@ -4,6 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
 
 import { LocaleType } from "@/types/LocaleType";
+import { Project } from "@/types/sanity.types";
 
 import { portfolioData } from "../../../mockedData/portfolioData";
 import {
@@ -17,12 +18,16 @@ import { PortfolioCard } from "./PortfolioCard";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 
-export const PortfolioSlider = () => {
+export const PortfolioSlider = ({
+    projects,
+}: {
+    projects: Project[] | null;
+}) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
-
+    console.log(projects);
     const {
         prevBtnDisabled,
         nextBtnDisabled,
