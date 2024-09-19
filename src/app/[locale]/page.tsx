@@ -1,4 +1,4 @@
-import { loadHomePage } from "@/sanity/utils/loadQuery";
+import { loadHomePage, loadProjects } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
@@ -15,11 +15,12 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 type HopePageProps = { params: { locale: string } };
 export default async function HomePage(props: HopePageProps) {
     const initial = await loadHomePage(props.params.locale);
+    const projects = await loadProjects(props.params.locale);
 
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={initial.data} />
+            <HeroSection data={initial.data} projects={projects.data} />
             <MissionSection />
             <JoinTheTeamSection />
             <PortfolioSection />
