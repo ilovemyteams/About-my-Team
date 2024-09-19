@@ -1,7 +1,9 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import { useLocale } from "next-intl";
 
+import { LocaleType } from "@/types/LocaleType";
 import { Project } from "@/types/sanity.types";
 
 import { portfolioData } from "../../../mockedData/portfolioData";
@@ -12,6 +14,7 @@ import {
 } from "../../shared/SliderComponents/CarouselButtons";
 import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+import { PortfolioCard } from "./PortfolioCard";
 import { PortfolioCardSanity } from "./PortfolioCardSanity";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
@@ -30,6 +33,8 @@ export const PortfolioSlider = ({
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+
+    const locale = useLocale();
 
     return (
         <div
@@ -60,16 +65,26 @@ export const PortfolioSlider = ({
                 ref={emblaRef}
             >
                 <div className="flex max-w-[540px] tab:w-[100%] tab:min-w-[360px] pc:min-w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428]  deskxl:max-w-[668px] ">
-                    {projects &&
-                        projects?.length > 0 &&
-                        projects.map(project => (
-                            <div
-                                key={project._id}
-                                className="embla__slide flex-[0_0_100%] w-full "
-                            >
-                                <PortfolioCardSanity sanityData={project} />
-                            </div>
-                        ))}
+                    {projects && projects?.length > 0
+                        ? projects.map(project => (
+                              <div
+                                  key={project._id}
+                                  className="embla__slide flex-[0_0_100%] w-full "
+                              >
+                                  <PortfolioCardSanity sanityData={project} />
+                              </div>
+                          ))
+                        : portfolioData.map(portfolio => (
+                              <div
+                                  key={portfolio.data.id}
+                                  className="embla__slide flex-[0_0_100%] w-full "
+                              >
+                                  <PortfolioCard
+                                      data={portfolio[locale as LocaleType]}
+                                      img={portfolio.data?.image}
+                                  />
+                              </div>
+                          ))}
                 </div>
             </div>
         </div>
