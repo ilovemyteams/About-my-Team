@@ -13,6 +13,7 @@ import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
+import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 
 import { Providers } from "./providers";
 
@@ -106,25 +107,27 @@ export default function LocaleLayout({
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
-                    <body
-                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
+                    <SettingsContextProvider>
+                        <body
+                            className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
-                    >
-                        <Providers>
-                            <BackgroundImages />
-                            <Header />
-                            <main>
-                                {modal}
-                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-                                    <BackgroundFigures />
-                                    {children}
-                                </div>
-                            </main>
-                            <Footer />
-                            <ScrollToTopButton />
-                            <CookiesComponent />
-                        </Providers>
-                    </body>
+                        >
+                            <Providers>
+                                <BackgroundImages />
+                                <Header />
+                                <main>
+                                    {modal}
+                                    <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                        <BackgroundFigures />
+                                        {children}
+                                    </div>
+                                </main>
+                                <Footer />
+                                <ScrollToTopButton />
+                                <CookiesComponent />
+                            </Providers>
+                        </body>
+                    </SettingsContextProvider>
                 </PreviousURLProvider>
             </NextIntlClientProvider>
         </html>
