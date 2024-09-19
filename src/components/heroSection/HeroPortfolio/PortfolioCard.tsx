@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { Project } from "@/types/sanity.types";
-
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 
