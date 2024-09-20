@@ -15,6 +15,11 @@ const nextConfig = {
                 hostname: "drive.google.com",
                 port: "",
             },
+            {
+                protocol: "https",
+                hostname: "cdn.sanity.io",
+                pathname: "/images/**",
+            },
         ],
     },
     webpack: (config, { isServer }) => {
