@@ -30,7 +30,7 @@ export const feedbackData: FeedbackDataItemType[] = [
         ua: {
             siteName: "Смачно! на селі",
             siteView: "інтернет магазин",
-            reviewer: "Сергій",
+            reviewer: "Сергій Марченко",
             reviewerRole: "Підприємець та власник ферми",
             feedbackText:
                 "Сайт створений завдяки невтомній Сусанні Салаті, яка не просто зробила з командою сайт, а й заставила мене ворушитися в цьому напрямку. Тепер для мене значно спростився процес відправки замовлень по всій Україні поштою. Більше не треба щоразу заповнювати свої дані в гугл-формі – один раз зареєструвався на сайті і все!",
@@ -38,15 +38,15 @@ export const feedbackData: FeedbackDataItemType[] = [
         en: {
             siteName: "Smachno! na seli",
             siteView: "online store",
-            reviewer: "Sergii",
-            reviewerRole: "Entrepreneur and the farm owner.",
+            reviewer: "Sergii Marchenko",
+            reviewerRole: "Entrepreneur and the farm owner",
             feedbackText:
                 "The website was created thanks to the tireless Susanna Salata, who not only made the website with her team but, also, she made me move in this direction. Now, the process of sending orders by mail all over Ukraine has been greatly simplified for me. No more need to fill in the data in a Google form every time — just register on the site once and that's it!",
         },
         pl: {
             siteName: "Smachno! na seli",
             siteView: "sklep internetowy",
-            reviewer: "Sergii",
+            reviewer: "Sergii Marchenko",
             reviewerRole: "Przedsiębiorca i właściciel gospodarstwa",
             feedbackText:
                 "Strona powstała dzięki dzielnej Susannie Salata, która nie tylko wraz z zespołem stworzyła stronę, ale także nakłoniła mnie do działania w tym kierunku. Teraz proces wysyłania zamówień pocztą na całą Ukrainę został dla mnie znacznie uproszczony. Koniec wypełniania danych w formularzu Google za każdym razem — wystarczy jednorazowej rejestracji na stronie, i to wszystko!",
@@ -81,6 +81,38 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewerRole: "Właściciel kancelarii prawnej",
             feedbackText:
                 "Dziękuję zespołowi za pomoc w organizacji i realizacji moich pomysłów, pomimo nowych życzeń i zmian w tekstach, praca została wykonana na czas, a komunikacja była przyjemna i profesjonalna, z wynikiem, który w pełni spełnia moje wymagania. Szczerze polecam ten zespół!",
+        },
+    },
+    {
+        data: {
+            id: "03",
+            image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
+            siteLink: "theatermag.com.ua",
+            feedbackLink: "https://www.youtube.com/watch?v=ccMpW9b2c2s",
+        },
+        ua: {
+            siteName: "Український театр",
+            siteView: "вебсайт",
+            reviewer: "Ганна Шерман",
+            reviewerRole: "Редакторка-засновниця журналу",
+            feedbackText:
+                "За весь мій досвід – ви найпотужніша команда з усіх, з ким я в житті співпрацювала. Я вражена тим, що у вас є фахівці з усіх потрібних напрямків і все є продуманим до дрібниць – це викликає захоплення! Візуально і функціонально цей сайт повністю відповідає нашому розумінню яким має бути сайт сучасного періодичного видання.",
+        },
+        en: {
+            siteName: "Ukrainian theater",
+            siteView: "website",
+            reviewer: "Hanna Sherman",
+            reviewerRole: "Founding editor of the magazine",
+            feedbackText:
+                "Throughout all my experience, you are the most capable team I have ever worked with. I am impressed that you have specialists in all the necessary areas, and everything is thought out down to the smallest details – it’s truly admirable! Both visually and functionally, this website fully meets our vision of what a modern periodical website should be.",
+        },
+        pl: {
+            siteName: "Ukrainian theater",
+            siteView: "website",
+            reviewer: "Hanna Sherman",
+            reviewerRole: "Redaktorka i założycielka czasopisma",
+            feedbackText:
+                "Z całego mojego doświadczenia – jesteście najpotężniejszym zespołem, z jakim kiedykolwiek współpracowałam. Jestem pod wrażeniem, że macie specjalistów we wszystkich właściwych dziedzinach i wszystko jest dopracowane w najdrobniejszych szczegółach – to naprawdę budzi podziw! Zarówno pod względem wizualnym, jak i funkcjonalnym, ta strona w pełni odpowiada naszej wizji, jak powinna wyglądać strona nowoczesnego czasopisma.",
         },
     },
 ];

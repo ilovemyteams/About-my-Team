@@ -1588,7 +1588,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Natali Istomina",
             about: "I can present any unstructured product requirements in diagrams, charts, or tables.",
             services:
-                "Business Analyst with expertise in analyzing business processes, developing user stories, use cases, and defining software requirements. Proficient in BPMN, wireframing, and creating detailed technical specifications.",
+                "I specialize in business process analysis, developing user stories, use cases, and software requirements. I have experience in BPMN, wireframing, and creating detailed technical specifications.",
             team: "Ukrainian theater",
         },
         pl: {
