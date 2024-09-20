@@ -28,7 +28,8 @@ export const settingsQuery = groq`
 
 export const projectQuery = groq`
 *[_type == "project"]
-{"title": title[_key == $language][0].value, 
+{_id,
+"title": title[_key == $language][0].value, 
   image {"caption":caption[_key == $language][0].value, "asset": asset->url}, 
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
