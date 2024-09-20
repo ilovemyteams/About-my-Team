@@ -2059,12 +2059,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "OlenaHalushka",
-            projectId: ["2"],
+          
+            projectId: ["3"],
+
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["batatfarm.com"],
+          
+            projectsExperience: ["theatermag.com.ua"],
+
             pricePerHour: "9",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/olena-halushka",
@@ -2096,21 +2100,21 @@ export const membersData: MemberDataItemType[] = [
             about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
             services:
                 "Створення дизайну для мобільних застосунків та вебсайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Journey Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, змінні. Немодероване юзабіліті тестування. Презентація. Обробка фото та зображень.",
-            team: "Смачно! на селі",
+            team: "Український театр",
         },
         en: {
             name: "Olena Halushka",
             about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
             services:
                 "Designing mobile apps and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Creation of user flow, information architecture, personas. Also, product hypotheses, jobs to be done, Customer Journey Map, prioritization by Kano model. Prototypes, UI design, adaptive UI cats, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
-            team: "Smachno! na seli",
+            team: "Ukrainian theater",
         },
         pl: {
             name: "Olena Halushka",
             about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
             services:
                 "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Journey Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
-            team: "Smachno! na seli",
+            team: "Ukrainian theater",
         },
     },
 ];
