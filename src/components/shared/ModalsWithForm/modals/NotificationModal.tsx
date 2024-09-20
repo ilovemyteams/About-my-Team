@@ -10,13 +10,13 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
-import { IconCloseX } from "../Icons/IconCloseX";
-import { IconHeart } from "../Icons/IconHeart";
-import { BgImagesDesktop } from "./modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "./modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "./modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { IconCloseX } from "../../Icons/IconCloseX";
+import { IconHeart } from "../../Icons/IconHeart";
+import { BgImagesDesktop } from "../modalBgImages/notificationModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "../modalBgImages/notificationModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "../modalBgImages/notificationModalBgImages/BgImagesTablet";
 
-interface NotififcationModalProps {
+interface NotificationModalProps {
     isNotificationShawn: boolean;
     isError: boolean;
     setIsError: (value: boolean | ((prev: boolean) => boolean)) => void;
@@ -30,7 +30,7 @@ export const NotificationModal = ({
     isError,
     setIsError,
     setIsNotificationShawn,
-}: NotififcationModalProps) => {
+}: NotificationModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
     const getTranslation = useTranslations("Notifications");
 

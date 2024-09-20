@@ -46,7 +46,8 @@
         "titleFirstWord": "Co mówią ",
         "titleSecondWord": "o nas ",
         "titleThirdWord": "nasi ",
-        "titleFourthWord": "klienci"
+        "titleFourthWord": "klienci",
+        "feedbackLink": "Cała recenzja"
     },
     "JoinTheTeam": {
         "title": "Opowiedz nam o swoich wyjątkowych umiejętnościach i dołącz do naszego zespołu"
@@ -130,7 +131,8 @@
         "share": "Udostępnić",
         "buyMeACoffe": "Poczęstować kawą",
         "learnMore": "Dowiedz się więcej",
-        "goBack": "Powrót"
+        "goBack": "Powrót",
+        "writeUs": "napisz do nas"
     },
     "Footer": {
         "titleFirstWord": "Zacznij ",
@@ -170,7 +172,9 @@
         "requiredField": "*Pola wymagane do wypełnienia",
         "informedAgreement": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na ",
         "rulesLink": "Warunki przetwarzania danych osobowych",
-        "submitButton": "Wyślij"
+        "submitButton": "Wyślij",
+        "questionLabel": "Twoje pytanie*",
+        "questionPlaceholder": "Twoje pytanie*"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -250,5 +254,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas"
+    },
+    "FaqPage": {
+        "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
     }
 }

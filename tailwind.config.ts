@@ -168,8 +168,8 @@ const config: Config = {
                     300: "#54148A",
                     400: "#09002E",
                     stroke: "#5F3F87",
-                    strokeFormLebel: "#A088BF",
-                    strokeFormLebelLight: "#B097CE",
+                    strokeFormLabel: "#A088BF",
+                    strokeFormLabelLight: "#B097CE",
                     strokeLight: "#C7C0F3",
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
@@ -190,16 +190,34 @@ const config: Config = {
             keyframes: {
                 pulsation: {
                     "0%": {
-                        transform: "scale(1)",
-                        opacity: "1",
+                        transform: "scale(0.71)",
                     },
-                    "10%, 20%, 35%, 45%": {
-                        transform: "scale(0.7)",
-                        opacity: "0",
-                    },
-                    "25%, 50%": {
+                    "5.88%": {
                         transform: "scale(1)",
-                        opacity: "1",
+                    },
+                    "11.76%": {
+                        transform: "scale(0.71)",
+                    },
+                    "17.64%": {
+                        transform: "scale(1)",
+                    },
+                    "75%": {
+                        transform: "scale(1)",
+                    },
+                    "80.88%": {
+                        transform: "scale(0.71)",
+                    },
+                    "86.76%": {
+                        transform: "scale(1)",
+                    },
+                    "92.64%": {
+                        transform: "scale(0.71)",
+                    },
+                    "98.52%": {
+                        transform: "scale(1)",
+                    },
+                    "100%": {
+                        transform: "scale(1)",
                     },
                 },
 
@@ -334,7 +352,7 @@ const config: Config = {
                 },
             },
             animation: {
-                pulsation: "pulsation 1200ms ease-in 2",
+                pulsation: "pulsation 2720ms ease-in 1",
                 pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
                 brokenHeart: "brokenHeart 3000ms ease-in forwards",
                 brokenHeartTablet: "brokenHeartTablet 3000ms ease-in forwards",
@@ -376,6 +394,8 @@ const config: Config = {
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
             PresentationGradient:
                 "linear-gradient(to right, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
+            PresentationGradientLigth:
+                "linear-gradient(to right, #D3B0FFDE 0%, #F2EBFFDE 100%)",
         },
     },
     plugins: [
