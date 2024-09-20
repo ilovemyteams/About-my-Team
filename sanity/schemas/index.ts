@@ -95,9 +95,9 @@ const blocks: ArrayDefinition[] = [
 ];
 
 import { colorThemeType } from "./documents/colorTheme";
-import { pageType } from "./documents/pageType";
+import { pagesType } from "./documents/pagesType";
 
-const documents: DocumentDefinition[] = [colorThemeType, pageType];
+const documents: DocumentDefinition[] = [colorThemeType, pagesType];
 
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";
@@ -114,6 +114,7 @@ import { specialistCategoryType } from "./singletons/specialistCategories";
 import { specialistType } from "./singletons/specialistType";
 import { teamType } from "./singletons/teamType";
 import { toolType } from "./singletons/toolType";
+
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
