@@ -1,31 +1,21 @@
 "use client";
-import { useState } from "react";
+import { useTranslations } from "next-intl";
 
-import { NotificationModal } from "./NotificationModal";
-import { WriteUsModal } from "./WriteUsModal";
+import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
+import { CustomerForm } from "./CustomerForm";
 
 interface WriteUsProps {
     className?: string;
 }
 
 export const WriteUs = ({ className }: WriteUsProps) => {
-    const [isError, setIsError] = useState(false);
-    const [isNotificationShawn, setIsNotificationShawn] = useState(false);
+    const getTranslation = useTranslations("Buttons");
 
     return (
-        <>
-            <WriteUsModal
-                className={className}
-                isError={isError}
-                setIsError={setIsError}
-                setIsNotificationShawn={setIsNotificationShawn}
-            />
-            <NotificationModal
-                isNotificationShawn={isNotificationShawn}
-                isError={isError}
-                setIsError={setIsError}
-                setIsNotificationShawn={setIsNotificationShawn}
-            />
-        </>
+        <ModalsWithForm
+            formComponent={CustomerForm}
+            triggerBtnTitle={getTranslation("order")}
+            className={className}
+        />
     );
 };
