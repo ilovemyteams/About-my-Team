@@ -2,8 +2,10 @@ import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
+import { draftMode } from "next/headers";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { VisualEditing } from "next-sanity";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
@@ -117,7 +119,16 @@ export default function LocaleLayout({
                                 {modal}
                                 <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
                                     <BackgroundFigures />
+                                    {draftMode().isEnabled && (
+                                        <a
+                                            className="fixed right-0 bottom-0 bg-blue-500 text-white p-4 m-4"
+                                            href="/api/draft-mode/disable"
+                                        >
+                                            Disable preview mode
+                                        </a>
+                                    )}
                                     {children}
+                                    {draftMode().isEnabled && <VisualEditing />}
                                 </div>
                             </main>
                             <Footer />
