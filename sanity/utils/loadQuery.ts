@@ -4,10 +4,10 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
+import { Home, Project, Settings } from "@/types/sanity.types";
 
-import { Home } from "../../types/sanity.types";
 import { readToken } from "../lib/api";
-import { homePageQuery, settingsQuery } from "../lib/queries";
+import { homePageQuery, projectQuery, settingsQuery } from "../lib/queries";
 const serverClient = getClient({ token: readToken });
 
 /**
@@ -48,10 +48,10 @@ export const loadQuery = ((query, params = {}, options = {}) => {
  * Loaders that are used in more than one place are declared here, otherwise they're colocated with the component
  */
 
-export function loadSettings() {
-    return loadQuery(
+export function loadSettings(language = "ua") {
+    return loadQuery<Settings | null>(
         settingsQuery,
-        {},
+        { language },
         { next: { tags: ["settings", "home"] } }
     );
 }
@@ -61,6 +61,14 @@ export function loadHomePage(language = "ua") {
         homePageQuery,
         { language },
         { next: { tags: ["home"] } }
+    );
+}
+
+export function loadProjects(language = "ua") {
+    return loadQuery<Project[] | null>(
+        projectQuery,
+        { language },
+        { next: { tags: ["project"] } }
     );
 }
 

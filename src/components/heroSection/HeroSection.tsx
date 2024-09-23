@@ -1,4 +1,5 @@
-import { Home } from "../../../types/sanity.types";
+import { Home, Project } from "@/types/sanity.types";
+
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
 import { Section } from "../shared/Section";
@@ -7,10 +8,11 @@ import { HeroFooterLinks } from "./HeroFooterLinks";
 import { HeroInfo } from "./HeroInfo";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 
-export interface HomePageProps {
+export interface HeroProps {
     data: Home | null;
+    projects: Project[] | null;
 }
-export const HeroSection = ({ data }: HomePageProps) => {
+export const HeroSection = ({ data, projects }: HeroProps) => {
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
             <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
@@ -23,7 +25,7 @@ export const HeroSection = ({ data }: HomePageProps) => {
             />
             <div className="relative flex flex-col items-center pc:items-baseline tab:justify-between tab:flex-row">
                 <HeroInfo data={data} />
-                <PortfolioSlider />
+                <PortfolioSlider projects={projects} />
             </div>
             <HeroFooterLinks />
         </Section>

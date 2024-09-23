@@ -6,7 +6,7 @@ import { QuoteSection } from "@/src/components/aboutPage/QuoteSection";
 import { TeamSection } from "@/src/components/aboutPage/TeamSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 
-export default function Home() {
+export default function About() {
     return (
         <>
             <HeroAbout />
