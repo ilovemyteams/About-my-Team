@@ -11,9 +11,9 @@ import { QaSection } from "@/src/components/qAsection/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { HomePageParamsProps } from "@/types/pageProps";
 
-type HopePageProps = { params: { locale: string } };
-export default async function HomePage(props: HopePageProps) {
+export default async function HomePage(props: HomePageParamsProps) {
     const initial = await loadHomePage(props.params.locale);
     const projects = await loadProjects(props.params.locale);
     return (
@@ -21,16 +21,16 @@ export default async function HomePage(props: HopePageProps) {
             <BackgroundFiguresMain />
             <HeroSection data={initial.data} projects={projects.data} />
             <MissionSection />
-            <JoinTheTeamSection />
+            <JoinTheTeamSection data={initial.data} />
             <PortfolioSection />
             <FeedbackSection />
-            <WriteUsSection />
+            <WriteUsSection data={initial.data} />
             <ServicesSection />
             <OurTeamSection />
-            <JoinTheTeamSection />
+            <JoinTheTeamSection data={initial.data} />
             <StagesSection />
             <QaSection />
-            <HireUsSection />
+            <HireUsSection data={initial.data} />
         </>
     );
 }

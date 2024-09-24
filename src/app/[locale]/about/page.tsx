@@ -1,3 +1,4 @@
+import { loadHomePage } from "@/sanity/utils/loadQuery";
 import { AboutTheFounderSection } from "@/src/components/aboutPage/AboutTheFounderSection";
 import { ChronologySection } from "@/src/components/aboutPage/ChronologySection";
 import { HeroAbout } from "@/src/components/aboutPage/HeroAbout";
@@ -5,8 +6,10 @@ import { PresentationSection } from "@/src/components/aboutPage/PresentationSect
 import { QuoteSection } from "@/src/components/aboutPage/QuoteSection";
 import { TeamSection } from "@/src/components/aboutPage/TeamSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { HomePageParamsProps } from "@/types/pageProps";
 
-export default function About() {
+export default async function About(props: HomePageParamsProps) {
+    const initial = await loadHomePage(props.params.locale);
     return (
         <>
             <HeroAbout />
@@ -15,7 +18,7 @@ export default function About() {
             <ChronologySection />
             <TeamSection />
             <PresentationSection />
-            <WriteUsSection />
+            <WriteUsSection data={initial.data} />
         </>
     );
 }
