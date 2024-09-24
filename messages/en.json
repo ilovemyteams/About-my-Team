@@ -191,7 +191,7 @@
     "Notifications": {
         "thankYou": "Thank you!",
         "waitResponse": "Your message has been sent. Our manager will contact you shortly",
-        "somethingWrong": "Something went wrong",
+        "somethingWrong": "Something went wrong...",
         "tryAgain": "Please try to send the form again",
         "linkIsCopied": "Link copied"
     },

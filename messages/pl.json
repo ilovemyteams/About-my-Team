@@ -193,7 +193,7 @@
     "Notifications": {
         "thankYou": "Dziękujemy!",
         "waitResponse": "Wiadomość została wysłana. Nasz menedżer wkrótce się skontaktuje",
-        "somethingWrong": "Coś poszło nie tak",
+        "somethingWrong": "Coś poszło nie tak...",
         "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
     },
