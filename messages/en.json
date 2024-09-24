@@ -172,7 +172,9 @@
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send",
         "questionLabel": "Your question*",
-        "questionPlaceholder": "Your question*"
+        "questionPlaceholder": "Your question*",
+        "askFormTitle": "Є питання?",
+        "askFormText": "Напишіть нам і ми допоможемо вам знайти на них відвовідь!"
     },
     "Errors": {
         "required": "This field is required",
