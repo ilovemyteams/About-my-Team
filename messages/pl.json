@@ -132,8 +132,14 @@
         "buyMeACoffe": "Poczęstować kawą",
         "learnMore": "Dowiedz się więcej",
         "goBack": "Powrót",
-        "writeUs": "napisz do nas"
+        "writeUs": "napisz do nas",
+        "readMore": "Czytaj więcej"
     },
+    "Badges": {
+        "readTimeSingular": " min czytania",
+        "readTimePlural": " min czytania"
+    },
+
     "Footer": {
         "titleFirstWord": "Zacznij ",
         "titleSecondWord": "wdrażać ",
