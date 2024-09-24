@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
 
+import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";
 
 const IMAGE = normalizeGoogleDriveImgUrls(
@@ -15,7 +16,7 @@ export const QaCardList = () => {
     const ITER: number[] = [1, 2, 3, 4, 5];
 
     return (
-        <div className="flex flex-col gap-3">
+        <Section className="flex flex-col gap-3">
             {ITER.map(i => (
                 <QaCard
                     key={i}
@@ -27,6 +28,6 @@ export const QaCardList = () => {
                     }}
                 />
             ))}
-        </div>
+        </Section>
     );
 };
