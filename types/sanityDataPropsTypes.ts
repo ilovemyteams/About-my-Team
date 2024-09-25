@@ -19,7 +19,7 @@ export type HomePageParamsProps = { params: { locale: string } };
 
 export type PortfolioSliderProps = {
     title: string;
-    image: { caption: string; asset: string };
+    image: { caption: string; image: { asset: string } };
     category: string;
     _id: string;
 };

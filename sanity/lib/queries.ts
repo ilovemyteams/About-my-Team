@@ -7,7 +7,7 @@ export const homePageQuery = groq`
   
     "title": title[_key == $language][0].value,
     "portfolioSliderProp": portfolioSlider[]->{"title": title[_key == $language][0].value, 
-    image {"caption":caption[_key == $language][0].value, "asset": asset->url},
+    image {"caption":caption[_key == $language][0].value, image {"asset": asset->url}},
     "category":category->categoryName[_key == $language][0].value,
     _id}
   }
