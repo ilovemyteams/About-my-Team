@@ -123,7 +123,7 @@ export const projectType = defineField({
     preview: {
         select: {
             title: "title",
-            media: "image",
+            media: "image.image",
         },
         prepare({ title, media }) {
             const englishTitle =
