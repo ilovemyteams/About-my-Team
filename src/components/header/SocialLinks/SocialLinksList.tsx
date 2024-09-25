@@ -14,7 +14,7 @@ const socialLinksData = [
         image: <IconBehance />,
     },
     {
-        url: "https://www.youtube.com/@susannasalata9003",
+        url: "https://www.youtube.com/channel/UCx95sgknPRI8rVujgpRYO0g",
         image: <IconYoutube />,
     },
     {
