@@ -8,6 +8,7 @@ import { colorInput } from "@sanity/color-input";
 import { documentInternationalization } from "@sanity/document-internationalization";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
+import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
@@ -19,6 +20,9 @@ import { apiVersion, dataset, projectId, studioUrl } from "./sanity/lib/api";
 import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemas";
 import { singletonPagesType, structure } from "./sanity/structure/index";
+
+const SANITY_STUDIO_PREVIEW_URL =
+    process.env.SANITY_STUDIO_PREVIEW_URL || "http://localhost:3000";
 
 export default defineConfig({
     basePath: studioUrl,
@@ -54,6 +58,10 @@ export default defineConfig({
             ],
         }),
         singletonPlugin(singletonPagesType),
+        presentationTool({
+            // Required: set the base URL to the preview location in the front end
+            previewUrl: SANITY_STUDIO_PREVIEW_URL,
+        }),
     ],
 
     form: {
