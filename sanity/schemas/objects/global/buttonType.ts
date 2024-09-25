@@ -1,5 +1,6 @@
 import { defineField } from "sanity";
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { validateMaxLength } from "@/sanity/utils/validateMaxLength";
 
 const MAX_LENGTH = 18;
 
@@ -17,21 +18,9 @@ export const buttonType = defineField({
             title: "Button name",
             type: "internationalizedArrayString",
             validation: rule =>
-                rule.custom<InternationalizedArrayString>(value => {
-                    if (!value || value.every(item => !item.value)) {
-                        return "Button name is required";
-                    } else {
-                        const invalidItems = value?.filter(
-                            item =>
-                                item?.value && item.value.length > MAX_LENGTH
-                        );
-
-                        if (invalidItems.length) {
-                            return "Button name is too long. A maximum of 18 characters is allowed";
-                        }
-                    }
-                    return true;
-                }),
+                rule
+                    .custom(validateIsRequired)
+                    .custom(validateMaxLength(MAX_LENGTH)),
         }),
         defineField({
             name: "buttonLink",

@@ -16,13 +16,7 @@ export const projectType = defineField({
             description: "Project title",
             type: "internationalizedArrayString",
             title: "Title",
-            validation: rule =>
-                rule.custom<InternationalizedArrayString>(value => {
-                    if (!value || value.every(item => !item.value)) {
-                        return "Project title is required";
-                    }
-                    return true;
-                }),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "description",
