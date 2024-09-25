@@ -129,7 +129,12 @@
         "buyMeACoffe": "Пригостити кавою",
         "learnMore": "Дізнатися більше",
         "goBack": "Назад",
-        "writeUs": "написати"
+        "writeUs": "написати",
+        "readMore": "Читати далі"
+    },
+    "Badges": {
+        "readTimeSingular": " хв читати",
+        "readTimePlural": " хв читати"
     },
     "Footer": {
         "titleFirstWord": "Починайте ",
