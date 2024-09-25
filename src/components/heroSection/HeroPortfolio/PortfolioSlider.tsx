@@ -4,6 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
 
 import { LocaleType } from "@/types/LocaleType";
+import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 import { portfolioData } from "../../../mockedData/portfolioData";
 import {
@@ -15,7 +16,6 @@ import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
 import { PortfolioCard } from "./PortfolioCard";
 import { PortfolioCardSanity } from "./PortfolioCardSanity";
-import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 

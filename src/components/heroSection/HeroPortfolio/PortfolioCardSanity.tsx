@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-import { Project } from "@/types/sanity.types";
+import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 export const PortfolioCardSanity = ({
     sanityData,

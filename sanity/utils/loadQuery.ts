@@ -5,6 +5,7 @@ import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
 import { Home, Project, Settings } from "@/types/sanity.types";
+import { HomeProps } from "@/types/sanityDataPropsTypes";
 
 import { readToken } from "../lib/api";
 import {
@@ -13,7 +14,6 @@ import {
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
-import { HomeProps } from "@/types/sanityDataPropsTypes";
 const serverClient = getClient({ token: readToken });
 
 /**

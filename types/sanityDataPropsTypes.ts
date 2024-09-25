@@ -10,7 +10,6 @@ import {
     StagesHome,
     TeamHome,
 } from "./sanity.types";
-
 import { Home } from "./sanity.types";
 
 export interface HomePageProps {

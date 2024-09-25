@@ -1,3 +1,5 @@
+import { HomeFullProps } from "@/types/sanityDataPropsTypes";
+
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
 import { Section } from "../shared/Section";
@@ -5,7 +7,6 @@ import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { HeroFooterLinks } from "./HeroFooterLinks";
 import { HeroInfo } from "./HeroInfo";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
-import { HomeFullProps } from "@/types/sanityDataPropsTypes";
 
 export const HeroSection = ({ data }: HomeFullProps) => {
     const projects = data?.hero?.portfolioSliderProp;
