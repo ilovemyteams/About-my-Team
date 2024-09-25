@@ -1,6 +1,7 @@
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
+import { IconYoutube } from "../../shared/Icons/IconYoutube";
 import { SocialLink } from "../../shared/SocialLink";
 
 const socialLinksData = [
@@ -11,6 +12,10 @@ const socialLinksData = [
     {
         url: "https://www.behance.net/aboutmyteam",
         image: <IconBehance />,
+    },
+    {
+        url: "https://www.youtube.com/@susannasalata9003",
+        image: <IconYoutube />,
     },
     {
         url: "https://github.com/Ilovemyteams",
