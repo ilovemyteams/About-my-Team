@@ -11,7 +11,7 @@ import { QaSection } from "@/src/components/qAsection/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
-import { HomePageParamsProps } from "@/types/pageProps";
+import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: HomePageParamsProps) {
     const [initial, projects, cta] = await Promise.all([
@@ -20,7 +20,6 @@ export default async function HomePage(props: HomePageParamsProps) {
         await loadCTA(props.params.locale),
     ]);
     console.log(projects.data);
-    console.log("cta", cta.data);
 
     return (
         <>

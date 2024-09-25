@@ -35,7 +35,6 @@ export const PortfolioSlider = ({
     } = usePrevNextButtons(emblaApi);
 
     const locale = useLocale();
-    console.log("PortfolioSlider", projects);
 
     return (
         <div

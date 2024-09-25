@@ -4,7 +4,7 @@ import { Project } from "@/types/sanity.types";
 
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import { PortfolioSliderProps } from "@/types/pageProps";
+import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 export const PortfolioCardSanity = ({
     sanityData,
@@ -14,7 +14,6 @@ export const PortfolioCardSanity = ({
     const alt = sanityData?.image?.caption
         ? sanityData.image.caption.toString()
         : "alt";
-    console.log("sanityData", sanityData);
 
     return (
         <div

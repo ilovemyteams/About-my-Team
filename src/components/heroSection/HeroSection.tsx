@@ -9,7 +9,6 @@ import { HomeFullProps } from "@/types/sanityDataPropsTypes";
 
 export const HeroSection = ({ data }: HomeFullProps) => {
     const projects = data?.hero?.portfolioSliderProp;
-    console.log("HeroProjects3", data?.hero);
 
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
