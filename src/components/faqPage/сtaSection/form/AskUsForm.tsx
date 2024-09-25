@@ -14,7 +14,7 @@ interface FormValues {
     message: string;
 }
 
-export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
+export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const validationSchema = FaqWriteQuestionValidation();
