@@ -6,11 +6,17 @@ export const homePageQuery = groq`
   hero {
   ...,
     "title": title[_key == $language][0].value
-  },
-    ctaSectionWriteUs {"title": title[_key == $language][0].value}, 
-    ctaSectionJoinUs {"title": title[_key == $language][0].value}, 
-    ctaSectionOrder {"title": title[_key == $language][0].value, "description": description[_key == $language][0].value[0].children[0].text}
+  }
 }`;
+
+export const CTAQuery = groq`
+ *[_type == "home"][0]{
+ ctaSectionWriteUs {"title": title[_key == $language][0].value}, 
+    ctaSectionJoinUs {"title": title[_key == $language][0].value}, 
+    ctaSectionOrder {"title": title[_key == $language][0].value, 
+    "description": description[_key == $language][0].value[0].children[0].text}
+    }
+`;
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
