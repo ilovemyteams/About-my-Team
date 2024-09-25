@@ -1,0 +1,30 @@
+"use client";
+
+import { createClient } from "@sanity/client";
+import { useLiveMode } from "@sanity/react-loader";
+import { VisualEditing } from "next-sanity";
+import { useEffect } from "react";
+
+const client = createClient({
+    projectId: "your_project_id",
+    dataset: "your_dataset",
+    useCdn: true,
+    token: process.env.SANITY_API_TOKEN,
+});
+// Always enable stega in Live Mode
+const stegaClient = client.withConfig({ stega: true });
+
+export default function LiveVisualEditing() {
+    useLiveMode({ client: stegaClient });
+    useEffect(() => {
+        // If not an iframe or a Vercel Preview deployment, turn off Draft Mode
+        if (
+            process.env.NEXT_PUBLIC_VERCEL_ENV !== "preview" &&
+            window === parent
+        ) {
+            location.href = "/api/disable-draft";
+        }
+    }, []);
+
+    return <VisualEditing />;
+}

@@ -1,11 +1,11 @@
 import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
+import dynamic from "next/dynamic";
 import localFont from "next/font/local";
 import { draftMode } from "next/headers";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { VisualEditing } from "next-sanity";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
@@ -18,6 +18,10 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 
 import { Providers } from "./providers";
+
+const LiveVisualEditing = dynamic(
+    () => import("@/sanity/utils/LiveVisualEditing")
+);
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
@@ -131,7 +135,7 @@ export default function LocaleLayout({
                                         )}
                                         {children}
                                         {draftMode().isEnabled && (
-                                            <VisualEditing />
+                                            <LiveVisualEditing />
                                         )}
                                     </div>
                                 </main>
