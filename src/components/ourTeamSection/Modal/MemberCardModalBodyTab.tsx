@@ -68,7 +68,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                     hiddenTextForMemberModal={true}
                 />
             </div>
-            <div className="mx-4">
+            <div className="px-4">
                 <ul className="mt-11">
                     <li className="mb-4 ">
                         <MemberLiSquare text={getTranslation("about")} />

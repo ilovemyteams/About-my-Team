@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 
 import { localeInURL } from "@/src/utils/localeInURL";
 
-import { LinkGoBack } from "../shared/LinkGoBack";
+import { GoBackButton } from "../shared/GoBackButton";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
 import { Section } from "../shared/Section";
 import { ThemeSwitcher } from "../shared/ThemeSwitcher";
@@ -33,18 +33,17 @@ export const HeroAbout = () => {
                         item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
                     }}
                 >
-                    <BreadcrumbItem href="/">
+                    <BreadcrumbItem href={`/${localeInURL(locale)}`}>
                         {getTranslationBreadcrumbs("breadcrumbItemHome")}
                     </BreadcrumbItem>
-                    <BreadcrumbItem href="/about">
+                    <BreadcrumbItem>
                         <p className="dark:text-red text-redLight">
-                            {" "}
                             {getTranslationBreadcrumbs("breadcrumbItemAbout")}
                         </p>
                     </BreadcrumbItem>
                 </Breadcrumbs>
                 <div className="flex justify-end">
-                    <LinkGoBack linkBack={`/${localeInURL(locale)}#mission`} />
+                    <GoBackButton />
                 </div>
             </div>
             <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">

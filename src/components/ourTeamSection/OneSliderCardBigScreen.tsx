@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 import {
     DESKXL_CARDS_PER_PAGE,
     PC_CARDS_PER_PAGE,
@@ -46,17 +48,19 @@ export const OneSliderCardBigScreen = ({
 
         const cardGroup =
             CARDS_PER_PAGE === 1 ? (
-                <>
+                <Fragment key={i}>
                     <ul className="hidden tab:grid pc:hidden flex-[0_0_100%] w-full grid-cols-2  tab:border-0 ">
                         <Skeleton number={4} />
                     </ul>
+
                     <ul className="hidden pc:grid deskxl:hidden flex-[0_0_100%] w-full border-0 pc:grid-cols-3 ">
                         <Skeleton number={6} />
                     </ul>
+
                     <ul className="hidden deskxl:grid flex-[0_0_100%] w-full tab:border-0 deskxl:grid-cols-4">
                         <Skeleton number={8} />
                     </ul>
-                </>
+                </Fragment>
             ) : (
                 <li
                     key={`group-${i}`}

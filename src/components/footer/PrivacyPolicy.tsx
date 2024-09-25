@@ -13,7 +13,7 @@ export const PrivacyPolicy = () => {
             rel="noopener noreferrer"
             className="mb-[20px] tab:mb-0 text-sm outline-none dark:pc:hover:text-red pc:hover:text-redLight 
             dark:pc:focus:text-red pc:focus:text-redLight dark:active:text-red 
-            active:text-redLight transition ease-out duration-300 deskxl:text-base"
+            active:text-redLight transition ease-out duration-300"
         >
             {getTranslation("privacyPolicy").toUpperCase()}
         </a>
