@@ -13,6 +13,7 @@ import {
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
+import { HomeProps } from "@/types/sanityDataPropsTypes";
 const serverClient = getClient({ token: readToken });
 
 /**
@@ -62,7 +63,7 @@ export function loadSettings(language = "ua") {
 }
 
 export function loadHomePage(language = "ua") {
-    return loadQuery<Home | null>(
+    return loadQuery<HomeProps | null>(
         homePageQuery,
         { language },
         { next: { tags: ["home"] } }
