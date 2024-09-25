@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const notFoundPageType = defineField({
     name: "notFoundPage",
@@ -14,7 +15,7 @@ export const notFoundPageType = defineField({
             name: "title",
             title: "Page 404 Title",
             type: "internationalizedArrayString",
-            validation: Rule => Rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "description",
