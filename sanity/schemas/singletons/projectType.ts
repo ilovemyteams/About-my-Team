@@ -3,6 +3,7 @@ import { defineArrayMember, defineField } from "sanity";
 
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
 import { InternationalizedArrayString } from "@/types/sanity.types";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const projectType = defineField({
     name: "project",
@@ -15,7 +16,13 @@ export const projectType = defineField({
             description: "Project title",
             type: "internationalizedArrayString",
             title: "Title",
-            validation: rule => rule.required(),
+            validation: rule =>
+                rule.custom<InternationalizedArrayString>(value => {
+                    if (!value || value.every(item => !item.value)) {
+                        return "Project title is required";
+                    }
+                    return true;
+                }),
         }),
         defineField({
             name: "description",
@@ -81,19 +88,25 @@ export const projectType = defineField({
         }),
         defineField({
             name: "image",
-            description: "Project image to show in portfolio",
-            type: "image",
+            title: "Project image",
+            type: "object",
             fields: [
+                {
+                    name: "image",
+                    title: "Image",
+                    description: "Project image to show in portfolio",
+                    type: "image",
+                    validation: rule => rule.required(),
+                },
                 {
                     name: "caption",
                     type: "internationalizedArrayString",
                     title: "Caption",
                     description:
                         "A brief description of what is shown in the picture",
-                    validation: rule => rule.required(),
+                    validation: rule => rule.custom(validateIsRequired),
                 },
             ],
-            title: "Project image",
             validation: rule => rule.required(),
         }),
         defineField({
