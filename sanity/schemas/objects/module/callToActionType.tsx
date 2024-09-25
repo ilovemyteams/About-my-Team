@@ -1,5 +1,6 @@
 import { BlockElementIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const callToActionType = defineField({
     name: "callToAction",
@@ -15,7 +16,7 @@ export const callToActionType = defineField({
             name: "title",
             title: "Section title",
             type: "internationalizedArrayString",
-            validation: Rule => Rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "description",

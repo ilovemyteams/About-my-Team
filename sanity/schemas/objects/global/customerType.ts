@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 interface TitleItem {
     _key: string;
@@ -14,13 +15,13 @@ export const customerType = defineField({
             name: "name",
             type: "internationalizedArrayString",
             title: "Client name",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "position",
             type: "internationalizedArrayString",
             title: "Client position",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "photo",
