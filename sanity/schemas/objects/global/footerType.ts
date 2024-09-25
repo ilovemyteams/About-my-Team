@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const footerType = defineField({
     name: "footer",
@@ -33,7 +34,7 @@ export const footerType = defineField({
                     name: "title",
                     type: "internationalizedArrayString",
                     title: "Privacy Policy Title",
-                    validation: rule => rule.required(),
+                    validation: rule => rule.custom(validateIsRequired),
                 }),
                 defineField({
                     name: "url",

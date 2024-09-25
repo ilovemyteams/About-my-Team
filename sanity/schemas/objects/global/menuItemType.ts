@@ -1,5 +1,5 @@
 import { defineField } from "sanity";
-
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const menuItemType = defineField({
@@ -11,6 +11,7 @@ export const menuItemType = defineField({
             name: "title",
             type: "internationalizedArrayString",
             title: "Menu Item Title",
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "linkInternal",
