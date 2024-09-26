@@ -255,7 +255,8 @@
     },
     "Breadcrumbs": {
         "breadcrumbItemHome": "Головна",
-        "breadcrumbItemAbout": "Про нас"
+        "breadcrumbItemAbout": "Про нас",
+        "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
         "ctaText": "Не знайшли відповідь на ваше питання? Напишіть нам і ми надамо вам першу консультацію безкоштовно! "

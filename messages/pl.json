@@ -259,7 +259,8 @@
     },
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
-        "breadcrumbItemAbout": "O nas"
+        "breadcrumbItemAbout": "O nas",
+        "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
         "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
