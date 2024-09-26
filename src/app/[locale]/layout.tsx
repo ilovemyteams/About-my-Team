@@ -70,6 +70,7 @@ export async function generateMetadata({
         openGraph: {
             description: getTranslation("description"),
             type: "website",
+            image: "/images/imageForSharing.jpeg",
         },
     };
 }
@@ -97,11 +98,11 @@ export default function LocaleLayout({
                     content="i love my team"
                 />
                 <meta name="type" property="og:type" content="website" />
-                <meta
+                {/* <meta
                     name="image"
                     property="og:image"
                     content="/images/imageForSharing.jpeg"
-                />
+                /> */}
             </head>
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
