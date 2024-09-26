@@ -21,7 +21,7 @@ import { token } from "../../../sanity/lib/fetch";
 import { Providers } from "./providers";
 
 const PreviewProvider = dynamic(
-    () => import("../../../sanity/utils/PreviewProvider")
+    () => import("../../../sanity/components/PreviewProvider")
 );
 
 const GA_TAG = process.env.GA_ID || " ";
