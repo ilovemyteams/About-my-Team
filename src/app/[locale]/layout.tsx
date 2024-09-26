@@ -62,7 +62,7 @@ export async function generateMetadata({
             languages: {
                 en: "/en",
                 pl: "/pl",
-                ua: "/ua",
+                ua: "/",
             },
         },
         title: getTranslation("title"),
@@ -93,17 +93,8 @@ export default function LocaleLayout({
                 {IS_SHOWN_TO_SEARCH_ENGINES && (
                     <meta name="robots" content="noindex,nofollow" />
                 )}
-                {/* <meta
-                    name="title"
-                    property="og:title"
-                    content="i love my team"
-                /> */}
                 <meta name="type" property="og:type" content="website" />
-                {/* <meta
-                    name="image"
-                    property="og:image"
-                    content="/images/imageForSharing.jpeg"
-                /> */}
+                <meta name="image" property="og:image" content="" />
             </head>
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
