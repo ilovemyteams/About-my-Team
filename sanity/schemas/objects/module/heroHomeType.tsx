@@ -1,4 +1,6 @@
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { defineField } from "sanity";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 
 export const heroHomeType = defineField({
     name: "heroHome",
@@ -13,7 +15,7 @@ export const heroHomeType = defineField({
             name: "title",
             title: "Hero title",
             type: "internationalizedArrayText",
-            validation: Rule => Rule.required(),
+            validation: Rule => Rule.custom(validateIsRequired),
         }),
         defineField({
             name: "portfolioSlider",
@@ -25,4 +27,15 @@ export const heroHomeType = defineField({
             validation: Rule => Rule.required(),
         }),
     ],
+    preview: {
+        select: {
+            title: "title",
+        },
+        prepare({ title }) {
+            const engLishTitle = getEnglishTitleFromIntArrays(title);
+            return {
+                title: engLishTitle,
+            };
+        },
+    },
 });
