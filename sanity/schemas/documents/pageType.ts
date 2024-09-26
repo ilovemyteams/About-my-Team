@@ -35,7 +35,13 @@ export const pageType = defineType({
             },
             validation: Rule => Rule.custom(validatePageSlug).required(),
         }),
-
+        defineField({
+            name: "seo",
+            title: "SEO (optional)",
+            description:
+                "Specify the SEO title, description, and image for this page only if they are to be different from the Home page",
+            type: "seo",
+        }),
         defineField({
             name: "pageBuilder",
             type: "array",

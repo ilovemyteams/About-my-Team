@@ -1,5 +1,10 @@
 import { defineField } from "sanity";
 
+import { validateMaxLength } from "@/sanity/utils/validateMaxLength";
+
+const TITLE_MAX_LENGTH = 60;
+const DESCRIPTION_MAX_LENGTH = 300;
+
 export const seoType = defineField({
     name: "seo",
     title: "SEO",
@@ -13,19 +18,14 @@ export const seoType = defineField({
         defineField({
             name: "title",
             type: "internationalizedArrayString",
-            validation: Rule =>
-                Rule.max(50).warning(
-                    "Longer titles may be truncated by search engines"
-                ),
+            validation: rule =>
+                rule.custom(validateMaxLength(TITLE_MAX_LENGTH)),
         }),
         defineField({
             name: "description",
-            type: "text",
-            rows: 2,
-            validation: Rule =>
-                Rule.max(150).warning(
-                    "Longer descriptions may be truncated by search engines"
-                ),
+            type: "internationalizedArrayString",
+            validation: rule =>
+                rule.custom(validateMaxLength(DESCRIPTION_MAX_LENGTH)),
         }),
         defineField({
             name: "image",
