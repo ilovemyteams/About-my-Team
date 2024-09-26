@@ -94,7 +94,6 @@ export default function LocaleLayout({
                     <meta name="robots" content="noindex,nofollow" />
                 )}
                 <meta name="type" property="og:type" content="website" />
-                <meta name="image" property="og:image" content="" />
             </head>
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
