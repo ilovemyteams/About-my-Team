@@ -6,7 +6,7 @@ import {
     SECOND_USER_INACTIVITY_TIMEOUT,
 } from "../constants/userInactivityTimeout";
 
-export const useTrackingActivity = () => {
+export const useUserActivityMonitor = () => {
     const [isUserNotActive, setIsUserNotActive] = useState(false);
     const isFirstReaction = useRef<boolean>(false);
 
