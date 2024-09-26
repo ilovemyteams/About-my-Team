@@ -70,7 +70,6 @@ export async function generateMetadata({
         openGraph: {
             description: getTranslation("description"),
             type: "website",
-            image: "https://drive.google.com/uc?export=view&id=1FCThX8Lx0BifZTlUsTFTHEbOWyXcN0gb",
             title: getTranslation("title"),
         },
     };
