@@ -17,10 +17,11 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 
+import { token } from "../../../sanity/lib/fetch";
 import { Providers } from "./providers";
 
-const LiveVisualEditing = dynamic(
-    () => import("@/sanity/utils/LiveVisualEditing")
+const PreviewProvider = dynamic(
+    () => import("../../../sanity/utils/PreviewProvider")
 );
 
 const GA_TAG = process.env.GA_ID || " ";
@@ -120,28 +121,36 @@ export default function LocaleLayout({
                         >
                             <Providers>
                                 <BackgroundImages />
-                                <Header />
-                                <main>
-                                    {modal}
-                                    <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-                                        <BackgroundFigures />
-                                        {draftMode().isEnabled && (
-                                            <a
-                                                className="fixed right-0 bottom-0 bg-blue-500 text-white p-4 m-4"
-                                                href="/api/draft-mode/disable"
-                                            >
-                                                Disable preview mode
-                                            </a>
-                                        )}
-                                        {children}
-                                        {draftMode().isEnabled && (
-                                            <LiveVisualEditing />
-                                        )}
-                                    </div>
-                                </main>
-                                <Footer />
-                                <ScrollToTopButton />
-                                <CookiesComponent />
+                                {draftMode().isEnabled ? (
+                                    <PreviewProvider token={token}>
+                                        <Header />
+                                        <main>
+                                            {modal}
+                                            <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                                <BackgroundFigures />
+                                                {children}
+                                            </div>
+                                        </main>
+                                        <Footer />
+                                        <ScrollToTopButton />
+                                        <CookiesComponent />
+                                    </PreviewProvider>
+                                ) : (
+                                    <>
+                                        <Header />
+                                        <main>
+                                            {modal}
+                                            <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
+                                                <BackgroundFigures />
+
+                                                {children}
+                                            </div>
+                                        </main>
+                                        <Footer />
+                                        <ScrollToTopButton />
+                                        <CookiesComponent />
+                                    </>
+                                )}
                             </Providers>
                         </body>
                     </SettingsContextProvider>
