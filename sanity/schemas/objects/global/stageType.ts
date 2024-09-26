@@ -1,8 +1,8 @@
 import { ActivityIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const stageType = defineField({
     name: "stage",
@@ -28,15 +28,7 @@ export const stageType = defineField({
             title: "title",
         },
         prepare({ title }) {
-            if (!title) {
-                return {
-                    title: "No title",
-                };
-            }
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
             };

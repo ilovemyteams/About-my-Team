@@ -2,7 +2,7 @@ import { ProjectsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const projectType = defineField({
@@ -126,12 +126,9 @@ export const projectType = defineField({
             media: "image.image",
         },
         prepare({ title, media }) {
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                title: `${englishTitle || "No title"}`,
+                title: englishTitle,
                 media: media || undefined,
             };
         },

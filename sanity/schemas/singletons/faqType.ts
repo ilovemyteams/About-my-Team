@@ -1,8 +1,8 @@
 import { HelpCircleIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const faqType = defineField({
     name: "faq",
@@ -64,15 +64,7 @@ export const faqType = defineField({
             media: "image",
         },
         prepare({ title, media }) {
-            if (!title) {
-                return {
-                    title: "No question title",
-                };
-            }
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No question title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
                 media: media || undefined,

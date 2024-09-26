@@ -1,7 +1,8 @@
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { defineField } from "sanity";
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { CodeBlockIcon } from "@sanity/icons";
+import { defineField } from "sanity";
+
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const heroHomeType = defineField({
     name: "heroHome",
@@ -34,9 +35,9 @@ export const heroHomeType = defineField({
             title: "title",
         },
         prepare({ title }) {
-            const engLishTitle = getEnglishTitleFromIntArrays(title);
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                title: engLishTitle,
+                title: englishTitle,
                 media: CodeBlockIcon,
             };
         },

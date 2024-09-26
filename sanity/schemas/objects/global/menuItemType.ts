@@ -1,6 +1,7 @@
 import { defineField } from "sanity";
+
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const menuItemType = defineField({
     name: "menuItem",
@@ -35,12 +36,9 @@ export const menuItemType = defineField({
             title: "title",
         },
         prepare({ title }) {
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                title: `${englishTitle || "No title"}`,
+                title: englishTitle,
             };
         },
     },

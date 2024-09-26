@@ -1,9 +1,9 @@
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
+import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
 
 export const pagesType = defineType({
     name: "pages",
