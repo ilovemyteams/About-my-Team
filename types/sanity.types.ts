@@ -68,64 +68,25 @@ export type Geopoint = {
     alt?: number;
 };
 
-export type Page = {
+export type Pages = {
     _id: string;
-    _type: "page";
+    _type: "pages";
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
-    title?: string;
-    slug?: Slug;
-    overview?: Array<{
-        children?: Array<{
-            marks?: Array<string>;
-            text?: string;
-            _type: "span";
+    title?: Array<
+        {
             _key: string;
-        }>;
-        style?: "normal";
-        listItem?: never;
-        markDefs?: null;
-        level?: number;
-        _type: "block";
-        _key: string;
-    }>;
-    body?: Array<
-        | {
-              children?: Array<{
-                  marks?: Array<string>;
-                  text?: string;
-                  _type: "span";
-                  _key: string;
-              }>;
-              style?: "normal";
-              listItem?: "bullet" | "number";
-              markDefs?: Array<{
-                  href?: string;
-                  _type: "link";
-                  _key: string;
-              }>;
-              level?: number;
-              _type: "block";
-              _key: string;
-          }
+        } & InternationalizedArrayPortableColorTitleValue
+    >;
+    pageSlug?: Slug;
+    pageBuilder?: Array<
         | ({
               _key: string;
-          } & Timeline)
-        | {
-              asset?: {
-                  _ref: string;
-                  _type: "reference";
-                  _weak?: boolean;
-                  [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-              };
-              hotspot?: SanityImageHotspot;
-              crop?: SanityImageCrop;
-              caption?: string;
-              alt?: string;
-              _type: "image";
+          } & HeroHome)
+        | ({
               _key: string;
-          }
+          } & CallToAction)
     >;
 };
 
@@ -1256,7 +1217,7 @@ export type AllSanitySchemaTypes =
     | SanityImageDimensions
     | SanityFileAsset
     | Geopoint
-    | Page
+    | Pages
     | ColorTheme
     | MenuItem
     | Stage
@@ -1335,7 +1296,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./sanity/lib/queries.ts
 // Variable: homePageQuery
-// Query: *[_type == "home"][0]{  ...,  hero {  ...,    "title": title[_key == $language][0].value  },  ctaSectionJoinUs {  ...,    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}  },  ctaSectionOrder {  ...,    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}  }, }
+// Query: *[_type == "home"][0]{  ...,  hero {  ...,    "title": title[_key == $language][0].value  }}
 export type HomePageQueryResult = {
     _id: string;
     _type: "home";
@@ -1354,20 +1315,7 @@ export type HomePageQueryResult = {
         }>;
     } | null;
     aboutUsHomeSection?: AboutUsHomeSection;
-    ctaSectionJoinUs: {
-        _type: "callToAction";
-        title?: Array<
-            {
-                _key: string;
-            } & InternationalizedArrayStringValue
-        >;
-        description?: Array<
-            {
-                _key: string;
-            } & InternationalizedArrayPortableTextSimpleValue
-        >;
-        ctaButton: null;
-    } | null;
+    ctaSectionJoinUs?: CallToAction;
     portfolioHome?: PortfolioHome;
     reviewsHome?: ReviewsHome;
     ctaSectionWriteUs?: CallToAction;
@@ -1376,25 +1324,42 @@ export type HomePageQueryResult = {
     ctaSectionJoinUsSecond?: CallToAction;
     stagesHome?: StagesHome;
     faqHome?: FaqHome;
-    ctaSectionOrder: {
-        _type: "callToAction";
-        title?: Array<
-            {
-                _key: string;
-            } & InternationalizedArrayStringValue
-        >;
-        description?: Array<
-            {
-                _key: string;
-            } & InternationalizedArrayPortableTextSimpleValue
-        >;
-        ctaButton: null;
-    } | null;
+    ctaSectionOrder?: CallToAction;
 } | null;
 // Variable: settingsQuery
-// Query: *[_type == "settings"][0]{    footer,    menuItems[]->{      _type,      "slug": slug.current,      title    },    ogImage,  }
+// Query: *[_type == "settings"][0]{  ...,    footer,    menuItems[]->{      _type,      "slug": slug.current,      title    },    ogImage,    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
 export type SettingsQueryResult = {
+    _id: string;
+    _type: "settings";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    language?: string;
+    header?: Header;
     footer: Footer | null;
+    notFoundPage?: NotFoundPage;
+    seo?: Seo;
+    buttonBuyMeCoffee: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+    } | null;
+    buttonJoinUS: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+    } | null;
+    buttonOrder: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+    } | null;
     menuItems: null;
     ogImage: null;
 } | null;
@@ -1403,7 +1368,7 @@ export type SettingsQueryResult = {
 import "@sanity/client";
 declare module "@sanity/client" {
     interface SanityQueries {
-        '\n  *[_type == "home"][0]{\n  ...,\n  hero {\n  ...,\n    "title": title[_key == $language][0].value\n  },\n  ctaSectionJoinUs {\n  ...,\n    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}\n  },\n  ctaSectionOrder {\n  ...,\n    "ctaButton": ctaButton {"buttonName": buttonName[_key == $language][0].value}\n  },\n \n}': HomePageQueryResult;
-        '\n  *[_type == "settings"][0]{\n    footer,\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n  }\n': SettingsQueryResult;
+        '\n  *[_type == "home"][0]{\n  ...,\n  hero {\n  ...,\n    "title": title[_key == $language][0].value\n  }\n}': HomePageQueryResult;
+        '\n  *[_type == "settings"][0]{\n  ...,\n    footer,\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
     }
 }
