@@ -1,6 +1,6 @@
 import { UsersIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
-
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const teamType = defineField({
@@ -14,7 +14,7 @@ export const teamType = defineField({
             description: "Team member's name",
             type: "internationalizedArrayString",
             title: "Name",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "role",

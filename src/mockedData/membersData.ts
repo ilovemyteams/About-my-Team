@@ -2059,14 +2059,14 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "OlenaHalushka",
-          
+
             projectId: ["3"],
 
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
             position: "UI/UX designer",
             categoryName: "designer",
-          
+
             projectsExperience: ["theatermag.com.ua"],
 
             pricePerHour: "9",

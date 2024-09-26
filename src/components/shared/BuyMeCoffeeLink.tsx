@@ -27,7 +27,9 @@ export const BuyMeCoffeeLink = ({
     return (
         <a
             href={BUY_ME_COFFEE}
-            target="_blank"
+            target={
+                data?.buttonBuyMeCoffee?.linkExternal?.newWindow ? "_blank" : ""
+            }
             rel="noopener noreferrer"
             className={`pointer relative group w-[56px] h-[56px] flex justify-center items-center     
                         icon-hover-rounded-purple ${className}`}

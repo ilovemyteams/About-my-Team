@@ -1,6 +1,6 @@
 import { CaseIcon } from "@sanity/icons";
 import { defineField } from "sanity";
-
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const specialistCategoryType = defineField({
@@ -13,7 +13,7 @@ export const specialistCategoryType = defineField({
             name: "title",
             type: "internationalizedArrayString",
             title: "Specialist category name",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
     ],
     preview: {

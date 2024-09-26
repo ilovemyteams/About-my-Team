@@ -1,4 +1,8 @@
 import { defineField } from "sanity";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { validateMaxLength } from "@/sanity/utils/validateMaxLength";
+
+const MAX_LENGTH = 18;
 
 export const buttonType = defineField({
     name: "button",
@@ -13,7 +17,10 @@ export const buttonType = defineField({
             name: "buttonName",
             title: "Button name",
             type: "internationalizedArrayString",
-            validation: Rule => Rule.required(),
+            validation: rule =>
+                rule
+                    .custom(validateIsRequired)
+                    .custom(validateMaxLength(MAX_LENGTH)),
         }),
         defineField({
             name: "buttonLink",

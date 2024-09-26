@@ -20,7 +20,7 @@ export const JoinUsButton = () => {
     return (
         <a
             href={JOIN_US_LINK}
-            target="_blank"
+            target={data?.buttonJoinUS?.linkExternal?.newWindow ? "_blank" : ""}
             rel="noopener noreferrer"
             className="outline-none"
         >
