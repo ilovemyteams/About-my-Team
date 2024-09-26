@@ -1,7 +1,8 @@
+import { getTranslations } from "next-intl/server";
+
 import { PopUpAskUs } from "@/src/components/faqPage/popUpAskUs/PopUpAskUs";
 import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
 import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
-import { getTranslations } from "next-intl/server";
 
 export async function generateMetadata({
     params: { locale },
