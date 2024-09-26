@@ -34,7 +34,6 @@ export async function generateMetadata({
             description: getTranslation("descriptionCEO"),
             title: getTranslation("titleCEO"),
             type: "website",
-            image: "/images/aboutUsSharingImage.png",
         },
     };
 }
