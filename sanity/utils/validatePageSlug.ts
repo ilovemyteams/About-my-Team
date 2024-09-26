@@ -1,10 +1,13 @@
 import { ValidationContext } from "sanity";
-import { getEnglishTitleFromBlocks } from "./getEnglishTitleFromBlocks";
+
 import {
-    Slug,
-    Pages,
     InternationalizedArrayPortableColorTitle,
+    Pages,
+    Slug,
 } from "@/types/sanity.types";
+
+import { getEnglishTitleFromBlocks } from "./getEnglishTitleFromBlocks";
+
 export const validatePageSlug = (
     value: Slug | undefined,
     context: ValidationContext
