@@ -31,7 +31,7 @@ export const pageType = defineType({
                     getEnglishTitleFromBlocks(
                         doc.title as InternationalizedArrayPortableColorTitle
                     ),
-                maxLength: 50,
+                maxLength: SLUG_MAX_LENGTH,
                 slugify: input =>
                     input
                         .toLowerCase()
