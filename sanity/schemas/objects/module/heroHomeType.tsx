@@ -1,11 +1,13 @@
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { defineField } from "sanity";
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { CodeBlockIcon } from "@sanity/icons";
 
 export const heroHomeType = defineField({
     name: "heroHome",
     title: "Hero",
     type: "object",
+    icon: CodeBlockIcon,
     options: {
         collapsed: false,
         collapsible: true,
@@ -35,6 +37,7 @@ export const heroHomeType = defineField({
             const engLishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: engLishTitle,
+                media: CodeBlockIcon,
             };
         },
     },
