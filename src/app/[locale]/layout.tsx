@@ -71,6 +71,7 @@ export async function generateMetadata({
             description: getTranslation("description"),
             type: "website",
             image: "/images/imageForSharing.jpeg",
+            title: getTranslation("title"),
         },
     };
 }
@@ -92,11 +93,11 @@ export default function LocaleLayout({
                 {IS_SHOWN_TO_SEARCH_ENGINES && (
                     <meta name="robots" content="noindex,nofollow" />
                 )}
-                <meta
+                {/* <meta
                     name="title"
                     property="og:title"
                     content="i love my team"
-                />
+                /> */}
                 <meta name="type" property="og:type" content="website" />
                 {/* <meta
                     name="image"

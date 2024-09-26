@@ -1,7 +1,7 @@
 {
     "Home": {
-        "title": "i love my team",
-        "description": "A team that cares about your needs. Together we can do more and better! Your future product is in the reliable hands of our specialists - trust us and enjoy the cooperation and the result!"
+        "title": "The team that cares about your needs",
+        "description": "We know how to heal business pain points and solve complex challenges. We will help you meet your business needs and achieve new goals with modern digital tools and creative problem-solving approaches."
     },
     "Hero": {
         "heroInfoText": "Team that takes care of Your needs",
@@ -216,6 +216,8 @@
         "button": "ok"
     },
     "AboutPage": {
+        "titleCEO": "Our goal is to create amazing digital products together with the perfect team",
+        "descriptionCEO": "Creating something unique is a challenge, but it's also extremely exciting. We are inspired to develop unique designs, look for creative solutions, and implement the best practices in the industry. Our team focuses on delivering high quality digital products and providing personalized support to each client.",
         "title": "About ",
         "titleAccent": "us",
         "contentItem1": "about the founder",

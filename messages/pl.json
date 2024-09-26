@@ -1,7 +1,7 @@
 {
     "Home": {
-        "title": "i love my team",
-        "description": "Zespół, który dba o Twoje potrzeby. Razem możemy więcej i lepiej! Twój przyszły produkt jest w bezpiecznych rękach naszych specjalistów - zaufaj nam i ciesz się współpracą i rezultatami!"
+        "title": "Zespół, który dba o Twoje potrzeby",
+        "description": "Wiemy, jak leczyć problemy biznesowe i rozwiązywać złożone problemy. Pomożemy Ci spełnić Twoje potrzeby biznesowe i osiągnąć nowe cele dzięki nowoczesnym narzędziom cyfrowym i kreatywnemu podejściu do rozwiązywania problemów."
     },
 
     "Hero": {
@@ -217,6 +217,8 @@
         "button": "ok"
     },
     "AboutPage": {
+        "titleCEO": "Naszym celem jest tworzenie niesamowitych produktów cyfrowych wraz z doskonałym zespołem",
+        "descriptionCEO": "Tworzenie czegoś wyjątkowego jest wyzwaniem, ale jest też niezwykle ekscytujące. Inspiruje nas opracowywanie unikalnych projektów, poszukiwanie kreatywnych rozwiązań i wdrażanie najlepszych praktyk w branży. Nasz zespół koncentruje się na dostarczaniu wysokiej jakości produktów cyfrowych i zapewnianiu spersonalizowanego wsparcia dla każdego klienta.",
         "title": "O ",
         "titleAccent": "nas",
         "contentItem1": "o założycielce",
