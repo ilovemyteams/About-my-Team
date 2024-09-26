@@ -1,7 +1,7 @@
 import { StarIcon } from "@sanity/icons";
 import { defineField } from "sanity";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const serviceType = defineField({
@@ -20,7 +20,7 @@ export const serviceType = defineField({
             name: "description",
             type: "internationalizedArrayText",
             title: "Service description",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
     ],
     preview: {

@@ -1,5 +1,7 @@
 import { defineField } from "sanity";
 
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+
 export const servicesHomeType = defineField({
     name: "servicesHome",
     title: "Services",
@@ -36,7 +38,7 @@ export const servicesHomeType = defineField({
             name: "description",
             title: "Services description",
             type: "internationalizedArrayText",
-            validation: Rule => Rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
     ],
 });

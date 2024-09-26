@@ -1,6 +1,7 @@
 import { HelpCircleIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const faqType = defineField({
@@ -21,7 +22,7 @@ export const faqType = defineField({
             name: "question",
             type: "internationalizedArrayString",
             title: "Question",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "shortAnswer",
@@ -29,7 +30,7 @@ export const faqType = defineField({
             title: "Short version of the answer",
             description:
                 "Provide a short answer option for the all questions page",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "fullAnswer",
@@ -37,7 +38,7 @@ export const faqType = defineField({
             title: "Full version of the answer",
             description:
                 "Provide a full answer option for a single question page",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "image",
@@ -51,7 +52,7 @@ export const faqType = defineField({
                     title: "Caption",
                     description:
                         "A brief description of what is shown in the picture",
-                    validation: rule => rule.required(),
+                    validation: rule => rule.custom(validateIsRequired),
                 },
             ],
             validation: rule => rule.required(),
