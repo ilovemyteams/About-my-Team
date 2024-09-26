@@ -2,20 +2,23 @@
 
 import { ComponentType, useState } from "react";
 
-import { FormInModalProps } from "@/types/FormInModalProps";
+import {
+    FormInModalProps,
+    TriggerComponentProps,
+} from "@/types/FormInModalProps";
 
 import { FormModal } from "./modals/FormModal";
 import { NotificationModal } from "./modals/NotificationModal";
 
 interface ModalsWithFormProps {
     formComponent: ComponentType<FormInModalProps>;
-    triggerBtnTitle: string;
+    triggerComponent: ComponentType<TriggerComponentProps>;
     className?: string;
 }
 
 export const ModalsWithForm = ({
-    formComponent: FormComponent,
-    triggerBtnTitle,
+    formComponent,
+    triggerComponent,
     className,
 }: ModalsWithFormProps) => {
     const [isError, setIsError] = useState(false);
@@ -27,9 +30,9 @@ export const ModalsWithForm = ({
                 setIsError={setIsError}
                 isError={isError}
                 setIsNotificationShawn={setIsNotificationShawn}
-                formComponent={FormComponent}
-                triggerBtnTitle={triggerBtnTitle}
+                formComponent={formComponent}
                 className={className}
+                triggerComponent={triggerComponent}
             />
 
             <NotificationModal
