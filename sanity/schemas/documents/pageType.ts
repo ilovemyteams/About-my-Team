@@ -1,3 +1,4 @@
+import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
@@ -5,10 +6,11 @@ import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
 
-export const pagesType = defineType({
-    name: "pages",
+export const pageType = defineType({
+    name: "page",
     type: "document",
     title: "Pages",
+    icon: DocumentsIcon,
     fields: [
         defineField({
             name: "title",

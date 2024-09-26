@@ -95,9 +95,9 @@ const blocks: ArrayDefinition[] = [
 ];
 
 import { colorThemeType } from "./documents/colorTheme";
-import { pagesType } from "./documents/pagesType";
+import { pageType } from "./documents/pageType";
 
-const documents: DocumentDefinition[] = [colorThemeType, pagesType];
+const documents: DocumentDefinition[] = [colorThemeType, pageType];
 
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";

@@ -54,8 +54,15 @@ export const pageStructure = (
     typeDefArray: DocumentDefinition[]
 ): StructureResolver => {
     return S => {
+        const pagesItem = S.listItem()
+            .id("pages-list")
+            .title("Pages")
+            .schemaType("page")
+            .child(S.documentTypeList("page").title("Pages List"));
+
         // Goes through all of the singletons that were provided and translates them into something the
         // Desktool can understand
+
         const singletonItems = typeDefArray.map(typeDef => {
             return S.listItem()
                 .title(typeDef.title!)
@@ -80,6 +87,11 @@ export const pageStructure = (
 
         return S.list()
             .title("Content")
-            .items([...singletonItems, S.divider(), ...defaultListItems]);
+            .items([
+                pagesItem,
+                ...singletonItems,
+                S.divider(),
+                ...defaultListItems,
+            ]);
     };
 };
