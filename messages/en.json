@@ -265,6 +265,8 @@
         "breadcrumbItemAbout": "About us"
     },
     "FaqPage": {
+        "titleCEO": "",
+        "descriptionCEO": "",
         "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
     }
 }

@@ -266,6 +266,8 @@
         "breadcrumbItemAbout": "O nas"
     },
     "FaqPage": {
+        "titleCEO": "",
+        "descriptionCEO": "",
         "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
     }
 }
