@@ -6,6 +6,8 @@ import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
 
+const SLUG_MAX_LENGTH = 50;
+
 export const pageType = defineType({
     name: "page",
     type: "document",
@@ -31,9 +33,13 @@ export const pageType = defineType({
                     ),
                 maxLength: 50,
                 slugify: input =>
-                    input.toLowerCase().replace(/\s+/g, "-").slice(0, 50),
+                    input
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")
+                        .slice(0, SLUG_MAX_LENGTH - 1),
             },
-            validation: Rule => Rule.custom(validatePageSlug).required(),
+            validation: Rule =>
+                Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)).required(),
         }),
         defineField({
             name: "pageBuilder",
