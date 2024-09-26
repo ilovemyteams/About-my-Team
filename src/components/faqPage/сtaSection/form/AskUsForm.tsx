@@ -14,7 +14,7 @@ interface FormValues {
     message: string;
 }
 
-export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
+export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
     const validationSchema = FaqWriteQuestionValidation();
@@ -70,6 +70,15 @@ export const FaqCtaForm = ({ notificationHandler }: FormInModalProps) => {
                     className="flex flex-col items-center"
                 >
                     <div className="w-full h-[1px] bg-purple-strokeLight dark:bg-purple-stroke mb-3"></div>
+                    <div className="self-start mb-4 pc:mb-12">
+                        <h1 className="text-3xl font-caviar tab:text-4xl pc:text-5xl mb-2">
+                            {getTranslation("askFormTitle")}
+                        </h1>
+                        <p className="text-base">
+                            {getTranslation("askFormText")}
+                        </p>
+                    </div>
+
                     <CustomField
                         name="name"
                         label={getTranslation("nameLabel")}

@@ -4,10 +4,12 @@ import { ComponentType, Dispatch, SetStateAction } from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { FormInModalProps } from "@/types/FormInModalProps";
+import {
+    FormInModalProps,
+    TriggerComponentProps,
+} from "@/types/FormInModalProps";
 import { SubmitFnType } from "@/types/FormInModalProps";
 
-import { Button } from "../../Button";
 import { IconCloseX } from "../../Icons/IconCloseX";
 import { BgImagesDesktop } from "../modalBgImages/formModalBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "../modalBgImages/formModalBgImages/BgImagesMobile";
@@ -18,7 +20,7 @@ interface FormModalProps {
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
     formComponent: ComponentType<FormInModalProps>;
-    triggerBtnTitle: string;
+    triggerComponent: ComponentType<TriggerComponentProps>;
     className?: string;
 }
 
@@ -27,7 +29,7 @@ export const FormModal = ({
     setIsError,
     setIsNotificationShawn,
     formComponent: FormComponent,
-    triggerBtnTitle,
+    triggerComponent: TriggerComponent,
     className,
 }: FormModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
@@ -49,7 +51,7 @@ export const FormModal = ({
 
     return (
         <div className={className}>
-            <Button onClick={onOpen}>{triggerBtnTitle}</Button>
+            <TriggerComponent modalOpenHandler={onOpen} isModalOpen={isOpen} />
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}

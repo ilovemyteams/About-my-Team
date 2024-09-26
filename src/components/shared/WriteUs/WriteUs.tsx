@@ -1,20 +1,18 @@
 "use client";
-import { useTranslations } from "next-intl";
 
 import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
 import { CustomerForm } from "./CustomerForm";
+import { WriteUsBtn } from "./WriteUsBtn";
 
 interface WriteUsProps {
     className?: string;
 }
 
 export const WriteUs = ({ className }: WriteUsProps) => {
-    const getTranslation = useTranslations("Buttons");
-
     return (
         <ModalsWithForm
             formComponent={CustomerForm}
-            triggerBtnTitle={getTranslation("order")}
+            triggerComponent={WriteUsBtn}
             className={className}
         />
     );

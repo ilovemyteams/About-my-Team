@@ -19,6 +19,7 @@ const LikeButton = ({ likes }: LikeButtonProps) => {
         : isHovered
           ? "text-redLight dark:text-red pc:transition pc:ease-out pc:duration-300"
           : "text-greyLight dark:text-grey pc:transition pc:ease-out pc:duration-300";
+
     return (
         <button
             onClick={toggleLike}
