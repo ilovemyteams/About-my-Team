@@ -113,7 +113,7 @@
         "mobileBigTitlePart2": "często zadawane pytania",
         "pageBigTitle": "Odpowiedzi na często zadawane pytania",
         "question1": "Potrzebuję strony internetowej. Od czego zacząć?",
-        "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
+        "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić Ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą Ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
         "question2": "Co wybrać - landing page czy stronę internetową?",
         "answer2": "To zależy od tego, jakie zadanie próbujesz rozwiązać. W przypadku, gdy potrzebujesz zaprezentować jakąś jedną usługę lub towar, gdy potrzebujesz szybkiego rezultatu, a budżet na rozwój jest niewielki, to lepiej wybrać landing. W przypadku, gdy masz szeroki asortyment towarów lub usług, lub pragniesz zaprezentować swoją firmę i nadać dużo informacji potencjalnym klientom, lepiej wybrać pełnoprawną stronę internetową.",
         "question3": "Ile trwa stworzenie strony internetowej?",
@@ -129,7 +129,7 @@
         "allProjects": "Wszystkie projekty",
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
-        "buyMeACoffe": "Poczęstować kawą",
+        "buyMeACoffee": "Poczęstować kawą",
         "learnMore": "Dowiedz się więcej",
         "goBack": "Powrót",
         "writeUs": "napisz do nas",
@@ -262,7 +262,8 @@
     },
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
-        "breadcrumbItemAbout": "O nas"
+        "breadcrumbItemAbout": "O nas",
+        "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
         "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
