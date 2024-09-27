@@ -19,7 +19,7 @@ export const Footer = () => {
                 />
                 <div className="flex tab:items-end tab:h-[48px] mb-9 pc:mb-[28px] justify-between">
                     <MenuFooter />
-                    <div className="flex items-end pc:flex-row ">
+                    <div className="flex items-start tab:items-end pt-[14px] tab:pt-[0px] pc:flex-row ">
                         <BuyMeCoffeeLink />
                     </div>
                 </div>

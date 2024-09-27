@@ -17,6 +17,7 @@ export const HeaderMenuList = ({
     const menuList = [
         { name: getTranslation("breadcrumbItemHome"), path: "" },
         { name: getTranslation("breadcrumbItemAbout"), path: "about" },
+        { name: getTranslation("breadcrumbItemFaq"), path: "faq" },
     ];
     return (
         <ul>
