@@ -13,7 +13,6 @@ export interface PortfolioCardItemProps {
 export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
     const { image, URL, stages, category, title } = data || {};
     const imageSrc = image?.asset;
-    console.log("imageSrc", image);
 
     return (
         <div className="relative min-w-[100%] h-[330px] tab:min-w-[50%] pc:h-[400px]">

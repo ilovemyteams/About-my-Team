@@ -24,7 +24,6 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
-    console.log("PortfolioCarousel", projects);
     const {
         prevBtnDisabled,
         nextBtnDisabled,

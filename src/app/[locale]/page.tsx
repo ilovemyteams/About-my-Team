@@ -24,8 +24,6 @@ export default async function HomePage(props: HomePageParamsProps) {
         await loadHomeProjects(props.params.locale),
     ]);
 
-    console.log(portfolioSection.data);
-
     return (
         <>
             <BackgroundFiguresMain />
