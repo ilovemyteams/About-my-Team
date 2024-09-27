@@ -15,11 +15,11 @@ export const PortfolioSection = ({
     const { anchorId, subtitle, title, portfolioSliderData } =
         data?.portfolioHome || {};
 
-    console.log("PortfolioSection", subtitle, title);
+    title ? console.log("PortfolioSe", data?.portfolioHome.title) : "";
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     return (
         <Section id={anchorId} className="relative">
-            <PortfolioTitle subtitle={subtitle} />
+            <PortfolioTitle subtitle={subtitle} title={title} />
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 {portfolioSliderData && (
                     <PortfolioCarousel
