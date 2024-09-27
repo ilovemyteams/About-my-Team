@@ -133,7 +133,8 @@
         "learnMore": "Dowiedz się więcej",
         "goBack": "Powrót",
         "writeUs": "napisz do nas",
-        "readMore": "Czytaj więcej"
+        "readMore": "Czytaj więcej",
+        "return": "powrót"
     },
     "Badges": {
         "readTimeSingular": " min czytania",
@@ -263,5 +264,9 @@
     },
     "FaqPage": {
         "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
+    },
+    "UnderConstruction": {
+        "title": "Strona w budowie",
+        "text": "Śledź nas i dowiaduj się jako pierwszy o aktualizacjach."
     }
 }
