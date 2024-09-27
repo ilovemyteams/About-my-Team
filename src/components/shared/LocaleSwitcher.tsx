@@ -29,7 +29,8 @@ export default function LocaleSwitcher() {
             switchLocaleInURL(locale) === ""
                 ? segments.splice(1, 1)
                 : (segments[1] = switchLocaleInURL(locale));
-            return hash ? `${segments.join("/")}${hash}` : segments.join("/");
+            return segments.join("/");
+            // return hash ? `${segments.join("/")}${hash}` : segments.join("/");
         }
         if (segments.length <= 2) {
             const condition =
@@ -40,11 +41,12 @@ export default function LocaleSwitcher() {
                 ? segments.splice(1, 0, switchLocaleInURL(locale))
                 : (segments[1] = switchLocaleInURL(locale));
 
-            return hash ? `${segments.join("/")}${hash}` : segments.join("/");
+            return segments.join("/");
+            // return hash ? `${segments.join("/")}${hash}` : segments.join("/");
         }
         segments[1] = switchLocaleInURL(locale);
-
-        return hash ? `${segments.join("/")}${hash}` : segments.join("/");
+        return segments.join("/");
+        // return hash ? `${segments.join("/")}${hash}` : segments.join("/");
     };
 
     return (
@@ -52,7 +54,12 @@ export default function LocaleSwitcher() {
             {locales.map(curLocale => (
                 <li key={curLocale}>
                     <Link
-                        href={redirectedPathName(curLocale)}
+                        href={{
+                            pathname: redirectedPathName(curLocale),
+                            search: searchParams.toString(),
+                            hash: hash,
+                        }}
+                        scroll={false}
                         className={
                             curLocale === locale ? activeStyle : inactiveStyle
                         }
