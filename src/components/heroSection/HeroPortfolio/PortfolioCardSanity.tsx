@@ -20,9 +20,9 @@ export const PortfolioCardSanity = ({
                         tab:aspect-[360/300] pc:aspect-[540/350]  
                         pc:w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428] deskxl:max-w-[668px] bg-CTAGradientLight dark:bg-CTAGradient"
         >
-            {sanityData.image?.image.asset ? (
+            {sanityData.image?.asset ? (
                 <Image
-                    src={sanityData.image.image.asset.toString()}
+                    src={sanityData.image.asset.toString()}
                     width={540}
                     height="0"
                     alt={alt}

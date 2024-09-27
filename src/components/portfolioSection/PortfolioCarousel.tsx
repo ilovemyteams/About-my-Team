@@ -1,12 +1,10 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import { useLocale } from "next-intl";
 import React from "react";
 
-import { LocaleType } from "@/types/LocaleType";
+import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
-import { PortfolioDataItemType } from "../../mockedData/portfolioData";
 import {
     NextButton,
     PrevButton,
@@ -17,18 +15,16 @@ import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { PortfolioCard } from "./PortfolioCard";
 
 type PortfolioCarouselProps = {
-    projects: PortfolioDataItemType[];
+    projects: PortfolioSliderProps[];
     options?: EmblaOptionsType;
 };
-type Locale = LocaleType;
 
 export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
-    const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
-
+    console.log("PortfolioCarousel", projects);
     const {
         prevBtnDisabled,
         nextBtnDisabled,
@@ -40,16 +36,12 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
         <div className="relative embla min-w-full">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
-                    {projects.map((project, index) => (
+                    {projects.map(project => (
                         <div
-                            key={project.data.id}
+                            key={project._id}
                             className="embla__slide flex-[0_0_100%] tab:flex-[0_0_50%] w-full"
                         >
-                            <PortfolioCard
-                                data={project.data}
-                                index={index}
-                                localizationData={project[locale as Locale]}
-                            />
+                            <PortfolioCard data={project} index={project._id} />
                         </div>
                     ))}
                 </div>

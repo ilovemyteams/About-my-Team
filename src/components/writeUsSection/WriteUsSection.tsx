@@ -1,9 +1,10 @@
 import { useTranslations } from "next-intl";
 
+import { HomePageProps } from "@/types/sanityDataPropsTypes";
+
 import { SectionCTA } from "../shared/SectionCTA";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
-import { HomePageProps } from "@/types/sanityDataPropsTypes";
 
 export const WriteUsSection = ({ data }: HomePageProps) => {
     const getTranslation = useTranslations("WriteUs");

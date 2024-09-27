@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const footerType = defineField({
