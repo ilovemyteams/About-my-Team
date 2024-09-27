@@ -49,9 +49,26 @@ export type HeroHomeProps = {
     }>;
 };
 
+export type ChildrenProps = {
+    marks?: Array<string>;
+    text?: string;
+    _type: "span";
+    _key: string;
+};
+
+export type PortfolioTitleProps = {
+    children?: ChildrenProps[];
+    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+    listItem?: never;
+    markDefs?: null;
+    level?: number;
+    _type: "block";
+    _key: string;
+};
+
 export type PortfolioHomeProps = {
     portfolioHome: {
-        title: [];
+        title: PortfolioTitleProps[];
         subtitle: string;
         anchorId: string;
         portfolioSliderData: PortfolioSliderProps[];
