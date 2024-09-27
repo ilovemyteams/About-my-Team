@@ -5,6 +5,7 @@ import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
 import { Home, Project, Settings } from "@/types/sanity.types";
+import { HomeProps } from "@/types/sanityDataPropsTypes";
 
 import { readToken } from "../lib/api";
 import {
@@ -62,7 +63,7 @@ export function loadSettings(language = "ua") {
 }
 
 export function loadHomePage(language = "ua") {
-    return loadQuery<Home | null>(
+    return loadQuery<HomeProps | null>(
         homePageQuery,
         { language },
         { next: { tags: ["home"] } }

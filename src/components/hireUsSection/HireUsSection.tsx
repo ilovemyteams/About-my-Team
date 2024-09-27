@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { HomePageProps } from "@/types/pageProps";
+import { HomePageProps } from "@/types/sanityDataPropsTypes";
 
 import { SectionCTA } from "../shared/SectionCTA";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";

@@ -11,20 +11,20 @@ import { QaSection } from "@/src/components/qAsection/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
-import { HomePageParamsProps } from "@/types/pageProps";
+import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: HomePageParamsProps) {
     const [initial, projects, cta] = await Promise.all([
-        loadHomePage(props.params.locale),
-        loadProjects(props.params.locale),
-        loadCTA(props.params.locale),
+        await loadHomePage(props.params.locale),
+        await loadProjects(props.params.locale),
+        await loadCTA(props.params.locale),
     ]);
-    console.log(cta.data);
+    console.log(projects.data);
 
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={initial.data} projects={projects.data} />
+            <HeroSection data={initial.data} />
             <MissionSection />
             <JoinTheTeamSection data={cta.data} />
             <PortfolioSection />

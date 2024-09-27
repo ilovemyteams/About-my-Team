@@ -1298,7 +1298,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./sanity/lib/queries.ts
 // Variable: homePageQuery
-// Query: *[_type == "home"][0]{  ...,  hero {  ...,    "title": title[_key == $language][0].value  }}
+// Query: *[_type == "home"][0]{  ...,  hero {      "title": title[_key == $language][0].value,    "portfolioSliderProp": portfolioSlider[]->{"title": title[_key == $language][0].value,     image {"caption":caption[_key == $language][0].value, image {"asset": asset->url}},    "category":category->categoryName[_key == $language][0].value,    _id}  }}
 export type HomePageQueryResult = {
     _id: string;
     _type: "home";
@@ -1306,15 +1306,18 @@ export type HomePageQueryResult = {
     _updatedAt: string;
     _rev: string;
     hero: {
-        _type: "heroHome";
         title: string | null;
-        portfolioSlider?: Array<{
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            _key: string;
-            [internalGroqTypeReferenceTo]?: "project";
-        }>;
+        portfolioSliderProp: Array<{
+            title: string | null;
+            image: {
+                caption: string | null;
+                image: {
+                    asset: string | null;
+                } | null;
+            } | null;
+            category: string | null;
+            _id: string;
+        }> | null;
     } | null;
     aboutUsHomeSection?: AboutUsHomeSection;
     ctaSectionJoinUs?: CallToAction;
@@ -1329,7 +1332,7 @@ export type HomePageQueryResult = {
     ctaSectionOrder?: CallToAction;
 } | null;
 // Variable: CTAQuery
-// Query: *[_type == "home"][0]{ ctaSectionWriteUs {"title": title[_key == $language][0].value},     ctaSectionJoinUs {"title": title[_key == $language][0].value},     ctaSectionOrder {"title": title[_key == $language][0].value,     "description": description[_key == $language][0].value[0].children[0].text}    }
+// Query: *[_type == "home"][0]{    ctaSectionWriteUs {"title": title[_key == $language][0].value},     ctaSectionJoinUs {"title": title[_key == $language][0].value},     ctaSectionOrder {"title": title[_key == $language][0].value,     "description": description[_key == $language][0].value[0].children[0].text}    }
 export type CTAQueryResult = {
     ctaSectionWriteUs: {
         title: string | null;
@@ -1397,8 +1400,8 @@ export type ProjectQueryResult = Array<{
 import "@sanity/client";
 declare module "@sanity/client" {
     interface SanityQueries {
-        '\n  *[_type == "home"][0]{\n  ...,\n  hero {\n  ...,\n    "title": title[_key == $language][0].value\n  }\n}': HomePageQueryResult;
-        '\n *[_type == "home"][0]{\n ctaSectionWriteUs {"title": title[_key == $language][0].value}, \n    ctaSectionJoinUs {"title": title[_key == $language][0].value}, \n    ctaSectionOrder {"title": title[_key == $language][0].value, \n    "description": description[_key == $language][0].value[0].children[0].text}\n    }\n': CTAQueryResult;
+        '\n  *[_type == "home"][0]{\n  ...,\n  hero {\n  \n    "title": title[_key == $language][0].value,\n    "portfolioSliderProp": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, image {"asset": asset->url}},\n    "category":category->categoryName[_key == $language][0].value,\n    _id}\n  }\n}': HomePageQueryResult;
+        '\n *[_type == "home"][0]{\n    ctaSectionWriteUs {"title": title[_key == $language][0].value}, \n    ctaSectionJoinUs {"title": title[_key == $language][0].value}, \n    ctaSectionOrder {"title": title[_key == $language][0].value, \n    "description": description[_key == $language][0].value[0].children[0].text}\n    }\n': CTAQueryResult;
         '\n  *[_type == "settings"][0]{\n  ...,\n    footer,\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
     }
