@@ -326,7 +326,7 @@
     }
   },
   {
-    "name": "pages",
+    "name": "page",
     "type": "document",
     "attributes": {
       "_id": {
@@ -339,7 +339,7 @@
         "type": "objectAttribute",
         "value": {
           "type": "string",
-          "value": "pages"
+          "value": "page"
         }
       },
       "_createdAt": {
@@ -429,6 +429,14 @@
               }
             ]
           }
+        },
+        "optional": true
+      },
+      "seo": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "seo"
         },
         "optional": true
       }
@@ -5843,7 +5851,8 @@
         "description": {
           "type": "objectAttribute",
           "value": {
-            "type": "string"
+            "type": "inline",
+            "name": "internationalizedArrayString"
           },
           "optional": true
         },

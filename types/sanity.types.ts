@@ -68,9 +68,9 @@ export type Geopoint = {
     alt?: number;
 };
 
-export type Pages = {
+export type Page = {
     _id: string;
-    _type: "pages";
+    _type: "page";
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
@@ -88,6 +88,7 @@ export type Pages = {
               _key: string;
           } & CallToAction)
     >;
+    seo?: Seo;
 };
 
 export type ColorTheme = {
@@ -1103,7 +1104,7 @@ export type SanityImageMetadata = {
 export type Seo = {
     _type: "seo";
     title?: InternationalizedArrayString;
-    description?: string;
+    description?: InternationalizedArrayString;
     image?: {
         asset?: {
             _ref: string;
@@ -1219,7 +1220,7 @@ export type AllSanitySchemaTypes =
     | SanityImageDimensions
     | SanityFileAsset
     | Geopoint
-    | Pages
+    | Page
     | ColorTheme
     | MenuItem
     | Stage

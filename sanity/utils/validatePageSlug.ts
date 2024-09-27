@@ -2,7 +2,7 @@ import { ValidationContext } from "sanity";
 
 import {
     InternationalizedArrayPortableColorTitle,
-    Pages,
+    Page,
     Slug,
 } from "@/types/sanity.types";
 
@@ -11,7 +11,7 @@ import { getEnglishTitleFromBlocks } from "./getEnglishTitleFromBlocks";
 export const validatePageSlug =
     (slugMaxLength: number) =>
     (value: Slug | undefined, context: ValidationContext) => {
-        const parent = context?.parent as Pages;
+        const parent = context?.parent as Page;
         const currentValue = value?.current;
 
         const enTitle = getEnglishTitleFromBlocks(
