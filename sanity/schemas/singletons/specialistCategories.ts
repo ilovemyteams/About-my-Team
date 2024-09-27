@@ -1,7 +1,8 @@
 import { CaseIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const specialistCategoryType = defineField({
     name: "specialistCategory",
@@ -21,15 +22,7 @@ export const specialistCategoryType = defineField({
             title: "title",
         },
         prepare({ title }) {
-            if (!title) {
-                return {
-                    title: "No title",
-                };
-            }
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
             };

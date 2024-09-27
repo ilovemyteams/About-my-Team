@@ -1,119 +1,69 @@
-import { DocumentIcon, ImageIcon } from "@sanity/icons";
+import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
+import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
+import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
+
+const SLUG_MAX_LENGTH = 50;
+
 export const pageType = defineType({
-    type: "document",
     name: "page",
-    title: "Page",
-    icon: DocumentIcon,
+    type: "document",
+    title: "Pages",
+    icon: DocumentsIcon,
     fields: [
         defineField({
-            type: "string",
             name: "title",
-            title: "Title",
-            validation: rule => rule.required(),
+            title: "Page title",
+            description:
+                "Сhoose the accent color of specific words for each language",
+            type: "internationalizedArrayPortableColorTitle",
+            validation: Rule => Rule.custom(validateIsRequired),
         }),
         defineField({
+            title: "Page Slug",
+            name: "pageSlug",
             type: "slug",
-            name: "slug",
-            title: "Slug",
             options: {
-                source: "title",
+                source: doc =>
+                    getEnglishTitleFromBlocks(
+                        doc.title as InternationalizedArrayPortableColorTitle
+                    ),
+                maxLength: SLUG_MAX_LENGTH,
+                slugify: input =>
+                    input
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")
+                        .slice(0, SLUG_MAX_LENGTH - 1),
             },
-            validation: rule => rule.required(),
+            validation: Rule =>
+                Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)).required(),
         }),
         defineField({
-            name: "overview",
-            description:
-                "Used both for the <meta> description tag for SEO, and the personal website subheader.",
-            title: "Overview",
+            name: "pageBuilder",
             type: "array",
+            title: "Page builder",
+            description: "Сhoose necessary sections for this page",
             of: [
-                // Paragraphs
                 defineArrayMember({
-                    lists: [],
-                    marks: {
-                        annotations: [],
-                        decorators: [
-                            {
-                                title: "Italic",
-                                value: "em",
-                            },
-                            {
-                                title: "Strong",
-                                value: "strong",
-                            },
-                        ],
-                    },
-                    styles: [],
-                    type: "block",
+                    name: "hero",
+                    type: "heroHome",
+                }),
+
+                defineArrayMember({
+                    name: "callToAction",
+                    type: "callToAction",
                 }),
             ],
-            validation: rule => rule.max(155).required(),
         }),
         defineField({
-            type: "array",
-            name: "body",
-            title: "Body",
+            name: "seo",
+            title: "SEO (optional)",
             description:
-                "This is where you can write the page's content. Including custom blocks like timelines for more a more visual display of information.",
-            of: [
-                // Paragraphs
-                defineArrayMember({
-                    type: "block",
-                    marks: {
-                        annotations: [
-                            {
-                                name: "link",
-                                type: "object",
-                                title: "Link",
-                                fields: [
-                                    {
-                                        name: "href",
-                                        type: "url",
-                                        title: "Url",
-                                    },
-                                ],
-                            },
-                        ],
-                    },
-                    styles: [],
-                }),
-                // Custom blocks
-                defineArrayMember({
-                    name: "timeline",
-                    type: "timeline",
-                }),
-                defineField({
-                    type: "image",
-                    icon: ImageIcon,
-                    name: "image",
-                    title: "Image",
-                    options: {
-                        hotspot: true,
-                    },
-                    preview: {
-                        select: {
-                            imageUrl: "asset.url",
-                            title: "caption",
-                        },
-                    },
-                    fields: [
-                        defineField({
-                            title: "Caption",
-                            name: "caption",
-                            type: "string",
-                        }),
-                        defineField({
-                            name: "alt",
-                            type: "string",
-                            title: "Alt text",
-                            description:
-                                "Alternative text for screenreaders. Falls back on caption if not set",
-                        }),
-                    ],
-                }),
-            ],
+                "Specify the SEO title, description, and image for this page only if they are to be different from the SEO in Settings",
+            type: "seo",
         }),
     ],
     preview: {
@@ -121,9 +71,10 @@ export const pageType = defineType({
             title: "title",
         },
         prepare({ title }) {
+            const engLishTitle = getEnglishTitleFromBlocks(title);
             return {
+                title: engLishTitle,
                 subtitle: "Page",
-                title,
             };
         },
     },

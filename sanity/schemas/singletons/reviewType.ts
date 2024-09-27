@@ -1,7 +1,8 @@
 import { CommentIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const reviewType = defineField({
     name: "review",
@@ -21,7 +22,7 @@ export const reviewType = defineField({
             name: "reviewText",
             type: "internationalizedArrayText",
             title: "Review text",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "reviewUrl",
@@ -35,19 +36,9 @@ export const reviewType = defineField({
             title: "project.title",
         },
         prepare({ title }) {
-            if (!title) {
-                return {
-                    title: "No review title",
-                };
-            }
-            const englishTitle =
-                `Review "${
-                    (title as InternationalizedArrayString).find(
-                        item => item._key === "en"
-                    )?.value
-                }"` || "No review title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                title: englishTitle,
+                title: `Review "${englishTitle}"`,
             };
         },
     },

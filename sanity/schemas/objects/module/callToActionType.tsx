@@ -1,5 +1,7 @@
 import { BlockElementIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const callToActionType = defineField({
@@ -29,9 +31,10 @@ export const callToActionType = defineField({
             title: "title",
         },
         prepare({ title }) {
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
+                title: englishTitle,
                 subtitle: "Call to action",
-                title,
                 media: BlockElementIcon,
             };
         },

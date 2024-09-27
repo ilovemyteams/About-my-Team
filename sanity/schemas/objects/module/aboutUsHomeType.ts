@@ -1,7 +1,7 @@
 import { CheckmarkIcon } from "@sanity/icons";
 import { defineArrayMember, defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 
 export const aboutUsItemType = defineField({
     name: "aboutUsItem",
@@ -19,11 +19,8 @@ export const aboutUsItemType = defineField({
         select: {
             title: "About us",
         },
-        prepare({ title = [] }) {
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+        prepare({ title }) {
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 icon: CheckmarkIcon,
                 title: englishTitle,

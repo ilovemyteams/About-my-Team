@@ -1,7 +1,7 @@
 import { LaunchIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 
 export const siteCategoryType = defineField({
     name: "siteCategory",
@@ -20,12 +20,9 @@ export const siteCategoryType = defineField({
             title: "categoryName",
         },
         prepare({ title }) {
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                title: `${englishTitle || "No title"}`,
+                title: englishTitle,
             };
         },
     },

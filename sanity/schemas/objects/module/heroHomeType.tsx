@@ -1,9 +1,14 @@
+import { CodeBlockIcon } from "@sanity/icons";
 import { defineField } from "sanity";
+
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const heroHomeType = defineField({
     name: "heroHome",
     title: "Hero",
     type: "object",
+    icon: CodeBlockIcon,
     options: {
         collapsed: false,
         collapsible: true,
@@ -13,7 +18,7 @@ export const heroHomeType = defineField({
             name: "title",
             title: "Hero title",
             type: "internationalizedArrayText",
-            validation: Rule => Rule.required(),
+            validation: Rule => Rule.custom(validateIsRequired),
         }),
         defineField({
             name: "portfolioSlider",
@@ -25,4 +30,16 @@ export const heroHomeType = defineField({
             validation: Rule => Rule.required(),
         }),
     ],
+    preview: {
+        select: {
+            title: "title",
+        },
+        prepare({ title }) {
+            const englishTitle = getEnglishTitleFromIntArrays(title);
+            return {
+                title: englishTitle,
+                media: CodeBlockIcon,
+            };
+        },
+    },
 });

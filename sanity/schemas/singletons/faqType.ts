@@ -1,7 +1,8 @@
 import { HelpCircleIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const faqType = defineField({
     name: "faq",
@@ -21,7 +22,7 @@ export const faqType = defineField({
             name: "question",
             type: "internationalizedArrayString",
             title: "Question",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "shortAnswer",
@@ -29,7 +30,7 @@ export const faqType = defineField({
             title: "Short version of the answer",
             description:
                 "Provide a short answer option for the all questions page",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "fullAnswer",
@@ -37,7 +38,7 @@ export const faqType = defineField({
             title: "Full version of the answer",
             description:
                 "Provide a full answer option for a single question page",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "image",
@@ -51,7 +52,7 @@ export const faqType = defineField({
                     title: "Caption",
                     description:
                         "A brief description of what is shown in the picture",
-                    validation: rule => rule.required(),
+                    validation: rule => rule.custom(validateIsRequired),
                 },
             ],
             validation: rule => rule.required(),
@@ -63,15 +64,7 @@ export const faqType = defineField({
             media: "image",
         },
         prepare({ title, media }) {
-            if (!title) {
-                return {
-                    title: "No question title",
-                };
-            }
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No question title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
                 media: media || undefined,

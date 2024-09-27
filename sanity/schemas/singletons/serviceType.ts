@@ -1,8 +1,8 @@
 import { StarIcon } from "@sanity/icons";
 import { defineField } from "sanity";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 
 export const serviceType = defineField({
     name: "service",
@@ -20,7 +20,7 @@ export const serviceType = defineField({
             name: "description",
             type: "internationalizedArrayText",
             title: "Service description",
-            validation: rule => rule.required(),
+            validation: rule => rule.custom(validateIsRequired),
         }),
     ],
     preview: {
@@ -28,15 +28,7 @@ export const serviceType = defineField({
             title: "title",
         },
         prepare({ title }) {
-            if (!title) {
-                return {
-                    title: "No title",
-                };
-            }
-            const englishTitle =
-                (title as InternationalizedArrayString).find(
-                    item => item._key === "en"
-                )?.value || "No title";
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
             };

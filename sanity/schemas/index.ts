@@ -114,6 +114,7 @@ import { specialistCategoryType } from "./singletons/specialistCategories";
 import { specialistType } from "./singletons/specialistType";
 import { teamType } from "./singletons/teamType";
 import { toolType } from "./singletons/toolType";
+
 const singletons: DocumentDefinition[] = [
     homeType,
     teamType,
