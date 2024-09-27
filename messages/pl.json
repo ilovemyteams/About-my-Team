@@ -181,7 +181,9 @@
         "rulesLink": "Warunki przetwarzania danych osobowych",
         "submitButton": "Wyślij",
         "questionLabel": "Twoje pytanie*",
-        "questionPlaceholder": "Twoje pytanie*"
+        "questionPlaceholder": "Twoje pytanie*",
+        "askFormTitle": "Masz pytania?",
+        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -198,7 +200,7 @@
     "Notifications": {
         "thankYou": "Dziękujemy!",
         "waitResponse": "Wiadomość została wysłana. Nasz menedżer wkrótce się skontaktuje",
-        "somethingWrong": "Coś poszło nie tak",
+        "somethingWrong": "Coś poszło nie tak...",
         "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
     },

@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -54,7 +55,6 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                         text={answerText}
                     />
                     <button
-                        onClick={() => alert("Transition to full article")}
                         className="mr-3 text-purple-130 dark:text-purple-100 pc:hover:text-redLight dark:pc:hover:text-red
                     pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none pc:transition pc:ease-out pc:duration-300 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 pc:hover:before:border-redLight dark:pc:hover:before:border-red pc:focus:before:border-redLight dark:pc:focus:before:border-red pc:before:transition pc:before:ease-out pc:before:duration-300"
                     >
