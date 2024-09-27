@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Project } from "@/types/sanity.types";
+import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
@@ -8,7 +8,7 @@ import { SmallPageTitle } from "../../shared/SmallPageTitle";
 export const PortfolioCardSanity = ({
     sanityData,
 }: {
-    sanityData: Project;
+    sanityData: PortfolioSliderProps;
 }) => {
     const alt = sanityData?.image?.caption
         ? sanityData.image.caption.toString()
@@ -20,9 +20,9 @@ export const PortfolioCardSanity = ({
                         tab:aspect-[360/300] pc:aspect-[540/350]  
                         pc:w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428] deskxl:max-w-[668px] bg-CTAGradientLight dark:bg-CTAGradient"
         >
-            {sanityData.image?.asset ? (
+            {sanityData.image?.image.asset ? (
                 <Image
-                    src={sanityData.image.asset.toString()}
+                    src={sanityData.image.image.asset.toString()}
                     width={540}
                     height="0"
                     alt={alt}

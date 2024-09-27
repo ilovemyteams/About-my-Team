@@ -1,9 +1,8 @@
 import { useTranslations } from "next-intl";
 
-import { HomePageProps } from "@/types/pageProps";
-
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { HomePageProps } from "@/types/sanityDataPropsTypes";
 
 export const HeroInfo = ({ data }: HomePageProps) => {
     const getTranslation = useTranslations();

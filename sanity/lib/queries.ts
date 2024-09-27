@@ -4,14 +4,18 @@ export const homePageQuery = groq`
   *[_type == "home"][0]{
   ...,
   hero {
-  ...,
-    "title": title[_key == $language][0].value
+  
+    "title": title[_key == $language][0].value,
+    "portfolioSliderProp": portfolioSlider[]->{"title": title[_key == $language][0].value, 
+    image {"caption":caption[_key == $language][0].value, image {"asset": asset->url}},
+    "category":category->categoryName[_key == $language][0].value,
+    _id}
   }
 }`;
 
 export const CTAQuery = groq`
  *[_type == "home"][0]{
- ctaSectionWriteUs {"title": title[_key == $language][0].value}, 
+    ctaSectionWriteUs {"title": title[_key == $language][0].value}, 
     ctaSectionJoinUs {"title": title[_key == $language][0].value}, 
     ctaSectionOrder {"title": title[_key == $language][0].value, 
     "description": description[_key == $language][0].value[0].children[0].text}
