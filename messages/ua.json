@@ -126,7 +126,7 @@
         "allProjects": "Всі проєкти",
         "allQuestions": "Всі питання",
         "share": "Поділитися",
-        "buyMeACoffe": "Пригостити кавою",
+        "buyMeACoffee": "Пригостити кавою",
         "learnMore": "Дізнатися більше",
         "goBack": "Назад",
         "writeUs": "написати",
@@ -259,7 +259,8 @@
     },
     "Breadcrumbs": {
         "breadcrumbItemHome": "Головна",
-        "breadcrumbItemAbout": "Про нас"
+        "breadcrumbItemAbout": "Про нас",
+        "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
         "titleCEO": "",
