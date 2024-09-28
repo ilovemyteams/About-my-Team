@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { ImageResponse } from "next/og";
+import { useLocale } from "next-intl";
+
+import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
-import { useLocale } from "next-intl";
-import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
 
 export const alt = "Member profile image";
 
