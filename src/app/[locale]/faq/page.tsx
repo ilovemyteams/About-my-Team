@@ -19,9 +19,9 @@ export async function generateMetadata({
         alternates: {
             canonical: "/faq",
             languages: {
-                en: "/en",
-                pl: "/pl",
-                ua: "/",
+                en: "/en/faq",
+                pl: "/pl/faq",
+                ua: "/faq",
             },
         },
         title: getTranslation("titleCEO"),
