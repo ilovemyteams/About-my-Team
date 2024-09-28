@@ -23,9 +23,9 @@ export async function generateMetadata({
         alternates: {
             canonical: "/about",
             languages: {
-                en: "/en",
-                pl: "/pl",
-                ua: "/",
+                en: "/en/about",
+                pl: "/pl/about",
+                ua: "/about",
             },
         },
         title: getTranslation("titleCEO"),
