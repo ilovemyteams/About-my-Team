@@ -1,7 +1,7 @@
 {
     "Home": {
         "title": "The team that cares about your needs",
-        "description": "We know how to heal business pain points and solve complex challenges. We will help you meet your business needs and achieve new goals with modern digital tools and creative problem-solving approaches."
+        "description": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
         "heroInfoText": "Team that takes care of Your needs",
@@ -217,8 +217,8 @@
         "button": "ok"
     },
     "AboutPage": {
-        "titleCEO": "Our goal is to create amazing digital products together with the perfect team",
-        "descriptionCEO": "Creating something unique is a challenge, but it's also extremely exciting. We are inspired to develop unique designs, look for creative solutions, and implement the best practices in the industry. Our team focuses on delivering high quality digital products and providing personalized support to each client.",
+        "titleCEO": "Our goal is to create amazing digital products",
+        "descriptionCEO": "Creating something unique is a challenge and a passion. We develop designs, implement creative solutions, provide quality and personalized support",
         "title": "About ",
         "titleAccent": "us",
         "contentItem1": "about the founder",
@@ -267,8 +267,8 @@
         "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
-        "titleCEO": "",
-        "descriptionCEO": "",
+        "titleCEO": "Answers to your questions in one place",
+        "descriptionCEO": "Not sure what to choose: a website, landing page, marketplace, or online store? Get advice on costs, timelines, SEO, and all you need for success and profit",
         "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
     },
     "UnderConstruction": {
