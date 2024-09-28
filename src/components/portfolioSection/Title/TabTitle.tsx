@@ -11,7 +11,7 @@ export const TabTitle = ({
     if (!value) return null;
 
     return (
-        <div className="hidden tab:block desk:hidden">
+        <div className="hidden tab:block desk:hidden tab:w-[70%]">
             <PortableText value={value} components={myPortableTextComponents} />
         </div>
     );

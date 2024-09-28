@@ -35,7 +35,7 @@ export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
                         </h3>
                         {URL?.url && <GoToSiteLink siteLink={URL.url} />}
                     </div>
-                    <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight mb-4 tab:mb-3 pc:mb-[18px]">
+                    <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight mb-4 tab:mb-3 pc:mb-[18px] uppercase">
                         {category}
                     </p>
 
@@ -46,7 +46,7 @@ export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
                                     return (
                                         <div
                                             key={index}
-                                            className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
+                                            className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey first-letter:uppercase"
                                         >
                                             {stages}
                                         </div>
@@ -59,7 +59,7 @@ export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
                             stages.map((stages, index) => (
                                 <div
                                     key={index}
-                                    className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey"
+                                    className="text-xs pc:text-base text-purple-200 dark:text-grey px-1 py-[4.5px] tab:px-2 tab:py-[8.5px] pc:px-3 pc:py-[6px] border border-purple-200 dark:border-grey first-letter:uppercase"
                                 >
                                     {stages}
                                 </div>
