@@ -15,7 +15,6 @@ export const PortfolioSection = ({
     const { anchorId, subtitle, title, portfolioSliderData } =
         data?.portfolioHome || {};
 
-    title ? console.log("PortfolioSe", data?.portfolioHome.title) : "";
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     return (
         <Section id={anchorId} className="relative">
