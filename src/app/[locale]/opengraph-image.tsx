@@ -10,28 +10,16 @@ export default async function Image({
     params: { notFound: string[] | []; locale: string };
 }) {
     const getTranslation = useTranslations();
+    console.log("notFoiund =", params.notFound);
 
-    if (params.notFound.length > 0) {
-        return new ImageResponse(
-            (
-                <div>
-                    <img
-                        src="/images/404.jpeg"
-                        alt={getTranslation("NotFound.title")}
-                    />
-                </div>
-            )
-        );
-    }
+    const src =
+        params.notFound.length > 0
+            ? "/images/404.jpeg"
+            : "/images/opengraph-image.jpeg";
+    const alt =
+        params.notFound.length > 0
+            ? getTranslation("NotFound.title")
+            : getTranslation("Home.title");
 
-    return new ImageResponse(
-        (
-            <div>
-                <img
-                    src="/images/opengraph-image.jpeg"
-                    alt={getTranslation("Home.title")}
-                />
-            </div>
-        )
-    );
+    return new ImageResponse(<img src={src} alt={alt} />);
 }
