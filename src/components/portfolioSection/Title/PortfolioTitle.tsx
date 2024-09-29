@@ -29,7 +29,7 @@ export const PortfolioTitle = ({
                             value={title[0]}
                             components={myPortableTextComponents}
                         />
-                        <div className="tab:-ml-[100px] pc:ml-0">
+                        <div className="tab:-ml-[100px]">
                             <PortableText
                                 value={title[1]}
                                 components={myPortableTextComponents}
