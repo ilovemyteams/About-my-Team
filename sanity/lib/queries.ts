@@ -16,7 +16,7 @@ export const homePageQuery = groq`
 
 export const homePortfolioQuery = groq`
   *[_type == "home"][0]{
-  portfolioHome{"title": title[_key == $language][0].value[0], 
+  portfolioHome{"title": title[_key == $language][0].value, 
     "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,
     "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
     image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},

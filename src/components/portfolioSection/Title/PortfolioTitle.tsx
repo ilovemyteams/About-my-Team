@@ -15,6 +15,7 @@ export const PortfolioTitle = ({
     title: PortfolioTitleProps[] | undefined;
 }) => {
     const getTranslation = useTranslations("Portfolio");
+    title ? console.log("title[0]", title[0]) : "";
 
     return (
         <div>
@@ -25,9 +26,15 @@ export const PortfolioTitle = ({
                 {title && (
                     <div className="tab:w-[70%]">
                         <PortableText
-                            value={title}
+                            value={title[0]}
                             components={myPortableTextComponents}
                         />
+                        <div className="tab:-ml-[100px] pc:ml-0">
+                            <PortableText
+                                value={title[1]}
+                                components={myPortableTextComponents}
+                            />
+                        </div>
                     </div>
                 )}
             </TitleWrapper>
