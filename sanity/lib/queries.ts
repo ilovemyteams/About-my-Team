@@ -47,3 +47,10 @@ export const projectQuery = groq`
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
 `;
+
+// *[_type == "home"][0]{servicesHome{
+//   ..., "title": title[_key == $language][0].value,
+//   "description": description[_key == $language][0].value,
+//     "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,
+//     "servicesList":servicesList
+// }}
