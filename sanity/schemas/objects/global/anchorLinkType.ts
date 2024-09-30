@@ -1,6 +1,7 @@
 import { defineType } from "sanity";
-import { InternationalizedArrayString } from "@/types/sanity.types";
+
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { InternationalizedArrayString } from "@/types/sanity.types";
 
 export const anchorLinkType = defineType({
     title: "Anchor Link",

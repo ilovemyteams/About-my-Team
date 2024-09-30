@@ -9,7 +9,7 @@ import { HeroInfo } from "./HeroInfo";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 
 export const HeroSection = ({ data }: HomeFullProps) => {
-    const projects = data?.hero?.portfolioSliderProp;
+    const projects = data?.hero?.portfolioSliderData;
 
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
