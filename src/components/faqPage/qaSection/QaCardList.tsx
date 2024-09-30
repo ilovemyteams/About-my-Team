@@ -1,30 +1,30 @@
-import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
-import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
+import { questionsData } from "@/src/mockedData/questionsData";
+import type { LocaleType } from "@/types/LocaleType";
 
 import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";
 
-const IMAGE = normalizeGoogleDriveImgUrls(
-    "https://drive.google.com/file/d/1ThWQ10FdymqFnc0ELdC_O4892o-eaK9m/view?usp=drive_link"
-);
-
 export const QaCardList = () => {
     //current version of this component
     //is for testing purposes only
-    const getTranslation = useTranslations("Q&A");
-    const ITER: number[] = [1, 2, 3, 4, 5];
+    const locale = useLocale() as LocaleType;
 
     return (
         <Section className="flex flex-col gap-3">
-            {ITER.map(i => (
+            {questionsData.map((item, i) => (
                 <QaCard
                     key={i}
-                    data={{ id: i, image: IMAGE, likes: i }}
+                    data={{
+                        id: i,
+                        image: item.data.image,
+                        likes: i,
+                    }}
                     localizationData={{
-                        questionText: getTranslation(`question${i}`),
-                        answerText: getTranslation(`answer${i}`),
-                        imageAltText: "Illustration",
+                        questionText: item[locale].questionText,
+                        answerText: item[locale].answerText,
+                        imageAltText: item[locale].imageAltText,
                     }}
                 />
             ))}
