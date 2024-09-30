@@ -53,6 +53,8 @@ export const buttonType = defineField({
         defineField({
             name: "internalSitePageLink",
             title: "Internal Site Page Link",
+            description:
+                "To select an existing page, click the text field and choose from the list. To create a new page, click the 'Create' button.",
             type: "reference",
             to: [{ type: "page" }],
             hidden: ({ parent }) => parent?.buttonLink !== "pageBuilder",
