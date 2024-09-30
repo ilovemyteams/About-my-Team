@@ -25,15 +25,25 @@ export const PortfolioTitle = ({
                 </SmallPageTitle>
                 {title && (
                     <div className="tab:w-[70%]">
-                        <PortableText
-                            value={title[0]}
-                            components={myPortableTextComponents}
-                        />
-                        <div className="tab:-ml-[100px]">
+                        {title[0] && (
                             <PortableText
-                                value={title[1]}
+                                value={title[0]}
                                 components={myPortableTextComponents}
                             />
+                        )}
+                        <div className="tab:-ml-[100px]">
+                            {title[1] && (
+                                <PortableText
+                                    value={title[1]}
+                                    components={myPortableTextComponents}
+                                />
+                            )}
+                            {title[2] && (
+                                <PortableText
+                                    value={title[2]}
+                                    components={myPortableTextComponents}
+                                />
+                            )}
                         </div>
                     </div>
                 )}
