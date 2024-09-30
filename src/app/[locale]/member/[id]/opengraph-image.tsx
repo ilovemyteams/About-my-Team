@@ -15,8 +15,8 @@ export default async function Image({ params }: { params: { id: string } }) {
     if (!member) {
         return new ImageResponse(
             (
-                <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                    <IconProfile className=" text-purple-strokeLight dark:text-purple-stroke" />
+                <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
+                    <img src="/images/profile.png" alt="Person not found" />
                 </div>
             )
         );
@@ -25,8 +25,11 @@ export default async function Image({ params }: { params: { id: string } }) {
     return new ImageResponse(
         (
             <div>
-                <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                    <IconProfile className=" text-purple-strokeLight dark:text-purple-stroke" />
+                <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
+                    <img
+                        src="/images/profile.png"
+                        alt={member[locale as LocaleType]?.name}
+                    />
                 </div>
                 <p>{member[locale as LocaleType]?.name}</p>
                 <p className=" uppercase">{member.data.position}</p>
