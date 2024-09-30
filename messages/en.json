@@ -1,7 +1,7 @@
 {
     "Home": {
-        "title": "The team that cares about your needs",
-        "description": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
+        "titleCEO": "The team that cares about your needs",
+        "descriptionCEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
         "heroInfoText": "Team that takes care of Your needs",

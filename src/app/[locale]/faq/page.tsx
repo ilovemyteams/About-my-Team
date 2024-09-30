@@ -1,37 +1,18 @@
-import { getTranslations } from "next-intl/server";
-
 import { PopUpAskUs } from "@/src/components/faqPage/popUpAskUs/PopUpAskUs";
 import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
 import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
+import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
     params: { locale },
 }: {
     params: { locale: string };
 }) {
-    const getTranslation = await getTranslations({
+    return generatePageMetadata({
         locale,
         namespace: "FaqPage",
+        canonical: "/faq",
     });
-
-    return {
-        metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-        alternates: {
-            canonical: "/faq",
-            languages: {
-                en: "/en/faq",
-                pl: "/pl/faq",
-                ua: "/faq",
-            },
-        },
-        title: getTranslation("titleCEO"),
-        description: getTranslation("descriptionCEO"),
-        openGraph: {
-            description: getTranslation("descriptionCEO"),
-            title: getTranslation("titleCEO"),
-            type: "website",
-        },
-    };
 }
 
 export default function FAQ() {
