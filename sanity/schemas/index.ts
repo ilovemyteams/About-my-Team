@@ -102,7 +102,6 @@ const documents: DocumentDefinition[] = [colorThemeType, pageType];
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";
 import { servicesHomeType } from "./objects/module/servicesHomeType";
-import { aboutUsType } from "./singletons/aboutUsType";
 import { faqType } from "./singletons/faqType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
@@ -122,7 +121,6 @@ const singletons: DocumentDefinition[] = [
     projectType,
     reviewType,
     faqType,
-    aboutUsType,
     siteCategoryType,
     serviceType,
     specialistType,
