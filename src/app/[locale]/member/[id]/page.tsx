@@ -6,6 +6,7 @@ import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/Modal/Me
 import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
+import { getTranslations } from "next-intl/server";
 
 interface MemberPageProps {
     params: {
@@ -20,6 +21,11 @@ export async function generateMetadata({
 }) {
     const member = membersData.find(member => member.data.id === id);
     const memberName = member ? member[locale as LocaleType]?.name : "Name";
+    const memberAbout = member ? member[locale as LocaleType]?.about : "";
+    const getTranslation = await getTranslations({
+        locale,
+        namespace: "MemberCardModal",
+    });
 
     return {
         metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
@@ -34,7 +40,7 @@ export async function generateMetadata({
         title: `${memberName}`,
         description: `${member?.data.position}`,
         openGraph: {
-            description: `${member?.data.position}`,
+            description: `${member?.data.position} ${getTranslation("about")}: ${memberAbout}`,
             title: `${memberName}`,
         },
     };
