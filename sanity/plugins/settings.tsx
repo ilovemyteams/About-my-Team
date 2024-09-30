@@ -21,7 +21,7 @@ async function nestedContentPageList(
         { id }
     );
 
-    const englishTitle = getEnglishTitleFromBlocks(page.title);
+    const englishTitle = getEnglishTitleFromBlocks(page?.title);
 
     const hasChildren = await getClient().fetch(
         `count(*[
@@ -33,7 +33,7 @@ async function nestedContentPageList(
 
     if (hasChildren) {
         return S.documentTypeList("page")
-            .title(`${englishTitle} and Nested Pages List`)
+            .title(`Page ${englishTitle} and nested pages list`)
             .filter(
                 `(
                 $id == _id || "drafts.${id}" == _id ||
@@ -114,7 +114,7 @@ export const pageStructure = (
             .schemaType("page")
             .child(
                 S.documentTypeList("page")
-                    .title("Top-level Pages List")
+                    .title("Top-level pages list")
                     .filter('!defined(parentPage) && _type == "page"')
                     .child(id => nestedContentPageList(id, S))
             );

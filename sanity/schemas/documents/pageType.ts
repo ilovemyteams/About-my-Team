@@ -38,8 +38,7 @@ export const pageType = defineType({
                         .replace(/\s+/g, "-")
                         .slice(0, SLUG_MAX_LENGTH - 1),
             },
-            validation: Rule =>
-                Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)).required(),
+            validation: Rule => Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)),
         }),
         defineField({
             name: "parentPage",

@@ -11,9 +11,12 @@ import { getEnglishTitleFromBlocks } from "./getEnglishTitleFromBlocks";
 export const validatePageSlug =
     (slugMaxLength: number) =>
     (value: Slug | undefined, context: ValidationContext) => {
-        const parent = context?.parent as Page;
-        const currentValue = value?.current;
+        if (!value) {
+            return "The Page Slug is required.";
+        }
 
+        const currentValue = value?.current;
+        const parent = context?.parent as Page;
         const enTitle = getEnglishTitleFromBlocks(
             parent.title as InternationalizedArrayPortableColorTitle
         );
@@ -24,10 +27,6 @@ export const validatePageSlug =
 
         if (currentValue !== expectedSlug) {
             return "The Page Slug must match the English title. Regenerate Page Slug.";
-        }
-
-        if (!value) {
-            return "The Page Slug is required.";
         }
 
         return true;
