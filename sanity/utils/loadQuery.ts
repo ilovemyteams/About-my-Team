@@ -4,7 +4,12 @@ import * as queryStore from "@sanity/react-loader";
 import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
-import { Home, Project, Settings } from "@/types/sanity.types";
+import {
+    Home,
+    HomeServicesQueryResult,
+    Project,
+    Settings,
+} from "@/types/sanity.types";
 import { HomeProps, PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
 
 import { readToken } from "../lib/api";
@@ -12,6 +17,7 @@ import {
     CTAQuery,
     homePageQuery,
     homePortfolioQuery,
+    homeServicesQuery,
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
@@ -91,6 +97,14 @@ export function loadProjects(language = "ua") {
         projectQuery,
         { language },
         { next: { tags: ["project"] } }
+    );
+}
+
+export function loadServices(language = "ua") {
+    return loadQuery<HomeServicesQueryResult>(
+        homeServicesQuery,
+        { language },
+        { next: { tags: ["home"] } }
     );
 }
 
