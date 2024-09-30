@@ -3,12 +3,13 @@
  */
 import { type DocumentDefinition } from "sanity";
 import {
-    ListItemBuilder,
-    type StructureResolver,
-    type StructureBuilder,
     type DocumentBuilder,
     type DocumentListBuilder,
+    ListItemBuilder,
+    type StructureBuilder,
+    type StructureResolver,
 } from "sanity/structure";
+
 import { getClient } from "../lib/client";
 import { getEnglishTitleFromBlocks } from "../utils/getEnglishTitleFromBlocks";
 
