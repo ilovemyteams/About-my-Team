@@ -112,15 +112,18 @@ export default function LocaleLayout({
                     >
                         <Providers>
                             <BackgroundImages />
-                            <Header />
-                            <main>
-                                {modal}
-                                <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px]">
-                                    <BackgroundFigures />
-                                    {children}
-                                </div>
-                            </main>
-                            <Footer />
+                            <div className="min-h-screen flex flex-col">
+                                <Header />
+                                <main className="flex-auto min-h-full">
+                                    {modal}
+                                    <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
+                                        <BackgroundFigures />
+                                        {children}
+                                    </div>
+                                </main>
+                                <Footer />
+                            </div>
+
                             <ScrollToTopButton />
                             <CookiesComponent />
                         </Providers>
