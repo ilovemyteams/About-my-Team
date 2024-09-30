@@ -10,7 +10,7 @@ export const aboutUsItemType = defineField({
     fields: [
         defineField({
             name: "AboutUs",
-            description: "About us short description",
+            description: "About us item information",
             type: "internationalizedArrayString",
             title: "About us Item",
         }),
@@ -50,7 +50,7 @@ export const aboutUsHomeSectionType = defineField({
             title: "Title of the section. Please, choose proper color of the text for each language.",
         }),
         defineField({
-            name: "shortDescription",
+            name: "aboutUsItemInfo",
             type: "array",
             of: [defineArrayMember({ type: "aboutUsItem" })],
         }),
