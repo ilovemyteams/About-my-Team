@@ -1,9 +1,63 @@
 /**
  * This plugin contains all the logic for setting up the singletons
  */
-
 import { type DocumentDefinition } from "sanity";
-import { ListItemBuilder, type StructureResolver } from "sanity/structure";
+import {
+    ListItemBuilder,
+    type StructureResolver,
+    type StructureBuilder,
+    type DocumentBuilder,
+    type DocumentListBuilder,
+} from "sanity/structure";
+import { getClient } from "../lib/client";
+import { getEnglishTitleFromBlocks } from "../utils/getEnglishTitleFromBlocks";
+
+async function nestedContentPageList(
+    id: string,
+    S: StructureBuilder
+): Promise<DocumentListBuilder | DocumentBuilder> {
+    const page = await getClient().fetch(
+        `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
+        { id }
+    );
+
+    const englishTitle = getEnglishTitleFromBlocks(page.title);
+
+    const hasChildren = await getClient().fetch(
+        `count(*[
+          parentPage._ref == $id || 
+          parentPage._ref == "drafts.${id}"
+        ]) > 0`,
+        { id }
+    );
+
+    if (hasChildren) {
+        return S.documentTypeList("page")
+            .title(`${englishTitle} and Nested Pages List`)
+            .filter(
+                `(
+                $id == _id || "drafts.${id}" == _id ||
+                $id == parentPage._ref || "drafts.${id}" == parentPage._ref ||
+                $id == parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage._ref ||
+                $id == parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage._ref ||
+                $id == parentPage.parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage.parentPage._ref
+            )`
+            )
+            .params({ id })
+            .child((id: string) =>
+                id === page?._id || `drafts.${id}` === page?._id
+                    ? S.document()
+                          .schemaType("page")
+                          .views([S.view.form()])
+                          .id(id)
+                    : nestedContentPageList(id, S)
+            );
+    }
+
+    // If no children, just return the document form view
+
+    return S.document().schemaType("page").views([S.view.form()]).id(id);
+}
 
 const hiddenDocTypes = (listItem: ListItemBuilder) => {
     const id = listItem.getId();
@@ -58,7 +112,12 @@ export const pageStructure = (
             .id("pages-list")
             .title("Pages")
             .schemaType("page")
-            .child(S.documentTypeList("page").title("Pages List"));
+            .child(
+                S.documentTypeList("page")
+                    .title("Top-level Pages List")
+                    .filter('!defined(parentPage) && _type == "page"')
+                    .child(id => nestedContentPageList(id, S))
+            );
 
         // Goes through all of the singletons that were provided and translates them into something the
         // Desktool can understand

@@ -11,7 +11,7 @@ const SLUG_MAX_LENGTH = 50;
 export const pageType = defineType({
     name: "page",
     type: "document",
-    title: "Pages",
+    title: "Page",
     icon: DocumentsIcon,
     fields: [
         defineField({
@@ -41,6 +41,14 @@ export const pageType = defineType({
             validation: Rule =>
                 Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)).required(),
         }),
+        defineField({
+            name: "parentPage",
+            title: "Parent page (optional)",
+            description: "Select parent page only if current page is nested",
+            type: "reference",
+            to: [{ type: "page" }],
+        }),
+
         defineField({
             name: "pageBuilder",
             type: "array",
