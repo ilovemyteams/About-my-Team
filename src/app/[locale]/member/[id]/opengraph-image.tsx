@@ -6,6 +6,7 @@ import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
 export const alt = "Member profile image";
+export const contentType = "image/jpg";
 
 export default async function Image({ params }: { params: { id: string } }) {
     const member = membersData.find(member => member.data.id === params.id);

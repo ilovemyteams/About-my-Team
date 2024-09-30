@@ -6,6 +6,7 @@ import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
 export const alt = "Member profile image";
+export const contentType = "image/jpg";
 
 export default async function Image({ params }: { params: { id: string } }) {
     const member = membersData.find(member => member.data.id === params.id);
@@ -15,7 +16,7 @@ export default async function Image({ params }: { params: { id: string } }) {
         return new ImageResponse(
             (
                 <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
-                    <img src="/images/profile.png" alt="Person not found" />
+                    <img src="/images/profile.jpg" alt="Person not found" />
                 </div>
             )
         );
@@ -26,7 +27,7 @@ export default async function Image({ params }: { params: { id: string } }) {
             <div>
                 <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
                     <img
-                        src="/images/profile.jpg"
+                        src="/images/profile.png"
                         alt={member[locale as LocaleType]?.name}
                     />
                 </div>
