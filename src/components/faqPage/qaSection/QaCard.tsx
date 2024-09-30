@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -34,9 +33,9 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
             <Image
                 src={image}
                 alt={imageAltText}
-                width="300"
-                height="200"
-                className="object-cover w-auto tab:w-[300px] h-[200px] tab:my-auto"
+                width={300}
+                height={200}
+                className="h-[200px] aspect-[3/2]"
             />
 
             <div className="flex flex-col tab:pl-3 pc:px-3">

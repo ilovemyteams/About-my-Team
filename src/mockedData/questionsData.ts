@@ -10,7 +10,7 @@ type QAItemTextTranslation = {
     imageAltText: string;
 };
 
-type QAItem = {
+export type QAItem = {
     data: QAData;
     ua: QAItemTextTranslation;
     pl: QAItemTextTranslation;
@@ -21,7 +21,7 @@ export const questionsData: QAItem[] = [
     {
         data: {
             slug: "i-need-a-website-where-should-i-start",
-            image: "https://drive.google.com/thumbnail?id=1JIxZDcRAT7e0ajYUsdrCm8xFZ10x5NpT",
+            image: "https://drive.google.com/thumbnail?id=15mebCQZv4FAgQYinrxpVGDljlHsSWflz",
             likes: 0,
         },
         ua: {
@@ -46,7 +46,7 @@ export const questionsData: QAItem[] = [
     {
         data: {
             slug: "what-to-choose-a-landing-page-or-a-website",
-            image: "https://drive.google.com/thumbnail?id=18qhLkiTeWqUhlKkpob0VqwslHIQ-20zu",
+            image: "https://drive.google.com/thumbnail?id=1o9hzaeKZBawBuDxNSK4SUXpgoG8YiaGN",
             likes: 0,
         },
         ua: {
@@ -71,7 +71,7 @@ export const questionsData: QAItem[] = [
     {
         data: {
             slug: "what-are-the-terms-of-the-development-of-the-fully-functional-website",
-            image: "https://drive.google.com/thumbnail?id=1Jzk3HmvkAUi6xSAyYsqex_JJpFx9PTCK",
+            image: "https://drive.google.com/thumbnail?id=1jnZ9vPmhZchmQY6eeJklz_8bvQM2a9b4",
             likes: 0,
         },
         ua: {
@@ -98,7 +98,7 @@ export const questionsData: QAItem[] = [
     {
         data: {
             slug: "how-much-does-development-cost",
-            image: "https://drive.google.com/thumbnail?id=1uJEhuWuw4GYQ5ElQA7q1gkktPJ6QDgO7",
+            image: "https://drive.google.com/thumbnail?id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
             likes: 0,
         },
         ua: {
@@ -125,7 +125,7 @@ export const questionsData: QAItem[] = [
     {
         data: {
             slug: "can-i-choose-which-team-will-work-on-my-order",
-            image: "https://drive.google.com/thumbnail?id=1NeKNTROe7P8OGQkCWkZ3cxsZq_gB0UpK",
+            image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
             likes: 0,
         },
         ua: {
