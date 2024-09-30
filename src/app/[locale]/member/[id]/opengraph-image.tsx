@@ -15,7 +15,7 @@ export default async function Image({ params }: { params: { id: string } }) {
         return new ImageResponse(
             (
                 <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
-                    <img src="/images/profile.png" alt="Person not found" />
+                    <img src="/images/profile.jpg" alt="Person not found" />
                 </div>
             )
         );

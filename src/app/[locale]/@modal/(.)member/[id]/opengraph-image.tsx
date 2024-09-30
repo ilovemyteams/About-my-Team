@@ -26,7 +26,7 @@ export default async function Image({ params }: { params: { id: string } }) {
             <div>
                 <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientDark">
                     <img
-                        src="/images/profile.png"
+                        src="/images/profile.jpg"
                         alt={member[locale as LocaleType]?.name}
                     />
                 </div>
