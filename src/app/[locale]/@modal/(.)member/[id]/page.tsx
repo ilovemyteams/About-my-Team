@@ -5,7 +5,6 @@ import { MemberCardModalBody } from "@/src/components/ourTeamSection/Modal/Membe
 import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/Modal/MemberCardModalBodyTab";
 import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
-import { LocaleType } from "@/types/LocaleType";
 
 interface MemberPageProps {
     params: {
