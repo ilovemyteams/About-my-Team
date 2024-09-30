@@ -5,6 +5,19 @@ import { PresentationSection } from "@/src/components/aboutPage/PresentationSect
 import { QuoteSection } from "@/src/components/aboutPage/QuoteSection";
 import { TeamSection } from "@/src/components/aboutPage/TeamSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { generatePageMetadata } from "@/src/utils/generateMetaData";
+
+export async function generateMetadata({
+    params: { locale },
+}: {
+    params: { locale: string };
+}) {
+    return generatePageMetadata({
+        locale,
+        namespace: "AboutPage",
+        canonical: "/about",
+    });
+}
 
 export default function About() {
     return (

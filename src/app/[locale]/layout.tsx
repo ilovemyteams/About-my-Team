@@ -3,7 +3,6 @@ import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { getTranslations } from "next-intl/server";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
@@ -12,6 +11,7 @@ import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import { Providers } from "./providers";
@@ -53,25 +53,11 @@ export async function generateMetadata({
 }: {
     params: { locale: string };
 }) {
-    const getTranslation = await getTranslations({ locale, namespace: "Home" });
-
-    return {
-        metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-        alternates: {
-            canonical: "/",
-            languages: {
-                en: "/en",
-                pl: "/pl",
-                ua: "/ua",
-            },
-        },
-        title: getTranslation("title"),
-        description: getTranslation("description"),
-        openGraph: {
-            description: getTranslation("description"),
-            type: "website",
-        },
-    };
+    return generatePageMetadata({
+        locale,
+        namespace: "Home",
+        canonical: "/",
+    });
 }
 
 export default function LocaleLayout({
@@ -91,17 +77,8 @@ export default function LocaleLayout({
                 {IS_SHOWN_TO_SEARCH_ENGINES && (
                     <meta name="robots" content="noindex,nofollow" />
                 )}
-                <meta
-                    name="title"
-                    property="og:title"
-                    content="i love my team"
-                />
                 <meta name="type" property="og:type" content="website" />
-                <meta
-                    name="image"
-                    property="og:image"
-                    content="/images/imageForSharing.jpeg"
-                />
+                <meta property="og:image" content="<generated>" />
             </head>
             <GoogleAnalytics gaId={GA_TAG} />
             <NextIntlClientProvider locale={locale} messages={messages}>
