@@ -12,33 +12,6 @@ interface MemberPageProps {
     };
 }
 
-// export async function generateMetadata({
-//     params: { locale, id },
-// }: {
-//     params: { locale: string; id: string };
-// }) {
-//     const member = membersData.find(member => member.data.id === id);
-//     const memberName = member ? member[locale as LocaleType]?.name : "Name";
-
-//     return {
-//         metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
-//         alternates: {
-//             canonical: `/member/${id}`,
-//             languages: {
-//                 en: `/en/member/${id}`,
-//                 pl: `/pl/member/${id}`,
-//                 ua: `/member/${id}`,
-//             },
-//         },
-//         title: `${memberName}`,
-//         description: `${member?.data.position}`,
-//         openGraph: {
-//             description: `${member?.data.position}`,
-//             title: `${memberName}`,
-//         },
-//     };
-// }
-
 const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     const displayedMember = membersData.find(
         member => member.data.id === params.id
