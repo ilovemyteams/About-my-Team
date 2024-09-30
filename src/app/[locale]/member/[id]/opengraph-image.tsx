@@ -25,10 +25,9 @@ export default async function Image({ params }: { params: { id: string } }) {
     return new ImageResponse(
         (
             <div>
-                <img
-                    src={member.data.imageURL}
-                    alt={member[locale as LocaleType]?.name}
-                />
+                <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
+                    <IconProfile className=" text-purple-strokeLight dark:text-purple-stroke" />
+                </div>
                 <p>{member[locale as LocaleType]?.name}</p>
                 <p className=" uppercase">{member.data.position}</p>
             </div>
