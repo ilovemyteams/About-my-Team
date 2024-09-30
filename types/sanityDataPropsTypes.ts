@@ -17,11 +17,19 @@ export interface HomePageProps {
 }
 export type HomePageParamsProps = { params: { locale: string } };
 
+export type LinkType = "linkExternal" | "linkInternal";
+
 export type PortfolioSliderProps = {
     title: string;
-    image: { caption: string; image: { asset: string } };
-    category: string;
+    image?: { caption: string; asset: string };
+    category?: string;
     _id: string;
+    URL?: {
+        url: string;
+        newWindow: boolean;
+        _type: LinkType;
+    };
+    stages?: string[];
 };
 
 export type HeroHomeProps = {
@@ -31,7 +39,7 @@ export type HeroHomeProps = {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    portfolioSliderProp: PortfolioSliderProps[];
+    portfolioSliderData: PortfolioSliderProps[];
     portfolioSlider?: Array<{
         _ref: string;
         _type: "reference";
@@ -39,6 +47,32 @@ export type HeroHomeProps = {
         _key: string;
         [internalGroqTypeReferenceTo]?: "project";
     }>;
+};
+
+export type ChildrenProps = {
+    marks?: Array<string>;
+    text?: string;
+    _type: "span";
+    _key: string;
+};
+
+export type PortfolioTitleProps = {
+    children?: ChildrenProps[];
+    style?: "normal" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "blockquote";
+    listItem?: never;
+    markDefs?: null;
+    level?: number;
+    _type: "block";
+    _key: string;
+};
+
+export type PortfolioHomeProps = {
+    portfolioHome: {
+        title: PortfolioTitleProps[];
+        subtitle: string;
+        anchorId: string;
+        portfolioSliderData: PortfolioSliderProps[];
+    };
 };
 
 export type HomeProps = {

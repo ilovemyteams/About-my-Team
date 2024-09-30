@@ -5,12 +5,13 @@ import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
 import { Home, Project, Settings } from "@/types/sanity.types";
-import { HomeProps } from "@/types/sanityDataPropsTypes";
+import { HomeProps, PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
 
 import { readToken } from "../lib/api";
 import {
     CTAQuery,
     homePageQuery,
+    homePortfolioQuery,
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
@@ -65,6 +66,14 @@ export function loadSettings(language = "ua") {
 export function loadHomePage(language = "ua") {
     return loadQuery<HomeProps | null>(
         homePageQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+
+export function loadHomeProjects(language = "ua") {
+    return loadQuery<PortfolioHomeProps | null>(
+        homePortfolioQuery,
         { language },
         { next: { tags: ["home"] } }
     );

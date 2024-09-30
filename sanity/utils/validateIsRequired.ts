@@ -1,5 +1,6 @@
-import { SUPPORTED_LANGUAGES } from "../constants";
 import { InternationalizedArrayString } from "@/types/sanity.types";
+
+import { SUPPORTED_LANGUAGES } from "../constants";
 
 export const validateIsRequired = (value: InternationalizedArrayString) => {
     if (!value) {

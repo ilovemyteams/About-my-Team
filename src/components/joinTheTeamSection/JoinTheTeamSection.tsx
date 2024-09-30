@@ -1,9 +1,10 @@
 import { useTranslations } from "next-intl";
 
+import { HomePageProps } from "@/types/sanityDataPropsTypes";
+
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { SectionCTA } from "../shared/SectionCTA";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
-import { HomePageProps } from "@/types/sanityDataPropsTypes";
 
 export const JoinTheTeamSection = ({ data }: HomePageProps) => {
     const getTranslation = useTranslations("JoinTheTeam");

@@ -3,13 +3,25 @@ import { groq } from "next-sanity";
 export const homePageQuery = groq`
   *[_type == "home"][0]{
   ...,
+  portfolioHome{ "title": title[_key == $language][0].value},
   hero {
   
     "title": title[_key == $language][0].value,
-    "portfolioSliderProp": portfolioSlider[]->{"title": title[_key == $language][0].value, 
-    image {"caption":caption[_key == $language][0].value, image {"asset": asset->url}},
+    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
+    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
     "category":category->categoryName[_key == $language][0].value,
     _id}
+  }
+}`;
+
+export const homePortfolioQuery = groq`
+  *[_type == "home"][0]{
+  portfolioHome{"title": title[_key == $language][0].value, 
+    "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,
+    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
+    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
+    "category":category->categoryName[_key == $language][0].value,
+    _id, stages, URL}
   }
 }`;
 
