@@ -15,12 +15,14 @@ interface OneTableItemInfoProps {
     itemNumber?: number;
     textClassName?: string;
     isShowMoreButton?: boolean;
+    isNumberShown?: boolean;
 }
 export const OneTableItemInfo = ({
     children,
     title,
     isIconShown = true,
     itemNumber,
+    isNumberShown,
     textClassName,
     isShowMoreButton = true,
 }: OneTableItemInfoProps) => {
@@ -71,7 +73,7 @@ export const OneTableItemInfo = ({
                         tab:h-[210px] pc:h-[270px] tab:px-0 pc:px-4 py-6 overflow-hidden 
                         deskxl:gap-4"
         >
-            <ItemNumber itemNumber={itemNumber} />
+            {isNumberShown && <ItemNumber itemNumber={itemNumber} />}
             <div className="flex gap-2 items-center">
                 {isIconShown && (
                     <div className="w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>

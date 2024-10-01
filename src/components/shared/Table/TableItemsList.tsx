@@ -7,6 +7,7 @@ interface TableItemsProps {
     isIconShown?: boolean;
     textClassName?: string;
     isShowMoreButton?: boolean;
+    isNumberShown?: boolean;
     sectionClassName?: string;
 }
 
@@ -17,6 +18,7 @@ export const TableItemsList = ({
     textClassName,
     isShowMoreButton,
     sectionClassName,
+    isNumberShown,
 }: TableItemsProps) => {
     if (!titleList || !textList) return null;
 
@@ -35,6 +37,7 @@ export const TableItemsList = ({
                         title={item || "You forgot the title"}
                         isIconShown={isIconShown}
                         itemNumber={index + 1}
+                        isNumberShown={isNumberShown}
                         textClassName={textClassName}
                         isShowMoreButton={isShowMoreButton}
                     >

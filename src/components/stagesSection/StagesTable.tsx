@@ -14,6 +14,7 @@ export const StagesTable = ({
                 textList={stagesListText || []}
                 titleList={stagesListTitle || []}
                 isIconShown={false}
+                isNumberShown={true}
                 isShowMoreButton={false}
                 textClassName="line-clamp-none max-h-full"
                 sectionClassName="[&:nth-child(5)]:hidden pc:[&:nth-child(5)]:block pc:[&:nth-child(5)]:border-b-0"
