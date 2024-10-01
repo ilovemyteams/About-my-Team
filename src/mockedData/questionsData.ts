@@ -1,6 +1,6 @@
 export type QADataType = {
     slug: string;
-    image?: string;
+    image: string;
     likes: number;
     layout?: number;
     answerHeroImage?: string;

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import React from "react";
 
+import { Question } from "@/src/components/questionPage/QuestionPage";
 import { questionsData } from "@/src/mockedData/questionsData";
 
 interface QuestionPageProps {
@@ -17,7 +18,7 @@ const QuestionPage: React.FC<QuestionPageProps> = ({ params }) => {
         notFound();
     }
 
-    return <div>Question Page</div>;
+    return <Question question={displayedQuestion} />;
 };
 
 export default QuestionPage;
