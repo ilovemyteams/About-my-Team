@@ -39,16 +39,58 @@ export const footerType = defineField({
                 }),
                 defineField({
                     name: "url",
-                    type: "array",
+                    type: "object",
                     title: "Privacy Policy URL",
-                    of: [{ type: "linkExternal" }, { type: "linkInternal" }],
-                    validation: rule =>
-                        rule
-                            .required()
-                            .max(1)
-                            .error(
-                                "You can only add one link (either external or internal)."
-                            ),
+                    fields: [
+                        {
+                            name: "ua",
+                            type: "array",
+                            title: "URL (Ukrainian)",
+                            of: [
+                                { type: "linkExternal" },
+                                { type: "linkInternal" },
+                            ],
+                            validation: rule =>
+                                rule
+                                    .required()
+                                    .max(1)
+                                    .error(
+                                        "You can only add one link (either external or internal) for Ukrainian."
+                                    ),
+                        },
+                        {
+                            name: "en",
+                            type: "array",
+                            title: "URL (English)",
+                            of: [
+                                { type: "linkExternal" },
+                                { type: "linkInternal" },
+                            ],
+                            validation: rule =>
+                                rule
+                                    .required()
+                                    .max(1)
+                                    .error(
+                                        "You can only add one link (either external or internal) for English."
+                                    ),
+                        },
+                        {
+                            name: "pl",
+                            type: "array",
+                            title: "URL (Polish)",
+                            of: [
+                                { type: "linkExternal" },
+                                { type: "linkInternal" },
+                            ],
+                            validation: rule =>
+                                rule
+                                    .required()
+                                    .max(1)
+                                    .error(
+                                        "You can only add one link (either external or internal) for Polish."
+                                    ),
+                        },
+                    ],
                 }),
             ],
             validation: rule => rule.required(),
