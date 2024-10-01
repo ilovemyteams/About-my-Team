@@ -68,29 +68,6 @@ export type Geopoint = {
     alt?: number;
 };
 
-export type Page = {
-    _id: string;
-    _type: "page";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    pageSlug?: Slug;
-    pageBuilder?: Array<
-        | ({
-              _key: string;
-          } & HeroHome)
-        | ({
-              _key: string;
-          } & CallToAction)
-    >;
-    seo?: Seo;
-};
-
 export type ColorTheme = {
     _id: string;
     _type: "colorTheme";
@@ -168,6 +145,35 @@ export type AboutUsItem = {
             _key: string;
         } & InternationalizedArrayStringValue
     >;
+};
+
+export type Page = {
+    _id: string;
+    _type: "page";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayPortableColorTitleValue
+    >;
+    pageSlug?: Slug;
+    parentPage?: {
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        [internalGroqTypeReferenceTo]?: "page";
+    };
+    pageBuilder?: Array<
+        | ({
+              _key: string;
+          } & HeroHome)
+        | ({
+              _key: string;
+          } & CallToAction)
+    >;
+    seo?: Seo;
 };
 
 export type SocialLinks = {
@@ -735,28 +741,12 @@ export type SpecialistCategory = {
 
 export type LinkInternal = {
     _type: "linkInternal";
-    reference?:
-        | {
-              _ref: string;
-              _type: "reference";
-              _weak?: boolean;
-              [internalGroqTypeReferenceTo]?: "home";
-          }
-        | {
-              _ref: string;
-              _type: "reference";
-              _weak?: boolean;
-              [internalGroqTypeReferenceTo]?: "aboutUs";
-          };
-};
-
-export type AboutUs = {
-    _id: string;
-    _type: "aboutUs";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    language?: string;
+    reference?: {
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        [internalGroqTypeReferenceTo]?: "home";
+    };
 };
 
 export type Home = {
@@ -906,7 +896,7 @@ export type AboutUsHomeSection = {
             _key: string;
         } & InternationalizedArrayPortableColorTitleValue
     >;
-    shortDescription?: Array<
+    aboutUsItemInfo?: Array<
         {
             _key: string;
         } & AboutUsItem
@@ -1039,9 +1029,15 @@ export type Settings = {
 export type Button = {
     _type: "button";
     buttonName?: InternationalizedArrayString;
-    buttonLink?: "noLink" | "internal" | "external";
+    buttonLink?: "noLink" | "internal" | "external" | "pageBuilder";
     linkInternal?: LinkInternal;
     linkExternal?: LinkExternal;
+    internalSitePageLink?: {
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        [internalGroqTypeReferenceTo]?: "page";
+    };
 };
 
 export type SanityImageCrop = {
@@ -1220,13 +1216,13 @@ export type AllSanitySchemaTypes =
     | SanityImageDimensions
     | SanityFileAsset
     | Geopoint
-    | Page
     | ColorTheme
     | MenuItem
     | Stage
     | Customer
     | AnchorLink
     | AboutUsItem
+    | Page
     | SocialLinks
     | Milestone
     | Duration
@@ -1253,7 +1249,6 @@ export type AllSanitySchemaTypes =
     | Specialist
     | SpecialistCategory
     | LinkInternal
-    | AboutUs
     | Home
     | FaqHome
     | StagesHome
@@ -1403,23 +1398,41 @@ export type SettingsQueryResult = {
     buttonBuyMeCoffee: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink";
+        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
+        internalSitePageLink?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "page";
+        };
     } | null;
     buttonJoinUS: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink";
+        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
+        internalSitePageLink?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "page";
+        };
     } | null;
     buttonOrder: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink";
+        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
+        internalSitePageLink?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "page";
+        };
     } | null;
     menuItems: null;
     ogImage: null;
