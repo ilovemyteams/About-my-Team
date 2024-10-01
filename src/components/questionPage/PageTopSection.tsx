@@ -59,7 +59,7 @@ export const PageTopSection = ({ breadcrumbsList }: PageTopSectionProps) => {
                         return (
                             <BreadcrumbItem
                                 key={item.url}
-                                href={`${localeInURL(locale)}${item.url}`}
+                                href={`/${localeInURL(locale)}${item.url}`}
                             >
                                 {item.title}
                             </BreadcrumbItem>
