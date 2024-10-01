@@ -1131,15 +1131,34 @@ export type Footer = {
     >;
     privacyPolicy?: {
         title?: InternationalizedArrayString;
-        url?: Array<
-            | ({
-                  _key: string;
-              } & LinkExternal)
-            | ({
-                  _key: string;
-              } & LinkInternal)
-        >;
+        url?: {
+            ua?: Array<
+                | ({
+                      _key: string;
+                  } & LinkExternal)
+                | ({
+                      _key: string;
+                  } & LinkInternal)
+            >;
+            en?: Array<
+                | ({
+                      _key: string;
+                  } & LinkExternal)
+                | ({
+                      _key: string;
+                  } & LinkInternal)
+            >;
+            pl?: Array<
+                | ({
+                      _key: string;
+                  } & LinkExternal)
+                | ({
+                      _key: string;
+                  } & LinkInternal)
+            >;
+        };
     };
+    rightsReserved?: InternationalizedArrayString;
 };
 
 export type Header = {
@@ -1441,6 +1460,17 @@ export type HomeServicesQueryResult = {
         servicesListText: Array<string | null> | null;
     } | null;
 } | null;
+// Variable: homeStagesQuery
+// Query: *[_type == "home"][0]{stagesHome {  "title": title[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "stagesListTitle":stagesList[].title[_key == $language][0].value ,  "stagesListText":stagesList[].description[_key == $language][0].value}}
+export type HomeStagesQueryResult = {
+    stagesHome: {
+        title: PortableColorTitle | null;
+        subtitle: string | null;
+        anchorId: string | null;
+        stagesListTitle: Array<string | null> | null;
+        stagesListText: Array<string | null> | null;
+    } | null;
+} | null;
 
 // Query TypeMap
 import "@sanity/client";
@@ -1452,5 +1482,6 @@ declare module "@sanity/client" {
         '\n  *[_type == "settings"][0]{\n  ...,\n    footer,\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
+        '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
     }
 }
