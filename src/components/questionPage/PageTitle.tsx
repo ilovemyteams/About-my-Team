@@ -11,11 +11,11 @@ interface PageTitleProps {
 export const PageTitle = ({ subtext, title, estimateText }: PageTitleProps) => {
     return (
         <div className="flex flex-col tab:flex-row align-top gap-2 tab:gap-[14px]">
-            <p className="text-sm text-red mt-0 tab:mt-3 px-1 py-[2px]">
+            <p className="text-sm text-redLight dark:text-red mt-0 tab:mt-3 px-1 py-[2px]">
                 {subtext}
             </p>
-            <div className="text-purple-50">
-                <h1 className="text-3xl tab:text-4xl pc:text-6xl text-grey mb-4 pc:mb-6">
+            <div className="text-purple-100 dark:text-purple-50">
+                <h1 className="text-3xl tab:text-4xl pc:text-6xl text-purple-200 dark:text-grey mb-4 pc:mb-6">
                     {title}
                 </h1>
                 <EstimatedReadingTimeCounter text={estimateText} />
