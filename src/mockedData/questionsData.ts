@@ -16,7 +16,8 @@ export type QAItemLocalizationTextType = {
     questionText: string;
     answerText: string;
     imageAltText: string;
-    fullAnswerText?: string;
+    fullAnswerTopText?: string;
+    fullAnswerBottomText?: string;
     fullAnswerList?: LongAnswerListType[];
 };
 
@@ -40,7 +41,7 @@ export const questionsData: QAItemType[] = [
             answerText:
                 "Почніть з чесної відповіді на такі питання “Навіщо мені сайт? Чого я очікую від сайту? Що я буду на ньому показувати? Кому я хочу це показати? І що повинні зробити ті, хто відвідають мій сайт?”. Відповіді на ці питання дають розуміння, чи потрібен вам взагалі сайт і яким він повинен бути. А потім заповніть форму “Замовити” і надішліть нам ваші чесні відповіді, і ми все зробимо з турботою про ваші цілі та потреби вашого бізнесу.",
             imageAltText: "Мені потрібен сайт. З чого мені почати?",
-            fullAnswerText:
+            fullAnswerTopText:
                 "Якщо вам потрібен сайт, перший крок – це чітко визначити ваші цілі та очікування від сайту. Розуміння мети допоможе вам визначити, який тип сайту вам потрібен. Розробка власного сайту може здатися складним процесом, але ми готові допомогти вам крок за кроком. Бо ми команда, яка дбає про ваші потреби. Нижче розписані основні етапи:",
             fullAnswerList: [
                 {
@@ -90,17 +91,18 @@ export const questionsData: QAItemType[] = [
                     text: [
                         "Після успішного тестування ми готові запустити ваш сайт та надати підтримку для подальшого вдосконалення та розвитку.",
                         "Ми також надаємо консультації та допомогу у виборі доменного імені та хостингу сайту на провайдері, підборі потужностей сервера або хмари для розміщення сайту.",
-                        "Ми готові взяти на себе всі труднощі розробки та допомогти вам створити ідеальний сайт для вашого бізнесу і отримати задоволення від співпраці в процесі його розробки і запуску.",
                     ],
                 },
             ],
+            fullAnswerBottomText:
+                "Ми готові взяти на себе всі труднощі розробки та допомогти вам створити ідеальний сайт для вашого бізнесу і отримати задоволення від співпраці в процесі його розробки і запуску.",
         },
         pl: {
             questionText: "Potrzebuję strony internetowej. Od czego zacząć?",
             answerText:
                 "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
             imageAltText: "Potrzebuję strony internetowej. Od czego zacząć?",
-            fullAnswerText:
+            fullAnswerTopText:
                 "Jeśli potrzebujesz strony internetowej, pierwszym krokiem jest wyraźne określenie swoich celów i oczekiwań wobec strony. Zrozumienie celu pomoże określić, jaki rodzaj strony jest Ci potrzebny. Tworzenie własnej strony internetowej może wydawać się skomplikowanym, ale jesteśmy gotowi pomóc Ci krok po kroku. Ponieważ jesteśmy zespołem, który dba o Twoje potrzeby. Poniżej znajdują się główne kroki:",
             fullAnswerList: [
                 {
@@ -150,17 +152,18 @@ export const questionsData: QAItemType[] = [
                     text: [
                         "Po udanych testach jesteśmy gotowi do uruchomienia strony i zapewnienia wsparcia w zakresie dalszych ulepszeń i rozwoju.",
                         "Zapewniamy również konsultacje i pomoc w wyborze nazwy domeny i dostawcy hostingu na stronie, wybierając pojemność serwera lub chmury do hostingu strony.",
-                        "Jesteśmy gotowi zająć się wszystkimi trudnościami związanymi z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojego biznesu i cieszyć się współpracą w procesie jej rozwoju i uruchamiania.",
                     ],
                 },
             ],
+            fullAnswerBottomText:
+                "Jesteśmy gotowi zająć się wszystkimi trudnościami związanymi z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojego biznesu i cieszyć się współpracą w procesie jej rozwoju i uruchamiania.",
         },
         en: {
             questionText: "I need a website. Where should I start?",
             answerText:
                 "Start by answering the following questions honestly: “Why do I need a website? What do I expect from the website? What am I going to show on it? Who do I want to show it to? And what should those who visit my site do?” Answers to these questions will help you understand whether you need a website at all and what it should look like. And then fill out the Order form and send us your honest answers, and we will do everything with care for your goals and the needs of your business.",
             imageAltText: "I need a website. Where should I start?",
-            fullAnswerText:
+            fullAnswerTopText:
                 "If you need a website, the first step is to clearly define your goals and expectations for the website. Understanding your goals will help you determine what type of website you need. Developing your own website may seem complex , but we are here to help you step by step, because we are a team that cares about your needs. Below are the main steps:",
             fullAnswerList: [
                 {
@@ -210,10 +213,11 @@ export const questionsData: QAItemType[] = [
                     text: [
                         "After successful testing, we will be ready to launch your website and provide ongoing support for further improvement and growth.",
                         "We also offer consultation and assistance in choosing a domain name, website hosting provider, and selecting the appropriate server or cloud resources for hosting the site.",
-                        "We are ready to handle all the complexities of development and help you create the perfect website for your business, while ensuring an enjoyable collaboration throughout the process.",
                     ],
                 },
             ],
+            fullAnswerBottomText:
+                "We are ready to handle all the complexities of development and help you create the perfect website for your business, while ensuring an enjoyable collaboration throughout the process.",
         },
     },
     {

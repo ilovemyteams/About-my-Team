@@ -15,12 +15,17 @@ export const Question = ({ question }: QuestionPageProps) => {
     const { data } = question;
     const locale = useLocale();
 
-    const { questionText, fullAnswerList, fullAnswerText, answerText } =
-        question[locale as LocaleType];
+    const {
+        questionText,
+        fullAnswerList,
+        answerText,
+        fullAnswerBottomText,
+        fullAnswerTopText,
+    } = question[locale as LocaleType];
 
     const fullAnswerTextString = getTextString(fullAnswerList);
 
-    const allTexts = `${answerText} ${fullAnswerText || ""} ${fullAnswerTextString}`;
+    const allTexts = `${answerText} ${fullAnswerTopText || ""} ${fullAnswerBottomText || ""} ${fullAnswerTextString}`;
 
     return (
         <>

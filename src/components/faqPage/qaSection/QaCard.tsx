@@ -31,12 +31,13 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
         answerText,
         imageAltText,
         fullAnswerList,
-        fullAnswerText,
+        fullAnswerTopText,
+        fullAnswerBottomText,
     } = localizationData;
 
     const fullAnswerTextString = getTextString(fullAnswerList);
 
-    const allTexts = `${answerText} ${fullAnswerText || ""} ${fullAnswerTextString}`;
+    const allTexts = `${answerText} ${fullAnswerTopText || ""} ${fullAnswerBottomText || ""} ${fullAnswerTextString}`;
 
     return (
         <div className="flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
