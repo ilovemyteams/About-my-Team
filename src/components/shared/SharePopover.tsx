@@ -43,8 +43,8 @@ export const SharePopover = ({
     const onClose = () => {
         setIsOpen(false);
     };
-    const siteTitle = getTranslation("Home.title");
-    const siteDescription = getTranslation("Home.description");
+    const siteTitle = getTranslation("Home.titleCEO");
+    const siteDescription = getTranslation("Home.descriptionCEO");
     const pathname =
         typeof window !== "undefined" ? window.location.pathname : "";
     const search = typeof window !== "undefined" ? window.location.search : "";

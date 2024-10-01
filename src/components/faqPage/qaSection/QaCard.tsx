@@ -6,10 +6,12 @@ import {
     QADataType,
     QAItemLocalizationTextType,
 } from "@/src/mockedData/questionsData";
+import { getTextString } from "@/src/utils/getTextString";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";
 import { SharePopover } from "../../shared/SharePopover";
+
 export interface FaqCardItemProps {
     data: QADataType;
     localizationData: QAItemLocalizationTextType;
@@ -24,7 +26,17 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
         slug,
     } = data;
 
-    const { questionText, answerText, imageAltText } = localizationData;
+    const {
+        questionText,
+        answerText,
+        imageAltText,
+        fullAnswerList,
+        fullAnswerText,
+    } = localizationData;
+
+    const fullAnswerTextString = getTextString(fullAnswerList);
+
+    const allTexts = `${answerText} ${fullAnswerText || ""} ${fullAnswerTextString}`;
 
     return (
         <div className="flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
@@ -50,7 +62,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
                         className="text-purple-100 dark:text-purple-50"
-                        text={answerText}
+                        text={allTexts}
                     />
                     <Link
                         href={`faq/${slug}`}

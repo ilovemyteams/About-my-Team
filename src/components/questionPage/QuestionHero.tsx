@@ -9,11 +9,13 @@ import { PageTopSection } from "./PageTopSection";
 interface QuestionHeroProps {
     pageTitle: string;
     pageImageUrl: string;
+    estimateText: string;
 }
 
 export const QuestionHero = ({
     pageTitle,
     pageImageUrl,
+    estimateText,
 }: QuestionHeroProps) => {
     const getTranslation = useTranslations("Breadcrumbs");
     const breadcrumbs = [
@@ -27,6 +29,7 @@ export const QuestionHero = ({
                 <PageTitle
                     title={pageTitle}
                     subtext={getTranslation("breadcrumbItemFaq")}
+                    estimateText={estimateText}
                 />
 
                 <Image
