@@ -1,12 +1,13 @@
 import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
+import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
 import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
-import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
+import { Page } from "@/types/sanity.types";
 
-const SLUG_MAX_LENGTH = 50;
+const SLUG_MAX_LENGTH = 40;
 
 export const pageType = defineType({
     name: "page",
@@ -27,11 +28,7 @@ export const pageType = defineType({
             name: "pageSlug",
             type: "slug",
             options: {
-                source: doc =>
-                    getEnglishTitleFromBlocks(
-                        doc.title as InternationalizedArrayPortableColorTitle
-                    ),
-                maxLength: SLUG_MAX_LENGTH,
+                source: doc => generatePageSlug(doc as Page, SLUG_MAX_LENGTH),
                 slugify: input =>
                     input
                         .toLowerCase()
@@ -58,7 +55,6 @@ export const pageType = defineType({
                     name: "hero",
                     type: "heroHome",
                 }),
-
                 defineArrayMember({
                     name: "callToAction",
                     type: "callToAction",
@@ -78,9 +74,9 @@ export const pageType = defineType({
             title: "title",
         },
         prepare({ title }) {
-            const engLishTitle = getEnglishTitleFromBlocks(title);
+            const englishTitle = getEnglishTitleFromBlocks(title);
             return {
-                title: engLishTitle,
+                title: englishTitle,
                 subtitle: "Page",
             };
         },
