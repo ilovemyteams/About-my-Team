@@ -1,14 +1,9 @@
 import { OneTableItemInfo } from "./OneTableItemInfo";
 
-interface Items {
-    title: string;
-    text: string;
-    itemNumber?: number;
-}
-
 interface TableItemsProps {
     className?: string;
-    items: Items[];
+    titleList: Array<string | null> | null;
+    textList: Array<string | null> | null;
     isIconShown?: boolean;
     textClassName?: string;
     isShowMoreButton?: boolean;
@@ -16,15 +11,18 @@ interface TableItemsProps {
 }
 
 export const TableItemsList = ({
-    items,
+    titleList,
+    textList,
     isIconShown,
     textClassName,
     isShowMoreButton,
     sectionClassName,
 }: TableItemsProps) => {
+    if (!titleList || !textList) return null;
+
     return (
         <>
-            {items.map((item, index) => (
+            {titleList.map((item, index) => (
                 <li
                     key={index}
                     className={`dark:border-purple-stroke border-purple-strokeLight border-b-[1px] first-of-type:border-t-[1px]   
@@ -34,13 +32,13 @@ export const TableItemsList = ({
                     ${sectionClassName}`}
                 >
                     <OneTableItemInfo
-                        title={item.title}
+                        title={item || "You forgot the title"}
                         isIconShown={isIconShown}
-                        itemNumber={item?.itemNumber}
+                        itemNumber={index + 1}
                         textClassName={textClassName}
                         isShowMoreButton={isShowMoreButton}
                     >
-                        {item.text}
+                        {textList[index] || "You forgot a text"}
                     </OneTableItemInfo>
                 </li>
             ))}
