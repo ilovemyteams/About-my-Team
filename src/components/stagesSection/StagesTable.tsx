@@ -17,7 +17,8 @@ export const StagesTable = ({
                 isNumberShown={true}
                 isShowMoreButton={false}
                 textClassName="line-clamp-none max-h-full"
-                sectionClassName="[&:nth-child(5)]:hidden pc:[&:nth-child(5)]:block pc:[&:nth-child(5)]:border-b-0"
+                shift={true}
+                sectionClassName=" pc:[&:nth-child(5)]:border-l-1"
             />
         </Table>
     );
