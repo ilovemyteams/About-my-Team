@@ -7,6 +7,7 @@ import { getClient } from "@/sanity/lib/client";
 import {
     Home,
     HomeServicesQueryResult,
+    HomeStagesQueryResult,
     Project,
     Settings,
 } from "@/types/sanity.types";
@@ -18,6 +19,7 @@ import {
     homePageQuery,
     homePortfolioQuery,
     homeServicesQuery,
+    homeStagesQuery,
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
@@ -103,6 +105,14 @@ export function loadProjects(language = "ua") {
 export function loadServices(language = "ua") {
     return loadQuery<HomeServicesQueryResult>(
         homeServicesQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+
+export function loadStages(language = "ua") {
+    return loadQuery<HomeStagesQueryResult>(
+        homeStagesQuery,
         { language },
         { next: { tags: ["home"] } }
     );

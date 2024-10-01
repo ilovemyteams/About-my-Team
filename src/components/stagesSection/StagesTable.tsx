@@ -1,57 +1,18 @@
-import { useTranslations } from "next-intl";
-
 import { Table } from "../shared/Table/Table";
 import { TableItemsList } from "../shared/Table/TableItemsList";
 
-export const StagesTable = () => {
-    const getTranslation = useTranslations("Stages");
-    const stagesItems = [
-        {
-            title: getTranslation("firstStepTitle"),
-            text: getTranslation("firstStepText"),
-            itemNumber: 1,
-        },
-        {
-            title: getTranslation("secondStepTitle"),
-            text: getTranslation("secondStepText"),
-            itemNumber: 2,
-        },
-        {
-            title: getTranslation("thirdStepTitle"),
-            text: getTranslation("thirdStepText"),
-            itemNumber: 3,
-        },
-        {
-            title: getTranslation("fourthStepTitle"),
-            text: getTranslation("fourthStepText"),
-            itemNumber: 4,
-        },
-        {
-            title: "",
-            text: "",
-        },
-        {
-            title: getTranslation("fifthStepTitle"),
-            text: getTranslation("fifthStepText"),
-            itemNumber: 5,
-        },
-
-        {
-            title: getTranslation("sixthStepTitle"),
-            text: getTranslation("sixthStepText"),
-            itemNumber: 6,
-        },
-        {
-            title: getTranslation("seventhStepTitle"),
-            text: getTranslation("seventhStepText"),
-            itemNumber: 7,
-        },
-    ];
-
+export const StagesTable = ({
+    stagesListTitle,
+    stagesListText,
+}: {
+    stagesListTitle: Array<string | null> | null;
+    stagesListText: Array<string | null> | null;
+}) => {
     return (
         <Table>
             <TableItemsList
-                items={stagesItems}
+                textList={stagesListText || []}
+                titleList={stagesListTitle || []}
                 isIconShown={false}
                 isShowMoreButton={false}
                 textClassName="line-clamp-none max-h-full"
