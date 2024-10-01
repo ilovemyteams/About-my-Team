@@ -1,7 +1,7 @@
 {
     "Home": {
-        "title": "i love my team",
-        "description": "A team that cares about your needs. Together we can do more and better! Your future product is in the reliable hands of our specialists - trust us and enjoy the cooperation and the result!"
+        "titleCEO": "The team that cares about your needs",
+        "descriptionCEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
         "heroInfoText": "Team that takes care of Your needs",
@@ -217,6 +217,8 @@
         "button": "ok"
     },
     "AboutPage": {
+        "titleCEO": "Our goal is to create amazing digital products",
+        "descriptionCEO": "Creating something unique is a challenge and a passion. We develop designs, implement creative solutions, provide quality and personalized support",
         "title": "About ",
         "titleAccent": "us",
         "contentItem1": "about the founder",
@@ -265,6 +267,8 @@
         "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
+        "titleCEO": "Answers to your questions in one place",
+        "descriptionCEO": "Not sure what to choose: a website, landing page, marketplace, or online store? Get advice on costs, timelines, SEO, and all you need for success and profit",
         "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
     },
     "UnderConstruction": {

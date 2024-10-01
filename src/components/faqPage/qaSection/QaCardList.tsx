@@ -1,7 +1,7 @@
 import { useLocale } from "next-intl";
 
 import { questionsData } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
+import type { LocaleType } from "@/types/LocaleType";
 
 import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";
