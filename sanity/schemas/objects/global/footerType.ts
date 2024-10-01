@@ -95,5 +95,11 @@ export const footerType = defineField({
             ],
             validation: rule => rule.required(),
         }),
+        defineField({
+            name: "rightsReserved",
+            type: "internationalizedArrayString",
+            title: "All rights reserved text",
+            validation: rule => rule.custom(validateIsRequired),
+        }),
     ],
 });
