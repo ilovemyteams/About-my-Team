@@ -17,15 +17,15 @@ export const Question = ({ question }: QuestionPageProps) => {
 
     const {
         questionText,
-        fullAnswerList,
-        answerText,
+        fullAnswerContent,
+        shortAnswerText,
         fullAnswerBottomText,
         fullAnswerTopText,
     } = question[locale as LocaleType];
 
-    const fullAnswerTextString = getTextString(fullAnswerList);
+    const fullAnswerTextString = getTextString(fullAnswerContent);
 
-    const allTexts = `${answerText} ${fullAnswerTopText || ""} ${fullAnswerBottomText || ""} ${fullAnswerTextString}`;
+    const allTexts = `${shortAnswerText} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 
     return (
         <>

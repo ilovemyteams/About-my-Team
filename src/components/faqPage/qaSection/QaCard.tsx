@@ -20,24 +20,20 @@ export interface FaqCardItemProps {
 export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
     const getTranslation = useTranslations("Buttons");
 
-    const {
-        image = "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
-        likes,
-        slug,
-    } = data;
+    const { image, likes, slug } = data;
 
     const {
         questionText,
-        answerText,
+        shortAnswerText,
         imageAltText,
-        fullAnswerList,
+        fullAnswerContent,
         fullAnswerTopText,
         fullAnswerBottomText,
     } = localizationData;
 
-    const fullAnswerTextString = getTextString(fullAnswerList);
+    const fullAnswerTextString = getTextString(fullAnswerContent);
 
-    const allTexts = `${answerText} ${fullAnswerTopText || ""} ${fullAnswerBottomText || ""} ${fullAnswerTextString}`;
+    const allTexts = `${shortAnswerText.join(" ")} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 
     return (
         <div className="flex flex-col tab:flex-row py-4 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
@@ -58,7 +54,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                     {questionText}
                 </h2>
                 <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
-                    {answerText}
+                    {shortAnswerText.join(" ")}
                 </p>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
