@@ -1,6 +1,7 @@
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
 import Image from "next/image";
 import React from "react";
+
+import { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 export const TableContentItem = ({
     content,

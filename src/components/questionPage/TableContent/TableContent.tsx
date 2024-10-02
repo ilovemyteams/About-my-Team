@@ -1,14 +1,14 @@
 import React from "react";
-import { TableContentItem } from "./TableContentItem";
+
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
+
+import { TableContentItem } from "./TableContentItem";
 
 export const TableContent = ({
     content,
 }: {
     content: LongAnswerListType[];
 }) => {
-    console.log("content2", content);
-
     content.map((item, index) => console.log(item, index));
 
     return (
