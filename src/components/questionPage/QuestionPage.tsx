@@ -5,6 +5,8 @@ import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
+import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { MainContent } from "./MainContent";
 import { QuestionHero } from "./QuestionHero";
 import { TopTextSection } from "./TopTextSection";
 
@@ -24,7 +26,7 @@ export const Question = ({ question }: QuestionPageProps) => {
         fullAnswerTopText,
     } = question[locale as LocaleType];
 
-    const { image, answerTopImage } = data;
+    const { image, answerTopImage, layout } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
@@ -42,6 +44,11 @@ export const Question = ({ question }: QuestionPageProps) => {
                 fullAnswerText={fullAnswerTopText}
                 imageUrl={answerTopImage}
             />
+            {fullAnswerContent && layout ? (
+                <MainContent layout={layout} content={fullAnswerContent} />
+            ) : (
+                <UnderConstruction />
+            )}
         </>
     );
 };
