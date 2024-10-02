@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
+
 import LikeButton from "../shared/LikeButton";
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
-import { GoBackButton } from "../shared/GoBackButton";
 import { GoToAllQuestionButton } from "./GoToAllQuestionButton";
 
 export const HelpfullAnswerSection = () => {

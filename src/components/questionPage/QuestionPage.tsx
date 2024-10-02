@@ -5,9 +5,9 @@ import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
-import { QuestionHero } from "./QuestionHero";
-import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
 import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
+import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
+import { QuestionHero } from "./QuestionHero";
 
 interface QuestionPageProps {
     question: QAItemType;

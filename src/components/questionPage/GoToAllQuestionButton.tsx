@@ -1,6 +1,6 @@
 "use client";
-import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 
 export const GoToAllQuestionButton = () => {
     const getTranslation = useTranslations("SomeFaqPage");
