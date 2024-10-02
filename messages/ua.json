@@ -273,5 +273,9 @@
     "UnderConstruction": {
         "title": "Сторінка в розробці",
         "text": "Слідкуйте за нами і дізнаєтесь першими про оновлення."
+    },
+    "SomeFaqPage": {
+        "HelpfullAnswerSection": "Ця <purple>відповідь</purple> була <purple>корисна</purple> для вас? <br></br>Ставте сердечко і <purple>поширюйте</purple> її <purple>серед колег</purple>! Ваш внесок допоможе нам рости та створювати далі <purple>цікавий контент</purple>.",
+        "allQuestionBack": "всі запитання"
     }
 }

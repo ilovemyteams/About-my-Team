@@ -5,6 +5,8 @@ import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
+import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
+import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
 import { QuestionHero } from "./QuestionHero";
 
 interface QuestionPageProps {
@@ -34,6 +36,8 @@ export const Question = ({ question }: QuestionPageProps) => {
                 pageImageUrl={data.image}
                 estimateText={allTexts}
             />
+            <HelpfullAnswerSection />
+            <FaqSectionCta />
         </>
     );
 };
