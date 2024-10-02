@@ -71,7 +71,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                 >
                     <div className="w-full h-[1px] bg-purple-strokeLight dark:bg-purple-stroke mb-3"></div>
                     <div className="self-start mb-4 pc:mb-12">
-                        <h1 className="text-3xl font-caviar tab:text-4xl pc:text-5xl mb-2">
+                        <h1 className="text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-2">
                             {getTranslation("askFormTitle")}
                         </h1>
                         <p className="text-base">
@@ -112,7 +112,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                         status={status}
                         setStatus={setStatus}
                     />
-                    <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2">
+                    <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2 self-start">
                         <p
                             className={
                                 (errors.name && touched.name) ||
