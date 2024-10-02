@@ -5,7 +5,9 @@ import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
+import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
 import { MainContent } from "./MainContent";
 import { QuestionHero } from "./QuestionHero";
 import { TopTextSection } from "./TopTextSection";
@@ -49,6 +51,8 @@ export const Question = ({ question }: QuestionPageProps) => {
             ) : (
                 <UnderConstruction />
             )}
+            <HelpfullAnswerSection />
+            <FaqSectionCta />
         </>
     );
 };
