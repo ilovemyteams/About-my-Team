@@ -24,9 +24,9 @@ export const ListContent = ({
                         className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]"
                     >
                         <div>
-                            <span className="font-caviar text-[48px] pc:text-[90px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[15%]">
+                            <p className="font-caviar text-[48px] pc:text-[90px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[15%]">
                                 {i < 10 ? `0${i + 1}` : i + 1}
-                            </span>
+                            </p>
                         </div>
 
                         <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
