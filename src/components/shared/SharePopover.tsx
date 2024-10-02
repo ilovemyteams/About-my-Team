@@ -43,8 +43,7 @@ export const SharePopover = ({
     const onClose = () => {
         setIsOpen(false);
     };
-    const siteTitle = getTranslation("Home.titleCEO");
-    const siteDescription = getTranslation("Home.descriptionCEO");
+
     const pathname =
         typeof window !== "undefined" ? window.location.pathname : "";
     const search = typeof window !== "undefined" ? window.location.search : "";
@@ -99,7 +98,6 @@ export const SharePopover = ({
                                 <TelegramShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
                                     <IconTelegram />
                                 </TelegramShareButton>
@@ -108,7 +106,6 @@ export const SharePopover = ({
                                 <FacebookShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                 >
                                     <IconFacebook />
                                 </FacebookShareButton>
@@ -117,8 +114,6 @@ export const SharePopover = ({
                                 <LinkedinShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
-                                    summary={siteDescription}
                                 >
                                     <IconLinkedin className="w-6 h-6" />
                                 </LinkedinShareButton>
@@ -127,7 +122,6 @@ export const SharePopover = ({
                                 <WhatsappShareButton
                                     url={urlShare}
                                     className={shareButtonStyles}
-                                    title={`${siteTitle} ${id ? `#${id}` : ``}`}
                                     separator=" - "
                                 >
                                     <IconWhatsapp className="w-6 h-6" />
