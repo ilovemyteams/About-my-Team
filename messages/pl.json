@@ -277,5 +277,9 @@
     "UnderConstruction": {
         "title": "Strona w budowie",
         "text": "Śledź nas i dowiaduj się jako pierwszy o aktualizacjach."
+    },
+    "SomeFaqPage": {
+        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna</purple>?<br></br> Umieść serduszko i <purple>podziel</purple> się nią <purple>z kolegami</purple>! Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści</purple>.",
+        "allQuestionBack": "wszystkie pytania"
     }
 }

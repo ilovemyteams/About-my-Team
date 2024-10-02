@@ -6,6 +6,8 @@ import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { QuestionHero } from "./QuestionHero";
+import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
+import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
 
 interface QuestionPageProps {
     question: QAItemType;
@@ -34,6 +36,8 @@ export const Question = ({ question }: QuestionPageProps) => {
                 pageImageUrl={data.image}
                 estimateText={allTexts}
             />
+            <HelpfullAnswerSection />
+            <FaqSectionCta />
         </>
     );
 };
