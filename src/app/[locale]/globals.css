@@ -79,4 +79,13 @@ body {
     .scroll {
         @apply scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent;
     }
+
+    .custom-letter {
+        @apply first:first-letter:font-caviar first:first-letter:font-bold first:first-letter:leading-none first:first-letter:mr-1 pc:first:first-letter:mr-2 first:first-letter:translate-y-6 first:first-letter:text-purple-100 dark:first:first-letter:text-purple-50;
+    }
+
+    .custom-letter:first-child::first-letter {
+        -webkit-initial-letter: 3 2;
+        initial-letter: 3 2;
+    }
 }
