@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { questionsData } from "@/src/mockedData/questionsData";
+
 import { PageTopSection } from "../questionPage/PageTopSection";
 
 export const HeaderFAQ = () => {
