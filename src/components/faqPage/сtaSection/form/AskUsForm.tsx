@@ -112,7 +112,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                         status={status}
                         setStatus={setStatus}
                     />
-                    <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2">
+                    <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2 self-start">
                         <p
                             className={
                                 (errors.name && touched.name) ||
