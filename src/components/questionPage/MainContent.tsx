@@ -14,7 +14,7 @@ interface MainContentProps {
 export const MainContent = ({ layout, content }: MainContentProps) => {
     return (
         //ToDo:can't change mb to 32px on section component
-        <Section className=" mb-8 tab:mb-[100px] pb-[0px] tab:pb-[0px] pc:pb-[0px] deskxl:pb-[0px]">
+        <Section className=" mb-[0px]  pb-[32px] tab:pb-[100px] pc:mb-[0px] pc:pb-[100px] deskxl:pb-[0px]">
             {layout === 1 && <ListContent content={content} />}
             {layout === 2 && <TableContent content={content} />}
             {layout === 3 && (
