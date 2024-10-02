@@ -24,9 +24,9 @@ export const ListContent = ({
                         className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]"
                     >
                         <div>
-                            <p className="font-caviar text-[48px] pc:text-[90px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[10%]">
+                            <span className="font-caviar text-[48px] pc:text-[90px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[15%]">
                                 {i < 10 ? `0${i + 1}` : i + 1}
-                            </p>
+                            </span>
                         </div>
 
                         <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
@@ -49,7 +49,7 @@ export const ListContent = ({
                 ))}
             </ol>
             <div className="text-redLight dark:text-red mx-auto w-[76px] pc:w-[110px]">
-                <IconQADecoration className="tab:sticky tab:top-[10%]" />
+                <IconQADecoration className="block tab:sticky tab:top-[15%]" />
             </div>
         </div>
     );
