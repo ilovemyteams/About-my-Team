@@ -3,8 +3,10 @@ import React from "react";
 
 import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
+import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
 import type { LocaleType } from "@/types/LocaleType";
 
+import { OrderCard } from "./OrderCard";
 import { QuestionHero } from "./QuestionHero";
 
 interface QuestionPageProps {
@@ -33,6 +35,15 @@ export const Question = ({ question }: QuestionPageProps) => {
                 pageTitle={questionText}
                 pageImageUrl={data.image}
                 estimateText={allTexts}
+            />
+            <OrderCard
+                imageLink={normalizeGoogleDriveImgUrls(
+                    "https://drive.google.com/file/d/1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij/view?usp=drive_link"
+                )}
+                altText="Order"
+                text={
+                    "Ми готові взяти на себе всі труднощі розробки та допомогти вам створити ідеальний сайт для вашого бізнесу і отримати задоволення від співпраці в процесі його розробки і запуску."
+                }
             />
         </>
     );
