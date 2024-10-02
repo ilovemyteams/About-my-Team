@@ -7,7 +7,7 @@ const getAllTexts = (data: LongAnswerListType) => {
         if (typeof item === "string") {
             result += `${item} `;
         } else {
-            result += getAllTexts(item);
+            result += getAllTexts(item as LongAnswerListType);
         }
     });
 
