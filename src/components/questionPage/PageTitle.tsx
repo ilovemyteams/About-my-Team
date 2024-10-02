@@ -8,18 +8,13 @@ interface PageTitleProps {
     estimateText: string;
 }
 
-export const PageTitle = ({ subtext, title, estimateText }: PageTitleProps) => {
+export const PageTitle = ({ title, estimateText }: PageTitleProps) => {
     return (
-        <div className="flex flex-col tab:flex-row align-top gap-2 tab:gap-[14px]">
-            <p className="text-sm text-redLight dark:text-red mt-0 tab:mt-3 px-1 py-[2px]">
-                {subtext}
-            </p>
-            <div className="text-purple-100 dark:text-purple-50">
-                <h1 className="text-3xl tab:text-4xl pc:text-6xl text-purple-200 dark:text-grey mb-4 pc:mb-6">
-                    {title}
-                </h1>
-                <EstimatedReadingTimeCounter text={estimateText} />
-            </div>
+        <div className="text-purple-100 dark:text-purple-50">
+            <h1 className="text-3xl tab:text-4xl pc:text-6xl text-purple-200 dark:text-grey mb-4 pc:mb-6">
+                {title}
+            </h1>
+            <EstimatedReadingTimeCounter text={estimateText} />
         </div>
     );
 };
