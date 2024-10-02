@@ -10,7 +10,6 @@ import { getTextString } from "@/src/utils/getTextString";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";
-import { SharePopover } from "../../shared/SharePopover";
 
 export interface FaqCardItemProps {
     data: QADataType;
@@ -46,9 +45,8 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
             />
 
             <div className="flex flex-col tab:pl-3 pc:px-3">
-                <div className="flex justify-between">
+                <div className="flex justify-between h-12">
                     <LikeButton likes={likes} />
-                    <SharePopover className="" trigerShowShareText={true} />
                 </div>
                 <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
                     {questionText}
