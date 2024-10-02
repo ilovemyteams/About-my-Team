@@ -31,14 +31,15 @@ export const QuestionHero = ({
                     subtext={getTranslation("breadcrumbItemFaq")}
                     estimateText={estimateText}
                 />
-
-                <Image
-                    alt={pageTitle}
-                    src={pageImageUrl}
-                    width={508}
-                    height={340}
-                    className="object-cover w-full tab:w-3/12 pc:w-[16.9%]"
-                />
+                <div className="w-full tab:w-3/12 pc:w-[16.9%] shrink-0">
+                    <Image
+                        alt={pageTitle}
+                        src={pageImageUrl}
+                        width={508}
+                        height={340}
+                        className="object-fit w-full"
+                    />
+                </div>
             </div>
         </Section>
     );

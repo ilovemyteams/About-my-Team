@@ -6,6 +6,7 @@ import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { QuestionHero } from "./QuestionHero";
+import { TopTextSection } from "./TopTextSection";
 
 interface QuestionPageProps {
     question: QAItemType;
@@ -23,6 +24,8 @@ export const Question = ({ question }: QuestionPageProps) => {
         fullAnswerTopText,
     } = question[locale as LocaleType];
 
+    const { image, answerTopImage } = data;
+
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
     const allTexts = `${shortAnswerText} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
@@ -31,8 +34,13 @@ export const Question = ({ question }: QuestionPageProps) => {
         <>
             <QuestionHero
                 pageTitle={questionText}
-                pageImageUrl={data.image}
+                pageImageUrl={image}
                 estimateText={allTexts}
+            />
+            <TopTextSection
+                shortAnswer={shortAnswerText}
+                fullAnswerText={fullAnswerTopText}
+                imageUrl={answerTopImage}
             />
         </>
     );

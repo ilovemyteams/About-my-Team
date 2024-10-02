@@ -3,7 +3,7 @@ export type QADataType = {
     image: string;
     likes: number;
     layout?: number;
-    answerHeroImage?: string;
+    answerTopImage?: string;
     answerOrderImage?: string;
 };
 
