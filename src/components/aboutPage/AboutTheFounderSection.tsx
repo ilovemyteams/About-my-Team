@@ -31,10 +31,7 @@ export const AboutTheFounderSection = () => {
                     />
                 </div>
                 <div className="tab:w-[50%] tab:min-h-[360px] tab:aspect-[360/364] pc:min-h-[502px] pc:aspect-[539/502] tab:object-cover tab:border-y dark:border-purple-stroke border-purple-strokeLight">
-                    <ScrollShadow
-                        hideScrollBar
-                        className="tab:py-4 pc:py-5 tab:min-h-[360px]  tab:aspect-[360/364] pc:min-h-[502px] pc:max-w-[668px] pc:aspect-[539/502] tab:object-cover w-full text-sm tab:text-base tab:min-w-[360px] pc:min-w-[539px]  pc:w-[42vw] pc:text-xl  tab:overflow-scroll"
-                    >
+                    <ScrollShadow className="scroll tab:py-4 pc:py-5 tab:min-h-[360px]  tab:aspect-[360/364] pc:min-h-[502px] pc:max-w-[668px] pc:aspect-[539/502] tab:object-cover w-full text-sm tab:text-base tab:min-w-[360px] pc:min-w-[539px]  pc:w-[42vw] pc:text-xl  tab:overflow-scroll">
                         <p className="mb-6 pc:mb-10">
                             {getTranslation("aboutOwnerP1")}
                         </p>
