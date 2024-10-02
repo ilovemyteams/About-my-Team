@@ -39,6 +39,10 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=15mebCQZv4FAgQYinrxpVGDljlHsSWflz",
             likes: 0,
             layout: 1,
+            answerTopImage:
+                "https://drive.google.com/uc?export=view&id=1cib9jXgxFKaQ6-qOS24vVKL0RZKoyAIG",
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij",
         },
         ua: {
             questionText: "Мені потрібен сайт. З чого мені почати?",
@@ -50,6 +54,7 @@ export const questionsData: QAItemType[] = [
             fullAnswerTopText: [
                 "Якщо вам потрібен сайт, перший крок – це чітко визначити ваші цілі та очікування від сайту. Розуміння мети допоможе вам визначити, який тип сайту вам потрібен. Розробка власного сайту може здатися складним процесом, але ми готові допомогти вам крок за кроком. Бо ми команда, яка дбає про ваші потреби. Нижче розписані основні етапи:",
             ],
+
             fullAnswerContent: [
                 {
                     title: "Обговорення цілей",
