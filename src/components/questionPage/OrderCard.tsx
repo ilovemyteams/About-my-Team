@@ -1,33 +1,43 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
-import { Button } from "../shared/Button";
+import { NoImageHeart } from "../shared/NoImageHeart";
 import { Section } from "../shared/Section";
+import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 interface OrderCardProps {
-    imageLink: string;
+    imageLink?: string;
+    fullAnswerBottomText?: string[];
+    imageAltText: string;
 }
 
-export const OrderCard = ({ imageLink }: OrderCardProps) => {
-    const getTranslations = useTranslations("SomeFaqPage");
+export const OrderCard = ({
+    imageLink,
+    fullAnswerBottomText,
+    imageAltText,
+}: OrderCardProps) => {
     return (
-        <Section
-            className={`flex flex-col gap-6 tab:flex-row tab:gap-8 pc:gap-[104px]`}
-        >
-            <div className="tab:w-1/2 h-auto">
+        <Section className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] mb-[0px] pc:mb-[0px] pb-[80px] tab:pb-[100px] pc:pb-[100px]">
+            {imageLink ? (
                 <Image
                     src={imageLink}
                     width={630}
                     height={362}
-                    alt={getTranslations("orderCardImgAlt")}
+                    alt={imageAltText}
+                    className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%]"
                 />
-            </div>
+            ) : (
+                <div className="bg-CTAGradientLight dark:bg-CTAGradient tab:w-[50%] pc:min-w-[630px] pc:w-[58%] w-full min-h-[166px] tab:min-h-[206px] pc:min-h-[362px]">
+                    <NoImageHeart className="ml-auto mr-0 w-[45%] h-auto" />
+                </div>
+            )}
 
-            <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-1/3">
-                <p>{getTranslations("orderCardText")}</p>
-                <Button className="w-full">
-                    {getTranslations("orderCardButton")}
-                </Button>
+            <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] ">
+                {fullAnswerBottomText
+                    ? fullAnswerBottomText.map((text, index) => (
+                          <p key={index}>{text}</p>
+                      ))
+                    : ""}
+                <WriteUs />
             </div>
         </Section>
     );
