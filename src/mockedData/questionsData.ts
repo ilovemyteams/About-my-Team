@@ -6,10 +6,14 @@ export type QADataType = {
     answerTopImage?: string;
     answerOrderImage?: string;
 };
+export type LongAnswerListTextType = {
+    title: string;
+    text: string | string[];
+};
 
 export type LongAnswerListType = {
     title: string;
-    text: string[] | LongAnswerListType[];
+    text: string[] | LongAnswerListTextType[];
 };
 
 export type QAItemLocalizationTextType = {
@@ -256,7 +260,7 @@ export const questionsData: QAItemType[] = [
                     title: "Лендінг",
                     text: [
                         {
-                            title: "Ключові особливості",
+                            title: "Ключові особливості:",
                             text: [
                                 "Односторінковий сайт;",
                                 "Один промоційний або інформаційний екран;",
