@@ -24,7 +24,7 @@ export const PageTopSection = ({ breadcrumbsList }: PageTopSectionProps) => {
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
             </div>
-            <div className="flex items-center justify-between mb-4 pc:mb-12 desk:mb-[52px] max-w-full gap-6">
+            <div className="flex items-center justify-between mb-4 tab:mb-9 pc:mb-12 desk:mb-[52px] max-w-full gap-6">
                 <Breadcrumbs
                     separator="/"
                     classNames={{
