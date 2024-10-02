@@ -43,15 +43,6 @@ export const Question = ({ question }: QuestionPageProps) => {
                 pageImageUrl={image}
                 estimateText={allTexts}
             />
-            <OrderCard
-                imageLink={normalizeGoogleDriveImgUrls(
-                    "https://drive.google.com/file/d/1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij/view?usp=drive_link"
-                )}
-                altText="Order"
-                text={
-                    "Ми готові взяти на себе всі труднощі розробки та допомогти вам створити ідеальний сайт для вашого бізнесу і отримати задоволення від співпраці в процесі його розробки і запуску."
-                }
-            />
             <TopTextSection
                 shortAnswer={shortAnswerText}
                 fullAnswerText={fullAnswerTopText}
@@ -62,6 +53,11 @@ export const Question = ({ question }: QuestionPageProps) => {
             ) : (
                 <UnderConstruction />
             )}
+            <OrderCard
+                imageLink={normalizeGoogleDriveImgUrls(
+                    "https://drive.google.com/file/d/1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij/view?usp=drive_link"
+                )}
+            />
             <HelpfullAnswerSection />
             <FaqSectionCta />
         </>
