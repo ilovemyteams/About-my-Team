@@ -6,7 +6,6 @@ import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { QuestionsList } from "./QuestionsList";
 import { TitleQA } from "./TitleQa/TitleQA";
-import { GoToAllQuestionButton } from "../questionPage/GoToAllQuestionButton";
 
 export const QaSection = () => {
     const { ref, inView } = useInView({

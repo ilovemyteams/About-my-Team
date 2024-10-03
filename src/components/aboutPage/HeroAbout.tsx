@@ -8,7 +8,6 @@ import { localeInURL } from "@/src/utils/localeInURL";
 
 import { GoBackButton } from "../shared/GoBackButton";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { Section } from "../shared/Section";
 import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { PageContentList } from "./PageContentList";
 
