@@ -65,7 +65,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Визначення типу сайту",
                     text: [
-                        "Важливо визначити, чи ви хочете лендінг-сторінку або повноцінний сайт для вашого бізнесу. Про різницю між лендінгом і сайтом можете детальніше почитати тут (посилання на це питання і відповідь)",
+                        "Важливо визначити, чи ви хочете лендінг-сторінку або повноцінний сайт для вашого бізнесу. Про різницю між лендінгом і сайтом можете детальніше почитати *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*тут*/link*.",
                     ],
                 },
                 {
@@ -130,7 +130,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Określenie rodzaju strony",
                     text: [
-                        "Ważne jest, aby określić, czy chcesz mieć stronę docelową, czy pełnoprawną stronę internetową dla swojej firmy. Możesz przeczytać więcej o różnicy między stroną docelową a stroną internetową tutaj (link do tego pytania i odpowiedzi).",
+                        "Ważne jest, aby określić, czy chcesz mieć stronę docelową, czy pełnoprawną stronę internetową dla swojej firmy. Możesz przeczytać więcej o różnicy między stroną docelową a stroną internetową *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*tutaj*/link*.",
                     ],
                 },
                 {
@@ -195,7 +195,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Defining the type of website",
                     text: [
-                        "It is important to decide whether you need a landing page or a full-fledged website for your business. You can read more about the difference between a landing page and a website here (link to this question and answer).",
+                        "It is important to decide whether you need a landing page or a full-fledged website for your business. You can read more about the difference between a landing page and a website *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*here*/link*.",
                     ],
                 },
                 {
@@ -332,7 +332,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerBottomText: [
                 "Все залежить від ваших потреб та мети.",
-                "Замовте консультацію через форму “Замовити”(це посилання на форму Замовити) і ми допоможемо вам обрати оптимальний варіант для вашого бізнесу.",
+                "Замовте консультацію через форму “Замовити”, і ми допоможемо вам обрати оптимальний варіант для вашого бізнесу.",
             ],
         },
         pl: {
@@ -414,7 +414,7 @@ export const questionsData: QAItemType[] = [
                 },
             ],
             fullAnswerBottomText: [
-                "Wszystko zależy od Twoich potrzeb i celów. Zamów konsultację za pośrednictwem formularza „Zamów” (link do formularza zamówienia), a my pomożemy Ci wybrać najlepszą opcję dla Twojego biznesu.",
+                "Wszystko zależy od Twoich potrzeb i celów. Zamów konsultację za pośrednictwem formularza „Zamów”, a my pomożemy Ci wybrać najlepszą opcję dla Twojego biznesu.",
             ],
         },
         en: {
@@ -496,7 +496,7 @@ export const questionsData: QAItemType[] = [
                 },
             ],
             fullAnswerBottomText: [
-                "It all depends on your needs and goals. Request a consultation through the “Order” form (this is a link to the Order form), and we will help you choose the best option for your business.",
+                "It all depends on your needs and goals. Request a consultation through the “Order” form, and we will help you choose the best option for your business.",
             ],
         },
     },
@@ -508,7 +508,8 @@ export const questionsData: QAItemType[] = [
             layout: 3,
             answerTopImage:
                 "https://drive.google.com/uc?export=view&id=1m0w27e1oRMxDVy1n1X0hYlPrgQ3C3P8o",
-            answerOrderImage: "",
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1v7Mje1IyYdmA0wBwa-b3lV2SHk4YLKyZ",
         },
         ua: {
             questionText: "Які терміни розробки готового продукту?",

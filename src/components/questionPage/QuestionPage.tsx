@@ -49,17 +49,24 @@ export const Question = ({ question }: QuestionPageProps) => {
                 imageUrl={answerTopImage}
             />
             {fullAnswerContent && layout ? (
-                <MainContent layout={layout} content={fullAnswerContent} />
+                <>
+                    <MainContent
+                        locale={locale as LocaleType}
+                        layout={layout}
+                        content={fullAnswerContent}
+                    />
+
+                    <OrderCard
+                        imageLink={answerOrderImage}
+                        fullAnswerBottomText={fullAnswerBottomText}
+                        imageAltText={imageAltText}
+                    />
+                    <HelpfullAnswerSection />
+                    <FaqSectionCta />
+                </>
             ) : (
                 <UnderConstruction />
             )}
-            <OrderCard
-                imageLink={answerOrderImage}
-                fullAnswerBottomText={fullAnswerBottomText}
-                imageAltText={imageAltText}
-            />
-            <HelpfullAnswerSection />
-            <FaqSectionCta />
         </>
     );
 };

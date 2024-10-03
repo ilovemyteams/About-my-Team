@@ -1,17 +1,21 @@
 import { Fragment } from "react";
 
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
+import { LocaleType } from "@/types/LocaleType";
 
 interface ListContentItemsProps {
     item: LongAnswerListType;
     indx: number;
     listStyle: string;
+    locale: LocaleType;
 }
 
 export const ListContentItem = ({
     item,
     indx,
     listStyle,
+    locale,
 }: ListContentItemsProps) => {
     const { text, title } = item;
     return (
@@ -32,7 +36,7 @@ export const ListContentItem = ({
                             {typeof text === "string" && (
                                 <li className={listStyle}>
                                     <p className="text-sm tab:text-base">
-                                        {text}
+                                        {parseTextWithLink(text, locale)}
                                     </p>
                                 </li>
                             )}

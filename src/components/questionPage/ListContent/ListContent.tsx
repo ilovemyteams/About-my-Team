@@ -2,15 +2,18 @@ import { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { ListContentItem } from "./ListContentItem";
+import { LocaleType } from "@/types/LocaleType";
 
 interface ListContentProps {
     content: LongAnswerListType[];
     activeSubList?: boolean;
+    locale: LocaleType;
 }
 
 export const ListContent = ({
     activeSubList = false,
     content,
+    locale,
 }: ListContentProps) => {
     const listStyle = activeSubList ? "list-disc ml-6" : "";
 
@@ -23,6 +26,7 @@ export const ListContent = ({
                         item={item}
                         indx={i}
                         listStyle={listStyle}
+                        locale={locale}
                     />
                 ))}
             </ol>
