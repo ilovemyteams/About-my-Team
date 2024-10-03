@@ -23,7 +23,7 @@ export const TableContentItem = ({
                         <div className="flex gap-2 mb-3">
                             <Image
                                 src="/images/pencil&ruler.svg"
-                                alt="icon pensil and ruler"
+                                alt="icon pencil and ruler"
                                 width={20}
                                 height={20}
                             />

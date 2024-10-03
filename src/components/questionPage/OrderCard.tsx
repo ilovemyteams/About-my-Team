@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { NoImageHeart } from "../shared/NoImageHeart";
-import { Section } from "../shared/Section";
+import { PageSection } from "../shared/PageSection";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 interface OrderCardProps {
@@ -16,7 +16,7 @@ export const OrderCard = ({
     imageAltText,
 }: OrderCardProps) => {
     return (
-        <Section className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] mb-[0px] pc:mb-[0px] pb-[80px] tab:pb-[100px] pc:pb-[100px]">
+        <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] pb-[80px] tab:pb-[100px] pc:pb-[100px]">
             {imageLink ? (
                 <Image
                     src={imageLink}
@@ -39,6 +39,6 @@ export const OrderCard = ({
                     : ""}
                 <WriteUs />
             </div>
-        </Section>
+        </PageSection>
     );
 };
