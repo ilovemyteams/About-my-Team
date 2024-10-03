@@ -9,11 +9,14 @@ interface PageTitleProps {
 
 export const PageTitle = ({ title, estimateText }: PageTitleProps) => {
     return (
-        <div className="text-purple-100 dark:text-purple-50 flex flex-col justify-between">
+        <div className=" flex flex-col justify-between">
             <h1 className="text-3xl tab:text-4xl pc:text-6xl text-purple-200 dark:text-grey mb-4 pc:mb-6">
                 {title}
             </h1>
-            <EstimatedReadingTimeCounter text={estimateText} />
+            <EstimatedReadingTimeCounter
+                text={estimateText}
+                className="text-purple-100 dark:text-purple-50 text-sm tab:text-base"
+            />
         </div>
     );
 };
