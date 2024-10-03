@@ -32,7 +32,6 @@ export const linkExternalType = defineField({
             title: "Open in a new window?",
             name: "newWindow",
             type: "boolean",
-            initialValue: true,
         }),
     ],
     preview: {
