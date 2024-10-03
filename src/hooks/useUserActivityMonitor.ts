@@ -8,7 +8,7 @@ import {
 
 export const useUserActivityMonitor = () => {
     const [isUserNotActive, setIsUserNotActive] = useState(false);
-    const isFirstReaction = useRef<boolean>(false);
+    const eventOpenCounter = useRef<number>(1);
 
     const activeTimeoutId = useRef<
         null | ReturnType<typeof setTimeout> | "start"
@@ -16,9 +16,10 @@ export const useUserActivityMonitor = () => {
 
     const updateUserActivity = () => {
         if (activeTimeoutId.current) {
-            const delay = isFirstReaction.current
-                ? SECOND_USER_INACTIVITY_TIMEOUT
-                : FIRST_USER_INACTIVITY_TIMEOUT;
+            const delay =
+                eventOpenCounter.current === 2
+                    ? SECOND_USER_INACTIVITY_TIMEOUT
+                    : FIRST_USER_INACTIVITY_TIMEOUT;
 
             activeTimeoutId.current !== "start" &&
                 clearTimeout(activeTimeoutId.current);
@@ -33,12 +34,13 @@ export const useUserActivityMonitor = () => {
         activeTimeoutId.current = null;
     };
 
-    const setUserActive = () => {
+    const setUserActive = (isClickEvent: boolean) => {
         setIsUserNotActive(false);
-
-        if (!isFirstReaction.current) {
+        if (eventOpenCounter.current < 2) {
             activeTimeoutId.current = "start";
-            isFirstReaction.current = true;
+            if (!isClickEvent) {
+                eventOpenCounter.current += 1;
+            }
         }
     };
 
@@ -63,6 +65,6 @@ export const useUserActivityMonitor = () => {
     return {
         isUserNotActive,
         setUserActive,
-        isFirstReaction: isFirstReaction.current,
+        setUserInactivity,
     };
 };
