@@ -1,6 +1,6 @@
 import {
     loadCTA,
-    loadHomePage,
+    loadHomeHero,
     loadHomeProjects,
     loadServices,
     loadStages,
@@ -22,7 +22,7 @@ import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
 export default async function HomePage(props: HomePageParamsProps) {
     const [initial, cta, portfolioSection, services, stages] =
         await Promise.all([
-            await loadHomePage(props.params.locale),
+            await loadHomeHero(props.params.locale),
             await loadCTA(props.params.locale),
             await loadHomeProjects(props.params.locale),
             await loadServices(props.params.locale),

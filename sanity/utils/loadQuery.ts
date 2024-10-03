@@ -16,7 +16,7 @@ import { HomeProps, PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
 import { readToken } from "../lib/api";
 import {
     CTAQuery,
-    homePageQuery,
+    homeHeroQuery,
     homePortfolioQuery,
     homeServicesQuery,
     homeStagesQuery,
@@ -71,9 +71,9 @@ export function loadSettings(language = "ua") {
     );
 }
 
-export function loadHomePage(language = "ua") {
+export function loadHomeHero(language = "ua") {
     return loadQuery<HomeProps | null>(
-        homePageQuery,
+        homeHeroQuery,
         { language },
         { next: { tags: ["home"] } }
     );

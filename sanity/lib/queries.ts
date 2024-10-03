@@ -1,11 +1,8 @@
 import { groq } from "next-sanity";
 
-export const homePageQuery = groq`
+export const homeHeroQuery = groq`
   *[_type == "home"][0]{
-  ...,
-  portfolioHome{ "title": title[_key == $language][0].value},
   hero {
-  
     "title": title[_key == $language][0].value,
     "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
     image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
