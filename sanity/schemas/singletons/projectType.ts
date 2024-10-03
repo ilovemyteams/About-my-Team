@@ -79,6 +79,10 @@ export const projectType = defineField({
             description: "Link to the project",
             type: "linkExternal",
             title: "Project URL",
+            options: {
+                collapsed: true,
+                collapsible: true,
+            },
         }),
         defineField({
             name: "image",
