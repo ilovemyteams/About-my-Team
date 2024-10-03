@@ -3,7 +3,6 @@ import React from "react";
 
 import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
-import { normalizeGoogleDriveImgUrls } from "@/src/utils/normalizeGoogleDriveImgUrls";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
@@ -28,9 +27,10 @@ export const Question = ({ question }: QuestionPageProps) => {
         shortAnswerText,
         fullAnswerBottomText,
         fullAnswerTopText,
+        imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, answerTopImage, layout } = data;
+    const { image, answerTopImage, layout, answerOrderImage } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
@@ -54,9 +54,9 @@ export const Question = ({ question }: QuestionPageProps) => {
                 <UnderConstruction />
             )}
             <OrderCard
-                imageLink={normalizeGoogleDriveImgUrls(
-                    "https://drive.google.com/file/d/1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij/view?usp=drive_link"
-                )}
+                imageLink={answerOrderImage}
+                fullAnswerBottomText={fullAnswerBottomText}
+                imageAltText={imageAltText}
             />
             <HelpfullAnswerSection />
             <FaqSectionCta />

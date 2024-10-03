@@ -247,6 +247,10 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1o9hzaeKZBawBuDxNSK4SUXpgoG8YiaGN",
             likes: 0,
             layout: 2,
+            answerTopImage:
+                "https://drive.google.com/uc?export=view&id=14JI0UQmev0qgPWlc53WK9YwhlEzOoFYQ",
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=13THxu-gcpA6q0JDh7Gic_zmWCv2Jr-Fu",
         },
         ua: {
             questionText: "Що обрати - лендінг чи повноцінний сайт?",
@@ -502,6 +506,9 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1jnZ9vPmhZchmQY6eeJklz_8bvQM2a9b4",
             likes: 0,
             layout: 3,
+            answerTopImage:
+                "https://drive.google.com/uc?export=view&id=1m0w27e1oRMxDVy1n1X0hYlPrgQ3C3P8o",
+            answerOrderImage: "",
         },
         ua: {
             questionText: "Які терміни розробки готового продукту?",

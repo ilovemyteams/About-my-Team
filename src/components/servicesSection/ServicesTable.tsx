@@ -40,7 +40,7 @@ export const ServicesTable = () => {
                 items={serviceItems}
                 sectionClassName="pc:[&:nth-child(5)]:border-l-[1px]"
             />
-            <li className="col-span-2 row-span-1 py-[40px] tab:h-[210px] pc:h-[270px] pc:px-4 pc:py-[65px] flex flex-col items-center">
+            <li className="col-span-2 row-span-1 pt-[40px] tab:h-[210px] pc:h-[270px] pc:px-4 pc:pt-[65px] flex flex-col items-center">
                 <p className="mb-6 max-w-[361px] deskxl:text-lg">
                     {getTranslation("Services.contactUs")}
                 </p>

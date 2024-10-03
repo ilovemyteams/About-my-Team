@@ -23,7 +23,7 @@ export const QuestionHero = ({
         { title: pageTitle, url: "" },
     ];
     return (
-        <Section className="pt-4 tab:pt-[44px] pc:pt-8 pb-[0px] tab:pb-[0px] pc:pb-[0px] mb-6 tab:mb-4 pc:mb-[34px]">
+        <Section className="pt-4 tab:pt-[44px] pc:pt-8 pb-6 tab:pb-[16px] pc:pb-[34px] mb-[0px] pc:mb-[0px]">
             <PageTopSection breadcrumbsList={breadcrumbs} />
             <div className="flex flex-col tab:flex-row gap-6 tab:gap-[80px] pc:gap-[150px] justify-between">
                 <PageTitle
@@ -31,7 +31,7 @@ export const QuestionHero = ({
                     subtext={getTranslation("breadcrumbItemFaq")}
                     estimateText={estimateText}
                 />
-                <div className="w-full tab:w-3/12 pc:w-[16.9%] shrink-0">
+                <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] shrink-0">
                     <Image
                         alt={pageTitle}
                         src={pageImageUrl}

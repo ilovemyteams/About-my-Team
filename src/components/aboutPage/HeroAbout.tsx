@@ -8,7 +8,6 @@ import { localeInURL } from "@/src/utils/localeInURL";
 
 import { GoBackButton } from "../shared/GoBackButton";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { Section } from "../shared/Section";
 import { ThemeSwitcher } from "../shared/ThemeSwitcher";
 import { PageContentList } from "./PageContentList";
 
@@ -20,7 +19,7 @@ export const HeroAbout = () => {
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
     const locale = useLocale();
     return (
-        <Section className="pt-8 tab:pt-12 pc:pt-8">
+        <section className="container max-w-[540px] tab:max-w-full desk:max-w-[1456px] scroll-mt-[90px] pc:scroll-mt-[30px] pt-8 tab:pt-12 pc:pt-8 pb-[111px] tab:pb-[100px] pc:pb-12">
             <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
@@ -92,6 +91,6 @@ export const HeroAbout = () => {
                     </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 };
