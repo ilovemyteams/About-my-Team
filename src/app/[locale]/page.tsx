@@ -1,5 +1,6 @@
 import {
     loadCTA,
+    loadHomeAboutUs,
     loadHomeHero,
     loadHomeProjects,
     loadServices,
@@ -20,9 +21,10 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: HomePageParamsProps) {
-    const [initial, cta, portfolioSection, services, stages] =
+    const [hero, about, cta, portfolioSection, services, stages] =
         await Promise.all([
             await loadHomeHero(props.params.locale),
+            await loadHomeAboutUs(props.params.locale),
             await loadCTA(props.params.locale),
             await loadHomeProjects(props.params.locale),
             await loadServices(props.params.locale),
@@ -32,8 +34,8 @@ export default async function HomePage(props: HomePageParamsProps) {
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={initial.data} />
-            <MissionSection />
+            <HeroSection data={hero.data} />
+            <MissionSection data={about.data} />
             <JoinTheTeamSection data={cta.data} />
             <PortfolioSection data={portfolioSection.data} />
             <FeedbackSection />

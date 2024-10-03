@@ -1,30 +1,42 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
+import { HomeAboutUsQueryResult } from "@/types/sanity.types";
 
-export const MissionSection = () => {
+export const MissionSection = ({ data }: { data: HomeAboutUsQueryResult }) => {
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
-    const getTranslation = useTranslations("Buttons");
+    const {
+        aboutUsItemInfo,
+        anchorId,
+        subtitle,
+        title,
+        learnMoreButtonName,
+        buttonPageLink,
+    } = data?.aboutUsHomeSection || {};
+
     const locale = useLocale();
     const router = useRouter();
 
     const handleButtonClick = () => {
-        router.push(`/${locale}/about`);
+        router.push(`/${locale}/${buttonPageLink || ""}`);
     };
 
     return (
-        <Section id="aboutus" className="tab:min-h-[505px]">
+        <Section id={anchorId || ""} className="tab:min-h-[505px]">
             <div ref={ref}>
-                <MissionTitle />
+                <MissionTitle
+                    title={title || null}
+                    subtitle={subtitle || null}
+                />
                 <div className="flex justify-around items-center">
                     <Image
                         src="/images/missionHeartTablet.svg"
@@ -41,9 +53,10 @@ export const MissionSection = () => {
                         className={`hidden pc:block w-[32%] h-auto min-w-[297px] max-w-full ${inView && "animate-pulsation"}`}
                     />
                     <div className="relative flex flex-col justify-start items-center tab:items-end gap-y-[40px] tab:gap-y-[56px] pc:gap-y-[84px] w-full tab:w-[48%] pc:w-[45%]">
-                        <BenefitsList />
+                        <BenefitsList benefits={aboutUsItemInfo || null} />
                         <Button onClick={handleButtonClick}>
-                            {getTranslation("learnMore")}
+                            {learnMoreButtonName ||
+                                "You forgot to name the button"}
                         </Button>
                     </div>
                 </div>
