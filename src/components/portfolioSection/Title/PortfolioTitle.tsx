@@ -15,7 +15,6 @@ export const PortfolioTitle = ({
     title: PortfolioTitleProps[] | undefined;
 }) => {
     const getTranslation = useTranslations("Portfolio");
-    title ? console.log("title[0]", title[0]) : "";
 
     return (
         <div>
