@@ -157,7 +157,8 @@
     "NotFound": {
         "title": "Nie znaleziono strony",
         "info": "Nie możemy znaleźć strony, której szukasz. Być może wystąpił błąd",
-        "button": "do strony głównej"
+        "button": "do strony głównej",
+        "descriptionCEO": "Nie znaleziono strony, ale nie przegap okazji, aby sprawdzić nasze fajne animacje i kreatywne opisy!"
     },
     "SharePopover": {
         "shareLink": "Udostępnij łącze przez",

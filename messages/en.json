@@ -154,7 +154,8 @@
     "NotFound": {
         "title": "Page not found",
         "info": "We could not find the page you are looking for. There may have been an error",
-        "button": "to the home page"
+        "button": "to the home page",
+        "descriptionCEO": "Page not found, but don't miss the opportunity to check out our cool animations and creative descriptions!"
     },
     "SharePopover": {
         "shareLink": "Share the link via:",
@@ -271,7 +272,7 @@
     "FaqPage": {
         "titleCEO": "Answers to your questions in one place",
         "descriptionCEO": "Not sure what to choose: a website, landing page, marketplace, or online store? Get advice on costs, timelines, SEO, and all you need for success and profit",
-        "ctaText": "Didn't find the answer to your question? Write to us and we will provide you with the first consultation for free!"
+        "ctaText": "Didn't find the answer to your question? Write to us, and we will provide you with the first consultation for free!"
     },
     "UnderConstruction": {
         "title": "Page under construction",
