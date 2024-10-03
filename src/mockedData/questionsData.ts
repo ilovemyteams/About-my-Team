@@ -266,7 +266,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Лендінг",
+                    title: "Лендінг:",
                     text: [
                         {
                             title: "Ключові особливості:",
