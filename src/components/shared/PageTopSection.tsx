@@ -1,15 +1,14 @@
 "use client";
-
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
 import { localeInURL } from "@/src/utils/localeInURL";
 
-import { GoBackButton } from "../shared/GoBackButton";
-import { IconHome } from "../shared/Icons/IcomHome";
-import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+import { GoBackButton } from "./GoBackButton";
+import { IconHome } from "./Icons/IcomHome";
+import LocaleSwitcher from "./LocaleSwitcher";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 interface PageTopSectionProps {
     breadcrumbsList: { title: string; url: string }[];

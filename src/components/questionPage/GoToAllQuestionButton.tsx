@@ -13,7 +13,7 @@ export const GoToAllQuestionButton = () => {
             className="h-12 flex items-end"
             onClick={() => router.push(`/${locale}/faq`)}
         >
-            <p className="text-lb first-letter:uppercase underline underline-offset-2 leading-none text-center">
+            <p className="text-lg first-letter:uppercase underline underline-offset-2 leading-none text-center">
                 {getTranslation("allQuestionBack")}
             </p>
         </button>

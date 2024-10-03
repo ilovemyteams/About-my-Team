@@ -43,7 +43,9 @@ export const OrderCard = ({
                 ) : (
                     ""
                 )}
-                <WriteUs />
+                <div className="mx-auto tab:ml-0 tab:mr-auto">
+                    <WriteUs />
+                </div>
             </div>
         </PageSection>
     );

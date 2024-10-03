@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 import { PageSection } from "../shared/PageSection";
+import { PageTopSection } from "../shared/PageTopSection";
 import { PageTitle } from "./PageTitle";
-import { PageTopSection } from "./PageTopSection";
 
 interface QuestionHeroProps {
     pageTitle: string;

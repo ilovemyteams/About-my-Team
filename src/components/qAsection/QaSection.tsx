@@ -1,7 +1,10 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
+import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { QuestionsList } from "./QuestionsList";
@@ -11,7 +14,14 @@ export const QaSection = () => {
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
+    const getTranslation = useTranslations("Buttons");
 
+    const router = useRouter();
+    const locale = useLocale();
+
+    const handleButtonClick = () => {
+        router.push(`/${locale}/faq`);
+    };
     return (
         <Section id="faq" className="relative">
             <div ref={ref}>
@@ -33,6 +43,11 @@ export const QaSection = () => {
                     />
                     <QuestionsList />
                 </div>
+            </div>
+            <div className="flex justify-center tab:justify-end">
+                <Button color="grey" onClick={handleButtonClick}>
+                    {getTranslation("allQuestions")}
+                </Button>
             </div>
         </Section>
     );

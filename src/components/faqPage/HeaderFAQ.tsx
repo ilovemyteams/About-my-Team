@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { questionsData } from "@/src/mockedData/questionsData";
 
-import { PageTopSection } from "../questionPage/PageTopSection";
+import { PageTopSection } from "../shared/PageTopSection";
 
 export const HeaderFAQ = () => {
     const getTranslation = useTranslations();

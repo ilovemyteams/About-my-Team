@@ -28,7 +28,7 @@ export const QuestionsList = () => {
     ];
 
     return (
-        <div className="mb-[34px] pc:ml-[270px] pc:mb-[32px]">
+        <div className="mb-[40px] pc:ml-[270px] tab:mb-[48px]">
             <ul>
                 {questionsList.map((item, idx) => {
                     return <Accordion key={idx} item={item} />;
