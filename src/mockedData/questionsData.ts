@@ -289,7 +289,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: " Сайт візитка:",
+                    title: " Сайт візитка",
                     text: [
                         {
                             title: "Ключові особливості:",
@@ -311,7 +311,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Повноцінний багатосторінковий сайт:",
+                    title: "Повноцінний багатосторінковий сайт",
                     text: [
                         {
                             title: "Ключові особливості:",
