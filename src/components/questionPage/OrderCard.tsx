@@ -32,11 +32,17 @@ export const OrderCard = ({
             )}
 
             <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] ">
-                {fullAnswerBottomText
-                    ? fullAnswerBottomText.map((text, index) => (
-                          <p key={index}>{text}</p>
-                      ))
-                    : ""}
+                {fullAnswerBottomText ? (
+                    <div>
+                        {fullAnswerBottomText.map((text, index) => (
+                            <p key={index} className="text-sm tab:text-base">
+                                {text}
+                            </p>
+                        ))}
+                    </div>
+                ) : (
+                    ""
+                )}
                 <WriteUs />
             </div>
         </PageSection>
