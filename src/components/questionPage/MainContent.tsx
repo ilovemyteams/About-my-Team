@@ -1,11 +1,11 @@
 import React from "react";
 
 import type { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LocaleType } from "@/types/LocaleType";
 
 import { PageSection } from "../shared/PageSection";
 import { ListContent } from "./ListContent/ListContent";
 import { TableContent } from "./TableContent/TableContent";
-import { LocaleType } from "@/types/LocaleType";
 
 interface MainContentProps {
     layout: number;
