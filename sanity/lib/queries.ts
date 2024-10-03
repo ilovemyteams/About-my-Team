@@ -59,3 +59,23 @@ export const projectQuery = groq`
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
 `;
+
+export const homeServicesQuery = groq`
+  *[_type == "home"][0] 
+  { servicesHome {
+  "title": title[_key == $language][0].value,
+  "description": description[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "servicesListTitle":servicesList[]->title[_key == $language][0].value,
+  "servicesListText":servicesList[]->description[_key == $language][0].value
+}}`;
+
+export const homeStagesQuery = groq`
+  *[_type == "home"][0]{stagesHome {
+  "title": title[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "stagesListTitle":stagesList[].title[_key == $language][0].value ,
+  "stagesListText":stagesList[].description[_key == $language][0].value
+}}`;
