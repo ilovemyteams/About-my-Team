@@ -9,8 +9,6 @@ export const TableContent = ({
 }: {
     content: LongAnswerListType[];
 }) => {
-    content.map((item, index) => console.log(item, index));
-
     return (
         <div>
             <ul className=" list-none border-t border-purple-strokeLight dark:border-purple-stroke  tab:flex tab:flex-wrap pc:flex-nowrap tab:justify-center">

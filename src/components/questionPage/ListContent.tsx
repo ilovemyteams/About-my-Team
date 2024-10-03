@@ -38,7 +38,9 @@ export const ListContent = ({
                                     <Fragment key={index}>
                                         {typeof text === "string" && (
                                             <li className={listStyle}>
-                                                <p>{text}</p>
+                                                <p className="text-sm tab:text-base">
+                                                    {text}
+                                                </p>
                                             </li>
                                         )}
                                     </Fragment>
