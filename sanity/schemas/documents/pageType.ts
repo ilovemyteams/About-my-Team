@@ -1,4 +1,3 @@
-import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
@@ -13,7 +12,6 @@ export const pageType = defineType({
     name: "page",
     type: "document",
     title: "Page",
-    icon: DocumentsIcon,
     fields: [
         defineField({
             name: "title",

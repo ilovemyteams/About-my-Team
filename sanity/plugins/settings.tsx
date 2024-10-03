@@ -1,6 +1,7 @@
 /**
  * This plugin contains all the logic for setting up the singletons
  */
+import { FcAddDatabase, FcDocument, FcFolder } from "react-icons/fc";
 import { type DocumentDefinition } from "sanity";
 import {
     type DocumentBuilder,
@@ -49,7 +50,7 @@ async function nestedContentPageList(
                 id === page?._id || `drafts.${id}` === page?._id
                     ? S.document()
                           .schemaType("page")
-                          .views([S.view.form()])
+                          .views([S.view.form().icon(FcFolder)])
                           .id(id)
                     : nestedContentPageList(id, S)
             );
@@ -57,7 +58,10 @@ async function nestedContentPageList(
 
     // If no children, just return the document form view
 
-    return S.document().schemaType("page").views([S.view.form()]).id(id);
+    return S.document()
+        .schemaType("page")
+        .views([S.view.form().icon(FcDocument)])
+        .id(id);
 }
 
 const hiddenDocTypes = (listItem: ListItemBuilder) => {
@@ -111,6 +115,7 @@ export const pageStructure = (
     return S => {
         const pagesItem = S.listItem()
             .id("pages-list")
+            .icon(FcAddDatabase)
             .title("Pages")
             .schemaType("page")
             .child(
