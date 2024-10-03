@@ -44,17 +44,20 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                 className="h-[200px] aspect-[3/2] mb-"
             />
 
-            <div className="flex flex-col tab:pl-3 pc:px-3">
+            <div className="flex flex-col tab:pl-3 pc:px-3 justify-between">
                 {/* ToDo: to show like btn, change hidden to flex */}
-                <div className="justify-between h-12 hidden">
-                    <LikeButton likes={likes} />
+                <div>
+                    <div className="justify-between h-12 hidden">
+                        <LikeButton likes={likes} />
+                    </div>
+
+                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
+                        {questionText}
+                    </h2>
+                    <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
+                        {shortAnswerText.join(" ")}
+                    </p>
                 </div>
-                <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
-                    {questionText}
-                </h2>
-                <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
-                    {shortAnswerText.join(" ")}
-                </p>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
                         className="text-purple-100 dark:text-purple-50"
