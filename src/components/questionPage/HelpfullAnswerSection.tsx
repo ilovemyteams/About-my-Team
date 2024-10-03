@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import LikeButton from "../shared/LikeButton";
-import { Section } from "../shared/Section";
+import { PageSection } from "../shared/PageSection";
 import { SharePopover } from "../shared/SharePopover";
 import { GoToAllQuestionButton } from "./GoToAllQuestionButton";
 
@@ -9,7 +9,7 @@ export const HelpfullAnswerSection = () => {
     const getTranslation = useTranslations("SomeFaqPage");
 
     return (
-        <Section className="mb-[0px] pb-[109px] tab:pb-[100px] pc:mb-[0px] pc:pb-[100px]">
+        <PageSection className="pb-[109px] tab:pb-[100px] pc:pb-[100px]">
             <div className="tab:max-w-[534px] pc:max-w-[910px] mx-auto">
                 <p className="font-caviar text-xlb mb-4 pc:mb-6 pc:text-4xl pc:leading-[42px]">
                     {getTranslation.rich("HelpfullAnswerSection", {
@@ -28,6 +28,6 @@ export const HelpfullAnswerSection = () => {
                 <div className="hidden tab:block flex-grow mr-[60px] border-b border-purple-strokeLight dark:border-purple-stroke"></div>
                 <GoToAllQuestionButton />
             </div>
-        </Section>
+        </PageSection>
     );
 };
