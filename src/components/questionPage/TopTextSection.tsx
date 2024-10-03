@@ -30,7 +30,7 @@ export const TopTextSection = ({
                             {imageUrl ? (
                                 <Image
                                     src={imageUrl}
-                                    alt=""
+                                    alt="decoration image"
                                     width={508}
                                     height={296}
                                 />

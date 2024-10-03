@@ -4,7 +4,6 @@ import { EstimatedReadingTimeCounter } from "../shared/EstimatedReadingTimeCount
 
 interface PageTitleProps {
     title: string;
-    subtext: string;
     estimateText: string;
 }
 
