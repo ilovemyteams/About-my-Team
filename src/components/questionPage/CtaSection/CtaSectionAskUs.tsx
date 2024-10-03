@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { SectionCTA } from "@/src/components/shared/SectionCTA";
 import { TitleCTAWrapper } from "@/src/components/shared/TitleCTAWrapper";
 
-import { AskUsModal } from "../../faqPage/сtaSection/modal/AskUsModal";
+import { CtaAskUsModal } from "./CtaAskUsModal";
 
 export const CtaSectionAskUs = () => {
     const getTranslation = useTranslations("FaqPage");
@@ -13,7 +13,7 @@ export const CtaSectionAskUs = () => {
             <TitleCTAWrapper className="tab:flex-1">
                 {getTranslation("ctaText")}
             </TitleCTAWrapper>
-            <AskUsModal />
+            <CtaAskUsModal />
         </SectionCTA>
     );
 };

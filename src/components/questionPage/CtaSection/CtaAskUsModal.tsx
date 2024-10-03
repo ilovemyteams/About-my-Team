@@ -1,3 +1,4 @@
+"use client";
 import { ModalsWithForm } from "@/src/components/shared/ModalsWithForm/ModalsWithForm";
 
 import { AskUsForm } from "../../faqPage/сtaSection/form/AskUsForm";
