@@ -489,7 +489,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Ideal for:",
                             text: [
-                                "Building the company's brand, attract new clients and partners, increase conversion rates from visitors to customers, measure the effectiveness of marketing campaigns, and offers many other advantages.",
+                                "Building the company's brand, attracting new clients and partners, increasing conversion rates from visitors to customers, measuring the effectiveness of marketing campaigns, and offering many other advantages.",
                             ],
                         },
                     ],
