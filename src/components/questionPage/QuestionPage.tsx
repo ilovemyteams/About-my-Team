@@ -11,7 +11,7 @@ import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
 import { MainContent } from "./MainContent";
 import { OrderCard } from "./OrderCard";
 import { QuestionHero } from "./QuestionHero";
-import { TopTextSection } from "./TopTextSection";
+import { TopTextSection } from "./TopTextSection/TopTextSection";
 
 interface QuestionPageProps {
     question: QAItemType;
