@@ -266,7 +266,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Лендінг:",
+                    title: "Лендінг",
                     text: [
                         {
                             title: "Ключові особливості:",
@@ -289,7 +289,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: " Сайт візитка:",
+                    title: " Сайт візитка",
                     text: [
                         {
                             title: "Ключові особливості:",
@@ -311,7 +311,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Повноцінний багатосторінковий сайт:",
+                    title: "Повноцінний багатосторінковий сайт",
                     text: [
                         {
                             title: "Ключові особливості:",
@@ -349,7 +349,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Landing page (strona docelowa):",
+                    title: "Landing page (strona docelowa)",
                     text: [
                         {
                             title: "Kluczowe cechy:",
@@ -372,7 +372,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Strona wizytówka:",
+                    title: "Strona wizytówka",
                     text: [
                         {
                             title: "Kluczowe cechy:",
@@ -394,7 +394,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Pełnoprawna wielostronicowa strona internetowa:",
+                    title: "Pełnoprawna wielostronicowa strona internetowa",
                     text: [
                         {
                             title: "Kluczowe cechy:",
@@ -431,7 +431,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Landing page:",
+                    title: "Landing page",
                     text: [
                         {
                             title: "Key features:",
@@ -454,7 +454,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Business card site:",
+                    title: "Business card site",
                     text: [
                         {
                             title: "Key features:",
@@ -476,7 +476,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Full Multi-Page Website:",
+                    title: "Full Multi-Page Website",
                     text: [
                         {
                             title: "Key features:",
