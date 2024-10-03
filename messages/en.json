@@ -154,7 +154,8 @@
     "NotFound": {
         "title": "Page not found",
         "info": "We could not find the page you are looking for. There may have been an error",
-        "button": "to the home page"
+        "button": "to the home page",
+        "descriptionCEO": "Page not found, but don't miss the opportunity to check out our cool animations and creative descriptions!"
     },
     "SharePopover": {
         "shareLink": "Share the link via:",
