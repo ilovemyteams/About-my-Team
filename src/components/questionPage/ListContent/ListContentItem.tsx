@@ -27,7 +27,7 @@ export const ListContentItem = ({
             </div>
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                <h3 className="font-caviar text-lg tab:text-3xl mb-4 tab:mb-6 pc:mb-10 max-w-[60%] text-purple-200 dark:text-white-200">
+                <h3 className="font-caviar text-lg tab:text-3xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
                     {title}
                 </h3>
                 <ul>
