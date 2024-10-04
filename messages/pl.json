@@ -1,7 +1,7 @@
 {
     "Home": {
-        "title": "i love my team",
-        "description": "Zespół, który dba o Twoje potrzeby. Razem możemy więcej i lepiej! Twój przyszły produkt jest w bezpiecznych rękach naszych specjalistów - zaufaj nam i ciesz się współpracą i rezultatami!"
+        "titleCEO": "Zespół, który dba o Twoje potrzeby",
+        "descriptionCEO": "Rozwiązujemy problemy biznesowe i złożone za pomocą narzędzi cyfrowych i kreatywnego podejścia do osiągania celów biznesowych"
     },
 
     "Hero": {
@@ -112,8 +112,9 @@
         "mobileBigTitlePart1": "Odpowiedzi na  ",
         "mobileBigTitlePart2": "często zadawane pytania",
         "pageBigTitle": "Odpowiedzi na często zadawane pytania",
+        "questionQuantity": "Liczba odpowiedzi: ",
         "question1": "Potrzebuję strony internetowej. Od czego zacząć?",
-        "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
+        "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić Ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą Ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
         "question2": "Co wybrać - landing page czy stronę internetową?",
         "answer2": "To zależy od tego, jakie zadanie próbujesz rozwiązać. W przypadku, gdy potrzebujesz zaprezentować jakąś jedną usługę lub towar, gdy potrzebujesz szybkiego rezultatu, a budżet na rozwój jest niewielki, to lepiej wybrać landing. W przypadku, gdy masz szeroki asortyment towarów lub usług, lub pragniesz zaprezentować swoją firmę i nadać dużo informacji potencjalnym klientom, lepiej wybrać pełnoprawną stronę internetową.",
         "question3": "Ile trwa stworzenie strony internetowej?",
@@ -129,11 +130,19 @@
         "allProjects": "Wszystkie projekty",
         "allQuestions": "Wszystkie pytania",
         "share": "Udostępnić",
-        "buyMeACoffe": "Poczęstować kawą",
+        "buyMeACoffee": "Poczęstować kawą",
         "learnMore": "Dowiedz się więcej",
         "goBack": "Powrót",
-        "writeUs": "napisz do nas"
+        "writeUs": "napisz do nas",
+        "readMore": "Czytaj więcej",
+        "return": "powrót",
+        "search": "Szukaj"
     },
+    "Badges": {
+        "readTimeSingular": " min czytania",
+        "readTimePlural": " min czytania"
+    },
+
     "Footer": {
         "titleFirstWord": "Zacznij ",
         "titleSecondWord": "wdrażać ",
@@ -148,7 +157,8 @@
     "NotFound": {
         "title": "Nie znaleziono strony",
         "info": "Nie możemy znaleźć strony, której szukasz. Być może wystąpił błąd",
-        "button": "do strony głównej"
+        "button": "do strony głównej",
+        "descriptionCEO": "Nie znaleziono strony, ale nie przegap okazji, aby sprawdzić nasze fajne animacje i kreatywne opisy!"
     },
     "SharePopover": {
         "shareLink": "Udostępnij łącze przez",
@@ -174,7 +184,9 @@
         "rulesLink": "Warunki przetwarzania danych osobowych",
         "submitButton": "Wyślij",
         "questionLabel": "Twoje pytanie*",
-        "questionPlaceholder": "Twoje pytanie*"
+        "questionPlaceholder": "Twoje pytanie*",
+        "askFormTitle": "Masz pytania?",
+        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -191,7 +203,7 @@
     "Notifications": {
         "thankYou": "Dziękujemy!",
         "waitResponse": "Wiadomość została wysłana. Nasz menedżer wkrótce się skontaktuje",
-        "somethingWrong": "Coś poszło nie tak",
+        "somethingWrong": "Coś poszło nie tak...",
         "tryAgain": "Spróbuj przesłać formularz ponownie",
         "linkIsCopied": "Link skopiowany"
     },
@@ -209,6 +221,8 @@
         "button": "ok"
     },
     "AboutPage": {
+        "titleCEO": "Naszym celem jest tworzenie niesamowitych produktów cyfrowych",
+        "descriptionCEO": "Tworzenie czegoś wyjątkowego to wyzwanie i pasja. Opracowujemy projekty, wdrażamy kreatywne rozwiązania, zapewniamy jakość i spersonalizowane wsparcie",
         "title": "O ",
         "titleAccent": "nas",
         "contentItem1": "o założycielce",
@@ -253,9 +267,23 @@
     },
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
-        "breadcrumbItemAbout": "O nas"
+        "breadcrumbItemAbout": "O nas",
+        "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
+        "titleCEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
+        "descriptionCEO": "Nie wiesz, co wybrać: stronę internetową, landing page, marketplace czy sklep internetowy? Uzyskaj porady dotyczące kosztów, harmonogramów, SEO i wszystkiego, czego potrzebujesz",
         "ctaText": "Nie znalazłeś odpowiedzi na swoje pytanie? Napisz do nas, a udzielimy Ci pierwszej konsultacji za darmo!"
+    },
+    "UnderConstruction": {
+        "title": "Strona w budowie",
+        "text": "Śledź nas i dowiaduj się jako pierwszy o aktualizacjach."
+    },
+    "SomeFaqPage": {
+        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna?</purple><br></br> <purple>Podziel się</purple> nią z kolegami! Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści.</purple>",
+        "allQuestionBack": "wszystkie pytania",
+        "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
+        "orderCardImgAlt": "Zamówić usługi",
+        "orderCardButton": "zamówić"
     }
 }

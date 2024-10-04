@@ -27,7 +27,7 @@ export const BuyMeCoffeeLink = ({
                 className={`hidden pc:block absolute font-caviar text-lg top-[19px] w-max opacity-0 
                     invisible group-hover:visible group-hover:opacity-100 duration-[600ms] group-hover:ease-in transition-opacity-visibility ${textClassName}`}
             >
-                {getTranslation("buyMeACoffe")}
+                {getTranslation("buyMeACoffee")}
             </p>
         </a>
     );
