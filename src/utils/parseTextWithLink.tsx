@@ -23,7 +23,10 @@ export const parseTextWithLink = (text: string, locale: string) => {
 
         parts.push(
             <a
-                className="dark:text-red dark:border-red text-redLight border-redLight border-b"
+                className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
+ transition-color ease-out duration-300 underline"
                 href={url}
                 key={url}
                 target="_blank"
