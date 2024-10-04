@@ -22,6 +22,7 @@ export const ImageComponent = ({ imgUrl, alt }: ImageComponentProps) => {
             alt={alt || "decoration image"}
             width={508}
             height={296}
+            className="w-full object-cover"
         />
     );
 };
