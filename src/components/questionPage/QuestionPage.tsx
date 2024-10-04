@@ -5,8 +5,8 @@ import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import type { LocaleType } from "@/types/LocaleType";
 
-import { FaqSectionCta } from "../faqPage/сtaSection/FaqSectionCta";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { CtaSectionAskUs } from "./CtaSection/CtaSectionAskUs";
 import { HelpfullAnswerSection } from "./HelpfullAnswerSection";
 import { MainContent } from "./MainContent";
 import { OrderCard } from "./OrderCard";
@@ -62,7 +62,7 @@ export const Question = ({ question }: QuestionPageProps) => {
                         imageAltText={imageAltText}
                     />
                     <HelpfullAnswerSection />
-                    <FaqSectionCta />
+                    <CtaSectionAskUs />
                 </>
             ) : (
                 <UnderConstruction />

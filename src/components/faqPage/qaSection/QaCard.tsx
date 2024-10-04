@@ -60,7 +60,7 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                 </div>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
-                        className="text-purple-100 dark:text-purple-50 text-sm"
+                        className="text-purple-100 dark:text-purple-50 text-sm my-auto"
                         text={allTexts}
                     />
                     <Link
