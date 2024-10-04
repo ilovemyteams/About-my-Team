@@ -6,6 +6,7 @@ import { draftMode } from "next/headers";
 import { getClient } from "@/sanity/lib/client";
 import {
     Home,
+    HomeAboutUsQueryResult,
     HomeServicesQueryResult,
     HomeStagesQueryResult,
     Project,
@@ -16,7 +17,8 @@ import { HomeProps, PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
 import { readToken } from "../lib/api";
 import {
     CTAQuery,
-    homePageQuery,
+    homeAboutUsQuery,
+    homeHeroQuery,
     homePortfolioQuery,
     homeServicesQuery,
     homeStagesQuery,
@@ -71,9 +73,9 @@ export function loadSettings(language = "ua") {
     );
 }
 
-export function loadHomePage(language = "ua") {
+export function loadHomeHero(language = "ua") {
     return loadQuery<HomeProps | null>(
-        homePageQuery,
+        homeHeroQuery,
         { language },
         { next: { tags: ["home"] } }
     );
@@ -113,6 +115,13 @@ export function loadServices(language = "ua") {
 export function loadStages(language = "ua") {
     return loadQuery<HomeStagesQueryResult>(
         homeStagesQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+export function loadHomeAboutUs(language = "ua") {
+    return loadQuery<HomeAboutUsQueryResult>(
+        homeAboutUsQuery,
         { language },
         { next: { tags: ["home"] } }
     );

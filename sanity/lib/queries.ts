@@ -1,11 +1,8 @@
 import { groq } from "next-sanity";
 
-export const homePageQuery = groq`
+export const homeHeroQuery = groq`
   *[_type == "home"][0]{
-  ...,
-  portfolioHome{ "title": title[_key == $language][0].value},
   hero {
-  
     "title": title[_key == $language][0].value,
     "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
     image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
@@ -79,3 +76,13 @@ export const homeStagesQuery = groq`
   "stagesListTitle":stagesList[].title[_key == $language][0].value ,
   "stagesListText":stagesList[].description[_key == $language][0].value
 }}`;
+
+export const homeAboutUsQuery = groq`
+  *[_type == "home"][0]{aboutUsHomeSection {
+  "title": sectionTitle[_key == $language][0].value,
+  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,
+  "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current
+} }`;

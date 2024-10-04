@@ -6,7 +6,7 @@ import { localeInURL } from "@/src/utils/localeInURL";
 export const MainPageNavList = () => {
     const getTranslation = useTranslations();
     const navList = [
-        { name: getTranslation("Mission.pageTitle"), id: "aboutus" },
+        { name: getTranslation("Mission.pageTitle"), id: "about-us" },
         { name: getTranslation("Portfolio.pageTitle"), id: "portfolio" },
         { name: getTranslation("Feedback.pageTitle"), id: "feedback" },
         { name: getTranslation("Services.pageTitle"), id: "services" },
