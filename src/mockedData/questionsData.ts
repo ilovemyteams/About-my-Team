@@ -45,7 +45,7 @@ export const questionsData: QAItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij",
         },
         ua: {
-            questionText: "Мені потрібен сайт. З чого мені почати?",
+            questionText: "Мені потрібен сайт. \nЗ чого мені почати?",
             shortAnswerText: [
                 "Почніть з чесної відповіді на такі питання “Навіщо мені сайт? Чого я очікую від сайту? Що я буду на ньому показувати? Кому я хочу це показати? І що повинні зробити ті, хто відвідають мій сайт?”. Відповіді на ці питання дають розуміння, чи потрібен вам взагалі сайт і яким він повинен бути.",
                 " А потім заповніть форму “Замовити” і надішліть нам ваші чесні відповіді, і ми все зробимо з турботою про ваші цілі та потреби вашого бізнесу.",
@@ -57,25 +57,25 @@ export const questionsData: QAItemType[] = [
 
             fullAnswerContent: [
                 {
-                    title: "Обговорення цілей",
+                    title: "Обговорення \nцілей",
                     text: [
                         "Почнемо з обговорення ваших цілей та потреб. Що ви хочете досягти за допомогою сайту? Яка ваша цільова аудиторія? Хто буде користуватись вашим сайтом і що ці люди будуть на ньому шукати? Які у вас вимоги і очікування?",
                     ],
                 },
                 {
-                    title: "Визначення типу сайту",
+                    title: "Визначення типу \nсайту",
                     text: [
                         "Важливо визначити, чи ви хочете лендінг-сторінку або повноцінний сайт для вашого бізнесу. Про різницю між лендінгом і сайтом можете детальніше почитати *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*тут*/link*.",
                     ],
                 },
                 {
-                    title: "Підбір команди",
+                    title: "Підбір \nкоманди",
                     text: [
                         "У нас представлені багато спеціалістів різного напрямку та рівня. В залежності від вашої потреби Менеджер підкаже вам оптимальний склад команди або ви можете обрати собі людей в команду самостійно.",
                     ],
                 },
                 {
-                    title: "Вибір дизайну та функціоналу",
+                    title: "Вибір дизайну та \nфункціоналу",
                     text: [
                         "Це залежить від ваших вподобань та специфіки вашого бізнесу.",
                         "В першу чергу ми попросимо у вас посилання на сайти, які вам подобаються  (це називається референси), щоб зрозуміти ваш смак та очікування.",
@@ -83,14 +83,14 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Розробка контенту",
+                    title: "Розробка \nконтенту",
                     text: [
                         "Збирання та підготовка контенту для сайту, включаючи текст, зображення, відео та інші матеріали - ми попросимо вас надати нам частину контенту одразу, щоб красиво і грамотно розмістити його на сайті з урахуванням ваших цілей та правил дизайну і розробки.",
                         "Якщо ви не маєте власного контенту (текстів, фото, відео і т.д.), то ми можемо залучити контент мейкера за окрему плату або працювати з вашими партнерами чи співробітниками і допомогти створити цей контент для вашого сайту.",
                     ],
                 },
                 {
-                    title: "Розробка та тестування",
+                    title: "Розробка та \nтестування",
                     text: [
                         "Розробка та налаштування сайту, включаючи його кодування, інтеграцію функціоналу та тестування на різних пристроях та браузерах.",
                         "Для початку ми з вами визначимо для яких пристроїв нам потрібно буде розробляти сайт (мобільні телефони, планшети, лептопи, проектори або великі екрани для презентації на виставках/конференціях), чи для всіх цих перерахованих?",
@@ -99,7 +99,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Запуск та підтримка",
+                    title: "Запуск та \nпідтримка",
                     text: [
                         "Після успішного тестування ми готові запустити ваш сайт та надати підтримку для подальшого вдосконалення та розвитку.",
                         "Ми також надаємо консультації та допомогу у виборі доменного імені та хостингу сайту на провайдері, підборі потужностей сервера або хмари для розміщення сайту.",
@@ -111,7 +111,7 @@ export const questionsData: QAItemType[] = [
             ],
         },
         pl: {
-            questionText: "Potrzebuję strony internetowej. Od czego zacząć?",
+            questionText: "Potrzebuję strony internetowej. \nOd czego zacząć?",
             shortAnswerText: [
                 "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać.",
                 "Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
@@ -122,25 +122,25 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Omówienie celów",
+                    title: "Omówienie \ncelów",
                     text: [
                         "Zaczniemy od omówienia Twoich celów i potrzeb. Co chcesz osiągnąć za pomocą strony? Kim jest Twoja grupa docelowa? Kto będzie korzystał z Twojej strony i czego te osoby będą na niej szukać? Jakie są Twoje wymagania i oczekiwania?",
                     ],
                 },
                 {
-                    title: "Określenie rodzaju strony",
+                    title: "Określenie rodzaju \nstrony",
                     text: [
                         "Ważne jest, aby określić, czy chcesz mieć stronę docelową, czy pełnoprawną stronę internetową dla swojej firmy. Możesz przeczytać więcej o różnicy między stroną docelową a stroną internetową *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*tutaj*/link*.",
                     ],
                 },
                 {
-                    title: "Dobór zespołu",
+                    title: "Dobór \nzespołu",
                     text: [
                         "Mamy wielu specjalistów o różnych kierunkach i poziomach. W zależności od potrzeb menedżer zaproponuje optymalny skład zespołu lub możesz wybrać własnych członków zespołu.",
                     ],
                 },
                 {
-                    title: "Wybór projektu i funkcjonalności",
+                    title: "Wybór projektu i \nfunkcjonalności",
                     text: [
                         "Zależy to od Twoich preferencji i specyfiki Twojego biznesu",
                         "Przede wszystkim poprosimy Cię o linki do stron internetowych, które Ci się podobają (nazywamy je referencjami), aby zrozumieć Twój gust i oczekiwania.",
@@ -148,14 +148,14 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Tworzenie treści",
+                    title: "Tworzenie \ntreści",
                     text: [
                         "Zbieranie i przygotowywanie treści na stronę, w tym tekstu, obrazów, filmów i innych materiałów — poprosimy Cię o dostarczenie nam części treści od razu, aby umieścić je na stronie w estetyczny i profesjonalny sposób, biorąc pod uwagę Twoje cele oraz zasady projektowania i rozwoju",
                         "Jeśli nie masz własnych treści (tekstów, zdjęć, filmów itp.), możemy zaangażować twórcę treści za dodatkową opłatą lub współpracować z Twoimi partnerami, lub pracownikami, aby pomóc w tworzeniu tych treści dla Twojej strony.",
                     ],
                 },
                 {
-                    title: "Rozwój i testowanie",
+                    title: "Rozwój i \ntestowanie",
                     text: [
                         "Rozwój i konfiguracja strony internetowej, w tym kodowanie, integracja funkcjonalności i testowanie na różnych urządzeniach i przeglądarkach.",
                         "Na początku ustalimy, dla jakich urządzeń potrzebujemy rozwijać stronę (smartfony, tablety, laptopy, projektory lub duże ekrany do prezentacji na wystawach/konferencjach), czy dla wszystkich wymienionych?",
@@ -164,7 +164,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Uruchomienie i wsparcie",
+                    title: "Uruchomienie i \nwsparcie",
                     text: [
                         "Po udanych testach jesteśmy gotowi do uruchomienia strony i zapewnienia wsparcia w zakresie dalszych ulepszeń i rozwoju.",
                         "Zapewniamy również konsultacje i pomoc w wyborze nazwy domeny i dostawcy hostingu na stronie, wybierając pojemność serwera lub chmury do hostingu strony.",
@@ -176,7 +176,7 @@ export const questionsData: QAItemType[] = [
             ],
         },
         en: {
-            questionText: "I need a website. Where should I start?",
+            questionText: "I need a website. \nWhere should I start?",
             shortAnswerText: [
                 "Start by answering the following questions honestly: “Why do I need a website? What do I expect from the website? What am I going to show on it? Who do I want to show it to? And what should those who visit my site do?” Answers to these questions will help you understand whether you need a website at all and what it should look like.",
                 "And then fill out the Order form and send us your honest answers, and we will do everything with care for your goals and the needs of your business.",
@@ -187,25 +187,25 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Goal discussion",
+                    title: "Goal \ndiscussion",
                     text: [
                         "We start by discussing your goals and needs. What do you want to achieve with your website? Who is your target audience? Who will use your website,  and what will they be looking for on it? What are your requirements and expectations?",
                     ],
                 },
                 {
-                    title: "Defining the type of website",
+                    title: "Defining the type \nof website",
                     text: [
                         "It is important to decide whether you need a landing page or a full-fledged website for your business. You can read more about the difference between a landing page and a website *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/faq/what-to-choose-a-landing-page-or-a-website`*here*/link*.",
                     ],
                 },
                 {
-                    title: "Team selection",
+                    title: "Team \nselection",
                     text: [
                         "We have a wide range of specialists across different fields and levels of expertise. Depending on your needs, the manager will recommend the best team configuration, or you can choose your team members on your own.",
                     ],
                 },
                 {
-                    title: "Design and functionality selection",
+                    title: "Design and functionality \nselection",
                     text: [
                         "It depends on your preferences and the specifics of your business.",
                         "First, we will ask you for links to websites you like (these are called references) to understand your taste and expectations.",
@@ -213,14 +213,14 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Content development",
+                    title: "Content \ndevelopment",
                     text: [
                         "Collecting and preparing content for the website, including text, images, videos and other materials — we will ask you to provide some of the content upfront so we can place it on the site beautifully and effectively, considering your goals and design/development principles.",
                         "If you don't have your content (texts, photos, videos, etc.), we can engage a content maker for a fee or work with your partners or employees to help create this content for your website.",
                     ],
                 },
                 {
-                    title: "Development and testing",
+                    title: "Development and \ntesting",
                     text: [
                         "Development and customization of the website, including coding, integration of functionality and testing on different devices and browsers.",
                         "First, we will determine which devices the website needs to be developed for (mobile phones, tablets, laptops, projectors, large screens for presentations at exhibitions/conferences, or all of the above?).",
@@ -229,7 +229,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Launch and support:",
+                    title: "Launch and \nsupport",
                     text: [
                         "After successful testing, we will be ready to launch your website and provide ongoing support for further improvement and growth.",
                         "We also offer consultation and assistance in choosing a domain name, website hosting provider, and selecting the appropriate server or cloud resources for hosting the site.",
@@ -522,7 +522,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Підготовчий етап:",
+                    title: "Підготовчий \nетап:",
                     text: [
                         "Збір первинних вимог до продукту від замовника;",
                         "Обговорення вимог та деталей проєкту, узгодження специфікацій;",
@@ -531,7 +531,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Розробка та тестування:",
+                    title: "Розробка \nта тестування:",
                     text: [
                         "Написання та затвердження вимог;",
                         "Підготовка тестової документації;",
@@ -544,7 +544,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Завершальні роботи та запуск:",
+                    title: "Завершальні роботи \nта запуск:",
                     text: [
                         "End-to-End тестування та розміщення продукту на сервері;",
                         "Підготовка до запуску, налаштування хостингу, сертифікатів;",
@@ -552,7 +552,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Підтримка та розвиток:",
+                    title: "Підтримка \nта розвиток:",
                     text: [
                         "Надання підтримки після запуску;",
                         "Подальший розвиток сайту, додавання нового функціоналу та контенту.",
@@ -574,7 +574,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Etap przygotowawczy:",
+                    title: "Etap \nprzygotowawczy:",
                     text: [
                         "Zebranie od klienta wstępnych wymagań dotyczących produktu;",
                         "Omówienie wymagań i szczegółów projektu, uzgodnienie specyfikacji;",
@@ -583,7 +583,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Rozwój i testowanie:",
+                    title: "Rozwój \ni testowanie:",
                     text: [
                         "Pisanie i zatwierdzanie wymagań;",
                         "Przygotowanie dokumentacji testowej;",
@@ -596,7 +596,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Prace końcowe i uruchomienie:",
+                    title: "Prace końcowe \ni uruchomienie:",
                     text: [
                         "Testowanie End-to-End oraz umieszczenie produktu na serwerze;",
                         "Przygotowanie do uruchomienia, konfiguracja hostingu, certyfikaty;",
@@ -604,7 +604,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Wsparcie i rozwój:",
+                    title: "Wsparcie \ni rozwój:",
                     text: [
                         "Zapewnienie wsparcia po uruchomieniu;",
                         "Dalszy rozwój strony, dodawanie nowych funkcji i treści.",
@@ -628,7 +628,7 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    title: "Preparation stage:",
+                    title: "Preparation \nstage:",
                     text: [
                         "Collecting primary product requirements from the client;",
                         "Discussing project details and aligning specifications;",
@@ -637,7 +637,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Development and testing:",
+                    title: "Development \nand testing:",
                     text: [
                         "Writing and approving requirements;",
                         "Preparing test documentation;",
@@ -650,7 +650,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Final steps and launch:",
+                    title: "Final steps \nand launch:",
                     text: [
                         "End-to-End testing and placing the product on the server;",
                         "Preparing for launch, setting up hosting, certificates;",
@@ -658,7 +658,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    title: "Support and development:",
+                    title: "Support \nand development:",
                     text: [
                         "Providing post-launch support;",
                         "Further development of the website, adding new functionality and content.",
