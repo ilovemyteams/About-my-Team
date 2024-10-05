@@ -13,6 +13,7 @@ export const SocialLinksList = () => {
         linkedin: <IconLinkedin />,
         behance: <IconBehance />,
         github: <IconGithub />,
+        // TODO: change the icon after merge with dev. Merge after resolving issues with paths
         youtube: <IconTelegram />,
     };
 
