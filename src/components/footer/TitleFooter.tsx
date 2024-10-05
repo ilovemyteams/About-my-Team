@@ -1,7 +1,9 @@
-import { PortableColorTitle } from "@/types/sanity.types";
-import { TitleWrapper } from "../shared/TitleWrapper";
 import { PortableText } from "next-sanity";
+
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
+import { PortableColorTitle } from "@/types/sanity.types";
+
+import { TitleWrapper } from "../shared/TitleWrapper";
 
 export const TitleFooter = ({
     title,

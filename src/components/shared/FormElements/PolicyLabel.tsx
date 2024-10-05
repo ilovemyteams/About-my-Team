@@ -1,6 +1,7 @@
-import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 import { useTranslations } from "next-intl";
 import React from "react";
+
+import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 export const PolicyLabel = () => {
     const getTranslation = useTranslations("CustomerForm");
