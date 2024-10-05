@@ -1,10 +1,11 @@
 import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
+import { SupportedPlatforms } from "@/types/sanityDataPropsTypes";
+
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { SocialLink } from "../../shared/SocialLink";
 import { IconTelegram } from "../../shared/Icons/IconTelegram";
-import { SupportedPlatforms } from "@/types/sanityDataPropsTypes";
+import { SocialLink } from "../../shared/SocialLink";
 
 export const SocialLinksList = () => {
     const { data } = useSettingsContext();

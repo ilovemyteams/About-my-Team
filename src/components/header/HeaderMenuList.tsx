@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useLocale } from "next-intl";
+
 import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 interface HeaderMenuListProps {
