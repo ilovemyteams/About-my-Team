@@ -4,9 +4,15 @@ interface SocialLinkProps {
     url: string;
     image: ReactNode;
     className?: string;
+    newWindow: boolean;
 }
 
-export const SocialLink = ({ url, image, className }: SocialLinkProps) => {
+export const SocialLink = ({
+    url,
+    image,
+    className,
+    newWindow,
+}: SocialLinkProps) => {
     return (
         <a
             href={url}
