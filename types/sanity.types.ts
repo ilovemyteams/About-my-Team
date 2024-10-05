@@ -1363,31 +1363,10 @@ export type CTAQueryResult = {
     } | null;
 } | null;
 // Variable: settingsQuery
-// Query: *[_type == "settings"][0]{  ...,    footer,    menuItems[]->{      _type,      "slug": slug.current,      title    },    ogImage,    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
+// Query: *[_type == "settings"][0]{    menuItems[]->{      _type,      "slug": slug.current,      title    },    ogImage,    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
 export type SettingsQueryResult = {
-    _id: string;
-    _type: "settings";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    language?: string;
-    header?: Header;
-    footer: Footer | null;
-    notFoundPage?: NotFoundPage;
-    seo?: Seo;
-    buttonBuyMeCoffee: {
-        _type: "button";
-        buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
-        linkInternal?: LinkInternal;
-        linkExternal?: LinkExternal;
-        internalSitePageLink?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "page";
-        };
-    } | null;
+    menuItems: null;
+    ogImage: null;
     buttonJoinUS: {
         _type: "button";
         buttonName: string | null;
@@ -1414,8 +1393,32 @@ export type SettingsQueryResult = {
             [internalGroqTypeReferenceTo]?: "page";
         };
     } | null;
-    menuItems: null;
-    ogImage: null;
+    buttonBuyMeCoffee: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+        internalSitePageLink?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "page";
+        };
+    } | null;
+} | null;
+// Variable: footerQuery
+// Query: *[_type == "settings"][0]{    "title": footer.title[_key == $language][0].value,      "rightsReserved": footer.rightsReserved[_key == $language][0].value,      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,       "navigationMenu": footer.navigationMenu[]{      linkInternal,      "titleMenu":title[_key == $language][0].value    }          }
+export type FooterQueryResult = {
+    title: PortableColorTitle | null;
+    rightsReserved: string | null;
+    privacyPolicyTitle: string | null;
+    privacyPolicyURL: null;
+    privacyPolicyNewWindow: null;
+    navigationMenu: Array<{
+        linkInternal: string | null;
+        titleMenu: string | null;
+    }> | null;
 } | null;
 // Variable: projectQuery
 // Query: *[_type == "project"]{_id,"title": title[_key == $language][0].value,   image {"caption":caption[_key == $language][0].value, "asset": asset->url},   stages, URL,   "category":category->categoryName[_key == $language][0].value}
@@ -1473,7 +1476,8 @@ declare module "@sanity/client" {
         '\n  *[_type == "home"][0]{\n  hero {\n    "title": title[_key == $language][0].value,\n    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},\n    "category":category->categoryName[_key == $language][0].value,\n    _id}\n  }\n}': HomeHeroQueryResult;
         '\n  *[_type == "home"][0]{\n  portfolioHome{"title": title[_key == $language][0].value, \n    "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,\n    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},\n    "category":category->categoryName[_key == $language][0].value,\n    _id, stages, URL}\n  }\n}': HomePortfolioQueryResult;
         '\n *[_type == "home"][0]{\n    ctaSectionWriteUs {"title": title[_key == $language][0].value}, \n    ctaSectionJoinUs {"title": title[_key == $language][0].value}, \n    ctaSectionOrder {"title": title[_key == $language][0].value, \n    "description": description[_key == $language][0].value[0].children[0].text}\n    }\n': CTAQueryResult;
-        '\n  *[_type == "settings"][0]{\n  ...,\n    footer,\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
+        '\n  *[_type == "settings"][0]{\n    menuItems[]->{\n      _type,\n      "slug": slug.current,\n      title\n    },\n    ogImage,\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
+        '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;

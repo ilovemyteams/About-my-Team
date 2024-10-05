@@ -1,8 +1,10 @@
+import { PortableText } from "next-sanity";
+
+import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
+import { PortableColorTitle } from "@/types/sanity.types";
+
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 import { TitleWrapper } from "../../shared/TitleWrapper";
-import { PortableColorTitle } from "@/types/sanity.types";
-import { PortableText } from "next-sanity";
-import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
 
 export const MissionTitle = ({
     subtitle,

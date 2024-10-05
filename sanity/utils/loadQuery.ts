@@ -10,13 +10,18 @@ import {
     HomeServicesQueryResult,
     HomeStagesQueryResult,
     Project,
-    Settings,
+    SettingsQueryResult,
 } from "@/types/sanity.types";
-import { HomeProps, PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
+import {
+    FooterQueryResult,
+    HomeProps,
+    PortfolioHomeProps,
+} from "@/types/sanityDataPropsTypes";
 
 import { readToken } from "../lib/api";
 import {
     CTAQuery,
+    footerQuery,
     homeAboutUsQuery,
     homeHeroQuery,
     homePortfolioQuery,
@@ -66,10 +71,18 @@ export const loadQuery = ((query, params = {}, options = {}) => {
  */
 
 export function loadSettings(language = "ua") {
-    return loadQuery<Settings | null>(
+    return loadQuery<SettingsQueryResult | null>(
         settingsQuery,
         { language },
         { next: { tags: ["settings", "home"] } }
+    );
+}
+
+export function loadFooter(language = "ua") {
+    return loadQuery<FooterQueryResult | null>(
+        footerQuery,
+        { language },
+        { next: { tags: ["settings"] } }
     );
 }
 

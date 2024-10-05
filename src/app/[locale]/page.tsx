@@ -18,9 +18,9 @@ import { QaSection } from "@/src/components/qAsection/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
-import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
+import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
-export default async function HomePage(props: HomePageParamsProps) {
+export default async function HomePage(props: PageParamsProps) {
     const [hero, about, cta, portfolioSection, services, stages] =
         await Promise.all([
             await loadHomeHero(props.params.locale),

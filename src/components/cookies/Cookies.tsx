@@ -1,10 +1,10 @@
 "use client";
 import Cookies from "js-cookie";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
 
-import { selectedLink } from "@/src/utils/selectedLink";
+import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { Button } from "../shared/Button";
 
@@ -13,8 +13,9 @@ export const CookiesComponent = () => {
     const cookiesValue = Cookies.get("isAccetedCookies");
     const cookiesRef = useRef<HTMLDivElement>(null);
     const getTranslation = useTranslations("Cookies");
-    const locale = useLocale();
-    const policyURL = selectedLink(locale);
+    const { footerData } = useSettingsContext();
+
+    const selectedLink = footerData?.privacyPolicyURL || "";
 
     useEffect(() => {
         if (cookiesValue) {
@@ -38,7 +39,7 @@ export const CookiesComponent = () => {
                 <div className="pc:w-[60%]">
                     {getTranslation("text")}{" "}
                     <a
-                        href={policyURL}
+                        href={selectedLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="dark:text-purple-50 text-purple-130"

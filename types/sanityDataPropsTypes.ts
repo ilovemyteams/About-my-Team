@@ -4,6 +4,7 @@ import {
     FaqHome,
     internalGroqTypeReferenceTo,
     InternationalizedArrayTextValue,
+    PortableColorTitle,
     PortfolioHome,
     ReviewsHome,
     ServicesHome,
@@ -15,7 +16,7 @@ import { Home } from "./sanity.types";
 export interface HomePageProps {
     data: Home | null;
 }
-export type HomePageParamsProps = { params: { locale: string } };
+export type PageParamsProps = { params: { locale: string } };
 
 export type LinkType = "linkExternal" | "linkInternal";
 
@@ -98,3 +99,15 @@ export type HomeProps = {
 export interface HomeFullProps {
     data: HomeProps | null;
 }
+
+export type FooterQueryResult = {
+    title: PortableColorTitle | null;
+    rightsReserved: string | null;
+    privacyPolicyTitle: string | null;
+    privacyPolicyURL: string | null;
+    privacyPolicyNewWindow: boolean;
+    navigationMenu: Array<{
+        linkInternal: string | null;
+        titleMenu: string | null;
+    }> | null;
+} | null;

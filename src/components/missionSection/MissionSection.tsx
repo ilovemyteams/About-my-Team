@@ -4,11 +4,12 @@ import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
+import { HomeAboutUsQueryResult } from "@/types/sanity.types";
+
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
 import { MissionTitle } from "./Title/MissionTitle";
-import { HomeAboutUsQueryResult } from "@/types/sanity.types";
 
 export const MissionSection = ({ data }: { data: HomeAboutUsQueryResult }) => {
     const { ref, inView } = useInView({

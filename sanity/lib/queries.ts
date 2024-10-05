@@ -33,8 +33,6 @@ export const CTAQuery = groq`
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
-  ...,
-    footer,
     menuItems[]->{
       _type,
       "slug": slug.current,
@@ -47,6 +45,20 @@ export const settingsQuery = groq`
 
   }
 `;
+
+export const footerQuery = groq`
+*[_type == "settings"][0]
+{
+    "title": footer.title[_key == $language][0].value,
+      "rightsReserved": footer.rightsReserved[_key == $language][0].value,
+      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,
+      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,
+      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,
+       "navigationMenu": footer.navigationMenu[]{
+      linkInternal,
+      "titleMenu":title[_key == $language][0].value
+    }
+          }`;
 
 export const projectQuery = groq`
 *[_type == "project"]

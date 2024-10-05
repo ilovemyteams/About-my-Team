@@ -6,11 +6,12 @@ import { type ThemeProviderProps } from "next-themes/dist/types";
 import * as React from "react";
 
 import { getClient } from "@/sanity/lib/client";
-import { settingsQuery } from "@/sanity/lib/queries";
+import { footerQuery, settingsQuery } from "@/sanity/lib/queries";
 import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 export const Providers = ({ children, ...props }: ThemeProviderProps) => {
     const { setData } = useSettingsContext();
+    const { setDataFooter } = useSettingsContext();
     const locale = useLocale();
 
     React.useEffect(() => {
@@ -23,6 +24,18 @@ export const Providers = ({ children, ...props }: ThemeProviderProps) => {
         }
         fetchDataSettings();
     }, [locale, setData]);
+
+    React.useEffect(() => {
+        async function fetcFooterhData() {
+            const client = getClient();
+            const footerSanityData = await client.fetch(footerQuery, {
+                language: locale,
+            });
+            setDataFooter(footerSanityData);
+        }
+        fetcFooterhData();
+    }, [locale, setDataFooter]);
+
     return (
         <NextUIProvider>
             <NextThemesProvider
