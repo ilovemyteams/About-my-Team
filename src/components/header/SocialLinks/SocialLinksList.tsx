@@ -17,8 +17,6 @@ export const SocialLinksList = () => {
     };
 
     const socialLinksData = data?.header?.socialLinks;
-    console.log(socialLinksData);
-
     return (
         <ul className="flex pc:flex-col gap-2">
             {socialLinksData &&
