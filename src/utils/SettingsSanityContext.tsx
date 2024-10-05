@@ -1,11 +1,13 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
 
-import { Settings } from "@/types/sanity.types";
+import { FooterQueryResult, Settings } from "@/types/sanity.types";
 
 interface SettingsContextType {
     data: Settings | null;
     setData: (data: Settings | null) => void;
+    footerData: FooterQueryResult | null;
+    setDataFooter: (data: FooterQueryResult | null) => void;
 }
 
 export const SettingsContext = createContext<SettingsContextType | undefined>(
@@ -18,9 +20,14 @@ export const SettingsContextProvider = ({
     children: React.ReactNode;
 }) => {
     const [data, setData] = useState<Settings | null>(null);
+    const [footerData, setDataFooter] = useState<FooterQueryResult | null>(
+        null
+    );
 
     return (
-        <SettingsContext.Provider value={{ data, setData }}>
+        <SettingsContext.Provider
+            value={{ data, setData, footerData, setDataFooter }}
+        >
             {children}
         </SettingsContext.Provider>
     );

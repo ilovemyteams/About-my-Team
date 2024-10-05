@@ -9,7 +9,7 @@ import React from "react";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
-import { Footer } from "@/src/components/footer/Footer";
+import Footer from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";

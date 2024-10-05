@@ -6,9 +6,9 @@ import { PresentationSection } from "@/src/components/aboutPage/PresentationSect
 import { QuoteSection } from "@/src/components/aboutPage/QuoteSection";
 import { TeamSection } from "@/src/components/aboutPage/TeamSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
-import { HomePageParamsProps } from "@/types/sanityDataPropsTypes";
+import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
-export default async function About(props: HomePageParamsProps) {
+export default async function About(props: PageParamsProps) {
     const cta = await loadHomeHero(props.params.locale);
     return (
         <>
