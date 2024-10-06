@@ -7,6 +7,7 @@ import { getClient } from "@/sanity/lib/client";
 import {
     Home,
     HomeAboutUsQueryResult,
+    HomeFAQQueryResult,
     HomeServicesQueryResult,
     HomeStagesQueryResult,
     Project,
@@ -23,6 +24,7 @@ import {
     CTAQuery,
     footerQuery,
     homeAboutUsQuery,
+    homeFAQQuery,
     homeHeroQuery,
     homePortfolioQuery,
     homeServicesQuery,
@@ -135,6 +137,14 @@ export function loadStages(language = "ua") {
 export function loadHomeAboutUs(language = "ua") {
     return loadQuery<HomeAboutUsQueryResult>(
         homeAboutUsQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+
+export function loadHomeFaq(language = "ua") {
+    return loadQuery<HomeFAQQueryResult>(
+        homeFAQQuery,
         { language },
         { next: { tags: ["home"] } }
     );
