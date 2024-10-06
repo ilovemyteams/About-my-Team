@@ -21,8 +21,7 @@ import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemas";
 import { singletonPagesType, structure } from "./sanity/structure/index";
 
-const SANITY_STUDIO_PREVIEW_URL =
-    process.env.SANITY_STUDIO_PREVIEW_URL || "http://localhost:3000";
+const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || "/";
 
 export default defineConfig({
     basePath: studioUrl,
