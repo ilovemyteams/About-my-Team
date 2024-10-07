@@ -41,6 +41,8 @@ export const buttonType = defineField({
         defineField({
             name: "linkInternal",
             title: "Internal Link",
+            description:
+                "Select the page from the list to which you want to link.",
             type: "linkInternal",
             hidden: ({ parent }) => parent?.buttonLink !== "internal",
         }),
