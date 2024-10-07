@@ -35,17 +35,23 @@ export const faqType = defineField({
         defineField({
             name: "fullAnswer",
             type: "internationalizedArrayPortableText",
-            title: "Full version of the answer",
+            title: "Full version of the answer (optional)",
             description:
                 "Provide a full answer option for a single question page",
-            validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "image",
             title: "Question image",
-            description: "Question image to show in the all questions page",
-            type: "image",
+            type: "object",
             fields: [
+                {
+                    name: "image",
+                    title: "Image",
+                    description:
+                        "Question image to show in the all questions page",
+                    type: "image",
+                    validation: rule => rule.required(),
+                },
                 {
                     name: "caption",
                     type: "internationalizedArrayString",
