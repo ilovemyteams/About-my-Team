@@ -70,6 +70,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                         <SocialLink
                             url={socialLinks.linkedin}
                             image={iconLinkedin}
+                            newWindow={true}
                         />
                     </div>
                 </div>

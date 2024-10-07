@@ -111,3 +111,5 @@ export type FooterQueryResult = {
         titleMenu: string | null;
     }> | null;
 } | null;
+
+export type SupportedPlatforms = "linkedin" | "github" | "behance" | "youtube";

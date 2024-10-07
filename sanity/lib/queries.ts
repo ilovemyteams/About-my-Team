@@ -33,12 +33,11 @@ export const CTAQuery = groq`
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
-    menuItems[]->{
-      _type,
-      "slug": slug.current,
-      title
-    },
-    ogImage,
+  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},
+  "navigationMenu": navigationMenu[]{
+  linkInternal,
+  "titleMenu":title[_key == $language][0].value
+  }},
     buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},
     buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
     buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
