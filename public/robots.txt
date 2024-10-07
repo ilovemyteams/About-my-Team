@@ -7,7 +7,7 @@ User-agent: *
 Disallow: /api/*
 
 # Host
-Host: https://www.ilovemyteam.online
+Host: https://about-my-team-zeta.vercel.app/
 
 # Sitemaps
-Sitemap: https://www.ilovemyteam.online/sitemap.xml
+Sitemap: https://about-my-team-zeta.vercel.app/sitemap.xml
