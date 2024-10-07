@@ -1490,6 +1490,17 @@ export type HomeAboutUsQueryResult = {
         buttonPageLink: string | null;
     } | null;
 } | null;
+// Variable: homeFAQQuery
+// Query: *[_type == "home"][0]{  "title": faqHome.title[_key == $language][0].value,  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value,   "anchorId": faqHome.sectionId.anchorId.current,  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value,                                  "shortAnswer":shortAnswer[_key == $language][0].value}}
+export type HomeFAQQueryResult = {
+    title: PortableColorTitle | null;
+    subtitle: string | null;
+    anchorId: string | null;
+    faqList: Array<{
+        question: string | null;
+        shortAnswer: string | null;
+    }> | null;
+} | null;
 
 // Query TypeMap
 import "@sanity/client";
@@ -1504,5 +1515,6 @@ declare module "@sanity/client" {
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
         '\n  *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current\n} }': HomeAboutUsQueryResult;
+        '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
     }
 }

@@ -4,10 +4,7 @@ import { useState } from "react";
 import { IconUp } from "../shared/Icons/IconUp";
 
 interface AccordionProps {
-    item: {
-        question: string;
-        answer: string;
-    };
+    item: { question: string | null; shortAnswer: string | null };
 }
 
 export function Accordion({ item }: AccordionProps) {
@@ -45,7 +42,7 @@ export function Accordion({ item }: AccordionProps) {
                 className={`text-geist text-sm tab:text-base deskxl:text-lg overflow-hidden mb-[8px] transition-[max-height] duration-[600ms] ease-in 
                     ${isAccordionOpen ? "max-h-[300px]" : "max-h-0"}`}
             >
-                {item.answer}
+                {item.shortAnswer}
             </p>
         </li>
     );

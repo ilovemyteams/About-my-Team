@@ -97,3 +97,12 @@ export const homeAboutUsQuery = groq`
   "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,
   "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current
 } }`;
+
+export const homeFAQQuery = groq`
+  *[_type == "home"][0]{
+  "title": faqHome.title[_key == $language][0].value,
+  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": faqHome.sectionId.anchorId.current,
+  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, 
+                                 "shortAnswer":shortAnswer[_key == $language][0].value}
+}`;
