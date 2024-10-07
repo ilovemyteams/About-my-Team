@@ -20,12 +20,7 @@ export const GROUPS = [
 ];
 
 // References to include in 'internal' links
-export const PAGE_REFERENCES = [
-    { type: "home" },
-    //   {type: 'collection'},
-    //   {type: 'page'},
-    //   {type: 'product'},
-];
+export const PAGE_REFERENCES = [{ type: "home" }, { type: "page" }];
 
 export const SUPPORTED_LANGUAGES = [
     { id: "ua", title: "Ukraine" },
