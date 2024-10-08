@@ -41,6 +41,8 @@ export const buttonType = defineField({
         defineField({
             name: "linkInternal",
             title: "Internal Link",
+            description:
+                "Select the page from the list to which you want to link.",
             type: "linkInternal",
             hidden: ({ parent }) => parent?.buttonLink !== "internal",
         }),
@@ -49,15 +51,6 @@ export const buttonType = defineField({
             title: "External Link",
             type: "linkExternal",
             hidden: ({ parent }) => parent?.buttonLink !== "external",
-        }),
-        defineField({
-            name: "internalSitePageLink",
-            title: "Internal Site Page Link",
-            description:
-                "To select an existing page, click the text field and choose from the list. To create a new page, click the 'Create' button.",
-            type: "reference",
-            to: [{ type: "page" }],
-            hidden: ({ parent }) => parent?.buttonLink !== "pageBuilder",
         }),
     ],
 });

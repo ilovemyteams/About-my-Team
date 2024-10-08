@@ -147,35 +147,6 @@ export type AboutUsItem = {
     >;
 };
 
-export type Page = {
-    _id: string;
-    _type: "page";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    pageSlug?: Slug;
-    parentPage?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "page";
-    };
-    pageBuilder?: Array<
-        | ({
-              _key: string;
-          } & HeroHome)
-        | ({
-              _key: string;
-          } & CallToAction)
-    >;
-    seo?: Seo;
-};
-
 export type SocialLinks = {
     _type: "socialLinks";
     platform?:
@@ -536,20 +507,22 @@ export type Faq = {
         } & InternationalizedArrayPortableTextValue
     >;
     image?: {
-        asset?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        image?: {
+            asset?: {
+                _ref: string;
+                _type: "reference";
+                _weak?: boolean;
+                [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+            };
+            hotspot?: SanityImageHotspot;
+            crop?: SanityImageCrop;
+            _type: "image";
         };
-        hotspot?: SanityImageHotspot;
-        crop?: SanityImageCrop;
         caption?: Array<
             {
                 _key: string;
             } & InternationalizedArrayStringValue
         >;
-        _type: "image";
     };
 };
 
@@ -741,12 +714,48 @@ export type SpecialistCategory = {
 
 export type LinkInternal = {
     _type: "linkInternal";
-    reference?: {
+    reference?:
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              [internalGroqTypeReferenceTo]?: "home";
+          }
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              [internalGroqTypeReferenceTo]?: "page";
+          };
+};
+
+export type Page = {
+    _id: string;
+    _type: "page";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayPortableColorTitleValue
+    >;
+    pageSlug?: Slug;
+    parentPage?: {
         _ref: string;
         _type: "reference";
         _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "home";
+        [internalGroqTypeReferenceTo]?: "page";
     };
+    pageBuilder?: Array<
+        | ({
+              _key: string;
+          } & HeroHome)
+        | ({
+              _key: string;
+          } & CallToAction)
+    >;
+    seo?: Seo;
 };
 
 export type Home = {
@@ -1032,12 +1041,6 @@ export type Button = {
     buttonLink?: "noLink" | "internal" | "external" | "pageBuilder";
     linkInternal?: LinkInternal;
     linkExternal?: LinkExternal;
-    internalSitePageLink?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "page";
-    };
 };
 
 export type SanityImageCrop = {
@@ -1241,7 +1244,6 @@ export type AllSanitySchemaTypes =
     | Customer
     | AnchorLink
     | AboutUsItem
-    | Page
     | SocialLinks
     | Milestone
     | Duration
@@ -1268,6 +1270,7 @@ export type AllSanitySchemaTypes =
     | Specialist
     | SpecialistCategory
     | LinkInternal
+    | Page
     | Home
     | FaqHome
     | StagesHome
@@ -1395,12 +1398,6 @@ export type SettingsQueryResult = {
         buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
-        internalSitePageLink?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "page";
-        };
     } | null;
     buttonOrder: {
         _type: "button";
@@ -1408,12 +1405,6 @@ export type SettingsQueryResult = {
         buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
-        internalSitePageLink?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "page";
-        };
     } | null;
     buttonBuyMeCoffee: {
         _type: "button";
@@ -1421,12 +1412,6 @@ export type SettingsQueryResult = {
         buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
-        internalSitePageLink?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "page";
-        };
     } | null;
 } | null;
 // Variable: footerQuery
@@ -1487,7 +1472,7 @@ export type HomeAboutUsQueryResult = {
         subtitle: string | null;
         anchorId: string | null;
         learnMoreButtonName: string | null;
-        buttonPageLink: string | null;
+        buttonPageLink: null;
     } | null;
 } | null;
 // Variable: homeFAQQuery
