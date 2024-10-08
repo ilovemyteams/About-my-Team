@@ -14,11 +14,6 @@ interface FormValues {
     message: string;
 }
 
-interface StatusType {
-    activeField: string | null;
-    isFormChanged: boolean;
-}
-
 export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
@@ -28,11 +23,6 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
         name: "",
         email: "",
         message: "",
-    };
-
-    const initialStatus: StatusType = {
-        activeField: "",
-        isFormChanged: false,
     };
 
     const onSubmit = async (values: FormValues) => {
@@ -63,7 +53,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
             initialValues={initialValue}
             validationSchema={validationSchema}
             onSubmit={onSubmit}
-            initialStatus={initialStatus}
+            initialStatus={"name"}
         >
             {({
                 values,
@@ -76,21 +66,6 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                 setStatus,
                 isSubmitting,
             }) => {
-                const onFocusField = (fieldName: string) => {
-                    if (fieldName !== "name" && !status.isFormChanged) {
-                        setStatus({
-                            activeField: fieldName,
-                            isFormChanged: true,
-                        });
-                        return;
-                    }
-
-                    setStatus({
-                        activeField: fieldName,
-                        isFormChanged: status.isFormChanged,
-                    });
-                };
-
                 return (
                     <Form
                         onSubmit={handleSubmit}
@@ -112,16 +87,9 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                             value={values.name}
                             type="text"
                             placeholder={getTranslation("namePlaceholder")}
-                            isError={
-                                !!(
-                                    status.isFormChanged &&
-                                    touched.name &&
-                                    errors.name
-                                )
-                            }
-                            autoFocus={true}
-                            status={status.activeField}
-                            onFocus={onFocusField}
+                            isError={!!(touched.name && errors.name)}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="email"
@@ -130,9 +98,8 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                             type="email"
                             placeholder={getTranslation("emailPlaceholder")}
                             isError={!!(errors.email && touched.email)}
-                            autoFocus={false}
-                            status={status.activeField}
-                            onFocus={onFocusField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="message"
@@ -141,16 +108,13 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                             type="textarea"
                             placeholder={getTranslation("questionLabel")}
                             isError={!!(errors.message && touched.message)}
-                            autoFocus={false}
-                            status={status.activeField}
-                            onFocus={onFocusField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2 self-start">
                             <p
                                 className={
-                                    (status.isFormChanged &&
-                                        errors.name &&
-                                        touched.name) ||
+                                    (errors.name && touched.name) ||
                                     (errors.email && touched.email) ||
                                     (errors.message && touched.message)
                                         ? "text-error"

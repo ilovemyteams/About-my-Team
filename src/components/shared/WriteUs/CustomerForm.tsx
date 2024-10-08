@@ -20,11 +20,6 @@ export interface ValuesWriteUsFormType {
     message: string;
 }
 
-interface StatusType {
-    activeField: string | null;
-    isFormChanged: boolean;
-}
-
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
 
@@ -40,10 +35,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         message: "",
     };
 
-    const initialStatus: StatusType = {
-        activeField: "",
-        isFormChanged: false,
-    };
+    const initialStatus = "name";
 
     const submitForm = async (values: ValuesWriteUsFormType) => {
         const onSendData = async () => {
@@ -90,21 +82,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 touched,
                 isSubmitting,
             }) => {
-                const onFocusField = (fieldName: string) => {
-                    if (fieldName !== "name" && !status.isFormChanged) {
-                        setStatus({
-                            activeField: fieldName,
-                            isFormChanged: true,
-                        });
-                        return;
-                    }
-
-                    setStatus({
-                        activeField: fieldName,
-                        isFormChanged: status.isFormChanged,
-                    });
-                };
-
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
                         <CustomField
@@ -113,16 +90,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("nameLabel")}
                             placeholder={getTranslation("namePlaceholder")}
                             type="text"
-                            autoFocus={true}
-                            isError={
-                                !!(
-                                    status.isFormChanged &&
-                                    touched.name &&
-                                    errors.name
-                                )
-                            }
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            isError={!!(touched.name && errors.name)}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="email"
@@ -130,10 +100,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("emailLabel")}
                             placeholder={getTranslation("emailPlaceholder")}
                             type="text"
-                            autoFocus={false}
                             isError={!!(touched.email && errors.email)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="telegram"
@@ -141,10 +110,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("telegramLabel")}
                             placeholder={getTranslation("telegramPlaceholder")}
                             type="text"
-                            autoFocus={false}
                             isError={!!(touched.telegram && errors.telegram)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="linkedin"
@@ -152,10 +120,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("linkedinLabel")}
                             placeholder={getTranslation("linkedinPlaceholder")}
                             type="text"
-                            autoFocus={false}
                             isError={!!(touched.linkedin && errors.linkedin)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="instagram"
@@ -163,10 +130,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("instagramLabel")}
                             placeholder={getTranslation("instagramPlaceholder")}
                             type="text"
-                            autoFocus={false}
                             isError={!!(touched.instagram && errors.instagram)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="facebook"
@@ -174,10 +140,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("facebookLabel")}
                             placeholder={getTranslation("facebookPlaceholder")}
                             type="text"
-                            autoFocus={false}
                             isError={!!(touched.facebook && errors.facebook)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
                         <CustomField
                             name="message"
@@ -185,15 +150,14 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             label={getTranslation("messageLabel")}
                             placeholder={getTranslation("messagePlaceholder")}
                             type="textarea"
-                            autoFocus={false}
                             isError={!!(touched.message && errors.message)}
-                            onFocus={onFocusField}
-                            status={status.activeField}
+                            setStatus={setStatus}
+                            status={status}
                         />
 
                         <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
                             <p
-                                className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(status.isFormChanged && touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-purple-200 dark:text-grey"}`}
+                                className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-purple-200 dark:text-grey"}`}
                             >
                                 {getTranslation("requiredField")}
                             </p>
