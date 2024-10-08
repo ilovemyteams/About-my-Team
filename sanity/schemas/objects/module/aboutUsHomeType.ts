@@ -17,8 +17,9 @@ export const aboutUsItemType = defineField({
     ],
     preview: {
         select: {
-            title: "About us",
+            title: "AboutUs",
         },
+
         prepare({ title }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
