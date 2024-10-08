@@ -8,8 +8,8 @@ interface CustomFieldProps {
     placeholder: string;
     isError: boolean;
     autoFocus: boolean;
-    status: null | string;
-    setStatus: (status: null | string) => void;
+    status: string;
+    onFocus: (fieldName: string) => void;
 }
 
 export const CustomField = ({
@@ -21,10 +21,10 @@ export const CustomField = ({
     isError,
     autoFocus,
     status,
-    setStatus,
+    onFocus,
 }: CustomFieldProps) => {
     const onFocusField = () => {
-        setStatus(name);
+        onFocus(name);
     };
 
     const heightStyles =
@@ -54,11 +54,13 @@ export const CustomField = ({
                 onFocus={onFocusField}
                 className={`block appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
-            <ErrorMessage
-                name={name}
-                component="p"
-                className="absolute bottom-[-2px] right-0 text-xxs text-error text-right"
-            ></ErrorMessage>
+            {isError && (
+                <ErrorMessage
+                    name={name}
+                    component="p"
+                    className="absolute bottom-[-2px] right-0 text-xxs text-right text-error"
+                ></ErrorMessage>
+            )}
         </label>
     );
 };
