@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
+import { HighlightText } from "@/src/components/shared/HighlightText";
 import {
     QADataType,
     QAItemLocalizationTextType,
@@ -14,9 +15,14 @@ import LikeButton from "../../shared/LikeButton";
 export interface FaqCardItemProps {
     data: QADataType;
     localizationData: QAItemLocalizationTextType;
+    searchTerm: string;
 }
 
-export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
+export const QaCard = ({
+    data,
+    localizationData,
+    searchTerm,
+}: FaqCardItemProps) => {
     const getTranslation = useTranslations("Buttons");
 
     const { image, likes, slug } = data;
@@ -50,12 +56,17 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                     <div className="justify-between h-12 hidden">
                         <LikeButton likes={likes} />
                     </div>
-
                     <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb line-clamp-2 mb-2.5">
-                        {questionText}
+                        <HighlightText
+                            text={questionText}
+                            toBeHighlighted={searchTerm}
+                        />
                     </h2>
                     <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
-                        {shortAnswerText.join(" ")}
+                        <HighlightText
+                            text={shortAnswerText.join(" ")}
+                            toBeHighlighted={searchTerm}
+                        />
                     </p>
                 </div>
                 <div className="flex justify-between">
