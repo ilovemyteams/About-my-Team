@@ -4,8 +4,8 @@ import { PortableText } from "next-sanity";
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
 import { PortfolioTitleProps } from "@/types/sanityDataPropsTypes";
 
-import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import { TitleWrapper } from "../../shared/TitleWrapper";
+import { SmallPageTitle } from "../shared/SmallPageTitle";
+import { TitleWrapper } from "../shared/TitleWrapper";
 
 export const PortfolioTitle = ({
     subtitle,
