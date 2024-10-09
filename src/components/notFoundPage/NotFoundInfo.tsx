@@ -1,25 +1,26 @@
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
-
 import { Button } from "../shared/Button";
+import { loadSettings } from "@/sanity/utils/loadQuery";
 
-export const NotFoundInfo = () => {
+export default async function NotFoundInfo() {
     const locale = useLocale();
-    const { data } = useSettingsContext();
-    const title = data?.notFoundPage?.titleNotFound
-        ? data.notFoundPage.titleNotFound
+    const data = await loadSettings(locale);
+    const notFoundPage = data.data?.notFoundPage
+        ? data.data.notFoundPage
+        : null;
+
+    const title = notFoundPage?.titleNotFound
+        ? notFoundPage.titleNotFound
         : "Write the title";
-    const info = data?.notFoundPage?.descriptionNotFound
-        ? data.notFoundPage.descriptionNotFound
+    const info = notFoundPage?.descriptionNotFound
+        ? notFoundPage.descriptionNotFound
         : "";
-    const buttonName = data?.notFoundPage?.goToHomeButtonName
-        ? data.notFoundPage.goToHomeButtonName
+    const buttonName = notFoundPage?.goToHomeButtonName
+        ? notFoundPage.goToHomeButtonName
         : "";
-    const url = data?.notFoundPage?.buttonPageLink
-        ? data.notFoundPage.buttonPageLink
-        : "";
+    const url = notFoundPage?.buttonPageLink ? notFoundPage.buttonPageLink : "";
 
     return (
         <div className="flex flex-col gap-8 items-center mt-8 tab:max-w-[309px] tab:gap-4 pc:max-w-[376px]">
@@ -42,4 +43,4 @@ export const NotFoundInfo = () => {
             </Link>
         </div>
     );
-};
+}
