@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useLocale } from "next-intl";
 
-import { Button } from "../shared/Button";
 import { loadSettings } from "@/sanity/utils/loadQuery";
+
+import { Button } from "../shared/Button";
 
 export default async function NotFoundInfo() {
     const locale = useLocale();
