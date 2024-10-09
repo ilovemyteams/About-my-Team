@@ -32,7 +32,6 @@ export const buttonType = defineField({
                     { title: "No link", value: "noLink" },
                     { title: "Internal", value: "internal" },
                     { title: "External", value: "external" },
-                    { title: "Internal Site Page Link", value: "pageBuilder" },
                 ],
             },
             initialValue: "noLink",
