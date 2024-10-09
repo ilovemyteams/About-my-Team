@@ -9,7 +9,7 @@ export const aboutUsItemType = defineField({
     type: "object",
     fields: [
         defineField({
-            name: "AboutUs",
+            name: "aboutUs",
             description: "About us item information",
             type: "internationalizedArrayString",
             title: "About us Item",
@@ -17,7 +17,7 @@ export const aboutUsItemType = defineField({
     ],
     preview: {
         select: {
-            title: "AboutUs",
+            title: "aboutUs",
         },
 
         prepare({ title }) {
