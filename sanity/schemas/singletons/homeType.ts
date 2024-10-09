@@ -13,6 +13,13 @@ export const homeType = defineField({
     groups: GROUPS,
     fields: [
         defineField({
+            title: "Page Slug",
+            name: "pageSlug",
+            type: "slug",
+            description: "Internal link for the Home page",
+            readOnly: true,
+        }),
+        defineField({
             name: "hero",
             title: "Hero section",
             type: "heroHome",
