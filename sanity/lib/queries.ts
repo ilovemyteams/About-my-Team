@@ -33,7 +33,9 @@ export const CTAQuery = groq`
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
-  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value, "goToHomeButtonLink":goToHomeButton,
+  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,
+     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url
+    ),
     "titleNotFound":title[_key == $language][0].value, 
     "descriptionNotFound":description[_key == $language][0].value},
   
