@@ -13,7 +13,7 @@ export const HeaderFAQ = () => {
         <section className="container max-w-[540px] tab:max-w-full desk:max-w-[1456px] pt-8 tab:pt-12 pc:pt-8">
             <PageTopSection breadcrumbsList={breadcrumbs} />
             <div className="mb-[21px] tab:mb-12 pc:mb-[56px]">
-                <h1 className="font-caviar text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-6xl">
+                <h1 className="font-caviar text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-6xl deskxl:text-7xl">
                     {getTranslation("Q&A.pageBigTitle")}
                 </h1>
             </div>
