@@ -1,7 +1,8 @@
 "use client";
 import axios from "axios";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
+import { generateUserId } from "@/src/utils/generateUserId";
 import { LikesTypes } from "@/src/utils/jsonDataHandler";
 
 import { IconLike } from "./Icons/IconLike";
@@ -26,9 +27,8 @@ const LikeButton = ({
         setUserId(persistedUserId);
     }, []);
 
-    const onClickBtn = async () => {
-        const userIdForSaving =
-            userId || Math.floor(Math.random() * Date.now()).toString(16);
+    const onClickBtn = useCallback(async () => {
+        const userIdForSaving = userId || generateUserId();
         if (!userId) {
             localStorage.setItem("userId", userIdForSaving);
 
@@ -65,14 +65,17 @@ const LikeButton = ({
                 return error;
             }
         }
-    };
+    }, [userId, likes, questionSlug, isUserVoted]);
+
     return (
         <button
-            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus:text-redLight dark:focus:text-red focus:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300`}
+            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300`}
             aria-label="Like button"
             onClick={onClickBtn}
         >
-            <IconLike className={`pb-0.5 my-auto `} isActive={isUserVoted} />
+            <IconLike
+                className={`pb-0.5 my-auto ${isUserVoted ? "text-redLight dark:text-red" : "text-inherit"} `}
+            />
             {likes.length}
         </button>
     );
