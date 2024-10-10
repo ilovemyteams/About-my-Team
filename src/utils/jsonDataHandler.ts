@@ -61,7 +61,7 @@ export const saveLikes = async (data: LikesTypes) => {
         });
         return response;
     } catch (error) {
-        return error;
+        throw new Error(`We have a problem: ${error}`);
     }
 };
 
@@ -97,6 +97,6 @@ export const removedLikes = async (questionSlug: string, userId: string) => {
 
         return "Values have been successfully delete";
     } catch (error) {
-        return error;
+        throw new Error(`Error: ${error}`);
     }
 };
