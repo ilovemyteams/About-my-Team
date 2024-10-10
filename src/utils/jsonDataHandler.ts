@@ -52,17 +52,17 @@ export const getLikes = async () => {
 
 export const saveLikes = async (data: LikesTypes) => {
     try {
-        const response = await sheets.spreadsheets.values.append({
+        await sheets.spreadsheets.values.append({
             spreadsheetId: SPREADSHEET_ID,
-            range: RANGE,
+
+            range: `${RANGE}!A1:B1`,
             valueInputOption: "USER_ENTERED",
             requestBody: {
                 values: [[data.questionSlug, data.userId]],
             },
         });
-        return response;
     } catch (error) {
-        throw new Error(`We have a problem: ${error}`);
+        throw new Error(JSON.stringify(error));
     }
 };
 
@@ -97,6 +97,6 @@ export const removedLikes = async (questionSlug: string, userId: string) => {
 
         return "Values have been successfully delete";
     } catch (error) {
-        throw new Error(`Error: ${error}`);
+        throw new Error(JSON.stringify(error));
     }
 };
