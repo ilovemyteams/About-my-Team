@@ -25,7 +25,7 @@ export async function DELETE(request: NextRequest) {
         const userId = searchParams.get("userId") || "";
 
         try {
-            removedLikes(questionSlug, userId);
+            await removedLikes(questionSlug, userId);
             return NextResponse.json({ message: "Success" });
         } catch (error) {
             return NextResponse.json(
