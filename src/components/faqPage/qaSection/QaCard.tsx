@@ -60,12 +60,12 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                 </div>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
-                        className="text-purple-100 dark:text-purple-50 text-sm deskxl:text-base my-auto"
+                        className="text-purple-100 dark:text-purple-50 text-sm pc:text-base my-auto"
                         text={allTexts}
                     />
                     <Link
                         href={`faq/${slug}`}
-                        className="mr-3 deskxl:text-base text-purple-130 dark:text-purple-100 pc:hover:text-redLight dark:pc:hover:text-red
+                        className="mr-3 text-base text-purple-130 dark:text-purple-100 pc:hover:text-redLight dark:pc:hover:text-red
                     pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none pc:transition pc:ease-out pc:duration-300 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 pc:hover:before:border-redLight dark:pc:hover:before:border-red pc:focus:before:border-redLight dark:pc:focus:before:border-red pc:before:transition pc:before:ease-out pc:before:duration-300"
                     >
                         {getTranslation("readMore")}
