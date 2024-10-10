@@ -57,3 +57,8 @@ export const SOCIAL_LINKS = [
     { title: "Instagram", value: "instagram" },
     { title: "Twitter", value: "twitter" },
 ];
+
+export const FAQ_PAGE_DESIGN_TYPES = [
+    { title: "Stages", value: "stages" },
+    { title: "Table", value: "table" },
+];
