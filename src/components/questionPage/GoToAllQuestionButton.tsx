@@ -14,7 +14,7 @@ export const GoToAllQuestionButton = () => {
             onClick={() => router.push(`/${locale}/faq`)}
         >
             <p
-                className="text-lg font-caviar first-letter:uppercase underline underline-offset-[5px] leading-none text-center
+                className="text-lg font-caviar first-letter:uppercase underline underline-offset-[5px]  text-center
             dark:pc:hover:text-red pc:hover:text-redLight
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight"
             >
