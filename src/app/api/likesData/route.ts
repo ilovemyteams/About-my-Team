@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
         const data = await request.json();
 
         try {
-            saveLikes(data);
+            await saveLikes(data);
             return NextResponse.json({ message: "Success" });
         } catch (error) {
             return NextResponse.json(
