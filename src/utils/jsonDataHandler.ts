@@ -1,46 +1,101 @@
 "use server";
+import { google } from "googleapis";
 
-import fs from "fs/promises";
-import path from "path";
+const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FAQ_SPREADSHEET_ID || "";
 
-const FILE_PATH = path.join(process.cwd(), "src", "mockedData", "likes.json");
+const RANGE = "Аркуш2";
 
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_SERVICE_PRIVATE_KEY =
+    process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY || "";
+const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
+
+const SCOPES = [
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/drive.file",
+];
+
+const privateKey = GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, "\n");
+const auth = new google.auth.GoogleAuth({
+    credentials: {
+        client_email: GOOGLE_CLIENT_EMAIL,
+        client_id: GOOGLE_CLIENT_ID,
+        private_key: privateKey,
+    },
+    scopes: SCOPES,
+});
+
+const sheets = google.sheets({ version: "v4", auth });
 export interface LikesTypes {
     questionSlug: string;
     userId: string;
 }
 
 export const getLikes = async () => {
-    try {
-        const file = await fs.readFile(FILE_PATH, "utf8");
-        const allLikes = JSON.parse(file.toString());
+    const response = await sheets.spreadsheets.values.get({
+        spreadsheetId: SPREADSHEET_ID,
+        range: RANGE,
+    });
 
-        return allLikes as LikesTypes[];
-    } catch (error) {
+    const data = response.data.values;
+
+    if (!data) {
         return [] as LikesTypes[];
     }
+    const likes = data.map(item => ({
+        questionSlug: item[0],
+        userId: item[1],
+    }));
+    return likes as LikesTypes[];
 };
 
 export const saveLikes = async (data: LikesTypes) => {
     try {
-        const allLikes = await getLikes();
-        allLikes.push(data);
-
-        fs.writeFile(FILE_PATH, JSON.stringify(allLikes, null, 2));
+        const response = await sheets.spreadsheets.values.append({
+            spreadsheetId: SPREADSHEET_ID,
+            range: RANGE,
+            valueInputOption: "USER_ENTERED",
+            requestBody: {
+                values: [[data.questionSlug, data.userId]],
+            },
+        });
+        return response;
     } catch (error) {
         return error;
     }
 };
 
 export const removedLikes = async (questionSlug: string, userId: string) => {
+    console.log(questionSlug);
     try {
-        const allLikes = await getLikes();
-        const newLikes = allLikes.filter(
-            like =>
-                !(like.questionSlug === questionSlug && like.userId === userId)
+        const {
+            data: { values },
+        } = await sheets.spreadsheets.values.get({
+            spreadsheetId: SPREADSHEET_ID,
+            range: RANGE,
+        });
+        if (!values) return "not found element";
+
+        const rowNumber = values.findIndex(
+            item => item[0] === questionSlug && item[1] === userId
         );
 
-        fs.writeFile(FILE_PATH, JSON.stringify(newLikes, null, 2));
+        await sheets.spreadsheets.values.batchClearByDataFilter({
+            spreadsheetId: SPREADSHEET_ID,
+            requestBody: {
+                dataFilters: [
+                    {
+                        gridRange: {
+                            sheetId: 1951686548,
+                            startRowIndex: rowNumber,
+                            endRowIndex: rowNumber + 1,
+                        },
+                    },
+                ],
+            },
+        });
+
+        return "Values have been successfully delete";
     } catch (error) {
         return error;
     }
