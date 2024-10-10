@@ -9,7 +9,7 @@ export const HelpfullAnswerSection = () => {
     const getTranslation = useTranslations("SomeFaqPage");
 
     return (
-        <PageSection className="pb-[109px] tab:pb-[100px] pc:pb-[100px]">
+        <PageSection className="pb-[109px] tab:pb-[100px] desk:pb-[120px]">
             <div className="tab:max-w-[534px] pc:max-w-[910px] mx-auto">
                 <p className="font-caviar text-xlb mb-4 pc:mb-6 pc:text-4xl pc:leading-[42px]">
                     {getTranslation.rich("HelpfullAnswerSection", {

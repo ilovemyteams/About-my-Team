@@ -45,10 +45,22 @@ const config: Config = {
                     lineHeight: "17px",
                 },
             ],
+            sm20: [
+                "14px",
+                {
+                    lineHeight: "20px",
+                },
+            ],
             base: [
                 "16px",
                 {
                     lineHeight: "20px",
+                },
+            ],
+            base23: [
+                "16px",
+                {
+                    lineHeight: "23px",
                 },
             ],
             baseb: [
@@ -72,7 +84,12 @@ const config: Config = {
                     lineHeight: "25px",
                 },
             ],
-
+            xl28: [
+                "20px",
+                {
+                    lineHeight: "28px",
+                },
+            ],
             xlb: [
                 "20px",
                 {
@@ -84,6 +101,12 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
+                },
+            ],
+            "2xl34": [
+                "24px",
+                {
+                    lineHeight: "34px",
                 },
             ],
             "2xlb": [
