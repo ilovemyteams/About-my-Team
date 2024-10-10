@@ -1,19 +1,16 @@
 "use server";
 import { google } from "googleapis";
 
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_FAQ_SPREADSHEET_ID || "";
+const SPREADSHEET_ID = "1FwwuaWJLx8Yd6xfM6nw9sZortvamQKm8y5uKMoOU3CY";
 
-const RANGE = "Аркуш2";
+const RANGE = "Аркуш1";
 
 const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const GOOGLE_SERVICE_PRIVATE_KEY =
     process.env.NEXT_PUBLIC_GOOGLE_SERVICE_PRIVATE_KEY || "";
 const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
 
-const SCOPES = [
-    "https://www.googleapis.com/auth/drive",
-    "https://www.googleapis.com/auth/drive.file",
-];
+const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 
 const privateKey = GOOGLE_SERVICE_PRIVATE_KEY.replace(/\\n/g, "\n");
 const auth = new google.auth.GoogleAuth({
@@ -32,21 +29,26 @@ export interface LikesTypes {
 }
 
 export const getLikes = async () => {
-    const response = await sheets.spreadsheets.values.get({
-        spreadsheetId: SPREADSHEET_ID,
-        range: RANGE,
-    });
+    try {
+        const response = await sheets.spreadsheets.values.get({
+            spreadsheetId: SPREADSHEET_ID,
+            range: RANGE,
+        });
 
-    const data = response.data.values;
+        const data = response.data.values;
 
-    if (!data) {
-        return [] as LikesTypes[];
+        if (!data) {
+            return [] as LikesTypes[];
+        }
+        const likes = data.map(item => ({
+            questionSlug: item[0],
+            userId: item[1],
+        }));
+        return likes as LikesTypes[];
+    } catch (error) {
+        console.log(error);
+        throw new Error(`Error: ${error}`);
     }
-    const likes = data.map(item => ({
-        questionSlug: item[0],
-        userId: item[1],
-    }));
-    return likes as LikesTypes[];
 };
 
 export const saveLikes = async (data: LikesTypes) => {
