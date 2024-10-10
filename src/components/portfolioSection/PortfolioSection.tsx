@@ -5,7 +5,7 @@ import { PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { PortfolioCarousel } from "./PortfolioCarousel";
-import { PortfolioTitle } from "./Title/PortfolioTitle";
+import { PortfolioTitle } from "./PortfolioTitle";
 
 export const PortfolioSection = ({
     data,

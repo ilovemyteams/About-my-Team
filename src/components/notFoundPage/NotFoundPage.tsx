@@ -1,6 +1,6 @@
 import { Section } from "../shared/Section";
 import { BrokenHeart } from "./BrokenHeart";
-import { NotFoundInfo } from "./NotFoundInfo";
+import NotFoundInfo from "./NotFoundInfo";
 
 export const NotFoundPage = () => {
     return (

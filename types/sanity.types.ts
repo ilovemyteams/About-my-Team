@@ -140,7 +140,7 @@ export type AnchorLink = {
 
 export type AboutUsItem = {
     _type: "aboutUsItem";
-    AboutUs?: Array<
+    aboutUs?: Array<
         {
             _key: string;
         } & InternationalizedArrayStringValue
@@ -1038,7 +1038,7 @@ export type Settings = {
 export type Button = {
     _type: "button";
     buttonName?: InternationalizedArrayString;
-    buttonLink?: "noLink" | "internal" | "external" | "pageBuilder";
+    buttonLink?: "noLink" | "internal" | "external";
     linkInternal?: LinkInternal;
     linkExternal?: LinkExternal;
 };
@@ -1366,8 +1366,14 @@ export type CTAQueryResult = {
     } | null;
 } | null;
 // Variable: settingsQuery
-// Query: *[_type == "settings"][0]{  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},  "navigationMenu": navigationMenu[]{  linkInternal,  "titleMenu":title[_key == $language][0].value  }},    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
+// Query: *[_type == "settings"][0]{  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url    ),    "titleNotFound":title[_key == $language][0].value,     "descriptionNotFound":description[_key == $language][0].value},    header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},  "navigationMenu": navigationMenu[]{  linkInternal,  "titleMenu":title[_key == $language][0].value  }},   buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value,      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,     buttonLink == "external" => linkExternal.url    )},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
 export type SettingsQueryResult = {
+    notFoundPage: {
+        goToHomeButtonName: string | null;
+        buttonPageLink: string | null;
+        titleNotFound: string | null;
+        descriptionNotFound: string | null;
+    } | null;
     header: {
         socialLinks: Array<{
             platform:
@@ -1395,21 +1401,22 @@ export type SettingsQueryResult = {
     buttonJoinUS: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
+        buttonLink?: "external" | "internal" | "noLink";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
+        buttonPageLink: string | null;
     } | null;
     buttonOrder: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
+        buttonLink?: "external" | "internal" | "noLink";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
     } | null;
     buttonBuyMeCoffee: {
         _type: "button";
         buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink" | "pageBuilder";
+        buttonLink?: "external" | "internal" | "noLink";
         linkInternal?: LinkInternal;
         linkExternal?: LinkExternal;
     } | null;
@@ -1464,15 +1471,15 @@ export type HomeStagesQueryResult = {
     } | null;
 } | null;
 // Variable: homeAboutUsQuery
-// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current} }
+// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
 export type HomeAboutUsQueryResult = {
     aboutUsHomeSection: {
         title: PortableColorTitle | null;
-        aboutUsItemInfo: Array<string | null> | null;
+        aboutUsItemInfo: Array<null> | null;
         subtitle: string | null;
         anchorId: string | null;
         learnMoreButtonName: string | null;
-        buttonPageLink: null;
+        buttonPageLink: string | null;
     } | null;
 } | null;
 // Variable: homeFAQQuery
@@ -1494,12 +1501,12 @@ declare module "@sanity/client" {
         '\n  *[_type == "home"][0]{\n  hero {\n    "title": title[_key == $language][0].value,\n    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},\n    "category":category->categoryName[_key == $language][0].value,\n    _id}\n  }\n}': HomeHeroQueryResult;
         '\n  *[_type == "home"][0]{\n  portfolioHome{"title": title[_key == $language][0].value, \n    "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,\n    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},\n    "category":category->categoryName[_key == $language][0].value,\n    _id, stages, URL}\n  }\n}': HomePortfolioQueryResult;
         '\n *[_type == "home"][0]{\n    ctaSectionWriteUs {"title": title[_key == $language][0].value}, \n    ctaSectionJoinUs {"title": title[_key == $language][0].value}, \n    ctaSectionOrder {"title": title[_key == $language][0].value, \n    "description": description[_key == $language][0].value[0].children[0].text}\n    }\n': CTAQueryResult;
-        '\n  *[_type == "settings"][0]{\n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
+        '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value, \n    "descriptionNotFound":description[_key == $language][0].value},\n  \n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    )},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
         '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
-        '\n  *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current\n} }': HomeAboutUsQueryResult;
+        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
         '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
     }
 }

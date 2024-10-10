@@ -24,7 +24,7 @@ export function Accordion({ item }: AccordionProps) {
                 <div className="flex justify-between my-[16px] pc:mb-[32px]">
                     <div>
                         <summary className="flex-none font-caviar dark:text-white-200 text-purple-200 self-center h-auto text-left py-0 text-baseb tab:text-xlb ">
-                            {item.question}
+                            {item.question || ""}
                         </summary>
                     </div>
                     <div
@@ -42,7 +42,7 @@ export function Accordion({ item }: AccordionProps) {
                 className={`text-geist text-sm tab:text-base deskxl:text-lg overflow-hidden mb-[8px] transition-[max-height] duration-[600ms] ease-in 
                     ${isAccordionOpen ? "max-h-[300px]" : "max-h-0"}`}
             >
-                {item.shortAnswer}
+                {item.shortAnswer || ""}
             </p>
         </li>
     );

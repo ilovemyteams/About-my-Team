@@ -3,8 +3,8 @@ import { PortableText } from "next-sanity";
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
 import { PortableColorTitle } from "@/types/sanity.types";
 
-import { SmallPageTitle } from "../../shared/SmallPageTitle";
-import { TitleWrapper } from "../../shared/TitleWrapper";
+import { SmallPageTitle } from "../shared/SmallPageTitle";
+import { TitleWrapper } from "../shared/TitleWrapper";
 
 export const MissionTitle = ({
     subtitle,
@@ -16,7 +16,7 @@ export const MissionTitle = ({
     return (
         <>
             <TitleWrapper className="flex flex-col tab:flex-row items-start">
-                <SmallPageTitle className="ml-1 mr-3 tab:mt-2 pc:mt-4 flex items-center">
+                <SmallPageTitle className="whitespace-nowrap ml-1 mr-3 tab:mt-2 pc:mt-4 flex items-center">
                     {subtitle || "You forgot a subtitle"}
                 </SmallPageTitle>
                 <div>

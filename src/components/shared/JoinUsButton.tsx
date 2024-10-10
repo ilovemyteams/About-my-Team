@@ -13,8 +13,8 @@ export const JoinUsButton = () => {
         ? data.buttonJoinUS.buttonName.toString()
         : getTranslation("joinUs");
 
-    const JOIN_US_LINK = data?.buttonJoinUS?.linkExternal?.url
-        ? data.buttonJoinUS.linkExternal.url
+    const JOIN_US_LINK = data?.buttonJoinUS?.buttonPageLink
+        ? data.buttonJoinUS.buttonPageLink
         : "https://forms.gle/nhbFek3qZYQgo9V19";
 
     return (

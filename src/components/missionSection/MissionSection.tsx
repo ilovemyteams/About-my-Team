@@ -9,7 +9,7 @@ import { HomeAboutUsQueryResult } from "@/types/sanity.types";
 import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
-import { MissionTitle } from "./Title/MissionTitle";
+import { MissionTitle } from "./MissionTitle";
 
 export const MissionSection = ({ data }: { data: HomeAboutUsQueryResult }) => {
     const { ref, inView } = useInView({

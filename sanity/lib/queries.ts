@@ -33,12 +33,21 @@ export const CTAQuery = groq`
 
 export const settingsQuery = groq`
   *[_type == "settings"][0]{
+  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,
+     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url
+    ),
+    "titleNotFound":title[_key == $language][0].value, 
+    "descriptionNotFound":description[_key == $language][0].value},
+  
   header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},
   "navigationMenu": navigationMenu[]{
   linkInternal,
   "titleMenu":title[_key == $language][0].value
   }},
-    buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value},
+   buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value,
+      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,
+     buttonLink == "external" => linkExternal.url
+    )},
     buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
     buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
 
@@ -89,14 +98,15 @@ export const homeStagesQuery = groq`
 }}`;
 
 export const homeAboutUsQuery = groq`
-  *[_type == "home"][0]{aboutUsHomeSection {
+ *[_type == "home"][0]{aboutUsHomeSection {
   "title": sectionTitle[_key == $language][0].value,
   "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,
   "subtitle": sectionId.subtitle[_key == $language][0].value, 
   "anchorId": sectionId.anchorId.current,
   "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,
-  "buttonPageLink":learnMoreButton.internalSitePageLink->pageSlug.current
-} }`;
+  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,
+     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url
+    )} }`;
 
 export const homeFAQQuery = groq`
   *[_type == "home"][0]{
