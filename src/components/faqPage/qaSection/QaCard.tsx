@@ -51,10 +51,10 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
                         <LikeButton likes={likes} />
                     </div>
 
-                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb deskxl:text-2xlb line-clamp-2 mb-2.5">
+                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-2.5">
                         {questionText}
                     </h2>
-                    <p className="text-sm tab:text-base deskxl:text-lg deskxl:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-2.5">
+                    <p className="text-sm tab:text-base desk:text-lg desk:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-2.5">
                         {shortAnswerText.join(" ")}
                     </p>
                 </div>
