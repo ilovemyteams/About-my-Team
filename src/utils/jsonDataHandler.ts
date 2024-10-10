@@ -46,7 +46,6 @@ export const getLikes = async () => {
         }));
         return likes as LikesTypes[];
     } catch (error) {
-        console.log(error);
         throw new Error(`Error: ${error}`);
     }
 };
@@ -68,7 +67,6 @@ export const saveLikes = async (data: LikesTypes) => {
 };
 
 export const removedLikes = async (questionSlug: string, userId: string) => {
-    console.log(questionSlug);
     try {
         const {
             data: { values },
@@ -88,7 +86,7 @@ export const removedLikes = async (questionSlug: string, userId: string) => {
                 dataFilters: [
                     {
                         gridRange: {
-                            sheetId: 1951686548,
+                            sheetId: 0,
                             startRowIndex: rowNumber,
                             endRowIndex: rowNumber + 1,
                         },
