@@ -100,7 +100,7 @@ export const homeStagesQuery = groq`
 export const homeAboutUsQuery = groq`
  *[_type == "home"][0]{aboutUsHomeSection {
   "title": sectionTitle[_key == $language][0].value,
-  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,
+  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,
   "subtitle": sectionId.subtitle[_key == $language][0].value, 
   "anchorId": sectionId.anchorId.current,
   "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,
