@@ -17,6 +17,7 @@ const LikeButton = ({
     questionSlug,
 }: LikeButtonProps) => {
     const [isLoading, setIsLoading] = useState(false);
+    const [startAnimation, setStartAnimation] = useState(false);
     const [likes, setLikes] = useState(serverSavedLikes);
     const [userId, setUserId] = useState<null | string>(null);
     const isUserVoted = useMemo(() => {
@@ -28,7 +29,7 @@ const LikeButton = ({
         setUserId(persistedUserId);
     }, []);
 
-    const addLike = useCallback(
+    const deleteLike = useCallback(
         async (questionSlug: string, userId: string) => {
             try {
                 await axios.delete(
@@ -51,8 +52,9 @@ const LikeButton = ({
         [likes]
     );
 
-    const deleteLike = useCallback(
+    const addLike = useCallback(
         async (questionSlug: string, userId: string) => {
+            setStartAnimation(true);
             const likeObject = {
                 userId,
                 questionSlug,
@@ -79,21 +81,23 @@ const LikeButton = ({
         }
 
         if (isUserVoted) {
-            await addLike(questionSlug, userIdForSaving);
-        } else {
             await deleteLike(questionSlug, userIdForSaving);
+        } else {
+            await addLike(questionSlug, userIdForSaving);
         }
     }, [userId, isUserVoted, addLike, questionSlug, deleteLike]);
 
     return (
         <button
-            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300 disabled:cursor-wait`}
+            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300 disabled:cursor-default`}
             aria-label="Like button"
             onClick={onClickBtn}
             disabled={isLoading}
+            onAnimationEnd={() => setStartAnimation(false)}
         >
             <IconLike
-                className={`pb-0.5 my-auto ${isUserVoted ? "text-redLight dark:text-red" : "text-inherit"} `}
+                isActive={isUserVoted || startAnimation}
+                className={`pb-0.5 my-auto ${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"} animate-none ${startAnimation && "animate-pulsation"} `}
             />
             {likes.length}
         </button>
