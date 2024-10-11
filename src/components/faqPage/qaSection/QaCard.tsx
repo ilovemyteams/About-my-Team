@@ -7,6 +7,7 @@ import {
     QAItemLocalizationTextType,
 } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
+import { LikesTypes } from "@/src/utils/likeDataHandler";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";
@@ -14,12 +15,13 @@ import LikeButton from "../../shared/LikeButton";
 export interface FaqCardItemProps {
     data: QADataType;
     localizationData: QAItemLocalizationTextType;
+    likes: LikesTypes[];
 }
 
-export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
+export const QaCard = ({ data, localizationData, likes }: FaqCardItemProps) => {
     const getTranslation = useTranslations("Buttons");
 
-    const { image, likes, slug } = data;
+    const { image, slug } = data;
 
     const {
         questionText,
@@ -45,10 +47,9 @@ export const QaCard = ({ data, localizationData }: FaqCardItemProps) => {
             />
 
             <div className="flex flex-col tab:pl-3 pc:px-3 justify-between">
-                {/* ToDo: to show like btn, change hidden to flex */}
                 <div>
-                    <div className="justify-between h-12 hidden">
-                        <LikeButton likes={likes} />
+                    <div className="justify-between h-12 flex">
+                        <LikeButton questionSlug={slug} likes={likes} />
                     </div>
 
                     <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-2.5">
