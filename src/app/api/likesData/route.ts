@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { removedLikes, saveLikes } from "@/src/utils/jsonDataHandler";
+import { removedLikes, saveLikes } from "@/src/utils/likeDataHandler";
 
 export async function POST(request: NextRequest) {
     if (request.method === "POST") {

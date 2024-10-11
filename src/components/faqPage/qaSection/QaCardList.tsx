@@ -1,7 +1,7 @@
 import { getLocale } from "next-intl/server";
 
 import { questionsData } from "@/src/mockedData/questionsData";
-import { getLikes } from "@/src/utils/jsonDataHandler";
+import { getLikes } from "@/src/utils/likeDataHandler";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { Section } from "../../shared/Section";

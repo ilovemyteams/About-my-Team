@@ -7,7 +7,7 @@ import {
     QAItemLocalizationTextType,
 } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
-import { LikesTypes } from "@/src/utils/jsonDataHandler";
+import { LikesTypes } from "@/src/utils/likeDataHandler";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";

@@ -1,7 +1,7 @@
 "use server";
 import { google } from "googleapis";
 
-const SPREADSHEET_ID = "1FwwuaWJLx8Yd6xfM6nw9sZortvamQKm8y5uKMoOU3CY";
+const SPREADSHEET_ID = process.env.NEXT_PUBLIC_LIKES_SPREADSHEET_ID || "";
 
 const RANGE = "Аркуш1";
 
