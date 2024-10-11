@@ -15,7 +15,7 @@ interface MainContentProps {
 
 export const MainContent = ({ layout, content, locale }: MainContentProps) => {
     return (
-        <PageSection className="pb-[32px] tab:pb-[100px]">
+        <PageSection className="pb-[32px] tab:pb-[100px] desk:pb-[180px]">
             {layout === 1 && <ListContent content={content} locale={locale} />}
             {layout === 2 && <TableContent content={content} />}
             {layout === 3 && (
