@@ -1,6 +1,5 @@
 "use client";
 import axios from "axios";
-import { revalidatePath } from "next/cache";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { generateUserId } from "@/src/utils/generateUserId";
@@ -47,7 +46,6 @@ const LikeButton = ({
                 return error;
             } finally {
                 setIsLoading(false);
-                revalidatePath("faq");
             }
         },
         [likes]
