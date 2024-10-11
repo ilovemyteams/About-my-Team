@@ -22,7 +22,7 @@ export const HelpfullAnswerSection = () => {
                 <div className="flex justify-between pb-6 tab:pb-0 pc:mb-10 border-b tab:border-b-0 border-purple-strokeLight dark:border-purple-stroke tab:gap-6 tab:justify-start">
                     {/* To show heart icon, remove two div's with className remove-me */}
                     {/* <div className="hidden ">
-                        <LikeButton likes={1} />git ad
+                        <LikeButton likes={1} />
                     </div> */}
 
                     <SharePopover className="" trigerShowShareText={false} />
