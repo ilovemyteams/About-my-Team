@@ -30,7 +30,7 @@ export const Question = ({ question }: QuestionPageProps) => {
         imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, answerTopImage, layout, answerOrderImage } = data;
+    const { image, layout, answerOrderImage } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
@@ -46,7 +46,6 @@ export const Question = ({ question }: QuestionPageProps) => {
             <TopTextSection
                 shortAnswer={shortAnswerText}
                 fullAnswerText={fullAnswerTopText}
-                imageUrl={answerTopImage}
             />
             {fullAnswerContent && layout ? (
                 <>
