@@ -2061,7 +2061,6 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "OlenaHalushka",
             projectId: ["2", "3"],
-
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
             position: "UI/UX designer",
@@ -2121,7 +2120,8 @@ export const membersData: MemberDataItemType[] = [
             id: "MariiaCherevko",
             projectId: ["1"],
 
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1QMhz0cwdJ88YzbQMwpFgeWx_OKbU6zGY",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2170,7 +2170,8 @@ export const membersData: MemberDataItemType[] = [
             id: "AnnaPrutnik",
             projectId: ["1"],
 
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1TZE4QB4tcTtXAUBtsLeEkeWtOz7CNmvl",
             position: "Front-end Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2202,7 +2203,7 @@ export const membersData: MemberDataItemType[] = [
             name: "Анна Прутнік",
             about: "Робота займатиме велику частину нашого життя, і єдиний спосіб бути по-справжньому задоволеним — це робити те, що ви любите.",
             services:
-                "Створення адаптивних веб-додатки з сучасним, зручним та інтуїтивним інтерфейсом, що вирішують конкретні бізнес-завдання та забезпечують стабільну роботу.",
+                "Створення адаптивних веб-додатків з сучасним, зручним та інтуїтивним інтерфейсом, що вирішують конкретні бізнес-завдання та забезпечують стабільну роботу.",
             team: "i love my team",
         },
         en: {
@@ -2224,8 +2225,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "OleksandrPetrychuk",
             projectId: ["1"],
-
-            imageURL: "",
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1r7xqlvLM9jJbY7UsaPqoTGuvIiBWXiYL",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
