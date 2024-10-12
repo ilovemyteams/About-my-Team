@@ -46,7 +46,7 @@ export const getLikes = async () => {
         }));
         return likes as LikesTypes[];
     } catch (error) {
-        throw new Error(JSON.stringify(error));
+        return [] as LikesTypes[];
     }
 };
 
