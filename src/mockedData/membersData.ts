@@ -2121,7 +2121,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
 
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1QMhz0cwdJ88YzbQMwpFgeWx_OKbU6zGY",
+                "https://drive.google.com/uc?export=view&id=1KR3GgVdmYVXHpxY0riW0rsSh52BU-f2u",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2171,7 +2171,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
 
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1TZE4QB4tcTtXAUBtsLeEkeWtOz7CNmvl",
+                "https://drive.google.com/uc?export=view&id=1NKeuyv46nwGf1RMOZ7EyxYgSSOmaQH-S",
             position: "Front-end Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
