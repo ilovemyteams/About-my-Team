@@ -17,6 +17,7 @@ const LikeButton = ({
     questionSlug,
 }: LikeButtonProps) => {
     const [isLoading, setIsLoading] = useState(false);
+    const [startAnimation, setStartAnimation] = useState(false);
     const [likes, setLikes] = useState(serverSavedLikes);
     const [userId, setUserId] = useState<null | string>(null);
     const isUserVoted = useMemo(() => {
@@ -28,20 +29,20 @@ const LikeButton = ({
         setUserId(persistedUserId);
     }, []);
 
-    const addLike = useCallback(
+    const deleteLike = useCallback(
         async (questionSlug: string, userId: string) => {
+            const newLikes = likes.filter(
+                item =>
+                    !(
+                        item.questionSlug === questionSlug &&
+                        item.userId === userId
+                    )
+            );
+            setLikes(newLikes);
             try {
                 await axios.delete(
                     `api/likesData?questionSlug=${questionSlug}&userId=${userId}`
                 );
-                const newLikes = likes.filter(
-                    item =>
-                        !(
-                            item.questionSlug === questionSlug &&
-                            item.userId === userId
-                        )
-                );
-                setLikes(newLikes);
             } catch (error) {
                 return error;
             } finally {
@@ -51,16 +52,17 @@ const LikeButton = ({
         [likes]
     );
 
-    const deleteLike = useCallback(
+    const addLike = useCallback(
         async (questionSlug: string, userId: string) => {
+            setStartAnimation(true);
             const likeObject = {
                 userId,
                 questionSlug,
             };
+            const newLikes = [...likes, likeObject];
+            setLikes(newLikes);
             try {
                 await axios.post("api/likesData", likeObject);
-                const newLikes = [...likes, likeObject];
-                setLikes(newLikes);
             } catch (error) {
                 return error;
             } finally {
@@ -79,23 +81,27 @@ const LikeButton = ({
         }
 
         if (isUserVoted) {
-            await addLike(questionSlug, userIdForSaving);
-        } else {
             await deleteLike(questionSlug, userIdForSaving);
+        } else {
+            await addLike(questionSlug, userIdForSaving);
         }
     }, [userId, isUserVoted, addLike, questionSlug, deleteLike]);
 
     return (
         <button
-            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300 disabled:cursor-wait`}
+            className={`h-[40px] mb-2 tab:mb-0 text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center  pc:transition pc:ease-out pc:duration-300 disabled:cursor-default`}
             aria-label="Like button"
             onClick={onClickBtn}
             disabled={isLoading}
+            onAnimationEnd={() => setStartAnimation(false)}
         >
-            <IconLike
-                className={`pb-0.5 my-auto ${isUserVoted ? "text-redLight dark:text-red" : "text-inherit"} `}
-            />
-            {likes.length}
+            <span className="flex items-end gap-x-2">
+                <IconLike
+                    isLiked={isUserVoted || startAnimation}
+                    className={`${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"}  ${startAnimation ? "animate-pulsationBrokenHeart" : "animate-none"} `}
+                />
+                <span className="leading-[20px]"> {likes.length}</span>
+            </span>
         </button>
     );
 };

@@ -41,24 +41,22 @@ export const QaCard = ({ data, localizationData, likes }: FaqCardItemProps) => {
             <Image
                 src={image}
                 alt={imageAltText}
-                width={300}
-                height={200}
-                className="h-[200px] aspect-[3/2] mb-"
+                width={375}
+                height={250}
+                className="h-[200px] desk:h-[250px] w-auto aspect-[3/2]"
             />
 
-            <div className="flex flex-col tab:pl-3 pc:px-3 justify-between">
+            <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
-                    <div className="justify-between h-12 flex">
-                        <LikeButton questionSlug={slug} likes={likes} />
-                    </div>
-
-                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-2.5">
+                    <LikeButton questionSlug={slug} likes={likes} />
+                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3">
                         {questionText}
                     </h2>
-                    <p className="text-sm tab:text-base desk:text-lg desk:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-2.5">
-                        {shortAnswerText.join(" ")}
-                    </p>
                 </div>
+
+                <p className="text-sm tab:text-base desk:text-lg desk:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-3">
+                    {shortAnswerText.join(" ")}
+                </p>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
                         className="text-purple-100 dark:text-purple-50 text-sm pc:text-base my-auto"
@@ -67,7 +65,7 @@ export const QaCard = ({ data, localizationData, likes }: FaqCardItemProps) => {
                     <Link
                         href={`faq/${slug}`}
                         className="mr-3 text-base text-purple-130 dark:text-purple-100 pc:hover:text-redLight dark:pc:hover:text-red
-                    pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none pc:transition pc:ease-out pc:duration-300 relative before:absolute before:bottom-1 before:w-full before:border-b before:border-purple-130 dark:before:border-purple-100 pc:hover:before:border-redLight dark:pc:hover:before:border-red pc:focus:before:border-redLight dark:pc:focus:before:border-red pc:before:transition pc:before:ease-out pc:before:duration-300"
+                    pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 relative before:absolute before:bottom-[1px] before:w-full before:border-b before:border-current"
                     >
                         {getTranslation("readMore")}
                     </Link>
