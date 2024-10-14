@@ -96,8 +96,8 @@ const LikeButton = ({
             onAnimationEnd={() => setStartAnimation(false)}
         >
             <IconLike
-                isActive={isUserVoted || startAnimation}
-                className={`pb-0.5 my-auto ${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"} animate-none ${startAnimation && "animate-pulsation"} `}
+                isLiked={isUserVoted || startAnimation || isLoading}
+                className={`pb-0.5 my-auto ${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"} animate-none ${startAnimation && "animate-pulsationBrokenHeart"} `}
             />
             {likes.length}
         </button>
