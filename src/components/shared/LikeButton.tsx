@@ -31,18 +31,18 @@ const LikeButton = ({
 
     const deleteLike = useCallback(
         async (questionSlug: string, userId: string) => {
+            const newLikes = likes.filter(
+                item =>
+                    !(
+                        item.questionSlug === questionSlug &&
+                        item.userId === userId
+                    )
+            );
+            setLikes(newLikes);
             try {
                 await axios.delete(
                     `api/likesData?questionSlug=${questionSlug}&userId=${userId}`
                 );
-                const newLikes = likes.filter(
-                    item =>
-                        !(
-                            item.questionSlug === questionSlug &&
-                            item.userId === userId
-                        )
-                );
-                setLikes(newLikes);
             } catch (error) {
                 return error;
             } finally {
@@ -59,10 +59,10 @@ const LikeButton = ({
                 userId,
                 questionSlug,
             };
+            const newLikes = [...likes, likeObject];
+            setLikes(newLikes);
             try {
                 await axios.post("api/likesData", likeObject);
-                const newLikes = [...likes, likeObject];
-                setLikes(newLikes);
             } catch (error) {
                 return error;
             } finally {
@@ -89,17 +89,19 @@ const LikeButton = ({
 
     return (
         <button
-            className={`text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center gap-x-2 pc:transition pc:ease-out pc:duration-300 disabled:cursor-default`}
+            className={`h-[40px] mb-2 tab:mb-0 text-purple-100 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus-within:text-redLight dark:focus-within:text-red focus-within:outline-none flex items-center  pc:transition pc:ease-out pc:duration-300 disabled:cursor-default`}
             aria-label="Like button"
             onClick={onClickBtn}
             disabled={isLoading}
             onAnimationEnd={() => setStartAnimation(false)}
         >
-            <IconLike
-                isLiked={isUserVoted || startAnimation || isLoading}
-                className={`pb-0.5 my-auto ${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"} animate-none ${startAnimation && "animate-pulsationBrokenHeart"} `}
-            />
-            {likes.length}
+            <span className="flex items-end gap-x-2">
+                <IconLike
+                    isLiked={isUserVoted || startAnimation}
+                    className={`${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"}  ${startAnimation ? "animate-pulsationBrokenHeart" : "animate-none"} `}
+                />
+                <span className="leading-[20px]"> {likes.length}</span>
+            </span>
         </button>
     );
 };
