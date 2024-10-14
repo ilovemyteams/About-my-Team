@@ -27,7 +27,7 @@ export const TableContentItem = ({
                                 width={20}
                                 height={20}
                             />
-                            <h4 className="font-caviar text-lg">
+                            <h4 className="font-caviar text-lg desk:text-xl">
                                 {typeof item === "string" ? item : item.title}
                             </h4>
                         </div>
