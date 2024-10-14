@@ -76,6 +76,19 @@ export const projectQuery = groq`
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
 `;
+export const allMembersQuery = groq`
+*[_type == "team"]{
+  "name":name[_key == $language][0].value,
+  "role": role->title,
+  "category": role->category->title[_key == $language][0].value,
+  projects[]{url, newWindow},
+  "about":about[_key == $language][0].value,
+  "services": services[_key == $language][0].value,
+  "photoURL": photo.asset._ref,
+    price, "showPrice": select(isAvaliblePerson == "Show price" => true),
+   socialLinks[]{"url":url.url, platform},
+    "tools": tools[]->title}
+`;
 
 export const homeServicesQuery = groq`
   *[_type == "home"][0] 
@@ -116,3 +129,10 @@ export const homeFAQQuery = groq`
   "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, 
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
 }`;
+
+export const homeTeamQuery = groq`
+  *[_type == "home"][0]{teamHome {
+  "title": title[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "projectsList": projectsList[]->_id}}`;

@@ -5,12 +5,14 @@ import { draftMode } from "next/headers";
 
 import { getClient } from "@/sanity/lib/client";
 import {
+    AllMembersQueryResult,
     Home,
     HomeAboutUsQueryResult,
     HomeFAQQueryResult,
     HomeServicesQueryResult,
     HomeStagesQueryResult,
-    Project,
+    HomeTeamQueryResult,
+    ProjectQueryResult,
     SettingsQueryResult,
 } from "@/types/sanity.types";
 import {
@@ -21,6 +23,7 @@ import {
 
 import { readToken } from "../lib/api";
 import {
+    allMembersQuery,
     CTAQuery,
     footerQuery,
     homeAboutUsQuery,
@@ -29,6 +32,7 @@ import {
     homePortfolioQuery,
     homeServicesQuery,
     homeStagesQuery,
+    homeTeamQuery,
     projectQuery,
     settingsQuery,
 } from "../lib/queries";
@@ -112,10 +116,18 @@ export function loadCTA(language = "ua") {
 }
 
 export function loadProjects(language = "ua") {
-    return loadQuery<Project[] | null>(
+    return loadQuery<ProjectQueryResult | null>(
         projectQuery,
         { language },
         { next: { tags: ["project"] } }
+    );
+}
+
+export function loadMembers(language = "ua") {
+    return loadQuery<AllMembersQueryResult | null>(
+        allMembersQuery,
+        { language },
+        { next: { tags: ["team"] } }
     );
 }
 
@@ -145,6 +157,13 @@ export function loadHomeAboutUs(language = "ua") {
 export function loadHomeFaq(language = "ua") {
     return loadQuery<HomeFAQQueryResult>(
         homeFAQQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+export function loadHomeTeam(language = "ua") {
+    return loadQuery<HomeTeamQueryResult>(
+        homeTeamQuery,
         { language },
         { next: { tags: ["home"] } }
     );

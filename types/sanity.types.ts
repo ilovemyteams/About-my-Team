@@ -764,6 +764,7 @@ export type Home = {
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
+    pageSlug?: Slug;
     hero?: HeroHome;
     aboutUsHomeSection?: AboutUsHomeSection;
     ctaSectionJoinUs?: CallToAction;
@@ -1447,6 +1448,46 @@ export type ProjectQueryResult = Array<{
     URL: LinkExternal | null;
     category: string | null;
 }>;
+// Variable: allMembersQuery
+// Query: *[_type == "team"]{  "name":name[_key == $language][0].value,  "role": role->title,  "category": role->category->title[_key == $language][0].value,  projects[]{url, newWindow},  "about":about[_key == $language][0].value,  "services": services[_key == $language][0].value,  "photoURL": photo.asset._ref,    price, "showPrice": select(isAvaliblePerson == "Show price" => true),   socialLinks[]{"url":url.url, platform},    "tools": tools[]->title}
+export type AllMembersQueryResult = Array<{
+    name: string | null;
+    role: string | null;
+    category: string | null;
+    projects: Array<
+        | {
+              url: null;
+              newWindow: null;
+          }
+        | {
+              url: string | null;
+              newWindow: boolean | null;
+          }
+    > | null;
+    about: string | null;
+    services: string | null;
+    photoURL: string | null;
+    price: number | null;
+    showPrice: true;
+    socialLinks: Array<{
+        url: string | null;
+        platform:
+            | "behance"
+            | "email"
+            | "facebook"
+            | "github"
+            | "googleDrive"
+            | "instagram"
+            | "linkedin"
+            | "pinterest"
+            | "telegram"
+            | "twitter"
+            | "whatsapp"
+            | "youtube"
+            | null;
+    }> | null;
+    tools: Array<string | null> | null;
+}>;
 // Variable: homeServicesQuery
 // Query: *[_type == "home"][0]   { servicesHome {  "title": title[_key == $language][0].value,  "description": description[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "servicesListTitle":servicesList[]->title[_key == $language][0].value,  "servicesListText":servicesList[]->description[_key == $language][0].value}}
 export type HomeServicesQueryResult = {
@@ -1471,11 +1512,11 @@ export type HomeStagesQueryResult = {
     } | null;
 } | null;
 // Variable: homeAboutUsQuery
-// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
+// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
 export type HomeAboutUsQueryResult = {
     aboutUsHomeSection: {
         title: PortableColorTitle | null;
-        aboutUsItemInfo: Array<null> | null;
+        aboutUsItemInfo: Array<string | null> | null;
         subtitle: string | null;
         anchorId: string | null;
         learnMoreButtonName: string | null;
@@ -1493,6 +1534,16 @@ export type HomeFAQQueryResult = {
         shortAnswer: string | null;
     }> | null;
 } | null;
+// Variable: homeTeamQuery
+// Query: *[_type == "home"][0]{teamHome {  "title": title[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "projectsList": projectsList[]->_id}}
+export type HomeTeamQueryResult = {
+    teamHome: {
+        title: PortableColorTitle | null;
+        subtitle: string | null;
+        anchorId: string | null;
+        projectsList: Array<string> | null;
+    } | null;
+} | null;
 
 // Query TypeMap
 import "@sanity/client";
@@ -1504,9 +1555,11 @@ declare module "@sanity/client" {
         '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value, \n    "descriptionNotFound":description[_key == $language][0].value},\n  \n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    )},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n\n  }\n': SettingsQueryResult;
         '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
+        '\n*[_type == "team"]{\n  "name":name[_key == $language][0].value,\n  "role": role->title,\n  "category": role->category->title[_key == $language][0].value,\n  projects[]{url, newWindow},\n  "about":about[_key == $language][0].value,\n  "services": services[_key == $language][0].value,\n  "photoURL": photo.asset._ref,\n    price, "showPrice": select(isAvaliblePerson == "Show price" => true),\n   socialLinks[]{"url":url.url, platform},\n    "tools": tools[]->title}\n': AllMembersQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
-        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
+        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
         '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
+        '\n  *[_type == "home"][0]{teamHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "projectsList": projectsList[]->_id}}': HomeTeamQueryResult;
     }
 }

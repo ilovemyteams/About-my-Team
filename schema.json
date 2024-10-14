@@ -4072,6 +4072,14 @@
           "type": "string"
         }
       },
+      "pageSlug": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "slug"
+        },
+        "optional": true
+      },
       "hero": {
         "type": "objectAttribute",
         "value": {
