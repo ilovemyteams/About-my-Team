@@ -31,7 +31,7 @@ export async function generateMetadata(
     const localization = displayedQuestion[params.locale as LocaleType];
     return {
         title: localization.questionText,
-        description: localization.shortAnswerText[0],
+        description: localization.shortAnswerText.join(""),
         openGraph: {
             images: [...previousImages],
         },
