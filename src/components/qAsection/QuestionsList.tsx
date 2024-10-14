@@ -7,7 +7,7 @@ type FaqList = Array<{
 
 export const QuestionsList = ({ faqList }: { faqList: FaqList }) => {
     return (
-        <div className="mb-[34px] pc:ml-[270px] pc:mb-[32px]">
+        <div className="mb-[40px] pc:ml-[270px] tab:mb-[48px]">
             <ul>
                 {faqList &&
                     faqList.map((item, idx) => {

@@ -11,7 +11,7 @@ export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");
 
     return (
-        <Section id="aboutteam" className="tab:pt-5 pc:pt-0 desk:mt-5">
+        <Section id="aboutteam">
             <h2 className=" tab:hidden text-purple-200 dark:text-grey font-caviar text-3xl mb-6">
                 {getTranslation("sectionTeamTitle")} <br />
                 <span className="text-purple-100">
