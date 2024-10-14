@@ -1,7 +1,7 @@
 {
     "Home": {
-        "titleCEO": "The team that cares about your needs",
-        "descriptionCEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
+        "titleSEO": "The team that cares about your needs",
+        "descriptionSEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
         "heroInfoText": "Team that takes care of Your needs",
@@ -155,7 +155,7 @@
         "title": "Page not found",
         "info": "We could not find the page you are looking for. There may have been an error",
         "button": "to the home page",
-        "descriptionCEO": "Page not found, but don't miss the opportunity to check out our cool animations and creative descriptions!"
+        "descriptionSEO": "Page not found, but don't miss the opportunity to check out our cool animations and creative descriptions!"
     },
     "SharePopover": {
         "shareLink": "Share the link via:",
@@ -220,8 +220,8 @@
         "button": "ok"
     },
     "AboutPage": {
-        "titleCEO": "Our goal is to create amazing digital products",
-        "descriptionCEO": "Creating something unique is a challenge and a passion. We develop designs, implement creative solutions, provide quality and personalized support",
+        "titleSEO": "Our goal is to create amazing digital products",
+        "descriptionSEO": "Creating something unique is a challenge and a passion. We develop designs, implement creative solutions, provide quality and personalized support",
         "title": "About ",
         "titleAccent": "us",
         "contentItem1": "about the founder",
@@ -270,8 +270,8 @@
         "breadcrumbItemFaq": "FAQ"
     },
     "FaqPage": {
-        "titleCEO": "Answers to your questions in one place",
-        "descriptionCEO": "Not sure what to choose: a website, landing page, marketplace, or online store? Get advice on costs, timelines, SEO, and all you need for success and profit",
+        "titleSEO": "Answers to your questions in one place",
+        "descriptionSEO": "Not sure what to choose: a website, landing page, marketplace, or online store? Get advice on costs, timelines, SEO, and all you need for success and profit",
         "ctaText": "Didn't find the answer to your question? Write to us, and we will provide you with the first consultation for free!"
     },
     "UnderConstruction": {
