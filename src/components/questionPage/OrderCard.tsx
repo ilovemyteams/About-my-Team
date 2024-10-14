@@ -37,7 +37,7 @@ export const OrderCard = ({
                         {fullAnswerBottomText.map((text, index) => (
                             <p
                                 key={index}
-                                className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl3"
+                                className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
                             >
                                 {text}
                             </p>
