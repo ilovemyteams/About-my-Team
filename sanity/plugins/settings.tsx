@@ -34,7 +34,7 @@ async function nestedContentPageList(
 
     if (hasChildren) {
         return S.documentTypeList("page")
-            .title(`Page ${englishTitle} and nested pages list`)
+            .title(`Page ${englishTitle} and nested pages`)
             .filter(
                 `(
                 $id == _id || "drafts.${id}" == _id ||
@@ -115,7 +115,7 @@ export const pageStructure = (
             .schemaType("page")
             .child(
                 S.documentTypeList("page")
-                    .title("Top-level pages list")
+                    .title("Top-level pages")
                     .filter('!defined(parentPage) && _type == "page"')
                     .child(id => nestedContentPageList(id, S))
             );
