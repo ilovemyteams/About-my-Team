@@ -1,3 +1,4 @@
+import { HighlightText } from "../../shared/HighlightText";
 import { PageSection } from "../../shared/PageSection";
 import { AnswerTextIParagraph } from "./AnswerTextIParagraph";
 import { ImageComponent } from "./ImageComponent";
@@ -6,12 +7,14 @@ interface TopTextSectionProps {
     shortAnswer: string[];
     fullAnswerText?: string[];
     imageUrl?: string;
+    searchTerm: string;
 }
 
 export const TopTextSection = ({
     shortAnswer,
     fullAnswerText,
     imageUrl,
+    searchTerm,
 }: TopTextSectionProps) => {
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] pc:pb-[100px]">
@@ -23,6 +26,7 @@ export const TopTextSection = ({
                                 key={i}
                                 indx={i}
                                 text={text}
+                                searchTerm={searchTerm}
                             />
                         ))}
                     </div>
@@ -33,7 +37,12 @@ export const TopTextSection = ({
                     {fullAnswerText && (
                         <>
                             {fullAnswerText.map((text, i) => (
-                                <p key={i}>{text}</p>
+                                <p key={i}>
+                                    <HighlightText
+                                        text={text}
+                                        toBeHighlighted={searchTerm}
+                                    />
+                                </p>
                             ))}
                         </>
                     )}

@@ -26,21 +26,16 @@ export default function FAQ({
     searchParams: { q?: string };
 }) {
     const locale = useLocale();
-    const searchValue = searchParams.q || "";
+    const searchTerm = searchParams.q || "";
 
     const filteredQuestions = questionsData.filter(question =>
-        searchFilteringForFAQ(question, locale as LocaleType, searchValue)
+        searchFilteringForFAQ(question, locale as LocaleType, searchTerm)
     );
+
     return (
         <>
-            <HeaderFAQ
-                searchTerm={searchValue}
-                itemsQty={filteredQuestions.length}
-            />
-            <QaCardList
-                questions={filteredQuestions}
-                searchParams={searchValue}
-            />
+            <HeaderFAQ itemsQty={filteredQuestions.length} />
+            <QaCardList questions={filteredQuestions} searchTerm={searchTerm} />
             <FaqSectionCta />
         </>
     );

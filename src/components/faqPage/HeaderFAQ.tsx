@@ -4,11 +4,10 @@ import { PageTopSection } from "../shared/PageTopSection";
 import Search from "../shared/Search";
 
 type HeaderFAQProps = {
-    searchTerm: string;
     itemsQty: number;
 };
 
-export const HeaderFAQ = ({ searchTerm, itemsQty }: HeaderFAQProps) => {
+export const HeaderFAQ = ({ itemsQty }: HeaderFAQProps) => {
     const getTranslation = useTranslations();
     const breadcrumbs = [
         { title: getTranslation("Breadcrumbs.breadcrumbItemFaq"), url: "" },
@@ -26,7 +25,7 @@ export const HeaderFAQ = ({ searchTerm, itemsQty }: HeaderFAQProps) => {
                     {getTranslation("Q&A.questionQuantity")}
                     {itemsQty}
                 </p>
-                <Search defaultValue={searchTerm} />
+                <Search />
             </div>
         </section>
     );

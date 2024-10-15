@@ -1,53 +1,45 @@
 "use client";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
-import { FormEvent } from "react";
+import { ChangeEvent } from "react";
 
 import { IconSearch } from "./Icons/IconSearch";
 
-type SearchProps = {
-    defaultValue: string;
-};
+export const Search = () => {
+    const getTranslations = useTranslations();
+    const searchParams = useSearchParams();
+    const pathname = usePathname();
+    const { replace } = useRouter();
 
-export const Search = ({ defaultValue }: SearchProps) => {
-    const getTranslations = useTranslations("Buttons");
+    const defaultValue = searchParams.get("q")?.toString();
 
-    const searchInputRef = useRef<HTMLInputElement>(null);
-
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); // Prevent default form submission
-        const searchValue = searchInputRef.current?.value || "";
+    const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
+        e.preventDefault();
+        const searchValue = e.target.value || "";
         const sanitizedValue = searchValue.trim().replace(/\s+/g, " ");
 
         if (!sanitizedValue) return;
 
-        const queryString = new URLSearchParams({
-            q: sanitizedValue,
-        }).toString();
-
-        window.location.href = `?${queryString}`;
+        const params = new URLSearchParams(searchParams);
+        sanitizedValue ? params.set("q", sanitizedValue) : params.delete("q");
+        replace(`${pathname}?${params.toString()}`);
     };
 
     return (
-        <form
-            method="GET"
-            className="flex border-b-1 tab:border-none"
-            onSubmit={handleSubmit}
-        >
+        <form method="GET" className="flex border-b-1 tab:border-none">
             <input
                 type="text"
-                name="q"
                 minLength={3}
                 maxLength={55}
                 defaultValue={defaultValue}
-                ref={searchInputRef}
-                placeholder={getTranslations("search")}
+                placeholder={getTranslations("Buttons.search")}
+                onChange={handleSearch}
             />
             <button type="submit">
                 <IconSearch />
             </button>
             <p className="my-auto font-caviar text-sm tab:text-lg text-purple-200 dark:text-grey">
-                {getTranslations("search")}
+                {getTranslations("Buttons.search")}
             </p>
         </form>
     );

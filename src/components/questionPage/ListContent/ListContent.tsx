@@ -8,12 +8,14 @@ interface ListContentProps {
     content: LongAnswerListType[];
     activeSubList?: boolean;
     locale: LocaleType;
+    searchTerm: string;
 }
 
 export const ListContent = ({
     activeSubList = false,
     content,
     locale,
+    searchTerm,
 }: ListContentProps) => {
     const listStyle = activeSubList ? "list-disc ml-6" : "";
 
@@ -27,6 +29,7 @@ export const ListContent = ({
                         indx={i}
                         listStyle={listStyle}
                         locale={locale}
+                        searchTerm={searchTerm}
                     />
                 ))}
             </ol>

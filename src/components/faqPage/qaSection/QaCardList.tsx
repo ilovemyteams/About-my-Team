@@ -7,11 +7,11 @@ import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";
 
 type QaCardListProps = {
-    searchParams: string;
     questions: QAItemType[];
+    searchTerm: string;
 };
 
-export const QaCardList = ({ searchParams, questions }: QaCardListProps) => {
+export const QaCardList = ({ searchTerm, questions }: QaCardListProps) => {
     const locale = useLocale();
 
     return (
@@ -21,7 +21,7 @@ export const QaCardList = ({ searchParams, questions }: QaCardListProps) => {
                     key={question.data.slug}
                     data={question.data}
                     localizationData={question[locale as LocaleType]}
-                    searchTerm={searchParams}
+                    searchTerm={searchTerm}
                 />
             ))}
         </Section>
