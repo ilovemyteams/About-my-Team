@@ -501,11 +501,6 @@ export type Faq = {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    fullAnswer?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableTextValue
-    >;
     image?: {
         image?: {
             asset?: {
@@ -523,6 +518,39 @@ export type Faq = {
                 _key: string;
             } & InternationalizedArrayStringValue
         >;
+    };
+    fullAnswer?: {
+        topText?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayTextValue
+        >;
+        mainContent?: {
+            designType?: "stages" | "table";
+            mainContentText?: Array<
+                {
+                    _key: string;
+                } & InternationalizedArrayPortableTextValue
+            >;
+        };
+        orderContent?: {
+            image?: {
+                asset?: {
+                    _ref: string;
+                    _type: "reference";
+                    _weak?: boolean;
+                    [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+                };
+                hotspot?: SanityImageHotspot;
+                crop?: SanityImageCrop;
+                _type: "image";
+            };
+            orderText?: Array<
+                {
+                    _key: string;
+                } & InternationalizedArrayTextValue
+            >;
+        };
     };
 };
 
@@ -738,7 +766,7 @@ export type Page = {
     title?: Array<
         {
             _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
+        } & InternationalizedArrayStringValue
     >;
     pageSlug?: Slug;
     parentPage?: {
@@ -764,6 +792,7 @@ export type Home = {
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
+    pageSlug?: Slug;
     hero?: HeroHome;
     aboutUsHomeSection?: AboutUsHomeSection;
     ctaSectionJoinUs?: CallToAction;
@@ -1471,11 +1500,11 @@ export type HomeStagesQueryResult = {
     } | null;
 } | null;
 // Variable: homeAboutUsQuery
-// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
+// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
 export type HomeAboutUsQueryResult = {
     aboutUsHomeSection: {
         title: PortableColorTitle | null;
-        aboutUsItemInfo: Array<null> | null;
+        aboutUsItemInfo: Array<string | null> | null;
         subtitle: string | null;
         anchorId: string | null;
         learnMoreButtonName: string | null;
@@ -1506,7 +1535,7 @@ declare module "@sanity/client" {
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
-        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].AboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
+        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
         '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
     }
 }

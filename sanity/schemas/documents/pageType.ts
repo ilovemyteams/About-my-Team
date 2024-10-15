@@ -2,10 +2,10 @@ import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
-import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { Page } from "@/types/sanity.types";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 
 const SLUG_MAX_LENGTH = 40;
 
@@ -17,10 +17,10 @@ export const pageType = defineType({
     fields: [
         defineField({
             name: "title",
-            title: "Page title",
+            title: "Page name",
             description:
-                "Сhoose the accent color of specific words for each language",
-            type: "internationalizedArrayPortableColorTitle",
+                "Enter the name of the page, this page name will be displayed in breadcrumbs and a slug will be created based on it.",
+            type: "internationalizedArrayString",
             validation: Rule => Rule.custom(validateIsRequired),
         }),
         defineField({
@@ -72,12 +72,13 @@ export const pageType = defineType({
     preview: {
         select: {
             title: "title",
+            subtitle: "pageSlug.current",
         },
-        prepare({ title }) {
-            const englishTitle = getEnglishTitleFromBlocks(title);
+        prepare({ title, subtitle }) {
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
-                subtitle: "Page",
+                subtitle: `/${subtitle}`,
             };
         },
     },

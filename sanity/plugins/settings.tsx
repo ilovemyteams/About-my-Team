@@ -11,7 +11,7 @@ import {
 } from "sanity/structure";
 
 import { getClient } from "../lib/client";
-import { getEnglishTitleFromBlocks } from "../utils/getEnglishTitleFromBlocks";
+import { getEnglishTitleFromIntArrays } from "../utils/getEnglishTitleFromIntArrays";
 
 async function nestedContentPageList(
     id: string,
@@ -22,7 +22,7 @@ async function nestedContentPageList(
         { id }
     );
 
-    const englishTitle = getEnglishTitleFromBlocks(page?.title);
+    const englishTitle = getEnglishTitleFromIntArrays(page?.title);
 
     const hasChildren = await getClient().fetch(
         `count(*[
