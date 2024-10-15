@@ -45,10 +45,22 @@ const config: Config = {
                     lineHeight: "17px",
                 },
             ],
+            sm20: [
+                "14px",
+                {
+                    lineHeight: "20px",
+                },
+            ],
             base: [
                 "16px",
                 {
                     lineHeight: "20px",
+                },
+            ],
+            base23: [
+                "16px",
+                {
+                    lineHeight: "23px",
                 },
             ],
             baseb: [
@@ -65,14 +77,24 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
-
+            lg25: [
+                "18px",
+                {
+                    lineHeight: "25px",
+                },
+            ],
             xl: [
                 "20px",
                 {
                     lineHeight: "25px",
                 },
             ],
-
+            xl28: [
+                "20px",
+                {
+                    lineHeight: "28px",
+                },
+            ],
             xlb: [
                 "20px",
                 {
@@ -84,6 +106,12 @@ const config: Config = {
                 "24px",
                 {
                     lineHeight: "30px",
+                },
+            ],
+            "2xl34": [
+                "24px",
+                {
+                    lineHeight: "34px",
                 },
             ],
             "2xlb": [
@@ -394,8 +422,12 @@ const config: Config = {
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
             PresentationGradient:
                 "linear-gradient(to right, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
-            PresentationGradientLigth:
+            PresentationGradientLight:
                 "linear-gradient(to right, #D3B0FFDE 0%, #F2EBFFDE 100%)",
+            underConstructionGradient:
+                "linear-gradient(90deg, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
+            underConstructionGradientLight:
+                "linear-gradient(90.01deg, #B490FFCC 0%, #CFB8FFCC 25%, #EAE0FFCC 50%, #F6F2FFCC 75%, #FEFDFFCC 100%)",
         },
     },
     plugins: [

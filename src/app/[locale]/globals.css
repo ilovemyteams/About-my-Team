@@ -16,6 +16,19 @@
     }
 }
 
+/* // Ask if we need this animation */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+/* //End scroll animation */
+
 a {
     text-decoration: none;
     color: inherit;
