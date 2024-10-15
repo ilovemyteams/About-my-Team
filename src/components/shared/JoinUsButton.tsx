@@ -15,12 +15,12 @@ export const JoinUsButton = () => {
 
     const JOIN_US_LINK = data?.buttonJoinUS?.buttonPageLink
         ? data.buttonJoinUS.buttonPageLink
-        : "https://forms.gle/nhbFek3qZYQgo9V19";
+        : "";
 
     return (
         <a
             href={JOIN_US_LINK}
-            target={data?.buttonJoinUS?.linkExternal?.newWindow ? "_blank" : ""}
+            target={data?.buttonJoinUS?.newWindow ? "_blank" : ""}
             rel="noopener noreferrer"
             className="outline-none"
         >
