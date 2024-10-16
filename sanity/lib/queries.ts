@@ -91,6 +91,10 @@ export const allMembersQuery = groq`
     "tools": tools[]->title}
 `;
 
+export const categoryNamesQuery = groq`
+*[_type == "specialistCategory"]{"name":title[_key == $language][0].value,
+                                 "value":title[_key == "en"][0].value}`;
+
 export const homeServicesQuery = groq`
   *[_type == "home"][0] 
   { servicesHome {

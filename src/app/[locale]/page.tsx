@@ -1,4 +1,5 @@
 import {
+    loadCategoryNames,
     loadCTA,
     loadHomeAboutUs,
     loadHomeFaq,
@@ -36,6 +37,7 @@ export default async function HomePage(props: PageParamsProps) {
         team,
         members,
         projects,
+        categoryNames,
     ] = await Promise.all([
         await loadHomeHero(props.params.locale),
         await loadHomeAboutUs(props.params.locale),
@@ -47,6 +49,7 @@ export default async function HomePage(props: PageParamsProps) {
         await loadHomeTeam(props.params.locale),
         await loadMembers(props.params.locale),
         await loadProjects(props.params.locale),
+        await loadCategoryNames(props.params.locale),
     ]);
 
     const validMembers = members?.data ?? [];
@@ -66,6 +69,7 @@ export default async function HomePage(props: PageParamsProps) {
                 data={team.data}
                 members={validMembers}
                 projects={validProjects}
+                categoryNames={categoryNames?.data ?? []}
             />
             <JoinTheTeamSection data={cta.data} />
             <StagesSection data={stages.data} />

@@ -6,6 +6,7 @@ import { draftMode } from "next/headers";
 import { getClient } from "@/sanity/lib/client";
 import {
     AllMembersQueryResult,
+    CategoryNamesQueryResult,
     Home,
     HomeAboutUsQueryResult,
     HomeFAQQueryResult,
@@ -24,6 +25,7 @@ import {
 import { readToken } from "../lib/api";
 import {
     allMembersQuery,
+    categoryNamesQuery,
     CTAQuery,
     footerQuery,
     homeAboutUsQuery,
@@ -126,6 +128,14 @@ export function loadProjects(language = "ua") {
 export function loadMembers(language = "ua") {
     return loadQuery<AllMembersQueryResult | null>(
         allMembersQuery,
+        { language },
+        { next: { tags: ["team"] } }
+    );
+}
+
+export function loadCategoryNames(language = "ua") {
+    return loadQuery<CategoryNamesQueryResult | null>(
+        categoryNamesQuery,
         { language },
         { next: { tags: ["team"] } }
     );

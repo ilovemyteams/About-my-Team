@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import {
     AllMembersQueryResult,
+    CategoryNamesQueryResult,
     HomeTeamQueryResult,
     ProjectQueryResult,
 } from "@/types/sanity.types";
@@ -28,10 +29,12 @@ export const OurTeamSection = ({
     data,
     members,
     projects,
+    categoryNames,
 }: {
     data: HomeTeamQueryResult;
     members: AllMembersQueryResult;
     projects: ProjectQueryResult;
+    categoryNames: CategoryNamesQueryResult;
 }) => {
     const teamHome = data?.teamHome;
     const membersList = members;
@@ -81,6 +84,7 @@ export const OurTeamSection = ({
             <Title title={title} subtitle={subtitle} />
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
+                    categoryNames={categoryNames}
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
                 />

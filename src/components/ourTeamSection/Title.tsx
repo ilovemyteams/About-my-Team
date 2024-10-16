@@ -18,7 +18,7 @@ export const Title = ({
             <SmallPageTitle className="flex flex-col ml-1 mb-[8px] tab:mt-[6px] pc:mt-0 pc:min-w-[75px] mr-3 pc:h-[21px] pc:flex-row">
                 {subtitle ? subtitle : ""}
             </SmallPageTitle>
-            <p className="tab:max-w-[300px] pc:max-w-[none]">
+            <div className="tab:max-w-[300px] pc:max-w-[none]">
                 {title && (
                     <div>
                         {title[0] && (
@@ -39,7 +39,7 @@ export const Title = ({
                         )}
                     </div>
                 )}
-            </p>
+            </div>
         </TitleWrapper>
     );
 };

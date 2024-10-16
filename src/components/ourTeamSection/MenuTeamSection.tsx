@@ -6,9 +6,8 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
+import { CategoryNamesQueryResult } from "@/types/sanity.types";
 
-import { categoryNames } from "../../mockedData/categoryNames";
-import { СategoryNamesProp } from "../../mockedData/categoryNames";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { IconUp } from "../shared/Icons/IconUp";
 
@@ -25,11 +24,13 @@ interface MenuProps {
             optionType: string;
         }>
     >;
+    categoryNames: CategoryNamesQueryResult;
 }
 
 export const MenuTeamSection = ({
     selectedOption,
     setSelectedOption,
+    categoryNames,
 }: MenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const locale = useLocale();
@@ -42,12 +43,12 @@ export const MenuTeamSection = ({
         const option = searchParams.get("option");
         if (option) {
             const category = categoryNames.find(
-                category => category.categoryName === option
+                category => category.name === option
             );
             if (category) {
                 setSelectedOption({
-                    optionName: category[locale as LocaleType],
-                    optionValue: category.categoryName,
+                    optionName: category.name || "",
+                    optionValue: category.value || "",
                     optionType: "person",
                 });
             } else {
@@ -69,7 +70,7 @@ export const MenuTeamSection = ({
                 optionType: "team",
             });
         }
-    }, [searchParams, locale, setSelectedOption]);
+    }, [searchParams, locale, setSelectedOption, categoryNames]);
 
     const handleOptionSelectProjectTeam = ({
         option,
@@ -93,17 +94,20 @@ export const MenuTeamSection = ({
         );
     };
 
-    const handleOptionSelectCategory = (category: СategoryNamesProp) => {
+    const handleOptionSelectCategory = (category: {
+        name: string | null;
+        value: string | null;
+    }) => {
         const selected = {
-            optionName: category[locale as LocaleType],
-            optionValue: category.categoryName,
+            optionName: category.name || "",
+            optionValue: category.value || "",
             optionType: "person",
         };
         setSelectedOption(selected);
         setIsOpen(false);
         setSlideId(0);
         router.push(
-            `/${locale}?option=${category.categoryName}&slideId=${DEFAULT_SLIDE_ID}#team`
+            `/${locale}?option=${category.value}&slideId=${DEFAULT_SLIDE_ID}#team`
         );
     };
 
@@ -162,14 +166,14 @@ export const MenuTeamSection = ({
                     <ul className="flex flex-col gap-[12px] text-baseb font-caviar">
                         {categoryNames.map(category => (
                             <li
-                                key={category.categoryName}
+                                key={category.name}
                                 onClick={() =>
                                     handleOptionSelectCategory(category)
                                 }
-                                className={`${selectedOption.optionValue === category.categoryName ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                className={`${selectedOption.optionValue === category.value ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
                                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
-                                {category[locale as LocaleType]}
+                                {category.name}
                             </li>
                         ))}
                     </ul>
