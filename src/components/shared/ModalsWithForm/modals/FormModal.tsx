@@ -2,8 +2,6 @@
 import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
 import { ComponentType, Dispatch, SetStateAction } from "react";
 
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
 import {
     FormInModalProps,
     TriggerComponentProps,
@@ -34,9 +32,6 @@ export const FormModal = ({
 }: FormModalProps) => {
     const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
 
-    const screenSizeName = useScreenSize();
-    const { mobileName, tabletName } = SCREEN_NAMES;
-
     const notificationHandler = async (submitFn: SubmitFnType) => {
         try {
             await submitFn();
@@ -55,13 +50,11 @@ export const FormModal = ({
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                placement="top-center"
+                placement="center"
                 radius="none"
-                shouldBlockScroll={
-                    screenSizeName !== mobileName &&
-                    screenSizeName !== tabletName
-                }
+                shouldBlockScroll={true}
                 hideCloseButton={true}
+                scrollBehavior="outside"
                 className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
                 classNames={{
                     backdrop:
