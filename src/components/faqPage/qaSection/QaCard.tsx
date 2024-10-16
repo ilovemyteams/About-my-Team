@@ -69,10 +69,6 @@ export const QaCard = ({
                         />
                     </p>
                 </div>
-
-                <p className="text-sm tab:text-base desk:text-lg desk:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-3">
-                    {shortAnswerText.join(" ")}
-                </p>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
                         className="text-purple-100 dark:text-purple-50 text-sm pc:text-base my-auto"
