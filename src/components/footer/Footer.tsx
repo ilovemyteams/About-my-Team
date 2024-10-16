@@ -33,7 +33,7 @@ export default async function Footer() {
             <div className="border-y-[1px] border-solid dark:border-purple-stroke border-purple-strokeLight desk:mx-auto">
                 <TitleFooter title={footerTitle || null} />
                 <SharePopover
-                    className="absolute top-[90px] tab:top-[64px] pc:top-[82px] right-[16px] pc:right-[60px] deskxl:top-[129px]"
+                    className="absolute top-[90px] tab:top-[64px] pc:top-[82px] right-[16px] pc:right-[60px] desk:top-[129px]"
                     trigerShowShareText={true}
                 />
                 <div className="flex tab:items-end tab:h-[48px] mb-9 pc:mb-[28px] justify-between">

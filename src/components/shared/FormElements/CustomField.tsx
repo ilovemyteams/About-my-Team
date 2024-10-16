@@ -7,9 +7,8 @@ interface CustomFieldProps {
     type: string;
     placeholder: string;
     isError: boolean;
-    autoFocus: boolean;
-    status: null | string;
-    setStatus: (status: null | string) => void;
+    status: string;
+    setStatus: (status: string | null) => void;
 }
 
 export const CustomField = ({
@@ -19,7 +18,6 @@ export const CustomField = ({
     type,
     placeholder,
     isError,
-    autoFocus,
     status,
     setStatus,
 }: CustomFieldProps) => {
@@ -46,7 +44,6 @@ export const CustomField = ({
 
             <Field
                 as={type === "textarea" ? "textarea" : "input"}
-                autoFocus={autoFocus}
                 name={name}
                 type={"text"}
                 autoComplete="on"
@@ -54,10 +51,11 @@ export const CustomField = ({
                 onFocus={onFocusField}
                 className={`block appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
+
             <ErrorMessage
                 name={name}
                 component="p"
-                className="absolute bottom-[-2px] right-0 text-xxs text-error text-right"
+                className="absolute bottom-[-2px] right-0 text-xxs text-right text-error"
             ></ErrorMessage>
         </label>
     );

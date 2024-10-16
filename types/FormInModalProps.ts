@@ -3,3 +3,8 @@ export interface FormInModalProps {
 }
 
 export type SubmitFnType = () => Promise<void>;
+
+export interface TriggerComponentProps {
+    modalOpenHandler: () => void;
+    isModalOpen: boolean;
+}
