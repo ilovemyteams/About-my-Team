@@ -55,13 +55,13 @@ export const FormModal = ({
                 shouldBlockScroll={true}
                 hideCloseButton={true}
                 scrollBehavior="inside"
-                className=" max-h-dvh overflow-y-scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] bg-white-100 dark:bg-purple-400"
+                className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] bg-white-100 dark:bg-purple-400"
                 classNames={{
                     backdrop:
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
                 }}
             >
-                <ModalContent className="relative w-full m-0">
+                <ModalContent className="relative w-full m-0 max-h-full overflow-y-auto scroll">
                     <BgImagesMobile />
                     <BgImagesTablet />
                     <BgImagesDesktop />
