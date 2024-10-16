@@ -21,7 +21,7 @@ export const ListContent = ({
 
     return (
         <div className="flex flex-col tab:flex-row justify-start gap-8">
-            <ol className="tab:max-w-[517px] pc:max-w-[688px] flex flex-col gap-6 tab:gap-10 pc:gap-[60px]">
+            <ol className="tab:max-w-[517px] pc:max-w-[688px] desk:max-w-[836px] flex flex-col gap-6 tab:gap-10 pc:gap-[60px]">
                 {content.map((item, i) => (
                     <ListContentItem
                         key={i}

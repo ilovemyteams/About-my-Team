@@ -26,11 +26,11 @@ export async function generatePageMetadata({
                 ua: canonical,
             },
         },
-        title: translations("titleCEO"),
-        description: translations("descriptionCEO"),
+        title: translations("titleSEO"),
+        description: translations("descriptionSEO"),
         openGraph: {
-            description: translations("descriptionCEO"),
-            title: translations("titleCEO"),
+            description: translations("descriptionSEO"),
+            title: translations("titleSEO"),
             type: "website",
         },
     };

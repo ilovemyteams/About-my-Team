@@ -33,7 +33,7 @@ export const QuestionHero = ({
                     estimateText={estimateText}
                     searchTerm={searchTerm}
                 />
-                <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] shrink-0">
+                <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] desk:min-w-[312px]  shrink-0">
                     <Image
                         alt={pageTitle}
                         src={pageImageUrl}
