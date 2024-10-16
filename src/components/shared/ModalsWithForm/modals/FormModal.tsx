@@ -61,7 +61,7 @@ export const FormModal = ({
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
                 }}
             >
-                <ModalContent className="relative w-full m-0 max-h-full overflow-y-auto scroll">
+                <ModalContent className="relative w-full m-0 max-h-[95vh] overflow-y-auto scroll">
                     <BgImagesMobile />
                     <BgImagesTablet />
                     <BgImagesDesktop />
