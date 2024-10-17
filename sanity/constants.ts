@@ -62,3 +62,9 @@ export const FAQ_PAGE_DESIGN_TYPES = [
     { title: "Stages", value: "stages" },
     { title: "Table", value: "table" },
 ];
+
+export const GENDER_OPTIONS = [
+    { title: "Female", value: "female" },
+    { title: "Male", value: "male" },
+    { title: "Unknown", value: "unknown" },
+];
