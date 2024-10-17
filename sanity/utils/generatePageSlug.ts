@@ -18,15 +18,15 @@ export const generatePageSlug = async (doc: Page, slugMaxLength: number) => {
 
     const pageSlug = pageTitle
         .toLowerCase()
-        .replace(/\s+/g, "-")
-        .slice(0, slugMaxLength - 1);
+        .replace(/[.,/#!$%^&*;:{}=\-_`~()?"']/g, "")
+        .replace(/\s+/g, "-");
 
     const parent = doc.parentPage;
 
     if (parent?._ref) {
         const parentSlug = await getParentSlug(parent._ref);
-        return `${parentSlug}/${pageSlug}`;
+        return `${parentSlug}/${pageSlug}`.slice(0, slugMaxLength - 1);
     }
 
-    return pageSlug;
+    return pageSlug.slice(0, slugMaxLength - 1);
 };

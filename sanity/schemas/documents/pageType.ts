@@ -2,12 +2,12 @@ import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { Page } from "@/types/sanity.types";
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 
-const SLUG_MAX_LENGTH = 40;
+const SLUG_MAX_LENGTH = 90;
 
 export const pageType = defineType({
     name: "page",
@@ -29,11 +29,7 @@ export const pageType = defineType({
             type: "slug",
             options: {
                 source: doc => generatePageSlug(doc as Page, SLUG_MAX_LENGTH),
-                slugify: input =>
-                    input
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")
-                        .slice(0, SLUG_MAX_LENGTH - 1),
+                slugify: input => input,
             },
             validation: Rule => Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)),
         }),
