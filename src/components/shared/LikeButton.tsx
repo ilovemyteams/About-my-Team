@@ -41,7 +41,7 @@ const LikeButton = ({
             setLikes(newLikes);
             try {
                 await axios.delete(
-                    `/api/likesData?questionSlug=${questionSlug}&userId=${userId}`
+                    `api/likesData?questionSlug=${questionSlug}&userId=${userId}`
                 );
             } catch (error) {
                 return error;
@@ -62,7 +62,7 @@ const LikeButton = ({
             const newLikes = [...likes, likeObject];
             setLikes(newLikes);
             try {
-                await axios.post("/api/likesData", likeObject);
+                await axios.post("api/likesData", likeObject);
             } catch (error) {
                 return error;
             } finally {
