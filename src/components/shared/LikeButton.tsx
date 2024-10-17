@@ -1,9 +1,9 @@
 "use client";
-import axios from "axios";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { generateUserId } from "@/src/utils/generateUserId";
 import { LikesTypes } from "@/src/utils/likeDataHandler";
+import { removedLikes, saveLikes } from "@/src/utils/likeDataHandler";
 
 import { IconLike } from "./Icons/IconLike";
 
@@ -40,9 +40,7 @@ const LikeButton = ({
             );
             setLikes(newLikes);
             try {
-                await axios.delete(
-                    `/api/likesData?questionSlug=${questionSlug}&userId=${userId}`
-                );
+                await removedLikes(questionSlug, userId);
             } catch (error) {
                 return error;
             } finally {
@@ -62,7 +60,7 @@ const LikeButton = ({
             const newLikes = [...likes, likeObject];
             setLikes(newLikes);
             try {
-                await axios.post("/api/likesData", likeObject);
+                await saveLikes(likeObject);
             } catch (error) {
                 return error;
             } finally {
