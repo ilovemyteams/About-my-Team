@@ -1,9 +1,9 @@
 import { HelpCircleIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
+import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
 
 export const faqType = defineField({
     name: "faq",
