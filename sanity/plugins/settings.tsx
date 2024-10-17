@@ -17,14 +17,18 @@ async function nestedContentPageList(
     id: string,
     S: StructureBuilder
 ): Promise<DocumentListBuilder | DocumentBuilder> {
-    const page = await getClient().fetch(
+    const previewClient = getClient({
+        token: process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN,
+    });
+
+    const page = await previewClient.fetch(
         `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
         { id }
     );
 
     const englishTitle = getEnglishTitleFromIntArrays(page?.title);
 
-    const hasChildren = await getClient().fetch(
+    const hasChildren = await previewClient.fetch(
         `count(*[
           parentPage._ref == $id || 
           parentPage._ref == "drafts.${id}"
