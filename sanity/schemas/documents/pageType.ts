@@ -7,7 +7,7 @@ import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { Page } from "@/types/sanity.types";
 
-const SLUG_MAX_LENGTH = 90;
+const SLUG_MAX_LENGTH = 100;
 
 export const pageType = defineType({
     name: "page",
@@ -24,6 +24,14 @@ export const pageType = defineType({
             validation: Rule => Rule.custom(validateIsRequired),
         }),
         defineField({
+            name: "parentPage",
+            title: "Parent page (optional)",
+            description: "Select parent page only if current page is nested",
+            type: "reference",
+            to: [{ type: "page" }],
+        }),
+
+        defineField({
             title: "Page Slug",
             name: "pageSlug",
             type: "slug",
@@ -33,14 +41,6 @@ export const pageType = defineType({
             },
             validation: Rule => Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)),
         }),
-        defineField({
-            name: "parentPage",
-            title: "Parent page (optional)",
-            description: "Select parent page only if current page is nested",
-            type: "reference",
-            to: [{ type: "page" }],
-        }),
-
         defineField({
             name: "pageBuilder",
             type: "array",
