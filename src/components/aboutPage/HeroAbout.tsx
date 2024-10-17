@@ -1,15 +1,9 @@
 "use client";
-import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
-import { localeInURL } from "@/src/utils/localeInURL";
-
-import { GoBackButton } from "../shared/GoBackButton";
-import LocaleSwitcher from "../shared/LocaleSwitcher";
-import { Section } from "../shared/Section";
-import { ThemeSwitcher } from "../shared/ThemeSwitcher";
+import { PageTopSection } from "../shared/PageTopSection";
 import { PageContentList } from "./PageContentList";
 
 export const HeroAbout = () => {
@@ -18,34 +12,12 @@ export const HeroAbout = () => {
     });
     const getTranslation = useTranslations("AboutPage");
     const getTranslationBreadcrumbs = useTranslations("Breadcrumbs");
-    const locale = useLocale();
+    const breadcrumbs = [
+        { title: getTranslationBreadcrumbs("breadcrumbItemAbout"), url: "" },
+    ];
     return (
-        <Section className="pt-8 tab:pt-12 pc:pt-8">
-            <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
-                <LocaleSwitcher />
-                <ThemeSwitcher id="HeroSectionThemeSwitcher" />
-            </div>
-            <div className="flex items-center justify-between mb-4 pc:mb-12 desk:mb-[52px]">
-                <Breadcrumbs
-                    separator="/"
-                    itemClasses={{
-                        separator: "px-1",
-                        item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
-                    }}
-                >
-                    <BreadcrumbItem href={`/${localeInURL(locale)}`}>
-                        {getTranslationBreadcrumbs("breadcrumbItemHome")}
-                    </BreadcrumbItem>
-                    <BreadcrumbItem>
-                        <p className="dark:text-red text-redLight">
-                            {getTranslationBreadcrumbs("breadcrumbItemAbout")}
-                        </p>
-                    </BreadcrumbItem>
-                </Breadcrumbs>
-                <div className="flex justify-end">
-                    <GoBackButton />
-                </div>
-            </div>
+        <section className="container max-w-[540px] tab:max-w-full desk:max-w-[1456px] scroll-mt-[90px] pc:scroll-mt-[30px] pt-8 tab:pt-12 pc:pt-8 pb-[111px] tab:pb-[100px] pc:pb-12">
+            <PageTopSection breadcrumbsList={breadcrumbs} />
             <div className="tab:flex tab:justify-between tab:items-center tab:mb-9 pc:mb-[64px] desk:mb-12">
                 <h1 className="text-purple-200 dark:text-grey font-caviar text-3xl mb-6 tab:mb-0 tab:text-4xl pc:text-6xl desk:text-7xl">
                     {getTranslation("title")}
@@ -92,6 +64,6 @@ export const HeroAbout = () => {
                     </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 };

@@ -44,13 +44,14 @@ export const settingsQuery = groq`
   linkInternal,
   "titleMenu":title[_key == $language][0].value
   }},
-   buttonJoinUS {..., "buttonName":buttonName[_key == $language][0].value,
+   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,
       "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,
      buttonLink == "external" => linkExternal.url
-    )},
+    ),
+     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow, 
+                        buttonLink == "internal" => false)},
     buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
     buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
-
   }
 `;
 

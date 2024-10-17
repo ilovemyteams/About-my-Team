@@ -19,7 +19,7 @@ export const BuyMeCoffeeLink = ({
 
     const buttonNameString = data?.buttonBuyMeCoffee?.buttonName
         ? data.buttonBuyMeCoffee.buttonName.toString()
-        : getTranslation("buyMeACoffe");
+        : getTranslation("buyMeACoffee");
 
     const BUY_ME_COFFEE = data?.buttonBuyMeCoffee?.linkExternal?.url
         ? data.buttonBuyMeCoffee.linkExternal.url
