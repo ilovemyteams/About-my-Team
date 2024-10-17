@@ -348,7 +348,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "12",
+            pricePerHour: "",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
