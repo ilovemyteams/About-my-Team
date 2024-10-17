@@ -2,7 +2,9 @@ import { createClient, type SanityClient } from "next-sanity";
 
 import { apiVersion, dataset, projectId, studioUrl, useCdn } from "./api";
 
-export function getClient(preview?: { token: string }): SanityClient {
+export function getClient(preview?: {
+    token: string | undefined;
+}): SanityClient {
     const client = createClient({
         projectId,
         dataset,

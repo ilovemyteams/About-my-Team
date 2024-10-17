@@ -2,12 +2,12 @@ import { DocumentsIcon } from "@sanity/icons";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
-import { getEnglishTitleFromBlocks } from "@/sanity/utils/getEnglishTitleFromBlocks";
+import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
 import { Page } from "@/types/sanity.types";
 
-const SLUG_MAX_LENGTH = 40;
+const SLUG_MAX_LENGTH = 100;
 
 export const pageType = defineType({
     name: "page",
@@ -17,25 +17,11 @@ export const pageType = defineType({
     fields: [
         defineField({
             name: "title",
-            title: "Page title",
+            title: "Page name",
             description:
-                "Сhoose the accent color of specific words for each language",
-            type: "internationalizedArrayPortableColorTitle",
+                "Enter the name of the page, this page name will be displayed in breadcrumbs and a slug will be created based on it.",
+            type: "internationalizedArrayString",
             validation: Rule => Rule.custom(validateIsRequired),
-        }),
-        defineField({
-            title: "Page Slug",
-            name: "pageSlug",
-            type: "slug",
-            options: {
-                source: doc => generatePageSlug(doc as Page, SLUG_MAX_LENGTH),
-                slugify: input =>
-                    input
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")
-                        .slice(0, SLUG_MAX_LENGTH - 1),
-            },
-            validation: Rule => Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)),
         }),
         defineField({
             name: "parentPage",
@@ -45,6 +31,16 @@ export const pageType = defineType({
             to: [{ type: "page" }],
         }),
 
+        defineField({
+            title: "Page Slug",
+            name: "pageSlug",
+            type: "slug",
+            options: {
+                source: doc => generatePageSlug(doc as Page, SLUG_MAX_LENGTH),
+                slugify: input => input,
+            },
+            validation: Rule => Rule.custom(validatePageSlug(SLUG_MAX_LENGTH)),
+        }),
         defineField({
             name: "pageBuilder",
             type: "array",
@@ -72,12 +68,13 @@ export const pageType = defineType({
     preview: {
         select: {
             title: "title",
+            subtitle: "pageSlug.current",
         },
-        prepare({ title }) {
-            const englishTitle = getEnglishTitleFromBlocks(title);
+        prepare({ title, subtitle }) {
+            const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: englishTitle,
-                subtitle: "Page",
+                subtitle: `/${subtitle}`,
             };
         },
     },

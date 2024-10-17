@@ -501,11 +501,6 @@ export type Faq = {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    fullAnswer?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableTextValue
-    >;
     image?: {
         image?: {
             asset?: {
@@ -523,6 +518,39 @@ export type Faq = {
                 _key: string;
             } & InternationalizedArrayStringValue
         >;
+    };
+    fullAnswer?: {
+        topText?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayTextValue
+        >;
+        mainContent?: {
+            designType?: "stages" | "table";
+            mainContentText?: Array<
+                {
+                    _key: string;
+                } & InternationalizedArrayPortableTextValue
+            >;
+        };
+        orderContent?: {
+            image?: {
+                asset?: {
+                    _ref: string;
+                    _type: "reference";
+                    _weak?: boolean;
+                    [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+                };
+                hotspot?: SanityImageHotspot;
+                crop?: SanityImageCrop;
+                _type: "image";
+            };
+            orderText?: Array<
+                {
+                    _key: string;
+                } & InternationalizedArrayTextValue
+            >;
+        };
     };
 };
 
@@ -738,7 +766,7 @@ export type Page = {
     title?: Array<
         {
             _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
+        } & InternationalizedArrayStringValue
     >;
     pageSlug?: Slug;
     parentPage?: {

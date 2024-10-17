@@ -11,20 +11,24 @@ import {
 } from "sanity/structure";
 
 import { getClient } from "../lib/client";
-import { getEnglishTitleFromBlocks } from "../utils/getEnglishTitleFromBlocks";
+import { getEnglishTitleFromIntArrays } from "../utils/getEnglishTitleFromIntArrays";
 
 async function nestedContentPageList(
     id: string,
     S: StructureBuilder
 ): Promise<DocumentListBuilder | DocumentBuilder> {
-    const page = await getClient().fetch(
+    const previewClient = getClient({
+        token: process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN,
+    });
+
+    const page = await previewClient.fetch(
         `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
         { id }
     );
 
-    const englishTitle = getEnglishTitleFromBlocks(page?.title);
+    const englishTitle = getEnglishTitleFromIntArrays(page?.title);
 
-    const hasChildren = await getClient().fetch(
+    const hasChildren = await previewClient.fetch(
         `count(*[
           parentPage._ref == $id || 
           parentPage._ref == "drafts.${id}"
@@ -34,7 +38,7 @@ async function nestedContentPageList(
 
     if (hasChildren) {
         return S.documentTypeList("page")
-            .title(`Page ${englishTitle} and nested pages list`)
+            .title(`Page ${englishTitle} and nested pages`)
             .filter(
                 `(
                 $id == _id || "drafts.${id}" == _id ||
@@ -115,7 +119,7 @@ export const pageStructure = (
             .schemaType("page")
             .child(
                 S.documentTypeList("page")
-                    .title("Top-level pages list")
+                    .title("Top-level pages")
                     .filter('!defined(parentPage) && _type == "page"')
                     .child(id => nestedContentPageList(id, S))
             );
