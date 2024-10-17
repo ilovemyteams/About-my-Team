@@ -1,15 +1,17 @@
-import { getLocale } from "next-intl/server";
+import { useLocale } from "next-intl";
 
 import { questionsData } from "@/src/mockedData/questionsData";
-import { getLikes } from "@/src/utils/likeDataHandler";
+import { LikesTypes } from "@/src/utils/likeDataHandler";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";
 
-export const QaCardList = async () => {
-    const locale = await getLocale();
-    const likes = await getLikes();
+interface QaCardListProps {
+    likes: LikesTypes[];
+}
+export const QaCardList = ({ likes }: QaCardListProps) => {
+    const locale = useLocale();
 
     return (
         <Section className="flex flex-col gap-3">
