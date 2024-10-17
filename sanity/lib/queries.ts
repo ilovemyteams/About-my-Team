@@ -82,7 +82,11 @@ export const allMembersQuery = groq`
   "name":name[_key == $language][0].value,
   "role": role->title,
   "category": role->category->title[_key == $language][0].value,
-  projects[]{url, newWindow},
+  projects[]{
+    _type == "reference" => @->{
+      "url": URL.url, "newWindow": URL.newWindow},
+    _type == "linkExternal" => {url, newWindow}},
+  "ILMTProjects": projects[][_type == "reference"]->_id,
   "about":about[_key == $language][0].value,
   "services": services[_key == $language][0].value,
   "photoURL": photo.asset._ref,
