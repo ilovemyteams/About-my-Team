@@ -1,4 +1,4 @@
-import { ProjectsIcon } from "@sanity/icons";
+import { FcBusinessman } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
 import { GENDER_OPTIONS } from "@/sanity/constants";
@@ -9,7 +9,7 @@ export const customerType = defineField({
     name: "customer",
     title: "Customers",
     type: "document",
-    icon: ProjectsIcon,
+    icon: FcBusinessman,
     fields: [
         defineField({
             name: "name",
