@@ -55,14 +55,14 @@ export const FormModal = ({
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                placement="center"
+                placement="top"
                 radius="none"
                 shouldBlockScroll={
                     screenSizeName !== mobileName &&
                     screenSizeName !== tabletName
                 }
                 hideCloseButton={true}
-                className="max-h-[90dvh] overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400"
+                className="max-h-[90dvh] top-7 overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 no-doc-scroll"
                 classNames={{
                     backdrop:
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
