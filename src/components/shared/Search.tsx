@@ -1,7 +1,7 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { ChangeEvent, FormEvent, useRef, useState } from "react";
+import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 
 import { IconCloseXBold } from "./Icons/IconCloseXBold";
@@ -9,49 +9,42 @@ import { IconSearch } from "./Icons/IconSearch";
 
 export const Search = () => {
     const inputRef = useRef<HTMLInputElement>(null);
+    const searchParams = useSearchParams();
+    const defaultValue = searchParams.get("q")?.toString();
+    const [inputValue, setInputValue] = useState(defaultValue || "");
     const [isInputFoucsed, setIsInputFoucsed] = useState(false);
     const getTranslations = useTranslations();
-    const searchParams = useSearchParams();
     const pathname = usePathname();
     const { replace } = useRouter();
-
-    const defaultValue = searchParams.get("q")?.toString();
 
     const shouldIconBeLeft =
         (defaultValue && defaultValue?.length > 0) || isInputFoucsed;
 
-    const handleSearch = useDebouncedCallback(
-        (e: ChangeEvent<HTMLInputElement>) => {
-            e.preventDefault();
-            const searchValue = e.target.value || "";
-            const sanitizedValue = searchValue.trim().replace(/\s+/g, " ");
+    const handleSearch = useDebouncedCallback(() => {
+        const sanitizedValue = inputValue.trim().replace(/\s+/g, " ");
+        const params = new URLSearchParams(searchParams);
+        sanitizedValue ? params.set("q", sanitizedValue) : params.delete("q");
+        replace(`${pathname}?${params.toString()}`);
+    }, 300);
 
-            const params = new URLSearchParams(searchParams);
-            sanitizedValue
-                ? params.set("q", sanitizedValue)
-                : params.delete("q");
-            replace(`${pathname}?${params.toString()}`);
-        },
-        300
-    );
+    useEffect(() => {
+        handleSearch();
+    }, [inputValue, handleSearch]);
 
     const handleClearInput = () => {
-        if (typeof inputRef.current?.value === "string")
-            inputRef.current.value = "";
+        setInputValue("");
+        inputRef?.current?.focus();
     };
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
-
-        // if (inputRef?.current) {
-        //     inputRef.current.scrollIntoView();
-        // }
+        setInputValue(e.target.value);
     };
 
     return (
         <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
-            <form
-                onSubmit={handleSubmit}
+            <div
+                role="form"
                 className={`flex relative ${isInputFoucsed && "tab:border-b-1"} w-full`}
             >
                 <div
@@ -64,16 +57,16 @@ export const Search = () => {
                 <input
                     type="text"
                     ref={inputRef}
-                    defaultValue={defaultValue}
+                    value={inputValue}
                     placeholder={getTranslations("Buttons.search")}
-                    onChange={handleSearch}
+                    onChange={handleChange}
                     onFocus={() => {
                         setIsInputFoucsed(true);
                     }}
                     onBlur={() => setIsInputFoucsed(false)}
                     className={`my-auto mx-[50px] h-[44px] focus:placeholder:text-transparent tab:placeholder:text-transparent focus:outline-none bg-transparent`}
                 />
-                {defaultValue && (
+                {inputValue && (
                     <button
                         onClick={handleClearInput}
                         className="absolute right-0"
@@ -81,7 +74,7 @@ export const Search = () => {
                         <IconCloseXBold />
                     </button>
                 )}
-            </form>
+            </div>
             <p
                 className={`hidden tab:block my-auto font-caviar text-sm tab:text-lg text-purple-200 dark:text-grey`}
             >
@@ -92,10 +85,3 @@ export const Search = () => {
 };
 
 export default Search;
-
-//що робить "пошук"
-//обмеження по макс символам ---
-//стандартне повідомлення про помилковий ввод ---
-// стандартний бедж про кількість відповідей ---
-// як користувач має ділитися пошуком (чи підходить лінк) ---
-// "містить пошуковий запит"
