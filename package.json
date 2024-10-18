@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "@next/third-parties": "^14.2.5",
-        "@nextui-org/react": "^2.4.6",
+        "@nextui-org/react": "^2.4.8",
         "axios": "^1.7.1",
         "embla-carousel-react": "^8.0.0",
         "formik": "^2.4.5",
