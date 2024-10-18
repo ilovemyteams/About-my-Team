@@ -1,7 +1,14 @@
+import { useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
+
 import { HeaderFAQ } from "@/src/components/faqPage/HeaderFAQ";
 import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
 import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
+import { Section } from "@/src/components/shared/Section";
+import { questionsData } from "@/src/mockedData/questionsData";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
+import { searchFilteringForFAQ } from "@/src/utils/searchFilteringForFAQ";
+import type { LocaleType } from "@/types/LocaleType";
 
 export async function generateMetadata({
     params: { locale },
@@ -15,11 +22,37 @@ export async function generateMetadata({
     });
 }
 
-export default function FAQ() {
+export default function FAQ({
+    searchParams,
+}: {
+    searchParams: { q?: string };
+}) {
+    const locale = useLocale();
+    const getTranslation = useTranslations();
+    const searchTerm = searchParams.q || "";
+
+    const filteredQuestions = questionsData.filter(question =>
+        searchFilteringForFAQ(question, locale as LocaleType, searchTerm)
+    );
+
+    const nothingFoundString = getTranslation("Q&A.noAnswerFound")
+        .split("|||")
+        .join(searchTerm);
     return (
         <>
-            <HeaderFAQ />
-            <QaCardList />
+            <HeaderFAQ itemsQty={filteredQuestions.length} />
+            {filteredQuestions.length > 0 ? (
+                <QaCardList
+                    questions={filteredQuestions}
+                    searchTerm={searchTerm}
+                />
+            ) : (
+                <Section className="flex flex-col gap-3">
+                    <p className="font-caviar text-lg tab:text-xlb pc:text-4xl text-purple-200 dark:text-grey w-auto tab:w-1/2">
+                        {nothingFoundString}
+                    </p>
+                </Section>
+            )}
             <FaqSectionCta />
         </>
     );
