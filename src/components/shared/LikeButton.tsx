@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
 import { generateUserId } from "@/src/utils/generateUserId";
@@ -23,6 +24,7 @@ const LikeButton = ({
     const isUserVoted = useMemo(() => {
         return !!likes.find(item => item.userId === userId);
     }, [likes, userId]);
+    const router = useRouter();
 
     useEffect(() => {
         const persistedUserId = localStorage.getItem("userId");
@@ -47,9 +49,10 @@ const LikeButton = ({
                 return error;
             } finally {
                 setIsLoading(false);
+                router.refresh();
             }
         },
-        [likes]
+        [likes, router]
     );
 
     const addLike = useCallback(
@@ -67,9 +70,10 @@ const LikeButton = ({
                 return error;
             } finally {
                 setIsLoading(false);
+                router.refresh();
             }
         },
-        [likes]
+        [likes, router]
     );
 
     const onClickBtn = useCallback(async () => {
