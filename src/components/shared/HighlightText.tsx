@@ -94,7 +94,7 @@ export const HighlightText = ({
         searchTerm: string,
         isStripped: boolean
     ): (string | ReactElement)[] => {
-        if (!searchTerm || searchTerm.length < 2) {
+        if (!searchTerm) {
             return [text];
         }
 
