@@ -16,14 +16,14 @@ export const OrderCard = ({
     imageAltText,
 }: OrderCardProps) => {
     return (
-        <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] pb-[80px] tab:pb-[100px] pc:pb-[100px]">
+        <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
             {imageLink ? (
                 <Image
                     src={imageLink}
                     width={630}
                     height={362}
                     alt={imageAltText}
-                    className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%]"
+                    className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%] desk:w-[54.6%]"
                 />
             ) : (
                 <div className="bg-CTAGradientLight dark:bg-CTAGradient tab:w-[50%] pc:min-w-[630px] pc:w-[58%] w-full min-h-[166px] tab:min-h-[206px] pc:min-h-[362px]">
@@ -31,11 +31,14 @@ export const OrderCard = ({
                 </div>
             )}
 
-            <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] ">
+            <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
                 {fullAnswerBottomText ? (
                     <div>
                         {fullAnswerBottomText.map((text, index) => (
-                            <p key={index} className="text-sm tab:text-base">
+                            <p
+                                key={index}
+                                className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
+                            >
                                 {text}
                             </p>
                         ))}

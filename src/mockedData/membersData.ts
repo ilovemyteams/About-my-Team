@@ -348,7 +348,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "12",
+            pricePerHour: "",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/anastasiya-nazarenko-a7aa4421b/",
@@ -1654,7 +1654,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "MilaMaksymenko",
-            projectId: ["3"],
+            projectId: ["1", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RjBfHBr05T_fuzgTswljLGrPXnnC9PIN",
             position: "UI/UX designer",
@@ -1670,6 +1670,7 @@ export const membersData: MemberDataItemType[] = [
             tools: [
                 "Figma",
                 "Photoshop",
+                "Adobe Illustrator",
                 "Jira",
                 "prototyping",
                 "CJM",
@@ -2059,13 +2060,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "OlenaHalushka",
-            projectId: ["3"],
-
+            projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["theatermag.com.ua"],
+            projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
 
             pricePerHour: "9",
             socialLinks: {
@@ -2113,6 +2113,160 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Journey Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
             team: "Ukrainian theater",
+        },
+    },
+    {
+        data: {
+            id: "MariiaCherevko",
+            projectId: ["1"],
+
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1KR3GgVdmYVXHpxY0riW0rsSh52BU-f2u",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["ilovemyteam.online"],
+
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/maria-cherevko",
+                telegram: "https://t.me/masha_ichr",
+            },
+            tools: [
+                "Figma",
+                "Adobe Illustrator",
+                "Jira",
+                "Miro",
+                "Leonardo.ai",
+                "Trello",
+                "Slack",
+                "Google",
+                "Discord",
+            ],
+        },
+        ua: {
+            name: "Марія Черевко",
+            about: "Хороший дизайн — це як хороший жарт: якщо треба пояснювати, він не працює.",
+            services:
+                "Як UX/UI дизайнер, я починаю з аналізу потреб клієнта і користувачів. Досліджую ринок і визначаю ключові вимоги до продукту, аналізую цільову аудиторію і визначаю її майбутній шлях на продукті. Потім створюю концепцію, прототипи і тестую їх з користувачами. Після цього розробляю візуальний дизайн і співпрацюю з розробниками для його впровадження. Після запуску вдосконалюю продукт на основі відгуків користувачів.",
+            team: "i love my team",
+        },
+        en: {
+            name: "Mariia Cherevko",
+            about: "Good design is like a good joke: if you have to explain it, it doesn't work",
+            services:
+                "As a UX/UI designer, I start by analyzing the needs of the client and users. I research the market and identify key product requirements, analyze the target audience, and define their future journey with the product. Then, I create a concept, prototypes, and test them with users. After that, I develop the visual design and collaborate with developers for implementation. Following the launch, I refine the product based on user feedback.",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Mariia Cherevko",
+            about: "Dobry design jest jak dobry żart: jeśli trzeba go tłumaczyć, to nie działa.",
+            services:
+                "Jako projektant UX/UI zaczynam od analizy potrzeb klienta i użytkowników. Badam rynek i określam kluczowe wymagania dotyczące produktu, analizuję grupę docelową i definiuję jej przyszłą ścieżkę w produkcie. Następnie tworzę koncepcję, prototypy i testuję je z użytkownikami. Po tym opracowuję projekt wizualny i współpracuję z deweloperami nad jego wdrożeniem. Po uruchomieniu produktu, udoskonalam go na podstawie opinii użytkowników.",
+            team: "i love my team",
+        },
+    },
+    {
+        data: {
+            id: "AnnaPrutnik",
+            projectId: ["1"],
+
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1NKeuyv46nwGf1RMOZ7EyxYgSSOmaQH-S",
+            position: "Front-end Developer",
+            categoryName: "developer",
+            projectsExperience: ["ilovemyteam.online"],
+
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/anna-prutnik/",
+                github: "https://github.com/AnnaPrutnik",
+                telegram: "https://t.me/AnnaPrutnik",
+            },
+            tools: [
+                "React",
+                "Typescript",
+                "Mui",
+                "Tailwind",
+                "Redux RTK",
+                "Zustand",
+                "Formik",
+                "React Hook Form",
+                "Jira",
+                "Styled Components",
+                "Trello",
+                "HTML",
+                "CSS",
+            ],
+        },
+        ua: {
+            name: "Анна Прутнік",
+            about: "Робота займатиме велику частину нашого життя, і єдиний спосіб бути по-справжньому задоволеним — це робити те, що ви любите.",
+            services:
+                "Створення адаптивних веб-додатків з сучасним, зручним та інтуїтивним інтерфейсом, що вирішують конкретні бізнес-завдання та забезпечують стабільну роботу.",
+            team: "i love my team",
+        },
+        en: {
+            name: "Anna Prutnik",
+            about: "Work will take up a large part of our lives, and the only way to be truly satisfied is to do what you love.",
+            services:
+                "Creating responsive web applications with a modern, user-friendly, and intuitive interface that solves specific business tasks and ensures stable performance.",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Anna Prutnik",
+            about: "Praca będzie zajmować dużą część naszego życia, a jedyny sposób, aby być naprawdę zadowolonym, to robić to, co się kocha.",
+            services:
+                "Tworzenie responsywnych aplikacji internetowych z nowoczesnym, przyjaznym i intuicyjnym interfejsem, które rozwiązują konkretne zadania biznesowe i zapewniają stabilne działanie.",
+            team: "i love my team",
+        },
+    },
+    {
+        data: {
+            id: "OleksandrPetrychuk",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1r7xqlvLM9jJbY7UsaPqoTGuvIiBWXiYL",
+            position: "Fullstack Developer",
+            categoryName: "developer",
+            projectsExperience: ["ilovemyteam.online"],
+
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/oleksandr-petrychuk/",
+                github: "https://github.com/petalser",
+            },
+            tools: [
+                "React",
+                "Express",
+                "Next",
+                "MongoDB",
+                "PostgreSQL",
+                "JWT",
+                "Node.js",
+                "Bootstrap",
+                "TailwindCSS",
+            ],
+        },
+        ua: {
+            name: "Олександр Петричук",
+            about: "Перш ніж намагатися вразити користувача, не змушуй його чекати та не змушуй його страждати.",
+            services:
+                "Розширення функціоналу наявних веб-додатків і створення нових з нуля. Клієнтська та/або серверна частини.",
+            team: "i love my team",
+        },
+        en: {
+            name: "Oleksandr Petrychuk",
+            about: "Before trying to impress the user, don't make them wait and don't make them suffer.",
+            services:
+                "Expanding the functionality of existing web applications and creating new ones from scratch. Client-side and/or server-side.",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Oleksandr Petrychuk",
+            about: "Zanim spróbujesz zaimponować użytkownikowi, nie każ mu czekać i nie każ mu cierpieć.",
+            services:
+                "Rozszerzenie funkcjonalności istniejących aplikacji internetowych i tworzenie nowych od podstaw. Część kliencka i/lub serwerowa.",
+            team: "i love my team",
         },
     },
 ];

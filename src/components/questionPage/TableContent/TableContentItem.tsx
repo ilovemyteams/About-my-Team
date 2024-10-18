@@ -13,7 +13,7 @@ export const TableContentItem = ({
         <div>
             <div className="flex gap-2 mb-6 pc:mb-[113px] mt-6">
                 <div className="mt-[3px] w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
-                <h3 className="h-[50px] font-caviar text-xlb dark:text-white-200 text-purple-200">
+                <h3 className="h-[50px] font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
                     {title}
                 </h3>
             </div>
@@ -27,12 +27,12 @@ export const TableContentItem = ({
                                 width={20}
                                 height={20}
                             />
-                            <h4 className="font-caviar text-lg">
+                            <h4 className="font-caviar text-lg desk:text-xl">
                                 {typeof item === "string" ? item : item.title}
                             </h4>
                         </div>
                         {typeof item !== "string" && item.text && (
-                            <ul className=" list-disc ml-12 text-sm ">
+                            <ul className=" list-disc ml-12 text-sm20 tab:text-base23 desk:text-lg25">
                                 {Array.isArray(item.text) ? (
                                     item.text.map((subItem, i) => (
                                         <li key={i} className="">

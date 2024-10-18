@@ -27,7 +27,7 @@ export const QuestionHero = ({
             <PageTopSection breadcrumbsList={breadcrumbs} />
             <div className="flex flex-col tab:flex-row gap-6 tab:gap-[80px] pc:gap-[150px] justify-between">
                 <PageTitle title={pageTitle} estimateText={estimateText} />
-                <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] shrink-0">
+                <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] desk:min-w-[312px]  shrink-0">
                     <Image
                         alt={pageTitle}
                         src={pageImageUrl}

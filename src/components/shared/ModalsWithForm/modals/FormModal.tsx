@@ -49,41 +49,47 @@ export const FormModal = ({
         }
     };
 
+    const placement = screenSizeName === mobileName ? "top" : "center";
+
     return (
         <div className={className}>
             <TriggerComponent modalOpenHandler={onOpen} isModalOpen={isOpen} />
             <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                placement="top-center"
+                placement={placement}
                 radius="none"
                 shouldBlockScroll={
                     screenSizeName !== mobileName &&
                     screenSizeName !== tabletName
                 }
                 hideCloseButton={true}
-                className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px] overflow-y-auto tab:overflow-y-visible bg-white-100 dark:bg-purple-400"
+                className="max-h-[90dvh] top-7 tab:top-0 overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 no-doc-scroll"
                 classNames={{
                     backdrop:
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
                 }}
             >
-                <ModalContent className="relative w-full m-0">
-                    <BgImagesMobile />
-                    <BgImagesTablet />
-                    <BgImagesDesktop />
+                <ModalContent className="m-0">
+                    <div className="relative w-full h-full px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
+                        <BgImagesMobile />
+                        <BgImagesTablet />
+                        <BgImagesDesktop />
 
-                    <button
-                        type="button"
-                        onClick={onClose}
-                        disabled={isError}
-                        aria-label="close button"
-                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                        <button
+                            type="button"
+                            onClick={onClose}
+                            disabled={isError}
+                            aria-label="close button"
+                            className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                    >
-                        <IconCloseX />
-                    </button>
-                    <FormComponent notificationHandler={notificationHandler} />
+                        >
+                            <IconCloseX />
+                        </button>
+                        <FormComponent
+                            notificationHandler={notificationHandler}
+                        />
+                    </div>
                 </ModalContent>
             </Modal>
         </div>
