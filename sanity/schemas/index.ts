@@ -7,7 +7,6 @@ import {
 
 import { anchorLinkType } from "./objects/global/anchorLinkType";
 import { buttonType } from "./objects/global/buttonType";
-import { customerType } from "./objects/global/customerType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
 import { headerType } from "./objects/global/headerType";
@@ -72,7 +71,6 @@ const objects: ObjectDefinition[] = [
     aboutUsHomeSectionType,
     anchorLinkType,
     portfolioHomeType,
-    customerType,
     reviewsHomeType,
     servicesHomeType,
     teamHomeType,
@@ -102,6 +100,7 @@ const documents: DocumentDefinition[] = [colorThemeType, pageType];
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";
 import { servicesHomeType } from "./objects/module/servicesHomeType";
+import { customerType } from "./singletons/customerType";
 import { faqType } from "./singletons/faqType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
@@ -126,6 +125,7 @@ const singletons: DocumentDefinition[] = [
     specialistType,
     specialistCategoryType,
     toolType,
+    customerType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
