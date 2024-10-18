@@ -1,10 +1,7 @@
 import { getClient } from "@/sanity/lib/client";
-import {
-    InternationalizedArrayPortableColorTitle,
-    Page,
-} from "@/types/sanity.types";
+import { InternationalizedArrayString, Page } from "@/types/sanity.types";
 
-import { getEnglishTitleFromBlocks } from "./getEnglishTitleFromBlocks";
+import { getEnglishTitleFromIntArrays } from "./getEnglishTitleFromIntArrays";
 
 const getParentSlug = async (parentPageId: string) => {
     const parentPage = await getClient().fetch(
@@ -15,21 +12,21 @@ const getParentSlug = async (parentPageId: string) => {
 };
 
 export const generatePageSlug = async (doc: Page, slugMaxLength: number) => {
-    const pageTitle = getEnglishTitleFromBlocks(
-        doc.title as InternationalizedArrayPortableColorTitle
+    const pageTitle = getEnglishTitleFromIntArrays(
+        doc.title as InternationalizedArrayString
     );
 
     const pageSlug = pageTitle
         .toLowerCase()
-        .replace(/\s+/g, "-")
-        .slice(0, slugMaxLength - 1);
+        .replace(/[.,/#!$%^&*;:{}=\-_`~()?"']/g, "")
+        .replace(/\s+/g, "-");
 
     const parent = doc.parentPage;
 
     if (parent?._ref) {
         const parentSlug = await getParentSlug(parent._ref);
-        return `${parentSlug}/${pageSlug}`;
+        return `${parentSlug}/${pageSlug}`.slice(0, slugMaxLength - 1);
     }
 
-    return pageSlug;
+    return pageSlug.slice(0, slugMaxLength - 1);
 };
