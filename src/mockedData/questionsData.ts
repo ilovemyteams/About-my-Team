@@ -679,7 +679,7 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Скільки коштує розробка?",
             shortAnswerText: [
-                "В залежності від об’єму та складності продукту орієнтовний бюджет на лендінг від 500 доларів. Вартість сайту до 10 сторінок орієнтовно від 800 доларів. Вартість розробки інтернет-магазину на 20-30 продуктів та оплатою на сайті від 1600 доларів. Якщо ви бажаєте отримати оцінку вартості розробки сайту, рекомендуємо зв'язатися з Менеджером продукту та обговорити з ним/нею всі деталі. Після цього ми зможемо скласти для вас комерційну пропозицію, в якій буде вказана приблизна вартість розробки вашого сайту та терміни виконання.",
+                "В залежності від об’єму та складності продукту орієнтовний бюджет на лендінг від 500 доларів. Вартість сайту до 10 сторінок орієнтовно від 800 доларів. Вартість розробки інтернет-магазину на 10-15 продуктів та оплатою на сайті від 1600 доларів. Якщо ви бажаєте отримати оцінку вартості розробки сайту, рекомендуємо зв'язатися з Менеджером продукту та обговорити з ним/нею всі деталі. Після цього ми зможемо скласти для вас комерційну пропозицію, в якій буде вказана приблизна вартість розробки вашого сайту та терміни виконання.",
             ],
             imageAltText: "Скільки коштує розробка?",
         },
@@ -687,7 +687,7 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
             shortAnswerText: [
-                "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
+                "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 10-15 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
             ],
             imageAltText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
@@ -695,7 +695,7 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "How much does development cost?",
             shortAnswerText: [
-                "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 20-30 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the Product Manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
+                "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 10-15 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the Product Manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
             ],
             imageAltText: "How much does development cost?",
         },
