@@ -47,7 +47,7 @@ export default function FAQ({
                     searchTerm={searchTerm}
                 />
             ) : (
-                <Section className="flex flex-col gap-3">
+                <Section className="flex flex-col gap-3 mt-8">
                     <p className="font-caviar text-lg tab:text-xlb pc:text-4xl text-purple-200 dark:text-grey w-auto tab:w-1/2">
                         {nothingFoundString}
                     </p>

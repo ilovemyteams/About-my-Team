@@ -45,12 +45,12 @@ export const Search = () => {
         <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
             <div
                 role="form"
-                className={`flex relative ${isInputFoucsed && "tab:border-b-1"} w-full`}
+                className={`flex relative ${isInputFoucsed || inputValue ? "tab:border-b-1" : "tab:border-b-1 border-transparent"} w-full`}
             >
                 <div
                     role="button"
                     onClick={() => inputRef?.current?.focus()}
-                    className={`absolute left-0 ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto"}`}
+                    className={`absolute left-0 ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}`}
                 >
                     <IconSearch />
                 </div>
