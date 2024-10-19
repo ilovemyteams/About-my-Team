@@ -68,6 +68,7 @@ export const FormModal = ({
                 classNames={{
                     backdrop:
                         "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
+                    wrapper: "absolute",
                 }}
             >
                 <ModalContent className="m-0">
