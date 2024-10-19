@@ -8,6 +8,7 @@ import { colorInput } from "@sanity/color-input";
 import { documentInternationalization } from "@sanity/document-internationalization";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
+import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
@@ -54,6 +55,13 @@ export default defineConfig({
             ],
         }),
         singletonPlugin(singletonPagesType),
+        presentationTool({
+            previewUrl: {
+                previewMode: {
+                    enable: "/api/draftMode/enable",
+                },
+            },
+        }),
     ],
 
     form: {
