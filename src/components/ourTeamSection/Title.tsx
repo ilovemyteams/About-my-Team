@@ -19,7 +19,7 @@ export const Title = () => {
                 alt="pumpkin"
                 width={50}
                 height={50}
-                className="absolute top-[170px] rotate-12"
+                className="absolute top-[170px] tab:left-[390px] tab:top-[90px] pc:top-[107px] desk:top-[123px] rotate-12"
             />
         </TitleWrapper>
     );
