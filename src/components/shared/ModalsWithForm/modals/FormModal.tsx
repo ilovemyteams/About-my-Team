@@ -1,9 +1,13 @@
 "use client";
-import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
-import { ComponentType, Dispatch, SetStateAction } from "react";
 
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
+import {
+    ComponentType,
+    Dispatch,
+    SetStateAction,
+    useEffect,
+    useState,
+} from "react";
+
 import {
     FormInModalProps,
     TriggerComponentProps,
@@ -32,15 +36,15 @@ export const FormModal = ({
     triggerComponent: TriggerComponent,
     className,
 }: FormModalProps) => {
-    const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const screenSizeName = useScreenSize();
-    const { mobileName, tabletName } = SCREEN_NAMES;
+    const onOpenModal = () => setIsModalOpen(true);
+    const onCloseModal = () => setIsModalOpen(false);
 
     const notificationHandler = async (submitFn: SubmitFnType) => {
         try {
             await submitFn();
-            onClose();
+            onCloseModal();
         } catch (error) {
             setIsError(true);
             throw new Error("Form submission failed", { cause: error });
@@ -49,12 +53,62 @@ export const FormModal = ({
         }
     };
 
-    const placement = screenSizeName === mobileName ? "top" : "center";
+    useEffect(() => {
+        const handleEsc = (event: KeyboardEvent) => {
+            if (event.key === "Escape") {
+                onCloseModal();
+            }
+        };
+
+        document.addEventListener("keydown", handleEsc);
+
+        return () => {
+            document.removeEventListener("keydown", handleEsc);
+        };
+    }, []);
+
+    console.log(isModalOpen);
 
     return (
-        <div className={`${className} relative`}>
-            <TriggerComponent modalOpenHandler={onOpen} isModalOpen={isOpen} />
-            <Modal
+        <div className={className}>
+            <TriggerComponent
+                modalOpenHandler={onOpenModal}
+                isModalOpen={isModalOpen}
+            />
+            {isModalOpen && (
+                <div
+                    aria-label="modal-backdrop"
+                    onClick={onCloseModal}
+                    className="fixed z-[20] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
+                >
+                    <div
+                        aria-label="modal-window"
+                        onClick={e => e.stopPropagation()}
+                        className="min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+            -translate-x-1/2 tab:-translate-y-1/2 z-[21]"
+                    >
+                        <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
+                            <BgImagesMobile />
+                            <BgImagesTablet />
+                            <BgImagesDesktop />
+                            <button
+                                type="button"
+                                onClick={onCloseModal}
+                                disabled={isError}
+                                aria-label="close button"
+                                className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[25] "
+                            >
+                                <IconCloseX />
+                            </button>
+                            <FormComponent
+                                notificationHandler={notificationHandler}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
+            {/* <Modal
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 placement={placement}
@@ -92,7 +146,7 @@ export const FormModal = ({
                         />
                     </div>
                 </ModalContent>
-            </Modal>
+            </Modal> */}
         </div>
     );
 };
