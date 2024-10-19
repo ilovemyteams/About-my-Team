@@ -15,8 +15,8 @@ export const Title = () => {
                 {getTranslation("pageBigTitle")}
             </p>
             <Image
-                src="/images/pumkin.png"
-                alt="Pumkin"
+                src="/images/pumpkin.png"
+                alt="pumpkin"
                 width={50}
                 height={50}
                 className="absolute top-[170px] rotate-12"

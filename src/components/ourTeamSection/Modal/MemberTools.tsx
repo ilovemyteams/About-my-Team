@@ -8,10 +8,10 @@ export const MemberTools = ({ tools }: { tools: string[] }) => {
                     key={idx}
                     className="mx-1 my-2 tab:my-1 border border-greyLight dark:border-grey px-2 py-[4.5px] text-xs tab:text-base"
                 >
-                    {tool === "pumkin" ? (
+                    {tool === "pumpkin" ? (
                         <Image
-                            src="/images/pumkin.png"
-                            alt="Pumkin"
+                            src="/images/pumpkin.png"
+                            alt="pumpkin"
                             width={40}
                             height={40}
                             className="mx-[-4px] my-[-8px]"

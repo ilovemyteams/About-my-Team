@@ -29,11 +29,11 @@ export const PresentationSection = () => {
             </div>
 
             <Image
-                src="/images/pumkin.png"
-                alt="Pumkin"
+                src="/images/pumpkin.png"
+                alt="pumpkin"
                 width={60}
                 height={60}
-                className="animate-pumkintion absolute top-[15px] pc:top-[115px] tab:left-[28%] z-[-1]"
+                className="animate-pumpkintion absolute top-[15px] pc:top-[115px] tab:left-[28%] z-[-1]"
             />
 
             <p className="font-caviar text-xlb pc:text-[32px] pc:leading-[42px] tab:w-[534px] pc:w-[890px] desk:w-[1113px] mx-auto">

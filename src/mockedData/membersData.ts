@@ -57,7 +57,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: [
                 "SDLC",
-                "pumkin",
+                "pumpkin",
                 "Strategia",
                 "Planning",
                 "Budgeting",
@@ -1418,7 +1418,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: [
                 "ISTQB",
-                "pumkin",
+                "pumpkin",
                 "Jira",
                 "Postman",
                 "Swagger",
@@ -2187,7 +2187,7 @@ export const membersData: MemberDataItemType[] = [
             tools: [
                 "React",
                 "Typescript",
-                "pumkin",
+                "pumpkin",
                 "Mui",
                 "Tailwind",
                 "Redux RTK",

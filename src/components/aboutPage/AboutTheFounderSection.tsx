@@ -47,8 +47,8 @@ export const AboutTheFounderSection = () => {
                             {getTranslation("aboutOwnerP5")}
                         </p>
                         <Image
-                            src="/images/pumkin.png"
-                            alt="Pumkin"
+                            src="/images/pumpkin.png"
+                            alt="pumpkin"
                             width={60}
                             height={60}
                             className="ml-auto mr-0 tab:w-[96px] tab:h-auto opacity-[0.5]"

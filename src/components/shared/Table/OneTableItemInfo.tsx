@@ -76,8 +76,8 @@ export const OneTableItemInfo = ({
             <div className="flex gap-2 items-center">
                 {isIconShown && (
                     <Image
-                        src="/images/pumkin.png"
-                        alt="Pumkin"
+                        src="/images/pumpkin.png"
+                        alt="pumpkin"
                         width={30}
                         height={30}
                     />

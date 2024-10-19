@@ -10,8 +10,8 @@ export const BenefitsItem = ({ children }: BenefitsItemProps) => {
         <li className="flex gap-3">
             <div className="w-8 h-8 flex-shrink-0">
                 <Image
-                    src="/images/pumkin.png"
-                    alt="Pumkin"
+                    src="/images/pumpkin.png"
+                    alt="pumpkin"
                     width={30}
                     height={30}
                 />

@@ -378,7 +378,7 @@ const config: Config = {
                         transform: "rotate(0deg)",
                     },
                 },
-                pumkin: {
+                pumpkin: {
                     "0%": {
                         transform: "rotate(0deg) translateY(0)",
                     },
@@ -413,7 +413,7 @@ const config: Config = {
                 curveRotation: "curveRotate 3700ms ease-out 1",
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
-                pumkintion: "pumkin 6000ms linear infinite",
+                pumpkintion: "pumpkin 6000ms linear infinite",
             },
         },
         backgroundImage: {

@@ -35,8 +35,8 @@ export function Accordion({ item }: AccordionProps) {
                     >
                         <div className="w-10 h-10 flex-shrink-0">
                             <Image
-                                src="/images/pumkin.png"
-                                alt="Pumkin"
+                                src="/images/pumpkin.png"
+                                alt="pumpkin"
                                 width={40}
                                 height={40}
                                 className={`duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-180" : "rotate-0 "}`}

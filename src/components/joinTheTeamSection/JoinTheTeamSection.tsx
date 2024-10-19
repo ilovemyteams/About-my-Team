@@ -15,8 +15,8 @@ export const JoinTheTeamSection = () => {
             </TitleCTAWrapper>
             <JoinUsButton />
             <Image
-                src="/images/pumkin.png"
-                alt="Pumkin"
+                src="/images/pumpkin.png"
+                alt="pumpkin"
                 width={30}
                 height={30}
                 className="absolute bottom-[-12px] left-6 rotate-45 z-[-10]"

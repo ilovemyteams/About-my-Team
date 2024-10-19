@@ -31,8 +31,8 @@ export const FeedbackTitle = () => {
                     }}
                 >
                     <Image
-                        src="/images/pumkin.png"
-                        alt="Pumkin"
+                        src="/images/pumpkin.png"
+                        alt="pumpkin"
                         width={60}
                         height={60}
                     />
