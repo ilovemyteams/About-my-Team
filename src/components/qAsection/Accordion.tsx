@@ -1,7 +1,6 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
-
-import { IconUp } from "../shared/Icons/IconUp";
 
 interface AccordionProps {
     item: {
@@ -32,11 +31,17 @@ export function Accordion({ item }: AccordionProps) {
                     </div>
                     <div
                         className="relative cursor-pointer dark:text-red text-redLight flex justify-center items-center w-[48px] h-[48px] p-3 pc:p-2
-            icon-hover-rounded-purple"
+            icon-hover-rounded-purple "
                     >
-                        <IconUp
-                            className={`w-[40px] h-[40px] duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-0" : "rotate-180 "}`}
-                        />
+                        <div className="w-10 h-10 flex-shrink-0">
+                            <Image
+                                src="/images/pumkin.png"
+                                alt="Pumkin"
+                                width={40}
+                                height={40}
+                                className={`duration-300 ease-out transition-transform  ${isAccordionOpen ? "rotate-180" : "rotate-0 "}`}
+                            />
+                        </div>
                     </div>
                 </div>
             </button>
