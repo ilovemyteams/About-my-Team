@@ -19,11 +19,12 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 
 import { Providers } from "./providers";
-import Link from "next/link";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
     process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
+const PREVIEW_URL =
+    process.env.SANITY_STUDIO_PREVIEW_URL || "http://localhost:3000";
 
 const caviar = localFont({
     src: [
@@ -94,12 +95,12 @@ export default function LocaleLayout({
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                         >
                             {draftMode().isEnabled && (
-                                <Link
+                                <a
                                     className="fixed z-50 right-0 bottom-0 bg-purple-100 text-white-100 p-4 m-4"
-                                    href="/api/draftMode/disable"
+                                    href={`${PREVIEW_URL}/api/draftMode/disable`}
                                 >
                                     Disable preview mode
-                                </Link>
+                                </a>
                             )}
                             <Providers>
                                 <BackgroundImages />
