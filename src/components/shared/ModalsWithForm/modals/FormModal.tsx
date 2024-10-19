@@ -52,7 +52,7 @@ export const FormModal = ({
     const placement = screenSizeName === mobileName ? "top" : "center";
 
     return (
-        <div className={className}>
+        <div className={`${className} relative`}>
             <TriggerComponent modalOpenHandler={onOpen} isModalOpen={isOpen} />
             <Modal
                 isOpen={isOpen}
