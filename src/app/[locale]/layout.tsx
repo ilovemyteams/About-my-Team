@@ -17,14 +17,13 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
+import { PREVIEW_URL } from "@/sanity/lib/api";
 
 import { Providers } from "./providers";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
     process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
-const PREVIEW_URL =
-    process.env.SANITY_STUDIO_PREVIEW_URL || "http://localhost:3000";
 
 const caviar = localFont({
     src: [

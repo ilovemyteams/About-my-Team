@@ -17,13 +17,10 @@ import { media, mediaAssetSource } from "sanity-plugin-media";
 import { SUPPORTED_LANGUAGES } from "./sanity/constants";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId, studioUrl } from "./sanity/lib/api";
+import { PREVIEW_URL } from "./sanity/lib/api";
 import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemas";
 import { singletonPagesType, structure } from "./sanity/structure/index";
-
-const PREVIEW_URL =
-    process.env.NEXT_PUBLIC_SANITY_STUDIO_PREVIEW_URL ||
-    "http://localhost:3000";
 
 export default defineConfig({
     basePath: studioUrl,
