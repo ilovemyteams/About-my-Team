@@ -67,8 +67,6 @@ export const FormModal = ({
         };
     }, []);
 
-    console.log(isModalOpen);
-
     return (
         <div className={className}>
             <TriggerComponent
@@ -84,7 +82,7 @@ export const FormModal = ({
                     <div
                         aria-label="modal-window"
                         onClick={e => e.stopPropagation()}
-                        className="max-h-[90dvh] overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+                        className="max-h-[90dvh] overflow-y-auto scroll w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
             -translate-x-1/2 tab:-translate-y-1/2 z-[21]"
                     >
                         <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
