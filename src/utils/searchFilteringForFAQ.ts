@@ -9,6 +9,7 @@ export const searchFilteringForFAQ = (
     searchValue: string
 ) => {
     const data = question[locale as LocaleType];
+    const linkPattern = /\*link=.*?\*.*?\*\/link\*/gi;
     const lowerCasedSearchTerm = searchValue.toLowerCase();
     const stepsTexts = data.fullAnswerContent
         ?.reduce((acc: (string | LongAnswerListTextType)[], item) => {
@@ -18,13 +19,20 @@ export const searchFilteringForFAQ = (
         }, [])
         .join("");
     if (
-        data.questionText.toLowerCase().includes(lowerCasedSearchTerm) ||
+        data.questionText
+            .toLowerCase()
+            .replaceAll(linkPattern, "")
+            .includes(lowerCasedSearchTerm) ||
         data.shortAnswerText
             .join("")
             .toLowerCase()
+            .replaceAll(linkPattern, "")
             .includes(lowerCasedSearchTerm) ||
-        data.fullAnswerTopText?.join("").includes(lowerCasedSearchTerm) ||
-        stepsTexts?.includes(lowerCasedSearchTerm)
+        data.fullAnswerTopText
+            ?.join("")
+            .replaceAll(linkPattern, "")
+            .includes(lowerCasedSearchTerm) ||
+        stepsTexts?.replaceAll(linkPattern, "").includes(lowerCasedSearchTerm)
     ) {
         return question;
     }
