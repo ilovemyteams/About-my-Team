@@ -768,13 +768,13 @@ export type Page = {
             _key: string;
         } & InternationalizedArrayStringValue
     >;
-    pageSlug?: Slug;
     parentPage?: {
         _ref: string;
         _type: "reference";
         _weak?: boolean;
         [internalGroqTypeReferenceTo]?: "page";
     };
+    pageSlug?: Slug;
     pageBuilder?: Array<
         | ({
               _key: string;

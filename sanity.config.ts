@@ -8,6 +8,7 @@ import { colorInput } from "@sanity/color-input";
 import { documentInternationalization } from "@sanity/document-internationalization";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
+import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
@@ -16,6 +17,7 @@ import { media, mediaAssetSource } from "sanity-plugin-media";
 import { SUPPORTED_LANGUAGES } from "./sanity/constants";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId, studioUrl } from "./sanity/lib/api";
+import { PREVIEW_URL } from "./sanity/lib/api";
 import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemas";
 import { singletonPagesType, structure } from "./sanity/structure/index";
@@ -54,6 +56,13 @@ export default defineConfig({
             ],
         }),
         singletonPlugin(singletonPagesType),
+        presentationTool({
+            previewUrl: {
+                previewMode: {
+                    enable: `${PREVIEW_URL}/api/draftMode/enable`,
+                },
+            },
+        }),
     ],
 
     form: {
