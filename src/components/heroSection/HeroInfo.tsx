@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { IconWebHero } from "../shared/Icons/IconWebHero";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations();
@@ -14,6 +15,9 @@ export const HeroInfo = () => {
             >
                 {getTranslation("Hero.heroInfoText")}
             </h1>
+            <div className="hidden pc:block absolute top-12 pc:w-[428px] pc:h-[164px] deskxl:h-[188px]">
+                <IconWebHero className="w-auto h-full dark:text-purple-strokeFormLabelLight text-purple-strokeLight" />
+            </div>
             <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
                 <WriteUs />
                 <JoinUsButton />

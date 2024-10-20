@@ -2016,7 +2016,7 @@ export const membersData: MemberDataItemType[] = [
             id: "OksanaOnopriienko",
             projectId: ["3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1yJ0gMVgPd6NcW2hdZTQ_-yDhPZzgpJfB",
+                "https://drive.google.com/uc?export=view&id=1UV6ukREG3cmCiTTpzQU2wpxWEeziowri",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],

@@ -53,7 +53,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "2",
             siteLink: "batatfarm.com",
-            image: "https://drive.google.com/uc?export=view&id=1Ex-svsbD5RFX-1F6QwztmVpNITTK4Aqx",
+            image: "https://drive.google.com/uc?export=view&id=1X_TLw6WXOaYShD-X_zJK7LMuDEZK8Ods",
             implementations: [
                 "Idea",
                 "Design",
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "4",
             siteLink: "protection.in.ua",
-            image: "https://drive.google.com/uc?export=view&id=1Jrm7pMdt9KCCKHyOi1vMAOif56d4YA8G",
+            image: "https://drive.google.com/uc?export=view&id=1lUtOIkLVd1KLwaBtOjOzxw2EWFk3VWHQ",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
         ua: {
