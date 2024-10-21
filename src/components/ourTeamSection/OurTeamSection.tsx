@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+import {
+    AllMembersQueryResult,
+    CategoryNamesQueryResult,
+    HomeTeamQueryResult,
+    ProjectQueryResult,
+} from "@/types/sanity.types";
+
 import { membersData } from "../../mockedData/membersData";
 import { portfolioData } from "../../mockedData/portfolioData";
 import { Section } from "../shared/Section";
@@ -18,7 +25,30 @@ const INITIAL_OPTIONS = {
     optionType: "team",
 };
 
-export const OurTeamSection = () => {
+export const OurTeamSection = ({
+    data,
+    members,
+    projects,
+    categoryNames,
+}: {
+    data: HomeTeamQueryResult;
+    members: AllMembersQueryResult;
+    projects: ProjectQueryResult;
+    categoryNames: CategoryNamesQueryResult;
+}) => {
+    const teamHome = data?.teamHome;
+    const membersList = members;
+    const allProjects = projects;
+
+    const anchorId = teamHome?.anchorId || "";
+    const displayedProjectsList = teamHome?.projectsList || [];
+    const subtitle = teamHome?.subtitle || "";
+    const title = teamHome?.title || [];
+
+    console.log(displayedProjectsList);
+    console.log(membersList);
+    console.log(allProjects);
+
     const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
     const defaultMembersData = membersData.filter(member => {
         return member.data.projectId.includes("1");
@@ -50,10 +80,11 @@ export const OurTeamSection = () => {
     }, [selectedOption]);
 
     return (
-        <Section id="team" className="relative">
-            <Title />
+        <Section id={anchorId} className="relative">
+            <Title title={title} subtitle={subtitle} />
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
+                    categoryNames={categoryNames}
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
                 />
