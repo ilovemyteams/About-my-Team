@@ -1,4 +1,5 @@
 import { EmblaOptionsType } from "embla-carousel";
+import Image from "next/image";
 
 import { portfolioData } from "../../mockedData/portfolioData";
 import { Section } from "../shared/Section";
@@ -19,6 +20,13 @@ export const PortfolioSection = () => {
                 <PortfolioCarousel
                     projects={portfolioForRender}
                     options={OPTIONS}
+                />
+                <Image
+                    src="/images/pumpkin.png"
+                    alt="pumpkin"
+                    width={30}
+                    height={30}
+                    className="absolute bottom-[190px] tab:bottom-[140px] right-[-12px] rotate-45 z-[-10]"
                 />
             </div>
             <SharePopover

@@ -216,31 +216,6 @@ const config: Config = {
                 stroke: "#5F3F87",
             },
             keyframes: {
-                pumpkinsAnimation: {
-                    "0%": {
-                        transform: "translateY(0)",
-                    },
-                    "50%": {
-                        transform: "translateY(-10%)",
-                    },
-
-                    "100%": {
-                        transform: "translateY(0)",
-                    },
-                },
-                shadowAnimation: {
-                    "0%": {
-                        transform: "scale(1)",
-                    },
-                    "50%": {
-                        transform: "scale(0.8)",
-                    },
-
-                    "100%": {
-                        transform: "scale(1)",
-                    },
-                },
-
                 pulsation: {
                     "0%": {
                         transform: "scale(0.71)",
@@ -403,7 +378,31 @@ const config: Config = {
                         transform: "rotate(0deg)",
                     },
                 },
+                pumpkin: {
+                    "0%": {
+                        transform: "rotate(0deg) translateY(0)",
+                    },
+                    "30%": {
+                        transform: "rotate(0deg) translateY(-40px)",
+                    },
+                    "40%": {
+                        transform: "rotate(15deg) translateY(-40px)",
+                    },
+                    "50%": {
+                        transform: "rotate(0deg) translateY(-40px)",
+                    },
+                    "60%": {
+                        transform: "rotate(-15deg) translateY(-40px)",
+                    },
+                    "70%": {
+                        transform: "rotate(0deg) translateY(-40px)",
+                    },
+                    "100%": {
+                        transform: "rotate(0deg) translateY(0)",
+                    },
+                },
             },
+
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
                 pulsationBrokenHeart: "pulsationHeart 600ms ease-in 1",
@@ -414,8 +413,7 @@ const config: Config = {
                 curveRotation: "curveRotate 3700ms ease-out 1",
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
-                pumpkinsAnimation: "pumpkinsAnimation 3000ms linear infinite",
-                shadowAnimation: "shadowAnimation 3000ms linear infinite",
+                pumpkintion: "pumpkin 6000ms linear infinite",
             },
         },
         backgroundImage: {

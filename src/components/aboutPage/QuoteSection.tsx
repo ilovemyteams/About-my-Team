@@ -9,7 +9,7 @@ import { Section } from "../shared/Section";
 import { SocialLink } from "../shared/SocialLink";
 
 const SUSANNAS_PORTRAIT_LINK =
-    "https://drive.google.com/uc?export=view&id=1yibIolW0n7egI63XAnJ68u4HnNw-TRNh";
+    "https://drive.google.com/uc?export=view&id=1otX0oK-THwslLpbf8g2ugyVpgWZbBbf0";
 
 export const QuoteSection = () => {
     const getTranslation = useTranslations("AboutPage");

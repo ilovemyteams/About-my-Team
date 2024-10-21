@@ -1,6 +1,5 @@
+import Image from "next/image";
 import React from "react";
-
-import { IconCheck } from "../../shared/Icons/IconCheck";
 
 interface BenefitsItemProps {
     children: string;
@@ -8,9 +7,14 @@ interface BenefitsItemProps {
 
 export const BenefitsItem = ({ children }: BenefitsItemProps) => {
     return (
-        <li className="flex gap-3 items-start">
-            <div>
-                <IconCheck className="w-6 h-auto dark:text-red text-redLight" />
+        <li className="flex gap-3">
+            <div className="w-8 h-8 flex-shrink-0">
+                <Image
+                    src="/images/pumpkin.png"
+                    alt="pumpkin"
+                    width={30}
+                    height={30}
+                />
             </div>
             <p className="max-w-full text-base pc:text-xl deskxl:text-2xl">
                 {children}

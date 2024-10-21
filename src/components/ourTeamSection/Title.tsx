@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { SmallPageTitle } from "../shared/SmallPageTitle";
@@ -10,9 +11,16 @@ export const Title = () => {
             <SmallPageTitle className="flex flex-col ml-1 mb-[8px] tab:mt-[6px] pc:mt-0 pc:min-w-[75px] mr-3 pc:h-[21px] pc:flex-row">
                 {getTranslation("pageTitle")}
             </SmallPageTitle>
-            <p className="tab:max-w-[300px] pc:max-w-[none]">
+            <p className="max-w-[300px] pc:max-w-[none]">
                 {getTranslation("pageBigTitle")}
             </p>
+            <Image
+                src="/images/pumpkin.png"
+                alt="pumpkin"
+                width={50}
+                height={50}
+                className="absolute top-[170px] tab:left-[390px] tab:top-[90px] pc:top-[107px] desk:top-[123px] rotate-12"
+            />
         </TitleWrapper>
     );
 };
