@@ -38,6 +38,13 @@ export const FeedbackTitle = () => {
                     />
                 </motion.div>
             </TitleWrapper>
+            <Image
+                src="/images/pumpkin.png"
+                alt="pumpkin"
+                width={60}
+                height={60}
+                className="hidden"
+            />
         </div>
     );
 };
