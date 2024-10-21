@@ -21,7 +21,10 @@ export const Search = () => {
         (defaultValue && defaultValue?.length > 0) || isInputFoucsed;
 
     const handleSearch = useDebouncedCallback(() => {
-        const sanitizedValue = inputValue.trim().replace(/\s+/g, " ");
+        const sanitizedValue = inputValue
+            .trim()
+            .replace(/[^\w\s]|_/g, "")
+            .replace(/\s+/g, " ");
         const params = new URLSearchParams(searchParams);
         sanitizedValue ? params.set("q", sanitizedValue) : params.delete("q");
         replace(`${pathname}?${params.toString()}`);
