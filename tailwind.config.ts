@@ -216,6 +216,31 @@ const config: Config = {
                 stroke: "#5F3F87",
             },
             keyframes: {
+                pumpkinsAnimation: {
+                    "0%": {
+                        transform: "translateY(0)",
+                    },
+                    "50%": {
+                        transform: "translateY(-10%)",
+                    },
+
+                    "100%": {
+                        transform: "translateY(0)",
+                    },
+                },
+                shadowAnimation: {
+                    "0%": {
+                        transform: "scale(1)",
+                    },
+                    "50%": {
+                        transform: "scale(0.8)",
+                    },
+
+                    "100%": {
+                        transform: "scale(1)",
+                    },
+                },
+
                 pulsation: {
                     "0%": {
                         transform: "scale(0.71)",
@@ -389,6 +414,8 @@ const config: Config = {
                 curveRotation: "curveRotate 3700ms ease-out 1",
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
+                pumpkinsAnimation: "pumpkinsAnimation 3000ms linear infinite",
+                shadowAnimation: "shadowAnimation 3000ms linear infinite",
             },
         },
         backgroundImage: {

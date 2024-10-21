@@ -284,5 +284,8 @@
         "orderCardText": "We are ready to take on all the challenges of development and help you create the perfect website for your business, while enjoying the collaboration throughout the process of its development and launch.",
         "orderCardImgAlt": "Order services",
         "orderCardButton": "order"
+    },
+    "Halloween": {
+        "greeting": "BOO!!! Find the pumpkins hidden around the site. Write how many you found in the ORDER form and if you find all of them, you will get an one-hour consultation with Susanna Salata. Onwards to the hunt!!"
     }
 }

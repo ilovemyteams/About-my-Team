@@ -9,6 +9,7 @@ import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundF
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
+import { GreetingPortal } from "@/src/components/halloween/greetingModal/GreetingPortal";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
@@ -88,6 +89,7 @@ export default function LocaleLayout({
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                     >
                         <Providers>
+                            <GreetingPortal />
                             <BackgroundImages />
                             <div className="min-h-screen flex flex-col">
                                 <Header />

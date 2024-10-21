@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import {
     ComponentType,
     Dispatch,
@@ -74,12 +75,39 @@ export const FormModal = ({
                 isModalOpen={isModalOpen}
             />
             {isModalOpen && (
-                <div
+                <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    variants={{
+                        hidden: {
+                            opacity: 0,
+                        },
+                        visible: {
+                            opacity: 1,
+                            transition: {
+                                duration: 0.5,
+                                delayChildren: 0.3,
+                            },
+                        },
+                    }}
                     aria-label="modal-backdrop"
                     onClick={onCloseModal}
                     className="fixed z-[20] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                 >
-                    <div
+                    <motion.div
+                        variants={{
+                            hidden: {
+                                opacity: 0,
+                            },
+                            visible: {
+                                opacity: 1,
+                                transition: {
+                                    duration: 0.5,
+                                    delayChildren: 0.3,
+                                },
+                            },
+                        }}
                         aria-label="modal-window"
                         onClick={e => e.stopPropagation()}
                         className="max-h-[90dvh] overflow-y-auto scroll w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
@@ -103,48 +131,9 @@ export const FormModal = ({
                                 notificationHandler={notificationHandler}
                             />
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             )}
-            {/* <Modal
-                isOpen={isOpen}
-                onOpenChange={onOpenChange}
-                placement={placement}
-                radius="none"
-                shouldBlockScroll={
-                    screenSizeName !== mobileName &&
-                    screenSizeName !== tabletName
-                }
-                hideCloseButton={true}
-                className="top-7 tab:top-0 overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 no-doc-scroll"
-                classNames={{
-                    backdrop:
-                        "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
-                    wrapper: "absolute",
-                }}
-            >
-                <ModalContent className="m-0">
-                    <div className="relative w-full h-full px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                        <BgImagesMobile />
-                        <BgImagesTablet />
-                        <BgImagesDesktop />
-
-                        <button
-                            type="button"
-                            onClick={onClose}
-                            disabled={isError}
-                            aria-label="close button"
-                            className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
-                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                        >
-                            <IconCloseX />
-                        </button>
-                        <FormComponent
-                            notificationHandler={notificationHandler}
-                        />
-                    </div>
-                </ModalContent>
-            </Modal> */}
         </div>
     );
 };

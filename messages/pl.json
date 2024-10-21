@@ -285,5 +285,8 @@
         "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
         "orderCardImgAlt": "Zamówić usługi",
         "orderCardButton": "zamówić"
+    },
+    "Halloween": {
+        "greeting": "BOO!!! Znajdź dynie ukryte na stronie. Napisz, ile ich znalazłeś w formularzu ZAMÓW, a jeśli znajdziesz wszystkie, otrzymasz godzinną konsultację z Susanną Salatą. Do dzieła!!!"
     }
 }
