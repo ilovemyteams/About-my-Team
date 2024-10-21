@@ -1707,7 +1707,7 @@ export const membersData: MemberDataItemType[] = [
             id: "DmytroBulakhov",
             projectId: ["3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1NCPJGG6hYCqa-HIt2qbAVc3uNVKqu3h7",
+                "https://drive.google.com/uc?export=view&id=1lii6aMputmuNrLFHNIZN7aoq8uNw7ipt",
             position: "Front-end Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
