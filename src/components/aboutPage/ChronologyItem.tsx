@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale } from "next-intl";
 
 import { ChronologyDataTypeItem } from "@/src/mockedData/chronologyData";
@@ -23,6 +24,13 @@ export const ChronologyItem = ({ data }: ChronologyItemProp) => {
                 <p className="text-base desk:text-lg">
                     {data[locale as LocaleType]?.text}
                 </p>
+                <Image
+                    src="/images/pumpkin.png"
+                    alt="pumpkin"
+                    width={60}
+                    height={60}
+                    className="hidden"
+                />
             </div>
         </>
     );
