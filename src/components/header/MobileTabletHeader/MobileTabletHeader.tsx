@@ -38,7 +38,7 @@ export const MobileTabletHeader = () => {
                         />
                     </div>
                 </div>
-                <IconWebHeader className="tab:hidden absolute dark:text-purple-strokeFormLabelLight text-purple-strokeLight top-0 z-[-1] w-[75%] h-auto left-1/2 -translate-x-1/2" />
+                <IconWebHeader className="tab:hidden absolute dark:text-purple-strokeFormLabelLight top-0 z-[-1] w-[75%] h-auto left-1/2 -translate-x-1/2" />
             </div>
             <MobileTabletHeaderMenu
                 isHeaderMenuOpened={isHeaderMenuOpened}
