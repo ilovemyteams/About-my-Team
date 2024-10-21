@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconHeartWeb } from "../../shared/Icons/IconHeartWeb";
+
 import { PageSection } from "../../shared/PageSection";
 import { AnswerTextIParagraph } from "./AnswerTextIParagraph";
 

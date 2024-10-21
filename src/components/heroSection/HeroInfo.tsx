@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 
+import { IconWebHero } from "../shared/Icons/IconWebHero";
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
-import { IconWebHero } from "../shared/Icons/IconWebHero";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations();

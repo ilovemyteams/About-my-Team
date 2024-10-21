@@ -1,11 +1,11 @@
 "use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { questionsData } from "@/src/mockedData/questionsData";
-import { motion } from "framer-motion";
 
 import { PageTopSection } from "../shared/PageTopSection";
-import Image from "next/image";
 
 export const HeaderFAQ = () => {
     const getTranslation = useTranslations();
