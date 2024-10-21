@@ -48,15 +48,14 @@ export const Search = () => {
         <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
             <div
                 role="form"
-                className={`flex relative ${isInputFoucsed || inputValue ? "tab:border-b-1" : "tab:border-b-1 border-transparent"} w-full`}
+                className={`flex relative ${isInputFoucsed || inputValue ? "tab:border-b-1 border-greyLight dark:border-grey" : "tab:border-b-1 border-transparent"} w-full`}
             >
-                <div
-                    role="button"
+                <button
                     onClick={() => inputRef?.current?.focus()}
-                    className={`absolute left-0 ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}`}
+                    className={`absolute left-0 text-greyLight dark:text-grey ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}`}
                 >
                     <IconSearch />
-                </div>
+                </button>
                 <input
                     type="text"
                     ref={inputRef}
@@ -67,7 +66,7 @@ export const Search = () => {
                         setIsInputFoucsed(true);
                     }}
                     onBlur={() => setIsInputFoucsed(false)}
-                    className={`my-auto mx-[50px] h-[44px] focus:placeholder:text-transparent tab:placeholder:text-transparent focus:outline-none bg-transparent`}
+                    className={`my-auto mx-[50px] h-[44px] placeholder:text-purple-200 dark:placeholder:text-grey focus:placeholder:text-transparent tab:placeholder:text-transparent focus:outline-none bg-transparent`}
                 />
                 {inputValue && (
                     <button
