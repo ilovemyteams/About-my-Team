@@ -10,6 +10,7 @@ type DataType = {
     image: string;
     video?: string;
     implementations: string[];
+    order: number;
 };
 export type PortfolioDataItemType = {
     data: DataType;
@@ -24,6 +25,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "1",
             siteLink: "ilovemyteam.online",
             image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
+            order: 4,
             implementations: [
                 "Idea",
                 "Design",
@@ -54,6 +56,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "2",
             siteLink: "batatfarm.com",
             image: "https://drive.google.com/uc?export=view&id=1-zVmDm8fSgCwP3TzDVQM_Hu08vCbJi2A",
+            order: 3,
             implementations: [
                 "Idea",
                 "Design",
@@ -84,6 +87,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "3",
             siteLink: "theatermag.com.ua",
             image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
+            order: 1,
             implementations: [
                 "Idea",
                 "Design",
@@ -114,6 +118,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "4",
             siteLink: "protection.in.ua",
+            order: 2,
             image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
