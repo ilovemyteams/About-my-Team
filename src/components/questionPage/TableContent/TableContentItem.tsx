@@ -12,7 +12,14 @@ export const TableContentItem = ({
     return (
         <div>
             <div className="flex gap-2 mb-6 pc:mb-[113px] mt-6">
-                <div className="mt-[3px] w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
+                <div className="w-8 h-8 flex-shrink-0">
+                    <Image
+                        src="/images/pumpkin.png"
+                        alt="pumpkin"
+                        width={30}
+                        height={30}
+                    />
+                </div>{" "}
                 <h3 className="h-[50px] font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
                     {title}
                 </h3>
