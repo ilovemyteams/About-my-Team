@@ -18,13 +18,26 @@ export const menuItemType = defineField({
             name: "linkInternal",
             type: "url",
             title: "Internal Link",
+            initialValue: props => {
+                return props.value ? props.value.toLowerCase() : "";
+            },
             validation: Rule =>
                 Rule.uri({
                     allowRelative: true,
                 }).custom(link => {
-                    if (link && !link.startsWith("/")) {
+                    if (!link) {
+                        return true;
+                    }
+                    if (!link.startsWith("/")) {
                         return "The link must start with '/' for internal links.";
                     }
+                    if (/[A-Z]/.test(link)) {
+                        return "The link should not contain uppercase letters.";
+                    }
+                    if (/[^a-z0-9/\-_]/.test(link)) {
+                        return "The link contains invalid characters. Only lowercase letters, numbers, '/', '-', and '_' are allowed.";
+                    }
+
                     return true;
                 }),
             description:
