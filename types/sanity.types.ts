@@ -103,31 +103,6 @@ export type Stage = {
     >;
 };
 
-export type Customer = {
-    _type: "customer";
-    name?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    position?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    photo?: {
-        asset?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-        };
-        hotspot?: SanityImageHotspot;
-        crop?: SanityImageCrop;
-        _type: "image";
-    };
-};
-
 export type AnchorLink = {
     _type: "anchorLink";
     subtitle?: Array<
@@ -457,6 +432,33 @@ export type PortableText = Array<
       } & Instagram)
 >;
 
+export type Customer = {
+    _id: string;
+    _type: "customer";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    name?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    position?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    phoneNumber?: Array<string>;
+    socialLinks?: Array<
+        {
+            _key: string;
+        } & SocialLinks
+    >;
+    gender?: "female" | "male" | "unknown";
+    country?: string;
+    comment?: string;
+};
+
 export type Tool = {
     _id: string;
     _type: "tool";
@@ -566,6 +568,46 @@ export type Review = {
         _weak?: boolean;
         [internalGroqTypeReferenceTo]?: "project";
     };
+    reviewer?: Array<
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              _key: string;
+              [internalGroqTypeReferenceTo]?: "customer";
+          }
+        | {
+              name?: Array<
+                  {
+                      _key: string;
+                  } & InternationalizedArrayStringValue
+              >;
+              position?: Array<
+                  {
+                      _key: string;
+                  } & InternationalizedArrayStringValue
+              >;
+              _key: string;
+          }
+    >;
+    image?: {
+        image?: {
+            asset?: {
+                _ref: string;
+                _type: "reference";
+                _weak?: boolean;
+                [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+            };
+            hotspot?: SanityImageHotspot;
+            crop?: SanityImageCrop;
+            _type: "image";
+        };
+        caption?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayStringValue
+        >;
+    };
     reviewText?: Array<
         {
             _key: string;
@@ -590,11 +632,13 @@ export type Project = {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    customers?: Array<
-        {
-            _key: string;
-        } & Customer
-    >;
+    customers?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "customer";
+    }>;
     startDate?: string;
     endDate?: string;
     category?: {
@@ -1270,7 +1314,6 @@ export type AllSanitySchemaTypes =
     | ColorTheme
     | MenuItem
     | Stage
-    | Customer
     | AnchorLink
     | AboutUsItem
     | SocialLinks
@@ -1289,6 +1332,7 @@ export type AllSanitySchemaTypes =
     | PortableColorTitle
     | PortableTextSimple
     | PortableText
+    | Customer
     | Tool
     | Service
     | Faq
