@@ -766,15 +766,15 @@ export type Page = {
     title?: Array<
         {
             _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
+        } & InternationalizedArrayStringValue
     >;
-    pageSlug?: Slug;
     parentPage?: {
         _ref: string;
         _type: "reference";
         _weak?: boolean;
         [internalGroqTypeReferenceTo]?: "page";
     };
+    pageSlug?: Slug;
     pageBuilder?: Array<
         | ({
               _key: string;

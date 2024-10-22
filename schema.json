@@ -4091,17 +4091,9 @@
             },
             "rest": {
               "type": "inline",
-              "name": "internationalizedArrayPortableColorTitleValue"
+              "name": "internationalizedArrayStringValue"
             }
           }
-        },
-        "optional": true
-      },
-      "pageSlug": {
-        "type": "objectAttribute",
-        "value": {
-          "type": "inline",
-          "name": "slug"
         },
         "optional": true
       },
@@ -4132,6 +4124,14 @@
             }
           },
           "dereferencesTo": "page"
+        },
+        "optional": true
+      },
+      "pageSlug": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "slug"
         },
         "optional": true
       },

@@ -27,14 +27,9 @@ export const projectType = defineField({
         defineField({
             name: "customers",
             type: "array",
+            of: [{ type: "reference", to: [{ type: "customer" }] }],
             title: "Customers",
-            description: "Enter information about project customers",
-            of: [
-                defineArrayMember({
-                    type: "customer",
-                }),
-            ],
-            validation: rule => rule.required(),
+            description: "Add information about project customers",
         }),
         defineField({
             name: "startDate",
