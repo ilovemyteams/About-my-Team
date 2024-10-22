@@ -84,7 +84,8 @@ export const allMembersQuery = groq`
   "category": role->category->title[_key == $language][0].value,
   projects[]{
     _type == "reference" => @->{
-      "url": URL.url, "newWindow": URL.newWindow},
+      "url": URL.url, "newWindow": URL.newWindow
+    },
     _type == "linkExternal" => {url, newWindow}},
   "ILMTProjects": projects[][_type == "reference"]->_id,
   "about":about[_key == $language][0].value,
