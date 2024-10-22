@@ -55,7 +55,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "2",
             siteLink: "batatfarm.com",
-            image: "https://drive.google.com/uc?export=view&id=1-zVmDm8fSgCwP3TzDVQM_Hu08vCbJi2A",
+            image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
             order: 3,
             implementations: [
                 "Idea",
