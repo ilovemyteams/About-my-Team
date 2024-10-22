@@ -9,7 +9,7 @@ import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundF
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
-import { GreetingPortal } from "@/src/components/halloween/greetingModal/GreetingPortal";
+import { GreetingPortal } from "@/src/components/halloween/GreetingPortal";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";

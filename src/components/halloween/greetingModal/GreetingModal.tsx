@@ -6,10 +6,10 @@ import React from "react";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 
+import { Button } from "../../shared/Button";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesTablet";
+import { Background } from "./Background";
+import { Decoration } from "./Decoration";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
@@ -40,7 +40,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 },
             }}
             onClick={onCloseModal}
-            className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 "
+            className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-[100dvh] bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 "
         >
             <motion.div
                 initial={{
@@ -63,12 +63,11 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 }}
                 aria-label="modal-window"
                 onClick={e => e.stopPropagation()}
-                className="max-h-[90dvh] overflow-y-auto scroll w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2"
+                className="w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2"
             >
-                <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                    <BgImagesMobile />
-                    <BgImagesTablet />
-                    <BgImagesDesktop />
+                <div className=" overflow-hidden relative w-full h-auto px-[24px] tab:px-[24px] pc:px-[60px] pt-[181px] tab:pt-[219px] pb-[64px] pc:pb-[72px]">
+                    <Background />
+                    <Decoration />
                     <button
                         type="button"
                         onClick={onCloseModal}
@@ -78,9 +77,16 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                     >
                         <IconCloseX />
                     </button>
-                    <div className="min-h-[350px]">
-                        <h3></h3>
-                        <p>{getTranslation("greeting")}</p>
+                    <div className="text-center whitespace-pre-wrap">
+                        <p className="mb-[18px] tab:mb-4 pc:mb-3 text-base tab:text-lg pc:text-xl font-caviar font-bold">
+                            {getTranslation("greeting")}
+                        </p>
+                        <p className=" text-redLight dark:text-red mb-11 tab:mb-9 pc:mb-6 text-sm tab:text-base max-w-[80%] mx-auto">
+                            {getTranslation("caption")}
+                        </p>
+                        <Button color="grey" onClick={onCloseModal}>
+                            {getTranslation("btn")}
+                        </Button>
                     </div>
                 </div>
             </motion.div>

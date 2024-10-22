@@ -3,16 +3,14 @@
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import { GreetingModal } from "./GreetingModal";
+import { GreetingModal } from "./greetingModal/GreetingModal";
 
 export const GreetingPortal = () => {
     const [isModalOpen, setIsModalOpen] = useState(true);
 
     const onCloseModal = () => setIsModalOpen(false);
 
-    console.log("isModalOpen", isModalOpen);
     useEffect(() => {
-        console.log("useEffect");
         setIsModalOpen(true);
 
         const handleEsc = (event: KeyboardEvent) => {

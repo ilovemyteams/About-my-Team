@@ -287,6 +287,8 @@
         "orderCardButton": "zamówić"
     },
     "Halloween": {
-        "greeting": "BOO!!! Znajdź dynie ukryte na stronie. Napisz, ile ich znalazłeś w formularzu ZAMÓW, a jeśli znajdziesz wszystkie, otrzymasz godzinną konsultację z Susanną Salatą. Do dzieła!!!"
+        "greeting": "Znajdź dynie ukryte na stronie. Napisz, ile ich znalazłeś w formularzu ZAMÓW, a jeśli znajdziesz wszystkie, otrzymasz godzinną konsultację z Susanną Salatą. \nDo dzieła!!!",
+        "caption": "* dynie na tym wyskakującym okienku się nie liczą",
+        "btn": "rozpocząć rytuał"
     }
 }

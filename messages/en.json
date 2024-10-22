@@ -286,6 +286,8 @@
         "orderCardButton": "order"
     },
     "Halloween": {
-        "greeting": "BOO!!! Find the pumpkins hidden around the site. Write how many you found in the ORDER form and if you find all of them, you will get an one-hour consultation with Susanna Salata. Onwards to the hunt!!"
+        "greeting": "Find the pumpkins hidden around the site. Write how many you found in the ORDER form and if you find all of them, you will get an one-hour consultation with Susanna Salata. \n Onwards to the hunt!!",
+        "caption": "*pumpkins on this pop-up are not counted",
+        "btn": "start the ritual"
     }
 }
