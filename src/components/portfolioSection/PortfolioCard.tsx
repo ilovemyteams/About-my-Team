@@ -28,7 +28,7 @@ export const PortfolioCard = ({
                 alt={name}
                 width={288}
                 height={196}
-                className=" object-cover w-[100%] h-[236px] tab:h-[300px] pc:h-[358px]"
+                className=" object-cover w-[100%] h-[236px] tab:h-[270px] pc:h-[358px]"
             />
             <div className="absolute -bottom-0 block min-w-full h-[134px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
                 <div className="px-2 py-5 tab:p-4 pc:p-5">
