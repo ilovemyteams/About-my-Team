@@ -7,7 +7,8 @@
     --font-geist: Geist;
 }
 :root:has(.no-doc-scroll) {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: dark) {
