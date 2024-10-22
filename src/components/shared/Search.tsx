@@ -26,7 +26,9 @@ export const Search = () => {
             .replace(/[^\w\s\u0400-\u04FF\u0100-\u017F]|_/g, "")
             .replace(/\s+/g, " ");
         const params = new URLSearchParams(searchParams);
-        sanitizedValue ? params.set("q", sanitizedValue) : params.delete("q");
+        sanitizedValue
+            ? params.set("query", sanitizedValue)
+            : params.delete("query");
         replace(`${pathname}?${params.toString()}`);
     }, 300);
 

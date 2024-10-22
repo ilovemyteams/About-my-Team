@@ -11,7 +11,7 @@ interface QuestionPageProps {
         slug: string;
         locale: string;
     };
-    searchParams: { q?: string };
+    searchParams: { query?: string };
 }
 
 export async function generateMetadata(
@@ -43,7 +43,7 @@ const QuestionPage: React.FC<QuestionPageProps> = ({
     params,
     searchParams,
 }) => {
-    const searchTerm = searchParams.q || "";
+    const searchTerm = searchParams.query || "";
     const displayedQuestion = questionsData.find(
         question => question.data.slug === params.slug
     );

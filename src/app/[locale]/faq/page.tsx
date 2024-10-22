@@ -25,11 +25,11 @@ export async function generateMetadata({
 export default function FAQ({
     searchParams,
 }: {
-    searchParams: { q?: string };
+    searchParams: { query?: string };
 }) {
     const locale = useLocale();
     const getTranslation = useTranslations();
-    const searchTerm = searchParams.q || "";
+    const searchTerm = searchParams.query || "";
 
     const filteredQuestions = questionsData.filter(question =>
         searchFilteringForFAQ(question, locale as LocaleType, searchTerm)
@@ -40,7 +40,7 @@ export default function FAQ({
         .join(searchTerm);
     return (
         <>
-            <HeaderFAQ itemsQty={filteredQuestions.length} />
+            <HeaderFAQ itemsQuantity={filteredQuestions.length} />
             {filteredQuestions.length > 0 ? (
                 <QaCardList
                     questions={filteredQuestions}

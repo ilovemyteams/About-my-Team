@@ -4,10 +4,10 @@ import { PageTopSection } from "../shared/PageTopSection";
 import Search from "../shared/Search";
 
 type HeaderFAQProps = {
-    itemsQty: number;
+    itemsQuantity: number;
 };
 
-export const HeaderFAQ = ({ itemsQty }: HeaderFAQProps) => {
+export const HeaderFAQ = ({ itemsQuantity }: HeaderFAQProps) => {
     const getTranslation = useTranslations();
     const breadcrumbs = [
         { title: getTranslation("Breadcrumbs.breadcrumbItemFaq"), url: "" },
@@ -23,7 +23,7 @@ export const HeaderFAQ = ({ itemsQty }: HeaderFAQProps) => {
             <div className="flex flex-col-reverse gap-6 tab:flex-row justify-between pb-6 tab:pb-9 pc:pb-12 border-b border-purple-strokeLight dark:border-purple-stroke">
                 <p className="my-auto text-sm tab:text-base text-purple-100 dark:text-purple-50">
                     {getTranslation("Q&A.questionQuantity")}
-                    {itemsQty}
+                    {itemsQuantity}
                 </p>
                 <Search />
             </div>
