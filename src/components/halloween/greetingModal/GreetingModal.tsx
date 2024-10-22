@@ -1,10 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 
 import { Button } from "../../shared/Button";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
@@ -19,6 +20,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
     const getTranslation = useTranslations("Halloween");
     const screenSizeName = useScreenSize();
     const { mobileName } = SCREEN_NAMES;
+    const locale = useLocale();
 
     const modalTranslate = screenSizeName === mobileName ? "0%" : "-50%";
     return (
@@ -40,7 +42,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 },
             }}
             onClick={onCloseModal}
-            className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-[100dvh] bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 "
+            className="fixed z-[21] top-0 left-0 w-full h-[100dvh] bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 "
         >
             <motion.div
                 initial={{
@@ -79,7 +81,10 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                     </button>
                     <div className="text-center whitespace-pre-wrap">
                         <p className="mb-[18px] tab:mb-4 pc:mb-3 text-base tab:text-lg pc:text-xl font-caviar font-bold">
-                            {getTranslation("greeting")}
+                            {parseTextWithLink(
+                                getTranslation("greeting"),
+                                locale
+                            )}
                         </p>
                         <p className=" text-redLight dark:text-red mb-11 tab:mb-9 pc:mb-6 text-sm tab:text-base max-w-[80%] mx-auto">
                             {getTranslation("caption")}

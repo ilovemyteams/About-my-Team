@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { IconBooo } from "../../shared/Icons/IconBooo";
@@ -27,7 +28,24 @@ export const Decoration = () => {
             <IconTopWeb className="absolute top-0 left-0 w-[139px] tab:w-[139px] pc:w-[250px] h-auto " />
             <IconBottomWeb className="absolute bottom-0 right-0 w-[82px] tab:w-[88px] pc:w-[95px] h-auto " />
             <IconBottomWeb className="absolute bottom-0 left-0 w-[82px] pc:w-[100px] scale-x-[-1] h-auto " />
-            <IconGhost className="absolute w-[99px] top-[9%] tab:top-[5%] pc:top-[7%] right-[17%] tab:w-[192px] h-auto" />
+            <motion.div
+                animate={{
+                    x: [
+                        16, 12, 8, 4, 0, -4, -8, -12, -16, -12, -8, -4, 0, 4, 8,
+                        12, 16,
+                    ],
+                    y: [
+                        0, -4, -8, -12, -16, -12, -8, -4, 0, 4, 8, 12, 16, 12,
+                        8, 4, 0,
+                    ],
+                    origin: "center",
+                }}
+                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                className="absolute top-[9%] tab:top-[5%] pc:top-[7%] right-[17%] z-[25]"
+            >
+                <IconGhost className=" w-[99px] tab:w-[192px] h-auto" />
+            </motion.div>
+
             <IconBooo className="absolute top-[10%] tab:top-[7%] left-[21%] pc:left-[30%] w-[106px] tab:w-[186px] h-auto text-purple-stroke dark:text-white-200" />
             <IconBooo className="absolute top-[21%] tab:top-[24%] left-[13%] pc:left-[20%] w-[27px] tab:w-[47px] h-auto text-purple-stroke dark:text-white-200" />
             <IconBooo className="absolute top-[23%] tab:top-[28%] left-[30%] pc:left-[34%] w-[35px] tab:w-[71px] rotate-[25deg] h-auto text-purple-stroke dark:text-white-200" />
