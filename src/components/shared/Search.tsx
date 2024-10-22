@@ -12,13 +12,13 @@ export const Search = () => {
     const searchParams = useSearchParams();
     const defaultValue = searchParams.get("q")?.toString();
     const [inputValue, setInputValue] = useState(defaultValue || "");
-    const [isInputFoucsed, setIsInputFoucsed] = useState(false);
+    const [isInputFocused, setIsInputFocused] = useState(false);
     const getTranslations = useTranslations();
     const pathname = usePathname();
     const { replace } = useRouter();
 
     const shouldIconBeLeft =
-        (defaultValue && defaultValue?.length > 0) || isInputFoucsed;
+        (defaultValue && defaultValue?.length > 0) || isInputFocused;
 
     const handleSearch = useDebouncedCallback(() => {
         const sanitizedValue = inputValue
@@ -50,7 +50,7 @@ export const Search = () => {
         <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
             <div
                 role="form"
-                className={`flex relative ${isInputFoucsed || inputValue ? "tab:border-b-1 border-greyLight dark:border-grey" : "tab:border-b-1 border-transparent"} w-full`}
+                className={`flex relative ${isInputFocused || inputValue ? "tab:border-b-1 border-greyLight dark:border-grey" : "tab:border-b-1 border-transparent"} w-full`}
             >
                 <button
                     onClick={() => inputRef?.current?.focus()}
@@ -65,9 +65,9 @@ export const Search = () => {
                     placeholder={getTranslations("Buttons.search")}
                     onChange={handleChange}
                     onFocus={() => {
-                        setIsInputFoucsed(true);
+                        setIsInputFocused(true);
                     }}
-                    onBlur={() => setIsInputFoucsed(false)}
+                    onBlur={() => setIsInputFocused(false)}
                     className={`my-auto mx-[50px] h-[44px] placeholder:text-purple-200 dark:placeholder:text-grey focus:placeholder:text-transparent tab:placeholder:text-transparent focus:outline-none bg-transparent`}
                 />
                 {inputValue && (
