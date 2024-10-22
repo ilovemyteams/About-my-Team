@@ -123,7 +123,8 @@
         "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
         "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
         "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn.",
-        "noAnswerFound": "Niestety dla „|||” nic nie znaleziono"
+        "noAnswerFound": "Niestety dla „|||” nic nie znaleziono",
+        "searchInputPlaceholder": "Wprowadź tekst zapytania"
 },
     "Buttons": {
         "order": "Zamów",
