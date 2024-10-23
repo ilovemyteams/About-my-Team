@@ -729,7 +729,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Формування \nкоманди",
                     text: [
-                        "Ви можете обрати окремих фахівців або відразу сформувати повноцінну команду, залежно від вимог вашого проєкту. У цьому випадку ми наполегливо рекомендуємо звернутись за консультацією до нашого *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/TetianaSeletska`*Менеджера*/link*, який/яка допоможе вам правильно оцінити необхідні ресурси та функціональні ролі для успішної реалізації проєкту. Це особливо важливо, якщо ви не маєте досвіду в управлінні командою розробників або маєте складний проєкт, який вимагає кількох фахівців із різними компетенціями.",
+                        "Ви можете обрати окремих фахівців або відразу сформувати повноцінну команду, залежно від вимог вашого проєкту. У цьому випадку ми наполегливо рекомендуємо звернутись за консультацією до нашого *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Менеджера*/link*, який/яка допоможе вам правильно оцінити необхідні ресурси та функціональні ролі для успішної реалізації проєкту. Це особливо важливо, якщо ви не маєте досвіду в управлінні командою розробників або маєте складний проєкт, який вимагає кількох фахівців із різними компетенціями.",
                     ],
                 },
                 {
@@ -763,7 +763,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Tworzenie \nzespołu",
                     text: [
-                        "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/TetianaSeletska`*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
+                        "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
                     ],
                 },
                 {
@@ -796,7 +796,7 @@ export const questionsData: QAItemType[] = [
                 {
                     title: "Forming \na team",
                     text: [
-                        "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/TetianaSeletska`*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
+                        "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
                     ],
                 },
                 {

@@ -49,9 +49,14 @@ export const QaCard = ({ data, localizationData, likes }: FaqCardItemProps) => {
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
                     <LikeButton questionSlug={slug} likes={likes} />
-                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3">
-                        {questionText}
-                    </h2>
+                    <Link href={`faq/${slug}`}>
+                        <h2
+                            className="pc:hover:text-redLight dark:pc:hover:text-red
+                    pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3"
+                        >
+                            {questionText}
+                        </h2>
+                    </Link>
                 </div>
 
                 <p className="text-sm tab:text-base desk:text-lg desk:font-light line-clamp-[8] tab:line-clamp-3 text-greyLight dark:text-grey mb-3">
