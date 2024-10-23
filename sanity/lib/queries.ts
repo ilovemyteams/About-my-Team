@@ -123,10 +123,10 @@ export const homeReviewsQuery = groq`
     "title": reviewsHome.title[_key == $language][0].value,
     "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,
     "anchorId": reviewsHome.sectionId.anchorId.current,
-    "slider": reviewsHome.reviewsSlider[] {
+    "feedbacks": reviewsHome.reviewsSlider[] {
       _type == "reference" => @->{_id,
         "reviewText": reviewText[_key == $language][0].value,
-        "url": reviewUrl.url,
+        "feedbackLink": reviewUrl.url,
         "newWindow": reviewUrl.newWindow,
         "altImage": image.caption[_key == $language][0].value,
         "asset": image.image.asset->url,
@@ -139,9 +139,9 @@ export const homeReviewsQuery = groq`
           reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value
         ),
         "projectName": project->title[_key == $language][0].value,
+        "projectURL": project->URL.url,                          
         "projectCategory": project->category->categoryName[_key == $language][0].value
       }
     }
   }
-
 `;
