@@ -1,4 +1,4 @@
-import { CaseIcon } from "@sanity/icons";
+import { FcGraduationCap } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -8,7 +8,7 @@ export const specialistCategoryType = defineField({
     name: "specialistCategory",
     title: "Specialist categories",
     type: "document",
-    icon: CaseIcon,
+    icon: FcGraduationCap,
     fields: [
         defineField({
             name: "title",

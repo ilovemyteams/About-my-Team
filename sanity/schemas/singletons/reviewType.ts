@@ -111,11 +111,13 @@ export const reviewType = defineField({
     preview: {
         select: {
             title: "project.title",
+            media: "image.image",
         },
-        prepare({ title }) {
+        prepare({ title, media }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
                 title: `Review "${englishTitle}"`,
+                media: media || undefined,
             };
         },
     },

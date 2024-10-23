@@ -1,11 +1,11 @@
-import { RobotIcon } from "@sanity/icons";
+import { FcAssistant } from "react-icons/fc";
 import { defineField } from "sanity";
 
 export const specialistType = defineField({
     name: "specialist",
     type: "document",
     title: "Specialist roles",
-    icon: RobotIcon,
+    icon: FcAssistant,
     fields: [
         defineField({
             name: "title",

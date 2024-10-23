@@ -1,4 +1,4 @@
-import { StarIcon } from "@sanity/icons";
+import { FcTodoList } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -8,7 +8,7 @@ export const serviceType = defineField({
     name: "service",
     title: "Services",
     type: "document",
-    icon: StarIcon,
+    icon: FcTodoList,
     fields: [
         defineField({
             name: "title",
