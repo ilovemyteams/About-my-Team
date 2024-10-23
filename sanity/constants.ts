@@ -1,21 +1,42 @@
-import { ComposeIcon, PublishIcon, SearchIcon } from "@sanity/icons";
+import {
+    FcEditImage,
+    FcDownload,
+    FcFlowChart,
+    FcHighPriority,
+    FcMenu,
+    FcSearch,
+} from "react-icons/fc";
 // Field groups used through schema types
 export const GROUPS = [
     {
-        default: true,
         name: "editorial",
         title: "Editorial",
-        icon: ComposeIcon,
-    },
-    {
-        name: "seo",
-        title: "SEO",
-        icon: SearchIcon,
+        icon: FcEditImage,
     },
     {
         name: "cta",
         title: "CTA",
-        icon: PublishIcon,
+        icon: FcDownload,
+    },
+    {
+        name: "navigation",
+        title: "Navigation",
+        icon: FcMenu,
+    },
+    {
+        name: "buttons",
+        title: "Buttons",
+        icon: FcFlowChart,
+    },
+    {
+        name: "notFoundPage",
+        title: "404 page",
+        icon: FcHighPriority,
+    },
+    {
+        name: "seo",
+        title: "SEO",
+        icon: FcSearch,
     },
 ];
 

@@ -1,11 +1,7 @@
-import {
-    CogIcon,
-    ControlsIcon,
-    ErrorOutlineIcon,
-    MenuIcon,
-    SearchIcon,
-} from "@sanity/icons";
+import { FcSettings } from "react-icons/fc";
 import { defineField, defineType } from "sanity";
+
+import { GROUPS } from "@/sanity/constants";
 
 const TITLE = "Settings";
 
@@ -13,34 +9,12 @@ export const settingsType = defineType({
     name: "settings",
     title: TITLE,
     type: "document",
-    icon: CogIcon,
+    icon: FcSettings,
     options: {
         collapsed: false,
         collapsible: true,
     },
-    groups: [
-        {
-            default: true,
-            name: "navigation",
-            title: "Navigation",
-            icon: MenuIcon,
-        },
-        {
-            name: "buttons",
-            title: "Buttons",
-            icon: ControlsIcon,
-        },
-        {
-            name: "notFoundPage",
-            title: "404 page",
-            icon: ErrorOutlineIcon,
-        },
-        {
-            name: "seo",
-            title: "SEO",
-            icon: SearchIcon,
-        },
-    ],
+    groups: GROUPS,
     fields: [
         defineField({
             // should match 'languageField' plugin configuration setting, if customized
