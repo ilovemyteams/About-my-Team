@@ -1,4 +1,4 @@
-export const IconSearch = () => {
+export const IconSearch = ({ className = "" }) => {
     return (
         <svg
             width="44"
@@ -6,6 +6,7 @@ export const IconSearch = () => {
             viewBox="0 0 44 44"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className={className}
         >
             <path
                 fillRule="evenodd"

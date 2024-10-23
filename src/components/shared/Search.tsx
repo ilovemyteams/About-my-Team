@@ -17,9 +17,6 @@ export const Search = () => {
     const pathname = usePathname();
     const { replace } = useRouter();
 
-    const shouldIconBeLeft =
-        (defaultValue && defaultValue?.length > 0) || isInputFocused;
-
     const handleSearch = useDebouncedCallback(() => {
         const sanitizedValue = inputValue
             .trim()
@@ -50,42 +47,50 @@ export const Search = () => {
         <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
             <div
                 role="form"
-                className={`flex relative ${isInputFocused || inputValue ? "tab:border-b-1 border-greyLight dark:border-grey" : "tab:border-b-1 border-transparent"} w-full`}
+                className={`flex relative w-full border-b-1  border-purple-200 dark:border-grey`}
             >
                 <button
                     onClick={() => inputRef?.current?.focus()}
-                    className={`absolute left-0 text-greyLight dark:text-grey ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}`}
+                    className={`flex absolute left-0 text-greyLight dark:text-grey`}
                 >
-                    <IconSearch />
+                    <IconSearch
+                        className={
+                            "rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
+                        }
+                    />
+                    {!isInputFocused && (
+                        <p className="my-auto">
+                            {getTranslations("Buttons.search")}
+                        </p>
+                    )}
                 </button>
                 <input
                     type="text"
                     ref={inputRef}
                     value={inputValue}
-                    placeholder={getTranslations("Buttons.search")}
+                    placeholder={getTranslations("Q&A.searchInputPlaceholder")}
                     onChange={handleChange}
                     onFocus={() => {
                         setIsInputFocused(true);
                     }}
                     onBlur={() => setIsInputFocused(false)}
-                    className={`my-auto mx-[50px] h-[44px] placeholder:text-purple-200 dark:placeholder:text-grey focus:placeholder:text-transparent tab:placeholder:text-transparent focus:outline-none bg-transparent`}
+                    className={`my-auto mx-[50px] h-[44px] text-purple-200 dark:text-grey placeholder:text-transparent focus:placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
                 />
-                {inputValue && (
+                {(inputValue || isInputFocused) && (
                     <button
                         onClick={handleClearInput}
-                        className="absolute right-0"
+                        className="absolute right-0 rounded-full pc:transition pc:ease-out pc:duration-300 hover:bg-purple-100 hover:bg-opacity-30"
                     >
                         <IconCloseXBold />
                     </button>
                 )}
             </div>
-            <p
-                className={`hidden tab:block my-auto font-caviar text-sm tab:text-lg text-purple-200 dark:text-grey`}
-            >
-                {getTranslations("Buttons.search")}
-            </p>
         </div>
     );
 };
 
 export default Search;
+
+// tab form ${isInputFocused || inputValue ? "tab:border-tab:purple-200 dark:tab:border-grey" : "tab:border-transparent dark:tab:border-transparent"}
+// button const shouldIconBeLeft = isInputFocused || inputValue;
+// button ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}
