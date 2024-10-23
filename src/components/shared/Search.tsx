@@ -79,7 +79,7 @@ export const Search = () => {
                 {(inputValue || isInputFocused) && (
                     <button
                         onClick={handleClearInput}
-                        className="absolute right-0 rounded-full pc:transition pc:ease-out pc:duration-300 hover:bg-purple-100 hover:bg-opacity-30"
+                        className="absolute right-0 rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
                     >
                         <IconCloseXBold />
                     </button>
