@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 
-import { IconCloseXBold } from "./Icons/IconCloseXBold";
+import { IconCloseX } from "./Icons/IconCloseX";
 import { IconSearch } from "./Icons/IconSearch";
 
 export const Search = () => {
@@ -44,47 +44,45 @@ export const Search = () => {
     };
 
     return (
-        <div className="flex w-full tab:w-auto tab:justify-end  border-b-1 tab:border-none">
-            <div
-                role="form"
-                className={`flex relative w-full border-b-1  border-purple-200 dark:border-grey`}
+        <div
+            role="form"
+            className={`flex w-full tab:w-[45%] pc:w-[35%] border-b-1  border-purple-200 dark:border-grey`}
+        >
+            <button
+                onClick={() => inputRef?.current?.focus()}
+                className={`flex text-greyLight dark:text-grey`}
             >
-                <button
-                    onClick={() => inputRef?.current?.focus()}
-                    className={`flex absolute left-0 text-greyLight dark:text-grey`}
-                >
-                    <IconSearch
-                        className={
-                            "rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
-                        }
-                    />
-                    {!isInputFocused && (
-                        <p className="my-auto">
-                            {getTranslations("Buttons.search")}
-                        </p>
-                    )}
-                </button>
-                <input
-                    type="text"
-                    ref={inputRef}
-                    value={inputValue}
-                    placeholder={getTranslations("Q&A.searchInputPlaceholder")}
-                    onChange={handleChange}
-                    onFocus={() => {
-                        setIsInputFocused(true);
-                    }}
-                    onBlur={() => setIsInputFocused(false)}
-                    className={`my-auto mx-[50px] h-[44px] text-purple-200 dark:text-grey placeholder:text-transparent focus:placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
+                <IconSearch
+                    className={
+                        "rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
+                    }
                 />
-                {(inputValue || isInputFocused) && (
-                    <button
-                        onClick={handleClearInput}
-                        className="absolute right-0 rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
-                    >
-                        <IconCloseXBold />
-                    </button>
+                {!isInputFocused && (
+                    <p className="my-auto">
+                        {getTranslations("Buttons.search")}
+                    </p>
                 )}
-            </div>
+            </button>
+            <input
+                type="text"
+                ref={inputRef}
+                value={inputValue}
+                placeholder={getTranslations("Q&A.searchInputPlaceholder")}
+                onChange={handleChange}
+                onFocus={() => {
+                    setIsInputFocused(true);
+                }}
+                onBlur={() => setIsInputFocused(false)}
+                className={`flex-grow h-[44px] text-purple-200 dark:text-grey placeholder:text-transparent focus:placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
+            />
+            {(inputValue || isInputFocused) && (
+                <button
+                    onClick={handleClearInput}
+                    className="size-[44px] rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
+                >
+                    <IconCloseX className="size-4 stroke-[2.5] m-auto" />
+                </button>
+            )}
         </div>
     );
 };
