@@ -133,7 +133,7 @@ export const faqType = defineField({
     preview: {
         select: {
             title: "question",
-            media: "image",
+            media: "image.image",
         },
         prepare({ title, media }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
