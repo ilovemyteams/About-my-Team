@@ -21,7 +21,7 @@ export const ListContentItem = ({
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
             <div>
-                <p className="font-caviar text-[48px] pc:text-[115px] desk:text-[130px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[15%]">
+                <p className="font-caviar text-[48px] tab:text-[70px] pc:text-[115px] desk:text-[130px] leading-none font-bold text-purple-strokeLight dark:text-purple-dark sticky top-[15%]">
                     {indx < 10 ? `0${indx + 1}` : indx + 1}
                 </p>
             </div>
