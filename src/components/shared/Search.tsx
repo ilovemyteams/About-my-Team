@@ -48,7 +48,7 @@ export const Search = () => {
             role="form"
             className={`flex w-full tab:w-[45%] pc:w-[35%] border-b-1  border-purple-200 dark:border-grey`}
         >
-            <button
+            <div
                 onClick={() => inputRef?.current?.focus()}
                 className={`flex text-greyLight dark:text-grey`}
             >
@@ -62,7 +62,7 @@ export const Search = () => {
                         {getTranslations("Buttons.search")}
                     </p>
                 )}
-            </button>
+            </div>
             <input
                 type="text"
                 ref={inputRef}
@@ -88,7 +88,3 @@ export const Search = () => {
 };
 
 export default Search;
-
-// tab form ${isInputFocused || inputValue ? "tab:border-tab:purple-200 dark:tab:border-grey" : "tab:border-transparent dark:tab:border-transparent"}
-// button const shouldIconBeLeft = isInputFocused || inputValue;
-// button ${shouldIconBeLeft ? "" : "tab:right-0 tab:left-auto "}

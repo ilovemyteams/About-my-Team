@@ -44,7 +44,8 @@ function flattenText(
             .map(item => {
                 if (typeof item === "string") {
                     return item;
-                } else if (typeof item === "object" && "text" in item) {
+                }
+                if (typeof item === "object" && "text" in item) {
                     return item.title + flattenText(item.text);
                 }
                 return "";
