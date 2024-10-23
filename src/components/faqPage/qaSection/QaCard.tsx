@@ -56,18 +56,17 @@ export const QaCard = ({
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
                     <LikeButton questionSlug={slug} likes={likes} />
-                    <h2 className="font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3">
-                        <HighlightText
-                            text={questionText}
-                            toBeHighlighted={searchTerm}
-                        />
-                    </h2>
-                    <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
-                        <HighlightText
-                            text={shortAnswerText.join(" ")}
-                            toBeHighlighted={searchTerm}
-                        />
-                    </p>
+                    <Link href={`faq/${slug}`}>
+                        <h2
+                            className="pc:hover:text-redLight dark:pc:hover:text-red
+                    pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3"
+                        >
+                            <HighlightText
+                                text={questionText}
+                                toBeHighlighted={searchTerm}
+                            />
+                        </h2>
+                    </Link>
                 </div>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter

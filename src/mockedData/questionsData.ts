@@ -705,31 +705,110 @@ export const questionsData: QAItemType[] = [
             slug: "can-i-choose-which-team-will-work-on-my-order",
             image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
             likes: 0,
+            layout: 1,
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=15X1tdwWHNC7DXp-82g_h-kPY2GCfkSva",
         },
         ua: {
-            questionText:
-                "Чи можу я самостійно обрати, яка команда працюватиме над моїм замовленням?",
+            questionText: "Чи можу я самостійно підібрати команду?",
             shortAnswerText: [
-                "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже існуючим продуктом - зв’яжіться зі спеціалістом через його телеграм або лінкедін.",
+                "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до Менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже реалізованим продуктом — зв’яжіться зі спеціалістом через його телеграм або лінкедін напряму і повідомте як ви його знайшли та чому обрали саме його/її.",
             ],
             imageAltText:
                 "Чи можу я самостійно обрати, яка команда працюватиме над моїм замовленням?",
+            fullAnswerTopText: [
+                "Ми розуміємо, що кожен проєкт має свої унікальні вимоги, і тому надаємо гнучкість у виборі спеціалістів, щоб ви могли сформувати команду, яка найкраще відповідатиме вашим цілям та задачам.",
+            ],
+            fullAnswerContent: [
+                {
+                    title: "Вибір окремих \nспеціалістів",
+                    text: [
+                        "На нашому сайті ви можете переглянути профілі розробників, дизайнерів, тестувальників, аналітиків, менеджерів та інших спеціалістів, які готові працювати над вашим проєктом. Кожен профіль містить інформацію про досвід, навички, попередні проєкти, погодинну ставку, а також контактну інформацію, що дозволяє вам оцінити відповідність фахівця вашим потребам.",
+                    ],
+                },
+                {
+                    title: "Формування \nкоманди",
+                    text: [
+                        "Ви можете обрати окремих фахівців або відразу сформувати повноцінну команду, залежно від вимог вашого проєкту. У цьому випадку ми наполегливо рекомендуємо звернутись за консультацією до нашого *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Менеджера*/link*, який/яка допоможе вам правильно оцінити необхідні ресурси та функціональні ролі для успішної реалізації проєкту. Це особливо важливо, якщо ви не маєте досвіду в управлінні командою розробників або маєте складний проєкт, який вимагає кількох фахівців із різними компетенціями.",
+                    ],
+                },
+                {
+                    title: "Підтримка \nвід Менеджера",
+                    text: [
+                        "Попри те, що ви можете самостійно підібрати команду, наша компанія завжди готова надати підтримку на кожному етапі. Менеджер допоможе вам правильно організувати процес розробки, налаштувати комунікацію та забезпечити ефективну взаємодію між членами команди. Якщо вам потрібно більше 3-х спеціалістів (дизайнер, розробник, тестувальник) то взявши в команду менеджера ви зекономите час та гроші, бо Менеджер налагодить процес так, що вам не доведеться долучатися до роботи самостійно — ваша задача буде озвучувати/описувати свої вимоги та затверджувати макети та запропоновані технічні рішення, а не займатись управлінням людьми та їх взаємодією. Також Менеджер буде вам регулярно звітувати про етапи роботи, проводити демо та консультації, а також забезпечить наявність всієї необхідної документації та розрахунків.",
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Якщо ваш проєкт вже запущений і вам потрібен окремий спеціаліст для виконання погодинних завдань або внесення змін до наявного продукту, ви можете напряму *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}#team`*написати спеціалісту*/link*. Це зручний варіант для тих, хто потребує швидкого вирішення конкретної проблеми або оперативної допомоги з невеликим обсягом робіт. У таких випадках немає потреби формувати команду — достатньо обрати одного фахівця, який вирішить ваше питання.",
+            ],
         },
         pl: {
-            questionText:
-                "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
+            questionText: "Czy mogę samodzielnie wybrać zespół?",
             shortAnswerText: [
-                "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn.",
+                "Tak, możesz samodzielnie wybrać poszczególnych specjalistów i utworzyć zespół. W takim przypadku zalecamy skontaktowanie się z Menedżerem w celu konsultacji. Jeśli potrzebujesz specjalisty do pracy godzinowej nad już wdrożonym produktem, możesz skontaktować się bezpośrednio z wybranym specjalistą przez Telegram lub LinkedIn, informując go, jak go znalazłeś i dlaczego go wybrałeś.",
             ],
             imageAltText:
                 "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
+            fullAnswerTopText: [
+                "Rozumiemy, że każdy projekt ma swoje unikalne wymagania, dlatego dajemy możliwość elastycznego wyboru specjalistów, abyś mógł/mogła stworzyć zespół najlepiej dopasowany do Twoich celów i zadań.",
+            ],
+            fullAnswerContent: [
+                {
+                    title: "Wybór poszczególnych \nspecjalistów",
+                    text: [
+                        "Na naszej stronie możesz przeglądać profile deweloperów, projektantów, testerów, analityków, menedżerów i innych specjalistów, którzy są gotowi pracować nad twoim projektem. Każdy profil zawiera informacje o doświadczeniu, umiejętnościach, poprzednich projektach, stawkach godzinowych oraz dane kontaktowe, co pozwala ocenić, czy dany specjalista spełnia Twoje potrzeby.",
+                    ],
+                },
+                {
+                    title: "Tworzenie \nzespołu",
+                    text: [
+                        "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
+                    ],
+                },
+                {
+                    title: "Wsparcie \nMenedżera",
+                    text: [
+                        "Chociaż możesz samodzielnie wybrać zespół, nasza firma zawsze służy wsparciem na każdym etapie. Menedżer pomoże Ci zorganizować proces deweloperski, ustawić komunikację i zapewnić efektywną współpracę w zespole. Jeśli potrzebujesz więcej niż trzech specjalistów (np. projektanta, dewelopera i testera), zaangażowanie Menedżera pozwoli zaoszczędzić czas i pieniądze. Menedżer ustawi proces w taki sposób, abyś nie musiał sam angażować się w pracę — Twoim zadaniem będzie jedynie przedstawianie wymagań, zatwierdzanie projektów i proponowanych rozwiązań technicznych, a nie zarządzanie ludźmi i ich interakcjami. Menedżer będzie regularnie raportować postępy, przeprowadzać prezentacje i konsultacje, a także dbać o niezbędną dokumentację i kalkulacje.",
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Jeśli Twój projekt jest już uruchomiony i potrzebujesz specjalisty do pracy godzinowej lub do wprowadzenia zmian w istniejącym produkcie, możesz *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}#team`*skontaktować się bezpośrednio ze specjalistą*/link* przez Telegram lub LinkedIn. Jest to wygodne rozwiązanie dla osób, które potrzebują szybkiego rozwiązania konkretnego problemu lub pomocy  przy niewielkim nakładzie pracy. W takich przypadkach nie ma potrzeby tworzenia zespołu — wystarczy wybrać jednego specjalistę, który rozwiąże dany problem.",
+            ],
         },
         en: {
             questionText: "Can I choose which team will work on my order?",
             shortAnswerText: [
-                "Yes, you can choose individual specialists and form a team on your own. In this case, we strongly recommend that you first contact your manager for advice. If you need a dedicated specialist for hourly work with your existing product, please contact the specialist via their telegram or LinkedIn.",
+                "Yes, you can choose individual specialists and assemble a team on your own. In this case, we strongly recommend first reaching out to a Manager for consultation. If you need a specific specialist for hourly work on your existing product, contact the specialist directly through their Telegram or LinkedIn and let them know how you found them and why you chose them.",
             ],
             imageAltText: "Can I choose which team will work on my order?",
+            fullAnswerTopText: [
+                "We understand that each project has its unique requirements, which is why we provide flexibility in choosing specialists so you can form a team that best meets your goals and objectives.",
+            ],
+            fullAnswerContent: [
+                {
+                    title: "Choosing individual \nspecialists",
+                    text: [
+                        "On our website, you can view the profiles of developers, designers, testers, analysts, managers, and other specialists who are ready to work on your project. Each profile contains information about experience, skills, previous projects, hourly rate, and contact information, which allows you to assess whether the specialist meets your needs.",
+                    ],
+                },
+                {
+                    title: "Forming \na team",
+                    text: [
+                        "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/member/SusannaSalataPM`*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
+                    ],
+                },
+                {
+                    title: "Support \nfrom the Manager",
+                    text: [
+                        "Even though you can assemble a team on your own, our company is always ready to provide support at every stage. The Manager will help you properly organize the development process, set up communication, and ensure effective interaction among team members. If you need more than three specialists (such as a designer, developer, and tester), having a Manager on the team will save you time and money. The Manager will streamline the process so that you won’t have to get involved in the work yourself — your task will be to articulate/describe your requirements and approve designs and proposed technical solutions, rather than manage people and their interactions. Additionally, the Manager will regularly report to you on the progress of the work, conduct demos and consultations, and ensure that all necessary documentation and calculations are available.",
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "If your project has already been launched, and you need an individual specialist to perform hourly tasks or make changes to an existing product, you can directly *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}#team`*contact the specialist*/link* via Telegram or LinkedIn. This is a convenient option for those who require a quick solution to a specific problem or prompt assistance with a small volume of work. In such cases, there is no need to form a team — you just need to choose one specialist who will solve your issue.",
+            ],
         },
     },
 ];
