@@ -288,6 +288,7 @@
     "Halloween": {
         "greeting": "Find the pumpkins hidden around the site. Write how many you found in the ORDER form and, if you find all of them, you will get a one-hour consultation with *link=`https://www.linkedin.com/in/susanna-salata/`*Susanna Salata*/link*. \n Onwards to the hunt!!",
         "caption": "*pumpkins on this pop-up are not counted",
+        "conditions": "** the offer is valid until 23:59 on 10/31/2024.",
         "btn": "start the ritual"
     }
 }
