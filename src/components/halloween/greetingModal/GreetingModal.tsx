@@ -86,9 +86,13 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                                 locale
                             )}
                         </p>
-                        <p className=" text-redLight dark:text-red mb-11 tab:mb-9 pc:mb-6 desk:text-lg25 text-sm tab:text-base max-w-[80%] mx-auto">
+                        <p className=" text-redLight dark:text-red mb-2 desk:text-lg25 text-sm tab:text-base max-w-[80%] mx-auto">
                             {getTranslation("caption")}
                         </p>
+                        <p className=" text-redLight dark:text-red mb-11 tab:mb-9 pc:mb-6 desk:text-lg25 text-sm tab:text-base max-w-[80%] mx-auto">
+                            {getTranslation("conditions")}
+                        </p>
+
                         <Button color="grey" onClick={onCloseModal}>
                             {getTranslation("btn")}
                         </Button>
