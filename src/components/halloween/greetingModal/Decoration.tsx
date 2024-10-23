@@ -38,7 +38,6 @@ export const Decoration = () => {
                         0, -4, -8, -12, -16, -12, -8, -4, 0, 4, 8, 12, 16, 12,
                         8, 4, 0,
                     ],
-                    origin: "center",
                 }}
                 transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
                 className="absolute top-[9%] tab:top-[5%] pc:top-[7%] right-[17%] z-[25]"
