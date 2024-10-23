@@ -1563,6 +1563,25 @@ export type HomeFAQQueryResult = {
         shortAnswer: string | null;
     }> | null;
 } | null;
+// Variable: homeReviewsQuery
+// Query: *[_type == "home"][0]{    "title": reviewsHome.title[_key == $language][0].value,    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,    "anchorId": reviewsHome.sectionId.anchorId.current,    "slider": reviewsHome.reviewsSlider[] {      _type == "reference" => @->{_id,        "reviewText": reviewText[_key == $language][0].value,        "url": reviewUrl.url,        "newWindow": reviewUrl.newWindow,        "altImage": image.caption[_key == $language][0].value,        "asset": image.image.asset->url,        "reviewerName": select(          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value        ),        "reviewerPosition": select(          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value        ),        "projectName": project->title[_key == $language][0].value,        "projectCategory": project->category->categoryName[_key == $language][0].value      }    }  }
+export type HomeReviewsQueryResult = {
+    title: PortableColorTitle | null;
+    subtitle: string | null;
+    anchorId: string | null;
+    slider: Array<{
+        _id: string;
+        reviewText: string | null;
+        url: string | null;
+        newWindow: boolean | null;
+        altImage: string | null;
+        asset: string | null;
+        reviewerName: string | null;
+        reviewerPosition: string | null;
+        projectName: string | null;
+        projectCategory: string | null;
+    }> | null;
+} | null;
 
 // Query TypeMap
 import "@sanity/client";
@@ -1578,5 +1597,6 @@ declare module "@sanity/client" {
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
         '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
         '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
+        '\n*[_type == "home"][0]{\n    "title": reviewsHome.title[_key == $language][0].value,\n    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,\n    "anchorId": reviewsHome.sectionId.anchorId.current,\n    "slider": reviewsHome.reviewsSlider[] {\n      _type == "reference" => @->{_id,\n        "reviewText": reviewText[_key == $language][0].value,\n        "url": reviewUrl.url,\n        "newWindow": reviewUrl.newWindow,\n        "altImage": image.caption[_key == $language][0].value,\n        "asset": image.image.asset->url,\n        "reviewerName": select(\n          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value\n        ),\n        "reviewerPosition": select(\n          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value\n        ),\n        "projectName": project->title[_key == $language][0].value,\n        "projectCategory": project->category->categoryName[_key == $language][0].value\n      }\n    }\n  }\n\n': HomeReviewsQueryResult;
     }
 }
