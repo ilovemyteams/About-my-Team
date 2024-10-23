@@ -67,6 +67,12 @@ export const QaCard = ({
                             />
                         </h2>
                     </Link>
+                    <p className="text-sm tab:text-base line-clamp-3 text-greyLight dark:text-grey mb-2.5">
+                        <HighlightText
+                            text={shortAnswerText.join(" ")}
+                            toBeHighlighted={searchTerm}
+                        />
+                    </p>
                 </div>
                 <div className="flex justify-between">
                     <EstimatedReadingTimeCounter
