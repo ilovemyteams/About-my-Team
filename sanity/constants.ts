@@ -1,6 +1,6 @@
 import {
-    FcEditImage,
     FcDownload,
+    FcEditImage,
     FcFlowChart,
     FcHighPriority,
     FcMenu,

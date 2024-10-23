@@ -1,4 +1,4 @@
-import { CommentIcon } from "@sanity/icons";
+import { FcFeedback } from "react-icons/fc";
 import { FcBusinessman } from "react-icons/fc";
 import { defineField } from "sanity";
 
@@ -9,7 +9,7 @@ export const reviewType = defineField({
     name: "review",
     title: "Reviews",
     type: "document",
-    icon: CommentIcon,
+    icon: FcFeedback,
     fields: [
         defineField({
             name: "project",
