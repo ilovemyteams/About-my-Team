@@ -6,16 +6,23 @@ import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
 
 export const FeedbackCardTextFromTab = ({
-    data,
-    localizationData,
+    feedback,
 }: FeedbackCardItemProps) => {
     const getTranslation = useTranslations("Feedback");
 
-    const { siteLink, feedbackLink } = data;
-    const { siteName, siteView, reviewer, reviewerRole, feedbackText } =
-        localizationData;
+    if (!feedback) return null;
 
-    const siteTypeUp = siteView?.toUpperCase();
+    const {
+        newWindow,
+        projectCategory,
+        projectName,
+        projectURL,
+        reviewText,
+        reviewerName,
+        reviewerPosition,
+        feedbackLink,
+    } = feedback;
+    const siteTypeUp = projectCategory?.toUpperCase();
 
     return (
         <div className="flex flex-col tab:h-[377px] pc:h-[426px] ">
@@ -27,17 +34,15 @@ export const FeedbackCardTextFromTab = ({
                 />
                 <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[175px]">
                     {!feedbackLink && (
-                        <p className="tab:text-base pc:text-xl">
-                            {feedbackText}
-                        </p>
+                        <p className="tab:text-base pc:text-xl">{reviewText}</p>
                     )}
                     {feedbackLink && (
                         <>
                             <p className="tab:text-base pc:text-xl tab:h-[103px] pc:h-[126px] pc:mb-2 overflow-hidden line-clamp-5 break-words">
-                                {feedbackText}
+                                {reviewText}
                             </p>
                             <a
-                                target="_blank"
+                                target={newWindow ? "_blank" : ""}
                                 href={addProtocol(feedbackLink)}
                                 rel="noopener noreferrer"
                                 className="text-purple-100 text-sm pc:text-base border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
@@ -51,16 +56,16 @@ export const FeedbackCardTextFromTab = ({
                     )}
                 </div>
                 <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
-                    {reviewer}
+                    {reviewerName}
                 </p>
                 <p className="text-xs text-purple-200 dark:text-white-200">
-                    {reviewerRole}
+                    {reviewerPosition}
                 </p>
             </div>
             <div className=" tab:flex tab:justify-between border-t border-b dark:border-purple-stroke border-purple-strokeLight pt-[10px] pb-4 tab:py-[14px] tab:min-w-[360px] pc:min-w-[450px] ">
                 <div>
                     <h3 className="font-caviar text-baseb tab:mb-[10px] pc:mb-[6px] pc:text-xlb text-purple-200 dark:text-grey">
-                        {siteName}
+                        {projectName || ""}
                     </h3>
 
                     <p className="text-xs pc:text-sm font-light dark:text-purple-50 text-purple-130">
@@ -68,17 +73,19 @@ export const FeedbackCardTextFromTab = ({
                     </p>
                 </div>
                 <div className="tab:mt-[25px]">
-                    <a
-                        target="_blank"
-                        href={addProtocol(siteLink)}
-                        rel="noopener noreferrer"
-                        className="block border-b dark:border-grey border-greyLight dark:pc:hover:text-red dark:pc:hover:border-red pc:hover:border-redLight
+                    {projectURL && (
+                        <a
+                            target="_blank"
+                            href={addProtocol(projectURL)}
+                            rel="noopener noreferrer"
+                            className="block border-b dark:border-grey border-greyLight dark:pc:hover:text-red dark:pc:hover:border-red pc:hover:border-redLight
                          pc:hover:text-redLight dark:active:text-red active:text-redLight dark:active:border-red active:border-redLight 
                          dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
                          transition-color ease-out duration-300"
-                    >
-                        {siteLink}
-                    </a>
+                        >
+                            {projectURL}
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

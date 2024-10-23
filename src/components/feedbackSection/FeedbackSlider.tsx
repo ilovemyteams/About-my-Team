@@ -1,12 +1,8 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import { useLocale } from "next-intl";
 import React from "react";
 
-import { LocaleType } from "@/types/LocaleType";
-
-import { FeedbackDataItemType } from "../../mockedData/feedbackData";
 import {
     NextButton,
     PrevButton,
@@ -17,15 +13,25 @@ import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { FeedbackCard } from "./FeedbackCard";
 
 type FeedbackSliderProps = {
-    feedbacks: FeedbackDataItemType[];
+    feedbacks: Array<{
+        _id: string;
+        reviewText: string | null;
+        feedbackLink: string | null;
+        newWindow: boolean | null;
+        altImage: string | null;
+        asset: string | null;
+        reviewerName: string | null;
+        reviewerPosition: string | null;
+        projectName: string | null;
+        projectURL: string | null;
+        projectCategory: string | null;
+    }> | null;
     options?: EmblaOptionsType;
 };
-type Locale = LocaleType;
 
 export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
-    const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
 
@@ -40,17 +46,15 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
         <div className=" embla relative">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
-                    {feedbacks.map(feedback => (
-                        <div
-                            key={feedback.data.id}
-                            className="embla__slide flex-[0_0_100%] "
-                        >
-                            <FeedbackCard
-                                data={feedback.data}
-                                localizationData={feedback[locale as Locale]}
-                            />
-                        </div>
-                    ))}
+                    {feedbacks &&
+                        feedbacks.map(feedback => (
+                            <div
+                                key={feedback._id}
+                                className="embla__slide flex-[0_0_100%] "
+                            >
+                                <FeedbackCard feedback={feedback} />
+                            </div>
+                        ))}
                 </div>
                 <div className="embla__controls mt-4 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
                     <div className="embla__buttons flex gap-4 tab:gap-6 justify-center">
@@ -61,7 +65,7 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
                         <SliderDotsBox
                             scrollSnaps={scrollSnaps}
                             selectedIndex={selectedIndex}
-                            sliders={feedbacks}
+                            sliders={feedbacks || []}
                             onDotButtonClick={onDotButtonClick}
                         />
                         <NextButton
