@@ -117,3 +117,31 @@ export const homeFAQQuery = groq`
   "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, 
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
 }`;
+
+export const homeReviewsQuery = groq`
+*[_type == "home"][0]{
+    "title": reviewsHome.title[_key == $language][0].value,
+    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,
+    "anchorId": reviewsHome.sectionId.anchorId.current,
+    "slider": reviewsHome.reviewsSlider[] {
+      _type == "reference" => @->{_id,
+        "reviewText": reviewText[_key == $language][0].value,
+        "url": reviewUrl.url,
+        "newWindow": reviewUrl.newWindow,
+        "altImage": image.caption[_key == $language][0].value,
+        "asset": image.image.asset->url,
+        "reviewerName": select(
+          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,
+          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value
+        ),
+        "reviewerPosition": select(
+          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,
+          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value
+        ),
+        "projectName": project->title[_key == $language][0].value,
+        "projectCategory": project->category->categoryName[_key == $language][0].value
+      }
+    }
+  }
+
+`;
