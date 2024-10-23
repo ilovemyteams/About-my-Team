@@ -4,6 +4,7 @@ import {
     loadHomeFaq,
     loadHomeHero,
     loadHomeProjects,
+    loadHomeReviews,
     loadServices,
     loadStages,
 } from "@/sanity/utils/loadQuery";
@@ -22,7 +23,7 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [hero, about, cta, portfolioSection, services, stages, faq] =
+    const [hero, about, cta, portfolioSection, services, stages, faq, reviews] =
         await Promise.all([
             await loadHomeHero(props.params.locale),
             await loadHomeAboutUs(props.params.locale),
@@ -31,6 +32,7 @@ export default async function HomePage(props: PageParamsProps) {
             await loadServices(props.params.locale),
             await loadStages(props.params.locale),
             await loadHomeFaq(props.params.locale),
+            await loadHomeReviews(props.params.locale),
         ]);
 
     return (
@@ -40,7 +42,7 @@ export default async function HomePage(props: PageParamsProps) {
             <MissionSection data={about.data} />
             <JoinTheTeamSection data={cta.data} />
             <PortfolioSection data={portfolioSection.data} />
-            <FeedbackSection />
+            <FeedbackSection data={reviews.data} />
             <WriteUsSection data={cta.data} />
             <ServicesSection data={services.data} />
             <OurTeamSection />
