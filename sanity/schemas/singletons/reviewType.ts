@@ -112,11 +112,36 @@ export const reviewType = defineField({
         select: {
             title: "project.title",
             media: "image.image",
+            reviewerManualName: "reviewer.0.name",
+            reviewerRefName: "reviewer.0.name",
+            reviewerManualPosition: "reviewer.0.position",
+            reviewerRefPosition: "reviewer.0.position",
         },
-        prepare({ title, media }) {
+        prepare({
+            title,
+            media,
+            reviewerManualName,
+            reviewerRefName,
+            reviewerManualPosition,
+            reviewerRefPosition,
+        }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
+
+            const reviewerName = getEnglishTitleFromIntArrays(
+                reviewerManualName ? reviewerManualName : reviewerRefName,
+                "No name"
+            );
+
+            const reviewerPosition = getEnglishTitleFromIntArrays(
+                reviewerManualPosition
+                    ? reviewerManualPosition
+                    : reviewerRefPosition,
+                "no position"
+            );
+
             return {
                 title: `Review "${englishTitle}"`,
+                subtitle: `${reviewerName}, ${reviewerPosition}`,
                 media: media || undefined,
             };
         },

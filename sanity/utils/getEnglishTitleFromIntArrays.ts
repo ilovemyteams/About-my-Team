@@ -4,12 +4,13 @@ import {
 } from "@/types/sanity.types";
 
 export const getEnglishTitleFromIntArrays = (
-    title: InternationalizedArrayString | InternationalizedArrayText
+    title: InternationalizedArrayString | InternationalizedArrayText,
+    fallbackMessage: string = "No title"
 ) => {
     if (!title) {
-        return "No title";
+        return fallbackMessage;
     }
     const englishTitle =
-        title.find(item => item._key === "en")?.value || "No title";
+        title.find(item => item._key === "en")?.value || fallbackMessage;
     return englishTitle;
 };
