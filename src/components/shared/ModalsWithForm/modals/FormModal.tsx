@@ -1,12 +1,6 @@
 "use client";
 
-import {
-    ComponentType,
-    Dispatch,
-    SetStateAction,
-    useEffect,
-    useState,
-} from "react";
+import { ComponentType, Dispatch, SetStateAction, useState } from "react";
 
 import {
     FormInModalProps,
@@ -14,7 +8,7 @@ import {
 } from "@/types/FormInModalProps";
 import { SubmitFnType } from "@/types/FormInModalProps";
 
-import { IconCloseX } from "../../Icons/IconCloseX";
+import { ModalBase } from "../../Modals/ModalBase";
 import { BgImagesDesktop } from "../modalBgImages/formModalBgImages/BgImagesDesktop";
 import { BgImagesMobile } from "../modalBgImages/formModalBgImages/BgImagesMobile";
 import { BgImagesTablet } from "../modalBgImages/formModalBgImages/BgImagesTablet";
@@ -25,6 +19,7 @@ interface FormModalProps {
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
     formComponent: ComponentType<FormInModalProps>;
     triggerComponent: ComponentType<TriggerComponentProps>;
+    defaultOpen: boolean;
     className?: string;
 }
 
@@ -34,9 +29,10 @@ export const FormModal = ({
     setIsNotificationShawn,
     formComponent: FormComponent,
     triggerComponent: TriggerComponent,
+    defaultOpen,
     className,
 }: FormModalProps) => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(() => defaultOpen);
 
     const onOpenModal = () => setIsModalOpen(true);
     const onCloseModal = () => setIsModalOpen(false);
@@ -53,98 +49,22 @@ export const FormModal = ({
         }
     };
 
-    useEffect(() => {
-        const handleEsc = (event: KeyboardEvent) => {
-            if (event.key === "Escape") {
-                onCloseModal();
-            }
-        };
-
-        document.addEventListener("keydown", handleEsc);
-
-        return () => {
-            document.removeEventListener("keydown", handleEsc);
-        };
-    }, []);
-
     return (
         <div className={className}>
             <TriggerComponent
                 modalOpenHandler={onOpenModal}
                 isModalOpen={isModalOpen}
             />
-            {isModalOpen && (
-                <div
-                    aria-label="modal-backdrop"
-                    onClick={onCloseModal}
-                    className="fixed z-[20] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
-                >
-                    <div
-                        aria-label="modal-window"
-                        onClick={e => e.stopPropagation()}
-                        className="max-h-[90dvh] overflow-y-auto scroll w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
-            -translate-x-1/2 tab:-translate-y-1/2 z-[21]"
-                    >
-                        <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                            <BgImagesMobile />
-                            <BgImagesTablet />
-                            <BgImagesDesktop />
-                            <button
-                                type="button"
-                                onClick={onCloseModal}
-                                disabled={isError}
-                                aria-label="close button"
-                                className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
-                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[25] "
-                            >
-                                <IconCloseX />
-                            </button>
-                            <FormComponent
-                                notificationHandler={notificationHandler}
-                            />
-                        </div>
-                    </div>
-                </div>
-            )}
-            {/* <Modal
-                isOpen={isOpen}
-                onOpenChange={onOpenChange}
-                placement={placement}
-                radius="none"
-                shouldBlockScroll={
-                    screenSizeName !== mobileName &&
-                    screenSizeName !== tabletName
-                }
-                hideCloseButton={true}
-                className="top-7 tab:top-0 overflow-y-auto scroll min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] bg-white-100 dark:bg-purple-400 no-doc-scroll"
-                classNames={{
-                    backdrop:
-                        "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
-                    wrapper: "absolute",
-                }}
+            <ModalBase
+                isOpen={isModalOpen}
+                onCloseModal={onCloseModal}
+                isCloseDisabled={isError}
             >
-                <ModalContent className="m-0">
-                    <div className="relative w-full h-full px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                        <BgImagesMobile />
-                        <BgImagesTablet />
-                        <BgImagesDesktop />
-
-                        <button
-                            type="button"
-                            onClick={onClose}
-                            disabled={isError}
-                            aria-label="close button"
-                            className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
-                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                        >
-                            <IconCloseX />
-                        </button>
-                        <FormComponent
-                            notificationHandler={notificationHandler}
-                        />
-                    </div>
-                </ModalContent>
-            </Modal> */}
+                <BgImagesMobile />
+                <BgImagesTablet />
+                <BgImagesDesktop />
+                <FormComponent notificationHandler={notificationHandler} />
+            </ModalBase>
         </div>
     );
 };

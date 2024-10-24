@@ -13,12 +13,14 @@ import { NotificationModal } from "./modals/NotificationModal";
 interface ModalsWithFormProps {
     formComponent: ComponentType<FormInModalProps>;
     triggerComponent: ComponentType<TriggerComponentProps>;
+    defaultOpen?: boolean;
     className?: string;
 }
 
 export const ModalsWithForm = ({
     formComponent,
     triggerComponent,
+    defaultOpen = false,
     className,
 }: ModalsWithFormProps) => {
     const [isError, setIsError] = useState(false);
@@ -33,6 +35,7 @@ export const ModalsWithForm = ({
                 formComponent={formComponent}
                 className={className}
                 triggerComponent={triggerComponent}
+                defaultOpen={defaultOpen}
             />
 
             <NotificationModal

@@ -1,19 +1,27 @@
 "use client";
 
-import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
-import { CustomerForm } from "./CustomerForm";
-import { WriteUsBtn } from "./WriteUsBtn";
+import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
+import React from "react";
+
+import { Button } from "@/src/components/shared/Button";
 
 interface WriteUsProps {
     className?: string;
 }
 
 export const WriteUs = ({ className }: WriteUsProps) => {
+    const getTranslation = useTranslations("Buttons");
+    const router = useRouter();
+    const locale = useLocale();
+
+    const onClickButton = () => {
+        router.push(`/${locale}/order`);
+    };
+
     return (
-        <ModalsWithForm
-            formComponent={CustomerForm}
-            triggerComponent={WriteUsBtn}
-            className={className}
-        />
+        <Button onClick={onClickButton} className={className}>
+            {getTranslation("order")}
+        </Button>
     );
 };
