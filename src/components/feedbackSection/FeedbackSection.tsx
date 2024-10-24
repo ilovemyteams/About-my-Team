@@ -1,23 +1,28 @@
 import { EmblaOptionsType } from "embla-carousel";
 
-import { feedbackData } from "../../mockedData/feedbackData";
+import { HomeReviewsQueryResult } from "@/types/sanity.types";
+
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { FeedbackSlider } from "./FeedbackSlider";
 import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
-import { FeedbackTitle } from "./Title/FeedbackTitle";
+import { FeedbackTitle } from "./FeedbackTitle";
 
-export const FeedbackSection = () => {
+export const FeedbackSection = ({ data }: { data: HomeReviewsQueryResult }) => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
+    if (!data) {
+        return null;
+    }
+    const { title, subtitle, anchorId, feedbacks } = data;
     return (
-        <Section id="feedback" className="relative">
-            <FeedbackTitle />
+        <Section id={anchorId || ""} className="relative">
+            <FeedbackTitle title={title} subtitle={subtitle} />
             <div className="tab:hidden">
-                <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
+                <FeedbackSlider feedbacks={feedbacks || []} options={OPTIONS} />
             </div>
             <div className="hidden tab:block tab:pb-[75px] pc:pb-[78px]">
                 <FeedbackSliderFromTab
-                    feedbacks={feedbackData}
+                    feedbacks={feedbacks || []}
                     options={OPTIONS}
                 />
             </div>

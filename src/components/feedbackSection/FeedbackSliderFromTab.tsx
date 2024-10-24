@@ -3,12 +3,8 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useLocale } from "next-intl";
 import React from "react";
 
-import { LocaleType } from "@/types/LocaleType";
-
-import { FeedbackDataItemType } from "../../mockedData/feedbackData";
 import {
     NextButton,
     PrevButton,
@@ -19,15 +15,25 @@ import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 import { FeedbackCardTextFromTab } from "./FeedbackCardTextFromTab";
 
 type FeedbackSliderProps = {
-    feedbacks: FeedbackDataItemType[];
+    feedbacks: Array<{
+        _id: string;
+        reviewText: string | null;
+        feedbackLink: string | null;
+        newWindow: boolean | null;
+        altImage: string | null;
+        asset: string | null;
+        reviewerName: string | null;
+        reviewerPosition: string | null;
+        projectName: string | null;
+        projectURL: string | null;
+        projectCategory: string | null;
+    }>;
     options?: EmblaOptionsType;
 };
-type Locale = LocaleType;
 
 export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
-    const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
 
@@ -45,18 +51,14 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                 ref={emblaRef}
             >
                 <div className=" flex">
-                    {feedbacks.map(({ data, en }) => (
+                    {feedbacks.map(feedback => (
                         <div
-                            key={data.id}
+                            key={feedback._id}
                             className="embla__slide flex-[0_0_100%] "
                         >
                             <Image
-                                src={
-                                    data.image
-                                        ? data.image
-                                        : "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg"
-                                }
-                                alt={en.siteName}
+                                src={feedback.asset || ""}
+                                alt={feedback.altImage || ""}
                                 width={540}
                                 height={346}
                                 className="object-cover tab:h-[302px] w-full pc:h-[346px]"
@@ -85,7 +87,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
             </div>
             {feedbacks.map((feedback, index) => (
                 <div
-                    key={feedback.data.id}
+                    key={feedback._id}
                     className={`${index === selectedIndex ? "block absolute top-0 left-0 overflow-hidden tab:min-w-[360px] tab:max-w-[50%] pc:min-w-[450px] pc:max-w-[41.7%]" : "hidden"}`}
                 >
                     <motion.div
@@ -104,10 +106,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                         }}
                         className="w-full"
                     >
-                        <FeedbackCardTextFromTab
-                            data={feedback.data}
-                            localizationData={feedback[locale as Locale]}
-                        />
+                        <FeedbackCardTextFromTab feedback={feedback} />
                     </motion.div>
                 </div>
             ))}
