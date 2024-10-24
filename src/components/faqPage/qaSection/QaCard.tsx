@@ -80,7 +80,7 @@ export const QaCard = ({
                         text={allTexts}
                     />
                     <Link
-                        href={`faq/${slug}${searchTerm && `?q=${searchTerm}`}`}
+                        href={`faq/${slug}${searchTerm && `?query=${searchTerm}`}`}
                         className="mr-3 text-base text-purple-130 dark:text-purple-100 pc:hover:text-redLight dark:pc:hover:text-red
                     pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 relative before:absolute before:bottom-[1px] before:w-full before:border-b before:border-current"
                     >

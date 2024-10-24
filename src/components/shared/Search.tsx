@@ -10,7 +10,7 @@ import { IconSearch } from "./Icons/IconSearch";
 export const Search = () => {
     const inputRef = useRef<HTMLInputElement>(null);
     const searchParams = useSearchParams();
-    const defaultValue = searchParams.get("q")?.toString();
+    const defaultValue = searchParams.get("query")?.toString();
     const [inputValue, setInputValue] = useState(defaultValue || "");
     const [isInputFocused, setIsInputFocused] = useState(false);
     const getTranslations = useTranslations();

@@ -26,7 +26,10 @@ export const QuestionHero = ({
     ];
     return (
         <PageSection className="pt-4 tab:pt-[44px] pc:pt-8 pb-6 tab:pb-[16px] pc:pb-[34px]">
-            <PageTopSection breadcrumbsList={breadcrumbs} />
+            <PageTopSection
+                breadcrumbsList={breadcrumbs}
+                searchTerm={searchTerm}
+            />
             <div className="flex flex-col tab:flex-row gap-6 tab:gap-[80px] pc:gap-[150px] justify-between">
                 <PageTitle
                     title={pageTitle}
