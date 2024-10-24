@@ -1,12 +1,12 @@
 import { defineField } from "sanity";
-import { FcLikePlaceholder } from "react-icons/fc";
+import { FcSms } from "react-icons/fc";
 
 import { SOCIAL_LINKS } from "@/sanity/constants";
 
 export const socialLinksType = defineField({
     name: "socialLinks",
     type: "object",
-    icon: FcLikePlaceholder,
+    icon: FcSms,
     fields: [
         defineField({
             name: "platform",

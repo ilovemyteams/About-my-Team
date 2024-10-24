@@ -1,5 +1,5 @@
 import { defineField } from "sanity";
-import { FcUpRight } from "react-icons/fc";
+import { FcRedo } from "react-icons/fc";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
@@ -8,7 +8,7 @@ export const menuItemType = defineField({
     name: "menuItem",
     title: "Menu Item",
     type: "object",
-    icon: FcUpRight,
+    icon: FcRedo,
     fields: [
         defineField({
             name: "title",
