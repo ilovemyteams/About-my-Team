@@ -194,7 +194,7 @@
         "nameAllowedSymbols": "Dozwolone litery i znaki: myślnik, apostrof, cudzysłów)",
         "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
         "russianEmails": "Nie współpracujemy z Moskalami",
-        "messageMinMaxSymbols": "Pole musi zawierać od 10 do 300 znaków",
+        "messageMinMaxSymbols": "Pole musi zawierać od 1 do 300 znaków",
         "wrongLinkedin": "Nieprawidłowy adres linkedin",
         "wrongInstagram": "Nieprawidłowy adres instagram",
         "wrongFacebook": "Nieprawidłowy adres facebook",

@@ -190,7 +190,7 @@
         "nameAllowedSymbols": "Допустимі літери та знаки дефіс, апостроф, лапки",
         "wrongEmail": "Невірний формат E-mail",
         "russianEmails": "Ми не працюємо з москалями",
-        "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "messageMinMaxSymbols": "Поле повинно містити від 1 до 300 символів",
         "wrongLinkedin": "Неправильна адреса linkedin",
         "wrongInstagram": "Неправильна адреса instagram",
         "wrongFacebook": "Неправильна адреса facebook",

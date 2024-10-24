@@ -7,7 +7,7 @@ export const MessageValidation = () => {
     return yup
         .string()
         .trim()
-        .min(2, getTranslation("messageMinMaxSymbols"))
+        .min(1, getTranslation("messageMinMaxSymbols"))
         .max(300, getTranslation("messageMinMaxSymbols"))
         .required(getTranslation("required"));
 };

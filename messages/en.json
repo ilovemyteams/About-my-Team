@@ -191,7 +191,7 @@
         "nameAllowedSymbols": "Allowed letters and characters: hyphen, apostrophe, quotation marks)",
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
-        "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
+        "messageMinMaxSymbols": "The field must contain from 1 to 300 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",
