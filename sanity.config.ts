@@ -5,7 +5,6 @@
  */
 
 import { colorInput } from "@sanity/color-input";
-import { documentInternationalization } from "@sanity/document-internationalization";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { presentationTool } from "sanity/presentation";
@@ -38,12 +37,6 @@ export default defineConfig({
         visionTool({ defaultApiVersion: apiVersion }),
         // Add an image asset source for Unsplash
         unsplashImageAsset(),
-
-        documentInternationalization({
-            // Required configuration
-            supportedLanguages: SUPPORTED_LANGUAGES,
-            schemaTypes: ["settings"],
-        }),
         internationalizedArray({
             languages: SUPPORTED_LANGUAGES,
             defaultLanguages: ["ua"],

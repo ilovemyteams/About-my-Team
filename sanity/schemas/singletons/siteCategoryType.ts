@@ -1,4 +1,4 @@
-import { LaunchIcon } from "@sanity/icons";
+import { FcMultipleSmartphones } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -7,7 +7,7 @@ export const siteCategoryType = defineField({
     name: "siteCategory",
     title: "Site categories",
     type: "document",
-    icon: LaunchIcon,
+    icon: FcMultipleSmartphones,
     fields: [
         defineField({
             name: "categoryName",

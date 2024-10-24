@@ -1,4 +1,4 @@
-import { HelpCircleIcon } from "@sanity/icons";
+import { FcFaq } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
@@ -9,7 +9,7 @@ export const faqType = defineField({
     name: "faq",
     title: "FAQs",
     type: "document",
-    icon: HelpCircleIcon,
+    icon: FcFaq,
     fields: [
         defineField({
             name: "numberOfLikes",
@@ -133,7 +133,7 @@ export const faqType = defineField({
     preview: {
         select: {
             title: "question",
-            media: "image",
+            media: "image.image",
         },
         prepare({ title, media }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
