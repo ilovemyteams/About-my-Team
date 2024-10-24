@@ -97,7 +97,7 @@ export const FormModal = ({
                                 className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[25] "
                             >
-                                <IconCloseX />
+                                <IconCloseX className="stroke-2 size-6" />
                             </button>
                             <FormComponent
                                 notificationHandler={notificationHandler}
@@ -137,7 +137,7 @@ export const FormModal = ({
                             className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
                         >
-                            <IconCloseX />
+                            <IconCloseX className="stroke-2 size-6"  />
                         </button>
                         <FormComponent
                             notificationHandler={notificationHandler}

@@ -73,7 +73,7 @@ export const NotificationModal = ({
                         aria-label="close button"
                         className="cursor-pointer flex justify-center items-center absolute top-[2px] right-4 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple"
                     >
-                        <IconCloseX />
+                        <IconCloseX className="stroke-2 size-6" />
                     </button>
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
