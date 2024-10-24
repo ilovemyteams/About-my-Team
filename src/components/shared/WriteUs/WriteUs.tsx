@@ -16,7 +16,7 @@ export const WriteUs = ({ className }: WriteUsProps) => {
     const locale = useLocale();
 
     const onClickButton = () => {
-        router.push(`${locale}/order`);
+        router.push(`/${locale}/order`);
     };
 
     return (
