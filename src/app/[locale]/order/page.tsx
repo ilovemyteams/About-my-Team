@@ -2,8 +2,8 @@ import React from "react";
 
 import { WriteUsModal } from "@/src/components/shared/WriteUs/WriteUsModal";
 
-const OrderPage = () => {
-    return <WriteUsModal />;
+const OrderFormPage = () => {
+    return <WriteUsModal previousUrl={"/"} />;
 };
 
-export default OrderPage;
+export default OrderFormPage;

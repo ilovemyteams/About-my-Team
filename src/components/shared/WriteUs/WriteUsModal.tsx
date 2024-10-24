@@ -7,13 +7,17 @@ import { TriggerComponentProps } from "@/types/FormInModalProps";
 import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
 import { CustomerForm } from "./CustomerForm";
 
-export const WriteUsModal = () => {
+interface WriteUsModalProps {
+    previousUrl?: string;
+}
+export const WriteUsModal = ({ previousUrl }: WriteUsModalProps) => {
     const router = useRouter();
 
+    console.log(previousUrl);
     const TriggerComponent = ({ isModalOpen }: TriggerComponentProps) => {
         useEffect(() => {
             if (!isModalOpen) {
-                router.back();
+                return previousUrl ? router.push(previousUrl) : router.back();
             }
         }, [isModalOpen]);
 

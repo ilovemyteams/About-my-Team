@@ -59,8 +59,7 @@ export const ModalBase = ({
                         visible: {
                             opacity: 1,
                             transition: {
-                                duration: 0.5,
-                                delayChildren: 0.3,
+                                duration: 0.3,
                             },
                         },
                     }}
