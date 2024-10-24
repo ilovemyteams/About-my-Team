@@ -2173,7 +2173,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
 
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1NKeuyv46nwGf1RMOZ7EyxYgSSOmaQH-S",
+                "https://drive.google.com/uc?export=view&id=1QFXDXtH3bITUpp4eReNJf6jYScTrKC0z",
             position: "Front-end Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
