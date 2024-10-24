@@ -43,26 +43,27 @@ export const Search = () => {
         setInputValue(e.target.value);
     };
 
+    const searchBadgeTranslation = getTranslations("Buttons.search");
+
     return (
         <div
-            role="form"
             className={`flex w-full tab:w-[45%] pc:w-[35%] border-b-1  border-purple-200 dark:border-grey`}
         >
-            <div
-                onClick={() => inputRef?.current?.focus()}
-                className={`flex text-greyLight dark:text-grey`}
-            >
-                <IconSearch
-                    className={
-                        "rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
-                    }
-                />
-                {!isInputFocused && (
-                    <p className="my-auto">
-                        {getTranslations("Buttons.search")}
-                    </p>
+            <label className="flex">
+                <button
+                    onClick={() => inputRef?.current?.focus()}
+                    className={`flex relative justify-center items-center icon-hover-rounded-purple text-greyLight dark:text-grey `}
+                    aria-label={searchBadgeTranslation}
+                >
+                    <IconSearch />
+                </button>
+                {!isInputFocused && !inputValue && (
+                    <span className="my-auto cursor-text" aria-hidden>
+                        {searchBadgeTranslation}
+                    </span>
                 )}
-            </div>
+            </label>
+
             <input
                 type="text"
                 ref={inputRef}
@@ -78,7 +79,7 @@ export const Search = () => {
             {(inputValue || isInputFocused) && (
                 <button
                     onClick={handleClearInput}
-                    className="size-[44px] rounded-full transition ease-out duration-300 hover:bg-purple-100 hover:bg-opacity-30"
+                    className="size-[44px] flex relative justify-center items-center icon-hover-rounded-purple"
                 >
                     <IconCloseX className="size-4 stroke-[2.5] m-auto" />
                 </button>
