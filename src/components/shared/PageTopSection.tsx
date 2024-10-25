@@ -12,7 +12,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 
 interface PageTopSectionProps {
     breadcrumbsList: { title: string; url: string }[];
-    searchTerm: string;
+    searchTerm?: string;
 }
 
 export const PageTopSection = ({
