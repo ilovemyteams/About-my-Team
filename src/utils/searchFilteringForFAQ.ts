@@ -39,7 +39,8 @@ function flattenText(
 ): string {
     if (typeof text === "string") {
         return text;
-    } else if (Array.isArray(text)) {
+    }
+    if (Array.isArray(text)) {
         return text
             .map(item => {
                 if (typeof item === "string") {
