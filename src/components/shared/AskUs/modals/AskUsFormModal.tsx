@@ -2,37 +2,31 @@
 
 import { ComponentType, Dispatch, SetStateAction, useState } from "react";
 
-import {
-    FormInModalProps,
-    TriggerComponentProps,
-} from "@/types/FormInModalProps";
+import { TriggerComponentProps } from "@/types/FormInModalProps";
 import { SubmitFnType } from "@/types/FormInModalProps";
 
 import { ModalBase } from "../../Modals/ModalBase";
 import { BgImagesDesktop } from "../../Modals/modalBgImages/contentModals/BgImagesDesktop";
 import { BgImagesMobile } from "../../Modals/modalBgImages/contentModals/BgImagesMobile";
 import { BgImagesTablet } from "../../Modals/modalBgImages/contentModals/BgImagesTablet";
+import { AskUsForm } from "../form/AskUsForm";
 
-interface FormModalProps {
+interface AskUsFormModalProps {
     isError: boolean;
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
-    formComponent: ComponentType<FormInModalProps>;
     triggerComponent: ComponentType<TriggerComponentProps>;
-    defaultOpen: boolean;
     className?: string;
 }
 
-export const FormModal = ({
+export const AskUsFormModal = ({
     isError,
     setIsError,
     setIsNotificationShawn,
-    formComponent: FormComponent,
     triggerComponent: TriggerComponent,
-    defaultOpen,
     className,
-}: FormModalProps) => {
-    const [isModalOpen, setIsModalOpen] = useState(() => defaultOpen);
+}: AskUsFormModalProps) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const onOpenModal = () => setIsModalOpen(true);
     const onCloseModal = () => setIsModalOpen(false);
@@ -63,7 +57,7 @@ export const FormModal = ({
                 <BgImagesMobile />
                 <BgImagesTablet />
                 <BgImagesDesktop />
-                <FormComponent notificationHandler={notificationHandler} />
+                <AskUsForm notificationHandler={notificationHandler} />
             </ModalBase>
         </div>
     );

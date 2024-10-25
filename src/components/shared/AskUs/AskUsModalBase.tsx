@@ -3,8 +3,8 @@ import { ComponentType, useState } from "react";
 
 import { TriggerComponentProps } from "@/types/FormInModalProps";
 
-import { FormModal } from "./modals/FormModal";
-import { NotificationModal } from "./modals/NotificationModal";
+import { AskUsFormModal } from "./modals/AskUsFormModal";
+import { AskUsNotificationModal } from "./modals/AskUsNotificationModal";
 
 interface AskUsModalProps {
     triggerComponent: ComponentType<TriggerComponentProps>;
@@ -21,13 +21,13 @@ export const AskUsModalBase = ({ triggerComponent }: AskUsModalProps) => {
 
     return (
         <>
-            <FormModal
+            <AskUsFormModal
                 isError={isError}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
                 triggerComponent={triggerComponent}
             />
-            <NotificationModal
+            <AskUsNotificationModal
                 isError={isError}
                 isShown={isNotificationShawn}
                 closeNotification={onCLoseNotification}

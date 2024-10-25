@@ -3,17 +3,17 @@ import React from "react";
 import { ErrorModal } from "../../Modals/ErrorModal";
 import { SuccessModal } from "../../Modals/SuccessModal";
 
-interface NotificationModalProps {
+interface AskUsNotificationModalProps {
     isError: boolean;
     isShown: boolean;
     closeNotification: () => void;
 }
 
-export const NotificationModal = ({
+export const AskUsNotificationModal = ({
     closeNotification,
     isError,
     isShown,
-}: NotificationModalProps) => {
+}: AskUsNotificationModalProps) => {
     const errorShown = isError && isShown;
     const successShown = !isError && isShown;
     return (

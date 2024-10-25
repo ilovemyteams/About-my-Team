@@ -13,7 +13,6 @@ interface ModalBaseProps {
     isCloseDisabled?: boolean;
     className?: string;
     animationType?: "tween" | "spring";
-    initialAnimation?: boolean;
     appearance?: "center" | "up";
 }
 
@@ -24,7 +23,6 @@ export const ModalBase = ({
     isCloseDisabled = false,
     className = "",
     animationType = "tween",
-    initialAnimation = true,
     appearance = "up",
     children,
 }: PropsWithChildren<ModalBaseProps>) => {
@@ -61,9 +59,10 @@ export const ModalBase = ({
                   hidden: {},
                   visible: {},
               };
+
     return (
-        <AnimatePresence initial={initialAnimation}>
-            {isOpen && (
+        <AnimatePresence>
+            {isOpen ? (
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -75,7 +74,7 @@ export const ModalBase = ({
                         visible: {
                             opacity: 1,
                             transition: {
-                                duration: 0.5,
+                                duration: 0,
                             },
                         },
                     }}
@@ -122,7 +121,7 @@ export const ModalBase = ({
                         </div>
                     </motion.div>
                 </motion.div>
-            )}
+            ) : null}
         </AnimatePresence>
     );
 };

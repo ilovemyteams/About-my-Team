@@ -1,33 +1,44 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
-import { TriggerComponentProps } from "@/types/FormInModalProps";
+import { useEffect, useState } from "react";
 
-import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
-import { CustomerForm } from "./CustomerForm";
+import { useRouter } from "@/src/navigation";
+
+import { CustomerFormModal } from "./modals/CustomerFormModal";
+import { CustomerNotificationModal } from "./modals/CustomerNotificationModal";
 
 interface WriteUsModalProps {
     previousUrl?: string;
 }
 export const WriteUsModal = ({ previousUrl }: WriteUsModalProps) => {
+    const [isError, setIsError] = useState(false);
+    const [isNotificationShawn, setIsNotificationShawn] = useState(false);
     const router = useRouter();
 
-    const TriggerComponent = ({ isModalOpen }: TriggerComponentProps) => {
-        useEffect(() => {
-            if (!isModalOpen) {
-                return previousUrl ? router.push(previousUrl) : router.back();
-            }
-        }, [isModalOpen]);
+    useEffect(() => {
+        if (previousUrl) {
+            router.prefetch(previousUrl);
+        }
+    }, [previousUrl, router]);
 
-        return null;
+    const onCLoseNotification = () => {
+        setIsError(false);
+        setIsNotificationShawn(false);
     };
 
     return (
-        <ModalsWithForm
-            formComponent={CustomerForm}
-            triggerComponent={TriggerComponent}
-            defaultOpen={true}
-        />
+        <>
+            <CustomerFormModal
+                isError={isError}
+                setIsError={setIsError}
+                setIsNotificationShawn={setIsNotificationShawn}
+                previousUrl={previousUrl}
+            />
+            <CustomerNotificationModal
+                closeNotification={onCLoseNotification}
+                isError={isError}
+                isShown={isNotificationShawn}
+            />
+        </>
     );
 };
