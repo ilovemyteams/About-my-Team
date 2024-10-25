@@ -43,26 +43,11 @@ export const Search = () => {
         setInputValue(e.target.value);
     };
 
-    const searchBadgeTranslation = getTranslations("Buttons.search");
-
     return (
-        <div
+        <label
             className={`flex w-full tab:w-[45%] pc:w-[35%] border-b-1  border-purple-200 dark:border-grey`}
         >
-            <label className="flex">
-                <button
-                    onClick={() => inputRef?.current?.focus()}
-                    className={`flex relative justify-center items-center icon-hover-rounded-purple text-greyLight dark:text-grey `}
-                    aria-label={searchBadgeTranslation}
-                >
-                    <IconSearch />
-                </button>
-                {!isInputFocused && !inputValue && (
-                    <span className="my-auto cursor-text" aria-hidden>
-                        {searchBadgeTranslation}
-                    </span>
-                )}
-            </label>
+            <IconSearch className="text-greyLight dark:text-grey" />
 
             <input
                 type="text"
@@ -74,8 +59,9 @@ export const Search = () => {
                     setIsInputFocused(true);
                 }}
                 onBlur={() => setIsInputFocused(false)}
-                className={`flex-grow h-[44px] text-purple-200 dark:text-grey placeholder:text-transparent focus:placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
+                className={`flex-grow h-[44px] text-purple-200 dark:text-grey placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
             />
+
             {(inputValue || isInputFocused) && (
                 <button
                     onClick={handleClearInput}
@@ -84,7 +70,7 @@ export const Search = () => {
                     <IconCloseX className="size-4 stroke-[2.5] m-auto" />
                 </button>
             )}
-        </div>
+        </label>
     );
 };
 
