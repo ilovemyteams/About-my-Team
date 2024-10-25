@@ -13,7 +13,6 @@ interface WriteUsModalProps {
 export const WriteUsModal = ({ previousUrl }: WriteUsModalProps) => {
     const router = useRouter();
 
-    console.log(previousUrl);
     const TriggerComponent = ({ isModalOpen }: TriggerComponentProps) => {
         useEffect(() => {
             if (!isModalOpen) {

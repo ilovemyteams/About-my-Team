@@ -12,6 +12,9 @@ interface ModalBaseProps {
     widthStyle?: string;
     isCloseDisabled?: boolean;
     className?: string;
+    animationType?: "tween" | "spring";
+    initialAnimation?: boolean;
+    appearance?: "center" | "up";
 }
 
 export const ModalBase = ({
@@ -20,6 +23,9 @@ export const ModalBase = ({
     widthStyle,
     isCloseDisabled = false,
     className = "",
+    animationType = "tween",
+    initialAnimation = true,
+    appearance = "up",
     children,
 }: PropsWithChildren<ModalBaseProps>) => {
     const screenSizeName = useScreenSize();
@@ -45,8 +51,18 @@ export const ModalBase = ({
     const defaultWidth =
         " w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px]";
 
+    const centerAnimation =
+        appearance === "center"
+            ? {
+                  hidden: { scale: 0 },
+                  visible: { scale: 1 },
+              }
+            : {
+                  hidden: {},
+                  visible: {},
+              };
     return (
-        <AnimatePresence>
+        <AnimatePresence initial={initialAnimation}>
             {isOpen && (
                 <motion.div
                     initial="hidden"
@@ -59,26 +75,28 @@ export const ModalBase = ({
                         visible: {
                             opacity: 1,
                             transition: {
-                                duration: 0.3,
+                                duration: 0.5,
                             },
                         },
                     }}
                     aria-label="modal-backdrop"
                     onClick={onCloseModal}
-                    className="fixed z-[20] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
+                    className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                 >
                     <motion.div
                         variants={{
                             hidden: {
                                 x: "-50%",
                                 y: "100vh",
+                                ...centerAnimation.hidden,
                             },
                             visible: {
                                 x: "-50%",
                                 y: modalTranslate,
                                 transition: {
-                                    type: "tween",
+                                    type: animationType,
                                 },
+                                ...centerAnimation.visible,
                             },
                         }}
                         initial="hidden"
@@ -87,7 +105,7 @@ export const ModalBase = ({
                         aria-label="modal-window"
                         onClick={e => e.stopPropagation()}
                         className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
-            -translate-x-1/2 tab:-translate-y-1/2 z-[21] ${widthStyle || defaultWidth} ${className}`}
+            -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
                     >
                         <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
                             <button
@@ -96,7 +114,7 @@ export const ModalBase = ({
                                 disabled={isCloseDisabled}
                                 aria-label="close button"
                                 className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
-                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[25] "
+                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
                             >
                                 <IconCloseX />
                             </button>
