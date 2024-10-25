@@ -66,7 +66,6 @@ export const HighlightText = ({
                     href={url}
                     key={url}
                     target="_blank"
-                    rel="noopener noreferrer"
                 >
                     {highlightedLinkText}
                 </a>
