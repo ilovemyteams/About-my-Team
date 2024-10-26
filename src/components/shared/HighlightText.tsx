@@ -21,7 +21,7 @@ export const HighlightText = ({
 }: HighlightTextProps) => {
     if (isInitial) {
         return (
-            <span className="text-[#30253E] dark:text-inherit bg-purple-100 bg-opacity-40">
+            <span className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40">
                 {text}
             </span>
         );
@@ -105,7 +105,7 @@ export const HighlightText = ({
                     return (
                         <span
                             key={index}
-                            className="text-[#30253E] dark:text-inherit bg-purple-100 bg-opacity-40"
+                            className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40"
                         >
                             {strippedPart}
                         </span>
