@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HighlightText } from "../../shared/HighlightText";
+import { HighlightText } from "../../shared/Search/HighlightText";
 
 interface AnswerTextIParagraphProps {
     text: string;

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-import { HighlightText } from "@/src/components/shared/HighlightText";
+import { HighlightText } from "@/src/components/shared/Search/HighlightText";
 import {
     QADataType,
     QAItemLocalizationTextType,

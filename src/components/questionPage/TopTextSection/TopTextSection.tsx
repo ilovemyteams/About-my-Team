@@ -1,6 +1,6 @@
-import { HighlightText } from "../../shared/HighlightText";
 import { IconHeartWeb } from "../../shared/Icons/IconHeartWeb";
 import { PageSection } from "../../shared/PageSection";
+import { HighlightText } from "../../shared/Search/HighlightText";
 import { AnswerTextIParagraph } from "./AnswerTextIParagraph";
 
 interface TopTextSectionProps {

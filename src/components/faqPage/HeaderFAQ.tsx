@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { PageTopSection } from "../shared/PageTopSection";
-import Search from "../shared/Search";
+import Search from "../shared/Search/Search";
 
 type HeaderFAQProps = {
     itemsQuantity: number;

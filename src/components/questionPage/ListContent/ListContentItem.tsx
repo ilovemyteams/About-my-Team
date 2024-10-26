@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { HighlightText } from "../../shared/HighlightText";
+import { HighlightText } from "../../shared/Search/HighlightText";
 
 interface ListContentItemsProps {
     item: LongAnswerListType;

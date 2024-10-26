@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
 
-import { HighlightText } from "../../shared/HighlightText";
+import { HighlightText } from "../../shared/Search/HighlightText";
 
 export const TableContentItem = ({
     content,

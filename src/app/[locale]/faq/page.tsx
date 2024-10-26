@@ -1,10 +1,9 @@
 import { useLocale } from "next-intl";
-import { useTranslations } from "next-intl";
 
 import { HeaderFAQ } from "@/src/components/faqPage/HeaderFAQ";
 import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
 import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
-import { Section } from "@/src/components/shared/Section";
+import { NothingFound } from "@/src/components/shared/Search/NothingFound";
 import { questionsData } from "@/src/mockedData/questionsData";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { searchFilteringForFAQ } from "@/src/utils/searchFilteringForFAQ";
@@ -28,7 +27,6 @@ export default function FAQ({
     searchParams: { query?: string };
 }) {
     const locale = useLocale();
-    const getTranslation = useTranslations();
     const searchTerm = searchParams.query || "";
 
     const filteredQuestions = questionsData.filter(question =>
@@ -44,11 +42,7 @@ export default function FAQ({
                     searchTerm={searchTerm}
                 />
             ) : (
-                <Section className="flex flex-col gap-3 mt-8">
-                    <p className="font-caviar text-lg tab:text-xlb pc:text-4xl text-purple-200 dark:text-grey w-auto tab:w-1/2">
-                        {getTranslation("Q&A.noAnswerFound", { searchTerm })}
-                    </p>
-                </Section>
+                <NothingFound searchTerm={searchTerm} />
             )}
             <FaqSectionCta />
         </>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { EstimatedReadingTimeCounter } from "../shared/EstimatedReadingTimeCounter";
-import { HighlightText } from "../shared/HighlightText";
+import { HighlightText } from "../shared/Search/HighlightText";
 
 interface PageTitleProps {
     title: string;

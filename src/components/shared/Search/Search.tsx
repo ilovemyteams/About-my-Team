@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import { ChangeEvent, useEffect, useRef, useState } from "react";
 import { useDebouncedCallback } from "use-debounce";
 
-import { IconCloseX } from "./Icons/IconCloseX";
-import { IconSearch } from "./Icons/IconSearch";
+import { IconCloseX } from "../Icons/IconCloseX";
+import { IconSearch } from "../Icons/IconSearch";
 
 export const Search = () => {
     const inputRef = useRef<HTMLInputElement>(null);
@@ -53,7 +53,7 @@ export const Search = () => {
                 type="text"
                 ref={inputRef}
                 value={inputValue}
-                placeholder={getTranslations("Q&A.searchInputPlaceholder")}
+                placeholder={getTranslations("Search.searchInputPlaceholder")}
                 onChange={handleChange}
                 onFocus={() => {
                     setIsInputFocused(true);
