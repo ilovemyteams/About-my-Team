@@ -1,14 +1,16 @@
 import { Fragment } from "react";
 
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
-import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 import { LocaleType } from "@/types/LocaleType";
+
+import { HighlightText } from "../../shared/Search/HighlightText";
 
 interface ListContentItemsProps {
     item: LongAnswerListType;
     indx: number;
     listStyle: string;
     locale: LocaleType;
+    searchTerm: string;
 }
 
 export const ListContentItem = ({
@@ -16,6 +18,7 @@ export const ListContentItem = ({
     indx,
     listStyle,
     locale,
+    searchTerm,
 }: ListContentItemsProps) => {
     const { text, title } = item;
     return (
@@ -28,7 +31,7 @@ export const ListContentItem = ({
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
                 <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
-                    {title}
+                    <HighlightText text={title} toBeHighlighted={searchTerm} />
                 </h3>
                 <ul>
                     {text.map((text, index) => (
@@ -36,7 +39,11 @@ export const ListContentItem = ({
                             {typeof text === "string" && (
                                 <li className={listStyle}>
                                     <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                                        {parseTextWithLink(text, locale)}
+                                        <HighlightText
+                                            text={text}
+                                            toBeHighlighted={searchTerm}
+                                            locale={locale}
+                                        />
                                     </p>
                                 </li>
                             )}

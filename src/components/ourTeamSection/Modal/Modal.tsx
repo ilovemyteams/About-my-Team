@@ -70,7 +70,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                             type="button"
                             className="flex mb-2 ml-auto mr-4 tab:mr-6 tab:mb-3 w-12 h-12 justify-center items-center icon-hover-rounded-purple relative"
                         >
-                            <IconCloseX />
+                            <IconCloseX className="stroke-2 size-6" />
                         </button>
                         {children}
                     </div>
