@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactElement } from "react";
 
 import type { LocaleType } from "@/types/LocaleType";
@@ -56,7 +57,7 @@ export const HighlightText = ({
                     toBeHighlighted,
                     isStripped
                 ),
-                <a
+                <Link
                     className="text-purple-130 dark:text-purple-50 dark:pc:hover:text-red 
                         pc:hover:text-redLight dark:active:text-red active:text-redLight 
                         dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
@@ -66,7 +67,7 @@ export const HighlightText = ({
                     target="_blank"
                 >
                     {highlightedLinkText}
-                </a>,
+                </Link>,
             ];
         });
 
