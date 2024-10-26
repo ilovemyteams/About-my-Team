@@ -56,7 +56,9 @@ export const QaCard = ({
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
                     <LikeButton questionSlug={slug} likes={likes} />
-                    <Link href={`faq/${slug}`}>
+                    <Link
+                        href={`faq/${slug}${searchTerm && `?query=${searchTerm}`}`}
+                    >
                         <h2
                             className="pc:hover:text-redLight dark:pc:hover:text-red
                     pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3"
