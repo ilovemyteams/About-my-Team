@@ -27,27 +27,20 @@ export const HighlightText = ({
         );
     }
 
-    // Function to highlight search term and parse links
     const parseTextWithLink = (
         inputText: string,
         locale?: LocaleType
     ): (string | ReactElement)[] => {
-        const result: (string | ReactElement)[] = [];
+        const matches = Array.from(inputText.matchAll(linkRegex));
         let lastIndex = 0;
-        let match;
 
-        // Split the text by the link regex
-        while ((match = linkRegex.exec(inputText)) !== null) {
-            if (match.index > lastIndex) {
-                const textBeforeLink = inputText.slice(lastIndex, match.index);
-                result.push(
-                    ...highlightSearchTerm(
-                        textBeforeLink,
-                        toBeHighlighted,
-                        isStripped
-                    )
-                );
-            }
+        const result = matches.flatMap((match, matchIndex) => {
+            const matchStartIndex = match.index ?? 0;
+            const textBeforeLink =
+                matchStartIndex > lastIndex
+                    ? inputText.slice(lastIndex, matchStartIndex)
+                    : "";
+            lastIndex = matchStartIndex + match[0].length;
 
             const url = match[1].replace("${locale}", locale || "");
             const linkText = match[2];
@@ -57,22 +50,25 @@ export const HighlightText = ({
                 false
             );
 
-            result.push(
+            return [
+                ...highlightSearchTerm(
+                    textBeforeLink,
+                    toBeHighlighted,
+                    isStripped
+                ),
                 <a
-                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
- pc:hover:text-redLight dark:active:text-red active:text-redLight 
- dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
- transition-color ease-out duration-300 underline"
+                    className="text-purple-130 dark:text-purple-50 dark:pc:hover:text-red 
+                        pc:hover:text-redLight dark:active:text-red active:text-redLight 
+                        dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
+                        transition-color ease-out duration-300 underline"
                     href={url}
-                    key={url}
+                    key={`${url}-${matchIndex}`}
                     target="_blank"
                 >
                     {highlightedLinkText}
-                </a>
-            );
-
-            lastIndex = linkRegex.lastIndex;
-        }
+                </a>,
+            ];
+        });
 
         if (lastIndex < inputText.length) {
             const remainingText = inputText.slice(lastIndex);
@@ -93,35 +89,30 @@ export const HighlightText = ({
         searchTerm: string,
         isStripped: boolean
     ): (string | ReactElement)[] => {
-        if (!searchTerm) {
-            return [text];
-        }
+        if (!searchTerm) return [text];
 
         const words = searchTerm.split(/\s+/).filter(Boolean);
         const regex = new RegExp(`(${words.join("|")})`, "gi");
-        const parts = text.split(regex).filter(Boolean);
-        const highlightedParts: (string | ReactElement)[] = [];
 
-        parts.forEach((part, index) => {
-            if (regex.test(part)) {
-                // Handle "stripped" case where the first letter might be removed
-                const strippedPart =
-                    isStripped && index === 0 ? part.slice(1) : part;
+        return text
+            .split(regex)
+            .filter(Boolean)
+            .map((part, index) => {
+                if (regex.test(part)) {
+                    const strippedPart =
+                        isStripped && index === 0 ? part.slice(1) : part;
 
-                highlightedParts.push(
-                    <span
-                        key={index}
-                        className="text-[#30253E] dark:text-inherit bg-purple-100 bg-opacity-40"
-                    >
-                        {strippedPart}
-                    </span>
-                );
-            } else {
-                highlightedParts.push(part); // Non-highlighted part
-            }
-        });
-
-        return highlightedParts;
+                    return (
+                        <span
+                            key={index}
+                            className="text-[#30253E] dark:text-inherit bg-purple-100 bg-opacity-40"
+                        >
+                            {strippedPart}
+                        </span>
+                    );
+                }
+                return part;
+            });
     };
 
     const parsedResult = parseTextWithLink(text, locale);
