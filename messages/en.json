@@ -191,7 +191,7 @@
         "nameAllowedSymbols": "Allowed letters and characters: hyphen, apostrophe, quotation marks)",
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
-        "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
+        "messageMinMaxSymbols": "The field must contain from 1 to 300 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",
@@ -284,5 +284,11 @@
         "orderCardText": "We are ready to take on all the challenges of development and help you create the perfect website for your business, while enjoying the collaboration throughout the process of its development and launch.",
         "orderCardImgAlt": "Order services",
         "orderCardButton": "order"
+    },
+    "Halloween": {
+        "greeting": "Find the pumpkins hidden around the site. Write how many you found in the ORDER form and, if you find all of them, you will get a one-hour consultation with *link=`https://www.linkedin.com/in/susanna-salata/`*Susanna Salata*/link*. \n Onwards to the hunt!!",
+        "caption": "*pumpkins on this pop-up are not counted",
+        "conditions": "** responses submitted by 23:59 on October 31, 2024, will be considered",
+        "btn": "start the ritual"
     }
 }
