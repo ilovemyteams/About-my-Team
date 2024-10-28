@@ -67,15 +67,13 @@ export const ModalBase = ({
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
+                    transition={{ duration: 0.5 }}
                     variants={{
                         hidden: {
                             opacity: 0,
                         },
                         visible: {
                             opacity: 1,
-                            transition: {
-                                duration: 0,
-                            },
                         },
                     }}
                     aria-label="modal-backdrop"
@@ -92,15 +90,13 @@ export const ModalBase = ({
                             visible: {
                                 x: "-50%",
                                 y: modalTranslate,
-                                transition: {
-                                    type: animationType,
-                                },
                                 ...centerAnimation.visible,
                             },
                         }}
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
+                        transition={{ duration: 1, type: animationType }}
                         aria-label="modal-window"
                         onClick={e => e.stopPropagation()}
                         className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
