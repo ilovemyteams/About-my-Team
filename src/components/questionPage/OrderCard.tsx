@@ -57,7 +57,7 @@ export const OrderCard = ({
                 ) : (
                     ""
                 )}
-                <div className="border mx-auto tab:ml-0 tab:mr-auto">
+                <div className="mx-auto tab:ml-0 tab:mr-auto">
                     <WriteUs />
                 </div>
             </div>
