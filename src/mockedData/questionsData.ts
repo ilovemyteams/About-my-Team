@@ -710,7 +710,7 @@ export const questionsData: QAItemType[] = [
                 "https://drive.google.com/uc?export=view&id=15X1tdwWHNC7DXp-82g_h-kPY2GCfkSva",
         },
         ua: {
-            questionText: "Чи можу я самостійно підібрати команду?",
+            questionText: "Чи можу я самостійно \nпідібрати команду?",
             shortAnswerText: [
                 "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до Менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже реалізованим продуктом — зв’яжіться зі спеціалістом через його телеграм або лінкедін напряму і повідомте як ви його знайшли та чому обрали саме його/її.",
             ],
@@ -718,6 +718,7 @@ export const questionsData: QAItemType[] = [
                 "Чи можу я самостійно обрати, яка команда працюватиме над моїм замовленням?",
             fullAnswerTopText: [
                 "Ми розуміємо, що кожен проєкт має свої унікальні вимоги, і тому надаємо гнучкість у виборі спеціалістів, щоб ви могли сформувати команду, яка найкраще відповідатиме вашим цілям та задачам.",
+                "Як це працює описано нижче.",
             ],
             fullAnswerContent: [
                 {
@@ -744,7 +745,7 @@ export const questionsData: QAItemType[] = [
             ],
         },
         pl: {
-            questionText: "Czy mogę samodzielnie wybrać zespół?",
+            questionText: "Czy mogę samodzielnie \nwybrać zespół?",
             shortAnswerText: [
                 "Tak, możesz samodzielnie wybrać poszczególnych specjalistów i utworzyć zespół. W takim przypadku zalecamy skontaktowanie się z Menedżerem w celu konsultacji. Jeśli potrzebujesz specjalisty do pracy godzinowej nad już wdrożonym produktem, możesz skontaktować się bezpośrednio z wybranym specjalistą przez Telegram lub LinkedIn, informując go, jak go znalazłeś i dlaczego go wybrałeś.",
             ],
@@ -752,6 +753,7 @@ export const questionsData: QAItemType[] = [
                 "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
             fullAnswerTopText: [
                 "Rozumiemy, że każdy projekt ma swoje unikalne wymagania, dlatego dajemy możliwość elastycznego wyboru specjalistów, abyś mógł/mogła stworzyć zespół najlepiej dopasowany do Twoich celów i zadań.",
+                "Jak to działa, opisano poniżej.",
             ],
             fullAnswerContent: [
                 {
@@ -778,13 +780,14 @@ export const questionsData: QAItemType[] = [
             ],
         },
         en: {
-            questionText: "Can I choose which team will work on my order?",
+            questionText: "Can I choose which team \nwill work on my order?",
             shortAnswerText: [
                 "Yes, you can choose individual specialists and assemble a team on your own. In this case, we strongly recommend first reaching out to a Manager for consultation. If you need a specific specialist for hourly work on your existing product, contact the specialist directly through their Telegram or LinkedIn and let them know how you found them and why you chose them.",
             ],
             imageAltText: "Can I choose which team will work on my order?",
             fullAnswerTopText: [
                 "We understand that each project has its unique requirements, which is why we provide flexibility in choosing specialists so you can form a team that best meets your goals and objectives.",
+                "How it works is described below.",
             ],
             fullAnswerContent: [
                 {

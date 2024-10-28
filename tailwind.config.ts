@@ -211,6 +211,7 @@ const config: Config = {
                 disabledLight: "#B097CE",
                 backdrop: "#030303",
                 error: "#D60000",
+                textHighlight: "#30253E",
             },
             fill: {
                 stroke: "#5F3F87",
