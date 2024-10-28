@@ -43,7 +43,14 @@ export const HighlightText = ({
                     : "";
             lastIndex = matchStartIndex + match[0].length;
 
-            const url = match[1].replace("${locale}", locale || "");
+            const url = match[1]
+                .replace("/${locale}", locale || "")
+                .replace(
+                    "${process.env.NEXT_PUBLIC_BASE_URL}",
+                    process.env.NEXT_PUBLIC_BASE_URL || ""
+                );
+
+            ("");
             const linkText = match[2];
             const highlightedLinkText = highlightSearchTerm(
                 linkText,
@@ -60,7 +67,7 @@ export const HighlightText = ({
                 <Link
                     className="text-purple-130 dark:text-purple-50 dark:pc:hover:text-red 
                         pc:hover:text-redLight dark:active:text-red active:text-redLight 
-                        dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
+                        dark:pc:focus:text-red pc:focus:text-redLight outline-none
                         transition-color ease-out duration-300 underline"
                     href={url}
                     key={`${url}-${matchIndex}`}
