@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 
@@ -9,7 +8,6 @@ interface ListContentItemsProps {
     item: LongAnswerListType;
     indx: number;
     listStyle: string;
-    locale: LocaleType;
     searchTerm: string;
 }
 
@@ -17,7 +15,6 @@ export const ListContentItem = ({
     item,
     indx,
     listStyle,
-    locale,
     searchTerm,
 }: ListContentItemsProps) => {
     const { text, title } = item;
@@ -42,7 +39,6 @@ export const ListContentItem = ({
                                         <HighlightText
                                             text={text}
                                             toBeHighlighted={searchTerm}
-                                            locale={locale}
                                         />
                                     </p>
                                 </li>

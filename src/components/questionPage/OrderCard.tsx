@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { LocaleType } from "@/types/LocaleType";
-
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { PageSection } from "../shared/PageSection";
 import { HighlightText } from "../shared/Search/HighlightText";
@@ -11,7 +9,6 @@ interface OrderCardProps {
     imageLink?: string;
     fullAnswerBottomText?: string[];
     imageAltText: string;
-    locale: LocaleType;
     searchTerm: string;
 }
 
@@ -19,7 +16,6 @@ export const OrderCard = ({
     imageLink,
     fullAnswerBottomText,
     imageAltText,
-    locale,
     searchTerm,
 }: OrderCardProps) => {
     return (
@@ -49,7 +45,6 @@ export const OrderCard = ({
                                 <HighlightText
                                     text={text}
                                     toBeHighlighted={searchTerm}
-                                    locale={locale}
                                 />
                             </p>
                         ))}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useLocale } from "next-intl";
 import { ReactElement } from "react";
 
 import type { LocaleType } from "@/types/LocaleType";
@@ -8,7 +9,6 @@ type HighlightTextProps = {
     toBeHighlighted: string;
     isInitial?: boolean;
     isStripped?: boolean;
-    locale?: LocaleType;
 };
 
 const linkRegex = /\*link=`([^`]*)`\*([^*]*)\*\/link\*/g;
@@ -18,8 +18,10 @@ export const HighlightText = ({
     toBeHighlighted,
     isInitial = false,
     isStripped = false,
-    locale,
 }: HighlightTextProps) => {
+    const locale = useLocale() as LocaleType;
+    console.log(locale, "LOCALE");
+
     if (isInitial) {
         return (
             <span className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40">
