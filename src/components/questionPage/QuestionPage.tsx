@@ -32,7 +32,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
         imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, layout, answerOrderImage, slug } = data;
+    const { image, answerOrderImage, slug, removeOrderBtn } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
@@ -54,10 +54,9 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
                 fullAnswerText={fullAnswerTopText}
                 searchTerm={searchTerm}
             />
-            {fullAnswerContent && layout ? (
+            {fullAnswerContent ? (
                 <>
                     <MainContent
-                        layout={layout}
                         content={fullAnswerContent}
                         searchTerm={searchTerm}
                     />
@@ -66,6 +65,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
                         imageLink={answerOrderImage}
                         fullAnswerBottomText={fullAnswerBottomText}
                         imageAltText={imageAltText}
+                        removedOrderBtn={!!removeOrderBtn}
                         searchTerm={searchTerm}
                     />
                     <HelpfullAnswerSection

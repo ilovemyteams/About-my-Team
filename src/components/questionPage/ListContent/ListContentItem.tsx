@@ -1,23 +1,21 @@
-import { Fragment } from "react";
-
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
+import { Text } from "./Text";
 
 interface ListContentItemsProps {
-    item: LongAnswerListType;
+    item: LongAnswerListTypeItem;
     indx: number;
-    listStyle: string;
     searchTerm: string;
 }
 
 export const ListContentItem = ({
     item,
     indx,
-    listStyle,
     searchTerm,
 }: ListContentItemsProps) => {
-    const { text, title } = item;
+    const { text, title, type } = item;
+
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
             <div>
@@ -27,23 +25,22 @@ export const ListContentItem = ({
             </div>
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
-                    <HighlightText text={title} toBeHighlighted={searchTerm} />
-                </h3>
+                {title && (
+                    <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
+                        <HighlightText
+                            text={title}
+                            toBeHighlighted={searchTerm}
+                        />
+                    </h3>
+                )}
                 <ul>
                     {text.map((text, index) => (
-                        <Fragment key={index}>
-                            {typeof text === "string" && (
-                                <li className={listStyle}>
-                                    <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                                        <HighlightText
-                                            text={text}
-                                            toBeHighlighted={searchTerm}
-                                        />
-                                    </p>
-                                </li>
-                            )}
-                        </Fragment>
+                        <Text
+                            key={index}
+                            text={text}
+                            type={type}
+                            searchTerm={searchTerm}
+                        />
                     ))}
                 </ul>
             </div>

@@ -1,8 +1,9 @@
 import { LocaleType } from "@/types/LocaleType";
 
 import type {
-    LongAnswerListTextType,
+    ListTextItemType,
     LongAnswerListType,
+    LongAnswerListTypeItem,
     QAItemType,
 } from "../mockedData/questionsData";
 
@@ -37,7 +38,7 @@ function cleanText(text: string): string {
 }
 
 function flattenText(
-    text: string | string[] | LongAnswerListTextType[]
+    text: string | string[] | ListTextItemType[] | LongAnswerListTypeItem[]
 ): string {
     if (typeof text === "string") {
         return text;
@@ -61,7 +62,7 @@ function flattenText(
 function joinAnswerTexts(answerContent: LongAnswerListType[]): string {
     if (answerContent.length === 0) return "";
     return answerContent.reduce((acc: string, item) => {
-        acc += item.title + flattenText(item.text);
+        acc += item.title + flattenText(item.data);
         return acc;
     }, "");
 }

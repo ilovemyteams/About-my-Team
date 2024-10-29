@@ -1,4 +1,4 @@
-import React from "react";
+import { Fragment } from "react";
 
 import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
@@ -7,31 +7,31 @@ import { ListContent } from "./ListContent/ListContent";
 import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
-    layout: number;
     content: LongAnswerListType[];
     searchTerm: string;
 }
 
-export const MainContent = ({
-    layout,
-    content,
-    searchTerm,
-}: MainContentProps) => {
+export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
         <PageSection className="pb-[32px] tab:pb-[100px]">
-            {layout === 1 && (
-                <ListContent content={content} searchTerm={searchTerm} />
-            )}
-            {layout === 2 && (
-                <TableContent content={content} searchTerm={searchTerm} />
-            )}
-            {layout === 3 && (
-                <ListContent
-                    content={content}
-                    activeSubList={true}
-                    searchTerm={searchTerm}
-                />
-            )}
+            {content.map((item, index) => (
+                <Fragment key={index}>
+                    {item.layout === 1 && (
+                        <ListContent
+                            content={item.data}
+                            title={item.title}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                    {item.layout === 2 && (
+                        <TableContent
+                            content={item.data}
+                            title={item.title}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                </Fragment>
+            ))}
         </PageSection>
     );
 };

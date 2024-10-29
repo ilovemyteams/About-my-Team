@@ -1,25 +1,32 @@
-import type { LongAnswerListType } from "../mockedData/questionsData";
+import type {
+    ListTextItemType,
+    LongAnswerListType,
+    LongAnswerListTypeItem,
+} from "../mockedData/questionsData";
 
-const getAllTexts = (data: LongAnswerListType) => {
-    let result = `${data.title} `;
-
+const getAllTexts = (data: LongAnswerListTypeItem | ListTextItemType) => {
+    let result = data.title ? `${data.title}` : "";
     data.text.forEach(item => {
         if (typeof item === "string") {
             result += `${item} `;
         } else {
-            result += getAllTexts(item as LongAnswerListType);
+            result += getAllTexts(item);
         }
     });
 
     return result;
 };
 
-export const getTextString = (data: LongAnswerListType[] | undefined) => {
-    if (!data) {
+export const getTextString = (content: LongAnswerListType[] | undefined) => {
+    if (!content) {
         return "";
     }
-    return data.reduce((acc, item) => {
-        const text = getAllTexts(item);
-        return `${acc} ${text}`;
+    return content.reduce((acc, item) => {
+        const flatText = item.data.reduce((acc, subitem) => {
+            const text = getAllTexts(subitem);
+            return `${acc} ${text}`;
+        }, "");
+
+        return `${acc} ${flatText}`;
     }, "");
 };
