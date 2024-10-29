@@ -33,7 +33,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
         imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, answerOrderImage, slug } = data;
+    const { image, answerOrderImage, slug, removeOrderBtn } = data;
 
     const text = fullAnswerContent?.reduce((acc, item) => {
         return [...acc, ...item.data];
@@ -72,6 +72,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
                         fullAnswerBottomText={fullAnswerBottomText}
                         imageAltText={imageAltText}
                         locale={locale as LocaleType}
+                        removedOrderBtn={!!removeOrderBtn}
                     />
                     <HelpfullAnswerSection
                         questionLikes={questionLikes}

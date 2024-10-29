@@ -21,6 +21,7 @@ export const ListContentItem = ({
     const { text, title, type } = item;
 
     const listStyle = type === "list" ? "list-disc ml-6" : "";
+
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
             <div>

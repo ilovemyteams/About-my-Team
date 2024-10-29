@@ -12,6 +12,7 @@ interface OrderCardProps {
     fullAnswerBottomText?: string[];
     imageAltText: string;
     locale: LocaleType;
+    removedOrderBtn: boolean;
 }
 
 export const OrderCard = ({
@@ -19,6 +20,7 @@ export const OrderCard = ({
     fullAnswerBottomText,
     imageAltText,
     locale,
+    removedOrderBtn,
 }: OrderCardProps) => {
     return (
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
@@ -51,9 +53,11 @@ export const OrderCard = ({
                 ) : (
                     ""
                 )}
-                <div className="mx-auto tab:ml-0 tab:mr-auto">
-                    <WriteUs />
-                </div>
+                {!removedOrderBtn && (
+                    <div className="mx-auto tab:ml-0 tab:mr-auto">
+                        <WriteUs />
+                    </div>
+                )}
             </div>
         </PageSection>
     );

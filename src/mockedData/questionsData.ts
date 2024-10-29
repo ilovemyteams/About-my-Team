@@ -2,8 +2,8 @@ export type QADataType = {
     slug: string;
     image: string;
     likes: number;
-    answerTopImage?: string;
     answerOrderImage?: string;
+    removeOrderBtn?: boolean;
 };
 export type TextItemType = {
     title: string;
@@ -52,8 +52,6 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=15mebCQZv4FAgQYinrxpVGDljlHsSWflz",
             likes: 0,
 
-            answerTopImage:
-                "https://drive.google.com/uc?export=view&id=1cib9jXgxFKaQ6-qOS24vVKL0RZKoyAIG",
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij",
         },
@@ -274,8 +272,7 @@ export const questionsData: QAItemType[] = [
             slug: "what-to-choose-a-landing-page-or-a-website",
             image: "https://drive.google.com/uc?export=view&id=1o9hzaeKZBawBuDxNSK4SUXpgoG8YiaGN",
             likes: 0,
-            answerTopImage:
-                "https://drive.google.com/uc?export=view&id=14JI0UQmev0qgPWlc53WK9YwhlEzOoFYQ",
+
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=13THxu-gcpA6q0JDh7Gic_zmWCv2Jr-Fu",
         },
@@ -547,8 +544,7 @@ export const questionsData: QAItemType[] = [
             slug: "what-are-the-terms-of-the-development-of-the-fully-functional-website",
             image: "https://drive.google.com/uc?export=view&id=1jnZ9vPmhZchmQY6eeJklz_8bvQM2a9b4",
             likes: 0,
-            answerTopImage:
-                "https://drive.google.com/uc?export=view&id=1m0w27e1oRMxDVy1n1X0hYlPrgQ3C3P8o",
+
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1v7Mje1IyYdmA0wBwa-b3lV2SHk4YLKyZ",
         },
@@ -796,7 +792,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 4,
+                    layout: 3,
                     title: "Крім базової структури сайту, є кілька важливих факторів, що можуть вплинути на загальну вартість:",
                     data: [
                         {
@@ -900,7 +896,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 4,
+                    layout: 3,
                     title: "Oprócz podstawowej struktury strony, kilka dodatkowych czynników może wpłynąć na całkowity koszt:",
                     data: [
                         {
@@ -980,7 +976,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 4,
+                    layout: 3,
                     title: "Beyond the basic website structure, several important factors can influence the total cost:",
                     data: [
                         {
@@ -1039,6 +1035,7 @@ export const questionsData: QAItemType[] = [
             slug: "can-i-choose-which-team-will-work-on-my-order",
             image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
             likes: 0,
+            removeOrderBtn: true,
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=15X1tdwWHNC7DXp-82g_h-kPY2GCfkSva",
         },
@@ -1280,7 +1277,9 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Tak, możesz wprowadzać zmiany w trakcie procesu tworzenia. To naturalna część każdego projektu, ponieważ w trakcie pracy mogą pojawiać się nowe pomysły, zmieniać cele biznesowe lub pojawiać się nowe wymagania techniczne. Należy jednak pamiętać, że wszelkie zmiany muszą być starannie uzgodnione, aby utrzymać kontrolę nad terminami, jakością produktu i budżetem.",
             ],
-            fullAnswerTopText: [""],
+            fullAnswerTopText: [
+                "Trudno uniknąć zmian w procesie rozwoju — są one normalną częścią procesu. Poniżej, dla lepszego zrozumienia, znajdą się bardziej szczegółowe informacje na temat wprowadzania zmian.",
+            ],
             fullAnswerContent: [
                 {
                     layout: 1,
@@ -1380,7 +1379,9 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Yes, you can make changes during the development process. This is a natural part of any project, as new ideas may arise, business goals may change, or new technical requirements may emerge. However, it's important to understand that any changes during development need to be carefully coordinated to maintain control over timelines, product quality, and budget.",
             ],
-            fullAnswerTopText: [""],
+            fullAnswerTopText: [
+                "Changes during the development process are hard to avoid — they are a normal part of the process. Below, you’ll find more detailed information about implementing changes for better understanding.",
+            ],
             fullAnswerContent: [
                 {
                     layout: 1,
@@ -1490,11 +1491,11 @@ export const questionsData: QAItemType[] = [
                 "Так, ми надаємо підтримку після запуску сайтів, які розробляємо, а також можемо допомогти з підтримкою вже наявних продуктів. Після завершення розробки та запуску проєкту важливо забезпечити його належне функціонування та оперативно реагувати на можливі проблеми, тому ми пропонуємо кілька варіантів підтримки.",
             ],
             fullAnswerTopText: [
-                "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми для вас розробляємо та підтримка ваших продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит. ",
+                "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми розробляємо для вас та підтримка ваших власних продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит.",
             ],
             fullAnswerContent: [
                 {
-                    layout: 5,
+                    layout: 4,
                     title: "Підтримка продуктів, які ми розробляємо",
                     data: [
                         {
@@ -1531,7 +1532,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 5,
+                    layout: 4,
                     title: "Підтримка наявних продуктів",
                     data: [
                         {
@@ -1562,7 +1563,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 6,
+                    layout: 5,
                     title: "Як замовити?",
                     data: [
                         {
@@ -1607,10 +1608,12 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Tak, zapewniamy wsparcie po uruchomieniu stron, które tworzymy, a także możemy pomóc w utrzymaniu istniejących produktów. Po zakończeniu rozwoju i uruchomieniu projektu ważne jest, aby zapewnić jego prawidłowe działanie i szybko reagować na ewentualne problemy, dlatego oferujemy kilka opcji wsparcia.",
             ],
-            fullAnswerTopText: [""],
+            fullAnswerTopText: [
+                "Poniżej opisujemy bardziej szczegółowo każdą z opcji wsparcia, a mianowicie wsparcie dla produktów, które opracowujemy dla Ciebie oraz wsparcie dla Twoich własnych produktów. Jesteśmy otwarci na dyskusje i jesteśmy przekonani, że znajdziemy rozwiązanie dla każdego zgłoszenia.",
+            ],
             fullAnswerContent: [
                 {
-                    layout: 5,
+                    layout: 4,
                     title: "Wsparcie produktów, które tworzymy",
                     data: [
                         {
@@ -1647,7 +1650,7 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 5,
+                    layout: 4,
                     title: "Wsparcie istniejących produktów",
                     data: [
                         {
@@ -1678,7 +1681,121 @@ export const questionsData: QAItemType[] = [
                     ],
                 },
                 {
-                    layout: 6,
+                    layout: 5,
+                    title: "",
+                    data: [
+                        {
+                            title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                            text: [
+                                {
+                                    type: "none",
+                                    text: [
+                                        "Oferujemy różne opcje wsparcia, które mogą obejmować:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Opłatę godzinową",
+                                    text: [
+                                        "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Abonament serwisowy",
+                                    text: [
+                                        " To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Jesteśmy gotowi pomóc Ci zarówno w rozwoju nowych produktów, jak i w utrzymaniu już istniejących, aby zapewnić ich niezawodne działanie i trwałość. Skontaktuj się z nami, aby uzyskać konsultację, a my przedstawimy szczegóły i formy współpracy.",
+            ],
+        },
+        en: {
+            questionText: "Do you provide post-launch support?",
+            imageAltText: "Do you provide post-launch support?",
+            shortAnswerText: [
+                "Yes, we provide post-launch support for the websites we develop, and can also assist with the maintenance of existing products. After the project is completed and launched, it is important to ensure its proper functioning and respond promptly to any issues. Therefore, we offer several support options.",
+            ],
+            fullAnswerTopText: [
+                "Below we describe each of the support options in more detail, namely support for products we develop for you and support for your own products. Please note that we are open to discussions and are confident that we can find options for each request.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Support for the products we develop",
+                    data: [
+                        {
+                            decorate: 1,
+                            type: "list",
+                            title: "For our clients who order website or online store development, we offer support services under an additional agreement. This allows you to be confident that after the product launch, it will continue to function correctly, and any technical issues or updates will be addressed promptly. As part of our support services, we offer:",
+                            text: [
+                                {
+                                    title: "Technical support",
+                                    text: [
+                                        "We ensure that your website operates smoothly, without crashes, and with the highest loading speed. If any technical issues arise, our team will quickly resolve them to maintain uninterrupted site performance.",
+                                    ],
+                                },
+                                {
+                                    title: "Updates and improvements",
+                                    text: [
+                                        "Technologies and tools are constantly changing, so it's important to keep your product up to date. We help integrate new features, fix bugs, and carry out security updates, as well as updates to frameworks and other components of the website.",
+                                    ],
+                                },
+                                {
+                                    title: "Security monitoring",
+                                    text: [
+                                        "After the launch, we can provide monitoring and protection for your website against potential threats such as hacker attacks, malware, or viruses. Regular security updates and server monitoring will help maintain a high level of protection.",
+                                    ],
+                                },
+                                {
+                                    title: "Performance optimization",
+                                    text: [
+                                        "Over time, your website may require additional optimization to improve loading speed, especially if you're adding new features or content. We can assist with configuration and optimization to ensure maximum efficiency and performance of your site.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Support for existing products",
+                    data: [
+                        {
+                            decorate: 2,
+                            type: "list",
+                            title: "If your website has already been launched and was developed by another company or team, we can also provide consultation and assistance with maintaining that product. In such cases, we assess whether we have specialists who are proficient in the necessary tools and frameworks to work with your product. After this evaluation, we can offer support options that include:",
+                            text: [
+                                {
+                                    title: "Analysis of the existing system",
+                                    text: [
+                                        "The first step will be to analyze how your website is configured, what technologies are used, and any weaknesses that may need attention.",
+                                    ],
+                                },
+                                {
+                                    title: "Improvement recommendations",
+                                    text: [
+                                        "After the analysis, we will provide recommendations for optimization, security, or functional improvements that will help your website perform better and more efficiently.",
+                                    ],
+                                },
+                                {
+                                    title: "Prompt support",
+                                    text: [
+                                        "If you encounter technical issues or need urgent fixes, we offer assistance to resolve them. This could involve server troubleshooting, code modifications, or updating plugins.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
                     title: "",
                     data: [
                         {
@@ -1712,12 +1829,6 @@ export const questionsData: QAItemType[] = [
             fullAnswerBottomText: [
                 "We are ready to assist you with both the development of new products and the maintenance of existing ones to ensure their reliable operation and longevity. Contact us for a consultation, and we'll provide more details and formats of cooperation!",
             ],
-        },
-        en: {
-            questionText: "",
-            imageAltText: "",
-            shortAnswerText: [""],
-            fullAnswerTopText: [""],
         },
     },
 ];
