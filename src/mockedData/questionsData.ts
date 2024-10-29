@@ -1682,7 +1682,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 5,
-                    title: "",
+                    title: "Jak zamówić?",
                     data: [
                         {
                             title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
@@ -1796,7 +1796,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 5,
-                    title: "",
+                    title: "How to order?",
                     data: [
                         {
                             title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",

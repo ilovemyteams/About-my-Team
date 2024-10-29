@@ -16,9 +16,14 @@ export const TableContentItem = ({
         <div>
             <div className="flex gap-2 mb-6 pc:mb-[113px] mt-6">
                 <div className="mt-[3px] w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
-                <h3 className="h-[50px] font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
-                    <HighlightText text={title} toBeHighlighted={searchTerm} />
-                </h3>
+                {title && (
+                    <h3 className="h-[50px] font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
+                        <HighlightText
+                            text={title}
+                            toBeHighlighted={searchTerm}
+                        />
+                    </h3>
+                )}
             </div>
             <ul>
                 {text.map((item, index) => (
@@ -38,7 +43,7 @@ export const TableContentItem = ({
                                     />
                                 ) : (
                                     <HighlightText
-                                        text={item.title}
+                                        text={item.title || ""}
                                         toBeHighlighted={searchTerm}
                                     />
                                 )}
