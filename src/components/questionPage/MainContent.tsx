@@ -4,6 +4,7 @@ import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { PageSection } from "../shared/PageSection";
 import { ListContent } from "./ListContent/ListContent";
+import { SpecificationContent } from "./SpecificationContent/SpecificationContent";
 import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
@@ -13,7 +14,7 @@ interface MainContentProps {
 
 export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
-        <PageSection className="pb-[32px] tab:pb-[100px]">
+        <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px]">
             {content.map((item, index) => (
                 <Fragment key={index}>
                     {item.layout === 1 && (
@@ -25,6 +26,13 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                     )}
                     {item.layout === 2 && (
                         <TableContent
+                            content={item.data}
+                            title={item.title}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                    {item.layout === 3 && (
+                        <SpecificationContent
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}
