@@ -59,7 +59,7 @@ export const Search = () => {
                     setIsInputFocused(true);
                 }}
                 onBlur={() => setIsInputFocused(false)}
-                className={`flex-grow h-[44px] text-purple-200 dark:text-grey placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
+                className={`flex-grow h-[44px] font-caviar text-baseb placeholder:text-baseb text-purple-200 dark:text-grey placeholder:text-greyLight dark:placeholder:text-grey focus:placeholder:text-purple-strokeFormLabel dark:focus:placeholder:text-purple-strokeFormLabel focus:outline-none bg-transparent`}
             />
 
             {(inputValue || isInputFocused) && (

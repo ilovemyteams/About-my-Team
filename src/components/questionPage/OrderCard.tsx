@@ -1,26 +1,24 @@
 import Image from "next/image";
 
-import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
-import { LocaleType } from "@/types/LocaleType";
-
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { PageSection } from "../shared/PageSection";
+import { HighlightText } from "../shared/Search/HighlightText";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 interface OrderCardProps {
     imageLink?: string;
     fullAnswerBottomText?: string[];
     imageAltText: string;
-    locale: LocaleType;
     removedOrderBtn: boolean;
+    searchTerm: string;
 }
 
 export const OrderCard = ({
     imageLink,
     fullAnswerBottomText,
     imageAltText,
-    locale,
     removedOrderBtn,
+    searchTerm,
 }: OrderCardProps) => {
     return (
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
@@ -38,20 +36,21 @@ export const OrderCard = ({
                 </div>
             )}
 
-            <div className=" flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
-                {fullAnswerBottomText ? (
+            <div className="flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
+                {fullAnswerBottomText && (
                     <div>
                         {fullAnswerBottomText.map((text, index) => (
                             <p
                                 key={index}
                                 className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
                             >
-                                {parseTextWithLink(text, locale)}
+                                <HighlightText
+                                    text={text}
+                                    toBeHighlighted={searchTerm}
+                                />
                             </p>
                         ))}
                     </div>
-                ) : (
-                    ""
                 )}
                 {!removedOrderBtn && (
                     <div className="mx-auto tab:ml-0 tab:mr-auto">

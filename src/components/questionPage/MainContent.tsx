@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 
 import type { LongAnswerListType } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
 
 import { PageSection } from "../shared/PageSection";
 import { ListContent } from "./ListContent/ListContent";
@@ -9,15 +8,10 @@ import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
     content: LongAnswerListType[];
-    locale: LocaleType;
     searchTerm: string;
 }
 
-export const MainContent = ({
-    content,
-    locale,
-    searchTerm,
-}: MainContentProps) => {
+export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
         <PageSection className="pb-[32px] tab:pb-[100px]">
             {content.map((item, index) => (
@@ -26,7 +20,6 @@ export const MainContent = ({
                         <ListContent
                             content={item.data}
                             title={item.title}
-                            locale={locale}
                             searchTerm={searchTerm}
                         />
                     )}

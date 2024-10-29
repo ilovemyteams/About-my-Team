@@ -18,12 +18,14 @@ export const searchFilteringForFAQ = (
     const shortAnswerText = cleanText(data.shortAnswerText.join(""));
     const fullAnswerTopText = cleanText(data.fullAnswerTopText?.join("") || "");
     const stepsTexts = cleanText(joinAnswerTexts(data.fullAnswerContent || []));
+    const bottomText = data.fullAnswerBottomText?.join("") || "";
 
     if (
         questionText.includes(lowerCasedSearchTerm) ||
         shortAnswerText.includes(lowerCasedSearchTerm) ||
         fullAnswerTopText.includes(lowerCasedSearchTerm) ||
-        stepsTexts.includes(lowerCasedSearchTerm)
+        stepsTexts.includes(lowerCasedSearchTerm) ||
+        bottomText.includes(lowerCasedSearchTerm)
     ) {
         return question;
     }

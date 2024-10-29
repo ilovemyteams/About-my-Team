@@ -1,5 +1,4 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { Text } from "./Text";
@@ -7,14 +6,12 @@ import { Text } from "./Text";
 interface ListContentItemsProps {
     item: LongAnswerListTypeItem;
     indx: number;
-    locale: LocaleType;
     searchTerm: string;
 }
 
 export const ListContentItem = ({
     item,
     indx,
-    locale,
     searchTerm,
 }: ListContentItemsProps) => {
     const { text, title, type } = item;
@@ -42,7 +39,6 @@ export const ListContentItem = ({
                             key={index}
                             text={text}
                             type={type}
-                            locale={locale}
                             searchTerm={searchTerm}
                         />
                     ))}

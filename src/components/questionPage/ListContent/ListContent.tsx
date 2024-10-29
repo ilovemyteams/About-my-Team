@@ -1,5 +1,4 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
 
 import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { LayoutTitle } from "../shared/LayoutTitle";
@@ -7,14 +6,13 @@ import { ListContentItem } from "./ListContentItem";
 
 interface ListContentProps {
     content: LongAnswerListTypeItem[];
-    locale: LocaleType;
+    activeSubList?: boolean;
     searchTerm: string;
     title?: string;
 }
 
 export const ListContent = ({
     content,
-    locale,
     searchTerm,
     title,
 }: ListContentProps) => {
@@ -28,7 +26,6 @@ export const ListContent = ({
                             key={i}
                             item={item}
                             indx={i}
-                            locale={locale}
                             searchTerm={searchTerm}
                         />
                     ))}

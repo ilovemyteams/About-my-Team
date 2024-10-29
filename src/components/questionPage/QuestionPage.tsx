@@ -62,7 +62,6 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
             {fullAnswerContent ? (
                 <>
                     <MainContent
-                        locale={locale as LocaleType}
                         content={fullAnswerContent}
                         searchTerm={searchTerm}
                     />
@@ -71,8 +70,8 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
                         imageLink={answerOrderImage}
                         fullAnswerBottomText={fullAnswerBottomText}
                         imageAltText={imageAltText}
-                        locale={locale as LocaleType}
                         removedOrderBtn={!!removeOrderBtn}
+                        searchTerm={searchTerm}
                     />
                     <HelpfullAnswerSection
                         questionLikes={questionLikes}
