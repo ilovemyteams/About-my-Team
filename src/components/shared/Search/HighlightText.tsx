@@ -20,7 +20,6 @@ export const HighlightText = ({
     isStripped = false,
 }: HighlightTextProps) => {
     const locale = useLocale() as LocaleType;
-    console.log(locale, "LOCALE");
 
     if (isInitial) {
         return (
