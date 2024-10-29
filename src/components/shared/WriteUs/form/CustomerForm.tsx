@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
-import { CustomField } from "../FormElements/CustomField";
-import { PolicyLabel } from "../FormElements/PolicyLabel";
-import { SubmitButton } from "../FormElements/SubmitButton";
+import { CustomField } from "../../FormElements/CustomField";
+import { PolicyLabel } from "../../FormElements/PolicyLabel";
+import { SubmitButton } from "../../FormElements/SubmitButton";
 
 export interface ValuesWriteUsFormType {
     name: string;

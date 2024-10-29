@@ -23,9 +23,9 @@ import { IconLinkedin } from "./Icons/IconLinkedin";
 import { IconShare } from "./Icons/IconShare";
 import { IconTelegram } from "./Icons/IconTelegram";
 import { IconWhatsapp } from "./Icons/IconWhatsapp";
-import { BgImagesDesktop } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "./Modals/modalBgImages/notificationModals/BgImagesDesktop";
+import { BgImagesMobile } from "./Modals/modalBgImages/notificationModals/BgImagesMobile";
+import { BgImagesTablet } from "./Modals/modalBgImages/notificationModals/BgImagesTablet";
 
 export const SharePopover = ({
     className,
