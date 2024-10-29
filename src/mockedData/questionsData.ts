@@ -563,10 +563,11 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    layout: 3,
+                    layout: 1,
                     data: [
                         {
                             title: "Підготовчий \nетап:",
+                            type: "list",
                             text: [
                                 "Збір первинних вимог до продукту від замовника;",
                                 "Обговорення вимог та деталей проєкту, узгодження специфікацій;",
@@ -576,7 +577,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Розробка \nта тестування:",
-
+                            type: "list",
                             text: [
                                 "Написання та затвердження вимог;",
                                 "Підготовка тестової документації;",
@@ -590,7 +591,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Завершальні роботи \nта запуск:",
-
+                            type: "list",
                             text: [
                                 "End-to-End тестування та розміщення продукту на сервері;",
                                 "Підготовка до запуску, налаштування хостингу, сертифікатів;",
@@ -599,7 +600,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Підтримка \nта розвиток:",
-
+                            type: "list",
                             text: [
                                 "Надання підтримки після запуску;",
                                 "Подальший розвиток сайту, додавання нового функціоналу та контенту.",
@@ -623,10 +624,12 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    layout: 3,
+                    layout: 1,
+
                     data: [
                         {
                             title: "Etap \nprzygotowawczy:",
+                            type: "list",
                             text: [
                                 "Zebranie od klienta wstępnych wymagań dotyczących produktu;",
                                 "Omówienie wymagań i szczegółów projektu, uzgodnienie specyfikacji;",
@@ -636,6 +639,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Rozwój \ni testowanie:",
+                            type: "list",
                             text: [
                                 "Pisanie i zatwierdzanie wymagań;",
                                 "Przygotowanie dokumentacji testowej;",
@@ -649,6 +653,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Prace końcowe \ni uruchomienie:",
+                            type: "list",
                             text: [
                                 "Testowanie End-to-End oraz umieszczenie produktu na serwerze;",
                                 "Przygotowanie do uruchomienia, konfiguracja hostingu, certyfikaty;",
@@ -657,6 +662,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Wsparcie \ni rozwój:",
+                            type: "list",
                             text: [
                                 "Zapewnienie wsparcia po uruchomieniu;",
                                 "Dalszy rozwój strony, dodawanie nowych funkcji i treści.",
@@ -682,10 +688,11 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerContent: [
                 {
-                    layout: 3,
+                    layout: 1,
                     data: [
                         {
                             title: "Preparation \nstage:",
+                            type: "list",
                             text: [
                                 "Collecting primary product requirements from the client;",
                                 "Discussing project details and aligning specifications;",
@@ -695,6 +702,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Development \nand testing:",
+                            type: "list",
                             text: [
                                 "Writing and approving requirements;",
                                 "Preparing test documentation;",
@@ -708,6 +716,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Final steps \nand launch:",
+                            type: "list",
                             text: [
                                 "End-to-End testing and placing the product on the server;",
                                 "Preparing for launch, setting up hosting, certificates;",
@@ -716,6 +725,7 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             title: "Support \nand development:",
+                            type: "list",
                             text: [
                                 "Providing post-launch support;",
                                 "Further development of the website, adding new functionality and content.",
@@ -734,6 +744,8 @@ export const questionsData: QAItemType[] = [
             slug: "how-much-does-development-cost",
             image: "https://drive.google.com/uc?export=view&id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
             likes: 0,
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1NeubYhCDgx-f3NmH8AsDGZHi48yHD0J-",
         },
         ua: {
             questionText: "Скільки коштує розробка?",
@@ -1155,10 +1167,11 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "",
+            image: "https://drive.google.com/uc?export=view&id=1DbKuVlDkkt9n-CveHBqHM5-Cq7bsoc60",
             likes: 0,
             slug: "can-i-make-changes-during-the-development-process",
-            answerOrderImage: "",
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1aB5nAWNw1xjSn7d-P2g_VuVvF69Lt7U-",
         },
         ua: {
             questionText: "Чи можу я внести зміни в процесі розробки?",
@@ -1461,9 +1474,12 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "",
+            image: "https://drive.google.com/uc?export=view&id=1r8QMsr0NS1u7Tke9lSuB1XD0sAOs6PYO",
             likes: 0,
             slug: "do-you-provide-post-launch-support",
+
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
         },
         ua: {
             questionText:

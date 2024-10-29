@@ -4,13 +4,13 @@ import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { TableContentItem } from "./TableContentItem";
 
-export const TableContent = ({
-    content,
-    searchTerm,
-}: {
+interface TableContentProps {
     content: LongAnswerListTypeItem[];
     searchTerm: string;
-}) => {
+    title?: string;
+}
+
+export const TableContent = ({ content, searchTerm }: TableContentProps) => {
     return (
         <div>
             <ul className=" list-none border-t border-purple-strokeLight dark:border-purple-stroke  tab:flex tab:flex-wrap pc:flex-nowrap tab:justify-center">

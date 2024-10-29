@@ -8,7 +8,6 @@ import { HighlightText } from "../../shared/Search/HighlightText";
 interface ListContentItemsProps {
     item: LongAnswerListTypeItem;
     indx: number;
-    listStyle: string;
     locale: LocaleType;
     searchTerm: string;
 }
@@ -16,11 +15,12 @@ interface ListContentItemsProps {
 export const ListContentItem = ({
     item,
     indx,
-    listStyle,
     locale,
     searchTerm,
 }: ListContentItemsProps) => {
-    const { text, title } = item;
+    const { text, title, type } = item;
+
+    const listStyle = type === "list" ? "list-disc ml-6" : "";
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
             <div>
@@ -30,9 +30,14 @@ export const ListContentItem = ({
             </div>
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
-                    <HighlightText text={title} toBeHighlighted={searchTerm} />
-                </h3>
+                {title && (
+                    <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
+                        <HighlightText
+                            text={title}
+                            toBeHighlighted={searchTerm}
+                        />
+                    </h3>
+                )}
                 <ul>
                     {text.map((text, index) => (
                         <Fragment key={index}>

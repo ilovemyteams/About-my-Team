@@ -42,7 +42,7 @@ export const QuestionHero = ({
                         src={pageImageUrl}
                         width={508}
                         height={340}
-                        className="object-fit w-full"
+                        className="object-fit w-full aspect-[1.5]"
                     />
                 </div>
             </div>

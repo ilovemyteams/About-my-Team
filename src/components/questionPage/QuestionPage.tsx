@@ -61,28 +61,23 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
             />
             {fullAnswerContent ? (
                 <>
-                    {fullAnswerContent.map(item => (
-                        <>
-                            <MainContent
-                                locale={locale as LocaleType}
-                                layout={item.layout}
-                                content={item.data}
-                                searchTerm={searchTerm}
-                            />
+                    <MainContent
+                        locale={locale as LocaleType}
+                        content={fullAnswerContent}
+                        searchTerm={searchTerm}
+                    />
 
-                            <OrderCard
-                                imageLink={answerOrderImage}
-                                fullAnswerBottomText={fullAnswerBottomText}
-                                imageAltText={imageAltText}
-                                locale={locale as LocaleType}
-                            />
-                            <HelpfullAnswerSection
-                                questionLikes={questionLikes}
-                                questionSlug={slug}
-                            />
-                            <CtaSectionAskUs />
-                        </>
-                    ))}
+                    <OrderCard
+                        imageLink={answerOrderImage}
+                        fullAnswerBottomText={fullAnswerBottomText}
+                        imageAltText={imageAltText}
+                        locale={locale as LocaleType}
+                    />
+                    <HelpfullAnswerSection
+                        questionLikes={questionLikes}
+                        questionSlug={slug}
+                    />
+                    <CtaSectionAskUs />
                 </>
             ) : (
                 <UnderConstruction />

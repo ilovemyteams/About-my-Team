@@ -28,7 +28,7 @@ export const OrderCard = ({
                     width={630}
                     height={362}
                     alt={imageAltText}
-                    className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%] desk:w-[54.6%] object-contain mt-0 mb-auto"
+                    className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%] desk:w-[54.6%] object-cover object-top mt-0 mb-auto aspect-[1.75]"
                 />
             ) : (
                 <div className="bg-CTAGradientLight dark:bg-CTAGradient tab:w-[50%] pc:min-w-[630px] pc:w-[58%] w-full min-h-[166px] tab:min-h-[206px] pc:min-h-[362px]">

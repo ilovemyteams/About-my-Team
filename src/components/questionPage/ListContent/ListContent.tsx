@@ -6,19 +6,16 @@ import { ListContentItem } from "./ListContentItem";
 
 interface ListContentProps {
     content: LongAnswerListTypeItem[];
-    activeSubList?: boolean;
     locale: LocaleType;
     searchTerm: string;
+    title?: string;
 }
 
 export const ListContent = ({
-    activeSubList = false,
     content,
     locale,
     searchTerm,
 }: ListContentProps) => {
-    const listStyle = activeSubList ? "list-disc ml-6" : "";
-
     return (
         <div className="flex flex-col tab:flex-row justify-start gap-8">
             <ol className="tab:max-w-[517px] pc:max-w-[688px] desk:max-w-[836px] flex flex-col gap-6 tab:gap-10 pc:gap-[60px]">
@@ -27,7 +24,6 @@ export const ListContent = ({
                         key={i}
                         item={item}
                         indx={i}
-                        listStyle={listStyle}
                         locale={locale}
                         searchTerm={searchTerm}
                     />
