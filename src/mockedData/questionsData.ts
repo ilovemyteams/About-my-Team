@@ -5,13 +5,9 @@ export type QADataType = {
     answerOrderImage?: string;
     removeOrderBtn?: boolean;
 };
-export type TextItemType = {
-    title: string;
-    text: string[];
-};
 
 export type ListTextItemType = {
-    type: "none" | "listItem";
+    type?: "none" | "listItem";
     title?: string;
     text: string[];
 };
@@ -20,7 +16,7 @@ export type LongAnswerListTypeItem = {
     title?: string;
     type?: "list";
     decorate?: number;
-    text: string[] | TextItemType[] | ListTextItemType[];
+    text: string[] | ListTextItemType[];
 };
 
 export type LongAnswerListType = {
@@ -1201,21 +1197,21 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     type: "listItem",
-                                    title: "Складність та обсяг змін",
+                                    title: "Складність та обсяг змін:",
                                     text: [
                                         "Чи ці зміни потребують повного перегляду поточних рішень, чи можуть бути реалізовані в межах наявного плану.",
                                     ],
                                 },
                                 {
                                     type: "listItem",
-                                    title: "Вплив на терміни виконання",
+                                    title: "Вплив на терміни виконання:",
                                     text: [
                                         "Зміни можуть вимагати додаткового часу на розробку та тестування, що може відтермінувати фінальну здачу проєкту.",
                                     ],
                                 },
                                 {
                                     type: "listItem",
-                                    title: "Вплив на бюджет",
+                                    title: "Вплив на бюджет:",
                                     text: [
                                         "Кожна зміна може потребувати додаткових ресурсів. Важливо провести оцінку вартості цих змін, щоб розуміти їх вплив на загальний бюджет проєкту.",
                                     ],

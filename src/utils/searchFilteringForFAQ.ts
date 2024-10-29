@@ -5,7 +5,6 @@ import type {
     LongAnswerListType,
     LongAnswerListTypeItem,
     QAItemType,
-    TextItemType,
 } from "../mockedData/questionsData";
 
 export const searchFilteringForFAQ = (
@@ -39,12 +38,7 @@ function cleanText(text: string): string {
 }
 
 function flattenText(
-    text:
-        | string
-        | string[]
-        | ListTextItemType[]
-        | TextItemType[]
-        | LongAnswerListTypeItem[]
+    text: string | string[] | ListTextItemType[] | LongAnswerListTypeItem[]
 ): string {
     if (typeof text === "string") {
         return text;
