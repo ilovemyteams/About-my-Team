@@ -2,7 +2,6 @@ import { getLocale } from "next-intl/server";
 import React from "react";
 
 import { QAItemType } from "@/src/mockedData/questionsData";
-import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import { getLikes } from "@/src/utils/likeDataHandler";
 import type { LocaleType } from "@/types/LocaleType";
@@ -35,11 +34,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
 
     const { image, answerOrderImage, slug, removeOrderBtn } = data;
 
-    const text = fullAnswerContent?.reduce((acc, item) => {
-        return [...acc, ...item.data];
-    }, [] as LongAnswerListTypeItem[]);
-
-    const fullAnswerTextString = getTextString(text);
+    const fullAnswerTextString = getTextString(fullAnswerContent);
 
     const allTexts = `${shortAnswerText} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 
