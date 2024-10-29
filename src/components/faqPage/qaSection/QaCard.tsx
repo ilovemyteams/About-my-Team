@@ -7,6 +7,7 @@ import {
     QADataType,
     QAItemLocalizationTextType,
 } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
 import { LikesTypes } from "@/src/utils/likeDataHandler";
 
@@ -39,7 +40,12 @@ export const QaCard = ({
         fullAnswerBottomText,
     } = localizationData;
 
-    const fullAnswerTextString = getTextString(fullAnswerContent);
+    const text = fullAnswerContent?.reduce((acc, item) => {
+        return [...acc, ...item.data];
+    }, [] as LongAnswerListTypeItem[]);
+
+    const fullAnswerTextString = getTextString(text);
+    // const fullAnswerTextString = getTextString(fullAnswerContent);
 
     const allTexts = `${shortAnswerText.join(" ")} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 

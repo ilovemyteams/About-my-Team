@@ -1,11 +1,11 @@
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { ListContentItem } from "./ListContentItem";
 
 interface ListContentProps {
-    content: LongAnswerListType[];
+    content: LongAnswerListTypeItem[];
     activeSubList?: boolean;
     locale: LocaleType;
     searchTerm: string;

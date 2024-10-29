@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 
@@ -8,7 +8,7 @@ export const TableContentItem = ({
     content,
     searchTerm,
 }: {
-    content: LongAnswerListType;
+    content: LongAnswerListTypeItem;
     searchTerm: string;
 }) => {
     const { title, text } = content;

@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 
 interface ListContentItemsProps {
-    item: LongAnswerListType;
+    item: LongAnswerListTypeItem;
     indx: number;
     listStyle: string;
     locale: LocaleType;

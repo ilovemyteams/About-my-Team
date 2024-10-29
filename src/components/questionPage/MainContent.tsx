@@ -1,6 +1,6 @@
 import React from "react";
 
-import type { LongAnswerListType } from "@/src/mockedData/questionsData";
+import type { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { PageSection } from "../shared/PageSection";
@@ -9,7 +9,7 @@ import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
     layout: number;
-    content: LongAnswerListType[];
+    content: LongAnswerListTypeItem[];
     locale: LocaleType;
     searchTerm: string;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { TableContentItem } from "./TableContentItem";
 
@@ -8,7 +8,7 @@ export const TableContent = ({
     content,
     searchTerm,
 }: {
-    content: LongAnswerListType[];
+    content: LongAnswerListTypeItem[];
     searchTerm: string;
 }) => {
     return (
