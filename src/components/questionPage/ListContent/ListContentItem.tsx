@@ -1,9 +1,8 @@
-import { Fragment } from "react";
-
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
+import { Text } from "./Text";
 
 interface ListContentItemsProps {
     item: LongAnswerListTypeItem;
@@ -19,8 +18,6 @@ export const ListContentItem = ({
     searchTerm,
 }: ListContentItemsProps) => {
     const { text, title, type } = item;
-
-    const listStyle = type === "list" ? "list-disc ml-6" : "";
 
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
@@ -41,19 +38,13 @@ export const ListContentItem = ({
                 )}
                 <ul>
                     {text.map((text, index) => (
-                        <Fragment key={index}>
-                            {typeof text === "string" && (
-                                <li className={listStyle}>
-                                    <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                                        <HighlightText
-                                            text={text}
-                                            toBeHighlighted={searchTerm}
-                                            locale={locale}
-                                        />
-                                    </p>
-                                </li>
-                            )}
-                        </Fragment>
+                        <Text
+                            key={index}
+                            text={text}
+                            type={type}
+                            locale={locale}
+                            searchTerm={searchTerm}
+                        />
                     ))}
                 </ul>
             </div>
