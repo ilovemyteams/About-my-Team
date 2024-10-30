@@ -774,7 +774,7 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
             likes: 0,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1NeubYhCDgx-f3NmH8AsDGZHi48yHD0J-",
+                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
         },
         ua: {
             questionText: "Скільки коштує розробка?",
@@ -1218,7 +1218,7 @@ export const questionsData: QAItemType[] = [
                     title: "Як відбувається процес внесення змін?",
                     data: [
                         {
-                            title: "Звернення \nдо менеджера",
+                            title: "Звернення \nдо Менеджера",
                             text: [
                                 "Перший крок — це звернутися до Менеджера, який керує розробкою вашого продукту. Менеджер координує всі етапи роботи та взаємодію команди, це та людина, яка допоможе вам зрозуміти, як найкраще впровадити зміни без шкоди для загальної концепції проєкту та в межах проговорених термінів та бюджету (якщо це можливо).",
                             ],
@@ -1256,7 +1256,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Оцінка впливу змін",
+                            title: "Оцінка \nвпливу змін",
                             text: [
                                 {
                                     type: "none",
@@ -1289,7 +1289,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Затвердження та реалізація змін",
+                            title: "Затвердження \nта реалізація змін",
                             text: [
                                 "Якщо ви вирішите продовжувати зі змінами, вони будуть внесені до плану робіт, і команда почне їх реалізацію. Після цього Менеджер слідкуватиме за тим, щоб нові вимоги були впроваджені коректно, без порушень в архітектурі проєкту або загальній функціональності продукту.",
                                 "Варто також пам'ятати, що залежно від обсягу змін, можуть з’явитися додаткові витрати на роботу команди. Для цього варто провести детальну оцінку бюджету, щоб уникнути несподіваних витрат.",
@@ -1319,13 +1319,13 @@ export const questionsData: QAItemType[] = [
                     title: "Jak przebiega proces wprowadzania zmian?",
                     data: [
                         {
-                            title: "Kontakt z Menedżerem",
+                            title: "Kontakt \nz Menedżerem",
                             text: [
                                 "Pierwszym krokiem jest skontaktowanie się z Menedżerem, który zarządza rozwojem produktu. Menedżer koordynuje wszystkie etapy pracy oraz interakcję zespół i jest osobą, która pomoże Ci zrozumieć, jak najlepiej wprowadzić zmiany, nie naruszając ogólnej koncepcji projektu, i czy można to zrobić w ramach ustalonych terminów i budżetu (jeśli to jest możliwe).",
                             ],
                         },
                         {
-                            title: "Dyskusja z zespołem deweloperskim",
+                            title: "Dyskusja z \nzespołem deweloperskim",
                             text: [
                                 {
                                     type: "none",
@@ -1357,7 +1357,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Ocena wpływu zmian",
+                            title: "Ocena \nwpływu zmian",
                             text: [
                                 {
                                     type: "none",
@@ -1393,7 +1393,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Zatwierdzenie i realizacja zmian",
+                            title: "Zatwierdzenie \ni realizacja zmian",
                             text: [
                                 "Jeśli zdecydujesz się kontynuować ze zmianami, zostaną one uwzględnione w planie pracy, a zespół rozpocznie ich realizację. Menedżer będzie monitorować, aby nowe wymagania zostały poprawnie wdrożone, bez naruszenia architektury projektu lub ogólnej funkcjonalności produktu.",
                                 "Należy również pamiętać, że w zależności od zakresu zmian, mogą pojawić się dodatkowe koszty związane z pracą zespołu. W tym celu warto przeprowadzić szczegółową estymację budżetu, aby uniknąć niespodziewanych kosztów.",
@@ -1421,13 +1421,13 @@ export const questionsData: QAItemType[] = [
                     title: "How does the change process work?",
                     data: [
                         {
-                            title: "Contacting the Manager",
+                            title: "Contacting \nthe Manager",
                             text: [
                                 "The first step is to contact the Manager who is leading the development of your product. The Manager coordinates all stages of the work and team interactions. This person will help you understand how to best implement the changes without disrupting the overall project concept and within the agreed timeline and budget (if possible).",
                             ],
                         },
                         {
-                            title: "Discussion with the development team",
+                            title: "Discussion with \nthe development team",
                             text: [
                                 {
                                     type: "none",
@@ -1459,7 +1459,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Change impact assessment",
+                            title: "Change \nimpact assessment",
                             text: [
                                 {
                                     type: "none",
@@ -1492,7 +1492,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Approval and implementation of changes",
+                            title: "Approval \nand implementation of changes",
                             text: [
                                 "If you decide to proceed with the changes, they will be added to the work plan, and the team will begin implementing them. Afterward, the Manager will ensure that the new requirements are integrated correctly, without disrupting the project's architecture or overall functionality.",
                                 "It's also important to note that, depending on the scope of the changes, there may be additional costs for the team's work. A detailed budget evaluation should be carried out to avoid unexpected expenses.",

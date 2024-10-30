@@ -4,11 +4,14 @@ import { ListTextItemType } from "@/src/mockedData/questionsData";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 
-interface BlockProps {
+interface TableContentTextProps {
     item: string | ListTextItemType;
     searchTerm: string;
 }
-export const Block = ({ item, searchTerm }: BlockProps) => {
+export const TableContentText = ({
+    item,
+    searchTerm,
+}: TableContentTextProps) => {
     if (typeof item === "string") {
         return (
             <li>
@@ -23,11 +26,19 @@ export const Block = ({ item, searchTerm }: BlockProps) => {
     return (
         <li className="mb-6">
             {title && (
-                <h4
-                    className={`${list !== "sublist" ? "min-h-[40px] tab:min-h-[46px] desk:min-h-[50px]" : ""} font-caviar text-lg mb-3 flex gap-2 desk:text-xl before:w-[20px] ${type === "listItem" ? "before:block" : "before:hidden"} before:h-[20px] before:shrink-0 before:bg-[url('/images/pencil&ruler.svg')] before:bg-no-repeat before:bg-contain before:bg-center`}
-                >
-                    <HighlightText text={title} toBeHighlighted={searchTerm} />
-                </h4>
+                <div className=" flex gap-2 mb-3">
+                    <div
+                        className={`${type === "listItem" ? "block" : "hidden"} w-[20px]  h-[20px] shrink-0 bg-[url('/images/pencil&ruler.svg')] bg-no-repeat bg-contain bg-center`}
+                    ></div>
+                    <h4
+                        className={`${list !== "sublist" ? "min-h-[40px] tab:min-h-[46px] desk:min-h-[50px]" : ""} font-caviar text-purple-200 dark:text-white-200 text-lg desk:text-xl`}
+                    >
+                        <HighlightText
+                            text={title}
+                            toBeHighlighted={searchTerm}
+                        />
+                    </h4>
+                </div>
             )}
             <ul
                 className={`${list === "sublist" ? "list-disc ml-12" : ""}  text-sm20 tab:text-base23 desk:text-lg25`}

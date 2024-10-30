@@ -4,17 +4,17 @@ import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 
-interface SpecificationContentProps {
+interface DescriptionListContentProps {
     content: LongAnswerListTypeItem[];
     searchTerm: string;
     title?: string;
 }
 
-export const SpecificationContent = ({
+export const DescriptionListContent = ({
     content,
     searchTerm,
     title,
-}: SpecificationContentProps) => {
+}: DescriptionListContentProps) => {
     return (
         <div>
             {title && (
