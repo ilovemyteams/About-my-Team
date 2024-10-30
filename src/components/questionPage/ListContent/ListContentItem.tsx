@@ -26,7 +26,7 @@ export const ListContentItem = ({
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
                 {title && (
-                    <h3 className="font-caviar text-lg tab:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
+                    <h3 className="font-caviar text-lg tab:text-2xlb pc:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
                         <HighlightText
                             text={title}
                             toBeHighlighted={searchTerm}
