@@ -43,44 +43,4 @@ export const Block = ({ item, searchTerm }: BlockProps) => {
             </ul>
         </li>
     );
-
-    // <li key={index} className="mb-6">
-    //                     <div className="flex gap-2 mb-3">
-    //                         {/* <Image
-    //                             src="/images/pencil&ruler.svg"
-    //                             alt="icon pencil and ruler"
-    //                             width={20}
-    //                             height={20}
-    //                         /> */}
-    //                         <h4 className={`font-caviar text-lg flex gap-2 desk:text-xl before:w-[20px] ${item. ===''}before: before:h-[20px] before:shrink-0 before:bg-[url('/images/pencil&ruler.svg')] before:bg-no-repeat before:bg-contain before:bg-center`}>
-    //                             {typeof item === "string" ? (
-    //                                 <HighlightText
-    //                                     text={item}
-    //                                     toBeHighlighted={searchTerm}
-    //                                 />
-    //                             ) : (
-    //                                 <HighlightText
-    //                                     text={item.title || ""}
-    //                                     toBeHighlighted={searchTerm}
-    //                                 />
-    //                             )}
-    //                         </h4>
-    //                     </div>
-    //                     {typeof item !== "string" && item.text && (
-    //                         <ul className=" list-disc ml-12 text-sm20 tab:text-base23 desk:text-lg25">
-    //                             {Array.isArray(item.text) ? (
-    //                                 item.text.map((subItem, i) => (
-
-    //                                 ))
-    //                             ) : (
-    //                                 <li>
-    //                                     <HighlightText
-    //                                         text={item.text}
-    //                                         toBeHighlighted={searchTerm}
-    //                                     />
-    //                                 </li>
-    //                             )}
-    //                         </ul>
-    //                     )}
-    //                 </li>
 };
