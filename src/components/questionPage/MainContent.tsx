@@ -3,8 +3,8 @@ import { Fragment } from "react";
 import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { PageSection } from "../shared/PageSection";
-import { ListContent } from "./ListContent/ListContent";
-import { SpecificationContent } from "./SpecificationContent/SpecificationContent";
+import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
+import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
@@ -18,7 +18,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
             {content.map((item, index) => (
                 <Fragment key={index}>
                     {item.layout === 1 && (
-                        <ListContent
+                        <NumberedListContent
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}
@@ -32,7 +32,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                         />
                     )}
                     {item.layout === 3 && (
-                        <SpecificationContent
+                        <DescriptionListContent
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}

@@ -8,6 +8,7 @@ export type QADataType = {
 
 export type ListTextItemType = {
     type?: "none" | "listItem";
+    list?: "sublist";
     title?: string;
     text: string[];
 };
@@ -293,6 +294,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Односторінковий сайт;",
                                         "Один промоційний або інформаційний екран;",
@@ -302,6 +305,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Швидкого запуску продукту або послуги;",
                                         "Рекламних кампаній;",
@@ -316,6 +321,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Складається з декількох сторінок, таких як головна, про нас, послуги, контакти тощо;",
                                         "Більш розгалужена структура та розширені можливості;",
@@ -324,6 +331,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Компаній, що пропонують  товари та послуги;",
                                         "Бізнесів, які хочуть представити детальну інформацію про свою діяльність;",
@@ -338,6 +347,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Має всі ті самі атрибути як і сайт-візитка;",
                                         "Дозволяє представити повний спектр продуктів або послуг, а також додаткові матеріали та ресурси;",
@@ -346,6 +357,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Побудови бренду компанії, залучення нових клієнтів і партнерів, допомагає підвищити конверсію відвідувачів у клієнтів, допомагає заміряти ефективність рекламних кампаній та має ще багато інших переваг.",
                                     ],
@@ -381,6 +394,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Strona jednostronicowa;",
                                         "Jeden ekran promocyjny lub informacyjny;",
@@ -390,6 +405,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Szybkiego wprowadzenia produktu lub usługi na rynek;",
                                         "Kampanii reklamowych;",
@@ -404,6 +421,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Składa się z kilku stron, takich jak strona główna, o nas, usługi, kontakty itd;",
                                         "Bardziej rozbudowana struktura i rozszerzone możliwości;",
@@ -412,6 +431,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Firm oferujących towary i usługi;",
                                         "Biznesów, które chcą dostarczać szczegółowych informacji na temat swojej działalności;",
@@ -426,6 +447,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Posiada wszystkie te same atrybuty, co strona wizytówka;",
                                         "Umożliwia zaprezentowanie pełnej gamy produktów lub usług, a także dodatkowych materiałów i zasobów;",
@@ -434,6 +457,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Budowania marki firmy, przyciąga nowych klientów i partnerów, pomaga zwiększyć konwersję odwiedzających na klientów, pomaga mierzyć skuteczność kampanii reklamowych oraz oferuje wiele innych korzyści.",
                                     ],
@@ -468,6 +493,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Single-page website;",
                                         "One promotional or informational screen;",
@@ -477,6 +504,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Quick launch of a product or service;",
                                         "Marketing campaigns;",
@@ -491,6 +520,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Consists of several pages, such as Home, About Us, Services, Contact, etc.;",
                                         "More detailed structure with expanded capabilities;",
@@ -499,6 +530,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Companies offering products and services;",
                                         "Businesses that want to provide detailed information about their activities;",
@@ -513,6 +546,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Includes all the features of a business card website;",
                                         "Allows you to present a full range of products or services, as well as additional materials and resources;",
@@ -521,6 +556,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Building the company's brand, attracting new clients and partners, increasing conversion rates from visitors to customers, measuring the effectiveness of marketing campaigns, and offering many other advantages.",
                                     ],
@@ -737,7 +774,7 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
             likes: 0,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1NeubYhCDgx-f3NmH8AsDGZHi48yHD0J-",
+                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
         },
         ua: {
             questionText: "Скільки коштує розробка?",
@@ -789,7 +826,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Крім базової структури сайту, є кілька важливих факторів, що можуть вплинути на загальну вартість:",
+                    title: "Крім базової структури сайту, є кілька важливих факторів, що можуть вплинути на загальну вартість",
                     data: [
                         {
                             title: "Дизайн",
@@ -893,7 +930,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Oprócz podstawowej struktury strony, kilka dodatkowych czynników może wpłynąć na całkowity koszt:",
+                    title: "Oprócz podstawowej struktury strony, kilka dodatkowych czynników może wpłynąć na całkowity koszt",
                     data: [
                         {
                             title: "Projekt graficzny",
@@ -919,8 +956,30 @@ export const questionsData: QAItemType[] = [
                                 "Strona powinna działać poprawnie na wszystkich urządzeniach — komputerach, tabletach i smartfonach. Może to wymagać dodatkowego wysiłku, aby zapewnić spójne doświadczenie użytkownika na różnych ekranach. Jeśli chcesz, aby strona była odpowiednio wyświetlana na różnych urządzeniach, koszt może wzrosnąć nawet trzykrotnie, ponieważ każdy ekran wymaga osobnego projektu, wdrożenia i testowania.",
                             ],
                         },
+                        {
+                            title: "Wielojęzyczność",
+                            text: [
+                                "Jeśli twój biznes działa w więcej niż jednym kraju, warto zainwestować w wersję anglojęzyczną lub od razu przygotować stronę w kilku językach. Każdy język ma swoje specyficzne wymagania, a tłumaczenie może wymagać modyfikacji układu graficznego. Ponadto wielojęzyczność komplikuje zarządzanie treścią, wymaga więcej czasu na tłumaczenia oraz testowanie treści (optymalizację SEO, zgodność tekstów z kontekstem biznesowym).",
+                            ],
+                        },
+                        {
+                            title: "Motywy kolorystyczne",
+                            text: [
+                                "Opracowanie zarówno jasnej, jak i ciemnej wersji strony podwaja koszt projektu, więc warto od razu zdecydować, czy chcesz obie wersje, czy tylko jedną.",
+                            ],
+                        },
+                        {
+                            title: "Integracje z systemami zarządzania",
+                            text: [
+                                "Jeśli twoja strona wymaga integracji z CRM, systemami księgowania produktów lub innymi usługami zewnętrznymi, również wpływa to na wycenę projektu w zależności od złożoności tych integracji.",
+                            ],
+                        },
                     ],
                 },
+            ],
+            fullAnswerBottomText: [
+                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki. Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
             ],
         },
         en: {
@@ -973,7 +1032,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Beyond the basic website structure, several important factors can influence the total cost:",
+                    title: "Beyond the basic website structure, several important factors can influence the total cost",
                     data: [
                         {
                             title: "Design",
@@ -1044,7 +1103,6 @@ export const questionsData: QAItemType[] = [
                 "Чи можу я самостійно обрати, яка команда працюватиме над моїм замовленням?",
             fullAnswerTopText: [
                 "Ми розуміємо, що кожен проєкт має свої унікальні вимоги, і тому надаємо гнучкість у виборі спеціалістів, щоб ви могли сформувати команду, яка найкраще відповідатиме вашим цілям та задачам.",
-                "Як це працює описано нижче.",
             ],
             fullAnswerContent: [
                 {
@@ -1085,7 +1143,6 @@ export const questionsData: QAItemType[] = [
                 "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
             fullAnswerTopText: [
                 "Rozumiemy, że każdy projekt ma swoje unikalne wymagania, dlatego dajemy możliwość elastycznego wyboru specjalistów, abyś mógł/mogła stworzyć zespół najlepiej dopasowany do Twoich celów i zadań.",
-                "Jak to działa, opisano poniżej.",
             ],
             fullAnswerContent: [
                 {
@@ -1125,7 +1182,6 @@ export const questionsData: QAItemType[] = [
             imageAltText: "Can I choose which team will work on my order?",
             fullAnswerTopText: [
                 "We understand that each project has its unique requirements, which is why we provide flexibility in choosing specialists so you can form a team that best meets your goals and objectives.",
-                "How it works is described below.",
             ],
             fullAnswerContent: [
                 {
@@ -1181,7 +1237,7 @@ export const questionsData: QAItemType[] = [
                     title: "Як відбувається процес внесення змін?",
                     data: [
                         {
-                            title: "Звернення \nдо менеджера",
+                            title: "Звернення \nдо Менеджера",
                             text: [
                                 "Перший крок — це звернутися до Менеджера, який керує розробкою вашого продукту. Менеджер координує всі етапи роботи та взаємодію команди, це та людина, яка допоможе вам зрозуміти, як найкраще впровадити зміни без шкоди для загальної концепції проєкту та в межах проговорених термінів та бюджету (якщо це можливо).",
                             ],
@@ -1219,7 +1275,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Оцінка впливу змін",
+                            title: "Оцінка \nвпливу змін",
                             text: [
                                 {
                                     type: "none",
@@ -1252,7 +1308,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Затвердження та реалізація змін",
+                            title: "Затвердження \nта реалізація змін",
                             text: [
                                 "Якщо ви вирішите продовжувати зі змінами, вони будуть внесені до плану робіт, і команда почне їх реалізацію. Після цього Менеджер слідкуватиме за тим, щоб нові вимоги були впроваджені коректно, без порушень в архітектурі проєкту або загальній функціональності продукту.",
                                 "Варто також пам'ятати, що залежно від обсягу змін, можуть з’явитися додаткові витрати на роботу команди. Для цього варто провести детальну оцінку бюджету, щоб уникнути несподіваних витрат.",
@@ -1282,13 +1338,13 @@ export const questionsData: QAItemType[] = [
                     title: "Jak przebiega proces wprowadzania zmian?",
                     data: [
                         {
-                            title: "Kontakt z Menedżerem",
+                            title: "Kontakt \nz Menedżerem",
                             text: [
                                 "Pierwszym krokiem jest skontaktowanie się z Menedżerem, który zarządza rozwojem produktu. Menedżer koordynuje wszystkie etapy pracy oraz interakcję zespół i jest osobą, która pomoże Ci zrozumieć, jak najlepiej wprowadzić zmiany, nie naruszając ogólnej koncepcji projektu, i czy można to zrobić w ramach ustalonych terminów i budżetu (jeśli to jest możliwe).",
                             ],
                         },
                         {
-                            title: "Dyskusja z zespołem deweloperskim",
+                            title: "Dyskusja z \nzespołem deweloperskim",
                             text: [
                                 {
                                     type: "none",
@@ -1320,7 +1376,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Ocena wpływu zmian",
+                            title: "Ocena \nwpływu zmian",
                             text: [
                                 {
                                     type: "none",
@@ -1356,7 +1412,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Zatwierdzenie i realizacja zmian",
+                            title: "Zatwierdzenie \ni realizacja zmian",
                             text: [
                                 "Jeśli zdecydujesz się kontynuować ze zmianami, zostaną one uwzględnione w planie pracy, a zespół rozpocznie ich realizację. Menedżer będzie monitorować, aby nowe wymagania zostały poprawnie wdrożone, bez naruszenia architektury projektu lub ogólnej funkcjonalności produktu.",
                                 "Należy również pamiętać, że w zależności od zakresu zmian, mogą pojawić się dodatkowe koszty związane z pracą zespołu. W tym celu warto przeprowadzić szczegółową estymację budżetu, aby uniknąć niespodziewanych kosztów.",
@@ -1384,13 +1440,13 @@ export const questionsData: QAItemType[] = [
                     title: "How does the change process work?",
                     data: [
                         {
-                            title: "Contacting the Manager",
+                            title: "Contacting \nthe Manager",
                             text: [
                                 "The first step is to contact the Manager who is leading the development of your product. The Manager coordinates all stages of the work and team interactions. This person will help you understand how to best implement the changes without disrupting the overall project concept and within the agreed timeline and budget (if possible).",
                             ],
                         },
                         {
-                            title: "Discussion with the development team",
+                            title: "Discussion with \nthe development team",
                             text: [
                                 {
                                     type: "none",
@@ -1422,7 +1478,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Change impact assessment",
+                            title: "Change \nimpact assessment",
                             text: [
                                 {
                                     type: "none",
@@ -1455,7 +1511,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Approval and implementation of changes",
+                            title: "Approval \nand implementation of changes",
                             text: [
                                 "If you decide to proceed with the changes, they will be added to the work plan, and the team will begin implementing them. Afterward, the Manager will ensure that the new requirements are integrated correctly, without disrupting the project's architecture or overall functionality.",
                                 "It's also important to note that, depending on the scope of the changes, there may be additional costs for the team's work. A detailed budget evaluation should be carried out to avoid unexpected expenses.",
@@ -1486,117 +1542,117 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Так, ми надаємо підтримку після запуску сайтів, які розробляємо, а також можемо допомогти з підтримкою вже наявних продуктів. Після завершення розробки та запуску проєкту важливо забезпечити його належне функціонування та оперативно реагувати на можливі проблеми, тому ми пропонуємо кілька варіантів підтримки.",
             ],
-            fullAnswerTopText: [
-                "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми розробляємо для вас та підтримка ваших власних продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит.",
-            ],
-            fullAnswerContent: [
-                {
-                    layout: 4,
-                    title: "Підтримка продуктів, які ми розробляємо",
-                    data: [
-                        {
-                            title: "Для наших клієнтів, які замовляють розробку вебсайту чи інтернет-магазину, ми пропонуємо послуги підтримки на умовах додаткового договору. Це дозволяє вам бути впевненими, що після запуску продукту він продовжуватиме працювати коректно, і будь-які технічні питання чи оновлення будуть вирішені вчасно. В рамках підтримки ми пропонуємо:",
-                            type: "list",
-                            decorate: 1,
-                            text: [
-                                {
-                                    title: "Технічну підтримку",
-                                    text: [
-                                        "Ми слідкуємо за тим, щоб ваш сайт працював стабільно, без збоїв та з найвищою швидкістю завантаження. У разі виникнення технічних проблем наша команда швидко вирішить їх і забезпечить безперебійне функціонування сайту.",
-                                    ],
-                                },
-                                {
-                                    title: "Оновлення та вдосконалення",
-                                    text: [
-                                        "Технології та інструменти постійно змінюються, тому важливо підтримувати ваш продукт в актуальному стані. Ми допоможемо інтегрувати нові функції, виправити помилки, а також провести оновлення системи безпеки, фреймворків та інших компонентів сайту.",
-                                    ],
-                                },
-                                {
-                                    title: "Контроль за безпекою",
-                                    text: [
-                                        "Після запуску ми можемо забезпечити моніторинг і захист вашого сайту від потенційних загроз, таких як хакерські атаки, шкідливі програми чи віруси. Регулярні оновлення безпеки та моніторинг серверів допоможуть забезпечити високий рівень захищеності.",
-                                    ],
-                                },
-                                {
-                                    title: "Оптимізація швидкодії",
-                                    text: [
-                                        "З часом ваш сайт може потребувати додаткової оптимізації для покращення швидкості завантаження, особливо якщо ви додаєте нові функції чи контент. Ми можемо допомогти з налаштуваннями та оптимізацією, щоб забезпечити максимальну ефективність роботи сайту.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 4,
-                    title: "Підтримка наявних продуктів",
-                    data: [
-                        {
-                            title: "Якщо ваш сайт уже запущений і був розроблений іншою компанією або командою, ми також можемо надати консультацію та допомогу з підтримкою цього продукту. У таких випадках ми оцінюємо, чи є у нас спеціалісти, які володіють необхідними інструментами та фреймворками, щоб працювати з вашим продуктом. Після цього ми можемо запропонувати варіанти підтримки, які включатимуть:",
-                            type: "list",
-                            decorate: 2,
-                            text: [
-                                {
-                                    title: "Аналіз наявної системи",
-                                    text: [
-                                        "Першим кроком буде здійснено аналіз того, як налаштований ваш сайт, які технології використовуються та які слабкі місця можуть вимагати уваги.",
-                                    ],
-                                },
-                                {
-                                    title: "Рекомендації щодо поліпшень",
-                                    text: [
-                                        " Після аналізу ми надамо рекомендації щодо оптимізації, безпеки або функціональних покращень, які допоможуть вашому сайту працювати краще та ефективніше.",
-                                    ],
-                                },
-                                {
-                                    title: "Оперативна підтримка",
-                                    text: [
-                                        "Якщо у вас виникають технічні проблеми чи необхідні термінові виправлення, ми надаємо допомогу з їх вирішенням. Це може бути вирішення проблем із сервером, внесення змін у код або оновлення плагінів.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 5,
-                    title: "Як замовити?",
-                    data: [
-                        {
-                            text: [
-                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого Менеджера. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
-                            ],
-                        },
-                        {
-                            text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Погодинну оплату",
-                                    text: [
-                                        "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Абонентське обслуговування",
-                                    text: [
-                                        "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-            fullAnswerBottomText: [
-                "Ми готові допомогти вам як із розробкою нових продуктів, так і з підтримкою вже наявних продуктів, щоб забезпечити їх надійну роботу та довговічність. Зв’яжіться з нами для отримання консультації та ми підкажемо  деталі та формати співпраці!",
-            ],
+            // fullAnswerTopText: [
+            //     "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми розробляємо для вас та підтримка ваших власних продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит.",
+            // ],
+            // fullAnswerContent: [
+            //     {
+            //         layout: 4,
+            //         title: "Підтримка продуктів, які ми розробляємо",
+            //         data: [
+            //             {
+            //                 title: "Для наших клієнтів, які замовляють розробку вебсайту чи інтернет-магазину, ми пропонуємо послуги підтримки на умовах додаткового договору. Це дозволяє вам бути впевненими, що після запуску продукту він продовжуватиме працювати коректно, і будь-які технічні питання чи оновлення будуть вирішені вчасно. В рамках підтримки ми пропонуємо:",
+            //                 type: "list",
+            //                 decorate: 1,
+            //                 text: [
+            //                     {
+            //                         title: "Технічну підтримку",
+            //                         text: [
+            //                             "Ми слідкуємо за тим, щоб ваш сайт працював стабільно, без збоїв та з найвищою швидкістю завантаження. У разі виникнення технічних проблем наша команда швидко вирішить їх і забезпечить безперебійне функціонування сайту.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Оновлення та вдосконалення",
+            //                         text: [
+            //                             "Технології та інструменти постійно змінюються, тому важливо підтримувати ваш продукт в актуальному стані. Ми допоможемо інтегрувати нові функції, виправити помилки, а також провести оновлення системи безпеки, фреймворків та інших компонентів сайту.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Контроль за безпекою",
+            //                         text: [
+            //                             "Після запуску ми можемо забезпечити моніторинг і захист вашого сайту від потенційних загроз, таких як хакерські атаки, шкідливі програми чи віруси. Регулярні оновлення безпеки та моніторинг серверів допоможуть забезпечити високий рівень захищеності.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Оптимізація швидкодії",
+            //                         text: [
+            //                             "З часом ваш сайт може потребувати додаткової оптимізації для покращення швидкості завантаження, особливо якщо ви додаєте нові функції чи контент. Ми можемо допомогти з налаштуваннями та оптимізацією, щоб забезпечити максимальну ефективність роботи сайту.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 4,
+            //         title: "Підтримка наявних продуктів",
+            //         data: [
+            //             {
+            //                 title: "Якщо ваш сайт уже запущений і був розроблений іншою компанією або командою, ми також можемо надати консультацію та допомогу з підтримкою цього продукту. У таких випадках ми оцінюємо, чи є у нас спеціалісти, які володіють необхідними інструментами та фреймворками, щоб працювати з вашим продуктом. Після цього ми можемо запропонувати варіанти підтримки, які включатимуть:",
+            //                 type: "list",
+            //                 decorate: 2,
+            //                 text: [
+            //                     {
+            //                         title: "Аналіз наявної системи",
+            //                         text: [
+            //                             "Першим кроком буде здійснено аналіз того, як налаштований ваш сайт, які технології використовуються та які слабкі місця можуть вимагати уваги.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Рекомендації щодо поліпшень",
+            //                         text: [
+            //                             " Після аналізу ми надамо рекомендації щодо оптимізації, безпеки або функціональних покращень, які допоможуть вашому сайту працювати краще та ефективніше.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Оперативна підтримка",
+            //                         text: [
+            //                             "Якщо у вас виникають технічні проблеми чи необхідні термінові виправлення, ми надаємо допомогу з їх вирішенням. Це може бути вирішення проблем із сервером, внесення змін у код або оновлення плагінів.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 5,
+            //         title: "Як замовити?",
+            //         data: [
+            //             {
+            //                 text: [
+            //                     "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого Менеджера. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
+            //                 ],
+            //             },
+            //             {
+            //                 text: [
+            //                     {
+            //                         type: "none",
+            //                         text: [
+            //                             "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Погодинну оплату",
+            //                         text: [
+            //                             "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Абонентське обслуговування",
+            //                         text: [
+            //                             "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            // ],
+            // fullAnswerBottomText: [
+            //     "Ми готові допомогти вам як із розробкою нових продуктів, так і з підтримкою вже наявних продуктів, щоб забезпечити їх надійну роботу та довговічність. Зв’яжіться з нами для отримання консультації та ми підкажемо  деталі та формати співпраці!",
+            // ],
         },
         pl: {
             questionText: "Czy zapewniacie wsparcie po uruchomieniu strony?",
@@ -1604,113 +1660,113 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Tak, zapewniamy wsparcie po uruchomieniu stron, które tworzymy, a także możemy pomóc w utrzymaniu istniejących produktów. Po zakończeniu rozwoju i uruchomieniu projektu ważne jest, aby zapewnić jego prawidłowe działanie i szybko reagować na ewentualne problemy, dlatego oferujemy kilka opcji wsparcia.",
             ],
-            fullAnswerTopText: [
-                "Poniżej opisujemy bardziej szczegółowo każdą z opcji wsparcia, a mianowicie wsparcie dla produktów, które opracowujemy dla Ciebie oraz wsparcie dla Twoich własnych produktów. Jesteśmy otwarci na dyskusje i jesteśmy przekonani, że znajdziemy rozwiązanie dla każdego zgłoszenia.",
-            ],
-            fullAnswerContent: [
-                {
-                    layout: 4,
-                    title: "Wsparcie produktów, które tworzymy",
-                    data: [
-                        {
-                            decorate: 1,
-                            type: "list",
-                            title: "Dla naszych klientów, którzy zamawiają stworzenie strony internetowej lub sklepu online, oferujemy usługi wsparcia na podstawie dodatkowej umowy. To pozwala mieć pewność, że po uruchomieniu produkt będzie działał poprawnie, a wszelkie kwestie techniczne lub aktualizacje zostaną rozwiązane na czas. W ramach wsparcia oferujemy:",
-                            text: [
-                                {
-                                    title: "Wsparcie techniczne.",
-                                    text: [
-                                        "Monitorujemy, aby Twoja strona działała stabilnie, bez zakłóceń i z najwyższą prędkością ładowania. W razie problemów technicznych nasz zespół szybko je rozwiąże, zapewniając sprawne funkcjonowanie strony",
-                                    ],
-                                },
-                                {
-                                    title: "Aktualizacje i ulepszenia",
-                                    text: [
-                                        "Technologie i narzędzia stale się zmieniają, dlatego ważne jest, aby Twój produkt był aktualizowany. Pomagamy zintegrować nowe funkcje, naprawić błędy oraz przeprowadzać aktualizacje systemów bezpieczeństwa, frameworków i innych elementów strony.",
-                                    ],
-                                },
-                                {
-                                    title: "Kontrola bezpieczeństwa",
-                                    text: [
-                                        " Po uruchomieniu możemy monitorować i chronić Twoją stronę przed potencjalnymi zagrożeniami, takimi jak ataki hakerskie, złośliwe oprogramowanie czy wirusy. Regularne aktualizacje bezpieczeństwa i monitoring serwerów zapewnią wysoki poziom bezpieczeństwa.",
-                                    ],
-                                },
-                                {
-                                    title: "Optymalizacja wydajności",
-                                    text: [
-                                        "Z czasem Twoja strona może wymagać dodatkowej optymalizacji w celu poprawy szybkości ładowania, zwłaszcza jeśli dodajesz nowe funkcje lub treści. Pomożemy z ustawieniami i optymalizacją, aby zapewnić maksymalną wydajność strony.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 4,
-                    title: "Wsparcie istniejących produktów",
-                    data: [
-                        {
-                            decorate: 2,
-                            type: "list",
-                            title: "Jeśli Twoja strona już działa i została stworzona przez inną firmę lub zespół, również możemy zaoferować konsultacje i pomoc w utrzymaniu tego produktu. W takich przypadkach oceniamy, czy posiadamy specjalistów, którzy znają niezbędne narzędzia i frameworki, aby pracować nad Twoim produktem. Następnie możemy zaproponować opcje wsparcia, które mogą obejmować:",
-                            text: [
-                                {
-                                    title: "Analizę istniejącego systemu",
-                                    text: [
-                                        " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
-                                    ],
-                                },
-                                {
-                                    title: "Rekomendacje dotyczące ulepszeń",
-                                    text: [
-                                        "Po analizie dostarczymy rekomendacje dotyczące optymalizacji, bezpieczeństwa lub funkcjonalnych ulepszeń, które pomogą stronie działać lepiej i wydajniej.",
-                                    ],
-                                },
-                                {
-                                    title: "Wsparcie operacyjne",
-                                    text: [
-                                        "Jeśli pojawią się problemy techniczne, lub konieczne są pilne poprawki, zapewniamy wsparcie w ich rozwiązaniu. Może to obejmować naprawę problemów z serwerem, wprowadzanie zmian w kodzie lub aktualizację wtyczek.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 5,
-                    title: "Jak zamówić?",
-                    data: [
-                        {
-                            title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
-                            text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "Oferujemy różne opcje wsparcia, które mogą obejmować:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Opłatę godzinową",
-                                    text: [
-                                        "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Abonament serwisowy",
-                                    text: [
-                                        " To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-            fullAnswerBottomText: [
-                "Jesteśmy gotowi pomóc Ci zarówno w rozwoju nowych produktów, jak i w utrzymaniu już istniejących, aby zapewnić ich niezawodne działanie i trwałość. Skontaktuj się z nami, aby uzyskać konsultację, a my przedstawimy szczegóły i formy współpracy.",
-            ],
+            // fullAnswerTopText: [
+            //     "Poniżej opisujemy bardziej szczegółowo każdą z opcji wsparcia, a mianowicie wsparcie dla produktów, które opracowujemy dla Ciebie oraz wsparcie dla Twoich własnych produktów. Jesteśmy otwarci na dyskusje i jesteśmy przekonani, że znajdziemy rozwiązanie dla każdego zgłoszenia.",
+            // ],
+            // fullAnswerContent: [
+            //     {
+            //         layout: 4,
+            //         title: "Wsparcie produktów, które tworzymy",
+            //         data: [
+            //             {
+            //                 decorate: 1,
+            //                 type: "list",
+            //                 title: "Dla naszych klientów, którzy zamawiają stworzenie strony internetowej lub sklepu online, oferujemy usługi wsparcia na podstawie dodatkowej umowy. To pozwala mieć pewność, że po uruchomieniu produkt będzie działał poprawnie, a wszelkie kwestie techniczne lub aktualizacje zostaną rozwiązane na czas. W ramach wsparcia oferujemy:",
+            //                 text: [
+            //                     {
+            //                         title: "Wsparcie techniczne.",
+            //                         text: [
+            //                             "Monitorujemy, aby Twoja strona działała stabilnie, bez zakłóceń i z najwyższą prędkością ładowania. W razie problemów technicznych nasz zespół szybko je rozwiąże, zapewniając sprawne funkcjonowanie strony",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Aktualizacje i ulepszenia",
+            //                         text: [
+            //                             "Technologie i narzędzia stale się zmieniają, dlatego ważne jest, aby Twój produkt był aktualizowany. Pomagamy zintegrować nowe funkcje, naprawić błędy oraz przeprowadzać aktualizacje systemów bezpieczeństwa, frameworków i innych elementów strony.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Kontrola bezpieczeństwa",
+            //                         text: [
+            //                             " Po uruchomieniu możemy monitorować i chronić Twoją stronę przed potencjalnymi zagrożeniami, takimi jak ataki hakerskie, złośliwe oprogramowanie czy wirusy. Regularne aktualizacje bezpieczeństwa i monitoring serwerów zapewnią wysoki poziom bezpieczeństwa.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Optymalizacja wydajności",
+            //                         text: [
+            //                             "Z czasem Twoja strona może wymagać dodatkowej optymalizacji w celu poprawy szybkości ładowania, zwłaszcza jeśli dodajesz nowe funkcje lub treści. Pomożemy z ustawieniami i optymalizacją, aby zapewnić maksymalną wydajność strony.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 4,
+            //         title: "Wsparcie istniejących produktów",
+            //         data: [
+            //             {
+            //                 decorate: 2,
+            //                 type: "list",
+            //                 title: "Jeśli Twoja strona już działa i została stworzona przez inną firmę lub zespół, również możemy zaoferować konsultacje i pomoc w utrzymaniu tego produktu. W takich przypadkach oceniamy, czy posiadamy specjalistów, którzy znają niezbędne narzędzia i frameworki, aby pracować nad Twoim produktem. Następnie możemy zaproponować opcje wsparcia, które mogą obejmować:",
+            //                 text: [
+            //                     {
+            //                         title: "Analizę istniejącego systemu",
+            //                         text: [
+            //                             " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Rekomendacje dotyczące ulepszeń",
+            //                         text: [
+            //                             "Po analizie dostarczymy rekomendacje dotyczące optymalizacji, bezpieczeństwa lub funkcjonalnych ulepszeń, które pomogą stronie działać lepiej i wydajniej.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Wsparcie operacyjne",
+            //                         text: [
+            //                             "Jeśli pojawią się problemy techniczne, lub konieczne są pilne poprawki, zapewniamy wsparcie w ich rozwiązaniu. Może to obejmować naprawę problemów z serwerem, wprowadzanie zmian w kodzie lub aktualizację wtyczek.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 5,
+            //         title: "Jak zamówić?",
+            //         data: [
+            //             {
+            //                 title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+            //                 text: [
+            //                     {
+            //                         type: "none",
+            //                         text: [
+            //                             "Oferujemy różne opcje wsparcia, które mogą obejmować:",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Opłatę godzinową",
+            //                         text: [
+            //                             "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Abonament serwisowy",
+            //                         text: [
+            //                             " To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            // ],
+            // fullAnswerBottomText: [
+            //     "Jesteśmy gotowi pomóc Ci zarówno w rozwoju nowych produktów, jak i w utrzymaniu już istniejących, aby zapewnić ich niezawodne działanie i trwałość. Skontaktuj się z nami, aby uzyskać konsultację, a my przedstawimy szczegóły i formy współpracy.",
+            // ],
         },
         en: {
             questionText: "Do you provide post-launch support?",
@@ -1718,113 +1774,113 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Yes, we provide post-launch support for the websites we develop, and can also assist with the maintenance of existing products. After the project is completed and launched, it is important to ensure its proper functioning and respond promptly to any issues. Therefore, we offer several support options.",
             ],
-            fullAnswerTopText: [
-                "Below we describe each of the support options in more detail, namely support for products we develop for you and support for your own products. Please note that we are open to discussions and are confident that we can find options for each request.",
-            ],
-            fullAnswerContent: [
-                {
-                    layout: 4,
-                    title: "Support for the products we develop",
-                    data: [
-                        {
-                            decorate: 1,
-                            type: "list",
-                            title: "For our clients who order website or online store development, we offer support services under an additional agreement. This allows you to be confident that after the product launch, it will continue to function correctly, and any technical issues or updates will be addressed promptly. As part of our support services, we offer:",
-                            text: [
-                                {
-                                    title: "Technical support",
-                                    text: [
-                                        "We ensure that your website operates smoothly, without crashes, and with the highest loading speed. If any technical issues arise, our team will quickly resolve them to maintain uninterrupted site performance.",
-                                    ],
-                                },
-                                {
-                                    title: "Updates and improvements",
-                                    text: [
-                                        "Technologies and tools are constantly changing, so it's important to keep your product up to date. We help integrate new features, fix bugs, and carry out security updates, as well as updates to frameworks and other components of the website.",
-                                    ],
-                                },
-                                {
-                                    title: "Security monitoring",
-                                    text: [
-                                        "After the launch, we can provide monitoring and protection for your website against potential threats such as hacker attacks, malware, or viruses. Regular security updates and server monitoring will help maintain a high level of protection.",
-                                    ],
-                                },
-                                {
-                                    title: "Performance optimization",
-                                    text: [
-                                        "Over time, your website may require additional optimization to improve loading speed, especially if you're adding new features or content. We can assist with configuration and optimization to ensure maximum efficiency and performance of your site.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 4,
-                    title: "Support for existing products",
-                    data: [
-                        {
-                            decorate: 2,
-                            type: "list",
-                            title: "If your website has already been launched and was developed by another company or team, we can also provide consultation and assistance with maintaining that product. In such cases, we assess whether we have specialists who are proficient in the necessary tools and frameworks to work with your product. After this evaluation, we can offer support options that include:",
-                            text: [
-                                {
-                                    title: "Analysis of the existing system",
-                                    text: [
-                                        "The first step will be to analyze how your website is configured, what technologies are used, and any weaknesses that may need attention.",
-                                    ],
-                                },
-                                {
-                                    title: "Improvement recommendations",
-                                    text: [
-                                        "After the analysis, we will provide recommendations for optimization, security, or functional improvements that will help your website perform better and more efficiently.",
-                                    ],
-                                },
-                                {
-                                    title: "Prompt support",
-                                    text: [
-                                        "If you encounter technical issues or need urgent fixes, we offer assistance to resolve them. This could involve server troubleshooting, code modifications, or updating plugins.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: 5,
-                    title: "How to order?",
-                    data: [
-                        {
-                            title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
-                            text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "We offer various support options, which may include:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Hourly payment",
-                                    text: [
-                                        "Ideal if you need support for short-term tasks or fixing specific issues.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Subscription service",
-                                    text: [
-                                        "This option is for those who require regular monitoring, updates, and long-term support.",
-                                    ],
-                                },
-                            ],
-                        },
-                    ],
-                },
-            ],
-            fullAnswerBottomText: [
-                "We are ready to assist you with both the development of new products and the maintenance of existing ones to ensure their reliable operation and longevity. Contact us for a consultation, and we'll provide more details and formats of cooperation!",
-            ],
+            // fullAnswerTopText: [
+            //     "Below we describe each of the support options in more detail, namely support for products we develop for you and support for your own products. Please note that we are open to discussions and are confident that we can find options for each request.",
+            // ],
+            // fullAnswerContent: [
+            //     {
+            //         layout: 4,
+            //         title: "Support for the products we develop",
+            //         data: [
+            //             {
+            //                 decorate: 1,
+            //                 type: "list",
+            //                 title: "For our clients who order website or online store development, we offer support services under an additional agreement. This allows you to be confident that after the product launch, it will continue to function correctly, and any technical issues or updates will be addressed promptly. As part of our support services, we offer:",
+            //                 text: [
+            //                     {
+            //                         title: "Technical support",
+            //                         text: [
+            //                             "We ensure that your website operates smoothly, without crashes, and with the highest loading speed. If any technical issues arise, our team will quickly resolve them to maintain uninterrupted site performance.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Updates and improvements",
+            //                         text: [
+            //                             "Technologies and tools are constantly changing, so it's important to keep your product up to date. We help integrate new features, fix bugs, and carry out security updates, as well as updates to frameworks and other components of the website.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Security monitoring",
+            //                         text: [
+            //                             "After the launch, we can provide monitoring and protection for your website against potential threats such as hacker attacks, malware, or viruses. Regular security updates and server monitoring will help maintain a high level of protection.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Performance optimization",
+            //                         text: [
+            //                             "Over time, your website may require additional optimization to improve loading speed, especially if you're adding new features or content. We can assist with configuration and optimization to ensure maximum efficiency and performance of your site.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 4,
+            //         title: "Support for existing products",
+            //         data: [
+            //             {
+            //                 decorate: 2,
+            //                 type: "list",
+            //                 title: "If your website has already been launched and was developed by another company or team, we can also provide consultation and assistance with maintaining that product. In such cases, we assess whether we have specialists who are proficient in the necessary tools and frameworks to work with your product. After this evaluation, we can offer support options that include:",
+            //                 text: [
+            //                     {
+            //                         title: "Analysis of the existing system",
+            //                         text: [
+            //                             "The first step will be to analyze how your website is configured, what technologies are used, and any weaknesses that may need attention.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Improvement recommendations",
+            //                         text: [
+            //                             "After the analysis, we will provide recommendations for optimization, security, or functional improvements that will help your website perform better and more efficiently.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         title: "Prompt support",
+            //                         text: [
+            //                             "If you encounter technical issues or need urgent fixes, we offer assistance to resolve them. This could involve server troubleshooting, code modifications, or updating plugins.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            //     {
+            //         layout: 5,
+            //         title: "How to order?",
+            //         data: [
+            //             {
+            //                 title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+            //                 text: [
+            //                     {
+            //                         type: "none",
+            //                         text: [
+            //                             "We offer various support options, which may include:",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Hourly payment",
+            //                         text: [
+            //                             "Ideal if you need support for short-term tasks or fixing specific issues.",
+            //                         ],
+            //                     },
+            //                     {
+            //                         type: "listItem",
+            //                         title: "Subscription service",
+            //                         text: [
+            //                             "This option is for those who require regular monitoring, updates, and long-term support.",
+            //                         ],
+            //                     },
+            //                 ],
+            //             },
+            //         ],
+            //     },
+            // ],
+            // fullAnswerBottomText: [
+            //     "We are ready to assist you with both the development of new products and the maintenance of existing ones to ensure their reliable operation and longevity. Contact us for a consultation, and we'll provide more details and formats of cooperation!",
+            // ],
         },
     },
 ];
