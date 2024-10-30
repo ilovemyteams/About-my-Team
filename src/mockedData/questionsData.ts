@@ -8,6 +8,7 @@ export type QADataType = {
 
 export type ListTextItemType = {
     type?: "none" | "listItem";
+    list?: "sublist";
     title?: string;
     text: string[];
 };
@@ -293,6 +294,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Односторінковий сайт;",
                                         "Один промоційний або інформаційний екран;",
@@ -302,6 +305,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Швидкого запуску продукту або послуги;",
                                         "Рекламних кампаній;",
@@ -316,6 +321,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Складається з декількох сторінок, таких як головна, про нас, послуги, контакти тощо;",
                                         "Більш розгалужена структура та розширені можливості;",
@@ -324,6 +331,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Компаній, що пропонують  товари та послуги;",
                                         "Бізнесів, які хочуть представити детальну інформацію про свою діяльність;",
@@ -338,6 +347,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Ключові особливості:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Має всі ті самі атрибути як і сайт-візитка;",
                                         "Дозволяє представити повний спектр продуктів або послуг, а також додаткові матеріали та ресурси;",
@@ -346,6 +357,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ідеально підходить для:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Побудови бренду компанії, залучення нових клієнтів і партнерів, допомагає підвищити конверсію відвідувачів у клієнтів, допомагає заміряти ефективність рекламних кампаній та має ще багато інших переваг.",
                                     ],
@@ -381,6 +394,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Strona jednostronicowa;",
                                         "Jeden ekran promocyjny lub informacyjny;",
@@ -390,6 +405,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Szybkiego wprowadzenia produktu lub usługi na rynek;",
                                         "Kampanii reklamowych;",
@@ -404,6 +421,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Składa się z kilku stron, takich jak strona główna, o nas, usługi, kontakty itd;",
                                         "Bardziej rozbudowana struktura i rozszerzone możliwości;",
@@ -412,6 +431,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Firm oferujących towary i usługi;",
                                         "Biznesów, które chcą dostarczać szczegółowych informacji na temat swojej działalności;",
@@ -426,6 +447,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Kluczowe cechy:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Posiada wszystkie te same atrybuty, co strona wizytówka;",
                                         "Umożliwia zaprezentowanie pełnej gamy produktów lub usług, a także dodatkowych materiałów i zasobów;",
@@ -434,6 +457,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Idealna do:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Budowania marki firmy, przyciąga nowych klientów i partnerów, pomaga zwiększyć konwersję odwiedzających na klientów, pomaga mierzyć skuteczność kampanii reklamowych oraz oferuje wiele innych korzyści.",
                                     ],
@@ -468,6 +493,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Single-page website;",
                                         "One promotional or informational screen;",
@@ -477,6 +504,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Quick launch of a product or service;",
                                         "Marketing campaigns;",
@@ -491,6 +520,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Consists of several pages, such as Home, About Us, Services, Contact, etc.;",
                                         "More detailed structure with expanded capabilities;",
@@ -499,6 +530,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Companies offering products and services;",
                                         "Businesses that want to provide detailed information about their activities;",
@@ -513,6 +546,8 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     title: "Key features:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Includes all the features of a business card website;",
                                         "Allows you to present a full range of products or services, as well as additional materials and resources;",
@@ -521,6 +556,8 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     title: "Ideal for:",
+                                    type: "listItem",
+                                    list: "sublist",
                                     text: [
                                         "Building the company's brand, attracting new clients and partners, increasing conversion rates from visitors to customers, measuring the effectiveness of marketing campaigns, and offering many other advantages.",
                                     ],
@@ -789,7 +826,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Крім базової структури сайту, є кілька важливих факторів, що можуть вплинути на загальну вартість:",
+                    title: "Крім базової структури сайту, є кілька важливих факторів, що можуть вплинути на загальну вартість",
                     data: [
                         {
                             title: "Дизайн",
@@ -893,7 +930,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Oprócz podstawowej struktury strony, kilka dodatkowych czynników może wpłynąć na całkowity koszt:",
+                    title: "Oprócz podstawowej struktury strony, kilka dodatkowych czynników może wpłynąć na całkowity koszt",
                     data: [
                         {
                             title: "Projekt graficzny",
@@ -973,7 +1010,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Beyond the basic website structure, several important factors can influence the total cost:",
+                    title: "Beyond the basic website structure, several important factors can influence the total cost",
                     data: [
                         {
                             title: "Design",
