@@ -1143,7 +1143,6 @@ export const questionsData: QAItemType[] = [
                 "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
             fullAnswerTopText: [
                 "Rozumiemy, że każdy projekt ma swoje unikalne wymagania, dlatego dajemy możliwość elastycznego wyboru specjalistów, abyś mógł/mogła stworzyć zespół najlepiej dopasowany do Twoich celów i zadań.",
-                "Jak to działa, opisano poniżej.",
             ],
             fullAnswerContent: [
                 {
@@ -1183,7 +1182,6 @@ export const questionsData: QAItemType[] = [
             imageAltText: "Can I choose which team will work on my order?",
             fullAnswerTopText: [
                 "We understand that each project has its unique requirements, which is why we provide flexibility in choosing specialists so you can form a team that best meets your goals and objectives.",
-                "How it works is described below.",
             ],
             fullAnswerContent: [
                 {
