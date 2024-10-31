@@ -5,7 +5,7 @@ import { JoinUsButton } from "../shared/JoinUsButton";
 import { Section } from "../shared/Section";
 
 const TEAM_TOGETHER_PHOTO =
-    "https://drive.google.com/uc?export=view&id=1h1dHHenQ3cC63GLcA6KFe-UgIrZUWfzc";
+    "https://drive.google.com/uc?export=view&id=1n5hpC_COy1tUvAS8AyTahI_n1YuNA5fp";
 
 export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");

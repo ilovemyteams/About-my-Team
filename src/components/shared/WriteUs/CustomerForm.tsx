@@ -83,7 +83,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 isSubmitting,
             }) => {
                 return (
-                    <Form className="flex flex-col items-center relative z-[21] pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
+                    <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
                         <CustomField
                             name="name"
                             value={values.name}

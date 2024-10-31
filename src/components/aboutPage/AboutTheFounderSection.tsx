@@ -2,6 +2,7 @@ import { ScrollShadow } from "@nextui-org/react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import { IconHeartWeb } from "../shared/Icons/IconHeartWeb";
 import { Section } from "../shared/Section";
 
 const SUSANNAS_PHOTO_LINK =
@@ -46,13 +47,7 @@ export const AboutTheFounderSection = () => {
                         <p className="mb-6 pc:mb-10">
                             {getTranslation("aboutOwnerP5")}
                         </p>
-                        <Image
-                            src="/images/pumpkin.png"
-                            alt="pumpkin"
-                            width={60}
-                            height={60}
-                            className="ml-auto mr-0 tab:w-[96px] tab:h-auto opacity-[0.5]"
-                        />
+                        <IconHeartWeb className="dark:text-purple-stroke text-purple-strokeLight ml-auto mr-0 tab:w-[96px] tab:h-auto" />
                     </ScrollShadow>
                 </div>
             </div>
