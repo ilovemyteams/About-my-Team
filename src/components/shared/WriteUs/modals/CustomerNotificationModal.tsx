@@ -7,19 +7,29 @@ interface CustomerNotificationModalProps {
     isError: boolean;
     isShown: boolean;
     closeNotification: () => void;
+    successCloseFn: () => void;
 }
 
 export const CustomerNotificationModal = ({
     closeNotification,
     isError,
     isShown,
+    successCloseFn,
 }: CustomerNotificationModalProps) => {
     const errorShown = isError && isShown;
     const successShown = !isError && isShown;
+
+    const onCloseSuccessModal = () => {
+        closeNotification();
+        successCloseFn();
+    };
     return (
         <>
             <ErrorModal closeFn={closeNotification} isShown={errorShown} />
-            <SuccessModal closeFn={closeNotification} isShown={successShown} />
+            <SuccessModal
+                closeFn={onCloseSuccessModal}
+                isShown={successShown}
+            />
         </>
     );
 };

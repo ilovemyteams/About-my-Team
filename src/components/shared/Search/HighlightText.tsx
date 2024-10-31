@@ -11,7 +11,7 @@ type HighlightTextProps = {
     isStripped?: boolean;
 };
 
-const linkRegex = /\*link=`([^`]*)`\*([^*]*)\*\/link\*/g;
+const linkRegex = /\*link=`([^`]*)`(?:\s+(noblank))?\*([^*]*)\*\/link\*/g;
 
 export const HighlightText = ({
     text,
@@ -37,6 +37,7 @@ export const HighlightText = ({
         let lastIndex = 0;
 
         const result = matches.flatMap((match, matchIndex) => {
+            console.log(match);
             const matchStartIndex = match.index ?? 0;
             const textBeforeLink =
                 matchStartIndex > lastIndex
@@ -45,14 +46,14 @@ export const HighlightText = ({
             lastIndex = matchStartIndex + match[0].length;
 
             const url = match[1]
-                .replace("/${locale}", locale || "")
+                .replace("${locale}", locale || "")
                 .replace(
                     "${process.env.NEXT_PUBLIC_BASE_URL}",
                     process.env.NEXT_PUBLIC_BASE_URL || ""
                 );
 
-            ("");
-            const linkText = match[2];
+            const noblank = match[2];
+            const linkText = match[3];
             const highlightedLinkText = highlightSearchTerm(
                 linkText,
                 toBeHighlighted,
@@ -72,7 +73,7 @@ export const HighlightText = ({
                         transition-color ease-out duration-300 underline"
                     href={url}
                     key={`${url}-${matchIndex}`}
-                    target="_blank"
+                    target={noblank ? "_self" : "_blank"}
                 >
                     {highlightedLinkText}
                 </Link>,
