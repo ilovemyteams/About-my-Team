@@ -80,13 +80,15 @@ export const faqType = defineField({
                         "The middle part of the full answer. May include one or more blocks. Choose a design option and fill in the required data.",
                     of: [
                         {
+                            name: "mainBlock",
+                            title: "Main content block",
                             type: "object",
                             fields: [
                                 {
                                     name: "designType",
                                     type: "string",
                                     title: "Design Type",
-                                    initialValue: "stages",
+                                    initialValue: "numberedList",
                                     options: {
                                         list: FAQ_PAGE_DESIGN_TYPES,
                                     },
@@ -111,6 +113,22 @@ export const faqType = defineField({
                                         rule.custom(validateIsRequired),
                                 },
                             ],
+                            preview: {
+                                select: {
+                                    title: "designType",
+                                },
+                                prepare({ title }) {
+                                    const designTitle =
+                                        FAQ_PAGE_DESIGN_TYPES.find(
+                                            type => type.value === title
+                                        )?.title;
+                                    return {
+                                        title:
+                                            designTitle ||
+                                            "Unknown design type",
+                                    };
+                                },
+                            },
                         },
                     ],
                     validation: rule => rule.required(),
