@@ -37,7 +37,6 @@ export const HighlightText = ({
         let lastIndex = 0;
 
         const result = matches.flatMap((match, matchIndex) => {
-            console.log(match);
             const matchStartIndex = match.index ?? 0;
             const textBeforeLink =
                 matchStartIndex > lastIndex

@@ -1186,7 +1186,7 @@ export const questionsData: QAItemType[] = [
             fullAnswerContent: [
                 {
                     layout: 1,
-                    title: "How does the change process work?",
+                    title: "How it works?",
                     data: [
                         {
                             title: "Choosing individual \nspecialists",
