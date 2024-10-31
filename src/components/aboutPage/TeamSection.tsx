@@ -8,7 +8,7 @@ import { Section } from "../shared/Section";
 //drive.google.com/file/d/1QIjv1GEXVo03ox5275BBUEesXVJmD27T/view?usp=drive_link
 
 const TEAM_TOGETHER_PHOTO =
-    "https://drive.google.com/uc?export=view&id=1nuy2rXsGKq3Oawrv-ZmXXaFJ5V8juIys";
+    "https://drive.google.com/uc?export=view&id=1h1dHHenQ3cC63GLcA6KFe-UgIrZUWfzc";
 
 export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");

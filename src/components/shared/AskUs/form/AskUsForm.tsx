@@ -69,7 +69,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                 return (
                     <Form
                         onSubmit={handleSubmit}
-                        className="flex flex-col items-center"
+                        className="flex flex-col items-center relative z-[21]"
                     >
                         <div className="w-full h-[1px] bg-purple-strokeLight dark:bg-purple-stroke mb-3"></div>
                         <div className="self-start mb-4 pc:mb-12">

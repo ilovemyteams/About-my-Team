@@ -57,6 +57,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: [
                 "SDLC",
+                "pumpkin",
                 "Strategia",
                 "Planning",
                 "Budgeting",
@@ -1357,6 +1358,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: [
                 "ISTQB",
+                "pumpkin",
                 "Jira",
                 "Postman",
                 "Swagger",
@@ -1954,7 +1956,7 @@ export const membersData: MemberDataItemType[] = [
             id: "OksanaOnopriienko",
             projectId: ["3"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
+                "https://drive.google.com/uc?export=view&id=1UV6ukREG3cmCiTTpzQU2wpxWEeziowri",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
@@ -2124,6 +2126,7 @@ export const membersData: MemberDataItemType[] = [
             tools: [
                 "React",
                 "Typescript",
+                "pumpkin",
                 "Mui",
                 "Tailwind",
                 "Redux RTK",

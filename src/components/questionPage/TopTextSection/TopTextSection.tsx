@@ -1,4 +1,5 @@
-import { IconHeartWeb } from "../../shared/Icons/IconHeartWeb";
+import Image from "next/image";
+
 import { PageSection } from "../../shared/PageSection";
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { AnswerTextIParagraph } from "./AnswerTextIParagraph";
@@ -45,7 +46,13 @@ export const TopTextSection = ({
                         )}
                     </div>
                 </div>
-                <IconHeartWeb className="dark:text-purple-stroke text-purple-strokeLight ml-auto mr-0 tab:w-[96px] tab:h-auto" />
+                <Image
+                    src="/images/pumpkin.png"
+                    alt="pumpkin"
+                    width={60}
+                    height={60}
+                    className="ml-auto mr-0 tab:w-[96px] tab:h-auto opacity-[0.5]"
+                />
             </div>
         </PageSection>
     );

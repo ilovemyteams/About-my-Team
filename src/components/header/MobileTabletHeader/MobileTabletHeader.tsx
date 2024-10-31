@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { IconWebHeader } from "../../shared/Icons/IconWebHeader";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -37,6 +38,7 @@ export const MobileTabletHeader = () => {
                         />
                     </div>
                 </div>
+                <IconWebHeader className="tab:hidden absolute dark:text-purple-strokeFormLabelLight top-0 z-[-1] w-[75%] h-auto left-1/2 -translate-x-1/2" />
             </div>
             <MobileTabletHeaderMenu
                 isHeaderMenuOpened={isHeaderMenuOpened}

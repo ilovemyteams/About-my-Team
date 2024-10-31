@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
@@ -16,7 +19,32 @@ export const FeedbackTitle = () => {
                 </SmallPageTitle>
                 <MobTitle />
                 <DeskTitle />
+                <motion.div
+                    className="ml-auto mr-0 tab:ml-6"
+                    animate={{
+                        rotate: [0, 360, -360, 0],
+                    }}
+                    transition={{
+                        repeat: Infinity,
+                        duration: 6,
+                        ease: "easeInOut",
+                    }}
+                >
+                    <Image
+                        src="/images/pumpkin.png"
+                        alt="pumpkin"
+                        width={60}
+                        height={60}
+                    />
+                </motion.div>
             </TitleWrapper>
+            <Image
+                src="/images/pumpkin.png"
+                alt="pumpkin"
+                width={60}
+                height={60}
+                className="hidden"
+            />
         </div>
     );
 };
