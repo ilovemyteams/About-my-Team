@@ -6,7 +6,6 @@ import {
     ModalHeader,
     useDisclosure,
 } from "@nextui-org/react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
@@ -34,8 +33,6 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
     const onCloseModal = () => {
         onClose();
         closeFn();
-        // setIsError(false);
-        // setIsNotificationShawn(false);
     };
 
     return (
@@ -76,15 +73,7 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                     <p className="text-base text-center">
                         {getTranslation("waitResponse")}
                     </p>
-                    <IconHeart className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8" />
-                    <Image
-                        src="/images/bgImagesNotification/brokenHeart.svg"
-                        alt="background"
-                        width="0"
-                        height="0"
-                        sizes="100%"
-                        className="block w-[177px] h-[129px] tab:w-[192px] tab:h-[127px] pc:w-[238px] pc:h-[157px] mt-[52px] tab:mt-[46px] pc:mt-[53px]"
-                    />
+                    <IconHeart className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8" />{" "}
                 </ModalBody>
             </ModalContent>
         </Modal>
