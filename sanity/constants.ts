@@ -80,8 +80,9 @@ export const SOCIAL_LINKS = [
 ];
 
 export const FAQ_PAGE_DESIGN_TYPES = [
-    { title: "Stages", value: "stages" },
+    { title: "Numbered list", value: "numberedList" },
     { title: "Table", value: "table" },
+    { title: "List", value: "list" },
 ];
 
 export const GENDER_OPTIONS = [

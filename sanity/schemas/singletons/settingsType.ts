@@ -10,10 +10,6 @@ export const settingsType = defineType({
     title: TITLE,
     type: "document",
     icon: FcSettings,
-    options: {
-        collapsed: false,
-        collapsible: true,
-    },
     groups: GROUPS,
     fields: [
         defineField({
