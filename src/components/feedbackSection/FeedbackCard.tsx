@@ -59,15 +59,15 @@ export const FeedbackCard = ({ feedback }: FeedbackCardItemProps) => {
                         {siteTypeUp}
                     </p>
                 </div>
-                <div className="absolute bottom-[15px] right-3">
+                {projectURL && <div className="absolute bottom-[15px] right-3">
                     <a
                         target={newWindow ? "_blank" : ""}
-                        href={projectURL || ""}
+                        href={projectURL}
                         rel="noopener noreferrer"
                     >
                         <IconGoToSite />
                     </a>
-                </div>
+                </div>}
             </div>
 
             <div className="h-[186px] px-2 pt-4 pb-2 flex flex-col justify-between">
