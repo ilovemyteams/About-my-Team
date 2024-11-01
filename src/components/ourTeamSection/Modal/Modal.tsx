@@ -7,9 +7,9 @@ import { localeInURL } from "@/src/utils/localeInURL";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "../../shared/Modals/modalBgImages/contentModals/BgImagesDesktop";
+import { BgImagesMobile } from "../../shared/Modals/modalBgImages/contentModals/BgImagesMobile";
+import { BgImagesTablet } from "../../shared/Modals/modalBgImages/contentModals/BgImagesTablet";
 
 export const Modal = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
@@ -70,7 +70,7 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
                             type="button"
                             className="flex mb-2 ml-auto mr-4 tab:mr-6 tab:mb-3 w-12 h-12 justify-center items-center icon-hover-rounded-purple relative"
                         >
-                            <IconCloseX />
+                            <IconCloseX className="stroke-2 size-6" />
                         </button>
                         {children}
                     </div>

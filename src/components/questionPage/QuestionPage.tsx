@@ -16,9 +16,10 @@ import { TopTextSection } from "./TopTextSection/TopTextSection";
 
 interface QuestionPageProps {
     question: QAItemType;
+    searchTerm: string;
 }
 
-export const Question = async ({ question }: QuestionPageProps) => {
+export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
     const { data } = question;
     const locale = await getLocale();
 
@@ -31,7 +32,7 @@ export const Question = async ({ question }: QuestionPageProps) => {
         imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, layout, answerOrderImage, slug } = data;
+    const { image, answerOrderImage, slug, removeOrderBtn } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
@@ -46,23 +47,26 @@ export const Question = async ({ question }: QuestionPageProps) => {
                 pageTitle={questionText}
                 pageImageUrl={image}
                 estimateText={allTexts}
+                searchTerm={searchTerm}
             />
             <TopTextSection
                 shortAnswer={shortAnswerText}
                 fullAnswerText={fullAnswerTopText}
+                searchTerm={searchTerm}
             />
-            {fullAnswerContent && layout ? (
+            {fullAnswerContent ? (
                 <>
                     <MainContent
-                        locale={locale as LocaleType}
-                        layout={layout}
                         content={fullAnswerContent}
+                        searchTerm={searchTerm}
                     />
 
                     <OrderCard
                         imageLink={answerOrderImage}
                         fullAnswerBottomText={fullAnswerBottomText}
                         imageAltText={imageAltText}
+                        removedOrderBtn={!!removeOrderBtn}
+                        searchTerm={searchTerm}
                     />
                     <HelpfullAnswerSection
                         questionLikes={questionLikes}

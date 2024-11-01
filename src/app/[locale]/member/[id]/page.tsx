@@ -50,6 +50,7 @@ const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
     const displayedMember = membersData.find(
         member => member.data.id === params.id
     );
+
     if (!displayedMember) {
         notFound();
     }

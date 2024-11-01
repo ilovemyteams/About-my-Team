@@ -23,7 +23,7 @@ export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "01",
-            image: "https://drive.google.com/uc?export=view&id=1ZcvPOChrBY7KnazjQi3sJ5B9R1wP2qL1",
+            image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
             siteLink: "batatfarm.com",
             feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B",
         },

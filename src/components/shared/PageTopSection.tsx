@@ -12,11 +12,25 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 
 interface PageTopSectionProps {
     breadcrumbsList: { title: string; url: string }[];
+    searchTerm?: string;
 }
 
-export const PageTopSection = ({ breadcrumbsList }: PageTopSectionProps) => {
+export const PageTopSection = ({
+    breadcrumbsList,
+    searchTerm,
+}: PageTopSectionProps) => {
     const getTranslation = useTranslations("Breadcrumbs");
     const locale = useLocale();
+    const breadcrumbWithQuery = (
+        breadcrumb: string,
+        querifiedBreadcrumbs: string[]
+    ) => {
+        const trailingParam =
+            searchTerm && querifiedBreadcrumbs.includes(breadcrumb)
+                ? `?query=${searchTerm}`
+                : "";
+        return `/${localeInURL(locale)}${breadcrumb}${trailingParam}`;
+    };
     return (
         <>
             <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
@@ -58,7 +72,7 @@ export const PageTopSection = ({ breadcrumbsList }: PageTopSectionProps) => {
                         return (
                             <BreadcrumbItem
                                 key={item.url}
-                                href={`/${localeInURL(locale)}${item.url}`}
+                                href={breadcrumbWithQuery(item.url, ["faq"])}
                             >
                                 {item.title}
                             </BreadcrumbItem>
