@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import { useElementWidth } from "@/src/hooks/useElementWidth";
@@ -75,12 +74,7 @@ export const OneTableItemInfo = ({
             <ItemNumber itemNumber={itemNumber} />
             <div className="flex gap-2 items-center">
                 {isIconShown && (
-                    <Image
-                        src="/images/pumpkin.png"
-                        alt="pumpkin"
-                        width={30}
-                        height={30}
-                    />
+                    <div className="w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
                 )}
                 <h3 className="font-caviar text-xlb dark:text-white-200 text-purple-200">
                     {title}
