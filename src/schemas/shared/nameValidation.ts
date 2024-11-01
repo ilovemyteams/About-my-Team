@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-const nameRegex = /^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'"`\s-]+$/;
-
+const nameRegex =
+    /^(?=(.*\S.*\S))[^\s][a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻіІїЇґҐєЄа-яА-Я'"`\s\u02BC\u2019]+$/;
 export const NameValidation = () => {
     const getTranslation = useTranslations("Errors");
 
