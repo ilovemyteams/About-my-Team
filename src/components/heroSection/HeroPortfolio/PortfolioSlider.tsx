@@ -29,6 +29,9 @@ export const PortfolioSlider = () => {
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+    const portfolioForRender = [...portfolioData].sort(
+        (a, b) => a.data.order - b.data.order
+    );
 
     return (
         <div
@@ -45,7 +48,7 @@ export const PortfolioSlider = () => {
                     <SliderDotsBox
                         scrollSnaps={scrollSnaps}
                         selectedIndex={selectedIndex}
-                        sliders={portfolioData}
+                        sliders={portfolioForRender}
                         onDotButtonClick={onDotButtonClick}
                     />
                     <NextButton
@@ -59,7 +62,7 @@ export const PortfolioSlider = () => {
                 ref={emblaRef}
             >
                 <div className="flex max-w-[540px] tab:w-[100%] tab:min-w-[360px] pc:min-w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428]  deskxl:max-w-[668px] ">
-                    {portfolioData.map(data => (
+                    {portfolioForRender.map(data => (
                         <div
                             key={data.data.id}
                             className="embla__slide flex-[0_0_100%] w-full "

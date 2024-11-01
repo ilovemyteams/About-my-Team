@@ -120,7 +120,11 @@
         "question4": "How much does development cost?",
         "answer4": "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 20-30 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the Product Manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
         "question5": "Can I choose which team will work on my order?",
-        "answer5": "Yes, you can choose individual specialists and form a team on your own. In this case, we strongly recommend that you first contact your manager for advice. If you need a dedicated specialist for hourly work with your existing product, please contact the specialist via their telegram or LinkedIn."
+        "answer5": "Yes, you can choose individual specialists and form a team on your own. In this case, we strongly recommend that you first contact your manager for advice. If you need a dedicated specialist for hourly work with your existing product, please contact the specialist via their telegram or LinkedIn."        
+    },
+    "Search": {
+        "noAnswerFound": "Unfortunately, nothing was found for „{searchTerm}”",
+        "searchInputPlaceholder": "Enter query text"
     },
     "Buttons": {
         "order": "Order",
@@ -137,8 +141,7 @@
         "search": "Search"
     },
     "Badges": {
-        "readTimeSingular": " min to read",
-        "readTimePlural": " mins to read"
+        "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
     },
     "Footer": {
         "titleFirstWord": "Start ",

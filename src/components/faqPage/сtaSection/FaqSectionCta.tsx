@@ -7,6 +7,7 @@ import { AskUsModal } from "./modal/AskUsModal";
 
 export const FaqSectionCta = () => {
     const getTranslation = useTranslations("FaqPage");
+    //ToDo: for future pagination
     const isSectionVisible = true;
 
     const sectionVisibilityStyle = isSectionVisible

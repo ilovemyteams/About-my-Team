@@ -2,14 +2,10 @@
 
 import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
-import { createSharedPathnamesNavigation } from "next-intl/navigation";
 import { useEffect, useState } from "react";
 
 import { locales } from "@/src/config";
-
-const { Link, usePathname } = createSharedPathnamesNavigation({
-    locales,
-});
+import { Link, usePathname } from "@/src/navigation";
 
 const activeStyle = "outline-none dark:text-red text-redLight";
 const inactiveStyle = "outline-none dark:text-purple-stroke text-disabledLight";

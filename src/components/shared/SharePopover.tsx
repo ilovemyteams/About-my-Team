@@ -23,9 +23,9 @@ import { IconLinkedin } from "./Icons/IconLinkedin";
 import { IconShare } from "./Icons/IconShare";
 import { IconTelegram } from "./Icons/IconTelegram";
 import { IconWhatsapp } from "./Icons/IconWhatsapp";
-import { BgImagesDesktop } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "./ModalsWithForm/modalBgImages/notificationModalBgImages/BgImagesTablet";
+import { BgImagesDesktop } from "./Modals/modalBgImages/notificationModals/BgImagesDesktop";
+import { BgImagesMobile } from "./Modals/modalBgImages/notificationModals/BgImagesMobile";
+import { BgImagesTablet } from "./Modals/modalBgImages/notificationModals/BgImagesTablet";
 
 export const SharePopover = ({
     className,
@@ -86,7 +86,7 @@ export const SharePopover = ({
                     onClick={onClose}
                     className="absolute top-3 right-4 h-12 min-w-12 rounded-none px-0 bg-transparent text-greyLight dark:text-grey icon-hover-rounded-purple"
                 >
-                    <IconCloseX />
+                    <IconCloseX className="stroke-2 size-6" />
                 </Button>
                 <div className="flex flex-col border-t w-[268px] tab:w-[360px] border-purple-strokeLight dark:border-purple-stroke">
                     <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">

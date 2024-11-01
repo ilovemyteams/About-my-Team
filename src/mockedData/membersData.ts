@@ -647,67 +647,7 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
-    {
-        data: {
-            id: "KaterynaPogrebna",
-            projectId: [],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
-            position: "QA engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "http://www.linkedin.com/in/katerynapogrebna",
-                github: "https://github.com/KaterynaPogrebna/QA_Portfolio/tree/416fd293cdd4fac83f5101e6e5768c52188af7a6/API",
-                telegram: "https://t.me/ek_kat",
-                googleDrive:
-                    "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
-            },
-            tools: [
-                "Postman",
-                "Fiddler",
-                "SQL",
-                "Chrome DevTools",
-                "JMeter",
-                "Testomat.io",
-                "Testlink",
-                "Redmine",
-                "VS Code",
-                "WordPress",
-                "CS-Cart",
-                "HTML",
-                "CSS",
-                "REST API",
-                "JSON",
-                "Jira",
-                "Trello",
-                "Atlassian",
-                "Exploratory Testing Chrome Extension",
-            ],
-        },
-        ua: {
-            name: "Катерина Погребна",
-            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
-            services:
-                "Ручне функціональне та нефункціональне тестування. Тестування UI/UX, API, баз даних і продуктивності. Тестування вимог, аналіз середовища, міжплатформне тестування, дослідження продукту, аналіз домену, тестування ролей доступу, пошукове тестування, регресійне тестування. Документація: історія користувача, план тестування, стратегія тестування, контрольний список, тестовий приклад, звіт про помилку, звіт про тестування.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Kateryna Pogrebna",
-            about: "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
-            services:
-                "Manual functional and non-functional testing. Testing UI/UX, API, databases, and performance. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Kateryna Pogrebna",
-            about: "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
-            services:
-                "Ręczne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie międzyplatformowe, badanie produktu, analiza domeny, testowanie ról dostępu, testowanie eksploracyjne, testowanie regresyjne. Dokumentacja: historia użytkownika, plan testów, strategia testów, lista kontrolna, przypadek testowy, raport o błędzie, raport z testów.",
-            team: "I Love My Team",
-        },
-    },
+
     {
         data: {
             id: "DariaCherviakova",
@@ -2169,9 +2109,8 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "AnnaPrutnik",
             projectId: ["1"],
-
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1NKeuyv46nwGf1RMOZ7EyxYgSSOmaQH-S",
+                "https://drive.google.com/uc?export=view&id=1QFXDXtH3bITUpp4eReNJf6jYScTrKC0z",
             position: "Front-end Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2267,6 +2206,67 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Rozszerzenie funkcjonalności istniejących aplikacji internetowych i tworzenie nowych od podstaw. Część kliencka i/lub serwerowa.",
             team: "i love my team",
+        },
+    },
+    {
+        data: {
+            id: "KaterynaPogrebna",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
+            position: "QA engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/katerynapogrebna",
+                github: "https://github.com/KaterynaPogrebna/QA_Portfolio/tree/416fd293cdd4fac83f5101e6e5768c52188af7a6/API",
+                telegram: "https://t.me/ek_kat",
+                googleDrive:
+                    "https://drive.google.com/drive/folders/1AtVB7EfFCwlPvOVaLdxYSC8Clo7Hp-rN?usp=sharing",
+            },
+            tools: [
+                "Postman",
+                "Fiddler",
+                "SQL",
+                "Chrome DevTools",
+                "JMeter",
+                "Testomat.io",
+                "Testlink",
+                "Redmine",
+                "VS Code",
+                "WordPress",
+                "CS-Cart",
+                "HTML",
+                "CSS",
+                "REST API",
+                "JSON",
+                "Jira",
+                "Trello",
+                "Atlassian",
+                "Exploratory Testing Chrome Extension",
+            ],
+        },
+        ua: {
+            name: "Катерина Погребна",
+            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
+            services:
+                "Ручне функціональне та нефункціональне тестування. Тестування UI/UX, API, баз даних і продуктивності. Тестування вимог, аналіз середовища, міжплатформне тестування, дослідження продукту, аналіз домену, тестування ролей доступу, пошукове тестування, регресійне тестування. Документація: історія користувача, план тестування, стратегія тестування, контрольний список, тестовий приклад, звіт про помилку, звіт про тестування.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Kateryna Pogrebna",
+            about: "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
+            services:
+                "Manual functional and non-functional testing. Testing UI/UX, API, databases, and performance. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Kateryna Pogrebna",
+            about: "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
+            services:
+                "Ręczne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie międzyplatformowe, badanie produktu, analiza domeny, testowanie ról dostępu, testowanie eksploracyjne, testowanie regresyjne. Dokumentacja: historia użytkownika, plan testów, strategia testów, lista kontrolna, przypadek testowy, raport o błędzie, raport z testów.",
+            team: "I Love My Team",
         },
     },
 ];

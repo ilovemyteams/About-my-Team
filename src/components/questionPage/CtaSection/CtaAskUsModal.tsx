@@ -1,14 +1,7 @@
 "use client";
-import { ModalsWithForm } from "@/src/components/shared/ModalsWithForm/ModalsWithForm";
-
-import { AskUsForm } from "../../faqPage/сtaSection/form/AskUsForm";
+import { AskUsModalBase } from "../../shared/AskUs/AskUsModalBase";
 import { AskUsButton } from "./AskUsButton";
 
 export const CtaAskUsModal = () => {
-    return (
-        <ModalsWithForm
-            formComponent={AskUsForm}
-            triggerComponent={AskUsButton}
-        />
-    );
+    return <AskUsModalBase triggerComponent={AskUsButton} />;
 };
