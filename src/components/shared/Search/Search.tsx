@@ -20,8 +20,9 @@ export const Search = () => {
     const handleSearch = useDebouncedCallback(() => {
         const sanitizedValue = inputValue
             .trim()
-            .replace(/\s+/g, " ")
-            .toString();
+            .replace(/[-\\/\\^$*+?.()|[\]{}<>:;"'`%&_#]/g, "\\$&")
+            .replace(/\s+/g, " ");
+        // .toString();
 
         const params = new URLSearchParams(searchParams);
         sanitizedValue
