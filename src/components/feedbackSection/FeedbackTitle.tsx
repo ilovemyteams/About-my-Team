@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { PortableText } from "next-sanity";
 
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
@@ -13,11 +14,13 @@ export const FeedbackTitle = ({
     subtitle: string | null;
     title: PortableColorTitle | null;
 }) => {
+    const getTranslation = useTranslations("Feedback");
+
     return (
         <div>
             <TitleWrapper className="flex flex-col tab:flex-row items-start">
                 <SmallPageTitle className="ml-1 mr-3  tab:mt-2 tab:mr-[16px] pc:mt-[14px] flex items-center">
-                    {subtitle || ""}
+                    {subtitle ? subtitle : getTranslation("pageTitle")}
                 </SmallPageTitle>
 
                 {title && (

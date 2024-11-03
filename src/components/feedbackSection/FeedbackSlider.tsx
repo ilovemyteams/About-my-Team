@@ -25,7 +25,7 @@ type FeedbackSliderProps = {
         projectName: string | null;
         projectURL: string | null;
         projectCategory: string | null;
-    }> | null;
+    }>;
     options?: EmblaOptionsType;
 };
 
@@ -46,15 +46,14 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
         <div className=" embla relative">
             <div className=" overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
-                    {feedbacks &&
-                        feedbacks.map(feedback => (
-                            <div
-                                key={feedback._id}
-                                className="embla__slide flex-[0_0_100%] "
-                            >
-                                <FeedbackCard feedback={feedback} />
-                            </div>
-                        ))}
+                    {feedbacks.map(feedback => (
+                        <div
+                            key={feedback._id}
+                            className="embla__slide flex-[0_0_100%] "
+                        >
+                            <FeedbackCard feedback={feedback} />
+                        </div>
+                    ))}
                 </div>
                 <div className="embla__controls mt-4 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
                     <div className="embla__buttons flex gap-4 tab:gap-6 justify-center">

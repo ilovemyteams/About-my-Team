@@ -15,16 +15,20 @@ export const FeedbackSection = ({ data }: { data: HomeReviewsQueryResult }) => {
     }
     const { title, subtitle, anchorId, feedbacks } = data;
     return (
-        <Section id={anchorId || ""} className="relative">
+        <Section id={anchorId || "reviews"} className="relative">
             <FeedbackTitle title={title} subtitle={subtitle} />
             <div className="tab:hidden">
-                <FeedbackSlider feedbacks={feedbacks || []} options={OPTIONS} />
+                {feedbacks && (
+                    <FeedbackSlider feedbacks={feedbacks} options={OPTIONS} />
+                )}
             </div>
             <div className="hidden tab:block tab:pb-[75px] pc:pb-[78px]">
-                <FeedbackSliderFromTab
-                    feedbacks={feedbacks || []}
-                    options={OPTIONS}
-                />
+                {feedbacks && (
+                    <FeedbackSliderFromTab
+                        feedbacks={feedbacks}
+                        options={OPTIONS}
+                    />
+                )}
             </div>
             <SharePopover
                 className="absolute -top-3 right-4 tab:right-6 tab:top-[414px] tab:items-end pc:right-[60px] pc:top-[526px]"

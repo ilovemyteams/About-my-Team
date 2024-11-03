@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-import { addProtocol } from "@/src/utils/addProtocol";
+import { addProtocol } from "@/src/utils/httpsProtocols";
 
 import { IconGoToSite } from "../shared/Icons/IconGoToSite";
 
@@ -44,13 +44,15 @@ export const FeedbackCard = ({ feedback }: FeedbackCardItemProps) => {
     return (
         <div className="flex flex-col min-h-[390px] border dark:border-purple-stroke border-purple-strokeLight">
             <div className="relative">
-                <Image
-                    src={asset || ""}
-                    alt={altImage || ""}
-                    width={540}
-                    height={346}
-                    className=" object-cover min-w-[220px] h-[220px] "
-                />
+                {asset && (
+                    <Image
+                        src={asset}
+                        alt={altImage || ""}
+                        width={540}
+                        height={346}
+                        className=" object-cover min-w-[220px] h-[220px] "
+                    />
+                )}
                 <div className="absolute bottom-0 left-0 min-w-full h-[55px] dark:bg-feedbackMobCardGradient bg-feedbackMobCardGradientLight text-purple-200 dark:text-white-200">
                     <p className="font-caviar font-bold text-base mt-2 mb-1 ml-2">
                         {projectName || ""}
@@ -59,15 +61,17 @@ export const FeedbackCard = ({ feedback }: FeedbackCardItemProps) => {
                         {siteTypeUp}
                     </p>
                 </div>
-                {projectURL && <div className="absolute bottom-[15px] right-3">
-                    <a
-                        target={newWindow ? "_blank" : ""}
-                        href={projectURL}
-                        rel="noopener noreferrer"
-                    >
-                        <IconGoToSite />
-                    </a>
-                </div>}
+                {projectURL && (
+                    <div className="absolute bottom-[15px] right-3">
+                        <a
+                            target={newWindow ? "_blank" : ""}
+                            href={projectURL}
+                            rel="noopener noreferrer"
+                        >
+                            <IconGoToSite />
+                        </a>
+                    </div>
+                )}
             </div>
 
             <div className="h-[186px] px-2 pt-4 pb-2 flex flex-col justify-between">

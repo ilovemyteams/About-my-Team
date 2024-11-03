@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { addProtocol } from "@/src/utils/addProtocol";
+import { addProtocol, removeProtocol } from "@/src/utils/httpsProtocols";
 
 import { IconQuote } from "../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
@@ -9,9 +9,6 @@ export const FeedbackCardTextFromTab = ({
     feedback,
 }: FeedbackCardItemProps) => {
     const getTranslation = useTranslations("Feedback");
-
-    if (!feedback) return null;
-
     const {
         newWindow,
         projectCategory,
@@ -83,7 +80,7 @@ export const FeedbackCardTextFromTab = ({
                          dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
                          transition-color ease-out duration-300"
                         >
-                            {projectURL}
+                            {removeProtocol(projectURL)}
                         </a>
                     )}
                 </div>

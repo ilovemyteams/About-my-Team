@@ -56,13 +56,15 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                             key={feedback._id}
                             className="embla__slide flex-[0_0_100%] "
                         >
-                            <Image
-                                src={feedback.asset || ""}
-                                alt={feedback.altImage || ""}
-                                width={540}
-                                height={346}
-                                className="object-cover tab:h-[302px] w-full pc:h-[346px]"
-                            />
+                            {feedback.asset && (
+                                <Image
+                                    src={feedback.asset}
+                                    alt={feedback.altImage || ""}
+                                    width={540}
+                                    height={346}
+                                    className="object-cover tab:h-[302px] w-full pc:h-[346px]"
+                                />
+                            )}
                         </div>
                     ))}
                 </div>
