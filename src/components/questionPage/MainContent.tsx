@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { PageSection } from "../shared/PageSection";
+import { BulletedList } from "./BulletedListContent/BulletedList";
 import { ListContent } from "./ListContent/ListContent";
 import { SpecificationContent } from "./SpecificationContent/SpecificationContent";
 import { TableContent } from "./TableContent/TableContent";
@@ -37,6 +38,9 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             title={item.title}
                             searchTerm={searchTerm}
                         />
+                    )}
+                    {item.layout === 4 && (
+                        <BulletedList content={item} searchTerm={searchTerm} />
                     )}
                 </Fragment>
             ))}
