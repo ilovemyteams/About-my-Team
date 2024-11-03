@@ -1,4 +1,4 @@
-import { ProjectsIcon } from "@sanity/icons";
+import { FcPicture } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
 import { SITE_STATUS, STAGES } from "@/sanity/constants";
@@ -9,7 +9,7 @@ export const projectType = defineField({
     name: "project",
     title: "Projects",
     type: "document",
-    icon: ProjectsIcon,
+    icon: FcPicture,
     fields: [
         defineField({
             name: "title",

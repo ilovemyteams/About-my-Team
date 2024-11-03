@@ -1,4 +1,4 @@
-import { UsersIcon } from "@sanity/icons";
+import { FcCollaboration } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
@@ -8,7 +8,7 @@ export const teamType = defineField({
     name: "team",
     title: "Team members",
     type: "document",
-    icon: UsersIcon,
+    icon: FcCollaboration,
     fields: [
         defineField({
             name: "name",

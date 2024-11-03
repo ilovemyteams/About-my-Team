@@ -1,4 +1,4 @@
-import { CheckmarkIcon } from "@sanity/icons";
+import { FcCheckmark } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -23,7 +23,7 @@ export const aboutUsItemType = defineField({
         prepare({ title }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
             return {
-                icon: CheckmarkIcon,
+                icon: FcCheckmark,
                 title: englishTitle,
             };
         },

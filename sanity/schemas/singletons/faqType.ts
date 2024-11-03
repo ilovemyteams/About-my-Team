@@ -1,4 +1,4 @@
-import { HelpCircleIcon } from "@sanity/icons";
+import { FcFaq } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
@@ -9,7 +9,7 @@ export const faqType = defineField({
     name: "faq",
     title: "FAQs",
     type: "document",
-    icon: HelpCircleIcon,
+    icon: FcFaq,
     fields: [
         defineField({
             name: "numberOfLikes",
@@ -74,30 +74,61 @@ export const faqType = defineField({
                 },
                 {
                     name: "mainContent",
-                    type: "object",
+                    type: "array",
                     title: "Main Content",
-                    description: "The middle part of the full answer",
-                    fields: [
+                    description:
+                        "The middle part of the full answer. May include one or more blocks. Choose a design option and fill in the required data.",
+                    of: [
                         {
-                            name: "designType",
-                            type: "string",
-
-                            initialValue: "stages",
-                            title: "Design Type",
-                            options: {
-                                list: FAQ_PAGE_DESIGN_TYPES,
+                            name: "mainBlock",
+                            title: "Main content block",
+                            type: "object",
+                            fields: [
+                                {
+                                    name: "designType",
+                                    type: "string",
+                                    title: "Design Type",
+                                    initialValue: "numberedList",
+                                    options: {
+                                        list: FAQ_PAGE_DESIGN_TYPES,
+                                    },
+                                    description:
+                                        "Select the design type you want for this content block",
+                                    validation: rule => rule.required(),
+                                },
+                                {
+                                    name: "mainContentTitle",
+                                    type: "internationalizedArrayString",
+                                    title: "Main Content Title (optional)",
+                                    description:
+                                        "Specify only the title is needed",
+                                },
+                                {
+                                    name: "mainContentText",
+                                    type: "internationalizedArrayPortableText",
+                                    title: "Main Content Text",
+                                    description:
+                                        "Place the content here and select the desired styles",
+                                    validation: rule =>
+                                        rule.custom(validateIsRequired),
+                                },
+                            ],
+                            preview: {
+                                select: {
+                                    title: "designType",
+                                },
+                                prepare({ title }) {
+                                    const designTitle =
+                                        FAQ_PAGE_DESIGN_TYPES.find(
+                                            type => type.value === title
+                                        )?.title;
+                                    return {
+                                        title:
+                                            designTitle ||
+                                            "Unknown design type",
+                                    };
+                                },
                             },
-                            description:
-                                "Select the design type you want for the middle part of the answer",
-                            validation: rule => rule.required(),
-                        },
-                        {
-                            name: "mainContentText",
-                            type: "internationalizedArrayPortableText",
-                            title: "Main Content Text",
-                            description:
-                                "Place the middle part of the answer here and select the desired styles",
-                            validation: rule => rule.custom(validateIsRequired),
                         },
                     ],
                     validation: rule => rule.required(),
@@ -124,6 +155,21 @@ export const faqType = defineField({
                             type: "internationalizedArrayText",
                             validation: rule => rule.custom(validateIsRequired),
                         },
+                        {
+                            name: "showButton",
+                            type: "boolean",
+                            title: "Show Order Button?",
+                            description:
+                                "Select whether to display a button in the order section",
+                            options: {
+                                layout: "radio",
+                                list: [
+                                    { title: "Yes", value: true },
+                                    { title: "No", value: false },
+                                ],
+                            },
+                            validation: rule => rule.required(),
+                        },
                     ],
                     validation: rule => rule.required(),
                 },
@@ -133,7 +179,7 @@ export const faqType = defineField({
     preview: {
         select: {
             title: "question",
-            media: "image",
+            media: "image.image",
         },
         prepare({ title, media }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);

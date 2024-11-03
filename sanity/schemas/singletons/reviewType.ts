@@ -1,4 +1,4 @@
-import { CommentIcon } from "@sanity/icons";
+import { FcFeedback } from "react-icons/fc";
 import { FcBusinessman } from "react-icons/fc";
 import { defineField } from "sanity";
 
@@ -9,7 +9,7 @@ export const reviewType = defineField({
     name: "review",
     title: "Reviews",
     type: "document",
-    icon: CommentIcon,
+    icon: FcFeedback,
     fields: [
         defineField({
             name: "project",
@@ -111,11 +111,38 @@ export const reviewType = defineField({
     preview: {
         select: {
             title: "project.title",
+            media: "image.image",
+            reviewerManualName: "reviewer.0.name",
+            reviewerRefName: "reviewer.0.name",
+            reviewerManualPosition: "reviewer.0.position",
+            reviewerRefPosition: "reviewer.0.position",
         },
-        prepare({ title }) {
+        prepare({
+            title,
+            media,
+            reviewerManualName,
+            reviewerRefName,
+            reviewerManualPosition,
+            reviewerRefPosition,
+        }) {
             const englishTitle = getEnglishTitleFromIntArrays(title);
+
+            const reviewerName = getEnglishTitleFromIntArrays(
+                reviewerManualName ? reviewerManualName : reviewerRefName,
+                "No name"
+            );
+
+            const reviewerPosition = getEnglishTitleFromIntArrays(
+                reviewerManualPosition
+                    ? reviewerManualPosition
+                    : reviewerRefPosition,
+                "no position"
+            );
+
             return {
                 title: `Review "${englishTitle}"`,
+                subtitle: `${reviewerName}, ${reviewerPosition}`,
+                media: media || undefined,
             };
         },
     },

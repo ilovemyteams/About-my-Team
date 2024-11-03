@@ -1,4 +1,4 @@
-import { ActivityIcon } from "@sanity/icons";
+import { FcPositiveDynamic } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -8,7 +8,7 @@ export const stageType = defineField({
     name: "stage",
     title: "Stages",
     type: "object",
-    icon: ActivityIcon,
+    icon: FcPositiveDynamic,
     fields: [
         defineField({
             name: "title",
