@@ -1,11 +1,11 @@
-import { WrenchIcon } from "@sanity/icons";
+import { FcSupport } from "react-icons/fc";
 import { defineField } from "sanity";
 
 export const toolType = defineField({
     name: "tool",
     title: "Tools",
     type: "document",
-    icon: WrenchIcon,
+    icon: FcSupport,
     fields: [
         defineField({
             name: "title",

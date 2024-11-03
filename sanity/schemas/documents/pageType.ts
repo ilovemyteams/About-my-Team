@@ -1,4 +1,4 @@
-import { DocumentsIcon } from "@sanity/icons";
+import { FcDocument } from "react-icons/fc";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
@@ -13,7 +13,7 @@ export const pageType = defineType({
     name: "page",
     type: "document",
     title: "Page",
-    icon: DocumentsIcon,
+    icon: FcDocument,
     fields: [
         defineField({
             name: "title",

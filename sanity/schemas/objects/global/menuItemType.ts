@@ -1,3 +1,4 @@
+import { FcRedo } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
@@ -7,6 +8,7 @@ export const menuItemType = defineField({
     name: "menuItem",
     title: "Menu Item",
     type: "object",
+    icon: FcRedo,
     fields: [
         defineField({
             name: "title",

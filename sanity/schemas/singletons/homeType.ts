@@ -1,4 +1,4 @@
-import { HomeIcon } from "@sanity/icons";
+import { FcHome } from "react-icons/fc";
 import { defineField } from "sanity";
 
 import { GROUPS } from "../../constants";
@@ -9,7 +9,7 @@ export const homeType = defineField({
     name: "home",
     title: TITLE,
     type: "document",
-    icon: HomeIcon,
+    icon: FcHome,
     groups: GROUPS,
     fields: [
         defineField({
@@ -98,8 +98,8 @@ export const homeType = defineField({
     preview: {
         prepare() {
             return {
-                media: HomeIcon,
-                subtitle: "Index",
+                media: FcHome,
+                subtitle: "Index page",
                 title: TITLE,
             };
         },

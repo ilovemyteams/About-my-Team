@@ -92,10 +92,9 @@ const blocks: ArrayDefinition[] = [
     portableColorTitleType,
 ];
 
-import { colorThemeType } from "./documents/colorTheme";
 import { pageType } from "./documents/pageType";
 
-const documents: DocumentDefinition[] = [colorThemeType, pageType];
+const documents: DocumentDefinition[] = [pageType];
 
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";
@@ -118,6 +117,7 @@ const singletons: DocumentDefinition[] = [
     teamType,
     settingsType,
     projectType,
+    customerType,
     reviewType,
     faqType,
     siteCategoryType,
@@ -125,7 +125,6 @@ const singletons: DocumentDefinition[] = [
     specialistType,
     specialistCategoryType,
     toolType,
-    customerType,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
