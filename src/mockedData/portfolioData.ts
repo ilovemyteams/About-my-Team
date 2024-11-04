@@ -25,7 +25,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "1",
             siteLink: "ilovemyteam.online",
             image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
-            order: 4,
+
             implementations: [
                 "Idea",
                 "Design",
@@ -33,6 +33,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Delivery",
                 "Support",
             ],
+            order: 4,
         },
         ua: {
             name: "i love my team",
@@ -86,8 +87,8 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "3",
             siteLink: "theatermag.com.ua",
-            image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             order: 1,
+            image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             implementations: [
                 "Idea",
                 "Design",

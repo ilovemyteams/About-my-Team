@@ -12,13 +12,13 @@ interface TableContentProps {
 
 export const TableContent = ({ content, searchTerm }: TableContentProps) => {
     return (
-        <div>
+        <div className="pc:mb-[60px]">
             <ul className=" list-none border-t border-purple-strokeLight dark:border-purple-stroke  tab:flex tab:flex-wrap pc:flex-nowrap tab:justify-center">
                 {content &&
                     content.map((item, index) => (
                         <li
                             key={index}
-                            className=" tab:px-4 tab:min-h-[589px] pc:min-h-[662px] border-b border-purple-strokeLight dark:border-purple-stroke tab:border-l tab:[&:nth-child(3)]:border-r tab:[&:nth-child(2)]:border-r pc:[&:nth-child(2)]:border-r-0 tab:w-[50%]"
+                            className=" tab:px-4 border-b border-purple-strokeLight dark:border-purple-stroke tab:border-l tab:[&:nth-child(3)]:border-r tab:[&:nth-child(2)]:border-r pc:[&:nth-child(2)]:border-r-0 tab:w-[50%]"
                         >
                             <TableContentItem
                                 content={item}

@@ -38,7 +38,7 @@ export const OrderCard = ({
 
             <div className="flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
                 {fullAnswerBottomText && (
-                    <div>
+                    <div className="flex flex-col gap-6 pc:gap-10">
                         {fullAnswerBottomText.map((text, index) => (
                             <p
                                 key={index}

@@ -2,7 +2,6 @@
 
 import { Dispatch, SetStateAction, useState } from "react";
 
-import { useRouter } from "@/src/navigation";
 import { SubmitFnType } from "@/types/FormInModalProps";
 
 import { ModalBase } from "../../Modals/ModalBase";
@@ -15,31 +14,21 @@ interface CustomerFormModalProps {
     isError: boolean;
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
-    previousUrl: string | undefined;
+    onExitFromParallelRoute: () => void;
 }
 
 export const CustomerFormModal = ({
     isError,
     setIsError,
     setIsNotificationShawn,
-    previousUrl,
+    onExitFromParallelRoute,
 }: CustomerFormModalProps) => {
     const [isModalOpen, setIsModalOpen] = useState(true);
-    const router = useRouter();
-
-    const onCloseModal = () => {
-        setIsModalOpen(false);
-        if (previousUrl) {
-            router.push(previousUrl, {});
-        } else {
-            router.back();
-        }
-    };
 
     const notificationHandler = async (submitFn: SubmitFnType) => {
         try {
             await submitFn();
-            onCloseModal();
+            setIsModalOpen(false);
         } catch (error) {
             setIsError(true);
             throw new Error("Form submission failed", { cause: error });
@@ -51,7 +40,7 @@ export const CustomerFormModal = ({
     return (
         <ModalBase
             isOpen={isModalOpen}
-            onCloseModal={onCloseModal}
+            onCloseModal={onExitFromParallelRoute}
             isCloseDisabled={isError}
         >
             <BgImagesMobile />
