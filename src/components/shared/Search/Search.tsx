@@ -22,7 +22,6 @@ export const Search = () => {
             .trim()
             .replace(/[-\\/\\^$*+?.()|[\]{}<>:;"'`%&_#]/g, "\\$&")
             .replace(/\s+/g, " ");
-        // .toString();
 
         const params = new URLSearchParams(searchParams);
         sanitizedValue

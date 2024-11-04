@@ -3,8 +3,6 @@ import { IconProps } from "../../../../types/iconProps.interface";
 export const IconHexagonsVertical = ({ className }: IconProps) => {
     return (
         <svg
-            // width="162"
-            // height="425"
             viewBox="0 0 162 425"
             fill="none"
             className={className}
