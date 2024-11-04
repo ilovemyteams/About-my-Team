@@ -1,6 +1,13 @@
 "use client";
+import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
-import React, { createContext, ReactNode, useContext, useState } from "react";
+import React, {
+    createContext,
+    ReactNode,
+    useContext,
+    useEffect,
+    useState,
+} from "react";
 
 import { DEFAULT_SLIDE_ID } from "../constants/defaultSlideId";
 
@@ -17,6 +24,14 @@ export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
     const locale = useLocale();
     const [previousURL, setPreviousURL] = useState<string>(`/${locale}#team`);
     const [slideId, setSlideId] = useState<number>(DEFAULT_SLIDE_ID);
+    const searchParams = useSearchParams();
+
+    useEffect(() => {
+        const slideIdFromParams = searchParams.get("slideId");
+        if (slideIdFromParams && Number(slideIdFromParams) !== slideId) {
+            setSlideId(Number(slideIdFromParams));
+        }
+    }, [searchParams, slideId]);
 
     return (
         <PreviousURLContext.Provider
@@ -26,6 +41,7 @@ export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
         </PreviousURLContext.Provider>
     );
 };
+
 export const usePreviousURL = () => {
     const context = useContext(PreviousURLContext);
     if (context === undefined) {
