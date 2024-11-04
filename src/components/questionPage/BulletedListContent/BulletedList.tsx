@@ -23,7 +23,7 @@ export const BulletedList = ({ content, searchTerm }: BulletedListProps) => {
                 </h2>
             )}
             {subtitle && (
-                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[50%] pc:w-[55%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
+                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[50%] pc:w-[55%] desk:w-[45%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                     <HighlightText
                         text={subtitle}
                         toBeHighlighted={searchTerm}
