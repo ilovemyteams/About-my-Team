@@ -40,7 +40,6 @@ export const MemberCardsListBigScreens = ({
     useEffect(() => {
         if (isFirstRender) {
             if (emblaApi) {
-                console.log("first render");
                 emblaApi.scrollTo(slideId, true);
             } else {
                 isFirstRender.current = false;
