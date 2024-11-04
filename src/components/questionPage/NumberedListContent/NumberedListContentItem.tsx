@@ -1,19 +1,19 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
-import { Text } from "./Text";
+import { NumberedListText } from "./NumberedListText";
 
-interface ListContentItemsProps {
+interface NumberedListContentItemsProps {
     item: LongAnswerListTypeItem;
     indx: number;
     searchTerm: string;
 }
 
-export const ListContentItem = ({
+export const NumberedListContentItem = ({
     item,
     indx,
     searchTerm,
-}: ListContentItemsProps) => {
+}: NumberedListContentItemsProps) => {
     const { text, title, type } = item;
 
     return (
@@ -35,7 +35,7 @@ export const ListContentItem = ({
                 )}
                 <ul>
                     {text.map((text, index) => (
-                        <Text
+                        <NumberedListText
                             key={index}
                             text={text}
                             type={type}

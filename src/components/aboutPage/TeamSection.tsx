@@ -4,8 +4,11 @@ import { useTranslations } from "next-intl";
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { Section } from "../shared/Section";
 
+//drive.google.com/file/d/1nuy2rXsGKq3Oawrv-ZmXXaFJ5V8juIys/view?usp=drive_link
+//drive.google.com/file/d/1QIjv1GEXVo03ox5275BBUEesXVJmD27T/view?usp=drive_link
+
 const TEAM_TOGETHER_PHOTO =
-    "https://drive.google.com/uc?export=view&id=1n5hpC_COy1tUvAS8AyTahI_n1YuNA5fp";
+    "https://drive.google.com/uc?export=view&id=1nuy2rXsGKq3Oawrv-ZmXXaFJ5V8juIys";
 
 export const TeamSection = () => {
     const getTranslation = useTranslations("AboutPage");

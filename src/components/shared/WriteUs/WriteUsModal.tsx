@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { useRouter } from "@/src/navigation";
 
@@ -15,11 +15,13 @@ export const WriteUsModal = ({ previousUrl }: WriteUsModalProps) => {
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
     const router = useRouter();
 
-    useEffect(() => {
+    const onExitFromParallelRoute = () => {
         if (previousUrl) {
-            router.prefetch(previousUrl);
+            router.push(previousUrl, {});
+        } else {
+            router.back();
         }
-    }, [previousUrl, router]);
+    };
 
     const onCLoseNotification = () => {
         setIsError(false);
@@ -32,10 +34,11 @@ export const WriteUsModal = ({ previousUrl }: WriteUsModalProps) => {
                 isError={isError}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
-                previousUrl={previousUrl}
+                onExitFromParallelRoute={onExitFromParallelRoute}
             />
             <CustomerNotificationModal
                 closeNotification={onCLoseNotification}
+                successCloseFn={onExitFromParallelRoute}
                 isError={isError}
                 isShown={isNotificationShawn}
             />
