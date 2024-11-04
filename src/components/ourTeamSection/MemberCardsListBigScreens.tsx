@@ -38,12 +38,9 @@ export const MemberCardsListBigScreens = ({
     const isFirstRender = useRef(true);
 
     useEffect(() => {
-        if (isFirstRender) {
-            if (emblaApi) {
-                emblaApi.scrollTo(slideId, true);
-            } else {
-                isFirstRender.current = false;
-            }
+        if (isFirstRender.current && emblaApi) {
+            emblaApi.scrollTo(slideId, true);
+            isFirstRender.current = false;
         }
         // if (!isFirstRender.current && emblaApi) {
         //     // Reset the slider to the first slide whenever optionType changes
