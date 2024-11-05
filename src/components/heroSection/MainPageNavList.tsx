@@ -8,7 +8,7 @@ export const MainPageNavList = () => {
     const navList = [
         { name: getTranslation("Mission.pageTitle"), id: "about-us" },
         { name: getTranslation("Portfolio.pageTitle"), id: "portfolio" },
-        { name: getTranslation("Feedback.pageTitle"), id: "feedback" },
+        { name: getTranslation("Feedback.pageTitle"), id: "reviews" },
         { name: getTranslation("Services.pageTitle"), id: "services" },
         { name: getTranslation("OurTeam.pageTitle"), id: "team" },
         { name: getTranslation("Stages.pageTitle"), id: "stages" },

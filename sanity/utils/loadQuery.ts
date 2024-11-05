@@ -8,6 +8,7 @@ import {
     Home,
     HomeAboutUsQueryResult,
     HomeFAQQueryResult,
+    HomeReviewsQueryResult,
     HomeServicesQueryResult,
     HomeStagesQueryResult,
     Project,
@@ -27,6 +28,7 @@ import {
     homeFAQQuery,
     homeHeroQuery,
     homePortfolioQuery,
+    homeReviewsQuery,
     homeServicesQuery,
     homeStagesQuery,
     projectQuery,
@@ -145,6 +147,14 @@ export function loadHomeAboutUs(language = "ua") {
 export function loadHomeFaq(language = "ua") {
     return loadQuery<HomeFAQQueryResult>(
         homeFAQQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+
+export function loadHomeReviews(language = "ua") {
+    return loadQuery<HomeReviewsQueryResult>(
+        homeReviewsQuery,
         { language },
         { next: { tags: ["home"] } }
     );
