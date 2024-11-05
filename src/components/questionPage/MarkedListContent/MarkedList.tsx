@@ -23,7 +23,7 @@ export const MarkedList = ({ content, searchTerm }: MarkedListProps) => {
                 </h2>
             )}
             {subtitle && (
-                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[50%] pc:w-[55%] desk:w-[45%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
+                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                     <HighlightText
                         text={subtitle}
                         toBeHighlighted={searchTerm}
@@ -33,9 +33,9 @@ export const MarkedList = ({ content, searchTerm }: MarkedListProps) => {
             <div className="flex gap-4 pc:gap-[50px] pc:mb-15">
                 <div className="hidden tab:block m-auto text-white-100 dark:text-purple-stroke">
                     {decorate === 1 ? (
-                        <IconHexagonsVertical className="tab:w-[120px] tab:h-[309] pc:w-[162px] pc:h-[425px]" />
+                        <IconHexagonsVertical className="tab:w-[120px] tab:h-[309] pc:w-[162px] pc:h-[425px] desk:w-[212px] desk:h-[570px]" />
                     ) : (
-                        <IconHexagonsCircle className="tab:w-[249px] tab:h-[251px] pc:w-[337px] pc:h-[343px]" />
+                        <IconHexagonsCircle className="tab:w-[249px] tab:h-[251px] pc:w-[337px] pc:h-[343px] desk:w-[452px] desk:h-[461px]" />
                     )}
                 </div>
                 <MarkedListItem

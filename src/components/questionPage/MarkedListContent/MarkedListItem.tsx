@@ -10,7 +10,7 @@ interface MarkedListItemProps {
 
 export const MarkedListItem = ({ items, searchTerm }: MarkedListItemProps) => {
     return (
-        <ul className="flex flex-col gap-5 tab:gap-6 desk:gap-10 w-full tab:w-[58%] pc:w-[55%] desk:w-[44%]">
+        <ul className="flex flex-col gap-5 tab:gap-6 desk:gap-10 w-full tab:w-[58%] pc:w-[56%] desk:w-[50%]">
             {items.map((item, index) => {
                 return (
                     <li key={index} className="flex gap-2 pc:gap-3 items-start">
