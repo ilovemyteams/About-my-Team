@@ -4,14 +4,14 @@ import { ListTextItemType } from "@/src/mockedData/questionsData";
 import { IconHexagonsCircle } from "../../shared/Icons/IconHexagonsCircle";
 import { IconHexagonsVertical } from "../../shared/Icons/IconHexagonsVertical";
 import { HighlightText } from "../../shared/Search/HighlightText";
-import { BulletedListItem } from "./BulletedListItem";
+import { MarkedListItem } from "./MarkedListItem";
 
-interface BulletedListProps {
+interface MarkedListProps {
     content: LongAnswerListType;
     searchTerm: string;
 }
 
-export const BulletedList = ({ content, searchTerm }: BulletedListProps) => {
+export const MarkedList = ({ content, searchTerm }: MarkedListProps) => {
     const { title, data } = content;
     const { title: subtitle, decorate, text } = data[0];
 
@@ -38,7 +38,7 @@ export const BulletedList = ({ content, searchTerm }: BulletedListProps) => {
                         <IconHexagonsCircle className="tab:w-[249px] tab:h-[251px] pc:w-[337px] pc:h-[343px]" />
                     )}
                 </div>
-                <BulletedListItem
+                <MarkedListItem
                     items={text as ListTextItemType[]}
                     searchTerm={searchTerm}
                 />

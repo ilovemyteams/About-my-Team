@@ -3,15 +3,12 @@ import { ListTextItemType } from "@/src/mockedData/questionsData";
 import { IconCheck } from "../../shared/Icons/IconCheck";
 import { HighlightText } from "../../shared/Search/HighlightText";
 
-interface BulletedListItemProps {
+interface MarkedListItemProps {
     items: ListTextItemType[];
     searchTerm: string;
 }
 
-export const BulletedListItem = ({
-    items,
-    searchTerm,
-}: BulletedListItemProps) => {
+export const MarkedListItem = ({ items, searchTerm }: MarkedListItemProps) => {
     return (
         <ul className="flex flex-col gap-5 tab:gap-6 desk:gap-10 w-full tab:w-[58%] pc:w-[55%] desk:w-[44%]">
             {items.map((item, index) => {
