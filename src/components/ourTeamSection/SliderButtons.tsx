@@ -62,19 +62,11 @@ export const SliderButtons = ({
         } else {
             if (emblaApi) {
                 // Reset the slider to the first slide whenever optionType changes
-                console.log(
-                    "Reset the slider to the first slide whenever optionType changes"
-                );
+
                 emblaApi.scrollTo(slideId);
             }
         }
-        // if (!isFirstRender.current && emblaApi) {
-        //     // Reset the slider to the first slide whenever optionType changes
-        //     emblaApi.scrollTo(slideId);
-        // } else {
 
-        //     isFirstRender.current = false;
-        // }
         if (emblaApi) {
             const onSelect = () => {
                 const index = emblaApi.selectedScrollSnap();
@@ -85,7 +77,8 @@ export const SliderButtons = ({
                 emblaApi.off("select", onSelect);
             };
         }
-    }, [emblaApi, updateSlideIdInURL, slideId]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [emblaApi, updateSlideIdInURL, slideId, setSlideId]);
 
     return (
         <div className="embla__controls  mt-[16px]  tab:absolute tab:top-[-80px] tab:right-0">
