@@ -33,9 +33,9 @@ export const MarkedList = ({ content, searchTerm }: MarkedListProps) => {
             <div className="flex gap-4 pc:gap-[50px] pc:mb-15">
                 <div className="hidden tab:block m-auto text-white-100 dark:text-purple-stroke">
                     {decorate === 1 ? (
-                        <IconHexagonsVertical className="tab:w-[120px] tab:h-[309] pc:w-[162px] pc:h-[425px] desk:w-[212px] desk:h-[570px]" />
+                        <IconHexagonsVertical className="tab:min-w-[118px] tab:w-[16%] pc:min-w-[160px] pc:w-[15%] desk:min-w-[210px] desk:w-[18%]" />
                     ) : (
-                        <IconHexagonsCircle className="tab:w-[249px] tab:h-[251px] pc:w-[337px] pc:h-[343px] desk:w-[452px] desk:h-[461px]" />
+                        <IconHexagonsCircle className="tab:min-w-[247px] tab:w-[34%] pc:min-w-[335px] pc:w-[31%] desk:min-w-[450px] desk:w-[37%]" />
                     )}
                 </div>
                 <MarkedListItem
