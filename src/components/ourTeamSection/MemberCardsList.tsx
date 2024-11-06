@@ -42,12 +42,7 @@ export const MemberCardsList = ({
             emblaApi.scrollTo(slideId, true);
             isFirstRender.current = false;
         }
-        // if (!isFirstRender.current && emblaApi) {
-        //     // Reset the slider to the first slide whenever optionType changes
-        //     emblaApi.scrollTo(slideId);
-        // } else {
-        //     isFirstRender.current = false;
-        // }
+
         if (emblaApi) {
             const onSelect = () => {
                 const index = emblaApi.selectedScrollSnap();

@@ -23,17 +23,13 @@ export const MemberCardsListBigScreens = ({
     optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
-    const { slideId, setSlideId } = usePreviousURL();
+    const { slideId } = usePreviousURL();
 
-    const updateSlideIdInURL = useCallback(
-        (index: number) => {
-            const url = new URL(window.location.href);
-            url.searchParams.set("slideId", index.toString());
-            window.history.pushState({}, "", url);
-            setSlideId(index);
-        },
-        [setSlideId]
-    );
+    const updateSlideIdInURL = useCallback((index: number) => {
+        const url = new URL(window.location.href);
+        url.searchParams.set("slideId", index.toString());
+        window.history.pushState({}, "", url);
+    }, []);
 
     const isFirstRender = useRef(true);
 
@@ -42,13 +38,9 @@ export const MemberCardsListBigScreens = ({
             emblaApi.scrollTo(slideId, true);
             isFirstRender.current = false;
         }
-        // if (!isFirstRender.current && emblaApi) {
-        //     // Reset the slider to the first slide whenever optionType changes
-        // emblaApi.scrollTo(slideId);
-        // } else {
-        //     isFirstRender.current = false;
-        // }
+    }, [emblaApi, slideId]);
 
+    useEffect(() => {
         if (emblaApi) {
             const onSelect = () => {
                 const index = emblaApi.selectedScrollSnap();
@@ -59,7 +51,7 @@ export const MemberCardsListBigScreens = ({
                 emblaApi.off("select", onSelect);
             };
         }
-    }, [optionType, emblaApi, membersData, updateSlideIdInURL, slideId]);
+    }, [emblaApi, updateSlideIdInURL]);
 
     return (
         <div
