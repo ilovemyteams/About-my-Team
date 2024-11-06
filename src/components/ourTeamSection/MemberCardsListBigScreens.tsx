@@ -1,10 +1,9 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import React, { useCallback, useEffect, useRef } from "react";
+import React from "react";
 
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
-
+// import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { OneSliderCardBigScreen } from "./OneSliderCardBigScreen";
 import { SliderButtons } from "./SliderButtons";
@@ -23,37 +22,6 @@ export const MemberCardsListBigScreens = ({
     optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
-    const { slideId, setSlideId } = usePreviousURL();
-
-    const updateSlideIdInURL = useCallback(
-        (index: number) => {
-            const url = new URL(window.location.href);
-            url.searchParams.set("slideId", index.toString());
-            window.history.pushState({}, "", url);
-            setSlideId(index);
-        },
-        [setSlideId]
-    );
-
-    const isFirstRender = useRef(true);
-
-    useEffect(() => {
-        if (isFirstRender.current && emblaApi) {
-            emblaApi.scrollTo(slideId, true);
-            isFirstRender.current = false;
-        }
-
-        if (emblaApi) {
-            const onSelect = () => {
-                const index = emblaApi.selectedScrollSnap();
-                updateSlideIdInURL(index);
-            };
-            emblaApi.on("select", onSelect);
-            return () => {
-                emblaApi.off("select", onSelect);
-            };
-        }
-    }, [optionType, emblaApi, membersData, updateSlideIdInURL, slideId]);
 
     return (
         <div

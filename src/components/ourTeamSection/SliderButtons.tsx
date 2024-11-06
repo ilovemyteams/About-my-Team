@@ -17,8 +17,10 @@ export const SliderButtons = ({
     emblaApi,
     membersData,
 }: SliderButtonsProps) => {
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-        useDotButton(emblaApi);
+    const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+        emblaApi,
+        "slideId"
+    );
 
     const {
         prevBtnDisabled,
