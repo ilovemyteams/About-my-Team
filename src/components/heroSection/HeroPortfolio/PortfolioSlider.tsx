@@ -20,10 +20,8 @@ const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
 export const PortfolioSlider = () => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const locale = useLocale();
-    const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
-        emblaApi,
-        "hero"
-    );
+    const { selectedIndex, scrollSnaps, onDotButtonClick } =
+        useDotButton(emblaApi);
 
     const {
         prevBtnDisabled,

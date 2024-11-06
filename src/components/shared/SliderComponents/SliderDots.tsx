@@ -1,10 +1,8 @@
 import { EmblaCarouselType } from "embla-carousel";
-import { useSearchParams } from "next/navigation";
 import React, {
     PropsWithChildren,
     useCallback,
     useEffect,
-    useRef,
     useState,
 } from "react";
 
@@ -15,49 +13,10 @@ type UseDotButtonType = {
 };
 
 export const useDotButton = (
-    emblaApi: EmblaCarouselType | undefined,
-    paramName: string
+    emblaApi: EmblaCarouselType | undefined
 ): UseDotButtonType => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
-    const isFirstRender = useRef(true);
-    const searchParams = useSearchParams();
-
-    useEffect(() => {
-        const slideIdFromParams = searchParams.get(paramName);
-        if (slideIdFromParams && Number(slideIdFromParams) !== selectedIndex) {
-            setSelectedIndex(Number(slideIdFromParams));
-        }
-    }, [paramName, searchParams, selectedIndex]);
-
-    const updateSlideIdInURL = useCallback(
-        (index: number) => {
-            const url = new URL(window.location.href);
-            url.searchParams.set(paramName, index.toString());
-            window.history.pushState({}, "", url);
-        },
-        [paramName]
-    );
-
-    useEffect(() => {
-        if (emblaApi) {
-            const onSelect = () => {
-                const index = emblaApi.selectedScrollSnap();
-                updateSlideIdInURL(index);
-            };
-            emblaApi.on("select", onSelect);
-            return () => {
-                emblaApi.off("select", onSelect);
-            };
-        }
-    }, [emblaApi, selectedIndex, updateSlideIdInURL]);
-
-    useEffect(() => {
-        if (isFirstRender.current && emblaApi) {
-            emblaApi.scrollTo(selectedIndex, true);
-            isFirstRender.current = false;
-        }
-    }, [emblaApi, selectedIndex]);
 
     const onDotButtonClick = useCallback(
         (index: number) => {

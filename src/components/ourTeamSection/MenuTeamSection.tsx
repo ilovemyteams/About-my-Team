@@ -87,13 +87,10 @@ export const MenuTeamSection = ({
         };
         setSelectedOption(selected);
         setIsOpen(false);
-        setSlideId(DEFAULT_SLIDE_ID);
-
-        const params = new URLSearchParams(searchParams.toString());
-        params.set("option", projectId);
-        params.set("slideId", DEFAULT_SLIDE_ID.toString());
-
-        router.push(`/${locale}?${params.toString()}#team`);
+        setSlideId(0);
+        router.push(
+            `/${locale}?option=${projectId}&slideId=${DEFAULT_SLIDE_ID}#team`
+        );
     };
 
     const handleOptionSelectCategory = (category: СategoryNamesProp) => {
@@ -105,12 +102,9 @@ export const MenuTeamSection = ({
         setSelectedOption(selected);
         setIsOpen(false);
         setSlideId(0);
-
-        const params = new URLSearchParams(searchParams.toString());
-        params.set("option", category.categoryName);
-        params.set("slideId", DEFAULT_SLIDE_ID.toString());
-
-        router.push(`/${locale}?${params.toString()}#team`);
+        router.push(
+            `/${locale}?option=${category.categoryName}&slideId=${DEFAULT_SLIDE_ID}#team`
+        );
     };
 
     const toggleList = () => {
