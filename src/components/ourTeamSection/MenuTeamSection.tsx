@@ -93,7 +93,7 @@ export const MenuTeamSection = ({
         params.set("option", projectId);
         params.set("slideId", DEFAULT_SLIDE_ID.toString());
 
-        router.push(`/${locale}?${params.toString()}#team`);
+        router.replace(`/${locale}?${params.toString()}#team`);
     };
 
     const handleOptionSelectCategory = (category: СategoryNamesProp) => {
@@ -110,7 +110,7 @@ export const MenuTeamSection = ({
         params.set("option", category.categoryName);
         params.set("slideId", DEFAULT_SLIDE_ID.toString());
 
-        router.push(`/${locale}?${params.toString()}#team`);
+        router.replace(`/${locale}?${params.toString()}#team`);
     };
 
     const toggleList = () => {
