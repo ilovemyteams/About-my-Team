@@ -26,8 +26,10 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const locale = useLocale();
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-        useDotButton(emblaApi);
+    const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+        emblaApi,
+        "feedback"
+    );
 
     const {
         prevBtnDisabled,

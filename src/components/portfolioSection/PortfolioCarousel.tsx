@@ -26,8 +26,10 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options);
     const locale = useLocale();
-    const { selectedIndex, scrollSnaps, onDotButtonClick } =
-        useDotButton(emblaApi);
+    const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+        emblaApi,
+        "portfolio"
+    );
 
     const {
         prevBtnDisabled,
@@ -38,7 +40,7 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
 
     return (
         <div className="relative embla min-w-full">
-            <div className=" overflow-hidden" ref={emblaRef}>
+            <div className="overflow-hidden" ref={emblaRef}>
                 <div className=" flex">
                     {projects.map((project, index) => (
                         <div
