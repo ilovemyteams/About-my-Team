@@ -39,7 +39,12 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             searchTerm={searchTerm}
                         />
                     )}
-                    {item.layout === 5 && <ArrowedBlockContent />}
+                    {item.layout === 5 && (
+                        <ArrowedBlockContent
+                            content={item}
+                            searchTerm={searchTerm}
+                        />
+                    )}
                 </Fragment>
             ))}
         </PageSection>
