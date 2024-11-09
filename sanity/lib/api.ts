@@ -18,7 +18,7 @@ export const projectId = assertValue(
 export const readToken = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN || "";
 
 export const PREVIEW_URL =
-    "https://about-my-team-git-sanityalive-ilovemyteams-projects.vercel.app/";
+    "https://about-my-team-git-sanityalive-ilovemyteams-projects.vercel.app";
 
 console.log(PREVIEW_URL);
 
