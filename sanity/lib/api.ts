@@ -20,8 +20,6 @@ export const readToken = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN || "";
 export const PREVIEW_URL =
     "https://about-my-team-git-sanityalive-ilovemyteams-projects.vercel.app";
 
-console.log(PREVIEW_URL);
-
 // see https://www.sanity.io/docs/api-versioning for how versioning works
 export const apiVersion =
     process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-06-21";
