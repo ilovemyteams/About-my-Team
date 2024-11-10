@@ -42,7 +42,7 @@ export const ArrowedBlockContent = ({
                             className="text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
                         >
                             {piece.title && (
-                                <span className="font-caviar text-baseb pc:text-xlb desk:text-3xl text-purple-200 dark:text-white-200">
+                                <span className="font-caviar text-baseb pc:text-xlb desk:text-3xl">
                                     <HighlightText
                                         text={`- ${piece.title}: `}
                                         toBeHighlighted={searchTerm}
