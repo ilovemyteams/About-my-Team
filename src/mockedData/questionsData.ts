@@ -1532,7 +1532,7 @@ export const questionsData: QAItemType[] = [
             slug: "do-you-provide-post-launch-support",
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
+                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
         },
         ua: {
             questionText:
