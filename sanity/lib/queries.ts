@@ -140,6 +140,13 @@ export const homeFAQQuery = groq`
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
 }`;
 
+export const homeTeamQuery = groq`
+  *[_type == "home"][0]{teamHome {
+  "title": title[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "projectsList": projectsList[]->_id}}`;
+
 export const homeReviewsQuery = groq`
 *[_type == "home"][0]{
     "title": reviewsHome.title[_key == $language][0].value,
