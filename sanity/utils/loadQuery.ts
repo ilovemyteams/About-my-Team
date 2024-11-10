@@ -10,6 +10,7 @@ import {
     Home,
     HomeAboutUsQueryResult,
     HomeFAQQueryResult,
+    HomeReviewsQueryResult,
     HomeServicesQueryResult,
     HomeStagesQueryResult,
     HomeTeamQueryResult,
@@ -32,6 +33,7 @@ import {
     homeFAQQuery,
     homeHeroQuery,
     homePortfolioQuery,
+    homeReviewsQuery,
     homeServicesQuery,
     homeStagesQuery,
     homeTeamQuery,
@@ -60,10 +62,13 @@ export const loadQuery = ((query, params = {}, options = {}) => {
     if (!usingCdn && Array.isArray(options.next?.tags)) {
         revalidate = false;
     } else if (usingCdn) {
-        revalidate = 60;
+        revalidate = 0;
     }
     return queryStore.loadQuery(query, params, {
         ...options,
+        headers: {
+            "Cache-Control": "no-cache",
+        },
         next: {
             revalidate,
             ...(options.next || {}),
@@ -174,6 +179,14 @@ export function loadHomeFaq(language = "ua") {
 export function loadHomeTeam(language = "ua") {
     return loadQuery<HomeTeamQueryResult>(
         homeTeamQuery,
+        { language },
+        { next: { tags: ["home"] } }
+    );
+}
+
+export function loadHomeReviews(language = "ua") {
+    return loadQuery<HomeReviewsQueryResult>(
+        homeReviewsQuery,
         { language },
         { next: { tags: ["home"] } }
     );

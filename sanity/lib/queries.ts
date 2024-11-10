@@ -140,9 +140,30 @@ export const homeFAQQuery = groq`
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
 }`;
 
-export const homeTeamQuery = groq`
-  *[_type == "home"][0]{teamHome {
-  "title": title[_key == $language][0].value,
-  "subtitle": sectionId.subtitle[_key == $language][0].value, 
-  "anchorId": sectionId.anchorId.current,
-  "projectsList": projectsList[]->_id}}`;
+export const homeReviewsQuery = groq`
+*[_type == "home"][0]{
+    "title": reviewsHome.title[_key == $language][0].value,
+    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,
+    "anchorId": reviewsHome.sectionId.anchorId.current,
+    "feedbacks": reviewsHome.reviewsSlider[] {
+      _type == "reference" => @->{_id,
+        "reviewText": reviewText[_key == $language][0].value,
+        "feedbackLink": reviewUrl.url,
+        "newWindow": reviewUrl.newWindow,
+        "altImage": image.caption[_key == $language][0].value,
+        "asset": image.image.asset->url,
+        "reviewerName": select(
+          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,
+          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value
+        ),
+        "reviewerPosition": select(
+          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,
+          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value
+        ),
+        "projectName": project->title[_key == $language][0].value,
+        "projectURL": project->URL.url,                          
+        "projectCategory": project->category->categoryName[_key == $language][0].value
+      }
+    }
+  }
+`;

@@ -5,6 +5,7 @@ import {
     loadHomeFaq,
     loadHomeHero,
     loadHomeProjects,
+    loadHomeReviews,
     loadHomeTeam,
     loadMembers,
     loadProjects,
@@ -34,6 +35,7 @@ export default async function HomePage(props: PageParamsProps) {
         services,
         stages,
         faq,
+        reviews,
         team,
         members,
         projects,
@@ -46,6 +48,7 @@ export default async function HomePage(props: PageParamsProps) {
         await loadServices(props.params.locale),
         await loadStages(props.params.locale),
         await loadHomeFaq(props.params.locale),
+        await loadHomeReviews(props.params.locale),
         await loadHomeTeam(props.params.locale),
         await loadMembers(props.params.locale),
         await loadProjects(props.params.locale),
@@ -62,7 +65,7 @@ export default async function HomePage(props: PageParamsProps) {
             <MissionSection data={about.data} />
             <JoinTheTeamSection data={cta.data} />
             <PortfolioSection data={portfolioSection.data} />
-            <FeedbackSection />
+            <FeedbackSection data={reviews.data} />
             <WriteUsSection data={cta.data} />
             <ServicesSection data={services.data} />
             <OurTeamSection

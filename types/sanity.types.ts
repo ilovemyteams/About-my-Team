@@ -103,31 +103,6 @@ export type Stage = {
     >;
 };
 
-export type Customer = {
-    _type: "customer";
-    name?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    position?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    photo?: {
-        asset?: {
-            _ref: string;
-            _type: "reference";
-            _weak?: boolean;
-            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-        };
-        hotspot?: SanityImageHotspot;
-        crop?: SanityImageCrop;
-        _type: "image";
-    };
-};
-
 export type AnchorLink = {
     _type: "anchorLink";
     subtitle?: Array<
@@ -457,6 +432,33 @@ export type PortableText = Array<
       } & Instagram)
 >;
 
+export type Customer = {
+    _id: string;
+    _type: "customer";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    name?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    position?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    phoneNumber?: Array<string>;
+    socialLinks?: Array<
+        {
+            _key: string;
+        } & SocialLinks
+    >;
+    gender?: "female" | "male" | "unknown";
+    country?: string;
+    comment?: string;
+};
+
 export type Tool = {
     _id: string;
     _type: "tool";
@@ -566,6 +568,46 @@ export type Review = {
         _weak?: boolean;
         [internalGroqTypeReferenceTo]?: "project";
     };
+    reviewer?: Array<
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              _key: string;
+              [internalGroqTypeReferenceTo]?: "customer";
+          }
+        | {
+              name?: Array<
+                  {
+                      _key: string;
+                  } & InternationalizedArrayStringValue
+              >;
+              position?: Array<
+                  {
+                      _key: string;
+                  } & InternationalizedArrayStringValue
+              >;
+              _key: string;
+          }
+    >;
+    image?: {
+        image?: {
+            asset?: {
+                _ref: string;
+                _type: "reference";
+                _weak?: boolean;
+                [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+            };
+            hotspot?: SanityImageHotspot;
+            crop?: SanityImageCrop;
+            _type: "image";
+        };
+        caption?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayStringValue
+        >;
+    };
     reviewText?: Array<
         {
             _key: string;
@@ -590,11 +632,13 @@ export type Project = {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    customers?: Array<
-        {
-            _key: string;
-        } & Customer
-    >;
+    customers?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "customer";
+    }>;
     startDate?: string;
     endDate?: string;
     category?: {
@@ -1270,7 +1314,6 @@ export type AllSanitySchemaTypes =
     | ColorTheme
     | MenuItem
     | Stage
-    | Customer
     | AnchorLink
     | AboutUsItem
     | SocialLinks
@@ -1289,6 +1332,7 @@ export type AllSanitySchemaTypes =
     | PortableColorTitle
     | PortableTextSimple
     | PortableText
+    | Customer
     | Tool
     | Service
     | Faq
@@ -1565,6 +1609,26 @@ export type HomeFAQQueryResult = {
         shortAnswer: string | null;
     }> | null;
 } | null;
+// Variable: homeReviewsQuery
+// Query: *[_type == "home"][0]{    "title": reviewsHome.title[_key == $language][0].value,    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,    "anchorId": reviewsHome.sectionId.anchorId.current,    "feedbacks": reviewsHome.reviewsSlider[] {      _type == "reference" => @->{_id,        "reviewText": reviewText[_key == $language][0].value,        "feedbackLink": reviewUrl.url,        "newWindow": reviewUrl.newWindow,        "altImage": image.caption[_key == $language][0].value,        "asset": image.image.asset->url,        "reviewerName": select(          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value        ),        "reviewerPosition": select(          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value        ),        "projectName": project->title[_key == $language][0].value,        "projectURL": project->URL.url,                                  "projectCategory": project->category->categoryName[_key == $language][0].value      }    }  }
+export type HomeReviewsQueryResult = {
+    title: PortableColorTitle | null;
+    subtitle: string | null;
+    anchorId: string | null;
+    feedbacks: Array<{
+        _id: string;
+        reviewText: string | null;
+        feedbackLink: string | null;
+        newWindow: boolean | null;
+        altImage: string | null;
+        asset: string | null;
+        reviewerName: string | null;
+        reviewerPosition: string | null;
+        projectName: string | null;
+        projectURL: string | null;
+        projectCategory: string | null;
+    }> | null;
+} | null;
 // Variable: homeTeamQuery
 // Query: *[_type == "home"][0]{teamHome {  "title": title[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "projectsList": projectsList[]->_id}}
 export type HomeTeamQueryResult = {
@@ -1592,6 +1656,7 @@ declare module "@sanity/client" {
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
         '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
         '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
+        '\n*[_type == "home"][0]{\n    "title": reviewsHome.title[_key == $language][0].value,\n    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,\n    "anchorId": reviewsHome.sectionId.anchorId.current,\n    "feedbacks": reviewsHome.reviewsSlider[] {\n      _type == "reference" => @->{_id,\n        "reviewText": reviewText[_key == $language][0].value,\n        "feedbackLink": reviewUrl.url,\n        "newWindow": reviewUrl.newWindow,\n        "altImage": image.caption[_key == $language][0].value,\n        "asset": image.image.asset->url,\n        "reviewerName": select(\n          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value\n        ),\n        "reviewerPosition": select(\n          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value\n        ),\n        "projectName": project->title[_key == $language][0].value,\n        "projectURL": project->URL.url,                          \n        "projectCategory": project->category->categoryName[_key == $language][0].value\n      }\n    }\n  }\n': HomeReviewsQueryResult;
         '\n  *[_type == "home"][0]{teamHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "projectsList": projectsList[]->_id}}': HomeTeamQueryResult;
     }
 }

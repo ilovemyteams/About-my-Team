@@ -1,4 +1,4 @@
-import { addProtocol } from "@/src/utils/addProtocol";
+import { addProtocol } from "@/src/utils/httpsProtocols";
 
 import { IconGoToSite } from "./Icons/IconGoToSite";
 

@@ -21,8 +21,9 @@ export async function GET(request: NextRequest) {
         clientWithToken,
         request.url
     );
-
+    console.log(request.url);
     if (!isValid) {
+        console.log(request.url, isValid);
         return new Response("Invalid secret", { status: 401 });
     }
 
