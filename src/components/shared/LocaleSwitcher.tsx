@@ -32,6 +32,7 @@ export default function LocaleSwitcher() {
                             search: searchParams.toString(),
                             pathname: pathName,
                         }}
+                        replace
                         locale={curLocale}
                         scroll={false}
                         className={

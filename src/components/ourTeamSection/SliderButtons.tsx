@@ -1,4 +1,8 @@
 import { EmblaCarouselType } from "embla-carousel";
+import { useSearchParams } from "next/navigation";
+import { useCallback, useEffect, useRef } from "react";
+
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 import { MemberDataItemType } from "../../mockedData/membersData";
 import {
@@ -19,13 +23,62 @@ export const SliderButtons = ({
 }: SliderButtonsProps) => {
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
+    const searchParams = useSearchParams();
 
+    const { slideId, setSlideId } = usePreviousURL();
     const {
         prevBtnDisabled,
         nextBtnDisabled,
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+
+    const updateSlideIdInURL = useCallback(
+        (index: number) => {
+            const url = new URL(window.location.href);
+            url.searchParams.set("slideId", index.toString());
+            window.history.pushState({}, "", url);
+            setSlideId(index);
+        },
+        [setSlideId]
+    );
+
+    const isFirstRender = useRef(true);
+
+    useEffect(() => {
+        if (isFirstRender.current) {
+            if (emblaApi) {
+                // Go to slide, when change locale
+                const slideFromParam = searchParams.get("slideId");
+
+                const slideToScroll = slideFromParam
+                    ? Number(slideFromParam)
+                    : slideId;
+
+                emblaApi.scrollTo(slideToScroll, true);
+                setSlideId(slideToScroll);
+                isFirstRender.current = false;
+            }
+        } else {
+            if (emblaApi) {
+                // Reset the slider to the first slide whenever optionType changes
+
+                emblaApi.scrollTo(slideId);
+            }
+        }
+
+        if (emblaApi) {
+            const onSelect = () => {
+                const index = emblaApi.selectedScrollSnap();
+                updateSlideIdInURL(index);
+            };
+            emblaApi.on("select", onSelect);
+            return () => {
+                emblaApi.off("select", onSelect);
+            };
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [emblaApi, updateSlideIdInURL, slideId, setSlideId]);
 
     return (
         <div className="embla__controls  mt-[16px]  tab:absolute tab:top-[-80px] tab:right-0">
