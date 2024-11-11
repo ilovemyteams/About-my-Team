@@ -1,6 +1,6 @@
 "use client";
 import { useLocale } from "next-intl";
-import React, { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
 import { DEFAULT_SLIDE_ID } from "../constants/defaultSlideId";
 
@@ -26,6 +26,7 @@ export const PreviousURLProvider = ({ children }: { children: ReactNode }) => {
         </PreviousURLContext.Provider>
     );
 };
+
 export const usePreviousURL = () => {
     const context = useContext(PreviousURLContext);
     if (context === undefined) {
