@@ -8,7 +8,7 @@ import { colorInput } from "@sanity/color-input";
 import { visionTool } from "@sanity/vision";
 import { theme } from "https://themer.sanity.build/api/hues?default=3e335e;600;lightest:f0f0ff&primary=a258ff;600;lightest:f3f3fb&transparent=40365b;600;lightest:bfb4ff&positive=43d675;300&caution=fbd024;200&lightest=fcfcfd&darkest=0f0d15";
 import { defineConfig } from "sanity";
-import { presentationTool } from "sanity/presentation";
+// import { presentationTool } from "sanity/presentation";
 import { structureTool } from "sanity/structure";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
@@ -17,7 +17,7 @@ import { media, mediaAssetSource } from "sanity-plugin-media";
 import { SUPPORTED_LANGUAGES } from "./sanity/constants";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import { apiVersion, dataset, projectId, studioUrl } from "./sanity/lib/api";
-import { PREVIEW_URL } from "./sanity/lib/api";
+// import { PREVIEW_URL } from "./sanity/lib/api";
 import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemas";
 import { singletonPagesType, structure } from "./sanity/structure/index";
@@ -51,13 +51,13 @@ export default defineConfig({
             ],
         }),
         singletonPlugin(singletonPagesType),
-        presentationTool({
-            previewUrl: {
-                previewMode: {
-                    enable: `${PREVIEW_URL}/api/draftMode/enable`,
-                },
-            },
-        }),
+        // presentationTool({
+        //     previewUrl: {
+        //         previewMode: {
+        //             enable: `${PREVIEW_URL}/api/draftMode/enable`,
+        //         },
+        //     },
+        // }),
     ],
 
     form: {
