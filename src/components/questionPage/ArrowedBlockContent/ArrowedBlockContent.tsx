@@ -1,4 +1,5 @@
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { ListTextItemType } from "@/src/mockedData/questionsData";
 
 import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { HighlightText } from "../../shared/Search/HighlightText";
@@ -16,11 +17,17 @@ export const ArrowedBlockContent = ({
     const subtitle = data[0].text.join("");
     const pieces = data[1].text;
 
+    const processedText = (piece: string | ListTextItemType) => {
+        if (typeof piece === "string") return piece;
+        const title = piece.title ? `- ${piece.title}: ` : "";
+        const text = piece.text.join("");
+        return title + text;
+    };
     return (
         <div className="pc:pb-[60px] flex flex-col tab:flex-row">
             <div className="w-full tab:w-[61%] pc:w-[64%] desk:w-[62%]">
                 {title && (
-                    <h2 className="mb-10 tab:mb-16 pc:mb-20 font-caviar text-2xlb tab:text-4xl pc:text-5xl desk:text-6xl text-purple-200 dark:text-white-200">
+                    <h2 className="mb-10 pc:mb-20 font-caviar text-2xlb tab:text-4xl pc:text-5xl desk:text-6xl text-purple-200 dark:text-white-200">
                         <HighlightText
                             text={title}
                             toBeHighlighted={searchTerm}
@@ -28,7 +35,7 @@ export const ArrowedBlockContent = ({
                     </h2>
                 )}
                 {subtitle && (
-                    <p className=" mb-6 tab:mb-10 desk:mb-15 text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
+                    <p className=" mb-5 tab:mb-6 desk:mb-10 text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                         <HighlightText
                             text={subtitle}
                             toBeHighlighted={searchTerm}
@@ -36,28 +43,13 @@ export const ArrowedBlockContent = ({
                     </p>
                 )}
                 {pieces.map((piece, idx) => {
-                    return typeof piece !== "string" ? (
+                    return (
                         <p
                             key={idx}
                             className="text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
                         >
-                            {piece.title && (
-                                <span className="font-caviar text-baseb pc:text-xlb desk:text-3xl">
-                                    <HighlightText
-                                        text={`- ${piece.title}: `}
-                                        toBeHighlighted={searchTerm}
-                                    />
-                                </span>
-                            )}
                             <HighlightText
-                                text={piece.text.join("")}
-                                toBeHighlighted={searchTerm}
-                            />
-                        </p>
-                    ) : (
-                        <p>
-                            <HighlightText
-                                text={piece}
+                                text={processedText(piece)}
                                 toBeHighlighted={searchTerm}
                             />
                         </p>
