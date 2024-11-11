@@ -4,6 +4,7 @@ import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { PageSection } from "../shared/PageSection";
 import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
+import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
@@ -35,6 +36,12 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                         <DescriptionListContent
                             content={item.data}
                             title={item.title}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                    {item.layout === 4 && (
+                        <MarkedListContent
+                            content={item}
                             searchTerm={searchTerm}
                         />
                     )}
