@@ -31,13 +31,11 @@ export const MarkedListContent = ({ content, searchTerm }: MarkedListProps) => {
                 </p>
             )}
             <div className="flex gap-4 pc:gap-[50px] pc:mb-15">
-                <div className="m-auto hidden tab:block  text-white-100 dark:text-purple-stroke">
-                    {decorate === 1 ? (
-                        <IconHexagonsVertical className="m-auto tab:min-w-[118px] tab:w-[16%] pc:min-w-[160px] pc:w-[15%] desk:min-w-[210px] desk:w-[18%]" />
-                    ) : (
-                        <IconHexagonsCircle className="m-auto tab:min-w-[247px] tab:w-[34%] pc:min-w-[335px] pc:w-[31%] desk:min-w-[450px] desk:w-[37%]" />
-                    )}
-                </div>
+                {decorate === 1 ? (
+                    <IconHexagonsVertical className="hidden tab:block  text-white-100 dark:text-purple-stroke m-auto tab:min-w-[118px] tab:w-[16%] pc:min-w-[160px] pc:w-[15%] desk:min-w-[210px] desk:w-[18%]" />
+                ) : (
+                    <IconHexagonsCircle className="hidden tab:block  text-white-100 dark:text-purple-stroke m-auto tab:min-w-[247px] tab:w-[34%] pc:min-w-[335px] pc:w-[31%] desk:min-w-[450px] desk:w-[37%]" />
+                )}
                 <MarkedList
                     items={text as ListTextItemType[]}
                     searchTerm={searchTerm}
