@@ -57,7 +57,7 @@ export const ArrowedBlockContent = ({
                 })}
             </div>
             <div className="min-w-[76px] w-[26%] tab:min-w-[76px] tab:w-[11%] tab:max-w-[110px] pc:min-w-[110px] pc:w-[10%] desk:min-w-[110px] desk:w-[8%] mx-auto mt-8 tab:mt-[4.5rem] pc:mt-[8.25rem] desk:mt-32 text-redLight dark:text-red">
-                <IconQADecoration className="tab:sticky tab:top-0" />
+                <IconQADecoration className="tab:sticky tab:top-[80px] pc:top-0" />
             </div>
         </div>
     );
