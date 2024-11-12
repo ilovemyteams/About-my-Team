@@ -1,23 +1,26 @@
 import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
-import React from "react";
 
 import { urlForImage } from "@/sanity/lib/image";
 
 import { NoImageHeart } from "../NoImageHeart";
 
 interface ImageComponentProps {
-    image: string | undefined | null;
+    src: string | undefined | null;
     alt?: string | undefined | null;
+    blurUrl?: string | undefined | null;
     className?: string;
+    sizes?: string;
 }
 
 export const ImageComponent = ({
-    image,
+    src,
     alt,
+    blurUrl,
     className,
+    sizes = "45vw",
 }: ImageComponentProps) => {
-    if (!image) {
+    if (!src) {
         return (
             <div
                 className={`bg-CTAGradientLight dark:bg-CTAGradient ${className}`}
@@ -27,9 +30,8 @@ export const ImageComponent = ({
         );
     }
 
-    const dimensions = getImageDimensions(image);
-    const url = urlForImage(image).auto("format").fit("max").url();
-    const blurUrl = urlForImage(image).width(20).blur(10).url();
+    const dimensions = getImageDimensions(src);
+    const url = urlForImage(src).auto("format").fit("max").url();
 
     return (
         <div className={`relative ${className}`}>
@@ -37,11 +39,11 @@ export const ImageComponent = ({
                 src={url}
                 width={dimensions.width}
                 height={dimensions.height}
-                sizes="(max-width: 768px) 540px, (max-width: 1280px) 400px, (max-width: 1540) 630px, 730px"
-                alt={alt || "alt"}
+                sizes={`(max-width: 768px), 540px, ${sizes}`}
+                alt={alt || "An image without description"}
                 className="object-cover w-full h-full"
                 placeholder="blur"
-                blurDataURL={blurUrl}
+                blurDataURL={blurUrl || ""}
             />
         </div>
     );

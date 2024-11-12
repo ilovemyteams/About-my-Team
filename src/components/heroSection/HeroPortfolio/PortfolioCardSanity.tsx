@@ -15,8 +15,9 @@ export const PortfolioCardSanity = ({
                         pc:w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428] deskxl:max-w-[668px] bg-CTAGradientLight dark:bg-CTAGradient"
         >
             <ImageComponent
-                image={sanityData.image?.asset}
+                src={sanityData.image?.asset}
                 alt={sanityData.image?.caption.toString()}
+                blurUrl={sanityData.image?.lqip}
                 className="w-full h-full"
             />
 

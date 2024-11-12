@@ -5,7 +5,7 @@ export const homeHeroQuery = groq`
   hero {
     "title": title[_key == $language][0].value,
     "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
-    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
+    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url, "lqip": image.asset -> metadata.lqip},
     "category":category->categoryName[_key == $language][0].value,
     _id}
   }
