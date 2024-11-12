@@ -7,6 +7,7 @@ export const IconQADecoration = ({ className }: IconProps) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
+            aria-label="list content pointer icon"
         >
             <g clipPath="url(#clip0_12080_24128)">
                 <path
