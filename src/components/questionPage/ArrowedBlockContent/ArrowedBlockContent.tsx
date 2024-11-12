@@ -42,7 +42,7 @@ export const ArrowedBlockContent = ({
                             className="text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
                         >
                             <HighlightText
-                                text={piece}
+                                text={piece as string}
                                 toBeHighlighted={searchTerm}
                             />
                         </p>
