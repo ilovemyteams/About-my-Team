@@ -1532,7 +1532,7 @@ export const questionsData: QAItemType[] = [
             slug: "do-you-provide-post-launch-support",
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
+                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
         },
         ua: {
             questionText:
@@ -1625,26 +1625,9 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Погодинну оплату",
-                                    text: [
-                                        "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Абонентське обслуговування",
-                                    text: [
-                                        "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
-                                    ],
-                                },
+                                "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
+                                "- Погодинну оплату: Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
+                                "- Абонентське обслуговування: Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
                             ],
                         },
                     ],
@@ -1739,26 +1722,9 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
                             text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "Oferujemy różne opcje wsparcia, które mogą obejmować:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Opłatę godzinową",
-                                    text: [
-                                        "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Abonament serwisowy",
-                                    text: [
-                                        " To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
-                                    ],
-                                },
+                                "Oferujemy różne opcje wsparcia, które mogą obejmować:",
+                                "- Opłatę godzinową: Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
+                                "- Abonament serwisowy: To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
                             ],
                         },
                     ],
@@ -1853,26 +1819,9 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
                             text: [
-                                {
-                                    type: "none",
-                                    text: [
-                                        "We offer various support options, which may include:",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Hourly payment",
-                                    text: [
-                                        "Ideal if you need support for short-term tasks or fixing specific issues.",
-                                    ],
-                                },
-                                {
-                                    type: "listItem",
-                                    title: "Subscription service",
-                                    text: [
-                                        "This option is for those who require regular monitoring, updates, and long-term support.",
-                                    ],
-                                },
+                                "We offer various support options, which may include:",
+                                "- Hourly payment: Ideal if you need support for short-term tasks or fixing specific issues.",
+                                "- Subscription service: This option is for those who require regular monitoring, updates, and long-term support.",
                             ],
                         },
                     ],
