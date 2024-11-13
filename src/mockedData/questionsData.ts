@@ -1720,7 +1720,11 @@ export const questionsData: QAItemType[] = [
                     title: "Jak zamówić?",
                     data: [
                         {
-                            title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                            text: [
+                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                            ],
+                        },
+                        {
                             text: [
                                 "Oferujemy różne opcje wsparcia, które mogą obejmować:",
                                 "- Opłatę godzinową: Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
@@ -1817,7 +1821,11 @@ export const questionsData: QAItemType[] = [
                     title: "How to order?",
                     data: [
                         {
-                            title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+                            text: [
+                                "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+                            ],
+                        },
+                        {
                             text: [
                                 "We offer various support options, which may include:",
                                 "- Hourly payment: Ideal if you need support for short-term tasks or fixing specific issues.",
