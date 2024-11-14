@@ -122,7 +122,7 @@
         "question4": "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
         "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
         "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
-        "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn."    
+        "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn."
     },
     "Search": {
         "noAnswerFound": "Niestety dla „{searchTerm}” nic nie znaleziono",
@@ -283,7 +283,7 @@
         "text": "Śledź nas i dowiaduj się jako pierwszy o aktualizacjach."
     },
     "SomeFaqPage": {
-        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna?</purple><br></br> Umieść serduszko i <purple>podziel się</purple> nią z kolegami! Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści.</purple>",
+        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna?</purple><br></br> Umieść serduszko i <purple>podziel się</purple> nią <purple>z kolegami!</purple> Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści.</purple>",
         "allQuestionBack": "wszystkie pytania",
         "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
         "orderCardImgAlt": "Zamówić usługi",
