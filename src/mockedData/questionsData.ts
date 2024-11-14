@@ -872,10 +872,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Як отримати детальний розрахунок?",
+                    data: [
+                        {
+                            text: [
+                                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
-                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки. Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
+                "Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
             ],
         },
         pl: {
@@ -976,10 +991,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Jak uzyskać szczegółową kalkulację?",
+                    data: [
+                        {
+                            text: [
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
-                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki. Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
+                "Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
             ],
         },
         en: {
@@ -1078,10 +1108,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "How to get a detailed calculation?",
+                    data: [
+                        {
+                            text: [
+                                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
-                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate. Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
+                "Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
             ],
         },
     },
