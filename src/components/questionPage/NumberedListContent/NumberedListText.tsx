@@ -53,7 +53,10 @@ export const NumberedListText = ({
             <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                 {text.title && (
                     <span className="font-caviar font-bold mr-2">
-                        {text.title}
+                        <HighlightText
+                            text={text.title}
+                            toBeHighlighted={searchTerm}
+                        />
                     </span>
                 )}
                 {text.text.map((text, index) => (

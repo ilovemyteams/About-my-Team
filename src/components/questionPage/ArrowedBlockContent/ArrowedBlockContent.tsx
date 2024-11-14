@@ -2,7 +2,7 @@ import { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { HighlightText } from "../../shared/Search/HighlightText";
-
+import { ArrowedText } from "./ArrowedText";
 interface ArrowedBlockContentProps {
     content: LongAnswerListType;
     searchTerm: string;
@@ -13,8 +13,6 @@ export const ArrowedBlockContent = ({
     searchTerm,
 }: ArrowedBlockContentProps) => {
     const { title, data } = content;
-    const subtitle = data[0].text.join("");
-    const pieces = data[1].text;
 
     return (
         <div className="pc:pb-[60px] flex flex-col tab:flex-row">
@@ -27,27 +25,15 @@ export const ArrowedBlockContent = ({
                         />
                     </h2>
                 )}
-                {subtitle && (
-                    <p className=" mb-5 tab:mb-6 desk:mb-10 text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                        <HighlightText
-                            text={subtitle}
-                            toBeHighlighted={searchTerm}
+                <ul>
+                    {data.map((item, index) => (
+                        <ArrowedText
+                            searchTerm={searchTerm}
+                            data={item.text}
+                            key={index}
                         />
-                    </p>
-                )}
-                {pieces.map((piece, idx) => {
-                    return (
-                        <p
-                            key={idx}
-                            className="text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
-                        >
-                            <HighlightText
-                                text={piece as string}
-                                toBeHighlighted={searchTerm}
-                            />
-                        </p>
-                    );
-                })}
+                    ))}
+                </ul>
             </div>
             <div className="w-[76px] pc:w-[110px] mx-auto mt-8 tab:mt-[4.5rem] pc:mt-[8.25rem] desk:mt-32 text-redLight dark:text-red">
                 <IconQADecoration className="tab:sticky tab:top-[88px] pc:top-2" />
