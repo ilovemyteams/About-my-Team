@@ -13,10 +13,7 @@ export const searchFilteringForFAQ = (
     searchValue: string
 ) => {
     const data = question[locale as LocaleType];
-    const lowerCasedSearchTerm = searchValue
-        .toString()
-        // .replace(/[-\\/\\^$*+?.()|[\]{}<>:;"'`%&_#]/g, "\\$&")
-        .toLowerCase();
+    const lowerCasedSearchTerm = searchValue.toString().toLowerCase();
 
     const questionText = cleanText(data.questionText);
     const shortAnswerText = cleanText(data.shortAnswerText.join(""));
