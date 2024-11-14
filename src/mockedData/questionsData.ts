@@ -1885,4 +1885,389 @@ export const questionsData: QAItemType[] = [
             ],
         },
     },
+    {
+        data: {
+            image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
+            likes: 0,
+            slug: "what-is-a-landing-page-and-who-needs-it",
+
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
+        },
+        ua: {
+            questionText: "Що таке лендінг? І кому він потрібен?",
+            imageAltText: "Що таке лендінг? І кому він потрібен?",
+            shortAnswerText: [
+                "Лендінг, або посадкова сторінка, — це спеціально розроблена вебсторінка,  де вся інформація розміщена на одній сторінці, яка спрямована на досягнення конкретної мети: перетворити відвідувачів у клієнтів, підписників або учасників. На відміну від багатосторінкових сайтів, лендінг має чітку структуру, де інформація подана лаконічно і продумано, з метою привернути увагу до конкретного продукту, послуги чи пропозиції.",
+            ],
+            fullAnswerTopText: [
+                "Основна мета лендінгу — отримання швидкого результату: це може бути покупка, підписка, реєстрація або замовлення дзвінка, тощо. Тому лендінг зазвичай не перевантажують зайвою інформацією чи елементами навігації, а подають матеріал послідовно, щоб спрямувати користувача до конкретної дії.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Переваги лендінгу",
+                    data: [
+                        {
+                            title: "Фокус на результаті",
+                            text: [
+                                "Лендінг має єдину мету, тому увага користувача концентрується на головному, що знижує вірогідність відволікання та збільшує шанс залучення клієнта/підписника/учасника.",
+                            ],
+                        },
+                        {
+                            title: "Простота та швидкість створення",
+                            text: [
+                                "Розробка лендінгу часто займає менше часу і ресурсів порівняно зі створенням багатосторінкового сайту. Його структура більш лаконічна, тому він швидше налаштовується та запускається в роботу.",
+                            ],
+                        },
+                        {
+                            title: "Адаптивність та гнучкість",
+                            text: [
+                                "Лендінги можна легко оптимізувати під мобільні пристрої, змінювати чи тестувати різні варіанти дизайну та контенту, щоб визначити, який з них працює найкраще.",
+                            ],
+                        },
+                        {
+                            title: "Збільшення конверсії",
+                            text: [
+                                "Завдяки чіткому фокусу на конкретній дії, лендінг допомагає досягти вищого рівня конверсії у порівнянні зі звичайними сайтами, де користувачі можуть відволіктися на додатковий контент.",
+                            ],
+                        },
+                        {
+                            title: "Легкість аналітики та оптимізації",
+                            text: [
+                                "На лендінгу простіше аналізувати поведінку користувачів (наприклад, за допомогою теплових карт, клікових зон, часу на сторінці), що дозволяє швидко вносити зміни для покращення результатів.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Для кого може бути корисним лендінг?",
+                    data: [
+                        {
+                            title: "Лендінг буде корисним для підприємців, що прагнуть швидко запустити свої продукти, та компаній, які хочуть підвищити свою впізнаваність і довіру клієнтів. Він ідеально підходить для стартапів, малого та середнього бізнесу, а також для всіх, хто шукає ефективне рішення для презентації продукту чи послуги без великих затрат на розробку. Детальніше про переваги читайте нижче.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Фрилансери та спеціалісти",
+                                    text: [
+                                        "Лендінг може бути чудовим варіантом для самопрезентації фахівців у різних сферах: коучів, рекрутерів, юристів, менторів, консультантів, тощо. Він допоможе у  просуванні свого соло-бізнесу та формуванні  особистого бренду.",
+                                    ],
+                                },
+                                {
+                                    title: "Стартапи",
+                                    text: [
+                                        "Для стартапів важливо якомога швидше привернути увагу до своєї ідеї та зібрати базу користувачів. Лендінг допоможе презентувати продукт, зібрати попередні замовлення або запросити користувачів на бета-тестування.",
+                                    ],
+                                },
+                                {
+                                    title: "Малий та середній бізнес",
+                                    text: [
+                                        "Лендінг — ідеальне рішення для бізнесів, які прагнуть швидко протестувати ринок або новий продукт. Він дозволяє з мінімальними витратами вийти на ринок, протестувати попит, зібрати контакти та провести акцію.",
+                                    ],
+                                },
+                                {
+                                    title: "Організатори заходів",
+                                    text: [
+                                        "Лендінг ідеально підходить для розкрутки подій, таких як конференції, семінари чи вебінари, концерти, виставки або майстер-класи. На сторінці можна розмістити ключову інформацію про подію, спікерів, програму та форму для реєстрації.",
+                                    ],
+                                },
+                                {
+                                    title: "Інтернет-магазини",
+                                    text: [
+                                        "Для акцій чи розпродажів інтернет-магазини часто створюють лендінги, що присвячені конкретним продуктам або сезонним пропозиціям. Це допомагає зосередити увагу на певних товарах та спонукати клієнтів до швидкої покупки.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Терміни та Вартість",
+                    data: [
+                        {
+                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 500$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами).Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Складність дизайну:",
+                                    text: [
+                                        "Якщо потрібен унікальний, індивідуально розроблений дизайн, ціна буде вищою, ніж для простого шаблонного рішення.",
+                                    ],
+                                },
+                                {
+                                    title: "Функціональність:",
+                                    text: [
+                                        "Інтеграція з CRM, анімації, форми зворотного зв'язку, адаптивність для мобільних пристроїв та інші додаткові елементи підвищують вартість.",
+                                    ],
+                                },
+                                {
+                                    title: "Терміновість:",
+                                    text: [
+                                        "Якщо проєкт потрібно виконати у стислі терміни, це також може вплинути на ціну.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Лендінг — це потужний інструмент для бізнесу, який допомагає швидко і ефективно досягти конкретної мети, будь-то продаж, збір контактів чи реєстрація на подію. Його переваги у фокусованості, простоті та високій залученості користувачів роблять лендінг незамінним засобом для багатьох типів бізнесів та ініціатив.",
+            ],
+        },
+        pl: {
+            questionText: "Czym jest landing page i kto go potrzebuje?",
+            imageAltText: "Czym jest landing page i kto go potrzebuje?",
+            shortAnswerText: [
+                "Landing page, czyli strona docelowa, to specjalnie zaprojektowana strona internetowa, na której wszystkie informacje są umieszczone na jednej stronie, która ma na celu osiągnięcie określonego celu: przekształcenie odwiedzających w klientów, subskrybentów lub uczestników. W przeciwieństwie do wielostronicowych stron internetowych, landing page ma przejrzystą strukturę, w której informacje są prezentowane w sposób zwięzły i przemyślany, aby zwrócić uwagę na konkretny produkt, usługę lub ofertę.",
+            ],
+            fullAnswerTopText: [
+                "Głównym celem landing page jest uzyskanie szybkiego rezultatu: może to być zakup, subskrypcja, rejestracja lub zamówienie rozmowy telefonicznej. Dlatego też strony docelowe zazwyczaj nie są przeładowane niepotrzebnymi informacjami lub elementami nawigacyjnymi, ale raczej prezentują materiał sekwencyjnie, aby skierować użytkownika do określonej akcji.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Zalety stron docelowych",
+                    data: [
+                        {
+                            title: "Skupienie na wyniku",
+                            text: [
+                                "Strona docelowa ma jeden cel, więc uwaga użytkownika jest skupiona na głównej rzeczy, co zmniejsza prawdopodobieństwo rozproszenia uwagi i zwiększa szansę na pozyskanie klienta/subskrybenta/uczestnika.",
+                            ],
+                        },
+                        {
+                            title: "Prostota i szybkość tworzenia",
+                            text: [
+                                "Stworzenie landing page'a często zajmuje mniej czasu i zasobów niż stworzenie wielostronicowej strony internetowej. Jego struktura jest bardziej zwięzła, więc jest szybszy w konfiguracji i uruchomieniu.",
+                            ],
+                        },
+                        {
+                            title: "Możliwość dostosowania i elastyczność",
+                            text: [
+                                "Strony docelowe można łatwo zoptymalizować pod kątem urządzeń mobilnych, zmienić lub przetestować różne opcje projektu i treści, aby znaleźć najbardziej skuteczne rozwiązanie.",
+                            ],
+                        },
+                        {
+                            title: "Zwiększenie konwersji",
+                            text: [
+                                "Ze względu na wyraźne skupienie na konkretnym działaniu, strona docelowa pomaga osiągnąć wyższy poziom konwersji w porównaniu do zwykłych stron internetowych, gdzie użytkownicy mogą być rozpraszani przez dodatkowe treści.",
+                            ],
+                        },
+                        {
+                            title: "Łatwa analityka i optymalizacja",
+                            text: [
+                                "Łatwiej jest analizować zachowanie użytkowników na landing page'u (na przykład za pomocą map cieplnych, stref kliknięć, czasu spędzonego na stronie), co pozwala na szybkie wprowadzanie zmian w celu poprawy wyników.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Dla kogo może być przydatny landing page?",
+                    data: [
+                        {
+                            title: "Strona docelowa jest przydatna dla przedsiębiorców, którzy chcą szybko wprowadzić swoje produkty na rynek oraz firm, które chcą zwiększyć swoją widoczność i zaufanie klientów. Jest to idealne rozwiązanie dla startupów, małych i średnich firm oraz każdego, kto szuka skutecznego rozwiązania do prezentacji produktu lub usługi bez wysokich kosztów rozwoju. Przeczytaj więcej o korzyściach poniżej.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Freelancerzy i specjaliści",
+                                    text: [
+                                        "Landing page może być świetną opcją do autoprezentacji specjalistów z różnych dziedzin: coachów, rekruterów, prawników, mentorów, konsultantów itp. w celu promowania ich solowej działalności i budowania marki osobistej.",
+                                    ],
+                                },
+                                {
+                                    title: "Start-upy",
+                                    text: [
+                                        "Dla startupów ważne jest jak najszybsze zwrócenie uwagi na swój pomysł i zebranie bazy użytkowników. Strona docelowa pomoże zaprezentować produkt, zebrać zamówienia w przedsprzedaży lub zaprosić użytkowników do testów beta.",
+                                    ],
+                                },
+                                {
+                                    title: "Małe i średnie przedsiębiorstwa",
+                                    text: [
+                                        "Landing page to idealne rozwiązanie dla firm, które chcą szybko przetestować rynek lub nowy produkt. Pozwala z minimalnymi kosztami wejść na rynek, sprawdzić popyt, zebrać kontakty i zorganizować promocję.",
+                                    ],
+                                },
+                                {
+                                    title: "Organizatorzy wydarzeń",
+                                    text: [
+                                        "Landing page sprawdza się doskonale przy promocji wydarzeń, takich jak konferencje, seminaria, webinary, koncerty, wystawy czy warsztaty. Można tam umieścić kluczowe informacje o wydarzeniu, prelegentach, programie oraz formularz rejestracyjny.",
+                                    ],
+                                },
+                                {
+                                    title: "Sklepy internetowe",
+                                    text: [
+                                        "Na potrzeby akcji promocyjnych czy wyprzedaży sklepy internetowe często tworzą landing page dedykowane konkretnym produktom lub ofertom sezonowym. Pomaga to skupić uwagę na wybranych towarach i zachęcić klientów do szybkiego zakupu.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Terminy i Koszty",
+                    data: [
+                        {
+                            title: "Terminy i koszty stworzenia strony docelowej mogą się różnić w zależności od stopnia skomplikowania projektu, wymagań klienta oraz szczególnych potrzeb dotyczących projektu i funkcjonalności. Średnio, wykonanie standardowej strony docelowej zajmuje od 2 do 6 tygodni. \nKoszt stworzenia strony docelowej zazwyczaj zaczyna się od 500 USD i może wzrosnąć w zależności od zawartości (projekt szablonowy/indywidualny/unikalny, podstawowe informacje, minimalna funkcjonalność, podstawowa interaktywność, responsywność, zaawansowana animacja, integracja z CRM i innymi systemami). \nOstateczna cena i terminy realizacji są ustalane dopiero po omówieniu wszystkich wymagań i preferencji klienta. Ogólnie, koszty i czas realizacji zależą od następujących czynników:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Złożoność projektu:",
+                                    text: [
+                                        "Jeśli potrzebny jest unikalny, indywidualnie zaprojektowany wygląd, cena będzie wyższa niż w przypadku prostego rozwiązania szablonowego.",
+                                    ],
+                                },
+                                {
+                                    title: "Funkcjonalność:",
+                                    text: [
+                                        "Integracje z CRM, animacje, formularze kontaktowe, responsywność na urządzeniach mobilnych i inne dodatkowe elementy zwiększają całkowity koszt.",
+                                    ],
+                                },
+                                {
+                                    title: "Pilność:",
+                                    text: [
+                                        "Jeśli projekt musi być zrealizowany w krótkim terminie, może to również wpłynąć na cenę.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Strona docelowa to potężne narzędzie dla firm, które pozwala szybko i efektywnie osiągnąć konkretne cele, takie jak sprzedaż, zbieranie kontaktów czy rejestracja na wydarzenie. Jej zalety to ukierunkowanie, prostota i wysoki poziom zaangażowania użytkowników, co sprawia, że jest nieocenionym narzędziem dla wielu typów biznesów i inicjatyw.",
+            ],
+        },
+        en: {
+            questionText: "What is a landing page and who needs it?",
+            imageAltText: "What is a landing page and who needs it?",
+            shortAnswerText: [
+                "A landing page is a specially designed webpage where all information is presented on a single page, focused on achieving a specific goal: converting visitors into clients, subscribers, or participants. Unlike multi-page websites, a landing page has a clear structure where information is presented concisely and thoughtfully to draw attention to a specific product, service, or offer.",
+            ],
+            fullAnswerTopText: [
+                "The main goal of a landing page is to achieve a quick result—this could be a purchase, subscription, registration, or callback request. Thus, landing pages are typically free from excess information or navigation elements, presenting content sequentially to guide the user toward a specific action.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Advantages of a landing page",
+                    data: [
+                        {
+                            title: "Focus on results",
+                            text: [
+                                "A landing page has a single goal, so the user's attention is focused on the main thing, which reduces the likelihood of distraction and increases the chance of attracting a client/subscriber/participant.",
+                            ],
+                        },
+                        {
+                            title: "Simplicity and speed of creation",
+                            text: [
+                                "Developing a landing page often requires less time and resources than building a multipage website. Its streamlined structure allows for quicker setup and launch.",
+                            ],
+                        },
+                        {
+                            title: "Adaptability and flexibility",
+                            text: [
+                                "Landing pages can be easily optimized for mobile devices, changed or tested with different design and content options to find the most effective version.",
+                            ],
+                        },
+                        {
+                            title: "Increase conversion rates",
+                            text: [
+                                "Due to the clear focus on a specific action, landing pages help to achieve a higher conversion rate compared to regular websites where users can be distracted by additional content.",
+                            ],
+                        },
+                        {
+                            title: "Easy analytics and optimization",
+                            text: [
+                                "It is easier to analyze user behavior on a landing page (for example, using heatmaps, click zones, time on a page), which allows you to quickly make changes to improve results.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Who Can Benefit from a Landing Page?",
+                    data: [
+                        {
+                            title: "The landing page will be useful for entrepreneurs who want to launch their products quickly and companies that want to increase their visibility and customer trust. It is ideal for startups, small and medium-sized businesses, and anyone looking for an effective solution to present a product or service without high development costs. Read more about the benefits below.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Freelancers and specialists",
+                                    text: [
+                                        "A landing page can be an excellent self-presentation tool for specialists like coaches, recruiters, lawyers, mentors, and consultants to promote their solo business and build a personal brand.",
+                                    ],
+                                },
+                                {
+                                    title: "Startups",
+                                    text: [
+                                        "For startups, it is important to draw attention to their idea as soon as possible and gather a user base. A landing page helps showcase a product, gather pre-orders, or invite users to beta testing.",
+                                    ],
+                                },
+                                {
+                                    title: "Small and medium-sized businesses",
+                                    text: [
+                                        "A landing page is an ideal solution for businesses that want to quickly test a market or a new product. It allows companies to enter the market, test demand, collect contacts, and conduct a promotion with minimal costs.",
+                                    ],
+                                },
+                                {
+                                    title: "Event organizers",
+                                    text: [
+                                        "Perfect for promoting events like conferences, seminars, webinars, concerts, exhibitions, or workshops. It can provide key event details, speaker info, program highlights, and a registration form.",
+                                    ],
+                                },
+                                {
+                                    title: "E-commerce sites.",
+                                    text: [
+                                        "For promotions or sales, e-commerce sites often create landing pages dedicated to specific products or seasonal offers. This helps to focus attention on certain products and encourage customers to make a quick purchase.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Timelines and Costs",
+                    data: [
+                        {
+                            title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $500 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Design Complexity: ",
+                                    text: [
+                                        "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
+                                    ],
+                                },
+                                {
+                                    title: "Functionality:",
+                                    text: [
+                                        "Integrations with CRM, animations, feedback forms, mobile responsiveness, and other added elements increase the overall cost.",
+                                    ],
+                                },
+                                {
+                                    title: "Urgency:",
+                                    text: [
+                                        "If the project needs to be completed within a tight deadline, this may also impact the price.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "A landing page is a powerful tool for businesses, enabling them to quickly and effectively achieve specific goals, whether it’s sales, contact collection, or event registration. Its advantages lie in its focus, simplicity, and high user engagement, making it an essential asset for many types of businesses and initiatives.",
+            ],
+        },
+    },
 ];
