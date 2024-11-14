@@ -31,7 +31,7 @@ export const ArrowedText = ({ data, searchTerm }: ArrowedTextProps) => {
                         <span className="font-caviar font-bold">- </span>
                     )}
                     {title && (
-                        <span className="font-caviar font-bold mr-2">
+                        <span className="font-caviar dark:text-white-200 text-purple-200 font-bold mr-2">
                             <HighlightText
                                 text={title}
                                 toBeHighlighted={searchTerm}
