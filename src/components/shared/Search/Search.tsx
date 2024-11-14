@@ -18,10 +18,7 @@ export const Search = () => {
     const { replace } = useRouter();
 
     const handleSearch = useDebouncedCallback(() => {
-        const sanitizedValue = inputValue
-            .trim()
-            .replace(/[-\\/\\^$*+?.()|[\]{}<>:;"'`%&_#]/g, "\\$&")
-            .replace(/\s+/g, " ");
+        const sanitizedValue = inputValue.trim().replace(/\s+/g, " ");
 
         const params = new URLSearchParams(searchParams);
         sanitizedValue

@@ -872,10 +872,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Як отримати детальний розрахунок?",
+                    data: [
+                        {
+                            text: [
+                                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
-                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки. Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
+                "Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
             ],
         },
         pl: {
@@ -976,10 +991,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Jak uzyskać szczegółową kalkulację?",
+                    data: [
+                        {
+                            text: [
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
-                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki. Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
+                "Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
             ],
         },
         en: {
@@ -1078,10 +1108,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "How to get a detailed calculation?",
+                    data: [
+                        {
+                            text: [
+                                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
-                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate. Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
+                "Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
             ],
         },
     },
@@ -1158,7 +1203,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Tworzenie \nzespołu",
                             text: [
-                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/order`*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
+                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
                             ],
                         },
                         {
@@ -1197,7 +1242,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Forming \na team",
                             text: [
-                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/order`*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
+                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`/${locale}/order` noblank*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
                             ],
                         },
                         {
@@ -1620,14 +1665,31 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого Менеджера. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
+                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого *link=`/${locale}/order` noblank*Менеджера*/link*. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
                             ],
                         },
                         {
                             text: [
-                                "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
-                                "- Погодинну оплату: Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
-                                "- Абонентське обслуговування: Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
+                                {
+                                    type: "none",
+                                    text: [
+                                        "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Погодинну оплату:",
+                                    text: [
+                                        "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Абонентське обслуговування:",
+                                    text: [
+                                        "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
+                                    ],
+                                },
                             ],
                         },
                     ],
@@ -1721,14 +1783,31 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
                             ],
                         },
                         {
                             text: [
-                                "Oferujemy różne opcje wsparcia, które mogą obejmować:",
-                                "- Opłatę godzinową: Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
-                                "- Abonament serwisowy: To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
+                                {
+                                    type: "none",
+                                    text: [
+                                        "Oferujemy różne opcje wsparcia, które mogą obejmować:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Opłatę godzinową:",
+                                    text: [
+                                        "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Abonament serwisowy",
+                                    text: [
+                                        "To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
+                                    ],
+                                },
                             ],
                         },
                     ],
@@ -1822,14 +1901,31 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+                                "To order support services or request a consultation, you will need to contact our *link=`/${locale}/order` noblank*Manager*/link*. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
                             ],
                         },
                         {
                             text: [
-                                "We offer various support options, which may include:",
-                                "- Hourly payment: Ideal if you need support for short-term tasks or fixing specific issues.",
-                                "- Subscription service: This option is for those who require regular monitoring, updates, and long-term support.",
+                                {
+                                    type: "none",
+                                    text: [
+                                        "We offer various support options, which may include:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Hourly payment:",
+                                    text: [
+                                        "Ideal if you need support for short-term tasks or fixing specific issues.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Subscription service:",
+                                    text: [
+                                        "This option is for those who require regular monitoring, updates, and long-term support.",
+                                    ],
+                                },
                             ],
                         },
                     ],
@@ -1842,12 +1938,12 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
+            image: "https://drive.google.com/thumbnail?id=14rx3LkP6tBoovJ7IWzgz866J92PAXzO3",
             likes: 0,
             slug: "what-is-a-landing-page-and-who-needs-it",
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
+                "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
         },
         ua: {
             questionText: "Що таке лендінг? І кому він потрібен?",
@@ -1943,7 +2039,7 @@ export const questionsData: QAItemType[] = [
                     title: "Терміни та Вартість",
                     data: [
                         {
-                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 500$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами).Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
+                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 500$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами). Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
                             type: "list",
                             decorate: 2,
                             text: [
