@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { IconProps } from "../../../../types/iconProps.interface";
 
 export const IconQADecoration = ({ className }: IconProps) => {
-    const duration = 0.6;
+    const duration = 1;
 
     const pathArray = [
         "M101.231 78.5L55 116.354L8.76851 78.5L101.231 78.5Z",
@@ -31,7 +31,7 @@ export const IconQADecoration = ({ className }: IconProps) => {
                             stroke="currentColor"
                             key={index}
                             animate={{
-                                opacity: [0.3, 1],
+                                opacity: [0.1, 1],
                             }}
                             transition={{
                                 duration: duration,
