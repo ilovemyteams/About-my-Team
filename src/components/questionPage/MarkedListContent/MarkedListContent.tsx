@@ -23,7 +23,7 @@ export const MarkedListContent = ({ content, searchTerm }: MarkedListProps) => {
                 </h2>
             )}
             {subtitle && (
-                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
+                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
                     <HighlightText
                         text={subtitle}
                         toBeHighlighted={searchTerm}
