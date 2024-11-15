@@ -271,7 +271,7 @@ export const questionsData: QAItemType[] = [
             likes: 0,
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=13THxu-gcpA6q0JDh7Gic_zmWCv2Jr-Fu",
+                "https://drive.google.com/uc?export=view&id=1w-ptFNQYq3RzJ0B0JhPyntTrQYkTmJZJ",
         },
         ua: {
             questionText: "Що обрати - лендінг чи повноцінний сайт?",
@@ -1261,7 +1261,7 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=1DbKuVlDkkt9n-CveHBqHM5-Cq7bsoc60",
+            image: "https://drive.google.com/uc?export=view&id=1ycJoTvrsL86jRac6Mxe44nEHD5OYkS2W",
             likes: 0,
             slug: "can-i-make-changes-during-the-development-process",
             answerOrderImage:
@@ -1938,10 +1938,9 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/thumbnail?id=14rx3LkP6tBoovJ7IWzgz866J92PAXzO3",
+            image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
             likes: 0,
             slug: "what-is-a-landing-page-and-who-needs-it",
-
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
         },
