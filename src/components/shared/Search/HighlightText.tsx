@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useLocale } from "next-intl";
 import { ReactElement } from "react";
 
+import { escapeSpecSymbolsInSearch } from "@/src/utils/escapeSpecSymbolsInSearch";
 import type { LocaleType } from "@/types/LocaleType";
 
 type HighlightTextProps = {
@@ -100,7 +101,11 @@ export const HighlightText = ({
     ): (string | ReactElement)[] => {
         if (!searchTerm) return [text];
 
-        const words = searchTerm.split(/\s+/).filter(Boolean);
+        const words = searchTerm
+            .split(/\s+/)
+            .filter(Boolean)
+            .map(escapeSpecSymbolsInSearch);
+
         const regex = new RegExp(`(${words.join("|")})`, "gi");
 
         return text

@@ -1650,12 +1650,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "AntonChertok",
-            projectId: ["3"],
+            projectId: ["3", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=16evkhxhlshI1i5u9n-Gus4vQebOq3bLt",
             position: "Front-end Developer",
             categoryName: "developer",
-            projectsExperience: ["theatermag.com.ua"],
+            projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
             pricePerHour: "9",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/anton-chertok/",
@@ -1703,12 +1703,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "DmytroBulakhov",
-            projectId: ["3"],
+            projectId: ["3", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lii6aMputmuNrLFHNIZN7aoq8uNw7ipt",
             position: "Front-end Developer",
             categoryName: "developer",
-            projectsExperience: ["theatermag.com.ua"],
+            projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
             pricePerHour: "9",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/dmytro-bulakhov/",
@@ -1855,12 +1855,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "OleksandrMeshcherskyi",
-            projectId: ["3"],
+            projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=12N2hSCNCiHj2v__i5SCk5bfepXtBwyuW",
             position: "Fullstack Developer",
             categoryName: "developer",
-            projectsExperience: ["theatermag.com.ua"],
+            projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
             pricePerHour: "9",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/alexandr-mescherskiy/",
@@ -2267,6 +2267,55 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Ręczne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie międzyplatformowe, badanie produktu, analiza domeny, testowanie ról dostępu, testowanie eksploracyjne, testowanie regresyjne. Dokumentacja: historia użytkownika, plan testów, strategia testów, lista kontrolna, przypadek testowy, raport o błędzie, raport z testów.",
             team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "EugeneSiedinin",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1FzHrVfH0Uf5rE-p0HKGiR1SWwMaNMaZx",
+            position: "QA engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/eugene-sedinin/",
+                telegram: "https://t.me/Siedinin",
+                github: "https://github.com/qaEug",
+            },
+            tools: [
+                "Jira",
+                "Postman",
+                "Swagger",
+                "DBeaver",
+                "SQL",
+                "Terminal",
+                "Git",
+                "DevTools",
+                "VSCode",
+            ],
+        },
+        ua: {
+            name: "Євген Сєдінін",
+            about: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
+            services:
+                "Ручне тестування, десктоп та мобільне тестування, API тестування, робота з тестовою документацією (тест кейс, чекліст, баг репорт).",
+            team: "Smachno! na seli",
+        },
+        en: {
+            name: "Eugene Siedinin",
+            about: "QA weaves a fine thread through all the intricacies of IT.",
+            services:
+                "Manual testing, desktop and mobile testing, API testing, work with test documentation (test case, checklist, bug report).",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Eugene Siedinin",
+            about: "QA cienką nicią przechodzi przez wszystkie zawiłości IT.",
+            services:
+                "Testowanie manualne, testowanie desktopowe i mobilne, testowanie API, praca z dokumentacją testową (przypadek testowy, lista kontrolna, raport błędu).",
+            team: "Smachno! na seli",
         },
     },
 ];

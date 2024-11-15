@@ -872,10 +872,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Як отримати детальний розрахунок?",
+                    data: [
+                        {
+                            text: [
+                                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
-                "Також ми пропонуємо варіант індивідуальної співпраці з конкретним спеціалістом де вартість розробки/підтримки буде розрахована на основі годинної ставки. Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
+                "Тому перш ніж вибирати розробника, рекомендуємо порівняти кілька пропозицій та вибрати ту, яка найбільше відповідає вашим потребам і бюджету.",
             ],
         },
         pl: {
@@ -976,10 +991,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "Jak uzyskać szczegółową kalkulację?",
+                    data: [
+                        {
+                            text: [
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
-                "Oferujemy również opcję indywidualnej współpracy z wybranym specjalistą, gdzie koszt będzie ustalany na podstawie godzinowej stawki. Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
+                "Przed wyborem dewelopera zalecamy porównać kilka ofert, aby wybrać tę, która najlepiej odpowiada Twoim potrzebom i budżetowi.",
             ],
         },
         en: {
@@ -1078,10 +1108,25 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: 5,
+                    title: "How to get a detailed calculation?",
+                    data: [
+                        {
+                            text: [
+                                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate.",
+                            ],
+                        },
+                    ],
+                },
             ],
             fullAnswerBottomText: [
-                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
-                "We also offer the option of individual collaboration with a specific specialist, where the cost of development/support will be calculated based on an hourly rate. Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
+                "Therefore, before choosing a developer, we recommend comparing several offers and choosing the one that best suits your needs and budget.",
             ],
         },
     },
@@ -1158,7 +1203,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Tworzenie \nzespołu",
                             text: [
-                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/order`*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
+                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
                             ],
                         },
                         {
@@ -1197,7 +1242,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Forming \na team",
                             text: [
-                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/order`*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
+                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`/${locale}/order` noblank*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
                             ],
                         },
                         {
@@ -1532,7 +1577,7 @@ export const questionsData: QAItemType[] = [
             slug: "do-you-provide-post-launch-support",
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
+                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
         },
         ua: {
             questionText:
@@ -1542,117 +1587,117 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Так, ми надаємо підтримку після запуску сайтів, які розробляємо, а також можемо допомогти з підтримкою вже наявних продуктів. Після завершення розробки та запуску проєкту важливо забезпечити його належне функціонування та оперативно реагувати на можливі проблеми, тому ми пропонуємо кілька варіантів підтримки.",
             ],
-            // fullAnswerTopText: [
-            //     "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми розробляємо для вас та підтримка ваших власних продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит.",
-            // ],
-            // fullAnswerContent: [
-            //     {
-            //         layout: 4,
-            //         title: "Підтримка продуктів, які ми розробляємо",
-            //         data: [
-            //             {
-            //                 title: "Для наших клієнтів, які замовляють розробку вебсайту чи інтернет-магазину, ми пропонуємо послуги підтримки на умовах додаткового договору. Це дозволяє вам бути впевненими, що після запуску продукту він продовжуватиме працювати коректно, і будь-які технічні питання чи оновлення будуть вирішені вчасно. В рамках підтримки ми пропонуємо:",
-            //                 type: "list",
-            //                 decorate: 1,
-            //                 text: [
-            //                     {
-            //                         title: "Технічну підтримку",
-            //                         text: [
-            //                             "Ми слідкуємо за тим, щоб ваш сайт працював стабільно, без збоїв та з найвищою швидкістю завантаження. У разі виникнення технічних проблем наша команда швидко вирішить їх і забезпечить безперебійне функціонування сайту.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Оновлення та вдосконалення",
-            //                         text: [
-            //                             "Технології та інструменти постійно змінюються, тому важливо підтримувати ваш продукт в актуальному стані. Ми допоможемо інтегрувати нові функції, виправити помилки, а також провести оновлення системи безпеки, фреймворків та інших компонентів сайту.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Контроль за безпекою",
-            //                         text: [
-            //                             "Після запуску ми можемо забезпечити моніторинг і захист вашого сайту від потенційних загроз, таких як хакерські атаки, шкідливі програми чи віруси. Регулярні оновлення безпеки та моніторинг серверів допоможуть забезпечити високий рівень захищеності.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Оптимізація швидкодії",
-            //                         text: [
-            //                             "З часом ваш сайт може потребувати додаткової оптимізації для покращення швидкості завантаження, особливо якщо ви додаєте нові функції чи контент. Ми можемо допомогти з налаштуваннями та оптимізацією, щоб забезпечити максимальну ефективність роботи сайту.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 4,
-            //         title: "Підтримка наявних продуктів",
-            //         data: [
-            //             {
-            //                 title: "Якщо ваш сайт уже запущений і був розроблений іншою компанією або командою, ми також можемо надати консультацію та допомогу з підтримкою цього продукту. У таких випадках ми оцінюємо, чи є у нас спеціалісти, які володіють необхідними інструментами та фреймворками, щоб працювати з вашим продуктом. Після цього ми можемо запропонувати варіанти підтримки, які включатимуть:",
-            //                 type: "list",
-            //                 decorate: 2,
-            //                 text: [
-            //                     {
-            //                         title: "Аналіз наявної системи",
-            //                         text: [
-            //                             "Першим кроком буде здійснено аналіз того, як налаштований ваш сайт, які технології використовуються та які слабкі місця можуть вимагати уваги.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Рекомендації щодо поліпшень",
-            //                         text: [
-            //                             " Після аналізу ми надамо рекомендації щодо оптимізації, безпеки або функціональних покращень, які допоможуть вашому сайту працювати краще та ефективніше.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Оперативна підтримка",
-            //                         text: [
-            //                             "Якщо у вас виникають технічні проблеми чи необхідні термінові виправлення, ми надаємо допомогу з їх вирішенням. Це може бути вирішення проблем із сервером, внесення змін у код або оновлення плагінів.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 5,
-            //         title: "Як замовити?",
-            //         data: [
-            //             {
-            //                 text: [
-            //                     "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого Менеджера. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
-            //                 ],
-            //             },
-            //             {
-            //                 text: [
-            //                     {
-            //                         type: "none",
-            //                         text: [
-            //                             "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Погодинну оплату",
-            //                         text: [
-            //                             "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Абонентське обслуговування",
-            //                         text: [
-            //                             "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            // ],
-            // fullAnswerBottomText: [
-            //     "Ми готові допомогти вам як із розробкою нових продуктів, так і з підтримкою вже наявних продуктів, щоб забезпечити їх надійну роботу та довговічність. Зв’яжіться з нами для отримання консультації та ми підкажемо  деталі та формати співпраці!",
-            // ],
+            fullAnswerTopText: [
+                "Нижче детальніше описаний кожен з варіантів підтримки, а саме підтримка продуктів, які ми розробляємо для вас та підтримка ваших власних продуктів. Додатково зазначимо, ми відкриті до обговорення і впевнені, що можна знайти варіанти під кожен запит.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Підтримка продуктів, які ми розробляємо",
+                    data: [
+                        {
+                            title: "Для наших клієнтів, які замовляють розробку вебсайту чи інтернет-магазину, ми пропонуємо послуги підтримки на умовах додаткового договору. Це дозволяє вам бути впевненими, що після запуску продукту він продовжуватиме працювати коректно, і будь-які технічні питання чи оновлення будуть вирішені вчасно. В рамках підтримки ми пропонуємо:",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Технічну підтримку",
+                                    text: [
+                                        "Ми слідкуємо за тим, щоб ваш сайт працював стабільно, без збоїв та з найвищою швидкістю завантаження. У разі виникнення технічних проблем наша команда швидко вирішить їх і забезпечить безперебійне функціонування сайту.",
+                                    ],
+                                },
+                                {
+                                    title: "Оновлення та вдосконалення",
+                                    text: [
+                                        "Технології та інструменти постійно змінюються, тому важливо підтримувати ваш продукт в актуальному стані. Ми допоможемо інтегрувати нові функції, виправити помилки, а також провести оновлення системи безпеки, фреймворків та інших компонентів сайту.",
+                                    ],
+                                },
+                                {
+                                    title: "Контроль за безпекою",
+                                    text: [
+                                        "Після запуску ми можемо забезпечити моніторинг і захист вашого сайту від потенційних загроз, таких як хакерські атаки, шкідливі програми чи віруси. Регулярні оновлення безпеки та моніторинг серверів допоможуть забезпечити високий рівень захищеності.",
+                                    ],
+                                },
+                                {
+                                    title: "Оптимізація швидкодії",
+                                    text: [
+                                        "З часом ваш сайт може потребувати додаткової оптимізації для покращення швидкості завантаження, особливо якщо ви додаєте нові функції чи контент. Ми можемо допомогти з налаштуваннями та оптимізацією, щоб забезпечити максимальну ефективність роботи сайту.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Підтримка наявних продуктів",
+                    data: [
+                        {
+                            title: "Якщо ваш сайт уже запущений і був розроблений іншою компанією або командою, ми також можемо надати консультацію та допомогу з підтримкою цього продукту. У таких випадках ми оцінюємо, чи є у нас спеціалісти, які володіють необхідними інструментами та фреймворками, щоб працювати з вашим продуктом. Після цього ми можемо запропонувати варіанти підтримки, які включатимуть:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Аналіз наявної системи",
+                                    text: [
+                                        "Першим кроком буде здійснено аналіз того, як налаштований ваш сайт, які технології використовуються та які слабкі місця можуть вимагати уваги.",
+                                    ],
+                                },
+                                {
+                                    title: "Рекомендації щодо поліпшень",
+                                    text: [
+                                        " Після аналізу ми надамо рекомендації щодо оптимізації, безпеки або функціональних покращень, які допоможуть вашому сайту працювати краще та ефективніше.",
+                                    ],
+                                },
+                                {
+                                    title: "Оперативна підтримка",
+                                    text: [
+                                        "Якщо у вас виникають технічні проблеми чи необхідні термінові виправлення, ми надаємо допомогу з їх вирішенням. Це може бути вирішення проблем із сервером, внесення змін у код або оновлення плагінів.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
+                    title: "Як замовити?",
+                    data: [
+                        {
+                            text: [
+                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого *link=`/${locale}/order` noblank*Менеджера*/link*. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    type: "none",
+                                    text: [
+                                        "Ми пропонуємо різні варіанти підтримки, які можуть включати:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Погодинну оплату:",
+                                    text: [
+                                        "Якщо вам потрібна підтримка для короткострокових задач або виправлення окремих помилок.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Абонентське обслуговування:",
+                                    text: [
+                                        "Це варіант для тих, хто потребує регулярного моніторингу, оновлень та підтримки на довготривалій основі.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Ми готові допомогти вам як із розробкою нових продуктів, так і з підтримкою вже наявних продуктів, щоб забезпечити їх надійну роботу та довговічність. Зв’яжіться з нами для отримання консультації та ми підкажемо  деталі та формати співпраці!",
+            ],
         },
         pl: {
             questionText: "Czy zapewniacie wsparcie po uruchomieniu strony?",
@@ -1660,113 +1705,117 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Tak, zapewniamy wsparcie po uruchomieniu stron, które tworzymy, a także możemy pomóc w utrzymaniu istniejących produktów. Po zakończeniu rozwoju i uruchomieniu projektu ważne jest, aby zapewnić jego prawidłowe działanie i szybko reagować na ewentualne problemy, dlatego oferujemy kilka opcji wsparcia.",
             ],
-            // fullAnswerTopText: [
-            //     "Poniżej opisujemy bardziej szczegółowo każdą z opcji wsparcia, a mianowicie wsparcie dla produktów, które opracowujemy dla Ciebie oraz wsparcie dla Twoich własnych produktów. Jesteśmy otwarci na dyskusje i jesteśmy przekonani, że znajdziemy rozwiązanie dla każdego zgłoszenia.",
-            // ],
-            // fullAnswerContent: [
-            //     {
-            //         layout: 4,
-            //         title: "Wsparcie produktów, które tworzymy",
-            //         data: [
-            //             {
-            //                 decorate: 1,
-            //                 type: "list",
-            //                 title: "Dla naszych klientów, którzy zamawiają stworzenie strony internetowej lub sklepu online, oferujemy usługi wsparcia na podstawie dodatkowej umowy. To pozwala mieć pewność, że po uruchomieniu produkt będzie działał poprawnie, a wszelkie kwestie techniczne lub aktualizacje zostaną rozwiązane na czas. W ramach wsparcia oferujemy:",
-            //                 text: [
-            //                     {
-            //                         title: "Wsparcie techniczne.",
-            //                         text: [
-            //                             "Monitorujemy, aby Twoja strona działała stabilnie, bez zakłóceń i z najwyższą prędkością ładowania. W razie problemów technicznych nasz zespół szybko je rozwiąże, zapewniając sprawne funkcjonowanie strony",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Aktualizacje i ulepszenia",
-            //                         text: [
-            //                             "Technologie i narzędzia stale się zmieniają, dlatego ważne jest, aby Twój produkt był aktualizowany. Pomagamy zintegrować nowe funkcje, naprawić błędy oraz przeprowadzać aktualizacje systemów bezpieczeństwa, frameworków i innych elementów strony.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Kontrola bezpieczeństwa",
-            //                         text: [
-            //                             " Po uruchomieniu możemy monitorować i chronić Twoją stronę przed potencjalnymi zagrożeniami, takimi jak ataki hakerskie, złośliwe oprogramowanie czy wirusy. Regularne aktualizacje bezpieczeństwa i monitoring serwerów zapewnią wysoki poziom bezpieczeństwa.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Optymalizacja wydajności",
-            //                         text: [
-            //                             "Z czasem Twoja strona może wymagać dodatkowej optymalizacji w celu poprawy szybkości ładowania, zwłaszcza jeśli dodajesz nowe funkcje lub treści. Pomożemy z ustawieniami i optymalizacją, aby zapewnić maksymalną wydajność strony.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 4,
-            //         title: "Wsparcie istniejących produktów",
-            //         data: [
-            //             {
-            //                 decorate: 2,
-            //                 type: "list",
-            //                 title: "Jeśli Twoja strona już działa i została stworzona przez inną firmę lub zespół, również możemy zaoferować konsultacje i pomoc w utrzymaniu tego produktu. W takich przypadkach oceniamy, czy posiadamy specjalistów, którzy znają niezbędne narzędzia i frameworki, aby pracować nad Twoim produktem. Następnie możemy zaproponować opcje wsparcia, które mogą obejmować:",
-            //                 text: [
-            //                     {
-            //                         title: "Analizę istniejącego systemu",
-            //                         text: [
-            //                             " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Rekomendacje dotyczące ulepszeń",
-            //                         text: [
-            //                             "Po analizie dostarczymy rekomendacje dotyczące optymalizacji, bezpieczeństwa lub funkcjonalnych ulepszeń, które pomogą stronie działać lepiej i wydajniej.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Wsparcie operacyjne",
-            //                         text: [
-            //                             "Jeśli pojawią się problemy techniczne, lub konieczne są pilne poprawki, zapewniamy wsparcie w ich rozwiązaniu. Może to obejmować naprawę problemów z serwerem, wprowadzanie zmian w kodzie lub aktualizację wtyczek.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 5,
-            //         title: "Jak zamówić?",
-            //         data: [
-            //             {
-            //                 title: "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym Menedżerem. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
-            //                 text: [
-            //                     {
-            //                         type: "none",
-            //                         text: [
-            //                             "Oferujemy różne opcje wsparcia, które mogą obejmować:",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Opłatę godzinową",
-            //                         text: [
-            //                             "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Abonament serwisowy",
-            //                         text: [
-            //                             " To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            // ],
-            // fullAnswerBottomText: [
-            //     "Jesteśmy gotowi pomóc Ci zarówno w rozwoju nowych produktów, jak i w utrzymaniu już istniejących, aby zapewnić ich niezawodne działanie i trwałość. Skontaktuj się z nami, aby uzyskać konsultację, a my przedstawimy szczegóły i formy współpracy.",
-            // ],
+            fullAnswerTopText: [
+                "Poniżej opisujemy bardziej szczegółowo każdą z opcji wsparcia, a mianowicie wsparcie dla produktów, które opracowujemy dla Ciebie oraz wsparcie dla Twoich własnych produktów. Jesteśmy otwarci na dyskusje i jesteśmy przekonani, że znajdziemy rozwiązanie dla każdego zgłoszenia.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Wsparcie produktów, które tworzymy",
+                    data: [
+                        {
+                            decorate: 1,
+                            type: "list",
+                            title: "Dla naszych klientów, którzy zamawiają stworzenie strony internetowej lub sklepu online, oferujemy usługi wsparcia na podstawie dodatkowej umowy. To pozwala mieć pewność, że po uruchomieniu produkt będzie działał poprawnie, a wszelkie kwestie techniczne lub aktualizacje zostaną rozwiązane na czas. W ramach wsparcia oferujemy:",
+                            text: [
+                                {
+                                    title: "Wsparcie techniczne.",
+                                    text: [
+                                        "Monitorujemy, aby Twoja strona działała stabilnie, bez zakłóceń i z najwyższą prędkością ładowania. W razie problemów technicznych nasz zespół szybko je rozwiąże, zapewniając sprawne funkcjonowanie strony",
+                                    ],
+                                },
+                                {
+                                    title: "Aktualizacje i ulepszenia",
+                                    text: [
+                                        "Technologie i narzędzia stale się zmieniają, dlatego ważne jest, aby Twój produkt był aktualizowany. Pomagamy zintegrować nowe funkcje, naprawić błędy oraz przeprowadzać aktualizacje systemów bezpieczeństwa, frameworków i innych elementów strony.",
+                                    ],
+                                },
+                                {
+                                    title: "Kontrola bezpieczeństwa",
+                                    text: [
+                                        " Po uruchomieniu możemy monitorować i chronić Twoją stronę przed potencjalnymi zagrożeniami, takimi jak ataki hakerskie, złośliwe oprogramowanie czy wirusy. Regularne aktualizacje bezpieczeństwa i monitoring serwerów zapewnią wysoki poziom bezpieczeństwa.",
+                                    ],
+                                },
+                                {
+                                    title: "Optymalizacja wydajności",
+                                    text: [
+                                        "Z czasem Twoja strona może wymagać dodatkowej optymalizacji w celu poprawy szybkości ładowania, zwłaszcza jeśli dodajesz nowe funkcje lub treści. Pomożemy z ustawieniami i optymalizacją, aby zapewnić maksymalną wydajność strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Wsparcie istniejących produktów",
+                    data: [
+                        {
+                            decorate: 2,
+                            type: "list",
+                            title: "Jeśli Twoja strona już działa i została stworzona przez inną firmę lub zespół, również możemy zaoferować konsultacje i pomoc w utrzymaniu tego produktu. W takich przypadkach oceniamy, czy posiadamy specjalistów, którzy znają niezbędne narzędzia i frameworki, aby pracować nad Twoim produktem. Następnie możemy zaproponować opcje wsparcia, które mogą obejmować:",
+                            text: [
+                                {
+                                    title: "Analizę istniejącego systemu",
+                                    text: [
+                                        " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
+                                    ],
+                                },
+                                {
+                                    title: "Rekomendacje dotyczące ulepszeń",
+                                    text: [
+                                        "Po analizie dostarczymy rekomendacje dotyczące optymalizacji, bezpieczeństwa lub funkcjonalnych ulepszeń, które pomogą stronie działać lepiej i wydajniej.",
+                                    ],
+                                },
+                                {
+                                    title: "Wsparcie operacyjne",
+                                    text: [
+                                        "Jeśli pojawią się problemy techniczne, lub konieczne są pilne poprawki, zapewniamy wsparcie w ich rozwiązaniu. Może to obejmować naprawę problemów z serwerem, wprowadzanie zmian w kodzie lub aktualizację wtyczek.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
+                    title: "Jak zamówić?",
+                    data: [
+                        {
+                            text: [
+                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    type: "none",
+                                    text: [
+                                        "Oferujemy różne opcje wsparcia, które mogą obejmować:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Opłatę godzinową:",
+                                    text: [
+                                        "Jeśli potrzebujesz wsparcia w krótkoterminowych zadaniach lub naprawie pojedynczych błędów.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Abonament serwisowy",
+                                    text: [
+                                        "To opcja dla tych, którzy potrzebują regularnego monitoringu, aktualizacji i wsparcia na długoterminowej podstawie.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Jesteśmy gotowi pomóc Ci zarówno w rozwoju nowych produktów, jak i w utrzymaniu już istniejących, aby zapewnić ich niezawodne działanie i trwałość. Skontaktuj się z nami, aby uzyskać konsultację, a my przedstawimy szczegóły i formy współpracy.",
+            ],
         },
         en: {
             questionText: "Do you provide post-launch support?",
@@ -1774,113 +1823,502 @@ export const questionsData: QAItemType[] = [
             shortAnswerText: [
                 "Yes, we provide post-launch support for the websites we develop, and can also assist with the maintenance of existing products. After the project is completed and launched, it is important to ensure its proper functioning and respond promptly to any issues. Therefore, we offer several support options.",
             ],
-            // fullAnswerTopText: [
-            //     "Below we describe each of the support options in more detail, namely support for products we develop for you and support for your own products. Please note that we are open to discussions and are confident that we can find options for each request.",
-            // ],
-            // fullAnswerContent: [
-            //     {
-            //         layout: 4,
-            //         title: "Support for the products we develop",
-            //         data: [
-            //             {
-            //                 decorate: 1,
-            //                 type: "list",
-            //                 title: "For our clients who order website or online store development, we offer support services under an additional agreement. This allows you to be confident that after the product launch, it will continue to function correctly, and any technical issues or updates will be addressed promptly. As part of our support services, we offer:",
-            //                 text: [
-            //                     {
-            //                         title: "Technical support",
-            //                         text: [
-            //                             "We ensure that your website operates smoothly, without crashes, and with the highest loading speed. If any technical issues arise, our team will quickly resolve them to maintain uninterrupted site performance.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Updates and improvements",
-            //                         text: [
-            //                             "Technologies and tools are constantly changing, so it's important to keep your product up to date. We help integrate new features, fix bugs, and carry out security updates, as well as updates to frameworks and other components of the website.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Security monitoring",
-            //                         text: [
-            //                             "After the launch, we can provide monitoring and protection for your website against potential threats such as hacker attacks, malware, or viruses. Regular security updates and server monitoring will help maintain a high level of protection.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Performance optimization",
-            //                         text: [
-            //                             "Over time, your website may require additional optimization to improve loading speed, especially if you're adding new features or content. We can assist with configuration and optimization to ensure maximum efficiency and performance of your site.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 4,
-            //         title: "Support for existing products",
-            //         data: [
-            //             {
-            //                 decorate: 2,
-            //                 type: "list",
-            //                 title: "If your website has already been launched and was developed by another company or team, we can also provide consultation and assistance with maintaining that product. In such cases, we assess whether we have specialists who are proficient in the necessary tools and frameworks to work with your product. After this evaluation, we can offer support options that include:",
-            //                 text: [
-            //                     {
-            //                         title: "Analysis of the existing system",
-            //                         text: [
-            //                             "The first step will be to analyze how your website is configured, what technologies are used, and any weaknesses that may need attention.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Improvement recommendations",
-            //                         text: [
-            //                             "After the analysis, we will provide recommendations for optimization, security, or functional improvements that will help your website perform better and more efficiently.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         title: "Prompt support",
-            //                         text: [
-            //                             "If you encounter technical issues or need urgent fixes, we offer assistance to resolve them. This could involve server troubleshooting, code modifications, or updating plugins.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         layout: 5,
-            //         title: "How to order?",
-            //         data: [
-            //             {
-            //                 title: "To order support services or request a consultation, you will need to contact our Manager. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
-            //                 text: [
-            //                     {
-            //                         type: "none",
-            //                         text: [
-            //                             "We offer various support options, which may include:",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Hourly payment",
-            //                         text: [
-            //                             "Ideal if you need support for short-term tasks or fixing specific issues.",
-            //                         ],
-            //                     },
-            //                     {
-            //                         type: "listItem",
-            //                         title: "Subscription service",
-            //                         text: [
-            //                             "This option is for those who require regular monitoring, updates, and long-term support.",
-            //                         ],
-            //                     },
-            //                 ],
-            //             },
-            //         ],
-            //     },
-            // ],
-            // fullAnswerBottomText: [
-            //     "We are ready to assist you with both the development of new products and the maintenance of existing ones to ensure their reliable operation and longevity. Contact us for a consultation, and we'll provide more details and formats of cooperation!",
-            // ],
+            fullAnswerTopText: [
+                "Below we describe each of the support options in more detail, namely support for products we develop for you and support for your own products. Please note that we are open to discussions and are confident that we can find options for each request.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Support for the products we develop",
+                    data: [
+                        {
+                            decorate: 1,
+                            type: "list",
+                            title: "For our clients who order website or online store development, we offer support services under an additional agreement. This allows you to be confident that after the product launch, it will continue to function correctly, and any technical issues or updates will be addressed promptly. As part of our support services, we offer:",
+                            text: [
+                                {
+                                    title: "Technical support",
+                                    text: [
+                                        "We ensure that your website operates smoothly, without crashes, and with the highest loading speed. If any technical issues arise, our team will quickly resolve them to maintain uninterrupted site performance.",
+                                    ],
+                                },
+                                {
+                                    title: "Updates and improvements",
+                                    text: [
+                                        "Technologies and tools are constantly changing, so it's important to keep your product up to date. We help integrate new features, fix bugs, and carry out security updates, as well as updates to frameworks and other components of the website.",
+                                    ],
+                                },
+                                {
+                                    title: "Security monitoring",
+                                    text: [
+                                        "After the launch, we can provide monitoring and protection for your website against potential threats such as hacker attacks, malware, or viruses. Regular security updates and server monitoring will help maintain a high level of protection.",
+                                    ],
+                                },
+                                {
+                                    title: "Performance optimization",
+                                    text: [
+                                        "Over time, your website may require additional optimization to improve loading speed, especially if you're adding new features or content. We can assist with configuration and optimization to ensure maximum efficiency and performance of your site.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Support for existing products",
+                    data: [
+                        {
+                            decorate: 2,
+                            type: "list",
+                            title: "If your website has already been launched and was developed by another company or team, we can also provide consultation and assistance with maintaining that product. In such cases, we assess whether we have specialists who are proficient in the necessary tools and frameworks to work with your product. After this evaluation, we can offer support options that include:",
+                            text: [
+                                {
+                                    title: "Analysis of the existing system",
+                                    text: [
+                                        "The first step will be to analyze how your website is configured, what technologies are used, and any weaknesses that may need attention.",
+                                    ],
+                                },
+                                {
+                                    title: "Improvement recommendations",
+                                    text: [
+                                        "After the analysis, we will provide recommendations for optimization, security, or functional improvements that will help your website perform better and more efficiently.",
+                                    ],
+                                },
+                                {
+                                    title: "Prompt support",
+                                    text: [
+                                        "If you encounter technical issues or need urgent fixes, we offer assistance to resolve them. This could involve server troubleshooting, code modifications, or updating plugins.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
+                    title: "How to order?",
+                    data: [
+                        {
+                            text: [
+                                "To order support services or request a consultation, you will need to contact our *link=`/${locale}/order` noblank*Manager*/link*. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    type: "none",
+                                    text: [
+                                        "We offer various support options, which may include:",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Hourly payment:",
+                                    text: [
+                                        "Ideal if you need support for short-term tasks or fixing specific issues.",
+                                    ],
+                                },
+                                {
+                                    type: "listItem",
+                                    title: "Subscription service:",
+                                    text: [
+                                        "This option is for those who require regular monitoring, updates, and long-term support.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "We are ready to assist you with both the development of new products and the maintenance of existing ones to ensure their reliable operation and longevity. Contact us for a consultation, and we'll provide more details and formats of cooperation!",
+            ],
+        },
+    },
+    {
+        data: {
+            image: "https://drive.google.com/thumbnail?id=14rx3LkP6tBoovJ7IWzgz866J92PAXzO3",
+            likes: 0,
+            slug: "what-is-a-landing-page-and-who-needs-it",
+
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
+        },
+        ua: {
+            questionText: "Що таке лендінг? І кому він потрібен?",
+            imageAltText: "Що таке лендінг? І кому він потрібен?",
+            shortAnswerText: [
+                "Лендінг, або посадкова сторінка, — це спеціально розроблена вебсторінка,  де вся інформація розміщена на одній сторінці, яка спрямована на досягнення конкретної мети: перетворити відвідувачів у клієнтів, підписників або учасників. На відміну від багатосторінкових сайтів, лендінг має чітку структуру, де інформація подана лаконічно і продумано, з метою привернути увагу до конкретного продукту, послуги чи пропозиції.",
+            ],
+            fullAnswerTopText: [
+                "Основна мета лендінгу — отримання швидкого результату: це може бути покупка, підписка, реєстрація або замовлення дзвінка, тощо. Тому лендінг зазвичай не перевантажують зайвою інформацією чи елементами навігації, а подають матеріал послідовно, щоб спрямувати користувача до конкретної дії.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Переваги лендінгу",
+                    data: [
+                        {
+                            title: "Фокус на результаті",
+                            text: [
+                                "Лендінг має єдину мету, тому увага користувача концентрується на головному, що знижує вірогідність відволікання та збільшує шанс залучення клієнта/підписника/учасника.",
+                            ],
+                        },
+                        {
+                            title: "Простота та швидкість створення",
+                            text: [
+                                "Розробка лендінгу часто займає менше часу і ресурсів порівняно зі створенням багатосторінкового сайту. Його структура більш лаконічна, тому він швидше налаштовується та запускається в роботу.",
+                            ],
+                        },
+                        {
+                            title: "Адаптивність та гнучкість",
+                            text: [
+                                "Лендінги можна легко оптимізувати під мобільні пристрої, змінювати чи тестувати різні варіанти дизайну та контенту, щоб визначити, який з них працює найкраще.",
+                            ],
+                        },
+                        {
+                            title: "Збільшення конверсії",
+                            text: [
+                                "Завдяки чіткому фокусу на конкретній дії, лендінг допомагає досягти вищого рівня конверсії у порівнянні зі звичайними сайтами, де користувачі можуть відволіктися на додатковий контент.",
+                            ],
+                        },
+                        {
+                            title: "Легкість аналітики та оптимізації",
+                            text: [
+                                "На лендінгу простіше аналізувати поведінку користувачів (наприклад, за допомогою теплових карт, клікових зон, часу на сторінці), що дозволяє швидко вносити зміни для покращення результатів.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Для кого може бути корисним лендінг?",
+                    data: [
+                        {
+                            title: "Лендінг буде корисним для підприємців, що прагнуть швидко запустити свої продукти, та компаній, які хочуть підвищити свою впізнаваність і довіру клієнтів. Він ідеально підходить для стартапів, малого та середнього бізнесу, а також для всіх, хто шукає ефективне рішення для презентації продукту чи послуги без великих затрат на розробку. Детальніше про переваги читайте нижче.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Фрилансери та спеціалісти",
+                                    text: [
+                                        "Лендінг може бути чудовим варіантом для самопрезентації фахівців у різних сферах: коучів, рекрутерів, юристів, менторів, консультантів, тощо. Він допоможе у  просуванні свого соло-бізнесу та формуванні  особистого бренду.",
+                                    ],
+                                },
+                                {
+                                    title: "Стартапи",
+                                    text: [
+                                        "Для стартапів важливо якомога швидше привернути увагу до своєї ідеї та зібрати базу користувачів. Лендінг допоможе презентувати продукт, зібрати попередні замовлення або запросити користувачів на бета-тестування.",
+                                    ],
+                                },
+                                {
+                                    title: "Малий та середній бізнес",
+                                    text: [
+                                        "Лендінг — ідеальне рішення для бізнесів, які прагнуть швидко протестувати ринок або новий продукт. Він дозволяє з мінімальними витратами вийти на ринок, протестувати попит, зібрати контакти та провести акцію.",
+                                    ],
+                                },
+                                {
+                                    title: "Організатори заходів",
+                                    text: [
+                                        "Лендінг ідеально підходить для розкрутки подій, таких як конференції, семінари чи вебінари, концерти, виставки або майстер-класи. На сторінці можна розмістити ключову інформацію про подію, спікерів, програму та форму для реєстрації.",
+                                    ],
+                                },
+                                {
+                                    title: "Інтернет-магазини",
+                                    text: [
+                                        "Для акцій чи розпродажів інтернет-магазини часто створюють лендінги, що присвячені конкретним продуктам або сезонним пропозиціям. Це допомагає зосередити увагу на певних товарах та спонукати клієнтів до швидкої покупки.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Терміни та Вартість",
+                    data: [
+                        {
+                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 500$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами). Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Складність дизайну:",
+                                    text: [
+                                        "Якщо потрібен унікальний, індивідуально розроблений дизайн, ціна буде вищою, ніж для простого шаблонного рішення.",
+                                    ],
+                                },
+                                {
+                                    title: "Функціональність:",
+                                    text: [
+                                        "Інтеграція з CRM, анімації, форми зворотного зв'язку, адаптивність для мобільних пристроїв та інші додаткові елементи підвищують вартість.",
+                                    ],
+                                },
+                                {
+                                    title: "Терміновість:",
+                                    text: [
+                                        "Якщо проєкт потрібно виконати у стислі терміни, це також може вплинути на ціну.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Лендінг — це потужний інструмент для бізнесу, який допомагає швидко і ефективно досягти конкретної мети, будь-то продаж, збір контактів чи реєстрація на подію. Його переваги у фокусованості, простоті та високій залученості користувачів роблять лендінг незамінним засобом для багатьох типів бізнесів та ініціатив.",
+            ],
+        },
+        pl: {
+            questionText: "Czym jest landing page i kto go potrzebuje?",
+            imageAltText: "Czym jest landing page i kto go potrzebuje?",
+            shortAnswerText: [
+                "Landing page, czyli strona docelowa, to specjalnie zaprojektowana strona internetowa, na której wszystkie informacje są umieszczone na jednej stronie, która ma na celu osiągnięcie określonego celu: przekształcenie odwiedzających w klientów, subskrybentów lub uczestników. W przeciwieństwie do wielostronicowych stron internetowych, landing page ma przejrzystą strukturę, w której informacje są prezentowane w sposób zwięzły i przemyślany, aby zwrócić uwagę na konkretny produkt, usługę lub ofertę.",
+            ],
+            fullAnswerTopText: [
+                "Głównym celem landing page jest uzyskanie szybkiego rezultatu: może to być zakup, subskrypcja, rejestracja lub zamówienie rozmowy telefonicznej. Dlatego też strony docelowe zazwyczaj nie są przeładowane niepotrzebnymi informacjami lub elementami nawigacyjnymi, ale raczej prezentują materiał sekwencyjnie, aby skierować użytkownika do określonej akcji.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Zalety stron docelowych",
+                    data: [
+                        {
+                            title: "Skupienie na wyniku",
+                            text: [
+                                "Strona docelowa ma jeden cel, więc uwaga użytkownika jest skupiona na głównej rzeczy, co zmniejsza prawdopodobieństwo rozproszenia uwagi i zwiększa szansę na pozyskanie klienta/subskrybenta/uczestnika.",
+                            ],
+                        },
+                        {
+                            title: "Prostota i szybkość tworzenia",
+                            text: [
+                                "Stworzenie landing page'a często zajmuje mniej czasu i zasobów niż stworzenie wielostronicowej strony internetowej. Jego struktura jest bardziej zwięzła, więc jest szybszy w konfiguracji i uruchomieniu.",
+                            ],
+                        },
+                        {
+                            title: "Możliwość dostosowania i elastyczność",
+                            text: [
+                                "Strony docelowe można łatwo zoptymalizować pod kątem urządzeń mobilnych, zmienić lub przetestować różne opcje projektu i treści, aby znaleźć najbardziej skuteczne rozwiązanie.",
+                            ],
+                        },
+                        {
+                            title: "Zwiększenie konwersji",
+                            text: [
+                                "Ze względu na wyraźne skupienie na konkretnym działaniu, strona docelowa pomaga osiągnąć wyższy poziom konwersji w porównaniu do zwykłych stron internetowych, gdzie użytkownicy mogą być rozpraszani przez dodatkowe treści.",
+                            ],
+                        },
+                        {
+                            title: "Łatwa analityka i optymalizacja",
+                            text: [
+                                "Łatwiej jest analizować zachowanie użytkowników na landing page'u (na przykład za pomocą map cieplnych, stref kliknięć, czasu spędzonego na stronie), co pozwala na szybkie wprowadzanie zmian w celu poprawy wyników.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Dla kogo może być przydatny landing page?",
+                    data: [
+                        {
+                            title: "Strona docelowa jest przydatna dla przedsiębiorców, którzy chcą szybko wprowadzić swoje produkty na rynek oraz firm, które chcą zwiększyć swoją widoczność i zaufanie klientów. Jest to idealne rozwiązanie dla startupów, małych i średnich firm oraz każdego, kto szuka skutecznego rozwiązania do prezentacji produktu lub usługi bez wysokich kosztów rozwoju. Przeczytaj więcej o korzyściach poniżej.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Freelancerzy i specjaliści",
+                                    text: [
+                                        "Landing page może być świetną opcją do autoprezentacji specjalistów z różnych dziedzin: coachów, rekruterów, prawników, mentorów, konsultantów itp. w celu promowania ich solowej działalności i budowania marki osobistej.",
+                                    ],
+                                },
+                                {
+                                    title: "Start-upy",
+                                    text: [
+                                        "Dla startupów ważne jest jak najszybsze zwrócenie uwagi na swój pomysł i zebranie bazy użytkowników. Strona docelowa pomoże zaprezentować produkt, zebrać zamówienia w przedsprzedaży lub zaprosić użytkowników do testów beta.",
+                                    ],
+                                },
+                                {
+                                    title: "Małe i średnie przedsiębiorstwa",
+                                    text: [
+                                        "Landing page to idealne rozwiązanie dla firm, które chcą szybko przetestować rynek lub nowy produkt. Pozwala z minimalnymi kosztami wejść na rynek, sprawdzić popyt, zebrać kontakty i zorganizować promocję.",
+                                    ],
+                                },
+                                {
+                                    title: "Organizatorzy wydarzeń",
+                                    text: [
+                                        "Landing page sprawdza się doskonale przy promocji wydarzeń, takich jak konferencje, seminaria, webinary, koncerty, wystawy czy warsztaty. Można tam umieścić kluczowe informacje o wydarzeniu, prelegentach, programie oraz formularz rejestracyjny.",
+                                    ],
+                                },
+                                {
+                                    title: "Sklepy internetowe",
+                                    text: [
+                                        "Na potrzeby akcji promocyjnych czy wyprzedaży sklepy internetowe często tworzą landing page dedykowane konkretnym produktom lub ofertom sezonowym. Pomaga to skupić uwagę na wybranych towarach i zachęcić klientów do szybkiego zakupu.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Terminy i Koszty",
+                    data: [
+                        {
+                            title: "Terminy i koszty stworzenia strony docelowej mogą się różnić w zależności od stopnia skomplikowania projektu, wymagań klienta oraz szczególnych potrzeb dotyczących projektu i funkcjonalności. Średnio, wykonanie standardowej strony docelowej zajmuje od 2 do 6 tygodni. \nKoszt stworzenia strony docelowej zazwyczaj zaczyna się od 500 USD i może wzrosnąć w zależności od zawartości (projekt szablonowy/indywidualny/unikalny, podstawowe informacje, minimalna funkcjonalność, podstawowa interaktywność, responsywność, zaawansowana animacja, integracja z CRM i innymi systemami). \nOstateczna cena i terminy realizacji są ustalane dopiero po omówieniu wszystkich wymagań i preferencji klienta. Ogólnie, koszty i czas realizacji zależą od następujących czynników:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Złożoność projektu:",
+                                    text: [
+                                        "Jeśli potrzebny jest unikalny, indywidualnie zaprojektowany wygląd, cena będzie wyższa niż w przypadku prostego rozwiązania szablonowego.",
+                                    ],
+                                },
+                                {
+                                    title: "Funkcjonalność:",
+                                    text: [
+                                        "Integracje z CRM, animacje, formularze kontaktowe, responsywność na urządzeniach mobilnych i inne dodatkowe elementy zwiększają całkowity koszt.",
+                                    ],
+                                },
+                                {
+                                    title: "Pilność:",
+                                    text: [
+                                        "Jeśli projekt musi być zrealizowany w krótkim terminie, może to również wpłynąć na cenę.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Strona docelowa to potężne narzędzie dla firm, które pozwala szybko i efektywnie osiągnąć konkretne cele, takie jak sprzedaż, zbieranie kontaktów czy rejestracja na wydarzenie. Jej zalety to ukierunkowanie, prostota i wysoki poziom zaangażowania użytkowników, co sprawia, że jest nieocenionym narzędziem dla wielu typów biznesów i inicjatyw.",
+            ],
+        },
+        en: {
+            questionText: "What is a landing page and who needs it?",
+            imageAltText: "What is a landing page and who needs it?",
+            shortAnswerText: [
+                "A landing page is a specially designed webpage where all information is presented on a single page, focused on achieving a specific goal: converting visitors into clients, subscribers, or participants. Unlike multi-page websites, a landing page has a clear structure where information is presented concisely and thoughtfully to draw attention to a specific product, service, or offer.",
+            ],
+            fullAnswerTopText: [
+                "The main goal of a landing page is to achieve a quick result—this could be a purchase, subscription, registration, or callback request. Thus, landing pages are typically free from excess information or navigation elements, presenting content sequentially to guide the user toward a specific action.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 1,
+                    title: "Advantages of a landing page",
+                    data: [
+                        {
+                            title: "Focus on results",
+                            text: [
+                                "A landing page has a single goal, so the user's attention is focused on the main thing, which reduces the likelihood of distraction and increases the chance of attracting a client/subscriber/participant.",
+                            ],
+                        },
+                        {
+                            title: "Simplicity and speed of creation",
+                            text: [
+                                "Developing a landing page often requires less time and resources than building a multipage website. Its streamlined structure allows for quicker setup and launch.",
+                            ],
+                        },
+                        {
+                            title: "Adaptability and flexibility",
+                            text: [
+                                "Landing pages can be easily optimized for mobile devices, changed or tested with different design and content options to find the most effective version.",
+                            ],
+                        },
+                        {
+                            title: "Increase conversion rates",
+                            text: [
+                                "Due to the clear focus on a specific action, landing pages help to achieve a higher conversion rate compared to regular websites where users can be distracted by additional content.",
+                            ],
+                        },
+                        {
+                            title: "Easy analytics and optimization",
+                            text: [
+                                "It is easier to analyze user behavior on a landing page (for example, using heatmaps, click zones, time on a page), which allows you to quickly make changes to improve results.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Who Can Benefit from a Landing Page?",
+                    data: [
+                        {
+                            title: "The landing page will be useful for entrepreneurs who want to launch their products quickly and companies that want to increase their visibility and customer trust. It is ideal for startups, small and medium-sized businesses, and anyone looking for an effective solution to present a product or service without high development costs. Read more about the benefits below.",
+                            type: "list",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Freelancers and specialists",
+                                    text: [
+                                        "A landing page can be an excellent self-presentation tool for specialists like coaches, recruiters, lawyers, mentors, and consultants to promote their solo business and build a personal brand.",
+                                    ],
+                                },
+                                {
+                                    title: "Startups",
+                                    text: [
+                                        "For startups, it is important to draw attention to their idea as soon as possible and gather a user base. A landing page helps showcase a product, gather pre-orders, or invite users to beta testing.",
+                                    ],
+                                },
+                                {
+                                    title: "Small and medium-sized businesses",
+                                    text: [
+                                        "A landing page is an ideal solution for businesses that want to quickly test a market or a new product. It allows companies to enter the market, test demand, collect contacts, and conduct a promotion with minimal costs.",
+                                    ],
+                                },
+                                {
+                                    title: "Event organizers",
+                                    text: [
+                                        "Perfect for promoting events like conferences, seminars, webinars, concerts, exhibitions, or workshops. It can provide key event details, speaker info, program highlights, and a registration form.",
+                                    ],
+                                },
+                                {
+                                    title: "E-commerce sites.",
+                                    text: [
+                                        "For promotions or sales, e-commerce sites often create landing pages dedicated to specific products or seasonal offers. This helps to focus attention on certain products and encourage customers to make a quick purchase.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 4,
+                    title: "Timelines and Costs",
+                    data: [
+                        {
+                            title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $500 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
+                            type: "list",
+                            decorate: 2,
+                            text: [
+                                {
+                                    title: "Design Complexity: ",
+                                    text: [
+                                        "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
+                                    ],
+                                },
+                                {
+                                    title: "Functionality:",
+                                    text: [
+                                        "Integrations with CRM, animations, feedback forms, mobile responsiveness, and other added elements increase the overall cost.",
+                                    ],
+                                },
+                                {
+                                    title: "Urgency:",
+                                    text: [
+                                        "If the project needs to be completed within a tight deadline, this may also impact the price.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "A landing page is a powerful tool for businesses, enabling them to quickly and effectively achieve specific goals, whether it’s sales, contact collection, or event registration. Its advantages lie in its focus, simplicity, and high user engagement, making it an essential asset for many types of businesses and initiatives.",
+            ],
         },
     },
 ];
