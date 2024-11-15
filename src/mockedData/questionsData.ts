@@ -1941,7 +1941,6 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
             likes: 0,
             slug: "what-is-a-landing-page-and-who-needs-it",
-
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
         },
