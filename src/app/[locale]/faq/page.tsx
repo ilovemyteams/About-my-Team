@@ -35,7 +35,10 @@ export default function FAQ({
 
     return (
         <>
-            <HeaderFAQ itemsQuantity={filteredQuestions.length} />
+            <HeaderFAQ
+                itemsQuantity={filteredQuestions.length}
+                searchTerm={searchTerm}
+            />
             {filteredQuestions.length > 0 ? (
                 <QaCardList
                     questions={filteredQuestions}
