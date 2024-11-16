@@ -16,7 +16,7 @@ export function getClient(preview?: {
             studioUrl,
         },
     });
-    console.log("clientConfig:", client.config());
+    // console.log("clientConfig:", client.config());
 
     if (preview) {
         if (!preview.token) {
