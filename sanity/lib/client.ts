@@ -16,6 +16,8 @@ export function getClient(preview?: {
             studioUrl,
         },
     });
+    console.log("clientConfig:", client.config());
+
     if (preview) {
         if (!preview.token) {
             throw new Error("You must provide a token to preview drafts");
