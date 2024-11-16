@@ -145,7 +145,7 @@ export const homeTeamQuery = groq`
   "title": title[_key == $language][0].value,
   "subtitle": sectionId.subtitle[_key == $language][0].value, 
   "anchorId": sectionId.anchorId.current,
-  "projectsList": projectsList[]->_id}}`;
+  "projectsList": projectsList[]->{_id, "title": title[_key == $language][0].value}}}`;
 
 export const homeReviewsQuery = groq`
 *[_type == "home"][0]{
