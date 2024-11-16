@@ -45,7 +45,7 @@ export const OurTeamSection = ({
     const subtitle = teamHome?.subtitle || "";
     const title = teamHome?.title || [];
 
-    console.log(displayedProjectsList);
+    console.log("displayedProjectsList", displayedProjectsList);
     console.log(membersList);
     console.log(allProjects);
 
@@ -84,6 +84,7 @@ export const OurTeamSection = ({
             <Title title={title} subtitle={subtitle} />
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
+                    displayedProjectsList={displayedProjectsList}
                     categoryNames={categoryNames}
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
