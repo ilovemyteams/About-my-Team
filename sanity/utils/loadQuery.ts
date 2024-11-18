@@ -130,10 +130,10 @@ export function loadProjects(language = "ua") {
     );
 }
 
-export function loadMembers(language = "ua") {
+export function loadMembers(language = "ua", category = "") {
     return loadQuery<AllMembersQueryResult | null>(
         allMembersQuery,
-        { language },
+        { language, category },
         { next: { tags: ["team"] } }
     );
 }
