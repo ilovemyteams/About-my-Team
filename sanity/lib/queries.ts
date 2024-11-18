@@ -79,18 +79,19 @@ export const projectQuery = groq`
 `;
 export const allMembersQuery = groq`
 *[_type == "team"]{
+_id,
   "name":name[_key == $language][0].value,
   "role": role->title,
   "category": role->category->title[_key == $language][0].value,
   projects[]{
     _type == "reference" => @->{
-      "url": URL.url, "newWindow": URL.newWindow
+      _id, "url": URL.url, "newWindow": URL.newWindow
     },
     _type == "linkExternal" => {url, newWindow}},
   "ILMTProjects": projects[][_type == "reference"]->_id,
   "about":about[_key == $language][0].value,
   "services": services[_key == $language][0].value,
-  "photoURL": photo.asset._ref,
+  "photoURL": photo.asset->url,
     price, "showPrice": select(isAvaliblePerson == "Show price" => true),
    socialLinks[]{"url":url.url, platform},
     "tools": tools[]->title}
