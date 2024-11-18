@@ -4,11 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import React, { useCallback, useEffect, useRef } from "react";
 
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { AllMembersQueryResult } from "@/types/sanity.types";
 
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { SliderButtons } from "./SliderButtons";
-import { AllMembersQueryResult } from "@/types/sanity.types";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
