@@ -4,8 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import React, { useCallback, useEffect, useRef } from "react";
 
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { AllMembersQueryResult } from "@/types/sanity.types";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { SliderButtons } from "./SliderButtons";
@@ -20,9 +20,10 @@ export const MemberCardsList = ({
     membersData,
     optionType,
 }: {
-    membersData: MemberDataItemType[];
+    membersData: AllMembersQueryResult;
     optionType: string;
 }) => {
+    console.log("membersData", membersData[0]);
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
     const { slideId, setSlideId } = usePreviousURL();
 
@@ -68,7 +69,7 @@ export const MemberCardsList = ({
                 <ul className="flex gap-0 ">
                     {membersData.map(data => (
                         <li
-                            key={data.data.id}
+                            key={data._id}
                             className={`embla__slide  flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
                         >
                             <MemberCard data={data} />

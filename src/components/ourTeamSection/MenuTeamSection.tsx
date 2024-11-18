@@ -5,11 +5,8 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
-import { LocaleType } from "@/types/LocaleType";
+import { CategoryNamesQueryResult } from "@/types/sanity.types";
 
-import { categoryNames } from "../../mockedData/categoryNames";
-import { СategoryNamesProp } from "../../mockedData/categoryNames";
-import { portfolioData } from "../../mockedData/portfolioData";
 import { IconUp } from "../shared/Icons/IconUp";
 
 interface MenuProps {
@@ -25,11 +22,18 @@ interface MenuProps {
             optionType: string;
         }>
     >;
+    categoryNames: CategoryNamesQueryResult;
+    displayedProjectsList: Array<{
+        _id: string;
+        title: string | null;
+    }>;
 }
 
 export const MenuTeamSection = ({
+    displayedProjectsList,
     selectedOption,
     setSelectedOption,
+    categoryNames,
 }: MenuProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const locale = useLocale();
@@ -42,22 +46,22 @@ export const MenuTeamSection = ({
         const option = searchParams.get("option");
         if (option) {
             const category = categoryNames.find(
-                category => category.categoryName === option
+                category => category.name === option
             );
             if (category) {
                 setSelectedOption({
-                    optionName: category[locale as LocaleType],
-                    optionValue: category.categoryName,
+                    optionName: category.name || "",
+                    optionValue: category.name || "",
                     optionType: "person",
                 });
             } else {
-                const project = portfolioData.find(
-                    project => project.data.id === option
+                const project = displayedProjectsList.find(
+                    project => project._id === option
                 );
-                if (project) {
+                if (project && project.title) {
                     setSelectedOption({
-                        optionName: project[locale as LocaleType]?.name,
-                        optionValue: project.data.id,
+                        optionName: project.title,
+                        optionValue: project._id,
                         optionType: "team",
                     });
                 }
@@ -69,7 +73,13 @@ export const MenuTeamSection = ({
                 optionType: "team",
             });
         }
-    }, [searchParams, locale, setSelectedOption]);
+    }, [
+        searchParams,
+        locale,
+        setSelectedOption,
+        categoryNames,
+        displayedProjectsList,
+    ]);
 
     const handleOptionSelectProjectTeam = ({
         option,
@@ -93,17 +103,21 @@ export const MenuTeamSection = ({
         );
     };
 
-    const handleOptionSelectCategory = (category: СategoryNamesProp) => {
+    const handleOptionSelectCategory = (category: {
+        name: string | null;
+        value: string | null;
+    }) => {
         const selected = {
-            optionName: category[locale as LocaleType],
-            optionValue: category.categoryName,
+            optionName: category.name || "",
+            optionValue: category.name || "",
             optionType: "person",
         };
         setSelectedOption(selected);
         setIsOpen(false);
         setSlideId(0);
+        const categoryValue = category.value?.toLocaleLowerCase();
         router.push(
-            `/${locale}?option=${category.categoryName}&slideId=${DEFAULT_SLIDE_ID}#team`
+            `/${locale}?option=${categoryValue}&slideId=${DEFAULT_SLIDE_ID}#team`
         );
     };
 
@@ -138,21 +152,20 @@ export const MenuTeamSection = ({
                         className="relative flex flex-col gap-[12px] pb-3  text-baseb font-caviar
                     after:absolute after:border-b-[1px] after:border-purple-strokeLight dark:after:border-purple-stroke after:left-[0px] after:bottom-0 after:w-[148px]"
                     >
-                        {portfolioData.map(project => (
+                        {displayedProjectsList.map(project => (
                             <li
-                                key={project.data.id}
+                                key={project._id}
                                 onClick={() =>
                                     handleOptionSelectProjectTeam({
-                                        option: project[locale as LocaleType]
-                                            ?.name,
-                                        projectId: project.data.id,
+                                        option: project.title || "",
+                                        projectId: project._id,
                                         optionType: "team",
                                     })
                                 }
-                                className={`${selectedOption.optionValue === project.data.id ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                className={`${selectedOption.optionValue === project._id ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
                                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
-                                {project[locale as LocaleType]?.name}
+                                {project.title}
                             </li>
                         ))}
                     </ul>
@@ -162,14 +175,14 @@ export const MenuTeamSection = ({
                     <ul className="flex flex-col gap-[12px] text-baseb font-caviar">
                         {categoryNames.map(category => (
                             <li
-                                key={category.categoryName}
+                                key={category.name}
                                 onClick={() =>
                                     handleOptionSelectCategory(category)
                                 }
-                                className={`${selectedOption.optionValue === category.categoryName ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                className={`${selectedOption.optionValue === category.name ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
                                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
-                                {category[locale as LocaleType]}
+                                {category.name}
                             </li>
                         ))}
                     </ul>

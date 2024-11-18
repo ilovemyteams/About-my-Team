@@ -4,8 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import React, { useCallback, useEffect, useRef } from "react";
 
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { AllMembersQueryResult } from "@/types/sanity.types";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { OneSliderCardBigScreen } from "./OneSliderCardBigScreen";
 import { SliderButtons } from "./SliderButtons";
 
@@ -19,7 +19,7 @@ export const MemberCardsListBigScreens = ({
     membersData,
     optionType,
 }: {
-    membersData: MemberDataItemType[];
+    membersData: AllMembersQueryResult;
     optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);

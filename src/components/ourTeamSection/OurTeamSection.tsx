@@ -1,9 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
-import { membersData } from "../../mockedData/membersData";
-import { portfolioData } from "../../mockedData/portfolioData";
+import {
+    AllMembersQueryResult,
+    CategoryNamesQueryResult,
+    HomeTeamQueryResult,
+    ProjectQueryResult,
+} from "@/types/sanity.types";
+
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { MemberCardsList } from "./MemberCardsList";
@@ -18,28 +23,56 @@ const INITIAL_OPTIONS = {
     optionType: "team",
 };
 
-export const OurTeamSection = () => {
+export const OurTeamSection = ({
+    data,
+    members,
+    projects,
+    categoryNames,
+}: {
+    data: HomeTeamQueryResult;
+    members: AllMembersQueryResult;
+    projects: ProjectQueryResult;
+    categoryNames: CategoryNamesQueryResult;
+}) => {
+    const teamHome = data?.teamHome;
+    const membersList = members;
+    const allProjects = projects;
+
+    const anchorId = teamHome?.anchorId || "";
+    const displayedProjectsList = useMemo(
+        () => teamHome?.projectsList || [],
+        [teamHome]
+    );
+    const subtitle = teamHome?.subtitle || "";
+    const title = teamHome?.title || [];
+
+    console.log("membersList", membersList);
+    console.log(allProjects);
+
     const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
-    const defaultMembersData = membersData.filter(member => {
-        return member.data.projectId.includes("1");
-    });
-    const [filteredData, setFilteredData] = useState(defaultMembersData);
+    // const defaultMembersData = membersList.filter(member => {
+    //     return member.category;
+    // });
+    const [filteredData, setFilteredData] = useState(membersList);
 
     useEffect(() => {
         if (selectedOption.optionType === "person") {
-            const filtered = membersData.filter(
-                member =>
-                    member.data.categoryName === selectedOption.optionValue
+            const filtered = membersList.filter(
+                member => member.category === selectedOption.optionValue
             );
 
             setFilteredData(filtered);
         } else {
-            const project = portfolioData.find(
-                project => project.data.id === selectedOption.optionValue
+            const project = displayedProjectsList.find(
+                project => project._id === selectedOption.optionValue
             );
             if (project) {
-                const filteredMembers = membersData.filter(member => {
-                    return member.data.projectId.includes(project.data.id);
+                const filteredMembers = membersList.filter(member => {
+                    if (member.ILMTProjects) {
+                        return member.ILMTProjects.includes(
+                            selectedOption.optionValue
+                        );
+                    }
                 });
 
                 setFilteredData(filteredMembers);
@@ -47,13 +80,15 @@ export const OurTeamSection = () => {
                 setFilteredData([]);
             }
         }
-    }, [selectedOption]);
+    }, [displayedProjectsList, membersList, selectedOption]);
 
     return (
-        <Section id="team" className="relative">
-            <Title />
+        <Section id={anchorId} className="relative">
+            <Title title={title} subtitle={subtitle} />
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection
+                    displayedProjectsList={displayedProjectsList}
+                    categoryNames={categoryNames}
                     selectedOption={selectedOption}
                     setSelectedOption={setSelectedOption}
                 />

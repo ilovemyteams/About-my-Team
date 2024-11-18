@@ -1,10 +1,14 @@
 import {
+    loadCategoryNames,
     loadCTA,
     loadHomeAboutUs,
     loadHomeFaq,
     loadHomeHero,
     loadHomeProjects,
     loadHomeReviews,
+    loadHomeTeam,
+    loadMembers,
+    loadProjects,
     loadServices,
     loadStages,
 } from "@/sanity/utils/loadQuery";
@@ -23,17 +27,36 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [hero, about, cta, portfolioSection, services, stages, faq, reviews] =
-        await Promise.all([
-            await loadHomeHero(props.params.locale),
-            await loadHomeAboutUs(props.params.locale),
-            await loadCTA(props.params.locale),
-            await loadHomeProjects(props.params.locale),
-            await loadServices(props.params.locale),
-            await loadStages(props.params.locale),
-            await loadHomeFaq(props.params.locale),
-            await loadHomeReviews(props.params.locale),
-        ]);
+    const [
+        hero,
+        about,
+        cta,
+        portfolioSection,
+        services,
+        stages,
+        faq,
+        reviews,
+        team,
+        members,
+        projects,
+        categoryNames,
+    ] = await Promise.all([
+        await loadHomeHero(props.params.locale),
+        await loadHomeAboutUs(props.params.locale),
+        await loadCTA(props.params.locale),
+        await loadHomeProjects(props.params.locale),
+        await loadServices(props.params.locale),
+        await loadStages(props.params.locale),
+        await loadHomeFaq(props.params.locale),
+        await loadHomeReviews(props.params.locale),
+        await loadHomeTeam(props.params.locale),
+        await loadMembers(props.params.locale),
+        await loadProjects(props.params.locale),
+        await loadCategoryNames(props.params.locale),
+    ]);
+
+    const validMembers = members?.data ?? [];
+    const validProjects = projects?.data ?? [];
 
     return (
         <>
@@ -45,7 +68,12 @@ export default async function HomePage(props: PageParamsProps) {
             <FeedbackSection data={reviews.data} />
             <WriteUsSection data={cta.data} />
             <ServicesSection data={services.data} />
-            <OurTeamSection />
+            <OurTeamSection
+                data={team.data}
+                members={validMembers}
+                projects={validProjects}
+                categoryNames={categoryNames?.data ?? []}
+            />
             <JoinTheTeamSection data={cta.data} />
             <StagesSection data={stages.data} />
             <QaSection data={faq.data} />

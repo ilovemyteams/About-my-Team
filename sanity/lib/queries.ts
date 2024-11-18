@@ -77,6 +77,29 @@ export const projectQuery = groq`
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
 `;
+export const allMembersQuery = groq`
+*[_type == "team"]{
+_id,
+  "name":name[_key == $language][0].value,
+  "role": role->title,
+  "category": role->category->title[_key == $language][0].value,
+  projects[]{
+    _type == "reference" => @->{
+      _id, "url": URL.url, "newWindow": URL.newWindow
+    },
+    _type == "linkExternal" => {url, newWindow}},
+  "ILMTProjects": projects[][_type == "reference"]->_id,
+  "about":about[_key == $language][0].value,
+  "services": services[_key == $language][0].value,
+  "photoURL": photo.asset->url,
+    price, "showPrice": select(isAvaliblePerson == "Show price" => true),
+   socialLinks[]{"url":url.url, platform},
+    "tools": tools[]->title}
+`;
+
+export const categoryNamesQuery = groq`
+*[_type == "specialistCategory"]{"name":title[_key == $language][0].value,
+                                 "value":title[_key == "en"][0].value}`;
 
 export const homeServicesQuery = groq`
   *[_type == "home"][0] 
@@ -117,6 +140,13 @@ export const homeFAQQuery = groq`
   "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, 
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
 }`;
+
+export const homeTeamQuery = groq`
+  *[_type == "home"][0]{teamHome {
+  "title": title[_key == $language][0].value,
+  "subtitle": sectionId.subtitle[_key == $language][0].value, 
+  "anchorId": sectionId.anchorId.current,
+  "projectsList": projectsList[]->{_id, "title": title[_key == $language][0].value}}}`;
 
 export const homeReviewsQuery = groq`
 *[_type == "home"][0]{

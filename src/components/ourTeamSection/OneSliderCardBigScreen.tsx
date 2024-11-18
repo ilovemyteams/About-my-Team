@@ -7,8 +7,8 @@ import {
 } from "@/src/constants/cardsPerPage";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { AllMembersQueryResult } from "@/types/sanity.types";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { Skeleton } from "./Skeleton";
@@ -17,7 +17,7 @@ export const OneSliderCardBigScreen = ({
     membersData,
     optionType,
 }: {
-    membersData: MemberDataItemType[];
+    membersData: AllMembersQueryResult;
     optionType: string;
 }) => {
     const screenSizeName = useScreenSize();
@@ -67,7 +67,7 @@ export const OneSliderCardBigScreen = ({
                     className="embla__slide flex-[0_0_100%] w-full grid grid-cols-2  tab:border-0 pc:grid-cols-3 deskxl:grid-cols-4"
                 >
                     {chunk.map(data => (
-                        <MemberCard key={data.data.id} data={data} />
+                        <MemberCard key={data._id} data={data} />
                     ))}
                     {isLastPage &&
                         isShowJoinUs > 0 &&

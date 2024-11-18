@@ -66,9 +66,9 @@ export const PortfolioSlider = ({
             >
                 <div className="flex max-w-[540px] tab:w-[100%] tab:min-w-[360px] pc:min-w-[540px] deskxl:w-[668px] deskxl:aspect-[668/428]  deskxl:max-w-[668px] ">
                     {projects && projects?.length > 0
-                        ? projects.map(project => (
+                        ? projects.map((project, index) => (
                               <div
-                                  key={project._id}
+                                  key={project._id + index}
                                   className="embla__slide flex-[0_0_100%] w-full "
                               >
                                   <PortfolioCardSanity sanityData={project} />
