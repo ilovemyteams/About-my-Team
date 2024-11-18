@@ -51,7 +51,7 @@ export const MenuTeamSection = ({
             if (category) {
                 setSelectedOption({
                     optionName: category.name || "",
-                    optionValue: category.value || "",
+                    optionValue: category.name || "",
                     optionType: "person",
                 });
             } else {
@@ -109,14 +109,15 @@ export const MenuTeamSection = ({
     }) => {
         const selected = {
             optionName: category.name || "",
-            optionValue: category.value || "",
+            optionValue: category.name || "",
             optionType: "person",
         };
         setSelectedOption(selected);
         setIsOpen(false);
         setSlideId(0);
+        const categoryValue = category.value?.toLocaleLowerCase();
         router.push(
-            `/${locale}?option=${category.value}&slideId=${DEFAULT_SLIDE_ID}#team`
+            `/${locale}?option=${categoryValue}&slideId=${DEFAULT_SLIDE_ID}#team`
         );
     };
 
@@ -178,7 +179,7 @@ export const MenuTeamSection = ({
                                 onClick={() =>
                                     handleOptionSelectCategory(category)
                                 }
-                                className={`${selectedOption.optionValue === category.value ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                className={`${selectedOption.optionValue === category.name ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
                                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
                                 {category.name}
