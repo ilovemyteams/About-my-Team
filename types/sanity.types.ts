@@ -1513,15 +1513,23 @@ export type ProjectQueryResult = Array<{
     category: string | null;
 }>;
 // Variable: allMembersQuery
-// Query: *[_type == "team"]{  "name":name[_key == $language][0].value,  "role": role->title,  "category": role->category->title[_key == $language][0].value,  projects[]{    _type == "reference" => @->{      "url": URL.url, "newWindow": URL.newWindow    },    _type == "linkExternal" => {url, newWindow}},  "ILMTProjects": projects[][_type == "reference"]->_id,  "about":about[_key == $language][0].value,  "services": services[_key == $language][0].value,  "photoURL": photo.asset._ref,    price, "showPrice": select(isAvaliblePerson == "Show price" => true),   socialLinks[]{"url":url.url, platform},    "tools": tools[]->title}
+// Query: *[_type == "team"]{_id,  "name":name[_key == $language][0].value,  "role": role->title,  "category": role->category->title[_key == $language][0].value,  projects[]{    _type == "reference" => @->{      _id, "url": URL.url, "newWindow": URL.newWindow    },    _type == "linkExternal" => {url, newWindow}},  "ILMTProjects": projects[][_type == "reference"]->_id,  "about":about[_key == $language][0].value,  "services": services[_key == $language][0].value,  "photoURL": photo.asset._ref,    price, "showPrice": select(isAvaliblePerson == "Show price" => true),   socialLinks[]{"url":url.url, platform},    "tools": tools[]->title}
 export type AllMembersQueryResult = Array<{
+    _id: string;
     name: string | null;
     role: string | null;
     category: string | null;
-    projects: Array<{
-        url: string | null;
-        newWindow: boolean | null;
-    }> | null;
+    projects: Array<
+        | {
+              _id: string;
+              url: string | null;
+              newWindow: boolean | null;
+          }
+        | {
+              url: string | null;
+              newWindow: boolean | null;
+          }
+    > | null;
     ILMTProjects: Array<string> | null;
     about: string | null;
     services: string | null;
@@ -1643,7 +1651,7 @@ declare module "@sanity/client" {
         '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value, \n    "descriptionNotFound":description[_key == $language][0].value},\n  \n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow, \n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult;
         '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
         '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
-        '\n*[_type == "team"]{\n  "name":name[_key == $language][0].value,\n  "role": role->title,\n  "category": role->category->title[_key == $language][0].value,\n  projects[]{\n    _type == "reference" => @->{\n      "url": URL.url, "newWindow": URL.newWindow\n    },\n    _type == "linkExternal" => {url, newWindow}},\n  "ILMTProjects": projects[][_type == "reference"]->_id,\n  "about":about[_key == $language][0].value,\n  "services": services[_key == $language][0].value,\n  "photoURL": photo.asset._ref,\n    price, "showPrice": select(isAvaliblePerson == "Show price" => true),\n   socialLinks[]{"url":url.url, platform},\n    "tools": tools[]->title}\n': AllMembersQueryResult;
+        '\n*[_type == "team"]{\n_id,\n  "name":name[_key == $language][0].value,\n  "role": role->title,\n  "category": role->category->title[_key == $language][0].value,\n  projects[]{\n    _type == "reference" => @->{\n      _id, "url": URL.url, "newWindow": URL.newWindow\n    },\n    _type == "linkExternal" => {url, newWindow}},\n  "ILMTProjects": projects[][_type == "reference"]->_id,\n  "about":about[_key == $language][0].value,\n  "services": services[_key == $language][0].value,\n  "photoURL": photo.asset._ref,\n    price, "showPrice": select(isAvaliblePerson == "Show price" => true),\n   socialLinks[]{"url":url.url, platform},\n    "tools": tools[]->title}\n': AllMembersQueryResult;
         '\n*[_type == "specialistCategory"]{"name":title[_key == $language][0].value,\n                                 "value":title[_key == "en"][0].value}': CategoryNamesQueryResult;
         '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
         '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
