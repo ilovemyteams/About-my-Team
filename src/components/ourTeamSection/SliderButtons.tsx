@@ -1,6 +1,7 @@
 import { EmblaCarouselType } from "embla-carousel";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
+import { AllMembersQueryResult } from "@/types/sanity.types";
+
 import {
     NextButton,
     PrevButton,
@@ -10,7 +11,7 @@ import { useDotButton } from "../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
 
 interface SliderButtonsProps {
-    membersData: MemberDataItemType[];
+    membersData: AllMembersQueryResult;
     emblaApi: EmblaCarouselType | undefined;
 }
 export const SliderButtons = ({
