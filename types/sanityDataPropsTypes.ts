@@ -22,7 +22,7 @@ export type LinkType = "linkExternal" | "linkInternal";
 
 export type PortfolioSliderProps = {
     title: string;
-    image?: { caption: string; asset: string };
+    image?: { caption: string; asset: string; lqip: string };
     category?: string;
     _id: string;
     URL?: {
