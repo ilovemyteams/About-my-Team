@@ -32,9 +32,9 @@ export const MarkedListContent = ({ content, searchTerm }: MarkedListProps) => {
             )}
             <div className="flex gap-4 pc:gap-[50px] pc:mb-15">
                 {decorate === 1 ? (
-                    <IconHexagonsVertical className="hidden tab:block  text-white-100 dark:text-purple-stroke m-auto tab:min-w-[118px] tab:w-[16%] tab:max-w-[160px] pc:min-w-[160px] pc:w-[15%] pc:max-w-[210px] desk:min-w-[210px] desk:w-[18%]" />
+                    <IconHexagonsVertical className="hidden tab:block  text-purple-100 dark:text-purple-stroke m-auto tab:min-w-[118px] tab:w-[16%] tab:max-w-[160px] pc:min-w-[160px] pc:w-[15%] pc:max-w-[210px] desk:min-w-[210px] desk:w-[18%]" />
                 ) : (
-                    <IconHexagonsCircle className="hidden tab:block  text-white-100 dark:text-purple-stroke m-auto tab:min-w-[247px] tab:w-[34%] tab:max-w-[335px] pc:min-w-[335px] pc:w-[31%] pc:max-w-[450px] desk:min-w-[450px] desk:w-[37%]" />
+                    <IconHexagonsCircle className="hidden tab:block  text-purple-100 dark:text-purple-stroke m-auto tab:min-w-[247px] tab:w-[34%] tab:max-w-[335px] pc:min-w-[335px] pc:w-[31%] pc:max-w-[450px] desk:min-w-[450px] desk:w-[37%]" />
                 )}
                 <MarkedList
                     items={text as ListTextItemType[]}
