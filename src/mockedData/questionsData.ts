@@ -1133,7 +1133,7 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "can-i-choose-which-team-will-work-on-my-order",
-            image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
+            image: "https://drive.google.com/uc?export=view&id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
             likes: 0,
             removeOrderBtn: true,
             answerOrderImage:
