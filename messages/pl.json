@@ -5,8 +5,9 @@
     },
 
     "Hero": {
-        "heroInfoText": "Zespół, który dba o Twoje potrzeby",
-        "portfolioLink": "Realizacje"
+        "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
+        "portfolioLink": "Realizacje",
+        "project": "Projekt"
     },
 
     "Portfolio": {
