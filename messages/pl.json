@@ -6,7 +6,8 @@
 
     "Hero": {
         "heroInfoText": "Zespół, który dba o Twoje potrzeby",
-        "portfolioLink": "Realizacje"
+        "portfolioLink": "Realizacje",
+        "project": "Проєкт"
     },
 
     "Portfolio": {
