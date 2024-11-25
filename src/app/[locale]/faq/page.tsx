@@ -45,6 +45,8 @@ export default function FAQ({
         pageNumber
     );
 
+    const isCTAVisible = pageNumber === totalPages;
+
     return (
         <>
             <HeaderFAQ itemsQuantity={itemsQuantity} searchTerm={searchTerm} />
@@ -59,7 +61,7 @@ export default function FAQ({
                 <Pagination total={totalPages} initialPage={pageNumber} />
             )}
 
-            {pageNumber === totalPages && <FaqSectionCta />}
+            <FaqSectionCta isSectionVisible={isCTAVisible} />
         </>
     );
 }
