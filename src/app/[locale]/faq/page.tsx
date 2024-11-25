@@ -57,7 +57,7 @@ export default function FAQ({
             )}
 
             {isPaginationNeeded && (
-                // It si not real NextUI pagination component
+                // It is not real NextUI pagination component
                 <Pagination total={totalPages} initialPage={pageNumber} />
             )}
 
