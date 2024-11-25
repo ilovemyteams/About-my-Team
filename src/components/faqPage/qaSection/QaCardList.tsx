@@ -21,10 +21,9 @@ export const QaCardList = async ({
 
     return (
         <Section className="flex flex-col gap-3 pb-15 tab:pb-10 pc:pb-[40px] desk:pb-12 ">
-            {questions.map((question, id) => (
+            {questions.map(question => (
                 <QaCard
                     key={question.data.slug}
-                    id={`item-${id + 1}`}
                     data={question.data}
                     localizationData={question[locale as LocaleType]}
                     likes={likes.filter(
