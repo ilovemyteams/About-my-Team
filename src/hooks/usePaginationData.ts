@@ -23,7 +23,6 @@ export const usePaginationData = <T>(
         listLength % itemsPerPage === 0
             ? listLength / itemsPerPage
             : Math.trunc(listLength / itemsPerPage) + 1;
-    console.log(totalPages, "TOTAL");
 
     return { questions, totalPages, isPaginationNeeded };
 };
