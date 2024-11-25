@@ -24,7 +24,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "1",
             siteLink: "ilovemyteam.online",
-            image: "https://drive.google.com/uc?export=view&id=1tUrY_zuSgKXBiYC3L_Fub_Zlec4mZ-L5",
+            image: "https://drive.google.com/uc?export=view&id=14zu-CX8qKSEIqsec_R1lW9S-HITsaG_s",
 
             implementations: [
                 "Idea",
@@ -56,7 +56,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "2",
             siteLink: "batatfarm.com",
-            image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
+            image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
             order: 3,
             implementations: [
                 "Idea",
@@ -88,7 +88,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "3",
             siteLink: "theatermag.com.ua",
             order: 1,
-            image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
+            image: "https://drive.google.com/uc?export=view&id=1_za8Na2MjieHDq2a5-aArjOHyloyDYe3",
             implementations: [
                 "Idea",
                 "Design",
@@ -96,7 +96,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Delivery",
                 "Support",
             ],
-            video: "https://res.cloudinary.com/dxvtacrde/video/upload/v1709063030/samples/dance-2.mp4",
         },
         ua: {
             name: "Український театр",
@@ -120,7 +119,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "4",
             siteLink: "protection.in.ua",
             order: 2,
-            image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
+            image: "https://drive.google.com/uc?export=view&id=17VfvDf6BhiPhYSGw3kpzAwoPVB6PY6mk",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
         ua: {
