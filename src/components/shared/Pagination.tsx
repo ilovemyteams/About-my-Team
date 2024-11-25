@@ -23,6 +23,10 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
         const params = new URLSearchParams(searchParams);
         params.set("page", `${page}`);
         replace(`${pathName}?${params.toString()}`, { scroll: false });
+        const element = document.getElementById("item-1");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     const handleDots = (

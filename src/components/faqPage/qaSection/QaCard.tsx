@@ -18,6 +18,7 @@ export interface FaqCardItemProps {
     localizationData: QAItemLocalizationTextType;
     searchTerm: string;
     likes: LikesTypes[];
+    id: string;
 }
 
 export const QaCard = ({
@@ -25,6 +26,7 @@ export const QaCard = ({
     localizationData,
     likes,
     searchTerm,
+    id,
 }: FaqCardItemProps) => {
     const getTranslation = useTranslations("Buttons");
 
@@ -44,7 +46,10 @@ export const QaCard = ({
     const allTexts = `${shortAnswerText.join(" ")} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 
     return (
-        <div className="flex flex-col tab:flex-row py-4 gap-3 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
+        <div
+            id={id}
+            className="flex flex-col tab:flex-row py-4 gap-3 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke"
+        >
             <Image
                 src={image}
                 alt={imageAltText}
