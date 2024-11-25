@@ -62,7 +62,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
                     key={key}
                     className={cn(
                         className,
-                        "w-12 h-12 text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none ml-4"
+                        "w-12 h-12 shadow-none text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none ml-4"
                     )}
                     onClick={onNext}
                 >
@@ -77,7 +77,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
                     key={key}
                     className={cn(
                         className,
-                        "w-12 h-12 text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none mr-4"
+                        "w-12 h-12 shadow-none text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none mr-4"
                     )}
                     onClick={onPrevious}
                 >
@@ -92,7 +92,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
                     key={key}
                     className={cn(
                         className,
-                        "bg-transparent font-caviar text-base font-bold w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none"
+                        "shadow-none bg-transparent font-caviar text-base font-bold w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none"
                     )}
                     onClick={() =>
                         handleDots(setPage, index, activePage, total)
@@ -109,9 +109,9 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
                 ref={ref}
                 className={cn(
                     className,
-                    "bg-transparent font-caviar w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none text-base font-bold",
+                    "shadow-none bg-transparent font-caviar min-w-7 w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none text-base font-bold",
                     isActive &&
-                        "text-redLIght dark:text-red border-b-redLight dark:border-b-red text-base font-bold"
+                        "text-redLight dark:text-red border-b-redLight dark:border-b-red text-base font-bold"
                 )}
                 onClick={() => setPage(value)}
             >
