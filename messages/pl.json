@@ -293,6 +293,8 @@
     },
     "ServicesPage": {
         "title": "Tworzymy <purple>produkty \ncyfrowe</purple> dla Twojej firmy",
+        "titleSEO": "Tworzymy produkty cyfrowe dla Twojej firmy",
+        "descriptionSEO": "",
         "ctaText": "Uzyskaj kompleksową konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości"
     }
 }
