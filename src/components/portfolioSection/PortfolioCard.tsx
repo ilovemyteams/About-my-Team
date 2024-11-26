@@ -22,15 +22,15 @@ export const PortfolioCard = ({
     const { siteView, name } = localizationData;
     const siteTypeUp = siteView?.toUpperCase();
     return (
-        <div className="relative w-[100%] h-[auto] max-h-[421px] aspect-[288/273] tab:min-w-[50%] pc:h-[500px] ">
+        <div className="relative w-[100%] h-[auto] max-h-[421px] aspect-[288/273] tab:min-w-[50%] tab:aspect-[360/328] pc:aspect-[540/445] pc:max-h-[600px] ">
             <Image
                 src={image}
                 alt={name}
                 width={688}
                 height="0"
-                className=" object-cover object-top w-[100%] min-h-[162px] aspect-[288/162] tab:h-[270px] pc:h-[358px]"
+                className=" object-cover object-top w-[100%] min-h-[162px] aspect-[288/162] tab:min-h-[202px] tab:aspect-[360/202] pc:min-h-[303px] pc:aspect-[540/303]"
             />
-            <div className="absolute -bottom-0 block min-w-full min-h-[111px] aspect-[288/111] max-h-[170px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
+            <div className="absolute -bottom-0 block min-w-full min-h-[111px] aspect-[288/111] max-h-[170px] tab:min-h-[126px] tab:aspect-[360/126] tab:max-h-[160px] pc:min-h-[140px]  pc:aspect-[360/140] pc:max-h-[175px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
                 <div className="px-2 py-3 tab:p-4 pc:p-5">
                     <div className="flex justify-between items-center mb-[6px]">
                         <h3 className="font-caviar font-bold text-lg tab:text-xl  text-purple-200 dark:text-grey">
