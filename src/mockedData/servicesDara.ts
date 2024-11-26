@@ -89,7 +89,7 @@ export const servicesData: ServiceType[] = [
         slug: "development",
         ctaButton: "write",
         icon: "dev",
-        image: "https://drive.google.com/uc?export=view&id=1Pvf5gB_1JBWOK_zN5oyv-5jk4v2dKyoZ",
+        image: "https://drive.google.com/uc?export=view&id=1ECWvNJkxkxcorwlbapXVB1ksw1-mS93l",
         ua: {
             name: "розробка",
             shortDescription:
@@ -328,7 +328,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "testing",
         icon: "test",
-        image: "https://drive.google.com/uc?export=view&id=1DAyo8x3NG52VBUqGg_4Gour3quYLJnFt",
+        image: "https://drive.google.com/uc?export=view&id=1_OfiG108dHYF__k1ZtadN1wKzETCiWfx",
         ctaButton: "order",
         ua: {
             name: "тестування",
