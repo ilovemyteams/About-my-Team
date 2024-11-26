@@ -1,6 +1,8 @@
-import { HighlightPurple } from "@/src/utils/highlightingPurple";
-import { PageSection } from "../shared/PageSection";
 import Image from "next/image";
+
+import { HighlightPurple } from "@/src/utils/highlightingPurple";
+
+import { PageSection } from "../shared/PageSection";
 
 interface ServiceHeroProps {
     title: string;
