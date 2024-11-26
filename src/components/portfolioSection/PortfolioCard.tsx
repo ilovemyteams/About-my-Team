@@ -22,16 +22,16 @@ export const PortfolioCard = ({
     const { siteView, name } = localizationData;
     const siteTypeUp = siteView?.toUpperCase();
     return (
-        <div className="relative min-w-[100%] h-[370px] tab:min-w-[50%] pc:h-[500px]">
+        <div className="relative w-[100%] h-[auto] max-h-[421px] aspect-[288/273] tab:min-w-[50%] pc:h-[500px] ">
             <Image
                 src={image}
                 alt={name}
-                width={288}
-                height={196}
-                className=" object-cover object-top w-[100%] h-[236px] tab:h-[270px] pc:h-[358px]"
+                width={688}
+                height="0"
+                className=" object-cover object-top w-[100%] min-h-[162px] aspect-[288/162] tab:h-[270px] pc:h-[358px]"
             />
-            <div className="absolute -bottom-0 block min-w-full h-[134px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
-                <div className="px-2 py-5 tab:p-4 pc:p-5">
+            <div className="absolute -bottom-0 block min-w-full min-h-[111px] aspect-[288/111] max-h-[170px] tab:h-[130px] pc:h-[142px] dark:bg-portfolioSectionGradient bg-portfolioSectionGradientLight">
+                <div className="px-2 py-3 tab:p-4 pc:p-5">
                     <div className="flex justify-between items-center mb-[6px]">
                         <h3 className="font-caviar font-bold text-lg tab:text-xl  text-purple-200 dark:text-grey">
                             {name}
