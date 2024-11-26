@@ -490,75 +490,77 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Na etapie testowania sprawdzana jest wydajność strony internetowej i jej zgodność z wymaganiami. Oceniana jest funkcjonalność, użyteczność, optymalizację pod kątem różnych przeglądarek, rozmiarów ekranu i szybkości działania strony.",
             fullDescription: {
-                title: "<purple>:</purple> ",
-                introduction: "",
+                title: "<purple>Testowanie:</purple> Twoja strona jest pod kontrolą",
+                introduction:
+                    "Na etapie testowania upewniamy się, że witryna działa bezbłędnie i spełnia wszystkie współczesne standardy. To kluczowy etap, podczas którego sprawdzana jest nie tylko strona techniczna, ale także wygoda użytkowania, szybkość ładowania oraz kompatybilność z różnymi urządzeniami.",
                 content: [
                     {
                         layout: 3,
-                        title: "",
+                        title: "Co obejmuje testowanie?",
                         description: [
                             {
-                                title: "",
+                                title: "Testowanie funkcjonalne",
                                 text: [
                                     {
-                                        text: "",
+                                        text: "Sprawdzamy wszystkie elementy strony:",
                                     },
                                     {
-                                        text: "",
+                                        text: "Czy działają przyciski, formularze i linki?",
                                         type: "listItem",
                                     },
                                     {
-                                        text: "",
+                                        text: "Czy dane są poprawnie wyświetlane i czy zapytania do bazy danych są wykonywane prawidłowo?",
                                         type: "listItem",
                                     },
                                     {
-                                        text: "",
+                                        text: "Czy integracja z systemami płatności, API lub CRM działa poprawnie?",
                                         type: "listItem",
                                     },
                                 ],
                             },
                             {
-                                title: "",
-                                text: "",
+                                title: "Testowanie interfejsu użytkownika (UI/UX)",
+                                text: "Oceniamy, na ile logiczna jest struktura strony oraz czy użytkownicy łatwo znajdą potrzebne informacje. Twoja strona powinna być intuicyjna i przyjazna dla każdego odwiedzającego.",
                             },
                             {
-                                title: "",
-                                text: "",
+                                title: "Testowanie kompatybilności",
+                                text: "Ten rodzaj testowania obejmuje testy międzyprzeglądarkowe i międzyplatformowe. Test przeprowadzany jest na różnych systemach operacyjnych (Windows, Mac, Linux, Android, iOS) i przeglądarkach, aby upewnić się, że aplikacja działa stabilnie i jest kompatybilna z różnymi platformami.",
                             },
                             {
-                                title: "",
-                                text: "",
+                                title: "Testowanie na różnych urządzeniach",
+                                text: "Analizujemy wygląd i działanie strony internetowej na smartfonach, tabletach, laptopach i dużych monitorach. Responsywność i zdolność adaptacji to klucz do sukcesu!",
                             },
                             {
-                                title: "",
-                                text: "",
+                                title: "Szybkość ładowania",
+                                text: "Sprawdzamy, jak szybko ładuje się Twoja strona, nawet przy niskiej prędkości internetu. Optymalizujemy kod, obrazy i inne zasoby, aby zapewnić jak najlepszą wydajność.",
                             },
                         ],
                     },
                     {
                         layout: 4,
-                        title: "",
+                        title: "Dlaczego to jest ważne?",
                         description: [
                             {
-                                text: "",
+                                text: "Jakość testowania bezpośrednio wpływa na reputację Twojego biznesu.",
                             },
                             {
-                                text: "",
+                                text: "Użytkownicy cenią stabilność, wygodę i szybkość działania strony.",
                             },
                             {
-                                text: "",
+                                text: "Wykrywanie i naprawianie błędów na etapie testowania jest znacznie tańsze niż ich poprawa po uruchomieniu produktu.",
                             },
 
                             {
-                                text: "",
+                                text: "Płynne działanie produktu pomaga wyróżnić się na tle konkurencji i zwiększyć lojalność użytkowników.",
                             },
                             {
-                                text: "",
+                                text: "Każda udana interakcja z produktem zwiększa zadowolenie klientów, co bezpośrednio wpływa na powtarzalność sprzedaży i rekomendacje.",
                             },
                         ],
                     },
                 ],
-                ctaText: "",
+                ctaText:
+                    "Zamów testowanie u nas – i bądź pewny, że Twoja strona jest gotowa na każde wyzwanie!",
             },
         },
     },
