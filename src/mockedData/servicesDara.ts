@@ -173,7 +173,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "At the stage of development the website prototype receives its birth, gaining all the necessary functionality, databases are connected, the payment possibilities are implemented, the website is filled up with the content",
             fullDescription: {
-                title: "<pyrple>Website development:</purple> how we create your perfect product",
+                title: "<purple>Website development:</purple> how we create your perfect product",
                 introduction:
                     "During the development phase, our ideas and your requests turn into a working web product. This is the moment when the website prototype, where you can see the structure, main elements, and arrangement of blocks, comes to life, filling with functionality and interactivity. We pay maximum attention to details to make your website not only look perfect, but also work quickly, reliably, and conveniently for users.",
                 content: [
