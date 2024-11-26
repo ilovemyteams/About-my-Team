@@ -8,8 +8,8 @@ export const MenuFooter = () => {
     const menuList = [
         { name: getTranslation("breadcrumbItemHome"), path: "" },
         { name: getTranslation("breadcrumbItemAbout"), path: "about" },
-        { name: getTranslation("breadcrumbItemFaq"), path: "faq" },
         { name: getTranslation("breadcrumbItemServices"), path: "services" },
+        { name: getTranslation("breadcrumbItemFaq"), path: "faq" },
     ];
     return (
         <ul className="tab:flex flex-start tab:gap-[20px] pc:gap-[28px] font-geist text-base desk:text-lg">
