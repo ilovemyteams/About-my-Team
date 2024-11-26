@@ -6,15 +6,13 @@ import * as React from "react";
 
 export const Providers = ({ children, ...props }: ThemeProviderProps) => {
     return (
-        <NextUIProvider>
-            <NextThemesProvider
-                attribute="class"
-                defaultTheme="dark"
-                enableSystem
-                {...props}
-            >
-                {children}
-            </NextThemesProvider>
-        </NextUIProvider>
+        <NextThemesProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            {...props}
+        >
+            <NextUIProvider>{children}</NextUIProvider>
+        </NextThemesProvider>
     );
 };

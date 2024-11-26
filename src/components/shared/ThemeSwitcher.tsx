@@ -1,6 +1,5 @@
 "use client";
 
-import Cookies from "js-cookie";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -9,23 +8,23 @@ export function ThemeSwitcher({ id }: { id: string }) {
     const [mounted, setMounted] = useState<boolean>(false);
 
     useEffect(() => {
-        const storedTheme = Cookies.get("theme");
-        if (
-            storedTheme &&
-            (storedTheme === "dark" || storedTheme === "light")
-        ) {
-            setTheme(storedTheme);
-        } else {
-            setTheme("dark");
-        }
+        // const storedTheme = Cookies.get("theme");
+        // if (
+        //     storedTheme &&
+        //     (storedTheme === "dark" || storedTheme === "light")
+        // ) {
+        //     setTheme(storedTheme);
+        // } else {
+        //     setTheme("dark");
+        // }
 
         setMounted(true);
-    }, [setTheme]);
+    }, []);
 
     const handleChange = () => {
         const newTheme = resolvedTheme === "dark" ? "light" : "dark";
-        setTheme(resolvedTheme === "dark" ? "light" : "dark");
-        Cookies.set("theme", newTheme);
+        setTheme(newTheme);
+        // Cookies.set("theme", newTheme);
     };
 
     if (!mounted) {

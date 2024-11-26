@@ -84,8 +84,8 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
-                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-visible
-                   dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
+                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-visible bg-white-100 text-greyLight
+                   dark:bg-purple-400 dark:text-grey `}
                     >
                         <Providers>
                             <BackgroundImages />
