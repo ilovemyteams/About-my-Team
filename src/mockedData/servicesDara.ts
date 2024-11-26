@@ -1,4 +1,4 @@
-interface ServiceType {
+export interface ServiceType {
     slug: string;
     icon: string;
     image: string;
@@ -8,20 +8,20 @@ interface ServiceType {
     pl: ServiceLocalizationDataType;
 }
 
-interface ServiceLocalizationDataType {
+export interface ServiceLocalizationDataType {
     name: string;
     shortDescription: string;
     fullDescription: FullDescriptionDataType | null;
 }
 
-interface FullDescriptionDataType {
+export interface FullDescriptionDataType {
     title: string;
     introduction: string;
     content: ServiceContentType[];
     ctaText: string;
 }
 
-interface ServiceContentType {
+export interface ServiceContentType {
     layout: number;
     title: string;
     description: DescriptionType[];
@@ -32,7 +32,7 @@ interface DescriptionType {
     text: TextType[] | string;
 }
 
-interface TextType {
+export interface TextType {
     text: string;
     type?: "listItem";
 }

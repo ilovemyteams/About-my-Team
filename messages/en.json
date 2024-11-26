@@ -271,7 +271,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Home",
         "breadcrumbItemAbout": "About us",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Services"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -288,5 +289,9 @@
         "orderCardText": "We are ready to take on all the challenges of development and help you create the perfect website for your business, while enjoying the collaboration throughout the process of its development and launch.",
         "orderCardImgAlt": "Order services",
         "orderCardButton": "order"
+    },
+    "ServicesPage": {
+        "title": "We develop <purple>digital \nproducts</purple> for your business",
+        "ctaText": "Get a comprehensive consutation with our manager if you have any questions or doubts"
     }
 }

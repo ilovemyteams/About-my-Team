@@ -272,7 +272,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Usługi"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -289,5 +290,9 @@
         "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
         "orderCardImgAlt": "Zamówić usługi",
         "orderCardButton": "zamówić"
+    },
+    "ServicesPage": {
+        "title": "Tworzymy <purple>produkty \ncyfrowe</purple> dla Twojej firmy",
+        "ctaText": "Uzyskaj kompleksową konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości"
     }
 }

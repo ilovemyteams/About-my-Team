@@ -61,7 +61,7 @@ export const PageTopSection = ({
                             return (
                                 <BreadcrumbItem
                                     key={item.title}
-                                    className="flex-1 overflow-hidden"
+                                    className="flex-1 overflow-hidden capitalize"
                                 >
                                     <p className="dark:text-red text-redLight max-w-full truncate">
                                         {item.title}

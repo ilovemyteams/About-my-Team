@@ -268,7 +268,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Головна",
         "breadcrumbItemAbout": "Про нас",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Послуги"
     },
     "FaqPage": {
         "titleSEO": "Відповіді на актуальні питання в одному місці",
@@ -285,5 +286,9 @@
         "orderCardText": "Ми готові взяти на себе всі труднощі розробки та допомогти вам створити ідеальний сайт для вашого бізнесу і отримати задоволення від співпраці в процесі його розробки і запуску.",
         "orderCardImgAlt": "Замовити послуги",
         "orderCardButton": "замовити"
+    },
+    "ServicesPage": {
+        "title": "Розробляємо <purple>цифрові \nпродукти</purple> для вашого бізнесу",
+        "ctaText": "Отримайте вичерпну консультацію з нашим менеджером, якщо маєте якісь питання або сумніви"
     }
 }
