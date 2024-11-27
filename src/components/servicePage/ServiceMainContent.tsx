@@ -1,4 +1,5 @@
 import { ServiceContentType } from "@/src/mockedData/servicesData";
+import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
 
 interface ServiceMainContentProps {
     content: ServiceContentType[];
@@ -21,7 +22,14 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                     return <div key={index}>{item.title} - layout 3 </div>;
                 }
                 if (item.layout === 4) {
-                    return <div key={index}>{item.title} - layout 4 </div>;
+                    return (
+                        <div key={index}>
+                            <ListWithArrowIconLayout
+                                title={item.title}
+                                description={item.description}
+                            />
+                        </div>
+                    );
                 }
             })}
         </div>
