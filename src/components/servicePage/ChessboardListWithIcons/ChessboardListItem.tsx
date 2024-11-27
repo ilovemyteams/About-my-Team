@@ -53,7 +53,7 @@ export const ChessboardListItem = ({
                     )}
                 </div>
                 <div
-                    className={`w-[1px] ${isLast ? "h-lineWithoutHexagonMobLast tab:h-lineWithoutHexagonTabLast pc:h-lineWithoutHexagonPCLast desk:h-lineWithoutHexagonDeskLast" : "h-lineWithoutHexagonMob tab:h-lineWithoutHexagonTab pc:h-lineWithoutHexagonPC desk:h-lineWithoutHexagonDesk"} dark:bg-purple-stroke bg-purple-strokeLight mx-auto`}
+                    className={`w-[1px] mt-[-1px] desk:mt-[-2px] ${isLast ? "h-lineWithoutHexagonMobLast tab:h-lineWithoutHexagonTabLast pc:h-lineWithoutHexagonPCLast desk:h-lineWithoutHexagonDeskLast" : "h-lineWithoutHexagonMob tab:h-lineWithoutHexagonTab pc:h-lineWithoutHexagonPC desk:h-lineWithoutHexagonDesk"} dark:bg-purple-stroke bg-purple-strokeLight mx-auto`}
                 ></div>
             </div>
         </>
