@@ -176,6 +176,14 @@ const config: Config = {
             height: {
                 "70": "calc(100dvh - 80px)",
                 "80": "calc(100vh - 80px)",
+                lineWithoutHexagonMob: "calc(100% - 14px)",
+                lineWithoutHexagonMobLast: "calc(100% - 46px)",
+                lineWithoutHexagonTab: "calc(100% - 26px)",
+                lineWithoutHexagonTabLast: "calc(100% - 50px)",
+                lineWithoutHexagonPC: "calc(100% - 46px)",
+                lineWithoutHexagonPCLast: "calc(100% - 70px)",
+                lineWithoutHexagonDesk: "calc(100% - 66px)",
+                lineWithoutHexagonDeskLast: "calc(100% - 90px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
