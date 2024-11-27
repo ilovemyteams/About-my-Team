@@ -1,5 +1,6 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
+import { RedSquareBullet } from "../../shared/RedSquareBullet";
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { TableContentText } from "./TableContentText";
 
@@ -17,7 +18,7 @@ export const TableContentItem = ({
             <div className="mb-6 pc:mb-[80px] mt-6 flex gap-2">
                 {title && (
                     <>
-                        <div className=" m-[3px] desk:m-[7px] w-[18px] shrink-0 h-[18px] dark:border-red border-redLight border-[3px]"></div>
+                        <RedSquareBullet />
                         <h3 className="min-h-[50px] desk:min-h-[70px]  font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
                             <HighlightText
                                 text={title}
