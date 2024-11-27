@@ -68,6 +68,3 @@ export const ServiceCard = ({ service, servicesCount }: ServiceCardProps) => {
         </div>
     );
 };
-
-//  bg-serviceCardGradientLight dark:bg-serviceCardGradient bg-size-200 bg-pos-100 tab:hover:bg-pos-0 transition-all duration-500
-// before:bg-serviceCardGradientLight
