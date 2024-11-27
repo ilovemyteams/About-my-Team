@@ -428,6 +428,17 @@ const config: Config = {
                 "linear-gradient(90deg, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
             underConstructionGradientLight:
                 "linear-gradient(90.01deg, #B490FFCC 0%, #CFB8FFCC 25%, #EAE0FFCC 50%, #F6F2FFCC 75%, #FEFDFFCC 100%)",
+            serviceCardGradient:
+                "linear-gradient(to right, #4F0A86 0%, #20003F 50%, transparent 50%, transparent 100%)",
+            serviceCardGradientLight:
+                "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 24%, #FBF9FF 50%, transparent 50%, transparent 100%)",
+        },
+        backgroundSize: {
+            "size-200": "200% 200%",
+        },
+        backgroundPosition: {
+            "pos-0": "0% 0%",
+            "pos-100": "100% 100%",
         },
     },
     plugins: [

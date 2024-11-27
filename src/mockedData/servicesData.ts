@@ -587,7 +587,7 @@ export const servicesData: ServiceType[] = [
     },
     {
         slug: "comprehensive-service",
-        icon: "full",
+        icon: "complex",
         image: "",
         ua: {
             name: "комплексна послуга",
