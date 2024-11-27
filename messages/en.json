@@ -4,8 +4,9 @@
         "descriptionSEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
-        "heroInfoText": "Team that takes care of Your needs",
-        "portfolioLink": "Portfolio"
+        "heroInfoText": "A team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
+        "portfolioLink": "Portfolio",
+        "project": "Project"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",

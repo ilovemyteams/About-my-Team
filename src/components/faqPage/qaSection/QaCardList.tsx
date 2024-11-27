@@ -20,7 +20,7 @@ export const QaCardList = async ({
     const likes = await getLikes();
 
     return (
-        <Section className="flex flex-col gap-3">
+        <Section className="flex flex-col gap-3 pb-15 tab:pb-10 pc:pb-[40px] desk:pb-12 ">
             {questions.map(question => (
                 <QaCard
                     key={question.data.slug}
