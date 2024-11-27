@@ -1,6 +1,6 @@
 import { useLocale } from "next-intl";
 
-import { ServiceType } from "@/src/mockedData/servicesDara";
+import { ServiceType } from "@/src/mockedData/servicesData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
