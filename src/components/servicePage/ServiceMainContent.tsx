@@ -1,4 +1,4 @@
-import { ServiceContentType } from "@/src/mockedData/servicesDara";
+import { ServiceContentType } from "@/src/mockedData/servicesData";
 
 import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
 
