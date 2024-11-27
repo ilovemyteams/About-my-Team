@@ -1,8 +1,8 @@
 import { ServiceContentType } from "@/src/mockedData/servicesData";
 
+import { PageSection } from "../shared/PageSection";
 import { ChessboardListWithIconsLayout } from "./ChessboardListWithIcons/ChessboardListWithIconsLayout";
 import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
-import { PageSection } from "../shared/PageSection";
 
 interface ServiceMainContentProps {
     content: ServiceContentType[];

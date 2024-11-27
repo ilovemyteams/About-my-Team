@@ -1,7 +1,7 @@
 import { DescriptionType, TextType } from "@/src/mockedData/servicesData";
+import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 
 import { IconHexagon } from "../../shared/Icons/IconHexagon";
-import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 
 export const ChessboardListItem = ({
     item,
