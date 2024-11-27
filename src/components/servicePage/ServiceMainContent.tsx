@@ -1,4 +1,5 @@
 import { ServiceContentType } from "@/src/mockedData/servicesData";
+
 import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
 
 interface ServiceMainContentProps {

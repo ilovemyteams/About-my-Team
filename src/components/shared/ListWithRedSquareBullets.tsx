@@ -1,4 +1,5 @@
 import { DescriptionType, TextType } from "@/src/mockedData/servicesData";
+
 import { RedSquareBullet } from "./RedSquareBullet";
 
 export const ListWithRedSquareBullets = ({

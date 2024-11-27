@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from "react";
 
 import { useElementWidth } from "@/src/hooks/useElementWidth";
 
+import { RedSquareBullet } from "../RedSquareBullet";
 import { ShowMoreButton } from "../ShowMoreButton";
 import { ItemNumber } from "./ItemNumber";
-import { RedSquareBullet } from "../RedSquareBullet";
 
 const TEXT_CONTAINER_HEIGHT = 60;
 

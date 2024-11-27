@@ -1,8 +1,8 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
+import { RedSquareBullet } from "../../shared/RedSquareBullet";
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { TableContentText } from "./TableContentText";
-import { RedSquareBullet } from "../../shared/RedSquareBullet";
 
 export const TableContentItem = ({
     content,
