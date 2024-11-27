@@ -27,7 +27,7 @@ export interface ServiceContentType {
     description: DescriptionType[];
 }
 
-interface DescriptionType {
+export interface DescriptionType {
     title?: string;
     text: TextType[] | string;
 }

@@ -1,5 +1,7 @@
 import { ServiceContentType } from "@/src/mockedData/servicesDara";
 
+import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
+
 interface ServiceMainContentProps {
     content: ServiceContentType[];
 }
@@ -10,7 +12,7 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
         <div>
             {content.map((item, index) => {
                 if (item.layout === 1) {
-                    return <div key={index}>{item.title} - layout 1 </div>;
+                    return <TwoSideListWithLines key={index} content={item} />;
                 }
 
                 if (item.layout === 2) {
