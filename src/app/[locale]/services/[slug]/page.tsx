@@ -28,8 +28,11 @@ export async function generateMetadata({
     }
 
     const localization = displayedService[params.locale as LocaleType];
+    const normalizedTitle =
+        localization.name[0].toUpperCase() + localization.name.slice(1);
+
     return {
-        title: localization.name,
+        title: normalizedTitle,
         description: localization.shortDescription,
     };
 }

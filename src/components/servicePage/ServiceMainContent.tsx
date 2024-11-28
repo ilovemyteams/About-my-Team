@@ -2,7 +2,9 @@ import { ServiceContentType } from "@/src/mockedData/servicesData";
 
 import { PageSection } from "../shared/PageSection";
 import { ChessboardListWithIconsLayout } from "./ChessboardListWithIcons/ChessboardListWithIconsLayout";
+import { ColumnList } from "./ColumnList/ColumnList";
 import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
+import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
 
 interface ServiceMainContentProps {
     content: ServiceContentType[];
@@ -14,11 +16,11 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
         <>
             {content.map((item, index) => {
                 if (item.layout === 1) {
-                    return <div key={index}>{item.title} - layout 1 </div>;
+                    return <TwoSideListWithLines key={index} content={item} />;
                 }
 
                 if (item.layout === 2) {
-                    return <div key={index}> {item.title} - layout 2 </div>;
+                    return <ColumnList key={index} content={item} />;
                 }
 
                 if (item.layout === 3) {

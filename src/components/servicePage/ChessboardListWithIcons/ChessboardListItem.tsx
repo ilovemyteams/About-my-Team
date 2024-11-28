@@ -1,7 +1,8 @@
-import { DescriptionType, TextType } from "@/src/mockedData/servicesData";
+import { DescriptionType } from "@/src/mockedData/servicesData";
 import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 
 import { IconHexagon } from "../../shared/Icons/IconHexagon";
+import { LayoutText } from "../shared/LayoutText";
 
 export const ChessboardListItem = ({
     item,
@@ -15,35 +16,11 @@ export const ChessboardListItem = ({
         <>
             <div className="tab:mt-2 tab:w-[44.5%] pc:w-[41.76%] desk:w-[44.16%]">
                 {item.title && (
-                    <h4 className="font-caviar font-bold text-white-200 text-lg tab:text-xl pc:text-2xl desk:text-3xl mb-4 pc:mb-6 desk:mb-5">
+                    <h4 className="font-caviar font-bold text-purple-200 dark:text-white-200 text-lg tab:text-xl pc:text-2xl desk:text-3xl mb-4 pc:mb-6 desk:mb-5">
                         {item.title}
                     </h4>
                 )}
-                {typeof item.text === "string" ? (
-                    <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                        {item.text}
-                    </p>
-                ) : (
-                    <ul className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
-                        {(item.text as TextType[]).map((subItem, subIndex) => (
-                            <li
-                                key={subIndex}
-                                className="flex gap-[6px] pc:gap-2"
-                            >
-                                {subItem.type ? (
-                                    <>
-                                        <span className="font-caviar font-bold ml-1">
-                                            {"\u2022"}
-                                        </span>{" "}
-                                        <p>{subItem.text}</p>
-                                    </>
-                                ) : (
-                                    <p>{subItem.text}</p>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                )}
+                <LayoutText text={item.text} />
             </div>
             <div className="tab:w-[8.33%] pc:w-[7.4%] desk:w-[7.485%]">
                 <div className="relative">
