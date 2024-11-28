@@ -52,6 +52,7 @@ export const useUserActivityMonitor = () => {
     };
 
     useEffect(() => {
+        updateUserActivity();
         window.addEventListener("click", updateUserActivity);
         window.addEventListener("keypress", updateUserActivity);
         window.addEventListener("scroll", updateUserActivity);
