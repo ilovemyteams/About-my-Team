@@ -13,9 +13,9 @@ interface ServiceHeroProps {
 export const ServiceHero = ({ title, text, image }: ServiceHeroProps) => {
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] pc:pb-[60px]">
-            <p className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-[60px] pc:mb-[100px] desk:mb-[120px] pc:text-6xl desk:text-7xl">
+            <h1 className="font-caviar text-3xl mb-6 tab:text-4xl tab:mb-[60px] pc:mb-[100px] desk:mb-[120px] pc:text-6xl desk:text-7xl">
                 {HighlightPurple({ title })}
-            </p>
+            </h1>
             <div className="tab:flex tab:flex-row-reverse tab:gap-5 pc:gap-[60px]">
                 <Image
                     src={image}
