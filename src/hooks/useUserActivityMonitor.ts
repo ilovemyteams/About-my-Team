@@ -8,6 +8,7 @@ import {
 
 export const useUserActivityMonitor = () => {
     const [isUserNotActive, setIsUserNotActive] = useState(false);
+
     const eventOpenCounter = useRef<number>(1);
 
     const activeTimeoutId = useRef<
@@ -15,7 +16,11 @@ export const useUserActivityMonitor = () => {
     >("start");
 
     const updateUserActivity = () => {
-        if (activeTimeoutId.current) {
+        let value;
+        if (sessionStorage) {
+            value = sessionStorage.getItem("askModal") === "no";
+        }
+        if (!value && activeTimeoutId.current) {
             const delay =
                 eventOpenCounter.current === 2
                     ? SECOND_USER_INACTIVITY_TIMEOUT
@@ -41,6 +46,8 @@ export const useUserActivityMonitor = () => {
             if (!isClickEvent) {
                 eventOpenCounter.current += 1;
             }
+        } else {
+            sessionStorage.setItem("askModal", "no");
         }
     };
 

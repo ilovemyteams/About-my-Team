@@ -5,6 +5,7 @@ import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 
 import { IconCloseX } from "../Icons/IconCloseX";
+import { Portal } from "./Portal";
 
 interface ModalBaseProps {
     isOpen: boolean;
@@ -63,60 +64,62 @@ export const ModalBase = ({
     return (
         <AnimatePresence>
             {isOpen ? (
-                <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    exit="hidden"
-                    transition={{ duration: 0.5 }}
-                    variants={{
-                        hidden: {
-                            opacity: 0,
-                        },
-                        visible: {
-                            opacity: 1,
-                        },
-                    }}
-                    aria-label="modal-backdrop"
-                    onClick={onCloseModal}
-                    className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
-                >
+                <Portal id="modal">
                     <motion.div
-                        variants={{
-                            hidden: {
-                                x: "-50%",
-                                y: "100vh",
-                                ...centerAnimation.hidden,
-                            },
-                            visible: {
-                                x: "-50%",
-                                y: modalTranslate,
-                                ...centerAnimation.visible,
-                            },
-                        }}
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        transition={{ duration: 0.5, type: animationType }}
-                        aria-label="modal-window"
-                        onClick={e => e.stopPropagation()}
-                        className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
-            -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            hidden: {
+                                opacity: 0,
+                            },
+                            visible: {
+                                opacity: 1,
+                            },
+                        }}
+                        aria-label="modal-backdrop"
+                        onClick={onCloseModal}
+                        className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                     >
-                        <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                            <button
-                                type="button"
-                                onClick={onCloseModal}
-                                disabled={isCloseDisabled}
-                                aria-label="close button"
-                                className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                        <motion.div
+                            variants={{
+                                hidden: {
+                                    x: "-50%",
+                                    y: "100vh",
+                                    ...centerAnimation.hidden,
+                                },
+                                visible: {
+                                    x: "-50%",
+                                    y: modalTranslate,
+                                    ...centerAnimation.visible,
+                                },
+                            }}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            transition={{ duration: 0.5, type: animationType }}
+                            aria-label="modal-window"
+                            onClick={e => e.stopPropagation()}
+                            className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+            -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
+                        >
+                            <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
+                                <button
+                                    type="button"
+                                    onClick={onCloseModal}
+                                    disabled={isCloseDisabled}
+                                    aria-label="close button"
+                                    className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                            >
-                                <IconCloseX className="stroke-2 size-6" />
-                            </button>
-                            {children}
-                        </div>
+                                >
+                                    <IconCloseX className="stroke-2 size-6" />
+                                </button>
+                                {children}
+                            </div>
+                        </motion.div>
                     </motion.div>
-                </motion.div>
+                </Portal>
             ) : null}
         </AnimatePresence>
     );
