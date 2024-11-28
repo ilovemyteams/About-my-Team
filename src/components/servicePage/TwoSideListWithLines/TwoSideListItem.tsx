@@ -26,11 +26,10 @@ export const TwoSideListItem = ({ content }: TwoSideListItemProps) => {
                 <LayoutText text={text} isSmall={true} />
             </div>
 
-            <div className="mt-8 h-[60px] tab:h-auto tab:m-auto group-[:nth-of-type(4n)]:h-[90px] flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">
+            <div className="mt-8 h-[60px] tab:h-auto tab:m-auto flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">
                 <div
-                    className="group-[:nth-of-type(4n)]:rotate-90 
-                    group-[:nth-of-type(4n)]:translate-y-4 tab:group-[:nth-of-type(4n)]:translate-y-0
-                    tab:group-[:nth-of-type(4n+3)]:rotate-180 tab:group-[:nth-of-type(4n+1)]:rotate-270 tab:group-first:hidden tab:group-last:hidden"
+                    className="group-[:nth-of-type(4n)]:rotate-180 tab:group-[:nth-of-type(4n)]:rotate-90 
+                   tab:group-[:nth-of-type(4n+3)]:rotate-180 tab:group-[:nth-of-type(4n+1)]:rotate-270 tab:group-first:hidden tab:group-last:hidden"
                 >
                     <Lines />
                 </div>
