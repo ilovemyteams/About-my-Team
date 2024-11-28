@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 import { DescriptionType } from "@/src/mockedData/servicesData";
+
 import { ChessboardListItem } from "./ChessboardListItem";
 
 export const ChessboardListWithIcons = ({
