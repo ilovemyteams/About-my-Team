@@ -4,6 +4,7 @@ import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
 import { LayoutText } from "../shared/LayoutText";
+import { Lines } from "./Lines";
 
 interface TwoSideListItemProps {
     content: DescriptionType;
@@ -11,10 +12,6 @@ interface TwoSideListItemProps {
 
 export const TwoSideListItem = ({ content }: TwoSideListItemProps) => {
     const { text, title } = content;
-
-    const lines = new Array(6).fill(null);
-
-    new Array(6).map((_, index) => <div key={index} className="h-[60px]" />);
 
     return (
         <li
@@ -29,19 +26,12 @@ export const TwoSideListItem = ({ content }: TwoSideListItemProps) => {
                 <LayoutText text={text} isSmall={true} />
             </div>
 
-            <div className="mt-8 h-[60px] tab:h-auto tab:m-auto group-[:nth-of-type(4n)]:h-[90px] flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">
+            <div className="mt-8 h-[60px] tab:h-auto tab:m-auto flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">
                 <div
-                    className="inline-flex gap-4 tab:gap-5 justify-center h-[60px] tab:h-[90px] group-[:nth-of-type(4n)]:rotate-90 
-                    group-[:nth-of-type(4n)]:translate-y-4 tab:group-[:nth-of-type(4n)]:translate-y-0
-                    tab:group-[:nth-of-type(4n+3)]:rotate-180 tab:group-[:nth-of-type(4n+1)]:rotate-270 tab:group-first:hidden tab:group-last:hidden
-                    tab:flex tab:items-center tab:justify-center"
+                    className="group-[:nth-of-type(4n)]:rotate-180 tab:group-[:nth-of-type(4n)]:rotate-90 
+                   tab:group-[:nth-of-type(4n+3)]:rotate-180 tab:group-[:nth-of-type(4n+1)]:rotate-270 tab:group-first:hidden tab:group-last:hidden"
                 >
-                    {lines.map((_, index) => (
-                        <div
-                            key={index}
-                            className={`h-full w-[1px] ${index === 0 ? "bg-purple-100" : "bg-purple-strokeLight dark:bg-purple-stroke"}`}
-                        />
-                    ))}
+                    <Lines />
                 </div>
             </div>
         </li>
