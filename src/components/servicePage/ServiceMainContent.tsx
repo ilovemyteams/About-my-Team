@@ -1,6 +1,5 @@
 import { ServiceContentType } from "@/src/mockedData/servicesData";
 
-import { PageSection } from "../shared/PageSection";
 import { ChessboardListWithIconsLayout } from "./ChessboardListWithIcons/ChessboardListWithIconsLayout";
 import { ColumnList } from "./ColumnList/ColumnList";
 import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
