@@ -15,7 +15,7 @@ export const HighlightPurple = ({ title }: { title: string }) => {
                         className={
                             index > 0 && parts[index - 1] === "<purple>"
                                 ? "text-purple-100"
-                                : ""
+                                : "text-purple-200 dark:text-grey"
                         }
                     >
                         {part}

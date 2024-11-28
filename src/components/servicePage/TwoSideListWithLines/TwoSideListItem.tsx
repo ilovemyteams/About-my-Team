@@ -3,7 +3,7 @@ import React from "react";
 import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
-import { LayoutTextArray } from "../shared/LayoutTextArray";
+import { LayoutText } from "../shared/LayoutText";
 
 interface TwoSideListItemProps {
     content: DescriptionType;
@@ -26,7 +26,7 @@ export const TwoSideListItem = ({ content }: TwoSideListItemProps) => {
             tab:mb-[-1px] border-purple-strokeLight dark:border-purple-stroke tab:px-7 tab:py-6 pc:py-7"
             >
                 {title && <LayoutSubtitle text={title} />}
-                <LayoutTextArray text={text} />
+                <LayoutText text={text} isSmall={true} />
             </div>
 
             <div className="mt-8 h-[60px] tab:h-auto tab:m-auto group-[:nth-of-type(4n)]:h-[90px] flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">

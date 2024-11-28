@@ -1,7 +1,7 @@
 import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
-import { ColumnText } from "./ColumnText";
+import { LayoutText } from "../shared/LayoutText";
 
 interface ColumnListItemProps {
     content: DescriptionType;
@@ -14,7 +14,7 @@ export const ColumnListItem = ({ content }: ColumnListItemProps) => {
             {title && (
                 <LayoutSubtitle text={title} className="pc:text-2xlb pc:mb-4" />
             )}
-            <ColumnText text={text} />
+            <LayoutText text={text} />
         </li>
     );
 };

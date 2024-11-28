@@ -40,9 +40,14 @@ export const ServiceCard = ({ service, servicesCount }: ServiceCardProps) => {
         >
             <div className="flex gap-4 pc:gap-6 items-center">
                 <Icon className="text-purple-130 dark:text-purple-100 w-8 h-8 pc:w-10 pc:h-10" />
-                <h2 className=" lowercase first-letter:uppercase font-caviar text-xlb text-purple-200 dark:text-white-200">
-                    {name}
-                </h2>
+                <Link
+                    href={`/services/${slug}`}
+                    className="text-purple-200 dark:text-white-200 tab:hover:text-redLight tab:dark:hover:text-red  tab:focus:text-redLight dark:tab:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight"
+                >
+                    <h2 className=" lowercase first-letter:uppercase font-caviar text-xlb">
+                        {name}
+                    </h2>
+                </Link>
             </div>
             <p>{shortDescription}</p>
             <div className="mt-auto">
@@ -57,9 +62,9 @@ export const ServiceCard = ({ service, servicesCount }: ServiceCardProps) => {
                 <Link
                     href={`/services/${slug}`}
                     className=" pc:hidden text-base text-purple-130 dark:text-purple-100 tab:hover:text-redLight dark:tab:hover:text-red
-                    tab:focus:text-redLight dark:tab:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition 
-                    tab:ease-out tab:duration-300 relative tab:z-[-1] before:absolute before:bottom-[1px] before:w-full before:border-b before:border-current
-                    tab::peer-hover:text-redLight dark:tab:peer-hover:text-red tab:peer-focus:text-redLight dark:tab:peer-focus:text-red 
+                    tab:focus:text-redLight dark:tab:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight transition 
+                    ease-out duration-300 relative tab:z-[-1] before:absolute before:bottom-[1px] before:w-full before:border-b before:border-current
+                    tab:peer-hover:text-redLight dark:tab:peer-hover:text-red tab:peer-focus:text-redLight dark:tab:peer-focus:text-red 
                     dark:peer-active:text-red peer-active:text-redLight"
                 >
                     {getTranslate("details")}
