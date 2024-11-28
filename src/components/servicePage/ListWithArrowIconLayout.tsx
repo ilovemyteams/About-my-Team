@@ -2,7 +2,6 @@ import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { IconQADecoration } from "../shared/Icons/IconQADecoration";
 import { ListWithRedSquareBullets } from "../shared/ListWithRedSquareBullets";
-import { PageSection } from "../shared/PageSection";
 
 export const ListWithArrowIconLayout = ({
     description,
@@ -12,7 +11,7 @@ export const ListWithArrowIconLayout = ({
     title?: string;
 }) => {
     return (
-        <PageSection className="pb-8 tab:pb-[100px] pc:pb-[160px] desk:pb-[180px]">
+        <>
             {title && (
                 <h2 className="font-caviar text-2xlb tab:text-4xl pc:text-5xl desk:text-6xl dark:text-white-200 text-purple-200 mb-10 tab:mb-[64px] pc:mb-[80px]">
                     {title}
@@ -24,6 +23,6 @@ export const ListWithArrowIconLayout = ({
                     <IconQADecoration className="tab:sticky tab:top-[88px] pc:top-2" />
                 </div>
             </div>
-        </PageSection>
+        </>
     );
 };
