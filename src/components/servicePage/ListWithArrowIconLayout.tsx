@@ -2,8 +2,8 @@ import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { IconQADecoration } from "../shared/Icons/IconQADecoration";
 import { ListWithRedSquareBullets } from "../shared/ListWithRedSquareBullets";
-import { LayoutTitle } from "./shared/LayoutTitle";
 import { PageSection } from "../shared/PageSection";
+import { LayoutTitle } from "./shared/LayoutTitle";
 
 export const ListWithArrowIconLayout = ({
     description,

@@ -1,8 +1,8 @@
 import { DescriptionType } from "@/src/mockedData/servicesData";
 
+import { PageSection } from "../../shared/PageSection";
 import { LayoutTitle } from "../shared/LayoutTitle";
 import { ChessboardListWithIcons } from "./ChessboardListWithIcons";
-import { PageSection } from "../../shared/PageSection";
 
 export const ChessboardListWithIconsLayout = ({
     description,
