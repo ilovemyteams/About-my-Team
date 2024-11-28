@@ -1,5 +1,6 @@
 import { ServiceContentType } from "@/src/mockedData/servicesData";
 
+import { ColumnList } from "./ColumnList/ColumnList";
 import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
 
 interface ServiceMainContentProps {
@@ -16,7 +17,7 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                 }
 
                 if (item.layout === 2) {
-                    return <div key={index}> {item.title} - layout 2 </div>;
+                    return <ColumnList key={index} content={item} />;
                 }
 
                 if (item.layout === 3) {
