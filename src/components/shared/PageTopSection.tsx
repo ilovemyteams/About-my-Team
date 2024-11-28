@@ -61,10 +61,11 @@ export const PageTopSection = ({
                             return (
                                 <BreadcrumbItem
                                     key={item.title}
-                                    className="flex-1 overflow-hidden capitalize"
+                                    className="flex-1 overflow-hidden"
                                 >
                                     <p className="dark:text-red text-redLight max-w-full truncate">
-                                        {item.title}
+                                        {item.title[0].toUpperCase() +
+                                            item.title.slice(1)}
                                     </p>
                                 </BreadcrumbItem>
                             );
