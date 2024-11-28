@@ -10,7 +10,7 @@
 /* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
-    padding-right: 17px;
+    /* padding-right: 17px; */
 }
 
 @media (prefers-color-scheme: dark) {
