@@ -7,7 +7,6 @@ function createRootElement(id: string): HTMLDivElement {
     const rootContainer = document.createElement("div");
     rootContainer.setAttribute("id", id);
     rootContainer.setAttribute("role", "presentation");
-    rootContainer.classList.add("portal");
 
     return rootContainer;
 }
@@ -18,27 +17,6 @@ function addRootElement(rootElem: Element): void {
         rootElem,
         (document.body.lastElementChild as HTMLElement).nextElementSibling
     );
-}
-
-//change styles for body and root elements while modal is active
-function hideRootElement(): void {
-    const rootElement = document.getElementById("root");
-    const bodyElement = document.querySelector("body");
-    if (!rootElement || !bodyElement) {
-        return;
-    }
-    bodyElement.classList.add("hide");
-    rootElement.setAttribute("aria-hidden", "true");
-}
-
-function showRootElement(): void {
-    const rootElement = document.getElementById("root");
-    const bodyElement = document.querySelector("body");
-    if (!rootElement || !bodyElement) {
-        return;
-    }
-    bodyElement.classList.remove("hide");
-    rootElement.removeAttribute("aria-hidden");
 }
 
 export default function usePortal(id: string): HTMLElement {
@@ -59,12 +37,11 @@ export default function usePortal(id: string): HTMLElement {
         if (rootElemRef.current) {
             rootElemRef.current.setAttribute("id", "wrapper");
             parentElem.appendChild(rootElemRef.current);
-            hideRootElement();
         }
         return function removeElement() {
             if (rootElemRef.current) {
                 rootElemRef.current.remove();
-                showRootElement();
+
                 if (parentElem.childNodes.length === -1) {
                     parentElem.remove();
                 }
