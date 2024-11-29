@@ -4,8 +4,9 @@
         "descriptionSEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
     },
     "Hero": {
-        "heroInfoText": "Team that takes care of Your needs",
-        "portfolioLink": "Portfolio"
+        "heroInfoText": "A team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
+        "portfolioLink": "Portfolio",
+        "project": "Project"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
@@ -111,6 +112,7 @@
         "mobileBigTitlePart2": "frequently asked questions",
         "pageBigTitle": "Answering the frequently asked questions ",
         "questionQuantity": "Quantity of answers: ",
+        "foundAnswerQuantity": "Answers found: ",
         "question1": "I need a website. Where should I start?",
         "answer1": "Start by answering the following questions honestly: “Why do I need a website? What do I expect from the website? What am I going to show on it? Who do I want to show it to? And what should those who visit my site do?” Answers to these questions will help you understand whether you need a website at all and what it should look like. And then fill out the Order form and send us your honest answers, and we will do everything with care for your goals and the needs of your business.",
         "question2": "What to choose - a landing page or a website?",
@@ -118,7 +120,7 @@
         "question3": "What are the terms of the development of a fully functional website?",
         "answer3": "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Developing a 10-page website with registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
         "question4": "How much does development cost?",
-        "answer4": "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 20-30 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the Product Manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
+        "answer4": "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 20-30 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the product manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
         "question5": "Can I choose which team will work on my order?",
         "answer5": "Yes, you can choose individual specialists and form a team on your own. In this case, we strongly recommend that you first contact your manager for advice. If you need a dedicated specialist for hourly work with your existing product, please contact the specialist via their telegram or LinkedIn."
     },
@@ -270,7 +272,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Home",
         "breadcrumbItemAbout": "About us",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Services"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -287,5 +290,12 @@
         "orderCardText": "We are ready to take on all the challenges of development and help you create the perfect website for your business, while enjoying the collaboration throughout the process of its development and launch.",
         "orderCardImgAlt": "Order services",
         "orderCardButton": "order"
+    },
+    "ServicesPage": {
+        "title": "We develop <purple>digital \nproducts</purple> for your business",
+        "titleSEO": "Website development services for business - modern web design and development",
+        "descriptionSEO": "Turnkey web development of websites: convenient structure, modern design and integration of functions. We work with individual requirements of each client.",
+        "ctaText": "Get a comprehensive consultation with our manager if you have any questions or doubts",
+        "details": "More"
     }
 }

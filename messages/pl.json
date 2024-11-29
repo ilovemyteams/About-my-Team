@@ -5,8 +5,9 @@
     },
 
     "Hero": {
-        "heroInfoText": "Zespół, który dba o Twoje potrzeby",
-        "portfolioLink": "Realizacje"
+        "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
+        "portfolioLink": "Realizacje",
+        "project": "Projekt"
     },
 
     "Portfolio": {
@@ -113,6 +114,7 @@
         "mobileBigTitlePart2": "często zadawane pytania",
         "pageBigTitle": "Odpowiedzi na często zadawane pytania",
         "questionQuantity": "Liczba odpowiedzi: ",
+        "foundAnswerQuantity": "Znaleziono odpowiedzi: ",
         "question1": "Potrzebuję strony internetowej. Od czego zacząć?",
         "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić Ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą Ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
         "question2": "Co wybrać - landing page czy stronę internetową?",
@@ -120,7 +122,7 @@
         "question3": "Ile trwa stworzenie strony internetowej?",
         "answer3": "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 10-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
         "question4": "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
-        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
+        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z product managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
         "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
         "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn."
     },
@@ -271,7 +273,8 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Usługi"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -288,5 +291,12 @@
         "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
         "orderCardImgAlt": "Zamówić usługi",
         "orderCardButton": "zamówić"
+    },
+    "ServicesPage": {
+        "title": "Tworzymy <purple>produkty \ncyfrowe</purple> dla Twojej firmy",
+        "titleSEO": "Usługi tworzenia stron internetowych dla biznesu - nowoczesne projektowanie i tworzenie stron internetowych",
+        "descriptionSEO": "Tworzenie stron internetowych pod klucz: przyjazna dla użytkownika struktura, nowoczesny design i integracja funkcji. Pracujemy z indywidualnymi wymaganiami każdego klienta.",
+        "ctaText": "Uzyskaj kompleksową konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
+        "details": "Więcej"
     }
 }

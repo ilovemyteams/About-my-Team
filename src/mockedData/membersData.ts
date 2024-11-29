@@ -35,7 +35,7 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "SusannaSalataPM",
+            id: "susanna-salata-manager",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
@@ -90,7 +90,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "MariiaPopova",
+            id: "mariia-popova-designer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
@@ -135,7 +135,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "SvitlanaKondratenko",
+            id: "svitlana-kondratenko-business-analytic",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1LHJIjTws0sAAYnDztAepbuRq54OPydpH",
@@ -187,7 +187,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "VladShumkov",
+            id: "vlad-shumkov-developer",
             projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
@@ -239,7 +239,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "IhorDronishynets",
+            id: "ihor-dronishynets-developer",
             projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
@@ -298,7 +298,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "IrynaStoliarova",
+            id: "iryna-stoliarova-designer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
@@ -341,7 +341,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "AnastasiiaNazarenko",
+            id: "anastasiia-nazarenko-designer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
@@ -387,7 +387,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "EugeneSerdiuk",
+            id: "eugene-serdiuk-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Me_DV0bkJvBLGxPBQbrmGjS5uK-VcW8z",
@@ -437,7 +437,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "IrynaTrynkal",
+            id: "iryna-trynkal-developer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
@@ -487,7 +487,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OlenaPosternak",
+            id: "olena-posternak-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
@@ -537,7 +537,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OlgaMykhailova",
+            id: "olga-mykhailova-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
@@ -593,7 +593,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "KaterynaRubanik",
+            id: "kateryna-rubanik-qa",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
@@ -647,59 +647,9 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
-
     {
         data: {
-            id: "DariaCherviakova",
-            projectId: [],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
-            position: "Project Manager/ Scrum Master",
-            categoryName: "manager",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
-                telegram: "https://t.me/Dari_Chap",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Trello",
-                "Google Sheets/Docs",
-                "Slack",
-                "Microsoft Teams",
-                "Miro",
-                "Figma",
-                "Easy Retro",
-                "Gantt Chart",
-            ],
-        },
-        ua: {
-            name: "Дар'я Червякова",
-            about: "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
-            services:
-                "Надаю послуги як юніор Project Manager. Координую та сприяю виконанню проектів у відповідності до методології Scrum.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Daria Cherviakova",
-            about: "Junior Project Manager/ Scrum Master with a desire for professional growth. I manage the process, ensure effective communication and fulfillment of goals.",
-            services:
-                "I provide services as a junior Project Manager. I coordinate and facilitate the implementation of projects in accordance with the Scrum methodology.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Daria Cherviakova",
-            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i osiąganie celów.",
-            services:
-                "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "SusannaSalataBA",
+            id: "susanna-salata-business-analytic",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
@@ -756,57 +706,10 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
+
     {
         data: {
-            id: "OlhaKuchalska",
-            projectId: [],
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
-            projectsExperience: [],
-            pricePerHour: "",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
-                telegram: "https://t.me/o_kuchalska",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Google Sheets/Docs.",
-                "UML",
-                "BPMN notations",
-                "Draw.io",
-                "Visio",
-                "Lucidchart",
-                "Figma",
-            ],
-        },
-        ua: {
-            name: "Ольга Кучальська",
-            about: "Єдиний спосіб робити свою роботу добре — це любити її. Я люблю свою роботу!",
-            services:
-                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olha Kuchalska",
-            about: "The only way to do your job well is to love it. I love my job!",
-            services:
-                "Customer business needs analysis. Data analysis. Market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Requirements management between developers and stakeholders. Writing technical documentation and user stories. Basic testing skills and knowledge of SQL. Understanding of SDLC, agile methodologies, and basic management skills. Excellent communication skills.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olha Kuchalska",
-            about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
-            services:
-                "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "DenisSlivinskyi",
+            id: "denis-slivinskyi-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=19t3e6QnD3Xm5Pwtq5NRdElfN5OAr9GB3",
@@ -860,7 +763,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "VolodymyrDehtiarev",
+            id: "volodymyr-dehtiarev-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nfCVkBnKMTCaP8p504qw3kUGv4i_nl4i",
@@ -909,7 +812,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OlenaChornobryvets",
+            id: "olena-chornobryvets-qa",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1dgTU9cl1a02ZoC35oCDbjnANSX_HX0kY",
@@ -955,7 +858,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "HannaHorbenko",
+            id: "hanna-horbenko-qa",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1fp6JW8_U85A9JRP3GWZ8wq9TgmP1mggd",
@@ -1008,7 +911,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "AnnaKlyba",
+            id: "anna-klyba-qa",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V-icZV2Ugq3h5uP89suS4qbNeF4Crcd7",
@@ -1060,7 +963,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OksanaLuchko",
+            id: "oksana-luchko-qa",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wGCOxPKTkU42QK_w6wO66fmSdAdNHvPB",
@@ -1108,7 +1011,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "NadiaHubchuk",
+            id: "nadia-hubchuk-qa",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1CtrIlXU6_7nmlPdi9QiGZRGgyqztHxU1",
@@ -1159,7 +1062,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "TetianaSeletska",
+            id: "tetiana-seletska-manager",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mPUXf8ifPVMmTU_ef_jH0GfBWCunBsxW",
@@ -1206,51 +1109,56 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "YuliyaBorys",
-            projectId: ["1"],
+            id: "daria-cherviakova-manager",
+            projectId: [],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
-            position: "Business Analyst",
-            categoryName: "business-analytic",
+                "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
+            position: "Project Manager/ Scrum Master",
+            categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
-                linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
-                telegram: "http://t.me/yuliyaborys",
+                linkedin: "http://linkedin.com/in/dari-cherviakova-3a521a27b",
+                telegram: "https://t.me/Dari_Chap",
             },
             tools: [
                 "Jira",
                 "Confluence",
-                "Google Forms",
-                "BPML (Draw.io, Figma)",
+                "Trello",
+                "Google Sheets/Docs",
+                "Slack",
+                "Microsoft Teams",
                 "Miro",
+                "Figma",
+                "Easy Retro",
+                "Gantt Chart",
             ],
         },
         ua: {
-            name: "Юлія Борис",
-            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
+            name: "Дар'я Червякова",
+            about: "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
             services:
-                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
+                "Надаю послуги як юніор Project Manager. Координую та сприяю виконанню проектів у відповідності до методології Scrum.",
             team: "I Love My Team",
         },
         en: {
-            name: "Yuliya Borys",
-            about: "A business analyst is a bridge between the business and the development team!",
+            name: "Daria Cherviakova",
+            about: "Junior Project Manager/ Scrum Master with a desire for professional growth. I manage the process, ensure effective communication and fulfillment of goals.",
             services:
-                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
+                "I provide services as a junior Project Manager. I coordinate and facilitate the implementation of projects in accordance with the Scrum methodology.",
             team: "I Love My Team",
         },
         pl: {
-            name: "Yuliya Borys",
-            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
+            name: "Daria Cherviakova",
+            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i osiąganie celów.",
             services:
-                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
+                "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
             team: "I Love My Team",
         },
     },
     {
         data: {
-            id: "HannaTruba",
+            id: "hanna-truba-marketer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mXIyJyg9SoQzeIQxZ116CofCnMu7pbwJ",
@@ -1296,7 +1204,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OlenaHolubonkova",
+            id: "olena-holubonkova-marketer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mZzLYsWXd5X0LxLCo7fYxz5A9cSStQBJ",
@@ -1342,7 +1250,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "MartaMorintseva",
+            id: "marta-morintseva-qa",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1cjstQ443wX1x8qerPgwXC109fAiUvZMN",
@@ -1394,7 +1302,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "IrynaShevchenko",
+            id: "iryna-shevchenko-business-analytic",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14d7tOm2EEpI4xG-worNliutU5hnwOpCe",
@@ -1446,7 +1354,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "NataliIstominaMarket",
+            id: "natali-istomina-marketer",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
@@ -1494,7 +1402,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "NataliIstominaBA",
+            id: "natali-istomina-business-analytic",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
@@ -1541,7 +1449,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "VeronikaZlobina",
+            id: "veronika-zlobina-designer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1uiJss2kZE8k04-lTV07vIUQQk_-3dR8f",
@@ -1593,7 +1501,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "MilaMaksymenko",
+            id: "mila-maksymenko-designer",
             projectId: ["1", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RjBfHBr05T_fuzgTswljLGrPXnnC9PIN",
@@ -1649,7 +1557,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "AntonChertok",
+            id: "anton-chertok-developer",
             projectId: ["3", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=16evkhxhlshI1i5u9n-Gus4vQebOq3bLt",
@@ -1702,7 +1610,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "DmytroBulakhov",
+            id: "dmytro-bulakhov-developer",
             projectId: ["3", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lii6aMputmuNrLFHNIZN7aoq8uNw7ipt",
@@ -1752,7 +1660,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "EvhenMalysh",
+            id: "evhen-malysh-developer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1AjBCSRShpXihOxgvQ0VX2T1B6GLAs7jY",
@@ -1804,7 +1712,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "AnatoliiOmelchenko",
+            id: "anatolii-omelchenko-developer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1ft3N7N8MCPAXGHb6BH3HGzpEfepkXyaF",
@@ -1854,7 +1762,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OleksandrMeshcherskyi",
+            id: "oleksandr-meshcherskyi-developer",
             projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=12N2hSCNCiHj2v__i5SCk5bfepXtBwyuW",
@@ -1903,7 +1811,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "SvitlanaKrokhmalna",
+            id: "svitlana-krokhmalna-qa",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1rSkmS0DR2FpT-lPkHyTXo3Qtfm1uE0uo",
@@ -1951,7 +1859,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "OksanaOnopriienko",
+            id: "oksana-onopriienko-qa",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
@@ -1999,7 +1907,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OlenaHalushka",
+            id: "olena-halushka-designer",
             projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
@@ -2057,7 +1965,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "MariiaCherevko",
+            id: "mariia-cherevko-designer",
             projectId: ["1"],
 
             imageURL:
@@ -2107,7 +2015,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "AnnaPrutnik",
+            id: "anna-prutnik-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1QFXDXtH3bITUpp4eReNJf6jYScTrKC0z",
@@ -2161,7 +2069,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "OleksandrPetrychuk",
+            id: "oleksandr-petrychuk-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1r7xqlvLM9jJbY7UsaPqoTGuvIiBWXiYL",
@@ -2210,7 +2118,56 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "KaterynaPogrebna",
+            id: "eugene-siedinin-qa",
+            projectId: ["2"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1FzHrVfH0Uf5rE-p0HKGiR1SWwMaNMaZx",
+            position: "QA engineer",
+            categoryName: "qa",
+            projectsExperience: ["batatfarm.com"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/eugene-sedinin/",
+                telegram: "https://t.me/Siedinin",
+                github: "https://github.com/qaEug",
+            },
+            tools: [
+                "Jira",
+                "Postman",
+                "Swagger",
+                "DBeaver",
+                "SQL",
+                "Terminal",
+                "Git",
+                "DevTools",
+                "VSCode",
+            ],
+        },
+        ua: {
+            name: "Євген Сєдінін",
+            about: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
+            services:
+                "Ручне тестування, десктоп та мобільне тестування, API тестування, робота з тестовою документацією (тест кейс, чекліст, баг репорт).",
+            team: "Smachno! na seli",
+        },
+        en: {
+            name: "Eugene Siedinin",
+            about: "QA weaves a fine thread through all the intricacies of IT.",
+            services:
+                "Manual testing, desktop and mobile testing, API testing, work with test documentation (test case, checklist, bug report).",
+            team: "Smachno! na seli",
+        },
+        pl: {
+            name: "Eugene Siedinin",
+            about: "QA cienką nicią przechodzi przez wszystkie zawiłości IT.",
+            services:
+                "Testowanie manualne, testowanie desktopowe i mobilne, testowanie API, praca z dokumentacją testową (przypadek testowy, lista kontrolna, raport błędu).",
+            team: "Smachno! na seli",
+        },
+    },
+    {
+        data: {
+            id: "kateryna-pogrebna-qa",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
@@ -2271,51 +2228,94 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "EugeneSiedinin",
-            projectId: ["2"],
+            id: "yuliya-borys-business-analytic",
+            projectId: ["1"],
             imageURL:
-                "https://drive.google.com/uc?export=view&id=1FzHrVfH0Uf5rE-p0HKGiR1SWwMaNMaZx",
-            position: "QA engineer",
-            categoryName: "qa",
-            projectsExperience: ["batatfarm.com"],
-            pricePerHour: "7",
+                "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
             socialLinks: {
-                linkedin: "http://www.linkedin.com/in/eugene-sedinin/",
-                telegram: "https://t.me/Siedinin",
-                github: "https://github.com/qaEug",
+                linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
+                telegram: "http://t.me/yuliyaborys",
             },
             tools: [
                 "Jira",
-                "Postman",
-                "Swagger",
-                "DBeaver",
-                "SQL",
-                "Terminal",
-                "Git",
-                "DevTools",
-                "VSCode",
+                "Confluence",
+                "Google Forms",
+                "BPML (Draw.io, Figma)",
+                "Miro",
             ],
         },
         ua: {
-            name: "Євген Сєдінін",
-            about: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
+            name: "Юлія Борис",
+            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
             services:
-                "Ручне тестування, десктоп та мобільне тестування, API тестування, робота з тестовою документацією (тест кейс, чекліст, баг репорт).",
-            team: "Smachno! na seli",
+                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
+            team: "I Love My Team",
         },
         en: {
-            name: "Eugene Siedinin",
-            about: "QA weaves a fine thread through all the intricacies of IT.",
+            name: "Yuliya Borys",
+            about: "A business analyst is a bridge between the business and the development team!",
             services:
-                "Manual testing, desktop and mobile testing, API testing, work with test documentation (test case, checklist, bug report).",
-            team: "Smachno! na seli",
+                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
+            team: "I Love My Team",
         },
         pl: {
-            name: "Eugene Siedinin",
-            about: "QA cienką nicią przechodzi przez wszystkie zawiłości IT.",
+            name: "Yuliya Borys",
+            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
             services:
-                "Testowanie manualne, testowanie desktopowe i mobilne, testowanie API, praca z dokumentacją testową (przypadek testowy, lista kontrolna, raport błędu).",
-            team: "Smachno! na seli",
+                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "olha-kuchalska-business-analytic",
+            projectId: [],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: [],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/olha-kuchalska",
+                telegram: "https://t.me/o_kuchalska",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs.",
+                "UML",
+                "BPMN notations",
+                "Draw.io",
+                "Visio",
+                "Lucidchart",
+                "Figma",
+            ],
+        },
+        ua: {
+            name: "Ольга Кучальська",
+            about: "Єдиний спосіб робити свою роботу добре — це любити її. Я люблю свою роботу!",
+            services:
+                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olha Kuchalska",
+            about: "The only way to do your job well is to love it. I love my job!",
+            services:
+                "Customer business needs analysis. Data analysis. Market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Requirements management between developers and stakeholders. Writing technical documentation and user stories. Basic testing skills and knowledge of SQL. Understanding of SDLC, agile methodologies, and basic management skills. Excellent communication skills.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olha Kuchalska",
+            about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
+            services:
+                "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
+            team: "I Love My Team",
         },
     },
 ];

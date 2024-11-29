@@ -82,7 +82,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Підбір \nкоманди",
                             text: [
-                                "У нас представлені багато спеціалістів різного напрямку та рівня. В залежності від вашої потреби Менеджер підкаже вам оптимальний склад команди або ви можете обрати собі людей в команду самостійно.",
+                                "У нас представлені багато спеціалістів різного напрямку та рівня. В залежності від вашої потреби менеджер підкаже вам оптимальний склад команди або ви можете обрати собі людей в команду самостійно.",
                             ],
                         },
                         {
@@ -878,7 +878,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим Менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
+                                "Якщо ви бажаєте отримати більш точну оцінку вартості вашого проєкту, найкраще рішення — зв’язатися з нашим менеджером, який  допоможе вам з’ясувати всі деталі: які функції будуть реалізовані, який дизайн вас цікавить, і які терміни виконання. Після цього ми зможемо підготувати для вас комерційну пропозицію з приблизною вартістю розробки та планом робіт.",
                             ],
                         },
                         {
@@ -1114,7 +1114,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our Manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
+                                "If you want to get a more accurate estimate of the cost of your project, the best solution is to contact our manager, who will help you clarify all the details: what features will be implemented, what design you are interested in, and what are the deadlines. After that, we will be able to prepare a commercial offer for you with the approximate cost of development and a work plan.",
                             ],
                         },
                         {
@@ -1133,7 +1133,7 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "can-i-choose-which-team-will-work-on-my-order",
-            image: "https://drive.google.com/thumbnail?id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
+            image: "https://drive.google.com/uc?export=view&id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
             likes: 0,
             removeOrderBtn: true,
             answerOrderImage:
@@ -1142,7 +1142,7 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Чи можу я самостійно \nпідібрати команду?",
             shortAnswerText: [
-                "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до Менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже реалізованим продуктом — зв’яжіться зі спеціалістом через його телеграм або лінкедін напряму і повідомте як ви його знайшли та чому обрали саме його/її.",
+                "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже реалізованим продуктом — зв’яжіться зі спеціалістом через його телеграм або лінкедін напряму і повідомте як ви його знайшли та чому обрали саме його/її.",
             ],
             imageAltText:
                 "Чи можу я самостійно обрати, яка команда працюватиме над моїм замовленням?",
@@ -1163,13 +1163,13 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Формування \nкоманди",
                             text: [
-                                "Ви можете обрати окремих фахівців або відразу сформувати повноцінну команду, залежно від вимог вашого проєкту. У цьому випадку ми наполегливо рекомендуємо звернутись за консультацією до нашого *link=`/${locale}/order` noblank*Менеджера*/link*, який/яка допоможе вам правильно оцінити необхідні ресурси та функціональні ролі для успішної реалізації проєкту. Це особливо важливо, якщо ви не маєте досвіду в управлінні командою розробників або маєте складний проєкт, який вимагає кількох фахівців із різними компетенціями.",
+                                "Ви можете обрати окремих фахівців або відразу сформувати повноцінну команду, залежно від вимог вашого проєкту. У цьому випадку ми наполегливо рекомендуємо звернутись за консультацією до нашого *link=`/${locale}/order` noblank*менеджера*/link*, який/яка допоможе вам правильно оцінити необхідні ресурси та функціональні ролі для успішної реалізації проєкту. Це особливо важливо, якщо ви не маєте досвіду в управлінні командою розробників або маєте складний проєкт, який вимагає кількох фахівців із різними компетенціями.",
                             ],
                         },
                         {
-                            title: "Підтримка \nвід Менеджера",
+                            title: "Підтримка \nвід менеджера",
                             text: [
-                                "Попри те, що ви можете самостійно підібрати команду, наша компанія завжди готова надати підтримку на кожному етапі. Менеджер допоможе вам правильно організувати процес розробки, налаштувати комунікацію та забезпечити ефективну взаємодію між членами команди. Якщо вам потрібно більше 3-х спеціалістів (дизайнер, розробник, тестувальник) то взявши в команду Менеджера ви зекономите час та гроші, бо Менеджер налагодить процес так, що вам не доведеться долучатися до роботи самостійно — ваша задача буде озвучувати/описувати свої вимоги та затверджувати макети та запропоновані технічні рішення, а не займатись управлінням людьми та їх взаємодією. Також Менеджер буде вам регулярно звітувати про етапи роботи, проводити демо та консультації, а також забезпечить наявність всієї необхідної документації та розрахунків.",
+                                "Попри те, що ви можете самостійно підібрати команду, наша компанія завжди готова надати підтримку на кожному етапі. Менеджер допоможе вам правильно організувати процес розробки, налаштувати комунікацію та забезпечити ефективну взаємодію між членами команди. Якщо вам потрібно більше 3-х спеціалістів (дизайнер, розробник, тестувальник) то взявши в команду менеджера ви зекономите час та гроші, бо менеджер налагодить процес так, що вам не доведеться долучатися до роботи самостійно — ваша задача буде озвучувати/описувати свої вимоги та затверджувати макети та запропоновані технічні рішення, а не займатись управлінням людьми та їх взаємодією. Також менеджер буде вам регулярно звітувати про етапи роботи, проводити демо та консультації, а також забезпечить наявність всієї необхідної документації та розрахунків.",
                             ],
                         },
                     ],
@@ -1222,7 +1222,7 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "Can I choose which team \nwill work on my order?",
             shortAnswerText: [
-                "Yes, you can choose individual specialists and assemble a team on your own. In this case, we strongly recommend first reaching out to a Manager for consultation. If you need a specific specialist for hourly work on your existing product, contact the specialist directly through their Telegram or LinkedIn and let them know how you found them and why you chose them.",
+                "Yes, you can choose individual specialists and assemble a team on your own. In this case, we strongly recommend first reaching out to a manager for consultation. If you need a specific specialist for hourly work on your existing product, contact the specialist directly through their Telegram or LinkedIn and let them know how you found them and why you chose them.",
             ],
             imageAltText: "Can I choose which team will work on my order?",
             fullAnswerTopText: [
@@ -1242,13 +1242,13 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Forming \na team",
                             text: [
-                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`/${locale}/order` noblank*Manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
+                                "You can choose individual specialists or immediately form a full-fledged team, depending on the requirements of your project. In this case, we strongly recommend consulting with our *link=`/${locale}/order` noblank*manager*/link*, who will help you accurately assess the necessary resources and functional roles for the successful implementation of the project. This is especially important if you have no experience in managing a development team or if you have a complex project that requires several specialists with different competencies.",
                             ],
                         },
                         {
-                            title: "Support \nfrom the Manager",
+                            title: "Support \nfrom the manager",
                             text: [
-                                "Even though you can assemble a team on your own, our company is always ready to provide support at every stage. The Manager will help you properly organize the development process, set up communication, and ensure effective interaction among team members. If you need more than three specialists (such as a designer, developer, and tester), having a Manager on the team will save you time and money. The Manager will streamline the process so that you won’t have to get involved in the work yourself — your task will be to articulate/describe your requirements and approve designs and proposed technical solutions, rather than manage people and their interactions. Additionally, the Manager will regularly report to you on the progress of the work, conduct demos and consultations, and ensure that all necessary documentation and calculations are available.",
+                                "Even though you can assemble a team on your own, our company is always ready to provide support at every stage. The manager will help you properly organize the development process, set up communication, and ensure effective interaction among team members. If you need more than three specialists (such as a designer, developer, and tester), having a manager on the team will save you time and money. The manager will streamline the process so that you won’t have to get involved in the work yourself — your task will be to articulate/describe your requirements and approve designs and proposed technical solutions, rather than manage people and their interactions. Additionally, the manager will regularly report to you on the progress of the work, conduct demos and consultations, and ensure that all necessary documentation and calculations are available.",
                             ],
                         },
                     ],
@@ -1282,9 +1282,9 @@ export const questionsData: QAItemType[] = [
                     title: "Як відбувається процес внесення змін?",
                     data: [
                         {
-                            title: "Звернення \nдо Менеджера",
+                            title: "Звернення \nдо менеджера",
                             text: [
-                                "Перший крок — це звернутися до Менеджера, який керує розробкою вашого продукту. Менеджер координує всі етапи роботи та взаємодію команди, це та людина, яка допоможе вам зрозуміти, як найкраще впровадити зміни без шкоди для загальної концепції проєкту та в межах проговорених термінів та бюджету (якщо це можливо).",
+                                "Перший крок — це звернутися до менеджера, який керує розробкою вашого продукту. Менеджер координує всі етапи роботи та взаємодію команди, це та людина, яка допоможе вам зрозуміти, як найкраще впровадити зміни без шкоди для загальної концепції проєкту та в межах проговорених термінів та бюджету (якщо це можливо).",
                             ],
                         },
                         {
@@ -1293,7 +1293,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "Після того, як ви повідомите про бажання внести зміни, Менеджер обговорить це з командою розробників, дизайнерів та інших спеціалістів, які працюють над вашим продуктом. Це дозволить оцінити:",
+                                        "Після того, як ви повідомите про бажання внести зміни, менеджер обговорить це з командою розробників, дизайнерів та інших спеціалістів, які працюють над вашим продуктом. Це дозволить оцінити:",
                                     ],
                                 },
                                 {
@@ -1325,7 +1325,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "Після консультації з командою розробки Менеджер надасть вам інформацію про:",
+                                        "Після консультації з командою розробки менеджер надасть вам інформацію про:",
                                     ],
                                 },
                                 {
@@ -1355,7 +1355,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Затвердження \nта реалізація змін",
                             text: [
-                                "Якщо ви вирішите продовжувати зі змінами, вони будуть внесені до плану робіт, і команда почне їх реалізацію. Після цього Менеджер слідкуватиме за тим, щоб нові вимоги були впроваджені коректно, без порушень в архітектурі проєкту або загальній функціональності продукту.",
+                                "Якщо ви вирішите продовжувати зі змінами, вони будуть внесені до плану робіт, і команда почне їх реалізацію. Після цього менеджер слідкуватиме за тим, щоб нові вимоги були впроваджені коректно, без порушень в архітектурі проєкту або загальній функціональності продукту.",
                                 "Варто також пам'ятати, що залежно від обсягу змін, можуть з’явитися додаткові витрати на роботу команди. Для цього варто провести детальну оцінку бюджету, щоб уникнути несподіваних витрат.",
                             ],
                         },
@@ -1485,9 +1485,9 @@ export const questionsData: QAItemType[] = [
                     title: "How does the change process work?",
                     data: [
                         {
-                            title: "Contacting \nthe Manager",
+                            title: "Contacting \nthe manager",
                             text: [
-                                "The first step is to contact the Manager who is leading the development of your product. The Manager coordinates all stages of the work and team interactions. This person will help you understand how to best implement the changes without disrupting the overall project concept and within the agreed timeline and budget (if possible).",
+                                "The first step is to contact the manager who is leading the development of your product. The manager coordinates all stages of the work and team interactions. This person will help you understand how to best implement the changes without disrupting the overall project concept and within the agreed timeline and budget (if possible).",
                             ],
                         },
                         {
@@ -1496,7 +1496,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "Once you've communicated your desire to make changes, the Manager will discuss this with the team of developers, designers, and other specialists working on your product. This will help to assess:",
+                                        "Once you've communicated your desire to make changes, the manager will discuss this with the team of developers, designers, and other specialists working on your product. This will help to assess:",
                                     ],
                                 },
                                 {
@@ -1528,7 +1528,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "After consulting with the development team, the Manager will provide you with information about:",
+                                        "After consulting with the development team, the manager will provide you with information about:",
                                     ],
                                 },
                                 {
@@ -1558,7 +1558,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Approval \nand implementation of changes",
                             text: [
-                                "If you decide to proceed with the changes, they will be added to the work plan, and the team will begin implementing them. Afterward, the Manager will ensure that the new requirements are integrated correctly, without disrupting the project's architecture or overall functionality.",
+                                "If you decide to proceed with the changes, they will be added to the work plan, and the team will begin implementing them. Afterward, the manager will ensure that the new requirements are integrated correctly, without disrupting the project's architecture or overall functionality.",
                                 "It's also important to note that, depending on the scope of the changes, there may be additional costs for the team's work. A detailed budget evaluation should be carried out to avoid unexpected expenses.",
                             ],
                         },
@@ -1665,7 +1665,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого *link=`/${locale}/order` noblank*Менеджера*/link*. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
+                                "Для того, щоб замовити послуги підтримки або отримати консультацію, вам потрібно звернутися до нашого *link=`/${locale}/order` noblank*менеджера*/link*. Менеджер проведе консультацію щодо умов співпраці та допоможе вам підібрати оптимальний план підтримки для вашого продукту.",
                             ],
                         },
                         {
@@ -1901,7 +1901,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "To order support services or request a consultation, you will need to contact our *link=`/${locale}/order` noblank*Manager*/link*. The Manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
+                                "To order support services or request a consultation, you will need to contact our *link=`/${locale}/order` noblank*manager*/link*. The manager will provide a consultation regarding the terms of cooperation and help you choose the best support plan for your product.",
                             ],
                         },
                         {
@@ -1941,7 +1941,6 @@ export const questionsData: QAItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
             likes: 0,
             slug: "what-is-a-landing-page-and-who-needs-it",
-
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
         },

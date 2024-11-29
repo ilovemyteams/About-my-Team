@@ -50,7 +50,7 @@ export const QaCard = ({
                 alt={imageAltText}
                 width={375}
                 height={250}
-                className="h-[200px] desk:h-[250px] w-auto aspect-[3/2]"
+                className="h-auto desk:h-[250px] w-full tab:max-w-[300px] desk:max-w-[375px] aspect-[280/200] tab:aspect-[300/200] object-cover"
             />
 
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
