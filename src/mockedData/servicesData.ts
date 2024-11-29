@@ -428,6 +428,7 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Functional testing",
+                                icon: "test",
                                 text: [
                                     {
                                         text: "We check all elements of the website:",
@@ -448,18 +449,22 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "User interface testing (UI/UX testing)",
+                                icon: "test1",
                                 text: "We evaluate how logically the website structure is built and whether users can easily find the information they need. Your website should be intuitive for every visitor.",
                             },
                             {
                                 title: "Compatibility testing",
+                                icon: "test2",
                                 text: "This type of testing includes cross-browser and cross-platform verification. The test is performed on different operating systems (Windows, Mac, Linux, Android, iOS) and browsers to ensure that the application works stably and is compatible with different platforms.",
                             },
                             {
                                 title: "Testing on multiple devices",
+                                icon: "test3",
                                 text: "We analyze how the website looks and works on smartphones, tablets, laptops, and large monitors. Responsiveness and adaptability are the key to success!",
                             },
                             {
                                 title: "Loading speed testing",
+                                icon: "test4",
                                 text: "We check how fast your website loads, even at low internet speeds. We optimize code, images, and other resources to ensure the best performance.",
                             },
                         ],
@@ -506,6 +511,7 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Testowanie funkcjonalne",
+                                icon: "test",
                                 text: [
                                     {
                                         text: "Sprawdzamy wszystkie elementy strony:",
@@ -526,18 +532,22 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Testowanie interfejsu użytkownika (UI/UX)",
+                                icon: "test1",
                                 text: "Oceniamy, na ile logiczna jest struktura strony oraz czy użytkownicy łatwo znajdą potrzebne informacje. Twoja strona powinna być intuicyjna i przyjazna dla każdego odwiedzającego.",
                             },
                             {
                                 title: "Testowanie kompatybilności",
+                                icon: "test2",
                                 text: "Ten rodzaj testowania obejmuje testy międzyprzeglądarkowe i międzyplatformowe. Test przeprowadzany jest na różnych systemach operacyjnych (Windows, Mac, Linux, Android, iOS) i przeglądarkach, aby upewnić się, że aplikacja działa stabilnie i jest kompatybilna z różnymi platformami.",
                             },
                             {
                                 title: "Testowanie na różnych urządzeniach",
+                                icon: "test3",
                                 text: "Analizujemy wygląd i działanie strony internetowej na smartfonach, tabletach, laptopach i dużych monitorach. Responsywność i zdolność adaptacji to klucz do sukcesu!",
                             },
                             {
                                 title: "Szybkość ładowania",
+                                icon: "test4",
                                 text: "Sprawdzamy, jak szybko ładuje się Twoja strona, nawet przy niskiej prędkości internetu. Optymalizujemy kod, obrazy i inne zasoby, aby zapewnić jak najlepszą wydajność.",
                             },
                         ],
