@@ -43,6 +43,8 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
         setter(targetPage);
     };
 
+    const buttonArrowStyle =
+        "w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
     const renderItem = ({
         ref,
         key,
@@ -60,11 +62,10 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
             return (
                 <button
                     key={key}
-                    className={cn(
-                        className,
-                        "w-12 h-12 shadow-none text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none ml-4"
-                    )}
+                    className={cn(className, buttonArrowStyle, "ml-4")}
                     onClick={onNext}
+                    aria-label="next page button"
+                    disabled={activePage === total}
                 >
                     <IconGoBack className="rotate-180 w-7 h-8" />
                 </button>
@@ -75,11 +76,10 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
             return (
                 <button
                     key={key}
-                    className={cn(
-                        className,
-                        "w-12 h-12 shadow-none text-redLight dark:text-red border border-transparent border-y-redLight dark:border-y-red bg-transparent rounded-none mr-4"
-                    )}
+                    aria-label="prev page button"
+                    className={cn(className, buttonArrowStyle, "mr-4")}
                     onClick={onPrevious}
+                    disabled={activePage === 1}
                 >
                     <IconGoBack className="w-7 h-8" />
                 </button>
