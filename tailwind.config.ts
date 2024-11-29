@@ -386,6 +386,17 @@ const config: Config = {
                         transform: "rotate(0deg)",
                     },
                 },
+                linesColor: {
+                    "0%": {
+                        backgroundColor: "currentColor",
+                    },
+                    "50%": {
+                        backgroundColor: "#A258FF",
+                    },
+                    "100%": {
+                        backgroundColor: "currentColor",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -397,6 +408,7 @@ const config: Config = {
                 curveRotation: "curveRotate 3700ms ease-out 1",
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
+                linesColor: "linesColor 3000ms ease-in infinite",
             },
         },
         backgroundImage: {

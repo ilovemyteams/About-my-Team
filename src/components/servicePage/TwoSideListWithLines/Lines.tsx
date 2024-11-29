@@ -1,36 +1,20 @@
-"use client";
-import { motion } from "framer-motion";
-
 export const Lines = () => {
     const lines = new Array(6).fill(null);
-    const duration = 3;
+    const duration = 3000;
 
     return (
         <div
             className="inline-flex gap-4 tab:gap-5 justify-center h-[60px] tab:h-[90px] 
-                    tab:items-center tab:justify-center"
+                    tab:items-center tab:justify-center text-purple-strokeLight dark:text-purple-stroke"
             aria-label="decoration"
         >
             {lines.map((_, index) => {
                 const delay = (index + 1) * (duration / 6);
-
-                const activeColor = "#A258FF";
-                const plainColor =
-                    "bg-purple-strokeLight dark:bg-purple-stroke";
-
                 return (
-                    <motion.div
+                    <div
                         key={index}
-                        className={`h-full w-[1px] ${plainColor}`}
-                        animate={{
-                            backgroundColor: activeColor,
-                        }}
-                        transition={{
-                            duration,
-                            repeat: Infinity,
-                            delay: delay,
-                            ease: "easeInOut",
-                        }}
+                        className={`h-full w-[1px] bg-current animate-linesColor`}
+                        style={{ animationDelay: `${delay}ms` }}
                     />
                 );
             })}
