@@ -119,7 +119,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "4",
             siteLink: "protection.in.ua",
             order: 2,
-            image: "https://drive.google.com/uc?export=view&id=17VfvDf6BhiPhYSGw3kpzAwoPVB6PY6mk",
+            image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
             implementations: ["Design", "Development", "Testing", "Support"],
         },
         ua: {
