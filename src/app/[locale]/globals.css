@@ -6,6 +6,8 @@
     --color-grey: #d4d4d4;
     --font-geist: Geist;
 }
+
+/* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
     /* padding-right: 17px; */
@@ -17,7 +19,7 @@
     }
 }
 
-/* // Ask if we need this animation */
+/* Smooth animation during scroll */
 html:focus-within {
     scroll-behavior: smooth;
 }
