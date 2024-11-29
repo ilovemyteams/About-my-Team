@@ -13,7 +13,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
     const getTranslation = useTranslations("Hero");
     return (
         <div
-            className="relative w-portfolioHeroCard tab:w-[100%] min-h-[162px] aspect-[288/162] 
+            className="relative w-[100%] max-w-[508px] min-h-[162px] aspect-[288/162] 
                         tab:aspect-[410/230] pc:aspect-[608/342]  
                         pc:min-w-[608px] desk:w-[668px] desk:aspect-[668/375] desk:max-w-[668px] bg-CTAGradientLight dark:bg-CTAGradient"
         >
@@ -23,7 +23,7 @@ export const PortfolioCard = ({ data, img }: PortfolioCardProps) => {
                     width={668}
                     height="0"
                     alt={data?.name}
-                    className="min-w-[288px] aspect-[288/162] tab:min-w-[410px] pc:min-w-[608px]
+                    className="min-w-[288px] w-full aspect-[288/162] max-w-[508px] tab:min-w-[410px] pc:min-w-[608px]
                     tab:aspect-[410/230] pc:aspect-[608/342]  
                     desk:w-[668px] desk:aspect-[668/375]  desk:max-w-[668px] 
                     object-cover
