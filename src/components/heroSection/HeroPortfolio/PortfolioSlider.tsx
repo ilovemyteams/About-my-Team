@@ -35,7 +35,7 @@ export const PortfolioSlider = () => {
 
     return (
         <div
-            className="embla overflow-hidden w-portfolioHeroCard tab:w-[50%] tab:min-w-[410px] pc:min-w-[608px] flex flex-col-reverse mt-[34px]
+            className="embla overflow-hidden w-portfolioHeroCard max-w-[508px] tab:w-[50%] tab:min-w-[410px] pc:min-w-[608px] flex flex-col-reverse mt-[34px]
           tab:flex-col tab:items-end 
           desk:w-[668px] desk:max-w-[668px] tab:mt-[27px] pc:mt-0 desk:mt-4"
         >
