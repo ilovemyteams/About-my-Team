@@ -3,9 +3,7 @@ import "./globals.css";
 
 import { GoogleAnalytics } from "@next/third-parties/google";
 import localFont from "next/font/local";
-import { draftMode } from "next/headers";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import { VisualEditing } from "next-sanity";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
@@ -17,9 +15,9 @@ import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTo
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
-import { PREVIEW_URL } from "@/sanity/lib/api";
 
 import { Providers } from "./providers";
+import { SanityLive } from "@/sanity/lib/live";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
@@ -93,14 +91,6 @@ export default function LocaleLayout({
                             className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-hidden
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                         >
-                            {draftMode().isEnabled && (
-                                <a
-                                    className="fixed z-50 right-0 bottom-0 bg-purple-100 text-white-100 p-4 m-4"
-                                    href={`${PREVIEW_URL}/api/draftMode/disable`}
-                                >
-                                    Disable preview mode
-                                </a>
-                            )}
                             <Providers>
                                 <BackgroundImages />
                                 <Header />
@@ -112,10 +102,10 @@ export default function LocaleLayout({
                                     </div>
                                 </main>
                                 <Footer />
+                                <SanityLive />
                                 <ScrollToTopButton />
                                 <CookiesComponent />
                             </Providers>
-                            {draftMode().isEnabled && <VisualEditing />}
                         </body>
                     </SettingsContextProvider>
                 </PreviousURLProvider>

@@ -1,35 +1,10 @@
-import { createClient, type SanityClient } from "next-sanity";
+import { createClient } from "next-sanity";
 
-import { apiVersion, dataset, projectId, studioUrl, useCdn } from "./api";
+import { apiVersion, dataset, projectId } from "./api";
 
-export function getClient(preview?: {
-    token: string | undefined;
-}): SanityClient {
-    const client = createClient({
-        projectId,
-        dataset,
-        apiVersion,
-        useCdn,
-        perspective: "published",
-        stega: {
-            enabled: preview?.token ? true : false,
-            studioUrl,
-        },
-    });
-    console.log("clientConfig:", client.config());
-
-    if (preview) {
-        if (!preview.token) {
-            throw new Error("You must provide a token to preview drafts");
-        }
-        return client.withConfig({
-            token: preview.token,
-            useCdn: false,
-            ignoreBrowserTokenWarning: true,
-            perspective: "previewDrafts",
-        });
-    }
-    return client;
-}
-
-export const getSanityImageConfig = () => getClient();
+export const client = createClient({
+    projectId,
+    dataset,
+    apiVersion,
+    useCdn: true,
+});
