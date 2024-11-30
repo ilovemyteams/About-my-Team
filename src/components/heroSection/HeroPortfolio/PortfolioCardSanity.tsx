@@ -1,14 +1,20 @@
 import Image from "next/image";
 
-import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
-
 import { NoImageHeart } from "../../shared/NoImageHeart";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 
 export const PortfolioCardSanity = ({
     sanityData,
 }: {
-    sanityData: PortfolioSliderProps;
+    sanityData: {
+        title: string | null;
+        image: {
+            caption: string | null;
+            asset: string | null;
+        } | null;
+        category: string | null;
+        _id: string;
+    };
 }) => {
     const alt = sanityData?.image?.caption
         ? sanityData.image.caption.toString()
