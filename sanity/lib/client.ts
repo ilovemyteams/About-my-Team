@@ -7,4 +7,16 @@ export const client = createClient({
     dataset,
     apiVersion,
     useCdn: true,
+    perspective: "published",
 });
+
+export function getClient(preview?: { token?: string }) {
+    if (preview && preview.token) {
+        return client.withConfig({
+            token: preview.token,
+            useCdn: false,
+            perspective: "previewDrafts",
+        });
+    }
+    return client;
+}
