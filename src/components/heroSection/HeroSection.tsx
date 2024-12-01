@@ -1,4 +1,4 @@
-import { HomeFullProps } from "@/types/sanityDataPropsTypes";
+import { HomeHeroQueryResult } from "@/types/sanity.types";
 
 import { IconHeroLogo } from "../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../shared/LocaleSwitcher";
@@ -8,8 +8,8 @@ import { HeroFooterLinks } from "./HeroFooterLinks";
 import { HeroInfo } from "./HeroInfo";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 
-export const HeroSection = ({ data }: HomeFullProps) => {
-    const projects = data?.hero?.portfolioSliderData;
+export const HeroSection = ({ data }: { data: HomeHeroQueryResult }) => {
+    const projects = data?.portfolioSliderData;
 
     return (
         <Section className="pt-8 tab:pt-[100px] pc:pt-8">
@@ -22,7 +22,7 @@ export const HeroSection = ({ data }: HomeFullProps) => {
                           tab:mb-5 pc:mt-[20px] pc:mb-0`}
             />
             <div className="relative flex flex-col items-center pc:items-baseline tab:justify-between tab:flex-row">
-                <HeroInfo data={data} />
+                <HeroInfo title={data?.title} />
                 {projects && <PortfolioSlider projects={projects} />}
             </div>
             <HeroFooterLinks />

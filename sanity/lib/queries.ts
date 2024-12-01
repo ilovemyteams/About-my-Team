@@ -1,17 +1,20 @@
-import { groq } from "next-sanity";
+import { defineQuery } from "next-sanity";
 
-export const homeHeroQuery = groq`
+export const homeHeroQuery = defineQuery(`
   *[_type == "home"][0]{
-  hero {
-    "title": title[_key == $language][0].value,
-    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, 
-    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},
-    "category":category->categoryName[_key == $language][0].value,
-    _id}
+  "title": hero.title[_key == $language][0].value,
+  "portfolioSliderData": hero.portfolioSlider[]->{
+    "title": title[_key == $language][0].value, 
+    image {
+      "caption": caption[_key == $language][0].value, 
+      "asset": image.asset->url
+    },
+    "category": category->categoryName[_key == $language][0].value,
+    _id
   }
-}`;
+}`);
 
-export const homePortfolioQuery = groq`
+export const homePortfolioQuery = defineQuery(`
   *[_type == "home"][0]{
   portfolioHome{"title": title[_key == $language][0].value, 
     "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,
@@ -20,18 +23,17 @@ export const homePortfolioQuery = groq`
     "category":category->categoryName[_key == $language][0].value,
     _id, stages, URL}
   }
-}`;
+}`);
 
-export const CTAQuery = groq`
+export const CTAQuery = defineQuery(`
  *[_type == "home"][0]{
     ctaSectionWriteUs {"title": title[_key == $language][0].value}, 
     ctaSectionJoinUs {"title": title[_key == $language][0].value}, 
     ctaSectionOrder {"title": title[_key == $language][0].value, 
     "description": description[_key == $language][0].value[0].children[0].text}
-    }
-`;
+    }`);
 
-export const settingsQuery = groq`
+export const settingsQuery = defineQuery(`
   *[_type == "settings"][0]{
   notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,
      goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url
@@ -53,9 +55,9 @@ export const settingsQuery = groq`
     buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},
     buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}
   }
-`;
+`);
 
-export const footerQuery = groq`
+export const footerQuery = defineQuery(`
 *[_type == "settings"][0]
 {
     "title": footer.title[_key == $language][0].value,
@@ -67,18 +69,18 @@ export const footerQuery = groq`
       linkInternal,
       "titleMenu":title[_key == $language][0].value
     }
-          }`;
+          }`);
 
-export const projectQuery = groq`
+export const projectQuery = defineQuery(`
 *[_type == "project"]
 {_id,
 "title": title[_key == $language][0].value, 
   image {"caption":caption[_key == $language][0].value, "asset": asset->url}, 
   stages, URL, 
   "category":category->categoryName[_key == $language][0].value}
-`;
+`);
 
-export const homeServicesQuery = groq`
+export const homeServicesQuery = defineQuery(`
   *[_type == "home"][0] 
   { servicesHome {
   "title": title[_key == $language][0].value,
@@ -87,18 +89,18 @@ export const homeServicesQuery = groq`
   "anchorId": sectionId.anchorId.current,
   "servicesListTitle":servicesList[]->title[_key == $language][0].value,
   "servicesListText":servicesList[]->description[_key == $language][0].value
-}}`;
+}}`);
 
-export const homeStagesQuery = groq`
+export const homeStagesQuery = defineQuery(`
   *[_type == "home"][0]{stagesHome {
   "title": title[_key == $language][0].value,
   "subtitle": sectionId.subtitle[_key == $language][0].value, 
   "anchorId": sectionId.anchorId.current,
   "stagesListTitle":stagesList[].title[_key == $language][0].value ,
   "stagesListText":stagesList[].description[_key == $language][0].value
-}}`;
+}}`);
 
-export const homeAboutUsQuery = groq`
+export const homeAboutUsQuery = defineQuery(`
  *[_type == "home"][0]{aboutUsHomeSection {
   "title": sectionTitle[_key == $language][0].value,
   "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,
@@ -107,18 +109,18 @@ export const homeAboutUsQuery = groq`
   "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,
   "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,
      learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url
-    )} }`;
+    )} }`);
 
-export const homeFAQQuery = groq`
+export const homeFAQQuery = defineQuery(`
   *[_type == "home"][0]{
   "title": faqHome.title[_key == $language][0].value,
   "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, 
   "anchorId": faqHome.sectionId.anchorId.current,
   "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, 
                                  "shortAnswer":shortAnswer[_key == $language][0].value}
-}`;
+}`);
 
-export const homeReviewsQuery = groq`
+export const homeReviewsQuery = defineQuery(`
 *[_type == "home"][0]{
     "title": reviewsHome.title[_key == $language][0].value,
     "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,
@@ -144,4 +146,4 @@ export const homeReviewsQuery = groq`
       }
     }
   }
-`;
+`);

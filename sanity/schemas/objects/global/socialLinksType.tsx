@@ -1,5 +1,5 @@
-import { defineField } from "sanity";
 import { FcSms } from "react-icons/fc";
+import { defineField } from "sanity";
 
 import { SOCIAL_LINKS } from "@/sanity/constants";
 
