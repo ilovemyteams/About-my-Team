@@ -6,13 +6,14 @@ import { JoinUsButton } from "../shared/JoinUsButton";
 import { SectionCTA } from "../shared/SectionCTA";
 import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
 
-export const JoinTheTeamSection = ({ data }: HomePageProps) => {
+export const JoinTheTeamSection = ({ data }: {data:{title :string | null} | null | undefined}) => {
     const getTranslation = useTranslations("JoinTheTeam");
+    console.log("JoinTheTeamSection", data?.title)
     return (
         <SectionCTA className="flex flex-col gap-y-[40px] tab:gap-0 tab:flex-row items-center justify-between">
             <TitleCTAWrapper className="tab:w-[50%] pc:w-[70%]">
-                {data?.ctaSectionJoinUs?.title
-                    ? data.ctaSectionJoinUs.title.toString()
+                {data?.title
+                    ? data.title.toString()
                     : getTranslation("title")}
             </TitleCTAWrapper>
             <JoinUsButton />
