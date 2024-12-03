@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import { NextUIProvider } from "@nextui-org/react";
 import { useLocale } from "next-intl";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { type ThemeProviderProps } from "next-themes/dist/types";
 import * as React from "react";
 
+import { client } from "@/sanity/lib/client";
 import { settingsQuery } from "@/sanity/lib/queries";
 import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
-import { client } from "@/sanity/lib/client";
 
 export const Providers = ({ children, ...props }: ThemeProviderProps) => {
     const { setData } = useSettingsContext();
@@ -26,8 +26,6 @@ export const Providers = ({ children, ...props }: ThemeProviderProps) => {
         }
         fetchDataSettings();
     }, [locale, setData]);
-
-    
 
     return (
         <NextUIProvider>
