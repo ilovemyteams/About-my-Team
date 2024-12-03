@@ -8,6 +8,7 @@ export const client = createClient({
     apiVersion,
     useCdn: false,
     perspective: "published",
+    ignoreBrowserTokenWarning: true
 });
 
 export function getClient(preview?: { token?: string }) {

@@ -16,7 +16,6 @@ export const JoinUsButton = () => {
     const JOIN_US_LINK = data?.buttonJoinUS?.buttonPageLink
         ? data.buttonJoinUS.buttonPageLink
         : "";
-
     return (
         <a
             href={JOIN_US_LINK}
