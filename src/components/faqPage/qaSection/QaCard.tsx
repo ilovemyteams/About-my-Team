@@ -62,7 +62,7 @@ export const QaCard = ({
 
                 <Image
                     src={image}
-                    alt={imageAltText}
+                    alt={` background for main image: ${imageAltText}`}
                     width={375}
                     height={250}
                     className="absolute tab:hidden top-0 left-0 w-full h-full z-[-1] blur-xl object-cover"
