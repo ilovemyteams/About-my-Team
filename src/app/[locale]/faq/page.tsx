@@ -1,4 +1,5 @@
-import { useLocale } from "next-intl";
+// import { useLocale } from "next-intl";
+import { getLocale } from "next-intl/server";
 
 import { HeaderFAQ } from "@/src/components/faqPage/HeaderFAQ";
 import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
@@ -7,7 +8,9 @@ import { Pagination } from "@/src/components/shared/Pagination";
 import { NothingFound } from "@/src/components/shared/Search/NothingFound";
 import { usePaginationData } from "@/src/hooks/usePaginationData";
 import { questionsData } from "@/src/mockedData/questionsData";
+import { addLikesToQuestion } from "@/src/utils/addLikesToQuestion";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
+import { getLikes } from "@/src/utils/likeDataHandler";
 import { searchFilteringForFAQ } from "@/src/utils/searchFilteringForFAQ";
 import type { LocaleType } from "@/types/LocaleType";
 
@@ -23,17 +26,20 @@ export async function generateMetadata({
     });
 }
 
-export default function FAQ({
+export default async function FAQ({
     searchParams,
 }: {
     searchParams: { query?: string; page: string };
 }) {
     const ITEMS_PER_PAGE = 7;
-    const locale = useLocale();
+    const locale = await getLocale();
+    const likes = await getLikes();
     const searchTerm = searchParams.query || "";
     const pageNumber = parseInt(searchParams.page) || 1;
 
-    const filteredQuestions = questionsData.filter(question =>
+    const questionWithLikes = addLikesToQuestion(likes, questionsData);
+
+    const filteredQuestions = questionWithLikes.filter(question =>
         searchFilteringForFAQ(question, locale as LocaleType, searchTerm)
     );
 

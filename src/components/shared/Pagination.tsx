@@ -17,12 +17,12 @@ interface PaginationProps {
 export const Pagination = ({ total, initialPage }: PaginationProps) => {
     const searchParams = useSearchParams();
     const pathName = usePathname();
-    const { replace } = useRouter();
+    const router = useRouter();
 
     const handlePageChange = (page: number) => {
         const params = new URLSearchParams(searchParams);
         params.set("page", `${page}`);
-        replace(`${pathName}?${params.toString()}`);
+        router.push(`${pathName}?${params.toString()}`);
     };
 
     const handleDots = (
