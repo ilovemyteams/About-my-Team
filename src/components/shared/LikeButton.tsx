@@ -27,6 +27,10 @@ const LikeButton = ({
     const router = useRouter();
 
     useEffect(() => {
+        setLikes(serverSavedLikes);
+    }, [serverSavedLikes]);
+
+    useEffect(() => {
         const persistedUserId = localStorage.getItem("userId");
         setUserId(persistedUserId);
     }, []);
