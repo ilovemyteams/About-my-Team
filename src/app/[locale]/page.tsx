@@ -1,3 +1,5 @@
+import { client } from "@/sanity/lib/client";
+import { homeHeroQuery } from "@/sanity/lib/queries";
 import {
     loadCTA,
     loadHomeAboutUs,
@@ -23,8 +25,11 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [hero, about, cta, portfolioSection, services, stages, faq, reviews] =
+    const [heroAnother, hero, about, cta, portfolioSection, services, stages, faq, reviews] =
         await Promise.all([
+            await client.fetch(homeHeroQuery, {
+                language: props.params.locale,
+            }),
             await loadHomeHero(props.params.locale),
             await loadHomeAboutUs(props.params.locale),
             await loadCTA(props.params.locale),
@@ -34,11 +39,12 @@ export default async function HomePage(props: PageParamsProps) {
             await loadHomeFaq(props.params.locale),
             await loadHomeReviews(props.params.locale),
         ]);
-    console.log(about, portfolioSection, services, stages, faq, reviews);
+
+    console.log("heroAnother", heroAnother);
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={hero} />
+            <HeroSection data={heroAnother} />
             <MissionSection data={about} />
             <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
             {/* <PortfolioSection data={portfolioSection?.portfolioHome} />
