@@ -1,5 +1,3 @@
-import "server-only";
-
 import { type QueryParams } from "next-sanity";
 
 import { client } from "../lib/client";
