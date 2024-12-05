@@ -4,7 +4,6 @@ import {
     loadCTA,
     loadHomeAboutUs,
     loadHomeFaq,
-    loadHomeHero,
     loadHomeProjects,
     loadHomeReviews,
     loadServices,
@@ -27,7 +26,6 @@ import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 export default async function HomePage(props: PageParamsProps) {
     const [
         heroAnother,
-        hero,
         about,
         cta,
         portfolioSection,
@@ -39,7 +37,7 @@ export default async function HomePage(props: PageParamsProps) {
         await client.fetch(homeHeroQuery, {
             language: props.params.locale,
         }),
-        await loadHomeHero(props.params.locale),
+        // await loadHomeHero(props.params.locale),
         await loadHomeAboutUs(props.params.locale),
         await loadCTA(props.params.locale),
         await loadHomeProjects(props.params.locale),
@@ -52,7 +50,6 @@ export default async function HomePage(props: PageParamsProps) {
     console.log(
         "heroAnother",
         heroAnother,
-        hero,
         portfolioSection,
         services,
         stages,
