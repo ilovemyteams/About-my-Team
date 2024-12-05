@@ -28,7 +28,7 @@ export async function sanityFetch<const QueryString extends string>({
 }) {
     return client.fetch(query, params, {
         headers: {
-            "Cache-Control": "no-cache",
+            "Cache-Control": "no-cache, max-age=60, must-revalidate",
         },
         next: {
             revalidate: tags.length ? false : revalidate, // for simple, time-based revalidation
