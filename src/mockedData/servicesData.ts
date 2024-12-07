@@ -583,24 +583,316 @@ export const servicesData: ServiceType[] = [
     {
         slug: "support",
         icon: "support",
-        image: "",
+        image: "https://drive.google.com/uc?export=view&id=1eKfQR0K5jxvGmypKRJcoRxkCfomM6jHm",
+        ctaButton: "order",
         ua: {
             name: "підтримка",
             shortDescription:
                 "Представник команди навчає співробітників клієнта роботі із сайтом, щоб надалі клієнт міг самостійно оновлювати контент на своєму сайті.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Підтримка:</purple> турбота про стабільність вашого продукту",
+                introduction:
+                    "Ми забезпечуємо повний супровід вашого продукту, щоб він працював бездоганно, задовольняючи потреби користувачів і відповідаючи вашим бізнес-цілям. Наша команда надає якісну технічну підтримку, оперативно вирішує проблеми й допомагає з оновленнями та адаптацією.",
+                ctaText:
+                    "Замовте підтримку у нас — і ми допоможемо вашому продукту залишатися на вершині стабільності та ефективності!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "Що включає послуга підтримки?",
+                        description: [
+                            {
+                                title: "Технічна підтримка:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Виявлення та усунення технічних несправностей.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Оптимізація налаштувань для безперебійної роботи систем.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Контроль роботи інтеграцій, баз даних та серверів.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "Підтримка користувачів:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Допомога вашим клієнтам у вирішенні їхніх питань.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Консультації щодо використання функціоналу продукту.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Надання рекомендацій для підвищення ефективності роботи з продуктом.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Планове обслуговування:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Регулярний моніторинг систем для попередження збоїв.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Проведення планових оновлень та оптимізацій.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Тестування нових функцій перед їх впровадженням.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Доступність:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Можливість налаштування графіка підтримки за вашим запитом.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Швидке реагування і випралення виникаючих проблем.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Чому це важливо?",
+                        description: [
+                            {
+                                text: "Гарантія безперебійної роботи вашого продукту підвищує довіру та задоволеність клієнтів.",
+                            },
+                            {
+                                text: "Швидке реагування на проблеми зменшує ризики втрат і простоїв.",
+                            },
+                            {
+                                text: "Регулярне обслуговування дозволяє уникнути серйозних технічних несправностей і заощадити ваші кошти.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "support",
             shortDescription:
                 "Team representative teaches the customer's employees to work with the web-site, to enable the customer to update the website's content in future",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Support:</purple> ensuring the stability of your product",
+                introduction:
+                    "We provide full support for your product, ensuring it runs flawlessly, meets user needs, and aligns with your business goals. Our team delivers high-quality technical support, promptly resolves issues, and assists with updates and adaptation.",
+                ctaText:
+                    "Order support from us, and we’ll help your product stay at the top of its stability and efficiency!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "What does the support service include?",
+                        description: [
+                            {
+                                title: "Technical Support:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Identification and resolving technical issues.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Optimization of settings for the smooth operation of systems.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Monitoring integrations, databases, and servers.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "User Support:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Assisting your clients with their issues.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Guidance on how to use the product functionality.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Providing recommendations to enhance efficiency when working with the product.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Planned Maintenance:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Regular system monitoring to prevent disruptions.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Conducting scheduled updates and optimizations.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Testing new features before implementation.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Availability:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Ability to customize the support schedule at your request.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Quick response and correction of emerging problems.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Why is this important?",
+                        description: [
+                            {
+                                text: "Ensures uninterrupted product performance, boosting client trust and satisfaction.",
+                            },
+                            {
+                                text: "Quick issue resolution minimizes risks of losses and downtime.",
+                            },
+                            {
+                                text: "Regular maintenance helps avoid significant technical problems and saves costs.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "wsparcie",
             shortDescription:
                 "Przedstawiciel zespołu szkoli pracowników klienta w zakresie pracy ze stroną internetową, tak aby klient mógł samodzielnie aktualizować treści na swojej stronie internetowej.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Wsparcie:</purple> troska o stabilność Twojego produktu",
+                introduction:
+                    "Zapewniamy pełne wsparcie dla Twojego produktu, aby działał bezbłędnie, spełniał potrzeby użytkowników i odpowiadał Twoim celom biznesowym. Nasz zespół oferuje wysokiej jakości wsparcie techniczne, szybko rozwiązuje problemy i pomaga w aktualizacjach oraz dostosowaniu systemu.",
+                ctaText:
+                    "Zamów wsparcie u nas, a pomożemy Twojemu produktowi utrzymać stabilność i efektywność na najwyższym poziomie!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "Co obejmuje usługa wsparcia?",
+                        description: [
+                            {
+                                title: "Wsparcie techniczne:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Identyfikacja i usuwanie problemów technicznych.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Optymalizacja ustawień dla nieprzerwanej pracy systemów.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Monitorowanie integracji, baz danych i serwerów.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "Wsparcie dla użytkowników:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Pomoc klientom w rozwiązywaniu ich problemów.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Konsultacje dotyczące korzystania z funkcjonalności produktu.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Udzielanie rekomendacji w celu zwiększenia efektywności korzystania z produktu.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Planowa konserwacja:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Regularne monitorowanie systemów, aby zapobiec awariom.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Zaplanowane aktualizacje i optymalizacje.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Testowanie nowych funkcji przed ich wdrożeniem.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Dostępność:",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Możliwość dostosowania harmonogramu wsparcia do Twoich potrzeb.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Szybka reakcja i usuwanie pojawiających się problemów.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Dlaczego to jest ważne?",
+                        description: [
+                            {
+                                text: "Gwarancja nieprzerwanej pracy produktu zwiększa zaufanie i satysfakcję klientów.",
+                            },
+                            {
+                                text: "Szybkie reagowanie na problemy minimalizuje ryzyko strat i przestojów.",
+                            },
+                            {
+                                text: "Regularna konserwacja pomaga uniknąć poważnych problemów technicznych i oszczędza koszty.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {
@@ -652,6 +944,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "website",
         icon: "website",
+
         image: "",
         ua: {
             name: "Вебсайт",
