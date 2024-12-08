@@ -146,6 +146,7 @@
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
     },
     "Footer": {
+        "title": "Start <purple>implementing</purple> your\nbusiness <purple>ideas</purple> together <purple>with us</purple>",
         "titleFirstWord": "Start ",
         "titleSecondWord": "implementing ",
         "titleThirdWord": "your ",

@@ -145,6 +145,7 @@
         "readTime": "{readTime} хв читати"
     },
     "Footer": {
+        "title": "Починайте <purple>втілення</purple> своїх\n<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
         "titleFirstWord": "Починайте ",
         "titleSecondWord": "втілення ",
         "titleThirdWord": "своїх ",
