@@ -42,13 +42,13 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                         />
                     );
                 }
+                if (item.layout === 6) {
+                    return <LollipopCascadeList key={index} content={item} />;
+                }
                 if (item.layout === 7) {
                     return (
                         <TextInLineListWithIcons key={index} content={item} />
                     );
-                }
-                if (item.layout === 6) {
-                    return <LollipopCascadeList key={index} content={item} />;
                 }
             })}
         </>
