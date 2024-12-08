@@ -33,7 +33,9 @@ export const LayoutText = ({
             {text.map((item, index) => (
                 <li className="flex gap-[6px] pc:gap-2" key={index}>
                     {item.type === "listItem" && (
-                        <span className="font-caviar font-bold ml-1">
+                        <span
+                            className={`font-caviar font-bold ml-1 ${styleText}`}
+                        >
                             {"\u2022"}
                         </span>
                     )}
