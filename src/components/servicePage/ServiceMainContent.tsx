@@ -4,6 +4,7 @@ import { ChessboardListWithIconsLayout } from "./ChessboardListWithIcons/Chessbo
 import { ColumnList } from "./ColumnList/ColumnList";
 import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
 import { LollipopCascadeList } from "./LollipopCascadeList/LollipopCascadeList";
+import { TextInLineListWithIcons } from "./TextInLineListWithIcons/TextInLineListWithIcons";
 import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
 
 interface ServiceMainContentProps {
@@ -43,6 +44,10 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                 }
                 if (item.layout === 6) {
                     return <LollipopCascadeList key={index} content={item} />;
+                if (item.layout === 7) {
+                    return (
+                        <TextInLineListWithIcons key={index} content={item} />
+                    );
                 }
             })}
         </>
