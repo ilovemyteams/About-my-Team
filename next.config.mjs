@@ -24,6 +24,11 @@ const nextConfig = {
       },
     ];
   },
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+  },
   // experimental: { urlImports: ["https://themer.sanity.build/"] },
   images: {
     remotePatterns: [
