@@ -16,7 +16,9 @@ import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheT
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
 import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSection";
+import { QaSection } from "@/src/components/qAsection/QaSection";
 import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
+import { StagesSection } from "@/src/components/stagesSection/StagesSection";
 import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
@@ -33,7 +35,6 @@ export default async function HomePage(props: PageParamsProps) {
             await loadHomeReviews(props.params.locale),
         ]);
 
-    console.log(portfolioSection, services, stages, faq, reviews);
     return (
         <>
             <BackgroundFiguresMain />
@@ -46,8 +47,8 @@ export default async function HomePage(props: PageParamsProps) {
             <ServicesSection data={services.data} />
             <OurTeamSection />
             <JoinTheTeamSection data={cta?.data?.ctaSectionJoinUs} />
-            {/* <StagesSection data={stages?.stagesHome} /> */}
-            {/* <QaSection data={faq} /> */}
+            <StagesSection data={stages?.data} />
+            <QaSection data={faq.data} />
             <HireUsSection data={cta?.data?.ctaSectionOrder} />
         </>
     );
