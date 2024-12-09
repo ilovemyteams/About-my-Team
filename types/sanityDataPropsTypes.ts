@@ -4,6 +4,7 @@ import {
     FaqHome,
     internalGroqTypeReferenceTo,
     InternationalizedArrayTextValue,
+    LinkExternal,
     PortableColorTitle,
     PortfolioHome,
     ReviewsHome,
@@ -21,16 +22,15 @@ export type PageParamsProps = { params: { locale: string } };
 export type LinkType = "linkExternal" | "linkInternal";
 
 export type PortfolioSliderProps = {
-    title: string;
-    image?: { caption: string; asset: string };
-    category?: string;
+    title: string | null;
+    image: {
+        caption: string | null;
+        asset: string | null;
+    } | null;
+    category: string | null;
     _id: string;
-    URL?: {
-        url: string;
-        newWindow: boolean;
-        _type: LinkType;
-    };
-    stages?: string[];
+    stages: Array<string> | null;
+    URL: LinkExternal | null;
 };
 
 export type HeroHomeProps = {
