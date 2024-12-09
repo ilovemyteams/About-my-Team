@@ -8,7 +8,9 @@ import { Button } from "../shared/Button";
 export default async function NotFoundInfo() {
     const locale = useLocale();
     const data = await loadSettings(locale);
-    const notFoundPage = data?.notFoundPage ? data.notFoundPage : null;
+    const notFoundPage = data?.data?.notFoundPage
+        ? data.data.notFoundPage
+        : null;
 
     const title = notFoundPage?.titleNotFound
         ? notFoundPage.titleNotFound
