@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { removeProtocol } from "@/src/utils/httpsProtocols";
 import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
 import { GoToSiteLink } from "../shared/GoToSiteLink";
@@ -13,13 +14,14 @@ export interface PortfolioCardItemProps {
 export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
     const { image, URL, stages, category, title } = data || {};
     const imageSrc = image?.asset;
+    const imageAlt = image?.caption ? image.caption : "";
 
     return (
         <div className="relative min-w-[100%] h-[330px] tab:min-w-[50%] pc:h-[400px]">
             {imageSrc ? (
                 <Image
                     src={imageSrc}
-                    alt={image.caption}
+                    alt={imageAlt}
                     width={288}
                     height={196}
                     className=" object-cover object-top w-[100%] h-[196px] tab:h-[200px] pc:h-[258px]"
@@ -33,7 +35,9 @@ export const PortfolioCard = ({ data }: PortfolioCardItemProps) => {
                         <h3 className="font-caviar font-bold text-lg tab:text-xl  text-purple-200 dark:text-grey">
                             {title}
                         </h3>
-                        {URL?.url && <GoToSiteLink siteLink={URL.url} />}
+                        {URL?.url && (
+                            <GoToSiteLink siteLink={removeProtocol(URL.url)} />
+                        )}
                     </div>
                     <p className="text-xs tab:text-sm font-normal dark:text-red text-redLight mb-4 tab:mb-3 pc:mb-[18px] uppercase">
                         {category}

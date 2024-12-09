@@ -1,6 +1,6 @@
 import { EmblaOptionsType } from "embla-carousel";
 
-import { PortfolioHomeProps } from "@/types/sanityDataPropsTypes";
+import { HomePortfolioQueryResult } from "@/types/sanity.types";
 
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
@@ -10,15 +10,20 @@ import { PortfolioTitle } from "./PortfolioTitle";
 export const PortfolioSection = ({
     data,
 }: {
-    data: PortfolioHomeProps | null;
+    data: HomePortfolioQueryResult | null;
 }) => {
     const { anchorId, subtitle, title, portfolioSliderData } =
         data?.portfolioHome || {};
 
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     return (
-        <Section id={anchorId} className="relative">
-            <PortfolioTitle subtitle={subtitle} title={title} />
+        <Section id={anchorId ? anchorId : ""} className="relative">
+            {title && (
+                <PortfolioTitle
+                    subtitle={subtitle ? subtitle : ""}
+                    title={title}
+                />
+            )}
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 {portfolioSliderData && (
                     <PortfolioCarousel
@@ -29,7 +34,7 @@ export const PortfolioSection = ({
             </div>
             <SharePopover
                 className="absolute -top-3 right-4 tab:static tab:items-end tab:ml-auto tab:mt-4 pc:mt-5"
-                id={anchorId}
+                id={anchorId ? anchorId : ""}
                 trigerShowShareText={false}
             />
         </Section>

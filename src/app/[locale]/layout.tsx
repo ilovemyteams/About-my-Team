@@ -17,7 +17,6 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 import { SettingsContextProvider } from "@/src/utils/SettingsSanityContext";
 
 import { Providers } from "./providers";
-import { SanityLive } from "@/sanity/lib/live";
 
 const GA_TAG = process.env.GA_ID || " ";
 const IS_SHOWN_TO_SEARCH_ENGINES =
@@ -102,7 +101,6 @@ export default function LocaleLayout({
                                     </div>
                                 </main>
                                 <Footer />
-                                <SanityLive />
                                 <ScrollToTopButton />
                                 <CookiesComponent />
                             </Providers>
