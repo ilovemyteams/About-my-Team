@@ -12,9 +12,9 @@ export const LollipopCascadeListItem = ({
     content,
     index,
 }: LollipopCascadeListItemProps) => {
+    const isFloatingRight = index % 2 === 1;
     const { title, text: paragraph } = content;
     const text = typeof paragraph === "string" ? paragraph : paragraph.join("");
-    const isFloatingRight = index % 2 === 1;
 
     return (
         <li className="w-auto">
