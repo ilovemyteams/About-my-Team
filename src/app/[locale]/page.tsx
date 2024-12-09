@@ -23,33 +23,19 @@ import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [
-        hero,
-        about,
-        cta,
-        portfolioSection,
-        services,
-        stages,
-        faq,
-        reviews,
-    ] = await Promise.all([
-        await loadHomeHero(props.params.locale),
-        await loadHomeAboutUs(props.params.locale),
-        await loadCTA(props.params.locale),
-        await loadHomeProjects(props.params.locale),
-        await loadServices(props.params.locale),
-        await loadStages(props.params.locale),
-        await loadHomeFaq(props.params.locale),
-        await loadHomeReviews(props.params.locale),
-    ]);
+    const [hero, about, cta, portfolioSection, services, stages, faq, reviews] =
+        await Promise.all([
+            await loadHomeHero(props.params.locale),
+            await loadHomeAboutUs(props.params.locale),
+            await loadCTA(props.params.locale),
+            await loadHomeProjects(props.params.locale),
+            await loadServices(props.params.locale),
+            await loadStages(props.params.locale),
+            await loadHomeFaq(props.params.locale),
+            await loadHomeReviews(props.params.locale),
+        ]);
 
-    console.log(
-        portfolioSection,
-        services,
-        stages,
-        faq,
-        reviews
-    );
+    console.log(portfolioSection, services, stages, faq, reviews);
     return (
         <>
             <BackgroundFiguresMain />
