@@ -28,7 +28,3 @@ export const GridWithCheckmarkIcons = ({
         </PageSection>
     );
 };
-// className={`w-full tab:w-[45.8%] tab:mb-1 pc:w-[44.4%] ${description.length % 2 !== 0 && "last:mx-auto last:mb-0"}`}
-{
-    /* <ul className=" border flex flex-wrap gap-8 tab:gap-[60px] pc:gap-[120px]"> */
-}
