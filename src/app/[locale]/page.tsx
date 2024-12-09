@@ -1,9 +1,8 @@
-import { client } from "@/sanity/lib/client";
-import { homeHeroQuery } from "@/sanity/lib/queries";
 import {
     loadCTA,
     loadHomeAboutUs,
     loadHomeFaq,
+    loadHomeHero,
     loadHomeProjects,
     loadHomeReviews,
     loadServices,
@@ -25,7 +24,7 @@ import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
     const [
-        heroAnother,
+        hero,
         about,
         cta,
         portfolioSection,
@@ -34,10 +33,7 @@ export default async function HomePage(props: PageParamsProps) {
         faq,
         reviews,
     ] = await Promise.all([
-        await client.fetch(homeHeroQuery, {
-            language: props.params.locale,
-        }),
-        // await loadHomeHero(props.params.locale),
+        await loadHomeHero(props.params.locale),
         await loadHomeAboutUs(props.params.locale),
         await loadCTA(props.params.locale),
         await loadHomeProjects(props.params.locale),
@@ -48,8 +44,6 @@ export default async function HomePage(props: PageParamsProps) {
     ]);
 
     console.log(
-        "heroAnother",
-        heroAnother,
         portfolioSection,
         services,
         stages,
@@ -59,18 +53,18 @@ export default async function HomePage(props: PageParamsProps) {
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={heroAnother} />
-            <MissionSection data={about} />
-            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
+            <HeroSection data={hero.data} />
+            <MissionSection data={about.data} />
+            <JoinTheTeamSection data={cta?.data?.ctaSectionJoinUs} />
             {/* <PortfolioSection data={portfolioSection?.portfolioHome} />
             <FeedbackSection data={reviews} /> */}
-            <WriteUsSection data={cta?.ctaSectionWriteUs} />
+            <WriteUsSection data={cta?.data?.ctaSectionWriteUs} />
             {/* <ServicesSection data={services?.servicesHome} /> */}
             <OurTeamSection />
-            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
+            <JoinTheTeamSection data={cta?.data?.ctaSectionJoinUs} />
             {/* <StagesSection data={stages?.stagesHome} /> */}
             {/* <QaSection data={faq} /> */}
-            <HireUsSection data={cta?.ctaSectionOrder} />
+            <HireUsSection data={cta?.data?.ctaSectionOrder} />
         </>
     );
 }
