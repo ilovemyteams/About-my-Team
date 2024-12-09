@@ -23,7 +23,9 @@ export const LollipopCascadeListItem = ({
             >
                 <LollipopDecorator indexNumber={index} />
                 <div>
-                    {title && <LayoutSubtitle text={title} />}
+                    {title && (
+                        <LayoutSubtitle text={title} className="pc:text-2xlb" />
+                    )}
                     <LayoutText text={text} />
                 </div>
             </div>
