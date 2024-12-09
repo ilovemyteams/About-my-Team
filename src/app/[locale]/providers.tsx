@@ -5,10 +5,10 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { type ThemeProviderProps } from "next-themes/dist/types";
 import * as React from "react";
 
+import { readToken } from "@/sanity/lib/api";
+import { getClient } from "@/sanity/lib/client";
 import { settingsQuery } from "@/sanity/lib/queries";
 import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
-import { getClient } from "@/sanity/lib/client";
-import { readToken } from "@/sanity/lib/api";
 
 export const Providers = ({ children, ...props }: ThemeProviderProps) => {
     const { setData } = useSettingsContext();
