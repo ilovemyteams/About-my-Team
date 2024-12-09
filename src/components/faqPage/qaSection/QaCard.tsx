@@ -17,7 +17,7 @@ export interface FaqCardItemProps {
     data: QADataType;
     localizationData: QAItemLocalizationTextType;
     searchTerm: string;
-    likes: LikesTypes[];
+    likes: LikesTypes[] | null;
 }
 
 export const QaCard = ({
@@ -43,21 +43,41 @@ export const QaCard = ({
 
     const allTexts = `${shortAnswerText.join(" ")} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
 
+    const qaLikes = likes || ([] as LikesTypes[]);
+
     return (
         <div className="flex flex-col tab:flex-row py-4 gap-3 tab:gap-3 border-b-1 border-purple-strokeLight dark:border-purple-stroke">
-            <Image
-                src={image}
-                alt={imageAltText}
-                width={375}
-                height={250}
-                className="h-auto desk:h-[250px] w-full tab:max-w-[300px] desk:max-w-[375px] aspect-[280/200] tab:aspect-[300/200] object-cover"
-            />
+            <div
+                className={`w-full tab:w-[300px] desk:w-[375px] shrink-0 grow-0 relative overflow-hidden`}
+            >
+                <div className="relative w-full max-w-[280px] tab:max-w-fit mx-auto aspect-[280/200] tab:aspect-[300/200]">
+                    <Image
+                        src={image}
+                        alt={imageAltText}
+                        width={375}
+                        height={250}
+                        className="h-full w-full object-cover"
+                    />
+                </div>
+
+                <Image
+                    src={image}
+                    alt={` background for main image: ${imageAltText}`}
+                    width={375}
+                    height={250}
+                    className="absolute tab:hidden top-0 left-0 w-full h-full z-[-1] blur-xl object-cover"
+                />
+            </div>
 
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
-                    <LikeButton questionSlug={slug} likes={likes} />
+                    <LikeButton questionSlug={slug} likes={qaLikes} />
                     <Link
-                        href={`faq/${slug}${searchTerm && `?query=${searchTerm}`}`}
+                        href={{
+                            pathname: `faq/${slug}`,
+                            query: searchTerm && `query=${searchTerm}`,
+                        }}
+                        as={{ pathname: `faq/${slug}` }}
                     >
                         <h2
                             className="pc:hover:text-redLight dark:pc:hover:text-red
