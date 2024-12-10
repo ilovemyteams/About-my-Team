@@ -145,14 +145,8 @@
         "readTime": "{readTime} хв читати"
     },
     "Footer": {
-        "title": "Починайте <purple>втілення</purple> своїх\n<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
-        "titleFirstWord": "Починайте ",
-        "titleSecondWord": "втілення ",
-        "titleThirdWord": "своїх ",
-        "titleFourthWord": "",
-        "titleFifthWord": "бізнес-ідей ",
-        "titleSixthWord": "разом ",
-        "titleSeventhWord": "з нами",
+        "titleFirstLine": "Починайте <purple>втілення</purple> своїх",
+        "titleSecondLine": "<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
         "privacyPolicy": "політика конфіденційності",
         "copyright": "2024, i love my team"
     },

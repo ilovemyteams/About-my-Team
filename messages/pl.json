@@ -149,14 +149,8 @@
     },
 
     "Footer": {
-        "title": "Zacznij <purple>wdrażać</purple> swoje\n<purple>pomysły</purple> biznesowe <purple>razem z nami</purple>",
-        "titleFirstWord": "Zacznij ",
-        "titleSecondWord": "wdrażać ",
-        "titleThirdWord": "swoje ",
-        "titleFourthWord": " ",
-        "titleFifthWord": "pomysły ",
-        "titleSixthWord": "biznesowe ",
-        "titleSeventhWord": "razem z nami",
+        "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje",
+        "titleSecondLine": "<purple>pomysły</purple> biznesowe <purple>razem z nami</purple>",
         "privacyPolicy": "polityka prywatności",
         "copyright": "2024, i love my team"
     },

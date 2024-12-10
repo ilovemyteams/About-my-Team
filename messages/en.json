@@ -146,14 +146,8 @@
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
     },
     "Footer": {
-        "title": "Start <purple>implementing</purple> your\nbusiness <purple>ideas</purple> together <purple>with us</purple>",
-        "titleFirstWord": "Start ",
-        "titleSecondWord": "implementing ",
-        "titleThirdWord": "your ",
-        "titleFourthWord": "business ",
-        "titleFifthWord": "ideas ",
-        "titleSixthWord": "together ",
-        "titleSeventhWord": "with us",
+        "titleFirstLine": "Start <purple>implementing</purple> your",
+        "titleSecondLine": "business <purple>ideas</purple> together <purple>with us</purple>",
         "privacyPolicy": "privacy policy",
         "copyright": "2024, i love my team"
     },

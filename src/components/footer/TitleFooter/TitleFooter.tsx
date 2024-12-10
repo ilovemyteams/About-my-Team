@@ -1,24 +1,29 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-import { TitleWrapper } from "../../shared/TitleWrapper";
+import { ColoredText } from "../../shared/ColoredText";
 
 export const TitleFooter = () => {
     const getTranslation = useTranslations("Footer");
-    const locale = useLocale();
 
-    const pcStyle =
-        locale === "pl"
-            ? "pc:ml-[160px] pc:indent-[-160px]"
-            : "pc:ml-[180px] pc:indent-[-180px]";
-
-    const title = getTranslation.rich("title", {
-        purple: chunk => <span className="text-purple-100">{chunk}</span>,
+    const firstLine = getTranslation.rich("titleFirstLine", {
+        purple: chunk => <ColoredText>{chunk}</ColoredText>,
     });
+
+    const secondLine = getTranslation.rich("titleSecondLine", {
+        purple: chunk => <ColoredText>{chunk}</ColoredText>,
+    });
+
+    const title = [firstLine, secondLine];
     return (
-        <TitleWrapper
-            className={`max-w-[320px] tab:max-w-full tab:whitespace-pre-wrap pb-0 tab:pb-0 mb-9 tab:mb-[98px] pc:mb-[121px] desk:mb-[156px] mt-5 tab:mt-[40px]  pc:mt-[46px] tab:ml-[133px] tab:indent-[-133px] ${pcStyle}`}
-        >
-            {title}
-        </TitleWrapper>
+        <h2 className="font-caviar text-3xl tab:text-4xl pc:text-6xl desk:text-7xl w-[87%] max-w-[330px] tab:w-full tab:max-w-fit">
+            {title.map((item, index) => (
+                <span
+                    className="tab:block [&:not(:last-child)]:mr-[5px] tab:[&:not(:last-child)]:mr-0 tab:[&:nth-of-type(2)]:pl-[133px] pc:[&:nth-of-type(2)]:pl-[165px]"
+                    key={index}
+                >
+                    {item}
+                </span>
+            ))}
+        </h2>
     );
 };
