@@ -3,7 +3,7 @@ import { SharePopover } from "../shared/SharePopover";
 import { Copyright } from "./Copyright";
 import { MenuFooter } from "./MenuFooter";
 import { PrivacyPolicy } from "./PrivacyPolicy";
-import { TitleFooter } from "./TitleFooter/TitleFooter";
+import { TitleFooter } from "./TitleFooter";
 
 export const Footer = () => {
     return (
