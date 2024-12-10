@@ -38,18 +38,18 @@ export default async function HomePage(props: PageParamsProps) {
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={hero.data} />
-            <MissionSection data={about.data} />
-            <JoinTheTeamSection data={cta?.data?.ctaSectionJoinUs} />
-            <PortfolioSection data={portfolioSection?.data} />
-            <FeedbackSection data={reviews.data} />
-            <WriteUsSection data={cta?.data?.ctaSectionWriteUs} />
-            <ServicesSection data={services.data} />
+            <HeroSection data={hero} />
+            <MissionSection data={about} />
+            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
+            <PortfolioSection data={portfolioSection} />
+            <FeedbackSection data={reviews} />
+            <WriteUsSection data={cta?.ctaSectionWriteUs} />
+            <ServicesSection data={services} />
             <OurTeamSection />
-            <JoinTheTeamSection data={cta?.data?.ctaSectionJoinUs} />
-            <StagesSection data={stages?.data} />
-            <QaSection data={faq.data} />
-            <HireUsSection data={cta?.data?.ctaSectionOrder} />
+            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
+            <StagesSection data={stages} />
+            <QaSection data={faq} />
+            <HireUsSection data={cta?.ctaSectionOrder} />
         </>
     );
 }

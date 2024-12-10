@@ -17,9 +17,9 @@ async function nestedContentPageList(
     id: string,
     S: StructureBuilder
 ): Promise<DocumentListBuilder | DocumentBuilder> {
-    const previewClient = getClient({
-        token: process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN || "",
-    });
+    const previewClient = getClient(
+        process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN || ""
+    );
 
     const page = await previewClient.fetch(
         `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
