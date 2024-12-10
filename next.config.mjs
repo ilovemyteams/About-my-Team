@@ -3,32 +3,6 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async headers() {
-    return [
-      {
-        source: "/",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "no-cache",
-          },
-          {
-            key: "CDN-Cache-Control",
-            value: "max-age=60",
-          },
-          {
-            key: "Vercel-CDN-Cache-Control",
-            value: "max-age=60",
-          },
-        ],
-      },
-    ];
-  },
-  logging: {
-    fetches: {
-      fullUrl: true,
-    },
-  },
   // experimental: { urlImports: ["https://themer.sanity.build/"] },
   images: {
     remotePatterns: [

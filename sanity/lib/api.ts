@@ -21,8 +21,6 @@ export const PREVIEW_URL =
     process.env.NEXT_PUBLIC_SANITY_STUDIO_PREVIEW_URL ||
     "http://localhost:3000";
 
-console.log(PREVIEW_URL, process.env.SANITY_REVALIDATE_SECRET);
-
 // see https://www.sanity.io/docs/api-versioning for how versioning works
 export const apiVersion =
     process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-06-21";
