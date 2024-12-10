@@ -13,16 +13,14 @@ export default async function Footer() {
     const locale = useLocale();
     const footerQuery = await loadFooter(locale);
 
-    const selectedLink = footerQuery?.data?.privacyPolicyURL || "";
-    const policyTitle =
-        footerQuery?.data?.privacyPolicyTitle || "You forgot title";
-    const copyright =
-        footerQuery?.data?.rightsReserved || "You forgot copyright";
-    const footerTitle = footerQuery?.data?.title;
-    const targetBlank = footerQuery?.data?.privacyPolicyNewWindow || true;
+    const selectedLink = footerQuery?.privacyPolicyURL || "";
+    const policyTitle = footerQuery?.privacyPolicyTitle || "You forgot title";
+    const copyright = footerQuery?.rightsReserved || "You forgot copyright";
+    const footerTitle = footerQuery?.title;
+    const targetBlank = footerQuery?.privacyPolicyNewWindow || true;
 
-    const menuList = footerQuery?.data?.navigationMenu
-        ? footerQuery.data.navigationMenu
+    const menuList = footerQuery?.navigationMenu
+        ? footerQuery.navigationMenu
         : [];
 
     return (

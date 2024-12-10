@@ -17,7 +17,7 @@ export const Providers = ({ children, ...props }: ThemeProviderProps) => {
     React.useEffect(() => {
         async function fetchDataSettings() {
             try {
-                const client = getClient({ token: readToken });
+                const client = getClient(readToken || "");
                 const settingsSanityData = await client.fetch(settingsQuery, {
                     language: locale,
                 });

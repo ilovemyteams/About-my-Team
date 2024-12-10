@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { readToken } from "@/sanity/lib/api";
 import { getClient } from "@/sanity/lib/client";
 
-const clientWithToken = getClient({ token: readToken });
+const clientWithToken = getClient(readToken);
 
 export async function GET(request: NextRequest) {
     if (!process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN) {
