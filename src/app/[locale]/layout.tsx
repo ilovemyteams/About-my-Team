@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import React from "react";
@@ -16,7 +16,7 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import { Providers } from "./providers";
 
-const GA_TAG = process.env.GA_ID || " ";
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
 const IS_SHOWN_TO_SEARCH_ENGINES =
     process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
 
@@ -80,7 +80,7 @@ export default function LocaleLayout({
                 <meta name="type" property="og:type" content="website" />
                 <meta property="og:image" content="<generated>" />
             </head>
-            <GoogleAnalytics gaId={GA_TAG} />
+            <GoogleTagManager gtmId={GTM_ID} />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
