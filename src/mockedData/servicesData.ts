@@ -73,7 +73,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Дизайнер відмальовує прототип кожної сторінки, на якому схематично зображує розташування блоків, розміщення ілюстрацій і тексту. Тільки після затвердження прототипу із замовником ми приступаємо до створення дизайну сайту.",
             fullDescription: {
-                title: "<purple>Дизайн</purple>: сайти та цифрові продукти",
+                title: "<purple>Дизайн:</purple> сайти та цифрові продукти",
                 introduction:
                     "Наша команда створить унікальні, сучасні та ефективні дизайни для ваших сайтів і цифрових продуктів, які допоможуть вашому бізнесу виділитися серед конкурентів. Наші рішення поєднують естетику, функціональність і зручність для користувача.",
                 content: [
@@ -165,7 +165,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design.",
             fullDescription: {
-                title: "<purple>Design</purple>: Websites and Digital Products",
+                title: "<purple>Design:</purple> Websites and Digital Products",
                 introduction:
                     "Our team creates unique, modern, and effective designs for your websites and digital products, helping your business stand out among competitors. Our solutions combine aesthetics, functionality, and experience.",
                 content: [
@@ -259,7 +259,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Projektant rysuje prototyp każdej strony, który schematycznie przedstawia rozmieszczenie bloków, ilustracji i tekstu. Dopiero po zatwierdzeniu prototypu przez klienta rozpoczynamy tworzenie projektu strony internetowej.",
             fullDescription: {
-                title: "<purple>Projektowanie</purple>: strony internetowe i produkty cyfrowe",
+                title: "<purple>Projektowanie:</purple> strony internetowe i produkty cyfrowe",
                 introduction:
                     "Tworzymy unikalne, nowoczesne i efektywne projekty, które pomogą Twojemu biznesowi wyróżnić się na tle konkurencji. Nasze rozwiązania łączą w sobie estetykę, funkcjonalność i doświadczenie użytkownika.",
                 content: [
