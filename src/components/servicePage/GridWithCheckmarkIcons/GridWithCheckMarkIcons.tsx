@@ -14,7 +14,7 @@ export const GridWithCheckmarkIcons = ({
     const { description, title } = content;
 
     return (
-        <PageSection className="mb-[80px] tab:mb-[100px] desk:mb-[120px]">
+        <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <LayoutTitle text={title} />
             <ul className="grid grid-cols-1 gap-y-8 tab:grid-cols-2 tab:gap-x-[3.75rem] tab:gap-y-16 pc:gap-x-[7.5rem] pc:gap-y-20 desk:gap-x-64">
                 {description.map((item, index) => (
