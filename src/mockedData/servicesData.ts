@@ -178,7 +178,7 @@ export const servicesData: ServiceType[] = [
                                 text: "We tailor every project to your style, needs, and audience specifics, ensuring the design reflects your uniqueness.",
                             },
                             {
-                                title: "UX/UI Design__",
+                                title: "UX/UI Design",
                                 text: "We provide intuitive navigation and an attractive look that increases user engagement.",
                             },
                             {
