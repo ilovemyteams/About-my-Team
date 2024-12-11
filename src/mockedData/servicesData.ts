@@ -165,7 +165,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design.",
             fullDescription: {
-                title: "Website and Digital Product <purple>Design</purple> ",
+                title: "<purple>Design</purple> of Websites and Digital Products",
                 introduction:
                     "Our team creates unique, modern, and effective designs for your websites and digital products, helping your business stand out among competitors. Our solutions combine aesthetics, functionality, and experience.",
                 content: [
