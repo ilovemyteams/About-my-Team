@@ -141,4 +141,34 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",
         },
     },
+    {
+        data: {
+            id: "5",
+            siteLink: "viktoriia-zabara.netlify.app",
+            order: 5,
+            image: "https://drive.google.com/uc?export=view&id=12rUDFgGpru23pKMIF79fXRcTSyrTcPhm",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+        },
+        ua: {
+            name: "IT-рекрутер",
+            siteView: "лендінг",
+            description: "",
+        },
+        en: {
+            name: "IT-recruiter",
+            siteView: "landing page",
+            description: "",
+        },
+        pl: {
+            name: "IT-rekruter",
+            siteView: "strona docelowa",
+            description: "",
+        },
+    },
 ];
