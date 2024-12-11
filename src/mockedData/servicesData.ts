@@ -127,15 +127,15 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Складність проєкту",
-                                text: "обсяг сторінок, або необхідність створення унікальних елементів.",
+                                text: "Обсяг сторінок, або необхідність створення унікальних елементів.",
                             },
                             {
                                 title: "Обсяг робіт",
-                                text: "редизайн існуючого сайту чи розробка з нуля.",
+                                text: "Редизайн існуючого сайту чи розробка з нуля.",
                             },
                             {
                                 title: "Терміновість",
-                                text: "стандартні проєкти займають від 2 до 4 тижнів, але все потребує обговорення та уточнення.",
+                                text: "Стандартні проєкти займають від 2 до 4 тижнів, але все потребує обговорення та уточнення.",
                             },
                         ],
                     },
@@ -219,15 +219,15 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Project Complexity:",
-                                text: "the number of pages or the need to create unique elements.",
+                                text: "The number of pages or the need to create unique elements.",
                             },
                             {
                                 title: "Scope of work",
-                                text: "redesigning an existing website or developing one from scratch.",
+                                text: "Redesigning an existing website or developing one from scratch.",
                             },
                             {
                                 title: "Urgency",
-                                text: "standard projects take 2 to 4 weeks, but everything needs to be discussed and clarified.",
+                                text: "Standard projects take 2 to 4 weeks, but everything needs to be discussed and clarified.",
                             },
                         ],
                     },
@@ -313,15 +313,15 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Złożoność projektu",
-                                text: "liczba stron lub potrzeba stworzenia unikalnych elementów.",
+                                text: "Liczba stron lub potrzeba stworzenia unikalnych elementów.",
                             },
                             {
                                 title: "Zakres prac",
-                                text: "redesign istniejącej strony internetowej lub stworzenie jej od podstaw.",
+                                text: "Redesign istniejącej strony internetowej lub stworzenie jej od podstaw.",
                             },
                             {
                                 title: "Pilność",
-                                text: "standardowe projekty zajmują od 2 do 4 tygodni, ale wszystko wymaga omówienia i doprecyzowania.",
+                                text: "Standardowe projekty zajmują od 2 do 4 tygodni, ale wszystko wymaga omówienia i doprecyzowania.",
                             },
                         ],
                     },
