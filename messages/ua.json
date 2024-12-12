@@ -10,6 +10,10 @@
     },
     "Portfolio": {
         "pageTitle": "Портфоліо",
+        "titleFirstLine": "Реалізовані <purple>проєкти</purple>",
+        "titleSecondLine": "які вже <purple>допомагають</purple> розвивати",
+        "titleThirdLine": "<purple>разом</purple> з ідеальною командою",
+
         "titlePartForMob": "розвивати ідеї та бізнес нашим ",
         "titleFirstWord": "Реалізовані ",
         "titleSecondWord": "проєкти",
@@ -23,7 +27,6 @@
     },
     "Mission": {
         "pageTitle": "Про нас",
-        "titleZeroWord": "",
         "titleFirstLine": "Створюємо <purple>вражаючі</purple>",
         "titleSecondLine": "цифрові <purple>продукти</purple>",
         "titleThirdLine": "<purple>разом</purple> з ідеальною командою",

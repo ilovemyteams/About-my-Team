@@ -26,13 +26,9 @@
 
     "Mission": {
         "pageTitle": "O nas",
-        "titleZeroWord": "Tworzenie ",
-        "titleFirstWord": "imponujących ",
-        "titleSecondWord": "",
-        "titleThirdWord": " ",
-        "titleFourthWord": "cyfrowych produktów ",
-        "titleFifthWord": " ",
-        "titleOtherWords": "z doskonałym zespołem",
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple>",
+        "titleThirdLine": "z doskonałym zespołem",
         "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem",
         "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
         "thirdBenefit": "Zaoszczędzisz czas i pieniądze - od początku jesteśmy bardzo wydajnym zespołem",
