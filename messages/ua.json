@@ -12,18 +12,7 @@
         "pageTitle": "Портфоліо",
         "titleFirstLine": "Реалізовані <purple>проєкти</purple>, ",
         "titleSecondLine": "які вже <purple>допомагають</purple> розвивати ",
-        "titleThirdLine": "<purple>разом</purple> з ідеальною командою",
-
-        "titlePartForMob": "розвивати ідеї та бізнес нашим ",
-        "titleFirstWord": "Реалізовані ",
-        "titleSecondWord": "проєкти",
-        "titleThirdWord": " які вже ",
-        "titleFourthWord": "допомагають ",
-        "titleFifthWord": "розвивати ",
-        "titleFifthWordDesk": "розвивати ідеї",
-        "titleSixthWord": "ідеї та бізнес нашим ",
-        "titleSixthWordDesk": "та бізнес нашим ",
-        "titleSeventhWord": "замовникам"
+        "titleThirdLine": "ідеї та бізнес нашим <purple>замовникам</purple>"
     },
     "Mission": {
         "pageTitle": "Про нас",
@@ -41,6 +30,8 @@
     },
     "Feedback": {
         "pageTitle": "Відгуки",
+        "titleFirstLine": "Що про нас <purple>говорять</purple> ",
+        "titleSecondLine": "наші <purple>клієнти</purple>",
         "titleFirstWord": "Що про нас ",
         "titleSecondWord": "говорять ",
         "titleThirdWord": "наші ",

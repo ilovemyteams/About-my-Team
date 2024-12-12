@@ -4,7 +4,7 @@ import { portfolioData } from "../../mockedData/portfolioData";
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { PortfolioCarousel } from "./PortfolioCarousel";
-import { PortfolioTitle } from "./Title/PortfolioTitle";
+import { PortfolioTitle } from "./PortfolioTitle";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };

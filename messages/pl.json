@@ -14,18 +14,7 @@
         "pageTitle": "Wdrożone ",
         "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
         "titleSecondLine": "które <purple>pomogły rozwinąć działalność</purple> ",
-        "titleThirdLine": "naszych dotychczasowych <purple>klientów</purple>",
-
-        "titlePartForMob": "naszych dotychczasowych ",
-        "titleFirstWord": "Wdrożone ",
-        "titleSecondWord": "projekty",
-        "titleThirdWord": " które ",
-        "titleFourthWord": "pomogły rozwinąć działalność ",
-        "titleFifthWord": "",
-        "titleFifthWordDesk": "",
-        "titleSixthWord": "naszych dotychczasowych ",
-        "titleSixthWordDesk": "naszych dotychczasowych",
-        "titleSeventhWord": " klientów"
+        "titleThirdLine": "naszych dotychczasowych <purple>klientów</purple>"
     },
 
     "Mission": {
@@ -44,6 +33,8 @@
     },
     "Feedback": {
         "pageTitle": "Recenzje",
+        "titleFirstLine": "Co mówią <purple>o nas</purple> ",
+        "titleSecondLine": "nasi  <purple>klienci</purple>",
         "titleFirstWord": "Co mówią ",
         "titleSecondWord": "o nas ",
         "titleThirdWord": "nasi ",

@@ -12,17 +12,7 @@
         "pageTitle": "Portfolio",
         "titleFirstLine": "Implemented <purple>projects</purple>, ",
         "titleSecondLine": "that have already <purple>helped to develop</purple> ",
-        "titleThirdLine": "our customers' <purple>businesses</purple>",
-        "titlePartForMob": "our customers' ",
-        "titleFirstWord": "Implemented  ",
-        "titleSecondWord": "projects",
-        "titleThirdWord": " that have already ",
-        "titleFourthWord": "helped to develop ",
-        "titleFifthWord": "",
-        "titleFifthWordDesk": "",
-        "titleSixthWord": "our customers'  ",
-        "titleSixthWordDesk": "our customers' ",
-        "titleSeventhWord": "businesses"
+        "titleThirdLine": "our customers' <purple>businesses</purple>"
     },
     "Mission": {
         "pageTitle": "About us",
@@ -40,6 +30,8 @@
     },
     "Feedback": {
         "pageTitle": "Reviews",
+        "titleFirstLine": "What our <purple>customers</purple> ",
+        "titleSecondLine": "say <purple>about us</purple>",
         "titleFirstWord": "What our ",
         "titleSecondWord": "customers ",
         "titleThirdWord": "say ",
