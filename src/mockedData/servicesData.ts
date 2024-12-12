@@ -218,7 +218,7 @@ export const servicesData: ServiceType[] = [
                         title: "What Determines the price and timeline?",
                         description: [
                             {
-                                title: "Project Complexity:",
+                                title: "Project Complexity",
                                 text: "The number of pages or the need to create unique elements.",
                             },
                             {
@@ -864,7 +864,7 @@ export const servicesData: ServiceType[] = [
                         title: "Що включає послуга підтримки?",
                         description: [
                             {
-                                title: "Технічна підтримка:",
+                                title: "Технічна підтримка",
                                 text: [
                                     {
                                         type: "listItem",
@@ -882,7 +882,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support1",
                             },
                             {
-                                title: "Підтримка користувачів:",
+                                title: "Підтримка користувачів",
                                 text: [
                                     {
                                         type: "listItem",
@@ -900,7 +900,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support2",
                             },
                             {
-                                title: "Планове обслуговування:",
+                                title: "Планове обслуговування",
                                 text: [
                                     {
                                         type: "listItem",
@@ -918,7 +918,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support3",
                             },
                             {
-                                title: "Доступність:",
+                                title: "Доступність",
                                 text: [
                                     {
                                         type: "listItem",
@@ -967,7 +967,7 @@ export const servicesData: ServiceType[] = [
                         title: "What does the support service include?",
                         description: [
                             {
-                                title: "Technical Support:",
+                                title: "Technical Support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -985,7 +985,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support1",
                             },
                             {
-                                title: "User Support:",
+                                title: "User Support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1003,7 +1003,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support2",
                             },
                             {
-                                title: "Planned Maintenance:",
+                                title: "Planned Maintenance",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1021,7 +1021,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support3",
                             },
                             {
-                                title: "Availability:",
+                                title: "Availability",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1070,7 +1070,7 @@ export const servicesData: ServiceType[] = [
                         title: "Co obejmuje usługa wsparcia?",
                         description: [
                             {
-                                title: "Wsparcie techniczne:",
+                                title: "Wsparcie techniczne",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1088,7 +1088,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support1",
                             },
                             {
-                                title: "Wsparcie dla użytkowników:",
+                                title: "Wsparcie dla użytkowników",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1106,7 +1106,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support2",
                             },
                             {
-                                title: "Planowa konserwacja:",
+                                title: "Planowa konserwacja",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1124,7 +1124,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support3",
                             },
                             {
-                                title: "Dostępność:",
+                                title: "Dostępność",
                                 text: [
                                     {
                                         type: "listItem",
