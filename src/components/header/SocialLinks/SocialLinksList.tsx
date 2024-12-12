@@ -4,8 +4,8 @@ import { SupportedPlatforms } from "@/types/sanityDataPropsTypes";
 import { IconBehance } from "../../shared/Icons/IconBehance";
 import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { IconTelegram } from "../../shared/Icons/IconTelegram";
 import { SocialLink } from "../../shared/SocialLink";
+import { IconYoutube } from "../../shared/Icons/IconYoutube";
 
 export const SocialLinksList = () => {
     const { data } = useSettingsContext();
@@ -13,8 +13,7 @@ export const SocialLinksList = () => {
         linkedin: <IconLinkedin />,
         behance: <IconBehance />,
         github: <IconGithub />,
-        // TODO: change the icon after merge with dev. Merge after resolving issues with paths
-        youtube: <IconTelegram />,
+        youtube: <IconYoutube />,
     };
 
     const socialLinksData = data?.header?.socialLinks;
