@@ -112,4 +112,11 @@ export type FooterQueryResult = {
     }> | null;
 } | null;
 
-export type SupportedPlatforms = "linkedin" | "github" | "behance" | "youtube";
+export type SupportedPlatforms =  "behance"
+| "facebook"
+| "github"
+| "googleDrive"
+| "linkedin"
+| "telegram"
+| "whatsapp"
+| "youtube";
