@@ -10,7 +10,7 @@ export const Footer = () => {
         <footer className="pc:ml-[80px] deskxl:ml-[120px] pb-5 tab:pb-[40px]">
             <div className="container max-w-[540px] tab:max-w-full desk:max-w-[1456px]">
                 <div className="border-y-[1px] border-solid dark:border-purple-stroke border-purple-strokeLight desk:mx-auto">
-                    <div className="flex items-end justify-between mb-9 tab:mb-[98px] pc:mb-[121px] desk:mb-[156px] mt-5 tab:mt-[40px] pc:mt-[46px]">
+                    <div className="flex gap-1 items-end justify-between mb-9 tab:mb-[98px] pc:mb-[121px] desk:mb-[156px] mt-5 tab:mt-[40px] pc:mt-[46px]">
                         <TitleFooter />
                         <SharePopover
                             className="relative bottom-[-10px] pc:bottom-[-4px]"

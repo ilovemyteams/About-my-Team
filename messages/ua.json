@@ -10,8 +10,8 @@
     },
     "Portfolio": {
         "pageTitle": "Портфоліо",
-        "titleFirstLine": "Реалізовані <purple>проєкти</purple>",
-        "titleSecondLine": "які вже <purple>допомагають</purple> розвивати",
+        "titleFirstLine": "Реалізовані <purple>проєкти</purple>, ",
+        "titleSecondLine": "які вже <purple>допомагають</purple> розвивати ",
         "titleThirdLine": "<purple>разом</purple> з ідеальною командою",
 
         "titlePartForMob": "розвивати ідеї та бізнес нашим ",
@@ -27,8 +27,8 @@
     },
     "Mission": {
         "pageTitle": "Про нас",
-        "titleFirstLine": "Створюємо <purple>вражаючі</purple>",
-        "titleSecondLine": "цифрові <purple>продукти</purple>",
+        "titleFirstLine": "Створюємо <purple>вражаючі</purple> ",
+        "titleSecondLine": "цифрові <purple>продукти</purple> ",
         "titleThirdLine": "<purple>разом</purple> з ідеальною командою",
         "firstBenefit": "Дизайн, розробка і тестування - це лише частина нашої роботи. Наші команди здатні на значно більше, коли разом",
         "secondBenefit": "Ми пропонуємо комплексні рішення для бізнесу",
@@ -145,7 +145,7 @@
         "readTime": "{readTime} хв читати"
     },
     "Footer": {
-        "titleFirstLine": "Починайте <purple>втілення</purple> своїх",
+        "titleFirstLine": "Починайте <purple>втілення</purple> своїх ",
         "titleSecondLine": "<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
         "privacyPolicy": "політика конфіденційності",
         "copyright": "2024, i love my team"

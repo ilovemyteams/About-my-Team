@@ -10,6 +10,9 @@
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
+        "titleFirstLine": "Implemented <purple>projects</purple>, ",
+        "titleSecondLine": "that have already <purple>helped to develop</purple> ",
+        "titleThirdLine": "our customers' <purple>businesses</purple>",
         "titlePartForMob": "our customers' ",
         "titleFirstWord": "Implemented  ",
         "titleSecondWord": "projects",
@@ -23,8 +26,8 @@
     },
     "Mission": {
         "pageTitle": "About us",
-        "titleFirstLine": "Create <purple>impressive</purple>",
-        "titleSecondLine": "digital <purple>products</purple>",
+        "titleFirstLine": "Create <purple>impressive</purple> ",
+        "titleSecondLine": "digital <purple>products</purple> ",
         "titleThirdLine": "<purple>together</purple> with the dream team",
         "firstBenefit": "Design, development and testing are only a part of our work. Our teams are able to do much more when they work together",
         "secondBenefit": "We offer comprehensive business solutions",
@@ -142,8 +145,8 @@
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
     },
     "Footer": {
-        "titleFirstLine": "Start <purple>implementing</purple> your",
-        "titleSecondLine": "business <purple>ideas</purple> together <purple>with us</purple>",
+        "titleFirstLine": "Start <purple>implementing</purple> your ",
+        "titleSecondLine": "<purple>business ideas</purple> together <purple>with us</purple>",
         "privacyPolicy": "privacy policy",
         "copyright": "2024, i love my team"
     },

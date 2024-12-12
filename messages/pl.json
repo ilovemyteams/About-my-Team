@@ -12,6 +12,10 @@
 
     "Portfolio": {
         "pageTitle": "Wdrożone ",
+        "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
+        "titleSecondLine": "które <purple>pomogły rozwinąć działalność</purple> ",
+        "titleThirdLine": "naszych dotychczasowych <purple>klientów</purple>",
+
         "titlePartForMob": "naszych dotychczasowych ",
         "titleFirstWord": "Wdrożone ",
         "titleSecondWord": "projekty",
@@ -26,8 +30,8 @@
 
     "Mission": {
         "pageTitle": "O nas",
-        "titleFirstLine": "<purple>Tworzenie</purple> imponujących",
-        "titleSecondLine": "<purple>cyfrowych produktów</purple>",
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących ",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple> ",
         "titleThirdLine": "z doskonałym zespołem",
         "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem",
         "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
@@ -145,8 +149,8 @@
     },
 
     "Footer": {
-        "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje",
-        "titleSecondLine": "<purple>pomysły</purple> biznesowe <purple>razem z nami</purple>",
+        "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje ",
+        "titleSecondLine": "<purple>pomysły biznesowe</purple> razem <purple>z nami</purple>",
         "privacyPolicy": "polityka prywatności",
         "copyright": "2024, i love my team"
     },
