@@ -67,7 +67,7 @@ export const servicesData: ServiceType[] = [
         slug: "design",
         ctaButton: "order",
         icon: "design",
-        image: "https://drive.google.com/uc?export=view&id=1xhX7XK8jw01c00juIHX2ceylA6mbSAZt",
+        image: "https://drive.google.com/uc?export=view&id=10SeaH077vHUZhYU8vQm2-yX2Ff9nwJku",
         ua: {
             name: "дизайн",
             shortDescription:
