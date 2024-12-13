@@ -1502,12 +1502,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "mila-maksymenko-designer",
-            projectId: ["1", "3"],
+            projectId: ["1", "3", "5"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RjBfHBr05T_fuzgTswljLGrPXnnC9PIN",
             position: "UI/UX designer",
             categoryName: "designer",
-            projectsExperience: ["theatermag.com.ua"],
+            projectsExperience: [
+                "theatermag.com.ua",
+                "ilovemyteam.online",
+                "viktoriia-zabara.netlify.app",
+            ],
             pricePerHour: "9",
             socialLinks: {
                 linkedin:
@@ -1611,12 +1615,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "dmytro-bulakhov-developer",
-            projectId: ["3", "2"],
+            projectId: ["3", "2", "5"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lii6aMputmuNrLFHNIZN7aoq8uNw7ipt",
             position: "Front-end Developer",
             categoryName: "developer",
-            projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
+            projectsExperience: [
+                "theatermag.com.ua",
+                "batatfarm.com",
+                "viktoriia-zabara.netlify.app",
+            ],
             pricePerHour: "9",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/dmytro-bulakhov/",
