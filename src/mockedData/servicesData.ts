@@ -65,25 +65,288 @@ export const servicesData: ServiceType[] = [
     },
     {
         slug: "design",
+        ctaButton: "order",
         icon: "design",
-        image: "",
+        image: "https://drive.google.com/uc?export=view&id=10SeaH077vHUZhYU8vQm2-yX2Ff9nwJku",
         ua: {
             name: "дизайн",
             shortDescription:
                 "Дизайнер відмальовує прототип кожної сторінки, на якому схематично зображує розташування блоків, розміщення ілюстрацій і тексту. Тільки після затвердження прототипу із замовником ми приступаємо до створення дизайну сайту.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Дизайн:</purple> сайти та цифрові продукти",
+                introduction:
+                    "Наша команда створить унікальні, сучасні та ефективні дизайни для ваших сайтів і цифрових продуктів, які допоможуть вашому бізнесу виділитися серед конкурентів. Наші рішення поєднують естетику, функціональність і зручність для користувача.",
+                content: [
+                    {
+                        title: "Що включає послуга дизайну?",
+                        layout: 5,
+                        description: [
+                            {
+                                title: "Індивідуальний підхід",
+                                text: "Адаптуємо кожен проєкт під ваш стиль, потреби та специфіку аудиторії, щоб дизайн відповідав вашій унікальності.",
+                            },
+                            {
+                                title: "UX/UI-дизайн",
+                                text: "Забезпечуємо інтуїтивно зрозумілу навігацію та привабливий вигляд, що підвищують залученість користувачів.",
+                            },
+                            {
+                                title: "Адаптивність",
+                                text: "Ваш дизайн буде виглядати ідеально на будь-яких пристроях: смартфонах, планшетах, ноутбуках і моніторах.",
+                            },
+                            {
+                                title: "Оптимізація під SEO",
+                                text: "Розробляємо дизайн, який сприятиме просуванню сайту у пошукових системах.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "Як ми працюємо?",
+                        description: [
+                            {
+                                title: "Аналіз ідеї",
+                                text: "Вивчаємо ваші цілі, цільову аудиторію та бажаний результат, щоб створити найкраще рішення.",
+                            },
+                            {
+                                title: "Прототипування",
+                                text: "Розробляємо чорнові макети для затвердження структури та функціональності.",
+                            },
+                            {
+                                title: "Реалізація дизайну",
+                                text: "Створюємо професійний вигляд вашого продукту, який відповідає сучасним трендам і стандартам.",
+                            },
+                            {
+                                title: "Коригування та фіналізація",
+                                text: "На фінальному етапі ми доводимо всі деталі до досконалості, щоб кінцевий результат перевершив ваші очікування.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Від чого залежить ціна та терміни?",
+                        description: [
+                            {
+                                title: "Складність проєкту",
+                                text: "Обсяг сторінок, або необхідність створення унікальних елементів.",
+                            },
+                            {
+                                title: "Обсяг робіт",
+                                text: "Редизайн існуючого сайту чи розробка з нуля.",
+                            },
+                            {
+                                title: "Терміновість",
+                                text: "Стандартні проєкти займають від 2 до 4 тижнів, але все потребує обговорення та уточнення.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Чому обирають нас?",
+                        description: [
+                            {
+                                text: "Ми вміємо перетворювати ваші ідеї на стильний та ефективний візуальний продукт.",
+                            },
+                            {
+                                text: "Ми розуміємо потреби вашого бізнесу і пропонуємо креативні ідеї, які працюють на ваш результат.",
+                            },
+                            {
+                                text: "Завжди орієнтуємося на сучасні тенденції дизайну, поєднуючи їх із вашими запитами.",
+                            },
+                            { text: "З нами ви станете ще помітнішими." },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Замовте консультацію вже зараз та отримайте професійний дизайн для вашого проєкту",
+            },
         },
         en: {
             name: "design",
             shortDescription:
                 "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Design:</purple> Websites and Digital Products",
+                introduction:
+                    "Our team creates unique, modern, and effective designs for your websites and digital products, helping your business stand out among competitors. Our solutions combine aesthetics, functionality, and experience.",
+                content: [
+                    {
+                        title: "What does the design service include?",
+                        layout: 5,
+                        description: [
+                            {
+                                title: "Personalized Approach",
+                                text: "We tailor every project to your style, needs, and audience specifics, ensuring the design reflects your uniqueness.",
+                            },
+                            {
+                                title: "UX/UI Design",
+                                text: "We provide intuitive navigation and an attractive look that increases user engagement.",
+                            },
+                            {
+                                title: "Responsiveness",
+                                text: "Your design will look perfect on all devices, including smartphones, tablets, laptops, and monitors.",
+                            },
+                            {
+                                title: "SEO Optimization",
+                                text: "We develop a design that will help promote your website in search engines.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "How do we work?",
+                        description: [
+                            {
+                                title: "Idea Analysis",
+                                text: "We analyze your goals, target audience, and desired outcome to deliver the best solution.",
+                            },
+                            {
+                                title: "Prototyping",
+                                text: "We create draft mockups to approve the structure and functionality.",
+                            },
+                            {
+                                title: "Design Implementation",
+                                text: "We create a professional look for your product that meets modern trends and standards.",
+                            },
+                            {
+                                title: "Adjustments and finalization",
+                                text: "In the final stage, we bring all the details to perfection to ensure the end result exceeds your expectations.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "What Determines the price and timeline?",
+                        description: [
+                            {
+                                title: "Project Complexity",
+                                text: "The number of pages or the need to create unique elements.",
+                            },
+                            {
+                                title: "Scope of work",
+                                text: "Redesigning an existing website or developing one from scratch.",
+                            },
+                            {
+                                title: "Urgency",
+                                text: "Standard projects take 2 to 4 weeks, but everything needs to be discussed and clarified.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Why Choose Us?",
+                        description: [
+                            {
+                                text: "We know how to turn your ideas into a stylish and effective visual product.",
+                            },
+                            {
+                                text: "We understand the needs of your business and offer creative ideas that work for your results.",
+                            },
+                            {
+                                text: "We always focus on modern design trends, combining them with your needs.",
+                            },
+                            {
+                                text: "With us, you will become even more visible.",
+                            },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Book a consultation now and get a professional design for your project!",
+            },
         },
         pl: {
-            name: "projekt",
+            name: "project",
             shortDescription:
                 "Projektant rysuje prototyp każdej strony, który schematycznie przedstawia rozmieszczenie bloków, ilustracji i tekstu. Dopiero po zatwierdzeniu prototypu przez klienta rozpoczynamy tworzenie projektu strony internetowej.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Projektowanie:</purple> strony internetowe i produkty cyfrowe",
+                introduction:
+                    "Tworzymy unikalne, nowoczesne i efektywne projekty, które pomogą Twojemu biznesowi wyróżnić się na tle konkurencji. Nasze rozwiązania łączą w sobie estetykę, funkcjonalność i doświadczenie użytkownika.",
+                content: [
+                    {
+                        title: "Co obejmuje usługa projektowania?",
+                        layout: 5,
+                        description: [
+                            {
+                                title: "Indywidualne podejście",
+                                text: "Każdy projekt dostosowujemy do Twojego stylu, potrzeb i specyfiki grupy docelowej. Dbamy, aby design pasował do Twojej wyjątkowości.",
+                            },
+                            {
+                                title: "Projektowanie UX/UI",
+                                text: "Zapewniamy intuicyjną nawigację oraz atrakcyjny wygląd, które wspierają zaangażowanie i lojalność klientów. ",
+                            },
+                            {
+                                title: "Responsywność",
+                                text: "Zapewniamy, że Twój projekt będzie idealnie wyglądać i działać na wszystkich urządzeniach – smartfonach, tabletach, laptopach i monitorach.",
+                            },
+                            {
+                                title: "Optymalizacja pod SEO",
+                                text: "Opracowujemy projekt, który pomoże promować Twoją witrynę w wyszukiwarkach.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "Jak pracujemy?",
+                        description: [
+                            {
+                                title: "Analiza pomysłu",
+                                text: "Rozpoczynamy od zrozumienia Twoich celów, oczekiwań i charakterystyki odbiorców, aby stworzyć najlepsze rozwiązanie.",
+                            },
+                            {
+                                title: "Tworzenie prototypów",
+                                text: "Opracowujemy wstępne makiety, aby zatwierdzić strukturę i funkcjonalność.",
+                            },
+                            {
+                                title: "Wdrożenie projektu",
+                                text: "Tworzymy profesjonalny wygląd produktu, który spełnia nowoczesne trendy i standardy.",
+                            },
+                            {
+                                title: "Dopracowanie szczegółów i finalizacja",
+                                text: "Na końcowym etapie doprowadzamy wszystkie szczegóły do perfekcji, aby efekt końcowy przekroczył Twoje oczekiwania. ",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Od czego zależy cena i terminy?",
+                        description: [
+                            {
+                                title: "Złożoność projektu",
+                                text: "Liczba stron lub potrzeba stworzenia unikalnych elementów.",
+                            },
+                            {
+                                title: "Zakres prac",
+                                text: "Redesign istniejącej strony internetowej lub stworzenie jej od podstaw.",
+                            },
+                            {
+                                title: "Pilność",
+                                text: "Standardowe projekty zajmują od 2 do 4 tygodni, ale wszystko wymaga omówienia i doprecyzowania.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Dlaczego warto wybrać nas?",
+                        description: [
+                            {
+                                text: "Potrafimy przekształcić Twoje pomysły w stylowy i efektywny produkt wizualny.",
+                            },
+                            {
+                                text: "Rozumiemy potrzeby Twojego biznesu i oferujemy kreatywne rozwiązania, które przynoszą efekty.",
+                            },
+                            {
+                                text: "Zawsze kierujemy się nowoczesnymi trendami w designie, łącząc je z Twoimi wymaganiami.",
+                            },
+                            {
+                                text: "Dzięki nam Twoja firma stanie się jeszcze bardziej widoczna.",
+                            },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Zamów konsultację już teraz i zdobądź profesjonalny projekt dla swojego biznesu!",
+            },
         },
     },
     {
@@ -583,24 +846,316 @@ export const servicesData: ServiceType[] = [
     {
         slug: "support",
         icon: "support",
-        image: "",
+        image: "https://drive.google.com/uc?export=view&id=1eKfQR0K5jxvGmypKRJcoRxkCfomM6jHm",
+        ctaButton: "order",
         ua: {
             name: "підтримка",
             shortDescription:
                 "Представник команди навчає співробітників клієнта роботі із сайтом, щоб надалі клієнт міг самостійно оновлювати контент на своєму сайті.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Підтримка:</purple> турбота про стабільність вашого продукту",
+                introduction:
+                    "Ми забезпечуємо повний супровід вашого продукту, щоб він працював бездоганно, задовольняючи потреби користувачів і відповідаючи вашим бізнес-цілям. Наша команда надає якісну технічну підтримку, оперативно вирішує проблеми й допомагає з оновленнями та адаптацією.",
+                ctaText:
+                    "Замовте підтримку у нас — і ми допоможемо вашому продукту залишатися на вершині стабільності та ефективності!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "Що включає послуга підтримки?",
+                        description: [
+                            {
+                                title: "Технічна підтримка",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Виявлення та усунення технічних несправностей.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Оптимізація налаштувань для безперебійної роботи систем.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Контроль роботи інтеграцій, баз даних та серверів.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "Підтримка користувачів",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Допомога вашим клієнтам у вирішенні їхніх питань.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Консультації щодо використання функціоналу продукту.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Надання рекомендацій для підвищення ефективності роботи з продуктом.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Планове обслуговування",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Регулярний моніторинг систем для попередження збоїв.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Проведення планових оновлень та оптимізацій.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Тестування нових функцій перед їх впровадженням.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Доступність",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Можливість налаштування графіка підтримки за вашим запитом.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Швидке реагування і випралення виникаючих проблем.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Чому це важливо?",
+                        description: [
+                            {
+                                text: "Гарантія безперебійної роботи вашого продукту підвищує довіру та задоволеність клієнтів.",
+                            },
+                            {
+                                text: "Швидке реагування на проблеми зменшує ризики втрат і простоїв.",
+                            },
+                            {
+                                text: "Регулярне обслуговування дозволяє уникнути серйозних технічних несправностей і заощадити ваші кошти.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "support",
             shortDescription:
                 "Team representative teaches the customer's employees to work with the web-site, to enable the customer to update the website's content in future",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Support:</purple> ensuring the stability of your product",
+                introduction:
+                    "We provide full support for your product, ensuring it runs flawlessly, meets user needs, and aligns with your business goals. Our team delivers high-quality technical support, promptly resolves issues, and assists with updates and adaptation.",
+                ctaText:
+                    "Order support from us, and we’ll help your product stay at the top of its stability and efficiency!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "What does the support service include?",
+                        description: [
+                            {
+                                title: "Technical Support",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Identification and resolving technical issues.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Optimization of settings for the smooth operation of systems.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Monitoring integrations, databases, and servers.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "User Support",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Assisting your clients with their issues.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Guidance on how to use the product functionality.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Providing recommendations to enhance efficiency when working with the product.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Planned Maintenance",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Regular system monitoring to prevent disruptions.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Conducting scheduled updates and optimizations.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Testing new features before implementation.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Availability",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Ability to customize the support schedule at your request.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Quick response and correction of emerging problems.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Why is this important?",
+                        description: [
+                            {
+                                text: "Ensures uninterrupted product performance, boosting client trust and satisfaction.",
+                            },
+                            {
+                                text: "Quick issue resolution minimizes risks of losses and downtime.",
+                            },
+                            {
+                                text: "Regular maintenance helps avoid significant technical problems and saves costs.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "wsparcie",
             shortDescription:
                 "Przedstawiciel zespołu szkoli pracowników klienta w zakresie pracy ze stroną internetową, tak aby klient mógł samodzielnie aktualizować treści na swojej stronie internetowej.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Wsparcie:</purple> troska o stabilność Twojego produktu",
+                introduction:
+                    "Zapewniamy pełne wsparcie dla Twojego produktu, aby działał bezbłędnie, spełniał potrzeby użytkowników i odpowiadał Twoim celom biznesowym. Nasz zespół oferuje wysokiej jakości wsparcie techniczne, szybko rozwiązuje problemy i pomaga w aktualizacjach oraz dostosowaniu systemu.",
+                ctaText:
+                    "Zamów wsparcie u nas, a pomożemy Twojemu produktowi utrzymać stabilność i efektywność na najwyższym poziomie!",
+                content: [
+                    {
+                        layout: 7,
+                        title: "Co obejmuje usługa wsparcia?",
+                        description: [
+                            {
+                                title: "Wsparcie techniczne",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Identyfikacja i usuwanie problemów technicznych.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Optymalizacja ustawień dla nieprzerwanej pracy systemów.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Monitorowanie integracji, baz danych i serwerów.",
+                                    },
+                                ],
+                                icon: "support1",
+                            },
+                            {
+                                title: "Wsparcie dla użytkowników",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Pomoc klientom w rozwiązywaniu ich problemów.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Konsultacje dotyczące korzystania z funkcjonalności produktu.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Udzielanie rekomendacji w celu zwiększenia efektywności korzystania z produktu.",
+                                    },
+                                ],
+                                icon: "support2",
+                            },
+                            {
+                                title: "Planowa konserwacja",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Regularne monitorowanie systemów, aby zapobiec awariom.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Zaplanowane aktualizacje i optymalizacje.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Testowanie nowych funkcji przed ich wdrożeniem.",
+                                    },
+                                ],
+                                icon: "support3",
+                            },
+                            {
+                                title: "Dostępność",
+                                text: [
+                                    {
+                                        type: "listItem",
+                                        text: "Możliwość dostosowania harmonogramu wsparcia do Twoich potrzeb.",
+                                    },
+                                    {
+                                        type: "listItem",
+                                        text: "Szybka reakcja i usuwanie pojawiających się problemów.",
+                                    },
+                                ],
+                                icon: "support4",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Dlaczego to jest ważne?",
+                        description: [
+                            {
+                                text: "Gwarancja nieprzerwanej pracy produktu zwiększa zaufanie i satysfakcję klientów.",
+                            },
+                            {
+                                text: "Szybkie reagowanie na problemy minimalizuje ryzyko strat i przestojów.",
+                            },
+                            {
+                                text: "Regularna konserwacja pomaga uniknąć poważnych problemów technicznych i oszczędza koszty.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {
@@ -652,6 +1207,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "website",
         icon: "website",
+
         image: "",
         ua: {
             name: "Вебсайт",

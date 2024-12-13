@@ -1,7 +1,9 @@
+import { LikesTypes } from "../utils/likeDataHandler";
+
 export type QADataType = {
     slug: string;
     image: string;
-    likes: number;
+    likes: LikesTypes[] | null;
     answerOrderImage?: string;
     removeOrderBtn?: boolean;
 };
@@ -47,7 +49,7 @@ export const questionsData: QAItemType[] = [
         data: {
             slug: "i-need-a-website-where-should-i-start",
             image: "https://drive.google.com/uc?export=view&id=15mebCQZv4FAgQYinrxpVGDljlHsSWflz",
-            likes: 0,
+            likes: null,
 
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij",
@@ -268,7 +270,7 @@ export const questionsData: QAItemType[] = [
         data: {
             slug: "what-to-choose-a-landing-page-or-a-website",
             image: "https://drive.google.com/uc?export=view&id=1o9hzaeKZBawBuDxNSK4SUXpgoG8YiaGN",
-            likes: 0,
+            likes: null,
 
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1w-ptFNQYq3RzJ0B0JhPyntTrQYkTmJZJ",
@@ -576,7 +578,7 @@ export const questionsData: QAItemType[] = [
         data: {
             slug: "what-are-the-terms-of-the-development-of-the-fully-functional-website",
             image: "https://drive.google.com/uc?export=view&id=1jnZ9vPmhZchmQY6eeJklz_8bvQM2a9b4",
-            likes: 0,
+            likes: null,
 
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1v7Mje1IyYdmA0wBwa-b3lV2SHk4YLKyZ",
@@ -772,7 +774,7 @@ export const questionsData: QAItemType[] = [
         data: {
             slug: "how-much-does-development-cost",
             image: "https://drive.google.com/uc?export=view&id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
-            likes: 0,
+            likes: null,
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
         },
@@ -997,7 +999,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym Menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
                             ],
                         },
                         {
@@ -1134,7 +1136,7 @@ export const questionsData: QAItemType[] = [
         data: {
             slug: "can-i-choose-which-team-will-work-on-my-order",
             image: "https://drive.google.com/uc?export=view&id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
-            likes: 0,
+            likes: null,
             removeOrderBtn: true,
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=15X1tdwWHNC7DXp-82g_h-kPY2GCfkSva",
@@ -1182,7 +1184,7 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Czy mogę samodzielnie \nwybrać zespół?",
             shortAnswerText: [
-                "Tak, możesz samodzielnie wybrać poszczególnych specjalistów i utworzyć zespół. W takim przypadku zalecamy skontaktowanie się z Menedżerem w celu konsultacji. Jeśli potrzebujesz specjalisty do pracy godzinowej nad już wdrożonym produktem, możesz skontaktować się bezpośrednio z wybranym specjalistą przez Telegram lub LinkedIn, informując go, jak go znalazłeś i dlaczego go wybrałeś.",
+                "Tak, możesz samodzielnie wybrać poszczególnych specjalistów i utworzyć zespół. W takim przypadku zalecamy skontaktowanie się z menedżerem w celu konsultacji. Jeśli potrzebujesz specjalisty do pracy godzinowej nad już wdrożonym produktem, możesz skontaktować się bezpośrednio z wybranym specjalistą przez Telegram lub LinkedIn, informując go, jak go znalazłeś i dlaczego go wybrałeś.",
             ],
             imageAltText:
                 "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
@@ -1203,13 +1205,13 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Tworzenie \nzespołu",
                             text: [
-                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
+                                "Możesz wybrać indywidualnych specjalistów lub od razu utworzyć pełny zespół, w zależności od wymagań twojego projektu. W takim przypadku zdecydowanie zalecamy konsultację z naszym *link=`/${locale}/order` noblank*menedżerem*/link*, który pomoże właściwie ocenić zasoby i role funkcjonalne potrzebne do realizacji projektu. Jest to szczególnie ważne, jeśli nie masz doświadczenia w zarządzaniu zespołem deweloperów lub jeśli projekt jest skomplikowany i wymaga wielu specjalistów o różnych kompetencjach.",
                             ],
                         },
                         {
-                            title: "Wsparcie \nMenedżera",
+                            title: "Wsparcie \nmenedżera",
                             text: [
-                                "Chociaż możesz samodzielnie wybrać zespół, nasza firma zawsze służy wsparciem na każdym etapie. Menedżer pomoże Ci zorganizować proces deweloperski, ustawić komunikację i zapewnić efektywną współpracę w zespole. Jeśli potrzebujesz więcej niż trzech specjalistów (np. projektanta, dewelopera i testera), zaangażowanie Menedżera pozwoli zaoszczędzić czas i pieniądze. Menedżer ustawi proces w taki sposób, abyś nie musiał sam angażować się w pracę — Twoim zadaniem będzie jedynie przedstawianie wymagań, zatwierdzanie projektów i proponowanych rozwiązań technicznych, a nie zarządzanie ludźmi i ich interakcjami. Menedżer będzie regularnie raportować postępy, przeprowadzać prezentacje i konsultacje, a także dbać o niezbędną dokumentację i kalkulacje.",
+                                "Chociaż możesz samodzielnie wybrać zespół, nasza firma zawsze służy wsparciem na każdym etapie. Menedżer pomoże Ci zorganizować proces deweloperski, ustawić komunikację i zapewnić efektywną współpracę w zespole. Jeśli potrzebujesz więcej niż trzech specjalistów (np. projektanta, dewelopera i testera), zaangażowanie menedżera pozwoli zaoszczędzić czas i pieniądze. Menedżer ustawi proces w taki sposób, abyś nie musiał sam angażować się w pracę — Twoim zadaniem będzie jedynie przedstawianie wymagań, zatwierdzanie projektów i proponowanych rozwiązań technicznych, a nie zarządzanie ludźmi i ich interakcjami. Menedżer będzie regularnie raportować postępy, przeprowadzać prezentacje i konsultacje, a także dbać o niezbędną dokumentację i kalkulacje.",
                             ],
                         },
                     ],
@@ -1262,7 +1264,7 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             image: "https://drive.google.com/uc?export=view&id=1ycJoTvrsL86jRac6Mxe44nEHD5OYkS2W",
-            likes: 0,
+            likes: null,
             slug: "can-i-make-changes-during-the-development-process",
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1aB5nAWNw1xjSn7d-P2g_VuVvF69Lt7U-",
@@ -1383,9 +1385,9 @@ export const questionsData: QAItemType[] = [
                     title: "Jak przebiega proces wprowadzania zmian?",
                     data: [
                         {
-                            title: "Kontakt \nz Menedżerem",
+                            title: "Kontakt \nz menedżerem",
                             text: [
-                                "Pierwszym krokiem jest skontaktowanie się z Menedżerem, który zarządza rozwojem produktu. Menedżer koordynuje wszystkie etapy pracy oraz interakcję zespół i jest osobą, która pomoże Ci zrozumieć, jak najlepiej wprowadzić zmiany, nie naruszając ogólnej koncepcji projektu, i czy można to zrobić w ramach ustalonych terminów i budżetu (jeśli to jest możliwe).",
+                                "Pierwszym krokiem jest skontaktowanie się z menedżerem, który zarządza rozwojem produktu. Menedżer koordynuje wszystkie etapy pracy oraz interakcję zespół i jest osobą, która pomoże Ci zrozumieć, jak najlepiej wprowadzić zmiany, nie naruszając ogólnej koncepcji projektu, i czy można to zrobić w ramach ustalonych terminów i budżetu (jeśli to jest możliwe).",
                             ],
                         },
                         {
@@ -1394,7 +1396,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "Po zgłoszeniu chęci wprowadzenia zmian, Menedżer przedyskutuje to z zespołem deweloperów, projektantów i innych specjalistów pracujących nad projektem. To pozwoli ocenić:",
+                                        "Po zgłoszeniu chęci wprowadzenia zmian, menedżer przedyskutuje to z zespołem deweloperów, projektantów i innych specjalistów pracujących nad projektem. To pozwoli ocenić:",
                                     ],
                                 },
                                 {
@@ -1426,7 +1428,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "none",
                                     text: [
-                                        "Po konsultacjach z zespołem deweloperskim, Menedżer nada informacje o:",
+                                        "Po konsultacjach z zespołem deweloperskim, menedżer nada informacje o:",
                                     ],
                                 },
                                 {
@@ -1573,7 +1575,7 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             image: "https://drive.google.com/uc?export=view&id=1r8QMsr0NS1u7Tke9lSuB1XD0sAOs6PYO",
-            likes: 0,
+            likes: null,
             slug: "do-you-provide-post-launch-support",
 
             answerOrderImage:
@@ -1783,7 +1785,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym *link=`/${locale}/order` noblank*Menedżerem*/link*. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
+                                "Aby zamówić usługi wsparcia lub uzyskać konsultację, wystarczy skontaktować się z naszym *link=`/${locale}/order` noblank*menedżerem*/link*. Menedżer przeprowadzi konsultację w sprawie warunków współpracy i pomoże dobrać optymalny plan wsparcia dla Twojego produktu.",
                             ],
                         },
                         {
@@ -1939,7 +1941,7 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
-            likes: 0,
+            likes: null,
             slug: "what-is-a-landing-page-and-who-needs-it",
             answerOrderImage:
                 "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
