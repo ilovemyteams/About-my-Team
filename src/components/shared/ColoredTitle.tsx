@@ -23,7 +23,7 @@ export const ColoredTitle = ({
     });
 
     return (
-        <p className="flex-inline tab:block">
+        <p>
             {title.map((item, index) => (
                 <span className={`tab:block ${className}`} key={index}>
                     {item}

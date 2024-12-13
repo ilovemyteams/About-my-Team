@@ -35,10 +35,7 @@
         "pageTitle": "Recenzje",
         "titleFirstLine": "Co mówią <purple>o nas</purple> ",
         "titleSecondLine": "nasi  <purple>klienci</purple>",
-        "titleFirstWord": "Co mówią ",
-        "titleSecondWord": "o nas ",
-        "titleThirdWord": "nasi ",
-        "titleFourthWord": "klienci",
+
         "feedbackLink": "Cała recenzja"
     },
     "JoinTheTeam": {
@@ -49,9 +46,8 @@
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstRow1": "Tworzymy",
-        "titleFirstRow2": " produkty cyfrowe",
-        "titleSecondRow": "dla Twojego biznesu",
+        "titleFirstLine": "Tworzymy <purple>produkty cyfrowe</purple> ",
+        "titleSecondLine": "dla Twojego biznesu",
         "BATitle": "Analiza biznesowa",
         "BAText": "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
         "designTitle": "Projekt",

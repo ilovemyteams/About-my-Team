@@ -11,9 +11,7 @@ export const MissionTitle = () => {
     return (
         <>
             <TitleWrapper className="flex flex-col tab:flex-row items-start">
-                <SmallPageTitle className="ml-1 mr-3 tab:mt-2 pc:mt-4 flex items-center">
-                    {getTranslation("pageTitle")}
-                </SmallPageTitle>
+                <SmallPageTitle>{getTranslation("pageTitle")}</SmallPageTitle>
 
                 <ColoredTitle
                     categoryName="Mission"

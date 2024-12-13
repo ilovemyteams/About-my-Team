@@ -32,10 +32,7 @@
         "pageTitle": "Відгуки",
         "titleFirstLine": "Що про нас <purple>говорять</purple> ",
         "titleSecondLine": "наші <purple>клієнти</purple>",
-        "titleFirstWord": "Що про нас ",
-        "titleSecondWord": "говорять ",
-        "titleThirdWord": "наші ",
-        "titleFourthWord": "клієнти",
+
         "feedbackLink": "Весь відгук"
     },
     "JoinTheTeam": {
@@ -46,9 +43,8 @@
     },
     "Services": {
         "pageTitle": "Послуги",
-        "titleFirstRow1": "Розробляємо",
-        "titleFirstRow2": " цифрові продукти",
-        "titleSecondRow": "для вашого бізнесу",
+        "titleFirstLine": "Розробляємо <purple>цифрові продукти</purple> ",
+        "titleSecondLine": "для вашого бізнесу",
         "BATitle": "Бізнес-аналіз",
         "BAText": "Аналітика допомагає бізнесу будувати роботу та розвиватись на фактах, а не на здогадах чи інтуїції",
         "designTitle": "Дизайн",

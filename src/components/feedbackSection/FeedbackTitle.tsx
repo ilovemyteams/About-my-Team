@@ -7,11 +7,15 @@ import { TitleWrapper } from "../shared/TitleWrapper";
 export const FeedbackTitle = () => {
     const getTranslation = useTranslations("Feedback");
     const titleNames = ["titleFirstLine", "titleSecondLine"];
+    const isBigTitle = titleNames.length === 3;
 
     return (
         <div>
             <TitleWrapper>
-                <SmallPageTitle className="tab:float-start ml-1 mr-3 tab:mt-2 tab:mr-[16px] pc:mt-[14px]">
+                <SmallPageTitle
+                    isBigTitle={isBigTitle}
+                    className="tab:float-start"
+                >
                     {getTranslation("pageTitle")}
                 </SmallPageTitle>
                 <ColoredTitle categoryName="Feedback" propName={titleNames} />
