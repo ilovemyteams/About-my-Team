@@ -115,4 +115,35 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Z całego mojego doświadczenia – jesteście najpotężniejszym zespołem, z jakim kiedykolwiek współpracowałam. Jestem pod wrażeniem, że macie specjalistów we wszystkich właściwych dziedzinach i wszystko jest dopracowane w najdrobniejszych szczegółach – to naprawdę budzi podziw! Zarówno pod względem wizualnym, jak i funkcjonalnym, ta strona w pełni odpowiada naszej wizji, jak powinna wyglądać strona nowoczesnego czasopisma.",
         },
     },
+    {
+        data: {
+            id: "04",
+            image: "https://drive.google.com/uc?export=view&id=1qJLdcBlAvar7zDCrl2Fv54xYwe6OJ3HU",
+            siteLink: "viktoriia-zabara.netlify.app",
+        },
+        ua: {
+            siteName: "IT-рекрутер",
+            siteView: "лендінг",
+            reviewer: "Вікторія Забара",
+            reviewerRole: "IT-рекрутер",
+            feedbackText:
+                "Щиро дякую Вам за сайт, він виглядає професійно, ретельно продуманим і навіть відображає мій характер та моє світосприйняття. (Легко, конкретно, нічого зайвого). Дякую Вам за роботу.",
+        },
+        en: {
+            siteName: "IT-recruiter",
+            siteView: "landing",
+            reviewer: "Viktoriia Zabara",
+            reviewerRole: "IT-recruiter",
+            feedbackText:
+                "Thank you very much for the website, it looks professional, well thought out and even reflects my character and my worldview. (Easy, concrete, nothing excessive). I truly appreciate your work.",
+        },
+        pl: {
+            siteName: "IT-recruiter",
+            siteView: "strona docelowa",
+            reviewer: "Viktoriia Zabara",
+            reviewerRole: "Rekruter w branży IT",
+            feedbackText:
+                "Bardzo dziękuję za stronę, wygląda profesjonalnie, starannie przemyślana, a nawet odzwierciedla mój charakter i światopogląd.(Prosto, konkretnie, nic zbędnego). Dziękuję za wykonaną pracę.",
+        },
+    },
 ];
