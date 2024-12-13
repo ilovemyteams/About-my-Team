@@ -118,7 +118,7 @@ export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "04",
-            image: "https://drive.google.com/uc?export=view&id=1qJLdcBlAvar7zDCrl2Fv54xYwe6OJ3HU",
+            image: "https://drive.google.com/uc?export=view&id=11ykvNHgbrYFQ_e6pvXKTKfJ-IzgMlvUu",
             siteLink: "viktoriia-zabara.netlify.app",
         },
         ua: {
@@ -127,7 +127,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Вікторія Забара",
             reviewerRole: "IT-рекрутер",
             feedbackText:
-                "Щиро дякую Вам за сайт, він виглядає професійно, ретельно продуманим і навіть відображає мій характер та моє світосприйняття. (Легко, конкретно, нічого зайвого). Дякую Вам за роботу.",
+                "Щиро дякую вам за сайт, він виглядає професійно, ретельно продуманим і навіть відображає мій характер та моє світосприйняття. (Легко, конкретно, нічого зайвого). Дякую вам за роботу.",
         },
         en: {
             siteName: "IT-recruiter",
