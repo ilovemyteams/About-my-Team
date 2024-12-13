@@ -147,7 +147,6 @@ const config: Config = {
                 "48px",
                 {
                     lineHeight: "48px",
-
                     fontWeight: "700",
                 },
             ],
@@ -189,6 +188,7 @@ const config: Config = {
             fontFamily: {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
+                intro: ["var(--font-intro)"],
             },
             colors: {
                 purple: {

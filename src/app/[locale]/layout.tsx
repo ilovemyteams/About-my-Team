@@ -48,6 +48,17 @@ const geist = localFont({
     variable: "--font-geist",
 });
 
+const intro = localFont({
+    src: [
+        {
+            path: "../../fonts/IntroScript/introscriptr_h2base.otf",
+            weight: "400",
+            style: "normal",
+        },
+    ],
+    variable: "--font-intro",
+});
+
 export async function generateMetadata({
     params: { locale },
 }: {
@@ -84,7 +95,7 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
-                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-visible
+                        className={`${caviar.variable} ${geist.variable} ${intro.variable} relative z-[1] overflow-x-visible
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                     >
                         <Providers>
