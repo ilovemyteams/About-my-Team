@@ -146,7 +146,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "5",
             siteLink: "viktoriia-zabara.netlify.app",
             order: 5,
-            image: "https://drive.google.com/uc?export=view&id=12rUDFgGpru23pKMIF79fXRcTSyrTcPhm",
+            image: "https://drive.google.com/uc?export=view&id=1KFlUqkjP-225Ro3A0gCkNQq5R1zUI17i",
             implementations: [
                 "Idea",
                 "Design",
