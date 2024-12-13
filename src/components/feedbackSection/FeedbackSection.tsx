@@ -5,7 +5,7 @@ import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { FeedbackSlider } from "./FeedbackSlider";
 import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
-import { FeedbackTitle } from "./Title/FeedbackTitle";
+import { FeedbackTitle } from "./FeedbackTitle";
 
 export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };

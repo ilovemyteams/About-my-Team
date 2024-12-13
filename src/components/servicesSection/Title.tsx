@@ -1,27 +1,18 @@
 import { useTranslations } from "next-intl";
 
+import { ColoredTitle } from "../shared/ColoredTitle";
 import { SmallPageTitle } from "../shared/SmallPageTitle";
 import { TitleWrapper } from "../shared/TitleWrapper";
 
 export const Title = () => {
     const getTranslation = useTranslations("Services");
+    const titleNames = ["titleFirstLine", "titleSecondLine"];
     return (
-        <TitleWrapper className="flex flex-col">
-            <div className="flex flex-col tab:flex-row">
-                <SmallPageTitle className="min-w-[75px] ml-1 mr-3 flex items-center">
-                    {getTranslation("pageTitle")}
-                </SmallPageTitle>
-                <div className="w-[262px] tab:w-auto">
-                    <span>{getTranslation("titleFirstRow1")}</span>
-                    <span className="text-purple-100">
-                        <span className="hidden pc:inline-block w-1">
-                            &nbsp;
-                        </span>
-                        {getTranslation("titleFirstRow2")}
-                    </span>
-                </div>
-            </div>
-            <span>{getTranslation("titleSecondRow")}</span>
+        <TitleWrapper>
+            <SmallPageTitle className="tab:float-left">
+                {getTranslation("pageTitle")}
+            </SmallPageTitle>
+            <ColoredTitle categoryName="Services" propName={titleNames} />
         </TitleWrapper>
     );
 };

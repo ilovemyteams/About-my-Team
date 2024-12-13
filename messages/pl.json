@@ -12,27 +12,16 @@
 
     "Portfolio": {
         "pageTitle": "Wdrożone ",
-        "titlePartForMob": "naszych dotychczasowych ",
-        "titleFirstWord": "Wdrożone ",
-        "titleSecondWord": "projekty",
-        "titleThirdWord": " które ",
-        "titleFourthWord": "pomogły rozwinąć działalność ",
-        "titleFifthWord": "",
-        "titleFifthWordDesk": "",
-        "titleSixthWord": "naszych dotychczasowych ",
-        "titleSixthWordDesk": "naszych dotychczasowych",
-        "titleSeventhWord": " klientów"
+        "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
+        "titleSecondLine": "które <purple>pomogły rozwinąć działalność</purple> ",
+        "titleThirdLine": "naszych dotychczasowych <purple>klientów</purple>"
     },
 
     "Mission": {
         "pageTitle": "O nas",
-        "titleZeroWord": "Tworzenie ",
-        "titleFirstWord": "imponujących ",
-        "titleSecondWord": "",
-        "titleThirdWord": " ",
-        "titleFourthWord": "cyfrowych produktów ",
-        "titleFifthWord": " ",
-        "titleOtherWords": "z doskonałym zespołem",
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących ",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple> ",
+        "titleThirdLine": "z doskonałym zespołem",
         "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem",
         "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
         "thirdBenefit": "Zaoszczędzisz czas i pieniądze - od początku jesteśmy bardzo wydajnym zespołem",
@@ -44,10 +33,9 @@
     },
     "Feedback": {
         "pageTitle": "Recenzje",
-        "titleFirstWord": "Co mówią ",
-        "titleSecondWord": "o nas ",
-        "titleThirdWord": "nasi ",
-        "titleFourthWord": "klienci",
+        "titleFirstLine": "Co mówią <purple>o nas</purple> ",
+        "titleSecondLine": "nasi  <purple>klienci</purple>",
+
         "feedbackLink": "Cała recenzja"
     },
     "JoinTheTeam": {
@@ -58,9 +46,8 @@
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstRow1": "Tworzymy",
-        "titleFirstRow2": " produkty cyfrowe",
-        "titleSecondRow": "dla Twojego biznesu",
+        "titleFirstLine": "Tworzymy <purple>produkty cyfrowe</purple> ",
+        "titleSecondLine": "dla Twojego biznesu",
         "BATitle": "Analiza biznesowa",
         "BAText": "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
         "designTitle": "Projekt",
@@ -149,13 +136,8 @@
     },
 
     "Footer": {
-        "titleFirstWord": "Zacznij ",
-        "titleSecondWord": "wdrażać ",
-        "titleThirdWord": "swoje ",
-        "titleFourthWord": " ",
-        "titleFifthWord": "pomysły ",
-        "titleSixthWord": "biznesowe ",
-        "titleSeventhWord": "razem z nami",
+        "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje ",
+        "titleSecondLine": "<purple>pomysły biznesowe</purple> razem <purple>z nami</purple>",
         "privacyPolicy": "polityka prywatności",
         "copyright": "2024, i love my team"
     },

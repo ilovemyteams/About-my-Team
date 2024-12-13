@@ -10,26 +10,15 @@
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
-        "titlePartForMob": "our customers' ",
-        "titleFirstWord": "Implemented  ",
-        "titleSecondWord": "projects",
-        "titleThirdWord": " that have already ",
-        "titleFourthWord": "helped to develop ",
-        "titleFifthWord": "",
-        "titleFifthWordDesk": "",
-        "titleSixthWord": "our customers'  ",
-        "titleSixthWordDesk": "our customers' ",
-        "titleSeventhWord": "businesses"
+        "titleFirstLine": "Implemented <purple>projects</purple>, ",
+        "titleSecondLine": "that have already <purple>helped to develop</purple> ",
+        "titleThirdLine": "our customers' <purple>businesses</purple>"
     },
     "Mission": {
         "pageTitle": "About us",
-        "titleZeroWord": "",
-        "titleFirstWord": "Create ",
-        "titleSecondWord": "impressive ",
-        "titleThirdWord": "digital",
-        "titleFourthWord": " products ",
-        "titleFifthWord": "together",
-        "titleOtherWords": " with the dream team",
+        "titleFirstLine": "Create <purple>impressive</purple> ",
+        "titleSecondLine": "digital <purple>products</purple> ",
+        "titleThirdLine": "<purple>together</purple> with the dream team",
         "firstBenefit": "Design, development and testing are only a part of our work. Our teams are able to do much more when they work together",
         "secondBenefit": "We offer comprehensive business solutions",
         "thirdBenefit": "Working with us, you will save time and money - we are initially a highly efficient team",
@@ -41,10 +30,9 @@
     },
     "Feedback": {
         "pageTitle": "Reviews",
-        "titleFirstWord": "What our ",
-        "titleSecondWord": "customers ",
-        "titleThirdWord": "say ",
-        "titleFourthWord": "about us",
+        "titleFirstLine": "What our <purple>customers</purple> ",
+        "titleSecondLine": "say <purple>about us</purple>",
+
         "feedbackLink": "Entire review"
     },
     "JoinTheTeam": {
@@ -55,9 +43,8 @@
     },
     "Services": {
         "pageTitle": "Services",
-        "titleFirstRow1": "We develop",
-        "titleFirstRow2": " digital products ",
-        "titleSecondRow": "for your business",
+        "titleFirstLine": "We develop <purple>digital products</purple> ",
+        "titleSecondLine": "for your business",
         "BATitle": "Business analysis",
         "BAText": "Analytics helps the business to build its work and to develop itself based on the facts, but not the guesses or intuition",
         "designTitle": "Design",
@@ -146,13 +133,8 @@
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
     },
     "Footer": {
-        "titleFirstWord": "Start ",
-        "titleSecondWord": "implementing ",
-        "titleThirdWord": "your ",
-        "titleFourthWord": "business ",
-        "titleFifthWord": "ideas ",
-        "titleSixthWord": "together ",
-        "titleSeventhWord": "with us",
+        "titleFirstLine": "Start <purple>implementing</purple> your ",
+        "titleSecondLine": "<purple>business ideas</purple> together <purple>with us</purple>",
         "privacyPolicy": "privacy policy",
         "copyright": "2024, i love my team"
     },

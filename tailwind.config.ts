@@ -147,7 +147,6 @@ const config: Config = {
                 "48px",
                 {
                     lineHeight: "48px",
-
                     fontWeight: "700",
                 },
             ],
