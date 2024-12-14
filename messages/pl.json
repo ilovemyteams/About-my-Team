@@ -282,7 +282,9 @@
         "details": "Więcej"
     },
     "Christmas": {
-        "title": "Witamy na świątecznej stronie <purple>i love my team!</purple>!",
+        "titleSEO": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
+        "descriptionSEO": "Uwielbiamy kreatywność, a także wprowadzanie dobrego nastroju — czas na świąteczne życzenia, rabaty na nasze usługi oraz szansę na wygranie landing page",
+        "heroTitle": "Witamy na świątecznej stronie <purple>i love my team!</purple>!",
         "heroText": "Uwielbiamy kreatywność, a także wprowadzanie dobrego nastroju — czas na świąteczne życzenia, rabaty na nasze usługi oraz szansę",
         "heroStamp": "na wygranie landing page",
         "clickToys": "Kliknij na zabawki i otrzymaj życzenia świąteczne",
