@@ -35,7 +35,7 @@ export interface DescriptionType {
 
 export interface TextType {
     text: string;
-    type?: "listItem";
+    type?: "listItem" | "numListItem ";
 }
 
 export const servicesData: ServiceType[] = [
