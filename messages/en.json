@@ -279,5 +279,23 @@
         "descriptionSEO": "Turnkey web development of websites: convenient structure, modern design and integration of functions. We work with individual requirements of each client.",
         "ctaText": "Get a comprehensive consultation with our manager if you have any questions or doubts",
         "details": "More"
+    },
+    "Christmas": {
+        "heroTitle": "Welcome to the <purple>i love my team</purple> Christmas page!",
+        "heroText": "We love creativity and bringing a good mood - go ahead and get your Christmas wishes, discounts on our services, and the opportunity",
+        "heroStamp": "to win a landing page",
+        "clickToys": "Click on the toys and get your wish for the holidays",
+        "clickPresents": "Choose a gift to get a discount on services",
+        "text": "We <purple>create</purple> not just <purple>websites</purple>, but solutions <purple>that help</purple> businesses <purple>grow</purple>. Your success is our goal. Take part in the draw, fill out the form below and make 2025 a year of great opportunities!",
+        "ctaText": "Good luck! \nDon't miss your chance to get a landing page that will take your business to the next level!",
+        "ctaBtn": "To participate",
+        "discountTitle": "Ho-ho, congratulations, your discount for a comprehensive service!",
+        "discountBtn": "Click to get it ",
+        "confirmTitle": "Activation of the discount",
+        "confirmText": "To get your bonus, fill in the fields below",
+        "greetingTitle": "Merry Christmas and Happy New Year!",
+        "greetingText": "Get New Year's gifts from the i love my team. \nIt can be a wish, a discount on our services, \nand the grand prize is <red>landing page development!</red> \nGood luck!",
+        "greetingCaption": "The drawing will take place on 02.01.25",
+        "greetingBtn": "Get a gift"
     }
 }

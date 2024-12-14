@@ -280,5 +280,23 @@
         "descriptionSEO": "Tworzenie stron internetowych pod klucz: przyjazna dla użytkownika struktura, nowoczesny design i integracja funkcji. Pracujemy z indywidualnymi wymaganiami każdego klienta.",
         "ctaText": "Uzyskaj kompleksową konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
         "details": "Więcej"
+    },
+    "Christmas": {
+        "title": "Witamy na świątecznej stronie <purple>i love my team!</purple>!",
+        "heroText": "Uwielbiamy kreatywność, a także wprowadzanie dobrego nastroju — czas na świąteczne życzenia, rabaty na nasze usługi oraz szansę",
+        "heroStamp": "na wygranie landing page",
+        "clickToys": "Kliknij na zabawki i otrzymaj życzenia świąteczne",
+        "clickPresents": "Wybierz prezent, aby otrzymać zniżkę na usługi",
+        "text": "<purple>Tworzymy</purple> nie tylko <purple>strony internetowe</purple>, ale rozwiązania, <purple>które pomagają</purple> firmą <purple>w rozwoju</purple>. Twój sukces jest naszym celem. Weź udział w losowaniu, wypełnij poniższy formularz i spraw, aby rok 2025 był rokiem wielkich możliwości!",
+        "ctaText": "Życzymy powodzenia! \n Nie przegap swojej szansy na zdobycie strony docelowej, która przeniesie Twój biznes na wyższy poziom!",
+        "ctaBtn": "Uczestniczyć",
+        "discountTitle": "Ho-ho, gratulacje, rabat na kompleksową usługę!",
+        "discountBtn": "Kliknij, aby otrzymać",
+        "confirmTitle": "Aktywuj zniżkę",
+        "confirmText": "Aby otrzymać bonus, wypełnij poniższe pola",
+        "greetingTitle": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
+        "greetingText": "Zdobądź noworoczne prezenty od zespołu i love my team. Mogą to być życzenia, zniżki na nasze usługi, a nagrodą główną jest <red>stworzenie landing page'a!</red> \nPowodzenia!",
+        "greetingCaption": "Losowanie odbędzie się 02.01.25",
+        "greetingBtn": "Otrzymać prezent"
     }
 }
