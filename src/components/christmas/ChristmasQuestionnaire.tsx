@@ -1,21 +1,51 @@
+"use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
+import { SubmitFnType } from "@/types/FormInModalProps";
+
+import { AskUsNotificationModal } from "../shared/AskUs/modals/AskUsNotificationModal";
 import { PageSection } from "../shared/PageSection";
+import { ChristmasForm } from "./ChristmasForm";
 
 export const ChristmasQuestionnaire = () => {
+    const [isError, setIsError] = useState(false);
+    const [isNotificationShawn, setIsNotificationShawn] = useState(false);
+    const onCLoseNotification = () => {
+        setIsError(false);
+        setIsNotificationShawn(false);
+    };
+    const notificationHandler = async (submitFn: SubmitFnType) => {
+        try {
+            await submitFn();
+        } catch (error) {
+            setIsError(true);
+            throw new Error("Form submission failed", { cause: error });
+        } finally {
+            setIsNotificationShawn(true);
+        }
+    };
+    const getTranslation = useTranslations("Christmas");
     return (
-        <PageSection className="pb-[80px]">
-            <div className=" relative bg-memberMenuGradientLight w-full min-h-full min-w-[288px]  p-2">
+        <PageSection className="pb-[80px] text-purple-200">
+            <div className=" relative bg-memberMenuGradientLight w-full min-h-full min-w-[288px] p-2 tab:p-4">
                 <div className=" w-full min-h-full border-dash-horizontal ">
                     <div className="w-full min-h-full border-dash-vertical">
-                        <div className="  p-2 w-full min-h-full">
+                        <div className="p-2 tab:p-4 w-full min-h-full">
                             <div className="bg-headerGradientLight p-2 w-full min-h-full">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aspernatur vel consequatur
-                                tempore quo odio distinctio sed, cum culpa quia
-                                laborum totam ducimus similique hic odit
-                                dignissimos suscipit dolorum eligendi
-                                doloremque!
+                                <p className=" whitespace-pre-line ">
+                                    {getTranslation("formPreface1")}
+                                </p>
+                                <p>{getTranslation("formPreface2")}</p>
+                                <ChristmasForm
+                                    notificationHandler={notificationHandler}
+                                />
+                                <AskUsNotificationModal
+                                    isError={isError}
+                                    isShown={isNotificationShawn}
+                                    closeNotification={onCLoseNotification}
+                                />
                             </div>
                         </div>
                     </div>
