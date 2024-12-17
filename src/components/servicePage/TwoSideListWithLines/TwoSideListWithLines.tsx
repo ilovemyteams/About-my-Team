@@ -16,8 +16,10 @@ export const TwoSideListWithLines = ({
     const { description, title } = content;
 
     return (
-        <PageSection className="mb-[80px] tab:mb-[100px] desk:mb-[120px]">
-            <LayoutTitle text={title} />
+        <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
+            <div className="relative">
+                <LayoutTitle text={title} />
+            </div>
 
             <ul className="pc:pb-[60px]">
                 {description.map((desc, index) => (

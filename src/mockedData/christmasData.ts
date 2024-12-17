@@ -87,7 +87,7 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Подаючи анкету, учасник погоджується з обробкою своїх персональних даних відповідно до *link={policyUrl}*Політики конфіденційності*/link*",
+                            text: "Подаючи анкету, учасник погоджується з обробкою своїх персональних даних відповідно до *link=`${policyUrl}`*Політики конфіденційності*/link*",
                             type: "listItem",
                         },
                     ],
@@ -171,7 +171,7 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "By submitting the form, the participant agrees to the processing of his/her personal data in accordance with *link={policyUrl}*the Privacy Policy*/link*",
+                            text: "By submitting the form, the participant agrees to the processing of his/her personal data in accordance with *link=`${policyUrl}`*the Privacy Policy*/link*",
                             type: "listItem",
                         },
                     ],
@@ -255,7 +255,7 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Przesyłając formularz, uczestnik wyraża zgodę na przetwarzanie swoich danych osobowych zgodnie z *link={policyUrl}*Polityką prywatności*/link*",
+                            text: "Przesyłając formularz, uczestnik wyraża zgodę na przetwarzanie swoich danych osobowych zgodnie z *link=`${policyUrl}`*Polityką prywatności*/link*",
                             type: "listItem",
                         },
                     ],
