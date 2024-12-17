@@ -96,3 +96,12 @@ body {
         @apply scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent;
     }
 }
+@layer components {
+    .custom-autofill {
+        &:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: #5f3f87 !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+}
