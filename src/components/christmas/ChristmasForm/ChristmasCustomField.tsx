@@ -48,7 +48,7 @@ export const ChristmasCustomField = ({
             <ErrorMessage
                 name={name}
                 component="p"
-                className="absolute bottom-[-2px] right-0 text-xxs text-right text-error"
+                className="absolute bottom-[-14px] right-0 text-xxs text-right text-error"
             ></ErrorMessage>
         </label>
     );
