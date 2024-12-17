@@ -23,13 +23,13 @@ export const ChristmasConditions = () => {
                 <div>
                     <h2
                         className={`relative flex gap-x-[6px] pc:gap-x-[10px] flex-wrap font-caviar text-purple-200 dark:text-white-200 
-                            text-2xlb tab:text-4xl pc:text-5xl desk:text-6xl mb-10 tab:mb-[64px] pc:mb-[80px]`}
+                            text-2xlb tab:text-4xl pc:text-5xl desk:text-6xl mb-[50px] tab:mb-[64px] pc:mb-[80px]`}
                     >
                         {titleToArray.map(item => (
                             <span key={item} className="group relative">
                                 {item}
-                                <span className="group-last:visible invisible">
-                                    <IconBaubles className=" absolute top-[100%] right-0 z-[-1] w-[30px] tab:w-[52px] pc:w-[58px] desk:w-[67px] h-auto translate-x-[20%] translate-y-[-15%] tab:translate-x-[30%] pc:translate-x-[25%] tab:translate-y-[-10%] pc:translate-y-[-15%] text-purple-100 dark:text-purple-50" />
+                                <span className="group-last:visible invisible max-h-[60px] tab:max-h-[85px] absolute top-[100%] right-0 z-[-1] w-[30px] tab:w-[52px] pc:w-[58px] desk:w-[67px] translate-x-[30%] translate-y-[-15%] tab:translate-x-[35%] pc:translate-x-[30%] tab:translate-y-[-10%] pc:translate-y-[-15%] overflow-hidden pc:overflow-visible">
+                                    <IconBaubles className="w-full h-auto translate-y-[-12px] tab:translate-y-[-45px] pc:translate-y-0 text-purple-100 dark:text-purple-50" />
                                 </span>
                             </span>
                         ))}
