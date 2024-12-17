@@ -8,6 +8,7 @@ export const IconCandybar = ({ className }: { className: string }) => {
             xmlns="http://www.w3.org/2000/svg"
             aria-label="christmas tree ornament"
             className={className}
+            aria-hidden="true"
         >
             <path d="M18 -66H17V39.41H18V-66Z" fill="#A258FF" />
             <path

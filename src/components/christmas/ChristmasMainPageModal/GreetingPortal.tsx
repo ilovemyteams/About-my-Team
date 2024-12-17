@@ -53,10 +53,9 @@ export const GreetingPortal = () => {
             isOpen={isModalOpen}
             onCloseModal={onCloseModal}
             appearance="center"
-            className="relative bg-white-100 dark:bg-purple-200"
+            className="relative bg-white-100 dark:bg-purple-200 overflow-hidden"
         >
             <GreetingModal onCloseModal={onCloseModal} />
         </ModalBase>
     );
 };
-// p-0 tab:w-[86%] tab:min-w-[660px] pc:w-[59%] pc:min-w-[750px] desk:w-[55%] desk:min-w-[850px]

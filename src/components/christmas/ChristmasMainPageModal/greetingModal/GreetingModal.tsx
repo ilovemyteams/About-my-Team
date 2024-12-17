@@ -29,14 +29,14 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 <IconCloseX className="text-white-100 " />
             </button>
             <div className="text-center whitespace-pre-wrap">
-                <h1 className="font-intro mb-[18px] tab:mb-4 pc:mb-3 text-3xl/[33px] tab:text-[36px]/[43px] pc:text-5xl/[48px] desk:text-5xl/[48px] text-purple-200 dark:text-white-200">
+                <h1 className="font-intro mb-3 tab:mb-4 pc:mb-3 text-3xl/[33px] tab:text-[36px]/[43px] pc:text-5xl/[48px] desk:text-5xl/[48px] text-purple-200 dark:text-white-200">
                     {getTranslation("greetingTitle")}
                 </h1>
                 <ColoredText
                     propName={"greetingText"}
-                    className="text-xl text-greyLight dark:text-grey py-3"
+                    className="text-xl text-greyLight dark:text-grey mb-5 pc:mb-4"
                 />
-                <p className=" text-purple-130 dark:text-purple-100 mb-[25px] desk:text-lg25 text-sm tab:text-base max-w-[80%] mx-auto">
+                <p className=" text-purple-130 dark:text-purple-100 mb-[35px] tab:mb-[25px] desk:text-lg25 text-sm tab:text-base max-w-[80%] mx-auto">
                     {getTranslation("greetingCaption")}
                 </p>
                 <Link href="/events">
