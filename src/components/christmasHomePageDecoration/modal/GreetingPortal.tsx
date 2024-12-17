@@ -8,7 +8,7 @@ import { GreetingModal } from "./greetingModal/GreetingModal";
 const SESSION_LANG_KEY = "langOpened";
 
 export const GreetingPortal = () => {
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const locale = useLocale();
 
