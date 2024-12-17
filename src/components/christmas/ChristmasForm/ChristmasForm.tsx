@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl";
 import { LandingFormValidation } from "@/src/schemas/landingFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
-import { SubmitButton } from "../../shared/FormElements/SubmitButton";
 import { ChristmasCustomField } from "./ChristmasCustomField";
+import { ChristmasSubmitBtn } from "./ChristmasSubmitBtn";
 import { PolicyLabelEvent } from "./PolicyLabelEvent";
 
 export interface ValuesChristmasFormType {
@@ -174,7 +174,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                             status={status}
                         />
 
-                        <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
+                        <div className="w-full mb-[32px] tab:mb-[40px]">
                             <p
                                 className={`max-w-[372px] mb-2 text-xs tab:text-sm ${
                                     (touched.name && errors.name) ||
@@ -194,7 +194,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                             </p>
                             <PolicyLabelEvent />
                         </div>
-                        <SubmitButton
+                        <ChristmasSubmitBtn
                             isActiveLoader={isSubmitting}
                             isDisabled={!(dirty && isValid) || isSubmitting}
                             title={getTranslation("Christmas.submitBtn")}

@@ -28,16 +28,16 @@ export const ChristmasQuestionnaire = () => {
     };
     const getTranslation = useTranslations("Christmas");
     return (
-        <PageSection className="pb-[80px] text-purple-200">
-            <div className=" relative bg-memberMenuGradientLight w-full min-h-full min-w-[288px] p-2 tab:p-4">
+        <PageSection id="form" className="pb-[80px] text-purple-200">
+            <div className=" relative bg-memberMenuGradientLight mx-auto w-full min-h-full min-w-[288px] max-w-[726px] p-2 tab:p-4">
                 <div className=" w-full min-h-full border-dash-horizontal ">
                     <div className="w-full min-h-full border-dash-vertical">
                         <div className="p-2 tab:p-4 w-full min-h-full">
-                            <div className="bg-headerGradientLight p-2 w-full min-h-full">
-                                <p className=" whitespace-pre-line mb-2 tab:mb-4 pc:mb-6">
+                            <div className="bg-headerGradientLight p-2 tab:p-4 w-full min-h-full">
+                                <p className=" whitespace-pre-line mb-2 tab:mb-4 pc:mb-6 text-sm20 tab:text-xl28">
                                     {getTranslation("formPreface1")}
                                 </p>
-                                <p className="mb-6">
+                                <p className="mb-6 tab:mb-8 text-sm20 tab:text-xl28">
                                     {getTranslation("formPreface2")}
                                 </p>
                                 <ChristmasForm
