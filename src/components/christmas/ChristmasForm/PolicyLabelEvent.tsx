@@ -26,7 +26,18 @@ export const PolicyLabelEvent = () => {
                 ),
                 purpleCond: chunk => (
                     <Link
-                        href={`${pathName}#condition`}
+                        href={pathName}
+                        onClick={e => {
+                            e.preventDefault();
+                            const element =
+                                document.getElementById("condition");
+                            if (element) {
+                                element.scrollIntoView({
+                                    behavior: "smooth",
+                                    block: "start",
+                                });
+                            }
+                        }}
                         className="text-purple-100"
                     >
                         {chunk}
