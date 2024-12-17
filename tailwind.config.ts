@@ -473,7 +473,7 @@ const config: Config = {
             nocompatible: true,
             preferredStrategy: "pseudoelements",
         }),
-        plugin(function ({ matchUtilities, theme }) {
+        plugin(function ({ matchUtilities, theme, addUtilities }) {
             matchUtilities(
                 {
                     "animate-delay": value => ({
@@ -482,6 +482,20 @@ const config: Config = {
                 },
                 { values: theme("transitionDelay") }
             );
+            addUtilities({
+                ".border-dash-horizontal": {
+                    borderStyle: "dashed",
+                    borderWidth: "1px 0", // Верхній і нижній бордер
+                    borderImage:
+                        "repeating-linear-gradient(90deg, #5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+                ".border-dash-vertical": {
+                    borderStyle: "dashed",
+                    borderWidth: "0 1px", // Лівий і правий бордер
+                    borderImage:
+                        "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
         }),
     ],
 };

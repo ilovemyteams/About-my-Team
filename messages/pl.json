@@ -299,6 +299,15 @@
         "greetingTitle": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
         "greetingText": "Zdobądź noworoczne prezenty od zespołu i love my team. Mogą to być życzenia, zniżki na nasze usługi, a nagrodą główną jest <red>stworzenie landing page'a!</red> \nPowodzenia!",
         "greetingCaption": "Losowanie odbędzie się 02.01.25",
-        "greetingBtn": "Otrzymać prezent"
+        "greetingBtn": "Otrzymać prezent",
+        "formPreface1": "Witaj, 2024! \n Jesteś prawie częścią historii i chcę Ci podziękować za wszystkie trudności i wyzwania, które mi przyniosłeś. Pomogły mi one rozwinąć się i osiągnąć nowy poziom. Ale wiem, że przede mną jest jeszcze więcej możliwości i osiągnięć!",
+        "formPreface2": "Aby osiągnąć moje cele i skalować mój biznes, potrzebuję nowoczesnej i skutecznej strony docelowej od i love my team. Dlatego wypełniam swoje dane i wierzę w świąteczny cud.",
+        "socialMediaLink": "Linki do sieci społecznościowych*",
+        "productOrService": "Zakres działalności*",
+        "whyLanding": "Jaki produkt lub usługę oferujesz (krótko opisz, co sprzedajesz lub promujesz).*",
+        "mostImportant": "Co jest dla Ciebie najważniejsze w przyszłej stronie internetowej? (Projekt, szybkość ładowania, funkcjonalność, SEO itp.)*",
+        "submitBtn": "Wyślij",
+        "placeholder": "Twoja odpowiedź",
+        "submittingConditions": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na <purple>Warunki przetwarzania danych osobowych</purple> i <purpleCond>Zasady udziału w losowaniu landing page</purpleCond>"
     }
 }
