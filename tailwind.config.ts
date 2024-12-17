@@ -135,7 +135,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
-
+            "4xl42": [
+                "32px",
+                {
+                    lineHeight: "42px",
+                },
+            ],
             "5xl": [
                 "40px",
                 {
@@ -448,7 +453,12 @@ const config: Config = {
                 "linear-gradient(to right, #4F0A86 0%, #20003F 50%, transparent 50%, transparent 100%)",
             serviceCardGradientLight:
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 24%, #FBF9FF 50%, transparent 50%, transparent 100%)",
+            discountModalBgGradient:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            discountModalBgGradientLight:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
         },
+
         backgroundSize: {
             "size-200": "200% 200%",
         },
