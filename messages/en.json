@@ -306,7 +306,7 @@
         "whyLanding": "What product or service do you offer? (Briefly describe what you sell or promote.*",
         "mostImportant": "What is the most important thing for you in the future website? (Design, loading speed, functionality, SEO, etc.)*",
         "submitBtn": "Submit",
-        "placeholder": "Your answer*",
+        "placeholder": "Your answer",
         "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>"
     }
 }

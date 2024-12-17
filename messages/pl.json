@@ -307,7 +307,7 @@
         "whyLanding": "Jaki produkt lub usługę oferujesz (krótko opisz, co sprzedajesz lub promujesz).*",
         "mostImportant": "Co jest dla Ciebie najważniejsze w przyszłej stronie internetowej? (Projekt, szybkość ładowania, funkcjonalność, SEO itp.)*",
         "submitBtn": "Wyślij",
-        "placeholder": "Twoja odpowiedź*",
+        "placeholder": "Twoja odpowiedź",
         "submittingConditions": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na <purple>Warunki przetwarzania danych osobowych</purple> i <purpleCond>Zasady udziału w losowaniu landing page</purpleCond>"
     }
 }
