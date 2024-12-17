@@ -50,7 +50,7 @@ export const ModalBase = ({
     }, []);
 
     const defaultWidth =
-        "w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px]";
+        "w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] desk:min-w-[850px]";
 
     const centerAnimation =
         appearance === "center"
