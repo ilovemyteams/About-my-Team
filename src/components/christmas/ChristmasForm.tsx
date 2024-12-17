@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { LandingFormValidation } from "@/src/schemas/landingFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
-import { CustomField } from "../shared/FormElements/CustomField";
 import { SubmitButton } from "../shared/FormElements/SubmitButton";
 import { ChristmasCustomField } from "./ChristmasCustomField";
 import { PolicyLabelEvent } from "./PolicyLabelEvent";
@@ -33,8 +32,6 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
         whyLanding: "",
         mostImportant: "",
     };
-
-    const initialStatus = "name";
 
     const submitForm = async (
         values: ValuesChristmasFormType,
@@ -72,7 +69,6 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
             initialValues={initialValues}
             onSubmit={(values, actions) => submitForm(values, actions)}
             validationSchema={validationSchema}
-            initialStatus={initialStatus}
         >
             {({
                 values,
@@ -85,8 +81,8 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                 isSubmitting,
             }) => {
                 return (
-                    <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                        <CustomField
+                    <Form className="flex flex-col items-center">
+                        <ChristmasCustomField
                             name="name"
                             value={values.name}
                             label={getTranslation("CustomerForm.nameLabel")}
@@ -98,7 +94,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                             setStatus={setStatus}
                             status={status}
                         />
-                        <CustomField
+                        <ChristmasCustomField
                             name="email"
                             value={values.email}
                             label={getTranslation("CustomerForm.emailLabel")}

@@ -18,7 +18,6 @@ export const ChristmasCustomField = ({
     type,
     placeholder,
     isError,
-    status,
     setStatus,
 }: CustomFieldProps) => {
     const onFocusField = () => {
@@ -26,24 +25,24 @@ export const ChristmasCustomField = ({
     };
 
     const heightStyles =
-        type === "textarea" ? "h-[76px] pc:h-[68px]" : "h-[28px]";
+        type === "textarea" ? "h-[48px] pc:h-[68px] pt-5" : "h-[28px] pt-1";
 
     const borderAndColorStyles = isError
         ? "border-error focus:border-error text-error"
-        : `text-purple-200 dark:text-grey focus:border-greyLight dark:focus:border-grey ${value === "" ? "border-purple-strokeLight dark:border-purple-stroke" : "border-greyLight dark:border-grey"}`;
+        : `text-purple-200 focus:border-greyLight  ${value === "" ? "border-purple-strokeLight" : "border-greyLight"}`;
 
     return (
-        <label className="block relative w-full pb-[12px] text-base font-normal">
-            <p className="">{label}</p>
+        <label className="block relative w-full pb-5 text-base font-normal">
+            <p className="mb-2">{label}</p>
 
             <Field
                 as={type === "textarea" ? "textarea" : "input"}
                 name={name}
                 type={"text"}
                 autoComplete="on"
-                placeholder={status === name ? "" : placeholder}
+                placeholder={placeholder}
                 onFocus={onFocusField}
-                className={`block appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
+                className={`block focus:placeholder-transparent appearance-none w-full bg-transparent pb-1 text-purple-stroke outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
 
             <ErrorMessage

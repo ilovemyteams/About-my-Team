@@ -34,10 +34,12 @@ export const ChristmasQuestionnaire = () => {
                     <div className="w-full min-h-full border-dash-vertical">
                         <div className="p-2 tab:p-4 w-full min-h-full">
                             <div className="bg-headerGradientLight p-2 w-full min-h-full">
-                                <p className=" whitespace-pre-line ">
+                                <p className=" whitespace-pre-line mb-2 tab:mb-4 pc:mb-6">
                                     {getTranslation("formPreface1")}
                                 </p>
-                                <p>{getTranslation("formPreface2")}</p>
+                                <p className="mb-6">
+                                    {getTranslation("formPreface2")}
+                                </p>
                                 <ChristmasForm
                                     notificationHandler={notificationHandler}
                                 />
