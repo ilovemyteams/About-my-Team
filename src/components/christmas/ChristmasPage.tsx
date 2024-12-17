@@ -1,15 +1,17 @@
 import React from "react";
 
-import { ChristmasHero } from "./ChristmasHero/ChristmasHero";
+import { ChristmasConditions } from "./ChristmasConditions/ChristmasConditions";
+import { ChristmasCta } from "./ChristmasCta/ChristmasCta";
 import { ChristmasQuestionnaire } from "./ChristmasQuestionnaire";
 import { ChristmasText } from "./ChristmasText";
 
 export const ChristmasPage = () => {
     return (
         <>
-            <ChristmasHero />
             <ChristmasText />
             <ChristmasQuestionnaire />
+            <ChristmasConditions />
+            <ChristmasCta />
         </>
     );
 };
