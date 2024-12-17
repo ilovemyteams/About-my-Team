@@ -109,7 +109,7 @@ export const christmasData: ChristmasDataType = {
                     text: "The winner will receive a landing page design and development as a gift, according to the approved requirements.",
                 },
                 {
-                    title: "Terms of the contest",
+                    title: "Dates of the event",
                     text: [
                         {
                             text: "Start Date: December 23, 2024",
