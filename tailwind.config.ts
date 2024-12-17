@@ -135,7 +135,6 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
-            "5xln": ["40px", { lineHeight: "48px" }],
 
             "5xl": [
                 "40px",
