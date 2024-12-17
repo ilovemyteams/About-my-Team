@@ -1,8 +1,10 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { IconPresent } from "../../shared/Icons/christmas/IconPresent";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -33,10 +35,19 @@ export const DesktopHeader = () => {
                 py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
-                    <BurgerMenuButton
-                        isHeaderMenuOpened={isHeaderMenuOpened}
-                        toggleHeaderMenuOpen={toggleHeaderMenuOpen}
-                    />
+                    <div className="flex flex-col pc:gap-12 desk:gap-10">
+                        <BurgerMenuButton
+                            isHeaderMenuOpened={isHeaderMenuOpened}
+                            toggleHeaderMenuOpen={toggleHeaderMenuOpen}
+                        />
+                        <Link
+                            href="/events"
+                            aria-label="our Christmas event information page"
+                        >
+                            <IconPresent className="pc:w-[40px] desk:w-[55px] hover:animate-wave" />
+                        </Link>
+                    </div>
+
                     <SocialLinksList />
                 </div>
             </div>
