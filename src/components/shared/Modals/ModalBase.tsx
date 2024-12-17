@@ -15,6 +15,7 @@ interface ModalBaseProps {
     className?: string;
     animationType?: "tween" | "spring";
     appearance?: "center" | "up";
+    isCloseBtnVisible?: boolean;
 }
 
 export const ModalBase = ({
@@ -25,6 +26,7 @@ export const ModalBase = ({
     className = "",
     animationType = "tween",
     appearance = "up",
+    isCloseBtnVisible = true,
     children,
 }: PropsWithChildren<ModalBaseProps>) => {
     const screenSizeName = useScreenSize();
@@ -48,7 +50,7 @@ export const ModalBase = ({
     }, []);
 
     const defaultWidth =
-        " w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px]";
+        "w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] desk:min-w-[850px]";
 
     const centerAnimation =
         appearance === "center"
@@ -101,20 +103,22 @@ export const ModalBase = ({
                             transition={{ duration: 0.5, type: animationType }}
                             aria-label="modal-window"
                             onClick={e => e.stopPropagation()}
-                            className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+                            className={`max-h-[90dvh] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
             -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
                         >
                             <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                                <button
-                                    type="button"
-                                    onClick={onCloseModal}
-                                    disabled={isCloseDisabled}
-                                    aria-label="close button"
-                                    className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                                {isCloseBtnVisible && (
+                                    <button
+                                        type="button"
+                                        onClick={onCloseModal}
+                                        disabled={isCloseDisabled}
+                                        aria-label="close button"
+                                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                                >
-                                    <IconCloseX className="stroke-2 size-6" />
-                                </button>
+                                    >
+                                        <IconCloseX className="stroke-2 size-6" />
+                                    </button>
+                                )}
                                 {children}
                             </div>
                         </motion.div>
