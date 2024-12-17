@@ -5,8 +5,8 @@ import { useState } from "react";
 
 import { SubmitFnType } from "@/types/FormInModalProps";
 
-import { AskUsNotificationModal } from "../shared/AskUs/modals/AskUsNotificationModal";
-import { PageSection } from "../shared/PageSection";
+import { AskUsNotificationModal } from "../../shared/AskUs/modals/AskUsNotificationModal";
+import { PageSection } from "../../shared/PageSection";
 import { ChristmasForm } from "./ChristmasForm";
 
 export const ChristmasQuestionnaire = () => {

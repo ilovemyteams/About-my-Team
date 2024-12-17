@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 import { LandingFormValidation } from "@/src/schemas/landingFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
-import { SubmitButton } from "../shared/FormElements/SubmitButton";
+import { SubmitButton } from "../../shared/FormElements/SubmitButton";
 import { ChristmasCustomField } from "./ChristmasCustomField";
-import { PolicyLabelEvent } from "./PolicyLabelEvent";
+import { PolicyLabelEvent } from "../PolicyLabelEvent";
 
 export interface ValuesChristmasFormType {
     name: string;
