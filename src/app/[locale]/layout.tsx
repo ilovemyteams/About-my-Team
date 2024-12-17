@@ -7,7 +7,7 @@ import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
-import { GreetingPortal } from "@/src/components/christmas/ChristmasMainPageModal/GreetingPortal";
+import { GreetingPortal } from "@/src/components/christmasHomePageDecoration/modal/GreetingPortal";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";

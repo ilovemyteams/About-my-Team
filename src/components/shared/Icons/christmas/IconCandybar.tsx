@@ -10,7 +10,7 @@ export const IconCandybar = ({ className }: { className: string }) => {
             className={className}
             aria-hidden="true"
         >
-            <path d="M18 -66H17V39.41H18V-66Z" fill="#A258FF" />
+            <path d="M18 -66H17V39.41H18V-66Z" fill="currentColor" />
             <path
                 d="M35 63.4414V65.2314C35.0035 66.0496 34.7873 66.8538 34.3739 67.5599C33.9605 68.266 33.3651 68.8482 32.6499 69.2457C31.9347 69.6431 31.1259 69.8413 30.308 69.8194C29.49 69.7975 28.693 69.5565 28 69.1214L35 63.4414Z"
                 fill="#BFB4FF"

@@ -17,7 +17,7 @@ export const IconTree = ({ className }: { className: string }) => {
                 d="M40.0709 450.918H30.4609L36.3409 447.488L40.0709 450.918Z"
                 fill="#7424B7"
             />
-            <path d="M35.7734 0H34.7734V370H35.7734V0Z" fill="#5F3F87" />
+            <path d="M35.7734 0H34.7734V370H35.7734V0Z" fill="currentColor" />
             <path
                 d="M40.0715 432.602V441.562L35.6016 438.332L40.0715 432.602Z"
                 fill="#C7C0F3"

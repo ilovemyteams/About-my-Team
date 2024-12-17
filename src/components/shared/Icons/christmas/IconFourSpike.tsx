@@ -15,7 +15,7 @@ export const IconFourSpike = ({ className }: { className: string }) => {
             />
             <path
                 d="M30.6092 -54.1094H29.8916V84.8885H30.6092V-54.1094Z"
-                fill="#5F3F87"
+                fill="currentColor"
             />
             <path
                 d="M31.4577 85.4778L29.2979 89.3095L30.2522 82.3779L31.4577 85.4778Z"

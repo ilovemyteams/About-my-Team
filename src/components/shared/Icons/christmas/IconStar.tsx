@@ -9,7 +9,10 @@ export const IconStar = ({ className }: { className: string }) => {
             className={className}
             aria-hidden="true"
         >
-            <path d="M31.4375 0H30.4375V348.794H31.4375V0Z" fill="#5F3F87" />
+            <path
+                d="M31.4375 0H30.4375V348.794H31.4375V0Z"
+                fill="currentColor"
+            />
             <path
                 d="M61.1873 364.534L55.9086 369.681L53.7471 363.459L61.1873 364.534Z"
                 fill="#7424B7"
