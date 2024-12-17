@@ -7,8 +7,8 @@ import { LandingFormValidation } from "@/src/schemas/landingFormValidationSchema
 import { FormInModalProps } from "@/types/FormInModalProps";
 
 import { SubmitButton } from "../../shared/FormElements/SubmitButton";
-import { ChristmasCustomField } from "./ChristmasCustomField";
 import { PolicyLabelEvent } from "../PolicyLabelEvent";
+import { ChristmasCustomField } from "./ChristmasCustomField";
 
 export interface ValuesChristmasFormType {
     name: string;
