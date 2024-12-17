@@ -55,9 +55,11 @@ export const ChristmasQuestionnaire = () => {
                 <Image
                     src="/images/сhristmasTreeBranches.svg"
                     alt="Christmas tree branches"
-                    width={229}
-                    height={87}
-                    className="absolute bottom-[-80px] left-[-20px] z-[-1]"
+                    width={335}
+                    height={127}
+                    className="absolute bottom-[-65px] left-[-40px] z-[-1] w-[229px] h-[87px] 
+                    tab:bottom-[-95px] tab:left-[-50px] tab:w-[335px] tab:h-[127px]
+                    pc:bottom-[-85px] pc:left-[-120px]"
                 />
             </div>
         </PageSection>
