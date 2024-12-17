@@ -59,7 +59,7 @@ export const ChristmasQuestionnaire = () => {
                     height={127}
                     className="absolute bottom-[-65px] left-[-40px] z-[-1] w-[229px] h-[87px] 
                     tab:bottom-[-95px] tab:left-[-50px] tab:w-[335px] tab:h-[127px]
-                    pc:bottom-[-85px] pc:left-[-120px]"
+                    pc:bottom-[-85px] pc:left-[-100px]"
                 />
             </div>
         </PageSection>
