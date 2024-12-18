@@ -12,9 +12,9 @@ export const GreetingText = () => {
     return (
         <div
             className="text-center flex text-purple-200 dark:text-white-200  px-3 pb-8  
-         tab:px-0 pc:mx-0 pc:pr-[50px] pc:pb-0"
+         tab:px-0 pc:mx-0 pc:pr-[50px] pc:pt-[50px] pc:pb-0"
         >
-            <div className="flex flex-col items-end mx-auto pc:justify-center tab:max-w-[62%] pc:max-w-[444px] desk:max-w-[518px]">
+            <div className="flex flex-col items-end mx-auto tab:max-w-[62%] pc:max-w-[444px] desk:max-w-[518px]">
                 <h2 className=" relative font-intro text-3xl28 mb-4 tab:text-6xln tab:mb-6  desk:text-[56px] desk:leading-[56px]">
                     {title}
                 </h2>
@@ -28,7 +28,7 @@ export const GreetingText = () => {
                     translate-y-[-10%] tab:w-[140px] tab:translate-y-[-20%] tab:translate-x-[80%]"
                     />
                 </div>
-                <p className="text-sm20 mb-3 tab:text-xl28 tab:mb-10 desk:text-2xl34 desk:mb-12">
+                <p className="text-sm20 mb-3 tab:text-xl28 tab:mb-4 desk:text-2xl34 desk:mb-6">
                     {getTranslation("heroText")}
                 </p>
                 <WinLandingBtn />
