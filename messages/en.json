@@ -308,6 +308,7 @@
         "mostImportant": "What is the most important thing for you in the future website? (Design, loading speed, functionality, SEO, etc.)*",
         "submitBtn": "Submit",
         "placeholder": "Your answer",
-        "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>"
+        "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>",
+        "wishDescription": "Follow this link and get your own wishes and gifts!"
     }
 }
