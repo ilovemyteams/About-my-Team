@@ -37,7 +37,7 @@ export const MobileTabletHeader = () => {
                             href="/events"
                             aria-label="our Christmas event information page"
                         >
-                            <IconPresent className="w-[34px] tab:w-[40px] animate-wave hover:animate-[scale_0.5s_ease-in-out_infinite]" />
+                            <IconPresent />
                         </Link>
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}

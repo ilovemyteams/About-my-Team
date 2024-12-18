@@ -403,43 +403,45 @@ const config: Config = {
                         transform: "scale3d(1, 1, 1)",
                     },
 
-                    "10%": {
+                    "0.5%": {
                         transform:
                             "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
                     },
-                    "20%": {
+                    "1%": {
                         transform:
                             "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
                     },
-                    "30%": {
+                    "1.5%": {
                         transform:
                             "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
                     },
-                    "50%": {
-                        transform:
-                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
-                    },
-                    "70%": {
-                        transform:
-                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
-                    },
-                    "90%": {
-                        transform:
-                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
-                    },
-                    "40%": {
+                    "2%": {
                         transform:
                             "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
                     },
-                    "60%": {
+                    "2.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "3%": {
                         transform:
                             "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
                     },
-                    "80%": {
+                    "3.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "4%": {
                         transform:
                             "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
                     },
-
+                    "4.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "5%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
                     "100%": {
                         transform: "scale3d(1, 1, 1)",
                     },
@@ -448,8 +450,17 @@ const config: Config = {
                     "0%": {
                         transform: "scale(1)",
                     },
+                    "15%": {
+                        transform: "scaleX(1.1)",
+                    },
+                    "25%": {
+                        transform: "scale(1)",
+                    },
+                    "35%": {
+                        transform: "scaleY(1.2)",
+                    },
                     "50%": {
-                        transform: "scale(0.9)",
+                        transform: "scale(1)",
                     },
                     "100%": {
                         transform: "scale(1)",
@@ -467,7 +478,8 @@ const config: Config = {
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
                 linesColor: "linesColor 3000ms ease-in infinite",
-                wave: "wave 900ms ease-in-out",
+                wave: "wave 20s ease-in-out infinite",
+                wobble: "scale .7s ease-in infinite",
             },
         },
         backgroundImage: {

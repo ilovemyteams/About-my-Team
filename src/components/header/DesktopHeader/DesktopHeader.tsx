@@ -44,7 +44,7 @@ export const DesktopHeader = () => {
                             href="/events"
                             aria-label="our Christmas event information page"
                         >
-                            <IconPresent className="pc:w-[40px] desk:w-[55px] hover:animate-wave" />
+                            <IconPresent />
                         </Link>
                     </div>
 
