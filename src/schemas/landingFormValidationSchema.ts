@@ -1,9 +1,9 @@
+import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
 import { EmailValidation } from "./shared/emailValidation";
 import { MessageValidation } from "./shared/messageValidation";
 import { NameValidation } from "./shared/nameValidation";
-import { useTranslations } from "next-intl";
 
 const telegramRegex = /(t\.me|@)/;
 
