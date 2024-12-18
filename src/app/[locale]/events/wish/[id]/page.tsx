@@ -24,9 +24,7 @@ export async function generateMetadata({
     const wishMessage = wish
         ? wish[locale as LocaleType]
         : "Happy New 2025 Year!";
-    const wishImage = wish
-        ? `/images/christmas/${wish.id}.jpg`
-        : "/images/christmas/christmas-tree-in-the-village.jpg";
+    const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/images/christmas/${id}.jpg`;
     const getTranslation = await getTranslations({
         locale,
         namespace: "Christmas",
@@ -44,11 +42,10 @@ export async function generateMetadata({
         },
         title: `${wishMessage}`,
         description: `${getTranslation("wishDescription")}`,
-        image: `${wishImage}`,
         openGraph: {
             description: `${getTranslation("wishDescription")}`,
             title: `${wishMessage}`,
-            image: `${wishImage}`,
+            images: [imageUrl],
         },
     };
 }
