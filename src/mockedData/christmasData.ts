@@ -112,15 +112,19 @@ export const christmasData: ChristmasDataType = {
                     title: "Dates of the event",
                     text: [
                         {
-                            text: "Start Date: December 23, 2024",
+                            text: "Start Date: December 23, 2024.",
                             type: "listItem",
                         },
                         {
-                            text: "Application deadline: December 31, 2024 at 23:59",
+                            text: "Application deadline: December 31, 2024 at 23:59.",
                             type: "listItem",
                         },
                         {
-                            text: "Winner Announcement:: January 2, 2025",
+                            text: "Winner Announcement: January 2, 2025.",
+                            type: "listItem",
+                        },
+                        {
+                            text: "All discounts and certificates are valid until February 28, 2025.",
                             type: "listItem",
                         },
                     ],
@@ -171,7 +175,7 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "By submitting the form, the participant agrees to the processing of his/her personal data in accordance with *link=`${policyUrl}`*the Privacy Policy*/link*",
+                            text: "By submitting the form, the participant agrees to the processing of his/her personal data in accordance with *link=`${policyUrl}`*the Privacy Policy*/link*.",
                             type: "listItem",
                         },
                     ],
@@ -200,11 +204,15 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Termin zgłoszeń: 31 grudnia 2024 r. o godz. 23:59",
+                            text: "Termin zgłoszeń: 31 grudnia 2024 r. o godz. 23:59.",
                             type: "listItem",
                         },
                         {
                             text: "Ogłoszenie wyników: 2 stycznia 2025 r.",
+                            type: "listItem",
+                        },
+                        {
+                            text: "Wszystkie rabaty i certyfikaty są ważne do 28 lutego 2025 r.",
                             type: "listItem",
                         },
                     ],
@@ -255,7 +263,7 @@ export const christmasData: ChristmasDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Przesyłając formularz, uczestnik wyraża zgodę na przetwarzanie swoich danych osobowych zgodnie z *link=`${policyUrl}`*Polityką prywatności*/link*",
+                            text: "Przesyłając formularz, uczestnik wyraża zgodę na przetwarzanie swoich danych osobowych zgodnie z *link=`${policyUrl}`*Polityką prywatności*/link*.",
                             type: "listItem",
                         },
                     ],
