@@ -5,9 +5,11 @@ import React, { ReactNode, useState } from "react";
 const CopyLinkButton = ({
     link,
     children,
+    id,
 }: {
     link: string;
     children: ReactNode;
+    id?: string;
 }) => {
     const [copied, setCopied] = useState(false);
     const [notCopied, setNotCopied] = useState(false);
@@ -26,6 +28,7 @@ const CopyLinkButton = ({
 
     return (
         <button
+            id={id}
             aria-label="copy share link button"
             onClick={handleCopyLink}
             className="relative"

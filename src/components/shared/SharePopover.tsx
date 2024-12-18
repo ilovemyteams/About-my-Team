@@ -96,6 +96,7 @@ export const SharePopover = ({
                         <ul className="flex ">
                             <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <TelegramShareButton
+                                    id="telegram-share-button"
                                     url={urlShare}
                                     className={shareButtonStyles}
                                 >
@@ -104,6 +105,7 @@ export const SharePopover = ({
                             </li>
                             <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <FacebookShareButton
+                                    id="facebook-share-button"
                                     url={urlShare}
                                     className={shareButtonStyles}
                                 >
@@ -112,6 +114,7 @@ export const SharePopover = ({
                             </li>
                             <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
                                 <LinkedinShareButton
+                                    id="linkedin-share-button"
                                     url={urlShare}
                                     className={shareButtonStyles}
                                 >
@@ -120,6 +123,7 @@ export const SharePopover = ({
                             </li>
                             <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center text-purple-130 dark:text-purple-50">
                                 <WhatsappShareButton
+                                    id="whatsapp-share-button"
                                     url={urlShare}
                                     className={shareButtonStyles}
                                     separator=" - "
@@ -132,7 +136,7 @@ export const SharePopover = ({
                     <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
-                    <CopyLinkButton link={urlShare}>
+                    <CopyLinkButton id="copy-link-share-button" link={urlShare}>
                         <div className="flex h-12 border border-purple-strokeLight dark:border-purple-stroke">
                             <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px] text-purple-130 dark:text-purple-50">
                                 <IconLink />
