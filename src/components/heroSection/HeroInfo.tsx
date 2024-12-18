@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import { IconLowPolyBall } from "../shared/Icons/christmas/IconLowPolyBall";
 import { JoinUsButton } from "../shared/JoinUsButton";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
@@ -18,7 +19,10 @@ export const HeroInfo = () => {
             </h1>
             <div className="flex flex-col gap-4 pc:gap-6 mt-6 tab:mt-[166px] pc:mt-[80px]">
                 <WriteUs />
-                <JoinUsButton />
+                <div className="relative">
+                    <JoinUsButton />
+                    <IconLowPolyBall className="absolute hidden tab:block top-[100%] left-[235px] pc:left-[243px] desk:left-[235px] w-[47px] pc:w-[55px] tab:w-[70px] text-purple-200 dark:text-white-200" />
+                </div>
             </div>
         </div>
     );
