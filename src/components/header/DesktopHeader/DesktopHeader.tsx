@@ -35,7 +35,7 @@ export const DesktopHeader = () => {
                 py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
-                    <div className="flex flex-col pc:gap-12 desk:gap-10">
+                    <div className="flex flex-col pc:gap-8 desk:gap-10">
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}

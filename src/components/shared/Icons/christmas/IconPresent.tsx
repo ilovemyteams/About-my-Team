@@ -4,7 +4,7 @@ export const IconPresent = ({ className }: { className?: string }) => {
             viewBox="0 0 64 70"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-[34px] tab:w-[40px] animate-wave hover:animate-wobble ${className}`}
+            className={`w-[34px] tab:w-[40px] pc:w-[55px] animate-wave hover:animate-wobble ${className}`}
             aria-label="gift icon"
         >
             <rect

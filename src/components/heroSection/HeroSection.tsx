@@ -18,10 +18,10 @@ export const HeroSection = () => {
                 className="relative min-w-[288px] w-full tab:w-[720px] pc:w-[810px] desk:w-[1000px] h-auto  
                           tab:mb-6 pc:mt-[20px] pc:mb-0"
             >
-                <IconLowPolyBall className="absolute top-[42%] right-[92.3%] w-[7%] text-purple-200 dark:text-white-200 -z-30" />
-                <IconLowPolyBall className="absolute top-[24%] left-[33.7%] w-[5.4%] text-white-100 -z-30" />
-                <IconLowPolyBall className="absolute top-[77.8%] right-[38.9%] w-[10.4%] text-redLight dark:text-red -z-30" />
-                <IconLowPolyBall className="absolute top-[27.3%] left-[92.7%] w-[7.5%] text-[#ffb700] dark:text-[#ffff40] -z-30" />
+                <IconLowPolyBall className="absolute top-[41%] right-[92.3%] w-[6.8%] text-purple-200 dark:text-white-200 z-10" />
+                <IconLowPolyBall className="absolute top-[24%] left-[33.7%] w-[5.4%] text-white-100 z-10" />
+                <IconLowPolyBall className="absolute top-[77.8%] right-[38.9%] w-[10.4%] text-redLight dark:text-red z-10" />
+                <IconLowPolyBall className="absolute top-[27.3%] left-[92.7%] w-[7.5%] text-[#ffb700] dark:text-[#ffff40] z-10" />
                 <IconHeroLogo
                     className={` dark:text-white-200 text-purple-200 min-w-[288px] w-full tab:w-[720px] pc:w-[810px] desk:w-[1000px] h-auto`}
                 />
