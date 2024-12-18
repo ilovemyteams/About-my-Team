@@ -12,7 +12,7 @@ export const ChristmasTree = () => {
         <div className=" flex justify-center pt-[80px] tab:pt-[120px] pc:pt-[50px] pc:pl-[50px]">
             <div className="relative">
                 <IconTree className="w-[249px] h-auto tab:w-[468px] pc:w-[464px] desk:w-[505px]" />
-                <IconStar className="absolute w-[34px] h-auto top-0 left-[50%] translate-x-[-50%] translate-y-[-90%] tab:w-[63px] desk:w-[7px] " />
+                <IconStar className="absolute w-[34px] h-auto top-0 left-[50%] translate-x-[-50%] translate-y-[-90%] tab:w-[63px] desk:w-[65px] " />
                 <ChristmasToyButton
                     id="blueBaubleSmall"
                     icon={IconToyBlue}
