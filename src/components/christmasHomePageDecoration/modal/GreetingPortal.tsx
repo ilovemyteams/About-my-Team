@@ -15,14 +15,12 @@ export const GreetingPortal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const timeoutId = useRef<null | ReturnType<typeof setTimeout>>(null);
 
-    console.log(timeoutId.current);
     const pathname = usePathname();
     const locale = useLocale();
 
     const onCloseModal = () => setIsModalOpen(false);
 
     const onOpenModal = () => {
-        console.log("open modal");
         setIsModalOpen(true);
     };
 
@@ -31,9 +29,7 @@ export const GreetingPortal = () => {
 
         const timeout = timeoutId.current;
 
-        console.log(pathname);
         if (pathname === "/events" && timeout) {
-            console.log("clear timeout");
             clearTimeout(timeout);
         }
 
@@ -43,7 +39,6 @@ export const GreetingPortal = () => {
 
             if (!isInclude) {
                 if (pathname !== "/events" && !timeoutId.current) {
-                    console.log("start timeout", GREETING_MODAL_DELAY);
                     timeoutId.current = setTimeout(
                         onOpenModal,
                         GREETING_MODAL_DELAY
@@ -56,7 +51,6 @@ export const GreetingPortal = () => {
 
         if (!langOpened) {
             if (pathname !== "/events" && !timeoutId.current) {
-                console.log("start timeout");
                 timeoutId.current = setTimeout(
                     onOpenModal,
                     GREETING_MODAL_DELAY
