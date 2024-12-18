@@ -18,8 +18,11 @@ export const ChristmasConditions = () => {
     const titleToArray = title.split(" ");
 
     return (
-        <div className="relative overflow-hidden">
-            <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
+        <div className="relative overflow-clip">
+            <PageSection
+                id="condition"
+                className="pb-[80px] tab:pb-[100px] desk:pb-[120px] "
+            >
                 <div>
                     <h2
                         className={`relative flex gap-x-[6px] pc:gap-x-[10px] flex-wrap font-caviar text-purple-200 dark:text-white-200 
