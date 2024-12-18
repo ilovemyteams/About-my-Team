@@ -128,6 +128,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "3xl28": [
+                "28px",
+                {
+                    lineHeight: "28px",
+                },
+            ],
             "4xl": [
                 "32px",
                 {
@@ -155,6 +161,13 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "6xln": [
+                "48px",
+                {
+                    lineHeight: "48px",
+                },
+            ],
+
             "7xl": [
                 "64px",
                 {
