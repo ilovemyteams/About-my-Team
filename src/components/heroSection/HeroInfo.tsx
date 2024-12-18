@@ -21,7 +21,7 @@ export const HeroInfo = () => {
                 <WriteUs />
                 <div className="relative">
                     <JoinUsButton />
-                    <IconLowPolyBall className="absolute hidden tab:block top-[100%] left-[235px] pc:left-[243px] desk:left-[235px] w-[47px] pc:w-[55px] tab:w-[70px] text-purple-200 dark:text-white-200" />
+                    <IconLowPolyBall className="absolute hidden tab:block top-[99.8%] left-[235px] pc:left-[243px] desk:left-[242px] w-[47px] pc:w-[55px] tab:w-[70px] text-purple-200 dark:text-white-200" />
                 </div>
             </div>
         </div>
