@@ -24,17 +24,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(406.5 40.4697) rotate(-90) scale(419.398 363.098)"
                     >
-                        <stop stop-color="#EBDCFF" />
+                        <stop stopColor="#EBDCFF" />
                         <stop
                             offset="0.504"
-                            stop-color="#EFE8FF"
-                            stop-opacity="0.69"
+                            stopColor="#EFE8FF"
+                            stopOpacity="0.69"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#EFEDFF"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#EFEDFF" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
@@ -61,17 +57,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(309.5 218.416) rotate(-90) scale(195.095 276.454)"
                     >
-                        <stop stop-color="#EBE4FF" />
+                        <stop stopColor="#EBE4FF" />
                         <stop
                             offset="0.504"
-                            stop-color="#EFEBFF"
-                            stop-opacity="0.69"
+                            stopColor="#EFEBFF"
+                            stopOpacity="0.69"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#E9E4FF"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#E9E4FF" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
@@ -98,17 +90,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(144.5 357.83) rotate(-90) scale(319.624 276.454)"
                     >
-                        <stop stop-color="#EBE4FF" />
+                        <stop stopColor="#EBE4FF" />
                         <stop
                             offset="0.504"
-                            stop-color="#EFEBFF"
-                            stop-opacity="0.69"
+                            stopColor="#EFEBFF"
+                            stopOpacity="0.69"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#E9E4FF"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#E9E4FF" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
@@ -135,17 +123,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(298.968 -14.9091) rotate(90) scale(342.909 299.246)"
                     >
-                        <stop stop-color="#330075" stop-opacity="0.82" />
+                        <stop stopColor="#330075" stopOpacity="0.82" />
                         <stop
                             offset="0.499"
-                            stop-color="#37007E"
-                            stop-opacity="0.48"
+                            stopColor="#37007E"
+                            stopOpacity="0.48"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#2C0065"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#2C0065" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
@@ -172,17 +156,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(322 324.904) rotate(-90) scale(290.214 289.895)"
                     >
-                        <stop stop-color="#2E0168" stop-opacity="0.37" />
+                        <stop stopColor="#2E0168" stopOpacity="0.37" />
                         <stop
                             offset="0.504"
-                            stop-color="#260157"
-                            stop-opacity="0.46"
+                            stopColor="#260157"
+                            stopOpacity="0.46"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#2B0160"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#2B0160" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
@@ -209,17 +189,13 @@ export const BgDesktop = () => {
                         gradientUnits="userSpaceOnUse"
                         gradientTransform="translate(85.5785 268.333) rotate(-55.6734) scale(238.799 242.515)"
                     >
-                        <stop stop-color="#2A006E" stop-opacity="0.67" />
+                        <stop stopColor="#2A006E" stopOpacity="0.67" />
                         <stop
                             offset="0.504"
-                            stop-color="#210066"
-                            stop-opacity="0.35"
+                            stopColor="#210066"
+                            stopOpacity="0.35"
                         />
-                        <stop
-                            offset="1"
-                            stop-color="#36006C"
-                            stop-opacity="0"
-                        />
+                        <stop offset="1" stopColor="#36006C" stopOpacity="0" />
                     </radialGradient>
                 </defs>
             </svg>
