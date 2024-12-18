@@ -252,7 +252,8 @@
         "breadcrumbItemHome": "Головна",
         "breadcrumbItemAbout": "Про нас",
         "breadcrumbItemFaq": "FAQ",
-        "breadcrumbItemServices": "Послуги"
+        "breadcrumbItemServices": "Послуги",
+        "breadcrumbItemIvents": "Події"
     },
     "FaqPage": {
         "titleSEO": "Відповіді на актуальні питання в одному місці",

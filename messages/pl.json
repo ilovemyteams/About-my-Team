@@ -256,7 +256,8 @@
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas",
         "breadcrumbItemFaq": "FAQ",
-        "breadcrumbItemServices": "Usługi"
+        "breadcrumbItemServices": "Usługi",
+        "breadcrumbItemIvents": "Wydarzenia"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
