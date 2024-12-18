@@ -14,7 +14,7 @@ export const GreetingText = () => {
             className="text-center flex text-purple-200 dark:text-white-200  px-3 pb-8  
          tab:px-0 pc:mx-0 pc:pr-[50px] pc:pt-[50px] pc:pb-0"
         >
-            <div className="flex flex-col items-end mx-auto tab:max-w-[62%] pc:max-w-[444px] desk:max-w-[518px]">
+            <div className="flex flex-col items-end mx-auto max-w-[320px] tab:max-w-[555px] pc:max-w-[444px] desk:max-w-[518px]">
                 <h2 className=" relative font-intro text-3xl28 mb-4 tab:text-6xln tab:mb-6  desk:text-[56px] desk:leading-[56px]">
                     {title}
                 </h2>

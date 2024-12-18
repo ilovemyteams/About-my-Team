@@ -29,7 +29,7 @@ export const GreetingPortal = () => {
 
         const timeout = timeoutId.current;
 
-        if (pathname === "/events" && timeout) {
+        if (pathname.split("/")[1] === "events" && timeout) {
             clearTimeout(timeout);
         }
 
@@ -38,7 +38,7 @@ export const GreetingPortal = () => {
             const isInclude = sessionLang.includes(locale);
 
             if (!isInclude) {
-                if (pathname !== "/events" && !timeoutId.current) {
+                if (pathname.split("/")[1] === "events" && !timeoutId.current) {
                     timeoutId.current = setTimeout(
                         onOpenModal,
                         GREETING_MODAL_DELAY
@@ -50,7 +50,7 @@ export const GreetingPortal = () => {
         }
 
         if (!langOpened) {
-            if (pathname !== "/events" && !timeoutId.current) {
+            if (pathname.split("/")[1] === "events" && !timeoutId.current) {
                 timeoutId.current = setTimeout(
                     onOpenModal,
                     GREETING_MODAL_DELAY

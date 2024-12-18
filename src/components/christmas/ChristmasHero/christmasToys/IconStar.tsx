@@ -11,7 +11,7 @@ export const IconStar = ({ className }: IconProps) => {
             className={className}
             aria-label="star for christmas tree icon"
         >
-            <g clip-path="url(#clip0_14342_62380)">
+            <g clipPath="url(#clip0_14342_62380)">
                 <path
                     d="M31.9267 0.583008L24.4043 13.519L31.9267 34.0296L39.4422 13.519L31.9267 0.583008Z"
                     fill="url(#paint0_radial_14342_62380)"
