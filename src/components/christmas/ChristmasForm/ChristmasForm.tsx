@@ -13,6 +13,7 @@ import { PolicyLabelEvent } from "./PolicyLabelEvent";
 export interface ValuesChristmasFormType {
     name: string;
     email: string;
+    telegram: string;
     socialMediaLink: string;
     productOrService: string;
     whyLanding: string;
@@ -27,6 +28,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
     const initialValues = {
         name: "",
         email: "",
+        telegram: "",
         socialMediaLink: "",
         productOrService: "",
         whyLanding: "",
@@ -41,6 +43,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
             const data = {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
+                telegram: values.telegram.trim(),
                 socialMediaLink: values.socialMediaLink.trim(),
                 productOrService: values.productOrService.trim(),
                 whyLanding: values.whyLanding.trim(),
@@ -106,7 +109,18 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                             setStatus={setStatus}
                             status={status}
                         />
-
+                        <ChristmasCustomField
+                            name="telegram"
+                            value={values.telegram}
+                            label={getTranslation("CustomerForm.telegramLabel")}
+                            placeholder={getTranslation(
+                                "CustomerForm.telegramPlaceholder"
+                            )}
+                            type="text"
+                            isError={!!(touched.telegram && errors.telegram)}
+                            setStatus={setStatus}
+                            status={status}
+                        />
                         <ChristmasCustomField
                             name="socialMediaLink"
                             value={values.socialMediaLink}
