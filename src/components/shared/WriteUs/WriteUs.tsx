@@ -20,7 +20,7 @@ export const WriteUs = ({ className }: WriteUsProps) => {
     };
 
     return (
-        <Button onClick={onClickButton} className={className}>
+        <Button id="order-button" onClick={onClickButton} className={className}>
             {getTranslation("order")}
         </Button>
     );
