@@ -28,7 +28,7 @@ export const GreetingText = () => {
                     translate-y-[-10%] tab:w-[140px] tab:translate-y-[-20%] tab:translate-x-[80%]"
                     />
                 </div>
-                <p className="text-sm20 mb-6 tab:text-xl28 tab:mb-10 desk:text-2xl34 desk:mb-12">
+                <p className="text-sm20 mb-3 tab:text-xl28 tab:mb-10 desk:text-2xl34 desk:mb-12">
                     {getTranslation("heroText")}
                 </p>
                 <WinLandingBtn />
