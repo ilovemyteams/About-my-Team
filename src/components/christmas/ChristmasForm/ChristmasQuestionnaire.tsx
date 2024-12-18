@@ -1,11 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
-import { wishesData } from "@/src/mockedData/wishesData";
-import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { SubmitFnType } from "@/types/FormInModalProps";
 
 import { AskUsNotificationModal } from "../../shared/AskUs/modals/AskUsNotificationModal";
@@ -14,15 +11,12 @@ import { ChristmasForm } from "./ChristmasForm";
 
 export const ChristmasQuestionnaire = () => {
     const [isError, setIsError] = useState(false);
-    const [randomWishId, setRandomWishId] = useState<string | null>(null);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
     const onCLoseNotification = () => {
         setIsError(false);
         setIsNotificationShawn(false);
     };
-    useEffect(() => {
-        setRandomWishId(wishRandomizer(wishesData));
-    }, []);
+
     const notificationHandler = async (submitFn: SubmitFnType) => {
         try {
             await submitFn();
@@ -33,7 +27,6 @@ export const ChristmasQuestionnaire = () => {
             setIsNotificationShawn(true);
         }
     };
-    const locale = useLocale();
     const getTranslation = useTranslations("Christmas");
 
     return (
@@ -71,14 +64,6 @@ export const ChristmasQuestionnaire = () => {
                     pc:bottom-[-85px] pc:left-[-100px]"
                 />
             </div>
-
-            <Link
-                href={`/${locale}/events/wish/${randomWishId}`}
-                onClick={() => console.log(randomWishId)}
-                className="text-xl28 text-white-100"
-            >
-                Click
-            </Link>
         </PageSection>
     );
 };
