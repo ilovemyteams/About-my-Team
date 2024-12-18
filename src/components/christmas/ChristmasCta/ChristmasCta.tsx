@@ -9,7 +9,9 @@ export const ChristmasCta = () => {
 
     return (
         <SectionCTA className="flex flex-col tab:flex-row gap-8 justify-between tab:gap-[90px] desk:gap-[150px]">
-            <TitleCTAWrapper>{getTranslation("ctaText")}</TitleCTAWrapper>
+            <TitleCTAWrapper className="whitespace-pre-wrap">
+                {getTranslation("ctaText")}
+            </TitleCTAWrapper>
             <div className="tab:max-w-[270px] shrink-0 grow-0 flex items-center justify-center">
                 <ChristmasCtaBtn />
             </div>
