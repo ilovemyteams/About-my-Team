@@ -59,7 +59,7 @@ export const christmasData: ChristmasDataType = {
                     ],
                 },
                 {
-                    title: "Умови участіі",
+                    title: "Умови участі",
                     text: [
                         {
                             text: "Участь у розіграші можуть брати лише особи старше 18 років.",
