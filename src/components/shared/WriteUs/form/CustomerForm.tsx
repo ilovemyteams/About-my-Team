@@ -164,6 +164,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             <PolicyLabel />
                         </div>
                         <SubmitButton
+                            id="order-send-button"
                             isActiveLoader={isSubmitting}
                             isDisabled={!(dirty && isValid) || isSubmitting}
                             title={getTranslation("submitButton")}
