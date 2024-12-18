@@ -9,6 +9,7 @@ export const MenuFooter = () => {
         { name: getTranslation("breadcrumbItemHome"), path: "" },
         { name: getTranslation("breadcrumbItemAbout"), path: "about" },
         { name: getTranslation("breadcrumbItemServices"), path: "services" },
+        { name: getTranslation("breadcrumbItemIvents"), path: "events" },
         { name: getTranslation("breadcrumbItemFaq"), path: "faq" },
     ];
     return (
