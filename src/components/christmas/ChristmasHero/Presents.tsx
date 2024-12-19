@@ -108,7 +108,11 @@ export const Presents = () => {
                 onOpenNextStep={onOpenConfirmModal}
                 discount={discount.current}
             />
-            <ConfirmModal isOpen={openConfirm} onClose={onCloseConfirmModal} />
+            <ConfirmModal
+                isOpen={openConfirm}
+                onClose={onCloseConfirmModal}
+                discount={discount.current}
+            />
         </>
     );
 };

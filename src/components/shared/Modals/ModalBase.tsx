@@ -16,6 +16,7 @@ interface ModalBaseProps {
     animationType?: "tween" | "spring";
     appearance?: "center" | "up";
     isCloseBtnVisible?: boolean;
+    isScrollBlock?: boolean;
 }
 
 export const ModalBase = ({
@@ -28,11 +29,14 @@ export const ModalBase = ({
     appearance = "up",
     isCloseBtnVisible = true,
     children,
+    isScrollBlock = false,
 }: PropsWithChildren<ModalBaseProps>) => {
     const screenSizeName = useScreenSize();
     const { mobileName } = SCREEN_NAMES;
 
     const modalTranslate = screenSizeName === mobileName ? "0%" : "-50%";
+
+    const scrollStyle = "overflow-y-auto scroll";
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
@@ -103,7 +107,7 @@ export const ModalBase = ({
                             transition={{ duration: 0.5, type: animationType }}
                             aria-label="modal-window"
                             onClick={e => e.stopPropagation()}
-                            className={`max-h-[90dvh] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+                            className={`max-h-[90dvh] ${isScrollBlock ? "" : scrollStyle} bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
             -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
                         >
                             <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
