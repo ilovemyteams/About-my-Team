@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
 import { wishesData } from "@/src/mockedData/wishesData";
 import { wishRandomizer } from "@/src/utils/wishRandomizer";
 
+import { IconArrowPresent } from "../../shared/Icons/christmas/IconArrowPresent";
+import { IconArrowToys } from "../../shared/Icons/christmas/IconArrowToys";
 import { IconHeroTree } from "../../shared/Icons/christmas/IconHeroTree";
 import { IconPresentGrey } from "../../shared/Icons/christmas/IconPresentGrey";
 import { IconPresentPurple } from "../../shared/Icons/christmas/IconPresentPurple";
@@ -19,6 +21,7 @@ import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
 
 export const ChristmasTree = () => {
+    const getTranslation = useTranslations("Christmas");
     const [randomWishId, setRandomWishId] = useState<string | null>(null);
     useEffect(() => {
         setRandomWishId(wishRandomizer(wishesData));
@@ -26,8 +29,11 @@ export const ChristmasTree = () => {
 
     const locale = useLocale();
 
+    const captionTextStyle =
+        "text-xs tab:text-lg25 pc:text-base23 desk:text-xl28 text-purple-200 dark:text-white-100";
+
     return (
-        <div className=" flex justify-center tab:mt-[-22px] pc:mt-0">
+        <div className=" flex justify-center tab:mt-[-22px] pc:mt-0 desk:pl-[100px]">
             <div className="relative">
                 <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />{" "}
                 <Link
@@ -145,6 +151,24 @@ export const ChristmasTree = () => {
                     icon={IconPresentGrey}
                     iconStyle="scale-y-[1.2]"
                 />
+                <div className="absolute top-[-5%] left-0 w-[138px] tab:left-[65%] tab:top-[19%] tab:w-[250px] pc:w-[224px] pc:left-[-5%] desk:w-[276px] desk:left-[-13%] text-center">
+                    <p className={captionTextStyle}>
+                        {getTranslation("clickToys")}
+                    </p>
+                    <IconArrowToys
+                        className="absolute top-[110%] left-[40%] w-[75px] tab:w-[80px] tab:top-[90%] tab:left-[10%] tab:scale-x-[-1] tab:rotate-[10deg] 
+                    pc:scale-x-[1] pc:rotate-[-20deg] pc:top-[85%] pc:left-[68%] desk:w-[97px] h-auto"
+                    />
+                </div>
+                <div className="absolute bottom-[-15%] left-[20%] w-[172px] tab:bottom-[37%] tab:left-[-10%] tab:w-[207px] pc:w-[186px] desk:w-[236px] desk:left-[-13%] text-center">
+                    <p className={captionTextStyle}>
+                        {getTranslation("clickPresents")}
+                    </p>
+                    <IconArrowPresent
+                        className="absolute bottom-[90%] left-[30%] w-[100px] tab:w-[150px] tab:bottom-[-19%]  tab:left-[55%]
+                    tab:rotate-[90deg] tab:translate-x-[-60%] tab:translate-y-[105%] desk:w-[180px] h-auto"
+                    />
+                </div>
             </div>
         </div>
     );
