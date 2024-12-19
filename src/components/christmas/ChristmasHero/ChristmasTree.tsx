@@ -9,16 +9,13 @@ import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { IconArrowPresent } from "../../shared/Icons/christmas/IconArrowPresent";
 import { IconArrowToys } from "../../shared/Icons/christmas/IconArrowToys";
 import { IconHeroTree } from "../../shared/Icons/christmas/IconHeroTree";
-import { IconPresentGrey } from "../../shared/Icons/christmas/IconPresentGrey";
-import { IconPresentPurple } from "../../shared/Icons/christmas/IconPresentPurple";
-import { IconPresentViolet } from "../../shared/Icons/christmas/IconPresentViolet";
 import { IconToyBlue } from "../../shared/Icons/christmas/IconToyBlue";
 import { IconToyWithCurves } from "../../shared/Icons/christmas/IconToyWithCurves";
 import { IconToyWithLines } from "../../shared/Icons/christmas/IconToyWithLines";
 import { IconTreeStar } from "../../shared/Icons/christmas/IconTreeStar";
 import { IconToyWithSnow } from "../../shared/Icons/IconToyWithSnow";
-import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
+import { Presents } from "./Presents";
 
 export const ChristmasTree = () => {
     const getTranslation = useTranslations("Christmas");
@@ -95,62 +92,7 @@ export const ChristmasTree = () => {
                     className="rotate-[9deg] bottom-[26%] left-[27%] w-[22px] tab:w-[42px] desk:w-[54px] "
                     isIconRevert={true}
                 />
-                <ChristmasPresentButton
-                    id="greyPresentMiddle"
-                    className="bottom-[8%] left-[29%] w-[57px] tab:w-[104px] desk:w-[116px]"
-                    icon={IconPresentGrey}
-                />
-                <ChristmasPresentButton
-                    id="greyPresentLeft"
-                    className="bottom-[7.5%] left-[9%] w-[53px] tab:w-[99px] desk:w-[108px]"
-                    icon={IconPresentGrey}
-                    iconStyle="scale-y-[1.2] scale-x-[0.9] skew-y-[10deg] rotate-[20deg]"
-                />
-                <ChristmasPresentButton
-                    id="purplePresentRight"
-                    className="bottom-[5%] right-[11%] w-[34px] tab:w-[65px] desk:w-[85px]"
-                    icon={IconPresentPurple}
-                    iconStyle="rotate-[-15deg]"
-                />
-                <ChristmasPresentButton
-                    id="purplePresentMiddle"
-                    className="bottom-[14%] right-[40%] w-[25px] tab:w-[35px] desk:w-[56px]"
-                    icon={IconPresentPurple}
-                    iconStyle="rotate-[15deg] scale-y-[1.1]"
-                />
-                <ChristmasPresentButton
-                    id="purplePresentLeft"
-                    className="bottom-[5%] left-[8%] w-[20px] tab:w-[34px] desk:w-[43px]"
-                    icon={IconPresentPurple}
-                />
-                <ChristmasPresentButton
-                    id="greyPresentWider"
-                    className="bottom-[10%] right-[31%] w-[38px] tab:w-[64px] desk:w-[77px]"
-                    icon={IconPresentGrey}
-                    iconStyle="rotate-[20deg] scale-x-[1.1]"
-                />
-                <ChristmasPresentButton
-                    id="violetPresentMiddle"
-                    className="bottom-[8%] right-[48%] w-[33px] tab:w-[60px] desk:w-[76px]"
-                    icon={IconPresentViolet}
-                />
-                <ChristmasPresentButton
-                    id="violetPresentLeft"
-                    className="bottom-[5%] left-[21%] w-[43px] tab:w-[76px] desk:w-[86px]"
-                    icon={IconPresentViolet}
-                />
-                <ChristmasPresentButton
-                    id="violetPresentRight"
-                    className="bottom-[8%] right-[19%] w-[43px] tab:w-[79px] desk:w-[89px]"
-                    icon={IconPresentViolet}
-                    iconStyle="rotate-[10deg] scale-y-[1.2]"
-                />
-                <ChristmasPresentButton
-                    id="greyPresentCenter"
-                    className="bottom-[6%] right-[40%] w-[36px] tab:w-[66px] desk:w-[70px]"
-                    icon={IconPresentGrey}
-                    iconStyle="scale-y-[1.2]"
-                />
+                <Presents />
                 <div className="absolute top-[-5%] left-0 w-[138px] tab:left-[65%] tab:top-[19%] tab:w-[250px] pc:w-[224px] pc:left-[-5%] desk:w-[276px] desk:left-[-13%] text-center">
                     <p className={captionTextStyle}>
                         {getTranslation("clickToys")}

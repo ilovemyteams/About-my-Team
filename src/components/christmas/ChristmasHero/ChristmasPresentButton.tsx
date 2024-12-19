@@ -1,6 +1,6 @@
 "use client";
 
-import { ComponentType, useState } from "react";
+import { ComponentType } from "react";
 
 import { IconProps } from "@/types/iconProps.interface";
 
@@ -9,6 +9,7 @@ interface ChristmasPresentButtonProps {
     className: string;
     icon: ComponentType<IconProps>;
     iconStyle?: string;
+    onClick: () => void;
 }
 
 export const ChristmasPresentButton = ({
@@ -16,12 +17,10 @@ export const ChristmasPresentButton = ({
     icon: Icon,
     id,
     iconStyle,
+    onClick,
 }: ChristmasPresentButtonProps) => {
-    const [openModal, setOpenModal] = useState(false);
     const onClickBtn = () => {
-        //Logic for clock on tree toys
-        console.log(openModal);
-        setOpenModal(true);
+        onClick();
     };
 
     return (
