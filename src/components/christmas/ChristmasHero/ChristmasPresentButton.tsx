@@ -4,22 +4,23 @@ import { ComponentType } from "react";
 
 import { IconProps } from "@/types/iconProps.interface";
 
-interface ChristmasToyButtonProps {
+interface ChristmasPresentButtonProps {
     id: string;
     className: string;
     icon: ComponentType<IconProps>;
-    isIconRevert?: boolean;
+    iconStyle?: string;
 }
 
-export const ChristmasToyButton = ({
+export const ChristmasPresentButton = ({
     className,
-    id,
     icon: Icon,
-    isIconRevert = false,
-}: ChristmasToyButtonProps) => {
+    id,
+    iconStyle,
+}: ChristmasPresentButtonProps) => {
     const onClickBtn = () => {
         //Logic for clock on tree toys
     };
+
     return (
         <button
             onClick={onClickBtn}
@@ -27,9 +28,7 @@ export const ChristmasToyButton = ({
             aria-label={id}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className}`}
         >
-            <Icon
-                className={`w-full h-auto ${isIconRevert ? "scale-x-[-1]" : ""}`}
-            />
+            <Icon className={`w-full h-auto ${iconStyle || ""}`} />
         </button>
     );
 };

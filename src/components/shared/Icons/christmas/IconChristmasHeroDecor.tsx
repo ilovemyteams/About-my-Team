@@ -1,6 +1,6 @@
 "use client";
 
-import { IconProps } from "../../../../types/iconProps.interface";
+import { IconProps } from "@/types/iconProps.interface";
 
 export const IconChristmasHeroDecor = ({ className }: IconProps) => {
     return (

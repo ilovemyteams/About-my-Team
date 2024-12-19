@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 
-import { IconBorderCurve } from "../../shared/Icons/IconBorderCurve";
+import { IconBorderCurve } from "../../shared/Icons/christmas/IconBorderCurve";
 
 export const WinLandingBtn = () => {
     const getTranslation = useTranslations("Christmas");
