@@ -1,5 +1,5 @@
 const MIN_DISCOUNT = 5;
-const MAX_DISCOUNT = 20;
+const MAX_DISCOUNT = 15;
 
 export const generateRandomDiscount = () => {
     return Math.floor(
