@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 import { IconArrowPresent } from "../../shared/Icons/christmas/IconArrowPresent";
@@ -10,11 +11,10 @@ import { IconPresentViolet } from "../../shared/Icons/christmas/IconPresentViole
 import { IconToyBlue } from "../../shared/Icons/christmas/IconToyBlue";
 import { IconToyWithCurves } from "../../shared/Icons/christmas/IconToyWithCurves";
 import { IconToyWithLines } from "../../shared/Icons/christmas/IconToyWithLines";
+import { IconTreeStar } from "../../shared/Icons/christmas/IconTreeStar";
 import { IconToyWithSnow } from "../../shared/Icons/IconToyWithSnow";
 import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
-import { useTranslations } from "next-intl";
-import { IconTreeStar } from "../../shared/Icons/christmas/IconTreeStar";
 
 export const ChristmasTree = () => {
     // width of tree is not matched by design for huge screens
