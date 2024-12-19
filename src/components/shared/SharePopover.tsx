@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import {
     Button,
     Popover,
@@ -68,6 +69,12 @@ export const SharePopover = ({
             <PopoverTrigger>
                 <button
                     aria-label="share button"
+                    onClick={() =>
+                        sendGTMEvent({
+                            event: "share_button_clicked",
+                            value: "Share button clicked",
+                        })
+                    }
                     className={`bg-transparent h-12 min-w-12 justify-center items-center focus:outline-none px-0 flex gap-2 font-caviar tab:text-lg dark:pc:hover:text-red pc:hover:text-redLight
                     dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight ${className}`}
                 >
@@ -94,7 +101,15 @@ export const SharePopover = ({
                     </p>
                     <div className=" h-12 border border-purple-strokeLight dark:border-purple-stroke">
                         <ul className="flex ">
-                            <li className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
+                            <li
+                                onClick={() =>
+                                    sendGTMEvent({
+                                        event: "telegram_share_button_clicked",
+                                        value: "Telegram share button clicked",
+                                    })
+                                }
+                                className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
+                            >
                                 <TelegramShareButton
                                     id="telegram-share-button"
                                     url={urlShare}
@@ -103,7 +118,15 @@ export const SharePopover = ({
                                     <IconTelegram />
                                 </TelegramShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
+                            <li
+                                onClick={() =>
+                                    sendGTMEvent({
+                                        event: "facebook_share_button_clicked",
+                                        value: "Facebook share button clicked",
+                                    })
+                                }
+                                className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
+                            >
                                 <FacebookShareButton
                                     id="facebook-share-button"
                                     url={urlShare}
@@ -112,7 +135,15 @@ export const SharePopover = ({
                                     <IconFacebook />
                                 </FacebookShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke">
+                            <li
+                                onClick={() =>
+                                    sendGTMEvent({
+                                        event: "linkedin_share_button_clicked",
+                                        value: "Linkedin share button clicked",
+                                    })
+                                }
+                                className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
+                            >
                                 <LinkedinShareButton
                                     id="linkedin-share-button"
                                     url={urlShare}
@@ -121,7 +152,15 @@ export const SharePopover = ({
                                     <IconLinkedin className="w-6 h-6" />
                                 </LinkedinShareButton>
                             </li>
-                            <li className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center text-purple-130 dark:text-purple-50">
+                            <li
+                                onClick={() =>
+                                    sendGTMEvent({
+                                        event: "whatsapp_share_button_clicked",
+                                        value: "Whatsapp share button clicked",
+                                    })
+                                }
+                                className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center text-purple-130 dark:text-purple-50"
+                            >
                                 <WhatsappShareButton
                                     id="whatsapp-share-button"
                                     url={urlShare}
