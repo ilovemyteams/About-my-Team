@@ -10,9 +10,10 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();
     const pathname = usePathname();
     const locale = useLocale();
-    const PREVIOUSURL = `/${locale}/events`;
+    const PREVIOUSURL = `/${locale}/events#tree`;
 
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false); // Модалка починається закритою
+    const [isVisible, setIsVisible] = useState(false); // Стан для анімації
 
     useEffect(() => {
         const closeModal = () => {
@@ -20,13 +21,17 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                 setIsModalOpen(false);
             } else {
                 setIsModalOpen(true);
+                setTimeout(() => setIsVisible(true), 50); // Додаємо невелику затримку для плавної появи
             }
         };
 
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                router.push(PREVIOUSURL);
-                setIsModalOpen(false);
+                setIsVisible(false); // Почати анімацію закриття
+                setTimeout(() => {
+                    router.push(PREVIOUSURL);
+                    setIsModalOpen(false);
+                }, 300); // Час відповідає тривалості анімації
             }
         };
 
@@ -42,20 +47,27 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
     if (!isModalOpen) return null;
 
     const handleClose = () => {
-        router.push(PREVIOUSURL);
-        setIsModalOpen(false);
+        setIsVisible(false); // Почати анімацію закриття
+        setTimeout(() => {
+            router.push(PREVIOUSURL);
+            setIsModalOpen(false);
+        }, 300); // Час відповідає тривалості анімації
     };
 
     return (
         <div>
             <div
                 onClick={handleClose}
-                className="w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll"
+                className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll transition-opacity duration-300 ${
+                    isVisible ? "opacity-100" : "opacity-0"
+                }`}
             >
                 <div
                     onClick={e => e.stopPropagation()}
-                    className="p-0 min-w-[281px] w-[90vw] tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] pc:max-w-[660px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
-            -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent scroll"
+                    className={`p-0 min-w-[281px] w-[90vw] tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] pc:max-w-[660px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
+                    -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent transition-transform duration-300 ${
+                        isVisible ? "scale-100" : "scale-95"
+                    }`}
                 >
                     <div className="h-auto relative ">
                         <button
@@ -65,7 +77,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                         >
                             <IconCloseX className="stroke-[3px] size-6" />
                         </button>
-                        <div className=" relative">
+                        <div className="relative">
                             <Image
                                 src="/images/christmas/envelope.png"
                                 alt="envelopeAlt"

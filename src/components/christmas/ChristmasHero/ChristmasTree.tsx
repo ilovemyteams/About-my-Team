@@ -24,7 +24,10 @@ export const ChristmasTree = () => {
     const getTranslation = useTranslations("Christmas");
 
     return (
-        <div className=" flex justify-center tab:mt-[-22px] pc:mt-0 desk:pl-[100px]">
+        <div
+            id="tree"
+            className="scroll-mt-[90px] pc:scroll-mt-[30px] flex justify-center tab:mt-[-22px] pc:mt-0 desk:pl-[100px]"
+        >
             <div className="relative">
                 <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />
                 <ChristmasToyButton
