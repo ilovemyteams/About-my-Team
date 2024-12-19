@@ -10,11 +10,11 @@ import { IconPresentViolet } from "../../shared/Icons/christmas/IconPresentViole
 import { IconToyBlue } from "../../shared/Icons/christmas/IconToyBlue";
 import { IconToyWithCurves } from "../../shared/Icons/christmas/IconToyWithCurves";
 import { IconToyWithLines } from "../../shared/Icons/christmas/IconToyWithLines";
-import { IconTreeStar } from "../../shared/Icons/christmas/IconTreeStar";
 import { IconToyWithSnow } from "../../shared/Icons/IconToyWithSnow";
 import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
 import { useTranslations } from "next-intl";
+import { IconTreeStar } from "../../shared/Icons/christmas/IconTreeStar";
 
 export const ChristmasTree = () => {
     // width of tree is not matched by design for huge screens
@@ -30,7 +30,7 @@ export const ChristmasTree = () => {
                 <ChristmasToyButton
                     id="christmas-tree-star"
                     icon={IconTreeStar}
-                    className="absolute w-[34px] h-auto top-0 left-[50%] translate-x-[-50%] translate-y-[-90%] tab:w-[63px] desk:w-[65px] "
+                    className="absolute w-[34px] h-auto top-[9.5%] left-[43.4%] tab:w-[63px] desk:w-[65px]"
                 />
                 <ChristmasToyButton
                     id="blueBaubleSmall"
