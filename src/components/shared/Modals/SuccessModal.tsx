@@ -6,15 +6,14 @@ import {
     ModalHeader,
     useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
 import { IconCloseX } from "../Icons/IconCloseX";
-import { IconHeart } from "../Icons/IconHeart";
 import { BgImagesDesktop } from "./modalBgImages/notificationModals/BgImagesDesktop";
 import { BgImagesMobile } from "./modalBgImages/notificationModals/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/notificationModals/BgImagesTablet";
-import Image from "next/image";
 
 interface SuccessModalProps {
     isShown: boolean;
