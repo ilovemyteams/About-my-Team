@@ -497,7 +497,7 @@ const config: Config = {
                 linesColor: "linesColor 3000ms ease-in infinite",
                 wave: "wave 20s ease-in-out infinite",
                 wobble: "scale .7s ease-in infinite",
-                glow: "glow 3s ease-in-out infinite",
+                glow: "glow 2s ease-in-out infinite",
                 glowLights: "glow 500ms ease-in infinite",
             },
         },
