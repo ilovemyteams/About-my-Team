@@ -8,7 +8,7 @@ import { Button } from "../shared/Button";
 import { Section } from "../shared/Section";
 import { SharePopover } from "../shared/SharePopover";
 import { QuestionsList } from "./QuestionsList";
-import { TitleQA } from "./TitleQa/TitleQA";
+import { TitleQA } from "./TitleQA";
 
 export const QaSection = () => {
     const { ref, inView } = useInView({
@@ -28,7 +28,7 @@ export const QaSection = () => {
                 <div className="flex">
                     <TitleQA />
                     <SharePopover
-                        className="absolute top-3 right-4 tab:top-0 tab:right-4 pc:right-[60px]"
+                        className="absolute -top-3 right-4 tab:top-[-4px] tab:right-6 pc:top-0 pc:right-[60px]"
                         id="faq"
                         trigerShowShareText={true}
                     />

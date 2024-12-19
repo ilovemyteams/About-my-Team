@@ -10,26 +10,15 @@
     },
     "Portfolio": {
         "pageTitle": "Портфоліо",
-        "titlePartForMob": "розвивати ідеї та бізнес нашим ",
-        "titleFirstWord": "Реалізовані ",
-        "titleSecondWord": "проєкти",
-        "titleThirdWord": " які вже ",
-        "titleFourthWord": "допомагають ",
-        "titleFifthWord": "розвивати ",
-        "titleFifthWordDesk": "розвивати ідеї",
-        "titleSixthWord": "ідеї та бізнес нашим ",
-        "titleSixthWordDesk": "та бізнес нашим ",
-        "titleSeventhWord": "замовникам"
+        "titleFirstLine": "Реалізовані <purple>проєкти</purple>, ",
+        "titleSecondLine": "які вже <purple>допомагають</purple> розвивати ",
+        "titleThirdLine": "ідеї та бізнес нашим <purple>замовникам</purple>"
     },
     "Mission": {
         "pageTitle": "Про нас",
-        "titleZeroWord": "",
-        "titleFirstWord": "Створюємо ",
-        "titleSecondWord": "вражаючі ",
-        "titleThirdWord": "цифрові",
-        "titleFourthWord": " продукти ",
-        "titleFifthWord": "разом",
-        "titleOtherWords": " з ідеальною командою",
+        "titleFirstLine": "Створюємо <purple>вражаючі</purple> ",
+        "titleSecondLine": "цифрові <purple>продукти</purple> ",
+        "titleThirdLine": "<purple>разом</purple> з ідеальною командою",
         "firstBenefit": "Дизайн, розробка і тестування - це лише частина нашої роботи. Наші команди здатні на значно більше, коли разом",
         "secondBenefit": "Ми пропонуємо комплексні рішення для бізнесу",
         "thirdBenefit": "Працюючи з нами, ви економите час та гроші, бо ми від старту вже високоефективна команда",
@@ -41,10 +30,9 @@
     },
     "Feedback": {
         "pageTitle": "Відгуки",
-        "titleFirstWord": "Що про нас ",
-        "titleSecondWord": "говорять ",
-        "titleThirdWord": "наші ",
-        "titleFourthWord": "клієнти",
+        "titleFirstLine": "Що про нас <purple>говорять</purple> ",
+        "titleSecondLine": "наші <purple>клієнти</purple>",
+
         "feedbackLink": "Весь відгук"
     },
     "JoinTheTeam": {
@@ -55,9 +43,8 @@
     },
     "Services": {
         "pageTitle": "Послуги",
-        "titleFirstRow1": "Розробляємо",
-        "titleFirstRow2": " цифрові продукти",
-        "titleSecondRow": "для вашого бізнесу",
+        "titleFirstLine": "Розробляємо <purple>цифрові продукти</purple> ",
+        "titleSecondLine": "для вашого бізнесу",
         "BATitle": "Бізнес-аналіз",
         "BAText": "Аналітика допомагає бізнесу будувати роботу та розвиватись на фактах, а не на здогадах чи інтуїції",
         "designTitle": "Дизайн",
@@ -145,13 +132,8 @@
         "readTime": "{readTime} хв читати"
     },
     "Footer": {
-        "titleFirstWord": "Починайте ",
-        "titleSecondWord": "втілення ",
-        "titleThirdWord": "своїх ",
-        "titleFourthWord": "",
-        "titleFifthWord": "бізнес-ідей ",
-        "titleSixthWord": "разом ",
-        "titleSeventhWord": "з нами",
+        "titleFirstLine": "Починайте <purple>втілення</purple> своїх ",
+        "titleSecondLine": "<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
         "privacyPolicy": "політика конфіденційності",
         "copyright": "2024, i love my team"
     },
