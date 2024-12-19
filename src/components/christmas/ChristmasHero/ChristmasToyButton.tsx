@@ -1,12 +1,12 @@
 "use client";
 
+import Link from "next/link";
+import { useLocale } from "next-intl";
 import { ComponentType, useEffect, useState } from "react";
 
-import { IconProps } from "@/types/iconProps.interface";
-import Link from "next/link";
-import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { wishesData } from "@/src/mockedData/wishesData";
-import { useLocale } from "next-intl";
+import { wishRandomizer } from "@/src/utils/wishRandomizer";
+import { IconProps } from "@/types/iconProps.interface";
 
 interface ChristmasToyButtonProps {
     id: string;
