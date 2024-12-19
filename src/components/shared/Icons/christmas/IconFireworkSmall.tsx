@@ -8,7 +8,7 @@ export const IconFireworkSmall = ({ className }: IconProps) => {
             viewBox="0 0 163 197"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={className}
+            className={`${className} animate-glow`}
             aria-label="christmas decoration icon"
         >
             <g className="mix-blend-mode:screen" opacity="0.9">
