@@ -26,7 +26,7 @@ export const ChristmasCustomField = ({
 
     const heightStyles =
         type === "textarea"
-            ? "h-[48px] pc:h-[68px] pt-[26px]"
+            ? "h-[48px] pc:h-[68px] pt-[26px] pc:pt-[46px]"
             : "h-[28px] pt-[6px] ";
 
     const borderAndColorStyles = isError
