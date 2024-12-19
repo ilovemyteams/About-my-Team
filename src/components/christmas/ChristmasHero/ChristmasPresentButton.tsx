@@ -9,6 +9,7 @@ interface ChristmasPresentButtonProps {
     className: string;
     icon: ComponentType<IconProps>;
     iconStyle?: string;
+    onClick: () => void;
 }
 
 export const ChristmasPresentButton = ({
@@ -16,9 +17,10 @@ export const ChristmasPresentButton = ({
     icon: Icon,
     id,
     iconStyle,
+    onClick,
 }: ChristmasPresentButtonProps) => {
     const onClickBtn = () => {
-        //Logic for clock on tree toys
+        onClick();
     };
 
     return (

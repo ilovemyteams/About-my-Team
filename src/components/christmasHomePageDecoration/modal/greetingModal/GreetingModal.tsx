@@ -1,8 +1,9 @@
 "use client";
-import Link from "next/link";
+
 import { useTranslations } from "next-intl";
 
 import { ColoredText } from "@/src/components/christmas/shared/ColoredText";
+import { Link } from "@/src/navigation";
 
 import { Button } from "../../../shared/Button";
 import { IconCloseX } from "../../../shared/Icons/IconCloseX";

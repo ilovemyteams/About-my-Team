@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import { generateRandomDiscount } from "@/src/utils/generateRandomDiscount";
-
 import { IconRibbon } from "../../shared/Icons/christmas/IconRibbon";
 import { ModalBase } from "../../shared/Modals/ModalBase";
 import { Background } from "./Background";
@@ -11,20 +9,20 @@ interface DiscountModalProps {
     isOpen: boolean;
     onClose: () => void;
     onOpenNextStep: () => void;
+    discount: number | null;
 }
 
 export const DiscountModal = ({
     isOpen,
     onClose,
     onOpenNextStep,
+    discount,
 }: DiscountModalProps) => {
     const getTranslation = useTranslations("Christmas");
 
     const onCloseDiscountModal = () => {
         onClose();
     };
-
-    const discount = generateRandomDiscount();
 
     const onClickNextStep = () => {
         onOpenNextStep();
@@ -44,7 +42,7 @@ export const DiscountModal = ({
             <div className="relative z-[10] tab:pt-[60px] tab:pb-[20px] text-center">
                 {/* add adaptive value */}
                 <p className="font-caviar dark:text-white-200 text-purple-200 font-bold leading-none text-[100px] ">
-                    -{discount}%
+                    -{discount || 5}%
                 </p>
                 <h3 className="dark:text-white-200 text-purple-200 text-2xl mb-[64px]">
                     {getTranslation("discountTitle")}
