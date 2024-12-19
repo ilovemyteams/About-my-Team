@@ -1,6 +1,6 @@
 "use client";
 
-import { ComponentType } from "react";
+import { ComponentType, useState } from "react";
 
 import { IconProps } from "@/types/iconProps.interface";
 
@@ -17,8 +17,11 @@ export const ChristmasPresentButton = ({
     id,
     iconStyle,
 }: ChristmasPresentButtonProps) => {
+    const [openModal, setOpenModal] = useState(false);
     const onClickBtn = () => {
         //Logic for clock on tree toys
+        console.log(openModal);
+        setOpenModal(true);
     };
 
     return (
