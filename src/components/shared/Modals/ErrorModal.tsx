@@ -49,7 +49,7 @@ export const ErrorModal = ({ isShown, closeFn }: ErrorModalProps) => {
                 backdrop: "bg-backdrop bg-opacity-0",
             }}
         >
-            <ModalContent className="relative w-full h-full m-0">
+            <ModalContent className="relative w-full h-full m-0  pc:ml-[80px] desk:ml-[120px]">
                 <BgImagesMobile />
                 <BgImagesTablet />
                 <BgImagesDesktop />
@@ -65,7 +65,6 @@ export const ErrorModal = ({ isShown, closeFn }: ErrorModalProps) => {
                     </button>
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
-                    some text
                     <h3
                         className={`font-caviar text-3xl text-purple-200 dark:text-white-200 mt-6 mb-4 tab:text-4xl pc:text-5xl`}
                     >
