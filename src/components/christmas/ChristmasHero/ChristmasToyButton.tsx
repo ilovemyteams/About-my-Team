@@ -1,10 +1,9 @@
 "use client";
 
-import { Link } from "@/src/navigation";
-import { useLocale } from "next-intl";
 import { ComponentType, useEffect, useState } from "react";
 
 import { wishesData } from "@/src/mockedData/wishesData";
+import { Link } from "@/src/navigation";
 import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { IconProps } from "@/types/iconProps.interface";
 
@@ -26,7 +25,6 @@ export const ChristmasToyButton = ({
         setRandomWishId(wishRandomizer(wishesData));
     }, []);
 
-    const locale = useLocale();
     return (
         <Link
             href={`/events/wish/${randomWishId}`}
