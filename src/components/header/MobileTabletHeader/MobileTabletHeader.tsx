@@ -1,6 +1,8 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useState } from "react";
+
+import { Link } from "@/src/navigation";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";

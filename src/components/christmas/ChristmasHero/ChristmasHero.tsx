@@ -1,5 +1,5 @@
-import { IconChristmasHeroDecor } from "../../shared/Icons/IconChristmasHeroDecor";
-import { IconLight } from "../../shared/Icons/IconLight";
+import { IconChristmasHeroDecor } from "../../shared/Icons/christmas/IconChristmasHeroDecor";
+import { IconLight } from "../../shared/Icons/christmas/IconLight";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { PageSection } from "../../shared/PageSection";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
@@ -20,7 +20,7 @@ export const ChristmasHero = () => {
                     <LocaleSwitcher />
                     <ThemeSwitcher id="HeroSectionThemeSwitcher" />
                 </div>
-                <div className="pc:flex pc:flex-row-reverse justify-between pc:pt-[160px]">
+                <div className="pc:flex pc:flex-row-reverse justify-between pc:pt-[45px]">
                     <GreetingText />
                     <ChristmasTree />
                 </div>
