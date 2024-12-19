@@ -1,5 +1,10 @@
 "use client";
-import React from "react";
+import Link from "next/link";
+import { useLocale } from "next-intl";
+import React, { useEffect, useState } from "react";
+
+import { wishesData } from "@/src/mockedData/wishesData";
+import { wishRandomizer } from "@/src/utils/wishRandomizer";
 
 import { IconHeroTree } from "../../shared/Icons/christmas/IconHeroTree";
 import { IconPresentGrey } from "../../shared/Icons/christmas/IconPresentGrey";
@@ -14,11 +19,23 @@ import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
 
 export const ChristmasTree = () => {
+    const [randomWishId, setRandomWishId] = useState<string | null>(null);
+    useEffect(() => {
+        setRandomWishId(wishRandomizer(wishesData));
+    }, []);
+
+    const locale = useLocale();
+
     return (
         <div className=" flex justify-center tab:mt-[-22px] pc:mt-0">
             <div className="relative">
-                <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />
-                <IconTreeStar className="absolute w-[34px] h-auto top-[9.5%] left-[43.4%] tab:w-[63px] desk:w-[65px]" />
+                <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />{" "}
+                <Link
+                    href={`/${locale}/events/wish/${randomWishId}`}
+                    onClick={() => console.log(randomWishId)}
+                >
+                    <IconTreeStar className="absolute w-[34px] h-auto top-[9.5%] left-[43.4%] tab:w-[63px] desk:w-[65px]" />
+                </Link>
                 <ChristmasToyButton
                     id="blueBaubleSmall"
                     icon={IconToyBlue}
@@ -77,28 +94,24 @@ export const ChristmasTree = () => {
                     className="bottom-[8%] left-[29%] w-[57px] tab:w-[104px] desk:w-[116px]"
                     icon={IconPresentGrey}
                 />
-
                 <ChristmasPresentButton
                     id="greyPresentLeft"
                     className="bottom-[7.5%] left-[9%] w-[53px] tab:w-[99px] desk:w-[108px]"
                     icon={IconPresentGrey}
                     iconStyle="scale-y-[1.2] scale-x-[0.9] skew-y-[10deg] rotate-[20deg]"
                 />
-
                 <ChristmasPresentButton
                     id="purplePresentRight"
                     className="bottom-[5%] right-[11%] w-[34px] tab:w-[65px] desk:w-[85px]"
                     icon={IconPresentPurple}
                     iconStyle="rotate-[-15deg]"
                 />
-
                 <ChristmasPresentButton
                     id="purplePresentMiddle"
                     className="bottom-[14%] right-[40%] w-[25px] tab:w-[35px] desk:w-[56px]"
                     icon={IconPresentPurple}
                     iconStyle="rotate-[15deg] scale-y-[1.1]"
                 />
-
                 <ChristmasPresentButton
                     id="purplePresentLeft"
                     className="bottom-[5%] left-[8%] w-[20px] tab:w-[34px] desk:w-[43px]"

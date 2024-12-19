@@ -16,6 +16,7 @@ export const ChristmasQuestionnaire = () => {
         setIsError(false);
         setIsNotificationShawn(false);
     };
+
     const notificationHandler = async (submitFn: SubmitFnType) => {
         try {
             await submitFn();
@@ -27,6 +28,7 @@ export const ChristmasQuestionnaire = () => {
         }
     };
     const getTranslation = useTranslations("Christmas");
+
     return (
         <PageSection id="form" className="pb-[80px] text-purple-200">
             <div className=" relative bg-memberMenuGradientLight mx-auto w-full min-h-full min-w-[288px] max-w-[726px] p-2 tab:p-4">
