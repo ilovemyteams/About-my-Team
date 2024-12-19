@@ -1,11 +1,11 @@
-export type GreetingProp = {
+export type WishProp = {
     id: string;
     ua: string;
     pl: string;
     en: string;
 };
 
-export const greetingsData: GreetingProp[] = [
+export const wishesData: WishProp[] = [
     {
         id: "oranges-in-a-basket",
         ua: "Щоб ідеї приносили не тільки лайки, а й реальний прибуток!",
