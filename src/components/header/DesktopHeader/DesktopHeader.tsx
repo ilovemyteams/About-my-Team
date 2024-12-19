@@ -1,6 +1,8 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useState } from "react";
+
+import { Link } from "@/src/navigation";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
