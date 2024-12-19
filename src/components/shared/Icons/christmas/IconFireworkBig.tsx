@@ -7,7 +7,7 @@ export const IconFireworkBig = ({ className }: IconProps) => {
             height="410"
             viewBox="0 0 331 410"
             fill="none"
-            className={className}
+            className={`${className} animate-glow`}
             aria-label="christmas decoration icon"
             xmlns="http://www.w3.org/2000/svg"
         >

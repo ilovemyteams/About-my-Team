@@ -8,7 +8,7 @@ export const IconLight = ({ className }: IconProps) => {
             viewBox="0 0 798 465"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={className}
+            className={`${className} animate-glowLights`}
             aria-label="christmas lights decor"
         >
             <path
