@@ -1,10 +1,6 @@
 "use client";
-import Link from "next/link";
-import { useLocale, useTranslations } from "next-intl";
-import React, { useEffect, useState } from "react";
-
-import { wishesData } from "@/src/mockedData/wishesData";
-import { wishRandomizer } from "@/src/utils/wishRandomizer";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 import { IconArrowPresent } from "../../shared/Icons/christmas/IconArrowPresent";
 import { IconArrowToys } from "../../shared/Icons/christmas/IconArrowToys";
@@ -21,27 +17,21 @@ import { ChristmasPresentButton } from "./ChristmasPresentButton";
 import { ChristmasToyButton } from "./ChristmasToyButton";
 
 export const ChristmasTree = () => {
-    const getTranslation = useTranslations("Christmas");
-    const [randomWishId, setRandomWishId] = useState<string | null>(null);
-    useEffect(() => {
-        setRandomWishId(wishRandomizer(wishesData));
-    }, []);
-
-    const locale = useLocale();
+    // width of tree is not matched by design for huge screens
 
     const captionTextStyle =
         "text-xs tab:text-lg25 pc:text-base23 desk:text-xl28 text-purple-200 dark:text-white-100";
+    const getTranslation = useTranslations("Christmas");
 
     return (
         <div className=" flex justify-center tab:mt-[-22px] pc:mt-0 desk:pl-[100px]">
             <div className="relative">
-                <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />{" "}
-                <Link
-                    href={`/${locale}/events/wish/${randomWishId}`}
-                    onClick={() => console.log(randomWishId)}
-                >
-                    <IconTreeStar className="absolute w-[34px] h-auto top-[9.5%] left-[43.4%] tab:w-[63px] desk:w-[65px]" />
-                </Link>
+                <IconHeroTree className="w-full max-w-[320px] h-auto tab:max-w-full tab:w-[602px] pc:w-[597px] desk:w-[650px]" />
+                <ChristmasToyButton
+                    id="christmas-tree-star"
+                    icon={IconTreeStar}
+                    className="absolute w-[34px] h-auto top-[9.5%] left-[43.4%] tab:w-[63px] desk:w-[65px]"
+                />
                 <ChristmasToyButton
                     id="blueBaubleSmall"
                     icon={IconToyBlue}

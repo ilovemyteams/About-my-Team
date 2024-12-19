@@ -1,7 +1,10 @@
 "use client";
 
-import { ComponentType } from "react";
+import { ComponentType, useEffect, useState } from "react";
 
+import { wishesData } from "@/src/mockedData/wishesData";
+import { Link } from "@/src/navigation";
+import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { IconProps } from "@/types/iconProps.interface";
 
 interface ChristmasToyButtonProps {
@@ -17,12 +20,14 @@ export const ChristmasToyButton = ({
     icon: Icon,
     isIconRevert = false,
 }: ChristmasToyButtonProps) => {
-    const onClickBtn = () => {
-        //Logic for clock on tree toys
-    };
+    const [randomWishId, setRandomWishId] = useState<string | null>(null);
+    useEffect(() => {
+        setRandomWishId(wishRandomizer(wishesData));
+    }, []);
+
     return (
-        <button
-            onClick={onClickBtn}
+        <Link
+            href={`/events/wish/${randomWishId}`}
             id={id}
             aria-label={id}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className}`}
@@ -30,6 +35,6 @@ export const ChristmasToyButton = ({
             <Icon
                 className={`w-full h-auto ${isIconRevert ? "scale-x-[-1]" : ""}`}
             />
-        </button>
+        </Link>
     );
 };
