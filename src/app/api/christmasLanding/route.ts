@@ -4,12 +4,13 @@ import { sendDataToGoogleSheet } from "@/src/utils/sendDataToGoogleSheet";
 
 const SPREADSHEET_ID = process.env.NEXT_PUBLIC_LANDING_SPREADSHEET_ID || "";
 
-const RANGE = "Аркуш1!A2:F2";
+const RANGE = "Аркуш1!A2:G2";
 
 export async function POST(request: NextRequest) {
     const {
         name,
         email,
+        telegram,
         socialMediaLink,
         productOrService,
         whyLanding,
@@ -21,6 +22,7 @@ export async function POST(request: NextRequest) {
             await sendDataToGoogleSheet(SPREADSHEET_ID, RANGE, [
                 name,
                 email,
+                telegram,
                 socialMediaLink,
                 productOrService,
                 whyLanding,

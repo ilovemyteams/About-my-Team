@@ -51,7 +51,7 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                     "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
             }}
         >
-            <ModalContent className="relative w-full h-full m-0">
+            <ModalContent className="relative w-full h-full m-0 pc:ml-[80px] desk:ml-[120px]">
                 <BgImagesMobile />
                 <BgImagesTablet />
                 <BgImagesDesktop />
