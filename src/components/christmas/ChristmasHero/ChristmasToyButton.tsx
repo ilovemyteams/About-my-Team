@@ -12,12 +12,14 @@ interface ChristmasToyButtonProps {
     id: string;
     className: string;
     icon: ComponentType<IconProps>;
+    isIconRevert?: boolean;
 }
 
 export const ChristmasToyButton = ({
     className,
     id,
     icon: Icon,
+    isIconRevert = false,
 }: ChristmasToyButtonProps) => {
     const [randomWishId, setRandomWishId] = useState<string | null>(null);
     useEffect(() => {
@@ -32,7 +34,9 @@ export const ChristmasToyButton = ({
             aria-label={id}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className}`}
         >
-            <Icon className="w-full h-auto" />
+            <Icon
+                className={`w-full h-auto ${isIconRevert ? "scale-x-[-1]" : ""}`}
+            />
         </Link>
     );
 };

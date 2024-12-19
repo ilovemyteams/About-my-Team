@@ -1,4 +1,5 @@
-import { IconProps } from "../../../../types/iconProps.interface";
+import { IconProps } from "@/types/iconProps.interface";
+
 export const IconBorderCurve = ({ className }: IconProps) => {
     return (
         <svg

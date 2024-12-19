@@ -3,7 +3,7 @@ import React from "react";
 
 import { generateRandomDiscount } from "@/src/utils/generateRandomDiscount";
 
-import { IconRibbon } from "../../shared/Icons/IconRibbon";
+import { IconRibbon } from "../../shared/Icons/christmas/IconRibbon";
 import { ModalBase } from "../../shared/Modals/ModalBase";
 import { Background } from "./Background";
 

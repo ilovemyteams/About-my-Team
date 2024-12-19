@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { IconBorderCurve } from "../../shared/Icons/christmas/IconBorderCurve";
 
-import { IconBorderCurve } from "../../shared/Icons/IconBorderCurve";
 export const onClickBtnToWinForm = () => {
     const element = document.getElementById("form");
     if (element) {
