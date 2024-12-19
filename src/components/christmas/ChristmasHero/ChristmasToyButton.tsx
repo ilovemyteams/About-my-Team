@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/src/navigation";
 import { useLocale } from "next-intl";
 import { ComponentType, useEffect, useState } from "react";
 
@@ -29,7 +29,7 @@ export const ChristmasToyButton = ({
     const locale = useLocale();
     return (
         <Link
-            href={`/${locale}/events/wish/${randomWishId}`}
+            href={`/events/wish/${randomWishId}`}
             id={id}
             aria-label={id}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className}`}
