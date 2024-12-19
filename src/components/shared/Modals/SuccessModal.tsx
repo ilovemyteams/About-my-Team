@@ -14,6 +14,7 @@ import { IconHeart } from "../Icons/IconHeart";
 import { BgImagesDesktop } from "./modalBgImages/notificationModals/BgImagesDesktop";
 import { BgImagesMobile } from "./modalBgImages/notificationModals/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/notificationModals/BgImagesTablet";
+import Image from "next/image";
 
 interface SuccessModalProps {
     isShown: boolean;
@@ -73,7 +74,13 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                     <p className="text-base text-center">
                         {getTranslation("waitResponse")}
                     </p>
-                    <IconHeart className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8" />{" "}
+                    <Image
+                        src="/images/christmas/christmasHeart.png"
+                        alt="christmas Heart"
+                        width={178}
+                        height={161}
+                        className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8"
+                    />
                 </ModalBody>
             </ModalContent>
         </Modal>
