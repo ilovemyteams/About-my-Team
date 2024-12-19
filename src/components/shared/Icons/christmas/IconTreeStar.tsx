@@ -1,6 +1,6 @@
 import { IconProps } from "@/types/iconProps.interface";
 
-export const IconStar = ({ className }: IconProps) => {
+export const IconTreeStar = ({ className }: IconProps) => {
     return (
         <svg
             width="64"

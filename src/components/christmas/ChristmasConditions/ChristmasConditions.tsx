@@ -3,8 +3,8 @@ import { useLocale } from "next-intl";
 import { christmasData } from "@/src/mockedData/christmasData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { IconBaubles } from "../../shared/Icons/IconBaubles";
-import { IconFireworkBig } from "../../shared/Icons/IconFireworkBig";
+import { IconBaubles } from "../../shared/Icons/christmas/IconBaubles";
+import { IconFireworkBig } from "../../shared/Icons/christmas/IconFireworkBig";
 import { PageSection } from "../../shared/PageSection";
 import { ChristmasConditionItem } from "./ChristmasConditionItem";
 

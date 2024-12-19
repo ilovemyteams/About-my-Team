@@ -1,4 +1,4 @@
-import { IconFireworkSmall } from "../shared/Icons/IconFireworkSmall";
+import { IconFireworkSmall } from "../shared/Icons/christmas/IconFireworkSmall";
 import { PageSection } from "../shared/PageSection";
 import { ColoredText } from "./shared/ColoredText";
 
