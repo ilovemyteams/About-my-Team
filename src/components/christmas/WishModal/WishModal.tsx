@@ -58,18 +58,20 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
         <div>
             <div
                 onClick={handleClose}
+                arial-label="modal backdrop"
                 className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] transition-opacity duration-300 ${
                     isVisible ? "opacity-100" : "opacity-0"
                 }`}
             >
                 <div
                     onClick={e => e.stopPropagation()}
-                    className={`p-0 min-w-[281px] w-[90vw] tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] pc:max-w-[660px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
+                    aria-label="modal window"
+                    className={`p-0 min-w-[281px] w-[95vw] h-auto tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] aspect-[499/696] pc:max-w-[95vw] pc:w-auto pc:h-[95dvh] pc:max-h-[696px] desk:max-h-[826px] fixed top-1/2 left-1/2 
                     -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent transition-transform duration-300 ${
                         isVisible ? "scale-100" : "scale-95"
                     }`}
                 >
-                    <div className="h-auto relative ">
+                    <div className="h-auto relative">
                         <button
                             onClick={handleClose}
                             type="button"
@@ -84,7 +86,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                                 width={653}
                                 height={827}
                                 priority
-                                className="min-w-[281px] w-[80vw] tab:w-[47vw] max-w-[360px] h-auto mx-auto tab:min-w-[360px] tab:max-w-[500px] pc:max-w-[653px]"
+                                className="w-full mx-auto h-auto pc:max-h-full pc:h-full pc:w-auto"
                             />
                             {children}
                         </div>
