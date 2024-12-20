@@ -67,7 +67,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                     onClick={e => e.stopPropagation()}
                     aria-label="modal window"
                     className={`p-0 min-w-[281px] w-[95vw] h-auto tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] aspect-[499/696] pc:max-w-[95vw] pc:w-auto pc:h-[95dvh] pc:max-h-[696px] desk:max-h-[826px] fixed top-1/2 left-1/2 
-                    -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent ${
+                    -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent transition-transform duration-300 ${
                         isVisible ? "scale-100" : "scale-95"
                     }`}
                 >
