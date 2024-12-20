@@ -295,6 +295,7 @@
         "ctaBtn": "To participate",
         "discountTitle": "Ho-ho, congratulations, your discount for a comprehensive service!",
         "discountBtn": "Click to get it ",
+        "discountError": "You have already activated the discount! Expect our manager to contact you shortly",
         "confirmTitle": "Activation of the discount",
         "confirmText": "To get your bonus, fill in the fields below",
         "confirmCaption": "Activated discounts cannot be combined. The discount is valid until 28.02.2025.",
