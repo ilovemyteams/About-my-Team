@@ -36,7 +36,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 </h1>
                 <ColoredText
                     propName={"greetingText"}
-                    className="font-caviar text-base tab:text-lg pc:text-xl desk:text-2xl text-greyLight dark:text-grey mb-5 pc:mb-4"
+                    className="font-caviar text-baseb tab:text-lg pc:text-xl desk:text-2xl text-greyLight dark:text-grey mb-5 pc:mb-4"
                 />
                 <p className=" text-purple-130 dark:text-purple-100 mb-[35px] tab:mb-[25px] desk:text-lg25 text-sm tab:text-base desk:text-lg desk:font-[400] max-w-[80%] mx-auto">
                     {getTranslation("greetingCaption")}
