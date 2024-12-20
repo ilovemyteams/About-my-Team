@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { Link } from "@/src/navigation";
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
@@ -13,6 +13,7 @@ import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -35,13 +36,17 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
-                        <Link
-                            href="/events"
-                            aria-label="our Christmas event information page"
-                            onClick={() => setIsHeaderMenuOpened(false)}
-                        >
-                            <IconPresent />
-                        </Link>
+                        {pathname && !pathname.includes("events") && (
+                            <>
+                                <Link
+                                    href="/events"
+                                    aria-label="our Christmas event information page"
+                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                >
+                                    <IconPresent />
+                                </Link>
+                            </>
+                        )}
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}

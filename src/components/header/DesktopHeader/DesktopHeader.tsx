@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { Link } from "@/src/navigation";
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
@@ -14,6 +14,7 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -42,13 +43,17 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
-                        <Link
-                            href="/events"
-                            aria-label="our Christmas event information page"
-                            onClick={() => setIsHeaderMenuOpened(false)}
-                        >
-                            <IconPresent />
-                        </Link>
+                        {pathname && !pathname.includes("events") && (
+                            <>
+                                <Link
+                                    href="/events"
+                                    aria-label="our Christmas event information page"
+                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                >
+                                    <IconPresent />
+                                </Link>
+                            </>
+                        )}
                     </div>
 
                     <SocialLinksList />
