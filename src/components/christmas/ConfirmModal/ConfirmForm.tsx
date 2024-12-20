@@ -200,7 +200,7 @@ export const ConfirmForm = ({
 
                             <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
                                 <p
-                                    className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-purple-200 dark:text-grey"}`}
+                                    className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-greyLight dark:text-grey"}`}
                                 >
                                     {getFormTranslation("requiredField")}
                                 </p>
