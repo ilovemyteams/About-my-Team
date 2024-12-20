@@ -28,7 +28,7 @@ export const ChristmasPresentButton = ({
             onClick={onClickBtn}
             id={id}
             aria-label={id}
-            className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className}`}
+            className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] transition-transform  duration-250 ${className}`}
         >
             <Icon className={`w-full h-auto ${iconStyle || ""}`} />
         </button>
