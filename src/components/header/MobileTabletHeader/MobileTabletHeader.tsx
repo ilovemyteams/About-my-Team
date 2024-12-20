@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Link } from "@/src/navigation";
@@ -10,7 +11,6 @@ import { IconPresent } from "../../shared/Icons/christmas/IconPresent";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
-import { usePathname } from "next/navigation";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
