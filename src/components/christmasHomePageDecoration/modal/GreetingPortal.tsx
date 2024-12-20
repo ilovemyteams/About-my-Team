@@ -38,7 +38,7 @@ export const GreetingPortal = () => {
             const isInclude = sessionLang.includes(locale);
 
             if (!isInclude) {
-                if (pathname.split("/")[1] === "events" && !timeoutId.current) {
+                if (pathname.split("/")[1] !== "events" && !timeoutId.current) {
                     timeoutId.current = setTimeout(
                         onOpenModal,
                         GREETING_MODAL_DELAY
@@ -50,7 +50,7 @@ export const GreetingPortal = () => {
         }
 
         if (!langOpened) {
-            if (pathname.split("/")[1] === "events" && !timeoutId.current) {
+            if (pathname.split("/")[1] !== "events" && !timeoutId.current) {
                 timeoutId.current = setTimeout(
                     onOpenModal,
                     GREETING_MODAL_DELAY
