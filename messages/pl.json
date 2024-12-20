@@ -296,6 +296,7 @@
         "ctaBtn": "Uczestniczyć",
         "discountTitle": "Ho-ho, gratulacje, rabat na kompleksową usługę!",
         "discountBtn": "Kliknij, aby otrzymać",
+        "discountError": "Zniżka została już aktywowana! Nasz menedżer wkrótce się z Tobą skontaktuje",
         "confirmTitle": "Aktywuj zniżkę",
         "confirmText": "Aby otrzymać bonus, wypełnij poniższe pola",
         "confirmCaption": "Aktywowane rabaty nie kumulują się. Rabat jest ważny do 28.02.2015.",

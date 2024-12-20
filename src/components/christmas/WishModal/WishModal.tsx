@@ -58,18 +58,20 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
         <div>
             <div
                 onClick={handleClose}
-                className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll transition-opacity duration-300 ${
+                arial-label="modal backdrop"
+                className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] transition-opacity duration-300 ${
                     isVisible ? "opacity-100" : "opacity-0"
                 }`}
             >
                 <div
                     onClick={e => e.stopPropagation()}
-                    className={`p-0 min-w-[281px] w-[90vw] tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] pc:max-w-[660px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
+                    aria-label="modal window"
+                    className={`p-0 fixed top-1/2 left-1/2 
                     -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent transition-transform duration-300 ${
                         isVisible ? "scale-100" : "scale-95"
                     }`}
                 >
-                    <div className="h-auto relative ">
+                    <div className="relative">
                         <button
                             onClick={handleClose}
                             type="button"
@@ -77,14 +79,14 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                         >
                             <IconCloseX className="stroke-[3px] size-6" />
                         </button>
-                        <div className="relative">
+                        <div className="relative min-w-[281px] w-[95vw] h-auto max-w-[360px] aspect-[360/416] tab:w-auto tab:max-w-[95vw] tab:max-h- tab:h-[80dvh] tab:max-h-[550px] pc:max-h-[696px] desk:max-h-[826px]">
                             <Image
                                 src="/images/christmas/envelope.png"
                                 alt="envelopeAlt"
                                 width={653}
                                 height={827}
                                 priority
-                                className="min-w-[281px] w-[80vw] tab:w-[47vw] max-w-[360px] h-auto mx-auto tab:min-w-[360px] tab:max-w-[500px] pc:max-w-[653px]"
+                                className="w-full mx-auto h-auto tab:max-h-full tab:h-full tab:w-auto"
                             />
                             {children}
                         </div>
