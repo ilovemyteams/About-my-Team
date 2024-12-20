@@ -54,8 +54,8 @@ export const DiscountModal = ({
             </button>
             <IconRibbon className="absolute top-0 left-[50%] w-[176px] tab:w-[256px] -translate-x-1/2 translate-y-[-40%]" />
 
-            <div className="relative z-[10] pt-[50px] pb-[15px] tab:pt-[60px] tab:pb-[20px] text-center">
-                <p className="font-caviar dark:text-white-200 text-purple-stroke  font-bold leading-none text-[100px] ">
+            <div className="relative z-[10] tab:pt-[60px] tab:pb-[20px] text-center">
+                <p className="font-caviar dark:text-white-200 text-purple-200 font-bold leading-none text-[80px] tab:text-[100px] ">
                     -{discount || 5}%
                 </p>
                 <h3 className="dark:text-white-200 text-purple-200 text-base tab:text-2xl mb-[64px]">
@@ -63,7 +63,7 @@ export const DiscountModal = ({
                 </h3>
 
                 <button
-                    className="text-2xl text-redLight dark:text-red cursor-pointer disabled:text-disabledLight dark:disabled:text-purple-stroke"
+                    className="text-xl tab:text-2xl text-redLight dark:text-red cursor-pointer"
                     onClick={onClickNextStep}
                     disabled={isError}
                 >

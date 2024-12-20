@@ -1,67 +1,97 @@
 "use client";
 
-import { useTheme } from "next-themes";
-
 import { IconProps } from "@/types/iconProps.interface";
 
-const LinearGradientDark = () => {
+const LinearGradient = () => {
     return (
         <>
-            <stop stopColor="#D5923A" />
-            <stop offset="0.01" stopColor="#D89844" />
-            <stop offset="0.07" stopColor="#E4B06D" />
-            <stop offset="0.12" stopColor="#EDC38E" />
-            <stop offset="0.18" stopColor="#F5D2A8" />
-            <stop offset="0.24" stopColor="#FADDBA" />
-            <stop offset="0.3" stopColor="#FDE3C5" />
-            <stop offset="0.36" stopColor="#FFE6C9" />
+            <stop className="[stop-color:#A258FF] dark:[stop-color:#D5923A]" />
+            <stop
+                offset="0.01"
+                className="[stop-color:#A258FF] dark:[stop-color:#D89844]"
+            />
+            <stop
+                offset="0.07"
+                className="[stop-color:#A258FF] dark:[stop-color:#E4B06D]"
+            />
+            <stop
+                offset="0.12"
+                className="[stop-color:#A258FF] dark:[stop-color:#EDC38E]"
+            />
+            <stop
+                offset="0.18"
+                className="[stop-color:#A258FF] dark:[stop-color:#F5D2A8]"
+            />
+            <stop
+                offset="0.24"
+                className="[stop-color:#A258FF] dark:[stop-color:#FADDBA]"
+            />
+            <stop
+                offset="0.3"
+                className="[stop-color:#A258FF] dark:[stop-color:#FDE3C5]"
+            />
+            <stop
+                offset="0.36"
+                className="[stop-color:#A258FF] dark:[stop-color:#FFE6C9]"
+            />
         </>
     );
 };
-const LinearGradientLight = () => {
+
+const RadialGradient = () => {
     return (
         <>
-            <stop stopColor="#A258FF" />
-            <stop offset="1" stopColor="#A258FF" />
-        </>
-    );
-};
-const RadialGradientDark = () => {
-    return (
-        <>
-            <stop stopColor="#D5923A" />
-            <stop offset="0.01" stopColor="#D6943E" stopOpacity="0.97" />
-            <stop offset="0.11" stopColor="#DFA75E" stopOpacity="0.74" />
-            <stop offset="0.21" stopColor="#E8B87B" stopOpacity="0.54" />
-            <stop offset="0.31" stopColor="#EFC693" stopOpacity="0.38" />
-            <stop offset="0.42" stopColor="#F4D1A6" stopOpacity="0.24" />
-            <stop offset="0.54" stopColor="#F9DAB5" stopOpacity="0.13" />
-            <stop offset="0.66" stopColor="#FCE1C0" stopOpacity="0.06" />
-            <stop offset="0.81" stopColor="#FEE4C7" stopOpacity="0.01" />
-            <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
-        </>
-    );
-};
-const RadialGradientLight = () => {
-    return (
-        <>
-            <stop stopColor="#FFF3C2" />
-            <stop offset="0.01" stopColor="#FFF3C2" stopOpacity="0.97" />
-            <stop offset="0.11" stopColor="#FFF3C2" stopOpacity="0.74" />
-            <stop offset="0.21" stopColor="#FFF3C2" stopOpacity="0.54" />
-            <stop offset="0.31" stopColor="#FFF3C2" stopOpacity="0.38" />
-            <stop offset="0.42" stopColor="#FFF3C2" stopOpacity="0.24" />
-            <stop offset="0.54" stopColor="#FFF3C2" stopOpacity="0.13" />
-            <stop offset="0.66" stopColor="#FFF3C2" stopOpacity="0.06" />
-            <stop offset="0.81" stopColor="#FFF3C2" stopOpacity="0.01" />
-            <stop offset="1" stopColor="#FFF3C2" stopOpacity="0" />
+            <stop className="[stop-color:#FFF3C2] dark:[stop-color:#D5923A]" />
+            <stop
+                offset="0.01"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#D6943E]"
+                stopOpacity="0.97"
+            />
+            <stop
+                offset="0.11"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#DFA75E]"
+                stopOpacity="0.74"
+            />
+            <stop
+                offset="0.21"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#E8B87B]"
+                stopOpacity="0.54"
+            />
+            <stop
+                offset="0.31"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#EFC693]"
+                stopOpacity="0.38"
+            />
+            <stop
+                offset="0.42"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#F4D1A6]"
+                stopOpacity="0.24"
+            />
+            <stop
+                offset="0.54"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#F9DAB5]"
+                stopOpacity="0.13"
+            />
+            <stop
+                offset="0.66"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#FCE1C0]"
+                stopOpacity="0.06"
+            />
+            <stop
+                offset="0.81"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#FEE4C7]"
+                stopOpacity="0.01"
+            />
+            <stop
+                offset="1"
+                className="[stop-color:#FFF3C2] dark:[stop-color:#FFE6C9]"
+                stopOpacity="0"
+            />
         </>
     );
 };
 
 export const IconLight = ({ className }: IconProps) => {
-    const { theme } = useTheme();
-
     return (
         <svg
             width="798"
@@ -84,7 +114,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M101.782 98.6482C79.31 107.176 54.2076 95.8475 45.7381 73.328C37.2685 50.8085 48.6128 25.6363 71.0858 17.0986C93.5588 8.56088 118.651 19.8985 127.13 42.4188C135.609 64.9391 124.254 90.1203 101.782 98.6482Z"
                 fill="url(#paint1_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M153.849 90.3183L152.33 99.0857L158.698 105.317L149.87 106.576L145.91 114.552L141.989 106.56L133.168 105.257L139.57 99.0561L138.078 90.2757L145.954 94.4429L153.849 90.3183Z"
@@ -103,7 +132,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M542.391 312.16C524.832 328.57 497.309 327.586 480.922 309.964C464.536 292.332 465.489 264.737 483.048 248.327C500.607 231.916 528.13 232.901 544.517 250.523C560.904 268.145 559.96 295.75 542.401 312.161L542.391 312.16Z"
                 fill="url(#paint5_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M559.866 284.619L563.343 292.824L572.065 294.615L565.335 300.442L566.323 309.302L558.692 304.697L550.574 308.377L552.593 299.699L546.59 293.129L555.468 292.361L559.866 284.619Z"
@@ -113,7 +141,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M603.006 309.342C597.13 332.639 573.458 346.702 550.14 340.75C526.813 334.788 512.655 311.078 518.531 287.782C524.397 264.484 548.069 250.421 571.396 256.373C594.724 262.326 608.882 286.046 603.006 309.342Z"
                 fill="url(#paint7_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M661.511 324.509L668.892 329.501L677.185 326.242L674.719 334.805L680.388 341.685L671.478 341.984L666.682 349.485L663.636 341.117L655.01 338.876L662.039 333.401L661.511 324.509Z"
@@ -123,7 +150,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M711.154 321.725C718.941 344.458 706.78 369.148 683.976 376.864C661.171 384.581 636.365 372.412 628.567 349.688C620.78 326.965 632.95 302.276 655.745 294.559C678.55 286.842 703.357 299.001 711.143 321.734L711.154 321.725Z"
                 fill="url(#paint9_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M623.662 307.281L622.005 316.038L628.287 322.352L619.44 323.48L615.364 331.407L611.559 323.345L602.757 321.924L609.25 315.82L607.889 307.02L615.707 311.292L623.662 307.281Z"
@@ -133,7 +159,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M645.883 351.741C628.077 367.893 600.576 366.503 584.458 348.634C568.339 330.766 569.689 303.183 587.495 287.031C605.292 270.878 632.802 272.269 648.921 290.138C665.049 308.007 663.69 335.589 645.894 351.732L645.883 351.741Z"
                 fill="url(#paint11_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M292.978 178.535L301.018 182.388L308.738 177.961L307.553 186.785L314.159 192.768L305.393 194.369L301.75 202.489L297.518 194.652L288.65 193.692L294.803 187.253L292.978 178.535Z"
@@ -143,7 +168,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M341.703 168.546C352.731 189.9 344.297 216.09 322.861 227.054C301.427 238.009 275.107 229.593 264.078 208.239C253.05 186.885 261.484 160.695 282.919 149.74C304.354 138.775 330.674 147.201 341.693 168.545L341.703 168.546Z"
                 fill="url(#paint13_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M400.823 227.385L408.854 231.237L416.584 226.811L415.399 235.635L422.005 241.617L413.229 243.218L409.585 251.338L405.354 243.5L396.496 242.542L402.648 236.103L400.823 227.385Z"
@@ -153,7 +177,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M449.529 217.395C460.557 238.749 452.123 264.939 430.687 275.904C409.253 286.859 382.933 278.442 371.905 257.088C360.876 235.744 369.311 209.544 390.745 198.589C412.181 187.624 438.5 196.051 449.529 217.395Z"
                 fill="url(#paint15_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M461.091 248.812L467.017 255.465L475.853 254.355L471.36 262.04L475.146 270.101L466.442 268.201L459.939 274.295L459.06 265.434L451.245 261.133L459.414 257.557L461.091 248.812Z"
@@ -163,7 +186,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M509.894 258.356C511.838 282.299 493.946 303.222 469.941 305.092C445.937 306.952 424.901 289.046 422.957 265.103C421.013 241.16 438.904 220.237 462.909 218.368C486.913 216.508 507.949 234.413 509.894 258.356Z"
                 fill="url(#paint17_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M716.315 339.74L722.243 346.383L731.078 345.273L726.584 352.968L730.37 361.028L721.667 359.119L715.165 365.212L714.276 356.351L706.47 352.061L714.639 348.484L716.315 339.74Z"
@@ -173,7 +195,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M765.116 349.273C767.06 373.216 749.169 394.139 725.164 396.009C701.16 397.869 680.124 379.963 678.18 356.02C676.235 332.077 694.127 311.145 718.132 309.285C742.136 307.425 763.172 325.33 765.116 349.273Z"
                 fill="url(#paint19_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M355.432 202.669L360.615 209.917L369.523 209.758L364.227 216.921L367.129 225.338L358.678 222.525L351.568 227.884L351.637 218.981L344.334 213.876L352.829 211.19L355.432 202.669Z"
@@ -183,7 +204,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M402.934 217.363C402.299 241.377 382.283 260.282 358.217 259.565C334.152 258.847 315.146 238.8 315.772 214.785C316.398 190.77 336.423 171.876 360.489 172.583C384.556 173.291 403.561 193.338 402.935 217.353L402.934 217.363Z"
                 fill="url(#paint21_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M210.805 121.839L210.29 130.727L217.327 136.188L208.707 138.446L205.688 146.825L200.873 139.328L191.969 139.051L197.612 132.154L195.127 123.612L203.436 126.84L210.805 121.839Z"
@@ -193,7 +213,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M238.586 163.049C223.021 181.368 195.573 183.537 177.267 167.907C158.971 152.267 156.748 124.746 172.313 106.428C187.877 88.1191 215.326 85.9395 233.622 101.579C251.918 117.209 254.141 144.74 238.577 163.048L238.586 163.049Z"
                 fill="url(#paint23_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M257.644 146.897L260.107 155.458L268.558 158.28L261.171 163.26L261.091 172.173L254.067 166.693L245.572 169.369L248.619 161.002L243.436 153.754L252.347 154.061L257.644 146.897Z"
@@ -203,7 +222,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M297.513 176.602C288.893 199.033 263.698 210.163 241.258 201.452C218.818 192.74 207.604 167.508 216.223 145.077C224.843 122.646 250.028 111.525 272.479 120.227C294.929 128.93 306.132 154.171 297.514 176.592L297.513 176.602Z"
                 fill="url(#paint25_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M64.4259 22.9718C62.8172 25.0576 59.8234 25.4533 57.7359 23.8458C55.6485 22.2383 55.2525 19.2468 56.8612 17.161C58.4699 15.0751 61.4629 14.6893 63.5504 16.2968C65.6386 17.8944 66.0338 20.8957 64.4251 22.9816L64.4259 22.9718Z"
@@ -213,7 +231,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M83.8423 46.3183C69.4032 59.155 47.2963 57.8099 34.485 43.315C21.6737 28.8202 22.9858 6.65775 37.4356 -6.18807C51.8747 -19.0248 73.9816 -17.6797 86.8028 -3.18408C99.6142 11.3108 98.2921 33.4724 83.853 46.3092L83.8423 46.3183Z"
                 fill="url(#paint27_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M126.341 70.5407C124.733 72.6266 121.739 73.0223 119.652 71.4148C117.564 69.8073 117.178 66.8166 118.777 64.7299C120.385 62.6441 123.378 62.2583 125.466 63.8658C127.553 65.4732 127.949 68.4647 126.341 70.5506L126.341 70.5407Z"
@@ -223,7 +240,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M145.762 93.8886C131.323 106.725 109.216 105.38 96.4049 90.8854C83.5944 76.3806 84.9057 54.2281 99.3555 41.3822C113.795 28.5455 135.902 29.8906 148.723 44.3862C161.534 58.8811 160.212 81.0427 145.773 93.8795L145.762 93.8886Z"
                 fill="url(#paint29_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M183.445 106.546C181.837 108.631 178.843 109.027 176.755 107.42C174.668 105.812 174.272 102.821 175.881 100.735C177.489 98.6489 180.482 98.2631 182.57 99.8607C184.658 101.468 185.054 104.46 183.445 106.546Z"
@@ -233,7 +249,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M202.872 129.893C188.433 142.73 166.326 141.385 153.514 126.89C140.704 112.386 142.015 90.2329 156.465 77.3871C170.904 64.5504 193.011 65.8955 205.832 80.3911C218.643 94.886 217.321 117.048 202.882 129.884L202.872 129.893Z"
                 fill="url(#paint31_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M239.615 141.837C238.006 143.923 235.013 144.318 232.925 142.711C230.838 141.103 230.442 138.112 232.05 136.026C233.659 133.94 236.652 133.554 238.74 135.152C240.828 136.759 241.224 139.751 239.615 141.837Z"
@@ -243,7 +258,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M259.042 165.185C244.602 178.022 222.496 176.677 209.684 162.182C196.874 147.678 198.186 125.515 212.635 112.679C227.074 99.8424 249.181 101.187 262.002 115.683C274.813 130.178 273.491 152.34 259.052 165.176L259.042 165.185Z"
                 fill="url(#paint33_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M285.707 164.96C284.098 167.046 281.104 167.441 279.017 165.834C276.93 164.226 276.534 161.235 278.142 159.149C279.751 157.063 282.744 156.677 284.832 158.275C286.92 159.882 287.316 162.874 285.707 164.96Z"
@@ -253,7 +267,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M305.124 188.307C290.685 201.143 268.578 199.798 255.766 185.303C242.956 170.799 244.267 148.646 258.717 135.8C273.156 122.963 295.263 124.309 308.084 138.804C320.895 153.299 319.573 175.461 305.134 188.297L305.124 188.307Z"
                 fill="url(#paint35_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M338.637 194.827C337.028 196.913 334.034 197.309 331.947 195.701C329.859 194.094 329.463 191.102 331.072 189.016C332.681 186.931 335.674 186.545 337.761 188.152C339.849 189.76 340.235 192.75 338.636 194.837L338.637 194.827Z"
@@ -263,7 +276,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M358.063 218.176C343.624 231.012 321.517 229.667 308.706 215.172C295.895 200.668 297.207 178.505 311.656 165.669C326.095 152.833 348.202 154.178 361.024 168.673C373.835 183.168 372.513 205.33 358.074 218.167L358.063 218.176Z"
                 fill="url(#paint37_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M391.701 223.453C390.092 225.539 387.099 225.934 385.011 224.327C382.924 222.719 382.528 219.728 384.136 217.642C385.745 215.556 388.738 215.17 390.826 216.768C392.914 218.375 393.301 221.356 391.701 223.453Z"
@@ -273,7 +285,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M411.118 246.791C396.679 259.628 374.572 258.283 361.76 243.788C348.95 229.283 350.262 207.121 364.711 194.285C379.15 181.448 401.257 182.793 414.078 197.289C426.89 211.783 425.568 233.945 411.128 246.782L411.118 246.791Z"
                 fill="url(#paint39_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M444.652 243.62C443.044 245.706 440.05 246.101 437.962 244.494C435.875 242.886 435.479 239.895 437.088 237.809C438.696 235.723 441.689 235.337 443.778 236.935C445.865 238.542 446.261 241.534 444.652 243.62Z"
@@ -283,7 +294,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M464.079 266.968C449.64 279.805 427.533 278.46 414.712 263.964C401.901 249.46 403.212 227.307 417.662 214.461C432.101 201.625 454.208 202.97 467.029 217.465C479.841 231.96 478.519 254.122 464.08 266.959L464.079 266.968Z"
                 fill="url(#paint41_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M495.501 264.998C493.892 267.084 490.898 267.479 488.811 265.872C486.723 264.264 486.337 261.274 487.937 259.177C489.546 257.091 492.539 256.706 494.626 258.313C496.714 259.921 497.109 262.912 495.501 264.998Z"
@@ -293,7 +303,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M514.926 288.346C500.487 301.183 478.38 299.838 465.569 285.343C452.748 270.837 454.07 248.676 468.519 235.84C482.958 223.003 505.065 224.348 517.887 238.844C530.698 253.338 529.376 275.5 514.927 288.336L514.926 288.346Z"
                 fill="url(#paint43_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M544.148 281.293C542.539 283.379 539.546 283.775 537.458 282.167C535.371 280.56 534.975 277.568 536.583 275.482C538.192 273.396 541.176 273 543.273 274.608C545.361 276.216 545.758 279.197 544.148 281.293Z"
@@ -303,7 +312,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M563.578 304.64C549.139 317.477 527.032 316.132 514.221 301.637C501.4 287.142 502.722 264.98 517.172 252.134C531.621 239.298 553.718 240.642 566.538 255.148C579.359 269.644 578.037 291.805 563.588 304.641L563.578 304.64Z"
                 fill="url(#paint45_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M600.626 302.864C599.018 304.949 596.024 305.345 593.936 303.738C591.849 302.13 591.463 299.139 593.062 297.053C594.67 294.967 597.663 294.581 599.752 296.179C601.839 297.786 602.225 300.777 600.626 302.864Z"
@@ -313,7 +321,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M620.051 326.202C605.612 339.039 583.505 337.694 570.694 323.199C557.873 308.694 559.195 286.532 573.644 273.696C588.093 260.86 610.19 262.204 623.012 276.7C635.823 291.195 634.501 313.357 620.062 326.193L620.051 326.202Z"
                 fill="url(#paint47_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M652.024 320.293C650.416 322.379 647.422 322.774 645.335 321.167C643.247 319.559 642.861 316.569 644.46 314.482C646.069 312.396 649.062 312 651.15 313.608C653.237 315.215 653.633 318.207 652.024 320.293Z"
@@ -323,7 +330,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M671.456 343.641C657.017 356.478 634.91 355.133 622.098 340.638C609.288 326.134 610.599 303.981 625.049 291.135C639.498 278.299 661.595 279.644 674.416 294.139C687.227 308.634 685.905 330.796 671.466 343.632L671.456 343.641Z"
                 fill="url(#paint49_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M701.232 336.953C699.624 339.039 696.63 339.434 694.542 337.827C692.455 336.219 692.059 333.228 693.668 331.142C695.276 329.056 698.269 328.67 700.358 330.268C702.445 331.875 702.841 334.867 701.232 336.953Z"
@@ -333,7 +339,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M720.653 360.3C706.214 373.137 684.107 371.792 671.295 357.297C658.475 342.791 659.797 320.63 674.246 307.794C688.685 294.957 710.792 296.302 723.613 310.798C736.424 325.293 735.102 347.454 720.653 360.29L720.653 360.3Z"
                 fill="url(#paint51_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M771.264 356.866C769.655 358.952 766.661 359.348 764.574 357.74C762.486 356.133 762.09 353.141 763.699 351.055C765.308 348.97 768.291 348.583 770.388 350.191C772.477 351.789 772.863 354.78 771.264 356.866Z"
@@ -343,7 +348,6 @@ export const IconLight = ({ className }: IconProps) => {
                 opacity="0.9"
                 d="M790.68 380.214C776.241 393.051 754.134 391.705 741.323 377.211C728.512 362.706 729.824 340.543 744.273 327.707C758.713 314.871 780.82 316.216 793.641 330.711C806.452 345.206 805.14 367.369 790.691 380.205L790.68 380.214Z"
                 fill="url(#paint53_radial_14342_58402)"
-                className={`animate-glowLight`}
             />
             <path
                 d="M314.993 -150.926C340.521 -105.759 373.659 -65.0251 409.38 -27.548C427.341 -8.70667 446.461 8.96405 465.16 27.0531C484.612 45.88 503.995 64.7778 523.805 83.2202C561.625 118.446 601.192 151.215 644.892 178.942C677.056 199.35 708.058 221.582 739.45 243.124C764.082 260.037 788.835 276.799 814.109 292.734C834.568 305.627 855.439 318.336 877.533 328.265C878.586 328.735 877.743 327.442 877.241 327.21C843.122 311.876 811.519 290.635 780.451 269.994C745.626 246.853 711.479 222.721 676.892 199.227C662.063 189.156 646.927 179.586 631.919 169.783C609.139 154.894 587.612 138.17 566.83 120.625C525.165 85.4407 486.756 46.6309 447.4 8.93881C397.59 -38.7639 350.397 -90.1623 316.275 -150.531C316.049 -150.925 314.533 -151.741 314.983 -150.94L314.993 -150.926Z"
@@ -557,11 +561,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="66.3957"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint1_radial_14342_58402"
@@ -571,11 +571,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(79.3754 60.3414) rotate(69.3724) scale(43.8919 43.9169)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint2_linear_14342_58402"
@@ -585,11 +581,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="107.621"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint3_radial_14342_58402"
@@ -599,11 +591,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(141.129 108.294) rotate(47.085) scale(43.9032 43.9056)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint4_linear_14342_58402"
@@ -613,11 +601,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="285.336"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint5_radial_14342_58402"
@@ -627,11 +611,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(510.041 287.592) rotate(47.085) scale(43.9032 43.9056)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint6_linear_14342_58402"
@@ -641,11 +621,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="297.466"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint7_radial_14342_58402"
@@ -655,11 +631,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(561.564 307.505) rotate(14.3163) scale(43.919 43.8898)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint8_linear_14342_58402"
@@ -669,11 +641,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="328.671"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint9_radial_14342_58402"
@@ -683,11 +651,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(675.14 344.259) rotate(-18.7001) scale(43.9176 43.8911)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint10_linear_14342_58402"
@@ -697,11 +661,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="324.628"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint11_radial_14342_58402"
@@ -711,11 +671,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(614.645 327.283) rotate(47.9351) scale(43.9027 43.9061)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint12_linear_14342_58402"
@@ -725,11 +681,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="180.289"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint13_radial_14342_58402"
@@ -739,11 +691,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(306.724 198.558) rotate(-27.0857) scale(43.9141 43.8946)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint14_linear_14342_58402"
@@ -753,11 +701,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="229.148"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint15_radial_14342_58402"
@@ -767,11 +711,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(415.137 248.018) rotate(-27.0857) scale(43.9141 43.8946)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint16_linear_14342_58402"
@@ -781,11 +721,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="257.156"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint17_radial_14342_58402"
@@ -795,11 +731,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(467.589 273.098) rotate(-4.43993) scale(43.9208 43.8879)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint18_linear_14342_58402"
@@ -809,11 +741,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="348.088"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint19_radial_14342_58402"
@@ -823,11 +751,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(724.376 364.861) rotate(-4.43993) scale(43.9208 43.8879)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint20_linear_14342_58402"
@@ -837,11 +761,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="212.553"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint21_radial_14342_58402"
@@ -851,11 +771,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(359.693 225.853) rotate(1.69543) scale(43.921 43.8877)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint22_linear_14342_58402"
@@ -865,11 +781,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="138.692"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint23_radial_14342_58402"
@@ -879,11 +791,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(200.348 141.538) rotate(40.5152) scale(43.907 43.9018)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint24_linear_14342_58402"
@@ -893,11 +801,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="161.053"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint25_radial_14342_58402"
@@ -907,11 +811,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(253.986 169.697) rotate(21.1921) scale(43.9167 43.8921)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint26_linear_14342_58402"
@@ -921,11 +821,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="22.9753"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint27_radial_14342_58402"
@@ -935,11 +831,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(60.4453 20.8) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint28_linear_14342_58402"
@@ -949,11 +841,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="70.5495"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint29_radial_14342_58402"
@@ -963,11 +851,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(122.871 68.7543) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint30_linear_14342_58402"
@@ -977,11 +861,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="106.555"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <RadialGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint31_radial_14342_58402"
@@ -991,11 +871,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(180.472 105.057) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint32_linear_14342_58402"
@@ -1005,11 +881,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="141.855"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint33_radial_14342_58402"
@@ -1019,11 +891,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(237.118 140.655) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint34_linear_14342_58402"
@@ -1033,11 +901,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="164.977"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint35_radial_14342_58402"
@@ -1047,11 +911,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(283.613 163.973) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint36_linear_14342_58402"
@@ -1061,11 +921,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="194.849"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint37_radial_14342_58402"
@@ -1075,11 +931,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(337.016 194.095) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint38_linear_14342_58402"
@@ -1089,11 +941,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="223.474"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint39_radial_14342_58402"
@@ -1103,11 +951,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(390.531 222.967) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint40_linear_14342_58402"
@@ -1117,11 +961,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="243.65"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint41_radial_14342_58402"
@@ -1131,11 +971,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(443.975 243.343) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint42_linear_14342_58402"
@@ -1145,11 +981,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="265.029"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint43_radial_14342_58402"
@@ -1159,11 +991,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(495.285 264.911) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint44_linear_14342_58402"
@@ -1173,11 +1001,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="281.335"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint45_radial_14342_58402"
@@ -1187,11 +1011,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(544.378 281.383) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint46_linear_14342_58402"
@@ -1201,11 +1021,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="302.894"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint47_radial_14342_58402"
@@ -1215,11 +1031,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(601.374 303.15) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint48_linear_14342_58402"
@@ -1229,11 +1041,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="320.332"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint49_radial_14342_58402"
@@ -1243,11 +1051,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(653.248 320.762) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint50_linear_14342_58402"
@@ -1257,11 +1061,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="336.995"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint51_radial_14342_58402"
@@ -1271,11 +1071,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(702.903 337.587) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint52_linear_14342_58402"
@@ -1285,11 +1081,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="356.912"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint53_radial_14342_58402"
@@ -1299,11 +1091,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(773.586 357.716) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <radialGradient
                     id="paint54_radial_14342_58402"
@@ -1313,11 +1101,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(380.058 -27.9304) rotate(61.6511) scale(37.8607 37.8765)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint55_linear_14342_58402"
@@ -1327,11 +1111,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="202.311"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint56_radial_14342_58402"
@@ -1341,11 +1121,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(649.114 201.718) rotate(61.6511) scale(37.8607 37.8765)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint57_linear_14342_58402"
@@ -1355,11 +1131,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="223.132"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint58_radial_14342_58402"
@@ -1369,11 +1141,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(687.932 229.751) rotate(28.8709) scale(37.8762 37.8609)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint59_linear_14342_58402"
@@ -1383,11 +1151,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="272.396"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint60_radial_14342_58402"
@@ -1397,11 +1161,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(775.044 285.075) rotate(-4.14759) scale(37.8828 37.8544)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint61_linear_14342_58402"
@@ -1411,11 +1171,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="257.636"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <RadialGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint62_radial_14342_58402"
@@ -1425,11 +1181,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(727.847 257.467) rotate(62.5015) scale(37.8603 37.8768)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint63_linear_14342_58402"
@@ -1439,11 +1191,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="68.589"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint64_radial_14342_58402"
@@ -1453,11 +1201,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(499.256 83.7662) rotate(-12.5315) scale(37.8816 37.8556)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint65_linear_14342_58402"
@@ -1467,11 +1211,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="132.734"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint66_radial_14342_58402"
@@ -1481,11 +1221,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(579.004 148.55) rotate(-12.5315) scale(37.8816 37.8556)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint67_linear_14342_58402"
@@ -1495,11 +1231,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="168.846"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint68_radial_14342_58402"
@@ -1509,11 +1241,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(616.908 180.888) rotate(10.1217) scale(37.882 37.8551)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint69_linear_14342_58402"
@@ -1523,11 +1251,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="300.071"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint70_radial_14342_58402"
@@ -1537,11 +1261,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(811.33 313.174) rotate(10.1218) scale(37.882 37.8551)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint71_linear_14342_58402"
@@ -1551,11 +1271,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="108.599"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint72_radial_14342_58402"
@@ -1565,11 +1281,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(537.144 117.955) rotate(16.2476) scale(37.8807 37.8564)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint73_linear_14342_58402"
@@ -1579,11 +1291,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="13.4793"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint74_radial_14342_58402"
@@ -1593,11 +1301,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(422.342 12.7972) rotate(55.0689) scale(37.8636 37.8735)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint75_linear_14342_58402"
@@ -1607,11 +1311,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="43.4987"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint76_radial_14342_58402"
@@ -1621,11 +1321,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(461.026 48.0761) rotate(35.7487) scale(37.8731 37.864)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <radialGradient
                     id="paint77_radial_14342_58402"
@@ -1635,11 +1331,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(413.831 -22.2178) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint78_linear_14342_58402"
@@ -1649,11 +1341,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="21.2077"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint79_radial_14342_58402"
@@ -1663,11 +1351,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(453.404 19.7638) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint80_linear_14342_58402"
@@ -1677,11 +1361,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="50.4955"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint81_radial_14342_58402"
@@ -1691,11 +1371,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(487.159 49.3038) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint82_linear_14342_58402"
@@ -1705,11 +1381,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="86.9025"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint83_radial_14342_58402"
@@ -1719,11 +1391,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(525.19 86.0281) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint84_linear_14342_58402"
@@ -1733,11 +1401,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="122.303"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint85_radial_14342_58402"
@@ -1747,11 +1411,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(563.597 121.725) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint86_linear_14342_58402"
@@ -1761,11 +1421,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="150.624"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint87_radial_14342_58402"
@@ -1775,11 +1431,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(603.809 150.32) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint88_linear_14342_58402"
@@ -1789,11 +1441,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="179.489"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint89_radial_14342_58402"
@@ -1803,11 +1451,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(641.964 179.442) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint90_linear_14342_58402"
@@ -1817,11 +1461,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="203.642"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint91_radial_14342_58402"
@@ -1831,11 +1471,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(679.37 203.822) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint92_linear_14342_58402"
@@ -1845,11 +1481,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="233.881"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint93_radial_14342_58402"
@@ -1859,11 +1491,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(722.24 234.348) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint94_linear_14342_58402"
@@ -1873,11 +1501,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="259.576"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint95_radial_14342_58402"
@@ -1887,11 +1511,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(761.71 260.287) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
                 <linearGradient
                     id="paint96_linear_14342_58402"
@@ -1901,11 +1521,7 @@ export const IconLight = ({ className }: IconProps) => {
                     y2="284.155"
                     gradientUnits="userSpaceOnUse"
                 >
-                    {theme === "dark" ? (
-                        <LinearGradientDark />
-                    ) : (
-                        <LinearGradientLight />
-                    )}
+                    <LinearGradient />
                 </linearGradient>
                 <radialGradient
                     id="paint97_radial_14342_58402"
@@ -1915,11 +1531,7 @@ export const IconLight = ({ className }: IconProps) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(799.543 285.101) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    {theme === "dark" ? (
-                        <RadialGradientDark />
-                    ) : (
-                        <RadialGradientLight />
-                    )}
+                    <RadialGradient />
                 </radialGradient>
             </defs>
         </svg>
