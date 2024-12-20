@@ -1,9 +1,8 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Link } from "@/src/navigation";
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
@@ -16,7 +15,6 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
     const pathname = usePathname();
-    console.log("🚀 ~ DesktopHeader ~ pathname:", pathname);
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -47,7 +45,6 @@ export const DesktopHeader = () => {
                         />
                         {pathname && !pathname.includes("events") && (
                             <>
-                                {console.log("Іконка показується")}
                                 <Link
                                     href="/events"
                                     aria-label="our Christmas event information page"

@@ -1,9 +1,8 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Link } from "@/src/navigation";
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
@@ -15,7 +14,6 @@ import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
     const pathname = usePathname();
-    console.log("🚀 ~ MobileTabletHeader ~ pathname:", pathname);
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -40,7 +38,6 @@ export const MobileTabletHeader = () => {
                         />
                         {pathname && !pathname.includes("events") && (
                             <>
-                                {console.log("Іконка показується")}
                                 <Link
                                     href="/events"
                                     aria-label="our Christmas event information page"
