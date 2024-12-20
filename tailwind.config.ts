@@ -483,6 +483,10 @@ const config: Config = {
                     "0%, 100%": { filter: "brightness(1)" },
                     "50%": { filter: "brightness(1.5)" },
                 },
+                glowLights: {
+                    "0%, 100%": { filter: "brightness(1)" },
+                    "50%": { filter: "brightness(1.1)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -498,7 +502,7 @@ const config: Config = {
                 wave: "wave 20s ease-in-out infinite",
                 wobble: "scale .7s ease-in infinite",
                 glow: "glow 2s ease-in-out infinite",
-                glowLights: "glow 500ms ease-in infinite",
+                glowLights: "glowLights 1500ms ease-in infinite",
             },
         },
         backgroundImage: {
