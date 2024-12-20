@@ -45,6 +45,7 @@ export const DesktopHeader = () => {
                         <Link
                             href="/events"
                             aria-label="our Christmas event information page"
+                            onClick={() => setIsHeaderMenuOpened(false)}
                         >
                             <IconPresent />
                         </Link>
