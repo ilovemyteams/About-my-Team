@@ -34,7 +34,8 @@ export const DiscountModal = ({
             appearance="center"
             isCloseBtnVisible={false}
             widthStyle="min-w-[320px] max-w-[360px] tab:min-w-[464px]"
-            className="top-10"
+            mobilePosition="center"
+            isScrollBlock={true}
         >
             <Background />
             <IconRibbon className="absolute top-0 left-[50%] w-[176px] tab:w-[256px] -translate-x-1/2 translate-y-[-40%]" />
