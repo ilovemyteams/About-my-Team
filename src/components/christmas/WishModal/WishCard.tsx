@@ -12,14 +12,14 @@ export const WishCard = ({ text, imageId }: WishCardProps) => {
         <>
             <div
                 className="absolute mx-auto top-[17px] tab:top-[4.5%] left-[52%] -translate-x-[52%]
-            min-w-[191px] w-[65%]"
+            w-[65%]"
             >
                 <Image
                     src={`/images/christmas/${imageId}.jpg`}
                     alt={imageId}
                     width={447}
                     height={328}
-                    className=" object-cover min-w-[191px] mb-2"
+                    className=" object-cover mb-2"
                 />
                 <p className="w-[110%] ml-[-5%] text-purple-200 tab:text-2xl tab:leading-6 pc:text-[3.5dvh] desk:leading-10 font-intro text-center mx-auto">
                     {text}
