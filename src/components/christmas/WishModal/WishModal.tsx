@@ -71,7 +71,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                         isVisible ? "scale-100" : "scale-95"
                     }`}
                 >
-                    <div className="h-full relative">
+                    <div className="h-full flex flex-col relative">
                         <button
                             onClick={handleClose}
                             type="button"
@@ -79,7 +79,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                         >
                             <IconCloseX className="stroke-[3px] size-6" />
                         </button>
-                        <div className="relative h-full">
+                        <div className="relative grow">
                             <Image
                                 src="/images/christmas/envelope.png"
                                 alt="envelopeAlt"
