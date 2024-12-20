@@ -21,7 +21,7 @@ export const WishCard = ({ text, imageId }: WishCardProps) => {
                     height={328}
                     className=" object-cover min-w-[191px] mb-2"
                 />
-                <p className="w-[110%] ml-[-5%] text-purple-200 tab:text-2xl tab:leading-6 pc:[font-size:_clamp(28px,4vw,32px)] desk:[font-size:_clamp(32px,4vw,40px)] desk:leading-10 font-intro text-center mx-auto">
+                <p className="w-[110%] ml-[-5%] text-purple-200 tab:text-2xl tab:leading-6 pc:text-[3.5dvh] desk:leading-10 font-intro text-center mx-auto">
                     {text}
                 </p>
             </div>
