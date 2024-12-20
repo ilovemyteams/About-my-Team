@@ -66,12 +66,12 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                 <div
                     onClick={e => e.stopPropagation()}
                     aria-label="modal window"
-                    className={`p-0 min-w-[281px] w-[95vw] h-auto tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] aspect-[499/696] pc:max-w-[95vw] pc:w-auto pc:h-[95dvh] pc:max-h-[696px] desk:max-h-[826px] fixed top-1/2 left-1/2 
+                    className={`p-0 fixed top-1/2 left-1/2 
                     -translate-x-1/2 -translate-y-1/2 z-[21] bg-transparent transition-transform duration-300 ${
                         isVisible ? "scale-100" : "scale-95"
                     }`}
                 >
-                    <div className="h-full flex flex-col relative">
+                    <div className="relative">
                         <button
                             onClick={handleClose}
                             type="button"
@@ -79,14 +79,14 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
                         >
                             <IconCloseX className="stroke-[3px] size-6" />
                         </button>
-                        <div className="relative grow">
+                        <div className="relative min-w-[281px] w-[95vw] h-auto max-w-[360px] aspect-[360/416] tab:w-auto tab:max-w-[95vw] tab:max-h- tab:h-[80dvh] tab:max-h-[550px] pc:max-h-[696px] desk:max-h-[826px]">
                             <Image
                                 src="/images/christmas/envelope.png"
                                 alt="envelopeAlt"
                                 width={653}
                                 height={827}
                                 priority
-                                className="w-full mx-auto h-auto pc:max-h-full pc:h-full pc:w-auto"
+                                className="w-full mx-auto h-auto tab:max-h-full tab:h-full tab:w-auto"
                             />
                             {children}
                         </div>
