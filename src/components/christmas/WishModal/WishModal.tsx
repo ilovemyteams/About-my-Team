@@ -58,7 +58,7 @@ export const WishModal = ({ children }: { children: React.ReactNode }) => {
         <div>
             <div
                 onClick={handleClose}
-                className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] no-doc-scroll transition-opacity duration-300 ${
+                className={`w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80 fixed top-0 left-0 z-[20] transition-opacity duration-300 ${
                     isVisible ? "opacity-100" : "opacity-0"
                 }`}
             >

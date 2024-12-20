@@ -68,6 +68,7 @@ export const ConfirmForm = ({
 
         try {
             await notificationHandler(onSendData);
+            localStorage.setItem("confirm", "1");
         } catch (error) {
             return error;
         }
@@ -100,7 +101,7 @@ export const ConfirmForm = ({
                             <p className="text-base">
                                 {getTextTranslation("confirmText")}
                             </p>
-                            <p className="text-base text-purple-50">
+                            <p className="text-base text-purple-130 dark:text-purple-50">
                                 {getTextTranslation("confirmCaption")}
                             </p>
                         </div>
