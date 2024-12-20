@@ -503,6 +503,9 @@ const config: Config = {
                 wobble: "scale .7s ease-in infinite",
                 glow: "glow 2s ease-in-out infinite",
                 glowLights: "glowLights 1500ms ease-in infinite",
+                blink1: "glow 600ms infinite",
+                blink2: "glow 600ms 200ms infinite",
+                blink3: "glow 600ms 400ms infinite",
             },
         },
         backgroundImage: {
