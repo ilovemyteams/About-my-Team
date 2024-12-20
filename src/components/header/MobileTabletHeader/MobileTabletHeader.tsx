@@ -10,9 +10,12 @@ import { IconPresent } from "../../shared/Icons/christmas/IconPresent";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
+import { usePathname } from "next/navigation";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
+    console.log("🚀 ~ MobileTabletHeader ~ pathname:", pathname);
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -35,13 +38,18 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
-                        <Link
-                            href="/events"
-                            aria-label="our Christmas event information page"
-                            onClick={() => setIsHeaderMenuOpened(false)}
-                        >
-                            <IconPresent />
-                        </Link>
+                        {pathname && !pathname.includes("events") && (
+                            <>
+                                {console.log("Іконка показується")}
+                                <Link
+                                    href="/events"
+                                    aria-label="our Christmas event information page"
+                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                >
+                                    <IconPresent />
+                                </Link>
+                            </>
+                        )}
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
