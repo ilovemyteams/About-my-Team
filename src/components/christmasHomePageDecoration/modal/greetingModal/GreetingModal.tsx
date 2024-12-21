@@ -47,7 +47,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                     href="/events"
                     onClick={() =>
                         sendGTMEvent({
-                            event: "christmas_pogp_up_click",
+                            event: "christmas_pop_up_click",
                             page_location: path,
                         })
                     }
