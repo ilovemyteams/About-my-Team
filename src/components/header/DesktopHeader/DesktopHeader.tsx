@@ -1,8 +1,12 @@
 "use client";
+
 import { useEffect, useState } from "react";
+
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { IconPresent } from "../../shared/Icons/christmas/IconPresent";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -10,6 +14,7 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -33,10 +38,24 @@ export const DesktopHeader = () => {
                 py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
-                    <BurgerMenuButton
-                        isHeaderMenuOpened={isHeaderMenuOpened}
-                        toggleHeaderMenuOpen={toggleHeaderMenuOpen}
-                    />
+                    <div className="flex flex-col pc:gap-8 desk:gap-10">
+                        <BurgerMenuButton
+                            isHeaderMenuOpened={isHeaderMenuOpened}
+                            toggleHeaderMenuOpen={toggleHeaderMenuOpen}
+                        />
+                        {pathname && !pathname.includes("events") && (
+                            <>
+                                <Link
+                                    href="/events"
+                                    aria-label="our Christmas event information page"
+                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                >
+                                    <IconPresent />
+                                </Link>
+                            </>
+                        )}
+                    </div>
+
                     <SocialLinksList />
                 </div>
             </div>

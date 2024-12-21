@@ -39,6 +39,11 @@ export const LayoutText = ({
                             {"\u2022"}
                         </span>
                     )}
+                    {item.type === "numListItem " && (
+                        <span className={`ml-1 ${styleText}`}>
+                            {index + 1}.
+                        </span>
+                    )}
                     <p className={`${styleText} ${className}`}>
                         {parseTextWithLink(item.text, locale)}
                     </p>

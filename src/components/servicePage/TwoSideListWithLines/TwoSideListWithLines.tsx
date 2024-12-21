@@ -16,7 +16,7 @@ export const TwoSideListWithLines = ({
     const { description, title } = content;
 
     return (
-        <PageSection className="mb-[80px] tab:mb-[100px] desk:mb-[120px]">
+        <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <LayoutTitle text={title} />
 
             <ul className="pc:pb-[60px]">

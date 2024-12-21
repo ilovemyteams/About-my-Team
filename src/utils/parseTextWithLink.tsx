@@ -1,5 +1,7 @@
 import React from "react";
 
+import { selectedLink } from "./selectedLink";
+
 // Додаємо параметр locale
 export const parseTextWithLink = (text: string, locale: string) => {
     // Використовуємо змінну середовища та locale для створення посилання
@@ -19,7 +21,8 @@ export const parseTextWithLink = (text: string, locale: string) => {
                 "${process.env.NEXT_PUBLIC_BASE_URL}",
                 process.env.NEXT_PUBLIC_BASE_URL || ""
             )
-            .replace("${locale}", locale);
+            .replace("${locale}", locale)
+            .replace("${policyUrl}", selectedLink(locale));
 
         const noblank = match[2];
         const linkText = match[3];

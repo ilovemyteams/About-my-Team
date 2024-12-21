@@ -15,6 +15,9 @@ interface ModalBaseProps {
     className?: string;
     animationType?: "tween" | "spring";
     appearance?: "center" | "up";
+    isCloseBtnVisible?: boolean;
+    isScrollBlock?: boolean;
+    mobilePosition?: "center" | "top";
 }
 
 export const ModalBase = ({
@@ -25,12 +28,20 @@ export const ModalBase = ({
     className = "",
     animationType = "tween",
     appearance = "up",
+    isCloseBtnVisible = true,
     children,
+    isScrollBlock = false,
+    mobilePosition = "top",
 }: PropsWithChildren<ModalBaseProps>) => {
     const screenSizeName = useScreenSize();
     const { mobileName } = SCREEN_NAMES;
 
-    const modalTranslate = screenSizeName === mobileName ? "0%" : "-50%";
+    const modalMobileTranslate = mobilePosition === "top" ? "0%" : "-50%";
+    const modalTranslate =
+        screenSizeName === mobileName ? modalMobileTranslate : "-50%";
+
+    const scrollStyle = "overflow-y-auto scroll";
+    const mobilePositionStyle = mobilePosition === "top" ? "top-7" : "top-1/2";
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
@@ -48,7 +59,7 @@ export const ModalBase = ({
     }, []);
 
     const defaultWidth =
-        " w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px]";
+        "w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] desk:min-w-[850px]";
 
     const centerAnimation =
         appearance === "center"
@@ -80,7 +91,7 @@ export const ModalBase = ({
                         }}
                         aria-label="modal-backdrop"
                         onClick={onCloseModal}
-                        className="fixed z-[21] no-doc-scroll top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
+                        className="fixed z-[21] top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                     >
                         <motion.div
                             variants={{
@@ -101,20 +112,22 @@ export const ModalBase = ({
                             transition={{ duration: 0.5, type: animationType }}
                             aria-label="modal-window"
                             onClick={e => e.stopPropagation()}
-                            className={`max-h-[90dvh] overflow-y-auto scroll bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2 
+                            className={`max-h-[90dvh] ${isScrollBlock ? "" : scrollStyle} bg-white-100 dark:bg-purple-400 fixed ${mobilePositionStyle} tab:top-1/2 left-1/2 
             -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
                         >
                             <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
-                                <button
-                                    type="button"
-                                    onClick={onCloseModal}
-                                    disabled={isCloseDisabled}
-                                    aria-label="close button"
-                                    className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                                {isCloseBtnVisible && (
+                                    <button
+                                        type="button"
+                                        onClick={onCloseModal}
+                                        disabled={isCloseDisabled}
+                                        aria-label="close button"
+                                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
-                                >
-                                    <IconCloseX className="stroke-2 size-6" />
-                                </button>
+                                    >
+                                        <IconCloseX className="stroke-2 size-6" />
+                                    </button>
+                                )}
                                 {children}
                             </div>
                         </motion.div>
