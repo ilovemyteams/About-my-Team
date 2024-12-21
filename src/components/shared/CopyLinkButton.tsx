@@ -18,7 +18,7 @@ const CopyLinkButton = ({
             await navigator.clipboard.writeText(link);
 
             sendGTMEvent({
-                event: "whatsapp_share_button_click",
+                event: "copy_link_share_button_click",
                 page_location: link,
             });
 
