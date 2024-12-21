@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React, { ReactNode, useState } from "react";
@@ -15,6 +16,12 @@ const CopyLinkButton = ({
     const handleCopyLink = async () => {
         try {
             await navigator.clipboard.writeText(link);
+
+            sendGTMEvent({
+                event: "whatsapp_share_button_click",
+                page_location: link,
+            });
+
             setCopied(true);
             setTimeout(() => setCopied(false), 3000);
         } catch (error) {
