@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -27,6 +28,9 @@ export const DiscountModal = ({
     };
 
     const onClickNextStep = () => {
+        sendGTMEvent({
+            event: "get_christmas_discount_click",
+        });
         const isSend = localStorage.getItem("confirm");
         if (isSend) {
             setIsError(true);
