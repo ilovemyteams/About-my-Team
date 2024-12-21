@@ -1,8 +1,10 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
 
+import { usePathname } from "@/src/navigation";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
@@ -22,6 +24,8 @@ export interface ValuesWriteUsFormType {
 
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
+
+    const path = usePathname();
 
     const validationSchema = WriteUsValidation();
 
@@ -60,6 +64,10 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
 
         try {
             await notificationHandler(onSendData);
+            sendGTMEvent({
+                event: "generate_lead",
+                page_location: path,
+            });
         } catch (error) {
             return error;
         }
