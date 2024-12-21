@@ -1,5 +1,6 @@
 import { sendGTMEvent } from "@next/third-parties/google";
-import { ErrorMessage, Field } from "formik";
+import { ErrorMessage, Field, useFormikContext } from "formik";
+import React from "react";
 
 interface CustomFieldProps {
     value: string;
@@ -21,8 +22,20 @@ export const ChristmasCustomField = ({
     isError,
     setStatus,
 }: CustomFieldProps) => {
+    const { handleBlur } = useFormikContext();
+
     const onFocusField = () => {
         setStatus(name);
+    };
+
+    const onBlurField = (
+        e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        handleBlur(e);
+        sendGTMEvent({
+            event: `landing_form_${name}_field_filled`,
+            data: value,
+        });
     };
 
     const heightStyles =
@@ -45,12 +58,7 @@ export const ChristmasCustomField = ({
                 autoComplete="on"
                 placeholder={placeholder}
                 onFocus={onFocusField}
-                onBlur={() =>
-                    sendGTMEvent({
-                        event: `landing_form_${name}_field_filled`,
-                        data: value,
-                    })
-                }
+                onBlur={onBlurField}
                 className={`custom-autofill block focus:placeholder-transparent appearance-none w-full !bg-transparent text-purple-stroke outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
 
