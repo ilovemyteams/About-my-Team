@@ -28,15 +28,15 @@ export const DiscountModal = ({
     };
 
     const onClickNextStep = () => {
-        sendGTMEvent({
-            event: "get_christmas_discount_click",
-        });
         const isSend = localStorage.getItem("confirm");
         if (isSend) {
             setIsError(true);
             return;
         }
         onOpenNextStep();
+        sendGTMEvent({
+            event: "get_christmas_discount_click",
+        });
     };
     return (
         <ModalBase
