@@ -6,11 +6,9 @@ import React, { ReactNode, useState } from "react";
 const CopyLinkButton = ({
     link,
     children,
-    id,
 }: {
     link: string;
     children: ReactNode;
-    id?: string;
 }) => {
     const [copied, setCopied] = useState(false);
     const [notCopied, setNotCopied] = useState(false);
@@ -18,9 +16,10 @@ const CopyLinkButton = ({
     const handleCopyLink = async () => {
         try {
             await navigator.clipboard.writeText(link);
+
             sendGTMEvent({
-                event: "copy_link_share_button_clicked",
-                value: "Copy link share button clicked",
+                event: "whatsapp_share_button_click",
+                page_location: link,
             });
 
             setCopied(true);
@@ -34,7 +33,6 @@ const CopyLinkButton = ({
 
     return (
         <button
-            id={id}
             aria-label="copy share link button"
             onClick={handleCopyLink}
             className="relative"

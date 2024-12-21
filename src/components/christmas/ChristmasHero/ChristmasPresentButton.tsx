@@ -1,5 +1,5 @@
 "use client";
-
+import { sendGTMEvent } from "@next/third-parties/google";
 import { ComponentType } from "react";
 
 import { IconProps } from "@/types/iconProps.interface";
@@ -21,6 +21,9 @@ export const ChristmasPresentButton = ({
 }: ChristmasPresentButtonProps) => {
     const onClickBtn = () => {
         onClick();
+        sendGTMEvent({
+            event: "christmas_gifts_click",
+        });
     };
 
     return (

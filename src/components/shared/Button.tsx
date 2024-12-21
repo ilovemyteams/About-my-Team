@@ -1,6 +1,5 @@
 interface ButtonProps {
     children: string;
-    id?: string;
     color?: "red" | "grey";
     className?: string;
     type?: "submit" | "button";
@@ -10,7 +9,6 @@ interface ButtonProps {
 
 export const Button = ({
     children,
-    id = "",
     color = "red",
     className,
     type = "button",
@@ -23,7 +21,6 @@ export const Button = ({
         "dark:text-grey dark:border-grey dark:after:bg-grey dark:before:bg-grey text-greyLight border-greyLight after:bg-greyLight before:bg-greyLight";
     return (
         <button
-            id={id}
             aria-label="contact button"
             type={type}
             disabled={disabled}

@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useLocale } from "next-intl";
@@ -26,6 +27,11 @@ export const HeaderMenuList = ({
             {menuList.map(({ name, path }, idx) => (
                 <li
                     key={idx}
+                    onClick={() =>
+                        sendGTMEvent({
+                            event: `header_menu_${path === "" ? "home" : path}_page_click`,
+                        })
+                    }
                     className="font-caviar text-xlb tab:text-3xl mt-[20px] tab:[&:not(:first-child)]:mt-6 tab:first:mt-0 mb-2 pc:[&:not(:last-child)]:mb-[26px] pc:mt-0"
                 >
                     <Link

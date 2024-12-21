@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik, FormikHelpers } from "formik";
 import { useTranslations } from "next-intl";
@@ -62,6 +63,9 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
         try {
             await notificationHandler(onSendData);
             resetForm();
+            sendGTMEvent({
+                event: "get_landing_page_complete",
+            });
         } catch (error) {
             return error;
         }

@@ -1,5 +1,5 @@
 "use client";
-
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
 import { IconBorderCurve } from "../../shared/Icons/christmas/IconBorderCurve";
@@ -12,6 +12,9 @@ export const onClickBtnToWinForm = () => {
             block: "start",
         });
     }
+    sendGTMEvent({
+        event: "win_landing_click",
+    });
 };
 
 export const WinLandingBtn = () => {

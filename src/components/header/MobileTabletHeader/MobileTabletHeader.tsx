@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useEffect, useState } from "react";
 
 import { Link, usePathname } from "@/src/navigation";
@@ -17,6 +18,14 @@ export const MobileTabletHeader = () => {
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
+
+    const onPresentClick = () => {
+        setIsHeaderMenuOpened(false);
+        sendGTMEvent({
+            event: "christmas_gift_link_click",
+            page_location: pathname,
+        });
+    };
 
     useEffect(() => {
         isHeaderMenuOpened
@@ -41,7 +50,7 @@ export const MobileTabletHeader = () => {
                                 <Link
                                     href="/events"
                                     aria-label="our Christmas event information page"
-                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                    onClick={onPresentClick}
                                 >
                                     <IconPresent />
                                 </Link>

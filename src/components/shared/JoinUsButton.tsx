@@ -1,3 +1,5 @@
+"use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
 import { Button } from "./Button";
@@ -10,6 +12,11 @@ export const JoinUsButton = () => {
     return (
         <a
             href={JOIN_US_LINK}
+            onClick={() =>
+                sendGTMEvent({
+                    event: "join_us_form_click",
+                })
+            }
             target="_blank"
             rel="noopener noreferrer"
             className="outline-none"
