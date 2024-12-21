@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
@@ -17,10 +18,14 @@ export const WriteUs = ({ className }: WriteUsProps) => {
 
     const onClickButton = () => {
         router.push(`/${locale}/order`);
+        sendGTMEvent({
+            event: "order_form_start",
+            value: "Order form started",
+        });
     };
 
     return (
-        <Button onClick={onClickButton} className={className}>
+        <Button id="order-button" onClick={onClickButton} className={className}>
             {getTranslation("order")}
         </Button>
     );

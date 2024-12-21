@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
@@ -60,6 +61,10 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
 
         try {
             await notificationHandler(onSendData);
+            sendGTMEvent({
+                event: "order_form_submitted",
+                value: "Order form submitted",
+            });
         } catch (error) {
             return error;
         }
@@ -164,6 +169,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             <PolicyLabel />
                         </div>
                         <SubmitButton
+                            id="order-form-send-button"
                             isActiveLoader={isSubmitting}
                             isDisabled={!(dirty && isValid) || isSubmitting}
                             title={getTranslation("submitButton")}
