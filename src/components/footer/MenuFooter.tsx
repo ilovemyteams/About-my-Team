@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -17,6 +18,11 @@ export const MenuFooter = () => {
             {menuList.map(({ name, path }, idx) => (
                 <li
                     key={idx}
+                    onClick={() =>
+                        sendGTMEvent({
+                            event: `footer_menu_${path === "" ? "home" : path}_page_click`,
+                        })
+                    }
                     className=" pc:my-0 pc:py-0.5 pc:p-[2px] leading-6 tracking-normal text-left"
                 >
                     <div className="py-[10px] pl-1 tab:py-0">
