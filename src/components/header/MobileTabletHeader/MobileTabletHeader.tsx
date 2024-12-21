@@ -1,14 +1,19 @@
 "use client";
+
 import { useEffect, useState } from "react";
+
+import { Link, usePathname } from "@/src/navigation";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { IconPresent } from "../../shared/Icons/christmas/IconPresent";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -31,6 +36,17 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+                        {pathname && !pathname.includes("events") && (
+                            <>
+                                <Link
+                                    href="/events"
+                                    aria-label="our Christmas event information page"
+                                    onClick={() => setIsHeaderMenuOpened(false)}
+                                >
+                                    <IconPresent />
+                                </Link>
+                            </>
+                        )}
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}

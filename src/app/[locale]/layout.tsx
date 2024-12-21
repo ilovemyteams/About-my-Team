@@ -5,8 +5,9 @@ import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import React from "react";
 
-import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { SnowflakeMainPage } from "@/src/components/christmas/christmasHome/SnowflakeMainPage";
+import { GreetingPortal } from "@/src/components/christmasHomePageDecoration/modal/GreetingPortal";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
@@ -48,6 +49,17 @@ const geist = localFont({
     variable: "--font-geist",
 });
 
+const intro = localFont({
+    src: [
+        {
+            path: "../../fonts/IntroScript/introscriptr_h2base.otf",
+            weight: "300",
+            style: "normal",
+        },
+    ],
+    variable: "--font-intro",
+});
+
 export async function generateMetadata({
     params: { locale },
 }: {
@@ -84,17 +96,19 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
-                        className={`${caviar.variable} ${geist.variable} relative z-[1] overflow-x-visible
+                        className={`${caviar.variable} ${geist.variable} ${intro.variable} relative z-[1] overflow-x-visible
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                     >
                         <Providers>
+                            <GreetingPortal />
                             <BackgroundImages />
                             <div className="min-h-screen flex flex-col">
                                 <Header />
                                 <main className="flex-auto min-h-full">
                                     {modal}
                                     <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
-                                        <BackgroundFigures />
+                                        {/* <BackgroundFigures /> */}
+                                        <SnowflakeMainPage />
                                         {children}
                                     </div>
                                 </main>

@@ -128,6 +128,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "3xl28": [
+                "28px",
+                {
+                    lineHeight: "28px",
+                },
+            ],
             "4xl": [
                 "32px",
                 {
@@ -135,7 +141,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
-
+            "4xl42": [
+                "32px",
+                {
+                    lineHeight: "42px",
+                },
+            ],
             "5xl": [
                 "40px",
                 {
@@ -150,6 +161,13 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "6xln": [
+                "48px",
+                {
+                    lineHeight: "48px",
+                },
+            ],
+
             "7xl": [
                 "64px",
                 {
@@ -188,6 +206,7 @@ const config: Config = {
             fontFamily: {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
+                intro: ["var(--font-intro)"],
             },
             colors: {
                 purple: {
@@ -392,6 +411,82 @@ const config: Config = {
                         backgroundColor: "currentColor",
                     },
                 },
+                wave: {
+                    "0%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+
+                    "0.5%": {
+                        transform:
+                            "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "1%": {
+                        transform:
+                            "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "1.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "2%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "2.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "3%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "3.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "4%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "4.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "5%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+                    "100%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+                },
+                scale: {
+                    "0%": {
+                        transform: "scale(1)",
+                    },
+                    "15%": {
+                        transform: "scaleX(1.1)",
+                    },
+                    "25%": {
+                        transform: "scale(1)",
+                    },
+                    "35%": {
+                        transform: "scaleY(1.2)",
+                    },
+                    "50%": {
+                        transform: "scale(1)",
+                    },
+                    "100%": {
+                        transform: "scale(1)",
+                    },
+                },
+                glow: {
+                    "0%, 100%": { filter: "brightness(1)" },
+                    "50%": { filter: "brightness(1.5)" },
+                },
+                glowLights: {
+                    "0%, 100%": { filter: "brightness(1)" },
+                    "50%": { filter: "brightness(1.1)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -404,6 +499,13 @@ const config: Config = {
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
                 linesColor: "linesColor 3000ms ease-in infinite",
+                wave: "wave 20s ease-in-out infinite",
+                wobble: "scale .7s ease-in infinite",
+                glow: "glow 2s ease-in-out infinite",
+                glowLights: "glowLights 1500ms ease-in infinite",
+                blink1: "glow 600ms infinite",
+                blink2: "glow 600ms 200ms infinite",
+                blink3: "glow 600ms 400ms infinite",
             },
         },
         backgroundImage: {
@@ -447,7 +549,12 @@ const config: Config = {
                 "linear-gradient(to right, #4F0A86 0%, #20003F 50%, transparent 50%, transparent 100%)",
             serviceCardGradientLight:
                 "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 24%, #FBF9FF 50%, transparent 50%, transparent 100%)",
+            discountModalBgGradient:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            discountModalBgGradientLight:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
         },
+
         backgroundSize: {
             "size-200": "200% 200%",
         },
@@ -462,7 +569,7 @@ const config: Config = {
             nocompatible: true,
             preferredStrategy: "pseudoelements",
         }),
-        plugin(function ({ matchUtilities, theme }) {
+        plugin(function ({ matchUtilities, theme, addUtilities }) {
             matchUtilities(
                 {
                     "animate-delay": value => ({
@@ -471,6 +578,20 @@ const config: Config = {
                 },
                 { values: theme("transitionDelay") }
             );
+            addUtilities({
+                ".border-dash-horizontal": {
+                    borderStyle: "dashed",
+                    borderWidth: "1px 0", // Верхній і нижній бордер
+                    borderImage:
+                        "repeating-linear-gradient(90deg, #5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+                ".border-dash-vertical": {
+                    borderStyle: "dashed",
+                    borderWidth: "0 1px", // Лівий і правий бордер
+                    borderImage:
+                        "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
         }),
     ],
 };

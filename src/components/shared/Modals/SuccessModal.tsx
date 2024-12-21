@@ -6,11 +6,11 @@ import {
     ModalHeader,
     useDisclosure,
 } from "@nextui-org/react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 
 import { IconCloseX } from "../Icons/IconCloseX";
-import { IconHeart } from "../Icons/IconHeart";
 import { BgImagesDesktop } from "./modalBgImages/notificationModals/BgImagesDesktop";
 import { BgImagesMobile } from "./modalBgImages/notificationModals/BgImagesMobile";
 import { BgImagesTablet } from "./modalBgImages/notificationModals/BgImagesTablet";
@@ -51,7 +51,7 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                     "bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80",
             }}
         >
-            <ModalContent className="relative w-full h-full m-0">
+            <ModalContent className="relative w-full h-full m-0 pc:ml-[80px] desk:ml-[120px]">
                 <BgImagesMobile />
                 <BgImagesTablet />
                 <BgImagesDesktop />
@@ -63,7 +63,7 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                         aria-label="close button"
                         className="cursor-pointer flex justify-center items-center absolute top-[2px] right-4 h-12 w-12 p-3 bg-transparent icon-hover-rounded-purple"
                     >
-                        <IconCloseX />
+                        <IconCloseX className="stroke-[2px] size-6" />
                     </button>
                 </ModalHeader>
                 <ModalBody className="flex flex-col items-center gap-0 min-h-[324px] p-0">
@@ -73,7 +73,13 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                     <p className="text-base text-center">
                         {getTranslation("waitResponse")}
                     </p>
-                    <IconHeart className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8" />{" "}
+                    <Image
+                        src="/images/christmas/christmasHeart.png"
+                        alt="christmas Heart"
+                        width={178}
+                        height={161}
+                        className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8"
+                    />
                 </ModalBody>
             </ModalContent>
         </Modal>
