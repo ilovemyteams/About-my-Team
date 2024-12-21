@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { ComponentType, useEffect, useState } from "react";
 
 import { wishesData } from "@/src/mockedData/wishesData";
@@ -28,6 +29,11 @@ export const ChristmasToyButton = ({
     return (
         <Link
             href={`/events/wish/${randomWishId}`}
+            onClick={() =>
+                sendGTMEvent({
+                    event: "christmas_toys_click",
+                })
+            }
             id={id}
             aria-label={id}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className} transition ease-out duration-300`}

@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -33,6 +34,9 @@ export const DiscountModal = ({
             return;
         }
         onOpenNextStep();
+        sendGTMEvent({
+            event: "get_christmas_discount_click",
+        });
     };
     return (
         <ModalBase

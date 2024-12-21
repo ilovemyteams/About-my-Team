@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import { ErrorMessage, Field } from "formik";
 
 interface CustomFieldProps {
@@ -44,6 +45,12 @@ export const ChristmasCustomField = ({
                 autoComplete="on"
                 placeholder={placeholder}
                 onFocus={onFocusField}
+                onBlur={() =>
+                    sendGTMEvent({
+                        event: `landing_form_${name}_field_filled`,
+                        data: value,
+                    })
+                }
                 className={`custom-autofill block focus:placeholder-transparent appearance-none w-full !bg-transparent text-purple-stroke outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
             ></Field>
 
