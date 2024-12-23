@@ -28,6 +28,8 @@ export const WishCard = ({ text, imageId }: WishCardProps) => {
             <div className=" absolute bottom-[10px] tab:bottom-[4.5%] left-1/2 -translate-x-1/2">
                 <SharePopover
                     gtmEvent="christmas_card_share_button_click"
+                    utmMedium="christmas_wish_card_share"
+                    utmCampaign="christmas"
                     className="text-greyLight"
                     trigerShowShareText={false}
                 />
