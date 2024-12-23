@@ -195,7 +195,11 @@ export const SharePopover = ({
                     <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
-                    <CopyLinkButton link={urlShare}>
+                    <CopyLinkButton
+                        link={urlShare}
+                        utmMedium={utmMedium}
+                        utmCampaign={utmCampaign}
+                    >
                         <div className="flex h-12 border border-purple-strokeLight dark:border-purple-stroke">
                             <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px] text-purple-130 dark:text-purple-50">
                                 <IconLink />
