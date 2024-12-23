@@ -34,12 +34,16 @@ export const SharePopover = ({
     trigerShowShareText,
     hiddenTextForMemberModal,
     gtmEvent,
+    utmMedium,
+    utmCampaign,
 }: {
     className: string;
     id?: string;
     trigerShowShareText: boolean;
     hiddenTextForMemberModal?: boolean;
     gtmEvent?: string;
+    utmMedium?: string;
+    utmCampaign?: string;
 }) => {
     const getTranslation = useTranslations();
     const [isOpen, setIsOpen] = useState(false);
@@ -115,7 +119,11 @@ export const SharePopover = ({
                                 className="flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
                             >
                                 <TelegramShareButton
-                                    url={urlShare}
+                                    url={
+                                        utmMedium && utmCampaign
+                                            ? `${urlShare}/?utm_source=telegram&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`
+                                            : urlShare
+                                    }
                                     className={shareButtonStyles}
                                 >
                                     <IconTelegram />
@@ -131,7 +139,11 @@ export const SharePopover = ({
                                 className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
                             >
                                 <FacebookShareButton
-                                    url={urlShare}
+                                    url={
+                                        utmMedium && utmCampaign
+                                            ? `${urlShare}/?utm_source=facebook&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`
+                                            : urlShare
+                                    }
                                     className={shareButtonStyles}
                                 >
                                     <IconFacebook />
@@ -147,7 +159,11 @@ export const SharePopover = ({
                                 className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center border-r text-purple-130 dark:text-purple-50 border-purple-strokeLight dark:border-purple-stroke"
                             >
                                 <LinkedinShareButton
-                                    url={urlShare}
+                                    url={
+                                        utmMedium && utmCampaign
+                                            ? `${urlShare}/?utm_source=linkedin&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`
+                                            : urlShare
+                                    }
                                     className={shareButtonStyles}
                                 >
                                     <IconLinkedin className="w-6 h-6" />
@@ -163,7 +179,11 @@ export const SharePopover = ({
                                 className=" flex w-[72px] tab:w-[90px] h-12 justify-center items-center text-purple-130 dark:text-purple-50"
                             >
                                 <WhatsappShareButton
-                                    url={urlShare}
+                                    url={
+                                        utmMedium && utmCampaign
+                                            ? `${urlShare}/?utm_source=whatsapp&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`
+                                            : urlShare
+                                    }
                                     className={shareButtonStyles}
                                     separator=" - "
                                 >
@@ -175,7 +195,11 @@ export const SharePopover = ({
                     <p className="text-base mt-9 mb-4 text-purple-200 dark:text-grey">
                         {getTranslation("SharePopover.copyLink")}
                     </p>
-                    <CopyLinkButton link={urlShare}>
+                    <CopyLinkButton
+                        link={urlShare}
+                        utmMedium={utmMedium}
+                        utmCampaign={utmCampaign}
+                    >
                         <div className="flex h-12 border border-purple-strokeLight dark:border-purple-stroke">
                             <div className=" flex w-[240px] tab:w-[312px] h-12 px-[14px] justify-start items-center gap-[6px] text-purple-130 dark:text-purple-50">
                                 <IconLink />
