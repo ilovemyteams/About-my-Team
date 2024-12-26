@@ -3,7 +3,7 @@ import { ServiceContentType } from "@/src/mockedData/servicesData";
 import { ChessboardListWithIconsLayout } from "./ChessboardListWithIcons/ChessboardListWithIconsLayout";
 import { ColumnList } from "./ColumnList/ColumnList";
 import { GridWithCheckmarkIcons } from "./GridWithCheckmarkIcons/GridWithCheckMarkIcons";
-import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout";
+import { ListWithArrowIconLayout } from "./ListWithArrowIconLayout/ListWithArrowIconLayout";
 import { LollipopCascadeList } from "./LollipopCascadeList/LollipopCascadeList";
 import { TextInLineListWithIcons } from "./TextInLineListWithIcons/TextInLineListWithIcons";
 import { TwoSideListWithLines } from "./TwoSideListWithLines/TwoSideListWithLines";
@@ -54,6 +54,17 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                 if (item.layout === 5) {
                     return (
                         <GridWithCheckmarkIcons key={index} content={item} />
+                    );
+                }
+
+                if (item.layout === 8) {
+                    return (
+                        <ListWithArrowIconLayout
+                            key={index}
+                            title={item.title}
+                            description={item.description}
+                            icon="check"
+                        />
                     );
                 }
             })}

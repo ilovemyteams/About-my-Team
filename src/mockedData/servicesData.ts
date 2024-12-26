@@ -91,7 +91,7 @@ export const servicesData: ServiceType[] = [
                         ],
                     },
                     {
-                        layout: 4,
+                        layout: 8,
                         title: "Чому це важливо?",
                         description: [
                             {
@@ -181,7 +181,7 @@ export const servicesData: ServiceType[] = [
                         ],
                     },
                     {
-                        layout: 4,
+                        layout: 8,
                         title: "Why this matters?",
                         description: [
                             {
@@ -271,7 +271,7 @@ export const servicesData: ServiceType[] = [
                         ],
                     },
                     {
-                        layout: 4,
+                        layout: 8,
                         title: "Dlaczego to ważne?",
                         description: [
                             {
@@ -1541,7 +1541,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: From $ 500 (depends on the complexity of the design and functionality).",
+                        text: "Price: from $ 500 (depends on the complexity of the design and functionality).",
                     },
                 ],
                 introduction:

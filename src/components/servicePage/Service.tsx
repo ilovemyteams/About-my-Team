@@ -27,6 +27,7 @@ export const Service = ({ service }: ServiceProps) => {
                         title={fullDescription.title}
                         text={fullDescription.introduction}
                         image={image}
+                        topText={fullDescription.topText}
                     />
                     <ServiceMainContent content={fullDescription.content} />
                     <ServiceCtaSection
