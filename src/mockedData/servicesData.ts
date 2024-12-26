@@ -1459,7 +1459,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 introduction:
-                    "Лендінг (або цільова сторінка) — це односторінковий сайт, який має на меті перетворити відвідувачів у клієнтів. Це ідеальний варіант для представлення одного продукту, послуги чи спеціальної пропозиції. \nЛендінги створені для швидкого та переконливого донесення цінності вашої пропозиції. Вони фокусують увагу відвідувача на ключових перевагах, мотивуючи до дії: купівлі, реєстрації, залишення заявки чи запису на консультацію.",
+                    "Лендінг (або цільова сторінка) — це односторінковий сайт, який має на меті перетворити відвідувачів у клієнтів. Це ідеальний варіант для представлення одного продукту, послуги чи спеціальної пропозиції.",
                 title: "<purple>Лендінг:</purple> що таке лендінг і кому він потрібен?",
                 ctaText:
                     "Замовляйте лендінг вже сьогодні та перетворіть відвідувачів на своїх клієнтів!",
@@ -1545,7 +1545,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 introduction:
-                    "A landing page is a single-page website that aims to convert visitors into customers. It is ideal for presenting a single product, service, or special offer. \nLanding pages are designed to quickly and convincingly communicate the value of your offer. They focus the visitor's attention on the key benefits, motivating them to take action: purchase, registration, leaving a request, or signing up for a consultation.",
+                    "A landing page is a single-page website that aims to convert visitors into customers. It is ideal for presenting a single product, service, or special offer.",
                 title: "<purple>Landing page:</purple> what is a landing page and who needs it?",
                 ctaText:
                     "Order your landing page today and turn your visitors into clients!",
@@ -1631,7 +1631,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 introduction:
-                    "Landing page (strona docelowa) to jednostronicowa strona internetowa, której celem jest przekształcenie odwiedzających w klientów. Idealnie nadaje się do prezentacji jednego produktu, usługi lub oferty specjalnej. \nLanding pages są stworzone, aby szybko i przekonująco przedstawić wartość Twojej oferty. Skupiają uwagę odwiedzającego na kluczowych korzyściach, motywując go do działania: zakupu, rejestracji, złożenia zgłoszenia lub zapisania się na konsultację.",
+                    "Landing page (strona docelowa) to jednostronicowa strona internetowa, której celem jest przekształcenie odwiedzających w klientów. Idealnie nadaje się do prezentacji jednego produktu, usługi lub oferty specjalnej.",
                 title: "<purple>Landing page:</purple> czym jest landing page i kto go potrzebuje?",
                 ctaText:
                     "Zamów landing page już dziś i zamień odwiedzających w klientów!",

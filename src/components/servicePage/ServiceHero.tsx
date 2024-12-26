@@ -35,7 +35,7 @@ export const ServiceHero = ({
                 <div className="tab:w-[50%] pc:w-[52.78%] desk:w-[47.75%] text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 ">
                     <p className=" whitespace-pre-wrap">{text}</p>
                     {topText && (
-                        <p className="flex flex-col mt-6 gap-4">
+                        <p className="flex flex-col mt-6 pc:mt-8 desk:mt-10 gap-4 pc:gap-6">
                             {topText.map((item, index) => {
                                 const Icon = defineServiceIcon(item.icon);
                                 return (
