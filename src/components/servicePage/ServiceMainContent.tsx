@@ -56,6 +56,10 @@ export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
                         <GridWithCheckmarkIcons key={index} content={item} />
                     );
                 }
+
+                if (item.layout === 8) {
+                    return <div key={index}>Layout with check icons</div>;
+                }
             })}
         </>
     );
