@@ -1488,7 +1488,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 6,
-                        title: "Як ми працюємо?",
+                        title: "Що входить в розробку лендінгу?",
                         description: [
                             {
                                 title: "Аналіз",
