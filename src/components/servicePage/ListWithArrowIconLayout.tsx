@@ -17,6 +17,7 @@ export const ListWithArrowIconLayout = ({
             {title && <LayoutTitle text={title} />}
             <div className="tab:flex">
                 <ListWithRedSquareBullets description={description} />
+
                 <div className="w-[76px] pc:w-[110px] mx-auto text-redLight dark:text-red">
                     <IconQADecoration className="tab:sticky tab:top-[88px] pc:top-2" />
                 </div>

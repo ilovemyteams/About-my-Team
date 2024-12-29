@@ -13,12 +13,17 @@ export interface ServiceLocalizationDataType {
     shortDescription: string;
     fullDescription: FullDescriptionDataType | null;
 }
+export interface TopTextType {
+    icon?: string;
+    text: string;
+}
 
 export interface FullDescriptionDataType {
     title: string;
     introduction: string;
     content: ServiceContentType[];
     ctaText: string;
+    topText?: TopTextType[];
 }
 
 export interface ServiceContentType {
@@ -42,25 +47,277 @@ export const servicesData: ServiceType[] = [
     {
         slug: "business-analysis",
         icon: "ba",
-        image: "",
-
+        image: "https://drive.google.com/uc?export=view&id=1_ykI2aXWvjw68w42pvdWt9ZfLf1DSDQF",
+        ctaButton: "order",
         ua: {
             name: "бізнес-аналіз",
             shortDescription:
                 "Аналітика допомагає бізнесу будувати роботу та розвиватись на фактах, а не на здогадах чи інтуїції",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Бізнес-аналіз:</purple> ефективні рішення для вашого бізнесу",
+                introduction:
+                    "В основі кожного успішного проєкту лежить глибоке розуміння бізнес-потреб. Ми допомагаємо визначити ваші цілі, знайти можливості для вдосконалення та створити чіткий план дій, який приведе до реальних результатів. \nНаш підхід до бізнес-аналізу базується на тісній співпраці з клієнтом. Ми досліджуємо ваш бізнес, аналізуємо поточні процеси, вивчаємо цільову аудиторію та конкурентів, щоб запропонувати ефективні рішення, які сприятимуть вашому зростанню.",
+                ctaText:
+                    "Замовляйте послугу бізнес-аналізу вже сьогодні, щоб отримати чіткий план дій, оптимізувати процеси та досягти реальних результатів!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Що включає послуга Бізнес-аналізу?",
+                        description: [
+                            {
+                                title: "Дослідження поточних бізнес-процесів",
+                                text: "Ми вивчаємо, як працює ваш бізнес зараз, щоб зрозуміти його сильні сторони та області, які потребують оптимізації.",
+                            },
+                            {
+                                title: "Визначення бізнес-вимог",
+                                text: "Працюємо з вами та зацікавленими сторонами, щоб сформулювати чіткі вимоги до продукту чи послуги.",
+                            },
+                            {
+                                title: "Розробка рішень",
+                                text: "Пропонуємо практичні та ефективні шляхи досягнення ваших цілей, адаптовані до специфіки вашого бізнесу.",
+                            },
+                            {
+                                title: "Підготовка документації",
+                                text: "Надаємо зрозумілі й деталізовані технічні матеріали, які полегшують роботу команди розробників.",
+                            },
+                            {
+                                title: "Аналіз ринку та конкурентів",
+                                text: "Допомагаємо вам зрозуміти ваші конкурентні переваги та знайти нові можливості для розвитку.",
+                            },
+                            {
+                                title: "Дорожня карта проєкту",
+                                text: "Створюємо чіткий план дій, який допоможе реалізувати всі етапи вашої ідеї у визначені терміни.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Чому це важливо?",
+                        description: [
+                            {
+                                title: "Ефективність ресурсів",
+                                text: "Допомагає зосередитися на ключових аспектах, що приносять максимальну цінність для вашого бізнесу.",
+                            },
+                            {
+                                title: "Зниження ризиків",
+                                text: " Забезпечує чітке планування та уникнення помилок, які можуть коштувати дорого.",
+                            },
+                            {
+                                title: "Покращення командної роботи",
+                                text: " Усі учасники концепції  розуміють свої задачі та мають спільне бачення результату.",
+                            },
+                            {
+                                title: "Гарантія відповідності потребам",
+                                text: "Кінцевий продукт буде максимально адаптований до потреб вашого бізнесу та клієнтів.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Чому варто обрати нас?",
+                        description: [
+                            {
+                                text: "Наші спеціалісти мають глибокі знання у бізнес-аналізі та технічному консалтингу.",
+                            },
+                            {
+                                text: "Кожен проєкт — унікальний, тому наші рішення адаптуються саме під вас.",
+                            },
+                            {
+                                text: "Ми підтримуємо постійний зв'язок із клієнтом і надаємо детальні звіти на кожному етапі.",
+                            },
+                            {
+                                text: "Використовуємо перевірені практики, зокрема Agile та Scrum, щоб швидко реагувати на зміни.",
+                            },
+                            {
+                                text: "Обравши нас, ви отримуєте не лише глибокий аналіз, а й команду, яка прагне зробити ваш бізнес сильнішим і ефективнішим.",
+                            },
+                            {
+                                text: "Ми не просто аналізуємо, а пропонуємо практичні дії, які ведуть до успіху.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "business analysis",
             shortDescription:
                 "Analytics helps the business to build its work and to develop itself based on the facts, but not the guesses or intuition",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Business analysis:</purple> effective solutions for your business",
+                introduction:
+                    "At the core of every successful project lies a deep understanding of business needs. We help you define your goals, identify improvement opportunities, and create a clear action plan that delivers real results. \nOur approach to business analysis is based on close cooperation with the client. We research your business, analyze current processes, study your target audience and competitors to offer effective solutions that will help you grow.",
+                ctaText:
+                    "Order a business analysis service today to get a clear action plan, optimize processes, and achieve real results!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "What the service includes?",
+                        description: [
+                            {
+                                title: "Analysis of current business processes",
+                                text: "We examine how your business operates now to understand its strengths and areas needing optimization.",
+                            },
+                            {
+                                title: "Defining business requirements",
+                                text: "We work with you and stakeholders to formulate clear requirements for a product or service.",
+                            },
+                            {
+                                title: "Solution development",
+                                text: "We offer practical and effective ways to achieve your goals, tailored to the specifics of your business.",
+                            },
+                            {
+                                title: "Documentation preparation",
+                                text: "We provide clear and detailed technical materials to streamline the work of the development team.",
+                            },
+                            {
+                                title: "Market and competitor analysis",
+                                text: "We help you understand your competitive advantages and identify new growth opportunities.",
+                            },
+                            {
+                                title: "Project roadmap",
+                                text: "We create a detailed action plan to execute all stages of your idea within the defined timeline.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Why this matters?",
+                        description: [
+                            {
+                                title: "Resource efficiency",
+                                text: "Focuses on the key aspects that bring maximum value to your business.",
+                            },
+                            {
+                                title: "Risk reduction",
+                                text: " Ensures precise planning and avoids costly mistakes.",
+                            },
+                            {
+                                title: "Improved team collaboration",
+                                text: " All project participants understand their tasks and share a common vision of success.",
+                            },
+                            {
+                                title: "Guaranteed alignment with needs",
+                                text: "The final product will be fully tailored to the needs of your business and customers.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Why choose us?",
+                        description: [
+                            {
+                                text: "Our specialists have deep expertise in business analysis and technical consulting.",
+                            },
+                            {
+                                text: "Every project is unique, so our solutions are customized specifically for you.",
+                            },
+                            {
+                                text: "We maintain constant communication with clients and provide detailed reports at every stage.",
+                            },
+                            {
+                                text: "We use proven practices, including Agile and Scrum, to quickly adapt to changes.",
+                            },
+                            {
+                                text: "By choosing us, you gain not only a thorough analysis but also a team dedicated to making your business stronger and more efficient.",
+                            },
+                            {
+                                text: "We don’t just analyze – we propose practical steps that lead to success.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "analiza biznesowa",
             shortDescription:
                 "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Analiza biznesowa:</purple> skuteczne rozwiązania dla Twojej firmy",
+                introduction:
+                    "Każdy udany projekt opiera się na dogłębnym zrozumieniu potrzeb biznesowych. Pomagamy określić Twoje cele, znaleźć możliwości poprawy i stworzyć jasny plan działania,  który przyniesie realne rezultaty. \nNasze podejście do analizy biznesowej opiera się na ścisłej współpracy z klientem. Badamy Twoją firmę, analizujemy bieżące procesy, badamy grupę docelową i konkurencję, aby zaoferować skuteczne rozwiązania, które pomogą Ci się rozwijać.",
+                ctaText:
+                    "Zamów usługę analizy biznesowej już dziś, aby uzyskać jasny plan działania, zoptymalizować procesy i osiągnąć rzeczywiste wyniki!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Co obejmuje usługa?",
+                        description: [
+                            {
+                                title: "Badanie bieżących procesów biznesowych",
+                                text: "Badamy, w jaki sposób Twoja firma działa obecnie, aby zrozumieć jej mocne strony i obszary wymagające optymalizacji.",
+                            },
+                            {
+                                title: "Identyfikacja wymagań biznesowych",
+                                text: "Współpracujemy z Tobą i Twoimi interesariuszami w celu sformułowania jasnych wymagań dotyczących produktu lub usługi.",
+                            },
+                            {
+                                title: "Opracowanie rozwiązania",
+                                text: "Oferujemy praktyczne i skuteczne sposoby osiągnięcia celów, dostosowane do specyfiki Twojej firmy.",
+                            },
+                            {
+                                title: "Przygotowanie dokumentacji",
+                                text: "Zapewniamy jasne i szczegółowe materiały techniczne, które ułatwiają pracę zespołu programistów.",
+                            },
+                            {
+                                title: "Analiza rynku i konkurencji",
+                                text: "Pomagamy zrozumieć przewagi konkurencyjne i znaleźć nowe możliwości rozwoju.",
+                            },
+                            {
+                                title: "Mapa drogowa projektu",
+                                text: "Tworzymy przejrzysty plan działania, który pozwala zrealizować wszystkie etapy Twojego pomysłu w określonym czasie.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Dlaczego to ważne?",
+                        description: [
+                            {
+                                title: "Efektywność zasobów",
+                                text: "Pomaga skupić się na kluczowych aspektach, które wnoszą największą wartość do Twojego biznesu.",
+                            },
+                            {
+                                title: "Redukcja ryzyka",
+                                text: "Zapewnia jasne planowanie i unikanie błędów, które mogą być kosztowne.",
+                            },
+                            {
+                                title: "Lepsza praca zespołowa",
+                                text: "Wszyscy uczestnicy koncepcji rozumieją swoje zadania i mają wspólną wizję wyniku.",
+                            },
+                            {
+                                title: "Dostosowanie do potrzeb",
+                                text: "Produkt końcowy będzie w pełni dostosowany do potrzeb Twojej firmy i klientów.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Dlaczego warto wybrać nas?",
+                        description: [
+                            {
+                                text: "Nasi eksperci posiadają głęboką wiedzę z zakresu analizy biznesowej i doradztwa technicznego.",
+                            },
+                            {
+                                text: "Każdy projekt jest unikalny, dlatego nasze rozwiązania są dostosowane do Twoich indywidualnych potrzeb.",
+                            },
+                            {
+                                text: "Utrzymujemy stałą komunikację z klientem i dostarczamy szczegółowe raporty na każdym etapie.",
+                            },
+                            {
+                                text: "Korzystamy ze sprawdzonych praktyk, takich jak Agile i Scrum, aby szybko reagować na zmiany.",
+                            },
+                            {
+                                text: "Wybierając nas, otrzymujesz nie tylko dogłębną analizę, ale także zespół, który jest zaangażowany w uczynienie Twojej firmy silniejszą i bardziej wydajną.",
+                            },
+                            {
+                                text: "Nie tylko analizujemy —  proponujemy praktyczne kroki prowadzące do sukcesu.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {
@@ -1184,24 +1441,265 @@ export const servicesData: ServiceType[] = [
     {
         slug: "landing",
         icon: "landing",
-        image: "",
+        image: "https://drive.google.com/uc?export=view&id=1Kgb4tXEmBn1hQmD2r_h2VAwwNYThl6Xt",
+        ctaButton: "write",
         ua: {
             name: "Лендінг ",
             shortDescription:
                 "Лендінг – односторінковий сайт, для швидкого залучення клієнтів і досягнення однієї конкретної мети. Розробляється прототип, затверджується, створюється унікальний дизайн, що відповідає потребам і приваблює користувачів.",
-            fullDescription: null,
+            fullDescription: {
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Термін розробки: 2-6 тижнів.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Ціна: від 500$ (залежить від складності дизайну та функціональності).",
+                    },
+                ],
+                introduction:
+                    "Лендінг (або цільова сторінка) — це односторінковий сайт, який має на меті перетворити відвідувачів у клієнтів. Це ідеальний варіант для представлення одного продукту, послуги чи спеціальної пропозиції.",
+                title: "<purple>Лендінг:</purple> що таке лендінг і кому він потрібен?",
+                ctaText:
+                    "Замовляйте лендінг вже сьогодні та перетворіть відвідувачів на своїх клієнтів!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Кому підходить лендінг?",
+                        description: [
+                            {
+                                title: "Фрілансери та спеціалісти",
+                                text: "Для самопрезентації фахівців у різних сферах: коучів, рекрутерів, юристів, менторів, консультантів, тощо. Він допоможе у просуванні свого соло-бізнесу та формуванні особистого бренду.",
+                            },
+                            {
+                                title: "Малий та середній бізнес",
+                                text: "Для швидкого тестувати нової послуги чи продукту, а також для реалізації акційних пропозицій.",
+                            },
+                            {
+                                title: "Стартап",
+                                text: "Для яскравої презентації своїх ідей, та привернення уваги інвесторів або перших клієнтів.",
+                            },
+                            {
+                                title: "Експерти та інфлюенсери",
+                                text: "Для збору лідів, запису на консультації чи продажу курсів.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "Що входить в розробку лендінгу?",
+                        description: [
+                            {
+                                title: "Аналіз",
+                                text: "Аналіз вашого продукту та конкурентів. Допомагаємо зрозуміти ринкову ситуацію та побудувати ефективну стратегію.",
+                            },
+                            {
+                                title: "Дизайн",
+                                text: "Розробка дизайну, який привертає увагу й підвищує конверсію.",
+                            },
+                            {
+                                title: "Розробка",
+                                text: "Створення адаптивного лендінгу, що виглядає ідеально як на комп’ютерах, так і на смартфонах.",
+                            },
+                            {
+                                title: "SEO",
+                                text: "SEO-оптимізація базового рівня для просування в пошукових системах.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Чому ми?",
+                        description: [
+                            {
+                                title: "Індивідуальний підхід",
+                                text: "Кожен проєкт базується на детальному аналізі вашої цільової аудиторії, потреб вашого бізнесу та конкурентного середовища.",
+                            },
+                            {
+                                title: "Сучасний дизайн і функціональність",
+                                text: "Ми пропонуємо стильний та адаптивний дизайн, що враховує останні тренди й забезпечує ідеальне відображення на будь-яких пристроях.",
+                            },
+                            {
+                                title: "Чітка структура, що конвертує",
+                                text: "Наші лендінги мають логічну структуру та інтерактивні елементи, які підштовхують відвідувачів до цільової дії.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "Landing page",
             shortDescription:
                 "A landing page is a single-page website designed to quickly attract customers and achieve one specific goal. It involves creating a prototype, approving it, and developing a unique design that meets the needs and attracts users.",
-            fullDescription: null,
+            fullDescription: {
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Timeframe: 2-6 weeks.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Price: from $ 500 (depends on the complexity of the design and functionality).",
+                    },
+                ],
+                introduction:
+                    "A landing page is a single-page website that aims to convert visitors into customers. It is ideal for presenting a single product, service, or special offer.",
+                title: "<purple>Landing page:</purple> what is a landing page and who needs it?",
+                ctaText:
+                    "Order your landing page today and turn your visitors into clients!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Who can use a landing page?",
+                        description: [
+                            {
+                                title: "Freelancers and specialists",
+                                text: "For self-presentation in various fields: coaches, recruiters, lawyers, mentors, consultants, etc. It helps in promoting solo businesses and building personal brands.",
+                            },
+                            {
+                                title: "Small and medium-sized businesses",
+                                text: "For quickly testing a new product or service, as well as to implement promotional offers.",
+                            },
+                            {
+                                title: "Startups ",
+                                text: "For a vivid presentation of your ideas and attracting the attention of investors or first customers.",
+                            },
+                            {
+                                title: "Experts and influencers",
+                                text: "For collecting leads, signing up for consultations, or selling courses.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "What is included in the development of a landing page?",
+                        description: [
+                            {
+                                title: "Analysis",
+                                text: "Analysis of your product and competitors. We help you understand the market situation and build an effective strategy.",
+                            },
+                            {
+                                title: "Design",
+                                text: "Development of a design that attracts attention and increases conversions.",
+                            },
+                            {
+                                title: "Development",
+                                text: "Creating a responsive landing page that looks perfect on both desktops and smartphones.",
+                            },
+                            {
+                                title: "SEO",
+                                text: "SEO optimization of the basic level for promotion in search engines.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Why choose us?",
+                        description: [
+                            {
+                                title: "Individual approach",
+                                text: "Each project is based on a detailed analysis of your target audience, business needs, and competitive environment.",
+                            },
+                            {
+                                title: "Modern design and functionality",
+                                text: "We offer a stylish and responsive design that incorporates the latest trends and ensures flawless display on any device.",
+                            },
+                            {
+                                title: "Clear, conversion-driven structure",
+                                text: "Our landing pages have a logical structure and interactive elements that guide visitors toward taking the desired action.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "Landing Page",
             shortDescription:
                 "Landing Page to jednostronicowa strona internetowa, stworzona w celu szybkiego przyciągnięcia klientów i osiągnięcia konkretnego celu. Tworzony jest prototyp, który po zatwierdzeniu zostaje przekształcony w unikalny projekt graficzny, dostosowany do potrzeb i przyciągający użytkowników.",
-            fullDescription: null,
+            fullDescription: {
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Ramy czasowe: 2-6 tygodni.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Cena: od 500 USD (w zależności od złożoności projektu i funkcjonalności).",
+                    },
+                ],
+                introduction:
+                    "Landing page (strona docelowa) to jednostronicowa strona internetowa, której celem jest przekształcenie odwiedzających w klientów. Idealnie nadaje się do prezentacji jednego produktu, usługi lub oferty specjalnej.",
+                title: "<purple>Landing page:</purple> czym jest landing page i kto go potrzebuje?",
+                ctaText:
+                    "Zamów landing page już dziś i zamień odwiedzających w klientów!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Kto może korzystać z landing page?",
+                        description: [
+                            {
+                                title: "Freelancerzy i profesjonaliści",
+                                text: "Do autoprezentacji specjalistów z różnych dziedzin: coachów, rekruterów, prawników, mentorów, konsultantów itp. Strona pomoże w promocji indywidualnego biznesu i budowie marki osobistej.",
+                            },
+                            {
+                                title: "Małe i średnie firmy",
+                                text: "Do szybkiego testowania nowej usługi lub produktu, a także do wdrażania ofert promocyjnych.",
+                            },
+                            {
+                                title: "Start-upy",
+                                text: "Do żywej prezentacji swoich pomysłów i przyciągnięcia uwagi inwestorów lub pierwszych klientów.",
+                            },
+                            {
+                                title: "Eksperci i influencerzy",
+                                text: "Do zbierania leadów, zapisów na konsultacje czy sprzedaży kursów.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 6,
+                        title: "Co zawiera tworzenie landing page?",
+                        description: [
+                            {
+                                title: "Analiza",
+                                text: "Analiza produktu oraz konkurencji.  Pomagamy zrozumieć sytuację rynkową i zbudować skuteczną strategię.",
+                            },
+                            {
+                                title: "Projektu",
+                                text: "Opracowanie projektu, który przyciąga uwagę i zwiększa konwersje.",
+                            },
+                            {
+                                title: "Rozwój",
+                                text: "Stworzenie responsywnej strony docelowej, która wygląda idealnie zarówno na komputerach, jak i smartfonach.",
+                            },
+                            {
+                                title: "SEO",
+                                text: "Optymalizacja SEO na poziomie podstawowym pod kątem promocji w wyszukiwarkach.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Dlaczego my?",
+                        description: [
+                            {
+                                title: "Indywidualne podejście",
+                                text: "Każdy projekt opiera się na szczegółowej analizie grupy docelowej, potrzeb biznesowych i otoczenia konkurencyjnego.",
+                            },
+                            {
+                                title: "Nowoczesny wygląd i funkcjonalność",
+                                text: "Oferujemy stylowy i responsywny design, który uwzględnia najnowsze trendy i zapewnia doskonałe wyświetlanie na każdym urządzeniu.",
+                            },
+                            {
+                                title: "Przejrzysta struktura, która konwertuje",
+                                text: "Nasze strony docelowe mają logiczną strukturę i interaktywne elementy, które popychają odwiedzających do docelowej akcji.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {

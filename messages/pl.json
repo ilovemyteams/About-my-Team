@@ -42,7 +42,8 @@
         "title": "Opowiedz nam o swoich wyjątkowych umiejętnościach i dołącz do naszego zespołu"
     },
     "WriteUs": {
-        "title": "Chcę zostać zadowolonym klientem"
+        "titleIWant": "Chcę zostać zadowolonym klientem",
+        "titleAreYouReady": "Gotowy do zlecenia projektu?"
     },
     "Services": {
         "pageTitle": "Usługi",

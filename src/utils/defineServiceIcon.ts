@@ -1,5 +1,6 @@
 import { IconAvailability } from "../components/shared/Icons/IconAvailability";
 import { IconBA } from "../components/shared/Icons/IconBA";
+import { IconClock } from "../components/shared/Icons/IconClock";
 import { IconComplex } from "../components/shared/Icons/IconComplex";
 import { IconCustomerSupport } from "../components/shared/Icons/IconCustomerSupport";
 import { IconDesign } from "../components/shared/Icons/IconDesign";
@@ -15,6 +16,7 @@ import { IconTesting1 } from "../components/shared/Icons/IconTesting1";
 import { IconTesting2 } from "../components/shared/Icons/IconTesting2";
 import { IconTesting3 } from "../components/shared/Icons/IconTesting3";
 import { IconTesting4 } from "../components/shared/Icons/IconTesting4";
+import { IconWallet } from "../components/shared/Icons/IconWallet";
 import { IconWebsite } from "../components/shared/Icons/IconWebsite";
 
 export const defineServiceIcon = (name: string | undefined) => {
@@ -53,6 +55,10 @@ export const defineServiceIcon = (name: string | undefined) => {
             return IconPlannedSupport;
         case "support4":
             return IconAvailability;
+        case "clock":
+            return IconClock;
+        case "currency":
+            return IconWallet;
         default:
             return IconHeartWeb;
     }

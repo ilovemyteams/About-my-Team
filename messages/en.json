@@ -39,7 +39,8 @@
         "title": "Tell us about your unique skills and join our team"
     },
     "WriteUs": {
-        "title": "I want to become your satisfied client"
+        "titleIWant": "I want to become your satisfied client",
+        "titleAreYouReady": "Ready to order a project?"
     },
     "Services": {
         "pageTitle": "Services",
