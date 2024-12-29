@@ -1,8 +1,6 @@
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/heroSection/HeroSection";
-import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
-import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
 import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSection";
@@ -17,16 +15,14 @@ export default function Home() {
             <BackgroundFiguresMain />
             <HeroSection />
             <MissionSection />
-            <JoinTheTeamSection />
             <PortfolioSection />
             <FeedbackSection />
-            <WriteUsSection />
+            <WriteUsSection text="titleIWant" />
             <ServicesSection />
             <OurTeamSection />
-            <JoinTheTeamSection />
             <StagesSection />
             <QaSection />
-            <HireUsSection />
+            <WriteUsSection text="titleAreYouReady" />
         </>
     );
 }
