@@ -28,7 +28,7 @@ export default function About() {
             <ChronologySection />
             <TeamSection />
             <PresentationSection />
-            <WriteUsSection />
+            <WriteUsSection text="titleIWant" />
         </>
     );
 }
