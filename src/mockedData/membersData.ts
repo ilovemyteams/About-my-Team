@@ -1159,12 +1159,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "hanna-truba-marketer",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mXIyJyg9SoQzeIQxZ116CofCnMu7pbwJ",
             position: "Marketer",
             categoryName: "marketer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: [],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/hanna-truba-032964227",
@@ -1205,13 +1205,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olena-holubonkova-marketer",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mZzLYsWXd5X0LxLCo7fYxz5A9cSStQBJ",
             position: "Marketer",
             categoryName: "marketer",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "10",
+            projectsExperience: [],
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olena-holubonkova/",
                 telegram: "https://t.me/Golubyonkova",
@@ -2237,12 +2237,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "yuliya-borys-business-analytic",
-            projectId: ["1"],
+            projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: [],
             pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/yuliya-borys-0ba014213/",
@@ -2323,6 +2323,53 @@ export const membersData: MemberDataItemType[] = [
             about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
             services:
                 "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "solomiia-lutska-project-manager",
+            projectId: ["1"],
+            imageURL:
+                "https://drive.google.com/uc?export=view&id=1IFJ4LN6iO0QdXeifL7PU-XguBaJzZrY6",
+            position: "Project Manager/ Scrum Master",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/solomiia-lutska",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Miro",
+                "Figma",
+                "Trello",
+                "Google Sheets/Docs",
+                "Slack",
+                "Teams",
+                "Microsoft Office",
+            ],
+        },
+        ua: {
+            name: "Соломія Луцька ",
+            about: "",
+            services:
+                "В якості Project Manager я організовую роботу команди, проводжу щоденні мітинги для синхронізації роботи, забезпечую ефективну комунікацію між розробниками, дизайнерами та іншими учасниками. Координую виконання певних завдань, дотримання термінів і займаюся загальною організацією процесів. Моя роль включає планування, управління ризиками та контроль прогресу, щоб забезпечити якісну реалізацію проєкту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Solomiia Lutska",
+            about: "",
+            services:
+                "As a Project Manager, I organize the team's work, conduct daily meetings to synchronize activities, and ensure effective communication between developers, designers, and other participants. I coordinate the completion of specific tasks, adherence to deadlines, and manage the overall organization of processes. My role includes planning, risk management, and progress control to ensure the successful implementation of the project.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Solomiia Lutska",
+            about: "",
+            services:
+                "Jako Project Manager organizuję pracę zespołu, prowadzę codzienne spotkania w celu synchronizacji działań oraz zapewniam skuteczną komunikację między programistami, projektantami i innymi uczestnikami. Koordynuję realizację konkretnych zadań, dotrzymywanie terminów i zajmuję się ogólną organizacją procesów. Moja rola obejmuje planowanie, zarządzanie ryzykiem i kontrolę postępów, aby zapewnić pomyślną realizację projektu.",
             team: "I Love My Team",
         },
     },
