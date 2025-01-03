@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useLocale } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
@@ -9,7 +10,7 @@ import { ModalBase } from "../../shared/Modals/ModalBase";
 import { GreetingModal } from "./greetingModal/GreetingModal";
 
 const SESSION_LANG_KEY = "langOpened";
-const GREETING_MODAL_DELAY = 30 * 1000;
+const GREETING_MODAL_DELAY = 1 * 1000;
 
 export const GreetingPortal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +20,16 @@ export const GreetingPortal = () => {
     const locale = useLocale();
 
     const onCloseModal = () => setIsModalOpen(false);
-
+    const onCloseModalView = () => {
+        setIsModalOpen(false);
+        sendGTMEvent({
+            event: "christmas_pop_up_click",
+            page_location: pathname,
+        });
+        setTimeout(() => {
+            window.open("https://www.youtube.com/live/fhSUl-Hx7cw", "_blank");
+        }, 0);
+    };
     const onOpenModal = () => {
         setIsModalOpen(true);
     };
@@ -27,18 +37,12 @@ export const GreetingPortal = () => {
     useEffect(() => {
         const langOpened = sessionStorage.getItem(SESSION_LANG_KEY);
 
-        const timeout = timeoutId.current;
-
-        if (pathname.split("/")[1] === "events" && timeout) {
-            clearTimeout(timeout);
-        }
-
         if (langOpened) {
             const sessionLang = langOpened.split(",");
             const isInclude = sessionLang.includes(locale);
 
             if (!isInclude) {
-                if (pathname.split("/")[1] !== "events" && !timeoutId.current) {
+                if (!timeoutId.current) {
                     timeoutId.current = setTimeout(
                         onOpenModal,
                         GREETING_MODAL_DELAY
@@ -50,7 +54,7 @@ export const GreetingPortal = () => {
         }
 
         if (!langOpened) {
-            if (pathname.split("/")[1] !== "events" && !timeoutId.current) {
+            if (!timeoutId.current) {
                 timeoutId.current = setTimeout(
                     onOpenModal,
                     GREETING_MODAL_DELAY
@@ -67,7 +71,10 @@ export const GreetingPortal = () => {
             appearance="center"
             className="relative bg-white-100 dark:bg-purple-200 overflow-hidden"
         >
-            <GreetingModal onCloseModal={onCloseModal} />
+            <GreetingModal
+                onCloseModal={onCloseModal}
+                onCloseModalView={onCloseModalView}
+            />
         </ModalBase>
     );
 };

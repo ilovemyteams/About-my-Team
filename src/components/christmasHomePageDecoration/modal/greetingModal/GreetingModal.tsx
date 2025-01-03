@@ -1,10 +1,8 @@
 "use client";
 
-import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
 import { ColoredText } from "@/src/components/christmas/shared/ColoredText";
-import { Link, usePathname } from "@/src/navigation";
 
 import { Button } from "../../../shared/Button";
 import { IconCloseX } from "../../../shared/Icons/IconCloseX";
@@ -13,11 +11,14 @@ import { Decoration } from "./Decoration";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
+    onCloseModalView: () => void;
 }
 
-export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
+export const GreetingModal = ({
+    onCloseModal,
+    onCloseModalView,
+}: GreetingModalProps) => {
     const getTranslation = useTranslations("Christmas");
-    const path = usePathname();
 
     return (
         <div className="overflow-hidden h-auto mx-auto mt-[99px] tab:mt-[98px] pc:mt-[83px] desk:mt-[51px]">
@@ -43,19 +44,10 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 <p className=" text-purple-130 dark:text-purple-100 mb-[35px] tab:mb-[25px] desk:text-lg25 text-sm tab:text-base desk:text-lg desk:font-[400] max-w-[80%] mx-auto">
                     {getTranslation("greetingCaption")}
                 </p>
-                <Link
-                    href="/events"
-                    onClick={() =>
-                        sendGTMEvent({
-                            event: "christmas_pop_up_click",
-                            page_location: path,
-                        })
-                    }
-                >
-                    <Button color="grey" onClick={onCloseModal}>
-                        {getTranslation("greetingBtn")}
-                    </Button>
-                </Link>
+
+                <Button color="grey" onClick={onCloseModalView}>
+                    {getTranslation("greetingBtn")}
+                </Button>
             </div>
         </div>
     );
