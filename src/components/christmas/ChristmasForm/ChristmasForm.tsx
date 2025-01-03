@@ -214,7 +214,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
                         </div>
                         <ChristmasSubmitBtn
                             isActiveLoader={isSubmitting}
-                            isDisabled={!(dirty && isValid) || isSubmitting}
+                            isDisabled
                             title={getTranslation("Christmas.submitBtn")}
                         />
                     </Form>
