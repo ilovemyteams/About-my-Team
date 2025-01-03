@@ -13,6 +13,26 @@ export const ColoredText = ({ propName, className }: ColoredTextProps) => {
         red: chunk => (
             <span className="text-redLight dark:text-red">{chunk}</span>
         ),
+        redChudov: chunk => (
+            <a
+                href=" https://www.linkedin.com/in/chudov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-redLight dark:text-red uppercase underline"
+            >
+                {chunk}
+            </a>
+        ),
+        linkChudov: chunk => (
+            <a
+                href="https://www.choodov.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-redLight dark:text-red underline"
+            >
+                {chunk}
+            </a>
+        ),
     });
 
     return <p className={className}>{title}</p>;
