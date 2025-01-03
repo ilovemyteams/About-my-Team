@@ -77,16 +77,7 @@ export const ChristmasForm = ({ notificationHandler }: FormInModalProps) => {
             onSubmit={(values, actions) => submitForm(values, actions)}
             validationSchema={validationSchema}
         >
-            {({
-                values,
-                status,
-                setStatus,
-                dirty,
-                isValid,
-                errors,
-                touched,
-                isSubmitting,
-            }) => {
+            {({ values, status, setStatus, errors, touched, isSubmitting }) => {
                 return (
                     <Form className="flex flex-col items-center">
                         <ChristmasCustomField

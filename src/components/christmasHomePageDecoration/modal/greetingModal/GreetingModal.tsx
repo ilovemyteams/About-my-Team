@@ -3,7 +3,6 @@
 import { useTranslations } from "next-intl";
 
 import { ColoredText } from "@/src/components/christmas/shared/ColoredText";
-import { usePathname } from "@/src/navigation";
 
 import { Button } from "../../../shared/Button";
 import { IconCloseX } from "../../../shared/Icons/IconCloseX";
@@ -20,7 +19,6 @@ export const GreetingModal = ({
     onCloseModalView,
 }: GreetingModalProps) => {
     const getTranslation = useTranslations("Christmas");
-    const path = usePathname();
 
     return (
         <div className="overflow-hidden h-auto mx-auto mt-[99px] tab:mt-[98px] pc:mt-[83px] desk:mt-[51px]">
