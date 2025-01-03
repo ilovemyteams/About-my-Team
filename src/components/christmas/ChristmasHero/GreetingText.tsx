@@ -15,7 +15,7 @@ export const GreetingText = () => {
          tab:px-0 pc:mx-0 pc:pr-[50px] pc:pt-[150px]"
         >
             <div className="flex flex-col items-end mx-auto max-w-[320px] tab:max-w-[555px] pc:max-w-[444px] desk:max-w-[518px]">
-                <h2 className=" relative font-intro text-3xl28 mb-4 tab:text-6xln tab:mb-6  desk:text-[56px] desk:leading-[56px]">
+                <h2 className=" relative font-intro text-3xl28 mb-4 tab:text-6xln tab:mb-6  desk:text-[56px] desk:leading-[56px] whitespace-pre-wrap">
                     {title}
                 </h2>
                 <div className="relative w-full">
@@ -28,7 +28,7 @@ export const GreetingText = () => {
                     translate-y-[-10%] tab:w-[140px] tab:translate-y-[-20%] tab:translate-x-[80%]"
                     />
                 </div>
-                <p className="text-sm20 mb-3 tab:text-xl28 tab:mb-4 desk:text-2xl34 desk:mb-6">
+                <p className="text-sm20 mb-3 tab:text-xl28 tab:mb-4 desk:text-2xl34 desk:mb-6 whitespace-pre-wrap">
                     {getTranslation("heroText")}
                 </p>
                 <WinLandingBtn />
