@@ -1803,16 +1803,16 @@ export const servicesData: ServiceType[] = [
                         title: "Вартість і терміни залежать від:",
                         description: [
                             {
-                                title: "Складність проєкту:",
-                                text: "кількість сторінок, функціонал, інтеграція з сервісами, унікальний дизайн.",
+                                title: "Складність проєкту",
+                                text: "Кількість сторінок, функціонал, інтеграція з сервісами, унікальний дизайн.",
                             },
                             {
-                                title: "Обсягу робіт:",
-                                text: "створення з нуля чи реалізація за готовим технічним завданням.",
+                                title: "Обсягу робіт",
+                                text: "Створення з нуля чи реалізація за готовим технічним завданням.",
                             },
                             {
-                                title: "Терміновість:",
-                                text: "запуск невеликого шаблонного інтернет-магазину на 10-15 продуктів займе від 2х місяців і вартість його буде від 1600$.",
+                                title: "Терміновість",
+                                text: "Запуск невеликого шаблонного інтернет-магазину на 10-15 продуктів займе від 2х місяців і вартість його буде від 1600$.",
                             },
                         ],
                     },
@@ -1911,15 +1911,15 @@ export const servicesData: ServiceType[] = [
                         title: "Cost and timelines depend on:",
                         description: [
                             {
-                                title: "Project complexity:",
+                                title: "Project complexity",
                                 text: "Number of pages, functionality, integrations, unique design.",
                             },
                             {
-                                title: "Scope of work:",
+                                title: "Scope of work",
                                 text: "Creation from scratch or implementation based on a ready-made technical specification.",
                             },
                             {
-                                title: "Urgency:",
+                                title: "Urgency",
                                 text: "Launching a small template-based online store with 10–15 products takes at least two months, starting at $1,600.",
                             },
                         ],
@@ -2019,16 +2019,16 @@ export const servicesData: ServiceType[] = [
                         title: "Koszty i terminy zależą od:",
                         description: [
                             {
-                                title: "Złożoności projektu:",
-                                text: "liczby stron, funkcjonalności, integracji z usługami i unikalnego projektu.",
+                                title: "Złożoności projektu",
+                                text: "Liczby stron, funkcjonalności, integracji z usługami i unikalnego projektu.",
                             },
                             {
-                                title: "Zakresu prac:",
-                                text: "tworzenie od podstaw lub realizacja według gotowej specyfikacji.",
+                                title: "Zakresu prac",
+                                text: "Tworzenie od podstaw lub realizacja według gotowej specyfikacji.",
                             },
                             {
-                                title: "Pilności:",
-                                text: "uruchomienie małego sklepu na 10–15 produktów na bazie szablonu zajmie co najmniej 2 miesiące i będzie kosztować od 1600 USD.",
+                                title: "Pilności",
+                                text: "Uruchomienie małego sklepu na 10–15 produktów na bazie szablonu zajmie co najmniej 2 miesiące i będzie kosztować od 1600 USD.",
                             },
                         ],
                     },
