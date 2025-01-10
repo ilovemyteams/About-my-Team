@@ -431,11 +431,11 @@ export const servicesData: ServiceType[] = [
                         layout: 5,
                         description: [
                             {
-                                title: "Personalized Approach",
+                                title: "Personalized approach",
                                 text: "We tailor every project to your style, needs, and audience specifics, ensuring the design reflects your uniqueness.",
                             },
                             {
-                                title: "UX/UI Design",
+                                title: "UX/UI design",
                                 text: "We provide intuitive navigation and an attractive look that increases user engagement.",
                             },
                             {
@@ -443,7 +443,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Your design will look perfect on all devices, including smartphones, tablets, laptops, and monitors.",
                             },
                             {
-                                title: "SEO Optimization",
+                                title: "SEO optimization",
                                 text: "We develop a design that will help promote your website in search engines.",
                             },
                         ],
@@ -453,7 +453,7 @@ export const servicesData: ServiceType[] = [
                         title: "How do we work?",
                         description: [
                             {
-                                title: "Idea Analysis",
+                                title: "Idea analysis",
                                 text: "We analyze your goals, target audience, and desired outcome to deliver the best solution.",
                             },
                             {
@@ -461,7 +461,7 @@ export const servicesData: ServiceType[] = [
                                 text: "We create draft mockups to approve the structure and functionality.",
                             },
                             {
-                                title: "Design Implementation",
+                                title: "Design implementation",
                                 text: "We create a professional look for your product that meets modern trends and standards.",
                             },
                             {
@@ -472,10 +472,10 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "What Determines the price and timeline?",
+                        title: "What determines the price and timeline?",
                         description: [
                             {
-                                title: "Project Complexity",
+                                title: "Project complexity",
                                 text: "The number of pages or the need to create unique elements.",
                             },
                             {
@@ -490,7 +490,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 4,
-                        title: "Why Choose Us?",
+                        title: "Why choose us?",
                         description: [
                             {
                                 text: "We know how to turn your ideas into a stylish and effective visual product.",
@@ -1224,7 +1224,7 @@ export const servicesData: ServiceType[] = [
                         title: "What does the support service include?",
                         description: [
                             {
-                                title: "Technical Support",
+                                title: "Technical support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1242,7 +1242,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support1",
                             },
                             {
-                                title: "User Support",
+                                title: "User support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1260,7 +1260,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support2",
                             },
                             {
-                                title: "Planned Maintenance",
+                                title: "Planned maintenance",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1531,14 +1531,14 @@ export const servicesData: ServiceType[] = [
                 content: [
                     {
                         layout: 5,
-                        title: "What the Comprehensive Service Includes?",
+                        title: "What the comprehensive service includes?",
                         description: [
                             {
                                 title: "Brief",
                                 text: "After receiving the request, a business analyst contacts the client within the working day and helps complete a brief for product development.",
                             },
                             {
-                                title: "Requirements Collection and Description",
+                                title: "Requirements collection and description",
                                 text: "We outline the requirements for the website. Defining software requirements is the most critical stage before starting the website development process.",
                             },
                             {
@@ -1546,52 +1546,52 @@ export const servicesData: ServiceType[] = [
                                 text: "The designer develops user scenarios for the website, presents sketches, and demonstrates the website structure. At this stage, revisions can be discussed, and the layout or prototype can be approved.",
                             },
                             {
-                                title: "Solution Development",
+                                title: "Solution development",
                                 text: "Based on the requirements, we propose practical solutions tailored to the specifics of your business.",
                             },
                             {
-                                title: "Documentation Preparation",
+                                title: "Documentation preparation",
                                 text: "We provide clear and detailed materials that simplify the work for the development team and the testing of the final product.",
                             },
                             {
-                                title: "Website Testing",
+                                title: "Website testing",
                                 text: "After successfully completing the testing stage, the website is transferred to the client’s domain and integrated with hosting.",
                             },
                             {
-                                title: "Website Handover",
+                                title: "Website handover",
                                 text: "Upon passing testing and integrating all services, the website, along with all rights to it, is transferred to the client’s ownership.",
                             },
                             {
-                                title: "Website Support",
+                                title: "Website support",
                                 text: "In case of unforeseen situations or for expanding the functionality of an already launched website, the client can contact the developers to receive support and product enhancements.",
                             },
                         ],
                     },
                     {
                         layout: 8,
-                        title: "Why This Matters?",
+                        title: "Why this matters?",
                         description: [
                             {
                                 title: "Efficiency",
                                 text: "Creating a website requires diverse knowledge and skills, and a comprehensive approach to development greatly simplifies its promotion. A high-quality and modern website design attracts new users and encourages target actions on the site.",
                             },
                             {
-                                title: "Risk Reduction",
+                                title: "Risk reduction",
                                 text: "Developing a website with a cohesive team — from idea to implementation and subsequent support — minimizes risks, eliminating the need to hand over the product between designers, developers, and testers. Additionally, with a comprehensive service, you receive a product development guarantee and setup of auxiliary services like Google Analytics and server support.",
                             },
                             {
-                                title: "Improved Team Collaboration",
+                                title: "Improved team collaboration",
                                 text: "All team members understand their tasks and share a common vision of the result. Everyone is equally invested in creating and launching a quality product and maintaining positive interaction with the client and among themselves.",
                             },
                             {
-                                title: "Guaranteed Alignment with Needs",
+                                title: "Guaranteed alignment with needs",
                                 text: "The final product will be fully adapted to the needs of your business and end users.",
                             },
                         ],
                     },
                     {
                         layout: 2,
-                        title: "Why Choose Us?",
+                        title: "Why choose us?",
                         description: [
                             {
                                 text: "Our specialists have experience in business analysis, website development, and other IT products. We guarantee not only high-quality work but also a positive collaboration experience.",

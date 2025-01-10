@@ -647,7 +647,7 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Ile trwa stworzenie strony internetowej?",
             shortAnswerText: [
-                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Opracowanie 10-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
+                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Tworzenie dużej strony internetowej z ponad 10 stronami i formularzami rejestracyjnymi,, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
             ],
             imageAltText: "Ile trwa stworzenie strony internetowej?",
             fullAnswerTopText: [
@@ -710,7 +710,7 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "What are the terms of the development of the fully functional website?",
             shortAnswerText: [
-                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Usually, the development of a standardized business card website can take from several weeks to several months. Developing a 10-page website with registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
+                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Usually, the development of a standardized business card website can take from several weeks to several months. Development of a large website with 10+ pages and registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
             ],
             imageAltText:
                 "What are the terms of the development of the fully functional website?",
