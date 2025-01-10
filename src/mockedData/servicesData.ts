@@ -1749,7 +1749,7 @@ export const servicesData: ServiceType[] = [
                 content: [
                     {
                         layout: 5,
-                        title: "Основні етапи створення інтернет-магазину:",
+                        title: "Основні етапи створення інтернет-магазину",
                         description: [
                             {
                                 title: "Аналіз та планування",
@@ -1800,7 +1800,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "Вартість і терміни залежать від:",
+                        title: "Від чого залежить ціна і термін розробки інтернет-магазину?",
                         description: [
                             {
                                 title: "Складність проєкту",
@@ -1818,7 +1818,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 4,
-                        title: "Чому обирають нас:",
+                        title: "Чому обирають нас?",
                         description: [
                             {
                                 text: "Ми перетворимо ваші ідеї на стильні та  ефективні цифрові рішення.",
@@ -1857,7 +1857,7 @@ export const servicesData: ServiceType[] = [
                 content: [
                     {
                         layout: 5,
-                        title: "Key stages of creating an online store:",
+                        title: "Key stages of creating an online store",
                         description: [
                             {
                                 title: "Analysis and planning",
@@ -1908,7 +1908,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "Cost and timelines depend on:",
+                        title: "What determines the cost and tirm of developing an online store?",
                         description: [
                             {
                                 title: "Project complexity",
@@ -1926,7 +1926,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 4,
-                        title: "Why choose us:",
+                        title: "Why choose us?",
                         description: [
                             {
                                 text: "We transform your ideas into stylish and effective digital solutions.",
@@ -1965,7 +1965,7 @@ export const servicesData: ServiceType[] = [
                 content: [
                     {
                         layout: 5,
-                        title: "Główne etapy tworzenia sklepu internetowego:",
+                        title: "Główne etapy tworzenia sklepu internetowego",
                         description: [
                             {
                                 title: "Analiza i planowanie",
@@ -2016,7 +2016,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "Koszty i terminy zależą od:",
+                        title: "Od czego zależy cena i czas tworzenia sklepu internetowego?",
                         description: [
                             {
                                 title: "Złożoności projektu",
@@ -2034,7 +2034,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 4,
-                        title: "Why choose us:",
+                        title: "Dlaczego warto nas wybrać?",
                         description: [
                             {
                                 text: "Przekształcamy Twoje pomysły w stylowe i skuteczne rozwiązania cyfrowe.",
