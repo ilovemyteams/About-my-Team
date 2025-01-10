@@ -128,7 +128,7 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Potrzebuję strony internetowej. \nOd czego zacząć?",
             shortAnswerText: [
-                "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać.",
+                "Zacznij od szczerej odpowiedzi na następujące pytania: dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać.",
                 "Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
             ],
             imageAltText: "Potrzebuję strony internetowej. Od czego zacząć?",
@@ -544,7 +544,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Full Multi-Page Website",
+                            title: "Full multi-page website",
                             text: [
                                 {
                                     title: "Key features:",
@@ -999,7 +999,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym menedżerem, który pomoże ustalić szczegóły: jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
                             ],
                         },
                         {
@@ -1081,7 +1081,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "SEO optimization",
                             text: [
-                                " If you are planning to promote the website through search engines, it is important to set up SEO optimization and connect website analytics in advance, which also impacts the overall project cost.",
+                                "If you are planning to promote the website through search engines, it is important to set up SEO optimization and connect website analytics in advance, which also impacts the overall project cost.",
                             ],
                         },
                         {
@@ -1093,7 +1093,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Multilingual support",
                             text: [
-                                " If your business operates in more than one country, we recommend focusing on the English version as the primary one. Alternatively, you can plan for multiple languages from the start and decide which languages you need. Each language has its own writing characteristics, and often a layout that looks perfect in English may need adjustments when translated to other languages — words might not fit within buttons or blocks, requiring the redesign of layouts. Additionally, multilingual support complicates content management on the site and requires more time for text translation and testing (checking for SEO optimization and the ability to rephrase while maintaining business context). Multilingual functionality also makes feedback forms validation more complex, and filling in data from the keyboard by website users (such as reviews or comments).",
+                                "If your business operates in more than one country, we recommend focusing on the English version as the primary one. Alternatively, you can plan for multiple languages from the start and decide which languages you need. Each language has its own writing characteristics, and often a layout that looks perfect in English may need adjustments when translated to other languages — words might not fit within buttons or blocks, requiring the redesign of layouts. Additionally, multilingual support complicates content management on the site and requires more time for text translation and testing (checking for SEO optimization and the ability to rephrase while maintaining business context). Multilingual functionality also makes feedback forms validation more complex, and filling in data from the keyboard by website users (such as reviews or comments).",
                             ],
                         },
                         {
@@ -1105,7 +1105,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Integration with management systems",
                             text: [
-                                " If your website requires integrations with CRM systems, product accounting systems, or other external services, this will also be considered in the additional evaluation and depends on the complexity of the integration, as well as the cost of the system that needs to be integrated.",
+                                "If your website requires integrations with CRM systems, product accounting systems, or other external services, this will also be considered in the additional evaluation and depends on the complexity of the integration, as well as the cost of the system that needs to be integrated.",
                             ],
                         },
                     ],
@@ -1760,7 +1760,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Analizę istniejącego systemu",
                                     text: [
-                                        " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
+                                        "Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
                                     ],
                                 },
                                 {
@@ -2244,7 +2244,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Who Can Benefit from a Landing Page?",
+                    title: "Who can benefit from a landing page?",
                     data: [
                         {
                             title: "The landing page will be useful for entrepreneurs who want to launch their products quickly and companies that want to increase their visibility and customer trust. It is ideal for startups, small and medium-sized businesses, and anyone looking for an effective solution to present a product or service without high development costs. Read more about the benefits below.",
@@ -2287,7 +2287,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Timelines and Costs",
+                    title: "Timelines and costs",
                     data: [
                         {
                             title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $500 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
@@ -2295,7 +2295,7 @@ export const questionsData: QAItemType[] = [
                             decorate: 2,
                             text: [
                                 {
-                                    title: "Design Complexity: ",
+                                    title: "Design complexity: ",
                                     text: [
                                         "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
                                     ],
