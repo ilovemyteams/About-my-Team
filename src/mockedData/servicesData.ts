@@ -1442,7 +1442,7 @@ export const servicesData: ServiceType[] = [
         slug: "landing",
         icon: "landing",
         image: "https://drive.google.com/uc?export=view&id=1Kgb4tXEmBn1hQmD2r_h2VAwwNYThl6Xt",
-        ctaButton: "write",
+        ctaButton: "order",
         ua: {
             name: "Лендінг ",
             shortDescription:
