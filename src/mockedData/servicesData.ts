@@ -1730,6 +1730,7 @@ export const servicesData: ServiceType[] = [
         slug: "online-store",
         icon: "store",
         image: "https://drive.google.com/uc?export=view&id=10kiv1VKHWUDfkQlpeeE492JT5Qk433qF",
+        ctaButton: "order",
         ua: {
             name: "Інтернет-магазин",
             shortDescription:
@@ -1739,8 +1740,11 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "Розробка інтернет-магазину – це відповідальний процес, який потребує досвіду та професійного підходу. \nНеобхідно врахувати структуру сайту, каталог товарів, варіанти оплати, доставку, управління залишками, акції, індивідуальні пропозиції, а також розробити особистий кабінет покупця та адміністративну панель для власника бізнесу.",
                 topText: [
-                    { icon: "clock", text: "2-12міс" },
-                    { icon: "currency", text: "Від $1600 до десятків тисяч" },
+                    { icon: "clock", text: "Термін розробки: 2-12 місяців." },
+                    {
+                        icon: "currency",
+                        text: "Ціна: від 500$ до десятків тисяч (залежить від складності дизайну та функціональності).",
+                    },
                 ],
                 content: [
                     {
@@ -1844,10 +1848,10 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "Developing an online store is a responsible process that requires experience and a professional approach. \nIt is necessary to consider the website structure, product catalog, payment options, delivery, inventory management, promotions, personalized offers, as well as develop a customer account and an administrative panel for the business owner.",
                 topText: [
-                    { icon: "clock", text: "2-12 months" },
+                    { icon: "clock", text: "Timeframe: 2-12 months." },
                     {
                         icon: "currency",
-                        text: "From $1600 up to more than $10k",
+                        text: "Price: from $500 up to more than $10k (depends on the complexity of the design and functionality).",
                     },
                 ],
                 content: [
@@ -1952,10 +1956,10 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "Tworzenie sklepu internetowego to odpowiedzialny proces, który wymaga doświadczenia i profesjonalnego podejścia. \nNależy uwzględnić strukturę strony, katalog produktów, opcje płatności, dostawę, zarządzanie stanami magazynowymi, promocje, oferty indywidualne, a także stworzyć panel klienta oraz panel administracyjny dla właściciela biznesu.",
                 topText: [
-                    { icon: "clock", text: "2-12 miesięcy" },
+                    { icon: "clock", text: "Ramy czasowe: 2-12 miesięcy." },
                     {
                         icon: "currency",
-                        text: "Od 1600 do dziesiątek tysięcy dolarów",
+                        text: "Cena: od 1600 USD do dziesiątek tysięcy (w zależności od złożoności projektu i funkcjonalności).",
                     },
                 ],
                 content: [
