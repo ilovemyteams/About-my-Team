@@ -1844,7 +1844,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "An online store is a powerful tool for e-commerce. It involves developing a website with user-friendly navigation, responsive design, and features for managing products, shopping carts, and payments, ensuring your business operates effectively.",
             fullDescription: {
-                title: "<purple>Online Store:</purple> Turning your ideas into successful online solutions",
+                title: "<purple>Online store:</purple> turning your ideas into successful online solutions",
                 introduction:
                     "Developing an online store is a responsible process that requires experience and a professional approach. \nIt is necessary to consider the website structure, product catalog, payment options, delivery, inventory management, promotions, personalized offers, as well as develop a customer account and an administrative panel for the business owner.",
                 topText: [
@@ -1860,36 +1860,36 @@ export const servicesData: ServiceType[] = [
                         title: "Key stages of creating an online store:",
                         description: [
                             {
-                                title: "Analysis and Planning",
+                                title: "Analysis and planning",
                                 text: "At the initial stage, the goals and objectives of the project are defined, the market is analyzed, competitors and target audience needs are studied.A detailed plan is created considering the budget and timeline.",
                             },
                             {
-                                title: "Design and Prototyping",
+                                title: "Design and prototyping",
                                 text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen.The main focus is on user convenience(UX) and the site's aesthetic appearance (UI).",
                             },
                             {
-                                title: "Programming and Development",
+                                title: "Programming and development",
                                 text: "The technical implementation is carried out: the frontend(user interface), backend(server- side logic), and content management system(CMS) are developed.",
                             },
                             {
-                                title: "Integration with External Services",
+                                title: "Integration with external services",
                                 text: [
                                     {
-                                        text: "ERP Systems: Automating inventory, pricing, and other data management.",
+                                        text: "ERP systems: automating inventory, pricing, and other data management.",
                                         type: "listItem",
                                     },
                                     {
-                                        text: "Payment Systems: Connecting secure payment services.",
+                                        text: "Payment systems: connecting secure payment services.",
                                         type: "listItem",
                                     },
                                     {
-                                        text: "Delivery Services: Integration for calculating delivery costs and order tracking.",
+                                        text: "Delivery services: integration for calculating delivery costs and order tracking.",
                                         type: "listItem",
                                     },
                                 ],
                             },
                             {
-                                title: "Content Upload",
+                                title: "Content upload",
                                 text: "Data about products, including descriptions, photos, and specifications, are uploaded.This can be done manually or through automation.",
                             },
                             {
@@ -1897,11 +1897,11 @@ export const servicesData: ServiceType[] = [
                                 text: "Before launching the project, the functionality is thoroughly checked, and testing is done on various devices and popular browsers.",
                             },
                             {
-                                title: "Website Launch",
+                                title: "Website launch",
                                 text: "After testing, the website is published on hosting, and final settings are completed.",
                             },
                             {
-                                title: "Support and Development",
+                                title: "Support and development",
                                 text: "After launch, technical support, regular content updates, and optimization are provided to improve the website’s visibility in search engines.",
                             },
                         ],
