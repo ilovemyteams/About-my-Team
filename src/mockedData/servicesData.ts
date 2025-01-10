@@ -1621,7 +1621,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Kompleksowe i systematyczne podejście z ujednoliconym procesem zarządzania projektami (klient nie musi szukać wykonawców do poszczególnych zadań - wszystko wykonuje jeden wykonawca, łącznie z wyszukiwaniem lub polecaniem podwykonawców).",
             fullDescription: {
-                title: "<purple>Usługa kompleksowa:</purple> kompleksowe podejście do tworzenia produktów IT",
+                title: "<purple>Pełny zakres usług:</purple> kompleksowe podejście do tworzenia produktów IT",
                 introduction:
                     "U podstaw każdego udanego produktu leży pragnienie, aby uczynić go jak najbardziej wygodnym i użytecznym dla biznesu. Kompleksowe podejście do tworzenia produktów IT gwarantuje najlepsze rezultaty. \nOferujemy kompleksową usługę opartą na ścisłej współpracy z klientem, aby spełnić jego potrzeby biznesowe i przyspieszyć rozwój firmy.",
                 ctaText:
@@ -1629,7 +1629,7 @@ export const servicesData: ServiceType[] = [
                 content: [
                     {
                         layout: 5,
-                        title: "Co obejmuje kompleksowa usługa?",
+                        title: "Co obejmuje pełny zakres usług?",
                         description: [
                             {
                                 title: "Brief",
