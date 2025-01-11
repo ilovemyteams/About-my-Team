@@ -2006,24 +2006,331 @@ export const servicesData: ServiceType[] = [
     {
         slug: "online-store",
         icon: "store",
-        image: "",
+        image: "https://drive.google.com/uc?export=view&id=10kiv1VKHWUDfkQlpeeE492JT5Qk433qF",
+        ctaButton: "order",
         ua: {
             name: "Інтернет-магазин",
             shortDescription:
-                " Інтернет-магазин – потужний інструмент для онлайн-продажів. Розробляється сайт зі зручною навігацією, адаптивним дизайном і функціями для управління товарами, кошиком і оплатою, для ефективної роботи вашого бізнесу.",
-            fullDescription: null,
+                "Інтернет-магазин – потужний інструмент для онлайн-продажів. Розробляється сайт зі зручною навігацією, адаптивним дизайном і функціями для управління товарами, кошиком і оплатою, для ефективної роботи вашого бізнесу.",
+            fullDescription: {
+                title: "<purple>Інтернет-магазин:</purple> перетворюємо ваші ідеї на успішні онлайн-рішення",
+                introduction:
+                    "Розробка інтернет-магазину – це відповідальний процес, який потребує досвіду та професійного підходу. \nНеобхідно врахувати структуру сайту, каталог товарів, варіанти оплати, доставку, управління залишками, акції, індивідуальні пропозиції, а також розробити особистий кабінет покупця та адміністративну панель для власника бізнесу.",
+                topText: [
+                    { icon: "clock", text: "Термін розробки: 2-12 місяців." },
+                    {
+                        icon: "currency",
+                        text: "Ціна: від 500$ до десятків тисяч (залежить від складності дизайну та функціональності).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 5,
+                        title: "Основні етапи створення інтернет-магазину",
+                        description: [
+                            {
+                                title: "Аналіз та планування",
+                                text: "На початковому етапі визначаються цілі та завдання проєкту, аналізується ринок, вивчаються конкуренти й потреби цільової аудиторії. Створюється детальний план з урахуванням бюджету та термінів.",
+                            },
+                            {
+                                title: "Проєктування та дизайн",
+                                text: "Розробляється структура сайту, створюються макети сторінок, підбираються кольори, шрифти та візуальний стиль.Основна увага приділяється зручності користувачів(UX) та естетичному вигляду сайту(UI).",
+                            },
+                            {
+                                title: "Програмування та розробка",
+                                text: "Виконується технічна реалізація: розробляється зовнішній інтерфейс(frontend), серверна частина(backend) та впроваджується система управління контентом(CMS).",
+                            },
+                            {
+                                title: "Інтеграція із зовнішніми сервісами",
+                                text: [
+                                    {
+                                        text: "ERP-системи: автоматизація управління запасами, цінами та іншими даними.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Платіжні системи: підключення безпечних сервісів для приймання оплат.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Служби доставки: інтеграція для розрахунку вартості доставки та відстеження замовлень.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Наповнення контентом",
+                                text: "Завантажуються дані про товари: описи, фото, характеристики.Можливий як ручний, так і автоматизований підхід.",
+                            },
+                            {
+                                title: "Тестування",
+                                text: "Перед запуском проєкту проводиться ретельна перевірка функціоналу, тестування на різних пристроях і у всіх популярних браузерах.",
+                            },
+                            {
+                                title: "Запуск сайту",
+                                text: "Після тестування сайт публікується на хостингу, завершуються фінальні налаштування.",
+                            },
+                            {
+                                title: "Підтримка та розвиток",
+                                text: "Після запуску забезпечується технічна підтримка, регулярне оновлення контенту та оптимізація для поліпшення видимості сайту в пошукових системах.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Від чого залежить ціна і термін розробки?",
+                        description: [
+                            {
+                                title: "Складність проєкту",
+                                text: "Кількість сторінок, функціонал, інтеграція з сервісами, унікальний дизайн.",
+                            },
+                            {
+                                title: "Обсягу робіт",
+                                text: "Створення з нуля чи реалізація за готовим технічним завданням.",
+                            },
+                            {
+                                title: "Терміновість",
+                                text: "Запуск невеликого шаблонного інтернет-магазину на 10-15 продуктів займе від 2х місяців і вартість його буде від 1600$.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Чому обирають нас?",
+                        description: [
+                            {
+                                text: "Ми перетворимо ваші ідеї на стильні та  ефективні цифрові рішення.",
+                            },
+                            {
+                                text: "Ми розуміємо потреби вашого бізнесу і пропонуємо креативні ідеї, які працюють на ваш результат.",
+                            },
+                            {
+                                text: "Ми орієнтуємось на сучасні тенденції, поєднуючи їх із вашими запитами.",
+                            },
+                            {
+                                text: "З нами ви швидко досягнете поставлених цілей.",
+                            },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Замовляйте створення інтернет-магазину вже зараз, щоб отримати рішення, яке працює на ваш успіх!",
+            },
         },
         en: {
             name: "Online Store",
             shortDescription:
                 "An online store is a powerful tool for e-commerce. It involves developing a website with user-friendly navigation, responsive design, and features for managing products, shopping carts, and payments, ensuring your business operates effectively.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Online store:</purple> turning your ideas into successful online solutions",
+                introduction:
+                    "Developing an online store is a responsible process that requires experience and a professional approach. \nIt is necessary to consider the website structure, product catalog, payment options, delivery, inventory management, promotions, personalized offers, as well as develop a customer account and an administrative panel for the business owner.",
+                topText: [
+                    { icon: "clock", text: "Timeframe: 2-12 months." },
+                    {
+                        icon: "currency",
+                        text: "Price: from $500 up to more than $10k (depends on the complexity of the design and functionality).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 5,
+                        title: "Key stages of creating an online store",
+                        description: [
+                            {
+                                title: "Analysis and planning",
+                                text: "At the initial stage, the goals and objectives of the project are defined, the market is analyzed, competitors and target audience needs are studied.A detailed plan is created considering the budget and timeline.",
+                            },
+                            {
+                                title: "Design and prototyping",
+                                text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen.The main focus is on user convenience(UX) and the site's aesthetic appearance (UI).",
+                            },
+                            {
+                                title: "Programming and development",
+                                text: "The technical implementation is carried out: the frontend(user interface), backend(server- side logic), and content management system(CMS) are developed.",
+                            },
+                            {
+                                title: "Integration with external services",
+                                text: [
+                                    {
+                                        text: "ERP systems: automating inventory, pricing, and other data management.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Payment systems: connecting secure payment services.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Delivery services: integration for calculating delivery costs and order tracking.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Content upload",
+                                text: "Data about products, including descriptions, photos, and specifications, are uploaded.This can be done manually or through automation.",
+                            },
+                            {
+                                title: "Testing",
+                                text: "Before launching the project, the functionality is thoroughly checked, and testing is done on various devices and popular browsers.",
+                            },
+                            {
+                                title: "Website launch",
+                                text: "After testing, the website is published on hosting, and final settings are completed.",
+                            },
+                            {
+                                title: "Support and development",
+                                text: "After launch, technical support, regular content updates, and optimization are provided to improve the website’s visibility in search engines.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "What determines the cost and tirm of developing?",
+                        description: [
+                            {
+                                title: "Project complexity",
+                                text: "Number of pages, functionality, integrations, unique design.",
+                            },
+                            {
+                                title: "Scope of work",
+                                text: "Creation from scratch or implementation based on a ready-made technical specification.",
+                            },
+                            {
+                                title: "Urgency",
+                                text: "Launching a small template-based online store with 10–15 products takes at least two months, starting at $1,600.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Why choose us?",
+                        description: [
+                            {
+                                text: "We transform your ideas into stylish and effective digital solutions.",
+                            },
+                            {
+                                text: "We understand your business needs and offer creative ideas that drive results.",
+                            },
+                            {
+                                text: "We focus on modern trends, combining them with your specific requirements.",
+                            },
+                            {
+                                text: "With us, you’ll quickly achieve your goals.",
+                            },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Order your online store now and get a solution that works for your success!",
+            },
         },
         pl: {
             name: "Sklep internetowy",
             shortDescription:
                 "Sklep internetowy to zaawansowane narzędzie do sprzedaży online. Tworzymy stronę z intuicyjną nawigacją, responsywnym projektem graficznym i funkcjami umożliwiającymi zarządzanie produktami, koszykiem oraz płatnościami, zapewniając efektywną działalność Twojego biznesu.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Sklep internetowy:</purple> zamieniamy Twoje pomysły w udane rozwiązania online",
+                introduction:
+                    "Tworzenie sklepu internetowego to odpowiedzialny proces, który wymaga doświadczenia i profesjonalnego podejścia. \nNależy uwzględnić strukturę strony, katalog produktów, opcje płatności, dostawę, zarządzanie stanami magazynowymi, promocje, oferty indywidualne, a także stworzyć panel klienta oraz panel administracyjny dla właściciela biznesu.",
+                topText: [
+                    { icon: "clock", text: "Ramy czasowe: 2-12 miesięcy." },
+                    {
+                        icon: "currency",
+                        text: "Cena: od 1600 USD do dziesiątek tysięcy (w zależności od złożoności projektu i funkcjonalności).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 5,
+                        title: "Główne etapy tworzenia sklepu internetowego",
+                        description: [
+                            {
+                                title: "Analiza i planowanie",
+                                text: "Na początkowym etapie definiowane są cele i założenia projektu, analizowany jest rynek, badana konkurencja i potrzeby grupy docelowej. Tworzony jest szczegółowy plan uwzględniający budżet i terminy.",
+                            },
+                            {
+                                title: "Projektowanie i prototypowanie",
+                                text: "Opracowywana jest struktura witryny, tworzone są układy stron, wybierane są kolory, czcionki i styl wizualny.Główna uwaga skupia się na wygodzie użytkowników(UX) i estetyce strony(UI).",
+                            },
+                            {
+                                title: "Programowanie i rozwój",
+                                text: "Przeprowadzane jest wdrożenie techniczne: opracowywany jest frontend i backend oraz wdrażany jest system zarządzania treścią(CMS).",
+                            },
+                            {
+                                title: "Integracja z usługami zewnętrznymi",
+                                text: [
+                                    {
+                                        text: "Systemy ERP: automatyzacja zarządzania zapasami, cenami i innymi danymi.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Systemy płatności: podłączenie bezpiecznych usług płatniczych.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Usługi dostawy: integracja w celu kalkulacji kosztów dostawy i śledzenia zamówień.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Wypełnianie treścią",
+                                text: "Dodawane są dane o produktach: opisy, zdjęcia, specyfikacje.Można to zrobić ręcznie lub zautomatyzowane.",
+                            },
+                            {
+                                title: "Testowanie",
+                                text: "Przed uruchomieniem projektu przeprowadzamy dokładne sprawdzenie funkcjonalności, testując na różnych urządzeniach i we wszystkich popularnych przeglądarkach.",
+                            },
+                            {
+                                title: "Uruchomienie strony",
+                                text: "Po testach strona jest publikowana na hostingu i wprowadzane są ostateczne ustawienia.",
+                            },
+                            {
+                                title: "Wsparcie i rozwój",
+                                text: "Po uruchomieniu zapewniamy wsparcie techniczne, regularne aktualizacje treści i optymalizację w celu poprawy widoczności witryny w wyszukiwarkach.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Od czego zależy cena i czas tworzenia?",
+                        description: [
+                            {
+                                title: "Złożoności projektu",
+                                text: "Liczby stron, funkcjonalności, integracji z usługami i unikalnego projektu.",
+                            },
+                            {
+                                title: "Zakresu prac",
+                                text: "Tworzenie od podstaw lub realizacja według gotowej specyfikacji.",
+                            },
+                            {
+                                title: "Pilności",
+                                text: "Uruchomienie małego sklepu na 10–15 produktów na bazie szablonu zajmie co najmniej 2 miesiące i będzie kosztować od 1600 USD.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 4,
+                        title: "Dlaczego warto nas wybrać?",
+                        description: [
+                            {
+                                text: "Przekształcamy Twoje pomysły w stylowe i skuteczne rozwiązania cyfrowe.",
+                            },
+                            {
+                                text: "Rozumiemy potrzeby Twojego biznesu i oferujemy kreatywne pomysły, które przynoszą efekty.",
+                            },
+                            {
+                                text: "Z nami szybko osiągniesz swoje cele.",
+                            },
+                            {
+                                text: "Z nami szybko osiągniesz swoje cele.",
+                            },
+                        ],
+                    },
+                ],
+                ctaText:
+                    "Zamów tworzenie sklepu internetowego już teraz i uzyskaj rozwiązanie, które zadziała na Twój sukces!",
+            },
         },
     },
 ];
