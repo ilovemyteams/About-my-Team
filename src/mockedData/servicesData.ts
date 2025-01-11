@@ -1982,25 +1982,589 @@ export const servicesData: ServiceType[] = [
     {
         slug: "website",
         icon: "website",
-
-        image: "",
+        ctaButton: "order",
+        image: "https://drive.google.com/uc?export=view&id=1KHGciTsxySPaU7Wse4wu4776LmMGaTFc",
         ua: {
             name: "Вебсайт",
             shortDescription:
                 "Вебсайт – багатосторінковий ресурс, для презентації бізнесу в інтернеті. Створюється зручна структура, розробляється унікальний дизайн, та забезпечується функціонал, що відповідає вашим цілям і очікуванням клієнтів.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Вебсайт:</purple> віртуальна візитівка вашого бізнесу",
+                introduction:
+                    "Вебсайт – це потужний інструмент для залучення клієнтів, продажу товарів чи послуг, а також підвищення впізнаваності бренду. У сучасному світі вебсайт є невід’ємною частиною успішної стратегії розвитку бізнесу. Якісний і функціональний сайт допомагає встановити контакт з вашою аудиторією 24/7, незалежно від географії чи часу.",
+                ctaText:
+                    "Замовляйте створення вебсайту - підвищуйте продажі та виділяйте ваш бізнес серед конкурентів!",
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Термін розробки: від кількох тижнів до кількох місяців.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Ціна: від 800$ (залежить від складності дизайну та функціональності).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 3,
+                        title: "Що включає наша послуга створення вебсайту?",
+                        description: [
+                            {
+                                title: "Аналіз та консультація",
+                                icon: "ba",
+                                text: [
+                                    {
+                                        text: "Обговорення цілей та потреб вашого бізнесу.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Аналіз конкурентів для створення унікального рішення.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Проєктування",
+                                icon: "test1",
+                                text: [
+                                    {
+                                        text: "Розробка структури сайту та створення макетів.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Формування UX/UI дизайну для зручності користувачів.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Розробка сайту",
+                                icon: "dev",
+                                text: [
+                                    {
+                                        text: "Програмування функціоналу відповідно до ваших вимог.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Адаптація сайту під мобільні пристрої (responsive design).",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Інтеграція",
+                                icon: "integration",
+                                text: [
+                                    {
+                                        text: "Налаштування CRM-систем, платіжних сервісів та інших необхідних інструментів.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Підключення аналітики (наприклад, Google Analytics) для відстеження ефективності сайту.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Тестування",
+                                icon: "test",
+                                text: [
+                                    {
+                                        text: "Перевірка всіх функцій сайту на працездатність.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Усунення помилок і оптимізація швидкості завантаження.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Базова SEO-оптимізація для покращення позицій у пошукових системах Google.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Запуск та навчання",
+                                icon: "start",
+                                text: [
+                                    {
+                                        text: "Розгортання сайту на вашому домені та хостингу.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Проведення консультації щодо управління сайтом.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Підтримка та оновлення",
+                                icon: "support",
+                                text: [
+                                    {
+                                        text: "Технічна підтримка після запуску.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Розширення функціоналу за потреби.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Чому це важливо?",
+                        description: [
+                            {
+                                title: "Перший контакт з клієнтами",
+                                text: "У 70% випадків клієнти складають перше враження про бізнес, базуючись на вашому вебсайті.",
+                            },
+                            {
+                                title: "Довіра до бренду",
+                                text: "Професійно створений сайт викликає довіру та стимулює клієнтів до співпраці.",
+                            },
+
+                            {
+                                title: "Розширення аудиторії",
+                                text: "Ваш сайт доступний для клієнтів з будь-якого куточка світу, що дозволяє вам масштабувати бізнес.",
+                            },
+                            {
+                                title: "Зростання продажів",
+                                text: "Вебсайт працює як онлайн-менеджер, що сприяє збільшенню кількості угод.",
+                            },
+                            {
+                                title: "Ефективність",
+                                text: "Сайт автоматизує багато процесів, зокрема оформлення замовлень чи запис на консультацію.",
+                            },
+                            {
+                                title: "Аналіз ефективності",
+                                text: "Вбудовані інструменти аналітики допомагають відслідковувати поведінку користувачів та адаптувати бізнес-стратегію.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Чому обирають нас?",
+                        description: [
+                            {
+                                title: "Клієнтоорієнтованість",
+                                text: "Ми розуміємо, що кожен бізнес унікальний, тому створюємо рішення, які відображають вашу індивідуальність.",
+                            },
+                            {
+                                title: "Прогресивні технології",
+                                text: "Використовуємо сучасні інструменти для розробки, щоб забезпечити надійність і функціональність.",
+                            },
+
+                            {
+                                title: "Досвід та експертиза",
+                                text: "Ми маємо великий досвід у створенні сайтів для бізнесів різних масштабів.",
+                            },
+                            {
+                                title: "Прозорість процесу",
+                                text: "Ми підтримуємо постійний зв'язок і надаємо детальні звіти на кожному етапі.",
+                            },
+                            {
+                                title: "Комплексний підхід",
+                                text: "Від аналізу до запуску – ми забезпечуємо повний цикл розробки, щоб ви отримали готовий продукт без зайвих клопотів.",
+                            },
+                            {
+                                title: "Довгострокове партнерство",
+                                text: "Ми залишаємося з вами і після запуску сайту, допомагаючи з оновленнями та підтримкою.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "Website",
             shortDescription:
                 "A website is a multi-page resource for presenting your business online. It includes creating an intuitive structure, developing a unique design, and ensuring functionality that aligns with your goals and meets your clients' expectations.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Website:</purple> a virtual business card for your company",
+                introduction:
+                    "A website is a powerful tool for attracting customers, selling products or services, and increasing brand awareness. In today’s world, a website is an essential part of a successful business development strategy. A high-quality and functional website helps you connect with your audience 24/7, regardless of geography or time.",
+                ctaText:
+                    "Order a website - boost your sales and make your business stand out from the competition!",
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Timeframe: from several weeks to several months.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Price: from $ 800 (depends on the complexity of the design and functionality).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 3,
+                        title: "What does our website creation service include?",
+                        description: [
+                            {
+                                title: "Analysis and consultation",
+                                icon: "ba",
+                                text: [
+                                    {
+                                        text: "Discussion of your business goals and needs..",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Competitor analysis to create a unique solution.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Designing",
+                                icon: "test1",
+                                text: [
+                                    {
+                                        text: "Developing the site structure and creating mockups.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Forming a UX/UI design for user convenience.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Website development",
+                                icon: "dev",
+                                text: [
+                                    {
+                                        text: "Programming features according to your requirements.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Adapting the website for mobile devices (responsive design).",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Integration",
+                                icon: "integration",
+                                text: [
+                                    {
+                                        text: "Setting up CRM systems, payment services, and other necessary tools.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Connecting analytics tools (e.g., Google Analytics) to track website performance.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Testing",
+                                icon: "test",
+                                text: [
+                                    {
+                                        text: "Checking all website functions for operability.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Fixing bugs and optimizing loading speed.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Basic SEO optimization to improve positions in Google search engines.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Launch and training",
+                                icon: "start",
+                                text: [
+                                    {
+                                        text: "Deploying the website on your domain and hosting.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Guiding website management.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Support and updates",
+                                icon: "support",
+                                text: [
+                                    {
+                                        text: "Technical support after the launch.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Expanding functionality as needed.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Why is this important?",
+                        description: [
+                            {
+                                title: "First contact with customers",
+                                text: "70% of customers form their first impression of a business based on its website.",
+                            },
+                            {
+                                title: "Trust in your brand",
+                                text: "A professionally created website builds trust and encourages customers to collaborate.",
+                            },
+
+                            {
+                                title: "Audience expansion",
+                                text: "Your website is accessible to clients from anywhere worldwide, enabling business scalability.",
+                            },
+                            {
+                                title: "Increased sales",
+                                text: "A website acts as an online manager, boosting the number of transactions.",
+                            },
+                            {
+                                title: "Efficiency",
+                                text: "The site automates many processes, such as order placement or booking consultations.",
+                            },
+                            {
+                                title: "Performance analysis",
+                                text: "Built-in analytics tools help monitor user behavior and adapt your business strategy.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Why choose us?",
+                        description: [
+                            {
+                                title: "Customer focus",
+                                text: "Every business is unique, so we create solutions that reflect your individuality.",
+                            },
+                            {
+                                title: "Progressive technologies",
+                                text: "We use modern tools to ensure reliability and functionality.",
+                            },
+
+                            {
+                                title: "Experience and expertise",
+                                text: "We have extensive experience in creating websites for businesses of all sizes.",
+                            },
+                            {
+                                title: "Process transparency",
+                                text: "We maintain constant communication and provide detailed reports at every stage.",
+                            },
+                            {
+                                title: "Comprehensive approach",
+                                text: "From analysis to launch, we handle the entire development cycle, delivering a ready-to-use product without extra hassle.",
+                            },
+                            {
+                                title: "Long-term partnership",
+                                text: "We stay with you even after the website launch, assisting with updates and support.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "Strona internetowa",
             shortDescription:
                 "Strona internetowa to wielostronicowy zasób, służący do prezentacji biznesu w internecie. Stworzenie wygodnej struktury, opracowanie unikalnego projektu i zapewnienie funkcjonalności spełniającej cele i oczekiwania klientów.",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Strona internetowa:</purple> wirtualna wizytówka Twojego biznesu",
+                introduction:
+                    "Strona internetowa to potężne narzędzie do pozyskiwania klientów, sprzedaży towarów lub usług oraz zwiększania rozpoznawalności marki. W dzisiejszym świecie strona internetowa jest integralną częścią skutecznej strategii rozwoju biznesu. Wysokiej jakości i funkcjonalna strona pomaga nawiązać kontakt z Twoją publicznością 24/7, niezależnie od lokalizacji czy czasu.",
+                ctaText:
+                    "Zamów stworzenie strony internetowej - zwiększ sprzedaż i wyróżnij swój biznes na tle konkurencji!",
+                topText: [
+                    {
+                        icon: "clock",
+                        text: "Ramy czasowe: od kilku tygodni do kilku miesięcy.",
+                    },
+                    {
+                        icon: "currency",
+                        text: "Cena: od 800 USD (w zależności od złożoności projektu i funkcjonalności).",
+                    },
+                ],
+                content: [
+                    {
+                        layout: 3,
+                        title: "Co zawiera nasza usługa tworzenia stron internetowych?",
+                        description: [
+                            {
+                                title: "Analiza i konsultacje",
+                                icon: "ba",
+                                text: [
+                                    {
+                                        text: "Omówienie celów i potrzeb biznesowych.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Analiza konkurencji w celu stworzenia unikalnego rozwiązania.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Projektowanie",
+                                icon: "test1",
+                                text: [
+                                    {
+                                        text: "Opracowanie struktury strony i stworzenie makiet.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Tworzenie UX/UI designu dla wygody użytkowników.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Tworzenie strony internetowej",
+                                icon: "dev",
+                                text: [
+                                    {
+                                        text: "Programowanie funkcjonalności zgodnie z Twoimi wymaganiami.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Dostosowanie strony do urządzeń mobilnych (responsive design).",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Integracja",
+                                icon: "integration",
+                                text: [
+                                    {
+                                        text: "Konfiguracja systemów CRM, usług płatności i innych niezbędnych narzędzi.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Połączenie narzędzi analitycznych (np. Google Analytics) do monitorowania wydajności strony.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Testowanie",
+                                icon: "test",
+                                text: [
+                                    {
+                                        text: "Sprawdzenie wszystkich funkcji strony pod kątem operacyjności.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Usunięcie błędów i optymalizacja szybkości ładowania.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Podstawowa optymalizacja SEO w celu poprawy pozycji w wyszukiwarkach Google.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Uruchomienie i szkolenie",
+                                icon: "start",
+                                text: [
+                                    {
+                                        text: "Wdrożenie strony na Twoją domenę i hosting.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Konsultacje dotyczące zarządzania stroną internetową.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                            {
+                                title: "Wsparcie i aktualizacje",
+                                icon: "support",
+                                text: [
+                                    {
+                                        text: "Wsparcie techniczne po uruchomieniu.",
+                                        type: "listItem",
+                                    },
+                                    {
+                                        text: "Rozszerzanie funkcjonalności w razie potrzeby.",
+                                        type: "listItem",
+                                    },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Dlaczego to jest ważne?",
+                        description: [
+                            {
+                                title: "Pierwszy kontakt z klientami",
+                                text: "W 70% przypadków klienci wyrabiają sobie pierwsze wrażenie o biznesie na podstawie strony internetowej.",
+                            },
+                            {
+                                title: "Zaufanie do marki",
+                                text: "Profesjonalnie wykonana strona budzi zaufanie i zachęca klientów do współpracy.",
+                            },
+
+                            {
+                                title: "Poszerzenie grupy odbiorców",
+                                text: "Twoja strona jest dostępna dla klientów z każdego zakątka świata, co umożliwia skalowanie biznesu.",
+                            },
+                            {
+                                title: "Zwiększenie sprzedaży",
+                                text: "Strona działa jak menedżer online, wspierając wzrost liczby transakcji.",
+                            },
+                            {
+                                title: "Wydajność",
+                                text: "Strona internetowa automatyzuje wiele procesów, takich jak składanie zamówień lub umawianie się na konsultacje.",
+                            },
+                            {
+                                title: "Analiza wydajności",
+                                text: "Wbudowane narzędzia analityczne pomagają śledzić zachowania użytkowników i dostosowywać strategię biznesową.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Dlaczego warto wybrać nas?",
+                        description: [
+                            {
+                                title: "Orientacja na klienta",
+                                text: "Rozumiemy, że każdy biznes jest wyjątkowy, dlatego tworzymy rozwiązania odzwierciedlające Twoją indywidualność.",
+                            },
+                            {
+                                title: "Nowoczesne technologie",
+                                text: "Używamy nowoczesnych narzędzi, aby zapewnić niezawodność i funkcjonalność.",
+                            },
+
+                            {
+                                title: "Doświadczenie i ekspertyza",
+                                text: "Mamy bogate doświadczenie w tworzeniu stron internetowych dla firm każdej wielkości.",
+                            },
+                            {
+                                title: "Przejrzystość procesu",
+                                text: "Utrzymujemy stałą komunikację i dostarczamy szczegółowe raporty na każdym etapie.",
+                            },
+                            {
+                                title: "Kompleksowe podejście",
+                                text: "Od analizy do uruchomienia, zapewniamy pełny cykl rozwoju, dzięki czemu otrzymujesz gotowy produkt bez żadnych kłopotów.",
+                            },
+                            {
+                                title: "Długoterminowe partnerstwo",
+                                text: "Pozostajemy z Tobą także po uruchomieniu strony, pomagając w aktualizacjach i wsparciu.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {
