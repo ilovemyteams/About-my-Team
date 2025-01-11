@@ -422,7 +422,7 @@ export const servicesData: ServiceType[] = [
             shortDescription:
                 "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design.",
             fullDescription: {
-                title: "<purple>Design:</purple> Websites and Digital Products",
+                title: "<purple>Design:</purple> websites and digital products",
                 introduction:
                     "Our team creates unique, modern, and effective designs for your websites and digital products, helping your business stand out among competitors. Our solutions combine aesthetics, functionality, and experience.",
                 content: [
@@ -431,11 +431,11 @@ export const servicesData: ServiceType[] = [
                         layout: 5,
                         description: [
                             {
-                                title: "Personalized Approach",
+                                title: "Personalized approach",
                                 text: "We tailor every project to your style, needs, and audience specifics, ensuring the design reflects your uniqueness.",
                             },
                             {
-                                title: "UX/UI Design",
+                                title: "UX/UI design",
                                 text: "We provide intuitive navigation and an attractive look that increases user engagement.",
                             },
                             {
@@ -443,7 +443,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Your design will look perfect on all devices, including smartphones, tablets, laptops, and monitors.",
                             },
                             {
-                                title: "SEO Optimization",
+                                title: "SEO optimization",
                                 text: "We develop a design that will help promote your website in search engines.",
                             },
                         ],
@@ -453,7 +453,7 @@ export const servicesData: ServiceType[] = [
                         title: "How do we work?",
                         description: [
                             {
-                                title: "Idea Analysis",
+                                title: "Idea analysis",
                                 text: "We analyze your goals, target audience, and desired outcome to deliver the best solution.",
                             },
                             {
@@ -461,7 +461,7 @@ export const servicesData: ServiceType[] = [
                                 text: "We create draft mockups to approve the structure and functionality.",
                             },
                             {
-                                title: "Design Implementation",
+                                title: "Design implementation",
                                 text: "We create a professional look for your product that meets modern trends and standards.",
                             },
                             {
@@ -472,10 +472,10 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "What Determines the price and timeline?",
+                        title: "What determines the price and timeline?",
                         description: [
                             {
-                                title: "Project Complexity",
+                                title: "Project complexity",
                                 text: "The number of pages or the need to create unique elements.",
                             },
                             {
@@ -490,7 +490,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 4,
-                        title: "Why Choose Us?",
+                        title: "Why choose us?",
                         description: [
                             {
                                 text: "We know how to turn your ideas into a stylish and effective visual product.",
@@ -1224,7 +1224,7 @@ export const servicesData: ServiceType[] = [
                         title: "What does the support service include?",
                         description: [
                             {
-                                title: "Technical Support",
+                                title: "Technical support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1242,7 +1242,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support1",
                             },
                             {
-                                title: "User Support",
+                                title: "User support",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1260,7 +1260,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "support2",
                             },
                             {
-                                title: "Planned Maintenance",
+                                title: "Planned maintenance",
                                 text: [
                                     {
                                         type: "listItem",
@@ -1418,31 +1418,308 @@ export const servicesData: ServiceType[] = [
     {
         slug: "comprehensive-service",
         icon: "complex",
-        image: "",
+        ctaButton: "order",
+        image: "https://drive.google.com/uc?export=view&id=1aBLtZOAvs5TGOZVeOXuKQPBCFx8kur4x",
         ua: {
             name: "комплексна послуга",
             shortDescription:
                 "Комплексний та системний підхід з єдиним менеджментом проєкту (замовнику не треба шукати виконавців для окремих завдань – все робиться одним підрядником, включно з пошуком чи рекомендацією субпідрядників)",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Комплексна послуга:</purple> комплексний підхід до створення ІТ продуктів",
+                introduction:
+                    "В основі кожного успішного продукту лежить бажання зробити його максимально зручним і корисним для бізнесу. Тому комплексний підхід до створення ІТ продуктів гарантує найкращий результат. \nМи пропонуємо комплексну послугу, яка базується на тісній співпраці з клієнтом для досягнення його бізнес-потреб та прискорення зростання бізнесу.",
+                ctaText:
+                    "Замовляйте комплексну послугу вже сьогодні, щоб досягати реальних результатів!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Що включає комплексна послуга?",
+                        description: [
+                            {
+                                title: "Бриф",
+                                text: "Після отримання заявки, бізнес-аналітик контактує з замовником протягом робочого дня і допомагає заповнити бриф на розробку продукту.",
+                            },
+                            {
+                                title: "Збір та опис вимог",
+                                text: "Описуємо вимоги до сайту. Специфікація вимог до програмного забезпечення - найважливіший етап, який потрібно провести до старту розробки сайту.",
+                            },
+                            {
+                                title: "Дизайн",
+                                text: "Дизайнер розробляє сценарій використання сайту, демонструє ескізи та структуру сайту. Також на цьому етапі можна обговорити правки та затвердити макет або прототип.",
+                            },
+                            {
+                                title: "Розробка рішення",
+                                text: "На підставі вимог пропонуємо практичні та адаптовані до специфіки вашого бізнесу рішення.",
+                            },
+                            {
+                                title: "Підготовка документації",
+                                text: "Надаємо зрозумілі й деталізовані матеріали, які полегшують роботу команди розробників та тестування готового продукту.",
+                            },
+                            {
+                                title: "Тестування сайту",
+                                text: "Після ефективного завершення етапу тестування, сайт переноситься на клієнтський домен та інтегрується з хостингом.",
+                            },
+                            {
+                                title: "Передача сайту",
+                                text: "Після проходження тестування та інтеграції всіх сервісів, сайт разом із усіма правами на нього передається у розпорядження клієнта.",
+                            },
+                            {
+                                title: "Підтримка сайту",
+                                text: "При виникненні непередбачуваних ситуацій або для розширення функціоналу уже готового сайту після його офіційного запуску клієнт може звернутися до розробників та отримати послугу підтримки та доопрацювання продукту.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Чому це важливо?",
+                        description: [
+                            {
+                                title: "Ефективність",
+                                text: "Створення сайту вимагає багатогранних знань та навичок,  а комплексний підхід до розробки значно спрощує його просування. Якісний та сучасний дизайн сайту приваблює нових користувачів та спонукає до цільових дій на сайті.",
+                            },
+                            {
+                                title: "Зниження ризиків",
+                                text: "Розробка сайту цілісною командою — від ідеї до реалізації, а також подальшої підтримки — мінімізує ризики, усуваючи  передачу продукту між дизайнером, розробником і тестувальником.Також при оформленні комплексної послуги ви отримуєте гарантію розробки продукту та налаштування допоміжних сервісів, таких як гугл аналітика та підтримка сервера.",
+                            },
+                            {
+                                title: "Покращення командної роботи",
+                                text: "Усі учасники команди  розуміють свої задачі та мають спільне бачення результату. Всі рівнозначно зацікавлені в створенні та запуску якісного продукту та підтримці позитивного формату взаємодії з клієнтом та між собою.",
+                            },
+                            {
+                                title: "Гарантія відповідності потребам",
+                                text: "Кінцевий продукт буде максимально адаптований до потреб вашого бізнесу та кінцевих споживачів.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Чому варто обрати нас?",
+                        description: [
+                            {
+                                text: "Наші спеціалісти мають досвід у бізнес-аналізі, розробці сайтів та інших ІТ-продуктів. Ми гарантуємо не лише високу якість роботи, але й позитивний досвід співпраці.",
+                            },
+                            {
+                                text: "Кожен проєкт — унікальний, тому наші рішення адаптуються саме під вас.",
+                            },
+                            {
+                                text: "Ми підтримуємо постійний зв'язок і надаємо детальні звіти на кожному етапі.",
+                            },
+                            {
+                                text: "Використовуємо перевірені практики, зокрема Agile та Scrum, щоб швидко реагувати на зміни та враховувати ваші мінливі бізнес-потреби.",
+                            },
+                            {
+                                text: "Обравши нас, ви отримуєте не лише комплексну послугу в створенні сайту чи іншого ІТ продукту, а й команду, яка прагне зробити ваш бізнес сильнішим і ефективнішим.",
+                            },
+                            {
+                                text: "Ми будуємо довгострокові відносини з клієнтами, і надаємо тривалу технічну підтримку, тому ви можете нам довіряти при тривалій співпраці.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         en: {
             name: "comprehensive service",
             shortDescription:
                 "A comprehensive and systematic approach with unified project management (the customer does not need to look for contractors for individual tasks - everything is done by one contractor, including the search or recommendation of subcontractors)",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Comprehensive service:</purple> an integrated approach to IT product development",
+                introduction:
+                    "The foundation of every successful product lies in the desire to make it as convenient and useful for business as possible. A comprehensive approach to IT product development ensures the best results. \nWe offer a comprehensive service based on close collaboration with the client to meet their business needs and accelerate business growth.",
+                ctaText:
+                    "Order a comprehensive service today to achieve real results!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "What the comprehensive service includes?",
+                        description: [
+                            {
+                                title: "Brief",
+                                text: "After receiving the request, a business analyst contacts the client within the working day and helps complete a brief for product development.",
+                            },
+                            {
+                                title: "Requirements collection and description",
+                                text: "We outline the requirements for the website. Defining software requirements is the most critical stage before starting the website development process.",
+                            },
+                            {
+                                title: "Design",
+                                text: "The designer develops user scenarios for the website, presents sketches, and demonstrates the website structure. At this stage, revisions can be discussed, and the layout or prototype can be approved.",
+                            },
+                            {
+                                title: "Solution development",
+                                text: "Based on the requirements, we propose practical solutions tailored to the specifics of your business.",
+                            },
+                            {
+                                title: "Documentation preparation",
+                                text: "We provide clear and detailed materials that simplify the work for the development team and the testing of the final product.",
+                            },
+                            {
+                                title: "Website testing",
+                                text: "After successfully completing the testing stage, the website is transferred to the client’s domain and integrated with hosting.",
+                            },
+                            {
+                                title: "Website handover",
+                                text: "Upon passing testing and integrating all services, the website, along with all rights to it, is transferred to the client’s ownership.",
+                            },
+                            {
+                                title: "Website support",
+                                text: "In case of unforeseen situations or for expanding the functionality of an already launched website, the client can contact the developers to receive support and product enhancements.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Why this matters?",
+                        description: [
+                            {
+                                title: "Efficiency",
+                                text: "Creating a website requires diverse knowledge and skills, and a comprehensive approach to development greatly simplifies its promotion. A high-quality and modern website design attracts new users and encourages target actions on the site.",
+                            },
+                            {
+                                title: "Risk reduction",
+                                text: "Developing a website with a cohesive team — from idea to implementation and subsequent support — minimizes risks, eliminating the need to hand over the product between designers, developers, and testers. Additionally, with a comprehensive service, you receive a product development guarantee and setup of auxiliary services like Google Analytics and server support.",
+                            },
+                            {
+                                title: "Improved team collaboration",
+                                text: "All team members understand their tasks and share a common vision of the result. Everyone is equally invested in creating and launching a quality product and maintaining positive interaction with the client and among themselves.",
+                            },
+                            {
+                                title: "Guaranteed alignment with needs",
+                                text: "The final product will be fully adapted to the needs of your business and end users.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Why choose us?",
+                        description: [
+                            {
+                                text: "Our specialists have experience in business analysis, website development, and other IT products. We guarantee not only high-quality work but also a positive collaboration experience.",
+                            },
+                            {
+                                text: "Each project is unique, so our solutions are customized specifically for you.",
+                            },
+                            {
+                                text: "МWe maintain constant communication and provide detailed reports at every stage.",
+                            },
+                            {
+                                text: "We use proven practices, including Agile and Scrum, to quickly adapt to changes and meet your evolving business needs.",
+                            },
+                            {
+                                text: "By choosing us, you receive not only a comprehensive service in website or IT product creation but also a team committed to making your business stronger and more efficient.",
+                            },
+                            {
+                                text: "We build long-term relationships with clients and provide ongoing technical support, so you can trust us for extended cooperation.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
         pl: {
             name: "pełny zakres usług",
             shortDescription:
                 "Kompleksowe i systematyczne podejście z ujednoliconym procesem zarządzania projektami (klient nie musi szukać wykonawców do poszczególnych zadań - wszystko wykonuje jeden wykonawca, łącznie z wyszukiwaniem lub polecaniem podwykonawców).",
-            fullDescription: null,
+            fullDescription: {
+                title: "<purple>Pełny zakres usług:</purple> kompleksowe podejście do tworzenia produktów IT",
+                introduction:
+                    "U podstaw każdego udanego produktu leży pragnienie, aby uczynić go jak najbardziej wygodnym i użytecznym dla biznesu. Kompleksowe podejście do tworzenia produktów IT gwarantuje najlepsze rezultaty. \nOferujemy kompleksową usługę opartą na ścisłej współpracy z klientem, aby spełnić jego potrzeby biznesowe i przyspieszyć rozwój firmy.",
+                ctaText:
+                    "Zamów kompleksową usługę już dziś, aby osiągać realne rezultaty!",
+                content: [
+                    {
+                        layout: 5,
+                        title: "Co obejmuje pełny zakres usług?",
+                        description: [
+                            {
+                                title: "Brief",
+                                text: "Po otrzymaniu zgłoszenia analityk biznesowy kontaktuje się z klientem w ciągu dnia roboczego i pomaga wypełnić streszczenie dotyczący rozwoju produktu.",
+                            },
+                            {
+                                title: "Zbieranie i opis wymagań",
+                                text: "Opisujemy wymagania dotyczące strony internetowej. Specyfikacja wymagań dotyczących oprogramowania to kluczowy etap, który należy przeprowadzić przed rozpoczęciem procesu tworzenia strony internetowej.",
+                            },
+                            {
+                                title: "Projektowanie",
+                                text: "Projektant opracowuje scenariusze użytkowania strony internetowej, prezentuje szkice oraz strukturę strony. Na tym etapie można omówić poprawki i zatwierdzić układ lub prototyp.",
+                            },
+                            {
+                                title: "Tworzenie rozwiązania",
+                                text: "Na podstawie wymagań proponujemy praktyczne rozwiązania dostosowane do specyfiki Twojego biznesu.",
+                            },
+                            {
+                                title: "Przygotowanie dokumentacji",
+                                text: "Dostarczamy przejrzyste i szczegółowe materiały, które ułatwiają pracę zespołowi programistów oraz testowanie gotowego produktu.",
+                            },
+                            {
+                                title: "Testowanie strony",
+                                text: "Po pomyślnym zakończeniu etapu testowania strona internetowa jest przenoszona na domenę klienta i integrowana z hostingiem.",
+                            },
+                            {
+                                title: "Przekazanie strony",
+                                text: "Po przejściu testów i integracji wszystkich usług strona internetowa wraz ze wszystkimi prawami zostaje przekazana  klientowi.",
+                            },
+                            {
+                                title: "Wsparcie strony",
+                                text: "W przypadku nieprzewidzianych sytuacji lub chęci rozszerzenia funkcjonalności już uruchomionej strony internetowej, klient może skontaktować się z programistami w celu uzyskania wsparcia i rozbudowy produktu.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 8,
+                        title: "Dlaczego to ważne?",
+                        description: [
+                            {
+                                title: "Efektywność",
+                                text: "Tworzenie strony internetowej wymaga szerokiej wiedzy i umiejętności, a kompleksowe podejście do rozwoju znacznie upraszcza jej promowanie. Wysokiej jakości i nowoczesny design strony przyciąga nowych użytkowników i zachęca do podejmowania działań na stronie.",
+                            },
+                            {
+                                title: "Zmniejszenie ryzyka",
+                                text: "Tworzenie strony internetowej przez spójny zespół — od pomysłu do realizacji oraz dalszego wsparcia — minimalizuje ryzyko, eliminując konieczność przekazywania produktu między projektantem, programistą a testerem. Ponadto, korzystając z kompleksowej usługi, otrzymujesz gwarancję opracowania produktu i konfiguracji dodatkowych usług, takich jak Google Analytics i wsparcie serwera.",
+                            },
+                            {
+                                title: "Lepsza praca zespołowa",
+                                text: "Wszyscy członkowie zespołu rozumieją swoje zadania i mają wspólną wizję efektu końcowego. Każdy jest jednakowo zaangażowany w tworzenie i uruchamianie wysokiej jakości produktu oraz utrzymywanie pozytywnego kontaktu z klientem i między sobą.",
+                            },
+                            {
+                                title: "Gwarancja spełnienia potrzeb",
+                                text: "Końcowy produkt będzie w pełni dostosowany do potrzeb Twojej firmy i końcowych użytkowników.",
+                            },
+                        ],
+                    },
+                    {
+                        layout: 2,
+                        title: "Dlaczego warto nas wybrać?",
+                        description: [
+                            {
+                                text: "Nasi specjaliści mają doświadczenie w analizie biznesowej, tworzeniu stron internetowych i innych produktów IT. Gwarantujemy nie tylko wysoką jakość pracy, ale także pozytywne doświadczenie współpracy.",
+                            },
+                            {
+                                text: "Każdy projekt jest wyjątkowy, dlatego nasze rozwiązania są dostosowywane specjalnie do Ciebie.",
+                            },
+                            {
+                                text: "Utrzymujemy stałą komunikację i dostarczamy szczegółowe raporty na każdym etapie.",
+                            },
+                            {
+                                text: "Stosujemy sprawdzone praktyki, takie jak Agile i Scrum, aby szybko reagować na zmiany i uwzględniać zmieniające się potrzeby biznesowe.",
+                            },
+                            {
+                                text: "Wybierając nas, otrzymujesz nie tylko kompleksową usługę tworzenia strony lub innego produktu IT, ale także zespół, który dąży do wzmocnienia i zwiększenia efektywności Twojego biznesu.",
+                            },
+                            {
+                                text: "Budujemy długoterminowe relacje z klientami i zapewniamy stałe wsparcie techniczne, dzięki czemu możesz nam zaufać w kwestii długoterminowej współpracy.",
+                            },
+                        ],
+                    },
+                ],
+            },
         },
     },
     {
         slug: "landing",
         icon: "landing",
         image: "https://drive.google.com/uc?export=view&id=1Kgb4tXEmBn1hQmD2r_h2VAwwNYThl6Xt",
-        ctaButton: "write",
+        ctaButton: "order",
         ua: {
             name: "Лендінг ",
             shortDescription:

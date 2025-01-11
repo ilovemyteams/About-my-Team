@@ -1,37 +1,24 @@
-import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
+import { LocaleType } from "@/types/LocaleType";
+
+import { questionsData } from "../../mockedData/questionsData";
 import { Accordion } from "./Accordion";
 
 export const QuestionsList = () => {
-    const getTranslation = useTranslations("Q&A");
-    const questionsList = [
-        {
-            question: getTranslation("question1"),
-            answer: getTranslation("answer1"),
-        },
-        {
-            question: getTranslation("question2"),
-            answer: getTranslation("answer2"),
-        },
-        {
-            question: getTranslation("question3"),
-            answer: getTranslation("answer3"),
-        },
-        {
-            question: getTranslation("question4"),
-            answer: getTranslation("answer4"),
-        },
-        {
-            question: getTranslation("question5"),
-            answer: getTranslation("answer5"),
-        },
-    ];
+    const locale = useLocale();
+    const questionsList = questionsData.slice(0, 5);
 
     return (
         <div className="mb-[40px] pc:ml-[270px] tab:mb-[48px]">
             <ul>
                 {questionsList.map((item, idx) => {
-                    return <Accordion key={idx} item={item} />;
+                    return (
+                        <Accordion
+                            key={idx}
+                            item={item[locale as LocaleType]}
+                        />
+                    );
                 })}
             </ul>
         </div>
