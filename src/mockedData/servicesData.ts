@@ -1800,7 +1800,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "Від чого залежить ціна і термін розробки інтернет-магазину?",
+                        title: "Від чого залежить ціна і термін розробки?",
                         description: [
                             {
                                 title: "Складність проєкту",
@@ -1908,7 +1908,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "What determines the cost and tirm of developing an online store?",
+                        title: "What determines the cost and tirm of developing?",
                         description: [
                             {
                                 title: "Project complexity",
@@ -2016,7 +2016,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "Od czego zależy cena i czas tworzenia sklepu internetowego?",
+                        title: "Od czego zależy cena i czas tworzenia?",
                         description: [
                             {
                                 title: "Złożoności projektu",
