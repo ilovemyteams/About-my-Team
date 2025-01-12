@@ -2006,7 +2006,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "online-store",
         icon: "store",
-        image: "https://drive.google.com/uc?export=view&id=10kiv1VKHWUDfkQlpeeE492JT5Qk433qF",
+        image: "https://drive.google.com/uc?export=view&id=1fSbXuv6SQ_PCm_t3gWt_6DB8xuSZypmN",
         ctaButton: "order",
         ua: {
             name: "Інтернет-магазин",
