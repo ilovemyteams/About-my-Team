@@ -1031,7 +1031,7 @@ export const questionsData: QAItemType[] = [
                             title: "Landing page",
                             text: [
                                 {
-                                    title: "one-page website",
+                                    title: "One-page website",
                                     text: [
                                         "This type of website is suitable for presenting a single product or service and often includes basic sections such as a headline, product information, benefits, customer reviews, a contact form, or a call-to-action (CTA) button. The price for development starts at $500, depending on the complexity of the design and integrations.",
                                     ],
@@ -1042,7 +1042,7 @@ export const questionsData: QAItemType[] = [
                             title: "Business card website",
                             text: [
                                 {
-                                    title: "up to 5 pages",
+                                    title: "Up to 5 pages",
                                     text: [
                                         'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $800. Additional features, such as interactive elements or a request form, may affect the total price.',
                                     ],
@@ -1053,7 +1053,7 @@ export const questionsData: QAItemType[] = [
                             title: "Online store",
                             text: [
                                 {
-                                    title: "with 10–15 products",
+                                    title: "With 10–15 products",
                                     text: [
                                         "This is a more complex project that includes the development of a product catalog, individual product pages, a shopping cart, and integration with payment systems. The cost starts at $1,600. The final price may increase depending on the number of products, the need for filters, inventory management functionality, and integrations with logistics or marketing systems.",
                                     ],
