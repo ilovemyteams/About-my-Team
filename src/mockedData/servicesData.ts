@@ -1993,15 +1993,15 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "Вебсайт – це потужний інструмент для залучення клієнтів, продажу товарів чи послуг, а також підвищення впізнаваності бренду. У сучасному світі вебсайт є невід’ємною частиною успішної стратегії розвитку бізнесу. Якісний і функціональний сайт допомагає встановити контакт з вашою аудиторією 24/7, незалежно від географії чи часу.",
                 ctaText:
-                    "Замовляйте створення вебсайту - підвищуйте продажі та виділяйте ваш бізнес серед конкурентів!",
+                    "Замовляйте створення вебсайту, щоб отримати рішення, яке працює на ваш успіх!",
                 topText: [
                     {
                         icon: "clock",
-                        text: "Термін розробки: від кількох тижнів до кількох місяців.",
+                        text: "Термін розробки: від 2 до 12 місяців.",
                     },
                     {
                         icon: "currency",
-                        text: "Ціна: від 800$ (залежить від складності дизайну та функціональності).",
+                        text: "Ціна: від 800$ (до 10 сторінок) , від 1600$ (10+ сторінок; адмін панель).",
                     },
                 ],
                 content: [
@@ -2187,15 +2187,15 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "A website is a powerful tool for attracting customers, selling products or services, and increasing brand awareness. In today’s world, a website is an essential part of a successful business development strategy. A high-quality and functional website helps you connect with your audience 24/7, regardless of geography or time.",
                 ctaText:
-                    "Order a website - boost your sales and make your business stand out from the competition!",
+                    "Order the development of a website to get a solution that works for your success!",
                 topText: [
                     {
                         icon: "clock",
-                        text: "Timeframe: from several weeks to several months.",
+                        text: "Timeframe: from 2 to 12 months.",
                     },
                     {
                         icon: "currency",
-                        text: "Price: from $ 800 (depends on the complexity of the design and functionality).",
+                        text: "Price: starting at $800 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
                     },
                 ],
                 content: [
@@ -2381,15 +2381,15 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "Strona internetowa to potężne narzędzie do pozyskiwania klientów, sprzedaży towarów lub usług oraz zwiększania rozpoznawalności marki. W dzisiejszym świecie strona internetowa jest integralną częścią skutecznej strategii rozwoju biznesu. Wysokiej jakości i funkcjonalna strona pomaga nawiązać kontakt z Twoją publicznością 24/7, niezależnie od lokalizacji czy czasu.",
                 ctaText:
-                    "Zamów stworzenie strony internetowej - zwiększ sprzedaż i wyróżnij swój biznes na tle konkurencji!",
+                    "Zamów stworzenie strony internetowej, aby otrzymać rozwiązanie, które działa na Twój sukces!",
                 topText: [
                     {
                         icon: "clock",
-                        text: "Ramy czasowe: od kilku tygodni do kilku miesięcy.",
+                        text: "Ramy czasowe: od 2 do 12 miesięcy.",
                     },
                     {
                         icon: "currency",
-                        text: "Cena: od 800 USD (w zależności od złożoności projektu i funkcjonalności).",
+                        text: "Cena: od 800 USD (do 10 stron), od 1600 USD (10+ stron; panel administracyjny).",
                     },
                 ],
                 content: [
