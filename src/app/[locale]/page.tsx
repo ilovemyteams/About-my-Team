@@ -14,12 +14,12 @@ export default function Home() {
         <>
             <BackgroundFiguresMain />
             <HeroSection />
-            <MissionSection />
             <PortfolioSection />
+            <ServicesSection />
             <FeedbackSection />
             <WriteUsSection text="titleIWant" />
-            <ServicesSection />
             <OurTeamSection />
+            <MissionSection />
             <StagesSection />
             <QaSection />
             <WriteUsSection text="titleAreYouReady" />
