@@ -25,14 +25,17 @@ export const ServiceHero = ({
                 {HighlightPurple({ title })}
             </h1>
             <div className="tab:flex tab:flex-row-reverse tab:gap-5 pc:gap-[60px]">
-                <Image
-                    src={image}
-                    alt={title}
-                    width={638}
-                    height={425}
-                    className="mb-6 tab:w-[47.22%] pc:w-[41.67%] desk:w-[47.75%] tab:aspect-[340/227] tab:mb-0"
-                />
-                <div className="tab:w-[50%] pc:w-[52.78%] desk:w-[47.75%] text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 ">
+                <div className="tab:w-[47.22%] pc:w-[41.67%] desk:w-[47.75%] mb-6 tab:mb-0">
+                    <Image
+                        src={image}
+                        alt={title}
+                        width={638}
+                        height={425}
+                        className="w-full h-auto aspect-[340/227] object-cover"
+                    />
+                </div>
+
+                <div className="tab:w-[50%] pc:w-[52.78%] desk:w-[47.75%] text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                     <p className=" whitespace-pre-wrap">{text}</p>
                     {topText && (
                         <p className="flex flex-col mt-6 pc:mt-8 desk:mt-10 gap-4 pc:gap-6">

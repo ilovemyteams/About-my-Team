@@ -14,7 +14,7 @@ export const ChessboardListItem = ({
     const Icon = item.icon && defineServiceIcon(item.icon);
     return (
         <>
-            <div className="tab:mt-2 tab:w-[44.5%] pc:w-[41.76%] desk:w-[44.16%]">
+            <div className="tab:mt-2 tab:w-[44.5%] pc:w-[41.76%] desk:w-[44.16%] grow tab:grow-0">
                 {item.title && (
                     <h4 className="font-caviar font-bold text-purple-200 dark:text-white-200 text-lg tab:text-xl pc:text-2xl desk:text-3xl mb-4 pc:mb-6 desk:mb-5">
                         {item.title}
