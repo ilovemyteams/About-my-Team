@@ -18,7 +18,7 @@ export const TableContentItem = ({
             <div className="mb-6 pc:mb-[80px] mt-6 flex gap-2">
                 {title && (
                     <>
-                        <RedSquareBullet />
+                        <RedSquareBullet classNames="m-[3px] desk:m-[7px]" />
                         <h3 className="min-h-[50px] desk:min-h-[70px]  font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
                             <HighlightText
                                 text={title}

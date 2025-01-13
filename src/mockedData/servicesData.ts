@@ -1429,7 +1429,7 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "В основі кожного успішного продукту лежить бажання зробити його максимально зручним і корисним для бізнесу. Тому комплексний підхід до створення ІТ продуктів гарантує найкращий результат. \nМи пропонуємо комплексну послугу, яка базується на тісній співпраці з клієнтом для досягнення його бізнес-потреб та прискорення зростання бізнесу.",
                 ctaText:
-                    "Замовляйте комплексну послугу вже сьогодні, щоб досягати реальних результатів!",
+                    "Замовляйте комплексну послугу вже сьогодні і ми зекономимо ваш час та ресурси на шляху до успіху!",
                 content: [
                     {
                         layout: 5,
@@ -1527,7 +1527,7 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "The foundation of every successful product lies in the desire to make it as convenient and useful for business as possible. A comprehensive approach to IT product development ensures the best results. \nWe offer a comprehensive service based on close collaboration with the client to meet their business needs and accelerate business growth.",
                 ctaText:
-                    "Order a comprehensive service today to achieve real results!",
+                    "Order a comprehensive service today, and we’ll save your time and resources on the path to success!",
                 content: [
                     {
                         layout: 5,
@@ -1600,7 +1600,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Each project is unique, so our solutions are customized specifically for you.",
                             },
                             {
-                                text: "МWe maintain constant communication and provide detailed reports at every stage.",
+                                text: "We maintain constant communication and provide detailed reports at every stage.",
                             },
                             {
                                 text: "We use proven practices, including Agile and Scrum, to quickly adapt to changes and meet your evolving business needs.",
@@ -1625,7 +1625,7 @@ export const servicesData: ServiceType[] = [
                 introduction:
                     "U podstaw każdego udanego produktu leży pragnienie, aby uczynić go jak najbardziej wygodnym i użytecznym dla biznesu. Kompleksowe podejście do tworzenia produktów IT gwarantuje najlepsze rezultaty. \nOferujemy kompleksową usługę opartą na ścisłej współpracy z klientem, aby spełnić jego potrzeby biznesowe i przyspieszyć rozwój firmy.",
                 ctaText:
-                    "Zamów kompleksową usługę już dziś, aby osiągać realne rezultaty!",
+                    "Zamów kompleksową usługę już dziś, a my zaoszczędzimy Twój czas i zasoby na drodze do sukcesu!",
                 content: [
                     {
                         layout: 5,
