@@ -2584,7 +2584,7 @@ export const servicesData: ServiceType[] = [
                     { icon: "clock", text: "Термін розробки: 2-12 місяців." },
                     {
                         icon: "currency",
-                        text: "Ціна: від 500$ до десятків тисяч (залежить від складності дизайну та функціональності).",
+                        text: "Ціна: від 1600$ до десятків тисяч (залежить від складності дизайну та функціональності).",
                     },
                 ],
                 content: [
@@ -2648,7 +2648,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Кількість сторінок, функціонал, інтеграція з сервісами, унікальний дизайн.",
                             },
                             {
-                                title: "Обсягу робіт",
+                                title: "Обсяг робіт",
                                 text: "Створення з нуля чи реалізація за готовим технічним завданням.",
                             },
                             {
@@ -2692,7 +2692,7 @@ export const servicesData: ServiceType[] = [
                     { icon: "clock", text: "Timeframe: 2-12 months." },
                     {
                         icon: "currency",
-                        text: "Price: from $500 up to more than $10k (depends on the complexity of the design and functionality).",
+                        text: "Price: from $1600 up to more than $10k (depends on the complexity of the design and functionality).",
                     },
                 ],
                 content: [
