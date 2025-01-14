@@ -1479,7 +1479,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Зниження ризиків",
-                                text: "Розробка сайту цілісною командою — від ідеї до реалізації, а також подальшої підтримки — мінімізує ризики, усуваючи  передачу продукту між дизайнером, розробником і тестувальником.Також при оформленні комплексної послуги ви отримуєте гарантію розробки продукту та налаштування допоміжних сервісів, таких як гугл аналітика та підтримка сервера.",
+                                text: "Розробка сайту цілісною командою — від ідеї до реалізації, а також подальшої підтримки — мінімізує ризики, усуваючи  передачу продукту між дизайнером, розробником і тестувальником. Також при оформленні комплексної послуги ви отримуєте гарантію розробки продукту та налаштування допоміжних сервісів, таких як гугл аналітика та підтримка сервера.",
                             },
                             {
                                 title: "Покращення командної роботи",
@@ -2020,7 +2020,7 @@ export const servicesData: ServiceType[] = [
                     { icon: "clock", text: "Термін розробки: 2-12 місяців." },
                     {
                         icon: "currency",
-                        text: "Ціна: від 500$ до десятків тисяч (залежить від складності дизайну та функціональності).",
+                        text: "Ціна: від 1600$ до десятків тисяч (залежить від складності дизайну та функціональності).",
                     },
                 ],
                 content: [
@@ -2034,7 +2034,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Проєктування та дизайн",
-                                text: "Розробляється структура сайту, створюються макети сторінок, підбираються кольори, шрифти та візуальний стиль.Основна увага приділяється зручності користувачів(UX) та естетичному вигляду сайту(UI).",
+                                text: "Розробляється структура сайту, створюються макети сторінок, підбираються кольори, шрифти та візуальний стиль. Основна увага приділяється зручності користувачів(UX) та естетичному вигляду сайту(UI).",
                             },
                             {
                                 title: "Програмування та розробка",
@@ -2059,7 +2059,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Наповнення контентом",
-                                text: "Завантажуються дані про товари: описи, фото, характеристики.Можливий як ручний, так і автоматизований підхід.",
+                                text: "Завантажуються дані про товари: описи, фото, характеристики. Можливий як ручний, так і автоматизований підхід.",
                             },
                             {
                                 title: "Тестування",
@@ -2084,7 +2084,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Кількість сторінок, функціонал, інтеграція з сервісами, унікальний дизайн.",
                             },
                             {
-                                title: "Обсягу робіт",
+                                title: "Обсяг робіт",
                                 text: "Створення з нуля чи реалізація за готовим технічним завданням.",
                             },
                             {
@@ -2113,7 +2113,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Замовляйте створення інтернет-магазину вже зараз, щоб отримати рішення, яке працює на ваш успіх!",
+                    "Замовляйте створення інтернет - магазину вже зараз - підвищуйте продажі та виділяйте свій бізнес серед конкурентів.",
             },
         },
         en: {
@@ -2123,12 +2123,12 @@ export const servicesData: ServiceType[] = [
             fullDescription: {
                 title: "<purple>Online store:</purple> turning your ideas into successful online solutions",
                 introduction:
-                    "Developing an online store is a responsible process that requires experience and a professional approach. \nIt is necessary to consider the website structure, product catalog, payment options, delivery, inventory management, promotions, personalized offers, as well as develop a customer account and an administrative panel for the business owner.",
+                    "Developing an online store is a responsible process that requires experience and a professional approach. \nIt is necessary to consider the website structure, product catalog, payment options, delivery system, inventory management, promotions, personalized offers, as well as develop a customer account and an administrative panel for the business owner.",
                 topText: [
                     { icon: "clock", text: "Timeframe: 2-12 months." },
                     {
                         icon: "currency",
-                        text: "Price: from $500 up to more than $10k (depends on the complexity of the design and functionality).",
+                        text: "Price: from $1,600 up to more than $10k (depending on the complexity of the design and functionality)",
                     },
                 ],
                 content: [
@@ -2138,11 +2138,11 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Analysis and planning",
-                                text: "At the initial stage, the goals and objectives of the project are defined, the market is analyzed, competitors and target audience needs are studied.A detailed plan is created considering the budget and timeline.",
+                                text: "In the initial phase, the project's goals and objectives are defined, a market analysis is conducted, competitors' and target audience needs are studied, and a detailed plan is created, considering the budget and deadlines.",
                             },
                             {
                                 title: "Design and prototyping",
-                                text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen.The main focus is on user convenience(UX) and the site's aesthetic appearance (UI).",
+                                text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen. The main focus is user convenience(UX) and the site's aesthetic appearance (UI).",
                             },
                             {
                                 title: "Programming and development",
@@ -2167,7 +2167,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Content upload",
-                                text: "Data about products, including descriptions, photos, and specifications, are uploaded.This can be done manually or through automation.",
+                                text: "Product data, including descriptions, images, and specifications, are uploaded. This can be done manually or through automation.",
                             },
                             {
                                 title: "Testing",
@@ -2175,7 +2175,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Website launch",
-                                text: "After testing, the website is published on hosting, and final settings are completed.",
+                                text: "After testing, the website is published on hosting, and the final settings are completed.",
                             },
                             {
                                 title: "Support and development",
@@ -2185,7 +2185,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         layout: 2,
-                        title: "What determines the cost and tirm of developing?",
+                        title: "What determines the cost and terms of development?",
                         description: [
                             {
                                 title: "Project complexity",
@@ -2221,7 +2221,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Order your online store now and get a solution that works for your success!",
+                    "Order the development of an online store now – boost your sales and stand out among competitors!",
             },
         },
         pl: {
@@ -2250,7 +2250,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Projektowanie i prototypowanie",
-                                text: "Opracowywana jest struktura witryny, tworzone są układy stron, wybierane są kolory, czcionki i styl wizualny.Główna uwaga skupia się na wygodzie użytkowników(UX) i estetyce strony(UI).",
+                                text: "Opracowywana jest struktura witryny, tworzone są układy stron, wybierane są kolory, czcionki i styl wizualny. Główna uwaga skupia się na wygodzie użytkowników(UX) i estetyce strony(UI).",
                             },
                             {
                                 title: "Programowanie i rozwój",
@@ -2275,7 +2275,7 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Wypełnianie treścią",
-                                text: "Dodawane są dane o produktach: opisy, zdjęcia, specyfikacje.Można to zrobić ręcznie lub zautomatyzowane.",
+                                text: "Dodawane są dane o produktach: opisy, zdjęcia, specyfikacje. Można to zrobić ręcznie lub zautomatyzowane.",
                             },
                             {
                                 title: "Testowanie",
@@ -2320,7 +2320,7 @@ export const servicesData: ServiceType[] = [
                                 text: "Rozumiemy potrzeby Twojego biznesu i oferujemy kreatywne pomysły, które przynoszą efekty.",
                             },
                             {
-                                text: "Z nami szybko osiągniesz swoje cele.",
+                                text: "Skupiamy się na aktualnych trendach, łącząc je z Twoimi potrzebami.",
                             },
                             {
                                 text: "Z nami szybko osiągniesz swoje cele.",
@@ -2329,7 +2329,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Zamów tworzenie sklepu internetowego już teraz i uzyskaj rozwiązanie, które zadziała na Twój sukces!",
+                    "Zamów stworzenie sklepu internetowego już teraz – zwiększ sprzedaż i wyróżnij swój biznes wśród konkurencji!",
             },
         },
     },
