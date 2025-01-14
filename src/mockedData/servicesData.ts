@@ -2208,7 +2208,7 @@ export const servicesData: ServiceType[] = [
                                 icon: "ba",
                                 text: [
                                     {
-                                        text: "Discussion of your business goals and needs..",
+                                        text: "Discussion of your business goals and needs.",
                                         type: "listItem",
                                     },
                                     {
@@ -2677,7 +2677,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Замовляйте створення інтернет - магазину вже зараз - підвищуйте продажі та виділяйте свій бізнес серед конкурентів.",
+                    "Замовляйте створення інтернет-магазину вже зараз - підвищуйте продажі та виділяйте свій бізнес серед конкурентів.",
             },
         },
         en: {
