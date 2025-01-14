@@ -52,12 +52,12 @@ export const ChessboardListWithIcons = ({
     }, []);
 
     return (
-        <ul ref={ref} className="">
+        <ul ref={ref}>
             {description.map((item, index) => (
                 <motion.li
                     key={index}
                     data-index={index}
-                    className="flex flex-row-reverse gap-[14px] tab:gap-[1.32%] pc:gap-[4.537%] desk:gap-[2.1%] mb-8 last:mb-0 tab:mb-6 tab:odd:flex-row"
+                    className="flex flex-row-reverse gap-[14px] tab:gap-[1.32%] pc:gap-[4.537%] desk:gap-[2.1%] mb-8 last:mb-0 tab:mb-6 tab:odd:flex-row "
                     initial={{ opacity: 0, y: 70 }}
                     animate={
                         visibleIndices.has(index)
