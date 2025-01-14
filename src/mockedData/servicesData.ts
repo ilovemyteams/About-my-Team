@@ -2677,7 +2677,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Замовляйте створення інтернет-магазину вже зараз - підвищуйте продажі та виділяйте свій бізнес серед конкурентів.",
+                    "Замовляйте створення інтернет-магазину - підвищуйте продажі та виділяйте свій бізнес серед конкурентів.",
             },
         },
         en: {
@@ -2785,7 +2785,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Order the development of an online store now – boost your sales and stand out among competitors!",
+                    "Order the development of an online store – boost your sales and stand out among competitors!",
             },
         },
         pl: {
@@ -2893,7 +2893,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Zamów stworzenie sklepu internetowego już teraz – zwiększ sprzedaż i wyróżnij swój biznes wśród konkurencji!",
+                    "Zamów stworzenie sklepu internetowego – zwiększ sprzedaż i wyróżnij swój biznes wśród konkurencji!",
             },
         },
     },
