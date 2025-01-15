@@ -175,7 +175,8 @@
         "questionLabel": "Twoje pytanie*",
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
-        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!"
+        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
+        "customerFormTitle": "Zamówić usługę"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",

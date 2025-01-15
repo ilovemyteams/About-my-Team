@@ -172,7 +172,8 @@
         "questionLabel": "Your question*",
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
-        "askFormText": "Write to us, and we will help you find the answer!"
+        "askFormText": "Write to us, and we will help you find the answer!",
+        "customerFormTitle": "Order a service"
     },
     "Errors": {
         "required": "This field is required",
