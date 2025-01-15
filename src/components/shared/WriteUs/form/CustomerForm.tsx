@@ -92,9 +92,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
             }) => {
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                        <h2 className="font-caviar text-purple-200 dark:text-white-200 text-3xl tab:text-4xl pc:text-5xl self-start mb-[10px]">
+                        <h1 className="font-caviar text-purple-200 dark:text-white-200 text-3xl tab:text-4xl pc:text-5xl self-start mb-[10px]">
                             {getTranslation("customerFormTitle")}
-                        </h2>
+                        </h1>
                         <CustomField
                             name="name"
                             value={values.name}
