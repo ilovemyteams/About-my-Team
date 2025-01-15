@@ -2598,11 +2598,11 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Проєктування та дизайн",
-                                text: "Розробляється структура сайту, створюються макети сторінок, підбираються кольори, шрифти та візуальний стиль. Основна увага приділяється зручності користувачів(UX) та естетичному вигляду сайту(UI).",
+                                text: "Розробляється структура сайту, створюються макети сторінок, підбираються кольори, шрифти та візуальний стиль. Основна увага приділяється зручності користувачів (UX) та естетичному вигляду сайту (UI).",
                             },
                             {
                                 title: "Програмування та розробка",
-                                text: "Виконується технічна реалізація: розробляється зовнішній інтерфейс(frontend), серверна частина(backend) та впроваджується система управління контентом(CMS).",
+                                text: "Виконується технічна реалізація: розробляється зовнішній інтерфейс (frontend), серверна частина (backend) та впроваджується система управління контентом (CMS).",
                             },
                             {
                                 title: "Інтеграція із зовнішніми сервісами",
@@ -2706,11 +2706,11 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Design and prototyping",
-                                text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen. The main focus is user convenience(UX) and the site's aesthetic appearance (UI).",
+                                text: "The website structure is designed, page layouts are created, and colors, fonts, and visual styles are chosen. The main focus is user convenience (UX) and the site's aesthetic appearance (UI).",
                             },
                             {
                                 title: "Programming and development",
-                                text: "The technical implementation is carried out: the frontend(user interface), backend(server- side logic), and content management system(CMS) are developed.",
+                                text: "The technical implementation is carried out: the frontend (user interface), backend (server- side logic), and content management system (CMS) are developed.",
                             },
                             {
                                 title: "Integration with external services",
@@ -2814,11 +2814,11 @@ export const servicesData: ServiceType[] = [
                             },
                             {
                                 title: "Projektowanie i prototypowanie",
-                                text: "Opracowywana jest struktura witryny, tworzone są układy stron, wybierane są kolory, czcionki i styl wizualny. Główna uwaga skupia się na wygodzie użytkowników(UX) i estetyce strony(UI).",
+                                text: "Opracowywana jest struktura witryny, tworzone są układy stron, wybierane są kolory, czcionki i styl wizualny. Główna uwaga skupia się na wygodzie użytkowników (UX) i estetyce strony (UI).",
                             },
                             {
                                 title: "Programowanie i rozwój",
-                                text: "Przeprowadzane jest wdrożenie techniczne: opracowywany jest frontend i backend oraz wdrażany jest system zarządzania treścią(CMS).",
+                                text: "Przeprowadzane jest wdrożenie techniczne: opracowywany jest frontend i backend oraz wdrażany jest system zarządzania treścią (CMS).",
                             },
                             {
                                 title: "Integracja z usługami zewnętrznymi",
