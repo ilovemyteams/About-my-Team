@@ -35,7 +35,7 @@ export type MemberDataItemType = {
 export const membersData: MemberDataItemType[] = [
     {
         data: {
-            id: "susanna-salata-manager",
+            id: "susanna-salata-product-manager",
             projectId: ["1", "2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
@@ -90,7 +90,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "mariia-popova-designer",
+            id: "mariia-popova-designer-graphic-designer-ui-ux-designer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=16fccRTPiYw3lk-e2jddm8BCvD3KY6IhW",
@@ -135,7 +135,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "svitlana-kondratenko-business-analytic",
+            id: "svitlana-kondratenko-business-analyst",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1LHJIjTws0sAAYnDztAepbuRq54OPydpH",
@@ -187,7 +187,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "vlad-shumkov-developer",
+            id: "vlad-shumkov-fullstack-developer",
             projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lxHatnNTUQSpKzf0cuAAMOLW_ym2DkC_",
@@ -239,7 +239,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "ihor-dronishynets-developer",
+            id: "ihor-dronishynets-fullstack-developer",
             projectId: ["1", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14EYFUfVxF8bUaTQrS0lX0rzgVTJO-CG9",
@@ -298,7 +298,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "iryna-stoliarova-designer",
+            id: "iryna-stoliarova-ui-ux-designer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wTpwfwGEQK2JHmyY7rJaZgJCqWyEcXM-",
@@ -341,7 +341,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "anastasiia-nazarenko-designer",
+            id: "anastasiia-nazarenko-graphic-designer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RacOw9P_MUIelOTWaYpGzfT4ECV4gjrR",
@@ -387,7 +387,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "eugene-serdiuk-developer",
+            id: "eugene-serdiuk-fullstack-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Me_DV0bkJvBLGxPBQbrmGjS5uK-VcW8z",
@@ -437,7 +437,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "iryna-trynkal-developer",
+            id: "iryna-trynkal-fullstack-developer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V1LCyS8p91R7Py1swWeShuAymmBNn0I0",
@@ -487,7 +487,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olena-posternak-developer",
+            id: "olena-posternak-frontend-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=10Nsf6MskUIsOC-yG4-cfv69lG8jRlyRb",
@@ -537,7 +537,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olga-mykhailova-developer",
+            id: "olga-mykhailova-frontend-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1vmhr46iyL0MySdSFi1KQW19qeQJIwQ1b",
@@ -593,7 +593,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "kateryna-rubanik-qa",
+            id: "kateryna-rubanik-qa-engineer",
             projectId: ["1", "4"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1Hl4YyM_odWo_I1ZUPSZ_q8RZusxeajCH",
@@ -649,7 +649,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "susanna-salata-business-analytic",
+            id: "susanna-salata-business-analyst",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1O43w9-Ti3SwlLi4fO9Kl8-GwY1O1wpc0",
@@ -709,7 +709,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "denis-slivinskyi-developer",
+            id: "denis-slivinskyi-fullstack-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=19t3e6QnD3Xm5Pwtq5NRdElfN5OAr9GB3",
@@ -763,7 +763,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "volodymyr-dehtiarev-developer",
+            id: "volodymyr-dehtiarev-fullstack-developer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nfCVkBnKMTCaP8p504qw3kUGv4i_nl4i",
@@ -812,7 +812,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olena-chornobryvets-qa",
+            id: "olena-chornobryvets-qa-engineer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1dgTU9cl1a02ZoC35oCDbjnANSX_HX0kY",
@@ -858,7 +858,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "hanna-horbenko-qa",
+            id: "hanna-horbenko-qa-engineer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1fp6JW8_U85A9JRP3GWZ8wq9TgmP1mggd",
@@ -911,7 +911,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "anna-klyba-qa",
+            id: "anna-klyba-qa-engineer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1V-icZV2Ugq3h5uP89suS4qbNeF4Crcd7",
@@ -963,7 +963,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "oksana-luchko-qa",
+            id: "oksana-luchko-qa-engineer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1wGCOxPKTkU42QK_w6wO66fmSdAdNHvPB",
@@ -1011,7 +1011,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "nadia-hubchuk-qa",
+            id: "nadia-hubchuk-qa-engineer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1CtrIlXU6_7nmlPdi9QiGZRGgyqztHxU1",
@@ -1062,7 +1062,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "tetiana-seletska-manager",
+            id: "tetiana-seletska-project-manager-scrum-master",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1mPUXf8ifPVMmTU_ef_jH0GfBWCunBsxW",
@@ -1109,7 +1109,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "daria-cherviakova-manager",
+            id: "daria-cherviakova-project-manager-scrum-master",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=18zah41aiSfjQTae2kVeE_ABnfmUqQ3mK",
@@ -1250,11 +1250,11 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "marta-morintseva-qa",
+            id: "marta-morintseva-qa-engineer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1cjstQ443wX1x8qerPgwXC109fAiUvZMN",
-            position: "QA engineer",
+            position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
             pricePerHour: "7",
@@ -1302,7 +1302,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "iryna-shevchenko-business-analytic",
+            id: "iryna-shevchenko-business-analyst",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=14d7tOm2EEpI4xG-worNliutU5hnwOpCe",
@@ -1402,7 +1402,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "natali-istomina-business-analytic",
+            id: "natali-istomina-business-analyst",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1giLKL402aoDa6yE3GoZxlSUYe1hGRhT7",
@@ -1449,7 +1449,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "veronika-zlobina-designer",
+            id: "veronika-zlobina-ui-ux-designer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1uiJss2kZE8k04-lTV07vIUQQk_-3dR8f",
@@ -1501,7 +1501,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "mila-maksymenko-designer",
+            id: "mila-maksymenko-ui-ux-designer",
             projectId: ["1", "3", "5"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1RjBfHBr05T_fuzgTswljLGrPXnnC9PIN",
@@ -1561,11 +1561,11 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "anton-chertok-developer",
+            id: "anton-chertok-frontend-developer",
             projectId: ["3", "2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=16evkhxhlshI1i5u9n-Gus4vQebOq3bLt",
-            position: "Front-end Developer",
+            position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
             pricePerHour: "9",
@@ -1614,11 +1614,11 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "dmytro-bulakhov-developer",
+            id: "dmytro-bulakhov-frontend-developer",
             projectId: ["3", "2", "5"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1lii6aMputmuNrLFHNIZN7aoq8uNw7ipt",
-            position: "Front-end Developer",
+            position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: [
                 "theatermag.com.ua",
@@ -1668,7 +1668,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "evhen-malysh-developer",
+            id: "evhen-malysh-backend-developer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1AjBCSRShpXihOxgvQ0VX2T1B6GLAs7jY",
@@ -1720,7 +1720,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "anatolii-omelchenko-developer",
+            id: "anatolii-omelchenko-backend-developer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1ft3N7N8MCPAXGHb6BH3HGzpEfepkXyaF",
@@ -1770,7 +1770,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "oleksandr-meshcherskyi-developer",
+            id: "oleksandr-meshcherskyi-fullstack-developer",
             projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=12N2hSCNCiHj2v__i5SCk5bfepXtBwyuW",
@@ -1819,7 +1819,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "svitlana-krokhmalna-qa",
+            id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1rSkmS0DR2FpT-lPkHyTXo3Qtfm1uE0uo",
@@ -1867,7 +1867,7 @@ export const membersData: MemberDataItemType[] = [
 
     {
         data: {
-            id: "oksana-onopriienko-qa",
+            id: "oksana-onopriienko-qa-engineer",
             projectId: ["3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=13c2nCu2UVfdR2xMje6W2sGvkhuqRMGfc",
@@ -1915,7 +1915,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olena-halushka-designer",
+            id: "olena-halushka-ui-ux-designer",
             projectId: ["2", "3"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1p4UWHZqRumV_IwVfkR7YbjGTvzQo3PS2",
@@ -1973,7 +1973,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "mariia-cherevko-designer",
+            id: "mariia-cherevko-ui-ux-designer",
             projectId: ["1"],
 
             imageURL:
@@ -2023,11 +2023,11 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "anna-prutnik-developer",
+            id: "anna-prutnik-frontend-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1QFXDXtH3bITUpp4eReNJf6jYScTrKC0z",
-            position: "Front-end Developer",
+            position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
 
@@ -2077,7 +2077,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "oleksandr-petrychuk-developer",
+            id: "oleksandr-petrychuk-fullstack-developer",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1r7xqlvLM9jJbY7UsaPqoTGuvIiBWXiYL",
@@ -2126,11 +2126,11 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "eugene-siedinin-qa",
+            id: "eugene-siedinin-qa-engineer",
             projectId: ["2"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1FzHrVfH0Uf5rE-p0HKGiR1SWwMaNMaZx",
-            position: "QA engineer",
+            position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
             pricePerHour: "7",
@@ -2175,7 +2175,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "kateryna-pogrebna-qa",
+            id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1nCpjMU476VbcnV3IrejBUZV0hzQWBVuy",
@@ -2236,7 +2236,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "yuliya-borys-business-analytic",
+            id: "yuliya-borys-business-analyst",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1uuzwJEECLlOOaTcsbr4NWsxrCBgwOJ4_",
@@ -2280,7 +2280,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olha-kuchalska-business-analytic",
+            id: "olha-kuchalska-business-analyst",
             projectId: [],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1bvQXDyYD1PZdGyBPKszt-ukvB1OL2NqX",
@@ -2328,7 +2328,7 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "solomiia-lutska-project-manager",
+            id: "solomiia-lutska-project-project-manager-scrum-master",
             projectId: ["1"],
             imageURL:
                 "https://drive.google.com/uc?export=view&id=1IFJ4LN6iO0QdXeifL7PU-XguBaJzZrY6",
