@@ -1,10 +1,10 @@
 {
     "Home": {
-        "titleSEO": "The team that cares about your needs",
-        "descriptionSEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
+        "titleSEO": "The team that creates websites and digital solutions for your business. Your idea — our implementation.",
+        "descriptionSEO": "We help businesses grow: creating websites and digital products that meet your needs and exceed expectations."
     },
     "Hero": {
-        "heroInfoText": "A team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
+        "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project"
     },
