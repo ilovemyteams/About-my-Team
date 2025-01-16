@@ -16,7 +16,7 @@ export const GridAnimatedWithCheckMark = ({
 }: PropsWithChildren<GridAnimatedWithCheckMarkProps>) => {
     const ref = useRef(null);
 
-    const isInView = useInView(ref, { once: true, margin: "-50px 0px 50px" });
+    const isInView = useInView(ref, { margin: "-50px 0px 50px" });
     const isElementOdd = index % 2 === 0;
     const initialState = isElementOdd
         ? { x: "-100%", opacity: 0 }

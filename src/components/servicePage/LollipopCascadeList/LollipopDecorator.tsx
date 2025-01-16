@@ -10,7 +10,7 @@ interface LollipopDecoratorProps {
 const draw = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i: number) => {
-        const delay = i * 0.5;
+        const delay = i;
         return {
             pathLength: 1,
             opacity: 1,
@@ -48,8 +48,8 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                 className="relative mt-[5px]"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1, delay: 1.6, ease: "easeOut" }}
-                custom={2}
+                transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+                custom={1}
             >
                 <IconHexagon className=" w-[67px] h-[57px] pc:w-[80px] pc:h-[70px] dark:text-purple-stroke text-purple-strokeLight" />
                 {itemNumber.length > 0 && (
@@ -69,12 +69,12 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                 >
                     <motion.line
                         x1="50"
-                        y1="100"
+                        y1="0"
                         x2="50"
-                        y2="0"
+                        y2="100"
                         stroke="currentColor"
                         variants={draw}
-                        custom={1}
+                        custom={2}
                     />
                 </motion.svg>
             </div>
