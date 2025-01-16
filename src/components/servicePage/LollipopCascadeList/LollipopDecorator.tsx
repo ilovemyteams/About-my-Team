@@ -10,7 +10,7 @@ interface LollipopDecoratorProps {
 const draw = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i: number) => {
-        const delay = i;
+        const delay = i * 0.5;
         return {
             pathLength: 1,
             opacity: 1,
@@ -48,8 +48,8 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                 className="relative mt-[5px]"
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-                custom={1}
+                transition={{ duration: 1, delay: 1.6, ease: "easeOut" }}
+                custom={2}
             >
                 <IconHexagon className=" w-[67px] h-[57px] pc:w-[80px] pc:h-[70px] dark:text-purple-stroke text-purple-strokeLight" />
                 {itemNumber.length > 0 && (
@@ -69,30 +69,15 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                 >
                     <motion.line
                         x1="50"
-                        y1="0"
+                        y1="100"
                         x2="50"
-                        y2="100"
+                        y2="0"
                         stroke="currentColor"
                         variants={draw}
-                        custom={2}
+                        custom={1}
                     />
                 </motion.svg>
             </div>
-
-            {/* <motion.div
-                className={`w-[1px] mt-[-1px] desk:mt-[-2px] grow mx-auto overflow-clip`}
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-            >
-                <motion.div
-                    className="w-full h-full  dark:bg-purple-stroke bg-purple-strokeLight"
-                    initial={{ y: "-100%" }}
-                    whileInView={{ y: "0" }}
-                    viewport={{ once: false }}
-                    transition={{ duration: 0.6, delay: 2, ease: "easeOut" }}
-                ></motion.div>
-            </motion.div> */}
         </motion.div>
     );
 };
