@@ -49,6 +49,7 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
                 custom={1}
             >
                 <IconHexagon className=" w-[67px] h-[57px] pc:w-[80px] pc:h-[70px] dark:text-purple-stroke text-purple-strokeLight" />
@@ -66,6 +67,7 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                     initial="hidden"
                     whileInView="visible"
                     transition={{ delay: 2 }}
+                    viewport={{ once: true }}
                 >
                     <motion.line
                         x1="50"
@@ -75,6 +77,7 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                         stroke="currentColor"
                         variants={draw}
                         custom={2}
+                        viewport={{ once: true }}
                     />
                 </motion.svg>
             </div>

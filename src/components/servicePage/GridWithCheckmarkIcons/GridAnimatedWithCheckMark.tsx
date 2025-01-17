@@ -2,9 +2,6 @@
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { PropsWithChildren, useRef } from "react";
 
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
-
 import { IconCheckmarkWithinSquare } from "../../shared/Icons/IconCheckmarkWithinSquare";
 
 interface GridAnimatedWithCheckMarkProps {
@@ -17,26 +14,28 @@ export const GridAnimatedWithCheckMark = ({
     index,
     className,
 }: PropsWithChildren<GridAnimatedWithCheckMarkProps>) => {
-    const screenSize = useScreenSize();
     const ref = useRef(null);
 
-    const isInView = useInView(ref, { margin: "-50px 0px 50px" });
-    const isElementOdd = index % 2 === 0;
-    const initialState = isElementOdd
-        ? { x: "-100%", opacity: 0 }
-        : { x: "100%", opacity: 0 };
-    const animatedState = { x: 0, opacity: 1 };
+    const isInView = useInView(ref, { once: true, margin: "-50px 0px 50px" });
 
-    const delay =
-        screenSize === SCREEN_NAMES.mobileName ? 1 : isElementOdd ? 1 : 2;
+    const isElementOdd = index % 2 === 0;
+
+    const translateIndex = isElementOdd ? index : index - 1;
+    const translateX = Math.min(translateIndex * 15 + 20, 100);
+    const delay = 1;
     const elementDelay = delay + 1;
+
+    const initialState = isElementOdd
+        ? { x: `-${translateX}%`, opacity: 0 }
+        : { x: `${translateX}%`, opacity: 0 };
+    const animatedState = { x: 0, opacity: 1 };
 
     return (
         <motion.li
             className={className || ""}
             initial={initialState}
             whileInView={animatedState}
-            viewport={{ margin: "-50px 0px 50px" }}
+            viewport={{ once: true, margin: "-100px 0px 50px" }}
             ref={ref}
             transition={{
                 type: "tween",
