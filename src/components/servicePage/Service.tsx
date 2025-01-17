@@ -4,6 +4,7 @@ import { ServiceType } from "@/src/mockedData/servicesData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { GoToAllService } from "./GoToAllService";
 import { ServiceCtaSection } from "./ServiceCtaSection";
 import { ServiceHeader } from "./ServiceHeader";
 import { ServiceHero } from "./ServiceHero";
@@ -30,6 +31,7 @@ export const Service = ({ service }: ServiceProps) => {
                         topText={fullDescription.topText}
                     />
                     <ServiceMainContent content={fullDescription.content} />
+                    <GoToAllService />
                     <ServiceCtaSection
                         text={fullDescription.ctaText}
                         button={ctaButton}
