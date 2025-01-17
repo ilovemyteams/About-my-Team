@@ -2,6 +2,9 @@
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { PropsWithChildren, useRef } from "react";
 
+import { SCREEN_NAMES } from "@/src/constants/screenNames";
+import { useScreenSize } from "@/src/hooks/useScreenSize";
+
 import { IconCheckmarkWithinSquare } from "../../shared/Icons/IconCheckmarkWithinSquare";
 
 interface GridAnimatedWithCheckMarkProps {
@@ -14,6 +17,7 @@ export const GridAnimatedWithCheckMark = ({
     index,
     className,
 }: PropsWithChildren<GridAnimatedWithCheckMarkProps>) => {
+    const screenSize = useScreenSize();
     const ref = useRef(null);
 
     const isInView = useInView(ref, { margin: "-50px 0px 50px" });
@@ -23,7 +27,8 @@ export const GridAnimatedWithCheckMark = ({
         : { x: "100%", opacity: 0 };
     const animatedState = { x: 0, opacity: 1 };
 
-    const delay = isElementOdd ? 1 : 2;
+    const delay =
+        screenSize === SCREEN_NAMES.mobileName ? 1 : isElementOdd ? 1 : 2;
     const elementDelay = delay + 1;
 
     return (
