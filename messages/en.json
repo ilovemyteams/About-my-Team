@@ -1,10 +1,10 @@
 {
     "Home": {
-        "titleSEO": "The team that cares about your needs",
-        "descriptionSEO": "We treat business pain and solve complex problems with digital tools and creative approaches to achieve your business goals"
+        "titleSEO": "The team that creates websites and digital solutions for your business. Your idea — our implementation.",
+        "descriptionSEO": "We help businesses grow: we create websites and digital products that meet your needs and exceed your expectations."
     },
     "Hero": {
-        "heroInfoText": "A team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
+        "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project"
     },
@@ -281,7 +281,8 @@
         "titleSEO": "Website development services for business - modern web design and development",
         "descriptionSEO": "Turnkey web development of websites: convenient structure, modern design and integration of functions. We work with individual requirements of each client.",
         "ctaText": "Get a comprehensive consultation with our manager if you have any questions or doubts",
-        "details": "More"
+        "details": "More",
+        "allService": "All services"
     },
     "Christmas": {
         "titleSEO": "Merry Christmas!",

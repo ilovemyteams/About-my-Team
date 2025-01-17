@@ -128,7 +128,7 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Potrzebuję strony internetowej. \nOd czego zacząć?",
             shortAnswerText: [
-                "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać.",
+                "Zacznij od szczerej odpowiedzi na następujące pytania: dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać.",
                 "Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
             ],
             imageAltText: "Potrzebuję strony internetowej. Od czego zacząć?",
@@ -299,9 +299,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Односторінковий сайт;",
-                                        "Один промоційний або інформаційний екран;",
-                                        "Зосереджений на рекламній кампанії, презентації одного продукту або послуги;",
+                                        "Односторінковий сайт.",
+                                        "Один промоційний або інформаційний екран.",
+                                        "Зосереджений на рекламній кампанії, презентації одного продукту або послуги.",
                                         "Має просту структуру та навігацію.",
                                     ],
                                 },
@@ -310,9 +310,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Швидкого запуску продукту або послуги;",
-                                        "Рекламних кампаній;",
-                                        "Збирання лідів;",
+                                        "Швидкого запуску продукту або послуги.",
+                                        "Рекламних кампаній.",
+                                        "Збирання лідів.",
                                         "Продажу конкретного товару або послуги.",
                                     ],
                                 },
@@ -326,8 +326,8 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Складається з декількох сторінок, таких як головна, про нас, послуги, контакти тощо;",
-                                        "Більш розгалужена структура та розширені можливості;",
+                                        'Складається з декількох сторінок, таких як "Головна", "Про нас", "Послуги", "Контакти" тощо.',
+                                        "Більш розгалужена структура та розширені можливості.",
                                         "Дозволяє розказати про компанію, співробітників, товари та послуги, зібрати зворотній зв’язок від користувачів та спонукати їх до дій на сайті - подзвонити, замовити товар/послугу, замовити консультацію тощо.",
                                     ],
                                 },
@@ -336,9 +336,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Компаній, що пропонують  товари та послуги;",
-                                        "Бізнесів, які хочуть представити детальну інформацію про свою діяльність;",
-                                        "Компаній, які прагнуть побудувати довгострокову онлайн присутність;",
+                                        "Компаній, що пропонують  товари та послуги.",
+                                        "Бізнесів, які хочуть представити детальну інформацію про свою діяльність.",
+                                        "Компаній, які прагнуть побудувати довгострокову онлайн присутність.",
                                         "Компаній, які хочуть налагодити партнерські відносини або залучити додаткове фінансування.",
                                     ],
                                 },
@@ -352,8 +352,8 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Має всі ті самі атрибути як і сайт-візитка;",
-                                        "Дозволяє представити повний спектр продуктів або послуг, а також додаткові матеріали та ресурси;",
+                                        "Має всі ті самі атрибути як і сайт-візитка.",
+                                        "Дозволяє представити повний спектр продуктів або послуг, а також додаткові матеріали та ресурси.",
                                         "Дозволяє розмістити на сайті більше інформації на більшій кількості різноманітних за типом сторінок та передати всі можливі види контенту.",
                                     ],
                                 },
@@ -399,9 +399,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Strona jednostronicowa;",
-                                        "Jeden ekran promocyjny lub informacyjny;",
-                                        "Skupia się na kampanii reklamowej, prezentacji jednego produktu lub usługi;",
+                                        "Strona jednostronicowa.",
+                                        "Jeden ekran promocyjny lub informacyjny.",
+                                        "Skupia się na kampanii reklamowej, prezentacji jednego produktu lub usługi.",
                                         "Ma prostą strukturę i nawigację.",
                                     ],
                                 },
@@ -410,9 +410,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Szybkiego wprowadzenia produktu lub usługi na rynek;",
-                                        "Kampanii reklamowych;",
-                                        "Zbierania leadów;",
+                                        "Szybkiego wprowadzenia produktu lub usługi na rynek.",
+                                        "Kampanii reklamowych.",
+                                        "Zbierania leadów.",
                                         "Sprzedaży konkretnego produktu lub usługi.",
                                     ],
                                 },
@@ -426,8 +426,8 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Składa się z kilku stron, takich jak strona główna, o nas, usługi, kontakty itd;",
-                                        "Bardziej rozbudowana struktura i rozszerzone możliwości;",
+                                        'Składa się z kilku stron, takich jak strona "Główna", "O nas", "Usługi", "Kontakty" itd.',
+                                        "Bardziej rozbudowana struktura i rozszerzone możliwości.",
                                         "Pozwala opowiedzieć o firmie, pracownikach, produktach i usługach, zebrać opinie od użytkowników i zachęcić ich do podjęcia działań na stronie — zadzwonić, zamówić produkt/usługę, zamówić konsultację itp.",
                                     ],
                                 },
@@ -436,9 +436,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Firm oferujących towary i usługi;",
-                                        "Biznesów, które chcą dostarczać szczegółowych informacji na temat swojej działalności;",
-                                        "Firm, które chcą zbudować długoterminową obecność w Internecie;",
+                                        "Firm oferujących towary i usługi.",
+                                        "Biznesów, które chcą dostarczać szczegółowych informacji na temat swojej działalności.",
+                                        "Firm, które chcą zbudować długoterminową obecność w Internecie.",
                                         "Firm chcących nawiązać współpracę lub pozyskać dodatkowe finansowanie.",
                                     ],
                                 },
@@ -452,8 +452,8 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Posiada wszystkie te same atrybuty, co strona wizytówka;",
-                                        "Umożliwia zaprezentowanie pełnej gamy produktów lub usług, a także dodatkowych materiałów i zasobów;",
+                                        "Posiada wszystkie te same atrybuty, co strona wizytówka.",
+                                        "Umożliwia zaprezentowanie pełnej gamy produktów lub usług, a także dodatkowych materiałów i zasobów.",
                                         "Umożliwia umieszczenie na stronie większej ilości informacji na różnych typach stron oraz przekazanie wszystkich możliwych rodzajów treści.",
                                     ],
                                 },
@@ -544,7 +544,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Full Multi-Page Website",
+                            title: "Full multi-page website",
                             text: [
                                 {
                                     title: "Key features:",
@@ -586,54 +586,54 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Які терміни розробки готового продукту?",
             shortAnswerText: [
-                "Залежить від складності та складу команди. Розробка лендінгу із стандартизованим функціоналом та простим дизайном може зайняти від 2 до 6 тижнів. Розробка сайту на 10 сторінок із формами реєстрації, авторизації, замовленням товарів та оплатою може зайняти від 4 до 8 місяців, в залежності від дизайну та наповнення.",
+                "Залежить від складності та складу команди. Розробка лендінгу із стандартизованим функціоналом та простим дизайном може зайняти від 2 до 6 тижнів. Зазвичай розробка стандартизованого сайту-візитки  може зайняти від кількох тижнів до кількох місяців. Розробка великого сайту на 10+ сторінок із формами реєстрації, авторизації, замовленням товарів та оплатою може зайняти від 4 до 8 місяців, в залежності від дизайну та наповнення.",
             ],
             imageAltText: "Які терміни розробки готового продукту?",
             fullAnswerTopText: [
-                "Зазвичай розробка стандартизованого сайту-візитки  може зайняти від кількох тижнів до кількох місяців. Однак терміни розробки готового продукту можуть змінюватися в залежності від різних факторів, таких як обсяг проєкту, складність функціоналу, наявність готових ресурсів, специфіки вашого бізнесу,  чіткості формулювання вимог, кількості змін в процесі розробки та інші.",
+                "Однак терміни розробки готового продукту можуть змінюватися в залежності від різних факторів, таких як обсяг проєкту, складність функціоналу, наявність готових ресурсів, специфіки вашого бізнесу,  чіткості формулювання вимог, кількості змін в процесі розробки та інші.",
             ],
             fullAnswerContent: [
                 {
                     layout: 1,
                     data: [
                         {
-                            title: "Підготовчий \nетап:",
+                            title: "Підготовчий \nетап",
                             type: "list",
                             text: [
-                                "Збір первинних вимог до продукту від замовника;",
-                                "Обговорення вимог та деталей проєкту, узгодження специфікацій;",
-                                "Формулюванні ідеї, розробка концепції та вибір стилю;",
+                                "Збір первинних вимог до продукту від замовника.",
+                                "Обговорення вимог та деталей проєкту, узгодження специфікацій.",
+                                "Формулюванні ідеї, розробка концепції та вибір стилю.",
                                 "Визначення структури та функціональності сайту.",
                             ],
                         },
                         {
-                            title: "Розробка \nта тестування:",
+                            title: "Розробка \nта тестування",
                             type: "list",
                             text: [
-                                "Написання та затвердження вимог;",
-                                "Підготовка тестової документації;",
-                                "Розробка архітектури проєкту;",
-                                "Підготовка і затвердження дизайну;",
-                                "Кодування та розробка функціоналу сайту;",
-                                "Інтеграція сторонніх сервісів (за потреби) та підключення Google аналітики;",
-                                "Тестування на відповідність вимогам, виявлення та виправлення помилок;",
+                                "Написання та затвердження вимог.",
+                                "Підготовка тестової документації.",
+                                "Розробка архітектури проєкту.",
+                                "Підготовка і затвердження дизайну.",
+                                "Кодування та розробка функціоналу сайту.",
+                                "Інтеграція сторонніх сервісів (за потреби) та підключення Google аналітики.",
+                                "Тестування на відповідність вимогам, виявлення та виправлення помилок.",
                                 "Підготовка контенту та його інтеграція на сайт.",
                             ],
                         },
                         {
-                            title: "Завершальні роботи \nта запуск:",
+                            title: "Завершальні роботи \nта запуск",
                             type: "list",
                             text: [
-                                "End-to-End тестування та розміщення продукту на сервері;",
-                                "Підготовка до запуску, налаштування хостингу, сертифікатів;",
+                                "End-to-End тестування та розміщення продукту на сервері.",
+                                "Підготовка до запуску, налаштування хостингу, сертифікатів.",
                                 "Запуск сайту та  передача доступів для налаштувань.",
                             ],
                         },
                         {
-                            title: "Підтримка \nта розвиток:",
+                            title: "Підтримка \nта розвиток",
                             type: "list",
                             text: [
-                                "Надання підтримки після запуску;",
+                                "Надання підтримки після запуску.",
                                 "Подальший розвиток сайту, додавання нового функціоналу та контенту.",
                             ],
                         },
@@ -647,11 +647,11 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Ile trwa stworzenie strony internetowej?",
             shortAnswerText: [
-                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 10-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
+                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Tworzenie dużej strony internetowej z ponad 10 stronami i formularzami rejestracyjnymi,, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
             ],
             imageAltText: "Ile trwa stworzenie strony internetowej?",
             fullAnswerTopText: [
-                "Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Jednak czas realizacji gotowego produktu może się zmieniać w zależności od różnych czynników, takich jak zakres projektu, złożoność funkcjonalności, dostępność gotowych zasobów, specyfika działalności, jasność wymagań, liczba zmian w trakcie realizacji oraz inne czynniki.",
+                "Jednak czas realizacji gotowego produktu może się zmieniać w zależności od różnych czynników, takich jak zakres projektu, złożoność funkcjonalności, dostępność gotowych zasobów, specyfika działalności, jasność wymagań, liczba zmian w trakcie realizacji oraz inne czynniki.",
             ],
             fullAnswerContent: [
                 {
@@ -659,43 +659,43 @@ export const questionsData: QAItemType[] = [
 
                     data: [
                         {
-                            title: "Etap \nprzygotowawczy:",
+                            title: "Etap \nprzygotowawczy",
                             type: "list",
                             text: [
-                                "Zebranie od klienta wstępnych wymagań dotyczących produktu;",
-                                "Omówienie wymagań i szczegółów projektu, uzgodnienie specyfikacji;",
-                                "Sformułowanie pomysłu, opracowanie koncepcji i wybór stylu;",
+                                "Zebranie od klienta wstępnych wymagań dotyczących produktu.",
+                                "Omówienie wymagań i szczegółów projektu, uzgodnienie specyfikacji.",
+                                "Sformułowanie pomysłu, opracowanie koncepcji i wybór stylu.",
                                 "Określenie struktury i funkcjonalności strony internetowej.",
                             ],
                         },
                         {
-                            title: "Rozwój \ni testowanie:",
+                            title: "Rozwój \ni testowanie",
                             type: "list",
                             text: [
-                                "Pisanie i zatwierdzanie wymagań;",
-                                "Przygotowanie dokumentacji testowej;",
-                                "Opracowanie architektury projektu;",
-                                "Przygotowanie i zatwierdzenie projektu;",
-                                "Kodowanie i rozwój funkcjonalności strony internetowej;",
-                                "Integracja zewnętrznych usług (w razie potrzeby) oraz podłączenie Google Analytics;",
-                                "Testowanie zgodności z wymaganiami, identyfikowanie i usuwanie błędów;",
+                                "Pisanie i zatwierdzanie wymagań.",
+                                "Przygotowanie dokumentacji testowej.",
+                                "Opracowanie architektury projektu.",
+                                "Przygotowanie i zatwierdzenie projektu.",
+                                "Kodowanie i rozwój funkcjonalności strony internetowej.",
+                                "Integracja zewnętrznych usług (w razie potrzeby) oraz podłączenie Google Analytics.",
+                                "Testowanie zgodności z wymaganiami, identyfikowanie i usuwanie błędów.",
                                 "Przygotowanie treści i ich integracja na stronie.",
                             ],
                         },
                         {
-                            title: "Prace końcowe \ni uruchomienie:",
+                            title: "Prace końcowe \ni uruchomienie",
                             type: "list",
                             text: [
-                                "Testowanie End-to-End oraz umieszczenie produktu na serwerze;",
-                                "Przygotowanie do uruchomienia, konfiguracja hostingu, certyfikaty;",
+                                "Testowanie End-to-End oraz umieszczenie produktu na serwerze.",
+                                "Przygotowanie do uruchomienia, konfiguracja hostingu, certyfikaty.",
                                 "Uruchomienie strony i przekazanie dostępów do ustawień.",
                             ],
                         },
                         {
-                            title: "Wsparcie \ni rozwój:",
+                            title: "Wsparcie \ni rozwój",
                             type: "list",
                             text: [
-                                "Zapewnienie wsparcia po uruchomieniu;",
+                                "Zapewnienie wsparcia po uruchomieniu.",
                                 "Dalszy rozwój strony, dodawanie nowych funkcji i treści.",
                             ],
                         },
@@ -710,55 +710,55 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "What are the terms of the development of the fully functional website?",
             shortAnswerText: [
-                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Developing a 10-page website with registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
+                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Usually, the development of a standardized business card website can take from several weeks to several months. Development of a large website with 10+ pages and registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
             ],
             imageAltText:
                 "What are the terms of the development of the fully functional website?",
             fullAnswerTopText: [
-                "Usually, the development of a standardized business card website can take from several weeks to several months. However, the timeframe for developing a finished product can vary depending on various factors, such as the scope of the project, the complexity of the functionality, the availability of resources, the specifics of your business, the clarity of the requirements, the number of changes during the development process, and others.",
+                "However, the timeframe for developing a finished product can vary depending on various factors, such as the scope of the project, the complexity of the functionality, the availability of resources, the specifics of your business, the clarity of the requirements, the number of changes during the development process, and others.",
             ],
             fullAnswerContent: [
                 {
                     layout: 1,
                     data: [
                         {
-                            title: "Preparation \nstage:",
+                            title: "Preparation \nstage",
                             type: "list",
                             text: [
-                                "Collecting primary product requirements from the client;",
-                                "Discussing project details and aligning specifications;",
-                                "Formulating the idea, developing the concept, and choosing the style;",
+                                "Collecting primary product requirements from the client.",
+                                "Discussing project details and aligning specifications.",
+                                "Formulating the idea, developing the concept, and choosing the style.",
                                 "Defining the structure and functionality of the website.",
                             ],
                         },
                         {
-                            title: "Development \nand testing:",
+                            title: "Development \nand testing",
                             type: "list",
                             text: [
-                                "Writing and approving requirements;",
-                                "Preparing test documentation;",
-                                "Developing the project architecture;",
-                                "Preparing and approving the design;",
-                                "Coding and developing the functionality of the website;",
-                                "Integration of third-party services (if needed) and connecting Google Analytics;",
-                                "Testing compliance with requirements, identifying and fixing bugs;",
+                                "Writing and approving requirements.",
+                                "Preparing test documentation.",
+                                "Developing the project architecture.",
+                                "Preparing and approving the design.",
+                                "Coding and developing the functionality of the website.",
+                                "Integration of third-party services (if needed) and connecting Google Analytics.",
+                                "Testing compliance with requirements, identifying and fixing bugs.",
                                 "Preparing and integrating content into the website.",
                             ],
                         },
                         {
-                            title: "Final steps \nand launch:",
+                            title: "Final steps \nand launch",
                             type: "list",
                             text: [
-                                "End-to-End testing and placing the product on the server;",
-                                "Preparing for launch, setting up hosting, certificates;",
+                                "End-to-End testing and placing the product on the server.",
+                                "Preparing for launch, setting up hosting, certificates.",
                                 "Launching the website and transferring accesses for customization.",
                             ],
                         },
                         {
-                            title: "Support \nand development:",
+                            title: "Support \nand development",
                             type: "list",
                             text: [
-                                "Providing post-launch support;",
+                                "Providing post-launch support.",
                                 "Further development of the website, adding new functionality and content.",
                             ],
                         },
@@ -817,7 +817,7 @@ export const questionsData: QAItemType[] = [
                             title: "Інтернет-магазин",
                             text: [
                                 {
-                                    title: "На - 10-15 продуктів з можливістю здійснення покупок онлайн",
+                                    title: "На 10-15 продуктів з можливістю здійснення покупок онлайн",
                                     text: [
                                         "Це складніший проєкт, який включає розробку каталогу товарів, сторінки для кожного продукту, кошика для покупок, інтеграцію з платіжними системами. Вартість стартує від 1600 доларів. Фінальна ціна може зростати залежно від кількості продуктів, потреб у фільтрах, функціональних можливостях обліку товарів та інтеграціях з логістичними чи маркетинговими системами.",
                                     ],
@@ -999,7 +999,7 @@ export const questionsData: QAItemType[] = [
                     data: [
                         {
                             text: [
-                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym menedżerem, który pomoże ustalić szczegóły: Jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
+                                "Aby uzyskać dokładniejszą wycenę Twojego projektu, najlepiej skontaktować się z naszym menedżerem, który pomoże ustalić szczegóły: jakie funkcje zostaną wdrożone, jaki projekt Cię interesuje i jakie są terminy. Na tej podstawie przygotujemy dla ciebie ofertę wraz z wyceną i planem prac.",
                             ],
                         },
                         {
@@ -1031,7 +1031,7 @@ export const questionsData: QAItemType[] = [
                             title: "Landing page",
                             text: [
                                 {
-                                    title: "one-page website",
+                                    title: "One-page website",
                                     text: [
                                         "This type of website is suitable for presenting a single product or service and often includes basic sections such as a headline, product information, benefits, customer reviews, a contact form, or a call-to-action (CTA) button. The price for development starts at $500, depending on the complexity of the design and integrations.",
                                     ],
@@ -1042,7 +1042,7 @@ export const questionsData: QAItemType[] = [
                             title: "Business card website",
                             text: [
                                 {
-                                    title: "up to 5 pages",
+                                    title: "Up to 5 pages",
                                     text: [
                                         'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $800. Additional features, such as interactive elements or a request form, may affect the total price.',
                                     ],
@@ -1053,7 +1053,7 @@ export const questionsData: QAItemType[] = [
                             title: "Online store",
                             text: [
                                 {
-                                    title: "with 10–15 products",
+                                    title: "With 10–15 products",
                                     text: [
                                         "This is a more complex project that includes the development of a product catalog, individual product pages, a shopping cart, and integration with payment systems. The cost starts at $1,600. The final price may increase depending on the number of products, the need for filters, inventory management functionality, and integrations with logistics or marketing systems.",
                                     ],
@@ -1081,7 +1081,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "SEO optimization",
                             text: [
-                                " If you are planning to promote the website through search engines, it is important to set up SEO optimization and connect website analytics in advance, which also impacts the overall project cost.",
+                                "If you are planning to promote the website through search engines, it is important to set up SEO optimization and connect website analytics in advance, which also impacts the overall project cost.",
                             ],
                         },
                         {
@@ -1093,7 +1093,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Multilingual support",
                             text: [
-                                " If your business operates in more than one country, we recommend focusing on the English version as the primary one. Alternatively, you can plan for multiple languages from the start and decide which languages you need. Each language has its own writing characteristics, and often a layout that looks perfect in English may need adjustments when translated to other languages — words might not fit within buttons or blocks, requiring the redesign of layouts. Additionally, multilingual support complicates content management on the site and requires more time for text translation and testing (checking for SEO optimization and the ability to rephrase while maintaining business context). Multilingual functionality also makes feedback forms validation more complex, and filling in data from the keyboard by website users (such as reviews or comments).",
+                                "If your business operates in more than one country, we recommend focusing on the English version as the primary one. Alternatively, you can plan for multiple languages from the start and decide which languages you need. Each language has its own writing characteristics, and often a layout that looks perfect in English may need adjustments when translated to other languages — words might not fit within buttons or blocks, requiring the redesign of layouts. Additionally, multilingual support complicates content management on the site and requires more time for text translation and testing (checking for SEO optimization and the ability to rephrase while maintaining business context). Multilingual functionality also makes feedback forms validation more complex, and filling in data from the keyboard by website users (such as reviews or comments).",
                             ],
                         },
                         {
@@ -1105,7 +1105,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Integration with management systems",
                             text: [
-                                " If your website requires integrations with CRM systems, product accounting systems, or other external services, this will also be considered in the additional evaluation and depends on the complexity of the integration, as well as the cost of the system that needs to be integrated.",
+                                "If your website requires integrations with CRM systems, product accounting systems, or other external services, this will also be considered in the additional evaluation and depends on the complexity of the integration, as well as the cost of the system that needs to be integrated.",
                             ],
                         },
                     ],
@@ -1760,7 +1760,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Analizę istniejącego systemu",
                                     text: [
-                                        " Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
+                                        "Pierwszym krokiem będzie analiza konfiguracji Twojej strony, technologii użytych do jej stworzenia oraz ewentualnych słabych punktów wymagających uwagi.",
                                     ],
                                 },
                                 {
@@ -2244,7 +2244,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Who Can Benefit from a Landing Page?",
+                    title: "Who can benefit from a landing page?",
                     data: [
                         {
                             title: "The landing page will be useful for entrepreneurs who want to launch their products quickly and companies that want to increase their visibility and customer trust. It is ideal for startups, small and medium-sized businesses, and anyone looking for an effective solution to present a product or service without high development costs. Read more about the benefits below.",
@@ -2287,7 +2287,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Timelines and Costs",
+                    title: "Timelines and costs",
                     data: [
                         {
                             title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $500 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
@@ -2295,7 +2295,7 @@ export const questionsData: QAItemType[] = [
                             decorate: 2,
                             text: [
                                 {
-                                    title: "Design Complexity: ",
+                                    title: "Design complexity: ",
                                     text: [
                                         "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
                                     ],

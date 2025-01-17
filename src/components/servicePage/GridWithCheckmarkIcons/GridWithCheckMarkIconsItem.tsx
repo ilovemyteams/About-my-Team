@@ -13,9 +13,7 @@ export const GridWithCheckmarkIconsItem = ({
     content,
     className,
 }: GridWithCheckmarkIconsItemProps) => {
-    const { title, text: paragraph } = content;
-    const text = typeof paragraph === "string" ? paragraph : paragraph.join("");
-
+    const { title, text } = content;
     return (
         <li className={className}>
             <IconCheckmarkWithinSquare className="mb-2 text-redLight dark:text-red" />
