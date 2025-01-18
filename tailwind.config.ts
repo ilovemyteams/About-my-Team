@@ -487,6 +487,14 @@ const config: Config = {
                     "0%, 100%": { filter: "brightness(1)" },
                     "50%": { filter: "brightness(1.1)" },
                 },
+                showUp: {
+                    "0%": {
+                        opacity: "0",
+                    },
+                    "100%": {
+                        opacity: "1",
+                    },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -506,6 +514,7 @@ const config: Config = {
                 blink1: "glow 600ms infinite",
                 blink2: "glow 600ms 200ms infinite",
                 blink3: "glow 600ms 400ms infinite",
+                showUp: "showUp 700ms ease-out infinite",
             },
         },
         backgroundImage: {
