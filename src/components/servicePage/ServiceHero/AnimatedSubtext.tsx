@@ -21,6 +21,7 @@ export const AnimatedSubtext = ({ text }: AnimatedSubtextProps) => {
             delay: 1,
         });
         return controls.stop;
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return <motion.span>{displayedText}</motion.span>;

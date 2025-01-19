@@ -6,7 +6,7 @@ import { LocaleType } from "@/types/LocaleType";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
 import { ServiceCtaSection } from "./ServiceCtaSection";
 import { ServiceHeader } from "./ServiceHeader";
-import { ServiceHero } from "./ServiceHero";
+import { ServiceHero } from "./ServiceHero/ServiceHero";
 import { ServiceMainContent } from "./ServiceMainContent";
 
 interface ServiceProps {

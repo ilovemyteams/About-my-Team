@@ -20,8 +20,11 @@ export const AnimatedTitle = ({ title }: AnimatedTitleProps) => {
                         <motion.span
                             key={i}
                             className="text-purple-100"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
+                            initial={{ opacity: 0, marginLeft: "40%" }}
+                            animate={{
+                                opacity: [0.5, 1, 1],
+                                marginLeft: ["40%", "40%", 0],
+                            }}
                             transition={{
                                 duration: 1,
                                 ease: "easeOut",
