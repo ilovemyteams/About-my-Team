@@ -19,11 +19,14 @@ export const AnimatedTitle = ({ title }: AnimatedTitleProps) => {
                     return (
                         <motion.span
                             key={i}
-                            className="text-purple-100"
-                            initial={{ opacity: 0, marginLeft: "40%" }}
+                            className="text-purple-100 inline-block"
+                            initial={{
+                                opacity: 0,
+                                x: "50%",
+                            }}
                             animate={{
                                 opacity: [0.5, 1, 1],
-                                marginLeft: ["40%", "40%", 0],
+                                x: ["50%", "50%", 0],
                             }}
                             transition={{
                                 duration: 1,

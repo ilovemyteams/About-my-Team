@@ -26,7 +26,7 @@ export const ServiceHero = ({
     const parsedTitle = highlightPurple(title);
 
     return (
-        <PageSection className="pb-[80px] tab:pb-[100px] pc:pb-[60px]">
+        <PageSection className="pb-[80px] tab:pb-[100px] pc:pb-[60px] overflow-clip">
             <h1 className="relative font-caviar text-3xl mb-6 tab:text-4xl tab:mb-[60px] pc:mb-[100px] desk:mb-[120px] pc:text-6xl desk:text-7xl  text-purple-200 dark:text-grey flex-inline">
                 {parsedTitle.map((item, i) => (
                     <span key={i} className="opacity-0">
