@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -10,6 +9,7 @@ import {
 import { getTextString } from "@/src/utils/getTextString";
 import { LikesTypes } from "@/src/utils/likeDataHandler";
 
+import { ThumbnailHalloween } from "../../eventsPage/ThumbnailHalloween";
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";
 
@@ -28,12 +28,12 @@ export const QaCard = ({
 }: FaqCardItemProps) => {
     const getTranslation = useTranslations("Buttons");
 
-    const { image, slug } = data;
+    const { slug } = data; //TODO: add "image"
 
     const {
         questionText,
         shortAnswerText,
-        imageAltText,
+        // imageAltText,
         fullAnswerContent,
         fullAnswerTopText,
         fullAnswerBottomText,
@@ -50,23 +50,7 @@ export const QaCard = ({
             <div
                 className={`w-full tab:w-[300px] desk:w-[375px] shrink-0 grow-0 relative overflow-hidden`}
             >
-                <div className="relative w-full max-w-[280px] tab:max-w-fit mx-auto aspect-[280/200] tab:aspect-[300/200]">
-                    <Image
-                        src={image}
-                        alt={imageAltText}
-                        width={375}
-                        height={250}
-                        className="h-full w-full object-cover"
-                    />
-                </div>
-
-                <Image
-                    src={image}
-                    alt={` background for main image: ${imageAltText}`}
-                    width={375}
-                    height={250}
-                    className="absolute tab:hidden top-0 left-0 w-full h-full z-[-1] blur-xl object-cover"
-                />
+                <ThumbnailHalloween />
             </div>
 
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
