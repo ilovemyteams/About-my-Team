@@ -77,7 +77,6 @@ export const QaCard = ({
                             pathname: `faq/${slug}`,
                             query: searchTerm && `query=${searchTerm}`,
                         }}
-                        as={{ pathname: `faq/${slug}` }}
                     >
                         <h2
                             className="pc:hover:text-redLight dark:pc:hover:text-red

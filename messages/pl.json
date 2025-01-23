@@ -1,7 +1,7 @@
 {
     "Home": {
-        "titleSEO": "Zespół, który dba o Twoje potrzeby",
-        "descriptionSEO": "Rozwiązujemy problemy biznesowe i złożone za pomocą narzędzi cyfrowych i kreatywnego podejścia do osiągania celów biznesowych"
+        "titleSEO": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. Twój pomysł —  naszą realizacją.",
+        "descriptionSEO": "Pomagamy rozwijać Twój biznes: tworzymy strony internetowe i produkty cyfrowe, które spełniają Twoje potrzeby i przekraczają oczekiwania."
     },
 
     "Hero": {
@@ -283,7 +283,8 @@
         "titleSEO": "Usługi tworzenia stron internetowych dla biznesu - nowoczesne projektowanie i tworzenie stron internetowych",
         "descriptionSEO": "Tworzenie stron internetowych pod klucz: przyjazna dla użytkownika struktura, nowoczesny design i integracja funkcji. Pracujemy z indywidualnymi wymaganiami każdego klienta.",
         "ctaText": "Masz pytania lub wątpliwości? Zamów konsultację, a nasz menedżer udzieli Ci profesjonalnej pomocy!",
-        "details": "Więcej"
+        "details": "Więcej",
+        "allService": "Wszystkie usługi"
     },
     "Christmas": {
         "titleSEO": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
