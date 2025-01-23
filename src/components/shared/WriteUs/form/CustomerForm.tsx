@@ -2,6 +2,7 @@
 import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { usePathname } from "@/src/navigation";
@@ -20,10 +21,12 @@ export interface ValuesWriteUsFormType {
     instagram: string;
     facebook: string;
     message: string;
+    source: string;
 }
 
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
+    const searchParams = useSearchParams();
 
     const path = usePathname();
 
@@ -37,6 +40,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         instagram: "",
         facebook: "",
         message: "",
+        source: searchParams.get("source") || "direct",
     };
 
     const initialStatus = "name";
@@ -51,6 +55,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 instagram: values.instagram.trim(),
                 facebook: values.facebook.trim(),
                 message: values.message.trim(),
+                source: values.source,
             };
             await axios({
                 method: "post",
