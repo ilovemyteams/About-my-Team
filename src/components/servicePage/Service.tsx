@@ -16,7 +16,7 @@ interface ServiceProps {
 
 export const Service = ({ service }: ServiceProps) => {
     const locale = useLocale();
-    const { image, ctaButton } = service;
+    const { image } = service;
 
     const { fullDescription, name } = service[locale as LocaleType];
     return (
@@ -31,11 +31,8 @@ export const Service = ({ service }: ServiceProps) => {
                         topText={fullDescription.topText}
                     />
                     <ServiceMainContent content={fullDescription.content} />
+                    <ServiceCtaSection text={fullDescription.ctaText} />
                     <GoToAllService />
-                    <ServiceCtaSection
-                        text={fullDescription.ctaText}
-                        button={ctaButton}
-                    />
                 </>
             ) : (
                 <UnderConstruction />
