@@ -1,5 +1,5 @@
 import { PageSection } from "../shared/PageSection";
-import { ThumbnailHalloween } from "./ThumbnailHalloween";
+import { ThumbnailChristmas } from "./ThumbnailChristmas";
 
 export const PastEvents = () => {
     return (
@@ -7,7 +7,7 @@ export const PastEvents = () => {
             <div
                 className={`w-full tab:w-[300px] desk:w-[375px] shrink-0 grow-0 relative overflow-hidden`}
             >
-                <ThumbnailHalloween />
+                <ThumbnailChristmas />
             </div>
 
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
