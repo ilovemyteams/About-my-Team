@@ -686,7 +686,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Давайте разом оживимо вашу ідею! Напишіть нам просто зараз, щоб обговорити ваш проєкт.",
+                    "Замовляйте розробку у нас та отримайте індивідуальне рішення для втілення вашої ідеї!",
             },
         },
         en: {
@@ -764,7 +764,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Let's bring your idea to life together! Contact us right now to discuss your project.",
+                    "Order development services from us and get a tailored solution to bring your idea to life!",
             },
         },
         pl: {
@@ -842,7 +842,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Razem wprowadźmy Twój pomysł w życie! Skontaktuj się z nami już teraz, aby omówić swój projekt.",
+                    "Zamów u nas usługi rozwojowe i otrzymaj indywidualne rozwiązanie dla realizacji swojego pomysłu!",
             },
         },
     },
