@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
         source,
     } = await request.json();
 
-    const date = new Date();
+    const date = new Date().toLocaleString();
 
     if (request.method === "POST") {
         try {
