@@ -14,7 +14,7 @@ export const LollipopCascadeAnimateItem = ({ children }: PropsWithChildren) => {
                 visible: { opacity: 1, y: 0 },
             }}
             transition={{
-                duration: 1,
+                duration: 0.5,
                 ease: "easeOut",
             }}
         >

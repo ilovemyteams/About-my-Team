@@ -7,23 +7,29 @@ interface LollipopDecoratorProps {
     indexNumber?: number;
 }
 
-const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i: number) => {
-        const delay = i;
-        return {
-            pathLength: 1,
-            opacity: 1,
-            transition: {
-                pathLength: {
-                    delay,
-                    duration: 0.6,
-                    bounce: 0,
-                    ease: "easeOut",
-                },
-                opacity: { delay, duration: 0.01 },
-            },
-        };
+const signVariant = {
+    hidden: {
+        opacity: 0,
+        scale: 0,
+    },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: { duration: 1, delay: 1, ease: "easeOut" },
+    },
+};
+
+const lineVariant = {
+    hidden: {
+        scale: 0,
+    },
+    visible: {
+        scale: 1,
+        transition: {
+            duration: 0.5,
+            delay: 0.5,
+            ease: "easeOut",
+        },
     },
 };
 
@@ -43,15 +49,9 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
             className="flex flex-col"
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true, margin: "100px 0px 0px" }}
         >
-            <motion.div
-                className="relative mt-[5px]"
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                custom={1}
-            >
+            <motion.div className="relative mt-[5px]" variants={signVariant}>
                 <IconHexagon className=" w-[67px] h-[57px] pc:w-[80px] pc:h-[70px] dark:text-purple-stroke text-purple-strokeLight" />
                 {itemNumber.length > 0 && (
                     <span className="font-caviar text-3xl pc:text-4xl text-purple-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -59,28 +59,10 @@ export const LollipopDecorator = ({ indexNumber }: LollipopDecoratorProps) => {
                     </span>
                 )}
             </motion.div>
-            <div className="grow overflow-clip relative">
-                <motion.svg
-                    viewBox="0 0 100 100"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`dark:text-purple-stroke text-purple-strokeLight absolute top-0 min-h-full left-1/2 -translate-x-1/2`}
-                    initial="hidden"
-                    whileInView="visible"
-                    transition={{ delay: 2 }}
-                    viewport={{ once: true }}
-                >
-                    <motion.line
-                        x1="50"
-                        y1="0"
-                        x2="50"
-                        y2="100"
-                        stroke="currentColor"
-                        variants={draw}
-                        custom={2}
-                        viewport={{ once: true }}
-                    />
-                </motion.svg>
-            </div>
+            <motion.div
+                variants={lineVariant}
+                className="grow mx-auto w-[1px] h-full dark:bg-purple-stroke bg-purple-strokeLight origin-bottom"
+            ></motion.div>
         </motion.div>
     );
 };
