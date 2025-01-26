@@ -11,13 +11,17 @@ const variant = {
         scale: 1,
         opacity: 1,
         transition: {
-            delay: 1,
             ease: "easeOut",
-            duration: 0.5,
+            delay: 0.2,
+            duration: 1,
         },
     },
 };
 
 export const TextLineAnimatedText = ({ children }: PropsWithChildren) => {
-    return <motion.div variants={variant}>{children}</motion.div>;
+    return (
+        <motion.div variants={variant} className="origin-right">
+            {children}
+        </motion.div>
+    );
 };

@@ -45,7 +45,7 @@ const afterVariants = {
     inView: {
         "--scale": 1,
         transition: {
-            delay: 1,
+            delay: 0.5,
             duration: 1,
             ease: "easeIn",
         },

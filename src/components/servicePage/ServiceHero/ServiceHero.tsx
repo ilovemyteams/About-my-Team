@@ -7,8 +7,8 @@ import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 import { highlightPurple } from "@/src/utils/highlightingPurple";
 
 import { PageSection } from "../../shared/PageSection";
+import { DelayPresentAnimation } from "../shared/DelayPresentAnimation";
 import { AnimatedTitle } from "./AnimatedTitle";
-import { DelayPresentAnimation } from "./DelayPresentAnimation";
 
 interface ServiceHeroProps {
     title: string;

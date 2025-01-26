@@ -17,7 +17,7 @@ export const ColumnList = ({ content }: ColumnListProps) => {
         <PageSection className="mb-[80px] tab:mb-[100px] desk:mb-[120px]">
             <LayoutTitle text={title} />
             <ul
-                className={`${isExtraPaddingNeeded} tab:grid tab:gap-y-[42px] pc:gap-y-20 tab:grid-cols-[31%_38%_31%]`}
+                className={`${isExtraPaddingNeeded} tab:grid tab:gap-y-[42px] pc:gap-y-20 tab:grid-cols-[33%_34%_33%]`}
             >
                 {description.map((item, index) => (
                     <ColumnListItem content={item} key={index} />
