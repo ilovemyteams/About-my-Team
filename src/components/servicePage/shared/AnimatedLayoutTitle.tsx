@@ -14,7 +14,11 @@ export const AnimatedLayoutTitle = ({ text }: AnimatedLayoutTitleProps) => {
     const isInView = useInView(ref, { once: true, margin: "100px 0px 0px" });
 
     return (
-        <motion.span ref={ref} className="absolute top-0 left-0 w-full h-full">
+        <motion.span
+            ref={ref}
+            className="absolute top-0 left-0 w-full h-full"
+            aria-hidden
+        >
             {isInView && (
                 <AnimatePresence>
                     <AnimatedTextAppearance text={text} />
