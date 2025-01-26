@@ -4,6 +4,7 @@ import { ServiceType } from "@/src/mockedData/servicesData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { GoToAllService } from "./GoToAllService";
 import { ServiceCtaSection } from "./ServiceCtaSection";
 import { ServiceHeader } from "./ServiceHeader";
 import { ServiceHero } from "./ServiceHero/ServiceHero";
@@ -15,7 +16,7 @@ interface ServiceProps {
 
 export const Service = ({ service }: ServiceProps) => {
     const locale = useLocale();
-    const { image, ctaButton } = service;
+    const { image } = service;
 
     const { fullDescription, name } = service[locale as LocaleType];
     return (
@@ -31,11 +32,8 @@ export const Service = ({ service }: ServiceProps) => {
                     />
 
                     <ServiceMainContent content={fullDescription.content} />
-
-                    <ServiceCtaSection
-                        text={fullDescription.ctaText}
-                        button={ctaButton}
-                    />
+                    <ServiceCtaSection text={fullDescription.ctaText} />
+                    <GoToAllService />
                 </>
             ) : (
                 <UnderConstruction />

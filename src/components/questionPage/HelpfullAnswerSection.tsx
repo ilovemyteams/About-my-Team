@@ -2,10 +2,10 @@ import { useTranslations } from "next-intl";
 
 import { LikesTypes } from "@/src/utils/likeDataHandler";
 
+import { GoToAll } from "../shared/GoToAll";
 import LikeButton from "../shared/LikeButton";
 import { PageSection } from "../shared/PageSection";
 import { SharePopover } from "../shared/SharePopover";
-import { GoToAllQuestionButton } from "./GoToAllQuestionButton";
 
 interface HelpfullAnswerSectionProps {
     questionLikes: LikesTypes[];
@@ -38,10 +38,7 @@ export const HelpfullAnswerSection = ({
                     <SharePopover className="" trigerShowShareText={false} />
                 </div>
             </div>
-            <div className="flex justify-center tab:justify-between">
-                <div className="hidden tab:block flex-grow mr-[60px] border-b border-purple-strokeLight dark:border-purple-stroke"></div>
-                <GoToAllQuestionButton />
-            </div>
+            <GoToAll href="/faq" title={getTranslation("allQuestionBack")} />
         </PageSection>
     );
 };
