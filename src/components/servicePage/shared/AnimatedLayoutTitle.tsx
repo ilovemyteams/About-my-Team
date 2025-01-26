@@ -11,7 +11,7 @@ interface AnimatedLayoutTitleProps {
 
 export const AnimatedLayoutTitle = ({ text }: AnimatedLayoutTitleProps) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, { once: true, margin: "200px 0px 0px" });
+    const isInView = useInView(ref, { once: true, margin: "100px 0px 0px" });
 
     return (
         <motion.span ref={ref} className="absolute top-0 left-0 w-full h-full">

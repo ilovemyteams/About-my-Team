@@ -16,6 +16,7 @@ export const AnimatedColumnList = ({ children }: PropsWithChildren) => {
             initial="hidden"
             whileInView="visible"
             variants={variants}
+            viewport={{ once: true }}
             className={`relative py-6 tab:py-0 tab:px-5 pc:px-[50px] last:pb-0 tab:last:pr-0 first:pt-0 
               [&:nth-child(3n-2)]:tab:pl-0 border-b-[1px] tab:border-r-[1px] tab:border-b-0 border-redLight dark:border-red
               tab:[&:nth-child(3n)]:border-none last:border-none tab:after:absolute after:w-[101%] after:h-[1px]

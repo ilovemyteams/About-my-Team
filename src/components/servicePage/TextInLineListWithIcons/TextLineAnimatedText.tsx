@@ -20,7 +20,7 @@ const variant = {
 
 export const TextLineAnimatedText = ({ children }: PropsWithChildren) => {
     return (
-        <motion.div variants={variant} className="origin-right">
+        <motion.div variants={variant} className="origin-left">
             {children}
         </motion.div>
     );
