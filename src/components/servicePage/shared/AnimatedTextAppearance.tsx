@@ -3,11 +3,15 @@
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
 
-interface AnimatedSubtextProps {
+interface AnimatedTextAppearanceProps {
     text: string;
+    delay?: number;
 }
 
-export const AnimatedSubtext = ({ text }: AnimatedSubtextProps) => {
+export const AnimatedTextAppearance = ({
+    text,
+    delay = 0,
+}: AnimatedTextAppearanceProps) => {
     const count = useMotionValue(0);
     const rounded = useTransform(count, latest => Math.round(latest));
     const displayedText = useTransform(rounded, latest =>
@@ -15,10 +19,10 @@ export const AnimatedSubtext = ({ text }: AnimatedSubtextProps) => {
     );
     useEffect(() => {
         const controls = animate(count, text.length, {
-            type: "tween", // Not really needed because adding a duration will force "tween"
+            type: "tween",
             duration: 1,
             ease: "easeInOut",
-            delay: 1,
+            delay: delay,
         });
         return controls.stop;
         // eslint-disable-next-line react-hooks/exhaustive-deps

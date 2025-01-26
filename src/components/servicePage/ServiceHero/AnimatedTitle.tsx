@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { HighlightPurpleItemType } from "@/src/utils/highlightingPurple";
 
-import { AnimatedSubtext } from "./AnimatedSubtext";
+import { AnimatedTextAppearance } from "../shared/AnimatedTextAppearance";
 
 interface AnimatedTitleProps {
     title: HighlightPurpleItemType[];
@@ -40,7 +40,7 @@ export const AnimatedTitle = ({ title }: AnimatedTitleProps) => {
                                     ease: "easeOut",
                                 },
                                 scale: {
-                                    duration: 1,
+                                    duration: 0.5,
                                     ease: "easeOut",
                                 },
                             }}
@@ -48,7 +48,13 @@ export const AnimatedTitle = ({ title }: AnimatedTitleProps) => {
                             {item.text}
                         </motion.span>
                     );
-                return <AnimatedSubtext text={item.text} key={i} />;
+                return (
+                    <AnimatedTextAppearance
+                        text={item.text}
+                        key={i}
+                        delay={1}
+                    />
+                );
             })}
         </div>
     );
