@@ -32,8 +32,8 @@ export const Service = ({ service }: ServiceProps) => {
                     />
 
                     <ServiceMainContent content={fullDescription.content} />
-                    <ServiceCtaSection text={fullDescription.ctaText} />
                     <GoToAllService />
+                    <ServiceCtaSection text={fullDescription.ctaText} />
                 </>
             ) : (
                 <UnderConstruction />
