@@ -317,5 +317,8 @@
         "submittingConditions": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na <purple>Warunki przetwarzania danych osobowych</purple> i <purpleCond>Zasady udziału w losowaniu landing page</purpleCond>",
         "wishDescription": "Kliknij ten link i otrzymaj spersonalizowane życzenia i prezenty!",
         "envelopeAlt": "Koperta z życzeniami i pocztówką"
+    },
+    "PastEvents": {
+        "pageBigTitle": "Nasze poprzednie wydarzenia"
     }
 }

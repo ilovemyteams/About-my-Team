@@ -952,8 +952,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="94.5081"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_14342_59317"
@@ -963,8 +963,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="116.339"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint2_linear_14342_59317"
@@ -974,8 +974,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="143.375"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D2A1FB" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#D2A1FB" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint3_linear_14342_59317"
@@ -985,8 +985,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="151.668"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint4_linear_14342_59317"
@@ -996,8 +996,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="140.888"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint5_linear_14342_59317"
@@ -1007,8 +1007,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="199.988"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint6_linear_14342_59317"
@@ -1018,8 +1018,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="175.02"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint7_linear_14342_59317"
@@ -1029,8 +1029,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="194.112"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint8_linear_14342_59317"
@@ -1040,8 +1040,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="187.573"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint9_linear_14342_59317"
@@ -1051,8 +1051,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="196.917"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#7424B7" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#7424B7" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint10_linear_14342_59317"
@@ -1062,8 +1062,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="153.233"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#D7A8FF" stop-opacity="0.6" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#D7A8FF" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                     id="paint11_linear_14342_59317"
@@ -1073,8 +1073,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="420.658"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint12_linear_14342_59317"
@@ -1084,8 +1084,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="377.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint13_linear_14342_59317"
@@ -1095,8 +1095,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="373.374"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint14_linear_14342_59317"
@@ -1106,8 +1106,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="358.267"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint15_linear_14342_59317"
@@ -1117,8 +1117,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="323.621"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint16_linear_14342_59317"
@@ -1128,8 +1128,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="346.533"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint17_linear_14342_59317"
@@ -1139,8 +1139,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="301.517"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint18_linear_14342_59317"
@@ -1150,8 +1150,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="312.373"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint19_linear_14342_59317"
@@ -1161,8 +1161,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="290.871"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint20_linear_14342_59317"
@@ -1172,8 +1172,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="259.111"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint21_linear_14342_59317"
@@ -1183,8 +1183,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="260.338"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint22_linear_14342_59317"
@@ -1194,8 +1194,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="229.735"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint23_linear_14342_59317"
@@ -1205,8 +1205,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="200.739"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <linearGradient
                     id="paint24_linear_14342_59317"
@@ -1216,8 +1216,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     y2="181.926"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#EECF79" />
-                    <stop offset="1" stop-color="#F9E2A3" />
+                    <stop stopColor="#EECF79" />
+                    <stop offset="1" stopColor="#F9E2A3" />
                 </linearGradient>
                 <radialGradient
                     id="paint25_radial_14342_59317"
@@ -1227,8 +1227,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(97.183 241.119) rotate(-7.78352) scale(70.0001)"
                 >
-                    <stop stop-color="#722DC8" />
-                    <stop offset="1" stop-color="#722DC8" stop-opacity="0" />
+                    <stop stopColor="#722DC8" />
+                    <stop offset="1" stopColor="#722DC8" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint26_radial_14342_59317"
@@ -1238,8 +1238,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(138.993 145.384) rotate(-7.78352) scale(70.0001)"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#7424B7" stop-opacity="0" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#7424B7" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint27_radial_14342_59317"
@@ -1249,8 +1249,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(217.029 320.357) rotate(-7.78352) scale(70.0001 70.0001)"
                 >
-                    <stop stop-color="#7424B7" />
-                    <stop offset="1" stop-color="#7424B7" stop-opacity="0" />
+                    <stop stopColor="#7424B7" />
+                    <stop offset="1" stopColor="#7424B7" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint28_radial_14342_59317"
@@ -1260,8 +1260,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(123.556 277.033) rotate(-7.78352) scale(70.0001 70.0001)"
                 >
-                    <stop stop-color="#F9E2A3" />
-                    <stop offset="1" stop-color="#F9E2A3" stop-opacity="0" />
+                    <stop stopColor="#F9E2A3" />
+                    <stop offset="1" stopColor="#F9E2A3" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint29_radial_14342_59317"
@@ -1271,8 +1271,8 @@ export const IconChristmasBubbles = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(234.48 371.127) rotate(-7.78352) scale(70.0001 70.0001)"
                 >
-                    <stop stop-color="#F9E2A3" />
-                    <stop offset="1" stop-color="#F9E2A3" stop-opacity="0" />
+                    <stop stopColor="#F9E2A3" />
+                    <stop offset="1" stopColor="#F9E2A3" stopOpacity="0" />
                 </radialGradient>
             </defs>
         </svg>

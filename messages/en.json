@@ -316,5 +316,8 @@
         "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>",
         "wishDescription": "Follow this link and get your personal wishes and gifts!",
         "envelopeAlt": "Envelope with a wish and a postcard"
+    },
+    "PastEvents": {
+        "pageBigTitle": "Our past events"
     }
 }

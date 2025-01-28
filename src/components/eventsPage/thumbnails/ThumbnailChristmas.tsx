@@ -1,9 +1,11 @@
-import { IconChrismasBranch } from "../shared/Icons/IconChristmasBranch";
-import { IconChristmasBubbles } from "../shared/Icons/IconChristmasBubbles";
-import { IconChristmasLights } from "../shared/Icons/IconChristmasLights";
-import { IconChristmasTree } from "../shared/Icons/IconChristmasTree";
+import { IconChrismasBranch } from "@/src/components/shared/Icons/IconChristmasBranch";
+import { IconChristmasBubbles } from "@/src/components/shared/Icons/IconChristmasBubbles";
+import { IconChristmasLights } from "@/src/components/shared/Icons/IconChristmasLights";
+import { IconChristmasTree } from "@/src/components/shared/Icons/IconChristmasTree";
+
 import { ThumbnailBg } from "./ThumbnailBG";
-export const ThumbnailChristmas = () => {
+
+const ThumbnailChristmas = () => {
     return (
         <div className="relative w-full max-w-[280px] mx-auto aspect-[280/200] tab:aspect-[300/200] flex">
             <IconChristmasTree className="absolute w-auto h-full bottom-[-.5rem] right-[7%] z-[3]" />
@@ -14,3 +16,5 @@ export const ThumbnailChristmas = () => {
         </div>
     );
 };
+
+export default ThumbnailChristmas;
