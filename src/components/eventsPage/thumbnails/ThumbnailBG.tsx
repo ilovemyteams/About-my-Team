@@ -6,7 +6,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 407 504"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-full hidden dark:block absolute top-0 right-0  -z-10"
+                className="h-full hidden dark:block absolute top-0 right-0 -z-10"
                 aria-hidden="true"
             >
                 <path
