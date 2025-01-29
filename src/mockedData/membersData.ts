@@ -47,7 +47,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "21",
+            pricePerHour: "24",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
@@ -661,7 +661,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "21",
+            pricePerHour: "24",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",

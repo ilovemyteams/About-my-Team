@@ -37,7 +37,7 @@ export const EventCard = async ({ content }: EventCardProps) => {
 
             <div className="flex flex-col tab:pl-3 pc:px-3 desk:pl-4 justify-between">
                 <div>
-                    <h2 className="pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none  dark:active:text-red active:text-redLight pc:transition pc:ease-out pc:duration-300 font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3">
+                    <h2 className="pc:focus:text-redLight dark:pc:focus:text-red focus:outline-none pc:transition pc:ease-out pc:duration-300 font-caviar text-purple-200 dark:text-white-200 text-lg tab:text-xlb desk:text-2xlb line-clamp-2 mb-3">
                         {title}
                     </h2>
                     {description.map((item, index) => {
