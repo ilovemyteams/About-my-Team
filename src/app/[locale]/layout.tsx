@@ -5,8 +5,8 @@ import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import React from "react";
 
+import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
-import { SnowflakeMainPage } from "@/src/components/christmas/christmasHome/SnowflakeMainPage";
 import { GreetingPortal } from "@/src/components/christmasHomePageDecoration/modal/GreetingPortal";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
@@ -107,8 +107,7 @@ export default function LocaleLayout({
                                 <main className="flex-auto min-h-full">
                                     {modal}
                                     <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
-                                        {/* <BackgroundFigures /> */}
-                                        <SnowflakeMainPage />
+                                        <BackgroundFigures />
                                         {children}
                                     </div>
                                 </main>
