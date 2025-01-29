@@ -17,7 +17,7 @@ export async function generateMetadata({
 export default function Services() {
     return (
         <>
-            <ChristmasPage />;
+            <ChristmasPage />
             <PastEvents />
         </>
     );
