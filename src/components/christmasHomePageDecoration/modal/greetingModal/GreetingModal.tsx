@@ -6,7 +6,6 @@ import { ColoredText } from "@/src/components/christmas/shared/ColoredText";
 
 import { Button } from "../../../shared/Button";
 import { IconCloseX } from "../../../shared/Icons/IconCloseX";
-import { Background } from "./background/Background";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
@@ -21,7 +20,7 @@ export const GreetingModal = ({
 
     return (
         <div className="overflow-hidden h-auto mx-auto mt-[99px] tab:mt-[98px] pc:mt-[83px] desk:mt-[51px]">
-            <Background />
+            {/* <Background /> */}
             <button
                 type="button"
                 onClick={onCloseModal}
