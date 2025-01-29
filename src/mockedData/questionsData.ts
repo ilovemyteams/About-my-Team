@@ -2439,8 +2439,8 @@ export const questionsData: QAItemType[] = [
             ],
         },
         pl: {
-            questionText: "Redesign: Co to i dlaczego jest potrzebny?",
-            imageAltText: "Redesign: Co to i dlaczego jest potrzebny?",
+            questionText: "Redesign: co to i dlaczego jest potrzebny?",
+            imageAltText: "Redesign: co to i dlaczego jest potrzebny?",
             shortAnswerText: [
                 "Redesign to kompleksowy proces doskonalenia estetyki, organizacji i funkcjonalności witryny internetowej, aplikacji mobilnej lub innego produktu cyfrowego. Głównym celem redesignu jest poprawa użyteczności (UX), unowocześnienie wyglądu (UI) oraz dostosowanie do aktualnych wymagań rynku lub biznesu.",
             ],
@@ -2489,7 +2489,7 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     text: [
-                                        "Rebranding: Pełna zmiana stylu firmy wymaga, aby strona internetowa odzwierciedlała te zmiany.",
+                                        "Rebranding. Pełna zmiana stylu firmy wymaga, aby strona internetowa odzwierciedlała te zmiany.",
                                     ],
                                 },
                                 {
@@ -2499,12 +2499,12 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     text: [
-                                        "Nowy poziom biznesu: Rozszerzenie usług? Twoja strona powinna to pokazać.",
+                                        "Nowy poziom biznesu, rozszerzenie usług? Twoja strona powinna to pokazać.",
                                     ],
                                 },
                                 {
                                     text: [
-                                        "Zmiany technologiczne: Dostosowanie do nowych technologii lub platform, np. optymalizacja pod urządzenia mobilne.",
+                                        "Zmiany technologiczne. Dostosowanie do nowych technologii lub platform, np. optymalizacja pod urządzenia mobilne.",
                                     ],
                                 },
                             ],
@@ -2546,8 +2546,8 @@ export const questionsData: QAItemType[] = [
             ],
         },
         en: {
-            questionText: "Redesign: What is it, and why is it necessary?",
-            imageAltText: "Redesign: What is it, and why is it necessary?",
+            questionText: "Redesign: what is it, and why is it necessary?",
+            imageAltText: "Redesign: what is it, and why is it necessary?",
             shortAnswerText: [
                 "Redesign is the process of updating the appearance, structure, or functional elements of a website, mobile application, or other digital product. The main goal of redesigning is to improve usability (UX), modernize the look (UI), and meet current market or business demands.",
             ],
@@ -2578,7 +2578,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Content Redesign.",
+                            title: "Content Redesign",
                             text: [
                                 "Updates content such as text, images, and videos to meet the audience's needs and maintain relevance.",
                             ],
