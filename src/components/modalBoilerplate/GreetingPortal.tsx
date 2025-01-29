@@ -6,8 +6,8 @@ import { useEffect, useRef, useState } from "react";
 
 import { usePathname } from "@/src/navigation";
 
-import { ModalBase } from "../../shared/Modals/ModalBase";
-import { GreetingModal } from "./greetingModal/GreetingModal";
+import { ModalBase } from "../shared/Modals/ModalBase";
+import { GreetingModal } from "./GreetingModal";
 
 const SESSION_LANG_KEY = "langOpened";
 const GREETING_MODAL_DELAY = 1 * 1000;
