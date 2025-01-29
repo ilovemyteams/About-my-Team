@@ -7,7 +7,7 @@ import { UnderConstruction } from "../underConstruction/UnderConstruction";
 import { GoToAllService } from "./GoToAllService";
 import { ServiceCtaSection } from "./ServiceCtaSection";
 import { ServiceHeader } from "./ServiceHeader";
-import { ServiceHero } from "./ServiceHero";
+import { ServiceHero } from "./ServiceHero/ServiceHero";
 import { ServiceMainContent } from "./ServiceMainContent";
 
 interface ServiceProps {
@@ -30,9 +30,10 @@ export const Service = ({ service }: ServiceProps) => {
                         image={image}
                         topText={fullDescription.topText}
                     />
+
                     <ServiceMainContent content={fullDescription.content} />
-                    <ServiceCtaSection text={fullDescription.ctaText} />
                     <GoToAllService />
+                    <ServiceCtaSection text={fullDescription.ctaText} />
                 </>
             ) : (
                 <UnderConstruction />

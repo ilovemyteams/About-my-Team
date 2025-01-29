@@ -2,6 +2,7 @@ import { DescriptionType } from "@/src/mockedData/servicesData";
 
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
 import { LayoutText } from "../shared/LayoutText";
+import { LollipopCascadeAnimateItem } from "./LollipopCascadeAnimateItem";
 import { LollipopDecorator } from "./LollipopDecorator";
 
 interface LollipopCascadeListItemProps {
@@ -16,9 +17,7 @@ export const LollipopCascadeListItem = ({
     const text = typeof paragraph === "string" ? paragraph : paragraph.join("");
 
     return (
-        <li
-            className={`flex even:flex-row-reverse tab:even:flex-row gap-6 tab:gap-8 desk:gap-12 even:ml-auto w-full tab:w-[62.5%] pc:w-[46.8%] desk:w-[41%]`}
-        >
+        <LollipopCascadeAnimateItem>
             <LollipopDecorator indexNumber={index} />
             <div>
                 {title && (
@@ -26,6 +25,6 @@ export const LollipopCascadeListItem = ({
                 )}
                 <LayoutText text={text} />
             </div>
-        </li>
+        </LollipopCascadeAnimateItem>
     );
 };

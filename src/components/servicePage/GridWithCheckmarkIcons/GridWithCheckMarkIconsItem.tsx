@@ -1,27 +1,27 @@
 import type { DescriptionType } from "@/src/mockedData/servicesData";
 
-import { IconCheckmarkWithinSquare } from "../../shared/Icons/IconCheckmarkWithinSquare";
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
 import { LayoutText } from "../shared/LayoutText";
+import { GridAnimatedWithCheckMark } from "./GridAnimatedWithCheckMark";
 
 interface GridWithCheckmarkIconsItemProps {
     content: DescriptionType;
+    index: number;
     className?: string;
 }
 
 export const GridWithCheckmarkIconsItem = ({
     content,
+    index,
     className,
 }: GridWithCheckmarkIconsItemProps) => {
     const { title, text } = content;
     return (
-        <li className={className}>
-            <IconCheckmarkWithinSquare className="mb-2 text-redLight dark:text-red" />
-            <hr className="mb-8 border-purple-strokeLight dark:border-purple-stroke" />
+        <GridAnimatedWithCheckMark className={className} index={index}>
             {title && (
                 <LayoutSubtitle text={title} className="mb-6 pc:text-2xlb" />
             )}
             <LayoutText text={text} />
-        </li>
+        </GridAnimatedWithCheckMark>
     );
 };
