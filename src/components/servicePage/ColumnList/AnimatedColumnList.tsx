@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { PropsWithChildren } from "react";
 
 const variants = {
-    hidden: { opacity: 0, scale: 0 },
+    hidden: { opacity: 0, scale: 0.5 },
     visible: {
         opacity: 1,
         scale: 1,
-        transition: { duration: 1, ease: "easeIn" },
+        transition: { duration: 1, ease: "easeOut" },
     },
 };
 export const AnimatedColumnList = ({ children }: PropsWithChildren) => {
