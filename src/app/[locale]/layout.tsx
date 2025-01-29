@@ -73,11 +73,11 @@ export async function generateMetadata({
 
 export default function LocaleLayout({
     children,
-    // modal,
+    modal,
     params: { locale },
 }: Readonly<{
     children: React.ReactNode;
-    // modal: React.ReactNode;
+    modal: React.ReactNode;
     params: { locale: string };
 }>) {
     const messages = useMessages();
@@ -99,12 +99,11 @@ export default function LocaleLayout({
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
                     >
                         <Providers>
-                            {/* <GreetingPortal /> */}
                             <BackgroundImages />
                             <div className="min-h-screen flex flex-col">
                                 <Header />
                                 <main className="flex-auto min-h-full">
-                                    {/* {modal} */}
+                                    {modal}
                                     <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
                                         <BackgroundFigures />
                                         {children}
