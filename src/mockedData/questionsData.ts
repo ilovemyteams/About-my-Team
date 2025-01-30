@@ -2596,7 +2596,7 @@ export const questionsData: QAItemType[] = [
                             text: [
                                 {
                                     text: [
-                                        "Rebranding.When your company undergoes a brand style overhaul, your website must reflect those changes.",
+                                        "Rebranding. When your company undergoes a brand style overhaul, your website must reflect those changes.",
                                     ],
                                 },
                                 {
