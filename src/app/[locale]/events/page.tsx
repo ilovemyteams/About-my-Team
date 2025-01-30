@@ -1,6 +1,8 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
+import { Countdown } from "./countdown/Countdown";
+
 export async function generateMetadata({
     params: { locale },
 }: {
@@ -16,6 +18,8 @@ export async function generateMetadata({
 export default function Services() {
     return (
         <>
+            {/* <Header/> */}
+            <Countdown targetDate="2025-02-14T10:00:00+02:00" />
             <PastEvents />
         </>
     );
