@@ -50,7 +50,7 @@ export const QaCard = ({
             <div
                 className={`w-full tab:w-[300px] desk:w-[375px] shrink-0 grow-0 relative overflow-hidden`}
             >
-                <div className="relative w-full max-w-[280px] tab:max-w-fit mx-auto aspect-[280/200] tab:aspect-[300/200]">
+                <div className="relative w-full max-w-[280px] tab:max-w-none mx-auto aspect-[280/200] tab:aspect-[300/200]">
                     <Image
                         src={image}
                         alt={imageAltText}
