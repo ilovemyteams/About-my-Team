@@ -11,17 +11,19 @@ import { IconGoBack } from "./Icons/IconGoBack";
 
 interface PaginationProps {
     total: number;
-    initialPage: number;
+    currentPage: number;
 }
 
-export const Pagination = ({ total, initialPage }: PaginationProps) => {
+const PAGE_KEY = "page";
+
+export const Pagination = ({ total, currentPage }: PaginationProps) => {
     const searchParams = useSearchParams();
     const pathName = usePathname();
     const router = useRouter();
 
     const handlePageChange = (page: number) => {
         const params = new URLSearchParams(searchParams);
-        params.set("page", `${page}`);
+        params.set(PAGE_KEY, `${page.toString()}`);
         router.push(`${pathName}?${params.toString()}`);
     };
 
@@ -44,7 +46,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
     };
 
     const buttonArrowStyle =
-        "w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
+        "w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
     const renderItem = ({
         ref,
         key,
@@ -109,7 +111,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
                 ref={ref}
                 className={cn(
                     className,
-                    "shadow-none bg-transparent font-caviar min-w-7 w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none text-base font-bold",
+                    "shadow-none bg-transparent font-caviar min-w-7 w-7 h-7 text-greyLight dark:text-grey  border border-transparent  hover:text-redLight dark:hover:text-red  rounded-none text-base font-bold",
                     isActive &&
                         "text-redLight dark:text-red border-b-redLight dark:border-b-red text-base font-bold"
                 )}
@@ -123,7 +125,7 @@ export const Pagination = ({ total, initialPage }: PaginationProps) => {
         <NextUIPagination
             onChange={handlePageChange}
             total={total}
-            initialPage={initialPage}
+            page={currentPage}
             renderItem={renderItem}
             className="p-0 m-0 mb-[80px] tab:mb-[100px] pc:mb-[100px] desk:mb-[120px]"
             classNames={{
