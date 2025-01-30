@@ -64,7 +64,7 @@ export default async function FAQ({
 
             {isPaginationNeeded && (
                 // It is not real NextUI pagination component
-                <Pagination total={totalPages} initialPage={pageNumber} />
+                <Pagination total={totalPages} currentPage={pageNumber} />
             )}
 
             <FaqSectionCta isSectionVisible={isCTAVisible} />
