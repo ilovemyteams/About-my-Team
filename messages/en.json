@@ -320,5 +320,13 @@
     },
     "PastEvents": {
         "pageBigTitle": "Our past events"
+    },
+    "Events": {
+        "title": "Until the launch of the new event",
+        "days": "{days, plural, =1 {day} other {days}}",
+        "hours": "{hours, plural, =1 {hour} other {hours}}",
+        "minutes": "{minutes, plural, =1 {minute} other {minutes}}",
+        "seconds": "{seconds, plural, =1 {second} other {seconds}}",
+        "followUs": "Follow us to be the first to know about updates"
     }
 }

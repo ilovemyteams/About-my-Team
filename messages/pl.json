@@ -321,5 +321,13 @@
     },
     "PastEvents": {
         "pageBigTitle": "Nasze poprzednie wydarzenia"
+    },
+    "Events": {
+        "days": "{days, plural, =1 {dzień} other {dni}}",
+        "title": "Do uruchomienia nowego wydarzenia",
+        "minutes": "{minutes, plural, =1 {minuta} few {minuty} other {minut}}",
+        "hours": "{hours, plural, =1 {godzina} few {godziny} other {godzin}}",
+        "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
+        "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}"
     }
 }
