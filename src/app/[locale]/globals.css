@@ -110,4 +110,10 @@ body {
             transition: background-color 5000s ease-in-out 0s;
         }
     }
+    .bg-construction {
+            background-image: url('/images/under-construction.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+    }
 }

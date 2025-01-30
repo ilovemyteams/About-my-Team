@@ -167,12 +167,19 @@ const config: Config = {
                     lineHeight: "48px",
                 },
             ],
+            "6xlt": ["48px", { lineHeight: "62px" }],
 
             "7xl": [
                 "64px",
                 {
                     lineHeight: "64px",
                     fontWeight: "700",
+                },
+            ],
+            "8xl": [
+                "80px",
+                {
+                    lineHeight: "104px",
                 },
             ],
         },
