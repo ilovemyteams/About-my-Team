@@ -327,6 +327,7 @@
         "hours": "{hours, plural, =1 {hour} other {hours}}",
         "minutes": "{minutes, plural, =1 {minute} other {minutes}}",
         "seconds": "{seconds, plural, =1 {second} other {seconds}}",
-        "followUs": "Follow us to be the first to know about updates"
+        "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
+        "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     }
 }
