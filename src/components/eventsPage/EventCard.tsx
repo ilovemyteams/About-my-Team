@@ -51,7 +51,7 @@ export const EventCard = async ({ content }: EventCardProps) => {
                         );
                     })}
                 </div>
-                <p>{date}</p>
+                <p className="text-purple-100 dark:text-purple-50">{date}</p>
             </div>
         </div>
     );
