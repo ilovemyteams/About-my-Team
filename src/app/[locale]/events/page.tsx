@@ -1,4 +1,3 @@
-import { ChristmasPage } from "@/src/components/christmas/ChristmasPage";
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
@@ -17,7 +16,6 @@ export async function generateMetadata({
 export default function Services() {
     return (
         <>
-            <ChristmasPage />
             <PastEvents />
         </>
     );
