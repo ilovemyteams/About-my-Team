@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Fragment } from "react";
 
-import { PageSection } from "@/src/components/shared/PageSection";
 import { ReturnButton } from "@/src/components/underConstruction/ReturnButton";
 
 interface CountdownProps {
@@ -49,7 +48,7 @@ export const Countdown = ({
     }
 
     return (
-        <PageSection className="relative bg-construction z-10 before:content-[''] before:absolute before:inset-0 before:bg-underConstructionGradientLight before:dark:bg-underConstructionGradient before:z-[-5] mb-[80px] pc:mb-[100px]">
+        <div className="relative bg-construction z-10 before:content-[''] before:absolute before:inset-0 before:bg-underConstructionGradientLight before:dark:bg-underConstructionGradient before:z-[-5] mb-[80px] pc:mb-[100px]">
             <div className="flex flex-col items-center container py-20 tab:py-[100px] pc:pt-[195px] pc:pb-[118px] text-purple-200 dark:text-grey text-center ">
                 <h1 className="mb-4 pc:mb-[34px] text-3xl tab:text-4xl pc:text-6xlt font-bold font-caviar text-purple-200 dark:text-white-200">
                     {getTranslation(intlTitle)}
@@ -80,6 +79,6 @@ export const Countdown = ({
                 </p>
                 <ReturnButton />
             </div>
-        </PageSection>
+        </div>
     );
 };
