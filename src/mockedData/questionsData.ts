@@ -2325,11 +2325,11 @@ export const questionsData: QAItemType[] = [
 
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
+            image: "https://drive.google.com/uc?export=view&id=1_7HwhV5_OPXz-ramLLzxAqItimOOPo6Z",
             likes: null,
             slug: "redesign-what-is-it-and-why-is-it-necessary",
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
+                "https://drive.google.com/uc?export=view&id=14KNEcCrOw7qqIX0R1atcet6nl9Ydne6z",
         },
         ua: {
             questionText: "Редизайн: що це і навіщо він потрібен?",
