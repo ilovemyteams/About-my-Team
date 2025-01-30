@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Fragment } from "react";
 
 import { ReturnButton } from "@/src/components/underConstruction/ReturnButton";
@@ -15,37 +15,38 @@ export const Countdown = ({
     targetDate,
     intlTitle = "Events.title",
 }: CountdownProps) => {
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
     const getTranslation = useTranslations();
+    const [timeLeft, setTimeLeft] = useState<{
+        days: number;
+        hours: number;
+        minutes: number;
+        seconds: number;
+    } | null>(null);
 
-    function calculateTimeLeft() {
-        const target = new Date(targetDate).getTime();
-        const now = new Date().getTime();
-        const difference = target - now;
-
-        if (difference <= 0) {
-            return null; // Countdown is over
+    const calculateTimeLeft = useCallback(() => {
+        const parsedDate = new Date(targetDate);
+        const difference = parsedDate.getTime() - new Date().getTime();
+        if (difference > 0) {
+            return {
+                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+                minutes: Math.floor((difference / (1000 * 60)) % 60),
+                seconds: Math.floor((difference / 1000) % 60),
+            };
         }
-
-        return {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / (1000 * 60)) % 60),
-            seconds: Math.floor((difference / 1000) % 60),
-        };
-    }
+        return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }, [targetDate]);
 
     useEffect(() => {
+        setTimeLeft(calculateTimeLeft());
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
-        return () => clearInterval(timer); // Cleanup on component unmount
-    }, []);
+        return () => clearInterval(timer);
+    }, [calculateTimeLeft]);
 
-    if (!timeLeft) {
-        return <p className="text-red-500">Countdown is over!</p>;
-    }
+    if (!timeLeft) return null;
 
     return (
         <div className="relative bg-construction z-10 before:content-[''] before:absolute before:inset-0 before:bg-underConstructionGradientLight before:dark:bg-underConstructionGradient before:z-[-5] mb-[80px] pc:mb-[100px]">
