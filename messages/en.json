@@ -172,7 +172,8 @@
         "questionLabel": "Your question*",
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
-        "askFormText": "Write to us, and we will help you find the answer!"
+        "askFormText": "Write to us, and we will help you find the answer!",
+        "customerFormTitle": "Order a service"
     },
     "Errors": {
         "required": "This field is required",
@@ -280,7 +281,7 @@
         "title": "We develop <purple>digital \nproducts</purple> for your business",
         "titleSEO": "Website development services for business - modern web design and development",
         "descriptionSEO": "Turnkey web development of websites: convenient structure, modern design and integration of functions. We work with individual requirements of each client.",
-        "ctaText": "Get a comprehensive consultation with our manager if you have any questions or doubts",
+        "ctaText": "Any questions or doubts? Book a consultation, and our manager will provide you with professional assistance!",
         "details": "More",
         "allService": "All services"
     },
@@ -316,5 +317,17 @@
         "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>",
         "wishDescription": "Follow this link and get your personal wishes and gifts!",
         "envelopeAlt": "Envelope with a wish and a postcard"
+    },
+    "PastEvents": {
+        "pageBigTitle": "Our past events"
+    },
+    "Events": {
+        "title": "Until the launch of the new event",
+        "days": "{days, plural, =1 {day} other {days}}",
+        "hours": "{hours, plural, =1 {hour} other {hours}}",
+        "minutes": "{minutes, plural, =1 {minute} other {minutes}}",
+        "seconds": "{seconds, plural, =1 {second} other {seconds}}",
+        "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
+        "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     }
 }

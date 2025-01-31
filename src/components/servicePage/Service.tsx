@@ -7,7 +7,7 @@ import { UnderConstruction } from "../underConstruction/UnderConstruction";
 import { GoToAllService } from "./GoToAllService";
 import { ServiceCtaSection } from "./ServiceCtaSection";
 import { ServiceHeader } from "./ServiceHeader";
-import { ServiceHero } from "./ServiceHero";
+import { ServiceHero } from "./ServiceHero/ServiceHero";
 import { ServiceMainContent } from "./ServiceMainContent";
 
 interface ServiceProps {
@@ -16,7 +16,7 @@ interface ServiceProps {
 
 export const Service = ({ service }: ServiceProps) => {
     const locale = useLocale();
-    const { image, ctaButton } = service;
+    const { image } = service;
 
     const { fullDescription, name } = service[locale as LocaleType];
     return (
@@ -30,12 +30,10 @@ export const Service = ({ service }: ServiceProps) => {
                         image={image}
                         topText={fullDescription.topText}
                     />
+
                     <ServiceMainContent content={fullDescription.content} />
                     <GoToAllService />
-                    <ServiceCtaSection
-                        text={fullDescription.ctaText}
-                        button={ctaButton}
-                    />
+                    <ServiceCtaSection text={fullDescription.ctaText} />
                 </>
             ) : (
                 <UnderConstruction />

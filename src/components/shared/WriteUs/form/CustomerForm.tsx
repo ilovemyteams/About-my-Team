@@ -2,6 +2,7 @@
 import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
+import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { usePathname } from "@/src/navigation";
@@ -20,10 +21,12 @@ export interface ValuesWriteUsFormType {
     instagram: string;
     facebook: string;
     message: string;
+    source: string;
 }
 
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
+    const searchParams = useSearchParams();
 
     const path = usePathname();
 
@@ -37,6 +40,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         instagram: "",
         facebook: "",
         message: "",
+        source: searchParams.get("source") || "direct",
     };
 
     const initialStatus = "name";
@@ -51,6 +55,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 instagram: values.instagram.trim(),
                 facebook: values.facebook.trim(),
                 message: values.message.trim(),
+                source: values.source,
             };
             await axios({
                 method: "post",
@@ -92,6 +97,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
             }) => {
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
+                        <h1 className="font-caviar text-purple-200 dark:text-white-200 text-3xl tab:text-4xl pc:text-5xl self-start mb-[10px]">
+                            {getTranslation("customerFormTitle")}
+                        </h1>
                         <CustomField
                             name="name"
                             value={values.name}
@@ -165,7 +173,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
 
                         <div className="w-full mt-[32px] pc:mt-[20px] mb-[32px] pc:mb-[40px]">
                             <p
-                                className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-purple-200 dark:text-grey"}`}
+                                className={`max-w-[372px] mb-2 text-xs tab:text-sm ${(touched.name && errors.name) || (touched.email && errors.email) || (touched.message && errors.message) ? "text-error" : "text-greyLight dark:text-grey"}`}
                             >
                                 {getTranslation("requiredField")}
                             </p>

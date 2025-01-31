@@ -1,5 +1,8 @@
-import { ChristmasPage } from "@/src/components/christmas/ChristmasPage";
+import { PastEvents } from "@/src/components/eventsPage/PastEvents";
+import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
+
+import { Countdown } from "../../../components/eventsPage/countdown/Countdown";
 
 export async function generateMetadata({
     params: { locale },
@@ -8,11 +11,18 @@ export async function generateMetadata({
 }) {
     return generatePageMetadata({
         locale,
-        namespace: "Christmas",
+        namespace: "Events",
         canonical: "/events",
     });
 }
 
 export default function Services() {
-    return <ChristmasPage />;
+    return (
+        <>
+            {/* <Header/> */}
+            <Switchers />
+            <Countdown targetDate="2025-02-10T10:00:00+02:00" />
+            <PastEvents />
+        </>
+    );
 }

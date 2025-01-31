@@ -47,7 +47,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "21",
+            pricePerHour: "24",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",
@@ -309,7 +309,7 @@ export const membersData: MemberDataItemType[] = [
                 "greyplaza.com.ua",
                 "protection.in.ua",
             ],
-            pricePerHour: "10",
+            pricePerHour: "14",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/iryna-stoliarova",
                 behance: "https://www.behance.net/iryna_stoliarova",
@@ -444,7 +444,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
-            pricePerHour: "10",
+            pricePerHour: "12",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
@@ -604,7 +604,7 @@ export const membersData: MemberDataItemType[] = [
                 "protection.in.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "7",
+            pricePerHour: "8",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -661,7 +661,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "21",
+            pricePerHour: "24",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/susanna-salata/",
                 github: "https://github.com/Susanna-Salata",

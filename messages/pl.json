@@ -175,7 +175,8 @@
         "questionLabel": "Twoje pytanie*",
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
-        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!"
+        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
+        "customerFormTitle": "Zamówić usługę"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -281,7 +282,7 @@
         "title": "Tworzymy <purple>produkty \ncyfrowe</purple> dla Twojej firmy",
         "titleSEO": "Usługi tworzenia stron internetowych dla biznesu - nowoczesne projektowanie i tworzenie stron internetowych",
         "descriptionSEO": "Tworzenie stron internetowych pod klucz: przyjazna dla użytkownika struktura, nowoczesny design i integracja funkcji. Pracujemy z indywidualnymi wymaganiami każdego klienta.",
-        "ctaText": "Uzyskaj kompleksową konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
+        "ctaText": "Masz pytania lub wątpliwości? Zamów konsultację, a nasz menedżer udzieli Ci profesjonalnej pomocy!",
         "details": "Więcej",
         "allService": "Wszystkie usługi"
     },
@@ -317,5 +318,18 @@
         "submittingConditions": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na <purple>Warunki przetwarzania danych osobowych</purple> i <purpleCond>Zasady udziału w losowaniu landing page</purpleCond>",
         "wishDescription": "Kliknij ten link i otrzymaj spersonalizowane życzenia i prezenty!",
         "envelopeAlt": "Koperta z życzeniami i pocztówką"
+    },
+    "PastEvents": {
+        "pageBigTitle": "Nasze poprzednie wydarzenia"
+    },
+    "Events": {
+        "days": "{days, plural, =1 {dzień} other {dni}}",
+        "title": "Do uruchomienia nowego wydarzenia",
+        "minutes": "{minutes, plural, =1 {minuta} few {minuty} other {minut}}",
+        "hours": "{hours, plural, =1 {godzina} few {godziny} other {godzin}}",
+        "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
+        "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
+        "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
+        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
     }
 }

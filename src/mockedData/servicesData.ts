@@ -2,7 +2,7 @@ export interface ServiceType {
     slug: string;
     icon: string;
     image: string;
-    ctaButton?: "order" | "write";
+
     ua: ServiceLocalizationDataType;
     en: ServiceLocalizationDataType;
     pl: ServiceLocalizationDataType;
@@ -48,7 +48,7 @@ export const servicesData: ServiceType[] = [
         slug: "business-analysis",
         icon: "ba",
         image: "https://drive.google.com/uc?export=view&id=1_ykI2aXWvjw68w42pvdWt9ZfLf1DSDQF",
-        ctaButton: "order",
+
         ua: {
             name: "бізнес-аналіз",
             shortDescription:
@@ -322,7 +322,7 @@ export const servicesData: ServiceType[] = [
     },
     {
         slug: "design",
-        ctaButton: "order",
+
         icon: "design",
         image: "https://drive.google.com/uc?export=view&id=10SeaH077vHUZhYU8vQm2-yX2Ff9nwJku",
         ua: {
@@ -608,7 +608,7 @@ export const servicesData: ServiceType[] = [
     },
     {
         slug: "development",
-        ctaButton: "write",
+
         icon: "dev",
         image: "https://drive.google.com/uc?export=view&id=1ECWvNJkxkxcorwlbapXVB1ksw1-mS93l",
         ua: {
@@ -686,7 +686,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Давайте разом оживимо вашу ідею! Напишіть нам просто зараз, щоб обговорити ваш проєкт.",
+                    "Замовляйте розробку у нас та отримайте індивідуальне рішення для втілення вашої ідеї!",
             },
         },
         en: {
@@ -764,7 +764,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Let's bring your idea to life together! Contact us right now to discuss your project.",
+                    "Order development services from us and get a tailored solution to bring your idea to life!",
             },
         },
         pl: {
@@ -842,7 +842,7 @@ export const servicesData: ServiceType[] = [
                     },
                 ],
                 ctaText:
-                    "Razem wprowadźmy Twój pomysł w życie! Skontaktuj się z nami już teraz, aby omówić swój projekt.",
+                    "Zamów u nas usługi rozwojowe i otrzymaj indywidualne rozwiązanie dla realizacji swojego pomysłu!",
             },
         },
     },
@@ -850,7 +850,7 @@ export const servicesData: ServiceType[] = [
         slug: "testing",
         icon: "test",
         image: "https://drive.google.com/uc?export=view&id=1_OfiG108dHYF__k1ZtadN1wKzETCiWfx",
-        ctaButton: "order",
+
         ua: {
             name: "тестування",
             shortDescription:
@@ -1104,7 +1104,7 @@ export const servicesData: ServiceType[] = [
         slug: "support",
         icon: "support",
         image: "https://drive.google.com/uc?export=view&id=1eKfQR0K5jxvGmypKRJcoRxkCfomM6jHm",
-        ctaButton: "order",
+
         ua: {
             name: "підтримка",
             shortDescription:
@@ -1418,7 +1418,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "comprehensive-service",
         icon: "complex",
-        ctaButton: "order",
+
         image: "https://drive.google.com/uc?export=view&id=1aBLtZOAvs5TGOZVeOXuKQPBCFx8kur4x",
         ua: {
             name: "комплексна послуга",
@@ -1719,7 +1719,7 @@ export const servicesData: ServiceType[] = [
         slug: "landing",
         icon: "landing",
         image: "https://drive.google.com/uc?export=view&id=1Kgb4tXEmBn1hQmD2r_h2VAwwNYThl6Xt",
-        ctaButton: "order",
+
         ua: {
             name: "Лендінг ",
             shortDescription:
@@ -1982,7 +1982,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "website",
         icon: "website",
-        ctaButton: "order",
+
         image: "https://drive.google.com/uc?export=view&id=1KHGciTsxySPaU7Wse4wu4776LmMGaTFc",
         ua: {
             name: "Вебсайт",
@@ -2571,7 +2571,7 @@ export const servicesData: ServiceType[] = [
         slug: "online-store",
         icon: "store",
         image: "https://drive.google.com/uc?export=view&id=1fSbXuv6SQ_PCm_t3gWt_6DB8xuSZypmN",
-        ctaButton: "order",
+
         ua: {
             name: "Інтернет-магазин",
             shortDescription:

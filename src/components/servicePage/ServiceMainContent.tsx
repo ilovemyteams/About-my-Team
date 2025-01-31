@@ -14,7 +14,6 @@ interface ServiceMainContentProps {
 }
 
 export const ServiceMainContent = ({ content }: ServiceMainContentProps) => {
-    // зробити як в main content як question main content
     return (
         <>
             {content.map((item, index) => {
