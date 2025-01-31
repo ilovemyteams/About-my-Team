@@ -21,7 +21,7 @@ export const Countdown = ({
         hours: number;
         minutes: number;
         seconds: number;
-    } | null>(null);
+    }>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
     const calculateTimeLeft = useCallback(() => {
         const parsedDate = new Date(targetDate);
@@ -45,8 +45,6 @@ export const Countdown = ({
 
         return () => clearInterval(timer);
     }, [calculateTimeLeft]);
-
-    if (!timeLeft) return null;
 
     return (
         <div className="relative bg-construction z-10 before:content-[''] before:absolute before:inset-0 before:bg-underConstructionGradientLight before:dark:bg-underConstructionGradient before:z-[-5] mb-[80px] pc:mb-[100px]">
