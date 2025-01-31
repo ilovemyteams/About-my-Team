@@ -316,10 +316,10 @@
         "envelopeAlt": "Конверт з побажанням та листівкою"
     },
     "PastEvents": {
-        "pageBigTitle": "Наші попередні івенти"
+        "pageBigTitle": "Наші попередні події"
     },
     "Events": {
-        "title": "До запуску нового івенту",
+        "title": "До запуску нової події",
         "days": "{days, plural, =1 {день} few {дні} other {днів}}",
         "hours": "{hours, plural, =1 {година} few {години} other {годин}}",
         "minutes": "{minutes, plural, =1 {хвилина} few {хвилини} other {хвилин}}",
