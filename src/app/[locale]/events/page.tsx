@@ -1,4 +1,5 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
+import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 import { Countdown } from "../../../components/eventsPage/countdown/Countdown";
@@ -19,6 +20,7 @@ export default function Services() {
     return (
         <>
             {/* <Header/> */}
+            <Switchers />
             <Countdown targetDate="2025-02-10T10:00:00+02:00" />
             <PastEvents />
         </>
