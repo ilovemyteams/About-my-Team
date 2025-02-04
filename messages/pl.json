@@ -331,5 +331,10 @@
         "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
         "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
+    },
+    "Valentine": {
+        "secondSceneTitle": "Wybierz swoją zabawną walentynkę",
+        "secondSceneExplanation": "Kliknij balonik",
+        "secondSceneWishTitle": "Miłość to..."
     }
 }
