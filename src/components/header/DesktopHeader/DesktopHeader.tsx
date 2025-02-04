@@ -46,7 +46,7 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
-                        {pathname !== "/events" && (
+                        {!pathname.endsWith("/events") && (
                             <Link
                                 href={`/${localeInURL(locale)}events`}
                                 className="w-16 desk:w-20"
