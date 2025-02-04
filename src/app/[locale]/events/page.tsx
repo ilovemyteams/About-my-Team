@@ -1,4 +1,5 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
+import { SecondScene } from "@/src/components/eventsPage/SecondScene.tsx/SecondScene";
 import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
@@ -22,6 +23,7 @@ export default function Services() {
             {/* <Header/> */}
             <Switchers />
             <Countdown targetDate="2025-02-10T10:00:00+02:00" />
+            <SecondScene />
             <PastEvents />
         </>
     );
