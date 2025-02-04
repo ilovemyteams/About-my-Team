@@ -18,7 +18,7 @@ export const BurgerMenuButton = ({
             aria-label="open menu button"
             type="button"
             onClick={toggleHeaderMenuOpen}
-            className="relative w-12 h-12 p-[7.2px] pc:p-1 flex justify-center items-center icon-hover-rounded-purple"
+            className="relative w-12 pc:mx-auto h-12 p-[7.2px] pc:p-1 flex justify-center items-center icon-hover-rounded-purple"
         >
             <div className="pointer w-full h-full rotate-0 transition-all duration-[600ms] ease-out">
                 <span

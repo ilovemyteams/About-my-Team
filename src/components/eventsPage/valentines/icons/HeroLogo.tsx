@@ -4,7 +4,7 @@ export const HeroLogo = () => {
     return (
         <>
             <LogoDarkTheme className="hidden dark:block" />
-            <LogoLightTheme className="dark:hidden" />
+            <LogoLightTheme className="block dark:hidden" />
         </>
     );
 };
@@ -189,8 +189,6 @@ function LogoDarkTheme({ className }: IconProps) {
 function LogoLightTheme({ className }: IconProps) {
     return (
         <svg
-            width="966"
-            height="135"
             viewBox="0 0 966 135"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

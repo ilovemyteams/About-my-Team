@@ -1,9 +1,14 @@
 "use client";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
+
+import { localeInURL } from "@/src/utils/localeInURL";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { IconEnvelopeCheap } from "../../eventsPage/valentines/icons/IconEnvelopeCheap";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -11,6 +16,8 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const locale = useLocale();
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -39,6 +46,15 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
+                        {pathname !== "/events" && (
+                            <Link
+                                href={`/${localeInURL(locale)}events`}
+                                className="w-16 desk:w-20"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
+                                <IconEnvelopeCheap />
+                            </Link>
+                        )}
                     </div>
 
                     <SocialLinksList />
