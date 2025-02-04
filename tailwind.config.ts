@@ -549,6 +549,7 @@ const config: Config = {
             headerGradientLight:
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
+            pinkGradient: "linear-gradient(to right, #FFF1F1 0%, #FFBAC2 100%)",
             memberMenuGradientDark:
                 "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
             memberMenuGradientLight:
