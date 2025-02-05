@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { wishesData } from "@/src/mockedData/wishesData";
 import { Link } from "@/src/navigation";
 import { wishRandomizer } from "@/src/utils/wishRandomizer";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
 interface BalloonButtonProps {
     id: string;
@@ -14,16 +15,22 @@ interface BalloonButtonProps {
 }
 
 export const Balloon = ({ className, id, heartPNG }: BalloonButtonProps) => {
+    const { setPreviousValentineURL } = usePreviousURL();
     const [randomWishId, setRandomWishId] = useState<string | null>(null);
     useEffect(() => {
         setRandomWishId(wishRandomizer(wishesData));
     }, []);
+
+    const handleClick = () => {
+        setPreviousValentineURL(`/events#balloons`);
+    };
 
     return (
         <Link
             href={`/events/wish/${randomWishId}`}
             id={id}
             aria-label={id}
+            onClick={handleClick}
             className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className} transition ease-out duration-300`}
         >
             <Image

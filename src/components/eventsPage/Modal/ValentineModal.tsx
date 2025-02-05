@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { useRouter } from "@/src/navigation";
 
 export const ValentineModal = ({
     children,
@@ -18,9 +20,9 @@ export const ValentineModal = ({
     text: string;
 }) => {
     const router = useRouter();
+    const { previousValentineURL } = usePreviousURL();
     const pathname = usePathname();
     const locale = useLocale();
-    const PREVIOUSURL = `/${locale}/events`;
 
     const [isModalOpen, setIsModalOpen] = useState(true);
 
@@ -37,7 +39,7 @@ export const ValentineModal = ({
 
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                router.push(PREVIOUSURL);
+                router.push(previousValentineURL);
                 setIsModalOpen(false);
             }
         };
@@ -49,12 +51,12 @@ export const ValentineModal = ({
         return () => {
             document.removeEventListener("keydown", handleEsc);
         };
-    }, [pathname, router, locale, PREVIOUSURL]);
+    }, [pathname, router, locale, previousValentineURL]);
 
     if (!isModalOpen) return null;
 
     const handleClose = () => {
-        router.push(PREVIOUSURL);
+        router.push(previousValentineURL);
         setIsModalOpen(false);
     };
 
@@ -91,7 +93,7 @@ export const ValentineModal = ({
                                 />
                             ) : (
                                 <Image
-                                    src="/public/images/valen/logoHeart.png"
+                                    src="/images/valen/logoHeart.png"
                                     alt="heart"
                                     width={110}
                                     height={141}
