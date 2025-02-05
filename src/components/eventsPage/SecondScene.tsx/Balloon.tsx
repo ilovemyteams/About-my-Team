@@ -31,7 +31,7 @@ export const Balloon = ({ className, id, heartPNG }: BalloonButtonProps) => {
             id={id}
             aria-label={id}
             onClick={handleClick}
-            className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] ${className} transition ease-out duration-300`}
+            className={`absolute cursor-pointer active:scale-[110%] tab:hover:scale-[130%] tab:hover:z-[2] ${className} transition ease-out duration-300`}
         >
             <Image
                 src={heartPNG}
