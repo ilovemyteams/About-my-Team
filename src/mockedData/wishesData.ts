@@ -48,7 +48,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-child",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/x8riztokddcgk0l4o68m.jpg",
         ua: {
             title: "Про дитину",
             wish: "коли дитина приносить тобі квітку з клумби сусідки і каже, що ти найкраща в світі",
@@ -64,7 +64,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-mother",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/jdmw9rie1ykjie508lbp.jpg",
         ua: {
             title: "Про матір",
             wish: "коли її обійми лікують навіть найважчий день",
@@ -80,7 +80,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-father",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790627/valentine/e32aypqa5mdv6edrf06q.jpg",
         ua: {
             title: "Про батька",
             wish: "коли його слова “ти впораєшся” звучать, як найкраща підтримка",
@@ -96,7 +96,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-vacation",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/lpxquibyumpf0ql8llkc.jpg",
         ua: {
             title: "Про відпустку",
             wish: "коли твій авіарейс запізнюється, але тебе це не хвилює, бо ти вже з коктейлем",
@@ -112,7 +112,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-an-unfinished-book",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/lpz4nrgskoaq7n9ev5yo.jpg",
         ua: {
             title: "Про незакінчену книгу",
             wish: "обіцяти книзі, що дочитаєш її “на цих вихідних”",
@@ -128,7 +128,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about a cat",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/qo25tlmu4bjwgnnot5lz.jpg",
         ua: {
             title: "Про кота",
             wish: "коли він спить на твоїй подушці, а ти мовчки на краєчку",
@@ -144,7 +144,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-last-job",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/gfbgsy1jvkshm7h26ahs.jpg",
         ua: {
             title: "Про колишню ... роботу",
             wish: "згадувати її і розуміти, що любиш свою нову більше",
@@ -160,7 +160,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-the-project-team",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/jggqhcsd6qlfdwrnf6vs.jpg",
         ua: {
             title: "Про команду в проєкті",
             wish: "знати, що разом ви навіть дедлайн зможете приручити",
@@ -176,7 +176,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-developer",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/n489vwzuinsvqmvpds2z.jpg",
         ua: {
             title: "Про розробника",
             wish: "коли твій код компілюється з першого разу",
@@ -192,7 +192,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-client-meeting",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/eb0f5kqjotkgkbwgslxf.jpg",
         ua: {
             title: "Про зустріч з клієнтом",
             wish: "коли ти слухаєш клієнта, а в голові вже малюєш план втечі",
@@ -208,7 +208,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-online-meetings",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/khv9l9oryua4y4o4uvzw.jpg",
         ua: {
             title: "Любов до мітів",
             wish: "вдавати, що слухаєш, коли вимкнув камеру і жуєш піцу",
@@ -224,7 +224,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-new-project",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/b6lglwykgop73jcp1ztc.jpg",
         ua: {
             title: "Про новий проєкт",
             wish: "обіцяти собі: цього разу все буде по Agile",
@@ -240,7 +240,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-morning-coffee",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/w6pgj36gbqxxctcqkiiu.jpg",
         ua: {
             title: "Про ранкову каву",
             wish: "коли бариста пам'ятає твій улюблений капучино",
@@ -256,7 +256,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-release",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/ajzxsnylg5yv9blxauuy.jpg",
         ua: {
             title: "Про реліз",
             wish: "коли все падає, а ти ще й встигаєш зробити мемчик",
@@ -272,7 +272,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-discounts",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790916/valentine/awpnkypb1eh4qkbdgmyj.jpg",
         ua: {
             title: "Про знижки",
             wish: "знайти купон на знижку і витратити вдвічі більше",
@@ -288,7 +288,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-motivation",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/sjbzaiqvqv0bdhqw53ta.jpg",
         ua: {
             title: "Про мотивацію",
             wish: "знаходити силу почати тиждень заради п'ятниці",
@@ -304,7 +304,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-code-review",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/mmjb5dyqawotk3wnrnpl.jpg",
         ua: {
             title: "Про код рев’ю",
             wish: "коли твій код виправили, але ти все ще не образився",
@@ -320,7 +320,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-corporate-chats",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/jfoph4zq6loevpjzdy0o.jpg",
         ua: {
             title: "Про корпоративні чати",
             wish: "коли ставиш “+” у чаті, але думаєш: “Хто це взагалі придумав?”",
@@ -336,7 +336,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-vacation-2",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/xmbxikznijjxx5y3cm72.jpg",
         ua: {
             title: "Про відпустку",
             wish: "обіцяти не брати ноутбук, але він вже в рюкзаку",
@@ -352,7 +352,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-designers",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/sj9mgyjzjecurp7cevuh.jpg",
         ua: {
             title: "Про дизайнерів",
             wish: "коли прийняли дизайн без жодної правки",
@@ -368,7 +368,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-dog",
-        image: "",
+        image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/t0rsu0ibhfzfiep915zn.jpg",
         ua: {
             title: "Про собаку",
             wish: "коли вже не відчуваєш обличчя, а собака все ще не вибрав місце",
