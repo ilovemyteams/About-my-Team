@@ -6,7 +6,7 @@ import { Balloon } from "./Balloon";
 import { IconArrowClickBalloon } from "./IconArrowClickBalloon";
 
 export const SecondScene = () => {
-    const getTranslation = useTranslations("Valentine");
+    const getTranslation = useTranslations("Valentines");
 
     return (
         <PageSection className="pt-3 pb-11 tab:pb-[100px] desk:pb-[140px]">
