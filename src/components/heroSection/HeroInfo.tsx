@@ -4,7 +4,8 @@ import { useLocale } from "next-intl";
 
 import { localeInURL } from "@/src/utils/localeInURL";
 
-import { IconEnvelopeCheap } from "../eventsPage/valentines/icons/IconEnvelopeCheap";
+import { WhiteEnvelopeIcon } from "../eventsPage/valentines/icons/WhiteEnvelopeIcon";
+import { FlyingEnvelope } from "../eventsPage/valentines/shared/FlyingEnvelope";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const HeroInfo = () => {
@@ -26,7 +27,7 @@ export const HeroInfo = () => {
                     href={`/${localeInURL(locale)}events`}
                     className="absolute -top-[4.5rem] tab:top-20 pc:-top-20 desk:-top-12 right-4 tab:right-16 pc:right-12 desk:right-4 w-12 tab:w-24 desk:w-28 rotate-[-4deg] tab:rotate-[35deg] pc:rotate-[30deg]"
                 >
-                    <IconEnvelopeCheap />
+                    <FlyingEnvelope icon={WhiteEnvelopeIcon} />
                 </Link>
                 <WriteUs />
             </div>

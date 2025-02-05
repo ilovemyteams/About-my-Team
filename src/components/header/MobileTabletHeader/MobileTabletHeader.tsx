@@ -8,7 +8,8 @@ import { localeInURL } from "@/src/utils/localeInURL";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
-import { IconEnvelopeCheap } from "../../eventsPage/valentines/icons/IconEnvelopeCheap";
+import { WhiteEnvelopeIcon } from "../../eventsPage/valentines/icons/WhiteEnvelopeIcon";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -46,7 +47,7 @@ export const MobileTabletHeader = () => {
                                 className="w-[70px]"
                                 onClick={() => setIsHeaderMenuOpened(false)}
                             >
-                                <IconEnvelopeCheap />
+                                <FlyingEnvelope icon={WhiteEnvelopeIcon} />
                             </Link>
                         )}
 

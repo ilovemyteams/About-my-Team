@@ -8,7 +8,8 @@ import { localeInURL } from "@/src/utils/localeInURL";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
-import { IconEnvelopeCheap } from "../../eventsPage/valentines/icons/IconEnvelopeCheap";
+import { WhiteEnvelopeIcon } from "../../eventsPage/valentines/icons/WhiteEnvelopeIcon";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -52,7 +53,7 @@ export const DesktopHeader = () => {
                                 className="w-16 desk:w-20"
                                 onClick={() => setIsHeaderMenuOpened(false)}
                             >
-                                <IconEnvelopeCheap />
+                                <FlyingEnvelope icon={WhiteEnvelopeIcon} />
                             </Link>
                         )}
                     </div>
