@@ -22,9 +22,10 @@ export default function Services() {
         <div className="relative">
             <Switchers />
             <Hero />
-            <Certificate />
-            {/* <Countdown targetDate="2025-02-10T10:00:00+02:00" /> */}
             <SecondScene />
+            <Certificate />
+
+            {/* <Countdown targetDate="2025-02-10T10:00:00+02:00" /> */}
             <PastEvents />
         </div>
     );
