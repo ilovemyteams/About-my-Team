@@ -4,9 +4,10 @@ import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 
-import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { useRouter } from "@/src/navigation";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+
+import { IconCloseX } from "../../shared/Icons/IconCloseX";
 
 export const ValentineModal = ({
     children,

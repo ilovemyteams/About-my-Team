@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 import { wishesData } from "@/src/mockedData/wishesData";
 import { Link } from "@/src/navigation";
-import { wishRandomizer } from "@/src/utils/wishRandomizer";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
+import { wishRandomizer } from "@/src/utils/wishRandomizer";
 
 interface BalloonButtonProps {
     id: string;
