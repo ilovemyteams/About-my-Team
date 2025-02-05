@@ -111,9 +111,9 @@ body {
         }
     }
     .bg-construction {
-            background-image: url('/images/under-construction.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        background-image: url("/images/under-construction.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
