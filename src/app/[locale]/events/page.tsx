@@ -18,12 +18,12 @@ export async function generateMetadata({
 
 export default function Services() {
     return (
-        <>
+        <div className="relative">
             <Switchers />
             <Hero />
             <Certificate />
             {/* <Countdown targetDate="2025-02-10T10:00:00+02:00" /> */}
             <PastEvents />
-        </>
+        </div>
     );
 }
