@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import { PageSection } from "../../shared/PageSection";
+import { PageSection } from "../../../shared/PageSection";
 import { CornerIcon } from "../icons/CornerIcon";
 import { Card } from "./Card";
 

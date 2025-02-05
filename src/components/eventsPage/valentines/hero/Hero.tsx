@@ -3,8 +3,8 @@ import { useAnimate } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 
-import { Button } from "../../shared/Button";
-import { PageSection } from "../../shared/PageSection";
+import { Button } from "../../../shared/Button";
+import { PageSection } from "../../../shared/PageSection";
 import { HeartLeftPartIcon } from "../icons/HeartLeftPartIcon";
 import { HeartRightPartIcon } from "../icons/HeartRightPartIcon";
 import { HeroLogo } from "../icons/HeroLogo";
