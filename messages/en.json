@@ -332,7 +332,7 @@
     },
     "Valentine": {
         "secondSceneTitle": "Choose your fun Valentine’s card",
-        "secondSceneExplanation": "Tap on the balloon",
+        "secondSceneHint": "Tap on the balloons",
         "secondSceneWishTitle": "Love is..."
     }
 }

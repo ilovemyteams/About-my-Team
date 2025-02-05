@@ -329,7 +329,7 @@
     },
     "Valentine": {
         "secondSceneTitle": "Виберіть свою прикольну валентинку",
-        "secondSceneExplanation": "тицяйте на кульки",
+        "secondSceneHint": "тицяйте на кульки",
         "secondSceneWishTitle": "Любоу це..."
     }
 }

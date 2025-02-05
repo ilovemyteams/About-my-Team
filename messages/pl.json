@@ -334,7 +334,7 @@
     },
     "Valentine": {
         "secondSceneTitle": "Wybierz swoją zabawną walentynkę",
-        "secondSceneExplanation": "Kliknij balonik",
+        "secondSceneHint": "Kliknij balonik",
         "secondSceneWishTitle": "Miłość to..."
     }
 }
