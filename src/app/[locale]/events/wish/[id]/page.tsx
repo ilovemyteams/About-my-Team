@@ -26,7 +26,7 @@ export async function generateMetadata({
     const imageUrl = wish?.image ? wish.image : "";
     const getTranslation = await getTranslations({
         locale,
-        namespace: "Valentine",
+        namespace: "Valentines",
     });
 
     return {
