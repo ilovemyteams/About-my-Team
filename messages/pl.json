@@ -335,6 +335,16 @@
     "Valentine": {
         "secondSceneTitle": "Wybierz swoją zabawną walentynkę",
         "secondSceneHint": "Kliknij balonik",
-        "secondSceneWishTitle": "Miłość to..."
+        "secondSceneWishTitle": "Miłość to...",
+    "Valentines": {
+        "heroText": "Kochamy kreatywność i przynoszenie dobrego nastroju — do przodu z życzeniami na Dzień Świętego Walentego, prezentami na nasze usługi.",
+        "heroBtn": "Uzyskaj rabat",
+        "certificateHere": "сertyfikat tutaj",
+        "clickHere": "<purple>Kliknij</purple> na kopertę, \naby <purple>otrzymać \ncertyfikat na</purple> <red>50$</red> \nna nasze usługi.",
+        "firstFootnote": "*Certyfikat nie może być monetyzowany",
+        "secondFootnote": "*Certyfikat można wykorzystać tylko raz",
+        "confirmationGreeting": "Gratulacje, otrzymałeś certyfikat na nasze usługi!",
+        "confirmationFootnote": "*Oferta jest jednorazowa i ważna do 01.04.2025",
+        "confirmationText": "Aby otrzymać certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z tobą"
     }
 }

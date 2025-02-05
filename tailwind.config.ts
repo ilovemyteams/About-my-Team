@@ -108,6 +108,12 @@ const config: Config = {
                     lineHeight: "30px",
                 },
             ],
+            "2xl24": [
+                "24px",
+                {
+                    lineHeight: "24px",
+                },
+            ],
             "2xl34": [
                 "24px",
                 {
@@ -152,6 +158,12 @@ const config: Config = {
                 {
                     lineHeight: "52px",
                     fontWeight: "700",
+                },
+            ],
+            "5xl40": [
+                "40px",
+                {
+                    lineHeight: "40px",
                 },
             ],
             "6xl": [
@@ -214,6 +226,7 @@ const config: Config = {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
                 intro: ["var(--font-intro)"],
+                segoe: ["var(--font-segoe)"],
             },
             colors: {
                 purple: {
