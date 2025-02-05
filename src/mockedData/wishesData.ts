@@ -127,35 +127,275 @@ export const wishesData: WishProp[] = [
         },
     },
     {
-        id: "",
+        id: "about a cat",
         image: "",
         ua: {
-            title: "",
-            wish: "",
+            title: "Про кота",
+            wish: "коли він спить на твоїй подушці, а ти мовчки на краєчку",
         },
         pl: {
-            title: "",
-            wish: "",
+            title: "O kocie",
+            wish: "kiedy on śpi na twojej poduszce, a ty cicho przesuwasz się na brzeg",
         },
         en: {
-            title: "",
-            wish: "",
+            title: "About a cat",
+            wish: "when it sleeps on your pillow, and you silently move to the edge",
         },
     },
     {
-        id: "",
+        id: "about-last-job",
         image: "",
         ua: {
-            title: "",
-            wish: "",
+            title: "Про колишню ... роботу",
+            wish: "згадувати її і розуміти, що любиш свою нову більше",
         },
         pl: {
-            title: "",
-            wish: "",
+            title: "O byłej Pracy",
+            wish: "wspominać ją i rozumieć, że nową lubisz bardziej",
         },
         en: {
-            title: "",
-            wish: "",
+            title: "About last job",
+            wish: "remembering it and realizing you love your new one more",
         },
     },
+    {
+        id: "about-the-project-team",
+        image: "",
+        ua: {
+            title: "Про команду в проєкті",
+            wish: "знати, що разом ви навіть дедлайн зможете приручити",
+        },
+        pl: {
+            title: "O zespole w projekcie",
+            wish: "wiedzieć, że razem możecie nawet oswoić deadline",
+        },
+        en: {
+            title: "About the project team",
+            wish: "knowing that together, you can even tame a deadline",
+        },
+    },
+    {
+        id: "about-developer",
+        image: "",
+        ua: {
+            title: "Про розробника",
+            wish: "коли твій код компілюється з першого разу",
+        },
+        pl: {
+            title: "O deweloper",
+            wish: "kiedy twój kod kompiluje się za pierwszym razem",
+        },
+        en: {
+            title: "About developer",
+            wish: "when your code compiles on the first try",
+        },
+    },
+    {
+        id: "about-a-client-meeting",
+        image: "",
+        ua: {
+            title: "Про зустріч з клієнтом",
+            wish: "коли ти слухаєш клієнта, а в голові вже малюєш план втечі",
+        },
+        pl: {
+            title: "O spotkaniu z klientem",
+            wish: "słuchać klienta, a w głowie już planować ucieczkę",
+        },
+        en: {
+            title: "About a client meeting",
+            wish: "listening to the client while already mapping out an escape plan in your head",
+        },
+    },
+    {
+        id: "about-online-meetings",
+        image: "",
+        ua: {
+            title: "Любов до мітів",
+            wish: "вдавати, що слухаєш, коли вимкнув камеру і жуєш піцу",
+        },
+        pl: {
+            title: "O spotkaniach online",
+            wish: "udawać, że słuchasz, kiedy wyłączyłeś kamerę i jesz pizzę",
+        },
+        en: {
+            title: "About online meetings",
+            wish: "pretending to listen while your camera is off and you’re eating pizza",
+        },
+    },
+    {
+        id: "about-a-new-project",
+        image: "",
+        ua: {
+            title: "Про новий проєкт",
+            wish: "обіцяти собі: цього разу все буде по Agile",
+        },
+        pl: {
+            title: "O nowym projekcie",
+            wish: "obiecać sobie: tym razem wszystko będzie zgodne z Agile",
+        },
+        en: {
+            title: "About a new project",
+            wish: "promising yourself: this time, it will be truly Agile",
+        },
+    },
+    {
+        id: "about-morning-coffee",
+        image: "",
+        ua: {
+            title: "Про ранкову каву",
+            wish: "коли бариста пам'ятає твій улюблений капучино",
+        },
+        pl: {
+            title: "O porannej kawie",
+            wish: "kiedy barista pamięta twoje ulubione cappuccino",
+        },
+        en: {
+            title: "About morning coffee",
+            wish: "when the barista remembers your favorite cappuccino",
+        },
+    },
+    {
+        id: "about-a-release",
+        image: "",
+        ua: {
+            title: "Про реліз",
+            wish: "коли все падає, а ти ще й встигаєш зробити мемчик",
+        },
+        pl: {
+            title: "O wydaniu",
+            wish: "kiedy wszystko się sypie, a ty jeszcze masz czas na stworzenie mema",
+        },
+        en: {
+            title: "About a release",
+            wish: "when everything crashes, but you still have time to make a meme",
+        },
+    },
+    {
+        id: "about-discounts",
+        image: "",
+        ua: {
+            title: "Про знижки",
+            wish: "знайти купон на знижку і витратити вдвічі більше",
+        },
+        pl: {
+            title: "O zniżkach",
+            wish: "znaleźć kupon rabatowy i wydać dwa razy więcej",
+        },
+        en: {
+            title: "About discounts",
+            wish: "finding a discount coupon and spending twice as much",
+        },
+    },
+    {
+        id: "about-motivation",
+        image: "",
+        ua: {
+            title: "Про мотивацію",
+            wish: "знаходити силу почати тиждень заради п'ятниці",
+        },
+        pl: {
+            title: "O motywacji",
+            wish: "znaleźć siłę, by zacząć tydzień dla samego piątku",
+        },
+        en: {
+            title: "About motivation",
+            wish: "finding the strength to start the week for the sake of Friday",
+        },
+    },
+    {
+        id: "about-code-review",
+        image: "",
+        ua: {
+            title: "Про код рев’ю",
+            wish: "коли твій код виправили, але ти все ще не образився",
+        },
+        pl: {
+            title: "O code review",
+            wish: "kiedy twój kod został poprawiony, ale ty się nie obraziłeś",
+        },
+        en: {
+            title: "About code review",
+            wish: "when your code gets corrected, but you’re still not offended",
+        },
+    },
+    {
+        id: "about-corporate-chats",
+        image: "",
+        ua: {
+            title: "Про корпоративні чати",
+            wish: "коли ставиш “+” у чаті, але думаєш: “Хто це взагалі придумав?”",
+        },
+        pl: {
+            title: "O czatach korporacyjnych",
+            wish: "kiedy wpisujesz „+” na czacie, ale myślisz: „Kto to w ogóle wymyślił?”",
+        },
+        en: {
+            title: "About corporate chats",
+            wish: "when you type “+” in the chat but think: “Who even invented this?”",
+        },
+    },
+    {
+        id: "about-vacation-2",
+        image: "",
+        ua: {
+            title: "Про відпустку",
+            wish: "обіцяти не брати ноутбук, але він вже в рюкзаку",
+        },
+        pl: {
+            title: "O wakacjach",
+            wish: "obiecać sobie, że nie weźmiesz laptopa, ale i tak jest w plecaku",
+        },
+        en: {
+            title: "About vacation",
+            wish: "promising not to take your laptop, but it’s still in your backpack",
+        },
+    },
+    {
+        id: "about-designers",
+        image: "",
+        ua: {
+            title: "Про дизайнерів",
+            wish: "коли прийняли дизайн без жодної правки",
+        },
+        pl: {
+            title: "O designerach",
+            wish: "kiedy projekt zostaje zaakceptowany bez żadnej poprawki",
+        },
+        en: {
+            title: "About designers",
+            wish: "when the design is approved without a single revision",
+        },
+    },
+    {
+        id: "about-dog",
+        image: "",
+        ua: {
+            title: "Про собаку",
+            wish: "коли вже не відчуваєш обличчя, а собака все ще не вибрав місце",
+        },
+        pl: {
+            title: "O psie",
+            wish: "kiedy już nie czujesz twarzy, a pies wciąż nie wybrał miejsca",
+        },
+        en: {
+            title: "About dog",
+            wish: "when you no longer feel your face, but the dog still hasn’t picked a spot",
+        },
+    },
+    // {
+    //     id: "",
+    //     image: "",
+    //     ua: {
+    //         title: "",
+    //         wish: "",
+    //     },
+    //     pl: {
+    //         title: "",
+    //         wish: "",
+    //     },
+    //     en: {
+    //         title: "",
+    //         wish: "",
+    //     },
+    // },
 ];
