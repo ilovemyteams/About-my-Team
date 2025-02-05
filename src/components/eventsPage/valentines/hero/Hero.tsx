@@ -54,7 +54,7 @@ export const Hero = () => {
                         <HeartRightPartIcon className="w-[138%] h-auto translate-x-[-30.8%] translate-y-[-1%] rotate-[-0.5deg]" />
                     </div>
                 </div>
-                <div className="max-w-[444px] grow-0 mx-auto text-white-200 text-center pc:pt-[84px] pc:mx-0 desk:max-w-[520px] desk:pt-[120px]">
+                <div className="max-w-[444px] grow-0 mx-auto text-purple-200 dark:text-white-200 text-center pc:pt-[84px] pc:mx-0 desk:max-w-[520px] desk:pt-[120px]">
                     <p className="mb-12 tab:text-xl28 desk:text-2xl34 tab:mb-10 pc:mb-[97px] desk:mb-[72px]">
                         {getTranslation("heroText")}
                     </p>

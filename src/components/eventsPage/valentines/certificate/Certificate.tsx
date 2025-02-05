@@ -32,7 +32,7 @@ export const Certificate = () => {
                     className={`absolute bottom-0 right-0 rotate-[-90deg] ${cornersStyles}`}
                 />
                 <div className="px-3 tab:pl-10 tab:pr-0 tab:w-[50%] pc:pl-[72px] desk:pl-[76px] desk:w-[52%]">
-                    <p className="font-caviar text-white-200 font-bold text-2xl24 tab:text-3xl28 pc:text-5xl40 desk:text-6xln mb-10 tab:mb-6 pc:mb-14 desk:mb-[72px] whitespace-pre-wrap">
+                    <p className="font-caviar text-purple-200 dark:text-white-200 font-bold text-2xl24 tab:text-3xl28 pc:text-5xl40 desk:text-6xln mb-10 tab:mb-6 pc:mb-14 desk:mb-[72px] whitespace-pre-wrap">
                         {title}
                     </p>
 
