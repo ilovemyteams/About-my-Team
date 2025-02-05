@@ -15,7 +15,7 @@ export const SecondScene = () => {
             </h2>
             <div
                 id="balloons"
-                className="relative flex mt-4 tab:mt-6 h-[397px] w-[288px] 
+                className="relative flex mt-4 tab:mt-6 pc:mt-[64px] h-[397px] w-[288px] 
                 tab:w-[718px] tab:h-[920px] pc:w-[1026px] pc:h-[1364px] desk:w-[1336px] desk:h-[1702px] mx-auto"
             >
                 <p
