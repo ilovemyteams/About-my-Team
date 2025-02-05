@@ -27,7 +27,7 @@ export const ValentineModal = ({
 
     const [isModalOpen, setIsModalOpen] = useState(true);
 
-    const getTranslation = useTranslations("Valentine");
+    const getTranslation = useTranslations("Valentines");
 
     useEffect(() => {
         const closeModal = () => {
