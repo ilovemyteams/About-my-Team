@@ -23,7 +23,7 @@ export async function generateMetadata({
     const wish = wishesData.find(wish => wish.id === id);
     const wishMessage = wish ? wish[locale as LocaleType].wish : "";
 
-    const imageUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/images/christmas/${id}.jpg`;
+    const imageUrl = wish?.image ? wish.image : "";
     const getTranslation = await getTranslations({
         locale,
         namespace: "Valentine",
