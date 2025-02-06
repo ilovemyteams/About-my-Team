@@ -1,8 +1,6 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
-import { SecondScene } from "@/src/components/eventsPage/SecondScene/SecondScene";
 import { Switchers } from "@/src/components/eventsPage/Switchers";
-import { Certificate } from "@/src/components/eventsPage/valentines/certificate/Certificate";
-import { Hero } from "@/src/components/eventsPage/valentines/hero/Hero";
+import { ValentinesActivity } from "@/src/components/eventsPage/valentines/ValentinesActivity";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
@@ -21,9 +19,7 @@ export default function Services() {
     return (
         <div className="relative">
             <Switchers />
-            <Hero />
-            <SecondScene />
-            <Certificate />
+            <ValentinesActivity />
 
             {/* <Countdown targetDate="2025-02-10T10:00:00+02:00" /> */}
             <PastEvents />

@@ -1,50 +1,26 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import { PageSection } from "../../../shared/PageSection";
-import { CornerIcon } from "../icons/CornerIcon";
-import { Card } from "./Card";
+import { ArrowIcon } from "../icons/ArrowIcon";
+import { FlyingEnvelope } from "../shared/FlyingEnvelope";
 
 export const Certificate = () => {
     const getTranslation = useTranslations("Valentines");
-
-    const title = getTranslation.rich("clickHere", {
-        purple: chunk => <span className="text-purple-100">{chunk}</span>,
-        red: chunk => (
-            <span className="text-redLight dark:text-red">{chunk}</span>
-        ),
-    });
-
-    const cornersStyles = "w-[62px] h-auto pc:w-[91px]";
     return (
-        <PageSection className="pb-[80px] relative">
-            <div className="relative pt-7 pb-[266px] tab:pt-9 tab:pb-10 pc:pt-[65px] pc:pb-[55px]">
-                <CornerIcon
-                    className={`absolute top-0 left-0 rotate-90 ${cornersStyles}`}
-                />
-                <CornerIcon
-                    className={`absolute top-0 right-0 rotate-[180deg] ${cornersStyles}`}
-                />
-                <CornerIcon
-                    className={`absolute bottom-0 left-0 ${cornersStyles}`}
-                />
-                <CornerIcon
-                    className={`absolute bottom-0 right-0 rotate-[-90deg] ${cornersStyles}`}
-                />
-                <div className="px-3 tab:pl-10 tab:pr-0 tab:w-[50%] pc:pl-[72px] desk:pl-[76px] desk:w-[52%]">
-                    <p className="font-caviar text-purple-200 dark:text-white-200 font-bold text-2xl24 tab:text-3xl28 pc:text-5xl40 desk:text-6xln mb-10 tab:mb-6 pc:mb-14 desk:mb-[72px] whitespace-pre-wrap">
-                        {title}
-                    </p>
-
-                    <p className="text-sm pc:text-lg25">
-                        {getTranslation("firstFootnote")}
-                    </p>
-                    <p className="text-sm pc:text-lg25">
-                        {getTranslation("secondFootnote")}
-                    </p>
-                </div>
+        <div className="w-full max-w-[320px] h-auto relative">
+            <div className="absolute top-0 right-0 translate-y-[-200%] text-right mb-10 tab:mb-10 pc:mb-14 opacity-0">
+                <p className="font-segoe text-xxs tab:text-sm pc:text-xl whitespace-nowrap">
+                    {getTranslation("certificateHere")}
+                </p>
+                <ArrowIcon className="absolute right-[15%] top-[20px] w-[30px] h-auto tab:w-[35px] pc:top-[25px] pc:w-[45px]" />
             </div>
-            <Card />
-        </PageSection>
+            <div className="w-[85%] mx-auto pc:w-full">
+                <FlyingEnvelope
+                    className="rotate-[15deg] transform-x-[5%] tab:transform-x-0 cursor-pointer 
+            max-w-[300px] tab:max-w-[350px] pc:max-w-[450px] pb-[3%]"
+                    envelope="pink"
+                />
+            </div>
+        </div>
     );
 };

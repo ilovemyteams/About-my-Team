@@ -1,7 +1,7 @@
 "use client";
-import { useAnimate } from "framer-motion";
+
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
+import { RefObject, useState } from "react";
 
 import { Button } from "../../../shared/Button";
 import { PageSection } from "../../../shared/PageSection";
@@ -10,26 +10,20 @@ import { HeartRightPartIcon } from "../icons/HeartRightPartIcon";
 import { HeroLogo } from "../icons/HeroLogo";
 import { Decorations } from "./Decorations";
 
-export const Hero = () => {
-    const [scope, animate] = useAnimate();
-    const heartRef = useRef(null);
+interface HeroProps {
+    heartRef: RefObject<HTMLDivElement>;
+    leftPartRef: RefObject<HTMLDivElement>;
+    onClickBtn: () => void;
+}
+
+export const Hero = ({ heartRef, leftPartRef, onClickBtn }: HeroProps) => {
+    const [isDisable, setIsDisable] = useState(false);
+
     const getTranslation = useTranslations("Valentines");
 
-    const onClickBtn = async () => {
-        await animate(
-            heartRef.current,
-            { scale: [1.1, 1, 1.1, 1] },
-            { duration: 1 }
-        );
-        await animate(
-            scope.current,
-            {
-                rotate: "-40deg",
-                x: "-50%",
-                y: "15%",
-            },
-            { duration: 1 }
-        );
+    const onClick = async () => {
+        onClickBtn();
+        setIsDisable(true);
     };
     return (
         <PageSection
@@ -42,12 +36,15 @@ export const Hero = () => {
                 <HeroLogo />
             </div>
             <div className="grow flex flex-col pc:flex-row pc:gap-[110px]">
-                <div className="grow w-[50%] mx-auto flex items-center tab:mb-[50px] tab:justify-end tab:max-w-[362px] pc:max-w-[524px] pc:pl-[60px] desk:max-w-[530px]">
+                <div
+                    className="grow w-[50%] mx-auto flex items-center tab:mb-[50px] tab:justify-end 
+                tab:max-w-[362px] pc:max-w-[524px] pc:pl-[90px] desk:pl-[80px] desk:max-w-[530px]"
+                >
                     <div
                         className="grid grid-cols-2 justify-center"
                         ref={heartRef}
                     >
-                        <div ref={scope}>
+                        <div ref={leftPartRef}>
                             <HeartLeftPartIcon className="w-full h-auto" />
                         </div>
 
@@ -58,7 +55,7 @@ export const Hero = () => {
                     <p className="mb-12 tab:text-xl28 desk:text-2xl34 tab:mb-10 pc:mb-[97px] desk:mb-[72px]">
                         {getTranslation("heroText")}
                     </p>
-                    <Button onClick={onClickBtn}>
+                    <Button onClick={onClick} disabled={isDisable}>
                         {getTranslation("heroBtn")}
                     </Button>
                 </div>
