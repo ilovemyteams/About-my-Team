@@ -3,8 +3,8 @@ import { IconProps } from "@/types/iconProps.interface";
 export const HeroLogo = () => {
     return (
         <>
-            <LogoDarkTheme className="hidden dark:block " />
-            <LogoLightTheme className="block dark:hidden " />
+            <LogoDarkTheme className="hidden dark:block" />
+            <LogoLightTheme className="block dark:hidden" />
         </>
     );
 };

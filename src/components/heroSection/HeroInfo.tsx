@@ -1,9 +1,16 @@
+import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
+import { localeInURL } from "@/src/utils/localeInURL";
+
+import { WhiteEnvelopeIcon } from "../eventsPage/valentines/icons/WhiteEnvelopeIcon";
+import { FlyingEnvelope } from "../eventsPage/valentines/shared/FlyingEnvelope";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations("Hero");
+    const locale = useLocale();
 
     return (
         <div className="flex flex-col items-center pc:block pc:w-[35vw] desk:max-w-[535px] ">
@@ -16,6 +23,12 @@ export const HeroInfo = () => {
                 })}
             </h1>
             <div className=" relative flex flex-col gap-4 pc:gap-6 mt-6 tab:mt-[196px] pc:mt-[120px]">
+                <Link
+                    href={`/${localeInURL(locale)}events`}
+                    className="absolute -top-[4.5rem] tab:top-20 pc:-top-20 desk:-top-12 right-4 tab:right-16 pc:right-12 desk:right-4 w-12 tab:w-24 desk:w-28 rotate-[-4deg] tab:rotate-[35deg] pc:rotate-[30deg]"
+                >
+                    <FlyingEnvelope icon={WhiteEnvelopeIcon} />
+                </Link>
                 <WriteUs />
             </div>
         </div>

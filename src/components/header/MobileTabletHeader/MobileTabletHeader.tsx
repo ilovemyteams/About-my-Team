@@ -1,15 +1,23 @@
 "use client";
-
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
+
+import { localeInURL } from "@/src/utils/localeInURL";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { WhiteEnvelopeIcon } from "../../eventsPage/valentines/icons/WhiteEnvelopeIcon";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const locale = useLocale();
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -32,6 +40,16 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+
+                        {!pathname.endsWith("/events") && (
+                            <Link
+                                href={`/${localeInURL(locale)}events`}
+                                className="w-[70px]"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
+                                <FlyingEnvelope icon={WhiteEnvelopeIcon} />
+                            </Link>
+                        )}
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
