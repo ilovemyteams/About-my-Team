@@ -331,6 +331,9 @@
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     },
     "Valentines": {
+        "secondSceneTitle": "Choose your fun Valentine’s card",
+        "secondSceneHint": "Tap on the balloons",
+        "secondSceneWishTitle": "Love is...",
         "heroText": "We love creativity and bringing good vibes — forward with Valentine’s Day wishes, gifts for our services",
         "heroBtn": "Get a discount",
         "certificateHere": "certificate here",

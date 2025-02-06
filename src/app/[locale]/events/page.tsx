@@ -1,4 +1,5 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
+import { SecondScene } from "@/src/components/eventsPage/SecondScene.tsx/SecondScene";
 import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { ClickCertificateSection } from "@/src/components/eventsPage/valentines/certificate/ClickCertificateSection";
 import { Hero } from "@/src/components/eventsPage/valentines/hero/Hero";
@@ -21,7 +22,9 @@ export default function Services() {
         <div className="relative">
             <Switchers />
             <Hero />
+            <SecondScene />
             <ClickCertificateSection />
+
             {/* <Countdown targetDate="2025-02-10T10:00:00+02:00" /> */}
             <PastEvents />
         </div>
