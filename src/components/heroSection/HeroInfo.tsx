@@ -21,7 +21,7 @@ export const HeroInfo = () => {
             <div className=" relative flex flex-col gap-4 pc:gap-6 mt-6 tab:mt-[196px] pc:mt-[120px]">
                 <Link
                     href="/events"
-                    className="absolute -top-[4.5rem] tab:top-20 pc:-top-20 desk:-top-12 right-4 tab:right-16 pc:right-12 desk:right-4 w-12 tab:w-24 desk:w-28 rotate-[-4deg] tab:rotate-[35deg] pc:rotate-[30deg]"
+                    className="absolute -top-[2.5rem] tab:top-20 pc:-top-20 desk:-top-12 right-0 tab:right-16 pc:right-12 desk:right-4 w-20 tab:w-24 desk:w-28 rotate-[-4deg] tab:rotate-[35deg] pc:rotate-[30deg]"
                 >
                     <FlyingEnvelope envelope="white" />
                 </Link>
