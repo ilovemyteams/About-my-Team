@@ -94,13 +94,6 @@ export const ValentinesActivity = () => {
 
             const totalSteps = 60;
 
-            console.log(
-                heartLeftPosition,
-                heartWidth,
-                startXPosition,
-                containerWidth
-            );
-
             const path = generateParabolicPath(
                 x,
                 y,
