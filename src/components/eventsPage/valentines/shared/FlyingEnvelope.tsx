@@ -49,10 +49,10 @@ export const FlyingEnvelope = ({
                 className="relative z-[10000] w-full h-auto grow-0 shrink-1"
             />
             <motion.div
-                initial={{ rotate: "-5deg", x: "-15%" }}
+                initial={{ rotate: "-5deg", x: "-18%" }}
                 animate={{
                     rotate: ["5deg", "-5deg", "5deg"],
-                    x: ["-15%", "-15%", "-15%"],
+                    x: ["-18%", "-18%", "-18%"],
                     transition: {
                         duration: 0.5,
                         repeat: Infinity,
