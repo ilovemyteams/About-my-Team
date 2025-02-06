@@ -7,6 +7,33 @@ import { Certificate } from "./certificate/Certificate";
 import { ClickCertificateSection } from "./certificate/ClickCertificateSection";
 import { Hero } from "./hero/Hero";
 
+type ParabolaPath = {
+    xArray: number[];
+    yArray: number[];
+};
+
+const generateParabolicPath = (
+    xStart: number,
+    yStart: number,
+    xEnd: number,
+    yEnd: number,
+    peakHeight: number = 300,
+    steps: number = 60
+): ParabolaPath => {
+    const xArray = Array.from({ length: steps }, (_, i) => {
+        const t = i / (steps - 1);
+        return xStart + (xEnd - xStart) * t;
+    });
+
+    const yArray = xArray.map((_, i) => {
+        const t = i / (steps - 1);
+        const parabola = -4 * peakHeight * (t - 0.5) ** 2 + peakHeight;
+
+        return yStart + (yEnd - yStart) * t - parabola;
+    });
+
+    return { xArray, yArray };
+};
 export const ValentinesActivity = () => {
     const heartRef = useRef<HTMLDivElement>(null);
     const leftPartOfHeartRef = useRef<HTMLDivElement>(null);
@@ -19,45 +46,23 @@ export const ValentinesActivity = () => {
         const heartLeftPosition = heartRef.current?.offsetLeft || 0;
         const heartTopPosition = heartRef.current?.offsetTop || 0;
 
-        const x = heartWidth / 3 + heartLeftPosition;
-        const y = heartHeight / 5 + heartTopPosition;
+        const x = heartLeftPosition + 15;
+        const y = heartHeight / 4 + heartTopPosition;
 
-        const containerHeight = containerRef.current?.offsetHeight || 0;
-        const containerWidth = containerRef.current?.offsetWidth || 0;
+        // const containerHeight = containerRef.current?.offsetHeight || 0;
+        // const containerWidth = containerRef.current?.offsetWidth || 0;
 
-        const pathToBottom = containerHeight - y;
-
-        const stepY = Math.floor(pathToBottom / 60);
         const totalSteps = 60;
 
-        const yStepsArray = Array.from({ length: totalSteps }, (_, index) => {
-            let position = 0;
-            if (index < 6) {
-                position = y - stepY * (index + 1);
-            } else if (index < 10) {
-                position = y - stepY * 6 + stepY * (index + 1);
-            } else {
-                position = y + stepY * 11;
-            }
-            return `${position}px`;
-        });
-        const xStepsArray = Array.from({ length: totalSteps }, (_, index) => {
-            let position = 0;
-            if (index < 6) {
-                position = x - containerWidth * 0.02 * (index + 1);
-            } else if (index < 10) {
-                position =
-                    x -
-                    containerWidth * 0.12 +
-                    containerWidth * 0.02 * (index + 1);
-            } else {
-                position =
-                    x - containerWidth * 0.12 + containerWidth * 0.02 * 11;
-            }
-            return `${position}px`;
-        });
-
-        console.log(yStepsArray);
+        const path = generateParabolicPath(
+            x,
+            y,
+            x + heartWidth,
+            y,
+            heartHeight / 2,
+            totalSteps
+        );
+        console.log(path);
         if (
             heartRef.current &&
             leftPartOfHeartRef.current &&
@@ -69,19 +74,11 @@ export const ValentinesActivity = () => {
                 { scale: [1.1, 1, 1.1, 1] },
                 { duration: 1 }
             );
-            await animate(
-                leftPartOfHeartRef.current,
-                {
-                    rotate: "-40deg",
-                    x: "-50%",
-                    y: "15%",
-                },
-                { duration: 1 }
-            );
-            await animate(
+            animate(
                 certificateRef.current,
                 {
-                    zIndex: [-1, -1, -1, -1],
+                    zIndex: [-1, -1, -1],
+                    scale: [0, 0.5, 0.5, 0.5],
                     opacity: [0, 0, 0, 1],
                     y: [0, `${y}px`, `${y}px`, `${y}px`],
                     x: [0, `${x}px`, `${x}px`, `${x}px`],
@@ -90,15 +87,36 @@ export const ValentinesActivity = () => {
                     duration: 0.5,
                 }
             );
+            animate(
+                leftPartOfHeartRef.current,
+                {
+                    rotate: "-40deg",
+                    x: "-50%",
+                    y: "15%",
+                },
+                { duration: 1 }
+            );
 
             await animate(
                 certificateRef.current,
                 {
-                    y: yStepsArray,
-                    x: xStepsArray,
+                    zIndex: [-1, 1],
+                    scale: [0.5, 1],
                 },
                 {
-                    duration: 15,
+                    duration: 0.5,
+                    delay: 0.5,
+                }
+            );
+
+            await animate(
+                certificateRef.current,
+                {
+                    y: path.yArray,
+                    x: path.xArray,
+                },
+                {
+                    duration: 3,
                 }
             );
         }
