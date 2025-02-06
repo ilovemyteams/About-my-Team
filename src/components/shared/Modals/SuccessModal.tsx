@@ -74,8 +74,11 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                         {getTranslation("waitResponse")}
                     </p>
                     <Image
-                        src="/images/logo.svg"
-                        alt="christmas Heart"
+                        // src="/images/logo.svg"
+                        // #remove-valentines
+                        src="/images/valentines/valentines_logo.svg"
+                        // #remove_valentines
+                        alt="Valentines Heart"
                         width={178}
                         height={161}
                         className="block w-[113px] h-[102px] tab:w-[153px] tab:h-[138px] pc:w-[178px] pc:h-[161px] mt-6 tab:mt-8"

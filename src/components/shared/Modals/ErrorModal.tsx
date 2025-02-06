@@ -74,7 +74,9 @@ export const ErrorModal = ({ isShown, closeFn }: ErrorModalProps) => {
                         {getTranslation("tryAgain")}
                     </p>
                     <Image
-                        src="/images/bgImagesNotification/brokenHeart.svg"
+                        // src="/images/bgImagesNotification/brokenHeart.svg"
+                        // #remove-valentines
+                        src={"/images/valentines/valentines_logo_broken.svg"}
                         alt="background"
                         width="0"
                         height="0"
