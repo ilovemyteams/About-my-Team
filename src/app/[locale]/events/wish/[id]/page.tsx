@@ -63,24 +63,28 @@ const WishPage: React.FC<WishPageProps> = ({ params }) => {
             heartPink={displayedWish.pinkHeart}
             gradientPink={displayedWish.pinkBG}
         >
-            <div
-                className="absolute mx-auto top-[17px] tab:top-[4.5%] left-[52%] -translate-x-[52%]
-    min-w-[191px] w-[65%]"
-            >
+            <div className="mx-auto mt-5 w-full">
                 <Image
                     src={displayedWish.image}
                     alt={displayedWish.id}
                     width={288}
                     height={210}
-                    className=" object-cover min-w-[191px] mb-2"
+                    className="mx-auto mb-2"
                 />
-                <p className="w-[185px] tab:w-[258px] pc:w-[338px] desk:w-[439px] text-purple-200 tab:text-2xl tab:leading-6 pc:text-4xl desk:text-5xl desk:leading-10 font-intro text-center mx-auto">
-                    {displayedWish[params.locale as LocaleType].wish}
+                <p className="mx-4 mt-4 w-[285px] text-purple-200 text-base font-segoe">
+                    ... {displayedWish[params.locale as LocaleType].wish}
                 </p>
             </div>
-            <div className=" absolute bottom-[10px] tab:bottom-[4.5%] left-1/2 -translate-x-1/2">
+            <div className="mx-4 flex justify-between mt-1">
+                <Image
+                    src="/images/valen/ilovemyteamLogo.svg"
+                    alt="ilovemyteam logo"
+                    width={47}
+                    height={9.4}
+                />
                 <SharePopover
-                    className="text-greyLight"
+                    hiddenTextForMemberModal
+                    className="text-purple-400 w-6 h-6"
                     trigerShowShareText={false}
                 />
             </div>

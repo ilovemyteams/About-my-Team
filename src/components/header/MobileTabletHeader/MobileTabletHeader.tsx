@@ -41,7 +41,7 @@ export const MobileTabletHeader = () => {
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
 
-                        {!pathname.endsWith("/events") && (
+                        {!pathname.includes("events") && (
                             <Link
                                 href={`/${localeInURL(locale)}events`}
                                 className="w-[70px]"

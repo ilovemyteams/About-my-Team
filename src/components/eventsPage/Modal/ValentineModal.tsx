@@ -69,37 +69,45 @@ export const ValentineModal = ({
             >
                 <div
                     onClick={e => e.stopPropagation()}
-                    className={`p-0 min-w-[281px] w-[90vw] tab:w-[47vw] max-w-[360px] tab:min-w-[360px] tab:max-w-[505px] pc:max-w-[660px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
+                    className={`p-0 w-[320px] pb-6 min-h-[383px] h-auto max-h-[90vh] overflow-y-auto fixed top-1/2 left-1/2 
             -translate-x-1/2 -translate-y-1/2 z-[21] ${gradientPink ? "bg-pinkGradient" : "bg-headerGradientLight"} scroll`}
                 >
                     <div className="h-auto relative ">
                         <button
                             onClick={handleClose}
                             type="button"
-                            className="flex mb-2 ml-auto mr-[6%] tab:mr-[8%] tab:mb-3 w-12 h-12 justify-center items-center icon-hover-rounded-purple relative"
+                            className="flex ml-auto text-greyLight w-10 h-10 justify-center items-center icon-hover-rounded-purple relative"
                         >
-                            <IconCloseX className="stroke-[3px] size-6" />
+                            <IconCloseX className="stroke-[3px] size-4" />
                         </button>
-                        <div>
-                            <p>{getTranslation("secondSceneWishTitle")}</p>
-                            <p>{text}</p>
+                        <div className="text-black absolute top-8 left-4 w-[288px] flex justify-between items-end">
+                            <p className="text-base font-segoe font-bold ">
+                                {getTranslation("secondSceneWishTitle")}
+                            </p>
+                            <p className="font-caviar text-xxs font-bold ">
+                                *{text}
+                            </p>
                         </div>
-                        <div className=" relative">
-                            {heartPink ? (
-                                <Image
-                                    src="/images/valen/metalicHeart.png"
-                                    alt="heart"
-                                    width={113}
-                                    height={175}
-                                />
-                            ) : (
-                                <Image
-                                    src="/images/valen/logoHeart.png"
-                                    alt="heart"
-                                    width={110}
-                                    height={141}
-                                />
-                            )}
+                        <div className=" relative ">
+                            <div
+                                className={`absolute right-0 ${heartPink ? "top-[108px]" : "top-[108px]"}  z-[1]`}
+                            >
+                                {heartPink ? (
+                                    <Image
+                                        src="/images/valen/metalicHeart.png"
+                                        alt="heart"
+                                        width={113}
+                                        height={175}
+                                    />
+                                ) : (
+                                    <Image
+                                        src="/images/valen/logoHeart.png"
+                                        alt="heart"
+                                        width={112}
+                                        height={122}
+                                    />
+                                )}
+                            </div>
                             {children}
                         </div>
                     </div>
