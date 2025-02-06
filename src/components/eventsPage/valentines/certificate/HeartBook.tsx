@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function HeartBook() {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,15 +26,14 @@ export default function HeartBook() {
     return (
         <div className="flex items-center justify-center h-screen bg-pink-100">
             <div className="relative w-64 h-64 tab:w-[430px] tab:h-[350px]">
-                //Це буде клік на сертифікат
+                {/* Це буде клік на сертифікат */}
                 <button
                     onClick={getSertificate}
                     className="absolute top-0 left-0 p-2 bg-pink-500 text-white z-20"
                 >
                     {isOpen ? "Є" : "Отримати сертифікат"}
                 </button>
-                //Це сам компонент. Те що вище не треба. Знаю ти здогадаєшся,
-                але так швидше
+                {/* Це сам компонент. Те що вище не треба. Знаю ти здогадаєшся, але так швидше */}
                 <div className="relative w-full h-full mt-12">
                     <div className=" absolute w-[50%] h-full right-[50%] origin-left z-[1]">
                         <div className="">
@@ -121,7 +120,7 @@ export default function HeartBook() {
                         </div>
                     </motion.div>
                 </div>
-                //Далі зайве
+                {/* Далі зайве */}
             </div>
         </div>
     );
