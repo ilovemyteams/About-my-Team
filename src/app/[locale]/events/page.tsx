@@ -1,5 +1,5 @@
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
-import { SecondScene } from "@/src/components/eventsPage/SecondScene.tsx/SecondScene";
+import { SecondScene } from "@/src/components/eventsPage/SecondScene/SecondScene";
 import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { Certificate } from "@/src/components/eventsPage/valentines/certificate/Certificate";
 import { Hero } from "@/src/components/eventsPage/valentines/hero/Hero";

@@ -16,6 +16,7 @@ export type WishProp = {
 export const wishesData: WishProp[] = [
     {
         id: "about-the-gym",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738679475/valentine/mtxori8edn9bdq8pfu4t.jpg",
         ua: {
             title: "Про спортзал",
@@ -32,6 +33,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-coffee",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738699728/valentine/sny7jevrwzsnbirvaags.jpg",
         ua: {
             title: "Про каву",
@@ -48,6 +50,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-child",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/x8riztokddcgk0l4o68m.jpg",
         ua: {
             title: "Про дитину",
@@ -64,6 +67,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-mother",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/jdmw9rie1ykjie508lbp.jpg",
         ua: {
             title: "Про матір",
@@ -80,6 +84,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-father",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790627/valentine/e32aypqa5mdv6edrf06q.jpg",
         ua: {
             title: "Про батька",
@@ -96,6 +101,8 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-vacation",
+        pinkHeart: true,
+        pinkBG: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/lpxquibyumpf0ql8llkc.jpg",
         ua: {
             title: "Про відпустку",
@@ -112,6 +119,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-an-unfinished-book",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/lpz4nrgskoaq7n9ev5yo.jpg",
         ua: {
             title: "Про незакінчену книгу",
@@ -127,7 +135,9 @@ export const wishesData: WishProp[] = [
         },
     },
     {
-        id: "about a cat",
+        id: "about-a-cat",
+        pinkHeart: true,
+        pinkBG: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/qo25tlmu4bjwgnnot5lz.jpg",
         ua: {
             title: "Про кота",
@@ -160,6 +170,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-the-project-team",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/jggqhcsd6qlfdwrnf6vs.jpg",
         ua: {
             title: "Про команду в проєкті",
@@ -176,6 +187,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-developer",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/n489vwzuinsvqmvpds2z.jpg",
         ua: {
             title: "Про розробника",
@@ -192,6 +204,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-client-meeting",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/eb0f5kqjotkgkbwgslxf.jpg",
         ua: {
             title: "Про зустріч з клієнтом",
@@ -224,6 +237,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-new-project",
+        pinkBG: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/b6lglwykgop73jcp1ztc.jpg",
         ua: {
             title: "Про новий проєкт",
@@ -240,6 +254,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-morning-coffee",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/w6pgj36gbqxxctcqkiiu.jpg",
         ua: {
             title: "Про ранкову каву",
@@ -256,6 +271,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-a-release",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/ajzxsnylg5yv9blxauuy.jpg",
         ua: {
             title: "Про реліз",
@@ -272,6 +288,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-discounts",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790916/valentine/awpnkypb1eh4qkbdgmyj.jpg",
         ua: {
             title: "Про знижки",
@@ -288,6 +305,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-motivation",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790430/valentine/sjbzaiqvqv0bdhqw53ta.jpg",
         ua: {
             title: "Про мотивацію",
@@ -304,6 +322,8 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-code-review",
+        pinkBG: true,
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/mmjb5dyqawotk3wnrnpl.jpg",
         ua: {
             title: "Про код рев’ю",
@@ -336,6 +356,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-vacation-2",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790431/valentine/xmbxikznijjxx5y3cm72.jpg",
         ua: {
             title: "Про відпустку",
@@ -352,6 +373,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-designers",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790429/valentine/sj9mgyjzjecurp7cevuh.jpg",
         ua: {
             title: "Про дизайнерів",
@@ -368,6 +390,7 @@ export const wishesData: WishProp[] = [
     },
     {
         id: "about-dog",
+        pinkHeart: true,
         image: "https://res.cloudinary.com/dxvtacrde/image/upload/v1738790428/valentine/t0rsu0ibhfzfiep915zn.jpg",
         ua: {
             title: "Про собаку",
