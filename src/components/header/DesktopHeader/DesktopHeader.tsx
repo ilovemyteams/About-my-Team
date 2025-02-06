@@ -2,8 +2,11 @@
 
 import { useEffect, useState } from "react";
 
+import { Link } from "@/src/navigation";
+
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -40,6 +43,9 @@ export const DesktopHeader = () => {
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
                     </div>
+                    <Link href="/events" className="block">
+                        <FlyingEnvelope className="w-[82px]" />
+                    </Link>
 
                     <SocialLinksList />
                 </div>

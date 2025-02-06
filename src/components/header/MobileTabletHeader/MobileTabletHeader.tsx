@@ -2,8 +2,11 @@
 
 import { useEffect, useState } from "react";
 
+import { Link } from "@/src/navigation";
+
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -32,6 +35,10 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+
+                        <Link href="/events" className="block">
+                            <FlyingEnvelope className="w-[75px] relative z-[100000]" />
+                        </Link>
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}

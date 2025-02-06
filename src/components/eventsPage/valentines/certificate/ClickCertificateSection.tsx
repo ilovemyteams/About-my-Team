@@ -3,7 +3,6 @@ import React from "react";
 
 import { PageSection } from "../../../shared/PageSection";
 import { CornerIcon } from "../icons/CornerIcon";
-import { Certificate } from "./Certificate";
 
 export const ClickCertificateSection = () => {
     const getTranslation = useTranslations("Valentines");
@@ -44,7 +43,6 @@ export const ClickCertificateSection = () => {
                     </p>
                 </div>
             </div>
-            <Certificate />
         </PageSection>
     );
 };

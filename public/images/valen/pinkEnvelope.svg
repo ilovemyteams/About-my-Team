@@ -1,17 +1,10 @@
-"use client";
-
-import { IconProps } from "@/types/iconProps.interface";
-
-export const PinkEnvelopeIcon = ({ className }: IconProps) => {
-    return (
-        <svg
+<svg
             width="151"
             height="150"
             viewBox="0 0 150 150"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            className={className}
-            aria-label="envelope icon"
+          
         >
             <defs>
                 <linearGradient
@@ -21,9 +14,9 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="0.48564"
                     id="paint0_linear_16502_31590"
                 >
-                    <stop stopColor="#A14CE4" />
-                    <stop stopColor="#D9AAFE" offset="0.56" />
-                    <stop stopColor="#E1A8FF" offset="1" />
+                    <stop stop-color="#A14CE4" />
+                    <stop stop-color="#D9AAFE" offset="0.56" />
+                    <stop stop-color="#E1A8FF" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="0.43322"
@@ -32,8 +25,8 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="-0.00953"
                     id="paint1_linear_16502_31590"
                 >
-                    <stop stopColor="white" offset="0.47" />
-                    <stop stopColor="#A14CE4" offset="1" />
+                    <stop stop-color="white" offset="0.47" />
+                    <stop stop-color="#A14CE4" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="0.01187"
@@ -42,10 +35,10 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="1.12185"
                     id="paint2_linear_16502_31590"
                 >
-                    <stop stopColor="#B8173C" />
-                    <stop stopColor="#C02245" offset="0.32" />
-                    <stop stopColor="#D63F60" offset="0.88" />
-                    <stop stopColor="#DC4767" offset="1" />
+                    <stop stop-color="#B8173C" />
+                    <stop stop-color="#C02245" offset="0.32" />
+                    <stop stop-color="#D63F60" offset="0.88" />
+                    <stop stop-color="#DC4767" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="0.48736"
@@ -54,8 +47,8 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="0.0067"
                     id="paint3_linear_16502_31590"
                 >
-                    <stop stopColor="#B00E34" />
-                    <stop stopColor="#D43A59" offset="1" />
+                    <stop stop-color="#B00E34" />
+                    <stop stop-color="#D43A59" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="1.00437"
@@ -64,9 +57,9 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="0.49332"
                     id="paint4_linear_16502_31590"
                 >
-                    <stop stopColor="#AF68E7" />
-                    <stop stopColor="#C891F2" offset="0.35" />
-                    <stop stopColor="#EFDAFF" offset="1" />
+                    <stop stop-color="#AF68E7" />
+                    <stop stop-color="#C891F2" offset="0.35" />
+                    <stop stop-color="#EFDAFF" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="0.99658"
@@ -75,9 +68,9 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="0.48252"
                     id="paint5_linear_16502_31590"
                 >
-                    <stop stopColor="#E1C5F7" />
-                    <stop stopColor="#C797EC" offset="0.65" />
-                    <stop stopColor="#A14CE4" offset="1" />
+                    <stop stop-color="#E1C5F7" />
+                    <stop stop-color="#C797EC" offset="0.65" />
+                    <stop stop-color="#A14CE4" offset="1" />
                 </linearGradient>
                 <linearGradient
                     y2="0.41511"
@@ -86,9 +79,9 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                     x1="-0.00322"
                     id="paint6_linear_16502_31590"
                 >
-                    <stop stopColor="#A14CE4" />
-                    <stop stopColor="#BF95E0" offset="0.35" />
-                    <stop stopColor="#D2B2EB" offset="1" />
+                    <stop stop-color="#A14CE4" />
+                    <stop stop-color="#BF95E0" offset="0.35" />
+                    <stop stop-color="#D2B2EB" offset="1" />
                 </linearGradient>
             </defs>
             <g>
@@ -140,5 +133,3 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
                 />
             </g>
         </svg>
-    );
-};
