@@ -30,7 +30,8 @@
         "**/**/*.ts",
         "**/**/*.tsx",
         ".next/types/**/*.ts",
-        "next-sitemap.config.js"
+        "next-sitemap.config.js",
+        "src/components/eventsPage/SecondScene"
     ],
     "exclude": ["node_modules"]
 }

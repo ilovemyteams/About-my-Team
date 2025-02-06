@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Link } from "@/src/navigation";
@@ -14,6 +15,8 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -42,10 +45,16 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
+                        {!pathname.includes("events") && (
+                            <Link
+                                href="/events"
+                                className="w-16 desk:w-20"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
+                                <FlyingEnvelope />
+                            </Link>
+                        )}
                     </div>
-                    <Link href="/events" className="block">
-                        <FlyingEnvelope className="w-[82px]" />
-                    </Link>
 
                     <SocialLinksList />
                 </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Link } from "@/src/navigation";
@@ -13,6 +14,8 @@ import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
 
 export const MobileTabletHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -36,9 +39,15 @@ export const MobileTabletHeader = () => {
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
 
-                        <Link href="/events" className="block">
-                            <FlyingEnvelope className="w-[75px] relative z-[100000]" />
-                        </Link>
+                        {!pathname.includes("events") && (
+                            <Link
+                                href="/events"
+                                className="w-[70px]"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
+                                <FlyingEnvelope />
+                            </Link>
+                        )}
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
