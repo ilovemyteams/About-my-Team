@@ -2,7 +2,7 @@
 import { animate } from "framer-motion";
 import { useRef } from "react";
 
-import { SecondScene } from "../SecondScene.tsx/SecondScene";
+import { SecondScene } from "../SecondScene/SecondScene";
 import { Certificate } from "./certificate/Certificate";
 import { ClickCertificateSection } from "./certificate/ClickCertificateSection";
 import { Hero } from "./hero/Hero";
