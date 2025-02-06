@@ -19,13 +19,13 @@ export const SecondScene = () => {
                 tab:w-[718px] tab:h-[920px] pc:w-[1026px] pc:h-[1364px] desk:w-[1336px] desk:h-[1702px] mx-auto"
             >
                 <p
-                    className="ml-auto mr-0 tab:mr-[86px] pc:mr-[120px] desk:mr-[210px] font-segoe text-xs tab:text-base pc:text-xl desk:text-2xl dark:text-grey text-purple-200 
+                    className="ml-auto mr-0 tab:mr-[86px] pc:mr-[120px] desk:mr-[210px] font-segoe text-xs tab:text-base pc:text-xl desk:text-2xl dark:text-grey text-greyLight 
                 mt-6 tab:mt-0"
                 >
                     {getTranslation("secondSceneHint")}
                 </p>
                 <IconArrowClickBalloon
-                    className="absolute dark:text-grey text-purple-200 top-10 left-[199px] 
+                    className="absolute dark:text-grey text-greyLight top-10 left-[199px] 
                 w-[47px] tab:w-[51px] pc:w-[74px] desk:w-[92px] h-auto tab:top-5 tab:left-[484px] pc:top-7 pc:left-[685px] desk:left-[890px]"
                 />
 
