@@ -48,7 +48,7 @@ export const DesktopHeader = () => {
                         {!pathname.includes("events") && (
                             <Link
                                 href="/events"
-                                className="w-16 desk:w-20"
+                                className="w-16 desk:w-20 mx-auto"
                                 onClick={() => setIsHeaderMenuOpened(false)}
                             >
                                 <FlyingEnvelope />
