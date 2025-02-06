@@ -48,7 +48,7 @@ export const Hero = ({ heartRef, leftPartRef, onClickBtn }: HeroProps) => {
                             <HeartLeftPartIcon className="w-full h-auto" />
                         </div>
 
-                        <HeartRightPartIcon className="w-[138%] h-auto translate-x-[-30.8%] translate-y-[-1%] rotate-[-0.5deg] relative z-[10]" />
+                        <HeartRightPartIcon className="w-[138%] h-auto translate-x-[-30.8%] translate-y-[-1%] rotate-[-0.5deg]" />
                     </div>
                 </div>
                 <div className="max-w-[444px] grow-0 mx-auto text-purple-200 dark:text-white-200 text-center pc:pt-[84px] pc:mx-0 desk:max-w-[520px] desk:pt-[120px]">
