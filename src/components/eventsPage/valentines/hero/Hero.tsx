@@ -42,7 +42,10 @@ export const Hero = () => {
                 <HeroLogo />
             </div>
             <div className="grow flex flex-col pc:flex-row pc:gap-[110px]">
-                <div className="grow w-[50%] mx-auto flex items-center tab:mb-[50px] tab:justify-end tab:max-w-[362px] pc:max-w-[524px] pc:pl-[60px] desk:max-w-[530px]">
+                <div
+                    className="grow w-[50%] mx-auto flex items-center tab:mb-[50px] tab:justify-end 
+                tab:max-w-[362px] pc:max-w-[524px] pc:pl-[90px] desk:pl-[80px] desk:max-w-[530px]"
+                >
                     <div
                         className="grid grid-cols-2 justify-center"
                         ref={heartRef}
