@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -23,6 +24,9 @@ export const Balloon = ({ className, id, heartPNG }: BalloonButtonProps) => {
 
     const handleClick = () => {
         setPreviousValentineURL(`/events#balloons`);
+        sendGTMEvent({
+            event: "balloon_click",
+        });
     };
 
     return (
