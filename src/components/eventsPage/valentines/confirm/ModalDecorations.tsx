@@ -8,7 +8,7 @@ import { StarIcon } from "../icons/StarIcon";
 
 export const ModalDecorations = () => {
     return (
-        <div className="absolute top-0 left-0 bottom-0 right-0">
+        <div className="absolute top-0 left-0 bottom-0 right-0 z-[-1]">
             <SmallCloudIcon className="absolute top-[30%] right-[-10px] pc:right-[-25px] desk:right-[-40px] w-[49px] tab:w-[88px] pc:w-[95px] desk:w-[146px]" />
             <BigCloudIcon className="absolute top-[2%] left-[-60px] tab:left-[-110px] w-[100px] tab:w-[220px] desk:w-[250px]" />
             <CupidIcon
