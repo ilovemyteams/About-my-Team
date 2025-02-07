@@ -1,9 +1,13 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+
+import { Link } from "@/src/navigation";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { FlyingEnvelope } from "../../eventsPage/valentines/shared/FlyingEnvelope";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -11,6 +15,8 @@ import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -39,6 +45,15 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
+                        {!pathname.includes("events") && (
+                            <Link
+                                href="/events"
+                                className="w-16 desk:w-20 mx-auto"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
+                                <FlyingEnvelope />
+                            </Link>
+                        )}
                     </div>
 
                     <SocialLinksList />

@@ -108,6 +108,12 @@ const config: Config = {
                     lineHeight: "30px",
                 },
             ],
+            "2xl24": [
+                "24px",
+                {
+                    lineHeight: "24px",
+                },
+            ],
             "2xl34": [
                 "24px",
                 {
@@ -152,6 +158,12 @@ const config: Config = {
                 {
                     lineHeight: "52px",
                     fontWeight: "700",
+                },
+            ],
+            "5xl40": [
+                "40px",
+                {
+                    lineHeight: "40px",
                 },
             ],
             "6xl": [
@@ -214,6 +226,7 @@ const config: Config = {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
                 intro: ["var(--font-intro)"],
+                segoe: ["var(--font-segoe)"],
             },
             colors: {
                 purple: {
@@ -549,6 +562,7 @@ const config: Config = {
             headerGradientLight:
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
+            pinkGradient: "linear-gradient(to right, #FFF1F1 0%, #FFBAC2 100%)",
             memberMenuGradientDark:
                 "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
             memberMenuGradientLight:

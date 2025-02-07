@@ -5,7 +5,7 @@
     },
 
     "Hero": {
-        "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
+        "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą <br></br> realizacją.",
         "portfolioLink": "Realizacje",
         "project": "Projekt"
     },
@@ -331,5 +331,19 @@
         "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
         "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
+    },
+    "Valentines": {
+        "secondSceneTitle": "Wybierz swoją zabawną walentynkę",
+        "secondSceneHint": "Kliknij balonik",
+        "secondSceneWishTitle": "Miłość to...",
+        "heroText": "Kochamy kreatywność i przynoszenie dobrego nastroju — do przodu z życzeniami na Dzień Świętego Walentego, prezentami na nasze usługi.",
+        "heroBtn": "Uzyskaj rabat",
+        "certificateHere": "сertyfikat tutaj",
+        "clickHere": "<purple>Kliknij</purple> na kopertę, \naby <purple>otrzymać \ncertyfikat na</purple> <red>50$</red> \nna nasze usługi.",
+        "firstFootnote": "*Certyfikat nie może być monetyzowany",
+        "secondFootnote": "*Certyfikat można wykorzystać tylko raz",
+        "confirmationGreeting": "Gratulacje, otrzymałeś certyfikat na nasze usługi!",
+        "confirmationFootnote": "*Oferta jest jednorazowa i ważna do 01.04.2025",
+        "confirmationText": "Aby otrzymać certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z tobą"
     }
 }
