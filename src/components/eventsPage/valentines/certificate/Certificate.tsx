@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { RefObject } from "react";
 
@@ -16,6 +17,13 @@ export const Certificate = ({
     disabled,
 }: CertificateProps) => {
     const getTranslation = useTranslations("Valentines");
+
+    const onClikWithTag = () => {
+        onClickCertificate();
+        sendGTMEvent({
+            event: "start_form_certificate",
+        });
+    };
     return (
         <div className="w-full h-auto relative">
             <div
@@ -28,7 +36,7 @@ export const Certificate = ({
                 <ArrowIcon className="absolute right-[15%] top-[20px] w-[30px] h-auto tab:w-[35px] pc:top-[25px] pc:w-[45px]" />
             </div>
             <div className="w-[85%] mx-auto pc:w-full">
-                <button onClick={onClickCertificate} disabled={disabled}>
+                <button onClick={onClikWithTag} disabled={disabled}>
                     <FlyingEnvelope
                         className="rotate-[15deg] transform-x-[5%] tab:transform-x-0 cursor-pointer 
             max-w-[300px] tab:max-w-[350px] pc:max-w-[500px] pb-[3%]"

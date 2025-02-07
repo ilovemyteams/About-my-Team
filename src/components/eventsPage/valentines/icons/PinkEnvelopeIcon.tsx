@@ -1,8 +1,14 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
+
 import { IconProps } from "@/types/iconProps.interface";
 
 export const PinkEnvelopeIcon = ({ className }: IconProps) => {
+    const pathname =
+        typeof window !== "undefined" ? window.location.pathname : "";
+    const urlShare =
+        typeof window !== "undefined" ? window.location.origin + pathname : "";
     return (
         <svg
             width="151"
@@ -12,6 +18,12 @@ export const PinkEnvelopeIcon = ({ className }: IconProps) => {
             fill="none"
             className={className}
             aria-label="envelope icon"
+            onClick={() =>
+                sendGTMEvent({
+                    event: "violet_envelope",
+                    page_location: urlShare,
+                })
+            }
         >
             <defs>
                 <linearGradient

@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { RefObject, useState } from "react";
 
@@ -24,6 +25,10 @@ export const Hero = ({ heartRef, leftPartRef, onClickBtn }: HeroProps) => {
     const onClick = async () => {
         onClickBtn();
         setIsDisable(true);
+
+        sendGTMEvent({
+            event: "broken_heart",
+        });
     };
     return (
         <PageSection
