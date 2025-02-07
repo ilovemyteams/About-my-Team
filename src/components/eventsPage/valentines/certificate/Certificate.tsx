@@ -6,9 +6,15 @@ import { FlyingEnvelope } from "../shared/FlyingEnvelope";
 
 interface CertificateProps {
     captionRef: RefObject<HTMLDivElement>;
+    onClickCertificate: () => void;
+    disabled: boolean;
 }
 
-export const Certificate = ({ captionRef }: CertificateProps) => {
+export const Certificate = ({
+    captionRef,
+    onClickCertificate,
+    disabled,
+}: CertificateProps) => {
     const getTranslation = useTranslations("Valentines");
     return (
         <div className="w-full h-auto relative">
@@ -22,11 +28,13 @@ export const Certificate = ({ captionRef }: CertificateProps) => {
                 <ArrowIcon className="absolute right-[15%] top-[20px] w-[30px] h-auto tab:w-[35px] pc:top-[25px] pc:w-[45px]" />
             </div>
             <div className="w-[85%] mx-auto pc:w-full">
-                <FlyingEnvelope
-                    className="rotate-[15deg] transform-x-[5%] tab:transform-x-0 cursor-pointer 
+                <button onClick={onClickCertificate} disabled={disabled}>
+                    <FlyingEnvelope
+                        className="rotate-[15deg] transform-x-[5%] tab:transform-x-0 cursor-pointer 
             max-w-[300px] tab:max-w-[350px] pc:max-w-[500px] pb-[3%]"
-                    envelope="pink"
-                />
+                        envelope="pink"
+                    />
+                </button>
             </div>
         </div>
     );
