@@ -1,6 +1,6 @@
 "use client";
 import { animate } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
@@ -8,6 +8,7 @@ import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SecondScene } from "../SecondScene/SecondScene";
 import { Certificate } from "./certificate/Certificate";
 import { ClickCertificateSection } from "./certificate/ClickCertificateSection";
+import { ConfirmModal } from "./certificate/ConfirmModal";
 import { Hero } from "./hero/Hero";
 
 type ParabolaPath = {
@@ -46,8 +47,10 @@ export const ValentinesActivity = () => {
     const clickEnvelopeSectionRef = useRef<HTMLDivElement>(null);
     const screen = useScreenSize();
     const { mobileName, tabletName } = SCREEN_NAMES;
+    const [isOpen, setIsOpen] = useState(false);
+    const [disabledCertificate, setDisabledCertificate] = useState(true);
 
-    const onClickBtn = async () => {
+    const onClickGetDiscount = async () => {
         if (
             heartRef.current &&
             leftPartOfHeartRef.current &&
@@ -170,15 +173,22 @@ export const ValentinesActivity = () => {
                     duration: 1,
                 }
             );
+            setDisabledCertificate(false);
         }
     };
+
+    const onClickConfirmDiscount = () => {
+        setIsOpen(true);
+    };
+
+    const onCloseModal = () => setIsOpen(false);
 
     return (
         <div className="relative overflow-clip" ref={containerRef}>
             <Hero
                 heartRef={heartRef}
                 leftPartRef={leftPartOfHeartRef}
-                onClickBtn={onClickBtn}
+                onClickBtn={onClickGetDiscount}
             />
 
             <SecondScene />
@@ -192,8 +202,13 @@ export const ValentinesActivity = () => {
                     opacity-0 bottom-[160px] left-[40%] tab:left-[70%] tab:bottom-[140px] pc:bottom-[170px]`}
                 ref={certificateRef}
             >
-                <Certificate captionRef={envelopeCaptionRef} />
+                <Certificate
+                    captionRef={envelopeCaptionRef}
+                    onClickCertificate={onClickConfirmDiscount}
+                    disabled={disabledCertificate}
+                />
             </div>
+            <ConfirmModal isOpen={isOpen} onCloseModal={onCloseModal} />
         </div>
     );
 };
