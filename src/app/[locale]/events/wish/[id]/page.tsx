@@ -44,7 +44,7 @@ export async function generateMetadata({
         openGraph: {
             description: `${wishMessage}`,
             title: `${getTranslation("secondSceneWishTitle")}`,
-            images: [imageUrl],
+            images: imageUrl,
         },
     };
 }
