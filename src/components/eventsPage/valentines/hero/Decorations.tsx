@@ -4,7 +4,7 @@ import { SmallCloudIcon } from "../icons/SmallCloudIcon";
 import { StarIcon } from "../icons/StarIcon";
 
 export const Decorations = () => {
-    const starWidth = "w-[7px] h-auto tab:w-[13px] pc:w-[9px] desk-[15px]";
+    const starWidth = "w-[7px] h-auto tab:w-[13px] pc:w-[9px] desk:w-[15px]";
     return (
         <>
             <div

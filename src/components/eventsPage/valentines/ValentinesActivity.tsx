@@ -8,7 +8,7 @@ import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { SecondScene } from "../SecondScene/SecondScene";
 import { Certificate } from "./certificate/Certificate";
 import { ClickCertificateSection } from "./certificate/ClickCertificateSection";
-import { ConfirmModal } from "./certificate/ConfirmModal";
+import { Confirm } from "./confirm/Confirm";
 import { Hero } from "./hero/Hero";
 
 type ParabolaPath = {
@@ -208,7 +208,11 @@ export const ValentinesActivity = () => {
                     disabled={disabledCertificate}
                 />
             </div>
-            <ConfirmModal isOpen={isOpen} onCloseModal={onCloseModal} />
+            <Confirm
+                isOpen={isOpen}
+                onCloseModal={onCloseModal}
+                setDisabledCertificate={setDisabledCertificate}
+            />
         </div>
     );
 };
