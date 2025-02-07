@@ -123,7 +123,7 @@ export const ModalBase = ({
                                         disabled={isCloseDisabled}
                                         aria-label="close button"
                                         className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
-                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple"
+                         dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[2]"
                                     >
                                         <IconCloseX className="stroke-2 size-6" />
                                     </button>
