@@ -10,11 +10,13 @@ export const SecondScene = () => {
 
     return (
         <PageSection className="pt-3 pb-11 tab:pb-[100px] desk:pb-[140px]">
-            <h2 className="font-caviar text-purple-200 font-bold dark:text-grey text-2xl tab:text-4xl pc:text-5xl desk:text-6xlt">
+            <h2
+                id="balloons"
+                className="font-caviar text-purple-200 font-bold dark:text-grey text-2xl tab:text-4xl pc:text-5xl desk:text-6xlt"
+            >
                 {getTranslation("secondSceneTitle")}
             </h2>
             <div
-                id="balloons"
                 className="relative flex mt-4 tab:mt-6 pc:mt-[64px] h-[397px] w-[288px] 
                 tab:w-[718px] tab:h-[920px] pc:w-[1026px] pc:h-[1364px] desk:w-[1336px] desk:h-[1702px] mx-auto"
             >
