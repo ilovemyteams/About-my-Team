@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -25,6 +26,15 @@ export const MobileTabletHeader = () => {
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
+    const urlShare =
+        typeof window !== "undefined" ? window.location.origin + pathname : "";
+    const handleClick = () => {
+        setIsHeaderMenuOpened(false),
+            sendGTMEvent({
+                event: "violet_envelope",
+                page_location: urlShare,
+            });
+    };
     return (
         <div
             className={`pc:hidden absolute top-0 left-0 w-[100vw] h-[80px] dark:bg-none dark:bg-purple-400 bg-headerGradientLight 
@@ -43,7 +53,7 @@ export const MobileTabletHeader = () => {
                             <Link
                                 href="/events"
                                 className="w-[70px]"
-                                onClick={() => setIsHeaderMenuOpened(false)}
+                                onClick={handleClick}
                             >
                                 <FlyingEnvelope />
                             </Link>
