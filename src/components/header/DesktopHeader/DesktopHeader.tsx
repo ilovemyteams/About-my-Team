@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -26,6 +27,16 @@ export const DesktopHeader = () => {
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
+    const urlShare =
+        typeof window !== "undefined" ? window.location.origin + pathname : "";
+
+    const handleClick = () => {
+        setIsHeaderMenuOpened(false),
+            sendGTMEvent({
+                event: "violet_envelope",
+                page_location: urlShare,
+            });
+    };
 
     return (
         <div
@@ -49,7 +60,7 @@ export const DesktopHeader = () => {
                             <Link
                                 href="/events"
                                 className="w-16 desk:w-20 mx-auto"
-                                onClick={() => setIsHeaderMenuOpened(false)}
+                                onClick={handleClick}
                             >
                                 <FlyingEnvelope />
                             </Link>

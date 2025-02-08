@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -15,8 +16,17 @@ export const FlyingEnvelope = ({
         envelope === "pink"
             ? "/images/valen/pinkEnvelope.svg"
             : "/images/valen/whiteEnvelope.svg";
+
+    const handleClick = () => {
+        if (envelope !== "pink") {
+            sendGTMEvent({
+                event: "white_envelope",
+            });
+        }
+    };
     return (
         <div
+            onClick={handleClick}
             className={`grid grid-cols-[35%_35%_30%] max-h-[150px] aspect-[3] ${className}`}
         >
             <motion.div
