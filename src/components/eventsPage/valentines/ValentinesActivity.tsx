@@ -2,9 +2,6 @@
 import { animate } from "framer-motion";
 import { useRef, useState } from "react";
 
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
-
 import { SecondScene } from "../SecondScene/SecondScene";
 import { Certificate } from "./certificate/Certificate";
 import { ClickCertificateSection } from "./certificate/ClickCertificateSection";
@@ -42,11 +39,10 @@ export const ValentinesActivity = () => {
     const heartRef = useRef<HTMLDivElement>(null);
     const leftPartOfHeartRef = useRef<HTMLDivElement>(null);
     const certificateRef = useRef<HTMLDivElement>(null);
-    const containerRef = useRef<HTMLDivElement>(null);
+
     const envelopeCaptionRef = useRef<HTMLDivElement>(null);
     const clickEnvelopeSectionRef = useRef<HTMLDivElement>(null);
-    const screen = useScreenSize();
-    const { mobileName, tabletName } = SCREEN_NAMES;
+
     const [isOpen, setIsOpen] = useState(false);
     const [disabledCertificate, setDisabledCertificate] = useState(true);
 
@@ -55,7 +51,6 @@ export const ValentinesActivity = () => {
             heartRef.current &&
             leftPartOfHeartRef.current &&
             certificateRef.current &&
-            containerRef.current &&
             envelopeCaptionRef.current &&
             clickEnvelopeSectionRef.current
         ) {
@@ -76,24 +71,20 @@ export const ValentinesActivity = () => {
             const heartLeftPosition = heartRef.current.offsetLeft;
             const heartTopPosition = heartRef.current.offsetTop;
 
-            const containerHeight = containerRef.current.offsetHeight;
+            const certificatePositionLeft = certificateRef.current.offsetLeft;
+            const certificateWidth = certificateRef.current.offsetWidth;
+            const certificateTopPosition = certificateRef.current.offsetTop;
+            const certificateHeight = certificateRef.current.offsetHeight;
 
-            const containerWidth = clickEnvelopeSectionRef.current.offsetWidth;
-
-            const startYPosition =
-                screen === mobileName ? 160 : screen === tabletName ? 140 : 170;
-
-            const startXPosition =
-                screen === mobileName
-                    ? containerWidth * 0.4
-                    : containerWidth * 0.7;
-
-            const x = heartLeftPosition - heartWidth / 8 - startXPosition;
+            const x =
+                heartLeftPosition -
+                certificatePositionLeft -
+                certificateWidth * 0.3;
             const y =
-                startYPosition +
                 heartTopPosition +
-                heartHeight / 1.5 -
-                containerHeight;
+                heartHeight * 0.5 -
+                certificateHeight * 0.3 -
+                certificateTopPosition;
 
             const totalSteps = 60;
 
@@ -184,6 +175,7 @@ export const ValentinesActivity = () => {
     const onCloseModal = () => setIsOpen(false);
 
     return (
+
         <div className="relative overflow-clip mt-[-148px]" ref={containerRef}>
             <Hero
                 heartRef={heartRef}
