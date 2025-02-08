@@ -4,29 +4,18 @@ import { sendDataToGoogleSheet } from "@/src/utils/sendDataToGoogleSheet";
 
 const SPREADSHEET_ID = process.env.NEXT_PUBLIC_LANDING_SPREADSHEET_ID || "";
 
-const RANGE = "Аркуш1!A2:G2";
+const RANGE = "Аркуш1!A2:C2";
 
 export async function POST(request: NextRequest) {
-    const {
-        name,
-        email,
-        telegram,
-        socialMediaLink,
-        productOrService,
-        whyLanding,
-        mostImportant,
-    } = await request.json();
+    const { name, email } = await request.json();
+    const date = new Date().toLocaleString();
 
     if (request.method === "POST") {
         try {
             await sendDataToGoogleSheet(SPREADSHEET_ID, RANGE, [
                 name,
                 email,
-                telegram,
-                socialMediaLink,
-                productOrService,
-                whyLanding,
-                mostImportant,
+                date,
             ]);
             return NextResponse.json({ message: "Data appended successfully" });
         } catch (error) {

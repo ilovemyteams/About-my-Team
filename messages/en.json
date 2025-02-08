@@ -4,7 +4,7 @@
         "descriptionSEO": "We help businesses grow: we create websites and digital products that meet your needs and exceed your expectations."
     },
     "Hero": {
-        "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
+        "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our <br></br> implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project"
     },
@@ -329,5 +329,19 @@
         "seconds": "{seconds, plural, =1 {second} other {seconds}}",
         "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
+    },
+    "Valentines": {
+        "secondSceneTitle": "Choose your fun Valentine’s card",
+        "secondSceneHint": "Tap on the balloons",
+        "secondSceneWishTitle": "Love is...",
+        "heroText": "We love creativity and bringing good vibes — forward with Valentine’s Day wishes, gifts for our services",
+        "heroBtn": "Get a discount",
+        "certificateHere": "certificate here",
+        "clickHere": "<purple>Click</purple> on the envelope \n<purple>to receive \na</purple> <red>$50</red> <purple>certificate</purple> \nfor our services.",
+        "firstFootnote": "*The certificate cannot be monetized",
+        "secondFootnote": "*The certificate can only be used once",
+        "confirmationGreeting": "Congratulations, you’ve received a certificate for our services!",
+        "confirmationFootnote": "*This offer is one-time and valid until 01.04.2025",
+        "confirmationText": "To receive the certificate, leave your details and our manager will contact you"
     }
 }
