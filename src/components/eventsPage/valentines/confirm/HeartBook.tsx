@@ -27,7 +27,7 @@ export default function HeartBook() {
                 {
                     clipPath: "inset(0% 0% 0% 0%)",
                 },
-                { duration: 1, ease: "easeInOut", delay: 1 }
+                { duration: 1, ease: "easeInOut", delay: 0.9 }
             );
             animate(
                 openedPartRef.current,

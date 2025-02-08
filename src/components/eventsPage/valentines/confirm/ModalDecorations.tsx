@@ -2,6 +2,7 @@ import React from "react";
 
 import { BigCloudIcon } from "../icons/BigCloudIcon";
 import { CupidIcon } from "../icons/CupidIcon";
+import { HeartDecor } from "../icons/HeartDecor";
 import { SmallCloudIcon } from "../icons/SmallCloudIcon";
 import { SmallHeart } from "../icons/SmallHeart";
 import { StarIcon } from "../icons/StarIcon";
@@ -19,10 +20,10 @@ export const ModalDecorations = () => {
             <StarIcon className="absolute w-[7px] h-auto tab:w-[13px] desk:w-[15px] top-[39%] right-[10%]" />
             <StarIcon className="absolute w-[9px] h-auto tab:w-[15px] desk:w-[20px] top-[5%] left-[20%]" />
             <StarIcon className="absolute w-[4px] h-auto tab:w-[7px] desk:w-[8px] top-[7%] left-[24%]" />
-            <SmallHeart className="absolute text-[#E63354] top-[23%] left-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px]" />
-            <SmallHeart className="absolute text-[#E63354] top-[18%] right-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px] scale-x-[-1]" />
-            <SmallHeart className="absolute text-[#F98398] bottom-[5%] left-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px]  scale-x-[-1]" />
-            <SmallHeart className="absolute text-[#F98398] bottom-[13%] right-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px]" />
+            <SmallHeart className="absolute text-[#E63354] top-[23%] left-[5%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px] " />
+            <HeartDecor className="absolute text-[#E63354] top-[15%] right-[4%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px]" />
+            <HeartDecor className="absolute text-[#F98398] bottom-[5%] left-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px] " />
+            <SmallHeart className="absolute text-[#F98398] bottom-[25%] pc:bottom-[20%] right-[10%]  w-[7px] h-auto tab:w-[13px] desk:w-[15px] scale-x-[-1]" />
         </div>
     );
 };
