@@ -184,7 +184,7 @@ export const ValentinesActivity = () => {
     const onCloseModal = () => setIsOpen(false);
 
     return (
-        <div className="relative overflow-clip" ref={containerRef}>
+        <div className="relative overflow-clip mt-[-148px]" ref={containerRef}>
             <Hero
                 heartRef={heartRef}
                 leftPartRef={leftPartOfHeartRef}
