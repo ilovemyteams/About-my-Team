@@ -1,12 +1,6 @@
-import { sendGTMEvent } from "@next/third-parties/google";
-
 import { IconProps } from "@/types/iconProps.interface";
 
 export const WhiteEnvelopeIcon = ({ className }: IconProps) => {
-    const pathname =
-        typeof window !== "undefined" ? window.location.pathname : "";
-    const urlShare =
-        typeof window !== "undefined" ? window.location.origin + pathname : "";
     return (
         <svg
             width="46"
@@ -16,12 +10,6 @@ export const WhiteEnvelopeIcon = ({ className }: IconProps) => {
             xmlns="http://www.w3.org/2000/svg"
             className={className}
             aria-label="white envelope with heart icon"
-            onClick={() =>
-                sendGTMEvent({
-                    event: "white_envelope",
-                    page_location: urlShare,
-                })
-            }
         >
             <mask
                 id="mask0_16589_31502"
