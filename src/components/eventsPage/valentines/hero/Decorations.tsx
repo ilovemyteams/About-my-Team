@@ -1,5 +1,4 @@
 import { BigCloudIcon } from "../icons/BigCloudIcon";
-import { CupidIcon } from "../icons/CupidIcon";
 import { SmallCloudIcon } from "../icons/SmallCloudIcon";
 import { StarIcon } from "../icons/StarIcon";
 
@@ -26,16 +25,6 @@ export const Decorations = () => {
                 className="absolute top-[104px] left-[-35px] w-[93px] h-auto 
             tab:top-[209px] tab:left-[-27px] tab:w-[179px] pc:top-[187px] pc:right-[148px] pc:left-[unset] 
             pc:w-[108px] desk:w-[167px] desk:top-[300px] desk:right-[190px] "
-            />
-            <div
-                aria-label="line for cupid"
-                className="absolute top-0 pc:right-[306px] pc:h-[148px] pc:w-[1px]  bg-textHighlight dark:bg-white-100 
-                desk:h-[270px] desk:right-[465px]"
-            ></div>
-            <CupidIcon
-                className="absolute scale-0 left-0 top-[81px] translate-x-[-150%] w-[77px] h-auto tab:w-[135px] 
-                tab:top-[230px] pc:w-[105px] pc:left-[unset] pc:right pc:top-[124px] 
-                pc:right-[253px] pc:translate-x-0 pc:scale-100 desk:w-[164px] desk:top-[200px] desk:right-[380px]"
             />
 
             <StarIcon
