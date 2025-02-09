@@ -40,7 +40,7 @@ export const Hero = ({ heartRef, leftPartRef, onClickBtn }: HeroProps) => {
             <div className="w-full tab:mb-[160px] tab:max-w-[800px] mx-auto pc:w-[59%] pc:ml-0 pc:mb-[109px]">
                 <HeroLogo />
             </div>
-            <div className="grow flex flex-col pc:flex-row pc:gap-[110px]">
+            <div className="grow flex flex-col pc:flex-row pc:gap-[110px] pt-[30px] tab:pt-0">
                 <div
                     className="grow w-[50%] mx-auto flex items-center tab:mb-[50px] tab:justify-end 
                 tab:max-w-[362px] pc:max-w-[524px] pc:pl-[90px] desk:pl-[80px] desk:max-w-[530px]"
