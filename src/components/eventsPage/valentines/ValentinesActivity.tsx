@@ -166,7 +166,7 @@ export const ValentinesActivity = () => {
                     { duration: 1, delay: delay }
                 );
             } else {
-                delay = 0.5;
+                delay = 0.3;
                 const cupidLeftPosition = cupidRef.current.offsetLeft;
                 const cupidWidth = cupidRef.current.offsetWidth;
                 const cupidShift = cupidLeftPosition + cupidWidth * 2;
@@ -193,6 +193,10 @@ export const ValentinesActivity = () => {
                     arrowLeftPosition - heartLeftPosition - heartWidth * 0.1;
                 const arrowShiftY =
                     heartTopPosition - arrowTopPosition - heartHeight * 0.6;
+                const arrowStartXPosition =
+                    arrowLeftPosition - arrowRef.current.offsetWidth * 0.46;
+                const arrowStartYPosition =
+                    arrowLeftPosition + arrowRef.current.offsetHeight * 0.3;
 
                 //Arrow fly animation
                 await animate(
@@ -200,8 +204,16 @@ export const ValentinesActivity = () => {
                     {
                         opacity: [0, 1, 1],
                         scale: [0.2, 0.2, 0.6],
-                        x: [arrowLeftPosition, arrowLeftPosition, arrowShiftX],
-                        y: [arrowTopPosition, arrowTopPosition, arrowShiftY],
+                        x: [
+                            arrowStartXPosition,
+                            arrowStartXPosition,
+                            arrowShiftX,
+                        ],
+                        y: [
+                            arrowStartYPosition,
+                            arrowStartYPosition,
+                            arrowShiftY,
+                        ],
                     },
                     { duration: 1, delay: delay }
                 );
