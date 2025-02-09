@@ -166,19 +166,27 @@ export const ValentinesActivity = () => {
                     { duration: 1, delay: delay }
                 );
             } else {
-                delay = 1;
+                delay = 0.5;
                 const cupidLeftPosition = cupidRef.current.offsetLeft;
                 const cupidWidth = cupidRef.current.offsetWidth;
                 const cupidShift = cupidLeftPosition + cupidWidth * 2;
+                await animate(
+                    cupidRef.current,
+                    {
+                        opacity: [0, 1],
+                        x: [-cupidShift, -cupidShift],
+                    },
+                    { duration: 0.1 }
+                );
                 animate(
                     cupidRef.current,
                     {
-                        rotate: ["-10deg", "-10deg", "-10deg"],
-                        opacity: [0, 1, 1],
-                        scaleX: [-1, -1, -1],
-                        x: [-cupidShift, -cupidShift, 0],
+                        rotate: ["-10deg", "-10deg"],
+                        opacity: [1, 1],
+                        scaleX: [-1, -1],
+                        x: [-cupidShift, 0],
                     },
-                    { duration: 2 }
+                    { duration: 1 }
                 );
 
                 const arrowShiftX =
