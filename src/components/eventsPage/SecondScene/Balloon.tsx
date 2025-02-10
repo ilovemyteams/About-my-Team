@@ -2,25 +2,24 @@
 
 import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
-import { wishesData } from "@/src/mockedData/wishesData";
 import { Link } from "@/src/navigation";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
-import { wishRandomizer } from "@/src/utils/wishRandomizer";
 
 interface BalloonButtonProps {
     id: string;
     className: string;
     heartPNG: string;
+    randomWishId: string;
 }
 
-export const Balloon = ({ className, id, heartPNG }: BalloonButtonProps) => {
+export const Balloon = ({
+    className,
+    id,
+    heartPNG,
+    randomWishId,
+}: BalloonButtonProps) => {
     const { setPreviousValentineURL } = usePreviousURL();
-    const [randomWishId, setRandomWishId] = useState<string | null>(null);
-    useEffect(() => {
-        setRandomWishId(wishRandomizer(wishesData));
-    }, []);
 
     const handleClick = () => {
         setPreviousValentineURL(`/events#balloons`);
