@@ -6,6 +6,7 @@ import { PageSection } from "../shared/PageSection";
 import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
 import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
 import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
+import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
@@ -48,6 +49,12 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                     )}
                     {item.layout === 5 && (
                         <ArrowedBlockContent
+                            content={item}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                    {item.layout === 6 && (
+                        <MarkedListWithTitle
                             content={item}
                             searchTerm={searchTerm}
                         />
