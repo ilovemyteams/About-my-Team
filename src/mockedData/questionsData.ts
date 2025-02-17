@@ -2927,4 +2927,428 @@ export const questionsData: QAItemType[] = [
             ],
         },
     },
+    {
+        data: {
+            slug: "how-to-speed-up-your-website-and-improve-user-experience",
+            image: "https://drive.google.com/uc?export=view&id=1XD3Y4VO0LQfwMS9dRSMwkQ43BUX8SYrC",
+            likes: null,
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1NLTi3A9vnc6rkbuHjL6EFS4zBnLsfCgC",
+        },
+        ua: {
+            questionText: "Як прискорити сайт і покращити UX?",
+            shortAnswerText: [
+                "Перформанс – це швидкість і ефективність роботи вебсайту або додатка. Чим швидше завантажується сторінка, тим зручніше користувачам її переглядати та взаємодіяти з нею. \nДослідження показують, що 53% мобільних користувачів залишають сайт, якщо він завантажується довше ніж 3 секунди. Поганий перформанс негативно впливає на SEO, зменшує кількість конверсій та підвищує рівень відмов.",
+            ],
+            imageAltText: "Як прискорити сайт і покращити UX?",
+            fullAnswerTopText: [
+                "Користувачі очікують, що сайт буде не лише швидким, а й стабільним, без затримок у відображенні контенту чи зависань під час взаємодії. \nНавіть незначні затримки можуть викликати роздратування і змусити користувача перейти до конкурентів. Саме тому оптимізація продуктивності є не лише технічним, а й бізнес-завданням, яке впливає на утримання відвідувачів та прибутковість проєкту.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "Що впливає на продуктивність сайту?",
+                    data: [
+                        {
+                            title: "Великі файли",
+                            text: [
+                                {
+                                    text: [
+                                        "Важкі зображення та відео уповільнюють завантаження сторінки.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Якість коду",
+                            text: [
+                                {
+                                    text: [
+                                        "Застарілий або перевантажений код та непотрібні плагіни можуть гальмувати роботу сайту.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Кількість HTTP-запитів",
+                            text: [
+                                {
+                                    text: [
+                                        "Що більше запитів до сервера, то довше триває завантаження сторінки.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Відсутність кешування",
+                            text: [
+                                {
+                                    text: [
+                                        "Якщо браузер не зберігає тимчасові файли, сайт щоразу завантажується «з нуля».",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Потужність сервера",
+                            text: [
+                                {
+                                    text: [
+                                        "Якщо сервер слабкий і знаходиться дуже далеко від користувача, завантаження буде повільним.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "Як покращити перформанс сайту?",
+                    data: [
+                        {
+                            title: "Оптимізація зображень",
+                            text: [
+                                "Використовуйте формати WebP, AVIF і зменшуйте розмір файлів без втрати якості.",
+                            ],
+                        },
+                        {
+                            title: "Регулярне ревю коду",
+                            text: [
+                                "Покращуйте якість коду, видаляйте зайві рядки та усувайте помилки.",
+                            ],
+                        },
+                        {
+                            title: "Використання CDN",
+                            text: [
+                                "Мережа серверів, яка допомагає швидше доставляти контент у різних країнах.",
+                            ],
+                        },
+                        {
+                            title: "Автоматичне Кешування",
+                            text: [
+                                "Збереження файлів у браузері користувача допомагає прискорити повторне завантаження сторінки.",
+                            ],
+                        },
+                        {
+                            title: "Мінімізація HTTP-запитів",
+                            text: [
+                                "Об’єднання зображень, файлів, скриптів та таблиць стилів зменшує навантаження на сервер.",
+                            ],
+                        },
+                        {
+                            title: "Лінива загрузка (Lazy Loading)",
+                            text: [
+                                "Дозволяє завантажувати зображення та відео тільки тоді, коли вони потрапляють у зону перегляду.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Чому варто дбати про швидкість сайту?",
+                    data: [
+                        {
+                            title: "Вищі позиції в Google ",
+                            text: [
+                                "Швидкі сайти отримують перевагу в пошуковій системі.",
+                            ],
+                        },
+                        {
+                            title: "Збільшення конверсій",
+                            text: [
+                                " Швидке завантаження покращує показники продажів та кліків.",
+                            ],
+                        },
+                        {
+                            title: "Кращий користувацький досвід",
+                            text: [
+                                "Відвідувачі не люблять чекати, швидкий сайт = задоволений користувач.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Тенденції показують, що користувачі очікують миттєвої реакції на свій запит, і компанії, які інвестують у швидкість своїх сайтів, отримують конкурентну перевагу.",
+            ],
+        },
+        pl: {
+            questionText:
+                "Jak przyspieszyć stronę i poprawić doświadczenie użytkownika?",
+            shortAnswerText: [
+                "Performance to szybkość i efektywność działania strony internetowej lub aplikacji. Im szybciej ładuje się strona, tym wygodniej użytkownicy mogą ją przeglądać i z nią wchodzić w interakcję. \nBadania pokazują, że 53% użytkowników mobilnych opuszcza stronę, jeśli ładuje się ona dłużej niż 3 sekundy. Słaba wydajność negatywnie wpływa na SEO, zmniejsza liczbę konwersji i zwiększa wskaźnik odrzuceń.",
+            ],
+            imageAltText:
+                "Jak przyspieszyć stronę i poprawić doświadczenie użytkownika?",
+            fullAnswerTopText: [
+                "Użytkownicy oczekują, że witryna będzie nie tylko szybka, ale także stabilna, bez opóźnień w wyświetlaniu treści czy zawieszeń podczas interakcji. \nNawet drobne opóźnienia mogą wywołać irytację i zmusić użytkownika do przejścia na produkty konkurencji. Dlatego optymalizacja wydajności jest zadaniem nie tylko technicznym, ale także biznesowym, które wpływa na utrzymanie odwiedzających i rentowność projektu.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "Co wpływa na wydajność strony?",
+                    data: [
+                        {
+                            title: "Duże pliki",
+                            text: [
+                                {
+                                    text: [
+                                        "Ciężkie obrazy i filmy spowalniają ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Jakość kodu",
+                            text: [
+                                {
+                                    text: [
+                                        "Przestarzały lub przeładowany kod oraz niepotrzebne wtyczki mogą powodować spowolnienia.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Liczba żądań HTTP",
+                            text: [
+                                {
+                                    text: [
+                                        "Im więcej zapytań do serwera, tym dłużej trwa ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Brak cache’owania",
+                            text: [
+                                {
+                                    text: [
+                                        "Jeśli przeglądarka nie zapisuje plików tymczasowych, strona za każdym razem ładuje się „od zera”.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Moc serwera",
+                            text: [
+                                {
+                                    text: [
+                                        "Słaby serwer lub duża odległość od użytkownika powodują wolniejsze ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "Jak poprawić performance strony?",
+                    data: [
+                        {
+                            title: "Optymalizacja obrazów",
+                            text: [
+                                "Używaj formatów WebP, AVIF i zmniejszaj rozmiar plików bez utraty jakości.",
+                            ],
+                        },
+                        {
+                            title: "Regularny przegląd kodu",
+                            text: [
+                                "Poprawiaj jakość kodu, usuwaj zbędne linie i naprawiaj błędy.",
+                            ],
+                        },
+                        {
+                            title: "Wykorzystanie CDN",
+                            text: [
+                                "Sieć serwerów, która przyspiesza dostarczanie treści w różnych regionach.",
+                            ],
+                        },
+                        {
+                            title: "Automatyczne cache’owanie",
+                            text: [
+                                "Przechowywanie plików w przeglądarce użytkownika przyspiesza ponowne ładowanie strony.",
+                            ],
+                        },
+                        {
+                            title: "Minimalizacja żądań HTTP",
+                            text: [
+                                "Łączenie obrazów, plików, skryptów i arkuszy stylów zmniejsza obciążenie serwera.",
+                            ],
+                        },
+                        {
+                            title: "Leniwe ładowanie (Lazy Loading)",
+                            text: [
+                                "Obrazy i filmy ładują się dopiero wtedy, gdy użytkownik przewija stronę do ich sekcji.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Dlaczego warto zadbać o szybkość strony?",
+                    data: [
+                        {
+                            title: "Wyższe pozycje w Google",
+                            text: [
+                                "Szybkie strony mają przewagę w wynikach wyszukiwania.",
+                            ],
+                        },
+                        {
+                            title: "Większa liczba konwersji",
+                            text: [
+                                " Szybsze ładowanie poprawia wskaźniki sprzedaży i kliknięć.",
+                            ],
+                        },
+                        {
+                            title: "Lepsze doświadczenie użytkownika",
+                            text: [
+                                "Użytkownicy nie lubią czekać – szybka strona = zadowolony odwiedzający.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Trendy pokazują, że użytkownicy oczekują natychmiastowej reakcji na swoje zapytania. Firmy, które inwestują w szybkość swoich stron, zdobywają przewagę konkurencyjną.",
+            ],
+        },
+        en: {
+            questionText:
+                "How to speed up your website and improve user experience?",
+            shortAnswerText: [
+                "Performance refers to the speed and efficiency of a website or application. The faster a page loads, the easier it is for users to browse and interact with it. \nStudies show that 53% of mobile users leave a site if it takes longer than 3 seconds to load. Poor performance negatively affects SEO, reduces conversions, and increases bounce rates.",
+            ],
+            imageAltText:
+                "How to speed up your website and improve user experience?",
+            fullAnswerTopText: [
+                "Users expect a website to be not only fast, but also stable, without delays in displaying content or freezing during interaction. Even minor delays can cause irritation and force a user to switch to competitors. That is why optimizing performance is not only a technical task, but also a business task that affects visitor retention and project profitability.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "What affects website performance?",
+                    data: [
+                        {
+                            title: "Large files",
+                            text: [
+                                {
+                                    text: [
+                                        "Heavy images and videos slow down page loading.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Code quality",
+                            text: [
+                                {
+                                    text: [
+                                        "Outdated or overloaded code and unnecessary plugins can slow down the website.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Number of HTTP requests",
+                            text: [
+                                {
+                                    text: [
+                                        "More server requests mean longer page loading times.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Lack of caching",
+                            text: [
+                                {
+                                    text: [
+                                        " If the browser doesn't save temporary files, the website loads „from scratch” every time.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Server power",
+                            text: [
+                                {
+                                    text: [
+                                        "If the server is weak or far from the user, loading will be slow.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "How to improve website performance?",
+                    data: [
+                        {
+                            title: "Optimize images",
+                            text: [
+                                "Use WebP and AVIF formats and reduce file sizes without losing quality.",
+                            ],
+                        },
+                        {
+                            title: "Regular code review",
+                            text: [
+                                "Improve code quality, remove unnecessary lines, and fix errors.",
+                            ],
+                        },
+                        {
+                            title: "Use a CDN",
+                            text: [
+                                "A content delivery network helps deliver content faster worldwide.",
+                            ],
+                        },
+                        {
+                            title: "Enable caching",
+                            text: [
+                                "Storing files in the user's browser speeds up repeat visits.",
+                            ],
+                        },
+                        {
+                            title: "Minimize HTTP requests",
+                            text: [
+                                "Combining images, files, scripts, and stylesheets reduces server load.",
+                            ],
+                        },
+                        {
+                            title: "Lazy loading",
+                            text: [
+                                "Loads images and videos only when they appear in the viewport.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Why does website speed matter?",
+                    data: [
+                        {
+                            title: "Higher Google rankings",
+                            text: [
+                                "Fast websites get a search engine advantage.",
+                            ],
+                        },
+                        {
+                            title: "Increased conversions",
+                            text: [
+                                " Faster loading improves sales and click-through rates.",
+                            ],
+                        },
+                        {
+                            title: "Better user experience",
+                            text: [
+                                "Visitors dislike waiting — a fast website = happy users.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Trends show that users expect instant responses, and companies that invest in website speed gain a competitive advantage.",
+            ],
+        },
+    },
 ];
