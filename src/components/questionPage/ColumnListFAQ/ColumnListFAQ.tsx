@@ -41,7 +41,7 @@ export const ColumnListFAQ = ({ content, searchTerm }: ColumnListProps) => {
                                 />
                             </h4>
                         )}
-                        <div className="text-sm20 tab:text-base23 desk:text-lg25">
+                        <div className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
                             {Array.isArray(item.text) &&
                                 item.text.map((line, i) =>
                                     typeof line === "string" ? (
