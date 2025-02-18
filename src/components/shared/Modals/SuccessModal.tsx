@@ -74,9 +74,7 @@ export const SuccessModal = ({ closeFn, isShown }: SuccessModalProps) => {
                         {getTranslation("waitResponse")}
                     </p>
                     <Image
-                        // src="/images/logo.svg"
-                        // #remove-valentines
-                        src="/images/valentines/heart.svg"
+                        src="/images/logo.svg"
                         alt="Valentines Heart"
                         width={178}
                         height={161}
