@@ -1,9 +1,7 @@
 import Image from "next/image";
 
 import { ThumbnailBg } from "./ThumbnailBG";
-import { HeartDecor } from "../valentines/icons/HeartDecor";
 import { IconBigHeart } from "../valentines/icons/IconBigHeart";
-import { CupidIcon } from "../valentines/icons/CupidIcon";
 import { Decorations } from "../valentines/hero/Decorations";
 
 const ThumbnailValentine = () => {
