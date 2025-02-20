@@ -1,58 +1,44 @@
 import { BigCloudIcon } from "../icons/BigCloudIcon";
+import { CupidIcon } from "../icons/CupidIcon";
 import { SmallCloudIcon } from "../icons/SmallCloudIcon";
 import { StarIcon } from "../icons/StarIcon";
+import { FlyingEnvelope } from "../shared/FlyingEnvelope";
 
 export const Decorations = () => {
-    const starWidth = "w-[7px] h-auto tab:w-[13px] pc:w-[9px] desk:w-[15px]";
     return (
         <>
             <div
                 aria-label="line for small cloud"
-                className="absolute top-0 pc:right-[75px] pc:h-[142px] pc:w-[1px] bg-textHighlight dark:bg-white-100 z-[-1]
-                desk:h-[235px] desk:right-[89px]"
+                className="absolute top-0 right-[34px] h-[22px] w-[1px] dark:bg-textHighlight bg-white-100 z-[-1]"
             ></div>
-            <SmallCloudIcon
-                className="absolute top-[100px] right-4 w-[49px] h-auto 
-            tab:top-[183px] tab:right-[38px] tab:w-[88px] pc:top-[141px] pc:right-[27px] pc:w-[95px]
-            desk:top-[230px] desk:right-[10px] desk:w-[146px]"
-            />
+            <SmallCloudIcon className="absolute top-[21px] right-2 w-[49px] h-auto " />
             <div
                 aria-label="line for big cloud"
-                className="absolute top-0 pc:right-[193px] pc:h-[190px] pc:w-[1px] bg-textHighlight dark:bg-white-100 
-                desk:h-[320px] desk:right-[260px]"
+                className="absolute top-0 right-[68px] h-[60px] w-[1px] dark:bg-textHighlight bg-white-100 z-[-1] "
             ></div>
-            <BigCloudIcon
-                className="absolute top-[104px] left-[-35px] w-[93px] h-auto 
-            tab:top-[209px] tab:left-[-27px] tab:w-[179px] pc:top-[187px] pc:right-[148px] pc:left-[unset] 
-            pc:w-[108px] desk:w-[167px] desk:top-[300px] desk:right-[190px] "
-            />
-
+            <BigCloudIcon className="absolute top-[50px] right-[38px] w-[73px] h-auto" />
+            <div
+                aria-label="line for cupid"
+                className="absolute top-0 right-[108px] h-[40px] w-[1px] dark:bg-textHighlight bg-white-100 z-[-1] "
+            ></div>
+            <CupidIcon className="w-[80px]" />
             <StarIcon
-                className={`absolute top-[85px] right-[75px] ${starWidth} text-redLight dark:text-white-100  tab:top-[156px] tab:right-[175px] 
-                pc:top-[129px] pc:right-[23px] desk:top-[210px] desk:right-[40px]`}
-            />
-            <StarIcon
-                className={`absolute top-[90px] right-[64px] ${starWidth} text-redLight dark:text-white-100  tab:top-[165px] tab:right-[156px] 
-                pc:top-[136px] pc:right-[10px] desk:top-[220px] desk:right-[25px]`}
+                className={`absolute top-[85px] right-[75px] w-[7px] dark:text-redLight text-white-100`}
             />
             <StarIcon
-                className={`absolute top-[175px] left-[21x] w-[9px] h-auto text-redLight dark:text-white-100  tab:top-[340px] tab:left-[60px] tab:w-[15px] 
-                    pc:top-[168px] pc:right-[172px] pc:w-[12px] pc:left-[unset]
-                    desk:w-[20px] desk:top-[265px] desk:right-[220px]`}
+                className={`absolute top-[90px] right-[64px] w-[9px] dark:text-redLight text-white-100 `}
             />
             <StarIcon
-                className={`absolute top-[190px] left-[37px] w-[4px] h-auto text-redLight dark:text-white-100  tab:top-[370px] tab:left-[90px] tab:w-[7px] 
-                    pc:top-[189px] pc:right-[157px] pc:w-[5px] pc:left-[unset]
-                    desk:w-[8px] desk:top-[300px] desk:right-[200px]`}
+                className={`absolute top-[145px] left-[41px] w-[9px] h-auto dark:text-redLight text-white-100 z-[2]`}
             />
             <StarIcon
-                className={`absolute w-[0px] h-auto text-redLight dark:text-white-100  pc:top-[121px] pc:right-[389px] pc:w-[7px]
-                    desk:w-[11px] desk:top-[180px] desk:right-[580px]`}
+                className={`absolute top-[154px] left-[37px] w-[6px] h-auto dark:text-redLight text-white-100 z-[2]`}
             />
             <StarIcon
-                className={`absolute w-[0px] h-auto text-redLight dark:text-white-100  pc:top-[131px] pc:right-[375px] pc:w-[5px] 
-                    desk:w-[8px] desk:top-[200px] desk:right-[560px]`}
+                className={`absolute w-[7px] top-[30px] left-[54px] h-auto dark:text-redLight text-white-100 z-[2]`}
             />
+            <FlyingEnvelope className="absolute rotate-[-35deg] h-8 bottom-5 right-1" />
+            <FlyingEnvelope className="absolute rotate-[-30deg] h-6 bottom-10 right-[80px]" />
         </>
     );
 };
