@@ -27,16 +27,16 @@ export const pastEventsData: PastEventsData = [
         pl: {
             title: "Walentynki",
             description: [
-                "Z okazji tego święta przygotowaliśmy dla naszych gości zabawne, humorystyczne kartki walentynkowe oraz certyfikat o wartości 50$, który można było wykorzystać jako częściową opłatę za dowolną z naszych usług.",
-                `Strona główna i strona wydarzeń zyskały świąteczne dekoracje. Największą atrakcją była interaktywna animacja – po kliknięciu przycisku „Odbierz certyfikat” certyfikat efektownie wylatywał z serca przebitego strzałą Kupidyna.`,
+                "Na to święto przygotowaliśmy dla naszych gości zabawne, humorystyczne kartki walentynkowe oraz certyfikat o wartości 50 $, który można było wykorzystać na częściową zapłatę za dowolną z naszych usług.",
+                `Główna strona i strona wydarzeń zyskały walentynkowe dekoracje. Największą atrakcją była interaktywna animacja otrzymania certyfikatu – po kliknięciu przycisku „Odbierz certyfikat” efektownie wylatywał on z serca przebitego strzałą Kupida.`,
             ],
             date: "14.02.2025",
         },
         en: {
             title: "Valentine's Day",
             description: [
-                "For this special occasion, we prepared fun and humorous Valentine's cards for our visitors, along with a $50 certificate that could be used as partial payment for any of our services.",
-                `The homepage and events page were beautifully decorated for the celebration. The highlight was an interactive animation: after clicking the "Get Certificate" button, the certificate would dramatically fly out of a heart pierced by Cupid’s arrow.`,
+                "For this holiday, we prepared fun and humorous Valentine's cards for our website visitors, along with a $50 certificate that could be used for partial payment of any of our services.",
+                `The highlight was an interactive animation of receiving the certificate – after clicking the "Get Certificate" button, it would impressively fly out of a heart pierced by Cupid's arrow.`,
             ],
             date: "02.14.2025",
         },
