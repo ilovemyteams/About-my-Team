@@ -5,28 +5,13 @@ import Image from "next/image";
 
 interface FlyingEnvelopeProps {
     className?: string;
-    envelope?: "white" | "pink";
 }
 
-export const FlyingEnvelope = ({
-    className = "",
-    envelope = "pink",
-}: FlyingEnvelopeProps) => {
-    const envelopeSrc =
-        envelope === "pink"
-            ? "/images/valen/pinkEnvelope.svg"
-            : "/images/valen/whiteEnvelope.svg";
+export const FlyingEnvelope = ({ className = "" }: FlyingEnvelopeProps) => {
+    const envelopeSrc = "/images/valen/pinkEnvelope.svg";
 
-    const handleClick = () => {
-        if (envelope !== "pink") {
-            sendGTMEvent({
-                event: "white_envelope",
-            });
-        }
-    };
     return (
         <div
-            onClick={handleClick}
             className={`grid grid-cols-[35%_35%_30%] max-h-[150px] aspect-[3] ${className}`}
         >
             <motion.div
