@@ -1,5 +1,4 @@
 "use client";
-import { sendGTMEvent } from "@next/third-parties/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
