@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { ThumbnailBg } from "./ThumbnailBG";
+import { Decorations } from "../valentines/Decorations";
 import { IconBigHeart } from "../valentines/icons/IconBigHeart";
-import { Decorations } from "../valentines/hero/Decorations";
+import { ThumbnailBg } from "./ThumbnailBG";
 
 const ThumbnailValentine = () => {
     return (

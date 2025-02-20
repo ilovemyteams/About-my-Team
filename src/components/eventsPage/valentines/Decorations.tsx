@@ -1,8 +1,8 @@
-import { BigCloudIcon } from "../icons/BigCloudIcon";
-import { CupidIcon } from "../icons/CupidIcon";
-import { SmallCloudIcon } from "../icons/SmallCloudIcon";
-import { StarIcon } from "../icons/StarIcon";
-import { FlyingEnvelope } from "../shared/FlyingEnvelope";
+import { BigCloudIcon } from "./icons/BigCloudIcon";
+import { CupidIcon } from "./icons/CupidIcon";
+import { SmallCloudIcon } from "./icons/SmallCloudIcon";
+import { StarIcon } from "./icons/StarIcon";
+import { FlyingEnvelope } from "./shared/FlyingEnvelope";
 
 export const Decorations = () => {
     return (
