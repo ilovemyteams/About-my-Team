@@ -2846,7 +2846,7 @@ export const questionsData: QAItemType[] = [
             imageAltText:
                 "How to bring content to life and make products more attractive?",
             fullAnswerTopText: [
-                "In the modern digital environment, animated elements help convey information more effectively, enhance emotional impact, and improve overall brand perception. As technology advances, animation is becoming more realistic and interactive.Artificial intelligence and machine learning are automating animation creation, while virtual and augmented reality (VR/AR) are opening up new possibilities for user interaction.",
+                "In the modern digital environment, animated elements help convey information more effectively, enhance emotional impact, and improve overall brand perception. As technology advances, animation is becoming more realistic and interactive. Artificial intelligence and machine learning are automating animation creation, while virtual and augmented reality (VR/AR) are opening up new possibilities for user interaction.",
             ],
             fullAnswerContent: [
                 {
@@ -3012,7 +3012,7 @@ export const questionsData: QAItemType[] = [
                             ],
                         },
                         {
-                            title: "Регулярне ревю коду",
+                            title: "Регулярний перегляд коду",
                             text: [
                                 "Покращуйте якість коду, видаляйте зайві рядки та усувайте помилки.",
                             ],

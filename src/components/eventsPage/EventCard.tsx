@@ -12,9 +12,10 @@ interface EventCardProps {
 export const EventCard = async ({ content }: EventCardProps) => {
     const locale = await getLocale();
     const { title, description, date } = content[locale as LocaleType];
-    const componentPartial = content.event
-        .slice(0, -4)
-        .replace(content.event[0], content.event[0].toUpperCase());
+    const componentPartial = content.event.replace(
+        content.event[0],
+        content.event[0].toUpperCase()
+    );
     const Thumbnail = await import(
         `@/src/components/eventsPage/thumbnails/Thumbnail${componentPartial}`
     ).then(
