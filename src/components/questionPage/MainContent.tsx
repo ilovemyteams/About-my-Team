@@ -4,8 +4,10 @@ import type { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { PageSection } from "../shared/PageSection";
 import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
+import { ColumnListFAQ } from "./ColumnListFAQ/ColumnListFAQ";
 import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
 import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
+import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
@@ -51,6 +53,15 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             content={item}
                             searchTerm={searchTerm}
                         />
+                    )}
+                    {item.layout === 6 && (
+                        <MarkedListWithTitle
+                            content={item}
+                            searchTerm={searchTerm}
+                        />
+                    )}
+                    {item.layout === 7 && (
+                        <ColumnListFAQ content={item} searchTerm={searchTerm} />
                     )}
                 </Fragment>
             ))}

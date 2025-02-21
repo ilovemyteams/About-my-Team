@@ -2653,4 +2653,702 @@ export const questionsData: QAItemType[] = [
             ],
         },
     },
+    {
+        data: {
+            slug: "how-to-bring-content-to-life-and-make-products-more-attractive",
+            image: "https://drive.google.com/uc?export=view&id=15YnZLmNc9H6kUSMq70ITL6_ng5f7OtFe",
+            likes: null,
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1QJuqZu7LAVTSDP9TU5XVDdQ-G5SnjPhX",
+        },
+        ua: {
+            questionText:
+                "Як оживити контент та зробити продукт більш привабливим?",
+            shortAnswerText: [
+                "Анімація — це технологія створення ілюзії руху за допомогою зміни статичних кадрів. Вона широко використовується в дизайні сайтів, мобільних додатків, рекламі, відеопрезентаціях та навіть у навчальних матеріалах.",
+            ],
+            imageAltText:
+                "Як оживити контент та зробити продукт більш привабливим?",
+            fullAnswerTopText: [
+                "У сучасному цифровому середовищі рухомі елементи допомагають краще донести інформацію, підсилюють емоційний ефект та покращують загальне сприйняття бренду. Технології розвиваються, і анімація стає ще більш реалістичною та інтерактивною. Штучний інтелект та машинне навчання допомагають автоматизувати процеси створення анімації, а віртуальна та доповнена реальність (VR/AR) відкривають нові можливості для взаємодії з користувачами.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 3,
+                    title: "Види анімації",
+                    data: [
+                        {
+                            title: "2D-анімація",
+                            text: [
+                                "Традиційний вид анімації, у якому зображення рухаються у двовимірному просторі. Використовується в мультфільмах, рекламних роликах та освітніх відео.",
+                            ],
+                        },
+                        {
+                            title: "3D-анімація",
+                            text: [
+                                "Більш реалістичний формат, який додає глибину та об’єм. Використовується у відеоіграх, кіноіндустрії, архітектурних візуалізаціях.",
+                            ],
+                        },
+                        {
+                            title: "Motion Graphics",
+                            text: [
+                                "Анімація графічних елементів, що часто використовується у презентаціях, рекламі та пояснювальних відео.",
+                            ],
+                        },
+                        {
+                            title: "Stop-motion",
+                            text: [
+                                "Техніка, коли об'єкти фізично переміщуються та фотографуються покадрово, створюючи ефект плавного руху.",
+                            ],
+                        },
+                        {
+                            title: "CSS та SVG-анімація",
+                            text: [
+                                "Застосовується у вебдизайні для створення плавних переходів, мікроанімацій та інтерактивних ефектів.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Чому анімація важлива?",
+                    data: [
+                        {
+                            title: "Привертає увагу",
+                            text: [
+                                "Люди краще реагують на рух, що робить контент більш помітним.",
+                            ],
+                        },
+                        {
+                            title: "Збільшує взаємодію",
+                            text: [
+                                "Анімовані елементи заохочують користувачів натискати на кнопки та залишатися довше на сторінці.",
+                            ],
+                        },
+                        {
+                            title: "Пояснює складну інформацію",
+                            text: [
+                                "Ідеально підходить для інфографіки, презентацій та навчальних матеріалів.",
+                            ],
+                        },
+                        {
+                            title: "Покращує візуальне сприйняття",
+                            text: ["Робить дизайн приємним та сучасним."],
+                        },
+                        {
+                            title: "Підвищує конверсію",
+                            text: [
+                                "Сайти з анімованими елементами можуть отримувати більше кліків та продажів.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Анімація — це не просто «гарна картинка», вона має практичні переваги. У майбутньому анімація не просто стане частиною дизайну – вона визначатиме, як ми сприймаємо цифровий контент. Тож, якщо ви ще не використовуєте її у своїх проєктах, саме час це зробити! Напишіть нам, і ми допоможемо оживити ваш сайт!",
+            ],
+        },
+        pl: {
+            questionText:
+                "Jak ożywić treści i uczynić je bardziej atrakcyjnymi?",
+            shortAnswerText: [
+                "Animacja to technologia tworzenia iluzji ruchu poprzez zmianę statycznych klatek. Jest szeroko stosowana w projektowaniu stron internetowych, aplikacjach mobilnych, reklamach, prezentacjach wideo, a nawet w materiałach edukacyjnych.",
+            ],
+            imageAltText:
+                "Jak ożywić treści i uczynić je bardziej atrakcyjnymi?",
+            fullAnswerTopText: [
+                "We współczesnym środowisku cyfrowym ruchome elementy pomagają lepiej przekazywać informacje, wzmacniają efekt emocjonalny i poprawiają ogólne postrzeganie marki. Technologia rozwija się, a animacja staje się coraz bardziej realistyczna i interaktywna. Sztuczna inteligencja i uczenie maszynowe automatyzują procesy tworzenia animacji, a rzeczywistość wirtualna i rozszerzona (VR/AR) otwierają nowe możliwości interakcji z użytkownikami.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 3,
+                    title: "Rodzaje animacji",
+                    data: [
+                        {
+                            title: "Animacja 2D",
+                            text: [
+                                "Tradycyjna forma animacji, w której obrazy poruszają się w przestrzeni dwuwymiarowej. Jest wykorzystywana w kreskówkach, reklamach i filmach edukacyjnych.",
+                            ],
+                        },
+                        {
+                            title: "Animacja 3D",
+                            text: [
+                                "Bardziej realistyczny format, który dodaje głębi i objętości. Stosowana w grach wideo, przemyśle filmowym i wizualizacjach architektonicznych.",
+                            ],
+                        },
+                        {
+                            title: "Motion Graphics",
+                            text: [
+                                "Animacja elementów graficznych, często wykorzystywana w prezentacjach, reklamach i filmach wyjaśniających.",
+                            ],
+                        },
+                        {
+                            title: "Stop-motion",
+                            text: [
+                                "Technika, w której obiekty są fizycznie przemieszczane i fotografowane klatka po klatce, tworząc efekt płynnego ruchu.",
+                            ],
+                        },
+                        {
+                            title: "Animacja CSS i SVG",
+                            text: [
+                                "Stosowana w projektowaniu stron internetowych do tworzenia płynnych przejść, mikroanimacji i efektów interaktywnych.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Dlaczego animacja jest ważna?",
+                    data: [
+                        {
+                            title: "Przyciąga uwagę",
+                            text: [
+                                "Ludzie lepiej reagują na ruch, co sprawia, że treści są bardziej widoczne.",
+                            ],
+                        },
+                        {
+                            title: "Zwiększa zaangażowanie",
+                            text: [
+                                "Animowane elementy zachęcają użytkowników do interakcji i dłuższego pozostawania na stronie.",
+                            ],
+                        },
+                        {
+                            title: "Wyjaśnia skomplikowane informacje",
+                            text: [
+                                "Idealna do infografik, prezentacji i materiałów edukacyjnych.",
+                            ],
+                        },
+                        {
+                            title: "Poprawia odbiór wizualny",
+                            text: [
+                                "Sprawia, że projekt jest nowoczesny i estetyczny.",
+                            ],
+                        },
+                        {
+                            title: "Zwiększa konwersje",
+                            text: [
+                                "Strony z animacjami generują więcej kliknięć i sprzedaży.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Animacja to nie tylko «ładny efekt wizualny» – ma ona praktyczne zalety. W przyszłości animacja nie tylko będzie częścią designu, ale także wpłynie na sposób, w jaki postrzegamy treści cyfrowe. Jeśli jeszcze jej nie używasz, to najwyższy czas to zmienić! Skontaktuj się z nami, a pomożemy ożywić Twoją stronę!",
+            ],
+        },
+        en: {
+            questionText:
+                "How to bring content to life and make products more attractive?",
+            shortAnswerText: [
+                "Animation is a technology that creates the illusion of movement by changing static frames. It is widely used in web design, mobile applications, advertising, video presentations, and even educational materials.",
+            ],
+            imageAltText:
+                "How to bring content to life and make products more attractive?",
+            fullAnswerTopText: [
+                "In the modern digital environment, animated elements help convey information more effectively, enhance emotional impact, and improve overall brand perception. As technology advances, animation is becoming more realistic and interactive. Artificial intelligence and machine learning are automating animation creation, while virtual and augmented reality (VR/AR) are opening up new possibilities for user interaction.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 3,
+                    title: "Types of Animation",
+                    data: [
+                        {
+                            title: "2D Animation",
+                            text: [
+                                "A traditional form of animation where images move in a two-dimensional space. It is used in cartoons, advertisements, and educational videos.",
+                            ],
+                        },
+                        {
+                            title: "3D Animation",
+                            text: [
+                                "A more realistic format that adds depth and volume. Used in video games, the film industry, and architectural visualizations.",
+                            ],
+                        },
+                        {
+                            title: "Motion Graphics",
+                            text: [
+                                "The animation of graphic elements often used in presentations, advertisements, and explainer videos.",
+                            ],
+                        },
+                        {
+                            title: "Stop-Motion",
+                            text: [
+                                "A technique where objects are physically moved and photographed frame by frame to create a smooth motion effect.",
+                            ],
+                        },
+                        {
+                            title: "CSS & SVG Animation",
+                            text: [
+                                "Used in web design to create smooth transitions, micro-animations, and interactive effects.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Why Is Animation Important?",
+                    data: [
+                        {
+                            title: "Attracts attention",
+                            text: [
+                                "People respond better to movement, making content more noticeable.",
+                            ],
+                        },
+                        {
+                            title: "Increases engagement",
+                            text: [
+                                "Animated elements encourage users to click buttons and stay on the page longer.",
+                            ],
+                        },
+                        {
+                            title: "Explains complex information",
+                            text: [
+                                " Ideal for infographics, presentations, and educational materials.",
+                            ],
+                        },
+                        {
+                            title: "Enhances visual perception",
+                            text: [
+                                "Makes the design more modern and aesthetically pleasing.",
+                            ],
+                        },
+                        {
+                            title: "Boosts conversions",
+                            text: [
+                                "Websites with animated elements tend to receive more clicks and sales.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Animation is not just a «beautiful picture» — it has practical benefits. In the future, animation will not only be part of design but will also shape how we perceive digital content. If you're not using animation in your projects yet, now is the time to start! ",
+            ],
+        },
+    },
+    {
+        data: {
+            slug: "how-to-speed-up-your-website-and-improve-user-experience",
+            image: "https://drive.google.com/uc?export=view&id=1XD3Y4VO0LQfwMS9dRSMwkQ43BUX8SYrC",
+            likes: null,
+            answerOrderImage:
+                "https://drive.google.com/uc?export=view&id=1NLTi3A9vnc6rkbuHjL6EFS4zBnLsfCgC",
+        },
+        ua: {
+            questionText: "Як прискорити сайт і покращити UX?",
+            shortAnswerText: [
+                "Перформанс – це швидкість і ефективність роботи вебсайту або додатка. Чим швидше завантажується сторінка, тим зручніше користувачам її переглядати та взаємодіяти з нею. \nДослідження показують, що 53% мобільних користувачів залишають сайт, якщо він завантажується довше ніж 3 секунди. Поганий перформанс негативно впливає на SEO, зменшує кількість конверсій та підвищує рівень відмов.",
+            ],
+            imageAltText: "Як прискорити сайт і покращити UX?",
+            fullAnswerTopText: [
+                "Користувачі очікують, що сайт буде не лише швидким, а й стабільним, без затримок у відображенні контенту чи зависань під час взаємодії. \nНавіть незначні затримки можуть викликати роздратування і змусити користувача перейти до конкурентів. Саме тому оптимізація продуктивності є не лише технічним, а й бізнес-завданням, яке впливає на утримання відвідувачів та прибутковість проєкту.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "Що впливає на продуктивність сайту?",
+                    data: [
+                        {
+                            title: "Великі файли",
+                            text: [
+                                {
+                                    text: [
+                                        "Важкі зображення та відео уповільнюють завантаження сторінки.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Якість коду",
+                            text: [
+                                {
+                                    text: [
+                                        "Застарілий або перевантажений код та непотрібні плагіни можуть гальмувати роботу сайту.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Кількість HTTP-запитів",
+                            text: [
+                                {
+                                    text: [
+                                        "Що більше запитів до сервера, то довше триває завантаження сторінки.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Відсутність кешування",
+                            text: [
+                                {
+                                    text: [
+                                        "Якщо браузер не зберігає тимчасові файли, сайт щоразу завантажується «з нуля».",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Потужність сервера",
+                            text: [
+                                {
+                                    text: [
+                                        "Якщо сервер слабкий і знаходиться дуже далеко від користувача, завантаження буде повільним.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "Як покращити перформанс сайту?",
+                    data: [
+                        {
+                            title: "Оптимізація зображень",
+                            text: [
+                                "Використовуйте формати WebP, AVIF і зменшуйте розмір файлів без втрати якості.",
+                            ],
+                        },
+                        {
+                            title: "Регулярний перегляд коду",
+                            text: [
+                                "Покращуйте якість коду, видаляйте зайві рядки та усувайте помилки.",
+                            ],
+                        },
+                        {
+                            title: "Використання CDN",
+                            text: [
+                                "Мережа серверів, яка допомагає швидше доставляти контент у різних країнах.",
+                            ],
+                        },
+                        {
+                            title: "Автоматичне Кешування",
+                            text: [
+                                "Збереження файлів у браузері користувача допомагає прискорити повторне завантаження сторінки.",
+                            ],
+                        },
+                        {
+                            title: "Мінімізація HTTP-запитів",
+                            text: [
+                                "Об’єднання зображень, файлів, скриптів та таблиць стилів зменшує навантаження на сервер.",
+                            ],
+                        },
+                        {
+                            title: "Лінива загрузка (Lazy Loading)",
+                            text: [
+                                "Дозволяє завантажувати зображення та відео тільки тоді, коли вони потрапляють у зону перегляду.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Чому варто дбати про швидкість сайту?",
+                    data: [
+                        {
+                            title: "Вищі позиції в Google ",
+                            text: [
+                                "Швидкі сайти отримують перевагу в пошуковій системі.",
+                            ],
+                        },
+                        {
+                            title: "Збільшення конверсій",
+                            text: [
+                                " Швидке завантаження покращує показники продажів та кліків.",
+                            ],
+                        },
+                        {
+                            title: "Кращий користувацький досвід",
+                            text: [
+                                "Відвідувачі не люблять чекати, швидкий сайт = задоволений користувач.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Тенденції показують, що користувачі очікують миттєвої реакції на свій запит, і компанії, які інвестують у швидкість своїх сайтів, отримують конкурентну перевагу.",
+            ],
+        },
+        pl: {
+            questionText:
+                "Jak przyspieszyć stronę i poprawić doświadczenie użytkownika?",
+            shortAnswerText: [
+                "Performance to szybkość i efektywność działania strony internetowej lub aplikacji. Im szybciej ładuje się strona, tym wygodniej użytkownicy mogą ją przeglądać i z nią wchodzić w interakcję. \nBadania pokazują, że 53% użytkowników mobilnych opuszcza stronę, jeśli ładuje się ona dłużej niż 3 sekundy. Słaba wydajność negatywnie wpływa na SEO, zmniejsza liczbę konwersji i zwiększa wskaźnik odrzuceń.",
+            ],
+            imageAltText:
+                "Jak przyspieszyć stronę i poprawić doświadczenie użytkownika?",
+            fullAnswerTopText: [
+                "Użytkownicy oczekują, że witryna będzie nie tylko szybka, ale także stabilna, bez opóźnień w wyświetlaniu treści czy zawieszeń podczas interakcji. \nNawet drobne opóźnienia mogą wywołać irytację i zmusić użytkownika do przejścia na produkty konkurencji. Dlatego optymalizacja wydajności jest zadaniem nie tylko technicznym, ale także biznesowym, które wpływa na utrzymanie odwiedzających i rentowność projektu.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "Co wpływa na wydajność strony?",
+                    data: [
+                        {
+                            title: "Duże pliki",
+                            text: [
+                                {
+                                    text: [
+                                        "Ciężkie obrazy i filmy spowalniają ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Jakość kodu",
+                            text: [
+                                {
+                                    text: [
+                                        "Przestarzały lub przeładowany kod oraz niepotrzebne wtyczki mogą powodować spowolnienia.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Liczba żądań HTTP",
+                            text: [
+                                {
+                                    text: [
+                                        "Im więcej zapytań do serwera, tym dłużej trwa ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Brak cache’owania",
+                            text: [
+                                {
+                                    text: [
+                                        "Jeśli przeglądarka nie zapisuje plików tymczasowych, strona za każdym razem ładuje się „od zera”.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Moc serwera",
+                            text: [
+                                {
+                                    text: [
+                                        "Słaby serwer lub duża odległość od użytkownika powodują wolniejsze ładowanie strony.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "Jak poprawić performance strony?",
+                    data: [
+                        {
+                            title: "Optymalizacja obrazów",
+                            text: [
+                                "Używaj formatów WebP, AVIF i zmniejszaj rozmiar plików bez utraty jakości.",
+                            ],
+                        },
+                        {
+                            title: "Regularny przegląd kodu",
+                            text: [
+                                "Poprawiaj jakość kodu, usuwaj zbędne linie i naprawiaj błędy.",
+                            ],
+                        },
+                        {
+                            title: "Wykorzystanie CDN",
+                            text: [
+                                "Sieć serwerów, która przyspiesza dostarczanie treści w różnych regionach.",
+                            ],
+                        },
+                        {
+                            title: "Automatyczne cache’owanie",
+                            text: [
+                                "Przechowywanie plików w przeglądarce użytkownika przyspiesza ponowne ładowanie strony.",
+                            ],
+                        },
+                        {
+                            title: "Minimalizacja żądań HTTP",
+                            text: [
+                                "Łączenie obrazów, plików, skryptów i arkuszy stylów zmniejsza obciążenie serwera.",
+                            ],
+                        },
+                        {
+                            title: "Leniwe ładowanie (Lazy Loading)",
+                            text: [
+                                "Obrazy i filmy ładują się dopiero wtedy, gdy użytkownik przewija stronę do ich sekcji.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Dlaczego warto zadbać o szybkość strony?",
+                    data: [
+                        {
+                            title: "Wyższe pozycje w Google",
+                            text: [
+                                "Szybkie strony mają przewagę w wynikach wyszukiwania.",
+                            ],
+                        },
+                        {
+                            title: "Większa liczba konwersji",
+                            text: [
+                                " Szybsze ładowanie poprawia wskaźniki sprzedaży i kliknięć.",
+                            ],
+                        },
+                        {
+                            title: "Lepsze doświadczenie użytkownika",
+                            text: [
+                                "Użytkownicy nie lubią czekać – szybka strona = zadowolony odwiedzający.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Trendy pokazują, że użytkownicy oczekują natychmiastowej reakcji na swoje zapytania. Firmy, które inwestują w szybkość swoich stron, zdobywają przewagę konkurencyjną.",
+            ],
+        },
+        en: {
+            questionText:
+                "How to speed up your website and improve user experience?",
+            shortAnswerText: [
+                "Performance refers to the speed and efficiency of a website or application. The faster a page loads, the easier it is for users to browse and interact with it. \nStudies show that 53% of mobile users leave a site if it takes longer than 3 seconds to load. Poor performance negatively affects SEO, reduces conversions, and increases bounce rates.",
+            ],
+            imageAltText:
+                "How to speed up your website and improve user experience?",
+            fullAnswerTopText: [
+                "Users expect a website to be not only fast, but also stable, without delays in displaying content or freezing during interaction. Even minor delays can cause irritation and force a user to switch to competitors. That is why optimizing performance is not only a technical task, but also a business task that affects visitor retention and project profitability.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 2,
+                    title: "What affects website performance?",
+                    data: [
+                        {
+                            title: "Large files",
+                            text: [
+                                {
+                                    text: [
+                                        "Heavy images and videos slow down page loading.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Code quality",
+                            text: [
+                                {
+                                    text: [
+                                        "Outdated or overloaded code and unnecessary plugins can slow down the website.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Number of HTTP requests",
+                            text: [
+                                {
+                                    text: [
+                                        "More server requests mean longer page loading times.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Lack of caching",
+                            text: [
+                                {
+                                    text: [
+                                        " If the browser doesn't save temporary files, the website loads „from scratch” every time.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Server power",
+                            text: [
+                                {
+                                    text: [
+                                        "If the server is weak or far from the user, loading will be slow.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "How to improve website performance?",
+                    data: [
+                        {
+                            title: "Optimize images",
+                            text: [
+                                "Use WebP and AVIF formats and reduce file sizes without losing quality.",
+                            ],
+                        },
+                        {
+                            title: "Regular code review",
+                            text: [
+                                "Improve code quality, remove unnecessary lines, and fix errors.",
+                            ],
+                        },
+                        {
+                            title: "Use a CDN",
+                            text: [
+                                "A content delivery network helps deliver content faster worldwide.",
+                            ],
+                        },
+                        {
+                            title: "Enable caching",
+                            text: [
+                                "Storing files in the user's browser speeds up repeat visits.",
+                            ],
+                        },
+                        {
+                            title: "Minimize HTTP requests",
+                            text: [
+                                "Combining images, files, scripts, and stylesheets reduces server load.",
+                            ],
+                        },
+                        {
+                            title: "Lazy loading",
+                            text: [
+                                "Loads images and videos only when they appear in the viewport.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 7,
+                    title: "Why does website speed matter?",
+                    data: [
+                        {
+                            title: "Higher Google rankings",
+                            text: [
+                                "Fast websites get a search engine advantage.",
+                            ],
+                        },
+                        {
+                            title: "Increased conversions",
+                            text: [
+                                " Faster loading improves sales and click-through rates.",
+                            ],
+                        },
+                        {
+                            title: "Better user experience",
+                            text: [
+                                "Visitors dislike waiting — a fast website = happy users.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            fullAnswerBottomText: [
+                "Trends show that users expect instant responses, and companies that invest in website speed gain a competitive advantage.",
+            ],
+        },
+    },
 ];

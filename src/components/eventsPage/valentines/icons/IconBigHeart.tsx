@@ -11,7 +11,7 @@ export const IconBigHeart = ({ className }: IconProps) => {
             className={className}
             aria-label="Big grateful heart"
         >
-            <g clip-path="url(#clip0_16270_88048)">
+            <g clipPath="url(#clip0_16270_88048)">
                 <path
                     d="M60.0637 1.91922L53.8112 24.4239L26.5385 24.9257L60.0637 1.91922Z"
                     fill="#FFDDE2"
@@ -61,7 +61,7 @@ export const IconBigHeart = ({ className }: IconProps) => {
                     fill="#E25166"
                 />
             </g>
-            <g clip-path="url(#clip1_16270_88048)">
+            <g clipPath="url(#clip1_16270_88048)">
                 <path
                     d="M154.598 23.5141H127.982L122.398 0.572266L154.598 23.5141Z"
                     fill="#E2576A"
