@@ -4,6 +4,7 @@ type ProjectDataItemTranslation = {
 };
 type DataType = {
     id: string;
+    slug: string;
     siteLink?: string;
     image: string;
     video?: string;
@@ -20,6 +21,7 @@ export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
             id: "05",
+            slug: "viktoriia-zabara",
             siteLink: "https://viktoriia-zabara.netlify.app/",
             image: "https://drive.google.com/uc?export=view&id=18RWpznE25pfHZpFXStzp4MujPpm0cwbI",
             category: "landing",
@@ -35,6 +37,7 @@ export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
             id: "04",
+            slug: "protection-in-ua",
             siteLink: "https://protection.in.ua/",
             image: "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
             category: "website",
@@ -50,6 +53,7 @@ export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
             id: "03",
+            slug: "theatermag-com-ua",
             siteLink: "https://theatermag.com.ua/",
             image: "https://drive.google.com/uc?export=view&id=1VQJcG8uJi6bSKhlDfY9bd3608dxhGJTQ",
             category: "website",
@@ -65,6 +69,7 @@ export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
             id: "02",
+            slug: "batatfarm-com",
             siteLink: "https://batatfarm.com/",
             image: "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             category: "shop",
@@ -80,6 +85,7 @@ export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
             id: "01",
+            slug: "ilovemyteam-online",
             siteLink: "https://www.ilovemyteam.online/",
             image: "https://drive.google.com/uc?export=view&id=1euhTPDYseSUaGESWCxCcdZ0IAlp-mGVX",
             category: "website",

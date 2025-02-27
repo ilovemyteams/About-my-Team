@@ -34,6 +34,10 @@ export async function generateMetadata({
     return {
         title: normalizedTitle,
         description: localization.shortDescription,
+        openGraph: {
+            description: localization.shortDescription,
+            title: normalizedTitle,
+        },
     };
 }
 

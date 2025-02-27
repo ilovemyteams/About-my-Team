@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 
 import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
+import { Link } from "@/src/navigation";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconCorner } from "../shared/Icons/IconCorner";
@@ -9,10 +10,14 @@ import { SeeCaseButton } from "./SeeCaseButton";
 
 export const ProjectCard = ({ data }: { data: ProjectDataItemType }) => {
     const locale = useLocale();
+    const slug = data.data.slug;
     const cornersStyles =
         "w-9 h-7 tab:w-[42px] tab:h-[33px] pc:w-[63px] pc:h-[50px] desk:w-[80px] desk:h-[63px] dark:text-purple-stroke text-purple-strokeLight";
     return (
-        <div className="relative w-full group cursor-pointer ">
+        <Link
+            href={`/portfolio/${slug}`}
+            className="relative w-full group cursor-pointer "
+        >
             <IconCorner className={`absolute top-0 left-0 ${cornersStyles}`} />
             <IconCorner
                 className={`absolute top-0 right-0 scale-x-[-1] ${cornersStyles}`}
@@ -35,6 +40,6 @@ export const ProjectCard = ({ data }: { data: ProjectDataItemType }) => {
                 </p>
             </div>
             <SeeCaseButton />
-        </div>
+        </Link>
     );
 };
