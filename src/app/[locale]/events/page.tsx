@@ -10,7 +10,7 @@ export async function generateMetadata({
 }) {
     return generatePageMetadata({
         locale,
-        namespace: "Events",
+        namespace: "EventsPage",
         canonical: "/events",
     });
 }

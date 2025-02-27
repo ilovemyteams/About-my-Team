@@ -260,7 +260,8 @@
         "breadcrumbItemAbout": "O nas",
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Usługi",
-        "breadcrumbItemIvents": "Wydarzenia"
+        "breadcrumbItemIvents": "Wydarzenia",
+        "breadcrumbItemPortfolio": "Wdrożone"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -286,45 +287,10 @@
         "details": "Więcej",
         "allService": "Wszystkie usługi"
     },
-    "Christmas": {
-        "titleSEO": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
-        "descriptionSEO": "Uwielbiamy kreatywność, a także wprowadzanie dobrego nastroju — czas na świąteczne życzenia, rabaty na nasze usługi oraz szansę na wygranie landing page",
-        "heroTitle": "Gratulacje dla zwycięzcy konkursu, <purple>Oleksandr Chudov</purple>",
-        "heroText": "Dziękujemy wszystkim za udział w naszym wydarzeniu! \nChociaż losowanie strony docelowej już się odbyło, na naszej choince i pod nią nadal można znaleźć prezenty!",
-        "heroStamp": "konkurs \nzakończony!",
-        "clickToys": "Kliknij na zabawki i otrzymaj życzenia świąteczne",
-        "clickPresents": "Wybierz prezent, aby otrzymać zniżkę na usługi",
-        "text": "<purple>Tworzymy</purple> nie tylko <purple>strony internetowe</purple>, ale rozwiązania, <purple>które pomagają</purple> firmą <purple>w rozwoju</purple>. Twój sukces jest naszym celem. Weź udział w losowaniu, wypełnij poniższy formularz i spraw, aby rok 2025 był rokiem wielkich możliwości!",
-        "ctaText": "Życzymy powodzenia! \nNie przegap swojej szansy na zdobycie strony docelowej, która przeniesie Twój biznes na wyższy poziom!",
-        "ctaBtn": "Uczestniczyć",
-        "discountTitle": "Ho-ho, gratulacje, rabat na kompleksową usługę!",
-        "discountBtn": "Kliknij, aby otrzymać",
-        "discountError": "Zniżka została już aktywowana! Nasz menedżer wkrótce się z Tobą skontaktuje",
-        "confirmTitle": "Aktywuj zniżkę",
-        "confirmText": "Aby otrzymać bonus, wypełnij poniższe pola",
-        "confirmCaption": "Aktywowane rabaty nie kumulują się. Rabat jest ważny do 28.02.2015.",
-        "greetingTitle": "Wesołych Świąt i Szczęśliwego Nowego Roku!",
-        "greetingText": "<redChudov>Aleksander Chudov</redChudov> \n wygrał darmowe zaprojektowanie strony docelowej od naszego zespołu. \n <linkChudov>Oto jak</linkChudov> obecnie wygląda jego strona dla pierwszej książki\nDo końca lutego całkowicie ją zmienimy!",
-        "greetingCaption": "Losowanie odbyło się 02.01.25 na żywo.",
-        "greetingBtn": "Zobacz",
-        "formPreface1": "Witaj, 2024! \n Jesteś prawie częścią historii i chcę Ci podziękować za wszystkie trudności i wyzwania, które mi przyniosłeś. Pomogły mi one rozwinąć się i osiągnąć nowy poziom. Ale wiem, że przede mną jest jeszcze więcej możliwości i osiągnięć!",
-        "formPreface2": "Aby osiągnąć moje cele i skalować mój biznes, potrzebuję nowoczesnej i skutecznej strony docelowej od i love my team. Dlatego wypełniam swoje dane i wierzę w świąteczny cud.",
-        "socialMediaLink": "Linki do sieci społecznościowych",
-        "productOrService": "Zakres działalności*",
-        "whyLanding": "Jaki produkt lub usługę oferujesz (krótko opisz, co sprzedajesz lub promujesz).*",
-        "mostImportant": "Co jest dla Ciebie najważniejsze w przyszłej stronie internetowej? (Projekt, szybkość ładowania, funkcjonalność, SEO itp.)*",
-        "submitBtn": "Konkurs zakończony",
-        "placeholder": "Twoja odpowiedź",
-        "submittingConditions": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na <purple>Warunki przetwarzania danych osobowych</purple> i <purpleCond>Zasady udziału w losowaniu landing page</purpleCond>",
-        "wishDescription": "Kliknij ten link i otrzymaj spersonalizowane życzenia i prezenty!",
-        "envelopeAlt": "Koperta z życzeniami i pocztówką"
-    },
-    "PastEvents": {
-        "pageBigTitle": "Nasze poprzednie wydarzenia"
-    },
-    "Events": {
+    "EventsPage": {
         "days": "{days, plural, =1 {dzień} other {dni}}",
         "title": "Do uruchomienia nowego wydarzenia",
+        "pageBigTitle": "Nasze poprzednie wydarzenia",
         "minutes": "{minutes, plural, =1 {minuta} few {minuty} other {minut}}",
         "hours": "{hours, plural, =1 {godzina} few {godziny} other {godzin}}",
         "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
@@ -332,18 +298,13 @@
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
         "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
     },
-    "Valentines": {
-        "secondSceneTitle": "Wybierz swoją zabawną walentynkę",
-        "secondSceneHint": "Kliknij balonik",
-        "secondSceneWishTitle": "Miłość to...",
-        "heroText": "Kochamy kreatywność i przynoszenie dobrego nastroju — do przodu z życzeniami na Dzień Świętego Walentego, prezentami na nasze usługi.",
-        "heroBtn": "Uzyskaj сertyfikat",
-        "certificateHere": "сertyfikat tutaj",
-        "clickHere": "<purple>Kliknij</purple> na kopertę, \naby <purple>otrzymać \ncertyfikat na</purple> <red>50$</red> \nna nasze usługi.",
-        "firstFootnote": "*Certyfikat nie może być monetyzowany",
-        "secondFootnote": "*Certyfikat można wykorzystać tylko raz",
-        "confirmationGreeting": "Gratulacje, otrzymałeś certyfikat na nasze usługi!",
-        "confirmationFootnote": "*Oferta jest jednorazowa i ważna do 01.04.2025",
-        "confirmationText": "Aby otrzymać certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z tobą"
+    "PortfolioPage": {
+        "title": "Наші <purple>реалізовані проєкти</purple>",
+        "text": "",
+        "titleSEO": "Наші реалізовані проєкти",
+        "descriptionSEO": "",
+        "seeCase": "дивитись кейс",
+        "editionalCard": "Тут може бути ваш проєкт",
+        "allProjects": "Всі проєкти"
     }
 }

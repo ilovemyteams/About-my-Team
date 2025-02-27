@@ -583,6 +583,10 @@ const config: Config = {
                 "linear-gradient(90deg, #10001A 0%, #300079 100%)",
             discountModalBgGradientLight:
                 "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            projectCardGradientDark:
+                "linear-gradient(to top, #5F3F87 0%,  #09002E 70%)",
+            projectCardGradient:
+                "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
         },
 
         backgroundSize: {
