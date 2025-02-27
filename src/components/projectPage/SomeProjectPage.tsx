@@ -1,8 +1,10 @@
+import { useLocale } from "next-intl";
+
 import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
 import { LocaleType } from "@/types/LocaleType";
-import { useLocale } from "next-intl";
-import { ProjectHeader } from "./ProjectHeader";
+
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { ProjectHeader } from "./ProjectHeader";
 
 export const SomeProjectPage = ({
     currentProject,

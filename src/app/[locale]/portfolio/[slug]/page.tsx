@@ -2,14 +2,12 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
 
-import { Service } from "@/src/components/servicePage/Service";
-import { servicesData, ServiceType } from "@/src/mockedData/servicesData";
-import { LocaleType } from "@/types/LocaleType";
+import { SomeProjectPage } from "@/src/components/projectPage/SomeProjectPage";
 import {
     allProjectsData,
     ProjectDataItemType,
 } from "@/src/mockedData/allProjectsData";
-import { SomeProjectPage } from "@/src/components/projectPage/SomeProjectPage";
+import { LocaleType } from "@/types/LocaleType";
 
 interface ProjectPageProps {
     params: {
