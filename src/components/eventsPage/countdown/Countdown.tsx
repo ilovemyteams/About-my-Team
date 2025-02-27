@@ -13,7 +13,7 @@ interface CountdownProps {
 
 export const Countdown = ({
     targetDate,
-    intlTitle = "Events.title",
+    intlTitle = "EventsPage.title",
 }: CountdownProps) => {
     const getTranslation = useTranslations();
     const [timeLeft, setTimeLeft] = useState<{
@@ -62,7 +62,7 @@ export const Countdown = ({
                                         : value}
                                 </p>
                                 <p className="capitalize text-sm tab:text-base pc:text-xl text-greyLight dark:text-grey">
-                                    {getTranslation(`Events.${unit}`, {
+                                    {getTranslation(`EventsPage.${unit}`, {
                                         [unit]: value,
                                     })}
                                 </p>
