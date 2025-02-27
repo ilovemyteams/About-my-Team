@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useLocale } from "next-intl";
 
 import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
+import { LocaleType } from "@/types/LocaleType";
 
 import { IconCorner } from "../shared/Icons/IconCorner";
-import { LocaleType } from "@/types/LocaleType";
 
 export const ProjectCard = ({ data }: { data: ProjectDataItemType }) => {
     const locale = useLocale();
