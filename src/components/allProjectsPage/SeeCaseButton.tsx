@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { IconArrow } from "../shared/Icons/IconArrow";
 
 export const SeeCaseButton = () => {
