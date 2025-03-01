@@ -3,6 +3,7 @@ import { allProjectsData } from "@/src/mockedData/allProjectsData";
 import { PageSection } from "../shared/PageSection";
 import { FilterAllProjects } from "./FilterAllProjects";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectStub } from "./ProjectStub";
 
 export const AllProjectsMainPart = () => {
     return (
@@ -17,6 +18,14 @@ export const AllProjectsMainPart = () => {
                         <ProjectCard data={item} />
                     </li>
                 ))}
+                {allProjectsData.length < 6 && (
+                    <li
+                        key={`${allProjectsData.length < 10 ? "0" : ""}${allProjectsData.length + 1}`}
+                        className="mb-6 tab:mb-10 pc:mb-[60px] desk:mb-10"
+                    >
+                        <ProjectStub />
+                    </li>
+                )}
             </ul>
         </PageSection>
     );
