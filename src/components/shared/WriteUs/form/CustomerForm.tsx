@@ -5,7 +5,7 @@ import { Form, Formik } from "formik";
 import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { usePathname } from "@/src/navigation";
+import { usePathname } from "@/src/i18n/routing";
 import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 

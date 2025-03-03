@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { Link } from "@/src/i18n/routing";
 import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
-import { Link } from "@/src/navigation";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconCorner } from "../shared/Icons/IconCorner";
