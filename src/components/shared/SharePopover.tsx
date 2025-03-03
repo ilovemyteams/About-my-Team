@@ -5,7 +5,7 @@ import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import {
