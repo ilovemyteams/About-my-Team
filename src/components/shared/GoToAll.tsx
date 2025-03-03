@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { useRouter } from "@/src/navigation";
+import { useRouter } from "@/src/i18n/routing";
 
 interface GoToAllProps {
     title: string;

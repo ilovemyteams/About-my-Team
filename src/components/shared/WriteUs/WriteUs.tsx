@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 import { Button } from "@/src/components/shared/Button";
-import { usePathname, useRouter } from "@/src/navigation";
+import { usePathname, useRouter } from "@/src/i18n/routing";
 
 interface WriteUsProps {
     className?: string;

@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
 import { locales } from "@/src/config";
-import { Link, usePathname } from "@/src/navigation";
+import { Link, usePathname } from "@/src/i18n/routing";
 
 const activeStyle = "outline-none dark:text-red text-redLight";
 const inactiveStyle = "outline-none dark:text-purple-stroke text-disabledLight";
