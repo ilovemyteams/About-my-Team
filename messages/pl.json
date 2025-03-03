@@ -299,12 +299,12 @@
         "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
     },
     "PortfolioPage": {
-        "title": "Наші <purple>реалізовані проєкти</purple>",
-        "text": "",
-        "titleSEO": "Наші реалізовані проєкти",
+        "title": "Nasze <purple>zrealizowane projekty</purple>",
+        "text": "Nasza specjalizacja to sklepy internetowe (e-commerce), stylowe strony docelowe (landing pages) dla firm i liderów branży oraz wielostronicowe strony internetowe dla organizacji komercyjnych i non-profit",
+        "titleSEO": "Nasze zrealizowane projekty",
         "descriptionSEO": "",
-        "seeCase": "дивитись кейс",
-        "editionalCard": "Тут може бути ваш проєкт",
-        "allProjects": "Всі проєкти"
+        "seeCase": "zobacz przykład",
+        "editionalCard": "Tutaj może być Twój projekt",
+        "allProjects": "Wszystkie projekty"
     }
 }
