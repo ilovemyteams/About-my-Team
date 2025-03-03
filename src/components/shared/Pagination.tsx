@@ -4,7 +4,7 @@ import {
     Pagination as NextUIPagination,
     PaginationItemRenderProps,
     PaginationItemType,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { IconGoBack } from "./Icons/IconGoBack";
