@@ -39,14 +39,15 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             <Link
                 href={`/${locale}/member/${id}`}
                 onClick={savingFilteredListURL}
+                className="group"
             >
-                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2]">
+                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
                         <Image
                             src={imageURL}
                             width={246}
                             height={196}
-                            className="hover:scale-105 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
+                            className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
                                 aspect-[128/150] tab:aspect-[234/186] pc:aspect-[246/196] "
                             alt={data[locale as LocaleType]?.name}
                             loading="lazy"

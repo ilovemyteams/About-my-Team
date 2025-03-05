@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 
+import { Link } from "@/src/i18n/routing";
 import { ServiceType } from "@/src/mockedData/servicesData";
-import { Link } from "@/src/navigation";
 import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 import { LocaleType } from "@/types/LocaleType";
 

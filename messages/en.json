@@ -297,12 +297,12 @@
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     },
     "PortfolioPage": {
-        "title": "Наші <purple>реалізовані проєкти</purple>",
-        "text": "",
+        "title": "Our <purple>Completed Projects</purple>",
+        "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
         "titleSEO": "Наші реалізовані проєкти",
-        "descriptionSEO": "",
-        "seeCase": "дивитись кейс",
+        "descriptionSEO": "Our Completed Projects",
+        "seeCase": "view case",
         "stub": "Your project could be here",
-        "allProjects": "Всі проєкти"
+        "allProjects": "All Projects"
     }
 }

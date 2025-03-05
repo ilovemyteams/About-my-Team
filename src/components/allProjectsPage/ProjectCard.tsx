@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
+import { Link } from "@/src/i18n/routing";
 import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
-import { Link } from "@/src/navigation";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconCorner } from "../shared/Icons/IconCorner";
@@ -35,7 +35,7 @@ export const ProjectCard = ({ data }: { data: ProjectDataItemType }) => {
                 <h4 className="mb-1 font-caviar text-lg desk:text-2xl">
                     {data[locale as LocaleType].title}
                 </h4>
-                <p className="text-sm20 tab:text-base23 desk:text-lg25">
+                <p className="text-sm20 tab:text-base23 desk:text-lg25 mb-4">
                     {data[locale as LocaleType].subtitle}
                 </p>
             </div>

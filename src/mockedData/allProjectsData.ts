@@ -31,8 +31,11 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "ІТ рекрутер",
             subtitle: "Лендінг для IT-рекрутера",
         },
-        en: { title: "string", subtitle: "string" },
-        pl: { title: "string", subtitle: "string" },
+        en: {
+            title: "IT Recruiter",
+            subtitle: "Landing Page for an IT Recruiter",
+        },
+        pl: { title: "Rekruter IT", subtitle: "Landing page dla rekrutera IT" },
     },
     {
         data: {
@@ -47,8 +50,14 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "Міграційний адвокат",
             subtitle: "Вебсайт для міграційного адвоката",
         },
-        en: { title: "string", subtitle: "string" },
-        pl: { title: "string", subtitle: "string" },
+        en: {
+            title: "Migration Lawyer",
+            subtitle: "Website for a Migration Lawyer",
+        },
+        pl: {
+            title: "Prawnik ds. migracji",
+            subtitle: "Strona internetowa dla prawnika ds. migracji",
+        },
     },
     {
         data: {
@@ -63,8 +72,14 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "Український театр",
             subtitle: "Вебсайт для ГО “Український театр”",
         },
-        en: { title: "string", subtitle: "string" },
-        pl: { title: "string", subtitle: "string" },
+        en: {
+            title: "Ukrainian Theater",
+            subtitle: `Website for the NGO "Ukrainian Theater"`,
+        },
+        pl: {
+            title: "Ukraiński Teatr",
+            subtitle: `Strona internetowa dla NGO "Ukraiński Teatr"`,
+        },
     },
     {
         data: {
@@ -79,8 +94,14 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "Смачно! на селі",
             subtitle: "Інтернет магазин натуральних продуктів",
         },
-        en: { title: "", subtitle: "" },
-        pl: { title: "", subtitle: "" },
+        en: {
+            title: "Smachno! na seli",
+            subtitle: "Online Store for Natural Products",
+        },
+        pl: {
+            title: "Smachno! na seli",
+            subtitle: "Sklep internetowy z produktami naturalnymi",
+        },
     },
     {
         data: {
@@ -95,7 +116,10 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "i love my team",
             subtitle: "Вебсайт для IT команди",
         },
-        en: { title: "", subtitle: "" },
-        pl: { title: "", subtitle: "" },
+        en: { title: "i love my team", subtitle: "Website for an IT Team" },
+        pl: {
+            title: "i love my team",
+            subtitle: "Strona internetowa dla zespołu IT",
+        },
     },
 ];
