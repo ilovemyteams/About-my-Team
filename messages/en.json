@@ -128,7 +128,11 @@
         "readMore": "Read more",
         "goBack": "Back",
         "return": "back",
-        "search": "Search"
+        "search": "Search",
+        "AllProjects": "All projects",
+        "LendingProjects": "Lending",
+        "E-commerceProjects": "E-commerce",
+        "Websites": "Websites"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -296,7 +300,7 @@
         "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     },
-    "PortfolioPage": {
+    "PortfolioPageAllProjects": {
         "title": "Our <purple>Completed Projects</purple>",
         "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
         "titleSEO": "Наші реалізовані проєкти",
@@ -304,5 +308,33 @@
         "seeCase": "view case",
         "editionalCard": "Your project could be here",
         "allProjects": "All Projects"
+    },
+    "PortfolioPageLandingProjects": {
+        "title": "Our <purple>Stylish Landing Pages</purple>",
+        "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
+        "titleSEO": "Our Stylish Landing Pages",
+        "descriptionSEO": "",
+        "seeCase": "view case",
+        "editionalCard": "Your project could be here",
+       "LandingProjects": "Stylish Landing Pages"
+    },
+    "PortfolioPageECommerceProjects": {
+        "title": "Our <purple>E-commerce Stores</purple>",
+        "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
+        "titleSEO": "Our E-commerce Stores",
+        "descriptionSEO": "",
+        "seeCase": "view case",
+        "editionalCard": "Your project could be here",
+        "ECommerceProjects": "E-commerce Stores"
+    },
+    "PortfolioPageWebsites": {
+        "title": "Our <purple>Multi-page Representative Websites</purple>",
+        "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
+        "titleSEO": "Our Multi-page Representative Websites",
+        "descriptionSEO": "",
+        "seeCase": "view case",
+        "editionalCard": "Your project could be here",
+        "Websites": "Multi-page Representative Websites"
+
     }
 }
