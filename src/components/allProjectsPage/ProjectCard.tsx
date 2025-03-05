@@ -33,7 +33,7 @@ export const ProjectCard = ({ data }: { data: ProjectDataItemType }) => {
             </div>
             <div className=" pc:flex pc:justify-between pc:items-end">
                 <div className="mb-4 pc:mb-0">
-                    <h4 className="mb-1 font-caviar text-lg desk:text-2xl">
+                    <h4 className="mb-1 font-caviar text-lg desk:text-2xl dark:text-white-200 text-purple-200">
                         {data[locale as LocaleType].title}
                     </h4>
                     <p className="text-sm20 tab:text-base23 desk:text-lg25">
