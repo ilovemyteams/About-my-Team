@@ -37,9 +37,9 @@ export const AllProjectsMainPart = ({
                         <ProjectCard data={item} />
                     </li>
                 ))}
-                {portfolios.length < 6 && (
+                {portfolios.length < ITEMS_PER_PAGE && (
                     <li
-                        key={`${allProjectsData.length < 10 ? "0" : ""}${allProjectsData.length + 1}`}
+                        key={"stub"}
                         className="mb-6 tab:mb-10 pc:mb-[60px] desk:mb-10"
                     >
                         <ProjectStub />
