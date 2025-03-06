@@ -19,10 +19,7 @@ export const usePaginationData = <T>(
         ? itemsList.slice(min, max)
         : itemsList;
 
-    const totalPages =
-        listLength % itemsPerPage === 0
-            ? listLength / itemsPerPage
-            : Math.trunc(listLength / itemsPerPage) + 1;
+    const totalPages = Math.ceil(listLength / itemsPerPage);
 
     return { dataSlice, totalPages, isPaginationNeeded };
 };
