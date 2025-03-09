@@ -22,7 +22,7 @@ export const ProjectStub = () => {
                         height={133}
                         className="mx-auto h-[max(55%,50px)] w-auto opacity-35 group-hover:scale-110 duration-300 ease-out transition-transform"
                     />
-                    <p className="font-caviar text-center text-greyLight dark:text-grey text-lg tab:text-baseb pc:text-2xlb desk:text-4xl">
+                    <p className="font-caviar text-center text-purple-200 dark:text-grey text-lg tab:text-baseb pc:text-2xlb desk:text-4xl">
                         {getTranslations("stub")}
                     </p>
                 </div>
