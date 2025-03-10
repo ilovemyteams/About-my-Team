@@ -23,8 +23,6 @@ export const AllProjectsMainPart = ({
         isPaginationNeeded,
     } = usePaginationData(allProjectsData, ITEMS_PER_PAGE, pageNumber);
 
-    console.log(JSON.stringify(searchParams), ">>num");
-
     return (
         <PageSection className="mb-[80px] tab:mb-[100px] desk:mb-[120px] items-center pc:pb-[60px]">
             <FilterAllProjects />
