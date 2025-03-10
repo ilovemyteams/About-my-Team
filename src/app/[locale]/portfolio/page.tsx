@@ -14,11 +14,15 @@ export async function generateMetadata({
     });
 }
 
-export default function Portfolio() {
+export default function Portfolio({
+    searchParams,
+}: {
+    searchParams: { page?: string };
+}) {
     return (
         <>
             <Header />
-            <AllProjectsMainPart />
+            <AllProjectsMainPart searchParams={searchParams} />
         </>
     );
 }

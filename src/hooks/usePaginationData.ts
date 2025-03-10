@@ -1,5 +1,5 @@
 interface UsePaginationReturn<T> {
-    questions: T[];
+    dataSlice: T[];
     totalPages: number;
     isPaginationNeeded: boolean;
 }
@@ -15,14 +15,11 @@ export const usePaginationData = <T>(
 
     const isPaginationNeeded = listLength > itemsPerPage;
 
-    const questions = isPaginationNeeded
+    const dataSlice = isPaginationNeeded
         ? itemsList.slice(min, max)
         : itemsList;
 
-    const totalPages =
-        listLength % itemsPerPage === 0
-            ? listLength / itemsPerPage
-            : Math.trunc(listLength / itemsPerPage) + 1;
+    const totalPages = Math.ceil(listLength / itemsPerPage);
 
-    return { questions, totalPages, isPaginationNeeded };
+    return { dataSlice, totalPages, isPaginationNeeded };
 };

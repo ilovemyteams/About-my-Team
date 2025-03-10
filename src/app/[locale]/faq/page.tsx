@@ -45,11 +45,11 @@ export default async function FAQ({
 
     const itemsQuantity = filteredQuestions.length;
 
-    const { questions, totalPages, isPaginationNeeded } = usePaginationData(
-        filteredQuestions,
-        ITEMS_PER_PAGE,
-        pageNumber
-    );
+    const {
+        dataSlice: questions,
+        totalPages,
+        isPaginationNeeded,
+    } = usePaginationData(filteredQuestions, ITEMS_PER_PAGE, pageNumber);
 
     const isCTAVisible = pageNumber === totalPages;
 
