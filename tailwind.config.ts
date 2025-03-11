@@ -587,8 +587,6 @@ const config: Config = {
                 "linear-gradient(to top, #5F3F87 0%,  #09002E 70%)",
             projectCardGradient:
                 "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
-            portfolioActiveButtonGradient:
-                "linear-gradient(to right, #4F0A86 50%, #20003F 100%)",
         },
 
         backgroundSize: {

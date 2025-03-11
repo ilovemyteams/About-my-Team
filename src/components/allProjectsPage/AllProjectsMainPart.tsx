@@ -1,16 +1,21 @@
 "use client";
-import { allProjectsData } from "@/src/mockedData/allProjectsData";
+import { useSearchParams } from "next/navigation";
+
+import {
+    allProjectsData,
+    projectCategories,
+} from "@/src/mockedData/allProjectsData";
 
 import { PageSection } from "../shared/PageSection";
-import { useFilterContext } from "./FilterContext";
 import { ProjectCard } from "./ProjectCard";
 
 export const AllProjectsMainPart = () => {
-    const { selectedCategory } = useFilterContext();
+    const searchParams = useSearchParams();
+    const selectedCategory =
+        searchParams.get("category") || projectCategories.ALL_PROJECTS;
 
-    // Фільтрація проектів по категорії
     const filteredProjects =
-        selectedCategory === "AllProjects"
+        selectedCategory === projectCategories.ALL_PROJECTS
             ? allProjectsData
             : allProjectsData.filter(
                   item => item.data.category === selectedCategory
