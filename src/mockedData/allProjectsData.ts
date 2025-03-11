@@ -8,7 +8,7 @@ type DataType = {
     siteLink?: string;
     image: string;
     video?: string;
-    category: "landing" | "website" | "shop";
+    category: "LandingProjects" | "Websites" | "ECommerceProjects";
 };
 export type ProjectDataItemType = {
     data: DataType;
@@ -17,6 +17,13 @@ export type ProjectDataItemType = {
     pl: ProjectDataItemTranslation;
 };
 
+export const categoryKeys = [
+    "AllProjects",
+    "LandingProjects",
+    "ECommerceProjects",
+    "Websites",
+];
+
 export const allProjectsData: ProjectDataItemType[] = [
     {
         data: {
@@ -24,7 +31,7 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "viktoriia-zabara",
             siteLink: "https://viktoriia-zabara.netlify.app/",
             image: "https://drive.google.com/uc?export=view&id=18RWpznE25pfHZpFXStzp4MujPpm0cwbI",
-            category: "landing",
+            category: "LandingProjects",
         },
 
         ua: {
@@ -43,7 +50,7 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "protection-in-ua",
             siteLink: "https://protection.in.ua/",
             image: "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
-            category: "website",
+            category: "Websites",
         },
 
         ua: {
@@ -65,7 +72,7 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "theatermag-com-ua",
             siteLink: "https://theatermag.com.ua/",
             image: "https://drive.google.com/uc?export=view&id=1VQJcG8uJi6bSKhlDfY9bd3608dxhGJTQ",
-            category: "website",
+            category: "Websites",
         },
 
         ua: {
@@ -87,7 +94,7 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "batatfarm-com",
             siteLink: "https://batatfarm.com/",
             image: "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
-            category: "shop",
+            category: "ECommerceProjects",
         },
 
         ua: {
@@ -109,7 +116,7 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "ilovemyteam-online",
             siteLink: "https://www.ilovemyteam.online/",
             image: "https://drive.google.com/uc?export=view&id=1euhTPDYseSUaGESWCxCcdZ0IAlp-mGVX",
-            category: "website",
+            category: "Websites",
         },
 
         ua: {

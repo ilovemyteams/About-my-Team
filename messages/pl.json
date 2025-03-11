@@ -132,9 +132,9 @@
         "return": "powrót",
         "search": "Szukaj",
         "AllProjects": "Wszystkie projekty",
-        "LendingProjects": "Łączności",
-        "E-commerceProjects": "Sklepy internetowe",
-        "Websites": "Wielostronicowe strony internetowe"
+        "LandingProjects": "Łączności",
+        "ECommerceProjects": "Sklepy",
+        "Websites": "Website"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"
@@ -312,30 +312,30 @@
         "allProjects": "Wszystkie projekty"
     },
     "PortfolioPageLandingProjects": {
-        "title": "Nasze <purple>stylowe strony docelowe</purple>",
-        "text": "Nasza specjalizacja to sklepy internetowe (e-commerce), stylowe strony docelowe (landing pages) dla firm i liderów branży oraz wielostronicowe strony internetowe dla organizacji komercyjnych i non-profit",
-        "titleSEO": "Nasze stylowe strony docelowe",
-        "descriptionSEO": "",
-        "seeCase": "zobacz przykład",
-        "editionalCard": "Tutaj może być Twój projekt",
-        "allProjects": "Wszystkie projekty"
+        "title": "Nasze <purple>stylowe strony landingowe z brandingiem</purple>",
+        "text": "Strony landingowe to nie tylko strony internetowe, to potężne narzędzie marketingowe. Tworzymy stylowe, efektywne i konwersyjne landingi, które przyciągają uwagę i sprzedają.",
+        "titleSEO": "Nasze stylowe strony landingowe z brandingiem",
+        "descriptionSEO": "Projektowanie i tworzenie landing page, które konwertują odwiedzających w klientów.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "LandingProjects": "Stylowe strony landingowe z brandingiem"
     },
     "PortfolioPageECommerceProjects": {
         "title": "Nasze <purple>sklepy internetowe</purple>",
-        "text": "Nasza specjalizacja to sklepy internetowe (e-commerce), stylowe strony docelowe (landing pages) dla firm i liderów branży oraz wielostronicowe strony internetowe dla organizacji komercyjnych i non-profit",
+        "text": "Tworzymy rozwiązania e-commerce, które przynoszą zyski. Wygodny UX, szybkość działania i responsywność – kluczowe cechy naszych projektów. Zobacz, jak pomagamy biznesowi sprzedawać online!",
         "titleSEO": "Nasze sklepy internetowe",
-        "descriptionSEO": "",
-        "seeCase": "zobacz przykład",
-        "editionalCard": "Tutaj może być Twój projekt",
-        "allProjects": "Wszystkie projekty"
+        "descriptionSEO": "Tworzenie sklepów internetowych opartych na nowoczesnych technologiach: szybko, wygodnie, efektywnie.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "ECommerceProjects": "Sklepy internetowe"
     },
     "PortfolioPageWebsites": {
-        "title": "Nasze <purple>wielostronicowe strony internetowe</purple>",
-        "text": "Nasza specjalizacja to sklepy internetowe (e-commerce), stylowe strony docelowe (landing pages) dla firm i liderów branży oraz wielostronicowe strony internetowe dla organizacji komercyjnych i non-profit",
-        "titleSEO": "Nasze wielostronicowe strony internetowe",
-        "descriptionSEO": "",
-        "seeCase": "zobacz przykład",
-        "editionalCard": "Tutaj może być Twój projekt",
-        "allProjects": "Wszystkie projekty"
+        "title": "Nasze <purple>reprezentacyjne strony wielostronicowe</purple>",
+        "text": "Tworzymy strony internetowe, które prezentują firmę w najlepszym świetle. Unikalny design, przemyślana struktura i jakość techniczna.",
+        "titleSEO": "Nasze reprezentacyjne strony wielostronicowe",
+        "descriptionSEO": "Tworzenie wielostronicowych stron internetowych dla firm i organizacji.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "Websites": "Reprezentacyjne strony wielostronicowe"
     }
 }

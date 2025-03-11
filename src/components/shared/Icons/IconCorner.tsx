@@ -1,4 +1,4 @@
-import { IconProps } from "../../../../types/iconProps.interface";
+import { IconProps } from "@/types/iconProps.interface";
 
 export const IconCorner = ({ className }: IconProps) => {
     return (
@@ -14,7 +14,7 @@ export const IconCorner = ({ className }: IconProps) => {
             <path
                 d="M80.6328 0H0.013657V63.4797"
                 stroke="currentColor"
-                stroke-width="1.26959"
+                strokeWidth="1.26959"
             />
         </svg>
     );

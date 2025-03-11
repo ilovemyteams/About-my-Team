@@ -1,31 +1,36 @@
-import { allProjectsData } from "@/src/mockedData/allProjectsData";
+"use client";
+import { useTranslations } from "next-intl";
+
+import { categoryKeys } from "@/src/mockedData/allProjectsData";
+
+import { useFilterContext } from "./FilterContext";
+
 export const FilterAllProjects = () => {
-    const categories = [
-        "all",
-        ...new Set(allProjectsData.map(item => item.data.category)),
-    ];
-    console.log(categories);
+    const t = useTranslations("Buttons");
+
+    const categories = categoryKeys.map(key => ({
+        key,
+        label: t(key),
+    }));
+
+    const { selectedCategory, setSelectedCategory } = useFilterContext();
+
+    const handleCategoryChange = (category: string) => {
+        setSelectedCategory(category);
+    };
+
     return (
-        <div className="w-[288px] h-12 border dark:border-purple-stroke border-purple-strokeLight mb-6 tab:mb-11 pc:mb-12">
-            <div className="flex flex-col gap-2 tab:gap-4 pc:gap-6">
-                {categories.map(category => (
-                    <div
-                        key={category}
-                        className="flex items-center gap-2 tab:gap-4 pc:gap-6 cursor-pointer"
-                    >
-                        <div
-                            className={`w-6 h-6 rounded-full ${
-                                category === "all"
-                                    ? "bg-purple-100 dark:bg-purple-stroke"
-                                    : "bg-purple-200 dark:bg-purple-strokeLight"
-                            }`}
-                        ></div>
-                        <p className="text-sm tab:text-base pc:text-base">
-                            {category}
-                        </p>
-                    </div>
-                ))}
-            </div>
+        <div className="flex gap-2 flex-wrap desk:min-w-[542px] pc:min-w-[542px]">
+            {categories.map(({ key, label }) => (
+                <button
+                    key={key}
+                    className={`w-[auto] h-12 border dark:border-purple-stroke border-purple-strokeLight py-[14px] px-[16px] text-justify flex items-center justify-center
+                        ${selectedCategory === key ? "text-[#FB7185] bg-portfolioActiveButtonGradient" : ""}`}
+                    onClick={() => handleCategoryChange(key)}
+                >
+                    {label}
+                </button>
+            ))}
         </div>
     );
 };

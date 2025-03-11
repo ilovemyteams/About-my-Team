@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { IconArrow } from "../shared/Icons/IconArrow";
 
 export const SeeCaseButton = () => {
-    const getTranslation = useTranslations("PortfolioPage");
+    const getTranslation = useTranslations("PortfolioPageAllProjects");
     return (
         <div className="flex gap-1 dark:text-purple-50 text-purple-130 group-hover:dark:text-red group-hover:text-redLight duration-300 ease-out transition-colors">
             <p className="font-caviar text-lg underline underline-offset-[3.5px]">
