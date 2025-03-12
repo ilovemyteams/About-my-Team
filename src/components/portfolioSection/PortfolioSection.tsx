@@ -9,7 +9,7 @@ import { PortfolioTitle } from "./PortfolioTitle";
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     const portfolioForRender = [...portfolioData].sort(
-        (a, b) => a.data.order - b.data.order
+        (a, b) => b.data.order - a.data.order
     );
     return (
         <Section id="portfolio" className="relative">
