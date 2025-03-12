@@ -14,9 +14,9 @@ export const IconArrow = ({ className }: IconProps) => {
             <path
                 d="M14.364 6.36396L10.1213 2.12132M14.364 6.36396L1.63604 6.36396M14.364 6.36396L10.1213 10.6066"
                 stroke="currentColor"
-                stroke-width="1.87083"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="1.87083"
+                strokeLinecap="square"
+                strokeLinejoin="round"
             />
         </svg>
     );
