@@ -1,5 +1,6 @@
 import { AllProjectsMainPart } from "@/src/components/allProjectsPage/AllProjectsMainPart";
 import { Header } from "@/src/components/allProjectsPage/Header";
+import { projectCategories } from "@/src/mockedData/allProjectsData";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
@@ -9,7 +10,7 @@ export async function generateMetadata({
 }) {
     return generatePageMetadata({
         locale,
-        namespace: "PortfolioPageAllProjects",
+        namespace: "PortfolioPage",
         canonical: "/portfolio",
     });
 }
@@ -17,11 +18,15 @@ export async function generateMetadata({
 export default function Portfolio({
     searchParams,
 }: {
-    searchParams: { page?: string };
+    searchParams: { page?: string; category?: string };
 }) {
     return (
         <>
-            <Header />
+            <Header
+                selectedCategory={
+                    searchParams.category || projectCategories.ALL_PROJECTS
+                }
+            />
             <AllProjectsMainPart searchParams={searchParams} />
         </>
     );

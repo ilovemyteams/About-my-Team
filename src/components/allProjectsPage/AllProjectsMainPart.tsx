@@ -6,7 +6,6 @@ import {
 
 import { PageSection } from "../shared/PageSection";
 import { Pagination } from "../shared/Pagination";
-import { FilterAllProjects } from "./FilterAllProjects";
 import { ProjectCard } from "./ProjectCard";
 import { ProjectStub } from "./ProjectStub";
 

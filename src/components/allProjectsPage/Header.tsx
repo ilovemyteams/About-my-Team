@@ -1,5 +1,3 @@
-"use client";
-import { useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 import { FilterAllProjects } from "@/src/components/allProjectsPage/FilterAllProjects";
@@ -7,11 +5,8 @@ import { projectCategories } from "@/src/mockedData/allProjectsData";
 
 import { PageTopSection } from "../shared/PageTopSection";
 
-export const Header = () => {
+export const Header = ({ selectedCategory }: { selectedCategory: string }) => {
     const getTranslation = useTranslations();
-    const searchParams = useSearchParams();
-    const selectedCategory =
-        searchParams.get("category") || projectCategories.ALL_PROJECTS;
 
     const breadcrumbs = [
         {
@@ -34,14 +29,14 @@ export const Header = () => {
     const text = getTranslation(textKey);
 
     return (
-        <section className="container max-w-[540px] tab:max-w-full desk:max-w-[1456px] pt-8 tab:pt-12 pc:pt-8 pb-[80px] tab:pb-10 pc:pb-[60px] desk:mb-[80px]">
+        <section className="container max-w-[540px] tab:max-w-full desk:max-w-[1336px] pt-8 pb-6 tab:pt-12 pc:pt-8 desk:pb-[80px] tab:pb-10 pc:pb-[60px] ">
             <PageTopSection breadcrumbsList={breadcrumbs} />
-            <h1 className="font-caviar text-3xl tab:text-4xl pc:text-6xl desk:text-7xl mb-6 tab:mb-10 pc:mb-[64px] desk:mb-[80px] text-purple-200 dark:text-grey">
+            <h1 className="font-caviar text-3xl tab:text-4xl pc:text-6xl desk:text-7xl tab:mb-10 pc:mb-[64px] desk:mb-[80px] text-purple-200 dark:text-grey">
                 {title}
             </h1>
-            <div className="flex mb-6 tab:mb-10 pc:mb-[60px] desk:mb-[80px] gap-15">
+            <div className="mt-6 flex flex-col mb-6 pc:gap-14 tab:gap-10 gap-5 justify-between pc:flex-row tab:flex-col-reverse ">
                 <FilterAllProjects />
-                <p className="mb-6 tab:mb-10 pc:mb-[60px] desk:mb-[80px] tab:w-[540px]">
+                <p className="desk:text-2xl34 font-geist tab:max-w-[734px] pc:text-xl tab:text-base">
                     {text}
                 </p>
             </div>
