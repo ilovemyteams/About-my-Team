@@ -8,7 +8,7 @@ export const ProjectStub = () => {
     const cornersStyles =
         "w-9 h-7 tab:w-[42px] tab:h-[33px] pc:w-[63px] pc:h-[50px] desk:w-[80px] desk:h-[63px] dark:text-purple-stroke text-purple-strokeLight";
     return (
-        <div className="relative w-full">
+        <div className="relative w-full group">
             <IconCorner className={`absolute top-0 left-0 ${cornersStyles}`} />
             <IconCorner
                 className={`absolute top-0 right-0 scale-x-[-1] ${cornersStyles}`}
@@ -20,7 +20,7 @@ export const ProjectStub = () => {
                         alt="heart-shaped company logo"
                         width={148}
                         height={133}
-                        className="mx-auto h-[max(55%,50px)] w-auto opacity-35 group-hover:scale-110 duration-300 ease-out transition-transform"
+                        className="mx-auto h-[max(55%,50px)] w-auto opacity-35 group-hover:scale-150 duration-300 ease-out transition-transform"
                     />
                     <p className="font-caviar text-center text-purple-200 dark:text-grey text-baseb pc:text-2xlb desk:text-4xl">
                         {getTranslations("stub")}
