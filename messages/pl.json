@@ -130,7 +130,11 @@
         "writeUs": "napisz do nas",
         "readMore": "Czytaj więcej",
         "return": "powrót",
-        "search": "Szukaj"
+        "search": "Szukaj",
+        "AllProjects": "Wszystkie projekty",
+        "LandingProjects": "Łączności",
+        "ECommerceProjects": "Sklepy",
+        "Websites": "Website"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"
@@ -306,5 +310,32 @@
         "seeCase": "zobacz przykład",
         "stub": "Tutaj może być Twój projekt",
         "allProjects": "Wszystkie projekty"
+    },
+    "PortfolioPageLandingProjects": {
+        "title": "Nasze <purple>stylowe strony landingowe z brandingiem</purple>",
+        "text": "Strony landingowe to nie tylko strony internetowe, to potężne narzędzie marketingowe. Tworzymy stylowe, efektywne i konwersyjne landingi, które przyciągają uwagę i sprzedają.",
+        "titleSEO": "Nasze stylowe strony landingowe z brandingiem",
+        "descriptionSEO": "Projektowanie i tworzenie landing page, które konwertują odwiedzających w klientów.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "LandingProjects": "Stylowe strony landingowe z brandingiem"
+    },
+    "PortfolioPageECommerceProjects": {
+        "title": "Nasze <purple>sklepy internetowe</purple>",
+        "text": "Tworzymy rozwiązania e-commerce, które przynoszą zyski. Wygodny UX, szybkość działania i responsywność – kluczowe cechy naszych projektów. Zobacz, jak pomagamy biznesowi sprzedawać online!",
+        "titleSEO": "Nasze sklepy internetowe",
+        "descriptionSEO": "Tworzenie sklepów internetowych opartych na nowoczesnych technologiach: szybko, wygodnie, efektywnie.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "ECommerceProjects": "Sklepy internetowe"
+    },
+    "PortfolioPageWebsites": {
+        "title": "Nasze <purple>reprezentacyjne strony wielostronicowe</purple>",
+        "text": "Tworzymy strony internetowe, które prezentują firmę w najlepszym świetle. Unikalny design, przemyślana struktura i jakość techniczna.",
+        "titleSEO": "Nasze reprezentacyjne strony wielostronicowe",
+        "descriptionSEO": "Tworzenie wielostronicowych stron internetowych dla firm i organizacji.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "Websites": "Reprezentacyjne strony wielostronicowe"
     }
 }

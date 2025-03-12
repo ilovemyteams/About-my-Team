@@ -128,7 +128,11 @@
         "readMore": "Read more",
         "goBack": "Back",
         "return": "back",
-        "search": "Search"
+        "search": "Search",
+        "AllProjects": "All projects",
+        "LandingProjects": "Lending",
+        "ECommerceProjects": "E-commerce",
+        "Websites": "Website"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -304,5 +308,33 @@
         "seeCase": "view case",
         "stub": "Your project could be here",
         "allProjects": "All Projects"
+    },
+    
+    "PortfolioPageLandingProjects": {
+        "title": "Our <purple>stylish branding landing pages</purple>",
+        "text": "Landing pages are not just websites, they're a powerful marketing tool. We create stylish, effective, and conversion-driven landing pages that grab attention and sell.",
+        "titleSEO": "Our stylish branding landing pages",
+        "descriptionSEO": "Design and development of landing pages that convert visitors into clients.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "LandingProjects": "Stylish branding landing pages"
+    },
+    "PortfolioPageECommerceProjects": {
+        "title": "Our <purple>e-commerce websites</purple>",
+        "text": "We create e-commerce solutions that bring profits. Convenient UX, fast performance, and responsiveness – the key features of our projects. See how we help businesses sell online!",
+        "titleSEO": "Our e-commerce websites",
+        "descriptionSEO": "Development of e-commerce websites with modern technologies: fast, convenient, and efficient.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "ECommerceProjects": "E-commerce websites"
+    },
+    "PortfolioPageWebsites": {
+        "title": "Our <purple>representative multi-page websites</purple>",
+        "text": "Branding, corporate, informational websites – we know how to create a site that presents your company in the best possible light. Unique design, thoughtful structure, and technical quality.",
+        "titleSEO": "Our representative multi-page websites",
+        "descriptionSEO": "Development of multi-page websites for businesses and organizations.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "Websites": "Representative multi-page websites"
     }
 }

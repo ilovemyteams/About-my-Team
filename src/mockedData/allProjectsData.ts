@@ -2,13 +2,13 @@ type ProjectDataItemTranslation = {
     title: string;
     subtitle: string;
 };
-type DataType = {
+export type DataType = {
     id: string;
     slug: string;
     siteLink?: string;
     image: string;
     video?: string;
-    category: "landing" | "website" | "shop";
+    category: "LandingProjects" | "ECommerceProjects" | "Websites";
 };
 export type ProjectDataItemType = {
     data: DataType;
@@ -24,9 +24,8 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "viktoriia-zabara",
             siteLink: "https://viktoriia-zabara.netlify.app/",
             image: "https://drive.google.com/uc?export=view&id=18RWpznE25pfHZpFXStzp4MujPpm0cwbI",
-            category: "landing",
+            category: "LandingProjects",
         },
-
         ua: {
             title: "ІТ рекрутер",
             subtitle: "Лендінг для IT-рекрутера",
@@ -35,7 +34,10 @@ export const allProjectsData: ProjectDataItemType[] = [
             title: "IT Recruiter",
             subtitle: "Landing Page for an IT Recruiter",
         },
-        pl: { title: "Rekruter IT", subtitle: "Landing page dla rekrutera IT" },
+        pl: {
+            title: "Rekruter IT",
+            subtitle: "Landing page dla rekrutera IT",
+        },
     },
     {
         data: {
@@ -43,9 +45,8 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "protection-in-ua",
             siteLink: "https://protection.in.ua/",
             image: "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
-            category: "website",
+            category: "Websites",
         },
-
         ua: {
             title: "Міграційний адвокат",
             subtitle: "Вебсайт для міграційного адвоката",
@@ -65,9 +66,8 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "theatermag-com-ua",
             siteLink: "https://theatermag.com.ua/",
             image: "https://drive.google.com/uc?export=view&id=1VQJcG8uJi6bSKhlDfY9bd3608dxhGJTQ",
-            category: "website",
+            category: "Websites",
         },
-
         ua: {
             title: "Український театр",
             subtitle: "Вебсайт для ГО “Український театр”",
@@ -87,9 +87,8 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "batatfarm-com",
             siteLink: "https://batatfarm.com/",
             image: "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
-            category: "shop",
+            category: "ECommerceProjects",
         },
-
         ua: {
             title: "Смачно! на селі",
             subtitle: "Інтернет магазин натуральних продуктів",
@@ -109,14 +108,16 @@ export const allProjectsData: ProjectDataItemType[] = [
             slug: "ilovemyteam-online",
             siteLink: "https://www.ilovemyteam.online/",
             image: "https://drive.google.com/uc?export=view&id=1euhTPDYseSUaGESWCxCcdZ0IAlp-mGVX",
-            category: "website",
+            category: "Websites",
         },
-
         ua: {
             title: "i love my team",
             subtitle: "Вебсайт для IT команди",
         },
-        en: { title: "i love my team", subtitle: "Website for an IT Team" },
+        en: {
+            title: "i love my team",
+            subtitle: "Website for an IT Team",
+        },
         pl: {
             title: "i love my team",
             subtitle: "Strona internetowa dla zespołu IT",
