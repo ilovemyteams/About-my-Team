@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
 import { FilterAllProjects } from "@/src/components/allProjectsPage/FilterAllProjects";
-import { projectCategories } from "@/src/mockedData/allProjectsData";
 
 import { PageTopSection } from "../shared/PageTopSection";
 
@@ -15,8 +14,8 @@ export const Header = ({ selectedCategory }: { selectedCategory: string }) => {
         },
     ];
 
-    const titleKey = `PortfolioPage${selectedCategory !== projectCategories.ALL_PROJECTS ? selectedCategory : ""}.title`;
-    const textKey = `PortfolioPage${selectedCategory !== projectCategories.ALL_PROJECTS ? selectedCategory : ""}.text`;
+    const titleKey = `PortfolioPage${selectedCategory !== "AllProjects" ? selectedCategory : ""}.title`;
+    const textKey = `PortfolioPage${selectedCategory !== "AllProjects" ? selectedCategory : ""}.text`;
 
     const title = getTranslation.rich(titleKey, {
         purple: chunk => (

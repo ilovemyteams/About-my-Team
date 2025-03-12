@@ -1,6 +1,5 @@
 import { AllProjectsMainPart } from "@/src/components/allProjectsPage/AllProjectsMainPart";
 import { Header } from "@/src/components/allProjectsPage/Header";
-import { projectCategories } from "@/src/mockedData/allProjectsData";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
@@ -22,11 +21,7 @@ export default function Portfolio({
 }) {
     return (
         <>
-            <Header
-                selectedCategory={
-                    searchParams.category || projectCategories.ALL_PROJECTS
-                }
-            />
+            <Header selectedCategory={searchParams.category || "AllProjects"} />
             <AllProjectsMainPart searchParams={searchParams} />
         </>
     );

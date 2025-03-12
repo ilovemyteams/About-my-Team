@@ -1,8 +1,5 @@
 import { usePaginationData } from "@/src/hooks/usePaginationData";
-import {
-    allProjectsData,
-    projectCategories,
-} from "@/src/mockedData/allProjectsData";
+import { allProjectsData } from "@/src/mockedData/allProjectsData";
 
 import { PageSection } from "../shared/PageSection";
 import { Pagination } from "../shared/Pagination";
@@ -19,12 +16,10 @@ export const AllProjectsMainPart = ({
     searchParams,
 }: AllProjectsMainPartProps) => {
     const pageNumber = searchParams?.page ? parseInt(searchParams.page) : 1;
-    const selectedCategory =
-        searchParams?.category || projectCategories.ALL_PROJECTS;
+    const selectedCategory = searchParams?.category || "AllProjects";
 
-    // Фільтруємо за категорією
     const filteredProjects =
-        selectedCategory === projectCategories.ALL_PROJECTS
+        selectedCategory === "AllProjects"
             ? allProjectsData
             : allProjectsData.filter(
                   item => item.data.category === selectedCategory

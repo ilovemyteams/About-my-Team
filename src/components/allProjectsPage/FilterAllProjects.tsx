@@ -3,15 +3,19 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { projectCategories } from "@/src/mockedData/allProjectsData";
+import { allProjectsData } from "@/src/mockedData/allProjectsData";
 
 export const FilterAllProjects = () => {
     const t = useTranslations("Buttons");
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    const selectedCategory =
-        searchParams.get("category") || projectCategories.ALL_PROJECTS;
+    const categories = [
+        "AllProjects",
+        ...new Set(allProjectsData.map(item => item.data.category)),
+    ];
+
+    const selectedCategory = searchParams.get("category") || "AllProjects";
 
     const handleCategoryChange = (category: string) => {
         if (category !== selectedCategory) {
@@ -23,7 +27,7 @@ export const FilterAllProjects = () => {
 
     return (
         <div className="flex gap-4 flex-wrap deskx:flex-nowrap desk:flex-nowrap pc:flex-nowrap">
-            {Object.values(projectCategories).map(value => (
+            {categories.map(value => (
                 <button
                     key={value}
                     className={`h-12 border dark:border-purple-stroke w-fit border-purple-strokeLight py-[14px] px-4 text-justify flex items-center justify-center dark:text-disabledLight text-greyLightfont-caviar text-baseb text-nowrap 
