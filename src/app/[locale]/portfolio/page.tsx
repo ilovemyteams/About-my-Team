@@ -24,7 +24,7 @@ export default function Portfolio({
         <>
             <Header />
             <AllProjectsMainPart searchParams={searchParams} />
-            <WriteUsSection text="titleIWant" />
+            <WriteUsSection text="titleIWant" eventGTM="order_form_portfolio" />
         </>
     );
 }
