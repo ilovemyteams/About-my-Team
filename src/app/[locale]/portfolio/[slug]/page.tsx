@@ -4,9 +4,9 @@ import React from "react";
 
 import { SomeProjectPage } from "@/src/components/projectPage/SomeProjectPage";
 import {
-    allProjectsData,
-    ProjectDataItemType,
-} from "@/src/mockedData/allProjectsData";
+    portfolioData,
+    PortfolioDataItemType,
+} from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 interface ProjectPageProps {
@@ -19,8 +19,8 @@ interface ProjectPageProps {
 export async function generateMetadata({
     params,
 }: ProjectPageProps): Promise<Metadata> {
-    const displayedProject: ProjectDataItemType | undefined =
-        allProjectsData.find(project => project.data.slug === params.slug);
+    const displayedProject: PortfolioDataItemType | undefined =
+        portfolioData.find(project => project.data.slug === params.slug);
 
     if (!displayedProject) {
         return {
@@ -31,7 +31,7 @@ export async function generateMetadata({
 
     const localization = displayedProject[params.locale as LocaleType];
     const normalizedTitle =
-        localization.title[0].toUpperCase() + localization.title.slice(1);
+        localization.name[0].toUpperCase() + localization.name.slice(1);
 
     return {
         title: normalizedTitle,
@@ -44,7 +44,7 @@ export async function generateMetadata({
 }
 
 export default function ProjectPage({ params }: ProjectPageProps) {
-    const currentProject = allProjectsData.find(
+    const currentProject = portfolioData.find(
         item => item.data.slug === params.slug
     );
 

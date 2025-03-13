@@ -1,6 +1,6 @@
 import { useLocale } from "next-intl";
 
-import { ProjectDataItemType } from "@/src/mockedData/allProjectsData";
+import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
@@ -9,14 +9,14 @@ import { ProjectHeader } from "./ProjectHeader";
 export const SomeProjectPage = ({
     currentProject,
 }: {
-    currentProject: ProjectDataItemType;
+    currentProject: PortfolioDataItemType;
 }) => {
     const locale = useLocale();
-    const { title } = currentProject[locale as LocaleType];
+    const { name } = currentProject[locale as LocaleType];
 
     return (
         <>
-            <ProjectHeader title={title} />
+            <ProjectHeader title={name} />
             <UnderConstruction />
         </>
     );

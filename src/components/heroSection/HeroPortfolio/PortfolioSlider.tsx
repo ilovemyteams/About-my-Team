@@ -30,7 +30,7 @@ export const PortfolioSlider = () => {
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
     const portfolioForRender = [...portfolioData].sort(
-        (a, b) => a.data.order - b.data.order
+        (a, b) => b.data.order - a.data.order
     );
 
     return (

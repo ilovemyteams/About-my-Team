@@ -130,7 +130,7 @@
         "return": "back",
         "search": "Search",
         "AllProjects": "All projects",
-        "LandingProjects": "Lending",
+        "LandingProjects": "Landing",
         "ECommerceProjects": "E-commerce",
         "Websites": "Website"
     },
@@ -303,13 +303,13 @@
     "PortfolioPage": {
         "title": "Our <purple>Completed Projects</purple>",
         "text": "Our specialization includes e-commerce stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
-        "titleSEO": "Наші реалізовані проєкти",
-        "descriptionSEO": "Our Completed Projects",
+        "titleSEO": "Our Completed Projects ",
+        "descriptionSEO": "Explore our portfolio of projects that combine aesthetics and functionality. Landing pages, websites, and online stores designed to meet your business needs",
         "seeCase": "view case",
         "stub": "Your project could be here",
         "allProjects": "All Projects"
     },
-    
+
     "PortfolioPageLandingProjects": {
         "title": "Our <purple>stylish branding landing pages</purple>",
         "text": "Landing pages are not just websites, they're a powerful marketing tool. We create stylish, effective, and conversion-driven landing pages that grab attention and sell.",
