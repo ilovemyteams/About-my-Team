@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
-import { allProjectsData } from "@/src/mockedData/allProjectsData";
+import { portfolioData } from "@/src/mockedData/portfolioData";
 
 export const FilterAllProjects = () => {
     const t = useTranslations("Buttons");
@@ -12,7 +12,7 @@ export const FilterAllProjects = () => {
 
     const categories = [
         "AllProjects",
-        ...new Set(allProjectsData.map(item => item.data.category)),
+        ...new Set(portfolioData.map(item => item.data.category)),
     ];
 
     const selectedCategory = searchParams.get("category") || "AllProjects";

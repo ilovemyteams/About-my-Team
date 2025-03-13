@@ -1,5 +1,5 @@
 import { usePaginationData } from "@/src/hooks/usePaginationData";
-import { allProjectsData } from "@/src/mockedData/allProjectsData";
+import { portfolioData } from "@/src/mockedData/portfolioData";
 
 import { PageSection } from "../shared/PageSection";
 import { Pagination } from "../shared/Pagination";
@@ -20,8 +20,8 @@ export const AllProjectsMainPart = ({
 
     const filteredProjects =
         selectedCategory === "AllProjects"
-            ? allProjectsData
-            : allProjectsData.filter(
+            ? portfolioData
+            : portfolioData.filter(
                   item => item.data.category === selectedCategory
               );
 
