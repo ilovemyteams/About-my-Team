@@ -30,7 +30,7 @@ export const FilterAllProjects = () => {
             {categories.map(value => (
                 <button
                     key={value}
-                    className={`h-12 border dark:border-purple-stroke w-fit border-purple-strokeLight py-[14px] px-4 text-justify flex items-center justify-center dark:text-disabledLight text-greyLightfont-caviar text-baseb text-nowrap 
+                    className={`h-12 border dark:border-purple-stroke w-fit border-purple-strokeLight py-[14px] px-4 text-justify flex items-center justify-center dark:text-disabledLight text-greyLight font-caviar text-sm tab:text-base font-bold text-nowrap 
                         ${selectedCategory === value ? "dark:text-red text-redLight dark:bg-memberMenuGradientDark bg-memberMenuGradientLight" : ""}`}
                     onClick={() => handleCategoryChange(value)}
                 >

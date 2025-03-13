@@ -24,7 +24,7 @@ export const ProjectCard = ({ data }: { data: PortfolioDataItemType }) => {
             />
             <div className="dark:bg-projectCardGradientDark bg-projectCardGradient mb-3 desk:mb-4 overflow-hidden">
                 <Image
-                    src={data.data.image}
+                    src={data.data.imageForAllProjectsPage}
                     alt={data[locale as LocaleType].name}
                     width={1320}
                     height={990}

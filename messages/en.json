@@ -130,7 +130,7 @@
         "return": "back",
         "search": "Search",
         "AllProjects": "All projects",
-        "LandingProjects": "Lending",
+        "LandingProjects": "Landing",
         "ECommerceProjects": "E-commerce",
         "Websites": "Website"
     },
@@ -309,7 +309,7 @@
         "stub": "Your project could be here",
         "allProjects": "All Projects"
     },
-    
+
     "PortfolioPageLandingProjects": {
         "title": "Our <purple>stylish branding landing pages</purple>",
         "text": "Landing pages are not just websites, they're a powerful marketing tool. We create stylish, effective, and conversion-driven landing pages that grab attention and sell.",

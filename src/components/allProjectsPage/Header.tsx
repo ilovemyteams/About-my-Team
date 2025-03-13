@@ -33,16 +33,12 @@ export const Header = ({ selectedCategory }: { selectedCategory: string }) => {
             <h1 className="font-caviar text-3xl tab:text-4xl pc:text-6xl desk:text-7xl tab:mb-10 pc:mb-[64px] desk:mb-[80px] text-purple-200 dark:text-grey">
                 {title}
             </h1>
-            <div className="mt-6 flex flex-col mb-6 pc:gap-14 tab:gap-10 gap-5 justify-between pc:flex-row tab:flex-col-reverse ">
+            <div className="mt-6 flex flex-col pc:gap-14 tab:gap-10 gap-5 justify-between pc:flex-row tab:flex-col-reverse ">
                 <FilterAllProjects />
                 <p className="desk:text-2xl34 font-geist tab:max-w-[734px] pc:text-xl tab:text-base">
                     {text}
                 </p>
             </div>
-            <div
-                aria-label="decoration line"
-                className="w-full h-[1px] dark:bg-purple-stroke purple-strokeLight"
-            ></div>
         </section>
     );
 };
