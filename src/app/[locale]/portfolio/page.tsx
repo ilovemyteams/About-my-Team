@@ -18,11 +18,11 @@ export async function generateMetadata({
 export default function Portfolio({
     searchParams,
 }: {
-    searchParams: { page?: string };
+    searchParams: { page?: string; category?: string };
 }) {
     return (
         <>
-            <Header />
+            <Header selectedCategory={searchParams.category || "AllProjects"} />
             <AllProjectsMainPart searchParams={searchParams} />
             <WriteUsSection text="titleIWant" eventGTM="order_form_portfolio" />
         </>
