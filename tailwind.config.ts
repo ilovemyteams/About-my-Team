@@ -1,4 +1,4 @@
-import { nextui } from "@nextui-org/react";
+import { heroui } from "@heroui/react";
 import tailwindScrollbar from "tailwind-scrollbar";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
@@ -8,7 +8,7 @@ const config: Config = {
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+        "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     darkMode: "class",
     theme: {
@@ -583,6 +583,10 @@ const config: Config = {
                 "linear-gradient(90deg, #10001A 0%, #300079 100%)",
             discountModalBgGradientLight:
                 "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            projectCardGradientDark:
+                "linear-gradient(to top, #5F3F87 0%,  #09002ECC 60%, #09002E1A 100%)",
+            projectCardGradient:
+                "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
         },
 
         backgroundSize: {
@@ -594,7 +598,7 @@ const config: Config = {
         },
     },
     plugins: [
-        nextui(),
+        heroui(),
         tailwindScrollbar({
             nocompatible: true,
             preferredStrategy: "pseudoelements",

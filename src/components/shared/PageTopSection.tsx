@@ -1,5 +1,5 @@
 "use client";
-import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
+import { BreadcrumbItem, Breadcrumbs } from "@heroui/react";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 

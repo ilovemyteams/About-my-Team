@@ -5,13 +5,14 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 import { Button } from "@/src/components/shared/Button";
-import { usePathname, useRouter } from "@/src/navigation";
+import { usePathname, useRouter } from "@/src/i18n/routing";
 
 interface WriteUsProps {
     className?: string;
+    eventGTM?: string;
 }
 
-export const WriteUs = ({ className }: WriteUsProps) => {
+export const WriteUs = ({ className, eventGTM }: WriteUsProps) => {
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
 
@@ -20,7 +21,7 @@ export const WriteUs = ({ className }: WriteUsProps) => {
     const onClickButton = () => {
         router.push(`/order?source=${path}`);
         sendGTMEvent({
-            event: "order_form_start",
+            event: eventGTM || "order_form_start",
             page_location: path,
         });
     };

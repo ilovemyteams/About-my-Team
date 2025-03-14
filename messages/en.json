@@ -128,7 +128,11 @@
         "readMore": "Read more",
         "goBack": "Back",
         "return": "back",
-        "search": "Search"
+        "search": "Search",
+        "AllProjects": "All projects",
+        "landings": "Landing page",
+        "onlinestores": "Online store",
+        "websites": "Website"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -259,7 +263,8 @@
         "breadcrumbItemAbout": "About us",
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Services",
-        "breadcrumbItemIvents": "Events"
+        "breadcrumbItemIvents": "Events",
+        "breadcrumbItemPortfolio": "Portfolio"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -285,44 +290,9 @@
         "details": "More",
         "allService": "All services"
     },
-    "Christmas": {
-        "titleSEO": "Merry Christmas!",
-        "descriptionSEO": "We love creativity and bringing a good mood - go ahead and get your Christmas wishes, discounts on our services, and the opportunity to win a landing page",
-        "heroTitle": "Congratulations to the winner of the giveaway, <purple>Oleksandr Chudov</purple>",
-        "heroText": "Thank you all for participating in our event! \nAlthough the landing page giveaway has already been held, there are still gifts to be found on and under our Christmas tree!",
-        "heroStamp": "giveaway \nhas ended!",
-        "clickToys": "Click on the toys and get your wish for the holidays",
-        "clickPresents": "Choose a gift to get a discount on services",
-        "text": "We <purple>create</purple> not just <purple>websites</purple>, but solutions <purple>that help</purple> businesses <purple>grow</purple>. Your success is our goal. Take part in the draw, fill out the form below and make 2025 a year of great opportunities!",
-        "ctaText": "Good luck! \nDon't miss your chance to get a landing page that will take your business to the next level!",
-        "ctaBtn": "To participate",
-        "discountTitle": "Ho-ho, congratulations, your discount for a comprehensive service!",
-        "discountBtn": "Click to get it ",
-        "discountError": "You have already activated the discount! Expect our manager to contact you shortly",
-        "confirmTitle": "Activation of the discount",
-        "confirmText": "To get your bonus, fill in the fields below",
-        "confirmCaption": "Activated discounts cannot be combined. The discount is valid until 28.02.2025.",
-        "greetingTitle": "Merry Christmas and Happy New Year!",
-        "greetingText": "<redChudov>Alexander Chudov</redChudov> \n has won a free landing page development from our team. \n<linkChudov>Here’s</linkChudov> how his current website for his first book looks like.\nBy the end of February, we’ll transform it!",
-        "greetingCaption": "The giveaway took place on 02.01.25 during a live stream.",
-        "greetingBtn": "View",
-        "formPreface1": "Hello, 2024! \nYou are almost a part of history, and I want to thank you for all the difficulties and challenges you have brought me. They helped me grow and reach a new level. But I know that there are even more opportunities and achievements ahead!",
-        "formPreface2": "To achieve my goals and scale my business, I need a modern and effective landing page from i love my team. That's why I'm filling in my data and believing in a Christmas miracle.",
-        "socialMediaLink": "Links to social networks",
-        "productOrService": "The scope of your activity*",
-        "whyLanding": "What product or service do you offer? (Briefly describe what you sell or promote.*",
-        "mostImportant": "What is the most important thing for you in the future website? (Design, loading speed, functionality, SEO, etc.)*",
-        "submitBtn": "giveaway has ended",
-        "placeholder": "Your answer",
-        "submittingConditions": "By clicking the “Submit” button, you agree to the <purple>Terms of Personal Data Processing</purple> and <purpleCond>Rules of participation in the landing page drawing </purpleCond>",
-        "wishDescription": "Follow this link and get your personal wishes and gifts!",
-        "envelopeAlt": "Envelope with a wish and a postcard"
-    },
-    "PastEvents": {
-        "pageBigTitle": "Our past events"
-    },
-    "Events": {
+    "EventsPage": {
         "title": "Until the launch of the new event",
+        "pageBigTitle": "Our past events",
         "days": "{days, plural, =1 {day} other {days}}",
         "hours": "{hours, plural, =1 {hour} other {hours}}",
         "minutes": "{minutes, plural, =1 {minute} other {minutes}}",
@@ -330,18 +300,41 @@
         "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
     },
-    "Valentines": {
-        "secondSceneTitle": "Choose your fun Valentine’s card",
-        "secondSceneHint": "Tap on the balloons",
-        "secondSceneWishTitle": "Love is...",
-        "heroText": "We love creativity and bringing good vibes — forward with Valentine’s Day wishes, gifts for our services",
-        "heroBtn": "Get a certificate",
-        "certificateHere": "certificate here",
-        "clickHere": "<purple>Click</purple> on the envelope \n<purple>to receive \na</purple> <red>$50</red> <purple>certificate</purple> \nfor our services.",
-        "firstFootnote": "*The certificate cannot be monetized",
-        "secondFootnote": "*The certificate can only be used once",
-        "confirmationGreeting": "Congratulations, you’ve received a certificate for our services!",
-        "confirmationFootnote": "*This offer is one-time and valid until 01.04.2025",
-        "confirmationText": "To receive the certificate, leave your details and our manager will contact you"
+    "PortfolioPage": {
+        "title": "Our <purple>Implemented Projects</purple>",
+        "text": "Our specialization includes Online stores, stylish branding landing pages for businesses and industry leaders, and multi-page representative websites for commercial and non-commercial organizations",
+        "titleSEO": "Our Implemented Projects ",
+        "descriptionSEO": "Explore our portfolio of projects that combine aesthetics and functionality. Landing pages, websites, and online stores designed to meet your business needs",
+        "seeCase": "view case",
+        "stub": "Your project could be here",
+        "allProjects": "All Projects"
+    },
+
+    "PortfolioPagelandings": {
+        "title": "Our <purple>landing pages</purple>",
+        "text": "Landing pages are not just websites, they're a powerful marketing tool. We create stylish, effective and conversion-driven landing pages that grab attention and sell.",
+        "titleSEO": "Our landing pages",
+        "descriptionSEO": "Design and development of landing pages that convert visitors into clients.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "landings": "landing pages"
+    },
+    "PortfolioPageonlinestores": {
+        "title": "Our <purple>online stores</purple>",
+        "text": "We create e-commerce solutions that bring profits. Convenient UX, fast performance, and responsiveness – the key features of our projects. We help businesses sell online!",
+        "titleSEO": "Our online stores websites",
+        "descriptionSEO": "Development of e-commerce websites with modern technologies: fast, convenient, and efficient.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "onlinestores": "online stores"
+    },
+    "PortfolioPagewebsites": {
+        "title": "Our <purple>websites</purple>",
+        "text": "Branded, corporate, and informational websites – we know how to create a resource that presents your company in the best light. Unique design, well-thought-out structure, and technical quality ensure your website's effectiveness.",
+        "titleSEO": "Our websites",
+        "descriptionSEO": "Development of multi-page websites for businesses and organizations.",
+        "seeCase": "See the case",
+        "editionalCard": "Your project can be here",
+        "websites": "Representative multi-page websites"
     }
 }

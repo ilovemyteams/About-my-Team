@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { useRouter } from "@/src/navigation";
+import { useRouter } from "@/src/i18n/routing";
 
 import { CustomerFormModal } from "./modals/CustomerFormModal";
 import { CustomerNotificationModal } from "./modals/CustomerNotificationModal";
