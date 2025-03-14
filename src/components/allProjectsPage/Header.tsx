@@ -35,7 +35,7 @@ export const Header = ({ selectedCategory }: { selectedCategory: string }) => {
             </h1>
             <div className="mt-6 flex flex-col pc:gap-14 tab:gap-10 gap-5 justify-between pc:flex-row tab:flex-col-reverse ">
                 <FilterAllProjects />
-                <p className="desk:text-2xl34 font-geist tab:max-w-[734px] pc:text-xl tab:text-base">
+                <p className="desk:text-2xl34 text-sm font-geist tab:max-w-[734px] pc:text-xl tab:text-base">
                     {text}
                 </p>
             </div>
