@@ -13,7 +13,7 @@ type DataType = {
     video?: string;
     implementations: string[];
     order: number;
-    category: "LandingProjects" | "ECommerceProjects" | "Websites";
+    category: "landings" | "onlinestores" | "websites";
 };
 export type PortfolioDataItemType = {
     data: DataType;
@@ -39,7 +39,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Delivery",
                 "Support",
             ],
-            category: "LandingProjects",
+            category: "landings",
         },
         ua: {
             name: "IT-рекрутер",
@@ -70,7 +70,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
             image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
             implementations: ["Design", "Development", "Testing", "Support"],
-            category: "Websites",
+            category: "websites",
         },
         ua: {
             name: "Міграційний Адвокат",
@@ -110,7 +110,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Delivery",
                 "Support",
             ],
-            category: "Websites",
+            category: "websites",
         },
         ua: {
             name: "Український театр",
@@ -148,7 +148,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Delivery",
                 "Support",
             ],
-            category: "ECommerceProjects",
+            category: "onlinestores",
         },
         ua: {
             name: "Смачно! на селі",
@@ -185,7 +185,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
             order: 1,
-            category: "Websites",
+            category: "websites",
         },
         ua: {
             name: "i love my team",
