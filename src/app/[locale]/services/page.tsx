@@ -4,10 +4,14 @@ import { ServicesSection } from "@/src/components/allServicesPage/ServicesSectio
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
-    params: { locale },
+    params,
 }: {
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
 }) {
+    const resolvedParams = await params;
+    const { locale } = resolvedParams;
+    console.log("🚀 ~ locale:", locale);
+
     return generatePageMetadata({
         locale,
         namespace: "ServicesPage",
