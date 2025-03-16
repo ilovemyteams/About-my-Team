@@ -32,6 +32,7 @@ export async function generatePageMetadata({
             description: translations("descriptionSEO"),
             title: translations("titleSEO"),
             type: "website",
+            locale,
         },
     };
 }
