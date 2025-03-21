@@ -1,6 +1,4 @@
-// import Image from "next/image";
 import Link from "next/link";
-import { CldImage } from "next-cloudinary";
 import { useLocale } from "next-intl";
 
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
@@ -9,6 +7,7 @@ import { LocaleType } from "@/types/LocaleType";
 import { MemberDataItemType } from "../../mockedData/membersData";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
+import { ImageFromCloud } from "../shared/ImageFromCloud";
 import { SocialLink } from "../shared/SocialLink";
 
 export interface MemberCardProps {
@@ -44,7 +43,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             >
                 <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
-                        <CldImage
+                        <ImageFromCloud
+                            storage="members"
                             src={imageURL}
                             width={246}
                             height={196}
