@@ -47,7 +47,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "business-analysis",
         icon: "ba",
-        image: "https://drive.google.com/uc?export=view&id=1_ykI2aXWvjw68w42pvdWt9ZfLf1DSDQF",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559595/services-websites_hdzzeu.jpg",
 
         ua: {
             name: "бізнес-аналіз",
@@ -324,7 +324,7 @@ export const servicesData: ServiceType[] = [
         slug: "design",
 
         icon: "design",
-        image: "https://drive.google.com/uc?export=view&id=10SeaH077vHUZhYU8vQm2-yX2Ff9nwJku",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559375/services-design_mod90s.jpg",
         ua: {
             name: "дизайн",
             shortDescription:
@@ -610,7 +610,7 @@ export const servicesData: ServiceType[] = [
         slug: "development",
 
         icon: "dev",
-        image: "https://drive.google.com/uc?export=view&id=1ECWvNJkxkxcorwlbapXVB1ksw1-mS93l",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559378/services-development_v5tp8u.jpg",
         ua: {
             name: "розробка",
             shortDescription:
@@ -849,7 +849,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "testing",
         icon: "test",
-        image: "https://drive.google.com/uc?export=view&id=1_OfiG108dHYF__k1ZtadN1wKzETCiWfx",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559533/services-testing_reuzdb.jpg",
 
         ua: {
             name: "тестування",
@@ -1103,7 +1103,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "support",
         icon: "support",
-        image: "https://drive.google.com/uc?export=view&id=1eKfQR0K5jxvGmypKRJcoRxkCfomM6jHm",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559465/services-support_fxestj.jpg",
 
         ua: {
             name: "підтримка",
@@ -1419,7 +1419,7 @@ export const servicesData: ServiceType[] = [
         slug: "comprehensive-service",
         icon: "complex",
 
-        image: "https://drive.google.com/uc?export=view&id=1aBLtZOAvs5TGOZVeOXuKQPBCFx8kur4x",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559371/service-comprehensive_ejoysc.jpg",
         ua: {
             name: "комплексна послуга",
             shortDescription:
@@ -1718,7 +1718,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "landing",
         icon: "landing",
-        image: "https://drive.google.com/uc?export=view&id=1Kgb4tXEmBn1hQmD2r_h2VAwwNYThl6Xt",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559374/service-landing_ii1w34.jpg",
 
         ua: {
             name: "Лендінг ",
@@ -1983,7 +1983,7 @@ export const servicesData: ServiceType[] = [
         slug: "website",
         icon: "website",
 
-        image: "https://drive.google.com/uc?export=view&id=1KHGciTsxySPaU7Wse4wu4776LmMGaTFc",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559595/services-websites_hdzzeu.jpg",
         ua: {
             name: "Вебсайт",
             shortDescription:
@@ -2570,7 +2570,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "online-store",
         icon: "store",
-        image: "https://drive.google.com/uc?export=view&id=1fSbXuv6SQ_PCm_t3gWt_6DB8xuSZypmN",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559399/services-internet-store_nqt841.jpg",
 
         ua: {
             name: "Інтернет-магазин",
