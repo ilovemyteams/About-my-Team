@@ -48,11 +48,11 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "i-need-a-website-where-should-i-start",
-            image: "https://drive.google.com/uc?export=view&id=15mebCQZv4FAgQYinrxpVGDljlHsSWflz",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561931/answer1-1_obwtfb.jpg",
             likes: null,
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1PXF8LyPTsL-6m5TJ0QcpFbUUhhgqH3Ij",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561932/answer1-2_ivrc14.jpg",
         },
         ua: {
             questionText: "Мені потрібен сайт. \nЗ чого мені почати?",
@@ -269,11 +269,11 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "what-to-choose-a-landing-page-or-a-website",
-            image: "https://drive.google.com/uc?export=view&id=1o9hzaeKZBawBuDxNSK4SUXpgoG8YiaGN",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561934/answer2-1_y9tiio.jpg",
             likes: null,
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1w-ptFNQYq3RzJ0B0JhPyntTrQYkTmJZJ",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561937/answer2-2_qiug3n.jpg",
         },
         ua: {
             questionText: "Що обрати - лендінг чи повноцінний сайт?",
@@ -577,11 +577,11 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "what-are-the-terms-of-the-development-of-the-fully-functional-website",
-            image: "https://drive.google.com/uc?export=view&id=1jnZ9vPmhZchmQY6eeJklz_8bvQM2a9b4",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561939/answer3-1_kk5pdf.jpg",
             likes: null,
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1v7Mje1IyYdmA0wBwa-b3lV2SHk4YLKyZ",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561941/answer3-2_apsm5b.jpg",
         },
         ua: {
             questionText: "Які терміни розробки готового продукту?",
@@ -773,10 +773,10 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "how-much-does-development-cost",
-            image: "https://drive.google.com/uc?export=view&id=1Uf5y1CrKIcVFOZXf5wC8LPTxAHEpF5Ec",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561943/answer4-1_ibcohz.jpg",
             likes: null,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1QdzBswF6oB-ZolQpwdCeL2wJSESyd1wU",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561946/answer4-2_qzjkjn.jpg",
         },
         ua: {
             questionText: "Скільки коштує розробка?",
@@ -1135,11 +1135,11 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "can-i-choose-which-team-will-work-on-my-order",
-            image: "https://drive.google.com/uc?export=view&id=1Id6dTkkWbiw95v8hEiaRd4wu2luqIsOc",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561949/answer5-1_xqxtj3.jpg",
             likes: null,
             removeOrderBtn: true,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=15X1tdwWHNC7DXp-82g_h-kPY2GCfkSva",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561951/answer5-2_qabfjk.jpg",
         },
         ua: {
             questionText: "Чи можу я самостійно \nпідібрати команду?",
@@ -1263,11 +1263,11 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=1ycJoTvrsL86jRac6Mxe44nEHD5OYkS2W",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561953/answer6-1_rc7hos.jpg",
             likes: null,
             slug: "can-i-make-changes-during-the-development-process",
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1aB5nAWNw1xjSn7d-P2g_VuVvF69Lt7U-",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561957/answer6-2_hbhojv.jpg",
         },
         ua: {
             questionText: "Чи можу я внести зміни в процесі розробки?",
@@ -1574,12 +1574,12 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=1r8QMsr0NS1u7Tke9lSuB1XD0sAOs6PYO",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561960/answer7-1_dwnc4g.jpg",
             likes: null,
             slug: "do-you-provide-post-launch-support",
 
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1p5rJTc_7mj53VO1zWXXUGBvwZ5bQ9rMq",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561965/answer7-2_uptw4h.jpg",
         },
         ua: {
             questionText:
@@ -1940,11 +1940,11 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=10kb63jri0Mmwb948VJCF_O13cXf_CZ5Q",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561967/answer8-1_j5f6pp.jpg",
             likes: null,
             slug: "what-is-a-landing-page-and-who-needs-it",
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1cMVVU1N8oG-5FoSAPLQJQ7Mv791R_DKr",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561975/answer8-2_zb8hjn.jpg",
         },
         ua: {
             questionText: "Що таке лендінг? І кому він потрібен?",
@@ -2325,11 +2325,11 @@ export const questionsData: QAItemType[] = [
 
     {
         data: {
-            image: "https://drive.google.com/uc?export=view&id=1_7HwhV5_OPXz-ramLLzxAqItimOOPo6Z",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561978/answer9-1_mdwwbr.jpg",
             likes: null,
             slug: "redesign-what-is-it-and-why-is-it-necessary",
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=14KNEcCrOw7qqIX0R1atcet6nl9Ydne6z",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561984/answer9-2_coj57s.jpg",
         },
         ua: {
             questionText: "Редизайн: що це і навіщо він потрібен?",
@@ -2656,10 +2656,10 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "how-to-bring-content-to-life-and-make-products-more-attractive",
-            image: "https://drive.google.com/uc?export=view&id=15YnZLmNc9H6kUSMq70ITL6_ng5f7OtFe",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561987/answer10-1_fupfgt.jpg",
             likes: null,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1QJuqZu7LAVTSDP9TU5XVDdQ-G5SnjPhX",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561989/answer10-2_lf2qah.jpg",
         },
         ua: {
             questionText:
@@ -2930,10 +2930,10 @@ export const questionsData: QAItemType[] = [
     {
         data: {
             slug: "how-to-speed-up-your-website-and-improve-user-experience",
-            image: "https://drive.google.com/uc?export=view&id=1XD3Y4VO0LQfwMS9dRSMwkQ43BUX8SYrC",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561992/answer11-1_ls6kij.jpg",
             likes: null,
             answerOrderImage:
-                "https://drive.google.com/uc?export=view&id=1NLTi3A9vnc6rkbuHjL6EFS4zBnLsfCgC",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561994/answer11-2_cwjcdu.jpg",
         },
         ua: {
             questionText: "Як прискорити сайт і покращити UX?",
