@@ -38,7 +38,7 @@ export const membersData: MemberDataItemType[] = [
             id: "susanna-salata-product-manager",
             projectId: ["1", "2", "3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497906/ilovemyteam/members/SusannaSalata_f09u5r.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
             position: "Product manager",
             categoryName: "manager",
             projectsExperience: [
@@ -93,7 +93,7 @@ export const membersData: MemberDataItemType[] = [
             id: "mariia-popova-designer-graphic-designer-ui-ux-designer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497899/ilovemyteam/members/Popova_Masha_pdffzt.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/mariia-popova_aan7kg.jpg",
             position: "Graphic Designer/ UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["batatfarm.com"],
@@ -138,7 +138,7 @@ export const membersData: MemberDataItemType[] = [
             id: "svitlana-kondratenko-business-analyst",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497906/ilovemyteam/members/%D0%A1%D0%B2%D1%96%D1%82%D0%BB%D0%B0%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_dshanu.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/svitlana-kondratenko_isz00m.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com"],
@@ -190,7 +190,7 @@ export const membersData: MemberDataItemType[] = [
             id: "vlad-shumkov-fullstack-developer",
             projectId: ["1", "2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553215/ilovemyteam/members/Shymkov_ak3dah.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Shymkov_tntedf.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "batatfarm.com"],
@@ -242,7 +242,7 @@ export const membersData: MemberDataItemType[] = [
             id: "ihor-dronishynets-fullstack-developer",
             projectId: ["1", "2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497912/ilovemyteam/members/Igor_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_nmjqdc.png",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/Igor_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_ixtmyr.png",
             position: "Fullstack developer",
             categoryName: "developer",
             projectsExperience: [
@@ -301,7 +301,7 @@ export const membersData: MemberDataItemType[] = [
             id: "iryna-stoliarova-ui-ux-designer",
             projectId: ["1", "4"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497909/ilovemyteam/members/Iryna_Stoliarova_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_yepolx.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/Iryna_Stoliarova_sfjhav.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: [
@@ -344,7 +344,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anastasiia-nazarenko-graphic-designer",
             projectId: ["1", "4"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553214/ilovemyteam/members/Nazarenko_giexwr.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Nazarenko_rk3nvk.jpg",
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
@@ -390,7 +390,7 @@ export const membersData: MemberDataItemType[] = [
             id: "eugene-serdiuk-fullstack-developer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497896/ilovemyteam/members/eugene-serdiuk_bkyupl.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/eugene-serdiuk_wmghk8.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com"],
@@ -440,7 +440,7 @@ export const membersData: MemberDataItemType[] = [
             id: "iryna-trynkal-fullstack-developer",
             projectId: ["1", "4"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497904/ilovemyteam/members/IrynaTrynkal_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_cm0ra1.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/IrynaTrynkal_o5cfzy.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
@@ -490,7 +490,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olena-posternak-frontend-developer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497895/ilovemyteam/members/OlenaPosternak_vyjhq1.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/OlenaPosternak_ywdiuy.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "kuharskyivulyk.com.ua"],
@@ -540,7 +540,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olga-mykhailova-frontend-developer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497909/ilovemyteam/members/OlgaMykhailova_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_hphie1.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/OlgaMykhailova_v9nbxu.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
 
@@ -596,7 +596,7 @@ export const membersData: MemberDataItemType[] = [
             id: "kateryna-rubanik-qa-engineer",
             projectId: ["1", "4"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497903/ilovemyteam/members/QA_Rubanik_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_ckwmd0.png",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/Rubanik_swr3v3.png",
             position: "QA engineer",
             categoryName: "qa",
             projectsExperience: [
@@ -652,7 +652,7 @@ export const membersData: MemberDataItemType[] = [
             id: "susanna-salata-business-analyst",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497906/ilovemyteam/members/SusannaSalata_f09u5r.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: [
@@ -712,7 +712,7 @@ export const membersData: MemberDataItemType[] = [
             id: "denis-slivinskyi-fullstack-developer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553215/ilovemyteam/members/Slivinskyi_c2dbq3.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Slivinskyi_xvvwbs.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
@@ -766,7 +766,7 @@ export const membersData: MemberDataItemType[] = [
             id: "volodymyr-dehtiarev-fullstack-developer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552890/ilovemyteam/members/volodymyr_dehtiarev_ye7z4t.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/volodymyr_dehtiarev_pwh5v7.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
@@ -815,7 +815,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olena-chornobryvets-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552890/ilovemyteam/members/Chornobryvec_mdu7kp.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Chornobryvec_a5gkha.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -861,7 +861,7 @@ export const membersData: MemberDataItemType[] = [
             id: "hanna-horbenko-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497903/ilovemyteam/members/%D0%93%D0%B0%D0%BD%D0%BD%D0%B0_%D0%93%D0%BE%D1%80%D0%B1%D0%B5%D0%BD%D0%BA%D0%BE_ud5cyf.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742561627/Hanna_Horbenko_ynmaef.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -914,7 +914,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anna-klyba-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497901/ilovemyteam/members/%D0%90%D0%BD%D1%8E%D1%82%D0%B0_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_jikwfe.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anna_Klyba_faaoeq.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com", "baza-trainee.tech"],
@@ -966,7 +966,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oksana-luchko-qa-engineer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497908/ilovemyteam/members/%D0%9E%D0%BA%D1%81%D0%B0%D0%BD%D0%B0_%D0%9B%D1%83%D1%87%D0%BA%D0%BE_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_zaail7.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560788/oksana-luchko_qotwzx.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
@@ -1014,7 +1014,7 @@ export const membersData: MemberDataItemType[] = [
             id: "nadia-hubchuk-qa-engineer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497896/ilovemyteam/members/nadia-hubchuk_wvvjdr.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/nadia-hubchuk_c4pyg4.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -1065,7 +1065,7 @@ export const membersData: MemberDataItemType[] = [
             id: "tetiana-seletska-project-manager-scrum-master",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497907/ilovemyteam/members/tetiana-seletska_k5a5s4.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/tetiana-seletska_skb82g.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
@@ -1112,7 +1112,7 @@ export const membersData: MemberDataItemType[] = [
             id: "daria-cherviakova-project-manager-scrum-master",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497905/ilovemyteam/members/DariaCherviakova_cewvny.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/DariaCherviakova_dktdja.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
@@ -1161,7 +1161,7 @@ export const membersData: MemberDataItemType[] = [
             id: "hanna-truba-marketer",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497901/ilovemyteam/members/%D0%90%D0%BD%D0%BD%D0%B0_%D0%A2%D1%80%D1%83%D0%B1%D0%B0_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_przdkg.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anna_Truba_q79zxy.jpg",
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: [],
@@ -1207,7 +1207,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olena-holubonkova-marketer",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497909/ilovemyteam/members/%D0%93%D0%BE%D0%BB%D1%83%D0%B1%D1%8C%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_beuhir.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/olena-holubonkova_onfmob.jpg",
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: [],
@@ -1253,7 +1253,7 @@ export const membersData: MemberDataItemType[] = [
             id: "marta-morintseva-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497905/ilovemyteam/members/Marta_Morintseva_ihrerh.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Marta_Morintseva_crc9p8.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -1305,7 +1305,7 @@ export const membersData: MemberDataItemType[] = [
             id: "iryna-shevchenko-business-analyst",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497898/ilovemyteam/members/Iryna_Shevchenko_zmsxrv.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com"],
@@ -1357,7 +1357,7 @@ export const membersData: MemberDataItemType[] = [
             id: "natali-istomina-marketer",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497908/ilovemyteam/members/natali-istomina_aghvpq.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
             position: "Marketer",
             categoryName: "marketer",
             projectsExperience: [],
@@ -1405,7 +1405,7 @@ export const membersData: MemberDataItemType[] = [
             id: "natali-istomina-business-analyst",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497908/ilovemyteam/members/natali-istomina_aghvpq.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["theatermag.com.ua"],
@@ -1452,7 +1452,7 @@ export const membersData: MemberDataItemType[] = [
             id: "veronika-zlobina-ui-ux-designer",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497905/ilovemyteam/members/%D0%92%D0%B5%D1%80%D0%BE%D0%BD%D1%96%D0%BA%D0%B0_%D0%97%D0%BB%D0%BE%D0%B1%D1%96%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_dskexs.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/Veronika_Zlobina_njpuov.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["theatermag.com.ua"],
@@ -1504,7 +1504,7 @@ export const membersData: MemberDataItemType[] = [
             id: "mila-maksymenko-ui-ux-designer",
             projectId: ["1", "3", "5"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497903/ilovemyteam/members/Mila_Maksymenko_vxealk.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/Mila_Maksymenko_gfxjbp.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: [
@@ -1564,7 +1564,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anton-chertok-frontend-developer",
             projectId: ["3", "2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497904/ilovemyteam/members/Anton_Chertok_god02z.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anton_Chertok_ocqrx9.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
@@ -1617,7 +1617,7 @@ export const membersData: MemberDataItemType[] = [
             id: "dmytro-bulakhov-frontend-developer",
             projectId: ["3", "2", "5"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497900/ilovemyteam/members/%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%BE_%D0%91%D1%83%D0%BB%D0%B0%D1%85%D0%BE%D0%B2_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_d18hy6.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560781/dmytro-bulakhov_uhrnzs.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: [
@@ -1671,7 +1671,7 @@ export const membersData: MemberDataItemType[] = [
             id: "evhen-malysh-backend-developer",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497903/ilovemyteam/members/%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D0%9C%D0%B0%D0%BB%D0%B8%D1%88_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_wtbz8z.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/evhen-malysh_mcxosc.jpg",
             position: "Backend Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
@@ -1723,7 +1723,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anatolii-omelchenko-backend-developer",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497899/ilovemyteam/members/Omelchenko_Anatolii_sdquva.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/Omelchenko_Anatolii_v41sue.jpg",
             position: "Backend Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua"],
@@ -1773,7 +1773,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oleksandr-meshcherskyi-fullstack-developer",
             projectId: ["2", "3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497899/ilovemyteam/members/%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%9C%D0%B5%D1%89%D0%B5%D1%80%D1%81%D1%8C%D0%BA%D0%B8%D0%B8%CC%86_tku0jg.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/oleksandr-meshcherskyi_cyuio8.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
@@ -1822,7 +1822,7 @@ export const membersData: MemberDataItemType[] = [
             id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497905/ilovemyteam/members/Svitlana_Krokhmalna_upplvo.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/Svitlana_Krokhmalna_rkr43h.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
@@ -1870,7 +1870,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oksana-onopriienko-qa-engineer",
             projectId: ["3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497896/ilovemyteam/members/Oksana_Onopriienko_iprfjn.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/Oksana_Onopriienko_fgilcy.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
@@ -1918,7 +1918,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olena-halushka-ui-ux-designer",
             projectId: ["2", "3"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497907/ilovemyteam/members/Olena_Halushka_nqgbgm.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Olena_Halushka_tdfnpu.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
@@ -1977,7 +1977,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["1"],
 
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497909/ilovemyteam/members/Mariia_Cherevko_argpfb.png",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Mariia_Cherevko_ieqg8o.png",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2026,7 +2026,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anna-prutnik-frontend-developer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552891/ilovemyteam/members/Anet_Prutnik_wa3ps6.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Anet_Prutnik_lvgflg.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2080,7 +2080,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oleksandr-petrychuk-fullstack-developer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497907/ilovemyteam/members/Alex_Petrychuk_xcbsjc.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560772/Alex_Petrychuk_jwgo0v.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2129,7 +2129,7 @@ export const membersData: MemberDataItemType[] = [
             id: "eugene-siedinin-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497914/ilovemyteam/members/%D0%84%D0%B2%D0%B3%D0%B5%D0%BD_%D1%81%D0%BC%D0%B0%D1%87%D0%BD%D0%BE_u8xpcz.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560781/eugene-siedinin_oqebmc.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -2178,7 +2178,7 @@ export const membersData: MemberDataItemType[] = [
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497905/ilovemyteam/members/KaterynaPogrebna_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_heccay.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/KaterynaPogrebna_cwu2q7.jpg",
             position: "QA engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -2239,7 +2239,7 @@ export const membersData: MemberDataItemType[] = [
             id: "yuliya-borys-business-analyst",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497900/ilovemyteam/members/%D0%AE%D0%BB%D1%96%D1%8F_%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_ttmcr0.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560801/yuliya-borys_rwhbnu.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: [],
@@ -2283,7 +2283,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olha-kuchalska-business-analyst",
             projectId: [],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497910/ilovemyteam/members/OlhaKuchalska_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_dvgelv.png",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/OlhaKuchalska_j6guiu.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: [],
@@ -2331,7 +2331,7 @@ export const membersData: MemberDataItemType[] = [
             id: "solomiia-lutska-project-project-manager-scrum-master",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497911/ilovemyteam/members/Solomia_ibofgr.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
