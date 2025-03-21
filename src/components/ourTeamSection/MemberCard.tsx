@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Link from "next/link";
+import { CldImage } from "next-cloudinary";
 import { useLocale } from "next-intl";
 
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
@@ -9,7 +10,6 @@ import { MemberDataItemType } from "../../mockedData/membersData";
 import { IconLinkedin } from "../shared/Icons/IconLinkedin";
 import { IconProfile } from "../shared/Icons/IconProfile";
 import { SocialLink } from "../shared/SocialLink";
-import { CldImage } from "next-cloudinary";
 
 export interface MemberCardProps {
     data: MemberDataItemType;
