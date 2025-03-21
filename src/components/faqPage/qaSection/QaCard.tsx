@@ -57,12 +57,10 @@ export const QaCard = ({
                         width={375}
                         height={250}
                         className="h-full w-full object-cover"
-                        storage={2}
                     />
                 </div>
 
                 <ImageFromCloud
-                    storage={2}
                     src={image}
                     alt={` background for main image: ${imageAltText}`}
                     width={375}

@@ -23,7 +23,6 @@ export const OrderCard = ({
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
             {imageLink ? (
                 <ImageFromCloud
-                    storage={2}
                     src={imageLink}
                     width={630}
                     height={362}

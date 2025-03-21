@@ -38,7 +38,6 @@ export const QuestionHero = ({
                 />
                 <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] desk:min-w-[312px]  shrink-0">
                     <ImageFromCloud
-                        storage={2}
                         alt={pageTitle}
                         src={pageImageUrl}
                         width={508}

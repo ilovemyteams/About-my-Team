@@ -40,7 +40,6 @@ export const ServiceHero = ({
                         width={638}
                         height={425}
                         className="w-full h-auto aspect-[340/227] object-cover"
-                        storage={2}
                     />
                 </DelayPresentAnimation>
 

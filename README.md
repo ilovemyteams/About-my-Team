@@ -1,10 +1,10 @@
 Storage For Images:
 
-Storage 1:
+Storage 1 (Member):
 
 - members
 
-Storage 2:
+Storage 2 (Default):
 
 - faq;
 - services;
