@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import { CldImage } from "next-cloudinary";
 import { GoToSiteLink } from "../shared/GoToSiteLink";
 
 export interface PortfolioCardItemProps {
@@ -23,7 +22,7 @@ export const PortfolioCard = ({
     const siteTypeUp = siteView?.toUpperCase();
     return (
         <div className="relative w-[100%] h-[auto] max-h-[421px] aspect-[288/273] tab:min-w-[50%] tab:aspect-[360/328] pc:aspect-[540/445] pc:max-h-[600px] ">
-            <Image
+            <CldImage
                 src={image}
                 alt={name}
                 width={688}
