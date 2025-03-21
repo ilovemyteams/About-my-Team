@@ -190,7 +190,7 @@ export const membersData: MemberDataItemType[] = [
             id: "vlad-shumkov-fullstack-developer",
             projectId: ["1", "2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497914/ilovemyteam/members/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_jcnn9h.png",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553215/ilovemyteam/members/Shymkov_ak3dah.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online", "batatfarm.com"],
@@ -712,7 +712,7 @@ export const membersData: MemberDataItemType[] = [
             id: "denis-slivinskyi-fullstack-developer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497915/ilovemyteam/members/%D0%94%D0%B5%D0%BD%D0%B8%D1%81_%D0%A1%D0%BB%D1%96%D0%B2%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B8%CC%86_cdvz3d.png",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553215/ilovemyteam/members/Slivinskyi_c2dbq3.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
@@ -766,7 +766,7 @@ export const membersData: MemberDataItemType[] = [
             id: "volodymyr-dehtiarev-fullstack-developer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497921/ilovemyteam/members/dehtiarev_m2ybg0.png",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552890/ilovemyteam/members/volodymyr_dehtiarev_ye7z4t.jpg",
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
@@ -815,7 +815,7 @@ export const membersData: MemberDataItemType[] = [
             id: "olena-chornobryvets-qa-engineer",
             projectId: ["2"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497917/ilovemyteam/members/%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B1%D1%80%D0%B8%D0%B2%D0%B5%D1%86%D1%8C_%D0%BE%D0%B1%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_e5xywp.png",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552890/ilovemyteam/members/Chornobryvec_mdu7kp.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
@@ -2026,7 +2026,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anna-prutnik-frontend-developer",
             projectId: ["1"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497918/ilovemyteam/members/Anet_Prutnik_cqoepl.jpg",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742552891/ilovemyteam/members/Anet_Prutnik_wa3ps6.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
