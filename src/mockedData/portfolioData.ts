@@ -1,5 +1,6 @@
 type PortfolioDataItemTranslation = {
     name: string;
+    heroName?: string;
     siteView: string;
     subtitle: string;
     description: string;
@@ -184,7 +185,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "onlinestores",
         },
         ua: {
-            name: "<purple>Смачно!</purple> на селі",
+            name: "Смачно! на селі",
+            heroName: "<purple>Смачно!</purple> на селі",
             siteView: "інтернет магазин",
             subtitle: "Інтернет магазин натуральних продуктів",
             description: "",
