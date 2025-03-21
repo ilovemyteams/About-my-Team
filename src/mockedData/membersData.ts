@@ -344,7 +344,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anastasiia-nazarenko-graphic-designer",
             projectId: ["1", "4"],
             imageURL:
-                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742497916/ilovemyteam/members/%D0%9D%D0%B0%D0%B7%D0%B0%D1%80%D0%B5%D0%BD%D0%BA%D0%BE_%D0%90._lnjdrd.png",
+                "https://res.cloudinary.com/dxvtacrde/image/upload/v1742553214/ilovemyteam/members/Nazarenko_giexwr.jpg",
             position: "Graphic Designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online", "protection.in.ua"],
