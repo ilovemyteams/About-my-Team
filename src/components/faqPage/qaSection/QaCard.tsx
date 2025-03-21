@@ -10,7 +10,7 @@ import { getTextString } from "@/src/utils/getTextString";
 import { LikesTypes } from "@/src/utils/likeDataHandler";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
-import { ImageFromSecondCloud } from "../../shared/Images/ImageFromSecondCloud";
+import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import LikeButton from "../../shared/LikeButton";
 
 export interface FaqCardItemProps {
@@ -51,16 +51,18 @@ export const QaCard = ({
                 className={`w-full tab:w-[300px] desk:w-[375px] shrink-0 grow-0 relative overflow-hidden`}
             >
                 <div className="relative w-full max-w-[280px] tab:max-w-none mx-auto aspect-[280/200] tab:aspect-[300/200]">
-                    <ImageFromSecondCloud
+                    <ImageFromCloud
                         src={image}
                         alt={imageAltText}
                         width={375}
                         height={250}
                         className="h-full w-full object-cover"
+                        storage={2}
                     />
                 </div>
 
-                <ImageFromSecondCloud
+                <ImageFromCloud
+                    storage={2}
                     src={image}
                     alt={` background for main image: ${imageAltText}`}
                     width={375}

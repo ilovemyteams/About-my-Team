@@ -2,7 +2,7 @@ import { TopTextType } from "@/src/mockedData/servicesData";
 import { defineServiceIcon } from "@/src/utils/defineServiceIcon";
 import { highlightPurple } from "@/src/utils/highlightingPurple";
 
-import { ImageFromSecondCloud } from "../../shared/Images/ImageFromSecondCloud";
+import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import { PageSection } from "../../shared/PageSection";
 import { DelayPresentAnimation } from "../shared/DelayPresentAnimation";
 import { AnimatedTitle } from "./AnimatedTitle";
@@ -34,12 +34,13 @@ export const ServiceHero = ({
             </h1>
             <div className="tab:flex tab:flex-row-reverse tab:gap-5 pc:gap-[60px]">
                 <DelayPresentAnimation className="tab:w-[47.22%] pc:w-[41.67%] desk:w-[47.75%] mb-6 tab:mb-0]">
-                    <ImageFromSecondCloud
+                    <ImageFromCloud
                         src={image}
                         alt={title}
                         width={638}
                         height={425}
                         className="w-full h-auto aspect-[340/227] object-cover"
+                        storage={2}
                     />
                 </DelayPresentAnimation>
 

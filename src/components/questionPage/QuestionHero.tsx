@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import { ImageFromSecondCloud } from "../shared/Images/ImageFromSecondCloud";
+import { ImageFromCloud } from "../shared/ImageFromCloud";
 import { PageSection } from "../shared/PageSection";
 import { PageTopSection } from "../shared/PageTopSection";
 import { PageTitle } from "./PageTitle";
@@ -37,7 +37,8 @@ export const QuestionHero = ({
                     searchTerm={searchTerm}
                 />
                 <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] desk:min-w-[312px]  shrink-0">
-                    <ImageFromSecondCloud
+                    <ImageFromCloud
+                        storage={2}
                         alt={pageTitle}
                         src={pageImageUrl}
                         width={508}

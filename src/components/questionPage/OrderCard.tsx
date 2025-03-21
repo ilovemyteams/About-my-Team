@@ -1,4 +1,4 @@
-import { ImageFromSecondCloud } from "../shared/Images/ImageFromSecondCloud";
+import { ImageFromCloud } from "../shared/ImageFromCloud";
 import { NoImageHeart } from "../shared/NoImageHeart";
 import { PageSection } from "../shared/PageSection";
 import { HighlightText } from "../shared/Search/HighlightText";
@@ -22,7 +22,8 @@ export const OrderCard = ({
     return (
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
             {imageLink ? (
-                <ImageFromSecondCloud
+                <ImageFromCloud
+                    storage={2}
                     src={imageLink}
                     width={630}
                     height={362}
