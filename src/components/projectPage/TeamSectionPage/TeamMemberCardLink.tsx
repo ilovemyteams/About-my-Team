@@ -18,7 +18,7 @@ export const TeamMemberCardLink = ({
 
     const id = member.data.id;
     return (
-        <Link href={`/member/${id}`} onClick={backPath} className="group">
+        <Link href={`/member/${id}`} onClick={backPath}>
             <TeamMemberCard member={member} />
         </Link>
     );
