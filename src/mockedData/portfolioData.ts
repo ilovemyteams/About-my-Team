@@ -35,10 +35,16 @@ interface SectionWithVideoType {
 type TextType = { text: string[] };
 type ImageType = { image: string };
 type SlideType = TextType | ImageType;
+export type Slug =
+    | "protection-in-ua"
+    | "viktoriia-zabara"
+    | "theatermag-com-ua"
+    | "batatfarm-com"
+    | "ilovemyteam-online";
 
 type DataType = {
     id: string;
-    slug: string;
+    slug: Slug;
     siteLink?: string;
     imageForAllProjectsPage: string;
     imageForHero?: string;
@@ -76,19 +82,19 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "landings",
         },
         ua: {
-            name: "IT-рекрутер",
+            name: "Вікторія Забара рекрутер",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
             description: "",
         },
         en: {
-            name: "IT-recruiter",
+            name: "Victoriia Zabara recruiter",
             siteView: "landing page",
             subtitle: "Landing Page for an IT Recruiter",
             description: "",
         },
         pl: {
-            name: "IT-rekruter",
+            name: "Victoriia Zabara recruiter",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",
