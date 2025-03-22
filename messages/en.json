@@ -336,5 +336,8 @@
         "seeCase": "See the case",
         "editionalCard": "Your project can be here",
         "websites": "Representative multi-page websites"
+    },
+    "SomeProjectPage": {
+        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>"
     }
 }

@@ -337,5 +337,8 @@
         "seeCase": "Zobacz przypadek",
         "editionalCard": "Twój projekt może być tutaj",
         "websites": "strony internetowe"
+    },
+    "SomeProjectPage": {
+        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>"
     }
 }

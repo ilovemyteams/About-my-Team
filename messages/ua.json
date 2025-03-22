@@ -332,5 +332,8 @@
         "seeCase": "Дивитись кейс",
         "editionalCard": "Тут може бути ваш проєкт",
         "websites": "Представницькі багатосторінкові сайти"
+    },
+    "SomeProjectPage": {
+        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>"
     }
 }
