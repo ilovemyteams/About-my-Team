@@ -42,7 +42,6 @@ export const TeamProjectMobList = ({
                     <OneSliderTeamProject members={members} />
                 </ul>
             </div>
-            {/* <SliderButtons membersData={members} emblaApi={emblaApi} /> */}
             <div className="embla__controls  tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-[16px] tab:mt-0">
                 <div className="embla__buttons flex justify-center gap-4">
                     <PrevButton
