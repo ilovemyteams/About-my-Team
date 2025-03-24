@@ -16,11 +16,9 @@ export const SomeProjectPage = ({
     const locale = useLocale();
     const { name } = currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
-    console.log("🚀 ~ currentProjectSlug:", currentProjectSlug);
     const members = membersData.filter(member =>
         member.data.projectId.includes(currentProjectSlug)
     );
-    console.log("🚀 ~ members:", members);
 
     return (
         <>
