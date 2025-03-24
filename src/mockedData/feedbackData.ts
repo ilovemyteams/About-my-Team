@@ -11,6 +11,7 @@ type DataType = {
     video?: string;
     siteLink: string;
     feedbackLink?: string;
+    imageForProjectPage?: string;
 };
 export type FeedbackDataItemType = {
     data: DataType;
@@ -26,6 +27,8 @@ export const feedbackData: FeedbackDataItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
             siteLink: "batatfarm.com",
             feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B",
+            imageForProjectPage:
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666870/feedback_dc3r3m.jpg",
         },
         ua: {
             siteName: "Смачно! на селі",
