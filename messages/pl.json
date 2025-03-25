@@ -338,7 +338,6 @@
         "editionalCard": "Twój projekt może być tutaj",
         "websites": "strony internetowe",
         "adaptiveDesign": "<purple>Responsywny design</purple>",
-        "team": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
         "technologies": "Technologie i <purple>narzędzia</purple>",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
@@ -346,6 +345,6 @@
         "allProjects": "Wszystkie projekty"
     },
     "SomeProjectPage": {
-        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>"
+        "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>"
     }
 }
