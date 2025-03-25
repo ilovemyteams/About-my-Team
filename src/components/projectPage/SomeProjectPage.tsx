@@ -6,7 +6,8 @@ import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
 import { ProjectHeader } from "./ProjectHeader";
-import { TeamSectionProject } from "./TeamSectionPage/TeamSectionProject";
+import { StackSectionProject } from "./StackSection/StackSectionProject";
+import { TeamSectionProject } from "./TeamSection/TeamSectionProject";
 
 export const SomeProjectPage = ({
     currentProject,
@@ -19,12 +20,16 @@ export const SomeProjectPage = ({
     const members = membersData.filter(member =>
         member.data.projectId.includes(currentProjectSlug)
     );
+    const technologies = currentProject.data.technologies;
 
     return (
         <>
             <ProjectHeader title={name} />
             <UnderConstruction />
             <TeamSectionProject members={members} />
+            {technologies && (
+                <StackSectionProject technologies={technologies} />
+            )}
         </>
     );
 };
