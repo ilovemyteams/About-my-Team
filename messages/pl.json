@@ -338,13 +338,13 @@
         "editionalCard": "Twój projekt może być tutaj",
         "websites": "strony internetowe",
         "adaptiveDesign": "<purple>Responsywny design</purple>",
-        "technologies": "Technologie i <purple>narzędzia</purple>",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
         "cta": "Chcę zostać zadowolonym klientem!",
         "allProjects": "Wszystkie projekty"
     },
     "SomeProjectPage": {
-        "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>"
+        "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
+        "stackTitle": "Technologie i <purple>narzędzia</purple>"
     }
 }
