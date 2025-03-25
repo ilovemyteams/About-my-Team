@@ -21,7 +21,7 @@ const INITIAL_OPTIONS = {
 export const OurTeamSection = () => {
     const [selectedOption, setSelectedOption] = useState(INITIAL_OPTIONS);
     const defaultMembersData = membersData.filter(member => {
-        return member.data.projectId.includes("1");
+        return member.data.projectId.includes("ilovemyteam-online");
     });
     const [filteredData, setFilteredData] = useState(defaultMembersData);
 
@@ -35,11 +35,11 @@ export const OurTeamSection = () => {
             setFilteredData(filtered);
         } else {
             const project = portfolioData.find(
-                project => project.data.id === selectedOption.optionValue
+                project => project.data.slug === selectedOption.optionValue
             );
             if (project) {
                 const filteredMembers = membersData.filter(member => {
-                    return member.data.projectId.includes(project.data.id);
+                    return member.data.projectId.includes(project.data.slug);
                 });
 
                 setFilteredData(filteredMembers);

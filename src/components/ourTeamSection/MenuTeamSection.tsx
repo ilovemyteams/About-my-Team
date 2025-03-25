@@ -52,12 +52,12 @@ export const MenuTeamSection = ({
                 });
             } else {
                 const project = portfolioData.find(
-                    project => project.data.id === option
+                    project => project.data.slug === option
                 );
                 if (project) {
                     setSelectedOption({
                         optionName: project[locale as LocaleType]?.name,
-                        optionValue: project.data.id,
+                        optionValue: project.data.slug,
                         optionType: "team",
                     });
                 }
@@ -65,7 +65,7 @@ export const MenuTeamSection = ({
         } else {
             setSelectedOption({
                 optionName: "i love my team",
-                optionValue: "1",
+                optionValue: "ilovemyteam-online",
                 optionType: "team",
             });
         }
@@ -73,16 +73,16 @@ export const MenuTeamSection = ({
 
     const handleOptionSelectProjectTeam = ({
         option,
-        projectId,
+        projectSlug,
         optionType,
     }: {
         option: string;
-        projectId: string;
+        projectSlug: string;
         optionType: string;
     }) => {
         const selected = {
             optionName: option,
-            optionValue: projectId,
+            optionValue: projectSlug,
             optionType,
         };
         setSelectedOption(selected);
@@ -90,7 +90,7 @@ export const MenuTeamSection = ({
         setSlideId(DEFAULT_SLIDE_ID);
 
         const params = new URLSearchParams(searchParams.toString());
-        params.set("option", projectId);
+        params.set("option", projectSlug);
         params.set("slideId", DEFAULT_SLIDE_ID.toString());
 
         router.replace(`/${locale}?${params.toString()}#team`);
@@ -146,16 +146,16 @@ export const MenuTeamSection = ({
                     >
                         {portfolioData.map(project => (
                             <li
-                                key={project.data.id}
+                                key={project.data.slug}
                                 onClick={() =>
                                     handleOptionSelectProjectTeam({
                                         option: project[locale as LocaleType]
                                             ?.name,
-                                        projectId: project.data.id,
+                                        projectSlug: project.data.slug,
                                         optionType: "team",
                                     })
                                 }
-                                className={`${selectedOption.optionValue === project.data.id ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
+                                className={`${selectedOption.optionValue === project.data.slug ? "dark:text-red text-redLight" : "text-purple-200 dark:text-grey"} cursor-pointer dark:pc:hover:text-red pc:hover:text-redLight
                                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300`}
                             >
                                 {project[locale as LocaleType]?.name}

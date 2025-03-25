@@ -1,3 +1,5 @@
+import { Slug } from "./portfolioData";
+
 type FeedbackDataItemTranslation = {
     siteName: string;
     siteView: string;
@@ -10,6 +12,7 @@ type DataType = {
     image?: string;
     video?: string;
     siteLink: string;
+    slug: Slug;
     feedbackLink?: string;
     imageForProjectPage?: string;
 };
@@ -26,6 +29,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             id: "01",
             image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
             siteLink: "batatfarm.com",
+            slug: "batatfarm-com",
             feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B",
             imageForProjectPage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666870/feedback_dc3r3m.jpg",
@@ -60,6 +64,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             id: "02",
             image: "https://drive.google.com/uc?export=view&id=1IicVPgXv_GMMdq4WVlqCijG3PT6HHfJF",
             siteLink: "protection.in.ua",
+            slug: "protection-in-ua",
         },
         ua: {
             siteName: "Міграційний Адвокат",
@@ -91,6 +96,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             id: "03",
             image: "https://drive.google.com/uc?export=view&id=1sNkFBnVPZzAenkxUzKwnecwNoOkMJDYl",
             siteLink: "theatermag.com.ua",
+            slug: "theatermag-com-ua",
             feedbackLink: "https://www.youtube.com/watch?v=ccMpW9b2c2s",
         },
         ua: {
@@ -123,6 +129,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             id: "04",
             image: "https://drive.google.com/uc?export=view&id=1IaX7awVp5tY0eAxnFv17XdUvyE5qGSxj",
             siteLink: "viktoriia-zabara.netlify.app",
+            slug: "viktoriia-zabara",
         },
         ua: {
             siteName: "IT-рекрутер",
