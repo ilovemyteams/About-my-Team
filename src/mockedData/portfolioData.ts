@@ -55,6 +55,18 @@ export type Slug =
     | "batatfarm-com"
     | "ilovemyteam-online";
 
+export type Technology =
+    | "typescript"
+    | "figma"
+    | "photoshop"
+    | "illustrator"
+    | "typeorm"
+    | "react-toastify"
+    | "nextjs"
+    | "postgresql"
+    | "nestjs"
+    | "rtk-rtkq";
+
 type DataType = {
     id: string;
     slug: Slug;
@@ -72,7 +84,7 @@ type DataType = {
         imageMobileLeft: string;
         imageMobileRight: string;
     };
-    technologies?: string[];
+    technologies?: Technology[];
 };
 
 export type PortfolioDataItemType = {
@@ -220,10 +232,10 @@ export const portfolioData: PortfolioDataItemType[] = [
                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742670257/adaptive-mobile2_xsbddb.png",
             },
             technologies: [
-                "tpyescript",
+                "typescript",
                 "figma",
-                "adobe-photoshop",
-                "adobe-illustrator",
+                "photoshop",
+                "illustrator",
                 "typeorm",
                 "react-toastify",
                 "nextjs",
