@@ -29,7 +29,11 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
 
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                router.push(previousURL || `/${localeInURL(locale)}#team`);
+                if (previousURL === "back") {
+                    router.back();
+                } else {
+                    router.push(previousURL || `/${localeInURL(locale)}#team`);
+                }
                 setIsModalOpen(false);
             }
         };
@@ -46,7 +50,11 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
     if (!isModalOpen) return null;
 
     const handleClose = () => {
-        router.push(previousURL || `/${localeInURL(locale)}#team`);
+        if (previousURL === "back") {
+            router.back();
+        } else {
+            router.push(previousURL || `/${localeInURL(locale)}#team`);
+        }
         setIsModalOpen(false);
     };
 
