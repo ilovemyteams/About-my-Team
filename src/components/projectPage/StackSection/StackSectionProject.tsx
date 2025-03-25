@@ -20,11 +20,11 @@ export const StackSectionProject = ({
                     ),
                 })}
             </h2>
-            <ul className="flex gap-4 flex-wrap">
+            <ul className="flex gap-4 pc:gap-5 flex-wrap">
                 {technologies.map(technology => (
                     <li
                         key={technology}
-                        className="flex gap-3 items-center pc:gap-5 min-w-[136px] w-[calc(50%-8px)] max-w-[200px]"
+                        className="flex gap-2 items-center pc:gap-4 min-w-[136px] w-[calc(50%-8px)] max-w-[200px]"
                     >
                         <StackCard technology={technology} />
                     </li>
