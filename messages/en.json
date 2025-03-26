@@ -39,7 +39,7 @@
         "title": "Tell us about your unique skills and join our team"
     },
     "WriteUs": {
-        "titleIWant": "I want to become your satisfied client",
+        "titleIWant": "I want to become your satisfied client!",
         "titleAreYouReady": "Ready to order a project?"
     },
     "Services": {
@@ -336,14 +336,13 @@
         "seeCase": "See the case",
         "editionalCard": "Your project can be here",
         "websites": "Representative multi-page websites",
-        "adaptiveDesign": "<purple>Responsywny design</purple>",
-        "technologies": "The technologies and <purple>tools</purple>",
-        "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
-        "moreCases": "View <purple>more cases</purple>",
-        "cta": "I want to become your satisfied client!",
         "allProjects": "All projects"
     },
     "SomeProjectPage": {
-        "teamTitle": "<purple>The team</purple> that <purple>created</purple> this <purple>site</purple>"
+        "teamTitle": "<purple>The team</purple> that <purple>created</purple> this <purple>site</purple>",
+        "stackTitle": "The technologies and <purple>tools</purple>",
+        "adaptiveDesign": "<purple>Responsywny design</purple>",
+        "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
+        "moreCases": "View <purple>more cases</purple>"
     }
 }

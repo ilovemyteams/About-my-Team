@@ -39,7 +39,7 @@
         "title": "Розкажіть про ваші унікальні можливості та станьте частиною нашої команди"
     },
     "WriteUs": {
-        "titleIWant": "Хочу стати вашим задоволеним клієнтом",
+        "titleIWant": "Хочу стати вашим задоволеним клієнтом!",
         "titleAreYouReady": "Готові замовити проєкт?"
     },
     "Services": {
@@ -332,14 +332,13 @@
         "seeCase": "Дивитись кейс",
         "editionalCard": "Тут може бути ваш проєкт",
         "websites": "Представницькі багатосторінкові сайти",
-        "adaptiveDesign": "<purple>Адаптивний дизайн</purple>",
-        "technologies": "Технології та <purple>інструменти</purple>",
-        "feedback": "<purple>Відгук</purple> нашого <purple>замовника</purple>",
-        "moreCases": "Переглянути <purple>більше кейсів</purple>",
-        "cta": "Хочу стати вашим задоволеним клієнтом!",
         "allProjects": "Всі проєкти"
     },
     "SomeProjectPage": {
-        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>"
+        "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>",
+        "stackTitle": "Технології та <purple>інструменти</purple>",
+        "adaptiveDesign": "<purple>Адаптивний дизайн</purple>",
+        "feedback": "<purple>Відгук</purple> нашого <purple>замовника</purple>",
+        "moreCases": "Переглянути <purple>більше кейсів</purple>"
     }
 }
