@@ -331,14 +331,14 @@
         "descriptionSEO": "Розробка багатосторінкових сайтів для бізнесу та організацій.",
         "seeCase": "Дивитись кейс",
         "editionalCard": "Тут може бути ваш проєкт",
-        "websites": "Представницькі багатосторінкові сайти",
-        "allProjects": "Всі проєкти"
+        "websites": "Представницькі багатосторінкові сайти"
     },
     "SomeProjectPage": {
         "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>",
         "stackTitle": "Технології та <purple>інструменти</purple>",
         "adaptiveDesign": "<purple>Адаптивний дизайн</purple>",
         "feedback": "<purple>Відгук</purple> нашого <purple>замовника</purple>",
-        "moreCases": "Переглянути <purple>більше кейсів</purple>"
+        "moreCases": "Переглянути <purple>більше кейсів</purple>",
+        "allProjects": "Всі проєкти"
     }
 }

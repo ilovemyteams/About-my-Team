@@ -335,14 +335,14 @@
         "descriptionSEO": "Development of multi-page websites for businesses and organizations.",
         "seeCase": "See the case",
         "editionalCard": "Your project can be here",
-        "websites": "Representative multi-page websites",
-        "allProjects": "All projects"
+        "websites": "Representative multi-page websites"
     },
     "SomeProjectPage": {
         "teamTitle": "<purple>The team</purple> that <purple>created</purple> this <purple>site</purple>",
         "stackTitle": "The technologies and <purple>tools</purple>",
         "adaptiveDesign": "<purple>Responsywny design</purple>",
         "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
-        "moreCases": "View <purple>more cases</purple>"
+        "moreCases": "View <purple>more cases</purple>",
+        "allProjects": "All projects"
     }
 }

@@ -336,14 +336,14 @@
         "descriptionSEO": "Tworzenie wielostronicowych stron internetowych dla firm i organizacji.",
         "seeCase": "Zobacz przypadek",
         "editionalCard": "Twój projekt może być tutaj",
-        "websites": "strony internetowe",
-        "allProjects": "Wszystkie projekty"
+        "websites": "strony internetowe"
     },
     "SomeProjectPage": {
         "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
         "stackTitle": "Technologie i <purple>narzędzia</purple>",
         "adaptiveDesign": "<purple>Responsywny design</purple>",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
-        "moreCases": "Zobacz <purple>więcej przykładów</purple>"
+        "moreCases": "Zobacz <purple>więcej przykładów</purple>",
+        "allProjects": "Wszystkie projekty"
     }
 }
