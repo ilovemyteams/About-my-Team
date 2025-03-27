@@ -164,7 +164,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             description: "",
         },
         pl: {
-            name: "Victoriia Zabara recruiter",
+            name: "Victoriia Zabara rekruter",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",
