@@ -5,6 +5,7 @@ import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
 import { TeamSectionProject } from "./TeamSection/TeamSectionProject";
@@ -30,6 +31,7 @@ export const SomeProjectPage = ({
             {technologies && (
                 <StackSectionProject technologies={technologies} />
             )}
+            <MoreCasesSection />
         </>
     );
 };
