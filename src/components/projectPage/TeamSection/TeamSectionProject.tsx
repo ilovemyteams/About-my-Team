@@ -14,7 +14,7 @@ export const TeamSectionProject = ({
     const getTranslation = useTranslations("SomeProjectPage");
     return (
         <PageSection className="pb-[109px] tab:pb-[100px] desk:pb-[120px]">
-            <h2 className="font-caviar text-2xl tab:text-4xl pc:text-5xl desk:text-6xl font-bold mb-6 tab:mb-10 pc:mb-[64px]">
+            <h2 className="font-caviar dark:text-grey text-purple-200 text-2xl tab:text-4xl pc:text-5xl desk:text-6xl font-bold mb-6 tab:mb-10 pc:mb-[64px]">
                 {getTranslation.rich("teamTitle", {
                     purple: chunk => (
                         <span className="text-purple-100">{chunk}</span>
