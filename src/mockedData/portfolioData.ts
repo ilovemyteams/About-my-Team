@@ -53,7 +53,8 @@ export type Slug =
     | "viktoriia-zabara"
     | "theatermag-com-ua"
     | "batatfarm-com"
-    | "ilovemyteam-online";
+    | "ilovemyteam-online"
+    | "alex-chudov";
 
 export type Technology =
     | "typescript"
@@ -97,6 +98,43 @@ export type PortfolioDataItemType = {
 export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
+            id: "6",
+            slug: "alex-chudov",
+            siteLink: "https://alex-chudov.vercel.app/",
+            order: 6,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=1ovMudsfQyZ3-7hphCNhrtFTpcPjY_-KB",
+            image: "https://drive.google.com/uc?export=view&id=1qp6lKJ4e3-qtlVT2VMoXgckO6DBkWl2o",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+        },
+        ua: {
+            name: "Алекс Чудов",
+            siteView: "лендінг",
+            subtitle: "Лендінг для автора книги",
+            description: "",
+        },
+        en: {
+            name: "Alex Chudov",
+            siteView: "landing page",
+            subtitle: "Landing Page for a book author",
+            description: "",
+        },
+        pl: {
+            name: "Alex Chudov",
+            siteView: "strona docelowa",
+            subtitle: "Landing page dla autora książki",
+            description: "",
+        },
+    },
+    {
+        data: {
             id: "5",
             slug: "viktoriia-zabara",
             siteLink: "viktoriia-zabara.netlify.app",
@@ -126,7 +164,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             description: "",
         },
         pl: {
-            name: "Victoriia Zabara recruiter",
+            name: "Victoriia Zabara rekruter",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",
