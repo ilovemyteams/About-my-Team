@@ -42,6 +42,7 @@ export const membersData: MemberDataItemType[] = [
                 "ilovemyteam-online",
                 "batatfarm-com",
                 "theatermag-com-ua",
+                "alex-chudov",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
@@ -52,6 +53,7 @@ export const membersData: MemberDataItemType[] = [
                 "batatfarm.com",
                 "theatermag.com.ua",
                 "baza-trainee.tech",
+                "choodov.com",
             ],
             pricePerHour: "24",
             socialLinks: {
@@ -305,7 +307,11 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-stoliarova-ui-ux-designer",
-            projectId: ["ilovemyteam-online", "protection-in-ua"],
+            projectId: [
+                "ilovemyteam-online",
+                "protection-in-ua",
+                "alex-chudov",
+            ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/Iryna_Stoliarova_sfjhav.jpg",
             position: "UI/UX designer",
@@ -314,6 +320,7 @@ export const membersData: MemberDataItemType[] = [
                 "ilovemyteam.online",
                 "greyplaza.com.ua",
                 "protection.in.ua",
+                "choodov.com",
             ],
             pricePerHour: "14",
             socialLinks: {
@@ -1018,12 +1025,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "nadia-hubchuk-qa-engineer",
-            projectId: ["ilovemyteam-online"],
+            projectId: ["ilovemyteam-online", "alex-chudov"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/nadia-hubchuk_c4pyg4.jpg",
             position: "QA Engineer",
             categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "choodov.com"],
             pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
@@ -1512,6 +1519,7 @@ export const membersData: MemberDataItemType[] = [
                 "ilovemyteam-online",
                 "theatermag-com-ua",
                 "viktoriia-zabara",
+                "alex-chudov",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/Mila_Maksymenko_gfxjbp.jpg",
@@ -1521,6 +1529,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "ilovemyteam.online",
                 "viktoriia-zabara.netlify.app",
+                "choodov.com",
             ],
             pricePerHour: "9",
             socialLinks: {
@@ -2038,12 +2047,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "anna-prutnik-frontend-developer",
-            projectId: ["ilovemyteam-online"],
+            projectId: ["ilovemyteam-online", "alex-chudov"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Anet_Prutnik_lvgflg.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "choodov.com"],
 
             pricePerHour: "10",
             socialLinks: {
@@ -2343,12 +2352,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "solomiia-lutska-project-project-manager-scrum-master",
-            projectId: ["ilovemyteam-online"],
+            projectId: ["ilovemyteam-online", "alex-chudov"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
-            projectsExperience: ["ilovemyteam.online"],
+            projectsExperience: ["ilovemyteam.online", "choodov.com"],
             pricePerHour: "10",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/solomiia-lutska",
