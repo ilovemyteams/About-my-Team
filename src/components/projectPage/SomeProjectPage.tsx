@@ -9,6 +9,7 @@ import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
 import { TeamSectionProject } from "./TeamSection/TeamSectionProject";
+import { WriteUsSection } from "../writeUsSection/WriteUsSection";
 
 export const SomeProjectPage = ({
     currentProject,
@@ -32,6 +33,7 @@ export const SomeProjectPage = ({
                 <StackSectionProject technologies={technologies} />
             )}
             <MoreCasesSection />
+            <WriteUsSection text="titleIWant" />
         </>
     );
 };
