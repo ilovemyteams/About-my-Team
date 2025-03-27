@@ -3,7 +3,7 @@ import { portfolioData } from "@/src/mockedData/portfolioData";
 
 import { PageSection } from "../shared/PageSection";
 import { Pagination } from "../shared/Pagination";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "../shared/ProjectCard";
 import { ProjectStub } from "./ProjectStub";
 
 interface AllProjectsMainPartProps {
@@ -39,7 +39,7 @@ export const AllProjectsMainPart = ({
                         key={item.data.id}
                         className="mb-6 tab:mb-10 pc:mb-[60px] desk:mb-10"
                     >
-                        <ProjectCard data={item} />
+                        <ProjectCard needName data={item} />
                     </li>
                 ))}
                 {portfolios.length > 0 &&

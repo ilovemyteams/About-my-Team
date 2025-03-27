@@ -5,10 +5,16 @@ import { Link } from "@/src/i18n/routing";
 import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { IconCorner } from "../shared/Icons/IconCorner";
+import { IconCorner } from "./Icons/IconCorner";
 import { SeeCaseButton } from "./SeeCaseButton";
 
-export const ProjectCard = ({ data }: { data: PortfolioDataItemType }) => {
+export const ProjectCard = ({
+    data,
+    needName,
+}: {
+    data: PortfolioDataItemType;
+    needName?: boolean;
+}) => {
     const locale = useLocale();
     const slug = data.data.slug;
     const cornersStyles =
@@ -32,7 +38,7 @@ export const ProjectCard = ({ data }: { data: PortfolioDataItemType }) => {
                 />
             </div>
             <div className=" pc:flex pc:justify-between pc:items-end">
-                <div className="mb-4 pc:mb-0">
+                <div className={`${needName ? "" : "hidden"} mb-4 pc:mb-0`}>
                     <h4 className="mb-1 font-caviar text-lg desk:text-2xl dark:text-white-200 text-purple-200">
                         {data[locale as LocaleType].name}
                     </h4>
