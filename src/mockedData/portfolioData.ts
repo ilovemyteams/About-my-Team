@@ -100,7 +100,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "6",
             slug: "alex-chudov",
-            siteLink: "https://alex-chudov.vercel.app/",
+            siteLink: "https://www.choodov.com",
             order: 6,
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1ovMudsfQyZ3-7hphCNhrtFTpcPjY_-KB",
