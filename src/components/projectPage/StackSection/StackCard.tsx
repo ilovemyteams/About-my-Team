@@ -11,7 +11,7 @@ export const StackCard = ({ technology }: { technology: Technology }) => {
                     <use href={`/images/stackSpite.svg#${technology}`} />
                 </svg>
             </div>
-            <p className="text-sm tab:text-base pc:text-lg desk:text-xl text-purple-200 dark:text-grey">
+            <p className="text-sm tab:text-base pc:text-lg25 desk:text-xl text-purple-200 dark:text-grey">
                 {name}
             </p>
         </div>
