@@ -2198,6 +2198,58 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "oleksandr-shcherbak-qa-engineer",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1743177906/Alex_Shcherbak_wo0hqq.jpg",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin:
+                    "http://www.linkedin.com/in/oleksandr-shcherbak-69376130a",
+                telegram: "https://t.me/alexxxandr2001",
+            },
+            tools: [
+                "Postman",
+                "Swagger",
+                "DevTools",
+                "SQL",
+                "Git",
+                "VSCode",
+                "Jira",
+                "ClickUp",
+                "Trello",
+                "TestRail",
+                "Figma",
+                "HTML/CSS",
+            ],
+        },
+        ua: {
+            name: "Олександр Щербак",
+            about: "Все, що не знайдеш ти, знайду я.",
+            services:
+                "Займаюся ручним тестуванням: функціональним, нефункціональним, UI/UX, API, баз даних і продуктивності. Аналізую вимоги, досліджую продукт і застосовую різноманітні методи тестування. Розробляю тестову документацію та складаю звіти про дефекти.",
+            team: "i love my team",
+        },
+        en: {
+            name: "Oleksandr Shcherbak",
+            about: "What you can't find, I will.",
+            services:
+                "I perform manual testing: functional, non-functional, UI/UX, API, database, and performance testing. I analyze requirements, study the product, and apply various testing methods. I develop test documentation and prepare defect reports.",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Oleksandr Shcherbak",
+            about: "To, czego nie znajdziesz, ja znajdę.",
+            services:
+                "Wykonuję testowanie manualne: funkcjonalne, niefunkcjonalne, UI/UX, API, baz danych i wydajnościowe. Analizuję wymagania, badam produkt i stosuję różne metody testowania. Tworzę dokumentację testową i przygotowuję raporty o defektach. ",
+            team: "i love my team",
+        },
+    },
+    {
+        data: {
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:
