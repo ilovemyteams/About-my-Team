@@ -3469,7 +3469,7 @@ export const questionsData: QAItemType[] = [
                 "This depends on the type of website you choose and whether it has an administrative panel for site management. If you need a landing page or a business card website, there is no need to create an expensive and complex site administration system.",
             ],
             fullAnswerTopText: [
-                "In such cases, it may be simpler and more cost-effective to hire a developer on an hourly basis to make the necessary updates quickly and without effort or stress on your part. Like everything in life, managing your website updates independently — whether it's a landing page, a business card website, or a multi-page site — has its advantages and disadvantages.",
+                "In such cases, it may be simpler and more cost-effective to hire a developer on an hourly basis to make the necessary updates quickly and without effort or stress on your part. Managing your website updates independently — whether it's a landing page, a business card website, or a multi-page site — has its advantages and disadvantages.",
             ],
             fullAnswerContent: [
                 {
@@ -3573,7 +3573,7 @@ export const questionsData: QAItemType[] = [
                 "To zależy od formatu strony, którą wybierzesz, oraz od tego, czy posiada ona panel administracyjny do zarządzania treścią. Jeśli potrzebujesz landing page’a lub strony wizytówki, nie ma konieczności tworzenia kosztownej i skomplikowanej funkcji zarządzania stroną.",
             ],
             fullAnswerTopText: [
-                "W takim przypadku łatwiej i taniej będzie zatrudnić programistę na godziny, który szybko wprowadzi zmiany bez Twojego wysiłku i stresu. Jak wszystko w życiu, samodzielne zarządzanie aktualizacjami – niezależnie od tego, czy chodzi o landing page, stronę wizytówkę czy stronę wielostronicową – ma swoje zalety i wady.",
+                "W takim przypadku łatwiej i taniej będzie zatrudnić programistę na godziny, który szybko wprowadzi zmiany bez Twojego wysiłku i stresu. Samodzielne zarządzanie aktualizacjami – niezależnie od tego, czy chodzi o landing page, stronę wizytówkę czy stronę wielostronicową – ma swoje zalety i wady.",
             ],
             fullAnswerContent: [
                 {
