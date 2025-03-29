@@ -132,7 +132,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             slug: "viktoriia-zabara",
         },
         ua: {
-            siteName: "IT-рекрутер",
+            siteName: "Вікторія Забара рекрутер",
             siteView: "лендінг",
             reviewer: "Вікторія Забара",
             reviewerRole: "IT-рекрутер",
@@ -140,7 +140,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Щиро дякую вам за сайт, він виглядає професійно, ретельно продуманим і навіть відображає мій характер та моє світосприйняття. (Легко, конкретно, нічого зайвого). Дякую вам за роботу.",
         },
         en: {
-            siteName: "IT-recruiter",
+            siteName: "Victoriia Zabara recruiter",
             siteView: "landing",
             reviewer: "Viktoriia Zabara",
             reviewerRole: "IT-recruiter",
@@ -148,7 +148,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Thank you very much for the website, it looks professional, well thought out and even reflects my character and my worldview. (Easy, concrete, nothing excessive). I truly appreciate your work.",
         },
         pl: {
-            siteName: "IT-rekruter",
+            siteName: "Victoriia Zabara rekruter",
             siteView: "strona docelowa",
             reviewer: "Viktoriia Zabara",
             reviewerRole: "Rekruter w branży IT",
