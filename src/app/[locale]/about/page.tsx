@@ -4,7 +4,7 @@ import { HeroAbout } from "@/src/components/aboutPage/HeroAbout";
 import { PresentationSection } from "@/src/components/aboutPage/PresentationSection";
 import { QuoteSection } from "@/src/components/aboutPage/QuoteSection";
 import { TeamSection } from "@/src/components/aboutPage/TeamSection";
-import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({

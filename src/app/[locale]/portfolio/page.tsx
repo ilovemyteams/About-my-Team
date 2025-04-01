@@ -1,6 +1,6 @@
 import { AllProjectsMainPart } from "@/src/components/allProjectsPage/AllProjectsMainPart";
 import { Header } from "@/src/components/allProjectsPage/Header";
-import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({
