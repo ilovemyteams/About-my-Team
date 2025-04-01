@@ -1,11 +1,11 @@
 import { useLocale, useTranslations } from "next-intl";
 
+import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
+import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
+import { SharePopover } from "@/src/components/shared/SharePopover";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { IconProfile } from "../../shared/Icons/IconProfile";
-import { ImageFromCloud } from "../../shared/ImageFromCloud";
-import { SharePopover } from "../../shared/SharePopover";
 import { MemberLiSquare } from "./MemberLiSquare";
 import { MemberProjectExperience } from "./MemberProjectExperience";
 import { MemberSocialLinks } from "./MemberSocialLinks";
