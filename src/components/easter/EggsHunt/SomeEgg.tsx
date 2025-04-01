@@ -21,7 +21,7 @@ export const SomeEgg = ({ x, y, kindOfEgg }: SomeEggProps) => {
     const EggIcon = eggIcons[kindOfEgg - 1];
     return (
         <div className="absolute z-10" style={{ top: `${y}%`, left: `${x}%` }}>
-            <EggIcon className="w-12 h-auto absolute" />
+            <EggIcon className="w-10 tab:w-12 pc:w-[54px] h-auto absolute" />
         </div>
     );
 };
