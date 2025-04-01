@@ -1,9 +1,9 @@
 // import { useLocale } from "next-intl";
 import { getLocale } from "next-intl/server";
 
-import { HeaderFAQ } from "@/src/components/faqPage/HeaderFAQ";
-import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
-import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
+import { HeaderFAQ } from "@/src/components/allQuestionsPage/HeaderFAQ";
+import { QaCardList } from "@/src/components/allQuestionsPage/qaSection/QaCardList";
+import { FaqSectionCta } from "@/src/components/allQuestionsPage/сtaSection/FaqSectionCta";
 import { Pagination } from "@/src/components/shared/Pagination";
 import { NothingFound } from "@/src/components/shared/Search/NothingFound";
 import { usePaginationData } from "@/src/hooks/usePaginationData";

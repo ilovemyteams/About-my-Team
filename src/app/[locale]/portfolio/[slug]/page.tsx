@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
 
-import { SomeProjectPage } from "@/src/components/projectPage/SomeProjectPage";
+import { SomeProjectPage } from "@/src/components/someProjectPage/SomeProjectPage";
 import {
     portfolioData,
     PortfolioDataItemType,
