@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
-import { EggContainer } from "../../easter/EggsHunt/EggContainer";
+// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
@@ -25,7 +25,7 @@ export const QaSection = () => {
     };
     return (
         <Section id="faq" className="relative">
-            <EggContainer count={3} />
+            {/* <EggContainer count={3} /> */}
             <div ref={ref}>
                 <div className="flex">
                     <TitleQA />
