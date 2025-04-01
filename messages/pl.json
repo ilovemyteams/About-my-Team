@@ -344,6 +344,11 @@
         "adaptiveDesign": "<purple>Responsywny design</purple>",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
-        "allProjects": "Wszystkie projekty"
+        "allProjects": "Wszystkie projekty",
+        "deadlines": "Terminy realizacji:",
+        "analysis": "Analiza",
+        "design": "Projektowanie",
+        "launch": "Wydanie",
+        "support": "Wsparcie"
     }
 }

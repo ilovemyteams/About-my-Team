@@ -339,6 +339,11 @@
         "adaptiveDesign": "<purple>Адаптивний дизайн</purple>",
         "feedback": "<purple>Відгук</purple> нашого <purple>замовника</purple>",
         "moreCases": "Переглянути <purple>більше кейсів</purple>",
-        "allProjects": "Всі проєкти"
+        "allProjects": "Всі проєкти",
+        "deadlines": "Терміни виконання:",
+        "analysis": "Аналітика",
+        "design": "Дизайн",
+        "launch": "Запуск в реліз",
+        "support": "Підтримка"
     }
 }

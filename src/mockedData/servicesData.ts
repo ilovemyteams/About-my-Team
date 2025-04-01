@@ -46,7 +46,7 @@ export interface TextType {
 export const servicesData: ServiceType[] = [
     {
         slug: "business-analysis",
-        icon: "ba",
+        icon: "analysis",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559595/services-websites_hdzzeu.jpg",
 
         ua: {
@@ -2011,7 +2011,7 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Аналіз та консультація",
-                                icon: "ba",
+                                icon: "analysis",
                                 text: [
                                     {
                                         text: "Обговорення цілей та потреб вашого бізнесу.",
@@ -2205,7 +2205,7 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Analysis and consultation",
-                                icon: "ba",
+                                icon: "analysis",
                                 text: [
                                     {
                                         text: "Discussion of your business goals and needs.",
@@ -2399,7 +2399,7 @@ export const servicesData: ServiceType[] = [
                         description: [
                             {
                                 title: "Analiza i konsultacje",
-                                icon: "ba",
+                                icon: "analysis",
                                 text: [
                                     {
                                         text: "Omówienie celów i potrzeb biznesowych.",
