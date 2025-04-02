@@ -31,7 +31,8 @@
         "**/**/*.tsx",
         ".next/types/**/*.ts",
         "next-sitemap.config.js",
-        "src/components/eventsPage/SecondScene"
+        "src/components/eventsPage/SecondScene",
+        "custom.d.ts"
     ],
     "exclude": ["node_modules"]
 }
