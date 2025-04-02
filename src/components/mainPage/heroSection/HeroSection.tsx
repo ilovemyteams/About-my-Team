@@ -1,5 +1,4 @@
 // import Image from "next/image";
-import { IconLogoEaster } from "../../easter/icons/IconLogoEaster";
 import { LogoEaster } from "../../easter/LogoEaster";
 // import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
