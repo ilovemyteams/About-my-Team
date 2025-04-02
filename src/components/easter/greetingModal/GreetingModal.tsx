@@ -12,6 +12,7 @@ import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
 import { IconArrowCoffee } from "./IconArrowCoffee";
+import happy from "@/src/assets/images/happy.png";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
@@ -82,7 +83,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                         <IconCloseX className="stroke-2 size-5 text-purple-200" />
                     </button>
                     <Image
-                        src="/images/susanna/happy.png"
+                        src={happy}
                         alt="Happy"
                         width={750}
                         height={366}
