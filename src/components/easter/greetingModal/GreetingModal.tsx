@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
+import happy from "@/src/assets/images/happy.png";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
@@ -12,7 +13,6 @@ import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
 import { IconArrowCoffee } from "./IconArrowCoffee";
-import happy from "@/src/assets/images/happy.png";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
