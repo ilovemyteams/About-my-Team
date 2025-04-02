@@ -16,12 +16,6 @@ const nextConfig = {
         port: "",
       },
     ],
-    localPatterns: [
-      {
-        pathname: "/assets/images/**",
-        search: "",
-      },
-    ],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
