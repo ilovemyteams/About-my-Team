@@ -4,11 +4,11 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
-import happy from "../../../assets/images/happy.png";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 
+import happy from "../../../assets/images/happy.png";
 // import { Button } from "../../shared/Button";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
