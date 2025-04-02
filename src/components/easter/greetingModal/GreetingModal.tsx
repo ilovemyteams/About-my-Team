@@ -8,7 +8,9 @@ import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 
+import bday from "../../../assets/images/bday.png";
 import happy from "../../../assets/images/happy.png";
+import qrcode from "../../../assets/images/qr-code.png";
 // import { Button } from "../../shared/Button";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
@@ -90,7 +92,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                         className="absolute top-[26px] tab:top-0 left-0 desk:left-[50px]"
                     />
                     <Image
-                        src="/images/susanna/bday.png"
+                        src={bday}
                         alt="birthday"
                         width={750}
                         height={302}
@@ -124,7 +126,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                                 rel="noopener noreferrer"
                             >
                                 <Image
-                                    src="/images/susanna/qr-code.png"
+                                    src={qrcode}
                                     alt="QR-code"
                                     width={129}
                                     height={129}
