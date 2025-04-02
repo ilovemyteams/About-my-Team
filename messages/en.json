@@ -298,7 +298,13 @@
         "minutes": "{minutes, plural, =1 {minute} other {minutes}}",
         "seconds": "{seconds, plural, =1 {second} other {seconds}}",
         "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
-        "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!"
+        "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!",
+        "Easter": {
+            "greetingTitle": "Susanna!",
+            "greetingText": "May your dreams come true, opportunities multiply, all endeavors succeed, and may you have the strength and energy for new achievements!",
+            "caption": "Congratulations to Susanna",
+            "btn": "btn"
+        }
     },
     "PortfolioPage": {
         "title": "Our <purple>Implemented Projects</purple>",
