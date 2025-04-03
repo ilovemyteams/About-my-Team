@@ -9,9 +9,12 @@ import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
+import { Link } from "@/src/i18n/routing";
+import { usePathname } from "next/navigation";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
+    const pathname = usePathname();
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
@@ -40,8 +43,13 @@ export const DesktopHeader = () => {
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
+                        {!pathname.includes("events") && (
+                            <div onClick={() => setIsHeaderMenuOpened(false)}>
+                                <Basket />
+                            </div>
+                        )}
                     </div>
-                    <Basket />
+
                     <SocialLinksList />
                 </div>
             </div>
