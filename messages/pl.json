@@ -300,7 +300,15 @@
         "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
         "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
-        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
+        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!",
+        "Easter": {
+            "greetingTitle": "Susanno!",
+            "greetingText": "Niech spełniają się marzenia, mnożą się możliwości, wszystkie sprawy idą pomyślnie, a sił i energii nie brakuje na nowe osiągnięcia!",
+            "caption": "Pogratuluj Susannie",
+            "captionBig": "pogratuluj Susannie",
+
+            "btn": "btn"
+        }
     },
     "PortfolioPage": {
         "title": "Nasze <purple>zrealizowane projekty</purple>",
