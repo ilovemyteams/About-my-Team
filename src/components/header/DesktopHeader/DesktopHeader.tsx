@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
@@ -9,8 +10,6 @@ import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 import { DesktopHeaderMenu } from "./DesktopHeaderMenu";
-import { Link } from "@/src/i18n/routing";
-import { usePathname } from "next/navigation";
 
 export const DesktopHeader = () => {
     const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
