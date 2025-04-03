@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
+import { Basket } from "../../easter/Basket";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
@@ -40,7 +41,7 @@ export const DesktopHeader = () => {
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
                     </div>
-
+                    <Basket />
                     <SocialLinksList />
                 </div>
             </div>

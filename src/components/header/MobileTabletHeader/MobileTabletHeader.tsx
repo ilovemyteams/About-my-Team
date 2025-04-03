@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { Basket } from "../../easter/Basket";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -32,6 +33,7 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+                        <Basket />
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
