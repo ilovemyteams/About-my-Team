@@ -38,13 +38,16 @@ export const DesktopHeader = () => {
                 py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
-                    <div className="flex flex-col pc:gap-8 desk:gap-10">
+                    <div className=" relative flex flex-col pc:gap-8 desk:gap-10">
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
                         />
                         {!pathname.includes("events") && (
-                            <div onClick={() => setIsHeaderMenuOpened(false)}>
+                            <div
+                                className=" absolute pc:bottom-[-10vh] desk:bottom-[-20vh]"
+                                onClick={() => setIsHeaderMenuOpened(false)}
+                            >
                                 <Basket />
                             </div>
                         )}
