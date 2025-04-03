@@ -23,7 +23,7 @@ export const LogoEaster = ({ className }: { className?: string }) => {
                     style={{
                         transformOrigin: "bottom center",
                     }}
-                    className="absolute w-[5.7%] tab:w-[20px] pc:w-6 desk:w-8 left-[14%] tab:left-[56px] pc:left-[62px] desk:left-[84px] top-[-88%] tab:top-[-80px] pc:top-[-96px] desk:top-[-110px] h-auto"
+                    className="absolute z-[2] w-[5.7%] tab:w-[20px] pc:w-6 desk:w-8 left-[14%] tab:left-[56px] pc:left-[62px] desk:left-[84px] top-[-88%] tab:top-[-80px] pc:top-[-96px] desk:top-[-110px] h-auto"
                 >
                     <Image
                         src="/images/easter/left-ear.svg"
@@ -46,7 +46,7 @@ export const LogoEaster = ({ className }: { className?: string }) => {
                     style={{
                         transformOrigin: "bottom center",
                     }}
-                    className="absolute w-[8.5%] tab:w-[30px] pc:w-[36px] desk:w-[42px] left-[21%] tab:left-[80px] pc:left-[90px] desk:left-[118px] top-[-86%] tab:top-[-78px] pc:top-[-92px] desk:top-[-106px] h-auto"
+                    className="absolute z-[2] w-[8.5%] tab:w-[30px] pc:w-[36px] desk:w-[42px] left-[21%] tab:left-[80px] pc:left-[90px] desk:left-[118px] top-[-86%] tab:top-[-78px] pc:top-[-92px] desk:top-[-106px] h-auto"
                 >
                     <Image
                         src="/images/easter/right-ear.svg"
