@@ -252,8 +252,8 @@ export const IconEggGreen = ({ className }: IconProps) => {
                     y2="799.876"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#72D384" />
-                    <stop offset="1" stopColor="#BBF6C3" />
+                    <stop stop-color="#72D384" />
+                    <stop offset="1" stop-color="#BBF6C3" />
                 </linearGradient>
             </defs>
         </svg>

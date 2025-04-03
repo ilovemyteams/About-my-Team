@@ -99,10 +99,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="11.7404"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_16502_31593"
@@ -112,10 +112,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="36.4822"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint2_linear_16502_31593"
@@ -125,10 +125,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="63.8056"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint3_linear_16502_31593"
@@ -138,10 +138,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="80.3131"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint4_linear_16502_31593"
@@ -151,10 +151,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="75.264"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint5_linear_16502_31593"
@@ -164,10 +164,10 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="77.0776"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#ECB8B8" />
-                    <stop offset="0.18" stopColor="#EEC2C2" />
-                    <stop offset="0.69" stopColor="#F4DADA" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#ECB8B8" />
+                    <stop offset="0.18" stop-color="#EEC2C2" />
+                    <stop offset="0.69" stop-color="#F4DADA" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
                 <linearGradient
                     id="paint6_linear_16502_31593"
@@ -177,9 +177,9 @@ export const LeftWingIcon = ({ className }: IconProps) => {
                     y2="33.9031"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#F3D4D5" />
-                    <stop offset="0.35" stopColor="#F4DBDB" />
-                    <stop offset="1" stopColor="#F7E4E4" />
+                    <stop stop-color="#F3D4D5" />
+                    <stop offset="0.35" stop-color="#F4DBDB" />
+                    <stop offset="1" stop-color="#F7E4E4" />
                 </linearGradient>
             </defs>
         </motion.svg>
