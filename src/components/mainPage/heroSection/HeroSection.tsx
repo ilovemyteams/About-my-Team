@@ -1,11 +1,9 @@
-// import Image from "next/image";
 import { IconBranch1 } from "../../easter/icons/IconBranch1";
 import { IconBranch2 } from "../../easter/icons/IconBranch2";
 import { IconBranch3 } from "../../easter/icons/IconBranch3";
 import { IconDecorEgg } from "../../easter/icons/IconDecorEgg";
 import { IconEggRope } from "../../easter/icons/IconEggRope";
 import { LogoEaster } from "../../easter/LogoEaster";
-// import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { Section } from "../../shared/Section";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
@@ -25,7 +23,6 @@ export const HeroSection = () => {
                           tab:mb-12 desk:mb-0 pc:mt-[98px] desk:mt-[180px]"
             >
                 <LogoEaster />
-                {/* <IconLogoEaster className="dark:text-white-200 text-purple-200 min-w-[288px] w-full tab:w-[720px] pc:w-[810px] desk:w-[1000px] h-auto" /> */}
             </div>
             <div className="relative flex flex-col pc:items-baseline tab:justify-between tab:flex-row">
                 <HeroInfo />
@@ -53,7 +50,7 @@ export const HeroSection = () => {
             pc:right-[50%] pc:top-[-100px]"
             />
             <div
-                className="hidden tab:block absolute top-[158px] tab:left-[361px] z-[-1]
+                className="hidden tab:block absolute top-[158px] tab:left-[361px] z-[-1] dark:text-purple-strokeLight text-purple-stroke
             pc:top-[200px] pc:left-[445px] desk:top-[340px] desk:left-[570px]"
             >
                 <IconEggRope className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
