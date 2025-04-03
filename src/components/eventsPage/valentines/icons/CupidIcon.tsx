@@ -62,8 +62,8 @@ export const CupidIcon = ({ className }: IconProps) => {
                     y2="24.2371"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#FFF1F1" />
-                    <stop offset="1" stopColor="#FD0B2D" />
+                    <stop stop-color="#FFF1F1" />
+                    <stop offset="1" stop-color="#FD0B2D" />
                 </linearGradient>
                 <clipPath id="clip0_16270_82709">
                     <rect
