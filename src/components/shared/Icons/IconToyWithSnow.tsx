@@ -58,11 +58,11 @@ export const IconToyWithSnow = ({ className }: IconProps) => {
                     y2="15.6884"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#FEFDFF" />
-                    <stop offset="0.25" stopColor="#F6F2FF" />
-                    <stop offset="0.5" stopColor="#EAE0FF" />
-                    <stop offset="0.75" stopColor="#CFB8FF" />
-                    <stop offset="1" stopColor="#B491FF" />
+                    <stop stop-color="#FEFDFF" />
+                    <stop offset="0.25" stop-color="#F6F2FF" />
+                    <stop offset="0.5" stop-color="#EAE0FF" />
+                    <stop offset="0.75" stop-color="#CFB8FF" />
+                    <stop offset="1" stop-color="#B491FF" />
                 </linearGradient>
             </defs>
         </svg>

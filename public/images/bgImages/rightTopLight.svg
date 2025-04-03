@@ -2,9 +2,9 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M542 2.05394e-05L72.0508 0C26.0115 56.3111 0 120.272 0 188.087C0 391.81 234.743 560.752 542 592V2.05394e-05Z" fill="url(#paint0_radial_4897_28879)"/>
 <defs>
 <radialGradient id="paint0_radial_4897_28879" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(644.874 188.087) rotate(-90) scale(365.411 576.02)">
-<stop stopColor="#DFC5FF"/>
-<stop offset="0.5" stopColor="#E7DBFF" stop-opacity="0.57"/>
-<stop offset="1" stopColor="#E1DCFF" stop-opacity="0"/>
+<stop stop-color="#DFC5FF"/>
+<stop offset="0.5" stop-color="#E7DBFF" stop-opacity="0.57"/>
+<stop offset="1" stop-color="#E1DCFF" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>

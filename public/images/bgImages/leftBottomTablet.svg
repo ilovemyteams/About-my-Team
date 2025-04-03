@@ -2,9 +2,9 @@
 <path d="M364.532 284H0V12.8189C26.9702 4.49512 55.7277 0 85.5785 0C239.899 0 365 120.137 365 268.333C365 273.592 364.842 278.816 364.532 284Z" fill="url(#paint0_radial_2975_15068)"/>
 <defs>
 <radialGradient id="paint0_radial_2975_15068" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(85.5785 268.333) rotate(-55.6734) scale(238.799 242.515)">
-<stop stopColor="#2A006E" stop-opacity="0.67"/>
-<stop offset="0.504" stopColor="#210066" stop-opacity="0.35"/>
-<stop offset="1" stopColor="#36006C" stop-opacity="0"/>
+<stop stop-color="#2A006E" stop-opacity="0.67"/>
+<stop offset="0.504" stop-color="#210066" stop-opacity="0.35"/>
+<stop offset="1" stop-color="#36006C" stop-opacity="0"/>
 </radialGradient>
 </defs>
 </svg>
