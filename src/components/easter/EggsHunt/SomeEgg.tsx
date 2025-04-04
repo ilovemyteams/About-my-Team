@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import { useEasterCounter } from "@/src/utils/EasterCounterContext";
+// import { useEasterCounter } from "@/src/utils/EasterCounterContext";
 
 import { IconEggGreen } from "../icons/IconEggGreen";
 import { IconEggMulticolored } from "../icons/IconEggMulticolored";
@@ -27,10 +27,10 @@ export const SomeEgg = ({ x, y, kindOfEgg }: SomeEggProps) => {
     const [isClicked, setIsClicked] = useState(false);
     const EggIcon = eggIcons[kindOfEgg - 1];
 
-    const { incrementEggs } = useEasterCounter();
+    // const { incrementEggs } = useEasterCounter();
 
     const handleClick = () => {
-        incrementEggs();
+        // incrementEggs();
         setIsClicked(true);
     };
 
