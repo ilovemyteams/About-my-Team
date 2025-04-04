@@ -2,7 +2,7 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { portfolioData } from "@/src/mockedData/portfolioData";
 
-// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
+import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
 import { PortfolioCarousel } from "./PortfolioCarousel";
@@ -15,7 +15,7 @@ export const PortfolioSection = () => {
     );
     return (
         <Section id="portfolio" className="relative">
-            {/* <EggContainer count={3} /> */}
+            <EggContainer count={3} />
             <PortfolioTitle />
             <div className="relative flex flex-col justify-start items-center pc:items-end gap-y-[40px] pc:gap-y-[84px] ">
                 <PortfolioCarousel

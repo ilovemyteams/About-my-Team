@@ -227,6 +227,7 @@ const config: Config = {
                 caviar: ["var(--font-caviar)"],
                 intro: ["var(--font-intro)"],
                 segoe: ["var(--font-segoe)"],
+                comfortaa: ["var(--font-comfortaa)"],
             },
             colors: {
                 purple: {

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { membersData } from "@/src/mockedData/membersData";
 import { portfolioData } from "@/src/mockedData/portfolioData";
 
-// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
+import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
 import { MemberCardsList } from "./MemberCardsList";
@@ -53,7 +53,7 @@ export const OurTeamSection = () => {
 
     return (
         <Section id="team" className="relative">
-            {/* <EggContainer count={2} /> */}
+            <EggContainer count={2} />
             <Title />
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MenuTeamSection

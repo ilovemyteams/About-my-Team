@@ -8,6 +8,7 @@ import React from "react";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
+import { GreetingPortal } from "@/src/components/easter/greetingModal/GreetingPortal";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
@@ -69,6 +70,16 @@ const segoe = localFont({
         },
     ],
     variable: "--font-segoe",
+});
+const comfortaa = localFont({
+    src: [
+        {
+            path: "../../fonts/Comfortaa/Comfortaa.ttf",
+            weight: "400",
+            style: "normal",
+        },
+    ],
+    variable: "--font-comfortaa",
 });
 
 export async function generateMetadata({

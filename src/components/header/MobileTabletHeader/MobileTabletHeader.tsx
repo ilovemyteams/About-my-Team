@@ -1,9 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { Basket } from "../../easter/Basket";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -13,6 +15,7 @@ export const MobileTabletHeader = () => {
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
+    const pathname = usePathname();
 
     useEffect(() => {
         isHeaderMenuOpened
@@ -32,6 +35,11 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+                        {!pathname.includes("events") && (
+                            <div onClick={() => setIsHeaderMenuOpened(false)}>
+                                <Basket />
+                            </div>
+                        )}
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}

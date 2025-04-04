@@ -9,7 +9,7 @@ export const HeroInfo = () => {
         <div className="flex flex-col items-center pc:block pc:w-[35vw] desk:max-w-[535px] ">
             <h1
                 className="text-xl mt-6 tab:mt-0 pc:static
-                           tab:absolute tab:left-0 tab:top-0 tab:min-w-[381px] tab:max-w-[49vw] desk:text-2xl text-purple-200 dark:text-grey desk:mb-[108px]"
+                           tab:absolute tab:left-0 tab:top-0 tab:min-w-[381px] tab:max-w-[40vw] desk:text-2xl text-purple-200 dark:text-grey desk:mb-[108px]"
             >
                 {getTranslation.rich("heroInfoText", {
                     br: () => <br />,
