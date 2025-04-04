@@ -1,3 +1,4 @@
+import { CounterBox } from "../../easter/EggsHunt/CounterBox";
 import { IconBranch1 } from "../../easter/icons/IconBranch1";
 import { IconBranch2 } from "../../easter/icons/IconBranch2";
 import { IconBranch3 } from "../../easter/icons/IconBranch3";
@@ -14,7 +15,7 @@ import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 export const HeroSection = () => {
     return (
         <div className="relative overflow-hidden">
-            <Section className="pt-[20vw] tab:pt-[123px] pc:pt-8 ">
+            <Section className="pt-[20vw] tab:pt-[123px] pc:pt-8 relative">
                 <div className="hidden pc:flex gap-[204px] justify-end relative z-10">
                     <LocaleSwitcher />
                     <ThemeSwitcher id="HeroSectionThemeSwitcher" />
@@ -37,6 +38,9 @@ export const HeroSection = () => {
                 >
                     <IconEggRope className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
                     <IconDecorEgg className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
+                </div>
+                <div className="fixed top-[80px] right-0 z-[11] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
+                    <CounterBox />
                 </div>
             </Section>
             <IconBranch1
