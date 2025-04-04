@@ -11,8 +11,6 @@ export function ThemeSwitcher({ id }: { id: string }) {
     const [mounted, setMounted] = useState<boolean>(false);
     const pathname = usePathname();
 
-    console.log(pathname);
-
     useEffect(() => {
         const storedTheme = Cookies.get("theme");
         if (
