@@ -17,9 +17,9 @@ export const EasterHeroSection = () => {
                     {getTranslation("heroTitle")}
                 </h1>
                 <div className=" flex flex-col pc:flex-row pc:justify-between">
-                    <div className=" grow shrink relative z-[1000] flex items-center justify-center mb-[clamp(28px,_6dvh,_56px)] tab:mb-[clamp(80px,_6dvh,_120px)] pc:mb-[clamp(50px,_6dvh,_80px)] pc:grow-0">
+                    <div className=" grow shrink relative flex items-center justify-center mb-[clamp(28px,_6dvh,_56px)] tab:mb-[clamp(80px,_6dvh,_120px)] pc:mb-[clamp(50px,_6dvh,_80px)] pc:grow-0">
                         <div className="max-w-[80%] h-full aspect-[140/127] mx-auto tab:max-w-[550px] pc:max-w-none pc:max-h-[500px]">
-                            <div className="relative w-full h-full inline-flex items-end justify-center">
+                            <div className="relative w-full h-full inline-flex items-end justify-center pc:ml-[13%] desk:ml-0">
                                 <IconBigEgg className="h-full w-auto max-w-[80%] max-h-auto" />
                                 <IconSmallEgg className="h-[55%] w-auto max-w-[35%] max-h-auto ml-[-15px] tab:ml-[-25px]" />
 
