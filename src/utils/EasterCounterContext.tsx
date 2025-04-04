@@ -30,7 +30,6 @@ export const EasterCounterProvider = ({
     );
 };
 
-// Кастомний хук для використання контексту
 export const useEasterCounter = () => {
     const context = useContext(EasterCounterContext);
     if (context === undefined) {
