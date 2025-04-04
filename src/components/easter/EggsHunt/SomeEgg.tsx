@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import { useEasterCounter } from "@/src/utils/EasterCounterContext";
+
 import { IconEggGreen } from "../icons/IconEggGreen";
 import { IconEggMulticolored } from "../icons/IconEggMulticolored";
 import { IconEggMulticolored2 } from "../icons/IconEggMulticolored2";
