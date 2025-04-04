@@ -28,7 +28,7 @@ export const EasterHeroSection = () => {
                         </div>
                     </div>
                     <div className="shrink-0 text-center tab:max-w-[444px] tab:mx-auto pc:grow-0 pc:flex pc:flex-col pc:justify-center pc:items-center pc:mr-0 desk:mr-[60px] desk:max-w-[520px]">
-                        <p className="mb-[56px] tab:mb-[68px] text-base tab:text-xl28 text-purple-200 desk:text-2xl">
+                        <p className="mb-[56px] tab:mb-[68px] text-base tab:text-xl28 text-purple-200 dark:text-white-200 desk:text-2xl">
                             {getTranslation("heroText")}
                         </p>
                         <Button>{getTranslation("heroBtn")}</Button>
