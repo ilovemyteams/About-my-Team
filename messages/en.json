@@ -344,5 +344,13 @@
         "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
         "moreCases": "View <purple>more cases</purple>",
         "allProjects": "All projects"
+    },
+    "EasterEvent": {
+        "heroTitle": "Happy Easter!",
+        "heroText": "We love creativity and spreading good vibes — we're giving away a discount certificate for our services this Easter.",
+        "heroBtn": "Get the certificate",
+        "modalTitle": "Congratulations! \nYou've received a certificate \nfor our services!",
+        "modalCaption": "*This is a one-time offer and is valid \nuntil 01.04.2025",
+        "modalText": "To receive the certificate, leave your details, and our manager will contact you."
     }
 }
