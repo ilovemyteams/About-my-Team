@@ -26,9 +26,9 @@ export const BigCloudIcon = ({ className }: IconProps) => {
                     y2="0.470471"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FFF2F2" />
-                    <stop offset="0.58" stop-color="#FFE9E9" />
-                    <stop offset="1" stop-color="#FFDFDF" />
+                    <stop stopColor="#FFF2F2" />
+                    <stop offset="0.58" stopColor="#FFE9E9" />
+                    <stop offset="1" stopColor="#FFDFDF" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_16270_82703"
@@ -38,9 +38,9 @@ export const BigCloudIcon = ({ className }: IconProps) => {
                     y2="0.115978"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FFA9B5" />
-                    <stop offset="0.42" stop-color="#FFE9E9" />
-                    <stop offset="1" stop-color="#FFF2F2" />
+                    <stop stopColor="#FFA9B5" />
+                    <stop offset="0.42" stopColor="#FFE9E9" />
+                    <stop offset="1" stopColor="#FFF2F2" />
                 </linearGradient>
             </defs>
         </svg>

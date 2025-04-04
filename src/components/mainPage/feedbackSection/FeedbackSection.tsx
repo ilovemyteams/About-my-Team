@@ -2,7 +2,7 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { feedbackData } from "@/src/mockedData/feedbackData";
 
-// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
+import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
 import { FeedbackSlider } from "./FeedbackSlider";
@@ -13,7 +13,7 @@ export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     return (
         <Section id="feedback" className="relative">
-            {/* <EggContainer count={3} /> */}
+            <EggContainer count={3} />
             <FeedbackTitle />
             <div className="tab:hidden">
                 <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
