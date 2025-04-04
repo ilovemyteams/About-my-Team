@@ -4,12 +4,15 @@ import Cookies from "js-cookie";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-import { usePathname } from "@/src/i18n/routing";
-
-export function ThemeSwitcher({ id }: { id: string }) {
+export function ThemeSwitcher({
+    id,
+    isAlwaysLight = false,
+}: {
+    id: string;
+    isAlwaysLight?: boolean;
+}) {
     const { setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState<boolean>(false);
-    const pathname = usePathname();
 
     useEffect(() => {
         const storedTheme = Cookies.get("theme");
@@ -32,13 +35,13 @@ export function ThemeSwitcher({ id }: { id: string }) {
     };
 
     //Remove after easter event
-    const borderColor = !pathname.includes("events")
-        ? "dark:border-grey border-greyLight"
-        : "dark:border-grey border-greyLight pc:dark:border-greyLight";
+    const borderColor = isAlwaysLight
+        ? "dark:border-grey border-greyLight pc:dark:border-greyLight"
+        : "dark:border-grey border-greyLight";
 
-    const circleColor = !pathname.includes("events")
-        ? "dark:bg-grey bg-greyLight"
-        : "dark:bg-grey bg-greyLight pc:dark:bg-greyLight";
+    const circleColor = isAlwaysLight
+        ? "dark:bg-grey bg-greyLight pc:dark:bg-greyLight"
+        : "dark:bg-grey bg-greyLight";
 
     if (!mounted) {
         return (
