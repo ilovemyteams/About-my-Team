@@ -353,5 +353,13 @@
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
         "allProjects": "Wszystkie projekty"
+    },
+    "EasterEvent": {
+        "heroTitle": "Wesołych Świąt Wielkanocnych!",
+        "heroText": "Uwielbiamy kreatywność i dobry nastrój — mamy dla Ciebie zniżkę na landing page.",
+        "heroBtn": "Odbierz certyfikat",
+        "modalTitle": "Gratulacje! \nOtrzymałeś certyfikat \nna nasze usługi!",
+        "modalCaption": "*Oferta jednorazowa, ważna \ndo 01.04.2025",
+        "modalText": "Aby otrzymać certyfikat, zostaw swoje dane, a nasz menedżer się z Tobą skontaktuje."
     }
 }
