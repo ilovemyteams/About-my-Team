@@ -1,3 +1,4 @@
+"use client";
 import { CounterBox } from "../../easter/EggsHunt/CounterBox";
 import { IconBranch1 } from "../../easter/icons/IconBranch1";
 import { IconBranch2 } from "../../easter/icons/IconBranch2";
@@ -5,6 +6,7 @@ import { IconBranch3 } from "../../easter/icons/IconBranch3";
 import { IconDecorEgg } from "../../easter/icons/IconDecorEgg";
 import { IconEggRope } from "../../easter/icons/IconEggRope";
 import { LogoEaster } from "../../easter/LogoEaster";
+import { SupportModal } from "../../easter/supportModal/SupportModal";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
 import { Section } from "../../shared/Section";
 import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
@@ -63,6 +65,7 @@ export const HeroSection = () => {
                 className="hidden pc:block absolute pc:w-[31px]  desk:w-[46px] rotate-[-109deg]
             pc:right-[50%] pc:top-[-100px]"
             />
+            <SupportModal />
         </div>
     );
 };
