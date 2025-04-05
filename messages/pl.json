@@ -306,8 +306,10 @@
             "greetingText": "Niech spełniają się marzenia, mnożą się możliwości, wszystkie sprawy idą pomyślnie, a sił i energii nie brakuje na nowe osiągnięcia!",
             "caption": "Pogratuluj Susannie",
             "captionBig": "pogratuluj Susannie",
-
-            "btn": "btn"
+            "btn": "btn",
+            "supportTitle": "Świetnie Ci idzie!",
+            "supportText": "Znalazłeś już <red>15</red> jajek. Zostało tylko kilka kroków do losowania landing page.",
+            "supportBtn": "kontynuuj"
         }
     },
     "PortfolioPage": {

@@ -304,7 +304,10 @@
             "greetingText": "May your dreams come true, opportunities multiply, all endeavors succeed, and may you have the strength and energy for new achievements!",
             "caption": "Congratulate Susanna",
             "captionBig": "congratulate Susanna",
-            "btn": "btn"
+            "btn": "btn",
+            "supportTitle": "You're doing great!",
+            "supportText": "You've already found <red>15</red> eggs. Almost there! Just a few steps left to join the landing page giveaway.",
+            "supportBtn": "continue"
         }
     },
     "PortfolioPage": {
