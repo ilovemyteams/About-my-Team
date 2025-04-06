@@ -354,10 +354,11 @@
     },
     "EasterEvent": {
         "heroTitle": "Happy Easter!",
-        "heroText": "We love creativity and good vibes — enjoy a discount certificate for your landing page.",
+        "heroText": "We love creativity and bringing good vibes — enjoy a discount certificate for landing page development!",
         "heroBtn": "Get the certificate",
-        "modalTitle": "Congratulations! \nYou've received a certificate \nfor our services!",
-        "modalCaption": "*This is a one-time offer and is valid \nuntil 01.04.2025",
-        "modalText": "To receive the certificate, leave your details, and our manager will contact you."
+        "confirmTitle": "Congratulations! \nYou've received a discount certificate for landing page development!",
+        "confirmCaption": "*the certificate is valid until \n01.06.2025.",
+        "confirmFormText": "To activate your certificate, please leave your details, and our manager will contact you.",
+        "confirmFormCaption": "**The discount certificate is not cumulative."
     }
 }

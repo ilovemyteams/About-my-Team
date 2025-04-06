@@ -355,11 +355,12 @@
         "allProjects": "Wszystkie projekty"
     },
     "EasterEvent": {
-        "heroTitle": "Wesołych Świąt Wielkanocnych!",
-        "heroText": "Uwielbiamy kreatywność i dobry nastrój — mamy dla Ciebie zniżkę na landing page.",
+        "heroTitle": "Wesołego Alleluja!",
+        "heroText": "Kochamy kreatywność, a także dobrą atmosferę – dlatego dajemy Ci certyfikat–zniżkę na stworzenie landing page.",
         "heroBtn": "Odbierz certyfikat",
-        "modalTitle": "Gratulacje! \nOtrzymałeś certyfikat \nna nasze usługi!",
-        "modalCaption": "*Oferta jednorazowa, ważna \ndo 01.04.2025",
-        "modalText": "Aby otrzymać certyfikat, zostaw swoje dane, a nasz menedżer się z Tobą skontaktuje."
+        "confirmTitle": "Gratulacje! \nOtrzymałeś certyfikat–zniżkę na rozwój landing page!",
+        "confirmCaption": "*certyfikat jest ważny do \n01.06.2025 r.",
+        "confirmFormText": "Aby aktywować certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą.",
+        "confirmFormCaption": "**Certyfikat–zniżka nie łączy się z innymi promocjami."
     }
 }
