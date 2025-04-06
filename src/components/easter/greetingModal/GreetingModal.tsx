@@ -1,31 +1,26 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { parseTextWithLink } from "@/src/utils/parseTextWithLink";
 
-import bday from "../../../assets/images/bday.png";
-import happy from "../../../assets/images/happy.png";
-import qrcode from "../../../assets/images/qr-code.png";
-// import { Button } from "../../shared/Button";
 import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { IconHeroLogo } from "../../shared/Icons/IconHeroLogo";
-import { IconArrowCoffee } from "./IconArrowCoffee";
+import { Button } from "../../shared/Button";
+import { BgImagesMobile } from "../../shared/Modals/modalBgImages/contentModals/BgImagesMobile";
+import { BgImagesTablet } from "../../shared/Modals/modalBgImages/contentModals/BgImagesTablet";
+import { BgImagesDesktop } from "../../shared/Modals/modalBgImages/contentModals/BgImagesDesktop";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
 }
-const BUY_ME_COFFEE = "https://www.buymeacoffee.com/susanna.salata";
 
 export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
     const getTranslation = useTranslations("EventsPage.Easter");
     const screenSizeName = useScreenSize();
     const { mobileName } = SCREEN_NAMES;
-    const locale = useLocale();
 
     const modalTranslate = screenSizeName === mobileName ? "0%" : "-50%";
     return (
@@ -70,11 +65,9 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                 }}
                 aria-label="modal-window"
                 onClick={e => e.stopPropagation()}
-                className="w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] desk:min-w-[850px] bg-[#D8CDE6] fixed top-7 tab:top-1/2 left-1/2"
+                className="w-full tab:w-unset min-w-[320px] max-w-[360px] tab:min-w-[660px] pc:min-w-[750px] desk:min-w-[850px] bg-white-100 dark:bg-purple-400 fixed top-7 tab:top-1/2 left-1/2"
             >
-                <div className=" overflow-hidden relative w-full h-auto px-[24px] tab:px-[24px] pc:px-[60px] pt-[214px] tab:pt-[326px] pc:pt-[314px] pb-[155px] tab:pb-[280px] ">
-                    {/* <Background />
-                    <Decoration /> */}
+                <div className=" overflow-hidden relative w-full h-auto px-[24px] tab:px-[24px] pc:px-[60px] pt-[72px] tab:pt-[42px] pc:pt-[46px] desk:pt-[37px] pb-[64px] pc:pb-[72px]">
                     <button
                         type="button"
                         onClick={onCloseModal}
@@ -82,68 +75,66 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                         className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-200
                          dark:disabled:text-purple-200 bg-transparent enabled:icon-hover-rounded-purple "
                     >
-                        <IconCloseX className="stroke-2 size-5 text-purple-200" />
+                        <IconCloseX className="stroke-2 size-6" />
                     </button>
+                    <BgImagesMobile />
+                    <BgImagesTablet />
+                    <BgImagesDesktop />
                     <Image
-                        src={happy}
-                        alt="Happy"
-                        width={750}
-                        height={366}
-                        className="absolute top-[26px] tab:top-0 left-0 desk:left-[50px]"
+                        src="/images/easter/branchesBouquet.svg"
+                        alt="Bouquet of willow branches"
+                        width={179}
+                        height={169}
+                        className="absolute w-[87px] tab:w-[108px] pc:w-[121px] desk:w-[150px] top-[-12px] tab:top-[-20px] left-[-12px] tab:left-[-20px] rotate-[147deg]"
                     />
                     <Image
-                        src={bday}
-                        alt="birthday"
-                        width={750}
-                        height={302}
-                        className="absolute bottom-0 left-0 desk:left-[50px]"
+                        src="/images/easter/branchesBouquet.svg"
+                        alt="Bouquet of willow branches"
+                        width={179}
+                        height={169}
+                        className="hidden tab:block absolute tab:w-[122px] desk:w-[178px] pc:w-[147px] bottom-[-20px] pc:bottom-[-30px] right-[-30px] desk:right-[-40px]"
                     />
-                    <div className="tab:flex tab:gap-[89px] pc:gap-[121px] desk:gap-[170px]">
-                        <div className=" text-purple-200 mb-[30px] tab:w-[262px]">
-                            <p className="mb-[18px] tab:mb-4 text-base tab:text-2xl font-comfortaa">
-                                {parseTextWithLink(
-                                    getTranslation("greetingTitle"),
-                                    locale
-                                )}
+                    <Image
+                        src="/images/easter/bunny.svg"
+                        alt="bunny"
+                        width={73}
+                        height={93}
+                        className=" absolute bottom-0 left-1/2 tab:left-[56px] desk:left-[70px] -translate-x-1/2 w-[52px] tab:w-[57px] pc:w-[62px] desk:w-[73px] h-auto"
+                    />
+                    <div className="  mb-[18px] tab:mb-0">
+                        <div className="flex gap-5 pc:gap-10 items-end justify-center tab:mb-4 pc:mb-3 desk:mb-7">
+                            <p className="mb-8 tab:mb-[37px] text-4xl tab:text-6xl font-caviar font-bold uppercase">
+                                {getTranslation("greetingTitle")}
                             </p>
-
-                            <p className="text-justify desk:text-lg25 text-base23 tab:text-xl mx-auto font-comfortaa  mb-4">
-                                {getTranslation("greetingText")}
-                            </p>
-
-                            {/* <Button color="grey" onClick={onCloseModal}>
-                            {getTranslation("btn")}
-                        </Button> */}
-                            <IconHeroLogo className="text-purple-200 w-[102px] h-auto " />
+                            <Image
+                                src="/images/easter/bunnyWithEgg.svg"
+                                alt="Bunny with egg"
+                                width={99}
+                                height={193}
+                                className="w-[64px] h-auto tab:w-[99px]"
+                            />
                         </div>
-                        <div className="hidden tab:block tab:mt-[34px] relative">
-                            <p className="text-purple-200 font-segoe font-bold text-xl italic block text-center tab:mb-6">
-                                {getTranslation("captionBig")}
-                            </p>
-                            <a
-                                href={BUY_ME_COFFEE}
-                                target="_blank"
-                                rel="noopener noreferrer"
+
+                        <p className="text-center text-base tab:text-lg pc:text-xl desk:text-2xl mx-auto font-caviar font-bold mb-9 tab:mb-10 pc:mb-[37px]">
+                            {getTranslation.rich("greetingText", {
+                                upper: chunk => (
+                                    <span className=" uppercase">{chunk}</span>
+                                ),
+                            })}
+                        </p>
+                        <p className="mb-[46px] tab:mb-[37px] pc:mb-[25px] desk:mb-[15px] desk:text-lg text-redLight dark:text-red text-center lowercase">
+                            {getTranslation("greentingCaption")}
+                        </p>
+
+                        <div className="flex justify-center">
+                            <Button
+                                color="grey"
+                                onClick={onCloseModal}
+                                className=" lowercase"
                             >
-                                <Image
-                                    src={qrcode}
-                                    alt="QR-code"
-                                    width={129}
-                                    height={129}
-                                />
-                            </a>
-
-                            <IconArrowCoffee className="absolute tab:top-10 tab:right-0" />
+                                {getTranslation("greetingBtn")}
+                            </Button>
                         </div>
-
-                        <a
-                            href={BUY_ME_COFFEE}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-200 font-segoe font-bold text-xl italic underline block text-center tab:hidden"
-                        >
-                            {getTranslation("caption")}
-                        </a>
                     </div>
                 </div>
             </motion.div>
