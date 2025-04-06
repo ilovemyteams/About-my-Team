@@ -7,11 +7,11 @@ import React from "react";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 
-import { IconCloseX } from "../../shared/Icons/IconCloseX";
 import { Button } from "../../shared/Button";
+import { IconCloseX } from "../../shared/Icons/IconCloseX";
+import { BgImagesDesktop } from "../../shared/Modals/modalBgImages/contentModals/BgImagesDesktop";
 import { BgImagesMobile } from "../../shared/Modals/modalBgImages/contentModals/BgImagesMobile";
 import { BgImagesTablet } from "../../shared/Modals/modalBgImages/contentModals/BgImagesTablet";
-import { BgImagesDesktop } from "../../shared/Modals/modalBgImages/contentModals/BgImagesDesktop";
 
 interface GreetingModalProps {
     onCloseModal: () => void;
