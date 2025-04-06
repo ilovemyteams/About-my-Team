@@ -302,11 +302,10 @@
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
         "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!",
         "Easter": {
-            "greetingTitle": "Susanno!",
-            "greetingText": "Niech spełniają się marzenia, mnożą się możliwości, wszystkie sprawy idą pomyślnie, a sił i energii nie brakuje na nowe osiągnięcia!",
-            "caption": "Pogratuluj Susannie",
-            "captionBig": "pogratuluj Susannie",
-            "btn": "btn",
+            "greetingTitle": "Polowanie na jajka",
+            "greetingText": "Znajdź 20 jajek ukrytych na stronie i weź udział w losowaniu <upper>darmowej</upper> strony docelowej.",
+            "greentingCaption": "*Jajka w tym oknie się nie liczą",
+            "greetingBtn": "Chodźmy na polowanie",
             "supportTitle": "Świetnie Ci idzie!",
             "supportText": "Znalazłeś już <red>15</red> jajek. <br></br>Zostało tylko kilka kroków do losowania landing page.",
             "supportBtn": "kontynuuj"
