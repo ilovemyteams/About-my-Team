@@ -103,7 +103,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                     />
                     <div className="  mb-[18px] tab:mb-0">
                         <div className="flex gap-5 pc:gap-10 items-end justify-center mb-[18px] tab:mb-[38px] pc:mb-[34px] desk:mb-[45px]">
-                            <p className="w-[155px] tab:w-[260px] desk:w-[305px] text-2xl tab:text-5xl desk:text-6xl font-caviar font-bold uppercase">
+                            <p className="dark:text-white-200 text-purple-200  w-[155px] tab:w-[260px] desk:w-[305px] text-2xl tab:text-5xl desk:text-6xl font-caviar font-bold uppercase">
                                 {getTranslation("greetingTitle")}
                             </p>
 

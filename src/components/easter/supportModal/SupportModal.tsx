@@ -46,7 +46,7 @@ export const SupportModal = () => {
                 className=" absolute bottom-0 left-1/2 -translate-x-1/2 w-[52px] tab:w-[87px] h-auto"
             />
             <div className="mt-[67px] tab:mt-[75px] mb-[45px] tab:mb-[93px] font-caviar font-bold text-center">
-                <p className="mb-8 tab:mb-10 text-3xl tab:text-5xl ">
+                <p className="mb-8 tab:mb-10 text-3xl tab:text-5xl dark:text-white-200 text-purple-200 ">
                     {getTranslation("supportTitle")}
                 </p>
 
