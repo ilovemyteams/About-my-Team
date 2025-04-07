@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { PageSection } from "../../shared/PageSection";
-import { EasterCertificate } from "./certificate/EasterCertificate";
+import { EasterCertificate } from "./confirmCertificate/EasterCertificate";
 import { IconBigEgg } from "./icons/IconBigEgg";
 import { IconGlaze } from "./icons/IconGlaze";
 import { IconSmallEgg } from "./icons/IconSmallEgg";
