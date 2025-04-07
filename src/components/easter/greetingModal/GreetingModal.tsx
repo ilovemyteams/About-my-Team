@@ -102,10 +102,11 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                         className=" absolute bottom-0 left-1/2 tab:left-[56px] desk:left-[70px] -translate-x-1/2 w-[52px] tab:w-[57px] pc:w-[62px] desk:w-[73px] h-auto"
                     />
                     <div className="  mb-[18px] tab:mb-0">
-                        <div className="flex gap-5 pc:gap-10 items-end justify-center tab:mb-4 pc:mb-3 desk:mb-7">
-                            <p className="mb-8 tab:mb-[37px] text-4xl tab:text-6xl font-caviar font-bold uppercase">
+                        <div className="flex gap-5 pc:gap-10 items-end justify-center mb-[18px] tab:mb-[38px] pc:mb-[34px] desk:mb-[45px]">
+                            <p className="w-[155px] tab:w-[260px] desk:[305px] text-2xl tab:text-5xl desk:text-6xl font-caviar font-bold uppercase">
                                 {getTranslation("greetingTitle")}
                             </p>
+
                             <Image
                                 src="/images/easter/bunnyWithEgg.svg"
                                 alt="Bunny with egg"
