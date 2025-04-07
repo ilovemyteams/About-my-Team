@@ -124,7 +124,7 @@ export const conditionsData: ConditionaDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Results Announcement: April 21, 2025, at 19:00 (Kyiv time)",
+                            text: "Results Announcement: April 21, 2025, at 19:00 (Kyiv time).",
                             type: "listItem",
                         },
                         {
@@ -212,7 +212,7 @@ export const conditionsData: ConditionaDataType = {
                             type: "listItem",
                         },
                         {
-                            text: "Ogłoszenie wyników: 21 kwietnia 2025 r. o godz. 19:00 (czasu kijowskiego)",
+                            text: "Ogłoszenie wyników: 21 kwietnia 2025 r. o godz. 19:00 (czasu kijowskiego).",
                             type: "listItem",
                         },
                         {

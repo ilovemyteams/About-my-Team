@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
 
@@ -29,15 +30,15 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
             };
-            console.log(data);
-            // await axios({
-            //     method: "post",
-            //     url: "/api/christmasLanding",
-            //     data,
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //     },
-            // });
+
+            await axios({
+                method: "post",
+                url: "/api/confirmDiscount",
+                data,
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
         };
         try {
             await notificationHandler(onSendData);
