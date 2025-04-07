@@ -301,11 +301,10 @@
         "titleSEO": "Seasonal Events: Gifts, Certificates, Activities",
         "descriptionSEO": "Halloween, Christmas, Valentine's Day, and other holidays – we prepare special events for you with giveaways, certificates, and exciting activities. Celebrate with us!",
         "Easter": {
-            "greetingTitle": "Susanna!",
-            "greetingText": "May your dreams come true, opportunities multiply, all endeavors succeed, and may you have the strength and energy for new achievements!",
-            "caption": "Congratulate Susanna",
-            "captionBig": "congratulate Susanna",
-            "btn": "btn",
+            "greetingTitle": "Egg Hunt",
+            "greetingText": "Find 20 eggs hidden on the website. Take part in the giveaway for a <upper>free</upper> landing page development.",
+            "greentingCaption": "*Eggs in this window are not counted",
+            "greetingBtn": "Let the hunt begin",
             "supportTitle": "You're doing great!",
             "supportText": "You've already found <red>15</red> eggs. <br></br>Almost there! Just a few steps left to join the landing page giveaway.",
             "supportBtn": "continue"

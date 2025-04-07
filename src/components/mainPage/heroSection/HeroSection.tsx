@@ -3,8 +3,6 @@ import { CounterBox } from "../../easter/EggsHunt/CounterBox";
 import { IconBranch1 } from "../../easter/icons/IconBranch1";
 import { IconBranch2 } from "../../easter/icons/IconBranch2";
 import { IconBranch3 } from "../../easter/icons/IconBranch3";
-import { IconDecorEgg } from "../../easter/icons/IconDecorEgg";
-import { IconEggRope } from "../../easter/icons/IconEggRope";
 import { LogoEaster } from "../../easter/LogoEaster";
 import { SupportModal } from "../../easter/supportModal/SupportModal";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
@@ -34,13 +32,13 @@ export const HeroSection = () => {
                 </div>
                 <HeroFooterLinks />
 
-                <div
+                {/* <div
                     className="hidden tab:block absolute top-[158px] tab:left-[361px] z-[-1] dark:text-purple-strokeLight text-purple-stroke
             pc:top-[200px] pc:left-[445px] desk:top-[340px] desk:left-[570px]"
                 >
                     <IconEggRope className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
                     <IconDecorEgg className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
-                </div>
+                </div> */}
                 <div className="fixed top-[80px] right-0 z-[11] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
                     <CounterBox />
                 </div>
