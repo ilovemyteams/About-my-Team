@@ -1,9 +1,19 @@
 import { useTranslations } from "next-intl";
 
-import { WriteUs } from "../../shared/WriteUs/WriteUs";
+// import { WriteUs } from "../../shared/WriteUs/WriteUs";
+import { Button } from "../../shared/Button";
+import { useRouter } from "@/src/i18n/routing";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations("Hero");
+    const router = useRouter();
+    const onClickButton = () => {
+        router.push(`/events`);
+        //  sendGTMEvent({
+        //      event: "",
+        //      page_location: path,
+        //  });
+    };
 
     return (
         <div className="flex flex-col items-center pc:block pc:w-[35vw] desk:max-w-[535px] ">
@@ -16,7 +26,9 @@ export const HeroInfo = () => {
                 })}
             </h1>
             <div className=" relative flex flex-col gap-4 pc:gap-6 mt-6 tab:mt-[196px] pc:mt-[120px]">
-                <WriteUs />
+                <Button onClick={onClickButton} className="">
+                    {getTranslation("btn")}
+                </Button>
             </div>
         </div>
     );
