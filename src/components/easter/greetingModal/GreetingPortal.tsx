@@ -1,11 +1,11 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
 import { GreetingModal } from "./GreetingModal";
-import { usePathname } from "next/navigation";
 
 const SESSION_LANG_KEY = "langOpened";
 

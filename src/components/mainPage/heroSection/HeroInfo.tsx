@@ -1,8 +1,9 @@
 import { useTranslations } from "next-intl";
 
+import { useRouter } from "@/src/i18n/routing";
+
 // import { WriteUs } from "../../shared/WriteUs/WriteUs";
 import { Button } from "../../shared/Button";
-import { useRouter } from "@/src/i18n/routing";
 
 export const HeroInfo = () => {
     const getTranslation = useTranslations("Hero");
