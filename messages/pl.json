@@ -364,6 +364,8 @@
         "confirmCaption": "*certyfikat jest ważny do \n01.06.2025 r.",
         "confirmFormText": "Aby aktywować certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą.",
         "confirmFormCaption": "**Certyfikat–zniżka nie łączy się z innymi promocjami.",
-        "ctaText": "<purple>Niespodzianki</purple> już <purple>czekają</purple>! \n<purple>Znajdź</purple> wszystkie 20 jajek i zdobądź szansę na <purple>DARMOWY landing</purple> page!"
+        "ctaText": "<purple>Niespodzianki</purple> już <purple>czekają</purple>! \n<purple>Znajdź</purple> wszystkie 20 jajek i zdobądź szansę na <purple>DARMOWY landing</purple> page!",
+        "ctaBtn": "Naprzód!",
+        "comment": "Komentarz"
     }
 }

@@ -8,7 +8,7 @@ export const CtaBasket = () => {
     return (
         <Link
             href="/"
-            className="relative w-[150px] aspect-[50/78] tab:w-[120px] desk:w-[150px] flex justify-center mx-auto"
+            className="relative w-[120px] aspect-[50/78] tab:w-[120px] desk:w-[150px] flex justify-center mx-auto"
         >
             <Image
                 src="/images/easter/upper-part-basket.svg"

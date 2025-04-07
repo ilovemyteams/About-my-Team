@@ -10,5 +10,6 @@ export const ConfirmDiscountValidation = () => {
     return yup.object().shape({
         name: nameValidation,
         email: emailValidation,
+        comment: yup.string().optional(),
     });
 };

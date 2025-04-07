@@ -7,7 +7,7 @@ const SPREADSHEET_ID = process.env.NEXT_PUBLIC_LANDING_SPREADSHEET_ID || "";
 const RANGE = "Аркуш2!A2:C2";
 
 export async function POST(request: NextRequest) {
-    const { name, email } = await request.json();
+    const { name, email, comment } = await request.json();
     const date = new Date().toLocaleString();
 
     if (request.method === "POST") {
@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
             await sendDataToGoogleSheet(SPREADSHEET_ID, RANGE, [
                 name,
                 email,
+                comment,
                 date,
             ]);
 
