@@ -307,7 +307,14 @@
             "greetingBtn": "Let the hunt begin",
             "supportTitle": "You're doing great!",
             "supportText": "You've already found <red>15</red> eggs. <br></br>Almost there! Just a few steps left to join the landing page giveaway.",
-            "supportBtn": "continue"
+            "supportBtn": "continue",
+            "landingTitle": "You're just two steps away from winning a free landing page!",
+            "landingText": "1. Fill out the form <br></br> 2. Join the live giveaway on April 21, 2025, at 19:00 (Kyiv time).",
+            "landingCap": "*Stay tuned for announcements on the page <linkSusanna>Susanna Salata</linkSusanna>",
+            "landingFormTitle": "Enter Your Details:",
+            "landingFormMedia": "Link to social media (Telegram Username, Facebook, LinkedIn, etc.)* ",
+            "landingFormComment": "Why would a landing page be useful for you?*",
+            "landingFormTerms": "By clicking “Submit”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
         }
     },
     "PortfolioPage": {
