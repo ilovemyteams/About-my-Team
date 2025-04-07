@@ -165,7 +165,7 @@
         "messageNotReqLabel": "Your message",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "t.me/Susanna_Salata or @Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -309,11 +309,13 @@
             "supportText": "You've already found <red>15</red> eggs. <br></br>Almost there! Just a few steps left to join the landing page giveaway.",
             "supportBtn": "continue",
             "landingTitle": "You're just two steps away from winning a free landing page!",
-            "landingText": "1. Fill out the form <br></br> 2. Join the live giveaway on April 21, 2025, at 19:00 (Kyiv time).",
+            "landingText1": "Fill out the form",
+            "landingText2": "Join the live giveaway on April 21, 2025, at 19:00 (Kyiv time).",
             "landingCap": "*Stay tuned for announcements on the page <linkSusanna>Susanna Salata</linkSusanna>",
             "landingFormTitle": "Enter Your Details:",
             "landingFormMedia": "Link to social media (Telegram Username, Facebook, LinkedIn, etc.)* ",
             "landingFormComment": "Why would a landing page be useful for you?*",
+            "mediaPlaceholder": "for example t.me/Susanna_Salata or @Susanna_Salata",
             "landingFormTerms": "By clicking “Submit”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
         }
     },
