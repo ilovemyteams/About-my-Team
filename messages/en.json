@@ -362,6 +362,7 @@
         "confirmTitle": "Congratulations! \nYou've received a discount certificate for landing page development!",
         "confirmCaption": "*the certificate is valid until \n01.06.2025.",
         "confirmFormText": "To activate your certificate, please leave your details, and our manager will contact you.",
-        "confirmFormCaption": "**The discount certificate is not cumulative."
+        "confirmFormCaption": "**The discount certificate is not cumulative.",
+        "ctaText": "<purple>Surprises</purple> are <purple>waiting</purple>! \n<purple>Find</purple> all 20 eggs and get a chance to win a <purple>FREE landing</purple> page!"
     }
 }
