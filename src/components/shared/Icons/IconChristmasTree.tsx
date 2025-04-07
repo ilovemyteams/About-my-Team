@@ -785,16 +785,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="715"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="b"
@@ -804,17 +804,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="728"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="c"
@@ -824,16 +824,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="676.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="d"
@@ -843,17 +843,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="680.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="e"
@@ -863,17 +863,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="564.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="f"
@@ -883,16 +883,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="616.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="g"
@@ -902,16 +902,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="528.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="h"
@@ -921,17 +921,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="569.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="i"
@@ -941,17 +941,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="507.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="j"
@@ -961,17 +961,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="422.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="k"
@@ -981,16 +981,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="454.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="l"
@@ -1000,16 +1000,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="420.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="m"
@@ -1019,17 +1019,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="409.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="n"
@@ -1039,17 +1039,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="404.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="o"
@@ -1059,16 +1059,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="439.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="p"
@@ -1078,16 +1078,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="343"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="q"
@@ -1097,17 +1097,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="293.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="r"
@@ -1117,17 +1117,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="290.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="s"
@@ -1137,16 +1137,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="298.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="t"
@@ -1156,16 +1156,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="255.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="u"
@@ -1175,17 +1175,17 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="236.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".7" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".9" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset="1" stop-color="#BFB4FF" />
-                    <stop offset="1" stop-color="#BFB4FF" />
+                    <stop stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".7" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".9" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset="1" stopColor="#BFB4FF" />
+                    <stop offset="1" stopColor="#BFB4FF" />
                 </linearGradient>
                 <linearGradient
                     id="v"
@@ -1195,16 +1195,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="254.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="w"
@@ -1214,16 +1214,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="195"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="x"
@@ -1233,16 +1233,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="201.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="y"
@@ -1252,16 +1252,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="582.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="z"
@@ -1271,16 +1271,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="776.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="A"
@@ -1290,16 +1290,16 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="550.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#BFB4FF" />
-                    <stop offset=".1" stop-color="#BFB4FF" stopOpacity=".8" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".6" />
-                    <stop offset=".2" stop-color="#BFB4FF" stopOpacity=".4" />
-                    <stop offset=".3" stop-color="#BFB4FF" stopOpacity=".3" />
-                    <stop offset=".4" stop-color="#BFB4FF" stopOpacity=".2" />
-                    <stop offset=".5" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".6" stop-color="#BFB4FF" stopOpacity=".1" />
-                    <stop offset=".8" stop-color="#BFB4FF" stopOpacity="0" />
-                    <stop offset="1" stop-color="#BFB4FF" stopOpacity="0" />
+                    <stop stopColor="#BFB4FF" />
+                    <stop offset=".1" stopColor="#BFB4FF" stopOpacity=".8" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".6" />
+                    <stop offset=".2" stopColor="#BFB4FF" stopOpacity=".4" />
+                    <stop offset=".3" stopColor="#BFB4FF" stopOpacity=".3" />
+                    <stop offset=".4" stopColor="#BFB4FF" stopOpacity=".2" />
+                    <stop offset=".5" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".6" stopColor="#BFB4FF" stopOpacity=".1" />
+                    <stop offset=".8" stopColor="#BFB4FF" stopOpacity="0" />
+                    <stop offset="1" stopColor="#BFB4FF" stopOpacity="0" />
                 </linearGradient>
                 <linearGradient
                     id="H"
@@ -1309,11 +1309,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="253.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="I"
@@ -1323,11 +1323,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="366.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="J"
@@ -1337,11 +1337,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="423.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="K"
@@ -1351,11 +1351,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="449.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="L"
@@ -1365,11 +1365,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="555.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="M"
@@ -1379,11 +1379,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="492.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="N"
@@ -1393,11 +1393,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="651.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="O"
@@ -1407,11 +1407,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="652.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="P"
@@ -1421,11 +1421,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="602.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="Q"
@@ -1435,11 +1435,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="330.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#FEFDFF" />
-                    <stop offset=".3" stop-color="#F6F2FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#CFB8FF" />
-                    <stop offset="1" stop-color="#B491FF" />
+                    <stop stopColor="#FEFDFF" />
+                    <stop offset=".3" stopColor="#F6F2FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#CFB8FF" />
+                    <stop offset="1" stopColor="#B491FF" />
                 </linearGradient>
                 <linearGradient
                     id="R"
@@ -1449,9 +1449,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="777.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="S"
@@ -1461,9 +1461,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="809.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="T"
@@ -1473,9 +1473,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="764.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="U"
@@ -1485,9 +1485,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="756.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="V"
@@ -1497,9 +1497,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="813.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="W"
@@ -1509,9 +1509,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="800.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="X"
@@ -1521,9 +1521,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="805.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="Y"
@@ -1533,9 +1533,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="774.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="Z"
@@ -1545,9 +1545,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="765.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aa"
@@ -1557,9 +1557,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="787.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="ab"
@@ -1569,9 +1569,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="816"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="ac"
@@ -1581,11 +1581,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="848.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ad"
@@ -1595,11 +1595,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="864.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ae"
@@ -1609,11 +1609,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="843.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="af"
@@ -1623,11 +1623,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="844.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ag"
@@ -1637,11 +1637,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="863"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ah"
@@ -1651,11 +1651,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="859.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ai"
@@ -1665,11 +1665,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="858.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aj"
@@ -1679,11 +1679,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="850.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ak"
@@ -1693,11 +1693,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="848.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="al"
@@ -1707,11 +1707,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="850.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="am"
@@ -1721,11 +1721,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="865.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="an"
@@ -1735,11 +1735,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="772.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ao"
@@ -1749,11 +1749,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="785.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ap"
@@ -1763,11 +1763,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="765.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aq"
@@ -1777,11 +1777,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="759.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ar"
@@ -1791,11 +1791,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="789.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="as"
@@ -1805,11 +1805,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="782.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="at"
@@ -1819,11 +1819,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="787.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="au"
@@ -1833,11 +1833,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="769.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="av"
@@ -1847,11 +1847,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="765.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aw"
@@ -1861,11 +1861,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="778.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ax"
@@ -1875,11 +1875,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="789.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ay"
@@ -1889,9 +1889,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="741.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="az"
@@ -1901,9 +1901,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="808"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aA"
@@ -1913,9 +1913,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="725.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aB"
@@ -1925,9 +1925,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="741.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aC"
@@ -1937,9 +1937,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="789.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aD"
@@ -1949,9 +1949,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="782.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aE"
@@ -1961,9 +1961,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="765.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aF"
@@ -1973,9 +1973,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="756.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aG"
@@ -1985,9 +1985,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="751.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aH"
@@ -1997,9 +1997,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="742.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aI"
@@ -2009,9 +2009,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="805.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aJ"
@@ -2021,9 +2021,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="790.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aK"
@@ -2033,9 +2033,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="817.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aL"
@@ -2045,9 +2045,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="782.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aM"
@@ -2057,9 +2057,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="777.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aN"
@@ -2069,9 +2069,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="818.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aO"
@@ -2081,9 +2081,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="809.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aP"
@@ -2093,9 +2093,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="811"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aQ"
@@ -2105,9 +2105,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="789.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aR"
@@ -2117,9 +2117,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="784"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aS"
@@ -2129,9 +2129,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="797.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aT"
@@ -2141,9 +2141,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="821.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="aU"
@@ -2153,11 +2153,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="810.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aV"
@@ -2167,11 +2167,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="851.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aW"
@@ -2181,11 +2181,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="800.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aX"
@@ -2195,11 +2195,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="811.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aY"
@@ -2209,11 +2209,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="838"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="aZ"
@@ -2223,11 +2223,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="836.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="ba"
@@ -2237,11 +2237,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="824.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="bb"
@@ -2251,11 +2251,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="820.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="bc"
@@ -2265,11 +2265,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="817.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="bd"
@@ -2279,11 +2279,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="810.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="be"
@@ -2293,11 +2293,11 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="849"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#B491FF" />
-                    <stop offset=".3" stop-color="#CFB8FF" />
-                    <stop offset=".5" stop-color="#EAE0FF" />
-                    <stop offset=".8" stop-color="#F6F2FF" />
-                    <stop offset="1" stop-color="#FEFDFF" />
+                    <stop stopColor="#B491FF" />
+                    <stop offset=".3" stopColor="#CFB8FF" />
+                    <stop offset=".5" stopColor="#EAE0FF" />
+                    <stop offset=".8" stopColor="#F6F2FF" />
+                    <stop offset="1" stopColor="#FEFDFF" />
                 </linearGradient>
                 <linearGradient
                     id="bf"
@@ -2307,8 +2307,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="854.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bg"
@@ -2318,8 +2318,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="809.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bh"
@@ -2329,8 +2329,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="852.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bi"
@@ -2340,8 +2340,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="798.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bj"
@@ -2351,8 +2351,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="796.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bk"
@@ -2362,8 +2362,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="851"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bl"
@@ -2373,8 +2373,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="839.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bm"
@@ -2384,8 +2384,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="835"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bn"
@@ -2395,8 +2395,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="834.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bo"
@@ -2406,8 +2406,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="812"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bp"
@@ -2417,8 +2417,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="805.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bq"
@@ -2428,8 +2428,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="814.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="br"
@@ -2439,8 +2439,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="831.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bs"
@@ -2450,8 +2450,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="797.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bt"
@@ -2461,8 +2461,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="829.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bu"
@@ -2472,8 +2472,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="789.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bv"
@@ -2483,8 +2483,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="788.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bw"
@@ -2494,8 +2494,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="828.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bx"
@@ -2505,8 +2505,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="819.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="by"
@@ -2516,8 +2516,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="816.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bz"
@@ -2527,8 +2527,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="816.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bA"
@@ -2538,8 +2538,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="799.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bB"
@@ -2549,8 +2549,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="794.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bC"
@@ -2560,8 +2560,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="801.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bD"
@@ -2571,8 +2571,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="832.8"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bE"
@@ -2582,8 +2582,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="785"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bF"
@@ -2593,8 +2593,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="826.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bG"
@@ -2604,8 +2604,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="768.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bH"
@@ -2615,8 +2615,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="756.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bI"
@@ -2626,8 +2626,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="833.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bJ"
@@ -2637,8 +2637,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="836.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bK"
@@ -2648,8 +2648,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="811.1"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bL"
@@ -2659,8 +2659,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="819.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bM"
@@ -2670,8 +2670,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="779.9"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bN"
@@ -2681,8 +2681,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="769.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bO"
@@ -2692,8 +2692,8 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="797.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="bP"
@@ -2703,9 +2703,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="819.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bQ"
@@ -2715,9 +2715,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="858.3"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bR"
@@ -2727,9 +2727,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="809"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bS"
@@ -2739,9 +2739,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="814.7"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bT"
@@ -2751,9 +2751,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="851.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bU"
@@ -2763,9 +2763,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="843.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bV"
@@ -2775,9 +2775,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="837.4"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bW"
@@ -2787,9 +2787,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="826.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bX"
@@ -2799,9 +2799,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="823"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bY"
@@ -2811,9 +2811,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="821.2"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <linearGradient
                     id="bZ"
@@ -2823,9 +2823,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     y2="858.6"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#6607B1" />
-                    <stop offset=".5" stop-color="#3C0566" />
-                    <stop offset="1" stop-color="#1E003D" />
+                    <stop stopColor="#6607B1" />
+                    <stop offset=".5" stopColor="#3C0566" />
+                    <stop offset="1" stopColor="#1E003D" />
                 </linearGradient>
                 <radialGradient
                     id="C"
@@ -2835,9 +2835,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(0 22 -10 0 377 111)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#fff" />
-                    <stop offset=".5" stop-color="#D1ACFF" />
-                    <stop offset="1" stop-color="#8D3CF2" />
+                    <stop stopColor="#fff" />
+                    <stop offset=".5" stopColor="#D1ACFF" />
+                    <stop offset="1" stopColor="#8D3CF2" />
                 </radialGradient>
                 <radialGradient
                     id="D"
@@ -2847,9 +2847,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(0 9 -21 0 357 125)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#fff" />
-                    <stop offset=".5" stop-color="#D1ACFF" />
-                    <stop offset="1" stop-color="#8D3CF2" />
+                    <stop stopColor="#fff" />
+                    <stop offset=".5" stopColor="#D1ACFF" />
+                    <stop offset="1" stopColor="#8D3CF2" />
                 </radialGradient>
                 <radialGradient
                     id="E"
@@ -2859,9 +2859,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(0 17 -13 0 365 151)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#fff" />
-                    <stop offset=".5" stop-color="#D1ACFF" />
-                    <stop offset="1" stop-color="#8D3CF2" />
+                    <stop stopColor="#fff" />
+                    <stop offset=".5" stopColor="#D1ACFF" />
+                    <stop offset="1" stopColor="#8D3CF2" />
                 </radialGradient>
                 <radialGradient
                     id="F"
@@ -2871,9 +2871,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(0 17 -13 0 390 151)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#fff" />
-                    <stop offset=".5" stop-color="#D1ACFF" />
-                    <stop offset="1" stop-color="#8D3CF2" />
+                    <stop stopColor="#fff" />
+                    <stop offset=".5" stopColor="#D1ACFF" />
+                    <stop offset="1" stopColor="#8D3CF2" />
                 </radialGradient>
                 <radialGradient
                     id="G"
@@ -2883,9 +2883,9 @@ export const IconChristmasTree = ({ className }: { className?: string }) => {
                     gradientTransform="matrix(0 9 -21 0 398 125)"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#fff" />
-                    <stop offset=".5" stop-color="#D1ACFF" />
-                    <stop offset="1" stop-color="#8D3CF2" />
+                    <stop stopColor="#fff" />
+                    <stop offset=".5" stopColor="#D1ACFF" />
+                    <stop offset="1" stopColor="#8D3CF2" />
                 </radialGradient>
                 <clipPath id="B">
                     <path fill="#fff" d="M336 90h82v78h-82z" />

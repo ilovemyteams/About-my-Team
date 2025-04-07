@@ -115,7 +115,7 @@ export const ModalBase = ({
                             className={`max-h-[90dvh] ${isScrollBlock ? "" : scrollStyle} bg-white-100 dark:bg-purple-400 fixed ${mobilePositionStyle} tab:top-1/2 left-1/2 
             -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
                         >
-                            <div className="relative w-full h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
+                            <div className="relative w-full overflow-clip h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
                                 {isCloseBtnVisible && (
                                     <button
                                         type="button"

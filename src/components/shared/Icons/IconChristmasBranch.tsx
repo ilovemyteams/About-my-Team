@@ -1132,8 +1132,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="136.424"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_14342_58601"
@@ -1143,8 +1143,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="136.424"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint2_linear_14342_58601"
@@ -1154,8 +1154,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="110.246"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint3_linear_14342_58601"
@@ -1165,8 +1165,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="110.246"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint4_linear_14342_58601"
@@ -1176,8 +1176,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="163.039"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint5_linear_14342_58601"
@@ -1187,8 +1187,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="163.039"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint6_linear_14342_58601"
@@ -1198,9 +1198,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="113.562"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint7_linear_14342_58601"
@@ -1210,9 +1210,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="113.562"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint8_linear_14342_58601"
@@ -1222,9 +1222,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="82.5869"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint9_linear_14342_58601"
@@ -1234,9 +1234,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="82.5869"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint10_linear_14342_58601"
@@ -1246,9 +1246,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="98.0762"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint11_linear_14342_58601"
@@ -1258,9 +1258,9 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="98.0762"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D8C5FF" />
-                    <stop offset="0.482533" stop-color="#EFE8FF" />
-                    <stop offset="1" stop-color="#FBF9FF" />
+                    <stop stopColor="#D8C5FF" />
+                    <stop offset="0.482533" stopColor="#EFE8FF" />
+                    <stop offset="1" stopColor="#FBF9FF" />
                 </linearGradient>
                 <linearGradient
                     id="paint12_linear_14342_58601"
@@ -1270,8 +1270,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="53.501"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint13_linear_14342_58601"
@@ -1281,8 +1281,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="53.501"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint14_linear_14342_58601"
@@ -1292,8 +1292,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="70.3621"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint15_linear_14342_58601"
@@ -1303,8 +1303,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="70.3621"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint16_linear_14342_58601"
@@ -1314,8 +1314,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="231.864"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint17_linear_14342_58601"
@@ -1325,8 +1325,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="231.864"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint18_linear_14342_58601"
@@ -1336,8 +1336,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="201.211"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
                 <linearGradient
                     id="paint19_linear_14342_58601"
@@ -1347,8 +1347,8 @@ export const IconChrismasBranch = ({ className }: { className?: string }) => {
                     y2="201.211"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#D3B0FF" />
-                    <stop offset="1" stop-color="#F2EBFF" />
+                    <stop stopColor="#D3B0FF" />
+                    <stop offset="1" stopColor="#F2EBFF" />
                 </linearGradient>
             </defs>
         </svg>
