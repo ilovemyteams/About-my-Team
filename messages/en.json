@@ -6,7 +6,8 @@
     "Hero": {
         "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
-        "project": "Project"
+        "project": "Project",
+        "btn": "get 100 $"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
