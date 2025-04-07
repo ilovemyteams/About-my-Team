@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { Button } from "../../shared/Button";
 import { PageSection } from "../../shared/PageSection";
+import { EasterCertificate } from "./confirmCertificate/EasterCertificate";
 import { IconBigEgg } from "./icons/IconBigEgg";
 import { IconGlaze } from "./icons/IconGlaze";
 import { IconSmallEgg } from "./icons/IconSmallEgg";
@@ -11,9 +11,9 @@ export const EasterHeroSection = () => {
     const getTranslation = useTranslations("EasterEvent");
     return (
         <div className="min-h-[calc(100dvh_-_78px)] flex flex-col pc:min-h-dvh pc:mb-[100px]">
-            <IconGlaze className="w-full h-auto mb-2 tab:mb-[-20px] pc:mb-[-137px] shrink-0 text-easterGlaze" />
+            <IconGlaze className="w-full h-auto mb-2 tab:mb-[-20px] pc:mb-[-6%]  shrink-0 text-easterGlaze" />
             <PageSection className="h-full grid grid-rows-[auto,1fr]  grow shrink pb-[80px] tab:pb-[100px] pc:pb-0 ">
-                <h1 className="text-center font-caviar font-bold text-3xl28 tab:text-6xlt pc:text-7xl desk:text-9xl text-purple-200 dark:text-white-100 mb-4 tab:mb-[48px] pc:mb-[86px] desk:mb-[73px] pc:text-left pc:max-w-[550px] desk:max-w-[650px]">
+                <h1 className="text-center font-caviar font-bold text-3xl28 tab:text-6xlt pc:text-7xl desk:text-9xl text-purple-200 dark:text-white-100 mb-4 tab:mb-[48px] desk:mb-[56px] pc:text-left">
                     {getTranslation("heroTitle")}
                 </h1>
                 <div className=" flex flex-col pc:flex-row pc:justify-between">
@@ -31,7 +31,7 @@ export const EasterHeroSection = () => {
                         <p className="mb-[56px] tab:mb-[68px] text-base tab:text-xl28 text-purple-200 dark:text-white-200 desk:text-2xl">
                             {getTranslation("heroText")}
                         </p>
-                        <Button>{getTranslation("heroBtn")}</Button>
+                        <EasterCertificate />
                     </div>
                 </div>
             </PageSection>

@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
@@ -10,12 +11,15 @@ const SESSION_LANG_KEY = "langOpened";
 
 export const GreetingPortal = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const pathname = usePathname();
 
     const locale = useLocale();
 
     const onCloseModal = () => setIsModalOpen(false);
 
     useEffect(() => {
+        if (pathname.includes("/events")) return;
+
         const langOpened = sessionStorage.getItem(SESSION_LANG_KEY);
 
         if (langOpened) {
@@ -33,7 +37,7 @@ export const GreetingPortal = () => {
             setIsModalOpen(true);
             sessionStorage.setItem(SESSION_LANG_KEY, locale);
         }
-    }, [locale]);
+    }, [locale, pathname]);
 
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
