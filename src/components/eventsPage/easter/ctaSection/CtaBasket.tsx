@@ -12,7 +12,7 @@ export const CtaBasket = () => {
     const caption = getTranslation("greetingBtn");
 
     return (
-        <div className="relative pr-[15%] tab:pr-[10%]">
+        <div className="relative pr-[5%] tab:pr-[10%]">
             <Link
                 href="/"
                 className="relative w-[100px]  aspect-[50/78] pc:w-[120px] desk:w-[150px] flex justify-center mx-auto"
@@ -55,11 +55,11 @@ export const CtaBasket = () => {
                     height={35}
                     className="z-[2] absolute w-full bottom-0"
                 />
-                <div className="absolute left-[70%] top-0  text-greyLight dark:text-grey tab:left-[20%]">
-                    <p className="font-segoe text-xxs tab:text-sm pc:text-xl whitespace-nowrap -translate-y-full ">
+                <div className="absolute left-[40%] top-0  text-greyLight dark:text-grey tab:left-[20%]">
+                    <p className="font-segoe text-xxs tab:text-sm pc:text-xl whitespace-nowrap -translate-y-full">
                         {caption}
                     </p>
-                    <IconCurlyArrow className="absolute top-0 left-[40%] w-[20%] h-auto tab:left-[60%]" />
+                    <IconCurlyArrow className="absolute top-0 left-[60%] w-[20%] h-auto tab:left-[60%]" />
                 </div>
             </Link>
         </div>
