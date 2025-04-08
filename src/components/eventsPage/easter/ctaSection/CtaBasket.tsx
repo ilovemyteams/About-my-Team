@@ -12,7 +12,7 @@ export const CtaBasket = () => {
     const caption = getTranslation("greetingBtn");
 
     return (
-        <div className="relative pr-[30%] tab:pr-[10%]">
+        <div className="relative pr-[15%] tab:pr-[10%]">
             <Link
                 href="/"
                 className="relative w-[100px]  aspect-[50/78] pc:w-[120px] desk:w-[150px] flex justify-center mx-auto"
