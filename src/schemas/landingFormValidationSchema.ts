@@ -1,9 +1,9 @@
 import * as yup from "yup";
 
+import { CommentValidation } from "./shared/commentValidation";
 import { EmailValidation } from "./shared/emailValidation";
 import { MessageValidation } from "./shared/messageValidation";
 import { NameValidation } from "./shared/nameValidation";
-import { CommentValidation } from "./shared/commentValidation";
 
 // const telegramRegex = /(t\.me|@)/;
 
