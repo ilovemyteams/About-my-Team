@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 
-import { SomeEgg } from "./SomeEgg";
 import { getFingerprintId } from "@/src/utils/getVisitorID";
+
+import { SomeEgg } from "./SomeEgg";
 
 interface Egg {
     id: number;

@@ -5,8 +5,9 @@ import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
-import { GreetingModal } from "./GreetingModal";
 import { getFingerprintId } from "@/src/utils/getVisitorID";
+
+import { GreetingModal } from "./GreetingModal";
 
 const SESSION_LANG_KEY = "langOpened";
 

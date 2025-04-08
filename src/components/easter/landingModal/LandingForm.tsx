@@ -6,9 +6,9 @@ import { CustomField } from "@/src/components/shared/FormElements/CustomField";
 import { SubmitButton } from "@/src/components/shared/FormElements/SubmitButton";
 import { Link } from "@/src/i18n/routing";
 import { ConfirmDiscountValidation } from "@/src/schemas/confirmFormValidation";
+import { getFingerprintId } from "@/src/utils/getVisitorID";
 import { selectedLink } from "@/src/utils/selectedLink";
 import { FormInModalProps } from "@/types/FormInModalProps";
-import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 interface FormValues {
     name: string;

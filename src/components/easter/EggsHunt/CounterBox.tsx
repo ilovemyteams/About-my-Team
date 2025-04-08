@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import { useEasterCounter } from "@/src/utils/EasterCounterContext";
-import { useEffect, useState } from "react";
 import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 export const CounterBox = () => {
