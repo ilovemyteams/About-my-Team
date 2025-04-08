@@ -20,7 +20,7 @@ export const CounterBox = () => {
                     height={193}
                     className="w-[14px] h-auto tab:w-[22px] desk:w-[26px]"
                 />
-                <p className="text-xxs tab:text-base mb-[3px] desk:text-lg">
+                <p className="text-xxs tab:text-base mb-[2px] tab:mb-[3px] desk:text-lg">
                     x
                 </p>
                 <p className="">{totalFoundEggs}</p>
