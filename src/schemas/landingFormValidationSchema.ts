@@ -1,5 +1,6 @@
 import * as yup from "yup";
 
+import { CommentValidation } from "./shared/commentValidation";
 import { EmailValidation } from "./shared/emailValidation";
 import { MessageValidation } from "./shared/messageValidation";
 import { NameValidation } from "./shared/nameValidation";
@@ -10,6 +11,7 @@ export const LandingFormValidation = () => {
     const nameValidation = NameValidation();
     const emailValidation = EmailValidation();
     const messageValidation = MessageValidation();
+    const mediaValidation = CommentValidation();
 
     return yup.object().shape({
         name: nameValidation,
@@ -20,7 +22,7 @@ export const LandingFormValidation = () => {
         //     .min(10, getTranslation("messageMinMaxSymbols"))
         //     .max(300, getTranslation("messageMinMaxSymbols")),
         // productOrService: messageValidation,
-        media: messageValidation,
+        media: mediaValidation,
         whyLanding: messageValidation,
         // mostImportant: messageValidation,
         // telegram: yup

@@ -190,6 +190,8 @@
         "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
         "russianEmails": "Nie współpracujemy z Moskalami",
         "messageMinMaxSymbols": "Pole musi zawierać od 10 do 300 znaków",
+        "messageMinMax100Symbols": "Pole musi zawierać od 5 do 100 znaków",
+        "messageMax100Symbols": "Pole może zawierać do 100 znaków",
         "wrongLinkedin": "Nieprawidłowy adres linkedin",
         "wrongInstagram": "Nieprawidłowy adres instagram",
         "wrongFacebook": "Nieprawidłowy adres facebook",
