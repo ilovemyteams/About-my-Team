@@ -187,6 +187,8 @@
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
         "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
+        "messageMinMax100Symbols": "The field must contain from 5 to 100 characters",
+        "messageMax100Symbols": "The field сфт contain to 100 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",

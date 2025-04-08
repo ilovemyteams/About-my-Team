@@ -186,6 +186,8 @@
         "wrongEmail": "Невірний формат E-mail",
         "russianEmails": "Ми не працюємо з москалями",
         "messageMinMaxSymbols": "Поле повинно містити від 10 до 300 символів",
+        "messageMinMax100Symbols": "Поле повинно містити від 5 до 100 символів",
+        "messageMax100Symbols": "Поле може містити до 100 символів",
         "wrongLinkedin": "Неправильна адреса linkedin",
         "wrongInstagram": "Неправильна адреса instagram",
         "wrongFacebook": "Неправильна адреса facebook",
