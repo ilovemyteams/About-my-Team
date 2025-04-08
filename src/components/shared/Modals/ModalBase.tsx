@@ -91,7 +91,7 @@ export const ModalBase = ({
                         }}
                         aria-label="modal-backdrop"
                         onClick={onCloseModal}
-                        className="fixed z-[21] top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
+                        className="fixed no-doc-scroll z-[21] top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                     >
                         <motion.div
                             variants={{

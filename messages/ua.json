@@ -304,7 +304,16 @@
             "greetingBtn": "почати полювання",
             "supportTitle": "Гарно рухаєтесь!",
             "supportText": "Ви вже знайшли <red>15</red> яєць. <br></br>Залишилося кілька кроків до розіграшу лендінга.",
-            "supportBtn": "продовжити"
+            "supportBtn": "продовжити",
+            "landingTitle": "Залишилось всього 2 кроки до безкоштовного лендінгу!",
+            "landingText1": "Заповніть форму",
+            "landingText2": "Прийдіть на розіграш 21.04.2025 о 19:00 за Київським часом в прямому ефірі.",
+            "landingCap": "*Слідкуйте за анонсами на сторінці <linkSusanna>Susanna Salata</linkSusanna>",
+            "landingFormTitle": "Залиште свої дані:",
+            "landingFormMedia": "Посилання на соц. мережі (нік в Telegram, Facebook, LikedIn тощо)*",
+            "landingFormComment": "Чому лендінг може бути корисним для Вас?*",
+            "mediaPlaceholder": "наприклад t.me/Susanna_Salata або @Susanna_Salata",
+            "landingFormTerms": "Натискаючи кнопку “Надіслати”, Ви погоджуєтесь з <policyLink>Правилами обробки персональних даних</policyLink> та <rules>Правилами участі у розіграші лендінгу</rules>."
         }
     },
     "PortfolioPage": {

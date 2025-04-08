@@ -168,7 +168,7 @@
         "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "t.me/Susanna_Salata lub @Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -309,7 +309,16 @@
             "greetingBtn": "Chodźmy na polowanie",
             "supportTitle": "Świetnie Ci idzie!",
             "supportText": "Znalazłeś już <red>15</red> jajek. <br></br>Zostało tylko kilka kroków do losowania landing page.",
-            "supportBtn": "kontynuuj"
+            "supportBtn": "kontynuuj",
+            "landingTitle": "Tylko 2 kroki do darmowej strony docelowej!",
+            "landingText1": "Wypełnij formularz",
+            "landingText2": "Przyjdź na losowanie 21.04.2025 o 19:00 czasu kijowskiego na żywo",
+            "landingCap": "*Śledź ogłoszenia na stronie <linkSusanna>Susanna Salata</linkSusanna>",
+            "landingFormTitle": "Zostaw swoje dane:",
+            "landingFormMedia": "Linki do sieci społecznościowych (nick w Telegramie, Facebooku, LikedIn itp.)*",
+            "landingFormComment": "Dlaczego landing page może być dla Ciebie przydatny?*",
+            "mediaPlaceholder": "na przykład t.me/Susanna_Salata lub @Susanna_Salata",
+            "landingFormTerms": "Klikając przycisk “Wyślij”, wyrażasz zgodę na <policyLink>Zasady przetwarzania danych osobowych</policyLink> i <rules>Zasady udziału w losowaniu landing page</rules>."
         }
     },
     "PortfolioPage": {

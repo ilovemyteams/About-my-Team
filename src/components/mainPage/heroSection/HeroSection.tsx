@@ -1,8 +1,11 @@
 "use client";
+import { useEasterCounter } from "@/src/utils/EasterCounterContext";
+
 import { CounterBox } from "../../easter/EggsHunt/CounterBox";
 import { IconBranch1 } from "../../easter/icons/IconBranch1";
 import { IconBranch2 } from "../../easter/icons/IconBranch2";
 import { IconBranch3 } from "../../easter/icons/IconBranch3";
+import { LandingModal } from "../../easter/landingModal/LandingModal";
 import { LogoEaster } from "../../easter/LogoEaster";
 import { SupportModal } from "../../easter/supportModal/SupportModal";
 import LocaleSwitcher from "../../shared/LocaleSwitcher";
@@ -13,6 +16,8 @@ import { HeroInfo } from "./HeroInfo";
 import { PortfolioSlider } from "./HeroPortfolio/PortfolioSlider";
 
 export const HeroSection = () => {
+    const { isCounterVisible } = useEasterCounter();
+
     return (
         <div className="relative overflow-hidden">
             <Section className="pt-[20vw] tab:pt-[123px] pc:pt-8 relative">
@@ -39,9 +44,11 @@ export const HeroSection = () => {
                     <IconEggRope className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
                     <IconDecorEgg className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
                 </div> */}
-                <div className="fixed top-[80px] right-0 z-[11] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
-                    <CounterBox />
-                </div>
+                {isCounterVisible && (
+                    <div className="fixed top-[80px] right-0 z-[11] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
+                        <CounterBox />
+                    </div>
+                )}
             </Section>
             <IconBranch1
                 className=" absolute w-11 tab:w-[58px] pc:w-[69px] desk:w-[101px] h-auto top-[-60px] left-[59px] rotate-[123deg]
@@ -64,6 +71,7 @@ export const HeroSection = () => {
             pc:right-[50%] pc:top-[-100px]"
             />
             <SupportModal />
+            <LandingModal />
         </div>
     );
 };
