@@ -8,6 +8,7 @@ import { Link } from "@/src/i18n/routing";
 import { ConfirmDiscountValidation } from "@/src/schemas/confirmFormValidation";
 import { selectedLink } from "@/src/utils/selectedLink";
 import { FormInModalProps } from "@/types/FormInModalProps";
+import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 interface FormValues {
     name: string;
@@ -48,6 +49,9 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                     "Content-Type": "application/json",
                 },
             });
+
+            const visitorId = await getFingerprintId();
+            localStorage.setItem("easter_participant", visitorId);
         };
         try {
             await notificationHandler(onSendData);

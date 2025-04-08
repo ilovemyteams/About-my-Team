@@ -6,6 +6,7 @@ import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
 import { GreetingModal } from "./GreetingModal";
+import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 const SESSION_LANG_KEY = "langOpened";
 
@@ -16,6 +17,20 @@ export const GreetingPortal = () => {
     const locale = useLocale();
 
     const onCloseModal = () => setIsModalOpen(false);
+    const [shouldRender, setShouldRender] = useState(false);
+
+    useEffect(() => {
+        const checkParticipation = async () => {
+            const visitorId = await getFingerprintId();
+            const savedId = localStorage.getItem("easter_participant");
+
+            if (visitorId !== savedId) {
+                setShouldRender(true);
+            }
+        };
+
+        checkParticipation();
+    }, []);
 
     useEffect(() => {
         if (pathname.includes("/events")) return;
@@ -52,6 +67,8 @@ export const GreetingPortal = () => {
             document.removeEventListener("keydown", handleEsc);
         };
     }, []);
+
+    if (!shouldRender) return null;
 
     return (
         <AnimatePresence>

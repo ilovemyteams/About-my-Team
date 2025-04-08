@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { SomeEgg } from "./SomeEgg";
+import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 interface Egg {
     id: number;
@@ -38,6 +39,7 @@ const getRandomEggType = (): number => Math.floor(Math.random() * 5) + 1;
 
 export const EggContainer = ({ count }: EggContainerProps) => {
     const [eggs, setEggs] = useState<Egg[]>([]);
+    const [shouldRender, setShouldRender] = useState(false);
 
     useEffect(() => {
         const newEggs: Egg[] = [];
@@ -50,6 +52,20 @@ export const EggContainer = ({ count }: EggContainerProps) => {
         }
         setEggs(newEggs);
     }, [count]);
+
+    useEffect(() => {
+        const checkParticipation = async () => {
+            const visitorId = await getFingerprintId();
+            const savedId = localStorage.getItem("easter_participant");
+
+            if (visitorId !== savedId) {
+                setShouldRender(true);
+            }
+        };
+
+        checkParticipation();
+    }, []);
+    if (!shouldRender) return null;
 
     return (
         <>
