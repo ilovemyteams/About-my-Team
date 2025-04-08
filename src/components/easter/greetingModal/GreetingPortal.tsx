@@ -16,6 +16,22 @@ export const GreetingPortal = () => {
     const locale = useLocale();
 
     const onCloseModal = () => setIsModalOpen(false);
+    const [shouldRender, setShouldRender] = useState(false);
+
+    useEffect(() => {
+        const checkParticipation = async () => {
+            const participated =
+                localStorage.getItem("easter_participated") === "true";
+
+            if (participated) {
+                setShouldRender(false);
+            } else {
+                setShouldRender(true);
+            }
+        };
+
+        checkParticipation();
+    }, []);
 
     useEffect(() => {
         if (pathname.includes("/events")) return;
@@ -52,6 +68,8 @@ export const GreetingPortal = () => {
             document.removeEventListener("keydown", handleEsc);
         };
     }, []);
+
+    if (!shouldRender) return null;
 
     return (
         <AnimatePresence>

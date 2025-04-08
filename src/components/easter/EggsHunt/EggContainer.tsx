@@ -38,6 +38,7 @@ const getRandomEggType = (): number => Math.floor(Math.random() * 5) + 1;
 
 export const EggContainer = ({ count }: EggContainerProps) => {
     const [eggs, setEggs] = useState<Egg[]>([]);
+    const [shouldRender, setShouldRender] = useState(false);
 
     useEffect(() => {
         const newEggs: Egg[] = [];
@@ -50,6 +51,22 @@ export const EggContainer = ({ count }: EggContainerProps) => {
         }
         setEggs(newEggs);
     }, [count]);
+
+    useEffect(() => {
+        const checkParticipation = async () => {
+            const participated =
+                localStorage.getItem("easter_participated") === "true";
+
+            if (participated) {
+                setShouldRender(false);
+            } else {
+                setShouldRender(true);
+            }
+        };
+
+        checkParticipation();
+    }, []);
+    if (!shouldRender) return null;
 
     return (
         <>
