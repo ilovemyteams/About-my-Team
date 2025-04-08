@@ -11,7 +11,7 @@ export const EasterCertificate = () => {
     const getTranslation = useTranslations("EasterEvent");
 
     const onClickGetCertificate = () => {
-        setIsOpen(true);
+        // setIsOpen(true);
     };
 
     const onCloseModal = () => {
