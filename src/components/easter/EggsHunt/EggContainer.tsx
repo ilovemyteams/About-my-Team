@@ -1,8 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 
-import { getFingerprintId } from "@/src/utils/getVisitorID";
-
 import { SomeEgg } from "./SomeEgg";
 
 interface Egg {
@@ -56,10 +54,12 @@ export const EggContainer = ({ count }: EggContainerProps) => {
 
     useEffect(() => {
         const checkParticipation = async () => {
-            const visitorId = await getFingerprintId();
-            const savedId = localStorage.getItem("easter_participant");
+            const participated =
+                localStorage.getItem("easter_participated") === "true";
 
-            if (visitorId !== savedId) {
+            if (participated) {
+                setShouldRender(false);
+            } else {
                 setShouldRender(true);
             }
         };

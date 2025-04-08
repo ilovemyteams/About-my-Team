@@ -5,8 +5,6 @@ import { usePathname } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
-import { getFingerprintId } from "@/src/utils/getVisitorID";
-
 import { GreetingModal } from "./GreetingModal";
 
 const SESSION_LANG_KEY = "langOpened";
@@ -22,10 +20,12 @@ export const GreetingPortal = () => {
 
     useEffect(() => {
         const checkParticipation = async () => {
-            const visitorId = await getFingerprintId();
-            const savedId = localStorage.getItem("easter_participant");
+            const participated =
+                localStorage.getItem("easter_participated") === "true";
 
-            if (visitorId !== savedId) {
+            if (participated) {
+                setShouldRender(false);
+            } else {
                 setShouldRender(true);
             }
         };

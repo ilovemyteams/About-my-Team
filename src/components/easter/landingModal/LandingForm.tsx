@@ -6,7 +6,6 @@ import { CustomField } from "@/src/components/shared/FormElements/CustomField";
 import { SubmitButton } from "@/src/components/shared/FormElements/SubmitButton";
 import { Link } from "@/src/i18n/routing";
 import { ConfirmDiscountValidation } from "@/src/schemas/confirmFormValidation";
-import { getFingerprintId } from "@/src/utils/getVisitorID";
 import { selectedLink } from "@/src/utils/selectedLink";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
@@ -49,9 +48,7 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                     "Content-Type": "application/json",
                 },
             });
-
-            const visitorId = await getFingerprintId();
-            localStorage.setItem("easter_participant", visitorId);
+            localStorage.setItem("easter_participated", "true");
         };
         try {
             await notificationHandler(onSendData);

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { useEasterCounter } from "@/src/utils/EasterCounterContext";
-import { getFingerprintId } from "@/src/utils/getVisitorID";
 
 export const CounterBox = () => {
     const { totalFoundEggs } = useEasterCounter();
@@ -11,10 +10,12 @@ export const CounterBox = () => {
 
     useEffect(() => {
         const checkParticipation = async () => {
-            const visitorId = await getFingerprintId();
-            const savedId = localStorage.getItem("easter_participant");
+            const participated =
+                localStorage.getItem("easter_participated") === "true";
 
-            if (visitorId !== savedId) {
+            if (participated) {
+                setShouldRender(false);
+            } else {
                 setShouldRender(true);
             }
         };
