@@ -123,7 +123,7 @@ export const GreetingModal = ({ onCloseModal }: GreetingModalProps) => {
                                 ),
                             })}
                         </p>
-                        <p className="mb-[46px] tab:mb-[37px] pc:mb-[25px] desk:mb-[15px] desk:text-lg text-redLight dark:text-red text-center lowercase">
+                        <p className="mb-[46px] text-sm tab:text-base tab:mb-[37px] pc:mb-[25px] desk:mb-[15px] desk:text-lg text-redLight dark:text-red text-center lowercase">
                             {getTranslation("greentingCaption")}
                         </p>
 
