@@ -42,6 +42,8 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
                     "Content-Type": "application/json",
                 },
             });
+            localStorage.setItem("easter_sertificate", "true");
+            window.dispatchEvent(new Event("easter-sertificate-obtained"));
         };
         try {
             await notificationHandler(onSendData);

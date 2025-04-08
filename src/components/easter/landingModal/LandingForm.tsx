@@ -48,6 +48,7 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                     "Content-Type": "application/json",
                 },
             });
+            localStorage.setItem("easter_participated", "true");
         };
         try {
             await notificationHandler(onSendData);
