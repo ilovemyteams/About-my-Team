@@ -5,12 +5,13 @@ import { useTranslations } from "next-intl";
 import { CustomField } from "@/src/components/shared/FormElements/CustomField";
 import { PolicyLabel } from "@/src/components/shared/FormElements/PolicyLabel";
 import { SubmitButton } from "@/src/components/shared/FormElements/SubmitButton";
-import { ConfirmDiscountValidation } from "@/src/schemas/confirmFormValidation";
+import { ConfirmDiscountValidation } from "@/src/schemas/confirmDisountValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
 interface FormValues {
     name: string;
     email: string;
+    comment: string;
 }
 
 export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
@@ -22,6 +23,7 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
     const initialValue: FormValues = {
         name: "",
         email: "",
+        comment: "",
     };
 
     const onSubmit = async (values: FormValues) => {
@@ -29,6 +31,7 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
             const data = {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
+                comment: values.comment.trim(),
             };
 
             await axios({
@@ -98,6 +101,17 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
                             status={status}
                         />
 
+                        <CustomField
+                            name="comment"
+                            label={easterTranslation("comment")}
+                            value={values.email}
+                            type="text"
+                            placeholder={easterTranslation("comment")}
+                            isError={false}
+                            setStatus={setStatus}
+                            status={status}
+                        />
+
                         <div className="my-[32px] pc:mt-5 pc:mb-10 text-xs tab:text-sm flex flex-col gap-2 self-start">
                             <p
                                 className={
@@ -110,7 +124,7 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
                                 {getTranslation("requiredField")}
                             </p>
                             <PolicyLabel />
-                            <p className="mt-2 text-xxs tab:text-xs">
+                            <p className="text-xxs tab:text-xs">
                                 {easterTranslation("confirmFormCaption")}
                             </p>
                         </div>

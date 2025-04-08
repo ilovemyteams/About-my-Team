@@ -368,6 +368,8 @@
         "confirmCaption": "*сертифікат дійсний до \n01.06.2025",
         "confirmFormText": "Для того, щоб активувати сертифікат залиште свої дані і наш менеджер зв'яжеться з вами.",
         "confirmFormCaption": "**Сертифікат-знижка не накопичується.",
-        "ctaText": "<purple>Сюрпризи</purple> вже <purple>чекають</purple>! \n<purple>Знайди</purple> всі 20 яєць — і отримай шанс на <purple>БЕЗКОШТОВНИЙ лендінг</purple>!"
+        "ctaText": "<purple>Сюрпризи</purple> вже <purple>чекають</purple>! \nЗнайди всі <purple>20 яєць</purple> — і отримай шанс на <purple>БЕЗКОШТОВНИЙ лендінг</purple>!",
+        "ctaBtn": "Уперед!",
+        "comment": "Коментар"
     }
 }

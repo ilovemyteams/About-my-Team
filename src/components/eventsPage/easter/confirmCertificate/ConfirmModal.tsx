@@ -46,7 +46,7 @@ export const ConfirmModal = ({
 
             <div>
                 <h2
-                    className="text-center whitespace-pre-wrap font-bold font-caviar text-lg max-w-[57%] mb-3 text-purple-200 dark:text-white-200 mx-auto
+                    className="text-center whitespace-pre-wrap font-bold font-caviar text-lg max-w-[65%] mb-3 text-purple-200 dark:text-white-200 mx-auto
                 tab:text-xl tab:max-w-[40%] tab:mb-5 desk:max-w-[37%]"
                 >
                     {getTranslation("confirmTitle")}
