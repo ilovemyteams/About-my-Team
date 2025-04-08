@@ -4,3 +4,7 @@ export const addProtocol = (url: string) => {
     }
     return url;
 };
+
+export const removeProtocol = (url: string) => {
+    return url.replace(/^https?:\/\//i, "");
+};

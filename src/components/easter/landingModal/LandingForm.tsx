@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { CustomField } from "@/src/components/shared/FormElements/CustomField";
 import { SubmitButton } from "@/src/components/shared/FormElements/SubmitButton";
 import { Link } from "@/src/i18n/routing";
-import { ConfirmDiscountValidation } from "@/src/schemas/confirmFormValidation";
+import { LandingFormValidation } from "@/src/schemas/landingFormValidationSchema";
 import { selectedLink } from "@/src/utils/selectedLink";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
@@ -13,7 +13,7 @@ interface FormValues {
     name: string;
     email: string;
     media: string;
-    comment: string;
+    whyLanding: string;
 }
 
 export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
@@ -22,13 +22,13 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
     const locale = useLocale();
     const policyURL = selectedLink(locale);
 
-    const validationSchema = ConfirmDiscountValidation();
+    const validationSchema = LandingFormValidation();
 
     const initialValue: FormValues = {
         name: "",
         email: "",
         media: "",
-        comment: "",
+        whyLanding: "",
     };
 
     const onSubmit = async (values: FormValues) => {
@@ -37,7 +37,7 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
                 media: values.media.trim(),
-                comment: values.comment.trim(),
+                whyLanding: values.whyLanding.trim(),
             };
 
             await axios({
@@ -119,12 +119,14 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                             className="pt-3 tab:pt-1"
                         />
                         <CustomField
-                            name="comment"
+                            name="whyLanding"
                             label={getTranslation("landingFormComment")}
-                            value={values.comment}
+                            value={values.whyLanding}
                             type="textarea"
                             placeholder={customFormTranslation("messageLabel")}
-                            isError={!!(errors.comment && touched.comment)}
+                            isError={
+                                !!(errors.whyLanding && touched.whyLanding)
+                            }
                             setStatus={setStatus}
                             status={status}
                         />
@@ -133,7 +135,9 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                             <p
                                 className={
                                     (errors.name && touched.name) ||
-                                    (errors.email && touched.email)
+                                    (errors.email && touched.email) ||
+                                    (errors.media && touched.media) ||
+                                    (errors.whyLanding && touched.whyLanding)
                                         ? "text-error"
                                         : "text-inherit"
                                 }
