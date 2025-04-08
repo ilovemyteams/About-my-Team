@@ -15,6 +15,6 @@ export const ConfirmDiscountValidation = () => {
         comment: yup
             .string()
             .optional()
-            .max(300, getTranslation("messageMinMaxSymbols")),
+            .max(100, getTranslation("messageMax100Symbols")),
     });
 };
