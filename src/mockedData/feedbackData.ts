@@ -156,4 +156,38 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Bardzo dziękuję za stronę, wygląda profesjonalnie, starannie przemyślana, a nawet odzwierciedla mój charakter i światopogląd.(Prosto, konkretnie, nic zbędnego). Dziękuję za wykonaną pracę.",
         },
     },
+    {
+        data: {
+            id: "05",
+            image: "",
+            siteLink: "www.choodov.com",
+            slug: "alex-chudov",
+            feedbackLink:
+                "https://www.linkedin.com/posts/chudov_choodov-wonderintheuniverse-activity-7312176808714518529-EcwB/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABeq2koBgxsJlDrPNdqlrtKYrDg7EYdDKTU",
+        },
+        ua: {
+            siteName: "Алекс Чудов",
+            siteView: "лендінг",
+            reviewer: "Алекс Чудов",
+            reviewerRole: "письменник",
+            feedbackText:
+                "Усе почалося з перемоги у новорічному конкурсі, але я й уявити не міг, який ідеальний сайт отримаю. Було приємно працювати з такою організованою командою. Їхні ідеї були неймовірні. Кілька дійсно продуктивних зустрічей допомогли уточнити всі вимоги та мої побажання. Команда глибоко занурилась у тему моєї книги та створила «живий і інтерактивний» сайт, що передає її дух і ідею. Я щиро рекомендую 'i love my team', якщо ви хочете яскраво представити себе або свій бізнес на чудовому сайті! Перший контакт, який вам потрібен — це Сусанна Салата 🇺🇦. Висококласна менеджерка, яка втілить ваші ідеї в робочий проєкт.",
+        },
+        en: {
+            siteName: "Alex Chudov",
+            siteView: "landing",
+            reviewer: "Alex Chudov",
+            reviewerRole: "writer",
+            feedbackText:
+                "Everything starts as a New Year Contest win, but I even cannot imagine what perfect website will I get. It was a pleasure to work with such a well-organized team. Their concepts were amazing. Several truly productive meetings helped to clarify all requirements and my wishes. The team dug deeply into the theme of my book and created the 'live and interactive' website that reflects the spirit and idea of it. I highly recommend the 'i love my team', if you would like to express your business or yourself on a wonderful website! The first contact that you need - is Susanna Salata 🇺🇦. The high-quality manager who brings your ideas to the working project.",
+        },
+        pl: {
+            siteName: "Alex Chudov",
+            siteView: "strona docelowa",
+            reviewer: "Alex Chudov",
+            reviewerRole: "pisarz",
+            feedbackText:
+                "Wszystko zaczęło się od wygranej w konkursie noworocznym, ale nawet nie mogłam sobie wyobrazić, jak idealną stronę internetową otrzymam. Praca z tak dobrze zorganizowanym zespołem była prawdziwą przyjemnością. Ich pomysły były niesamowite. Kilka naprawdę owocnych spotkań pomogło doprecyzować wszystkie wymagania i moje oczekiwania. Zespół głęboko zagłębił się w temat mojej książki i stworzył „żywą i interaktywną” stronę, która oddaje jej ducha i ideę. Gorąco polecam 'i love my team', jeśli chcesz wyrazić siebie lub swój biznes poprzez wyjątkową stronę internetową! Osobą kontaktową, której potrzebujesz, jest Susanna Salata 🇺🇦 — wysokiej klasy menedżerka, która przekształci Twoje pomysły w działający projekt.",
+        },
+    },
 ];
