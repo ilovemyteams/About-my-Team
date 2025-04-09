@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { IconProps } from "@/types/iconProps.interface";
 
-import { pathes } from "./pathes";
+import { pathes } from "../mockData/bigEggPathes";
 
 interface IconBigEggProps extends IconProps {
     isAnimated: boolean;
