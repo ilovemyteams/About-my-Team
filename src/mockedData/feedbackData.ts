@@ -187,7 +187,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Alex Chudov",
             reviewerRole: "pisarz",
             feedbackText:
-                "Wszystko zaczęło się od wygranej w konkursie noworocznym, ale nawet nie mogłam sobie wyobrazić, jak idealną stronę internetową otrzymam. Praca z tak dobrze zorganizowanym zespołem była prawdziwą przyjemnością. Ich pomysły były niesamowite. Kilka naprawdę owocnych spotkań pomogło doprecyzować wszystkie wymagania i moje oczekiwania. Zespół głęboko zagłębił się w temat mojej książki i stworzył „żywą i interaktywną” stronę, która oddaje jej ducha i ideę. Gorąco polecam 'i love my team', jeśli chcesz wyrazić siebie lub swój biznes poprzez wyjątkową stronę internetową! Osobą kontaktową, której potrzebujesz, jest Susanna Salata 🇺🇦 — wysokiej klasy menedżerka, która przekształci Twoje pomysły w działający projekt.",
+                "Wszystko zaczęło się od wygranej w konkursie noworocznym, ale nawet nie mogłem sobie wyobrazić, jak idealną stronę internetową otrzymam. Praca z tak dobrze zorganizowanym zespołem była prawdziwą przyjemnością. Ich pomysły były niesamowite. Kilka naprawdę owocnych spotkań pomogło doprecyzować wszystkie wymagania i moje oczekiwania. Zespół głęboko zanurzył się w temat mojej książki i stworzył „żywą i interaktywną” stronę, która odzwierciedla jej ducha i ideę. Gorąco polecam 'i love my team', jeśli chcesz wyrazić siebie lub swój biznes poprzez wyjątkową stronę internetową! Osobą kontaktową, której potrzebujesz, jest Susanna Salata 🇺🇦 — wysokiej klasy menedżerka, która wciela Twoje pomysły w działający projekt.",
         },
     },
 ];
