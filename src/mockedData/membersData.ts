@@ -43,6 +43,7 @@ export const membersData: MemberDataItemType[] = [
                 "batatfarm-com",
                 "theatermag-com-ua",
                 "alex-chudov",
+                "viktoriia-zabara",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
@@ -54,6 +55,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
                 "choodov.com",
+                "viktoriia-zabara.netlify.app",
             ],
             pricePerHour: "24",
             socialLinks: {
