@@ -2253,7 +2253,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oksana-arpul-qa-engineer",
             projectId: ["ilovemyteam-online"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744207393/Oksana_QA_pf0c7o.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744208424/Oksana_QA_f60hln.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
