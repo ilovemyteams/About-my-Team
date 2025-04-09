@@ -45,7 +45,7 @@ export const HeroSection = () => {
                     <IconDecorEgg className="tab:w-[46px] pc:w-[54px] tab:h-auto" />
                 </div> */}
                 {isCounterVisible && (
-                    <div className="fixed top-[80px] right-0 z-[11] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
+                    <div className="fixed top-[80px] right-0 z-[12] pc:top-0 pc:right-1/2 pc:translate-x-1/2">
                         <CounterBox />
                     </div>
                 )}
