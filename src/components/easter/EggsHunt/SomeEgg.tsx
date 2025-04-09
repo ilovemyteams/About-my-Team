@@ -36,7 +36,7 @@ export const SomeEgg = ({ x, y, kindOfEgg }: SomeEggProps) => {
 
     return (
         <motion.div
-            className="absolute z-[11]"
+            className="absolute z-[11] w-[70px] h-[70px] tab:w-[90px] tab:h-[90px] flex justify-center items-center"
             style={{ top: `${y}%`, left: `${x}%` }}
             onClick={handleClick}
             initial={{ scale: 1, opacity: 1 }}
