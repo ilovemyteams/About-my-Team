@@ -159,7 +159,7 @@ export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "05",
-            image: "",
+            image: "https://drive.google.com/uc?export=view&id=1fVyAALJvtIfRVi4_BbdOBdzPjXig19HZ",
             siteLink: "www.choodov.com",
             slug: "alex-chudov",
             feedbackLink:
