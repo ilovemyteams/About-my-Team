@@ -44,7 +44,7 @@ export const ConfirmModal = ({
              h-auto z-[-1] tab:w-[85%] tab:-translate-y-[24%] pc:w-[75%] desk:w-[65%]"
             />
 
-            <div>
+            <div className="mb-[32%] tab:mb-[108px]">
                 <h2
                     className="text-center whitespace-pre-wrap font-bold font-caviar text-lg max-w-[65%] mb-3 text-purple-200 dark:text-white-200 mx-auto
                 tab:text-xl tab:max-w-[40%] tab:mb-5 desk:max-w-[37%]"
@@ -54,7 +54,7 @@ export const ConfirmModal = ({
                 <p className="font-caviar text-redLight dark:text-red text-6xl text-center mb-3 tab:text-7xl tab:mb-4">
                     100$
                 </p>
-                <p className="text-center text-sm mb-[90px] mx-auto whitespace-pre-wrap tab:mb-[108px] text-purple-200 dark:text-grey">
+                <p className="text-center text-sm  mx-auto whitespace-pre-wrap  text-purple-200 dark:text-grey">
                     {getTranslation("confirmCaption")}
                 </p>
             </div>
