@@ -70,7 +70,7 @@ export const FeedbackCard = ({
             <div className="h-[186px] px-2 pt-4 pb-2 flex flex-col justify-between">
                 <div>
                     {!feedbackLink && (
-                        <p className="text-sm h-[120px]">
+                        <p className="text-sm h-[120px] overflow-hidden line-clamp-6 break-words">
                             &ldquo; {feedbackText} &ldquo;
                         </p>
                     )}
