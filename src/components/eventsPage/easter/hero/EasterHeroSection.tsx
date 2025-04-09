@@ -1,6 +1,7 @@
+"use client";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
-// import { useState } from "react";
 import { PageSection } from "../../../shared/PageSection";
 import { EasterCertificate } from "../confirmCertificate/EasterCertificate";
 import { IconGlaze } from "../icons/IconGlaze";
@@ -8,10 +9,14 @@ import { EggsScene } from "./EggsScene";
 
 export const EasterHeroSection = () => {
     const getTranslation = useTranslations("EasterEvent");
-    // const [startScene, setStartScene] = useState(false);
+    const [startAnimation, setStartAnimation] = useState(false);
+    const [isEggBroken, setIsEggBroken] = useState(false);
 
-    // const onStartScene = () => setStartScene(true);
-    // const onStopScene = () => setStartScene(false);
+    const onStartAnimation = () => setStartAnimation(true);
+    const onEndAnimation = () => setStartAnimation(false);
+
+    const onBrokenEgg = () => setIsEggBroken(true);
+    const onFixEgg = () => setIsEggBroken(false);
 
     return (
         <div className="min-h-[calc(100dvh_-_78px)] flex flex-col pc:min-h-dvh pc:mb-[100px]">
@@ -23,14 +28,22 @@ export const EasterHeroSection = () => {
                 <div className=" flex flex-col pc:flex-row pc:justify-between">
                     <div className=" grow shrink relative flex items-center justify-center mb-[clamp(28px,_6dvh,_56px)] tab:mb-[clamp(80px,_6dvh,_120px)] pc:mb-[clamp(50px,_6dvh,_80px)] pc:grow-0">
                         <div className="max-w-[80%] h-full aspect-[140/127] mx-auto tab:max-w-[550px] pc:max-w-none pc:max-h-[500px]">
-                            <EggsScene />
+                            <EggsScene
+                                startAnimation={startAnimation}
+                                onEndAnimation={onEndAnimation}
+                                onBrokenEgg={onBrokenEgg}
+                                isEggBroken={isEggBroken}
+                            />
                         </div>
                     </div>
                     <div className="shrink-0 text-center tab:max-w-[444px] tab:mx-auto pc:grow-0 pc:flex pc:flex-col pc:justify-center pc:items-center pc:mr-0 desk:mr-[60px] desk:max-w-[520px]">
                         <p className="mb-[56px] tab:mb-[68px] text-base tab:text-xl28 text-purple-200 dark:text-white-200 desk:text-2xl">
                             {getTranslation("heroText")}
                         </p>
-                        <EasterCertificate />
+                        <EasterCertificate
+                            onStartAnimation={onStartAnimation}
+                            onFixEgg={onFixEgg}
+                        />
                     </div>
                 </div>
             </PageSection>
