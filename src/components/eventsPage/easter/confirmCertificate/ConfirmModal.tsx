@@ -14,6 +14,7 @@ interface ConfirmModalProps {
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
     onFixEgg: () => void;
+    onEnableBtn: () => void;
 }
 export const ConfirmModal = ({
     isOpen,
@@ -21,6 +22,7 @@ export const ConfirmModal = ({
     setIsError,
     setIsNotificationShawn,
     onFixEgg,
+    onEnableBtn,
 }: ConfirmModalProps) => {
     const getTranslation = useTranslations("EasterEvent");
 
@@ -39,6 +41,7 @@ export const ConfirmModal = ({
     const onCloseBtn = () => {
         onCloseModal();
         onFixEgg();
+        onEnableBtn();
     };
     return (
         <ModalBase

@@ -12,7 +12,9 @@ export const EasterHeroSection = () => {
     const [startAnimation, setStartAnimation] = useState(false);
     const [isEggBroken, setIsEggBroken] = useState(false);
 
-    const onStartAnimation = () => setStartAnimation(true);
+    const onStartAnimation = () => {
+        setStartAnimation(true);
+    };
     const onEndAnimation = () => setStartAnimation(false);
 
     const onBrokenEgg = () => setIsEggBroken(true);
