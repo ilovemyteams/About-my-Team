@@ -13,12 +13,14 @@ interface ConfirmModalProps {
     onCloseModal: () => void;
     setIsError: Dispatch<SetStateAction<boolean>>;
     setIsNotificationShawn: Dispatch<SetStateAction<boolean>>;
+    onFixEgg: () => void;
 }
 export const ConfirmModal = ({
     isOpen,
     onCloseModal,
     setIsError,
     setIsNotificationShawn,
+    onFixEgg,
 }: ConfirmModalProps) => {
     const getTranslation = useTranslations("EasterEvent");
 
@@ -33,10 +35,15 @@ export const ConfirmModal = ({
             setIsNotificationShawn(true);
         }
     };
+
+    const onCloseBtn = () => {
+        onCloseModal();
+        onFixEgg();
+    };
     return (
         <ModalBase
             isOpen={isOpen}
-            onCloseModal={onCloseModal}
+            onCloseModal={onCloseBtn}
             className="overflow-x-clip"
         >
             <IconWreath

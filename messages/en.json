@@ -170,7 +170,7 @@
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
-        "requiredField": "*Fields required to be filled in",
+        "requiredField": "*Fields are required to be filled in",
         "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send",
@@ -188,7 +188,7 @@
         "russianEmails": "We do not work with Muscovites",
         "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
         "messageMinMax100Symbols": "The field must contain from 5 to 100 characters",
-        "messageMax100Symbols": "The field сфт contain to 100 characters",
+        "messageMax100Symbols": "The field can contain to 100 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",
@@ -375,7 +375,7 @@
         "confirmCaption": "*the certificate is valid until \n01.06.2025.",
         "confirmFormText": "To activate your certificate, please leave your details, and our manager will contact you.",
         "confirmFormCaption": "**The discount certificate is not cumulative.",
-        "ctaText": "<purple>Surprises</purple> are <purple>waiting</purple>! \nFind all <purple>20 eggs</purple> and get a chance to win a <purple>FREE landing</purple> page!",
+        "ctaText": "<purple>Surprises</purple> are <purple>just around</purple>! \nFind all <purple>20 eggs</purple> and get a chance to win a <purple>FREE landing</purple> page!",
         "ctaBtn": "Go!",
         "comment": "Comment"
     }

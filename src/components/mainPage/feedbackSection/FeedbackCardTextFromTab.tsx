@@ -27,7 +27,7 @@ export const FeedbackCardTextFromTab = ({
                 />
                 <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[175px]">
                     {!feedbackLink && (
-                        <p className="tab:text-base pc:text-xl">
+                        <p className="tab:text-base pc:text-xl overflow-hidden line-clamp-[7] break-words">
                             {feedbackText}
                         </p>
                     )}

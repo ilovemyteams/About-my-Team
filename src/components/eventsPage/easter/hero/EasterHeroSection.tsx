@@ -1,14 +1,23 @@
+"use client";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
-import { PageSection } from "../../shared/PageSection";
-import { EasterCertificate } from "./confirmCertificate/EasterCertificate";
-import { IconBigEgg } from "./icons/IconBigEgg";
-import { IconGlaze } from "./icons/IconGlaze";
-import { IconSmallEgg } from "./icons/IconSmallEgg";
-import { IconWillows } from "./icons/IconWillows";
+import { PageSection } from "../../../shared/PageSection";
+import { EasterCertificate } from "../confirmCertificate/EasterCertificate";
+import { IconGlaze } from "../icons/IconGlaze";
+import { EggsScene } from "./EggsScene";
 
 export const EasterHeroSection = () => {
     const getTranslation = useTranslations("EasterEvent");
+    const [startAnimation, setStartAnimation] = useState(false);
+    const [isEggBroken, setIsEggBroken] = useState(false);
+
+    const onStartAnimation = () => setStartAnimation(true);
+    const onEndAnimation = () => setStartAnimation(false);
+
+    const onBrokenEgg = () => setIsEggBroken(true);
+    const onFixEgg = () => setIsEggBroken(false);
+
     return (
         <div className="min-h-[calc(100dvh_-_78px)] flex flex-col pc:min-h-dvh pc:mb-[100px]">
             <IconGlaze className="w-full h-auto mb-2 tab:mb-[-20px] pc:mb-[-6%]  shrink-0 text-easterGlaze" />
@@ -19,19 +28,22 @@ export const EasterHeroSection = () => {
                 <div className=" flex flex-col pc:flex-row pc:justify-between">
                     <div className=" grow shrink relative flex items-center justify-center mb-[clamp(28px,_6dvh,_56px)] tab:mb-[clamp(80px,_6dvh,_120px)] pc:mb-[clamp(50px,_6dvh,_80px)] pc:grow-0">
                         <div className="max-w-[80%] h-full aspect-[140/127] mx-auto tab:max-w-[550px] pc:max-w-none pc:max-h-[500px]">
-                            <div className="relative w-full h-full inline-flex items-end justify-center pc:ml-[9%]">
-                                <IconBigEgg className="h-full w-auto max-w-[80%] max-h-auto" />
-                                <IconSmallEgg className="h-[55%] w-auto max-w-[35%] max-h-auto ml-[-15px] tab:ml-[-25px]" />
-
-                                <IconWillows className="absolute bottom-0 left-0 w-[130%] h-auto translate-x-[-13%] translate-y-[20%]" />
-                            </div>
+                            <EggsScene
+                                startAnimation={startAnimation}
+                                onEndAnimation={onEndAnimation}
+                                onBrokenEgg={onBrokenEgg}
+                                isEggBroken={isEggBroken}
+                            />
                         </div>
                     </div>
                     <div className="shrink-0 text-center tab:max-w-[444px] tab:mx-auto pc:grow-0 pc:flex pc:flex-col pc:justify-center pc:items-center pc:mr-0 desk:mr-[60px] desk:max-w-[520px]">
                         <p className="mb-[56px] tab:mb-[68px] text-base tab:text-xl28 text-purple-200 dark:text-white-200 desk:text-2xl">
                             {getTranslation("heroText")}
                         </p>
-                        <EasterCertificate />
+                        <EasterCertificate
+                            onStartAnimation={onStartAnimation}
+                            onFixEgg={onFixEgg}
+                        />
                     </div>
                 </div>
             </PageSection>

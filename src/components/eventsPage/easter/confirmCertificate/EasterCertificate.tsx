@@ -6,7 +6,15 @@ import { Button } from "@/src/components/shared/Button";
 
 import { ConfirmEasterCertificate } from "./ConfirmEasterCertificate";
 
-export const EasterCertificate = () => {
+interface EasterCertificateProps {
+    onStartAnimation: () => void;
+    onFixEgg: () => void;
+}
+
+export const EasterCertificate = ({
+    onStartAnimation,
+    onFixEgg,
+}: EasterCertificateProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const getTranslation = useTranslations("EasterEvent");
     const [isDisabled, setIsDisabled] = useState(false);
@@ -39,7 +47,8 @@ export const EasterCertificate = () => {
     }, []);
 
     const onClickGetCertificate = () => {
-        setIsOpen(true);
+        onStartAnimation();
+        setTimeout(() => setIsOpen(true), 4500);
     };
 
     const onCloseModal = () => {
@@ -55,6 +64,7 @@ export const EasterCertificate = () => {
             <ConfirmEasterCertificate
                 isOpen={isOpen}
                 onCloseModal={onCloseModal}
+                onFixEgg={onFixEgg}
             />
         </>
     );

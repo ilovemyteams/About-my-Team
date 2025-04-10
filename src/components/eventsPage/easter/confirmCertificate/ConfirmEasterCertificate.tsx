@@ -7,11 +7,13 @@ import { ConfirmModal } from "./ConfirmModal";
 interface ConfirmEasterCertificateProps {
     isOpen: boolean;
     onCloseModal: () => void;
+    onFixEgg: () => void;
 }
 
 export const ConfirmEasterCertificate = ({
     isOpen,
     onCloseModal,
+    onFixEgg,
 }: ConfirmEasterCertificateProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
@@ -28,6 +30,7 @@ export const ConfirmEasterCertificate = ({
                 onCloseModal={onCloseModal}
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
+                onFixEgg={onFixEgg}
             />
             <AskUsNotificationModal
                 isError={isError}
