@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useEffect, useState } from "react";
 
 import { IconUp } from "../shared/Icons/IconUp";
@@ -26,6 +27,9 @@ export const ScrollToTopButton = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth",
+        });
+        sendGTMEvent({
+            event: "move_up",
         });
     };
     return (

@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
 import { useRouter } from "@/src/i18n/routing";
@@ -10,10 +11,9 @@ export const HeroInfo = () => {
     const router = useRouter();
     const onClickButton = () => {
         router.push(`/events`);
-        //  sendGTMEvent({
-        //      event: "",
-        //      page_location: path,
-        //  });
+        sendGTMEvent({
+            event: "easter_get_100_usd_button",
+        });
     };
 
     return (

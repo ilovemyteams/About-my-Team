@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
 import { useTranslations } from "next-intl";
@@ -47,9 +48,9 @@ export const ConfirmForm = ({ notificationHandler }: FormInModalProps) => {
         };
         try {
             await notificationHandler(onSendData);
-            // sendGTMEvent({
-            //     event: "get_certificate",
-            // });
+            sendGTMEvent({
+                event: "easter_certificate_form_submit",
+            });
         } catch (error) {
             return error;
         }
