@@ -318,7 +318,7 @@
             "landingFormMedia": "Link to social media (Telegram Username, Facebook, LinkedIn, etc.)* ",
             "landingFormComment": "Why would a landing page be useful for you?*",
             "mediaPlaceholder": "for example t.me/Susanna_Salata or @Susanna_Salata",
-            "landingFormTerms": "By clicking “Submit”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
+            "landingFormTerms": "By clicking “Send”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
         }
     },
     "PortfolioPage": {
