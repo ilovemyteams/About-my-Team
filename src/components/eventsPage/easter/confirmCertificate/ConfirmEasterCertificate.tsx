@@ -8,12 +8,14 @@ interface ConfirmEasterCertificateProps {
     isOpen: boolean;
     onCloseModal: () => void;
     onFixEgg: () => void;
+    onEnableBtn: () => void;
 }
 
 export const ConfirmEasterCertificate = ({
     isOpen,
     onCloseModal,
     onFixEgg,
+    onEnableBtn,
 }: ConfirmEasterCertificateProps) => {
     const [isError, setIsError] = useState(false);
     const [isNotificationShawn, setIsNotificationShawn] = useState(false);
@@ -31,6 +33,7 @@ export const ConfirmEasterCertificate = ({
                 setIsError={setIsError}
                 setIsNotificationShawn={setIsNotificationShawn}
                 onFixEgg={onFixEgg}
+                onEnableBtn={onEnableBtn}
             />
             <AskUsNotificationModal
                 isError={isError}

@@ -48,11 +48,16 @@ export const EasterCertificate = ({
 
     const onClickGetCertificate = () => {
         onStartAnimation();
+        setIsDisabled(true);
         setTimeout(() => setIsOpen(true), 4500);
     };
 
     const onCloseModal = () => {
         setIsOpen(false);
+    };
+
+    const onEnableBtn = () => {
+        setIsDisabled(false);
     };
     return (
         <>
@@ -65,6 +70,7 @@ export const EasterCertificate = ({
                 isOpen={isOpen}
                 onCloseModal={onCloseModal}
                 onFixEgg={onFixEgg}
+                onEnableBtn={onEnableBtn}
             />
         </>
     );

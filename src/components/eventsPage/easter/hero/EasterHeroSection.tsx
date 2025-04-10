@@ -12,14 +12,16 @@ export const EasterHeroSection = () => {
     const [startAnimation, setStartAnimation] = useState(false);
     const [isEggBroken, setIsEggBroken] = useState(false);
 
-    const onStartAnimation = () => setStartAnimation(true);
+    const onStartAnimation = () => {
+        setStartAnimation(true);
+    };
     const onEndAnimation = () => setStartAnimation(false);
 
     const onBrokenEgg = () => setIsEggBroken(true);
     const onFixEgg = () => setIsEggBroken(false);
 
     return (
-        <div className="min-h-[calc(100dvh_-_78px)] flex flex-col pc:min-h-dvh pc:mb-[100px]">
+        <div className="min-h-[calc(100vh_-_78px)] flex flex-col pc:min-h-dvh pc:mb-[100px]">
             <IconGlaze className="w-full h-auto mb-2 tab:mb-[-20px] pc:mb-[-6%]  shrink-0 text-easterGlaze" />
             <PageSection className="h-full grid grid-rows-[auto,1fr]  grow shrink pb-[80px] tab:pb-[100px] pc:pb-0 ">
                 <h1 className="text-center font-caviar font-bold text-3xl28 tab:text-6xlt pc:text-7xl desk:text-9xl text-purple-200 dark:text-white-100 mb-4 tab:mb-[48px] desk:mb-[56px] pc:text-left">

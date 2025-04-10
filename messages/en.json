@@ -171,7 +171,7 @@
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields are required to be filled in",
-        "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
+        "informedAgreement": "By clicking the “Send” button, you agree to the     ",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send",
         "questionLabel": "Your question*",
@@ -318,7 +318,7 @@
             "landingFormMedia": "Link to social media (Telegram Username, Facebook, LinkedIn, etc.)* ",
             "landingFormComment": "Why would a landing page be useful for you?*",
             "mediaPlaceholder": "for example t.me/Susanna_Salata or @Susanna_Salata",
-            "landingFormTerms": "By clicking “Submit”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
+            "landingFormTerms": "By clicking “Send”, you agree to the <policyLink>Personal Data Processing Policy</policyLink> and the <rules>Landing Page Giveaway Rules</rules>."
         }
     },
     "PortfolioPage": {
