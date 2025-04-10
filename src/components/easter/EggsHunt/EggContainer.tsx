@@ -24,8 +24,8 @@ const getRandomPosition = (
     let tries = 0;
 
     do {
-        x = Math.random() * 90;
-        y = Math.random() * 90;
+        x = Math.random() * 80;
+        y = Math.random() * 80;
         isOverlapping = existingEggs.some(
             egg => Math.abs(egg.x - x) < 10 && Math.abs(egg.y - y) < 10
         );
