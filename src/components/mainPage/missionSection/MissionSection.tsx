@@ -1,10 +1,10 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
-// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
 import { BenefitsList } from "./Benefits/BenefitsList";
@@ -20,12 +20,13 @@ export const MissionSection = () => {
 
     const handleButtonClick = () => {
         router.push(`/${locale}/about`);
+        sendGTMEvent({
+            event: "learn_more_about_us",
+        });
     };
 
     return (
         <Section id="aboutus" className="relative tab:min-h-[505px]">
-            {/* <EggContainer count={2} /> */}
-
             <div ref={ref}>
                 <MissionTitle />
                 <div className="flex justify-around items-center">

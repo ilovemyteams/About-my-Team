@@ -1,10 +1,10 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
 
-// import { EggContainer } from "../../easter/EggsHunt/EggContainer";
 import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
@@ -22,10 +22,12 @@ export const QaSection = () => {
 
     const handleButtonClick = () => {
         router.push(`/${locale}/faq`);
+        sendGTMEvent({
+            event: "learn_more_faq",
+        });
     };
     return (
         <Section id="faq" className="relative">
-            {/* <EggContainer count={3} /> */}
             <div ref={ref}>
                 <div className="flex">
                     <TitleQA />

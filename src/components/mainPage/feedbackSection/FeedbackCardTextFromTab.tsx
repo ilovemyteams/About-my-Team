@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { addProtocol } from "@/src/utils/addProtocol";
+import { addProtocol, removeProtocol } from "@/src/utils/addProtocol";
 
 import { IconQuote } from "../../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
@@ -27,7 +27,7 @@ export const FeedbackCardTextFromTab = ({
                 />
                 <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[175px]">
                     {!feedbackLink && (
-                        <p className="tab:text-base pc:text-xl">
+                        <p className="tab:text-base pc:text-xl overflow-hidden line-clamp-[7] break-words">
                             {feedbackText}
                         </p>
                     )}
@@ -77,7 +77,7 @@ export const FeedbackCardTextFromTab = ({
                          dark:pc:focus:text-red pc:focus:text-redLight dark:pc:focus:border-red pc:focus:border-redLight font-caviar text-lg outline-none
                          transition-color ease-out duration-300"
                     >
-                        {siteLink}
+                        {removeProtocol(siteLink)}
                     </a>
                 </div>
             </div>

@@ -1,9 +1,12 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
+import { Basket } from "../../easter/Basket";
 import { BurgerMenuButton } from "../BurgerMenuButton";
 import { LogoLink } from "../LogoLink";
 import { MobileTabletHeaderMenu } from "./MobileTabletHeaderMenu";
@@ -13,12 +16,20 @@ export const MobileTabletHeader = () => {
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
+    const pathname = usePathname();
 
     useEffect(() => {
         isHeaderMenuOpened
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
+
+    const handleClick = () => {
+        setIsHeaderMenuOpened(false);
+        sendGTMEvent({
+            event: "easter_basket_heder",
+        });
+    };
     return (
         <div
             className={`pc:hidden absolute top-0 left-0 w-[100vw] h-[80px] dark:bg-none dark:bg-purple-400 bg-headerGradientLight 
@@ -32,6 +43,11 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
+                        {!pathname.includes("events") && (
+                            <div onClick={handleClick}>
+                                <Basket />
+                            </div>
+                        )}
 
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
