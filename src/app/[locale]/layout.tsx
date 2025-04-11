@@ -13,6 +13,7 @@ import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
 import { EasterCounterProvider } from "@/src/utils/EasterCounterContext";
+import { EggsProvider } from "@/src/utils/EggsContext";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
@@ -118,29 +119,31 @@ export default function LocaleLayout({
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <EasterCounterProvider>
-                        <body
-                            className={`${caviar.variable} ${geist.variable} ${intro.variable} ${segoe.variable} ${comfortaa.variable} relative z-[1] overflow-x-visible
+                        <EggsProvider>
+                            <body
+                                className={`${caviar.variable} ${geist.variable} ${intro.variable} ${segoe.variable} ${comfortaa.variable} relative z-[1] overflow-x-visible
                    dark:bg-purple-400 dark:text-grey bg-white-100 text-greyLight`}
-                        >
-                            <Providers>
-                                <GreetingPortal />
-                                <BackgroundImages />
-                                <div className="min-h-screen flex flex-col">
-                                    <Header />
-                                    <main className="flex-auto min-h-full">
-                                        {modal}
-                                        <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
-                                            <BackgroundFigures />
-                                            {children}
-                                        </div>
-                                    </main>
-                                    <Footer />
-                                </div>
+                            >
+                                <Providers>
+                                    <GreetingPortal />
+                                    <BackgroundImages />
+                                    <div className="min-h-screen flex flex-col">
+                                        <Header />
+                                        <main className="flex-auto min-h-full">
+                                            {modal}
+                                            <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
+                                                <BackgroundFigures />
+                                                {children}
+                                            </div>
+                                        </main>
+                                        <Footer />
+                                    </div>
 
-                                <ScrollToTopButton />
-                                <CookiesComponent />
-                            </Providers>
-                        </body>
+                                    <ScrollToTopButton />
+                                    <CookiesComponent />
+                                </Providers>
+                            </body>
+                        </EggsProvider>
                     </EasterCounterProvider>
                 </PreviousURLProvider>
             </NextIntlClientProvider>
