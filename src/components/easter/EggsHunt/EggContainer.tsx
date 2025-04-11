@@ -25,7 +25,7 @@ export const EggContainer = ({ count }: EggContainerProps) => {
         if (totalFoundEggs === 0) {
             generateEggs(count, true);
         }
-    }, [totalFoundEggs]);
+    }, [totalFoundEggs, count, generateEggs]);
 
     const handleClickEgg = (id: number) => {
         clickEgg(id);
