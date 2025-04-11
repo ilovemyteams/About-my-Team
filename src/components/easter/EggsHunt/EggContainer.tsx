@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useEggs } from "@/src/utils/EggsContext";
-import { SomeEgg } from "./SomeEgg";
+
 import { useEasterCounter } from "@/src/utils/EasterCounterContext";
+import { useEggs } from "@/src/utils/EggsContext";
+
+import { SomeEgg } from "./SomeEgg";
 
 interface EggContainerProps {
     count: number;
@@ -36,9 +38,11 @@ export const EggContainer = ({ count }: EggContainerProps) => {
             {eggs.map(
                 egg =>
                     !egg.isClicked && (
-                        <div onClick={() => handleClickEgg(egg.id)}>
+                        <div
+                            key={egg.id}
+                            onClick={() => handleClickEgg(egg.id)}
+                        >
                             <SomeEgg
-                                key={egg.id}
                                 x={egg.x}
                                 y={egg.y}
                                 kindOfEgg={egg.kindOfEgg}
