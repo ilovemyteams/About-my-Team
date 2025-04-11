@@ -1,5 +1,6 @@
 "use client";
 
+import { sendGTMEvent } from "@next/third-parties/google";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -24,6 +25,13 @@ export const DesktopHeader = () => {
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
 
+    const handleClick = () => {
+        setIsHeaderMenuOpened(false);
+        sendGTMEvent({
+            event: "easter_basket_heder",
+        });
+    };
+
     return (
         <div
             className={`hidden pc:block absolute top-0 left-0 w-[80px] deskxl:w-[120px] h-[100vh] dark:bg-purple-400 bg-white-100 
@@ -45,7 +53,7 @@ export const DesktopHeader = () => {
                         {!pathname.includes("events") && (
                             <div
                                 className=" absolute pc:bottom-[-10vh] desk:bottom-[-20vh]"
-                                onClick={() => setIsHeaderMenuOpened(false)}
+                                onClick={handleClick}
                             >
                                 <Basket />
                             </div>

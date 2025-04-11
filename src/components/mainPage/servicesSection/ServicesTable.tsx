@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -39,6 +40,9 @@ export const ServicesTable = () => {
     const router = useRouter();
     const handleButtonClick = () => {
         router.push(`/${locale}/services`);
+        sendGTMEvent({
+            event: "learn_more_services",
+        });
     };
 
     return (

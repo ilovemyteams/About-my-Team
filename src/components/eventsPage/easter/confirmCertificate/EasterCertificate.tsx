@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
@@ -48,6 +49,9 @@ export const EasterCertificate = ({
 
     const onClickGetCertificate = () => {
         onStartAnimation();
+        sendGTMEvent({
+            event: "easter_get_certificate_button",
+        });
         setIsDisabled(true);
         setTimeout(() => setIsOpen(true), 4500);
     };

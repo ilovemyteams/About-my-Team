@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -22,6 +23,9 @@ export const QaSection = () => {
 
     const handleButtonClick = () => {
         router.push(`/${locale}/faq`);
+        sendGTMEvent({
+            event: "learn_more_faq",
+        });
     };
     return (
         <Section id="faq" className="relative">

@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import axios from "axios";
 import { Form, Formik } from "formik";
 import { useLocale, useTranslations } from "next-intl";
@@ -52,9 +53,9 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
         };
         try {
             await notificationHandler(onSendData);
-            // sendGTMEvent({
-            //     event: "get_certificate",
-            // });
+            sendGTMEvent({
+                event: "easter_landing_submit",
+            });
         } catch (error) {
             return error;
         }
@@ -159,6 +160,11 @@ export const LandingForm = ({ notificationHandler }: FormInModalProps) => {
                                     rules: chunk => (
                                         <Link
                                             href="/events#condition"
+                                            onClick={() =>
+                                                sendGTMEvent({
+                                                    event: "easter_read_rules",
+                                                })
+                                            }
                                             target="_blank"
                                             className="text-purple-130 dark:text-purple-50 "
                                         >

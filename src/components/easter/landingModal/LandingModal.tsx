@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -35,6 +36,9 @@ export const LandingModal = () => {
     useEffect(() => {
         if (totalFoundEggs === 20) {
             setIsModalOpen(true);
+            sendGTMEvent({
+                event: "easter_20_eggs_modal",
+            });
             setIsCounterVisible(false);
         }
     }, [totalFoundEggs, setIsCounterVisible]);

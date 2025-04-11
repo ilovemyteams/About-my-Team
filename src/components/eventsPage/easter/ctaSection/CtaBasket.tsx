@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -15,6 +16,11 @@ export const CtaBasket = () => {
         <div className="relative pr-[5%] tab:pr-[10%]">
             <Link
                 href="/"
+                onClick={() =>
+                    sendGTMEvent({
+                        event: "easter_basket_events_page",
+                    })
+                }
                 className="relative w-[100px]  aspect-[50/78] pc:w-[120px] desk:w-[150px] flex justify-center mx-auto"
             >
                 <Image

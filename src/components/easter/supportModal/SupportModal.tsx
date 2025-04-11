@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -19,6 +20,9 @@ export const SupportModal = () => {
     useEffect(() => {
         if (totalFoundEggs === 15) {
             setIsModalOpen(true);
+            sendGTMEvent({
+                event: "easter_15_eggs_modal",
+            });
         }
     }, [totalFoundEggs]);
 

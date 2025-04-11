@@ -1,4 +1,5 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
@@ -20,6 +21,9 @@ export const MissionSection = () => {
 
     const handleButtonClick = () => {
         router.push(`/${locale}/about`);
+        sendGTMEvent({
+            event: "learn_more_about_us",
+        });
     };
 
     return (
