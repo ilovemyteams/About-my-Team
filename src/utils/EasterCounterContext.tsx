@@ -1,12 +1,5 @@
 "use client";
-import { usePathname } from "next/navigation";
-import {
-    createContext,
-    ReactNode,
-    useContext,
-    useEffect,
-    useState,
-} from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
 interface EasterCounterContextType {
     totalFoundEggs: number;
@@ -26,14 +19,10 @@ export const EasterCounterProvider = ({
 }) => {
     const [totalFoundEggs, setTotalFoundEggs] = useState<number>(0);
     const [isCounterVisible, setIsCounterVisible] = useState<boolean>(true);
-    const pathname = usePathname();
 
     const incrementEggs = () => {
         setTotalFoundEggs(prev => prev + 1);
     };
-    useEffect(() => {
-        setTotalFoundEggs(0);
-    }, [pathname]);
 
     return (
         <EasterCounterContext.Provider
