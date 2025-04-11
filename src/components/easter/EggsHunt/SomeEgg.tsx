@@ -13,6 +13,7 @@ interface SomeEggProps {
     x: number;
     y: number;
     kindOfEgg: number;
+    onClick: () => void;
 }
 
 const eggIcons = [
@@ -23,7 +24,7 @@ const eggIcons = [
     IconEggOrange,
 ];
 
-export const SomeEgg = ({ x, y, kindOfEgg }: SomeEggProps) => {
+export const SomeEgg = ({ x, y, kindOfEgg, onClick }: SomeEggProps) => {
     const [isClicked, setIsClicked] = useState(false);
     const EggIcon = eggIcons[kindOfEgg - 1];
 
@@ -32,6 +33,9 @@ export const SomeEgg = ({ x, y, kindOfEgg }: SomeEggProps) => {
     const handleClick = () => {
         incrementEggs();
         setIsClicked(true);
+        setTimeout(() => {
+            onClick(); // викликаємо функцію кліку
+        }, 500);
     };
 
     return (

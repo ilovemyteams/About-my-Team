@@ -38,16 +38,13 @@ export const EggContainer = ({ count }: EggContainerProps) => {
             {eggs.map(
                 egg =>
                     !egg.isClicked && (
-                        <div
+                        <SomeEgg
+                            x={egg.x}
+                            y={egg.y}
+                            kindOfEgg={egg.kindOfEgg}
                             key={egg.id}
                             onClick={() => handleClickEgg(egg.id)}
-                        >
-                            <SomeEgg
-                                x={egg.x}
-                                y={egg.y}
-                                kindOfEgg={egg.kindOfEgg}
-                            />
-                        </div>
+                        />
                     )
             )}
         </>
