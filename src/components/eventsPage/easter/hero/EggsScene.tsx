@@ -76,7 +76,7 @@ export const EggsScene = ({
 
     return (
         <div
-            className="relative w-full h-full inline-flex items-end justify-center pc:ml-[9%]"
+            className="relative z-[1] w-full h-full inline-flex items-end justify-center pc:ml-[9%]"
             ref={scope}
         >
             <IconBigEgg
