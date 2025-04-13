@@ -85,7 +85,7 @@ export const EggsScene = ({
             />
 
             <IconSmallEgg
-                className="h-[55%] w-auto max-w-[35%] max-h-auto ml-[-15px] tab:ml-[-25px] text-white-100 dark:text-purple-400"
+                className="h-[55%] w-auto max-w-[35%] max-h-auto ml-[-15px] tab:ml-[-25px] dark:text-white-100 text-purple-400"
                 ref={smallEggRef}
             />
 
