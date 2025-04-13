@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { WriteUs } from "../../shared/WriteUs/WriteUs";
 
 export const HeroInfo = () => {

@@ -1,6 +1,5 @@
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
-import { EggContainer } from "@/src/components/easter/EggsHunt/EggContainer";
 import { FeedbackSection } from "@/src/components/mainPage/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/mainPage/heroSection/HeroSection";
 import { MissionSection } from "@/src/components/mainPage/missionSection/MissionSection";
@@ -15,21 +14,18 @@ export default function Home() {
         <>
             <BackgroundFiguresMain />
             <HeroSection />
-            <div className="relative">
-                <EggContainer count={20} />
-                <MissionSection />
-                <PortfolioSection />
-                <FeedbackSection />
-                <WriteUsSection text="titleIWant" eventGTM="order_form_start" />
-                <ServicesSection />
-                <OurTeamSection />
-                <StagesSection />
-                <QaSection />
-                <WriteUsSection
-                    text="titleAreYouReady"
-                    eventGTM="order_form_start"
-                />
-            </div>
+            <MissionSection />
+            <PortfolioSection />
+            <FeedbackSection />
+            <WriteUsSection text="titleIWant" eventGTM="order_form_start" />
+            <ServicesSection />
+            <OurTeamSection />
+            <StagesSection />
+            <QaSection />
+            <WriteUsSection
+                text="titleAreYouReady"
+                eventGTM="order_form_start"
+            />
         </>
     );
 }
