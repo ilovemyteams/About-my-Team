@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import { EggsScene } from "../easter/hero/EggsScene";
+import { EggsScene } from "../easter/EggsScene";
 import { ThumbnailBg } from "./ThumbnailBG";
 
 const ThumbnailEaster = () => {
