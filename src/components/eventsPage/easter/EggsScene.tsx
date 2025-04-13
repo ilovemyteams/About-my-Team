@@ -1,9 +1,9 @@
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-import { IconBigEgg } from "../icons/IconBigEgg";
-import { IconSmallEgg } from "../icons/IconSmallEgg";
-import { IconWillows } from "../icons/IconWillows";
+import { IconBigEgg } from "./IconBigEgg";
+import { IconSmallEgg } from "./IconSmallEgg";
+import { IconWillows } from "./IconWillows";
 
 interface EggsSceneProps {
     startAnimation: boolean;
