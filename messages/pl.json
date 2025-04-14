@@ -303,25 +303,7 @@
         "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
         "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
         "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
-        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!",
-        "Easter": {
-            "greetingTitle": "Polowanie na jajka",
-            "greetingText": "Znajdź 20 jajek ukrytych na stronie i weź udział w losowaniu <upper>darmowej</upper> strony docelowej.",
-            "greentingCaption": "*Jajka w tym oknie się nie liczą",
-            "greetingBtn": "Chodźmy na polowanie",
-            "supportTitle": "Świetnie Ci idzie!",
-            "supportText": "Znalazłeś już <red>15</red> jajek. <br></br>Zostało tylko kilka kroków do losowania landing page.",
-            "supportBtn": "kontynuuj",
-            "landingTitle": "Tylko 2 kroki do darmowej strony docelowej!",
-            "landingText1": "Wypełnij formularz",
-            "landingText2": "Przyjdź na losowanie 21.04.2025 o 19:00 czasu kijowskiego na żywo",
-            "landingCap": "*Śledź ogłoszenia na stronie <linkSusanna>Susanna Salata</linkSusanna>",
-            "landingFormTitle": "Zostaw swoje dane:",
-            "landingFormMedia": "Linki do sieci społecznościowych (nick w Telegramie, Facebooku, LikedIn itp.)*",
-            "landingFormComment": "Dlaczego landing page może być dla Ciebie przydatny?*",
-            "mediaPlaceholder": "na przykład t.me/Susanna_Salata lub @Susanna_Salata",
-            "landingFormTerms": "Klikając przycisk “Wyślij”, wyrażasz zgodę na <policyLink>Zasady przetwarzania danych osobowych</policyLink> i <rules>Zasady udziału w losowaniu landing page</rules>."
-        }
+        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
     },
     "PortfolioPage": {
         "title": "Nasze <purple>zrealizowane projekty</purple>",
@@ -366,18 +348,5 @@
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
         "allProjects": "Wszystkie projekty"
-    },
-    "EasterEvent": {
-        "heroTitle": "Wesołego Alleluja!",
-        "heroText": "Kochamy kreatywność, a także dobrą atmosferę – dlatego dajemy Ci certyfikat–zniżkę na stworzenie landing page.",
-        "heroBtn": "Odbierz certyfikat",
-        "heroBtnGot": "certyfikat otrzymany",
-        "confirmTitle": "Gratulacje! \nOtrzymałeś certyfikat–zniżkę na rozwój landing page!",
-        "confirmCaption": "*certyfikat jest ważny do \n01.06.2025 r.",
-        "confirmFormText": "Aby aktywować certyfikat, zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą.",
-        "confirmFormCaption": "**Certyfikat–zniżka nie łączy się z innymi promocjami.",
-        "ctaText": "<purple>Niespodzianki</purple> już <purple>czekają</purple>! \nZnajdź wszystkie <purple>20 jajek</purple> i zdobądź szansę na <purple>DARMOWY landing</purple> page!",
-        "ctaBtn": "Naprzód!",
-        "comment": "Komentarz"
     }
 }
