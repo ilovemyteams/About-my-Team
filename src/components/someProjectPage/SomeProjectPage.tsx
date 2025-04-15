@@ -1,11 +1,13 @@
 import { useLocale } from "next-intl";
 
+import { feedbackData } from "@/src/mockedData/feedbackData";
 import { membersData } from "@/src/mockedData/membersData";
 import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
@@ -23,6 +25,9 @@ export const SomeProjectPage = ({
         member.data.projectId.includes(currentProjectSlug)
     );
     const technologies = currentProject.data.technologies;
+    const feedbackCurrent = feedbackData.filter(
+        feedback => feedback.data.slug === currentProjectSlug
+    );
 
     return (
         <>
@@ -32,6 +37,7 @@ export const SomeProjectPage = ({
             {technologies && (
                 <StackSectionProject technologies={technologies} />
             )}
+            {feedbackCurrent && <FeedbackProject feedback={feedbackCurrent} />}
             <MoreCasesSection />
             <WriteUsSection text="titleIWant" />
         </>
