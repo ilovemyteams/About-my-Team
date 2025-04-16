@@ -28,6 +28,7 @@ export const SomeProjectPage = ({
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
     );
+    console.log("🚀 ~ feedbackCurrent:", feedbackCurrent);
 
     return (
         <>
@@ -37,7 +38,9 @@ export const SomeProjectPage = ({
             {technologies && (
                 <StackSectionProject technologies={technologies} />
             )}
-            {feedbackCurrent && <FeedbackProject feedback={feedbackCurrent} />}
+            {feedbackCurrent.length !== 0 && (
+                <FeedbackProject feedback={feedbackCurrent} />
+            )}
             <MoreCasesSection />
             <WriteUsSection text="titleIWant" />
         </>
