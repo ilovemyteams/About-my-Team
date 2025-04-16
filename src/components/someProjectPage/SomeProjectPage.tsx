@@ -28,7 +28,6 @@ export const SomeProjectPage = ({
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
     );
-    console.log("🚀 ~ feedbackCurrent:", feedbackCurrent);
 
     return (
         <>
