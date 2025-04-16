@@ -2386,6 +2386,61 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "stepan-kozurak-project-project-manager",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830870/Stepan_PM_crqljr.jpg",
+            position: "Project Manager",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/stepan-kozurak-a8931a9b",
+                telegram: "https://t.me/StepsKos",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs",
+                "ClickUp",
+                "Trello",
+                "Notion",
+                "SDLC",
+                "User story",
+                "User flow",
+                "BPMN",
+                "Slack",
+                "Discord",
+                "Miro",
+                "Figma",
+                "Lucidchart",
+                "Microsoft Office",
+            ],
+        },
+        ua: {
+            name: "Степан Козурак",
+            about: "Робота - не вовк, ліс - не великий...",
+            services:
+                "Планування та робота з командою; збереження продуктивності членів команди, запобігання вигорянню. Ризик менеджмент та конфліктологія. Продуктова психологія, її вплив на проєктний менеджмент та взаємозв’язок з ринковими потребами.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Stepan Kozurak",
+            about: "Work isn’t a wolf, and the forest isn’t that big...",
+            services:
+                "Team planning and collaboration; maintaining team performance and preventing burnout. Risk management and conflict resolution. Product psychology, its impact on project management, and its alignment with market needs.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Stepan Kozurak",
+            about: "Robota to nie wilk, las nie jest taki wielki...",
+            services:
+                "Planowanie i współpraca zespołowa; utrzymanie wydajności członków zespołu oraz zapobieganie wypaleniu zawodowemu. Zarządzanie ryzykiem i rozwiązywanie konfliktów. Psychologia produktu, jej wpływ na zarządzanie projektami oraz powiązanie z potrzebami rynkowymi.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:
