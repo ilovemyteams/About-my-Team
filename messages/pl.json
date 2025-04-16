@@ -7,7 +7,8 @@
     "Hero": {
         "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
         "portfolioLink": "Realizacje",
-        "project": "Projekt"
+        "project": "Projekt",
+        "btn": "odbierz 100 $"
     },
 
     "Portfolio": {
@@ -167,7 +168,7 @@
         "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "t.me/Susanna_Salata lub @Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -189,6 +190,8 @@
         "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
         "russianEmails": "Nie współpracujemy z Moskalami",
         "messageMinMaxSymbols": "Pole musi zawierać od 10 do 300 znaków",
+        "messageMinMax100Symbols": "Pole musi zawierać od 5 do 100 znaków",
+        "messageMax100Symbols": "Pole może zawierać do 100 znaków",
         "wrongLinkedin": "Nieprawidłowy adres linkedin",
         "wrongInstagram": "Nieprawidłowy adres instagram",
         "wrongFacebook": "Nieprawidłowy adres facebook",

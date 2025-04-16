@@ -194,6 +194,7 @@ const config: Config = {
                     lineHeight: "104px",
                 },
             ],
+            "9xl": ["88px", { lineHeight: "88px" }],
         },
         extend: {
             variants: {
@@ -227,6 +228,7 @@ const config: Config = {
                 caviar: ["var(--font-caviar)"],
                 intro: ["var(--font-intro)"],
                 segoe: ["var(--font-segoe)"],
+                comfortaa: ["var(--font-comfortaa)"],
             },
             colors: {
                 purple: {
@@ -254,6 +256,7 @@ const config: Config = {
                 backdrop: "#030303",
                 error: "#D60000",
                 textHighlight: "#30253E",
+                easterGlaze: "#FFDDEC",
             },
             fill: {
                 stroke: "#5F3F87",

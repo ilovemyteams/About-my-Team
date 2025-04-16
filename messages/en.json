@@ -6,7 +6,8 @@
     "Hero": {
         "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
-        "project": "Project"
+        "project": "Project",
+        "btn": "get 100 $"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
@@ -164,13 +165,13 @@
         "messageNotReqLabel": "Your message",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "t.me/Susanna_Salata or @Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
-        "requiredField": "*Fields required to be filled in",
-        "informedAgreement": "By clicking the “Submit” button, you agree to the     ",
+        "requiredField": "*Fields are required to be filled in",
+        "informedAgreement": "By clicking the “Send” button, you agree to the     ",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send",
         "questionLabel": "Your question*",
@@ -186,6 +187,8 @@
         "wrongEmail": "Invalid E-mail format",
         "russianEmails": "We do not work with Muscovites",
         "messageMinMaxSymbols": "The field must contain from 10 to 300 characters",
+        "messageMinMax100Symbols": "The field must contain from 5 to 100 characters",
+        "messageMax100Symbols": "The field can contain to 100 characters",
         "wrongLinkedin": "Incorrect linkedin address",
         "wrongInstagram": "Incorrect instagram address",
         "wrongFacebook": "Incorrect facebook address",

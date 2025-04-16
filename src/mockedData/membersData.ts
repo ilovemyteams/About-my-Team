@@ -43,6 +43,7 @@ export const membersData: MemberDataItemType[] = [
                 "batatfarm-com",
                 "theatermag-com-ua",
                 "alex-chudov",
+                "viktoriia-zabara",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
@@ -54,6 +55,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
                 "choodov.com",
+                "viktoriia-zabara.netlify.app",
             ],
             pricePerHour: "24",
             socialLinks: {
@@ -1316,12 +1318,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-shevchenko-business-analyst",
-            projectId: ["batatfarm-com"],
+            projectId: ["batatfarm-com", "ilovemyteam-online"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
-            projectsExperience: ["batatfarm.com"],
+            projectsExperience: ["batatfarm.com", "ilovemyteam.online"],
             pricePerHour: "7",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/irishashevchenko",
@@ -2214,7 +2216,7 @@ export const membersData: MemberDataItemType[] = [
             tools: [
                 "Postman",
                 "Swagger",
-                "DevTools",
+                "Chrome DevTools",
                 "SQL",
                 "Git",
                 "VSCode",
@@ -2245,6 +2247,54 @@ export const membersData: MemberDataItemType[] = [
             about: "To, czego nie znajdziesz, ja znajdę.",
             services:
                 "Wykonuję testowanie manualne: funkcjonalne, niefunkcjonalne, UI/UX, API, baz danych i wydajnościowe. Analizuję wymagania, badam produkt i stosuję różne metody testowania. Tworzę dokumentację testową i przygotowuję raporty o defektach. ",
+            team: "i love my team",
+        },
+    },
+    {
+        data: {
+            id: "oksana-arpul-qa-engineer",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744208424/Oksana_QA_f60hln.jpg",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/oksana-arpul/",
+                telegram: "https://t.me/ArpulOksana",
+            },
+            tools: [
+                "Postman",
+                "Swagger",
+                "Chrome DevTools",
+                "SQL",
+                "Jira",
+                "Trello",
+                "TestRail",
+                "Figma",
+                "HTML/CSS",
+            ],
+        },
+        ua: {
+            name: "Оксана Арпуль",
+            about: "Якість - це ключ до впевненості в продукті",
+            services:
+                "Займаюся ручним тестуванням різних типів (функціональне, нефункціональне, UI/UX, API, бази даних, продуктивність), аналізую вимоги, досліджую поведінку продукту, використовую різні підходи до тестування та створюю тестову документацію (test cases, checklists, bug reports).",
+            team: "i love my team",
+        },
+        en: {
+            name: "Oksana Arpul",
+            about: "Quality is the key to confidence in a product",
+            services:
+                "I perform manual testing of various types (functional, non-functional, UI/UX, API, database, and performance), analyze requirements, explore product behavior, apply different testing approaches, and create test documentation (test cases, checklists, bug reports).",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Oksana Arpul",
+            about: "Jakość to klucz do zaufania do produktu",
+            services:
+                "Zajmuję się testowaniem manualnym różnych typów (funkcjonalne, niefunkcjonalne, UI/UX, API, bazy danych i wydajność), analizuję wymagania, badam zachowanie produktu, stosuję różne podejścia do testowania i tworzę dokumentację testową (przypadki testowe, listy kontrolne, raporty o błędach).",
             team: "i love my team",
         },
     },

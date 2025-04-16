@@ -8,6 +8,7 @@ interface CustomFieldProps {
     placeholder: string;
     isError: boolean;
     status: string;
+    className?: string;
     setStatus: (status: string | null) => void;
 }
 
@@ -20,6 +21,7 @@ export const CustomField = ({
     isError,
     status,
     setStatus,
+    className,
 }: CustomFieldProps) => {
     const onFocusField = () => {
         setStatus(name);
@@ -49,7 +51,7 @@ export const CustomField = ({
                 autoComplete="on"
                 placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
-                className={`block custom-autofill-default appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out`}
+                className={`block custom-autofill-default appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out ${className}`}
             ></Field>
 
             <ErrorMessage

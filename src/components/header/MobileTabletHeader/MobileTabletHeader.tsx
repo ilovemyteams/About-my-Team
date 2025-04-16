@@ -19,6 +19,7 @@ export const MobileTabletHeader = () => {
             ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
             : (document.body.style.overflow = "");
     }, [isHeaderMenuOpened]);
+
     return (
         <div
             className={`pc:hidden absolute top-0 left-0 w-[100vw] h-[80px] dark:bg-none dark:bg-purple-400 bg-headerGradientLight 
@@ -32,7 +33,6 @@ export const MobileTabletHeader = () => {
                         <LogoLink
                             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
                         />
-
                         <BurgerMenuButton
                             isHeaderMenuOpened={isHeaderMenuOpened}
                             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
