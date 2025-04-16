@@ -15,6 +15,33 @@ type PastEventsData = EventData[];
 
 export const pastEventsData: PastEventsData = [
     {
+        event: "easter2025",
+        ua: {
+            title: "Великодній івент: знижки та безкоштовний лендінг!",
+            description: [
+                `До цього світлого дня на нашому сайті ми запустили дві активності: на сторінці подій можна було отримати сертифікат-знижку номіналом $100 на створення індивідуального лендінгу, а на головній сторінці користувачів чекала інтерактивна гра «Знайди 20 яєць — виграй безкоштовний лендінг!».`,
+                "У розіграші, що відбувся 21 квітня, переможцем стала/став TODOwho! Вітаємо щасливчика/щасливицю та дякуємо всім за участь!",
+            ],
+            date: "20.04.2025",
+        },
+        pl: {
+            title: "Wielkanocne wydarzenie: zniżki i darmowy landing page!",
+            description: [
+                "Z okazji tych radosnych świąt uruchomiliśmy na naszej stronie dwie aktywności: na stronie wydarzeń można było otrzymać kupon zniżkowy o wartości 100 USD na stworzenie indywidualnego landing page’a, na stronie głównej użytkownicy mogli zagrać w interaktywną grę „Znajdź 20 jajek — wygraj darmowy landing page!”",
+                `W losowaniu, które odbyło się 21 kwietnia, zwycięzcą została/został TODOwho! Gratulujemy szczęśliwemu zwycięzcy i dziękujemy wszystkim za udział!`,
+            ],
+            date: "20.04.2025",
+        },
+        en: {
+            title: "Easter Event: Discounts & a Free Landing Page!",
+            description: [
+                `To celebrate this joyful occasion, we launched two special activities on our website: On the Events page, users could grab a $100 discount certificate for a custom landing page. Meanwhile, on the Home page, visitors joined a fun interactive game — "Find 20 Eggs – Win a Free Landing Page!"`,
+                `The prize draw took place on April 21, and the lucky winner was TODOwho! Congratulations to the winner, and a big thank you to everyone who took part!`,
+            ],
+            date: "20.04.2025",
+        },
+    },
+    {
         event: "valentine2025",
         ua: {
             title: "День Святого Валентина ",
