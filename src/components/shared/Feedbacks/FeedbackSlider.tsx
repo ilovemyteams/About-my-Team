@@ -11,9 +11,9 @@ import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../../shared/SliderComponents/CarouselButtons";
-import { useDotButton } from "../../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+} from "../SliderComponents/CarouselButtons";
+import { useDotButton } from "../SliderComponents/SliderDots";
+import { SliderDotsBox } from "../SliderComponents/SliderDotsBox";
 import { FeedbackCard } from "./FeedbackCard";
 
 type FeedbackSliderProps = {

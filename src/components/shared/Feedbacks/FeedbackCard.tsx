@@ -1,25 +1,17 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import {
+    DataType,
+    FeedbackDataItemTranslation,
+} from "@/src/mockedData/feedbackData";
 import { addProtocol } from "@/src/utils/addProtocol";
 
 import { IconGoToSite } from "../../shared/Icons/IconGoToSite";
 
 export interface FeedbackCardItemProps {
-    data: {
-        id: string;
-        image?: string;
-        video?: string;
-        siteLink: string;
-        feedbackLink?: string;
-    };
-    localizationData: {
-        siteName: string;
-        siteView: string;
-        reviewer: string;
-        reviewerRole: string;
-        feedbackText: string;
-    };
+    data: DataType;
+    localizationData: FeedbackDataItemTranslation;
 }
 
 export const FeedbackCard = ({
