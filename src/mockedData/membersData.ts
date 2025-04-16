@@ -1847,7 +1847,7 @@ export const membersData: MemberDataItemType[] = [
             id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["theatermag-com-ua"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/Svitlana_Krokhmalna_rkr43h.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744802867/Svitlana_Krokhmalna_wqiqqt.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
@@ -2255,7 +2255,7 @@ export const membersData: MemberDataItemType[] = [
             id: "oksana-arpul-qa-engineer",
             projectId: ["ilovemyteam-online"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744208424/Oksana_QA_f60hln.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744795126/Oksana_QA_lnllhm.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
