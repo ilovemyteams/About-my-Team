@@ -1847,7 +1847,7 @@ export const membersData: MemberDataItemType[] = [
             id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["theatermag-com-ua"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/Svitlana_Krokhmalna_rkr43h.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744802867/Svitlana_Krokhmalna_wqiqqt.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
