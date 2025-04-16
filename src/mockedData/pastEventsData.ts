@@ -25,7 +25,7 @@ export const pastEventsData: PastEventsData = [
             date: "20.04.2025",
         },
         pl: {
-            title: "Easter Event: Discounts & a Free Landing Page!",
+            title: "Wielkanocne wydarzenie: zniżki i darmowy landing page!",
             description: [
                 "Z okazji tych radosnych świąt uruchomiliśmy na naszej stronie dwie aktywności: na stronie wydarzeń można było otrzymać kupon zniżkowy o wartości 100 USD na stworzenie indywidualnego landing page’a, na stronie głównej użytkownicy mogli zagrać w interaktywną grę „Znajdź 20 jajek — wygraj darmowy landing page!”",
                 `W losowaniu, które odbyło się 21 kwietnia, zwycięzcą została/został TODOwho! Gratulujemy szczęśliwemu zwycięzcy i dziękujemy wszystkim za udział!`,
