@@ -2,8 +2,8 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { FeedbackDataItemType } from "@/src/mockedData/feedbackData";
 
-import { FeedbackSlider } from "../../mainPage/feedbackSection/FeedbackSlider";
-import { FeedbackSliderFromTab } from "../../mainPage/feedbackSection/FeedbackSliderFromTab";
+import { FeedbackSlider } from "../../shared/Feedbacks/FeedbackSlider";
+import { FeedbackSliderFromTab } from "../../shared/Feedbacks/FeedbackSliderFromTab";
 import { Section } from "../../shared/Section";
 
 export const FeedbackProject = ({
