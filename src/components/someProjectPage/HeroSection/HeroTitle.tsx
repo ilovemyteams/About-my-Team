@@ -4,7 +4,7 @@ export const HeroTitle = ({ title }: { title: string }) => {
     const highlightedTitle = highlightPurple(title);
 
     return (
-        <h1 className="font-caviar text-3xl28 font-bold text-purple-200 dark:text-grey mb-6">
+        <h1 className="font-caviar text-3xl28 tab:text-4xl font-bold text-purple-200 dark:text-grey mb-6 tab:mb-7 pc:text-6xl pc:mb-[68px] desk:text-7xl">
             {highlightedTitle.map((part, index) => {
                 if (part.decoration === "purple") {
                     return (
