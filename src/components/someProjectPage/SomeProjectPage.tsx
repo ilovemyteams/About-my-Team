@@ -7,6 +7,7 @@ import { LocaleType } from "@/types/LocaleType";
 
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
@@ -28,11 +29,13 @@ export const SomeProjectPage = ({
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
     );
+    const decision = currentProject[locale as LocaleType].decision;
 
     return (
         <>
             <ProjectHeader title={name} />
             <UnderConstruction />
+            {decision && <DecisionSection decision={decision} />}
             <TeamSectionProject members={members} />
             {technologies && (
                 <StackSectionProject technologies={technologies} />
