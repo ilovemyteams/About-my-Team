@@ -11,6 +11,7 @@ type PortfolioDataItemTranslation = {
         launch: string;
         support: string;
     };
+    decision?: SliderSectionType;
     content?: (
         | ScrollSectionType
         | SliderSectionType
@@ -24,11 +25,14 @@ interface ScrollSectionType {
     title: string;
     data: { title: string; text: string[]; icon: string }[];
 }
-
-interface SliderSectionType {
+export interface SliderType {
+    slideLeft: SlideType[];
+    slideRight: SlideType[];
+}
+export interface SliderSectionType {
     layout: "slider";
     title: string;
-    data: { slideLeft: SlideType[]; slideRight: SlideType[] }[];
+    data: SliderType[];
 }
 
 interface SectionWithVideoType {
@@ -298,6 +302,89 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "8 місяців",
                 support: "4+ місяці",
             },
+            decision: {
+                layout: "slider",
+                title: "<purple>Рішення</purple>, які були реалізовані",
+                data: [
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Розроблено унікального маскота, прототипом якого став реальний кіт фермера — власника магазину",
+                                    "Усі ілюстрації створені індивідуально та відмальовані вручну, також продумано набір сувенірної продукції, що підвищило лояльність покупців і збільшило залучення нових клієнтів із дітьми",
+                                    "Ідея та реалізація замовлення для ЗСУ з доставкою в регіони, де немає доставки Новою Поштою",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                            },
+                            {
+                                text: [
+                                    "Підключено оплату через Monopay та автоматизовано процес оплати й аналітики замовлень",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Проведено аналітику врожайності та вартості сезонних овочів і запропоновано перелік найбільш маржинальних культур",
+                                    'Ідея та реалізація замовлення овочів "під майбутній врожай"',
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    'Розроблено внутрішню CMS для відстежування історії замовлень за типами продукції, замовниками, оплаченими/неоплаченими замовленнями, замовленнями "під майбутній врожай" та для ЗСУ',
+                                    "Автоматизовано звітність з продажів",
+                                    "Впроваджено інструменти для оптимізації бізнес-процесів оформлення замовлення, доставки та формування звітності для подальшого аналізу",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
+                            },
+                            {
+                                text: [
+                                    "Реалізовано систему e-mail сповіщень про оновлення асортименту та початок сезону конкретного продукту",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Збільшилася присутність у соціальних мережах та привабливість бренду для ЗМІ",
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
+                            },
+                        ],
+                    },
+                ],
+            },
             content: [
                 {
                     layout: "scroll",
@@ -466,6 +553,89 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "8 months",
                 support: "4+ months",
             },
+            decision: {
+                layout: "slider",
+                title: "<purple>The solutions</purple>, that were implemented",
+                data: [
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "A unique mascot was developed, the prototype of which was a real cat of a farmer who owns the store",
+                                    "All illustrations are individually created and hand-drawn, and a set of souvenir products has been developed, which has increased customer loyalty and attracted new customers with children",
+                                    "Idea and implementation of an order for the Armed Forces of Ukraine with delivery to regions where there is no delivery by Nova Poshta",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                            },
+                            {
+                                text: [
+                                    "Monopay payment system was connected and the payment and order analytics process is automated",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "The analysis of the yield and cost of seasonal vegetables is carried out and a list of the most marginal crops is proposed",
+                                    'The idea and implementation of ordering vegetables "for the future harvest""',
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "An internal CMS was developed to track order history by product type, customer, paid/unpaid orders, orders for future harvest and for the Armed Forces of Ukraine",
+                                    "Sales reporting has been automated",
+                                    "Implemented tools to optimize business processes of ordering, delivery and reporting for further analysis",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
+                            },
+                            {
+                                text: [
+                                    "Implemented a system of e-mail notifications about assortment updates and the start of the season for a particular product",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Increased presence in social networks and brand attractiveness for the media",
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
+                            },
+                        ],
+                    },
+                ],
+            },
             content: [
                 {
                     layout: "scroll",
@@ -633,6 +803,89 @@ export const portfolioData: PortfolioDataItemType[] = [
                 design: "2 miesiące",
                 launch: "8 miesięcy",
                 support: "4+ miesięcy",
+            },
+            decision: {
+                layout: "slider",
+                title: "<purple>Rozwiązania</purple>, które zostały wdrożone",
+                data: [
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Stworzono unikalnego maskota, którego prototypem stał się prawdziwy kot właściciela sklepu – rolnika",
+                                    "Wszystkie ilustracje zostały stworzone indywidualnie i ręcznie namalowane, opracowano również zestaw produktów upominkowych, które zwiększyły lojalność klientów i przyciągnęły nowych, zwłaszcza z dziećmi",
+                                    "Pomysł i realizacja zamówienia dla Sił Zbrojnych Ukrainy z dostawą do regionów, gdzie nie ma dostawy przez Nową Pocztę",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                            },
+                            {
+                                text: [
+                                    "Podłączono płatności przez Monopay oraz zautomatyzowano proces płatności i analityki zamówień",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Przeprowadzono analizę plonów i kosztów sezonowych warzyw oraz zaproponowano listę najbardziej dochodowych roślin",
+                                    "Pomysł i realizacja zamówienia warzyw „na przyszły plon”",
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Opracowano wewnętrzny CMS do śledzenia historii zamówień według rodzajów produktów, zamawiających, zamówień opłaconych/nieopłaconych, zamówień „na przyszły plon” i dla Sił Zbrojnych Ukrainy",
+                                    "Zautomatyzowano raportowanie sprzedaży",
+                                    "Wdrożono narzędzia do optymalizacji procesów biznesowych, takich jak składanie zamówień, dostawy oraz tworzenie raportów do dalszej analizy",
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        slideLeft: [
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
+                            },
+                            {
+                                text: [
+                                    "Zrealizowano system powiadomień e-mail o aktualizacji asortymentu oraz rozpoczęciu sezonu dla konkretnego produktu",
+                                ],
+                            },
+                        ],
+                        slideRight: [
+                            {
+                                text: [
+                                    "Zwiększona obecność w mediach społecznościowych oraz atrakcyjność marki dla mediów",
+                                ],
+                            },
+                            {
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
+                            },
+                        ],
+                    },
+                ],
             },
             content: [
                 {
