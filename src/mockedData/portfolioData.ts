@@ -21,16 +21,25 @@ type PortfolioDataItemTranslation = {
     )[];
 };
 
+export interface ScrollSectionDataType {
+    title: string;
+    text: string[];
+    icon: string;
+}
 export interface ScrollSectionType {
     layout: "scroll";
     title: string;
-    data: { title: string; text: string[]; icon: string }[];
+    data: ScrollSectionDataType[];
 }
 
+export interface SliderSectionDataType {
+    slideLeft: SlideType[];
+    slideRight: SlideType[];
+}
 interface SliderSectionType {
     layout: "slider";
     title: string;
-    data: { slideLeft: SlideType[]; slideRight: SlideType[] }[];
+    data: SliderSectionDataType[];
 }
 
 interface SectionWithVideoType {
