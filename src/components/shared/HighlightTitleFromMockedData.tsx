@@ -2,11 +2,13 @@ import React from "react";
 
 import { highlightPurple } from "@/src/utils/highlightingPurple";
 
-interface ScrollSectionTitleProps {
+interface HighlightTitleFromMockedDataProps {
     text: string;
 }
 
-export const ScrollSectionTitle = ({ text }: ScrollSectionTitleProps) => {
+export const HighlightTitleFromMockedData = ({
+    text,
+}: HighlightTitleFromMockedDataProps) => {
     const highlightedTitle = highlightPurple(text);
     return (
         <h2 className="font-caviar font-bold text-purple-200 dark:text-grey text-2xl24 mb-6">
