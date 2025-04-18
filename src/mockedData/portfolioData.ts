@@ -163,19 +163,19 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "landings",
         },
         ua: {
-            name: "Вікторія Забара рекрутер",
+            name: "Вікторія Забара",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
             description: "",
         },
         en: {
-            name: "Victoriia Zabara recruiter",
+            name: "Victoriia Zabara",
             siteView: "landing page",
             subtitle: "Landing Page for an IT Recruiter",
             description: "",
         },
         pl: {
-            name: "Victoriia Zabara rekruter",
+            name: "Victoriia Zabara",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",

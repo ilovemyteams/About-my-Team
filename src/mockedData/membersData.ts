@@ -1847,7 +1847,7 @@ export const membersData: MemberDataItemType[] = [
             id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["theatermag-com-ua"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/Svitlana_Krokhmalna_rkr43h.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744802867/Svitlana_Krokhmalna_wqiqqt.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["theatermag.com.ua"],
@@ -2252,10 +2252,57 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "solomiia-lutska-project-project-manager-scrum-master",
+            projectId: ["ilovemyteam-online", "alex-chudov"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
+            position: "Project Manager/ Scrum Master",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online", "choodov.com"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/solomiia-lutska",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Miro",
+                "Figma",
+                "Trello",
+                "Google Sheets/Docs",
+                "Slack",
+                "Teams",
+                "Microsoft Office",
+            ],
+        },
+        ua: {
+            name: "Соломія Луцька ",
+            about: "",
+            services:
+                "В якості Project Manager я організовую роботу команди, проводжу щоденні мітинги для синхронізації роботи, забезпечую ефективну комунікацію між розробниками, дизайнерами та іншими учасниками. Координую виконання певних завдань, дотримання термінів і займаюся загальною організацією процесів. Моя роль включає планування, управління ризиками та контроль прогресу, щоб забезпечити якісну реалізацію проєкту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Solomiia Lutska",
+            about: "",
+            services:
+                "As a Project Manager, I organize the team's work, conduct daily meetings to synchronize activities, and ensure effective communication between developers, designers, and other participants. I coordinate the completion of specific tasks, adherence to deadlines, and manage the overall organization of processes. My role includes planning, risk management, and progress control to ensure the successful implementation of the project.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Solomiia Lutska",
+            about: "",
+            services:
+                "Jako Project Manager organizuję pracę zespołu, prowadzę codzienne spotkania w celu synchronizacji działań oraz zapewniam skuteczną komunikację między programistami, projektantami i innymi uczestnikami. Koordynuję realizację konkretnych zadań, dotrzymywanie terminów i zajmuję się ogólną organizacją procesów. Moja rola obejmuje planowanie, zarządzanie ryzykiem i kontrolę postępów, aby zapewnić pomyślną realizację projektu.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "oksana-arpul-qa-engineer",
             projectId: ["ilovemyteam-online"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744208424/Oksana_QA_f60hln.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744795126/Oksana_QA_lnllhm.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -2296,6 +2343,100 @@ export const membersData: MemberDataItemType[] = [
             services:
                 "Zajmuję się testowaniem manualnym różnych typów (funkcjonalne, niefunkcjonalne, UI/UX, API, bazy danych i wydajność), analizuję wymagania, badam zachowanie produktu, stosuję różne podejścia do testowania i tworzę dokumentację testową (przypadki testowe, listy kontrolne, raporty o błędach).",
             team: "i love my team",
+        },
+    },
+    {
+        data: {
+            id: "viktoriia-lapina-ui-ux-designer",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744827270/Viktoriia_UIUX_m5lnsb.jpg",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/viktoria-lapina",
+                behance: "https://www.behance.net/0dd36bf6",
+                telegram: "https://t.me/viktoria_lapina",
+            },
+            tools: ["Figma", "Adobe Photoshop", "Jira"],
+        },
+        ua: {
+            name: "Вікторія Лапіна",
+            about: "Хороший дизайн - це результат злиття естетики та функціональності.",
+            services:
+                "Створюю дизайн сайтів та мобільних додатків — від дослідження до фінального інтерфейсу. Аналізую конкурентів, визначаю цільову аудиторію та її потреби, розробляю користувацькі сценарії (user flow), вайрфрейми й інтерактивні прототипи. Працюю з адаптивним дизайном, а також створюю UI kit для зручності розробки та підтримки продукту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Viktoriia Lapina",
+            about: "Good design is the result of merging aesthetics and functionality.",
+            services:
+                "I design websites and mobile applications — from research to the final interface. I analyze competitors, identify the target audience and its needs, and develop user flows, wireframes, and interactive prototypes. I work with responsive design and also create UI kits to facilitate development and product maintenance.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Viktoriia Lapina",
+            about: "Dobry design to efekt połączenia estetyki i funkcjonalności.",
+            services:
+                "Tworzę projekty stron internetowych i aplikacji mobilnych — od badań po finalny interfejs. Analizuję konkurencję, określam grupę docelową i jej potrzeby, opracowuję scenariusze użytkownika (user flow), makiety (wireframes) i interaktywne prototypy. Pracuję z designem responsywnym, a także tworzę UI kit w celu ułatwienia rozwoju i utrzymania produktu.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "stepan-kozurak-project-project-manager",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830870/Stepan_PM_crqljr.jpg",
+            position: "Project Manager",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/stepan-kozurak-a8931a9b",
+                telegram: "https://t.me/StepsKos",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets/Docs",
+                "ClickUp",
+                "Trello",
+                "Notion",
+                "SDLC",
+                "User story",
+                "User flow",
+                "BPMN",
+                "Slack",
+                "Discord",
+                "Miro",
+                "Figma",
+                "Lucidchart",
+                "Microsoft Office",
+            ],
+        },
+        ua: {
+            name: "Степан Козурак",
+            about: "Робота - не вовк, ліс - не великий...",
+            services:
+                "Планування та робота з командою; збереження продуктивності членів команди, запобігання вигорянню. Ризик менеджмент та конфліктологія. Продуктова психологія, її вплив на проєктний менеджмент та взаємозв’язок з ринковими потребами.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Stepan Kozurak",
+            about: "Work isn’t a wolf, and the forest isn’t that big...",
+            services:
+                "Team planning and collaboration; maintaining team performance and preventing burnout. Risk management and conflict resolution. Product psychology, its impact on project management, and its alignment with market needs.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Stepan Kozurak",
+            about: "Robota to nie wilk, las nie jest taki wielki...",
+            services:
+                "Planowanie i współpraca zespołowa; utrzymanie wydajności członków zespołu oraz zapobieganie wypaleniu zawodowemu. Zarządzanie ryzykiem i rozwiązywanie konfliktów. Psychologia produktu, jej wpływ na zarządzanie projektami oraz powiązanie z potrzebami rynkowymi.",
+            team: "I Love My Team",
         },
     },
     {
@@ -2448,53 +2589,6 @@ export const membersData: MemberDataItemType[] = [
             about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
             services:
                 "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
-            id: "solomiia-lutska-project-project-manager-scrum-master",
-            projectId: ["ilovemyteam-online", "alex-chudov"],
-            imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
-            position: "Project Manager/ Scrum Master",
-            categoryName: "manager",
-            projectsExperience: ["ilovemyteam.online", "choodov.com"],
-            pricePerHour: "10",
-            socialLinks: {
-                linkedin: "https://www.linkedin.com/in/solomiia-lutska",
-            },
-            tools: [
-                "Jira",
-                "Confluence",
-                "Miro",
-                "Figma",
-                "Trello",
-                "Google Sheets/Docs",
-                "Slack",
-                "Teams",
-                "Microsoft Office",
-            ],
-        },
-        ua: {
-            name: "Соломія Луцька ",
-            about: "",
-            services:
-                "В якості Project Manager я організовую роботу команди, проводжу щоденні мітинги для синхронізації роботи, забезпечую ефективну комунікацію між розробниками, дизайнерами та іншими учасниками. Координую виконання певних завдань, дотримання термінів і займаюся загальною організацією процесів. Моя роль включає планування, управління ризиками та контроль прогресу, щоб забезпечити якісну реалізацію проєкту.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Solomiia Lutska",
-            about: "",
-            services:
-                "As a Project Manager, I organize the team's work, conduct daily meetings to synchronize activities, and ensure effective communication between developers, designers, and other participants. I coordinate the completion of specific tasks, adherence to deadlines, and manage the overall organization of processes. My role includes planning, risk management, and progress control to ensure the successful implementation of the project.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Solomiia Lutska",
-            about: "",
-            services:
-                "Jako Project Manager organizuję pracę zespołu, prowadzę codzienne spotkania w celu synchronizacji działań oraz zapewniam skuteczną komunikację między programistami, projektantami i innymi uczestnikami. Koordynuję realizację konkretnych zadań, dotrzymywanie terminów i zajmuję się ogólną organizacją procesów. Moja rola obejmuje planowanie, zarządzanie ryzykiem i kontrolę postępów, aby zapewnić pomyślną realizację projektu.",
             team: "I Love My Team",
         },
     },

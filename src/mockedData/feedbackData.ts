@@ -1,20 +1,19 @@
 import { Slug } from "./portfolioData";
 
-type FeedbackDataItemTranslation = {
+export type FeedbackDataItemTranslation = {
     siteName: string;
     siteView: string;
     reviewer: string;
     reviewerRole: string;
     feedbackText: string;
 };
-type DataType = {
+export type DataType = {
     id: string;
     image?: string;
     video?: string;
     siteLink: string;
     slug: Slug;
     feedbackLink?: string;
-    imageForProjectPage?: string;
 };
 export type FeedbackDataItemType = {
     data: DataType;
@@ -27,12 +26,10 @@ export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "01",
-            image: "https://drive.google.com/uc?export=view&id=1IovSPMGOqMgbzKSP8SvMMq6oLycARfk0",
+            image: "https://drive.google.com/uc?export=view&id=1Ozbj5l_AhRyDsS3AQjDrACN7N8D-c_Zr",
             siteLink: "batatfarm.com",
             slug: "batatfarm-com",
             feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B",
-            imageForProjectPage:
-                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666870/feedback_dc3r3m.jpg",
         },
         ua: {
             siteName: "Смачно! на селі",
@@ -127,12 +124,12 @@ export const feedbackData: FeedbackDataItemType[] = [
     {
         data: {
             id: "04",
-            image: "https://drive.google.com/uc?export=view&id=1IaX7awVp5tY0eAxnFv17XdUvyE5qGSxj",
+            image: "https://drive.google.com/uc?export=view&id=110udK8SC-Gx_QJy7avipGKnGEKZIu_xT",
             siteLink: "viktoriia-zabara.netlify.app",
             slug: "viktoriia-zabara",
         },
         ua: {
-            siteName: "Вікторія Забара рекрутер",
+            siteName: "Вікторія Забара",
             siteView: "лендінг",
             reviewer: "Вікторія Забара",
             reviewerRole: "IT-рекрутер",
@@ -140,7 +137,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Щиро дякую вам за сайт, він виглядає професійно, ретельно продуманим і навіть відображає мій характер та моє світосприйняття. (Легко, конкретно, нічого зайвого). Дякую вам за роботу.",
         },
         en: {
-            siteName: "Victoriia Zabara recruiter",
+            siteName: "Victoriia Zabara",
             siteView: "landing",
             reviewer: "Viktoriia Zabara",
             reviewerRole: "IT-recruiter",
@@ -148,7 +145,7 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Thank you very much for the website, it looks professional, well thought out and even reflects my character and my worldview. (Easy, concrete, nothing excessive). I truly appreciate your work.",
         },
         pl: {
-            siteName: "Victoriia Zabara rekruter",
+            siteName: "Victoriia Zabara",
             siteView: "strona docelowa",
             reviewer: "Viktoriia Zabara",
             reviewerRole: "Rekruter w branży IT",

@@ -11,9 +11,9 @@ import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../../shared/SliderComponents/CarouselButtons";
-import { useDotButton } from "../../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+} from "../SliderComponents/CarouselButtons";
+import { useDotButton } from "../SliderComponents/SliderDots";
+import { SliderDotsBox } from "../SliderComponents/SliderDotsBox";
 import { FeedbackCard } from "./FeedbackCard";
 
 type FeedbackSliderProps = {
@@ -52,24 +52,26 @@ export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls mt-4 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
-                    <div className="embla__buttons flex gap-4 tab:gap-6 justify-center">
-                        <PrevButton
-                            onClick={onPrevButtonClick}
-                            disabled={prevBtnDisabled}
-                        />
-                        <SliderDotsBox
-                            scrollSnaps={scrollSnaps}
-                            selectedIndex={selectedIndex}
-                            sliders={feedbacks}
-                            onDotButtonClick={onDotButtonClick}
-                        />
-                        <NextButton
-                            onClick={onNextButtonClick}
-                            disabled={nextBtnDisabled}
-                        />
+                {feedbacks.length > 1 && (
+                    <div className="embla__controls mt-4 tab:mt-0 tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 ">
+                        <div className="embla__buttons flex gap-4 tab:gap-6 justify-center">
+                            <PrevButton
+                                onClick={onPrevButtonClick}
+                                disabled={prevBtnDisabled}
+                            />
+                            <SliderDotsBox
+                                scrollSnaps={scrollSnaps}
+                                selectedIndex={selectedIndex}
+                                sliders={feedbacks}
+                                onDotButtonClick={onDotButtonClick}
+                            />
+                            <NextButton
+                                onClick={onNextButtonClick}
+                                disabled={nextBtnDisabled}
+                            />
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         </div>
     );
