@@ -3,8 +3,6 @@ import { IconProps } from "@/types/iconProps.interface";
 export const IconPeople = ({ className }: IconProps) => {
     return (
         <svg
-            width="216"
-            height="216"
             viewBox="0 0 216 216"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -3,8 +3,6 @@ import { IconProps } from "@/types/iconProps.interface";
 export const IconLight = ({ className }: IconProps) => {
     return (
         <svg
-            width="180"
-            height="160"
             viewBox="0 0 180 160"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

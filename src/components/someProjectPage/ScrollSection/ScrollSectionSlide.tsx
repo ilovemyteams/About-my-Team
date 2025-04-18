@@ -28,11 +28,13 @@ export const ScrollSectionSlide = ({
     }, [isInView]);
     return (
         <li
-            className="min-w-full h-full pb-5 flex flex-col gap-4"
+            className="min-w-full max-h-full h-full pb-5 flex flex-col gap-4"
             ref={slideRef}
         >
-            <div className="grow flex items-center justify-center ">
-                <Icon className="max-w-[180px] w-auto h-full text-redLight dark:text-red " />
+            <div className="grow relative">
+                <div className="absolute inset-0 ">
+                    <Icon className="absolute left-1/2 top-0 -translate-x-1/2 w-auto h-full max-w-full text-redLight dark:text-red " />
+                </div>
             </div>
 
             <ul className="flex flex-col gap-3">
