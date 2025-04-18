@@ -8,8 +8,8 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
     const { slideLeft, slideRight } = data;
 
     return (
-        <div className="flex">
-            <div className="w-1/2">
+        <div className="tab:flex">
+            <div className="tab:w-1/2">
                 {slideLeft.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
@@ -44,7 +44,7 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
                 ))}
             </div>
 
-            <div className="w-1/2">
+            <div className="tab:w-1/2">
                 {slideRight.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
