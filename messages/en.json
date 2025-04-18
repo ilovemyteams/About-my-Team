@@ -346,6 +346,11 @@
         "adaptiveDesign": "<purple>Responsywny design</purple>",
         "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
         "moreCases": "View <purple>more cases</purple>",
-        "allProjects": "All projects"
+        "allProjects": "All projects",
+        "deadlines": "Deadlines:",
+        "analysis": "Analysis",
+        "design": "Design",
+        "launch": "Launch",
+        "support": "Support"
     }
 }
