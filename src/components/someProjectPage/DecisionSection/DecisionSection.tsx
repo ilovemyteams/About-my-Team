@@ -1,5 +1,7 @@
 import { SliderSectionType } from "@/src/mockedData/portfolioData";
 
+import { HighlightTitleFromMockedData } from "../../shared/HighlightTitleFromMockedData";
+import { Section } from "../../shared/Section";
 import { DecisionCard } from "./DecisionCard";
 
 export const DecisionSection = ({
@@ -12,10 +14,9 @@ export const DecisionSection = ({
     console.log("🚀 ~ data:", data[0]);
 
     return (
-        <div>
-            <h2>{title}</h2>
+        <Section>
+            <HighlightTitleFromMockedData text={title} />
             <DecisionCard data={data[3]} />
-            <p>This is the decision section of the project.</p>
-        </div>
+        </Section>
     );
 };
