@@ -57,8 +57,9 @@ interface AdaptiveDesignSection {
     imageMobile2: string;
 }
 type TextType = { text: string[] };
-type ImageType = { image: string };
-type SlideType = TextType | ImageType;
+type ImageType = { image: string; screenImage?: string };
+type ScreenMobType = { screenImage: string };
+type SlideType = TextType | ImageType | ScreenMobType;
 export type Slug =
     | "protection-in-ua"
     | "viktoriia-zabara"
@@ -335,6 +336,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                         slideLeft: [
                             {
                                 image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
                             },
                             {
                                 text: [
@@ -350,14 +353,15 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
                             },
                         ],
                     },
                     {
                         slideLeft: [
                             {
-                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
                             },
                         ],
                         slideRight: [
