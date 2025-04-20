@@ -1,10 +1,11 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
+import Fade from "embla-carousel-fade";
 import useEmblaCarousel from "embla-carousel-react";
 import React, { useState } from "react";
 
 import { SliderType } from "@/src/mockedData/portfolioData";
-import Fade from "embla-carousel-fade";
+
 import {
     NextButton,
     PrevButton,
