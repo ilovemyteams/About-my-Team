@@ -2,21 +2,22 @@ import { SliderSectionType } from "@/src/mockedData/portfolioData";
 
 import { HighlightTitleFromMockedData } from "../../shared/HighlightTitleFromMockedData";
 import { Section } from "../../shared/Section";
-import { DecisionCard } from "./DecisionCard";
+import { DecisionSlider } from "./DecisionSlider";
+import { EmblaOptionsType } from "embla-carousel";
 
 export const DecisionSection = ({
     decision,
 }: {
     decision: SliderSectionType;
 }) => {
+    const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
     const title = decision.title;
     const data = decision.data;
-    console.log("🚀 ~ data:", data[0]);
 
     return (
         <Section>
             <HighlightTitleFromMockedData text={title} />
-            <DecisionCard data={data[3]} />
+            <DecisionSlider decisions={data} options={OPTIONS} />
         </Section>
     );
 };

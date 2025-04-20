@@ -8,25 +8,36 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
     const { slideLeft, slideRight } = data;
 
     return (
-        <div className="tab:flex">
-            <div className="tab:w-1/2">
+        <div className="flex flex-col gap-3 tab:flex-row tab:gap-0 desk:gap-[52px] h-[462px] tab:h-[358px] pc:h-[464px] desk:h-[530px]">
+            <div className="tab:w-1/2 flex flex-col gap-3 tab:gap-8 pc:gap-6">
                 {slideLeft.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
-                            <Image
-                                src={item.image}
-                                alt="image"
-                                width={542}
-                                height={355}
-                                className="mb-2"
-                            />
+                            <div className="relative border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-[288px] tab:w-[89%] desk:w-[574px] mx-auto tab:mr-auto tab:ml-0">
+                                <Image
+                                    src={item.image}
+                                    alt="image"
+                                    width={542}
+                                    height={355}
+                                    className=""
+                                />
+                                {"screenImage" in item && item.screenImage && (
+                                    <Image
+                                        src={item.screenImage}
+                                        alt="screenImage"
+                                        width={260}
+                                        height={290}
+                                        className="absolute z-10 tab:hidden right-[10px] bottom-0 w-[80px] h-auto"
+                                    />
+                                )}
+                            </div>
                         )}
                         {"text" in item && item.text && (
-                            <ul className="space-y-2">
+                            <ul className="space-y-2 tab:space-y-4 pc:space-y-5 desk:space-y-6">
                                 {item.text.map((text, i) => (
                                     <li
                                         key={i}
-                                        className="flex gap-2 pc:gap-3 items-start"
+                                        className="flex gap-3 pc:gap-3 items-start"
                                     >
                                         <div>
                                             <IconCheck className="w-4 pc:w-6 h-auto dark:text-disabledLight text-purple-130" />
@@ -44,24 +55,26 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
                 ))}
             </div>
 
-            <div className="tab:w-1/2">
+            <div className="tab:w-1/2 flex tab:flex-col gap-3 tab:gap-8 pc:gap-6 flex-col-reverse">
                 {slideRight.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
-                            <Image
-                                src={item.image}
-                                alt="image"
-                                width={542}
-                                height={355}
-                                className="mb-2"
-                            />
+                            <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-[288px] mx-auto tab:w-[89%] desk:w-[574px] tab:ml-auto tab:mr-0">
+                                <Image
+                                    src={item.image}
+                                    alt="image"
+                                    width={542}
+                                    height={355}
+                                    className=""
+                                />
+                            </div>
                         )}
                         {"text" in item && item.text && (
-                            <ul className="space-y-2">
+                            <ul className="space-y-2 tab:space-y-4 pc:space-y-5 desk:space-y-6">
                                 {item.text.map((text, i) => (
                                     <li
                                         key={i}
-                                        className="flex gap-2 pc:gap-3 items-start"
+                                        className="flex gap-3 pc:gap-3 items-start"
                                     >
                                         <div>
                                             <IconCheck className="w-4 pc:w-6 h-auto dark:text-disabledLight text-purple-130" />
@@ -74,6 +87,17 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
                                     </li>
                                 ))}
                             </ul>
+                        )}
+                        {"screenImage" in item && item.screenImage && (
+                            <div className="hidden tab:flex ">
+                                <Image
+                                    src={item.screenImage}
+                                    alt="screenImage"
+                                    width={260}
+                                    height={290}
+                                    className="h-auto tab:w-[160px] pc:w-[240px] desk:w-[260px] mx-auto"
+                                />
+                            </div>
                         )}
                     </div>
                 ))}
