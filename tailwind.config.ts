@@ -519,6 +519,14 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+                slideUp: {
+                    "0%": { transform: "translateY(100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
+                slideDown: {
+                    "0%": { transform: "translateY(-100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -539,6 +547,8 @@ const config: Config = {
                 blink2: "glow 600ms 200ms infinite",
                 blink3: "glow 600ms 400ms infinite",
                 showUp: "showUp 700ms ease-out infinite",
+                slideUp: "slideUp 0.7s ease-out",
+                slideDown: "slideDown 0.7s ease-out",
             },
         },
         backgroundImage: {

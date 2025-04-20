@@ -1,18 +1,18 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import React from "react";
+import React, { useState } from "react";
 
-import { LocaleType } from "@/types/LocaleType";
 import { SliderType } from "@/src/mockedData/portfolioData";
-import { useDotButton } from "../../shared/SliderComponents/SliderDots";
+import Fade from "embla-carousel-fade";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
 } from "../../shared/SliderComponents/CarouselButtons";
-import { DecisionCard } from "./DecisionCard";
+import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 import { SliderNumbersBox } from "../../shared/SliderComponents/SliderNumbersBox";
+import { DecisionCard } from "./DecisionCard";
 
 type DecisionSliderProps = {
     decisions: SliderType[];
@@ -21,7 +21,7 @@ type DecisionSliderProps = {
 
 export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
     const { decisions, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Fade()]);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
 
@@ -31,6 +31,20 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+    const [direction, setDirection] = useState<{
+        dir: "next" | "prev";
+        key: number;
+    } | null>(null);
+
+    const handlePrev = () => {
+        setDirection({ dir: "prev", key: Date.now() });
+        onPrevButtonClick();
+    };
+
+    const handleNext = () => {
+        setDirection({ dir: "next", key: Date.now() });
+        onNextButtonClick();
+    };
 
     return (
         <div className=" embla relative">
@@ -41,7 +55,11 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
                             key={index}
                             className="embla__slide flex-[0_0_100%] overflow-hidden"
                         >
-                            <DecisionCard data={decision} />
+                            <DecisionCard
+                                data={decision}
+                                direction={direction?.dir}
+                                key={direction?.key}
+                            />
                         </div>
                     ))}
                 </div>
@@ -49,7 +67,7 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
                     <div className="embla__controls mt-6 pc:mt-8">
                         <div className="embla__buttons flex justify-between items-center w-[280px] mx-auto">
                             <PrevButton
-                                onClick={onPrevButtonClick}
+                                onClick={handlePrev}
                                 disabled={prevBtnDisabled}
                             />
                             <SliderNumbersBox
@@ -59,7 +77,7 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
                                 onDotButtonClick={onDotButtonClick}
                             />
                             <NextButton
-                                onClick={onNextButtonClick}
+                                onClick={handleNext}
                                 disabled={nextBtnDisabled}
                             />
                         </div>

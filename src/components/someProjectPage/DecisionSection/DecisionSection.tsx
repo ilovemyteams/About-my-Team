@@ -1,9 +1,10 @@
+import { EmblaOptionsType } from "embla-carousel";
+
 import { SliderSectionType } from "@/src/mockedData/portfolioData";
 
 import { HighlightTitleFromMockedData } from "../../shared/HighlightTitleFromMockedData";
 import { Section } from "../../shared/Section";
 import { DecisionSlider } from "./DecisionSlider";
-import { EmblaOptionsType } from "embla-carousel";
 
 export const DecisionSection = ({
     decision,

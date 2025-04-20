@@ -1,11 +1,11 @@
 import { EmblaOptionsType } from "embla-carousel";
+import { useTranslations } from "next-intl";
 
 import { FeedbackDataItemType } from "@/src/mockedData/feedbackData";
 
 import { FeedbackSlider } from "../../shared/Feedbacks/FeedbackSlider";
 import { FeedbackSliderFromTab } from "../../shared/Feedbacks/FeedbackSliderFromTab";
 import { Section } from "../../shared/Section";
-import { useTranslations } from "next-intl";
 
 export const FeedbackProject = ({
     feedback,

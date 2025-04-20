@@ -4,12 +4,21 @@ import { SliderType } from "@/src/mockedData/portfolioData";
 
 import { IconCheck } from "../../shared/Icons/IconCheck";
 
-export const DecisionCard = ({ data }: { data: SliderType }) => {
+export const DecisionCard = ({
+    data,
+    direction,
+}: {
+    data: SliderType;
+    direction: "next" | "prev" | undefined;
+}) => {
     const { slideLeft, slideRight } = data;
 
     return (
         <div className="flex flex-col gap-3 tab:flex-row tab:gap-0 desk:gap-[52px] h-[462px] tab:h-[358px] pc:h-[464px] desk:h-[530px]">
-            <div className="tab:w-1/2 flex flex-col gap-3 tab:gap-8 pc:gap-6">
+            <div
+                className={`tab:w-1/2 flex flex-col gap-3 tab:gap-8 pc:gap-6 transition-all duration-700 ease-in-out 
+                    ${direction === "prev" && "animate-slideDown"} ${direction === "next" && "animate-slideUp"}`}
+            >
                 {slideLeft.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
@@ -55,7 +64,10 @@ export const DecisionCard = ({ data }: { data: SliderType }) => {
                 ))}
             </div>
 
-            <div className="tab:w-1/2 flex tab:flex-col gap-3 tab:gap-8 pc:gap-6 flex-col-reverse">
+            <div
+                className={`tab:w-1/2 flex tab:flex-col gap-3 tab:gap-8 pc:gap-6 flex-col-reverse transition-all duration-700 ease-in-out
+                    ${direction === "prev" && "animate-slideUp"} ${direction === "next" && "animate-slideDown"}`}
+            >
                 {slideRight.map((item, idx) => (
                     <div key={idx}>
                         {"image" in item && item.image && (
