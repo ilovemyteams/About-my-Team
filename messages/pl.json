@@ -352,6 +352,7 @@
         "analysis": "Analiza",
         "design": "Projektowanie",
         "launch": "Wydanie",
-        "support": "Wsparcie"
+        "support": "Wsparcie",
+        "taskTitle": "<purple>Zadania</purple>, nad którymi pracowaliśmy"
     }
 }

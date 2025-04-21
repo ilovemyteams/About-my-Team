@@ -10,7 +10,7 @@ export const ScrollSectionTabs = ({
     tabs,
 }: ScrollSectionTabsProps) => {
     return (
-        <ul className="flex flex-wrap gap-2 shrink-0">
+        <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end">
             {tabs.map((title, index) => {
                 const color =
                     isActive === title
@@ -20,9 +20,9 @@ export const ScrollSectionTabs = ({
                 return (
                     <li
                         key={index}
-                        className={`p-2 font-bold border-[1px] border-purple-strokeLight dark:border-purple-stroke text-sm ${color}`}
+                        className={`p-2 font-bold border-[1px] border-purple-strokeLight dark:border-purple-stroke text-sm ${color} tab:px-4 tab:py-[13px] tab:text-base `}
                     >
-                        <span>{title}</span>
+                        <button>{title}</button>
                     </li>
                 );
             })}

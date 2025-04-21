@@ -28,20 +28,22 @@ export const ScrollSectionSlide = ({
     }, [isInView]);
     return (
         <li
-            className="min-w-full h-full pb-5 flex flex-col gap-4"
+            className="min-w-full h-full pb-5 flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
             ref={slideRef}
         >
-            <div className="grow relative">
-                <div className="absolute inset-0 ">
-                    <Icon className="absolute left-1/2 top-0 -translate-x-1/2 w-auto h-full max-w-[320px] text-redLight dark:text-red " />
+            <div className="grow relative tab:w-1/2">
+                <div className="absolute inset-0  ">
+                    <Icon className="absolute left-1/2 top-0 -translate-x-1/2 w-full h-full  text-redLight dark:text-red " />
                 </div>
             </div>
 
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-3 tab:gap-4 tab:w-1/2 tab:shrink-0">
                 {item.text.map((text, index) => (
                     <li key={index} className="flex gap-3">
                         <IconCheck className="shrink-0 size-[16px] text-purple-130  dark:text-disabledLight" />
-                        <span className="grow text-sm20">{text}</span>
+                        <span className="grow text-sm20 tab:text-base">
+                            {text}
+                        </span>
                     </li>
                 ))}
             </ul>

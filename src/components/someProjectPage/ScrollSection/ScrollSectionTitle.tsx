@@ -9,7 +9,7 @@ interface ScrollSectionTitleProps {
 export const ScrollSectionTitle = ({ text }: ScrollSectionTitleProps) => {
     const highlightedTitle = highlightPurple(text);
     return (
-        <h2 className="font-caviar font-bold text-purple-200 dark:text-grey text-2xl24 mb-6">
+        <h2 className="font-caviar font-bold text-purple-200 dark:text-grey text-2xl24 mb-6 tab:text-4xl tab:mb-10">
             {highlightedTitle.map((part, index) => {
                 if (part.decoration === "purple") {
                     return (
