@@ -28,9 +28,9 @@ export const SmallCloudIcon = ({ className }: IconProps) => {
                     y2="0.711612"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#FFF2F2" />
-                    <stop offset="0.58" stopColor="#FFE9E9" />
-                    <stop offset="1" stopColor="#FFDFDF" />
+                    <stop stop-color="#FFF2F2" />
+                    <stop offset="0.58" stop-color="#FFE9E9" />
+                    <stop offset="1" stop-color="#FFDFDF" />
                 </linearGradient>
                 <linearGradient
                     id="paint1_linear_16270_82706"
@@ -40,9 +40,9 @@ export const SmallCloudIcon = ({ className }: IconProps) => {
                     y2="0.347355"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#FF8E9F" />
-                    <stop offset="0.42" stopColor="#FFE9E9" />
-                    <stop offset="1" stopColor="#FFF2F2" />
+                    <stop stop-color="#FF8E9F" />
+                    <stop offset="0.42" stop-color="#FFE9E9" />
+                    <stop offset="1" stop-color="#FFF2F2" />
                 </linearGradient>
             </defs>
         </svg>
