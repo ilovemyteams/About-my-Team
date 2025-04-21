@@ -1732,7 +1732,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Ціна: від 500$ (залежить від складності дизайну та функціональності).",
+                        text: "Ціна: від 800$ (залежить від складності дизайну та функціональності).",
                     },
                 ],
                 introduction:
@@ -1818,7 +1818,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: from $ 500 (depends on the complexity of the design and functionality).",
+                        text: "Price: from $ 800 (depends on the complexity of the design and functionality).",
                     },
                 ],
                 introduction:
@@ -1904,7 +1904,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Cena: od 500 USD (w zależności od złożoności projektu i funkcjonalności).",
+                        text: "Cena: od 800 USD (w zależności od złożoności projektu i funkcjonalności).",
                     },
                 ],
                 introduction:
@@ -2001,7 +2001,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Ціна: від 800$ (до 10 сторінок) , від 1600$ (10+ сторінок; адмін панель).",
+                        text: "Ціна: від 1100$ (до 10 сторінок) , від 1600$ (10+ сторінок; адмін панель).",
                     },
                 ],
                 content: [
@@ -2195,7 +2195,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: starting at $800 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
+                        text: "Price: starting at $1,100 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
                     },
                 ],
                 content: [
@@ -2389,7 +2389,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Cena: od 800 USD (do 10 stron), od 1600 USD (10+ stron; panel administracyjny).",
+                        text: "Cena: od 1100 USD (do 10 stron), od 1600 USD (10+ stron; panel administracyjny).",
                     },
                 ],
                 content: [

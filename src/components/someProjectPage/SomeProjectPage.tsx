@@ -21,7 +21,7 @@ export const SomeProjectPage = ({
     currentProject: PortfolioDataItemType;
 }) => {
     const locale = useLocale();
-    const { name, deadlines, heroTitle, heroText, content } =
+    const { name, content, heroText, heroTitle, deadlines } =
         currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
     const members = membersData.filter(member =>
@@ -37,6 +37,7 @@ export const SomeProjectPage = ({
     return (
         <>
             <ProjectHeader title={name} />
+
             {heroText && heroTitle && imageForHero ? (
                 <HeroSection
                     title={heroTitle}
