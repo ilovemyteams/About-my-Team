@@ -9,6 +9,7 @@ import { IconHeartWeb } from "../components/shared/Icons/IconHeartWeb";
 import { IconIntegration } from "../components/shared/Icons/IconIntegration";
 import { IconInternetStore } from "../components/shared/Icons/IconInternetStore";
 import { IconLanding } from "../components/shared/Icons/IconLanding";
+import { IconLaunch } from "../components/shared/Icons/IconLaunch";
 import { IconPlannedSupport } from "../components/shared/Icons/IconPlannedSupport";
 import { IconStart } from "../components/shared/Icons/IconStart";
 import { IconSupport } from "../components/shared/Icons/IconSupport";
@@ -23,7 +24,7 @@ import { IconWebsite } from "../components/shared/Icons/IconWebsite";
 
 export const defineServiceIcon = (name: string | undefined) => {
     switch (name) {
-        case "ba":
+        case "analysis":
             return IconBA;
         case "design":
             return IconDesign;
@@ -65,6 +66,8 @@ export const defineServiceIcon = (name: string | undefined) => {
             return IconStart;
         case "integration":
             return IconIntegration;
+        case "launch":
+            return IconLaunch;
         default:
             return IconHeartWeb;
     }

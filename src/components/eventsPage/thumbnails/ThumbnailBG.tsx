@@ -6,7 +6,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 407 504"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-full hidden dark:block absolute top-0 right-0 -z-10"
+                className="h-full hidden dark:block absolute top-0 right-0 -z-[9]"
                 aria-hidden="true"
             >
                 <path
@@ -37,7 +37,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 338 328"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-full absolute dark:hidden top-0 right-0 -z-10"
+                className="h-full absolute dark:hidden top-0 right-0 -z-[9]"
                 aria-hidden="true"
             >
                 <path
@@ -68,7 +68,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 454 235"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[56%] hidden dark:block absolute bottom-0 right-0 -z-10"
+                className="w-[56%] hidden dark:block absolute bottom-0 right-0 -z-[9]"
                 aria-hidden="true"
             >
                 <path
@@ -99,7 +99,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 474 284"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[56%] dark:hidden absolute bottom-0 right-0 -z-10"
+                className="w-[56%] dark:hidden absolute bottom-0 right-0 -z-[9]"
                 aria-hidden="true"
             >
                 <path
@@ -130,7 +130,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 454 385"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[43%] hidden dark:block absolute bottom-0 left-0"
+                className="w-[43%] hidden dark:block absolute bottom-0 left-0 z-[-9]"
                 aria-hidden="true"
             >
                 <path
@@ -161,7 +161,7 @@ export const ThumbnailBg = () => {
                 viewBox="0 0 365 284"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-[43%] dark:hidden absolute bottom-0 left-0"
+                className="w-[43%] dark:hidden absolute bottom-0 left-0 z-[-9]"
                 aria-hidden="true"
             >
                 <path

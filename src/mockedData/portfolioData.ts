@@ -1,16 +1,18 @@
+export type DeadlineType = {
+    analysis?: string;
+    design?: string;
+    launch?: string;
+    support?: string;
+};
+
 type PortfolioDataItemTranslation = {
     name: string;
-    heroName?: string;
+    heroTitle?: string;
     siteView: string;
     subtitle: string;
     description: string;
     heroText?: string[];
-    deadlines?: {
-        analysis: string;
-        design: string;
-        launch: string;
-        support: string;
-    };
+    deadlines?: DeadlineType;
     content?: (
         | ScrollSectionType
         | SliderSectionType
@@ -19,16 +21,25 @@ type PortfolioDataItemTranslation = {
     )[];
 };
 
-interface ScrollSectionType {
+export interface ScrollSectionDataType {
+    title: string;
+    text: string[];
+    icon: string;
+}
+export interface ScrollSectionType {
     layout: "scroll";
     title: string;
-    data: { title: string; text: string[]; icon: string }[];
+    data: ScrollSectionDataType[];
 }
 
+export interface SliderSectionDataType {
+    slideLeft: SlideType[];
+    slideRight: SlideType[];
+}
 interface SliderSectionType {
     layout: "slider";
     title: string;
-    data: { slideLeft: SlideType[]; slideRight: SlideType[] }[];
+    data: SliderSectionDataType[];
 }
 
 interface SectionWithVideoType {
@@ -74,7 +85,7 @@ type DataType = {
     siteLink?: string;
     imageForAllProjectsPage: string;
     imageForHero?: string;
-    bechanceLink?: string;
+    behanceLink?: string;
     image: string;
     video?: string;
     implementations: string[];
@@ -152,19 +163,19 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "landings",
         },
         ua: {
-            name: "Вікторія Забара рекрутер",
+            name: "Вікторія Забара",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
             description: "",
         },
         en: {
-            name: "Victoriia Zabara recruiter",
+            name: "Victoriia Zabara",
             siteView: "landing page",
             subtitle: "Landing Page for an IT Recruiter",
             description: "",
         },
         pl: {
-            name: "Victoriia Zabara rekruter",
+            name: "Victoriia Zabara",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",
@@ -247,6 +258,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             id: "2",
             slug: "batatfarm-com",
             siteLink: "batatfarm.com",
+            behanceLink:
+                "https://www.behance.net/gallery/222106575/Landing-Page-for-Writer",
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
@@ -284,7 +297,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         },
         ua: {
             name: "Смачно! на селі",
-            heroName: "<purple>Смачно!</purple> на селі",
+            heroTitle: "<purple>Смачно!</purple> на селі",
             siteView: "інтернет магазин",
             subtitle: "Інтернет магазин натуральних продуктів",
             description: "",

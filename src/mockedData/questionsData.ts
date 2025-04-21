@@ -781,7 +781,7 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Скільки коштує розробка?",
             shortAnswerText: [
-                "Залежно від об’єму та складності продукту орієнтовна ціна лендінгу однією мовою без вибору світлої/темної теми від 500 доларів. Ціна сайту-візитки однією мовою без зміни теми до 5 сторінок орієнтовно від 800 доларів. Ціна розробки інтернет-магазину на 10-15 продуктів та оплатою через одну платіжну систему  на сайті від 1600 доларів.",
+                "Залежно від об’єму та складності продукту орієнтовна ціна лендінгу однією мовою без вибору світлої/темної теми від 800 доларів. Ціна сайту-візитки однією мовою без зміни теми до 5 сторінок орієнтовно від 1100 доларів. Ціна розробки інтернет-магазину на 10-15 продуктів та оплатою через одну платіжну систему  на сайті від 1600 доларів.",
             ],
             imageAltText: "Скільки коштує розробка?",
             fullAnswerTopText: [
@@ -797,7 +797,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Односторінковий сайт",
                                     text: [
-                                        "Такий сайт підходить для представлення одного продукту чи послуги та часто включає базові секції — заголовок, інформацію про продукт, переваги, відгуки клієнтів, форму зворотного зв’язку чи кнопку для дії (CTA). Ціна на розробку починається від 500 доларів, залежно від складності дизайну та інтеграцій.",
+                                        "Такий сайт підходить для представлення одного продукту чи послуги та часто включає базові секції — заголовок, інформацію про продукт, переваги, відгуки клієнтів, форму зворотного зв’язку чи кнопку для дії (CTA). Ціна на розробку починається від 800 доларів, залежно від складності дизайну та інтеграцій.",
                                     ],
                                 },
                             ],
@@ -808,7 +808,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "До  5 сторінок",
                                     text: [
-                                        'Цей формат підходить для представлення вашого бізнесу чи компанії. Сайт-візитка може включати сторінки "Про нас", "Послуги", "Контакти", "Портфоліо" тощо. Орієнтовна вартість стартує від 800 доларів. Додаткові функції, такі як інтерактивні елементи чи форма заявок, можуть вплинути на загальну ціну.',
+                                        'Цей формат підходить для представлення вашого бізнесу чи компанії. Сайт-візитка може включати сторінки "Про нас", "Послуги", "Контакти", "Портфоліо" тощо. Орієнтовна вартість стартує від 1100 доларів. Додаткові функції, такі як інтерактивні елементи чи форма заявок, можуть вплинути на загальну ціну.',
                                     ],
                                 },
                             ],
@@ -899,7 +899,7 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
             shortAnswerText: [
-                "Cena zależy od zakresu i złożoności projektu. Orientacyjny budżet na stronę typu landing page w jednym języku, bez wyboru jasnego/ciemnego motywu, zaczyna się od 500 USD. Koszt strony wizytówki w jednym języku, do 5 stron, bez zmiany motywu, wynosi około 800 USD. Koszt stworzenia sklepu internetowego dla 10-15 produktów i jedną metodą płatności na stronie zaczyna się od 1600 USD.",
+                "Cena zależy od zakresu i złożoności projektu. Orientacyjny budżet na stronę typu landing page w jednym języku, bez wyboru jasnego/ciemnego motywu, zaczyna się od 800 USD. Koszt strony wizytówki w jednym języku, do 5 stron, bez zmiany motywu, wynosi około 1100 USD. Koszt stworzenia sklepu internetowego dla 10-15 produktów i jedną metodą płatności na stronie zaczyna się od 1600 USD.",
             ],
             imageAltText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
@@ -916,7 +916,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Strona jednostronicowa",
                                     text: [
-                                        "Idealna do prezentacji jednego produktu lub usługi, często zawiera podstawowe sekcje, takie jak nagłówek, informacje o produkcie, opinie klientów, formularz kontaktowy lub przycisk wezwania do działania (CTA). Koszt zaczyna się od 500 USD, zależnie od złożoności projektu graficznego i integracji.",
+                                        "Idealna do prezentacji jednego produktu lub usługi, często zawiera podstawowe sekcje, takie jak nagłówek, informacje o produkcie, opinie klientów, formularz kontaktowy lub przycisk wezwania do działania (CTA). Koszt zaczyna się od 800 USD, zależnie od złożoności projektu graficznego i integracji.",
                                     ],
                                 },
                             ],
@@ -927,7 +927,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Do 5 stron",
                                     text: [
-                                        'Ten format sprawdzi się przy prezentacji firmy lub działalności. Może zawierać strony takie jak "O nas", "Usługi", "Kontakt", "Portfolio". Cena zaczyna się od 800 USD. Dodatkowe funkcje, takie jak interaktywne elementy czy formularze, mogą wpłynąć na końcową cenę.',
+                                        'Ten format sprawdzi się przy prezentacji firmy lub działalności. Może zawierać strony takie jak "O nas", "Usługi", "Kontakt", "Portfolio". Cena zaczyna się od 1100 USD. Dodatkowe funkcje, takie jak interaktywne elementy czy formularze, mogą wpłynąć na końcową cenę.',
                                     ],
                                 },
                             ],
@@ -1017,7 +1017,7 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "How much does development cost?",
             shortAnswerText: [
-                "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $500. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $800. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
+                "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $800. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $1,100. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
             ],
             imageAltText: "How much does development cost?",
             fullAnswerTopText: [
@@ -1033,7 +1033,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "One-page website",
                                     text: [
-                                        "This type of website is suitable for presenting a single product or service and often includes basic sections such as a headline, product information, benefits, customer reviews, a contact form, or a call-to-action (CTA) button. The price for development starts at $500, depending on the complexity of the design and integrations.",
+                                        "This type of website is suitable for presenting a single product or service and often includes basic sections such as a headline, product information, benefits, customer reviews, a contact form, or a call-to-action (CTA) button. The price for development starts at $800, depending on the complexity of the design and integrations.",
                                     ],
                                 },
                             ],
@@ -1044,7 +1044,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Up to 5 pages",
                                     text: [
-                                        'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $800. Additional features, such as interactive elements or a request form, may affect the total price.',
+                                        'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $1,100. Additional features, such as interactive elements or a request form, may affect the total price.',
                                     ],
                                 },
                             ],
@@ -2040,7 +2040,7 @@ export const questionsData: QAItemType[] = [
                     title: "Терміни та Вартість",
                     data: [
                         {
-                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 500$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами). Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
+                            title: "Терміни та ціни виконання лендінгу можуть варіюватися залежно від складності проєкту, вимог замовника та особливостей дизайну й функціоналу. У середньому, на створення стандартного лендінгу зазвичай потрібно від 2 до 6 тижнів. \nЦіни на розробку лендінгу можуть стартувати від 800$ і вище, залежно від наповнення (шаблонний/індивідуальний/унікальний дизайн, базова інформація, мінімум функціоналу, базова інтерактивність, адаптивність, складна анімація, інтеграція з CRM та іншими системами). Кінцева ціна та терміни виконання визначаються лише після обговорення всіх вимог і побажань замовника. \nЗагалом, вони залежать від таких факторів:",
                             type: "list",
                             decorate: 2,
                             text: [
@@ -2165,7 +2165,7 @@ export const questionsData: QAItemType[] = [
                     title: "Terminy i Koszty",
                     data: [
                         {
-                            title: "Terminy i koszty stworzenia strony docelowej mogą się różnić w zależności od stopnia skomplikowania projektu, wymagań klienta oraz szczególnych potrzeb dotyczących projektu i funkcjonalności. Średnio, wykonanie standardowej strony docelowej zajmuje od 2 do 6 tygodni. \nKoszt stworzenia strony docelowej zazwyczaj zaczyna się od 500 USD i może wzrosnąć w zależności od zawartości (projekt szablonowy/indywidualny/unikalny, podstawowe informacje, minimalna funkcjonalność, podstawowa interaktywność, responsywność, zaawansowana animacja, integracja z CRM i innymi systemami). \nOstateczna cena i terminy realizacji są ustalane dopiero po omówieniu wszystkich wymagań i preferencji klienta. Ogólnie, koszty i czas realizacji zależą od następujących czynników:",
+                            title: "Terminy i koszty stworzenia strony docelowej mogą się różnić w zależności od stopnia skomplikowania projektu, wymagań klienta oraz szczególnych potrzeb dotyczących projektu i funkcjonalności. Średnio, wykonanie standardowej strony docelowej zajmuje od 2 do 6 tygodni. \nKoszt stworzenia strony docelowej zazwyczaj zaczyna się od 800 USD i może wzrosnąć w zależności od zawartości (projekt szablonowy/indywidualny/unikalny, podstawowe informacje, minimalna funkcjonalność, podstawowa interaktywność, responsywność, zaawansowana animacja, integracja z CRM i innymi systemami). \nOstateczna cena i terminy realizacji są ustalane dopiero po omówieniu wszystkich wymagań i preferencji klienta. Ogólnie, koszty i czas realizacji zależą od następujących czynników:",
                             type: "list",
                             decorate: 2,
                             text: [
@@ -2290,7 +2290,7 @@ export const questionsData: QAItemType[] = [
                     title: "Timelines and costs",
                     data: [
                         {
-                            title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $500 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
+                            title: "The timelines and costs for creating a landing page can vary depending on the project’s complexity, client requirements, and specific design and functionality needs. On average, a standard landing page usually takes between 2 to 6 weeks to complete. \nThe development cost for a landing page typically starts at $800 and can increase based on the content (template-based/custom/unique design, basic information, minimum functionality, basic interactivity, adaptability, advanced animation, CRM integration, and other systems). \nThe final price and timeline are determined only after discussing all of the client’s requirements and preferences. In general, the cost and timing are influenced by the following factors:",
                             type: "list",
                             decorate: 2,
                             text: [
