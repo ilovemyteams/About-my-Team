@@ -535,6 +535,22 @@ const config: Config = {
                     "0%": { transform: "translateY(0)" },
                     "100%": { transform: "translateY(-100%)" },
                 },
+                slideLeft: {
+                    "0%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideRight: {
+                    "0%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideHideLeft: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+                slideHideRight: {
+                    "0%": { transform: "translateX(0)" },
+                    "100%": { transform: "translateX(100%)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -559,6 +575,10 @@ const config: Config = {
                 slideDown: "slideDown 0.7s ease-out",
                 slideHideUp: "slideHideUp 0.7s ease-out",
                 slideHideDown: "slideHideDown 0.7s ease-out",
+                slideLeft: "slideLeft 0.7s ease-out",
+                slideRight: "slideRight 0.7s ease-out",
+                slideHideLeft: "slideHideLeft 0.7s ease-out",
+                slideHideRight: "slideHideRight 0.7s ease-out",
             },
         },
         backgroundImage: {
