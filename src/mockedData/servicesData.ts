@@ -2195,7 +2195,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: starting at $1100 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
+                        text: "Price: starting at $1,100 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
                     },
                 ],
                 content: [
