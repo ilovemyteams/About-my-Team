@@ -52,6 +52,7 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
             setDirection({ dir: "up", key: Date.now() });
         }, 700);
     };
+
     const handleDotClick = (i: number) => {
         setDirection({ dir: "hideUp", key: Date.now() });
         setTimeout(() => {
