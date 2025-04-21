@@ -2001,7 +2001,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Ціна: від 800$ (до 10 сторінок) , від 1600$ (10+ сторінок; адмін панель).",
+                        text: "Ціна: від 1100$ (до 10 сторінок) , від 1600$ (10+ сторінок; адмін панель).",
                     },
                 ],
                 content: [
@@ -2195,7 +2195,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: starting at $800 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
+                        text: "Price: starting at $1100 (up to 10 pages), starting at $1,600 (10+ pages; admin panel).",
                     },
                 ],
                 content: [
@@ -2389,7 +2389,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Cena: od 800 USD (do 10 stron), od 1600 USD (10+ stron; panel administracyjny).",
+                        text: "Cena: od 1100 USD (do 10 stron), od 1600 USD (10+ stron; panel administracyjny).",
                     },
                 ],
                 content: [

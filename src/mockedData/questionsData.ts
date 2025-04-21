@@ -781,7 +781,7 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Скільки коштує розробка?",
             shortAnswerText: [
-                "Залежно від об’єму та складності продукту орієнтовна ціна лендінгу однією мовою без вибору світлої/темної теми від 800 доларів. Ціна сайту-візитки однією мовою без зміни теми до 5 сторінок орієнтовно від 800 доларів. Ціна розробки інтернет-магазину на 10-15 продуктів та оплатою через одну платіжну систему  на сайті від 1600 доларів.",
+                "Залежно від об’єму та складності продукту орієнтовна ціна лендінгу однією мовою без вибору світлої/темної теми від 800 доларів. Ціна сайту-візитки однією мовою без зміни теми до 5 сторінок орієнтовно від 1100 доларів. Ціна розробки інтернет-магазину на 10-15 продуктів та оплатою через одну платіжну систему  на сайті від 1600 доларів.",
             ],
             imageAltText: "Скільки коштує розробка?",
             fullAnswerTopText: [
@@ -808,7 +808,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "До  5 сторінок",
                                     text: [
-                                        'Цей формат підходить для представлення вашого бізнесу чи компанії. Сайт-візитка може включати сторінки "Про нас", "Послуги", "Контакти", "Портфоліо" тощо. Орієнтовна вартість стартує від 800 доларів. Додаткові функції, такі як інтерактивні елементи чи форма заявок, можуть вплинути на загальну ціну.',
+                                        'Цей формат підходить для представлення вашого бізнесу чи компанії. Сайт-візитка може включати сторінки "Про нас", "Послуги", "Контакти", "Портфоліо" тощо. Орієнтовна вартість стартує від 1100 доларів. Додаткові функції, такі як інтерактивні елементи чи форма заявок, можуть вплинути на загальну ціну.',
                                     ],
                                 },
                             ],
@@ -899,7 +899,7 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
             shortAnswerText: [
-                "Cena zależy od zakresu i złożoności projektu. Orientacyjny budżet na stronę typu landing page w jednym języku, bez wyboru jasnego/ciemnego motywu, zaczyna się od 800 USD. Koszt strony wizytówki w jednym języku, do 5 stron, bez zmiany motywu, wynosi około 800 USD. Koszt stworzenia sklepu internetowego dla 10-15 produktów i jedną metodą płatności na stronie zaczyna się od 1600 USD.",
+                "Cena zależy od zakresu i złożoności projektu. Orientacyjny budżet na stronę typu landing page w jednym języku, bez wyboru jasnego/ciemnego motywu, zaczyna się od 800 USD. Koszt strony wizytówki w jednym języku, do 5 stron, bez zmiany motywu, wynosi około 1100 USD. Koszt stworzenia sklepu internetowego dla 10-15 produktów i jedną metodą płatności na stronie zaczyna się od 1600 USD.",
             ],
             imageAltText:
                 "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
@@ -927,7 +927,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Do 5 stron",
                                     text: [
-                                        'Ten format sprawdzi się przy prezentacji firmy lub działalności. Może zawierać strony takie jak "O nas", "Usługi", "Kontakt", "Portfolio". Cena zaczyna się od 800 USD. Dodatkowe funkcje, takie jak interaktywne elementy czy formularze, mogą wpłynąć na końcową cenę.',
+                                        'Ten format sprawdzi się przy prezentacji firmy lub działalności. Może zawierać strony takie jak "O nas", "Usługi", "Kontakt", "Portfolio". Cena zaczyna się od 1100 USD. Dodatkowe funkcje, takie jak interaktywne elementy czy formularze, mogą wpłynąć na końcową cenę.',
                                     ],
                                 },
                             ],
@@ -1017,7 +1017,7 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "How much does development cost?",
             shortAnswerText: [
-                "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $800. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $800. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
+                "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $800. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $1100. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
             ],
             imageAltText: "How much does development cost?",
             fullAnswerTopText: [
@@ -1044,7 +1044,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Up to 5 pages",
                                     text: [
-                                        'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $800. Additional features, such as interactive elements or a request form, may affect the total price.',
+                                        'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $1100. Additional features, such as interactive elements or a request form, may affect the total price.',
                                     ],
                                 },
                             ],
