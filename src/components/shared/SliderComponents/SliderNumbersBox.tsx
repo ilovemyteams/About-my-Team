@@ -33,9 +33,15 @@ export const SliderNumbersBox = <T,>({
                                     ? "flex"
                                     : "",
                     }}
-                    onClick={() => onDotButtonClick(index)}
+                    onClick={
+                        index === selectedIndex
+                            ? undefined
+                            : () => onDotButtonClick(index)
+                    }
                     className={`slider-number ${
-                        index === selectedIndex ? "slider-number--selected" : ""
+                        index === selectedIndex
+                            ? "slider-number--selected cursor-default"
+                            : "cursor-pointer"
                     } 
                    w-7 h-7 flex items-center justify-center font-caviar font-bold text-base 
                    `}
