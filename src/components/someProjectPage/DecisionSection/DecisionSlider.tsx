@@ -33,18 +33,31 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
     const [direction, setDirection] = useState<{
-        dir: "next" | "prev";
+        dir: "up" | "down" | "hideUp" | "hideDown";
         key: number;
     } | null>(null);
 
     const handlePrev = () => {
-        setDirection({ dir: "prev", key: Date.now() });
-        onPrevButtonClick();
+        setDirection({ dir: "hideUp", key: Date.now() });
+        setTimeout(() => {
+            onPrevButtonClick();
+            setDirection({ dir: "up", key: Date.now() });
+        }, 700);
     };
 
     const handleNext = () => {
-        setDirection({ dir: "next", key: Date.now() });
-        onNextButtonClick();
+        setDirection({ dir: "hideUp", key: Date.now() });
+        setTimeout(() => {
+            onNextButtonClick();
+            setDirection({ dir: "up", key: Date.now() });
+        }, 700);
+    };
+    const handleDotClick = (i: number) => {
+        setDirection({ dir: "hideUp", key: Date.now() });
+        setTimeout(() => {
+            onDotButtonClick(i);
+            setDirection({ dir: "up", key: Date.now() });
+        }, 700);
     };
 
     return (
@@ -75,7 +88,7 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
                                 scrollSnaps={scrollSnaps}
                                 selectedIndex={selectedIndex}
                                 sliders={decisions}
-                                onDotButtonClick={onDotButtonClick}
+                                onDotButtonClick={handleDotClick}
                             />
                             <NextButton
                                 onClick={handleNext}

@@ -9,7 +9,7 @@ export const DecisionCard = ({
     direction,
 }: {
     data: SliderType;
-    direction: "next" | "prev" | undefined;
+    direction: "up" | "down" | "hideUp" | "hideDown" | undefined;
 }) => {
     const { slideLeft, slideRight } = data;
 
@@ -17,7 +17,8 @@ export const DecisionCard = ({
         <div className="flex flex-col gap-3 tab:flex-row tab:gap-0 desk:gap-[52px] h-[462px] tab:h-[358px] pc:h-[464px] desk:h-[530px]">
             <div
                 className={`tab:w-1/2 flex flex-col gap-3 tab:gap-8 pc:gap-6 transition-all duration-700 ease-in-out 
-                    ${direction === "prev" && "animate-slideDown"} ${direction === "next" && "animate-slideUp"}`}
+                    ${direction === "down" && "animate-slideDown"} ${direction === "up" && "animate-slideUp"} 
+                    ${direction === "hideDown" && "animate-slideHideDown"} ${direction === "hideUp" && "animate-slideHideUp"}`}
             >
                 {slideLeft.map((item, idx) => (
                     <div key={idx}>
@@ -66,7 +67,8 @@ export const DecisionCard = ({
 
             <div
                 className={`tab:w-1/2 flex tab:flex-col gap-3 tab:gap-8 pc:gap-6 flex-col-reverse transition-all duration-700 ease-in-out
-                    ${direction === "prev" && "animate-slideUp"} ${direction === "next" && "animate-slideDown"}`}
+                    ${direction === "down" && "animate-slideUp"} ${direction === "up" && "animate-slideDown"} 
+                    ${direction === "hideDown" && "animate-slideHideUp"} ${direction === "hideUp" && "animate-slideHideDown"}`}
             >
                 {slideRight.map((item, idx) => (
                     <div key={idx}>
