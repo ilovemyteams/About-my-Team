@@ -1732,7 +1732,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Ціна: від 500$ (залежить від складності дизайну та функціональності).",
+                        text: "Ціна: від 800$ (залежить від складності дизайну та функціональності).",
                     },
                 ],
                 introduction:
@@ -1818,7 +1818,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Price: from $ 500 (depends on the complexity of the design and functionality).",
+                        text: "Price: from $ 800 (depends on the complexity of the design and functionality).",
                     },
                 ],
                 introduction:
@@ -1904,7 +1904,7 @@ export const servicesData: ServiceType[] = [
                     },
                     {
                         icon: "currency",
-                        text: "Cena: od 500 USD (w zależności od złożoności projektu i funkcjonalności).",
+                        text: "Cena: od 800 USD (w zależności od złożoności projektu i funkcjonalności).",
                     },
                 ],
                 introduction:
