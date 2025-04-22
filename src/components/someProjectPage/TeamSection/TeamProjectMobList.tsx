@@ -38,7 +38,7 @@ export const TeamProjectMobList = ({
     return (
         <div className="relative embla min-w-full ">
             <div className=" overflow-hidden" ref={emblaRef}>
-                <ul className="flex gap-0 ">
+                <ul className="flex gap-0">
                     <OneSliderTeamProject members={members} />
                 </ul>
             </div>

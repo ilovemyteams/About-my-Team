@@ -91,6 +91,12 @@ body {
     .slider-dot--selected {
         @apply bg-redLight dark:bg-red justify-center;
     }
+    .slider-number {
+        @apply dark:text-grey text-greyLight;
+    }
+    .slider-number--selected {
+        @apply text-redLight dark:text-red border-b border-redLight dark:border-red;
+    }
 
     .scroll {
         @apply scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent;

@@ -9,7 +9,7 @@ export const TeamMemberCard = ({ member }: { member: MemberDataItemType }) => {
     const imageURL = member.data.imageURL;
     const locale = useLocale();
     return (
-        <div className="flex gap-3 items-center pc:gap-5 desk:gap-6 mb-4 tab:mb-0 group">
+        <div className="flex gap-3 items-center pc:gap-5 desk:gap-6 mt-2 mb-4 tab:mt-0 ml-3 tab:ml-0 group">
             {imageURL && (
                 <ImageFromCloud
                     storage="members"

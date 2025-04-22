@@ -6,7 +6,9 @@ import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
+import { TitleVideoDotslistItem } from "../shared/TitleVideoList/TitleVideoDotslistItem";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { HeroSection } from "./HeroSection/HeroSection";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
@@ -21,7 +23,7 @@ export const SomeProjectPage = ({
     currentProject: PortfolioDataItemType;
 }) => {
     const locale = useLocale();
-    const { name, deadlines, heroTitle, heroText, content } =
+    const { name, content, heroText, heroTitle, deadlines } =
         currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
     const members = membersData.filter(member =>
@@ -33,10 +35,13 @@ export const SomeProjectPage = ({
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
     );
+    const decision = currentProject[locale as LocaleType].decision;
+    const titleVideoList = currentProject[locale as LocaleType].titleListVideo;
 
     return (
         <>
             <ProjectHeader title={name} />
+
             {heroText && heroTitle && imageForHero ? (
                 <HeroSection
                     title={heroTitle}
@@ -59,6 +64,12 @@ export const SomeProjectPage = ({
                     return <div key={index}></div>;
                 })}
 
+            {decision && <DecisionSection decision={decision} />}
+            {titleVideoList &&
+                titleVideoList.length !== 0 &&
+                titleVideoList.map((item, index) => (
+                    <TitleVideoDotslistItem key={index} data={item} />
+                ))}
             <TeamSectionProject members={members} />
             {technologies && (
                 <StackSectionProject technologies={technologies} />
