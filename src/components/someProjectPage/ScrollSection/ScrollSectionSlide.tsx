@@ -26,8 +26,9 @@ export const ScrollSectionSlide = ({
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isInView]);
+
     return (
-        <li
+        <div
             className="min-w-full h-full pb-5 flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
             ref={slideRef}
         >
@@ -37,7 +38,7 @@ export const ScrollSectionSlide = ({
                 </div>
             </div>
 
-            <ul className="flex flex-col gap-3 tab:gap-4 tab:w-1/2 tab:shrink-0">
+            <ul className="flex flex-col gap-3 tab:gap-4 tab:w-1/2 tab:shrink-0 tab:justify-evenly">
                 {item.text.map((text, index) => (
                     <li key={index} className="flex gap-3">
                         <IconCheck className="shrink-0 size-[16px] text-purple-130  dark:text-disabledLight" />
@@ -47,6 +48,6 @@ export const ScrollSectionSlide = ({
                     </li>
                 ))}
             </ul>
-        </li>
+        </div>
     );
 };

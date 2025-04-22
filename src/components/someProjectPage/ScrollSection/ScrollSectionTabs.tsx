@@ -3,12 +3,19 @@ import React from "react";
 interface ScrollSectionTabsProps {
     tabs: string[];
     isActive: string;
+    onClickTab?: (title: string) => void;
 }
 
 export const ScrollSectionTabs = ({
     isActive,
     tabs,
+    onClickTab,
 }: ScrollSectionTabsProps) => {
+    const onClickTabButton = (title: string) => {
+        if (onClickTab) {
+            onClickTab(title);
+        }
+    };
     return (
         <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end">
             {tabs.map((title, index) => {
@@ -22,7 +29,12 @@ export const ScrollSectionTabs = ({
                         key={index}
                         className={`p-2 font-bold border-[1px] border-purple-strokeLight dark:border-purple-stroke text-sm ${color} tab:px-4 tab:py-[13px] tab:text-base `}
                     >
-                        <button>{title}</button>
+                        <button
+                            onClick={() => onClickTabButton(title)}
+                            className="pointer-events-none tab:pointer-events-auto"
+                        >
+                            {title}
+                        </button>
                     </li>
                 );
             })}
