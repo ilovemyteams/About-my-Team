@@ -699,7 +699,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision2_omeezz.jpg",
                             },
                             {
                                 text: [
