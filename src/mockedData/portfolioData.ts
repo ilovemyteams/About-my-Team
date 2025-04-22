@@ -589,6 +589,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+
                                 image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
                             },
                             {
@@ -605,14 +608,15 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
                             },
                         ],
                     },
                     {
                         slideLeft: [
                             {
-                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
                             },
                         ],
                         slideRight: [
@@ -682,89 +686,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 "Set up sales analytics",
                             ],
                             icon: "settings",
-                        },
-                    ],
-                },
-                {
-                    layout: "slider",
-                    title: "<purple>The solutions</purple>, that were implemented",
-                    data: [
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "A unique mascot was developed, the prototype of which was a real cat of a farmer who owns the store",
-                                        "All illustrations are individually created and hand-drawn, and a set of souvenir products has been developed, which has increased customer loyalty and attracted new customers with children",
-                                        "Idea and implementation of an order for the Armed Forces of Ukraine with delivery to regions where there is no delivery by Nova Poshta",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Monopay payment system was connected and the payment and order analytics process is automated",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "The analysis of the yield and cost of seasonal vegetables is carried out and a list of the most marginal crops is proposed",
-                                        'The idea and implementation of ordering vegetables "for the future harvest""',
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "An internal CMS was developed to track order history by product type, customer, paid/unpaid orders, orders for future harvest and for the Armed Forces of Ukraine",
-                                        "Sales reporting has been automated",
-                                        "Implemented tools to optimize business processes of ordering, delivery and reporting for further analysis",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Implemented a system of e-mail notifications about assortment updates and the start of the season for a particular product",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Increased presence in social networks and brand attractiveness for the media",
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
-                                },
-                            ],
                         },
                     ],
                 },
@@ -840,6 +761,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+
                                 image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
                             },
                             {
@@ -856,14 +780,15 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
+                                screenImage:
+                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
                             },
                         ],
                     },
                     {
                         slideLeft: [
                             {
-                                image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
                             },
                         ],
                         slideRight: [
