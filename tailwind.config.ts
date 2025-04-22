@@ -519,6 +519,46 @@ const config: Config = {
                         opacity: "1",
                     },
                 },
+                slideUp: {
+                    "0%": { transform: "translateY(100%)" },
+                    "10%": { transform: "translateY(100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
+                slideDown: {
+                    "0%": { transform: "translateY(-100%)" },
+                    "10%": { transform: "translateY(-100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
+                slideHideUp: {
+                    "0%": { transform: "translateY(0)" },
+                    "90%": { transform: "translateY(100%)" },
+                    "100%": { transform: "translateY(100%)" },
+                },
+                slideHideDown: {
+                    "0%": { transform: "translateY(0)" },
+                    "90%": { transform: "translateY(-100%)" },
+                    "100%": { transform: "translateY(-100%)" },
+                },
+                slideLeft: {
+                    "0%": { transform: "translateX(100%)" },
+                    "10%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideRight: {
+                    "0%": { transform: "translateX(-100%)" },
+                    "10%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideHideLeft: {
+                    "0%": { transform: "translateX(0)" },
+                    "90%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+                slideHideRight: {
+                    "0%": { transform: "translateX(0)" },
+                    "90%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(100%)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -539,6 +579,14 @@ const config: Config = {
                 blink2: "glow 600ms 200ms infinite",
                 blink3: "glow 600ms 400ms infinite",
                 showUp: "showUp 700ms ease-out infinite",
+                slideUp: "slideUp 700ms ease-out",
+                slideDown: "slideDown 700ms ease-out",
+                slideHideUp: "slideHideUp 700ms ease-out",
+                slideHideDown: "slideHideDown 700ms ease-out",
+                slideLeft: "slideLeft 700ms ease-out",
+                slideRight: "slideRight 700ms ease-out",
+                slideHideLeft: "slideHideLeft 700ms ease-out",
+                slideHideRight: "slideHideRight 700ms ease-out",
             },
         },
         backgroundImage: {
