@@ -6,6 +6,7 @@ import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
+import { TitleVideoDotslistItem } from "../shared/TitleVideoList/TitleVideoDotslistItem";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
 import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
@@ -35,6 +36,7 @@ export const SomeProjectPage = ({
         feedback => feedback.data.slug === currentProjectSlug
     );
     const decision = currentProject[locale as LocaleType].decision;
+    const titleVideoList = currentProject[locale as LocaleType].titleListVideo;
 
     return (
         <>
@@ -63,6 +65,11 @@ export const SomeProjectPage = ({
                 })}
 
             {decision && <DecisionSection decision={decision} />}
+            {titleVideoList &&
+                titleVideoList.length !== 0 &&
+                titleVideoList.map((item, index) => (
+                    <TitleVideoDotslistItem key={index} data={item} />
+                ))}
             <TeamSectionProject members={members} />
             {technologies && (
                 <StackSectionProject technologies={technologies} />
