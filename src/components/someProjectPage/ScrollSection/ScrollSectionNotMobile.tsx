@@ -15,19 +15,22 @@ interface ScrollSectionNotMobileProps {
 export const ScrollSectionNotMobile = ({
     data,
 }: ScrollSectionNotMobileProps) => {
-    const [isActive, setIsActive] = useState(data[0].title);
+    const [activeTab, setActiveTab] = useState(data[0].title);
+
     const titles = data.map(item => item.title);
     const slideRefs = useRef<Record<string, HTMLLIElement | null>>({});
 
     const onClickTab = (title: string) => {
-        setIsActive(title);
+        setActiveTab(title);
         const slideRef = slideRefs.current[title];
+
         if (slideRef) {
-            slideRef.scrollIntoView({
-                behavior: "smooth",
-                inline: "start",
-                block: "nearest",
-            });
+            setTimeout(() => {
+                slideRef.scrollIntoView({
+                    inline: "start",
+                    block: "nearest",
+                });
+            }, 500);
         }
     };
 
@@ -36,7 +39,7 @@ export const ScrollSectionNotMobile = ({
             <div className="flex flex-col tab:gap-10 ">
                 <ScrollSectionTabs
                     tabs={titles}
-                    isActive={isActive}
+                    activeTab={activeTab}
                     onClickTab={onClickTab}
                 />
 
@@ -50,7 +53,10 @@ export const ScrollSectionNotMobile = ({
                                 }}
                                 className="min-w-full"
                             >
-                                <ScrollSectionSlide item={item} />
+                                <ScrollSectionSlide
+                                    item={item}
+                                    activeTab={activeTab}
+                                />
                             </li>
                         ))}
                     </motion.ul>

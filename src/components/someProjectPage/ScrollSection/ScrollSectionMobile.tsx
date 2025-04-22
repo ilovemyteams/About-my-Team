@@ -13,7 +13,7 @@ interface ScrollSectionMobileProps {
 }
 
 export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
-    const [isActive, setIsActive] = useState(data[0].title);
+    const [activeTab, setActiveTab] = useState(data[0].title);
     const targetrRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetrRef });
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-210%"]);
@@ -21,7 +21,7 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
     const titles = data.map(item => item.title);
 
     const onChangeActiveSlide = (title: string) => {
-        setIsActive(title);
+        setActiveTab(title);
     };
 
     return (
@@ -30,7 +30,7 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
             ref={targetrRef}
         >
             <div className="sticky top-[90px] max-h-[calc(100dvh_-_90px)] h-[calc(100dvh_-_100px)] flex flex-col gap-4">
-                <ScrollSectionTabs tabs={titles} isActive={isActive} />
+                <ScrollSectionTabs tabs={titles} activeTab={activeTab} />
 
                 <div className="grow shrink ">
                     <motion.ul
@@ -42,6 +42,7 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
                                 key={index}
                                 item={item}
                                 onChangeActiveSlide={onChangeActiveSlide}
+                                activeTab={activeTab}
                             />
                         ))}
                     </motion.ul>
