@@ -45,7 +45,7 @@ export const ScrollSectionSlide = ({
         enter: {
             x: 0,
             y: 0,
-            transition: { duration: 0.5, delay: isMobile ? 0 : 0.8 },
+            transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
             x: isMobile ? 0 : "-100%",
@@ -57,7 +57,7 @@ export const ScrollSectionSlide = ({
     const slideVariants = {
         enter: {
             y: 0,
-            transition: { duration: 0.5, delay: isMobile ? 0 : 0.8 },
+            transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
             y: "150%",
@@ -75,7 +75,7 @@ export const ScrollSectionSlide = ({
                 <motion.div
                     className="absolute inset-0 "
                     variants={iconVariants}
-                    initial="exit"
+                    initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
                 >
                     <Icon className="absolute left-0 top-0  w-full h-full  text-redLight dark:text-red " />
@@ -86,7 +86,7 @@ export const ScrollSectionSlide = ({
                 <motion.ul
                     className="flex flex-col gap-3 tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 "
                     variants={slideVariants}
-                    initial="exit"
+                    initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
                 >
                     {item.text.map((text, index) => (
