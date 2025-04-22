@@ -23,7 +23,7 @@ export const SomeProjectPage = ({
     currentProject: PortfolioDataItemType;
 }) => {
     const locale = useLocale();
-    const { name, content, heroText, heroTitle, deadlines } =
+    const { name, heroText, heroTitle, deadlines, tasks } =
         currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
     const members = membersData.filter(member =>
@@ -55,14 +55,7 @@ export const SomeProjectPage = ({
                 <UnderConstruction />
             )}
 
-            {content &&
-                content.map((section, index) => {
-                    if (section.layout === "scroll") {
-                        return <ScrollSection key={index} content={section} />;
-                    }
-
-                    return <div key={index}></div>;
-                })}
+            {tasks && <ScrollSection content={tasks} />}
 
             {decision && <DecisionSection decision={decision} />}
             {titleVideoList &&

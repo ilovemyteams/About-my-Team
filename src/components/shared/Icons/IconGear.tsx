@@ -3,13 +3,12 @@ import { IconProps } from "@/types/iconProps.interface";
 export const IconGear = ({ className }: IconProps) => {
     return (
         <svg
-            width="420"
-            height="420"
             viewBox="0 0 420 420"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={className}
             aria-label="gear icon"
+            preserveAspectRatio="xMidYMid meet"
         >
             <path
                 fillRule="evenodd"

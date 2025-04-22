@@ -351,6 +351,7 @@
         "analysis": "Analysis",
         "design": "Design",
         "launch": "Launch",
-        "support": "Support"
+        "support": "Support",
+        "taskTitle": "<purple>The tasks</purple>, we worked on"
     }
 }

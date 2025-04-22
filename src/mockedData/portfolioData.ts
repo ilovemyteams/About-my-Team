@@ -15,48 +15,34 @@ type PortfolioDataItemTranslation = {
     deadlines?: DeadlineType;
     decision?: SliderSectionType;
     titleListVideo?: SectionWithVideoType[];
-    content?: (
-        | ScrollSectionType
-        | SliderSectionType
-        | SectionWithVideoType
-        | AdaptiveDesignSection
-    )[];
+    tasks?: ScrollSectionType;
 };
 
+export interface ScrollSectionType {
+    title: string;
+    data: ScrollSectionDataType[];
+}
 export interface ScrollSectionDataType {
     title: string;
     text: string[];
     icon: string;
 }
-export interface ScrollSectionType {
-    layout: "scroll";
-    title: string;
-    data: ScrollSectionDataType[];
-}
+
 export interface SliderType {
     slideLeft: SlideType[];
     slideRight: SlideType[];
 }
 export interface SliderSectionType {
-    layout: "slider";
     title: string;
     data: SliderType[];
 }
 
 export interface SectionWithVideoType {
-    layout: "video";
     title: string;
     description: string[];
     video: string;
 }
 
-interface AdaptiveDesignSection {
-    layout: "adaptive";
-    title: string;
-    imageDesktop: string;
-    imageMobile1: string;
-    imageMobile2: string;
-}
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
@@ -314,7 +300,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                 support: "4+ місяці",
             },
             decision: {
-                layout: "slider",
                 title: "<purple>Рішення</purple>, які були реалізовані",
                 data: [
                     {
@@ -399,161 +384,43 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            content: [
-                {
-                    layout: "scroll",
-                    title: "<purple>Завдання</purple>, над якими ми працювали",
-                    data: [
-                        {
-                            title: "Унікальність",
-                            text: [
-                                "Створити унікальний та впізнаваний стиль і головного героя",
-                                'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
-                                "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
-                            ],
-                            icon: "light",
-                        },
-                        {
-                            title: "Клієнтський досвід",
-                            text: [
-                                "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
-                                "Залучити нових покупців і збільшити продажі",
-                                "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
-                                "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
-                            ],
-                            icon: "people",
-                        },
-                        {
-                            title: "Бізнес-процеси",
-                            text: [
-                                "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
-                                "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
-                                "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
-                                "Налаштувати аналітику продажів",
-                            ],
-                            icon: "settings",
-                        },
-                    ],
-                },
-                {
-                    layout: "slider",
-                    title: "<purple>Рішення</purple>, які були реалізовані",
-                    data: [
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Розроблено унікального маскота, прототипом якого став реальний кіт фермера — власника магазину",
-                                        "Усі ілюстрації створені індивідуально та відмальовані вручну, також продумано набір сувенірної продукції, що підвищило лояльність покупців і збільшило залучення нових клієнтів із дітьми",
-                                        "Ідея та реалізація замовлення для ЗСУ з доставкою в регіони, де немає доставки Новою Поштою",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Підключено оплату через Monopay та автоматизовано процес оплати й аналітики замовлень",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Проведено аналітику врожайності та вартості сезонних овочів і запропоновано перелік найбільш маржинальних культур",
-                                        'Ідея та реалізація замовлення овочів "під майбутній врожай"',
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        'Розроблено внутрішню CMS для відстежування історії замовлень за типами продукції, замовниками, оплаченими/неоплаченими замовленнями, замовленнями "під майбутній врожай" та для ЗСУ',
-                                        "Автоматизовано звітність з продажів",
-                                        "Впроваджено інструменти для оптимізації бізнес-процесів оформлення замовлення, доставки та формування звітності для подальшого аналізу",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision2_omeezz.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Реалізовано систему e-mail сповіщень про оновлення асортименту та початок сезону конкретного продукту",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Збільшилася присутність у соціальних мережах та привабливість бренду для ЗМІ",
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: "video",
-                    title: "Особистий <purple>кабінет користувача</purple>",
-                    description: [
-                        "Збереження даних про доставку та отримувачів (кілька отримувачів)",
-                        'Історія замовлень (для себе, для ЗСУ, "під майбутній врожай")',
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "Сторінка <purple>товару</purple>",
-                    description: [
-                        "Зручна та структурована подача інформації",
-                        'Можливість замовити для себе, для ЗСУ або "під майбутній врожай"',
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "Панель <purple>адміністратора</purple>",
-                    description: [
-                        "Управління товарами (додавання, редагування, видалення)",
-                        "Управління наявністю товарів (сезон/не сезон)",
-                        "База покупців та підписників",
-                        'Історія замовлень (для себе, для ЗСУ, "під майбутній врожай")',
-                        "Аналітика замовлень (оплачені/не оплачені, вислані/не вислані)",
-                        "Вивантаження даних у Google Sheets",
-                    ],
+            tasks: {
+                title: "<purple>Завдання</purple>, над якими ми працювали",
+                data: [
+                    {
+                        title: "Унікальність",
+                        text: [
+                            "Створити унікальний та впізнаваний стиль і головного героя",
+                            'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
+                            "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Клієнтський досвід",
+                        text: [
+                            "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
+                            "Залучити нових покупців і збільшити продажі",
+                            "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
+                            "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Бізнес-процеси",
+                        text: [
+                            "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
+                            "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
+                            "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
+                            "Налаштувати аналітику продажів",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
-                    video: "uC7nWNG3PPc",
-                },
-            ],
             titleListVideo: [
                 {
-                    layout: "video",
                     title: "Особистий <purple>кабінет користувача</purple>",
                     description: [
                         "Збереження даних про доставку та отримувачів (кілька отримувачів)",
@@ -562,7 +429,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "Сторінка <purple>товару</purple>",
                     description: [
                         "Зручна та структурована подача інформації",
@@ -571,7 +437,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "Панель <purple>адміністратора</purple>",
                     description: [
                         "Управління товарами (додавання, редагування, видалення)",
@@ -602,7 +467,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                 support: "4+ months",
             },
             decision: {
-                layout: "slider",
                 title: "<purple>The solutions</purple>, that were implemented",
                 data: [
                     {
@@ -688,78 +552,43 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            content: [
-                {
-                    layout: "scroll",
-                    title: "<purple>The tasks</purple>, we worked on",
-                    data: [
-                        {
-                            title: "Uniqueness",
-                            text: [
-                                "Create a unique and recognizable style and the main character",
-                                'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
-                                "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
-                            ],
-                            icon: "light",
-                        },
-                        {
-                            title: "Customer experience",
-                            text: [
-                                "Increase loyalty of regular customers and attract media attention",
-                                "Attract new customers and increase sales",
-                                "Provide an excellent user experience for both visitors and regular customers",
-                                "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
-                            ],
-                            icon: "people",
-                        },
-                        {
-                            title: "Business processes",
-                            text: [
-                                "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
-                                "Optimize business processes, including ordering and delivery",
-                                "Ensure a reliable and stable payment process and automate customer and order accounting",
-                                "Set up sales analytics",
-                            ],
-                            icon: "settings",
-                        },
-                    ],
-                },
-                {
-                    layout: "video",
-                    title: "Personal <purple>user panel</purple>",
-                    description: [
-                        "Saving data on delivery and recipients (multiple recipients)",
-                        'Order history (for yourself, for the Armed Forces, "for the future harvest")',
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "Product <purple>page</purple>",
-                    description: [
-                        "Convenient and structured presentation of information",
-                        'Possibility to order for yourself, for the Armed Forces, or "for the future harvest"',
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "<purple>Admin</purple> panel",
-                    description: [
-                        "Product management (adding, editing, deleting)",
-                        "Product availability management (season/out of season)",
-                        "Base of customers and subscribers",
-                        'Order history (for yourself, for the Armed Forces, "for the future harvest")',
-                        "Order analytics (paid/not paid, sent/not sent)",
-                        "Data export to Google Sheets",
-                    ],
+            tasks: {
+                title: "<purple>The tasks</purple>, we worked on",
+                data: [
+                    {
+                        title: "Uniqueness",
+                        text: [
+                            "Create a unique and recognizable style and the main character",
+                            'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
+                            "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Customer experience",
+                        text: [
+                            "Increase loyalty of regular customers and attract media attention",
+                            "Attract new customers and increase sales",
+                            "Provide an excellent user experience for both visitors and regular customers",
+                            "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Business processes",
+                        text: [
+                            "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
+                            "Optimize business processes, including ordering and delivery",
+                            "Ensure a reliable and stable payment process and automate customer and order accounting",
+                            "Set up sales analytics",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
-                    video: "uC7nWNG3PPc",
-                },
-            ],
             titleListVideo: [
                 {
-                    layout: "video",
                     title: "Personal <purple>user panel</purple>",
                     description: [
                         "Saving data on delivery and recipients (multiple recipients)",
@@ -768,7 +597,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "Product <purple>page</purple>",
                     description: [
                         "Convenient and structured presentation of information",
@@ -777,7 +605,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "<purple>Admin</purple> panel",
                     description: [
                         "Product management (adding, editing, deleting)",
@@ -808,7 +635,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                 support: "4+ miesięcy",
             },
             decision: {
-                layout: "slider",
                 title: "<purple>Rozwiązania</purple>, które zostały wdrożone",
                 data: [
                     {
@@ -894,161 +720,43 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            content: [
-                {
-                    layout: "scroll",
-                    title: "<purple>Zadania</purple>, nad którymi pracowaliśmy",
-                    data: [
-                        {
-                            title: "Unikalność",
-                            text: [
-                                "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
-                                "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
-                                "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
-                            ],
-                            icon: "light",
-                        },
-                        {
-                            title: "Doświadczenie klienta",
-                            text: [
-                                "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
-                                "Pozyskać nowych klientów i zwiększyć sprzedaż",
-                                "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
-                                "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
-                            ],
-                            icon: "people",
-                        },
-                        {
-                            title: "Procesy biznesowe",
-                            text: [
-                                "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
-                                "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
-                                "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
-                                "Skonfigurować analitykę sprzedaży",
-                            ],
-                            icon: "settings",
-                        },
-                    ],
-                },
-                {
-                    layout: "slider",
-                    title: "<purple>Rozwiązania</purple>, które zostały wdrożone",
-                    data: [
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Stworzono unikalnego maskota, którego prototypem stał się prawdziwy kot właściciela sklepu – rolnika",
-                                        "Wszystkie ilustracje zostały stworzone indywidualnie i ręcznie namalowane, opracowano również zestaw produktów upominkowych, które zwiększyły lojalność klientów i przyciągnęły nowych, zwłaszcza z dziećmi",
-                                        "Pomysł i realizacja zamówienia dla Sił Zbrojnych Ukrainy z dostawą do regionów, gdzie nie ma dostawy przez Nową Pocztę",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Podłączono płatności przez Monopay oraz zautomatyzowano proces płatności i analityki zamówień",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Przeprowadzono analizę plonów i kosztów sezonowych warzyw oraz zaproponowano listę najbardziej dochodowych roślin",
-                                        "Pomysł i realizacja zamówienia warzyw „na przyszły plon”",
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668183/feature3_lq2w84.png",
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "ihttps://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Opracowano wewnętrzny CMS do śledzenia historii zamówień według rodzajów produktów, zamawiających, zamówień opłaconych/nieopłaconych, zamówień „na przyszły plon” i dla Sił Zbrojnych Ukrainy",
-                                        "Zautomatyzowano raportowanie sprzedaży",
-                                        "Wdrożono narzędzia do optymalizacji procesów biznesowych, takich jak składanie zamówień, dostawy oraz tworzenie raportów do dalszej analizy",
-                                    ],
-                                },
-                            ],
-                        },
-                        {
-                            slideLeft: [
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668211/feature5_fo7cpt.jpg",
-                                },
-                                {
-                                    text: [
-                                        "Zrealizowano system powiadomień e-mail o aktualizacji asortymentu oraz rozpoczęciu sezonu dla konkretnego produktu",
-                                    ],
-                                },
-                            ],
-                            slideRight: [
-                                {
-                                    text: [
-                                        "Zwiększona obecność w mediach społecznościowych oraz atrakcyjność marki dla mediów",
-                                    ],
-                                },
-                                {
-                                    image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668217/feature6_gixnnh.png",
-                                },
-                            ],
-                        },
-                    ],
-                },
-                {
-                    layout: "video",
-                    title: "Osobisty <purple>panel użytkownika</purple>",
-                    description: [
-                        "Zapis danych dotyczących dostawy i odbiorców (wielu odbiorców)",
-                        "Historia zamówień (dla siebie, dla Sił Zbrojnych Ukrainy, „na przyszły plon”)",
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "Strona <purple>produktu</purple>",
-                    description: [
-                        "Wygodne i uporządkowane przedstawienie informacji",
-                        "MemberCardModalBodyTabożliwość zamówienia dla siebie, dla Sił Zbrojnych Ukrainy lub „na przyszły plon”",
-                    ],
-                    video: "uC7nWNG3PPc",
-                },
-                {
-                    layout: "video",
-                    title: "Panel <purple>administratora</purple>",
-                    description: [
-                        "Zarządzanie produktami (dodawanie, edytowanie, usuwanie)",
-                        "Zarządzanie dostępnością produktów (sezon/poza sezonem)",
-                        "Baza klientów i subskrybentów",
-                        'Historia zamówień (dla siebie, dla Sił Zbrojnych Ukrainy, "na przyszłe zbiory")',
-                        "Analiza zamówień (opłacone/nieopłacone, wysłane/niewysłane)",
-                        "Eksport danych do Google Sheets",
-                    ],
+            tasks: {
+                title: "<purple>Zadania</purple>, nad którymi pracowaliśmy",
+                data: [
+                    {
+                        title: "Unikalność",
+                        text: [
+                            "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
+                            "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
+                            "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Doświadczenie klienta",
+                        text: [
+                            "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
+                            "Pozyskać nowych klientów i zwiększyć sprzedaż",
+                            "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
+                            "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Procesy biznesowe",
+                        text: [
+                            "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
+                            "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
+                            "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
+                            "Skonfigurować analitykę sprzedaży",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
-                    video: "uC7nWNG3PPc",
-                },
-            ],
             titleListVideo: [
                 {
-                    layout: "video",
                     title: "Osobisty <purple>panel użytkownika</purple>",
                     description: [
                         "Zapis danych dotyczących dostawy i odbiorców (wielu odbiorców)",
@@ -1057,7 +765,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "Strona <purple>produktu</purple>",
                     description: [
                         "Wygodne i uporządkowane przedstawienie informacji",
@@ -1066,7 +773,6 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
                 {
-                    layout: "video",
                     title: "Panel <purple>administratora</purple>",
                     description: [
                         "Zarządzanie produktami (dodawanie, edytowanie, usuwanie)",
