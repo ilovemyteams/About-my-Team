@@ -503,7 +503,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                             {
                                 text: [
                                     "The analysis of the yield and cost of seasonal vegetables is carried out and a list of the most marginal crops is proposed",
-                                    'The idea and implementation of ordering vegetables "for the future harvest""',
+                                    'The idea and implementation of ordering vegetables "for the future harvest"',
                                 ],
                             },
                             {
