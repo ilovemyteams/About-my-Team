@@ -9,7 +9,7 @@ export const ScrollSection = ({ content }: { content: ScrollSectionType }) => {
     const { data, title } = content;
 
     return (
-        <PageSection className="pb-[80px] tab:pb-[100px] ">
+        <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <ScrollSectionTitle text={title} />
             <ScrollSectionMobile data={data} />
             <ScrollSectionNotMobile data={data} />

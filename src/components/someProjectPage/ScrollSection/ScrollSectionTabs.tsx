@@ -17,7 +17,7 @@ export const ScrollSectionTabs = ({
         }
     };
     return (
-        <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end">
+        <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end pc:absolute pc:top-0 pc:left-1/2">
             {tabs.map((title, index) => {
                 const color =
                     isActive === title
@@ -27,7 +27,7 @@ export const ScrollSectionTabs = ({
                 return (
                     <li
                         key={index}
-                        className={`p-2 font-bold border-[1px] border-purple-strokeLight dark:border-purple-stroke text-sm ${color} tab:px-4 tab:py-[13px] tab:text-base `}
+                        className={`p-2 font-caviar font-bold border-[1px] border-purple-strokeLight dark:border-purple-stroke text-sm ${color} tab:px-4 tab:py-[13px] tab:text-base `}
                     >
                         <button
                             onClick={() => onClickTabButton(title)}

@@ -32,7 +32,7 @@ export const ScrollSectionNotMobile = ({
     };
 
     return (
-        <div className="hidden tab:pb-[52px] tab:block ">
+        <div className="hidden tab:pb-[52px] tab:block pc:relative pc:pb-[60px]">
             <div className="flex flex-col tab:gap-10 ">
                 <ScrollSectionTabs
                     tabs={titles}

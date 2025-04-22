@@ -38,11 +38,11 @@ export const ScrollSectionSlide = ({
                 </div>
             </div>
 
-            <ul className="flex flex-col gap-3 tab:gap-4 tab:w-1/2 tab:shrink-0 tab:justify-evenly">
+            <ul className="flex flex-col gap-3 tab:gap-4 tab:w-1/2 tab:shrink-0 tab:justify-evenly pc:pt-[112px] pc:gap-5">
                 {item.text.map((text, index) => (
                     <li key={index} className="flex gap-3">
-                        <IconCheck className="shrink-0 size-[16px] text-purple-130  dark:text-disabledLight" />
-                        <span className="grow text-sm20 tab:text-base">
+                        <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
+                        <span className="grow text-sm20 tab:text-base pc:text-xl28 desk:text-2xl34">
                             {text}
                         </span>
                     </li>
