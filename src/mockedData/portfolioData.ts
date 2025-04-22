@@ -15,9 +15,13 @@ type PortfolioDataItemTranslation = {
     deadlines?: DeadlineType;
     decision?: SliderSectionType;
     titleListVideo?: SectionWithVideoType[];
-    tasks?: ScrollSectionDataType[];
+    tasks?: ScrollSectionType;
 };
 
+export interface ScrollSectionType {
+    title: string;
+    data: ScrollSectionDataType[];
+}
 export interface ScrollSectionDataType {
     title: string;
     text: string[];
@@ -380,37 +384,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: [
-                {
-                    title: "Унікальність",
-                    text: [
-                        "Створити унікальний та впізнаваний стиль і головного героя",
-                        'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
-                        "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
-                    ],
-                    icon: "light",
-                },
-                {
-                    title: "Клієнтський досвід",
-                    text: [
-                        "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
-                        "Залучити нових покупців і збільшити продажі",
-                        "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
-                        "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
-                    ],
-                    icon: "people",
-                },
-                {
-                    title: "Бізнес-процеси",
-                    text: [
-                        "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
-                        "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
-                        "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
-                        "Налаштувати аналітику продажів",
-                    ],
-                    icon: "settings",
-                },
-            ],
+            tasks: {
+                title: "<purple>Завдання</purple>, над якими ми працювали",
+                data: [
+                    {
+                        title: "Унікальність",
+                        text: [
+                            "Створити унікальний та впізнаваний стиль і головного героя",
+                            'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
+                            "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Клієнтський досвід",
+                        text: [
+                            "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
+                            "Залучити нових покупців і збільшити продажі",
+                            "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
+                            "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Бізнес-процеси",
+                        text: [
+                            "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
+                            "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
+                            "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
+                            "Налаштувати аналітику продажів",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
             titleListVideo: [
                 {
@@ -545,37 +552,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: [
-                {
-                    title: "Uniqueness",
-                    text: [
-                        "Create a unique and recognizable style and the main character",
-                        'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
-                        "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
-                    ],
-                    icon: "light",
-                },
-                {
-                    title: "Customer experience",
-                    text: [
-                        "Increase loyalty of regular customers and attract media attention",
-                        "Attract new customers and increase sales",
-                        "Provide an excellent user experience for both visitors and regular customers",
-                        "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
-                    ],
-                    icon: "people",
-                },
-                {
-                    title: "Business processes",
-                    text: [
-                        "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
-                        "Optimize business processes, including ordering and delivery",
-                        "Ensure a reliable and stable payment process and automate customer and order accounting",
-                        "Set up sales analytics",
-                    ],
-                    icon: "settings",
-                },
-            ],
+            tasks: {
+                title: "<purple>The tasks</purple>, we worked on",
+                data: [
+                    {
+                        title: "Uniqueness",
+                        text: [
+                            "Create a unique and recognizable style and the main character",
+                            'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
+                            "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Customer experience",
+                        text: [
+                            "Increase loyalty of regular customers and attract media attention",
+                            "Attract new customers and increase sales",
+                            "Provide an excellent user experience for both visitors and regular customers",
+                            "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Business processes",
+                        text: [
+                            "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
+                            "Optimize business processes, including ordering and delivery",
+                            "Ensure a reliable and stable payment process and automate customer and order accounting",
+                            "Set up sales analytics",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
             titleListVideo: [
                 {
@@ -710,37 +720,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: [
-                {
-                    title: "Unikalność",
-                    text: [
-                        "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
-                        "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
-                        "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
-                    ],
-                    icon: "light",
-                },
-                {
-                    title: "Doświadczenie klienta",
-                    text: [
-                        "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
-                        "Pozyskać nowych klientów i zwiększyć sprzedaż",
-                        "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
-                        "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
-                    ],
-                    icon: "people",
-                },
-                {
-                    title: "Procesy biznesowe",
-                    text: [
-                        "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
-                        "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
-                        "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
-                        "Skonfigurować analitykę sprzedaży",
-                    ],
-                    icon: "settings",
-                },
-            ],
+            tasks: {
+                title: "<purple>Zadania</purple>, nad którymi pracowaliśmy",
+                data: [
+                    {
+                        title: "Unikalność",
+                        text: [
+                            "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
+                            "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
+                            "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
+                        ],
+                        icon: "light",
+                    },
+                    {
+                        title: "Doświadczenie klienta",
+                        text: [
+                            "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
+                            "Pozyskać nowych klientów i zwiększyć sprzedaż",
+                            "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
+                            "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
+                        ],
+                        icon: "people",
+                    },
+                    {
+                        title: "Procesy biznesowe",
+                        text: [
+                            "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
+                            "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
+                            "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
+                            "Skonfigurować analitykę sprzedaży",
+                        ],
+                        icon: "settings",
+                    },
+                ],
+            },
 
             titleListVideo: [
                 {
