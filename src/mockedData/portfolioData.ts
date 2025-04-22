@@ -14,6 +14,7 @@ type PortfolioDataItemTranslation = {
     heroText?: string[];
     deadlines?: DeadlineType;
     decision?: SliderSectionType;
+    titleListVideo?: SectionWithVideoType[];
     content?: (
         | ScrollSectionType
         | SliderSectionType
@@ -42,7 +43,7 @@ export interface SliderSectionType {
     data: SliderType[];
 }
 
-interface SectionWithVideoType {
+export interface SectionWithVideoType {
     layout: "video";
     title: string;
     description: string[];
@@ -550,6 +551,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                     video: "uC7nWNG3PPc",
                 },
             ],
+            titleListVideo: [
+                {
+                    layout: "video",
+                    title: "Особистий <purple>кабінет користувача</purple>",
+                    description: [
+                        "Збереження даних про доставку та отримувачів (кілька отримувачів)",
+                        'Історія замовлень (для себе, для ЗСУ, "під майбутній врожай")',
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "Сторінка <purple>товару</purple>",
+                    description: [
+                        "Зручна та структурована подача інформації",
+                        'Можливість замовити для себе, для ЗСУ або "під майбутній врожай"',
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "Панель <purple>адміністратора</purple>",
+                    description: [
+                        "Управління товарами (додавання, редагування, видалення)",
+                        "Управління наявністю товарів (сезон/не сезон)",
+                        "База покупців та підписників",
+                        'Історія замовлень (для себе, для ЗСУ, "під майбутній врожай")',
+                        "Аналітика замовлень (оплачені/не оплачені, вислані/не вислані)",
+                        "Вивантаження даних у Google Sheets",
+                    ],
+
+                    video: "uC7nWNG3PPc",
+                },
+            ],
         },
         en: {
             name: "Smachno! na seli",
@@ -689,6 +724,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: "video",
+                    title: "Personal <purple>user panel</purple>",
+                    description: [
+                        "Saving data on delivery and recipients (multiple recipients)",
+                        'Order history (for yourself, for the Armed Forces, "for the future harvest")',
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "Product <purple>page</purple>",
+                    description: [
+                        "Convenient and structured presentation of information",
+                        'Possibility to order for yourself, for the Armed Forces, or "for the future harvest"',
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "<purple>Admin</purple> panel",
+                    description: [
+                        "Product management (adding, editing, deleting)",
+                        "Product availability management (season/out of season)",
+                        "Base of customers and subscribers",
+                        'Order history (for yourself, for the Armed Forces, "for the future harvest")',
+                        "Order analytics (paid/not paid, sent/not sent)",
+                        "Data export to Google Sheets",
+                    ],
+
+                    video: "uC7nWNG3PPc",
+                },
+            ],
+            titleListVideo: [
                 {
                     layout: "video",
                     title: "Personal <purple>user panel</purple>",
@@ -944,6 +1013,40 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                     ],
                 },
+                {
+                    layout: "video",
+                    title: "Osobisty <purple>panel użytkownika</purple>",
+                    description: [
+                        "Zapis danych dotyczących dostawy i odbiorców (wielu odbiorców)",
+                        "Historia zamówień (dla siebie, dla Sił Zbrojnych Ukrainy, „na przyszły plon”)",
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "Strona <purple>produktu</purple>",
+                    description: [
+                        "Wygodne i uporządkowane przedstawienie informacji",
+                        "MemberCardModalBodyTabożliwość zamówienia dla siebie, dla Sił Zbrojnych Ukrainy lub „na przyszły plon”",
+                    ],
+                    video: "uC7nWNG3PPc",
+                },
+                {
+                    layout: "video",
+                    title: "Panel <purple>administratora</purple>",
+                    description: [
+                        "Zarządzanie produktami (dodawanie, edytowanie, usuwanie)",
+                        "Zarządzanie dostępnością produktów (sezon/poza sezonem)",
+                        "Baza klientów i subskrybentów",
+                        'Historia zamówień (dla siebie, dla Sił Zbrojnych Ukrainy, "na przyszłe zbiory")',
+                        "Analiza zamówień (opłacone/nieopłacone, wysłane/niewysłane)",
+                        "Eksport danych do Google Sheets",
+                    ],
+
+                    video: "uC7nWNG3PPc",
+                },
+            ],
+            titleListVideo: [
                 {
                     layout: "video",
                     title: "Osobisty <purple>panel użytkownika</purple>",
