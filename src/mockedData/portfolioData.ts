@@ -456,6 +456,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteView: "internetShop",
             subtitle: "Online Store for Natural Products",
             description: "descriptionId2",
+            heroTitle: "<purple>Smachno!</purple> na seli",
             heroText: [
                 '"Smachno! na seli" - is an online store for home-grown vegetables developed for a farmer from the Ukrainian city of Poltava. He has been growing vegetables for 5 years and decided to go online to increase sales and attract new customers.',
                 "The project was implemented by the team at all stages of product creation: idea, market and competitor analytics, design, backend development, visualization, testing, setting up sales analytics, connecting payment systems, and technical support.",
@@ -624,6 +625,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteView: "internetShop",
             subtitle: "Sklep internetowy z produktami naturalnymi",
             description: "descriptionId2",
+            heroTitle: "<purple>Smachno!</purple> na seli",
             heroText: [
                 '"Smachno! na seli"– to sklep internetowy z domowymi warzywami, stworzony dla rolnika z ukraińskiego miasta Poltawa. Uprawia warzywa od 5 lat i postanowił przenieść sprzedaż do internetu, aby zwiększyć obroty i przyciągnąć nowych klientów.',
                 " Projekt został zrealizowany przez zespół na wszystkich etapach tworzenia produktu: od pomysłu i analizy rynku oraz konkurencji, przez projektowanie, rozwój backendu, wizualizację, testowanie, ustawienie analityki sprzedaży, po integrację systemów płatności oraz wsparcie techniczne.",
