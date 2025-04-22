@@ -8,7 +8,6 @@ import { ScrollSectionNotMobile } from "./ScrollSectionNotMobile";
 export const ScrollSection = ({ content }: { content: ScrollSectionType }) => {
     const { data, title } = content;
 
-    console.log(title);
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <HighlightTitleFromMockedData text={title} />
