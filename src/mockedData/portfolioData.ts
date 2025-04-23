@@ -305,7 +305,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
                             },
                         ],
                         slideRight: [
@@ -321,7 +321,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
                                 screenImage:
                                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
                             },
@@ -347,7 +347,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
                             },
                         ],
                         slideRight: [
@@ -363,7 +363,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision2_omeezz.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
                             },
                             {
                                 text: [
@@ -378,7 +378,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision3_itubbe.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
                             },
                         ],
                     },
@@ -473,7 +473,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
                             },
                         ],
                         slideRight: [
@@ -492,7 +492,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 screenImage:
                                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
 
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
                             },
                             {
                                 text: [
@@ -516,7 +516,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
                             },
                         ],
                         slideRight: [
@@ -532,7 +532,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision2_omeezz.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
                             },
                             {
                                 text: [
@@ -547,7 +547,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision3_itubbe.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
                             },
                         ],
                     },
@@ -642,7 +642,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666360/feature1_p3udby.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
                             },
                         ],
                         slideRight: [
@@ -661,7 +661,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 screenImage:
                                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
 
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666361/feature2_jwrrkj.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
                             },
                             {
                                 text: [
@@ -685,7 +685,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742668204/feature4_dkhsjw.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
                             },
                         ],
                         slideRight: [
@@ -701,7 +701,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     {
                         slideLeft: [
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision2_omeezz.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
                             },
                             {
                                 text: [
@@ -716,7 +716,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 ],
                             },
                             {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744967670/smachno_decision3_itubbe.jpg",
+                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
                             },
                         ],
                     },
