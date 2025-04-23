@@ -23,7 +23,7 @@ export const TeamMemberCard = ({ member }: { member: MemberDataItemType }) => {
                 />
             )}
             <div className="">
-                <p className="font-caviar font-bold text-base text-purple-200 dark:text-white-200 mb-2 tab:mb-[5px] pc:mb-2 desk:mb-[10px]">
+                <p className="font-caviar font-bold text-base pc:text-xl text-purple-200 dark:text-white-200 mb-2 tab:mb-[5px] pc:mb-2 desk:mb-[10px]">
                     {member[locale as LocaleType]?.name}
                 </p>
                 <p className="text-xs pc:text-sm text-purple-130 dark:text-purple-50">
