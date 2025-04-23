@@ -43,6 +43,12 @@ export interface SectionWithVideoType {
     video: string;
 }
 
+export interface AdaptiveSectionType {
+    imageDesktop: string;
+    imageMobile: string;
+    imageMobileStatic: string;
+}
+
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
@@ -79,11 +85,7 @@ type DataType = {
     implementations: string[];
     order: number;
     category: "landings" | "onlinestores" | "websites";
-    adaptive?: {
-        imageDesktop: string;
-        imageMobileLeft: string;
-        imageMobileRight: string;
-    };
+    adaptive?: AdaptiveSectionType;
     technologies?: Technology[];
 };
 
@@ -264,11 +266,11 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "onlinestores",
             adaptive: {
                 imageDesktop:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742670197/adaptive-desktop_snygs0.png",
-                imageMobileLeft:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742670189/adaptive-mobile1_bt6ztj.png",
-                imageMobileRight:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742670257/adaptive-mobile2_xsbddb.png",
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329031/adaptive-desktop_e1mcqy.jpg",
+                imageMobile:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329033/adaptive-mobile_hjxt6z.jpg",
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745340042/adaptive-static_xgjjsr.jpg",
             },
             technologies: [
                 "typescript",

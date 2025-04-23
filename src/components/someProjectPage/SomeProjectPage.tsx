@@ -8,6 +8,7 @@ import { LocaleType } from "@/types/LocaleType";
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
 import { TitleVideoDotslistItem } from "../shared/TitleVideoList/TitleVideoDotslistItem";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { AdaptiveSection } from "./AdaptiveSection/AdaptiveSection";
 import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { HeroSection } from "./HeroSection/HeroSection";
@@ -30,7 +31,8 @@ export const SomeProjectPage = ({
         member.data.projectId.includes(currentProjectSlug)
     );
 
-    const { technologies, imageForHero, behanceLink } = currentProject.data;
+    const { technologies, imageForHero, behanceLink, adaptive } =
+        currentProject.data;
 
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
@@ -63,6 +65,7 @@ export const SomeProjectPage = ({
                 titleVideoList.map((item, index) => (
                     <TitleVideoDotslistItem key={index} data={item} />
                 ))}
+            {adaptive && <AdaptiveSection screens={adaptive} />}
             <TeamSectionProject members={members} />
             {technologies && (
                 <StackSectionProject technologies={technologies} />
