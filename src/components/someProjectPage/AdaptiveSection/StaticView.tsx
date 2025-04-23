@@ -6,12 +6,12 @@ interface StaticViewProps {
     screen: string;
 }
 export const StaticView = ({ screen }: StaticViewProps) => {
-    const mobileMock =
+    const phoneFrameUrl =
         "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745392825/mobile_edviep.png";
     return (
         <div className="relative w-[41%] aspect-[236/484] tab:mt-[2%]  tab:w-full overflow-hidden z-[5]">
             <ImageFromCloud
-                src={mobileMock}
+                src={phoneFrameUrl}
                 alt="Mobile mockup"
                 width={236}
                 height={484}
