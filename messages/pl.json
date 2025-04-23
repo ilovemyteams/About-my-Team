@@ -344,7 +344,7 @@
     "SomeProjectPage": {
         "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
         "stackTitle": "Technologie i <purple>narzędzia</purple>",
-        "adaptiveDesign": "<purple>Responsywny design</purple>",
+        "adaptiveDesign": "<purple>Responsywny</purple> design",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
         "allProjects": "Wszystkie projekty",
@@ -353,6 +353,7 @@
         "design": "Projektowanie",
         "launch": "Wydanie",
         "support": "Wsparcie",
+        "behanceLink": "Projekt wizualny",
         "taskTitle": "<purple>Zadania</purple>, nad którymi pracowaliśmy"
     }
 }

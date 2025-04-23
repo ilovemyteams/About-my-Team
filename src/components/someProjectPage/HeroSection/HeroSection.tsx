@@ -27,6 +27,7 @@ export const HeroSection = ({
     const getTranslations = useTranslations("SomeProjectPage");
 
     const deadlinesText = getTranslations("deadlines");
+    const behanceLinkTitle = getTranslations("behanceLink");
 
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
@@ -47,9 +48,9 @@ export const HeroSection = ({
                             <a
                                 href={behanceLink}
                                 target="_blank"
-                                className="underline text-redLight dark:text-red font-caviar font-bold text-base tab:text-lg desk:text-2xl"
+                                className="underline text-redLight dark:text-red font-caviar font-bold text-base tab:text-lg"
                             >
-                                Behance
+                                {behanceLinkTitle}
                             </a>
                         </div>
                     )}

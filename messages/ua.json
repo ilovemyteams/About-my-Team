@@ -339,7 +339,7 @@
     "SomeProjectPage": {
         "teamTitle": "<purple>Команда</purple>, яка <purple>створила</purple> цей <purple>сайт</purple>",
         "stackTitle": "Технології та <purple>інструменти</purple>",
-        "adaptiveDesign": "<purple>Адаптивний дизайн</purple>",
+        "adaptiveDesign": "<purple>Адаптивний</purple> дизайн",
         "feedback": "<purple>Відгук</purple> нашого <purple>замовника</purple>",
         "moreCases": "Переглянути <purple>більше кейсів</purple>",
         "allProjects": "Всі проєкти",
@@ -348,7 +348,7 @@
         "design": "Дизайн",
         "launch": "Запуск в реліз",
         "support": "Підтримка",
-
+        "behanceLink": "Дизайн проєкту",
         "taskTitle": "<purple>Завдання</purple>, над якими ми працювали"
     }
 }

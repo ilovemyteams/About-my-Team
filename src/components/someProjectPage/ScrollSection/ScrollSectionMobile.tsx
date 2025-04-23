@@ -29,7 +29,7 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
             className="h-[300vh] overflow-x-clip pb-[40px] tab:hidden"
             ref={targetrRef}
         >
-            <div className="sticky top-[90px] max-h-[calc(100dvh_-_90px)] h-[calc(100dvh_-_100px)] flex flex-col gap-4">
+            <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
                 <ScrollSectionTabs tabs={titles} activeTab={activeTab} />
 
                 <div className="grow shrink ">

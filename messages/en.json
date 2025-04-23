@@ -343,7 +343,7 @@
     "SomeProjectPage": {
         "teamTitle": "<purple>The team</purple> that <purple>created</purple> this <purple>site</purple>",
         "stackTitle": "The technologies and <purple>tools</purple>",
-        "adaptiveDesign": "<purple>Responsywny design</purple>",
+        "adaptiveDesign": "<purple>Responsive</purple> design",
         "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
         "moreCases": "View <purple>more cases</purple>",
         "allProjects": "All projects",
@@ -352,6 +352,7 @@
         "design": "Design",
         "launch": "Launch",
         "support": "Support",
+        "behanceLink": "Project Design",
         "taskTitle": "<purple>The tasks</purple>, we worked on"
     }
 }
