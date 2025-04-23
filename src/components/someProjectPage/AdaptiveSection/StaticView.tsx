@@ -7,9 +7,9 @@ interface StaticViewProps {
 }
 export const StaticView = ({ screen }: StaticViewProps) => {
     const mobileMock =
-        "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745339379/mobile_hundsh.png";
+        "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745392825/mobile_edviep.png";
     return (
-        <div className="relative w-[41%] aspect-[236/484] tab:mt-[2%]  tab:w-full overflow-hidden">
+        <div className="relative w-[41%] aspect-[236/484] tab:mt-[2%]  tab:w-full overflow-hidden z-[5]">
             <ImageFromCloud
                 src={mobileMock}
                 alt="Mobile mockup"
@@ -17,7 +17,7 @@ export const StaticView = ({ screen }: StaticViewProps) => {
                 height={484}
                 className="h-full w-full object-contain"
             />
-            <div className="absolute left-[4.3%] right-[3.9%] top-[7.5%] tab:top-[7.2%] tab:right-[4%] rounded-b-[4vw] tab:rounded-b-[min(2vw,_20px)] pc:rounded-b-[24px] desk:rounded-b-[27px]  h-[90%] overflow-clip">
+            <div className="absolute left-[3%] right-[3%] top-[7%]  rounded-b-[4vw] z-[-1] tab:rounded-b-[min(2vw,_20px)] pc:rounded-b-[24px] desk:rounded-b-[27px]  h-[91%] overflow-clip">
                 <ImageFromCloud
                     src={screen}
                     alt="Mobile view"
