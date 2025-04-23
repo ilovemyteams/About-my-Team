@@ -16,7 +16,7 @@ export const TitleVideoDotslistItem = ({
         <Section>
             <HighlightTitleFromMockedData text={title} />
             <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px]">
-                <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-full mx-auto tab:w-[75%] pc:w-[69%] tab:ml-auto tab:mr-0">
+                <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-full mx-auto tab:w-[75%] pc:w-[69%] max-w-[752px] tab:ml-auto tab:mr-0">
                     <YouTubeEmbed
                         videoid={video}
                         params="rel=0"

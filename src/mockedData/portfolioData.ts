@@ -636,7 +636,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 analysis: "2 miesiące",
                 design: "2 miesiące",
                 launch: "8 miesięcy",
-                support: "4+ miesięcy",
+                support: "4+ miesiące",
             },
             decision: {
                 title: "<purple>Rozwiązania</purple>, które zostały wdrożone",
