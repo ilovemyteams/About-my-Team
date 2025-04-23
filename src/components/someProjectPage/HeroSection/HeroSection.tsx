@@ -48,7 +48,7 @@ export const HeroSection = ({
                             <a
                                 href={behanceLink}
                                 target="_blank"
-                                className="underline text-redLight dark:text-red font-caviar font-bold text-base tab:text-lg desk:text-2xl"
+                                className="underline text-redLight dark:text-red font-caviar font-bold text-base tab:text-lg"
                             >
                                 {behanceLinkTitle}
                             </a>
