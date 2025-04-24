@@ -44,12 +44,12 @@ export const ScrollSectionSlide = ({
     const iconVariants = {
         enter: {
             x: 0,
-            y: 0,
+
             transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
             x: isMobile ? 0 : "-100%",
-            y: isMobile ? "-150%" : 0,
+
             transition: { duration: 0.5 },
         },
     };
@@ -60,8 +60,7 @@ export const ScrollSectionSlide = ({
             transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
-            y: "150%",
-
+            y: isMobile ? 0 : "150%",
             transition: { duration: 0.5 },
         },
     };
