@@ -92,7 +92,7 @@ export const ScrollSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-sm20 tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-[max(12px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>
