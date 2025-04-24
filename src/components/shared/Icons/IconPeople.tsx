@@ -40,7 +40,7 @@ export const IconPeople = ({ className }: IconProps) => {
             <motion.g
                 style={{ originX: 0 }}
                 initial={{ scale: 1 }}
-                whileInView={{ scale: [1, 1, 1, 1.11, 1.22, 1.11, 1] }}
+                animate={{ scale: [1, 1, 1, 1.11, 1.22, 1.11, 1] }}
                 transition={{
                     duration: 2,
                     repeat: Infinity,
