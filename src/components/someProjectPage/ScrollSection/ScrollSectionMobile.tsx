@@ -32,18 +32,23 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
             <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
                 <ScrollSectionTabs tabs={titles} activeTab={activeTab} />
 
-                <div className="grow shrink ">
+                <div className="grow shrink snap-x snap-mandatory">
                     <motion.ul
-                        className="flex flex-nowrap gap-4 h-full  "
+                        className="flex flex-nowrap gap-4 h-full"
                         style={{ x }}
                     >
                         {data.map((item, index) => (
-                            <ScrollSectionSlide
+                            <li
                                 key={index}
-                                item={item}
-                                onChangeActiveSlide={onChangeActiveSlide}
-                                activeTab={activeTab}
-                            />
+                                className="shrink-0 snap-center w-full h-full"
+                            >
+                                <ScrollSectionSlide
+                                    key={index}
+                                    item={item}
+                                    onChangeActiveSlide={onChangeActiveSlide}
+                                    activeTab={activeTab}
+                                />
+                            </li>
                         ))}
                     </motion.ul>
                 </div>
