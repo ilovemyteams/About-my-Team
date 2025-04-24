@@ -40,7 +40,6 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
             // Обчислюємо нову scroll позицію
             const targetScrollY =
                 containerTop + activeSlideCenter - viewportCenter;
-            console.log(scrollY.get(), targetScrollY, index);
 
             if (index === 0 && scrollY.get() < targetScrollY) {
                 return;
@@ -50,7 +49,6 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
                 return;
             }
 
-            // Доскролюємо
             window.scrollTo({
                 top: targetScrollY,
                 behavior: "smooth",
