@@ -44,12 +44,12 @@ export const ScrollSectionSlide = ({
     const iconVariants = {
         enter: {
             x: 0,
-            y: 0,
+
             transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
             x: isMobile ? 0 : "-100%",
-            y: isMobile ? "-150%" : 0,
+
             transition: { duration: 0.5 },
         },
     };
@@ -60,8 +60,7 @@ export const ScrollSectionSlide = ({
             transition: { duration: 0.5, delay: isMobile ? 0 : 0.6 },
         },
         exit: {
-            y: "150%",
-
+            y: isMobile ? 0 : "150%",
             transition: { duration: 0.5 },
         },
     };
@@ -92,7 +91,7 @@ export const ScrollSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-sm20 tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-[max(12px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>
