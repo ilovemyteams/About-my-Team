@@ -15,7 +15,7 @@ interface ScrollSectionMobileProps {
 export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
     const [activeTab, setActiveTab] = useState(data[0].title);
     const targetRef = useRef<HTMLDivElement | null>(null);
-    const { scrollYProgress } = useScroll({ target: targetRef });
+    const { scrollYProgress, scrollY } = useScroll({ target: targetRef });
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-210%"]);
 
     const titles = data.map(item => item.title);
@@ -40,6 +40,15 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
             // Обчислюємо нову scroll позицію
             const targetScrollY =
                 containerTop + activeSlideCenter - viewportCenter;
+            console.log(scrollY.get(), targetScrollY, index);
+
+            if (index === 0 && scrollY.get() < targetScrollY) {
+                return;
+            }
+
+            if (index === data.length - 1 && scrollY.get() > targetScrollY) {
+                return;
+            }
 
             // Доскролюємо
             window.scrollTo({
