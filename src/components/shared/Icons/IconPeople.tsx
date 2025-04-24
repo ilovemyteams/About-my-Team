@@ -5,7 +5,7 @@ import { IconProps } from "@/types/iconProps.interface";
 
 export const IconPeople = ({ className }: IconProps) => {
     return (
-        <svg
+        <motion.svg
             viewBox="0 0 216 216"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ export const IconPeople = ({ className }: IconProps) => {
         >
             <motion.g
                 initial={{ scale: 1 }}
-                whileInView={{ scale: [1, 0.94, 0.87, 0.94, 1, 1, 1] }}
+                animate={{ scale: [1, 0.94, 0.87, 0.94, 1, 1, 1] }}
                 transition={{
                     duration: 2,
                     delay: 2,
@@ -60,6 +60,6 @@ export const IconPeople = ({ className }: IconProps) => {
                     strokeWidth="0.481"
                 />
             </motion.g>
-        </svg>
+        </motion.svg>
     );
 };

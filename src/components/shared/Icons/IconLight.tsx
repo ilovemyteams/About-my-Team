@@ -36,7 +36,7 @@ export const IconLight = ({ className }: IconProps) => {
                     d={path}
                     stroke="currentColor"
                     initial={{ pathLength: 0.5 }}
-                    whileInView={{
+                    animate={{
                         pathLength: [0.5, 0.8, 1, 1, 1, 1, 0.8, 0.5],
                     }}
                     transition={{
