@@ -17,7 +17,7 @@ export const TriggerAnimation = ({
     useEffect(() => {
         const controls = animate(
             scope.current,
-            { y: [0, "-80%", 0] },
+            { y: [0, "-20%", "-40%", "-80%", "-40%", "-20%", 0] },
             {
                 duration: 120,
                 ease: "linear",
