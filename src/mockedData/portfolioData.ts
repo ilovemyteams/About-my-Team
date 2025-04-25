@@ -254,7 +254,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
             imageForHero:
-                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742666872/hero_twdpkc.jpg",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745572816/hero-converted_w2uvb5.webp",
             order: 2,
             implementations: [
                 "Idea",
@@ -428,7 +428,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Збереження даних про доставку та отримувачів (кілька отримувачів)",
                         'Історія замовлень (для себе, для ЗСУ, "під майбутній врожай")',
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "WCsyXzpJ_Wg",
                 },
                 {
                     title: "Сторінка <purple>товару</purple>",
@@ -436,7 +436,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Зручна та структурована подача інформації",
                         'Можливість замовити для себе, для ЗСУ або "під майбутній врожай"',
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "_TJX8SctBiM",
                 },
                 {
                     title: "Панель <purple>адміністратора</purple>",
@@ -449,7 +449,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Вивантаження даних у Google Sheets",
                     ],
 
-                    video: "uC7nWNG3PPc",
+                    video: "oUDenMueap0",
                 },
             ],
         },
@@ -597,7 +597,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Saving data on delivery and recipients (multiple recipients)",
                         'Order history (for yourself, for the Armed Forces, "for the future harvest")',
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "WCsyXzpJ_Wg",
                 },
                 {
                     title: "Product <purple>page</purple>",
@@ -605,7 +605,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Convenient and structured presentation of information",
                         'Possibility to order for yourself, for the Armed Forces, or "for the future harvest"',
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "_TJX8SctBiM",
                 },
                 {
                     title: "<purple>Admin</purple> panel",
@@ -618,7 +618,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Data export to Google Sheets",
                     ],
 
-                    video: "uC7nWNG3PPc",
+                    video: "oUDenMueap0",
                 },
             ],
         },
@@ -766,7 +766,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Zapis danych dotyczących dostawy i odbiorców (wielu odbiorców)",
                         "Historia zamówień (dla siebie, dla Sił Zbrojnych Ukrainy, „na przyszły plon”)",
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "WCsyXzpJ_Wg",
                 },
                 {
                     title: "Strona <purple>produktu</purple>",
@@ -774,7 +774,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Wygodne i uporządkowane przedstawienie informacji",
                         "MemberCardModalBodyTabożliwość zamówienia dla siebie, dla Sił Zbrojnych Ukrainy lub „na przyszły plon”",
                     ],
-                    video: "uC7nWNG3PPc",
+                    video: "_TJX8SctBiM",
                 },
                 {
                     title: "Panel <purple>administratora</purple>",
@@ -787,7 +787,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Eksport danych do Google Sheets",
                     ],
 
-                    video: "uC7nWNG3PPc",
+                    video: "oUDenMueap0",
                 },
             ],
         },
