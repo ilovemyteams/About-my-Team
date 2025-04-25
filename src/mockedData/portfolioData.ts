@@ -254,7 +254,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
             imageForHero:
-                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745573677/hero-small-converted_zzq3di.webp",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745572817/hero-small-origin_ila5kh.gif",
             order: 2,
             implementations: [
                 "Idea",
