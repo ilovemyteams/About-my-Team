@@ -516,14 +516,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="66.3957"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint1_radial_14342_58402"
@@ -533,48 +533,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(79.3754 60.3414) rotate(69.3724) scale(43.8919 43.9169)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint2_linear_14342_58402"
@@ -584,14 +584,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="107.621"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint3_radial_14342_58402"
@@ -601,48 +601,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(141.129 108.294) rotate(47.085) scale(43.9032 43.9056)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint4_linear_14342_58402"
@@ -652,14 +652,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="285.336"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint5_radial_14342_58402"
@@ -669,48 +669,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(510.041 287.592) rotate(47.085) scale(43.9032 43.9056)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint6_linear_14342_58402"
@@ -720,14 +720,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="297.466"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint7_radial_14342_58402"
@@ -737,48 +737,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(561.564 307.505) rotate(14.3163) scale(43.919 43.8898)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint8_linear_14342_58402"
@@ -788,14 +788,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="328.671"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint9_radial_14342_58402"
@@ -805,48 +805,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(675.14 344.259) rotate(-18.7001) scale(43.9176 43.8911)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint10_linear_14342_58402"
@@ -856,14 +856,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="324.628"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint11_radial_14342_58402"
@@ -873,48 +873,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(614.645 327.283) rotate(47.9351) scale(43.9027 43.9061)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint12_linear_14342_58402"
@@ -924,14 +924,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="180.289"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint13_radial_14342_58402"
@@ -941,48 +941,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(306.724 198.558) rotate(-27.0857) scale(43.9141 43.8946)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint14_linear_14342_58402"
@@ -992,14 +992,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="229.148"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint15_radial_14342_58402"
@@ -1009,48 +1009,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(415.137 248.018) rotate(-27.0857) scale(43.9141 43.8946)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint16_linear_14342_58402"
@@ -1060,14 +1060,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="257.156"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint17_radial_14342_58402"
@@ -1077,48 +1077,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(467.589 273.098) rotate(-4.43993) scale(43.9208 43.8879)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint18_linear_14342_58402"
@@ -1128,14 +1128,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="348.088"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint19_radial_14342_58402"
@@ -1145,48 +1145,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(724.376 364.861) rotate(-4.43993) scale(43.9208 43.8879)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint20_linear_14342_58402"
@@ -1196,14 +1196,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="212.553"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint21_radial_14342_58402"
@@ -1213,48 +1213,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(359.693 225.853) rotate(1.69543) scale(43.921 43.8877)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint22_linear_14342_58402"
@@ -1264,14 +1264,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="138.692"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint23_radial_14342_58402"
@@ -1281,48 +1281,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(200.348 141.538) rotate(40.5152) scale(43.907 43.9018)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint24_linear_14342_58402"
@@ -1332,14 +1332,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="161.053"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint25_radial_14342_58402"
@@ -1349,48 +1349,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(253.986 169.697) rotate(21.1921) scale(43.9167 43.8921)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint26_linear_14342_58402"
@@ -1400,14 +1400,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="22.9753"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint27_radial_14342_58402"
@@ -1417,48 +1417,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(60.4453 20.8) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint28_linear_14342_58402"
@@ -1468,14 +1468,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="70.5495"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint29_radial_14342_58402"
@@ -1485,48 +1485,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(122.871 68.7543) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint30_linear_14342_58402"
@@ -1536,14 +1536,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="106.555"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint31_radial_14342_58402"
@@ -1553,48 +1553,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(180.472 105.057) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint32_linear_14342_58402"
@@ -1604,14 +1604,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="141.855"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint33_radial_14342_58402"
@@ -1621,48 +1621,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(237.118 140.655) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint34_linear_14342_58402"
@@ -1672,14 +1672,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="164.977"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint35_radial_14342_58402"
@@ -1689,48 +1689,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(283.613 163.973) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint36_linear_14342_58402"
@@ -1740,14 +1740,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="194.849"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint37_radial_14342_58402"
@@ -1757,48 +1757,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(337.016 194.095) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint38_linear_14342_58402"
@@ -1808,14 +1808,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="223.474"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint39_radial_14342_58402"
@@ -1825,48 +1825,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(390.531 222.967) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint40_linear_14342_58402"
@@ -1876,14 +1876,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="243.65"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint41_radial_14342_58402"
@@ -1893,48 +1893,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(443.975 243.343) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint42_linear_14342_58402"
@@ -1944,14 +1944,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="265.029"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint43_radial_14342_58402"
@@ -1961,48 +1961,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(495.285 264.911) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint44_linear_14342_58402"
@@ -2012,14 +2012,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="281.335"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint45_radial_14342_58402"
@@ -2029,48 +2029,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(544.378 281.383) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint46_linear_14342_58402"
@@ -2080,14 +2080,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="302.894"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint47_radial_14342_58402"
@@ -2097,48 +2097,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(601.374 303.15) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint48_linear_14342_58402"
@@ -2148,14 +2148,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="320.332"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint49_radial_14342_58402"
@@ -2165,48 +2165,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(653.248 320.762) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint50_linear_14342_58402"
@@ -2216,14 +2216,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="336.995"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint51_radial_14342_58402"
@@ -2233,48 +2233,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(702.903 337.587) rotate(48.5252) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint52_linear_14342_58402"
@@ -2284,14 +2284,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="356.912"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint53_radial_14342_58402"
@@ -2301,48 +2301,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(773.586 357.716) rotate(48.5251) scale(35.2962 35.2995)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint54_radial_14342_58402"
@@ -2352,48 +2352,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(380.058 -27.9304) rotate(61.6511) scale(37.8607 37.8765)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint55_linear_14342_58402"
@@ -2403,14 +2403,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="202.311"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint56_radial_14342_58402"
@@ -2420,48 +2420,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(649.114 201.718) rotate(61.6511) scale(37.8607 37.8765)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint57_linear_14342_58402"
@@ -2471,14 +2471,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="223.132"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint58_radial_14342_58402"
@@ -2488,48 +2488,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(687.932 229.751) rotate(28.8709) scale(37.8762 37.8609)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint59_linear_14342_58402"
@@ -2539,14 +2539,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="272.396"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint60_radial_14342_58402"
@@ -2556,48 +2556,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(775.044 285.075) rotate(-4.14759) scale(37.8828 37.8544)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint61_linear_14342_58402"
@@ -2607,14 +2607,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="257.636"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint62_radial_14342_58402"
@@ -2624,48 +2624,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(727.847 257.467) rotate(62.5015) scale(37.8603 37.8768)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint63_linear_14342_58402"
@@ -2675,14 +2675,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="68.589"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint64_radial_14342_58402"
@@ -2692,48 +2692,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(499.256 83.7662) rotate(-12.5315) scale(37.8816 37.8556)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint65_linear_14342_58402"
@@ -2743,14 +2743,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="132.734"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint66_radial_14342_58402"
@@ -2760,48 +2760,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(579.004 148.55) rotate(-12.5315) scale(37.8816 37.8556)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint67_linear_14342_58402"
@@ -2811,14 +2811,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="168.846"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint68_radial_14342_58402"
@@ -2828,48 +2828,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(616.908 180.888) rotate(10.1217) scale(37.882 37.8551)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint69_linear_14342_58402"
@@ -2879,14 +2879,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="300.071"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint70_radial_14342_58402"
@@ -2896,48 +2896,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(811.33 313.174) rotate(10.1218) scale(37.882 37.8551)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint71_linear_14342_58402"
@@ -2947,14 +2947,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="108.599"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint72_radial_14342_58402"
@@ -2964,48 +2964,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(537.144 117.955) rotate(16.2476) scale(37.8807 37.8564)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint73_linear_14342_58402"
@@ -3015,14 +3015,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="13.4793"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint74_radial_14342_58402"
@@ -3032,48 +3032,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(422.342 12.7972) rotate(55.0689) scale(37.8636 37.8735)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint75_linear_14342_58402"
@@ -3083,14 +3083,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="43.4987"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint76_radial_14342_58402"
@@ -3100,48 +3100,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(461.026 48.0761) rotate(35.7487) scale(37.8731 37.864)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <radialGradient
                     id="paint77_radial_14342_58402"
@@ -3151,48 +3151,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(413.831 -22.2178) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint78_linear_14342_58402"
@@ -3202,14 +3202,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="21.2077"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint79_radial_14342_58402"
@@ -3219,48 +3219,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(453.404 19.7638) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint80_linear_14342_58402"
@@ -3270,14 +3270,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="50.4955"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint81_radial_14342_58402"
@@ -3287,48 +3287,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(487.159 49.3038) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint82_linear_14342_58402"
@@ -3338,14 +3338,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="86.9025"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint83_radial_14342_58402"
@@ -3355,48 +3355,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(525.19 86.0281) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint84_linear_14342_58402"
@@ -3406,14 +3406,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="122.303"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint85_radial_14342_58402"
@@ -3423,48 +3423,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(563.597 121.725) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint86_linear_14342_58402"
@@ -3474,14 +3474,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="150.624"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint87_radial_14342_58402"
@@ -3491,48 +3491,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(603.809 150.32) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint88_linear_14342_58402"
@@ -3542,14 +3542,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="179.489"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint89_radial_14342_58402"
@@ -3559,48 +3559,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(641.964 179.442) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint90_linear_14342_58402"
@@ -3610,14 +3610,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="203.642"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint91_radial_14342_58402"
@@ -3627,48 +3627,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(679.37 203.822) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint92_linear_14342_58402"
@@ -3678,14 +3678,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="233.881"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint93_radial_14342_58402"
@@ -3695,48 +3695,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(722.24 234.348) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint94_linear_14342_58402"
@@ -3746,14 +3746,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="259.576"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint95_radial_14342_58402"
@@ -3763,48 +3763,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(761.71 260.287) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
                 <linearGradient
                     id="paint96_linear_14342_58402"
@@ -3814,14 +3814,14 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     y2="284.155"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stopColor="#D5923A" />
-                    <stop offset="0.01" stopColor="#D89844" />
-                    <stop offset="0.07" stopColor="#E4B06D" />
-                    <stop offset="0.12" stopColor="#EDC38E" />
-                    <stop offset="0.18" stopColor="#F5D2A8" />
-                    <stop offset="0.24" stopColor="#FADDBA" />
-                    <stop offset="0.3" stopColor="#FDE3C5" />
-                    <stop offset="0.36" stopColor="#FFE6C9" />
+                    <stop stop-color="#D5923A" />
+                    <stop offset="0.01" stop-color="#D89844" />
+                    <stop offset="0.07" stop-color="#E4B06D" />
+                    <stop offset="0.12" stop-color="#EDC38E" />
+                    <stop offset="0.18" stop-color="#F5D2A8" />
+                    <stop offset="0.24" stop-color="#FADDBA" />
+                    <stop offset="0.3" stop-color="#FDE3C5" />
+                    <stop offset="0.36" stop-color="#FFE6C9" />
                 </linearGradient>
                 <radialGradient
                     id="paint97_radial_14342_58402"
@@ -3831,48 +3831,48 @@ export const IconChristmasLights = ({ className }: { className?: string }) => {
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="translate(799.543 285.101) rotate(63.0917) scale(30.4388 30.4524)"
                 >
-                    <stop stopColor="#D5923A" />
+                    <stop stop-color="#D5923A" />
                     <stop
                         offset="0.01"
-                        stopColor="#D6943E"
+                        stop-color="#D6943E"
                         stopOpacity="0.97"
                     />
                     <stop
                         offset="0.11"
-                        stopColor="#DFA75E"
+                        stop-color="#DFA75E"
                         stopOpacity="0.74"
                     />
                     <stop
                         offset="0.21"
-                        stopColor="#E8B87B"
+                        stop-color="#E8B87B"
                         stopOpacity="0.54"
                     />
                     <stop
                         offset="0.31"
-                        stopColor="#EFC693"
+                        stop-color="#EFC693"
                         stopOpacity="0.38"
                     />
                     <stop
                         offset="0.42"
-                        stopColor="#F4D1A6"
+                        stop-color="#F4D1A6"
                         stopOpacity="0.24"
                     />
                     <stop
                         offset="0.54"
-                        stopColor="#F9DAB5"
+                        stop-color="#F9DAB5"
                         stopOpacity="0.13"
                     />
                     <stop
                         offset="0.66"
-                        stopColor="#FCE1C0"
+                        stop-color="#FCE1C0"
                         stopOpacity="0.06"
                     />
                     <stop
                         offset="0.81"
-                        stopColor="#FEE4C7"
+                        stop-color="#FEE4C7"
                         stopOpacity="0.01"
                     />
-                    <stop offset="1" stopColor="#FFE6C9" stopOpacity="0" />
+                    <stop offset="1" stop-color="#FFE6C9" stopOpacity="0" />
                 </radialGradient>
             </defs>
         </svg>
