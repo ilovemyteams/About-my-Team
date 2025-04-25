@@ -49,6 +49,12 @@ export interface AdaptiveSectionType {
     imageMobileStatic: string;
 }
 
+export interface HeroMediaType {
+    url: string;
+    type: "video" | "image";
+    poster?: string;
+}
+
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
@@ -78,7 +84,7 @@ type DataType = {
     slug: Slug;
     siteLink?: string;
     imageForAllProjectsPage: string;
-    imageForHero?: string;
+    mediaForHero?: HeroMediaType;
     behanceLink?: string;
     image: string;
     video?: string;
@@ -253,8 +259,12 @@ export const portfolioData: PortfolioDataItemType[] = [
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
-            imageForHero:
-                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745572817/hero-small-origin_ila5kh.gif",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/video/upload/v1745581355/hero-small-origin_fwixig.mp4",
+                type: "video",
+                poster: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745574266/hero-poster_m4xkvo.jpg",
+            },
+
             order: 2,
             implementations: [
                 "Idea",

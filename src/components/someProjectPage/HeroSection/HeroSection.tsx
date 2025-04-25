@@ -2,16 +2,16 @@ import { useTranslations } from "next-intl";
 
 import { DeadlineType } from "@/src/mockedData/portfolioData";
 
-import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import { PageSection } from "../../shared/PageSection";
 import { Deadlines } from "./Deadlines";
+import { HeroMedia } from "./HeroMedia";
 import { HeroTitle } from "./HeroTitle";
 
 interface HeroSectionProps {
     title: string;
     text: string[];
     behanceLink?: string;
-    heroImage: string;
+    heroImage: { url: string; type: "image" | "video" };
     deadlines?: DeadlineType;
     name: string;
 }
@@ -34,15 +34,8 @@ export const HeroSection = ({
             <HeroTitle title={title} />
             <div className="flex flex-col gap-3 mb-8 tab:grid tab:grid-cols-2 tab:gap-10 tab:mb-[60px] pc:gap-0 pc:mb-[72px]">
                 <div className="flex flex-col gap-3 tab:gap-5 relative">
-                    <div>
-                        <ImageFromCloud
-                            src={heroImage}
-                            alt={name}
-                            width={668}
-                            height={408}
-                            className="w-full h-auto aspect-[288/176] object-cover"
-                        />
-                    </div>
+                    <HeroMedia name={name} {...heroImage} />
+
                     {behanceLink && (
                         <div className="pc:absolute pc:top-[-50px] pc:left-0">
                             <a

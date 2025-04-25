@@ -31,7 +31,7 @@ export const SomeProjectPage = ({
         member.data.projectId.includes(currentProjectSlug)
     );
 
-    const { technologies, imageForHero, behanceLink, adaptive } =
+    const { technologies, mediaForHero, behanceLink, adaptive } =
         currentProject.data;
 
     const feedbackCurrent = feedbackData.filter(
@@ -44,11 +44,11 @@ export const SomeProjectPage = ({
         <>
             <ProjectHeader title={name} />
 
-            {heroText && heroTitle && imageForHero ? (
+            {heroText && heroTitle && mediaForHero ? (
                 <HeroSection
                     title={heroTitle}
                     text={heroText}
-                    heroImage={imageForHero}
+                    heroImage={mediaForHero}
                     behanceLink={behanceLink}
                     deadlines={deadlines}
                     name={name}
