@@ -249,7 +249,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             slug: "batatfarm-com",
             siteLink: "batatfarm.com",
             behanceLink:
-                "https://www.behance.net/gallery/222106575/Landing-Page-for-Writer",
+                "https://www.behance.net/gallery/224420717/Smachno-na-seli-Online-Store-for-Natural-Products",
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
             image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
