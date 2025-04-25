@@ -6,10 +6,15 @@ import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { WriteUsSection } from "../CTAs/writeUsSection/WriteUsSection";
+import { TitleVideoDotslistItem } from "../shared/TitleVideoList/TitleVideoDotslistItem";
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
+import { AdaptiveSection } from "./AdaptiveSection/AdaptiveSection";
+import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
+import { HeroSection } from "./HeroSection/HeroSection";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
+import { ScrollSection } from "./ScrollSection/ScrollSection";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
 import { TeamSectionProject } from "./TeamSection/TeamSectionProject";
 
@@ -19,44 +24,48 @@ export const SomeProjectPage = ({
     currentProject: PortfolioDataItemType;
 }) => {
     const locale = useLocale();
-    const { name } = currentProject[locale as LocaleType];
+    const { name, heroText, heroTitle, deadlines, tasks } =
+        currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
     const members = membersData.filter(member =>
         member.data.projectId.includes(currentProjectSlug)
     );
 
-    const { technologies } = currentProject.data;
+    const { technologies, mediaForHero, behanceLink, adaptive } =
+        currentProject.data;
 
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
     );
+    const decision = currentProject[locale as LocaleType].decision;
+    const titleVideoList = currentProject[locale as LocaleType].titleListVideo;
 
     return (
         <>
             <ProjectHeader title={name} />
-            <UnderConstruction />
-            {/* {heroText && heroTitle && imageForHero ? (
+
+            {heroText && heroTitle && mediaForHero ? (
                 <HeroSection
                     title={heroTitle}
                     text={heroText}
-                    heroImage={imageForHero}
+                    heroImage={mediaForHero}
                     behanceLink={behanceLink}
                     deadlines={deadlines}
                     name={name}
                 />
             ) : (
                 <UnderConstruction />
-            )} */}
+            )}
 
-            {/* {content &&
-                content.map((section, index) => {
-                    if (section.layout === "scroll") {
-                        return <ScrollSection key={index} content={section} />;
-                    }
+            {tasks && <ScrollSection content={tasks} />}
 
-                    return <div key={index}></div>;
-                })} */}
-
+            {decision && <DecisionSection decision={decision} />}
+            {titleVideoList &&
+                titleVideoList.length !== 0 &&
+                titleVideoList.map((item, index) => (
+                    <TitleVideoDotslistItem key={index} data={item} />
+                ))}
+            {adaptive && <AdaptiveSection screens={adaptive} />}
             <TeamSectionProject members={members} />
             {technologies && (
                 <StackSectionProject technologies={technologies} />

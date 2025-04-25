@@ -107,9 +107,9 @@
         "question2": "What to choose - a landing page or a website?",
         "answer2": "It depends on the task you are trying to solve. If you need to present a single service or product, if you need the result quickly, and the development budget is small, it is better to choose a landing page. If you have a wide range of goods or services, or want to present your company and provide a lot of information for potential customers, it is better to choose a website.",
         "question3": "What are the terms of the development of a fully functional website?",
-        "answer3": "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Developing a 10-page website with registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
+        "answer3": "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Developing a 5-page website with registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
         "question4": "How much does development cost?",
-        "answer4": "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $500. The cost of a website up to 10 pages is approximately 800 dollars. The cost of developing an online store with 20-30 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the product manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
+        "answer4": "Depending on the volume and complexity of the product, the approximate budget for a landing page is from $800. The cost of a website up to 5 pages is approximately 1100 dollars. The cost of developing an online store with 10-15 products and online payment is from $1600. If you want to get an estimate of the cost of developing a website, we recommend you to contact the product manager and discuss all the details with him/her. After that, we will be able to make a commercial offer for you, which will indicate the approximate cost of developing your website and the terms of implementation",
         "question5": "Can I choose which team will work on my order?",
         "answer5": "Yes, you can choose individual specialists and form a team on your own. In this case, we strongly recommend that you first contact your manager for advice. If you need a dedicated specialist for hourly work with your existing product, please contact the specialist via their telegram or LinkedIn."
     },
@@ -343,7 +343,7 @@
     "SomeProjectPage": {
         "teamTitle": "<purple>The team</purple> that <purple>created</purple> this <purple>site</purple>",
         "stackTitle": "The technologies and <purple>tools</purple>",
-        "adaptiveDesign": "<purple>Responsywny design</purple>",
+        "adaptiveDesign": "<purple>Responsive</purple> design",
         "feedback": "<purple>Feedback</purple> from our <purple>customer</purple>",
         "moreCases": "View <purple>more cases</purple>",
         "allProjects": "All projects",
@@ -351,6 +351,8 @@
         "analysis": "Analysis",
         "design": "Design",
         "launch": "Launch",
-        "support": "Support"
+        "support": "Support",
+        "behanceLink": "Project Design",
+        "taskTitle": "<purple>The tasks</purple>, we worked on"
     }
 }

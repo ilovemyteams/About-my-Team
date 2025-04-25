@@ -62,7 +62,7 @@ export const FeedbackCard = ({
             <div className="h-[186px] px-2 pt-4 pb-2 flex flex-col justify-between">
                 <div>
                     {!feedbackLink && (
-                        <p className="text-sm h-[120px] overflow-hidden line-clamp-6 break-words">
+                        <p className="text-sm h-[120px] overflow-hidden line-clamp-[7] break-words">
                             &ldquo; {feedbackText} &ldquo;
                         </p>
                     )}
@@ -75,7 +75,7 @@ export const FeedbackCard = ({
                                 target="_blank"
                                 href={addProtocol(feedbackLink)}
                                 rel="noopener noreferrer"
-                                className="text-purple-100 text-sm border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
+                                className="text-purple-100 text-xs border-b border-purple-100 dark:pc:hover:text-red pc:hover:text-redLight
                 dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight
                 dark:active:border-red active:border-redLight dark:pc:hover:border-red pc:hover:border-redLight
                 dark:pc:focus:border-red pc:focus:border-redLight"

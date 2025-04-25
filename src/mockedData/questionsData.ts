@@ -586,7 +586,7 @@ export const questionsData: QAItemType[] = [
         ua: {
             questionText: "Які терміни розробки готового продукту?",
             shortAnswerText: [
-                "Залежить від складності та складу команди. Розробка лендінгу із стандартизованим функціоналом та простим дизайном може зайняти від 2 до 6 тижнів. Зазвичай розробка стандартизованого сайту-візитки  може зайняти від кількох тижнів до кількох місяців. Розробка великого сайту на 10+ сторінок із формами реєстрації, авторизації, замовленням товарів та оплатою може зайняти від 4 до 8 місяців, в залежності від дизайну та наповнення.",
+                "Залежить від складності та складу команди. Розробка лендінгу із стандартизованим функціоналом та простим дизайном може зайняти від 2 до 6 тижнів. Зазвичай розробка стандартизованого сайту-візитки  може зайняти від кількох тижнів до кількох місяців. Розробка великого сайту на 5+ сторінок із формами реєстрації, авторизації, замовленням товарів та оплатою може зайняти від 4 до 8 місяців, в залежності від дизайну та наповнення.",
             ],
             imageAltText: "Які терміни розробки готового продукту?",
             fullAnswerTopText: [
@@ -647,7 +647,7 @@ export const questionsData: QAItemType[] = [
         pl: {
             questionText: "Ile trwa stworzenie strony internetowej?",
             shortAnswerText: [
-                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Tworzenie dużej strony internetowej z ponad 10 stronami i formularzami rejestracyjnymi,, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
+                "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Zazwyczaj opracowanie standardowej strony wizytówki może zająć od kilku tygodni do kilku miesięcy. Tworzenie dużej strony internetowej z ponad 5 stronami i formularzami rejestracyjnymi,, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
             ],
             imageAltText: "Ile trwa stworzenie strony internetowej?",
             fullAnswerTopText: [
@@ -710,7 +710,7 @@ export const questionsData: QAItemType[] = [
             questionText:
                 "What are the terms of the development of the fully functional website?",
             shortAnswerText: [
-                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Usually, the development of a standardized business card website can take from several weeks to several months. Development of a large website with 10+ pages and registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
+                "It depends on the complexity and composition of the team. Developing a landing page with standardized functionality and a simple design can take from 2 to 6 weeks. Usually, the development of a standardized business card website can take from several weeks to several months. Development of a large website with 5+ pages and registration forms, authorization, product ordering, and payment can take from 4 to 8 months, depending on the design and content.",
             ],
             imageAltText:
                 "What are the terms of the development of the fully functional website?",
@@ -1017,7 +1017,9 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "How much does development cost?",
             shortAnswerText: [
+
                 "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $800. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $1,100. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
+
             ],
             imageAltText: "How much does development cost?",
             fullAnswerTopText: [
@@ -1044,7 +1046,9 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Up to 5 pages",
                                     text: [
+
                                         'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $1,100. Additional features, such as interactive elements or a request form, may affect the total price.',
+
                                     ],
                                 },
                             ],

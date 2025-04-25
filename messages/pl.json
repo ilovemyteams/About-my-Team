@@ -109,9 +109,9 @@
         "question2": "Co wybrać - landing page czy stronę internetową?",
         "answer2": "To zależy od tego, jakie zadanie próbujesz rozwiązać. W przypadku, gdy potrzebujesz zaprezentować jakąś jedną usługę lub towar, gdy potrzebujesz szybkiego rezultatu, a budżet na rozwój jest niewielki, to lepiej wybrać landing. W przypadku, gdy masz szeroki asortyment towarów lub usług, lub pragniesz zaprezentować swoją firmę i nadać dużo informacji potencjalnym klientom, lepiej wybrać pełnoprawną stronę internetową.",
         "question3": "Ile trwa stworzenie strony internetowej?",
-        "answer3": "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 10-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
+        "answer3": "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 5-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
         "question4": "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
-        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z product managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
+        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 800$. Koszt strony internetowej do 5 stron wynosi około 1100 USD. Koszt stworzenia sklepu internetowego na 10-15 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z product managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
         "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
         "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn."
     },
@@ -344,7 +344,7 @@
     "SomeProjectPage": {
         "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
         "stackTitle": "Technologie i <purple>narzędzia</purple>",
-        "adaptiveDesign": "<purple>Responsywny design</purple>",
+        "adaptiveDesign": "<purple>Responsywny</purple> design",
         "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
         "moreCases": "Zobacz <purple>więcej przykładów</purple>",
         "allProjects": "Wszystkie projekty",
@@ -352,6 +352,8 @@
         "analysis": "Analiza",
         "design": "Projektowanie",
         "launch": "Wydanie",
-        "support": "Wsparcie"
+        "support": "Wsparcie",
+        "behanceLink": "Projekt wizualny",
+        "taskTitle": "<purple>Zadania</purple>, nad którymi pracowaliśmy"
     }
 }

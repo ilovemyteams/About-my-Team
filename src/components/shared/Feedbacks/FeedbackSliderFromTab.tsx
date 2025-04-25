@@ -65,7 +65,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                                 alt={en.siteName}
                                 width={540}
                                 height={346}
-                                className="object-cover tab:h-[302px] w-full pc:h-[346px]"
+                                className="object-cover tab:h-[302px] w-full pc:h-[346px] desk:h-[428px]"
                             />
                         </div>
                     ))}

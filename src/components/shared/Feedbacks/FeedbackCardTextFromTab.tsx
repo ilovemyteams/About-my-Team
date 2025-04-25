@@ -18,14 +18,14 @@ export const FeedbackCardTextFromTab = ({
     const siteTypeUp = siteView?.toUpperCase();
 
     return (
-        <div className="flex flex-col tab:h-[377px] pc:h-[426px] ">
-            <div className="tab:h-[302px] pc:h-[348px] ">
+        <div className="flex flex-col tab:h-[377px] pc:h-[426px] desk:h-[506px]">
+            <div className="tab:h-[302px] pc:h-[348px] desk:h-[428px]">
                 <IconQuote
                     className={
                         "w-[48px] h-[32px] pc:w-[60px] pc:h-[40px] dark:text-red text-redLight"
                     }
                 />
-                <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[175px]">
+                <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[209px] desk:h-[276px]">
                     {!feedbackLink && (
                         <p className="tab:text-base pc:text-xl overflow-hidden line-clamp-[7] break-words">
                             {feedbackText}
@@ -33,7 +33,7 @@ export const FeedbackCardTextFromTab = ({
                     )}
                     {feedbackLink && (
                         <>
-                            <p className="tab:text-base pc:text-xl tab:h-[103px] pc:h-[126px] pc:mb-2 overflow-hidden line-clamp-5 break-words">
+                            <p className="tab:text-base pc:text-xl desk:text-2xl tab:h-[103px] pc:h-[180px] desk:h-[248px] pc:mb-2 overflow-hidden line-clamp-5 pc:line-clamp-[7] desk:line-clamp-[8] break-words">
                                 {feedbackText}
                             </p>
                             <a
@@ -53,7 +53,7 @@ export const FeedbackCardTextFromTab = ({
                 <p className="font-caviar font-bold text-base mb-1 pc:text-xl pc:font-geist pc:font-light text-purple-200 dark:text-white-200">
                     {reviewer}
                 </p>
-                <p className="text-xs text-purple-200 dark:text-white-200">
+                <p className="text-xs desk:text-sm text-purple-200 dark:text-white-200">
                     {reviewerRole}
                 </p>
             </div>
