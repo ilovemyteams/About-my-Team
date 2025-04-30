@@ -52,16 +52,19 @@ export const StagesTableMob = () => {
     const alwaysVisibleItems = stagesItems.slice(0, 3);
     const expandableItems = stagesItems.slice(3);
     const handleToggle = () => {
-        if (itemsToShow && tableRef.current) {
+        if (itemsToShow) {
+            setItemsToShow(false);
             setTimeout(() => {
                 tableRef.current?.scrollIntoView({
                     behavior: "smooth",
                     block: "start",
                 });
             }, 0);
+        } else {
+            setItemsToShow(true);
         }
-        setItemsToShow(prev => !prev);
     };
+
     return (
         <>
             <div ref={tableRef}>
