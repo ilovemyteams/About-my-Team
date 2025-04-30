@@ -7,6 +7,10 @@
     --font-geist: Geist;
 }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 /* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
