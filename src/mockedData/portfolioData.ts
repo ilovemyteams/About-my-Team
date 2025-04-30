@@ -43,9 +43,14 @@ export interface SectionWithVideoType {
     video: string;
 }
 
+export interface AdaptiveImageType {
+    url: string;
+    width: number;
+    height: number;
+}
 export interface AdaptiveSectionType {
-    imageDesktop: string;
-    imageMobile: string;
+    imageDesktop: AdaptiveImageType;
+    imageMobile: AdaptiveImageType;
     imageMobileStatic: string;
 }
 
@@ -120,6 +125,22 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
             category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942505/adaptive-desktop_ggorin.jpg",
+                    width: 1200,
+                    height: 6683,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942506/adaptive-mobile_swvdw6.jpg",
+                    width: 375,
+                    height: 8330,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942505/adaptive-static_srjbu8.jpg",
+            },
         },
         ua: {
             name: "Алекс Чудов",
@@ -275,10 +296,18 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             category: "onlinestores",
             adaptive: {
-                imageDesktop:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329031/adaptive-desktop_e1mcqy.jpg",
-                imageMobile:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329033/adaptive-mobile_hjxt6z.jpg",
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329031/adaptive-desktop_e1mcqy.jpg",
+                    width: 861,
+                    height: 3115,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329033/adaptive-mobile_hjxt6z.jpg",
+                    width: 220,
+                    height: 3064,
+                },
+
                 imageMobileStatic:
                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745340042/adaptive-static_xgjjsr.jpg",
             },
