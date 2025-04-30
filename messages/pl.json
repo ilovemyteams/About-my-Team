@@ -87,7 +87,9 @@
         "sixthStepTitle": "Przeniesienie funkcjonalności strony",
         "sixthStepText": "Po przeprowadzeniu testów i integracji wszystkich usług, zasób wraz ze wszystkimi prawami do niego zostaje przekazany do dyspozycji klienta",
         "seventhStepTitle": "Wsparcie",
-        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia"
+        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia",
+        "allStages": "Wszystkie etapy",
+        "coverStages": "Zwiń etapy"
     },
     "HireUs": {
         "pageTitle": "połączenie",
