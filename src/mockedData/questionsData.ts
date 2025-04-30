@@ -1017,9 +1017,7 @@ export const questionsData: QAItemType[] = [
         en: {
             questionText: "How much does development cost?",
             shortAnswerText: [
-
                 "Depending on the scope and complexity of the product, the estimated budget for a single-language landing page without a light/dark theme option starts at $800. The cost of a single-language business card website with up to 5 pages and no theme changes is approximately from $1,100. The cost of developing an online store with 10-15 products and payment integration through one payment system starts at $1,600.",
-
             ],
             imageAltText: "How much does development cost?",
             fullAnswerTopText: [
@@ -1046,9 +1044,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     title: "Up to 5 pages",
                                     text: [
-
                                         'This format is suitable for introducing your business or company. A business card website can include pages like "About Us, " "Services, " "Contact, " "Portfolio, " etc. The approximate cost starts at $1,100. Additional features, such as interactive elements or a request form, may affect the total price.',
-
                                     ],
                                 },
                             ],

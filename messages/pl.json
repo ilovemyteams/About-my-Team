@@ -8,7 +8,12 @@
         "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
         "portfolioLink": "Realizacje",
         "project": "Projekt",
-        "btn": "odbierz 100 $"
+        "titleList": "Nasi klienci:",
+        "item1": "małe i średnie przedsiębiorstwa",
+        "item2": "eksperci branżowi",
+        "item3": "startupy",
+        "item4": "e-commerce",
+        "btn": "omówienie projektu"
     },
 
     "Portfolio": {
