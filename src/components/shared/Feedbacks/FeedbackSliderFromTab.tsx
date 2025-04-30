@@ -1,5 +1,6 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -30,7 +31,9 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
     const { ref, inView } = useInView({
         threshold: 0.95,
     });
-    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+        Autoplay({ delay: 4000 }),
+    ]);
     const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
