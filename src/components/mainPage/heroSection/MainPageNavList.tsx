@@ -15,7 +15,7 @@ export const MainPageNavList = () => {
     ];
     const locale = useLocale();
     return (
-        <ul className="flex flex-wrap gap-y-4 gap-x-4 justify-center mt-[52px] tab:justify-around tab:mt-0 pc:mt-[97px] tab:gap-8">
+        <ul className="flex flex-wrap gap-y-4 gap-x-4 justify-center mt-[52px] tab:justify-between tab:mt-0 pc:mt-[97px] tab:gap-8">
             {navList.map((content, idx) => (
                 <li key={idx}>
                     <Link
