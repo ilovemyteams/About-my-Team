@@ -1,5 +1,6 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
+import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
 import React from "react";
@@ -24,7 +25,9 @@ type Locale = LocaleType;
 
 export const FeedbackSlider: React.FC<FeedbackSliderProps> = props => {
     const { feedbacks, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+        Autoplay({ delay: 4000 }),
+    ]);
     const locale = useLocale();
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
