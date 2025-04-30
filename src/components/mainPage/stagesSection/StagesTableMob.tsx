@@ -1,11 +1,11 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useRef, useState } from "react";
 
+import { Button } from "../../shared/Button";
 import { Table } from "../../shared/Table/Table";
 import { TableItemsList } from "../../shared/Table/TableItemsList";
-import { useRef, useState } from "react";
-import { Button } from "../../shared/Button";
-import { motion, AnimatePresence } from "framer-motion";
 
 export const StagesTableMob = () => {
     const getTranslation = useTranslations("Stages");
