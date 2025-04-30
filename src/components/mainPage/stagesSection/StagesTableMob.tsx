@@ -1,7 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 import { Button } from "../../shared/Button";
 import { Table } from "../../shared/Table/Table";
@@ -10,7 +10,6 @@ import { TableItemsList } from "../../shared/Table/TableItemsList";
 export const StagesTableMob = () => {
     const getTranslation = useTranslations("Stages");
     const [itemsToShow, setItemsToShow] = useState(false);
-    const tableRef = useRef<HTMLDivElement>(null);
     const stagesItems = [
         {
             title: getTranslation("firstStepTitle"),
@@ -55,10 +54,12 @@ export const StagesTableMob = () => {
         if (itemsToShow) {
             setItemsToShow(false);
             setTimeout(() => {
-                tableRef.current?.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start",
-                });
+                document
+                    .getElementById("stages-scroll-target")
+                    ?.scrollIntoView({
+                        behavior: "smooth",
+                        block: "end",
+                    });
             }, 0);
         } else {
             setItemsToShow(true);
@@ -67,7 +68,7 @@ export const StagesTableMob = () => {
 
     return (
         <>
-            <div ref={tableRef}>
+            <div>
                 <Table>
                     <TableItemsList
                         items={alwaysVisibleItems}
@@ -97,7 +98,10 @@ export const StagesTableMob = () => {
                 </Table>
             </div>
             {expandableItems.length > 0 && (
-                <div className="flex justify-center tab:justify-end mt-4">
+                <div
+                    id="stages-scroll-target"
+                    className="flex justify-center tab:justify-end mt-4"
+                >
                     <Button color="grey" onClick={handleToggle}>
                         {itemsToShow
                             ? getTranslation("coverStages")
