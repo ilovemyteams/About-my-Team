@@ -7,7 +7,12 @@
         "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project",
-        "btn": "get 100 $"
+        "titleList": "Our clients:",
+        "item1": "small and medium-sized businesses",
+        "item2": "industry experts",
+        "item3": "startups",
+        "item4": "e-commerce",
+        "btn": "discuss a project"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
