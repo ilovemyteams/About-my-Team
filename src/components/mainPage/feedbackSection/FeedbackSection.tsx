@@ -1,6 +1,8 @@
 import { EmblaOptionsType } from "embla-carousel";
+import { useMemo } from "react";
 
 import { feedbackData } from "@/src/mockedData/feedbackData";
+import { shuffleArray } from "@/src/utils/shuffleArray";
 
 import { FeedbackSlider } from "../../shared/Feedbacks/FeedbackSlider";
 import { FeedbackSliderFromTab } from "../../shared/Feedbacks/FeedbackSliderFromTab";
@@ -10,15 +12,19 @@ import { FeedbackTitle } from "./FeedbackTitle";
 
 export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
+    const shuffledFeedbacks = useMemo(() => shuffleArray(feedbackData), []);
     return (
         <Section id="feedback" className="relative">
             <FeedbackTitle />
             <div className="tab:hidden">
-                <FeedbackSlider feedbacks={feedbackData} options={OPTIONS} />
+                <FeedbackSlider
+                    feedbacks={shuffledFeedbacks}
+                    options={OPTIONS}
+                />
             </div>
             <div className="hidden tab:block tab:pb-[75px] pc:pb-[78px]">
                 <FeedbackSliderFromTab
-                    feedbacks={feedbackData}
+                    feedbacks={shuffledFeedbacks}
                     options={OPTIONS}
                 />
             </div>
