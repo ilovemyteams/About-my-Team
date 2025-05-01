@@ -85,7 +85,9 @@
         "sixthStepTitle": "Transfer of the website",
         "sixthStepText": "After testing and integration of all services, the resource, along with all rights to it, is transferred to the client",
         "seventhStepTitle": "Support",
-        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them"
+        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them",
+        "allStages": "All stages",
+        "coverStages": "Collapse stages"
     },
     "HireUs": {
         "pageTitle": "connection",
