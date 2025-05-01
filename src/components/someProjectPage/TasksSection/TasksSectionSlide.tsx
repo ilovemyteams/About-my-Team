@@ -6,20 +6,20 @@ import { useEffect, useMemo, useRef } from "react";
 import { IconCheck } from "@/src/components/shared/Icons/IconCheck";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { ScrollSectionDataType } from "@/src/mockedData/portfolioData";
+import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 import { defineTaskIcon } from "@/src/utils/defineTaskIcon";
 
-interface ScrollSectionSlideProps {
-    item: ScrollSectionDataType;
+interface TasksSectionSlideProps {
+    item: TasksSectionDataType;
     onChangeActiveSlide?: (title: string) => void;
     activeTab: string;
 }
 
-export const ScrollSectionSlide = ({
+export const TasksSectionSlide = ({
     item,
     onChangeActiveSlide,
     activeTab,
-}: ScrollSectionSlideProps) => {
+}: TasksSectionSlideProps) => {
     const Icon = defineTaskIcon(item.icon);
     const screenSize = useScreenSize();
     const slideRef = useRef(null);
@@ -77,7 +77,7 @@ export const ScrollSectionSlide = ({
                     initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
                 >
-                    <Icon className="absolute left-0 top-0  w-full h-full  text-redLight dark:text-red " />
+                    <Icon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  w-[85%] h-[85%]   text-redLight dark:text-red " />
                 </motion.div>
             </div>
 

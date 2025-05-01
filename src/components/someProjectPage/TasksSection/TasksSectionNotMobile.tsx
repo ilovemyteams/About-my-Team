@@ -3,18 +3,16 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
-import { ScrollSectionDataType } from "@/src/mockedData/portfolioData";
+import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 
-import { ScrollSectionSlide } from "./ScrollSectionSlide";
-import { ScrollSectionTabs } from "./ScrollSectionTabs";
+import { TasksSectionSlide } from "./TasksSectionSlide";
+import { TasksSectionTabs } from "./TasksSectionTabs";
 
-interface ScrollSectionNotMobileProps {
-    data: ScrollSectionDataType[];
+interface TasksSectionNotMobileProps {
+    data: TasksSectionDataType[];
 }
 
-export const ScrollSectionNotMobile = ({
-    data,
-}: ScrollSectionNotMobileProps) => {
+export const TasksSectionNotMobile = ({ data }: TasksSectionNotMobileProps) => {
     const [activeTab, setActiveTab] = useState(data[0].title);
 
     const titles = data.map(item => item.title);
@@ -37,7 +35,7 @@ export const ScrollSectionNotMobile = ({
     return (
         <div className="hidden tab:pb-[52px] tab:block pc:relative pc:pb-[60px]">
             <div className="flex flex-col tab:gap-10 ">
-                <ScrollSectionTabs
+                <TasksSectionTabs
                     tabs={titles}
                     activeTab={activeTab}
                     onClickTab={onClickTab}
@@ -53,7 +51,7 @@ export const ScrollSectionNotMobile = ({
                                 }}
                                 className="min-w-full"
                             >
-                                <ScrollSectionSlide
+                                <TasksSectionSlide
                                     item={item}
                                     activeTab={activeTab}
                                 />

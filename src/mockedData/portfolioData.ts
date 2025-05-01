@@ -15,14 +15,10 @@ type PortfolioDataItemTranslation = {
     deadlines?: DeadlineType;
     decision?: SliderSectionType;
     titleListVideo?: SectionWithVideoType[];
-    tasks?: ScrollSectionType;
+    tasks?: TasksSectionDataType[];
 };
 
-export interface ScrollSectionType {
-    title: string;
-    data: ScrollSectionDataType[];
-}
-export interface ScrollSectionDataType {
+export interface TasksSectionDataType {
     title: string;
     text: string[];
     icon: string;
@@ -184,6 +180,37 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "4 тижні",
                 support: "за запитом",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Візуально підкреслити філософсько-духовний стиль автора",
+                        "Підсвітити особистий бренд автора як людини з глибоким досвідом",
+                        "Підібрати кольорову палітру, яка відповідає тематиці та стилю книги",
+                        "Створити дизайн-концепт, готовий до масштабування",
+                    ],
+                },
+                {
+                    icon: "product",
+                    title: "Про продукт",
+                    text: [
+                        "Зацікавити потенційного читача та викликати довіру до книги",
+                        "Розкрити основні ідеї книги у простій, візуально-зрозумілій формі",
+                        "Додати відгуки читачів, щоб підсилити довіру",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Інтегрувати маркетингові інструменти, які вже використовує автор для просування книги.",
+                        "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
+                        "Забезпечити перехід на сторінку покупки книги на Amazon",
+                        "Створити двомовну версію сайту: англійська та українська",
+                    ],
+                },
+            ],
         },
         en: {
             name: "Alex Chudov",
@@ -198,9 +225,40 @@ export const portfolioData: PortfolioDataItemType[] = [
             deadlines: {
                 analysis: "2 weeks",
                 design: "2 weeks",
-                launch: "4 тижні",
+                launch: "4 weeks",
                 support: "on request",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal Brand",
+                    text: [
+                        "Visually emphasize the author's philosophical and spiritual style",
+                        "Highlight the author’s personal brand as someone with deep life experience",
+                        "Choose a color palette that reflects the book’s theme and tone",
+                        "Develop a scalable design concept",
+                    ],
+                },
+                {
+                    icon: "product",
+                    title: "About Product",
+                    text: [
+                        "Spark interest in potential readers and build trust in the book",
+                        "PageContentListresent the main ideas of the book in a simple, visually clear way",
+                        "Add reader testimonials to reinforce credibility",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: " Functionality",
+                    text: [
+                        "Integrate the marketing tools the author already uses to promote the book",
+                        "Implement a simple and intuitive feedback form",
+                        "Provide a direct link to the book's purchase page on Amazon",
+                        "Create a bilingual website version: English and Ukrainian",
+                    ],
+                },
+            ],
         },
         pl: {
             name: "Alex Chudov",
@@ -218,6 +276,37 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "4 tygodnie",
                 support: "na żądanie",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Wizualne podkreślenie filozoficzno-duchowego stylu autora",
+                        "Uwydatnienie marki osobistej autora jako osoby z głębokim życiowym doświadczeniem",
+                        "Dobranie palety kolorów odpowiadającej tematyce i stylowi książki",
+                        "Stworzenie koncepcji graficznej gotowej do skalowania",
+                    ],
+                },
+                {
+                    icon: "product",
+                    title: "O produkcie",
+                    text: [
+                        "Zainteresowanie potencjalnego czytelnika i wzbudzenie zaufania do książki",
+                        "Przedstawienie głównych idei książki w prosty i wizualnie zrozumiały sposób",
+                        "Dodanie opinii czytelników w celu wzmocnienia zaufania",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Integracja narzędzi marketingowych, już wykorzystywanych przez autora do promocji książki",
+                        "Wdrożenie prostego i intuicyjnego formularza opinii",
+                        "Udostępnienie linku do strony zakupu książki na Amazon",
+                        "Stworzenie dwujęzycznej wersji strony: angielskiej i ukraińskiej",
+                    ],
+                },
+            ],
         },
     },
     {
@@ -283,6 +372,28 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "2 тижні",
                 support: "за запитом",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Створити особистий бренд як клієнтоорієнтованої, дружньої та легкої в спілкуванні експертки з найму",
+                        "Підкреслити досвід та надбання за 5+ років роботи у сфері рекрутингу",
+                        "Передати tone of voice спілкування та відгуки від задоволених клієнтів",
+                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Створити англомовну версію сайту орієнтовану на ринок Британії",
+                        "Розробити адаптивний дизайн для десктопної та мобільної версії",
+                        "Розробити зручну та інтуїтивну навігацію по сторінці",
+                        "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
+                    ],
+                },
+            ],
         },
         en: {
             name: "Victoriia Zabara",
@@ -295,11 +406,33 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "This is a one-page landing site that serves both as a personal brand business card and a platform to showcase her services, highlight her years of experience, and emphasize her niche expertise.",
             ],
             deadlines: {
-                analysis: "2 тижні",
-                design: "2 тижні",
-                launch: "2 тижні",
-                support: "за запитом",
+                analysis: "2 weeks",
+                design: "2 weeks",
+                launch: "2 weeks",
+                support: "on request",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal Brand",
+                    text: [
+                        "Establish a personal brand that reflects a client-oriented, friendly, and approachable hiring expert",
+                        "Highlight 5+ years of experience and achievements in the recruitment industry",
+                        "Convey the expert's tone of voice through communication style and testimonials from satisfied clients",
+                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "Create an English-language version of the website tailored to the UK market",
+                        "Develop a responsive design for both desktop and mobile versions",
+                        "Design a user-friendly and intuitive page navigation",
+                        "Implement a simple and easy-to-use contact form",
+                    ],
+                },
+            ],
         },
         pl: {
             name: "Victoriia Zabara",
@@ -317,6 +450,28 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "2 tygodnie",
                 support: "na żądanie",
             },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Створити особистий бренд як клієнтоорієнтованої, дружньої та легкої в спілкуванні експертки з найму",
+                        "Підкреслити досвід та надбання за 5+ років роботи у сфері рекрутингу",
+                        "Передати tone of voice спілкування та відгуки від задоволених клієнтів",
+                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Створити англомовну версію сайту орієнтовану на ринок Британії",
+                        "Розробити адаптивний дизайн для десктопної та мобільної версії",
+                        "Розробити зручну та інтуїтивну навігацію по сторінці",
+                        "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
+                    ],
+                },
+            ],
         },
     },
     {
@@ -546,40 +701,37 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: {
-                title: "<purple>Завдання</purple>, над якими ми працювали",
-                data: [
-                    {
-                        title: "Унікальність",
-                        text: [
-                            "Створити унікальний та впізнаваний стиль і головного героя",
-                            'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
-                            "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
-                        ],
-                        icon: "light",
-                    },
-                    {
-                        title: "Клієнтський досвід",
-                        text: [
-                            "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
-                            "Залучити нових покупців і збільшити продажі",
-                            "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
-                            "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
-                        ],
-                        icon: "people",
-                    },
-                    {
-                        title: "Бізнес-процеси",
-                        text: [
-                            "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
-                            "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
-                            "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
-                            "Налаштувати аналітику продажів",
-                        ],
-                        icon: "settings",
-                    },
-                ],
-            },
+            tasks: [
+                {
+                    title: "Унікальність",
+                    text: [
+                        "Створити унікальний та впізнаваний стиль і головного героя",
+                        'Реалізувати бізнес-процес замовлення "під майбутній врожай" із можливістю передоплати та отримання продукції пізніше',
+                        "Реалізувати можливість донатів на відправлення продукції до підрозділу ЗСУ зі збереженням історії замовлень",
+                    ],
+                    icon: "light",
+                },
+                {
+                    title: "Клієнтський досвід",
+                    text: [
+                        "Підвищити лояльність постійних покупців та привернути увагу ЗМІ",
+                        "Залучити нових покупців і збільшити продажі",
+                        "Забезпечити відмінний досвід користувачів – як відвідувачів, так і постійних клієнтів",
+                        "Додати функцію підписки на оновлення асортименту та сповіщення про початок сезону конкретного продукту",
+                    ],
+                    icon: "people",
+                },
+                {
+                    title: "Бізнес-процеси",
+                    text: [
+                        "Провести аналітику та запропонувати оптимальні рішення для втілення бізнес-процесів вирощування, продажу й доставки продукції",
+                        "Оптимізувати бізнес-процеси, зокрема оформлення замовлення та доставки",
+                        "Забезпечити надійний та стабільний процес оплати і автоматизувати облік покупців і замовлень",
+                        "Налаштувати аналітику продажів",
+                    ],
+                    icon: "settings",
+                },
+            ],
 
             titleListVideo: [
                 {
@@ -715,40 +867,37 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: {
-                title: "<purple>The tasks</purple>, we worked on",
-                data: [
-                    {
-                        title: "Uniqueness",
-                        text: [
-                            "Create a unique and recognizable style and the main character",
-                            'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
-                            "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
-                        ],
-                        icon: "light",
-                    },
-                    {
-                        title: "Customer experience",
-                        text: [
-                            "Increase loyalty of regular customers and attract media attention",
-                            "Attract new customers and increase sales",
-                            "Provide an excellent user experience for both visitors and regular customers",
-                            "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
-                        ],
-                        icon: "people",
-                    },
-                    {
-                        title: "Business processes",
-                        text: [
-                            "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
-                            "Optimize business processes, including ordering and delivery",
-                            "Ensure a reliable and stable payment process and automate customer and order accounting",
-                            "Set up sales analytics",
-                        ],
-                        icon: "settings",
-                    },
-                ],
-            },
+            tasks: [
+                {
+                    title: "Uniqueness",
+                    text: [
+                        "Create a unique and recognizable style and the main character",
+                        'Implement the business process of ordering "for the future harvest" with the possibility of prepayment and receiving products later',
+                        "Implement the possibility of donations to send products to the Armed Forces of Ukraine with the preservation of order history",
+                    ],
+                    icon: "light",
+                },
+                {
+                    title: "Customer experience",
+                    text: [
+                        "Increase loyalty of regular customers and attract media attention",
+                        "Attract new customers and increase sales",
+                        "Provide an excellent user experience for both visitors and regular customers",
+                        "Add a subscription function to updates of the assortment and notify you when the season for a particular product starts",
+                    ],
+                    icon: "people",
+                },
+                {
+                    title: "Business processes",
+                    text: [
+                        "Analyze and offer optimal solutions for the implementation of business processes for growing, selling and delivering products",
+                        "Optimize business processes, including ordering and delivery",
+                        "Ensure a reliable and stable payment process and automate customer and order accounting",
+                        "Set up sales analytics",
+                    ],
+                    icon: "settings",
+                },
+            ],
 
             titleListVideo: [
                 {
@@ -884,40 +1033,37 @@ export const portfolioData: PortfolioDataItemType[] = [
                     },
                 ],
             },
-            tasks: {
-                title: "<purple>Zadania</purple>, nad którymi pracowaliśmy",
-                data: [
-                    {
-                        title: "Unikalność",
-                        text: [
-                            "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
-                            "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
-                            "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
-                        ],
-                        icon: "light",
-                    },
-                    {
-                        title: "Doświadczenie klienta",
-                        text: [
-                            "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
-                            "Pozyskać nowych klientów i zwiększyć sprzedaż",
-                            "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
-                            "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
-                        ],
-                        icon: "people",
-                    },
-                    {
-                        title: "Procesy biznesowe",
-                        text: [
-                            "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
-                            "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
-                            "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
-                            "Skonfigurować analitykę sprzedaży",
-                        ],
-                        icon: "settings",
-                    },
-                ],
-            },
+            tasks: [
+                {
+                    title: "Unikalność",
+                    text: [
+                        "Stworzyć unikalny i rozpoznawalny styl oraz głównego bohatera",
+                        "Zrealizować proces zamówienia „na przyszły plon” z możliwością przedpłaty i odbioru produktów później",
+                        "Wprowadzić możliwość darowizn na wysyłkę produktów do jednostek Sił Zbrojnych Ukrainy z zachowaniem historii zamówień",
+                    ],
+                    icon: "light",
+                },
+                {
+                    title: "Doświadczenie klienta",
+                    text: [
+                        "Zwiększyć lojalność stałych klientów oraz przyciągnąć uwagę mediów",
+                        "Pozyskać nowych klientów i zwiększyć sprzedaż",
+                        "Zapewnić doskonałe doświadczenie użytkowników – zarówno odwiedzających, jak i stałych klientów",
+                        "Dodać funkcję subskrypcji aktualizacji asortymentu oraz powiadomienia o rozpoczęciu sezonu danego produktu",
+                    ],
+                    icon: "people",
+                },
+                {
+                    title: "Procesy biznesowe",
+                    text: [
+                        "Przeprowadzić analizę i zaproponować optymalne rozwiązania do realizacji procesów biznesowych związanych z uprawą, sprzedażą i dostawą produktów",
+                        "Optymalizować procesy biznesowe, w tym składanie zamówień i dostawę",
+                        "Zapewnić niezawodny i stabilny proces płatności oraz zautomatyzować ewidencję klientów i zamówień",
+                        "Skonfigurować analitykę sprzedaży",
+                    ],
+                    icon: "settings",
+                },
+            ],
 
             titleListVideo: [
                 {
