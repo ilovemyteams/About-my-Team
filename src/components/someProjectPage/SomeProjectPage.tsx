@@ -59,7 +59,7 @@ export const SomeProjectPage = ({
 
             {tasks && <TasksSection content={tasks} />}
 
-            {decision && <DecisionSection decision={decision} />}
+            {decision && <DecisionSection decisions={decision} />}
             {titleVideoList &&
                 titleVideoList.length !== 0 &&
                 titleVideoList.map((item, index) => (

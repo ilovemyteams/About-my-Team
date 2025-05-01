@@ -13,7 +13,7 @@ type PortfolioDataItemTranslation = {
     description: string;
     heroText?: string[];
     deadlines?: DeadlineType;
-    decision?: SliderSectionType;
+    decision?: DecisionType[];
     titleListVideo?: SectionWithVideoType[];
     tasks?: TasksSectionDataType[];
 };
@@ -24,13 +24,9 @@ export interface TasksSectionDataType {
     icon: string;
 }
 
-export interface SliderType {
+export interface DecisionType {
     slideLeft: SlideType[];
     slideRight: SlideType[];
-}
-export interface SliderSectionType {
-    title: string;
-    data: SliderType[];
 }
 
 export interface SectionWithVideoType {
@@ -59,6 +55,7 @@ export interface HeroMediaType {
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
+
 type SlideType = TextType | ImageType | ScreenMobType;
 export type Slug =
     | "protection-in-ua"
@@ -211,6 +208,67 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122407/decision-1_dzjghu.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Ключові ідеї подані у вигляді клаптиків паперу на зоряному тлі, як символ особистих сенсів, фрагментів Всесвіту",
+                                "Кольорова палітра підібрана відповідно до емоційної тематики книги - світло, внутрішній спокій, надія, любов",
+                                "Реалізована плавна навігація та скрол-анімація для комфортного UX",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122405/decision-2_wpk11a.jpg",
+                        },
+                        {
+                            text: [
+                                "Реалізовано структуру, що веде користувача м’яко і логічно до головної дії — купівлі книги",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Інтегровані інструменти для email-маркетингу",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122404/decision-3_i3jmfg.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122410/decision-4_mnsvn8.jpg",
+                        },
+                        {
+                            text: [
+                                "Реалізована двомовність на сайті  (EN/UA)",
+                                "Впроваджено програвач для перегляду інтерв’ю прямо на сайті",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: ["Додані реальні відгуки з Amazon"],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122408/decision-5_hnyz3l.jpg",
+                        },
+                    ],
+                },
+            ],
         },
         en: {
             name: "Alex Chudov",
@@ -259,6 +317,65 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122407/decision-1_dzjghu.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Key ideas presented as paper scraps on a starry background, symbolizing personal meanings — fragments of the Universe",
+                                "Color palette chosen to reflect the book’s emotional tone — light, inner peace, hope, and love",
+                                "Smooth navigation and scroll animations for a comfortable user experience",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122405/decision-2_wpk11a.jpg",
+                        },
+                        {
+                            text: [
+                                "Structure designed to guide the user gently and logically to the main action — purchasing the book",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: ["Integrated tools for email marketing"],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122404/decision-3_i3jmfg.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122410/decision-4_mnsvn8.jpg",
+                        },
+                        {
+                            text: [
+                                "Bilingual site implemented (EN/UA)",
+                                "Embedded video player for watching interviews directly on the website",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: ["Real reviews from Amazon included"],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122408/decision-5_hnyz3l.jpg",
+                        },
+                    ],
+                },
+            ],
         },
         pl: {
             name: "Alex Chudov",
@@ -304,6 +421,67 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Wdrożenie prostego i intuicyjnego formularza opinii",
                         "Udostępnienie linku do strony zakupu książki na Amazon",
                         "Stworzenie dwujęzycznej wersji strony: angielskiej i ukraińskiej",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122407/decision-1_dzjghu.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Ключові ідеї подані у вигляді клаптиків паперу на зоряному тлі, як символ особистих сенсів, фрагментів Всесвіту",
+                                "Кольорова палітра підібрана відповідно до емоційної тематики книги - світло, внутрішній спокій, надія, любов",
+                                "Реалізована плавна навігація та скрол-анімація для комфортного UX",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122405/decision-2_wpk11a.jpg",
+                        },
+                        {
+                            text: [
+                                "Реалізовано структуру, що веде користувача м’яко і логічно до головної дії — купівлі книги",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Інтегровані інструменти для email-маркетингу",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122404/decision-3_i3jmfg.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122410/decision-4_mnsvn8.jpg",
+                        },
+                        {
+                            text: [
+                                "Реалізована двомовність на сайті  (EN/UA)",
+                                "Впроваджено програвач для перегляду інтерв’ю прямо на сайті",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: ["Додані реальні відгуки з Amazon"],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122408/decision-5_hnyz3l.jpg",
+                        },
                     ],
                 },
             ],
@@ -394,6 +572,46 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120386/decision-1_b2gybf.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Візуальний концепт базується на поєднанні кольорів, які були використовувані в соцмережах для підкріплення асоціації - дружність, відкритість, довіра",
+                                "Використані елементи рукописних шрифтів та замальовок олівцем в блокноті, як асоціація індивідуального підходу та нотування в блокноті від руки",
+                                "Створено персоналізований логотип",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120383/dicision-2_wfcqnz.jpg",
+                        },
+                        {
+                            text: [
+                                "Великі фото та описи в блоку “про себе” надають ефект першого знайомства та формування довіри до експертки",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Візуальні елементи органічно поєднують блоки та ведуть користувача шляхом співпраці покроково",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120385/dicision-3_ryblem.jpg",
+                        },
+                    ],
+                },
+            ],
         },
         en: {
             name: "Victoriia Zabara",
@@ -433,6 +651,46 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120386/decision-1_b2gybf.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The visual concept is based on a color palette used in social media to reinforce associations with friendliness, openness, and trust",
+                                "Handwritten fonts and pencil sketch elements are used to evoke an individual approach and note-taking by hand",
+                                "A personalized logo image ıs created",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120383/dicision-2_wfcqnz.jpg",
+                        },
+                        {
+                            text: [
+                                "Large photos and detailed descriptions in the “About Me” section create a feeling of first acquaintance and build trust in the expert",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Visual elements seamlessly connect sections and guide the user step by step through the collaboration process",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120385/dicision-3_ryblem.jpg",
+                        },
+                    ],
+                },
+            ],
         },
         pl: {
             name: "Victoriia Zabara",
@@ -469,6 +727,46 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Розробити адаптивний дизайн для десктопної та мобільної версії",
                         "Розробити зручну та інтуїтивну навігацію по сторінці",
                         "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120386/decision-1_b2gybf.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Візуальний концепт базується на поєднанні кольорів, які були використовувані в соцмережах для підкріплення асоціації - дружність, відкритість, довіра",
+                                "Використані елементи рукописних шрифтів та замальовок олівцем в блокноті, як асоціація індивідуального підходу та нотування в блокноті від руки",
+                                "Створено персоналізований логотип",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120383/dicision-2_wfcqnz.jpg",
+                        },
+                        {
+                            text: [
+                                "Великі фото та описи в блоку “про себе” надають ефект першого знайомства та формування довіри до експертки",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Візуальні елементи органічно поєднують блоки та ведуть користувача шляхом співпраці покроково",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120385/dicision-3_ryblem.jpg",
+                        },
                     ],
                 },
             ],
@@ -616,91 +914,89 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "8 місяців",
                 support: "4+ місяці",
             },
-            decision: {
-                title: "<purple>Рішення</purple>, які були реалізовані",
-                data: [
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Розроблено унікального маскота, прототипом якого став реальний кіт фермера — власника магазину",
-                                    "Усі ілюстрації створені індивідуально та відмальовані вручну, також продумано набір сувенірної продукції, що підвищило лояльність покупців і збільшило залучення нових клієнтів із дітьми",
-                                    "Ідея та реалізація замовлення для ЗСУ з доставкою в регіони, де немає доставки Новою Поштою",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
-                            },
-                            {
-                                text: [
-                                    "Підключено оплату через Monopay та автоматизовано процес оплати й аналітики замовлень",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Проведено аналітику врожайності та вартості сезонних овочів і запропоновано перелік найбільш маржинальних культур",
-                                    'Ідея та реалізація замовлення овочів "під майбутній врожай"',
-                                ],
-                            },
-                            {
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    'Розроблено внутрішню CMS для відстежування історії замовлень за типами продукції, замовниками, оплаченими/неоплаченими замовленнями, замовленнями "під майбутній врожай" та для ЗСУ',
-                                    "Автоматизовано звітність з продажів",
-                                    "Впроваджено інструменти для оптимізації бізнес-процесів оформлення замовлення, доставки та формування звітності для подальшого аналізу",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
-                            },
-                            {
-                                text: [
-                                    "Реалізовано систему e-mail сповіщень про оновлення асортименту та початок сезону конкретного продукту",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Збільшилася присутність у соціальних мережах та привабливість бренду для ЗМІ",
-                                ],
-                            },
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
-                            },
-                        ],
-                    },
-                ],
-            },
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Розроблено унікального маскота, прототипом якого став реальний кіт фермера — власника магазину",
+                                "Усі ілюстрації створені індивідуально та відмальовані вручну, також продумано набір сувенірної продукції, що підвищило лояльність покупців і збільшило залучення нових клієнтів із дітьми",
+                                "Ідея та реалізація замовлення для ЗСУ з доставкою в регіони, де немає доставки Новою Поштою",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+                        },
+                        {
+                            text: [
+                                "Підключено оплату через Monopay та автоматизовано процес оплати й аналітики замовлень",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Проведено аналітику врожайності та вартості сезонних овочів і запропоновано перелік найбільш маржинальних культур",
+                                'Ідея та реалізація замовлення овочів "під майбутній врожай"',
+                            ],
+                        },
+                        {
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                'Розроблено внутрішню CMS для відстежування історії замовлень за типами продукції, замовниками, оплаченими/неоплаченими замовленнями, замовленнями "під майбутній врожай" та для ЗСУ',
+                                "Автоматизовано звітність з продажів",
+                                "Впроваджено інструменти для оптимізації бізнес-процесів оформлення замовлення, доставки та формування звітності для подальшого аналізу",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
+                        },
+                        {
+                            text: [
+                                "Реалізовано систему e-mail сповіщень про оновлення асортименту та початок сезону конкретного продукту",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Збільшилася присутність у соціальних мережах та привабливість бренду для ЗМІ",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
+                        },
+                    ],
+                },
+            ],
+
             tasks: [
                 {
                     title: "Унікальність",
@@ -781,92 +1077,90 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "8 months",
                 support: "4+ months",
             },
-            decision: {
-                title: "<purple>The solutions</purple>, that were implemented",
-                data: [
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "A unique mascot was developed, the prototype of which was a real cat of a farmer who owns the store",
-                                    "All illustrations are individually created and hand-drawn, and a set of souvenir products has been developed, which has increased customer loyalty and attracted new customers with children",
-                                    "Idea and implementation of an order for the Armed Forces of Ukraine with delivery to regions where there is no delivery by Nova Poshta",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "A unique mascot was developed, the prototype of which was a real cat of a farmer who owns the store",
+                                "All illustrations are individually created and hand-drawn, and a set of souvenir products has been developed, which has increased customer loyalty and attracted new customers with children",
+                                "Idea and implementation of an order for the Armed Forces of Ukraine with delivery to regions where there is no delivery by Nova Poshta",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
 
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
-                            },
-                            {
-                                text: [
-                                    "Monopay payment system was connected and the payment and order analytics process is automated",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "The analysis of the yield and cost of seasonal vegetables is carried out and a list of the most marginal crops is proposed",
-                                    'The idea and implementation of ordering vegetables "for the future harvest"',
-                                ],
-                            },
-                            {
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "An internal CMS was developed to track order history by product type, customer, paid/unpaid orders, orders for future harvest and for the Armed Forces of Ukraine",
-                                    "Sales reporting has been automated",
-                                    "Implemented tools to optimize business processes of ordering, delivery and reporting for further analysis",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
-                            },
-                            {
-                                text: [
-                                    "Implemented a system of e-mail notifications about assortment updates and the start of the season for a particular product",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Increased presence in social networks and brand attractiveness for the media",
-                                ],
-                            },
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
-                            },
-                        ],
-                    },
-                ],
-            },
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
+                        },
+                        {
+                            text: [
+                                "Monopay payment system was connected and the payment and order analytics process is automated",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The analysis of the yield and cost of seasonal vegetables is carried out and a list of the most marginal crops is proposed",
+                                'The idea and implementation of ordering vegetables "for the future harvest"',
+                            ],
+                        },
+                        {
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "An internal CMS was developed to track order history by product type, customer, paid/unpaid orders, orders for future harvest and for the Armed Forces of Ukraine",
+                                "Sales reporting has been automated",
+                                "Implemented tools to optimize business processes of ordering, delivery and reporting for further analysis",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
+                        },
+                        {
+                            text: [
+                                "Implemented a system of e-mail notifications about assortment updates and the start of the season for a particular product",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Increased presence in social networks and brand attractiveness for the media",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
+                        },
+                    ],
+                },
+            ],
+
             tasks: [
                 {
                     title: "Uniqueness",
@@ -947,92 +1241,90 @@ export const portfolioData: PortfolioDataItemType[] = [
                 launch: "8 miesięcy",
                 support: "4+ miesiące",
             },
-            decision: {
-                title: "<purple>Rozwiązania</purple>, które zostały wdrożone",
-                data: [
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Stworzono unikalnego maskota, którego prototypem stał się prawdziwy kot właściciela sklepu – rolnika",
-                                    "Wszystkie ilustracje zostały stworzone indywidualnie i ręcznie namalowane, opracowano również zestaw produktów upominkowych, które zwiększyły lojalność klientów i przyciągnęły nowych, zwłaszcza z dziećmi",
-                                    "Pomysł i realizacja zamówienia dla Sił Zbrojnych Ukrainy z dostawą do regionów, gdzie nie ma dostawy przez Nową Pocztę",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395629/smachno1_pvmrru.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Stworzono unikalnego maskota, którego prototypem stał się prawdziwy kot właściciela sklepu – rolnika",
+                                "Wszystkie ilustracje zostały stworzone indywidualnie i ręcznie namalowane, opracowano również zestaw produktów upominkowych, które zwiększyły lojalność klientów i przyciągnęły nowych, zwłaszcza z dziećmi",
+                                "Pomysł i realizacja zamówienia dla Sił Zbrojnych Ukrainy z dostawą do regionów, gdzie nie ma dostawy przez Nową Pocztę",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
 
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
-                            },
-                            {
-                                text: [
-                                    "Podłączono płatności przez Monopay oraz zautomatyzowano proces płatności i analityki zamówień",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Przeprowadzono analizę plonów i kosztów sezonowych warzyw oraz zaproponowano listę najbardziej dochodowych roślin",
-                                    "Pomysł i realizacja zamówienia warzyw „na przyszły plon”",
-                                ],
-                            },
-                            {
-                                screenImage:
-                                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Opracowano wewnętrzny CMS do śledzenia historii zamówień według rodzajów produktów, zamawiających, zamówień opłaconych/nieopłaconych, zamówień „na przyszły plon” i dla Sił Zbrojnych Ukrainy",
-                                    "Zautomatyzowano raportowanie sprzedaży",
-                                    "Wdrożono narzędzia do optymalizacji procesów biznesowych, takich jak składanie zamówień, dostawy oraz tworzenie raportów do dalszej analizy",
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        slideLeft: [
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
-                            },
-                            {
-                                text: [
-                                    "Zrealizowano system powiadomień e-mail o aktualizacji asortymentu oraz rozpoczęciu sezonu dla konkretnego produktu",
-                                ],
-                            },
-                        ],
-                        slideRight: [
-                            {
-                                text: [
-                                    "Zwiększona obecność w mediach społecznościowych oraz atrakcyjność marki dla mediów",
-                                ],
-                            },
-                            {
-                                image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
-                            },
-                        ],
-                    },
-                ],
-            },
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395631/smachno5_sance0.jpg",
+                        },
+                        {
+                            text: [
+                                "Podłączono płatności przez Monopay oraz zautomatyzowano proces płatności i analityki zamówień",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Przeprowadzono analizę plonów i kosztów sezonowych warzyw oraz zaproponowano listę najbardziej dochodowych roślin",
+                                "Pomysł i realizacja zamówienia warzyw „na przyszły plon”",
+                            ],
+                        },
+                        {
+                            screenImage:
+                                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1744972108/smachno_decision_monopay_npq66e.png",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno4_uahocv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Opracowano wewnętrzny CMS do śledzenia historii zamówień według rodzajów produktów, zamawiających, zamówień opłaconych/nieopłaconych, zamówień „na przyszły plon” i dla Sił Zbrojnych Ukrainy",
+                                "Zautomatyzowano raportowanie sprzedaży",
+                                "Wdrożono narzędzia do optymalizacji procesów biznesowych, takich jak składanie zamówień, dostawy oraz tworzenie raportów do dalszej analizy",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno2_karwqi.jpg",
+                        },
+                        {
+                            text: [
+                                "Zrealizowano system powiadomień e-mail o aktualizacji asortymentu oraz rozpoczęciu sezonu dla konkretnego produktu",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Zwiększona obecność w mediach społecznościowych oraz atrakcyjność marki dla mediów",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745395630/smachno3_ikpbqn.jpg",
+                        },
+                    ],
+                },
+            ],
+
             tasks: [
                 {
                     title: "Unikalność",
