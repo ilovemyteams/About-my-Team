@@ -26,9 +26,9 @@ export const AdaptiveSection = ({ screens }: AdaptiveSectionProps) => {
             </h2>
             <div className="pc:pb-[60px]">
                 <div className="text-center tab:relative tab:grid tab:grid-cols-[84%_16%] ">
-                    <TabletView screen={imageDesktop} />
+                    <TabletView imageData={imageDesktop} />
                     <div className="flex gap-4 justify-center tab:ml-[-10%] tab:block">
-                        <MobileView screen={imageMobile} />
+                        <MobileView imageData={imageMobile} />
                         <StaticView screen={imageMobileStatic} />
                     </div>
                 </div>

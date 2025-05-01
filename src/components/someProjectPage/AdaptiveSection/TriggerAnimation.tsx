@@ -1,33 +1,45 @@
 "use client";
 
 import { AnimationPlaybackControls, motion, useAnimate } from "framer-motion";
-import { PropsWithChildren, useEffect, useRef } from "react";
+import { PropsWithChildren, useLayoutEffect, useRef } from "react";
 
 interface TriggerAnimationProps {
+    aspectRatio: number;
+
     className?: string;
 }
 export const TriggerAnimation = ({
     children,
+
+    aspectRatio,
     className = "",
 }: PropsWithChildren<TriggerAnimationProps>) => {
     const controlsRef = useRef<AnimationPlaybackControls | null>(null);
 
     const [scope, animate] = useAnimate();
 
-    useEffect(() => {
+    useLayoutEffect(() => {
+        if (!scope.current) return;
+
+        const scopeHeight = scope.current.offsetWidth / aspectRatio;
+
+        const stopAnimationPercent = Math.floor(
+            100 - (scopeHeight / scope.current.offsetHeight) * 100
+        );
+
+        const animationStep = Math.floor(stopAnimationPercent / 6);
+
         const controls = animate(
             scope.current,
             {
                 y: [
                     0,
-                    "-10%",
-                    "-20%",
-                    "-30%",
-                    "-40%",
-                    "-50%",
-                    "-60%",
-                    "-70%",
-                    "-80%",
+                    `-${animationStep}%`,
+                    `-${animationStep * 2}%`,
+                    `-${animationStep * 3}%`,
+                    `-${animationStep * 4}%`,
+                    `-${animationStep * 5}%`,
+                    `-${stopAnimationPercent}%`,
                     0,
                 ],
             },
@@ -39,8 +51,12 @@ export const TriggerAnimation = ({
         );
         controls.pause();
         controlsRef.current = controls;
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+
+        return () => {
+            return controls.stop();
+        };
+    }, [animate, aspectRatio, scope]);
+
     return (
         <motion.div
             className={className}
