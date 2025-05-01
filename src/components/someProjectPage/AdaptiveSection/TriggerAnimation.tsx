@@ -40,11 +40,13 @@ export const TriggerAnimation = ({
                     `-${animationStep * 4}%`,
                     `-${animationStep * 5}%`,
                     `-${stopAnimationPercent}%`,
+                    0,
                 ],
             },
             {
                 duration: 40,
                 ease: "linear",
+                repeat: Infinity,
             }
         );
         controls.pause();
