@@ -27,7 +27,7 @@ export const HeroSection = () => {
 
             <BuyMeCoffeeLink
                 className="hidden tab:flex tab:mt-10 tab:mb-8 pc:my-0 pc:absolute pc:right-[60px] pc:bottom-[286px] desk:bottom-[300px] "
-                textClassName="pc:left-[56px]"
+                textClassName="pc:right-[56px]"
             />
             <MainPageNavList />
         </Section>
