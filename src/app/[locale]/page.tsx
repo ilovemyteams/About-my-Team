@@ -6,6 +6,7 @@ import { MissionSection } from "@/src/components/mainPage/missionSection/Mission
 import { OurTeamSection } from "@/src/components/mainPage/ourTeamSection/OurTeamSection";
 import { PortfolioSection } from "@/src/components/mainPage/portfolioSection/PortfolioSection";
 import { QaSection } from "@/src/components/mainPage/qAsection/QaSection";
+import { ReleaseSection } from "@/src/components/mainPage/releaseSection/ReleaseSection";
 import { ServicesSection } from "@/src/components/mainPage/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/mainPage/stagesSection/StagesSection";
 
@@ -26,6 +27,7 @@ export default function Home() {
                 text="titleAreYouReady"
                 eventGTM="order_form_start"
             />
+            <ReleaseSection />
         </>
     );
 }
