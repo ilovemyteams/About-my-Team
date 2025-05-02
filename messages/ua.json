@@ -14,6 +14,9 @@
         "item4": "e-commerce",
         "btn": "обговорити проєкт"
     },
+    "Release": {
+        "title": "<purple>Демо</purple> презентації <purple>від</purple> нашої <purple>команди</purple>"
+    },
     "Portfolio": {
         "pageTitle": "Портфоліо",
         "titleFirstLine": "Реалізовані <purple>проєкти</purple>, ",
