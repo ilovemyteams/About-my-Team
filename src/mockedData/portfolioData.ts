@@ -43,9 +43,14 @@ export interface SectionWithVideoType {
     video: string;
 }
 
+export interface AdaptiveImageType {
+    url: string;
+    width: number;
+    height: number;
+}
 export interface AdaptiveSectionType {
-    imageDesktop: string;
-    imageMobile: string;
+    imageDesktop: AdaptiveImageType;
+    imageMobile: AdaptiveImageType;
     imageMobileStatic: string;
 }
 
@@ -77,7 +82,18 @@ export type Technology =
     | "nextjs"
     | "postgresql"
     | "nestjs"
-    | "rtk-rtkq";
+    | "rtk-rtkq"
+    | "astrojs"
+    | "gsap"
+    | "nodemailer"
+    | "tailwind"
+    | "js"
+    | "html"
+    | "vite"
+    | "scss"
+    | "swiper"
+    | "emailjs"
+    | "handlebars";
 
 type DataType = {
     id: string;
@@ -112,6 +128,12 @@ export const portfolioData: PortfolioDataItemType[] = [
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1ovMudsfQyZ3-7hphCNhrtFTpcPjY_-KB",
             image: "https://drive.google.com/uc?export=view&id=1qp6lKJ4e3-qtlVT2VMoXgckO6DBkWl2o",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746034030/hero_xphcad.jpg",
+                type: "image",
+            },
+            behanceLink:
+                "https://www.behance.net/gallery/222106575/Landing-Page-for-Writer",
             implementations: [
                 "Idea",
                 "Design",
@@ -120,24 +142,82 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
             category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942505/adaptive-desktop_ggorin.jpg",
+                    width: 1200,
+                    height: 6683,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942506/adaptive-mobile_swvdw6.jpg",
+                    width: 375,
+                    height: 8330,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745942505/adaptive-static_srjbu8.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "gsap",
+                "nodemailer",
+            ],
         },
         ua: {
             name: "Алекс Чудов",
             siteView: "лендінг",
             subtitle: "Лендінг для автора книги",
             description: "",
+            heroTitle: "Алекс Чудов",
+            heroText: [
+                "Проєкт розроблений для українсько-канадського письменника Алекса Чудова. Автор написав свою першу книгу “Wonder in the Universe”, в якій прагнув поділитись глибокими духовними сенсами, що накопичилися впродовж його життєвого шляху.",
+                "Лендінг виконує роль візитівки особистого бренду автора та платформи для презентації книги. Сайт дозволяє користувачам познайомитись із життєвим шляхом письменника, переглянути інтерв’ю, дізнатись більше про книгу та перейти на Amazon для її придбання.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "2 тижні",
+                launch: "4 тижні",
+                support: "за запитом",
+            },
         },
         en: {
             name: "Alex Chudov",
             siteView: "landing page",
             subtitle: "Landing Page for a book author",
             description: "",
+            heroTitle: "Alex Chudov",
+            heroText: [
+                "The project was created for Ukrainian-Canadian writer Alex Chudov. The author has written his debut book “Wonder in the Universe”, where he shares deep spiritual insights accumulated throughout his life journey.",
+                "This landing  serves as both a personal brand introduction and a platform to showcase the book. The website allows visitors to learn about the author’s story, watch interviews, explore the essence of the book, and go directly to its Amazon page for purchase.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "2 weeks",
+                launch: "4 тижні",
+                support: "on request",
+            },
         },
         pl: {
             name: "Alex Chudov",
             siteView: "strona docelowa",
             subtitle: "Landing page dla autora książki",
             description: "",
+            heroTitle: "Alex Chudov",
+            heroText: [
+                'Projekt został opracowany dla ukraińsko-kanadyjskiego pisarza Alexa Chudova. Autor napisał swoją pierwszą książkę, "Wonder in the Universe", w której starał się podzielić głębokimi duchowymi przemyśleniami, które gromadziły się przez całe jego życie.',
+                "Jednostronicowa strona docelowa służy jako wizytówka osobistej marki autora i platforma do prezentacji książki. Strona pozwala użytkownikom zapoznać się z historią życia pisarza, obejrzeć wywiady, dowiedzieć się więcej o samej książce, i przejść bezpośrednio do strony Amazon, aby ją kupić.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "2 tygodnie",
+                launch: "4 tygodnie",
+                support: "na żądanie",
+            },
         },
     },
     {
@@ -157,24 +237,86 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Support",
             ],
             category: "landings",
+            technologies: [
+                "figma",
+                "photoshop",
+                "html",
+                "scss",
+                "js",
+                "vite",
+                "handlebars",
+                "swiper",
+                "emailjs",
+            ],
+            mediaForHero: {
+                type: "image",
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746090666/hero_jzwnvx.jpg",
+            },
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746090667/adaptive-desktop_ldgvmj.jpg",
+                    width: 1200,
+                    height: 6872,
+                },
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746090666/adaptive-mobile_ktwbgs.jpg",
+                    width: 390,
+                    height: 8231,
+                },
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746090666/static-view_hez8sg.jpg",
+            },
         },
         ua: {
             name: "Вікторія Забара",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
             description: "",
+            heroTitle: "Вікторія Забара",
+            heroText: [
+                "Проєкт розроблений для рекрутерки, яка працює переважно на Британському ринку та спеціалізується на пошуку та підборі людей на складні посади, такі як пілоти, інженери, висококваліфіковані ІТ-спеціалісти та представники рідкісних професій.",
+                "Це односторінковий лендінг, який поєднує роль візитівки особистого бренду рекрутерки та майданчик для презентації набору послуг, висвітлення її багаторічного досвіду та спеціалізації.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "2 тижні",
+                launch: "2 тижні",
+                support: "за запитом",
+            },
         },
         en: {
             name: "Victoriia Zabara",
             siteView: "landing page",
             subtitle: "Landing Page for an IT Recruiter",
             description: "",
+            heroTitle: "Victoriia Zabara",
+            heroText: [
+                "This project was developed for a recruiter who primarily works in the UK market and specializes in sourcing and placing candidates in highly demanding roles such as pilots, engineers, highly skilled IT professionals, and other rare occupations.",
+                "This is a one-page landing site that serves both as a personal brand business card and a platform to showcase her services, highlight her years of experience, and emphasize her niche expertise.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "2 тижні",
+                launch: "2 тижні",
+                support: "за запитом",
+            },
         },
         pl: {
             name: "Victoriia Zabara",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
             description: "",
+            heroTitle: "Victoriia Zabara",
+            heroText: [
+                "Проєкт розроблений для рекрутерки, яка працює переважно на Британському ринку та спеціалізується на пошуку та підборі людей на складні посади, такі як пілоти, інженери, висококваліфіковані ІТ-спеціалісти та представники рідкісних професій.",
+                "Це односторінковий лендінг, який поєднує роль візитівки особистого бренду рекрутерки та майданчик для презентації набору послуг, висвітлення її багаторічного досвіду та спеціалізації.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "2 tygodnie",
+                launch: "2 tygodnie",
+                support: "na żądanie",
+            },
         },
     },
     {
@@ -275,10 +417,18 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             category: "onlinestores",
             adaptive: {
-                imageDesktop:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329031/adaptive-desktop_e1mcqy.jpg",
-                imageMobile:
-                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329033/adaptive-mobile_hjxt6z.jpg",
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329031/adaptive-desktop_e1mcqy.jpg",
+                    width: 861,
+                    height: 3115,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745329033/adaptive-mobile_hjxt6z.jpg",
+                    width: 220,
+                    height: 3064,
+                },
+
                 imageMobileStatic:
                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1745340042/adaptive-static_xgjjsr.jpg",
             },
