@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 
+import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
 import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 
 import { TasksSectionSlide } from "./TasksSectionSlide";
@@ -59,13 +60,18 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
 
     return (
         <div
-            className="overflow-x-clip pb-[40px] tab:hidden"
+            className="overflow-x-clip tab:hidden"
             ref={targetRef}
             style={{
                 height: `${titles.length * 100}vh`,
             }}
         >
             <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
+                <HighlightTitleFromMessages
+                    title="SomeProjectPage"
+                    text="taskTitle"
+                    className="mb-2 tab:mb-10 pc:mb-[64px]"
+                />
                 <TasksSectionTabs tabs={titles} activeTab={activeTab} />
 
                 <div className="grow shrink">

@@ -10,6 +10,7 @@ export const IconAboutProduct = ({ className }: IconProps) => {
             xmlns="http://www.w3.org/2000/svg"
             className={className}
             aria-label="icon about product"
+            preserveAspectRatio="xMidYMid meet"
         >
             <path
                 d="M44.5029 180.5C44.7734 254.988 105.449 315.5 180 315.5V315.499C201.182 315.537 222.071 310.594 240.981 301.072L241.88 300.615C261.026 290.795 277.549 276.54 290.071 259.041L290.638 258.25H270.5V236.75H325.75V292H304.25V275.923L303.356 277.06C273.908 314.56 228.839 337 180 337C93.5929 337 23.2735 266.845 23.0029 180.5H44.5029Z"

@@ -67,7 +67,7 @@ export const TasksSectionSlide = ({
 
     return (
         <div
-            className="min-w-full h-full pb-5 flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
+            className="min-w-full h-full pb-[60px] flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
             ref={slideRef}
         >
             <div className="grow relative tab:w-1/2 overflow-clip">
@@ -91,7 +91,7 @@ export const TasksSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-[max(12px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-[max(14px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>

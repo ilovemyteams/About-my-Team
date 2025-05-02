@@ -7,6 +7,7 @@ export const IconFunctionality = ({ className }: IconProps) => {
             viewBox="0 0 256 282"
             className={className}
             aria-label="functionality icon"
+            preserveAspectRatio="xMidYMid meet"
         >
             <g>
                 <path
