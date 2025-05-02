@@ -15,7 +15,9 @@
         "item4": "e-commerce",
         "btn": "omówienie projektu"
     },
-
+    "Release": {
+        "title": "Prezentacje <purple>demonstracyjne od</purple> naszego <purple>zespołu</purple>"
+    },
     "Portfolio": {
         "pageTitle": "Wdrożone ",
         "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
