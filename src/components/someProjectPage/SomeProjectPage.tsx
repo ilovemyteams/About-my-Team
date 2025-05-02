@@ -14,8 +14,8 @@ import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { HeroSection } from "./HeroSection/HeroSection";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
-import { ScrollSection } from "./ScrollSection/ScrollSection";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
+import { TasksSection } from "./TasksSection/TasksSection";
 import { TeamSectionProject } from "./TeamSection/TeamSectionProject";
 
 export const SomeProjectPage = ({
@@ -57,9 +57,9 @@ export const SomeProjectPage = ({
                 <UnderConstruction />
             )}
 
-            {tasks && <ScrollSection content={tasks} />}
+            {tasks && <TasksSection content={tasks} />}
 
-            {decision && <DecisionSection decision={decision} />}
+            {decision && <DecisionSection decisions={decision} />}
             {titleVideoList &&
                 titleVideoList.length !== 0 &&
                 titleVideoList.map((item, index) => (

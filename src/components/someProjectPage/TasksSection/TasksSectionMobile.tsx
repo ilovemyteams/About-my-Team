@@ -3,22 +3,24 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 
-import { ScrollSectionDataType } from "@/src/mockedData/portfolioData";
+import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
+import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 
-import { ScrollSectionSlide } from "./ScrollSectionSlide";
-import { ScrollSectionTabs } from "./ScrollSectionTabs";
+import { TasksSectionSlide } from "./TasksSectionSlide";
+import { TasksSectionTabs } from "./TasksSectionTabs";
 
-interface ScrollSectionMobileProps {
-    data: ScrollSectionDataType[];
+interface TasksSectionMobileProps {
+    data: TasksSectionDataType[];
 }
 
-export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
+export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const [activeTab, setActiveTab] = useState(data[0].title);
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress, scrollY } = useScroll({ target: targetRef });
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-210%"]);
-
     const titles = data.map(item => item.title);
+    const scrollStopPercent = `-${(titles.length - 1) * 100 + 5 * (titles.length - 1)}%`;
+
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", scrollStopPercent]);
 
     const onChangeActiveSlide = (title: string) => {
         setActiveTab(title);
@@ -58,11 +60,19 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
 
     return (
         <div
-            className="h-[300vh] overflow-x-clip pb-[40px] tab:hidden"
+            className="overflow-x-clip tab:hidden"
             ref={targetRef}
+            style={{
+                height: `${titles.length * 100}vh`,
+            }}
         >
             <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
-                <ScrollSectionTabs tabs={titles} activeTab={activeTab} />
+                <HighlightTitleFromMessages
+                    title="SomeProjectPage"
+                    text="taskTitle"
+                    className="mb-2 tab:mb-10 pc:mb-[64px]"
+                />
+                <TasksSectionTabs tabs={titles} activeTab={activeTab} />
 
                 <div className="grow shrink">
                     <motion.ul
@@ -71,7 +81,7 @@ export const ScrollSectionMobile = ({ data }: ScrollSectionMobileProps) => {
                     >
                         {data.map((item, index) => (
                             <li key={index} className="shrink-0  w-full h-full">
-                                <ScrollSectionSlide
+                                <TasksSectionSlide
                                     key={index}
                                     item={item}
                                     onChangeActiveSlide={onChangeActiveSlide}

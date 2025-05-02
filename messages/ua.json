@@ -356,6 +356,7 @@
         "launch": "Запуск в реліз",
         "support": "Підтримка",
         "behanceLink": "Дизайн проєкту",
-        "taskTitle": "<purple>Завдання</purple>, над якими ми працювали"
+        "taskTitle": "<purple>Завдання</purple>, над якими ми працювали",
+        "decisionsTitle": "<purple>Рішення</purple>, які були реалізовані"
     }
 }

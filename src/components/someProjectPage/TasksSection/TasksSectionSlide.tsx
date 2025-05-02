@@ -6,20 +6,20 @@ import { useEffect, useMemo, useRef } from "react";
 import { IconCheck } from "@/src/components/shared/Icons/IconCheck";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
-import { ScrollSectionDataType } from "@/src/mockedData/portfolioData";
+import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 import { defineTaskIcon } from "@/src/utils/defineTaskIcon";
 
-interface ScrollSectionSlideProps {
-    item: ScrollSectionDataType;
+interface TasksSectionSlideProps {
+    item: TasksSectionDataType;
     onChangeActiveSlide?: (title: string) => void;
     activeTab: string;
 }
 
-export const ScrollSectionSlide = ({
+export const TasksSectionSlide = ({
     item,
     onChangeActiveSlide,
     activeTab,
-}: ScrollSectionSlideProps) => {
+}: TasksSectionSlideProps) => {
     const Icon = defineTaskIcon(item.icon);
     const screenSize = useScreenSize();
     const slideRef = useRef(null);
@@ -67,7 +67,7 @@ export const ScrollSectionSlide = ({
 
     return (
         <div
-            className="min-w-full h-full pb-5 flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
+            className="min-w-full h-full pb-[60px] flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
             ref={slideRef}
         >
             <div className="grow relative tab:w-1/2 overflow-clip">
@@ -77,7 +77,7 @@ export const ScrollSectionSlide = ({
                     initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
                 >
-                    <Icon className="absolute left-0 top-0  w-full h-full  text-redLight dark:text-red " />
+                    <Icon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  w-[85%] h-[85%]   text-redLight dark:text-red " />
                 </motion.div>
             </div>
 
@@ -91,7 +91,7 @@ export const ScrollSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-[max(12px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-[max(14px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>

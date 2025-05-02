@@ -361,6 +361,7 @@
         "launch": "Wydanie",
         "support": "Wsparcie",
         "behanceLink": "Projekt wizualny",
-        "taskTitle": "<purple>Zadania</purple>, nad którymi pracowaliśmy"
+        "taskTitle": "<purple>Zadania</purple>, nad którymi pracowaliśmy",
+        "decisionsTitle": "<purple>Rozwiązania</purple>, które zostały wdrożone"
     }
 }
