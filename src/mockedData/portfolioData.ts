@@ -317,7 +317,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             tasks: [
                 {
                     icon: "brand",
-                    title: "Personal Brand",
+                    title: "Personal brand",
                     text: [
                         "Visually emphasize the author's philosophical and spiritual style",
                         "Highlight the author’s personal brand as someone with deep life experience",
@@ -327,7 +327,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 },
                 {
                     icon: "product",
-                    title: "About Product",
+                    title: "About product",
                     text: [
                         "Spark interest in potential readers and build trust in the book",
                         "PageContentListresent the main ideas of the book in a simple, visually clear way",
@@ -406,7 +406,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             titleListVideo: [
                 {
-                    title: "Interactive <purple>Experience</purple>",
+                    title: "Interactive <purple>experience</purple>",
                     description: [
                         "The author’s story is presented as an animated slider highlighting key life moments",
                         "Each slide is paired with a memorable photo and a short description, allowing users to experience the author’s journey as a meaningful path",
@@ -416,14 +416,14 @@ export const portfolioData: PortfolioDataItemType[] = [
                 },
 
                 {
-                    title: "<purple>Unique</purple> Interface Element",
+                    title: "<purple>Unique</purple> interface elements",
                     description: [
                         "Between the interview section and the “About the Book” block, there is a smooth, cinematic animation where the book cover literally “slides” into the next section — transforming from a decorative image into a functional object",
                     ],
                     video: "cfc30V33h6g",
                 },
                 {
-                    title: "<purple>Book</purple> Promotion",
+                    title: "<purple>Book</purple> promotion",
                     description: [
                         "Visitors can explore the book’s contents directly on the website",
                         "Option to download the first chapters of the book for preview",
@@ -726,7 +726,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             tasks: [
                 {
                     icon: "brand",
-                    title: "Personal Brand",
+                    title: "Personal brand",
                     text: [
                         "Establish a personal brand that reflects a client-oriented, friendly, and approachable hiring expert",
                         "Highlight 5+ years of experience and achievements in the recruitment industry",
