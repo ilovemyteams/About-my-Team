@@ -34,6 +34,7 @@ export const TeamProjectMobList = ({
         onPrevButtonClick,
         onNextButtonClick,
     } = usePrevNextButtons(emblaApi);
+    const membersAmount = members.length;
 
     return (
         <div className="relative embla min-w-full ">
@@ -42,24 +43,26 @@ export const TeamProjectMobList = ({
                     <OneSliderTeamProject members={members} />
                 </ul>
             </div>
-            <div className="embla__controls  tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-[16px] tab:mt-0">
-                <div className="embla__buttons flex justify-center gap-4">
-                    <PrevButton
-                        onClick={onPrevButtonClick}
-                        disabled={prevBtnDisabled}
-                    />
-                    <SliderDotsBox
-                        scrollSnaps={scrollSnaps}
-                        selectedIndex={selectedIndex}
-                        sliders={members}
-                        onDotButtonClick={onDotButtonClick}
-                    />
-                    <NextButton
-                        onClick={onNextButtonClick}
-                        disabled={nextBtnDisabled}
-                    />
+            {membersAmount > 6 && (
+                <div className="embla__controls  tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-[16px] tab:mt-0">
+                    <div className="embla__buttons flex justify-center gap-4">
+                        <PrevButton
+                            onClick={onPrevButtonClick}
+                            disabled={prevBtnDisabled}
+                        />
+                        <SliderDotsBox
+                            scrollSnaps={scrollSnaps}
+                            selectedIndex={selectedIndex}
+                            sliders={members}
+                            onDotButtonClick={onDotButtonClick}
+                        />
+                        <NextButton
+                            onClick={onNextButtonClick}
+                            disabled={nextBtnDisabled}
+                        />
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 };
