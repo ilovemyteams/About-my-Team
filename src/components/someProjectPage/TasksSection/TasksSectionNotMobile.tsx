@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 
-import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
 import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
 
 import { TasksSectionSlide } from "./TasksSectionSlide";
@@ -35,11 +34,6 @@ export const TasksSectionNotMobile = ({ data }: TasksSectionNotMobileProps) => {
 
     return (
         <div className="hidden tab:pb-[52px] tab:block pc:relative pc:pb-[60px]">
-            <HighlightTitleFromMessages
-                title="SomeProjectPage"
-                text="taskTitle"
-                className="mb-6 tab:mb-10 pc:mb-[64px]"
-            />
             <div className="flex flex-col tab:gap-10 ">
                 <TasksSectionTabs
                     tabs={titles}

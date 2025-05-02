@@ -642,7 +642,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Створити особистий бренд як клієнтоорієнтованої, дружньої та легкої в спілкуванні експертки з найму",
                         "Підкреслити досвід та надбання за 5+ років роботи у сфері рекрутингу",
                         "Передати tone of voice спілкування та відгуки від задоволених клієнтів",
-                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                        "Підібрати кольорову палітру, яка відповідає персональному стилю та подачі експертки в соціальних мережах",
                     ],
                 },
                 {
@@ -731,7 +731,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Establish a personal brand that reflects a client-oriented, friendly, and approachable hiring expert",
                         "Highlight 5+ years of experience and achievements in the recruitment industry",
                         "Convey the expert's tone of voice through communication style and testimonials from satisfied clients",
-                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                        "Select a color palette that aligns with the expert’s personal style and social media presence",
                     ],
                 },
                 {
