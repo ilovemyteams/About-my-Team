@@ -269,6 +269,34 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            titleListVideo: [
+                {
+                    title: "Особливості <purple>взаємодії</purple>",
+                    description: [
+                        "Історія автора подана у вигляді слайдера з анімацією, який відображає ключові події життя",
+                        "Кожен фрагмент підкріплений пам’ятною фотокарткою та коротким описом, що дозволяє відчути шлях автора як мандрівку",
+                        "Слайдер адаптовано для мобільних пристроїв зі збереженням анімованих ефектів",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+
+                {
+                    title: "<purple>Цікаві</purple> елементи інтерфейсу",
+                    description: [
+                        'Між секцією інтерв’ю та розділом "Про книгу" реалізована плавна, кінематографічна анімація, де обкладинка книги буквально “переїжджає” в наступний блок, перетворюючись із декору в функціональний об\'єкт',
+                    ],
+                    video: "cfc30V33h6g",
+                },
+                {
+                    title: "Просування <purple>книги</purple>",
+                    description: [
+                        "Додано можливість ознайомитись зі змістом книги прямо на сайті",
+                        "Додано можливість завантаження перших розділів книги для ознайомлення",
+                        "Додано посилання на Amazon як основний канал продажу",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+            ],
         },
         en: {
             name: "Alex Chudov",
@@ -376,6 +404,34 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            titleListVideo: [
+                {
+                    title: "Interactive <purple>Experience</purple>",
+                    description: [
+                        "The author’s story is presented as an animated slider highlighting key life moments",
+                        "Each slide is paired with a memorable photo and a short description, allowing users to experience the author’s journey as a meaningful path",
+                        "The slider is mobile-optimized, with preserved animation effects",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+
+                {
+                    title: "<purple>Unique</purple> Interface Element",
+                    description: [
+                        "Between the interview section and the “About the Book” block, there is a smooth, cinematic animation where the book cover literally “slides” into the next section — transforming from a decorative image into a functional object",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+                {
+                    title: "<purple>Book</purple> Promotion",
+                    description: [
+                        "Visitors can explore the book’s contents directly on the website",
+                        "Option to download the first chapters of the book for preview",
+                        "Added Amazon link as the primary sales channel",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+            ],
         },
         pl: {
             name: "Alex Chudov",
@@ -434,9 +490,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Ключові ідеї подані у вигляді клаптиків паперу на зоряному тлі, як символ особистих сенсів, фрагментів Всесвіту",
-                                "Кольорова палітра підібрана відповідно до емоційної тематики книги - світло, внутрішній спокій, надія, любов",
-                                "Реалізована плавна навігація та скрол-анімація для комфортного UX",
+                                "Kluczowe idee przedstawione są w formie skrawków papieru na gwieździstym tle jako symbol osobistych znaczeń, fragmentów Wszechświata",
+                                "Paleta kolorów została dobrana zgodnie z emocjonalnym tematem książki - światło, wewnętrzny spokój, nadzieja, miłość",
+                                "Wdrożono płynną nawigację i animację przewijania dla wygodnego UX",
                             ],
                         },
                     ],
@@ -448,14 +504,14 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                         {
                             text: [
-                                "Реалізовано структуру, що веде користувача м’яко і логічно до головної дії — купівлі книги",
+                                "Zaimplementowano strukturę, która łagodnie i logicznie prowadzi użytkownika do głównej akcji - zakupu książki",
                             ],
                         },
                     ],
                     slideRight: [
                         {
                             text: [
-                                "Інтегровані інструменти для email-маркетингу",
+                                "Zintegrowane narzędzia do e-mail marketingu",
                             ],
                         },
                         {
@@ -470,19 +526,47 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                         {
                             text: [
-                                "Реалізована двомовність на сайті  (EN/UA)",
-                                "Впроваджено програвач для перегляду інтерв’ю прямо на сайті",
+                                "Wdrożono dwujęzyczność na stronie (EN/UA) ",
+                                "Wdrożono odtwarzacz do oglądania wywiadów bezpośrednio na stronie",
                             ],
                         },
                     ],
                     slideRight: [
                         {
-                            text: ["Додані реальні відгуки з Amazon"],
+                            text: ["Dodano prawdziwe recenzje z Amazon"],
                         },
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746122408/decision-5_hnyz3l.jpg",
                         },
                     ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Cechy <purple>interakcji</purple>",
+                    description: [
+                        "Historia autora przedstawiona jest w formie slajdu z animacją, która odzwierciedla kluczowe wydarzenia z jego życia",
+                        "Każdy fragment wsparty jest zapadającym w pamięć zdjęciem i krótkim opisem, co sprawia, że drogę autora odczuwa się jak podróż",
+                        "Slajder został dostosowany do urządzeń mobilnych z zachowaniem efektów animacji",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+
+                {
+                    title: "<purple>Ciekawe</purple> elementy interfejsu",
+                    description: [
+                        "Pomiędzy sekcją wywiadu a rozdziałem „O książce” zastosowano płynną, filmową animację, w której okładka książki dosłownie „przesuwa się” do następnego bloku, przekształcając się z elementu dekoracyjnego w funkcjonalny obiekt",
+                    ],
+                    video: "cfc30V33h6g",
+                },
+                {
+                    title: "Promocja <purple>książki</purple>",
+                    description: [
+                        "Dodano możliwość zapoznania się z treścią książki bezpośrednio na stronie",
+                        "Dodano możliwość pobrania pierwszych rozdziałów książki do recenzji",
+                        "Dodano link do Amazon jako głównego kanału sprzedaży",
+                    ],
+                    video: "cfc30V33h6g",
                 },
             ],
         },
@@ -566,7 +650,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Функціональність",
                     text: [
                         "Створити англомовну версію сайту орієнтовану на ринок Британії",
-                        "Розробити адаптивний дизайн для десктопної та мобільної версії",
+                        "Розробити адаптивний дизайн для десктопної та мобільної версії сайту",
                         "Розробити зручну та інтуїтивну навігацію по сторінці",
                         "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
                     ],
@@ -612,6 +696,16 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
             ],
+            titleListVideo: [
+                {
+                    title: "<purple>Огляд</purple> сайту",
+                    description: [
+                        "Передбачено додаткову зручну навігацію по сайту",
+                        "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
+                    ],
+                    video: "WCsyXzpJ_Wg",
+                },
+            ],
         },
         en: {
             name: "Victoriia Zabara",
@@ -645,7 +739,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Functionality",
                     text: [
                         "Create an English-language version of the website tailored to the UK market",
-                        "Develop a responsive design for both desktop and mobile versions",
+                        "Develop a responsive design for both desktop and mobile versions of the website",
                         "Design a user-friendly and intuitive page navigation",
                         "Implement a simple and easy-to-use contact form",
                     ],
@@ -689,6 +783,16 @@ export const portfolioData: PortfolioDataItemType[] = [
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120385/dicision-3_ryblem.jpg",
                         },
                     ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Website <purple>overview</purple>",
+                    description: [
+                        "Additional convenient site navigation ıs implemented for a smoother user experience",
+                        "A simple and user-friendly contact form ıs developed according to requirements",
+                    ],
+                    video: "WCsyXzpJ_Wg",
                 },
             ],
         },
@@ -768,6 +872,16 @@ export const portfolioData: PortfolioDataItemType[] = [
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746120385/dicision-3_ryblem.jpg",
                         },
                     ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "<purple>Огляд</purple> сайту",
+                    description: [
+                        "Передбачено додаткову зручну навігацію по сайту",
+                        "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
+                    ],
+                    video: "WCsyXzpJ_Wg",
                 },
             ],
         },
