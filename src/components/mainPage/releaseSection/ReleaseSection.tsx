@@ -7,11 +7,14 @@ import { ReleaseSlider } from "./ReleaseSlider";
 export const ReleaseSection = () => {
     const getTranslation = useTranslations("Release");
     const videos = [
-        "dQw4w9WgXcQ",
-        "3JZ_D3ELwOQ",
-        "9bZkp7q19f0",
-        "hY7m5jjJ9mI",
-        "kffacxfA7G4",
+        "cfc30V33h6g",
+        "0g8QIs963dw",
+        "k-c_mDTxpr4",
+        "cBBFrzD8Vsc",
+        "fAZKP3pSNZY",
+        "YpF1TCXBkLs",
+        "gFo6T9kWuZw",
+        "QPyFqwmRjHc",
     ];
 
     return (
