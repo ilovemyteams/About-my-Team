@@ -150,7 +150,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             reviewer: "Viktoriia Zabara",
             reviewerRole: "Rekruter w branży IT",
             feedbackText:
-                "Bardzo dziękuję za stronę, wygląda profesjonalnie, starannie przemyślana, a nawet odzwierciedla mój charakter i światopogląd.(Prosto, konkretnie, nic zbędnego). Dziękuję za wykonaną pracę.",
+                "Bardzo dziękuję za stronę, wygląda profesjonalnie, starannie przemyślana, a nawet odzwierciedla mój charakter i światopogląd. (Prosto, konkretnie, nic zbędnego). Dziękuję za wykonaną pracę.",
         },
     },
     {

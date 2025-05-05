@@ -77,7 +77,7 @@ export const TasksSectionSlide = ({
                     initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
                 >
-                    <Icon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  w-[85%] h-[85%]   text-redLight dark:text-red " />
+                    <Icon className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  w-[85%] h-[85%] max-w-[300px] max-h-[250px]   text-redLight dark:text-red " />
                 </motion.div>
             </div>
 
