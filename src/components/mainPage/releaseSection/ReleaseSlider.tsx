@@ -20,7 +20,7 @@ export const ReleaseSlider = ({ videos }: { videos: string[] }) => {
                     {videos.map((video, index) => (
                         <div
                             key={index}
-                            className="embla__slide cursor-grabbing flex-[0_0_100%] tab:flex-[0_0_50%] pc:flex-[0_0_45%] w-full px-2"
+                            className="embla__slide cursor-grabbing flex-[0_0_90%] tab:flex-[0_0_50%] pc:flex-[0_0_45%] w-full px-2"
                         >
                             <YouTubeEmbed videoid={video} />
                         </div>
