@@ -201,7 +201,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     icon: "functionality",
                     title: "Функціональність",
                     text: [
-                        "Інтегрувати маркетингові інструменти, які вже використовує автор для просування книги.",
+                        "Інтегрувати маркетингові інструменти, які вже використовує автор для просування книги",
                         "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
                         "Забезпечити перехід на сторінку покупки книги на Amazon",
                         "Створити двомовну версію сайту: англійська та українська",
@@ -277,7 +277,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Кожен фрагмент підкріплений пам’ятною фотокарткою та коротким описом, що дозволяє відчути шлях автора як мандрівку",
                         "Слайдер адаптовано для мобільних пристроїв зі збереженням анімованих ефектів",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -285,7 +285,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         'Між секцією інтерв’ю та розділом "Про книгу" реалізована плавна, кінематографічна анімація, де обкладинка книги буквально “переїжджає” в наступний блок, перетворюючись із декору в функціональний об\'єкт',
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "Просування <purple>книги</purple>",
@@ -294,7 +294,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Додано можливість завантаження перших розділів книги для ознайомлення",
                         "Додано посилання на Amazon як основний канал продажу",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
@@ -412,7 +412,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Each slide is paired with a memorable photo and a short description, allowing users to experience the author’s journey as a meaningful path",
                         "The slider is mobile-optimized, with preserved animation effects",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -420,7 +420,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Between the interview section and the “About the Book” block, there is a smooth, cinematic animation where the book cover literally “slides” into the next section — transforming from a decorative image into a functional object",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "<purple>Book</purple> promotion",
@@ -429,7 +429,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Option to download the first chapters of the book for preview",
                         "Added Amazon link as the primary sales channel",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
@@ -549,7 +549,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Każdy fragment wsparty jest zapadającym w pamięć zdjęciem i krótkim opisem, co sprawia, że drogę autora odczuwa się jak podróż",
                         "Slajder został dostosowany do urządzeń mobilnych z zachowaniem efektów animacji",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -557,7 +557,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Pomiędzy sekcją wywiadu a rozdziałem „O książce” zastosowano płynną, filmową animację, w której okładka książki dosłownie „przesuwa się” do następnego bloku, przekształcając się z elementu dekoracyjnego w funkcjonalny obiekt",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "Promocja <purple>książki</purple>",
@@ -566,7 +566,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Dodano możliwość pobrania pierwszych rozdziałów książki do recenzji",
                         "Dodano link do Amazon jako głównego kanału sprzedaży",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
@@ -702,6 +702,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Передбачено додаткову зручну навігацію по сайту",
                         "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
+                        "Секції з кейсами реалізовані у вигляді слайдера, для покрашення сприйняття такого виду контенту",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -791,6 +792,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Additional convenient site navigation ıs implemented for a smoother user experience",
                         "A simple and user-friendly contact form ıs developed according to requirements",
+                        "Testimonials and case study sections presented as sliders to enhance content perception",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -803,8 +805,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             description: "",
             heroTitle: "Victoriia Zabara",
             heroText: [
-                "Проєкт розроблений для рекрутерки, яка працює переважно на Британському ринку та спеціалізується на пошуку та підборі людей на складні посади, такі як пілоти, інженери, висококваліфіковані ІТ-спеціалісти та представники рідкісних професій.",
-                "Це односторінковий лендінг, який поєднує роль візитівки особистого бренду рекрутерки та майданчик для презентації набору послуг, висвітлення її багаторічного досвіду та спеціалізації.",
+                "Projekt został opracowany dla rekruterki, która działa głównie na rynku brytyjskim i specjalizuje się w wyszukiwaniu oraz rekrutacji osób na wymagające stanowiska, takie jak piloci, inżynierowie, wysoko wykwalifikowani specjaliści IT oraz przedstawiciele rzadkich zawodów.",
+                "Jest to jednostronicowa strona docelowa, która łączy funkcję wizytówki marki osobistej rekruterki z platformą do prezentacji zakresu usług, podkreślając jej wieloletnie doświadczenie i specjalizację.",
             ],
             deadlines: {
                 analysis: "2 tygodnie",
@@ -817,20 +819,20 @@ export const portfolioData: PortfolioDataItemType[] = [
                     icon: "brand",
                     title: "Marka osobista",
                     text: [
-                        "Створити особистий бренд як клієнтоорієнтованої, дружньої та легкої в спілкуванні експертки з найму",
-                        "Підкреслити досвід та надбання за 5+ років роботи у сфері рекрутингу",
-                        "Передати tone of voice спілкування та відгуки від задоволених клієнтів",
-                        "Підібрати кольорову палітру, яка відповідає персональному стилю експертки",
+                        "Stworzenie marki osobistej jako klientocentrycznej, przyjaznej i łatwej w komunikacji ekspertki ds. rekrutacji",
+                        "Podkreślenie doświadczenia i osiągnięć zdobytych w ciągu 5+ lat pracy w branży rekrutacyjnej",
+                        "Pzekazanie tone of voice w komunikacji oraz opinii od zadowolonych klientów",
+                        "Dobór palety kolorów odpowiadającej osobistemu stylowi i prezentacji ekspertki w mediach społecznościowych",
                     ],
                 },
                 {
                     icon: "functionality",
                     title: "Funkcjonalność",
                     text: [
-                        "Створити англомовну версію сайту орієнтовану на ринок Британії",
-                        "Розробити адаптивний дизайн для десктопної та мобільної версії",
-                        "Розробити зручну та інтуїтивну навігацію по сторінці",
-                        "Реалізувати просту та інтуїтивну форму зворотного зв'язку",
+                        "Stworzenie anglojęzycznej wersji strony internetowej, skoncentrowanej na rynku brytyjskim",
+                        "Opracowanie responsywnego designu dla wersji desktopowej i mobilnej strony internetowej",
+                        "Zaprojektowanie wygodnej i intuicyjnej nawigacji po stronie",
+                        "Wdrożenie prostego i intuicyjnego formularza kontaktowego",
                     ],
                 },
             ],
@@ -844,9 +846,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Візуальний концепт базується на поєднанні кольорів, які були використовувані в соцмережах для підкріплення асоціації - дружність, відкритість, довіра",
-                                "Використані елементи рукописних шрифтів та замальовок олівцем в блокноті, як асоціація індивідуального підходу та нотування в блокноті від руки",
-                                "Створено персоналізований логотип",
+                                "Koncepcja wizualna opiera się na połączeniu kolorów wykorzystanych w mediach społecznościowych, aby wzmocnić skojarzenia z życzliwością, otwartością i zaufaniem",
+                                "Wykorzystano elementy odręcznych czcionek i szkiców ołówkiem w notatniku jako nawiązanie do indywidualnego podejścia oraz ręcznych notatek",
+                                "Stworzono spersonalizowane logo",
                             ],
                         },
                     ],
@@ -858,14 +860,14 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                         {
                             text: [
-                                "Великі фото та описи в блоку “про себе” надають ефект першого знайомства та формування довіри до експертки",
+                                "Duże zdjęcia i opisy w sekcji „o mnie” tworzą efekt pierwszego spotkania i budują zaufanie do ekspertki",
                             ],
                         },
                     ],
                     slideRight: [
                         {
                             text: [
-                                "Візуальні елементи органічно поєднують блоки та ведуть користувача шляхом співпраці покроково",
+                                "Elementy wizualne organicznie łączą sekcje i prowadzą użytkownika przez proces współpracy krok po kroku",
                             ],
                         },
                         {
@@ -876,10 +878,11 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             titleListVideo: [
                 {
-                    title: "<purple>Огляд</purple> сайту",
+                    title: "<purple>Przegląd</purple> strony",
                     description: [
-                        "Передбачено додаткову зручну навігацію по сайту",
-                        "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
+                        "Zapewniono dodatkową wygodną nawigację po stronie",
+                        "Opracowano wygodny i intuicyjny formularz opinii zgodnie z wymaganiami",
+                        "Sekcje z opiniami i case studies zostały wdrożone w formie suwaka, aby poprawić odbiór tego typu treści",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
