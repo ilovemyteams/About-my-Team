@@ -277,7 +277,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Кожен фрагмент підкріплений пам’ятною фотокарткою та коротким описом, що дозволяє відчути шлях автора як мандрівку",
                         "Слайдер адаптовано для мобільних пристроїв зі збереженням анімованих ефектів",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -285,7 +285,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         'Між секцією інтерв’ю та розділом "Про книгу" реалізована плавна, кінематографічна анімація, де обкладинка книги буквально “переїжджає” в наступний блок, перетворюючись із декору в функціональний об\'єкт',
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "Просування <purple>книги</purple>",
@@ -294,7 +294,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Додано можливість завантаження перших розділів книги для ознайомлення",
                         "Додано посилання на Amazon як основний канал продажу",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
@@ -412,7 +412,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Each slide is paired with a memorable photo and a short description, allowing users to experience the author’s journey as a meaningful path",
                         "The slider is mobile-optimized, with preserved animation effects",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -420,7 +420,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Between the interview section and the “About the Book” block, there is a smooth, cinematic animation where the book cover literally “slides” into the next section — transforming from a decorative image into a functional object",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "<purple>Book</purple> promotion",
@@ -429,7 +429,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Option to download the first chapters of the book for preview",
                         "Added Amazon link as the primary sales channel",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
@@ -549,7 +549,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Każdy fragment wsparty jest zapadającym w pamięć zdjęciem i krótkim opisem, co sprawia, że drogę autora odczuwa się jak podróż",
                         "Slajder został dostosowany do urządzeń mobilnych z zachowaniem efektów animacji",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "BUakAviL66o",
                 },
 
                 {
@@ -557,7 +557,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Pomiędzy sekcją wywiadu a rozdziałem „O książce” zastosowano płynną, filmową animację, w której okładka książki dosłownie „przesuwa się” do następnego bloku, przekształcając się z elementu dekoracyjnego w funkcjonalny obiekt",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "LTH4tfWJ3-w",
                 },
                 {
                     title: "Promocja <purple>książki</purple>",
@@ -566,7 +566,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Dodano możliwość pobrania pierwszych rozdziałów książki do recenzji",
                         "Dodano link do Amazon jako głównego kanału sprzedaży",
                     ],
-                    video: "cfc30V33h6g",
+                    video: "PNjx5vTrqYI",
                 },
             ],
         },
