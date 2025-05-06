@@ -353,7 +353,7 @@
         "launch": "Launch",
         "support": "Support",
         "behanceLink": "Project Design",
-        "taskTitle": "<purple>The tasks</purple>, we worked on",
-        "decisionsTitle": "<purple>The solutions</purple>, that were implemented"
+        "taskTitle": "<purple>The tasks</purple> we worked on",
+        "decisionsTitle": "<purple>The solutions</purple> that were implemented"
     }
 }

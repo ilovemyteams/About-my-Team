@@ -330,7 +330,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "About product",
                     text: [
                         "Spark interest in potential readers and build trust in the book",
-                        "PageContentListresent the main ideas of the book in a simple, visually clear way",
+                        "Present the main ideas of the book in a simple, visually clear way",
                         "Add reader testimonials to reinforce credibility",
                     ],
                 },
@@ -545,7 +545,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 {
                     title: "Cechy <purple>interakcji</purple>",
                     description: [
-                        "Historia autora przedstawiona jest w formie slajdu z animacją, która odzwierciedla kluczowe wydarzenia z jego życia",
+                        "Historia autora przedstawiona jest w formie slajdera z animacją, która odzwierciedla kluczowe wydarzenia z jego życia",
                         "Każdy fragment wsparty jest zapadającym w pamięć zdjęciem i krótkim opisem, co sprawia, że drogę autora odczuwa się jak podróż",
                         "Slajder został dostosowany do urządzeń mobilnych z zachowaniem efektów animacji",
                     ],
