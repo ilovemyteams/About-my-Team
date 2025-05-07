@@ -702,7 +702,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Передбачено додаткову зручну навігацію по сайту",
                         "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
-                        "Секції з кейсами реалізовані у вигляді слайдера, для покрашення сприйняття такого виду контенту",
+                        "Секцію з кейсами реалізовано як слайдер для зручного перегляду та кращого сприйняття інформації",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -792,7 +792,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Additional convenient site navigation ıs implemented for a smoother user experience",
                         "A simple and user-friendly contact form ıs developed according to requirements",
-                        "Testimonials and case study sections presented as sliders to enhance content perception",
+                        "The case study section presented as a slider to make browsing easier and improve content perception",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -882,7 +882,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Zapewniono dodatkową wygodną nawigację po stronie",
                         "Opracowano wygodny i intuicyjny formularz opinii zgodnie z wymaganiami",
-                        "Sekcje z opiniami i case studies zostały wdrożone w formie suwaka, aby poprawić odbiór tego typu treści",
+                        "Sekcje z case studies zostały wdrożone w formie suwaka, by ułatwić odbiór i zwiększyć przejrzystość treści",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
