@@ -758,7 +758,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                             text: [
                                 "The visual concept is based on a color palette used in social media to reinforce associations with friendliness, openness, and trust",
                                 "Handwritten fonts and pencil sketch elements are used to evoke an individual approach and note-taking by hand",
-                                "A personalized logo image ıs created",
+                                "A personalized logo image is created",
                             ],
                         },
                     ],
@@ -790,9 +790,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                 {
                     title: "Website <purple>overview</purple>",
                     description: [
-                        "Additional convenient site navigation ıs implemented for a smoother user experience",
-                        "A simple and user-friendly contact form ıs developed according to requirements",
-                        "The case study section presented as a slider to make browsing easier and improve content perception",
+                        "Additional convenient site navigation is implemented for a smoother user experience",
+                        "A simple and user-friendly contact form is developed according to requirements",
+                        "The case study section is presented as a slider to make browsing easier and improve content perception",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -821,7 +821,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     text: [
                         "Stworzenie marki osobistej jako klientocentrycznej, przyjaznej i łatwej w komunikacji ekspertki ds. rekrutacji",
                         "Podkreślenie doświadczenia i osiągnięć zdobytych w ciągu 5+ lat pracy w branży rekrutacyjnej",
-                        "Pzekazanie tone of voice w komunikacji oraz opinii od zadowolonych klientów",
+                        "Przekazanie tone of voice w komunikacji oraz opinii od zadowolonych klientów",
                         "Dobór palety kolorów odpowiadającej osobistemu stylowi i prezentacji ekspertki w mediach społecznościowych",
                     ],
                 },
