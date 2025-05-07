@@ -882,7 +882,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Zapewniono dodatkową wygodną nawigację po stronie",
                         "Opracowano wygodny i intuicyjny formularz opinii zgodnie z wymaganiami",
-                        "Sekcje z case studies zostały wdrożone w formie suwaka, by ułatwić odbiór i zwiększyć przejrzystość treści",
+                        "Sekcje z case studies zostały wdrożone w formie slajdera, by ułatwić odbiór i zwiększyć przejrzystość treści",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
