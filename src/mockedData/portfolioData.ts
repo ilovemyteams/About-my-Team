@@ -330,7 +330,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "About product",
                     text: [
                         "Spark interest in potential readers and build trust in the book",
-                        "PageContentListresent the main ideas of the book in a simple, visually clear way",
+                        "Present the main ideas of the book in a simple, visually clear way",
                         "Add reader testimonials to reinforce credibility",
                     ],
                 },
@@ -545,7 +545,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 {
                     title: "Cechy <purple>interakcji</purple>",
                     description: [
-                        "Historia autora przedstawiona jest w formie slajdu z animacją, która odzwierciedla kluczowe wydarzenia z jego życia",
+                        "Historia autora przedstawiona jest w formie slajdera z animacją, która odzwierciedla kluczowe wydarzenia z jego życia",
                         "Każdy fragment wsparty jest zapadającym w pamięć zdjęciem i krótkim opisem, co sprawia, że drogę autora odczuwa się jak podróż",
                         "Slajder został dostosowany do urządzeń mobilnych z zachowaniem efektów animacji",
                     ],
@@ -702,7 +702,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Передбачено додаткову зручну навігацію по сайту",
                         "Розроблено зручну та просту форму зворотного зв'язку відповідно до вимог",
-                        "Секції з кейсами реалізовані у вигляді слайдера, для покрашення сприйняття такого виду контенту",
+                        "Секцію з кейсами реалізовано як слайдер для зручного перегляду та кращого сприйняття інформації",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -758,7 +758,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                             text: [
                                 "The visual concept is based on a color palette used in social media to reinforce associations with friendliness, openness, and trust",
                                 "Handwritten fonts and pencil sketch elements are used to evoke an individual approach and note-taking by hand",
-                                "A personalized logo image ıs created",
+                                "A personalized logo image is created",
                             ],
                         },
                     ],
@@ -790,9 +790,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                 {
                     title: "Website <purple>overview</purple>",
                     description: [
-                        "Additional convenient site navigation ıs implemented for a smoother user experience",
-                        "A simple and user-friendly contact form ıs developed according to requirements",
-                        "Testimonials and case study sections presented as sliders to enhance content perception",
+                        "Additional convenient site navigation is implemented for a smoother user experience",
+                        "A simple and user-friendly contact form is developed according to requirements",
+                        "The case study section is presented as a slider to make browsing easier and improve content perception",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
@@ -821,7 +821,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     text: [
                         "Stworzenie marki osobistej jako klientocentrycznej, przyjaznej i łatwej w komunikacji ekspertki ds. rekrutacji",
                         "Podkreślenie doświadczenia i osiągnięć zdobytych w ciągu 5+ lat pracy w branży rekrutacyjnej",
-                        "Pzekazanie tone of voice w komunikacji oraz opinii od zadowolonych klientów",
+                        "Przekazanie tone of voice w komunikacji oraz opinii od zadowolonych klientów",
                         "Dobór palety kolorów odpowiadającej osobistemu stylowi i prezentacji ekspertki w mediach społecznościowych",
                     ],
                 },
@@ -882,7 +882,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     description: [
                         "Zapewniono dodatkową wygodną nawigację po stronie",
                         "Opracowano wygodny i intuicyjny formularz opinii zgodnie z wymaganiami",
-                        "Sekcje z opiniami i case studies zostały wdrożone w formie suwaka, aby poprawić odbiór tego typu treści",
+                        "Sekcje z case studies zostały wdrożone w formie slajdera, by ułatwić odbiór i zwiększyć przejrzystość treści",
                     ],
                     video: "WCsyXzpJ_Wg",
                 },
