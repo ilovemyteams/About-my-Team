@@ -4,7 +4,7 @@ import Fade from "embla-carousel-fade";
 import useEmblaCarousel from "embla-carousel-react";
 import React, { useState } from "react";
 
-import { SliderType } from "@/src/mockedData/portfolioData";
+import { DecisionType } from "@/src/mockedData/portfolioData";
 
 import {
     NextButton,
@@ -16,7 +16,7 @@ import { SliderNumbersBox } from "../../shared/SliderComponents/SliderNumbersBox
 import { DecisionCard } from "./DecisionCard";
 
 type DecisionSliderProps = {
-    decisions: SliderType[];
+    decisions: DecisionType[];
     options?: EmblaOptionsType;
 };
 
@@ -64,7 +64,7 @@ export const DecisionSlider: React.FC<DecisionSliderProps> = props => {
     return (
         <div className=" embla relative">
             <div className=" overflow-hidden" ref={emblaRef}>
-                <div className=" flex">
+                <div className="flex">
                     {decisions.map((decision, index) => (
                         <div
                             key={index}

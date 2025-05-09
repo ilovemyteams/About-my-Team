@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { SliderType } from "@/src/mockedData/portfolioData";
+import { DecisionType } from "@/src/mockedData/portfolioData";
 
 import { IconCheck } from "../../shared/Icons/IconCheck";
 
@@ -8,7 +8,7 @@ export const DecisionCard = ({
     data,
     direction,
 }: {
-    data: SliderType;
+    data: DecisionType;
     direction: "up" | "down" | "hideUp" | "hideDown" | undefined;
 }) => {
     const { slideLeft, slideRight } = data;

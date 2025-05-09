@@ -1,16 +1,16 @@
 import React from "react";
 
-interface ScrollSectionTabsProps {
+interface TasksSectionTabsProps {
     tabs: string[];
     activeTab: string;
     onClickTab?: (title: string) => void;
 }
 
-export const ScrollSectionTabs = ({
+export const TasksSectionTabs = ({
     activeTab,
     tabs,
     onClickTab,
-}: ScrollSectionTabsProps) => {
+}: TasksSectionTabsProps) => {
     const onClickTabButton = (title: string) => {
         if (onClickTab) {
             onClickTab(title);

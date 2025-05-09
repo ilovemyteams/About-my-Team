@@ -1,24 +1,26 @@
 import { EmblaOptionsType } from "embla-carousel";
 
-import { SliderSectionType } from "@/src/mockedData/portfolioData";
+import { DecisionType } from "@/src/mockedData/portfolioData";
 
-import { HighlightTitleFromMockedData } from "../../shared/HighlightTitleFromMockedData";
+import { HighlightTitleFromMessages } from "../../shared/HighlightTitleFromMessages";
 import { Section } from "../../shared/Section";
 import { DecisionSlider } from "./DecisionSlider";
 
 export const DecisionSection = ({
-    decision,
+    decisions,
 }: {
-    decision: SliderSectionType;
+    decisions: DecisionType[];
 }) => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const title = decision.title;
-    const data = decision.data;
 
     return (
         <Section>
-            <HighlightTitleFromMockedData text={title} />
-            <DecisionSlider decisions={data} options={OPTIONS} />
+            <HighlightTitleFromMessages
+                title="SomeProjectPage"
+                text="decisionsTitle"
+                className="mb-6 tab:mb-10 pc:mb-[64px]"
+            />
+            <DecisionSlider decisions={decisions} options={OPTIONS} />
         </Section>
     );
 };

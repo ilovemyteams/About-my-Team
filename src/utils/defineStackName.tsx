@@ -20,6 +20,28 @@ export const defineStackName = (technology: string | undefined) => {
             return "NestJS";
         case "rtk-rtkq":
             return "RTK+RTKQ";
+        case "astrojs":
+            return "Astro.js";
+        case "tailwind":
+            return "Tailwind CSS";
+        case "gsap":
+            return "GSAP";
+        case "nodemailer":
+            return "Nodemailer";
+        case "js":
+            return "JavaScript";
+        case "html":
+            return "HTML5";
+        case "scss":
+            return "SCSS";
+        case "vite":
+            return "Vite";
+        case "swiper":
+            return "Swiper";
+        case "emailjs":
+            return "EmailJS";
+        case "handlebars":
+            return "Handlebars";
         default:
             return "";
     }

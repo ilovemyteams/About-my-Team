@@ -2592,4 +2592,115 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
+    {
+        data: {
+            id: "natalia-kalabanova-scrum-master",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746728153/Natalia_scrum_thmq0m.png",
+            position: "Project Manager/ Scrum Master",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "20$",
+            socialLinks: {
+                linkedin:
+                    "http://www.linkedin.com/in/natalia-kalabanova-625638153",
+                telegram: "https://t.me/Natalia_myname",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets",
+                "Trello",
+                "Notion",
+                "SDLC",
+                "User story",
+                "User flow",
+                "BPMN",
+                "Google Docs",
+                "Discord",
+                "Miro",
+                "Figma",
+            ],
+        },
+        ua: {
+            name: "Наталя Калабанова",
+            about: "Less is more.",
+            services:
+                "Як Scrum Master, я організовую роботу команди, підтримую сприятливе середовище для співпраці та ефективно впроваджую принципи Agile. Проводжу щоденні stand-up мітинги для синхронізації роботи, усуваю перешкоди, координую виконання завдань спринтів і стежу за дотриманням термінів. Забезпечую прозору комунікацію між розробниками, дизайнерами та іншими стейкхолдерами, планую спринти, управління ризиками та контролюю прогрес команди. Я також проводжу ретроспективи для вдосконалення процесів, щоб забезпечити якісну та своєчасну реалізацію проєкту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Natalia Kalabanova",
+            about: "Less is more.",
+            services:
+                "As a Scrum Master, I organize the team’s workflow, foster a collaborative environment, and effectively implement Agile principles. I conduct daily stand-up meetings to synchronize the team’s efforts, remove obstacles, coordinate sprint tasks, and ensure deadlines are met. I facilitate transparent communication between developers, designers, and other stakeholders, plan sprints, manage risks, and monitor the team’s progress. Additionally, I lead retrospectives to continuously improve processes and ensure the project is delivered on time and with high quality.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Natalia Kalabanova",
+            about: "Less is more.",
+            services:
+                "Jako Scrum Master organizuję przepływ pracy zespołu, wspieram środowisko sprzyjające współpracy i skutecznie wdrażam zasady Agile. Prowadzę codzienne spotkania typu stand-up, aby synchronizować wysiłki zespołu, usuwać przeszkody, koordynować zadania sprintu i zapewniać dotrzymywanie terminów. Ułatwiam przejrzystą komunikację między programistami, projektantami i innymi interesariuszami, planuję sprinty, zarządzam ryzykiem i monitoruję postępy zespołu. Dodatkowo prowadzę retrospektywy w celu ciągłego doskonalenia procesów i zapewnienia, że projekt jest dostarczany na czas i w wysokiej jakości.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "tetiana-drofa-project-manager",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746727912/Tanya_PM_cj71fj.jpg",
+            position: "Project Manager",
+            categoryName: "manager",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "10$",
+            socialLinks: {
+                linkedin: "http://www.linkedin.com/in/tetiana-drofa/",
+                telegram: "https://t.me/Tetyana_Drofa",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Google Sheets",
+                "ClickUp",
+                "Trello",
+                "Notion",
+                "SDLC",
+                "User story",
+                "User flow",
+                "BPMN",
+                "Slack",
+                "Google Docs",
+                "Discord",
+                "Miro",
+                "Figma",
+                "Microsoft Office",
+                "HTML",
+                "CSS",
+                "JavaScript",
+            ],
+        },
+        ua: {
+            name: "Тетяна Дрофа",
+            about: "Моя мета — досягати результатів вчасно, якісно та з командною підтримкою.",
+            services:
+                "Я  орієнтований на результат проєктний менеджер з досвідом керування командами від 5 осіб. Вмію організовувати чітку комунікацію всередині команди та зі стейкхолдерами, що забезпечує прозорість і синхронність у роботі. Ефективно контролюю виконання завдань, дотримуюсь дедлайнів і забезпечую якісні результати. Оперативно вирішую проблеми, підтримуючи стабільний темп проєкту.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Tetiana Drofa",
+            about: "My goal is to achieve results on time, with quality, and with the support of the team.",
+            services:
+                "I am a result-oriented Project Manager with experience leading teams of 5 or more people. I know how to establish clear communication within the team and with stakeholders, which ensures transparency and alignment in work processes. I effectively monitor task execution, meet deadlines, and deliver high-quality results. I resolve issues promptly, maintaining a steady project pace.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Tetiana Drofa",
+            about: "Moim celem jest osiągnięcie wyników na czas, z zachowaniem jakości i przy wsparciu zespołu.",
+            services:
+                "Jestem zorientowanym na rezultaty Kierownikiem Projektu z doświadczeniem w zarządzaniu zespołami liczącymi co najmniej 5 osób. Potrafię organizować jasną komunikację wewnątrz zespołu i z interesariuszami, co zapewnia przejrzystość i spójność działań. Skutecznie nadzoruję realizację zadań, dotrzymuję terminów i dostarczam wysokiej jakości rezultaty. Szybko rozwiązuję problemy, utrzymując stabilne tempo pracy nad projektem.",
+            team: "I Love My Team",
+        },
+    },
 ];
