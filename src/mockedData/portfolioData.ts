@@ -617,6 +617,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                 imageMobileStatic:
                     "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746090666/static-view_hez8sg.jpg",
             },
+            behanceLink:
+                "https://www.behance.net/gallery/225444197/Landing-page-for-IT-Recruiter",
         },
         ua: {
             name: "Вікторія Забара",
