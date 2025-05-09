@@ -7,7 +7,15 @@
         "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project",
-        "btn": "get 100 $"
+        "titleList": "Our clients:",
+        "item1": "small and medium-sized businesses",
+        "item2": "industry experts",
+        "item3": "startups",
+        "item4": "e-commerce",
+        "btn": "discuss a project"
+    },
+    "Release": {
+        "title": "<purple>Demo</purple> presentations <purple>from</purple> our <purple>team</purple>"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
@@ -80,7 +88,9 @@
         "sixthStepTitle": "Transfer of the website",
         "sixthStepText": "After testing and integration of all services, the resource, along with all rights to it, is transferred to the client",
         "seventhStepTitle": "Support",
-        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them"
+        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them",
+        "allStages": "All stages",
+        "coverStages": "Collapse stages"
     },
     "HireUs": {
         "pageTitle": "connection",

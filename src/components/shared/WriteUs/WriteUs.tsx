@@ -10,9 +10,10 @@ import { usePathname, useRouter } from "@/src/i18n/routing";
 interface WriteUsProps {
     className?: string;
     eventGTM?: string;
+    buttonName?: string;
 }
 
-export const WriteUs = ({ className, eventGTM }: WriteUsProps) => {
+export const WriteUs = ({ className, eventGTM, buttonName }: WriteUsProps) => {
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
 
@@ -28,7 +29,7 @@ export const WriteUs = ({ className, eventGTM }: WriteUsProps) => {
 
     return (
         <Button onClick={onClickButton} className={className}>
-            {getTranslation("order")}
+            {buttonName ? buttonName : getTranslation("order")}
         </Button>
     );
 };
