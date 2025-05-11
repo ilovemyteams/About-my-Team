@@ -53,23 +53,18 @@
     },
     "Services": {
         "pageTitle": "Services",
-        "titleFirstLine": "We develop <purple>digital products</purple> ",
-        "titleSecondLine": "for your business",
-        "BATitle": "Business analysis",
-        "BAText": "Analytics helps the business to build its work and to develop itself based on the facts, but not the guesses or intuition",
+        "titleFirstLine": "You get a fully functional <purple>website</purple> ",
+        "titleSecondLine": "<purple>that sets</purple> you <purple>apart from the competition</purple>",
+        "subtitleText": "our services \ninclude:",
+        "BATitle": "Business and competitor analysis",
+        "BAText": "Make decisions based on facts, not intuition. We help you see where the opportunities are — and where the risks hide. Our insights keep you one step ahead, focused on what truly matters for your success.",
         "designTitle": "Design",
-        "designText": "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design",
+        "designText": "We believe design is love at first sight. It creates the first impression — and that impression decides everything. We craft every element to be elegant, intuitive, and clear — because when people trust what they see, they’re more likely to buy.",
         "devTitle": "Development",
-        "devText": "At the stage of development the website prototype receives its birth, gaining all the necessary functionality, databases are connected, the payment possibilities are implemented, the website is filled up with the content",
+        "devText": "We build digital products that load fast, scale easily, and keep up with your business. Clean code, smart logic, and flexibility in the details — everything to make sure it works and brings results.",
         "QATitle": "Testing",
-        "QAText": "At the stage of testing the performance of the website and its correspondence to the requirements are checked. We test functionality, usability, optimization for different browsers, screen sizes and the speed of website",
-        "supportTitle": "Support",
-        "supportText": "Team representative teaches the customer's employees to work with the web-site, to enable the customer to update the website's content in future",
-        "allServicesTitle": "Comprehensive service",
-        "allServicesText": "A comprehensive and systematic approach with unified project management (the customer does not need to look for contractors for individual tasks - everything is done by one contractor, including the search or recommendation of subcontractors)",
-        "contactUs": "Get a comprehensive consultation with our manager if you have any questions",
-        "showMore": "Show more",
-        "showLess": "Show less"
+        "QAText": "It’s all about stability, safety, and trust. Users don’t give second chances — if something doesn’t work, they leave. We test to make sure your site, app, or service runs smoothly, earns revenue, and keeps your clients happy.",
+        "allServices": "All services"
     },
 
     "Stages": {

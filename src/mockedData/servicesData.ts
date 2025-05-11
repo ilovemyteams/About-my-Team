@@ -47,7 +47,7 @@ export const servicesData: ServiceType[] = [
     {
         slug: "business-analysis",
         icon: "analysis",
-        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559595/services-websites_hdzzeu.jpg",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559370/service-ba_ievdfg.jpg",
 
         ua: {
             name: "бізнес-аналіз",

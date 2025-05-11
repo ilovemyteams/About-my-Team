@@ -6,13 +6,16 @@ import { TitleWrapper } from "../../shared/TitleWrapper";
 
 export const Title = () => {
     const getTranslation = useTranslations("Services");
-    const titleNames = ["titleFirstLine", "titleSecondLine"];
+
     return (
         <TitleWrapper>
             <SmallPageTitle className="tab:float-left">
                 {getTranslation("pageTitle")}
             </SmallPageTitle>
-            <ColoredTitle categoryName="Services" propName={titleNames} />
+            <ColoredTitle
+                categoryName="Services"
+                propName={["titleFirstLine", "titleSecondLine"]}
+            />
         </TitleWrapper>
     );
 };
