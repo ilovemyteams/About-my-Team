@@ -8,7 +8,7 @@ export const Title = () => {
     const getTranslation = useTranslations("Services");
 
     return (
-        <TitleWrapper>
+        <TitleWrapper className="tab:mb-10">
             <SmallPageTitle className="tab:float-left">
                 {getTranslation("pageTitle")}
             </SmallPageTitle>

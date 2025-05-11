@@ -2,11 +2,13 @@
 import { motion } from "framer-motion";
 import { PointerEvent } from "react";
 
+import { ImageFromCloud } from "../../shared/ImageFromCloud";
+
 interface ServiceItemProps {
     title: string;
     text: string;
     id: string;
-
+    image: string;
     onChangeSection: (id: string) => void;
     isOpen: boolean;
 }
@@ -15,15 +17,20 @@ export const ServiceItem = ({
     text,
     title,
     id,
-
+    image,
     onChangeSection,
     isOpen,
 }: ServiceItemProps) => {
-    const onClick = (e: PointerEvent<HTMLLIElement>) => {
+    const onHoverCard = () => {
+        onChangeSection(id);
+    };
+
+    const onTapCard = (e: PointerEvent<HTMLLIElement>) => {
         if (e.pointerType === "touch" || e.pointerType === "pen") {
             onChangeSection(id);
         }
     };
+
     const bgVariants = {
         close: {
             opacity: 0,
@@ -54,11 +61,36 @@ export const ServiceItem = ({
         },
     };
 
+    const imageVariants = {
+        close: { opacity: 0, scale: 0, transition: { duration: 0.5 } },
+        open: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 1,
+                ease: "easeInOut",
+                delay: 0.5,
+            },
+        },
+    };
+
+    // const imageVariants = {
+    //     close: { height: 0, transition: { duration: 0.5 } },
+    //     open: {
+    //         height: "auto",
+    //         transition: {
+    //             duration: 1,
+    //             ease: "easeInOut",
+    //             delay: 0.5,
+    //         },
+    //     },
+    // };
     return (
-        <li
-            className="relative py-6 first:border-y-[1px]  border-b-[1px] border-purple-strokeLight dark:border-purple-stroke "
-            // onClick={onClick}
-            onPointerDown={onClick}
+        <motion.li
+            className="relative py-6 first:border-y-[1px] cursor-pointer border-b-[1px] border-purple-strokeLight dark:border-purple-stroke 
+            tab:py-7 tab:flex tab:gap-[100px]"
+            onPointerDown={onTapCard}
+            onHoverStart={onHoverCard}
         >
             <motion.div
                 className="absolute inset-0 bg-homeServiceCardGradientLight dark:bg-homeServiceCardGradientDark -z-[1]"
@@ -66,23 +98,39 @@ export const ServiceItem = ({
                 initial={isOpen ? "open" : "close"}
                 animate={isOpen ? "open" : "close"}
             ></motion.div>
-            <div className="flex gap-2">
-                <div className="m-[3px] shrink-0 grow-0">
-                    <div className="size-[18px] border-[3px] border-redLight dark:border-red" />
-                </div>
-                <h3 className="font-caviar font-bold text-xl text-purple-200 dark:text-white-200">
+
+            <div className="absolute top-6 left-0 m-[3px] size-[18px] border-[3px] border-redLight dark:border-red tab:static grow-0 shrink-0 tab:size-[12px] tab:border-[2px] tab:m-[2px] tab:mt-[5px]" />
+
+            <div className="tab:w-[41%] tab:grow-0 tab:shrink-0 text-pretty pc:w-[42%] desk:w-[46%]">
+                <h3 className="ml-8 font-caviar font-bold text-xl text-purple-200 dark:text-white-200 tab:ml-0  tab:text-lg pc:text-xl desk:text-2xl24">
                     {title}
                 </h3>
+
+                <motion.div
+                    initial={isOpen ? "open" : "close"}
+                    animate={isOpen ? "open" : "close"}
+                    variants={wrapperVariants}
+                    className="overflow-clip"
+                >
+                    <p className="text-base pt-6 tab:pt-4 desk:text-lg25">
+                        {text}
+                    </p>
+                </motion.div>
             </div>
 
             <motion.div
+                className="hidden tab:block absolute top-0 right-0 overflow-hidden desk:right-[64px]"
                 initial={isOpen ? "open" : "close"}
                 animate={isOpen ? "open" : "close"}
-                variants={wrapperVariants}
-                className="overflow-clip"
+                variants={imageVariants}
             >
-                <p className="text-base pt-6">{text}</p>
+                <ImageFromCloud
+                    src={image}
+                    alt={`${title} image`}
+                    width={186}
+                    height={124}
+                />
             </motion.div>
-        </li>
+        </motion.li>
     );
 };
