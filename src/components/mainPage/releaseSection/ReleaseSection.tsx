@@ -27,10 +27,6 @@ export const ReleaseSection = () => {
                         ),
                     })}
                 </h2>
-                <SharePopover
-                    trigerShowShareText={true}
-                    className="relative "
-                />
             </div>
             <ReleaseSlider videos={videos} />
         </Section>
