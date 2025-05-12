@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { PointerEvent } from "react";
 
 import { ImageFromCloud } from "../../shared/ImageFromCloud";
 
@@ -25,10 +24,10 @@ export const ServiceItem = ({
         onChangeSection(id);
     };
 
-    const onTapCard = (e: PointerEvent<HTMLLIElement>) => {
-        if (e.pointerType === "touch" || e.pointerType === "pen") {
-            onChangeSection(id);
-        }
+    const onTapCard = (e: MouseEvent | TouchEvent | PointerEvent) => {
+        const pointerType = (e as PointerEvent).pointerType;
+        if (pointerType === "mouse") return;
+        onChangeSection(id);
     };
 
     const bgVariants = {
@@ -89,8 +88,8 @@ export const ServiceItem = ({
         <motion.li
             className="relative py-6 first:border-y-[1px] cursor-pointer border-b-[1px] border-purple-strokeLight dark:border-purple-stroke 
             tab:py-7 tab:flex tab:gap-[100px]"
-            onPointerDown={onTapCard}
             onHoverStart={onHoverCard}
+            onTap={onTapCard}
         >
             <motion.div
                 className="absolute inset-0 bg-homeServiceCardGradientLight dark:bg-homeServiceCardGradientDark -z-[1]"
