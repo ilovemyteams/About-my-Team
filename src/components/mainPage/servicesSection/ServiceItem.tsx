@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
 
 import { ImageFromCloud } from "../../shared/ImageFromCloud";
 
@@ -76,10 +75,7 @@ export const ServiceItem = ({
 
     return (
         <motion.li
-            className={twMerge(
-                "relative py-6 first:border-y-[1px] border-b-[1px] border-purple-strokeLight dark:border-purple-stroke tab:py-7 tab:flex tab:gap-[100px]",
-                isOpen ? "cursor-default" : "cursor-pointer"
-            )}
+            className="relative py-6 first:border-y-[1px] border-b-[1px] border-purple-strokeLight dark:border-purple-stroke tab:py-7 tab:flex tab:gap-[100px]"
             onHoverStart={onHoverCard}
             onTap={onTapCard}
         >
