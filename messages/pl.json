@@ -8,9 +8,16 @@
         "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
         "portfolioLink": "Realizacje",
         "project": "Projekt",
-        "btn": "odbierz 100 $"
+        "titleList": "Nasi klienci:",
+        "item1": "małe i średnie przedsiębiorstwa",
+        "item2": "eksperci branżowi",
+        "item3": "startupy",
+        "item4": "e-commerce",
+        "btn": "omówienie projektu"
     },
-
+    "Release": {
+        "title": "Prezentacje <purple>demonstracyjne od</purple> naszego <purple>zespołu</purple>"
+    },
     "Portfolio": {
         "pageTitle": "Wdrożone ",
         "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
@@ -48,23 +55,19 @@
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstLine": "Tworzymy <purple>produkty cyfrowe</purple> ",
-        "titleSecondLine": "dla Twojego biznesu",
-        "BATitle": "Analiza biznesowa",
-        "BAText": "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
+        "titleFirstLine": "Otrzymujesz w pełni działającą <purple>stronę,</purple> ",
+        "titleSecondLine": "<purple>która wyróżni</purple> Cię <purple>na tle konkurencji</purple>",
+        "subtitleText": "nasze usługi \nobejmują:",
+        "BATitle": "Analiza biznesu i konkurencji",
+        "BAText": "Podejmuj decyzje w oparciu o fakty, a nie intuicję. Pomagamy dostrzec, gdzie są szanse na rozwój, a gdzie czyhają ryzyka. Dzięki nam jesteś zawsze o krok przed konkurencją, koncentrując się na tym, co naprawdę liczy się dla Twojego sukcesu.",
         "designTitle": "Projekt",
-        "designText": "Projektant rysuje prototyp każdej strony, który schematycznie przedstawia rozmieszczenie bloków, ilustracji i tekstu. Dopiero po zatwierdzeniu prototypu przez klienta rozpoczynamy tworzenie projektu strony internetowej",
+        "designText": "Wierzymy, że design to miłość od pierwszego wejrzenia. To on tworzy pierwsze wrażenie — a ono decyduje o wszystkim. Projektujemy każdy element tak, aby był elegancki, intuicyjny i zrozumiały — bo zaufanie buduje sprzedaż.",
         "devTitle": "Rozwój",
-        "devText": "Na etapie rozwoju prototyp strony internetowej ożywa i zyskuje niezbędną funkcjonalność, bazy danych są połączone, a opcje płatności i wypełniania treścią są wdrażane",
+        "devText": "Tworzymy produkty cyfrowe, które ładują się błyskawicznie, łatwo się skalują i nadążają za tempem Twojego biznesu. Przemyślany kod, zoptymalizowana logika i elastyczność w szczegółach — wszystko po to, by działało i przynosiło efekty.",
         "QATitle": "Testowanie",
-        "QAText": "Na etapie testowania sprawdzana jest wydajność strony internetowej i jej zgodność z wymaganiami. Oceniana jest funkcjonalność, użyteczność, optymalizację pod kątem różnych przeglądarek, rozmiarów ekranu i szybkości działania strony",
-        "supportTitle": "Wsparcie",
-        "supportText": "Przedstawiciel zespołu szkoli pracowników klienta w zakresie pracy ze stroną internetową, tak aby klient mógł samodzielnie aktualizować treści na swojej stronie internetowej",
-        "allServicesTitle": "Pełny zakres usług",
-        "allServicesText": "Kompleksowe i systematyczne podejście z ujednoliconym procesem zarządzania projektami (klient nie musi szukać wykonawców do poszczególnych zadań - wszystko wykonuje jeden wykonawca, łącznie z wyszukiwaniem lub polecaniem podwykonawców)",
-        "contactUs": "Uzyskaj konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
-        "showMore": "Pokazać więcej",
-        "showLess": "Pokazać mniej"
+        "QAText": "To kwestia stabilności, bezpieczeństwa i zaufania. Użytkownicy nie dają drugiej szansy — jeśli coś nie działa, po prostu odchodzą. Testujemy, aby Twoja strona, aplikacja lub usługa działała bezawaryjnie, przynosiła zyski i nie traciła klientów.",
+
+        "allServices": "Wszystkie usługi"
     },
     "Stages": {
         "pageTitle": "Proces",
@@ -82,7 +85,9 @@
         "sixthStepTitle": "Przeniesienie funkcjonalności strony",
         "sixthStepText": "Po przeprowadzeniu testów i integracji wszystkich usług, zasób wraz ze wszystkimi prawami do niego zostaje przekazany do dyspozycji klienta",
         "seventhStepTitle": "Wsparcie",
-        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia"
+        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia",
+        "allStages": "Wszystkie etapy",
+        "coverStages": "Zwiń etapy"
     },
     "HireUs": {
         "pageTitle": "połączenie",

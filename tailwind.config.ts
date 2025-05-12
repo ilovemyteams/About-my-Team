@@ -639,6 +639,10 @@ const config: Config = {
                 "linear-gradient(to top, #5F3F87 0%,  #09002ECC 60%, #09002E1A 100%)",
             projectCardGradient:
                 "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
+            homeServiceCardGradientDark:
+                "linear-gradient(90deg, transparent 10%,  #5F3F87CC 51%, transparent 90%)",
+            homeServiceCardGradientLight:
+                "linear-gradient(90deg, transparent 0%, #B490FFCC 51%, transparent 97%)",
         },
 
         backgroundSize: {
