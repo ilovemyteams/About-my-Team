@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 
@@ -25,8 +26,14 @@ export const ProjectCard = ({
         "w-9 h-7 tab:w-[42px] tab:h-[33px] pc:w-[63px] pc:h-[50px] desk:w-[80px] desk:h-[63px] dark:text-purple-stroke text-purple-strokeLight";
     return (
         <Link
-            href={`/portfolio/${slug}`}
-            className="relative block w-full group cursor-pointer pb-3"
+            href={!main ? `/portfolio/${slug}` : ""}
+            onClick={e => {
+                if (main) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            }}
+            className={`relative block w-full group ${main ? "cursor-none" : "cursor-pointer"}  pb-3`}
         >
             <IconCorner className={`absolute top-0 left-0 ${cornersStyles}`} />
             <IconCorner
