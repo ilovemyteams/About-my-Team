@@ -1,9 +1,16 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
 
 export const ServiceDecoration = () => {
     return (
         <div className="hidden pc:block">
-            <div className="w-[270px] sticky top-[20px] aspect-square flex justify-center items-center mt-[-20px] desk:w-[367px] desk:mt-[-44px]">
+            <motion.div
+                className="w-[270px] sticky top-[20px] aspect-square flex justify-center items-center mt-[-20px] mb-[-40px] desk:w-[367px] desk:mt-[-44px] desk:mb-[-70px]"
+                initial={{ scale: 1 }}
+                animate={{ scale: [1, 1.05, 1, 1, 1.05, 1] }}
+                transition={{ duration: 1, repeat: Infinity, repeatDelay: 1 }}
+            >
                 <svg
                     viewBox="0 0 299 265"
                     fill="none"
@@ -16,7 +23,7 @@ export const ServiceDecoration = () => {
                         className="stroke-[1px] desk:stroke-[1.36px]"
                     />
                 </svg>
-            </div>
+            </motion.div>
         </div>
     );
 };
