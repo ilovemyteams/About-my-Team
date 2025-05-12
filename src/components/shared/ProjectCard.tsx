@@ -11,9 +11,13 @@ import { SeeCaseButton } from "./SeeCaseButton";
 export const ProjectCard = ({
     data,
     needName,
+    seeCaseButton = true,
+    main = false,
 }: {
     data: PortfolioDataItemType;
     needName?: boolean;
+    seeCaseButton?: boolean;
+    main?: boolean;
 }) => {
     const locale = useLocale();
     const slug = data.data.slug;
@@ -37,8 +41,13 @@ export const ProjectCard = ({
                     className=" group-hover:scale-110 duration-300 ease-out transition-transform"
                 />
             </div>
+            {main && (
+                <p className="text-base font-caviar font-bold first-letter:uppercase pc:text-lg pc:mb-1 pc:pt-1 desk:pt-0 desk:text-2xl">
+                    {data[locale as LocaleType].siteView}
+                </p>
+            )}
             <div className=" pc:flex pc:justify-between pc:items-end">
-                <div className={`${needName ? "" : "hidden"} mb-4 pc:mb-0`}>
+                <div className={`${needName ? "mb-4 pc:mb-0" : "hidden"} `}>
                     <h4 className="mb-1 font-caviar text-lg desk:text-2xl dark:text-white-200 text-purple-200">
                         {data[locale as LocaleType].name}
                     </h4>
@@ -46,7 +55,7 @@ export const ProjectCard = ({
                         {data[locale as LocaleType].subtitle}
                     </p>
                 </div>
-                <SeeCaseButton />
+                {seeCaseButton && <SeeCaseButton />}
             </div>
         </Link>
     );
