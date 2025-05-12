@@ -12,8 +12,14 @@ import { PortfolioTitle } from "./PortfolioTitle";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true };
-    const portfolioForRender = [...portfolioData].sort(
-        (a, b) => b.data.order - a.data.order
+    const slugsForRender = [
+        "alex-chudov",
+        "theatermag-com-ua",
+        "batatfarm-com",
+        "protection-in-ua",
+    ];
+    const portfolioForRender = portfolioData.filter(project =>
+        slugsForRender.includes(project.data.slug)
     );
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
