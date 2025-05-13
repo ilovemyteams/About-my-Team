@@ -27,8 +27,12 @@ export interface ValuesWriteUsFormType {
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const getTranslation = useTranslations("CustomerForm");
     const searchParams = useSearchParams();
+    const source = searchParams.get("source");
 
     const path = usePathname();
+
+    const titleProp =
+        source === "/" ? "customerFormHomeTitle" : "customerFormDefaultTitle";
 
     const validationSchema = WriteUsValidation();
 
@@ -98,7 +102,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
                         <h1 className="font-caviar text-purple-200 dark:text-white-200 text-3xl tab:text-4xl pc:text-5xl self-start mb-[10px]">
-                            {getTranslation("customerFormTitle")}
+                            {getTranslation(titleProp)}
                         </h1>
                         <CustomField
                             name="name"

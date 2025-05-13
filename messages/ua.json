@@ -182,7 +182,8 @@
         "questionPlaceholder": "Ваше запитання*",
         "askFormTitle": "Є питання?",
         "askFormText": "Напишіть нам, і ми допоможемо вам знайти на них відповідь!",
-        "customerFormTitle": "Замовити послугу"
+        "customerFormDefaultTitle": "Замовити послугу",
+        "customerFormHomeTitle": "Безкоштовна консультація"
     },
     "Errors": {
         "required": "Дане поле обов’язкове до заповнення",

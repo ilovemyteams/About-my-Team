@@ -17,11 +17,11 @@ export default function Home() {
             <HeroSection />
             <MissionSection />
             <PortfolioSection />
+            <ServicesSection />
             <FeedbackSection />
             <WriteUsSection text="titleIWant" eventGTM="order_form_start" />
-            <ServicesSection />
-            <OurTeamSection />
             <StagesSection />
+            <OurTeamSection />
             <QaSection />
             <WriteUsSection
                 text="titleAreYouReady"

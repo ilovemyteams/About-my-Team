@@ -183,7 +183,8 @@
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
-        "customerFormTitle": "Order a service"
+        "customerFormDefaultTitle": "Order a service",
+        "customerFormHomeTitle": "Отримати безкоштовну консультацію"
     },
     "Errors": {
         "required": "This field is required",
