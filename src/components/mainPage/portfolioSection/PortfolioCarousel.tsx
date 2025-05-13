@@ -23,7 +23,13 @@ type PortfolioCarouselProps = {
 export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [
-        AutoScroll({ playOnInit: true, speed: 1 }),
+        AutoScroll({
+            playOnInit: true,
+            speed: 1,
+            stopOnInteraction: false,
+            stopOnMouseEnter: false,
+            stopOnFocusIn: false,
+        }),
     ]);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
