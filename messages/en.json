@@ -184,7 +184,7 @@
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
         "customerFormDefaultTitle": "Order a service",
-        "customerFormHomeTitle": "Безкоштовна консультація"
+        "customerFormHomeTitle": "Free consultation"
     },
     "Errors": {
         "required": "This field is required",
