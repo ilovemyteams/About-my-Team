@@ -1,17 +1,35 @@
+"use client";
 import { EmblaOptionsType } from "embla-carousel";
+import { useTranslations } from "next-intl";
 
+import { useRouter } from "@/src/i18n/routing";
 import { portfolioData } from "@/src/mockedData/portfolioData";
 
+import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
-import { SharePopover } from "../../shared/SharePopover";
 import { PortfolioCarousel } from "./PortfolioCarousel";
 import { PortfolioTitle } from "./PortfolioTitle";
 
 export const PortfolioSection = () => {
-    const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    const portfolioForRender = [...portfolioData].sort(
-        (a, b) => b.data.order - a.data.order
+    const OPTIONS: EmblaOptionsType = { loop: true };
+    const slugsForRender = [
+        "alex-chudov",
+        "theatermag-com-ua",
+        "batatfarm-com",
+        "protection-in-ua",
+    ];
+    const portfolioForRender = portfolioData.filter(project =>
+        slugsForRender.includes(project.data.slug)
     );
+    const getTranslation = useTranslations("Buttons");
+    const router = useRouter();
+
+    const handleButtonClick = () => {
+        router.push(`/portfolio`);
+        // sendGTMEvent({
+        //     event: "learn_more_faq",
+        // });
+    };
     return (
         <Section id="portfolio" className="relative">
             <PortfolioTitle />
@@ -21,11 +39,11 @@ export const PortfolioSection = () => {
                     options={OPTIONS}
                 />
             </div>
-            <SharePopover
-                className="absolute -top-3 right-4 tab:static tab:items-end tab:ml-auto tab:mt-4 pc:mt-5"
-                id="portfolio"
-                trigerShowShareText={false}
-            />
+            <div className="flex justify-center mt-8 tab:mt-9 desk:mt-[56px]">
+                <Button color="grey" onClick={handleButtonClick}>
+                    {getTranslation("AllProjects")}
+                </Button>
+            </div>
         </Section>
     );
 };

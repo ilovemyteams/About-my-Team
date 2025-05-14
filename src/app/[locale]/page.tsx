@@ -2,7 +2,6 @@ import { BackgroundFiguresMain } from "@/src/components/backgroundImages/Backgro
 import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/mainPage/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/mainPage/heroSection/HeroSection";
-import { MissionSection } from "@/src/components/mainPage/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/mainPage/ourTeamSection/OurTeamSection";
 import { PortfolioSection } from "@/src/components/mainPage/portfolioSection/PortfolioSection";
 import { QaSection } from "@/src/components/mainPage/qAsection/QaSection";
@@ -15,7 +14,6 @@ export default function Home() {
         <>
             <BackgroundFiguresMain />
             <HeroSection />
-            <MissionSection />
             <PortfolioSection />
             <ServicesSection />
             <FeedbackSection />
