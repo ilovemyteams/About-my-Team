@@ -49,7 +49,7 @@ export const ProjectCard = ({
                 />
             </div>
             {main && (
-                <p className="text-base font-caviar font-bold first-letter:uppercase pc:text-lg pc:mb-1 pc:pt-1 desk:pt-0 desk:text-2xl">
+                <p className="text-base dark:text-grey text-purple-200 font-caviar font-bold first-letter:uppercase pc:text-lg pc:mb-1 pc:pt-1 desk:pt-0 desk:text-2xl">
                     {data[locale as LocaleType].siteView}
                 </p>
             )}
