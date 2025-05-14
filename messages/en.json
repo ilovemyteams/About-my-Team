@@ -48,22 +48,22 @@
         "title": "Tell us about your unique skills and join our team"
     },
     "WriteUs": {
-        "titleIWant": "I want to become your satisfied client!",
+        "titleIWant": " Book a consultation today and get it for free!",
         "titleAreYouReady": "Ready to order a project?"
     },
     "Services": {
         "pageTitle": "Services",
         "titleFirstLine": "You get a fully functional <purple>website</purple> ",
-        "titleSecondLine": "<purple>that sets</purple> you <purple>apart from the competition</purple>",
+        "titleSecondLine": "<purple>that will make</purple> you <purple>stand out from the competition</purple>",
         "subtitleText": "our services \ninclude:",
         "BATitle": "Business and competitor analysis",
-        "BAText": "Make decisions based on facts, not intuition. We help you see where the opportunities are — and where the risks hide. Our insights keep you one step ahead, focused on what truly matters for your success.",
+        "BAText": "Make decisions based on facts, not intuition. We help you identify opportunities for growth and spot potential risks. Our goal is to keep you one step ahead, taking into account the specifics of your business.",
         "designTitle": "Design",
-        "designText": "We believe design is love at first sight. It creates the first impression — and that impression decides everything. We craft every element to be elegant, intuitive, and clear — because when people trust what they see, they’re more likely to buy.",
+        "designText": "We believe design is love at first sight. It creates the first impression that defines everything. We carefully craft every element to ensure it is beautiful, user-friendly, and intuitive. This builds trust, which in turn boosts your sales.",
         "devTitle": "Development",
-        "devText": "We build digital products that load fast, scale easily, and keep up with your business. Clean code, smart logic, and flexibility in the details — everything to make sure it works and brings results.",
+        "devText": "We create digital products that load quickly, scale easily, and keep up with the pace of your business. Thoughtful coding, optimized logic, and flexibility in details — everything is designed to deliver results.",
         "QATitle": "Testing",
-        "QAText": "It’s all about stability, safety, and trust. Users don’t give second chances — if something doesn’t work, they leave. We test to make sure your site, app, or service runs smoothly, earns revenue, and keeps your clients happy.",
+        "QAText": "This is about stability, security, and confidence. Users don’t give second chances — if something doesn’t work, they leave. We test to ensure your website, application, or service runs smoothly, generates revenue, and retains customers.",
         "allServices": "All services"
     },
 
@@ -184,7 +184,7 @@
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
         "customerFormDefaultTitle": "Order a service",
-        "customerFormHomeTitle": "Отримати безкоштовну консультацію"
+        "customerFormHomeTitle": "Безкоштовна консультація"
     },
     "Errors": {
         "required": "This field is required",
