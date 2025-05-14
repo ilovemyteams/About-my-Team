@@ -50,22 +50,22 @@
         "title": "Opowiedz nam o swoich wyjątkowych umiejętnościach i dołącz do naszego zespołu"
     },
     "WriteUs": {
-        "titleIWant": "Chcę zostać zadowolonym klientem!",
+        "titleIWant": "Zarezerwuj konsultację już dziś i otrzymaj ją za darmo!",
         "titleAreYouReady": "Gotowy do zlecenia projektu?"
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstLine": "Otrzymujesz w pełni działającą <purple>stronę,</purple> ",
+        "titleFirstLine": "Otrzymasz gotową, działającą <purple>stronę internetową,</purple> ",
         "titleSecondLine": "<purple>która wyróżni</purple> Cię <purple>na tle konkurencji</purple>",
         "subtitleText": "nasze usługi \nobejmują:",
-        "BATitle": "Analiza biznesu i konkurencji",
-        "BAText": "Podejmuj decyzje w oparciu o fakty, a nie intuicję. Pomagamy dostrzec, gdzie są szanse na rozwój, a gdzie czyhają ryzyka. Dzięki nam jesteś zawsze o krok przed konkurencją, koncentrując się na tym, co naprawdę liczy się dla Twojego sukcesu.",
+        "BATitle": "Analiza działalności i konkurencji",
+        "BAText": "Podejmuj decyzje w oparciu o fakty, a nie intuicję. Pomagamy dostrzec, gdzie kryją się szanse na rozwój, a gdzie — ryzyka. Wspieramy Cię w byciu o krok przed konkurencją, uwzględniając specyfikę Twojego biznesu.",
         "designTitle": "Projekt",
-        "designText": "Wierzymy, że design to miłość od pierwszego wejrzenia. To on tworzy pierwsze wrażenie — a ono decyduje o wszystkim. Projektujemy każdy element tak, aby był elegancki, intuicyjny i zrozumiały — bo zaufanie buduje sprzedaż.",
+        "designText": "Wierzymy, że design to miłość od pierwszej sekundy. To on buduje pierwsze wrażenie, które decyduje o wszystkim. Dbamy o każdy element, aby było pięknie, wygodnie i intuicyjnie — bo właśnie wtedy rośnie zaufanie, a razem z nim sprzedaż.",
         "devTitle": "Rozwój",
-        "devText": "Tworzymy produkty cyfrowe, które ładują się błyskawicznie, łatwo się skalują i nadążają za tempem Twojego biznesu. Przemyślany kod, zoptymalizowana logika i elastyczność w szczegółach — wszystko po to, by działało i przynosiło efekty.",
+        "devText": "Tworzymy produkty cyfrowe, które otwierają się błyskawicznie, łatwo się skalują i nadążają za tempem Twojego biznesu. Przemyślany kod, zoptymalizowana logika i elastyczność w szczegółach — wszystko po to, by działało na efekt.",
         "QATitle": "Testowanie",
-        "QAText": "To kwestia stabilności, bezpieczeństwa i zaufania. Użytkownicy nie dają drugiej szansy — jeśli coś nie działa, po prostu odchodzą. Testujemy, aby Twoja strona, aplikacja lub usługa działała bezawaryjnie, przynosiła zyski i nie traciła klientów.",
+        "QAText": "Chodzi o stabilność, bezpieczeństwo i zaufanie. Użytkownicy nie dają drugiej szansy - jeśli coś nie działa, odchodzą. Testujemy Twoją stronę, aplikację lub usługę, aby upewnić się, że działa płynnie, generuje przychody i nie traci klientów.",
 
         "allServices": "Wszystkie usługi"
     },
@@ -186,7 +186,8 @@
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
         "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
-        "customerFormTitle": "Zamówić usługę"
+        "customerFormTitle": "Wypełnij formularz",
+        "customerFormText": "Nasz menedżer wkrótce się skontaktuje"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
