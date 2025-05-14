@@ -186,8 +186,8 @@
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
         "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
-        "customerFormDefaultTitle": "Zamówić usługę",
-        "customerFormHomeTitle": "Bezpłatna konsultacja"
+        "customerFormTitle": "Wypełnij formularz",
+        "customerFormText": "Nasz menedżer wkrótce się skontaktuje"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",

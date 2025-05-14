@@ -182,8 +182,8 @@
         "questionPlaceholder": "Ваше запитання*",
         "askFormTitle": "Є питання?",
         "askFormText": "Напишіть нам, і ми допоможемо вам знайти на них відповідь!",
-        "customerFormDefaultTitle": "Замовити послугу",
-        "customerFormHomeTitle": "Безкоштовна консультація"
+        "customerFormTitle": "Заповність форму",
+        "customerFormText": "Наш менеджер зв’яжеться з вами найближчим часом"
     },
     "Errors": {
         "required": "Дане поле обов’язкове до заповнення",

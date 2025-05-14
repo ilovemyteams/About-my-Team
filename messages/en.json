@@ -183,8 +183,8 @@
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
-        "customerFormDefaultTitle": "Order a service",
-        "customerFormHomeTitle": "Free consultation"
+        "customerFormTitle": "Fill out the form",
+        "customerFormText": "Our manager will contact you shortly"
     },
     "Errors": {
         "required": "This field is required",
