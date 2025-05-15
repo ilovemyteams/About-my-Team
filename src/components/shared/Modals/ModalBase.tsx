@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { PropsWithChildren, useEffect } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
@@ -33,6 +33,7 @@ export const ModalBase = ({
     isScrollBlock = false,
     mobilePosition = "top",
 }: PropsWithChildren<ModalBaseProps>) => {
+    const [isOpenPortal, setIsOpenPortal] = useState(false);
     const screenSizeName = useScreenSize();
     const { mobileName } = SCREEN_NAMES;
 
@@ -43,10 +44,20 @@ export const ModalBase = ({
     const scrollStyle = "overflow-y-auto scroll";
     const mobilePositionStyle = mobilePosition === "top" ? "top-7" : "top-1/2";
 
+    const onClosePortal = () => {
+        setIsOpenPortal(false);
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsOpenPortal(true);
+        }
+    }, [isOpen]);
+
     useEffect(() => {
         const handleEsc = (event: KeyboardEvent) => {
             if (event.key === "Escape") {
-                onCloseModal();
+                onClosePortal();
             }
         };
 
@@ -73,24 +84,34 @@ export const ModalBase = ({
               };
 
     return (
-        <AnimatePresence>
-            {isOpen ? (
+        <AnimatePresence
+            onExitComplete={() => {
+                onCloseModal();
+            }}
+        >
+            {isOpenPortal ? (
                 <Portal id="modal">
                     <motion.div
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.8 }}
                         variants={{
                             hidden: {
                                 opacity: 0,
+                                transition: {
+                                    duration: 0.5,
+                                },
                             },
                             visible: {
                                 opacity: 1,
+                                transition: {
+                                    duration: 0.5,
+                                },
                             },
                         }}
                         aria-label="modal-backdrop"
-                        onClick={onCloseModal}
+                        onClick={onClosePortal}
                         className="fixed no-doc-scroll z-[21] top-0 left-0 w-full h-full bg-greyLight bg-opacity-70 dark:bg-backdrop dark:bg-opacity-80"
                     >
                         <motion.div
@@ -99,17 +120,24 @@ export const ModalBase = ({
                                     x: "-50%",
                                     y: "100vh",
                                     ...centerAnimation.hidden,
+                                    transition: {
+                                        duration: 0.5,
+                                    },
                                 },
                                 visible: {
                                     x: "-50%",
                                     y: modalTranslate,
                                     ...centerAnimation.visible,
+                                    transition: {
+                                        delay: 0.2,
+                                        duration: 0.5,
+                                    },
                                 },
                             }}
                             initial="hidden"
                             animate="visible"
                             exit="hidden"
-                            transition={{ duration: 0.5, type: animationType }}
+                            transition={{ type: animationType }}
                             aria-label="modal-window"
                             onClick={e => e.stopPropagation()}
                             className={`max-h-[90dvh] ${isScrollBlock ? "" : scrollStyle} bg-white-100 dark:bg-purple-400 fixed ${mobilePositionStyle} tab:top-1/2 left-1/2 
@@ -119,7 +147,7 @@ export const ModalBase = ({
                                 {isCloseBtnVisible && (
                                     <button
                                         type="button"
-                                        onClick={onCloseModal}
+                                        onClick={onClosePortal}
                                         disabled={isCloseDisabled}
                                         aria-label="close button"
                                         className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
