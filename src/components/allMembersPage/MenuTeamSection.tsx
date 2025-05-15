@@ -10,7 +10,7 @@ import { portfolioData } from "@/src/mockedData/portfolioData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
 
-import { IconUp } from "../../shared/Icons/IconUp";
+import { IconUp } from "../shared/Icons/IconUp";
 
 interface MenuProps {
     selectedOption: {
