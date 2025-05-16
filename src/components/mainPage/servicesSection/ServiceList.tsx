@@ -3,47 +3,28 @@ import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
+import { SERVICE_SECTION_DATA } from "@/src/constants/renderOnMain";
 import { useRouter } from "@/src/i18n/routing";
 
 import { Button } from "../../shared/Button";
 import { ServiceItem } from "./ServiceItem";
 
 export const ServiceList = () => {
-    const [openSection, setOpenSection] = useState<string>("business");
+    const [openSection, setOpenSection] = useState<string>(
+        SERVICE_SECTION_DATA[0].id
+    );
+    const [isHoverLoading, setIsHoverLoading] = useState(false);
     const getTranslation = useTranslations("Services");
     const text = getTranslation("subtitleText");
     const btnText = getTranslation("allServices");
     const router = useRouter();
 
-    const servicesList = [
-        {
-            id: "business",
-            title: getTranslation("BATitle"),
-            text: getTranslation("BAText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-ba_jeyjss.jpg",
-        },
-        {
-            id: "design",
-            title: getTranslation("designTitle"),
-            text: getTranslation("designText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383602/main-design_ggtfq6.jpg",
-        },
-        {
-            id: "development",
-            title: getTranslation("devTitle"),
-            text: getTranslation("devText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383604/main-dev_pd5afk.jpg",
-        },
-        {
-            id: "qa",
-            title: getTranslation("QATitle"),
-            text: getTranslation("QAText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-test_l5cpgo.jpg",
-        },
-    ];
-
     const onChangeSection = (id: string) => {
         setOpenSection(id);
+    };
+
+    const onChangeHoverLoading = (value: boolean) => {
+        setIsHoverLoading(value);
     };
 
     const onClickAllServices = () => {
@@ -59,12 +40,14 @@ export const ServiceList = () => {
                 {text}
             </p>
             <ul>
-                {servicesList.map((item, index) => (
+                {SERVICE_SECTION_DATA.map((item, index) => (
                     <ServiceItem
                         key={index}
                         {...item}
                         onChangeSection={onChangeSection}
                         isOpen={openSection === item.id}
+                        onHoverChange={onChangeHoverLoading}
+                        isHoverLoading={isHoverLoading}
                     />
                 ))}
             </ul>
