@@ -3,7 +3,7 @@ import { MemberDataItemType, membersData } from "@/src/mockedData/membersData";
 
 import { Section } from "../../shared/Section";
 import { MemberCardsList } from "./MemberCardsList";
-import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
+import { MemberCardsListPC } from "./MemberCardsListPC";
 import { MemberCardsListTab } from "./MemberCardsListTab";
 import { Title } from "./Title";
 
@@ -21,9 +21,7 @@ export const OurTeamSection = () => {
             <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
                 <MemberCardsList membersData={defaultMembersData} />
                 <MemberCardsListTab membersData={membersForMainFromTab} />
-                <MemberCardsListBigScreens
-                    membersData={membersForMainFromTab}
-                />
+                <MemberCardsListPC membersData={membersForMainFromTab} />
             </div>
         </Section>
     );

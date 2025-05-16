@@ -6,15 +6,12 @@ import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
 
-import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { IconProfile } from "../../shared/Icons/IconProfile";
-import { ImageFromCloud } from "../../shared/ImageFromCloud";
-import { SocialLink } from "../../shared/SocialLink";
+import { IconLinkedin } from "./Icons/IconLinkedin";
+import { IconProfile } from "./Icons/IconProfile";
+import { ImageFromCloud } from "./ImageFromCloud";
+import { SocialLink } from "./SocialLink";
 
-export interface MemberCardProps {
-    data: MemberDataItemType;
-}
-export const MemberCard = ({ data }: MemberCardProps) => {
+export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
     const { imageURL, position, socialLinks, id } = data.data;
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;

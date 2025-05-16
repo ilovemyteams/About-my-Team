@@ -12,6 +12,8 @@ export const MAIN_MEMBERS = [
     "oksana-arpul-qa-engineer",
 ];
 
+export const EMPTY_INDICES = [1, 6, 8, 12]; //Це позиції пустих клітинок в секції команда 2, 7, 9 та 13
+
 export const PORTFOLIO_FOR_MAIN = [
     "alex-chudov",
     "theatermag-com-ua",

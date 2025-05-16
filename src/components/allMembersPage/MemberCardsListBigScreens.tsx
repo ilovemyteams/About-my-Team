@@ -4,8 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
+import { SliderButtons } from "../mainPage/ourTeamSection/SliderButtons";
 import { OneSliderCardBigScreen } from "./OneSliderCardBigScreen";
-import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {
     loop: true,
