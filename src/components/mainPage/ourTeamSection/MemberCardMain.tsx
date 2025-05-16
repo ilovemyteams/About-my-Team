@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { useLocale } from "next-intl";
+import { MouseEvent } from "react";
 
+import { Link, useRouter } from "@/src/i18n/routing";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
@@ -17,14 +18,12 @@ export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
         <IconLinkedin className="pc:w-[30px] pc:h-[30px] desk:w-9 desk:h-9" />
     );
     const { setPreviousURL } = usePreviousURL();
+    const router = useRouter();
 
-    const savingFilteredListURL = () => {
-        const url = window.location.href;
-        if (url.includes("#")) {
-            const requiredPartURL = url.split("#");
-            return setPreviousURL(`${requiredPartURL[0]}#team`);
-        }
-        setPreviousURL(`${window.location.href}#team`);
+    const savingFilteredListURL = (e: MouseEvent) => {
+        e.preventDefault();
+        setPreviousURL(`back`);
+        router.push(`/member/${id}`);
     };
 
     return (
@@ -33,7 +32,7 @@ export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
             pc:aspect-[336/368] border"
         >
             <Link
-                href={`/${locale}/member/${id}`}
+                href={`/member/${id}`}
                 onClick={savingFilteredListURL}
                 className="group mb-4 desk:mb-5"
             >
@@ -42,8 +41,8 @@ export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
                         <ImageFromCloud
                             storage="members"
                             src={imageURL}
-                            width={246}
-                            height={196}
+                            width={600}
+                            height={400}
                             className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover w-full 
                                 pc:aspect-[304/245] "
                             alt={data[locale as LocaleType]?.name}
