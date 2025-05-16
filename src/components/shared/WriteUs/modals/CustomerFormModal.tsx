@@ -42,6 +42,7 @@ export const CustomerFormModal = ({
             isOpen={isModalOpen}
             onCloseModal={onExitFromParallelRoute}
             isCloseDisabled={isError}
+            key={"order-modal"}
         >
             <BgImagesMobile />
             <BgImagesTablet />
