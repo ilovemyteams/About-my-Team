@@ -31,8 +31,8 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     return (
         <div
             className="flex flex-col justify-between pt-2 pc:pt-3 pl-[6px] tab:pl-2 pc:pl-3 tab:border-purple-strokeLight dark:tab:border-purple-stroke 
-            tab:aspect-[250/270] pc:aspect-[270/292] 
-            tab:odd:border-r tab:[&:nth-child(1)]:border-b tab:[&:nth-child(2)]:border-b 
+            tab:aspect-[240/270] pc:aspect-[270/292] 
+            tab:border-t tab:border-l tab:[&:nth-child(3n)]:border-r tab:[&:nth-last-child(-n+3)]:border-b
             pc:[&:nth-child(3)]:border-b pc:border-r pc:[&:nth-child(3)]:border-r-transparent pc:[&:nth-child(6)]:border-r-transparent
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
@@ -41,7 +41,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                 onClick={savingFilteredListURL}
                 className="group"
             >
-                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[234px] tab:aspect-[234/186] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
+                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[224px] tab:aspect-[224/187] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
                         <ImageFromCloud
                             storage="members"
@@ -49,7 +49,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
                             width={246}
                             height={196}
                             className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
-                                aspect-[128/150] tab:aspect-[234/186] pc:aspect-[246/196] "
+                                aspect-[128/150] tab:aspect-[224/187] pc:aspect-[246/196] "
                             alt={data[locale as LocaleType]?.name}
                             loading="lazy"
                         />
