@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import React from "react";
 
-import { MemberCardModalBody } from "@/src/components/mainPage/ourTeamSection/Modal/MemberCardModalBody";
-import { MemberCardModalBodyTab } from "@/src/components/mainPage/ourTeamSection/Modal/MemberCardModalBodyTab";
-import { Modal } from "@/src/components/mainPage/ourTeamSection/Modal/Modal";
+import { MemberCardModalBody } from "@/src/components/shared/MemberModal/MemberCardModalBody";
+import { MemberCardModalBodyTab } from "@/src/components/shared/MemberModal/MemberCardModalBodyTab";
+import { Modal } from "@/src/components/shared/MemberModal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
 
 interface MemberPageProps {

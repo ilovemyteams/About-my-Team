@@ -9,9 +9,9 @@ import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
+import { Skeleton } from "../mainPage/ourTeamSection/Skeleton";
+import { MemberCard } from "../shared/MemberCard";
 import { JoinUsCard } from "./JoinUsCard";
-import { MemberCard } from "./MemberCard";
-import { Skeleton } from "./Skeleton";
 
 export const OneSliderCardBigScreen = ({
     membersData,

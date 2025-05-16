@@ -3,7 +3,7 @@ import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
-import { MemberCard } from "./MemberCard";
+import { MemberCard } from "../../shared/MemberCard";
 import { Skeleton } from "./Skeleton";
 
 export const MemberCardsListTab = ({

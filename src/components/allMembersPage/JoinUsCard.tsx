@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { NoImageHeart } from "../../shared/NoImageHeart";
+import { NoImageHeart } from "../shared/NoImageHeart";
 
 interface BorderProp {
     pcBorderJoinUs?: number;
@@ -61,7 +61,6 @@ export const JoinUsCard = ({
             <p className="text-xlb font-caviar text-center">
                 {getTranslation("yourPhoto")}
             </p>
-
             <NoImageHeart className="w-[62%] h-auto" />
         </div>
     );
