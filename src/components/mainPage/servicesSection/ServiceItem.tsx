@@ -130,8 +130,9 @@ export const ServiceItem = ({
                 <ImageFromCloud
                     src={image}
                     alt={`${title} image`}
-                    width={186}
-                    height={124}
+                    width={200}
+                    height={150}
+                    className="aspect-[1.5] w-[186px] h-auto object-cover"
                 />
             </motion.div>
         </motion.li>
