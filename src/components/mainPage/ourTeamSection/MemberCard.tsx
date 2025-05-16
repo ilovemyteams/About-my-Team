@@ -1,6 +1,7 @@
 import { useLocale } from "next-intl";
+import { MouseEvent } from "react";
 
-import { Link } from "@/src/i18n/routing";
+import { Link, useRouter } from "@/src/i18n/routing";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
@@ -18,9 +19,12 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
     const { setPreviousURL } = usePreviousURL();
+    const router = useRouter();
 
-    const savingFilteredListURL = () => {
+    const savingFilteredListURL = (e: MouseEvent) => {
+        e.preventDefault();
         setPreviousURL(`back`);
+        router.push(`/member/${id}`);
     };
 
     return (
