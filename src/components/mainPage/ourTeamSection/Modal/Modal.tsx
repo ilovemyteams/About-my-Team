@@ -31,8 +31,8 @@ export const Modal = ({ children }: { children: React.ReactNode }) => {
             isOpen={isModalOpen}
             onCloseModal={onCloseModal}
             appearance="center"
-            className="tab:mx-[-24px] pc:mx-[-60px]"
-            widthStyle="min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[768px] tab:w-[768px]"
+            className="pc:mx-[-60px]"
+            widthStyle="min-w-[320px] w-[90vw] max-w-[360px] tab:min-w-[none] tab:w-full tab:max-w-[768px]"
         >
             <BgImagesMobile />
             <BgImagesTablet />
