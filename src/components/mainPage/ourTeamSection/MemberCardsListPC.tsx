@@ -36,7 +36,7 @@ export const MemberCardsListPC = ({
     const activeMember = paddedMembers.find(m => m?.data.id === activeId);
 
     return (
-        <div className="pc:flex justify-between">
+        <div className="hidden pc:flex justify-between">
             <ul className="pc:grid pc:grid-cols-5 pc:gap-4 w-full pc:w-[63.3%] desk:w-[61%] hidden tab:border-0">
                 {isLoading || !visibleMembers ? (
                     <ul className="hidden pc:grid flex-[0_0_100%] w-full border-0 pc:grid-cols-5 ">
