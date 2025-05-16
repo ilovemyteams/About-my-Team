@@ -20,25 +20,25 @@ export const ServiceList = () => {
             id: "business",
             title: getTranslation("BATitle"),
             text: getTranslation("BAText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559370/service-ba_ievdfg.jpg",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-ba_jeyjss.jpg",
         },
         {
             id: "design",
             title: getTranslation("designTitle"),
             text: getTranslation("designText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559375/services-design_mod90s.jpg",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383602/main-design_ggtfq6.jpg",
         },
         {
             id: "development",
             title: getTranslation("devTitle"),
             text: getTranslation("devText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559378/services-development_v5tp8u.jpg",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383604/main-dev_pd5afk.jpg",
         },
         {
             id: "qa",
             title: getTranslation("QATitle"),
             text: getTranslation("QAText"),
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559533/services-testing_reuzdb.jpg",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-test_l5cpgo.jpg",
         },
     ];
 
