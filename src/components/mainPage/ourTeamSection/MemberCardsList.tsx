@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
-import { MemberCard } from "./MemberCard";
+import { MemberCard } from "../../shared/MemberCard";
 import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {
