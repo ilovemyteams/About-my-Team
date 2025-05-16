@@ -28,7 +28,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
 
     return (
-        <div className="hidden tab:flex relative min-w-[288px] h-auto mx-4 tab:mx-6 pc:mx-8 border border-purple-strokeLight dark:border-purple-stroke">
+        <div className="hidden pc:mx-[-28px] tab:flex relative min-w-[288px] h-auto border border-purple-strokeLight dark:border-purple-stroke">
             {pricePerHour && (
                 <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
                     {`${getTranslation("from")} ${pricePerHour} $/${getTranslation("h")}`}
@@ -46,7 +46,7 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                                 src={imageURL}
                                 width={206}
                                 height={170}
-                                className="absolute top-0 left-0 w-[206px] h-[170px]  object-cover"
+                                className="absolute top-0 left-0 w-[206px] h-[170px] object-cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
                             />
@@ -73,13 +73,13 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                 <ul className="mt-11">
                     <li className="mb-4 ">
                         <MemberLiSquare text={getTranslation("about")} />
-                        <p className="h-auto text-base mx-2">
+                        <p className="h-auto text-base px-2">
                             {data[locale as LocaleType]?.about}
                         </p>
                     </li>
                     <li className="mb-4">
                         <MemberLiSquare text={getTranslation("services")} />
-                        <p className="text-base mx-2 h-auto">
+                        <p className="text-base px-2 h-auto">
                             {data[locale as LocaleType]?.services}
                         </p>
                     </li>

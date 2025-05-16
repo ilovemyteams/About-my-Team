@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { PropsWithChildren, useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
@@ -140,8 +141,13 @@ export const ModalBase = ({
                             transition={{ type: animationType }}
                             aria-label="modal-window"
                             onClick={e => e.stopPropagation()}
-                            className={`max-h-[90dvh] ${isScrollBlock ? "" : scrollStyle} bg-white-100 dark:bg-purple-400 fixed ${mobilePositionStyle} tab:top-1/2 left-1/2 
-            -translate-x-1/2 tab:-translate-y-1/2 ${widthStyle || defaultWidth} ${className}`}
+                            className={twMerge(
+                                "max-h-[90dvh] bg-white-100 dark:bg-purple-400 fixed tab:top-1/2 left-1/2 -translate-x-1/2 tab:-translate-y-1/2",
+                                isScrollBlock ? "" : scrollStyle,
+                                mobilePositionStyle,
+                                widthStyle || defaultWidth,
+                                className
+                            )}
                         >
                             <div className="relative w-full overflow-clip h-auto px-[16px] tab:px-[24px] pc:px-[60px] py-[64px] pc:py-[72px]">
                                 {isCloseBtnVisible && (
@@ -150,7 +156,7 @@ export const ModalBase = ({
                                         onClick={onClosePortal}
                                         disabled={isCloseDisabled}
                                         aria-label="close button"
-                                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-3 p-3 disabled:text-purple-strokeLight
+                                        className="cursor-pointer flex justify-center items-center absolute top-2 right-4 pc:top-3 pc:right-5 p-3 disabled:text-purple-strokeLight
                          dark:disabled:text-purple-stroke bg-transparent enabled:icon-hover-rounded-purple z-[2]"
                                     >
                                         <IconCloseX className="stroke-2 size-6" />

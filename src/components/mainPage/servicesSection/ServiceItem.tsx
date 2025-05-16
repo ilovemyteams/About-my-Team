@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 import { ImageFromCloud } from "../../shared/ImageFromCloud";
 
@@ -10,6 +11,8 @@ interface ServiceItemProps {
     image: string;
     onChangeSection: (id: string) => void;
     isOpen: boolean;
+    onHoverChange: (value: boolean) => void;
+    isHoverLoading: boolean;
 }
 
 export const ServiceItem = ({
@@ -19,8 +22,14 @@ export const ServiceItem = ({
     image,
     onChangeSection,
     isOpen,
+    onHoverChange,
+    isHoverLoading,
 }: ServiceItemProps) => {
+    const getTranslation = useTranslations("Services");
+
     const onHoverCard = () => {
+        if (isOpen || isHoverLoading) return;
+        onHoverChange(true);
         onChangeSection(id);
     };
 
@@ -73,6 +82,12 @@ export const ServiceItem = ({
         },
     };
 
+    const onAnimationComplete = () => {
+        if (isHoverLoading) {
+            onHoverChange(false);
+        }
+    };
+
     return (
         <motion.li
             className="relative py-6 first:border-y-[1px] border-b-[1px] border-purple-strokeLight dark:border-purple-stroke tab:py-7 tab:flex tab:gap-[100px]"
@@ -90,7 +105,7 @@ export const ServiceItem = ({
 
             <div className="tab:w-[41%] tab:grow-0 tab:shrink-0 text-pretty pc:w-[42%] desk:w-[46%]">
                 <h3 className="ml-8 font-caviar font-bold text-xl text-purple-200 dark:text-white-200 tab:ml-0  tab:text-lg pc:text-xl desk:text-2xl24">
-                    {title}
+                    {getTranslation(title)}
                 </h3>
 
                 <motion.div
@@ -98,9 +113,10 @@ export const ServiceItem = ({
                     animate={isOpen ? "open" : "close"}
                     variants={wrapperVariants}
                     className="overflow-clip"
+                    onAnimationComplete={onAnimationComplete}
                 >
                     <p className="text-base pt-6 tab:pt-4 desk:text-lg25">
-                        {text}
+                        {getTranslation(text)}
                     </p>
                 </motion.div>
             </div>
@@ -114,8 +130,9 @@ export const ServiceItem = ({
                 <ImageFromCloud
                     src={image}
                     alt={`${title} image`}
-                    width={186}
-                    height={124}
+                    width={200}
+                    height={150}
+                    className="aspect-[1.5] w-[186px] h-auto object-cover"
                 />
             </motion.div>
         </motion.li>

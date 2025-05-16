@@ -1,6 +1,7 @@
-import Link from "next/link";
 import { useLocale } from "next-intl";
+import { MouseEvent } from "react";
 
+import { Link, useRouter } from "@/src/i18n/routing";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
@@ -15,14 +16,12 @@ export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
     const locale = useLocale();
     const iconLinkedin = <IconLinkedin className="w-6 h-6" />;
     const { setPreviousURL } = usePreviousURL();
+    const router = useRouter();
 
-    const savingFilteredListURL = () => {
-        const url = window.location.href;
-        if (url.includes("#")) {
-            const requiredPartURL = url.split("#");
-            return setPreviousURL(`${requiredPartURL[0]}#team`);
-        }
-        setPreviousURL(`${window.location.href}#team`);
+    const savingFilteredListURL = (e: MouseEvent) => {
+        e.preventDefault();
+        setPreviousURL(`back`);
+        router.push(`/member/${id}`);
     };
 
     return (
@@ -34,7 +33,7 @@ export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
             <Link
-                href={`/${locale}/member/${id}`}
+                href={`/member/${id}`}
                 onClick={savingFilteredListURL}
                 className="group"
             >

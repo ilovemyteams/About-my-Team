@@ -1,6 +1,5 @@
 "use client";
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
+
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
 import { MemberCard } from "../../shared/MemberCard";
@@ -11,15 +10,9 @@ export const MemberCardsListTab = ({
 }: {
     membersData: MemberDataItemType[] | undefined;
 }) => {
-    const screenSizeName = useScreenSize();
-    const { tabletName } = SCREEN_NAMES;
-
     const isLoading = !membersData || membersData.length === 0;
 
-    const visibleMembers =
-        !isLoading && screenSizeName === tabletName
-            ? membersData.slice(0, 9)
-            : membersData;
+    const visibleMembers = membersData && membersData.slice(0, 9);
 
     return (
         <ul className="tab:grid tab:grid-cols-3 w-full hidden tab:border-0 pc:hidden">

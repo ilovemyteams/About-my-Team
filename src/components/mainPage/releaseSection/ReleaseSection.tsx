@@ -11,7 +11,7 @@ export const ReleaseSection = () => {
     return (
         <Section className="pc:pb-[100px] desk:pb-[120px]">
             <div className="flex items-center justify-between gap-6">
-                <h2 className="font-caviar font-bold text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-5xl desk:text-7xl">
+                <h2 className="font-caviar font-bold text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-5xl desk:text-7xl tab:mr-[140px] text-pretty">
                     {getTranslation.rich("title", {
                         purple: chunk => (
                             <span className="text-purple-100">{chunk}</span>

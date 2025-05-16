@@ -45,3 +45,30 @@ export const DEMO_VIDEOS = [
     "KoKDAKDjG8E",
     "TNa3zk3WMb4",
 ];
+
+export const SERVICE_SECTION_DATA = [
+    {
+        id: "business",
+        title: "BATitle",
+        text: "BAText",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-ba_jeyjss.jpg",
+    },
+    {
+        id: "design",
+        title: "designTitle",
+        text: "designText",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383602/main-design_ggtfq6.jpg",
+    },
+    {
+        id: "development",
+        title: "devTitle",
+        text: "devText",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383604/main-dev_pd5afk.jpg",
+    },
+    {
+        id: "qa",
+        title: "QATitle",
+        text: "QAText",
+        image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1747383601/main-test_l5cpgo.jpg",
+    },
+];
