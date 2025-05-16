@@ -2,6 +2,7 @@
 import { EmblaOptionsType } from "embla-carousel";
 import { useTranslations } from "next-intl";
 
+import { PORTFOLIO_FOR_MAIN } from "@/src/constants/renderOnMain";
 import { useRouter } from "@/src/i18n/routing";
 import { portfolioData } from "@/src/mockedData/portfolioData";
 
@@ -12,14 +13,9 @@ import { PortfolioTitle } from "./PortfolioTitle";
 
 export const PortfolioSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true };
-    const slugsForRender = [
-        "alex-chudov",
-        "theatermag-com-ua",
-        "batatfarm-com",
-        "protection-in-ua",
-    ];
+
     const portfolioForRender = portfolioData.filter(project =>
-        slugsForRender.includes(project.data.slug)
+        PORTFOLIO_FOR_MAIN.includes(project.data.slug)
     );
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
