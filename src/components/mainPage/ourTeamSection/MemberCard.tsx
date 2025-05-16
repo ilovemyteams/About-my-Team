@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { useLocale } from "next-intl";
 
+import { Link } from "@/src/i18n/routing";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
@@ -20,12 +20,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
     const { setPreviousURL } = usePreviousURL();
 
     const savingFilteredListURL = () => {
-        const url = window.location.href;
-        if (url.includes("#")) {
-            const requiredPartURL = url.split("#");
-            return setPreviousURL(`${requiredPartURL[0]}#team`);
-        }
-        setPreviousURL(`${window.location.href}#team`);
+        setPreviousURL(`back`);
     };
 
     return (
@@ -37,7 +32,7 @@ export const MemberCard = ({ data }: MemberCardProps) => {
             deskxl:border-r deskxl:[&:nth-child(4)]:border-r-transparent deskxl:[&:nth-child(8)]:border-r-transparent deskxl:[&:nth-child(3)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(3)]:border-r-purple-stroke deskxl:[&:nth-child(6)]:border-r-purple-strokeLight dark:deskxl:[&:nth-child(6)]:border-r-purple-stroke deskxl:[&:nth-child(4)]:border-b"
         >
             <Link
-                href={`/${locale}/member/${id}`}
+                href={`/member/${id}`}
                 onClick={savingFilteredListURL}
                 className="group"
             >
