@@ -38,7 +38,7 @@ export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
                 onClick={savingFilteredListURL}
                 className="group"
             >
-                <div className="relative min-w-[128px] aspect-[128/150] mr-2 overflow-hidden tab:min-w-[224px] tab:aspect-[224/187] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
+                <div className="relative min-w-[128px] aspect-[128/150] mr-[7px] overflow-hidden tab:min-w-[224px] tab:aspect-[224/187] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
                         <ImageFromCloud
                             storage="members"
