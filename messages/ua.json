@@ -167,6 +167,8 @@
         "facebookLabel": "Facebook",
         "messageLabel": "Ваше повідомлення*",
         "messageNotReqLabel": "Ваше повідомлення",
+        "mediaTypeLabel": "Оберіть соц мережу*",
+        "mediaLinkLabel": "Посилання на ваш аккаунт*",
         "namePlaceholder": "Сусанна",
         "emailPlaceholder": "example@gmail.com",
         "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",

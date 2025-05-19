@@ -37,7 +37,7 @@ export const CustomField = ({
     const isActiveEmptyField = status === name || value !== "";
 
     return (
-        <label className="block relative w-full appearance-non pb-[12px] outline-none text-base font-normal">
+        <label className="block relative w-full appearance-none pb-[12px] outline-none text-base font-normal">
             <p
                 className={`relative transition-[top] h-[20px] duration-300 ease-out ${isActiveEmptyField ? "top-0 text-xxs" : "top-[20px]  text-base"}`}
             >

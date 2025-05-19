@@ -170,6 +170,8 @@
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Twoja wiadomość*",
+        "mediaTypeLabel": "Оберіть соц мережу*",
+        "mediaLinkLabel": "Посилання на ваш аккаунт*",
         "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
