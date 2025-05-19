@@ -25,13 +25,13 @@ export const CustomSelect = ({
                 aria-label={label}
                 classNames={{
                     selectorIcon: "text-red size-8 end-2",
-                    value: "font-caviar text-base font-bold capitalize -ml-1  -mb-2",
+                    value: "font-caviar text-base font-bold capitalize -ml-[2px]  -mb-2",
 
                     popoverContent:
                         "[background-color:#1F0033] bg-selectOptionsGradientDark rounded-none p-0 py-3 border-[1px] border-purple-stroke",
                     listbox: "p-0 gap-0",
                     trigger:
-                        "group border-b-[1px] border-purple-stroke hover:border-b-[1px] hover:border-purple-stroke after:h-[0px] active:border-grey data-[open=true]:border-grey data-[open=true]:hover:border-grey ",
+                        "group border-b-[1px] border-border-grey hover:border-b-[1px] hover:border-border-grey after:h-[0px] active:border-grey data-[open=true]:border-grey data-[open=true]:hover:border-grey ",
                 }}
                 radius="none"
                 id={field.name}

@@ -53,7 +53,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const initialStatus = "name";
     const options = Object.values(MediaTypeKeys).map(item => ({
         key: item,
-        label: item,
+        label: getTranslation(`${item}Label`),
     }));
 
     const submitForm = async (values: ValuesWriteUsFormType) => {
@@ -150,7 +150,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                                     `${values.mediaType}Placeholder`
                                 )}
                                 type="text"
-                                isError={false}
+                                isError={
+                                    !!(touched.mediaLink && errors.mediaLink)
+                                }
                                 setStatus={setStatus}
                                 status={status}
                             />
