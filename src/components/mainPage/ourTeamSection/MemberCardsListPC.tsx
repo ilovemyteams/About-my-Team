@@ -48,7 +48,7 @@ export const MemberCardsListPC = ({
                             return (
                                 <div
                                     key={`empty-${idx}`}
-                                    className="min-w-[124px] aspect-[124/187]"
+                                    className="min-w-[124px] aspect-[124/148]"
                                 />
                             );
                         }
@@ -61,7 +61,7 @@ export const MemberCardsListPC = ({
                         return (
                             <div
                                 key={member.data.id}
-                                className="relative min-w-[124px] aspect-[124/187] overflow-hidden"
+                                className="relative min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden"
                                 onClick={() => setActiveId(member.data.id)}
                                 onMouseEnter={() =>
                                     setHoveredId(member.data.id)
@@ -69,12 +69,12 @@ export const MemberCardsListPC = ({
                                 onMouseLeave={() => setHoveredId(null)}
                             >
                                 {member.data.imageURL ? (
-                                    <div className="group w-full h-full relative min-w-[124px] aspect-[124/187] overflow-hidden">
+                                    <div className="group w-full h-full relative min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden">
                                         <ImageFromCloud
                                             storage="members"
                                             src={member.data.imageURL}
-                                            width={246}
-                                            height={196}
+                                            width={600}
+                                            height={400}
                                             className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover w-full h-full"
                                             alt={
                                                 member[locale as LocaleType]
