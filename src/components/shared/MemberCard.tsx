@@ -27,7 +27,7 @@ export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
 
     return (
         <div
-            className="flex flex-col justify-between pt-2 pc:pt-3 pl-[6px] tab:pl-2 pc:pl-3 tab:border-purple-strokeLight dark:tab:border-purple-stroke 
+            className="flex flex-col justify-between pt-2 pc:pt-3 pl-[7px] tab:pl-2 pc:pl-3 tab:border-purple-strokeLight dark:tab:border-purple-stroke 
             tab:aspect-[240/270] pc:aspect-[270/292] 
             tab:border-t tab:border-l tab:[&:nth-child(3n)]:border-r tab:[&:nth-last-child(-n+3)]:border-b
             pc:[&:nth-child(3)]:border-b pc:border-r pc:[&:nth-child(3)]:border-r-transparent pc:[&:nth-child(6)]:border-r-transparent
@@ -38,13 +38,13 @@ export const MemberCard = ({ data }: { data: MemberDataItemType }) => {
                 onClick={savingFilteredListURL}
                 className="group"
             >
-                <div className="relative min-w-[128px] aspect-[128/150] mr-[6px] overflow-hidden tab:min-w-[224px] tab:aspect-[224/187] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
+                <div className="relative min-w-[128px] aspect-[128/150] mr-2 overflow-hidden tab:min-w-[224px] tab:aspect-[224/187] pc:aspect-[246/196] tab:mr-2 pc:mr-3 mb-2 pc:mb-3 dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
                         <ImageFromCloud
                             storage="members"
                             src={imageURL}
-                            width={246}
-                            height={196}
+                            width={600}
+                            height={400}
                             className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover min-w-[128px]  w-full 
                                 aspect-[128/150] tab:aspect-[224/187] pc:aspect-[246/196] "
                             alt={data[locale as LocaleType]?.name}

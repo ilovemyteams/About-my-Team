@@ -42,8 +42,8 @@ export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
                         <ImageFromCloud
                             storage="members"
                             src={imageURL}
-                            width={246}
-                            height={196}
+                            width={600}
+                            height={400}
                             className="group-hover:scale-110 duration-300 ease-out transition-transform cursor-pointer object-cover w-full 
                                 pc:aspect-[304/245] "
                             alt={data[locale as LocaleType]?.name}
