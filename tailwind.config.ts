@@ -645,6 +645,8 @@ const config: Config = {
                 "linear-gradient(90deg, transparent 0%, #B490FFCC 51%, transparent 97%)",
             selectOptionsGradientDark:
                 "linear-gradient(90deg, #4F0A8680 0%, #20003F80 100%)",
+            selectOptionsGradientLight:
+                "linear-gradient(90deg, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
         },
 
         backgroundSize: {

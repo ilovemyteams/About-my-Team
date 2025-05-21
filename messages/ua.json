@@ -167,11 +167,11 @@
         "facebookLabel": "Facebook",
         "messageLabel": "Ваше повідомлення*",
         "messageNotReqLabel": "Ваше повідомлення",
-        "mediaTypeLabel": "Оберіть соц мережу*",
-        "mediaLinkLabel": "Посилання на ваш аккаунт*",
+        "mediaTypeLabel": "Оберіть соцмережу*",
+        "mediaLinkLabel": "Посилання на ваш акаунт*",
         "namePlaceholder": "Сусанна",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -184,8 +184,7 @@
         "questionPlaceholder": "Ваше запитання*",
         "askFormTitle": "Є питання?",
         "askFormText": "Напишіть нам, і ми допоможемо вам знайти на них відповідь!",
-        "customerFormTitle": "Заповніть форму",
-        "customerFormText": "Наш менеджер зв’яжеться з вами найближчим часом"
+        "customerFormTitle": "Заповніть форму"
     },
     "Errors": {
         "required": "Дане поле обов’язкове до заповнення",

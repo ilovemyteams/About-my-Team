@@ -24,34 +24,37 @@ export const WriteUsValidation = () => {
         name: nameValidation,
         email: emailValidation,
         mediaType: yup.string().required(),
-        mediaLink: yup.string().when("mediaType", ([mediaType], schema) => {
-            if (mediaType === MediaTypeKeys.linkedin) {
-                return schema.matches(
-                    linkedinRegex,
-                    getTranslation("wrongLinkedin")
-                );
-            }
-            if (mediaType === MediaTypeKeys.telegram) {
-                return schema.matches(
-                    telegramRegex,
-                    getTranslation("wrongTelegram")
-                );
-            }
-            if (mediaType === MediaTypeKeys.facebook) {
-                return schema.matches(
-                    facebookRegex,
-                    getTranslation("wrongFacebook")
-                );
-            }
-            if (mediaType === MediaTypeKeys.instagram) {
-                return schema.matches(
-                    instagramRegex,
-                    getTranslation("wrongInstagram")
-                );
-            }
+        mediaLink: yup
+            .string()
+            .required()
+            .when("mediaType", ([mediaType], schema) => {
+                if (mediaType === MediaTypeKeys.linkedin) {
+                    return schema.matches(
+                        linkedinRegex,
+                        getTranslation("wrongLinkedin")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.telegram) {
+                    return schema.matches(
+                        telegramRegex,
+                        getTranslation("wrongTelegram")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.facebook) {
+                    return schema.matches(
+                        facebookRegex,
+                        getTranslation("wrongFacebook")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.instagram) {
+                    return schema.matches(
+                        instagramRegex,
+                        getTranslation("wrongInstagram")
+                    );
+                }
 
-            return schema;
-        }),
+                return schema;
+            }),
         message: messageValidation,
     });
 

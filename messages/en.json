@@ -168,11 +168,11 @@
         "facebookLabel": "Facebook",
         "messageLabel": "Your message*",
         "messageNotReqLabel": "Your message",
-        "mediaTypeLabel": "Оберіть соц мережу*",
-        "mediaLinkLabel": "Посилання на ваш аккаунт*",
+        "mediaTypeLabel": "Choose a social network*",
+        "mediaLinkLabel": "Link to your account*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata or @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -185,8 +185,7 @@
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
-        "customerFormTitle": "Fill out the form",
-        "customerFormText": "Our manager will contact you shortly"
+        "customerFormTitle": "Fill out the form"
     },
     "Errors": {
         "required": "This field is required",

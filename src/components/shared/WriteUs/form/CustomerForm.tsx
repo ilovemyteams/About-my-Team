@@ -106,14 +106,9 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
             }) => {
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                        <div className="self-start mb-3">
-                            <h1 className="text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-2">
-                                {getTranslation("customerFormTitle")}
-                            </h1>
-                            <p className="text-base">
-                                {getTranslation("customerFormText")}
-                            </p>
-                        </div>
+                        <h1 className="self-start text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-3">
+                            {getTranslation("customerFormTitle")}
+                        </h1>
 
                         <CustomField
                             name="name"
