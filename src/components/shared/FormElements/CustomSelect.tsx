@@ -21,6 +21,7 @@ export const CustomSelect = ({
             <span className="text-xxs leading-none -mb-[2px]">{label}</span>
             <Select
                 {...field}
+                disallowEmptySelection
                 defaultSelectedKeys={[defaultValue]}
                 aria-label={label}
                 classNames={{
@@ -30,7 +31,7 @@ export const CustomSelect = ({
                         "bg-selectOptionsGradientLight dark:[background-color:#1F0033] dark:bg-selectOptionsGradientDark rounded-none p-0 py-3 border-[1px] border-purple-strokeLight dark:border-purple-stroke",
                     listbox: "p-0 gap-0",
                     trigger:
-                        "border-b-[1px] border-purple-200 focus:outline-offset-0 focus:outline-[1px] focus:outline-purple-200 dark:focus:outline-grey dark:border-grey hover:border-b-[1px] hover:border-border-grey after:h-[0px] active:border-grey data-[open=true]:border-grey data-[open=true]:hover:border-grey ",
+                        "border-b-[1px] border-purple-200 data-[focus-visible]:outline-offset-0 data-[focus-visible]:outline-[1px] data-[focus-visible]:outline-purple-200 dark:data-[focus-visible]:outline-grey dark:border-grey hover:border-b-[1px] hover:border-border-grey after:h-[0px] active:border-grey data-[open=true]:border-grey data-[open=true]:hover:border-grey ",
                 }}
                 radius="none"
                 id={field.name}
