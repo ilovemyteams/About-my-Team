@@ -663,7 +663,7 @@ const config: Config = {
             nocompatible: true,
             preferredStrategy: "pseudoelements",
         }),
-        plugin(function ({ matchUtilities, theme, addUtilities }) {
+        plugin(function ({ matchUtilities, theme, addUtilities, addBase }) {
             matchUtilities(
                 {
                     "animate-delay": value => ({
@@ -684,6 +684,12 @@ const config: Config = {
                     borderWidth: "0 1px", // Лівий і правий бордер
                     borderImage:
                         "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
+            addBase({
+                ":root": {
+                    "--autofill-text-color-light": theme("colors.purple.200"),
+                    "--autofill-text-color-dark": theme("colors.grey"),
                 },
             });
         }),
