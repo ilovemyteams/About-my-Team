@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
+import { MediaTypeKeys } from "../components/shared/WriteUs/form/CustomerForm";
 import { EmailValidation } from "./shared/emailValidation";
 import { MessageValidation } from "./shared/messageValidation";
 import { NameValidation } from "./shared/nameValidation";
@@ -19,21 +20,41 @@ export const WriteUsValidation = () => {
     const emailValidation = EmailValidation();
     const messageValidation = MessageValidation();
 
-    const writeUsFormValidationSchema = yup.object().shape({
+    const writeUsFormValidationSchema = yup.object({
         name: nameValidation,
         email: emailValidation,
-        telegram: yup
+        mediaType: yup.string().required(),
+        mediaLink: yup
             .string()
-            .matches(telegramRegex, getTranslation("wrongTelegram")),
-        linkedin: yup
-            .string()
-            .matches(linkedinRegex, getTranslation("wrongLinkedin")),
-        instagram: yup
-            .string()
-            .matches(instagramRegex, getTranslation("wrongInstagram")),
-        facebook: yup
-            .string()
-            .matches(facebookRegex, getTranslation("wrongFacebook")),
+            .required()
+            .when("mediaType", ([mediaType], schema) => {
+                if (mediaType === MediaTypeKeys.linkedin) {
+                    return schema.matches(
+                        linkedinRegex,
+                        getTranslation("wrongLinkedin")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.telegram) {
+                    return schema.matches(
+                        telegramRegex,
+                        getTranslation("wrongTelegram")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.facebook) {
+                    return schema.matches(
+                        facebookRegex,
+                        getTranslation("wrongFacebook")
+                    );
+                }
+                if (mediaType === MediaTypeKeys.instagram) {
+                    return schema.matches(
+                        instagramRegex,
+                        getTranslation("wrongInstagram")
+                    );
+                }
+
+                return schema;
+            }),
         message: messageValidation,
     });
 

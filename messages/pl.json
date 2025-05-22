@@ -166,14 +166,16 @@
         "nameLabel": "Twoje imię*",
         "emailLabel": "E-mail*",
         "telegramLabel": "Telegram/pseudonim",
-        "linkedinLabel": "Linkedin",
+        "linkedinLabel": "LinkedIn",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Twoja wiadomość*",
+        "mediaTypeLabel": "Wybierz sieć społecznościową*",
+        "mediaLinkLabel": "Link do konta*",
         "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata lub @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -186,8 +188,7 @@
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
         "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
-        "customerFormTitle": "Wypełnij formularz",
-        "customerFormText": "Nasz menedżer wkrótce się skontaktuje"
+        "customerFormTitle": "Wypełnij formularz"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",

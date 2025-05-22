@@ -7,16 +7,8 @@ const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID || "";
 const RANGE = "Аркуш1!A2:G2";
 
 export async function POST(request: NextRequest) {
-    const {
-        name,
-        email,
-        telegram,
-        linkedin,
-        instagram,
-        facebook,
-        message,
-        source,
-    } = await request.json();
+    const { name, email, mediaType, mediaLink, message, source } =
+        await request.json();
 
     const date = new Date().toLocaleString();
 
@@ -25,10 +17,8 @@ export async function POST(request: NextRequest) {
             await sendDataToGoogleSheet(SPREADSHEET_ID, RANGE, [
                 name,
                 email,
-                telegram,
-                linkedin,
-                instagram,
-                facebook,
+                mediaType,
+                mediaLink,
                 message,
                 source,
                 date,
