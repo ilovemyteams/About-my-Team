@@ -23,7 +23,7 @@ export const WriteUsValidation = () => {
     const writeUsFormValidationSchema = yup.object({
         name: nameValidation,
         email: emailValidation,
-        mediaType: yup.string().required(),
+        mediaType: yup.string().required(getTranslation("required")),
         mediaLink: yup
             .string()
             .required()
