@@ -21,6 +21,7 @@ export const CustomSelect = ({
             <span className="text-xxs leading-none -mb-[2px]">{label}</span>
             <Select
                 {...field}
+                disallowEmptySelection
                 defaultSelectedKeys={[defaultValue]}
                 aria-label={label}
                 classNames={{
