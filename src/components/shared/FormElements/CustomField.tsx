@@ -37,7 +37,7 @@ export const CustomField = ({
     const isActiveEmptyField = status === name || value !== "";
 
     return (
-        <label className="block relative w-full appearance-non pb-[12px] outline-none text-base font-normal">
+        <label className="block relative w-full appearance-none pb-[12px] outline-none text-base font-normal text-purple-200 dark:text-grey">
             <p
                 className={`relative transition-[top] h-[20px] duration-300 ease-out ${isActiveEmptyField ? "top-0 text-xxs" : "top-[20px]  text-base"}`}
             >
@@ -51,7 +51,7 @@ export const CustomField = ({
                 autoComplete="on"
                 placeholder={isActiveEmptyField ? placeholder : ""}
                 onFocus={onFocusField}
-                className={`block custom-autofill-default appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out ${className}`}
+                className={`block [--text-color:var(--autofill-text-color-light)]  dark:[--text-color:var(--autofill-text-color-dark)] custom-autofill-default appearance-none w-full bg-transparent py-1 outline-none border-b-[1px] rounded-none  ${heightStyles}  ${borderAndColorStyles} font-caviar text-baseb placeholder-purple-strokeFormLabelLight dark:placeholder-purple-strokeFormLabel resize-none scroll transition-color duration-300 ease-out ${className}`}
             ></Field>
 
             <ErrorMessage

@@ -27,7 +27,7 @@ export const TableItemsList = ({
             {items.map((item, index) => (
                 <li
                     key={index}
-                    className={`dark:border-purple-stroke border-purple-strokeLight border-b-[1px] first-of-type:border-t-[1px]   
+                    className={`dark:border-purple-stroke border-purple-strokeLight border-b-[1px]    
                     tab:[&:nth-child(2)]:border-t-[1px] 
                     pc:border-r-[1px] pc:[&:nth-child(1)]:border-l-[1px] pc:[&:nth-child(3)]:border-t-[1px]
                     pc:[&:nth-child(4)]:border-t-[1px]

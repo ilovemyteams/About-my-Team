@@ -9,16 +9,14 @@ import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
+import { Skeleton } from "../mainPage/ourTeamSection/Skeleton";
+import { MemberCard } from "../shared/MemberCard";
 import { JoinUsCard } from "./JoinUsCard";
-import { MemberCard } from "./MemberCard";
-import { Skeleton } from "./Skeleton";
 
 export const OneSliderCardBigScreen = ({
     membersData,
-    optionType,
 }: {
     membersData: MemberDataItemType[];
-    optionType: string;
 }) => {
     const screenSizeName = useScreenSize();
     const { desktopXlName, pcName, desktopName, tabletName } = SCREEN_NAMES;
@@ -49,10 +47,6 @@ export const OneSliderCardBigScreen = ({
         const cardGroup =
             CARDS_PER_PAGE === 1 ? (
                 <Fragment key={i}>
-                    <ul className="hidden tab:grid pc:hidden flex-[0_0_100%] w-full grid-cols-2  tab:border-0 ">
-                        <Skeleton number={4} />
-                    </ul>
-
                     <ul className="hidden pc:grid deskxl:hidden flex-[0_0_100%] w-full border-0 pc:grid-cols-3 ">
                         <Skeleton number={6} />
                     </ul>
@@ -69,15 +63,13 @@ export const OneSliderCardBigScreen = ({
                     {chunk.map(data => (
                         <MemberCard key={data.data.id} data={data} />
                     ))}
-                    {isLastPage &&
-                        isShowJoinUs > 0 &&
-                        optionType === "person" && (
-                            <JoinUsCard
-                                pcBorderJoinUs={pcBorderJoinUs}
-                                tabBorderJoinUs={tabBorderJoinUs}
-                                deskXLBorderJoinUs={deskXLBorderJoinUs}
-                            />
-                        )}
+                    {isLastPage && isShowJoinUs > 0 && (
+                        <JoinUsCard
+                            pcBorderJoinUs={pcBorderJoinUs}
+                            tabBorderJoinUs={tabBorderJoinUs}
+                            deskXLBorderJoinUs={deskXLBorderJoinUs}
+                        />
+                    )}
                 </li>
             );
 

@@ -10,16 +10,25 @@ import { WriteUsValidation } from "@/src/schemas/writeUsFormValidationSchema";
 import { FormInModalProps } from "@/types/FormInModalProps";
 
 import { CustomField } from "../../FormElements/CustomField";
+import { CustomSelect } from "../../FormElements/CustomSelect";
 import { PolicyLabel } from "../../FormElements/PolicyLabel";
 import { SubmitButton } from "../../FormElements/SubmitButton";
+
+export enum MediaTypeKeys {
+    linkedin = "linkedin",
+    telegram = "telegram",
+    facebook = "facebook",
+    instagram = "instagram",
+}
+
+export type MediaType = keyof typeof MediaTypeKeys;
 
 export interface ValuesWriteUsFormType {
     name: string;
     email: string;
-    telegram: string;
-    linkedin: string;
-    instagram: string;
-    facebook: string;
+    mediaType: MediaTypeKeys;
+    mediaLink: string;
+
     message: string;
     source: string;
 }
@@ -35,25 +44,25 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
     const initialValues = {
         name: "",
         email: "",
-        telegram: "",
-        linkedin: "",
-        instagram: "",
-        facebook: "",
+        mediaType: MediaTypeKeys.linkedin,
+        mediaLink: "",
         message: "",
         source: searchParams.get("source") || "direct",
     };
 
     const initialStatus = "name";
+    const options = Object.values(MediaTypeKeys).map(item => ({
+        key: item,
+        label: getTranslation(`${item}Label`),
+    }));
 
     const submitForm = async (values: ValuesWriteUsFormType) => {
         const onSendData = async () => {
             const data = {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
-                telegram: values.telegram.trim(),
-                linkedin: values.linkedin.trim(),
-                instagram: values.instagram.trim(),
-                facebook: values.facebook.trim(),
+                mediaType: values.mediaType,
+                mediaLink: values.mediaLink.trim(),
                 message: values.message.trim(),
                 source: values.source,
             };
@@ -96,10 +105,11 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 isSubmitting,
             }) => {
                 return (
-                    <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                        <h1 className="font-caviar text-purple-200 dark:text-white-200 text-3xl tab:text-4xl pc:text-5xl self-start mb-[10px]">
+                    <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke text-purple-200 dark:text-grey">
+                        <h1 className="self-start text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-3">
                             {getTranslation("customerFormTitle")}
                         </h1>
+
                         <CustomField
                             name="name"
                             value={values.name}
@@ -120,46 +130,29 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             setStatus={setStatus}
                             status={status}
                         />
-                        <CustomField
-                            name="telegram"
-                            value={values.telegram}
-                            label={getTranslation("telegramLabel")}
-                            placeholder={getTranslation("telegramPlaceholder")}
-                            type="text"
-                            isError={!!(touched.telegram && errors.telegram)}
-                            setStatus={setStatus}
-                            status={status}
-                        />
-                        <CustomField
-                            name="linkedin"
-                            value={values.linkedin}
-                            label={getTranslation("linkedinLabel")}
-                            placeholder={getTranslation("linkedinPlaceholder")}
-                            type="text"
-                            isError={!!(touched.linkedin && errors.linkedin)}
-                            setStatus={setStatus}
-                            status={status}
-                        />
-                        <CustomField
-                            name="instagram"
-                            value={values.instagram}
-                            label={getTranslation("instagramLabel")}
-                            placeholder={getTranslation("instagramPlaceholder")}
-                            type="text"
-                            isError={!!(touched.instagram && errors.instagram)}
-                            setStatus={setStatus}
-                            status={status}
-                        />
-                        <CustomField
-                            name="facebook"
-                            value={values.facebook}
-                            label={getTranslation("facebookLabel")}
-                            placeholder={getTranslation("facebookPlaceholder")}
-                            type="text"
-                            isError={!!(touched.facebook && errors.facebook)}
-                            setStatus={setStatus}
-                            status={status}
-                        />
+                        <div className="w-full tab:grid tab:grid-cols-[288px,_auto] gap-3">
+                            <CustomSelect
+                                name="mediaType"
+                                defaultValue={MediaTypeKeys.linkedin}
+                                options={options}
+                                label={getTranslation("mediaTypeLabel")}
+                            />
+                            <CustomField
+                                name="mediaLink"
+                                value={values.mediaLink}
+                                label={getTranslation(`mediaLinkLabel`)}
+                                placeholder={getTranslation(
+                                    `${values.mediaType}Placeholder`
+                                )}
+                                type="text"
+                                isError={
+                                    !!(touched.mediaLink && errors.mediaLink)
+                                }
+                                setStatus={setStatus}
+                                status={status}
+                            />
+                        </div>
+
                         <CustomField
                             name="message"
                             value={values.message}

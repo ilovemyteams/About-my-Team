@@ -7,6 +7,10 @@
     --font-geist: Geist;
 }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 /* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
@@ -109,13 +113,13 @@ body {
             transition: background-color 5000s ease-in-out 0s;
         }
     }
-    .custom-autofill-default {
-        &:-webkit-autofill {
-            box-shadow: 0 0 0px 1000px transparent inset !important;
-            -webkit-text-fill-color: currentColor !important;
-            transition: background-color 5000s ease-in-out 0s;
-        }
+
+    .custom-autofill-default:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+        -webkit-text-fill-color: var(--text-color) !important;
+        transition: background-color 5000s ease-in-out 0s;
     }
+
     .bg-construction {
         background-image: url("/images/under-construction.jpg");
         background-size: cover;

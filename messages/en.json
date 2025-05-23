@@ -7,13 +7,21 @@
         "heroInfoText": "The team that creates websites and digital solutions for your business. <br></br> Your idea — our implementation.",
         "portfolioLink": "Portfolio",
         "project": "Project",
-        "btn": "get 100 $"
+        "titleList": "Our clients:",
+        "item1": "small and medium-sized businesses",
+        "item2": "industry experts",
+        "item3": "startups",
+        "item4": "e-commerce",
+        "btn": "discuss a project"
+    },
+    "Release": {
+        "title": "<purple>Demo</purple> presentations <purple>from</purple> our <purple>team</purple>"
     },
     "Portfolio": {
         "pageTitle": "Portfolio",
-        "titleFirstLine": "Implemented <purple>projects</purple>, ",
-        "titleSecondLine": "that have already <purple>helped to develop</purple> ",
-        "titleThirdLine": "our customers' <purple>businesses</purple>"
+        "titleFirstLine": "Create <purple>impressive</purple> ",
+        "titleSecondLine": "digital <purple>products</purple> ",
+        "titleThirdLine": "<purple>together</purple> with the dream team"
     },
     "Mission": {
         "pageTitle": "About us",
@@ -40,28 +48,23 @@
         "title": "Tell us about your unique skills and join our team"
     },
     "WriteUs": {
-        "titleIWant": "I want to become your satisfied client!",
+        "titleIWant": " Book a consultation today and get it for free!",
         "titleAreYouReady": "Ready to order a project?"
     },
     "Services": {
         "pageTitle": "Services",
-        "titleFirstLine": "We develop <purple>digital products</purple> ",
-        "titleSecondLine": "for your business",
-        "BATitle": "Business analysis",
-        "BAText": "Analytics helps the business to build its work and to develop itself based on the facts, but not the guesses or intuition",
+        "titleFirstLine": "You get a fully functional <purple>website</purple> ",
+        "titleSecondLine": "<purple>that will make</purple> you <purple>stand out from the competition</purple>",
+        "subtitleText": "our services \ninclude:",
+        "BATitle": "Business and competitor analysis",
+        "BAText": "Make decisions based on facts, not intuition. We help you identify opportunities for growth and spot potential risks. Our goal is to keep you one step ahead, taking into account the specifics of your business.",
         "designTitle": "Design",
-        "designText": "Designer creates prototype of each and every page where he shows positioning of the blocks, illustrations and text. Only after prototype approval by the customer, we start creating the website design",
+        "designText": "We believe design is love at first sight. It creates the first impression that defines everything. We carefully craft every element to ensure it is beautiful, user-friendly, and intuitive. This builds trust, which in turn boosts your sales.",
         "devTitle": "Development",
-        "devText": "At the stage of development the website prototype receives its birth, gaining all the necessary functionality, databases are connected, the payment possibilities are implemented, the website is filled up with the content",
+        "devText": "We create digital products that load quickly, scale easily, and keep up with the pace of your business. Thoughtful coding, optimized logic, and flexibility in details — everything is designed to deliver results.",
         "QATitle": "Testing",
-        "QAText": "At the stage of testing the performance of the website and its correspondence to the requirements are checked. We test functionality, usability, optimization for different browsers, screen sizes and the speed of website",
-        "supportTitle": "Support",
-        "supportText": "Team representative teaches the customer's employees to work with the web-site, to enable the customer to update the website's content in future",
-        "allServicesTitle": "Comprehensive service",
-        "allServicesText": "A comprehensive and systematic approach with unified project management (the customer does not need to look for contractors for individual tasks - everything is done by one contractor, including the search or recommendation of subcontractors)",
-        "contactUs": "Get a comprehensive consultation with our manager if you have any questions",
-        "showMore": "Show more",
-        "showLess": "Show less"
+        "QAText": "This is about stability, security, and confidence. Users don’t give second chances — if something doesn’t work, they leave. We test to ensure your website, application, or service runs smoothly, generates revenue, and retains customers.",
+        "allServices": "All services"
     },
 
     "Stages": {
@@ -80,7 +83,9 @@
         "sixthStepTitle": "Transfer of the website",
         "sixthStepText": "After testing and integration of all services, the resource, along with all rights to it, is transferred to the client",
         "seventhStepTitle": "Support",
-        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them"
+        "seventhStepText": "After the website launch, there may be issues with page display or other technical matters. In such cases, the client can contact the developer to resolve them",
+        "allStages": "All stages",
+        "coverStages": "Collapse stages"
     },
     "HireUs": {
         "pageTitle": "connection",
@@ -89,7 +94,7 @@
     },
     "OurTeam": {
         "pageTitle": "Team",
-        "pageBigTitle": "Choose your ideal team",
+        "pageBigTitle": "<purple>A team of creators:</purple> experts who will help take your business online",
         "menuTopTitle": "Choose",
         "listTitle": "specialists",
         "teamsList": "teams",
@@ -158,14 +163,16 @@
         "nameLabel": "Your name*",
         "emailLabel": "E-mail*",
         "telegramLabel": "Telegram/nickname",
-        "linkedinLabel": "Linkedin",
+        "linkedinLabel": "LinkedIn",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Your message*",
         "messageNotReqLabel": "Your message",
+        "mediaTypeLabel": "Choose a social network*",
+        "mediaLinkLabel": "Link to your account*",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata or @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -178,7 +185,7 @@
         "questionPlaceholder": "Your question*",
         "askFormTitle": "Do you have any questions?",
         "askFormText": "Write to us, and we will help you find the answer!",
-        "customerFormTitle": "Order a service"
+        "customerFormTitle": "Fill out the form"
     },
     "Errors": {
         "required": "This field is required",

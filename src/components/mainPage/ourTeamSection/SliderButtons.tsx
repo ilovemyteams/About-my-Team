@@ -1,3 +1,4 @@
+"use client";
 import { EmblaCarouselType } from "embla-carousel";
 import { useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef } from "react";

@@ -2441,6 +2441,57 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "oksana-zhmurko-business-analyst",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830866/Oksana_BA_pnmuxb.jpg",
+            position: "Business Analyst",
+            categoryName: "business-analytic",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/oksana-zhmurko-9521b8266",
+                telegram: "https://t.me/Ribesaur",
+                github: "",
+            },
+            tools: [
+                "Jira",
+                "Confluence",
+                "Balsamiq",
+                "Draw.io",
+                "Google Sheets",
+                "Miro",
+                "Figma",
+                "Search IP",
+                "Madrid Monitor",
+                "TMview",
+            ],
+        },
+        ua: {
+            name: "Оксана Жмурко",
+            about: "Успіх прямо пропорційний зусиллям, які ми докладаємо. Аналіз бізнесу та обрана  стратегія захисту інтелектуальної власності - це вже половина успіху!",
+            services:
+                "Аналіз бізнес-потреб замовників. Аналіз стейкхолдерів. Виявлення, аналіз та документування вимог в форматах User Story, Use Case, SRS, Wireframes. Моделювання BPMN, UML. Розуміння SDLC.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Oksana Zhmurko",
+            about: "Success is directly proportional to the effort we apply. Business analysis and a chosen intellectual property strategy are already half the success!",
+            services:
+                "Analysis of customer business needs. Stakeholder analysis. Requirements elicitation, analysis, and documentation in User Story, Use Case, SRS, and Wireframes formats. BPMN and UML modelling. Understanding of the SDLC.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Oksana Zhmurko",
+            about: "Sukces jest wprost proporcjonalny do wysiłku, który wkładamy. Analiza biznesu i wybrana strategia  własności intelektualnej to już połowa sukcesu!",
+            services:
+                "Analiza biznesowych potrzeb klientów. Analiza interesariuszy. Identyfikacja, analiza i dokumentacja wymagań w formatach User Story, Use Case, SRS, Wireframes. Modelowanie w notacji BPMN i UML. Znajomość cyklu życia oprogramowania (SDLC).",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:

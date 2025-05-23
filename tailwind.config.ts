@@ -639,6 +639,14 @@ const config: Config = {
                 "linear-gradient(to top, #5F3F87 0%,  #09002ECC 60%, #09002E1A 100%)",
             projectCardGradient:
                 "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
+            homeServiceCardGradientDark:
+                "linear-gradient(90deg, transparent 10%,  #5F3F87CC 51%, transparent 90%)",
+            homeServiceCardGradientLight:
+                "linear-gradient(90deg, transparent 0%, #B490FFCC 51%, transparent 97%)",
+            selectOptionsGradientDark:
+                "linear-gradient(90deg, #4F0A8680 0%, #20003F80 100%)",
+            selectOptionsGradientLight:
+                "linear-gradient(90deg, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
         },
 
         backgroundSize: {
@@ -655,7 +663,7 @@ const config: Config = {
             nocompatible: true,
             preferredStrategy: "pseudoelements",
         }),
-        plugin(function ({ matchUtilities, theme, addUtilities }) {
+        plugin(function ({ matchUtilities, theme, addUtilities, addBase }) {
             matchUtilities(
                 {
                     "animate-delay": value => ({
@@ -676,6 +684,12 @@ const config: Config = {
                     borderWidth: "0 1px", // Лівий і правий бордер
                     borderImage:
                         "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
+            addBase({
+                ":root": {
+                    "--autofill-text-color-light": theme("colors.purple.200"),
+                    "--autofill-text-color-dark": theme("colors.grey"),
                 },
             });
         }),

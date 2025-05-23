@@ -29,7 +29,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
 
     return (
-        <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
+        <div className="tab:hidden relative min-w-[288px] h-auto ">
             <div className="p-[8px] pt-0 border border-purple-strokeLight dark:border-purple-stroke border-b-0 ">
                 {pricePerHour && (
                     <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">

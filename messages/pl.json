@@ -8,14 +8,21 @@
         "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
         "portfolioLink": "Realizacje",
         "project": "Projekt",
-        "btn": "odbierz 100 $"
+        "titleList": "Nasi klienci:",
+        "item1": "małe i średnie przedsiębiorstwa",
+        "item2": "eksperci branżowi",
+        "item3": "startupy",
+        "item4": "e-commerce",
+        "btn": "omówienie projektu"
     },
-
+    "Release": {
+        "title": "Prezentacje <purple>demonstracyjne od</purple> naszego <purple>zespołu</purple>"
+    },
     "Portfolio": {
         "pageTitle": "Wdrożone ",
-        "titleFirstLine": "Wdrożone <purple>projekty</purple>, ",
-        "titleSecondLine": "które <purple>pomogły rozwinąć działalność</purple> ",
-        "titleThirdLine": "naszych dotychczasowych <purple>klientów</purple>"
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących ",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple> ",
+        "titleThirdLine": "z doskonałym zespołem"
     },
 
     "Mission": {
@@ -43,28 +50,24 @@
         "title": "Opowiedz nam o swoich wyjątkowych umiejętnościach i dołącz do naszego zespołu"
     },
     "WriteUs": {
-        "titleIWant": "Chcę zostać zadowolonym klientem!",
+        "titleIWant": "Zarezerwuj konsultację już dziś i otrzymaj ją za darmo!",
         "titleAreYouReady": "Gotowy do zlecenia projektu?"
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstLine": "Tworzymy <purple>produkty cyfrowe</purple> ",
-        "titleSecondLine": "dla Twojego biznesu",
-        "BATitle": "Analiza biznesowa",
-        "BAText": "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
+        "titleFirstLine": "Otrzymasz gotową, działającą <purple>stronę internetową,</purple> ",
+        "titleSecondLine": "<purple>która wyróżni</purple> Cię <purple>na tle konkurencji</purple>",
+        "subtitleText": "nasze usługi \nobejmują:",
+        "BATitle": "Analiza działalności i konkurencji",
+        "BAText": "Podejmuj decyzje w oparciu o fakty, a nie intuicję. Pomagamy dostrzec, gdzie kryją się szanse na rozwój, a gdzie — ryzyka. Wspieramy Cię w byciu o krok przed konkurencją, uwzględniając specyfikę Twojego biznesu.",
         "designTitle": "Projekt",
-        "designText": "Projektant rysuje prototyp każdej strony, który schematycznie przedstawia rozmieszczenie bloków, ilustracji i tekstu. Dopiero po zatwierdzeniu prototypu przez klienta rozpoczynamy tworzenie projektu strony internetowej",
+        "designText": "Wierzymy, że design to miłość od pierwszej sekundy. To on buduje pierwsze wrażenie, które decyduje o wszystkim. Dbamy o każdy element, aby było pięknie, wygodnie i intuicyjnie — bo właśnie wtedy rośnie zaufanie, a razem z nim sprzedaż.",
         "devTitle": "Rozwój",
-        "devText": "Na etapie rozwoju prototyp strony internetowej ożywa i zyskuje niezbędną funkcjonalność, bazy danych są połączone, a opcje płatności i wypełniania treścią są wdrażane",
+        "devText": "Tworzymy produkty cyfrowe, które otwierają się błyskawicznie, łatwo się skalują i nadążają za tempem Twojego biznesu. Przemyślany kod, zoptymalizowana logika i elastyczność w szczegółach — wszystko po to, by działało na efekt.",
         "QATitle": "Testowanie",
-        "QAText": "Na etapie testowania sprawdzana jest wydajność strony internetowej i jej zgodność z wymaganiami. Oceniana jest funkcjonalność, użyteczność, optymalizację pod kątem różnych przeglądarek, rozmiarów ekranu i szybkości działania strony",
-        "supportTitle": "Wsparcie",
-        "supportText": "Przedstawiciel zespołu szkoli pracowników klienta w zakresie pracy ze stroną internetową, tak aby klient mógł samodzielnie aktualizować treści na swojej stronie internetowej",
-        "allServicesTitle": "Pełny zakres usług",
-        "allServicesText": "Kompleksowe i systematyczne podejście z ujednoliconym procesem zarządzania projektami (klient nie musi szukać wykonawców do poszczególnych zadań - wszystko wykonuje jeden wykonawca, łącznie z wyszukiwaniem lub polecaniem podwykonawców)",
-        "contactUs": "Uzyskaj konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
-        "showMore": "Pokazać więcej",
-        "showLess": "Pokazać mniej"
+        "QAText": "Chodzi o stabilność, bezpieczeństwo i zaufanie. Użytkownicy nie dają drugiej szansy - jeśli coś nie działa, odchodzą. Testujemy Twoją stronę, aplikację lub usługę, aby upewnić się, że działa płynnie, generuje przychody i nie traci klientów.",
+
+        "allServices": "Wszystkie usługi"
     },
     "Stages": {
         "pageTitle": "Proces",
@@ -82,7 +85,9 @@
         "sixthStepTitle": "Przeniesienie funkcjonalności strony",
         "sixthStepText": "Po przeprowadzeniu testów i integracji wszystkich usług, zasób wraz ze wszystkimi prawami do niego zostaje przekazany do dyspozycji klienta",
         "seventhStepTitle": "Wsparcie",
-        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia"
+        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia",
+        "allStages": "Wszystkie etapy",
+        "coverStages": "Zwiń etapy"
     },
     "HireUs": {
         "pageTitle": "połączenie",
@@ -91,7 +96,7 @@
     },
     "OurTeam": {
         "pageTitle": "Zespół",
-        "pageBigTitle": "Wybierz swój idealny zespół",
+        "pageBigTitle": "<purple>Zespół kreatorów:</purple> specjaliści, którzy pomogą przenieść Twój biznes do świata online",
         "menuTopTitle": "Wybierz",
         "listTitle": "specjaliści",
         "teamsList": "Zespoły",
@@ -161,14 +166,16 @@
         "nameLabel": "Twoje imię*",
         "emailLabel": "E-mail*",
         "telegramLabel": "Telegram/pseudonim",
-        "linkedinLabel": "Linkedin",
+        "linkedinLabel": "LinkedIn",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Twoja wiadomość*",
+        "mediaTypeLabel": "Wybierz sieć społecznościową*",
+        "mediaLinkLabel": "Link do konta*",
         "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata lub @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -181,7 +188,7 @@
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
         "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
-        "customerFormTitle": "Zamówić usługę"
+        "customerFormTitle": "Wypełnij formularz"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
