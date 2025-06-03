@@ -1,10 +1,10 @@
 "use client";
 import Cookies from "js-cookie";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useEffect, useRef } from "react";
 
-import { selectedLink } from "@/src/utils/selectedLink";
+import { Link } from "@/src/i18n/routing";
 
 import { Button } from "../shared/Button";
 
@@ -13,8 +13,6 @@ export const CookiesComponent = () => {
     const cookiesValue = Cookies.get("isAccetedCookies");
     const cookiesRef = useRef<HTMLDivElement>(null);
     const getTranslation = useTranslations("Cookies");
-    const locale = useLocale();
-    const policyURL = selectedLink(locale);
 
     useEffect(() => {
         if (cookiesValue) {
@@ -37,14 +35,14 @@ export const CookiesComponent = () => {
             <div className="px-4 py-10 tab:px-6 pc:px-[100px]  pc:py-10 flex flex-col pc:flex-row gap-6 pc:gap-9 items-center tab:items-start pc:items-center justify-center max-w-[540px] tab:tab:max-w-full mx-auto">
                 <div className="pc:w-[60%]">
                     {getTranslation("text")}{" "}
-                    <a
-                        href={policyURL}
+                    <Link
+                        href="/policy"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="dark:text-purple-50 text-purple-130"
                     >
                         {getTranslation("policy")}
-                    </a>
+                    </Link>
                 </div>
                 <div className="w-[288px]">
                     <Button onClick={handleClick}>

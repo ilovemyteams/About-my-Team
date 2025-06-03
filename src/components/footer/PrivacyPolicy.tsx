@@ -1,14 +1,13 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
-import { selectedLink } from "@/src/utils/selectedLink";
+import { Link } from "@/src/i18n/routing";
 
 export const PrivacyPolicy = () => {
     const getTranslation = useTranslations("Footer");
-    const locale = useLocale();
-    const policyURL = selectedLink(locale);
+
     return (
-        <a
-            href={policyURL}
+        <Link
+            href="/policy"
             target="_blank"
             rel="noopener noreferrer"
             className="mb-[20px] tab:mb-0 text-sm outline-none dark:pc:hover:text-red pc:hover:text-redLight 
@@ -16,6 +15,6 @@ export const PrivacyPolicy = () => {
             active:text-redLight transition ease-out duration-300"
         >
             {getTranslation("privacyPolicy").toUpperCase()}
-        </a>
+        </Link>
     );
 };
