@@ -1,6 +1,6 @@
 import { policyEmail, policySite } from "../constants/policyInfo";
 
-export const parsePolicyLinks = (text: string) => {
+export const parsePolicyLinks = (text: string, locale: string) => {
     const anchorRegex = /\*(site|email)\*/g;
     const parts = [];
     let lastIndex = 0;
@@ -29,13 +29,14 @@ export const parsePolicyLinks = (text: string) => {
         }
 
         if (key === "site") {
+            const url = `https://${policySite}/${locale}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
  pc:hover:text-redLight dark:active:text-red active:text-redLight 
  dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
  transition-color ease-out duration-300 "
-                    href={`https//:${policySite}`}
+                    href={url}
                     key={policySite}
                     target="_blank"
                     rel="noopener noreferrer"

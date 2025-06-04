@@ -1,3 +1,5 @@
+import { useLocale } from "next-intl";
+
 import { PolicyContentType } from "@/src/mockedData/privacyPolicy";
 import { parsePolicyLinks } from "@/src/utils/parsePolicyLinks";
 
@@ -5,6 +7,7 @@ import { IconCheck } from "../shared/Icons/IconCheck";
 import { HighlightedText } from "./HighlightedText";
 
 export const PolicyText = ({ type, text }: PolicyContentType) => {
+    const locale = useLocale();
     if (type === "subtitle") {
         return (
             <li className="first:mt-0 mt-4 tab:mt-5 pc:mt-7 desk:mt-8">
@@ -35,7 +38,7 @@ export const PolicyText = ({ type, text }: PolicyContentType) => {
     return (
         <li className="first:mt-0 mt-4 tab:mt-5 pc:mt-7 desk:mt-8">
             <p className="text-sm20 text-balance tab:text-pretty tab:text-base23 pc:text-xl28 desk:text-2xl">
-                {parsePolicyLinks(text)}
+                {parsePolicyLinks(text, locale)}
             </p>
         </li>
     );
