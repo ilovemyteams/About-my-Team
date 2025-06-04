@@ -6,7 +6,7 @@ interface HighlightedTextProps {
     text: string;
 }
 
-export const HighlightedText = ({ text }: HighlightedTextProps) => {
+export const TextDocHighlightedText = ({ text }: HighlightedTextProps) => {
     const highlightedTitle = highlightPurple(text);
 
     return highlightedTitle.map((part, index) => {

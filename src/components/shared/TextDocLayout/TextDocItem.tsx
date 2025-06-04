@@ -1,14 +1,13 @@
-import { PolicyContent } from "@/src/mockedData/privacyPolicy";
+import { TextDocContent } from "@/types/TextDocTypes";
 
-import { HighlightedText } from "./HighlightedText";
-import { PolicyText } from "./PolicyText";
+import { TextDocBlock } from "./TextDocBlock";
+import { TextDocHighlightedText } from "./TextDocHighlightedText";
 
-interface PolicyItemProps extends PolicyContent {
+interface TextDocItemProps extends TextDocContent {
     index: number;
 }
-// text-[48px]
 
-export const PolicyItem = ({ title, content, index }: PolicyItemProps) => {
+export const TextDocItem = ({ index, content, title }: TextDocItemProps) => {
     const orderNumber = index + 1;
     return (
         <li className=" last:pb-0 pb-4 border-b-[1px] last:border-b-0 border-purple-strokeLight dark:border-purple-stroke tab:flex tab:flex-row tab:gap-10 tab:pb-6 pc:gap-[60px] pc:pb-10 desk:pb-[64px]">
@@ -20,12 +19,12 @@ export const PolicyItem = ({ title, content, index }: PolicyItemProps) => {
 
             <div>
                 <h2 className="font-caviar font-bold text-2xl tab:text-3xl28 text-purple-200 whitespace-pre-wrap dark:text-white-200 pc:text-4xl desk:text-6xlt mb-5 tab:min-h-[auto] tab:mb-6 pc:mb-10 desk:mb-[64px]">
-                    <HighlightedText text={title} />
+                    <TextDocHighlightedText text={title} />
                 </h2>
 
                 <ul className="">
                     {content.map((item, i) => (
-                        <PolicyText {...item} key={i} />
+                        <TextDocBlock {...item} key={i} />
                     ))}
                 </ul>
             </div>

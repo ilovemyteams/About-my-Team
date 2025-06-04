@@ -1,3 +1,4 @@
+import { TextDocContent } from "@/types/TextDocTypes";
 export interface PolicyType {
     ua: PolicyData;
     // en: PolicyData;
@@ -6,29 +7,14 @@ export interface PolicyType {
 
 export interface PolicyData {
     title: string;
-    data: PolicyContent[];
-}
-
-export interface PolicyContent {
-    title: string;
-    content: PolicyContentType[];
-}
-
-export type PolicyContentType = PolicyContentTextType | PolicyContentListType;
-
-export interface PolicyContentTextType {
-    type: "text" | "subtitle";
-    text: string;
-}
-
-export interface PolicyContentListType {
-    type: "list";
-    text: string[];
+    publishDate: string;
+    data: TextDocContent[];
 }
 
 export const policyData: PolicyType = {
     ua: {
         title: "Політика  <purple>конфіденційності</purple>",
+        publishDate: "Від 06.06.2025",
         data: [
             {
                 title: "Загальні \nположення",

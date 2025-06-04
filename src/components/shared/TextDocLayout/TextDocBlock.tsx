@@ -1,18 +1,19 @@
 import { useLocale } from "next-intl";
+import React from "react";
 
-import { PolicyContentType } from "@/src/mockedData/privacyPolicy";
 import { parsePolicyLinks } from "@/src/utils/parsePolicyLinks";
+import { TextDocContentType } from "@/types/TextDocTypes";
 
-import { IconCheck } from "../shared/Icons/IconCheck";
-import { HighlightedText } from "./HighlightedText";
+import { IconCheck } from "../Icons/IconCheck";
+import { TextDocHighlightedText } from "./TextDocHighlightedText";
 
-export const PolicyText = ({ type, text }: PolicyContentType) => {
+export const TextDocBlock = ({ text, type }: TextDocContentType) => {
     const locale = useLocale();
     if (type === "subtitle") {
         return (
             <li className="first:mt-0 mt-4 tab:mt-5 pc:mt-7 desk:mt-8">
                 <h3 className="font-caviar font-bold text-lg tab:text-xl text-purple-200 dark:text-white-200 pc:text-2xl24 desk:text-4xl">
-                    <HighlightedText text={text} />
+                    <TextDocHighlightedText text={text} />
                 </h3>
             </li>
         );
