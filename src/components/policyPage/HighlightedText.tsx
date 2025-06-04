@@ -12,21 +12,11 @@ export const HighlightedText = ({ text }: HighlightedTextProps) => {
     return highlightedTitle.map((part, index) => {
         if (part.decoration === "purple") {
             return (
-                <span
-                    key={index}
-                    className="text-purple-100 whitespace-pre-wrap tab:whitespace-normal"
-                >
+                <span key={index} className="text-purple-100">
                     {part.text}
                 </span>
             );
         }
-        return (
-            <span
-                key={index}
-                className="whitespace-pre-wrap tab:whitespace-normal"
-            >
-                {part.text}
-            </span>
-        );
+        return part.text;
     });
 };

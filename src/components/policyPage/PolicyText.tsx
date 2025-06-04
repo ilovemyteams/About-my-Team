@@ -8,7 +8,7 @@ export const PolicyText = ({ type, text }: PolicyContentType) => {
     if (type === "subtitle") {
         return (
             <li className="first:mt-0 mt-4 tab:mt-5 pc:mt-7 desk:mt-8">
-                <h3 className="font-caviar font-bold text-lg tab:text-xl dark:text-white-200 pc:text-2xl24 desk:text-4xl">
+                <h3 className="font-caviar font-bold text-lg tab:text-xl text-purple-200 dark:text-white-200 pc:text-2xl24 desk:text-4xl">
                     <HighlightedText text={text} />
                 </h3>
             </li>
