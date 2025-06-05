@@ -2,9 +2,9 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import React from "react";
 
-import { MemberCardModalBody } from "@/src/components/ourTeamSection/Modal/MemberCardModalBody";
-import { MemberCardModalBodyTab } from "@/src/components/ourTeamSection/Modal/MemberCardModalBodyTab";
-import { Modal } from "@/src/components/ourTeamSection/Modal/Modal";
+import { MemberCardModalBody } from "@/src/components/mainPage/ourTeamSection/Modal/MemberCardModalBody";
+import { MemberCardModalBodyTab } from "@/src/components/mainPage/ourTeamSection/Modal/MemberCardModalBodyTab";
+import { Modal } from "@/src/components/mainPage/ourTeamSection/Modal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
