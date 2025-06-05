@@ -1,22 +1,34 @@
 import { useTranslations } from "next-intl";
 
-import { JoinUsButton } from "../../shared/JoinUsButton";
 import { WriteUs } from "../../shared/WriteUs/WriteUs";
+import { HeroClientList } from "./HeroClientList";
 
-export const HeroInfo = ({ title }: { title: string | null | undefined }) => {
-    const getTranslation = useTranslations();
+export const HeroInfo = () => {
+    const getTranslation = useTranslations("Hero");
+
     return (
-        <div className="flex flex-col items-center pt-4 tab:pt-0 pc:block pc:w-[50%] pc:pt-6">
-            <h1
-                className="text-xl pc:mb-[154px] pc:static
-                           tab:absolute tab:left-0 tab:top-0 deskxl:text-2xl text-purple-200 dark:text-grey deskxl:mb-[173px]"
-            >
-                {title ? title.toString() : getTranslation("Hero.heroInfoText")}
-            </h1>
-            <div className="flex flex-col gap-4 tab:mt-[86px] pc:gap-6 mt-8 pc:mt-[96px]">
-                <WriteUs />
+        <div className="flex flex-col tab:flex-row  tab:gap-[89px] w-full">
+            <div className="tab:flex flex-col gap-[51px] tab:w-[50%] ">
+                <h1
+                    className="text-xl mt-5 tab:mt-0 tab:w-[360px] desk:w-[456px]
+                           desk:text-2xl text-purple-200 dark:text-grey"
+                >
+                    {getTranslation.rich("heroInfoText", {
+                        br: () => <br />,
+                    })}
+                </h1>
+                <WriteUs
+                    buttonName={getTranslation("btn")}
+                    className="hidden tab:block"
+                />
+            </div>
 
-                <JoinUsButton />
+            <div className=" relative flex flex-col gap-5 pc:gap-6 mt-5 tab:mt-0 mx-auto tab:mx-0">
+                <HeroClientList />
+                <WriteUs
+                    buttonName={getTranslation("btn")}
+                    className="tab:hidden"
+                />
             </div>
         </div>
     );
