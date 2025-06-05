@@ -9,13 +9,13 @@ import { Link } from "@/src/i18n/routing";
 import { Button } from "../shared/Button";
 
 export const CookiesComponent = () => {
-    const [isVisible, setIsVisible] = useState(false); // 👈 показ банеру
+    const [isVisible, setIsVisible] = useState(false);
     const getTranslation = useTranslations("Cookies");
 
     useEffect(() => {
-        const cookiesValue = Cookies.get("isAcceptedCookies"); // ✅ правильна назва
+        const cookiesValue = Cookies.get("isAcceptedCookies");
         if (!cookiesValue) {
-            setIsVisible(true); // показати, якщо кукі ще немає
+            setIsVisible(true);
         }
     }, []);
 
