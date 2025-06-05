@@ -33,6 +33,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
                 message: values.message.trim(),
+                confirm: values.confirm,
             };
             await axios({
                 method: "post",
