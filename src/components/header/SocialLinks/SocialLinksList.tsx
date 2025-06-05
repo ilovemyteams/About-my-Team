@@ -2,14 +2,14 @@ import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 import { SupportedPlatforms } from "@/types/sanityDataPropsTypes";
 
 import { IconBehance } from "../../shared/Icons/IconBehance";
-import { IconGithub } from "../../shared/Icons/IconGithub";
-import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { SocialLink } from "../../shared/SocialLink";
-import { IconYoutube } from "../../shared/Icons/IconYoutube";
 import { IconFacebook } from "../../shared/Icons/IconFacebook";
+import { IconGithub } from "../../shared/Icons/IconGithub";
 import { IconGoogleDrive } from "../../shared/Icons/IconGoogleDrive";
+import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
 import { IconTelegram } from "../../shared/Icons/IconTelegram";
 import { IconWhatsapp } from "../../shared/Icons/IconWhatsapp";
+import { IconYoutube } from "../../shared/Icons/IconYoutube";
+import { SocialLink } from "../../shared/SocialLink";
 
 export const SocialLinksList = () => {
     const { data } = useSettingsContext();
@@ -18,10 +18,10 @@ export const SocialLinksList = () => {
         behance: <IconBehance />,
         github: <IconGithub />,
         youtube: <IconYoutube />,
-        facebook: <IconFacebook/>,
-        googleDrive: <IconGoogleDrive/>,
-        telegram: <IconTelegram/>,
-        whatsapp: <IconWhatsapp/>
+        facebook: <IconFacebook />,
+        googleDrive: <IconGoogleDrive />,
+        telegram: <IconTelegram />,
+        whatsapp: <IconWhatsapp />,
     };
 
     const socialLinksData = data?.header?.socialLinks;

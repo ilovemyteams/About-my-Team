@@ -5,14 +5,14 @@ import { useLocale } from "next-intl";
 
 import { LocaleType } from "@/types/LocaleType";
 
-import { portfolioData } from "../../../mockedData/portfolioData";
+import { portfolioData } from "../../../../mockedData/portfolioData";
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../../shared/SliderComponents/CarouselButtons";
-import { useDotButton } from "../../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
+} from "../../../shared/SliderComponents/CarouselButtons";
+import { useDotButton } from "../../../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../../../shared/SliderComponents/SliderDotsBox";
 import { PortfolioCard } from "./PortfolioCard";
 import { PortfolioCardSanity } from "./PortfolioCardSanity";
 

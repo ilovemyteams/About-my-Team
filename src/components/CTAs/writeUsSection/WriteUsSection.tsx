@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 
-import { SectionCTA } from "../shared/SectionCTA";
-import { TitleCTAWrapper } from "../shared/TitleCTAWrapper";
-import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { SectionCTA } from "../../shared/SectionCTA";
+import { TitleCTAWrapper } from "../../shared/TitleCTAWrapper";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
 
 export const WriteUsSection = ({
     data,

@@ -1,47 +1,43 @@
+import { useTranslations } from "next-intl";
 import { PortableText } from "next-sanity";
 
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
 import { PortableColorTitle } from "@/types/sanity.types";
 
-import { SmallPageTitle } from "../shared/SmallPageTitle";
-import { TitleWrapper } from "../shared/TitleWrapper";
+import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 
-export const MissionTitle = ({
+export const FeedbackTitle = ({
     subtitle,
     title,
 }: {
     subtitle: string | null;
     title: PortableColorTitle | null;
 }) => {
+    const getTranslation = useTranslations("Feedback");
+
     return (
-        <>
+        <div>
             <TitleWrapper className="flex flex-col tab:flex-row items-start">
-                <SmallPageTitle className="whitespace-nowrap ml-1 mr-3 tab:mt-2 pc:mt-4 flex items-center">
-                    {subtitle || "You forgot a subtitle"}
+                <SmallPageTitle className="ml-1 mr-3  tab:mt-2 tab:mr-[16px] pc:mt-[14px] flex items-center">
+                    {subtitle ? subtitle : getTranslation("pageTitle")}
                 </SmallPageTitle>
-                <div>
-                    {title && (
-                        <div>
-                            {title[0] && (
-                                <PortableText
-                                    value={title[0]}
-                                    components={myPortableTextComponents}
-                                />
-                            )}
-                        </div>
-                    )}
-                    {title && (
-                        <div>
+
+                {title && (
+                    <div className="tab:w-[70%]">
+                        {title[0] && (
+                            <PortableText
+                                value={title[0]}
+                                components={myPortableTextComponents}
+                            />
+                        )}
+                        <div className="tab:-ml-[77px]">
                             {title[1] && (
                                 <PortableText
                                     value={title[1]}
                                     components={myPortableTextComponents}
                                 />
                             )}
-                        </div>
-                    )}
-                    {title && (
-                        <div className="tab:-ml-[74px]">
                             {title[2] && (
                                 <PortableText
                                     value={title[2]}
@@ -49,9 +45,9 @@ export const MissionTitle = ({
                                 />
                             )}
                         </div>
-                    )}
-                </div>
+                    </div>
+                )}
             </TitleWrapper>
-        </>
+        </div>
     );
 };

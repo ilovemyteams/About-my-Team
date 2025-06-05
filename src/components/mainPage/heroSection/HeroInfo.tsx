@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { JoinUsButton } from "../shared/JoinUsButton";
-import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { JoinUsButton } from "../../shared/JoinUsButton";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
 
 export const HeroInfo = ({ title }: { title: string | null | undefined }) => {
     const getTranslation = useTranslations();

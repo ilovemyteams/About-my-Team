@@ -9,10 +9,10 @@ import {
     loadStages,
 } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
-import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
-import { HeroSection } from "@/src/components/heroSection/HeroSection";
 import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
 import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
+import { FeedbackSection } from "@/src/components/mainPage/feedbackSection/FeedbackSection";
+import { HeroSection } from "@/src/components/mainPage/heroSection/HeroSection";
 import { MissionSection } from "@/src/components/missionSection/MissionSection";
 import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
 import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSection";

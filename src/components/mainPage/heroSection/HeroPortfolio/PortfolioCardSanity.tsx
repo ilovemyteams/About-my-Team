@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { NoImageHeart } from "../../shared/NoImageHeart";
-import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { NoImageHeart } from "../../../shared/NoImageHeart";
+import { SmallPageTitle } from "../../../shared/SmallPageTitle";
 
 export const PortfolioCardSanity = ({
     sanityData,

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { addProtocol } from "@/src/utils/httpsProtocols";
 
-import { IconGoToSite } from "../shared/Icons/IconGoToSite";
+import { IconGoToSite } from "../../shared/Icons/IconGoToSite";
 
 export interface FeedbackCardItemProps {
     feedback: {

@@ -2,8 +2,8 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { HomeReviewsQueryResult } from "@/types/sanity.types";
 
-import { Section } from "../shared/Section";
-import { SharePopover } from "../shared/SharePopover";
+import { Section } from "../../shared/Section";
+import { SharePopover } from "../../shared/SharePopover";
 import { FeedbackSlider } from "./FeedbackSlider";
 import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
 import { FeedbackTitle } from "./FeedbackTitle";

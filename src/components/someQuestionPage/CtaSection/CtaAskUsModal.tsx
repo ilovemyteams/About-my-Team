@@ -1,7 +1,7 @@
 "use client";
 import { ModalsWithForm } from "@/src/components/shared/ModalsWithForm/ModalsWithForm";
 
-import { AskUsForm } from "../../faqPage/сtaSection/form/AskUsForm";
+import { AskUsForm } from "../../allQuestionsPage/сtaSection/form/AskUsForm";
 import { AskUsButton } from "./AskUsButton";
 
 export const CtaAskUsModal = () => {

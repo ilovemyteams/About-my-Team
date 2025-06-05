@@ -1,4 +1,4 @@
-import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
+import { BuyMeCoffeeLink } from "../../shared/BuyMeCoffeeLink";
 import { MainPageNavList } from "./MainPageNavList";
 
 export const HeroFooterLinks = () => {

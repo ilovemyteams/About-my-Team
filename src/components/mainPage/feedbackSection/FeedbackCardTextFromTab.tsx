@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { addProtocol, removeProtocol } from "@/src/utils/httpsProtocols";
 
-import { IconQuote } from "../shared/Icons/IconQuote";
+import { IconQuote } from "../../shared/Icons/IconQuote";
 import { FeedbackCardItemProps } from "./FeedbackCard";
 
 export const FeedbackCardTextFromTab = ({
