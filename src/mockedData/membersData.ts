@@ -409,7 +409,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com"],
-            pricePerHour: "7",
+            pricePerHour: "9",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/eugene-serdyuk/",
                 github: "https://github.com/Gituservn",
@@ -503,7 +503,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olena-posternak-frontend-developer",
-            projectId: ["ilovemyteam-online"],
+            projectId: [],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/OlenaPosternak_ywdiuy.jpg",
             position: "FrontEnd Developer",
@@ -553,7 +553,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olga-mykhailova-frontend-developer",
-            projectId: ["ilovemyteam-online"],
+            projectId: [],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/OlgaMykhailova_v9nbxu.jpg",
             position: "FrontEnd Developer",
@@ -565,7 +565,7 @@ export const membersData: MemberDataItemType[] = [
                 "kuharskyivulyk.com.ua",
             ],
 
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/olgamykhailova/",
                 github: "https://github.com/OlgaMykhailova",
@@ -731,7 +731,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["batatfarm.com", "zolochivska.com.ua"],
-            pricePerHour: "7",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/denis-slivinskyi/",
                 github: "https://github.com/Denis-isnotavailable",
@@ -834,7 +834,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/olenachornobryvets",
                 github: "https://github.com/alen8d",
@@ -880,7 +880,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
-            pricePerHour: "5",
+            pricePerHour: "",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/hanna-horbenko-80a589279/",
@@ -933,7 +933,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com", "baza-trainee.tech"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/anna-klyba/",
                 github: "https://github.com/AnnaKlyba",
@@ -979,13 +979,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oksana-luchko-qa-engineer",
-            projectId: ["ilovemyteam-online"],
+            projectId: [],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560788/oksana-luchko_qotwzx.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "irynaprudko.com.ua"],
-            pricePerHour: "5",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/oksana-luchko-3a5b2b289",
                 github: "",
@@ -1027,13 +1027,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "nadia-hubchuk-qa-engineer",
-            projectId: ["ilovemyteam-online", "alex-chudov"],
+            projectId: ["alex-chudov"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/nadia-hubchuk_c4pyg4.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online", "choodov.com"],
-            pricePerHour: "5",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/nadia-hubchuk",
                 github: "",
@@ -1272,7 +1272,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
-            pricePerHour: "7",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/marta-morincewa",
                 telegram: "",
@@ -1318,13 +1318,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-shevchenko-business-analyst",
-            projectId: ["batatfarm-com", "ilovemyteam-online"],
+            projectId: ["batatfarm-com"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
             categoryName: "business-analytic",
             projectsExperience: ["batatfarm.com", "ilovemyteam.online"],
-            pricePerHour: "7",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/irishashevchenko",
                 telegram: "https://t.me/Bickac",
@@ -1802,7 +1802,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Fullstack Developer",
             categoryName: "developer",
             projectsExperience: ["theatermag.com.ua", "batatfarm.com"],
-            pricePerHour: "9",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/alexandr-mescherskiy/",
                 telegram: "https://t.me/AlexandrMescherskiy",
@@ -1948,7 +1948,7 @@ export const membersData: MemberDataItemType[] = [
             categoryName: "designer",
             projectsExperience: ["batatfarm.com", "theatermag.com.ua"],
 
-            pricePerHour: "9",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/olena-halushka",
                 behance: "https://www.behance.net/olenahalushka",
@@ -1999,7 +1999,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "mariia-cherevko-ui-ux-designer",
-            projectId: ["ilovemyteam-online"],
+            projectId: [],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Mariia_Cherevko_ieqg8o.png",
@@ -2007,7 +2007,7 @@ export const membersData: MemberDataItemType[] = [
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
 
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/maria-cherevko",
                 telegram: "https://t.me/masha_ichr",
@@ -2110,7 +2110,7 @@ export const membersData: MemberDataItemType[] = [
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
 
-            pricePerHour: "5",
+            pricePerHour: "7",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/oleksandr-petrychuk/",
                 github: "https://github.com/petalser",
@@ -2158,7 +2158,7 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["batatfarm.com"],
-            pricePerHour: "7",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "http://www.linkedin.com/in/eugene-sedinin/",
                 telegram: "https://t.me/Siedinin",
@@ -2253,13 +2253,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "solomiia-lutska-project-project-manager-scrum-master",
-            projectId: ["ilovemyteam-online", "alex-chudov"],
+            projectId: ["alex-chudov"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online", "choodov.com"],
-            pricePerHour: "10",
+            pricePerHour: "",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/solomiia-lutska",
             },
@@ -2652,7 +2652,7 @@ export const membersData: MemberDataItemType[] = [
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "20$",
+            pricePerHour: "10$",
             socialLinks: {
                 linkedin:
                     "http://www.linkedin.com/in/natalia-kalabanova-625638153",
