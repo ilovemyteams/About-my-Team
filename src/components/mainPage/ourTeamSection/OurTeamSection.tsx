@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-import { membersData } from "../../mockedData/membersData";
-import { portfolioData } from "../../mockedData/portfolioData";
-import { Section } from "../shared/Section";
-import { SharePopover } from "../shared/SharePopover";
+import { membersData } from "@/src/mockedData/membersData";
+import { portfolioData } from "@/src/mockedData/portfolioData";
+
+import { Section } from "../../shared/Section";
+import { SharePopover } from "../../shared/SharePopover";
 import { MemberCardsList } from "./MemberCardsList";
 import { MemberCardsListBigScreens } from "./MemberCardsListBigScreens";
 import { MenuTeamSection } from "./MenuTeamSection";

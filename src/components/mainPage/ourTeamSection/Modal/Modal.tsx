@@ -3,13 +3,12 @@ import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import React, { useEffect, useState } from "react";
 
+import { IconCloseX } from "@/src/components/shared/Icons/IconCloseX";
+import { BgImagesDesktop } from "@/src/components/shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesDesktop";
+import { BgImagesMobile } from "@/src/components/shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesMobile";
+import { BgImagesTablet } from "@/src/components/shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesTablet";
 import { localeInURL } from "@/src/utils/localeInURL";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
-
-import { IconCloseX } from "../../shared/Icons/IconCloseX";
-import { BgImagesDesktop } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesDesktop";
-import { BgImagesMobile } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesMobile";
-import { BgImagesTablet } from "../../shared/ModalsWithForm/modalBgImages/formModalBgImages/BgImagesTablet";
 
 export const Modal = ({ children }: { children: React.ReactNode }) => {
     const router = useRouter();

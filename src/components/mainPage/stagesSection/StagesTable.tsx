@@ -1,5 +1,5 @@
-import { Table } from "../shared/Table/Table";
-import { TableItemsList } from "../shared/Table/TableItemsList";
+import { Table } from "../../shared/Table/Table";
+import { TableItemsList } from "../../shared/Table/TableItemsList";
 
 export const StagesTable = ({
     stagesListTitle,

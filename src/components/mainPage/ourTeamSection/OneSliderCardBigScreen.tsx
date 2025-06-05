@@ -7,8 +7,8 @@ import {
 } from "@/src/constants/cardsPerPage";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { MemberDataItemType } from "@/src/mockedData/membersData";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { JoinUsCard } from "./JoinUsCard";
 import { MemberCard } from "./MemberCard";
 import { Skeleton } from "./Skeleton";

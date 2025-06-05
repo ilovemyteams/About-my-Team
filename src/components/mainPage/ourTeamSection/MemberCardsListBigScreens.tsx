@@ -3,9 +3,9 @@ import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import React, { useCallback, useEffect, useRef } from "react";
 
+import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
 import { OneSliderCardBigScreen } from "./OneSliderCardBigScreen";
 import { SliderButtons } from "./SliderButtons";
 

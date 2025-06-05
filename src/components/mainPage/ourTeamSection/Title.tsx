@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
-import { SmallPageTitle } from "../shared/SmallPageTitle";
-import { TitleWrapper } from "../shared/TitleWrapper";
+import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 
 export const Title = () => {
     const getTranslation = useTranslations("OurTeam");

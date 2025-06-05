@@ -1,13 +1,14 @@
 import { EmblaCarouselType } from "embla-carousel";
 
-import { MemberDataItemType } from "../../mockedData/membersData";
+import { MemberDataItemType } from "@/src/mockedData/membersData";
+
 import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../shared/SliderComponents/CarouselButtons";
-import { useDotButton } from "../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+} from "../../shared/SliderComponents/CarouselButtons";
+import { useDotButton } from "../../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
 
 interface SliderButtonsProps {
     membersData: MemberDataItemType[];

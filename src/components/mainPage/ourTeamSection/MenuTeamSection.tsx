@@ -4,13 +4,15 @@ import { useLocale, useTranslations } from "next-intl";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import { DEFAULT_SLIDE_ID } from "@/src/constants/defaultSlideId";
+import {
+    categoryNames,
+    СategoryNamesProp,
+} from "@/src/mockedData/categoryNames";
+import { portfolioData } from "@/src/mockedData/portfolioData";
 import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { LocaleType } from "@/types/LocaleType";
 
-import { categoryNames } from "../../mockedData/categoryNames";
-import { СategoryNamesProp } from "../../mockedData/categoryNames";
-import { portfolioData } from "../../mockedData/portfolioData";
-import { IconUp } from "../shared/Icons/IconUp";
+import { IconUp } from "../../shared/Icons/IconUp";
 
 interface MenuProps {
     selectedOption: {

@@ -3,8 +3,8 @@ import { PortableText } from "next-sanity";
 import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
 import { PortableColorTitle } from "@/types/sanity.types";
 
-import { SmallPageTitle } from "../shared/SmallPageTitle";
-import { TitleWrapper } from "../shared/TitleWrapper";
+import { SmallPageTitle } from "../../shared/SmallPageTitle";
+import { TitleWrapper } from "../../shared/TitleWrapper";
 
 export const Title = ({
     title,

@@ -3,8 +3,8 @@ import Image from "next/image";
 import { removeProtocol } from "@/src/utils/httpsProtocols";
 import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
 
-import { GoToSiteLink } from "../shared/GoToSiteLink";
-import { NoImageHeart } from "../shared/NoImageHeart";
+import { GoToSiteLink } from "../../shared/GoToSiteLink";
+import { NoImageHeart } from "../../shared/NoImageHeart";
 
 export interface PortfolioCardItemProps {
     data: PortfolioSliderProps;

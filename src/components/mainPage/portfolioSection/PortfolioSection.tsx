@@ -2,8 +2,8 @@ import { EmblaOptionsType } from "embla-carousel";
 
 import { HomePortfolioQueryResult } from "@/types/sanity.types";
 
-import { Section } from "../shared/Section";
-import { SharePopover } from "../shared/SharePopover";
+import { Section } from "../../shared/Section";
+import { SharePopover } from "../../shared/SharePopover";
 import { PortfolioCarousel } from "./PortfolioCarousel";
 import { PortfolioTitle } from "./PortfolioTitle";
 

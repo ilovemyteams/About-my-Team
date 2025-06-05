@@ -6,9 +6,9 @@ import { useInView } from "react-intersection-observer";
 
 import { HomeFAQQueryResult } from "@/types/sanity.types";
 
-import { Button } from "../shared/Button";
-import { Section } from "../shared/Section";
-import { SharePopover } from "../shared/SharePopover";
+import { Button } from "../../shared/Button";
+import { Section } from "../../shared/Section";
+import { SharePopover } from "../../shared/SharePopover";
 import { QuestionsList } from "./QuestionsList";
 import { TitleQA } from "./TitleQA";
 

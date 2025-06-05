@@ -9,9 +9,9 @@ import {
     NextButton,
     PrevButton,
     usePrevNextButtons,
-} from "../shared/SliderComponents/CarouselButtons";
-import { useDotButton } from "../shared/SliderComponents/SliderDots";
-import { SliderDotsBox } from "../shared/SliderComponents/SliderDotsBox";
+} from "../../shared/SliderComponents/CarouselButtons";
+import { useDotButton } from "../../shared/SliderComponents/SliderDots";
+import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
 import { PortfolioCard } from "./PortfolioCard";
 
 type PortfolioCarouselProps = {

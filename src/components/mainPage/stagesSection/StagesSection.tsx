@@ -1,6 +1,6 @@
 import { HomeStagesQueryResult } from "@/types/sanity.types";
 
-import { Section } from "../shared/Section";
+import { Section } from "../../shared/Section";
 import { StagesTable } from "./StagesTable";
 import { StagesTitle } from "./StagesTitle";
 

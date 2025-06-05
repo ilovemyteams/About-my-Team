@@ -1,11 +1,10 @@
+import { IconBehance } from "@/src/components/shared/Icons/IconBehance";
+import { IconGithub } from "@/src/components/shared/Icons/IconGithub";
+import { IconGoogleDrive } from "@/src/components/shared/Icons/IconGoogleDrive";
+import { IconLinkedin } from "@/src/components/shared/Icons/IconLinkedin";
+import { IconTelegram } from "@/src/components/shared/Icons/IconTelegram";
+import { SocialLink } from "@/src/components/shared/SocialLink";
 import { SocialLinks } from "@/src/mockedData/membersData";
-
-import { IconBehance } from "../../shared/Icons/IconBehance";
-import { IconGithub } from "../../shared/Icons/IconGithub";
-import { IconGoogleDrive } from "../../shared/Icons/IconGoogleDrive";
-import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
-import { IconTelegram } from "../../shared/Icons/IconTelegram";
-import { SocialLink } from "../../shared/SocialLink";
 
 export const MemberSocialLinks = ({
     socialLinks,

@@ -1,6 +1,6 @@
-import { Table } from "../shared/Table/Table";
-import { TableItemsList } from "../shared/Table/TableItemsList";
-import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { Table } from "../../shared/Table/Table";
+import { TableItemsList } from "../../shared/Table/TableItemsList";
+import { WriteUs } from "../../shared/WriteUs/WriteUs";
 
 export const ServicesTable = ({
     description,

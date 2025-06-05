@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { NoImageHeart } from "../shared/NoImageHeart";
+import { NoImageHeart } from "../../shared/NoImageHeart";
 
 interface BorderProp {
     pcBorderJoinUs?: number;

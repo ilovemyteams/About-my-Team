@@ -1,6 +1,6 @@
 import { HomeServicesQueryResult } from "@/types/sanity.types";
 
-import { Section } from "../shared/Section";
+import { Section } from "../../shared/Section";
 import { ServicesTable } from "./ServicesTable";
 import { Title } from "./Title";
 
