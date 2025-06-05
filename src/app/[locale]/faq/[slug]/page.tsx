@@ -2,7 +2,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
 import React from "react";
 
-import { Question } from "@/src/components/questionPage/QuestionPage";
+import { Question } from "@/src/components/someQuestionPage/QuestionPage";
 import { QAItemType, questionsData } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
 
