@@ -1,18 +1,25 @@
+import { useLocale } from "next-intl";
+
+import { questionsData } from "@/src/mockedData/questionsData";
+import { LocaleType } from "@/types/LocaleType";
+
 import { Accordion } from "./Accordion";
 
-type FaqList = Array<{
-    question: string | null;
-    shortAnswer: string | null;
-}> | null;
+export const QuestionsList = () => {
+    const locale = useLocale();
+    const questionsList = questionsData.slice(0, 5);
 
-export const QuestionsList = ({ faqList }: { faqList: FaqList }) => {
     return (
         <div className="mb-[40px] pc:ml-[270px] tab:mb-[48px]">
             <ul>
-                {faqList &&
-                    faqList.map((item, idx) => {
-                        return <Accordion key={idx} item={item} />;
-                    })}
+                {questionsList.map((item, idx) => {
+                    return (
+                        <Accordion
+                            key={idx}
+                            item={item[locale as LocaleType]}
+                        />
+                    );
+                })}
             </ul>
         </div>
     );
