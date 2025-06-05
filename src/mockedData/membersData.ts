@@ -1318,7 +1318,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-shevchenko-business-analyst",
-            projectId: ["batatfarm-com", "ilovemyteam-online"],
+            projectId: ["batatfarm-com"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
