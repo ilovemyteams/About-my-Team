@@ -1,6 +1,6 @@
-import { HeaderFAQ } from "@/src/components/faqPage/HeaderFAQ";
-import { QaCardList } from "@/src/components/faqPage/qaSection/QaCardList";
-import { FaqSectionCta } from "@/src/components/faqPage/сtaSection/FaqSectionCta";
+import { HeaderFAQ } from "@/src/components/allQuestionsPage/HeaderFAQ";
+import { QaCardList } from "@/src/components/allQuestionsPage/qaSection/QaCardList";
+import { FaqSectionCta } from "@/src/components/allQuestionsPage/сtaSection/FaqSectionCta";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
 export async function generateMetadata({

@@ -1,32 +1,27 @@
 import {
     loadCTA,
-    loadHomeAboutUs,
     loadHomeFaq,
-    loadHomeHero,
     loadHomeProjects,
     loadHomeReviews,
     loadServices,
     loadStages,
 } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
-import { FeedbackSection } from "@/src/components/feedbackSection/FeedbackSection";
-import { HeroSection } from "@/src/components/heroSection/HeroSection";
-import { HireUsSection } from "@/src/components/hireUsSection/HireUsSection";
-import { JoinTheTeamSection } from "@/src/components/joinTheTeamSection/JoinTheTeamSection";
-import { MissionSection } from "@/src/components/missionSection/MissionSection";
-import { OurTeamSection } from "@/src/components/ourTeamSection/OurTeamSection";
-import { PortfolioSection } from "@/src/components/portfolioSection/PortfolioSection";
-import { QaSection } from "@/src/components/qAsection/QaSection";
-import { ServicesSection } from "@/src/components/servicesSection/ServicesSection";
-import { StagesSection } from "@/src/components/stagesSection/StagesSection";
-import { WriteUsSection } from "@/src/components/writeUsSection/WriteUsSection";
+import { HireUsSection } from "@/src/components/CTAs/hireUsSection/HireUsSection";
+import { JoinTheTeamSection } from "@/src/components/CTAs/joinTheTeamSection/JoinTheTeamSection";
+import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
+import { FeedbackSection } from "@/src/components/mainPage/feedbackSection/FeedbackSection";
+import { HeroSection } from "@/src/components/mainPage/heroSection/HeroSection";
+import { OurTeamSection } from "@/src/components/mainPage/ourTeamSection/OurTeamSection";
+import { PortfolioSection } from "@/src/components/mainPage/portfolioSection/PortfolioSection";
+import { QaSection } from "@/src/components/mainPage/qAsection/QaSection";
+import { ServicesSection } from "@/src/components/mainPage/servicesSection/ServicesSection";
+import { StagesSection } from "@/src/components/mainPage/stagesSection/StagesSection";
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [hero, about, cta, portfolioSection, services, stages, faq, reviews] =
+    const [cta, portfolioSection, services, stages, faq, reviews] =
         await Promise.all([
-            await loadHomeHero(props.params.locale),
-            await loadHomeAboutUs(props.params.locale),
             await loadCTA(props.params.locale),
             await loadHomeProjects(props.params.locale),
             await loadServices(props.params.locale),
@@ -38,8 +33,7 @@ export default async function HomePage(props: PageParamsProps) {
     return (
         <>
             <BackgroundFiguresMain />
-            <HeroSection data={hero} />
-            <MissionSection data={about} />
+            <HeroSection />
             <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
             <PortfolioSection data={portfolioSection} />
             <FeedbackSection data={reviews} />

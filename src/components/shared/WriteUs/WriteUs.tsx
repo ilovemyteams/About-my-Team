@@ -1,17 +1,35 @@
-import { ModalsWithForm } from "../ModalsWithForm/ModalsWithForm";
-import { CustomerForm } from "./CustomerForm";
-import { WriteUsBtn } from "./WriteUsBtn";
+"use client";
+
+import { sendGTMEvent } from "@next/third-parties/google";
+import { useTranslations } from "next-intl";
+import React from "react";
+
+import { Button } from "@/src/components/shared/Button";
+import { usePathname, useRouter } from "@/src/i18n/routing";
 
 interface WriteUsProps {
     className?: string;
+    eventGTM?: string;
+    buttonName?: string;
 }
 
-export const WriteUs = ({ className }: WriteUsProps) => {
+export const WriteUs = ({ className, eventGTM, buttonName }: WriteUsProps) => {
+    const getTranslation = useTranslations("Buttons");
+    const router = useRouter();
+
+    const path = usePathname();
+
+    const onClickButton = () => {
+        router.push(`/order?source=${path}`);
+        sendGTMEvent({
+            event: eventGTM || "order_form_start",
+            page_location: path,
+        });
+    };
+
     return (
-        <ModalsWithForm
-            formComponent={CustomerForm}
-            triggerComponent={WriteUsBtn}
-            className={className}
-        />
+        <Button onClick={onClickButton} className={className}>
+            {buttonName ? buttonName : getTranslation("order")}
+        </Button>
     );
 };

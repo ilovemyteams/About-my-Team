@@ -1,37 +1,35 @@
 {
     "Home": {
-        "titleSEO": "Zespół, który dba o Twoje potrzeby",
-        "descriptionSEO": "Rozwiązujemy problemy biznesowe i złożone za pomocą narzędzi cyfrowych i kreatywnego podejścia do osiągania celów biznesowych"
+        "titleSEO": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. Twój pomysł —  naszą realizacją.",
+        "descriptionSEO": "Pomagamy rozwijać Twój biznes: tworzymy strony internetowe i produkty cyfrowe, które spełniają Twoje potrzeby i przekraczają oczekiwania."
     },
 
     "Hero": {
-        "heroInfoText": "Zespół, który dba o Twoje potrzeby",
-        "portfolioLink": "Realizacje"
+        "heroInfoText": "Zespół, który tworzy strony internetowe i rozwiązania cyfrowe dla Twojego biznesu. <br></br> Twój pomysł —  naszą realizacją.",
+        "portfolioLink": "Realizacje",
+        "project": "Projekt",
+        "titleList": "Nasi klienci:",
+        "item1": "małe i średnie przedsiębiorstwa",
+        "item2": "eksperci branżowi",
+        "item3": "startupy",
+        "item4": "e-commerce",
+        "btn": "omówienie projektu"
     },
-
+    "Release": {
+        "title": "Prezentacje <purple>demonstracyjne od</purple> naszego <purple>zespołu</purple>"
+    },
     "Portfolio": {
         "pageTitle": "Wdrożone ",
-        "titlePartForMob": "naszych dotychczasowych ",
-        "titleFirstWord": "Wdrożone ",
-        "titleSecondWord": "projekty",
-        "titleThirdWord": " które ",
-        "titleFourthWord": "pomogły rozwinąć działalność ",
-        "titleFifthWord": "",
-        "titleFifthWordDesk": "",
-        "titleSixthWord": "naszych dotychczasowych ",
-        "titleSixthWordDesk": "naszych dotychczasowych",
-        "titleSeventhWord": " klientów"
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących ",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple> ",
+        "titleThirdLine": "z doskonałym zespołem"
     },
 
     "Mission": {
         "pageTitle": "O nas",
-        "titleZeroWord": "Tworzenie ",
-        "titleFirstWord": "imponujących ",
-        "titleSecondWord": "",
-        "titleThirdWord": " ",
-        "titleFourthWord": "cyfrowych produktów ",
-        "titleFifthWord": " ",
-        "titleOtherWords": "z doskonałym zespołem",
+        "titleFirstLine": "<purple>Tworzenie</purple> imponujących ",
+        "titleSecondLine": "<purple>cyfrowych produktów</purple> ",
+        "titleThirdLine": "z doskonałym zespołem",
         "firstBenefit": "Dizajn, programowanie i testowanie to tylko część naszej pracy. Nasze zespoły są w stanie osiągnąć znacznie więcej, gdy pracują razem",
         "secondBenefit": "Oferujemy kompleksowe rozwiązania dla biznesu",
         "thirdBenefit": "Zaoszczędzisz czas i pieniądze - od początku jesteśmy bardzo wydajnym zespołem",
@@ -43,38 +41,33 @@
     },
     "Feedback": {
         "pageTitle": "Recenzje",
-        "titleFirstWord": "Co mówią ",
-        "titleSecondWord": "o nas ",
-        "titleThirdWord": "nasi ",
-        "titleFourthWord": "klienci",
+        "titleFirstLine": "Co mówią <purple>o nas</purple> ",
+        "titleSecondLine": "nasi  <purple>klienci</purple>",
+
         "feedbackLink": "Cała recenzja"
     },
     "JoinTheTeam": {
         "title": "Opowiedz nam o swoich wyjątkowych umiejętnościach i dołącz do naszego zespołu"
     },
     "WriteUs": {
-        "title": "Chcę zostać zadowolonym klientem"
+        "titleIWant": "Zarezerwuj konsultację już dziś i otrzymaj ją za darmo!",
+        "titleAreYouReady": "Gotowy do zlecenia projektu?"
     },
     "Services": {
         "pageTitle": "Usługi",
-        "titleFirstRow1": "Tworzymy",
-        "titleFirstRow2": " produkty cyfrowe",
-        "titleSecondRow": "dla Twojego biznesu",
-        "BATitle": "Analiza biznesowa",
-        "BAText": "Analityka pomaga firmom budować i rozwijać się w oparciu na faktach, a nie na domysłach lub intuicji",
+        "titleFirstLine": "Otrzymasz gotową, działającą <purple>stronę internetową,</purple> ",
+        "titleSecondLine": "<purple>która wyróżni</purple> Cię <purple>na tle konkurencji</purple>",
+        "subtitleText": "nasze usługi \nobejmują:",
+        "BATitle": "Analiza działalności i konkurencji",
+        "BAText": "Podejmuj decyzje w oparciu o fakty, a nie intuicję. Pomagamy dostrzec, gdzie kryją się szanse na rozwój, a gdzie — ryzyka. Wspieramy Cię w byciu o krok przed konkurencją, uwzględniając specyfikę Twojego biznesu.",
         "designTitle": "Projekt",
-        "designText": "Projektant rysuje prototyp każdej strony, który schematycznie przedstawia rozmieszczenie bloków, ilustracji i tekstu. Dopiero po zatwierdzeniu prototypu przez klienta rozpoczynamy tworzenie projektu strony internetowej",
+        "designText": "Wierzymy, że design to miłość od pierwszej sekundy. To on buduje pierwsze wrażenie, które decyduje o wszystkim. Dbamy o każdy element, aby było pięknie, wygodnie i intuicyjnie — bo właśnie wtedy rośnie zaufanie, a razem z nim sprzedaż.",
         "devTitle": "Rozwój",
-        "devText": "Na etapie rozwoju prototyp strony internetowej ożywa i zyskuje niezbędną funkcjonalność, bazy danych są połączone, a opcje płatności i wypełniania treścią są wdrażane",
+        "devText": "Tworzymy produkty cyfrowe, które otwierają się błyskawicznie, łatwo się skalują i nadążają za tempem Twojego biznesu. Przemyślany kod, zoptymalizowana logika i elastyczność w szczegółach — wszystko po to, by działało na efekt.",
         "QATitle": "Testowanie",
-        "QAText": "Na etapie testowania sprawdzana jest wydajność strony internetowej i jej zgodność z wymaganiami. Oceniana jest funkcjonalność, użyteczność, optymalizację pod kątem różnych przeglądarek, rozmiarów ekranu i szybkości działania strony",
-        "supportTitle": "Wsparcie",
-        "supportText": "Przedstawiciel zespołu szkoli pracowników klienta w zakresie pracy ze stroną internetową, tak aby klient mógł samodzielnie aktualizować treści na swojej stronie internetowej",
-        "allServicesTitle": "Pełny zakres usług",
-        "allServicesText": "Kompleksowe i systematyczne podejście z ujednoliconym procesem zarządzania projektami (klient nie musi szukać wykonawców do poszczególnych zadań - wszystko wykonuje jeden wykonawca, łącznie z wyszukiwaniem lub polecaniem podwykonawców)",
-        "contactUs": "Uzyskaj konsultację z naszym menedżerem, jeśli masz jakiekolwiek pytania lub wątpliwości",
-        "showMore": "Pokazać więcej",
-        "showLess": "Pokazać mniej"
+        "QAText": "Chodzi o stabilność, bezpieczeństwo i zaufanie. Użytkownicy nie dają drugiej szansy - jeśli coś nie działa, odchodzą. Testujemy Twoją stronę, aplikację lub usługę, aby upewnić się, że działa płynnie, generuje przychody i nie traci klientów.",
+
+        "allServices": "Wszystkie usługi"
     },
     "Stages": {
         "pageTitle": "Proces",
@@ -92,7 +85,9 @@
         "sixthStepTitle": "Przeniesienie funkcjonalności strony",
         "sixthStepText": "Po przeprowadzeniu testów i integracji wszystkich usług, zasób wraz ze wszystkimi prawami do niego zostaje przekazany do dyspozycji klienta",
         "seventhStepTitle": "Wsparcie",
-        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia"
+        "seventhStepText": "Po uruchomieniu strony internetowej mogą pojawić się problemy z wyświetlaniem stron lub inne kwestie techniczne. W takich przypadkach klient ma możliwość skontaktowania się z deweloperem w celu ich naprawienia",
+        "allStages": "Wszystkie etapy",
+        "coverStages": "Zwiń etapy"
     },
     "HireUs": {
         "pageTitle": "połączenie",
@@ -101,7 +96,7 @@
     },
     "OurTeam": {
         "pageTitle": "Zespół",
-        "pageBigTitle": "Wybierz swój idealny zespół",
+        "pageBigTitle": "<purple>Zespół kreatorów:</purple> specjaliści, którzy pomogą przenieść Twój biznes do świata online",
         "menuTopTitle": "Wybierz",
         "listTitle": "specjaliści",
         "teamsList": "Zespoły",
@@ -113,16 +108,21 @@
         "mobileBigTitlePart2": "często zadawane pytania",
         "pageBigTitle": "Odpowiedzi na często zadawane pytania",
         "questionQuantity": "Liczba odpowiedzi: ",
+        "foundAnswerQuantity": "Znaleziono odpowiedzi: ",
         "question1": "Potrzebuję strony internetowej. Od czego zacząć?",
         "answer1": "Zacznij od szczerej odpowiedzi na następujące pytania: Dlaczego potrzebuję strony internetowej? Czego oczekuję od strony internetowej? Co ja chcę na niej demonstrować? Komu chcę to demonstrować? I co powinni zrobić Ci, którzy odwiedzą moją stronę? Odpowiedzi na te pytania pomogą Ci zrozumieć, czy w ogóle potrzebujesz strony internetowej i jak powinna ona wyglądać. Następnie wypełnij formularz — Zamówić i prześlij nam swoje szczere odpowiedzi, a my zrobimy wszystko z troską o Twoje cele i potrzeby biznesowe.",
         "question2": "Co wybrać - landing page czy stronę internetową?",
         "answer2": "To zależy od tego, jakie zadanie próbujesz rozwiązać. W przypadku, gdy potrzebujesz zaprezentować jakąś jedną usługę lub towar, gdy potrzebujesz szybkiego rezultatu, a budżet na rozwój jest niewielki, to lepiej wybrać landing. W przypadku, gdy masz szeroki asortyment towarów lub usług, lub pragniesz zaprezentować swoją firmę i nadać dużo informacji potencjalnym klientom, lepiej wybrać pełnoprawną stronę internetową.",
         "question3": "Ile trwa stworzenie strony internetowej?",
-        "answer3": "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 10-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
+        "answer3": "Zależy to od złożoności i składu zespołu. Opracowanie strony landing page ze standardową funkcjonalnością i prostym projektem może zająć od 2 do 6 tygodni. Opracowanie 5-stronicowej strony internetowej z formularzami rejestracji, autoryzacji, zamówień i płatności może zająć od 4 do 8 miesięcy, w zależności od projektu i zawartości.",
         "question4": "Ile kosztuje stworzenie strony internetowej lub sklepu internetowego?",
-        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 500$. Koszt strony internetowej do 10 stron wynosi około 800 USD. Koszt stworzenia sklepu internetowego na 20-30 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z Product Managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
+        "answer4": "W zależności od wielkości i złożoności produktu, przybliżony budżet na landing page wynosi od 800$. Koszt strony internetowej do 5 stron wynosi około 1100 USD. Koszt stworzenia sklepu internetowego na 10-15 produktów z płatnościami online wynosi od 1600 USD. Jeśli chcesz uzyskać wycenę kosztów stworzenia strony internetowej, zalecamy skontaktowanie się z product managerem i omówienia z nim wszystkich szczegółów. Następnie będziemy mogli przygotować dla Ciebie ofertę handlową, która wskaże przybliżony koszt stworzenia Twojej strony internetowej i terminy realizacji.",
         "question5": "Czy mogę wybrać zespół, który będzie pracował nad moją stroną internetową?",
         "answer5": "Tak, możesz wybrać poszczególnych specjalistów i samodzielnie stworzyć zespół. W takim przypadku zdecydowanie zalecamy skontaktowanie się najpierw z menedżerem w celu uzyskania porady. Jeśli potrzebujesz oddzielnego specjalisty do pracy z istniejącym produktem na godziny, skontaktuj się z nim za pośrednictwem jego telegramu lub LinkedIn."
+    },
+    "Search": {
+        "noAnswerFound": "Niestety dla „{searchTerm}” nic nie znaleziono",
+        "searchInputPlaceholder": "Wprowadź tekst zapytania"
     },
     "Buttons": {
         "order": "Zamów",
@@ -136,21 +136,19 @@
         "writeUs": "napisz do nas",
         "readMore": "Czytaj więcej",
         "return": "powrót",
-        "search": "Szukaj"
+        "search": "Szukaj",
+        "AllProjects": "Wszystkie projekty",
+        "landings": "Landing page",
+        "onlinestores": "Sklep internetowy",
+        "websites": "Strona internetowa"
     },
     "Badges": {
-        "readTimeSingular": " min czytania",
-        "readTimePlural": " min czytania"
+        "readTime": "{readTime} min czytania"
     },
 
     "Footer": {
-        "titleFirstWord": "Zacznij ",
-        "titleSecondWord": "wdrażać ",
-        "titleThirdWord": "swoje ",
-        "titleFourthWord": " ",
-        "titleFifthWord": "pomysły ",
-        "titleSixthWord": "biznesowe ",
-        "titleSeventhWord": "razem z nami",
+        "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje ",
+        "titleSecondLine": "<purple>pomysły biznesowe</purple> razem <purple>z nami</purple>",
         "privacyPolicy": "polityka prywatności",
         "copyright": "2024, i love my team"
     },
@@ -168,13 +166,16 @@
         "nameLabel": "Twoje imię*",
         "emailLabel": "E-mail*",
         "telegramLabel": "Telegram/pseudonim",
-        "linkedinLabel": "Linkedin",
+        "linkedinLabel": "LinkedIn",
         "instagramLabel": "Instagram",
         "facebookLabel": "Facebook",
         "messageLabel": "Twoja wiadomość*",
+        "mediaTypeLabel": "Wybierz sieć społecznościową*",
+        "mediaLinkLabel": "Link do konta*",
+        "messageNotReqLabel": "Twoja wiadomość",
         "namePlaceholder": "Susanna",
         "emailPlaceholder": "example@gmail.com",
-        "telegramPlaceholder": "t.me/Susanna_Salata або @Susanna_Salata",
+        "telegramPlaceholder": "@Susanna_Salata",
         "linkedinPlaceholder": "linkedin.com/in/susanna-salata/",
         "instagramPlaceholder": "instagram.com/susanna-salata",
         "facebookPlaceholder": "facebook.com/susanna-salata",
@@ -186,7 +187,8 @@
         "questionLabel": "Twoje pytanie*",
         "questionPlaceholder": "Twoje pytanie*",
         "askFormTitle": "Masz pytania?",
-        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!"
+        "askFormText": "Napisz do nas, a pomożemy Ci znaleźć na nie odpowiedź!",
+        "customerFormTitle": "Wypełnij formularz"
     },
     "Errors": {
         "required": "To pole jest obowiązkowe",
@@ -195,6 +197,8 @@
         "wrongEmail": "Nieprawidłowy format wiadomości E-mail",
         "russianEmails": "Nie współpracujemy z Moskalami",
         "messageMinMaxSymbols": "Pole musi zawierać od 10 do 300 znaków",
+        "messageMinMax100Symbols": "Pole musi zawierać od 5 do 100 znaków",
+        "messageMax100Symbols": "Pole może zawierać do 100 znaków",
         "wrongLinkedin": "Nieprawidłowy adres linkedin",
         "wrongInstagram": "Nieprawidłowy adres instagram",
         "wrongFacebook": "Nieprawidłowy adres facebook",
@@ -268,7 +272,10 @@
     "Breadcrumbs": {
         "breadcrumbItemHome": "Główna",
         "breadcrumbItemAbout": "O nas",
-        "breadcrumbItemFaq": "FAQ"
+        "breadcrumbItemFaq": "FAQ",
+        "breadcrumbItemServices": "Usługi",
+        "breadcrumbItemIvents": "Wydarzenia",
+        "breadcrumbItemPortfolio": "Wdrożone"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -280,10 +287,81 @@
         "text": "Śledź nas i dowiaduj się jako pierwszy o aktualizacjach."
     },
     "SomeFaqPage": {
-        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna?</purple><br></br> <purple>Podziel się</purple> nią z kolegami! Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści.</purple>",
+        "HelpfullAnswerSection": "Czy ta <purple>odpowiedź</purple> była <purple>pomocna?</purple><br></br> Umieść serduszko i <purple>podziel się</purple> nią <purple>z kolegami!</purple> Twój wkład pomoże nam się rozwijać i tworzyć dalej <purple>interesujące treści.</purple>",
         "allQuestionBack": "wszystkie pytania",
         "orderCardText": "Jesteśmy gotowi podjąć się wszystkich trudności związanych z rozwojem i pomóc Ci stworzyć idealną stronę internetową dla Twojej firmy, czerpiąc przyjemność ze współpracy podczas jej tworzenia i uruchamiania.",
         "orderCardImgAlt": "Zamówić usługi",
         "orderCardButton": "zamówić"
+    },
+    "ServicesPage": {
+        "title": "Tworzymy <purple>produkty \ncyfrowe</purple> dla Twojej firmy",
+        "titleSEO": "Usługi tworzenia stron internetowych dla biznesu - nowoczesne projektowanie i tworzenie stron internetowych",
+        "descriptionSEO": "Tworzenie stron internetowych pod klucz: przyjazna dla użytkownika struktura, nowoczesny design i integracja funkcji. Pracujemy z indywidualnymi wymaganiami każdego klienta.",
+        "ctaText": "Masz pytania lub wątpliwości? Zamów konsultację, a nasz menedżer udzieli Ci profesjonalnej pomocy!",
+        "details": "Więcej",
+        "allService": "Wszystkie usługi"
+    },
+    "EventsPage": {
+        "days": "{days, plural, =1 {dzień} other {dni}}",
+        "title": "Do uruchomienia nowego wydarzenia",
+        "pageBigTitle": "Nasze poprzednie wydarzenia",
+        "minutes": "{minutes, plural, =1 {minuta} few {minuty} other {minut}}",
+        "hours": "{hours, plural, =1 {godzina} few {godziny} other {godzin}}",
+        "followUs": "Śledź nas, aby jako pierwszy dowiedzieć się o aktualizacjach",
+        "seconds": "{seconds, plural, =1 {sekunda} few {sekundy} other {sekund}}",
+        "titleSEO": "Świąteczne wydarzenia na każdy sezon: Prezenty, Certyfikaty, Aktywności",
+        "descriptionSEO": "Halloween, Boże Narodzenie, Walentynki i inne święta – przygotowujemy dla was wyjątkowe wydarzenia z losowaniem prezentów, certyfikatami i ciekawymi atrakcjami. Świętujcie razem z nami!"
+    },
+    "PortfolioPage": {
+        "title": "Nasze <purple>zrealizowane projekty</purple>",
+        "text": "Nasza specjalizacja to sklepy internetowe, stylowe landing pages dla firm i liderów branży oraz wielostronicowe strony internetowe dla organizacji komercyjnych i non-profit",
+        "titleSEO": "Nasze zrealizowane projekty",
+        "descriptionSEO": "Zobacz nasze portfolio projektów, które łączą estetykę i funkcjonalność. Landing pages, strony internetowe i sklepy online stworzone z myślą o potrzebach Twojego biznesu",
+        "seeCase": "zobacz przykład",
+        "stub": "Tutaj może być Twój projekt",
+        "allProjects": "Wszystkie projekty"
+    },
+    "PortfolioPagelandings": {
+        "title": "Nasze <purple>landing pages</purple>",
+        "text": "Strony landingowe to nie tylko strony internetowe, to potężne narzędzie marketingowe. Tworzymy stylowe, efektywne i konwersyjne landingi, które przyciągają uwagę i sprzedają.",
+        "titleSEO": "Nasze landing pages",
+        "descriptionSEO": "Projektowanie i tworzenie landing page, które konwertują odwiedzających w klientów.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "landings": "Stylowe strony landingowe z brandingiem"
+    },
+    "PortfolioPageonlinestores": {
+        "title": "Nasze <purple>sklepy internetowe</purple>",
+        "text": "Tworzymy rozwiązania e-commerce, które przynoszą zyski. Wygodny UX, szybkość działania i responsywność – kluczowe cechy naszych projektów. Zobacz, jak pomagamy biznesowi sprzedawać online!",
+        "titleSEO": "Nasze sklepy internetowe",
+        "descriptionSEO": "Tworzenie sklepów internetowych opartych na nowoczesnych technologiach: szybko, wygodnie, efektywnie.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "onlinestores": "Sklepy internetowe"
+    },
+    "PortfolioPagewebsites": {
+        "title": "Nasze <purple>strony internetowe</purple>",
+        "text": "Strony brandowe, korporacyjne i informacyjne – wiemy, jak stworzyć zasób, który zaprezentuje Twoją firmę w najlepszy sposób. Unikalny design, przemyślana struktura i jakość techniczna gwarantują skuteczność Twojej strony internetowej.",
+        "titleSEO": "Nasze strony internetowe",
+        "descriptionSEO": "Tworzenie wielostronicowych stron internetowych dla firm i organizacji.",
+        "seeCase": "Zobacz przypadek",
+        "editionalCard": "Twój projekt może być tutaj",
+        "websites": "strony internetowe"
+    },
+    "SomeProjectPage": {
+        "teamTitle": "<purple>Zespół</purple>, który <purple>stworzył</purple> tę <purple>stronę</purple>",
+        "stackTitle": "Technologie i <purple>narzędzia</purple>",
+        "adaptiveDesign": "<purple>Responsywny</purple> design",
+        "feedback": "<purple>Recenzja</purple> naszego <purple>klienta</purple>",
+        "moreCases": "Zobacz <purple>więcej przykładów</purple>",
+        "allProjects": "Wszystkie projekty",
+        "deadlines": "Terminy realizacji:",
+        "analysis": "Analiza",
+        "design": "Projektowanie",
+        "launch": "Wydanie",
+        "support": "Wsparcie",
+        "behanceLink": "Projekt wizualny",
+        "taskTitle": "<purple>Zadania</purple> nad którymi pracowaliśmy",
+        "decisionsTitle": "<purple>Rozwiązania</purple>, które zostały wdrożone"
     }
 }
