@@ -2,7 +2,7 @@ import { BuyMeCoffeeLink } from "../shared/BuyMeCoffeeLink";
 import { SharePopover } from "../shared/SharePopover";
 import { Copyright } from "./Copyright";
 import { MenuFooter } from "./MenuFooter";
-import { PrivacyPolicy } from "./PrivacyPolicy";
+import { PublicDocsList } from "./PublicDocsList";
 import { TitleFooter } from "./TitleFooter";
 
 export const Footer = () => {
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center mt-[20px] tab:flex-row-reverse tab:justify-between tab:mt-[16px] pc:mt-[16px] pc:pb-0 pc:flex-row-reverse pc:justify-between">
-                    <PrivacyPolicy />
+                    <PublicDocsList />
                     <Copyright />
                 </div>
             </div>

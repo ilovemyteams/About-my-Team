@@ -1,18 +1,16 @@
 "use client";
 import Cookies from "js-cookie";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import { selectedLink } from "@/src/utils/selectedLink";
+import { Link } from "@/src/i18n/routing";
 
 import { Button } from "../shared/Button";
 
 export const CookiesComponent = () => {
     const [isVisible, setIsVisible] = useState(false); // 👈 показ банеру
     const getTranslation = useTranslations("Cookies");
-    const locale = useLocale();
-    const policyURL = selectedLink(locale);
 
     useEffect(() => {
         const cookiesValue = Cookies.get("isAcceptedCookies"); // ✅ правильна назва

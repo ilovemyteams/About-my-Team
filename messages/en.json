@@ -147,6 +147,7 @@
         "titleFirstLine": "Start <purple>implementing</purple> your ",
         "titleSecondLine": "<purple>business ideas</purple> together <purple>with us</purple>",
         "privacyPolicy": "privacy policy",
+        "publicOffer": "public offer",
         "copyright": "2024, i love my team"
     },
     "NotFound": {
@@ -363,5 +364,13 @@
         "behanceLink": "Project Design",
         "taskTitle": "<purple>The tasks</purple> we worked on",
         "decisionsTitle": "<purple>The solutions</purple> that were implemented"
+    },
+    "PrivacyPolicy": {
+        "titleSEO": "Personal Data Privacy Policy | i love my team",
+        "descriptionSEO": "Protection of personal data of users and clients of i love my team. Terms of data collection, processing, and storage in accordance with GDPR and Ukrainian regulations."
+    },
+    "PublicOffer": {
+        "titleSEO": "Public Agreement for Digital Services | i love my team",
+        "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
     }
 }

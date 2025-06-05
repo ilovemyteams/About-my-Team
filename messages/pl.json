@@ -150,6 +150,7 @@
         "titleFirstLine": "Zacznij <purple>wdrażać</purple> swoje ",
         "titleSecondLine": "<purple>pomysły biznesowe</purple> razem <purple>z nami</purple>",
         "privacyPolicy": "polityka prywatności",
+        "publicOffer": "oferta publiczna",
         "copyright": "2024, i love my team"
     },
     "NotFound": {
@@ -364,5 +365,13 @@
         "behanceLink": "Projekt wizualny",
         "taskTitle": "<purple>Zadania</purple> nad którymi pracowaliśmy",
         "decisionsTitle": "<purple>Rozwiązania</purple>, które zostały wdrożone"
+    },
+    "PrivacyPolicy": {
+        "titleSEO": "Polityka prywatności danych osobowych | i love my team",
+        "descriptionSEO": "Ochrona danych osobowych użytkowników i klientów i love my team. Zasady zbierania, przetwarzania i przechowywania informacji zgodnie z RODO i przepisami ukraińskimi."
+    },
+    "PublicOffer": {
+        "titleSEO": "Publiczna umowa na świadczenie usług cyfrowych | i love my team",
+        "descriptionSEO": "Publiczna oferta i love my team — umowa na świadczenie usług z zakresu rozwoju cyfrowego, analityki i projektowania. Sprawdzone warunki, akceptacja online."
     }
 }
