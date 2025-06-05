@@ -56,6 +56,7 @@ export const WriteUsValidation = () => {
                 return schema;
             }),
         message: messageValidation,
+        confirm: yup.boolean().required().isTrue(),
     });
 
     return writeUsFormValidationSchema;

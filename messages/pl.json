@@ -183,6 +183,10 @@
         "messagePlaceholder": "Twoja wiadomość jest dla nas ważna",
         "requiredField": "*Pola wymagane do wypełnienia",
         "informedAgreement": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na ",
+        "informedAgreementSeparator": " i ",
+        "privacyPolicy": "Politykę Prywatności",
+        "publicOffer": "Ofertę Publiczną",
+
         "rulesLink": "Warunki przetwarzania danych osobowych",
         "submitButton": "Wyślij",
         "questionLabel": "Twoje pytanie*",
