@@ -1,9 +1,9 @@
 import {
+    mainEmail,
     ofertaUrl,
-    policyEmail,
-    policySite,
     policyUrl,
-    servicesLink,
+    servicesUrl,
+    siteUrl,
 } from "../constants/policyInfo";
 
 export const parsePolicyLinks = (text: string, locale: string) => {
@@ -42,16 +42,16 @@ export const parsePolicyLinks = (text: string, locale: string) => {
  pc:hover:text-redLight dark:active:text-red active:text-redLight 
  dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
  transition-color ease-out duration-300"
-                    href={`mailto:${policyEmail}`}
-                    key={policyEmail}
+                    href={`mailto:${mainEmail}`}
+                    key={mainEmail}
                 >
-                    {policyEmail}
+                    {mainEmail}
                 </a>
             );
         }
 
         if (key === "site") {
-            const url = `https://${policySite}/${locale}`;
+            const url = `https://${siteUrl}/${locale}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -59,17 +59,17 @@ export const parsePolicyLinks = (text: string, locale: string) => {
  dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
  transition-color ease-out duration-300 "
                     href={url}
-                    key={policySite}
+                    key={siteUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {policySite}
+                    {siteUrl}
                 </a>
             );
         }
 
         if (key === "oferta") {
-            const url = `${ofertaUrl}/${locale}`;
+            const url = `https://${siteUrl}/${locale}/${ofertaUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -81,13 +81,13 @@ export const parsePolicyLinks = (text: string, locale: string) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {ofertaUrl}
+                    {url}
                 </a>
             );
         }
 
         if (key === "ofertaEN") {
-            const url = `${ofertaUrl}/en`;
+            const url = `https://${siteUrl}/en/${ofertaUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -104,7 +104,7 @@ export const parsePolicyLinks = (text: string, locale: string) => {
             );
         }
         if (key === "ofertaUA") {
-            const url = `${ofertaUrl}/ua`;
+            const url = `https://${siteUrl}/ua/${ofertaUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -121,7 +121,7 @@ export const parsePolicyLinks = (text: string, locale: string) => {
             );
         }
         if (key === "ofertaPL") {
-            const url = `${ofertaUrl}/pl`;
+            const url = `https://${siteUrl}/pl/${ofertaUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -139,7 +139,7 @@ export const parsePolicyLinks = (text: string, locale: string) => {
         }
 
         if (key === "services") {
-            const url = `${servicesLink}/${locale}`;
+            const url = `https://${siteUrl}/${locale}/${servicesUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -147,17 +147,17 @@ export const parsePolicyLinks = (text: string, locale: string) => {
  dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
  transition-color ease-out duration-300 "
                     href={url}
-                    key={servicesLink}
+                    key={url}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {servicesLink}
+                    {url}
                 </a>
             );
         }
 
         if (key === "policy") {
-            const url = `${policyUrl}/${locale}`;
+            const url = `https://${siteUrl}/${locale}/${policyUrl}`;
             parts.push(
                 <a
                     className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
@@ -169,7 +169,7 @@ export const parsePolicyLinks = (text: string, locale: string) => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {policyUrl}
+                    {url}
                 </a>
             );
         }
