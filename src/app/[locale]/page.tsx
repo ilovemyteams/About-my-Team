@@ -2,8 +2,6 @@ import {
     loadCTA,
     loadHomeProjects,
     loadHomeReviews,
-    loadServices,
-    loadStages,
 } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
 import { HireUsSection } from "@/src/components/CTAs/hireUsSection/HireUsSection";
@@ -19,14 +17,11 @@ import { StagesSection } from "@/src/components/mainPage/stagesSection/StagesSec
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [cta, portfolioSection, services, stages, reviews] =
-        await Promise.all([
-            await loadCTA(props.params.locale),
-            await loadHomeProjects(props.params.locale),
-            await loadServices(props.params.locale),
-            await loadStages(props.params.locale),
-            await loadHomeReviews(props.params.locale),
-        ]);
+    const [cta, portfolioSection, reviews] = await Promise.all([
+        await loadCTA(props.params.locale),
+        await loadHomeProjects(props.params.locale),
+        await loadHomeReviews(props.params.locale),
+    ]);
 
     return (
         <>
@@ -36,10 +31,10 @@ export default async function HomePage(props: PageParamsProps) {
             <PortfolioSection data={portfolioSection} />
             <FeedbackSection data={reviews} />
             <WriteUsSection data={cta?.ctaSectionWriteUs} />
-            <ServicesSection data={services} />
+            <ServicesSection />
             <OurTeamSection />
             <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
-            <StagesSection data={stages} />
+            <StagesSection />
             <QaSection />
             <HireUsSection data={cta?.ctaSectionOrder} />
         </>

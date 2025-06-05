@@ -36,6 +36,7 @@
         "googleapis": "^137.1.0",
         "js-cookie": "^3.0.5",
         "next": "^14.2.5",
+        "next-cloudinary": "^6.16.0",
         "next-intl": "^3.19.4",
         "next-sanity": "^9.5.0",
         "next-sanity-image": "^6.1.1",

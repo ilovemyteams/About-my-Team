@@ -1,49 +1,46 @@
 import { OneTableItemInfo } from "./OneTableItemInfo";
 
+interface Items {
+    title: string;
+    text: string;
+    itemNumber?: number;
+}
+
 interface TableItemsProps {
     className?: string;
-    titleList: Array<string | null> | null;
-    textList: Array<string | null> | null;
+    items: Items[];
     isIconShown?: boolean;
     textClassName?: string;
     isShowMoreButton?: boolean;
-    isNumberShown?: boolean;
-    shift?: boolean;
     sectionClassName?: string;
 }
 
 export const TableItemsList = ({
-    titleList,
-    textList,
+    items,
     isIconShown,
     textClassName,
-    shift,
     isShowMoreButton,
     sectionClassName,
-    isNumberShown,
 }: TableItemsProps) => {
-    if (!titleList || !textList) return null;
-
     return (
         <>
-            {titleList.map((item, index) => (
+            {items.map((item, index) => (
                 <li
                     key={index}
-                    className={`dark:border-purple-stroke border-purple-strokeLight border-b-[1px] first-of-type:border-t-[1px]   
+                    className={`dark:border-purple-stroke border-purple-strokeLight border-b-[1px]    
                     tab:[&:nth-child(2)]:border-t-[1px] 
                     pc:border-r-[1px] pc:[&:nth-child(1)]:border-l-[1px] pc:[&:nth-child(3)]:border-t-[1px]
-                    pc:[&:nth-child(4)]:border-t-[1px]  ${shift && (index === 4 ? "pc:col-start-2" : "")}
+                    pc:[&:nth-child(4)]:border-t-[1px]
                     ${sectionClassName}`}
                 >
                     <OneTableItemInfo
-                        title={item || "You forgot the title"}
+                        title={item.title}
                         isIconShown={isIconShown}
-                        itemNumber={index + 1}
-                        isNumberShown={isNumberShown}
+                        itemNumber={item?.itemNumber}
                         textClassName={textClassName}
                         isShowMoreButton={isShowMoreButton}
                     >
-                        {textList[index] || "You forgot a text"}
+                        {item.text}
                     </OneTableItemInfo>
                 </li>
             ))}
