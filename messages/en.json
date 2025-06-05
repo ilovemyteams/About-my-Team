@@ -220,9 +220,10 @@
     },
 
     "Cookies": {
-        "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click OK. More information in the  ",
-        "policy": "Privacy Policy.",
-        "button": "ok"
+        "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click “accept”. More information in the <link>Privacy Policy</link>. ",
+        "accept": "accept",
+        "reject": "reject",
+        "configure": "configure"
     },
     "AboutPage": {
         "titleSEO": "Our goal is to create amazing digital products",
