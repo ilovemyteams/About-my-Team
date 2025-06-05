@@ -13,5 +13,6 @@ export const FaqWriteQuestionValidation = () => {
         name: nameValidation,
         email: emailValidation,
         message: messageValidation,
+        confirm: yup.boolean().required().isTrue(),
     });
 };

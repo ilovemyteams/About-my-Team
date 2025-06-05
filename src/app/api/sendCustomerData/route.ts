@@ -7,7 +7,7 @@ const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID || "";
 const RANGE = "Аркуш1!A2:G2";
 
 export async function POST(request: NextRequest) {
-    const { name, email, mediaType, mediaLink, message, source } =
+    const { name, email, mediaType, mediaLink, message, source, confirm } =
         await request.json();
 
     const date = new Date().toLocaleString();
@@ -22,6 +22,7 @@ export async function POST(request: NextRequest) {
                 message,
                 source,
                 date,
+                confirm,
             ]);
 
             return NextResponse.json({ message: "Data appended successfully" });

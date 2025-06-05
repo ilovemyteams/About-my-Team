@@ -12,6 +12,7 @@ interface FormValues {
     name: string;
     email: string;
     message: string;
+    confirm: boolean;
 }
 
 export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
@@ -23,6 +24,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
         name: "",
         email: "",
         message: "",
+        confirm: false,
     };
 
     const onSubmit = async (values: FormValues) => {
@@ -123,7 +125,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                             >
                                 {getTranslation("requiredField")}
                             </p>
-                            <PolicyLabel />
+                            <PolicyLabel name="confirm" />
                         </div>
                         <SubmitButton
                             isActiveLoader={isSubmitting}

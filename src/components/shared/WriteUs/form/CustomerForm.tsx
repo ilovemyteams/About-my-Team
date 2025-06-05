@@ -31,6 +31,7 @@ export interface ValuesWriteUsFormType {
 
     message: string;
     source: string;
+    confirm: boolean;
 }
 
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
@@ -48,6 +49,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         mediaLink: "",
         message: "",
         source: searchParams.get("source") || "direct",
+        confirm: false,
     };
 
     const initialStatus = "name";
@@ -65,6 +67,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 mediaLink: values.mediaLink.trim(),
                 message: values.message.trim(),
                 source: values.source,
+                confirm: values.confirm,
             };
             await axios({
                 method: "post",
@@ -104,6 +107,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 touched,
                 isSubmitting,
             }) => {
+                console.log(values.confirm);
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke text-purple-200 dark:text-grey">
                         <h1 className="self-start text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-3">
@@ -170,7 +174,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             >
                                 {getTranslation("requiredField")}
                             </p>
-                            <PolicyLabel />
+                            <PolicyLabel name="confirm" />
                         </div>
                         <SubmitButton
                             isActiveLoader={isSubmitting}
