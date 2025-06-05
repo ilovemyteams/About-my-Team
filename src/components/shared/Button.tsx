@@ -5,6 +5,7 @@ interface ButtonProps {
     type?: "submit" | "button";
     disabled?: boolean;
     onClick?: () => void;
+    cookie?: boolean;
 }
 
 export const Button = ({
@@ -14,6 +15,7 @@ export const Button = ({
     type = "button",
     disabled = false,
     onClick,
+    cookie,
 }: ButtonProps) => {
     const redColor =
         "dark:text-red dark:border-red dark:after:bg-red dark:before:bg-red text-redLight border-redLight after:bg-redLight before:bg-redLight";
@@ -25,7 +27,7 @@ export const Button = ({
             type={type}
             disabled={disabled}
             onClick={onClick}
-            className={`group ${color === "red" ? redColor : greyColor} relative w-[288px] min-h-[48px] h-[48px] tab:w-[270px] tab:h-[56px] font-caviar text-xlb tab:text-2xl border-solid border-y-[1px]
+            className={`group ${color === "red" ? redColor : greyColor} relative ${cookie ? "min-w-[136px] w-full max-w-[288px]" : "w-[288px] tab:w-[270px]"}  min-h-[48px] h-[48px]  tab:h-[56px] font-caviar text-xlb tab:text-2xl border-solid border-y-[1px]
             pc:hover:after:transition-opacity pc:hover:after:duration-200 pc:hover:after:ease-out pc:hover:before:transition-opacity pc:hover:before:duration-200 pc:hover:before:ease-out after:content-[''] after:absolute after:bottom-[2px] 
              after:left-0 after:h-[0.8px] after:w-full after:opacity-0 before:content-[''] before:absolute before:bottom-[5px] before:left-0 before:h-[0.8px] before:w-full
              before:opacity-0 enabled:pc:hover:after:opacity-100 enabled:pc:hover:before:opacity-100 pc:hover:before:delay-[400ms] pc:focus:before:opacity-100 pc:focus:after:opacity-0 focus:outline-none focus-within:outline-none
