@@ -1,4 +1,4 @@
-import { PolicyContent } from "@/src/components/policyPage/PolicyContent";
+import { OfertaContent } from "@/src/components/ofertaPage/OfertaContent";
 import { TextDocHeader } from "@/src/components/shared/TextDocLayout/TextDocHeader";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
@@ -9,16 +9,16 @@ export async function generateMetadata({
 }) {
     return generatePageMetadata({
         locale,
-        namespace: "PrivacyPolicy",
-        canonical: "/policy",
+        namespace: "PublicOffer",
+        canonical: "/oferta",
     });
 }
 
-export default function Policy() {
+export default function Oferta() {
     return (
         <>
             <TextDocHeader />
-            <PolicyContent />
+            <OfertaContent />
         </>
     );
 }

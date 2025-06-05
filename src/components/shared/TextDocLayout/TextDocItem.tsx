@@ -18,7 +18,7 @@ export const TextDocItem = ({ index, content, title }: TextDocItemProps) => {
             </div>
 
             <div>
-                <h2 className="font-caviar font-bold text-2xl tab:text-3xl28 text-purple-200 whitespace-pre-wrap dark:text-white-200 pc:text-4xl desk:text-6xlt mb-5 tab:min-h-[auto] tab:mb-6 pc:mb-10 desk:mb-[64px]">
+                <h2 className="font-caviar font-bold text-2xl tab:text-3xl28 text-purple-200 whitespace-pre-wrap dark:text-white-200 tab:whitespace-normal pc:text-4xl desk:text-6xlt mb-5 tab:min-h-[auto] tab:mb-6 pc:mb-10 desk:mb-[64px]">
                     <TextDocHighlightedText text={title} />
                 </h2>
 

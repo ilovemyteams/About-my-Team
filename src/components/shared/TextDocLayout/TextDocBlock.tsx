@@ -38,7 +38,7 @@ export const TextDocBlock = ({ text, type }: TextDocContentType) => {
 
     return (
         <li className="first:mt-0 mt-4 tab:mt-5 pc:mt-7 desk:mt-8">
-            <p className="text-sm20 text-balance tab:text-pretty tab:text-base23 pc:text-xl28 desk:text-2xl">
+            <p className="text-sm20 text-pretty tab:text-base23 pc:text-xl28 desk:text-2xl">
                 {parsePolicyLinks(text, locale)}
             </p>
         </li>
