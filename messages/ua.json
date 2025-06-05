@@ -146,6 +146,7 @@
         "titleFirstLine": "Починайте <purple>втілення</purple> своїх ",
         "titleSecondLine": "<purple>бізнес-ідей</purple> разом <purple>з нами</purple>",
         "privacyPolicy": "політика конфіденційності",
+        "publicOffer": "публічна оферта",
         "copyright": "2024, i love my team"
     },
     "NotFound": {
@@ -358,5 +359,13 @@
         "behanceLink": "Дизайн проєкту",
         "taskTitle": "<purple>Завдання</purple>, над якими ми працювали",
         "decisionsTitle": "<purple>Рішення</purple>, які були реалізовані"
+    },
+    "PrivacyPolicy": {
+        "titleSEO": "Політика конфіденційності персональних даних | i love my team",
+        "descriptionSEO": "Захист персональних даних користувачів та замовників i love my team. Умови збору, обробки та зберігання інформації відповідно до GDPR та українських норм."
+    },
+    "PublicOffer": {
+        "titleSEO": "Публічний договір на надання цифрових послуг | i love my team",
+        "descriptionSEO": "Публічна оферта від i love my team — договір на надання послуг з цифрової розробки, аналітики, дизайну. Перевірені умови, прийняття онлайн."
     }
 }
