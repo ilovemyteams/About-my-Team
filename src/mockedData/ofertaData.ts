@@ -265,7 +265,7 @@ export const ofertaData: OfertaType = {
                     },
                     {
                         type: "text",
-                        text: "5.3. Обсяг прав, що передаються відповідно до визначених об'єктів інтелектуальної власності,  узгоджується і фіксуються Сторонами в додатковій угоді до Договору.",
+                        text: "5.3. Обсяг прав, що передаються відповідно до визначених об'єктів інтелектуальної власності, узгоджується і фіксується Сторонами в додатковій угоді до Договору.",
                     },
                     {
                         type: "text",
@@ -645,7 +645,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Liability</purple>of the Parties and Dispute <purple>Resolution</purple> Procedure",
+                title: "<purple>Liability</purple> of the Parties and Dispute <purple>Resolution</purple> Procedure",
                 content: [
                     {
                         type: "text",
@@ -705,7 +705,7 @@ export const ofertaData: OfertaType = {
                     },
                     {
                         type: "text",
-                        text: "providing written confirmation (including via email sent to *email*) f their consent to receive the Services under the terms set out in the Contractor’s commercial offer;",
+                        text: "providing written confirmation (including via email sent to *email*) оf their consent to receive the Services under the terms set out in the Contractor’s commercial offer;",
                     },
                     {
                         type: "text",
@@ -881,7 +881,7 @@ export const ofertaData: OfertaType = {
                     },
                     {
                         type: "text",
-                        text: "2.8. Dokonanie przez Lkienta płatności za Usługi na podstawie faktury Wykonawcy jest równoznaczne z bezwarunkowym przyjęciem wykonanych Usług w pełnym zakresie.",
+                        text: "2.8. Dokonanie przez Klienta płatności za Usługi na podstawie faktury Wykonawcy jest równoznaczne z bezwarunkowym przyjęciem wykonanych Usług w pełnym zakresie.",
                     },
                     {
                         type: "text",
