@@ -351,7 +351,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Інші</purple> умови",
+                title: "<purple>Інші</purple> \nумови",
                 content: [
                     {
                         type: "text",
@@ -560,7 +560,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Rights</purple> and \n<purple>Obligations</purple> of the Parties",
+                title: "<purple>Rights</purple> and <purple>Obligations</purple> \nof the Parties",
                 content: [
                     { type: "text", text: "4.1. The Customer shall:" },
                     {
@@ -722,7 +722,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Other </purple> Terms \nand Conditions",
+                title: "<purple>Other</purple> Terms \nand Conditions",
                 content: [
                     {
                         type: "text",
@@ -832,7 +832,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Cena </purple>  Umowy i zasady <purple>rozliczeń</purple>",
+                title: "<purple>Cena</purple> Umowy i \nzasady <purple>rozliczeń</purple>",
                 content: [
                     {
                         type: "text",
@@ -1057,7 +1057,7 @@ export const ofertaData: OfertaType = {
                 ],
             },
             {
-                title: "<purple>Okres</purple> \nobowiązywania Umowy",
+                title: "<purple>Okres</purple> obowiązywania \nUmowy",
                 content: [
                     {
                         type: "text",
