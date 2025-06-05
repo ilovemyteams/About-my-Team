@@ -39,14 +39,14 @@ export const CookiesComponent = () => {
                 <div className="max-w-[915px] pc:max-w-[1080px] pc:w-[1080px] mx-auto ">
                     {getTranslation.rich("text", {
                         link: chunk => (
-                            <a
-                                href={policyURL}
+                            <Link
+                                href="/policy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="dark:text-purple-50 text-purple-130"
                             >
                                 {chunk}
-                            </a>
+                            </Link>
                         ),
                     })}
                 </div>
