@@ -182,10 +182,10 @@
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Twoja wiadomość jest dla nas ważna",
         "requiredField": "*Pola wymagane do wypełnienia",
-        "informedAgreement": "Klikając przycisk “Wyślij”, użytkownik wyraża zgodę na ",
+        "informedAgreement": "Zgadzam się z ",
         "informedAgreementSeparator": " i ",
-        "privacyPolicy": "Politykę Prywatności",
-        "publicOffer": "Ofertę Publiczną",
+        "privacyPolicy": "Polityką Prywatności",
+        "publicOffer": "Ofertą Publiczną",
 
         "rulesLink": "Warunki przetwarzania danych osobowych",
         "submitButton": "Wyślij",
