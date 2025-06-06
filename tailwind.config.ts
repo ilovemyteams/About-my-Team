@@ -39,6 +39,7 @@ const config: Config = {
                     lineHeight: "15px",
                 },
             ],
+
             sm: [
                 "14px",
                 {

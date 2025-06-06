@@ -15,7 +15,7 @@ export const PolicyLabel = ({ ...inputProps }: PolicyLabelProps) => {
     return (
         <div>
             <CustomCheckbox {...inputProps}>
-                <p className="max-w-[65%] text-xs tab:text-sm">
+                <p className="text-xs tab:text-sm ">
                     {getTranslation("informedAgreement")}
                     <Link
                         href="/policy"

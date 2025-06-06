@@ -12,7 +12,7 @@ export const PolicyContent = () => {
     const { title, data, publishDate } = policyData[locale as LocaleType];
 
     return (
-        <PageSection className="pb-[32px] tab:pb-[40px] pc:pb-[100px] desk:pb-[120px] ">
+        <PageSection className=" pb-[32px]  tab:pb-[40px] pc:pb-[100px] desk:pb-[120px] ">
             <div className="mb-9 tab:mb-[60px] pc:mb-[72px] desk:mb-[80px] tab:flex tab:justify-between items-end">
                 <h1 className="font-caviar font-bold text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-6xlt  desk:text-7xl ">
                     <TextDocHighlightedText text={title} />
