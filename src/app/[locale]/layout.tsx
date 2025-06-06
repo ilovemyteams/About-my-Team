@@ -1,12 +1,12 @@
 import "./globals.css";
 
-import { GoogleTagManager } from "@next/third-parties/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
+import { ConditionalGTM } from "@/src/components/cookies/ConditionalGTM";
 import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
@@ -16,7 +16,6 @@ import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
 import { Providers } from "./providers";
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
 const IS_SHOWN_TO_SEARCH_ENGINES =
     process.env.NEXT_PUBLIC_VERCEL_ENV === "production" ? false : true;
 
@@ -114,7 +113,7 @@ export default function LocaleLayout({
                 <meta name="type" property="og:type" content="website" />
                 <meta property="og:image" content="<generated>" />
             </head>
-            <GoogleTagManager gtmId={GTM_ID} />
+            <ConditionalGTM />
             <NextIntlClientProvider locale={locale} messages={messages}>
                 <PreviousURLProvider>
                     <body
