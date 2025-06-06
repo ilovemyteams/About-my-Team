@@ -225,7 +225,7 @@
         "h": "g"
     },
     "Cookies": {
-        "text": "Ta strona używa plików cookie do prawidłowego funkcjonowania i ulepszania serwisu. Jeśli zgadzasz się na ich użycie, kliknij “przyjąć”. Więcej informacji w <link>Polityce Prywatności</link>.",
+        "text": "Ta strona używa plików cookie do prawidłowego funkcjonowania i ulepszania serwisu. Jeśli zgadzasz się na ich użycie, kliknij “akceptuj”. Więcej informacji w <link>Polityce Prywatności</link>.",
         "accept": "Akceptuj",
         "reject": "Odrzuć",
         "configure": "Dostosuj"
