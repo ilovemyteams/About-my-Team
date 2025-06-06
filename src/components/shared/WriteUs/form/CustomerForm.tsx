@@ -107,7 +107,6 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 touched,
                 isSubmitting,
             }) => {
-                console.log(values.confirm);
                 return (
                     <Form className="flex flex-col items-center pt-[12px] border-t-[1px] border-purple-strokeLight dark:border-purple-stroke text-purple-200 dark:text-grey">
                         <h1 className="self-start text-purple-200 dark:text-white-200 font-caviar text-3xl tab:text-4xl pc:text-5xl mb-3">
