@@ -7,6 +7,21 @@ import { useEffect } from "react";
 import { Link } from "@/src/i18n/routing";
 
 import { Button } from "../shared/Button";
+const deleteThirdPartyCookies = () => {
+    const cookiesToDelete = [
+        "_ga",
+        "_gid",
+        "_gat", // Google Analytics
+        "_fbp", // Facebook Pixel
+        "_hj*", // Hotjar
+    ];
+
+    cookiesToDelete.forEach(name => {
+        Cookies.remove(name);
+        Cookies.remove(name, { path: "/" });
+        Cookies.remove(name, { domain: window.location.hostname });
+    });
+};
 
 export const CookiesComponent = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -20,12 +35,14 @@ export const CookiesComponent = () => {
     }, []);
 
     const handleAccept = () => {
-        Cookies.set("isAcceptedCookies", "true");
+        Cookies.set("isAcceptedCookies", "true", { expires: 180 });
         setIsVisible(false);
+        window.location.reload(); // for loading GTM
     };
 
     const handleReject = () => {
         Cookies.set("isAcceptedCookies", "false");
+        deleteThirdPartyCookies();
         setIsVisible(false);
     };
 
