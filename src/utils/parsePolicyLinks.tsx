@@ -8,7 +8,7 @@ import {
 
 export const parsePolicyLinks = (text: string, locale: string) => {
     const anchorRegex =
-        /\*(site|email|oferta|services|policy|emailSusanna|ofertaUA|ofertaPL|ofertaEN)\*/g;
+        /\*(site|email|oferta|services|policy|emailSusanna|ofertaUA|ofertaPL|ofertaEN|Firefox|Chrome|Safari|Opera|MicrosoftEdge|InternetExplorer)\*/g;
     const parts = [];
     let lastIndex = 0;
     let match;
@@ -170,6 +170,108 @@ export const parsePolicyLinks = (text: string, locale: string) => {
                     rel="noopener noreferrer"
                 >
                     {url}
+                </a>
+            );
+        }
+        if (key === "InternetExplorer") {
+            const url = `https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Internet Explorer"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Internet Explorer"}
+                </a>
+            );
+        }
+        if (key === "MicrosoftEdge") {
+            const url = `https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Microsoft Edge"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Microsoft Edge"}
+                </a>
+            );
+        }
+        if (key === "Opera") {
+            const url = `https://help.opera.com/en/latest/web-preferences/#cookies`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Opera"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Opera"}
+                </a>
+            );
+        }
+        if (key === "Safari") {
+            const url = `https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Safari"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Safari"}
+                </a>
+            );
+        }
+        if (key === "Firefox") {
+            const url = `https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Firefox"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Firefox"}
+                </a>
+            );
+        }
+        if (key === "Chrome") {
+            const url = `https://support.google.com/chrome/answer/95647`;
+            parts.push(
+                <a
+                    className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
+ pc:hover:text-redLight dark:active:text-red active:text-redLight 
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
+ transition-color ease-out duration-300 "
+                    href={url}
+                    key={"Chrome"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {"Chrome"}
                 </a>
             );
         }

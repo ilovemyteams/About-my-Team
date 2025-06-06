@@ -27,7 +27,7 @@ export const TextDocBlock = ({ text, type }: TextDocContentType) => {
                         <li className="first:mt-0" key={index}>
                             <p className="text-sm20 text-pretty ml-3 flex gap-2 tab:text-base23 tab:ml-8 pc:text-xl28 desk:text-2xl">
                                 <IconCheck className="size-4 shrink-0 text-redLight dark:text-red tab:size-6 " />
-                                {item}
+                                {parsePolicyLinks(item, locale)}
                             </p>
                         </li>
                     ))}

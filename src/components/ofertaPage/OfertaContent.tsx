@@ -17,7 +17,7 @@ export const OfertaContent = () => {
     return (
         <PageSection className="pb-[32px] tab:pb-[40px] pc:pb-[100px] desk:pb-[120px] text-sm20 text-balance tab:text-pretty tab:text-base23 pc:text-xl28 desk:text-2xl">
             <div className="mb-9 tab:mb-[52px] desk:mb-[80px] tab:flex tab:justify-between items-end">
-                <h1 className="font-caviar font-bold text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-6xlt  desk:text-7xl text-pretty">
+                <h1 className="font-caviar font-bold text-purple-200 dark:text-grey text-3xl tab:text-4xl pc:text-6xlt  desk:text-7xl text-pretty tab:whitespace-pre-wrap">
                     <TextDocHighlightedText text={title} />
                 </h1>
             </div>

@@ -1,14 +1,15 @@
-// import { useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 
 import { TextDocItem } from "@/src/components/shared/TextDocLayout/TextDocItem";
 import { policyData } from "@/src/mockedData/privacyPolicy";
+import { LocaleType } from "@/types/LocaleType";
 
 import { PageSection } from "../shared/PageSection";
 import { TextDocHighlightedText } from "../shared/TextDocLayout/TextDocHighlightedText";
 
 export const PolicyContent = () => {
-    // const locale = useLocale();
-    const { title, data, publishDate } = policyData["ua"];
+    const locale = useLocale();
+    const { title, data, publishDate } = policyData[locale as LocaleType];
 
     return (
         <PageSection className="pb-[32px] tab:pb-[40px] pc:pb-[100px] desk:pb-[120px] ">
