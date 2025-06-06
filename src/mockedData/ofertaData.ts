@@ -21,7 +21,7 @@ interface OfertaType {
 
 export const ofertaData: OfertaType = {
     ua: {
-        title: "Публічний договір <purple>(оферта)</purple> на замовлення послуг Проєкту <purple>“i love my team”</purple>",
+        title: "Публічний договір <purple>(оферта)</purple> \nна замовлення послуг Проєкту \n<purple>“i love my team”</purple>",
         description:
             "Цей документ, положення якого викладені нижче по тексту, є публічним договором. Згідно з положеннями статей 633, 641 Цивільного кодексу України умови публічного договору (оферти) є однаковими для всіх Замовників послуг  Проєкту “i love my team”.",
         definitions: {
@@ -386,7 +386,7 @@ export const ofertaData: OfertaType = {
         ],
     },
     en: {
-        title: "Public <purple>Offer</purple> Agreement for Ordering Services of the <purple>“i love my team”</purple> Project",
+        title: "Public <purple>Offer</purple> Agreement \nfor Ordering Services of the \n<purple>“i love my team”</purple> Project",
         description:
             "This document, the provisions of which are set forth below, constitutes a public agreement. In accordance with Articles 633 and 641 of the Civil Code of Ukraine, the terms of this public agreement (offer) are identical for all customers of the services provided by the “i love my team” Project.",
         definitions: {
@@ -757,7 +757,7 @@ export const ofertaData: OfertaType = {
         ],
     },
     pl: {
-        title: "Zamówienie publiczne <purple>(oferta)</purple> na świadczenie usług w ramach Projektu <purple>“i love my team”</purple>",
+        title: "Zamówienie publiczne <purple>(oferta)</purple> \nna świadczenie usług w ramach \nProjektu <purple>“i love my team”</purple>",
         description:
             "Niniejszy dokument, którego postanowienia są określone poniżej, jest umową publiczną. Zgodnie z postanowieniami art. 633, 641 Kodeksu Cywilnego Ukrainy, warunki zamówienia publicznego (oferty) są takie same dla wszystkich Klientów usług Projektu „i love my team”.",
         definitions: {
