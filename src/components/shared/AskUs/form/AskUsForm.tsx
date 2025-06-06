@@ -12,6 +12,7 @@ interface FormValues {
     name: string;
     email: string;
     message: string;
+    confirm: boolean;
 }
 
 export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
@@ -23,6 +24,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
         name: "",
         email: "",
         message: "",
+        confirm: false,
     };
 
     const onSubmit = async (values: FormValues) => {
@@ -31,6 +33,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                 name: values.name.trim(),
                 email: values.email.toLowerCase().trim(),
                 message: values.message.trim(),
+                confirm: values.confirm,
             };
             await axios({
                 method: "post",
@@ -123,7 +126,7 @@ export const AskUsForm = ({ notificationHandler }: FormInModalProps) => {
                             >
                                 {getTranslation("requiredField")}
                             </p>
-                            <PolicyLabel />
+                            <PolicyLabel name="confirm" />
                         </div>
                         <SubmitButton
                             isActiveLoader={isSubmitting}

@@ -31,6 +31,7 @@ export interface ValuesWriteUsFormType {
 
     message: string;
     source: string;
+    confirm: boolean;
 }
 
 export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
@@ -48,6 +49,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         mediaLink: "",
         message: "",
         source: searchParams.get("source") || "direct",
+        confirm: false,
     };
 
     const initialStatus = "name";
@@ -65,6 +67,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                 mediaLink: values.mediaLink.trim(),
                 message: values.message.trim(),
                 source: values.source,
+                confirm: values.confirm,
             };
             await axios({
                 method: "post",
@@ -170,7 +173,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
                             >
                                 {getTranslation("requiredField")}
                             </p>
-                            <PolicyLabel />
+                            <PolicyLabel name="confirm" />
                         </div>
                         <SubmitButton
                             isActiveLoader={isSubmitting}

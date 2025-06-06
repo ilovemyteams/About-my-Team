@@ -15,7 +15,7 @@
         "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo "
     },
     "dependencies": {
-        "@heroui/react": "2.7.4",
+        "@heroui/react": "^2.7.4",
         "@next/third-parties": "^14.2.5",
         "axios": "^1.7.1",
         "embla-carousel-auto-scroll": "^8.6.0",
