@@ -18,7 +18,7 @@ export const CustomCheckbox = ({
                 const value = field.value;
                 return (
                     <>
-                        <label className="flex gap-2 cursor-pointer">
+                        <label className="flex gap-[16px] tab:gap-2 cursor-pointer items-start md:items-center">
                             <input
                                 type="checkbox"
                                 className="hidden"
@@ -26,10 +26,10 @@ export const CustomCheckbox = ({
                             />
                             <IconCheckbox
                                 className={twMerge(
-                                    "size-3 md:size-4  border-[1px] transition-colors duration-300 mt-[2px]",
+                                    "shrink-0 size-4 tab:size-[17px]  border-[1px] transition-colors duration-300  border-purple-100",
                                     value
-                                        ? "border-transparent dark:border-transparent text-white-200 bg-purple-100"
-                                        : "text-disabledLight dark:text-purple-stroke border-disabledLight dark:border-purple-stroke bg-transparent "
+                                        ? "text-white-200 bg-purple-100 "
+                                        : "text-transparent"
                                 )}
                             />
 

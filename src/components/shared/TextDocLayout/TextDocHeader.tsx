@@ -1,4 +1,3 @@
-import { GoBackButton } from "../GoBackButton";
 import LocaleSwitcher from "../LocaleSwitcher";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 
@@ -8,9 +7,6 @@ export const TextDocHeader = () => {
             <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
                 <LocaleSwitcher />
                 <ThemeSwitcher id="HeroSectionThemeSwitcher" />
-            </div>
-            <div className="flex justify-end">
-                <GoBackButton />
             </div>
         </section>
     );
