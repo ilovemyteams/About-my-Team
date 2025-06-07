@@ -1,52 +1,20 @@
 import { useTranslations } from "next-intl";
-import { PortableText } from "next-sanity";
 
-import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
-import { PortfolioTitleProps } from "@/types/sanityDataPropsTypes";
-
+import { ColoredTitle } from "../../shared/ColoredTitle";
 import { SmallPageTitle } from "../../shared/SmallPageTitle";
 import { TitleWrapper } from "../../shared/TitleWrapper";
 
-export const PortfolioTitle = ({
-    subtitle,
-    title,
-}: {
-    subtitle: string | undefined;
-    title: PortfolioTitleProps[] | undefined;
-}) => {
+export const PortfolioTitle = () => {
     const getTranslation = useTranslations("Portfolio");
-
+    const titleNames = ["titleFirstLine", "titleSecondLine", "titleThirdLine"];
     return (
-        <div>
-            <TitleWrapper className="flex flex-col tab:flex-row items-start">
-                <SmallPageTitle className="ml-1 mb-[10px] tab:mt-2 tab:mr-4 pc:mt-[14px] flex items-center">
-                    {subtitle ? subtitle : getTranslation("pageTitle")}
-                </SmallPageTitle>
-                {title && (
-                    <div className="tab:w-[70%]">
-                        {title[0] && (
-                            <PortableText
-                                value={title[0]}
-                                components={myPortableTextComponents}
-                            />
-                        )}
-                        <div className="tab:-ml-[100px]">
-                            {title[1] && (
-                                <PortableText
-                                    value={title[1]}
-                                    components={myPortableTextComponents}
-                                />
-                            )}
-                            {title[2] && (
-                                <PortableText
-                                    value={title[2]}
-                                    components={myPortableTextComponents}
-                                />
-                            )}
-                        </div>
-                    </div>
-                )}
-            </TitleWrapper>
-        </div>
+        <TitleWrapper className="flex flex-col tab:flex-row items-start">
+            <SmallPageTitle>{getTranslation("pageTitle")}</SmallPageTitle>
+            <ColoredTitle
+                categoryName="Portfolio"
+                propName={titleNames}
+                className="tab:[&:nth-child(3)]:ml-[82px] pc:[&:nth-child(3)]:ml-[167px]"
+            />{" "}
+        </TitleWrapper>
     );
 };
