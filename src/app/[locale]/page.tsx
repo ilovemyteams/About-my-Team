@@ -1,11 +1,5 @@
-import {
-    loadCTA,
-    loadHomeProjects,
-    loadHomeReviews,
-} from "@/sanity/utils/loadQuery";
+import { loadCTA, loadHomeReviews } from "@/sanity/utils/loadQuery";
 import { BackgroundFiguresMain } from "@/src/components/backgroundImages/BackgroundFiguresMain";
-import { HireUsSection } from "@/src/components/CTAs/hireUsSection/HireUsSection";
-import { JoinTheTeamSection } from "@/src/components/CTAs/joinTheTeamSection/JoinTheTeamSection";
 import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
 import { FeedbackSection } from "@/src/components/mainPage/feedbackSection/FeedbackSection";
 import { HeroSection } from "@/src/components/mainPage/heroSection/HeroSection";
@@ -17,9 +11,8 @@ import { StagesSection } from "@/src/components/mainPage/stagesSection/StagesSec
 import { PageParamsProps } from "@/types/sanityDataPropsTypes";
 
 export default async function HomePage(props: PageParamsProps) {
-    const [cta, portfolioSection, reviews] = await Promise.all([
+    const [cta, reviews] = await Promise.all([
         await loadCTA(props.params.locale),
-        await loadHomeProjects(props.params.locale),
         await loadHomeReviews(props.params.locale),
     ]);
 
@@ -27,16 +20,13 @@ export default async function HomePage(props: PageParamsProps) {
         <>
             <BackgroundFiguresMain />
             <HeroSection />
-            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
-            <PortfolioSection data={portfolioSection} />
+            <PortfolioSection />
             <FeedbackSection data={reviews} />
             <WriteUsSection data={cta?.ctaSectionWriteUs} />
             <ServicesSection />
             <OurTeamSection />
-            <JoinTheTeamSection data={cta?.ctaSectionJoinUs} />
             <StagesSection />
             <QaSection />
-            <HireUsSection data={cta?.ctaSectionOrder} />
         </>
     );
 }
