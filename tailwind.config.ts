@@ -1,4 +1,4 @@
-import { nextui } from "@nextui-org/react";
+import { heroui } from "@heroui/react";
 import tailwindScrollbar from "tailwind-scrollbar";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
@@ -8,7 +8,7 @@ const config: Config = {
         "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+        "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
     ],
     darkMode: "class",
     theme: {
@@ -431,7 +431,7 @@ const config: Config = {
         },
     },
     plugins: [
-        nextui(),
+        heroui(),
         tailwindScrollbar({
             nocompatible: true,
             preferredStrategy: "pseudoelements",
