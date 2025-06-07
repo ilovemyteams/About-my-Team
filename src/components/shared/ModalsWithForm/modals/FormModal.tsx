@@ -1,5 +1,5 @@
 "use client";
-import { Modal, ModalContent, useDisclosure } from "@nextui-org/react";
+import { Modal, ModalContent, useDisclosure } from "@heroui/react";
 import { ComponentType, Dispatch, SetStateAction } from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";

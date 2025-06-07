@@ -1,4 +1,4 @@
-import { addProtocol } from "@/src/utils/httpsProtocols";
+import { addProtocol } from "@/src/utils/addProtocol";
 
 export const MemberProjectExperience = ({
     projectsExperience,

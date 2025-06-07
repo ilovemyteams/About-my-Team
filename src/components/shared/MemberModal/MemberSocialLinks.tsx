@@ -39,7 +39,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.telegram}
                             image={iconTelegram}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
@@ -53,7 +52,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.github}
                             image={iconGithub}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
@@ -67,7 +65,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.googleDrive}
                             image={iconGoogleDrive}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
@@ -81,7 +78,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.behance}
                             image={iconBehance}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
@@ -95,7 +91,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.linkedin}
                             image={iconLinkedin}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>
@@ -109,7 +104,6 @@ export const MemberSocialLinks = ({
                         <SocialLink
                             url={socialLinks.linkedin}
                             image={iconLinkedin}
-                            newWindow={true}
                             className="max-w-8 max-h-8 px-0 py-0 pc:px-0 pc:py-0"
                         />
                     </div>

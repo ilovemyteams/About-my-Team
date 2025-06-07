@@ -1,13 +1,10 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
-import React, { useCallback, useEffect, useRef } from "react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
-import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 
-import { JoinUsCard } from "./JoinUsCard";
-import { MemberCard } from "./MemberCard";
+import { MemberCard } from "../../shared/MemberCard";
 import { SliderButtons } from "./SliderButtons";
 
 const OPTIONS: EmblaOptionsType = {
@@ -18,48 +15,14 @@ const OPTIONS: EmblaOptionsType = {
 
 export const MemberCardsList = ({
     membersData,
-    optionType,
 }: {
     membersData: MemberDataItemType[];
-    optionType: string;
 }) => {
     const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
-    const { slideId, setSlideId } = usePreviousURL();
-
-    const updateSlideIdInURL = useCallback(
-        (index: number) => {
-            const url = new URL(window.location.href);
-            url.searchParams.set("slideId", index.toString());
-            window.history.pushState({}, "", url);
-            setSlideId(index);
-        },
-        [setSlideId]
-    );
-
-    const isFirstRender = useRef(true);
-    useEffect(() => {
-        if (!isFirstRender.current && emblaApi) {
-            // Reset the slider to the first slide whenever optionType changes
-            emblaApi.scrollTo(slideId);
-        } else {
-            isFirstRender.current = false;
-        }
-        if (emblaApi) {
-            const onSelect = () => {
-                const index = emblaApi.selectedScrollSnap();
-                updateSlideIdInURL(index);
-            };
-            emblaApi.on("select", onSelect);
-            return () => {
-                emblaApi.off("select", onSelect);
-            };
-        }
-    }, [optionType, emblaApi, membersData, updateSlideIdInURL, slideId]);
 
     const numberOfMembers = membersData.length;
     const lastBorder =
-        (numberOfMembers === 1 || numberOfMembers === 2) &&
-        optionType !== "person"
+        numberOfMembers === 1 || numberOfMembers === 2
             ? "border-r"
             : "border-r-0";
     return (
@@ -74,11 +37,6 @@ export const MemberCardsList = ({
                             <MemberCard data={data} />
                         </li>
                     ))}
-                    {optionType === "person" && (
-                        <li className="embla__slide  flex-[0_0_50%] w-full border border-purple-strokeLight dark:border-purple-stroke border-r-0 even:ml-[-1px]">
-                            <JoinUsCard />
-                        </li>
-                    )}
                 </ul>
                 <SliderButtons membersData={membersData} emblaApi={emblaApi} />
             </div>

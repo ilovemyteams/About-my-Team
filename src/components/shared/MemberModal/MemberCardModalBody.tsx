@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
+import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
 import { SharePopover } from "@/src/components/shared/SharePopover";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
@@ -29,7 +29,7 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
     const locale = useLocale();
 
     return (
-        <div className="tab:hidden relative min-w-[288px] h-auto mx-4 tab:mx-6">
+        <div className="tab:hidden relative min-w-[288px] h-auto ">
             <div className="p-[8px] pt-0 border border-purple-strokeLight dark:border-purple-stroke border-b-0 ">
                 {pricePerHour && (
                     <div className="absolute right-2 flex text-sm justify-center items-center w-[95px] h-5 ml-auto -mr-2 text-purple-130 dark:text-purple-50 border border-r-0 border-t-0 border-purple-strokeLight dark:border-purple-stroke">
@@ -43,14 +43,14 @@ export const MemberCardModalBody = ({ data }: MemberCardModalBodyProp) => {
                             <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
                         </div>
                         {imageURL && (
-                            <Image
+                            <ImageFromCloud
+                                storage="members"
                                 src={imageURL}
                                 width={60}
                                 height={60}
-                                objectFit="cover"
                                 alt={data[locale as LocaleType]?.name}
                                 loading="lazy"
-                                className="absolute top-0 left-0"
+                                className="absolute top-0 left-0 object-cover"
                             />
                         )}
                     </div>

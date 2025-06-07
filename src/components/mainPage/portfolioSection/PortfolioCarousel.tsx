@@ -1,10 +1,12 @@
 "use client";
 import { EmblaOptionsType } from "embla-carousel";
+import AutoScroll from "embla-carousel-auto-scroll";
 import useEmblaCarousel from "embla-carousel-react";
 import React from "react";
 
-import { PortfolioSliderProps } from "@/types/sanityDataPropsTypes";
+import { PortfolioDataItemType } from "@/src/mockedData/portfolioData";
 
+import { ProjectCard } from "../../shared/ProjectCard";
 import {
     NextButton,
     PrevButton,
@@ -12,18 +14,26 @@ import {
 } from "../../shared/SliderComponents/CarouselButtons";
 import { useDotButton } from "../../shared/SliderComponents/SliderDots";
 import { SliderDotsBox } from "../../shared/SliderComponents/SliderDotsBox";
-import { PortfolioCard } from "./PortfolioCard";
 
 type PortfolioCarouselProps = {
-    projects: PortfolioSliderProps[];
+    projects: PortfolioDataItemType[];
     options?: EmblaOptionsType;
 };
 
 export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
     const { projects, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options);
+    const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+        AutoScroll({
+            playOnInit: true,
+            speed: 1,
+            stopOnInteraction: false,
+            stopOnMouseEnter: false,
+            stopOnFocusIn: false,
+        }),
+    ]);
     const { selectedIndex, scrollSnaps, onDotButtonClick } =
         useDotButton(emblaApi);
+
     const {
         prevBtnDisabled,
         nextBtnDisabled,
@@ -37,14 +47,18 @@ export const PortfolioCarousel: React.FC<PortfolioCarouselProps> = props => {
                 <div className=" flex">
                     {projects.map(project => (
                         <div
-                            key={project._id}
-                            className="embla__slide flex-[0_0_100%] tab:flex-[0_0_50%] w-full"
+                            key={project.data.id}
+                            className="embla__slide flex-[0_0_100%] tab:flex-[0_0_40%] w-full px-[5px] pc:px-2 desk:px-[10px]"
                         >
-                            <PortfolioCard data={project} index={project._id} />
+                            <ProjectCard
+                                data={project}
+                                seeCaseButton={false}
+                                main
+                            />
                         </div>
                     ))}
                 </div>
-                <div className="embla__controls  tab:absolute tab:-top-[80px] pc:-top-[112px] right-0 mt-[16px] tab:mt-0">
+                <div className="embla__controls  tab:hidden right-0 mt-[16px] ">
                     <div className="embla__buttons flex justify-center gap-4">
                         <PrevButton
                             onClick={onPrevButtonClick}
