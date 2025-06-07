@@ -5,13 +5,13 @@ import { useState } from "react";
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
+import { getPaddedMembers } from "@/src/utils/renderedMembers";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconProfile } from "../../shared/Icons/IconProfile";
 import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import { MemberCardMain } from "./MemberCardMain";
 import { Skeleton } from "./Skeleton";
-import { getPaddedMembers } from "@/src/utils/renderedMembers";
 
 export const MemberCardsListPC = ({
     membersData,

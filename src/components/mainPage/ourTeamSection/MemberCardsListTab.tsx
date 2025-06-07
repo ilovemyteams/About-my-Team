@@ -2,8 +2,8 @@
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 
-import { Skeleton } from "./Skeleton";
 import { MemberCard } from "../../shared/MemberCard";
+import { Skeleton } from "./Skeleton";
 
 export const MemberCardsListTab = ({
     membersData,
