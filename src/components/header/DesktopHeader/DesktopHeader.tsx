@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
@@ -33,10 +34,13 @@ export const DesktopHeader = () => {
                 py-8 "
                 >
                     <LogoLink setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
-                    <BurgerMenuButton
-                        isHeaderMenuOpened={isHeaderMenuOpened}
-                        toggleHeaderMenuOpen={toggleHeaderMenuOpen}
-                    />
+                    <div className=" relative flex flex-col pc:gap-8 desk:gap-10">
+                        <BurgerMenuButton
+                            isHeaderMenuOpened={isHeaderMenuOpened}
+                            toggleHeaderMenuOpen={toggleHeaderMenuOpen}
+                        />
+                    </div>
+
                     <SocialLinksList />
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { addProtocol } from "@/src/utils/httpsProtocols";
+import { addProtocol, removeProtocol } from "@/src/utils/addProtocol";
 
 import { IconGoToSite } from "./Icons/IconGoToSite";
 
@@ -13,7 +13,9 @@ export const GoToSiteLink = ({ siteLink }: { siteLink: string }) => {
  dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
  transition-color ease-out duration-300"
         >
-            <p className=" hidden pc:block underline ">{siteLink}</p>
+            <p className=" hidden pc:block underline ">
+                {removeProtocol(siteLink)}
+            </p>
             <IconGoToSite />
         </a>
     );

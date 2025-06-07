@@ -6,8 +6,15 @@
     --color-grey: #d4d4d4;
     --font-geist: Geist;
 }
+
+/* * {
+    outline: 1px solid red;
+} */
+
+/* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
+    /* padding-right: 17px; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +23,7 @@
     }
 }
 
-/* // Ask if we need this animation */
+/* Smooth animation during scroll */
 html:focus-within {
     scroll-behavior: smooth;
 }
@@ -88,8 +95,35 @@ body {
     .slider-dot--selected {
         @apply bg-redLight dark:bg-red justify-center;
     }
+    .slider-number {
+        @apply dark:text-grey text-greyLight;
+    }
+    .slider-number--selected {
+        @apply text-redLight dark:text-red border-b border-redLight dark:border-red;
+    }
 
     .scroll {
         @apply scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent;
+    }
+
+    .custom-autofill {
+        &:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: #5f3f87 !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    .custom-autofill-default:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+        -webkit-text-fill-color: var(--text-color) !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .bg-construction {
+        background-image: url("/images/under-construction.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }

@@ -13,14 +13,8 @@ export const EstimatedReadingTimeCounter = ({
 }: EstimatedReadingTimeCounterProps) => {
     const getTranslation = useTranslations("Badges");
     const readTime = rte(text);
-    const textValue =
-        readTime > 1
-            ? getTranslation("readTimePlural")
-            : getTranslation("readTimeSingular");
+
     return (
-        <p className={className}>
-            {readTime}
-            {textValue}
-        </p>
+        <p className={className}>{getTranslation("readTime", { readTime })}</p>
     );
 };

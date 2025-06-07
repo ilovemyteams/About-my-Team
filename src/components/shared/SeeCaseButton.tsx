@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import { IconArrow } from "./Icons/IconArrow";
+import { IconArrow } from "../shared/Icons/IconArrow";
 
 export const SeeCaseButton = () => {
     const getTranslation = useTranslations("PortfolioPage");

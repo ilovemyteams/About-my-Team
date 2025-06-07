@@ -4,7 +4,13 @@ import Cookies from "js-cookie";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export function ThemeSwitcher({ id }: { id: string }) {
+export function ThemeSwitcher({
+    id,
+    isAlwaysLight = false,
+}: {
+    id: string;
+    isAlwaysLight?: boolean;
+}) {
     const { setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState<boolean>(false);
 
@@ -28,6 +34,15 @@ export function ThemeSwitcher({ id }: { id: string }) {
         Cookies.set("theme", newTheme);
     };
 
+    //Remove after easter event
+    const borderColor = isAlwaysLight
+        ? "dark:border-grey border-greyLight pc:dark:border-greyLight"
+        : "dark:border-grey border-greyLight";
+
+    const circleColor = isAlwaysLight
+        ? "dark:bg-grey bg-greyLight pc:dark:bg-greyLight"
+        : "dark:bg-grey bg-greyLight";
+
     if (!mounted) {
         return (
             <div className="w-[66px] h-[28px] border dark:border-grey border-greyLight rounded-[32px]"></div>
@@ -37,7 +52,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
     return (
         <div
             id={id}
-            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] dark:border-grey border-greyLight`}
+            className={`relative bg-transparent w-[66px] h-[28px] border rounded-[32px] ${borderColor}`}
         >
             <label htmlFor="themeToggle" className="cursor-pointer ">
                 <input
@@ -53,7 +68,7 @@ export function ThemeSwitcher({ id }: { id: string }) {
                     <div
                         className={`absolute w-[22px] h-[22px] rounded-full translate-y-[2px]
                         ${resolvedTheme === "dark" ? "translate-x-[3px]" : "translate-x-[40px]"} 
-                        dark:bg-grey  bg-greyLight transition-transform duration-300 ease-out`}
+                        ${circleColor} transition-transform duration-300 ease-out`}
                     ></div>
                 </div>
             </label>

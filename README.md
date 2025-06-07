@@ -1,10 +1,7 @@
-# About-my-Team
+About-my-Team
+This is a Next.js project bootstrapped with create-next-app.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
+Getting Started
 First, make sure you have Node.js installed on your machine
 
 Second, open the terminal in your IDE and install the necessary dependencies:
@@ -73,3 +70,16 @@ details.
 | `/schemas`                        |  Where Sanity Studio gets its content types from         |
 | `/plugins`                        |  Where the advanced Sanity Studio customization is setup |
 | `/lib/api.ts`,`/lib/image.ts`     | Configuration for the Sanity Content Lake client         |
+
+Storage For Images:
+
+Storage 1 (Member):
+
+- members
+
+Storage 2 (Default):
+
+- faq;
+- services;
+- portfolio;
+- smachno;

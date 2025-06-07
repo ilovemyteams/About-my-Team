@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { useElementWidth } from "@/src/hooks/useElementWidth";
 
+import { RedSquareBullet } from "../RedSquareBullet";
 import { ShowMoreButton } from "../ShowMoreButton";
 import { ItemNumber } from "./ItemNumber";
 
@@ -75,9 +76,7 @@ export const OneTableItemInfo = ({
         >
             {isNumberShown && <ItemNumber itemNumber={itemNumber} />}
             <div className="flex gap-2 items-center">
-                {isIconShown && (
-                    <div className="w-[18px] h-[18px] dark:border-red border-redLight border-[3px]"></div>
-                )}
+                {isIconShown && <RedSquareBullet />}
                 <h3 className="font-caviar text-xlb dark:text-white-200 text-purple-200">
                     {title}
                 </h3>

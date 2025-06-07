@@ -147,6 +147,7 @@
         "titleFirstLine": "Start <purple>implementing</purple> your ",
         "titleSecondLine": "<purple>business ideas</purple> together <purple>with us</purple>",
         "privacyPolicy": "privacy policy",
+        "publicOffer": "public offer",
         "copyright": "2024, i love my team"
     },
     "NotFound": {
@@ -178,7 +179,11 @@
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields are required to be filled in",
-        "informedAgreement": "By clicking the “Send” button, you agree to the     ",
+
+        "informedAgreement": "I agree to the ",
+        "informedAgreementSeparator": " and ",
+        "privacyPolicy": "Privacy Policy",
+        "publicOffer": "Public Offer",
         "rulesLink": "Terms of Personal Data Processing",
         "submitButton": "Send",
         "questionLabel": "Your question*",
@@ -219,9 +224,10 @@
     },
 
     "Cookies": {
-        "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click OK. More information in the  ",
-        "policy": "Privacy Policy.",
-        "button": "ok"
+        "text": "This website uses cookies for the proper functioning and service improvement. If you agree to their use, click “accept”. More information in the <link>Privacy Policy</link>. ",
+        "accept": "accept",
+        "reject": "reject",
+        "configure": "configure"
     },
     "AboutPage": {
         "titleSEO": "Our goal is to create amazing digital products",
@@ -362,5 +368,15 @@
         "behanceLink": "Project Design",
         "taskTitle": "<purple>The tasks</purple> we worked on",
         "decisionsTitle": "<purple>The solutions</purple> that were implemented"
+
+    },
+    "PrivacyPolicy": {
+        "titleSEO": "Personal Data Privacy Policy | i love my team",
+        "descriptionSEO": "Protection of personal data of users and clients of i love my team. Terms of data collection, processing, and storage in accordance with GDPR and Ukrainian regulations."
+    },
+    "PublicOffer": {
+        "titleSEO": "Public Agreement for Digital Services | i love my team",
+        "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
+
     }
 }
