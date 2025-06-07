@@ -1,37 +1,35 @@
 import { EmblaOptionsType } from "embla-carousel";
+import { useMemo } from "react";
 
-import { HomeReviewsQueryResult } from "@/types/sanity.types";
+import { feedbackData } from "@/src/mockedData/feedbackData";
+import { shuffleArray } from "@/src/utils/shuffleArray";
 
+import { FeedbackSlider } from "../../shared/Feedbacks/FeedbackSlider";
+import { FeedbackSliderFromTab } from "../../shared/Feedbacks/FeedbackSliderFromTab";
 import { Section } from "../../shared/Section";
 import { SharePopover } from "../../shared/SharePopover";
-import { FeedbackSlider } from "./FeedbackSlider";
-import { FeedbackSliderFromTab } from "./FeedbackSliderFromTab";
 import { FeedbackTitle } from "./FeedbackTitle";
 
-export const FeedbackSection = ({ data }: { data: HomeReviewsQueryResult }) => {
+export const FeedbackSection = () => {
     const OPTIONS: EmblaOptionsType = { loop: true, align: "start" };
-    if (!data) {
-        return null;
-    }
-    const { title, subtitle, anchorId, feedbacks } = data;
+    const shuffledFeedbacks = useMemo(() => shuffleArray(feedbackData), []);
     return (
-        <Section id={anchorId || "reviews"} className="relative">
-            <FeedbackTitle title={title} subtitle={subtitle} />
+        <Section id="feedback" className="relative">
+            <FeedbackTitle />
             <div className="tab:hidden">
-                {feedbacks && (
-                    <FeedbackSlider feedbacks={feedbacks} options={OPTIONS} />
-                )}
+                <FeedbackSlider
+                    feedbacks={shuffledFeedbacks}
+                    options={OPTIONS}
+                />
             </div>
             <div className="hidden tab:block tab:pb-[75px] pc:pb-[78px]">
-                {feedbacks && (
-                    <FeedbackSliderFromTab
-                        feedbacks={feedbacks}
-                        options={OPTIONS}
-                    />
-                )}
+                <FeedbackSliderFromTab
+                    feedbacks={shuffledFeedbacks}
+                    options={OPTIONS}
+                />
             </div>
             <SharePopover
-                className="absolute -top-3 right-4 tab:right-6 tab:top-[414px] tab:items-end pc:right-[60px] pc:top-[526px]"
+                className="absolute -top-3 right-4 tab:right-6 tab:top-[414px] tab:items-end pc:right-[60px] pc:top-[526px] desk:top-[630px]"
                 id="feedback"
                 trigerShowShareText={false}
             />
