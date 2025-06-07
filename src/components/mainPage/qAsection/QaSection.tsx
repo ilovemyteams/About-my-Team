@@ -1,10 +1,9 @@
 "use client";
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
-
-import { HomeFAQQueryResult } from "@/types/sanity.types";
 
 import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
@@ -12,29 +11,28 @@ import { SharePopover } from "../../shared/SharePopover";
 import { QuestionsList } from "./QuestionsList";
 import { TitleQA } from "./TitleQA";
 
-export const QaSection = ({ data }: { data: HomeFAQQueryResult }) => {
+export const QaSection = () => {
     const { ref, inView } = useInView({
         threshold: 0.75,
     });
     const getTranslation = useTranslations("Buttons");
-
-    const { anchorId, faqList, subtitle, title } = data || {};
 
     const router = useRouter();
     const locale = useLocale();
 
     const handleButtonClick = () => {
         router.push(`/${locale}/faq`);
+        sendGTMEvent({
+            event: "learn_more_faq",
+        });
     };
     return (
-        <Section id={anchorId || ""} className="relative">
+        <Section id="faq" className="relative">
             <div ref={ref}>
                 <div className="flex">
-                    {subtitle && title && (
-                        <TitleQA title={title} subtitle={subtitle} />
-                    )}
+                    <TitleQA />
                     <SharePopover
-                        className="absolute top-3 right-4 tab:top-0 tab:right-4 pc:right-[60px]"
+                        className="absolute -top-3 right-4 tab:top-[-4px] tab:right-6 pc:top-0 pc:right-[60px]"
                         id="faq"
                         trigerShowShareText={true}
                     />
@@ -47,7 +45,7 @@ export const QaSection = ({ data }: { data: HomeFAQQueryResult }) => {
                         alt="animated image curve"
                         className={`hidden pc:block absolute top-[-16px] left-[-254px] min-w-[485px] h-auto ${inView && "animate-curveRotation"}`}
                     />
-                    <QuestionsList faqList={faqList || []} />
+                    <QuestionsList />
                 </div>
             </div>
             <div className="flex justify-center tab:justify-end">
