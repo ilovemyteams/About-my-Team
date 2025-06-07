@@ -52,7 +52,6 @@ export const QuoteSection = () => {
                                 <SocialLink
                                     url={SusannasLi}
                                     image={iconLinkedin}
-                                    newWindow={true}
                                 />
                             )}
                         </div>
