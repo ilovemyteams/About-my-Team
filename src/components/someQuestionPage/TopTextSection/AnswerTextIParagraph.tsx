@@ -1,135 +1,53 @@
-import Link from "next/link";
-import { useLocale } from "next-intl";
-import { ReactElement } from "react";
+import React from "react";
 
-import { escapeSpecSymbolsInSearch } from "@/src/utils/escapeSpecSymbolsInSearch";
-import type { LocaleType } from "@/types/LocaleType";
+import { HighlightText } from "../../shared/Search/HighlightText";
 
-type HighlightTextProps = {
+interface AnswerTextIParagraphProps {
     text: string;
-    toBeHighlighted: string;
-    isInitial?: boolean;
-    isStripped?: boolean;
-};
+    indx: number;
+    searchTerm: string;
+}
 
-const linkRegex = /\*link=`([^`]*)`(?:\s+(noblank))?\*([^*]*)\*\/link\*/g;
-
-export const HighlightText = ({
+export const AnswerTextIParagraph = ({
     text,
-    toBeHighlighted,
-    isInitial = false,
-    isStripped = false,
-}: HighlightTextProps) => {
-    const locale = useLocale() as LocaleType;
-
-    if (isInitial) {
+    indx,
+    searchTerm,
+}: AnswerTextIParagraphProps) => {
+    if (indx !== 0) {
         return (
-            <span className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40">
-                {text}
-            </span>
+            <p>
+                <HighlightText text={text} toBeHighlighted={searchTerm} />
+            </p>
+        );
+    }
+    let firstLetter, restParagraph;
+    if (
+        searchTerm !== "" &&
+        text.toLowerCase().startsWith(searchTerm.toLowerCase())
+    ) {
+        firstLetter = (
+            <HighlightText text={text[0]} toBeHighlighted={text[0]} isInitial />
+        );
+        restParagraph = (
+            <HighlightText
+                text={text}
+                toBeHighlighted={searchTerm}
+                isStripped
+            />
+        );
+    } else {
+        firstLetter = <HighlightText text={text[0]} toBeHighlighted={""} />;
+        restParagraph = (
+            <HighlightText text={text.slice(1)} toBeHighlighted={searchTerm} />
         );
     }
 
-    const parseTextWithLink = (
-        inputText: string,
-        locale?: LocaleType
-    ): (string | ReactElement)[] => {
-        const matches = Array.from(inputText.matchAll(linkRegex));
-        let lastIndex = 0;
-
-        const result = matches.flatMap((match, matchIndex) => {
-            const matchStartIndex = match.index ?? 0;
-            const textBeforeLink =
-                matchStartIndex > lastIndex
-                    ? inputText.slice(lastIndex, matchStartIndex)
-                    : "";
-            lastIndex = matchStartIndex + match[0].length;
-
-            const url = match[1]
-                .replace("${locale}", locale || "")
-                .replace(
-                    "${process.env.NEXT_PUBLIC_BASE_URL}",
-                    process.env.NEXT_PUBLIC_BASE_URL || ""
-                );
-
-            const noblank = match[2];
-            const linkText = match[3];
-            const highlightedLinkText = highlightSearchTerm(
-                linkText,
-                toBeHighlighted,
-                false
-            );
-
-            return [
-                ...highlightSearchTerm(
-                    textBeforeLink,
-                    toBeHighlighted,
-                    isStripped
-                ),
-                <Link
-                    className="text-purple-130 dark:text-purple-50 dark:pc:hover:text-red 
-                        pc:hover:text-redLight dark:active:text-red active:text-redLight 
-                        dark:pc:focus:text-red pc:focus:text-redLight outline-none
-                        transition-color ease-out duration-300 underline"
-                    href={url}
-                    key={`${url}-${matchIndex}`}
-                    target={noblank ? "_self" : "_blank"}
-                >
-                    {highlightedLinkText}
-                </Link>,
-            ];
-        });
-
-        if (lastIndex < inputText.length) {
-            const remainingText = inputText.slice(lastIndex);
-            result.push(
-                ...highlightSearchTerm(
-                    remainingText,
-                    toBeHighlighted,
-                    isStripped
-                )
-            );
-        }
-
-        return result;
-    };
-
-    const highlightSearchTerm = (
-        text: string,
-        searchTerm: string,
-        isStripped: boolean
-    ): (string | ReactElement)[] => {
-        if (!searchTerm) return [text];
-
-        const words = searchTerm
-            .split(/\s+/)
-            .filter(Boolean)
-            .map(escapeSpecSymbolsInSearch);
-
-        const regex = new RegExp(`(${words.join("|")})`, "gi");
-
-        return text
-            .split(regex)
-            .filter(Boolean)
-            .map((part, index) => {
-                if (regex.test(part)) {
-                    const strippedPart =
-                        isStripped && index === 0 ? part.slice(1) : part;
-
-                    return (
-                        <span
-                            key={index}
-                            className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40"
-                        >
-                            {strippedPart}
-                        </span>
-                    );
-                }
-                return part;
-            });
-    };
-
-    const parsedResult = parseTextWithLink(text, locale);
-
-    return <>{parsedResult}</>;
+    return (
+        <p className="tab:pt-1 pc:pt-[2px] desk:pt-[3px]">
+            <span className="inline-block text-purple-100 dark:text-purple-50 font-caviar font-bold leading-[0.7] tab:leading-[0.8] pc:leading-[0.87] desk:leading-[0.83] text-[52px] tab:text-[56px] pc:text-[96px] desk:text-[122px] mr-1 pc:mr-2 float-left translate-y-[-1/2]">
+                {firstLetter}
+            </span>
+            {restParagraph}
+        </p>
+    );
 };
