@@ -1,7 +1,4 @@
-"use client";
 import { useTranslations } from "next-intl";
-
-import { useSettingsContext } from "@/src/utils/SettingsSanityContext";
 
 import { IconBuyMeCoffee } from "./Icons/IconBuyMeCoffee";
 
@@ -10,26 +7,17 @@ interface BuyMeCoffeeLinkProps {
     textClassName?: string;
 }
 
+const BUY_ME_COFFEE = "https://www.buymeacoffee.com/susanna.salata";
+
 export const BuyMeCoffeeLink = ({
     className,
     textClassName = "right-[56px]",
 }: BuyMeCoffeeLinkProps) => {
     const getTranslation = useTranslations("Buttons");
-    const { data } = useSettingsContext();
-
-    const buttonNameString = data?.buttonBuyMeCoffee?.buttonName
-        ? data.buttonBuyMeCoffee.buttonName.toString()
-        : getTranslation("buyMeACoffee");
-
-    const BUY_ME_COFFEE = data?.buttonBuyMeCoffee?.linkExternal?.url
-        ? data.buttonBuyMeCoffee.linkExternal.url
-        : "https://www.buymeacoffee.com/susanna.salata";
     return (
         <a
             href={BUY_ME_COFFEE}
-            target={
-                data?.buttonBuyMeCoffee?.linkExternal?.newWindow ? "_blank" : ""
-            }
+            target="_blank"
             rel="noopener noreferrer"
             className={`pointer relative group w-[56px] h-[56px] flex justify-center items-center     
                         icon-hover-rounded-purple ${className}`}
@@ -39,7 +27,7 @@ export const BuyMeCoffeeLink = ({
                 className={`hidden pc:block absolute font-caviar text-lg top-[19px] w-max opacity-0 
                     invisible group-hover:visible group-hover:opacity-100 duration-[600ms] group-hover:ease-in transition-opacity-visibility ${textClassName}`}
             >
-                {buttonNameString}
+                {getTranslation("buyMeACoffee")}
             </p>
         </a>
     );

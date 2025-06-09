@@ -3,7 +3,7 @@ import React from "react";
 // Додаємо параметр locale
 export const parseTextWithLink = (text: string, locale: string) => {
     // Використовуємо змінну середовища та locale для створення посилання
-    const linkRegex = /\*link=`([^`]*)`\*([^*]*)\*\/link\*/g;
+    const linkRegex = /\*link=`([^`]*)`(?:\s+(noblank))?\*([^*]*)\*\/link\*/g;
     const parts = [];
     let lastIndex = 0;
     let match;
@@ -19,20 +19,23 @@ export const parseTextWithLink = (text: string, locale: string) => {
                 "${process.env.NEXT_PUBLIC_BASE_URL}",
                 process.env.NEXT_PUBLIC_BASE_URL || ""
             )
-            .replace("${locale}", locale);
+            .replace("${locale}", locale)
+            .replace("${policyUrl}", "/policy");
 
+        const noblank = match[2];
+        const linkText = match[3];
         parts.push(
             <a
                 className=" text-purple-130 dark:text-purple-50  dark:pc:hover:text-red 
  pc:hover:text-redLight dark:active:text-red active:text-redLight 
- dark:pc:focus:text-red pc:focus:text-redLight font-caviar text-lg outline-none
+ dark:pc:focus:text-red pc:focus:text-redLight text-inherit outline-none
  transition-color ease-out duration-300 underline"
                 href={url}
                 key={url}
-                target="_blank"
+                target={noblank ? "_self" : "_blank"}
                 rel="noopener noreferrer"
             >
-                {match[2]}
+                {linkText}
             </a>
         );
         lastIndex = linkRegex.lastIndex;

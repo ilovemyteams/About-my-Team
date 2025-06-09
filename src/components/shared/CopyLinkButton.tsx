@@ -1,3 +1,4 @@
+import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React, { ReactNode, useState } from "react";
@@ -5,16 +6,30 @@ import React, { ReactNode, useState } from "react";
 const CopyLinkButton = ({
     link,
     children,
+    utmMedium,
+    utmCampaign,
 }: {
     link: string;
     children: ReactNode;
+    utmMedium: string | undefined;
+    utmCampaign: string | undefined;
 }) => {
     const [copied, setCopied] = useState(false);
     const [notCopied, setNotCopied] = useState(false);
 
     const handleCopyLink = async () => {
         try {
-            await navigator.clipboard.writeText(link);
+            await navigator.clipboard.writeText(
+                utmMedium && utmCampaign
+                    ? `${link}/?utm_source=copy_link&utm_medium=${utmMedium}&utm_campaign=${utmCampaign}`
+                    : link
+            );
+
+            sendGTMEvent({
+                event: "copy_link_share_button_click",
+                page_location: link,
+            });
+
             setCopied(true);
             setTimeout(() => setCopied(false), 3000);
         } catch (error) {

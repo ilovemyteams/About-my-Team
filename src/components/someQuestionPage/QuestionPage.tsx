@@ -1,8 +1,9 @@
-import { useLocale } from "next-intl";
+import { getLocale } from "next-intl/server";
 import React from "react";
 
 import { QAItemType } from "@/src/mockedData/questionsData";
 import { getTextString } from "@/src/utils/getTextString";
+import { getLikes } from "@/src/utils/likeDataHandler";
 import type { LocaleType } from "@/types/LocaleType";
 
 import { UnderConstruction } from "../underConstruction/UnderConstruction";
@@ -15,11 +16,12 @@ import { TopTextSection } from "./TopTextSection/TopTextSection";
 
 interface QuestionPageProps {
     question: QAItemType;
+    searchTerm: string;
 }
 
-export const Question = ({ question }: QuestionPageProps) => {
+export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
     const { data } = question;
-    const locale = useLocale();
+    const locale = await getLocale();
 
     const {
         questionText,
@@ -30,11 +32,14 @@ export const Question = ({ question }: QuestionPageProps) => {
         imageAltText,
     } = question[locale as LocaleType];
 
-    const { image, layout, answerOrderImage } = data;
+    const { image, answerOrderImage, slug, removeOrderBtn } = data;
 
     const fullAnswerTextString = getTextString(fullAnswerContent);
 
     const allTexts = `${shortAnswerText} ${fullAnswerTopText?.join(" ") || ""} ${fullAnswerBottomText?.join(" ") || ""} ${fullAnswerTextString}`;
+
+    const allLikes = await getLikes();
+    const questionLikes = allLikes.filter(item => item.questionSlug === slug);
 
     return (
         <>
@@ -42,25 +47,31 @@ export const Question = ({ question }: QuestionPageProps) => {
                 pageTitle={questionText}
                 pageImageUrl={image}
                 estimateText={allTexts}
+                searchTerm={searchTerm}
             />
             <TopTextSection
                 shortAnswer={shortAnswerText}
                 fullAnswerText={fullAnswerTopText}
+                searchTerm={searchTerm}
             />
-            {fullAnswerContent && layout ? (
+            {fullAnswerContent ? (
                 <>
                     <MainContent
-                        locale={locale as LocaleType}
-                        layout={layout}
                         content={fullAnswerContent}
+                        searchTerm={searchTerm}
                     />
 
                     <OrderCard
                         imageLink={answerOrderImage}
                         fullAnswerBottomText={fullAnswerBottomText}
                         imageAltText={imageAltText}
+                        removedOrderBtn={!!removeOrderBtn}
+                        searchTerm={searchTerm}
                     />
-                    <HelpfullAnswerSection />
+                    <HelpfullAnswerSection
+                        questionLikes={questionLikes}
+                        questionSlug={slug}
+                    />
                     <CtaSectionAskUs />
                 </>
             ) : (

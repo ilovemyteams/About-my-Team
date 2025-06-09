@@ -1,37 +1,15 @@
-import { PortableText } from "next-sanity";
+import { ColoredTitle } from "../shared/ColoredTitle";
 
-import { myPortableTextComponents } from "@/sanity/utils/portableTexts";
-import { PortableColorTitle } from "@/types/sanity.types";
+export const TitleFooter = () => {
+    const titleNames = ["titleFirstLine", "titleSecondLine"];
 
-import { TitleWrapper } from "../shared/TitleWrapper";
-
-export const TitleFooter = ({
-    title,
-}: {
-    title: PortableColorTitle | null;
-}) => {
     return (
-        <TitleWrapper className="flex flex-col pb-0 mb-9 mt-5  pc:flex-row flex-start tab:pb-0 tab:mb-[98px] pc:mb-[121px] pc:mt-[46px] tab:mt-[40px] deskxl:mb-[156px]">
-            {title && (
-                <div className="w-[87%]">
-                    <div>
-                        {title[0] && (
-                            <PortableText
-                                value={title[0]}
-                                components={myPortableTextComponents}
-                            />
-                        )}
-                    </div>
-                    <div className="tab:ml-[133px] pc:ml-[180px]">
-                        {title[1] && (
-                            <PortableText
-                                value={title[1]}
-                                components={myPortableTextComponents}
-                            />
-                        )}
-                    </div>
-                </div>
-            )}
-        </TitleWrapper>
+        <h2 className="font-caviar text-purple-200 dark:text-grey dark: text-3xl tab:text-4xl pc:text-6xl desk:text-7xl w-[87%] max-w-[330px] tab:w-full tab:max-w-fit">
+            <ColoredTitle
+                categoryName="Footer"
+                propName={titleNames}
+                className=" tab:[&:nth-of-type(2)]:pl-[133px] pc:[&:nth-of-type(2)]:pl-[165px]"
+            />
+        </h2>
     );
 };

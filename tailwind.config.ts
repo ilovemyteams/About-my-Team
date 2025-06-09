@@ -39,6 +39,7 @@ const config: Config = {
                     lineHeight: "15px",
                 },
             ],
+
             sm: [
                 "14px",
                 {
@@ -108,6 +109,12 @@ const config: Config = {
                     lineHeight: "30px",
                 },
             ],
+            "2xl24": [
+                "24px",
+                {
+                    lineHeight: "24px",
+                },
+            ],
             "2xl34": [
                 "24px",
                 {
@@ -128,6 +135,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "3xl28": [
+                "28px",
+                {
+                    lineHeight: "28px",
+                },
+            ],
             "4xl": [
                 "32px",
                 {
@@ -135,7 +148,12 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
-
+            "4xl42": [
+                "32px",
+                {
+                    lineHeight: "42px",
+                },
+            ],
             "5xl": [
                 "40px",
                 {
@@ -143,22 +161,41 @@ const config: Config = {
                     fontWeight: "700",
                 },
             ],
+            "5xl40": [
+                "40px",
+                {
+                    lineHeight: "40px",
+                },
+            ],
             "6xl": [
                 "48px",
                 {
                     lineHeight: "48px",
-
                     fontWeight: "700",
                 },
             ],
+            "6xln": [
+                "48px",
+                {
+                    lineHeight: "48px",
+                },
+            ],
+            "6xlt": ["48px", { lineHeight: "62px" }],
+
             "7xl": [
                 "64px",
                 {
                     lineHeight: "64px",
-
                     fontWeight: "700",
                 },
             ],
+            "8xl": [
+                "80px",
+                {
+                    lineHeight: "104px",
+                },
+            ],
+            "9xl": ["88px", { lineHeight: "88px" }],
         },
         extend: {
             variants: {
@@ -177,6 +214,10 @@ const config: Config = {
             height: {
                 "70": "calc(100dvh - 80px)",
                 "80": "calc(100vh - 80px)",
+                lineWithoutHexagonMob: "calc(100% - 12px)",
+                lineWithoutHexagonTab: "calc(100% - 24px)",
+                lineWithoutHexagonPC: "calc(100% - 44px)",
+                lineWithoutHexagonDesk: "calc(100% - 62px)",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -186,6 +227,9 @@ const config: Config = {
             fontFamily: {
                 geist: ["var(--font-geist)"],
                 caviar: ["var(--font-caviar)"],
+                intro: ["var(--font-intro)"],
+                segoe: ["var(--font-segoe)"],
+                comfortaa: ["var(--font-comfortaa)"],
             },
             colors: {
                 purple: {
@@ -201,6 +245,7 @@ const config: Config = {
                     strokeLight: "#C7C0F3",
                     stroke03: "rgba(162, 88, 255, 0.3)",
                     dark: "#3C1E63",
+                    stackCardBG: "#6750A41A",
                 },
                 white: { 100: "#FFFFFF", 200: "#FBF8FF" },
                 black: "#000000",
@@ -211,6 +256,8 @@ const config: Config = {
                 disabledLight: "#B097CE",
                 backdrop: "#030303",
                 error: "#D60000",
+                textHighlight: "#30253E",
+                easterGlaze: "#FFDDEC",
             },
             fill: {
                 stroke: "#5F3F87",
@@ -378,6 +425,141 @@ const config: Config = {
                         transform: "rotate(0deg)",
                     },
                 },
+                linesColor: {
+                    "0%": {
+                        backgroundColor: "currentColor",
+                    },
+                    "50%": {
+                        backgroundColor: "#A258FF",
+                    },
+                    "100%": {
+                        backgroundColor: "currentColor",
+                    },
+                },
+                wave: {
+                    "0%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+
+                    "0.5%": {
+                        transform:
+                            "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "1%": {
+                        transform:
+                            "scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "1.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "2%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "2.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "3%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "3.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "4%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+                    },
+                    "4.5%": {
+                        transform:
+                            "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+                    },
+                    "5%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+                    "100%": {
+                        transform: "scale3d(1, 1, 1)",
+                    },
+                },
+                scale: {
+                    "0%": {
+                        transform: "scale(1)",
+                    },
+                    "15%": {
+                        transform: "scaleX(1.1)",
+                    },
+                    "25%": {
+                        transform: "scale(1)",
+                    },
+                    "35%": {
+                        transform: "scaleY(1.2)",
+                    },
+                    "50%": {
+                        transform: "scale(1)",
+                    },
+                    "100%": {
+                        transform: "scale(1)",
+                    },
+                },
+                glow: {
+                    "0%, 100%": { filter: "brightness(1)" },
+                    "50%": { filter: "brightness(1.5)" },
+                },
+                glowLights: {
+                    "0%, 100%": { filter: "brightness(1)" },
+                    "50%": { filter: "brightness(1.1)" },
+                },
+                showUp: {
+                    "0%": {
+                        opacity: "0",
+                    },
+                    "100%": {
+                        opacity: "1",
+                    },
+                },
+                slideUp: {
+                    "0%": { transform: "translateY(100%)" },
+                    "10%": { transform: "translateY(100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
+                slideDown: {
+                    "0%": { transform: "translateY(-100%)" },
+                    "10%": { transform: "translateY(-100%)" },
+                    "100%": { transform: "translateY(0)" },
+                },
+                slideHideUp: {
+                    "0%": { transform: "translateY(0)" },
+                    "90%": { transform: "translateY(100%)" },
+                    "100%": { transform: "translateY(100%)" },
+                },
+                slideHideDown: {
+                    "0%": { transform: "translateY(0)" },
+                    "90%": { transform: "translateY(-100%)" },
+                    "100%": { transform: "translateY(-100%)" },
+                },
+                slideLeft: {
+                    "0%": { transform: "translateX(100%)" },
+                    "10%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideRight: {
+                    "0%": { transform: "translateX(-100%)" },
+                    "10%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(0)" },
+                },
+                slideHideLeft: {
+                    "0%": { transform: "translateX(0)" },
+                    "90%": { transform: "translateX(-100%)" },
+                    "100%": { transform: "translateX(-100%)" },
+                },
+                slideHideRight: {
+                    "0%": { transform: "translateX(0)" },
+                    "90%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(100%)" },
+                },
             },
             animation: {
                 pulsation: "pulsation 2720ms ease-in 1",
@@ -389,6 +571,23 @@ const config: Config = {
                 curveRotation: "curveRotate 3700ms ease-out 1",
                 triangleRotation: "triangleRotate 3000ms ease-out 2",
                 trapezeRotation: "trapezeRotate 3000ms ease-out 2",
+                linesColor: "linesColor 3000ms ease-in infinite",
+                wave: "wave 20s ease-in-out infinite",
+                wobble: "scale .7s ease-in infinite",
+                glow: "glow 2s ease-in-out infinite",
+                glowLights: "glowLights 1500ms ease-in infinite",
+                blink1: "glow 600ms infinite",
+                blink2: "glow 600ms 200ms infinite",
+                blink3: "glow 600ms 400ms infinite",
+                showUp: "showUp 700ms ease-out infinite",
+                slideUp: "slideUp 700ms ease-out",
+                slideDown: "slideDown 700ms ease-out",
+                slideHideUp: "slideHideUp 700ms ease-out",
+                slideHideDown: "slideHideDown 700ms ease-out",
+                slideLeft: "slideLeft 700ms ease-out",
+                slideRight: "slideRight 700ms ease-out",
+                slideHideLeft: "slideHideLeft 700ms ease-out",
+                slideHideRight: "slideHideRight 700ms ease-out",
             },
         },
         backgroundImage: {
@@ -416,6 +615,7 @@ const config: Config = {
             headerGradientLight:
                 "linear-gradient(to right, #FFFFFF 0%, #F4EFFF 51%, #E2D4FF 100%)",
             none: "none",
+            pinkGradient: "linear-gradient(to right, #FFF1F1 0%, #FFBAC2 100%)",
             memberMenuGradientDark:
                 "linear-gradient(to right, #4F0A8680 0%, #20003F80 100%)",
             memberMenuGradientLight:
@@ -428,6 +628,34 @@ const config: Config = {
                 "linear-gradient(90deg, #6607B1DE 0%, #3C0566DE 50%, #1E003DDE 100%)",
             underConstructionGradientLight:
                 "linear-gradient(90.01deg, #B490FFCC 0%, #CFB8FFCC 25%, #EAE0FFCC 50%, #F6F2FFCC 75%, #FEFDFFCC 100%)",
+            serviceCardGradient:
+                "linear-gradient(to right, #4F0A86 0%, #20003F 50%, transparent 50%, transparent 100%)",
+            serviceCardGradientLight:
+                "linear-gradient(to right, #D8C5FF 0%, #EFE8FF 24%, #FBF9FF 50%, transparent 50%, transparent 100%)",
+            discountModalBgGradient:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            discountModalBgGradientLight:
+                "linear-gradient(90deg, #10001A 0%, #300079 100%)",
+            projectCardGradientDark:
+                "linear-gradient(to top, #5F3F87 0%,  #09002ECC 60%, #09002E1A 100%)",
+            projectCardGradient:
+                "linear-gradient(to top, #B490FF 0%, #CFB8FF 25%, #EAE0FF 50%, #F6F2FF 75%, #FEFDFF 100%)",
+            homeServiceCardGradientDark:
+                "linear-gradient(90deg, transparent 10%,  #5F3F87CC 51%, transparent 90%)",
+            homeServiceCardGradientLight:
+                "linear-gradient(90deg, transparent 0%, #B490FFCC 51%, transparent 97%)",
+            selectOptionsGradientDark:
+                "linear-gradient(90deg, #4F0A8680 0%, #20003F80 100%)",
+            selectOptionsGradientLight:
+                "linear-gradient(90deg, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
+        },
+
+        backgroundSize: {
+            "size-200": "200% 200%",
+        },
+        backgroundPosition: {
+            "pos-0": "0% 0%",
+            "pos-100": "100% 100%",
         },
     },
     plugins: [
@@ -436,7 +664,7 @@ const config: Config = {
             nocompatible: true,
             preferredStrategy: "pseudoelements",
         }),
-        plugin(function ({ matchUtilities, theme }) {
+        plugin(function ({ matchUtilities, theme, addUtilities, addBase }) {
             matchUtilities(
                 {
                     "animate-delay": value => ({
@@ -445,6 +673,26 @@ const config: Config = {
                 },
                 { values: theme("transitionDelay") }
             );
+            addUtilities({
+                ".border-dash-horizontal": {
+                    borderStyle: "dashed",
+                    borderWidth: "1px 0", // Верхній і нижній бордер
+                    borderImage:
+                        "repeating-linear-gradient(90deg, #5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+                ".border-dash-vertical": {
+                    borderStyle: "dashed",
+                    borderWidth: "0 1px", // Лівий і правий бордер
+                    borderImage:
+                        "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
+            addBase({
+                ":root": {
+                    "--autofill-text-color-light": theme("colors.purple.200"),
+                    "--autofill-text-color-dark": theme("colors.grey"),
+                },
+            });
         }),
     ],
 };

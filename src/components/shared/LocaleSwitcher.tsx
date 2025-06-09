@@ -2,14 +2,10 @@
 
 import { useSearchParams } from "next/navigation";
 import { useLocale } from "next-intl";
-import { createSharedPathnamesNavigation } from "next-intl/navigation";
 import { useEffect, useState } from "react";
 
 import { locales } from "@/src/config";
-
-const { Link, usePathname } = createSharedPathnamesNavigation({
-    locales,
-});
+import { Link, usePathname } from "@/src/i18n/routing";
 
 const activeStyle = "outline-none dark:text-red text-redLight";
 const inactiveStyle = "outline-none dark:text-purple-stroke text-disabledLight";
@@ -36,6 +32,7 @@ export default function LocaleSwitcher() {
                             search: searchParams.toString(),
                             pathname: pathName,
                         }}
+                        replace
                         locale={curLocale}
                         scroll={false}
                         className={
