@@ -1,7 +1,6 @@
 import { useTranslations } from "next-intl";
 
 import { Table } from "../../shared/Table/Table";
-import { TableItemsList } from "../../shared/Table/TableItemsList";
 
 export const StagesTable = () => {
     const getTranslation = useTranslations("Stages");
