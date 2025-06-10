@@ -3,6 +3,8 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // experimental: { urlImports: ["https://themer.sanity.build/"] },
+
   images: {
     remotePatterns: [
       {
@@ -14,6 +16,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "drive.google.com",
         port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        pathname: "/images/**",
       },
     ],
   },

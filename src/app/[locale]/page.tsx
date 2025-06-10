@@ -25,6 +25,7 @@ export default function Home() {
                 text="titleAreYouReady"
                 eventGTM="order_form_start"
             />
+
             <ReleaseSection />
         </>
     );

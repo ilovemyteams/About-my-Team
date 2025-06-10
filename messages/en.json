@@ -179,6 +179,7 @@
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields are required to be filled in",
+
         "informedAgreement": "I agree to the ",
         "informedAgreementSeparator": " and ",
         "privacyPolicy": "Privacy Policy",
@@ -367,6 +368,7 @@
         "behanceLink": "Project Design",
         "taskTitle": "<purple>The tasks</purple> we worked on",
         "decisionsTitle": "<purple>The solutions</purple> that were implemented"
+
     },
     "PrivacyPolicy": {
         "titleSEO": "Personal Data Privacy Policy | i love my team",
@@ -375,5 +377,6 @@
     "PublicOffer": {
         "titleSEO": "Public Agreement for Digital Services | i love my team",
         "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
+
     }
 }
