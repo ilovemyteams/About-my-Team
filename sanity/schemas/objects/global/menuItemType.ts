@@ -43,7 +43,7 @@ export const menuItemType = defineField({
                     return true;
                 }),
             description:
-                "Enter an internal link to the page (e.g., /about, /faq).",
+                "Enter an internal link to the page (e.g., /about-us, /faq).",
         }),
     ],
     preview: {
