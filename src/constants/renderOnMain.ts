@@ -2,14 +2,14 @@ export const MAIN_MEMBERS = [
     "susanna-salata-product-manager",
     "vlad-shumkov-fullstack-developer",
     "iryna-stoliarova-ui-ux-designer",
-    "oksana-zhmurko-business-analyst",
     "iryna-trynkal-fullstack-developer",
     "kateryna-rubanik-qa-engineer",
     "anna-prutnik-frontend-developer",
-    "natalia-kalabanova-scrum-master",
+    "oksana-arpul-qa-engineer",
     "mila-maksymenko-ui-ux-designer",
     "viktoriia-lapina-ui-ux-designer",
-    "oksana-arpul-qa-engineer",
+    "diana-dudnyk-ui-ux-designer",
+    "vladyslava-bobko-ui-ux-designer",
 ];
 
 export const EMPTY_INDICES = [1, 6, 8, 12]; //Це позиції пустих клітинок в секції команда 2, 7, 9 та 13
