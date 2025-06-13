@@ -47,6 +47,12 @@ const membersId = [
     "yuliya-borys-business-analyst",
     "olha-kuchalska-business-analyst",
     "solomiia-lutska-project-project-manager-scrum-master",
+    "diana-dudnyk-ui-ux-designer",
+    "vladyslava-bobko-ui-ux-designer",
+    "oksana-zhmurko-business-analyst",
+    "stepan-kozurak-project-project-manager",
+    "viktoriia-lapina-ui-ux-designer",
+    "oksana-arpul-qa-engineer",
 ];
 
 async function getDynamicMemberPages() {
