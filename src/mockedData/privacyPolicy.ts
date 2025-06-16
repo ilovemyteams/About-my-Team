@@ -499,7 +499,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Ми можемо попросити вас надати нам додаткову інформацію, яку ми вже маємо, щоб підтвердити, що це ви або особа, яка є офіційним представником від вашого імені (за певних обставин).",
+                        text: "Ми можемо попросити вас надати нам додаткову інформацію, яку ми вже маємо, щоб підтвердити, що це ви або особа, яка є офіційним представником (за певних обставин).",
                     },
                 ],
             },
@@ -736,7 +736,7 @@ export const policyData: PolicyType = {
                             "pages visited;",
                             "website login page;",
                             "website Logout page;",
-                            "page scrolling (scroll depth);",
+                            "scroll depth;",
                             "clicks on interface elements (including buttons).",
                         ],
                     },
@@ -1249,7 +1249,7 @@ export const policyData: PolicyType = {
                             "odwiedzone strony;",
                             "strona logowania do witryny;",
                             "strona wyjścia z witryny;",
-                            "przewijanie strony (głębokość przewijania);",
+                            "głębokość przewijania;",
                             "kliknięcia w elementy interfejsu (w tym przyciski).",
                         ],
                     },
@@ -1525,7 +1525,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Możemy poprosić Ciebie o dostarczenie nam dodatkowych informacji, które już posiadamy, aby potwierdzić, że to Ty lub osoba działająca jako upoważniony przedstawiciel w Twoim imieniu (w pewnych okolicznościach).",
+                        text: "Możemy poprosić Ciebie o dostarczenie nam dodatkowych informacji, które już posiadamy, aby potwierdzić, że to Ty lub osoba działająca jako upoważniony przedstawiciel (w pewnych okolicznościach).",
                     },
                 ],
             },
