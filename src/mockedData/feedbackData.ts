@@ -125,7 +125,7 @@ export const feedbackData: FeedbackDataItemType[] = [
         data: {
             id: "04",
             image: "https://drive.google.com/uc?export=view&id=110udK8SC-Gx_QJy7avipGKnGEKZIu_xT",
-            siteLink: "viktoriia-zabara.netlify.app",
+            siteLink: "viktoriia-recruiting.com.ua",
             slug: "viktoriia-zabara",
         },
         ua: {
