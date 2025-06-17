@@ -1051,7 +1051,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             },
             tasks: [
                 {
-                    title: "Цінність:",
+                    title: "Цінність",
                     text: [
                         "Популяризувати діяльність Українського театру",
                         "Забезпечити регулярну публікацію аналітичного, критичного або культурно важливого контенту",
@@ -1275,12 +1275,474 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteView: "website",
             subtitle: `Website for the NGO "Ukrainian Theater"`,
             description: "descriptionId3",
+            heroTitle: "<purple>Ukrainian</purple> Theater",
+            heroText: [
+                "'Ukrainian Theatre' is a modern online platform created to support Ukrainian theatre in times of change. This space brings together publications, reviews, event listings, and in-depth analysis — becoming a meeting point between theatre and its audience. The editorial team behind this theatre media project aimed to make content more accessible and audience engagement more vibrant and continuous.",
+                "The project was brought to life by a dedicated team at every stage: from concept and market research to design, development, testing, and the integration of payment systems for collecting donations — all backed by ongoing technical support.",
+            ],
+            deadlines: {
+                analysis: "2 months",
+                design: "2 months",
+                launch: "8 months",
+                support: "ongoing",
+            },
+            tasks: [
+                {
+                    title: "Value",
+                    text: [
+                        "Promote the activities of Ukrainian theatre-e",
+                        "Ensure regular publication of analytical, critical, and culturally significant content",
+                        "Allow users to stay connected with theatre life, even if they don’t attend performances",
+                        "Offer the opportunity to co-author publications on the site and support emerging writers",
+                    ],
+                    icon: "light",
+                },
+                {
+                    title: "Customer experience",
+                    text: [
+                        "Provide intuitive navigation and quick access to up-to-date content",
+                        "Increase user interaction and audience engagement",
+                        "Create an effective system for informing users about theatre events",
+                        "Enable editorial staff to manage content and administer the website",
+                    ],
+                    icon: "people",
+                },
+                {
+                    title: "Business processes",
+                    text: [
+                        "Provide tools for regular and independent content updates and management",
+                        "Encourage support for the magazine’s editorial team through digital tools",
+                        "Integrate subscription mechanisms, newsletters, along with access management of editors, users, subscribers, and publication authors",
+                        "Optimize time and effort spent on content management and website administration",
+                    ],
+                    icon: "settings",
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision1_agerur.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Implemented user-friendly site navigation with always-available search and multi-parameter filters",
+                                "Organized publications into clear categories: Interviews, Reviews, Articles, Events, Historical Facts",
+                                "Displaying the latest publications on the homepage helps quickly deliver relevant updates to users and boosts engagement with the site",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision3_cjxyy2.jpg",
+                        },
+                        {
+                            text: [
+                                "Dynamic banners on the homepage highlight upcoming events and announcements",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Easy financial support through a donation button on the homepage and in the header",
+                                "Users can subscribe to receive the latest publications by email — with the option to unsubscribe at any time",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision2_nwq274.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166842/decision4_grtb3i.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Users can sort events by relevance and easily share publications on social media",
+                                "A personal account allows users to save and organize their favorite publications",
+                                "Built-in search and filtering tools help quickly find the content they need",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166843/decision6_qubrjd.jpg",
+                        },
+                        {
+                            text: [
+                                "The admin panel includes the ability to create and send newsletters with the latest updates to site subscribers via email",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The platform allows for user profile deletion when needed, as well as exporting the subscriber database",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166843/decision5_ct91us.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166845/decision8_jwcwka.jpg",
+                        },
+                        {
+                            text: [
+                                "A full content management system is implemented for creating, editing, and deleting: publications, reviews, events, articles, and magazine issues",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Functionality is configured for adding, editing, and removing data related to authors, editors, and staff members",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166844/decision7_yw5aee.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "<purple>Publication</purple> Page",
+                    description: [
+                        "Main News Slider – visual highlight on current events and featured materials",
+                        "Content Sections – dedicated blocks for reviews, interviews, stories, articles, and magazines",
+                        "Annotations & Quotes – short descriptions for quick content previews",
+                        "Magazine Promo Block – a featured section to promote printed issues",
+                        "Footer with Contacts – wıth logo, social media links, contact info, and partner mentions",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>User</purple> Account",
+                    description: [
+                        "Profile Editing – change name, email, newsletter preferences, and password",
+                        "Saved & Liked Publications – organized into separate categories for quick access",
+                        "Account Deletion – an option to permanently remove the user profile",
+                        "Saved Content Preview – publication cards with date, tags, and likes",
+                        "Email Subscription – a quick sign-up form in the footer for updates",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "Content <purple>Navigation</purple>",
+                    description: [
+                        "Main News Slider – a visual highlight oncurrent events with short descriptions and dates",
+                        "Content Categorization – structured sections for events, reviews, interviews, history, articles, and magazines",
+                        "Author & Expert Database – includes biographies, publications, and interviews",
+                        "Update Newsletter – regular updates on new materials, theatre news, and special topics",
+                        "Social Media Integration – easy sharing of news on Facebook, Twitter, and Instagram",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Notable</purple> Interface <purple>Features</purple>",
+                    description: [
+                        "Publication Search – quick access to relevant content using keywords, without unnecessary page-to-page navigation",
+                        "Content Filter – select material type, author, publication status, and other parameters for precise content selection",
+                        "Date Picker – easily set start and end dates to search or sort publications by time periods",
+                        "Email Subscription – receive the latest news and publications directly to your inbox",
+                        "Easy Unsubscribe – cancel your subscription at any time with no extra steps or confirmations",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Admin Panel</purple> for Managing Theatre Portal <purple>Publications</purple>",
+                    description: [
+                        "Publication List – a convenient overview of all materials with visual status indicators (Published / Draft) and quick access to editing",
+                        "Filter & Search – sort publications by date, author, status, or keyword for fast and efficient content management",
+                        "Event Calendar – select event dates when creating or editing a publication to enable automatic sorting by relevance",
+                        "Categories & Tags – assign categories (e.g., Events, Reviews, Interviews) and hashtags for structured content display on the site",
+                        "Author Assignment – attribute each publication to an author for editorial transparency",
+                        "Editorial Notes – a dedicated field for internal comments and editorial instructions",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "Magazine Management <purple>Interface</purple> for the <purple>Theatre</purple> Portal",
+                    description: [
+                        "Magazine List – a visual display of issues with covers, publication year, and status for quick overview",
+                        "Search & Filtering – easily search by magazine title, year, status, or creation date for efficient archive management",
+                        "Date Sorting – view magazines in chronological order or by custom date ranges",
+                        "Magazine Editing – access advanced editing mode (similar to publications) to update cover image, description, release year, and other details",
+                        "Publication Status – clearly marked status if published with the ability to change it in just a few clicks",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Administration</purple> of Authors, Editors, and <purple>Subscribers</purple>",
+                    description: [
+                        "Authors – add new authors by entering their name and uploading a photo; remove authors when needed",
+                        "Editors – flexible editor management: add new editors, edit their details, or remove them as necessary",
+                        "Users – view and sort the user list, quickly access user information, and delete users directly from this section",
+                        "Subscribers – same functionality as for editors (add, delete), with an additional data export button for easy download of subscriber lists",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Editing</purple> the “About Us” Section and <purple>Contact</purple> Information",
+                    description: [
+                        "About Us Section – add new contact persons by entering their name, position, phone number, email address, and uploading a photo. A delete option is available to keep the information up to date",
+                        "Contacts – a dedicated block for entering the organization’s general contact details: phone numbers, email addresses, and social media links. A separate “Save” button is provided to store the updated information",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+            ],
         },
         pl: {
             name: "Ukrainian theater",
             siteView: "website",
             subtitle: `Strona internetowa dla NGO "Ukraiński Teatr"`,
             description: "descriptionId3",
+            heroTitle: "<purple>Ukrainian</purple> theater",
+            heroText: [
+                "Ukrainian theatre to nowoczesna platforma internetowa stworzona w celu wspierania ukraińskiego teatru w czasach zmian. Platforma łączy publikacje, recenzje, afisze i analizy, stając się miejscem spotkań teatru i widzów. Redakcja tego teatralnego medium dążyła do tego, by uczynić treści bardziej dostępnymi, a kontakt z publicznością – żywym i nieprzerwanym.",
+                "Projekt został wdrożony przez zespół na wszystkich etapach: od pomysłu i analizy rynku po projektowanie, programowanie, testowanie i integrację systemów płatności do zbierania darowizn, wraz z dalszym wsparciem technicznym.",
+            ],
+            deadlines: {
+                analysis: "2 miesiące",
+                design: "2 miesiące",
+                launch: "8 miesięcy",
+                support: "na bieżąco",
+            },
+            tasks: [
+                {
+                    title: "Wartość",
+                    text: [
+                        "Popularyzacja działalności Ukrainian Theatre",
+                        "Zapewnienie regularnej publikacji treści analitycznych, krytycznych lub ważnych kulturowo",
+                        "Umożliwienie użytkownikom śledzenia życia teatru,  nawet jeśli nie chodzą na spektakle",
+                        "Możliwość współtworzenia publikacji na stronie oraz wsparcie dla młodych autorów",
+                    ],
+                    icon: "light",
+                },
+                {
+                    title: "Doświadczenie klienta",
+                    text: [
+                        "Zapewnienie łatwej nawigacji i szybkiego dostępu do odpowiednich treści",
+                        "Zwiększenie interakcji użytkowników ze stroną internetową i zaangażowania odbiorców",
+                        "Stworzenie skutecznego systemu informowania o wydarzeniach teatralnych",
+                        "Zarządzanie treścią i administrowanie stroną przez zespół redakcyjny",
+                    ],
+                    icon: "people",
+                },
+                {
+                    title: "Procesy biznesowe",
+                    text: [
+                        "Zapewnienie narzędzi do regularnej i niezależnej aktualizacji i zarządzania treściami teatru",
+                        "Stymulowanie wsparcia redakcji magazynu za pomocą narzędzi cyfrowych",
+                        "Integracja mechanizmów subskrypcji, wysyłki i zarządzania prawami dostępu dla redaktorów, użytkowników, subskrybentów i autorów publikacji",
+                        "Optymalizacja czasu i wysiłku związanego z zarządzaniem treścią i administrację strony",
+                    ],
+                    icon: "settings",
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision1_agerur.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Stworzono wygodną nawigację na stronie z zawsze dostępną wyszukiwarką i filtrowaniem według wielu parametrów",
+                                "Publikacje zostały uporządkowane według kategorii: Wywiady, Recenzje, Artykuły, Wydarzenia, Fakty historyczne",
+                                "Wyświetlanie najnowszych publikacji na stronie głównej pomaga szybko przekazać użytkownikowi informacje o aktualnych wydarzeniach i zwiększa interakcję ze stroną",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision3_cjxyy2.jpg",
+                        },
+                        {
+                            text: [
+                                "Na stronie głównej umieszczono dynamiczne banery z zapowiedziami nadchodzących wydarzeń",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Umożliwiono łatwe wsparcie projektu finansowo poprzez przycisk do przekazywania darowizn na stronie głównej oraz w nagłówku",
+                                "Użytkownik ma możliwość zasubskrybowania newslettera i otrzymywania najnowszych publikacji na e-mail, a także rezygnacji z subskrypcji",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166840/decision2_nwq274.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166842/decision4_grtb3i.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Dla wygody użytkownika stworzono możliwość sortowania wydarzeń według aktualności oraz funkcję udostępniania publikacji w mediach społecznościowych",
+                                "Zrealizowano panel użytkownika, w którym można zapisywać i porządkować interesujące publikacje",
+                                "Wbudowane funkcje wyszukiwania i filtrowania ułatwiają szybkie odnalezienie potrzebnych treści",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166843/decision6_qubrjd.jpg",
+                        },
+                        {
+                            text: [
+                                "Do panelu administracyjnego zintegrowano funkcję tworzenia newsletterów z najnowszymi wiadomościami, wysyłanych na adresy e-mail subskrybentów strony",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Funkcjonalność strony obejmuje możliwość usuwania profili w razie potrzeby oraz eksportowania bazy subskrybentów",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166843/decision5_ct91us.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166845/decision8_jwcwka.jpg",
+                        },
+                        {
+                            text: [
+                                "Wdrożono mechanizmy tworzenia, edytowania i usuwania: publikacji, recenzji, wydarzeń, artykułów i magazynów",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Skonfigurowano funkcjonalność dodawania, usuwania i edytowania danych o: autorach, redaktorach, pracownikach",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1750166844/decision7_yw5aee.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Strona <purple>publikacji</purple>",
+                    description: [
+                        "Slider najważniejszych wiadomości – wizualne wyróżnienie aktualnych wydarzeń i materiałów",
+                        "Sekcje treści – oddzielne bloki na recenzje, wywiady, historie, artykuły i magazyny",
+                        "Adnotacje i cytaty – krótkie opisy do każdego materiału dla szybkiego zapoznania się z treścią",
+                        "Blok promujący magazyny – wydzielona sekcja służąca popularyzacji wydań drukowanych",
+                        "Stopka z danymi kontaktowymi: logo, media społecznościowe, dane kontaktowe oraz wzmianka o partnerach",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "Panel <purple>użytkownika</purple>",
+                    description: [
+                        "Edycja profilu – możliwość zmiany imienia, adresu e-mail, ustawień newslettera oraz hasła",
+                        "Zapisane i polubione publikacje – oddzielne kategorie dla szybkiego dostępu",
+                        "Usunięcie konta – możliwość całkowitego usunięcia profilu",
+                        "Przegląd zapisanych materiałów – karty publikacji z datą, tagami i polubieniami",
+                        "Subskrypcja aktualizacji – prosty formularz do powiadomień e-mailowych w stopce",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Nawigacja</purple> po treściach na <purple>stronie</purple>",
+                    description: [
+                        "Slider najważniejszych wiadomości – wizualne wyróżnienie aktualnych wydarzeń z krótkim opisem i datą",
+                        "Kategoryzacja treści (wydarzenia, recenzje, wywiady, historia, artykuły, magazyny)",
+                        "Baza autorów i ekspertów (biografie, publikacje, wywiady)",
+                        "Newsletter z aktualizacjami (nowe materiały, wiadomości teatralne, tematy specjalne)",
+                        "Integracja z mediami społecznościowymi (udostępnianie wiadomości na Facebooku, Twitterze, Instagramie)",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Ciekawe</purple> elementy <purple>interfejsu</purple>",
+                    description: [
+                        "Wyszukiwanie publikacji – szybki dostęp do potrzebnego materiału za pomocą słów kluczowych, bez zbędnych przejść między stronami",
+                        "Filtr publikacji – możliwość wyboru typu materiału, autora, statusu publikacji oraz innych parametrów w celu dokładnego doboru treści",
+                        "Wybór daty – wygodne ustawienie daty początkowej i końcowej do wyszukiwania lub sortowania publikacji według okresów",
+                        "Subskrypcja aktualizacji – funkcja otrzymywania najnowszych wiadomości i publikacji na e-mail",
+                        "Łatwa rezygnacja z subskrypcji – możliwość anulowania subskrypcji w dowolnym momencie bez dodatkowych działań czy potwierdzeń",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Panel administracyjny</purple> do zarządzania <purple>publikacjami</purple> na portalu teatralnym",
+                    description: [
+                        "Lista publikacji – wygodne wyświetlanie wszystkich materiałów z wizualizacją statusu (opublikowane / szkic) oraz szybki dostęp do edycji",
+                        "Filtr i wyszukiwanie – możliwość sortowania publikacji według daty, autora, statusu lub słowa kluczowego w celu szybkiego znalezienia potrzebnego materiału",
+                        "Kalendarz wydarzeń – wybór daty wydarzenia podczas tworzenia lub edytowania publikacji, aby automatycznie sortować je według aktualności",
+                        "Kategorie i tagi – dodawanie kategorii (wydarzenia, recenzje, wywiady itp.) oraz hashtagów do strukturalnego wyświetlania treści na stronie",
+                        "Przypisanie autora – przypisanie autora publikacji dla przejrzystości pracy zespołu redakcyjnego",
+                        "Notatki redakcyjne – oddzielne pole do wewnętrznych komentarzy i instrukcji dotyczących materiału",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Interfejs</purple> zarządzania magazynami na portalu <purple>teatralnym</purple>",
+                    description: [
+                        "Lista magazynów – wizualne przedstawienie wydań z okładkami, rokiem wydania i statusami publikacji dla szybkiego przeglądu",
+                        "Wyszukiwanie i filtracja – wygodne wyszukiwanie według tytułu magazynu, roku, statusu lub daty utworzenia dla sprawnej pracy z archiwum",
+                        "Sortowanie według daty – możliwość przeglądania magazynów w porządku chronologicznym lub według indywidualnie wybranych okresów",
+                        "Edycja magazynów – dostęp do rozszerzonego trybu edycji (jak w publikacjach), gdzie można zmieniać okładkę, opis, rok wydania i inne dane",
+                        "Status publikacji – oznaczenie, jeśli numer został opublikowany, oraz możliwość zmiany tego statusu w kilku kliknięciach",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Administracja</purple> autorami, redaktorami i <purple>subskrybentami</purple>",
+                    description: [
+                        "Autorzy – możliwość dodawania nowych autorów z podaniem imienia i załadowaniem zdjęcia, a także usuwania ich w razie potrzeby",
+                        "Redaktorzy – elastyczne zarządzanie redaktorami: dodawanie nowych, edytowanie oraz usuwanie danych w razie potrzeby",
+                        "Użytkownicy – przeglądanie i sortowanie listy użytkowników, szybki dostęp do ich informacji oraz możliwość usunięcia bezpośrednio z tego działu",
+                        "Subskrybenci – ta sama funkcjonalność, co dla redaktorów (dodawanie, usuwanie), ale dodatkowo zrealizowana funkcja eksportu danych dla wygodnego pobierania list subskrybentów",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+                {
+                    title: "<purple>Edycja</purple> sekcji „O nas” i danych <purple>kontaktowych</purple>",
+                    description: [
+                        "Sekcja „O nas” – umożliwia dodawanie nowych osób kontaktowych z podaniem imienia, stanowiska, numeru telefonu, adresu e-mail oraz zdjęcia. Dostępna jest również funkcja usuwania w celu aktualizacji informacji",
+                        "Kontakty – to blok do uzupełniania ogólnych danych kontaktowych organizacji: numerów telefonów, adresów e-mail oraz linków do mediów społecznościowych. Do zapisania danych służy oddzielny przycisk „Zapisz”",
+                    ],
+                    video: "6plqlrHLJmA",
+                },
+            ],
         },
     },
     {
