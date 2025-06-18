@@ -113,7 +113,14 @@ export const TitleVideoDotslistItem = ({
                         initial={isOpenSection ? "open" : "close"}
                         animate={isOpenSection ? "open" : "close"}
                     >
-                        <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 tab:pb- pc:pt-[64px] pc:pb-[32px] desk:pb-[24px]">
+                        <div
+                            className={twMerge(
+                                "flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 pc:pt-[64px] ",
+                                isCollapsible
+                                    ? " tab:pb-2 pc:pb-[32px] desk:pb-[24px]"
+                                    : " "
+                            )}
+                        >
                             <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-full mx-auto tab:w-[75%] pc:w-[69%] max-w-[752px] tab:ml-auto tab:mr-0">
                                 <YouTubeEmbed
                                     videoid={video}
