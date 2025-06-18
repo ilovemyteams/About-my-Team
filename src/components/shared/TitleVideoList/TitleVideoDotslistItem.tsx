@@ -70,11 +70,12 @@ export const TitleVideoDotslistItem = ({
         >
             <Section className={twMerge("pb-0 tab:pb-0 pc:pb-0 desk:pb-0")}>
                 <div
-                    className={
+                    className={twMerge(
                         isCollapsible
-                            ? "border-b-[1px] pt-4 border-purple-strokeLight dark:border-purple-stroke pb-4"
-                            : "pb-[80px] tab:pb-[100px] pc:pb-[160px] desk:pb-[180px]"
-                    }
+                            ? "border-b-[1px] py-6 tab:py-8 desk:py-10 border-purple-strokeLight dark:border-purple-stroke"
+                            : "pb-[80px] tab:pb-[100px] pc:pb-[160px] desk:pb-[180px]",
+                        index === 4 ? "pt-0 tab:pt-0 pc:pt-0 desk:pt-0" : ""
+                    )}
                 >
                     <div className="flex gap-4 justify-between items-start">
                         <HighlightTitleFromMockedData
@@ -104,7 +105,7 @@ export const TitleVideoDotslistItem = ({
                         initial={isOpenSection ? "open" : "close"}
                         animate={isOpenSection ? "open" : "close"}
                     >
-                        <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 pc:pt-[64px] ">
+                        <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 tab:pb-2 pc:pt-[64px] pc:pb-[32px] desk:pb-[24px]">
                             <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-full mx-auto tab:w-[75%] pc:w-[69%] max-w-[752px] tab:ml-auto tab:mr-0">
                                 <YouTubeEmbed
                                     videoid={video}
