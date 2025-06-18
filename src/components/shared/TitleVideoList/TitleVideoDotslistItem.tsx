@@ -22,7 +22,7 @@ export const TitleVideoDotslistItem = ({
 
     const isCollapsible = index > 3;
 
-    const onClickBtn = () => {
+    const onClickTitle = () => {
         if (isCollapsible) {
             setIsOpen(prev => !prev);
         }
@@ -84,7 +84,7 @@ export const TitleVideoDotslistItem = ({
                             "flex gap-4 justify-between items-start",
                             isCollapsible ? "cursor-pointer" : "cursor-default"
                         )}
-                        onClick={onClickBtn}
+                        onClick={onClickTitle}
                     >
                         <HighlightTitleFromMockedData
                             text={title}
@@ -93,11 +93,11 @@ export const TitleVideoDotslistItem = ({
                         {isCollapsible && (
                             <button
                                 aria-label="open collapsible text"
-                                onClick={onClickBtn}
+                                className="relative cursor-pointer dark:text-red text-redLight flex justify-center items-center w-[28px] h-[28px] tab:w-[48px] tab:h-[48px] icon-hover-rounded-purple"
                             >
                                 <IconUp
                                     className={twMerge(
-                                        "text-redLight dark:text-red transition-transform duration-300 size-[24px] tab:size-[40px]",
+                                        "size-[24px] tab:size-[40px] duration-300 ease-out transition-transform ",
                                         isOpenSection
                                             ? "rotate-0"
                                             : "rotate-180"
