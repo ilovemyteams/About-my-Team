@@ -5,13 +5,15 @@ export const StackCard = ({ technology }: { technology: Technology }) => {
     const name = defineStackName(technology);
 
     return (
-        <div className="flex gap-3 items-center pc:gap-4 group ">
+        <div className="flex gap-3 items-center pc:gap-4 group w-full ">
             <div>
-                <svg className="w-7 h-7 pc:w-9 pc:h-9">
+                <svg
+                    className={` ${!name ? "w-full" : "w-7 pc:w-9"}  h-7  pc:h-9`}
+                >
                     <use href={`/images/stackSprite.svg#${technology}`} />
                 </svg>
             </div>
-            <p className="text-sm tab:text-base pc:text-lg25 desk:text-xl text-purple-200 dark:text-grey">
+            <p className="text-sm max-w-[70%] tab:text-base pc:text-lg25 desk:text-xl break-words whitespace-normal text-purple-200 dark:text-grey">
                 {name}
             </p>
         </div>

@@ -42,6 +42,62 @@ export const defineStackName = (technology: string | undefined) => {
             return "EmailJS";
         case "handlebars":
             return "Handlebars";
+        case "next-auth":
+            return "Next-auth";
+        case "formik":
+            return "Formik";
+        case "momentjs":
+            return "Moment.js";
+        case "react":
+            return "React.js";
+        case "redux":
+            return "Redux";
+        case "editorjs":
+            return "Editor.js";
+        case "material-ui":
+            return "Material UI";
+        case "axios":
+            return "Axios";
+        case "react-easy-crop":
+            return "React-easy-crop";
+        case "java":
+            return "Java";
+        case "spring-boot":
+            return "Spring Boot";
+        case "spring-data":
+            return "Spring Data";
+        case "spring-security":
+            return "Spring Security";
+        case "hibernate":
+            return "Hibernate";
+        case "redis":
+            return "Redis";
+        case "flyway":
+            return "Flyway";
+        case "junit":
+            return "JUnit";
+        case "mockito":
+            return "Mockito";
+        case "testcontainers":
+            return "Testcontainers";
+        case "lombok":
+            return "Lombok";
+        case "maven":
+            return "Maven";
+        case "docker":
+            return "Docker";
+        case "dayjs":
+            return null;
+        case "react-datapicker":
+            return "React Datapicker";
+        case "yup":
+            return "Yup";
+        case "html-react-parser":
+            return "html-react-parser";
+        case "yet-another-react-lightbox":
+            return "Yet Another React Lightbox";
+        case "sharp":
+            return "Sharp";
         default:
             return "";
     }

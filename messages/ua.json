@@ -137,7 +137,9 @@
         "AllProjects": "Всі проєкти",
         "landings": "Лендінг",
         "onlinestores": "Інтернет магазин",
-        "websites": "Вебсайт"
+        "websites": "Вебсайт",
+        "showAll": "Показати всі",
+        "showLess": "Згорнути"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"
@@ -363,7 +365,6 @@
         "behanceLink": "Дизайн проєкту",
         "taskTitle": "<purple>Завдання</purple>, над якими ми працювали",
         "decisionsTitle": "<purple>Рішення</purple>, які були реалізовані"
-
     },
     "PrivacyPolicy": {
         "titleSEO": "Політика конфіденційності персональних даних | i love my team",
