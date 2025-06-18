@@ -8,7 +8,7 @@ export const StackCard = ({ technology }: { technology: Technology }) => {
         <div className="flex gap-3 items-center pc:gap-4 group w-full ">
             <div>
                 <svg
-                    className={` ${!name ? "w-full" : "w-7 pc:w-9"}  h-7  pc:h-9`}
+                    className={` ${!name ? "w-full" : "w-7 pc:w-9"} text-purple-100 h-7  pc:h-9`}
                 >
                     <use href={`/images/stackSprite.svg#${technology}`} />
                 </svg>
