@@ -23,7 +23,9 @@ export const TitleVideoDotslistItem = ({
     const isCollapsible = index > 3;
 
     const onClickBtn = () => {
-        setIsOpen(prev => !prev);
+        if (isCollapsible) {
+            setIsOpen(prev => !prev);
+        }
     };
 
     const wrapperVariants = {
@@ -78,15 +80,20 @@ export const TitleVideoDotslistItem = ({
                     )}
                 >
                     <div className="flex gap-4 justify-between items-start">
-                        <HighlightTitleFromMockedData
-                            text={title}
-                            className="mb-0 tab:mb-0 pc:mb-0 desk:mb-0"
-                        />
-                        {isCollapsible && (
-                            <button
-                                aria-label="open collapsible text"
-                                onClick={onClickBtn}
-                            >
+                        <button
+                            aria-label="open collapsible text"
+                            onClick={onClickBtn}
+                            className={
+                                isCollapsible
+                                    ? "cursor-pointer"
+                                    : "cursor-default"
+                            }
+                        >
+                            <HighlightTitleFromMockedData
+                                text={title}
+                                className="mb-0 tab:mb-0 pc:mb-0 desk:mb-0"
+                            />
+                            {isCollapsible && (
                                 <IconUp
                                     className={twMerge(
                                         "text-redLight dark:text-red transition-transform duration-300 size-[24px] tab:size-[40px]",
@@ -95,8 +102,8 @@ export const TitleVideoDotslistItem = ({
                                             : "rotate-180"
                                     )}
                                 />
-                            </button>
-                        )}
+                            )}
+                        </button>
                     </div>
 
                     <motion.div
