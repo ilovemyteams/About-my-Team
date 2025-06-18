@@ -93,7 +93,7 @@ export const TitleVideoDotslistItem = ({
                         {isCollapsible && (
                             <button
                                 aria-label="open collapsible text"
-                                className="relative cursor-pointer dark:text-red text-redLight flex justify-center items-center w-[28px] h-[28px] tab:w-[48px] tab:h-[48px] icon-hover-rounded-purple"
+                                className="relative shrink-0 cursor-pointer dark:text-red text-redLight flex justify-center items-center w-[28px] h-[28px] tab:w-[48px] tab:h-[48px] icon-hover-rounded-purple"
                             >
                                 <IconUp
                                     className={twMerge(
