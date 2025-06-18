@@ -79,21 +79,22 @@ export const TitleVideoDotslistItem = ({
                         index === 4 ? "pt-0 tab:pt-0 pc:pt-0 desk:pt-0" : ""
                     )}
                 >
-                    <div className="flex gap-4 justify-between items-start">
-                        <button
-                            aria-label="open collapsible text"
-                            onClick={onClickBtn}
-                            className={
-                                isCollapsible
-                                    ? "cursor-pointer"
-                                    : "cursor-default"
-                            }
-                        >
-                            <HighlightTitleFromMockedData
-                                text={title}
-                                className="mb-0 tab:mb-0 pc:mb-0 desk:mb-0"
-                            />
-                            {isCollapsible && (
+                    <div
+                        className={twMerge(
+                            "flex gap-4 justify-between items-start",
+                            isCollapsible ? "cursor-pointer" : "cursor-default"
+                        )}
+                        onClick={onClickBtn}
+                    >
+                        <HighlightTitleFromMockedData
+                            text={title}
+                            className="mb-0 tab:mb-0 pc:mb-0 desk:mb-0"
+                        />
+                        {isCollapsible && (
+                            <button
+                                aria-label="open collapsible text"
+                                onClick={onClickBtn}
+                            >
                                 <IconUp
                                     className={twMerge(
                                         "text-redLight dark:text-red transition-transform duration-300 size-[24px] tab:size-[40px]",
@@ -102,8 +103,8 @@ export const TitleVideoDotslistItem = ({
                                             : "rotate-180"
                                     )}
                                 />
-                            )}
-                        </button>
+                            </button>
+                        )}
                     </div>
 
                     <motion.div
@@ -112,7 +113,7 @@ export const TitleVideoDotslistItem = ({
                         initial={isOpenSection ? "open" : "close"}
                         animate={isOpenSection ? "open" : "close"}
                     >
-                        <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 tab:pb-2 pc:pt-[64px] pc:pb-[32px] desk:pb-[24px]">
+                        <div className="flex flex-col gap-3 tab:flex-col-reverse tab:gap-10 pc:gap-[64px] pt-6 tab:pt-10 tab:pb- pc:pt-[64px] pc:pb-[32px] desk:pb-[24px]">
                             <div className="border dark:border-purple-stroke border-purple-100 p-2 pc:p-3 desk:p-4 w-full mx-auto tab:w-[75%] pc:w-[69%] max-w-[752px] tab:ml-auto tab:mr-0">
                                 <YouTubeEmbed
                                     videoid={video}
