@@ -60,11 +60,18 @@ export const SomeProjectPage = ({
             {tasks && <TasksSection content={tasks} />}
 
             {decision && <DecisionSection decisions={decision} />}
-            {titleVideoList &&
-                titleVideoList.length !== 0 &&
-                titleVideoList.map((item, index) => (
-                    <TitleVideoDotslistItem key={index} data={item} />
-                ))}
+            <ul>
+                {titleVideoList &&
+                    titleVideoList.length !== 0 &&
+                    titleVideoList.map((item, index) => (
+                        <TitleVideoDotslistItem
+                            key={index}
+                            data={item}
+                            index={index}
+                        />
+                    ))}
+            </ul>
+
             {adaptive && <AdaptiveSection screens={adaptive} />}
             <TeamSectionProject members={members} />
             {technologies && (

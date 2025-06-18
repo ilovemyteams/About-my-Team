@@ -81,7 +81,7 @@ export const TasksSectionSlide = ({
                 </motion.div>
             </div>
 
-            <div className="overflow-clip w-[calc(100%_-_16px)] mx-auto tab:w-1/2 tab:shrink-0">
+            <div className="overflow-clip w-[calc(100%_-_16px)] mx-auto tab:w-1/2 pc:w-[53%] desk:w-1/2 tab:shrink-0">
                 <motion.ul
                     className="flex flex-col gap-3 tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 text-pretty "
                     variants={slideVariants}
