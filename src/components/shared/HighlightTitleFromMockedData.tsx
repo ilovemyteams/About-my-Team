@@ -17,7 +17,7 @@ export const HighlightTitleFromMockedData = ({
     return (
         <h2
             className={twMerge(
-                "font-caviar font-bold text-purple-200 dark:text-grey text-2xl24 tab:text-4xl pc:text-5xl desk:text-6xl mb-6 tab:mb-10 pc:mb-[64px]",
+                "font-caviar font-bold  text-2xl24 tab:text-4xl pc:text-5xl desk:text-6xl mb-6 tab:mb-10 pc:mb-[64px]",
                 className
             )}
         >
@@ -29,7 +29,14 @@ export const HighlightTitleFromMockedData = ({
                         </span>
                     );
                 }
-                return <span key={index}>{part.text}</span>;
+                return (
+                    <span
+                        key={index}
+                        className="text-purple-200 dark:text-grey"
+                    >
+                        {part.text}
+                    </span>
+                );
             })}
         </h2>
     );

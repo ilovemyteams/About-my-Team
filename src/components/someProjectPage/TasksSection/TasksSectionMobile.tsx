@@ -15,6 +15,7 @@ interface TasksSectionMobileProps {
 
 export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const [activeTab, setActiveTab] = useState(data[0].title);
+
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress, scrollY } = useScroll({ target: targetRef });
     const titles = data.map(item => item.title);
@@ -26,6 +27,7 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
         setActiveTab(title);
 
         const index = titles.indexOf(title);
+
         if (targetRef.current) {
             const container = targetRef.current;
             const containerRect = container.getBoundingClientRect();
@@ -43,18 +45,22 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
             const targetScrollY =
                 containerTop + activeSlideCenter - viewportCenter;
 
+            //Непрокручувати, якщо заходимо в слайдер зверху
             if (index === 0 && scrollY.get() < targetScrollY) {
                 return;
             }
 
+            //Непрокручувати, якщо заходимо в знизу
             if (index === data.length - 1 && scrollY.get() > targetScrollY) {
                 return;
             }
 
-            window.scrollTo({
-                top: targetScrollY,
-                behavior: "smooth",
-            });
+            // window.requestAnimationFrame(() => {
+            //     window.scrollTo({
+            //         top: targetScrollY,
+            //         behavior: "smooth",
+            //     });
+            // });
         }
     };
 
@@ -63,10 +69,10 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
             className="overflow-x-clip tab:hidden"
             ref={targetRef}
             style={{
-                height: `${titles.length * 100}vh`,
+                height: `${titles.length * 100}dvh`,
             }}
         >
-            <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
+            <div className="sticky top-[90px] flex flex-col gap-4 max-h-[calc(100dvh_-_90px)] h-[calc(100dvh_-_100px)]">
                 <HighlightTitleFromMessages
                     title="SomeProjectPage"
                     text="taskTitle"
