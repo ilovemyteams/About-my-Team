@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
 import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
@@ -21,6 +21,13 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const scrollStopPercent = `-${(titles.length - 1) * 100 + 5 * (titles.length - 1)}%`;
 
     const x = useTransform(scrollYProgress, [0, 1], ["1%", scrollStopPercent]);
+
+    useEffect(() => {
+        return () => {
+            setActiveTab(data[0].title);
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const onChangeActiveSlide = (title: string) => {
         setActiveTab(title);
@@ -63,10 +70,10 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
             className="overflow-x-clip tab:hidden"
             ref={targetRef}
             style={{
-                height: `${titles.length * 100}vh`,
+                height: `${titles.length * 100}lvh`,
             }}
         >
-            <div className="sticky top-[90px] max-h-[calc(100vh_-_90px)] h-[calc(100vh_-_100px)] flex flex-col gap-4">
+            <div className="sticky top-[90px] max-h-[calc(100lvh_-_90px)] h-[calc(100lvh_-_100px)] flex flex-col gap-4">
                 <HighlightTitleFromMessages
                     title="SomeProjectPage"
                     text="taskTitle"
