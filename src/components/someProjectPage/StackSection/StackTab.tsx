@@ -104,7 +104,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                                   ? "50%"
                                   : "auto"
                               : "50%",
-                    right: screenSizeName === pcName ? "67px" : "auto",
+                    right: screenSizeName === pcName ? "28px" : "auto",
                     x:
                         screenSizeName === pcName
                             ? !showAll
