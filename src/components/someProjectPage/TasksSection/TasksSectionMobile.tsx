@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
 import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
@@ -21,16 +21,6 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const scrollStopPercent = `-${(titles.length - 1) * 100 + 5 * (titles.length - 1)}%`;
 
     const x = useTransform(scrollYProgress, [0, 1], ["1%", scrollStopPercent]);
-
-    useEffect(() => {
-        if ("scrollRestoration" in history) {
-            history.scrollRestoration = "manual";
-        }
-
-        return () => {
-            history.scrollRestoration = "auto";
-        };
-    }, []);
 
     const onChangeActiveSlide = (title: string) => {
         setActiveTab(title);
@@ -53,20 +43,22 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
             const targetScrollY =
                 containerTop + activeSlideCenter - viewportCenter;
 
+            //Непрокручувати, якщо заходимо в слайдер зверху
             if (index === 0 && scrollY.get() < targetScrollY) {
                 return;
             }
 
+            //Непрокручувати, якщо заходимо в знизу
             if (index === data.length - 1 && scrollY.get() > targetScrollY) {
                 return;
             }
 
-            window.requestAnimationFrame(() => {
-                window.scrollTo({
-                    top: targetScrollY,
-                    behavior: "smooth",
-                });
-            });
+            // window.requestAnimationFrame(() => {
+            //     window.scrollTo({
+            //         top: targetScrollY,
+            //         behavior: "smooth",
+            //     });
+            // });
         }
     };
 
