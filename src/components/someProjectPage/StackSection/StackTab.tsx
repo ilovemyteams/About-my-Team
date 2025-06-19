@@ -39,7 +39,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                         key={technology}
                         className="flex gap-2 items-center pc:gap-4 desk:gap-6 
                         min-w-[136px] w-[calc(50%-8px)] tab:min-w-[229px] tab:w-[31.85%]
-                        pc:min-w-[250px] pc:w-[23.6%] desk:min-w-[251px] desk:w-[18.8%] 
+                        pc:min-w-[250px] pc:w-[22%] desk:min-w-[251px] desk:w-[18.8%] 
                         px-3 py-4 tab:px-4 pc:p-5 desk:p-6  bg-purple-stackCardBG"
                     >
                         <StackCard technology={technology} />
