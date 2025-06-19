@@ -23,10 +23,13 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", scrollStopPercent]);
 
     useEffect(() => {
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
+
         return () => {
-            setActiveTab(data[0].title);
+            history.scrollRestoration = "auto";
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const onChangeActiveSlide = (title: string) => {
@@ -58,9 +61,11 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
                 return;
             }
 
-            window.scrollTo({
-                top: targetScrollY,
-                behavior: "smooth",
+            window.requestAnimationFrame(() => {
+                window.scrollTo({
+                    top: targetScrollY,
+                    behavior: "smooth",
+                });
             });
         }
     };
