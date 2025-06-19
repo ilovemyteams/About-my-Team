@@ -140,7 +140,9 @@
         "AllProjects": "Wszystkie projekty",
         "landings": "Landing page",
         "onlinestores": "Sklep internetowy",
-        "websites": "Strona internetowa"
+        "websites": "Strona internetowa",
+        "showAll": "Pokaż wszystkie",
+        "showLess": "Zwiń"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"
@@ -369,7 +371,6 @@
         "behanceLink": "Projekt wizualny",
         "taskTitle": "<purple>Zadania</purple> nad którymi pracowaliśmy",
         "decisionsTitle": "<purple>Rozwiązania</purple>, które zostały wdrożone"
-
     },
     "PrivacyPolicy": {
         "titleSEO": "Polityka prywatności danych osobowych | i love my team",

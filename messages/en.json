@@ -138,7 +138,9 @@
         "AllProjects": "All projects",
         "landings": "Landing page",
         "onlinestores": "Online store",
-        "websites": "Website"
+        "websites": "Website",
+        "showAll": "Show all",
+        "showLess": "Show less"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -368,7 +370,6 @@
         "behanceLink": "Project Design",
         "taskTitle": "<purple>The tasks</purple> we worked on",
         "decisionsTitle": "<purple>The solutions</purple> that were implemented"
-
     },
     "PrivacyPolicy": {
         "titleSEO": "Personal Data Privacy Policy | i love my team",
@@ -377,6 +378,5 @@
     "PublicOffer": {
         "titleSEO": "Public Agreement for Digital Services | i love my team",
         "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
-
     }
 }
