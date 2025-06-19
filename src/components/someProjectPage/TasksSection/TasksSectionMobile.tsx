@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import { HighlightTitleFromMessages } from "@/src/components/shared/HighlightTitleFromMessages";
 import { TasksSectionDataType } from "@/src/mockedData/portfolioData";
@@ -15,7 +15,7 @@ interface TasksSectionMobileProps {
 
 export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
     const [activeTab, setActiveTab] = useState(data[0].title);
-    const isFirstRenderRef = useRef(true);
+
     const targetRef = useRef<HTMLDivElement | null>(null);
     const { scrollYProgress, scrollY } = useScroll({ target: targetRef });
     const titles = data.map(item => item.title);
@@ -23,16 +23,10 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
 
     const x = useTransform(scrollYProgress, [0, 1], ["1%", scrollStopPercent]);
 
-    useEffect(() => {
-        isFirstRenderRef.current = false;
-    }, []);
-
     const onChangeActiveSlide = (title: string) => {
         setActiveTab(title);
 
         const index = titles.indexOf(title);
-
-        if (isFirstRenderRef.current) return;
 
         if (targetRef.current) {
             const container = targetRef.current;
@@ -61,12 +55,12 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
                 return;
             }
 
-            window.requestAnimationFrame(() => {
-                window.scrollTo({
-                    top: targetScrollY,
-                    behavior: "smooth",
-                });
-            });
+            // window.requestAnimationFrame(() => {
+            //     window.scrollTo({
+            //         top: targetScrollY,
+            //         behavior: "smooth",
+            //     });
+            // });
         }
     };
 
