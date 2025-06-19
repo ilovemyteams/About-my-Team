@@ -16,7 +16,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
     const t = useTranslations("Buttons");
     const [showAll, setShowAll] = useState(false);
     const screenSizeName = useScreenSize();
-    const { pcName, desktopName } = SCREEN_NAMES;
+    const { pcName, desktopName, desktopXlName } = SCREEN_NAMES;
     const initialItems = technologies.slice(0, MAX_ITEMS);
     const extraItems = technologies.slice(MAX_ITEMS);
 
@@ -93,7 +93,8 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                     bottom: showAll
                         ? -60
                         : screenSizeName === pcName ||
-                            screenSizeName === desktopName
+                            screenSizeName === desktopName ||
+                            screenSizeName === desktopXlName
                           ? 10
                           : 2,
                     left:
@@ -104,7 +105,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                                   ? "50%"
                                   : "auto"
                               : "50%",
-                    right: screenSizeName === pcName ? "28px" : "auto",
+                    right: screenSizeName === pcName ? "48px" : "auto",
                     x:
                         screenSizeName === pcName
                             ? !showAll
