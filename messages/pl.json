@@ -140,7 +140,9 @@
         "AllProjects": "Wszystkie projekty",
         "landings": "Landing page",
         "onlinestores": "Sklep internetowy",
-        "websites": "Strona internetowa"
+        "websites": "Strona internetowa",
+        "showAll": "Pokaż wszystkie",
+        "showLess": "Zwiń"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"

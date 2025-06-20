@@ -2492,6 +2492,92 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "diana-dudnyk-ui-ux-designer",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Diana_Dudnyk_vnqr9p.jpg",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/dianadudnyk",
+                behance: "https://www.behance.net/DudnykDiana",
+                telegram: "https://t.me/diana_dudnyk",
+            },
+            tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Jira"],
+        },
+        ua: {
+            name: "Діана Дудник",
+            about: "Мистецтво дизайну — це трансформація хаосу в чітку структуру.",
+            services:
+                "Створюю інтерфейси, які поєднують функціональність, зручність та естетику. Моє головне завдання — зробити взаємодію користувача з продуктом інтуїтивно зрозумілою. Завжди орієнтуюсь на дослідження, потреби цільової аудиторії та чітку структуру. Вірю, що хороший дизайн починається з глибокого розуміння користувача та його очікувань. ",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Diana Dudnyk",
+            about: "Art of design is transforming chaos into a clear structure.",
+            services:
+                "I create interfaces that combine functionality, usability, and aesthetics. My main goal is to make the user’s interaction with the product intuitively clear.I always focus on research, the needs of the target audience and a well-defined structure. I believe that great design starts with a deep understanding of the user and their expectations.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Diana Dudnyk",
+            about: "Sztuka projektowania to przekształcanie chaosu w przejrzystą strukturę.",
+            services:
+                "Tworzę interfejsy, które łączą w sobie funkcjonalność, wygodę i estetykę. Moim głównym zadaniem jest sprawienie, aby interakcja użytkownika z produktem była intuicyjna. Zawsze skupiam się na badaniach, potrzebach grupy docelowej i przejrzystej strukturze. Wierzę, że dobry projekt zaczyna się od głębokiego zrozumienia użytkownika i jego oczekiwań.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
+            id: "vladyslava-bobko-ui-ux-designer",
+            projectId: ["ilovemyteam-online"],
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Vladyslava_ob9fnl.jpg",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin:
+                    "https://www.linkedin.com/in/vladyslava-bobko-4b424932b",
+                behance: "https://www.behance.net/delfina2",
+                telegram: "https://t.me/queenbvlv",
+            },
+            tools: [
+                "Figma",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Jira",
+                "Sketch",
+                "ClickUp",
+            ],
+        },
+        ua: {
+            name: "Владислава Бобко",
+            about: "Мій підхід — це баланс витонченості та логіки: дизайн, гідний королівської уваги.",
+            services:
+                "Я UX/UI дизайнер, який створює інтуїтивні та привабливі цифрові продукти. Починаю з дослідження користувачів, аналізу ринку та визначення бізнес-цілей. На основі цього формую структуру інтерфейсу, розробляю прототипи та перевіряю їх у тестуванні. Потім створюю візуальний дизайн, що поєднує естетику та функціональність. Упроваджую рішення разом із командою розробників і вдосконалюю продукт на основі зворотного зв’язку.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Vladyslava Bobko",
+            about: "My approach is about balancing elegance and logic: design is worthy of royal attention.",
+            services:
+                "I am a UX/UI designer who creates intuitive and engaging digital products. I start with researching users, analyzing the market and identifying business goals. Based on this, I formulate the structure of the interface, I develop prototypes and test them. Then I create a visual design that combines aesthetics and functionality. I implement solutions together with the development team and improve the product based on feedback.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Vladyslava Bobko",
+            about: "Moje podejście to równowaga między finezją a logiką — design godny królewskiej uwagi.",
+            services:
+                "Jestem projektantem UX/UI, który tworzy intuicyjne i atrakcyjne produkty cyfrowe. Zaczynam od badania użytkowników, analizy rynku i definiowania celów biznesowych. Na tej podstawie kształtuję strukturę interfejsu, opracowuję prototypy i waliduję je w testach. Następnie tworzę projekt wizualny, który łączy estetykę i funkcjonalność. Wdrażam rozwiązanie wraz z zespołem programistów i ulepszam produkt w oparciu o informacje zwrotne.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
             imageURL:

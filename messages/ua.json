@@ -137,7 +137,9 @@
         "AllProjects": "Всі проєкти",
         "landings": "Лендінг",
         "onlinestores": "Інтернет магазин",
-        "websites": "Вебсайт"
+        "websites": "Вебсайт",
+        "showAll": "Показати всі",
+        "showLess": "Згорнути"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"

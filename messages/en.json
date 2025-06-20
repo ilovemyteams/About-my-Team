@@ -138,7 +138,9 @@
         "AllProjects": "All projects",
         "landings": "Landing page",
         "onlinestores": "Online store",
-        "websites": "Website"
+        "websites": "Website",
+        "showAll": "Show all",
+        "showLess": "Show less"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -179,6 +181,7 @@
         "facebookPlaceholder": "facebook.com/susanna-salata",
         "messagePlaceholder": "Your message is important to us",
         "requiredField": "*Fields are required to be filled in",
+
         "informedAgreement": "I agree to the ",
         "informedAgreementSeparator": " and ",
         "privacyPolicy": "Privacy Policy",

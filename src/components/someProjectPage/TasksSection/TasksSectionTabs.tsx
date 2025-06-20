@@ -17,7 +17,7 @@ export const TasksSectionTabs = ({
         }
     };
     return (
-        <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end pc:absolute pc:top-0 pc:left-1/2">
+        <ul className="flex flex-wrap gap-2 shrink-0 tab:justify-end pc:absolute pc:top-0 pc:left-[47%] desk:left-[50%]">
             {tabs.map((title, index) => {
                 const color =
                     activeTab === title

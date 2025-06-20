@@ -29,7 +29,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Політика конфіденційності визначає, яким чином збираються, використовуються, обробляються та захищаються персональні дані, зібрані на нашому Сайті. Згідно з Політикою ми прагнемо забезпечити конфіденційність, безпеку та захист особистої інформації Користувачів та Відвідувачів Сайту, які залишають свої дані на Сайті.",
+                        text: "Політика конфіденційності визначає, яким чином збираються, використовуються, обробляються та захищаються персональні дані, зібрані на нашому Сайті. Згідно з Політикою ми прагнемо забезпечити конфіденційність, безпеку та захист особистої інформації потенційних Замовників, Користувачів та Відвідувачів Сайту, які залишають свої дані на Сайті.",
                     },
                     {
                         type: "text",
@@ -47,7 +47,7 @@ export const policyData: PolicyType = {
                 content: [
                     {
                         type: "text",
-                        text: "Ми збираємо 3 категорії персональних даних: технічну інформацію про Відвідувачів Сайту, інформацію про Учасників та інформація про потенційних Замовників.",
+                        text: "Ми збираємо 3 категорії персональних даних: технічну інформацію про Відвідувачів Сайту, інформацію про Учасників та інформацію про потенційних Замовників.",
                     },
                     {
                         type: "subtitle",
@@ -80,8 +80,8 @@ export const policyData: PolicyType = {
                         type: "list",
                         text: [
                             "контактні дані (ім'я, прізвище, інші ідентифікатори, що використовуються в месенджерах та соціальних мережах, адресу електронної пошти, посилання на портфоліо та виконані вами проєкти);",
-                            "особисті дані (інформація про освіту, досвід роботи, дані про компанію де працюєте та/або дані ФОП);",
-                            "дані для профілю Учасника (фото, цитати, стеки та інструменти, якими володієте та перелік послуг, які надаєте та їх вартість).",
+                            "особисті дані (інформація про освіту, досвід роботи, дані про компанію  в якій ви працюєте  та/або дані ФОП);",
+                            "дані для профілю Учасника (фото, цитати, стеки та інструменти, якими володієте, та перелік послуг, які надаєте, та їх вартість).",
                         ],
                     },
 
@@ -106,7 +106,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Також ми можемо використовувати надані вами дані для аналітики відвідувань/звернень/замовлень, аналізу часу перебування на Сайті, визначення точки входу/виходу на/з Сайту та поліпшення користувацького досвіду, а також надсилання інформаційних листів та/або маркетингових матеріалів тощо.",
+                        text: "Також ми можемо використовувати надані вами дані для аналітики відвідувань/звернень/замовлень, аналізу часу перебування на Сайті, визначення точок входу на Сайт і виходу з нього та поліпшення користувацького досвіду, а також надсилання інформаційних листів та/або маркетингових матеріалів тощо.",
                     },
                     {
                         type: "text",
@@ -131,20 +131,20 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Ми можемо використовувати персональні дані для надсилання інформаційних листів, маркетингових акцій, сповіщень про оновлення інформації на Сайті.",
+                        text: "Ми можемо використовувати персональні дані для надсилання інформаційних листів, маркетингових акцій, сповіщень про оновлення інформації на Сайті. Ви маєте право в будь-який момент відмовитися від отримання інформаційних та маркетингових розсилок, скориставшись механізмом відписки в кожному повідомленні або звернувшись до нас за адресою i.love.my.team.2023@gmail.com.",
                     },
                     {
                         type: "subtitle",
-                        text: "А) Дані, отримані від <purple>Учасника</purple> можуть використовуватися для:",
+                        text: "А) Дані, отримані від <purple>Учасника</purple>, можуть використовуватися для:",
                     },
                     {
                         type: "list",
                         text: [
                             "надання інформаційних послуг, пов’язаних із просуванням особистого профілю Учасника та його/її послуг;",
-                            "здійснення функціонування платформи та її вдосконалення;",
-                            "комунікації із Учасником щодо замовлень його/її послуг, оновлення даних профілю, та з інших питань в межах діяльності Сайту, надання зворотнього зв’язку у разі інших питань від Учасника;",
+                            "функціонування платформи та її вдосконалення;",
+                            "комунікації із Учасником щодо замовлень його/її послуг, оновлення даних профілю, та з інших питань в межах діяльності Сайту, надання зворотного зв’язку у разі інших питань від Учасника;",
                             "попередження, запобігання або вжиття заходів проти незаконної діяльності та / або порушення умов користування Сайтом;",
-                            "верифікація особи Учасника згідно з поданою ним/нею інформації.",
+                            "верифікація особи Учасника згідно з поданою ним/нею інформацією.",
                         ],
                     },
                     {
@@ -158,7 +158,7 @@ export const policyData: PolicyType = {
                             "впровадження функціональності платформи та її вдосконалення;",
                             "надсилання додаткової інформації щодо замовлення;",
                             "надсилання відповіді на запит інформації про послуги;",
-                            "попередження, запобігання або вжиття заходів проти незаконної діяльності та / або порушення правил користування Сайтом.",
+                            "попередження, запобігання або вжиття заходів проти незаконної діяльності та/або порушення правил користування Сайтом.",
                         ],
                     },
                 ],
@@ -176,7 +176,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Cookies — це невеликі текстові файли, які вебсайт зберігає на вашому комп’ютері або мобільному пристрої. Файли cookies дозволяють вебсайту «пам’ятати» ваші дії або дані протягом певного часу. Зазвичай вони використовуються для підтримки авторизованих сесій або налаштування персоналізованого інтерфейсу, розміру шрифтів, кольорових схем, мови сайту тощо, а також взагалі забезпечують комфортніше перебування на Сайті.",
+                        text: "Файли Cookies - це невеликі текстові файли, які вебсайт зберігає на вашому комп’ютері або мобільному пристрої. Файли cookies дозволяють вебсайту «пам’ятати» ваші дії або дані протягом певного часу. Зазвичай вони використовуються для підтримки авторизованих сесій або налаштування персоналізованого інтерфейсу, розміру шрифтів, кольорових схем, мови сайту тощо, а також забезпечують комфортніше перебування на Сайті.",
                     },
                     {
                         type: "subtitle",
@@ -188,11 +188,11 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Цей вебсайт, крім власних cookies, може зберігати й інші додаткові файли, через використання сторонніх сервісів.",
+                        text: "Цей вебсайт, крім власних cookies, може зберігати й інші додаткові файли через використання сторонніх сервісів.",
                     },
                     {
                         type: "text",
-                        text: "Після завантаження Сайту ви можете обрати один з двох варіантів: «прийняти» або «відхилити».",
+                        text: "Після завантаження Сайту ви можете обрати один із двох варіантів: «прийняти» або «відхилити».",
                     },
                     {
                         type: "text",
@@ -205,14 +205,14 @@ export const policyData: PolicyType = {
                     {
                         type: "list",
                         text: [
-                            "Основні файли cookies використовуються для роботи з основними функціями вебсайту, щоб у вас була можливість відвідувати Сайт, а також використовувати його функції.",
+                            "Основні файли cookies використовуються для роботи з основними функціями вебсайту, щоб у вас була можливість користуватися Сайтом, а також використовувати його функції.",
                             "Файли cookies для аналітики допомагають нам зрозуміти, як відвідувачі використовують наш вебсайт і переміщуються по ньому, що дає змогу покращувати та адаптувати наш вебсайт до потреб відвідувачів. Ми використовуємо аналітичні cookies лише за вашої згоди. У разі натискання «відхилити» такі файли не активуються, і ми не збиратимемо відповідні аналітичні дані.",
                         ],
                     },
 
                     {
                         type: "subtitle",
-                        text: "<purple>Дані</purple>, які ми можемо <purple>збирати</purple> через cookies (за згоди):",
+                        text: "<purple>Дані</purple>, які ми можемо <purple>збирати</purple> через cookies (за вашої згоди):",
                     },
                     {
                         type: "list",
@@ -226,14 +226,14 @@ export const policyData: PolicyType = {
                             "відвідані сторінки;",
                             "сторінка входу на вебсайт;",
                             "сторінка виходу з вебсайту;",
-                            "прокрутка сторінки (глибина скролу);",
+                            "глибина прокручування;",
                             "кліки на елементи інтерфейсу (включно з кнопками).",
                         ],
                     },
 
                     {
                         type: "text",
-                        text: "Обов’язкові cookies, які не можна вимкнути: cookies зберігаються автоматично, оскільки є необхідними для забезпечення безперебійної роботи Сайту:",
+                        text: "Обов’язкові cookies, які не можна вимкнути, cookies зберігаються автоматично, оскільки є необхідними для забезпечення безперебійної роботи Сайту:",
                     },
                     {
                         type: "list",
@@ -284,7 +284,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Разом з тим, дані, які наші Користувачі надають при зверненні та заповненні форми Учасника, в тому числі Ім’я, Прізвище, електронна пошта, акаунти в соціальних мережах, месенджери будуть доступні на нашому вебсайті після додавання картки Учасника на Сайт і будь-який Відвідувач нашого вебсайту зможе ознайомитись з цими даними.",
+                        text: "Разом з тим, дані, які наші Користувачі надають при зверненні та заповненні форми Учасника, в тому числі Ім’я, Прізвище, електронна пошта, акаунти в соціальних мережах, месенджери, будуть доступні на нашому вебсайті після додавання картки Учасника на Сайт і будь-який Відвідувач нашого вебсайту зможе ознайомитись з цими даними.",
                     },
                     {
                         type: "subtitle",
@@ -327,11 +327,11 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Заповнюючи форму Учасника або форму Замовника на Сайті ви підтверджуєте, що є особою, яка досягла щонайменше вісімнадцять (18) років. Ми не маємо змоги перевірити достовірність наданих вами даних, тому відповідальність за правдивість та достовірність інформації про ваш вік залишається на вас.",
+                        text: "Заповнюючи форму Учасника або форму Замовника на Сайті ви підтверджуєте, що є особою, яка досягла щонайменше вісімнадцяти (18) років. Ми не маємо змоги перевірити достовірність наданих вами даних, тому відповідальність за правдивість та достовірність інформації про ваш вік залишається на вас.",
                     },
                     {
                         type: "text",
-                        text: "Ми передбачаємо, що Суб’єктам, які використовують наш Сайт та мають доступ до нього як Учасниками/Замовниками, виповнилося вісімнадцять (18) років і вони мають усі права укласти угоду з нами щодо отримання/надання Послуг, а також щодо збору та обробки персональних даних за згодою Суб’єктів для цілей, про які ми згадуємо в цій Політиці.",
+                        text: "Ми передбачаємо, що Суб’єктам, які використовують наш Сайт та мають доступ до нього як Учасники/Замовники, виповнилося вісімнадцять (18) років і вони мають усі права укласти угоду з нами щодо отримання/надання Послуг, а також щодо збору та обробки персональних даних за згодою Суб’єктів для цілей, про які ми згадуємо в цій Політиці.",
                     },
                     {
                         type: "text",
@@ -364,7 +364,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Ви також можете вимагати видалення вашого профайлу на Сайті та на внутрішніх ресурсах Сайту в будь-який час, відправивши письмовий обґрунтований запит на видалення ваших персональних даних електронною поштою на *email*.",
+                        text: "Ви також можете вимагати видалення вашого профілю на Сайті та на внутрішніх ресурсах Сайту в будь-який час, відправивши письмовий обґрунтований запит на видалення ваших персональних даних електронною поштою на *email*.",
                     },
                     {
                         type: "text",
@@ -372,7 +372,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Ми залишаємо за собою право не видалити ваші персональні дані до розв’язання конфліктної ситуації або вирішення спору (наприклад, у випадку підозри у зв’язку із злочинними організаціями або іншим порушенням чинного законодавства, наприклад, шахрайство, небезпечна поведінка, загроза безпеки, залякування чи переслідування тощо). Після вирішення або врегулювання позову, закінчення кримінального чи адміністративного провадження або якщо підозра невиправдана протягом одного (1) року, ми видалимо вашу особисту інформацію і повідомимо про це письмово на вказану вами електронну пошту, з якої ми отримали ваш запит.",
+                        text: "Ми залишаємо за собою право не видалити ваші персональні дані до розв’язання конфліктної ситуації або вирішення спору (наприклад, у випадку підозри у зв’язках із злочинними організаціями або іншим порушенням чинного законодавства, наприклад, шахрайство, небезпечна поведінка, загроза безпеки, залякування чи переслідування тощо). Після вирішення або врегулювання позову, закінчення кримінального чи адміністративного провадження або якщо підозра невиправдана протягом одного (1) року, ми видалимо вашу особисту інформацію і повідомимо про це письмово на вказану вами електронну пошту, з якої ми отримали ваш запит.",
                     },
                     {
                         type: "subtitle",
@@ -405,7 +405,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Ви можете відкликати свою згоду, надіславши нам офіційне електронне повідомлення на *email* із вказаними своїми особистими даними, які ви хочете прибрати або виправити на нашому Сайті та підтвердження особи, щоб ми могли вас ідентифікувати як власника цих персональних даних.",
+                        text: "Ви можете відкликати свою згоду, надіславши нам офіційне електронне повідомлення на *email* із вказаними своїми особистими даними, які ви хочете прибрати або виправити на нашому Сайті та підтвердження особи, щоб ми могли вас ідентифікувати як суб’єкта цих персональних даних.",
                     },
                     {
                         type: "text",
@@ -499,7 +499,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Ми можемо попросити вас надати нам додаткову інформацію, яку ми вже маємо, щоб підтвердити, що це ви або особа, яка є офіційним представником від вашого імені (за певних обставин).",
+                        text: "Ми можемо попросити вас надати нам додаткову інформацію, яку ми вже маємо, щоб підтвердити, що це ви або особа, яка є офіційним представником (за певних обставин).",
                     },
                 ],
             },
@@ -539,7 +539,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "The Privacy Policy defines how personal data collected on our Website is collected, used, processed and protected. According to the policy, we strive to ensure the confidentiality, security, and protection of personal information of Users and Website Visitors who leave their data on the Website.",
+                        text: "The Privacy Policy defines how personal data collected on our Website is collected, used, processed and protected. According to the policy, we strive to ensure the confidentiality, security, and protection of personal information of potential Customers, Users and Website Visitors who leave their data on the Website.",
                     },
                     {
                         type: "text",
@@ -641,7 +641,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "We may use personal data to send newsletters, marketing campaigns, and notifications about updates to information on the Website.",
+                        text: "We may use personal data to send newsletters, marketing campaigns, and notifications about updates to information on the Website. You have the right to unsubscribe from receiving informational and marketing emails at any time by using the unsubscribe mechanism provided in each message or by contacting us at i.love.my.team.2023@gmail.com.",
                     },
                     {
                         type: "subtitle",
@@ -651,7 +651,7 @@ export const policyData: PolicyType = {
                         type: "list",
                         text: [
                             "providing information services to promote the Participant's personal profile and services;",
-                            "implementation of the platform and its improvement;",
+                            "functioning of the platform and its improvement;",
                             "communicating with the Participant regarding orders of his/her services, updating profile data, and other issues within the scope of the Website, providing feedback in case of other issues from the Participant;",
                             "warning, prevention or taking measures against illegal activities and/or violation of the terms of use of the Website;",
                             "verification of the Participant's identity according to the information provided by him/her.",
@@ -686,7 +686,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Cookies are small text files that a website stores on your computer or mobile device. Cookies allow a Website to “remember” your actions or data over time. They are usually used to support authorized sessions or to customize a personalized interface, font size, color schemes, website language, etc. and generally make your experience on the website more comfortable.",
+                        text: "Cookies Files are small text files that a website stores on your computer or mobile device. Cookies allow a Website to “remember” your actions or data over time. They are usually used to support authorized sessions or to customize a personalized interface, font size, color schemes, website language, etc. and make your experience on the website more comfortable.",
                     },
                     {
                         type: "subtitle",
@@ -715,14 +715,14 @@ export const policyData: PolicyType = {
                     {
                         type: "list",
                         text: [
-                            "Essential cookies are used to work with the main functions of the Website so that you can visit the Website and use its functions.",
+                            "Essential cookies are used to work with the main functions of the Website so that you can use the Website and use its functions.",
                             "Analytics cookies help us to understand how visitors use and navigate our Website, which allows us to improve and adapt our Website to the needs of visitors. By refusing these cookies, we will not be able to collect such data and improve the Website to meet your needs.",
                         ],
                     },
 
                     {
                         type: "subtitle",
-                        text: "<purple>Data</purple> we may <purple>collect</purple> through cookies:",
+                        text: "<purple>Data</purple> we may <purple>collect</purple> through cookies (with your consent):",
                     },
                     {
                         type: "list",
@@ -736,7 +736,7 @@ export const policyData: PolicyType = {
                             "pages visited;",
                             "website login page;",
                             "website Logout page;",
-                            "page scrolling (scroll depth);",
+                            "scroll depth;",
                             "clicks on interface elements (including buttons).",
                         ],
                     },
@@ -828,7 +828,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "If the processing is necessary to protect the vital interests of individuals or public policy, we cannot refuse to provide copies of your personal data that we have collected or to which we may have access within the functionality of the Website, to authorities and law enforcement agencies, in case we receive a legal decision or official request from them.",
+                        text: "If the processing is necessary to protect the vital interests of individuals or public policy, we cannot refuse to provide copies of your personal data that we have collected or to which we may have access within the functionality of the Website, to state authorities and law enforcement agencies, in case we receive a legal decision or official request from them.",
                     },
                     {
                         type: "text",
@@ -918,7 +918,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "You may withdraw your consent by sending us a formal email to *email* stating your personal data that you wish to have removed or corrected on our Website and providing proof of identity so that we can identify you as the owner of that personal data.",
+                        text: "You may withdraw your consent by sending us a formal email to *email* stating your personal data that you wish to have removed or corrected on our Website and providing proof of identity so that we can identify you as personal data subject.",
                     },
                     {
                         type: "text",
@@ -1012,7 +1012,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "We may ask you to provide us with additional information that we already hold to confirm that it is you or someone who is an authorized representative on your behalf (in certain circumstances).",
+                        text: "We may ask you to provide us with additional information that we already hold to confirm that it is you or someone who is an authorized representative (in certain circumstances).",
                     },
                 ],
             },
@@ -1052,7 +1052,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Polityka prywatności określa, w jaki sposób dane osobowe gromadzone na naszej Stronie są gromadzone, wykorzystywane, przetwarzane i chronione. Zgodnie z polityką, staramy się zapewnić poufność, bezpieczeństwo i ochronę danych osobowych Użytkowników i Odwiedzających Stronę, którzy zostawiają swoje dane na Stronie.",
+                        text: "Polityka prywatności określa, w jaki sposób dane osobowe gromadzone na naszej Stronie są gromadzone, wykorzystywane, przetwarzane i chronione. Zgodnie z polityką, staramy się zapewnić poufność, bezpieczeństwo i ochronę danych osobowych potencjalnych Klientów, Użytkowników i Odwiedzających Stronę, którzy zostawiają swoje dane na Stronie.",
                     },
                     {
                         type: "text",
@@ -1154,7 +1154,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Możemy wykorzystywać dane osobowe do wysyłania biuletynów, kampanii marketingowych i powiadomień o aktualizacjach informacji na Stronie.",
+                        text: "Możemy wykorzystywać dane osobowe do wysyłania biuletynów, kampanii marketingowych i powiadomień o aktualizacjach informacji na Stronie. Masz prawo w każdej chwili zrezygnować z otrzymywania informacji i materiałów marketingowych, korzystając z mechanizmu rezygnacji z subskrypcji w każdej wiadomości lub kontaktując się z nami pod adresem i.love.my.team.2023@gmail.com.",
                     },
                     {
                         type: "subtitle",
@@ -1164,9 +1164,9 @@ export const policyData: PolicyType = {
                         type: "list",
                         text: [
                             "świadczenia usług informacyjnych w celu promowania osobistego profilu Uczestnika i jego usług;",
-                            "wdrażania platformy i jej ulepszania;",
-                            "komunikowania się z Uczestnika w sprawie zamówień jego usług, aktualizacji danych profilu i innych kwestii w ramach Serwisu, przekazywania informacji zwrotnych w przypadku innych kwestii ze strony Uczestnika;",
-                            "ostrzeganie, zapobieganie lub podejmowanie środków przeciwko nielegalnym działaniom i/lub naruszeniom warunków korzystania z Serwisu;",
+                            "funkcjonowania platformy i jej ulepszania;",
+                            "komunikacji z Uczestnikiem w sprawie zamówień jego usług, aktualizacji danych profilu i innych kwestii w zakresie działalności strony internetowej, przekazywania informacji zwrotnych w przypadku innych kwestii ze strony Uczestnika;",
+                            "ostrzeganie, zapobieganie lub podejmowanie środków przeciwko nielegalnym działaniom i/lub naruszeniom warunków korzystania ze strony internetowej;",
                             "weryfikacja tożsamości Uczestnika na podstawie podanych przez niego informacji.",
                         ],
                     },
@@ -1178,10 +1178,10 @@ export const policyData: PolicyType = {
                         type: "list",
                         text: [
                             "świadczenia usług informacyjnych związanych z wyborem zespołu i jego członków przy zamawianiu usług;",
-                            "wdrażanie funkcjonalności platformy i jej ulepszanie;",
+                            "wdrażania funkcjonalności platformy i jej ulepszania;",
                             "wysyłania dodatkowych informacji o zamówieniu;",
                             "wysyłania odpowiedzi na prośbę o informacje o usługach;",
-                            "zapobieganie, przeciwdziałanie lub podejmowanie działań przeciwko nielegalnej działalności i/lub naruszeniom zasad korzystania ze Strony.",
+                            "zapobiegania, przeciwdziałania lub podejmowania działań przeciwko nielegalnej działalności i/lub naruszeniom zasad korzystania ze Strony.",
                         ],
                     },
                 ],
@@ -1199,7 +1199,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Pliki cookies to małe pliki tekstowe, które witryna internetowa przechowuje na komputerze lub urządzeniu mobilnym Użytkownika. Pliki cookies umożliwiają witrynie „zapamiętywanie” działań lub danych Użytkownika w czasie. Są one zwykle używane do obsługi autoryzowanych sesji lub do dostosowywania spersonalizowanego interfejsu, rozmiaru czcionki, schematów kolorów, języka witryny itp. i ogólnie sprawiają, że korzystanie z witryny jest wygodniejsze.",
+                        text: "Pliki cookie to małe pliki tekstowe, które Strona przechowuje na komputerze lub urządzeniu mobilnym Użytkownika. Pliki cookie umożliwiają Stronie „zapamiętywanie” działań lub danych Użytkownika w czasie. Są one zwykle używane do obsługi autoryzowanych sesji lub do dostosowywania spersonalizowanego interfejsu, rozmiaru czcionki, schematów kolorów, języka Strony itp. i ogólnie sprawiają, że korzystanie ze Strony jest wygodniejsze.",
                     },
                     {
                         type: "subtitle",
@@ -1207,7 +1207,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Głównym celem używania plików cookies na tej stronie internetowej jest zapewnienie prawidłowego działania Serwisu, świadczenie wysokiej jakości spersonalizowanych usług oraz przechowywanie informacji podczas korzystania z Serwisu.",
+                        text: "Głównym celem używania plików cookie na tej stronie internetowej jest zapewnienie prawidłowego działania Strony, świadczenie wysokiej jakości spersonalizowanych usług oraz przechowywanie informacji podczas korzystania ze Strony.",
                     },
                     {
                         type: "text",
@@ -1228,14 +1228,14 @@ export const policyData: PolicyType = {
                     {
                         type: "list",
                         text: [
-                            "Niezbędne pliki cookies służą do obsługi podstawowych funkcji Strony internetowej, dzięki czemu można ją odwiedzać i korzystać z jej funkcji.",
-                            "Analityczne pliki cookies pomagają nam zrozumieć, w jaki sposób odwiedzający korzystają z naszej Strony i poruszają się po niej, co pozwala nam ulepszać i dostosowywać naszą Stronę do potrzeb odwiedzających. Odrzucając te pliki cookies, nie będziemy w stanie gromadzić takich danych i ulepszać Stronę w celu zaspokojenia potrzeb Użytkownika.",
+                            "Niezbędne pliki cookie są wykorzystywane do obsługi podstawowych funkcji Strony internetowej, aby umożliwić korzystanie ze Strony.",
+                            "Analityczne pliki cookies pomagają nam zrozumieć, w jaki sposób odwiedzający korzystają z naszej Strony i poruszają się po niej, co pozwala nam ulepszać i dostosowywać naszą Stronę do potrzeb Odwiedzających. Odrzucając te pliki cookies, nie będziemy w stanie gromadzić takich danych i ulepszać Stronę w celu zaspokojenia potrzeb Użytkownika.",
                         ],
                     },
 
                     {
                         type: "subtitle",
-                        text: "<purple>Dane</purple>, które możemy <purple>gromadzić</purple> pomocą plików cookies:",
+                        text: "<purple>Dane</purple>, które możemy <purple>gromadzić</purple> pomocą plików cookies (z Twojej zgody):",
                     },
                     {
                         type: "list",
@@ -1249,7 +1249,7 @@ export const policyData: PolicyType = {
                             "odwiedzone strony;",
                             "strona logowania do witryny;",
                             "strona wyjścia z witryny;",
-                            "przewijanie strony (głębokość przewijania);",
+                            "głębokość przewijania;",
                             "kliknięcia w elementy interfejsu (w tym przyciski).",
                         ],
                     },
@@ -1310,7 +1310,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Jednocześnie dane podane przez naszych Użytkowników podczas składania wniosku i wypełniania formularza Uczestnika, w tym Imię, Nazwisko, adres e-mail, konta w mediach społecznościowych, komunikatory będą dostępne na naszej stronie internetowej po dodaniu profilu Uczestnika do Serwisu i każda osoba odwiedzająca naszą stronę internetową będzie mogła zapoznać się z tymi danymi.",
+                        text: "Jednocześnie dane podane przez naszych Użytkowników podczas składania wniosku i wypełniania formularza Uczestnika, w tym Imię, Nazwisko, adres e-mail, konta w mediach społecznościowych, komunikatory będą dostępne na naszej stronie internetowej po dodaniu profilu Uczestnika na Stronę i każda osoba odwiedzająca naszą stronę internetową będzie mogła zapoznać się z tymi danymi.",
                     },
                     {
                         type: "subtitle",
@@ -1319,7 +1319,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Przetwarzanie danych osobowych odbywa się zgodnie z wymogami Ogólnego rozporządzenia o ochronie danych (RODO), Ustawy Ukrainy „O ochronie danych osobowych”, (dalej - Ustawa) w zakresie podstawy prawnej przetwarzania. Ustawa zezwala nam na gromadzenie i przetwarzanie danych osobowych na następujących podstawach prawnych:",
+                        text: "Przetwarzanie danych osobowych odbywa się zgodnie z wymogami Ogólnego rozporządzenia o ochronie danych (RODO), Ustawy Ukrainy „O ochronie danych osobowych”, (dalej - Ustawa) w zakresie podstawy prawnej przetwarzania. Ustawa zezwala nam na gromadzenie i przetwarzanie Twoich danych osobowych na następujących podstawach prawnych:",
                     },
                     {
                         type: "subtitle",
@@ -1327,21 +1327,21 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Prawo, a także inne obowiązujące przepisy, w zależności od relacji między Użytkownikiem a naszą firmą, mogą mieć wpływ na:",
+                        text: "Prawo, a także inne obowiązujące przepisy, w zależności od relacji między Tobą a naszą firmą, mogą mieć wpływ na:",
                     },
                     {
                         type: "list",
                         text: [
                             "ilość gromadzonych przez nas danych osobowych;",
-                            "sposoby, w jakie przetwarzamy dane osobowe Użytkownika;",
-                            "naszą zdolność do zachowania poufności danych Użytkownika i uniknięcia ich nieuprawnionego ujawnienia;",
+                            "sposoby, w jakie przetwarzamy Twoje dane osobowe;",
+                            "naszą zdolność do zachowania poufności Twoich danych i uniknięcia ich nieuprawnionego ujawnienia;",
                             "czas planowanego przechowywania danych itp.",
                         ],
                     },
 
                     {
                         type: "text",
-                        text: "Jeśli przetwarzanie jest niezbędne do ochrony żywotnych interesów osób fizycznych lub porządku publicznego, nie możemy odmówić dostarczenia kopii danych osobowych Użytkownika, które zebraliśmy lub do których możemy mieć dostęp w ramach funkcjonalności Strony, organom władzy i organom ścigania, w przypadku otrzymania ich decyzji prawnej lub żądania.",
+                        text: "Jeśli przetwarzanie jest niezbędne do ochrony żywotnych interesów osób fizycznych lub porządku publicznego, nie możemy odmówić dostarczenia kopii Twoich danych osobowych Użytkownika, które zebraliśmy lub do których możemy mieć dostęp w ramach funkcjonalności Strony, organom władzy i organom ścigania, w przypadku otrzymania ich decyzji prawnej lub żądania.",
                     },
                     {
                         type: "text",
@@ -1353,7 +1353,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Wypełniając formularz Uczestnika lub Klienta na Stronie, Użytkownik potwierdza, że jest osobą, która ukończyła co najmniej osiemnaście (18) lat. Nie jesteśmy w stanie zweryfikować dokładności danych podanych przez Użytkownika, dlatego Użytkownik ponosi odpowiedzialność za prawdziwość i dokładność informacji dotyczących jego wieku.",
+                        text: "Wypełniając formularz Uczestnika lub Klienta na Stronie, Użytkownik potwierdza, że jest osobą, która ukończyła co najmniej osiemnaście (18) lat. Nie jesteśmy w stanie zweryfikować dokładności danych podanych przez Ciebie, dlatego Ty ponosisz odpowiedzialność za prawdziwość i dokładność informacji dotyczących jego wieku.",
                     },
                     {
                         type: "text",
@@ -1373,7 +1373,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Aby korzystać z naszych usług, Użytkownik musi mieć ukończone osiemnaście (18) lat. Nie świadczymy usług podmiotom poniżej powyższego wieku. W związku z tym nie przetwarzamy ich danych osobowych. Zastrzegamy sobie prawo do korzystania z dowolnych narzędzi i metod w celu wykrywania handlu ludźmi i wykorzystywania dzieci oraz do niezwłocznego zgłaszania takich przypadków odpowiednim organom rządowym i organom ścigania, w tym danych osobowych związanych z działaniami, które uznamy za podejrzane i które mogą budzić obawy co do powiązania z działaniami naruszającymi obowiązujące przepisy prawa.",
+                        text: "Aby korzystać z naszych usług, musisz mieć ukończone osiemnaście (18) lat. Nie świadczymy usług podmiotom poniżej powyższego wieku. W związku z tym nie przetwarzamy ich danych osobowych. Zastrzegamy sobie prawo do korzystania z dowolnych narzędzi i metod w celu wykrywania handlu ludźmi i wykorzystywania dzieci oraz do niezwłocznego zgłaszania takich przypadków odpowiednim organom rządowym i organom ścigania, w tym danych osobowych związanych z działaniami, które uznamy za podejrzane i które mogą budzić obawy co do powiązania z działaniami naruszającymi obowiązujące przepisy prawa.",
                     },
                 ],
             },
@@ -1390,7 +1390,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Użytkownik może również zażądać usunięcia swojego profilu ze Strony i wewnętrznych zasobów Strony w dowolnym momencie, wysyłając pisemny, uzasadniony wniosek o usunięcie swoich danych osobowych pocztą elektroniczną na adres *email*.",
+                        text: "Ty też możesz również zażądać usunięcia swojego profilu ze Strony i wewnętrznych zasobów Strony w dowolnym momencie, wysyłając pisemny, uzasadniony wniosek o usunięcie swoich danych osobowych pocztą elektroniczną na adres *email*.",
                     },
                     {
                         type: "text",
@@ -1398,7 +1398,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Zastrzegamy sobie prawo do nieusuwania danych osobowych Użytkownika do czasu rozwiązania sytuacji konfliktowej lub rozstrzygnięcia sporu (na przykład w przypadku podejrzenia o powiązania z organizacjami przestępczymi lub innego naruszenia obowiązującego prawa, takiego jak oszustwo, niebezpieczne zachowanie, zagrożenie bezpieczeństwa, zastraszanie lub nękanie itp.). Po rozstrzygnięciu lub zaspokojeniu roszczenia, zakończeniu postępowania karnego lub administracyjnego lub jeśli podejrzenie nie zostanie uzasadnione w ciągu jednego (1) roku, usuniemy dane osobowe Użytkownika i powiadomimy go o tym na piśmie na podany przez niego adres e-mail, z którego otrzymaliśmy żądanie.",
+                        text: "Zastrzegamy sobie prawo do nieusuwania Twoich danych osobowych do czasu rozwiązania sytuacji konfliktowej lub rozstrzygnięcia sporu (na przykład w przypadku podejrzenia o powiązania z organizacjami przestępczymi lub innego naruszenia obowiązującego prawa, takiego jak oszustwo, niebezpieczne zachowanie, zagrożenie bezpieczeństwa, zastraszanie lub nękanie itp.) Po rozstrzygnięciu lub zaspokojeniu roszczenia, zakończeniu postępowania karnego lub administracyjnego lub jeśli podejrzenie nie zostanie uzasadnione w ciągu jednego (1) roku, usuniemy Twoje dane osobowe i powiadomimy Ciebie o tym na piśmie na podany przez Ciebie adres e-mail, z którego otrzymaliśmy żądanie.",
                     },
                     {
                         type: "subtitle",
@@ -1406,15 +1406,15 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Możemy być prawnie zobowiązani do ujawnienia danych osobowych Użytkownika właściwemu organowi rządowemu, organowi wykonawczemu lub sądowi, jeśli otrzymamy od nich obowiązkowy oficjalny wniosek o takie ujawnienie.",
+                        text: "Możemy być prawnie zobowiązani do ujawnienia Twoich danych osobowych właściwemu organowi rządowemu, organowi wykonawczemu lub sądowi, jeśli otrzymamy od nich obowiązkowy oficjalny wniosek o takie ujawnienie.",
                     },
                     {
                         type: "subtitle",
-                        text: "<purple>Zgoda</purple> Użytkownika na ujawnienie danych osobowych",
+                        text: "<purple>Twoja zgoda</purple> na ujawnienie danych osobowych",
                     },
                     {
                         type: "text",
-                        text: "Poinformujemy Użytkownika o celach i zakresie informacji oraz poprosimy o zgodę na przekazanie jego danych osobowych stronie trzeciej niewymienionej w niniejszej Polityce.",
+                        text: "Poinformujemy Ciebie o celach i zakresie informacji oraz poprosimy o zgodę na przekazanie Twoich danych osobowych stronie trzeciej niewymienionej w niniejszej Polityce.",
                     },
                     {
                         type: "subtitle",
@@ -1422,16 +1422,16 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Przepisy prawa pozostawiają Użytkownikowi prawo do wycofania zgody na przetwarzanie danych osobowych.",
+                        text: "Przepisy prawa pozostawiają Tobie prawo do wycofania zgody na przetwarzanie danych osobowych.",
                     },
                     {
                         type: "text",
-                        text: "Użytkownik może skorzystać z tego prawa w dowolnym momencie. Należy pamiętać, że wycofanie zgody nie oznacza, że przetwarzanie danych, które miało miejsce przed wycofaniem zgody, zostanie uznane za niezgodne z prawem.",
+                        text: "Ty możesz skorzystać z tego prawa w dowolnym momencie. Należy pamiętać, że wycofanie zgody nie oznacza, że przetwarzanie danych, które miało miejsce przed wycofaniem zgody, zostanie uznane za niezgodne z prawem.",
                     },
 
                     {
                         type: "text",
-                        text: "Użytkownik może wycofać swoją zgodę, wysyłając do nas formalną wiadomość e-mail na adres *email* z podaniem swoich danych osobowych, które chce usunąć lub poprawić na naszej Stronie, oraz dowodem tożsamości, abyśmy mogli zidentyfikować Użytkownika jako właściciela tych danych osobowych.",
+                        text: "Ty możesz wycofać swoją zgodę, wysyłając do nas formalną wiadomość e-mail na adres *email* z podaniem swoich danych osobowych, które chce usunąć lub poprawić na naszej Stronie, oraz dowodem tożsamości, abyśmy mogli zidentyfikować Ciebie jako właściciela tych danych osobowych.",
                     },
                     {
                         type: "text",
@@ -1525,7 +1525,7 @@ export const policyData: PolicyType = {
 
                     {
                         type: "text",
-                        text: "Możemy poprosić Użytkownika o dostarczenie nam dodatkowych informacji, które już posiadamy, aby potwierdzić, że jest to Użytkownik lub osoba działająca jako upoważniony przedstawiciel w jego imieniu (w pewnych okolicznościach).",
+                        text: "Możemy poprosić Ciebie o dostarczenie nam dodatkowych informacji, które już posiadamy, aby potwierdzić, że to Ty lub osoba działająca jako upoważniony przedstawiciel (w pewnych okolicznościach).",
                     },
                 ],
             },
@@ -1538,7 +1538,7 @@ export const policyData: PolicyType = {
                     },
                     {
                         type: "text",
-                        text: "Jeśli wprowadzimy jakiekolwiek istotne zmiany, powiadomimy Użytkownika o zmianach na naszej stronie internetowej lub w inny sposób, na przykład pocztą elektroniczną, zanim wejdą one w życie. Zachęcamy do okresowego przeglądania niniejszej Polityki w celu uzyskania najnowszych informacji o aktualizacjach.",
+                        text: "Jeśli wprowadzimy jakiekolwiek istotne zmiany, powiadomimy Ciebie o zmianach na naszej stronie internetowej lub w inny sposób, na przykład pocztą elektroniczną, zanim wejdą one w życie. Zachęcamy do okresowego przeglądania niniejszej Polityki w celu uzyskania najnowszych informacji o aktualizacjach.",
                     },
                     {
                         type: "text",

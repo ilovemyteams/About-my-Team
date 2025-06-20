@@ -47,6 +47,12 @@ const membersId = [
     "yuliya-borys-business-analyst",
     "olha-kuchalska-business-analyst",
     "solomiia-lutska-project-project-manager-scrum-master",
+    "diana-dudnyk-ui-ux-designer",
+    "vladyslava-bobko-ui-ux-designer",
+    "oksana-zhmurko-business-analyst",
+    "stepan-kozurak-project-project-manager",
+    "viktoriia-lapina-ui-ux-designer",
+    "oksana-arpul-qa-engineer",
 ];
 
 async function getDynamicMemberPages() {
@@ -62,6 +68,10 @@ const faqSlugs = [
     "can-i-make-changes-during-the-development-process",
     "do-you-provide-post-launch-support",
     "what-is-a-landing-page-and-who-needs-it",
+    "redesign-what-is-it-and-why-is-it-necessary",
+    "how-to-bring-content-to-life-and-make-products-more-attractive",
+    "how-to-speed-up-your-website-and-improve-user-experience",
+    "can-i-update-the-content-on-my-website-independently",
 ];
 async function getDynamicFaqPages() {
     return faqSlugs.map(slug => `/faq/${slug}`);
@@ -113,7 +123,7 @@ module.exports = {
                 priority: 1.0,
             },
             {
-                loc: "/about",
+                loc: "/about-us",
                 changefreq: "monthly",
                 priority: 0.8,
             },

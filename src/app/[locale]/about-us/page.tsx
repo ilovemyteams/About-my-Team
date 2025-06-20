@@ -15,7 +15,7 @@ export async function generateMetadata({
     return generatePageMetadata({
         locale,
         namespace: "AboutPage",
-        canonical: "/about",
+        canonical: "/about-us",
     });
 }
 
