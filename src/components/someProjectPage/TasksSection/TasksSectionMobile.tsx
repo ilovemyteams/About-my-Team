@@ -69,10 +69,10 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
             className="overflow-x-clip tab:hidden"
             ref={targetRef}
             style={{
-                height: `${titles.length * 100}dvh`,
+                height: `${titles.length * 100}lvh`,
             }}
         >
-            <div className="sticky top-[90px] flex flex-col gap-4 max-h-[calc(100dvh_-_90px)] h-[calc(100dvh_-_100px)]">
+            <div className="sticky top-[90px] flex flex-col gap-4 max-h-[calc(100lvh_-_90px)] h-[calc(100lvh_-_100px)]">
                 <HighlightTitleFromMessages
                     title="SomeProjectPage"
                     text="taskTitle"
