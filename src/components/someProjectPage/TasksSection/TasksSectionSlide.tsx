@@ -81,9 +81,9 @@ export const TasksSectionSlide = ({
                 </motion.div>
             </div>
 
-            <div className="grow overflow-clip w-[calc(100%_-_16px)] mx-auto tab:w-1/2 pc:w-[53%] desk:w-1/2 tab:shrink-0">
+            <div className="overflow-clip w-[calc(100%_-_16px)] mx-auto tab:w-1/2 pc:w-[53%] desk:w-1/2 tab:shrink-0">
                 <motion.ul
-                    className="h-full flex flex-col gap-3 justify-center tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 text-pretty "
+                    className="flex flex-col gap-3 justify-center tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 text-pretty "
                     variants={slideVariants}
                     initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
@@ -91,7 +91,7 @@ export const TasksSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-sm tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>
