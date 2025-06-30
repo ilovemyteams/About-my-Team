@@ -80,7 +80,7 @@ export const TasksSectionMobile = ({ data }: TasksSectionMobileProps) => {
                 />
                 <TasksSectionTabs tabs={titles} activeTab={activeTab} />
 
-                <div className="grow shrink">
+                <div className="grow shrink pt-3">
                     <motion.ul
                         className="flex flex-nowrap gap-4 h-full"
                         style={{ x }}
