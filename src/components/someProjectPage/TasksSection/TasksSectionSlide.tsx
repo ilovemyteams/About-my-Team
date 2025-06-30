@@ -67,10 +67,10 @@ export const TasksSectionSlide = ({
 
     return (
         <div
-            className="min-w-full h-full pb-[60px] flex flex-col gap-4 tab:flex-row tab:gap-0 tab:pb-0"
+            className="min-w-full h-full pb-[60px] flex gap-4 tab:flex-row tab:gap-0 tab:pb-0"
             ref={slideRef}
         >
-            <div className="grow relative tab:w-1/2 overflow-clip">
+            <div className=" hidden tab:block grow relative tab:w-1/2 overflow-clip">
                 <motion.div
                     className="absolute inset-0 "
                     variants={iconVariants}
@@ -83,7 +83,7 @@ export const TasksSectionSlide = ({
 
             <div className="overflow-clip w-[calc(100%_-_16px)] mx-auto tab:w-1/2 pc:w-[53%] desk:w-1/2 tab:shrink-0">
                 <motion.ul
-                    className="flex flex-col gap-3 tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 text-pretty "
+                    className="flex flex-col gap-3 justify-center tab:h-full tab:gap-4 tab:justify-evenly pc:pt-[112px] pc:gap-5 text-pretty "
                     variants={slideVariants}
                     initial="enter"
                     animate={isActiveSlide ? "enter" : "exit"}
@@ -91,7 +91,7 @@ export const TasksSectionSlide = ({
                     {item.text.map((text, index) => (
                         <li key={index} className="flex gap-3">
                             <IconCheck className="shrink-0 size-[16px] pc:size-[24px] text-purple-130  dark:text-disabledLight" />
-                            <span className="grow text-[max(14px,_2vh)] tab:text-base pc:text-xl28 desk:text-2xl34">
+                            <span className="grow text-base pc:text-xl28 desk:text-2xl34">
                                 {text}
                             </span>
                         </li>
