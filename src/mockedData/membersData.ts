@@ -44,6 +44,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag-com-ua",
                 "alex-chudov",
                 "viktoriia-zabara",
+                "hoida-liudmyla",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
@@ -56,6 +57,7 @@ export const membersData: MemberDataItemType[] = [
                 "baza-trainee.tech",
                 "choodov.com",
                 "viktoriia-zabara.netlify.app",
+                "liudmyla-hoida-landing.netlify.app",
             ],
             pricePerHour: "24",
             socialLinks: {
@@ -1522,6 +1524,7 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag-com-ua",
                 "viktoriia-zabara",
                 "alex-chudov",
+                "hoida-liudmyla",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/Mila_Maksymenko_gfxjbp.jpg",
@@ -1532,6 +1535,7 @@ export const membersData: MemberDataItemType[] = [
                 "ilovemyteam.online",
                 "viktoriia-zabara.netlify.app",
                 "choodov.com",
+                "liudmyla-hoida-landing.netlify.app",
             ],
             pricePerHour: "9",
             socialLinks: {
@@ -2049,12 +2053,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "anna-prutnik-frontend-developer",
-            projectId: ["ilovemyteam-online", "alex-chudov"],
+            projectId: ["ilovemyteam-online", "alex-chudov", "hoida-liudmyla"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Anet_Prutnik_lvgflg.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
-            projectsExperience: ["ilovemyteam.online", "choodov.com"],
+            projectsExperience: [
+                "ilovemyteam.online",
+                "choodov.com",
+                "liudmyla-hoida-landing.netlify.app",
+            ],
 
             pricePerHour: "10",
             socialLinks: {
