@@ -55,8 +55,9 @@ export interface HeroMediaType {
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
+type VideoType = { video: string };
 
-type SlideType = TextType | ImageType | ScreenMobType;
+type SlideType = TextType | ImageType | ScreenMobType | VideoType;
 export type Slug =
     | "protection-in-ua"
     | "viktoriia-zabara"
@@ -270,7 +271,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                     slideRight: [
                         {
-                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751462930/decision2_nmqffk.jpg",
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548226/decision2_eryap9.webp",
                         },
                     ],
                 },
