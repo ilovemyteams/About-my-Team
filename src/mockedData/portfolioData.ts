@@ -271,7 +271,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                     slideRight: [
                         {
-                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548226/decision2_eryap9.webp",
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548850/decision2_kzgkna.webp",
                         },
                     ],
                 },
