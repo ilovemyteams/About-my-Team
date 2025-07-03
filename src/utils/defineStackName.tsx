@@ -98,6 +98,12 @@ export const defineStackName = (technology: string | undefined) => {
             return "Yet Another React Lightbox";
         case "sharp":
             return "Sharp";
+        case "framer-motion":
+            return "Framer Motion";
+        case "calendly":
+            return "Calendly";
+        case "telegram":
+            return "Telegram API";
         default:
             return "";
     }

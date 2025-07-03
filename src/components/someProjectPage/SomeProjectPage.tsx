@@ -80,7 +80,7 @@ export const SomeProjectPage = ({
             {feedbackCurrent.length !== 0 && (
                 <FeedbackProject feedback={feedbackCurrent} />
             )}
-            <MoreCasesSection />
+            <MoreCasesSection activeSlug={currentProject.data.slug} />
             <WriteUsSection text="titleIWant" />
         </>
     );
