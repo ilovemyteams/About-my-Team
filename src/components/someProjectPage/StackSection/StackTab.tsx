@@ -14,17 +14,11 @@ const MAX_ITEMS = 7; // Maximum items to show initially
 export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
     const t = useTranslations("Buttons");
     const [showAll, setShowAll] = useState(false);
-    const [isOpening, setIsOpening] = useState(false);
-
     const initialItems = technologies.slice(0, MAX_ITEMS);
     const extraItems = technologies.slice(MAX_ITEMS);
 
     const toggleShowAll = () => {
-        setIsOpening(true);
         setShowAll(prev => !prev);
-        setTimeout(() => {
-            setIsOpening(false);
-        }, 600); // Match the duration of the animation
     };
 
     const contentRef = useRef<HTMLDivElement>(null);
@@ -40,6 +34,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
         visible: { opacity: 1, transition: { delay: 0.8 } },
         hidden: { opacity: 0, transition: { delay: 0 } },
     };
+
     return (
         <div className="relative ">
             <ul className="flex gap-4 pc:gap-5 flex-wrap">
@@ -67,8 +62,7 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                         className="flex gap-2 items-end justify-end pc:gap-4 desk:gap-6 
                         tab:min-w-[229px] tab:w-[31.85%]
                         pc:min-w-[250px] pc:w-[23%] desk:min-w-[248px] desk:w-[18.5%] 
-                        pb-[2px] pr-[14px] pc:pb-[10px] pc:pr-[28px] desk:pr-[16px]
-                       "
+                        pb-[2px] pr-[14px] pc:pb-[10px] pc:pr-[28px] desk:pr-[16px]"
                     >
                         <div className="w-[200px]">
                             <Button cookie onClick={toggleShowAll}>
@@ -83,22 +77,12 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                 {showAll && (
                     <motion.div
                         key="expansion"
-                        initial={{ height: 0, opacity: 0, marginTop: 0 }}
-                        animate={{
-                            height: contentHeight,
-                            opacity: 1,
-                            marginTop: "var(--mt)",
-                        }}
-                        exit={{ height: 0, opacity: 0, marginTop: 0 }}
-                        transition={{
-                            default: { duration: 0.6, ease: "easeInOut" },
-                            marginTop: {
-                                duration: 0.1,
-                                delay: isOpening ? 0 : 0.6,
-                            },
-                        }}
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: contentHeight, opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.6, ease: "easeInOut" }}
                         style={{ overflow: "hidden" }}
-                        className="[--mt:-60px] tab:[--mt:-76px] desk:[--mt:-84px]"
+                        className="-mt-[60px] pc:-mt-[76px] desk:-mt-[84px]"
                     >
                         <div ref={contentRef}>
                             <ul className="flex gap-4 pc:gap-5 flex-wrap">
