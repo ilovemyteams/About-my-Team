@@ -351,7 +351,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Пом'якшення сприйняття досягнуто завдяки образам сходів, крапель, води, пісочного годинника - символів часу, зростання і занурення в себе",
                         'Секція, знайомства з експерткою включає в себе її цитату, що йде після блоку з морським фоном та утворює емоційний зв\'язок між змістом та дизайном. Фраза "Я не оцінюю, я допомагаю" візуально виділена, що підкреслює фокус на підтримку',
                     ],
-                    video: "IZFF_TVSV04",
+                    video: "At48IVZ81Zc",
                 },
 
                 {
@@ -360,7 +360,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Ефект друку тексту в онлайн-режимі в секції із запитами створює враження живого контакту - так, ніби користувачі самі звертаються до експертки зі своїми запитами",
                         'Секція "Про експертку" поєднує анімовану появу тексту, фото з теплими емоціями, а також сертифікати з даними про досвід - для формування відчуття залученості, довіри та експертності. Це дає користувачу побачити не просто експертку, а людину, яка «поруч» і справді розуміє його запити',
                     ],
-                    video: "4UjIuXly97M",
+                    video: "hcIJJCkDW78",
                 },
                 {
                     title: "<purple>Відгуки</purple> - підкріплення <purple>довіри</purple>",
@@ -368,7 +368,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Блок з відгуками реалізовано у форматі анімованого слайдера - для легшого сприйняття і візуального зацікавлення",
                         "Усі відгуки клієнтів не редаговані і супроводжуються ніками або іменами їх авторів з соцмереж, щоб підкреслити їхню справжність. Цей блок - не просто підтвердження, а соціальний доказ ефективності роботи коуча, який залишає емоційний слід",
                     ],
-                    video: "n1dTC6ODh-4",
+                    video: "83nil65Pyj4",
                 },
             ],
         },
@@ -524,7 +524,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "The perception is softened through the use of imagery such as stairs, droplets, water, and an hourglass - symbols of time, growth, and introspection",
                         'The introduction section about the expert includes her quote, which follows a block with a sea-themed background and forms an emotional connection between content and design. The phrase "I don’t judge - I support" is visually emphasized, reinforcing the focus on care and guidance',
                     ],
-                    video: "IZFF_TVSV04",
+                    video: "At48IVZ81Zc",
                 },
 
                 {
@@ -533,7 +533,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         'The typing animation in the "Requests" section creates the impression of live interaction - as if users are reaching out to the expert with their own questions',
                         'The "About the Expert" section combines animated text appearance, a warm and emotionally engaging photo, and certificates with experience details - all aimed at creating a sense of involvement, trust, and expertise. This allows the user to see not just a professional, but a person who feels "close" and truly understands their needs',
                     ],
-                    video: "4UjIuXly97M",
+                    video: "hcIJJCkDW78",
                 },
                 {
                     title: "<purple>Testimonials</purple> - Reinforcing <purple>Trust</purple>",
@@ -541,7 +541,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "The testimonial block is implemented as an animated slider to make the content more engaging and easier to absorb",
                         "All client reviews are unedited and accompanied by usernames or real names from social media, emphasizing their authenticity. This block is not just confirmation - it's social proof of the coach’s effectiveness that leaves an emotional impact",
                     ],
-                    video: "n1dTC6ODh-4",
+                    video: "83nil65Pyj4",
                 },
             ],
         },
@@ -697,7 +697,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Zmiękczenie percepcji osiąga się poprzez obrazy schodów, kropli, wody i klepsydry - symboli czasu, wzrostu i zanurzenia",
                         "Sekcja przedstawiająca ekspertkę zawiera jej cytat, który podąża za blokiem z morskim tłem i tworzy emocjonalne połączenie między treścią a projektem. Fraza „Nie oceniam, pomagam” jest wizualnie wyróżniona, podkreślając nacisk na wsparcie",
                     ],
-                    video: "IZFF_TVSV04",
+                    video: "At48IVZ81Zc",
                 },
 
                 {
@@ -706,7 +706,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Efekt drukowania tekstu online w sekcji zapytań stwarza wrażenie kontaktu na żywo, tak jakby użytkownicy zwracali się do eksperta z własnymi zapytaniami",
                         'Sekcja "O ekspercie" łączy animowany tekst, zdjęcia z ciepłymi emocjami i certyfikaty z danymi o doświadczeniu, aby stworzyć poczucie zaangażowania, zaufania i wiedzy specjalistycznej. Pozwala to użytkownikowi zobaczyć nie tylko eksperta, ale osobę, która jest „blisko” i naprawdę rozumie jego potrzeby',
                     ],
-                    video: "4UjIuXly97M",
+                    video: "hcIJJCkDW78",
                 },
                 {
                     title: "<purple>Referencje</purple> budują <purple>zaufanie</purple>",
@@ -714,7 +714,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         "Blok opinii jest zaimplementowany w formacie animowanego suwaka dla łatwiejszej percepcji i wizualnego zainteresowania",
                         "Wszystkie opinie klientów są nieedytowane i opatrzone pseudonimami lub nazwiskami ich autorów z mediów społecznościowych, aby podkreślić ich autentyczność. Ten blok nie jest tylko potwierdzeniem, ale społecznym dowodem skuteczności trenera, który pozostawia emocjonalny ślad",
                     ],
-                    video: "n1dTC6ODh-4",
+                    video: "83nil65Pyj4",
                 },
             ],
         },
