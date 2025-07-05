@@ -55,15 +55,17 @@ export interface HeroMediaType {
 type TextType = { text: string[] };
 type ImageType = { image: string; screenImage?: string };
 type ScreenMobType = { screenImage: string };
+type VideoType = { video: string };
 
-type SlideType = TextType | ImageType | ScreenMobType;
+type SlideType = TextType | ImageType | ScreenMobType | VideoType;
 export type Slug =
     | "protection-in-ua"
     | "viktoriia-zabara"
     | "theatermag-com-ua"
     | "batatfarm-com"
     | "ilovemyteam-online"
-    | "alex-chudov";
+    | "alex-chudov"
+    | "hoida-liudmyla";
 
 export type Technology =
     | "typescript"
@@ -115,7 +117,10 @@ export type Technology =
     | "yup"
     | "html-react-parser"
     | "yet-another-react-lightbox"
-    | "sharp";
+    | "sharp"
+    | "framer-motion"
+    | "calendly"
+    | "telegram";
 
 type DataType = {
     id: string;
@@ -141,6 +146,579 @@ export type PortfolioDataItemType = {
 };
 
 export const portfolioData: PortfolioDataItemType[] = [
+    {
+        data: {
+            id: "7",
+            slug: "hoida-liudmyla",
+            siteLink: "https://liudmyla-hoida-landing.netlify.app/",
+            order: 7,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=1U6IMo1By3u6_5cHZN47vkephFfI3yd5-",
+            image: "https://drive.google.com/uc?export=view&id=1E-rbGYwz8LEX7MVzBINw7oNIX3-B9DA-",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751447605/hero_ykjlzb.jpg",
+                type: "image",
+            },
+
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751477618/Desktop_axyrju.jpg",
+                    width: 1280,
+                    height: 11094,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751477615/Mobile_xyen4w.jpg",
+                    width: 400,
+                    height: 12370,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751477612/static_n4uggh.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "react",
+                "swiper",
+                "framer-motion",
+                "calendly",
+                "telegram",
+                "formik",
+                "yup",
+            ],
+        },
+        ua: {
+            name: "Гойда Людмила",
+            siteView: "лендінг",
+            subtitle: "Лендінг для коуча",
+            description: "",
+            heroTitle: "Гойда Людмила",
+            heroText: [
+                "Проєкт створений для кар'єрної консультантки та коуча - експертки з понад 20-річним досвідом у сфері рекрутингу. Сайт став наступним кроком у розвитку її професійного напряму - індивідуального коучингу з фокусом на підтримку людей у кар'єрних трансформаціях.",
+                "Це односторінковий ресурс, який поєднує функції онлайн-візитівки з інструментами для зручного першого контакту з потенційними клієнтами. Головна мета лендінгу - допомогти користувачеві зрозуміти, з якими запитами можна звернутись, які послуги надає експертка та якою буде вартість співпраці.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "3 тижні",
+                launch: "3 тижні",
+                support: "за запитом",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Візуально та стилістично поєднати сайт із вже сформованим образом експертки у соціальних мережах: палітра кольорів, тон спілкування, структура цінностей",
+                        "Продумати структуру сторінки так, щоб користувач одразу побачив не лише компетенції та індивідуальний підхід, а й людяність експертки: фото, принципи роботи, реальні відгуки клієнтів",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Цінність",
+                    text: [
+                        "Висвітлити ключову ідею: коучинг від експертки з досвідом у рекрутингу - це поєднання підтримки з глибоким розумінням ринку, процесів змін і точок  зростання",
+                        'Показати, що експертка працює не з "кар\'єрою", а з людиною в моменті змін: пошук нової роботи, вихід зі стагнації, виявлення нових напрямів розвитку',
+                        "Відобразити безоціночний підхід  як основу її взаємодії з клієнтами",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Сайт мав виконувати роль не просто візитівки, а інструменту першого контакту",
+                        "Передбачити декілька каналів зв'язку: прямі повідомлення в соцмережі (Linkedin, Telegram), простий запис на консультацію",
+                        "Показати гнучкість у форматах співпраці: від разової зустрічі до тривалої коуч-сесії, з можливістю адаптації під кожен запит",
+                        "Реалізувати зручну навігацію, дизайн, який викликає довіру до експертки, повну адаптивність під мобільні пристрої",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751462927/desicion1_wbqsdb.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Фокусування на ключових повідомленнях на першому екрані: велике фото експертки з прямим зоровим контактом, великий шрифт, посилання на основні соціальні мережі для швидкої комунікації",
+                                "Навігаційне меню приховане, як у мобільних версіях, щоб не розпорошувати увагу",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Використано брендований колір замовниці, доповнено кольоровою палітрою, що психологічно асоціюється з довірою та експертністю",
+                                "Окремою секцією виділені два підходи до роботи, які використовує експертка. Ці блоки при скролі зближаються, щоб показати взаємодоповнення коучингу та рекрутингової експертизи",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548850/decision2_kzgkna.webp",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751464167/decision3_t8gl7q.jpg",
+                        },
+                        {
+                            text: [
+                                "По всьому сайту використано символіку зростання: сходи в блоці з запитами та послугами - метафора розвитку, а також візуальна підказка, яким шляхом може пройти користувач",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Картки з пакетами послуг візуально розміщені поряд для зручного і швидкого порівняння, а також включають пояснення, які запити покриває кожен формат",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751470550/desicion4_dbjugs.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Реалізована інтеграція з сервісом Calendly для швидкого запису на первинну консультацію",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion5_x1ij9r.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion6_sfj9z0.jpg",
+                        },
+                        {
+                            text: [
+                                "Форма зворотного зв'язку підключена до Telegram-бота для зручності комунікації та збереження історії спілкування",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751474792/decision8_fxewcw.jpg",
+                        },
+                        {
+                            text: [
+                                "Додані посилання на соціальні мережі в хедері та футері - як альтернативний канал комунікації",
+                                "На сайт додані юридичні документи: Політика конфіденційності та Договір публічної оферти, які обумовлюють правові аспекти співпраці та забезпечують прозорість взаємодії",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Лендінг адаптований під три типи екрану: мобільний, планшетний та десктопний, також додатково враховано балансування контенту для великоформатних екранів",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751475015/decision7_jymkng.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Візуальний <purple>концепт</purple> - <purple>фокус на</purple> м'якість, <purple>довіру</purple> та глибину",
+                    description: [
+                        "У дизайні поєднано декілька символічних візуальних ефектів: темний фон перегукується з секціями з водною текстурою, що створює відчуття глибини - як метафору для внутрішніх трансформацій, які відбуваються під час коучингу",
+                        "Пом'якшення сприйняття досягнуто завдяки образам сходів, крапель, води, пісочного годинника - символів часу, зростання і занурення в себе",
+                        'Секція, знайомства з експерткою включає в себе її цитату, що йде після блоку з морським фоном та утворює емоційний зв\'язок між змістом та дизайном. Фраза "Я не оцінюю, я допомагаю" візуально виділена, що підкреслює фокус на підтримку',
+                    ],
+                    video: "70RYEhjEafY",
+                },
+
+                {
+                    title: "<purple>Анімації</purple> як <purple>інструмент</purple> присутності",
+                    description: [
+                        "Ефект друку тексту в онлайн-режимі в секції із запитами створює враження живого контакту - так, ніби користувачі самі звертаються до експертки зі своїми запитами",
+                        'Секція "Про експертку" поєднує анімовану появу тексту, фото з теплими емоціями, а також сертифікати з даними про досвід - для формування відчуття залученості, довіри та експертності. Це дає користувачу побачити не просто експертку, а людину, яка «поруч» і справді розуміє його запити',
+                    ],
+                    video: "PStAu3Jmfrw",
+                },
+                {
+                    title: "<purple>Відгуки</purple> - підкріплення <purple>довіри</purple>",
+                    description: [
+                        "Блок з відгуками реалізовано у форматі анімованого слайдера - для легшого сприйняття і візуального зацікавлення",
+                        "Усі відгуки клієнтів не редаговані і супроводжуються ніками або іменами їх авторів з соцмереж, щоб підкреслити їхню справжність. Цей блок - не просто підтвердження, а соціальний доказ ефективності роботи коуча, який залишає емоційний слід",
+                    ],
+                    video: "qjd4TOPv9Rw",
+                },
+            ],
+        },
+        en: {
+            name: "Liudmyla Hoida",
+            siteView: "landing page",
+            subtitle: "Landing Page for a Coach",
+            description: "",
+            heroTitle: "Liudmyla Hoida",
+            heroText: [
+                "This project was created for a career consultant and coach - an expert with over 20 years of experience in the recruitment field. The website became the next step in the development of her professional path, focusing on individual coaching and supporting people through career transformations.",
+                "It is a one-page resource that combines the functions of an online business card with tools for easy first contact with potential clients. The main goal of the landing page is to help the user understand what kinds of requests they can address, what services the expert provides, and what the cost of cooperation will be.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "3 weeks",
+                launch: "3 weeks",
+                support: "on request",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal brand",
+                    text: [
+                        "Visually and stylistically align the website with the expert’s established presence on social media - including her color palette, tone of voice, and value framework",
+                        "Design the page structure so that users immediately perceive not only her competence and personalized approach, but also her human side - through photos, working principles, and authentic client testimonials",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Value",
+                    text: [
+                        "Highlight the core idea: coaching from an expert with recruitment experience is a combination of support and deep understanding of the market, change processes, and growth points",
+                        "Show that the expert doesn’t work with a “career” in isolation, but with a person in a moment of transition — searching for a new job, emerging from stagnation, or discovering new directions for development",
+                        "Convey a non-judgmental approach as the foundation of her interaction with clients",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "The website was designed to serve not just as a digital business card, but as a tool for initial contact",
+                        "Provide multiple communication channels: direct messages via social media (LinkedIn, Telegram) and a simple consultation booking option",
+                        "Showcase flexibility in collaboration formats - from a one-time session to long-term coaching, with the ability to adapt to each client’s request",
+                        "Implement intuitive navigation, a design that builds trust in the expert, and full mobile responsiveness",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751462927/desicion1_wbqsdb.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Focus on key messages in the hero section: a large photo of the expert with direct eye contact, bold typography, and links to primary social media platforms for quick communication",
+                                "The navigation menu is hidden, as in mobile versions, to minimize distraction",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "The expert’s branded color is used, complemented by a color palette that psychologically evokes trust and expertise",
+                                "A separate section highlights the two approaches the expert uses in her work. As the user scrolls, these blocks move closer together to illustrate the complementarity of coaching and recruitment expertise",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548850/decision2_kzgkna.webp",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751464167/decision3_t8gl7q.jpg",
+                        },
+                        {
+                            text: [
+                                "Symbolism of growth is used throughout the site: the staircase in the section with requests and services serves as a metaphor for development and a visual cue for the path the user may take",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Service package cards are placed side by side for easy and quick comparison, and each includes an explanation of which requests the format is designed to address",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751470550/desicion4_dbjugs.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Integrated with Calendly for quick booking of an initial consultation",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion5_x1ij9r.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion6_sfj9z0.jpg",
+                        },
+                        {
+                            text: [
+                                "The contact form is connected to a Telegram bot for convenient communication and to preserve the message history",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751474792/decision8_fxewcw.jpg",
+                        },
+                        {
+                            text: [
+                                "Links to social media are placed in the header and footer as alternative communication channels",
+                                "Legal documents have been added to the site: the Privacy Policy and Public Offer Agreement define the legal aspects of cooperation and ensure transparency in communication",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The landing page is adapted for three screen types - mobile, tablet, and desktop - with additional content balancing for large-format displays",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751475015/decision7_jymkng.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Visual <purple>Concept</purple> - <purple>Focus on</purple> Softness, <purple>Trust</purple>, and Depth",
+                    description: [
+                        "The design incorporates several symbolic visual elements: a dark background echoes sections with a water texture, creating a sense of depth - a metaphor for the internal transformations that take place during coaching",
+                        "The perception is softened through the use of imagery such as stairs, droplets, water, and an hourglass - symbols of time, growth, and introspection",
+                        'The introduction section about the expert includes her quote, which follows a block with a sea-themed background and forms an emotional connection between content and design. The phrase "I don’t judge - I support" is visually emphasized, reinforcing the focus on care and guidance',
+                    ],
+                    video: "At48IVZ81Zc",
+                },
+
+                {
+                    title: "<purple>Animations </purple> as <purple>a Tool</purple> of Presence",
+                    description: [
+                        'The typing animation in the "Requests" section creates the impression of live interaction - as if users are reaching out to the expert with their own questions',
+                        'The "About the Expert" section combines animated text appearance, a warm and emotionally engaging photo, and certificates with experience details - all aimed at creating a sense of involvement, trust, and expertise. This allows the user to see not just a professional, but a person who feels "close" and truly understands their needs',
+                    ],
+                    video: "hcIJJCkDW78",
+                },
+                {
+                    title: "<purple>Testimonials</purple> - Reinforcing <purple>Trust</purple>",
+                    description: [
+                        "The testimonial block is implemented as an animated slider to make the content more engaging and easier to absorb",
+                        "All client reviews are unedited and accompanied by usernames or real names from social media, emphasizing their authenticity. This block is not just confirmation - it's social proof of the coach’s effectiveness that leaves an emotional impact",
+                    ],
+                    video: "83nil65Pyj4",
+                },
+            ],
+        },
+        pl: {
+            name: "Liudmyla Hoida",
+            siteView: "strona docelowa",
+            subtitle: "Strona docelowa dla coacha",
+            description: "",
+            heroTitle: "Liudmyla Hoida",
+            heroText: [
+                "Projekt został stworzony dla doradczyni zawodowej i coacha – ekspertki z ponad 20-letnim doświadczeniem w branży rekrutacyjnej. Strona internetowa stanowi kolejny krok w rozwoju jej ścieżki zawodowej, skoncentrowanej na indywidualnym coachingu wspierającym osoby w transformacjach kariery.",
+                "Jest to jednostronicowy serwis, który łączy funkcje internetowej wizytówki z narzędziami umożliwiającymi wygodny pierwszy kontakt z potencjalnymi klientami. Głównym celem landing page’a jest pomoc użytkownikowi w zrozumieniu, z jakimi potrzebami może się zgłosić, jakie usługi oferuje ekspertka oraz jaki będzie koszt współpracy.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "3 tygodnie",
+                launch: "3 tygodnie",
+                support: "na żądanie",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Wizualnie i stylistycznie połączyć stronę z już ugruntowanym wizerunkiem eksperta w mediach społecznościowych: paleta kolorów, ton komunikacji, struktura wartości",
+                        "Przemyśleć strukturę strony tak, aby użytkownik od razu dostrzegł nie tylko kompetencje i indywidualne podejście, ale także ludzką stronę ekspertki: zdjęcia, zasady pracy, prawdziwe opinie klientów",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Wartość",
+                    text: [
+                        "Pokazać ideę kluczową: coaching od ekspertki z doświadczeniem w rekrutacji to połączenie wsparcia z głębokim zrozumieniem rynku, procesów zmian i punktów wzrostu",
+                        "Pokazać, że ekspertka pracuje nie z „karierą”, lecz z człowiekiem w momencie zmian: poszukiwanie nowej pracy, wyjście ze stagnacji, odkrywanie nowych kierunków rozwoju",
+                        "Odzwierciedlić nieoceniające podejście jako podstawy interakcji z klientami",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Strona internetowa miała służyć nie tylko jako wizytówka, ale jako narzędzie pierwszego kontaktu",
+                        "Zapewnienie kilku kanałów komunikacji: bezpośrednie wiadomości w mediach społecznościowych (Linkedin, Telegram), prosta rejestracja na konsultacje",
+                        "Wykazać elastyczność w formatach współpracy: od jednorazowego spotkania po długoterminową sesję coachingową, z możliwością dostosowania się do każdej prośby",
+                        "Wdrożenie łatwej nawigacji, designu, który wzbudza zaufanie do eksperta i pełnej adaptacji do urządzeń mobilnych",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751462927/desicion1_wbqsdb.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Skupienie się na kluczowych wiadomościach na pierwszym ekranie: duże zdjęcie eksperta z bezpośrednim kontaktem wzrokowym, duża czcionka, linki do głównych sieci społecznościowych w celu szybkiej komunikacji",
+                                "Menu nawigacyjne jest ukryte, podobnie jak w wersjach mobilnych, aby nie rozpraszać uwagi",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Zastosowano kolor marki klienta, uzupełniony paletą kolorów, która psychologicznie kojarzy się z zaufaniem i wiedzą specjalistyczną",
+                                "Dwa podejścia do pracy stosowane przez eksperta są wyróżnione w osobnej sekcji. Te bloki podczas przewijania zbliżają się do siebie, aby pokazać wzajemne dopełnianie się coachingu i ekspertyzy rekrutacyjnej",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751548850/decision2_kzgkna.webp",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751464167/decision3_t8gl7q.jpg",
+                        },
+                        {
+                            text: [
+                                "Symbolika wzrostu jest używana w całej stronie: schody w bloku z prośbami i usługami są metaforą rozwoju, a także wizualną wskazówką dotyczącą ścieżki, którą może podążać użytkownik",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Karty z pakietami usług są wizualnie umieszczone obok siebie w celu łatwego i szybkiego porównania, a także zawierają wyjaśnienie, jakie żądania obejmuje każdy format",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751470550/desicion4_dbjugs.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Wdrożono integrację z usługą Calendly w celu szybkiego umówienia się na wstępną konsultację",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion5_x1ij9r.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751471393/desicion6_sfj9z0.jpg",
+                        },
+                        {
+                            text: [
+                                "Formularz opinii jest połączony z botem Telegram, co ułatwia komunikację i zapisywanie historii komunikacji",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751474792/decision8_fxewcw.jpg",
+                        },
+                        {
+                            text: [
+                                "Dodano linki do sieci społecznościowych w nagłówku i stopce jako alternatywny kanał komunikacji",
+                                "Na stronie zostały dodane dokumenty prawne: Polityka Prywatności i Umowa o Ofercie Publicznej, które określają prawne aspekty współpracy i zapewniają przejrzystość interakcji",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Strona docelowa jest dostosowana do trzech typów ekranów: telefonu komórkowego, tabletu i komputera stacjonarnego, a także uwzględniono równoważenie treści dla dużych ekranów",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751475015/decision7_jymkng.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "<purple>Koncepcja </purple> wizualna - <purple>skupienie się na</purple> miękkości, <purple>zaufaniu</purple> i głębi",
+                    description: [
+                        "Projekt łączy w sobie kilka symbolicznych efektów wizualnych: ciemne tło odzwierciedla sekcje z teksturą wody, co tworzy poczucie głębi - jako metafora wewnętrznych przemian zachodzących podczas coachingu",
+                        "Zmiękczenie percepcji osiąga się poprzez obrazy schodów, kropli, wody i klepsydry - symboli czasu, wzrostu i zanurzenia",
+                        "Sekcja przedstawiająca ekspertkę zawiera jej cytat, który podąża za blokiem z morskim tłem i tworzy emocjonalne połączenie między treścią a projektem. Fraza „Nie oceniam, pomagam” jest wizualnie wyróżniona, podkreślając nacisk na wsparcie",
+                    ],
+                    video: "At48IVZ81Zc",
+                },
+
+                {
+                    title: "<purple>Animacje</purple> jako <purple>narzędzie</purple> obecności",
+                    description: [
+                        "Efekt drukowania tekstu online w sekcji zapytań stwarza wrażenie kontaktu na żywo, tak jakby użytkownicy zwracali się do eksperta z własnymi zapytaniami",
+                        'Sekcja "O ekspercie" łączy animowany tekst, zdjęcia z ciepłymi emocjami i certyfikaty z danymi o doświadczeniu, aby stworzyć poczucie zaangażowania, zaufania i wiedzy specjalistycznej. Pozwala to użytkownikowi zobaczyć nie tylko eksperta, ale osobę, która jest „blisko” i naprawdę rozumie jego potrzeby',
+                    ],
+                    video: "hcIJJCkDW78",
+                },
+                {
+                    title: "<purple>Referencje</purple> budują <purple>zaufanie</purple>",
+                    description: [
+                        "Blok opinii jest zaimplementowany w formacie animowanego suwaka dla łatwiejszej percepcji i wizualnego zainteresowania",
+                        "Wszystkie opinie klientów są nieedytowane i opatrzone pseudonimami lub nazwiskami ich autorów z mediów społecznościowych, aby podkreślić ich autentyczność. Ten blok nie jest tylko potwierdzeniem, ale społecznym dowodem skuteczności trenera, który pozostawia emocjonalny ślad",
+                    ],
+                    video: "83nil65Pyj4",
+                },
+            ],
+        },
+    },
     {
         data: {
             id: "6",

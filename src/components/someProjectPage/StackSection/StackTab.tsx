@@ -2,9 +2,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useLayoutEffect, useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
-import { SCREEN_NAMES } from "@/src/constants/screenNames";
-import { useScreenSize } from "@/src/hooks/useScreenSize";
 import { Technology } from "@/src/mockedData/portfolioData";
 
 import { Button } from "../../shared/Button";
@@ -15,12 +14,12 @@ const MAX_ITEMS = 7; // Maximum items to show initially
 export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
     const t = useTranslations("Buttons");
     const [showAll, setShowAll] = useState(false);
-    const screenSizeName = useScreenSize();
-    const { pcName, desktopName, desktopXlName } = SCREEN_NAMES;
     const initialItems = technologies.slice(0, MAX_ITEMS);
     const extraItems = technologies.slice(MAX_ITEMS);
 
-    const toggleShowAll = () => setShowAll(prev => !prev);
+    const toggleShowAll = () => {
+        setShowAll(prev => !prev);
+    };
 
     const contentRef = useRef<HTMLDivElement>(null);
     const [contentHeight, setContentHeight] = useState(0);
@@ -31,8 +30,13 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
         }
     }, [showAll, extraItems.length]);
 
+    const buttonVariants = {
+        visible: { opacity: 1, transition: { delay: 0.8 } },
+        hidden: { opacity: 0, transition: { delay: 0 } },
+    };
+
     return (
-        <div className="relative tab:mb-[72px] ">
+        <div className="relative ">
             <ul className="flex gap-4 pc:gap-5 flex-wrap">
                 {initialItems.map(technology => (
                     <li
@@ -45,6 +49,28 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                         <StackCard technology={technology} />
                     </li>
                 ))}
+
+                {extraItems.length > 0 && (
+                    <motion.li
+                        initial="visible"
+                        aria-hidden={showAll}
+                        variants={buttonVariants}
+                        animate={showAll ? "hidden" : "visible"}
+                        transition={{
+                            duration: 0.2,
+                        }}
+                        className="flex gap-2 items-end justify-end pc:gap-4 desk:gap-6 
+                        tab:min-w-[229px] tab:w-[31.85%]
+                        pc:min-w-[250px] pc:w-[23%] desk:min-w-[248px] desk:w-[18.5%] 
+                        pb-[2px] pr-[14px] pc:pb-[10px] pc:pr-[28px] desk:pr-[16px]"
+                    >
+                        <div className="w-[200px]">
+                            <Button cookie onClick={toggleShowAll}>
+                                {t("showAll")}
+                            </Button>
+                        </div>
+                    </motion.li>
+                )}
             </ul>
 
             <AnimatePresence initial={false}>
@@ -87,38 +113,27 @@ export const StackTab = ({ technologies }: { technologies: Technology[] }) => {
                     </motion.div>
                 )}
             </AnimatePresence>
-            <motion.div
-                className="w-[200px] absolute"
-                animate={{
-                    bottom: showAll
-                        ? -60
-                        : screenSizeName === pcName ||
-                            screenSizeName === desktopName ||
-                            screenSizeName === desktopXlName
-                          ? 10
-                          : 2,
-                    left:
-                        screenSizeName === desktopName
-                            ? "50%"
-                            : screenSizeName === pcName
-                              ? showAll
-                                  ? "50%"
-                                  : "auto"
-                              : "50%",
-                    right: screenSizeName === pcName ? "48px" : "auto",
-                    x:
-                        screenSizeName === pcName
-                            ? !showAll
-                                ? 0
-                                : "-50%"
-                            : "-50%",
-                }}
-                transition={{ duration: 0.6, ease: "easeInOut" }}
+            <div
+                className={twMerge(
+                    "flex justify-center items-center",
+                    showAll ? "pointer-events-auto" : "pointer-events-none"
+                )}
             >
-                <Button cookie onClick={toggleShowAll}>
-                    {showAll ? t("showLess") : t("showAll")}
-                </Button>
-            </motion.div>
+                <motion.div
+                    aria-hidden={!showAll}
+                    className="w-[200px]"
+                    initial="hidden"
+                    variants={buttonVariants}
+                    animate={showAll ? "visible" : "hidden"}
+                    transition={{
+                        duration: 0.2,
+                    }}
+                >
+                    <Button cookie onClick={toggleShowAll}>
+                        {t("showLess")}
+                    </Button>
+                </motion.div>
+            </div>
         </div>
     );
 };
