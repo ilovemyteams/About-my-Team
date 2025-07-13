@@ -12,7 +12,6 @@ import { AdaptiveSection } from "./AdaptiveSection/AdaptiveSection";
 import { DecisionSection } from "./DecisionSection/DecisionSection";
 import { FeedbackProject } from "./FeedbackSection/FeedbackProject";
 import { HeroSection } from "./HeroSection/HeroSection";
-import { LayoutShiftAnimation } from "./LayoutShiftAnimation";
 import { MoreCasesSection } from "./MoreCasesSection/MoreCasesSection";
 import { ProjectHeader } from "./ProjectHeader";
 import { StackSectionProject } from "./StackSection/StackSectionProject";
@@ -78,13 +77,12 @@ export const SomeProjectPage = ({
             {technologies && (
                 <StackSectionProject technologies={technologies} />
             )}
-            <LayoutShiftAnimation>
-                {feedbackCurrent.length !== 0 && (
-                    <FeedbackProject feedback={feedbackCurrent} />
-                )}
-                <MoreCasesSection activeSlug={currentProject.data.slug} />
-                <WriteUsSection text="titleIWant" />
-            </LayoutShiftAnimation>
+
+            {feedbackCurrent.length !== 0 && (
+                <FeedbackProject feedback={feedbackCurrent} />
+            )}
+            <MoreCasesSection activeSlug={currentProject.data.slug} />
+            <WriteUsSection text="titleIWant" />
         </>
     );
 };
