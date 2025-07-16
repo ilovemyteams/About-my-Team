@@ -3968,18 +3968,18 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             text: [
-                                "quickly understand the core idea and goals of the product;",
+                                "Quickly understand the core idea and goals of the product;",
                             ],
                         },
 
                         {
                             text: [
-                                "define the tone of voice and visual style;",
+                                "Define the tone of voice and visual style;",
                             ],
                         },
                         {
                             text: [
-                                "collect examples that the client likes and clarify expectations.",
+                                "Collect examples that the client likes and clarify expectations.",
                             ],
                         },
                         {
