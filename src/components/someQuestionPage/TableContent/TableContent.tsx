@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
@@ -29,7 +30,7 @@ export const TableContent = ({
                 </h3>
             )}
             {text && (
-                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
+                <p className="mb-6 tab:mb-10 desk:mb-[80px] tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
                     <HighlightText text={text} toBeHighlighted={searchTerm} />
                 </p>
             )}
@@ -38,7 +39,12 @@ export const TableContent = ({
                     content.map((item, index) => (
                         <li
                             key={index}
-                            className=" tab:px-4 border-purple-strokeLight dark:border-purple-stroke tab:w-[50%] pc:w-[33.33%] border-t-[1px] last:border-b-[1px] tab:border-[1px] tab:mt-[-1px] tab:ml-[-1px]"
+                            className={twMerge(
+                                " tab:px-4 border-purple-strokeLight dark:border-purple-stroke tab:w-[50%]  border-t-[1px] last:border-b-[1px] tab:border-[1px] tab:mt-[-1px] tab:ml-[-1px]",
+                                content.length < 3
+                                    ? "pc:w-[50%]"
+                                    : "pc:w-[33.33%]"
+                            )}
                         >
                             <TableContentItem
                                 content={item}
