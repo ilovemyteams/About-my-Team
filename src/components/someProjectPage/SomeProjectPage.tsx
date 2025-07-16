@@ -77,6 +77,7 @@ export const SomeProjectPage = ({
             {technologies && (
                 <StackSectionProject technologies={technologies} />
             )}
+
             {feedbackCurrent.length !== 0 && (
                 <FeedbackProject feedback={feedbackCurrent} />
             )}
