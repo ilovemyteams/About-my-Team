@@ -9,12 +9,14 @@ interface TableContentProps {
     content: LongAnswerListTypeItem[];
     searchTerm: string;
     title?: string;
+    text?: string;
 }
 
 export const TableContent = ({
     content,
     searchTerm,
     title,
+    text,
 }: TableContentProps) => {
     return (
         <div className="pc:mb-[60px]">
@@ -26,12 +28,17 @@ export const TableContent = ({
                     />
                 </h3>
             )}
-            <ul className=" list-none border-t border-purple-strokeLight dark:border-purple-stroke  tab:flex tab:flex-wrap tab:justify-center">
+            {text && (
+                <p className="mb-6 tab:mb-10 desk:mb-15 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
+                    <HighlightText text={text} toBeHighlighted={searchTerm} />
+                </p>
+            )}
+            <ul className=" list-none tab:flex tab:flex-wrap tab:justify-center">
                 {content &&
                     content.map((item, index) => (
                         <li
                             key={index}
-                            className=" tab:px-4 border-b border-purple-strokeLight dark:border-purple-stroke tab:last:border-r tab:border-l tab:even:border-r pc:even:border-r-0 pc:[&:nth-child(3)]:border-r tab:w-[50%] pc:w-[33.33%]"
+                            className=" tab:px-4 border-purple-strokeLight dark:border-purple-stroke tab:w-[50%] pc:w-[33.33%] border-t-[1px] last:border-b-[1px] tab:border-[1px] tab:mt-[-1px] tab:ml-[-1px]"
                         >
                             <TableContentItem
                                 content={item}
