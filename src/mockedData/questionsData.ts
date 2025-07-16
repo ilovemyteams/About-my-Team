@@ -1344,7 +1344,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "listItem",
                                     text: [
-                                        "Технічні та дизайн-аспекти, які можуть бути змінені",
+                                        "Технічні та дизайн-аспекти, які можуть бути змінені.",
                                     ],
                                 },
                                 {
@@ -2277,7 +2277,7 @@ export const questionsData: QAItemType[] = [
                                     ],
                                 },
                                 {
-                                    title: "E-commerce sites.",
+                                    title: "E-commerce sites",
                                     text: [
                                         "For promotions or sales, e-commerce sites often create landing pages dedicated to specific products or seasonal offers. This helps to focus attention on certain products and encourage customers to make a quick purchase.",
                                     ],
@@ -2296,19 +2296,19 @@ export const questionsData: QAItemType[] = [
                             decorate: 2,
                             text: [
                                 {
-                                    title: "Design complexity: ",
+                                    title: "Design complexity ",
                                     text: [
                                         "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
                                     ],
                                 },
                                 {
-                                    title: "Functionality:",
+                                    title: "Functionality",
                                     text: [
                                         "Integrations with CRM, animations, feedback forms, mobile responsiveness, and other added elements increase the overall cost.",
                                     ],
                                 },
                                 {
-                                    title: "Urgency:",
+                                    title: "Urgency",
                                     text: [
                                         "If the project needs to be completed within a tight deadline, this may also impact the price.",
                                     ],
@@ -3676,38 +3676,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1752658483/answer13-2_jgskyq.jpg",
         },
-        en: {
-            questionText:
-                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
-            shortAnswerText: [
-                "Бриф - це перший спільний документ між замовником і командою, який фіксує цілі, аудиторію, функціонал і стиль проєкту. Він допомагає уникнути зайвих правок, заощадити час і досягти спільного бачення результату ще до старту розробки.",
-            ],
-            fullAnswerTopText: [
-                "Бриф не є технічним завданням чи контрактом, але саме з нього починається якісний проєкт. Грамотно складений бриф - це орієнтир для дизайнерів, розробників та аналітиків і надійна опора при прийманні робіт, плануванні бюджету та визначенні пріоритетів.",
-            ],
-            imageAltText:
-                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
-            fullAnswerBottomText: [
-                "Бриф - це не просто формальність, а перший крок, що формує спільне бачення, допомагає уникнути зайвих правок і робить розробку швидшою та ефективнішою.",
-                "Якщо у вас вже є ідея проєкту чи продукту - обговорімо її разом і створимо бриф, з якого почнеться шлях до результату.",
-            ],
-        },
-        pl: {
-            questionText:
-                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
-            shortAnswerText: [
-                "Бриф - це перший спільний документ між замовником і командою, який фіксує цілі, аудиторію, функціонал і стиль проєкту. Він допомагає уникнути зайвих правок, заощадити час і досягти спільного бачення результату ще до старту розробки.",
-            ],
-            fullAnswerTopText: [
-                "Бриф не є технічним завданням чи контрактом, але саме з нього починається якісний проєкт. Грамотно складений бриф - це орієнтир для дизайнерів, розробників та аналітиків і надійна опора при прийманні робіт, плануванні бюджету та визначенні пріоритетів.",
-            ],
-            imageAltText:
-                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
-            fullAnswerBottomText: [
-                "Бриф - це не просто формальність, а перший крок, що формує спільне бачення, допомагає уникнути зайвих правок і робить розробку швидшою та ефективнішою.",
-                "Якщо у вас вже є ідея проєкту чи продукту - обговорімо її разом і створимо бриф, з якого почнеться шлях до результату.",
-            ],
-        },
+
         ua: {
             questionText:
                 "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
@@ -3733,19 +3702,19 @@ export const questionsData: QAItemType[] = [
                             decorate: 1,
                             text: [
                                 {
-                                    title: "Це не технічне завдання.",
+                                    title: "Це не технічне завдання",
                                     text: [
                                         "У брифі не описується логіка роботи продукту, технічні сценарії, деталі інтеграцій чи специфічні вимоги до технологій. Бриф лише фіксує, що потрібно створити та навіщо, а не «як» це реалізувати.",
                                     ],
                                 },
                                 {
-                                    title: "Це не контракт.",
+                                    title: "Це не контракт",
                                     text: [
                                         "У брифі не прописують юридичні зобов’язання, умови оплати чи відповідальність сторін. Хоча бриф можна прикріпити до договору як додаток, він сам по собі не має сили юридичного документа.",
                                     ],
                                 },
                                 {
-                                    title: "Це не список задач.",
+                                    title: "Це не список задач",
                                     text: [
                                         "Бриф не містить конкретних user stories, етапів чи черговості виконання. Він слугує основою, на якій команда формує список задач, деталізує вимоги та планує роботу.",
                                     ],
@@ -3764,18 +3733,18 @@ export const questionsData: QAItemType[] = [
                         },
                         {
                             text: [
-                                "швидко зрозуміти головну ідею та цілі продукту;",
+                                "Швидко зрозуміти головну ідею та цілі продукту;",
                             ],
                         },
 
                         {
                             text: [
-                                "визначити tone of voice та візуальний стиль;",
+                                "Визначити tone of voice та візуальний стиль;",
                             ],
                         },
                         {
                             text: [
-                                "зібрати приклади, які подобаються замовнику, і конкретизувати очікування.",
+                                "Зібрати приклади, які подобаються замовнику, і конкретизувати очікування.",
                             ],
                         },
                         {
@@ -3800,9 +3769,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Дозволяє одразу ставити уточнюючі питання.",
-                                        "Легше зрозуміти реальні потреби, а не лише те, що клієнт написав.",
-                                        "Створює довіру і демонструє експертизу команди.",
+                                        "Дозволяє одразу ставити уточнюючі питання;",
+                                        "Легше зрозуміти реальні потреби, а не лише те, що клієнт написав;",
+                                        "Створює довіру і демонструє експертизу команди;",
                                         "Можна одразу обговорити ідеї, референси, обмеження.",
                                     ],
                                 },
@@ -3811,8 +3780,8 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Потребує часу (з обох сторін).",
-                                        "Ризик забути зафіксувати деякі деталі.",
+                                        "Потребує часу (з обох сторін);",
+                                        "Ризик забути зафіксувати деякі деталі;",
                                         "Не завжди зручно, якщо ви з клієнтом перебуваєте у різних часових поясах або клієнту важко сформулювати свої потреби.",
                                     ],
                                 },
@@ -3826,9 +3795,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Структурує думки замовника.",
-                                        "Дає можливість клієнту обдумати відповіді.",
-                                        "Результат зберігається в єдиному місці як документ",
+                                        "Структурує думки замовника;",
+                                        "Дає можливість клієнту обдумати відповіді;",
+                                        "Результат зберігається в єдиному місці як документ;",
                                         "Зручно для швидких уточнень або коли немає змоги провести дзвінок.",
                                     ],
                                 },
@@ -3837,9 +3806,9 @@ export const questionsData: QAItemType[] = [
                                     type: "listItem",
                                     list: "sublist",
                                     text: [
-                                        "Замовникам часто лінь заповнювати довгі анкети.",
-                                        "Відповіді можуть бути надто короткі або нечіткі.",
-                                        "Без розмови важче зʼясувати справжні бізнес-цілі.",
+                                        "Замовникам часто лінь заповнювати довгі анкети;",
+                                        "Відповіді можуть бути надто короткі або нечіткі;",
+                                        "Без розмови важче зʼясувати справжні бізнес-цілі;",
                                         "Ризик, що великий бриф відлякає замовника, і він не повернеться.",
                                     ],
                                 },
@@ -3901,29 +3870,29 @@ export const questionsData: QAItemType[] = [
                                     text: ["Обов’язково дізнайтесь:"],
                                 },
                                 {
-                                    text: ["мету сайту або продукту;"],
+                                    text: ["Мету сайту або продукту;"],
                                     type: "listItem",
                                 },
                                 {
-                                    text: ["цільову аудиторію;"],
+                                    text: ["Цільову аудиторію;"],
                                     type: "listItem",
                                 },
                                 {
                                     text: [
-                                        "уподобання в стилі та приклади сайтів;",
+                                        "Уподобання в стилі та приклади сайтів;",
                                     ],
                                     type: "listItem",
                                 },
                                 {
-                                    text: ["наявний контент і брендбук;"],
+                                    text: ["Наявний контент і брендбук;"],
                                     type: "listItem",
                                 },
                                 {
-                                    text: ["ключовий функціонал;"],
+                                    text: ["Ключовий функціонал;"],
                                     type: "listItem",
                                 },
                                 {
-                                    text: ["бюджет і дедлайн."],
+                                    text: ["Бюджет і дедлайн."],
                                     type: "listItem",
                                 },
                                 {
@@ -3941,6 +3910,261 @@ export const questionsData: QAItemType[] = [
                         },
                     ],
                 },
+            ],
+        },
+        en: {
+            questionText:
+                "What is a brief for website or landing page development, and why is it important?",
+            shortAnswerText: [
+                "A brief is the first shared document between the client and the team that defines the project's goals, target audience, functionality, and visual style. It helps avoid unnecessary revisions, saves time, and ensures a shared vision of the final result before development begins.",
+            ],
+            fullAnswerTopText: [
+                "A brief is not a technical specification or a contract, but it is the starting point of a high-quality project. A well-crafted brief serves as a guide for designers, developers, and analysts, and acts as a solid foundation for reviewing deliverables, planning the budget, and setting priorities.",
+            ],
+            imageAltText:
+                "What is a brief for website or landing page development, and why is it important?",
+            fullAnswerBottomText: [
+                "A brief is not just a formality - it’s the first step toward a shared vision. It helps avoid unnecessary revisions and makes the development process faster and more efficient.",
+                "If you already have an idea for a project or product, let’s discuss it together and create a brief that will mark the beginning of your journey to results.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "What is a brief, and how is it different from other documents?",
+                    data: [
+                        {
+                            title: 'A brief is the first and most important document that marks the beginning of a website or digital product development. Its purpose is to collect and record all the key information about the project in one place: goals, expectations, business specifics, target audience, functionality, design preferences, budget, and deadlines. It serves as a kind of "map" for the team, helping everyone understand what exactly needs to be created, for whom, and why.',
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "It is not a technical specification",
+                                    text: [
+                                        "A brief does not describe how the product works, technical scenarios, integration details, or specific technology requirements. It simply outlines what needs to be created and why - not how it should be implemented.",
+                                    ],
+                                },
+                                {
+                                    title: "It is not a contract",
+                                    text: [
+                                        "A brief does not define legal obligations, payment terms, or responsibilities of the parties. While it can be attached to a contract as an appendix, it does not carry legal force on its own.",
+                                    ],
+                                },
+                                {
+                                    title: "It is not a task list",
+                                    text: [
+                                        "A brief does not include specific user stories, phases, or execution order. It serves as a foundation on which the team builds the task list, elaborates requirements, and plans the workflow.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Key benefits of a brief:",
+                    data: [
+                        {
+                            text: ["A brief allows you to:"],
+                            type: "unchecked",
+                        },
+                        {
+                            text: [
+                                "quickly understand the core idea and goals of the product;",
+                            ],
+                        },
+
+                        {
+                            text: [
+                                "define the tone of voice and visual style;",
+                            ],
+                        },
+                        {
+                            text: [
+                                "collect examples that the client likes and clarify expectations.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "And most importantly: a brief establishes a common language between the team and the client before development even begins. This saves time, reduces the number of revisions, and allows everyone to focus on what truly matters.",
+                            ],
+                            type: "unchecked",
+                        },
+                    ],
+                },
+                {
+                    layout: 2,
+                    title: "How to collect information for a brief",
+                    text: 'To create a truly useful brief, it’s important not just to "write a questionnaire", but to understand the client’s business, product, and expectations. \nYou can collect data in two ways: verbally (during an interview or meeting) and in writing (via a questionnaire or document).',
+
+                    data: [
+                        {
+                            title: "Verbal briefing (during a meeting or call)",
+                            text: [
+                                {
+                                    title: "Advantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Allows you to ask clarifying questions right away;",
+                                        "Makes it easier to uncover real needs, not just what the client wrote;",
+                                        "Builds trust and demonstrates the team’s expertise;",
+                                        "Enables immediate discussion of ideas, references, and limitations.",
+                                    ],
+                                },
+                                {
+                                    title: "Disadvantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Requires time from both sides;",
+                                        "There’s a risk of forgetting to document important details;",
+                                        "Not always convenient if you and the client are in different time zones or if the client struggles to articulate their needs.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Written brief (questionnaire or document)",
+                            text: [
+                                {
+                                    title: "Advantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Helps the client structure their thoughts;",
+                                        "Gives them time to reflect on their answers;",
+                                        "The result is stored in one place as a reference document;",
+                                        "Convenient for quick clarifications or when a call is not possible.",
+                                    ],
+                                },
+                                {
+                                    title: "Disadvantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Clients often find it tedious to fill out long forms;",
+                                        "Answers may be too brief or unclear;",
+                                        "Without conversation, it's harder to identify true business goals;",
+                                        "A large brief may scare off the client, and they might not return.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "How to make a brief effective: lessons from experience",
+                    text: "To make a brief truly effective, it’s important not just to “hand the client a document,” but to organize the process properly. \nWe’ve gathered key tips from our own experience that help maintain focus, save time, and reduce the number of revisions.",
+
+                    data: [
+                        {
+                            title: "Start with \na live conversation",
+                            text: [
+                                "Clients often find it difficult to fill out a long form right away.",
+                                "It’s better to first hold an online meeting or call to understand the business, goals, and expectations - and only then send a short brief to capture the details.",
+                            ],
+                        },
+                        {
+                            title: "Use different types of briefs depending on the task",
+                            text: [
+                                {
+                                    title: "Full brief",
+                                    text: [
+                                        "- for complex products, e-commerce projects, or redesigns.",
+                                    ],
+                                },
+                                {
+                                    title: "Short brief",
+                                    text: [
+                                        "- for landing pages or MVPs with tight deadlines.",
+                                    ],
+                                },
+                                {
+                                    title: "Technical brief",
+                                    text: [
+                                        "- when minimal text is needed, but integrations or constraints must be specified.",
+                                    ],
+                                },
+                                {
+                                    title: "Visual brief",
+                                    text: [
+                                        "- for moodboards, style, and design direction.",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "This approach helps avoid overwhelming the client with unnecessary questions.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Ask the essentials - but don’t forget the details",
+                            text: [
+                                {
+                                    text: ["Be sure to find out:"],
+                                },
+                                {
+                                    text: [
+                                        "The goal of the website or product;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["The target audience;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Design preferences and example websites;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Available content and brand guidelines;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Key functionality;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Budget and deadline."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "And also: competitors, tone of voice, whether the project can be featured in your portfolio, and any analytics needs.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Gather first, \ndocument later",
+                            text: [
+                                "Ideally, collect all requirements during the initial meeting, then create a written document, align it with the client, and keep it as a reference point for all decisions throughout the project. \nThis way, the brief becomes more than just a questionnaire - it turns into a reliable foundation for both the team and the client.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        pl: {
+            questionText:
+                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
+            shortAnswerText: [
+                "Бриф - це перший спільний документ між замовником і командою, який фіксує цілі, аудиторію, функціонал і стиль проєкту. Він допомагає уникнути зайвих правок, заощадити час і досягти спільного бачення результату ще до старту розробки.",
+            ],
+            fullAnswerTopText: [
+                "Бриф не є технічним завданням чи контрактом, але саме з нього починається якісний проєкт. Грамотно складений бриф - це орієнтир для дизайнерів, розробників та аналітиків і надійна опора при прийманні робіт, плануванні бюджету та визначенні пріоритетів.",
+            ],
+            imageAltText:
+                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
+            fullAnswerBottomText: [
+                "Бриф - це не просто формальність, а перший крок, що формує спільне бачення, допомагає уникнути зайвих правок і робить розробку швидшою та ефективнішою.",
+                "Якщо у вас вже є ідея проєкту чи продукту - обговорімо її разом і створимо бриф, з якого почнеться шлях до результату.",
             ],
         },
     },
