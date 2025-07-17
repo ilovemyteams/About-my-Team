@@ -56,8 +56,8 @@ export const membersData: MemberDataItemType[] = [
                 "theatermag.com.ua",
                 "baza-trainee.tech",
                 "choodov.com",
-                "viktoriia-zabara.netlify.app",
-                "liudmyla-hoida-landing.netlify.app",
+                "viktoriia-recruiting.com.ua",
+                "career-coach.com.ua",
             ],
             pricePerHour: "24",
             socialLinks: {
@@ -1533,9 +1533,9 @@ export const membersData: MemberDataItemType[] = [
             projectsExperience: [
                 "theatermag.com.ua",
                 "ilovemyteam.online",
-                "viktoriia-zabara.netlify.app",
+                "viktoriia-recruiting.com.ua",
                 "choodov.com",
-                "liudmyla-hoida-landing.netlify.app",
+                "career-coach.com.ua",
             ],
             pricePerHour: "9",
             socialLinks: {
@@ -1652,7 +1652,7 @@ export const membersData: MemberDataItemType[] = [
             projectsExperience: [
                 "theatermag.com.ua",
                 "batatfarm.com",
-                "viktoriia-zabara.netlify.app",
+                "viktoriia-recruiting.com.ua",
             ],
             pricePerHour: "9",
             socialLinks: {
@@ -2061,7 +2061,7 @@ export const membersData: MemberDataItemType[] = [
             projectsExperience: [
                 "ilovemyteam.online",
                 "choodov.com",
-                "liudmyla-hoida-landing.netlify.app",
+                "career-coach.com.ua",
             ],
 
             pricePerHour: "10",

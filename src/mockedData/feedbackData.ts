@@ -187,4 +187,38 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Wszystko zaczęło się od wygranej w konkursie noworocznym, ale nawet nie mogłem sobie wyobrazić, jak idealną stronę internetową otrzymam. Praca z tak dobrze zorganizowanym zespołem była prawdziwą przyjemnością. Ich pomysły były niesamowite. Kilka naprawdę owocnych spotkań pomogło doprecyzować wszystkie wymagania i moje oczekiwania. Zespół głęboko zanurzył się w temat mojej książki i stworzył „żywą i interaktywną” stronę, która odzwierciedla jej ducha i ideę. Gorąco polecam 'i love my team', jeśli chcesz wyrazić siebie lub swój biznes poprzez wyjątkową stronę internetową! Osobą kontaktową, której potrzebujesz, jest Susanna Salata 🇺🇦 — wysokiej klasy menedżerka, która wciela Twoje pomysły w działający projekt.",
         },
     },
+    {
+        data: {
+            id: "06",
+            image: "https://drive.google.com/uc?export=view&id=1GsEahMO4FdWVzmg3yszwqFIZJ78zq_52",
+            siteLink: "career-coach.com.ua",
+            slug: "hoida-liudmyla",
+            feedbackLink:
+                "https://www.linkedin.com/posts/career-coach-liudmyla-hoida_%D1%80%D1%96%D0%BA-%D0%BF%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B7%D0%BD%D0%BE-%D1%81%D1%82%D1%96%D0%BB%D1%8C%D0%BA%D0%B8-%D1%87%D0%B0%D1%81%D1%83-%D1%8F-%D0%BD%D0%B0%D0%BC%D0%B0%D0%B3%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-activity-7351175632237604864-yM7H?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkfVTsBkmOpxPEM4MnW9E2pily_Cdy9Btw",
+        },
+        ua: {
+            siteName: "Людмила Гойда",
+            siteView: "лендінг",
+            reviewer: "Людмила Гойда",
+            reviewerRole: "коуч",
+            feedbackText:
+                "На першу зустріч із командою я прийшла без чіткого розуміння, що саме хочу. Але Susanna Salata 🇺🇦 поставила дуже влучні запитання і створила простір, у якому мені стало зрозуміліше, що я хочу сказати про себе і для кого я це роблю. І коли після тієї розмови я побачила перші варіанти дизайну — я була щиро вражена. Дівчата допомогли мені побачити й оформити себе у форматі, з яким мені комфортно виходити в світ. Якщо ви, як і я колись, відкладаєте створення сайту, бо не знаєте з чого почати – щиро рекомендую вам команду i love my team, яка зможе відчути і зрозуміти вас.",
+        },
+        en: {
+            siteName: "Liudmyla Hoida",
+            siteView: "landing",
+            reviewer: "Liudmyla Hoida",
+            reviewerRole: "сoach",
+            feedbackText:
+                "I came to the first meeting with the team without a clear idea of what exactly I wanted. But Susanna Salata 🇺🇦 asked incredibly thoughtful questions and created a space that helped me understand what I wanted to say about myself — and who I was saying it for. When I saw the first design concepts after that conversation, I was genuinely impressed. The girls helped me see and present myself in a way that feels authentic and comfortable to share with the world. If you're like I once was — putting off creating a website because you don't know where to start — I wholeheartedly recommend the i love my team. They’ll truly take the time to understand and feel you.",
+        },
+        pl: {
+            siteName: "Liudmyla Hoida",
+            siteView: "strona docelowa",
+            reviewer: "Liudmyla Hoida",
+            reviewerRole: "coach",
+            feedbackText:
+                "Na pierwsze spotkanie z zespołem przyszłam bez jasnego zrozumienia, czego dokładnie chcę. Ale Susanna Salata 🇺🇦 zadawała bardzo trafne pytania i stworzyła przestrzeń, w której stało się dla mnie jaśniejsze, co chcę powiedzieć o sobie i dla kogo to robię. A kiedy po tej rozmowie zobaczyłam pierwsze warianty designu — byłam szczerze zachwycona. Dziewczyny pomogły mi zobaczyć i przedstawić siebie w formacie, z którym czuję się komfortowo. Jeśli Ty, tak jak ja kiedyś, odkładasz tworzenie strony internetowej, bo nie wiesz, od czego zacząć – szczerze polecam Ci zespół i love my team, który potrafi Was wyczuć i zrozumieć.",
+        },
+    },
 ];
