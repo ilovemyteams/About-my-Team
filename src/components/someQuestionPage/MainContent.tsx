@@ -26,6 +26,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}
+                            text={item.text}
                         />
                     )}
                     {item.layout === 2 && (
@@ -33,6 +34,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}
+                            text={item.text}
                         />
                     )}
                     {item.layout === 3 && (

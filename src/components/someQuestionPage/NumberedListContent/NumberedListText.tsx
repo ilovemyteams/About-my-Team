@@ -4,7 +4,7 @@ import { HighlightText } from "../../shared/Search/HighlightText";
 
 interface NumberedListTextProps {
     text: string | ListTextItemType;
-    type: "list" | undefined;
+    type: "list" | "unchecked" | undefined;
     searchTerm: string;
 }
 

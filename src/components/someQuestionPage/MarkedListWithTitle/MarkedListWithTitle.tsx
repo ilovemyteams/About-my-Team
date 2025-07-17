@@ -22,7 +22,7 @@ export const MarkedListWithTitle = ({
                     <HighlightText text={title} toBeHighlighted={searchTerm} />
                 </h2>
             )}
-            <div className="flex flex-col tab:flex-row gap-8 tab:gap-3 pc:gap-[29px] desk:gap-[123px] mb-20 tab:mb-[100px] desk:mb-[120px]">
+            <div className="flex flex-col tab:flex-row gap-8 tab:gap-3 pc:gap-[29px] desk:gap-[123px]">
                 <ul className="flex flex-col gap-5 tab:gap-6 w-full tab:w-[75%] pc:w-[56%] desk:w-[59%] pc:mb-[60px]">
                     {items.map((item, index) => {
                         return (
@@ -30,7 +30,13 @@ export const MarkedListWithTitle = ({
                                 key={index}
                                 className="flex gap-2 tab:gap-3 items-start"
                             >
-                                <div>
+                                <div
+                                    className={
+                                        item.type === "unchecked"
+                                            ? "hidden"
+                                            : ""
+                                    }
+                                >
                                     <IconCheck className="w-4 tab:w-6 h-auto dark:text-red text-redLight" />
                                 </div>
                                 <div>
