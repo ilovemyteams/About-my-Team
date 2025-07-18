@@ -12,7 +12,7 @@ export const ArrowedText = ({ data, searchTerm }: ArrowedTextProps) => {
         if (typeof item === "string") {
             return (
                 <li key={index}>
-                    <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 mb-5 tab:mb-6 desk:mb-10">
+                    <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 ">
                         <HighlightText
                             text={item}
                             toBeHighlighted={searchTerm}

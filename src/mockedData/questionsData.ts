@@ -17,7 +17,7 @@ export type ListTextItemType = {
 
 export type LongAnswerListTypeItem = {
     title?: string;
-    type?: "list";
+    type?: "list" | "unchecked";
     decorate?: number;
     text: string[] | ListTextItemType[];
 };
@@ -25,6 +25,7 @@ export type LongAnswerListTypeItem = {
 export type LongAnswerListType = {
     layout: number;
     title?: string;
+    text?: string;
     data: LongAnswerListTypeItem[];
 };
 
@@ -1343,7 +1344,7 @@ export const questionsData: QAItemType[] = [
                                 {
                                     type: "listItem",
                                     text: [
-                                        "Технічні та дизайн-аспекти, які можуть бути змінені",
+                                        "Технічні та дизайн-аспекти, які можуть бути змінені.",
                                     ],
                                 },
                                 {
@@ -2276,7 +2277,7 @@ export const questionsData: QAItemType[] = [
                                     ],
                                 },
                                 {
-                                    title: "E-commerce sites.",
+                                    title: "E-commerce sites",
                                     text: [
                                         "For promotions or sales, e-commerce sites often create landing pages dedicated to specific products or seasonal offers. This helps to focus attention on certain products and encourage customers to make a quick purchase.",
                                     ],
@@ -2295,19 +2296,19 @@ export const questionsData: QAItemType[] = [
                             decorate: 2,
                             text: [
                                 {
-                                    title: "Design complexity: ",
+                                    title: "Design complexity ",
                                     text: [
                                         "If a unique, custom-designed look is required, the price will be higher than for a simple template-based solution.",
                                     ],
                                 },
                                 {
-                                    title: "Functionality:",
+                                    title: "Functionality",
                                     text: [
                                         "Integrations with CRM, animations, feedback forms, mobile responsiveness, and other added elements increase the overall cost.",
                                     ],
                                 },
                                 {
-                                    title: "Urgency:",
+                                    title: "Urgency",
                                     text: [
                                         "If the project needs to be completed within a tight deadline, this may also impact the price.",
                                     ],
@@ -3664,6 +3665,721 @@ export const questionsData: QAItemType[] = [
             ],
             fullAnswerBottomText: [
                 "Szanujemy Twój czas i oferujemy szybkie oraz efektywne wsparcie. Nasz zespół jest gotowy błyskawicznie reagować na Twoje potrzeby i aktualizować treści tak szybko, jak to możliwe.",
+            ],
+        },
+    },
+    {
+        data: {
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1752658483/answer13-1_vaqfti.jpg",
+            likes: null,
+            slug: "what-is-a-brief-for-website-or-landing-page-development",
+            answerOrderImage:
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1752658483/answer13-2_jgskyq.jpg",
+        },
+
+        ua: {
+            questionText:
+                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
+            shortAnswerText: [
+                "Бриф - це перший спільний документ між замовником і командою, який фіксує цілі, аудиторію, функціонал і стиль проєкту. Він допомагає уникнути зайвих правок, заощадити час і досягти спільного бачення результату ще до старту розробки.",
+            ],
+            fullAnswerTopText: [
+                "Бриф не є технічним завданням чи контрактом, але саме з нього починається якісний проєкт. Грамотно складений бриф - це орієнтир для дизайнерів, розробників та аналітиків і надійна опора при прийманні робіт, плануванні бюджету та визначенні пріоритетів.",
+            ],
+            imageAltText:
+                "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
+            fullAnswerBottomText: [
+                "Бриф - це не просто формальність, а перший крок, що формує спільне бачення, допомагає уникнути зайвих правок і робить розробку швидшою та ефективнішою.",
+                "Якщо у вас вже є ідея проєкту чи продукту - обговорімо її разом і створимо бриф, з якого почнеться шлях до результату.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Що таке бриф і чим він відрізняється від інших документів",
+                    data: [
+                        {
+                            title: "Бриф - це перший і найважливіший документ, з якого починається розробка сайту чи цифрового продукту. Його суть у тому, щоб зібрати і зафіксувати в одному місці ключову інформацію про проєкт: цілі, очікування, особливості бізнесу, цільову аудиторію, функціонал, вподобання в дизайні, бюджет і дедлайни. Це своєрідна «карта» для команди, яка дозволяє зрозуміти, що саме потрібно створити, для кого і навіщо.",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Це не технічне завдання",
+                                    text: [
+                                        "У брифі не описується логіка роботи продукту, технічні сценарії, деталі інтеграцій чи специфічні вимоги до технологій. Бриф лише фіксує, що потрібно створити та навіщо, а не «як» це реалізувати.",
+                                    ],
+                                },
+                                {
+                                    title: "Це не контракт",
+                                    text: [
+                                        "У брифі не прописують юридичні зобов’язання, умови оплати чи відповідальність сторін. Хоча бриф можна прикріпити до договору як додаток, він сам по собі не має сили юридичного документа.",
+                                    ],
+                                },
+                                {
+                                    title: "Це не список задач",
+                                    text: [
+                                        "Бриф не містить конкретних user stories, етапів чи черговості виконання. Він слугує основою, на якій команда формує список задач, деталізує вимоги та планує роботу.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Основні переваги брифу",
+                    data: [
+                        {
+                            text: ["Саме завдяки брифу можна:"],
+                            type: "unchecked",
+                        },
+                        {
+                            text: [
+                                "Швидко зрозуміти головну ідею та цілі продукту;",
+                            ],
+                        },
+
+                        {
+                            text: [
+                                "Визначити tone of voice та візуальний стиль;",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Зібрати приклади, які подобаються замовнику, і конкретизувати очікування.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "І найголовніше: бриф створює спільну мову між командою та замовником ще до початку розробки, що економить час, зменшує кількість правок і дозволяє зосередитися на найважливішому.",
+                            ],
+                            type: "unchecked",
+                        },
+                    ],
+                },
+                {
+                    layout: 2,
+                    title: "Як зібрати інформацію для брифу",
+                    text: "Щоб створити дійсно корисний бриф, важливо не просто «написати анкету», а зрозуміти бізнес, продукт і очікування замовника. \nЗбирати дані можна двома шляхами: усно (під час інтерв’ю чи зустрічі) та письмово (анкета або документ).",
+
+                    data: [
+                        {
+                            title: "Усний брифінг (під час зустрічі або дзвінка)",
+                            text: [
+                                {
+                                    title: "Переваги:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Дозволяє одразу ставити уточнюючі питання;",
+                                        "Легше зрозуміти реальні потреби, а не лише те, що клієнт написав;",
+                                        "Створює довіру і демонструє експертизу команди;",
+                                        "Можна одразу обговорити ідеї, референси, обмеження.",
+                                    ],
+                                },
+                                {
+                                    title: "Недоліки:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Потребує часу (з обох сторін);",
+                                        "Ризик забути зафіксувати деякі деталі;",
+                                        "Не завжди зручно, якщо ви з клієнтом перебуваєте у різних часових поясах або клієнту важко сформулювати свої потреби.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Письмовий бриф (анкета або документ)",
+                            text: [
+                                {
+                                    title: "Переваги:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Структурує думки замовника;",
+                                        "Дає можливість клієнту обдумати відповіді;",
+                                        "Результат зберігається в єдиному місці як документ;",
+                                        "Зручно для швидких уточнень або коли немає змоги провести дзвінок.",
+                                    ],
+                                },
+                                {
+                                    title: "Недоліки:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Замовникам часто лінь заповнювати довгі анкети;",
+                                        "Відповіді можуть бути надто короткі або нечіткі;",
+                                        "Без розмови важче зʼясувати справжні бізнес-цілі;",
+                                        "Ризик, що великий бриф відлякає замовника, і він не повернеться.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "Як зробити бриф ефективним: поради з досвіду",
+                    text: "Щоб бриф справді працював, важливо не лише «дати замовнику документ», а правильно організувати процес. \nМи зібрали головні поради з нашої практики, які допомагають зберегти фокус, економлять час і зменшують кількість правок.",
+
+                    data: [
+                        {
+                            title: "Почати з \nживої розмови",
+                            text: [
+                                "Замовникам часто складно одразу заповнити довгу форму.",
+                                "Краще спочатку провести онлайн-зустріч або дзвінок, щоб зрозуміти бізнес, цілі та очікування, а вже потім надіслати стислий бриф для фіксації деталей.",
+                            ],
+                        },
+                        {
+                            title: "Використовувати різні типи брифів залежно від задачі",
+                            text: [
+                                {
+                                    title: "Повний бриф",
+                                    text: [
+                                        "- для складних продуктів, e-commerce чи редизайну.",
+                                    ],
+                                },
+                                {
+                                    title: "Скорочений бриф",
+                                    text: [
+                                        "- для лендінгів чи MVP з обмеженими термінами.",
+                                    ],
+                                },
+                                {
+                                    title: "Технічний бриф",
+                                    text: [
+                                        "- коли потрібен мінімум тексту, але треба зафіксувати інтеграції чи обмеження.",
+                                    ],
+                                },
+                                {
+                                    title: "Візуальний бриф",
+                                    text: [
+                                        "- для moodboard, стилю та дизайну.",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "Такий підхід дозволяє не перевантажувати клієнта зайвими питаннями.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Питати головне, але не забувати про деталі",
+                            text: [
+                                {
+                                    text: ["Обов’язково дізнайтесь:"],
+                                },
+                                {
+                                    text: ["Мету сайту або продукту;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Цільову аудиторію;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Уподобання в стилі та приклади сайтів;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Наявний контент і брендбук;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Ключовий функціонал;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Бюджет і дедлайн."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "А ще: конкуренти, tone of voice, можливість розміщення проєкту в портфоліо, потреби в аналітиці.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Спочатку збір, \nпотім фіксація",
+                            text: [
+                                "Ідеально: спочатку зібрати вимоги при першій зустрічі, а потім сформувати письмовий документ, погодити його з клієнтом і зберігати як основу для всіх рішень у проєкті. Так бриф стає не просто анкетою, а надійною точкою опори для команди та замовника.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        en: {
+            questionText:
+                "What is a brief for website or landing page development, and why is it important",
+            shortAnswerText: [
+                "A brief is the first shared document between the client and the team that defines the project's goals, target audience, functionality, and visual style. It helps avoid unnecessary revisions, saves time, and ensures a shared vision of the final result before development begins.",
+            ],
+            fullAnswerTopText: [
+                "A brief is not a technical specification or a contract, but it is the starting point of a high-quality project. A well-crafted brief serves as a guide for designers, developers, and analysts, and acts as a solid foundation for reviewing deliverables, planning the budget, and setting priorities.",
+            ],
+            imageAltText:
+                "What is a brief for website or landing page development, and why is it important?",
+            fullAnswerBottomText: [
+                "A brief is not just a formality - it’s the first step toward a shared vision. It helps avoid unnecessary revisions and makes the development process faster and more efficient.",
+                "If you already have an idea for a project or product, let’s discuss it together and create a brief that will mark the beginning of your journey to results.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "What is a brief, and how is it different from other documents?",
+                    data: [
+                        {
+                            title: 'A brief is the first and most important document that marks the beginning of a website or digital product development. Its purpose is to collect and record all the key information about the project in one place: goals, expectations, business specifics, target audience, functionality, design preferences, budget, and deadlines. It serves as a kind of "map" for the team, helping everyone understand what exactly needs to be created, for whom, and why.',
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "It is not a technical specification",
+                                    text: [
+                                        "A brief does not describe how the product works, technical scenarios, integration details, or specific technology requirements. It simply outlines what needs to be created and why - not how it should be implemented.",
+                                    ],
+                                },
+                                {
+                                    title: "It is not a contract",
+                                    text: [
+                                        "A brief does not define legal obligations, payment terms, or responsibilities of the parties. While it can be attached to a contract as an appendix, it does not carry legal force on its own.",
+                                    ],
+                                },
+                                {
+                                    title: "It is not a task list",
+                                    text: [
+                                        "A brief does not include specific user stories, phases, or execution order. It serves as a foundation on which the team builds the task list, elaborates requirements, and plans the workflow.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Key benefits of a brief",
+                    data: [
+                        {
+                            text: ["A brief allows you to:"],
+                            type: "unchecked",
+                        },
+                        {
+                            text: [
+                                "Quickly understand the core idea and goals of the product;",
+                            ],
+                        },
+
+                        {
+                            text: [
+                                "Define the tone of voice and visual style;",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Collect examples that the client likes and clarify expectations.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "And most importantly: a brief establishes a common language between the team and the client before development even begins. This saves time, reduces the number of revisions, and allows everyone to focus on what truly matters.",
+                            ],
+                            type: "unchecked",
+                        },
+                    ],
+                },
+                {
+                    layout: 2,
+                    title: "How to collect information for a brief",
+                    text: 'To create a truly useful brief, it’s important not just to "write a questionnaire", but to understand the client’s business, product, and expectations. \nYou can collect data in two ways: verbally (during an interview or meeting) and in writing (via a questionnaire or document).',
+
+                    data: [
+                        {
+                            title: "Verbal briefing (during a meeting or call)",
+                            text: [
+                                {
+                                    title: "Advantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Allows you to ask clarifying questions right away;",
+                                        "Makes it easier to uncover real needs, not just what the client wrote;",
+                                        "Builds trust and demonstrates the team’s expertise;",
+                                        "Enables immediate discussion of ideas, references, and limitations.",
+                                    ],
+                                },
+                                {
+                                    title: "Disadvantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Requires time from both sides;",
+                                        "There’s a risk of forgetting to document important details;",
+                                        "Not always convenient if you and the client are in different time zones or if the client struggles to articulate their needs.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Written brief (questionnaire or document)",
+                            text: [
+                                {
+                                    title: "Advantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Helps the client structure their thoughts;",
+                                        "Gives them time to reflect on their answers;",
+                                        "The result is stored in one place as a reference document;",
+                                        "Convenient for quick clarifications or when a call is not possible.",
+                                    ],
+                                },
+                                {
+                                    title: "Disadvantages:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Clients often find it tedious to fill out long forms;",
+                                        "Answers may be too brief or unclear;",
+                                        "Without conversation, it's harder to identify true business goals;",
+                                        "A large brief may scare off the client, and they might not return.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "How to make a brief effective: lessons from experience",
+                    text: "To make a brief truly effective, it’s important not just to “hand the client a document,” but to organize the process properly. \nWe’ve gathered key tips from our own experience that help maintain focus, save time, and reduce the number of revisions.",
+
+                    data: [
+                        {
+                            title: "Start with \na live conversation",
+                            text: [
+                                "Clients often find it difficult to fill out a long form right away.",
+                                "It’s better to first hold an online meeting or call to understand the business, goals, and expectations - and only then send a short brief to capture the details.",
+                            ],
+                        },
+                        {
+                            title: "Use different types of briefs depending on the task",
+                            text: [
+                                {
+                                    title: "Full brief",
+                                    text: [
+                                        "- for complex products, e-commerce projects, or redesigns.",
+                                    ],
+                                },
+                                {
+                                    title: "Short brief",
+                                    text: [
+                                        "- for landing pages or MVPs with tight deadlines.",
+                                    ],
+                                },
+                                {
+                                    title: "Technical brief",
+                                    text: [
+                                        "- when minimal text is needed, but integrations or constraints must be specified.",
+                                    ],
+                                },
+                                {
+                                    title: "Visual brief",
+                                    text: [
+                                        "- for moodboards, style, and design direction.",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "This approach helps avoid overwhelming the client with unnecessary questions.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Ask the essentials - but don’t forget the details",
+                            text: [
+                                {
+                                    text: ["Be sure to find out:"],
+                                },
+                                {
+                                    text: [
+                                        "The goal of the website or product;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["The target audience;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Design preferences and example websites;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Available content and brand guidelines;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Key functionality;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Budget and deadline."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "And also: competitors, tone of voice, whether the project can be featured in your portfolio, and any analytics needs.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Gather first, \ndocument later",
+                            text: [
+                                "Ideally, collect all requirements during the initial meeting, then create a written document, align it with the client, and keep it as a reference point for all decisions throughout the project. \nThis way, the brief becomes more than just a questionnaire - it turns into a reliable foundation for both the team and the client.",
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        pl: {
+            questionText:
+                "Czym jest brief dotyczący rozwoju strony internetowej lub landing page'a i dlaczego jest potrzebny?",
+            shortAnswerText: [
+                "Brief to pierwszy wspólny dokument między klientem a zespołem, który określa cele, odbiorców, funkcjonalność i styl projektu. Pomaga uniknąć niepotrzebnych zmian, zaoszczędzić czas i osiągnąć wspólną wizję wyniku przed rozpoczęciem rozwoju.",
+            ],
+            fullAnswerTopText: [
+                "Brief nie jest specyfikacją techniczną ani umową, ale stanowi punkt wyjścia dla wysokiej jakości projektu. Dobrze napisany brief jest wskazówką dla projektantów, deweloperów i analityków oraz niezawodnym wsparciem przy akceptowaniu pracy, planowaniu budżetów i ustalaniu priorytetów.",
+            ],
+            imageAltText:
+                "Czym jest brief dotyczący rozwoju strony internetowej lub landing page'a i dlaczego jest potrzebny?",
+            fullAnswerBottomText: [
+                "Brief to nie tylko formalność, ale pierwszy krok, który tworzy wspólną wizję, pomaga uniknąć niepotrzebnych zmian i sprawia, że rozwój jest szybszy i bardziej wydajny.",
+                "Jeśli masz już pomysł na projekt lub produkt, omówmy go razem i stwórzmy brief, który rozpocznie podróż do rezultatu.",
+            ],
+            fullAnswerContent: [
+                {
+                    layout: 4,
+                    title: "Czym jest brief i czym różni się od innych dokumentów",
+                    data: [
+                        {
+                            title: "Brief jest pierwszym i najważniejszym dokumentem, który rozpoczyna tworzenie strony internetowej lub produktu cyfrowego. Jego celem jest zebranie i zapisanie kluczowych informacji o projekcie w jednym miejscu: cele, oczekiwania, cechy biznesowe, grupa docelowa, funkcjonalność, preferencje projektowe, budżet i terminy. Jest to rodzaj „mapy” dla zespołu, która pozwala im zrozumieć, co dokładnie należy stworzyć, dla kogo i dlaczego.",
+                            decorate: 1,
+                            text: [
+                                {
+                                    title: "Nie jest zadaniem technicznym",
+                                    text: [
+                                        "Brief nie opisuje logiki produktu, scenariuszy technicznych, szczegółów integracji ani konkretnych wymagań technologicznych. Brief określa jedynie, co należy stworzyć i dlaczego, a nie „jak” to wdrożyć.",
+                                    ],
+                                },
+                                {
+                                    title: "Nie jest to umowa",
+                                    text: [
+                                        "Brief nie określa zobowiązań prawnych, warunków płatności ani obowiązków stron. Chociaż brief może być dołączony do umowy jako załącznik, nie ma on mocy dokumentu prawnego.",
+                                    ],
+                                },
+                                {
+                                    title: "Nie jest to lista zadań",
+                                    text: [
+                                        "Brief nie zawiera konkretnych historyj użytkownika, kamieni milowych ani kolejności realizacji. Służy jako podstawa, na której zespół tworzy listę zadań, określa wymagania i planuje pracę.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 6,
+                    title: "Główne zalety briefu",
+                    data: [
+                        {
+                            text: ["To dzięki briefowi można:"],
+                            type: "unchecked",
+                        },
+                        {
+                            text: [
+                                "Szybko zrozumieć główną ideę i cele produktu;",
+                            ],
+                        },
+
+                        {
+                            text: ["Określić ton głosu i styl wizualny;"],
+                        },
+                        {
+                            text: [
+                                "Zebrać przykłady, które podobają się klientowi i sprecyzować oczekiwania.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "A co najważniejsze, brief tworzy wspólny język między zespołem a klientem przed rozpoczęciem rozwoju, co oszczędza czas, zmniejsza liczbę zmian i pozwala skupić się na najważniejszych rzeczach.",
+                            ],
+                            type: "unchecked",
+                        },
+                    ],
+                },
+                {
+                    layout: 2,
+                    title: "Jak zbierać informacje do briefu",
+                    text: "Aby stworzyć naprawdę użyteczny brief, ważne jest nie tylko „napisać ankietę”, ale przede wszystkim zrozumieć biznes, produkt i oczekiwania klienta. \nDane można zbierać na dwa sposoby: ustnie (podczas spotkania lub wywiadu) oraz pisemnie (ankieta lub dokument).",
+
+                    data: [
+                        {
+                            title: "Brief ustny (podczas spotkania lub rozmowy)",
+                            text: [
+                                {
+                                    title: "Zalety:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Pozwala od razu zadawać pytania doprecyzowujące;",
+                                        "Łatwiej zrozumieć prawdziwe potrzeby, a nie tylko to, co klient napisał;",
+                                        "Buduje zaufanie i pokazuje kompetencje zespołu;",
+                                        "Można od razu omówić pomysły, inspiracje i ograniczenia.",
+                                    ],
+                                },
+                                {
+                                    title: "Wady:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Wymaga czasu (po obu stronach);",
+                                        "Ryzyko pominięcia niektórych szczegółów;",
+                                        "Może być niewygodny, jeśli klient jest w innej strefie czasowej lub trudno mu sprecyzować swoje potrzeby.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Brief pisemny (ankieta lub dokument)",
+                            text: [
+                                {
+                                    title: "Zalety:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Pomaga uporządkować myśli klienta;",
+                                        "Daje czas na przemyślenie odpowiedzi;",
+                                        "Wynik zostaje zapisany w jednym miejscu jako dokument;",
+                                        "Wygodny do szybkiego uzupełnienia lub gdy nie ma możliwości rozmowy.",
+                                    ],
+                                },
+                                {
+                                    title: "Wady:",
+                                    type: "listItem",
+                                    list: "sublist",
+                                    text: [
+                                        "Klientom często nie chce się wypełniać długich formularzy;",
+                                        "Odpowiedzi mogą być zbyt krótkie lub nieprecyzyjne;",
+                                        "Bez rozmowy trudniej ustalić prawdziwe cele biznesowe;",
+                                        "Istnieje ryzyko, że zbyt obszerny brief zniechęci klienta i ten już nie wróci.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "Jak sprawić, by brief był skuteczny: wskazówki z doświadczenia",
+                    text: "Aby brief naprawdę działał, ważne jest nie tylko „przekazać klientowi dokument”, ale też odpowiednio zorganizować cały proces. \nZebraliśmy kluczowe wskazówki z naszej praktyki, które pomagają zachować koncentrację, oszczędzają czas i ograniczają liczbę poprawek.",
+
+                    data: [
+                        {
+                            title: "Zacząć od \nrozmowy na żywo",
+                            text: [
+                                "Klientom często trudno jest od razu wypełnić długi formularz.",
+                                "Lepiej najpierw przeprowadzić spotkanie online lub rozmowę telefoniczną, aby zrozumieć biznes, cele i oczekiwania, a dopiero potem wysłać skrócony brief w celu doprecyzowania szczegółów.",
+                            ],
+                        },
+                        {
+                            title: "Stosowanie różnych typów briefów w zależności od zadania",
+                            text: [
+                                {
+                                    title: "Pełny brief",
+                                    text: [
+                                        "- dla złożonych produktów, e-commerce lub redesignu.",
+                                    ],
+                                },
+                                {
+                                    title: "Skrócony brief",
+                                    text: [
+                                        "- dla landing page’y lub MVP przy ograniczonym czasie.",
+                                    ],
+                                },
+                                {
+                                    title: "Brief techniczny",
+                                    text: [
+                                        "- gdy tekstu potrzeba minimum, ale trzeba określić integracje lub ograniczenia.",
+                                    ],
+                                },
+                                {
+                                    title: "Brief wizualny",
+                                    text: ["- do moodboardu, stylu i designu."],
+                                },
+                                {
+                                    text: [
+                                        "Takie podejście pozwala nie obciążać klienta zbędnymi pytaniami.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Pytać o najważniejsze, ale nie zapominać o szczegółach",
+                            text: [
+                                {
+                                    text: ["Koniecznie dowiedz się:"],
+                                },
+                                {
+                                    text: ["Cel strony lub produktu;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Docelowi odbiorcy;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Preferencje stylu i przykłady stron;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Istniejąca treść i książka marki;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Kluczowe funkcje;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["Budżet i termin."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "A także: konkurencja, ton głosu, możliwość umieszczenia projektu w portfolio, potrzeby analityczne.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            title: "Najpierw zebranie, \npotem zatwierdzenie",
+                            text: [
+                                "Idealnie: najpierw zebrać wymagania podczas pierwszego spotkania, a następnie przygotować pisemny dokument, uzgodnić go z klientem i przechowywać jako punkt odniesienia dla wszystkich decyzji w projekcie. W ten sposób brief staje się nie tylko ankietą, ale solidnym punktem oparcia zarówno dla zespołu, jak i dla klienta.",
+                            ],
+                        },
+                    ],
+                },
             ],
         },
     },

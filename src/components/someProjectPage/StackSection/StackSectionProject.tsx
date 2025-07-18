@@ -14,7 +14,7 @@ export const StackSectionProject = ({
     const getTranslation = useTranslations("SomeProjectPage");
 
     return (
-        <PageSection className="pb-[109px] tab:pb-[100px] desk:pb-[120px]">
+        <PageSection className="pb-[109px] tab:pb-[100px]  desk:pb-[120px]">
             <h2 className="font-caviar dark:text-grey text-purple-200 text-2xl tab:text-4xl pc:text-5xl desk:text-6xl font-bold mb-8 tab:mb-10 pc:mb-[64px]">
                 {getTranslation.rich("stackTitle", {
                     purple: chunk => (

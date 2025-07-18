@@ -14,8 +14,8 @@ export const TableContentItem = ({
     const { title, text } = content;
 
     return (
-        <div>
-            <div className="mb-6 pc:mb-[80px] mt-6 flex gap-2">
+        <div className="pt-6">
+            <div className="mb-6 pc:mb-[80px] flex gap-2">
                 {title && (
                     <>
                         <RedSquareBullet classNames="m-[3px] desk:m-[7px]" />
