@@ -27,13 +27,13 @@ export const FeedbackCardTextFromTab = ({
                 />
                 <div className="tab:my-6 pc:my-[16px] tab:h-[139px] pc:h-[209px] desk:h-[276px]">
                     {!feedbackLink && (
-                        <p className="tab:text-base pc:text-xl desk:text-2xl  overflow-hidden line-clamp-[7] break-words">
+                        <p className="tab:text-base pc:text-xl desk:text-2xl overflow-hidden line-clamp-[7]  desk:line-clamp-[8] break-words">
                             {feedbackText}
                         </p>
                     )}
                     {feedbackLink && (
                         <>
-                            <p className="tab:text-base pc:text-xl desk:text-2xl tab:h-[103px] pc:h-[180px] desk:h-[240px] pc:mb-2 overflow-hidden line-clamp-5 pc:line-clamp-[7] desk:line-clamp-[8] break-words">
+                            <p className="tab:text-base pc:text-xl desk:text-2xl  pc:mb-2 truncate-text line-clamp-5 pc:line-clamp-[7] desk:line-clamp-[8] break-words">
                                 {feedbackText}
                             </p>
                             <a
