@@ -53,7 +53,7 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                 className=" overflow-hidden tab:min-w-[320px] tab:max-w-[44.44%] ml-auto pc:min-w-[540px] pc:max-w-[50%]"
                 ref={isSingle ? ref : emblaRef}
             >
-                <div className=" flex">
+                <div className="flex">
                     {feedbacks.map(({ data, en }) => (
                         <div
                             key={data.id}

@@ -1,8 +1,8 @@
 import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
 
-import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { LayoutTitle } from "../shared/LayoutTitle";
+import { RedArrowDecoration } from "../shared/RedArrowDecoration";
 import { NumberedListContentItem } from "./NumberedListContentItem";
 
 interface NumberedListContentProps {
@@ -26,10 +26,10 @@ export const NumberedListContent = ({
                 </LayoutTitle>
             )}
 
-            <div className="flex flex-col tab:flex-row justify-start gap-8">
-                <div>
+            <div className="flex flex-col tab:flex-row justify-start gap-8 ">
+                <div className="tab:w-[75%] pc:w-[56%] desk:w-[59%]">
                     {text && (
-                        <p className="mb-6 tab:mb-10 desk:mb-20 tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
+                        <p className="mb-6 tab:mb-10 desk:mb-20  text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
                             <HighlightText
                                 text={text}
                                 toBeHighlighted={searchTerm}
@@ -48,9 +48,7 @@ export const NumberedListContent = ({
                     </ol>
                 </div>
 
-                <div className="text-redLight dark:text-red mx-auto w-[76px] pc:w-[110px]">
-                    <IconQADecoration className="block tab:sticky tab:top-[15%]" />
-                </div>
+                <RedArrowDecoration />
             </div>
         </div>
     );
