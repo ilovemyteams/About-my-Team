@@ -33,7 +33,7 @@ export const FeedbackCardTextFromTab = ({
                     )}
                     {feedbackLink && (
                         <>
-                            <p className="tab:text-base pc:text-xl desk:text-2xl  pc:mb-2 truncate-text line-clamp-5 pc:line-clamp-[7] desk:line-clamp-[8] break-words">
+                            <p className="tab:text-base pc:text-xl desk:text-2xl  pc:mb-2 line-clamp-5 pc:line-clamp-[7] desk:line-clamp-[8] break-words">
                                 {feedbackText}
                             </p>
                             <a
