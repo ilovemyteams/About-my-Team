@@ -8,7 +8,7 @@ export const MAIN_MEMBERS = [
     "oksana-arpul-qa-engineer",
     "mila-maksymenko-ui-ux-designer",
     "viktoriia-lapina-ui-ux-designer",
-    "diana-dudnyk-ui-ux-designer",
+    "tetiana-drofa-project-manager",
     "vladyslava-bobko-ui-ux-designer",
 ];
 
