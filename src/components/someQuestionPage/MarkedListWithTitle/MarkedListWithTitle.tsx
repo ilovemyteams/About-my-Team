@@ -1,8 +1,8 @@
 import { LongAnswerListType } from "@/src/mockedData/questionsData";
 
 import { IconCheck } from "../../shared/Icons/IconCheck";
-import { IconQADecoration } from "../../shared/Icons/IconQADecoration";
 import { HighlightText } from "../../shared/Search/HighlightText";
+import { RedArrowDecoration } from "../shared/RedArrowDecoration";
 
 interface MarkedListProps {
     content: LongAnswerListType;
@@ -22,7 +22,7 @@ export const MarkedListWithTitle = ({
                     <HighlightText text={title} toBeHighlighted={searchTerm} />
                 </h2>
             )}
-            <div className="flex flex-col tab:flex-row gap-8 tab:gap-3 pc:gap-[29px] desk:gap-[123px]">
+            <div className="flex flex-col tab:flex-row gap-8 tab:gap-3 pc:gap-[29px] desk:gap-[32px]">
                 <ul className="flex flex-col gap-5 tab:gap-6 w-full tab:w-[75%] pc:w-[56%] desk:w-[59%] pc:mb-[60px]">
                     {items.map((item, index) => {
                         return (
@@ -91,9 +91,7 @@ export const MarkedListWithTitle = ({
                         );
                     })}
                 </ul>
-                <div className="text-redLight dark:text-red mx-auto w-[76px] pc:w-[110px] desk:w-[159px]">
-                    <IconQADecoration className="block tab:sticky tab:top-[15%]" />
-                </div>
+                <RedArrowDecoration />
             </div>
         </div>
     );
