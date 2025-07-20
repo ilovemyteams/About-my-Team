@@ -648,6 +648,8 @@ const config: Config = {
                 "linear-gradient(90deg, #4F0A8680 0%, #20003F80 100%)",
             selectOptionsGradientLight:
                 "linear-gradient(90deg, #D8C5FF 0%, #EFE8FF 48%, #FBF9FF 100%)",
+            teamCardGradientDark:
+                "linear-gradient(90deg, rgba(95, 63, 135, 0) 0%, rgba(57, 23, 99, 0.3) 49.9%, rgba(31, 0, 51, 0.8) 100%)",
         },
 
         backgroundSize: {

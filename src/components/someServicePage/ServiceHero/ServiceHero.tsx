@@ -52,7 +52,7 @@ export const ServiceHero = ({
                                 return (
                                     <span key={index} className="flex gap-2">
                                         <span>
-                                            <Icon className="w-[24px] pc:w-[32px] h-auto text-purple-130 dark:text-purple-100 mt-[-2px]" />
+                                            <Icon className="pt-1 pr-1 w-[24px] pc:w-[32px] pc:p-[4px] h-auto text-purple-130 dark:text-purple-100 mt-[-2px]" />
                                         </span>
 
                                         {item.text}
