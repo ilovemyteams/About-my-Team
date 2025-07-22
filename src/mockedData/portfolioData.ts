@@ -156,7 +156,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://balabushko.com",
             order: 7,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1U6IMo1By3u6_5cHZN47vkephFfI3yd5-",
+                "https://drive.google.com/uc?export=view&id=1qQI5-QKeXJw0kKb_JipvBEZ4j6WnrQYX",
 
             image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
             mediaForHero: {
