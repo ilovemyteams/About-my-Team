@@ -17,6 +17,8 @@ export function Accordion({ item }: AccordionProps) {
         setAccordionOpen(isAccordionOpen => !isAccordionOpen);
     };
 
+    const visibleText = shortAnswerText.join(" ");
+
     return (
         <li className="min-h-[72px] pc:min-h-[98px] border-b-[1px] dark:border-purple-stroke border-purple-strokeLight">
             <button
@@ -45,7 +47,7 @@ export function Accordion({ item }: AccordionProps) {
                 className={`text-geist text-sm tab:text-base deskxl:text-lg overflow-hidden mb-[8px] transition-[max-height] duration-[600ms] ease-in 
                     ${isAccordionOpen ? "max-h-[300px]" : "max-h-0"}`}
             >
-                {shortAnswerText}
+                {visibleText}
             </p>
         </li>
     );
