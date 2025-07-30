@@ -257,7 +257,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Продумана структура сторінки: від першого екрану з акцентом на особистий бренд до блоків із переліком послуг, перевагами, статистикою, відгуками та формою зворотного зв’язку",
+                                "Продумана структура сторінки: від першого екрану з акцентом на особистий бренд до блоків із переліком послуг, перевагами, статистикою та формою зворотного зв’язку",
                                 "По всьому сайту інтегровані фото експертки на фоні, що підсилюють особистий бренд через візуальну присутність та створюють ефект живого спілкування",
                                 "Дизайн сайту продуманий для трьох типів пристроїв: десктоп, планшет і мобільний телефон",
                             ],
@@ -405,7 +405,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "A well-thought-out page structure: from the hero section focused on personal branding to blocks showcasing services, benefits, statistics, reviews, and a contact form",
+                                "A well-thought-out page structure: from the hero section focused on personal branding to blocks showcasing services, benefits, statistics and a contact form",
                                 "Throughout the site, background photos of the expert are integrated to reinforce her personal brand through visual presence and create a sense of live communication",
                                 "The website design is optimized for three types of devices: desktop, tablet, and mobile",
                             ],
@@ -500,12 +500,12 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Hanna Balabushko",
             siteView: "strona docelowa",
-            subtitle: "Лендінг для QA менторки",
+            subtitle: "Strona docelowa dla mentora QA",
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
-                "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.",
-                "Основна мета сайту - представити Анну як експертку, яка допомагає світчерам упевнено увійти в ІТ, а фахівцям всіх рівнів - прокачати кар’єрні навички, підготуватись до технічних інтерв’ю, створити персоналізований роадмап розвитку та зростати до лідерських позицій.",
+                "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
+                "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
             ],
             deadlines: {
                 analysis: "2 tygodnie",
@@ -518,28 +518,28 @@ export const portfolioData: PortfolioDataItemType[] = [
                     icon: "brand",
                     title: "Marka osobista",
                     text: [
-                        "Розкрити багатогранний образ експертки, яка працює не лише з початківцями та світчерами, а й з досвідченими фахівцями, що прагнуть нових можливостей для розвитку в QA",
-                        "Створити структуру лендінгу, яка навіть при «холодних» контактах максимально чітко та широко демонструє експертність і підхід Анни",
-                        "Передати через світлу кольорову гаму, візуальний стиль і тексти відчуття спокою, підтримки та впевненості, щоб сайт став не просто презентацією послуг, а відображенням особистості, стилю роботи та цінностей експертки",
+                        "Ukazać wszechstronny wizerunek ekspertki, która pracuje nie tylko z osobami początkującymi i przebranżawiającymi się, ale także z doświadczonymi specjalistami poszukującymi nowych możliwości rozwoju w obszarze QA",
+                        "Stworzyć strukturę landing page’a, która nawet przy „zimnych” kontaktach maksymalnie jasno i szeroko demonstruje ekspertyzę oraz podejście Anny",
+                        "Przekazać poprzez jasną kolorystykę, styl wizualny i teksty poczucie spokoju, wsparcia i pewności siebie — tak, by strona była nie tylko prezentacją usług, ale też odzwierciedleniem osobowości, stylu pracy i wartości ekspertki",
                     ],
                 },
                 {
                     icon: "light",
                     title: "Wartość",
                     text: [
-                        "Створити мінімалістичний дизайн, що висвітлює не лише послуги, а й досвід, підхід і цінності експертки",
-                        "Донести головну ідею: допомога світчерам і тестувальникам знайти кар'єрний шлях, створення персоналізованого роадмап, підготовка до співбесід і зростання до лідерства",
-                        "Показати широку цільову аудиторію - від початківців до досвідчених, які потребують підтримки, фідбеку й структурованого розвитку",
-                        "Підкреслити формати співпраці: разові консультації, менторські програми з роадмапами й індивідуальним супроводом",
+                        "Stworzyć minimalistyczny design, który podkreśla nie tylko usługi, ale także doświadczenie, podejście i wartości ekspertki",
+                        "Przekazać główną ideę: pomoc osobom zmieniającym branżę (switcherom) i testerom w odnalezieniu ścieżki kariery, tworzeniu spersonalizowanego roadmapu, przygotowaniu do rozmów kwalifikacyjnych oraz rozwoju w kierunku przywództwa",
+                        "Pokazać szeroką grupę docelową – od początkujących po doświadczonych specjalistów, którzy potrzebują wsparcia, informacji zwrotnej i uporządkowanego rozwoju",
+                        "Podkreślić formy współpracy: jednorazowe konsultacje, programy mentoringowe z mapami drogowymi i indywidualnym wsparciem",
                     ],
                 },
                 {
                     icon: "functionality",
                     title: "Funkcjonalność",
                     text: [
-                        "Сконцентрувати головний канал комунікації навколо форми зворотного зв’язку, а не на прямих повідомленнях у соцмережах",
-                        "Додати сучасні інтерактивні елементи та анімації, що підсилюють враження, але не перевантажують інтерфейс",
-                        "Створити структуру, яка відображає очікування замовниці: сайт має бути «про неї» та про можливість замовити індивідуальні консультації й менторські програми - як для тих, хто вже працює в QA, так і для світчерів, що роблять перші кроки в сфері ІТ",
+                        "Skoncentrować główny kanał komunikacji wokół formularza kontaktowego, a nie bezpośrednich wiadomości w mediach społecznościowych",
+                        "Dodać nowoczesne interaktywne elementy i animacje, które wzmacniają odbiór strony, ale nie przeciążają interfejsu",
+                        "Stworzyć strukturę odpowiadającą oczekiwaniom klientki: strona ma być „o niej” oraz o możliwości zamówienia indywidualnych konsultacji i programów mentoringowych – zarówno dla osób już pracujących w QA, jak i dla switcherów, którzy stawiają pierwsze kroki w branży IT",
                     ],
                 },
             ],
@@ -553,9 +553,9 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Продумана структура сторінки: від першого екрану з акцентом на особистий бренд до блоків із переліком послуг, перевагами, статистикою, відгуками та формою зворотного зв’язку",
-                                "По всьому сайту інтегровані фото експертки на фоні, що підсилюють особистий бренд через візуальну присутність та створюють ефект живого спілкування",
-                                "Дизайн сайту продуманий для трьох типів пристроїв: десктоп, планшет і мобільний телефон.",
+                                "Struktura strony jest dobrze przemyślana: od pierwszego ekranu z naciskiem na markę osobistą do bloków z listą usług, korzyści, statystyk i formularzem opinii",
+                                "Na całej stronie zintegrowano zdjęcia ekspertki w tle, które wzmacniają osobistą markę poprzez wizualną obecność i tworzą efekt żywej komunikacji",
+                                "Projekt strony został zaprojektowany dla trzech typów urządzeń: komputera stacjonarnego, tabletu i telefonu komórkowego.",
                             ],
                         },
                     ],
@@ -564,7 +564,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideLeft: [
                         {
                             text: [
-                                "Текстура бетонної стіни у фоні головних секцій  як метафора надійного фундаменту знань і досвіду, який експертка допомагає закласти менті",
+                                "Tekstura betonowej ściany w tle głównych sekcji jako metafora solidnego fundamentu wiedzy i doświadczenia, które ekspert pomaga zbudować swoim podopiecznym",
                             ],
                         },
                         {
@@ -577,7 +577,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                         {
                             text: [
-                                "Світла мінімалістична кольорова палітра з акцентним блакитним тоном, що викликає відчуття спокою, підтримки та довіри - ключових цінностей експертки",
+                                "Jasna, minimalistyczna paleta kolorów z niebieskim akcentem, który wywołuje poczucie spokoju, wsparcia i zaufania - kluczowych wartości eksperta",
                             ],
                         },
                     ],
@@ -587,8 +587,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideLeft: [
                         {
                             text: [
-                                "Блок зі статистикою створений з фокусом на велике фото експертки та анімацію левітації цифр, що підкреслює реальний досвід і досягнення. Такий підхід демонструє експертизу й робить інформацію доступною й переконливою",
-                                "Секція з послугами побудована так, що середня картка візуально виділяється, фокусуючи увагу користувача на ключовому пакеті послуг, який експертка прагне просувати як  найбільш оптимальний за співвідношенням ціни та цінності",
+                                "Blok ze statystykami został stworzony z naciskiem na duże zdjęcie ekspertki i animację lewitujących cyfr, co podkreśla rzeczywiste doświadczenie i osiągnięcia. Takie podejście pokazuje wiedzę ekspercką i sprawia, że informacje są dostępne i przekonujące",
+                                "Sekcja z usługami jest zbudowana tak, że średnia karta wyróżnia się wizualnie, skupiając uwagę użytkownika na kluczowym pakiecie usług, który ekspertka chce promować jako najbardziej optymalny pod względem stosunku ceny do wartości",
                             ],
                         },
                     ],
@@ -607,8 +607,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Форма зворотного зв’язку як головний канал комунікації: дозволяє отримувати заявки від зацікавлених користувачів, зменшуючи потребу в прямих повідомлень у соцмережах",
-                                "Блок із посиланнями на активні соцмережі (LinkedIn, Instagram) розміщено у футері, де розкривається ще більше діяльності експертки,  водночас основна ціль користувача - заповнення форми заявки",
+                                "Formularz zwrotny jako główny kanał komunikacji: pozwala na otrzymywanie zgłoszeń od zainteresowanych użytkowników, zmniejszając potrzebę bezpośrednich wiadomości w sieciach społecznościowych",
+                                "Blok z linkami do aktywnych sieci społecznościowych (LinkedIn, Instagram) jest umieszczony w stopce, co ujawnia jeszcze więcej działań eksperta, podczas gdy głównym celem użytkownika jest wypełnienie formularza zgłoszeniowego",
                             ],
                         },
                     ],
@@ -616,30 +616,30 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             titleListVideo: [
                 {
-                    title: "Навігаційне <purple>меню</purple>, що працює на <purple>бренд</purple>",
+                    title: "<purple>Menu</purple> nawigacyjne wspierająceа <purple>markę osobistą</purple>",
                     description: [
-                        "Навігаційне меню реалізоване у вигляді звичної для мобільних пристроїв бургер-іконки, що зберігає фокус на експертці на першому екрані",
-                        "При наведені курсору до пункту меню реалізовано додатковий ефект зміни фотографії експертки в блоці",
-                        "Це рішення додає сайту інтерактивності та підсилює особистий бренд через візуальну динаміку",
+                        "Menu nawigacyjne zostało zaprojektowane w formie dobrze znanej ikony hamburgera, typowej dla urządzeń mobilnych, co pozwala zachować pełne skupienie na ekspertce na pierwszym ekranie",
+                        "Po najechaniu kursorem na elementy menu, uruchamiany jest dodatkowy efekt zmiany zdjęcia ekspertki w bloku",
+                        "To rozwiązanie dodaje stronie interaktywności i wzmacnia markę osobistą poprzez wizualną dynamikę.",
                     ],
                     video: "Wv3fpM_ptjY",
                 },
 
                 {
-                    title: "<purple>Анімації</purple>: єдина <purple>стилістика</purple> руху",
+                    title: "<purple>Animacje</purple>: jednolity <purple>styl</purple> ruchu",
                     description: [
-                        "Анімації підібрані мінімалістичні та делікатні, щоб не перевантажувати інтерфейс і зберегти відчуття легкості",
-                        "Головний задум - створити єдиний стиль анімації, який об'єднує різні блоки сторінки та підсилює фокус на ключових смислах: ефект левітації карток з описом цільових аудиторій та цифр у блоці статистики; плавна поява тексту у секції «Етапи співпраці», що створюють відчуття послідовності",
-                        "Такі деталі роблять сайт сучасним і живим, але водночас відповідають стилю експертки, яка прагне уникати зайвого візуального шуму",
+                        "Animacje są minimalistyczne i delikatne, aby nie przeciążać interfejsu i zachować poczucie lekkości",
+                        "Główną ideą jest stworzenie jednego stylu animacji, który łączy różne bloki strony i wzmacnia koncentrację na kluczowych znaczeniach: efekt lewitacji kart opisujących docelowych odbiorców i liczby w bloku statystyk; płynne pojawianie się tekstu w sekcji «Etapy współpracy», które razem tworzą poczucie spójności",
+                        "Takie szczegóły sprawiają, że strona wygląda nowocześnie i żywo, ale jednocześnie pasuje do stylu ekspertki, która stara się unikać niepotrzebnego szumu wizualnego",
                     ],
                     video: "h3bPidDVLVQ",
                 },
                 {
-                    title: "Динамічна стрічка <purple>переваг</purple>",
+                    title: "Przewijany pasek z <purple>zaletami</purple>",
                     description: [
-                        "Секція з перевагами реалізована у вигляді автопрокручуваної стрічки: такий формат дозволяє компактно подати багато інформації, зберігаючи легкість дизайну та сучасний вигляд інтерфейсу",
-                        "Ключова ідея секції: показати, що переваги не просто перелік, а важливий елемент позиціювання експертки",
-                        "Інтерактивність полегшує сприйняття: при наведенні курсору на секцію, прокрутка зупиняється і користувач може спокійно ознайомитись з повним текстом",
+                        "Sekcja zalet została zaprojektowana jako automatycznie przewijającego się paska – taki format umożliwia przedstawienie dużej ilości informacji w kompaktowy sposób, zachowując lekkość designu i nowoczesny wygląd interfejsu",
+                        "Kluczowym celem tej sekcji jest pokazanie, że zalety to nie tylko zwykła lista, ale istotny element pozycjonowania ekspertki",
+                        "Interaktywność ułatwia odbiór treści – po najechaniu kursorem na sekcję przewijanie zatrzymuje się, co pozwala użytkownikowi spokojnie zapoznać się z pełnym tekstem",
                     ],
                     video: "zkaXTX0Ti9Q",
                 },
