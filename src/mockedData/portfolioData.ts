@@ -504,7 +504,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
-                "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
+                "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
                 "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
             ],
             deadlines: {
