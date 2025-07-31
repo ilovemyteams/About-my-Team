@@ -65,7 +65,8 @@ export type Slug =
     | "batatfarm-com"
     | "ilovemyteam-online"
     | "alex-chudov"
-    | "hoida-liudmyla";
+    | "hoida-liudmyla"
+    | "hanna-balabushko";
 
 export type Technology =
     | "typescript"
@@ -120,7 +121,9 @@ export type Technology =
     | "sharp"
     | "framer-motion"
     | "calendly"
-    | "telegram";
+    | "telegram"
+    | "react-hook-form"
+    | "zod";
 
 type DataType = {
     id: string;
@@ -148,9 +151,507 @@ export type PortfolioDataItemType = {
 export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
+            id: "8",
+            slug: "hanna-balabushko",
+            siteLink: "https://balabushko.com",
+            order: 7,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=1qQI5-QKeXJw0kKb_JipvBEZ4j6WnrQYX",
+
+            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753090338/hero_tfpey2.jpg",
+                type: "image",
+            },
+            behanceLink:
+                "https://www.behance.net/gallery/231579623/Landing-page-for-Mentor",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092172/desktop_ktkzej.jpg",
+                    width: 1000,
+                    height: 6764,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092173/mobile_acj0re.jpg",
+                    width: 433,
+                    height: 9778,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092171/static_ydrhyv.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "react",
+                "swiper",
+                "gsap",
+                "react-hook-form",
+                "zod",
+            ],
+        },
+        ua: {
+            name: "Анна Балабушко",
+            siteView: "лендінг",
+            subtitle: "Лендінг для QA менторки",
+            description: "",
+            heroTitle: "Анна Балабушко",
+            heroText: [
+                "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.",
+                "Основна мета сайту - представити Анну як експертку, яка допомагає світчерам упевнено увійти в ІТ, а фахівцям всіх рівнів - прокачати кар’єрні навички, підготуватись до технічних інтерв’ю, створити персоналізований роадмап розвитку та зростати до лідерських позицій.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "3 тижні",
+                launch: "3 тижні",
+                support: "за запитом",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Розкрити багатогранний образ експертки, яка працює не лише з початківцями та світчерами, а й з досвідченими фахівцями, що прагнуть нових можливостей для розвитку в QA",
+                        "Створити структуру лендінгу, яка навіть при «холодних» контактах максимально чітко та широко демонструє експертність і підхід Анни",
+                        "Передати через світлу кольорову гаму, візуальний стиль і тексти відчуття спокою, підтримки та впевненості, щоб сайт став не просто презентацією послуг, а відображенням особистості, стилю роботи та цінностей експертки",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Цінність",
+                    text: [
+                        "Створити мінімалістичний дизайн, що висвітлює не лише послуги, а й досвід, підхід і цінності експертки",
+                        "Донести головну ідею: допомога світчерам і тестувальникам знайти кар'єрний шлях, створення персоналізованого роадмап, підготовка до співбесід і зростання до лідерства",
+                        "Показати широку цільову аудиторію - від початківців до досвідчених, які потребують підтримки, фідбеку й структурованого розвитку",
+                        "Підкреслити формати співпраці: разові консультації, менторські програми з роадмапами й індивідуальним супроводом",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Сконцентрувати головний канал комунікації навколо форми зворотного зв’язку, а не на прямих повідомленнях у соцмережах",
+                        "Додати сучасні інтерактивні елементи та анімації, що підсилюють враження, але не перевантажують інтерфейс",
+                        "Створити структуру, яка відображає очікування замовниці: сайт має бути «про неї» та про можливість замовити індивідуальні консультації й менторські програми - як для тих, хто вже працює в QA, так і для світчерів, що роблять перші кроки в сфері ІТ",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Продумана структура сторінки: від першого екрану з акцентом на особистий бренд до блоків із переліком послуг, перевагами, статистикою та формою зворотного зв’язку",
+                                "По всьому сайту інтегровані фото експертки на фоні, що підсилюють особистий бренд через візуальну присутність та створюють ефект живого спілкування",
+                                "Дизайн сайту продуманий для трьох типів пристроїв: десктоп, планшет і мобільний телефон",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Текстура бетонної стіни у фоні головних секцій  як метафора надійного фундаменту знань і досвіду, який експертка допомагає закласти менті",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "Світла мінімалістична кольорова палітра з акцентним блакитним тоном, що викликає відчуття спокою, підтримки та довіри - ключових цінностей експертки",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Блок зі статистикою створений з фокусом на велике фото експертки та анімацію левітації цифр, що підкреслює реальний досвід і досягнення. Такий підхід демонструє експертизу й робить інформацію доступною й переконливою",
+                                "Секція з послугами побудована так, що середня картка візуально виділяється, фокусуючи увагу користувача на ключовому пакеті послуг, який експертка прагне просувати як  найбільш оптимальний за співвідношенням ціни та цінності",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Форма зворотного зв’язку як головний канал комунікації: дозволяє отримувати заявки від зацікавлених користувачів, зменшуючи потребу в прямих повідомлень у соцмережах",
+                                "Блок із посиланнями на активні соцмережі (LinkedIn, Instagram) розміщено у футері, де розкривається ще більше діяльності експертки,  водночас основна ціль користувача - заповнення форми заявки",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Навігаційне <purple>меню</purple>, що працює на <purple>бренд</purple>",
+                    description: [
+                        "Навігаційне меню реалізоване у вигляді звичної для мобільних пристроїв бургер-іконки, що зберігає фокус на експертці на першому екрані",
+                        "При наведені курсору до пункту меню реалізовано додатковий ефект зміни фотографії експертки в блоці",
+                        "Це рішення додає сайту інтерактивності та підсилює особистий бренд через візуальну динаміку",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Анімації</purple>: єдина <purple>стилістика</purple> руху",
+                    description: [
+                        "Анімації підібрані мінімалістичні та делікатні, щоб не перевантажувати інтерфейс і зберегти відчуття легкості",
+                        "Головний задум - створити єдиний стиль анімації, який об'єднує різні блоки сторінки та підсилює фокус на ключових смислах: ефект левітації карток з описом цільових аудиторій та цифр у блоці статистики; плавна поява тексту у секції «Етапи співпраці», що створюють відчуття послідовності",
+                        "Такі деталі роблять сайт сучасним і живим, але водночас відповідають стилю експертки, яка прагне уникати зайвого візуального шуму",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Динамічна стрічка <purple>переваг</purple>",
+                    description: [
+                        "Секція з перевагами реалізована у вигляді автопрокручуваної стрічки: такий формат дозволяє компактно подати багато інформації, зберігаючи легкість дизайну та сучасний вигляд інтерфейсу",
+                        "Ключова ідея секції: показати, що переваги не просто перелік, а важливий елемент позиціювання експертки",
+                        "Інтерактивність полегшує сприйняття: при наведенні курсору на секцію, прокрутка зупиняється і користувач може спокійно ознайомитись з повним текстом",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+        en: {
+            name: "Hanna Balabushko",
+            siteView: "Landing",
+            subtitle: "Landing Page for a Coach",
+            description: "",
+            heroTitle: "Hanna Balabushko",
+            heroText: [
+                "The project was created for an experienced QA mentor and Technical Team Lead with over 10 years of experience in the IT industry. Anna actively shares her expertise through one-on-one mentoring programs as well as within global initiatives such as Women in Engineering (WINE) and Women for the Future.",
+                "The main goal of the website is to present Anna as an expert who helps career switchers confidently enter the IT field and supports specialists at all levels in developing their career skills, preparing for technical interviews, creating a personalized growth roadmap, and progressing toward leadership positions.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "3 weeks",
+                launch: "3 weeks",
+                support: "on request",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal brand",
+                    text: [
+                        "To reflect the multifaceted image of an expert who works not only with beginners and career switchers but also with experienced professionals seeking new opportunities for growth in QA",
+                        "To create a landing page structure that clearly and broadly communicates Anna’s expertise and approach - even during “cold” interactions",
+                        "To convey a sense of calm, support, and confidence through a light color palette, visual style, and tone of voice, so that the website becomes not just a service presentation, but a reflection of the expert’s personality, working style, and values",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Value",
+                    text: [
+                        "Create a minimalist design that highlights not only the services, but also the expert’s experience, approach, and values",
+                        "Communicate the core idea: helping career switchers and testers find their career path, build a personalized roadmap, prepare for interviews, and grow into leadership roles",
+                        "Show the broad target audience - from beginners to experienced professionals who need support, feedback, and structured growth",
+                        "Emphasize the formats of collaboration: one-time consultations, mentoring programs with roadmaps, and individual guidance",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "Focus the main communication channel around the contact form rather than direct messages on social media",
+                        "Add modern interactive elements and animations that enhance the user experience without overloading the interface",
+                        "Build a structure that reflects the client’s expectations: the website should be “about her” and highlight the possibility to book individual consultations and mentoring programs - both for those already working in QA and for career switchers just entering the IT field",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "A well-thought-out page structure: from the hero section focused on personal branding to blocks showcasing services, benefits, statistics and a contact form",
+                                "Throughout the site, background photos of the expert are integrated to reinforce her personal brand through visual presence and create a sense of live communication",
+                                "The website design is optimized for three types of devices: desktop, tablet, and mobile",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "A concrete wall texture in the background of key sections, used as a metaphor for the solid foundation of knowledge and experience that the expert helps mentees build",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "A light minimalist color palette with an accent blue tone that evokes a sense of calm, support, and trust - the expert’s core values",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "The statistics block is designed with a focus on a large photo of the expert and animated floating numbers, highlighting her real experience and achievements. This approach showcases expertise and makes the information both accessible and convincing",
+                                "The services section is structured so that the center card visually stands out, drawing the user’s attention to the key service package the expert aims to promote as the most optimal in terms of price and value",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The contact form serves as the main communication channel: it allows the expert to receive requests from interested users, reducing the need for direct messages via social media",
+                                "A block with links to active social media accounts (LinkedIn, Instagram) is placed in the footer, where more of the expert’s activity is showcased - while the main goal for the user remains filling out the request form",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "A navigation <purple>menu</purple> that supports <purple>the brand</purple>",
+                    description: [
+                        "The navigation menu is implemented as a familiar mobile-style burger icon, keeping the focus on the expert in the hero section",
+                        "When hovering over a menu item, an additional effect changes the expert’s photo in the main block",
+                        "This solution adds interactivity to the site and strengthens the personal brand through visual dynamics",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Animations</purple>: a unified <purple>motion</purple> style",
+                    description: [
+                        "Animations are selected to be minimalistic and subtle in order to avoid overloading the interface and to maintain a sense of lightness",
+                        "The main idea is to create a consistent animation style that connects different sections of the page and emphasizes key messages - such as a floating effect on cards describing target audiences and numbers in the statistics block, smooth text appearance in the “Collaboration Stages” section - which together create a sense of continuity",
+                        "These details make the website feel modern and alive, while still aligning with the expert’s style, which aims to avoid unnecessary visual noise",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Dynamic <purple>Advantages</purple> Carousel",
+                    description: [
+                        "The advantages section is implemented as an auto-scrolling carousel - this format makes it possible to present a large amount of information in a compact way, while keeping the design light and the interface modern",
+                        "The key idea of this section is to show that these advantages are not just a list, but an essential part of the expert’s positioning",
+                        "Interactivity improves perception: when the user hovers over the section, the scrolling stops, allowing them to read the full text comfortably",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+        pl: {
+            name: "Hanna Balabushko",
+            siteView: "strona docelowa",
+            subtitle: "Strona docelowa dla mentora QA",
+            description: "",
+            heroTitle: "Hanna Balabushko",
+            heroText: [
+                "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
+                "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "3 tygodnie",
+                launch: "3 tygodnie",
+                support: "na żądanie",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Ukazać wszechstronny wizerunek ekspertki, która pracuje nie tylko z osobami początkującymi i przebranżawiającymi się, ale także z doświadczonymi specjalistami poszukującymi nowych możliwości rozwoju w obszarze QA",
+                        "Stworzyć strukturę landing page’a, która nawet przy „zimnych” kontaktach maksymalnie jasno i szeroko demonstruje ekspertyzę oraz podejście Anny",
+                        "Przekazać poprzez jasną kolorystykę, styl wizualny i teksty poczucie spokoju, wsparcia i pewności siebie — tak, by strona była nie tylko prezentacją usług, ale też odzwierciedleniem osobowości, stylu pracy i wartości ekspertki",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Wartość",
+                    text: [
+                        "Stworzyć minimalistyczny design, który podkreśla nie tylko usługi, ale także doświadczenie, podejście i wartości ekspertki",
+                        "Przekazać główną ideę: pomoc osobom zmieniającym branżę (switcherom) i testerom w odnalezieniu ścieżki kariery, tworzeniu spersonalizowanego roadmapu, przygotowaniu do rozmów kwalifikacyjnych oraz rozwoju w kierunku przywództwa",
+                        "Pokazać szeroką grupę docelową – od początkujących po doświadczonych specjalistów, którzy potrzebują wsparcia, informacji zwrotnej i uporządkowanego rozwoju",
+                        "Podkreślić formy współpracy: jednorazowe konsultacje, programy mentoringowe z mapami drogowymi i indywidualnym wsparciem",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Skoncentrować główny kanał komunikacji wokół formularza kontaktowego, a nie bezpośrednich wiadomości w mediach społecznościowych",
+                        "Dodać nowoczesne interaktywne elementy i animacje, które wzmacniają odbiór strony, ale nie przeciążają interfejsu",
+                        "Stworzyć strukturę odpowiadającą oczekiwaniom klientki: strona ma być „o niej” oraz o możliwości zamówienia indywidualnych konsultacji i programów mentoringowych – zarówno dla osób już pracujących w QA, jak i dla switcherów, którzy stawiają pierwsze kroki w branży IT",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Struktura strony jest dobrze przemyślana: od pierwszego ekranu z naciskiem na markę osobistą do bloków z listą usług, korzyści, statystyk i formularzem opinii",
+                                "Na całej stronie zintegrowano zdjęcia ekspertki w tle, które wzmacniają osobistą markę poprzez wizualną obecność i tworzą efekt żywej komunikacji",
+                                "Projekt strony został zaprojektowany dla trzech typów urządzeń: komputera stacjonarnego, tabletu i telefonu komórkowego.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Tekstura betonowej ściany w tle głównych sekcji jako metafora solidnego fundamentu wiedzy i doświadczenia, które ekspert pomaga zbudować swoim podopiecznym",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "Jasna, minimalistyczna paleta kolorów z niebieskim akcentem, który wywołuje poczucie spokoju, wsparcia i zaufania - kluczowych wartości eksperta",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Blok ze statystykami został stworzony z naciskiem na duże zdjęcie ekspertki i animację lewitujących cyfr, co podkreśla rzeczywiste doświadczenie i osiągnięcia. Takie podejście pokazuje wiedzę ekspercką i sprawia, że informacje są dostępne i przekonujące",
+                                "Sekcja z usługami jest zbudowana tak, że średnia karta wyróżnia się wizualnie, skupiając uwagę użytkownika na kluczowym pakiecie usług, który ekspertka chce promować jako najbardziej optymalny pod względem stosunku ceny do wartości",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Formularz zwrotny jako główny kanał komunikacji: pozwala na otrzymywanie zgłoszeń od zainteresowanych użytkowników, zmniejszając potrzebę bezpośrednich wiadomości w sieciach społecznościowych",
+                                "Blok z linkami do aktywnych sieci społecznościowych (LinkedIn, Instagram) jest umieszczony w stopce, co ujawnia jeszcze więcej działań eksperta, podczas gdy głównym celem użytkownika jest wypełnienie formularza zgłoszeniowego",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "<purple>Menu</purple> nawigacyjne wspierająceа <purple>markę osobistą</purple>",
+                    description: [
+                        "Menu nawigacyjne zostało zaprojektowane w formie dobrze znanej ikony hamburgera, typowej dla urządzeń mobilnych, co pozwala zachować pełne skupienie na ekspertce na pierwszym ekranie",
+                        "Po najechaniu kursorem na elementy menu, uruchamiany jest dodatkowy efekt zmiany zdjęcia ekspertki w bloku",
+                        "To rozwiązanie dodaje stronie interaktywności i wzmacnia markę osobistą poprzez wizualną dynamikę.",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Animacje</purple>: jednolity <purple>styl</purple> ruchu",
+                    description: [
+                        "Animacje są minimalistyczne i delikatne, aby nie przeciążać interfejsu i zachować poczucie lekkości",
+                        "Główną ideą jest stworzenie jednego stylu animacji, który łączy różne bloki strony i wzmacnia koncentrację na kluczowych znaczeniach: efekt lewitacji kart opisujących docelowych odbiorców i liczby w bloku statystyk; płynne pojawianie się tekstu w sekcji «Etapy współpracy», które razem tworzą poczucie spójności",
+                        "Takie szczegóły sprawiają, że strona wygląda nowocześnie i żywo, ale jednocześnie pasuje do stylu ekspertki, która stara się unikać niepotrzebnego szumu wizualnego",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Przewijany pasek z <purple>zaletami</purple>",
+                    description: [
+                        "Sekcja zalet została zaprojektowana jako automatycznie przewijającego się paska – taki format umożliwia przedstawienie dużej ilości informacji w kompaktowy sposób, zachowując lekkość designu i nowoczesny wygląd interfejsu",
+                        "Kluczowym celem tej sekcji jest pokazanie, że zalety to nie tylko zwykła lista, ale istotny element pozycjonowania ekspertki",
+                        "Interaktywność ułatwia odbiór treści – po najechaniu kursorem na sekcję przewijanie zatrzymuje się, co pozwala użytkownikowi spokojnie zapoznać się z pełnym tekstem",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+    },
+    {
+        data: {
             id: "7",
             slug: "hoida-liudmyla",
-            siteLink: "https://liudmyla-hoida-landing.netlify.app/",
+            siteLink: "https://career-coach.com.ua",
             order: 7,
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1U6IMo1By3u6_5cHZN47vkephFfI3yd5-",
@@ -2380,8 +2881,8 @@ export const portfolioData: PortfolioDataItemType[] = [
         ua: {
             name: "Смачно! на селі",
             heroTitle: "<purple>Смачно!</purple> на селі",
-            siteView: "інтернет магазин",
-            subtitle: "Інтернет магазин натуральних продуктів",
+            siteView: "інтернет-магазин",
+            subtitle: "Інтернет-магазин натуральних продуктів",
             description: "",
             heroText: [
                 '"Смачно! на селі" – це інтернет-магазин домашньої городини, розроблений для фермера з українського міста Полтава. Він вирощує овочі вже 5 років і наважився на вихід в інтернет для збільшення продажів та залучення нових клієнтів.',

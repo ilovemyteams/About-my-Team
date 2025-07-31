@@ -29,7 +29,7 @@ export const DecisionCard = ({
                                     alt="image"
                                     width={542}
                                     height={355}
-                                    className="max-h-[177px] tab:max-h-full"
+                                    className="max-h-[177px] tab:max-h-full object-cover object-top"
                                 />
                                 {"screenImage" in item && item.screenImage && (
                                     <Image
@@ -79,7 +79,7 @@ export const DecisionCard = ({
                                     alt="image"
                                     width={542}
                                     height={355}
-                                    className="max-h-[177px] tab:max-h-full"
+                                    className="max-h-[177px] tab:max-h-full object-cover object-top"
                                 />
                             </div>
                         )}
