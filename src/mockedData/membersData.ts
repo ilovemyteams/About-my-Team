@@ -317,6 +317,7 @@ export const membersData: MemberDataItemType[] = [
                 "ilovemyteam-online",
                 "protection-in-ua",
                 "alex-chudov",
+                "willow-motion",
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/Iryna_Stoliarova_sfjhav.jpg",
@@ -457,7 +458,11 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-trynkal-fullstack-developer",
-            projectId: ["ilovemyteam-online", "protection-in-ua"],
+            projectId: [
+                "ilovemyteam-online",
+                "protection-in-ua",
+                "willow-motion",
+            ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/IrynaTrynkal_o5cfzy.jpg",
             position: "Fullstack Developer",
@@ -2215,7 +2220,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oleksandr-shcherbak-qa-engineer",
-            projectId: ["ilovemyteam-online"],
+            projectId: ["ilovemyteam-online", "willow-motion"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1743177906/Alex_Shcherbak_wo0hqq.jpg",
             position: "QA Engineer",
@@ -2401,7 +2406,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "stepan-kozurak-project-project-manager",
-            projectId: ["ilovemyteam-online"],
+            projectId: ["ilovemyteam-online", "willow-motion"],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830870/Stepan_PM_crqljr.jpg",
             position: "Project Manager",
