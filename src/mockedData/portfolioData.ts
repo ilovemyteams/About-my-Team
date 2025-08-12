@@ -256,14 +256,20 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
                             ],
                         },
+                    ],
+                    slideRight: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
                         },
                     ],
-                    slideRight: [
+                },
+                {
+                    slideLeft: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
                         },
+                    ],
+                    slideRight: [
                         {
                             text: [
                                 "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
@@ -299,7 +305,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Розроблено розділ FAQ, де запитання подані у вигляді карток. При натисканні картка збільшується та відкриває відповідь, створюючи ефект фокусування на одному питанні",
+                                "FAQ у форматі інтерактивних карток. При кліку картка розгортається з відповіддю, фокусуючи увагу на одному питанні.",
                             ],
                         },
 
@@ -401,14 +407,20 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 "An integrated quick-contact system has been implemented, allowing users to easily reach Willow Motion via social media, messengers, and email",
                             ],
                         },
+                    ],
+                    slideRight: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
                         },
                     ],
-                    slideRight: [
+                },
+                {
+                    slideLeft: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
                         },
+                    ],
+                    slideRight: [
                         {
                             text: [
                                 "The services section is presented as a full-screen block featuring video editing examples for different types of projects. High-quality videos with thoughtful framing ensure a flawless appearance across all device types",
@@ -444,7 +456,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "A dedicated FAQ section has been developed, where questions are presented as cards. When clicked, a card expands to reveal the answer, creating a focused, immersive experience for each question",
+                                "FAQ presented as interactive cards. On click, a card expands to reveal the answer, focusing the user’s attention on a single question.",
                             ],
                         },
 
@@ -545,14 +557,20 @@ export const portfolioData: PortfolioDataItemType[] = [
                                 "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
                             ],
                         },
+                    ],
+                    slideRight: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
                         },
                     ],
-                    slideRight: [
+                },
+                {
+                    slideLeft: [
                         {
                             image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
                         },
+                    ],
+                    slideRight: [
                         {
                             text: [
                                 "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
