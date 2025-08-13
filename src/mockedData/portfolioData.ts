@@ -65,7 +65,9 @@ export type Slug =
     | "batatfarm-com"
     | "ilovemyteam-online"
     | "alex-chudov"
-    | "hoida-liudmyla";
+    | "hoida-liudmyla"
+    | "hanna-balabushko"
+    | "willow-motion";
 
 export type Technology =
     | "typescript"
@@ -120,7 +122,10 @@ export type Technology =
     | "sharp"
     | "framer-motion"
     | "calendly"
-    | "telegram";
+    | "telegram"
+    | "react-hook-form"
+    | "zod"
+    | "embla-carousel";
 
 type DataType = {
     id: string;
@@ -148,9 +153,1010 @@ export type PortfolioDataItemType = {
 export const portfolioData: PortfolioDataItemType[] = [
     {
         data: {
+            id: "9",
+            slug: "willow-motion",
+            siteLink: "https://willow-motion.space/",
+            order: 8,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=11AjMZ8-S4FgRdXshbxeVzsA7Wd973Ia2",
+
+            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754949327/willow-motion_kycm7m.jpg",
+                type: "image",
+            },
+            behanceLink: "",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944189/adaptivePC_asnlwr.jpg",
+                    width: 1280,
+                    height: 7412,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944189/adaptiveMob_wtosgm.jpg",
+                    width: 320,
+                    height: 7253,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944564/adaptiveState_yb9cyy.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "react",
+                "embla-carousel",
+                "gsap",
+            ],
+        },
+        ua: {
+            name: "Willow-Motion",
+            siteView: "лендінг",
+            subtitle: "Лендінг для студії з відеомонтажу",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "Лендінг для студії відеомонтажу, яка майстерно перетворює ідеї та сирі кадри на цілісні, динамічні історії.",
+                "Він виконує роль візитної картки творчого підходу та водночас є ефективною платформою для демонстрації цінності продукту й емоційного залучення глядача. Сайт дозволяє користувачам відчути унікальний стиль кожного відео, ознайомитися з портфоліо та легко зв’язатися із монтажеркою для обговорення майбутнього проєкту.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "3 тижні",
+                launch: "3 тижні",
+                support: "за запитом",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Передати професійну спеціалізацію через стиль подачі матеріалів і приклади робіт",
+                        "Підкреслити роботу з різними типами контенту - від особистих історій до комерційних проєктів",
+                        "Показати, що робота з клієнтами відбувається з урахуванням їхнього контексту та емоційної складової матеріалу",
+                        "Додати реальні відгуки клієнтів як доказ професійності та уваги до деталей.",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Створити зручну, логічно структуровану навігацію, яка дозволяє швидко знайти інформацію про послуги, формат роботи, терміни та вартість",
+                        "Розробити розділ із відповідями на ключові питання, що зазвичай виникають під час замовлення відеомонтажу",
+                        "Реалізувати двомовність сайту (українська та англійська) для роботи з клієнтами в Україні та за кордоном",
+                        "Додати прості та швидкі способи зв’язку без складних форм та забезпечити збір даних для аналітики сайту",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Візуальні підсилення",
+                    text: [
+                        "Зробити максимальний акцент на ідентичності та професіоналізмі",
+                        "Підкреслити гнучкість підходів до кожного замовника та його потреб і контекстів відео",
+                        "Сконцентрувати увагу відвідувачів сайту на самих важливих елементах та спонукати до активних дій та взаємодії",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Створено дизайн, у якому кожна секція підкреслює послуги студії: логотип у стилі монтажної іконки, графічні елементи, що нагадують плівку, відгуки оформлені у вигляді кінострічки та розміщені у слайдері, використання фото та відеоматеріалів із тематикою зйомки",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Запроваджено двомовність сайту (українська та англійська), а весь контент адаптовано під обидві версії",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "FAQ у форматі інтерактивних карток. При кліку картка розгортається з відповіддю, фокусуючи увагу на одному питанні.",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Стартове <purple>промо-відео</purple>",
+                    description: [
+                        "На старті сайту користувач бачить відео на весь екран, яке виконує роль своєрідного лоадера та одразу занурює в атмосферу бренду",
+                        "Під час прокручування сторінки ключовий текст зменшується, переміщується в інше місце, а на екрані з’являються меню, опис і кнопки",
+                        "Відео адаптовано під різні формати екранів — від моніторів до мобільних пристроїв, щоб перше враження було однаково ефектним на будь-якому девайсі",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Динамічний <purple>градієнт</purple>, що <purple>оживає</purple> при скролі",
+                    description: [
+                        "При прокручуванні сторінки плавно змінюється колір фону у вигляді градієнта, створюючи ефект живого дизайну та підсилюючи емоційне сприйняття контенту та залученість глядача",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Відео-роботи</purple>: переглядайте, перемикайте, обирайте в один клік",
+                    description: [
+                        "Секція портфоліо представлена у вигляді інтерактивних карток, які змінюють положення при виборі, дозволяючи швидко переглядати різні приклади",
+                        "Кожне відео запускається у форматі короткого демонстраційного ролика, що передає стиль та професійний підхід до відеомонтажу",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Анімаційні ефекти</purple>, що ведуть користувача до дії ",
+                    description: [
+                        "Бігучий рядок із закликом замовити послугу, який зупиняється при наведенні та відкриває форму з контактами при кліку",
+                        "Анімація тексту на кнопках при наведенні курсору для привернення уваги",
+                        "CTA-секція з чорним фоном, який при скролі звужується, фокусуючи увагу на кнопці «Зв’язатися зі мною»",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+        en: {
+            name: "Willow-Motion",
+            siteView: "Landing",
+            subtitle: "Landing Page for a Coach",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "A landing page for a video editing studio that masterfully transforms ideas and raw footage into cohesive, dynamic stories.",
+                "It serves as both a calling card for a creative approach and an effective platform for showcasing the product’s value and emotionally engaging the viewer. The website allows users to experience the unique style of each video, explore the portfolio, and easily get in touch with the editor to discuss an upcoming project.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "3 weeks",
+                launch: "3 weeks",
+                support: "on request",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal brand",
+                    text: [
+                        "Convey professional expertise through the presentation style and work examples",
+                        "Highlight experience with various types of content — from personal stories to commercial projects",
+                        "Demonstrate a client-centered approach that considers both context and the emotional core of the material",
+                        "Include real client testimonials as proof of professionalism and attention to detail",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "Create user-friendly, logically structured navigation that allows quick access to information about services, workflow, timelines, and pricing",
+                        "Develop a section with answers to key questions that typically arise when ordering video editing services",
+                        "Implement bilingual functionality (Ukrainian and English) to support clients both in Ukraine and internationally",
+                        "Add simple and fast contact options without complicated forms, while enabling data collection for site analytics",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Visual enhancements",
+                    text: [
+                        "Place strong emphasis on brand identity and professionalism",
+                        "Highlight the flexibility of the approach tailored to each client’s needs and video context",
+                        "Direct visitors’ attention to the most important elements and encourage active engagement and interaction",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "An integrated quick-contact system has been implemented, allowing users to easily reach Willow Motion via social media, messengers, and email",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The services section is presented as a full-screen block featuring video editing examples for different types of projects. High-quality videos with thoughtful framing ensure a flawless appearance across all device types",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "A design has been created where each section emphasizes the studio’s services: a logo styled as an editing icon, graphic elements reminiscent of film strips, testimonials displayed as a cinematic reel in a slider, and the use of photos and videos themed around filmmaking",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Bilingual support (Ukrainian and English) has been introduced, with all content adapted for both language versions",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "FAQ presented as interactive cards. On click, a card expands to reveal the answer, focusing the user’s attention on a single question.",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Intro <purple>promo video</purple>",
+                    description: [
+                        "At the start of the website, users see a full-screen video that acts as a branded loader, instantly immersing them in the atmosphere of the brand",
+                        "As the page scrolls, the main text shrinks and moves to a new position, while the menu, descriptions, and buttons gradually appear",
+                        "The video is fully responsive, ensuring an equally impactful first impression across all devices — from desktops to mobile screens",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Dynamic <purple>gradient</purple> that <purple>comes to life</purple> on scrolling",
+                    description: [
+                        "As users scroll down the page, the background color shifts gradually through a dynamic gradient. This creates a sense of a “living” design, enhancing emotional engagement and drawing users deeper into the content",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Video portfolio</purple>: watch, switch, choose in one click",
+                    description: [
+                        "The portfolio section is presented through interactive cards that rearrange when selected, allowing users to seamlessly browse different samples",
+                        "Each video launches as a short showcase reel, demonstrating the unique editing style and professional quality of the work",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Animation effects</purple> that guide user action",
+                    description: [
+                        "A scrolling ticker with a call to action to order a service — it pauses on hover and opens a contact form on click",
+                        "Text animations on buttons that activate on hover to attract attention",
+                        "A CTA section with a black background that narrows on scroll, drawing focus directly to the “Get in Touch” button",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+        pl: {
+            name: "Willow-Motion",
+            siteView: "strona docelowa",
+            subtitle: "Strona docelowa dla mentora QA",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
+                "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "3 tygodnie",
+                launch: "3 tygodnie",
+                support: "na żądanie",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Ukazać wszechstronny wizerunek ekspertki, która pracuje nie tylko z osobami początkującymi i przebranżawiającymi się, ale także z doświadczonymi specjalistami poszukującymi nowych możliwości rozwoju w obszarze QA",
+                        "Stworzyć strukturę landing page’a, która nawet przy „zimnych” kontaktach maksymalnie jasno i szeroko demonstruje ekspertyzę oraz podejście Anny",
+                        "Przekazać poprzez jasną kolorystykę, styl wizualny i teksty poczucie spokoju, wsparcia i pewności siebie — tak, by strona była nie tylko prezentacją usług, ale też odzwierciedleniem osobowości, stylu pracy i wartości ekspertki",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Wartość",
+                    text: [
+                        "Stworzyć minimalistyczny design, który podkreśla nie tylko usługi, ale także doświadczenie, podejście i wartości ekspertki",
+                        "Przekazać główną ideę: pomoc osobom zmieniającym branżę (switcherom) i testerom w odnalezieniu ścieżki kariery, tworzeniu spersonalizowanego roadmapu, przygotowaniu do rozmów kwalifikacyjnych oraz rozwoju w kierunku przywództwa",
+                        "Pokazać szeroką grupę docelową – od początkujących po doświadczonych specjalistów, którzy potrzebują wsparcia, informacji zwrotnej i uporządkowanego rozwoju",
+                        "Podkreślić formy współpracy: jednorazowe konsultacje, programy mentoringowe z mapami drogowymi i indywidualnym wsparciem",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Skoncentrować główny kanał komunikacji wokół formularza kontaktowego, a nie bezpośrednich wiadomości w mediach społecznościowych",
+                        "Dodać nowoczesne interaktywne elementy i animacje, które wzmacniają odbiór strony, ale nie przeciążają interfejsu",
+                        "Stworzyć strukturę odpowiadającą oczekiwaniom klientki: strona ma być „o niej” oraz o możliwości zamówienia indywidualnych konsultacji i programów mentoringowych – zarówno dla osób już pracujących w QA, jak i dla switcherów, którzy stawiają pierwsze kroki w branży IT",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Створено дизайн, у якому кожна секція підкреслює послуги студії: логотип у стилі монтажної іконки, графічні елементи, що нагадують плівку, відгуки оформлені у вигляді кінострічки та розміщені у слайдері, використання фото та відеоматеріалів із тематикою зйомки",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Запроваджено двомовність сайту (українська та англійська), а весь контент адаптовано під обидві версії",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Розроблено розділ FAQ, де запитання подані у вигляді карток. При натисканні картка збільшується та відкриває відповідь, створюючи ефект фокусування на одному питанні",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Стартове <purple>промо-відео</purple>",
+                    description: [
+                        "На старті сайту користувач бачить відео на весь екран, яке виконує роль своєрідного лоадера та одразу занурює в атмосферу бренду",
+                        "Під час прокручування сторінки ключовий текст зменшується, переміщується в інше місце, а на екрані з’являються меню, опис і кнопки",
+                        "Відео адаптовано під різні формати екранів — від моніторів до мобільних пристроїв, щоб перше враження було однаково ефектним на будь-якому девайсі",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Динамічний <purple>градієнт</purple>, що <purple>оживає</purple> при скролі",
+                    description: [
+                        "При прокручуванні сторінки плавно змінюється колір фону у вигляді градієнта, створюючи ефект живого дизайну та підсилюючи емоційне сприйняття контенту та залученість глядача",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Відео-роботи</purple>: переглядайте, перемикайте, обирайте в один клік",
+                    description: [
+                        "Секція портфоліо представлена у вигляді інтерактивних карток, які змінюють положення при виборі, дозволяючи швидко переглядати різні приклади",
+                        "Кожне відео запускається у форматі короткого демонстраційного ролика, що передає стиль та професійний підхід до відеомонтажу",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Анімаційні ефекти</purple>, що ведуть користувача до дії ",
+                    description: [
+                        "Бігучий рядок із закликом замовити послугу, який зупиняється при наведенні та відкриває форму з контактами при кліку",
+                        "Анімація тексту на кнопках при наведенні курсору для привернення уваги",
+                        "CTA-секція з чорним фоном, який при скролі звужується, фокусуючи увагу на кнопці «Зв’язатися зі мною».",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+    },
+    {
+        data: {
+            id: "8",
+            slug: "hanna-balabushko",
+            siteLink: "https://balabushko.com",
+            order: 7,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=1qQI5-QKeXJw0kKb_JipvBEZ4j6WnrQYX",
+
+            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753090338/hero_tfpey2.jpg",
+                type: "image",
+            },
+            behanceLink:
+                "https://www.behance.net/gallery/231579623/Landing-page-for-Mentor",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092172/desktop_ktkzej.jpg",
+                    width: 1000,
+                    height: 6764,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092173/mobile_acj0re.jpg",
+                    width: 433,
+                    height: 9778,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753092171/static_ydrhyv.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "react",
+                "swiper",
+                "gsap",
+                "react-hook-form",
+                "zod",
+            ],
+        },
+        ua: {
+            name: "Анна Балабушко",
+            siteView: "лендінг",
+            subtitle: "Лендінг для QA менторки",
+            description: "",
+            heroTitle: "Анна Балабушко",
+            heroText: [
+                "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.",
+                "Основна мета сайту - представити Анну як експертку, яка допомагає світчерам упевнено увійти в ІТ, а фахівцям всіх рівнів - прокачати кар’єрні навички, підготуватись до технічних інтерв’ю, створити персоналізований роадмап розвитку та зростати до лідерських позицій.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "3 тижні",
+                launch: "3 тижні",
+                support: "за запитом",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Розкрити багатогранний образ експертки, яка працює не лише з початківцями та світчерами, а й з досвідченими фахівцями, що прагнуть нових можливостей для розвитку в QA",
+                        "Створити структуру лендінгу, яка навіть при «холодних» контактах максимально чітко та широко демонструє експертність і підхід Анни",
+                        "Передати через світлу кольорову гаму, візуальний стиль і тексти відчуття спокою, підтримки та впевненості, щоб сайт став не просто презентацією послуг, а відображенням особистості, стилю роботи та цінностей експертки",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Цінність",
+                    text: [
+                        "Створити мінімалістичний дизайн, що висвітлює не лише послуги, а й досвід, підхід і цінності експертки",
+                        "Донести головну ідею: допомога світчерам і тестувальникам знайти кар'єрний шлях, створення персоналізованого роадмап, підготовка до співбесід і зростання до лідерства",
+                        "Показати широку цільову аудиторію - від початківців до досвідчених, які потребують підтримки, фідбеку й структурованого розвитку",
+                        "Підкреслити формати співпраці: разові консультації, менторські програми з роадмапами й індивідуальним супроводом",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Сконцентрувати головний канал комунікації навколо форми зворотного зв’язку, а не на прямих повідомленнях у соцмережах",
+                        "Додати сучасні інтерактивні елементи та анімації, що підсилюють враження, але не перевантажують інтерфейс",
+                        "Створити структуру, яка відображає очікування замовниці: сайт має бути «про неї» та про можливість замовити індивідуальні консультації й менторські програми - як для тих, хто вже працює в QA, так і для світчерів, що роблять перші кроки в сфері ІТ",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Продумана структура сторінки: від першого екрану з акцентом на особистий бренд до блоків із переліком послуг, перевагами, статистикою та формою зворотного зв’язку",
+                                "По всьому сайту інтегровані фото експертки на фоні, що підсилюють особистий бренд через візуальну присутність та створюють ефект живого спілкування",
+                                "Дизайн сайту продуманий для трьох типів пристроїв: десктоп, планшет і мобільний телефон",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Текстура бетонної стіни у фоні головних секцій  як метафора надійного фундаменту знань і досвіду, який експертка допомагає закласти менті",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "Світла мінімалістична кольорова палітра з акцентним блакитним тоном, що викликає відчуття спокою, підтримки та довіри - ключових цінностей експертки",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Блок зі статистикою створений з фокусом на велике фото експертки та анімацію левітації цифр, що підкреслює реальний досвід і досягнення. Такий підхід демонструє експертизу й робить інформацію доступною й переконливою",
+                                "Секція з послугами побудована так, що середня картка візуально виділяється, фокусуючи увагу користувача на ключовому пакеті послуг, який експертка прагне просувати як  найбільш оптимальний за співвідношенням ціни та цінності",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Форма зворотного зв’язку як головний канал комунікації: дозволяє отримувати заявки від зацікавлених користувачів, зменшуючи потребу в прямих повідомлень у соцмережах",
+                                "Блок із посиланнями на активні соцмережі (LinkedIn, Instagram) розміщено у футері, де розкривається ще більше діяльності експертки,  водночас основна ціль користувача - заповнення форми заявки",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Навігаційне <purple>меню</purple>, що працює на <purple>бренд</purple>",
+                    description: [
+                        "Навігаційне меню реалізоване у вигляді звичної для мобільних пристроїв бургер-іконки, що зберігає фокус на експертці на першому екрані",
+                        "При наведені курсору до пункту меню реалізовано додатковий ефект зміни фотографії експертки в блоці",
+                        "Це рішення додає сайту інтерактивності та підсилює особистий бренд через візуальну динаміку",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Анімації</purple>: єдина <purple>стилістика</purple> руху",
+                    description: [
+                        "Анімації підібрані мінімалістичні та делікатні, щоб не перевантажувати інтерфейс і зберегти відчуття легкості",
+                        "Головний задум - створити єдиний стиль анімації, який об'єднує різні блоки сторінки та підсилює фокус на ключових смислах: ефект левітації карток з описом цільових аудиторій та цифр у блоці статистики; плавна поява тексту у секції «Етапи співпраці», що створюють відчуття послідовності",
+                        "Такі деталі роблять сайт сучасним і живим, але водночас відповідають стилю експертки, яка прагне уникати зайвого візуального шуму",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Динамічна стрічка <purple>переваг</purple>",
+                    description: [
+                        "Секція з перевагами реалізована у вигляді автопрокручуваної стрічки: такий формат дозволяє компактно подати багато інформації, зберігаючи легкість дизайну та сучасний вигляд інтерфейсу",
+                        "Ключова ідея секції: показати, що переваги не просто перелік, а важливий елемент позиціювання експертки",
+                        "Інтерактивність полегшує сприйняття: при наведенні курсору на секцію, прокрутка зупиняється і користувач може спокійно ознайомитись з повним текстом",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+        en: {
+            name: "Hanna Balabushko",
+            siteView: "Landing",
+            subtitle: "Landing Page for a Coach",
+            description: "",
+            heroTitle: "Hanna Balabushko",
+            heroText: [
+                "The project was created for an experienced QA mentor and Technical Team Lead with over 10 years of experience in the IT industry. Anna actively shares her expertise through one-on-one mentoring programs as well as within global initiatives such as Women in Engineering (WINE) and Women for the Future.",
+                "The main goal of the website is to present Anna as an expert who helps career switchers confidently enter the IT field and supports specialists at all levels in developing their career skills, preparing for technical interviews, creating a personalized growth roadmap, and progressing toward leadership positions.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "3 weeks",
+                launch: "3 weeks",
+                support: "on request",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal brand",
+                    text: [
+                        "To reflect the multifaceted image of an expert who works not only with beginners and career switchers but also with experienced professionals seeking new opportunities for growth in QA",
+                        "To create a landing page structure that clearly and broadly communicates Anna’s expertise and approach - even during “cold” interactions",
+                        "To convey a sense of calm, support, and confidence through a light color palette, visual style, and tone of voice, so that the website becomes not just a service presentation, but a reflection of the expert’s personality, working style, and values",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Value",
+                    text: [
+                        "Create a minimalist design that highlights not only the services, but also the expert’s experience, approach, and values",
+                        "Communicate the core idea: helping career switchers and testers find their career path, build a personalized roadmap, prepare for interviews, and grow into leadership roles",
+                        "Show the broad target audience - from beginners to experienced professionals who need support, feedback, and structured growth",
+                        "Emphasize the formats of collaboration: one-time consultations, mentoring programs with roadmaps, and individual guidance",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "Focus the main communication channel around the contact form rather than direct messages on social media",
+                        "Add modern interactive elements and animations that enhance the user experience without overloading the interface",
+                        "Build a structure that reflects the client’s expectations: the website should be “about her” and highlight the possibility to book individual consultations and mentoring programs - both for those already working in QA and for career switchers just entering the IT field",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "A well-thought-out page structure: from the hero section focused on personal branding to blocks showcasing services, benefits, statistics and a contact form",
+                                "Throughout the site, background photos of the expert are integrated to reinforce her personal brand through visual presence and create a sense of live communication",
+                                "The website design is optimized for three types of devices: desktop, tablet, and mobile",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "A concrete wall texture in the background of key sections, used as a metaphor for the solid foundation of knowledge and experience that the expert helps mentees build",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "A light minimalist color palette with an accent blue tone that evokes a sense of calm, support, and trust - the expert’s core values",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "The statistics block is designed with a focus on a large photo of the expert and animated floating numbers, highlighting her real experience and achievements. This approach showcases expertise and makes the information both accessible and convincing",
+                                "The services section is structured so that the center card visually stands out, drawing the user’s attention to the key service package the expert aims to promote as the most optimal in terms of price and value",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The contact form serves as the main communication channel: it allows the expert to receive requests from interested users, reducing the need for direct messages via social media",
+                                "A block with links to active social media accounts (LinkedIn, Instagram) is placed in the footer, where more of the expert’s activity is showcased - while the main goal for the user remains filling out the request form",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "A navigation <purple>menu</purple> that supports <purple>the brand</purple>",
+                    description: [
+                        "The navigation menu is implemented as a familiar mobile-style burger icon, keeping the focus on the expert in the hero section",
+                        "When hovering over a menu item, an additional effect changes the expert’s photo in the main block",
+                        "This solution adds interactivity to the site and strengthens the personal brand through visual dynamics",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Animations</purple>: a unified <purple>motion</purple> style",
+                    description: [
+                        "Animations are selected to be minimalistic and subtle in order to avoid overloading the interface and to maintain a sense of lightness",
+                        "The main idea is to create a consistent animation style that connects different sections of the page and emphasizes key messages - such as a floating effect on cards describing target audiences and numbers in the statistics block, smooth text appearance in the “Collaboration Stages” section - which together create a sense of continuity",
+                        "These details make the website feel modern and alive, while still aligning with the expert’s style, which aims to avoid unnecessary visual noise",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Dynamic <purple>Advantages</purple> Carousel",
+                    description: [
+                        "The advantages section is implemented as an auto-scrolling carousel - this format makes it possible to present a large amount of information in a compact way, while keeping the design light and the interface modern",
+                        "The key idea of this section is to show that these advantages are not just a list, but an essential part of the expert’s positioning",
+                        "Interactivity improves perception: when the user hovers over the section, the scrolling stops, allowing them to read the full text comfortably",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+        pl: {
+            name: "Hanna Balabushko",
+            siteView: "strona docelowa",
+            subtitle: "Strona docelowa dla mentora QA",
+            description: "",
+            heroTitle: "Hanna Balabushko",
+            heroText: [
+                "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
+                "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "3 tygodnie",
+                launch: "3 tygodnie",
+                support: "na żądanie",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Ukazać wszechstronny wizerunek ekspertki, która pracuje nie tylko z osobami początkującymi i przebranżawiającymi się, ale także z doświadczonymi specjalistami poszukującymi nowych możliwości rozwoju w obszarze QA",
+                        "Stworzyć strukturę landing page’a, która nawet przy „zimnych” kontaktach maksymalnie jasno i szeroko demonstruje ekspertyzę oraz podejście Anny",
+                        "Przekazać poprzez jasną kolorystykę, styl wizualny i teksty poczucie spokoju, wsparcia i pewności siebie — tak, by strona była nie tylko prezentacją usług, ale też odzwierciedleniem osobowości, stylu pracy i wartości ekspertki",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Wartość",
+                    text: [
+                        "Stworzyć minimalistyczny design, który podkreśla nie tylko usługi, ale także doświadczenie, podejście i wartości ekspertki",
+                        "Przekazać główną ideę: pomoc osobom zmieniającym branżę (switcherom) i testerom w odnalezieniu ścieżki kariery, tworzeniu spersonalizowanego roadmapu, przygotowaniu do rozmów kwalifikacyjnych oraz rozwoju w kierunku przywództwa",
+                        "Pokazać szeroką grupę docelową – od początkujących po doświadczonych specjalistów, którzy potrzebują wsparcia, informacji zwrotnej i uporządkowanego rozwoju",
+                        "Podkreślić formy współpracy: jednorazowe konsultacje, programy mentoringowe z mapami drogowymi i indywidualnym wsparciem",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Skoncentrować główny kanał komunikacji wokół formularza kontaktowego, a nie bezpośrednich wiadomości w mediach społecznościowych",
+                        "Dodać nowoczesne interaktywne elementy i animacje, które wzmacniają odbiór strony, ale nie przeciążają interfejsu",
+                        "Stworzyć strukturę odpowiadającą oczekiwaniom klientki: strona ma być „o niej” oraz o możliwości zamówienia indywidualnych konsultacji i programów mentoringowych – zarówno dla osób już pracujących w QA, jak i dla switcherów, którzy stawiają pierwsze kroki w branży IT",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753097903/decision2_er7mh7.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Struktura strony jest dobrze przemyślana: od pierwszego ekranu z naciskiem na markę osobistą do bloków z listą usług, korzyści, statystyk i formularzem opinii",
+                                "Na całej stronie zintegrowano zdjęcia ekspertki w tle, które wzmacniają osobistą markę poprzez wizualną obecność i tworzą efekt żywej komunikacji",
+                                "Projekt strony został zaprojektowany dla trzech typów urządzeń: komputera stacjonarnego, tabletu i telefonu komórkowego.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Tekstura betonowej ściany w tle głównych sekcji jako metafora solidnego fundamentu wiedzy i doświadczenia, które ekspert pomaga zbudować swoim podopiecznym",
+                            ],
+                        },
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106488/decision1-1_opzxfv.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753106486/decision1_v97crl.jpg",
+                        },
+                        {
+                            text: [
+                                "Jasna, minimalistyczna paleta kolorów z niebieskim akcentem, który wywołuje poczucie spokoju, wsparcia i zaufania - kluczowych wartości eksperta",
+                            ],
+                        },
+                    ],
+                },
+
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Blok ze statystykami został stworzony z naciskiem na duże zdjęcie ekspertki i animację lewitujących cyfr, co podkreśla rzeczywiste doświadczenie i osiągnięcia. Takie podejście pokazuje wiedzę ekspercką i sprawia, że informacje są dostępne i przekonujące",
+                                "Sekcja z usługami jest zbudowana tak, że średnia karta wyróżnia się wizualnie, skupiając uwagę użytkownika na kluczowym pakiecie usług, który ekspertka chce promować jako najbardziej optymalny pod względem stosunku ceny do wartości",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753104812/decision3_sgnts4.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753105068/decision4_qev1kj.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Formularz zwrotny jako główny kanał komunikacji: pozwala na otrzymywanie zgłoszeń od zainteresowanych użytkowników, zmniejszając potrzebę bezpośrednich wiadomości w sieciach społecznościowych",
+                                "Blok z linkami do aktywnych sieci społecznościowych (LinkedIn, Instagram) jest umieszczony w stopce, co ujawnia jeszcze więcej działań eksperta, podczas gdy głównym celem użytkownika jest wypełnienie formularza zgłoszeniowego",
+                            ],
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "<purple>Menu</purple> nawigacyjne wspierająceа <purple>markę osobistą</purple>",
+                    description: [
+                        "Menu nawigacyjne zostało zaprojektowane w formie dobrze znanej ikony hamburgera, typowej dla urządzeń mobilnych, co pozwala zachować pełne skupienie na ekspertce na pierwszym ekranie",
+                        "Po najechaniu kursorem na elementy menu, uruchamiany jest dodatkowy efekt zmiany zdjęcia ekspertki w bloku",
+                        "To rozwiązanie dodaje stronie interaktywności i wzmacnia markę osobistą poprzez wizualną dynamikę.",
+                    ],
+                    video: "Wv3fpM_ptjY",
+                },
+
+                {
+                    title: "<purple>Animacje</purple>: jednolity <purple>styl</purple> ruchu",
+                    description: [
+                        "Animacje są minimalistyczne i delikatne, aby nie przeciążać interfejsu i zachować poczucie lekkości",
+                        "Główną ideą jest stworzenie jednego stylu animacji, który łączy różne bloki strony i wzmacnia koncentrację na kluczowych znaczeniach: efekt lewitacji kart opisujących docelowych odbiorców i liczby w bloku statystyk; płynne pojawianie się tekstu w sekcji «Etapy współpracy», które razem tworzą poczucie spójności",
+                        "Takie szczegóły sprawiają, że strona wygląda nowocześnie i żywo, ale jednocześnie pasuje do stylu ekspertki, która stara się unikać niepotrzebnego szumu wizualnego",
+                    ],
+                    video: "h3bPidDVLVQ",
+                },
+                {
+                    title: "Przewijany pasek z <purple>zaletami</purple>",
+                    description: [
+                        "Sekcja zalet została zaprojektowana jako automatycznie przewijającego się paska – taki format umożliwia przedstawienie dużej ilości informacji w kompaktowy sposób, zachowując lekkość designu i nowoczesny wygląd interfejsu",
+                        "Kluczowym celem tej sekcji jest pokazanie, że zalety to nie tylko zwykła lista, ale istotny element pozycjonowania ekspertki",
+                        "Interaktywność ułatwia odbiór treści – po najechaniu kursorem na sekcję przewijanie zatrzymuje się, co pozwala użytkownikowi spokojnie zapoznać się z pełnym tekstem",
+                    ],
+                    video: "zkaXTX0Ti9Q",
+                },
+            ],
+        },
+    },
+    {
+        data: {
             id: "7",
             slug: "hoida-liudmyla",
-            siteLink: "https://liudmyla-hoida-landing.netlify.app/",
+            siteLink: "https://career-coach.com.ua",
             order: 7,
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1U6IMo1By3u6_5cHZN47vkephFfI3yd5-",
@@ -2380,8 +3386,8 @@ export const portfolioData: PortfolioDataItemType[] = [
         ua: {
             name: "Смачно! на селі",
             heroTitle: "<purple>Смачно!</purple> на селі",
-            siteView: "інтернет магазин",
-            subtitle: "Інтернет магазин натуральних продуктів",
+            siteView: "інтернет-магазин",
+            subtitle: "Інтернет-магазин натуральних продуктів",
             description: "",
             heroText: [
                 '"Смачно! на селі" – це інтернет-магазин домашньої городини, розроблений для фермера з українського міста Полтава. Він вирощує овочі вже 5 років і наважився на вихід в інтернет для збільшення продажів та залучення нових клієнтів.',

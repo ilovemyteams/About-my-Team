@@ -104,6 +104,12 @@ export const defineStackName = (technology: string | undefined) => {
             return "Calendly";
         case "telegram":
             return "Telegram API";
+        case "zod":
+            return "Zod";
+        case "react-hook-form":
+            return "React Hook Form";
+        case "embla-carousel":
+            return "Embla Carousel";
         default:
             return "";
     }
