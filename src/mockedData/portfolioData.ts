@@ -1915,7 +1915,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Alex Chudov",
             siteView: "landing page",
-            subtitle: "Landing page for a book author",
+            subtitle: "Landing page for a Book Author",
             description: "",
             heroTitle: "Alex Chudov",
             heroText: [
