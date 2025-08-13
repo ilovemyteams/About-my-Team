@@ -243,7 +243,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Візуальні підсилення",
                     text: [
                         "Зробити максимальний акцент на ідентичності та професіоналізмі",
-                        "Підкреслити гнучкість підходів до кожного замовника та його потреб і контекстів відео",
+                        "Підкреслити індивідуальний підхід та увагу до потреб замовника та контексту майбутнього відео",
                         "Сконцентрувати увагу відвідувачів сайту на самих важливих елементах та спонукати до активних дій та взаємодії",
                     ],
                 },
@@ -394,7 +394,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Visual enhancements",
                     text: [
                         "Place strong emphasis on brand identity and professionalism",
-                        "Highlight the flexibility of the approach tailored to each client’s needs and video context",
+                        "Emphasize a personalized approach and attention to the client's needs and the context of the upcoming video",
                         "Direct visitors’ attention to the most important elements and encourage active engagement and interaction",
                     ],
                 },
@@ -545,7 +545,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Wizualne ulepszenia",
                     text: [
                         "Położyć maksymalny nacisk na tożsamość i profesjonalizm",
-                        "Podkreślić elastyczność podejścia do każdego klienta, jego potrzeb oraz kontekstu materiału wideo",
+                        "Podkreślić indywidualne podejście oraz uwagę na potrzeby klienta i kontekst tworzonego wideo",
                         "Skupić uwagę odwiedzających stronę na najważniejszych elementach oraz zachęcić do podejmowania aktywnych działań i interakcji",
                     ],
                 },
