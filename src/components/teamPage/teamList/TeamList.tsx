@@ -10,9 +10,9 @@ export const TeamList = () => {
     const visibleList = membersData.slice(0, 18);
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
-            <ul className="grid grid-cols-1 tab:grid-cols-2 pc:grid-cols-3 desk:grid-cols-4 gap-y-4 tab:gap-y-5 tab:gap-x-[60px] desk:gap-x-[18px]">
+            <ul className="grid grid-cols-1 tab:grid-cols-[repeat(auto-fit,minmax(320px,_1fr))] gap-y-4 tab:gap-5 desk:gap-x-3">
                 {visibleList.map(member => (
-                    <li key={member.data.id} className="group">
+                    <li key={member.data.id}>
                         <TeamCard member={member} />
                     </li>
                 ))}

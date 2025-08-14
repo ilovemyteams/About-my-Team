@@ -20,7 +20,7 @@ export const Avatar = ({ imageURL, name, status }: AvatarProps) => {
             </div>
             <div
                 className={twMerge(
-                    "size-[18px] rounded-full border-[3px] border-purple-200 absolute -right-[3%] bottom-[10%]",
+                    "size-[18px] rounded-full border-[3px] border-white-200 dark:border-purple-200 absolute -right-[3%] bottom-[10%]",
                     status === "free"
                         ? "bg-[#34C759]"
                         : status === "part"
