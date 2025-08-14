@@ -243,7 +243,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Візуальні підсилення",
                     text: [
                         "Зробити максимальний акцент на ідентичності та професіоналізмі",
-                        "Підкреслити гнучкість підходів до кожного замовника та його потреб і контекстів відео",
+                        "Підкреслити індивідуальний підхід та увагу до потреб замовника та контексту майбутнього відео",
                         "Сконцентрувати увагу відвідувачів сайту на самих важливих елементах та спонукати до активних дій та взаємодії",
                     ],
                 },
@@ -355,7 +355,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Willow-Motion",
             siteView: "Landing",
-            subtitle: "Landing Page for a Coach",
+            subtitle: "Landing page for a video editing studio",
             description: "",
             heroTitle: "Willow-Motion",
             heroText: [
@@ -394,7 +394,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     title: "Visual enhancements",
                     text: [
                         "Place strong emphasis on brand identity and professionalism",
-                        "Highlight the flexibility of the approach tailored to each client’s needs and video context",
+                        "Emphasize a personalized approach and attention to the client's needs and the context of the upcoming video",
                         "Direct visitors’ attention to the most important elements and encourage active engagement and interaction",
                     ],
                 },
@@ -506,12 +506,12 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Willow-Motion",
             siteView: "strona docelowa",
-            subtitle: "Strona docelowa dla mentora QA",
+            subtitle: "Landing page dla studia montażu wideo",
             description: "",
             heroTitle: "Willow-Motion",
             heroText: [
-                "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
-                "Głównym celem strony internetowej jest przedstawienie Anny jako eksperta, który pomaga świeżo upieczonym informatykom wejść do IT z pewnością siebie, a profesjonalistom na wszystkich poziomach poprawić swoje umiejętności zawodowe, przygotować się do rozmów technicznych, stworzyć spersonalizowaną mapę drogową rozwoju i awansować na stanowiska kierownicze.",
+                "Strona docelowa dla studia montażu wideo, które umiejętnie przekształca pomysły i surowy materiał filmowy w spójne, dynamiczne historie.",
+                "Służy jako wizytówka kreatywnego podejścia, a jednocześnie jest skuteczną platformą do demonstrowania wartości produktu i emocjonalnego zaangażowania widza. Strona internetowa pozwala użytkownikom doświadczyć unikalnego stylu każdego filmu, przeglądać portfolio i łatwo skontaktować się z montażystą w celu omówienia nadchodzącego projektu.",
             ],
             deadlines: {
                 analysis: "2 tygodnie",
@@ -524,28 +524,29 @@ export const portfolioData: PortfolioDataItemType[] = [
                     icon: "brand",
                     title: "Marka osobista",
                     text: [
-                        "Ukazać wszechstronny wizerunek ekspertki, która pracuje nie tylko z osobami początkującymi i przebranżawiającymi się, ale także z doświadczonymi specjalistami poszukującymi nowych możliwości rozwoju w obszarze QA",
-                        "Stworzyć strukturę landing page’a, która nawet przy „zimnych” kontaktach maksymalnie jasno i szeroko demonstruje ekspertyzę oraz podejście Anny",
-                        "Przekazać poprzez jasną kolorystykę, styl wizualny i teksty poczucie spokoju, wsparcia i pewności siebie — tak, by strona była nie tylko prezentacją usług, ale też odzwierciedleniem osobowości, stylu pracy i wartości ekspertki",
-                    ],
-                },
-                {
-                    icon: "light",
-                    title: "Wartość",
-                    text: [
-                        "Stworzyć minimalistyczny design, który podkreśla nie tylko usługi, ale także doświadczenie, podejście i wartości ekspertki",
-                        "Przekazać główną ideę: pomoc osobom zmieniającym branżę (switcherom) i testerom w odnalezieniu ścieżki kariery, tworzeniu spersonalizowanego roadmapu, przygotowaniu do rozmów kwalifikacyjnych oraz rozwoju w kierunku przywództwa",
-                        "Pokazać szeroką grupę docelową – od początkujących po doświadczonych specjalistów, którzy potrzebują wsparcia, informacji zwrotnej i uporządkowanego rozwoju",
-                        "Podkreślić formy współpracy: jednorazowe konsultacje, programy mentoringowe z mapami drogowymi i indywidualnym wsparciem",
+                        "Przekazać profesjonalną specjalizację poprzez styl prezentacji materiałów i przykłady realizacji",
+                        "Podkreślić pracę z różnymi typami treści – od osobistych historii po projekty komercyjne",
+                        "Pokazać, że współpraca z klientami odbywa się z uwzględnieniem ich kontekstu oraz emocjonalnego wymiaru materiału",
+                        "Dodać prawdziwe opinie klientów jako dowód profesjonalizmu i dbałości o szczegóły",
                     ],
                 },
                 {
                     icon: "functionality",
                     title: "Funkcjonalność",
                     text: [
-                        "Skoncentrować główny kanał komunikacji wokół formularza kontaktowego, a nie bezpośrednich wiadomości w mediach społecznościowych",
-                        "Dodać nowoczesne interaktywne elementy i animacje, które wzmacniają odbiór strony, ale nie przeciążają interfejsu",
-                        "Stworzyć strukturę odpowiadającą oczekiwaniom klientki: strona ma być „o niej” oraz o możliwości zamówienia indywidualnych konsultacji i programów mentoringowych – zarówno dla osób już pracujących w QA, jak i dla switcherów, którzy stawiają pierwsze kroki w branży IT",
+                        "Stworzyć wygodną, logicznie uporządkowaną nawigację, która pozwoli szybko znaleźć informacje o usługach, formacie współpracy, terminach oraz kosztach",
+                        "Opracować sekcję z odpowiedziami na kluczowe pytania, które zazwyczaj pojawiają się podczas zamawiania montażu wideo",
+                        "Wdrożyć dwujęzyczność strony (ukraiński i angielski) w celu obsługi klientów w Ukrainie i za granicą",
+                        "Dodać proste i szybkie sposoby kontaktu bez skomplikowanych formularzy oraz zapewnić gromadzenie danych do analityki strony",
+                    ],
+                },
+                {
+                    icon: "light",
+                    title: "Wizualne ulepszenia",
+                    text: [
+                        "Położyć maksymalny nacisk na tożsamość i profesjonalizm",
+                        "Podkreślić indywidualne podejście oraz uwagę na potrzeby klienta i kontekst tworzonego wideo",
+                        "Skupić uwagę odwiedzających stronę na najważniejszych elementach oraz zachęcić do podejmowania aktywnych działań i interakcji",
                     ],
                 },
             ],
@@ -554,7 +555,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideLeft: [
                         {
                             text: [
-                                "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
+                                " Wdrożyliśmy zintegrowany system szybkiej komunikacji, który umożliwia użytkownikom łatwy kontakt z Willow Motion za pośrednictwem sieci społecznościowych, komunikatorów i poczty elektronicznej",
                             ],
                         },
                     ],
@@ -573,7 +574,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideRight: [
                         {
                             text: [
-                                "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
+                                "Sekcja usług jest prezentowana jako pełnoekranowy blok z przykładami edycji wideo dla różnych typów zleceń. Wysokiej jakości wideo z przemyślanym ukierunkowaniem, które wygląda bezbłędnie na wszystkich typach urządzeń",
                             ],
                         },
                     ],
@@ -582,7 +583,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     slideLeft: [
                         {
                             text: [
-                                "Створено дизайн, у якому кожна секція підкреслює послуги студії: логотип у стилі монтажної іконки, графічні елементи, що нагадують плівку, відгуки оформлені у вигляді кінострічки та розміщені у слайдері, використання фото та відеоматеріалів із тематикою зйомки",
+                                "Opracowano projekt, w którym każda sekcja podkreśla usługi studia: logo w stylu ikony montażu, elementy graficzne przypominające taśmę filmową, opinie zaprezentowane w formie kliszy filmowej i umieszczone w sliderze, a także wykorzystanie zdjęć i materiałów wideo o tematyce filmowej",
                             ],
                         },
                     ],
@@ -599,14 +600,14 @@ export const portfolioData: PortfolioDataItemType[] = [
                         },
                         {
                             text: [
-                                "Запроваджено двомовність сайту (українська та англійська), а весь контент адаптовано під обидві версії",
+                                "Wprowadzono dwujęzyczność strony (ukraiński i angielski), a cała treść została dostosowana do obu wersji",
                             ],
                         },
                     ],
                     slideRight: [
                         {
                             text: [
-                                "Розроблено розділ FAQ, де запитання подані у вигляді карток. При натисканні картка збільшується та відкриває відповідь, створюючи ефект фокусування на одному питанні",
+                                "FAQ w formacie interaktywnych kart. Po kliknięciu karta rozwija się wraz z odpowiedzią, skupiając uwagę na jednym pytaniu",
                             ],
                         },
 
@@ -618,36 +619,36 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             titleListVideo: [
                 {
-                    title: "Стартове <purple>промо-відео</purple>",
+                    title: "Uruchomienie <purple>filmu promocyjnego</purple>",
                     description: [
-                        "На старті сайту користувач бачить відео на весь екран, яке виконує роль своєрідного лоадера та одразу занурює в атмосферу бренду",
-                        "Під час прокручування сторінки ключовий текст зменшується, переміщується в інше місце, а на екрані з’являються меню, опис і кнопки",
-                        "Відео адаптовано під різні формати екранів — від моніторів до мобільних пристроїв, щоб перше враження було однаково ефектним на будь-якому девайсі",
+                        "Na początku strony użytkownik widzi pełnoekranowe wideo, które pełni rolę ładowarki i natychmiast zanurza w atmosferę marki",
+                        "Podczas przewijania strony kluczowy tekst zmniejsza się, przenosi w inne miejsce, a na ekranie pojawiają się menu, opis i przyciski",
+                        "Wideo zostało dostosowane do różnych formatów ekranów – od monitorów po urządzenia mobilne – tak, aby pierwsze wrażenie było równie efektowne na każdym urządzeniu",
                     ],
                     video: "QoJEc-w_biA",
                 },
 
                 {
-                    title: "Динамічний <purple>градієнт</purple>, що <purple>оживає</purple> при скролі",
+                    title: "Dynamiczny <purple>gradient</purple>, który <purple>ożywa</purple> podczas przewijania",
                     description: [
-                        "При прокручуванні сторінки плавно змінюється колір фону у вигляді градієнта, створюючи ефект живого дизайну та підсилюючи емоційне сприйняття контенту та залученість глядача",
+                        "Podczas przewijania strony kolor tła zmienia się płynnie w formie gradientu, tworząc efekt żywego projektu i zwiększając emocjonalne postrzeganie treści oraz zaangażowanie widzów",
                     ],
                     video: "g2RUUjkXzXE",
                 },
                 {
-                    title: "<purple>Відео-роботи</purple>: переглядайте, перемикайте, обирайте в один клік",
+                    title: "<purple>Prace wideo</purple>: oglądaj, przełączaj, wybieraj jednym kliknięciem",
                     description: [
-                        "Секція портфоліо представлена у вигляді інтерактивних карток, які змінюють положення при виборі, дозволяючи швидко переглядати різні приклади",
-                        "Кожне відео запускається у форматі короткого демонстраційного ролика, що передає стиль та професійний підхід до відеомонтажу",
+                        "Sekcja portfolio została zaprezentowana w formie interaktywnych kart, które zmieniają położenie po ich wybraniu, umożliwiając szybkie przeglądanie różnych przykładów",
+                        "Każde wideo uruchamia się w formacie krótkiego filmu demonstracyjnego, który oddaje styl i profesjonalne podejście do montażu wideo",
                     ],
                     video: "hDsboOo7k2I",
                 },
                 {
-                    title: "<purple>Анімаційні ефекти</purple>, що ведуть користувача до дії ",
+                    title: "<purple>Efekty animacyjne</purple> prowadzące użytkownika do działania",
                     description: [
-                        "Бігучий рядок із закликом замовити послугу, який зупиняється при наведенні та відкриває форму з контактами при кліку",
-                        "Анімація тексту на кнопках при наведенні курсору для привернення уваги",
-                        "CTA-секція з чорним фоном, який при скролі звужується, фокусуючи увагу на кнопці «Зв’язатися зі мною».",
+                        "Przewijający się pasek z wezwaniem do zamówienia usługi, który zatrzymuje się po najechaniu kursorem i po kliknięciu otwiera formularz kontaktowy",
+                        "Animacja tekstu na przyciskach po najechaniu kursorem w celu przyciągnięcia uwagi",
+                        "Sekcja CTA z czarnym tłem, które podczas przewijania zwęża się, koncentrując uwagę na przycisku «Skontaktuj się ze mną»",
                     ],
                     video: "m2RohfcC3IY",
                 },
@@ -858,7 +859,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Hanna Balabushko",
             siteView: "Landing",
-            subtitle: "Landing Page for a Coach",
+            subtitle: "Landing page for a Coach",
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
@@ -1006,7 +1007,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Hanna Balabushko",
             siteView: "strona docelowa",
-            subtitle: "Strona docelowa dla mentora QA",
+            subtitle: "Landing page dla mentora QA",
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
@@ -1381,7 +1382,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Liudmyla Hoida",
             siteView: "landing page",
-            subtitle: "Landing Page for a Coach",
+            subtitle: "Landing page for a Coach",
             description: "",
             heroTitle: "Liudmyla Hoida",
             heroText: [
@@ -1554,7 +1555,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Liudmyla Hoida",
             siteView: "strona docelowa",
-            subtitle: "Strona docelowa dla coacha",
+            subtitle: "Landing page dla coacha",
             description: "",
             heroTitle: "Liudmyla Hoida",
             heroText: [
@@ -1914,7 +1915,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Alex Chudov",
             siteView: "landing page",
-            subtitle: "Landing Page for a book author",
+            subtitle: "Landing page for a Book Author",
             description: "",
             heroTitle: "Alex Chudov",
             heroText: [
@@ -2326,7 +2327,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Victoriia Zabara",
             siteView: "landing page",
-            subtitle: "Landing Page for an IT Recruiter",
+            subtitle: "Landing page for an IT Recruiter",
             description: "",
             heroTitle: "Victoriia Zabara",
             heroText: [
