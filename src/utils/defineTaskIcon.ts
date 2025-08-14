@@ -5,6 +5,7 @@ import { IconHeart } from "../components/shared/Icons/IconHeart";
 import { IconLight } from "../components/shared/Icons/IconLight";
 import { IconPeople } from "../components/shared/Icons/IconPeople";
 import { IconPersonalBrand } from "../components/shared/Icons/IconPersonalBrand";
+import { IconVisual } from "../components/shared/Icons/IconVisual";
 
 export const defineTaskIcon = (name: string | undefined) => {
     switch (name) {
@@ -20,6 +21,8 @@ export const defineTaskIcon = (name: string | undefined) => {
             return IconFunctionality;
         case "product":
             return IconAboutProduct;
+        case "visual":
+            return IconVisual;
         default:
             return IconHeart;
     }

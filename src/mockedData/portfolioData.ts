@@ -239,7 +239,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
                 {
-                    icon: "light",
+                    icon: "visual",
                     title: "Візуальні підсилення",
                     text: [
                         "Зробити максимальний акцент на ідентичності та професіоналізмі",
@@ -390,7 +390,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
                 {
-                    icon: "light",
+                    icon: "visual",
                     title: "Visual enhancements",
                     text: [
                         "Place strong emphasis on brand identity and professionalism",
@@ -541,7 +541,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                     ],
                 },
                 {
-                    icon: "light",
+                    icon: "visual",
                     title: "Wizualne ulepszenia",
                     text: [
                         "Położyć maksymalny nacisk na tożsamość i profesjonalizm",
