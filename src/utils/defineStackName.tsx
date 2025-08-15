@@ -108,6 +108,8 @@ export const defineStackName = (technology: string | undefined) => {
             return "Zod";
         case "react-hook-form":
             return "React Hook Form";
+        case "embla-carousel":
+            return "Embla Carousel";
         default:
             return "";
     }

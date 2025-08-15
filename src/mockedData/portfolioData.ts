@@ -66,7 +66,8 @@ export type Slug =
     | "ilovemyteam-online"
     | "alex-chudov"
     | "hoida-liudmyla"
-    | "hanna-balabushko";
+    | "hanna-balabushko"
+    | "willow-motion";
 
 export type Technology =
     | "typescript"
@@ -123,7 +124,8 @@ export type Technology =
     | "calendly"
     | "telegram"
     | "react-hook-form"
-    | "zod";
+    | "zod"
+    | "embla-carousel";
 
 type DataType = {
     id: string;
@@ -149,6 +151,510 @@ export type PortfolioDataItemType = {
 };
 
 export const portfolioData: PortfolioDataItemType[] = [
+    {
+        data: {
+            id: "9",
+            slug: "willow-motion",
+            siteLink: "https://willow-motion.space/",
+            order: 8,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=11AjMZ8-S4FgRdXshbxeVzsA7Wd973Ia2",
+
+            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            mediaForHero: {
+                url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754949327/willow-motion_kycm7m.jpg",
+                type: "image",
+            },
+            behanceLink: "",
+            implementations: [
+                "Idea",
+                "Design",
+                "Development",
+                "Delivery",
+                "Support",
+            ],
+            category: "landings",
+            adaptive: {
+                imageDesktop: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944189/adaptivePC_asnlwr.jpg",
+                    width: 1280,
+                    height: 7412,
+                },
+
+                imageMobile: {
+                    url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944189/adaptiveMob_wtosgm.jpg",
+                    width: 320,
+                    height: 7253,
+                },
+
+                imageMobileStatic:
+                    "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754944564/adaptiveState_yb9cyy.jpg",
+            },
+            technologies: [
+                "figma",
+                "photoshop",
+                "astrojs",
+                "typescript",
+                "tailwind",
+                "react",
+                "embla-carousel",
+                "gsap",
+            ],
+        },
+        ua: {
+            name: "Willow-Motion",
+            siteView: "лендінг",
+            subtitle: "Лендінг для студії з відеомонтажу",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "Лендінг для студії відеомонтажу, яка майстерно перетворює ідеї та сирі кадри на цілісні, динамічні історії.",
+                "Він виконує роль візитної картки творчого підходу та водночас є ефективною платформою для демонстрації цінності продукту й емоційного залучення глядача. Сайт дозволяє користувачам відчути унікальний стиль кожного відео, ознайомитися з портфоліо та легко зв’язатися із монтажеркою для обговорення майбутнього проєкту.",
+            ],
+            deadlines: {
+                analysis: "2 тижні",
+                design: "3 тижні",
+                launch: "3 тижні",
+                support: "за запитом",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Особистий бренд",
+                    text: [
+                        "Передати професійну спеціалізацію через стиль подачі матеріалів і приклади робіт",
+                        "Підкреслити роботу з різними типами контенту - від особистих історій до комерційних проєктів",
+                        "Показати, що робота з клієнтами відбувається з урахуванням їхнього контексту та емоційної складової матеріалу",
+                        "Додати реальні відгуки клієнтів як доказ професійності та уваги до деталей.",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Функціональність",
+                    text: [
+                        "Створити зручну, логічно структуровану навігацію, яка дозволяє швидко знайти інформацію про послуги, формат роботи, терміни та вартість",
+                        "Розробити розділ із відповідями на ключові питання, що зазвичай виникають під час замовлення відеомонтажу",
+                        "Реалізувати двомовність сайту (українська та англійська) для роботи з клієнтами в Україні та за кордоном",
+                        "Додати прості та швидкі способи зв’язку без складних форм та забезпечити збір даних для аналітики сайту",
+                    ],
+                },
+                {
+                    icon: "visual",
+                    title: "Візуальні підсилення",
+                    text: [
+                        "Зробити максимальний акцент на ідентичності та професіоналізмі",
+                        "Підкреслити індивідуальний підхід та увагу до потреб замовника та контексту майбутнього відео",
+                        "Сконцентрувати увагу відвідувачів сайту на самих важливих елементах та спонукати до активних дій та взаємодії",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Реалізовано інтегровану систему швидкого зв’язку, що дозволяє користувачам легко контактувати з Willow Motion через соціальні мережі, месенджери та електронну пошту",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Секція з послугами представлена у форматі повноекранного блоку з прикладами відео монтажу для різних типів замовлень. Якісне відео з продуманим фокусом, яке виглядає бездоганно на всіх типах девайсів",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Створено дизайн, у якому кожна секція підкреслює послуги студії: логотип у стилі монтажної іконки, графічні елементи, що нагадують плівку, відгуки оформлені у вигляді кінострічки та розміщені у слайдері, використання фото та відеоматеріалів із тематикою зйомки",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Запроваджено двомовність сайту (українська та англійська), а весь контент адаптовано під обидві версії",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "FAQ у форматі інтерактивних карток. При кліку картка розгортається з відповіддю, фокусуючи увагу на одному питанні.",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Стартове <purple>промо-відео</purple>",
+                    description: [
+                        "На старті сайту користувач бачить відео на весь екран, яке виконує роль своєрідного лоадера та одразу занурює в атмосферу бренду",
+                        "Під час прокручування сторінки ключовий текст зменшується, переміщується в інше місце, а на екрані з’являються меню, опис і кнопки",
+                        "Відео адаптовано під різні формати екранів — від моніторів до мобільних пристроїв, щоб перше враження було однаково ефектним на будь-якому девайсі",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Динамічний <purple>градієнт</purple>, що <purple>оживає</purple> при скролі",
+                    description: [
+                        "При прокручуванні сторінки плавно змінюється колір фону у вигляді градієнта, створюючи ефект живого дизайну та підсилюючи емоційне сприйняття контенту та залученість глядача",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Відео-роботи</purple>: переглядайте, перемикайте, обирайте в один клік",
+                    description: [
+                        "Секція портфоліо представлена у вигляді інтерактивних карток, які змінюють положення при виборі, дозволяючи швидко переглядати різні приклади",
+                        "Кожне відео запускається у форматі короткого демонстраційного ролика, що передає стиль та професійний підхід до відеомонтажу",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Анімаційні ефекти</purple>, що ведуть користувача до дії ",
+                    description: [
+                        "Бігучий рядок із закликом замовити послугу, який зупиняється при наведенні та відкриває форму з контактами при кліку",
+                        "Анімація тексту на кнопках при наведенні курсору для привернення уваги",
+                        "CTA-секція з чорним фоном, який при скролі звужується, фокусуючи увагу на кнопці «Зв’язатися зі мною»",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+        en: {
+            name: "Willow-Motion",
+            siteView: "Landing",
+            subtitle: "Landing page for a video editing studio",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "A landing page for a video editing studio that masterfully transforms ideas and raw footage into cohesive, dynamic stories.",
+                "It serves as both a calling card for a creative approach and an effective platform for showcasing the product’s value and emotionally engaging the viewer. The website allows users to experience the unique style of each video, explore the portfolio, and easily get in touch with the editor to discuss an upcoming project.",
+            ],
+            deadlines: {
+                analysis: "2 weeks",
+                design: "3 weeks",
+                launch: "3 weeks",
+                support: "on request",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Personal brand",
+                    text: [
+                        "Convey professional expertise through the presentation style and work examples",
+                        "Highlight experience with various types of content — from personal stories to commercial projects",
+                        "Demonstrate a client-centered approach that considers both context and the emotional core of the material",
+                        "Include real client testimonials as proof of professionalism and attention to detail",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Functionality",
+                    text: [
+                        "Create user-friendly, logically structured navigation that allows quick access to information about services, workflow, timelines, and pricing",
+                        "Develop a section with answers to key questions that typically arise when ordering video editing services",
+                        "Implement bilingual functionality (Ukrainian and English) to support clients both in Ukraine and internationally",
+                        "Add simple and fast contact options without complicated forms, while enabling data collection for site analytics",
+                    ],
+                },
+                {
+                    icon: "visual",
+                    title: "Visual enhancements",
+                    text: [
+                        "Place strong emphasis on brand identity and professionalism",
+                        "Emphasize a personalized approach and attention to the client's needs and the context of the upcoming video",
+                        "Direct visitors’ attention to the most important elements and encourage active engagement and interaction",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "An integrated quick-contact system has been implemented, allowing users to easily reach Willow Motion via social media, messengers, and email",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "The services section is presented as a full-screen block featuring video editing examples for different types of projects. High-quality videos with thoughtful framing ensure a flawless appearance across all device types",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "A design has been created where each section emphasizes the studio’s services: a logo styled as an editing icon, graphic elements reminiscent of film strips, testimonials displayed as a cinematic reel in a slider, and the use of photos and videos themed around filmmaking",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Bilingual support (Ukrainian and English) has been introduced, with all content adapted for both language versions",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "FAQ presented as interactive cards. On click, a card expands to reveal the answer, focusing the user’s attention on a single question.",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Intro <purple>promo video</purple>",
+                    description: [
+                        "At the start of the website, users see a full-screen video that acts as a branded loader, instantly immersing them in the atmosphere of the brand",
+                        "As the page scrolls, the main text shrinks and moves to a new position, while the menu, descriptions, and buttons gradually appear",
+                        "The video is fully responsive, ensuring an equally impactful first impression across all devices — from desktops to mobile screens",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Dynamic <purple>gradient</purple> that <purple>comes to life</purple> on scrolling",
+                    description: [
+                        "As users scroll down the page, the background color shifts gradually through a dynamic gradient. This creates a sense of a “living” design, enhancing emotional engagement and drawing users deeper into the content",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Video portfolio</purple>: watch, switch, choose in one click",
+                    description: [
+                        "The portfolio section is presented through interactive cards that rearrange when selected, allowing users to seamlessly browse different samples",
+                        "Each video launches as a short showcase reel, demonstrating the unique editing style and professional quality of the work",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Animation effects</purple> that guide user action",
+                    description: [
+                        "A scrolling ticker with a call to action to order a service — it pauses on hover and opens a contact form on click",
+                        "Text animations on buttons that activate on hover to attract attention",
+                        "A CTA section with a black background that narrows on scroll, drawing focus directly to the “Get in Touch” button",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+        pl: {
+            name: "Willow-Motion",
+            siteView: "strona docelowa",
+            subtitle: "Landing page dla studia montażu wideo",
+            description: "",
+            heroTitle: "Willow-Motion",
+            heroText: [
+                "Strona docelowa dla studia montażu wideo, które umiejętnie przekształca pomysły i surowy materiał filmowy w spójne, dynamiczne historie.",
+                "Służy jako wizytówka kreatywnego podejścia, a jednocześnie jest skuteczną platformą do demonstrowania wartości produktu i emocjonalnego zaangażowania widza. Strona internetowa pozwala użytkownikom doświadczyć unikalnego stylu każdego filmu, przeglądać portfolio i łatwo skontaktować się z montażystą w celu omówienia nadchodzącego projektu.",
+            ],
+            deadlines: {
+                analysis: "2 tygodnie",
+                design: "3 tygodnie",
+                launch: "3 tygodnie",
+                support: "na żądanie",
+            },
+            tasks: [
+                {
+                    icon: "brand",
+                    title: "Marka osobista",
+                    text: [
+                        "Przekazać profesjonalną specjalizację poprzez styl prezentacji materiałów i przykłady realizacji",
+                        "Podkreślić pracę z różnymi typami treści – od osobistych historii po projekty komercyjne",
+                        "Pokazać, że współpraca z klientami odbywa się z uwzględnieniem ich kontekstu oraz emocjonalnego wymiaru materiału",
+                        "Dodać prawdziwe opinie klientów jako dowód profesjonalizmu i dbałości o szczegóły",
+                    ],
+                },
+                {
+                    icon: "functionality",
+                    title: "Funkcjonalność",
+                    text: [
+                        "Stworzyć wygodną, logicznie uporządkowaną nawigację, która pozwoli szybko znaleźć informacje o usługach, formacie współpracy, terminach oraz kosztach",
+                        "Opracować sekcję z odpowiedziami na kluczowe pytania, które zazwyczaj pojawiają się podczas zamawiania montażu wideo",
+                        "Wdrożyć dwujęzyczność strony (ukraiński i angielski) w celu obsługi klientów w Ukrainie i za granicą",
+                        "Dodać proste i szybkie sposoby kontaktu bez skomplikowanych formularzy oraz zapewnić gromadzenie danych do analityki strony",
+                    ],
+                },
+                {
+                    icon: "visual",
+                    title: "Wizualne ulepszenia",
+                    text: [
+                        "Położyć maksymalny nacisk na tożsamość i profesjonalizm",
+                        "Podkreślić indywidualne podejście oraz uwagę na potrzeby klienta i kontekst tworzonego wideo",
+                        "Skupić uwagę odwiedzających stronę na najważniejszych elementach oraz zachęcić do podejmowania aktywnych działań i interakcji",
+                    ],
+                },
+            ],
+            decision: [
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                " Wdrożyliśmy zintegrowany system szybkiej komunikacji, który umożliwia użytkownikom łatwy kontakt z Willow Motion za pośrednictwem sieci społecznościowych, komunikatorów i poczty elektronicznej",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755025792/decision1_ptxmnm.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755026926/decision6_r0pe7k.jpg",
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "Sekcja usług jest prezentowana jako pełnoekranowy blok z przykładami edycji wideo dla różnych typów zleceń. Wysokiej jakości wideo z przemyślanym ukierunkowaniem, które wygląda bezbłędnie na wszystkich typach urządzeń",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            text: [
+                                "Opracowano projekt, w którym każda sekcja podkreśla usługi studia: logo w stylu ikony montażu, elementy graficzne przypominające taśmę filmową, opinie zaprezentowane w formie kliszy filmowej i umieszczone w sliderze, a także wykorzystanie zdjęć i materiałów wideo o tematyce filmowej",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029574/decision3_fw4xwc.jpg",
+                        },
+                    ],
+                },
+                {
+                    slideLeft: [
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755028441/decision2_hlbptm.jpg",
+                        },
+                        {
+                            text: [
+                                "Wprowadzono dwujęzyczność strony (ukraiński i angielski), a cała treść została dostosowana do obu wersji",
+                            ],
+                        },
+                    ],
+                    slideRight: [
+                        {
+                            text: [
+                                "FAQ w formacie interaktywnych kart. Po kliknięciu karta rozwija się wraz z odpowiedzią, skupiając uwagę na jednym pytaniu",
+                            ],
+                        },
+
+                        {
+                            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1755029787/decision4_u1sokg.jpg",
+                        },
+                    ],
+                },
+            ],
+            titleListVideo: [
+                {
+                    title: "Uruchomienie <purple>filmu promocyjnego</purple>",
+                    description: [
+                        "Na początku strony użytkownik widzi pełnoekranowe wideo, które pełni rolę ładowarki i natychmiast zanurza w atmosferę marki",
+                        "Podczas przewijania strony kluczowy tekst zmniejsza się, przenosi w inne miejsce, a na ekranie pojawiają się menu, opis i przyciski",
+                        "Wideo zostało dostosowane do różnych formatów ekranów – od monitorów po urządzenia mobilne – tak, aby pierwsze wrażenie było równie efektowne na każdym urządzeniu",
+                    ],
+                    video: "QoJEc-w_biA",
+                },
+
+                {
+                    title: "Dynamiczny <purple>gradient</purple>, który <purple>ożywa</purple> podczas przewijania",
+                    description: [
+                        "Podczas przewijania strony kolor tła zmienia się płynnie w formie gradientu, tworząc efekt żywego projektu i zwiększając emocjonalne postrzeganie treści oraz zaangażowanie widzów",
+                    ],
+                    video: "g2RUUjkXzXE",
+                },
+                {
+                    title: "<purple>Prace wideo</purple>: oglądaj, przełączaj, wybieraj jednym kliknięciem",
+                    description: [
+                        "Sekcja portfolio została zaprezentowana w formie interaktywnych kart, które zmieniają położenie po ich wybraniu, umożliwiając szybkie przeglądanie różnych przykładów",
+                        "Każde wideo uruchamia się w formacie krótkiego filmu demonstracyjnego, który oddaje styl i profesjonalne podejście do montażu wideo",
+                    ],
+                    video: "hDsboOo7k2I",
+                },
+                {
+                    title: "<purple>Efekty animacyjne</purple> prowadzące użytkownika do działania",
+                    description: [
+                        "Przewijający się pasek z wezwaniem do zamówienia usługi, który zatrzymuje się po najechaniu kursorem i po kliknięciu otwiera formularz kontaktowy",
+                        "Animacja tekstu na przyciskach po najechaniu kursorem w celu przyciągnięcia uwagi",
+                        "Sekcja CTA z czarnym tłem, które podczas przewijania zwęża się, koncentrując uwagę na przycisku «Skontaktuj się ze mną»",
+                    ],
+                    video: "m2RohfcC3IY",
+                },
+            ],
+        },
+    },
     {
         data: {
             id: "8",
@@ -353,7 +859,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Hanna Balabushko",
             siteView: "Landing",
-            subtitle: "Landing Page for a Coach",
+            subtitle: "Landing page for a Coach",
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
@@ -501,7 +1007,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Hanna Balabushko",
             siteView: "strona docelowa",
-            subtitle: "Strona docelowa dla mentora QA",
+            subtitle: "Landing page dla mentora QA",
             description: "",
             heroTitle: "Hanna Balabushko",
             heroText: [
@@ -876,7 +1382,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Liudmyla Hoida",
             siteView: "landing page",
-            subtitle: "Landing Page for a Coach",
+            subtitle: "Landing page for a Coach",
             description: "",
             heroTitle: "Liudmyla Hoida",
             heroText: [
@@ -1049,7 +1555,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         pl: {
             name: "Liudmyla Hoida",
             siteView: "strona docelowa",
-            subtitle: "Strona docelowa dla coacha",
+            subtitle: "Landing page dla coacha",
             description: "",
             heroTitle: "Liudmyla Hoida",
             heroText: [
@@ -1409,7 +1915,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Alex Chudov",
             siteView: "landing page",
-            subtitle: "Landing Page for a book author",
+            subtitle: "Landing page for a Book Author",
             description: "",
             heroTitle: "Alex Chudov",
             heroText: [
@@ -1821,7 +2327,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         en: {
             name: "Victoriia Zabara",
             siteView: "landing page",
-            subtitle: "Landing Page for an IT Recruiter",
+            subtitle: "Landing page for an IT Recruiter",
             description: "",
             heroTitle: "Victoriia Zabara",
             heroText: [

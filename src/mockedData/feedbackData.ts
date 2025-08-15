@@ -221,4 +221,38 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Na pierwsze spotkanie z zespołem przyszłam bez jasnego zrozumienia, czego dokładnie chcę. Ale Susanna Salata zadawała bardzo trafne pytania i stworzyła przestrzeń, w której stało się dla mnie jaśniejsze, co chcę powiedzieć o sobie i dla kogo to robię. A kiedy po tej rozmowie zobaczyłam pierwsze warianty designu — byłam szczerze zachwycona. Dziewczyny pomogły mi zobaczyć i przedstawić siebie w formacie, z którym czuję się komfortowo. Jeśli Ty, tak jak ja kiedyś, odkładasz tworzenie strony internetowej, bo nie wiesz, od czego zacząć – szczerze polecam Ci zespół 'i love my team', który potrafi Was wyczuć i zrozumieć.",
         },
     },
+    {
+        data: {
+            id: "07",
+            image: "https://drive.google.com/uc?export=view&id=17gfz70WBX_uoL0Sp_xz8PbwxvbyPlImx",
+            siteLink: "https://balabushko.com",
+            slug: "hanna-balabushko",
+            feedbackLink:
+                "https://www.linkedin.com/posts/anna-balabushko_qa-менторство-та-підтримка-лідерів-activity-7356931958112739329-gkkh?utm_source=share&utm_medium=member_android&rcm=ACoAABeq2koBgxsJlDrPNdqlrtKYrDg7EYdDKTU",
+        },
+        ua: {
+            siteName: "Анна Балабушко",
+            siteView: "лендінг",
+            reviewer: "Анна Балабушко",
+            reviewerRole: "QA ментор",
+            feedbackText:
+                "Дякую команді i love my team за створення лендінгу, який справді відображає моє бачення. Особлива подяка дизайнерці — разом ми пройшли шлях від ідей до чіткої й привабливої візуалізації. Були моменти, де хотілося більше залучення під час розробки, але в підсумку я отримала сайт, який мені не просто “ок”, а справді мій. На сайті можна легко замовити менторську консультацію — я працюю з людьми, які: • починають свій шлях у QA та хочуть впевнено стартувати, а також почати автоматизовувати; • переходять у лідерські ролі (вперше або з певними сумнівами); • вже керують командами і прагнуть більше системності та впевненості; • або потребують підтримки під час кар’єрних змін.",
+        },
+        en: {
+            siteName: "Hanna Balabushko",
+            siteView: "landing",
+            reviewer: "Hanna Balabushko",
+            reviewerRole: "QA mentor",
+            feedbackText:
+                "Big thanks to the i love my team crew for creating a landing page that truly reflects my vision. Special appreciation goes to the designer — together, we went from rough ideas to a clear and attractive visual. There were moments where I wished for more engagement during development, but in the end, I received a website that isn’t just “okay” — it genuinely feels like me. On the site, it’s easy to book a mentoring session — I work with people who: are just starting their journey in QA and want a confident launch, including diving into automation; are transitioning into leadership roles (for the first time or with some doubts); are already leading teams but want more structure and confidence; or need support during career transitions.",
+        },
+        pl: {
+            siteName: "Hanna Balabushko",
+            siteView: "strona docelowa",
+            reviewer: "Hanna Balabushko",
+            reviewerRole: "QA mentor",
+            feedbackText:
+                "Dziękuję zespołowi i love my team za stworzenie strony docelowej, która naprawdę odzwierciedla moją wizję. Szczególne podziękowania dla projektantki — razem przeszliśmy drogę od pomysłów do jasnej i atrakcyjnej wizualizacji. Były momenty, kiedy chciałam większego zaangażowania w trakcie tworzenia, ale ostatecznie otrzymałam stronę, która nie jest po prostu „ok”, tylko naprawdę moja. Na stronie można łatwo zamówić konsultację mentorską — pracuję z osobami, które: • rozpoczynają swoją przygodę z QA i chcą pewnie wystartować, a także zacząć automatyzować; • przechodzą do ról przywódczych (po raz pierwszy lub z pewnymi wątpliwościami); • już zarządzają zespołami i dążą do większej systematyczności i pewności siebie; • lub potrzebują wsparcia podczas zmian w karierze.",
+        },
+    },
 ];
