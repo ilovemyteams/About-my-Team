@@ -42,12 +42,15 @@ export const Pagination = ({ total, currentPage }: PaginationProps) => {
 
     const pages = getPageNumbers();
 
+    const buttonArrowStyle =
+        "flex justify-center items-center w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
+
     return (
         <div className="flex items-center justify-center gap-2 mb-[80px] tab:mb-[100px] pc:mb-[100px] desk:mb-[120px]">
             <button
                 onClick={() => handlePageChange(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="flex justify-center items-center w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent"
+                className={buttonArrowStyle}
             >
                 <IconGoBack className="w-7 h-8" />
             </button>
@@ -78,7 +81,7 @@ export const Pagination = ({ total, currentPage }: PaginationProps) => {
             <button
                 onClick={() => handlePageChange(currentPage + 1)}
                 disabled={currentPage === total}
-                className="flex justify-center items-center w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent"
+                className={buttonArrowStyle}
             >
                 <IconGoBack className="rotate-180 w-7 h-8" />
             </button>
