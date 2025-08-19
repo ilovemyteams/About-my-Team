@@ -13,6 +13,10 @@ export async function generateMetadata({
     });
 }
 
-export default function Services() {
-    return <TeamPage />;
+export default function Members({
+    searchParams,
+}: {
+    searchParams: { page?: string; categoryName?: string };
+}) {
+    return <TeamPage searchParams={searchParams} />;
 }
