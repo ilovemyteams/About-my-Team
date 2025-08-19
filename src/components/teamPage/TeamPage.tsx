@@ -3,11 +3,15 @@ import React from "react";
 import { TeamHeader } from "./header/TeamHeader";
 import { TeamList } from "./teamList/TeamList";
 
-export const TeamPage = () => {
+export const TeamPage = ({
+    searchParams,
+}: {
+    searchParams: { page?: string; categoryName?: string };
+}) => {
     return (
         <div>
             <TeamHeader />
-            <TeamList />
+            <TeamList searchParams={searchParams} />
         </div>
     );
 };

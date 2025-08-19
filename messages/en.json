@@ -387,6 +387,7 @@
         "description": "Познайомтеся з нашими талановитими членами команди та знайдіть спеціалістів для вашого проєкту",
         "compareBtnDesc": "Додати до списку порівняння",
         "wishBtnDesc": "Додати до обраних учасників",
-        "status": "Статус учасника"
+        "status": "Статус учасника",
+        "membersCount": "{count, plural, one {from # member} other {from # members}}"
     }
 }
