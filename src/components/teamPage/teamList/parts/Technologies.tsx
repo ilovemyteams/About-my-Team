@@ -52,7 +52,7 @@ export const Technologies = ({ tools }: TechnologiesProps) => {
     };
 
     return (
-        <div className="w-full flex tab:justify-center" ref={containerRef}>
+        <div className="w-full flex justify-center" ref={containerRef}>
             <ul className="flex gap-1 ">
                 {tools.map((item, index) => (
                     <li
@@ -68,12 +68,14 @@ export const Technologies = ({ tools }: TechnologiesProps) => {
                                 : ""
                         )}
                     >
-                        <span className="text-xs text-nowrap">{item}</span>
+                        <span className="text-xs tab:text-sm text-nowrap">
+                            {item}
+                        </span>
                     </li>
                 ))}
                 {visibleCount < tools.length && (
                     <li className="border-[1px] border-purple-strokeLight dark:border-purple-stroke h-[20px] px-2 flex items-center">
-                        <span className="text-xs text-nowrap">
+                        <span className="text-xs tab:text-sm text-nowrap">
                             +{tools.length - visibleCount}
                         </span>
                     </li>

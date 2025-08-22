@@ -382,13 +382,14 @@
         "descriptionSEO": "Publiczna oferta i love my team — umowa na świadczenie usług z zakresu rozwoju cyfrowego, analityki i projektowania. Sprawdzone warunki, akceptacja online."
     },
     "MemberPage": {
-        "titleSEO": "Команда",
+        "titleSEO": "Zespół",
         "descriptionSEO": "Опис на сторінку.",
-        "title": "Наша <purple>команда</purple>",
-        "description": "Познайомтеся з нашими талановитими членами команди та знайдіть спеціалістів для вашого проєкту",
-        "compareBtnDesc": "Додати до списку порівняння",
-        "wishBtnDesc": "Додати до обраних учасників",
-        "status": "Статус учасника",
-        "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}"
+        "title": "Nasz <purple>zespół</purple>",
+        "description": "Poznaj naszych utalentowanych członków zespołu i znajdź specjalistów do swojego projektu",
+        "compareBtnDesc": "Dodaj do listy porównawczej",
+        "wishBtnDesc": "Dodaj do ulubionych",
+        "status": "Status członka",
+        "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}",
+        "seeProfile": "zobacz profil"
     }
 }

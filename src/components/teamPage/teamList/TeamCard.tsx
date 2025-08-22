@@ -34,9 +34,9 @@ type DomainsType =
 const domainExample: DomainsType[] = [
     "sales",
     "ecommerce",
+    "legaltech",
     "dronetech",
     "healthtech",
-    "legaltech",
 ];
 
 const generateRandomStatus = (): StatusType => {
@@ -85,9 +85,11 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                         </p>
                     </div>
                 </div>
-                <p className="text-start tab:text-center text-sm grow w-full">
-                    {langData.about}
-                </p>
+                <div className="h-[40px] tab:h-[44px] w-full">
+                    <p className="text-center text-sm tab:text-base grow w-full line-clamp-2">
+                        {langData.about}
+                    </p>
+                </div>
 
                 <Statistics
                     projectsCount={projectsExperience.length}
@@ -95,8 +97,12 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 />
                 <Technologies tools={tools} />
                 <Domains domains={domainExample} />
-                <Button color="grey" className="w-full max-w-[270px] mx-auto">
-                    Дивитись профіль
+                <Button
+                    color="grey"
+                    className="w-full max-w-[270px] mx-auto"
+                    size="small"
+                >
+                    {t("seeProfile")}
                 </Button>
             </div>
         </div>
