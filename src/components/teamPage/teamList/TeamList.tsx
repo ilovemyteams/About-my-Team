@@ -8,7 +8,7 @@ import { PageSection } from "../../shared/PageSection";
 import { Pagination } from "../../shared/Pagination";
 import { TeamCard } from "./TeamCard";
 
-const ITEMS_PER_PAGE = 9;
+const ITEMS_PER_PAGE = 12;
 
 export const TeamList = ({
     searchParams,
