@@ -255,4 +255,36 @@ export const feedbackData: FeedbackDataItemType[] = [
                 "Dziękuję zespołowi i love my team za stworzenie strony docelowej, która naprawdę odzwierciedla moją wizję. Szczególne podziękowania dla projektantki — razem przeszliśmy drogę od pomysłów do jasnej i atrakcyjnej wizualizacji. Były momenty, kiedy chciałam większego zaangażowania w trakcie tworzenia, ale ostatecznie otrzymałam stronę, która nie jest po prostu „ok”, tylko naprawdę moja. Na stronie można łatwo zamówić konsultację mentorską — pracuję z osobami, które: • rozpoczynają swoją przygodę z QA i chcą pewnie wystartować, a także zacząć automatyzować; • przechodzą do ról przywódczych (po raz pierwszy lub z pewnymi wątpliwościami); • już zarządzają zespołami i dążą do większej systematyczności i pewności siebie; • lub potrzebują wsparcia podczas zmian w karierze.",
         },
     },
+    {
+        data: {
+            id: "08",
+            video: "Bi_4N-Qewv4",
+            siteLink: "https://willow-motion.space/",
+            slug: "willow-motion",
+            feedbackLink: "https://youtube.com/shorts/Bi_4N-Qewv4",
+        },
+        ua: {
+            siteName: "Willow Motion",
+            siteView: "лендінг",
+            reviewer: "Ольга Сердюк",
+            reviewerRole: "спеціалістка з відео монтажу",
+            feedbackText:
+                "Привіт! Мене звати Оля і мені нещодавно команда ilovemyteam зробиа лендінг і я просто в захваті. До цього в мене не було єдиного зручного місця, де клієнти могли б озайомитися з моїми робоотами та цінами. Все було в соцмережах і знайти потрібне було складно. Тепер в мене є стильний та зручний лендінг, де все зібрано. Мої роботи, контакти та послуги. Клієнти вже пишуть напряму через сайт. Це дуже зручно. Дякую команді ilovemyteam за крутий результат. Якщо ви досі вагаєтесь чи потрібен вам сайт, однозначно - так!",
+        },
+        en: {
+            siteName: "Willow Motion",
+            siteView: "landing",
+            reviewer: "Olga Serdiuk",
+            reviewerRole: "video editing specialist",
+            feedbackText:
+                "Hi! My name is Olya, and recently the ilovemyteam crew created a landing page for me - and I’m absolutely thrilled! Before this, I didn’t have a single convenient place where clients could easily explore my work and pricing. Everything was scattered across social media, and it was difficult to find the right info. Now I have a stylish and user-friendly landing page where everything is gathered in one place - my projects, contacts, and services. Clients are already reaching out directly through the site, and it’s incredibly convenient. Huge thanks to the ilovemyteam team for such an amazing result! If you’re still wondering whether you need a website - the answer is definitely yes!",
+        },
+        pl: {
+            siteName: "Willow Motion",
+            siteView: "strona docelowa",
+            reviewer: "Olga Serdiuk",
+            reviewerRole: "",
+            feedbackText: "",
+        },
+    },
 ];
