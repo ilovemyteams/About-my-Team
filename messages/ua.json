@@ -383,6 +383,7 @@
         "compareBtnDesc": "Додати до списку порівняння",
         "wishBtnDesc": "Додати до обраних учасників",
         "status": "Статус учасника",
-        "membersCount": "{count, plural, one {з # учасника} few {з # учасників} many {з # учасників} other {з # учасників}}"
+        "membersCount": "{count, plural, one {з # учасника} few {з # учасників} many {з # учасників} other {з # учасників}}",
+        "seeProfile": "дивитись профіль"
     }
 }

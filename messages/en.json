@@ -381,13 +381,14 @@
         "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
     },
     "MemberPage": {
-        "titleSEO": "Команда",
+        "titleSEO": "Team",
         "descriptionSEO": "Опис на сторінку.",
-        "title": "Наша <purple>команда</purple>",
-        "description": "Познайомтеся з нашими талановитими членами команди та знайдіть спеціалістів для вашого проєкту",
-        "compareBtnDesc": "Додати до списку порівняння",
-        "wishBtnDesc": "Додати до обраних учасників",
-        "status": "Статус учасника",
-        "membersCount": "{count, plural, one {from # member} other {from # members}}"
+        "title": "Our <purple>Team</purple>",
+        "description": "Meet our talented team members and find the right specialists for your project",
+        "compareBtnDesc": "Add to comparison list",
+        "wishBtnDesc": "Add to favorites",
+        "status": "member status",
+        "membersCount": "{count, plural, one {from # member} other {from # members}}",
+        "seeProfile": "view profile"
     }
 }

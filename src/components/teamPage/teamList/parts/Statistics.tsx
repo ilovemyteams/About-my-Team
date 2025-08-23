@@ -12,19 +12,24 @@ export const Statistics = ({
     pricePerHour,
 }: StatisticsProps) => {
     return (
-        <ul className="flex flex-wrap justify-between gap-x-6 gap-y-2 tab:gap-x-4 pc:gap-x-[12px]">
-            <li className="flex gap-1 items-center">
-                <IconRate className="size-[16px] text-purple-130 dark:text-purple-100" />
-                <p className="text-sm">${pricePerHour}/год</p>
-            </li>
-            <li className="flex gap-1 items-center">
+        <ul className="w-full grid grid-cols-2 grid-row-2 gap-2 ">
+            {pricePerHour && (
+                <li className="flex gap-1 items-center">
+                    <IconRate className="size-[16px] text-purple-130 dark:text-purple-100" />
+                    <p className="text-sm tab:text-base">${pricePerHour}/год</p>
+                </li>
+            )}
+            <li className="flex gap-1 items-center even:justify-end tab:even:justify-start">
                 <IconClock className="size-[16px] text-purple-130 dark:text-purple-100" />
-                <p className="text-sm">5р досвід</p>
+                <p className="text-sm tab:text-base">5р досвід</p>
             </li>
-            <li className="flex gap-1 items-center">
+            <li className="flex gap-1 items-center  even:justify-end tab:even:justify-start">
                 <IconBag className="size-[16px] text-purple-130 dark:text-purple-100" />
-                <p className="text-sm">{projectsCount} проєктів</p>
+                <p className="text-sm tab:text-base">
+                    {projectsCount} проєктів
+                </p>
             </li>
+            <li className="hidden tab:block tab:min-h-[20px]" aria-hidden></li>
         </ul>
     );
 };
