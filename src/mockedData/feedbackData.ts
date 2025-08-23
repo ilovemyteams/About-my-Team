@@ -283,8 +283,9 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteName: "Willow Motion",
             siteView: "strona docelowa",
             reviewer: "Olga Serdiuk",
-            reviewerRole: "",
-            feedbackText: "",
+            reviewerRole: "montażysta wideo",
+            feedbackText:
+                "Cześć! Mam na imię Ola i niedawno zespół ilovemyteam zrobił dla mnie landing page – i jestem po prostu zachwycona. Do tej pory nie miałam jednego, wygodnego miejsca, gdzie klienci mogliby dowiedzieć się o mojej pracy i cenach. Wszystko było porozrzucane po mediach społecznościowych i trudno było coś znaleźć. Teraz mam stylową i wygodną stronę docelową, gdzie wszystko jest w jednym miejscu: moje prace, kontakty i usługi. Klienci już piszą bezpośrednio przez stronę – to bardzo wygodne. Dziękuję zespołowi ilovemyteam za świetny efekt! Jeśli wciąż się zastanawiacie, czy potrzebujecie strony internetowej – odpowiedź brzmi: zdecydowanie tak!",
         },
     },
 ];
