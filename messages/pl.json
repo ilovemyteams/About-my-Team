@@ -385,11 +385,14 @@
         "titleSEO": "Zespół",
         "descriptionSEO": "Опис на сторінку.",
         "title": "Nasz <purple>zespół</purple>",
-        "description": "Poznaj naszych utalentowanych członków zespołu i znajdź specjalistów do swojego projektu",
-        "compareBtnDesc": "Dodaj do listy porównawczej",
-        "wishBtnDesc": "Dodaj do ulubionych",
+        "description": "Poznaj naszych utalentowanych członków zespołu i znajdź odpowiednie osoby do swojego projektu",
+        "compareBtnDesc": "Dodaj do listy porównań",
+        "wishBtnDesc": "Dodaj do ulubionych uczestników",
         "status": "Status członka",
         "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}",
-        "seeProfile": "zobacz profil"
+        "seeProfile": "wyświetl profil",
+        "statRate": "stawki: ${rate}/h",
+        "statExperience": "praktyka: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
+        "statProjects": "projektów: {projects}"
     }
 }
