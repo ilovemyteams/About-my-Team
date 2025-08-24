@@ -384,6 +384,9 @@
         "wishBtnDesc": "Додати до обраних учасників",
         "status": "Статус учасника",
         "membersCount": "{count, plural, one {з # учасника} few {з # учасників} many {з # учасників} other {з # учасників}}",
-        "seeProfile": "дивитись профіль"
+        "seeProfile": "дивитись профіль",
+        "statRate": "рейт: ${rate}/год",
+        "statExperience": "досвід: {experience} р.",
+        "statProjects": "проєктів: {projects}"
     }
 }

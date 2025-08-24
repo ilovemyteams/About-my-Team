@@ -384,11 +384,14 @@
         "titleSEO": "Team",
         "descriptionSEO": "Опис на сторінку.",
         "title": "Our <purple>Team</purple>",
-        "description": "Meet our talented team members and find the right specialists for your project",
+        "description": "Meet our talented team members and find specialists for your project",
         "compareBtnDesc": "Add to comparison list",
         "wishBtnDesc": "Add to favorites",
         "status": "member status",
         "membersCount": "{count, plural, one {from # member} other {from # members}}",
-        "seeProfile": "view profile"
+        "seeProfile": "view profile",
+        "statRate": "rate: ${rate}/h",
+        "statExperience": "experience: {experience} y.",
+        "statProjects": "projects: {projects}"
     }
 }
