@@ -1,10 +1,4 @@
 "use client";
-import {
-    cn,
-    Pagination as NextUIPagination,
-    PaginationItemRenderProps,
-    PaginationItemType,
-} from "@heroui/react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 import { IconGoBack } from "./Icons/IconGoBack";
@@ -23,117 +17,74 @@ export const Pagination = ({ total, currentPage }: PaginationProps) => {
 
     const handlePageChange = (page: number) => {
         const params = new URLSearchParams(searchParams);
-        params.set(PAGE_KEY, `${page.toString()}`);
+        params.set(PAGE_KEY, page.toString());
         router.push(`${pathName}?${params.toString()}`);
     };
 
-    const handleDots = (
-        setter: (value: number) => void,
-        index: number,
-        activePage: number,
-        total: number
-    ) => {
-        const targetPage =
-            index === 6
-                ? activePage < 5
-                    ? 6
-                    : activePage + 2
-                : activePage > total - 4
-                  ? 10
-                  : activePage - 2;
+    const getPageNumbers = () => {
+        const pages: (number | string)[] = [];
 
-        setter(targetPage);
+        if (total <= 5) {
+            for (let i = 1; i <= total; i++) pages.push(i);
+            return pages;
+        }
+
+        if (currentPage <= 3) {
+            pages.push(1, 2, 3, 4, "…");
+        } else if (currentPage >= total - 2) {
+            pages.push("…", total - 3, total - 2, total - 1, total);
+        } else {
+            pages.push("…", currentPage - 1, currentPage, currentPage + 1, "…");
+        }
+
+        return pages;
     };
+
+    const pages = getPageNumbers();
 
     const buttonArrowStyle =
-        "w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
-    const renderItem = ({
-        ref,
-        key,
-        value,
-        isActive,
-        onNext,
-        onPrevious,
-        setPage,
-        className,
-        index,
-        activePage,
-        total,
-    }: PaginationItemRenderProps) => {
-        if (value === PaginationItemType.NEXT) {
-            return (
-                <button
-                    key={key}
-                    className={cn(className, buttonArrowStyle, "ml-4")}
-                    onClick={onNext}
-                    aria-label="next page button"
-                    disabled={activePage === total}
-                >
-                    <IconGoBack className="rotate-180 w-7 h-8" />
-                </button>
-            );
-        }
+        "flex justify-center items-center w-12 h-12 relative shadow-none text-redLight dark:text-red border-t border-b border-redLight dark:border-red  bg-transparent rounded-none  enabled:icon-hover-rounded-purple disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight  disabled:text-disabledLight active:bg-transparent";
 
-        if (value === PaginationItemType.PREV) {
-            return (
-                <button
-                    key={key}
-                    aria-label="prev page button"
-                    className={cn(className, buttonArrowStyle, "mr-4")}
-                    onClick={onPrevious}
-                    disabled={activePage === 1}
-                >
-                    <IconGoBack className="w-7 h-8" />
-                </button>
-            );
-        }
-
-        if (value === PaginationItemType.DOTS) {
-            return (
-                <button
-                    key={key}
-                    className={cn(
-                        className,
-                        "shadow-none bg-transparent font-caviar text-base font-bold w-7 h-7 text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red border border-transparent rounded-none"
-                    )}
-                    onClick={() =>
-                        handleDots(setPage, index, activePage, total)
-                    }
-                >
-                    ...
-                </button>
-            );
-        }
-
-        return (
-            <button
-                key={key}
-                ref={ref}
-                className={cn(
-                    className,
-                    "shadow-none bg-transparent font-caviar min-w-7 w-7 h-7 text-greyLight dark:text-grey  border border-transparent  hover:text-redLight dark:hover:text-red  rounded-none text-base font-bold",
-                    isActive &&
-                        "text-redLight dark:text-red border-b-redLight dark:border-b-red text-base font-bold"
-                )}
-                onClick={() => setPage(value)}
-            >
-                {value}
-            </button>
-        );
-    };
     return (
-        <NextUIPagination
-            onChange={handlePageChange}
-            total={total}
-            page={currentPage}
-            renderItem={renderItem}
-            className="p-0 m-0 mb-[80px] tab:mb-[100px] pc:mb-[100px] desk:mb-[120px]"
-            classNames={{
-                wrapper: "mx-auto gap-2 p-0 mb-0",
-                cursor: "hidden",
-            }}
-            showControls
-            loop
-        />
+        <div className="flex items-center justify-center gap-2 mb-[80px] tab:mb-[100px] pc:mb-[100px] desk:mb-[120px]">
+            <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                className={buttonArrowStyle}
+            >
+                <IconGoBack className="w-7 h-8" />
+            </button>
+
+            {pages.map((p, i) =>
+                p === "…" ? (
+                    <span
+                        key={i}
+                        className="w-7 h-7 flex items-center justify-center text-greyLight dark:text-grey"
+                    >
+                        …
+                    </span>
+                ) : (
+                    <button
+                        key={i}
+                        onClick={() => handlePageChange(p as number)}
+                        className={`min-w-7 w-7 h-7 font-bold ${
+                            p === currentPage
+                                ? "text-redLight dark:text-red border-b-2 border-redLight dark:border-red"
+                                : "text-greyLight dark:text-grey hover:text-redLight dark:hover:text-red"
+                        }`}
+                    >
+                        {p}
+                    </button>
+                )
+            )}
+
+            <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === total}
+                className={buttonArrowStyle}
+            >
+                <IconGoBack className="rotate-180 w-7 h-8" />
+            </button>
+        </div>
     );
 };

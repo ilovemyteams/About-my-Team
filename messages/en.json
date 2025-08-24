@@ -282,7 +282,8 @@
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Services",
         "breadcrumbItemIvents": "Events",
-        "breadcrumbItemPortfolio": "Portfolio"
+        "breadcrumbItemPortfolio": "Portfolio",
+        "breadcrumbItemTeam": "Команда"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -378,5 +379,16 @@
     "PublicOffer": {
         "titleSEO": "Public Agreement for Digital Services | i love my team",
         "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
+    },
+    "MemberPage": {
+        "titleSEO": "Team",
+        "descriptionSEO": "Опис на сторінку.",
+        "title": "Our <purple>Team</purple>",
+        "description": "Meet our talented team members and find the right specialists for your project",
+        "compareBtnDesc": "Add to comparison list",
+        "wishBtnDesc": "Add to favorites",
+        "status": "member status",
+        "membersCount": "{count, plural, one {from # member} other {from # members}}",
+        "seeProfile": "view profile"
     }
 }

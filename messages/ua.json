@@ -278,7 +278,8 @@
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Послуги",
         "breadcrumbItemIvents": "Події",
-        "breadcrumbItemPortfolio": "Портфоліо"
+        "breadcrumbItemPortfolio": "Портфоліо",
+        "breadcrumbItemTeam": "Команда"
     },
     "FaqPage": {
         "titleSEO": "Відповіді на актуальні питання в одному місці",
@@ -373,5 +374,16 @@
     "PublicOffer": {
         "titleSEO": "Публічний договір на надання цифрових послуг | i love my team",
         "descriptionSEO": "Публічна оферта від i love my team — договір на надання послуг з цифрової розробки, аналітики, дизайну. Перевірені умови, прийняття онлайн."
+    },
+    "MemberPage": {
+        "titleSEO": "Команда",
+        "descriptionSEO": "Опис на сторінку.",
+        "title": "Наша <purple>команда</purple>",
+        "description": "Познайомтеся з нашими талановитими членами команди та знайдіть спеціалістів для вашого проєкту",
+        "compareBtnDesc": "Додати до списку порівняння",
+        "wishBtnDesc": "Додати до обраних учасників",
+        "status": "Статус учасника",
+        "membersCount": "{count, plural, one {з # учасника} few {з # учасників} many {з # учасників} other {з # учасників}}",
+        "seeProfile": "дивитись профіль"
     }
 }
