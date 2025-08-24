@@ -154,7 +154,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/svitlana-kondratenko_isz00m.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: ["batatfarm.com"],
             pricePerHour: "10",
             socialLinks: {
@@ -678,7 +678,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: [
                 "ilovemyteam.online",
                 "batatfarm.com",
@@ -1331,7 +1331,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: ["batatfarm.com", "ilovemyteam.online"],
             pricePerHour: "",
             socialLinks: {
@@ -1431,7 +1431,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: ["theatermag.com.ua"],
             pricePerHour: "",
             socialLinks: {
@@ -2465,7 +2465,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830866/Oksana_BA_pnmuxb.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "7",
             socialLinks: {
@@ -2663,7 +2663,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560801/yuliya-borys_rwhbnu.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: [],
             pricePerHour: "",
             socialLinks: {
@@ -2707,7 +2707,7 @@ export const membersData: MemberDataItemType[] = [
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/OlhaKuchalska_j6guiu.jpg",
             position: "Business Analyst",
-            categoryName: "business-analytic",
+            categoryName: "business-analyst",
             projectsExperience: [],
             pricePerHour: "",
             socialLinks: {
