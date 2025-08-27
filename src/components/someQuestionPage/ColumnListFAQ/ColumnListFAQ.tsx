@@ -19,10 +19,10 @@ export const ColumnListFAQ = ({ content, searchTerm }: ColumnListProps) => {
                         toBeHighlighted={searchTerm}
                     />
                 </h3>
-            )}{" "}
+            )}
             <ul className="tab:grid tab:gap-y-[42px] pc:gap-y-20 tab:grid-cols-[33%_34%_33%]">
                 {items.map((item, index) => (
-                    <div
+                    <li
                         key={index}
                         className="relative py-6 tab:py-0 tab:px-5 pc:px-[50px] last:pb-0 tab:last:pr-0 first:pt-0 
                         [&:nth-child(3n-2)]:tab:pl-0 border-b-[1px] tab:border-r-[1px] tab:border-b-0 border-redLight dark:border-red
@@ -66,7 +66,7 @@ export const ColumnListFAQ = ({ content, searchTerm }: ColumnListProps) => {
                                     )
                                 )}
                         </div>
-                    </div>
+                    </li>
                 ))}
             </ul>
         </div>

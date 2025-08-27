@@ -7,6 +7,7 @@
 .yarn/install-state.gz
 .idea
 
+
 # testing
 /coverage
 
@@ -44,3 +45,4 @@ next-env.d.ts
 
 # vscode
 .vscode
+/.vscode
