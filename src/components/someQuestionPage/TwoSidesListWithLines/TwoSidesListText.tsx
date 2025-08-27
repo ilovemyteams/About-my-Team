@@ -15,7 +15,8 @@ export const TwoSidesListText = ({
     className,
     searchTerm,
 }: TwoSidesListTextProps) => {
-    const styleText = "text-sm20 tab:text-base23 desk:text-lg25";
+    // const styleText = "text-sm20 tab:text-base23 desk:text-lg25";
+    const styleText = "text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34";
 
     if (typeof content === "string") {
         return (
