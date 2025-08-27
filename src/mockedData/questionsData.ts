@@ -4418,11 +4418,11 @@ export const questionsData: QAItemType[] = [
                                     text: ["Перший крок - це зрозуміти:"],
                                 },
                                 {
-                                    text: ["з ким ви вже працюєте"],
+                                    text: ["з ким ви вже працюєте;"],
                                     type: "listItem",
                                 },
                                 {
-                                    text: ["хто ваші потенційні замовники"],
+                                    text: ["хто ваші потенційні замовники."],
                                     type: "listItem",
                                 },
                                 {
@@ -4441,13 +4441,13 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     text: [
-                                        "які продукти та послуги приносять основний дохід,",
+                                        "які продукти та послуги приносять основний дохід;",
                                     ],
                                     type: "listItem",
                                 },
                                 {
                                     text: [
-                                        "які допомагають залучати нових клієнтів,",
+                                        "які допомагають залучати нових клієнтів;",
                                     ],
                                     type: "listItem",
                                 },
@@ -4531,7 +4531,7 @@ export const questionsData: QAItemType[] = [
                         {
                             title: "Вхідний продукт",
                             text: [
-                                "Знайомство з бізнесом відбувається через просту й доступну пропозицію: пробний урок, коротку консультацію, метаріали у відкритому доступі, пробний період або демо версію курсу, урок, консультацію, демо чи пробний період. Тут головне - показати цінність і дати клієнту маленьку перемогу  безкоштовнийу, щоб він захотів рухатися далі.",
+                                "Знайомство з бізнесом відбувається через просту й доступну пропозицію: пробний урок, коротку консультацію, метаріали у відкритому доступі, пробний період або демо версію курсу, урок, консультацію, демо чи пробний період. Тут головне - показати цінність і дати клієнту маленьку перемогу  безкоштовний, щоб він захотів рухатися далі.",
                             ],
                         },
                         {
@@ -4616,7 +4616,7 @@ export const questionsData: QAItemType[] = [
                                 },
                                 {
                                     text: [
-                                        "грамотний підбір «золотих» ключових слів, ",
+                                        "грамотний підбір «золотих» ключових слів;",
                                     ],
                                     type: "listItem",
                                 },
@@ -4640,27 +4640,497 @@ export const questionsData: QAItemType[] = [
         },
         en: {
             questionText:
-                "What is a brief for website or landing page development, and why is it important",
+                "How should you package your services on a landing page to get the maximum results?",
             shortAnswerText: [
-                "A brief is the first shared document between the client and the team that defines the project's goals, target audience, functionality, and visual style. It helps avoid unnecessary revisions, saves time, and ensures a shared vision of the final result before development begins.",
+                "To increase conversions into inquiries on a landing page,  present your services in a structured and logical way, starting with lower-value offers and progressing to higher-value, higher-priced ones. If you expect long-term collaboration, group them into service packages. Clearly describe what each package includes and highlight the benefits for potential clients. This is necessary to make it easy for the user to make a choice: from the first acquaintance with you to the main purchase. Proper service packaging immediately boosts conversion and can significantly increase revenue.",
             ],
             fullAnswerTopText: [
-                "A brief is not a technical specification or a contract, but it is the starting point of a high-quality project. A well-crafted brief serves as a guide for designers, developers, and analysts, and acts as a solid foundation for reviewing deliverables, planning the budget, and setting priorities.",
+                "Very often, the creation of a landing page mistakenly begins with design. However, it is the structure and content of your services that determine whether a customer will want to submit a request. If it’s unclear which products you offer, how much they cost, and who they are intended for - the visitor’s attention scatters. As a result, the user doesn’t take the desired action and simply leaves the page. That’s why we always start development not with design, but with business logic.",
             ],
             imageAltText:
-                "What is a brief for website or landing page development, and why is it important?",
+                "How should you package your services on a landing page to get the maximum results?",
+            fullAnswerBottomText: [
+                "Your website can be more than just a business card. It can become the main channel for attracting clients and showcasing your expertise. We’ll help you turn it into a powerful tool that works for your goals every single day.",
+            ],
+            fullAnswerContent: [
+                {
+                    title: "Defining the target audience and product range",
+                    layout: 8,
+                    data: [
+                        {
+                            text: [
+                                {
+                                    text: ["The first step is to understand:"],
+                                },
+                                {
+                                    text: [
+                                        "who you are already working with; ",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["who your potential customers are."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "This is not an abstract “for everyone”, but a clear client profile: age, status, needs, behavior, and expectations. Such specificity allows you to create a website and offer services that match the real demands of your target audience, not generalized requests.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    text: [
+                                        "The second step is to compile a complete list of services and establish a pricing strategy for them. Even if not all services are published on the website, you must clearly understand:",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "which products and services generate the main revenue;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "which ones help attract new clients;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "which ones drain resources without bringing profit.",
+                                    ],
+                                    type: "listItem",
+                                },
+                            ],
+                        },
+                        {
+                            text: [
+                                "It is crucial to match each service with the client profile. If there is no alignment, you should reconsider the positioning or remove the unnecessary offer.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "Quality verification of your service range should begin with simple questions",
+                    data: [
+                        {
+                            title: "Is it immediately clear what is being offered on the website?",
+                            type: "list",
+                            text: [
+                                "What benefits and value does the client get from choosing this service?",
+                                "How will the interaction proceed and how to place an order or where to turn with questions?",
+                            ],
+                        },
+                        {
+                            title: "How easy is it for the client to make a decision?",
+                            type: "list",
+                            text: [
+                                "Is the price and value of the proposed service clear?",
+                                "Is there time to think it over, and until when does a special offer remain valid?",
+                                "Are there testimonials from other users, and were they satisfied?",
+                                "Is there a money-back guarantee if the service is delivered poorly?",
+                            ],
+                        },
+                        {
+                            title: "Is this product/service profitable for the business?",
+                            type: "list",
+                            text: [
+                                "What is the profit margin?",
+                                "What are the accompanying costs or blockers that may arise when delivering the service?",
+                                "Are there limits on the number of items, consultation hours, or course participants (depending on the specifics of the business)?",
+                            ],
+                        },
+                        {
+                            title: "Does the client have a positive experience and come back again?",
+                            type: "list",
+                            text: [
+                                "How can you ensure customer satisfaction?",
+                                "How do you collect and process client feedback?",
+                                "How do you showcase positive testimonials from satisfied customers?",
+                            ],
+                        },
+                        {
+                            title: "Can this product/service be scaled?",
+                            type: "list",
+                            text: [
+                                "Will you be able to deliver several times more services if the number of clients doubles?",
+                                "Will profitability remain stable when scaling?",
+                                "Are there efficient ways to deliver the same services to a larger customer base without increasing time and resource costs?",
+                                "How will you act if demand exceeds your current capacity for scaling?",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Such a combination of a clear client profile and a structured service offering creates the foundation for effective promotion and sustainable business growth.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "How to structure services on a website",
+                    text: "Services on a website work effectively when they are arranged into a logical path. A client should clearly understand where to start and what the next steps are. This approach removes doubts, builds trust, and gradually leads to placing an order. \nStatistics show: websites with structured service presentation have conversion rates 2-3 times higher than those where services are presented chaotically.  The reason is simple - clients don’t like to overthink or choose among dozens of options. They want a clear path from problem to solution. \nA landing page should guide the client step by step along this logical path. One of the most convenient ways is to present services in the format of “levels”:",
+                    data: [
+                        {
+                            title: "Entry-level product",
+                            text: [
+                                "The introduction to your business begins with a simple and accessible offer: a trial lesson, a short consultation, free resources, a demo version, or a limited free period. The main goal here is to show value and give the client a small win - often free of charge - so they are motivated to move forward.",
+                            ],
+                        },
+                        {
+                            title: "Main product",
+                            text: [
+                                "This is the heart of the business - the key offering. At this stage, the client pays for the main service or product. It’s important to clearly demonstrate what problem it solves and what specific benefits the client or user receives.",
+                            ],
+                        },
+                        {
+                            title: "Premium offer",
+                            text: [
+                                "For those who want more - an extended package, personalized support, or exclusive conditions. A premium offer creates a sense of choice, emphasizes the value of the main product, and adds prestige for clients who select the maximum package.",
+                            ],
+                        },
+                        {
+                            title: "Recurring services/subscriptions",
+                            text: [
+                                "The next stage of interaction is ongoing services or subscriptions. These can be memberships, automatic payments, or repeat services. They build long-term relationships, provide stable income, and deliver continuous value to users, increasing loyalty and maintaining interest in the core service.",
+                            ],
+                        },
+                    ],
+                    summary:
+                        "Additionally, to attract more potential clients, you can use lead magnets - simple, free materials such as checklists, templates, calculators, or step-by-step guides. The visitor shares their contact details, you provide real value, and trust is built even before the first purchase.",
+                },
+                {
+                    layout: 4,
+                    title: "What to avoid when structuring services",
+
+                    data: [
+                        {
+                            decorate: 1,
+                            title: "Even with excellent offers, you can spoil the overall impression if they are presented incorrectly. Here are a few common mistakes to avoid:",
+                            text: [
+                                {
+                                    title: "Too many options",
+                                    text: [
+                                        "When there are 7-10 similar services on a page, website visitors get confused and lost. Instead of choosing, they postpone the decision or leave the site. The optimal approach is to present 3–4 options that cover key target audience needs and encourage choosing one of the three variants.",
+                                    ],
+                                },
+                                {
+                                    title: "Unclear differences",
+                                    text: [
+                                        "If the packages look almost identical, the client won’t understand why they should pay more or less. It’s important to highlight differences: the scope of work, level of personalization, additional services, or delivery speed.",
+                                    ],
+                                },
+                                {
+                                    title: "Complicated or abstract names",
+                                    text: [
+                                        "Titles like “Premium+” or “Solution 360” don’t explain much. Clients should immediately understand what the service is about: for example, “Basic Consultation”, “Turnkey Support,” or “Website Audit.” Clear and concrete labels work much better than marketing “mysteries.",
+                                    ],
+                                },
+                                {
+                                    title: "Lack of logical flow",
+                                    text: [
+                                        'If services are presented chaotically, without a clear order from simple to complex, it’s harder for the user to find the right option. It\'s worth building a clear path: from "quick entry" to comprehensive solutions.',
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
+                    title: "Additional tips",
+                    data: [
+                        {
+                            text: [
+                                "Don’t forget about SEO - the final touch to a perfect offer.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Around 70% of clients search for services through Google. If the right keywords are chosen, you gain two advantages: less competition and more targeted customers. SEO is a long-term strategy that does not require ongoing advertising costs. That’s why it becomes a strategic tool for every expert or business that wants to be visible and clearly understood online.",
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    text: [
+                                        "For SEO to truly work, you need to consider several key aspects:",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "smart selection of “golden” keywords; ",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "competitor analysis and the use of practical tactics for gradual website growth;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "semantic markup and other important techniques that web developers know but don’t always share with their clients.",
+                                    ],
+                                    type: "listItem",
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
         },
         pl: {
             questionText:
-                "Czym jest brief dotyczący rozwoju strony internetowej lub landing page'a i dlaczego jest potrzebny?",
+                "Jak prawidłowo zapakować swoje usługi na stronie docelowej, aby uzyskać maksymalny efekt?",
             shortAnswerText: [
-                "Brief to pierwszy wspólny dokument między klientem a zespołem, który określa cele, odbiorców, funkcjonalność i styl projektu. Pomaga uniknąć niepotrzebnych zmian, zaoszczędzić czas i osiągnąć wspólną wizję wyniku przed rozpoczęciem rozwoju.",
+                "Aby zwiększyć konwersję w formularzu zgłoszeniowym na stronie docelowej, należy przedstawić usługi w sposób uporządkowany i konsekwentny, w kolejności rosnącej ich wartości oraz ceny. Połączyć kilka usług w pakiety, jeśli przewiduje się długoterminową współpracę, a także  dokładnie opisać skład i korzyści dla potencjalnych klientów.  Jest to konieczne, aby użytkownik mógł łatwo dokonać wyboru: od pierwszego kontaktu z Tobą do zakupu głównej usługi. Prawidłowe zaprezentowanie usług natychmiast zwiększa konwersję i może znacząco podnieść zysk.",
             ],
             fullAnswerTopText: [
-                "Brief nie jest specyfikacją techniczną ani umową, ale stanowi punkt wyjścia dla wysokiej jakości projektu. Dobrze napisany brief jest wskazówką dla projektantów, deweloperów i analityków oraz niezawodnym wsparciem przy akceptowaniu pracy, planowaniu budżetów i ustalaniu priorytetów.",
+                "Bardzo często tworzenie landing page'a błędnie rozpoczyna się od projektu graficznego, ale to właśnie struktura i treść usług decydują o tym, czy klient zechce złożyć zamówienie. Jeśli nie jest jasne, jakie dokładnie produkty oferujesz, ile kosztują i dla kogo są przeznaczone, uwaga użytkownika rozprasza się, a on nie podejmuje zamierzonego działania i opuszcza stronę. Dlatego zawsze zaczynamy projektowanie nie od designu, ale od logiki biznesowej.",
             ],
             imageAltText:
-                "Czym jest brief dotyczący rozwoju strony internetowej lub landing page'a i dlaczego jest potrzebny?",
+                "Jak prawidłowo zapakować swoje usługi na stronie docelowej, aby uzyskać maksymalny efekt?",
+            fullAnswerBottomText: [
+                "Twoja strona internetowa może być czymś więcej niż tylko wizytówką. Może stać się głównym kanałem pozyskiwania klientów i demonstrowania Twojej wiedzy eksperckiej. Pomożemy Ci przekształcić ją w potężne narzędzie, które codziennie będzie pracować na rzecz Twoich celów.",
+            ],
+            fullAnswerContent: [
+                {
+                    title: "Określenie grupy docelowej i asortymentu",
+                    layout: 8,
+                    data: [
+                        {
+                            text: [
+                                {
+                                    text: [
+                                        "Pierwszym krokiem jest zrozumienie:",
+                                    ],
+                                },
+                                {
+                                    text: ["z kim już współpracujesz;"],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: ["kim są Twoi potencjalni klienci."],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "Nie chodzi tu o abstrakcyjne „dla wszystkich”, ale o jasny portret klienta: wiek, status, potrzeby, zachowanie, oczekiwania. Takie konkretne informacje pozwalają stworzyć stronę internetową i zaoferować usługi, które odpowiadają rzeczywistym potrzebom grupy docelowej, a nie ogólnym wymaganiom.",
+                                    ],
+                                },
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    text: [
+                                        "Drugi krok to sporządzenie pełnej listy usług i sformułowanie polityki cenowej dla nich. Nawet jeśli na stronie nie zostaną opublikowane/przedstawione wszystkie usługi, musisz zrozumieć:",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "które produkty i usługi przynoszą główny dochód;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "które pomagają przyciągnąć nowych klientów;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "które wyczerpują zasoby, ale nie przynoszą zysków.",
+                                    ],
+                                    type: "listItem",
+                                },
+                            ],
+                        },
+                        {
+                            text: [
+                                "Ważne jest, aby porównać każdą usługę z profilem klienta. Jeśli nie ma zgodności, warto ponownie przeanalizować pozycjonowanie lub wyeliminować zbędne elementy.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 1,
+                    title: "Sprawdzanie jakości asortymentu usług warto zacząć od prostych pytań",
+                    data: [
+                        {
+                            title: "Czy od razu wiadomo, co dokładnie jest oferowane na stronie?",
+                            type: "list",
+                            text: [
+                                "Jakie korzyści i wartości dla klienta wynikają z wyboru właśnie tej usługi?",
+                                "Jak będzie przebiegała współpraca i jak złożyć zamówienie lub gdzie kierować pytania?",
+                            ],
+                        },
+                        {
+                            title: "Na ile łatwo klientowi podjąć decyzję?",
+                            type: "list",
+                            text: [
+                                "Czy cena i wartość oferowanej usługi są zrozumiałe?",
+                                "Czy jest czas na zastanowienie się i do kiedy obowiązuje oferta specjalna?",
+                                "Czy są opinie innych użytkowników i czy byli oni zadowoleni?",
+                                "Czy przewidziano zwrot pieniędzy, jeśli usługa została wykonana nienależycie?",
+                            ],
+                        },
+                        {
+                            title: "Czy produkt/usługa jest opłacalny dla biznesu?",
+                            type: "list",
+                            text: [
+                                "Jaka jest marżowość?",
+                                "Jakie mogą być koszty towarzyszące i potencjalne blokery w świadczeniu usługi?",
+                                "Czy istnieją ograniczenia dotyczące liczby sztuk produktu/godzin konsultacji/liczby uczestników kursu (w zależności od specyfiki działalności)?",
+                            ],
+                        },
+                        {
+                            title: "Czy klient otrzymuje pozytywne doświadczenie i wróci ponownie?",
+                            type: "list",
+                            text: [
+                                "Jak zapewnić satysfakcję klienta?",
+                                "Jak zebrać i przetworzyć opinie klientów?",
+                                "Jak prezentować opinie zadowolonych klientów?",
+                            ],
+                        },
+                        {
+                            title: "Czy można skalować ten produkt/usługę?",
+                            type: "list",
+                            text: [
+                                "Czy jesteście w stanie świadczyć kilkukrotnie więcej usług, jeśli liczba klientów się podwoi?",
+                                "Czy marżowość zostanie zachowana przy skalowaniu?",
+                                "Czy istnieją sposoby, aby dostarczać te same usługi większej liczbie klientów bez zwiększania nakładów czasu i zasobów?",
+                                "Jak postąpisz, jeśli liczba zapytań przekroczy Twoje możliwości skalowania?",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Takie połączenie jasno określonego profilu klienta/użytkownika oraz uporządkowanego asortymentu stanowi podstawę skutecznej promocji i rozwoju biznesu.",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 3,
+                    title: "Jak uporządkować usługi na stronie internetowej",
+                    text: "Usługi na stronie internetowej działają skutecznie, gdy są uporządkowane w logiczny sposób. Klient musi rozumieć, od czego zacząć i jak postępować dalej. Takie podejście rozwiewa wątpliwości, buduje zaufanie i stopniowo prowadzi do złożenia zamówienia. \nStatystyki pokazują, że strony internetowe z uporządkowaną strukturą usług mają 2-3 razy wyższą konwersję niż te, na których usługi są przedstawione w sposób chaotyczny. Powód jest prosty — klient nie lubi myśleć i wybierać spośród dziesiątek opcji. Chce zrozumiałej ścieżki od problemu do rozwiązania. \nStrona docelowa powinna prowadzić klienta logiczną ścieżką. W tym celu wygodnie jest przedstawić usługi w formacie „poziomów”:",
+                    data: [
+                        {
+                            title: "Produkt wejściowy",
+                            text: [
+                                "Zapoznanie się z biznesem odbywa się poprzez prostą i dostępną ofertę: lekcję próbną, krótką konsultację, materiały w otwartym dostępie, okres próbny lub wersję demo kursu, lekcję, konsultację, demo lub okres próbny. Najważniejsze jest tutaj pokazanie wartości i zapewnienie klientowi małego zwycięstwa  bezpłatnego, aby chciał iść dalej.",
+                            ],
+                        },
+                        {
+                            title: "Produkt podstawowy",
+                            text: [
+                                "To serce biznesu, jego kluczowa oferta. Na tym etapie klient płaci za podstawową usługę lub produkt. Ważne jest, aby jasno pokazać, jaki problem rozwiązuje i jakie korzyści odnosi klient/użytkownik.",
+                            ],
+                        },
+                        {
+                            title: "Oferta premium",
+                            text: [
+                                "Dla tych, którzy chcą więcej – rozszerzony pakiet, indywidualna obsługa lub ekskluzywne warunki. Oferta premium stwarza poczucie wyboru i podkreśla wartość głównego produktu oraz nadaje status tym, którzy wybiorą pakiet maksymalny.",
+                            ],
+                        },
+                        {
+                            title: "Produkty/usługi cykliczne",
+                            text: [
+                                "Kolejny poziom interakcji – regularne usługi lub subskrypcje. Mogą to być abonamenty, automatyczne płatności lub usługi z powtarzającymi się opłatami. Tworzą one długotrwałe relacje i stabilny dochód oraz zapewniają regularną wartość dla użytkowników, zwiększając ich lojalność i podsycając zainteresowanie głównym produktem/pakietem usług.",
+                            ],
+                        },
+                    ],
+                    summary:
+                        "Aby przyciągnąć więcej potencjalnych klientów, można dodatkowo wykorzystać tak zwane lead magnety – są to proste, bezpłatne materiały: listy kontrolne, szablony, kalkulatory lub instrukcje krok po kroku. Osoba pozostawia swoje dane kontaktowe, a Ty dajesz jej korzyść – i budujesz zaufanie jeszcze przed pierwszym zakupem.",
+                },
+                {
+                    layout: 4,
+                    title: "Czego unikać podczas strukturyzacji usług",
+
+                    data: [
+                        {
+                            decorate: 1,
+                            title: "Nawet mając doskonałe oferty, można zepsuć wrażenie, jeśli są one przedstawione w niewłaściwy sposób. Istnieje kilka typowych błędów, których należy unikać:",
+                            text: [
+                                {
+                                    title: "Zbyt wiele opcji",
+                                    text: [
+                                        "Gdy na stronie znajduje się 7–10 podobnych usług, odwiedzający stronę są zdezorientowani i zagubieni.  Zamiast dokonać wyboru, odkładają decyzję lub w ogóle opuszczają stronę. Optymalnie jest pozostawić 3–4 opcje, które zaspokajają kluczowe potrzeby docelowej grupy odbiorców i zachęcają do wyboru jednej z trzech opcji.",
+                                    ],
+                                },
+                                {
+                                    title: "Niezrozumiałe różnice",
+                                    text: [
+                                        "Jeśli pakiety wyglądają prawie identycznie, klient nie rozumie, za co płaci więcej lub mniej. Ważne jest, aby podkreślić różnice: różny zakres prac, poziom personalizacji, dodatkowe usługi lub szybkość wykonania.",
+                                    ],
+                                },
+                                {
+                                    title: "Skomplikowane lub abstrakcyjne nazwy",
+                                    text: [
+                                        "Nazwy takie jak „Premium+” lub „Rozwiązanie 360” niczego nie wyjaśniają. Klient musi od razu zrozumieć treść usługi: na przykład „Podstawowa konsultacja”, „Kompleksowa obsługa”, „Audyt strony internetowej”. Proste i konkretne sformułowania działają lepiej niż marketingowe „zagadki”",
+                                    ],
+                                },
+                                {
+                                    title: "Brak logiki w prezentacji",
+                                    text: [
+                                        "Jeśli usługi są rozmieszczone chaotycznie, bez porządku od prostych do złożonych, użytkownikowi trudniej jest znaleźć to, czego potrzebuje. Warto stworzyć zrozumiałą ścieżkę: od „szybkiego wejścia” do kompleksowych rozwiązań.",
+                                    ],
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    layout: 5,
+                    title: "Dodatkowe wskazówki",
+                    data: [
+                        {
+                            text: [
+                                "I nie zapomnij o SEO: ostatni szlif idealnej oferty.",
+                            ],
+                        },
+                        {
+                            text: [
+                                "Około 70% klientów szuka usług przez Google. Jeśli słowa kluczowe są dobrze dobrane, zyskujesz dwie korzyści: mniejszą konkurencję i więcej docelowych klientów. SEO działa długoterminowo i nie wymaga dodatkowych nakładów na reklamę. Dlatego staje się strategicznym narzędziem dla każdego eksperta lub firmy, która chce być widoczna i zrozumiała w Internecie.",
+                            ],
+                        },
+                        {
+                            text: [
+                                {
+                                    text: [
+                                        "Aby SEO naprawdę działało, warto wziąć pod uwagę kilka kluczowych aspektów:",
+                                    ],
+                                },
+                                {
+                                    text: [
+                                        "trafny dobór „złotych” słów kluczowych;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "analiza konkurencji i zastosowanie praktycznych wskazówek dla stopniowego rozwoju strony;",
+                                    ],
+                                    type: "listItem",
+                                },
+                                {
+                                    text: [
+                                        "semantyczne formatowanie i inne ważne elementy, o których wiedzą twórcy stron internetowych, ale nie zawsze informują o tym swoich klientów.",
+                                    ],
+                                    type: "listItem",
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ],
         },
     },
 ];

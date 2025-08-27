@@ -17,7 +17,7 @@ export const TwoSidesListWithLines = ({
     const { title, data } = content;
 
     return (
-        <div className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
+        <div>
             {title && (
                 <LayoutTitle className="mb-10 tab:mb-[64px] pc:mb-[80px]">
                     {title}
