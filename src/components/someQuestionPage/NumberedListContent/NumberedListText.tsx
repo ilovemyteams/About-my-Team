@@ -48,6 +48,7 @@ export const NumberedListText = ({
             </li>
         );
     }
+
     return (
         <li>
             <p className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">

@@ -10,6 +10,7 @@ import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
 import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
+import { TwoSidesListWithLines } from "./TwoSidesListWithLines/TwoSidesListWithLines";
 
 interface MainContentProps {
     content: LongAnswerListType[];
@@ -42,6 +43,8 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             content={item.data}
                             title={item.title}
                             searchTerm={searchTerm}
+                            text={item.text}
+                            summary={item.summary}
                         />
                     )}
                     {item.layout === 4 && (
@@ -64,6 +67,12 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                     )}
                     {item.layout === 7 && (
                         <ColumnListFAQ content={item} searchTerm={searchTerm} />
+                    )}
+                    {item.layout === 8 && (
+                        <TwoSidesListWithLines
+                            content={item}
+                            searchTerm={searchTerm}
+                        />
                     )}
                 </Fragment>
             ))}
