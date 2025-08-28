@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
                     `✉️ Email: ${email}\n` +
                     `🔗 Контакт: ${mediaType} - ${mediaLink}\n` +
                     `💬 Повідомлення: ${message}\n` +
-                    `📌 Джерело: ${source}\n` +
+                    `📌 Тема: ${source}\n` +
                     `🕒 Дата: ${date}\n` +
                     `✅ Підтвердження: ${confirm ? "Так" : "Ні"}`
             );
