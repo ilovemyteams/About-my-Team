@@ -363,6 +363,7 @@
         "launch": "Запуск в реліз",
         "support": "Підтримка",
         "behanceLink": "Дизайн проєкту",
+        "siteLink": "Посилання на сайт",
         "taskTitle": "<purple>Завдання</purple>, над якими ми працювали",
         "decisionsTitle": "<purple>Рішення</purple>, які були реалізовані"
     },

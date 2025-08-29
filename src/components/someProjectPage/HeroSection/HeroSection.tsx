@@ -14,6 +14,7 @@ interface HeroSectionProps {
     heroImage: { url: string; type: "image" | "video" };
     deadlines?: DeadlineType;
     name: string;
+    siteLink?: string;
 }
 
 export const HeroSection = ({
@@ -23,11 +24,13 @@ export const HeroSection = ({
     deadlines,
     heroImage,
     name,
+    siteLink,
 }: HeroSectionProps) => {
     const getTranslations = useTranslations("SomeProjectPage");
 
     const deadlinesText = getTranslations("deadlines");
     const behanceLinkTitle = getTranslations("behanceLink");
+    const siteLinkTitle = getTranslations("siteLink");
 
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
@@ -36,15 +39,29 @@ export const HeroSection = ({
                 <div className="flex flex-col gap-3 tab:gap-5 relative">
                     <HeroMedia name={name} {...heroImage} />
 
-                    {behanceLink && (
-                        <div className="pc:absolute pc:top-[-50px] pc:left-0">
-                            <a
-                                href={behanceLink}
-                                target="_blank"
-                                className="underline text-redLight dark:text-red font-caviar font-bold text-base tab:text-lg"
-                            >
-                                {behanceLinkTitle}
-                            </a>
+                    {(behanceLink || siteLink) && (
+                        <div className="pc:absolute pc:top-[-50px] pc:left-0 flex flex-col tab:flex-rwo gap-2 text-redLight dark:text-red ">
+                            {siteLink && (
+                                <a
+                                    href={siteLink}
+                                    target="_blank"
+                                    className="underline font-caviar font-bold text-base tab:text-lg"
+                                >
+                                    {siteLinkTitle}
+                                </a>
+                            )}
+                            {behanceLink && (
+                                <>
+                                    <span className="hidden tab:block">/</span>
+                                    <a
+                                        href={behanceLink}
+                                        target="_blank"
+                                        className="underline font-caviar font-bold text-base tab:text-lg"
+                                    >
+                                        {behanceLinkTitle}
+                                    </a>
+                                </>
+                            )}
                         </div>
                     )}
                 </div>

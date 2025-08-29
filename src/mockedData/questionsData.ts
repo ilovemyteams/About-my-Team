@@ -3696,7 +3696,7 @@ export const questionsData: QAItemType[] = [
             fullAnswerContent: [
                 {
                     layout: 4,
-                    title: "Що таке бриф і чим він відрізняється від інших документів",
+                    title: "Що таке бриф і чим він відрізняється від інших документів?",
                     data: [
                         {
                             title: "Бриф - це перший і найважливіший документ, з якого починається розробка сайту чи цифрового продукту. Його суть у тому, щоб зібрати і зафіксувати в одному місці ключову інформацію про проєкт: цілі, очікування, особливості бізнесу, цільову аудиторію, функціонал, вподобання в дизайні, бюджет і дедлайни. Це своєрідна «карта» для команди, яка дозволяє зрозуміти, що саме потрібно створити, для кого і навіщо.",
@@ -3758,7 +3758,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 2,
-                    title: "Як зібрати інформацію для брифу",
+                    title: "Як зібрати інформацію для брифу?",
                     text: "Щоб створити дійсно корисний бриф, важливо не просто «написати анкету», а зрозуміти бізнес, продукт і очікування замовника. \nЗбирати дані можна двома шляхами: усно (під час інтерв’ю чи зустрічі) та письмово (анкета або документ).",
 
                     data: [
@@ -3993,7 +3993,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 2,
-                    title: "How to collect information for a brief",
+                    title: "How to collect information for a brief?",
                     text: 'To create a truly useful brief, it’s important not just to "write a questionnaire", but to understand the client’s business, product, and expectations. \nYou can collect data in two ways: verbally (during an interview or meeting) and in writing (via a questionnaire or document).',
 
                     data: [
@@ -4170,7 +4170,7 @@ export const questionsData: QAItemType[] = [
             fullAnswerContent: [
                 {
                     layout: 4,
-                    title: "Czym jest brief i czym różni się od innych dokumentów",
+                    title: "Czym jest brief i czym różni się od innych dokumentów?",
                     data: [
                         {
                             title: "Brief jest pierwszym i najważniejszym dokumentem, który rozpoczyna tworzenie strony internetowej lub produktu cyfrowego. Jego celem jest zebranie i zapisanie kluczowych informacji o projekcie w jednym miejscu: cele, oczekiwania, cechy biznesowe, grupa docelowa, funkcjonalność, preferencje projektowe, budżet i terminy. Jest to rodzaj „mapy” dla zespołu, która pozwala im zrozumieć, co dokładnie należy stworzyć, dla kogo i dlaczego.",
@@ -4230,7 +4230,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 2,
-                    title: "Jak zbierać informacje do briefu",
+                    title: "Jak zbierać informacje do briefu?",
                     text: "Aby stworzyć naprawdę użyteczny brief, ważne jest nie tylko „napisać ankietę”, ale przede wszystkim zrozumieć biznes, produkt i oczekiwania klienta. \nDane można zbierać na dwa sposoby: ustnie (podczas spotkania lub wywiadu) oraz pisemnie (ankieta lub dokument).",
 
                     data: [
@@ -4525,7 +4525,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Як структурувати послуги на сайті",
+                    title: "Як структурувати послуги на сайті?",
                     text: "Послуги на сайті працюють ефективно тоді, коли вони вибудувані в логічний шлях. Клієнт має розуміти, з чого почати і куди рухатися далі. Такий підхід знімає сумніви, формує довіру і поступово веде до оформлення замовлення. \nСтатистика показує: сайти зі структурованою подачею послуг мають конверсію у 2-3 рази вищу, ніж ті, де послуги подаються хаотично. Причина проста - клієнт не любить думати та вибирати серед десятків варіантів. Він хоче зрозумілий шлях від проблеми до рішення. \nЛендінг повинен вести клієнта по логічному шляху. Для цього зручно подати послуги у форматі «рівнів»:",
                     data: [
                         {
@@ -4558,7 +4558,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Чого уникати при структуризації послуг",
+                    title: "Чого уникати при структуризації послуг?",
 
                     data: [
                         {
@@ -4772,7 +4772,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "How to structure services on a website",
+                    title: "How to structure services on a website?",
                     text: "Services on a website work effectively when they are arranged into a logical path. A client should clearly understand where to start and what the next steps are. This approach removes doubts, builds trust, and gradually leads to placing an order. \nStatistics show: websites with structured service presentation have conversion rates 2-3 times higher than those where services are presented chaotically.  The reason is simple - clients don’t like to overthink or choose among dozens of options. They want a clear path from problem to solution. \nA landing page should guide the client step by step along this logical path. One of the most convenient ways is to present services in the format of “levels”:",
                     data: [
                         {
@@ -4805,7 +4805,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "What to avoid when structuring services",
+                    title: "What to avoid when structuring services?",
 
                     data: [
                         {
@@ -5019,7 +5019,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 3,
-                    title: "Jak uporządkować usługi na stronie internetowej",
+                    title: "Jak uporządkować usługi na stronie internetowej?",
                     text: "Usługi na stronie internetowej działają skutecznie, gdy są uporządkowane w logiczny sposób. Klient musi rozumieć, od czego zacząć i jak postępować dalej. Takie podejście rozwiewa wątpliwości, buduje zaufanie i stopniowo prowadzi do złożenia zamówienia. \nStatystyki pokazują, że strony internetowe z uporządkowaną strukturą usług mają 2-3 razy wyższą konwersję niż te, na których usługi są przedstawione w sposób chaotyczny. Powód jest prosty — klient nie lubi myśleć i wybierać spośród dziesiątek opcji. Chce zrozumiałej ścieżki od problemu do rozwiązania. \nStrona docelowa powinna prowadzić klienta logiczną ścieżką. W tym celu wygodnie jest przedstawić usługi w formacie „poziomów”:",
                     data: [
                         {
@@ -5052,7 +5052,7 @@ export const questionsData: QAItemType[] = [
                 },
                 {
                     layout: 4,
-                    title: "Czego unikać podczas strukturyzacji usług",
+                    title: "Czego unikać podczas strukturyzacji usług?",
 
                     data: [
                         {
