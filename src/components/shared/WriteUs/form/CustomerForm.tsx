@@ -48,7 +48,7 @@ export const CustomerForm = ({ notificationHandler }: FormInModalProps) => {
         mediaType: MediaTypeKeys.linkedin,
         mediaLink: "",
         message: "",
-        source: searchParams.get("source") || "direct",
+        source: searchParams.get("topic") || "direct",
         confirm: false,
     };
 

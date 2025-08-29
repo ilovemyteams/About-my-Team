@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { sendDataToGoogleSheet } from "@/src/utils/sendDataToGoogleSheet";
+import {
+    sendDataToGoogleSheet,
+    sendTelegramNotification,
+} from "@/src/utils/sendDataToGoogleSheet";
 
 const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID || "";
 
@@ -24,7 +27,16 @@ export async function POST(request: NextRequest) {
                 date,
                 confirm,
             ]);
-
+            await sendTelegramNotification(
+                `📩 Нова заявка!\n\n` +
+                    `👤 Ім'я: ${name}\n` +
+                    `✉️ Email: ${email}\n` +
+                    `🔗 Контакт: ${mediaType} - ${mediaLink}\n` +
+                    `💬 Повідомлення: ${message}\n` +
+                    `📌 Тема: ${source}\n` +
+                    `🕒 Дата: ${date}\n` +
+                    `✅ Підтвердження: ${confirm ? "Так" : "Ні"}`
+            );
             return NextResponse.json({ message: "Data appended successfully" });
         } catch (error) {
             return NextResponse.json(
