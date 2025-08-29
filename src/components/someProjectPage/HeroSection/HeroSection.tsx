@@ -40,7 +40,7 @@ export const HeroSection = ({
                     <HeroMedia name={name} {...heroImage} />
 
                     {(behanceLink || siteLink) && (
-                        <div className="pc:absolute pc:top-[-50px] pc:left-0 flex flex-col tab:flex-rwo gap-2 text-redLight dark:text-red ">
+                        <div className="pc:absolute pc:top-[-50px] pc:left-0 flex flex-col tab:flex-row gap-2 text-redLight dark:text-red ">
                             {siteLink && (
                                 <a
                                     href={siteLink}
