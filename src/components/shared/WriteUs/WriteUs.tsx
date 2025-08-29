@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import React from "react";
 
 import { Button } from "@/src/components/shared/Button";
-import { useRouter } from "@/src/i18n/routing";
+import { usePathname, useRouter } from "@/src/i18n/routing";
 
 interface WriteUsProps {
     className?: string;
@@ -22,12 +22,15 @@ export const WriteUs = ({
 }: WriteUsProps) => {
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
+    const link = usePathname();
 
     const path = topic
         ? topic
-        : buttonName
-          ? buttonName
-          : getTranslation("order");
+        : link
+          ? link
+          : buttonName
+            ? buttonName
+            : getTranslation("order");
 
     const onClickButton = () => {
         router.push(`/order?topic=${path}`);
