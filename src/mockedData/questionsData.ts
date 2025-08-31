@@ -4552,9 +4552,13 @@ export const questionsData: QAItemType[] = [
                                 "Наступний рівень взаємодії - регулярні послуги чи підписки. Це можуть бути абонементи, автоматичні платежі або сервіси з повторюваними оплатами. Вони формують довготривалі стосунки й стабільний дохід і надають регулярну цінність для користувачів, підвищуючи їх лояльність та підігрівають зацікавленість в основному продукті/пакеті послуг.",
                             ],
                         },
+                        {
+                            title: "Лід-магніти",
+                            text: [
+                                "Щоб залучати більше потенційних клієнтів, додатково можна використати так звані лід-магніти - це прості безоплатні  матеріали: чеклісти, шаблони, калькулятори чи покрокові інструкції. Людина залишає свій контакт, ви даєте їй користь - і будуєте довіру ще до першої покупки.",
+                            ],
+                        },
                     ],
-                    summary:
-                        "Щоб залучати більше потенційних клієнтів, додатково можна використати так звані лід-магніти - це прості безоплатні  матеріали: чеклісти, шаблони, калькулятори чи покрокові інструкції. Людина залишає свій контакт, ви даєте їй користь - і будуєте довіру ще до першої покупки.",
                 },
                 {
                     layout: 4,
@@ -4799,9 +4803,13 @@ export const questionsData: QAItemType[] = [
                                 "The next stage of interaction is ongoing services or subscriptions. These can be memberships, automatic payments, or repeat services. They build long-term relationships, provide stable income, and deliver continuous value to users, increasing loyalty and maintaining interest in the core service.",
                             ],
                         },
+                        {
+                            title: "Lead magnets",
+                            text: [
+                                "Additionally, to attract more potential clients, you can use lead magnets - simple, free materials such as checklists, templates, calculators, or step-by-step guides. The visitor shares their contact details, you provide real value, and trust is built even before the first purchase.",
+                            ],
+                        },
                     ],
-                    summary:
-                        "Additionally, to attract more potential clients, you can use lead magnets - simple, free materials such as checklists, templates, calculators, or step-by-step guides. The visitor shares their contact details, you provide real value, and trust is built even before the first purchase.",
                 },
                 {
                     layout: 4,
@@ -5046,9 +5054,13 @@ export const questionsData: QAItemType[] = [
                                 "Kolejny poziom interakcji – regularne usługi lub subskrypcje. Mogą to być abonamenty, automatyczne płatności lub usługi z powtarzającymi się opłatami. Tworzą one długotrwałe relacje i stabilny dochód oraz zapewniają regularną wartość dla użytkowników, zwiększając ich lojalność i podsycając zainteresowanie głównym produktem/pakietem usług.",
                             ],
                         },
+                        {
+                            title: "Lead magnety",
+                            text: [
+                                "Aby przyciągnąć więcej potencjalnych klientów, można dodatkowo wykorzystać tak zwane lead magnety – są to proste, bezpłatne materiały: listy kontrolne, szablony, kalkulatory lub instrukcje krok po kroku. Osoba pozostawia swoje dane kontaktowe, a Ty dajesz jej korzyść – i budujesz zaufanie jeszcze przed pierwszym zakupem.",
+                            ],
+                        },
                     ],
-                    summary:
-                        "Aby przyciągnąć więcej potencjalnych klientów, można dodatkowo wykorzystać tak zwane lead magnety – są to proste, bezpłatne materiały: listy kontrolne, szablony, kalkulatory lub instrukcje krok po kroku. Osoba pozostawia swoje dane kontaktowe, a Ty dajesz jej korzyść – i budujesz zaufanie jeszcze przed pierwszym zakupem.",
                 },
                 {
                     layout: 4,
