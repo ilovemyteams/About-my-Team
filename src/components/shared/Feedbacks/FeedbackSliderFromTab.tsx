@@ -59,17 +59,25 @@ export const FeedbackSliderFromTab: React.FC<FeedbackSliderProps> = props => {
                             key={data.id}
                             className="embla__slide flex-[0_0_100%] "
                         >
-                            <Image
-                                src={
-                                    data.image
-                                        ? data.image
-                                        : "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg"
-                                }
-                                alt={en.siteName}
-                                width={540}
-                                height={346}
-                                className="object-cover tab:h-[302px] w-full pc:h-[346px] desk:h-[428px]"
-                            />
+                            {data.image ? (
+                                <Image
+                                    src={data.image}
+                                    alt={en.siteName}
+                                    width={540}
+                                    height={346}
+                                    className="object-cover tab:h-[302px] w-full pc:h-[346px] desk:h-[428px]"
+                                />
+                            ) : (
+                                <iframe
+                                    width="540"
+                                    height="346"
+                                    src={`https://www.youtube.com/embed/${data.video}?autoplay=1&mute=1&loop=1&playlist=${data.video}`}
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    className="object-cover tab:h-[302px] w-full pc:h-[346px] desk:h-[428px]"
+                                ></iframe>
+                            )}
                         </div>
                     ))}
                 </div>

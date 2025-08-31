@@ -28,7 +28,7 @@ export const categoryNames: СategoryNamesProp[] = [
         categoryName: "business-analytic",
         ua: "Бізнес-аналітики",
         pl: "Analitycy biznesowi",
-        en: "Business-analytics",
+        en: "Business-analysts",
     },
     {
         categoryName: "manager",

@@ -2,10 +2,10 @@ import React from "react";
 
 import { DescriptionType } from "@/src/mockedData/servicesData";
 
+import { Lines } from "../../shared/Lines";
 import { LayoutSubtitle } from "../shared/LayoutSubtitle";
 import { LayoutText } from "../shared/LayoutText";
 import { AnimatedTwoSideListItem } from "./AnimatedTwoSideListItem";
-import { Lines } from "./Lines";
 
 interface TwoSideListItemProps {
     content: DescriptionType;

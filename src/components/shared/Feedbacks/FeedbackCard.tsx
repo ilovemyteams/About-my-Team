@@ -20,11 +20,7 @@ export const FeedbackCard = ({
 }: FeedbackCardItemProps) => {
     const getTranslation = useTranslations("Feedback");
 
-    const {
-        image = "https://res.cloudinary.com/dxvtacrde/image/upload/v1700146266/samples/dessert-on-a-plate.jpg",
-        siteLink,
-        feedbackLink,
-    } = data;
+    const { image, siteLink, video, feedbackLink } = data;
     const { siteName, reviewer, siteView, reviewerRole, feedbackText } =
         localizationData;
     const siteTypeUp = siteView?.toUpperCase();
@@ -33,13 +29,26 @@ export const FeedbackCard = ({
     return (
         <div className="flex flex-col min-h-[390px] border dark:border-purple-stroke border-purple-strokeLight">
             <div className="relative">
-                <Image
-                    src={image}
-                    alt={siteName}
-                    width={540}
-                    height={346}
-                    className=" object-cover min-w-[220px] h-[220px] "
-                />
+                {image ? (
+                    <Image
+                        src={image}
+                        alt={siteName}
+                        width={540}
+                        height={346}
+                        className=" object-cover min-w-[220px] h-[220px] "
+                    />
+                ) : (
+                    <iframe
+                        width="540"
+                        height="346"
+                        src={`https://www.youtube.com/embed/${video}?autoplay=1&mute=1&loop=1&playlist=${video}`}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="object-cover min-w-[220px] h-[220px]"
+                    ></iframe>
+                )}
+
                 <div className="absolute bottom-0 left-0 min-w-full h-[55px] dark:bg-feedbackMobCardGradient bg-feedbackMobCardGradientLight text-purple-200 dark:text-white-200">
                     <p className="font-caviar font-bold text-base mt-2 mb-1 ml-2">
                         {siteName}

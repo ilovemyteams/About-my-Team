@@ -18,7 +18,7 @@ export const WriteUsSection = ({
             <TitleCTAWrapper className="tab:w-[50%] pc:w-[70%]">
                 {getTranslation(text)}
             </TitleCTAWrapper>
-            <WriteUs eventGTM={eventGTM} />
+            <WriteUs topic={getTranslation(text)} eventGTM={eventGTM} />
         </SectionCTA>
     );
 };
