@@ -31,6 +31,7 @@ export const PageTopSection = ({
                 : "";
         return `/${localeInURL(locale)}${breadcrumb}${trailingParam}`;
     };
+
     return (
         <>
             <div className="hidden pc:mb-10 pc:flex gap-[204px] justify-end relative z-10">
@@ -41,12 +42,12 @@ export const PageTopSection = ({
                 <Breadcrumbs
                     separator="/"
                     classNames={{
-                        list: "flex-nowrap max-w-full",
-                        base: "overflow-hidden",
+                        list: "items-stretch flex-nowrap",
+                        base: "overflow-hidden whitespace-nowrap",
                     }}
                     itemClasses={{
                         separator: "px-1",
-                        item: "dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight",
+                        item: "inline-flex dark:text-purple-50 text-greyLight text-xs pc:text-sm desk:text-base dark:pc:hover:text-red pc:hover:text-redLight dark:pc:focus:text-red pc:focus:text-redLight pc:transition pc:ease-out pc:duration-300 dark:active:text-red active:text-redLight overflow-hidden",
                     }}
                 >
                     <BreadcrumbItem href={`/${localeInURL(locale)}`}>
@@ -61,12 +62,12 @@ export const PageTopSection = ({
                             return (
                                 <BreadcrumbItem
                                     key={item.title}
-                                    className="flex-1 overflow-hidden"
+                                    className="overflow-hidden"
                                 >
-                                    <p className="dark:text-red text-redLight max-w-full truncate">
+                                    <span className="dark:text-red text-redLight truncate block">
                                         {item.title[0].toUpperCase() +
                                             item.title.slice(1)}
-                                    </p>
+                                    </span>
                                 </BreadcrumbItem>
                             );
                         }
@@ -80,6 +81,7 @@ export const PageTopSection = ({
                         );
                     })}
                 </Breadcrumbs>
+
                 <div className="flex justify-end">
                     <GoBackButton />
                 </div>

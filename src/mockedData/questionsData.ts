@@ -4386,7 +4386,7 @@ export const questionsData: QAItemType[] = [
     },
     {
         data: {
-            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1756311900/answer14-1_qejjg9.jpg",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1756744675/answer14-3_jr4hm6.jpg",
             likes: null,
             slug: "how-should-you-package-your-services-on-a-landing-page-to-get-the-maximum-results",
             answerOrderImage:
