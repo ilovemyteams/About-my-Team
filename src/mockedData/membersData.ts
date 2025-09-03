@@ -2066,7 +2066,7 @@ export const membersData: MemberDataItemType[] = [
             id: "anna-prutnik-frontend-developer",
             projectId: ["ilovemyteam-online", "alex-chudov", "hoida-liudmyla"],
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Anet_Prutnik_lvgflg.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1756818018/Anna_Prutnik_xzixw6.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: [
