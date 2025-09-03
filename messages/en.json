@@ -390,8 +390,8 @@
         "status": "member status",
         "membersCount": "{count, plural, one {from # member} other {from # members}}",
         "seeProfile": "view profile",
-        "statRate": "rate: ${rate}/h",
-        "statExperience": "experience: {experience} y.",
+        "statRate": "${rate}/h",
+        "statExperience": "experience: {experience, plural, =1 {1 yr.} other {# yrs.}}",
         "statProjects": "projects: {projects}"
     }
 }

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 import { usePaginationData } from "@/src/hooks/usePaginationData";
 import { membersData } from "@/src/mockedData/membersData";
@@ -46,7 +47,13 @@ export const TeamList = ({
                     count: filteredMembers.length,
                 })}
             </p>
-            <ul className="mb-10 desk:mb-[60px] grid grid-cols-1 tab:grid-cols-[repeat(auto-fit,minmax(320px,_1fr))] gap-y-4 tab:gap-5 desk:gap-x-3">
+            <ul
+                className={twMerge(
+                    "mb-10 desk:mb-[60px] grid grid-cols-1 tab:grid-cols-[repeat(auto-fit,minmax(320px,_1fr))] gap-y-4 tab:gap-5 desk:gap-x-3",
+                    visibleList.length < 4 &&
+                        "tab:grid-cols-[repeat(auto-fill,minmax(320px,_1fr))]"
+                )}
+            >
                 {visibleList.map(member => (
                     <li key={member.data.id}>
                         <TeamCard member={member} />

@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { twMerge } from "tailwind-merge";
 
+// import { twMerge } from "tailwind-merge";
 import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
 
 interface AvatarProps {
@@ -13,9 +12,9 @@ interface AvatarProps {
     status: "free" | "part" | "busy";
 }
 
-export const Avatar = ({ imageURL, name, status }: AvatarProps) => {
+export const Avatar = ({ imageURL, name }: AvatarProps) => {
     const [error, setError] = useState(false);
-    const t = useTranslations("MemberPage");
+    // const t = useTranslations("MemberPage");
     return (
         <div className="relative w-fit">
             <div className="size-[80px] isolate tab:size-[92px] rounded-full bg-purple-strokeLight dark:bg-purple-stroke overflow-hidden">
@@ -35,7 +34,8 @@ export const Avatar = ({ imageURL, name, status }: AvatarProps) => {
                     />
                 )}
             </div>
-            <div
+            {/* User activity status */}
+            {/* <div
                 className={twMerge(
                     "size-[18px] rounded-full border-[3px] border-white-200 dark:border-purple-200 absolute -right-[3%] bottom-[10%]",
                     status === "free"
@@ -45,7 +45,7 @@ export const Avatar = ({ imageURL, name, status }: AvatarProps) => {
                           : "bg-[#FF3B30]"
                 )}
                 aria-label={t("status")}
-            ></div>
+            ></div> */}
         </div>
     );
 };

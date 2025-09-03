@@ -391,8 +391,8 @@
         "status": "Status członka",
         "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}",
         "seeProfile": "wyświetl profil",
-        "statRate": "stawki: ${rate}/h",
-        "statExperience": "praktyka: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
-        "statProjects": "projektów: {projects}"
+        "statRate": "${rate}/h",
+        "statExperience": "dośw: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
+        "statProjects": "projekty: {projects}"
     }
 }

@@ -5,11 +5,11 @@ import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { Button } from "../../shared/Button";
-import { IconLike } from "../../shared/Icons/IconLike";
-import { IconScales } from "../../shared/Icons/IconScales";
+// import { IconLike } from "../../shared/Icons/IconLike";
+// import { IconScales } from "../../shared/Icons/IconScales";
 import { Avatar } from "./parts/Avatar";
 import { Domains } from "./parts/Domains";
-import { IconButton } from "./parts/IconButton";
+// import { IconButton } from "./parts/IconButton";
 import { Statistics } from "./parts/Statistics";
 import { Technologies } from "./parts/Technologies";
 
@@ -52,7 +52,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         member.data;
 
     const status = generateRandomStatus();
-
+    const randomExperience = Math.floor(Math.random() * 10 + 1);
     return (
         <div
             className="mx-auto w-full relative z-5 max-w-[408px] tab:max-w-[350px] pc:min-w-[320px] h-full px-4 tab:px-5 pc:px-4 py-5 isolate 
@@ -62,14 +62,15 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         before:absolute before:z-[-1] before:opacity-0 before:inset-0 before:bg-hoverTeamCardGradientLight before:dark:bg-hoverTeamCardGradientDark"
         >
             <div className="flex flex-col items-start gap-4 max-w-[288px] mx-auto">
-                <div className="absolute top-0 right-0 flex  tab:flex-col-reverse">
+                {/* Block with like and compare buttons */}
+                {/* <div className="absolute top-0 right-0 flex  tab:flex-col-reverse">
                     <IconButton label={t("compareBtnDesc")}>
                         <IconScales className="w-[24px] h-auto" />
                     </IconButton>
                     <IconButton label={t("wishBtnDesc")}>
                         <IconLike isLiked={false} className="w-[24px] h-auto" />
                     </IconButton>
-                </div>
+                </div> */}
                 <div className="pt-4 tab:pt-0 flex gap-5 tab:gap-4 items-center tab:flex-col tab:justify-center w-full">
                     <Avatar
                         name={langData.name}
@@ -94,6 +95,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 <Statistics
                     projectsCount={projectsExperience.length}
                     pricePerHour={pricePerHour}
+                    experience={randomExperience}
                 />
                 <Technologies tools={tools} />
                 <Domains domains={domainExample} />
