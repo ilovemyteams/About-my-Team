@@ -5,13 +5,7 @@ interface IconLikeProps {
 
 export const IconLike = ({ className, isLiked }: IconLikeProps) => {
     return (
-        <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            className={className}
-        >
+        <svg viewBox="0 0 24 24" fill="none" className={className}>
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"

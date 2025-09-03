@@ -283,7 +283,8 @@
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Usługi",
         "breadcrumbItemIvents": "Wydarzenia",
-        "breadcrumbItemPortfolio": "Wdrożone"
+        "breadcrumbItemPortfolio": "Wdrożone",
+        "breadcrumbItemTeam": "Команда"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -380,5 +381,19 @@
     "PublicOffer": {
         "titleSEO": "Publiczna umowa na świadczenie usług cyfrowych | i love my team",
         "descriptionSEO": "Publiczna oferta i love my team — umowa na świadczenie usług z zakresu rozwoju cyfrowego, analityki i projektowania. Sprawdzone warunki, akceptacja online."
+    },
+    "MemberPage": {
+        "titleSEO": "Zespół",
+        "descriptionSEO": "Опис на сторінку.",
+        "title": "Nasz <purple>zespół</purple>",
+        "description": "Poznaj naszych utalentowanych członków zespołu i znajdź odpowiednie osoby do swojego projektu",
+        "compareBtnDesc": "Dodaj do listy porównań",
+        "wishBtnDesc": "Dodaj do ulubionych uczestników",
+        "status": "Status członka",
+        "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}",
+        "seeProfile": "wyświetl profil",
+        "statRate": "${rate}/h",
+        "statExperience": "dośw: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
+        "statProjects": "projekty: {projects}"
     }
 }
