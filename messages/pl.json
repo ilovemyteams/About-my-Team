@@ -142,7 +142,8 @@
         "onlinestores": "Sklep internetowy",
         "websites": "Strona internetowa",
         "showAll": "Pokaż wszystkie",
-        "showLess": "Zwiń"
+        "showLess": "Zwiń",
+        "allMembers": "Wszyscy uczestnicy"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"

@@ -139,7 +139,8 @@
         "onlinestores": "Інтернет-магазин",
         "websites": "Вебсайт",
         "showAll": "Показати всі",
-        "showLess": "Згорнути"
+        "showLess": "Згорнути",
+        "allMembers": "Всі учасники"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"

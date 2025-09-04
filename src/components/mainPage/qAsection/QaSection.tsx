@@ -1,9 +1,10 @@
 "use client";
 import { sendGTMEvent } from "@next/third-parties/google";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useInView } from "react-intersection-observer";
+
+import { useRouter } from "@/src/i18n/routing";
 
 import { Button } from "../../shared/Button";
 import { Section } from "../../shared/Section";
@@ -18,10 +19,9 @@ export const QaSection = () => {
     const getTranslation = useTranslations("Buttons");
 
     const router = useRouter();
-    const locale = useLocale();
 
     const handleButtonClick = () => {
-        router.push(`/${locale}/faq`);
+        router.push(`/faq`);
         sendGTMEvent({
             event: "learn_more_faq",
         });

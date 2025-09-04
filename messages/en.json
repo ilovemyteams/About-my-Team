@@ -140,7 +140,8 @@
         "onlinestores": "Online store",
         "websites": "Website",
         "showAll": "Show all",
-        "showLess": "Show less"
+        "showLess": "Show less",
+        "allMembers": "All participants"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
