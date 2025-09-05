@@ -1,17 +1,18 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import React from "react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { Button } from "../../shared/Button";
 // import { IconLike } from "../../shared/Icons/IconLike";
 // import { IconScales } from "../../shared/Icons/IconScales";
 import { Avatar } from "./parts/Avatar";
 import { Domains } from "./parts/Domains";
+import { MemberCardLink } from "./parts/MemberCardLink";
 // import { IconButton } from "./parts/IconButton";
 import { Statistics } from "./parts/Statistics";
 import { Technologies } from "./parts/Technologies";
+import { ViewProfileButton } from "./parts/ViewProfileButton";
 
 interface MemberCardProps {
     member: MemberDataItemType;
@@ -46,21 +47,16 @@ const generateRandomStatus = (): StatusType => {
 
 export const TeamCard = ({ member }: MemberCardProps) => {
     const locale = useLocale();
-    const t = useTranslations("MemberPage");
+
     const langData = member[locale as LocaleType];
-    const { imageURL, position, pricePerHour, projectsExperience, tools } =
+    const { imageURL, position, pricePerHour, projectsExperience, tools, id } =
         member.data;
 
     const status = generateRandomStatus();
     const randomExperience = Math.floor(Math.random() * 10 + 1);
+
     return (
-        <div
-            className="mx-auto w-full relative z-5 max-w-[408px] tab:max-w-[350px] pc:min-w-[320px] h-full px-4 tab:px-5 pc:px-4 py-5 isolate 
-        border-purple-strokeLight bg-white-200 dark:bg-purple-200 dark:bg-teamCardGradientDark border-[1px] dark:border-purple-stroke
-       hover:before:opacity-100 focus:before:opacity-100 active:before:opacity-100
-        cursor-pointer before:transition-opacity before:duration-500
-        before:absolute before:z-[-1] before:opacity-0 before:inset-0 before:bg-hoverTeamCardGradientLight before:dark:bg-hoverTeamCardGradientDark"
-        >
+        <MemberCardLink id={id}>
             <div className="flex flex-col items-start gap-4 max-w-[288px] mx-auto">
                 {/* Block with like and compare buttons */}
                 {/* <div className="absolute top-0 right-0 flex  tab:flex-col-reverse">
@@ -99,14 +95,8 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 />
                 <Technologies tools={tools} />
                 <Domains domains={domainExample} />
-                <Button
-                    color="grey"
-                    className="w-full max-w-[270px] mx-auto"
-                    size="small"
-                >
-                    {t("seeProfile")}
-                </Button>
+                <ViewProfileButton />
             </div>
-        </div>
+        </MemberCardLink>
     );
 };
