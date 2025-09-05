@@ -28,23 +28,29 @@ export const TeamList = ({
                   item => item.data.categoryName === selectedMembers
               );
 
+    // ToDo: view only ilovemyteam member -> then need remove this array and change to filteredMembers
+    const memberForPagination = filteredMembers.filter(member =>
+        member.data.projectId.includes("ilovemyteam-online")
+    );
+
     const {
         dataSlice: visibleList,
         totalPages,
         isPaginationNeeded,
-    } = usePaginationData(filteredMembers, ITEMS_PER_PAGE, pageNumber);
+    } = usePaginationData(memberForPagination, ITEMS_PER_PAGE, pageNumber);
 
+    // ToDo: change memberForPagination to filteredMembers + line 52 with translations
     const membersCount =
         pageNumber !== totalPages
             ? ITEMS_PER_PAGE * pageNumber
-            : filteredMembers.length;
+            : memberForPagination.length;
 
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <p className="text-purple-130 dark:text-purple-50 mb-6 tab:mb-[26px] desk:mb-8 deskxl:mb-9 text-sm tab:text-base desk:text-lg ">
                 {membersCount}{" "}
                 {t.rich("membersCount", {
-                    count: filteredMembers.length,
+                    count: memberForPagination.length,
                 })}
             </p>
             <ul
