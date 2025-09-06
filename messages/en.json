@@ -394,6 +394,7 @@
         "seeProfile": "view profile",
         "statRate": "${rate}/h",
         "statExperience": "experience: {experience, plural, =1 {1 yr.} other {# yrs.}}",
-        "statProjects": "projects: {projects}"
+        "statProjects": "projects: {projects}",
+        "leftProject": "Left the project"
     }
 }

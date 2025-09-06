@@ -1,4 +1,4 @@
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
@@ -47,17 +47,26 @@ const generateRandomStatus = (): StatusType => {
 
 export const TeamCard = ({ member }: MemberCardProps) => {
     const locale = useLocale();
+    const t = useTranslations("MemberPage");
 
     const langData = member[locale as LocaleType];
-    const { imageURL, position, pricePerHour, projectsExperience, tools, id } =
-        member.data;
+    const {
+        imageURL,
+        position,
+        pricePerHour,
+        projectsExperience,
+        tools,
+        id,
+        isEndInAboutMT,
+        gender,
+        careerStart,
+    } = member.data;
 
     const status = generateRandomStatus();
-    const randomExperience = Math.floor(Math.random() * 10 + 1);
 
     return (
-        <MemberCardLink id={id}>
-            <div className="flex flex-col items-start gap-4 max-w-[288px] mx-auto">
+        <MemberCardLink id={id} isActive={!isEndInAboutMT}>
+            <div className="flex flex-col items-start gap-4 max-w-[288px] mx-auto h-full">
                 {/* Block with like and compare buttons */}
                 {/* <div className="absolute top-0 right-0 flex  tab:flex-col-reverse">
                     <IconButton label={t("compareBtnDesc")}>
@@ -91,11 +100,19 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 <Statistics
                     projectsCount={projectsExperience.length}
                     pricePerHour={pricePerHour}
-                    experience={randomExperience}
+                    careerStart={careerStart}
                 />
                 <Technologies tools={tools} />
                 <Domains domains={domainExample} />
-                <ViewProfileButton />
+                <div className="grow w-full flex items-center justify-center">
+                    {isEndInAboutMT ? (
+                        <p className="font-caviar font-bold text-lg">
+                            {t("leftProject", { gender })}
+                        </p>
+                    ) : (
+                        <ViewProfileButton />
+                    )}
+                </div>
             </div>
         </MemberCardLink>
     );

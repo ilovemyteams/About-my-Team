@@ -29,9 +29,13 @@ export const TeamList = ({
               );
 
     // ToDo: view only ilovemyteam member -> then need remove this array and change to filteredMembers
-    const memberForPagination = filteredMembers.filter(member =>
-        member.data.projectId.includes("ilovemyteam-online")
-    );
+    const memberForPagination = filteredMembers
+        .filter(member => member.data.projectId.includes("ilovemyteam-online"))
+        .toSorted((a, b) => {
+            const isLeftA = a.data.isEndInAboutMT ? 1 : 0;
+            const isLeftB = b.data.isEndInAboutMT ? 1 : 0;
+            return isLeftA - isLeftB;
+        });
 
     const {
         dataSlice: visibleList,
@@ -48,7 +52,7 @@ export const TeamList = ({
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <p className="text-purple-130 dark:text-purple-50 mb-6 tab:mb-[26px] desk:mb-8 deskxl:mb-9 text-sm tab:text-base desk:text-lg ">
-                {membersCount}{" "}
+                {membersCount}
                 {t.rich("membersCount", {
                     count: memberForPagination.length,
                 })}

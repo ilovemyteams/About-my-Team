@@ -258,6 +258,8 @@ const config: Config = {
                 error: "#D60000",
                 textHighlight: "#30253E",
                 easterGlaze: "#FFDDEC",
+                cardDisabledDark: "#3d1d52",
+                cardDisabledLight: "#E3E3E3",
             },
             fill: {
                 stroke: "#5F3F87",
@@ -654,6 +656,8 @@ const config: Config = {
                 "linear-gradient(90deg, #4F0A86 0%, #20003F 100%)",
             hoverTeamCardGradientLight:
                 "linear-gradient(180.02deg, rgba(180, 145, 255, 0.8) 0.01%, rgba(207, 184, 255, 0.8) 25.01%, rgba(234, 224, 255, 0.8) 50%, rgba(246, 242, 255, 0.8) 74.99%, rgba(254, 253, 255, 0.8) 99.99%)",
+            disabledTeamCardDark:
+                "linear-gradient(0deg, rgba(130, 97, 156, 0.3) 0%, rgba(130, 97, 156, 0.3) 100%)",
         },
 
         backgroundSize: {
