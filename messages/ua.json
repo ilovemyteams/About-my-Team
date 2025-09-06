@@ -389,6 +389,7 @@
         "seeProfile": "дивитись профіль",
         "statRate": "${rate}/год",
         "statExperience": "досвід: {experience} р.",
-        "statProjects": "проєкти: {projects}"
+        "statProjects": "проєкти: {projects}",
+        "leftProject": "{gender, select, female {вийшла} male {вийшов} other {вийшли}} з проєкту"
     }
 }

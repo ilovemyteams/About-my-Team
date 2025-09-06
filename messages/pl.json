@@ -395,6 +395,7 @@
         "seeProfile": "wyświetl profil",
         "statRate": "${rate}/h",
         "statExperience": "dośw: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
-        "statProjects": "projekty: {projects}"
+        "statProjects": "projekty: {projects}",
+        "leftProject": "{gender, select, female {wyszła} male {wyszedł}} other{wyszli} z projektu"
     }
 }

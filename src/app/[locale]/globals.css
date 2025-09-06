@@ -126,4 +126,18 @@ body {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    .disabled-bg-member-card {
+        background: linear-gradient(0deg, #e3e3e3, #e3e3e3), #fbf8ff;
+
+        @media (prefers-color-scheme: dark) {
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(130, 97, 156, 0.3),
+                    rgba(130, 97, 156, 0.3)
+                ),
+                #1f0033;
+        }
+    }
 }
