@@ -31,8 +31,14 @@ export const SomeProjectPage = ({
         member.data.projectId.includes(currentProjectSlug)
     );
 
-    const { technologies, mediaForHero, behanceLink, adaptive, siteLink } =
-        currentProject.data;
+    const {
+        technologies,
+        mediaForHero,
+        behanceLink,
+        adaptive,
+        siteLink,
+        domains,
+    } = currentProject.data;
 
     const feedbackCurrent = feedbackData.filter(
         feedback => feedback.data.slug === currentProjectSlug
@@ -53,6 +59,7 @@ export const SomeProjectPage = ({
                     deadlines={deadlines}
                     name={name}
                     siteLink={siteLink}
+                    domains={domains}
                 />
             ) : (
                 <UnderConstruction />

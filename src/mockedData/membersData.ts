@@ -3048,4 +3048,50 @@ export const membersData: MemberDataItemType[] = [
             team: "I Love My Team",
         },
     },
+    {
+        data: {
+            id: "iryna-andrushchenko-ui-ux-designer",
+            projectId: ["ilovemyteam-online"],
+            gender: "female",
+            imageURL: "",
+            position: "UI/UX designer",
+            categoryName: "designer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "10",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/iryna-andrushchenko/",
+                behance: "https://www.behance.net/andrushchenko",
+                telegram: "https://t.me/ignis_creatio",
+            },
+            tools: [
+                "Figma",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Cinema 4D",
+                "ProtoPie",
+            ],
+            careerStart: "2023-04",
+        },
+        ua: {
+            name: "Ірина Андрущенко",
+            about: "Хороший дизайн непомітний, але його вплив залишається назавжди.",
+            services:
+                "Я людина, а не робот — моя креативність, ідеї та увага до деталей надають кожному проєкту унікальності. Як UI/UX та вебдизайнер, я зосереджуюсь на гармонійному поєднанні естетики й функціональності, створюючи інтуїтивні та захопливі користувацькі досвіди. Я досягаю найкращих результатів у командному середовищі, де цінують відкритість, обмін ідеями та співпрацю. Впевнено працюю у Figma, приділяю багато уваги деталям і постійно вдосконалюю свої навички, вивчаючи нові методології та надихаючись сучасними тенденціями у дизайні.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Iryna Andrushchenko",
+            about: "Great design is invisible, yet its influence endures.",
+            services:
+                "I am a human, not a robot — my creativity, ideas, and attention to detail bring uniqueness to every project. As a UI/UX and web designer, I focus on seamlessly combining aesthetics with functionality to deliver intuitive and engaging user experiences. I thrive in collaborative environments that value openness, idea exchange, and teamwork. Proficient in Figma, I pay close attention to detail and continuously enhance my skills by exploring new methodologies and staying inspired by the latest design trends.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Iryna Andrushchenko",
+            about: "Dobry projekt pozostaje niewidoczny, lecz jego oddziaływanie trwa wiecznie.",
+            services:
+                "Jestem człowiekiem, a nie robotem — moja kreatywność, pomysły i dbałość o szczegóły nadają każdemu projektowi wyjątkowy charakter. Jako projektant UI/UX i stron internetowych koncentruję się na harmonijnym łączeniu estetyki z funkcjonalnością, aby tworzyć intuicyjne i angażujące doświadczenia użytkownika. Najlepiej odnajduję się w środowiskach zespołowych, w których ceni się otwartość, wymianę pomysłów i współpracę. Biegle posługuję się Figmą, zwracam dużą uwagę na detale i nieustannie rozwijam swoje umiejętności, poznając nowe metody oraz inspirując się najnowszymi trendami w projektowaniu.",
+            team: "I Love My Team",
+        },
+    },
 ];
