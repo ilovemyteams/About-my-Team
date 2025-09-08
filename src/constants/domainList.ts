@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 export const domainList = [
     "AI/ML",
     "AR/VR",
