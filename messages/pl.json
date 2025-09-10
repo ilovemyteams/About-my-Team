@@ -391,11 +391,13 @@
         "compareBtnDesc": "Dodaj do listy porównań",
         "wishBtnDesc": "Dodaj do ulubionych uczestników",
         "status": "Status członka",
-        "membersCount": "{count, plural, one {z # członek} few {z # członkowie} many {z # członków} other {z # członków}}",
+        "membersCount": "{count, plural, one { z # członek} few { z # członkowie} many { z # członków} other { z # członków}}",
         "seeProfile": "wyświetl profil",
         "statRate": "${rate}/h",
         "statExperience": "dośw: {experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
         "statProjects": "projekty: {projects}",
-        "leftProject": "{gender, select, female {wyszła} male {wyszedł} other{wyszli}}  z projektu"
+        "leftProject": "poza projektem",
+        "joinUsTitle": "Twoje zdjęcie może być tutaj",
+        "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach"
     }
 }

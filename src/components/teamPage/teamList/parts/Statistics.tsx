@@ -32,10 +32,12 @@ export const Statistics = ({
 
     const experience =
         diffMonth > 2
-            ? Math.floor(diffMonth)
-            : Number(diffMonth.toFixed(1)) === 1
-              ? 1
-              : diffMonth.toFixed(1);
+            ? Math.round(diffMonth)
+            : diffMonth > 1.5
+              ? 1.5
+              : diffMonth < 1
+                ? 0.5
+                : 1;
 
     return (
         <ul className="w-full grid grid-cols-2 grid-row-2 gap-2 ">
