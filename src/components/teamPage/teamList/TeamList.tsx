@@ -7,6 +7,7 @@ import { membersData } from "@/src/mockedData/membersData";
 
 import { PageSection } from "../../shared/PageSection";
 import { Pagination } from "../../shared/Pagination";
+import { NewMemberCard } from "./parts/NewMemberCard";
 import { TeamCard } from "./TeamCard";
 
 const ITEMS_PER_PAGE = 12;
@@ -49,6 +50,7 @@ export const TeamList = ({
             ? ITEMS_PER_PAGE * pageNumber
             : memberForPagination.length;
 
+    console.log(memberForPagination.length % ITEMS_PER_PAGE);
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <p className="text-purple-130 dark:text-purple-50 mb-6 tab:mb-[26px] desk:mb-8 deskxl:mb-9 text-sm tab:text-base desk:text-lg ">
@@ -69,6 +71,12 @@ export const TeamList = ({
                         <TeamCard member={member} />
                     </li>
                 ))}
+                {memberForPagination.length % ITEMS_PER_PAGE !== 0 &&
+                    pageNumber === totalPages && (
+                        <li>
+                            <NewMemberCard />
+                        </li>
+                    )}
             </ul>
             {isPaginationNeeded && (
                 <Pagination total={totalPages} currentPage={pageNumber} />

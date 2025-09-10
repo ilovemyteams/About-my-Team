@@ -27,7 +27,6 @@ export type DataType = {
     tools: string[];
     isEndInAboutMT?: boolean;
     careerStart: string;
-    gender: "male" | "female" | "other";
 };
 
 export type MemberDataItemType = {
@@ -41,7 +40,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "susanna-salata-product-manager",
-            gender: "female",
+
             projectId: [
                 "ilovemyteam-online",
                 "batatfarm-com",
@@ -84,7 +83,7 @@ export const membersData: MemberDataItemType[] = [
                 "Data Analysis",
                 "A/B test",
             ],
-            careerStart: "2022-02",
+            careerStart: "2022-11",
         },
         ua: {
             name: "Сусанна Салата",
@@ -112,7 +111,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "mariia-popova-designer-graphic-designer-ui-ux-designer",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/mariia-popova_aan7kg.jpg",
             position: "Graphic Designer/ UI/UX designer",
@@ -159,7 +158,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "svitlana-kondratenko-business-analyst",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/svitlana-kondratenko_isz00m.jpg",
             position: "Business Analyst",
@@ -213,7 +212,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "vlad-shumkov-fullstack-developer",
             projectId: ["ilovemyteam-online", "batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Shymkov_tntedf.jpg",
             position: "Fullstack Developer",
@@ -268,7 +267,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "ihor-dronishynets-fullstack-developer",
             projectId: ["ilovemyteam-online", "batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/Igor_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_ixtmyr.png",
             position: "Fullstack developer",
@@ -330,7 +329,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-stoliarova-ui-ux-designer",
-            gender: "female",
+
             projectId: [
                 "ilovemyteam-online",
                 "protection-in-ua",
@@ -383,7 +382,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anastasiia-nazarenko-graphic-designer",
             projectId: ["ilovemyteam-online", "protection-in-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Nazarenko_rk3nvk.jpg",
             position: "Graphic Designer",
@@ -403,7 +402,7 @@ export const membersData: MemberDataItemType[] = [
                 "After Effects",
                 "Jira",
             ],
-            careerStart: "2022-02",
+            careerStart: "2022-12",
             isEndInAboutMT: true,
         },
         ua: {
@@ -432,7 +431,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-trynkal-fullstack-developer",
-            gender: "female",
+
             projectId: [
                 "ilovemyteam-online",
                 "protection-in-ua",
@@ -493,7 +492,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olena-posternak-frontend-developer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/OlenaPosternak_ywdiuy.jpg",
             position: "FrontEnd Developer",
@@ -546,7 +545,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olga-mykhailova-frontend-developer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/OlgaMykhailova_v9nbxu.jpg",
             position: "FrontEnd Developer",
@@ -605,7 +604,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "kateryna-rubanik-qa-engineer",
             projectId: ["ilovemyteam-online", "protection-in-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/Rubanik_swr3v3.png",
             position: "QA engineer",
@@ -640,21 +639,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Катерина Рубанік",
-            about: "QA-інженер з досвідом у тестуванні ПЗ. Володію навичками тестування, аналізу та виявлення помилок для забезпечення бездоганної якості продукту.",
+            about: "Жодна дрібниця не дрібниця, коли йдеться про якість.",
             services:
                 "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Rubanik",
-            about: "QA engineer with experience in software testing. I have the skills to test, analyze and identify errors to ensure flawless product quality.",
+            about: "No detail is minor when it comes to quality.",
             services:
                 "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
             team: "I Love My Team",
         },
         pl: {
             name: "Kateryna Rubanik",
-            about: "Inżynier QA z doświadczeniem w testowaniu oprogramowania. Posiadam umiejętności testowania, analizowania i wykrywania błędów w celu zapewnienia nienagannej jakości produktu.",
+            about: "Żaden szczegół nie jest drobiazgiem, gdy chodzi o jakość.",
             services:
                 "Tworzenie dokumentacji testowej (plany testów, listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
             team: "I Love My Team",
@@ -664,7 +663,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "eugene-serdiuk-fullstack-developer",
             projectId: ["batatfarm-com", "ilovemyteam-online"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/eugene-serdiuk_wmghk8.jpg",
             position: "Fullstack Developer",
@@ -688,7 +687,7 @@ export const membersData: MemberDataItemType[] = [
                 "HTML",
                 "CSS",
             ],
-            careerStart: "2023-11",
+            careerStart: "2023-07",
         },
         ua: {
             name: "Євген Сердюк",
@@ -716,7 +715,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "susanna-salata-business-analyst",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/SusannaSalata_kpudlm.jpg",
             position: "Business Analyst",
@@ -778,7 +777,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "denis-slivinskyi-fullstack-developer",
             projectId: ["batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Slivinskyi_xvvwbs.jpg",
             position: "Fullstack Developer",
@@ -834,7 +833,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "volodymyr-dehtiarev-fullstack-developer",
             projectId: ["batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/volodymyr_dehtiarev_pwh5v7.jpg",
             position: "Fullstack Developer",
@@ -885,7 +884,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olena-chornobryvets-qa-engineer",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Chornobryvec_a5gkha.jpg",
             position: "QA Engineer",
@@ -933,7 +932,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "hanna-horbenko-qa-engineer",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742561627/Hanna_Horbenko_ynmaef.jpg",
             position: "QA Engineer",
@@ -988,7 +987,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anna-klyba-qa-engineer",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anna_Klyba_faaoeq.jpg",
             position: "QA Engineer",
@@ -1042,7 +1041,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oksana-luchko-qa-engineer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560788/oksana-luchko_qotwzx.jpg",
             position: "QA Engineer",
@@ -1065,7 +1064,7 @@ export const membersData: MemberDataItemType[] = [
                 "Figma",
             ],
             isEndInAboutMT: true,
-            careerStart: "2024-08",
+            careerStart: "2024-03",
         },
         ua: {
             name: "Оксана Лучко",
@@ -1093,7 +1092,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "nadia-hubchuk-qa-engineer",
             projectId: ["ilovemyteam-online", "alex-chudov"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/nadia-hubchuk_c4pyg4.jpg",
             position: "QA Engineer",
@@ -1118,7 +1117,7 @@ export const membersData: MemberDataItemType[] = [
                 "GitHub",
                 "Swager",
             ],
-            careerStart: "2024-08",
+            careerStart: "2024-03",
             isEndInAboutMT: true,
         },
         ua: {
@@ -1147,7 +1146,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "tetiana-seletska-project-manager-scrum-master",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/tetiana-seletska_skb82g.jpg",
             position: "Project Manager/ Scrum Master",
@@ -1168,7 +1167,7 @@ export const membersData: MemberDataItemType[] = [
                 "Slack",
                 "Teams",
             ],
-            careerStart: "2024-03",
+            careerStart: "2023-12",
         },
         ua: {
             name: "Тетяна Селецька",
@@ -1196,7 +1195,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "daria-cherviakova-project-manager-scrum-master",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/DariaCherviakova_dktdja.jpg",
             position: "Project Manager/ Scrum Master",
@@ -1248,7 +1247,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "hanna-truba-marketer",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anna_Truba_q79zxy.jpg",
             position: "Marketer",
@@ -1296,7 +1295,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olena-holubonkova-marketer",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/olena-holubonkova_onfmob.jpg",
             position: "Marketer",
@@ -1344,7 +1343,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "marta-morintseva-qa-engineer",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Marta_Morintseva_crc9p8.jpg",
             position: "QA Engineer",
@@ -1398,7 +1397,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "iryna-shevchenko-business-analyst",
             projectId: ["batatfarm-com"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
             position: "Business Analyst",
@@ -1452,7 +1451,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "natali-istomina-marketer",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
             position: "Marketer",
@@ -1502,7 +1501,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "natali-istomina-business-analyst",
             projectId: ["theatermag-com-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
             position: "Business Analyst",
@@ -1551,7 +1550,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "veronika-zlobina-ui-ux-designer",
             projectId: ["theatermag-com-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/Veronika_Zlobina_njpuov.jpg",
             position: "UI/UX designer",
@@ -1604,7 +1603,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "mila-maksymenko-ui-ux-designer",
-            gender: "female",
+
             projectId: [
                 "ilovemyteam-online",
                 "theatermag-com-ua",
@@ -1677,7 +1676,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anton-chertok-frontend-developer",
             projectId: ["theatermag-com-ua", "batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anton_Chertok_ocqrx9.jpg",
             position: "FrontEnd Developer",
@@ -1731,7 +1730,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "dmytro-bulakhov-frontend-developer",
-            gender: "male",
+
             projectId: [
                 "theatermag-com-ua",
                 "batatfarm-com",
@@ -1794,7 +1793,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "evhen-malysh-backend-developer",
             projectId: ["theatermag-com-ua"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/evhen-malysh_mcxosc.jpg",
             position: "Backend Developer",
@@ -1848,7 +1847,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anatolii-omelchenko-backend-developer",
             projectId: ["theatermag-com-ua"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/Omelchenko_Anatolii_v41sue.jpg",
             position: "Backend Developer",
@@ -1900,7 +1899,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oleksandr-meshcherskyi-fullstack-developer",
             projectId: ["batatfarm-com", "theatermag-com-ua"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/oleksandr-meshcherskyi_cyuio8.jpg",
             position: "Fullstack Developer",
@@ -1951,7 +1950,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "svitlana-krokhmalna-qa-engineer",
             projectId: ["theatermag-com-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744802867/Svitlana_Krokhmalna_wqiqqt.jpg",
             position: "QA Engineer",
@@ -2001,7 +2000,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oksana-onopriienko-qa-engineer",
             projectId: ["theatermag-com-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/Oksana_Onopriienko_fgilcy.jpg",
             position: "QA Engineer",
@@ -2051,7 +2050,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olena-halushka-ui-ux-designer",
             projectId: ["batatfarm-com", "theatermag-com-ua"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Olena_Halushka_tdfnpu.jpg",
             position: "UI/UX designer",
@@ -2111,7 +2110,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "mariia-cherevko-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Mariia_Cherevko_ieqg8o.png",
             position: "UI/UX designer",
@@ -2139,7 +2138,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Марія Черевко",
-            about: "Хороший дизайн — це як хороший жарт: якщо треба пояснювати, він не працює.",
+            about: "Хороший дизайн - це як хороший жарт: якщо треба пояснювати, він не працює.",
             services:
                 "Як UX/UI дизайнер, я починаю з аналізу потреб клієнта і користувачів. Досліджую ринок і визначаю ключові вимоги до продукту, аналізую цільову аудиторію і визначаю її майбутній шлях на продукті. Потім створюю концепцію, прототипи і тестую їх з користувачами. Після цього розробляю візуальний дизайн і співпрацюю з розробниками для його впровадження. Після запуску вдосконалюю продукт на основі відгуків користувачів.",
             team: "i love my team",
@@ -2163,7 +2162,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anna-prutnik-frontend-developer",
             projectId: ["ilovemyteam-online", "alex-chudov", "hoida-liudmyla"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1756818018/Anna_Prutnik_xzixw6.jpg",
             position: "FrontEnd Developer",
@@ -2199,7 +2198,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анна Прутнік",
-            about: "Щастя — це робити те, що любиш.",
+            about: "Щастя - це робити те, що любиш.",
             services:
                 "Створення адаптивних веб-додатків з сучасним, зручним та інтуїтивним інтерфейсом, що вирішують конкретні бізнес-завдання та забезпечують стабільну роботу.",
             team: "i love my team",
@@ -2223,7 +2222,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oleksandr-petrychuk-fullstack-developer",
             projectId: ["ilovemyteam-online"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560772/Alex_Petrychuk_jwgo0v.jpg",
             position: "Fullstack Developer",
@@ -2246,7 +2245,7 @@ export const membersData: MemberDataItemType[] = [
                 "Bootstrap",
                 "TailwindCSS",
             ],
-            careerStart: "2024-08",
+            careerStart: "2024-07",
             isEndInAboutMT: true,
         },
         ua: {
@@ -2275,7 +2274,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "eugene-siedinin-qa-engineer",
             projectId: ["batatfarm-com"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560781/eugene-siedinin_oqebmc.jpg",
             position: "QA Engineer",
@@ -2326,7 +2325,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oleksandr-shcherbak-qa-engineer",
             projectId: ["ilovemyteam-online", "willow-motion"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1743177906/Alex_Shcherbak_wo0hqq.jpg",
             position: "QA Engineer",
@@ -2381,7 +2380,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "solomiia-lutska-project-project-manager-scrum-master",
             projectId: ["ilovemyteam-online", "alex-chudov"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
             position: "Project Manager/ Scrum Master",
@@ -2402,7 +2401,7 @@ export const membersData: MemberDataItemType[] = [
                 "Teams",
                 "Microsoft Office",
             ],
-            careerStart: "2024-08",
+            careerStart: "2024-06",
             isEndInAboutMT: true,
         },
         ua: {
@@ -2431,7 +2430,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oksana-arpul-qa-engineer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744795126/Oksana_QA_lnllhm.jpg",
             position: "QA Engineer",
@@ -2481,7 +2480,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "viktoriia-lapina-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744827270/Viktoriia_UIUX_m5lnsb.jpg",
             position: "UI/UX designer",
@@ -2523,7 +2522,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "stepan-kozurak-project-project-manager",
             projectId: ["ilovemyteam-online", "willow-motion"],
-            gender: "male",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830870/Stepan_PM_crqljr.jpg",
             position: "Project Manager",
@@ -2557,21 +2556,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Степан Козурак",
-            about: "Робота - не вовк, ліс - не великий...",
+            about: "Робота - не вовк, ліс - не великий.",
             services:
                 "Планування та робота з командою; збереження продуктивності членів команди, запобігання вигорянню. Ризик менеджмент та конфліктологія. Продуктова психологія, її вплив на проєктний менеджмент та взаємозв’язок з ринковими потребами.",
             team: "I Love My Team",
         },
         en: {
             name: "Stepan Kozurak",
-            about: "Work isn’t a wolf, and the forest isn’t that big...",
+            about: "Work isn’t a wolf, and the forest isn’t that big.",
             services:
                 "Team planning and collaboration; maintaining team performance and preventing burnout. Risk management and conflict resolution. Product psychology, its impact on project management, and its alignment with market needs.",
             team: "I Love My Team",
         },
         pl: {
             name: "Stepan Kozurak",
-            about: "Robota to nie wilk, las nie jest taki wielki...",
+            about: "Robota to nie wilk, las nie jest taki wielki.",
             services:
                 "Planowanie i współpraca zespołowa; utrzymanie wydajności członków zespołu oraz zapobieganie wypaleniu zawodowemu. Zarządzanie ryzykiem i rozwiązywanie konfliktów. Psychologia produktu, jej wpływ na zarządzanie projektami oraz powiązanie z potrzebami rynkowymi.",
             team: "I Love My Team",
@@ -2581,7 +2580,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "oksana-zhmurko-business-analyst",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830866/Oksana_BA_pnmuxb.jpg",
             position: "Business Analyst",
@@ -2634,7 +2633,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "diana-dudnyk-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Diana_Dudnyk_vnqr9p.jpg",
             position: "UI/UX designer",
@@ -2651,7 +2650,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Діана Дудник",
-            about: "Мистецтво дизайну — це трансформація хаосу в чітку структуру.",
+            about: "Мистецтво дизайну - це трансформація хаосу в чітку структуру.",
             services:
                 "Створюю інтерфейси, які поєднують функціональність, зручність та естетику. Моє головне завдання — зробити взаємодію користувача з продуктом інтуїтивно зрозумілою. Завжди орієнтуюсь на дослідження, потреби цільової аудиторії та чітку структуру. Вірю, що хороший дизайн починається з глибокого розуміння користувача та його очікувань. ",
             team: "I Love My Team",
@@ -2675,7 +2674,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "vladyslava-bobko-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Vladyslava_ob9fnl.jpg",
             position: "UI/UX designer",
@@ -2701,7 +2700,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Владислава Бобко",
-            about: "Мій підхід — це баланс витонченості та логіки: дизайн, гідний королівської уваги.",
+            about: "Мій підхід - це баланс витонченості та логіки: дизайн, гідний королівської уваги.",
             services:
                 "Я UX/UI дизайнер, який створює інтуїтивні та привабливі цифрові продукти. Починаю з дослідження користувачів, аналізу ринку та визначення бізнес-цілей. На основі цього формую структуру інтерфейсу, розробляю прототипи та перевіряю їх у тестуванні. Потім створюю візуальний дизайн, що поєднує естетику та функціональність. Упроваджую рішення разом із командою розробників і вдосконалюю продукт на основі зворотного зв’язку.",
             team: "I Love My Team",
@@ -2715,7 +2714,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Vladyslava Bobko",
-            about: "Moje podejście to równowaga między finezją a logiką — design godny królewskiej uwagi.",
+            about: "Moje podejście to równowaga między finezją a logiką - design godny królewskiej uwagi.",
             services:
                 "Jestem projektantem UX/UI, który tworzy intuicyjne i atrakcyjne produkty cyfrowe. Zaczynam od badania użytkowników, analizy rynku i definiowania celów biznesowych. Na tej podstawie kształtuję strukturę interfejsu, opracowuję prototypy i waliduję je w testach. Następnie tworzę projekt wizualny, który łączy estetykę i funkcjonalność. Wdrażam rozwiązanie wraz z zespołem programistów i ulepszam produkt w oparciu o informacje zwrotne.",
             team: "I Love My Team",
@@ -2725,7 +2724,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "kateryna-pogrebna-qa-engineer",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/KaterynaPogrebna_cwu2q7.jpg",
             position: "QA engineer",
@@ -2789,7 +2788,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "yuliya-borys-business-analyst",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560801/yuliya-borys_rwhbnu.jpg",
             position: "Business Analyst",
@@ -2836,7 +2835,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olha-kuchalska-business-analyst",
             projectId: [],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/OlhaKuchalska_j6guiu.jpg",
             position: "Business Analyst",
@@ -2886,7 +2885,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "natalia-kalabanova-scrum-master",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746728153/Natalia_scrum_thmq0m.png",
             position: "Project Manager/ Scrum Master",
@@ -2918,7 +2917,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Наталя Калабанова",
-            about: "Less is more.",
+            about: "Менше - це більше.",
             services:
                 "Як Scrum Master, я організовую роботу команди, підтримую сприятливе середовище для співпраці та ефективно впроваджую принципи Agile. Проводжу щоденні stand-up мітинги для синхронізації роботи, усуваю перешкоди, координую виконання завдань спринтів і стежу за дотриманням термінів. Забезпечую прозору комунікацію між розробниками, дизайнерами та іншими стейкхолдерами, планую спринти, управління ризиками та контролюю прогрес команди. Я також проводжу ретроспективи для вдосконалення процесів, щоб забезпечити якісну та своєчасну реалізацію проєкту.",
             team: "I Love My Team",
@@ -2932,7 +2931,7 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Natalia Kalabanova",
-            about: "Less is more.",
+            about: "Mniej znaczy więcej.",
             services:
                 "Jako Scrum Master organizuję przepływ pracy zespołu, wspieram środowisko sprzyjające współpracy i skutecznie wdrażam zasady Agile. Prowadzę codzienne spotkania typu stand-up, aby synchronizować wysiłki zespołu, usuwać przeszkody, koordynować zadania sprintu i zapewniać dotrzymywanie terminów. Ułatwiam przejrzystą komunikację między programistami, projektantami i innymi interesariuszami, planuję sprinty, zarządzam ryzykiem i monitoruję postępy zespołu. Dodatkowo prowadzę retrospektywy w celu ciągłego doskonalenia procesów i zapewnienia, że projekt jest dostarczany na czas i w wysokiej jakości.",
             team: "I Love My Team",
@@ -2942,7 +2941,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "tetiana-drofa-project-manager",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746727912/Tanya_PM_cj71fj.jpg",
             position: "Project Manager",
@@ -2979,7 +2978,7 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Тетяна Дрофа",
-            about: "Моя мета — досягати результатів вчасно, якісно та з командною підтримкою.",
+            about: "Моя мета - досягати результатів вчасно, якісно та з командною підтримкою.",
             services:
                 "Я  орієнтований на результат проєктний менеджер з досвідом керування командами від 5 осіб. Вмію організовувати чітку комунікацію всередині команди та зі стейкхолдерами, що забезпечує прозорість і синхронність у роботі. Ефективно контролюю виконання завдань, дотримуюсь дедлайнів і забезпечую якісні результати. Оперативно вирішую проблеми, підтримуючи стабільний темп проєкту.",
             team: "I Love My Team",
@@ -3003,7 +3002,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "olga-ustymenko-qa",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL: "",
             position: "QA Engineer",
             categoryName: "qa",
@@ -3052,7 +3051,7 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "iryna-andrushchenko-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
-            gender: "female",
+
             imageURL: "",
             position: "UI/UX designer",
             categoryName: "designer",

@@ -39,7 +39,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         tools,
         id,
         isEndInAboutMT,
-        gender,
+
         careerStart,
         projectId,
     } = member.data;
@@ -98,7 +98,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 <div className="grow w-full flex items-center justify-center">
                     {isEndInAboutMT ? (
                         <p className="font-caviar font-bold text-lg">
-                            {t("leftProject", { gender })}
+                            {t("leftProject")}
                         </p>
                     ) : (
                         <ViewProfileButton />
