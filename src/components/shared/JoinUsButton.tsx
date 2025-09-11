@@ -27,7 +27,7 @@ export const JoinUsButton = ({
             }
             target="_blank"
             rel="noopener noreferrer"
-            className="outline-none w-fit mx-auto"
+            className="outline-none"
         >
             <Button color="grey" size={btnSize} className={className}>
                 {getTranslation("Buttons.joinUs")}

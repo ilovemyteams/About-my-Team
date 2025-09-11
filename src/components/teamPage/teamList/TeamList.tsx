@@ -50,7 +50,6 @@ export const TeamList = ({
             ? ITEMS_PER_PAGE * pageNumber
             : memberForPagination.length;
 
-    console.log(memberForPagination.length % ITEMS_PER_PAGE);
     return (
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <p className="text-purple-130 dark:text-purple-50 mb-6 tab:mb-[26px] desk:mb-8 deskxl:mb-9 text-sm tab:text-base desk:text-lg ">

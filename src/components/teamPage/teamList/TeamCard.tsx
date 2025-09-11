@@ -97,7 +97,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 <Domains domains={memberDomainList} />
                 <div className="grow w-full flex items-center justify-center">
                     {isEndInAboutMT ? (
-                        <p className="font-caviar font-bold text-lg">
+                        <p className="font-caviar font-bold text-lg lowercase">
                             {t("leftProject")}
                         </p>
                     ) : (
