@@ -23,11 +23,8 @@ export const NewMemberCard = () => {
                         {t("joinUsText")}
                     </p>
                 </div>
-                <div className="flex justify-center">
-                    <JoinUsButton
-                        btnSize="small"
-                        className="w-full max-w-[270px] mx-auto"
-                    />
+                <div className="flex justify-center w-full max-w-[270px] mx-auto">
+                    <JoinUsButton btnSize="small" />
                 </div>
             </div>
         </div>

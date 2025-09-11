@@ -414,7 +414,7 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Anastasiia Nazarenko",
-            about: "Designer is a planner with a sense of beauty",
+            about: "Designer is a planner with a sense of beauty.",
             services:
                 "I offer a range of creative services including logo design and company branding. I specialize in crafting 2D illustrations, both raster and vector, and can create simple animations to bring your ideas to life. My expertise extends to designing media for social networks, typography, and infographics. I also have a solid foundation in UX/UI design, ensuring that your projects are not only visually appealing but also user-friendly and effective.",
             team: "I Love My Team",
@@ -2145,7 +2145,7 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Mariia Cherevko",
-            about: "Good design is like a good joke: if you have to explain it, it doesn't work",
+            about: "Good design is like a good joke: if you have to explain it, it doesn't work.",
             services:
                 "As a UX/UI designer, I start by analyzing the needs of the client and users. I research the market and identify key product requirements, analyze the target audience, and define their future journey with the product. Then, I create a concept, prototypes, and test them with users. After that, I develop the visual design and collaborate with developers for implementation. Following the launch, I refine the product based on user feedback.",
             team: "i love my team",
@@ -2164,7 +2164,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["ilovemyteam-online", "alex-chudov", "hoida-liudmyla"],
 
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1756818018/Anna_Prutnik_xzixw6.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583804/Anna_Prutnik_yd99is.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: [
@@ -2456,21 +2456,21 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Арпуль",
-            about: "Якість - це ключ до впевненості в продукті",
+            about: "Якість - це ключ до впевненості в продукті.",
             services:
                 "Займаюся ручним тестуванням різних типів (функціональне, нефункціональне, UI/UX, API, бази даних, продуктивність), аналізую вимоги, досліджую поведінку продукту, використовую різні підходи до тестування та створюю тестову документацію (test cases, checklists, bug reports).",
             team: "i love my team",
         },
         en: {
             name: "Oksana Arpul",
-            about: "Quality is the key to confidence in a product",
+            about: "Quality is the key to confidence in a product.",
             services:
                 "I perform manual testing of various types (functional, non-functional, UI/UX, API, database, and performance), analyze requirements, explore product behavior, apply different testing approaches, and create test documentation (test cases, checklists, bug reports).",
             team: "i love my team",
         },
         pl: {
             name: "Oksana Arpul",
-            about: "Jakość to klucz do zaufania do produktu",
+            about: "Jakość to klucz do zaufania do produktu.",
             services:
                 "Zajmuję się testowaniem manualnym różnych typów (funkcjonalne, niefunkcjonalne, UI/UX, API, bazy danych i wydajność), analizuję wymagania, badam zachowanie produktu, stosuję różne podejścia do testowania i tworzę dokumentację testową (przypadki testowe, listy kontrolne, raporty o błędach).",
             team: "i love my team",
@@ -2635,7 +2635,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["ilovemyteam-online"],
 
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Diana_Dudnyk_vnqr9p.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Diana_Dudnyk_sokqpn.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2676,7 +2676,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["ilovemyteam-online"],
 
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1749811083/Vladyslava_ob9fnl.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Vladyslava_a7cvmi.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2887,7 +2887,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["ilovemyteam-online"],
 
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746728153/Natalia_scrum_thmq0m.png",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Natalia_Scrum_r8hmyz.jpg",
             position: "Project Manager/ Scrum Master",
             categoryName: "manager",
             projectsExperience: ["ilovemyteam.online"],
@@ -3003,7 +3003,8 @@ export const membersData: MemberDataItemType[] = [
             id: "olga-ustymenko-qa",
             projectId: ["ilovemyteam-online"],
 
-            imageURL: "",
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
@@ -3052,7 +3053,8 @@ export const membersData: MemberDataItemType[] = [
             id: "iryna-andrushchenko-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
 
-            imageURL: "",
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Iryna_Andrushchenko_osltqv.jpg",
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
