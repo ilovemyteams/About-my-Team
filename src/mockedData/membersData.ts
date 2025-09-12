@@ -635,7 +635,7 @@ export const membersData: MemberDataItemType[] = [
                 "CSS",
             ],
 
-            careerStart: "2023-01",
+            careerStart: "2023-07",
         },
         ua: {
             name: "Катерина Рубанік",
