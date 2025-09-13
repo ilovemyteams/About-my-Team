@@ -4,7 +4,9 @@ import { useState } from "react";
 
 import { SCREEN_NAMES } from "@/src/constants/screenNames";
 import { useScreenSize } from "@/src/hooks/useScreenSize";
+import { useRouter } from "@/src/i18n/routing";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
+import { usePreviousURL } from "@/src/utils/PreviousURLContext";
 import { getPaddedMembers } from "@/src/utils/renderedMembers";
 import { LocaleType } from "@/types/LocaleType";
 
@@ -21,6 +23,8 @@ export const MemberCardsListPC = ({
     const locale = useLocale();
     const screenSizeName = useScreenSize();
     const { pcName } = SCREEN_NAMES;
+    const { setPreviousURL } = usePreviousURL();
+    const router = useRouter();
 
     const isLoading = !membersData || membersData.length === 0;
     const visibleMembers =
@@ -35,6 +39,14 @@ export const MemberCardsListPC = ({
     const [hoveredId, setHoveredId] = useState<string | null>(null);
     const activeMember = paddedMembers.find(m => m?.data.id === activeId);
 
+    const onClickCard = (id: string) => {
+        if (id === activeId) {
+            setPreviousURL(`back`);
+            router.push(`/member/${id}`);
+        } else {
+            setActiveId(id);
+        }
+    };
     return (
         <div className="hidden pc:flex justify-between">
             <ul className="pc:grid pc:grid-cols-5 pc:gap-4 w-full pc:w-[63.3%] desk:w-[61%] hidden tab:border-0">
@@ -62,7 +74,7 @@ export const MemberCardsListPC = ({
                             <div
                                 key={member.data.id}
                                 className="relative min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden"
-                                onClick={() => setActiveId(member.data.id)}
+                                onClick={() => onClickCard(member.data.id)}
                                 onMouseEnter={() =>
                                     setHoveredId(member.data.id)
                                 }
