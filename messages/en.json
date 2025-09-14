@@ -140,7 +140,8 @@
         "onlinestores": "Online store",
         "websites": "Website",
         "showAll": "Show all",
-        "showLess": "Show less"
+        "showLess": "Show less",
+        "allMembers": "All participants"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -282,7 +283,8 @@
         "breadcrumbItemFaq": "FAQ",
         "breadcrumbItemServices": "Services",
         "breadcrumbItemIvents": "Events",
-        "breadcrumbItemPortfolio": "Portfolio"
+        "breadcrumbItemPortfolio": "Portfolio",
+        "breadcrumbItemTeam": "Team"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -379,5 +381,22 @@
     "PublicOffer": {
         "titleSEO": "Public Agreement for Digital Services | i love my team",
         "descriptionSEO": "Public offer by i love my team — agreement for digital development, analytics, and design services. Verified conditions, online acceptance."
+    },
+    "MemberPage": {
+        "titleSEO": "Team",
+        "descriptionSEO": "Опис на сторінку.",
+        "title": "Our <purple>Team</purple>",
+        "description": "Meet our talented team members and find specialists for your project",
+        "compareBtnDesc": "Add to comparison list",
+        "wishBtnDesc": "Add to favorites",
+        "status": "member status",
+        "membersCount": "{count, plural, one { from # member} other { from # members}}",
+        "seeProfile": "view profile",
+        "statRate": "${rate}/h",
+        "statExperience": "experience: {experience, plural, =1 {1 yr.} other {# yrs.}}",
+        "statProjects": "projects: {projects}",
+        "leftProject": "Out of project",
+        "joinUsTitle": "Your photo can be here",
+        "joinUsText": "Join a team of like-minded \nindividuals"
     }
 }

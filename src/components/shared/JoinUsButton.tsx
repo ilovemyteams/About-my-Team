@@ -2,11 +2,19 @@
 import { sendGTMEvent } from "@next/third-parties/google";
 import { useTranslations } from "next-intl";
 
+import { JOIN_US_LINK } from "@/src/constants/joinUsLink";
+
 import { Button } from "./Button";
 
-const JOIN_US_LINK = "https://forms.gle/nhbFek3qZYQgo9V19";
+interface JoinUsButtonProps {
+    btnSize?: "small" | "big";
+    className?: string;
+}
 
-export const JoinUsButton = () => {
+export const JoinUsButton = ({
+    btnSize = "big",
+    className = "",
+}: JoinUsButtonProps) => {
     const getTranslation = useTranslations();
 
     return (
@@ -21,7 +29,9 @@ export const JoinUsButton = () => {
             rel="noopener noreferrer"
             className="outline-none"
         >
-            <Button color="grey">{getTranslation("Buttons.joinUs")}</Button>
+            <Button color="grey" size={btnSize} className={className}>
+                {getTranslation("Buttons.joinUs")}
+            </Button>
         </a>
     );
 };

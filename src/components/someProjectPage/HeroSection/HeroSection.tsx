@@ -15,6 +15,7 @@ interface HeroSectionProps {
     deadlines?: DeadlineType;
     name: string;
     siteLink?: string;
+    domains: string[];
 }
 
 export const HeroSection = ({
@@ -25,6 +26,7 @@ export const HeroSection = ({
     heroImage,
     name,
     siteLink,
+    domains,
 }: HeroSectionProps) => {
     const getTranslations = useTranslations("SomeProjectPage");
 
@@ -36,16 +38,16 @@ export const HeroSection = ({
         <PageSection className="pb-[80px] tab:pb-[100px] desk:pb-[120px]">
             <HeroTitle title={title} />
             <div className="flex flex-col gap-3 mb-8 tab:grid tab:grid-cols-2 tab:gap-10 tab:mb-[60px] pc:gap-0 pc:mb-[72px]">
-                <div className="flex flex-col gap-3 tab:gap-5 relative">
+                <div className="flex flex-col gap-3 pc:gap-4 relative">
                     <HeroMedia name={name} {...heroImage} />
 
                     {(behanceLink || siteLink) && (
-                        <div className="pc:absolute pc:top-[-50px] pc:left-0 flex flex-col tab:flex-row gap-2 text-redLight dark:text-red ">
+                        <div className="pc:absolute pc:top-[-50px] pc:left-0 flex justify-between tab:justify-start gap-2 text-redLight dark:text-red ">
                             {siteLink && (
                                 <a
                                     href={siteLink}
                                     target="_blank"
-                                    className="underline font-caviar font-bold text-base tab:text-lg"
+                                    className="underline font-caviar font-bold text-sm tab:text-lg"
                                 >
                                     {siteLinkTitle}
                                 </a>
@@ -56,7 +58,7 @@ export const HeroSection = ({
                                     <a
                                         href={behanceLink}
                                         target="_blank"
-                                        className="underline font-caviar font-bold text-base tab:text-lg"
+                                        className="underline font-caviar font-bold text-sm tab:text-lg desk:text-lg"
                                     >
                                         {behanceLinkTitle}
                                     </a>
@@ -64,6 +66,15 @@ export const HeroSection = ({
                             )}
                         </div>
                     )}
+                    <ul className="flex flex-wrap gap-x-4">
+                        {domains.map((domain, index) => (
+                            <li key={index}>
+                                <span className="text-purple-130 dark:text-purple-50 text-sm tab:text-base">
+                                    #{domain.toLowerCase()}
+                                </span>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 <div className="flex flex-col gap-4 text-sm20 text-pretty tab:text-base pc:ml-[60px] pc:text-xl desk:text-2xl">
                     {text.map((part, index) => (

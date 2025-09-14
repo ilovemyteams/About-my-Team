@@ -1,3 +1,5 @@
+import { DomainType } from "../constants/domainList";
+
 export type DeadlineType = {
     analysis?: string;
     design?: string;
@@ -141,6 +143,7 @@ type DataType = {
     category: "landings" | "onlinestores" | "websites";
     adaptive?: AdaptiveSectionType;
     technologies?: Technology[];
+    domains: DomainType[];
 };
 
 export type PortfolioDataItemType = {
@@ -199,6 +202,13 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "react",
                 "embla-carousel",
                 "gsap",
+            ],
+            domains: [
+                "Landing pages",
+                "Web",
+                "Personal websites",
+                "Photo and video",
+                "Portfolio",
             ],
         },
         ua: {
@@ -707,6 +717,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "react-hook-form",
                 "zod",
             ],
+            domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
         ua: {
             name: "Анна Балабушко",
@@ -1205,6 +1216,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "formik",
                 "yup",
             ],
+            domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
         ua: {
             name: "Гойда Людмила",
@@ -1774,6 +1786,13 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "gsap",
                 "nodemailer",
             ],
+            domains: [
+                "Landing pages",
+                "Web",
+                "Personal websites",
+                "Events",
+                "Marketing",
+            ],
         },
         ua: {
             name: "Алекс Чудов",
@@ -2233,6 +2252,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             },
             behanceLink:
                 "https://www.behance.net/gallery/225444197/Landing-page-for-IT-Recruiter",
+            domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
         ua: {
             name: "Вікторія Забара",
@@ -2516,6 +2536,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
             implementations: ["Design", "Development", "Testing", "Support"],
             category: "websites",
+            domains: ["Web", "Legal", "Agency"],
         },
         ua: {
             name: "Міграційний Адвокат",
@@ -2614,6 +2635,13 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "html-react-parser",
                 "yet-another-react-lightbox",
                 "sharp",
+            ],
+            domains: [
+                "Web",
+                "Public relations",
+                "Media",
+                "Events",
+                "Magazine/Newspaper/Blog",
             ],
         },
         ua: {
@@ -3383,6 +3411,15 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "nestjs",
                 "rtk-rtkq",
             ],
+            domains: [
+                "Ecommerce",
+                "Product pages",
+                "Web",
+                "Agriculture",
+                "Art and illustration",
+                "Food and drinks",
+                "Other",
+            ],
         },
         ua: {
             name: "Смачно! на селі",
@@ -3893,6 +3930,14 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             order: 1,
             category: "websites",
+            domains: [
+                "Web",
+                "Startup",
+                "Agency",
+                "Design",
+                "Marketing",
+                "Portfolio",
+            ],
         },
         ua: {
             name: "i love my team",
