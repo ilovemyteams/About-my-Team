@@ -1177,6 +1177,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751447605/hero_ykjlzb.jpg",
                 type: "image",
             },
+            behanceLink:
+                "https://www.behance.net/gallery/235381333/Landing-page-For-Career-Coach",
 
             implementations: [
                 "Idea",
