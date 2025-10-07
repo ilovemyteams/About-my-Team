@@ -2566,7 +2566,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "3",
             slug: "theatermag-com-ua",
-            siteLink: "theatermag.com.ua",
+            siteLink: "https://theatermag.com.ua",
             behanceLink:
                 "https://www.behance.net/gallery/206025559/UkrainianTheatre-web-UIUX-case-studyukranskij-teatr",
             order: 3,

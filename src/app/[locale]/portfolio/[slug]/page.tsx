@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import React from "react";
+import { getLocale } from "next-intl/server";
 
 import { SomeProjectPage } from "@/src/components/someProjectPage/SomeProjectPage";
 import {
@@ -8,19 +8,19 @@ import {
     PortfolioDataItemType,
 } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
+import { RouteSlugParams } from "@/types/RoutesType";
 
 interface ProjectPageProps {
-    params: {
-        slug: string;
-        locale: string;
-    };
+    params: RouteSlugParams;
 }
 
 export async function generateMetadata({
     params,
 }: ProjectPageProps): Promise<Metadata> {
+    const locale = await getLocale();
+    const { slug } = await params;
     const displayedProject: PortfolioDataItemType | undefined =
-        portfolioData.find(project => project.data.slug === params.slug);
+        portfolioData.find(project => project.data.slug === slug);
 
     if (!displayedProject) {
         return {
@@ -29,7 +29,7 @@ export async function generateMetadata({
         };
     }
 
-    const localization = displayedProject[params.locale as LocaleType];
+    const localization = displayedProject[locale as LocaleType];
     const normalizedTitle =
         localization.name[0].toUpperCase() + localization.name.slice(1);
 
@@ -43,10 +43,9 @@ export async function generateMetadata({
     };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-    const currentProject = portfolioData.find(
-        item => item.data.slug === params.slug
-    );
+export default async function ProjectPage({ params }: ProjectPageProps) {
+    const { slug } = await params;
+    const currentProject = portfolioData.find(item => item.data.slug === slug);
 
     if (!currentProject) {
         return notFound();

@@ -4,13 +4,8 @@ import { PastEvents } from "@/src/components/eventsPage/PastEvents";
 import { Switchers } from "@/src/components/eventsPage/Switchers";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "EventsPage",
         canonical: "/events",
     });

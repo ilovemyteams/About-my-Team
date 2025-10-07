@@ -13,14 +13,10 @@ import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { getLikes } from "@/src/utils/likeDataHandler";
 import { searchFilteringForFAQ } from "@/src/utils/searchFilteringForFAQ";
 import type { LocaleType } from "@/types/LocaleType";
+import { RouteSearchParams } from "@/types/RoutesType";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "FaqPage",
         canonical: "/faq",
     });
@@ -29,13 +25,14 @@ export async function generateMetadata({
 export default async function FAQ({
     searchParams,
 }: {
-    searchParams: { query?: string; page: string };
+    searchParams: RouteSearchParams;
 }) {
     const ITEMS_PER_PAGE = 7;
     const locale = await getLocale();
     const likes = await getLikes();
-    const searchTerm = searchParams.query || "";
-    const pageNumber = parseInt(searchParams.page) || 1;
+    const { query, page } = await searchParams;
+    const searchTerm = query || "";
+    const pageNumber = parseInt(page || "1") || 1;
 
     const questionWithLikes = addLikesToQuestion(likes, questionsData);
 

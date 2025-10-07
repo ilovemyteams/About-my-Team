@@ -1,16 +1,15 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 interface GenerateMetadataParams {
-    locale: string;
     namespace: string;
     canonical: string;
 }
 
 export async function generatePageMetadata({
-    locale,
     namespace,
     canonical,
 }: GenerateMetadataParams) {
+    const locale = await getLocale();
     const translations = await getTranslations({
         locale,
         namespace,

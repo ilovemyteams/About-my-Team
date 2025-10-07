@@ -1,7 +1,8 @@
 import "./globals.css";
 
 import localFont from "next/font/local";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
 import React from "react";
 
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
@@ -79,30 +80,21 @@ const comfortaa = localFont({
     variable: "--font-comfortaa",
 });
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "Home",
         canonical: "/",
     });
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
     children,
     modal,
-
-    params: { locale },
 }: Readonly<{
     children: React.ReactNode;
     modal: React.ReactNode;
-
-    params: { locale: string };
 }>) {
-    const messages = useMessages();
+    const locale = await getLocale();
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
@@ -114,7 +106,7 @@ export default function LocaleLayout({
                 <meta property="og:image" content="<generated>" />
             </head>
             <ConditionalGTM />
-            <NextIntlClientProvider locale={locale} messages={messages}>
+            <NextIntlClientProvider>
                 <PreviousURLProvider>
                     <body
                         className={`${caviar.variable} ${geist.variable} ${intro.variable} ${segoe.variable} ${comfortaa.variable} relative z-[1] overflow-x-visible

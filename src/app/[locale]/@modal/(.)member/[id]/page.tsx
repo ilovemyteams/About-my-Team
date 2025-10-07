@@ -6,16 +6,16 @@ import { MemberCardModalBodyTab } from "@/src/components/shared/MemberModal/Memb
 import { Modal } from "@/src/components/shared/MemberModal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
 
+type RouteParams = Promise<{
+    id: string;
+}>;
 interface MemberPageProps {
-    params: {
-        id: string;
-    };
+    params: RouteParams;
 }
 
-const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
-    const displayedMember = membersData.find(
-        member => member.data.id === params.id
-    );
+const MemberPage: React.FC<MemberPageProps> = async ({ params }) => {
+    const { id } = await params;
+    const displayedMember = membersData.find(member => member.data.id === id);
     if (!displayedMember) {
         notFound();
     }

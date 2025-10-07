@@ -17,7 +17,7 @@
     },
     "dependencies": {
         "@heroui/react": "2.7.9",
-        "@next/third-parties": "^14.2.5",
+        "@next/third-parties": "^15.5.4",
         "@portabletext/react": "^3.1.0",
         "@sanity/client": "^7.4.0",
         "@sanity/color-input": "^3.1.1",
@@ -37,9 +37,9 @@
         "framer-motion": "^11.3.24",
         "googleapis": "^137.1.0",
         "js-cookie": "^3.0.5",
-        "next": "^14.2.5",
+        "next": "^15.5.4",
         "next-cloudinary": "^6.16.0",
-        "next-intl": "^3.19.4",
+        "next-intl": "^4.3.11",
         "next-sanity": "^9.12.0",
         "next-sanity-image": "^6.1.1",
         "next-sitemap": "^4.2.3",
@@ -92,7 +92,7 @@
         "prettier-plugin-packagejson": "^2.5.15",
         "tailwindcss": "^3.3.0",
         "ts-node": "^10.9.2",
-        "typescript": "^5.5.4"
+        "typescript": "^5.9.3"
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
