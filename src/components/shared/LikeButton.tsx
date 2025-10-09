@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { generateUserId } from "@/src/utils/generateUserId";
 import { LikesTypes } from "@/src/utils/likeDataHandler";
@@ -106,7 +107,15 @@ const LikeButton = ({
             <span className="flex items-end gap-x-2">
                 <IconLike
                     isLiked={isUserVoted || startAnimation}
-                    className={`${isUserVoted || startAnimation ? "text-redLight dark:text-red" : "text-inherit"}  ${startAnimation ? "animate-pulsationBrokenHeart" : "animate-none"} `}
+                    className={twMerge(
+                        isUserVoted || startAnimation
+                            ? "text-redLight dark:text-red"
+                            : "text-inherit",
+                        startAnimation
+                            ? "animate-pulsationBrokenHeart"
+                            : "animate-none",
+                        "w-[24px] h-[24px]"
+                    )}
                 />
                 <span className="leading-[20px]"> {likes.length}</span>
             </span>
