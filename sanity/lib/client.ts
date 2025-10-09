@@ -1,14 +1,11 @@
-import { createClient, type SanityClient } from "next-sanity";
+import { createClient } from "next-sanity";
 
-import { apiVersion, dataset, projectId, useCdn } from "./api";
-export function getClient(token?: string): SanityClient {
-    return createClient({
-        projectId,
-        dataset,
-        apiVersion,
-        useCdn,
-        token,
-    });
-}
+import { apiVersion, dataset, projectId, studioUrl } from "../env";
 
-export const getSanityImageConfig = () => getClient();
+export const client = createClient({
+    projectId,
+    dataset,
+    apiVersion,
+    useCdn: true, // Set to false if statically generating pages, using ISR or tag-based revalidation
+    stega: { studioUrl },
+});

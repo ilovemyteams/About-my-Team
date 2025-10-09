@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...tool]]/page.tsx` route
+ * This configuration is used to for the Sanity Studio that’s mounted on the `\src\app\studio\[[...tool]]\page.tsx` route
  */
 
 import { colorInput } from "@sanity/color-input";
@@ -9,34 +9,30 @@ import { documentInternationalization } from "@sanity/document-internationalizat
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
 import { media, mediaAssetSource } from "sanity-plugin-media";
 
 import { SUPPORTED_LANGUAGES } from "./sanity/constants";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { apiVersion, dataset, projectId, studioUrl } from "./sanity/lib/api";
+import { apiVersion, dataset, projectId } from "./sanity/env";
 import { singletonPlugin } from "./sanity/plugins/settings";
-import { schema } from "./sanity/schemas";
-import { singletonPagesType, structure } from "./sanity/structure/index";
+import { schema } from "./sanity/schemaTypes";
+import { singletonPagesType, structure } from "./sanity/structure";
 
 export default defineConfig({
-    basePath: studioUrl,
+    basePath: "/studio",
     projectId,
-    dataset,
     title: "About my team",
-    // Add and edit the content schema in the './sanity/schema' folder
+    dataset,
+    // Add and edit the content schema in the './sanity/schemaTypes' folder
     schema,
     plugins: [
         structureTool({ structure }),
-        media(),
-        colorInput(),
-        // Vision is a tool that lets you query your content with GROQ in the studio
+        // Vision is for querying with GROQ from inside the Studio
         // https://www.sanity.io/docs/the-vision-plugin
         visionTool({ defaultApiVersion: apiVersion }),
-        // Add an image asset source for Unsplash
-        unsplashImageAsset(),
-
+        colorInput(),
+        media(),
         documentInternationalization({
             // Required configuration
             supportedLanguages: SUPPORTED_LANGUAGES,
@@ -55,7 +51,6 @@ export default defineConfig({
         }),
         singletonPlugin(singletonPagesType),
     ],
-
     form: {
         file: {
             assetSources: previousAssetSources => {
