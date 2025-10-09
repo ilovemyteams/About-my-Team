@@ -1177,6 +1177,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751447605/hero_ykjlzb.jpg",
                 type: "image",
             },
+            behanceLink:
+                "https://www.behance.net/gallery/235381333/Landing-page-For-Career-Coach",
 
             implementations: [
                 "Idea",
@@ -2525,46 +2527,12 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
         },
     },
-    {
-        data: {
-            id: "4",
-            slug: "protection-in-ua",
-            siteLink: "protection.in.ua",
-            order: 4,
-            imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
-            image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
-            implementations: ["Design", "Development", "Testing", "Support"],
-            category: "websites",
-            domains: ["Web", "Legal", "Agency"],
-        },
-        ua: {
-            name: "Міграційний Адвокат",
-            siteView: "вебсайт",
-            subtitle: "Вебсайт для міграційного адвоката",
-            description:
-                "Сайт пропонує юридичні послуги в сфері міграційного права, включаючи захист прав громадян у Державній міграційній службі України та консультації з питань громадянства. Тут можна знайти інформацію про адвокатів, їхні послуги та контакти для зв'язку.",
-        },
-        en: {
-            name: "Migration Lawyer",
-            siteView: "website",
-            subtitle: "Website for a Migration Lawyer",
-            description:
-                "The website offers legal services in the field of migration law, including the protection of citizens' rights in the State Migration Service of Ukraine and consultations on citizenship issues. Here you can find information about lawyers, their services, and contact details.",
-        },
-        pl: {
-            name: "Prawnik imigracyjny",
-            siteView: "website",
-            subtitle: "Strona internetowa dla prawnika ds. migracji",
-            description:
-                "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",
-        },
-    },
+
     {
         data: {
             id: "3",
             slug: "theatermag-com-ua",
-            siteLink: "theatermag.com.ua",
+            siteLink: "https://theatermag.com.ua",
             behanceLink:
                 "https://www.behance.net/gallery/206025559/UkrainianTheatre-web-UIUX-case-studyukranskij-teatr",
             order: 3,
@@ -3362,7 +3330,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "2",
             slug: "batatfarm-com",
-            siteLink: "batatfarm.com",
+            siteLink: "https://batatfarm.com",
             behanceLink:
                 "https://www.behance.net/gallery/224420717/Smachno-na-seli-Online-Store-for-Natural-Products",
             imageForAllProjectsPage:
@@ -3915,9 +3883,44 @@ export const portfolioData: PortfolioDataItemType[] = [
     },
     {
         data: {
+            id: "4",
+            slug: "protection-in-ua",
+            siteLink: "https://protection.in.ua",
+            order: 4,
+            imageForAllProjectsPage:
+                "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
+            image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
+            implementations: ["Design", "Development", "Testing", "Support"],
+            category: "websites",
+            domains: ["Web", "Legal", "Agency"],
+        },
+        ua: {
+            name: "Міграційний Адвокат",
+            siteView: "вебсайт",
+            subtitle: "Вебсайт для міграційного адвоката",
+            description:
+                "Сайт пропонує юридичні послуги в сфері міграційного права, включаючи захист прав громадян у Державній міграційній службі України та консультації з питань громадянства. Тут можна знайти інформацію про адвокатів, їхні послуги та контакти для зв'язку.",
+        },
+        en: {
+            name: "Migration Lawyer",
+            siteView: "website",
+            subtitle: "Website for a Migration Lawyer",
+            description:
+                "The website offers legal services in the field of migration law, including the protection of citizens' rights in the State Migration Service of Ukraine and consultations on citizenship issues. Here you can find information about lawyers, their services, and contact details.",
+        },
+        pl: {
+            name: "Prawnik imigracyjny",
+            siteView: "website",
+            subtitle: "Strona internetowa dla prawnika ds. migracji",
+            description:
+                "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",
+        },
+    },
+    {
+        data: {
             id: "1",
             slug: "ilovemyteam-online",
-            siteLink: "ilovemyteam.online",
+            siteLink: "https://ilovemyteam.online",
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=1euhTPDYseSUaGESWCxCcdZ0IAlp-mGVX",
             image: "https://drive.google.com/uc?export=view&id=14zu-CX8qKSEIqsec_R1lW9S-HITsaG_s",
