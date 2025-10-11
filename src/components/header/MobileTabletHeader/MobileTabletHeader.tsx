@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { BackgroundCirclesMobile } from "../../backgroundImages/BackgroundCirclesMobile";
 import { BackgroundCirclesTablet } from "../../backgroundImages/BackgroundCirclesTablet";
@@ -13,12 +13,6 @@ export const MobileTabletHeader = () => {
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
-
-    useEffect(() => {
-        isHeaderMenuOpened
-            ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
-            : (document.body.style.overflow = "");
-    }, [isHeaderMenuOpened]);
 
     return (
         <div

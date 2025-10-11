@@ -27,8 +27,6 @@ export const JoinUsCard = ({
         if (tabBorderJoinUs > 1) {
             borderBottomTab = "tab:border-b-0 pc:border-b";
         }
-    } else {
-        null;
     }
     if (pcBorderJoinUs) {
         if (pcBorderJoinUs === 2 || pcBorderJoinUs === 5) {
@@ -37,8 +35,6 @@ export const JoinUsCard = ({
         if (pcBorderJoinUs > 3) {
             borderBottomPC = "pc:border-b-0 deskxl:border-b";
         }
-    } else {
-        null;
     }
     if (deskXLBorderJoinUs) {
         if (deskXLBorderJoinUs === 3 || deskXLBorderJoinUs === 7) {
@@ -47,8 +43,6 @@ export const JoinUsCard = ({
         if (deskXLBorderJoinUs > 4) {
             borderBottomDeskXL = "deskxl:border-b-0";
         }
-    } else {
-        null;
     }
 
     return (

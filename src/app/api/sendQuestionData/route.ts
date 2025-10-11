@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
                 date,
             ]);
             return NextResponse.json({ message: "Data appended successfully" });
-        } catch (error) {
+        } catch (_error) {
             return NextResponse.json(
                 { error: "Failed to append data to the sheet" },
                 { status: 500 }
