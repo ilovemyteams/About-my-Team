@@ -1,7 +1,7 @@
-// import { heroui } from "@heroui/react";
-// import tailwindScrollbar from "tailwind-scrollbar";
+import { heroui } from "@heroui/react";
+import tailwindScrollbar from "tailwind-scrollbar";
 import type { Config } from "tailwindcss";
-// import plugin from "tailwindcss/plugin";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
     content: [
@@ -668,42 +668,42 @@ const config: Config = {
             "pos-100": "100% 100%",
         },
     },
-    // plugins: [
-    //     heroui(),
-    //     tailwindScrollbar({
-    //         nocompatible: true,
-    //         preferredStrategy: "pseudoelements",
-    //     }),
-    //     plugin(function ({ matchUtilities, theme, addUtilities, addBase }) {
-    //         matchUtilities(
-    //             {
-    //                 "animate-delay": value => ({
-    //                     animationDelay: value,
-    //                 }),
-    //             },
-    //             { values: theme("transitionDelay") }
-    //         );
-    //         addUtilities({
-    //             ".border-dash-horizontal": {
-    //                 borderStyle: "dashed",
-    //                 borderWidth: "1px 0", // Верхній і нижній бордер
-    //                 borderImage:
-    //                     "repeating-linear-gradient(90deg, #5F3F87 0 10px, transparent 10px 15px) 1",
-    //             },
-    //             ".border-dash-vertical": {
-    //                 borderStyle: "dashed",
-    //                 borderWidth: "0 1px", // Лівий і правий бордер
-    //                 borderImage:
-    //                     "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
-    //             },
-    //         });
-    //         addBase({
-    //             ":root": {
-    //                 "--autofill-text-color-light": theme("colors.purple.200"),
-    //                 "--autofill-text-color-dark": theme("colors.grey"),
-    //             },
-    //         });
-    //     }),
-    // ],
+    plugins: [
+        heroui(),
+        tailwindScrollbar({
+            nocompatible: true,
+            preferredStrategy: "pseudoelements",
+        }),
+        plugin(function ({ matchUtilities, theme, addUtilities, addBase }) {
+            matchUtilities(
+                {
+                    "animate-delay": value => ({
+                        animationDelay: value,
+                    }),
+                },
+                { values: theme("transitionDelay") }
+            );
+            addUtilities({
+                ".border-dash-horizontal": {
+                    borderStyle: "dashed",
+                    borderWidth: "1px 0", // Верхній і нижній бордер
+                    borderImage:
+                        "repeating-linear-gradient(90deg, #5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+                ".border-dash-vertical": {
+                    borderStyle: "dashed",
+                    borderWidth: "0 1px", // Лівий і правий бордер
+                    borderImage:
+                        "repeating-linear-gradient(#5F3F87 0 10px, transparent 10px 15px) 1",
+                },
+            });
+            addBase({
+                ":root": {
+                    "--autofill-text-color-light": theme("colors.purple.200"),
+                    "--autofill-text-color-dark": theme("colors.grey"),
+                },
+            });
+        }),
+    ],
 };
 export default config;
