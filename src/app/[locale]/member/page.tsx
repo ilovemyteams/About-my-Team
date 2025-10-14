@@ -1,22 +1,19 @@
 import { TeamPage } from "@/src/components/teamPage/TeamPage";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
+import { RouteSearchParams } from "@/types/RoutesType";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "MemberPage",
         canonical: "/member",
     });
 }
 
-export default function Members({
+export default async function Members({
     searchParams,
 }: {
-    searchParams: { page?: string; categoryName?: string };
+    searchParams: RouteSearchParams;
 }) {
-    return <TeamPage searchParams={searchParams} />;
+    const { page, categoryName } = await searchParams;
+    return <TeamPage searchParams={{ page, categoryName }} />;
 }

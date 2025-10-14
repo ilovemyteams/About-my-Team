@@ -11,7 +11,7 @@ import { WriteUs } from "../../shared/WriteUs/WriteUs";
 import { HeaderMenuList } from "../HeaderMenuList";
 import { SocialLinksList } from "../SocialLinks/SocialLinksList";
 
-const openedStyles = "h-80";
+const openedStyles = "h-80 no-doc-scroll";
 const closedStyles = "h-0";
 
 export const MobileTabletHeaderMenu = ({

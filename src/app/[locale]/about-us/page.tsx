@@ -7,13 +7,8 @@ import { TeamSection } from "@/src/components/aboutPage/TeamSection";
 import { WriteUsSection } from "@/src/components/CTAs/writeUsSection/WriteUsSection";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "AboutPage",
         canonical: "/about-us",
     });

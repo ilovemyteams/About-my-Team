@@ -3,13 +3,8 @@ import { HeaderEvents } from "@/src/components/eventsPage/HeaderEvents";
 import { PastEvents } from "@/src/components/eventsPage/PastEvents";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
     return generatePageMetadata({
-        locale,
         namespace: "EventsPage",
         canonical: "/events",
     });

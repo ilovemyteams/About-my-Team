@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import React from "react";
 
 import { MemberCardModalBody } from "@/src/components/shared/MemberModal/MemberCardModalBody";
@@ -8,17 +8,17 @@ import { Modal } from "@/src/components/shared/MemberModal/Modal";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-interface MemberPageProps {
-    params: {
-        id: string;
-    };
-}
+type MemberPageProps = Promise<{
+    id: string;
+}>;
 
 export async function generateMetadata({
-    params: { locale, id },
+    params,
 }: {
-    params: { locale: string; id: string };
+    params: MemberPageProps;
 }) {
+    const { id } = await params;
+    const locale = await getLocale();
     const member = membersData.find(member => member.data.id === id);
     const memberName = member ? member[locale as LocaleType]?.name : "Name";
     const memberAbout = member ? member[locale as LocaleType]?.about : "";
@@ -46,10 +46,11 @@ export async function generateMetadata({
     };
 }
 
-const MemberPage: React.FC<MemberPageProps> = ({ params }) => {
-    const displayedMember = membersData.find(
-        member => member.data.id === params.id
-    );
+const MemberPage: React.FC<{ params: MemberPageProps }> = async ({
+    params,
+}) => {
+    const { id } = await params;
+    const displayedMember = membersData.find(member => member.data.id === id);
 
     if (!displayedMember) {
         notFound();

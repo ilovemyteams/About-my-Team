@@ -26,6 +26,7 @@ export const useUserActivityMonitor = () => {
                     ? SECOND_USER_INACTIVITY_TIMEOUT
                     : FIRST_USER_INACTIVITY_TIMEOUT;
 
+            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             activeTimeoutId.current !== "start" &&
                 clearTimeout(activeTimeoutId.current);
 
@@ -34,6 +35,7 @@ export const useUserActivityMonitor = () => {
     };
 
     const setUserInactivity = () => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         activeTimeoutId.current && clearTimeout(activeTimeoutId.current);
         setIsUserNotActive(true);
         activeTimeoutId.current = null;
@@ -63,6 +65,7 @@ export const useUserActivityMonitor = () => {
             window.removeEventListener("keypress", updateUserActivity);
             window.removeEventListener("scroll", updateUserActivity);
             window.removeEventListener("mousemove", updateUserActivity);
+            // eslint-disable-next-line @typescript-eslint/no-unused-expressions
             activeTimeoutId.current &&
                 activeTimeoutId.current !== "start" &&
                 clearTimeout(activeTimeoutId.current);

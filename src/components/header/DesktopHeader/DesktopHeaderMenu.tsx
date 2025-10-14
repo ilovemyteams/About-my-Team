@@ -10,7 +10,7 @@ import { ThemeSwitcher } from "../../shared/ThemeSwitcher";
 import { WriteUs } from "../../shared/WriteUs/WriteUs";
 import { HeaderMenuList } from "../HeaderMenuList";
 
-const openedStyles = "w-80 deskxl:w-120";
+const openedStyles = "w-80 deskxl:w-120 no-doc-scroll";
 const closedStyles = "w-0";
 
 export const DesktopHeaderMenu = ({
@@ -19,7 +19,7 @@ export const DesktopHeaderMenu = ({
 }: HeaderMenuProps) => {
     return (
         <nav
-            className={`${isHeaderMenuOpened ? openedStyles : closedStyles} absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-[width] duration-[600ms] ease-out
+            className={`${isHeaderMenuOpened ? openedStyles : closedStyles}  absolute top-0 left-[80px] deskxl:left-[120px] z-20 h-[100vh] overflow-hidden transition-[width] duration-[600ms] ease-out
             dark:bg-purple-400 bg-white-100`}
         >
             <BackgroundCircles className="left-[-80px]" />

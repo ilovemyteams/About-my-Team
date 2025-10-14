@@ -32,6 +32,7 @@ export const OneTableItemInfo = ({
     const toggleShowMore = () => {
         const contentElement = contentRef?.current;
         setIsShownMore(!isShownMore);
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         !isShownMore
             ? contentElement?.classList.remove("line-clamp-3")
             : setTimeout(

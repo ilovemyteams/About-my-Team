@@ -32,7 +32,7 @@ const CopyLinkButton = ({
 
             setCopied(true);
             setTimeout(() => setCopied(false), 3000);
-        } catch (error) {
+        } catch (_error) {
             setNotCopied(true);
             setTimeout(() => setNotCopied(false), 3000);
         }

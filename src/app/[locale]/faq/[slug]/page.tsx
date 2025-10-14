@@ -1,25 +1,27 @@
 import { Metadata, ResolvingMetadata } from "next";
 import { notFound } from "next/navigation";
+import { getLocale } from "next-intl/server";
 import React from "react";
 
 import { Question } from "@/src/components/someQuestionPage/QuestionPage";
 import { QAItemType, questionsData } from "@/src/mockedData/questionsData";
 import { LocaleType } from "@/types/LocaleType";
+import { RouteSearchParams, RouteSlugParams } from "@/types/RoutesType";
 
+type RouteType = RouteSlugParams;
 interface QuestionPageProps {
-    params: {
-        slug: string;
-        locale: string;
-    };
-    searchParams: { query?: string };
+    params: RouteType;
+    searchParams: RouteSearchParams;
 }
 
 export async function generateMetadata(
     { params }: QuestionPageProps,
     parent: ResolvingMetadata
 ): Promise<Metadata> {
+    const locale = await getLocale();
+    const { slug } = await params;
     const displayedQuestion: QAItemType | undefined = questionsData.find(
-        question => question.data.slug === params.slug
+        question => question.data.slug === slug
     );
 
     if (!displayedQuestion) {
@@ -29,7 +31,7 @@ export async function generateMetadata(
         };
     }
     const previousImages = (await parent).openGraph?.images || [];
-    const localization = displayedQuestion[params.locale as LocaleType];
+    const localization = displayedQuestion[locale as LocaleType];
     return {
         title: localization.questionText,
         description: localization.shortAnswerText.join(""),
@@ -39,13 +41,15 @@ export async function generateMetadata(
     };
 }
 
-const QuestionPage: React.FC<QuestionPageProps> = ({
+const QuestionPage: React.FC<QuestionPageProps> = async ({
     params,
     searchParams,
 }) => {
-    const searchTerm = searchParams.query || "";
+    const { query } = await searchParams;
+    const { slug } = await params;
+    const searchTerm = query || "";
     const displayedQuestion = questionsData.find(
-        question => question.data.slug === params.slug
+        question => question.data.slug === slug
     );
     if (!displayedQuestion) {
         notFound();

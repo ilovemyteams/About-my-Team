@@ -21,6 +21,7 @@ export const Search = () => {
         const sanitizedValue = inputValue.trim().replace(/\s+/g, " ");
 
         const params = new URLSearchParams(searchParams);
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         sanitizedValue
             ? params.set("query", sanitizedValue)
             : params.delete("query");

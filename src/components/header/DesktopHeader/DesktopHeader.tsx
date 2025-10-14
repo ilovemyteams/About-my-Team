@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { BackgroundCircles } from "../../backgroundImages/BackgroundCircles";
 import { BackgroundCirclesBigScreens } from "../../backgroundImages/BackgroundCircles1536BigScreens";
@@ -14,12 +14,6 @@ export const DesktopHeader = () => {
 
     const toggleHeaderMenuOpen = () =>
         setIsHeaderMenuOpened(!isHeaderMenuOpened);
-
-    useEffect(() => {
-        isHeaderMenuOpened
-            ? setTimeout(() => (document.body.style.overflow = "hidden"), 590)
-            : (document.body.style.overflow = "");
-    }, [isHeaderMenuOpened]);
 
     return (
         <div
