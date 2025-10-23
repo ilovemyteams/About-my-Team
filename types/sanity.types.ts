@@ -13,72 +13,6 @@
  */
 
 // Source: schema.json
-export type SanityImagePaletteSwatch = {
-    _type: "sanity.imagePaletteSwatch";
-    background?: string;
-    foreground?: string;
-    population?: number;
-    title?: string;
-};
-
-export type SanityImagePalette = {
-    _type: "sanity.imagePalette";
-    darkMuted?: SanityImagePaletteSwatch;
-    lightVibrant?: SanityImagePaletteSwatch;
-    darkVibrant?: SanityImagePaletteSwatch;
-    vibrant?: SanityImagePaletteSwatch;
-    dominant?: SanityImagePaletteSwatch;
-    lightMuted?: SanityImagePaletteSwatch;
-    muted?: SanityImagePaletteSwatch;
-};
-
-export type SanityImageDimensions = {
-    _type: "sanity.imageDimensions";
-    height?: number;
-    width?: number;
-    aspectRatio?: number;
-};
-
-export type SanityFileAsset = {
-    _id: string;
-    _type: "sanity.fileAsset";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    originalFilename?: string;
-    label?: string;
-    title?: string;
-    description?: string;
-    altText?: string;
-    sha1hash?: string;
-    extension?: string;
-    mimeType?: string;
-    size?: number;
-    assetId?: string;
-    uploadId?: string;
-    path?: string;
-    url?: string;
-    source?: SanityAssetSourceData;
-};
-
-export type Geopoint = {
-    _type: "geopoint";
-    lat?: number;
-    lng?: number;
-    alt?: number;
-};
-
-export type ColorTheme = {
-    _id: string;
-    _type: "colorTheme";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    title?: string;
-    text?: Color;
-    background?: Color;
-};
-
 export type MenuItem = {
     _type: "menuItem";
     title?: Array<
@@ -151,6 +85,7 @@ export type Milestone = {
             _weak?: boolean;
             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -193,6 +128,7 @@ export type ImageFeature = {
             _weak?: boolean;
             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -245,6 +181,7 @@ export type GridItem = {
             _weak?: boolean;
             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -432,33 +369,6 @@ export type PortableText = Array<
       } & Instagram)
 >;
 
-export type Customer = {
-    _id: string;
-    _type: "customer";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    name?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    position?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    phoneNumber?: Array<string>;
-    socialLinks?: Array<
-        {
-            _key: string;
-        } & SocialLinks
-    >;
-    gender?: "female" | "male" | "unknown";
-    country?: string;
-    comment?: string;
-};
-
 export type Tool = {
     _id: string;
     _type: "tool";
@@ -511,6 +421,7 @@ export type Faq = {
                 _weak?: boolean;
                 [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
             };
+            media?: unknown;
             hotspot?: SanityImageHotspot;
             crop?: SanityImageCrop;
             _type: "image";
@@ -527,14 +438,21 @@ export type Faq = {
                 _key: string;
             } & InternationalizedArrayTextValue
         >;
-        mainContent?: {
-            designType?: "stages" | "table";
+        mainContent?: Array<{
+            designType?: "numberedList" | "table" | "list";
+            mainContentTitle?: Array<
+                {
+                    _key: string;
+                } & InternationalizedArrayStringValue
+            >;
             mainContentText?: Array<
                 {
                     _key: string;
                 } & InternationalizedArrayPortableTextValue
             >;
-        };
+            _type: "mainBlock";
+            _key: string;
+        }>;
         orderContent?: {
             image?: {
                 asset?: {
@@ -543,6 +461,7 @@ export type Faq = {
                     _weak?: boolean;
                     [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
                 };
+                media?: unknown;
                 hotspot?: SanityImageHotspot;
                 crop?: SanityImageCrop;
                 _type: "image";
@@ -552,6 +471,7 @@ export type Faq = {
                     _key: string;
                 } & InternationalizedArrayTextValue
             >;
+            showButton?: boolean;
         };
     };
 };
@@ -598,6 +518,7 @@ export type Review = {
                 _weak?: boolean;
                 [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
             };
+            media?: unknown;
             hotspot?: SanityImageHotspot;
             crop?: SanityImageCrop;
             _type: "image";
@@ -614,6 +535,33 @@ export type Review = {
         } & InternationalizedArrayTextValue
     >;
     reviewUrl?: LinkExternal;
+};
+
+export type Customer = {
+    _id: string;
+    _type: "customer";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    name?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    position?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
+    phoneNumber?: Array<string>;
+    socialLinks?: Array<
+        {
+            _key: string;
+        } & SocialLinks
+    >;
+    gender?: "female" | "male" | "unknown";
+    country?: string;
+    comment?: string;
 };
 
 export type Project = {
@@ -664,6 +612,7 @@ export type Project = {
                 _weak?: boolean;
                 [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
             };
+            media?: unknown;
             hotspot?: SanityImageHotspot;
             crop?: SanityImageCrop;
             _type: "image";
@@ -738,6 +687,7 @@ export type Team = {
             _weak?: boolean;
             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -830,178 +780,6 @@ export type Page = {
     seo?: Seo;
 };
 
-export type Home = {
-    _id: string;
-    _type: "home";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    pageSlug?: Slug;
-    hero?: HeroHome;
-    aboutUsHomeSection?: AboutUsHomeSection;
-    ctaSectionJoinUs?: CallToAction;
-    portfolioHome?: PortfolioHome;
-    reviewsHome?: ReviewsHome;
-    ctaSectionWriteUs?: CallToAction;
-    servicesHome?: ServicesHome;
-    teamHome?: TeamHome;
-    ctaSectionJoinUsSecond?: CallToAction;
-    stagesHome?: StagesHome;
-    faqHome?: FaqHome;
-    ctaSectionOrder?: CallToAction;
-};
-
-export type FaqHome = {
-    _type: "faqHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    faqList?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "faq";
-    }>;
-};
-
-export type StagesHome = {
-    _type: "stagesHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    stagesList?: Array<
-        {
-            _key: string;
-        } & Stage
-    >;
-};
-
-export type TeamHome = {
-    _type: "teamHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    projectsList?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "project";
-    }>;
-};
-
-export type ServicesHome = {
-    _type: "servicesHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    servicesList?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "service";
-    }>;
-    description?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayTextValue
-    >;
-};
-
-export type ReviewsHome = {
-    _type: "reviewsHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    reviewsSlider?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "review";
-    }>;
-};
-
-export type PortfolioHome = {
-    _type: "portfolioHome";
-    sectionId?: AnchorLink;
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    portfolioSlider?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "project";
-    }>;
-};
-
-export type CallToAction = {
-    _type: "callToAction";
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayStringValue
-    >;
-    description?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableTextSimpleValue
-    >;
-};
-
-export type AboutUsHomeSection = {
-    _type: "aboutUsHomeSection";
-    sectionId?: AnchorLink;
-    sectionTitle?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayPortableColorTitleValue
-    >;
-    aboutUsItemInfo?: Array<
-        {
-            _key: string;
-        } & AboutUsItem
-    >;
-    learnMoreButton?: Button;
-};
-
-export type HeroHome = {
-    _type: "heroHome";
-    title?: Array<
-        {
-            _key: string;
-        } & InternationalizedArrayTextValue
-    >;
-    portfolioSlider?: Array<{
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        _key: string;
-        [internalGroqTypeReferenceTo]?: "project";
-    }>;
-};
-
 export type LinkExternal = {
     _type: "linkExternal";
     url?: string;
@@ -1084,12 +862,19 @@ export type TranslationMetadata = {
 
 export type InternationalizedArrayReferenceValue = {
     _type: "internationalizedArrayReferenceValue";
-    value?: {
-        _ref: string;
-        _type: "reference";
-        _weak?: boolean;
-        [internalGroqTypeReferenceTo]?: "settings";
-    };
+    value?:
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              [internalGroqTypeReferenceTo]?: "home";
+          }
+        | {
+              _ref: string;
+              _type: "reference";
+              _weak?: boolean;
+              [internalGroqTypeReferenceTo]?: "settings";
+          };
 };
 
 export type Settings = {
@@ -1116,63 +901,6 @@ export type Button = {
     linkExternal?: LinkExternal;
 };
 
-export type SanityImageCrop = {
-    _type: "sanity.imageCrop";
-    top?: number;
-    bottom?: number;
-    left?: number;
-    right?: number;
-};
-
-export type SanityImageHotspot = {
-    _type: "sanity.imageHotspot";
-    x?: number;
-    y?: number;
-    height?: number;
-    width?: number;
-};
-
-export type SanityImageAsset = {
-    _id: string;
-    _type: "sanity.imageAsset";
-    _createdAt: string;
-    _updatedAt: string;
-    _rev: string;
-    originalFilename?: string;
-    label?: string;
-    title?: string;
-    description?: string;
-    altText?: string;
-    sha1hash?: string;
-    extension?: string;
-    mimeType?: string;
-    size?: number;
-    assetId?: string;
-    uploadId?: string;
-    path?: string;
-    url?: string;
-    metadata?: SanityImageMetadata;
-    source?: SanityAssetSourceData;
-};
-
-export type SanityAssetSourceData = {
-    _type: "sanity.assetSourceData";
-    name?: string;
-    id?: string;
-    url?: string;
-};
-
-export type SanityImageMetadata = {
-    _type: "sanity.imageMetadata";
-    location?: Geopoint;
-    dimensions?: SanityImageDimensions;
-    palette?: SanityImagePalette;
-    lqip?: string;
-    blurHash?: string;
-    hasAlpha?: boolean;
-    isOpaque?: boolean;
-};
-
 export type Seo = {
     _type: "seo";
     title?: InternationalizedArrayString;
@@ -1184,6 +912,7 @@ export type Seo = {
             _weak?: boolean;
             [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
         };
+        media?: unknown;
         hotspot?: SanityImageHotspot;
         crop?: SanityImageCrop;
         _type: "image";
@@ -1251,11 +980,148 @@ export type Header = {
     >;
 };
 
+export type Home = {
+    _id: string;
+    _type: "home";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    pageSlug?: Slug;
+    hero?: HeroHome;
+    aboutUsHomeSection?: AboutUsHomeSection;
+    ctaSectionJoinUs?: CallToAction;
+    portfolioHome?: PortfolioHome;
+    reviewsHome?: ReviewsHome;
+    ctaSectionWriteUs?: CallToAction;
+    servicesHome?: ServicesHome;
+    teamHome?: TeamHome;
+    ctaSectionJoinUsSecond?: CallToAction;
+    stagesHome?: StagesHome;
+    faqHome?: FaqHome;
+    ctaSectionOrder?: CallToAction;
+};
+
+export type FaqHome = {
+    _type: "faqHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    faqList?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "faq";
+    }>;
+};
+
+export type StagesHome = {
+    _type: "stagesHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    stagesList?: Array<
+        {
+            _key: string;
+        } & Stage
+    >;
+};
+
+export type TeamHome = {
+    _type: "teamHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    projectsList?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "project";
+    }>;
+};
+
+export type ServicesHome = {
+    _type: "servicesHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    servicesList?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "service";
+    }>;
+    description?: InternationalizedArrayText;
+};
+
+export type ReviewsHome = {
+    _type: "reviewsHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    reviewsSlider?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "review";
+    }>;
+};
+
+export type PortfolioHome = {
+    _type: "portfolioHome";
+    sectionId?: AnchorLink;
+    title?: InternationalizedArrayPortableColorTitle;
+    portfolioSlider?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "project";
+    }>;
+};
+
+export type CallToAction = {
+    _type: "callToAction";
+    title?: InternationalizedArrayString;
+    description?: InternationalizedArrayPortableTextSimple;
+};
+
+export type AboutUsHomeSection = {
+    _type: "aboutUsHomeSection";
+    sectionId?: AnchorLink;
+    sectionTitle?: InternationalizedArrayPortableColorTitle;
+    aboutUsItemInfo?: Array<
+        {
+            _key: string;
+        } & AboutUsItem
+    >;
+    learnMoreButton?: Button;
+};
+
+export type HeroHome = {
+    _type: "heroHome";
+    title?: InternationalizedArrayText;
+    portfolioSlider?: Array<{
+        _ref: string;
+        _type: "reference";
+        _weak?: boolean;
+        _key: string;
+        [internalGroqTypeReferenceTo]?: "project";
+    }>;
+};
+
 export type InternationalizedArrayReference = Array<
     {
         _key: string;
     } & InternationalizedArrayReferenceValue
 >;
+
+export type MediaTag = {
+    _id: string;
+    _type: "media.tag";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    name?: Slug;
+};
 
 export type Color = {
     _type: "color";
@@ -1290,13 +1156,109 @@ export type HslaColor = {
     a?: number;
 };
 
-export type MediaTag = {
+export type SanityImagePaletteSwatch = {
+    _type: "sanity.imagePaletteSwatch";
+    background?: string;
+    foreground?: string;
+    population?: number;
+    title?: string;
+};
+
+export type SanityImagePalette = {
+    _type: "sanity.imagePalette";
+    darkMuted?: SanityImagePaletteSwatch;
+    lightVibrant?: SanityImagePaletteSwatch;
+    darkVibrant?: SanityImagePaletteSwatch;
+    vibrant?: SanityImagePaletteSwatch;
+    dominant?: SanityImagePaletteSwatch;
+    lightMuted?: SanityImagePaletteSwatch;
+    muted?: SanityImagePaletteSwatch;
+};
+
+export type SanityImageDimensions = {
+    _type: "sanity.imageDimensions";
+    height?: number;
+    width?: number;
+    aspectRatio?: number;
+};
+
+export type SanityImageHotspot = {
+    _type: "sanity.imageHotspot";
+    x?: number;
+    y?: number;
+    height?: number;
+    width?: number;
+};
+
+export type SanityImageCrop = {
+    _type: "sanity.imageCrop";
+    top?: number;
+    bottom?: number;
+    left?: number;
+    right?: number;
+};
+
+export type SanityFileAsset = {
     _id: string;
-    _type: "media.tag";
+    _type: "sanity.fileAsset";
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
-    name?: Slug;
+    originalFilename?: string;
+    label?: string;
+    title?: string;
+    description?: string;
+    altText?: string;
+    sha1hash?: string;
+    extension?: string;
+    mimeType?: string;
+    size?: number;
+    assetId?: string;
+    uploadId?: string;
+    path?: string;
+    url?: string;
+    source?: SanityAssetSourceData;
+};
+
+export type SanityImageAsset = {
+    _id: string;
+    _type: "sanity.imageAsset";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    originalFilename?: string;
+    label?: string;
+    title?: string;
+    description?: string;
+    altText?: string;
+    sha1hash?: string;
+    extension?: string;
+    mimeType?: string;
+    size?: number;
+    assetId?: string;
+    uploadId?: string;
+    path?: string;
+    url?: string;
+    metadata?: SanityImageMetadata;
+    source?: SanityAssetSourceData;
+};
+
+export type SanityImageMetadata = {
+    _type: "sanity.imageMetadata";
+    location?: Geopoint;
+    dimensions?: SanityImageDimensions;
+    palette?: SanityImagePalette;
+    lqip?: string;
+    blurHash?: string;
+    hasAlpha?: boolean;
+    isOpaque?: boolean;
+};
+
+export type Geopoint = {
+    _type: "geopoint";
+    lat?: number;
+    lng?: number;
+    alt?: number;
 };
 
 export type Slug = {
@@ -1305,13 +1267,14 @@ export type Slug = {
     source?: string;
 };
 
+export type SanityAssetSourceData = {
+    _type: "sanity.assetSourceData";
+    name?: string;
+    id?: string;
+    url?: string;
+};
+
 export type AllSanitySchemaTypes =
-    | SanityImagePaletteSwatch
-    | SanityImagePalette
-    | SanityImageDimensions
-    | SanityFileAsset
-    | Geopoint
-    | ColorTheme
     | MenuItem
     | Stage
     | AnchorLink
@@ -1332,11 +1295,11 @@ export type AllSanitySchemaTypes =
     | PortableColorTitle
     | PortableTextSimple
     | PortableText
-    | Customer
     | Tool
     | Service
     | Faq
     | Review
+    | Customer
     | Project
     | SiteCategory
     | Team
@@ -1344,16 +1307,6 @@ export type AllSanitySchemaTypes =
     | SpecialistCategory
     | LinkInternal
     | Page
-    | Home
-    | FaqHome
-    | StagesHome
-    | TeamHome
-    | ServicesHome
-    | ReviewsHome
-    | PortfolioHome
-    | CallToAction
-    | AboutUsHomeSection
-    | HeroHome
     | LinkExternal
     | LinkEmail
     | InternationalizedArrayPortableColorTitleValue
@@ -1370,232 +1323,35 @@ export type AllSanitySchemaTypes =
     | InternationalizedArrayReferenceValue
     | Settings
     | Button
-    | SanityImageCrop
-    | SanityImageHotspot
-    | SanityImageAsset
-    | SanityAssetSourceData
-    | SanityImageMetadata
     | Seo
     | NotFoundPage
     | Footer
     | Header
+    | Home
+    | FaqHome
+    | StagesHome
+    | TeamHome
+    | ServicesHome
+    | ReviewsHome
+    | PortfolioHome
+    | CallToAction
+    | AboutUsHomeSection
+    | HeroHome
     | InternationalizedArrayReference
+    | MediaTag
     | Color
     | RgbaColor
     | HsvaColor
     | HslaColor
-    | MediaTag
-    | Slug;
+    | SanityImagePaletteSwatch
+    | SanityImagePalette
+    | SanityImageDimensions
+    | SanityImageHotspot
+    | SanityImageCrop
+    | SanityFileAsset
+    | SanityImageAsset
+    | SanityImageMetadata
+    | Geopoint
+    | Slug
+    | SanityAssetSourceData;
 export declare const internalGroqTypeReferenceTo: unique symbol;
-// Source: ./sanity/lib/queries.ts
-// Variable: homeHeroQuery
-// Query: *[_type == "home"][0]{  "title": hero.title[_key == $language][0].value,  "portfolioSliderData": hero.portfolioSlider[]->{    "title": title[_key == $language][0].value,     image {      "caption": caption[_key == $language][0].value,       "asset": image.asset->url    },    "category": category->categoryName[_key == $language][0].value,    _id  }}
-export type HomeHeroQueryResult = {
-    title: string | null;
-    portfolioSliderData: Array<{
-        title: string | null;
-        image: {
-            caption: string | null;
-            asset: string | null;
-        } | null;
-        category: string | null;
-        _id: string;
-    }> | null;
-} | null;
-// Variable: homePortfolioQuery
-// Query: *[_type == "home"][0]{  portfolioHome{"title": title[_key == $language][0].value,     "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value,     image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},    "category":category->categoryName[_key == $language][0].value,    _id, stages, URL}  }}
-export type HomePortfolioQueryResult = {
-    portfolioHome: {
-        title: PortableColorTitle | null;
-        subtitle: string | null;
-        anchorId: string | null;
-        portfolioSliderData: Array<{
-            title: string | null;
-            image: {
-                caption: string | null;
-                asset: string | null;
-            } | null;
-            category: string | null;
-            _id: string;
-            stages: Array<string> | null;
-            URL: LinkExternal | null;
-        }> | null;
-    } | null;
-} | null;
-// Variable: CTAQuery
-// Query: *[_type == "home"][0]{    ctaSectionWriteUs {"title": title[_key == $language][0].value},     ctaSectionJoinUs {"title": title[_key == $language][0].value},     ctaSectionOrder {"title": title[_key == $language][0].value,     "description": description[_key == $language][0].value[0].children[0].text}    }
-export type CTAQueryResult = {
-    ctaSectionWriteUs: {
-        title: string | null;
-    } | null;
-    ctaSectionJoinUs: {
-        title: string | null;
-    } | null;
-    ctaSectionOrder: {
-        title: string | null;
-        description: string | null;
-    } | null;
-} | null;
-// Variable: settingsQuery
-// Query: *[_type == "settings"][0]{  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url    ),    "titleNotFound":title[_key == $language][0].value,     "descriptionNotFound":description[_key == $language][0].value},    header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},  "navigationMenu": navigationMenu[]{  linkInternal,  "titleMenu":title[_key == $language][0].value  }},   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,     buttonLink == "external" => linkExternal.url    ),     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,                         buttonLink == "internal" => false)},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
-export type SettingsQueryResult = {
-    notFoundPage: {
-        goToHomeButtonName: string | null;
-        buttonPageLink: string | null;
-        titleNotFound: string | null;
-        descriptionNotFound: string | null;
-    } | null;
-    header: {
-        socialLinks: Array<{
-            platform:
-                | "behance"
-                | "email"
-                | "facebook"
-                | "github"
-                | "googleDrive"
-                | "instagram"
-                | "linkedin"
-                | "pinterest"
-                | "telegram"
-                | "twitter"
-                | "whatsapp"
-                | "youtube"
-                | null;
-            url: string | null;
-            newWindow: boolean | null;
-        }> | null;
-        navigationMenu: Array<{
-            linkInternal: string | null;
-            titleMenu: string | null;
-        }> | null;
-    } | null;
-    buttonJoinUS: {
-        buttonName: string | null;
-        buttonPageLink: string | null;
-        newWindow: boolean | false | null;
-    } | null;
-    buttonOrder: {
-        _type: "button";
-        buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink";
-        linkInternal?: LinkInternal;
-        linkExternal?: LinkExternal;
-    } | null;
-    buttonBuyMeCoffee: {
-        _type: "button";
-        buttonName: string | null;
-        buttonLink?: "external" | "internal" | "noLink";
-        linkInternal?: LinkInternal;
-        linkExternal?: LinkExternal;
-    } | null;
-} | null;
-// Variable: footerQuery
-// Query: *[_type == "settings"][0]{    "title": footer.title[_key == $language][0].value,      "rightsReserved": footer.rightsReserved[_key == $language][0].value,      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,       "navigationMenu": footer.navigationMenu[]{      linkInternal,      "titleMenu":title[_key == $language][0].value    }          }
-export type FooterQueryResult = {
-    title: PortableColorTitle | null;
-    rightsReserved: string | null;
-    privacyPolicyTitle: string | null;
-    privacyPolicyURL: null;
-    privacyPolicyNewWindow: null;
-    navigationMenu: Array<{
-        linkInternal: string | null;
-        titleMenu: string | null;
-    }> | null;
-} | null;
-// Variable: projectQuery
-// Query: *[_type == "project"]{_id,"title": title[_key == $language][0].value,   image {"caption":caption[_key == $language][0].value, "asset": asset->url},   stages, URL,   "category":category->categoryName[_key == $language][0].value}
-export type ProjectQueryResult = Array<{
-    _id: string;
-    title: string | null;
-    image: {
-        caption: string | null;
-        asset: null;
-    } | null;
-    stages: Array<string> | null;
-    URL: LinkExternal | null;
-    category: string | null;
-}>;
-// Variable: homeServicesQuery
-// Query: *[_type == "home"][0]   { servicesHome {  "title": title[_key == $language][0].value,  "description": description[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "servicesListTitle":servicesList[]->title[_key == $language][0].value,  "servicesListText":servicesList[]->description[_key == $language][0].value}}
-export type HomeServicesQueryResult = {
-    servicesHome: {
-        title: PortableColorTitle | null;
-        description: string | null;
-        subtitle: string | null;
-        anchorId: string | null;
-        servicesListTitle: Array<string | null> | null;
-        servicesListText: Array<string | null> | null;
-    } | null;
-} | null;
-// Variable: homeStagesQuery
-// Query: *[_type == "home"][0]{stagesHome {  "title": title[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "stagesListTitle":stagesList[].title[_key == $language][0].value ,  "stagesListText":stagesList[].description[_key == $language][0].value}}
-export type HomeStagesQueryResult = {
-    stagesHome: {
-        title: PortableColorTitle | null;
-        subtitle: string | null;
-        anchorId: string | null;
-        stagesListTitle: Array<string | null> | null;
-        stagesListText: Array<string | null> | null;
-    } | null;
-} | null;
-// Variable: homeAboutUsQuery
-// Query: *[_type == "home"][0]{aboutUsHomeSection {  "title": sectionTitle[_key == $language][0].value,  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,  "subtitle": sectionId.subtitle[_key == $language][0].value,   "anchorId": sectionId.anchorId.current,  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url    )} }
-export type HomeAboutUsQueryResult = {
-    aboutUsHomeSection: {
-        title: PortableColorTitle | null;
-        aboutUsItemInfo: Array<string | null> | null;
-        subtitle: string | null;
-        anchorId: string | null;
-        learnMoreButtonName: string | null;
-        buttonPageLink: string | null;
-    } | null;
-} | null;
-// Variable: homeFAQQuery
-// Query: *[_type == "home"][0]{  "title": faqHome.title[_key == $language][0].value,  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value,   "anchorId": faqHome.sectionId.anchorId.current,  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value,                                  "shortAnswer":shortAnswer[_key == $language][0].value}}
-export type HomeFAQQueryResult = {
-    title: PortableColorTitle | null;
-    subtitle: string | null;
-    anchorId: string | null;
-    faqList: Array<{
-        question: string | null;
-        shortAnswer: string | null;
-    }> | null;
-} | null;
-// Variable: homeReviewsQuery
-// Query: *[_type == "home"][0]{    "title": reviewsHome.title[_key == $language][0].value,    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,    "anchorId": reviewsHome.sectionId.anchorId.current,    "feedbacks": reviewsHome.reviewsSlider[] {      _type == "reference" => @->{_id,        "reviewText": reviewText[_key == $language][0].value,        "feedbackLink": reviewUrl.url,        "newWindow": reviewUrl.newWindow,        "altImage": image.caption[_key == $language][0].value,        "asset": image.image.asset->url,        "reviewerName": select(          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value        ),        "reviewerPosition": select(          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value        ),        "projectName": project->title[_key == $language][0].value,        "projectURL": project->URL.url,                                  "projectCategory": project->category->categoryName[_key == $language][0].value      }    }  }
-export type HomeReviewsQueryResult = {
-    title: PortableColorTitle | null;
-    subtitle: string | null;
-    anchorId: string | null;
-    feedbacks: Array<{
-        _id: string;
-        reviewText: string | null;
-        feedbackLink: string | null;
-        newWindow: boolean | null;
-        altImage: string | null;
-        asset: string | null;
-        reviewerName: string | null;
-        reviewerPosition: string | null;
-        projectName: string | null;
-        projectURL: string | null;
-        projectCategory: string | null;
-    }> | null;
-} | null;
-
-// Query TypeMap
-import "@sanity/client";
-declare module "@sanity/client" {
-    interface SanityQueries {
-        '\n  *[_type == "home"][0]{\n  "title": hero.title[_key == $language][0].value,\n  "portfolioSliderData": hero.portfolioSlider[]->{\n    "title": title[_key == $language][0].value, \n    image {\n      "caption": caption[_key == $language][0].value, \n      "asset": image.asset->url\n    },\n    "category": category->categoryName[_key == $language][0].value,\n    _id\n  }\n}': HomeHeroQueryResult;
-        '\n  *[_type == "home"][0]{\n  portfolioHome{"title": title[_key == $language][0].value, \n    "subtitle": sectionId.subtitle[_key == $language][0].value, "anchorId": sectionId.anchorId.current,\n    "portfolioSliderData": portfolioSlider[]->{"title": title[_key == $language][0].value, \n    image {"caption":caption[_key == $language][0].value, "asset": image.asset->url},\n    "category":category->categoryName[_key == $language][0].value,\n    _id, stages, URL}\n  }\n}': HomePortfolioQueryResult;
-        '\n *[_type == "home"][0]{\n    ctaSectionWriteUs {"title": title[_key == $language][0].value}, \n    ctaSectionJoinUs {"title": title[_key == $language][0].value}, \n    ctaSectionOrder {"title": title[_key == $language][0].value, \n    "description": description[_key == $language][0].value[0].children[0].text}\n    }': CTAQueryResult;
-        '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value, \n    "descriptionNotFound":description[_key == $language][0].value},\n  \n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow, \n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult;
-        '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
-        '\n*[_type == "project"]\n{_id,\n"title": title[_key == $language][0].value, \n  image {"caption":caption[_key == $language][0].value, "asset": asset->url}, \n  stages, URL, \n  "category":category->categoryName[_key == $language][0].value}\n': ProjectQueryResult;
-        '\n  *[_type == "home"][0] \n  { servicesHome {\n  "title": title[_key == $language][0].value,\n  "description": description[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "servicesListTitle":servicesList[]->title[_key == $language][0].value,\n  "servicesListText":servicesList[]->description[_key == $language][0].value\n}}': HomeServicesQueryResult;
-        '\n  *[_type == "home"][0]{stagesHome {\n  "title": title[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "stagesListTitle":stagesList[].title[_key == $language][0].value ,\n  "stagesListText":stagesList[].description[_key == $language][0].value\n}}': HomeStagesQueryResult;
-        '\n *[_type == "home"][0]{aboutUsHomeSection {\n  "title": sectionTitle[_key == $language][0].value,\n  "aboutUsItemInfo": aboutUsItemInfo[].aboutUs[_key == $language][0].value,\n  "subtitle": sectionId.subtitle[_key == $language][0].value, \n  "anchorId": sectionId.anchorId.current,\n  "learnMoreButtonName":learnMoreButton.buttonName[_key == $language][0].value,\n  "buttonPageLink":select(learnMoreButton.buttonLink == "internal" => learnMoreButton.linkInternal.reference->pageSlug.current,\n     learnMoreButton.buttonLink == "external" => learnMoreButton.linkExternal.url\n    )} }': HomeAboutUsQueryResult;
-        '\n  *[_type == "home"][0]{\n  "title": faqHome.title[_key == $language][0].value,\n  "subtitle": faqHome.sectionId.subtitle[_key == $language][0].value, \n  "anchorId": faqHome.sectionId.anchorId.current,\n  "faqList": faqHome.faqList[]->{"question":question[_key == $language][0].value, \n                                 "shortAnswer":shortAnswer[_key == $language][0].value}\n}': HomeFAQQueryResult;
-        '\n*[_type == "home"][0]{\n    "title": reviewsHome.title[_key == $language][0].value,\n    "subtitle": reviewsHome.sectionId.subtitle[_key == $language][0].value,\n    "anchorId": reviewsHome.sectionId.anchorId.current,\n    "feedbacks": reviewsHome.reviewsSlider[] {\n      _type == "reference" => @->{_id,\n        "reviewText": reviewText[_key == $language][0].value,\n        "feedbackLink": reviewUrl.url,\n        "newWindow": reviewUrl.newWindow,\n        "altImage": image.caption[_key == $language][0].value,\n        "asset": image.image.asset->url,\n        "reviewerName": select(\n          reviewer[0]._type == "reference" => reviewer[0]->name[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].name[_key == $language][0].value\n        ),\n        "reviewerPosition": select(\n          reviewer[0]._type == "reference" => reviewer[0]->position[_key == $language][0].value,\n          reviewer[0]._type != "reference" => reviewer[0].position[_key == $language][0].value\n        ),\n        "projectName": project->title[_key == $language][0].value,\n        "projectURL": project->URL.url,                          \n        "projectCategory": project->category->categoryName[_key == $language][0].value\n      }\n    }\n  }\n': HomeReviewsQueryResult;
-    }
-}

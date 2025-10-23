@@ -1,20 +1,18 @@
-import { SlugRule } from "sanity";
+import { Slug } from "@/types/sanity.types";
 
-const MAX_LENGTH = 96;
-
-export const validateSlug = (Rule: SlugRule) => {
-    return Rule.required().custom(value => {
+export const validateSlug = (maxLength: number) => {
+    return (value: Slug | undefined) => {
         const currentSlug = value && value.current;
         if (!currentSlug) {
             return true;
         }
 
-        if (currentSlug.length >= MAX_LENGTH) {
-            return `Must be less than ${MAX_LENGTH} characters`;
+        if (currentSlug.length >= maxLength) {
+            return `Посилання повинно бути не більше ${maxLength} символів`;
         }
 
         return true;
-    });
+    };
 };
 
 export function resolveHref(

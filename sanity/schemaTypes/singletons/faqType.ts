@@ -1,179 +1,261 @@
-import { FcFaq } from "react-icons/fc";
-import { defineField } from "sanity";
+import { toPlainText } from "next-sanity";
+import { FcCheckmark, FcFaq } from "react-icons/fc";
+import { defineArrayMember, defineField } from "sanity";
 
-import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { BlockTypePreview } from "@/sanity/components/blockTypePreview/BlockTypePreview";
+import { PreviewWithImage } from "@/sanity/components/previewWithImage/PreviewWithImage";
+import { FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH } from "@/sanity/constants";
+import { generateSlug } from "@/sanity/utils/generateSlug";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { validateSlug } from "@/sanity/utils/validateSlug";
+
+import { getUkrainianTitleFromIntArrays } from "./../../utils/getEnglishTitleFromIntArrays";
 
 export const faqType = defineField({
     name: "faq",
     title: "FAQs",
     type: "document",
     icon: FcFaq,
+    fieldsets: [
+        {
+            name: "mainData",
+            title: "Основні відомості",
+            options: { collapsible: true },
+        },
+    ],
     fields: [
-        defineField({
-            name: "numberOfLikes",
-            type: "number",
-            title: "Number of likes",
-            description:
-                "The number of likes is a read-only field and will be updated by customers through the webpage.",
-            readOnly: true,
-        }),
         defineField({
             name: "question",
             type: "internationalizedArrayString",
-            title: "Question",
+            options: { collapsible: true },
+            fieldset: "mainData",
+            title: "Впишіть повний текст питання",
+
+            description:
+                "Якщо потрібно перенести частину заголовку на іншу строку, поставте символ '\n'",
             validation: rule => rule.custom(validateIsRequired),
+        }),
+        defineField({
+            title: "Генерація посилання на сторінку",
+            name: "pageSlug",
+            type: "slug",
+            fieldset: "mainData",
+            description:
+                "Натисність кнопку Generate, щоб згенерувати посилання з тексту питання",
+
+            options: {
+                source: doc => generateSlug(doc, "question", SLUG_MAX_LENGTH),
+                slugify: input => input,
+            },
+            validation: Rule =>
+                Rule.required().custom(validateSlug(SLUG_MAX_LENGTH)),
         }),
         defineField({
             name: "shortAnswer",
             type: "internationalizedArrayText",
-            title: "Short version of the answer",
+            title: "Коротка відповідь",
+            fieldset: "mainData",
             description:
-                "Provide a short answer option for the all questions page",
+                "Коротка відповідь буде відображатись на сторінці з усіма питаннями (/faq) та на головній сторінці в секції питання/відповідь",
+            validation: rule => rule.custom(validateIsRequired),
+        }),
+        defineField({
+            name: "additionalTextShortAnswer",
+            type: "internationalizedArrayText",
+            title: "Додатковий текст до короткої відповіді",
+            options: { collapsible: true },
+            fieldset: "mainData",
+            description:
+                "Додаткові відомості до короткої відповіді, будуть розміщені в Hero секції",
             validation: rule => rule.custom(validateIsRequired),
         }),
         defineField({
             name: "image",
-            title: "Question image",
+            type: "imageType",
+            title: "Зображення до питання",
+            validation: rule => rule.required(),
+            fieldset: "mainData",
+        }),
+
+        defineField({
+            name: "mainContent",
+            type: "array",
+            title: "Основний контент відповіді",
+            description:
+                "Заповність дані для повного опису відповіді на питання використовуючи зазнчені секції",
+            of: [
+                defineArrayMember({
+                    name: "mainBlock",
+                    title: "Main content block",
+                    type: "object",
+                    fields: [
+                        defineField({
+                            name: "layoutType",
+                            title: "Визначте секцію для відображення контенту",
+                            type: "string",
+                            components: { input: BlockTypePreview },
+                            options: {
+                                list: FAQ_PAGE_DESIGN_TYPES,
+                                layout: "radio",
+                            },
+                            validation: rule => rule.required(),
+                            initialValue: FAQ_PAGE_DESIGN_TYPES[0].value,
+                        }),
+
+                        defineField({
+                            name: "mainContentTitle",
+                            type: "internationalizedArrayString",
+                            title: "Основний заголовок до секції",
+                            description: "Заповніть за необхідності",
+                        }),
+                        defineField({
+                            name: "isTopTextNeeded",
+                            type: "boolean",
+                            title: "Додати верхній текст в секції",
+                            initialValue: false,
+                        }),
+                        defineField({
+                            name: "mainContentTopText",
+                            type: "internationalizedArrayText",
+                            title: "Додатковий текст перед основним переліком",
+                            hidden: ({ parent }) => !parent?.isTopTextNeeded,
+                        }),
+                        defineField({
+                            name: "mainContentText",
+                            type: "array",
+                            title: "Основний контент секції",
+                            description:
+                                "Внесіть основний текст, ділячи їх по блокам, як потрібно відобразити згідно схеми блоку",
+
+                            of: [
+                                {
+                                    type: "object",
+                                    name: "contentBlock",
+                                    title: "Блок в секції",
+                                    fields: [
+                                        {
+                                            type: "internationalizedArrayString",
+                                            name: "contentBlockTitle",
+                                            title: "Заголовок блоку",
+                                            description:
+                                                "Внесіть дані за необхідності",
+                                        },
+                                        {
+                                            type: "internationalizedArrayPortableTextSimple",
+                                            name: "contentBlockText",
+                                            title: "Основний текст блоку",
+                                            validation: rule =>
+                                                rule.custom(validateIsRequired),
+                                        },
+                                    ],
+                                    preview: {
+                                        select: {
+                                            title: "contentBlockTitle",
+                                            subtitle:
+                                                "contentBlockText[0].value",
+                                        },
+                                        prepare: ({ title, subtitle }) => {
+                                            const uaTitle =
+                                                getUkrainianTitleFromIntArrays(
+                                                    title
+                                                ) || "Без заголовку";
+                                            const text = subtitle
+                                                ? toPlainText(subtitle)
+                                                : "Не внесен текст";
+
+                                            return {
+                                                title: uaTitle,
+                                                subtitle: text,
+                                                media: FcCheckmark,
+                                            };
+                                        },
+                                    },
+                                },
+                            ],
+                        }),
+                        defineField({
+                            name: "isBottomTextNeeded",
+                            type: "boolean",
+                            title: "Додати нижній текст в секції",
+                            initialValue: false,
+                        }),
+                        defineField({
+                            name: "mainContentBottomText",
+                            type: "internationalizedArrayText",
+                            title: "Додатковий текст після основного переліку",
+                            description: "Заповніть за необхідності",
+                            hidden: ({ parent }) => !parent?.isBottomTextNeeded,
+                        }),
+                    ],
+
+                    preview: {
+                        select: {
+                            layoutType: "layoutType",
+                            mainTitle: "mainContentTitle",
+                        },
+
+                        prepare({ layoutType, mainTitle }) {
+                            const currentDesign = FAQ_PAGE_DESIGN_TYPES.find(
+                                type => type.value === layoutType
+                            );
+                            const title = getUkrainianTitleFromIntArrays(
+                                mainTitle,
+                                "Без заголовку"
+                            );
+
+                            if (currentDesign) {
+                                return {
+                                    title: title,
+                                    subtitle: currentDesign.description,
+                                    media: PreviewWithImage(
+                                        `/images/sanity/faqPreview/${currentDesign.value}.jpg`,
+                                        `Представлення для дизайну ${currentDesign.description}`
+                                    ),
+                                };
+                            }
+
+                            return {
+                                title: title,
+                                subtitle: "Дизайн не визначений",
+                                media: FcFaq,
+                            };
+                        },
+                    },
+                }),
+            ],
+            validation: rule => rule.required(),
+        }),
+
+        defineField({
+            name: "orderContent",
             type: "object",
+            title: "Секція з кнопкою Замовити",
+            options: { collapsible: true },
+
             fields: [
                 {
                     name: "image",
-                    title: "Image",
-                    description:
-                        "Question image to show in the all questions page",
-                    type: "image",
+                    title: "Зображення",
+
+                    type: "imageType",
                     validation: rule => rule.required(),
                 },
                 {
-                    name: "caption",
-                    type: "internationalizedArrayString",
-                    title: "Caption",
-                    description:
-                        "A brief description of what is shown in the picture",
+                    name: "orderText",
+                    title: "Текст",
+
+                    type: "internationalizedArrayText",
                     validation: rule => rule.custom(validateIsRequired),
                 },
             ],
             validation: rule => rule.required(),
         }),
         defineField({
-            name: "fullAnswer",
-            type: "object",
-            title: "Full version of the answer (optional)",
-            description:
-                "Provide a full answer option for a single question page",
-            fields: [
-                {
-                    name: "topText",
-                    title: "Top text",
-                    description:
-                        "The beginning of the full answer, which is displayed at the top of the page",
-                    type: "internationalizedArrayText",
-                    validation: rule => rule.custom(validateIsRequired),
-                },
-                {
-                    name: "mainContent",
-                    type: "array",
-                    title: "Main Content",
-                    description:
-                        "The middle part of the full answer. May include one or more blocks. Choose a design option and fill in the required data.",
-                    of: [
-                        {
-                            name: "mainBlock",
-                            title: "Main content block",
-                            type: "object",
-                            fields: [
-                                {
-                                    name: "designType",
-                                    type: "string",
-                                    title: "Design Type",
-                                    initialValue: "numberedList",
-                                    options: {
-                                        list: FAQ_PAGE_DESIGN_TYPES,
-                                    },
-                                    description:
-                                        "Select the design type you want for this content block",
-                                    validation: rule => rule.required(),
-                                },
-                                {
-                                    name: "mainContentTitle",
-                                    type: "internationalizedArrayString",
-                                    title: "Main Content Title (optional)",
-                                    description:
-                                        "Specify only the title is needed",
-                                },
-                                {
-                                    name: "mainContentText",
-                                    type: "internationalizedArrayPortableText",
-                                    title: "Main Content Text",
-                                    description:
-                                        "Place the content here and select the desired styles",
-                                    validation: rule =>
-                                        rule.custom(validateIsRequired),
-                                },
-                            ],
-                            preview: {
-                                select: {
-                                    title: "designType",
-                                },
-                                prepare({ title }) {
-                                    const designTitle =
-                                        FAQ_PAGE_DESIGN_TYPES.find(
-                                            type => type.value === title
-                                        )?.title;
-                                    return {
-                                        title:
-                                            designTitle ||
-                                            "Unknown design type",
-                                    };
-                                },
-                            },
-                        },
-                    ],
-                    validation: rule => rule.required(),
-                },
-                {
-                    name: "orderContent",
-                    type: "object",
-                    title: "Order Section Content",
-                    description: "The last part of the full answer",
-                    fields: [
-                        {
-                            name: "image",
-                            title: "Image",
-                            description:
-                                "Image to show in the order section of the full answer page",
-                            type: "image",
-                            validation: rule => rule.required(),
-                        },
-                        {
-                            name: "orderText",
-                            title: "Text",
-                            description:
-                                "Text to show in the order section of the full answer page",
-                            type: "internationalizedArrayText",
-                            validation: rule => rule.custom(validateIsRequired),
-                        },
-                        {
-                            name: "showButton",
-                            type: "boolean",
-                            title: "Show Order Button?",
-                            description:
-                                "Select whether to display a button in the order section",
-                            options: {
-                                layout: "radio",
-                                list: [
-                                    { title: "Yes", value: true },
-                                    { title: "No", value: false },
-                                ],
-                            },
-                            validation: rule => rule.required(),
-                        },
-                    ],
-                    validation: rule => rule.required(),
-                },
-            ],
+            name: "likes",
+            type: "number",
+            title: "Кількість лайків до питання",
+            initialValue: 0,
+            readOnly: true,
         }),
     ],
     preview: {
@@ -182,9 +264,10 @@ export const faqType = defineField({
             media: "image.image",
         },
         prepare({ title, media }) {
-            const englishTitle = getEnglishTitleFromIntArrays(title);
+            const previewTitle = getUkrainianTitleFromIntArrays(title);
+
             return {
-                title: englishTitle,
+                title: previewTitle,
                 media: media || undefined,
             };
         },

@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import React from "react";
 
+import { SanityLive } from "@/sanity/lib/live";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { ConditionalGTM } from "@/src/components/cookies/ConditionalGTM";
@@ -120,8 +121,8 @@ export default async function LocaleLayout({
                                     <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
                                         <BackgroundFigures />
                                         {modal}
-
                                         {children}
+                                        <SanityLive />
                                     </div>
                                 </main>
                                 <Footer />

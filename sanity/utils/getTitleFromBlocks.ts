@@ -16,3 +16,20 @@ export const getEnglishTitleFromBlocks = (
     }
     return "No title";
 };
+
+export const getUkrainianTitleFromBlocks = (
+    title: InternationalizedArrayPortableColorTitle
+) => {
+    const uaTitleBlock = title?.find(block => block._key === "ua")?.value;
+
+    if (uaTitleBlock) {
+        return (
+            uaTitleBlock
+                .flatMap(({ children }) =>
+                    children?.map(child => child.text || "")
+                )
+                .join(" ") || "Не вказано"
+        );
+    }
+    return "Не вказано";
+};

@@ -10,6 +10,7 @@ import { buttonType } from "./objects/global/buttonType";
 import { durationType } from "./objects/global/durationType";
 import { footerType } from "./objects/global/footerType";
 import { headerType } from "./objects/global/headerType";
+import { imageType } from "./objects/global/imageType";
 import { menuItemType } from "./objects/global/menuItemType";
 import { milestoneType } from "./objects/global/milestoneType";
 import { notFoundPageType } from "./objects/global/notFoundPageType";
@@ -78,6 +79,7 @@ const objects: ObjectDefinition[] = [
     stageType,
     faqHomeType,
     menuItemType,
+    imageType,
 ];
 
 const arrays: ArrayDefinition[] = [];

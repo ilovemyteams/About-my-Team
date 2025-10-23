@@ -7,6 +7,8 @@ import {
     FcSearch,
 } from "react-icons/fc";
 // Field groups used through schema types
+
+export const SLUG_MAX_LENGTH = 100;
 export const GROUPS = [
     {
         name: "editorial",
@@ -80,9 +82,38 @@ export const SOCIAL_LINKS = [
 ];
 
 export const FAQ_PAGE_DESIGN_TYPES = [
-    { title: "Numbered list", value: "numberedList" },
-    { title: "Table", value: "table" },
-    { title: "List", value: "list" },
+    {
+        title: "Numbered list",
+        value: "numberedList",
+        description: "Список з великими цифрами зліва",
+    },
+    { title: "Table", value: "table", description: "Таблиця" },
+    { title: "List", value: "list", description: "Список в табличній формі" },
+    {
+        title: "List With Decoration",
+        value: "decorationList",
+        description: "Список з декоративніми елементами",
+    },
+    {
+        title: "Text With Arrow",
+        value: "textWithArrow",
+        description: "Текст з червоною стрілкою",
+    },
+    {
+        title: "Red Bullet Text With Arrow",
+        value: "redBulletTextWithArrow",
+        description: "Список з червоною стрілкою",
+    },
+    {
+        title: "Gorizontal List",
+        value: "gorizontalList",
+        description: "Горизонтальний список з червоною лінією",
+    },
+    {
+        title: "Table With Lines",
+        value: "tableWithLines",
+        description: "Таблиця з декоративними лініями",
+    },
 ];
 
 export const GENDER_OPTIONS = [
