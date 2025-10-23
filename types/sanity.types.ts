@@ -402,78 +402,97 @@ export type Faq = {
     _createdAt: string;
     _updatedAt: string;
     _rev: string;
-    numberOfLikes?: number;
     question?: Array<
         {
             _key: string;
         } & InternationalizedArrayStringValue
     >;
+    pageSlug?: Slug;
     shortAnswer?: Array<
         {
             _key: string;
         } & InternationalizedArrayTextValue
     >;
-    image?: {
-        image?: {
-            asset?: {
-                _ref: string;
-                _type: "reference";
-                _weak?: boolean;
-                [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-            };
-            media?: unknown;
-            hotspot?: SanityImageHotspot;
-            crop?: SanityImageCrop;
-            _type: "image";
-        };
-        caption?: Array<
+    additionalTextShortAnswer?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayTextValue
+    >;
+    image?: ImageType;
+    mainContent?: Array<{
+        layoutType?:
+            | "numberedList"
+            | "table"
+            | "list"
+            | "decorationList"
+            | "textWithArrow"
+            | "redBulletTextWithArrow"
+            | "gorizontalList"
+            | "tableWithLines";
+        mainContentTitle?: Array<
             {
                 _key: string;
             } & InternationalizedArrayStringValue
         >;
-    };
-    fullAnswer?: {
-        topText?: Array<
+        isTopTextNeeded?: boolean;
+        mainContentTopText?: Array<
             {
                 _key: string;
             } & InternationalizedArrayTextValue
         >;
-        mainContent?: Array<{
-            designType?: "numberedList" | "table" | "list";
-            mainContentTitle?: Array<
+        mainContentText?: Array<{
+            contentBlockTitle?: Array<
                 {
                     _key: string;
                 } & InternationalizedArrayStringValue
             >;
-            mainContentText?: Array<
+            contentBlockText?: Array<
                 {
                     _key: string;
-                } & InternationalizedArrayPortableTextValue
+                } & InternationalizedArrayPortableTextSimpleValue
             >;
-            _type: "mainBlock";
+            _type: "contentBlock";
             _key: string;
         }>;
-        orderContent?: {
-            image?: {
-                asset?: {
-                    _ref: string;
-                    _type: "reference";
-                    _weak?: boolean;
-                    [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
-                };
-                media?: unknown;
-                hotspot?: SanityImageHotspot;
-                crop?: SanityImageCrop;
-                _type: "image";
-            };
-            orderText?: Array<
-                {
-                    _key: string;
-                } & InternationalizedArrayTextValue
-            >;
-            showButton?: boolean;
-        };
+        isBottomTextNeeded?: boolean;
+        mainContentBottomText?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayTextValue
+        >;
+        _type: "mainBlock";
+        _key: string;
+    }>;
+    orderContent?: {
+        image?: ImageType;
+        orderText?: Array<
+            {
+                _key: string;
+            } & InternationalizedArrayTextValue
+        >;
     };
+    likes?: number;
+};
+
+export type ImageType = {
+    _type: "imageType";
+    image?: {
+        asset?: {
+            _ref: string;
+            _type: "reference";
+            _weak?: boolean;
+            [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+        };
+        media?: unknown;
+        hotspot?: SanityImageHotspot;
+        crop?: SanityImageCrop;
+        _type: "image";
+    };
+    caption?: Array<
+        {
+            _key: string;
+        } & InternationalizedArrayStringValue
+    >;
 };
 
 export type Review = {
@@ -1298,6 +1317,7 @@ export type AllSanitySchemaTypes =
     | Tool
     | Service
     | Faq
+    | ImageType
     | Review
     | Customer
     | Project
