@@ -1,11 +1,11 @@
 import { FcDocument } from "react-icons/fc";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
+import { Page } from "@/sanity/types";
 import { generatePageSlug } from "@/sanity/utils/generatePageSlug";
 import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
 import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
 import { validatePageSlug } from "@/sanity/utils/validatePageSlug";
-import { Page } from "@/types/sanity.types";
 
 const SLUG_MAX_LENGTH = 100;
 
