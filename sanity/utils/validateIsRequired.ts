@@ -1,4 +1,4 @@
-import { InternationalizedArrayString } from "@/types/sanity.types";
+import { InternationalizedArrayString } from "@/sanity/types";
 
 import { SUPPORTED_LANGUAGES } from "../constants";
 

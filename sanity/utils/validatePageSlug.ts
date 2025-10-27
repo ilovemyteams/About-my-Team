@@ -1,6 +1,6 @@
 import { ValidationContext } from "sanity";
 
-import { Page, Slug } from "@/types/sanity.types";
+import { Page, Slug } from "@/sanity/types";
 
 import { generatePageSlug } from "./generatePageSlug";
 

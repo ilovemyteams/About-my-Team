@@ -1,5 +1,5 @@
 import { client } from "@/sanity/lib/client";
-import { InternationalizedArrayString, Page } from "@/types/sanity.types";
+import { InternationalizedArrayString, Page } from "@/sanity/types";
 
 import { getEnglishTitleFromIntArrays } from "./getEnglishTitleFromIntArrays";
 

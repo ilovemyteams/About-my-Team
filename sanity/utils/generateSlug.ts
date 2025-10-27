@@ -3,7 +3,7 @@ import { SanityDocument } from "next-sanity";
 import {
     InternationalizedArrayString,
     InternationalizedArrayText,
-} from "@/types/sanity.types";
+} from "@/sanity/types";
 
 export const generateSlug = (
     doc: SanityDocument,

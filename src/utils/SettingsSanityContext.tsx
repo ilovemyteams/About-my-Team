@@ -1,7 +1,7 @@
 "use client";
 import React, { createContext, useContext, useState } from "react";
 
-import { FooterQueryResult, SettingsQueryResult } from "@/types/sanity.types";
+import { FooterQueryResult, SettingsQueryResult } from "@/sanity/types";
 
 interface SettingsContextType {
     data: SettingsQueryResult | null;

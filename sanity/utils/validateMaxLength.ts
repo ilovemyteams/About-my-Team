@@ -1,7 +1,7 @@
 import {
     InternationalizedArrayString,
     InternationalizedArrayText,
-} from "@/types/sanity.types";
+} from "@/sanity/types";
 
 export const validateMaxLength =
     (maxLength: number) =>

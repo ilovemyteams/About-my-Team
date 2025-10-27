@@ -1,4 +1,4 @@
-import { InternationalizedArrayPortableColorTitle } from "@/types/sanity.types";
+import { InternationalizedArrayPortableColorTitle } from "@/sanity/types";
 
 export const getEnglishTitleFromBlocks = (
     title: InternationalizedArrayPortableColorTitle

@@ -1393,11 +1393,79 @@ export type FaqListQueryResult = {
     }>;
     total: number;
 };
+// Variable: settingsQuery
+// Query: *[_type == "settings"][0]{  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url    ),    "titleNotFound":title[_key == $language][0].value,    "descriptionNotFound":description[_key == $language][0].value},  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},  "navigationMenu": navigationMenu[]{  linkInternal,  "titleMenu":title[_key == $language][0].value  }},   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,     buttonLink == "external" => linkExternal.url    ),     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,                        buttonLink == "internal" => false)},    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}  }
+export type SettingsQueryResult = {
+    notFoundPage: {
+        goToHomeButtonName: string | null;
+        buttonPageLink: string | null;
+        titleNotFound: string | null;
+        descriptionNotFound: string | null;
+    } | null;
+    header: {
+        socialLinks: Array<{
+            platform:
+                | "behance"
+                | "email"
+                | "facebook"
+                | "github"
+                | "googleDrive"
+                | "instagram"
+                | "linkedin"
+                | "pinterest"
+                | "telegram"
+                | "twitter"
+                | "whatsapp"
+                | "youtube"
+                | null;
+            url: string | null;
+            newWindow: boolean | null;
+        }> | null;
+        navigationMenu: Array<{
+            linkInternal: string | null;
+            titleMenu: string | null;
+        }> | null;
+    } | null;
+    buttonJoinUS: {
+        buttonName: string | null;
+        buttonPageLink: string | null;
+        newWindow: boolean | false | null;
+    } | null;
+    buttonOrder: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+    } | null;
+    buttonBuyMeCoffee: {
+        _type: "button";
+        buttonName: string | null;
+        buttonLink?: "external" | "internal" | "noLink";
+        linkInternal?: LinkInternal;
+        linkExternal?: LinkExternal;
+    } | null;
+} | null;
+// Variable: footerQuery
+// Query: *[_type == "settings"][0]{    "title": footer.title[_key == $language][0].value,      "rightsReserved": footer.rightsReserved[_key == $language][0].value,      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,       "navigationMenu": footer.navigationMenu[]{      linkInternal,      "titleMenu":title[_key == $language][0].value    }          }
+export type FooterQueryResult = {
+    title: PortableColorTitle | null;
+    rightsReserved: string | null;
+    privacyPolicyTitle: string | null;
+    privacyPolicyURL: null;
+    privacyPolicyNewWindow: null;
+    navigationMenu: Array<{
+        linkInternal: string | null;
+        titleMenu: string | null;
+    }> | null;
+} | null;
 
 // Query TypeMap
 import "@sanity/client";
 declare module "@sanity/client" {
     interface SanityQueries {
         '{\n  "faqs":*[_type == \'faq\']| order(_createdAt desc)[$start...$end]{\n    "question": question[_key == $language][0].value,\n    "shortAnswer": shortAnswer[_key == $language][0].value,\n    "image": {\n      "url": image.image.asset->url,\n      "lqip": image.image.asset -> metadata.lqip,\n       "caption": image.caption[_key == $language][0].value\n    },\n    likes, \n    _id,\n   "slug": pageSlug.current,\n  },\n "total": count(*[_type == "faq"]) \n}': FaqListQueryResult;
+        '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value,\n    "descriptionNotFound":description[_key == $language][0].value},\n\n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,\n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult;
+        '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
     }
 }

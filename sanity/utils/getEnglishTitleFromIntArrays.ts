@@ -2,7 +2,7 @@ import {
     InternationalizedArrayPortableText,
     InternationalizedArrayString,
     InternationalizedArrayText,
-} from "@/types/sanity.types";
+} from "@/sanity/types";
 
 export const getEnglishTitleFromIntArrays = (
     title: InternationalizedArrayString | InternationalizedArrayText,
