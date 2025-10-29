@@ -280,7 +280,8 @@
         "breadcrumbItemServices": "Послуги",
         "breadcrumbItemIvents": "Події",
         "breadcrumbItemPortfolio": "Портфоліо",
-        "breadcrumbItemTeam": "Команда"
+        "breadcrumbItemTeam": "Команда",
+        "breadcrumbItemMember": "Учасник"
     },
     "FaqPage": {
         "titleSEO": "Відповіді на актуальні питання в одному місці",

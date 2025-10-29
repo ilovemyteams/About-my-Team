@@ -285,7 +285,8 @@
         "breadcrumbItemServices": "Usługi",
         "breadcrumbItemIvents": "Wydarzenia",
         "breadcrumbItemPortfolio": "Wdrożone",
-        "breadcrumbItemTeam": "Zespół"
+        "breadcrumbItemTeam": "Zespół",
+        "breadcrumbItemMember": "Członek"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",

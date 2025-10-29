@@ -284,7 +284,8 @@
         "breadcrumbItemServices": "Services",
         "breadcrumbItemIvents": "Events",
         "breadcrumbItemPortfolio": "Portfolio",
-        "breadcrumbItemTeam": "Team"
+        "breadcrumbItemTeam": "Team",
+        "breadcrumbItemMember": "Memeber"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",

@@ -2,26 +2,28 @@ import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import React from "react";
 
-import { MemberCardModalBody } from "@/src/components/shared/MemberModal/MemberCardModalBody";
-import { MemberCardModalBodyTab } from "@/src/components/shared/MemberModal/MemberCardModalBodyTab";
-import { Modal } from "@/src/components/shared/MemberModal/Modal";
+import { MemberCard } from "@/src/components/memberCard/MemberCard";
+// import { MemberCard } from "@/src/components/shared/MemberCard";
+import { PageSection } from "@/src/components/shared/PageSection";
+import { PageTopSection } from "@/src/components/shared/PageTopSection";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-type MemberPageProps = Promise<{
+type MemberPageProps = {
     id: string;
-}>;
+};
 
 export async function generateMetadata({
     params,
 }: {
-    params: MemberPageProps;
+    params: Promise<MemberPageProps>;
 }) {
     const { id } = await params;
     const locale = await getLocale();
     const member = membersData.find(member => member.data.id === id);
     const memberName = member ? member[locale as LocaleType]?.name : "Name";
     const memberAbout = member ? member[locale as LocaleType]?.about : "";
+
     const getTranslation = await getTranslations({
         locale,
         namespace: "MemberCardModal",
@@ -37,30 +39,34 @@ export async function generateMetadata({
                 ua: `/member/${id}`,
             },
         },
-        title: `${memberName}`,
-        description: `${member?.data.position}`,
+        title: memberName,
+        description: member?.data.position,
         openGraph: {
             description: `${member?.data.position} ${getTranslation("about")}: ${memberAbout}`,
-            title: `${memberName}`,
+            title: memberName,
         },
     };
 }
 
-const MemberPage: React.FC<{ params: MemberPageProps }> = async ({
-    params,
-}) => {
+const MemberPage = async ({ params }: { params: Promise<MemberPageProps> }) => {
     const { id } = await params;
-    const displayedMember = membersData.find(member => member.data.id === id);
+    const breadcrumbs = await getTranslations("Breadcrumbs");
+    const breadcrumbsName = [
+        { title: breadcrumbs("breadcrumbItemTeam"), url: "member" },
+        { title: breadcrumbs("breadcrumbItemMember"), url: "" },
+    ];
 
-    if (!displayedMember) {
+    const member = membersData.find(member => member.data.id === id);
+
+    if (!member) {
         notFound();
     }
 
     return (
-        <Modal>
-            <MemberCardModalBody data={displayedMember} />
-            <MemberCardModalBodyTab data={displayedMember} />
-        </Modal>
+        <PageSection className="pt-4 tab:pt-[44px] pc:pt-8">
+            <PageTopSection breadcrumbsList={breadcrumbsName} />
+            <MemberCard data={member} />
+        </PageSection>
     );
 };
 
