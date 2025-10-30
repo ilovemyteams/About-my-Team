@@ -1,22 +1,19 @@
-import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import React from "react";
 
-import { MemberCard } from "@/src/components/memberCard/MemberCard";
-// import { MemberCard } from "@/src/components/shared/MemberCard";
-import { PageSection } from "@/src/components/shared/PageSection";
-import { PageTopSection } from "@/src/components/shared/PageTopSection";
+import { MemberHeader } from "@/src/components/memberPage/header/MemberHeader";
+import { MemberPage } from "@/src/components/memberPage/MemberPage";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-type MemberPageProps = {
+type MemberProps = {
     id: string;
 };
 
 export async function generateMetadata({
     params,
 }: {
-    params: Promise<MemberPageProps>;
+    params: Promise<MemberProps>;
 }) {
     const { id } = await params;
     const locale = await getLocale();
@@ -48,26 +45,13 @@ export async function generateMetadata({
     };
 }
 
-const MemberPage = async ({ params }: { params: Promise<MemberPageProps> }) => {
-    const { id } = await params;
-    const breadcrumbs = await getTranslations("Breadcrumbs");
-    const breadcrumbsName = [
-        { title: breadcrumbs("breadcrumbItemTeam"), url: "member" },
-        { title: breadcrumbs("breadcrumbItemMember"), url: "" },
-    ];
-
-    const member = membersData.find(member => member.data.id === id);
-
-    if (!member) {
-        notFound();
-    }
-
+const Member = () => {
     return (
-        <PageSection className="pt-4 tab:pt-[44px] pc:pt-8">
-            <PageTopSection breadcrumbsList={breadcrumbsName} />
-            <MemberCard data={member} />
-        </PageSection>
+        <>
+            <MemberHeader />
+            <MemberPage />
+        </>
     );
 };
 
-export default MemberPage;
+export default Member;
