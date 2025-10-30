@@ -471,7 +471,9 @@ export type Faq = {
             } & InternationalizedArrayTextValue
         >;
     };
+    likedUserList?: Array<string>;
     likes?: number;
+    estimateReadTime?: number;
 };
 
 export type ImageType = {

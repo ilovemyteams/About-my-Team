@@ -12,8 +12,9 @@ import { structureTool } from "sanity/structure";
 import { internationalizedArray } from "sanity-plugin-internationalized-array";
 import { media, mediaAssetSource } from "sanity-plugin-media";
 
-import { SUPPORTED_LANGUAGES } from "./sanity/constants";
+import { SetEstimateTimeAndPublishAction } from "./sanity/actions/SetEstimateTimeAndPublishAction";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
+import { SUPPORTED_LANGUAGES } from "./sanity/constants";
 import { apiVersion, dataset, projectId } from "./sanity/env";
 import { singletonPlugin } from "./sanity/plugins/settings";
 import { schema } from "./sanity/schemaTypes";
@@ -23,6 +24,18 @@ export default defineConfig({
     basePath: "/studio",
     projectId,
     title: "About my team",
+    document: {
+        actions: (prev, context) => {
+            const isFaqType = context.schemaType === "faq";
+            return isFaqType
+                ? prev.map(originalAction =>
+                      originalAction.action === "publish"
+                          ? SetEstimateTimeAndPublishAction
+                          : originalAction
+                  )
+                : prev;
+        },
+    },
     dataset,
     // Add and edit the content schema in the './sanity/schemaTypes' folder
     schema,

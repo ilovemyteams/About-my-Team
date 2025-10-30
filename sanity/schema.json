@@ -2543,7 +2543,24 @@
         },
         "optional": true
       },
+      "likedUserList": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "array",
+          "of": {
+            "type": "string"
+          }
+        },
+        "optional": true
+      },
       "likes": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "number"
+        },
+        "optional": true
+      },
+      "estimateReadTime": {
         "type": "objectAttribute",
         "value": {
           "type": "number"

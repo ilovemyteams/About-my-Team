@@ -3,6 +3,8 @@ import { FcCheckmark, FcFaq } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
 import { BlockTypePreview } from "@/sanity/components/blockTypePreview/BlockTypePreview";
+import { EstimateTimePreview } from "@/sanity/components/estimateTimePreview/EstimateTimePreview";
+import { LikesPreview } from "@/sanity/components/likesPreview/LikesPreview";
 import { PreviewWithImage } from "@/sanity/components/previewWithImage/PreviewWithImage";
 import { FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH } from "@/sanity/constants";
 import { generateSlug } from "@/sanity/utils/generateSlug";
@@ -233,29 +235,56 @@ export const faqType = defineField({
             options: { collapsible: true },
 
             fields: [
-                {
+                defineField({
                     name: "image",
                     title: "Зображення",
 
                     type: "imageType",
                     validation: rule => rule.required(),
-                },
-                {
+                }),
+                defineField({
                     name: "orderText",
                     title: "Текст",
 
                     type: "internationalizedArrayText",
                     validation: rule => rule.custom(validateIsRequired),
-                },
+                }),
             ],
             validation: rule => rule.required(),
         }),
         defineField({
+            name: "likedUserList",
+            type: "array",
+            title: "Перелік користувачів, які натиснули лайк",
+
+            of: [
+                defineArrayMember({
+                    type: "string",
+                    name: "userId",
+                }),
+            ],
+            readOnly: true,
+        }),
+        defineField({
             name: "likes",
             type: "number",
-            title: "Кількість лайків до питання",
-            initialValue: 0,
+            title: "Кількість лайків",
+            description:
+                "Перераховується автоматично після натискання юзером лайку на питанні",
             readOnly: true,
+            components: {
+                input: LikesPreview,
+            },
+        }),
+        defineField({
+            name: "estimateReadTime",
+            type: "number",
+            title: "Час читання (в хвилинах)",
+            description: "Перераховується автоматично після публікації питання",
+            readOnly: true,
+            components: {
+                input: EstimateTimePreview,
+            },
         }),
     ],
     preview: {
