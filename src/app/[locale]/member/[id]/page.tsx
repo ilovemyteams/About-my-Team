@@ -1,8 +1,9 @@
+import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import React from "react";
 
-import { MemberHeader } from "@/src/components/memberPage/header/MemberHeader";
 import { MemberPage } from "@/src/components/memberPage/MemberPage";
+import { MemberHeader } from "@/src/components/memberPage/parts/MemberHeader";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
@@ -45,11 +46,18 @@ export async function generateMetadata({
     };
 }
 
-const Member = () => {
+const Member = async ({ params }: { params: Promise<MemberProps> }) => {
+    const { id } = await params;
+    const member = membersData.find(member => member.data.id === id);
+
+    if (!member) {
+        notFound();
+    }
+
     return (
         <>
             <MemberHeader />
-            <MemberPage />
+            <MemberPage member={member} />
         </>
     );
 };
