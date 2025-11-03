@@ -9,7 +9,8 @@ export const faqListQuery = defineQuery(`{
       "lqip": image.image.asset -> metadata.lqip,
        "caption": image.caption[_key == $language][0].value
     },
-    likes, 
+    likedUserList, 
+    estimateReadTime,
     _id,
    "slug": pageSlug.current,
   },

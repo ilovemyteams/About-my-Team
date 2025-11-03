@@ -1,11 +1,8 @@
 import "server-only";
 
-// import { client } from "@/sanity/lib/client";
 import { sanityFetch } from "@/sanity/lib/live";
 
 import { faqListQuery } from "../lib/queries";
-
-// const sanityClient = client.withConfig({ token: readToken || "" });
 
 export async function loadQuery(query: string, params = {}) {
     try {

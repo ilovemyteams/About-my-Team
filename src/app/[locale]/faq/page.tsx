@@ -1,6 +1,6 @@
 import { getLocale } from "next-intl/server";
 
-import { loadFAQsList } from "@/sanity/utils/loadQuery";
+import { loadFAQsList } from "@/sanity/lib/loadQuery";
 import { AllQuestionsPage } from "@/src/components/allQuestionsPage/AllQuestionsPage";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { RouteSearchParams } from "@/types/RoutesType";

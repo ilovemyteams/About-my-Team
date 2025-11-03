@@ -1379,7 +1379,7 @@ export type AllSanitySchemaTypes =
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./sanity/lib/queries.ts
 // Variable: faqListQuery
-// Query: {  "faqs":*[_type == 'faq']| order(_createdAt desc)[$start...$end]{    "question": question[_key == $language][0].value,    "shortAnswer": shortAnswer[_key == $language][0].value,    "image": {      "url": image.image.asset->url,      "lqip": image.image.asset -> metadata.lqip,       "caption": image.caption[_key == $language][0].value    },    likes,     _id,   "slug": pageSlug.current,  }, "total": count(*[_type == "faq"]) }
+// Query: {  "faqs":*[_type == 'faq']| order(_createdAt desc)[$start...$end]{    "question": question[_key == $language][0].value,    "shortAnswer": shortAnswer[_key == $language][0].value,    "image": {      "url": image.image.asset->url,      "lqip": image.image.asset -> metadata.lqip,       "caption": image.caption[_key == $language][0].value    },    likedUserList,     estimateReadTime,    _id,   "slug": pageSlug.current,  }, "total": count(*[_type == "faq"]) }
 export type FaqListQueryResult = {
     faqs: Array<{
         question: string | null;
@@ -1389,7 +1389,8 @@ export type FaqListQueryResult = {
             lqip: string | null;
             caption: string | null;
         };
-        likes: number | null;
+        likedUserList: Array<string> | null;
+        estimateReadTime: number | null;
         _id: string;
         slug: string | null;
     }>;
@@ -1466,7 +1467,7 @@ export type FooterQueryResult = {
 import "@sanity/client";
 declare module "@sanity/client" {
     interface SanityQueries {
-        '{\n  "faqs":*[_type == \'faq\']| order(_createdAt desc)[$start...$end]{\n    "question": question[_key == $language][0].value,\n    "shortAnswer": shortAnswer[_key == $language][0].value,\n    "image": {\n      "url": image.image.asset->url,\n      "lqip": image.image.asset -> metadata.lqip,\n       "caption": image.caption[_key == $language][0].value\n    },\n    likes, \n    _id,\n   "slug": pageSlug.current,\n  },\n "total": count(*[_type == "faq"]) \n}': FaqListQueryResult;
+        '{\n  "faqs":*[_type == \'faq\']| order(_createdAt desc)[$start...$end]{\n    "question": question[_key == $language][0].value,\n    "shortAnswer": shortAnswer[_key == $language][0].value,\n    "image": {\n      "url": image.image.asset->url,\n      "lqip": image.image.asset -> metadata.lqip,\n       "caption": image.caption[_key == $language][0].value\n    },\n    likedUserList, \n    estimateReadTime,\n    _id,\n   "slug": pageSlug.current,\n  },\n "total": count(*[_type == "faq"]) \n}': FaqListQueryResult;
         '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value,\n    "descriptionNotFound":description[_key == $language][0].value},\n\n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,\n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult;
         '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
     }

@@ -1,34 +1,34 @@
 "use client";
-import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import { addFAQLike, removeFAQLike } from "@/sanity/lib/mutationQuery";
 import { generateUserId } from "@/src/utils/generateUserId";
-import { LikesTypes } from "@/src/utils/likeDataHandler";
 
 import { IconLike } from "./Icons/IconLike";
 
 type LikeButtonProps = {
-    likes: LikesTypes[];
-    questionSlug: string;
+    likes: string[] | null;
+    docId: string;
 };
 
-const LikeButton = ({
-    likes: serverSavedLikes,
-    questionSlug,
-}: LikeButtonProps) => {
+const LikeButton = ({ likes: serverSavedLikes, docId }: LikeButtonProps) => {
     const [isLoading, setIsLoading] = useState(false);
     const [startAnimation, setStartAnimation] = useState(false);
-    const [likes, setLikes] = useState(serverSavedLikes);
+    const [likes, setLikes] = useState(serverSavedLikes || []);
     const [userId, setUserId] = useState<null | string>(null);
     const isUserVoted = useMemo(() => {
-        return !!likes.find(item => item.userId === userId);
+        return !!likes.find(item => item === userId);
     }, [likes, userId]);
     const router = useRouter();
 
     useEffect(() => {
-        setLikes(serverSavedLikes);
+        if (serverSavedLikes) {
+            setLikes(serverSavedLikes);
+        } else {
+            setLikes([] as string[]);
+        }
     }, [serverSavedLikes]);
 
     useEffect(() => {
@@ -36,41 +36,20 @@ const LikeButton = ({
         setUserId(persistedUserId);
     }, []);
 
-    const deleteLike = useCallback(
-        async (questionSlug: string, userId: string) => {
-            const newLikes = likes.filter(
-                item =>
-                    !(
-                        item.questionSlug === questionSlug &&
-                        item.userId === userId
-                    )
-            );
-            setLikes(newLikes);
-            try {
-                await axios.delete(
-                    `/api/likesData?questionSlug=${questionSlug}&userId=${userId}`
-                );
-            } catch (error) {
-                return error;
-            } finally {
-                setIsLoading(false);
-                router.refresh();
-            }
-        },
-        [likes, router]
-    );
-
-    const addLike = useCallback(
-        async (questionSlug: string, userId: string) => {
+    const changeLikes = useCallback(
+        async (docId: string, userId: string, action: "remove" | "add") => {
             setStartAnimation(true);
-            const likeObject = {
-                userId,
-                questionSlug,
-            };
-            const newLikes = [...likes, likeObject];
-            setLikes(newLikes);
+
             try {
-                await axios.post("/api/likesData", likeObject);
+                if (action === "add") {
+                    const newLikes = [...likes, userId];
+                    setLikes(newLikes);
+                    await addFAQLike(docId, userId);
+                } else {
+                    const newLikes = likes.filter(item => !(item === userId));
+                    setLikes(newLikes);
+                    await removeFAQLike(docId, userId);
+                }
             } catch (error) {
                 return error;
             } finally {
@@ -78,6 +57,7 @@ const LikeButton = ({
                 router.refresh();
             }
         },
+
         [likes, router]
     );
 
@@ -90,11 +70,11 @@ const LikeButton = ({
         }
 
         if (isUserVoted) {
-            await deleteLike(questionSlug, userIdForSaving);
+            await changeLikes(docId, userIdForSaving, "remove");
         } else {
-            await addLike(questionSlug, userIdForSaving);
+            await changeLikes(docId, userIdForSaving, "add");
         }
-    }, [userId, isUserVoted, addLike, questionSlug, deleteLike]);
+    }, [userId, isUserVoted, changeLikes, docId]);
 
     return (
         <button
