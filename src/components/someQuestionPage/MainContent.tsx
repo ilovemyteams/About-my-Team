@@ -1,36 +1,38 @@
 import { Fragment } from "react";
 
-import type { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
-import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
-import { ColumnListFAQ } from "./ColumnListFAQ/ColumnListFAQ";
-import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
-import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
-import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
-import { TableContent } from "./TableContent/TableContent";
-import { TwoSidesListWithLines } from "./TwoSidesListWithLines/TwoSidesListWithLines";
 
 interface MainContentProps {
-    content: LongAnswerListType[];
+    content: NonNullable<NonNullable<CurrentFaqQueryResult>["mainContent"]>;
     searchTerm: string;
 }
 
 export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
         <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px]">
-            {content.map((item, index) => (
-                <Fragment key={index}>
-                    {item.layout === 1 && (
-                        <NumberedListContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                        />
-                    )}
-                    {item.layout === 2 && (
+            {content.map(
+                (
+                    {
+                        mainContentTitle,
+                        mainContentTopText,
+                        layoutType,
+                        mainContentText,
+                    },
+                    index
+                ) => (
+                    <Fragment key={index}>
+                        {layoutType === "numberedList" && (
+                            <NumberedListContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {/*{item.layout === 2 && (
                         <TableContent
                             content={item.data}
                             title={item.title}
@@ -73,9 +75,10 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             content={item}
                             searchTerm={searchTerm}
                         />
-                    )}
-                </Fragment>
-            ))}
+                    )} */}
+                    </Fragment>
+                )
+            )}
         </PageSection>
     );
 };

@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/src/i18n/routing";
-import { QuestionType } from "@/types/sanity.types";
+import { QuestionType } from "@/types/Faqs.types";
 
 import { EstimatedReadingTimeCounter } from "../../shared/EstimatedReadingTimeCounter";
 import LikeButton from "../../shared/LikeButton";

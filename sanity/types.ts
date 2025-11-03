@@ -454,12 +454,6 @@ export type Faq = {
             _type: "contentBlock";
             _key: string;
         }>;
-        isBottomTextNeeded?: boolean;
-        mainContentBottomText?: Array<
-            {
-                _key: string;
-            } & InternationalizedArrayTextValue
-        >;
         _type: "mainBlock";
         _key: string;
     }>;
@@ -1397,9 +1391,10 @@ export type FaqListQueryResult = {
     total: number;
 };
 // Variable: currentFaqQuery
-// Query: *[_type == 'faq' && pageSlug.current == $slug][0]{      _id,      "question": question[_key == $language][0].value,      "shortAnswer": shortAnswer[_key == $language][0].value,       "heroImage": {        "url": image.image.asset->url,         "lqip": image.image.asset -> metadata.lqip,        "caption": image.caption[_key == $language][0].value      },      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,      estimateReadTime,       "likes": likedUserList,       "orderText": orderContent.orderText[_key == $language][0].value,      "orderImage": {        "url": orderContent.image.image.asset->url,         "lqip": orderContent.image.image.asset -> metadata.lqip,        "caption": orderContent.image.caption[_key == $language][0].value      },       "mainContent": mainContent[]{        layoutType,        "mainContentTitle":mainContentTitle[_key == $language][0].value,        "mainContentText": mainContentText[]{          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,          "contentBlockText": contentBlockText[_key == $language][0].value,        },  }}
+// Query: *[_type == 'faq' && pageSlug.current == $slug][0]{      _id,      "slug": pageSlug.current,      "question": question[_key == $language][0].value,      "shortAnswer": shortAnswer[_key == $language][0].value,       "heroImage": {        "url": image.image.asset->url,         "lqip": image.image.asset -> metadata.lqip,        "caption": image.caption[_key == $language][0].value      },      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,      estimateReadTime,       "likes": likedUserList,       "orderText": orderContent.orderText[_key == $language][0].value,      "orderImage": {        "url": orderContent.image.image.asset->url,         "lqip": orderContent.image.image.asset -> metadata.lqip,        "caption": orderContent.image.caption[_key == $language][0].value      },       "mainContent": mainContent[]{        layoutType,        "mainContentTitle":mainContentTitle[_key == $language][0].value,        "mainContentTopText": mainContentTopText[_key == $language][0].value,         "mainContentText": mainContentText[]{          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,          "contentBlockText": contentBlockText[_key == $language][0].value,        },        }}
 export type CurrentFaqQueryResult = {
     _id: string;
+    slug: string | null;
     question: string | null;
     shortAnswer: string | null;
     heroImage: {
@@ -1428,6 +1423,7 @@ export type CurrentFaqQueryResult = {
             | "textWithArrow"
             | null;
         mainContentTitle: string | null;
+        mainContentTopText: string | null;
         mainContentText: Array<{
             contentBlockTitle: string | null;
             contentBlockText: PortableTextSimple | null;
@@ -1506,7 +1502,7 @@ import "@sanity/client";
 declare module "@sanity/client" {
     interface SanityQueries {
         '{\n  "faqs":*[_type == \'faq\'] | order(_createdAt desc)[$start...$end]{\n    "question": question[_key == $language][0].value,\n    "shortAnswer": shortAnswer[_key == $language][0].value,\n    "image": {\n      "url": image.image.asset->url,\n      "lqip": image.image.asset -> metadata.lqip,\n       "caption": image.caption[_key == $language][0].value\n    },\n    likedUserList, \n    estimateReadTime,\n    _id,\n   "slug": pageSlug.current,\n  },\n "total": count(*[_type == "faq"]) \n}': FaqListQueryResult;
-        '*[_type == \'faq\' && pageSlug.current == $slug][0]{\n      _id,\n      "question": question[_key == $language][0].value,\n      "shortAnswer": shortAnswer[_key == $language][0].value, \n      "heroImage": {\n        "url": image.image.asset->url, \n        "lqip": image.image.asset -> metadata.lqip,\n        "caption": image.caption[_key == $language][0].value\n      },\n      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,\n      estimateReadTime, \n      "likes": likedUserList, \n      "orderText": orderContent.orderText[_key == $language][0].value,\n      "orderImage": {\n        "url": orderContent.image.image.asset->url, \n        "lqip": orderContent.image.image.asset -> metadata.lqip,\n        "caption": orderContent.image.caption[_key == $language][0].value\n      }, \n      "mainContent": mainContent[]{\n        layoutType,\n        "mainContentTitle":mainContentTitle[_key == $language][0].value,\n        "mainContentText": mainContentText[]{\n          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,\n          "contentBlockText": contentBlockText[_key == $language][0].value,\n        },\n  }}': CurrentFaqQueryResult;
+        '*[_type == \'faq\' && pageSlug.current == $slug][0]{\n      _id,\n      "slug": pageSlug.current,\n      "question": question[_key == $language][0].value,\n      "shortAnswer": shortAnswer[_key == $language][0].value, \n      "heroImage": {\n        "url": image.image.asset->url, \n        "lqip": image.image.asset -> metadata.lqip,\n        "caption": image.caption[_key == $language][0].value\n      },\n      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,\n      estimateReadTime, \n      "likes": likedUserList, \n      "orderText": orderContent.orderText[_key == $language][0].value,\n      "orderImage": {\n        "url": orderContent.image.image.asset->url, \n        "lqip": orderContent.image.image.asset -> metadata.lqip,\n        "caption": orderContent.image.caption[_key == $language][0].value\n      }, \n      "mainContent": mainContent[]{\n        layoutType,\n        "mainContentTitle":mainContentTitle[_key == $language][0].value,\n        "mainContentTopText": mainContentTopText[_key == $language][0].value, \n        "mainContentText": mainContentText[]{\n          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,\n          "contentBlockText": contentBlockText[_key == $language][0].value,\n        },\n      \n  }}': CurrentFaqQueryResult;
         '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value,\n    "descriptionNotFound":description[_key == $language][0].value},\n\n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,\n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult;
         '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult;
     }

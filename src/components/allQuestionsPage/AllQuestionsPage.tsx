@@ -1,6 +1,6 @@
 import React from "react";
 
-import { QuestionType } from "@/types/sanity.types";
+import { QuestionType } from "@/types/Faqs.types";
 
 import { Pagination } from "../shared/Pagination";
 import { NothingFound } from "../shared/Search/NothingFound";

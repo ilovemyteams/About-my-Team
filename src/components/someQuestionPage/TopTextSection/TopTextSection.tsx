@@ -14,7 +14,6 @@ export const TopTextSection = ({
     additionalShortAnswer,
     searchTerm,
 }: TopTextSectionProps) => {
-    console.log(shortAnswer);
     const shortAnswerText = shortAnswer ? shortAnswer.split("/n") : [];
     const fullAnswerText = additionalShortAnswer
         ? additionalShortAnswer.split("/n")

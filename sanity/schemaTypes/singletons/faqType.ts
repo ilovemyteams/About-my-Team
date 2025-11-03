@@ -175,19 +175,6 @@ export const faqType = defineField({
                                 },
                             ],
                         }),
-                        defineField({
-                            name: "isBottomTextNeeded",
-                            type: "boolean",
-                            title: "Додати нижній текст в секції",
-                            initialValue: false,
-                        }),
-                        defineField({
-                            name: "mainContentBottomText",
-                            type: "internationalizedArrayText",
-                            title: "Додатковий текст після основного переліку",
-                            description: "Заповніть за необхідності",
-                            hidden: ({ parent }) => !parent?.isBottomTextNeeded,
-                        }),
                     ],
 
                     preview: {

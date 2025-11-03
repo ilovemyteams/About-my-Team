@@ -1,4 +1,4 @@
-import { QuestionType } from "@/types/sanity.types";
+import { QuestionType } from "@/types/Faqs.types";
 
 import { Section } from "../../shared/Section";
 import { QaCard } from "./QaCard";

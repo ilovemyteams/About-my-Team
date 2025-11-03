@@ -20,6 +20,7 @@ export const faqListQuery = defineQuery(`{
 export const currentFaqQuery = defineQuery(
     `*[_type == 'faq' && pageSlug.current == $slug][0]{
       _id,
+      "slug": pageSlug.current,
       "question": question[_key == $language][0].value,
       "shortAnswer": shortAnswer[_key == $language][0].value, 
       "heroImage": {
@@ -39,10 +40,12 @@ export const currentFaqQuery = defineQuery(
       "mainContent": mainContent[]{
         layoutType,
         "mainContentTitle":mainContentTitle[_key == $language][0].value,
+        "mainContentTopText": mainContentTopText[_key == $language][0].value, 
         "mainContentText": mainContentText[]{
           "contentBlockTitle": contentBlockTitle[_key == $language][0].value,
           "contentBlockText": contentBlockText[_key == $language][0].value,
         },
+      
   }}`
 );
 
