@@ -1,7 +1,7 @@
 import { defineQuery } from "next-sanity";
 
 export const faqListQuery = defineQuery(`{
-  "faqs":*[_type == 'faq']| order(_createdAt desc)[$start...$end]{
+  "faqs":*[_type == 'faq'] | order(_createdAt desc)[$start...$end]{
     "question": question[_key == $language][0].value,
     "shortAnswer": shortAnswer[_key == $language][0].value,
     "image": {
@@ -16,6 +16,36 @@ export const faqListQuery = defineQuery(`{
   },
  "total": count(*[_type == "faq"]) 
 }`);
+
+export const currentFaqQuery = defineQuery(
+    `*[_type == 'faq' && pageSlug.current == $slug][0]{
+      _id,
+      "question": question[_key == $language][0].value,
+      "shortAnswer": shortAnswer[_key == $language][0].value, 
+      "heroImage": {
+        "url": image.image.asset->url, 
+        "lqip": image.image.asset -> metadata.lqip,
+        "caption": image.caption[_key == $language][0].value
+      },
+      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,
+      estimateReadTime, 
+      "likes": likedUserList, 
+      "orderText": orderContent.orderText[_key == $language][0].value,
+      "orderImage": {
+        "url": orderContent.image.image.asset->url, 
+        "lqip": orderContent.image.image.asset -> metadata.lqip,
+        "caption": orderContent.image.caption[_key == $language][0].value
+      }, 
+      "mainContent": mainContent[]{
+        layoutType,
+        "mainContentTitle":mainContentTitle[_key == $language][0].value,
+        "mainContentText": mainContentText[]{
+          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,
+          "contentBlockText": contentBlockText[_key == $language][0].value,
+        },
+  }}`
+);
+
 // export const homeHeroQuery = defineQuery(`
 //   *[_type == "home"][0]{
 //   "title": hero.title[_key == $language][0].value,

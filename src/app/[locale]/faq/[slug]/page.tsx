@@ -3,9 +3,8 @@ import { notFound } from "next/navigation";
 import { getLocale } from "next-intl/server";
 import React from "react";
 
+import { loadCurrentFaq } from "@/sanity/lib/loadQuery";
 import { Question } from "@/src/components/someQuestionPage/QuestionPage";
-import { QAItemType, questionsData } from "@/src/mockedData/questionsData";
-import { LocaleType } from "@/types/LocaleType";
 import { RouteSearchParams, RouteSlugParams } from "@/types/RoutesType";
 
 type RouteType = RouteSlugParams;
@@ -20,10 +19,8 @@ export async function generateMetadata(
 ): Promise<Metadata> {
     const locale = await getLocale();
     const { slug } = await params;
-    const displayedQuestion: QAItemType | undefined = questionsData.find(
-        question => question.data.slug === slug
-    );
 
+    const displayedQuestion = await loadCurrentFaq(locale, slug);
     if (!displayedQuestion) {
         return {
             title: "Question Not Found",
@@ -31,10 +28,10 @@ export async function generateMetadata(
         };
     }
     const previousImages = (await parent).openGraph?.images || [];
-    const localization = displayedQuestion[locale as LocaleType];
+
     return {
-        title: localization.questionText,
-        description: localization.shortAnswerText.join(""),
+        title: displayedQuestion.question,
+        description: displayedQuestion.shortAnswer,
         openGraph: {
             images: [...previousImages],
         },
@@ -46,11 +43,11 @@ const QuestionPage: React.FC<QuestionPageProps> = async ({
     searchParams,
 }) => {
     const { query } = await searchParams;
+    const locale = await getLocale();
     const { slug } = await params;
     const searchTerm = query || "";
-    const displayedQuestion = questionsData.find(
-        question => question.data.slug === slug
-    );
+    const displayedQuestion = await loadCurrentFaq(locale, slug);
+
     if (!displayedQuestion) {
         notFound();
     }

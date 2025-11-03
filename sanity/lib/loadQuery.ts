@@ -2,7 +2,7 @@ import "server-only";
 
 import { sanityFetch } from "@/sanity/lib/live";
 
-import { faqListQuery } from "../lib/queries";
+import { currentFaqQuery, faqListQuery } from "../lib/queries";
 
 export async function loadQuery(query: string, params = {}) {
     try {
@@ -18,6 +18,14 @@ export async function loadFAQsList(language = "ua", start = 1, end = 7) {
     const { data } = await sanityFetch({
         query: faqListQuery,
         params: { language, start, end },
+    });
+    return data;
+}
+
+export async function loadCurrentFaq(language = "ua", slug: string) {
+    const { data } = await sanityFetch({
+        query: currentFaqQuery,
+        params: { language, slug },
     });
     return data;
 }

@@ -15,15 +15,17 @@ interface ImageComponentProps {
     className?: string;
     sizes?: string;
     width: number;
+    height?: number;
 }
 
 export const SanityImage = ({
     src,
     alt,
     blurUrl,
-    className,
+    className = "",
     sizes = "45vw",
     width,
+    height,
 }: ImageComponentProps) => {
     if (!src) {
         //default image with brand heart
@@ -38,13 +40,15 @@ export const SanityImage = ({
     const dimensions = getImageDimensions(src);
     const url = urlFor(src).auto("format").fit("max").url();
 
-    const height = Math.ceil((width * dimensions.height) / dimensions.width);
+    const renderHeight = height
+        ? height
+        : Math.ceil((width * dimensions.height) / dimensions.width);
 
     return (
         <Image
             src={url}
             width={width}
-            height={height}
+            height={renderHeight}
             sizes={`(max-width: 768px), 540px, ${sizes}`}
             alt={alt || "An image without description"}
             className={`${className} object-cover`}
