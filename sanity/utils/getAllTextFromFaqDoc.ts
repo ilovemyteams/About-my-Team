@@ -37,16 +37,14 @@ export const getAllTextFromFaqText = (faqDoc: Faq) => {
                   texts,
                   {
                       mainContentTitle,
-                      mainContentBottomText,
+
                       mainContentTopText,
                       mainContentText,
                   }
               ) => {
                   const itemTitle = extractUaVersion(mainContentTitle);
                   const itemTopText = extractUaVersion(mainContentTopText);
-                  const itemBottomText = extractUaVersion(
-                      mainContentBottomText
-                  );
+
                   const itemMainContent = mainContentText
                       ? mainContentText.reduce((acc, subitem) => {
                             const uaSubtitle = extractUaVersion(
@@ -61,13 +59,7 @@ export const getAllTextFromFaqText = (faqDoc: Faq) => {
                             return acc + uaSubtitle + uaTextBlock;
                         }, "")
                       : "";
-                  return (
-                      texts +
-                      itemTitle +
-                      itemTopText +
-                      itemBottomText +
-                      itemMainContent
-                  );
+                  return texts + itemTitle + itemTopText + itemMainContent;
               },
               ""
           )

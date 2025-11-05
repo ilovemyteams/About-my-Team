@@ -1,6 +1,13 @@
+import { AiOutlineMenuFold } from "react-icons/ai";
 import { LuPencilRuler } from "react-icons/lu";
+import {
+    TbBaselineDensityLarge,
+    TbBaselineDensityMedium,
+} from "react-icons/tb";
 import { defineArrayMember, defineField } from "sanity";
 
+import { BlockNormalText } from "@/sanity/components/portableTextView/BlockNormalText";
+import { BlockSmallText } from "@/sanity/components/portableTextView/BlockSmallText";
 import { BlockSubtitle } from "@/sanity/components/portableTextView/BlockSubtitle";
 import { BlockSubtitleWithMark } from "@/sanity/components/portableTextView/BlockSubtitleWithMark";
 
@@ -16,12 +23,28 @@ export const portableTextSimpleType = defineField({
             marks: {
                 decorators: [
                     {
-                        title: "Italic",
+                        title: "Курсив",
                         value: "em",
                     },
                     {
-                        title: "Strong",
+                        title: "Жирний",
                         value: "strong",
+                    },
+                    {
+                        title: "Відступ зліва",
+                        value: "marginLeft",
+                        icon: AiOutlineMenuFold,
+                    },
+
+                    {
+                        title: "Нижній відступ маленький",
+                        value: "marginBottomSm",
+                        icon: TbBaselineDensityMedium,
+                    },
+                    {
+                        title: "Нижній відступ середній",
+                        value: "marginBottomMd",
+                        icon: TbBaselineDensityLarge,
                     },
                 ],
                 annotations: [
@@ -41,8 +64,14 @@ export const portableTextSimpleType = defineField({
             },
             styles: [
                 {
-                    title: "Текст",
+                    title: "Маленький текст",
+                    value: "small",
+                    component: BlockSmallText,
+                },
+                {
+                    title: "Звичаний текст",
                     value: "normal",
+                    component: BlockNormalText,
                 },
 
                 {

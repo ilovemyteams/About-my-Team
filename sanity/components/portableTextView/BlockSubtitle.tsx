@@ -1,10 +1,11 @@
+import { Text } from "@sanity/ui";
 import React from "react";
 import { BlockStyleProps } from "sanity";
 
 export const BlockSubtitle = (props: BlockStyleProps) => {
     return (
-        <span style={{ color: "purple", fontWeight: 700 }}>
+        <Text size={3} weight="semibold">
             {props.children}
-        </span>
+        </Text>
     );
 };
