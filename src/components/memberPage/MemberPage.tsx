@@ -6,7 +6,9 @@ import { LocaleType } from "@/types/LocaleType";
 
 import { Avatar } from "./parts/Avatar";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
+import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
+// import { Teammates } from "./parts/Teammates";
 
 interface MemberPageProps {
     member: MemberDataItemType;
@@ -23,26 +25,30 @@ export const MemberPage = ({ member }: MemberPageProps) => {
         pricePerHour,
         careerStart,
         projectsExperience,
+        projectId,
     } = member.data;
 
     return (
         <Section className="pb-[80px] tab:pb-[100px] pc:pb-[100px] desk:pb-[120px]">
             <div className="grid grid-cols-1 tab:grid-cols-[360px_1fr] pc:grid-cols-[328px_1fr] desk:grid-cols-[380px_1fr]">
-                <div className="tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
-                    <Avatar
-                        imageURL={imageURL}
-                        position={position}
-                        name={langData.name}
-                    />
-                    <MemberSocialLinks socialLinks={socialLinks} />
-                    <Statistics
-                        pricePerHour={pricePerHour}
-                        careerStart={careerStart}
-                        projectsCount={projectsExperience.length}
-                    />
+                <div className="grid grid-cols-1 gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
+                    <div>
+                        <Avatar
+                            imageURL={imageURL}
+                            position={position}
+                            name={langData.name}
+                        />
+                        <MemberSocialLinks socialLinks={socialLinks} />
+                        <Statistics
+                            pricePerHour={pricePerHour}
+                            careerStart={careerStart}
+                            projectsCount={projectsExperience.length}
+                        />
+                    </div>
+                    <Projects projectId={projectId} />
                 </div>
                 <div className="tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
-                    Колонка 2
+                    {/* <Teammates projectId={projectId} /> */}
                 </div>
             </div>
         </Section>
