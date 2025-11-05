@@ -2,7 +2,7 @@ import { EnvelopeIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
 export const linkEmailType = defineField({
-    title: "Email link",
+    title: "Посилання на електронну пошту",
     name: "linkEmail",
     type: "object",
     icon: EnvelopeIcon,

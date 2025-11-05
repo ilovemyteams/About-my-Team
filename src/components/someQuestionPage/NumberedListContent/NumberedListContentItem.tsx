@@ -17,7 +17,7 @@ export const NumberedListContentItem = ({
     if (!item) return null;
 
     const { contentBlockText, contentBlockTitle } = item;
-
+    console.log(contentBlockText);
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
             <div>

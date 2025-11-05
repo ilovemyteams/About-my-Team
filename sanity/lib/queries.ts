@@ -1,7 +1,7 @@
 import { defineQuery } from "next-sanity";
 
 export const faqListQuery = defineQuery(`{
-  "faqs":*[_type == 'faq'] | order(_createdAt desc)[$start...$end]{
+  "faqs":*[_type == 'faq'] | order(_createdAt asc)[$start...$end]{
     "question": question[_key == $language][0].value,
     "shortAnswer": shortAnswer[_key == $language][0].value,
     "image": {

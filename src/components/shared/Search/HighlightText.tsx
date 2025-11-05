@@ -15,16 +15,18 @@ type HighlightTextProps = {
 const linkRegex = /\*link=`([^`]*)`(?:\s+(noblank))?\*([^*]*)\*\/link\*/g;
 
 export const HighlightText = ({
-    text,
+    text: initialText,
     toBeHighlighted,
     isInitial = false,
     isStripped = false,
 }: HighlightTextProps) => {
     const locale = useLocale() as LocaleType;
 
+    const text = initialText.split("\\n").join("\n");
+
     if (isInitial) {
         return (
-            <span className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40">
+            <span className="text-textHighlight dark:text-inherit bg-purple-100 bg-opacity-40 ">
                 {text}
             </span>
         );

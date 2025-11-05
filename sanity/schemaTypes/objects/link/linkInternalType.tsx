@@ -1,10 +1,10 @@
 import { LinkIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
-import { PAGE_REFERENCES } from "../../../constants";
-
 export const linkInternalType = defineField({
-    title: "Internal Link",
+    title: "Внутрішнє посилання",
+    description:
+        "Впишіть частину посилання без головного домену: www.ilovemyteam.online",
     name: "linkInternal",
     type: "object",
     icon: LinkIcon,
@@ -23,12 +23,17 @@ export const linkInternalType = defineField({
         ),
     },
     fields: [
+        // defineField({
+        //     name: "reference",
+        //     type: "reference",
+        //     weak: true,
+        //     validation: Rule => Rule.required(),
+        //     to: PAGE_REFERENCES,
+        // }),
         defineField({
             name: "reference",
-            type: "reference",
-            weak: true,
-            validation: Rule => Rule.required(),
-            to: PAGE_REFERENCES,
+            type: "string",
+            title: "Повне посилання на сторінку на сайті",
         }),
     ],
 });

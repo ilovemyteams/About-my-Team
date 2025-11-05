@@ -4,6 +4,7 @@ import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
+import { TableContent } from "./TableContent/TableContent";
 
 interface MainContentProps {
     content: NonNullable<NonNullable<CurrentFaqQueryResult>["mainContent"]>;
@@ -32,50 +33,53 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                                 topText={mainContentTopText}
                             />
                         )}
-                        {/*{item.layout === 2 && (
-                        <TableContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                        />
-                    )}
-                    {item.layout === 3 && (
-                        <DescriptionListContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                            summary={item.summary}
-                        />
-                    )}
-                    {item.layout === 4 && (
-                        <MarkedListContent
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 5 && (
-                        <ArrowedBlockContent
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 6 && (
-                        <MarkedListWithTitle
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 7 && (
-                        <ColumnListFAQ content={item} searchTerm={searchTerm} />
-                    )}
-                    {item.layout === 8 && (
-                        <TwoSidesListWithLines
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )} */}
+                        {layoutType === "table" && (
+                            <TableContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {/* {item.layout === 3 && (
+                            <DescriptionListContent
+                                content={item.data}
+                                title={item.title}
+                                searchTerm={searchTerm}
+                                text={item.text}
+                                summary={item.summary}
+                            />
+                        )} */}
+                        {/* {item.layout === 4 && (
+                            <MarkedListContent
+                                content={item}
+                                searchTerm={searchTerm}
+                            />
+                        )} */}
+                        {/* {item.layout === 5 && (
+                            <ArrowedBlockContent
+                                content={item}
+                                searchTerm={searchTerm}
+                            />
+                        )} */}
+                        {/* {item.layout === 6 && (
+                            <MarkedListWithTitle
+                                content={item}
+                                searchTerm={searchTerm}
+                            />
+                        )} */}
+                        {/* {item.layout === 7 && (
+                            <ColumnListFAQ
+                                content={item}
+                                searchTerm={searchTerm}
+                            />
+                        )} */}
+                        {/* {item.layout === 8 && (
+                            <TwoSidesListWithLines
+                                content={item}
+                                searchTerm={searchTerm}
+                            />
+                        )} */}
                     </Fragment>
                 )
             )}

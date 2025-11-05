@@ -1,4 +1,8 @@
+import { LuPencilRuler } from "react-icons/lu";
 import { defineArrayMember, defineField } from "sanity";
+
+import { BlockSubtitle } from "@/sanity/components/portableTextView/BlockSubtitle";
+import { BlockSubtitleWithMark } from "@/sanity/components/portableTextView/BlockSubtitleWithMark";
 
 export const portableTextSimpleType = defineField({
     name: "portableTextSimple",
@@ -35,6 +39,25 @@ export const portableTextSimpleType = defineField({
                     },
                 ],
             },
+            styles: [
+                {
+                    title: "Текст",
+                    value: "normal",
+                },
+
+                {
+                    title: "Підзаголовок",
+                    value: "subtitle",
+                    component: BlockSubtitle,
+                },
+                {
+                    title: "Підзаголовок з маркером",
+                    icon: LuPencilRuler,
+                    value: "markered",
+                    component: BlockSubtitleWithMark,
+                },
+            ],
+
             type: "block",
         }),
     ],

@@ -2,7 +2,8 @@ import { EarthGlobeIcon } from "@sanity/icons";
 import { defineField } from "sanity";
 
 export const linkExternalType = defineField({
-    title: "External Link",
+    title: "Зовнішнє посилання",
+    description: "Вкажіть повне посилання, починаючи з https://",
     name: "linkExternal",
     type: "object",
     icon: EarthGlobeIcon,

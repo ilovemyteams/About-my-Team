@@ -17,7 +17,7 @@ export const LayoutText = ({
     return (
         <p
             className={twMerge(
-                "text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap flex flex-col",
+                "text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap",
                 className
             )}
         >
