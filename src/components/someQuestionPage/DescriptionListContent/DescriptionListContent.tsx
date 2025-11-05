@@ -23,9 +23,14 @@ export const DescriptionListContent = ({
     return (
         <div>
             {title && (
-                <LayoutTitle className="pc:max-w-[910px] desk:max-w-full  mb-10 tab:mb-[64px] pc:mb-[80px] ">
-                    <HighlightText text={title} toBeHighlighted={searchTerm} />
-                </LayoutTitle>
+                <LayoutTitle
+                    searchTerm={searchTerm}
+                    title={title}
+                    className="pc:max-w-[910px] desk:max-w-full  mb-10 tab:mb-[64px] pc:mb-[80px]"
+                />
+                // <LayoutTitle className="pc:max-w-[910px] desk:max-w-full  mb-10 tab:mb-[64px] pc:mb-[80px] ">
+                //     <HighlightText text={title} toBeHighlighted={searchTerm} />
+                // </LayoutTitle>
             )}
             {text && (
                 <p className="desk:mb-[80px] tab:w-[70%] pc:w-[56%] desk:w-[70%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap mb-10 tab:mb-[64px] pc:mb-[80px]">

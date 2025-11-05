@@ -19,9 +19,14 @@ export const TwoSidesListWithLines = ({
     return (
         <div>
             {title && (
-                <LayoutTitle className="mb-10 tab:mb-[64px] pc:mb-[80px]">
-                    {title}
-                </LayoutTitle>
+                <LayoutTitle
+                    title={title}
+                    searchTerm={searchTerm}
+                    className="mb-10 tab:mb-[64px] pc:mb-[80px]"
+                />
+                // <LayoutTitle className="mb-10 tab:mb-[64px] pc:mb-[80px]">
+                //     {title}
+                // </LayoutTitle>
             )}
             <ul className="pc:pb-[60px]">
                 {data.map((item, index) => (
