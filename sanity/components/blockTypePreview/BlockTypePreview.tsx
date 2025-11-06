@@ -4,7 +4,7 @@ import { FormEvent, useCallback } from "react";
 import { set, StringInputProps, StringSchemaType } from "sanity";
 import styled from "styled-components";
 
-import { FAQ_PAGE_DESIGN_TYPES } from "@/sanity/constants";
+import { FAQ_PAGE_DESIGN_TYPES } from "../../constants";
 
 const StyledLabel = styled("label")({
     "&:hover": {
