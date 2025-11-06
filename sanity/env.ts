@@ -27,8 +27,6 @@ export const readToken = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN || "";
 
 export const writeToken = process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN || "";
 
-console.log("readToken", readToken);
-
 export const PREVIEW_URL =
     process.env.NEXT_PUBLIC_SANITY_STUDIO_PREVIEW_URL ||
     "http://localhost:3000";

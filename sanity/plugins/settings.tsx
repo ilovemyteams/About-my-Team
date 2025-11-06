@@ -10,7 +10,7 @@ import {
     type StructureResolver,
 } from "sanity/structure";
 
-import { writeToken } from "../env";
+import { apiVersion, writeToken } from "../env";
 import { client } from "../lib/client";
 import { getEnglishTitleFromIntArrays } from "../utils/getEnglishTitleFromIntArrays";
 
@@ -122,6 +122,7 @@ export const pageStructure = (
                 S.documentTypeList("page")
                     .title("Top-level pages")
                     .filter('!defined(parentPage) && _type == "page"')
+                    .apiVersion(apiVersion)
                     .child(id => nestedContentPageList(id, S))
             );
 
