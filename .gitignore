@@ -18,6 +18,11 @@
 # production
 /build
 
+#Sanity production
+.sanity
+/.sanity
+/dist
+
 # misc
 .DS_Store
 *.pem
