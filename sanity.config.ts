@@ -14,11 +14,11 @@ import { media, mediaAssetSource } from "sanity-plugin-media";
 
 // import { SetEstimateTimeAndPublishAction } from "./sanity/actions/SetEstimateTimeAndPublishAction";
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { SUPPORTED_LANGUAGES } from "./sanity/constants";
-import { apiVersion, dataset, projectId } from "./sanity/env";
-import { singletonPlugin } from "./sanity/plugins/settings";
-import { schema } from "./sanity/schemaTypes";
-import { singletonPagesType, structure } from "./sanity/structure";
+import { SUPPORTED_LANGUAGES } from "./src/sanity/constants";
+import { apiVersion, dataset, projectId } from "./src/sanity/env";
+import { singletonPlugin } from "./src/sanity/plugins/settings";
+import { schema } from "./src/sanity/schemaTypes";
+import { singletonPagesType, structure } from "./src/sanity/structure";
 
 export default defineConfig({
     basePath: "/studio",

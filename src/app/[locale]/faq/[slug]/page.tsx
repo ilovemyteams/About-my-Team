@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { getLocale } from "next-intl/server";
 import React from "react";
 
-import { loadCurrentFaq } from "@/sanity/lib/loadQuery";
 import { Question } from "@/src/components/someQuestionPage/QuestionPage";
+import { loadCurrentFaq } from "@/src/sanity/lib/loadQuery";
 import { RouteSearchParams, RouteSlugParams } from "@/types/RoutesType";
 
 type RouteType = RouteSlugParams;

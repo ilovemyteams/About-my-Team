@@ -1,7 +1,7 @@
 import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
 
-import { urlFor } from "@/sanity/lib/image";
+import { urlFor } from "@/src/sanity/lib/image";
 
 import { NoImageHeart } from "./NoImageHeart";
 

@@ -1,4 +1,4 @@
-import { writeToken } from "./../env";
+import { writeToken } from "../env";
 import { client } from "./client";
 
 const mutationClient = client.withConfig({ token: writeToken });

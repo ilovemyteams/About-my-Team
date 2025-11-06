@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { CurrentFaqQueryResult } from "@/sanity/types";
+import { CurrentFaqQueryResult } from "@/src/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";

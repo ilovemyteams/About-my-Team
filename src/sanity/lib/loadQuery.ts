@@ -1,8 +1,8 @@
 import "server-only";
 
-import { sanityFetch } from "@/sanity/lib/live";
+import { sanityFetch } from "@/src/sanity/lib/live";
 
-import { currentFaqQuery, faqListQuery } from "../lib/queries";
+import { currentFaqQuery, faqListQuery } from "./queries";
 
 export async function loadQuery(query: string, params = {}) {
     try {

@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { addFAQLike, removeFAQLike } from "@/sanity/lib/mutationQuery";
+import { addFAQLike, removeFAQLike } from "@/src/sanity/lib/mutationQuery";
 import { generateUserId } from "@/src/utils/generateUserId";
 
 import { IconLike } from "./Icons/IconLike";

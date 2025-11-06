@@ -1,7 +1,7 @@
 import { PortableText, PortableTextComponents } from "next-sanity";
 import React from "react";
 
-import { PortableTextSimple } from "@/sanity/types";
+import { PortableTextSimple } from "@/src/sanity/types";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { LayoutText } from "./LayoutText";

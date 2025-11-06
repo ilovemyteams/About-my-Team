@@ -1,7 +1,7 @@
 // import { getLocale } from "next-intl/server";
 import React from "react";
 
-import { CurrentFaqQueryResult } from "@/sanity/types";
+import { CurrentFaqQueryResult } from "@/src/sanity/types";
 
 import { CtaSectionAskUs } from "./CtaSection/CtaSectionAskUs";
 import { HelpfullAnswerSection } from "./HelpfullAnswerSection";

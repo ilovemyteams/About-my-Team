@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
 import React from "react";
 
-import { SanityLive } from "@/sanity/lib/live";
 import { BackgroundFigures } from "@/src/components/backgroundImages/BackgroundFigures";
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { ConditionalGTM } from "@/src/components/cookies/ConditionalGTM";
@@ -13,6 +12,7 @@ import { CookiesComponent } from "@/src/components/cookies/Cookies";
 import { Footer } from "@/src/components/footer/Footer";
 import { Header } from "@/src/components/header/Header";
 import { ScrollToTopButton } from "@/src/components/scrollToTopButton/ScrollToTopButton";
+import { SanityLive } from "@/src/sanity/lib/live";
 import { generatePageMetadata } from "@/src/utils/generateMetaData";
 import { PreviousURLProvider } from "@/src/utils/PreviousURLContext";
 
