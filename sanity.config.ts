@@ -24,18 +24,6 @@ export default defineConfig({
     basePath: "/studio",
     projectId,
     title: "About my team",
-    document: {
-        actions: (prev, context) => {
-            const isFaqType = context.schemaType === "faq";
-            return isFaqType
-                ? prev.map(originalAction =>
-                      originalAction.action === "publish"
-                          ? SetEstimateTimeAndPublishAction
-                          : originalAction
-                  )
-                : prev;
-        },
-    },
     dataset,
     // Add and edit the content schema in the './sanity/schemaTypes' folder
     schema,
@@ -78,6 +66,18 @@ export default defineConfig({
                     assetSource => assetSource === mediaAssetSource
                 );
             },
+        },
+    },
+    document: {
+        actions: (prev, context) => {
+            const isFaqType = context.schemaType === "faq";
+            return isFaqType
+                ? prev.map(originalAction =>
+                      originalAction.action === "publish"
+                          ? SetEstimateTimeAndPublishAction
+                          : originalAction
+                  )
+                : prev;
         },
     },
 });

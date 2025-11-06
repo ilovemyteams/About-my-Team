@@ -1,6 +1,8 @@
 export const apiVersion =
     process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-06-21";
 
+export const deployToken = process.env.SANITY_AUTH_TOKEN;
+
 export const dataset = assertValue(
     process.env.NEXT_PUBLIC_SANITY_DATASET,
     "Missing environment variable: NEXT_PUBLIC_SANITY_DATASET"
@@ -12,7 +14,9 @@ export const projectId = assertValue(
 );
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
+    console.log("value of env variable:", v);
     if (v === undefined) {
+        console.log("v === undefined", v);
         throw new Error(errorMessage);
     }
 
@@ -22,6 +26,8 @@ function assertValue<T>(v: T | undefined, errorMessage: string): T {
 export const readToken = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN || "";
 
 export const writeToken = process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN || "";
+
+console.log("readToken", readToken);
 
 export const PREVIEW_URL =
     process.env.NEXT_PUBLIC_SANITY_STUDIO_PREVIEW_URL ||
