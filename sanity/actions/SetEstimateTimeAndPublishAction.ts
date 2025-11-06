@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { DocumentActionProps, useDocumentOperation } from "sanity";
 
-import { getReadingTimeEstimation } from "@/src/utils/getReadingTimeEstimation";
+const getReadingTimeEstimation = (text: string): number => {
+    return Math.ceil(text.split(" ").length / 180);
+};
 
 import { Faq } from "../types";
 import { getAllTextFromFaqText } from "../utils/getAllTextFromFaqDoc";
