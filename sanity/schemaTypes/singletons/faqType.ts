@@ -2,16 +2,15 @@ import { toPlainText } from "next-sanity";
 import { FcCheckmark, FcFaq } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
-import { BlockTypePreview } from "@/sanity/components/blockTypePreview/BlockTypePreview";
-import { EstimateTimePreview } from "@/sanity/components/estimateTimePreview/EstimateTimePreview";
-import { LikesPreview } from "@/sanity/components/likesPreview/LikesPreview";
-import { PreviewWithImage } from "@/sanity/components/previewWithImage/PreviewWithImage";
-import { FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH } from "@/sanity/constants";
-import { generateSlug } from "@/sanity/utils/generateSlug";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
-import { validateSlug } from "@/sanity/utils/validateSlug";
-
-import { getUkrainianTitleFromIntArrays } from "./../../utils/getEnglishTitleFromIntArrays";
+import { BlockTypePreview } from "../../components/blockTypePreview/BlockTypePreview";
+import { EstimateTimePreview } from "../../components/estimateTimePreview/EstimateTimePreview";
+import { LikesPreview } from "../../components/likesPreview/LikesPreview";
+import { PreviewWithImage } from "../../components/previewWithImage/PreviewWithImage";
+import { FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH } from "../../constants";
+import { generateSlug } from "../../utils/generateSlug";
+import { getUkrainianTitleFromIntArrays } from "../../utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "../../utils/validateIsRequired";
+import { validateSlug } from "../../utils/validateSlug";
 
 export const faqType = defineField({
     name: "faq",

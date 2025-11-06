@@ -1,9 +1,9 @@
 import { FcPicture } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
-import { SITE_STATUS, STAGES } from "@/sanity/constants";
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { SITE_STATUS, STAGES } from "../../constants";
+import { getEnglishTitleFromIntArrays } from "../../utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "../../utils/validateIsRequired";
 
 export const projectType = defineField({
     name: "project",

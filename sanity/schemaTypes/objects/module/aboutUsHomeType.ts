@@ -1,7 +1,7 @@
 import { FcCheckmark } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
+import { getEnglishTitleFromIntArrays } from "../../../utils/getEnglishTitleFromIntArrays";
 
 export const aboutUsItemType = defineField({
     name: "aboutUsItem",

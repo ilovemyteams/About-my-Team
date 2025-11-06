@@ -1,8 +1,8 @@
 import { FcGraduationCap } from "react-icons/fc";
 import { defineField } from "sanity";
 
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { getEnglishTitleFromIntArrays } from "../../utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "../../utils/validateIsRequired";
 
 export const specialistCategoryType = defineField({
     name: "specialistCategory",

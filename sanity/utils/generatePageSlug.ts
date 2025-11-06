@@ -1,6 +1,6 @@
 import { client } from "@/sanity/lib/client";
-import { InternationalizedArrayString, Page } from "@/sanity/types";
 
+import { InternationalizedArrayString, Page } from "../types";
 import { getEnglishTitleFromIntArrays } from "./getEnglishTitleFromIntArrays";
 
 const getParentSlug = async (parentPageId: string) => {

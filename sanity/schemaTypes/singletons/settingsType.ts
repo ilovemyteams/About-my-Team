@@ -1,7 +1,7 @@
 import { FcSettings } from "react-icons/fc";
 import { defineField, defineType } from "sanity";
 
-import { GROUPS } from "@/sanity/constants";
+import { GROUPS } from "../../constants";
 
 const TITLE = "Settings";
 

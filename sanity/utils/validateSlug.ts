@@ -1,4 +1,4 @@
-import { Slug } from "@/sanity/types";
+import { Slug } from "../types";
 
 export const validateSlug = (maxLength: number) => {
     return (value: Slug | undefined) => {

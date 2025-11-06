@@ -1,6 +1,6 @@
 import { defineField } from "sanity";
 
-import { validateMaxLength } from "@/sanity/utils/validateMaxLength";
+import { validateMaxLength } from "../../utils/validateMaxLength";
 
 const TITLE_MAX_LENGTH = 100;
 const DESCRIPTION_MAX_LENGTH = 200;

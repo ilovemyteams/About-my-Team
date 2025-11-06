@@ -1,7 +1,6 @@
 import { ValidationContext } from "sanity";
 
-import { Page, Slug } from "@/sanity/types";
-
+import { Page, Slug } from "../types";
 import { generatePageSlug } from "./generatePageSlug";
 
 // Спрощена функція для валідації Page Slug

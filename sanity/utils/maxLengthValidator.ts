@@ -1,5 +1,4 @@
-import { PortableColorTitle, PortableTextSimple } from "@/sanity/types";
-
+import { PortableColorTitle, PortableTextSimple } from "../types";
 import { calculateTotalLength } from "./calculateTotalLength";
 
 export const maxLengthValidator =

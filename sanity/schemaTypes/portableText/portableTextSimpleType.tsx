@@ -6,10 +6,10 @@ import {
 } from "react-icons/tb";
 import { defineArrayMember, defineField } from "sanity";
 
-import { BlockNormalText } from "@/sanity/components/portableTextView/BlockNormalText";
-import { BlockSmallText } from "@/sanity/components/portableTextView/BlockSmallText";
-import { BlockSubtitle } from "@/sanity/components/portableTextView/BlockSubtitle";
-import { BlockSubtitleWithMark } from "@/sanity/components/portableTextView/BlockSubtitleWithMark";
+import { BlockNormalText } from "../../components/portableTextView/BlockNormalText";
+import { BlockSmallText } from "../../components/portableTextView/BlockSmallText";
+import { BlockSubtitle } from "../../components/portableTextView/BlockSubtitle";
+import { BlockSubtitleWithMark } from "../../components/portableTextView/BlockSubtitleWithMark";
 
 export const portableTextSimpleType = defineField({
     name: "portableTextSimple",

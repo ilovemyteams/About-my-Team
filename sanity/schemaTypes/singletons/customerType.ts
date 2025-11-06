@@ -1,9 +1,9 @@
 import { FcBusinessman } from "react-icons/fc";
 import { defineArrayMember, defineField } from "sanity";
 
-import { GENDER_OPTIONS } from "@/sanity/constants";
-import { getEnglishTitleFromIntArrays } from "@/sanity/utils/getEnglishTitleFromIntArrays";
-import { validateIsRequired } from "@/sanity/utils/validateIsRequired";
+import { GENDER_OPTIONS } from "../../constants";
+import { getEnglishTitleFromIntArrays } from "../../utils/getEnglishTitleFromIntArrays";
+import { validateIsRequired } from "../../utils/validateIsRequired";
 
 export const customerType = defineField({
     name: "customer",

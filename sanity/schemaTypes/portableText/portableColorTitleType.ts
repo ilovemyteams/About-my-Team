@@ -1,7 +1,6 @@
 import { defineArrayMember, defineType } from "sanity";
 
-import { AccentText } from "@/sanity/components/accentText/AccentText";
-
+import { AccentText } from "../../components/accentText/AccentText";
 import { maxLengthValidator } from "../../utils/maxLengthValidator";
 
 const MAX_LENGTH = 100;
