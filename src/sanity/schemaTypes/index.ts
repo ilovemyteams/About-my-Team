@@ -94,15 +94,15 @@ const blocks: ArrayDefinition[] = [
     portableColorTitleType,
 ];
 
-import { pageType } from "./documents/pageType";
+// import { pageType } from "./documents/pageType";
+import { faqType } from "./documents/faqType";
 
-const documents: DocumentDefinition[] = [pageType];
+const documents: DocumentDefinition[] = [faqType];
 
 import { stageType } from "./objects/global/stageType";
 import { faqHomeType } from "./objects/module/faqHomeType";
 import { servicesHomeType } from "./objects/module/servicesHomeType";
 import { customerType } from "./singletons/customerType";
-import { faqType } from "./singletons/faqType";
 import { homeType } from "./singletons/homeType";
 import { projectType } from "./singletons/projectType";
 import { reviewType } from "./singletons/reviewType";
@@ -121,7 +121,7 @@ const singletons: DocumentDefinition[] = [
     projectType,
     customerType,
     reviewType,
-    faqType,
+
     siteCategoryType,
     serviceType,
     specialistType,

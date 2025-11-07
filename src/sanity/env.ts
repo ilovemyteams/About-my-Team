@@ -4,13 +4,13 @@ export const apiVersion =
 export const deployToken = process.env.SANITY_AUTH_TOKEN;
 
 export const dataset = assertValue(
-    process.env.SANITY_STUDIO_DATASET,
-    "Missing environment variable: SANITY_STUDIO_DATASET"
+    process.env.NEXT_PUBLIC_SANITY_DATASET,
+    "Missing environment variable: NEXT_PUBLIC_SANITY_DATASET"
 );
 
 export const projectId = assertValue(
-    process.env.SANITY_STUDIO_PROJECT_ID,
-    "Missing environment variable: SANITY_STUDIO_PROJECT_ID"
+    process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    "Missing environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID"
 );
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
@@ -24,7 +24,7 @@ function assertValue<T>(v: T | undefined, errorMessage: string): T {
 
 export const readToken = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN || "";
 
-export const writeToken = process.env.SANITY_STUDIO_WRITE_TOKEN || "";
+export const writeToken = process.env.NEXT_PUBLIC_SANITY_WRITE_TOKEN || "";
 
 export const PREVIEW_URL =
     process.env.NEXT_PUBLIC_SANITY_STUDIO_PREVIEW_URL ||

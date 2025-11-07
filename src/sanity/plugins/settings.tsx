@@ -2,68 +2,58 @@
  * This plugin contains all the logic for setting up the singletons
  */
 import { type DocumentDefinition } from "sanity";
-import {
-    type DocumentBuilder,
-    type DocumentListBuilder,
-    ListItemBuilder,
-    type StructureBuilder,
-    type StructureResolver,
-} from "sanity/structure";
+import { ListItemBuilder, type StructureResolver } from "sanity/structure";
 
-import { apiVersion, writeToken } from "../env";
-import { client } from "../lib/client";
-import { getEnglishTitleFromIntArrays } from "../utils/getEnglishTitleFromIntArrays";
+// async function nestedContentPageList(
+//     id: string,
+//     S: StructureBuilder
+// ): Promise<DocumentListBuilder | DocumentBuilder> {
+//     const previewClient = client.withConfig({
+//         token: writeToken,
+//     });
 
-async function nestedContentPageList(
-    id: string,
-    S: StructureBuilder
-): Promise<DocumentListBuilder | DocumentBuilder> {
-    const previewClient = client.withConfig({
-        token: writeToken,
-    });
+//     const page = await previewClient.fetch(
+//         `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
+//         { id }
+//     );
 
-    const page = await previewClient.fetch(
-        `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,
-        { id }
-    );
+//     const englishTitle = getEnglishTitleFromIntArrays(page?.title);
 
-    const englishTitle = getEnglishTitleFromIntArrays(page?.title);
+//     const hasChildren = await previewClient.fetch(
+//         `count(*[
+//           parentPage._ref == $id ||
+//           parentPage._ref == "drafts.${id}"
+//         ]) > 0`,
+//         { id }
+//     );
 
-    const hasChildren = await previewClient.fetch(
-        `count(*[
-          parentPage._ref == $id || 
-          parentPage._ref == "drafts.${id}"
-        ]) > 0`,
-        { id }
-    );
+//     if (hasChildren) {
+//         return S.documentTypeList("page")
+//             .title(`Page ${englishTitle} and nested pages`)
+//             .filter(
+//                 `(
+//                 $id == _id || "drafts.${id}" == _id ||
+//                 $id == parentPage._ref || "drafts.${id}" == parentPage._ref ||
+//                 $id == parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage._ref ||
+//                 $id == parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage._ref ||
+//                 $id == parentPage.parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage.parentPage._ref
+//             )`
+//             )
+//             .params({ id })
+//             .child((id: string) =>
+//                 id === page?._id || `drafts.${id}` === page?._id
+//                     ? S.document()
+//                           .schemaType("page")
+//                           .views([S.view.form()])
+//                           .id(id)
+//                     : nestedContentPageList(id, S)
+//             );
+//     }
 
-    if (hasChildren) {
-        return S.documentTypeList("page")
-            .title(`Page ${englishTitle} and nested pages`)
-            .filter(
-                `(
-                $id == _id || "drafts.${id}" == _id ||
-                $id == parentPage._ref || "drafts.${id}" == parentPage._ref ||
-                $id == parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage._ref ||
-                $id == parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage._ref ||
-                $id == parentPage.parentPage.parentPage.parentPage._ref || "drafts.${id}" == parentPage.parentPage.parentPage.parentPage._ref
-            )`
-            )
-            .params({ id })
-            .child((id: string) =>
-                id === page?._id || `drafts.${id}` === page?._id
-                    ? S.document()
-                          .schemaType("page")
-                          .views([S.view.form()])
-                          .id(id)
-                    : nestedContentPageList(id, S)
-            );
-    }
+//     // If no children, just return the document form view
 
-    // If no children, just return the document form view
-
-    return S.document().schemaType("page").views([S.view.form()]).id(id);
-}
+//     return S.document().schemaType("page").views([S.view.form()]).id(id);
+// }
 
 const hiddenDocTypes = (listItem: ListItemBuilder) => {
     const id = listItem.getId();
@@ -114,17 +104,17 @@ export const pageStructure = (
     typeDefArray: DocumentDefinition[]
 ): StructureResolver => {
     return S => {
-        const pagesItem = S.listItem()
-            .id("pages-list")
-            .title("Pages")
-            .schemaType("page")
-            .child(
-                S.documentTypeList("page")
-                    .title("Top-level pages")
-                    .filter('!defined(parentPage) && _type == "page"')
-                    .apiVersion(apiVersion)
-                    .child(id => nestedContentPageList(id, S))
-            );
+        // const pagesItem = S.listItem()
+        //     .id("pages-list")
+        //     .title("Pages")
+        //     .schemaType("page")
+        //     .child(
+        //         S.documentTypeList("page")
+        //             .title("Top-level pages")
+        //             .filter('!defined(parentPage) && _type == "page"')
+        //             .apiVersion(apiVersion)
+        //             .child(id => nestedContentPageList(id, S))
+        //     );
 
         // Goes through all of the singletons that were provided and translates them into something the
         // Desktool can understand
@@ -154,7 +144,7 @@ export const pageStructure = (
         return S.list()
             .title("Content")
             .items([
-                pagesItem,
+                // pagesItem,
                 ...singletonItems,
                 S.divider(),
                 ...defaultListItems,
