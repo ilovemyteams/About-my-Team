@@ -14,12 +14,10 @@ export const Projects = async ({ projectId }: ProjectsProps) => {
         projectId.includes(project.data.slug)
     );
 
-    const title = t("statProjects", { projects: "" }).slice(0, -2);
-
     return (
         <div>
             <h2 className="font-caviar text-baseb tab:text-lg pc:text-xl desk:text-2xl capitalize">
-                {title}
+                {t("projects")}
             </h2>
             <ul className="grid grid-cols-1 gap-2 desk:gap-3 p-4">
                 {memberProjects.map(({ data }) => {

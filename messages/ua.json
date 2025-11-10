@@ -393,6 +393,7 @@
         "statProjects": "проєкти: {projects}",
         "leftProject": "Поза проєктом",
         "joinUsTitle": "Тут може бути ваше фото",
-        "joinUsText": "Долучайся до команди \nоднодумців"
+        "joinUsText": "Долучайся до команди \nоднодумців",
+        "projects": "проєкти"
     }
 }

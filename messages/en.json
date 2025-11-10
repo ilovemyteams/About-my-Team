@@ -398,6 +398,7 @@
         "statProjects": "projects: {projects}",
         "leftProject": "Out of project",
         "joinUsTitle": "Your photo can be here",
-        "joinUsText": "Join a team of like-minded \nindividuals"
+        "joinUsText": "Join a team of like-minded \nindividuals",
+        "projects": "projects"
     }
 }

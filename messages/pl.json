@@ -399,6 +399,7 @@
         "statProjects": "projekty: {projects}",
         "leftProject": "poza projektem",
         "joinUsTitle": "Twoje zdjęcie może być tutaj",
-        "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach"
+        "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach",
+        "projects": "projekty"
     }
 }
