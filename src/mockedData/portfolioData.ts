@@ -158,7 +158,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "9",
             slug: "willow-motion",
-            siteLink: "https://willow-motion.space/",
+            siteLink: "https://willow-motion.space",
             order: 8,
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=11AjMZ8-S4FgRdXshbxeVzsA7Wd973Ia2",
@@ -2210,7 +2210,7 @@ export const portfolioData: PortfolioDataItemType[] = [
         data: {
             id: "5",
             slug: "viktoriia-zabara",
-            siteLink: "https://viktoriia-recruiting.com.ua/",
+            siteLink: "https://viktoriia-recruiting.com.ua",
             order: 5,
             imageForAllProjectsPage:
                 "https://drive.google.com/uc?export=view&id=18RWpznE25pfHZpFXStzp4MujPpm0cwbI",
