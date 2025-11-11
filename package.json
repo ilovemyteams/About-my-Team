@@ -13,7 +13,9 @@
         "prepare": "husky install",
         "pre-commit": "lint-staged",
         "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo",
-        "sanity-typegen": "npx sanity schema extract --path=./src/sanity/schema.json && npx sanity typegen generate"
+        "sanity-typegen": "cd sanity && npm run sanity-typegen",
+        "sanity": "cd sanity && npm run dev", 
+        "sanity-deploy": "cd sanity && npm run deploy"
     },
     "dependencies": {
         "@heroui/react": "2.7.9",
