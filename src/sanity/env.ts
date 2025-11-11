@@ -1,8 +1,6 @@
 export const apiVersion =
     process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2023-06-21";
 
-export const deployToken = process.env.SANITY_AUTH_TOKEN;
-
 export const dataset = assertValue(
     process.env.NEXT_PUBLIC_SANITY_DATASET,
     "Missing environment variable: NEXT_PUBLIC_SANITY_DATASET"
@@ -36,4 +34,3 @@ export const DRAFT_MODE_ROUTE = "/api/draft";
 /**
  * Used to configure edit intent links, for Presentation Mode, as well as to configure where the Studio is mounted in the router.
  */
-export const studioUrl = "/studio";
