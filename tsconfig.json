@@ -34,5 +34,5 @@
         "src/components/eventsPage/SecondScene",
         "custom.d.ts",
             ],
-    "exclude": ["node_modules", ".next",  "sanity"]
+    "exclude": ["node_modules", ".next", "sanity"]
 }

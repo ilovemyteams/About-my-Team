@@ -1,4 +1,4 @@
-import { CurrentFaqQueryResult } from "@/src/sanity/types";
+import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { SanityImage } from "../shared/SanityImage";

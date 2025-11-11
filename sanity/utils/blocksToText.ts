@@ -2,8 +2,7 @@ import type {PortableTextBlock} from '@portabletext/types'
 
 const defaults = {nonTextBehavior: 'remove'}
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default function (blocks: PortableTextBlock[] = [], opts = {}) {
+const blockToText = function (blocks: PortableTextBlock[] = [], opts = {}) {
   if (typeof blocks === 'string') {
     return blocks
   }
@@ -19,3 +18,5 @@ export default function (blocks: PortableTextBlock[] = [], opts = {}) {
     })
     .join('\n\n')
 }
+
+export default blockToText

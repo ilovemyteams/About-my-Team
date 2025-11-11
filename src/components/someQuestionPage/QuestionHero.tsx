@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import { CurrentFaqQueryResult } from "@/src/sanity/types";
+import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { PageTopSection } from "../shared/PageTopSection";

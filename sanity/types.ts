@@ -633,6 +633,7 @@ export type SpecialistCategory = {
 export type LinkInternal = {
   _type: 'linkInternal'
   reference?: string
+  newWindow?: boolean
 }
 
 export type LinkExternal = {

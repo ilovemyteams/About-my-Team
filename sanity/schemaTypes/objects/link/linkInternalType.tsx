@@ -3,7 +3,6 @@ import {defineField} from 'sanity'
 
 export const linkInternalType = defineField({
   title: 'Внутрішнє посилання',
-  description: 'Впишіть частину посилання без головного домену: www.ilovemyteam.online',
   name: 'linkInternal',
   type: 'object',
   icon: LinkIcon,
@@ -32,7 +31,13 @@ export const linkInternalType = defineField({
     defineField({
       name: 'reference',
       type: 'string',
-      title: 'Повне посилання на сторінку на сайті',
+      title: 'Посилання на внутрішню сторінку сайту без домену www.ilovemyteam.online',
+    }),
+    defineField({
+      title: 'Відкрити у новому вікні?',
+      name: 'newWindow',
+      type: 'boolean',
+      initialValue: true,
     }),
   ],
 })

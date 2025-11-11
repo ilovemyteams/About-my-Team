@@ -1,8 +1,10 @@
-import {AiOutlineMenuFold} from 'react-icons/ai'
+import {FaList} from 'react-icons/fa6'
+import {LiaTextHeightSolid} from 'react-icons/lia'
 import {LuPencilRuler} from 'react-icons/lu'
 import {TbBaselineDensityLarge, TbBaselineDensityMedium} from 'react-icons/tb'
 import {defineArrayMember, defineField} from 'sanity'
 
+import {BlockListUlWithMargins} from '../../components/portableTextView/BlockListUlWithMargins'
 import {BlockNormalText} from '../../components/portableTextView/BlockNormalText'
 import {BlockSmallText} from '../../components/portableTextView/BlockSmallText'
 import {BlockSubtitle} from '../../components/portableTextView/BlockSubtitle'
@@ -14,8 +16,15 @@ export const portableTextSimpleType = defineField({
   of: [
     defineArrayMember({
       lists: [
-        {title: 'Bullet', value: 'bullet'},
-        {title: 'Numbered', value: 'number'},
+        {title: 'Список ненумерований', value: 'bullet'},
+        {
+          title: 'Список ненумерований із відступом',
+          value: 'bulletWithMargin',
+          icon: FaList,
+          component: BlockListUlWithMargins,
+        },
+
+        {title: 'Список нумерований', value: 'number'},
       ],
       marks: {
         decorators: [
@@ -28,20 +37,23 @@ export const portableTextSimpleType = defineField({
             value: 'strong',
           },
           {
-            title: 'Відступ зліва',
-            value: 'marginLeft',
-            icon: AiOutlineMenuFold,
+            title: 'Шрифт для заголовка',
+            value: 'caviar',
+            icon: LiaTextHeightSolid,
+            component: BlockSubtitle,
           },
 
           {
             title: 'Нижній відступ маленький',
             value: 'marginBottomSm',
             icon: TbBaselineDensityMedium,
+            component: (props) => <span style={{color: 'green'}}>{props.children}</span>,
           },
           {
             title: 'Нижній відступ середній',
             value: 'marginBottomMd',
             icon: TbBaselineDensityLarge,
+            component: (props) => <span style={{color: 'purple'}}>{props.children}</span>,
           },
         ],
         annotations: [
@@ -67,10 +79,9 @@ export const portableTextSimpleType = defineField({
         },
         {
           title: 'Звичаний текст',
-          value: 'normal',
+          value: 'medium',
           component: BlockNormalText,
         },
-
         {
           title: 'Підзаголовок',
           value: 'subtitle',
@@ -83,7 +94,6 @@ export const portableTextSimpleType = defineField({
           component: BlockSubtitleWithMark,
         },
       ],
-
       type: 'block',
     }),
   ],

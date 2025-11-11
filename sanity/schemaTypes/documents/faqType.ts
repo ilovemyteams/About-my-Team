@@ -32,7 +32,8 @@ export const faqType = defineField({
       fieldset: 'mainData',
       title: 'Впишіть повний текст питання',
 
-      description: "Якщо потрібно перенести частину заголовку на іншу строку, поставте символ '\n'",
+      description:
+        "Якщо потрібно перенести частину заголовку на іншу строку, поставте символ '\\n'",
       validation: (rule) => rule.custom(validateIsRequired),
     }),
     defineField({
@@ -149,7 +150,9 @@ export const faqType = defineField({
                       subtitle: 'contentBlockText[0].value',
                     },
                     prepare: ({title, subtitle}) => {
-                      const uaTitle = getUkrainianTitleFromIntArrays(title) || 'Без заголовку'
+                      const uaTitle =
+                        getUkrainianTitleFromIntArrays(title).split('\\n').join('') ||
+                        'Без заголовку'
                       const text = subtitle ? toPlainText(subtitle) : 'Не внесен текст'
 
                       return {
@@ -261,7 +264,7 @@ export const faqType = defineField({
       media: 'image.image',
     },
     prepare({title, media}) {
-      const previewTitle = getUkrainianTitleFromIntArrays(title)
+      const previewTitle = getUkrainianTitleFromIntArrays(title).split('\\n').join('')
 
       return {
         title: previewTitle,

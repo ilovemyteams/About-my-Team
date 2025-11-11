@@ -95,6 +95,7 @@ export default defineConfig([
             "dist",
             "static",
             ".sanity",
+            "next-env.d.ts",
         ],
     },
 ]);

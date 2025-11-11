@@ -5,7 +5,7 @@ import {BlockStyleProps} from 'sanity'
 export const BlockSubtitleWithMark = (props: BlockStyleProps) => {
   return (
     <Text size={3} weight="semibold">
-      <LuPencilRuler />
+      <LuPencilRuler style={{marginRight: '4px'}} />
       {props.children}
     </Text>
   )

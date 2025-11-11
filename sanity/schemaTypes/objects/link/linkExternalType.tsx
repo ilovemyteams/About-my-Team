@@ -24,12 +24,12 @@ export const linkExternalType = defineField({
   fields: [
     defineField({
       name: 'url',
-      title: 'URL',
+      title: 'Повне посилання на сторінку',
       type: 'url',
       validation: (Rule) => Rule.required().uri({scheme: ['http', 'https']}),
     }),
     defineField({
-      title: 'Open in a new window?',
+      title: 'Відкрити у новому вікні?',
       name: 'newWindow',
       type: 'boolean',
     }),

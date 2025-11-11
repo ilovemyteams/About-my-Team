@@ -1,6 +1,6 @@
 import {PortableTextBlock, toPlainText} from 'next-sanity'
 
-import {Faq, InternationalizedArrayString, InternationalizedArrayText} from '../../src/sanity/types'
+import {Faq, InternationalizedArrayString, InternationalizedArrayText} from '../types'
 import {getUkrainianTitleFromIntArrays} from './getEnglishTitleFromIntArrays'
 
 const extractUaVersion = (

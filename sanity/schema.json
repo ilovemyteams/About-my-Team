@@ -3487,6 +3487,13 @@
             "type": "string"
           },
           "optional": true
+        },
+        "newWindow": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
         }
       }
     }

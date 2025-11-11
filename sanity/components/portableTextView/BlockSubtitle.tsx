@@ -1,11 +1,6 @@
-import {Text} from '@sanity/ui'
 import React from 'react'
 import {BlockStyleProps} from 'sanity'
 
 export const BlockSubtitle = (props: BlockStyleProps) => {
-  return (
-    <Text size={3} weight="semibold">
-      {props.children}
-    </Text>
-  )
+  return <span style={{fontSize: 16, fontWeight: 700}}>{props.children}</span>
 }

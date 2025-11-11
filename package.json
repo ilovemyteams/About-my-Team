@@ -14,7 +14,7 @@
         "pre-commit": "lint-staged",
         "type-check": "tsc --project tsconfig.json --pretty --noEmit && echo",
         "sanity-typegen": "cd sanity && npm run sanity-typegen",
-        "sanity": "cd sanity && npm run dev", 
+        "sanity": "cd sanity && npm run dev",
         "sanity-deploy": "cd sanity && npm run deploy"
     },
     "dependencies": {

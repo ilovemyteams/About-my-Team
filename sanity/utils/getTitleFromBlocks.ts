@@ -1,4 +1,4 @@
-import {InternationalizedArrayPortableColorTitle} from '../../src/sanity/types'
+import {InternationalizedArrayPortableColorTitle} from '../types'
 
 export const getEnglishTitleFromBlocks = (title: InternationalizedArrayPortableColorTitle) => {
   const engTitleBlock = title?.find((block) => block._key === 'en')?.value

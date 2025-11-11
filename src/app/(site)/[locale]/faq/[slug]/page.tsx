@@ -30,7 +30,7 @@ export async function generateMetadata(
     const previousImages = (await parent).openGraph?.images || [];
 
     return {
-        title: displayedQuestion.question,
+        title: displayedQuestion.question?.split("\\n").join(""),
         description: displayedQuestion.shortAnswer,
         openGraph: {
             images: [...previousImages],

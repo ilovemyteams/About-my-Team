@@ -1,4 +1,4 @@
-import {InternationalizedArrayString, InternationalizedArrayText} from '../../src/sanity/types'
+import {InternationalizedArrayString, InternationalizedArrayText} from '../types'
 
 export const validateMaxLength =
   (maxLength: number) => (value: InternationalizedArrayString | InternationalizedArrayText) => {

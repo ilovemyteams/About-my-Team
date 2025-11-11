@@ -1,4 +1,4 @@
-import {PortableColorTitle, PortableTextSimple} from '../../src/sanity/types'
+import {PortableColorTitle, PortableTextSimple} from '../types'
 
 // Helper function to calculate the total character length of Portable Text content
 export const calculateTotalLength = (blocks: PortableTextSimple | PortableColorTitle): number => {

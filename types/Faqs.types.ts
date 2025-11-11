@@ -1,4 +1,4 @@
-import { CurrentFaqQueryResult, FaqListQueryResult } from "@/src/sanity/types";
+import { CurrentFaqQueryResult, FaqListQueryResult } from "@/sanity/types";
 
 export type QuestionType = FaqListQueryResult["faqs"][number];
 
