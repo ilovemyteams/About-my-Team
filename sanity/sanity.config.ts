@@ -10,7 +10,7 @@ import {structureTool} from 'sanity/structure'
 import {internationalizedArray} from 'sanity-plugin-internationalized-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
 
-// import { SetEstimateTimeAndPublishAction } from "./sanity/actions/SetEstimateTimeAndPublishAction";
+import {SetEstimateTimeAndPublishAction} from './actions/SetEstimateTimeAndPublishAction'
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
 import {SUPPORTED_LANGUAGES} from './constants'
 import {apiVersion, dataset, projectId} from './lib/env'
@@ -55,16 +55,14 @@ export default defineConfig({
       },
     },
   },
-  // document: {
-  //     actions: (prev, context) => {
-  //         const isFaqType = context.schemaType === "faq";
-  //         return isFaqType
-  //             ? prev.map(originalAction =>
-  //                   originalAction.action === "publish"
-  //                       ? SetEstimateTimeAndPublishAction
-  //                       : originalAction
-  //               )
-  //             : prev;
-  //     },
-  // },
+  document: {
+    actions: (prev, context) => {
+      const isFaqType = context.schemaType === 'faq'
+      return isFaqType
+        ? prev.map((originalAction) =>
+            originalAction.action === 'publish' ? SetEstimateTimeAndPublishAction : originalAction,
+          )
+        : prev
+    },
+  },
 })

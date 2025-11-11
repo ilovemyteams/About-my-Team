@@ -9,6 +9,8 @@ export const generateSlug = (doc: SanityDocument, sourceField: string, maxLength
 
   const pageSlug = pageTitle
     .toLowerCase()
+    .split('\\n')
+    .join('')
     .replace(new RegExp('[.,/#!$%^&*;:{}=\\-_~()?\'"`]', 'g'), '')
     .replace(/\s+/g, '-')
 

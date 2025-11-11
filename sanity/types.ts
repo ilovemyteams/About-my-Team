@@ -193,8 +193,8 @@ export type GridItem = {
       _type: 'span'
       _key: string
     }>
-    style?: 'small' | 'normal' | 'subtitle' | 'markered'
-    listItem?: 'bullet' | 'number'
+    style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
+    listItem?: 'bullet' | 'bulletWithMargin' | 'number'
     markDefs?: Array<
       | ({
           _key: string
@@ -244,8 +244,8 @@ export type AccordionGroup = {
       _type: 'span'
       _key: string
     }>
-    style?: 'small' | 'normal' | 'subtitle' | 'markered'
-    listItem?: 'bullet' | 'number'
+    style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
+    listItem?: 'bullet' | 'bulletWithMargin' | 'number'
     markDefs?: Array<
       | ({
           _key: string
@@ -285,8 +285,8 @@ export type PortableTextSimple = Array<{
     _type: 'span'
     _key: string
   }>
-  style?: 'small' | 'normal' | 'subtitle' | 'markered'
-  listItem?: 'bullet' | 'number'
+  style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
+  listItem?: 'bullet' | 'bulletWithMargin' | 'number'
   markDefs?: Array<
     | ({
         _key: string
@@ -713,8 +713,9 @@ export type Faq = {
     orderText?: Array<
       {
         _key: string
-      } & InternationalizedArrayTextValue
+      } & InternationalizedArrayPortableTextSimpleValue
     >
+    isOrderBtnVisible?: boolean
   }
   likedUserList?: Array<string>
   likes?: number
@@ -1326,7 +1327,7 @@ export type FaqListQueryResult = {
   total: number
 }
 // Variable: currentFaqQuery
-// Query: *[_type == 'faq' && pageSlug.current == $slug][0]{      _id,      "slug": pageSlug.current,      "question": question[_key == $language][0].value,      "shortAnswer": shortAnswer[_key == $language][0].value,       "heroImage": {        "url": image.image.asset->url,         "lqip": image.image.asset -> metadata.lqip,        "caption": image.caption[_key == $language][0].value      },      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,      estimateReadTime,       "likes": likedUserList,       "orderText": orderContent.orderText[_key == $language][0].value,      "orderImage": {        "url": orderContent.image.image.asset->url,         "lqip": orderContent.image.image.asset -> metadata.lqip,        "caption": orderContent.image.caption[_key == $language][0].value      },       "mainContent": mainContent[]{        layoutType,        "mainContentTitle":mainContentTitle[_key == $language][0].value,        "mainContentTopText": mainContentTopText[_key == $language][0].value,         "mainContentText": mainContentText[]{          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,          "contentBlockText": contentBlockText[_key == $language][0].value,        },        }}
+// Query: *[_type == 'faq' && pageSlug.current == $slug][0]{      _id,      "slug": pageSlug.current,      "question": question[_key == $language][0].value,      "shortAnswer": shortAnswer[_key == $language][0].value,       "heroImage": {        "url": image.image.asset->url,         "lqip": image.image.asset -> metadata.lqip,        "caption": image.caption[_key == $language][0].value      },      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,      estimateReadTime,       "likes": likedUserList,       "orderText": orderContent.orderText[_key == $language][0].value,      "orderImage": {        "url": orderContent.image.image.asset->url,         "lqip": orderContent.image.image.asset -> metadata.lqip,        "caption": orderContent.image.caption[_key == $language][0].value      },      "isOrderBtnVisible": orderContent.isOrderBtnVisible,      "mainContent": mainContent[]{        layoutType,        "mainContentTitle":mainContentTitle[_key == $language][0].value,        "mainContentTopText": mainContentTopText[_key == $language][0].value,         "mainContentText": mainContentText[]{          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,          "contentBlockText": contentBlockText[_key == $language][0].value,        },        }}
 export type CurrentFaqQueryResult = {
   _id: string
   slug: string | null
@@ -1340,12 +1341,13 @@ export type CurrentFaqQueryResult = {
   additionalTextShortAnswer: string | null
   estimateReadTime: number | null
   likes: Array<string> | null
-  orderText: string | null
+  orderText: PortableTextSimple | null
   orderImage: {
     url: string | null
     lqip: string | null
     caption: string | null
   }
+  isOrderBtnVisible: boolean | null
   mainContent: Array<{
     layoutType:
       | 'decorationList'
@@ -1437,7 +1439,7 @@ import '@sanity/client'
 declare module '@sanity/client' {
   interface SanityQueries {
     '{\n  "faqs":*[_type == \'faq\'] | order(_createdAt asc)[$start...$end]{\n    "question": question[_key == $language][0].value,\n    "shortAnswer": shortAnswer[_key == $language][0].value,\n    "image": {\n      "url": image.image.asset->url,\n      "lqip": image.image.asset -> metadata.lqip,\n       "caption": image.caption[_key == $language][0].value\n    },\n    likedUserList, \n    estimateReadTime,\n    _id,\n   "slug": pageSlug.current,\n  },\n "total": count(*[_type == "faq"]) \n}': FaqListQueryResult
-    '*[_type == \'faq\' && pageSlug.current == $slug][0]{\n      _id,\n      "slug": pageSlug.current,\n      "question": question[_key == $language][0].value,\n      "shortAnswer": shortAnswer[_key == $language][0].value, \n      "heroImage": {\n        "url": image.image.asset->url, \n        "lqip": image.image.asset -> metadata.lqip,\n        "caption": image.caption[_key == $language][0].value\n      },\n      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,\n      estimateReadTime, \n      "likes": likedUserList, \n      "orderText": orderContent.orderText[_key == $language][0].value,\n      "orderImage": {\n        "url": orderContent.image.image.asset->url, \n        "lqip": orderContent.image.image.asset -> metadata.lqip,\n        "caption": orderContent.image.caption[_key == $language][0].value\n      }, \n      "mainContent": mainContent[]{\n        layoutType,\n        "mainContentTitle":mainContentTitle[_key == $language][0].value,\n        "mainContentTopText": mainContentTopText[_key == $language][0].value, \n        "mainContentText": mainContentText[]{\n          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,\n          "contentBlockText": contentBlockText[_key == $language][0].value,\n        },\n      \n  }}': CurrentFaqQueryResult
+    '*[_type == \'faq\' && pageSlug.current == $slug][0]{\n      _id,\n      "slug": pageSlug.current,\n      "question": question[_key == $language][0].value,\n      "shortAnswer": shortAnswer[_key == $language][0].value, \n      "heroImage": {\n        "url": image.image.asset->url, \n        "lqip": image.image.asset -> metadata.lqip,\n        "caption": image.caption[_key == $language][0].value\n      },\n      "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,\n      estimateReadTime, \n      "likes": likedUserList, \n      "orderText": orderContent.orderText[_key == $language][0].value,\n      "orderImage": {\n        "url": orderContent.image.image.asset->url, \n        "lqip": orderContent.image.image.asset -> metadata.lqip,\n        "caption": orderContent.image.caption[_key == $language][0].value\n      },\n      "isOrderBtnVisible": orderContent.isOrderBtnVisible,\n      "mainContent": mainContent[]{\n        layoutType,\n        "mainContentTitle":mainContentTitle[_key == $language][0].value,\n        "mainContentTopText": mainContentTopText[_key == $language][0].value, \n        "mainContentText": mainContentText[]{\n          "contentBlockTitle": contentBlockTitle[_key == $language][0].value,\n          "contentBlockText": contentBlockText[_key == $language][0].value,\n        },\n      \n  }}': CurrentFaqQueryResult
     '\n  *[_type == "settings"][0]{\n  notFoundPage {"goToHomeButtonName":goToHomeButton.buttonName[_key == $language][0].value,  "buttonPageLink":select(goToHomeButton.buttonLink == "internal" => goToHomeButton.linkInternal.reference->pageSlug.current,\n     goToHomeButton.buttonLink == "external" => goToHomeButton.linkExternal.url\n    ),\n    "titleNotFound":title[_key == $language][0].value,\n    "descriptionNotFound":description[_key == $language][0].value},\n\n  header {"socialLinks": socialLinks[]{platform, "url":url.url, "newWindow":url.newWindow},\n  "navigationMenu": navigationMenu[]{\n  linkInternal,\n  "titleMenu":title[_key == $language][0].value\n  }},\n   buttonJoinUS {"buttonName":buttonName[_key == $language][0].value,\n      "buttonPageLink":select(buttonLink == "internal" => linkInternal.reference->pageSlug.current,\n     buttonLink == "external" => linkExternal.url\n    ),\n     "newWindow":select(buttonLink == "external" =>linkExternal.newWindow,\n                        buttonLink == "internal" => false)},\n    buttonOrder {..., "buttonName":buttonName[_key == $language][0].value},\n    buttonBuyMeCoffee {..., "buttonName":buttonName[_key == $language][0].value}\n  }\n': SettingsQueryResult
     '\n*[_type == "settings"][0]\n{\n    "title": footer.title[_key == $language][0].value,\n      "rightsReserved": footer.rightsReserved[_key == $language][0].value,\n      "privacyPolicyTitle": footer.privacyPolicy.title[_key == $language][0].value,\n      "privacyPolicyURL": footer.privacyPolicy.url[$language][0].url,\n      "privacyPolicyNewWindow": footer.privacyPolicy.url[$language][0].newWindow,\n       "navigationMenu": footer.navigationMenu[]{\n      linkInternal,\n      "titleMenu":title[_key == $language][0].value\n    }\n          }': FooterQueryResult
   }

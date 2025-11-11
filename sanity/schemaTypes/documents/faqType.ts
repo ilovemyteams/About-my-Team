@@ -214,12 +214,19 @@ export const faqType = defineField({
           type: 'imageType',
           validation: (rule) => rule.required(),
         }),
+
         defineField({
           name: 'orderText',
           title: 'Текст',
 
-          type: 'internationalizedArrayText',
+          type: 'internationalizedArrayPortableTextSimple',
           validation: (rule) => rule.custom(validateIsRequired),
+        }),
+        defineField({
+          name: 'isOrderBtnVisible',
+          title: 'Чи потрібна кнопка Замовити?',
+          type: 'boolean',
+          initialValue: true,
         }),
       ],
       validation: (rule) => rule.required(),

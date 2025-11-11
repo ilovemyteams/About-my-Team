@@ -27,7 +27,6 @@ export type LongAnswerListType = {
     title?: string;
     text?: string;
     data: LongAnswerListTypeItem[];
-    summary?: string;
 };
 
 export type QAItemLocalizationTextType = {

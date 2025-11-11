@@ -1,24 +1,24 @@
-import { CurrentFaqQueryResult } from "@/sanity/types";
+import { CurrentFaqQueryResult, PortableTextSimple } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { SanityImage } from "../shared/SanityImage";
-import { HighlightText } from "../shared/Search/HighlightText";
 import { WriteUs } from "../shared/WriteUs/WriteUs";
+import { LayoutPortableTextBlock } from "./shared/LayoutPortableTextBlock";
 
 interface OrderCardProps {
     image: NonNullable<CurrentFaqQueryResult>["orderImage"];
-    orderText: string;
-
+    orderText: PortableTextSimple | null;
+    isOrderBtnVisible: boolean | null;
     searchTerm: string;
 }
 
 export const OrderCard = ({
     image,
     orderText,
-
+    isOrderBtnVisible,
     searchTerm,
 }: OrderCardProps) => {
-    const splitedOrderText = orderText.split("/n");
+    // const splitedOrderText = orderText.split("/n");
     return (
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
             <SanityImage
@@ -33,7 +33,11 @@ export const OrderCard = ({
             <div className="flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
                 {orderText && (
                     <div className="flex flex-col gap-6 pc:gap-10">
-                        {splitedOrderText.map((text, index) => (
+                        <LayoutPortableTextBlock
+                            searchTerm={searchTerm}
+                            value={orderText}
+                        />
+                        {/* {splitedOrderText.map((text, index) => (
                             <p
                                 key={index}
                                 className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
@@ -43,13 +47,15 @@ export const OrderCard = ({
                                     toBeHighlighted={searchTerm}
                                 />
                             </p>
-                        ))}
+                        ))} */}
                     </div>
                 )}
 
-                <div className="mx-auto tab:ml-0 tab:mr-auto">
-                    <WriteUs />
-                </div>
+                {isOrderBtnVisible && (
+                    <div className="mx-auto tab:ml-0 tab:mr-auto">
+                        <WriteUs />
+                    </div>
+                )}
             </div>
         </PageSection>
     );

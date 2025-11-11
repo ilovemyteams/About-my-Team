@@ -953,11 +953,15 @@
                     "of": [
                       {
                         "type": "string",
+                        "value": "normal"
+                      },
+                      {
+                        "type": "string",
                         "value": "small"
                       },
                       {
                         "type": "string",
-                        "value": "normal"
+                        "value": "medium"
                       },
                       {
                         "type": "string",
@@ -979,6 +983,10 @@
                       {
                         "type": "string",
                         "value": "bullet"
+                      },
+                      {
+                        "type": "string",
+                        "value": "bulletWithMargin"
                       },
                       {
                         "type": "string",
@@ -1262,11 +1270,15 @@
                     "of": [
                       {
                         "type": "string",
+                        "value": "normal"
+                      },
+                      {
+                        "type": "string",
                         "value": "small"
                       },
                       {
                         "type": "string",
-                        "value": "normal"
+                        "value": "medium"
                       },
                       {
                         "type": "string",
@@ -1288,6 +1300,10 @@
                       {
                         "type": "string",
                         "value": "bullet"
+                      },
+                      {
+                        "type": "string",
+                        "value": "bulletWithMargin"
                       },
                       {
                         "type": "string",
@@ -1589,11 +1605,15 @@
               "of": [
                 {
                   "type": "string",
+                  "value": "normal"
+                },
+                {
+                  "type": "string",
                   "value": "small"
                 },
                 {
                   "type": "string",
-                  "value": "normal"
+                  "value": "medium"
                 },
                 {
                   "type": "string",
@@ -1615,6 +1635,10 @@
                 {
                   "type": "string",
                   "value": "bullet"
+                },
+                {
+                  "type": "string",
+                  "value": "bulletWithMargin"
                 },
                 {
                   "type": "string",
@@ -3893,9 +3917,16 @@
                   },
                   "rest": {
                     "type": "inline",
-                    "name": "internationalizedArrayTextValue"
+                    "name": "internationalizedArrayPortableTextSimpleValue"
                   }
                 }
+              },
+              "optional": true
+            },
+            "isOrderBtnVisible": {
+              "type": "objectAttribute",
+              "value": {
+                "type": "boolean"
               },
               "optional": true
             }

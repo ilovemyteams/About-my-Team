@@ -36,7 +36,8 @@ export const currentFaqQuery = defineQuery(
         "url": orderContent.image.image.asset->url, 
         "lqip": orderContent.image.image.asset -> metadata.lqip,
         "caption": orderContent.image.caption[_key == $language][0].value
-      }, 
+      },
+      "isOrderBtnVisible": orderContent.isOrderBtnVisible,
       "mainContent": mainContent[]{
         layoutType,
         "mainContentTitle":mainContentTitle[_key == $language][0].value,

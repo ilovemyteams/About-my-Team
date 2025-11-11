@@ -3,6 +3,9 @@ import { Fragment } from "react";
 import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
+import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
+import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
+import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
@@ -41,27 +44,32 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                                 topText={mainContentTopText}
                             />
                         )}
-                        {/* {item.layout === 3 && (
+                        {layoutType === "list" && (
                             <DescriptionListContent
-                                content={item.data}
-                                title={item.title}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
-                                text={item.text}
-                                summary={item.summary}
+                                topText={mainContentTopText}
                             />
-                        )} */}
-                        {/* {item.layout === 4 && (
+                        )}
+                        {layoutType === "decorationList" && (
                             <MarkedListContent
-                                content={item}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
+                                topText={mainContentTopText}
                             />
-                        )} */}
-                        {/* {item.layout === 5 && (
+                        )}
+
+                        {layoutType === "textWithArrow" && (
                             <ArrowedBlockContent
-                                content={item}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
+                                topText={mainContentTopText}
                             />
-                        )} */}
+                        )}
+
                         {/* {item.layout === 6 && (
                             <MarkedListWithTitle
                                 content={item}

@@ -32,6 +32,7 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
         orderText,
         likes,
         mainContent,
+        isOrderBtnVisible,
         _id: docId,
     } = question;
 
@@ -58,23 +59,11 @@ export const Question = async ({ question, searchTerm }: QuestionPageProps) => {
                     image={orderImage}
                     orderText={orderText}
                     searchTerm={searchTerm}
+                    isOrderBtnVisible={isOrderBtnVisible}
                 />
             )}
             <HelpfullAnswerSection questionLikes={likes || []} docId={docId} />
             <CtaSectionAskUs />
-            {/* {fullAnswerContent ? (
-                <>
-                    <MainContent
-                        content={fullAnswerContent}
-                        searchTerm={searchTerm}
-                    />
-
-                    
-                   
-                </>
-            ) : (
-                <UnderConstruction />
-            )} */}
         </>
     );
 };
