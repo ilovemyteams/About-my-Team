@@ -8,6 +8,14 @@ import { QaSection } from "@/src/components/mainPage/qAsection/QaSection";
 import { ReleaseSection } from "@/src/components/mainPage/releaseSection/ReleaseSection";
 import { ServicesSection } from "@/src/components/mainPage/servicesSection/ServicesSection";
 import { StagesSection } from "@/src/components/mainPage/stagesSection/StagesSection";
+import { generatePageMetadata } from "@/src/utils/generateMetaData";
+
+export async function generateMetadata() {
+    return generatePageMetadata({
+        namespace: "Home",
+        canonical: "/",
+    });
+}
 
 export default function Home() {
     return (
