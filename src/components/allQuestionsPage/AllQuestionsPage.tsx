@@ -25,6 +25,7 @@ export const AllQuestionsPage = ({
 
     const isPaginationNeeded = totalPages > 1;
     const isCTAVisible = pageNumber === totalPages;
+
     return (
         <>
             <HeaderFAQ itemsQuantity={itemsQuantity} searchTerm={searchTerm} />

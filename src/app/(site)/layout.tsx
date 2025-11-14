@@ -1,10 +1,14 @@
 import "./globals.css";
 
 import localFont from "next/font/local";
+import { draftMode } from "next/headers";
+import { VisualEditing } from "next-sanity/visual-editing";
 import React from "react";
 
 import { BackgroundImages } from "@/src/components/backgroundImages/BackgroundImages";
 import { ConditionalGTM } from "@/src/components/cookies/ConditionalGTM";
+import { DisableDraftMode } from "@/src/components/shared/Sanity/DisabledDraftMode";
+import { SanityLive } from "@/src/sanity/lib/live";
 
 import { Providers } from "./providers";
 
@@ -63,6 +67,13 @@ export default async function LocaleLayout({
                 <Providers>
                     <BackgroundImages />
                     {children}
+                    <SanityLive />
+                    {(await draftMode()).isEnabled && (
+                        <>
+                            <DisableDraftMode />
+                            <VisualEditing />
+                        </>
+                    )}
                 </Providers>
             </body>
         </html>

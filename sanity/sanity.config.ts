@@ -6,6 +6,7 @@ import {colorInput} from '@sanity/color-input'
 import {documentInternationalization} from '@sanity/document-internationalization'
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
+import {presentationTool} from 'sanity/presentation'
 import {structureTool} from 'sanity/structure'
 import {internationalizedArray} from 'sanity-plugin-internationalized-array'
 import {media, mediaAssetSource} from 'sanity-plugin-media'
@@ -15,8 +16,11 @@ import {SetEstimateTimeAndPublishAction} from './actions/SetEstimateTimeAndPubli
 import {SUPPORTED_LANGUAGES} from './constants'
 import {apiVersion, dataset, projectId} from './lib/env'
 import {singletonPlugin} from './plugins/settings'
+import {resolve} from './presentation/resolve'
 import {schema} from './schemaTypes'
 import {singletonPagesType, structure} from './structure'
+
+const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
 
 export default defineConfig({
   projectId,
@@ -42,6 +46,15 @@ export default defineConfig({
       fieldTypes: ['string', 'text', 'portableText', 'portableTextSimple', 'portableColorTitle'],
     }),
     singletonPlugin(singletonPagesType),
+    presentationTool({
+      resolve,
+      previewUrl: {
+        origin: SANITY_STUDIO_PREVIEW_URL,
+        previewMode: {
+          enable: '/api/draft-mode/enable',
+        },
+      },
+    }),
   ],
   form: {
     file: {

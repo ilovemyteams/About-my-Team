@@ -123,7 +123,6 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
                 <ul className={`list-disc`}>{children}</ul>
             ),
             bulletWithMargin: ({ children }) => {
-                console.log(children);
                 return <ul className={`list-disc ml-12`}>{children}</ul>;
             },
             // number: ({ children }) => <Ol>{children}</Ol>,
