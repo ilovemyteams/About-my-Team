@@ -20,7 +20,12 @@ import {resolve} from './presentation/resolve'
 import {schema} from './schemaTypes'
 import {singletonPagesType, structure} from './structure'
 
-const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
+const SANITY_STUDIO_PREVIEW_URL =
+  (process.env.NODE_ENV === 'development'
+    ? process.env.SANITY_STUDIO_PREVIEW_URL_DEV
+    : process.env.SANITY_STUDIO_PREVIEW_URL) || 'http://localhost:3000'
+
+console.log(process.env.NODE_ENV === 'development')
 
 export default defineConfig({
   projectId,

@@ -70,8 +70,8 @@ export default async function LocaleLayout({
                     <SanityLive />
                     {(await draftMode()).isEnabled && (
                         <>
-                            <DisableDraftMode />
                             <VisualEditing />
+                            <DisableDraftMode />
                         </>
                     )}
                 </Providers>

@@ -1,12 +1,11 @@
-import {Text} from '@sanity/ui'
 import {LuPencilRuler} from 'react-icons/lu'
 import {BlockStyleProps} from 'sanity'
 
 export const BlockSubtitleWithMark = (props: BlockStyleProps) => {
   return (
-    <Text size={3} weight="semibold">
+    <span style={{fontWeight: 700}}>
       <LuPencilRuler style={{marginRight: '4px'}} />
       {props.children}
-    </Text>
+    </span>
   )
 }

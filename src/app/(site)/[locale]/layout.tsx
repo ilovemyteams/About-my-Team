@@ -1,3 +1,4 @@
+import { draftMode } from "next/headers";
 import { NextIntlClientProvider } from "next-intl";
 import React from "react";
 
@@ -15,6 +16,8 @@ export default async function Layout({
     children: React.ReactNode;
     modal: React.ReactNode;
 }>) {
+    const isDraftMode = (await draftMode()).isEnabled;
+
     return (
         <NextIntlClientProvider>
             <PreviousURLProvider>
@@ -24,15 +27,13 @@ export default async function Layout({
                         <div className="pt-[80px] pc:pt-[0px] pc:ml-[80px] deskxl:ml-[120px] ">
                             <BackgroundFigures />
                             {modal}
-
                             {children}
                         </div>
                     </main>
                     <Footer />
                 </div>
                 <ScrollToTopButton />
-                <CookiesComponent />
-                {children}
+                {!isDraftMode && <CookiesComponent />}
             </PreviousURLProvider>
         </NextIntlClientProvider>
     );

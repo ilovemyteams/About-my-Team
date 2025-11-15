@@ -1,8 +1,4 @@
-import {
-    PortableText,
-    PortableTextBlock,
-    PortableTextComponents,
-} from "next-sanity";
+import { PortableText, PortableTextComponents } from "next-sanity";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -16,65 +12,27 @@ interface LayoutPortableTextBlockProps {
     searchTerm: string;
 }
 
-const applyAdditionalMarginsStyles = (value: PortableTextBlock) => {
-    const isMarginLeftApply = value.children.find(item =>
-        item.marks.includes("marginLeft")
-    );
-
-    const isMarginBottomSmApply = value.children.find(item =>
-        item.marks.includes("marginBottomSm")
-    );
-
-    const isMarginBottomMdApply = value.children.find(item =>
-        item.marks.includes("marginBottomMd")
-    );
-
-    return twMerge(
-        isMarginLeftApply ? "ml-12" : "",
-        isMarginBottomSmApply ? "mb-6" : "",
-        isMarginBottomMdApply ? "mb-12" : ""
-    );
-};
+const styleForNormalText =
+    "text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34";
 
 const extractComponents = (searchTerm: string): PortableTextComponents => {
     return {
         block: {
-            small: ({ children, value }) => {
-                const marginStyles = applyAdditionalMarginsStyles(value);
-
+            normal: ({ children }) => {
                 return (
-                    <p
-                        className={twMerge(
-                            "text-sm20 tab:text-base23 desk:text-lg25",
-                            marginStyles
-                        )}
-                    >
+                    <p className={twMerge(styleForNormalText)}>{children}</p>
+                );
+            },
+            marginBottomSm: ({ children }) => {
+                return (
+                    <p className={twMerge(styleForNormalText, "mb-6")}>
                         {children}
                     </p>
                 );
             },
-            medium: ({ children, value }) => {
-                const marginStyles = applyAdditionalMarginsStyles(value);
+            marginBottomMd: ({ children }) => {
                 return (
-                    <p
-                        className={twMerge(
-                            "text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34",
-                            marginStyles
-                        )}
-                    >
-                        {children}
-                    </p>
-                );
-            },
-            normal: ({ children, value }) => {
-                const marginStyles = applyAdditionalMarginsStyles(value);
-                return (
-                    <p
-                        className={twMerge(
-                            "text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34",
-                            marginStyles
-                        )}
-                    >
+                    <p className={twMerge(styleForNormalText, "mb-12")}>
                         {children}
                     </p>
                 );
@@ -82,9 +40,9 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
 
             markered: ({ value }) => {
                 const { children } = value;
-                const marginStyles = applyAdditionalMarginsStyles(value);
+
                 return (
-                    <div className={twMerge(" flex gap-2 mb-3", marginStyles)}>
+                    <div className={twMerge(" flex gap-2 mb-3")}>
                         <div
                             className={` w-[20px] h-[20px] shrink-0 bg-[url('/images/pencil&ruler.svg')] bg-no-repeat bg-contain bg-center`}
                         ></div>
@@ -102,12 +60,11 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
             },
             subtitle: ({ value }) => {
                 const { children } = value;
-                const marginStyles = applyAdditionalMarginsStyles(value);
+
                 return (
                     <h4
                         className={twMerge(
-                            `font-caviar text-purple-200 dark:text-white-200 text-lg desk:text-xl`,
-                            marginStyles
+                            `font-caviar text-purple-200 dark:text-white-200 text-lg desk:text-xl`
                         )}
                     >
                         <HighlightText
@@ -120,12 +77,20 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
         },
         list: {
             bullet: ({ children }) => (
-                <ul className={`list-disc`}>{children}</ul>
+                <ul className={`list-disc ml-6`}>{children}</ul>
             ),
             bulletWithMargin: ({ children }) => {
                 return <ul className={`list-disc ml-12`}>{children}</ul>;
             },
             // number: ({ children }) => <Ol>{children}</Ol>,
+        },
+        listItem: {
+            bullet: ({ children }) => (
+                <li className={styleForNormalText}>{children}</li>
+            ),
+            bulletWithMargin: ({ children }) => {
+                return <li className={styleForNormalText}>{children}</li>;
+            },
         },
         marks: {
             linkInternal: ({ text, value: { reference, newWindow } }) => {
@@ -174,20 +139,54 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
                     </a>
                 );
             },
-            caviar: props => {
+            subtitle: props => {
                 return (
-                    <span className="font-caviar font-bold mr-2">
+                    <h4 className="font-caviar inline text-purple-200 dark:text-white-200 font-semibold">
+                        {props.children}
+                    </h4>
+                );
+            },
+            subtitleWithIcon: props => {
+                return (
+                    <div className={twMerge("inline-flex gap-2")}>
+                        <div
+                            className={` w-[20px] h-[20px] shrink-0 bg-[url('/images/pencil&ruler.svg')] bg-no-repeat bg-contain bg-center`}
+                        ></div>
+
+                        <h4
+                            className={`font-caviar text-purple-200 dark:text-white-200 text-lg desk:text-xl`}
+                        >
+                            {props.children}
+                        </h4>
+                    </div>
+                );
+            },
+            small: props => {
+                return (
+                    <span
+                        className={twMerge(
+                            "text-sm20 tab:text-base23 desk:text-lg25"
+                        )}
+                    >
                         {props.children}
                     </span>
                 );
             },
-            marginBottomSm: props => {
-                return props.children;
-            },
-            marginBottomMd: props => {
-                return props.children;
+            large: props => {
+                return (
+                    <span className={twMerge("text-lg desk:text-xl")}>
+                        {props.children}
+                    </span>
+                );
             },
         },
+        types: {
+            span: props => {
+                console.log(props);
+                return <span className="text-purple">span</span>;
+            },
+        },
+        hardBreak: false,
     };
 };
 
