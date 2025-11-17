@@ -14,7 +14,7 @@ export const TableContentItem = ({
     const { contentBlockText, contentBlockTitle } = content;
 
     return (
-        <div className="pt-6">
+        <div className="py-6">
             <div className="mb-6 pc:mb-[80px] flex gap-2">
                 {contentBlockTitle && (
                     <>

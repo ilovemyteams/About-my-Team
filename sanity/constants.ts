@@ -121,3 +121,26 @@ export const GENDER_OPTIONS = [
   {title: 'Male', value: 'male'},
   {title: 'Unknown', value: 'unknown'},
 ]
+
+export const marginsForBlockType = [
+  {
+    value: 'none',
+    title: 'Нульовий',
+    margin: 0,
+  },
+  {
+    value: 'sm',
+    title: 'Маленький (12рх)',
+    margin: 2,
+  },
+  {
+    value: 'md',
+    title: 'Середній (24рх)',
+    margin: 3,
+  },
+  {
+    value: 'lg',
+    title: 'Великий (48рх)',
+    margin: 4,
+  },
+]

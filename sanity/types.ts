@@ -13,715 +13,6 @@
  */
 
 // Source: schema.json
-export type MenuItem = {
-  _type: 'menuItem'
-  title?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  linkInternal?: string
-}
-
-export type Stage = {
-  _type: 'stage'
-  title?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  description?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-}
-
-export type AnchorLink = {
-  _type: 'anchorLink'
-  subtitle?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  anchorId?: Slug
-}
-
-export type AboutUsItem = {
-  _type: 'aboutUsItem'
-  aboutUs?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-}
-
-export type SocialLinks = {
-  _type: 'socialLinks'
-  platform?:
-    | 'linkedin'
-    | 'telegram'
-    | 'github'
-    | 'behance'
-    | 'googleDrive'
-    | 'whatsapp'
-    | 'youtube'
-    | 'pinterest'
-    | 'email'
-    | 'facebook'
-    | 'instagram'
-    | 'twitter'
-  url?: LinkExternal
-}
-
-export type Milestone = {
-  _type: 'milestone'
-  title?: string
-  description?: string
-  image?: {
-    asset?: {
-      _ref: string
-      _type: 'reference'
-      _weak?: boolean
-      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-    }
-    media?: unknown
-    hotspot?: SanityImageHotspot
-    crop?: SanityImageCrop
-    _type: 'image'
-  }
-  tags?: Array<string>
-  duration?: Duration
-}
-
-export type Duration = {
-  _type: 'duration'
-  start?: string
-  end?: string
-}
-
-export type Timeline = {
-  _type: 'timeline'
-  items?: Array<{
-    title?: string
-    milestones?: Array<
-      {
-        _key: string
-      } & Milestone
-    >
-    _type: 'item'
-    _key: string
-  }>
-}
-
-export type Instagram = {
-  _type: 'instagram'
-  url?: string
-}
-
-export type ImageFeature = {
-  _type: 'imageFeature'
-  image?: {
-    asset?: {
-      _ref: string
-      _type: 'reference'
-      _weak?: boolean
-      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-    }
-    media?: unknown
-    hotspot?: SanityImageHotspot
-    crop?: SanityImageCrop
-    _type: 'image'
-  }
-  variant?: string | 'caption' | 'callToAction'
-  caption?: string
-  callToAction?: ImageCallToAction
-}
-
-export type Images = {
-  _type: 'images'
-  imageFeatures?: Array<
-    {
-      _key: string
-    } & ImageFeature
-  >
-  fullWidth?: boolean
-  verticalAlign?: 'top' | 'center' | 'bottom'
-}
-
-export type ImageCallToAction = {
-  _type: 'imageCallToAction'
-  title?: string
-  link?: Array<
-    | ({
-        _key: string
-      } & LinkInternal)
-    | ({
-        _key: string
-      } & LinkExternal)
-  >
-}
-
-export type Grid = {
-  _type: 'grid'
-  items?: Array<
-    {
-      _key: string
-    } & GridItem
-  >
-}
-
-export type GridItem = {
-  _type: 'gridItem'
-  title?: string
-  image?: {
-    asset?: {
-      _ref: string
-      _type: 'reference'
-      _weak?: boolean
-      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-    }
-    media?: unknown
-    hotspot?: SanityImageHotspot
-    crop?: SanityImageCrop
-    _type: 'image'
-  }
-  body?: Array<{
-    children?: Array<{
-      marks?: Array<string>
-      text?: string
-      _type: 'span'
-      _key: string
-    }>
-    style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
-    listItem?: 'bullet' | 'bulletWithMargin' | 'number'
-    markDefs?: Array<
-      | ({
-          _key: string
-        } & LinkEmail)
-      | ({
-          _key: string
-        } & LinkInternal)
-      | ({
-          _key: string
-        } & LinkExternal)
-    >
-    level?: number
-    _type: 'block'
-    _key: string
-  }>
-}
-
-export type Callout = {
-  _type: 'callout'
-  text?: string
-  link?: Array<
-    | ({
-        _key: string
-      } & LinkInternal)
-    | ({
-        _key: string
-      } & LinkExternal)
-  >
-}
-
-export type Accordion = {
-  _type: 'accordion'
-  groups?: Array<
-    {
-      _key: string
-    } & AccordionGroup
-  >
-}
-
-export type AccordionGroup = {
-  _type: 'accordionGroup'
-  title?: string
-  body?: Array<{
-    children?: Array<{
-      marks?: Array<string>
-      text?: string
-      _type: 'span'
-      _key: string
-    }>
-    style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
-    listItem?: 'bullet' | 'bulletWithMargin' | 'number'
-    markDefs?: Array<
-      | ({
-          _key: string
-        } & LinkEmail)
-      | ({
-          _key: string
-        } & LinkInternal)
-      | ({
-          _key: string
-        } & LinkExternal)
-    >
-    level?: number
-    _type: 'block'
-    _key: string
-  }>
-}
-
-export type PortableColorTitle = Array<{
-  children?: Array<{
-    marks?: Array<string>
-    text?: string
-    _type: 'span'
-    _key: string
-  }>
-  style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
-  listItem?: never
-  markDefs?: null
-  level?: number
-  _type: 'block'
-  _key: string
-}>
-
-export type PortableTextSimple = Array<{
-  children?: Array<{
-    marks?: Array<string>
-    text?: string
-    _type: 'span'
-    _key: string
-  }>
-  style?: 'normal' | 'small' | 'medium' | 'subtitle' | 'markered'
-  listItem?: 'bullet' | 'bulletWithMargin' | 'number'
-  markDefs?: Array<
-    | ({
-        _key: string
-      } & LinkEmail)
-    | ({
-        _key: string
-      } & LinkInternal)
-    | ({
-        _key: string
-      } & LinkExternal)
-  >
-  level?: number
-  _type: 'block'
-  _key: string
-}>
-
-export type PortableText = Array<
-  | {
-      children?: Array<{
-        marks?: Array<string>
-        text?: string
-        _type: 'span'
-        _key: string
-      }>
-      style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
-      listItem?: 'bullet' | 'number'
-      markDefs?: Array<
-        | ({
-            _key: string
-          } & LinkEmail)
-        | ({
-            _key: string
-          } & LinkInternal)
-        | ({
-            _key: string
-          } & LinkExternal)
-      >
-      level?: number
-      _type: 'block'
-      _key: string
-    }
-  | ({
-      _key: string
-    } & Accordion)
-  | ({
-      _key: string
-    } & Callout)
-  | ({
-      _key: string
-    } & Grid)
-  | ({
-      _key: string
-    } & Images)
-  | ({
-      _key: string
-    } & Instagram)
->
-
-export type Tool = {
-  _id: string
-  _type: 'tool'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: string
-}
-
-export type Service = {
-  _id: string
-  _type: 'service'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  description?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-}
-
-export type Review = {
-  _id: string
-  _type: 'review'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  project?: {
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    [internalGroqTypeReferenceTo]?: 'project'
-  }
-  reviewer?: Array<
-    | {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        _key: string
-        [internalGroqTypeReferenceTo]?: 'customer'
-      }
-    | {
-        name?: Array<
-          {
-            _key: string
-          } & InternationalizedArrayStringValue
-        >
-        position?: Array<
-          {
-            _key: string
-          } & InternationalizedArrayStringValue
-        >
-        _key: string
-      }
-  >
-  image?: {
-    image?: {
-      asset?: {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-      }
-      media?: unknown
-      hotspot?: SanityImageHotspot
-      crop?: SanityImageCrop
-      _type: 'image'
-    }
-    caption?: Array<
-      {
-        _key: string
-      } & InternationalizedArrayStringValue
-    >
-  }
-  reviewText?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  reviewUrl?: LinkExternal
-}
-
-export type Customer = {
-  _id: string
-  _type: 'customer'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  name?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  position?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  phoneNumber?: Array<string>
-  socialLinks?: Array<
-    {
-      _key: string
-    } & SocialLinks
-  >
-  gender?: 'female' | 'male' | 'unknown'
-  country?: string
-  comment?: string
-}
-
-export type Project = {
-  _id: string
-  _type: 'project'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  description?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  customers?: Array<{
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    _key: string
-    [internalGroqTypeReferenceTo]?: 'customer'
-  }>
-  startDate?: string
-  endDate?: string
-  category?: {
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    [internalGroqTypeReferenceTo]?: 'siteCategory'
-  }
-  status?: 'recruitingTeam' | 'development' | 'completed'
-  teamMembers?: Array<{
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    _key: string
-    [internalGroqTypeReferenceTo]?: 'team'
-  }>
-  URL?: LinkExternal
-  image?: {
-    image?: {
-      asset?: {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-      }
-      media?: unknown
-      hotspot?: SanityImageHotspot
-      crop?: SanityImageCrop
-      _type: 'image'
-    }
-    caption?: Array<
-      {
-        _key: string
-      } & InternationalizedArrayStringValue
-    >
-  }
-  stages?: Array<string>
-}
-
-export type SiteCategory = {
-  _id: string
-  _type: 'siteCategory'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  categoryName?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-}
-
-export type Team = {
-  _id: string
-  _type: 'team'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  name?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  role?: {
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    [internalGroqTypeReferenceTo]?: 'specialist'
-  }
-  price?: number
-  isAvaliblePerson?: 'Show price' | 'Do not show price'
-  about?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  services?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  projects?: Array<
-    | ({
-        _key: string
-      } & LinkExternal)
-    | {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        _key: string
-        [internalGroqTypeReferenceTo]?: 'project'
-      }
-  >
-  photo?: {
-    asset?: {
-      _ref: string
-      _type: 'reference'
-      _weak?: boolean
-      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-    }
-    media?: unknown
-    hotspot?: SanityImageHotspot
-    crop?: SanityImageCrop
-    _type: 'image'
-  }
-  socialLinks?: Array<
-    {
-      _key: string
-    } & SocialLinks
-  >
-  tools?: Array<{
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    _key: string
-    [internalGroqTypeReferenceTo]?: 'tool'
-  }>
-}
-
-export type Specialist = {
-  _id: string
-  _type: 'specialist'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: string
-  category?: {
-    _ref: string
-    _type: 'reference'
-    _weak?: boolean
-    [internalGroqTypeReferenceTo]?: 'specialistCategory'
-  }
-}
-
-export type SpecialistCategory = {
-  _id: string
-  _type: 'specialistCategory'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  title?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-}
-
-export type LinkInternal = {
-  _type: 'linkInternal'
-  reference?: string
-  newWindow?: boolean
-}
-
-export type LinkExternal = {
-  _type: 'linkExternal'
-  url?: string
-  newWindow?: boolean
-}
-
-export type LinkEmail = {
-  _type: 'linkEmail'
-  email?: string
-}
-
-export type Faq = {
-  _id: string
-  _type: 'faq'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  question?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
-  pageSlug?: Slug
-  shortAnswer?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  additionalTextShortAnswer?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayTextValue
-  >
-  image?: ImageType
-  mainContent?: Array<{
-    layoutType?:
-      | 'numberedList'
-      | 'table'
-      | 'list'
-      | 'decorationList'
-      | 'textWithArrow'
-      | 'redBulletTextWithArrow'
-      | 'gorizontalList'
-      | 'tableWithLines'
-    mainContentTitle?: Array<
-      {
-        _key: string
-      } & InternationalizedArrayStringValue
-    >
-    isTopTextNeeded?: boolean
-    mainContentTopText?: Array<
-      {
-        _key: string
-      } & InternationalizedArrayTextValue
-    >
-    mainContentText?: Array<{
-      contentBlockTitle?: Array<
-        {
-          _key: string
-        } & InternationalizedArrayStringValue
-      >
-      contentBlockText?: Array<
-        {
-          _key: string
-        } & InternationalizedArrayPortableTextSimpleValue
-      >
-      _type: 'contentBlock'
-      _key: string
-    }>
-    _type: 'mainBlock'
-    _key: string
-  }>
-  orderContent?: {
-    image?: ImageType
-    orderText?: Array<
-      {
-        _key: string
-      } & InternationalizedArrayPortableTextSimpleValue
-    >
-    isOrderBtnVisible?: boolean
-  }
-  likedUserList?: Array<string>
-  likes?: number
-  estimateReadTime?: number
-}
-
 export type ImageType = {
   _type: 'imageType'
   image?: {
@@ -736,221 +27,13 @@ export type ImageType = {
     crop?: SanityImageCrop
     _type: 'image'
   }
-  caption?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayStringValue
-  >
+  caption?: InternationalizedArrayString
 }
 
-export type InternationalizedArrayPortableColorTitleValue = {
-  _type: 'internationalizedArrayPortableColorTitleValue'
-  value?: PortableColorTitle
-}
-
-export type InternationalizedArrayPortableTextSimpleValue = {
-  _type: 'internationalizedArrayPortableTextSimpleValue'
-  value?: PortableTextSimple
-}
-
-export type InternationalizedArrayPortableTextValue = {
-  _type: 'internationalizedArrayPortableTextValue'
-  value?: PortableText
-}
-
-export type InternationalizedArrayTextValue = {
-  _type: 'internationalizedArrayTextValue'
-  value?: string
-}
-
-export type InternationalizedArrayStringValue = {
-  _type: 'internationalizedArrayStringValue'
-  value?: string
-}
-
-export type InternationalizedArrayPortableColorTitle = Array<
-  {
-    _key: string
-  } & InternationalizedArrayPortableColorTitleValue
->
-
-export type InternationalizedArrayPortableTextSimple = Array<
-  {
-    _key: string
-  } & InternationalizedArrayPortableTextSimpleValue
->
-
-export type InternationalizedArrayPortableText = Array<
-  {
-    _key: string
-  } & InternationalizedArrayPortableTextValue
->
-
-export type InternationalizedArrayText = Array<
-  {
-    _key: string
-  } & InternationalizedArrayTextValue
->
-
-export type InternationalizedArrayString = Array<
-  {
-    _key: string
-  } & InternationalizedArrayStringValue
->
-
-export type TranslationMetadata = {
-  _id: string
-  _type: 'translation.metadata'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  translations?: Array<
-    {
-      _key: string
-    } & InternationalizedArrayReferenceValue
-  >
-  schemaTypes?: Array<string>
-}
-
-export type InternationalizedArrayReferenceValue = {
-  _type: 'internationalizedArrayReferenceValue'
-  value?:
-    | {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        [internalGroqTypeReferenceTo]?: 'home'
-      }
-    | {
-        _ref: string
-        _type: 'reference'
-        _weak?: boolean
-        [internalGroqTypeReferenceTo]?: 'settings'
-      }
-}
-
-export type Settings = {
-  _id: string
-  _type: 'settings'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  language?: string
-  header?: Header
-  footer?: Footer
-  notFoundPage?: NotFoundPage
-  seo?: Seo
-  buttonBuyMeCoffee?: Button
-  buttonJoinUS?: Button
-  buttonOrder?: Button
-}
-
-export type Button = {
-  _type: 'button'
-  buttonName?: InternationalizedArrayString
-  buttonLink?: 'noLink' | 'internal' | 'external'
-  linkInternal?: LinkInternal
-  linkExternal?: LinkExternal
-}
-
-export type Seo = {
-  _type: 'seo'
+export type MenuItem = {
+  _type: 'menuItem'
   title?: InternationalizedArrayString
-  description?: InternationalizedArrayString
-  image?: {
-    asset?: {
-      _ref: string
-      _type: 'reference'
-      _weak?: boolean
-      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
-    }
-    media?: unknown
-    hotspot?: SanityImageHotspot
-    crop?: SanityImageCrop
-    _type: 'image'
-  }
-}
-
-export type NotFoundPage = {
-  _type: 'notFoundPage'
-  title?: InternationalizedArrayString
-  description?: InternationalizedArrayText
-  goToHomeButton?: Button
-}
-
-export type Footer = {
-  _type: 'footer'
-  title?: InternationalizedArrayPortableColorTitle
-  navigationMenu?: Array<
-    {
-      _key: string
-    } & MenuItem
-  >
-  privacyPolicy?: {
-    title?: InternationalizedArrayString
-    url?: {
-      ua?: Array<
-        | ({
-            _key: string
-          } & LinkExternal)
-        | ({
-            _key: string
-          } & LinkInternal)
-      >
-      en?: Array<
-        | ({
-            _key: string
-          } & LinkExternal)
-        | ({
-            _key: string
-          } & LinkInternal)
-      >
-      pl?: Array<
-        | ({
-            _key: string
-          } & LinkExternal)
-        | ({
-            _key: string
-          } & LinkInternal)
-      >
-    }
-  }
-  rightsReserved?: InternationalizedArrayString
-}
-
-export type Header = {
-  _type: 'header'
-  navigationMenu?: Array<
-    {
-      _key: string
-    } & MenuItem
-  >
-  socialLinks?: Array<
-    {
-      _key: string
-    } & SocialLinks
-  >
-}
-
-export type Home = {
-  _id: string
-  _type: 'home'
-  _createdAt: string
-  _updatedAt: string
-  _rev: string
-  pageSlug?: Slug
-  hero?: HeroHome
-  aboutUsHomeSection?: AboutUsHomeSection
-  ctaSectionJoinUs?: CallToAction
-  portfolioHome?: PortfolioHome
-  reviewsHome?: ReviewsHome
-  ctaSectionWriteUs?: CallToAction
-  servicesHome?: ServicesHome
-  teamHome?: TeamHome
-  ctaSectionJoinUsSecond?: CallToAction
-  stagesHome?: StagesHome
-  faqHome?: FaqHome
-  ctaSectionOrder?: CallToAction
+  linkInternal?: string
 }
 
 export type FaqHome = {
@@ -964,6 +47,12 @@ export type FaqHome = {
     _key: string
     [internalGroqTypeReferenceTo]?: 'faq'
   }>
+}
+
+export type Stage = {
+  _type: 'stage'
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayText
 }
 
 export type StagesHome = {
@@ -1030,10 +119,10 @@ export type PortfolioHome = {
   }>
 }
 
-export type CallToAction = {
-  _type: 'callToAction'
-  title?: InternationalizedArrayString
-  description?: InternationalizedArrayPortableTextSimple
+export type AnchorLink = {
+  _type: 'anchorLink'
+  subtitle?: InternationalizedArrayString
+  anchorId?: Slug
 }
 
 export type AboutUsHomeSection = {
@@ -1048,6 +137,180 @@ export type AboutUsHomeSection = {
   learnMoreButton?: Button
 }
 
+export type AboutUsItem = {
+  _type: 'aboutUsItem'
+  aboutUs?: InternationalizedArrayString
+}
+
+export type Button = {
+  _type: 'button'
+  buttonName?: InternationalizedArrayString
+  buttonLink?: 'noLink' | 'internal' | 'external'
+  linkInternal?: LinkInternal
+  linkExternal?: LinkExternal
+}
+
+export type SocialLinks = {
+  _type: 'socialLinks'
+  platform?:
+    | 'linkedin'
+    | 'telegram'
+    | 'github'
+    | 'behance'
+    | 'googleDrive'
+    | 'whatsapp'
+    | 'youtube'
+    | 'pinterest'
+    | 'email'
+    | 'facebook'
+    | 'instagram'
+    | 'twitter'
+  url?: LinkExternal
+}
+
+export type Duration = {
+  _type: 'duration'
+  start?: string
+  end?: string
+}
+
+export type Milestone = {
+  _type: 'milestone'
+  title?: string
+  description?: string
+  image?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    _type: 'image'
+  }
+  tags?: Array<string>
+  duration?: Duration
+}
+
+export type Timeline = {
+  _type: 'timeline'
+  items?: Array<{
+    title?: string
+    milestones?: Array<
+      {
+        _key: string
+      } & Milestone
+    >
+    _type: 'item'
+    _key: string
+  }>
+}
+
+export type SanityImageCrop = {
+  _type: 'sanity.imageCrop'
+  top?: number
+  bottom?: number
+  left?: number
+  right?: number
+}
+
+export type SanityImageHotspot = {
+  _type: 'sanity.imageHotspot'
+  x?: number
+  y?: number
+  height?: number
+  width?: number
+}
+
+export type Seo = {
+  _type: 'seo'
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayString
+  image?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    _type: 'image'
+  }
+}
+
+export type NotFoundPage = {
+  _type: 'notFoundPage'
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayText
+  goToHomeButton?: Button
+}
+
+export type Header = {
+  _type: 'header'
+  navigationMenu?: Array<
+    {
+      _key: string
+    } & MenuItem
+  >
+  socialLinks?: Array<
+    {
+      _key: string
+    } & SocialLinks
+  >
+}
+
+export type Instagram = {
+  _type: 'instagram'
+  url?: string
+}
+
+export type ImageFeature = {
+  _type: 'imageFeature'
+  image?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    _type: 'image'
+  }
+  variant?: string | 'caption' | 'callToAction'
+  caption?: string
+  callToAction?: ImageCallToAction
+}
+
+export type Images = {
+  _type: 'images'
+  imageFeatures?: Array<
+    {
+      _key: string
+    } & ImageFeature
+  >
+  fullWidth?: boolean
+  verticalAlign?: 'top' | 'center' | 'bottom'
+}
+
+export type ImageCallToAction = {
+  _type: 'imageCallToAction'
+  title?: string
+  link?: Array<
+    | ({
+        _key: string
+      } & LinkInternal)
+    | ({
+        _key: string
+      } & LinkExternal)
+  >
+}
+
 export type HeroHome = {
   _type: 'heroHome'
   title?: InternationalizedArrayText
@@ -1060,11 +323,607 @@ export type HeroHome = {
   }>
 }
 
+export type Grid = {
+  _type: 'grid'
+  items?: Array<
+    {
+      _key: string
+    } & GridItem
+  >
+}
+
+export type GridItem = {
+  _type: 'gridItem'
+  title?: string
+  image?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    _type: 'image'
+  }
+  body?: PortableTextSimple
+}
+
+export type Footer = {
+  _type: 'footer'
+  title?: InternationalizedArrayPortableColorTitle
+  navigationMenu?: Array<
+    {
+      _key: string
+    } & MenuItem
+  >
+  privacyPolicy?: {
+    title?: InternationalizedArrayString
+    url?: {
+      ua?: Array<
+        | ({
+            _key: string
+          } & LinkExternal)
+        | ({
+            _key: string
+          } & LinkInternal)
+      >
+      en?: Array<
+        | ({
+            _key: string
+          } & LinkExternal)
+        | ({
+            _key: string
+          } & LinkInternal)
+      >
+      pl?: Array<
+        | ({
+            _key: string
+          } & LinkExternal)
+        | ({
+            _key: string
+          } & LinkInternal)
+      >
+    }
+  }
+  rightsReserved?: InternationalizedArrayString
+}
+
+export type CallToAction = {
+  _type: 'callToAction'
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayPortableTextSimple
+}
+
+export type Callout = {
+  _type: 'callout'
+  text?: string
+  link?: Array<
+    | ({
+        _key: string
+      } & LinkInternal)
+    | ({
+        _key: string
+      } & LinkExternal)
+  >
+}
+
+export type Accordion = {
+  _type: 'accordion'
+  groups?: Array<
+    {
+      _key: string
+    } & AccordionGroup
+  >
+}
+
+export type AccordionGroup = {
+  _type: 'accordionGroup'
+  title?: string
+  body?: PortableTextSimple
+}
+
+export type PortableColorTitle = Array<{
+  children?: Array<{
+    marks?: Array<string>
+    text?: string
+    _type: 'span'
+    _key: string
+  }>
+  style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
+  listItem?: never
+  markDefs?: null
+  level?: number
+  _type: 'block'
+  _key: string
+}>
+
+export type PortableTextSimple = Array<
+  | {
+      children?: Array<{
+        marks?: Array<string>
+        text?: string
+        _type: 'span'
+        _key: string
+      }>
+      style?: 'small' | 'normal' | 'subtitle' | 'subtitleWithIcon'
+      listItem?: 'bullet' | 'bulletWithMargin' | 'number'
+      markDefs?: Array<
+        | ({
+            _key: string
+          } & LinkEmail)
+        | ({
+            _key: string
+          } & LinkInternal)
+        | ({
+            _key: string
+          } & LinkExternal)
+      >
+      level?: number
+      _type: 'block'
+      _key: string
+    }
+  | {
+      marginValue?: 'none' | 'sm' | 'md' | 'lg'
+      _type: 'margins'
+      _key: string
+    }
+>
+
+export type PortableText = Array<
+  | {
+      children?: Array<{
+        marks?: Array<string>
+        text?: string
+        _type: 'span'
+        _key: string
+      }>
+      style?: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote'
+      listItem?: 'bullet' | 'number'
+      markDefs?: Array<
+        | ({
+            _key: string
+          } & LinkEmail)
+        | ({
+            _key: string
+          } & LinkInternal)
+        | ({
+            _key: string
+          } & LinkExternal)
+      >
+      level?: number
+      _type: 'block'
+      _key: string
+    }
+  | ({
+      _key: string
+    } & Accordion)
+  | ({
+      _key: string
+    } & Callout)
+  | ({
+      _key: string
+    } & Grid)
+  | ({
+      _key: string
+    } & Images)
+  | ({
+      _key: string
+    } & Instagram)
+>
+
+export type Tool = {
+  _id: string
+  _type: 'tool'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: string
+}
+
+export type Service = {
+  _id: string
+  _type: 'service'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayText
+}
+
+export type InternationalizedArrayText = Array<
+  {
+    _key: string
+  } & InternationalizedArrayTextValue
+>
+
+export type InternationalizedArrayString = Array<
+  {
+    _key: string
+  } & InternationalizedArrayStringValue
+>
+
+export type Review = {
+  _id: string
+  _type: 'review'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  project?: {
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    [internalGroqTypeReferenceTo]?: 'project'
+  }
+  reviewer?: Array<
+    | {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        _key: string
+        [internalGroqTypeReferenceTo]?: 'customer'
+      }
+    | {
+        name?: InternationalizedArrayString
+        position?: InternationalizedArrayString
+        _key: string
+      }
+  >
+  image?: {
+    image?: {
+      asset?: {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+      }
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      _type: 'image'
+    }
+    caption?: InternationalizedArrayString
+  }
+  reviewText?: InternationalizedArrayText
+  reviewUrl?: LinkExternal
+}
+
+export type LinkExternal = {
+  _type: 'linkExternal'
+  url?: string
+  newWindow?: boolean
+}
+
+export type Customer = {
+  _id: string
+  _type: 'customer'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  name?: InternationalizedArrayString
+  position?: InternationalizedArrayString
+  phoneNumber?: Array<string>
+  socialLinks?: Array<
+    {
+      _key: string
+    } & SocialLinks
+  >
+  gender?: 'female' | 'male' | 'unknown'
+  country?: string
+  comment?: string
+}
+
+export type Project = {
+  _id: string
+  _type: 'project'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: InternationalizedArrayString
+  description?: InternationalizedArrayText
+  customers?: Array<{
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    _key: string
+    [internalGroqTypeReferenceTo]?: 'customer'
+  }>
+  startDate?: string
+  endDate?: string
+  category?: {
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    [internalGroqTypeReferenceTo]?: 'siteCategory'
+  }
+  status?: 'recruitingTeam' | 'development' | 'completed'
+  teamMembers?: Array<{
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    _key: string
+    [internalGroqTypeReferenceTo]?: 'team'
+  }>
+  URL?: LinkExternal
+  image?: {
+    image?: {
+      asset?: {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+      }
+      media?: unknown
+      hotspot?: SanityImageHotspot
+      crop?: SanityImageCrop
+      _type: 'image'
+    }
+    caption?: InternationalizedArrayString
+  }
+  stages?: Array<string>
+}
+
+export type SiteCategory = {
+  _id: string
+  _type: 'siteCategory'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  categoryName?: InternationalizedArrayString
+}
+
+export type Team = {
+  _id: string
+  _type: 'team'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  name?: InternationalizedArrayString
+  role?: {
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    [internalGroqTypeReferenceTo]?: 'specialist'
+  }
+  price?: number
+  isAvaliblePerson?: 'Show price' | 'Do not show price'
+  about?: InternationalizedArrayText
+  services?: InternationalizedArrayText
+  projects?: Array<
+    | ({
+        _key: string
+      } & LinkExternal)
+    | {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        _key: string
+        [internalGroqTypeReferenceTo]?: 'project'
+      }
+  >
+  photo?: {
+    asset?: {
+      _ref: string
+      _type: 'reference'
+      _weak?: boolean
+      [internalGroqTypeReferenceTo]?: 'sanity.imageAsset'
+    }
+    media?: unknown
+    hotspot?: SanityImageHotspot
+    crop?: SanityImageCrop
+    _type: 'image'
+  }
+  socialLinks?: Array<
+    {
+      _key: string
+    } & SocialLinks
+  >
+  tools?: Array<{
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    _key: string
+    [internalGroqTypeReferenceTo]?: 'tool'
+  }>
+}
+
+export type Specialist = {
+  _id: string
+  _type: 'specialist'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: string
+  category?: {
+    _ref: string
+    _type: 'reference'
+    _weak?: boolean
+    [internalGroqTypeReferenceTo]?: 'specialistCategory'
+  }
+}
+
+export type SpecialistCategory = {
+  _id: string
+  _type: 'specialistCategory'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  title?: InternationalizedArrayString
+}
+
+export type LinkInternal = {
+  _type: 'linkInternal'
+  reference?: string
+  newWindow?: boolean
+}
+
+export type LinkEmail = {
+  _type: 'linkEmail'
+  email?: string
+}
+
+export type Faq = {
+  _id: string
+  _type: 'faq'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  question?: InternationalizedArrayString
+  pageSlug?: Slug
+  shortAnswer?: InternationalizedArrayText
+  additionalTextShortAnswer?: InternationalizedArrayText
+  image?: ImageType
+  mainContent?: Array<{
+    layoutType?:
+      | 'numberedList'
+      | 'table'
+      | 'list'
+      | 'decorationList'
+      | 'textWithArrow'
+      | 'redBulletTextWithArrow'
+      | 'gorizontalList'
+      | 'tableWithLines'
+    mainContentTitle?: InternationalizedArrayString
+    isTopTextNeeded?: boolean
+    mainContentTopText?: InternationalizedArrayText
+    mainContentText?: Array<{
+      contentBlockTitle?: InternationalizedArrayString
+      contentBlockText?: InternationalizedArrayPortableTextSimple
+      _type: 'contentBlock'
+      _key: string
+    }>
+    _type: 'mainBlock'
+    _key: string
+  }>
+  orderContent?: {
+    image?: ImageType
+    orderText?: InternationalizedArrayPortableTextSimple
+    isOrderBtnVisible?: boolean
+  }
+  likedUserList?: Array<string>
+  likes?: number
+  estimateReadTime?: number
+}
+
+export type InternationalizedArrayPortableTextSimple = Array<
+  {
+    _key: string
+  } & InternationalizedArrayPortableTextSimpleValue
+>
+
+export type Slug = {
+  _type: 'slug'
+  current?: string
+  source?: string
+}
+
+export type InternationalizedArrayPortableColorTitleValue = {
+  _type: 'internationalizedArrayPortableColorTitleValue'
+  value?: PortableColorTitle
+}
+
+export type InternationalizedArrayPortableTextSimpleValue = {
+  _type: 'internationalizedArrayPortableTextSimpleValue'
+  value?: PortableTextSimple
+}
+
+export type InternationalizedArrayPortableTextValue = {
+  _type: 'internationalizedArrayPortableTextValue'
+  value?: PortableText
+}
+
+export type InternationalizedArrayTextValue = {
+  _type: 'internationalizedArrayTextValue'
+  value?: string
+}
+
+export type InternationalizedArrayStringValue = {
+  _type: 'internationalizedArrayStringValue'
+  value?: string
+}
+
+export type InternationalizedArrayPortableColorTitle = Array<
+  {
+    _key: string
+  } & InternationalizedArrayPortableColorTitleValue
+>
+
+export type InternationalizedArrayPortableText = Array<
+  {
+    _key: string
+  } & InternationalizedArrayPortableTextValue
+>
+
+export type TranslationMetadata = {
+  _id: string
+  _type: 'translation.metadata'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  translations?: InternationalizedArrayReference
+  schemaTypes?: Array<string>
+}
+
 export type InternationalizedArrayReference = Array<
   {
     _key: string
   } & InternationalizedArrayReferenceValue
 >
+
+export type InternationalizedArrayReferenceValue = {
+  _type: 'internationalizedArrayReferenceValue'
+  value?:
+    | {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'home'
+      }
+    | {
+        _ref: string
+        _type: 'reference'
+        _weak?: boolean
+        [internalGroqTypeReferenceTo]?: 'settings'
+      }
+}
+
+export type Settings = {
+  _id: string
+  _type: 'settings'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  language?: string
+  header?: Header
+  footer?: Footer
+  notFoundPage?: NotFoundPage
+  seo?: Seo
+  buttonBuyMeCoffee?: Button
+  buttonJoinUS?: Button
+  buttonOrder?: Button
+}
+
+export type Home = {
+  _id: string
+  _type: 'home'
+  _createdAt: string
+  _updatedAt: string
+  _rev: string
+  pageSlug?: Slug
+  hero?: HeroHome
+  aboutUsHomeSection?: AboutUsHomeSection
+  ctaSectionJoinUs?: CallToAction
+  portfolioHome?: PortfolioHome
+  reviewsHome?: ReviewsHome
+  ctaSectionWriteUs?: CallToAction
+  servicesHome?: ServicesHome
+  teamHome?: TeamHome
+  ctaSectionJoinUsSecond?: CallToAction
+  stagesHome?: StagesHome
+  faqHome?: FaqHome
+  ctaSectionOrder?: CallToAction
+}
 
 export type MediaTag = {
   _id: string
@@ -1134,20 +993,15 @@ export type SanityImageDimensions = {
   aspectRatio?: number
 }
 
-export type SanityImageHotspot = {
-  _type: 'sanity.imageHotspot'
-  x?: number
-  y?: number
-  height?: number
-  width?: number
-}
-
-export type SanityImageCrop = {
-  _type: 'sanity.imageCrop'
-  top?: number
-  bottom?: number
-  left?: number
-  right?: number
+export type SanityImageMetadata = {
+  _type: 'sanity.imageMetadata'
+  location?: Geopoint
+  dimensions?: SanityImageDimensions
+  palette?: SanityImagePalette
+  lqip?: string
+  blurHash?: string
+  hasAlpha?: boolean
+  isOpaque?: boolean
 }
 
 export type SanityFileAsset = {
@@ -1170,6 +1024,13 @@ export type SanityFileAsset = {
   path?: string
   url?: string
   source?: SanityAssetSourceData
+}
+
+export type SanityAssetSourceData = {
+  _type: 'sanity.assetSourceData'
+  name?: string
+  id?: string
+  url?: string
 }
 
 export type SanityImageAsset = {
@@ -1195,17 +1056,6 @@ export type SanityImageAsset = {
   source?: SanityAssetSourceData
 }
 
-export type SanityImageMetadata = {
-  _type: 'sanity.imageMetadata'
-  location?: Geopoint
-  dimensions?: SanityImageDimensions
-  palette?: SanityImagePalette
-  lqip?: string
-  blurHash?: string
-  hasAlpha?: boolean
-  isOpaque?: boolean
-}
-
 export type Geopoint = {
   _type: 'geopoint'
   lat?: number
@@ -1213,34 +1063,38 @@ export type Geopoint = {
   alt?: number
 }
 
-export type Slug = {
-  _type: 'slug'
-  current?: string
-  source?: string
-}
-
-export type SanityAssetSourceData = {
-  _type: 'sanity.assetSourceData'
-  name?: string
-  id?: string
-  url?: string
-}
-
 export type AllSanitySchemaTypes =
+  | ImageType
   | MenuItem
+  | FaqHome
   | Stage
+  | StagesHome
+  | TeamHome
+  | ServicesHome
+  | ReviewsHome
+  | PortfolioHome
   | AnchorLink
+  | AboutUsHomeSection
   | AboutUsItem
+  | Button
   | SocialLinks
-  | Milestone
   | Duration
+  | Milestone
   | Timeline
+  | SanityImageCrop
+  | SanityImageHotspot
+  | Seo
+  | NotFoundPage
+  | Header
   | Instagram
   | ImageFeature
   | Images
   | ImageCallToAction
+  | HeroHome
   | Grid
   | GridItem
+  | Footer
+  | CallToAction
   | Callout
   | Accordion
   | AccordionGroup
@@ -1249,7 +1103,10 @@ export type AllSanitySchemaTypes =
   | PortableText
   | Tool
   | Service
+  | InternationalizedArrayText
+  | InternationalizedArrayString
   | Review
+  | LinkExternal
   | Customer
   | Project
   | SiteCategory
@@ -1257,39 +1114,22 @@ export type AllSanitySchemaTypes =
   | Specialist
   | SpecialistCategory
   | LinkInternal
-  | LinkExternal
   | LinkEmail
   | Faq
-  | ImageType
+  | InternationalizedArrayPortableTextSimple
+  | Slug
   | InternationalizedArrayPortableColorTitleValue
   | InternationalizedArrayPortableTextSimpleValue
   | InternationalizedArrayPortableTextValue
   | InternationalizedArrayTextValue
   | InternationalizedArrayStringValue
   | InternationalizedArrayPortableColorTitle
-  | InternationalizedArrayPortableTextSimple
   | InternationalizedArrayPortableText
-  | InternationalizedArrayText
-  | InternationalizedArrayString
   | TranslationMetadata
+  | InternationalizedArrayReference
   | InternationalizedArrayReferenceValue
   | Settings
-  | Button
-  | Seo
-  | NotFoundPage
-  | Footer
-  | Header
   | Home
-  | FaqHome
-  | StagesHome
-  | TeamHome
-  | ServicesHome
-  | ReviewsHome
-  | PortfolioHome
-  | CallToAction
-  | AboutUsHomeSection
-  | HeroHome
-  | InternationalizedArrayReference
   | MediaTag
   | Color
   | RgbaColor
@@ -1298,14 +1138,11 @@ export type AllSanitySchemaTypes =
   | SanityImagePaletteSwatch
   | SanityImagePalette
   | SanityImageDimensions
-  | SanityImageHotspot
-  | SanityImageCrop
-  | SanityFileAsset
-  | SanityImageAsset
   | SanityImageMetadata
-  | Geopoint
-  | Slug
+  | SanityFileAsset
   | SanityAssetSourceData
+  | SanityImageAsset
+  | Geopoint
 export declare const internalGroqTypeReferenceTo: unique symbol
 // Source: ../src/sanity/lib/queries.ts
 // Variable: faqListQuery

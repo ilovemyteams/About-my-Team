@@ -47,7 +47,7 @@ export default defineConfig({
     }),
     internationalizedArray({
       languages: SUPPORTED_LANGUAGES,
-      defaultLanguages: ['ua'],
+      // defaultLanguages: ['ua'],
       fieldTypes: ['string', 'text', 'portableText', 'portableTextSimple', 'portableColorTitle'],
     }),
     singletonPlugin(singletonPagesType),

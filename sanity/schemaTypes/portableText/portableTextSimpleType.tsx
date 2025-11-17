@@ -1,13 +1,15 @@
 import {FaPencilRuler} from 'react-icons/fa'
 import {FaList} from 'react-icons/fa6'
-import {LuAArrowDown, LuAArrowUp, LuHeading} from 'react-icons/lu'
-import {TbBaselineDensityLarge, TbBaselineDensityMedium} from 'react-icons/tb'
+import {LuAArrowDown, LuAArrowUp, LuBaseline, LuHeading} from 'react-icons/lu'
+import {TbBaselineDensityLarge} from 'react-icons/tb'
 import {defineArrayMember, defineField} from 'sanity'
 
 import {BlockListUlWithMargins} from '../../components/portableTextView/BlockListUlWithMargins'
+import {BlockMarginsInputPreview} from '../../components/portableTextView/BlockMarginsInputPreview'
 import {BlockSmallText} from '../../components/portableTextView/BlockSmallText'
 import {BlockSubtitle} from '../../components/portableTextView/BlockSubtitle'
 import {BlockSubtitleWithMark} from '../../components/portableTextView/BlockSubtitleWithMark'
+import {marginsForBlockType} from '../../constants'
 
 export const portableTextSimpleType = defineField({
   name: 'portableTextSimple',
@@ -40,17 +42,17 @@ export const portableTextSimpleType = defineField({
             icon: LuHeading,
             component: BlockSubtitle,
           },
-          {
-            title: 'Підзаголовок з іконкою',
-            value: 'subtitleWithIcon',
-            icon: FaPencilRuler,
-            component: BlockSubtitleWithMark,
-          },
 
           {
             title: 'Маленький текст',
             value: 'small',
             icon: LuAArrowDown,
+            component: BlockSmallText,
+          },
+          {
+            title: 'Звичайний текст',
+            value: 'medium',
+            icon: LuBaseline,
             component: BlockSmallText,
           },
           {
@@ -78,30 +80,62 @@ export const portableTextSimpleType = defineField({
 
       styles: [
         {
-          title: 'Нижній відступ маленький',
-          value: 'marginBottomSm',
-          icon: TbBaselineDensityMedium,
-          component: (props) => (
-            <div>
-              <span>{props.renderDefault(props)}</span>
-              <p style={{backgroundColor: 'lightblue', paddingBottom: '12px'}} />
-            </div>
-          ),
+          title: 'Маленький текст',
+          value: 'small',
+          component: BlockSmallText,
         },
         {
-          title: 'Нижній відступ середній',
-          value: 'marginBottomMd',
-          icon: TbBaselineDensityLarge,
-          component: (props) => (
-            <div>
-              <span>{props.renderDefault(props)}</span>
-              <p style={{backgroundColor: 'lightcyan', paddingBottom: '24px'}} />
-            </div>
-          ),
+          title: 'Звичайний текст',
+          value: 'normal',
+        },
+        {
+          title: 'Підзаголовок',
+          value: 'subtitle',
+          component: BlockSubtitle,
+        },
+        {
+          title: 'Підзаголовок з іконкою',
+          value: 'subtitleWithIcon',
+          icon: FaPencilRuler,
+          component: BlockSubtitleWithMark,
         },
       ],
 
       type: 'block',
+    }),
+    defineArrayMember({
+      type: 'object',
+      name: 'margins',
+      title: 'Відступ',
+      icon: TbBaselineDensityLarge,
+      fields: [
+        {
+          type: 'string',
+          name: 'marginValue',
+          title: 'Виберіть необхідний відступ',
+          initialValue: marginsForBlockType[0].value,
+          options: {
+            list: marginsForBlockType,
+            layout: 'radio',
+          },
+          components: {
+            input: BlockMarginsInputPreview,
+          },
+        },
+      ],
+      preview: {
+        select: {
+          title: 'marginValue',
+        },
+        prepare(selection) {
+          const {title} = selection
+          const item = marginsForBlockType.find((m) => m.value === title) || marginsForBlockType[0]
+          return {
+            title: item ? `${item.title} відступ` : 'Невідомий відступ',
+            subtitle: item.margin === 0 ? '⚠ Без відступу — рекомендовано видалити' : undefined,
+          }
+        },
+      },
     }),
   ],
 })

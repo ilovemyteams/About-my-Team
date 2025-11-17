@@ -16,7 +16,7 @@ interface MainContentProps {
 
 export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
-        <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px]">
+        <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px] text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
             {content.map(
                 (
                     {
@@ -94,3 +94,5 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
         </PageSection>
     );
 };
+
+//
