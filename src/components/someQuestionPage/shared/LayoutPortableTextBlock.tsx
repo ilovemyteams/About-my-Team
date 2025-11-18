@@ -2,6 +2,7 @@ import { PortableText, PortableTextComponents } from "next-sanity";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
+import { marginsForBlockType } from "@/sanity/constants";
 import { PortableTextSimple } from "@/sanity/types";
 import { Link as LocaleLink } from "@/src/i18n/routing";
 
@@ -23,7 +24,8 @@ const styleForSubtitle =
     "font-caviar inline text-purple-200 dark:text-white-200 font-semibold";
 // const bulletListStyle = "marker:text-[16px] ";
 
-const styleForLargeText = "text-lg desk:text-xl";
+const styleForLargeText =
+    "text-lg leading-[1.278] desk:text-xl desk:leading-[1.25]";
 const bulletList = "list-disc marker:text-[16px] marker:leading-none";
 const bulletListItemStyle = "";
 
@@ -61,7 +63,7 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
         },
         list: {
             bullet: ({ children }) => (
-                <ul className={twMerge(bulletList)}>{children}</ul>
+                <ul className={twMerge(bulletList, "ml-6")}>{children}</ul>
             ),
             bulletWithMargin: ({ children }) => {
                 return (
@@ -151,7 +153,9 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
             },
             large: props => {
                 return (
-                    <span className={twMerge(styleForLargeText)}>
+                    <span
+                        className={twMerge(styleForLargeText, "inline-block")}
+                    >
                         {props.children}
                     </span>
                 );
@@ -159,6 +163,22 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
         },
 
         hardBreak: false,
+        types: {
+            margins: ({ value }) => {
+                const { marginValue } = value;
+                const { margin } =
+                    marginsForBlockType.find(
+                        item => item.value === marginValue
+                    ) || marginsForBlockType[0];
+                return (
+                    <div
+                        style={{
+                            height: `${margin}px`,
+                        }}
+                    />
+                );
+            },
+        },
     };
 };
 

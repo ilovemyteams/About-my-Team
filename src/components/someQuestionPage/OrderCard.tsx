@@ -18,17 +18,18 @@ export const OrderCard = ({
     isOrderBtnVisible,
     searchTerm,
 }: OrderCardProps) => {
-    // const splitedOrderText = orderText.split("/n");
     return (
         <PageSection className="flex flex-col gap-6 tab:flex-row tab:gap-8 tab:justify-between pc:gap-[104px] desk:gap-[100px] pb-[80px] tab:pb-[100px] desk:pb-[180px]">
-            <SanityImage
-                src={image.url}
-                alt={image.caption}
-                blurUrl={image.lqip}
-                width={630}
-                height={362}
-                className="tab:w-[50%] pc:min-w-[630px] pc:w-[58%] desk:w-[54.6%] mt-0 mb-auto aspect-[1.75]"
-            />
+            <div className="mt-0 mb-auto tab:w-[50%] pc:min-w-[630px] pc:w-[58%] desk:w-[54.6%] ">
+                <SanityImage
+                    image={image.image}
+                    metadata={image.metadata}
+                    alt={image.caption}
+                    width={730}
+                    height={417}
+                    className="w-full"
+                />
+            </div>
 
             <div className="flex flex-col gap-6 tab:justify-between tab:w-[45%] pc:w-[32%] desk:w-[37%]">
                 {orderText && (
@@ -37,17 +38,6 @@ export const OrderCard = ({
                             searchTerm={searchTerm}
                             value={orderText}
                         />
-                        {/* {splitedOrderText.map((text, index) => (
-                            <p
-                                key={index}
-                                className="text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34"
-                            >
-                                <HighlightText
-                                    text={text}
-                                    toBeHighlighted={searchTerm}
-                                />
-                            </p>
-                        ))} */}
                     </div>
                 )}
 

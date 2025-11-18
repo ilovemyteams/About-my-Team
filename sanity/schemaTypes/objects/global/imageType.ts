@@ -11,6 +11,9 @@ export const imageType = defineType({
       title: 'Зображення',
       description: 'Додайте зображення',
       type: 'image',
+      options: {
+        hotspot: true,
+      },
       validation: (rule) => rule.required(),
     }),
     defineField({

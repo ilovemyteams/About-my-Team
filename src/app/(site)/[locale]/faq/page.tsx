@@ -18,10 +18,11 @@ export default async function FAQ({
     searchParams: RouteSearchParams;
 }) {
     const locale = await getLocale();
-    const ITEMS_PER_PAGE = 7;
+
     const { query, page } = await searchParams;
     const searchTerm = query || "";
     const pageNumber = parseInt(page || "1") || 1;
+    const ITEMS_PER_PAGE = 7;
 
     const start = (pageNumber - 1) * ITEMS_PER_PAGE;
     const end = pageNumber * ITEMS_PER_PAGE;
@@ -43,6 +44,7 @@ export default async function FAQ({
             pageNumber={pageNumber}
             questions={faqs}
             searchTerm={searchTerm}
+            totalQuestions={total}
         />
     );
 }

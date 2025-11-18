@@ -24,7 +24,7 @@ export const QaCard = ({
         slug,
         question,
         shortAnswer,
-        image,
+        media,
         estimateReadTime,
         likedUserList,
         _id,
@@ -37,18 +37,18 @@ export const QaCard = ({
             >
                 <div className="relative w-full max-w-[280px] tab:max-w-none mx-auto aspect-[280/200] tab:aspect-[300/200]">
                     <SanityImage
-                        src={image.url}
-                        alt={image.caption}
-                        blurUrl={image.lqip}
+                        image={media.image}
+                        metadata={media.metadata}
+                        alt={media.caption}
                         width={375}
                         className="h-full w-full object-cover"
                     />
                 </div>
 
                 <SanityImage
-                    src={image.url}
-                    alt={image.caption}
-                    blurUrl={image.lqip}
+                    image={media.image}
+                    metadata={media.metadata}
+                    alt={media.caption}
                     width={375}
                     className="absolute tab:hidden top-0 left-0 w-full h-full z-[-1] blur-xl object-cover"
                 />

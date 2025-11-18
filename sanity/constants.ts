@@ -131,16 +131,16 @@ export const marginsForBlockType = [
   {
     value: 'sm',
     title: 'Маленький (12рх)',
-    margin: 2,
+    margin: 12,
   },
   {
     value: 'md',
     title: 'Середній (24рх)',
-    margin: 3,
+    margin: 24,
   },
   {
     value: 'lg',
     title: 'Великий (48рх)',
-    margin: 4,
+    margin: 48,
   },
 ]

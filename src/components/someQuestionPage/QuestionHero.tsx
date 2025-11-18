@@ -41,9 +41,9 @@ export const QuestionHero = ({
                 />
                 <div className="w-full tab:w-3/12 pc:w-[16.9%] pc:min-w-[225px] desk:min-w-[312px]  shrink-0">
                     <SanityImage
-                        src={pageImage.url}
+                        image={pageImage.image}
+                        metadata={pageImage.metadata}
                         alt={pageImage.caption}
-                        blurUrl={pageImage.lqip}
                         width={508}
                         height={340}
                         className="object-cover w-full aspect-[1.5]"

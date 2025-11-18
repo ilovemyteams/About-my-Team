@@ -1,33 +1,44 @@
-import { getImageDimensions } from "@sanity/asset-utils";
 import Image from "next/image";
 
+import { ImageType, SanityImageMetadata } from "@/sanity/types";
 import { urlFor } from "@/src/sanity/lib/image";
 
 import { NoImageHeart } from "./NoImageHeart";
 
-//blurUrl: lqip image from metadata in sanity image
-//sizes: image size for non-mobile devices
-
 interface ImageComponentProps {
-    src: string | undefined | null;
+    image: ImageType["image"] | null;
+    metadata: SanityImageMetadata | null;
     alt?: string | undefined | null;
-    blurUrl?: string | undefined | null;
     className?: string;
     sizes?: string;
     width: number;
     height?: number;
 }
 
+const calcHeight = (
+    width: number,
+    height: number | undefined,
+    dimensions: SanityImageMetadata["dimensions"]
+) => {
+    if (!dimensions || !dimensions.height || !dimensions.width) {
+        return width / 1.3;
+    }
+
+    return height
+        ? height
+        : Math.ceil((width * dimensions.height) / dimensions.width);
+};
+
 export const SanityImage = ({
-    src,
+    image,
     alt,
-    blurUrl,
+    metadata,
     className = "",
     sizes = "45vw",
     width,
     height,
 }: ImageComponentProps) => {
-    if (!src) {
+    if (!image || !metadata) {
         //default image with brand heart
         return (
             <div
@@ -37,23 +48,31 @@ export const SanityImage = ({
             </div>
         );
     }
-    const dimensions = getImageDimensions(src);
-    const url = urlFor(src).auto("format").fit("max").url();
 
-    const renderHeight = height
-        ? height
-        : Math.ceil((width * dimensions.height) / dimensions.width);
+    const { dimensions, lqip } = metadata;
 
+    const renderHeight = calcHeight(width, height, dimensions);
+
+    const url = urlFor(image)
+        .width(width)
+        .height(renderHeight)
+        .auto("format")
+        .url();
+
+    const aspectRatio = Math.ceil((width / renderHeight) * 1000) / 1000;
     return (
-        <Image
-            src={url}
-            width={width}
-            height={renderHeight}
-            sizes={`(max-width: 768px), 540px, ${sizes}`}
-            alt={alt || "An image without description"}
-            className={`${className} object-cover`}
-            placeholder="blur"
-            blurDataURL={blurUrl || ""}
-        />
+        <div>
+            <Image
+                src={url}
+                width={width}
+                height={renderHeight}
+                sizes={`(max-width: 768px), 540px, ${sizes}`}
+                alt={alt || "An image without description"}
+                className={`${className} object-cover`}
+                placeholder="blur"
+                blurDataURL={lqip || ""}
+                style={{ aspectRatio }}
+            />
+        </div>
     );
 };

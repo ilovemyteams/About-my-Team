@@ -4,10 +4,10 @@ export const faqListQuery = defineQuery(`{
   "faqs":*[_type == 'faq'] | order(_createdAt asc)[$start...$end]{
     "question": question[_key == $language][0].value,
     "shortAnswer": shortAnswer[_key == $language][0].value,
-    "image": {
-      "url": image.image.asset->url,
-      "lqip": image.image.asset -> metadata.lqip,
-       "caption": image.caption[_key == $language][0].value
+    "media": {
+      "image": image.image, 
+      "metadata": image.image.asset->metadata,
+      "caption": image.caption[_key == $language][0].value
     },
     likedUserList, 
     estimateReadTime,
@@ -24,8 +24,8 @@ export const currentFaqQuery = defineQuery(
       "question": question[_key == $language][0].value,
       "shortAnswer": shortAnswer[_key == $language][0].value, 
       "heroImage": {
-        "url": image.image.asset->url, 
-        "lqip": image.image.asset -> metadata.lqip,
+        "image": image.image, 
+        "metadata": image.image.asset->metadata,
         "caption": image.caption[_key == $language][0].value
       },
       "additionalTextShortAnswer": additionalTextShortAnswer[_key == $language][0].value,
@@ -33,9 +33,9 @@ export const currentFaqQuery = defineQuery(
       "likes": likedUserList, 
       "orderText": orderContent.orderText[_key == $language][0].value,
       "orderImage": {
-        "url": orderContent.image.image.asset->url, 
-        "lqip": orderContent.image.image.asset -> metadata.lqip,
-        "caption": orderContent.image.caption[_key == $language][0].value
+        "image": orderContent.image.image, 
+        "metadata": orderContent.image.image.asset->metadata,
+        "caption": orderContent.image.caption[_key == $language][0].value,
       },
       "isOrderBtnVisible": orderContent.isOrderBtnVisible,
       "mainContent": mainContent[]{

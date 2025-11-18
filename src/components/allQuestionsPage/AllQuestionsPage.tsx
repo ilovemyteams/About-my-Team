@@ -13,6 +13,7 @@ interface AllQuestionsPageProps {
     questions: QuestionType[];
     pageNumber: number;
     totalPages: number;
+    totalQuestions: number;
 }
 
 export const AllQuestionsPage = ({
@@ -20,16 +21,15 @@ export const AllQuestionsPage = ({
     questions,
     pageNumber,
     totalPages,
+    totalQuestions,
 }: AllQuestionsPageProps) => {
-    const itemsQuantity = questions.length;
-
     const isPaginationNeeded = totalPages > 1;
     const isCTAVisible = pageNumber === totalPages;
 
     return (
         <>
-            <HeaderFAQ itemsQuantity={itemsQuantity} searchTerm={searchTerm} />
-            {itemsQuantity > 0 ? (
+            <HeaderFAQ itemsQuantity={totalQuestions} searchTerm={searchTerm} />
+            {totalQuestions > 0 ? (
                 <QaCardList questions={questions} searchTerm={searchTerm} />
             ) : (
                 <NothingFound searchTerm={searchTerm} />
