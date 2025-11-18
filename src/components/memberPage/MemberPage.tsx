@@ -4,7 +4,7 @@ import { Section } from "@/src/components/shared/Section";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { About } from "./parts/About";
+// import { About } from "./parts/About";
 import { Avatar } from "./parts/Avatar";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
 import { Projects } from "./parts/Projects";
@@ -49,7 +49,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                     <Projects projectsExperience={projectsExperience} />
                 </div>
                 <div className="tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
-                    <About />
+                    {/* <About /> */}
                     {/* <Teammates projectId={projectId} /> */}
                 </div>
             </div>
