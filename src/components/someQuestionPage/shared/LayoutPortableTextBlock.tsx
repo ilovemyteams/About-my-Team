@@ -84,11 +84,12 @@ const extractComponents = (searchTerm: string): PortableTextComponents => {
         },
         marks: {
             linkInternal: ({ text, value: { reference, newWindow } }) => {
+                const newWindowParam = newWindow ? { target: "_blank" } : {};
                 return (
                     <LocaleLink
                         className="link-style"
                         href={reference}
-                        target={newWindow ? "_blank" : "_self "}
+                        {...newWindowParam}
                     >
                         <HighlightText
                             text={text}
