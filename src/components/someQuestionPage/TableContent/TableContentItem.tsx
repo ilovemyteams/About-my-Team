@@ -1,34 +1,40 @@
-import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
+import { CurrentQuestionMainContentItemType } from "@/types/Faqs.types";
 
 import { RedSquareBullet } from "../../shared/RedSquareBullet";
 import { HighlightText } from "../../shared/Search/HighlightText";
-import { TableContentText } from "./TableContentText";
+import { LayoutPortableTextBlock } from "../shared/LayoutPortableTextBlock";
 
 export const TableContentItem = ({
     content,
     searchTerm,
 }: {
-    content: LongAnswerListTypeItem;
+    content: CurrentQuestionMainContentItemType;
     searchTerm: string;
 }) => {
-    const { title, text } = content;
+    const { contentBlockText, contentBlockTitle } = content;
 
     return (
-        <div className="pt-6">
+        <div className="py-6">
             <div className="mb-6 pc:mb-[80px] flex gap-2">
-                {title && (
+                {contentBlockTitle && (
                     <>
                         <RedSquareBullet classNames="m-[3px] desk:m-[7px]" />
                         <h3 className="min-h-[50px] desk:min-h-[70px]  font-caviar text-xlb desk:text-3xl dark:text-white-200 text-purple-200">
                             <HighlightText
-                                text={title}
+                                text={contentBlockTitle}
                                 toBeHighlighted={searchTerm}
                             />
                         </h3>
                     </>
                 )}
             </div>
-            <ul>
+            {contentBlockText && (
+                <LayoutPortableTextBlock
+                    value={contentBlockText}
+                    searchTerm={searchTerm}
+                />
+            )}
+            {/* <ul>
                 {text.map((item, index) => (
                     <TableContentText
                         item={item}
@@ -36,7 +42,7 @@ export const TableContentItem = ({
                         searchTerm={searchTerm}
                     />
                 ))}
-            </ul>
+            </ul> */}
         </div>
     );
 };

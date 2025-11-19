@@ -32,7 +32,7 @@
         ".next/types/**/*.ts",
         "next-sitemap.config.js",
         "src/components/eventsPage/SecondScene",
-        "custom.d.ts"
-    ],
-    "exclude": ["node_modules", ".next"]
+        "custom.d.ts",
+            ],
+    "exclude": ["node_modules", ".next", "sanity"]
 }

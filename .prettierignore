@@ -1,3 +1,6 @@
 node_modules
 public
 build
+.next
+.sanity
+dist

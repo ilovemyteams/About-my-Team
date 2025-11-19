@@ -1,92 +1,157 @@
 import {
-    FcDownload,
-    FcEditImage,
-    FcFlowChart,
-    FcHighPriority,
-    FcMenu,
-    FcSearch,
-} from "react-icons/fc";
+  FcDownload,
+  FcEditImage,
+  FcFlowChart,
+  FcHighPriority,
+  FcMenu,
+  FcSearch,
+} from 'react-icons/fc'
 // Field groups used through schema types
+
+export const SLUG_MAX_LENGTH = 100
 export const GROUPS = [
-    {
-        name: "editorial",
-        title: "Editorial",
-        icon: FcEditImage,
-    },
-    {
-        name: "cta",
-        title: "CTA",
-        icon: FcDownload,
-    },
-    {
-        name: "navigation",
-        title: "Navigation",
-        icon: FcMenu,
-    },
-    {
-        name: "buttons",
-        title: "Buttons",
-        icon: FcFlowChart,
-    },
-    {
-        name: "notFoundPage",
-        title: "404 page",
-        icon: FcHighPriority,
-    },
-    {
-        name: "seo",
-        title: "SEO",
-        icon: FcSearch,
-    },
-];
+  {
+    name: 'editorial',
+    title: 'Editorial',
+    icon: FcEditImage,
+  },
+  {
+    name: 'cta',
+    title: 'CTA',
+    icon: FcDownload,
+  },
+  {
+    name: 'navigation',
+    title: 'Navigation',
+    icon: FcMenu,
+  },
+  {
+    name: 'buttons',
+    title: 'Buttons',
+    icon: FcFlowChart,
+  },
+  {
+    name: 'notFoundPage',
+    title: '404 page',
+    icon: FcHighPriority,
+  },
+  {
+    name: 'seo',
+    title: 'SEO',
+    icon: FcSearch,
+  },
+]
 
 // References to include in 'internal' links
-export const PAGE_REFERENCES = [{ type: "home" }, { type: "page" }];
+export const PAGE_REFERENCES = [{type: 'home'}, {type: 'page'}]
 
 export const SUPPORTED_LANGUAGES = [
-    { id: "ua", title: "Ukraine" },
-    { id: "en", title: "English" },
-    { id: "pl", title: "Polish" },
-];
+  {id: 'ua', title: 'Ukraine'},
+  {id: 'en', title: 'English'},
+  {id: 'pl', title: 'Polish'},
+]
 
 export const SITE_STATUS = [
-    { title: "Recruiting a team", value: "recruitingTeam" },
-    { title: "Development", value: "development" },
-    { title: "Completed", value: "completed" },
-];
+  {title: 'Recruiting a team', value: 'recruitingTeam'},
+  {title: 'Development', value: 'development'},
+  {title: 'Completed', value: 'completed'},
+]
 
 export const STAGES = [
-    { title: "Idea", value: "idea" },
-    { title: "Design", value: "design" },
-    { title: "Development", value: "development" },
-    { title: "Testing", value: "testing" },
-    { title: "Delivery", value: "delivery" },
-    { title: "Support", value: "support" },
-];
+  {title: 'Idea', value: 'idea'},
+  {title: 'Design', value: 'design'},
+  {title: 'Development', value: 'development'},
+  {title: 'Testing', value: 'testing'},
+  {title: 'Delivery', value: 'delivery'},
+  {title: 'Support', value: 'support'},
+]
 
 export const SOCIAL_LINKS = [
-    { title: "LinkedIn", value: "linkedin" },
-    { title: "Telegram", value: "telegram" },
-    { title: "Github", value: "github" },
-    { title: "Behance", value: "behance" },
-    { title: "GoogleDrive", value: "googleDrive" },
-    { title: "WhatsApp", value: "whatsapp" },
-    { title: "YouTube", value: "youtube" },
-    { title: "Pinterest", value: "pinterest" },
-    { title: "Email", value: "email" },
-    { title: "Facebook", value: "facebook" },
-    { title: "Instagram", value: "instagram" },
-    { title: "Twitter", value: "twitter" },
-];
+  {title: 'LinkedIn', value: 'linkedin'},
+  {title: 'Telegram', value: 'telegram'},
+  {title: 'Github', value: 'github'},
+  {title: 'Behance', value: 'behance'},
+  {title: 'GoogleDrive', value: 'googleDrive'},
+  {title: 'WhatsApp', value: 'whatsapp'},
+  {title: 'YouTube', value: 'youtube'},
+  {title: 'Pinterest', value: 'pinterest'},
+  {title: 'Email', value: 'email'},
+  {title: 'Facebook', value: 'facebook'},
+  {title: 'Instagram', value: 'instagram'},
+  {title: 'Twitter', value: 'twitter'},
+]
 
 export const FAQ_PAGE_DESIGN_TYPES = [
-    { title: "Numbered list", value: "numberedList" },
-    { title: "Table", value: "table" },
-    { title: "List", value: "list" },
-];
+  {
+    title: 'Numbered list',
+    value: 'numberedList',
+    description: 'Список з великими цифрами зліва',
+  },
+  {title: 'Table', value: 'table', description: 'Таблиця'},
+  {title: 'List', value: 'list', description: 'Список в табличній формі'},
+  {
+    title: 'List With Decoration',
+    value: 'decorationList',
+    description: 'Список з декоративніми елементами',
+  },
+  {
+    title: 'Text With Arrow',
+    value: 'textWithArrow',
+    description: 'Текст з червоною стрілкою',
+  },
+  {
+    title: 'Red Bullet Text With Arrow',
+    value: 'redBulletTextWithArrow',
+    description: 'Список з червоною стрілкою',
+  },
+  {
+    title: 'Gorizontal List',
+    value: 'gorizontalList',
+    description: 'Горизонтальний список з червоною лінією',
+  },
+  {
+    title: 'Table With Lines',
+    value: 'tableWithLines',
+    description: 'Таблиця з декоративними лініями',
+  },
+]
 
 export const GENDER_OPTIONS = [
-    { title: "Female", value: "female" },
-    { title: "Male", value: "male" },
-    { title: "Unknown", value: "unknown" },
-];
+  {title: 'Female', value: 'female'},
+  {title: 'Male', value: 'male'},
+  {title: 'Unknown', value: 'unknown'},
+]
+
+export const marginsForBlockType = [
+  {
+    value: 'none',
+    title: 'Нульовий',
+    margin: 0,
+  },
+  {
+    value: 'sm',
+    title: 'Маленький (12рх)',
+    margin: 12,
+  },
+  {
+    value: 'md',
+    title: 'Середній (24рх)',
+    margin: 24,
+  },
+  {
+    value: 'lg',
+    title: 'Великий (48рх)',
+    margin: 48,
+  },
+]
+
+export const DECORATION_TYPE_LIST = [
+  {
+    title: 'В лінію',
+    value: 'line',
+  },
+  {
+    title: 'Трикутником',
+    value: 'triangle',
+  },
+]

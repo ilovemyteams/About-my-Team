@@ -1,19 +1,19 @@
-import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
+import { PortableTextSimple } from "@/sanity/types";
 
 import { Lines } from "../../shared/Lines";
 import { HighlightText } from "../../shared/Search/HighlightText";
-import { TwoSidesListText } from "./TwoSidesListText";
-
+import { LayoutPortableTextBlock } from "../shared/LayoutPortableTextBlock";
 interface TwoSidesListItemProps {
-    item: LongAnswerListTypeItem;
+    title: string | null;
+    text: PortableTextSimple | null;
     searchTerm: string;
 }
 
 export const TwoSidesListItem = ({
-    item,
+    text,
+    title,
     searchTerm,
 }: TwoSidesListItemProps) => {
-    const { title, text } = item;
     return (
         <li
             className="group tab:flex tab:even:flex-row-reverse odd:border-b-[1px] tab:border-none border-purple-strokeLight dark:border-purple-stroke 
@@ -32,7 +32,13 @@ export const TwoSidesListItem = ({
                     </h3>
                 )}
 
-                <ul>
+                {text && (
+                    <LayoutPortableTextBlock
+                        searchTerm={searchTerm}
+                        value={text}
+                    />
+                )}
+                {/* <ul>
                     {text.map((text, index) => (
                         <TwoSidesListText
                             key={index}
@@ -40,7 +46,7 @@ export const TwoSidesListItem = ({
                             searchTerm={searchTerm}
                         />
                     ))}
-                </ul>
+                </ul> */}
             </div>
 
             <div className="mt-8 h-[60px] tab:h-auto tab:m-auto flex justify-center group-odd:hidden tab:group-odd:block group-last:hidden">

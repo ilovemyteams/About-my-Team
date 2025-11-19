@@ -1,10 +1,10 @@
-import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
+import { CurrentQuestionMainContentItemType } from "@/types/Faqs.types";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
-import { NumberedListText } from "./NumberedListText";
+import { LayoutPortableTextBlock } from "../shared/LayoutPortableTextBlock";
 
 interface NumberedListContentItemsProps {
-    item: LongAnswerListTypeItem;
+    item: CurrentQuestionMainContentItemType;
     indx: number;
     searchTerm: string;
 }
@@ -14,7 +14,9 @@ export const NumberedListContentItem = ({
     indx,
     searchTerm,
 }: NumberedListContentItemsProps) => {
-    const { text, title, type } = item;
+    if (!item) return null;
+
+    const { contentBlockText, contentBlockTitle } = item;
 
     return (
         <li className="flex flex-row gap-4 tab:gap-10 pc:gap-[60px]">
@@ -25,24 +27,20 @@ export const NumberedListContentItem = ({
             </div>
 
             <div className="pb-4 tab:pb-6 pc:pb-10 border-b-[1px] border-purple-strokeLight dark:border-purple-stroke">
-                {title && (
+                {contentBlockTitle && (
                     <h3 className="font-caviar text-lg tab:text-2xlb pc:text-3xl desk:text-4xl mb-4 tab:mb-6 pc:mb-10 text-purple-200 dark:text-white-200 whitespace-pre-wrap">
                         <HighlightText
-                            text={title}
+                            text={contentBlockTitle}
                             toBeHighlighted={searchTerm}
                         />
                     </h3>
                 )}
-                <ul>
-                    {text.map((text, index) => (
-                        <NumberedListText
-                            key={index}
-                            text={text}
-                            type={type}
-                            searchTerm={searchTerm}
-                        />
-                    ))}
-                </ul>
+                {contentBlockText && (
+                    <LayoutPortableTextBlock
+                        value={contentBlockText}
+                        searchTerm={searchTerm}
+                    />
+                )}
             </div>
         </li>
     );

@@ -1,8 +1,6 @@
 import React from "react";
 
-import { usePaginationData } from "@/src/hooks/usePaginationData";
-import { QAItemLocalizationTextType } from "@/src/mockedData/questionsData";
-import { LikesTypes } from "@/src/utils/likeDataHandler";
+import { QuestionType } from "@/types/Faqs.types";
 
 import { Pagination } from "../shared/Pagination";
 import { NothingFound } from "../shared/Search/NothingFound";
@@ -10,49 +8,29 @@ import { HeaderFAQ } from "./HeaderFAQ";
 import { QaCardList } from "./qaSection/QaCardList";
 import { FaqSectionCta } from "./сtaSection/FaqSectionCta";
 
-type QuestionType = {
-    data: {
-        likes: LikesTypes[];
-        slug: string;
-        image: string;
-        answerOrderImage?: string;
-        removeOrderBtn?: boolean;
-    };
-    ua: QAItemLocalizationTextType;
-    pl: QAItemLocalizationTextType;
-    en: QAItemLocalizationTextType;
-};
-
 interface AllQuestionsPageProps {
     searchTerm: string;
     questions: QuestionType[];
     pageNumber: number;
-    itemsPerPage: number;
+    totalPages: number;
+    totalQuestions: number;
 }
 
 export const AllQuestionsPage = ({
     searchTerm,
     questions,
     pageNumber,
-    itemsPerPage,
+    totalPages,
+    totalQuestions,
 }: AllQuestionsPageProps) => {
-    const itemsQuantity = questions.length;
-
-    const {
-        dataSlice: questionsWithPagination,
-        totalPages,
-        isPaginationNeeded,
-    } = usePaginationData(questions, itemsPerPage, pageNumber);
-
+    const isPaginationNeeded = totalPages > 1;
     const isCTAVisible = pageNumber === totalPages;
+
     return (
         <>
-            <HeaderFAQ itemsQuantity={itemsQuantity} searchTerm={searchTerm} />
-            {itemsQuantity > 0 ? (
-                <QaCardList
-                    questions={questionsWithPagination}
-                    searchTerm={searchTerm}
-                />
+            <HeaderFAQ itemsQuantity={totalQuestions} searchTerm={searchTerm} />
+            {totalQuestions > 0 ? (
+                <QaCardList questions={questions} searchTerm={searchTerm} />
             ) : (
                 <NothingFound searchTerm={searchTerm} />
             )}

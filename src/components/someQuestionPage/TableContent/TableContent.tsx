@@ -1,24 +1,24 @@
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
-import { LongAnswerListTypeItem } from "@/src/mockedData/questionsData";
+import { MainContentProps } from "@/types/Faqs.types";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
 import { TableContentItem } from "./TableContentItem";
 
-interface TableContentProps {
-    content: LongAnswerListTypeItem[];
-    searchTerm: string;
-    title?: string;
-    text?: string;
-}
+// interface TableContentProps {
+//     content: LongAnswerListTypeItem[];
+//     searchTerm: string;
+//     title?: string;
+//     text?: string;
+// }
 
 export const TableContent = ({
     content,
     searchTerm,
     title,
-    text,
-}: TableContentProps) => {
+    topText,
+}: MainContentProps) => {
     return (
         <div className="pc:mb-[60px]">
             {title && (
@@ -29,14 +29,17 @@ export const TableContent = ({
                     />
                 </h3>
             )}
-            {text && (
+            {topText && (
                 <p className="mb-6 tab:mb-10 desk:mb-[80px] tab:w-[70%] pc:w-[56%] desk:w-[53%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap">
-                    <HighlightText text={text} toBeHighlighted={searchTerm} />
+                    <HighlightText
+                        text={topText}
+                        toBeHighlighted={searchTerm}
+                    />
                 </p>
             )}
-            <ul className=" list-none tab:flex tab:flex-wrap tab:justify-center">
-                {content &&
-                    content.map((item, index) => (
+            {content && (
+                <ul className=" list-none tab:flex tab:flex-wrap tab:justify-center">
+                    {content.map((item, index) => (
                         <li
                             key={index}
                             className={twMerge(
@@ -52,7 +55,8 @@ export const TableContent = ({
                             />
                         </li>
                     ))}
-            </ul>
+                </ul>
+            )}
         </div>
     );
 };

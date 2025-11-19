@@ -5,9 +5,9 @@
 // } from "@sanity/react-loader";
 // import * as queryStore from "@sanity/react-loader";
 
-import { settingsQuery } from "../lib/queries";
+import {settingsQuery} from '../../src/sanity/lib/queries'
 
-export { settingsQuery };
+export {settingsQuery}
 
 // /**
 //  * Exports to be used in client-only or components that render both server and client

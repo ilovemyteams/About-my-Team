@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import type { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
@@ -13,69 +13,97 @@ import { TableContent } from "./TableContent/TableContent";
 import { TwoSidesListWithLines } from "./TwoSidesListWithLines/TwoSidesListWithLines";
 
 interface MainContentProps {
-    content: LongAnswerListType[];
+    content: NonNullable<NonNullable<CurrentFaqQueryResult>["mainContent"]>;
     searchTerm: string;
 }
 
 export const MainContent = ({ content, searchTerm }: MainContentProps) => {
     return (
-        <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px]">
-            {content.map((item, index) => (
-                <Fragment key={index}>
-                    {item.layout === 1 && (
-                        <NumberedListContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                        />
-                    )}
-                    {item.layout === 2 && (
-                        <TableContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                        />
-                    )}
-                    {item.layout === 3 && (
-                        <DescriptionListContent
-                            content={item.data}
-                            title={item.title}
-                            searchTerm={searchTerm}
-                            text={item.text}
-                            summary={item.summary}
-                        />
-                    )}
-                    {item.layout === 4 && (
-                        <MarkedListContent
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 5 && (
-                        <ArrowedBlockContent
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 6 && (
-                        <MarkedListWithTitle
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                    {item.layout === 7 && (
-                        <ColumnListFAQ content={item} searchTerm={searchTerm} />
-                    )}
-                    {item.layout === 8 && (
-                        <TwoSidesListWithLines
-                            content={item}
-                            searchTerm={searchTerm}
-                        />
-                    )}
-                </Fragment>
-            ))}
+        <PageSection className="pb-[32px] tab:pb-[100px] flex flex-col gap-[80px] pc:gap-[100px] text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34">
+            {content.map(
+                (
+                    {
+                        mainContentTitle,
+                        mainContentTopText,
+                        layoutType,
+                        mainContentText,
+                        decoration,
+                    },
+                    index
+                ) => (
+                    <Fragment key={index}>
+                        {layoutType === "numberedList" && (
+                            <NumberedListContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {layoutType === "table" && (
+                            <TableContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {layoutType === "list" && (
+                            <DescriptionListContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {layoutType === "decorationList" && (
+                            <MarkedListContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                                decoration={decoration}
+                            />
+                        )}
+
+                        {layoutType === "textWithArrow" && (
+                            <ArrowedBlockContent
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+
+                        {layoutType === "redBulletTextWithArrow" && (
+                            <MarkedListWithTitle
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {layoutType === "gorizontalList" && (
+                            <ColumnListFAQ
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                        {layoutType === "tableWithLines" && (
+                            <TwoSidesListWithLines
+                                content={mainContentText}
+                                title={mainContentTitle}
+                                searchTerm={searchTerm}
+                                topText={mainContentTopText}
+                            />
+                        )}
+                    </Fragment>
+                )
+            )}
         </PageSection>
     );
 };
+
+//

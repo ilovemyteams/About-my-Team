@@ -66,7 +66,9 @@ export const PageTopSection = ({
                                 >
                                     <span className="dark:text-red text-redLight truncate block">
                                         {item.title[0].toUpperCase() +
-                                            item.title.slice(1)}
+                                            item.title
+                                                .slice(1)
+                                                .replace("\\n", "")}
                                     </span>
                                 </BreadcrumbItem>
                             );

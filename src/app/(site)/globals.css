@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    scrollbar-gutter: stable;
+
+    --color-grey: #d4d4d4;
+    --font-geist: Geist;
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+/* styles for root element when modal open */
+:root:has(.no-doc-scroll) {
+    overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        overflow-x: hidden;
+    }
+}
+
+/* Smooth animation during scroll */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+/* //End scroll animation */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-grey);
+    font-family: var(--font-geist);
+    font-weight: 300;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+@layer components {
+    .icon-hover-rounded-purple {
+        @apply after:content-[''] after:absolute after:w-0 after:h-0 after:rounded-full after:bg-purple-stroke03
+         pc:transition-width pc:after:ease-in-out pc:after:duration-[600ms] after:blur-[2px];
+    }
+
+    .icon-hover-rounded-purple:hover {
+        @apply pc:after:h-full pc:after:w-full;
+    }
+
+    .icon-hover-rounded-purple:focus-visible {
+        @apply pc:after:h-full pc:after:w-full outline-none;
+    }
+
+    .icon-hover-rounded-purple:focus-within {
+        @apply pc:outline-none;
+    }
+    .icon-hover-rounded-purple:active {
+        @apply after:h-full after:w-full;
+    }
+    .slider-dot {
+        @apply appearance-none bg-transparent inline-flex cursor-pointer border border-red p-0 m-0 w-2 h-2 rounded-full;
+    }
+    .slider-dot--selected {
+        @apply bg-redLight dark:bg-red justify-center;
+    }
+    .slider-number {
+        @apply dark:text-grey text-greyLight;
+    }
+    .slider-number--selected {
+        @apply text-redLight dark:text-red border-b border-redLight dark:border-red;
+    }
+
+    .scroll {
+        @apply scrollbar scrollbar-w-[3px] scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-greyLight scrollbar-track-transparent;
+    }
+
+    .custom-autofill {
+        &:-webkit-autofill {
+            box-shadow: 0 0 0px 1000px transparent inset !important;
+            -webkit-text-fill-color: #5f3f87 !important;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    }
+
+    .custom-autofill-default:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px transparent inset !important;
+        -webkit-text-fill-color: var(--text-color) !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .bg-construction {
+        background-image: url("/images/under-construction.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .disabled-bg-member-card {
+        background: linear-gradient(0deg, #e3e3e3, #e3e3e3), #fbf8ff;
+        @media (prefers-color-scheme: dark) {
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(130, 97, 156, 0.3),
+                    rgba(130, 97, 156, 0.3)
+                ),
+                #1f0033;
+        }
+    }
+
+    .link-style {
+        @apply text-purple-130 dark:text-purple-50 dark:pc:hover:text-red pc:hover:text-redLight dark:active:text-red active:text-redLight dark:pc:focus:text-red pc:focus:text-redLight outline-none transition-colors ease-out duration-300 underline
+    }
+}

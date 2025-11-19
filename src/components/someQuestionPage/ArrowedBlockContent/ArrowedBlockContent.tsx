@@ -1,19 +1,15 @@
-import { LongAnswerListType } from "@/src/mockedData/questionsData";
+import { MainContentProps } from "@/types/Faqs.types";
 
 import { HighlightText } from "../../shared/Search/HighlightText";
+import { LayoutPortableTextBlock } from "../shared/LayoutPortableTextBlock";
 import { RedArrowDecoration } from "../shared/RedArrowDecoration";
-import { ArrowedText } from "./ArrowedText";
-interface ArrowedBlockContentProps {
-    content: LongAnswerListType;
-    searchTerm: string;
-}
 
 export const ArrowedBlockContent = ({
     content,
     searchTerm,
-}: ArrowedBlockContentProps) => {
-    const { title, data } = content;
-
+    title,
+    topText,
+}: MainContentProps) => {
     return (
         <div className="pc:pb-[60px]">
             {title && (
@@ -26,17 +22,30 @@ export const ArrowedBlockContent = ({
                     </h2>
                 </div>
             )}
+            {topText && (
+                <p className="desk:mb-[80px] tab:w-[70%] pc:w-[56%] desk:w-[70%] text-greyLight dark:text-grey text-sm20 tab:text-base23 pc:text-xl28 desk:text-2xl34 whitespace-pre-wrap mb-10 tab:mb-[64px] pc:mb-[80px]">
+                    <HighlightText
+                        text={topText}
+                        toBeHighlighted={searchTerm}
+                    />
+                </p>
+            )}
             <div className="flex flex-col tab:flex-row gap-8 tab:gap-0">
                 <div className="w-full tab:w-[61%] pc:w-[64%] desk:w-[62%]">
-                    <ul className="flex flex-col gap-5 tab:gap-6 desk:gap-10">
-                        {data.map((item, index) => (
-                            <ArrowedText
-                                searchTerm={searchTerm}
-                                data={item.text}
-                                key={index}
-                            />
-                        ))}
-                    </ul>
+                    {content && (
+                        <ul className="flex flex-col gap-5 tab:gap-6 desk:gap-10">
+                            {content.map(({ contentBlockText }, index) => (
+                                <li key={index}>
+                                    {contentBlockText && (
+                                        <LayoutPortableTextBlock
+                                            searchTerm={searchTerm}
+                                            value={contentBlockText}
+                                        />
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
                 <RedArrowDecoration />
             </div>

@@ -22,7 +22,15 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([
-    globalIgnores(["**/node_modules", "**/public", "**/build"]),
+    globalIgnores([
+        "**/node_modules",
+        "**/public",
+        "**/build",
+        "**/dist",
+        "**/.next",
+        "**/.sanity",
+        "**/static",
+    ]),
     {
         extends: fixupConfigRules(
             compat.extends(
@@ -79,6 +87,15 @@ export default defineConfig([
             "simple-import-sort/imports": "error",
             "simple-import-sort/exports": "error",
         },
-        ignores: ["node_modules", "public", "build"],
+        ignores: [
+            "node_modules",
+            "public",
+            "build",
+            ".next",
+            "dist",
+            "static",
+            ".sanity",
+            "next-env.d.ts",
+        ],
     },
 ]);
