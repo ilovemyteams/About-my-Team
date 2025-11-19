@@ -4,6 +4,7 @@ import { CurrentFaqQueryResult } from "@/sanity/types";
 
 import { PageSection } from "../shared/PageSection";
 import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
+import { ColumnListFAQ } from "./ColumnListFAQ/ColumnListFAQ";
 import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
 import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
 import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
@@ -81,12 +82,14 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                                 topText={mainContentTopText}
                             />
                         )}
-                        {/* {item.layout === 7 && (
+                        {layoutType === "gorizontalList" && (
                             <ColumnListFAQ
-                                content={item}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
+                                topText={mainContentTopText}
                             />
-                        )} */}
+                        )}
                         {/* {item.layout === 8 && (
                             <TwoSidesListWithLines
                                 content={item}
