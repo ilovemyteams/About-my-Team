@@ -6,6 +6,7 @@ import { PageSection } from "../shared/PageSection";
 import { ArrowedBlockContent } from "./ArrowedBlockContent/ArrowedBlockContent";
 import { DescriptionListContent } from "./DescriptionListContent/DescriptionListContent";
 import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
+import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
 
@@ -72,12 +73,14 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                             />
                         )}
 
-                        {/* {item.layout === 6 && (
+                        {layoutType === "redBulletTextWithArrow" && (
                             <MarkedListWithTitle
-                                content={item}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
+                                topText={mainContentTopText}
                             />
-                        )} */}
+                        )}
                         {/* {item.layout === 7 && (
                             <ColumnListFAQ
                                 content={item}
