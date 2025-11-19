@@ -10,6 +10,7 @@ import { MarkedListContent } from "./MarkedListContent/MarkedListContent";
 import { MarkedListWithTitle } from "./MarkedListWithTitle/MarkedListWithTitle";
 import { NumberedListContent } from "./NumberedListContent/NumberedListContent";
 import { TableContent } from "./TableContent/TableContent";
+import { TwoSidesListWithLines } from "./TwoSidesListWithLines/TwoSidesListWithLines";
 
 interface MainContentProps {
     content: NonNullable<NonNullable<CurrentFaqQueryResult>["mainContent"]>;
@@ -90,12 +91,14 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                                 topText={mainContentTopText}
                             />
                         )}
-                        {/* {item.layout === 8 && (
+                        {layoutType === "tableWithLines" && (
                             <TwoSidesListWithLines
-                                content={item}
+                                content={mainContentText}
+                                title={mainContentTitle}
                                 searchTerm={searchTerm}
+                                topText={mainContentTopText}
                             />
-                        )} */}
+                        )}
                     </Fragment>
                 )
             )}
