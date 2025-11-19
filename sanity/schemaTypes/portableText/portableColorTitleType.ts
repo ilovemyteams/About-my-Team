@@ -1,7 +1,7 @@
 import {defineArrayMember, defineType} from 'sanity'
 
 import {AccentText} from '../../components/accentText/AccentText'
-import {maxLengthValidator} from '../../utils/maxLengthValidator'
+import {maxLengthValidator} from '../../utils/validation/maxLengthValidator'
 
 const MAX_LENGTH = 100
 

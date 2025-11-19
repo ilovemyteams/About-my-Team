@@ -3,7 +3,7 @@ import {defineArrayMember, defineField} from 'sanity'
 
 import {GENDER_OPTIONS} from '../../constants'
 import {getEnglishTitleFromIntArrays} from '../../utils/getEnglishTitleFromIntArrays'
-import {validateIsRequired} from '../../utils/validateIsRequired'
+import {validateIsRequired} from '../../utils/validation/validateIsRequired'
 
 export const customerType = defineField({
   name: 'customer',

@@ -1,5 +1,5 @@
-import {PortableColorTitle, PortableTextSimple} from '../types'
-import {calculateTotalLength} from './calculateTotalLength'
+import {PortableColorTitle, PortableTextSimple} from '../../types'
+import {calculateTotalLength} from '../calculateTotalLength'
 
 export const maxLengthValidator =
   (maxLength: number) =>

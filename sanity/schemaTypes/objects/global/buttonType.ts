@@ -1,7 +1,7 @@
 import {defineField} from 'sanity'
 
-import {validateIsRequired} from '../../../utils/validateIsRequired'
-import {validateMaxLength} from '../../../utils/validateMaxLength'
+import {validateIsRequired} from '../../../utils/validation/validateIsRequired'
+import {validateMaxLength} from '../../../utils/validation/validateMaxLength'
 
 const MAX_LENGTH = 18
 

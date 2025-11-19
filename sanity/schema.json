@@ -4384,6 +4384,23 @@
                 },
                 "optional": true
               },
+              "decoration": {
+                "type": "objectAttribute",
+                "value": {
+                  "type": "union",
+                  "of": [
+                    {
+                      "type": "string",
+                      "value": "line"
+                    },
+                    {
+                      "type": "string",
+                      "value": "triangle"
+                    }
+                  ]
+                },
+                "optional": true
+              },
               "mainContentTitle": {
                 "type": "objectAttribute",
                 "value": {

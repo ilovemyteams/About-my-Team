@@ -4,8 +4,8 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
 import {Page} from '../../types'
 import {generatePageSlug} from '../../utils/generatePageSlug'
 import {getEnglishTitleFromIntArrays} from '../../utils/getEnglishTitleFromIntArrays'
-import {validateIsRequired} from '../../utils/validateIsRequired'
-import {validatePageSlug} from '../../utils/validatePageSlug'
+import {validateIsRequired} from '../../utils/validation/validateIsRequired'
+import {validatePageSlug} from '../../utils/validation/validatePageSlug'
 
 const SLUG_MAX_LENGTH = 100
 

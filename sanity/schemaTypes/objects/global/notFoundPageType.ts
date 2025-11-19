@@ -1,6 +1,6 @@
 import {defineField} from 'sanity'
 
-import {validateIsRequired} from '../../../utils/validateIsRequired'
+import {validateIsRequired} from '../../../utils/validation/validateIsRequired'
 
 export const notFoundPageType = defineField({
   name: 'notFoundPage',

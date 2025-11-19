@@ -1,5 +1,5 @@
-import {SUPPORTED_LANGUAGES} from '../constants'
-import {InternationalizedArrayString} from '../types'
+import {SUPPORTED_LANGUAGES} from '../../constants'
+import {InternationalizedArrayString} from '../../types'
 
 export const validateIsRequired = (value: InternationalizedArrayString) => {
   if (!value) {

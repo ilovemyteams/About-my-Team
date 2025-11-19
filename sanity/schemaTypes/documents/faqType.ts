@@ -3,14 +3,16 @@ import {FcCheckmark, FcFaq} from 'react-icons/fc'
 import {defineArrayMember, defineField} from 'sanity'
 
 import {BlockTypePreview} from '../../components/blockTypePreview/BlockTypePreview'
+import {DecorationTypePreview} from '../../components/decorationTypePreview/DecorationTypePreview'
 import {EstimateTimePreview} from '../../components/estimateTimePreview/EstimateTimePreview'
 import {LikesPreview} from '../../components/likesPreview/LikesPreview'
 import {PreviewWithImage} from '../../components/previewWithImage/PreviewWithImage'
-import {FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH} from '../../constants'
+import {DECORATION_TYPE_LIST, FAQ_PAGE_DESIGN_TYPES, SLUG_MAX_LENGTH} from '../../constants'
 import {generateSlug} from '../../utils/generateSlug'
 import {getUkrainianTitleFromIntArrays} from '../../utils/getEnglishTitleFromIntArrays'
-import {validateIsRequired} from '../../utils/validateIsRequired'
-import {validateSlug} from '../../utils/validateSlug'
+import {validateIsRequired} from '../../utils/validation/validateIsRequired'
+import {validateRequiredContentBody} from '../../utils/validation/validateRequiredContentBody'
+import {validateSlug} from '../../utils/validation/validateSlug'
 
 export const faqType = defineField({
   name: 'faq',
@@ -99,6 +101,18 @@ export const faqType = defineField({
               validation: (rule) => rule.required(),
               initialValue: FAQ_PAGE_DESIGN_TYPES[0].value,
             }),
+            defineField({
+              name: 'decoration',
+              type: 'string',
+              components: {input: DecorationTypePreview},
+              options: {
+                list: DECORATION_TYPE_LIST,
+                layout: 'radio',
+              },
+              title: 'Виберіть потрібний декоративний елемент',
+              initialValue: DECORATION_TYPE_LIST[0].value,
+              hidden: ({parent}) => parent?.layoutType !== 'decorationList',
+            }),
 
             defineField({
               name: 'mainContentTitle',
@@ -118,6 +132,7 @@ export const faqType = defineField({
               title: 'Додатковий текст перед основним переліком',
               hidden: ({parent}) => !parent?.isTopTextNeeded,
             }),
+
             defineField({
               name: 'mainContentText',
               type: 'array',
@@ -144,6 +159,7 @@ export const faqType = defineField({
                       validation: (rule) => rule.custom(validateIsRequired),
                     },
                   ],
+                  validation: (rule) => rule.required(),
                   preview: {
                     select: {
                       title: 'contentBlockTitle',
@@ -166,6 +182,7 @@ export const faqType = defineField({
               ],
             }),
           ],
+          validation: (rule) => rule.custom(validateRequiredContentBody),
 
           preview: {
             select: {
@@ -197,7 +214,6 @@ export const faqType = defineField({
           },
         }),
       ],
-      validation: (rule) => rule.required(),
     }),
 
     defineField({
@@ -235,7 +251,7 @@ export const faqType = defineField({
       name: 'likedUserList',
       type: 'array',
       title: 'Перелік користувачів, які натиснули лайк',
-
+      hidden: true,
       of: [
         defineArrayMember({
           type: 'string',

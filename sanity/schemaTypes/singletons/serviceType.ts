@@ -2,7 +2,7 @@ import {FcTodoList} from 'react-icons/fc'
 import {defineField} from 'sanity'
 
 import {getEnglishTitleFromIntArrays} from '../../utils/getEnglishTitleFromIntArrays'
-import {validateIsRequired} from '../../utils/validateIsRequired'
+import {validateIsRequired} from '../../utils/validation/validateIsRequired'
 
 export const serviceType = defineField({
   name: 'service',

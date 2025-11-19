@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity'
 
-import {validateIsRequired} from '../../../utils/validateIsRequired'
+import {validateIsRequired} from '../../../utils/validation/validateIsRequired'
 
 export const imageType = defineType({
   name: 'imageType',

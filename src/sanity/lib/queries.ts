@@ -40,6 +40,7 @@ export const currentFaqQuery = defineQuery(
       "isOrderBtnVisible": orderContent.isOrderBtnVisible,
       "mainContent": mainContent[]{
         layoutType,
+        decoration,
         "mainContentTitle":mainContentTitle[_key == $language][0].value,
         "mainContentTopText": mainContentTopText[_key == $language][0].value, 
         "mainContentText": mainContentText[]{

@@ -29,14 +29,6 @@ export const portableTextSimpleType = defineField({
       marks: {
         decorators: [
           {
-            title: 'Курсив',
-            value: 'em',
-          },
-          {
-            title: 'Жирний',
-            value: 'strong',
-          },
-          {
             title: 'Підзаголовок',
             value: 'subtitle',
             icon: LuHeading,

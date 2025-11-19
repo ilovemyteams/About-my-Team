@@ -144,3 +144,14 @@ export const marginsForBlockType = [
     margin: 48,
   },
 ]
+
+export const DECORATION_TYPE_LIST = [
+  {
+    title: 'В лінію',
+    value: 'line',
+  },
+  {
+    title: 'Трикутником',
+    value: 'triangle',
+  },
+]

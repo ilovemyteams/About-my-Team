@@ -2,7 +2,7 @@ import {FcCollaboration} from 'react-icons/fc'
 import {defineArrayMember, defineField} from 'sanity'
 
 import {InternationalizedArrayString} from '../../types'
-import {validateIsRequired} from '../../utils/validateIsRequired'
+import {validateIsRequired} from '../../utils/validation/validateIsRequired'
 
 export const teamType = defineField({
   name: 'team',

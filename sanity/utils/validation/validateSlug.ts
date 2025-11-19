@@ -1,4 +1,4 @@
-import {Slug} from '../types'
+import {Slug} from '../../types'
 
 export const validateSlug = (maxLength: number) => {
   return (value: Slug | undefined) => {

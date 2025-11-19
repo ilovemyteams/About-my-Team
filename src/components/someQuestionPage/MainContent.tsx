@@ -24,6 +24,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                         mainContentTopText,
                         layoutType,
                         mainContentText,
+                        decoration,
                     },
                     index
                 ) => (
@@ -58,6 +59,7 @@ export const MainContent = ({ content, searchTerm }: MainContentProps) => {
                                 title={mainContentTitle}
                                 searchTerm={searchTerm}
                                 topText={mainContentTopText}
+                                decoration={decoration}
                             />
                         )}
 
