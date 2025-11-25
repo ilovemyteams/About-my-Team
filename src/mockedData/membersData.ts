@@ -1,4 +1,4 @@
-import { Education } from "@/types/Education";
+import { Instruction } from "@/types/Education";
 import { Language } from "@/types/Language";
 
 import { Slug } from "./portfolioData";
@@ -10,8 +10,8 @@ export type MemberDataItemTranslation = {
     services: string[];
     team: string;
     languages?: Language[];
-    education?: Education[];
-    certificates?: Education[];
+    education?: Instruction[];
+    certificates?: Instruction[];
 };
 
 export type SocialLinks = {
