@@ -20,7 +20,7 @@ export async function generateMetadata({
     const locale = await getLocale();
     const member = membersData.find(member => member.data.id === id);
     const memberName = member ? member[locale as LocaleType]?.name : "Name";
-    const memberAbout = member ? member[locale as LocaleType]?.about : "";
+    const memberAbout = member ? member[locale as LocaleType]?.shortQuote : "";
 
     const getTranslation = await getTranslations({
         locale,

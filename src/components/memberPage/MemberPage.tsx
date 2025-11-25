@@ -4,8 +4,10 @@ import { Section } from "@/src/components/shared/Section";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-// import { About } from "./parts/About";
+import { About } from "./parts/About";
 import { Avatar } from "./parts/Avatar";
+import { Education } from "./parts/Education";
+import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
 import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
@@ -18,6 +20,8 @@ interface MemberPageProps {
 export const MemberPage = ({ member }: MemberPageProps) => {
     const locale = useLocale();
     const langData = member[locale as LocaleType];
+    const { name, about, languages, education, certificates, services } =
+        langData;
 
     const {
         imageURL,
@@ -32,12 +36,12 @@ export const MemberPage = ({ member }: MemberPageProps) => {
     return (
         <Section className="pb-[80px] tab:pb-[100px] pc:pb-[100px] desk:pb-[120px]">
             <div className="grid grid-cols-1 tab:grid-cols-[360px_1fr] pc:grid-cols-[328px_1fr] desk:grid-cols-[380px_1fr]">
-                <div className="grid grid-cols-1 gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
+                <div className="grid grid-cols-1 grid-rows-[repeat(4,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
                     <div>
                         <Avatar
                             imageURL={imageURL}
                             position={position}
-                            name={langData.name}
+                            name={name}
                         />
                         <MemberSocialLinks socialLinks={socialLinks} />
                         <Statistics
@@ -47,9 +51,14 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                         />
                     </div>
                     <Projects projectsExperience={projectsExperience} />
+                    {languages && <Languages languages={languages} />}
+                    {education && <Education education={education} />}
+                    {certificates && (
+                        <Education education={certificates} certificates />
+                    )}
                 </div>
                 <div className="tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
-                    {/* <About /> */}
+                    <About text={about} services={services} />
                     {/* <Teammates projectId={projectId} /> */}
                 </div>
             </div>

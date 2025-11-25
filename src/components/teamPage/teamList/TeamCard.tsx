@@ -84,7 +84,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 </div>
                 <div className="h-[40px] tab:h-[44px] w-full">
                     <p className="text-center text-sm tab:text-base grow w-full line-clamp-2">
-                        {langData.about}
+                        {langData.shortQuote}
                     </p>
                 </div>
 
