@@ -3,6 +3,8 @@ import { getTranslations } from "next-intl/server";
 
 import { addProtocol, removeProtocol } from "@/src/utils/httpsProtocols";
 
+import { Title } from "./shared/Title";
+
 interface ProjectsProps {
     projectsExperience: string[];
 }
@@ -13,11 +15,9 @@ export const Projects = async ({ projectsExperience }: ProjectsProps) => {
     const t = await getTranslations("MemberPage");
 
     return (
-        <section>
-            <h2 className="font-caviar text-baseb tab:text-lg pc:text-xl desk:text-2xl capitalize">
-                {t("projects")}
-            </h2>
-            <ul className="grid grid-cols-1 gap-2 desk:gap-3 p-4">
+        <section className="border-b border-purple-strokeLight dark:border-purple-stroke">
+            <Title>{t("projects")}</Title>
+            <ul className="grid grid-cols-1 gap-2 desk:gap-3 p-4 tab:px-0 pc:px-4">
                 {projectsExperience.map(project => {
                     return (
                         <li
