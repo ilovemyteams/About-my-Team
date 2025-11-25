@@ -399,6 +399,11 @@
         "leftProject": "Out of project",
         "joinUsTitle": "Your photo can be here",
         "joinUsText": "Join a team of like-minded \nindividuals",
-        "projects": "projects"
+        "projects": "projects",
+        "about": "About me",
+        "languages": "Languages",
+        "education": "Education",
+        "certificates": "Certificates",
+        "services": "Main skills"
     }
 }

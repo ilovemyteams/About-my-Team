@@ -394,6 +394,11 @@
         "leftProject": "Поза проєктом",
         "joinUsTitle": "Тут може бути ваше фото",
         "joinUsText": "Долучайся до команди \nоднодумців",
-        "projects": "проєкти"
+        "projects": "проєкти",
+        "about": "Про мене",
+        "languages": "Мови",
+        "education": "Освіта",
+        "certificates": "Сертифікати",
+        "services": "Основні навички"
     }
 }

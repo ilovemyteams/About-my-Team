@@ -1,10 +1,17 @@
+import { Education } from "@/types/Education";
+import { Language } from "@/types/Language";
+
 import { Slug } from "./portfolioData";
 
 export type MemberDataItemTranslation = {
     name: string;
-    about: string;
-    services: string;
+    about: string[];
+    shortQuote: string;
+    services: string[];
     team: string;
+    languages?: Language[];
+    education?: Education[];
+    certificates?: Education[];
 };
 
 export type SocialLinks = {
@@ -87,24 +94,42 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Сусанна Салата",
-            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
-            services:
-                "Консультування, аналіз бізнес-процесів, стратегічне планування, бюджетування, управління проєктами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
+            about: [""],
+            shortQuote:
+                "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services: [""],
             team: "I Love My Team",
+            languages: [
+                { name: "Українська", level: "Рідна" },
+                { name: "Англійська", level: "Середній" },
+                { name: "Польська", level: "Середній" },
+            ],
         },
         en: {
             name: "Susanna Salata",
-            about: "Work should bring inspiration and satisfaction, not just money.",
-            services:
-                "Consulting, business process analysis and setup, strategic planning, budgeting, project and team management, product development, and crisis management for projects and products. Mentoring for beginners in IT.",
+            about: [""],
+            shortQuote:
+                "Work should bring inspiration and satisfaction, not just money.",
+            services: [""],
             team: "I Love My Team",
+            languages: [
+                { name: "Ukrainian", level: "Native" },
+                { name: "English", level: "Intermediate" },
+                { name: "Polish", level: "Intermediate" },
+            ],
         },
         pl: {
             name: "Susanna Salata",
-            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services:
-                "Doradztwo, analiza i dostosowywanie procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów oraz zarządzanie kryzysowe projektami i produktami. Mentoring dla początkujących w IT.",
+            about: [""],
+            shortQuote:
+                "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: [""],
             team: "I Love My Team",
+            languages: [
+                { name: "Ukraiński", level: "Ojczysty" },
+                { name: "Angielski", level: "Średni" },
+                { name: "Polski", level: "Średni" },
+            ],
         },
     },
     {
@@ -134,23 +159,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Марія Попова",
-            about: "Що б ви не робили, робіть це з любов'ю. Зрештою, це відчується.",
-            services:
-                "Розробка дизайну продуктів та веб застосунків, розробка логотипів, брендінгу компаній, створення ілюстрацій. Медіа для соц мереж, типографія, розробка UX/UI дизайну, інфографіка.",
+            about: [""],
+            shortQuote:
+                "Що б ви не робили, робіть це з любов'ю. Зрештою, це відчується.",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Mariia Popova",
-            about: "Whatever you do, do it with love. In the end, it will be felt.",
-            services:
-                "Product and web application design, logo development, company branding, and creation of illustrations. Media for social networks, typography, UX/UI design, and infographics.",
+            about: [""],
+            shortQuote:
+                "Whatever you do, do it with love. In the end, it will be felt.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Mariia Popova",
-            about: "Cokolwiek robisz, rób to z miłością. W końcu to się odczuwa.",
-            services:
-                "Projektowanie produktów i aplikacji internetowych, tworzenie logo, branding firmy, ilustracje. Media dla sieci społecznościowych, typografia, projektowanie UX/UI, infografiki.",
+            about: [""],
+            shortQuote:
+                "Cokolwiek robisz, rób to z miłością. W końcu to się odczuwa.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -188,23 +216,24 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Світлана Кондратенко",
-            about: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
-            services:
-                "Аналіз бізнес-потреб замовника, ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Написання технічної документації,user-story. Знання SDLC, гнучких методологій та базові знання менеджменту.",
+            about: [""],
+            shortQuote: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Svitlana Kondratenko",
-            about: `"Someone needs to sort this out?" - I am the person who sorts it out! `,
-            services:
-                "Analysis of the customer's business needs, market and competitor analysis. Development, analysis, organization, and formalization of requirements. Writing technical documentation, and user stories. Knowledge of SDLC, agile methodologies, and basic management skills.",
+            about: [""],
+            shortQuote: `"Someone needs to sort this out?" - I am the person who sorts it out!`,
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Svitlana Kondratenko",
-            about: "„Ktoś musi się tym zająć?” - Ja jestem osobą, która to zrobi!",
-            services:
-                "Analiza potrzeb biznesowych klienta, rynku i konkurencji. Opracowywanie, analizowanie, organizowanie i formalizowanie wymagań. Pisanie dokumentacji technicznej, user-story. Znajomość SDLC, metodyk zwinnych i podstaw zarządzania.",
+            about: [""],
+            shortQuote:
+                "„Ktoś musi się tym zająć?” - Ja jestem osobą, która to zrobi!",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -243,23 +272,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Влад Шумков",
-            about: "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає суворим стандартам і очікуванням клієнтів.",
-            services:
-                "Розробка сайтів будь-якої складності, інтернет-магазинів, посадкових сторінок. Наставництво для початківців Frontend-розробників.",
+            about: [""],
+            shortQuote:
+                "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає суворим стандартам і очікуванням клієнтів.",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Vlad Shumkov",
-            about: "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
-            services:
-                "Development of websites of any complexity, e-commerce stores, and landing pages. Mentoring for beginner Frontend Developers",
+            about: [""],
+            shortQuote:
+                "My emphasis on clear communication ensures that every project meets exacting standards and client expectations.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Vlad Shumkov",
-            about: "Stawiam na jasną komunikację, dzięki czemu każdy projekt spełnia rygorystyczne standardy i oczekiwania klientów.",
-            services:
-                "Tworzenie stron internetowych o dowolnej złożoności, sklepów internetowych, stron docelowych. Mentoring dla początkujących programistów Frontend.",
+            about: [""],
+            shortQuote:
+                "Stawiam na jasną komunikację, dzięki czemu każdy projekt spełnia rygorystyczne standardy i oczekiwania klientów.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -306,23 +338,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ігор Дронішинець",
-            about: "Ефективно перетворюю складні завдання на прості та зрозумілі рішення.",
-            services:
-                "Повний цикл розробки сайтів від створення логотипу та бренд буку до релізу на прод та передачі прав доступу Замовнику. Графічний дизайн, розробка логотипу та фірмового стилю, виготовлення поліграфічної продукції, дизайн етикетки та упаковки, зовнішня реклама.",
+            about: [""],
+            shortQuote:
+                "Ефективно перетворюю складні завдання на прості та зрозумілі рішення.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Ihor Dronishynets",
-            about: "Effectively transform complex tasks into simple and comprehensible solutions.",
-            services:
-                "Full-cycle website development from logo creation and brand book to production release and transfer of access rights to the customer. Graphic design, logo, and corporate identity development, printed matter production, label and packaging design, and outdoor advertising.",
+            about: [""],
+            shortQuote:
+                "Effectively transform complex tasks into simple and comprehensible solutions.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Ihor Dronishynets",
-            about: "Skutecznie zamieniam złożone zadania w proste i przejrzyste rozwiązania.",
-            services:
-                "Tworzenie stron internetowych w pełnym cyklu, od stworzenia logo i księgi znaku po wprowadzenie produktu na rynek i przekazanie praw dostępu klientowi. Projektowanie graficzne, opracowywanie logo i identyfikacji wizualnej, drukowanie, projektowanie etykiet i opakowań, reklama zewnętrzna.",
+            about: [""],
+            shortQuote:
+                "Skutecznie zamieniam złożone zadania w proste i przejrzyste rozwiązania.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -358,23 +393,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ірина Столярова",
-            about: "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
-            services:
-                "Я надаю повний спектр послуг з розробки дизайну продуктів, включаючи дослідження ринку, аналіз конкурентів, дослідження користувачів, інформаційну архітектуру, та інтерактивні прототипи. ",
+            about: [""],
+            shortQuote:
+                "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Iryna Stoliarova",
-            about: "Good design, first of all, needs to solve problems.",
-            services:
-                "I’ve been providing the full design service for products, including market research, competitor analysis, user research, information architecture, concepts, interactive prototypes.",
+            about: [""],
+            shortQuote: "Good design, first of all, needs to solve problems.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Stoliarova",
-            about: "Dobry design powinien przede wszystkim rozwiązywać problemy.",
-            services:
-                "Zapewniam pełen zakres usług projektowania produktów, w tym badania rynku, analizę konkurencji, badania użytkowników, architekturę informacji i interaktywne prototypy.",
+            about: [""],
+            shortQuote:
+                "Dobry design powinien przede wszystkim rozwiązywać problemy.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -407,23 +444,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анастасія Назаренко",
-            about: "Дизайнер - це стратег з почуттям прекрасного.",
-            services:
-                "Я пропоную широкий спектр творчих послуг, включаючи розробку логотипів та брендинг компанії. Моя спеціалізація охоплює створення 2D ілюстрацій (растрових і векторних) та простих анімацій для візуалізації ваших ідей. Я також займаюся розробкою медіа для соціальних мереж, типографіки та інфографіки. Маю ґрунтовні знання у сфері UX/UI дизайну, що забезпечує естетичність і зручність використання ваших проектів.",
+            about: [""],
+            shortQuote: "Дизайнер - це стратег з почуттям прекрасного.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Anastasiia Nazarenko",
-            about: "Designer is a planner with a sense of beauty.",
-            services:
-                "I offer a range of creative services including logo design and company branding. I specialize in crafting 2D illustrations, both raster and vector, and can create simple animations to bring your ideas to life. My expertise extends to designing media for social networks, typography, and infographics. I also have a solid foundation in UX/UI design, ensuring that your projects are not only visually appealing but also user-friendly and effective.",
+            about: [""],
+            shortQuote: "Designer is a planner with a sense of beauty.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Anastasiia Nazarenko",
-            about: "Projektant to strateg z wyczuciem piękna.",
-            services:
-                "Oferuję szeroki zakres usług kreatywnych, w tym projektowanie logo i branding firmy. Specjalizuję się w tworzeniu ilustracji 2D, zarówno rastrowych, jak i wektorowych, oraz prostych animacji, które ożywią Twoje pomysły. Moja ekspertyza obejmuje również projektowanie mediów społecznościowych, typografię i infografiki. Posiadam solidne podstawy w projektowaniu UX/UI, co gwarantuje, że Twoje projekty będą nie tylko estetyczne, ale także przyjazne dla użytkownika i skuteczne.",
+            about: [""],
+            shortQuote: "Projektant to strateg z wyczuciem piękna.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -468,23 +505,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ірина Тринкаль",
-            about: "Можливо все, на неможливе просто потрібно більше часу.",
-            services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та Node.js. Створення та управління бекенд API для забезпечення комунікації між фронтендом та сервером. Впровадження аутентифікації користувачів та надання прав доступу для забезпечення безпеки додатків. Поєднання компонентів фронтенду та бекенду для створення єдиної, працюючої програми.",
+            about: [""],
+            shortQuote:
+                "Можливо все, на неможливе просто потрібно більше часу.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Iryna Trynkal",
-            about: "Anything is possible, the impossible just takes longer.",
-            services:
-                "Development and style web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes. Creation of interactive and dynamic interfaces using the React library. Development of server applications using JavaScript and Node.js. Creation and management of backend APIs to ensure communication between frontend and server. Implementation of user authentication and access control to ensure application security. Integration of frontend and backend components to create a unified, functioning application.",
+            about: [""],
+            shortQuote:
+                "Anything is possible, the impossible just takes longer.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Trynkal",
-            about: "Wszystko jest możliwe, niemożliwe wymaga tylko więcej czasu.",
-            services:
-                "Tworzenie i projektowanie stron internetowych przy użyciu HTML, CSS i JavaScript z naciskiem na semantykę i responsywność dla różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js. Tworzenie i zarządzanie API serwera w celu zapewnienia komunikacji między interfejsem zewnętrznym a serwerem. Wdrażanie uwierzytelniania użytkowników i kontroli dostępu w celu zapewnienia bezpieczeństwa aplikacji. Integracja komponentów zewnętrznych i backendowych w celu stworzenia jednej funkcjonalnej aplikacji.",
+            about: [""],
+            shortQuote:
+                "Wszystko jest możliwe, niemożliwe wymaga tylko więcej czasu.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -521,23 +561,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олена Постернак",
-            about: "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
-            services:
-                "Спеціалізуюсь на розробці веб-додатків, з урахуванням семантичності та адаптивності до різних розмірів екранів. Створюю інтерактивні застосунки, використовуючи різноманітні JavaScript-фреймворки та бібліотеки. Моя основна мета - забезпечити користувачам комфортний та зручний досвід використання веб-додатків.",
+            about: [""],
+            shortQuote:
+                "Дрібниці важливі. Часто саме вони роблять життя комфортнішим.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Olena Posternak",
-            about: "Small things matter. It’s often they, that make life more comfortable.",
-            services:
-                "I specialize in developing web applications with a focus on semantics and responsiveness to different screen sizes. I create interactive applications using various JavaScript frameworks and libraries. My primary goal is to provide users with a comfortable and convenient web application experience.",
+            about: [""],
+            shortQuote:
+                "Small things matter. It’s often they, that make life more comfortable.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Olena Posternak",
-            about: "Małe rzeczy są ważne. Często sprawiają, że życie staje się wygodniejsze.",
-            services:
-                "Specjalizuje się w tworzeniu aplikacji internetowych z naciskiem na semantykę i responsywność na różnych rozmiarach ekranu. Tworzę interaktywne aplikacje przy użyciu różnych frameworków i bibliotek JavaScript. Moim głównym celem jest zapewnienie użytkownikom wygodnych i funkcjonalnych aplikacji internetowych.",
+            about: [""],
+            shortQuote:
+                "Małe rzeczy są ważne. Często sprawiają, że życie staje się wygodniejsze.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -580,23 +623,24 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Михайлова",
-            about: "Люблю знаходити елегантні рішення для складних задач.",
-            services:
-                "Створення зручних для користувачів та ефективних для бізнесу web-застосунків різного рівня складності. Фокусуюсь на поєднанні максимальної функціональності та естетичності для досягнення бездоганного результату.",
+            about: [""],
+            shortQuote: "Люблю знаходити елегантні рішення для складних задач.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Olga Mykhailova",
-            about: "I enjoy finding elegant solutions to difficult tasks.",
-            services:
-                "Creation of user-friendly and business-effective web applications of varying complexity. Focus on combining maximum functionality and aesthetics to achieve impeccable results.",
+            about: [""],
+            shortQuote: "I enjoy finding elegant solutions to difficult tasks.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Olga Mykhailova",
-            about: "Uwielbiam znajdować eleganckie rozwiązania złożonych problemów.",
-            services:
-                "Tworzenie przyjaznych dla użytkownika i skutecznych aplikacji biznesowych o różnym stopniu złożoności. Koncentrujemy się na łączeniu maksymalnej funkcjonalności i estetyki, aby osiągnąć nieskazitelne rezultaty.",
+            about: [""],
+            shortQuote:
+                "Uwielbiam znajdować eleganckie rozwiązania złożonych problemów.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -639,23 +683,24 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Катерина Рубанік",
-            about: "Жодна дрібниця не дрібниця, коли йдеться про якість.",
-            services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            about: [""],
+            shortQuote: "Жодна дрібниця не дрібниця, коли йдеться про якість.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Rubanik",
-            about: "No detail is minor when it comes to quality.",
-            services:
-                "Creation of test documentation (test plan, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+            about: [""],
+            shortQuote: "No detail is minor when it comes to quality.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Kateryna Rubanik",
-            about: "Żaden szczegół nie jest drobiazgiem, gdy chodzi o jakość.",
-            services:
-                "Tworzenie dokumentacji testowej (plany testów, listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
+            about: [""],
+            shortQuote:
+                "Żaden szczegół nie jest drobiazgiem, gdy chodzi o jakość.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -691,23 +736,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Євген Сердюк",
-            about: "Зараз все зробимо!",
-            services:
-                "Розробка та підтримка Web-додатків з урахуванням семантичної верстки та адаптивного дизайну до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та NodeJS. Робота з базами даних MongoDB, PosgreSQ.",
+            about: [""],
+            shortQuote: "Зараз все зробимо!",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Eugene Serdiuk",
-            about: "We'll do it now!",
-            services:
-                "Development and support of Web applications with semantic layout and responsive design for different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and NodeJS. Working with MongoDB, PosgreSQ databases.",
+            about: [""],
+            shortQuote: "We'll do it now!",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Eugene Serdiuk",
-            about: "Teraz to zrobimy!",
-            services:
-                "Rozwój i wsparcie aplikacji internetowych z semantycznym układem i responsywnym designem dla różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Rozwój aplikacji serwerowych. przy użyciu JavaScript i NodeJS. Praca z bazami danych MongoDB i PosgreSQ.",
+            about: [""],
+            shortQuote: "Teraz to zrobimy!",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -752,23 +797,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Сусанна Салата",
-            about: "Робота має приносити натхнення та задоволення, а не лише гроші.",
-            services:
-                "Аналіз потреб клієнтів, аналіз ринку та конкурентів, а також аналіз маркетингових і виробничих даних. Розробка, аналіз, організація та формалізація вимог. Управління вимогами, координація розробників і зацікавлених сторін. Аналіз та управління ризиками. Менторство для початківців ІТ.",
+            about: [""],
+            shortQuote:
+                "Робота має приносити натхнення та задоволення, а не лише гроші.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Susanna Salata",
-            about: "Work should bring inspiration and satisfaction, not just money.",
-            services:
-                "Analysis of customer needs, market and competitor analysis, as well as analysis of marketing and production data. Development, analysis, organization, and formalization of requirements. Requirements management, developer and stakeholder coordination. Risk analysis and management. Mentoring for IT beginners.",
+            about: [""],
+            shortQuote:
+                "Work should bring inspiration and satisfaction, not just money.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Susanna Salata",
-            about: "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services:
-                "Analiza potrzeb klientów, analiza rynku i konkurencji oraz analiza danych marketingowych i produkcyjnych. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami, koordynacja deweloperów i interesariuszy. Analiza i zarządzanie ryzykiem. Mentoring dla początkujących w IT.",
+            about: [""],
+            shortQuote:
+                "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -809,23 +857,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Денис Слівінський",
-            about: "Справжня дурість щоразу перемагає штучний інтелект",
-            services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React. Розробка серверних застосунків з використанням JavaScript та Node.js.",
+            about: [""],
+            shortQuote: "Справжня дурість щоразу перемагає штучний інтелект",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Denis Slivinskyi",
-            about: "Real stupidity beats artificial intelligence every time",
-            services:
-                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using the React library. Development of server-side applications using JavaScript and Node.js.",
+            about: [""],
+            shortQuote:
+                "Real stupidity beats artificial intelligence every time",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Denis Slivinskyi",
-            about: "Prawdziwa głupota za każdym razem pokonuje sztuczną inteligencję.",
-            services:
-                "Tworzenie i stylizowanie stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React. Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js.",
+            about: [""],
+            shortQuote:
+                "Prawdziwa głupota za każdym razem pokonuje sztuczną inteligencję.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -860,23 +910,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Володимир Дегтярев",
-            about: "Нічого не вийде, якщо ви цього не зробите",
-            services:
-                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів. Створення інтерактивних та динамічних інтерфейсів за допомогою React та Next.js. Розробка бекенду з використанням Node.js та NestJS.",
+            about: [""],
+            shortQuote: "Нічого не вийде, якщо ви цього не зробите",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Volodymyr Dehtiarev",
-            about: "Nothing will work unless you do",
-            services:
-                "Develop and style web pages using HTML, CSS, and JavaScript, taking into account semantics and adaptability to different screen sizes. Creating interactive and dynamic interfaces using React and Next.js. Backend development using Node.js and NestJS.",
+            about: [""],
+            shortQuote: "Nothing will work unless you do",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Volodymyr Dehtiarev",
-            about: "Nie będzie działać, jeśli tego nie zrobisz.",
-            services:
-                "Tworzenie i stylizacja stron internetowych przy użyciu HTML, CSS i JavaScript, z uwzględnieniem semantyki i możliwości dostosowania do różnych rozmiarów ekranu. Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu React i Next.js. Rozwój backendu przy użyciu Node.js i NestJS.",
+            about: [""],
+            shortQuote: "Nie będzie działać, jeśli tego nie zrobisz.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -908,23 +958,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олена Чорнобривець",
-            about: "Забезпечення якості означає запобігання помилкам.",
-            services:
-                "Ручне мобільне/веб тестування, API тестування, створення тестової документації: тест кейс, чекліст, баг репорт.",
+            about: [""],
+            shortQuote: "Забезпечення якості означає запобігання помилкам.",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Olena Chornobryvets",
-            about: "Quality assurance means preventing errors.",
-            services:
-                "Manual mobile/web testing, API testing, creation of test documentation: test cases, checklists, bug reports.",
+            about: [""],
+            shortQuote: "Quality assurance means preventing errors.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Olena Chornobryvets",
-            about: "Zapewnienie jakości to zapobieganie błędom.",
-            services:
-                "Ręczne testowanie mobilne/webowe, testowanie API, tworzenie dokumentacji testowej: przypadek testowy, lista kontrolna, raport o błędach.",
+            about: [""],
+            shortQuote: "Zapewnienie jakości to zapobieganie błędom.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -963,23 +1013,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ганна Горбенко",
-            about: "QA для мене це як цифровий детектив. Процес розслідування мене захоплює!",
-            services:
-                "Ручне тестування, Чорне/Сіре тестування, Веб/Мобільне тестування, Системне тестування, Регресійне тестування, Sanity тестування, Димове тестування, Спонтанне тестування, З тестовими випадками, Функціональне тестування, Тестування сумісності, Тестування зручності використання, Техніки дизайну тестів. Документація тестування: План тестування, Тестові випадки, Чеклісти, Звіти про помилки. Знання SDLC, Водоспадної моделі, Концепцій Agile (Scrum, Kanban), STLC, Git та Терминала, SQL (MySQL, SQLite, DBeaver).",
+            about: [""],
+            shortQuote:
+                "QA для мене це як цифровий детектив. Процес розслідування мене захоплює!",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Hanna Horbenko",
-            about: "QA for me it's like a digital detective. The investigation process fascinates me!",
-            services:
-                "Manual QA, Black/Grey testing, Web/Mobile testing, System testing, Regression, Sanity, Smoke, Ad-Hoc, With test cases, Functional, Compatibility, Usability, Test design techniques. Test documentation: Test plan, Test cases, Checklists, Bug reports, Knowledge of SDLC, Waterfall, Agile concepts knowledge (Scrum, Kanban), Knowledge of STLC, Git and Terminal, SQL (MySQL, SQLite, DBeaver).",
+            about: [""],
+            shortQuote:
+                "QA for me it's like a digital detective. The investigation process fascinates me!",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Hanna Horbenko",
-            about: "QA jest dla mnie jak cyfrowy detektyw. Proces śledczy jest dla mnie fascynujący!",
-            services:
-                "Testowanie ręczne, testowanie czarne/szare, testowanie sieciowe/mobilne, testowanie systemowe, testowanie regresji, testowanie poprawności, dymne testowanie, testowanie spontaniczne, z przypadkami testowymi, testowanie funkcjonalne, testowanie kompatybilności, testowanie użyteczności, techniki projektowania testów. Dokumentacja testowa: Plan testów, Przypadki testowe, Listy kontrolne, Raporty błędów. Znajomość SDLC, modelu Waterfall, koncepcji Agile (Scrum, Kanban), STLC, Git i Terminal, SQL (MySQL, SQLite, DBeaver).",
+            about: [""],
+            shortQuote:
+                "QA jest dla mnie jak cyfrowy detektyw. Proces śledczy jest dla mnie fascynujący!",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -1017,23 +1070,24 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анна Клиба",
-            about: "QA є ключем до надійності та довіри до продукту",
-            services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            about: [""],
+            shortQuote: "QA є ключем до надійності та довіри до продукту",
+            services: [""],
             team: "Смачно! на селі",
         },
         en: {
             name: "Anna Klyba",
-            about: "QA is the key to product reliability and trust.",
-            services:
-                "Creation of test documentation (test plans, checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+            about: [""],
+            shortQuote: "QA is the key to product reliability and trust.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Anna Klyba",
-            about: "QA jest kluczem do niezawodności i zaufania do produktu.",
-            services:
-                "Tworzenie dokumentacji testowej (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Testy internetowe/mobilne, testy API.",
+            about: [""],
+            shortQuote:
+                "QA jest kluczem do niezawodności i zaufania do produktu.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -1068,23 +1122,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Лучко",
-            about: "Я завжди готова вчитися новому та застосовувати свої знання на практиці. Буду рада долучитися до вашої команди та внести свій внесок у забезпечення якості програмного забезпечення.",
-            services:
-                "Створення тестової документації (чек листи, тест кейси, баг репорти). Проведення веб/ мобільного тестування, тестування API.",
+            about: [""],
+            shortQuote:
+                "Я завжди готова вчитися новому та застосовувати свої знання на практиці. Буду рада долучитися до вашої команди та внести свій внесок у забезпечення якості програмного забезпечення.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Oksana Luchko",
-            about: "I am always ready to learn new things and apply my knowledge in practice. I would be happy to join your team and contribute to software quality assurance.",
-            services:
-                "Creation of test documentation (checklists, test cases, bug reports). Conducting web/mobile testing, API testing.",
+            about: [""],
+            shortQuote:
+                "I am always ready to learn new things and apply my knowledge in practice. I would be happy to join your team and contribute to software quality assurance.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Oksana Luchko",
-            about: "Zawsze jestem gotowa uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
-            services:
-                "Tworzenie dokumentacji testowej (listy kontrolne, przypadki testowe, raporty błędów). Przeprowadzanie testów internetowych/mobilnych, testów API.",
+            about: [""],
+            shortQuote:
+                "Zawsze jestem gotowa uczyć się nowych rzeczy i wykorzystywać zdobytą wiedzę w praktyce. Chętnie dołączę do Twojego zespołu i przyczynię się do zapewnienia jakości oprogramowania.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1122,23 +1179,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Надія Губчук",
-            about: "Основна моя задача впевнитися, що продукт працює без збоїв, виявляючи помилки та недоліки, які можуть завадити вашим користувачам насолоджуватися ним. Чим раніше, тим краще!",
-            services:
-                "Створення test-case, checklist, bug report. Рев’ю вимог. Тестування web- та mob- додатків. Тестування API Postman.",
+            about: [""],
+            shortQuote:
+                "Основна моя задача впевнитися, що продукт працює без збоїв, виявляючи помилки та недоліки, які можуть завадити вашим користувачам насолоджуватися ним. Чим раніше, тим краще!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Nadia Hubchuk",
-            about: "My top priority is making sure your product runs smoothly by spotting any bugs or issues that could affect user enjoyment. The sooner, the better!",
-            services:
-                "Creating test cases, checklists, bug reports. Requirements review. Testing of web and mob applications. Testing Postman API.",
+            about: [""],
+            shortQuote:
+                "My top priority is making sure your product runs smoothly by spotting any bugs or issues that could affect user enjoyment. The sooner, the better!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Nadia Hubchuk",
-            about: "Moim głównym zadaniem jest upewnianie się, że produkt działa płynnie, znajdowanie błędów i wad, które mogą uniemożliwić użytkownikom korzystanie z niego. Im szybciej tym lepiej!",
-            services:
-                "Tworzenie przypadku testowego, listy kontrolnej, raportu o błędzie. Przegląd wymagań. Testowanie aplikacji webowych i mobowych. Testowanie API Postmana.",
+            about: [""],
+            shortQuote:
+                "Moim głównym zadaniem jest upewnianie się, że produkt działa płynnie, znajdowanie błędów i wad, które mogą uniemożliwić użytkownikom korzystanie z niego. Im szybciej tym lepiej!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1171,23 +1231,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Тетяна Селецька",
-            about: "Мета без плану - це просто бажання. В мене завжди є план.",
-            services:
-                "Займаюся організацією та плануванням проєктів, включаючи розробку детальних планів і визначення ключових етапів для успішного виконання. Відповідаю за координацію команди, забезпечуючи чітку комунікацію та ефективну співпрацю між учасниками. Регулярно відстежую прогрес на щоденних мітингах, аналізую виконання завдань і вчасно виявляю відхилення. Активно займаюся вирішенням виникаючих проблем і питань, що дозволяє уникнути затримок і забезпечити дотримання термінів.",
+            about: [""],
+            shortQuote:
+                "Мета без плану - це просто бажання. В мене завжди є план.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Tetiana Seletska",
-            about: "A goal without a plan is just a wish. I always have a plan.",
-            services:
-                "I organize and plan projects, including developing detailed plans and identifying key milestones for successful execution. I am responsible for coordinating the team, ensuring clear communication and effective collaboration between participants. I regularly monitor progress at daily meetings, analyze the implementation of tasks and identify deviations in a timely manner. I am actively involved in solving problems and issues that arise, which allows me to avoid delays and ensure that deadlines are met.",
+            about: [""],
+            shortQuote:
+                "A goal without a plan is just a wish. I always have a plan.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Tetiana Seletska",
-            about: "Cel bez planu to tylko życzenie. Ja zawsze mam plan.",
-            services:
-                "Organizuję i planuję projekty, w tym opracowuję szczegółowe plany i określam kluczowe kamienie milowe dla pomyślnej realizacji. Odpowiadam za koordynację zespołu, zapewniając jasną komunikację i efektywną współpracę między uczestnikami. Regularnie monitoruję postępy podczas codziennych spotkań, analizuję realizację zadań i w odpowiednim czasie identyfikuję odchylenia. Proaktywnie odpowiadam na wszelkie pojawiające się kwestie i pytania, co pomaga uniknąć opóźnień i zapewnić dotrzymanie terminów.",
+            about: [""],
+            shortQuote: "Cel bez planu to tylko życzenie. Ja zawsze mam plan.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1223,23 +1285,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Дар'я Червякова",
-            about: "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
-            services:
-                "Надаю послуги як юніор Project Manager. Координую та сприяю виконанню проектів у відповідності до методології Scrum.",
+            about: [""],
+            shortQuote:
+                "Юніор Project Manager/ Scrum Master з прагненням до професійного зростання. Керую процесом, забезпечую ефективну комунікацію та виконання цілей.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Daria Cherviakova",
-            about: "Junior Project Manager/ Scrum Master with a desire for professional growth. I manage the process, ensure effective communication and fulfillment of goals.",
-            services:
-                "I provide services as a junior Project Manager. I coordinate and facilitate the implementation of projects in accordance with the Scrum methodology.",
+            about: [""],
+            shortQuote:
+                "Junior Project Manager/ Scrum Master with a desire for professional growth. I manage the process, ensure effective communication and fulfillment of goals.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Daria Cherviakova",
-            about: "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i osiąganie celów.",
-            services:
-                "Świadczę usługi jako Młodszy Kierownik Projektu. Koordynuję i ułatwiam realizację projektów zgodnie z metodologią Scrum.",
+            about: [""],
+            shortQuote:
+                "Junior Project Manager/ Scrum Master z chęcią rozwoju zawodowego. Zarządzam procesem, zapewniam efektywną komunikację i osiąganie celów.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1271,23 +1336,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ганна Труба",
-            about: "Люди йдуть до людей! Ніколи не нехтуй людським фактором у бізнесі!",
-            services:
-                "Досвідчений бізнес-аналітик з понад трьома роками роботи в міжнародному холдингу, спеціалізуюсь на аналізі та налаштуванні бізнес-процесів, стратегічному плануванні, бюджетуванні, управлінні проєктами, розробці продуктів. Мої компетенції уналежнюють розробку та реалізацію стратегій позиціонування, аналіз ринку та конкурентів, створення ефективних маркетингових кампаній. Активно користуюсь сучасними методами дослідження, такі як критичний дискурс-аналіз, для глибшого розуміння комунікацій та їхнього впливу.",
+            about: [""],
+            shortQuote:
+                "Люди йдуть до людей! Ніколи не нехтуй людським фактором у бізнесі!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Hanna Truba",
-            about: "People go to people! Never neglect the human factor in business!",
-            services:
-                "An experienced business analyst with over three years of work in an international holding, specializing in business process analysis and optimization, strategic planning, budgeting, project management, and product development. My competencies include the development and implementation of positioning strategies, market and competitor analysis, and the creation of effective marketing campaigns. I actively use modern research methods, such as critical discourse analysis, for a deeper understanding of communications and their impact.",
+            about: [""],
+            shortQuote:
+                "People go to people! Never neglect the human factor in business!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Hanna Truba",
-            about: "Ludzie idą do ludzi! Nigdy nie lekceważ czynnika ludzkiego w biznesie!",
-            services:
-                "Doświadczony analityk biznesowy z ponad trzyletnim doświadczeniem w pracy w międzynarodowym holdingu, specjalizujący się w analizie i optymalizacji procesów biznesowych, planowaniu strategicznym, budżetowaniu, zarządzaniu projektami oraz rozwoju produktów. Moje kompetencje obejmują opracowywanie i wdrażanie strategii pozycjonowania, analizę rynku i konkurencji oraz tworzenie skutecznych kampanii marketingowych. Aktywnie korzystam z nowoczesnych metod badawczych, takich jak krytyczna analiza dyskursu, aby głębiej zrozumieć komunikację i jej wpływ.",
+            about: [""],
+            shortQuote:
+                "Ludzie idą do ludzi! Nigdy nie lekceważ czynnika ludzkiego w biznesie!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1319,23 +1387,24 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олена Голубьонкова",
-            about: "Маркетинг - це все! І все є маркетингом!",
-            services:
-                "Маркетингові дослідження галузі, ринку, споживачів. Системний стратегічний аналіз. Допомога у формулюванні та структуруванні цілей бізнесу. Розробка системи маркетингових стратегій для досягнення поставлених цілей. Система маркетингу для створення нових продуктів (товарів, послуг, програмних продуктів) та виведення їх на ринок.",
+            about: [""],
+            shortQuote: "Маркетинг - це все! І все є маркетингом!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Olena Holubonkova",
-            about: "Marketing is everything! And everything is marketing!",
-            services:
-                "Marketing research of industry, market, and consumers. System strategic analysis. Help in formulating and structuring business goals. Development of a system of marketing strategies to achieve the set goals. Marketing system for creating new products (goods, services, software products) and bringing them to market.",
+            about: [""],
+            shortQuote: "Marketing is everything! And everything is marketing!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Olena Holubonkova",
-            about: "Marketing jest wszystkim! A wszystko jest marketingiem!",
-            services:
-                "Badania marketingowe branży, rynku, konsumentów. Usystematyzowana analiza strategiczna. Pomoc w formułowaniu i strukturyzacji celów biznesowych. Opracowanie systemu strategii marketingowych umożliwiających osiągnięcie wyznaczonych celów. Marketingowy system tworzenia nowych produktów (towarów, usług, oprogramowania) i wprowadzania ich na rynek.",
+            about: [""],
+            shortQuote:
+                "Marketing jest wszystkim! A wszystko jest marketingiem!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -1373,23 +1442,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Марта Морінцева",
-            about: "Командна робота — це мистецтво перетворювати індивідуальні таланти у досконалий продукт.",
-            services:
-                "Створення тестової документації (тест план, чек листи, тест кейси, баг репорти).  Проведення веб тестування, UX/UI тестування, Functional testing. тестування API. Робота з Базами даних.",
+            about: [""],
+            shortQuote:
+                "Командна робота — це мистецтво перетворювати індивідуальні таланти у досконалий продукт.",
+            services: [""],
             team: "Smachno! na seli",
         },
         en: {
             name: "Marta Morintseva",
-            about: "Teamwork is the art of transforming individual talents into a perfect product.",
-            services:
-                "Creation of test documentation (test plan, checklists, test cases, bug reports). Web testing, UX/UI testing, Functional testing, API testing. Working with databases.",
+            about: [""],
+            shortQuote:
+                "Teamwork is the art of transforming individual talents into a perfect product.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Marta Morintseva",
-            about: "Praca zespołowa to sztuka przekształcania indywidualnych talentów w doskonały produkt.",
-            services:
-                "Tworzenie dokumentacji testowej (plan testów, listy kontrolne, przypadki testowe, raporty błędów). Testowanie stron internetowych, testowanie UX/UI, testowanie funkcjonalne, testowanie API. Praca z bazami danych.",
+            about: [""],
+            shortQuote:
+                "Praca zespołowa to sztuka przekształcania indywidualnych talentów w doskonały produkt.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -1426,23 +1498,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ірина Шевченко",
-            about: "Зараз подумаємо, потім обговоримо, а далі реалізуємо.",
-            services:
-                "Комунікативні навички. Збір та аналіз вимог, їх опис в User Story, оновлення документації, малювання BPMN-діаграм. Створення скетчів, мокапів, варфреймів. Розуміння SDLC, гнучких методологій та навичок управління.",
+            about: [""],
+            shortQuote: "Зараз подумаємо, потім обговоримо, а далі реалізуємо.",
+            services: [""],
             team: "Smachno! na seli",
         },
         en: {
             name: "Iryna Shevchenko",
-            about: "Now we'll think, then we'll discuss, and after that, we'll implement.",
-            services:
-                "Communication skills. Gathering and analyzing requirements, documenting them in User Stories, updating documentation, creating BPMN diagrams. Creating sketches, mockups, wireframes. Understanding SDLC, agile methodologies, and management skills.",
+            about: [""],
+            shortQuote:
+                "Now we'll think, then we'll discuss, and after that, we'll implement.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Iryna Shevchenko",
-            about: "Teraz pomyślimy, potem omówimy, a następnie zrealizujemy.",
-            services:
-                "Umiejętności komunikacyjne. Zbieranie i analizowanie wymagań, ich opis w User Stories, aktualizacja dokumentacji, rysowanie diagramów BPMN. Tworzenie szkiców, mockupów, makietów. Zrozumienie SDLC, zwinnych metodologii i umiejętności zarządzania.",
+            about: [""],
+            shortQuote:
+                "Teraz pomyślimy, potem omówimy, a następnie zrealizujemy.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -1477,23 +1551,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Наталі Істоміна",
-            about: "Я знаю як успішно вивести ваш продукт на ринок і почати заробляти на ньому.",
-            services:
-                "Спеціаліст з продуктового маркетингу. Маю досвід у розробці та виведенні на ринок нових продуктів (солодощі для ринку retail), створенні стратегій виходу на ринок, а також у брендінгу, PR, SMM та розробці рекламних кампаній (outdoor, audio). Володію навичками управління проєктами та розробкою споживчих упаковок.",
+            about: [""],
+            shortQuote:
+                "Я знаю як успішно вивести ваш продукт на ринок і почати заробляти на ньому.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Natali Istomina",
-            about: "I know how to successfully bring your product to the market and start making money on it.",
-            services:
-                "Product Marketing Specialist. Experienced in developing and launching new retail confectionery products. Skilled in go-to-market strategies, branding, PR, SMM, and outdoor/audio advertising. Proficient in project management and consumer packaging design.",
+            about: [""],
+            shortQuote:
+                "I know how to successfully bring your product to the market and start making money on it.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Natali Istomina",
-            about: "Wiem, jak skutecznie wprowadzić Twój produkt na rynek i zacząć na nim zarabiać.",
-            services:
-                "Specjalista ds. marketingu produktowego. Mam doświadczenie w rozwijaniu i wprowadzaniu na rynek nowych produktów (słodycze na rynek detaliczny), tworzeniu strategii wejścia na rynek, a także w brandingu, PR, SMM i opracowywaniu kampanii reklamowych (outdoor, audio). Posiadam umiejętności zarządzania projektami oraz doświadczenie w projektowaniu opakowań.",
+            about: [""],
+            shortQuote:
+                "Wiem, jak skutecznie wprowadzić Twój produkt na rynek i zacząć na nim zarabiać.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1526,23 +1603,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Наталі Істоміна",
-            about: "Будь-які неструктуровані вимоги до продукту я можу передати в схемах, діаграмах чи таблицях  ",
-            services:
-                "Спеціалізуюсь на аналізі бізнес-процесів, розробці користувацьких історій, сценаріїв використання та вимог до програмного забезпечення. Маю досвід роботи з BPMN, створюю вайрфрейми та технічні завдання.",
+            about: [""],
+            shortQuote:
+                "Будь-які неструктуровані вимоги до продукту я можу передати в схемах, діаграмах чи таблицях  ",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Natali Istomina",
-            about: "I can present any unstructured product requirements in diagrams, charts, or tables.",
-            services:
-                "I specialize in business process analysis, developing user stories, use cases, and software requirements. I have experience in BPMN, wireframing, and creating detailed technical specifications.",
+            about: [""],
+            shortQuote:
+                "I can present any unstructured product requirements in diagrams, charts, or tables.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Natali Istomina",
-            about: "Wszelkie niestrukturalne wymagania dotyczące produktu mogę przekazać w schematach, diagramach lub tabelach.",
-            services:
-                "Specjalizuję się w analizie procesów biznesowych, tworzeniu historii użytkowników, scenariuszy użycia i wymagań dotyczących oprogramowania. Mam doświadczenie w pracy z BPMN, tworzę makiety i specyfikacje techniczne.",
+            about: [""],
+            shortQuote:
+                "Wszelkie niestrukturalne wymagania dotyczące produktu mogę przekazać w schematach, diagramach lub tabelach.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1580,23 +1660,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Вероніка Злобіна",
-            about: "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
-            services:
-                "Створення дизайну для лендінгів, вебсайтів та мобільних додатків. Проведення UX досліджень(аналіз конкурентів та цільової аудиторії, інтерв'ю), опрацювання ТЗ, створення юзер флоу та інформаційної архітектури, JTBD та CJM; UX/UI дизайн, адаптивний дизайн, створення стилів, слідування айдентиці, прототипи та анімація. Створення банерів та постів для інстаграм або картинок для телеграм-ботів.",
+            about: [""],
+            shortQuote:
+                "Успішний дизайн — це не тільки краса, але й простота, яка допомагає користувачам досягти мети без зайвих зусиль.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Veronika Zlobina",
-            about: "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort.",
-            services:
-                "Design for landing pages, websites, and mobile applications. Conducting UX research (competitor and target audience analysis, interviews), developing technical specifications, creating user flow and information architecture, JTBD and CJM; UX/UI design, responsive design, style creation, identity following, prototyping and animation. Creation of banners and posts for Instagram or pictures for Telegram bots.",
+            about: [""],
+            shortQuote:
+                "Successful design is not only about beauty, but also about simplicity, which helps users achieve their goals without any extra effort.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Veronika Zlobina",
-            about: "Udany projekt to nie tylko piękno, ale także prostota, która pomaga użytkownikom osiągnąć ich cele bez dodatkowego wysiłku.",
-            services:
-                "Tworzenie projektów stron landing page, stron internetowych i aplikacji mobilnych. Prowadzenie badań UX (analiza konkurencji i grupy docelowej, wywiady), opracowywanie specyfikacji technicznych, tworzenie przepływu użytkowników i architektury informacji, JTBD i CJM; Projektowanie UX/UI, projektowanie responsywne, tworzenie stylu, przestrzeganie identyfikacji wizualnej, prototypowanie i animacja. Tworzenie banerów i postów na Instagram lub zdjęć dla botów w Telegramie.",
+            about: [""],
+            shortQuote:
+                "Udany projekt to nie tylko piękno, ale także prostota, która pomaga użytkownikom osiągnąć ich cele bez dodatkowego wysiłku.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1651,23 +1734,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Міла Максименко",
-            about: "Краса в деталях.",
-            services:
-                "Створення дизайну для вебсайтів та мобільних застосунків враховуючи цілі бізнесу та потреби користувачів. Респонсивний дизайн. Проведення досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів). Опрацювання отриманої інформації, створення персон, юзер флоу, карт емпатій. Розробка варфреймів, UI дизайну, UI кітів. ",
+            about: [""],
+            shortQuote: "Краса в деталях.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Mila Maksymenko",
-            about: "Beauty is in the details.",
-            services:
-                "Creation of design for websites and mobile applications, taking into account business goals and user needs. Responsive design. Conducting research (user surveys, in-depth interviews, competitor analysis). Processing of received information, creation of personas, user flow, empathy maps. Development of wireframes, UI design, UI kit.",
+            about: [""],
+            shortQuote: "Beauty is in the details.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Mila Maksymenko",
-            about: "Piękno tkwi w szczegółach.",
-            services:
-                "Tworzenie projektów dla stron internetowych i aplikacji mobilnych, uwzględniając cele biznesowe i potrzeby użytkowników. Projektowanie responsywne. Przeprowadzanie badań (ankiety użytkowników, wywiady pogłębione, analiza konkurencji). Analiza zebranych informacji, tworzenie person, ścieżek użytkownika, map empatii. Opracowywanie makietów, projektowanie UI, zestawów UI.",
+            about: [""],
+            shortQuote: "Piękno tkwi w szczegółach.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1707,23 +1790,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Антон Черток",
-            about: "Великий результат досягається через увагу до деталей і прагнення до простоти.",
-            services:
-                "Спеціалізуюся на створенні сучасних, адаптивних і високоефективних інтерфейсів користувача, приділяючи особливу увагу якості коду, зменшенню кількості помилок і простоті підтримки. Використовую найкращі підходи для забезпечення швидкої розробки та масштабованості проєктів. Маю досвід розробки додатків, які можуть працювати як повністю на стороні користувача, так і частково на сервері, що забезпечує оптимальну швидкість завантаження, високу продуктивність і кращу видимість у пошукових системах. Створюю стильні та зручні інтерфейси, що відповідають сучасним стандартам дизайну. Також забезпечую повну інтеграцію з необхідними сервісами та автоматизацію процесів розробки, що дозволяє швидко і ефективно впроваджувати нові функції та оновлення.",
+            about: [""],
+            shortQuote:
+                "Великий результат досягається через увагу до деталей і прагнення до простоти.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Anton Chertok",
-            about: "Great results are achieved through attention to detail and a pursuit of simplicity.",
-            services:
-                "Specializes in creating modern, adaptive, and high-performance user interfaces, with a strong focus on code quality, reducing errors, and ease of maintenance. Best practices are employed to ensure the rapid development and scalability of projects. Experience includes developing applications that can operate entirely on the client side or partially on the server side, ensuring optimal load times, high performance, and better search engine visibility. Designs are stylish and user-friendly, adhering to modern design standards. Seamless integration with necessary services is ensured, along with automation of development processes, allowing for the quick and efficient implementation of new features and updates.",
+            about: [""],
+            shortQuote:
+                "Great results are achieved through attention to detail and a pursuit of simplicity.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Anton Chertok",
-            about: "Doskonałe wyniki osiąga się dzięki dbałości o szczegóły i przywiązaniu do prostoty.",
-            services:
-                "Specjalizuję się w tworzeniu nowoczesnych, responsywnych i wysoce wydajnych interfejsów użytkownika, zwracając szczególną uwagę na jakość kodu, redukcję błędów i łatwość wsparcia. Korzystam z najlepszych praktyk, aby zapewnić szybki rozwój i skalowalność projektów. Mam doświadczenie w tworzeniu aplikacji, które mogą działać zarówno w pełni po stronie użytkownika, jak i częściowo na serwerze, co zapewnia optymalną szybkość ładowania, wysoką wydajność i lepszą widoczność w wyszukiwarkach. Tworzę stylowe i przyjazne dla użytkownika interfejsy, które spełniają nowoczesne standardy projektowania. Zapewniam również pełną integrację z niezbędnymi usługami i automatyzuję procesy deweloperskie, co pozwala na szybkie i sprawne wdrażanie nowych funkcji i aktualizacji.",
+            about: [""],
+            shortQuote:
+                "Doskonałe wyniki osiąga się dzięki dbałości o szczegóły i przywiązaniu do prostoty.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1769,23 +1855,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Дмитро Булахов",
-            about: "Випадковості - не випадкові.",
-            services:
-                "Створення сучасних вебдодатків різної складності. Забезпечення повної адаптивності та оптимізації всіх вебдодатків для різних пристроїв і розмірів екранів. Впровадження безпечних механізмів аутентифікації та авторизації.",
+            about: [""],
+            shortQuote: "Випадковості - не випадкові.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Dmytro Bulakhov",
-            about: "Accidents are not random.",
-            services:
-                "Development of modern web applications of varying complexity. Ensuring full adaptability and optimization of all web applications for different devices and screen sizes. Implementation of secure authentication and authorization mechanisms.",
+            about: [""],
+            shortQuote: "Accidents are not random.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Dmytro Bulakhov",
-            about: "Przypadki nie są przypadkowe.",
-            services:
-                "Rozwój nowoczesnych aplikacji internetowych o różnym stopniu złożoności. Zapewnienie pełnej adaptowalności i optymalizacji wszystkich aplikacji internetowych dla różnych urządzeń i rozmiarów ekranu. Wdrożenie bezpiecznych mechanizmów uwierzytelniania i autoryzacji.",
+            about: [""],
+            shortQuote: "Przypadki nie są przypadkowe.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1822,23 +1908,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Євген Малиш",
-            about: "Я можу зробити все, що завгодно. Питання лише в часі",
-            services:
-                "Розробка та підтримка безпечного високопродуктивного API-сервера на Java з повнотекстовим пошуком на базі Hibernate ORM, Search Apache Lucene. Cтворення Open-API документації для REST API. Реалізація безпеки на основі OAuth2, OpenID Connect з використанням Spring Secutiry на основі JWT токенів.",
+            about: [""],
+            shortQuote: "Я можу зробити все, що завгодно. Питання лише в часі",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Evhen Malysh",
-            about: "I can do anything. It's just a matter of time.",
-            services:
-                "Development and support of a secure high-performance Java API server with full-text search based on Hibernate ORM, Search Apache Lucene. Creation of Open-API documentation for the REST API. Implementation of security based on OAuth2, OpenID Connect using Spring Security based on JWT tokens",
+            about: [""],
+            shortQuote: "I can do anything. It's just a matter of time.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Evhen Malysh",
-            about: "Mogę zrobić wszystko. To tylko kwestia czasu.",
-            services:
-                "Rozwój i wsparcie bezpiecznego, wysokowydajnego serwera Java API z wyszukiwaniem pełnotekstowym opartym na Hibernate ORM, Search Apache Lucene. Stworzenie dokumentacji Open-API dla REST API. Wdrożenie zabezpieczeń opartych na OAuth2, OpenID Connect przy użyciu Spring Security w oparciu o tokeny JWT.",
+            about: [""],
+            shortQuote: "Mogę zrobić wszystko. To tylko kwestia czasu.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1875,23 +1961,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анатолій Омельченко",
-            about: "Я завжди прагну, щоб усе працювало ідеально. Можливо, це трохи перфекціонізм, але я вірю, що якість у деталях.",
-            services:
-                "Розробка та підтримка серверних додатків на Java/Kotlin, створення та інтеграція REST API, оптимізація продуктивності систем, управління базами даних, забезпечення високого рівня безпеки, автоматизація бізнес-процесів.",
+            about: [""],
+            shortQuote:
+                "Я завжди прагну, щоб усе працювало ідеально. Можливо, це трохи перфекціонізм, але я вірю, що якість у деталях.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Anatolii Omelchenko",
-            about: "I always strive to make everything work perfectly. It might be a bit of perfectionism, but I believe that quality lies in the details.",
-            services:
-                "Development and maintenance of server applications in Java/Kotlin, creation and integration of REST APIs, system performance optimization, database management, high-level security assurance, and business process automation.",
+            about: [""],
+            shortQuote:
+                "I always strive to make everything work perfectly. It might be a bit of perfectionism, but I believe that quality lies in the details.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Anatolii Omelchenko",
-            about: "Zawsze chcę, aby wszystko działało idealnie.  Może to odrobina perfekcjonizmu, ale wierzę, że jakość tkwi w szczegółach.",
-            services:
-                "Tworzenie i utrzymanie aplikacji serwerowych w Java/Kotlin, tworzenie i integracja REST API, optymalizacja wydajności systemów, zarządzanie bazami danych, zapewnienie wysokiego poziomu bezpieczeństwa oraz automatyzacja procesów biznesowych.",
+            about: [""],
+            shortQuote:
+                "Zawsze chcę, aby wszystko działało idealnie.  Może to odrobina perfekcjonizmu, ale wierzę, że jakość tkwi w szczegółach.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1926,23 +2015,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олександр Мещерський",
-            about: "Ніколи не здавайтеся.",
-            services:
-                "Розробляю сучасні серверні додатки, інтегрую бізнес-логіку, особливу увагу приділяю безпеці та в той же час простоті коду. Працюю з SQL та NoSQL, хмарними сервісами, REST, меседж-брокерами. Також маю досвід та навички роботи з фронтенд-інструментами (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
+            about: [""],
+            shortQuote: "Ніколи не здавайтеся.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Oleksandr Meshcherskyi",
-            about: "Never give up.",
-            services:
-                "I develop modern server applications, integrate business logic, and pay special attention to security and simplicity of code. I work with SQL and NoSQL, cloud services, REST, and message brokers. I also have experience and skills in front-end tools (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
+            about: [""],
+            shortQuote: "Never give up.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Oleksandr Meshcherskyi",
-            about: "Nigdy się nie poddawaj.",
-            services:
-                "Tworzę nowoczesne aplikacje serwerowe, integruję logikę biznesową, zwracam szczególną uwagę na bezpieczeństwo i prostotę kodu. Pracuję z SQL i NoSQL, usługami w chmurze, REST i brokerami wiadomości. Posiadam również doświadczenie i umiejętności w zakresie narzędzi front-endowych (JavaScript, TypeScript, React, Next, Redux, RTK Query).",
+            about: [""],
+            shortQuote: "Nigdy się nie poddawaj.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -1975,23 +2064,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Світлана Крохмальна",
-            about: "Гарно розроблений та відтестований продукт принесе користь та задоволення замовнику. Якісна та тісна робота в команді створить цей продукт.",
-            services:
-                "Створення тест плану та тестової стратегії. Написання тест кейсів, smoke та regression checklists. Виконання: smoke, API, functional, non-functional, regression, retesting and end-to-end тестування. Створення багрепортів в Jira. Супровід процесів розвитку команди.",
+            about: [""],
+            shortQuote:
+                "Гарно розроблений та відтестований продукт принесе користь та задоволення замовнику. Якісна та тісна робота в команді створить цей продукт.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Svitlana Krokhmalna",
-            about: "A well-designed and tested product will bring value and satisfaction to the customer. High-quality and close teamwork will create this product.",
-            services:
-                "Creating a test plan and test strategy. Writing test cases, smoke and regression checklists. Execution: smoke, API, functional, non-functional, regression, retesting and end-to-end testing. Creating bug reports in Jira. Support of team development processes.",
+            about: [""],
+            shortQuote:
+                "A well-designed and tested product will bring value and satisfaction to the customer. High-quality and close teamwork will create this product.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Svitlana Krokhmalna",
-            about: "Dobrze zaprojektowany i przetestowany produkt przyniesie klientowi korzyści i satysfakcję. Wysoka jakość i ścisła praca zespołowa pozwolą stworzyć ten produkt.",
-            services:
-                "Tworzenie planu testów i strategii testowania. Pisanie przypadków testowych, list kontrolnych testów dymnych i regresji. Wykonywanie: testów dymnych, API, funkcjonalnych, niefunkcjonalnych, regresji, ponownych testów i testów kompleksowych. Tworzenie raportów błędów w Jira. Wsparcie procesów rozwoju zespołu.",
+            about: [""],
+            shortQuote:
+                "Dobrze zaprojektowany i przetestowany produkt przyniesie klientowi korzyści i satysfakcję. Wysoka jakość i ścisła praca zespołowa pozwolą stworzyć ten produkt.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -2026,23 +2118,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Онопрієнко",
-            about: "На мене можна покластися в будь-яких умовах!",
-            services:
-                "Проведення ручного тестування програмного забезпечення. Написання тест-кейсів, чеклістів та звітів про помилки. API тестування з використанням Postman. Впровадження процесів якості та зниження дефектів після релізу.",
+            about: [""],
+            shortQuote: "На мене можна покластися в будь-яких умовах!",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Oksana Onopriienko",
-            about: "You can rely on me in any situation!",
-            services:
-                "Conducting manual software testing. Writing test cases, checklists, and bug reports. API testing using Postman. Implementation of quality processes and post-release defect reduction.",
+            about: [""],
+            shortQuote: "You can rely on me in any situation!",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Oksana Onopriienko",
-            about: "Na mnie można polegać w każdej sytuacji!",
-            services:
-                "Przeprowadzanie ręcznych testów oprogramowania. Pisanie przypadków testowych, list kontrolnych i raportów o błędach. Testowanie API przy użyciu Postman. Wdrażanie procesów jakości i redukcja defektów po wersji.",
+            about: [""],
+            shortQuote: "Na mnie można polegać w każdej sytuacji!",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -2086,23 +2178,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олена Галушка",
-            about: "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
-            services:
-                "Створення дизайну для мобільних застосунків та вебсайтів. Проведення UX досліджень (опитування користувачів, глибинні інтерв'ю, аналіз конкурентів, job stories). Складання юзер флоу, інформаційної архітектури, персони. Також продуктові гіпотези, jobs to be done, Customer Journey Map, пріоритизація по Kano model. Прототипи, UI дизайн, адаптиви створення UI кітів, стилі, змінні. Немодероване юзабіліті тестування. Презентація. Обробка фото та зображень.",
+            about: [""],
+            shortQuote:
+                "Дизайн не повинен бути складним; часто найпростіше рішення є найкращим.",
+            services: [""],
             team: "Український театр",
         },
         en: {
             name: "Olena Halushka",
-            about: "Design doesn’t have to be complicated; often the simplest solution is the best.",
-            services:
-                "Designing mobile apps and websites. Conducting UX research (user surveys, in-depth interviews, competitor analysis, job stories). Creation of user flow, information architecture, personas. Also, product hypotheses, jobs to be done, Customer Journey Map, prioritization by Kano model. Prototypes, UI design, adaptive UI cats, styles, variables. Unmoderated User testing. Presentation. Photo and image processing.",
+            about: [""],
+            shortQuote:
+                "Design doesn’t have to be complicated; often the simplest solution is the best.",
+            services: [""],
             team: "Ukrainian theater",
         },
         pl: {
             name: "Olena Halushka",
-            about: "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
-            services:
-                "Projektowanie aplikacji mobilnych i stron internetowych. Prowadzenie badań UX (ankiety z użytkownikami, pogłębione wywiady, analiza konkurencji, historie pracy). Tworzenie przepływu użytkowników, architektury informacji, person. Również hipotezy produktu, zadania do wykonania, Customer Journey Map, priorytetyzacja według modelu Kano. Prototypy, projektowanie interfejsu użytkownika, adaptacyjne koty interfejsu użytkownika, style, zmienne. Niemoderowane testy użytkowników. Prezentacja. Przetwarzanie zdjęć i obrazów.",
+            about: [""],
+            shortQuote:
+                "Design nie musi być skomplikowany; często najprostsze rozwiązanie jest najlepsze.",
+            services: [""],
             team: "Ukrainian theater",
         },
     },
@@ -2138,23 +2233,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Марія Черевко",
-            about: "Хороший дизайн - це як хороший жарт: якщо треба пояснювати, він не працює.",
-            services:
-                "Як UX/UI дизайнер, я починаю з аналізу потреб клієнта і користувачів. Досліджую ринок і визначаю ключові вимоги до продукту, аналізую цільову аудиторію і визначаю її майбутній шлях на продукті. Потім створюю концепцію, прототипи і тестую їх з користувачами. Після цього розробляю візуальний дизайн і співпрацюю з розробниками для його впровадження. Після запуску вдосконалюю продукт на основі відгуків користувачів.",
+            about: [""],
+            shortQuote:
+                "Хороший дизайн - це як хороший жарт: якщо треба пояснювати, він не працює.",
+            services: [""],
             team: "i love my team",
         },
         en: {
             name: "Mariia Cherevko",
-            about: "Good design is like a good joke: if you have to explain it, it doesn't work.",
-            services:
-                "As a UX/UI designer, I start by analyzing the needs of the client and users. I research the market and identify key product requirements, analyze the target audience, and define their future journey with the product. Then, I create a concept, prototypes, and test them with users. After that, I develop the visual design and collaborate with developers for implementation. Following the launch, I refine the product based on user feedback.",
+            about: [""],
+            shortQuote:
+                "Good design is like a good joke: if you have to explain it, it doesn't work.",
+            services: [""],
             team: "i love my team",
         },
         pl: {
             name: "Mariia Cherevko",
-            about: "Dobry design jest jak dobry żart: jeśli trzeba go tłumaczyć, to nie działa.",
-            services:
-                "Jako projektant UX/UI zaczynam od analizy potrzeb klienta i użytkowników. Badam rynek i określam kluczowe wymagania dotyczące produktu, analizuję grupę docelową i definiuję jej przyszłą ścieżkę w produkcie. Następnie tworzę koncepcję, prototypy i testuję je z użytkownikami. Po tym opracowuję projekt wizualny i współpracuję z deweloperami nad jego wdrożeniem. Po uruchomieniu produktu, udoskonalam go na podstawie opinii użytkowników.",
+            about: [""],
+            shortQuote:
+                "Dobry design jest jak dobry żart: jeśli trzeba go tłumaczyć, to nie działa.",
+            services: [""],
             team: "i love my team",
         },
     },
@@ -2198,24 +2296,139 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Анна Прутнік",
-            about: "Щастя - це робити те, що любиш.",
-            services:
-                "Створення адаптивних веб-додатків з сучасним, зручним та інтуїтивним інтерфейсом, що вирішують конкретні бізнес-завдання та забезпечують стабільну роботу.",
+            about: [
+                "Основний фокус моєї роботи як Frontend developer — створення інтерфейсів, які не просто виглядають привабливо, а вирішують бізнес-задачі та впливають на результат продукту. Мені подобається, що кілька рядків коду можуть підвищити ефективність, покращити взаємодію користувача або збільшити конверсію.",
+                "Тому для мене важливо розуміти логіку бізнесу, поведінку користувачів і цілі проєкту. Це дозволяє створювати адаптивні, продуктивні та стабільні рішення, які добре працюють на всіх пристроях.",
+                "Працювала над проєктами різної складності: від лендінгів із фокусом на конверсію до веб-ресурсів і платформ, де ключові — швидкість, UX, доступність та архітектура контенту. У роботі увагу приділяю деталям, мікровзаємодіям і логіці компонування. Використовую сучасний стек — React, Next.js, Astro.js, TypeScript, UI-бібліотеки, створюю кастомні компоненти й оптимізовані анімації. Не прив’язуюся до інструментів: обираю технології під задачу й швидко адаптуюсь. Прагну зростати, брати складніші задачі та підсилювати цінність продукту.",
+            ],
+            shortQuote:
+                "Робота займатиме велику частину нашого життя, і єдиний спосіб бути по-справжньому задоволеним — це робити те, що ви любите.",
+            services: [
+                "Розробка адаптивних веб-інтерфейсів",
+                "Створення сучасних лендінгів та промосторінок",
+                "Інтеграція фронтенду з API та зовнішніми сервісами",
+                "Реалізація анімацій та мікровзаємодій",
+                "Оптимізація продуктивності інтерфейсу",
+                "Підготовка SEO-орієнтованих сторінок",
+            ],
             team: "i love my team",
+            languages: [
+                { name: "Українська", level: "Рідна" },
+                { name: "Англійська", level: "Середній" },
+            ],
+            education: [
+                {
+                    institution:
+                        "Yurii Kondratiuk Poltava National Technical University",
+                    degree: "Master's degree of Economic Cybernetics",
+                    yearStart: 2003,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2021,
+                    yearEnd: 2022,
+                },
+                {
+                    institution: "English For IT",
+                    degree: "English For Tech (level 1)",
+                    yearStart: 2023,
+                    yearEnd: 2023,
+                },
+            ],
         },
         en: {
             name: "Anna Prutnik",
-            about: "Happiness is doing what you love.",
-            services:
-                "Creating responsive web applications with a modern, user-friendly, and intuitive interface that solves specific business tasks and ensures stable performance.",
+            about: [
+                "My main focus as a Frontend Developer is creating interfaces that not only look appealing but directly solve business problems and influence product outcomes. I enjoy how a few lines of code can improve efficiency, enhance user interaction, or increase conversion.",
+                "Understanding business logic, user behavior, and project goals is essential for me. This allows me to build adaptive, high-performance, and stable solutions that work well across all devices.",
+                "I’ve worked on projects of various complexity: from landing pages focused on conversion to web platforms where speed, UX, accessibility, and content architecture are key. I pay great attention to details, micro-interactions, and layout logic. I work with a modern stack — React, Next.js, Astro.js, TypeScript, UI libraries — creating custom components and optimized animations. I don’t stick to specific tools: I choose technologies based on the task and adapt quickly. I aim to grow, take on more complex challenges, and strengthen product value.",
+            ],
+            shortQuote: "Happiness is doing what you love.",
+            services: [
+                "Responsive web interface development",
+                "Creation of modern landing pages and promo websites",
+                "Frontend integration with APIs and external services",
+                "Implementation of animations and micro-interactions",
+                "Interface performance optimization",
+                "Preparation of SEO-oriented pages",
+            ],
             team: "i love my team",
+            languages: [
+                { name: "Ukrainian", level: "Native" },
+                { name: "English", level: "Intermediate" },
+            ],
+            education: [
+                {
+                    institution:
+                        "Yurii Kondratiuk Poltava National Technical University",
+                    degree: "Master's degree of Economic Cybernetics",
+                    yearStart: 2003,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2021,
+                    yearEnd: 2022,
+                },
+                {
+                    institution: "English For IT",
+                    degree: "English For Tech (level 1)",
+                    yearStart: 2023,
+                    yearEnd: 2023,
+                },
+            ],
         },
         pl: {
             name: "Anna Prutnik",
-            about: "Szczęście to robić to, co się kocha.",
-            services:
-                "Tworzenie responsywnych aplikacji internetowych z nowoczesnym, przyjaznym i intuicyjnym interfejsem, które rozwiązują konkretne zadania biznesowe i zapewniają stabilne działanie.",
+            about: [
+                "Moim głównym celem jako Frontend Developer jest tworzenie interfejsów, które nie tylko dobrze wyglądają, ale realnie rozwiązują problemy biznesowe i wpływają na wyniki produktu. Lubię, że kilka linijek kodu może poprawić efektywność, interakcję użytkownika lub konwersję.",
+                "Kluczowe jest dla mnie zrozumienie logiki biznesu, zachowań użytkowników i celów projektu, co pozwala tworzyć adaptacyjne, wydajne i stabilne rozwiązania działające na wszystkich urządzeniach.",
+                "Pracowałam nad projektami o różnej złożoności — od landing page’y nastawionych na konwersję po serwisy i platformy, w których liczą się szybkość, UX, dostępność i przejrzysta architektura treści. Zwracam uwagę na detale i mikrointerakcje. Pracuję z nowoczesnym stackiem (React, Next.js, Astro.js, TypeScript), tworzę komponenty niestandardowe i zoptymalizowane animacje, szybko dostosowuję się do nowych narzędzi. Dążę do rozwoju i realizacji zadań, które zwiększają wartość produktu.",
+            ],
+            shortQuote: "Szczęście to robić to, co się kocha.",
+            services: [
+                "Tworzenie responsywnych interfejsów webowych",
+                "Projektowanie nowoczesnych landing page’y i stron promocyjnych",
+                "Integracja frontendu z API i usługami zewnętrznymi",
+                "Implementacja animacji i mikrointerakcji",
+                "Optymalizacja wydajności interfejsu",
+                "Przygotowanie stron zorientowanych na SEO",
+            ],
             team: "i love my team",
+            languages: [
+                { name: "Ukraiński", level: "Ojczysty" },
+                { name: "Angielski", level: "Średni" },
+            ],
+            education: [
+                {
+                    institution:
+                        "Yurii Kondratiuk Poltava National Technical University",
+                    degree: "Master's degree of Economic Cybernetics",
+                    yearStart: 2003,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2021,
+                    yearEnd: 2022,
+                },
+                {
+                    institution: "English For IT",
+                    degree: "English For Tech (level 1)",
+                    yearStart: 2023,
+                    yearEnd: 2023,
+                },
+            ],
         },
     },
     {
@@ -2250,23 +2463,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олександр Петричук",
-            about: "Перш ніж намагатися вразити користувача, не змушуй його чекати та не змушуй його страждати.",
-            services:
-                "Розширення функціоналу наявних веб-додатків і створення нових з нуля. Клієнтська та/або серверна частини.",
+            about: [""],
+            shortQuote:
+                "Перш ніж намагатися вразити користувача, не змушуй його чекати та не змушуй його страждати.",
+            services: [""],
             team: "i love my team",
         },
         en: {
             name: "Oleksandr Petrychuk",
-            about: "Before trying to impress the user, don't make them wait and don't make them suffer.",
-            services:
-                "Expanding the functionality of existing web applications and creating new ones from scratch. Client-side and/or server-side.",
+            about: [""],
+            shortQuote:
+                "Before trying to impress the user, don't make them wait and don't make them suffer.",
+            services: [""],
             team: "i love my team",
         },
         pl: {
             name: "Oleksandr Petrychuk",
-            about: "Zanim spróbujesz zaimponować użytkownikowi, nie każ mu czekać i nie każ mu cierpieć.",
-            services:
-                "Rozszerzenie funkcjonalności istniejących aplikacji internetowych i tworzenie nowych od podstaw. Część kliencka i/lub serwerowa.",
+            about: [""],
+            shortQuote:
+                "Zanim spróbujesz zaimponować użytkownikowi, nie każ mu czekać i nie każ mu cierpieć.",
+            services: [""],
             team: "i love my team",
         },
     },
@@ -2301,23 +2517,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Євген Сєдінін",
-            about: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
-            services:
-                "Ручне тестування, десктоп та мобільне тестування, API тестування, робота з тестовою документацією (тест кейс, чекліст, баг репорт).",
+            about: [""],
+            shortQuote: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
+            services: [""],
             team: "Smachno! na seli",
         },
         en: {
             name: "Eugene Siedinin",
-            about: "QA weaves a fine thread through all the intricacies of IT.",
-            services:
-                "Manual testing, desktop and mobile testing, API testing, work with test documentation (test case, checklist, bug report).",
+            about: [""],
+            shortQuote:
+                "QA weaves a fine thread through all the intricacies of IT.",
+            services: [""],
             team: "Smachno! na seli",
         },
         pl: {
             name: "Eugene Siedinin",
-            about: "QA cienką nicią przechodzi przez wszystkie zawiłości IT.",
-            services:
-                "Testowanie manualne, testowanie desktopowe i mobilne, testowanie API, praca z dokumentacją testową (przypadek testowy, lista kontrolna, raport błędu).",
+            about: [""],
+            shortQuote:
+                "QA cienką nicią przechodzi przez wszystkie zawiłości IT.",
+            services: [""],
             team: "Smachno! na seli",
         },
     },
@@ -2356,23 +2574,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Олександр Щербак",
-            about: "Все, що не знайдеш ти, знайду я.",
-            services:
-                "Займаюся ручним тестуванням: функціональним, нефункціональним, UI/UX, API, баз даних і продуктивності. Аналізую вимоги, досліджую продукт і застосовую різноманітні методи тестування. Розробляю тестову документацію та складаю звіти про дефекти.",
+            about: [""],
+            shortQuote: "Все, що не знайдеш ти, знайду я.",
+            services: [""],
             team: "i love my team",
         },
         en: {
             name: "Oleksandr Shcherbak",
-            about: "What you can't find, I will.",
-            services:
-                "I perform manual testing: functional, non-functional, UI/UX, API, database, and performance testing. I analyze requirements, study the product, and apply various testing methods. I develop test documentation and prepare defect reports.",
+            about: [""],
+            shortQuote: "What you can't find, I will.",
+            services: [""],
             team: "i love my team",
         },
         pl: {
             name: "Oleksandr Shcherbak",
-            about: "To, czego nie znajdziesz, ja znajdę.",
-            services:
-                "Wykonuję testowanie manualne: funkcjonalne, niefunkcjonalne, UI/UX, API, baz danych i wydajnościowe. Analizuję wymagania, badam produkt i stosuję różne metody testowania. Tworzę dokumentację testową i przygotowuję raporty o defektach. ",
+            about: [""],
+            shortQuote: "To, czego nie znajdziesz, ja znajdę.",
+            services: [""],
             team: "i love my team",
         },
     },
@@ -2406,23 +2624,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Соломія Луцька ",
-            about: "",
-            services:
-                "В якості Project Manager я організовую роботу команди, проводжу щоденні мітинги для синхронізації роботи, забезпечую ефективну комунікацію між розробниками, дизайнерами та іншими учасниками. Координую виконання певних завдань, дотримання термінів і займаюся загальною організацією процесів. Моя роль включає планування, управління ризиками та контроль прогресу, щоб забезпечити якісну реалізацію проєкту.",
+            shortQuote: "",
+            about: [""],
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Solomiia Lutska",
-            about: "",
-            services:
-                "As a Project Manager, I organize the team's work, conduct daily meetings to synchronize activities, and ensure effective communication between developers, designers, and other participants. I coordinate the completion of specific tasks, adherence to deadlines, and manage the overall organization of processes. My role includes planning, risk management, and progress control to ensure the successful implementation of the project.",
+            shortQuote: "",
+            about: [""],
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Solomiia Lutska",
-            about: "",
-            services:
-                "Jako Project Manager organizuję pracę zespołu, prowadzę codzienne spotkania w celu synchronizacji działań oraz zapewniam skuteczną komunikację między programistami, projektantami i innymi uczestnikami. Koordynuję realizację konkretnych zadań, dotrzymywanie terminów i zajmuję się ogólną organizacją procesów. Moja rola obejmuje planowanie, zarządzanie ryzykiem i kontrolę postępów, aby zapewnić pomyślną realizację projektu.",
+            shortQuote: "",
+            about: [""],
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2456,23 +2674,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Арпуль",
-            about: "Якість - це ключ до впевненості в продукті.",
-            services:
-                "Займаюся ручним тестуванням різних типів (функціональне, нефункціональне, UI/UX, API, бази даних, продуктивність), аналізую вимоги, досліджую поведінку продукту, використовую різні підходи до тестування та створюю тестову документацію (test cases, checklists, bug reports).",
+            about: [""],
+            shortQuote: "Якість - це ключ до впевненості в продукті.",
+            services: [""],
             team: "i love my team",
         },
         en: {
             name: "Oksana Arpul",
-            about: "Quality is the key to confidence in a product.",
-            services:
-                "I perform manual testing of various types (functional, non-functional, UI/UX, API, database, and performance), analyze requirements, explore product behavior, apply different testing approaches, and create test documentation (test cases, checklists, bug reports).",
+            about: [""],
+            shortQuote: "Quality is the key to confidence in a product.",
+            services: [""],
             team: "i love my team",
         },
         pl: {
             name: "Oksana Arpul",
-            about: "Jakość to klucz do zaufania do produktu.",
-            services:
-                "Zajmuję się testowaniem manualnym różnych typów (funkcjonalne, niefunkcjonalne, UI/UX, API, bazy danych i wydajność), analizuję wymagania, badam zachowanie produktu, stosuję różne podejścia do testowania i tworzę dokumentację testową (przypadki testowe, listy kontrolne, raporty o błędach).",
+            about: [""],
+            shortQuote: "Jakość to klucz do zaufania do produktu.",
+            services: [""],
             team: "i love my team",
         },
     },
@@ -2498,23 +2716,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Вікторія Лапіна",
-            about: "Хороший дизайн - це результат злиття естетики та функціональності.",
-            services:
-                "Створюю дизайн сайтів та мобільних додатків — від дослідження до фінального інтерфейсу. Аналізую конкурентів, визначаю цільову аудиторію та її потреби, розробляю користувацькі сценарії (user flow), вайрфрейми й інтерактивні прототипи. Працюю з адаптивним дизайном, а також створюю UI kit для зручності розробки та підтримки продукту.",
+            about: [""],
+            shortQuote:
+                "Хороший дизайн - це результат злиття естетики та функціональності.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Viktoriia Lapina",
-            about: "Good design is the result of merging aesthetics and functionality.",
-            services:
-                "I design websites and mobile applications — from research to the final interface. I analyze competitors, identify the target audience and its needs, and develop user flows, wireframes, and interactive prototypes. I work with responsive design and also create UI kits to facilitate development and product maintenance.",
+            about: [""],
+            shortQuote:
+                "Good design is the result of merging aesthetics and functionality.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Viktoriia Lapina",
-            about: "Dobry design to efekt połączenia estetyki i funkcjonalności.",
-            services:
-                "Tworzę projekty stron internetowych i aplikacji mobilnych — od badań po finalny interfejs. Analizuję konkurencję, określam grupę docelową i jej potrzeby, opracowuję scenariusze użytkownika (user flow), makiety (wireframes) i interaktywne prototypy. Pracuję z designem responsywnym, a także tworzę UI kit w celu ułatwienia rozwoju i utrzymania produktu.",
+            about: [""],
+            shortQuote:
+                "Dobry design to efekt połączenia estetyki i funkcjonalności.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2556,23 +2777,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Степан Козурак",
-            about: "Робота - не вовк, ліс - не великий.",
-            services:
-                "Планування та робота з командою; збереження продуктивності членів команди, запобігання вигорянню. Ризик менеджмент та конфліктологія. Продуктова психологія, її вплив на проєктний менеджмент та взаємозв’язок з ринковими потребами.",
+            about: [""],
+            shortQuote: "Робота - не вовк, ліс - не великий.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Stepan Kozurak",
-            about: "Work isn’t a wolf, and the forest isn’t that big.",
-            services:
-                "Team planning and collaboration; maintaining team performance and preventing burnout. Risk management and conflict resolution. Product psychology, its impact on project management, and its alignment with market needs.",
+            about: [""],
+            shortQuote: "Work isn’t a wolf, and the forest isn’t that big.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Stepan Kozurak",
-            about: "Robota to nie wilk, las nie jest taki wielki.",
-            services:
-                "Planowanie i współpraca zespołowa; utrzymanie wydajności członków zespołu oraz zapobieganie wypaleniu zawodowemu. Zarządzanie ryzykiem i rozwiązywanie konfliktów. Psychologia produktu, jej wpływ na zarządzanie projektami oraz powiązanie z potrzebami rynkowymi.",
+            about: [""],
+            shortQuote: "Robota to nie wilk, las nie jest taki wielki.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2609,23 +2830,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Оксана Жмурко",
-            about: "Успіх прямо пропорційний зусиллям, які ми докладаємо. Аналіз бізнесу та обрана  стратегія захисту інтелектуальної власності - це вже половина успіху!",
-            services:
-                "Аналіз бізнес-потреб замовників. Аналіз стейкхолдерів. Виявлення, аналіз та документування вимог в форматах User Story, Use Case, SRS, Wireframes. Моделювання BPMN, UML. Розуміння SDLC.",
+            about: [""],
+            shortQuote:
+                "Успіх прямо пропорційний зусиллям, які ми докладаємо. Аналіз бізнесу та обрана  стратегія захисту інтелектуальної власності - це вже половина успіху!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Oksana Zhmurko",
-            about: "Success is directly proportional to the effort we apply. Business analysis and a chosen intellectual property strategy are already half the success!",
-            services:
-                "Analysis of customer business needs. Stakeholder analysis. Requirements elicitation, analysis, and documentation in User Story, Use Case, SRS, and Wireframes formats. BPMN and UML modelling. Understanding of the SDLC.",
+            about: [""],
+            shortQuote:
+                "Success is directly proportional to the effort we apply. Business analysis and a chosen intellectual property strategy are already half the success!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Oksana Zhmurko",
-            about: "Sukces jest wprost proporcjonalny do wysiłku, który wkładamy. Analiza biznesu i wybrana strategia  własności intelektualnej to już połowa sukcesu!",
-            services:
-                "Analiza biznesowych potrzeb klientów. Analiza interesariuszy. Identyfikacja, analiza i dokumentacja wymagań w formatach User Story, Use Case, SRS, Wireframes. Modelowanie w notacji BPMN i UML. Znajomość cyklu życia oprogramowania (SDLC).",
+            about: [""],
+            shortQuote:
+                "Sukces jest wprost proporcjonalny do wysiłku, który wkładamy. Analiza biznesu i wybrana strategia  własności intelektualnej to już połowa sukcesu!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2650,23 +2874,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Діана Дудник",
-            about: "Мистецтво дизайну - це трансформація хаосу в чітку структуру.",
-            services:
-                "Створюю інтерфейси, які поєднують функціональність, зручність та естетику. Моє головне завдання — зробити взаємодію користувача з продуктом інтуїтивно зрозумілою. Завжди орієнтуюсь на дослідження, потреби цільової аудиторії та чітку структуру. Вірю, що хороший дизайн починається з глибокого розуміння користувача та його очікувань. ",
+            about: [""],
+            shortQuote:
+                "Мистецтво дизайну - це трансформація хаосу в чітку структуру.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Diana Dudnyk",
-            about: "Art of design is transforming chaos into a clear structure.",
-            services:
-                "I create interfaces that combine functionality, usability, and aesthetics. My main goal is to make the user’s interaction with the product intuitively clear.I always focus on research, the needs of the target audience and a well-defined structure. I believe that great design starts with a deep understanding of the user and their expectations.",
+            about: [""],
+            shortQuote:
+                "Art of design is transforming chaos into a clear structure.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Diana Dudnyk",
-            about: "Sztuka projektowania to przekształcanie chaosu w przejrzystą strukturę.",
-            services:
-                "Tworzę interfejsy, które łączą w sobie funkcjonalność, wygodę i estetykę. Moim głównym zadaniem jest sprawienie, aby interakcja użytkownika z produktem była intuicyjna. Zawsze skupiam się na badaniach, potrzebach grupy docelowej i przejrzystej strukturze. Wierzę, że dobry projekt zaczyna się od głębokiego zrozumienia użytkownika i jego oczekiwań.",
+            about: [""],
+            shortQuote:
+                "Sztuka projektowania to przekształcanie chaosu w przejrzystą strukturę.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2700,23 +2927,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Владислава Бобко",
-            about: "Мій підхід - це баланс витонченості та логіки: дизайн, гідний королівської уваги.",
-            services:
-                "Я UX/UI дизайнер, який створює інтуїтивні та привабливі цифрові продукти. Починаю з дослідження користувачів, аналізу ринку та визначення бізнес-цілей. На основі цього формую структуру інтерфейсу, розробляю прототипи та перевіряю їх у тестуванні. Потім створюю візуальний дизайн, що поєднує естетику та функціональність. Упроваджую рішення разом із командою розробників і вдосконалюю продукт на основі зворотного зв’язку.",
+            about: [""],
+            shortQuote:
+                "Мій підхід - це баланс витонченості та логіки: дизайн, гідний королівської уваги.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Vladyslava Bobko",
-            about: "My approach is about balancing elegance and logic: design is worthy of royal attention.",
-            services:
-                "I am a UX/UI designer who creates intuitive and engaging digital products. I start with researching users, analyzing the market and identifying business goals. Based on this, I formulate the structure of the interface, I develop prototypes and test them. Then I create a visual design that combines aesthetics and functionality. I implement solutions together with the development team and improve the product based on feedback.",
+            about: [""],
+            shortQuote:
+                "My approach is about balancing elegance and logic: design is worthy of royal attention.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Vladyslava Bobko",
-            about: "Moje podejście to równowaga między finezją a logiką - design godny królewskiej uwagi.",
-            services:
-                "Jestem projektantem UX/UI, który tworzy intuicyjne i atrakcyjne produkty cyfrowe. Zaczynam od badania użytkowników, analizy rynku i definiowania celów biznesowych. Na tej podstawie kształtuję strukturę interfejsu, opracowuję prototypy i waliduję je w testach. Następnie tworzę projekt wizualny, który łączy estetykę i funkcjonalność. Wdrażam rozwiązanie wraz z zespołem programistów i ulepszam produkt w oparciu o informacje zwrotne.",
+            about: [""],
+            shortQuote:
+                "Moje podejście to równowaga między finezją a logiką - design godny królewskiej uwagi.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2764,23 +2994,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Катерина Погребна",
-            about: "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
-            services:
-                "Ручне функціональне та нефункціональне тестування. Тестування UI/UX, API, баз даних і продуктивності. Тестування вимог, аналіз середовища, міжплатформне тестування, дослідження продукту, аналіз домену, тестування ролей доступу, пошукове тестування, регресійне тестування. Документація: історія користувача, план тестування, стратегія тестування, контрольний список, тестовий приклад, звіт про помилку, звіт про тестування.",
+            about: [""],
+            shortQuote:
+                "Орієнтований на результат QA-інженер з досвідом тестування понад 2 роки, зокрема спеціалізується на платформах роздрібної торгівлі в Інтернеті, веб-додатках і системах обміну повідомленнями. ",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Kateryna Pogrebna",
-            about: "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
-            services:
-                "Manual functional and non-functional testing. Testing UI/UX, API, databases, and performance. Requirements testing, environment analysis, cross-platform testing, product research, domain analysis, access role testing, exploratory testing, regression testing. Documentation: User Story, Test Plan, Test Strategy, Checklist, Test Case, Bug Report, Test Report.",
+            about: [""],
+            shortQuote:
+                "Result-oriented QA engineer with over 2 years of testing experience, specializing in online retail platforms, web applications, and messaging systems. ",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Kateryna Pogrebna",
-            about: "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
-            services:
-                "Ręczne testowanie funkcjonalne i niefunkcjonalne. Testowanie UI/UX, API, bazy danych i wydajności. Testowanie wymagań, analiza środowiska, testowanie międzyplatformowe, badanie produktu, analiza domeny, testowanie ról dostępu, testowanie eksploracyjne, testowanie regresyjne. Dokumentacja: historia użytkownika, plan testów, strategia testów, lista kontrolna, przypadek testowy, raport o błędzie, raport z testów.",
+            about: [""],
+            shortQuote:
+                "Zorientowany na wyniki inżynier QA z ponad 2-letnim doświadczeniem w testowaniu, specjalizujący się w internetowych platformach sprzedaży detalicznej, aplikacjach internetowych i systemach przesyłania wiadomości. ",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2811,23 +3044,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Юлія Борис",
-            about: "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
-            services:
-                "Дослідження та аналіз бізнес-процесів, виявлення проблеми та можливості для поліпшення ефективності, збір та аналіз вимог, розробка та управління бізнес-вимогами, колаборація з командою, документація,  BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Політика Конфіденційності. Проведення мануального тестування, юридична підтримка проекту.",
+            about: [""],
+            shortQuote:
+                "Бізнес-аналітик – це місток між бізнесом та командою розробки!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Yuliya Borys",
-            about: "A business analyst is a bridge between the business and the development team!",
-            services:
-                "Research and analysis of business processes, identification of problems and opportunities for efficiency improvement, requirements gathering and analysis, development and management of business requirements, team collaboration, documentation, BRD, SRS, Use Case, User Story, User Guide/Manual, Reports, Privacy Policy. Conducting manual testing, legal support of the project.",
+            about: [""],
+            shortQuote:
+                "A business analyst is a bridge between the business and the development team!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Yuliya Borys",
-            about: "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
-            services:
-                "Analiza procesów biznesowych, identyfikacja problemów i możliwości poprawy efektywności, zbieranie i analiza wymagań, opracowywanie i zarządzanie wymaganiami biznesowymi, współpraca z zespołem, dokumentacja, BRD, SRS, Use Case, User Story, User Guide/Manual, raporty, polityka prywatności. Przeprowadzanie testów manualnych, wsparcie prawne projektu.",
+            about: [""],
+            shortQuote:
+                "Analityk biznesowy to pomost pomiędzy biznesem a zespołem programistów!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2861,23 +3097,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Кучальська",
-            about: "Єдиний спосіб робити свою роботу добре — це любити її. Я люблю свою роботу!",
-            services:
-                "Аналіз бізнес-потреб замовника. Аналіз даних. Аналіз ринку і конкурентів. Розробка, аналіз, впорядкування та формалізація вимог. Управління вимогами між розробниками і стейкхолдерами. Написання технічної документації,user-story. Базові навички тестування та знання SQL. Знання SDLC, гнучких методологій та базові знання менеджменту. Відмінні комунікативні навички.",
+            about: [""],
+            shortQuote:
+                "Єдиний спосіб робити свою роботу добре — це любити її. Я люблю свою роботу!",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Olha Kuchalska",
-            about: "The only way to do your job well is to love it. I love my job!",
-            services:
-                "Customer business needs analysis. Data analysis. Market and competitor analysis. Development, analysis, organisation, and formalisation of requirements. Requirements management between developers and stakeholders. Writing technical documentation and user stories. Basic testing skills and knowledge of SQL. Understanding of SDLC, agile methodologies, and basic management skills. Excellent communication skills.",
+            about: [""],
+            shortQuote:
+                "The only way to do your job well is to love it. I love my job!",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Olha Kuchalska",
-            about: "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
-            services:
-                "Analiza potrzeb biznesowych klientów. Analiza danych. Analiza rynku i konkurencji. Rozwój, analiza, organizacja i formalizacja wymagań. Zarządzanie wymaganiami między programistami i interesariuszami. Pisanie dokumentacji technicznej i historyjek użytkownika. Podstawowe umiejętności testowania i znajomość SQL. Zrozumienie SDLC, metodyk zwinnych i podstawowych umiejętności zarządzania. Doskonałe umiejętności komunikacyjne.",
+            about: [""],
+            shortQuote:
+                "Jedynym sposobem, aby dobrze wykonywać swoją pracę, jest ją kochać. Kocham swoją pracę!",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2917,23 +3156,23 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Наталя Калабанова",
-            about: "Менше - це більше.",
-            services:
-                "Як Scrum Master, я організовую роботу команди, підтримую сприятливе середовище для співпраці та ефективно впроваджую принципи Agile. Проводжу щоденні stand-up мітинги для синхронізації роботи, усуваю перешкоди, координую виконання завдань спринтів і стежу за дотриманням термінів. Забезпечую прозору комунікацію між розробниками, дизайнерами та іншими стейкхолдерами, планую спринти, управління ризиками та контролюю прогрес команди. Я також проводжу ретроспективи для вдосконалення процесів, щоб забезпечити якісну та своєчасну реалізацію проєкту.",
+            about: [""],
+            shortQuote: "Менше - це більше.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Natalia Kalabanova",
-            about: "Less is more.",
-            services:
-                "As a Scrum Master, I organize the team’s workflow, foster a collaborative environment, and effectively implement Agile principles. I conduct daily stand-up meetings to synchronize the team’s efforts, remove obstacles, coordinate sprint tasks, and ensure deadlines are met. I facilitate transparent communication between developers, designers, and other stakeholders, plan sprints, manage risks, and monitor the team’s progress. Additionally, I lead retrospectives to continuously improve processes and ensure the project is delivered on time and with high quality.",
+            about: [""],
+            shortQuote: "Less is more.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Natalia Kalabanova",
-            about: "Mniej znaczy więcej.",
-            services:
-                "Jako Scrum Master organizuję przepływ pracy zespołu, wspieram środowisko sprzyjające współpracy i skutecznie wdrażam zasady Agile. Prowadzę codzienne spotkania typu stand-up, aby synchronizować wysiłki zespołu, usuwać przeszkody, koordynować zadania sprintu i zapewniać dotrzymywanie terminów. Ułatwiam przejrzystą komunikację między programistami, projektantami i innymi interesariuszami, planuję sprinty, zarządzam ryzykiem i monitoruję postępy zespołu. Dodatkowo prowadzę retrospektywy w celu ciągłego doskonalenia procesów i zapewnienia, że projekt jest dostarczany na czas i w wysokiej jakości.",
+            about: [""],
+            shortQuote: "Mniej znaczy więcej.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -2978,23 +3217,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Тетяна Дрофа",
-            about: "Моя мета - досягати результатів вчасно, якісно та з командною підтримкою.",
-            services:
-                "Я  орієнтований на результат проєктний менеджер з досвідом керування командами від 5 осіб. Вмію організовувати чітку комунікацію всередині команди та зі стейкхолдерами, що забезпечує прозорість і синхронність у роботі. Ефективно контролюю виконання завдань, дотримуюсь дедлайнів і забезпечую якісні результати. Оперативно вирішую проблеми, підтримуючи стабільний темп проєкту.",
+            about: [""],
+            shortQuote:
+                "Моя мета - досягати результатів вчасно, якісно та з командною підтримкою.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Tetiana Drofa",
-            about: "My goal is to achieve results on time, with quality, and with the support of the team.",
-            services:
-                "I am a result-oriented Project Manager with experience leading teams of 5 or more people. I know how to establish clear communication within the team and with stakeholders, which ensures transparency and alignment in work processes. I effectively monitor task execution, meet deadlines, and deliver high-quality results. I resolve issues promptly, maintaining a steady project pace.",
+            about: [""],
+            shortQuote:
+                "My goal is to achieve results on time, with quality, and with the support of the team.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Tetiana Drofa",
-            about: "Moim celem jest osiągnięcie wyników na czas, z zachowaniem jakości i przy wsparciu zespołu.",
-            services:
-                "Jestem zorientowanym na rezultaty Kierownikiem Projektu z doświadczeniem w zarządzaniu zespołami liczącymi co najmniej 5 osób. Potrafię organizować jasną komunikację wewnątrz zespołu i z interesariuszami, co zapewnia przejrzystość i spójność działań. Skutecznie nadzoruję realizację zadań, dotrzymuję terminów i dostarczam wysokiej jakości rezultaty. Szybko rozwiązuję problemy, utrzymując stabilne tempo pracy nad projektem.",
+            about: [""],
+            shortQuote:
+                "Moim celem jest osiągnięcie wyników na czas, z zachowaniem jakości i przy wsparciu zespołu.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -3028,23 +3270,26 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Устименко",
-            about: "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
-            services:
-                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
+            about: [""],
+            shortQuote:
+                "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Olga Ustymenko",
-            about: "I approach testing with enthusiasm, striving to ensure high product quality.",
-            services:
-                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX. I am responsible for requirements analysis, test documentation development, and defect reporting.",
+            about: [""],
+            shortQuote:
+                "I approach testing with enthusiasm, striving to ensure high product quality.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Olga Ustymenko",
-            about: "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
-            services:
-                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX. Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
+            about: [""],
+            shortQuote:
+                "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
+            services: [""],
             team: "I Love My Team",
         },
     },
@@ -3075,23 +3320,25 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ірина Андрущенко",
-            about: "Хороший дизайн непомітний, але його вплив залишається назавжди.",
-            services:
-                "Я людина, а не робот — моя креативність, ідеї та увага до деталей надають кожному проєкту унікальності. Як UI/UX та вебдизайнер, я зосереджуюсь на гармонійному поєднанні естетики й функціональності, створюючи інтуїтивні та захопливі користувацькі досвіди. Я досягаю найкращих результатів у командному середовищі, де цінують відкритість, обмін ідеями та співпрацю. Впевнено працюю у Figma, приділяю багато уваги деталям і постійно вдосконалюю свої навички, вивчаючи нові методології та надихаючись сучасними тенденціями у дизайні.",
+            about: [""],
+            shortQuote:
+                "Хороший дизайн непомітний, але його вплив залишається назавжди.",
+            services: [""],
             team: "I Love My Team",
         },
         en: {
             name: "Iryna Andrushchenko",
-            about: "Great design is invisible, yet its influence endures.",
-            services:
-                "I am a human, not a robot — my creativity, ideas, and attention to detail bring uniqueness to every project. As a UI/UX and web designer, I focus on seamlessly combining aesthetics with functionality to deliver intuitive and engaging user experiences. I thrive in collaborative environments that value openness, idea exchange, and teamwork. Proficient in Figma, I pay close attention to detail and continuously enhance my skills by exploring new methodologies and staying inspired by the latest design trends.",
+            about: [""],
+            shortQuote: "Great design is invisible, yet its influence endures.",
+            services: [""],
             team: "I Love My Team",
         },
         pl: {
             name: "Iryna Andrushchenko",
-            about: "Dobry projekt pozostaje niewidoczny, lecz jego oddziaływanie trwa wiecznie.",
-            services:
-                "Jestem człowiekiem, a nie robotem — moja kreatywność, pomysły i dbałość o szczegóły nadają każdemu projektowi wyjątkowy charakter. Jako projektant UI/UX i stron internetowych koncentruję się na harmonijnym łączeniu estetyki z funkcjonalnością, aby tworzyć intuicyjne i angażujące doświadczenia użytkownika. Najlepiej odnajduję się w środowiskach zespołowych, w których ceni się otwartość, wymianę pomysłów i współpracę. Biegle posługuję się Figmą, zwracam dużą uwagę na detale i nieustannie rozwijam swoje umiejętności, poznając nowe metody oraz inspirując się najnowszymi trendami w projektowaniu.",
+            about: [""],
+            shortQuote:
+                "Dobry projekt pozostaje niewidoczny, lecz jego oddziaływanie trwa wiecznie.",
+            services: [""],
             team: "I Love My Team",
         },
     },

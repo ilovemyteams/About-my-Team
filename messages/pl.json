@@ -400,6 +400,11 @@
         "leftProject": "poza projektem",
         "joinUsTitle": "Twoje zdjęcie może być tutaj",
         "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach",
-        "projects": "projekty"
+        "projects": "projekty",
+        "about": "O mnie",
+        "languages": "Języki",
+        "education": "Edukacja",
+        "certificates": "Certyfikaty",
+        "services": "Główne umiejętności"
     }
 }
