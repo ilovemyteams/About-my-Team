@@ -399,6 +399,8 @@
         "languages": "Мови",
         "education": "Освіта",
         "certificates": "Сертифікати",
-        "services": "Основні навички"
+        "services": "Основні навички",
+        "commercialExp": "Комерційний досвід",
+        "date": "{experience, plural, one {# рік} few {# роки} many {# років} other {# року}}"
     }
 }

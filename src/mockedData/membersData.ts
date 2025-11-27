@@ -1,4 +1,4 @@
-import { Instruction } from "@/types/Education";
+import { Institution } from "@/types/Education";
 import { Language } from "@/types/Language";
 
 import { Slug } from "./portfolioData";
@@ -7,11 +7,11 @@ export type MemberDataItemTranslation = {
     name: string;
     about: string[];
     shortQuote: string;
-    services: string[];
+    services?: string[];
     team: string;
     languages?: Language[];
-    education?: Instruction[];
-    certificates?: Instruction[];
+    education?: Institution[];
+    certificates?: Institution[];
 };
 
 export type SocialLinks = {
@@ -34,6 +34,7 @@ export type DataType = {
     tools: string[];
     isEndInAboutMT?: boolean;
     careerStart: string;
+    commercialExperience?: string;
 };
 
 export type MemberDataItemType = {
@@ -483,7 +484,7 @@ export const membersData: MemberDataItemType[] = [
                 "protection.in.ua",
                 "willow-motion.space",
             ],
-            pricePerHour: "12",
+            pricePerHour: "15",
             socialLinks: {
                 linkedin: "http://linkedin.com/in/iryna-trynkal-41542311a",
                 github: "https://github.com/IraMira333",
@@ -501,31 +502,125 @@ export const membersData: MemberDataItemType[] = [
                 "HTML",
                 "CSS",
             ],
-            careerStart: "2023-10",
+            careerStart: "2022-11",
+            commercialExperience: "2023-11",
         },
         ua: {
             name: "Ірина Тринкаль",
-            about: [""],
+            about: [
+                "Full-stack розробник із сильним фокусом на Frontend, глибокою експертизою в Next.js, React та TypeScript. Спеціалізуюсь на створенні адаптивних, швидких та SEO-оптимізованих інтерфейсів, інтегрованих із сучасними API та надійним бекендом. Професійно працюю з Sanity CMS — створюю гнучкі схеми даних, налаштовую Studio, темізацію, кастомні компоненти, локалізацію, створюю структуру контенту та інтегрую CMS у продакшн-проєкти з урахуванням продуктивності та зручності редакторів. Володію складними анімаціями (Framer Motion, GSAP), роботою з динамічним контентом, багатомовністю та UX-покращеннями.",
+                "Орієнтована на системне мислення, чистий код та стабільний користувацький досвід.",
+            ],
             shortQuote:
                 "Можливо все, на неможливе просто потрібно більше часу.",
-            services: [""],
+            services: [
+                "Розробка та стилізація веб-сторінок за допомогою HTML, CSS і JavaScript з урахуванням семантичності та адаптивності до різних розмірів екранів.",
+                "Створення інтерактивних та динамічних інтерфейсів за допомогою бібліотеки React.",
+                "Розробка серверних застосунків з використанням JavaScript та Node.js.",
+                "Створення та управління бекенд API для забезпечення комунікації між фронтендом та сервером.",
+                "Впровадження аутентифікації користувачів та надання прав доступу для забезпечення безпеки додатків.",
+                "Поєднання компонентів фронтенду та бекенду для створення єдиної, працюючої програми.",
+            ],
             team: "I Love My Team",
+            languages: [
+                { name: "Українська", level: "Рідна" },
+                { name: "Англійська", level: "Середній" },
+            ],
+            education: [
+                {
+                    institution:
+                        'Національний технічний університет України "Київський політехнічний інститут"',
+                    degree: "Інженер-еколог",
+                    yearStart: 2002,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2022,
+                    yearEnd: 2023,
+                },
+            ],
         },
         en: {
             name: "Iryna Trynkal",
-            about: [""],
+            about: [
+                "Full-stack developer with a strong focus on Frontend and deep expertise in Next.js, React, and TypeScript. I specialize in building adaptive, high-performance, SEO-optimized interfaces integrated with modern APIs and robust backend solutions. I work professionally with Sanity CMS — creating flexible data schemas, configuring Studio, theming, custom components, localization, structuring content, and integrating the CMS into production projects with attention to performance and editor experience. Skilled in advanced animations (Framer Motion, GSAP), dynamic content workflows, multilingual setups, and UX improvements.",
+                "Oriented toward systematic thinking, clean code, and a stable user experience.",
+            ],
             shortQuote:
                 "Anything is possible, the impossible just takes longer.",
-            services: [""],
+            services: [
+                "Development and style web pages using HTML, CSS, and JavaScript with a focus on semantics and responsiveness to different screen sizes.",
+                "Creation of interactive and dynamic interfaces using the React library.",
+                "Development of server applications using JavaScript and Node.js.",
+                "Creation and management of backend APIs to ensure communication between frontend and server.",
+                "Implementation of user authentication and access control to ensure application security.",
+                "Integration of frontend and backend components to create a unified, functioning application.",
+            ],
             team: "I Love My Team",
+            languages: [
+                { name: "Ukrainian", level: "Native" },
+                { name: "English", level: "Intermediate" },
+            ],
+            education: [
+                {
+                    institution:
+                        'National Technical University of Ukraine "Kyiv Polytechnic Institute"',
+                    degree: "Environmental engineer",
+                    yearStart: 2002,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2022,
+                    yearEnd: 2023,
+                },
+            ],
         },
         pl: {
             name: "Iryna Trynkal",
-            about: [""],
+            about: [
+                "Full-stack developerka ze strongnym naciskiem na Frontend oraz dużą znajomością Next.js, React i TypeScript. Specjalizuję się w tworzeniu adaptacyjnych, szybkich i SEO-optymalizowanych interfejsów, zintegrowanych z nowoczesnymi API i solidnym backendem. Profesjonalnie pracuję z Sanity CMS — tworzę elastyczne schematy danych, konfiguruję Studio, motywy, komponenty customowe, lokalizację, strukturę treści oraz integruję CMS w projektach produkcyjnych, dbając o wydajność i wygodę pracy edytorów. Znam się na zaawansowanych animacjach (Framer Motion, GSAP), dynamicznym contencie, wielojęzyczności i ulepszeniach UX.",
+                "Kieruję się systemowym myśleniem, czystym kodem i stabilnym doświadczeniem użytkownika.",
+            ],
             shortQuote:
                 "Wszystko jest możliwe, niemożliwe wymaga tylko więcej czasu.",
-            services: [""],
+            services: [
+                "Tworzenie i projektowanie stron internetowych przy użyciu HTML, CSS i JavaScript z naciskiem na semantykę i responsywność dla różnych rozmiarów ekranu.",
+                "Tworzenie interaktywnych i dynamicznych interfejsów przy użyciu biblioteki React.",
+                "Tworzenie aplikacji po stronie serwera przy użyciu JavaScript i Node.js.",
+                "Tworzenie i zarządzanie API serwera w celu zapewnienia komunikacji między interfejsem zewnętrznym a serwerem.",
+                "Wdrażanie uwierzytelniania użytkowników i kontroli dostępu w celu zapewnienia bezpieczeństwa aplikacji.",
+                "Integracja komponentów zewnętrznych i backendowych w celu stworzenia jednej funkcjonalnej aplikacji.",
+            ],
             team: "I Love My Team",
+            languages: [
+                { name: "Ukraiński", level: "Ojczysty" },
+                { name: "Angielski", level: "Średni" },
+            ],
+            education: [
+                {
+                    institution:
+                        'National Technical University of Ukraine "Kyiv Polytechnic Institute"',
+                    degree: "Environmental engineer",
+                    yearStart: 2002,
+                    yearEnd: 2008,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2022,
+                    yearEnd: 2023,
+                },
+            ],
         },
     },
     {
@@ -2292,7 +2387,8 @@ export const membersData: MemberDataItemType[] = [
                 "HTML",
                 "CSS",
             ],
-            careerStart: "2023-12",
+            careerStart: "2022-03",
+            commercialExperience: "2023-12",
         },
         ua: {
             name: "Анна Прутнік",

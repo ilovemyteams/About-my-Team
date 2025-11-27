@@ -404,6 +404,8 @@
         "languages": "Languages",
         "education": "Education",
         "certificates": "Certificates",
-        "services": "Main skills"
+        "services": "Main skills",
+        "commercialExp": "Commercial experience",
+        "date": "{experience, plural, =1 {1 yr.} other {# yrs.}}"
     }
 }

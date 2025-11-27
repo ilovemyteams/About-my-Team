@@ -405,6 +405,8 @@
         "languages": "Języki",
         "education": "Edukacja",
         "certificates": "Certyfikaty",
-        "services": "Główne umiejętności"
+        "services": "Główne umiejętności",
+        "commercialExp": "Dośw. handlowe",
+        "date": "{experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}"
     }
 }
