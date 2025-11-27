@@ -1,9 +1,9 @@
 interface MemberExperienceProps {
-    careerStart: string;
+    date: string;
 }
 
-export const getMemberExperience = ({ careerStart }: MemberExperienceProps) => {
-    const startDate = careerStart.split("-");
+export const getMemberExperience = ({ date }: MemberExperienceProps) => {
+    const startDate = date.split("-");
     const startYear = startDate[0]
         ? Number(startDate[0])
         : new Date().getFullYear();

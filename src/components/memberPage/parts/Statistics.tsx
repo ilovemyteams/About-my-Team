@@ -36,7 +36,7 @@ export const Statistics = ({
                 <IconClock className="size-4 tab:size-5 pc:size-6 desk:size-7 text-purple-100 " />
                 <p className="text-sm pc:text-base desk:text-[18px] text-greyLight dark:text-grey">
                     {t("statExperience", {
-                        experience: getMemberExperience({ careerStart }),
+                        experience: getMemberExperience({ date: careerStart }),
                     })}
                 </p>
             </li>

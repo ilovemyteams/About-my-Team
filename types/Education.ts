@@ -1,4 +1,4 @@
-export type Instruction = {
+export type Institution = {
     institution: string;
     degree: string;
     yearStart: number;

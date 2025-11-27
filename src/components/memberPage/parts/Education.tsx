@@ -1,11 +1,11 @@
 import { getTranslations } from "next-intl/server";
 
-import { Instruction } from "@/types/Education";
+import { Institution } from "@/types/Education";
 
 import { Title } from "./shared/Title";
 
 interface EducationType {
-    education: Instruction[];
+    education: Institution[];
     certificates?: boolean;
 }
 

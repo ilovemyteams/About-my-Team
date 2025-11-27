@@ -1,16 +1,14 @@
 import React from "react";
 
-import { DomainType } from "@/src/constants/domainList";
+import { getMemberDomainList } from "@/src/utils/getMemberDomainList";
 
 interface DomainsProps {
-    domains: Set<DomainType>;
+    projectId: string[];
 }
 
-export const Domains = ({ domains }: DomainsProps) => {
-    let domainList = "";
-    domains.forEach(item => {
-        domainList += "#" + item.toLocaleLowerCase().split(" ").join("_") + " ";
-    });
+export const Domains = ({ projectId }: DomainsProps) => {
+    const domainList = getMemberDomainList({ projectId });
+
     return (
         <div className="w-full overflow-hidden max-h-[15px] tab:max-h-[20px]">
             <p className="text-xs tab:text-sm  text-transparent text-center first-line:text-purple-130  dark:first-line:text-purple-50 [word-spacing:8px]">

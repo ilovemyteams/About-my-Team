@@ -6,6 +6,7 @@ import { LocaleType } from "@/types/LocaleType";
 
 import { About } from "./parts/About";
 import { Avatar } from "./parts/Avatar";
+import { CommercialExp } from "./parts/CommercialExp";
 import { Education } from "./parts/Education";
 import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
@@ -29,15 +30,16 @@ export const MemberPage = ({ member }: MemberPageProps) => {
         socialLinks,
         pricePerHour,
         careerStart,
+        commercialExperience,
         projectsExperience,
-        // projectId,
+        projectId,
     } = member.data;
 
     return (
         <Section className="pb-[80px] tab:pb-[100px] pc:pb-[100px] desk:pb-[120px]">
             <div className="grid grid-cols-1 tab:grid-cols-[360px_1fr] pc:grid-cols-[328px_1fr] desk:grid-cols-[380px_1fr]">
-                <div className="grid grid-cols-1 grid-rows-[repeat(4,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
-                    <div>
+                <div className="grid grid-cols-1 grid-rows-[repeat(6,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
+                    <section>
                         <Avatar
                             imageURL={imageURL}
                             position={position}
@@ -49,7 +51,13 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                             careerStart={careerStart}
                             projectsCount={projectsExperience.length}
                         />
-                    </div>
+                    </section>
+                    {commercialExperience && (
+                        <CommercialExp
+                            commercialExperience={commercialExperience}
+                            projectId={projectId}
+                        />
+                    )}
                     <Projects projectsExperience={projectsExperience} />
                     {languages && <Languages languages={languages} />}
                     {education && <Education education={education} />}
