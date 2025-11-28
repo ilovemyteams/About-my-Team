@@ -3434,6 +3434,20 @@ export const membersData: MemberDataItemType[] = [
                     yearEnd: 2014,
                 },
             ],
+            certificates: [
+                {
+                    institution: "Prometheus",
+                    degree: "QA Manual from GlobalLogic",
+                    yearStart: 2022,
+                    yearEnd: 2023,
+                },
+                {
+                    institution: "Prometheus",
+                    degree: "QA Manual 2.0 Internship Program",
+                    yearStart: 2023,
+                    yearEnd: 2024,
+                },
+            ],
         },
         en: {
             name: "Olga Ustymenko",
@@ -3452,6 +3466,20 @@ export const membersData: MemberDataItemType[] = [
                     degree: "Specialist in Computer Science",
                     yearStart: 2008,
                     yearEnd: 2014,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "Prometheus",
+                    degree: "QA Manual from GlobalLogic",
+                    yearStart: 2022,
+                    yearEnd: 2023,
+                },
+                {
+                    institution: "Prometheus",
+                    degree: "QA Manual 2.0 Internship Program",
+                    yearStart: 2023,
+                    yearEnd: 2024,
                 },
             ],
         },
