@@ -96,10 +96,12 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Сусанна Салата",
-            about: [""],
+            about: [
+                "Консультування, аналіз бізнес-процесів, стратегічне планування, бюджетування, управління проєктами та командами, розвиток продуктів. Менторинг для початківців в ІТ.",
+            ],
             shortQuote:
                 "Робота має приносити натхнення та задоволення, а не лише гроші.",
-            services: [""],
+            services: undefined,
             team: "I Love My Team",
             languages: [
                 { name: "Українська", level: "Рідна" },
@@ -109,10 +111,12 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Susanna Salata",
-            about: [""],
+            about: [
+                "Consulting, business process analysis and setup, strategic planning, budgeting, project and team management, product development, and crisis management for projects and products. Mentoring for beginners in IT.",
+            ],
             shortQuote:
                 "Work should bring inspiration and satisfaction, not just money.",
-            services: [""],
+            services: undefined,
             team: "I Love My Team",
             languages: [
                 { name: "Ukrainian", level: "Native" },
@@ -122,10 +126,12 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Susanna Salata",
-            about: [""],
+            about: [
+                "Doradztwo, analiza i dostosowywanie procesów biznesowych, planowanie strategiczne, budżetowanie, zarządzanie projektami i zespołami, rozwój produktów oraz zarządzanie kryzysowe projektami i produktami. Mentoring dla początkujących w IT.",
+            ],
             shortQuote:
                 "Praca powinna dawać inspirację i satysfakcję, a nie tylko pieniądze.",
-            services: [""],
+            services: undefined,
             team: "I Love My Team",
             languages: [
                 { name: "Ukraiński", level: "Ojczysty" },
@@ -2409,19 +2415,29 @@ export const membersData: MemberDataItemType[] = [
                 telegram: "https://t.me/AnnaPrutnik",
             },
             tools: [
-                { name: "React" },
-                { name: "Typescript" },
-                { name: "Mui" },
-                { name: "Tailwind" },
-                { name: "Redux RTK" },
-                { name: "Zustand" },
-                { name: "Formik" },
-                { name: "React Hook Form" },
-                { name: "Jira" },
-                { name: "Styled Components" },
-                { name: "Trello" },
-                { name: "HTML" },
-                { name: "CSS" },
+                { name: "JavaScript", startDate: "2023-02" },
+                { name: "React", startDate: "2023-02" },
+                { name: "Typescript", startDate: "2023-02" },
+                { name: "Next.js", startDate: "2024" },
+                { name: "Node.js", startDate: "2024-10" },
+                { name: "MongoDB", startDate: "2023-02", endDate: "2023-07" },
+                { name: "Mui", startDate: "2024-01" },
+                { name: "Tailwind", startDate: "2024-09" },
+                { name: "Chrome DevTools", startDate: "2023-02" },
+                { name: "Github", startDate: "2023-02" },
+                { name: "VSCode", startDate: "2023-02" },
+                { name: "Redux", startDate: "2022-02", endDate: "2023-02" },
+                { name: "Zustand", startDate: "2024-01", endDate: "2024-09" },
+                { name: "Formik", startDate: "2024-09" },
+                { name: "React Hook Form", startDate: "2023-02" },
+                { name: "Jira", startDate: "2024-09" },
+                { name: "Trello", startDate: "2023-09", endDate: "2024-09" },
+                { name: "HTML", startDate: "2023-02" },
+                { name: "CSS", startDate: "2023-02" },
+                { name: "Figma", startDate: "2022" },
+                { name: "PostgreSQL", startDate: "2025-10" },
+                { name: "Discord", startDate: "2024-01" },
+                { name: "Astro.js", startDate: "2025-02" },
             ],
             careerStart: "2022-03",
             commercialExperience: "2023-12",
@@ -3432,7 +3448,9 @@ export const membersData: MemberDataItemType[] = [
         },
         ua: {
             name: "Ольга Устименко",
-            about: [""],
+            about: [
+                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
+            ],
             shortQuote:
                 "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
             services: undefined,
@@ -3466,7 +3484,9 @@ export const membersData: MemberDataItemType[] = [
         },
         en: {
             name: "Olga Ustymenko",
-            about: [""],
+            about: [
+                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX. I am responsible for requirements analysis, test documentation development, and defect reporting.",
+            ],
             shortQuote:
                 "I approach testing with enthusiasm, striving to ensure high product quality.",
             services: undefined,
@@ -3500,7 +3520,9 @@ export const membersData: MemberDataItemType[] = [
         },
         pl: {
             name: "Olga Ustymenko",
-            about: [""],
+            about: [
+                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX. Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
+            ],
             shortQuote:
                 "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
             services: undefined,
