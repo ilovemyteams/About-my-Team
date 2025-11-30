@@ -8,6 +8,7 @@ import { About } from "./parts/About";
 import { Avatar } from "./parts/Avatar";
 import { CommercialExp } from "./parts/CommercialExp";
 import { Education } from "./parts/Education";
+import { Expertise } from "./parts/Expertise";
 import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
 import { Projects } from "./parts/Projects";
@@ -33,12 +34,13 @@ export const MemberPage = ({ member }: MemberPageProps) => {
         commercialExperience,
         projectsExperience,
         projectId,
+        tools,
     } = member.data;
 
     return (
         <Section className="pb-[80px] tab:pb-[100px] pc:pb-[100px] desk:pb-[120px]">
             <div className="grid grid-cols-1 tab:grid-cols-[360px_1fr] pc:grid-cols-[328px_1fr] desk:grid-cols-[380px_1fr]">
-                <div className="grid grid-cols-1 grid-rows-[repeat(6,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7">
+                <div className="grid grid-cols-1 grid-rows-[repeat(7,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7 [&>section:not(:last-child)]:border-b [&>section:not(:last-child)]:border-purple-strokeLight dark:[&>section:not(:last-child)]:border-purple-stroke">
                     <section>
                         <Avatar
                             imageURL={imageURL}
@@ -58,6 +60,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                             projectId={projectId}
                         />
                     )}
+                    <Expertise tools={tools} />
                     <Projects projectsExperience={projectsExperience} />
                     {languages && <Languages languages={languages} />}
                     {education && <Education education={education} />}

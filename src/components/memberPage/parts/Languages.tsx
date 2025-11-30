@@ -12,7 +12,7 @@ export const Languages = async ({ languages }: LanguagesProps) => {
     const t = await getTranslations("MemberPage");
 
     return (
-        <section className="border-b border-purple-strokeLight dark:border-purple-stroke">
+        <section>
             <Title>{t("languages")}</Title>
             <ul className="grid grid-cols-1 gap-2 desk:gap-4 p-4 tab:px-0 pc:px-4">
                 {languages.map(lang => {

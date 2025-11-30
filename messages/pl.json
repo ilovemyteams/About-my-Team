@@ -400,13 +400,14 @@
         "leftProject": "poza projektem",
         "joinUsTitle": "Twoje zdjęcie może być tutaj",
         "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach",
-        "projects": "projekty",
+        "projects": "Projekty",
         "about": "O mnie",
         "languages": "Języki",
         "education": "Edukacja",
         "certificates": "Certyfikaty",
         "services": "Główne umiejętności",
         "commercialExp": "Dośw. handlowe",
-        "date": "{experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}"
+        "date": "{experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
+        "expertise": "Ekspertyza w"
     }
 }

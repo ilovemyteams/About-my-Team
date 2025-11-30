@@ -18,14 +18,12 @@ export const CommercialExp = async ({
     const domainList = getMemberDomainList({ projectId });
 
     return (
-        <section className="border-b pb-4 border-purple-strokeLight dark:border-purple-stroke">
+        <section className="pb-4">
             <div className="flex justify-between items-center">
                 <Title>{t("commercialExp")}</Title>
                 <span className="text-purple-130 dark:text-purple-50 text-sm font-normal desk:text-base">
                     {t("date", {
-                        experience: getMemberExperience({
-                            date: commercialExperience,
-                        }),
+                        experience: getMemberExperience(commercialExperience),
                     })}
                 </span>
             </div>

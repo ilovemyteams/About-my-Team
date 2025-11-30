@@ -399,13 +399,14 @@
         "leftProject": "Out of project",
         "joinUsTitle": "Your photo can be here",
         "joinUsText": "Join a team of like-minded \nindividuals",
-        "projects": "projects",
+        "projects": "Projects",
         "about": "About me",
         "languages": "Languages",
         "education": "Education",
         "certificates": "Certificates",
         "services": "Main skills",
         "commercialExp": "Commercial experience",
-        "date": "{experience, plural, =1 {1 yr.} other {# yrs.}}"
+        "date": "{experience, plural, =1 {1 yr.} other {# yrs.}}",
+        "expertise": "Expertise in"
     }
 }

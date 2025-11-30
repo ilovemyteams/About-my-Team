@@ -9,7 +9,7 @@ interface AvatarProps {
 
 export const Avatar = ({ imageURL, position, name }: AvatarProps) => {
     return (
-        <div className="grid grid-cols-[144px_1fr] tab:grid-cols-1 mb-px tab:mb-3">
+        <section className="grid grid-cols-[144px_1fr] tab:grid-cols-1 mb-px tab:mb-3">
             <div
                 className={`
                     relative
@@ -42,6 +42,6 @@ export const Avatar = ({ imageURL, position, name }: AvatarProps) => {
                     {position}
                 </p>
             </div>
-        </div>
+        </section>
     );
 };

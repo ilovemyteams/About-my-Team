@@ -394,13 +394,14 @@
         "leftProject": "Поза проєктом",
         "joinUsTitle": "Тут може бути ваше фото",
         "joinUsText": "Долучайся до команди \nоднодумців",
-        "projects": "проєкти",
+        "projects": "Проєкти",
         "about": "Про мене",
         "languages": "Мови",
         "education": "Освіта",
         "certificates": "Сертифікати",
         "services": "Основні навички",
         "commercialExp": "Комерційний досвід",
-        "date": "{experience, plural, one {# рік} few {# роки} many {# років} other {# року}}"
+        "date": "{experience, plural, one {# рік} few {# роки} many {# років} other {# року}}",
+        "expertise": "Експертиза в"
     }
 }

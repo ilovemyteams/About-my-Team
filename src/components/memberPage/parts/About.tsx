@@ -7,7 +7,6 @@ interface AboutProps {
 
 export const About = async ({ text, services }: AboutProps) => {
     const t = await getTranslations("MemberPage");
-    console.log(services);
 
     return (
         <section className="grid grid-cols-1 gap-4 tab:gap-5 pc:gap-8 desk:gap-10">

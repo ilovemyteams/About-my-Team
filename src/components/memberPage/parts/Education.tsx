@@ -13,7 +13,7 @@ export const Education = async ({ education, certificates }: EducationType) => {
     const t = await getTranslations("MemberPage");
 
     return (
-        <section className="border-b border-purple-strokeLight dark:border-purple-stroke">
+        <section>
             {certificates ? (
                 <Title>{t("certificates")}</Title>
             ) : (

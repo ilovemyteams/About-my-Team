@@ -2,8 +2,10 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import { Tools } from "@/types/Tools";
+
 interface TechnologiesProps {
-    tools: string[];
+    tools: Tools[];
 }
 
 export const Technologies = ({ tools }: TechnologiesProps) => {
@@ -69,7 +71,7 @@ export const Technologies = ({ tools }: TechnologiesProps) => {
                         )}
                     >
                         <span className="text-xs tab:text-sm text-nowrap">
-                            {item}
+                            {item.name}
                         </span>
                     </li>
                 ))}

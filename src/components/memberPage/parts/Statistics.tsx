@@ -21,8 +21,10 @@ export const Statistics = ({
     return (
         <ul
             className={`
-                flex items-center justify-between py-4 border-y border-purple-strokeLight dark:border-purple-stroke
-                tab:flex-col tab:items-start tab:gap-2`}
+                flex items-center justify-between py-4
+                tab:flex-col tab:items-start tab:gap-2
+                border-t border-purple-strokeLight dark:border-purple-stroke
+                `}
         >
             {pricePerHour && (
                 <li className="flex items-center gap-1">
@@ -36,7 +38,7 @@ export const Statistics = ({
                 <IconClock className="size-4 tab:size-5 pc:size-6 desk:size-7 text-purple-100 " />
                 <p className="text-sm pc:text-base desk:text-[18px] text-greyLight dark:text-grey">
                     {t("statExperience", {
-                        experience: getMemberExperience({ date: careerStart }),
+                        experience: getMemberExperience(careerStart),
                     })}
                 </p>
             </li>

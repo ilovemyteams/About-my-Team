@@ -15,7 +15,7 @@ export const Projects = async ({ projectsExperience }: ProjectsProps) => {
     const t = await getTranslations("MemberPage");
 
     return (
-        <section className="border-b border-purple-strokeLight dark:border-purple-stroke">
+        <section>
             <Title>{t("projects")}</Title>
             <ul className="grid grid-cols-1 gap-2 desk:gap-3 p-4 tab:px-0 pc:px-4">
                 {projectsExperience.map(project => {
