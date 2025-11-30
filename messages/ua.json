@@ -401,7 +401,7 @@
         "certificates": "Сертифікати",
         "services": "Основні навички",
         "commercialExp": "Комерційний досвід",
-        "date": "{experience, plural, one {# рік} few {# роки} many {# років} other {# року}}",
+        "date": "{experience, plural, =1 {# рік} =2 {# роки} =3 {# роки} =4 {# роки} many {# років} other {# року}}",
         "expertise": "Експертиза в"
     }
 }
