@@ -25,10 +25,8 @@ export const About = async ({ text, services }: AboutProps) => {
                     <h3 className="font-caviar text-baseb tab:text-lg pc:text-xlb text-purple-200 dark:text-white-200 mb-2">
                         {t("services")}
                     </h3>
-                    <p className="text-sm tab:text-base23 desk:text-lg25 text-greyLight dark:text-grey font-normal [&>span:not(:last-child)]:after:content-['\2022'] [&>span:not(:last-child)]:after:px-2">
-                        {services.map((service, index) => (
-                            <span key={index}>{service}</span>
-                        ))}
+                    <p className="text-sm tab:text-base23 desk:text-lg25 text-greyLight dark:text-grey font-normal whitespace-pre-wrap">
+                        {services.join("  •  ")}
                     </p>
                 </div>
             )}

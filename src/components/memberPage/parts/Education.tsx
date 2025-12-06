@@ -20,10 +20,10 @@ export const Education = async ({ education, certificates }: EducationType) => {
                 <Title>{t("education")}</Title>
             )}
             <ul className="grid grid-cols-1 gap-2 desk:gap-4 p-4 tab:px-0 pc:px-4 [&>li:not(:last-child)]:mb-4">
-                {education.map(i => {
+                {education.map((i, idx) => {
                     return (
                         <li
-                            key={i.institution}
+                            key={idx}
                             className="text-sm pc:text-base desk:text-[18px] font-normal"
                         >
                             <p className="flex justify-between mb-2 text-purple-130 dark:text-purple-50">

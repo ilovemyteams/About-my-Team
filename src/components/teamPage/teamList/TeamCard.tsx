@@ -38,7 +38,6 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         tools,
         id,
         isEndInAboutMT,
-
         careerStart,
         projectId,
     } = member.data;
