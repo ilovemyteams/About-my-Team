@@ -14,21 +14,9 @@ export const MemberCardLink = ({
     isActive,
     children,
 }: PropsWithChildren<MemberCardLinkProps>) => {
-    // const router = useRouter();
-    // const { setPreviousURL } = usePreviousURL();
-
-    // const setBackToPage = (e: MouseEvent<HTMLAnchorElement>) => {
-    //     e.preventDefault();
-
-    //     if (isActive) {
-    //         router.push(`/member/${id}`);
-    //         setPreviousURL(`back`);
-    //     }
-    // };
     return (
         <Link
             href={`/member/${id}`}
-            // onClick={setBackToPage}
             className={twMerge(
                 "block mx-auto w-full relative bg-white-200 dark:bg-purple-200 z-5 max-w-[408px] tab:max-w-[350px] pc:min-w-[320px] h-full px-4 tab:px-5 pc:px-4 py-5 isolate border-purple-strokeLight  border-[1px] dark:border-purple-stroke  ",
                 isActive
