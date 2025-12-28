@@ -407,6 +407,11 @@
         "services": "Main skills",
         "commercialExp": "Commercial experience",
         "date": "{experience, plural, =1 {1 yr.} other {# yrs.}}",
-        "expertise": "Expertise in"
+        "expertise": "Expertise in",
+        "untilNow": "until now",
+        "role": "Role:",
+        "domain": "Domain:",
+        "skills": "Skills:",
+        "otherMembers": "Other members:"
     }
 }

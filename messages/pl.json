@@ -408,6 +408,11 @@
         "services": "Główne umiejętności",
         "commercialExp": "Dośw. handlowe",
         "date": "{experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
-        "expertise": "Ekspertyza w"
+        "expertise": "Ekspertyza w",
+        "untilNow": "do tej pory",
+        "role": "Rola:",
+        "domain": "Domena:",
+        "skills": "Skille:",
+        "otherMembers": "Inni uczestnicy:"
     }
 }
