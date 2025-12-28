@@ -27,8 +27,8 @@ export const SomeProjectPage = ({
     const { name, heroText, heroTitle, deadlines, tasks } =
         currentProject[locale as LocaleType];
     const currentProjectSlug = currentProject.data.slug;
-    const members = membersData.filter(member =>
-        member.data.projectId.includes(currentProjectSlug)
+    const members = membersData.filter(({ data }) =>
+        data.projects.some(p => p.id === currentProjectSlug)
     );
 
     const {

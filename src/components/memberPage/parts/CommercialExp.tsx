@@ -2,20 +2,21 @@ import { getTranslations } from "next-intl/server";
 
 import { getMemberDomainList } from "@/src/utils/getMemberDomainList";
 import { getMemberExperience } from "@/src/utils/getMemberExperience";
+import { Project } from "@/types/Projects";
 
 interface CommercialExperienceProps {
     commercialExperience: string;
-    projectId: string[];
+    projects: Project[];
 }
 
 import { Title } from "./shared/Title";
 
 export const CommercialExp = async ({
     commercialExperience,
-    projectId,
+    projects,
 }: CommercialExperienceProps) => {
     const t = await getTranslations("MemberPage");
-    const domainList = getMemberDomainList({ projectId });
+    const domainList = getMemberDomainList({ projects });
 
     return (
         <section className="pb-4">

@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
+import { TitleBig } from "./shared/TitleBig";
+
 interface AboutProps {
     text: string[];
     services?: string[];
@@ -9,13 +11,11 @@ export const About = async ({ text, services }: AboutProps) => {
     const t = await getTranslations("MemberPage");
 
     return (
-        <section className="grid grid-cols-1 gap-4 tab:gap-5 pc:gap-8 desk:gap-10">
+        <section className="flex flex-col gap-4 tab:gap-5 pc:gap-8 desk:gap-10">
             <div className="text-greyLight dark:text-grey text-sm tab:text-base23 desk:text-lg25 leading-[23px] font-normal">
-                <h2 className="flex items-center font-caviar text-baseb tab:text-2xlb pc:text-3xl desk:text-4xl mb-4 text-purple-200 dark:text-white-200 before:mr-3 before:content-[''] before:border-[2px] before:border-redLight dark:before:border-red before:w-2 before:h-2">
-                    {t("about")}
-                </h2>
+                <TitleBig>{t("about")}</TitleBig>
                 {text.map((paragraph, index) => (
-                    <p key={index} className="mb-3 leading-[23px]">
+                    <p key={index} className="mb-3 leading-[23px] last:mb-0">
                         {paragraph}
                     </p>
                 ))}

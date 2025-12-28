@@ -39,7 +39,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         id,
         isEndInAboutMT,
         careerStart,
-        projectId,
+        projects,
     } = member.data;
 
     const status = generateRandomStatus();
@@ -83,7 +83,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                     careerStart={careerStart}
                 />
                 <Technologies tools={tools} />
-                <Domains projectId={projectId} />
+                <Domains projects={projects} />
                 <div className="grow w-full flex items-center justify-center">
                     {isEndInAboutMT ? (
                         <p className="font-caviar font-bold text-lg lowercase">

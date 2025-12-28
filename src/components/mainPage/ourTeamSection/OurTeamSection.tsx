@@ -15,9 +15,9 @@ import { Title } from "./Title";
 export const OurTeamSection = () => {
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
-    const defaultMembersData = membersData.filter(member => {
-        return member.data.projectId.includes("ilovemyteam-online");
-    });
+    const defaultMembersData = membersData.filter(({ data }) =>
+        data.projects.some(p => p.id === "ilovemyteam-online")
+    );
     const membersForMainFromTab = MAIN_MEMBERS.map(id =>
         membersData.find(member => member.data.id === id)
     ).filter((member): member is MemberDataItemType => Boolean(member));

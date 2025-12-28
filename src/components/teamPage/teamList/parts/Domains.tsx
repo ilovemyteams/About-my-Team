@@ -1,13 +1,14 @@
 import React from "react";
 
 import { getMemberDomainList } from "@/src/utils/getMemberDomainList";
+import { Project } from "@/types/Projects";
 
 interface DomainsProps {
-    projectId: string[];
+    projects: Project[];
 }
 
-export const Domains = ({ projectId }: DomainsProps) => {
-    const domainList = getMemberDomainList({ projectId });
+export const Domains = ({ projects }: DomainsProps) => {
+    const domainList = getMemberDomainList({ projects });
 
     return (
         <div className="w-full overflow-hidden max-h-[15px] tab:max-h-[20px]">

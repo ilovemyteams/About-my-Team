@@ -1,19 +1,15 @@
 import { portfolioData } from "@/src/mockedData/portfolioData";
+import { Project } from "@/types/Projects";
 
 interface getMemberDomainListProps {
-    projectId: string[];
+    projects: Project[];
 }
 
-export const getMemberDomainList = ({
-    projectId,
-}: getMemberDomainListProps) => {
+export const getMemberDomainList = ({ projects }: getMemberDomainListProps) => {
     const memberDomainList = new Set(
         portfolioData
-            .filter(project => {
-                return projectId.includes(project.data.slug);
-            })
-            .map(project => project.data.domains)
-            .flat()
+            .filter(project => projects.some(p => p.id === project.data.slug))
+            .flatMap(project => project.data.domains)
     );
 
     let domainList = "";
