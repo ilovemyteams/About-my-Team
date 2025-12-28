@@ -11,6 +11,7 @@ import { Education } from "./parts/Education";
 import { Expertise } from "./parts/Expertise";
 import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
+import { ProjectCardList } from "./parts/ProjectCardList";
 import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
 // import { Teammates } from "./parts/Teammates";
@@ -26,6 +27,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
         langData;
 
     const {
+        id,
         imageURL,
         position,
         socialLinks,
@@ -33,7 +35,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
         careerStart,
         commercialExperience,
         projectsExperience,
-        projectId,
+        projects,
         tools,
     } = member.data;
 
@@ -42,8 +44,8 @@ export const MemberPage = ({ member }: MemberPageProps) => {
             <div className="grid grid-cols-1 tab:grid-cols-[360px_1fr] pc:grid-cols-[328px_1fr] desk:grid-cols-[380px_1fr]">
                 <div
                     className={`
-                        grid grid-cols-1 grid-rows-[repeat(7,auto)_1fr] h-full gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7 
-                        [&>section:not(:last-child)]:border-b [&>section:not(:last-child)]:border-purple-strokeLight dark:[&>section:not(:last-child)]:border-purple-stroke`}
+                        flex flex-col gap-3 tab:border border-purple-strokeLight dark:border-purple-stroke tab:p-3 pc:p-5 desk:p-7 
+                        [&>section]:border-b [&>section]:border-purple-strokeLight dark:[&>section]:border-purple-stroke`}
                 >
                     <section>
                         <Avatar
@@ -61,7 +63,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                     {commercialExperience && (
                         <CommercialExp
                             commercialExperience={commercialExperience}
-                            projectId={projectId}
+                            projects={projects}
                         />
                     )}
                     <Expertise tools={tools} />
@@ -72,9 +74,15 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                         <Education education={certificates} certificates />
                     )}
                 </div>
-                <div className="tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
+                <div className="flex flex-col gap-4 tab:gap-5 pc:gap-8 desk:gap-10 tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
                     <About text={about} services={services} />
-                    {/* <Teammates projectId={projectId} /> */}
+                    <ProjectCardList
+                        id={id}
+                        projects={projects}
+                        tools={tools}
+                        position={position}
+                    />
+                    {/* <Teammates projects={projects} /> */}
                 </div>
             </div>
         </Section>
