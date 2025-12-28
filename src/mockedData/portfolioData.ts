@@ -161,9 +161,9 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://willow-motion.space",
             order: 8,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=11AjMZ8-S4FgRdXshbxeVzsA7Wd973Ia2",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311010/project9_k52ywq.png",
 
-            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311621/willow-motion_kfg866.jpg",
             mediaForHero: {
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1754949327/willow-motion_kycm7m.jpg",
                 type: "image",
@@ -215,7 +215,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Willow-Motion",
             siteView: "лендінг",
             subtitle: "Лендінг для студії з відеомонтажу",
-            description: "",
+            description:
+                "Лендінг для студії відеомонтажу, який демонструє творчий підхід, унікальний стиль робіт і дає змогу швидко ознайомитися з портфоліо та зв’язатися для обговорення проєкту.",
             heroTitle: "Willow-Motion",
             heroText: [
                 "Лендінг для студії відеомонтажу, яка майстерно перетворює ідеї та сирі кадри на цілісні, динамічні історії.",
@@ -366,7 +367,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Willow-Motion",
             siteView: "Landing",
             subtitle: "Landing page for a video editing studio",
-            description: "",
+            description:
+                "A landing page for a video editing studio that showcases a creative approach, a unique visual style, and allows visitors to quickly explore the portfolio and get in touch to discuss a project.",
             heroTitle: "Willow-Motion",
             heroText: [
                 "A landing page for a video editing studio that masterfully transforms ideas and raw footage into cohesive, dynamic stories.",
@@ -517,7 +519,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Willow-Motion",
             siteView: "strona docelowa",
             subtitle: "Landing page dla studia montażu wideo",
-            description: "",
+            description:
+                "Landing page dla studia montażu wideo, który prezentuje twórcze podejście, unikalny styl prac oraz umożliwia szybkie zapoznanie się z portfolio i kontakt w celu omówienia projektu.",
             heroTitle: "Willow-Motion",
             heroText: [
                 "Strona docelowa dla studia montażu wideo, które umiejętnie przekształca pomysły i surowy materiał filmowy w spójne, dynamiczne historie.",
@@ -672,9 +675,9 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://balabushko.com",
             order: 7,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1qQI5-QKeXJw0kKb_JipvBEZ4j6WnrQYX",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311009/project8_q4cjgc.png",
 
-            image: "https://drive.google.com/uc?export=view&id=1DjuIATAnXRrruZr24vdVZaCbOYyQuLt3",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311625/hanna-balabushko_grqzft.jpg",
             mediaForHero: {
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1753090338/hero_tfpey2.jpg",
                 type: "image",
@@ -723,7 +726,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Анна Балабушко",
             siteView: "лендінг",
             subtitle: "Лендінг для QA менторки",
-            description: "",
+            description:
+                "Сайт створено для досвідченої QA менторки та Technical Team Lead Анни, щоб представити її експертизу й допомогти спеціалістам різних рівнів розвиватись, готуватись до інтерв’ю та впевнено будувати кар’єру в ІТ.",
             heroTitle: "Анна Балабушко",
             heroText: [
                 "Проєкт створено для досвідченої QA менторки та Technical Team Lead з понад 10-річним досвідом роботи у сфері IT. Анна активно ділиться експертизою через індивідуальні менторські програми, а також у межах глобальних ініціатив Women in Engineering (WINE) та Women for the Future.",
@@ -871,7 +875,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Hanna Balabushko",
             siteView: "Landing",
             subtitle: "Landing page for a Coach",
-            description: "",
+            description:
+                "The project was created for Anna, an experienced QA mentor and Technical Team Lead, to showcase her expertise and help specialists of different levels grow, prepare for interviews, and confidently build their careers in IT.",
             heroTitle: "Hanna Balabushko",
             heroText: [
                 "The project was created for an experienced QA mentor and Technical Team Lead with over 10 years of experience in the IT industry. Anna actively shares her expertise through one-on-one mentoring programs as well as within global initiatives such as Women in Engineering (WINE) and Women for the Future.",
@@ -1019,7 +1024,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Hanna Balabushko",
             siteView: "strona docelowa",
             subtitle: "Landing page dla mentora QA",
-            description: "",
+            description:
+                "Projekt został stworzony dla Anny — doświadczonej mentorki QA oraz Technical Team Lead — aby zaprezentować jej ekspertyzę i pomóc specjalistom na różnych poziomach rozwijać się, przygotowywać do rozmów kwalifikacyjnych oraz pewnie budować karierę w IT.",
             heroTitle: "Hanna Balabushko",
             heroText: [
                 "Projekt został stworzony dla doświadczonego mentora QA i lidera zespołu technicznego z ponad 10-letnim doświadczeniem w IT. Anna aktywnie dzieli się swoją wiedzą poprzez indywidualne programy mentorskie, a także w ramach globalnych inicjatyw Women in Engineering (WINE) i Women for the Future.",
@@ -1171,8 +1177,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://career-coach.com.ua",
             order: 7,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1U6IMo1By3u6_5cHZN47vkephFfI3yd5-",
-            image: "https://drive.google.com/uc?export=view&id=1E-rbGYwz8LEX7MVzBINw7oNIX3-B9DA-",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311008/project7_lzyby2.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311627/hoida-luidmyla_qin6ro.jpg",
             mediaForHero: {
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1751447605/hero_ykjlzb.jpg",
                 type: "image",
@@ -1224,7 +1230,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Гойда Людмила",
             siteView: "лендінг",
             subtitle: "Лендінг для коуча",
-            description: "",
+            description:
+                "Проєкт створено для кар’єрної консультантки та коуча з понад 20-річним досвідом, щоб представити її послуги в сфері кар’єрних трансформацій і забезпечити зручний перший контакт із потенційними клієнтами.",
             heroTitle: "Гойда Людмила",
             heroText: [
                 "Проєкт створений для кар'єрної консультантки та коуча - експертки з понад 20-річним досвідом у сфері рекрутингу. Сайт став наступним кроком у розвитку її професійного напряму - індивідуального коучингу з фокусом на підтримку людей у кар'єрних трансформаціях.",
@@ -1397,7 +1404,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Liudmyla Hoida",
             siteView: "landing page",
             subtitle: "Landing page for a Coach",
-            description: "",
+            description:
+                "The project was created for a career consultant and coach with over 20 years of experience to showcase her services in the field of career transformation and provide a convenient first point of contact for potential clients.",
             heroTitle: "Liudmyla Hoida",
             heroText: [
                 "This project was created for a career consultant and coach - an expert with over 20 years of experience in the recruitment field. The website became the next step in the development of her professional path, focusing on individual coaching and supporting people through career transformations.",
@@ -1570,7 +1578,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Liudmyla Hoida",
             siteView: "strona docelowa",
             subtitle: "Landing page dla coacha",
-            description: "",
+            description:
+                "Projekt został stworzony dla doradczyni kariery i coacha z ponad 20-letnim doświadczeniem, aby zaprezentować jej usługi w zakresie transformacji zawodowej oraz zapewnić wygodny pierwszy kontakt z potencjalnymi klientami.",
             heroTitle: "Liudmyla Hoida",
             heroText: [
                 "Projekt został stworzony dla doradczyni zawodowej i coacha – ekspertki z ponad 20-letnim doświadczeniem w branży rekrutacyjnej. Strona internetowa stanowi kolejny krok w rozwoju jej ścieżki zawodowej, skoncentrowanej na indywidualnym coachingu wspierającym osoby w transformacjach kariery.",
@@ -1747,8 +1756,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://www.choodov.com",
             order: 6,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1ovMudsfQyZ3-7hphCNhrtFTpcPjY_-KB",
-            image: "https://drive.google.com/uc?export=view&id=1qp6lKJ4e3-qtlVT2VMoXgckO6DBkWl2o",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311007/project6_p8gcza.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311623/alex-chudov_lmexmx.jpg",
             mediaForHero: {
                 url: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1746034030/hero_xphcad.jpg",
                 type: "image",
@@ -1800,7 +1809,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Алекс Чудов",
             siteView: "лендінг",
             subtitle: "Лендінг для автора книги",
-            description: "",
+            description:
+                "Проєкт розроблений для українсько-канадського письменника Алекса Чудова як візитівку його особистого бренду та презентацію книги “Wonder in the Universe”, дозволяючи познайомитися з автором і перейти до придбання книги на Amazon.",
             heroTitle: "Алекс Чудов",
             heroText: [
                 "Проєкт розроблений для українсько-канадського письменника Алекса Чудова. Автор написав свою першу книгу “Wonder in the Universe”, в якій прагнув поділитись глибокими духовними сенсами, що накопичилися впродовж його життєвого шляху.",
@@ -1937,7 +1947,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Alex Chudov",
             siteView: "landing page",
             subtitle: "Landing page for a Book Author",
-            description: "",
+            description:
+                "The project was developed for Ukrainian-Canadian writer Alex Chudov as a showcase for his personal brand and a presentation of the book “Wonder in the Universe,” allowing visitors to get to know the author and proceed to purchase the book on Amazon.",
             heroTitle: "Alex Chudov",
             heroText: [
                 "The project was created for Ukrainian-Canadian writer Alex Chudov. The author has written his debut book “Wonder in the Universe”, where he shares deep spiritual insights accumulated throughout his life journey.",
@@ -2072,7 +2083,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Alex Chudov",
             siteView: "strona docelowa",
             subtitle: "Landing page dla autora książki",
-            description: "",
+            description:
+                "Projekt został opracowany dla ukraińsko-kanadyjskiego pisarza Alexa Chudova jako wizytówka jego osobistej marki oraz prezentacja książki „Wonder in the Universe”, umożliwiając zapoznanie się z autorem i przejście do zakupu książki na Amazon.",
             heroTitle: "Alex Chudov",
             heroText: [
                 'Projekt został opracowany dla ukraińsko-kanadyjskiego pisarza Alexa Chudova. Autor napisał swoją pierwszą książkę, "Wonder in the Universe", w której starał się podzielić głębokimi duchowymi przemyśleniami, które gromadziły się przez całe jego życie.',
@@ -2213,8 +2225,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://viktoriia-recruiting.com.ua",
             order: 5,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=18RWpznE25pfHZpFXStzp4MujPpm0cwbI",
-            image: "https://drive.google.com/uc?export=view&id=1KFlUqkjP-225Ro3A0gCkNQq5R1zUI17i",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311007/project5_odolbb.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311613/it-recruiter_vjvlvk.jpg",
             implementations: [
                 "Idea",
                 "Design",
@@ -2260,7 +2272,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Вікторія Забара",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
-            description: "",
+            description:
+                "Проєкт розроблений для рекрутерки, яка працює на британському ринку та спеціалізується на підборі складних професій, поєднуючи візитівку її особистого бренду та презентацію послуг і досвіду.",
             heroTitle: "Вікторія Забара",
             heroText: [
                 "Проєкт розроблений для рекрутерки, яка працює переважно на Британському ринку та спеціалізується на пошуку та підборі людей на складні посади, такі як пілоти, інженери, висококваліфіковані ІТ-спеціалісти та представники рідкісних професій.",
@@ -2350,7 +2363,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Victoriia Zabara",
             siteView: "landing page",
             subtitle: "Landing page for an IT Recruiter",
-            description: "",
+            description:
+                "This project was developed for a recruiter working in the UK market, specializing in filling complex positions, combining a showcase of her personal brand with a presentation of her services and experience.",
             heroTitle: "Victoriia Zabara",
             heroText: [
                 "This project was developed for a recruiter who primarily works in the UK market and specializes in sourcing and placing candidates in highly demanding roles such as pilots, engineers, highly skilled IT professionals, and other rare occupations.",
@@ -2440,7 +2454,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Victoriia Zabara",
             siteView: "strona docelowa",
             subtitle: "Landing page dla rekrutera IT",
-            description: "",
+            description:
+                "Projekt został opracowany dla rekrutera działającego na rynku brytyjskim, specjalizującego się w obsadzaniu trudnych stanowisk, łącząc wizytówkę jej osobistej marki z prezentacją usług i doświadczenia.",
             heroTitle: "Victoriia Zabara",
             heroText: [
                 "Projekt został opracowany dla rekruterki, która działa głównie na rynku brytyjskim i specjalizuje się w wyszukiwaniu oraz rekrutacji osób na wymagające stanowiska, takie jak piloci, inżynierowie, wysoko wykwalifikowani specjaliści IT oraz przedstawiciele rzadkich zawodów.",
@@ -2537,8 +2552,8 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "https://www.behance.net/gallery/206025559/UkrainianTheatre-web-UIUX-case-studyukranskij-teatr",
             order: 3,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1VQJcG8uJi6bSKhlDfY9bd3608dxhGJTQ",
-            image: "https://drive.google.com/uc?export=view&id=1_za8Na2MjieHDq2a5-aArjOHyloyDYe3",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311006/project3_tcgcm3.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311619/ukrainian-theater_wjyohn.jpg",
             implementations: [
                 "Idea",
                 "Design",
@@ -2614,16 +2629,15 @@ export const portfolioData: PortfolioDataItemType[] = [
         },
         ua: {
             name: "Український театр",
+            siteView: "вебсайт",
+            subtitle: "Вебсайт для ГО “Український театр”",
+            description:
+                '"Український театр" - це сучасний онлайн-майданчик для підтримки українського театру, що об’єднує контент і афішу, забезпечує живу взаємодію з глядачами та реалізований командою від ідеї до технічної підтримки.',
             heroTitle: "<purple>Український</purple> театр",
             heroText: [
                 '"Український театр" - це сучасний онлайн-майданчик, створений для підтримки українського театру в часи змін. Платформа об’єднує публікації, рецензії, афішу та аналітику, стаючи місцем зустрічі театру з глядачем. Редакція театрального медіа прагнула зробити контент доступнішим, а взаємодію з глядачами - живою та безперервною.',
                 "Проєкт втілено командою на всіх етапах: від ідеї та аналізу ринку до дизайну, розробки, тестування, та інтеграції платіжних систем для збору донатів, з подальшою технічною підтримкою.",
             ],
-
-            siteView: "вебсайт",
-            subtitle: "Вебсайт для ГО “Український театр”",
-            description:
-                "Довга товстезна гадюка обплелась навколо стовпа і ритмічно похитувала своєю плескатою головою. І чимало ще всіляких див і страхітливих речей було в просторій печері Гінгеми.",
             deadlines: {
                 analysis: "2 місяці",
                 design: "2 місяці",
@@ -2855,7 +2869,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Ukrainian theater",
             siteView: "website",
             subtitle: `Website for the NGO "Ukrainian Theater"`,
-            description: "descriptionId3",
+            description:
+                '"Ukrainian Theatre" is a modern online platform supporting Ukrainian theatre, combining content and event listings, providing live interaction with the audience, and developed by a team from concept to technical support.',
             heroTitle: "<purple>Ukrainian</purple> Theater",
             heroText: [
                 '"Ukrainian Theater" is a modern online platform created to support Ukrainian theater in times of change. This space brings together publications, reviews, event listings, and in-depth analysis - becoming a meeting point between theater and its audience. The editorial team behind this theater media project aimed to make content more accessible and audience engagement more vibrant and continuous.',
@@ -3092,7 +3107,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Ukraiński teatr",
             siteView: "website",
             subtitle: `Strona internetowa dla NGO "Ukraiński teatr"`,
-            description: "descriptionId3",
+            description:
+                '"Ukraiński Teatr" to nowoczesna platforma online wspierająca ukraiński teatr, łącząca treści i repertuar wydarzeń, umożliwiająca bezpośrednią interakcję z widzami oraz zrealizowana przez zespół od koncepcji po wsparcie techniczne.',
             heroTitle: "<purple>Ukraiński</purple> teatr",
             heroText: [
                 '"Ukraiński teatr" to nowoczesna platforma internetowa stworzona w celu wspierania ukraińskiego teatru w czasach zmian. Platforma łączy publikacje, recenzje, afisze i analizy, stając się miejscem spotkań teatru i widzów. Redakcja tego teatralnego medium dążyła do tego, by uczynić treści bardziej dostępnymi, a kontakt z publicznością - żywym i nieprzerwanym.',
@@ -3334,8 +3350,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             behanceLink:
                 "https://www.behance.net/gallery/224420717/Smachno-na-seli-Online-Store-for-Natural-Products",
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1tgltGLTRcbdHia5fjV4K6sFVJlOyi14l",
-            image: "https://drive.google.com/uc?export=view&id=19Go5FeHwvpALJUsmNSzBMCNRpmIXPnpB",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311006/project2_diwiwb.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311617/smachno-na-seli_tixt56.jpg",
             mediaForHero: {
                 url: "https://res.cloudinary.com/dvfu5vhjx/video/upload/v1745581355/hero-small-origin_fwixig.mp4",
                 type: "video",
@@ -3394,7 +3410,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             heroTitle: "<purple>Смачно!</purple> на селі",
             siteView: "інтернет-магазин",
             subtitle: "Інтернет-магазин натуральних продуктів",
-            description: "",
+            description:
+                '"Смачно! на селі" — інтернет-магазин домашньої городини з Полтави, створений для розширення онлайн-продажів фермера, залучення нових клієнтів і зручного замовлення натуральної продукції, реалізований командою від ідеї до технічної підтримки.',
             heroText: [
                 '"Смачно! на селі" – це інтернет-магазин домашньої городини, розроблений для фермера з українського міста Полтава. Він вирощує овочі вже 5 років і наважився на вихід в інтернет для збільшення продажів та залучення нових клієнтів.',
                 "Проєкт реалізований командою на всіх етапах створення продукту: ідея, аналітика ринку і конкурентів, дизайн, розробка бекенду, візуалізація, тестування, налаштування аналітики продажів, підключення платіжних систем та технічна підтримка.",
@@ -3556,7 +3573,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Smachno! na seli",
             siteView: "internetShop",
             subtitle: "Online Store for Natural Products",
-            description: "descriptionId2",
+            description: `"Smachno! na seli" is an online store of home-grown vegetables from Poltava, created to expand a farmer’s online sales, attract new customers, and provide a convenient way to order natural products, developed by a team from concept to technical support.`,
             heroTitle: "<purple>Smachno!</purple> na seli",
             heroText: [
                 '"Smachno! na seli" - is an online store for home-grown vegetables developed for a farmer from the Ukrainian city of Poltava. He has been growing vegetables for 5 years and decided to go online to increase sales and attract new customers.',
@@ -3720,7 +3737,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             name: "Smachno! na seli",
             siteView: "internetShop",
             subtitle: "Sklep internetowy z produktami naturalnymi",
-            description: "descriptionId2",
+            description:
+                '"Smachno! na seli" to sklep internetowy z domową warzywną produkcją z Połtawy, stworzony w celu rozszerzenia sprzedaży online rolnika, pozyskania nowych klientów oraz wygodnego zamawiania naturalnych produktów, zrealizowany przez zespół od pomysłu po wsparcie techniczne.',
             heroTitle: "<purple>Smachno!</purple> na seli",
             heroText: [
                 '"Smachno! na seli"– to sklep internetowy z domowymi warzywami, stworzony dla rolnika z ukraińskiego miasta Poltawa. Uprawia warzywa od 5 lat i postanowił przenieść sprzedaż do internetu, aby zwiększyć obroty i przyciągnąć nowych klientów.',
@@ -3888,8 +3906,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteLink: "https://protection.in.ua",
             order: 4,
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=11FGZgLaN9t04MQCCBGyVIveLNszNZaY6",
-            image: "https://drive.google.com/uc?export=view&id=1G8Z-YAOZV5g9s0qim-zRPpdoVx2v97Sd",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311006/project4_etglw7.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311615/migration-lawyer_x4fywt.jpg",
             implementations: ["Design", "Development", "Testing", "Support"],
             category: "websites",
             domains: ["Web", "Legal", "Agency"],
@@ -3899,21 +3917,21 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteView: "вебсайт",
             subtitle: "Вебсайт для міграційного адвоката",
             description:
-                "Сайт пропонує юридичні послуги в сфері міграційного права, включаючи захист прав громадян у Державній міграційній службі України та консультації з питань громадянства. Тут можна знайти інформацію про адвокатів, їхні послуги та контакти для зв'язку.",
+                "Міграційний адвокат - Багатосторінковий вебсайт юридичної практики, що презентує команду адвокатів з міграційного права та забезпечує іноземцям і громадянам України доступ до правової допомоги у взаємодії з державною міграційною службою та правоохоронними органами.",
         },
         en: {
             name: "Migration Lawyer",
             siteView: "website",
             subtitle: "Website for a Migration Lawyer",
             description:
-                "The website offers legal services in the field of migration law, including the protection of citizens' rights in the State Migration Service of Ukraine and consultations on citizenship issues. Here you can find information about lawyers, their services, and contact details.",
+                "Migration Lawyer – A multi-page website for a legal practice that presents a team of immigration law attorneys and provides foreigners and Ukrainian citizens with access to legal assistance in dealing with the state migration service and law enforcement agencies.",
         },
         pl: {
             name: "Prawnik imigracyjny",
             siteView: "website",
             subtitle: "Strona internetowa dla prawnika ds. migracji",
             description:
-                "Strona internetowa oferuje usługi prawne w zakresie prawa migracyjnego, w tym ochronę praw obywateli w Państwowej Służbie Migracyjnej Ukrainy oraz konsultacje w sprawach obywatelstwa. Tutaj można znaleźć informacje o prawnikach, ich usługach i dane kontaktowe.",
+                "Prawnik ds. Migracji – Wielostronicowa strona internetowa praktyki prawniczej, prezentująca zespół adwokatów specjalizujących się w prawie migracyjnym i zapewniająca cudzoziemcom oraz obywatelom Ukrainy dostęp do pomocy prawnej we współpracy z państwową służbą migracyjną i organami ścigania.",
         },
     },
     {
@@ -3922,8 +3940,8 @@ export const portfolioData: PortfolioDataItemType[] = [
             slug: "ilovemyteam-online",
             siteLink: "https://ilovemyteam.online",
             imageForAllProjectsPage:
-                "https://drive.google.com/uc?export=view&id=1euhTPDYseSUaGESWCxCcdZ0IAlp-mGVX",
-            image: "https://drive.google.com/uc?export=view&id=14zu-CX8qKSEIqsec_R1lW9S-HITsaG_s",
+                "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311011/project1_quh0wv.png",
+            image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1765311693/ilovemyteam_r1voyr.jpg",
             implementations: [
                 "Idea",
                 "Design",
@@ -3947,19 +3965,21 @@ export const portfolioData: PortfolioDataItemType[] = [
             siteView: "вебсайт",
             subtitle: "Вебсайт для IT команди",
             description:
-                "На нашому сайті ви знайдете інформацію про вже реалізовані проекти та команди, які стояли за їхнім створенням",
+                "Вебсайт, що презентує команди фрілансерів, які  перетворюють ідеї на стильні, функціональні та ефективні продукти - від аналізу й дизайну до розробки, тестування та запуску.",
         },
         en: {
             name: "i love my team",
             siteView: "website",
             subtitle: "Website for an IT Team",
-            description: "descriptionId1",
+            description:
+                "A website that showcases freelance teams who transform ideas into stylish, functional, and efficient products — from analysis and design to development, testing, and launch.",
         },
         pl: {
             name: "i love my team",
             siteView: "website",
             subtitle: "Strona internetowa dla zespołu IT",
-            description: "descriptionId1",
+            description:
+                "Strona internetowa prezentująca zespoły freelancerów, którzy przekształcają pomysły w stylowe, funkcjonalne i efektywne produkty - od analizy i projektowania po rozwój, testowanie i wdrożenie.",
         },
     },
 ];
