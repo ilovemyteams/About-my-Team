@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLocale, getTranslations } from "next-intl/server";
+import { useLocale, useTranslations } from "next-intl";
 
 import { IconGoToSite } from "@/src/components/shared/Icons/IconGoToSite";
 import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
@@ -21,14 +21,14 @@ interface ProjectCardProps {
     position: string;
 }
 
-export const ProjectCard = async ({
+export const ProjectCard = ({
     id,
     memberProject,
     tools,
     position,
 }: ProjectCardProps) => {
-    const t = await getTranslations("MemberPage");
-    const locale = await getLocale();
+    const t = useTranslations("MemberPage");
+    const locale = useLocale();
     const langData = memberProject.portfolioData[locale as LocaleType];
     const { name, description } = langData;
     const {

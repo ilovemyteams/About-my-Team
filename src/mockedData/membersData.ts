@@ -3677,7 +3677,7 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olga-ustymenko-qa",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [{ id: "ilovemyteam-online", startDate: "2025-06" }],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
@@ -3705,13 +3705,16 @@ export const membersData: MemberDataItemType[] = [
         ua: {
             name: "Ольга Устименко",
             about: [
-                "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
+                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
             ],
             shortQuote:
                 "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
             services: [
-                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX",
-                "Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
+                "Тестування програмного забезпечення",
+                "Розробка програмного забезпечення",
+                "Тестова документація",
+                "Техніки проєктування тестів",
+                "Аналіз вимог і специфікацій",
             ],
             team: "I Love My Team",
             languages: [
@@ -3720,8 +3723,9 @@ export const membersData: MemberDataItemType[] = [
             ],
             education: [
                 {
-                    institution: "Kyiv National University of Culture and Arts",
-                    degree: "Specialist in Computer Science",
+                    institution:
+                        "Київський національний університет культури і мистецтв",
+                    degree: "Спеціаліст із комп'ютерних наук",
                     yearStart: 2008,
                     yearEnd: 2014,
                 },
@@ -3744,13 +3748,16 @@ export const membersData: MemberDataItemType[] = [
         en: {
             name: "Olga Ustymenko",
             about: [
-                "I approach testing with enthusiasm, striving to ensure high product quality.",
+                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX. I am responsible for requirements analysis, test documentation development, and defect reporting.",
             ],
             shortQuote:
                 "I approach testing with enthusiasm, striving to ensure high product quality.",
             services: [
-                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX",
-                "I am responsible for requirements analysis, test documentation development, and defect reporting.",
+                "Software Testing",
+                "Software Development",
+                "Test Documentation",
+                "Test Design Techniques",
+                "Requirements and Specification Analysis",
             ],
             team: "I Love My Team",
             languages: [
@@ -3783,13 +3790,16 @@ export const membersData: MemberDataItemType[] = [
         pl: {
             name: "Olga Ustymenko",
             about: [
-                "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
+                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX. Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
             ],
             shortQuote:
                 "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
             services: [
-                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX",
-                "Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
+                "Testowanie oprogramowania",
+                "Rozwój oprogramowania",
+                "Dokumentacja testowa",
+                "Techniki projektowania testów",
+                "Analiza wymagań i specyfikacji",
             ],
             team: "I Love My Team",
             languages: [
