@@ -83,16 +83,16 @@ export const ProjectCard = ({
                             <p className="text-xs desk:text-sm">
                                 {t("skills")}
                             </p>
-                            <p className="flex flex-wrap gap-2 pc:max-h-[50px] desk:max-h-14 overflow-hidden">
+                            <ul className="flex flex-wrap gap-2 pc:max-h-[50px] desk:max-h-14 overflow-hidden">
                                 {skills.map(i => (
-                                    <span
+                                    <li
                                         key={i}
                                         className="px-2 py-[1px] border border-purple-strokeLight dark:border-purple-stroke"
                                     >
                                         {i}
-                                    </span>
+                                    </li>
                                 ))}
-                            </p>
+                            </ul>
                         </>
                     )}
                     <p className="text-xs desk:text-sm">{t("domain")}</p>

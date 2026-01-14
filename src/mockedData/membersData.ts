@@ -3,6 +3,14 @@ import { Language } from "@/types/Language";
 import { Project } from "@/types/Projects";
 import { Tools } from "@/types/Tools";
 
+export type ProfessionalExperience = {
+    role: string;
+    name: string;
+    startDate: string;
+    endDate?: string;
+    description: string;
+};
+
 export type MemberDataItemTranslation = {
     name: string;
     about: string[];
@@ -12,6 +20,7 @@ export type MemberDataItemTranslation = {
     languages?: Language[];
     education?: Institution[];
     certificates?: Institution[];
+    professionalExperience?: ProfessionalExperience[];
 };
 
 export type SocialLinks = {
@@ -2576,7 +2585,7 @@ export const membersData: MemberDataItemType[] = [
             projects: [
                 {
                     id: "ilovemyteam-online",
-                    startDate: "09.2024",
+                    startDate: "09-2024",
                     role: "Frontend-developer",
                     skills: [
                         "React",
@@ -2589,8 +2598,8 @@ export const membersData: MemberDataItemType[] = [
                 },
                 {
                     id: "alex-chudov",
-                    startDate: "01.2025",
-                    endDate: "03.2025",
+                    startDate: "01-2025",
+                    endDate: "03-2025",
                     role: "Frontend-developer",
                     skills: [
                         "Astro",
@@ -2602,8 +2611,8 @@ export const membersData: MemberDataItemType[] = [
                 },
                 {
                     id: "hoida-liudmyla",
-                    startDate: "03.2025",
-                    endDate: "06.2025",
+                    startDate: "03-2025",
+                    endDate: "06-2025",
                     role: "Frontend-developer",
                     skills: [
                         "Astro",
@@ -2706,6 +2715,23 @@ export const membersData: MemberDataItemType[] = [
                     yearEnd: 2023,
                 },
             ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "09-2024",
+                    description:
+                        "Працювала у великих командах, включно з комунікацією з дизайнерами, QA-інженерами та проєктними менеджерами. Створювала адаптивні, кросбраузерні вебсайти різної складності — від лендингів до багатосторінкових застосунків із використанням сучасних фреймворків. Розробляла зручні для користувачів інтерфейси з кастомними компонентами, анімаціями (CSS, GSAP, Framer Motion) та підтримкою багатьох мов. Інтегрувала фронтенд із зовнішніми сервісами (Calendly, Google Analytics, Mailchimp) та headless CMS (Sanity). Реалізовувала складні форми з валідацією та відправленням даних у різні джерела (email, Google Sheets, Telegram-бот).",
+                },
+                {
+                    role: "Менеджер з логістики",
+                    name: "Kernel Trade LLC",
+                    startDate: "04-2008",
+                    endDate: "11-2021",
+                    description:
+                        "Керувала взаєминами з перевізниками, укладала вигідні контракти, забезпечувала безперервну роботу ланцюга постачання та дистанційно навчала нових менеджерів з логістики.",
+                },
+            ],
         },
         en: {
             name: "Anna Prutnik",
@@ -2751,6 +2777,23 @@ export const membersData: MemberDataItemType[] = [
                     yearEnd: 2023,
                 },
             ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "09-2024",
+                    description:
+                        "Worked in large teams including communication with designers, qa engineers, and project managers Built responsive, cross-browser websites of various complexity from landing pages to multi-page applications using modern frameworks Created user-friendly interfaces with custom components, animations (CSS, GSAP, Framer Motion) and multi-language support Connected frontend with external services (Calendly, Google Analytics, Mailchimp) and headless CMS (Sanity) Built complex forms with validation and form submission to different destinations (email, Google Sheets, Telegram bot)",
+                },
+                {
+                    role: "Logistic Manager",
+                    name: "Kernel Trade LLC",
+                    startDate: "04-2008",
+                    endDate: "11-2021",
+                    description:
+                        "Managed carrier relationships, negotiated cost-effective contracts, ensured uninterrupted supply chain operations, and trained new logistics managers remotely",
+                },
+            ],
         },
         pl: {
             name: "Anna Prutnik",
@@ -2794,6 +2837,23 @@ export const membersData: MemberDataItemType[] = [
                     degree: "English For Tech (level 1)",
                     yearStart: 2023,
                     yearEnd: 2023,
+                },
+            ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "09-2024",
+                    description:
+                        "Pracowałam w dużych zespołach, w tym we współpracy z projektantami, inżynierami QA oraz project managerami. Tworzyłam responsywne, wieloprzeglądarkowe strony internetowe o różnym stopniu złożoności - od landing pages po wielostronicowe aplikacje z wykorzystaniem nowoczesnych frameworków. Projektowałam przyjazne dla użytkownika interfejsy z niestandardowymi komponentami, animacjami (CSS, GSAP, Framer Motion) oraz obsługą wielu języków. Integrowałam frontend z zewnętrznymi usługami (Calendly, Google Analytics, Mailchimp) oraz headless CMS (Sanity). Budowałam złożone formularze z walidacją i wysyłką danych do różnych miejsc docelowych (email, Google Sheets, bot Telegram).",
+                },
+                {
+                    role: "Menedżer logistyki",
+                    name: "Kernel Trade LLC",
+                    startDate: "04-2008",
+                    endDate: "11-2021",
+                    description:
+                        "Zarządzała relacjami z przewoźnikami, negocjowała korzystne umowy, zapewniała nieprzerwane funkcjonowanie łańcucha dostaw oraz zdalnie szkoliła nowych menedżerów logistycznych.",
                 },
             ],
         },
@@ -3681,7 +3741,7 @@ export const membersData: MemberDataItemType[] = [
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
-            position: "QA Engineer",
+            position: "QA Manual",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "5",

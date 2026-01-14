@@ -413,6 +413,7 @@
         "role": "Rola:",
         "domain": "Domena:",
         "skills": "Skille:",
-        "otherMembers": "Inni uczestnicy:"
+        "otherMembers": "Inni uczestnicy:",
+        "profExp": "Doświadczenie zawodowe"
     }
 }

@@ -412,6 +412,7 @@
         "role": "Role:",
         "domain": "Domain:",
         "skills": "Skills:",
-        "otherMembers": "Other members:"
+        "otherMembers": "Other members:",
+        "profExp": "Professional experience"
     }
 }

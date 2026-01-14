@@ -11,6 +11,7 @@ import { Education } from "./parts/Education";
 import { Expertise } from "./parts/Expertise";
 import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
+import { ProfessionalExp } from "./parts/ProfessionalExp";
 import { ProjectCardList } from "./parts/ProjectCardList";
 import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
@@ -23,8 +24,15 @@ interface MemberPageProps {
 export const MemberPage = ({ member }: MemberPageProps) => {
     const locale = useLocale();
     const langData = member[locale as LocaleType];
-    const { name, about, languages, education, certificates, services } =
-        langData;
+    const {
+        name,
+        about,
+        languages,
+        education,
+        certificates,
+        services,
+        professionalExperience,
+    } = langData;
 
     const {
         id,
@@ -82,6 +90,11 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                         tools={tools}
                         position={position}
                     />
+                    {professionalExperience && (
+                        <ProfessionalExp
+                            professionalExperience={professionalExperience}
+                        />
+                    )}
                     {/* <Teammates projects={projects} /> */}
                 </div>
             </div>
