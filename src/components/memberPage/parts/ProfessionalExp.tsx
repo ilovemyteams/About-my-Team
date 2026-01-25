@@ -1,10 +1,9 @@
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 import { ProfessionalExperience } from "@/src/mockedData/membersData";
-import { formatMonthName } from "@/src/utils/formatMonthName";
 
+import { ProjectExperience } from "./ProjectExperience";
 import { TitleBig } from "./shared/TitleBig";
-
 interface ProfessionalExperienceProps {
     professionalExperience: ProfessionalExperience[];
 }
@@ -13,7 +12,6 @@ export const ProfessionalExp = async ({
     professionalExperience,
 }: ProfessionalExperienceProps) => {
     const t = await getTranslations("MemberPage");
-    const locale = await getLocale();
 
     return (
         <section>
@@ -35,14 +33,12 @@ export const ProfessionalExp = async ({
                         <p className="text-xs tab:text-sm desk:text-base mb-1 desk:mb-2 text-redLight dark:text-red">
                             {i.name}
                         </p>
-                        <p className="capitalize mb-3 text-xs tab:text-sm tab:mb-4 desk:text-base text-purple-130 dark:text-purple-50">
-                            <span>{formatMonthName(i.startDate, locale)}</span>
-                            <span>
-                                {i.endDate
-                                    ? ` - ${formatMonthName(i.endDate, locale)}`
-                                    : ` - ${t("untilNow")}`}
-                            </span>
-                        </p>
+
+                        <ProjectExperience
+                            startDate={i.startDate}
+                            endDate={i.endDate}
+                        />
+
                         <p className="text-sm font-normal tab:text-base23 desk:text-lg">
                             {i.description}
                         </p>
