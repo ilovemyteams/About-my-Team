@@ -23,7 +23,7 @@ export const CommercialExp = async ({
             <div className="flex justify-between items-center">
                 <Title>{t("commercialExp")}</Title>
                 <span className="text-purple-130 dark:text-purple-50 text-sm font-normal desk:text-base">
-                    {t("date", {
+                    {t("year", {
                         experience: getMemberExperience(commercialExperience),
                     })}
                 </span>

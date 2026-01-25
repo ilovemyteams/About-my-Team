@@ -29,7 +29,7 @@ export const Expertise = async ({ tools }: ExpertiseProps) => {
                         </p>
                         {tool.startDate && (
                             <p className="ml-3 text-purple-130 dark:text-purple-50 text-sm font-normal desk:text-base whitespace-nowrap">
-                                {t("date", {
+                                {t("year", {
                                     experience: getMemberExperience(
                                         tool.startDate,
                                         tool.endDate

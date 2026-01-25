@@ -1,5 +1,5 @@
 export const formatMonthName = (date: string, locale: string): string => {
-    const [month, year] = date.split("-").map(Number);
+    const [year, month] = date.split("-").map(Number);
 
     const monthName = new Date(year, month - 1).toLocaleString(locale, {
         month: "long",
