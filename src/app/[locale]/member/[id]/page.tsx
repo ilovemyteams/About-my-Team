@@ -34,7 +34,7 @@ export async function generateMetadata({
             languages: {
                 en: `/en/member/${id}`,
                 pl: `/pl/member/${id}`,
-                ua: `/member/${id}`,
+                ua: `/ua/member/${id}`,
             },
         },
         title: memberName,
