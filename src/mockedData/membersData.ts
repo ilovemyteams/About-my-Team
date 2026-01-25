@@ -259,7 +259,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "mariia-popova-designer-graphic-designer-ui-ux-designer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/mariia-popova_aan7kg.jpg",
@@ -309,7 +314,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "svitlana-kondratenko-business-analyst",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-01",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/svitlana-kondratenko_isz00m.jpg",
@@ -364,7 +374,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "vlad-shumkov-fullstack-developer",
-            projects: [{ id: "ilovemyteam-online" }, { id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-04",
+                    endDate: "2025-04",
+                },
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Shymkov_tntedf.jpg",
@@ -426,7 +446,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "ihor-dronishynets-fullstack-developer",
-            projects: [{ id: "ilovemyteam-online" }, { id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-02",
+                    endDate: "2025-08",
+                },
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-01",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/Igor_%D0%BE%D0%B1%D0%BE%D1%80%D0%BE%D0%B1%D0%BA%D0%B0_ixtmyr.png",
@@ -494,10 +524,25 @@ export const membersData: MemberDataItemType[] = [
             id: "iryna-stoliarova-ui-ux-designer",
 
             projects: [
-                { id: "ilovemyteam-online" },
-                { id: "protection-in-ua" },
-                { id: "alex-chudov" },
-                { id: "willow-motion" },
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-02",
+                },
+                {
+                    id: "protection-in-ua",
+                    startDate: "2024-06",
+                    endDate: "2024-07",
+                },
+                {
+                    id: "alex-chudov",
+                    startDate: "2025-01",
+                    endDate: "2025-03",
+                },
+                {
+                    id: "willow-motion",
+                    startDate: "2025-07",
+                    endDate: "2025-09",
+                },
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560757/Iryna_Stoliarova_sfjhav.jpg",
@@ -562,8 +607,16 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "anastasiia-nazarenko-graphic-designer",
             projects: [
-                { id: "ilovemyteam-online" },
-                { id: "protection-in-ua" },
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-02",
+                    endDate: "2025-02",
+                },
+                {
+                    id: "protection-in-ua",
+                    startDate: "2024-06",
+                    endDate: "2024-07",
+                },
             ],
 
             imageURL:
@@ -624,13 +677,13 @@ export const membersData: MemberDataItemType[] = [
                 {
                     id: "willow-motion",
                     startDate: "2025-07",
-                    endDate: "2025-07",
+                    endDate: "2025-08",
                     role: "Frontend-developer",
                 },
                 {
                     id: "protection-in-ua",
                     startDate: "2024-06",
-                    endDate: "2024-06",
+                    endDate: "2024-07",
                     role: "Frontend-developer",
                 },
             ],
@@ -785,7 +838,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olena-posternak-frontend-developer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-02",
+                    endDate: "2024-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/OlenaPosternak_ywdiuy.jpg",
@@ -841,7 +900,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olga-mykhailova-frontend-developer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-08",
+                    endDate: "2024-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560762/OlgaMykhailova_v9nbxu.jpg",
@@ -902,8 +967,15 @@ export const membersData: MemberDataItemType[] = [
         data: {
             id: "kateryna-rubanik-qa-engineer",
             projects: [
-                { id: "ilovemyteam-online" },
-                { id: "protection-in-ua" },
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-08",
+                },
+                {
+                    id: "protection-in-ua",
+                    startDate: "2024-06",
+                    endDate: "2024-07",
+                },
             ],
 
             imageURL:
@@ -978,7 +1050,16 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "eugene-serdiuk-fullstack-developer",
-            projects: [{ id: "batatfarm-com" }, { id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-11",
+                },
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/eugene-serdiuk_wmghk8.jpg",
@@ -1110,7 +1191,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "denis-slivinskyi-fullstack-developer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Slivinskyi_xvvwbs.jpg",
@@ -1168,7 +1254,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "volodymyr-dehtiarev-fullstack-developer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/volodymyr_dehtiarev_pwh5v7.jpg",
@@ -1219,7 +1310,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olena-chornobryvets-qa-engineer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-11",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742559492/Chornobryvec_a5gkha.jpg",
@@ -1267,7 +1363,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "hanna-horbenko-qa-engineer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742561627/Hanna_Horbenko_ynmaef.jpg",
@@ -1325,7 +1426,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "anna-klyba-qa-engineer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-11",
+                    endDate: "2024-02",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anna_Klyba_faaoeq.jpg",
@@ -1380,7 +1487,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oksana-luchko-qa-engineer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-07",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560788/oksana-luchko_qotwzx.jpg",
@@ -1434,7 +1546,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "nadia-hubchuk-qa-engineer",
-            projects: [{ id: "ilovemyteam-online" }, { id: "alex-chudov" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-07",
+                },
+                {
+                    id: "alex-chudov",
+                    startDate: "2025-01",
+                    endDate: "2025-03",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560759/nadia-hubchuk_c4pyg4.jpg",
@@ -1491,7 +1613,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "tetiana-seletska-project-manager-scrum-master",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-06",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560799/tetiana-seletska_skb82g.jpg",
@@ -1716,7 +1843,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "marta-morintseva-qa-engineer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Marta_Morintseva_crc9p8.jpg",
@@ -1773,7 +1905,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-shevchenko-business-analyst",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560760/iryna-shevchenko_t7gfpu.jpg",
@@ -1882,7 +2019,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "natali-istomina-business-analyst",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/natali-istomina_ag13hs.jpg",
@@ -1934,7 +2077,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "veronika-zlobina-ui-ux-designer",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-05",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560764/Veronika_Zlobina_njpuov.jpg",
@@ -1993,12 +2142,35 @@ export const membersData: MemberDataItemType[] = [
             id: "mila-maksymenko-ui-ux-designer",
 
             projects: [
-                { id: "ilovemyteam-online" },
-                { id: "theatermag-com-ua" },
-                { id: "viktoriia-zabara" },
-                { id: "alex-chudov" },
-                { id: "hoida-liudmyla" },
-                { id: "hanna-balabushko" },
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-09",
+                },
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-10",
+                },
+                {
+                    id: "viktoriia-zabara",
+                    startDate: "2024-10",
+                    endDate: "2024-11",
+                },
+                {
+                    id: "alex-chudov",
+                    startDate: "2025-01",
+                    endDate: "2025-03",
+                },
+                {
+                    id: "hoida-liudmyla",
+                    startDate: "2025-03",
+                    endDate: "2025-06",
+                },
+                {
+                    id: "hanna-balabushko",
+                    startDate: "2025-06",
+                    endDate: "2025-09",
+                },
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/Mila_Maksymenko_gfxjbp.jpg",
@@ -2081,7 +2253,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "anton-chertok-frontend-developer",
-            projects: [{ id: "theatermag-com-ua" }, { id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-10",
+                },
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560758/Anton_Chertok_ocqrx9.jpg",
@@ -2141,10 +2323,25 @@ export const membersData: MemberDataItemType[] = [
             id: "dmytro-bulakhov-frontend-developer",
 
             projects: [
-                { id: "theatermag-com-ua" },
-                { id: "batatfarm-com" },
-                { id: "viktoriia-zabara" },
-                { id: "hanna-balabushko" },
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-10",
+                },
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-11",
+                },
+                {
+                    id: "viktoriia-zabara",
+                    startDate: "2024-10",
+                    endDate: "2024-11",
+                },
+                {
+                    id: "hanna-balabushko",
+                    startDate: "2025-06",
+                    endDate: "2025-09",
+                },
             ],
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560781/dmytro-bulakhov_uhrnzs.jpg",
@@ -2201,7 +2398,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "evhen-malysh-backend-developer",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-07",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560782/evhen-malysh_mcxosc.jpg",
@@ -2255,7 +2458,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "anatolii-omelchenko-backend-developer",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560763/Omelchenko_Anatolii_v41sue.jpg",
@@ -2310,7 +2519,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oleksandr-meshcherskyi-fullstack-developer",
-            projects: [{ id: "batatfarm-com" }, { id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2023-10",
+                },
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2024-07",
+                    endDate: "2024-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/oleksandr-meshcherskyi_cyuio8.jpg",
@@ -2361,7 +2580,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "svitlana-krokhmalna-qa-engineer",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2023-11",
+                    endDate: "2024-06",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744802867/Svitlana_Krokhmalna_wqiqqt.jpg",
@@ -2414,7 +2639,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oksana-onopriienko-qa-engineer",
-            projects: [{ id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2024-06",
+                    endDate: "2024-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560789/Oksana_Onopriienko_fgilcy.jpg",
@@ -2464,7 +2695,17 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olena-halushka-ui-ux-designer",
-            projects: [{ id: "batatfarm-com" }, { id: "theatermag-com-ua" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-06",
+                },
+                {
+                    id: "theatermag-com-ua",
+                    startDate: "2024-06",
+                    endDate: "2024-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Olena_Halushka_tdfnpu.jpg",
@@ -2527,7 +2768,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "mariia-cherevko-ui-ux-designer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-10",
+                    endDate: "2025-03",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560761/Mariia_Cherevko_ieqg8o.png",
@@ -2585,7 +2832,7 @@ export const membersData: MemberDataItemType[] = [
             projects: [
                 {
                     id: "ilovemyteam-online",
-                    startDate: "09-2024",
+                    startDate: "2024-09",
                     role: "Frontend-developer",
                     skills: [
                         "React",
@@ -2598,8 +2845,8 @@ export const membersData: MemberDataItemType[] = [
                 },
                 {
                     id: "alex-chudov",
-                    startDate: "01-2025",
-                    endDate: "03-2025",
+                    startDate: "2025-01",
+                    endDate: "2025-03",
                     role: "Frontend-developer",
                     skills: [
                         "Astro",
@@ -2611,8 +2858,8 @@ export const membersData: MemberDataItemType[] = [
                 },
                 {
                     id: "hoida-liudmyla",
-                    startDate: "03-2025",
-                    endDate: "06-2025",
+                    startDate: "2025-03",
+                    endDate: "2025-06",
                     role: "Frontend-developer",
                     skills: [
                         "Astro",
@@ -2719,15 +2966,15 @@ export const membersData: MemberDataItemType[] = [
                 {
                     role: "Frontend-developer",
                     name: "I love my team",
-                    startDate: "09-2024",
+                    startDate: "2024-09",
                     description:
                         "Працювала у великих командах, включно з комунікацією з дизайнерами, QA-інженерами та проєктними менеджерами. Створювала адаптивні, кросбраузерні вебсайти різної складності — від лендингів до багатосторінкових застосунків із використанням сучасних фреймворків. Розробляла зручні для користувачів інтерфейси з кастомними компонентами, анімаціями (CSS, GSAP, Framer Motion) та підтримкою багатьох мов. Інтегрувала фронтенд із зовнішніми сервісами (Calendly, Google Analytics, Mailchimp) та headless CMS (Sanity). Реалізовувала складні форми з валідацією та відправленням даних у різні джерела (email, Google Sheets, Telegram-бот).",
                 },
                 {
                     role: "Менеджер з логістики",
                     name: "Kernel Trade LLC",
-                    startDate: "04-2008",
-                    endDate: "11-2021",
+                    startDate: "2008-04",
+                    endDate: "2021-11",
                     description:
                         "Керувала взаєминами з перевізниками, укладала вигідні контракти, забезпечувала безперервну роботу ланцюга постачання та дистанційно навчала нових менеджерів з логістики.",
                 },
@@ -2781,15 +3028,15 @@ export const membersData: MemberDataItemType[] = [
                 {
                     role: "Frontend-developer",
                     name: "I love my team",
-                    startDate: "09-2024",
+                    startDate: "2024-09",
                     description:
                         "Worked in large teams including communication with designers, qa engineers, and project managers Built responsive, cross-browser websites of various complexity from landing pages to multi-page applications using modern frameworks Created user-friendly interfaces with custom components, animations (CSS, GSAP, Framer Motion) and multi-language support Connected frontend with external services (Calendly, Google Analytics, Mailchimp) and headless CMS (Sanity) Built complex forms with validation and form submission to different destinations (email, Google Sheets, Telegram bot)",
                 },
                 {
                     role: "Logistic Manager",
                     name: "Kernel Trade LLC",
-                    startDate: "04-2008",
-                    endDate: "11-2021",
+                    startDate: "2008-04",
+                    endDate: "2021-11",
                     description:
                         "Managed carrier relationships, negotiated cost-effective contracts, ensured uninterrupted supply chain operations, and trained new logistics managers remotely",
                 },
@@ -2843,15 +3090,15 @@ export const membersData: MemberDataItemType[] = [
                 {
                     role: "Frontend-developer",
                     name: "I love my team",
-                    startDate: "09-2024",
+                    startDate: "2024-09",
                     description:
                         "Pracowałam w dużych zespołach, w tym we współpracy z projektantami, inżynierami QA oraz project managerami. Tworzyłam responsywne, wieloprzeglądarkowe strony internetowe o różnym stopniu złożoności - od landing pages po wielostronicowe aplikacje z wykorzystaniem nowoczesnych frameworków. Projektowałam przyjazne dla użytkownika interfejsy z niestandardowymi komponentami, animacjami (CSS, GSAP, Framer Motion) oraz obsługą wielu języków. Integrowałam frontend z zewnętrznymi usługami (Calendly, Google Analytics, Mailchimp) oraz headless CMS (Sanity). Budowałam złożone formularze z walidacją i wysyłką danych do różnych miejsc docelowych (email, Google Sheets, bot Telegram).",
                 },
                 {
                     role: "Menedżer logistyki",
                     name: "Kernel Trade LLC",
-                    startDate: "04-2008",
-                    endDate: "11-2021",
+                    startDate: "2008-04",
+                    endDate: "2021-11",
                     description:
                         "Zarządzała relacjami z przewoźnikami, negocjowała korzystne umowy, zapewniała nieprzerwane funkcjonowanie łańcucha dostaw oraz zdalnie szkoliła nowych menedżerów logistycznych.",
                 },
@@ -2861,7 +3108,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oleksandr-petrychuk-fullstack-developer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-09",
+                    endDate: "2025-07",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560772/Alex_Petrychuk_jwgo0v.jpg",
@@ -2916,7 +3169,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "eugene-siedinin-qa-engineer",
-            projects: [{ id: "batatfarm-com" }],
+            projects: [
+                {
+                    id: "batatfarm-com",
+                    startDate: "2024-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560781/eugene-siedinin_oqebmc.jpg",
@@ -2969,7 +3227,18 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oleksandr-shcherbak-qa-engineer",
-            projects: [{ id: "ilovemyteam-online" }, { id: "willow-motion" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-11",
+                    endDate: "2025-08",
+                },
+                {
+                    id: "willow-motion",
+                    startDate: "2025-07",
+                    endDate: "2025-09",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1743177906/Alex_Shcherbak_wo0hqq.jpg",
@@ -3024,7 +3293,18 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "solomiia-lutska-project-project-manager-scrum-master",
-            projects: [{ id: "ilovemyteam-online" }, { id: "alex-chudov" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2024-11",
+                    endDate: "2025-03",
+                },
+                {
+                    id: "alex-chudov",
+                    startDate: "2025-01",
+                    endDate: "2025-03",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1742560797/Solomia_l5xk4b.jpg",
@@ -3074,7 +3354,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oksana-arpul-qa-engineer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-03",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744795126/Oksana_QA_lnllhm.jpg",
@@ -3130,7 +3415,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "viktoriia-lapina-ui-ux-designer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-02",
+                    endDate: "2025-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744827270/Viktoriia_UIUX_m5lnsb.jpg",
@@ -3179,7 +3470,18 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "stepan-kozurak-project-project-manager",
-            projects: [{ id: "ilovemyteam-online" }, { id: "willow-motion" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-02",
+                    endDate: "2025-08",
+                },
+                {
+                    id: "willow-motion",
+                    startDate: "2025-07",
+                    endDate: "2025-09",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830870/Stepan_PM_crqljr.jpg",
@@ -3237,7 +3539,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "oksana-zhmurko-business-analyst",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-04",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1744830866/Oksana_BA_pnmuxb.jpg",
@@ -3324,7 +3631,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "diana-dudnyk-ui-ux-designer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-06",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Diana_Dudnyk_sokqpn.jpg",
@@ -3394,7 +3706,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "vladyslava-bobko-ui-ux-designer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-06",
+                    endDate: "2025-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Vladyslava_a7cvmi.jpg",
@@ -3617,7 +3935,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "natalia-kalabanova-scrum-master",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-04",
+                    endDate: "2025-06",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Natalia_Scrum_r8hmyz.jpg",
@@ -3673,7 +3997,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "tetiana-drofa-project-manager",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-04",
+                    endDate: "2025-08",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1746727912/Tanya_PM_cj71fj.jpg",
@@ -3737,7 +4067,12 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "olga-ustymenko-qa",
-            projects: [{ id: "ilovemyteam-online", startDate: "2025-06" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-06",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
@@ -3893,7 +4228,13 @@ export const membersData: MemberDataItemType[] = [
     {
         data: {
             id: "iryna-andrushchenko-ui-ux-designer",
-            projects: [{ id: "ilovemyteam-online" }],
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-07",
+                    endDate: "2025-10",
+                },
+            ],
 
             imageURL:
                 "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Iryna_Andrushchenko_osltqv.jpg",
