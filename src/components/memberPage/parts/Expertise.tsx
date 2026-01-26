@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 import { getMemberExperience } from "@/src/utils/getMemberExperience";
 import { Tools } from "@/types/Tools";
@@ -10,7 +10,11 @@ interface ExpertiseProps {
 }
 
 export const Expertise = async ({ tools }: ExpertiseProps) => {
-    const t = await getTranslations("MemberPage");
+    const locale = await getLocale();
+    const t = await getTranslations({
+        locale,
+        namespace: "MemberPage",
+    });
 
     return (
         <section>
