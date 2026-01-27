@@ -18,7 +18,7 @@ type QuestionType = {
         answerOrderImage?: string;
         removeOrderBtn?: boolean;
     };
-    ua: QAItemLocalizationTextType;
+    uk: QAItemLocalizationTextType;
     pl: QAItemLocalizationTextType;
     en: QAItemLocalizationTextType;
 };
