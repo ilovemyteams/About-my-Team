@@ -1,4 +1,4 @@
-import { useLocale } from "next-intl";
+import { getLocale } from "next-intl/server";
 
 import { Section } from "@/src/components/shared/Section";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
@@ -15,14 +15,14 @@ import { ProfessionalExp } from "./parts/ProfessionalExp";
 import { ProjectCardList } from "./parts/ProjectCardList";
 import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
-// import { Teammates } from "./parts/Teammates";
+import { Teammates } from "./parts/Teammates";
 
 interface MemberPageProps {
     member: MemberDataItemType;
 }
 
-export const MemberPage = ({ member }: MemberPageProps) => {
-    const locale = useLocale();
+export const MemberPage = async ({ member }: MemberPageProps) => {
+    const locale = await getLocale();
     const langData = member[locale as LocaleType];
     const {
         name,
@@ -95,7 +95,7 @@ export const MemberPage = ({ member }: MemberPageProps) => {
                             professionalExperience={professionalExperience}
                         />
                     )}
-                    {/* <Teammates projects={projects} /> */}
+                    <Teammates projects={projects} id={id} />
                 </div>
             </div>
         </Section>

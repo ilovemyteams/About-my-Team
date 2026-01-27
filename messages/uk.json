@@ -140,7 +140,8 @@
         "websites": "Вебсайт",
         "showAll": "Показати всі",
         "showLess": "Згорнути",
-        "allMembers": "Всі учасники"
+        "allMembers": "Всі учасники",
+        "allTeammates": "Показати всіх"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"

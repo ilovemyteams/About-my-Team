@@ -143,7 +143,8 @@
         "websites": "Strona internetowa",
         "showAll": "Pokaż wszystkie",
         "showLess": "Zwiń",
-        "allMembers": "Wszyscy uczestnicy"
+        "allMembers": "Wszyscy uczestnicy",
+        "allTeammates": "Pokaż wszystkie"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"

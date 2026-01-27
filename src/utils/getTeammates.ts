@@ -24,15 +24,18 @@ const hasOverlappingProject = (projectA: Project, projectB: Project) => {
 
 export const getTeammates = (
     members: MemberDataItemType[],
-    baseMember: Project[]
+    baseMember: Project[],
+    baseMemberId: string
 ) => {
-    return members.filter(member =>
-        member.data.projects.some(memberProject =>
-            baseMember.some(
-                baseMemberProject =>
-                    memberProject.id === baseMemberProject.id &&
-                    hasOverlappingProject(memberProject, baseMemberProject)
+    return members.filter(
+        member =>
+            member.data.id !== baseMemberId &&
+            member.data.projects.some(memberProject =>
+                baseMember.some(
+                    baseMemberProject =>
+                        memberProject.id === baseMemberProject.id &&
+                        hasOverlappingProject(memberProject, baseMemberProject)
+                )
             )
-        )
     );
 };

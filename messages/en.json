@@ -141,7 +141,8 @@
         "websites": "Website",
         "showAll": "Show all",
         "showLess": "Show less",
-        "allMembers": "All participants"
+        "allMembers": "All participants",
+        "allTeammates": "Show all"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
