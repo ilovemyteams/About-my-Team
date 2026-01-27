@@ -26,8 +26,8 @@ export const Avatar = ({ imageURL, position, name }: AvatarProps) => {
                     <ImageFromCloud
                         storage="members"
                         src={imageURL}
-                        width={256}
-                        height={256}
+                        width={550}
+                        height={550}
                         alt={name}
                         loading="lazy"
                         className={"object-cover w-full h-full"}

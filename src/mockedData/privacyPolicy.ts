@@ -1,6 +1,6 @@
 import { TextDocContent } from "@/types/TextDocTypes";
 export interface PolicyType {
-    ua: PolicyData;
+    uk: PolicyData;
     en: PolicyData;
     pl: PolicyData;
 }
@@ -12,7 +12,7 @@ export interface PolicyData {
 }
 
 export const policyData: PolicyType = {
-    ua: {
+    uk: {
         title: "Політика  <purple>конфіденційності</purple>",
         publishDate: "Розміщено 06.06.2025",
         data: [

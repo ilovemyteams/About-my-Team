@@ -1,6 +1,6 @@
 export type СategoryNamesProp = {
     categoryName: string;
-    ua: string;
+    uk: string;
     pl: string;
     en: string;
 };
@@ -8,37 +8,37 @@ export type СategoryNamesProp = {
 export const categoryNames: СategoryNamesProp[] = [
     {
         categoryName: "developer",
-        ua: "Розробники",
+        uk: "Розробники",
         pl: "Deweloperzy",
         en: "Developers",
     },
     {
         categoryName: "designer",
-        ua: "Дизайнери",
+        uk: "Дизайнери",
         pl: "Projektanci",
         en: "Designers",
     },
     {
         categoryName: "qa",
-        ua: "Тестувальники",
+        uk: "Тестувальники",
         pl: "Testerzy Oprogramowania",
         en: "QA engineers",
     },
     {
         categoryName: "business-analytic",
-        ua: "Бізнес-аналітики",
+        uk: "Бізнес-аналітики",
         pl: "Analitycy biznesowi",
         en: "Business-analysts",
     },
     {
         categoryName: "manager",
-        ua: "Менеджери",
+        uk: "Менеджери",
         pl: "Menedżerowie",
         en: "Managers",
     },
     {
         categoryName: "marketer",
-        ua: "Маркетологи",
+        uk: "Маркетологи",
         pl: "Marketers",
         en: "Marketers",
     },

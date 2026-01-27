@@ -48,7 +48,7 @@ export type DataType = {
 
 export type MemberDataItemType = {
     data: DataType;
-    ua: MemberDataItemTranslation;
+    uk: MemberDataItemTranslation;
     en: MemberDataItemTranslation;
     pl: MemberDataItemTranslation;
 };
@@ -142,7 +142,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2021-10",
             commercialExperience: "2023-10",
         },
-        ua: {
+        uk: {
             name: "Сусанна Салата",
             about: [
                 "Робота має приносити натхнення та задоволення, а не лише гроші.",
@@ -286,7 +286,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-06",
         },
-        ua: {
+        uk: {
             name: "Марія Попова",
             about: [""],
             shortQuote:
@@ -348,7 +348,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-03",
         },
-        ua: {
+        uk: {
             name: "Світлана Кондратенко",
             about: [""],
             shortQuote: `"Хтось має з тим розібратись?" - Я людина, яка з тим розбирається!`,
@@ -414,7 +414,7 @@ export const membersData: MemberDataItemType[] = [
                 { name: "CSS" },
             ],
         },
-        ua: {
+        uk: {
             name: "Влад Шумков",
             about: [
                 "Мій акцент на чіткій комунікації гарантує, що кожен проект відповідає суворим стандартам і очікуванням клієнтів.",
@@ -494,7 +494,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2021-03",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Ігор Дронішинець",
             about: [""],
             shortQuote:
@@ -569,7 +569,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-03",
         },
-        ua: {
+        uk: {
             name: "Ірина Столярова",
             about: [
                 "Хороший дизайн, в першу чергу, повинен вирішувати проблеми.",
@@ -641,7 +641,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2022-12",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Анастасія Назаренко",
             about: [""],
             shortQuote: "Дизайнер - це стратег з почуттям прекрасного.",
@@ -717,7 +717,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2022-11",
             commercialExperience: "2023-11",
         },
-        ua: {
+        uk: {
             name: "Ірина Тринкаль",
             about: [
                 "Full-stack розробник із сильним фокусом на Frontend, глибокою експертизою в Next.js, React та TypeScript. Спеціалізуюсь на створенні адаптивних, швидких та SEO-оптимізованих інтерфейсів, інтегрованих із сучасними API та надійним бекендом. Професійно працюю з Sanity CMS — створюю гнучкі схеми даних, налаштовую Studio, темізацію, кастомні компоненти, локалізацію, створюю структуру контенту та інтегрую CMS у продакшн-проєкти з урахуванням продуктивності та зручності редакторів. Володію складними анімаціями (Framer Motion, GSAP), роботою з динамічним контентом, багатомовністю та UX-покращеннями.",
@@ -872,7 +872,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2023-12",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Олена Постернак",
             about: [""],
             shortQuote:
@@ -940,7 +940,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2023-12",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Ольга Михайлова",
             about: [""],
             shortQuote: "Люблю знаходити елегантні рішення для складних задач.",
@@ -1010,7 +1010,7 @@ export const membersData: MemberDataItemType[] = [
 
             careerStart: "2023-07",
         },
-        ua: {
+        uk: {
             name: "Катерина Рубанік",
             about: ["Жодна дрібниця не дрібниця, коли йдеться про якість."],
             shortQuote: "Жодна дрібниця не дрібниця, коли йдеться про якість.",
@@ -1086,7 +1086,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-07",
         },
-        ua: {
+        uk: {
             name: "Євген Сердюк",
             about: ["Зараз все зробимо!"],
             shortQuote: "Зараз все зробимо!",
@@ -1162,7 +1162,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2021-11",
         },
-        ua: {
+        uk: {
             name: "Сусанна Салата",
             about: [""],
             shortQuote:
@@ -1227,7 +1227,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2022-12",
         },
-        ua: {
+        uk: {
             name: "Денис Слівінський",
             about: [""],
             shortQuote: "Справжня дурість щоразу перемагає штучний інтелект",
@@ -1285,7 +1285,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-10",
         },
-        ua: {
+        uk: {
             name: "Володимир Дегтярев",
             about: [""],
             shortQuote: "Нічого не вийде, якщо ви цього не зробите",
@@ -1338,7 +1338,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-06",
         },
-        ua: {
+        uk: {
             name: "Олена Чорнобривець",
             about: [""],
             shortQuote: "Забезпечення якості означає запобігання помилкам.",
@@ -1398,7 +1398,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-07",
         },
-        ua: {
+        uk: {
             name: "Ганна Горбенко",
             about: [""],
             shortQuote:
@@ -1461,7 +1461,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-11",
         },
-        ua: {
+        uk: {
             name: "Анна Клиба",
             about: [""],
             shortQuote: "QA є ключем до надійності та довіри до продукту",
@@ -1518,7 +1518,7 @@ export const membersData: MemberDataItemType[] = [
             isEndInAboutMT: true,
             careerStart: "2024-03",
         },
-        ua: {
+        uk: {
             name: "Оксана Лучко",
             about: [""],
             shortQuote:
@@ -1585,7 +1585,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2024-03",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Надія Губчук",
             about: [""],
             shortQuote:
@@ -1642,7 +1642,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-12",
         },
-        ua: {
+        uk: {
             name: "Тетяна Селецька",
             about: [
                 "Мета без плану - це просто бажання. В мене завжди є план.",
@@ -1715,7 +1715,7 @@ export const membersData: MemberDataItemType[] = [
             isEndInAboutMT: true,
             careerStart: "2023-10",
         },
-        ua: {
+        uk: {
             name: "Дар'я Червякова",
             about: [""],
             shortQuote:
@@ -1766,7 +1766,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-02",
         },
-        ua: {
+        uk: {
             name: "Ганна Труба",
             about: [""],
             shortQuote:
@@ -1817,7 +1817,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2020-04",
         },
-        ua: {
+        uk: {
             name: "Олена Голубьонкова",
             about: [""],
             shortQuote: "Маркетинг - це все! І все є маркетингом!",
@@ -1877,7 +1877,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-03",
         },
-        ua: {
+        uk: {
             name: "Марта Морінцева",
             about: [""],
             shortQuote:
@@ -1938,7 +1938,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-05",
         },
-        ua: {
+        uk: {
             name: "Ірина Шевченко",
             about: [""],
             shortQuote: "Зараз подумаємо, потім обговоримо, а далі реалізуємо.",
@@ -1991,7 +1991,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2015-07",
         },
-        ua: {
+        uk: {
             name: "Наталі Істоміна",
             about: [""],
             shortQuote:
@@ -2049,7 +2049,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-02",
         },
-        ua: {
+        uk: {
             name: "Наталі Істоміна",
             about: [""],
             shortQuote:
@@ -2112,7 +2112,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-08",
         },
-        ua: {
+        uk: {
             name: "Вероніка Злобіна",
             about: [""],
             shortQuote:
@@ -2209,7 +2209,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-03",
         },
-        ua: {
+        uk: {
             name: "Міла Максименко",
             about: ["Краса в деталях."],
             shortQuote: "Краса в деталях.",
@@ -2293,7 +2293,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-05",
         },
-        ua: {
+        uk: {
             name: "Антон Черток",
             about: [""],
             shortQuote:
@@ -2373,7 +2373,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-05",
         },
-        ua: {
+        uk: {
             name: "Дмитро Булахов",
             about: [""],
             shortQuote: "Випадковості - не випадкові.",
@@ -2432,7 +2432,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2022-10",
         },
-        ua: {
+        uk: {
             name: "Євген Малиш",
             about: [""],
             shortQuote: "Я можу зробити все, що завгодно. Питання лише в часі",
@@ -2491,7 +2491,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2022-10",
         },
-        ua: {
+        uk: {
             name: "Анатолій Омельченко",
             about: [""],
             shortQuote:
@@ -2555,7 +2555,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-04",
         },
-        ua: {
+        uk: {
             name: "Олександр Мещерський",
             about: [""],
             shortQuote: "Ніколи не здавайтеся.",
@@ -2610,7 +2610,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-06",
         },
-        ua: {
+        uk: {
             name: "Світлана Крохмальна",
             about: [""],
             shortQuote:
@@ -2670,7 +2670,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-05",
         },
-        ua: {
+        uk: {
             name: "Оксана Онопрієнко",
             about: [""],
             shortQuote: "На мене можна покластися в будь-яких умовах!",
@@ -2740,7 +2740,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-03",
         },
-        ua: {
+        uk: {
             name: "Олена Галушка",
             about: [""],
             shortQuote:
@@ -2801,7 +2801,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2024-10",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Марія Черевко",
             about: [""],
             shortQuote:
@@ -2917,7 +2917,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2022-03",
             commercialExperience: "2023-12",
         },
-        ua: {
+        uk: {
             name: "Анна Прутнік",
             about: [
                 "Основний фокус моєї роботи як Frontend developer - створення інтерфейсів, які не просто виглядають привабливо, а вирішують бізнес-задачі та впливають на результат продукту. Мені подобається, що кілька рядків коду можуть підвищити ефективність, покращити взаємодію користувача або збільшити конверсію.",
@@ -3141,7 +3141,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2024-07",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Олександр Петричук",
             about: [""],
             shortQuote:
@@ -3200,7 +3200,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-08",
         },
-        ua: {
+        uk: {
             name: "Євген Сєдінін",
             about: [""],
             shortQuote: "QA тоненькою ниточкою проходить крізь всі тонкощі IT.",
@@ -3268,7 +3268,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2024-12",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Олександр Щербак",
             about: [""],
             shortQuote: "Все, що не знайдеш ти, знайду я.",
@@ -3329,7 +3329,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2024-06",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Соломія Луцька ",
             shortQuote: "",
             about: [""],
@@ -3384,7 +3384,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-03",
         },
-        ua: {
+        uk: {
             name: "Оксана Арпуль",
             about: ["Якість - це ключ до впевненості в продукті."],
             shortQuote: "Якість - це ключ до впевненості в продукті.",
@@ -3442,7 +3442,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2025-02",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Вікторія Лапіна",
             about: [""],
             shortQuote:
@@ -3514,7 +3514,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2025-02",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Степан Козурак",
             about: [""],
             shortQuote: "Робота - не вовк, ліс - не великий.",
@@ -3572,7 +3572,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2024-12",
         },
-        ua: {
+        uk: {
             name: "Оксана Жмурко",
             about: [
                 "Успіх прямо пропорційний зусиллям, які ми докладаємо. Аналіз бізнесу та обрана  стратегія захисту інтелектуальної власності - це вже половина успіху!",
@@ -3657,7 +3657,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2025-01",
         },
-        ua: {
+        uk: {
             name: "Діана Дудник",
             about: [
                 "Мистецтво дизайну - це трансформація хаосу в чітку структуру.",
@@ -3737,7 +3737,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2025-02",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Владислава Бобко",
             about: [""],
             shortQuote:
@@ -3804,7 +3804,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2023-07",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Катерина Погребна",
             about: [""],
             shortQuote:
@@ -3854,7 +3854,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2023-05",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Юлія Борис",
             about: [""],
             shortQuote:
@@ -3907,7 +3907,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-09",
         },
-        ua: {
+        uk: {
             name: "Ольга Кучальська",
             about: [""],
             shortQuote:
@@ -3972,7 +3972,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2025-02",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Наталя Калабанова",
             about: [""],
             shortQuote: "Менше - це більше.",
@@ -4039,7 +4039,7 @@ export const membersData: MemberDataItemType[] = [
             careerStart: "2025-02",
             isEndInAboutMT: true,
         },
-        ua: {
+        uk: {
             name: "Тетяна Дрофа",
             about: [""],
             shortQuote:
@@ -4097,7 +4097,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2025-01",
         },
-        ua: {
+        uk: {
             name: "Ольга Устименко",
             about: [
                 "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
@@ -4256,7 +4256,7 @@ export const membersData: MemberDataItemType[] = [
             ],
             careerStart: "2023-04",
         },
-        ua: {
+        uk: {
             name: "Ірина Андрущенко",
             about: [
                 "Хороший дизайн непомітний, але його вплив залишається назавжди.",

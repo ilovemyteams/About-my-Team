@@ -1,37 +1,38 @@
-// import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
-// import { membersData } from "@/src/mockedData/membersData";
+import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
+import { membersData } from "@/src/mockedData/membersData";
+import { getTeammates } from "@/src/utils/getTeammates";
+import { Project } from "@/types/Projects";
 
-// interface TeammatesProps {
-//     projectId: string[];
-// }
+import { TitleBig } from "./shared/TitleBig";
 
-// export const Teammates = ({ projectId }: TeammatesProps) => {
+interface TeammatesProps {
+    projects: Project[];
+}
 
-//     const filteredMembers = membersData.filter(m =>
-//         m.data.projectId.includes("ilovemyteam-online")
-//     );
+export const Teammates = ({ projects }: TeammatesProps) => {
+    const teammates = getTeammates(membersData, projects);
 
-//     return (
-//         <>
-//             <h2>Teammates</h2>
-//             {filteredMembers.map(({ data }) => {
-//                 return (
-//                     <ImageFromCloud
-//                         key={data.id}
-//                         storage="members"
-//                         src={data.imageURL || ""}
-//                         width={256}
-//                         height={256}
-//                         alt={data.id}
-//                         loading="lazy"
-//                         title={data.id}
-//                         className={`
-//                     object-cover
-//                     w-[100px] h-[100px]
-//                 `}
-//                     />
-//                 );
-//             })}
-//         </>
-//     );
-// };
+    return (
+        <>
+            <TitleBig>Teammates</TitleBig>
+            {teammates.map(({ data }) => {
+                return (
+                    <ImageFromCloud
+                        key={data.id}
+                        storage="members"
+                        src={data.imageURL || ""}
+                        width={256}
+                        height={256}
+                        alt={data.id}
+                        loading="lazy"
+                        title={data.id}
+                        className={`
+                    object-cover
+                    w-[100px] h-[100px]
+                `}
+                    />
+                );
+            })}
+        </>
+    );
+};

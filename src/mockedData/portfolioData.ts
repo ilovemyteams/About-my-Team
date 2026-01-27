@@ -148,7 +148,7 @@ type DataType = {
 
 export type PortfolioDataItemType = {
     data: DataType;
-    ua: PortfolioDataItemTranslation;
+    uk: PortfolioDataItemTranslation;
     en: PortfolioDataItemTranslation;
     pl: PortfolioDataItemTranslation;
 };
@@ -211,7 +211,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Portfolio",
             ],
         },
-        ua: {
+        uk: {
             name: "Willow-Motion",
             siteView: "лендінг",
             subtitle: "Лендінг для студії з відеомонтажу",
@@ -722,7 +722,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
-        ua: {
+        uk: {
             name: "Анна Балабушко",
             siteView: "лендінг",
             subtitle: "Лендінг для QA менторки",
@@ -1226,7 +1226,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             ],
             domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
-        ua: {
+        uk: {
             name: "Гойда Людмила",
             siteView: "лендінг",
             subtitle: "Лендінг для коуча",
@@ -1805,7 +1805,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Marketing",
             ],
         },
-        ua: {
+        uk: {
             name: "Алекс Чудов",
             siteView: "лендінг",
             subtitle: "Лендінг для автора книги",
@@ -2268,7 +2268,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "https://www.behance.net/gallery/225444197/Landing-page-for-IT-Recruiter",
             domains: ["Landing pages", "Web", "Personal websites", "Agency"],
         },
-        ua: {
+        uk: {
             name: "Вікторія Забара",
             siteView: "лендінг",
             subtitle: "Лендінг для IT-рекрутера",
@@ -2627,7 +2627,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Magazine/Newspaper/Blog",
             ],
         },
-        ua: {
+        uk: {
             name: "Український театр",
             siteView: "вебсайт",
             subtitle: "Вебсайт для ГО “Український театр”",
@@ -3405,7 +3405,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Other",
             ],
         },
-        ua: {
+        uk: {
             name: "Смачно! на селі",
             heroTitle: "<purple>Смачно!</purple> на селі",
             siteView: "інтернет-магазин",
@@ -3912,7 +3912,7 @@ export const portfolioData: PortfolioDataItemType[] = [
             category: "websites",
             domains: ["Web", "Legal", "Agency"],
         },
-        ua: {
+        uk: {
             name: "Міграційний Адвокат",
             siteView: "вебсайт",
             subtitle: "Вебсайт для міграційного адвоката",
@@ -3960,7 +3960,7 @@ export const portfolioData: PortfolioDataItemType[] = [
                 "Portfolio",
             ],
         },
-        ua: {
+        uk: {
             name: "i love my team",
             siteView: "вебсайт",
             subtitle: "Вебсайт для IT команди",

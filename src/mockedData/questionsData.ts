@@ -41,7 +41,7 @@ export type QAItemLocalizationTextType = {
 
 export type QAItemType = {
     data: QADataType;
-    ua: QAItemLocalizationTextType;
+    uk: QAItemLocalizationTextType;
     pl: QAItemLocalizationTextType;
     en: QAItemLocalizationTextType;
 };
@@ -56,7 +56,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561932/answer1-2_ivrc14.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Мені потрібен сайт. \nЗ чого мені почати?",
             shortAnswerText: [
                 "Почніть з чесної відповіді на такі питання “Навіщо мені сайт? Чого я очікую від сайту? Що я буду на ньому показувати? Кому я хочу це показати? І що повинні зробити ті, хто відвідають мій сайт?”. Відповіді на ці питання дають розуміння, чи потрібен вам взагалі сайт і яким він повинен бути.",
@@ -277,7 +277,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561937/answer2-2_qiug3n.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Що обрати - лендінг чи повноцінний сайт?",
             shortAnswerText: [
                 "Це залежить від того яку задачу ви намагаєтесь вирішити.",
@@ -585,7 +585,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561941/answer3-2_apsm5b.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Які терміни розробки готового продукту?",
             shortAnswerText: [
                 "Залежить від складності та складу команди. Розробка лендінгу із стандартизованим функціоналом та простим дизайном може зайняти від 2 до 6 тижнів. Зазвичай розробка стандартизованого сайту-візитки  може зайняти від кількох тижнів до кількох місяців. Розробка великого сайту на 5+ сторінок із формами реєстрації, авторизації, замовленням товарів та оплатою може зайняти від 4 до 8 місяців, в залежності від дизайну та наповнення.",
@@ -780,7 +780,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561946/answer4-2_qzjkjn.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Скільки коштує розробка?",
             shortAnswerText: [
                 "Залежно від об’єму та складності продукту орієнтовна ціна лендінгу однією мовою без вибору світлої/темної теми від 800 доларів. Ціна сайту-візитки однією мовою без зміни теми до 5 сторінок орієнтовно від 1100 доларів. Ціна розробки інтернет-магазину на 10-15 продуктів та оплатою через одну платіжну систему  на сайті від 1600 доларів.",
@@ -1143,7 +1143,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561951/answer5-2_qabfjk.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Чи можу я самостійно \nпідібрати команду?",
             shortAnswerText: [
                 "Так, ви можете вибрати окремих спеціалістів і сформувати команду самостійно. В такому випадку наполегливо рекомендуємо спочатку звернутись за консультацією до менеджера. Якщо ви потребуєте окремого спеціаліста на погодинні роботи з вашим уже реалізованим продуктом — зв’яжіться зі спеціалістом через його телеграм або лінкедін напряму і повідомте як ви його знайшли та чому обрали саме його/її.",
@@ -1271,7 +1271,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561957/answer6-2_hbhojv.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Чи можу я внести зміни в процесі розробки?",
             imageAltText: "Чи можу я внести зміни в процесі розробки?",
             shortAnswerText: [
@@ -1583,7 +1583,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561965/answer7-2_uptw4h.jpg",
         },
-        ua: {
+        uk: {
             questionText:
                 "Чи надаєте ви послуги підтримки після запуску сайту?",
             imageAltText:
@@ -1948,7 +1948,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561975/answer8-2_zb8hjn.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Що таке лендінг? І кому він потрібен?",
             imageAltText: "Що таке лендінг? І кому він потрібен?",
             shortAnswerText: [
@@ -2333,7 +2333,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561984/answer9-2_coj57s.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Редизайн: що це і навіщо він потрібен?",
             imageAltText: "Редизайн: Що це і навіщо він потрібен?",
             shortAnswerText: [
@@ -2663,7 +2663,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561989/answer10-2_lf2qah.jpg",
         },
-        ua: {
+        uk: {
             questionText:
                 "Як оживити контент та зробити продукт більш привабливим?",
             shortAnswerText: [
@@ -2937,7 +2937,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742561994/answer11-2_cwjcdu.jpg",
         },
-        ua: {
+        uk: {
             questionText: "Як прискорити сайт і покращити UX?",
             shortAnswerText: [
                 "Перформанс – це швидкість і ефективність роботи вебсайту або додатка. Чим швидше завантажується сторінка, тим зручніше користувачам її переглядати та взаємодіяти з нею. \nДослідження показують, що 53% мобільних користувачів залишають сайт, якщо він завантажується довше ніж 3 секунди. Поганий перформанс негативно впливає на SEO, зменшує кількість конверсій та підвищує рівень відмов.",
@@ -3361,7 +3361,7 @@ export const questionsData: QAItemType[] = [
             answerOrderImage:
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1743185511/answer12-2_m4sasb.jpg",
         },
-        ua: {
+        uk: {
             imageAltText: "Чи можу я оновлювати контент на сайті самостійно?",
             questionText: "Чи можу я оновлювати контент на сайті самостійно?",
             shortAnswerText: [
@@ -3678,7 +3678,7 @@ export const questionsData: QAItemType[] = [
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1752658483/answer13-2_jgskyq.jpg",
         },
 
-        ua: {
+        uk: {
             questionText:
                 "Що таке бриф на розробку сайту або лендінгу і навіщо він потрібен?",
             shortAnswerText: [
@@ -4393,7 +4393,7 @@ export const questionsData: QAItemType[] = [
                 "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1756311900/answer14-2_cbhhuw.jpg",
         },
 
-        ua: {
+        uk: {
             questionText:
                 "Як правильно упакувати свої послуги на лендінгу, щоб отримати максимальну віддачу?",
             shortAnswerText: [

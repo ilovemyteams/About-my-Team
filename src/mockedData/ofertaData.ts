@@ -14,13 +14,13 @@ interface OfertaDocType {
 }
 
 interface OfertaType {
-    ua: OfertaDocType;
+    uk: OfertaDocType;
     en: OfertaDocType;
     pl: OfertaDocType;
 }
 
 export const ofertaData: OfertaType = {
-    ua: {
+    uk: {
         title: "Публічний договір <purple>(оферта)</purple> \nна замовлення послуг Проєкту \n<purple>“i love my team”</purple>",
         description:
             "Цей документ, положення якого викладені нижче по тексту, є публічним договором. Згідно з положеннями статей 633, 641 Цивільного кодексу України умови публічного договору (оферти) є однаковими для всіх Замовників послуг  Проєкту “i love my team”.",
