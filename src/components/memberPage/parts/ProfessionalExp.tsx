@@ -39,7 +39,7 @@ export const ProfessionalExp = async ({
                             endDate={i.endDate}
                         />
 
-                        <p className="text-sm font-normal tab:text-base23 desk:text-lg">
+                        <p className="text-sm font-normal tab:text-base23 desk:text-lg desk:font-normal">
                             {i.description}
                         </p>
                     </li>
