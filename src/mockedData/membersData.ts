@@ -166,15 +166,16 @@ export const membersData: MemberDataItemType[] = [
             ],
             education: [
                 {
-                    institution: "Kyiv National Economics University",
-                    degree: "Master's degree of Finance and Financial Management Services",
+                    institution:
+                        "Київський національний економічний університет",
+                    degree: "Магістр з фінансів та фінансового менеджменту",
                     yearStart: 2003,
                     yearEnd: 2008,
                 },
                 {
                     institution:
-                        "Borys Grinchenko Kyiv Metropolitan University",
-                    degree: "Master's degree of Psychology, Psychotherapy",
+                        "Київський столичний університет імені Бориса Грінченка",
+                    degree: "Магістр з психології та психотерапії",
                     yearStart: 2025,
                     yearEnd: 2027,
                 },
@@ -2942,8 +2943,8 @@ export const membersData: MemberDataItemType[] = [
             education: [
                 {
                     institution:
-                        "Yurii Kondratiuk Poltava National Technical University",
-                    degree: "Master's degree of Economic Cybernetics",
+                        "Полтавський національний технічний університет імені Юрія Кондратюка",
+                    degree: "Магістр з економічної кібернетики",
                     yearStart: 2003,
                     yearEnd: 2008,
                 },
