@@ -28,7 +28,11 @@ export const Projects = async ({ projectsExperience }: ProjectsProps) => {
                                 href={addProtocol(project)}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block max-w-min underline hover:text-redLight hover:dark:text-red truncate"
+                                className={`
+                                    block max-w-min underline outline-none
+                                    hover:text-redLight hover:dark:text-red
+                                    focus:text-redLight focus:dark:text-red truncate
+                                `}
                             >
                                 {removeProtocol(project)}
                             </Link>
