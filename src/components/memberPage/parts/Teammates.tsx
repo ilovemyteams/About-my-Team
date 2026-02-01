@@ -33,7 +33,7 @@ export const Teammates = ({ projects, id }: TeammatesProps) => {
     return (
         <section>
             <TitleBig>Teammates</TitleBig>
-            <ul className="grid grid-cols-1 pc:grid-cols-3 gap-4">
+            <ul className="grid grid-cols-1 min-[1024px]:grid-cols-2 pc:grid-cols-3 gap-4">
                 {visibleTeammates.map(data => {
                     const langData = data[locale as LocaleType];
 
@@ -41,6 +41,7 @@ export const Teammates = ({ projects, id }: TeammatesProps) => {
                         <li
                             key={data.data.id}
                             className="flex gap-4 items-center"
+                            title={langData.name}
                         >
                             <ImageFromCloud
                                 storage="members"
@@ -49,13 +50,12 @@ export const Teammates = ({ projects, id }: TeammatesProps) => {
                                 height={256}
                                 alt={data.data.id}
                                 loading="lazy"
-                                title={data.data.id}
                                 className={
                                     "object-cover w-[56px] h-[56px] rounded-full"
                                 }
                             />
-                            <div>
-                                <p className="mb-[6px] text-sm tab:text-base desk:text-lg font-caviar font-bold text-purple-200 dark:text-white-200">
+                            <div className="min-w-0">
+                                <p className="mb-[6px] text-sm tab:text-base desk:text-lg font-caviar font-bold text-purple-200 dark:text-white-200 truncate w-full">
                                     {langData.name}
                                 </p>
                                 <p className="text-xs desk:text-sm uppercase text-purple-130 dark:text-purple-50">
