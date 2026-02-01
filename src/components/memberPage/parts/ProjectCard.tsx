@@ -65,7 +65,6 @@ export const ProjectCard = ({
 
                     group-hover:before:opacity-100
                     group-focus-within:before:opacity-100
-                    group-active:before:opacity-100
                 `}
             >
                 <div className="grid grid-cols-[auto_1fr] gap-4">
@@ -135,7 +134,7 @@ export const ProjectCard = ({
                     target="_blank"
                     className="absolute top-3 right-3 text-purple-130 dark:text-purple-50 hover:text-redLight dark:hover:text-red focus:text-redLight dark:focus:text-red transition-text duration-300 ease-in-out outline-none"
                 >
-                    <IconGoToSite className="" />
+                    <IconGoToSite />
                 </Link>
             )}
         </div>

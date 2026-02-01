@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import React from "react";
 
+import { MemberHeader } from "@/src/components/memberPage/header/MemberHeader";
 import { MemberPage } from "@/src/components/memberPage/MemberPage";
-import { MemberHeader } from "@/src/components/memberPage/parts/MemberHeader";
 import { membersData } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 

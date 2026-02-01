@@ -4,7 +4,7 @@ import { Section } from "@/src/components/shared/Section";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
-import { About } from "./parts/About";
+import { About } from "./about/About";
 import { Avatar } from "./parts/Avatar";
 import { CommercialExp } from "./parts/CommercialExp";
 import { Education } from "./parts/Education";

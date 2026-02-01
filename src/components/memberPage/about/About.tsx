@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
-import { TitleBig } from "./shared/TitleBig";
+import { TitleBig } from "../parts/shared/TitleBig";
+import { ReadMoreText } from "./parts/ReadMoreText";
 
 interface AboutProps {
     text: string[];
@@ -14,11 +15,7 @@ export const About = async ({ text, services }: AboutProps) => {
         <section className="flex flex-col gap-4 tab:gap-5 pc:gap-8 desk:gap-10">
             <div className="text-greyLight dark:text-grey text-sm tab:text-base23 desk:text-lg25 leading-[23px] font-normal">
                 <TitleBig>{t("about")}</TitleBig>
-                {text.map((paragraph, index) => (
-                    <p key={index} className="mb-3 leading-[23px] last:mb-0">
-                        {paragraph}
-                    </p>
-                ))}
+                <ReadMoreText paragraphs={text} limit={495} />
             </div>
             {services && (
                 <div className="p-4 border border-purple-strokeLight dark:border-purple-stroke text-greyLight dark:text-grey">
