@@ -5,17 +5,17 @@ import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
 
 import { About } from "./about/About";
+import { Expertise } from "./expertise/Expertise";
 import { Avatar } from "./parts/Avatar";
 import { CommercialExp } from "./parts/CommercialExp";
 import { Education } from "./parts/Education";
-import { Expertise } from "./parts/Expertise";
 import { Languages } from "./parts/Languages";
 import { MemberSocialLinks } from "./parts/MemberSocialLinks";
 import { ProfessionalExp } from "./parts/ProfessionalExp";
 import { ProjectCardList } from "./parts/ProjectCardList";
 import { Projects } from "./parts/Projects";
 import { Statistics } from "./parts/Statistics";
-import { Teammates } from "./parts/Teammates";
+import { Teammates } from "./teammates/Teammates";
 
 interface MemberPageProps {
     member: MemberDataItemType;
@@ -82,7 +82,7 @@ export const MemberPage = async ({ member }: MemberPageProps) => {
                         <Education education={certificates} certificates />
                     )}
                 </div>
-                <div className="flex flex-col gap-4 tab:gap-5 pc:gap-8 desk:gap-10 tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
+                <div className="flex flex-col gap-4 min-w-0 tab:gap-5 pc:gap-8 desk:gap-10 tab:border-t tab:border-r tab:border-b border-purple-strokeLight dark:border-purple-stroke p-4">
                     <About text={about} services={services} />
                     <ProjectCardList
                         id={id}

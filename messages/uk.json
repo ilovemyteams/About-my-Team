@@ -141,7 +141,9 @@
         "showAll": "Показати всі",
         "showLess": "Згорнути",
         "allMembers": "Всі учасники",
-        "allTeammates": "Показати всіх"
+        "allTeammates": "Показати всіх",
+        "more": "більше",
+        "less": "менше"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"
@@ -410,6 +412,7 @@
         "domain": "Домен:",
         "skills": "Навички:",
         "otherMembers": "Інші учасники:",
-        "profExp": "Професійний досвід"
+        "profExp": "Професійний досвід",
+        "teammates": "Співпраця з"
     }
 }

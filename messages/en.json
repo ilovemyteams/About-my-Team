@@ -142,7 +142,9 @@
         "showAll": "Show all",
         "showLess": "Show less",
         "allMembers": "All participants",
-        "allTeammates": "Show all"
+        "allTeammates": "Show all",
+        "more": "more",
+        "less": "less"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -415,6 +417,7 @@
         "domain": "Domain:",
         "skills": "Skills:",
         "otherMembers": "Other members:",
-        "profExp": "Professional experience"
+        "profExp": "Professional experience",
+        "teammates": "Collaboration With"
     }
 }

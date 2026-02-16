@@ -5,6 +5,7 @@ import React, {
     useEffect,
     useState,
 } from "react";
+import { twMerge } from "tailwind-merge";
 
 import { ArrowIcon } from "./ArrowIcon";
 
@@ -62,16 +63,21 @@ type ButtonType = PropsWithChildren<
     >
 >;
 
-export const PrevButton: React.FC<ButtonType> = props => {
-    const { disabled, ...restProps } = props;
-
+export const PrevButton: React.FC<ButtonType> = ({
+    disabled,
+    className,
+    ...restProps
+}) => {
     return (
         <button
             disabled={disabled}
             aria-label="show previous slide button"
-            className="embla__button--prev flex justify-center items-center w-12 h-12 relative
-            tab:border-t tab:border-b group disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
-            enabled:icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
+            className={twMerge(
+                `embla__button--prev flex justify-center items-center w-12 h-12 relative
+                tab:border-t tab:border-b group disabled:dark:text-purple-stroke disabled:dark:border-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
+                enabled:icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group`,
+                className
+            )}
             type="button"
             {...restProps}
         >
@@ -80,16 +86,21 @@ export const PrevButton: React.FC<ButtonType> = props => {
     );
 };
 
-export const NextButton: React.FC<ButtonType> = props => {
-    const { disabled, ...restProps } = props;
-
+export const NextButton: React.FC<ButtonType> = ({
+    disabled,
+    className,
+    ...restProps
+}) => {
     return (
         <button
             disabled={disabled}
             aria-label="show next slide button"
-            className="embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
-            tab:border-t tab:border-b group disabled:dark:border-purple-stroke disabled:dark:text-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
-            enabled:icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group"
+            className={twMerge(
+                `embla__button--prev flex justify-center items-center w-12 h-12 rotate-180
+                tab:border-t tab:border-b group disabled:dark:border-purple-stroke disabled:dark:text-purple-stroke disabled:border-disabledLight disabled:text-disabledLight
+                enabled:icon-hover-rounded-purple dark:border-red border-redLight dark:text-red text-redLight group`,
+                className
+            )}
             type="button"
             {...restProps}
         >

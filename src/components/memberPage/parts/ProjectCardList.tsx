@@ -6,15 +6,15 @@ import { useRef, useState } from "react";
 import { Button } from "@/src/components/shared/Button";
 import { buildMemberProjects } from "@/src/utils/buildMemberProjects";
 import { Project } from "@/types/Projects";
-import { Tools } from "@/types/Tools";
+import { Tool } from "@/types/Tools";
 
+import { TitleBig } from "../shared/TitleBig";
 import { ProjectCard } from "./ProjectCard";
-import { TitleBig } from "./shared/TitleBig";
 
 interface ProjectCardListProps {
     id: string;
     projects: Project[];
-    tools: Tools[];
+    tools: Tool[];
     position: string;
 }
 
@@ -40,15 +40,6 @@ export const ProjectCardList = ({
 
     const handleToggle = () => {
         setShowAll(prev => !prev);
-
-        if (!showAll) return;
-
-        requestAnimationFrame(() => {
-            anchorRef.current?.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-            });
-        });
     };
 
     return (

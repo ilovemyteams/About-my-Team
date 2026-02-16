@@ -35,7 +35,7 @@ export const Avatar = ({ imageURL, position, name }: AvatarProps) => {
                 )}
             </div>
             <div className="text-left tab:text-center p-4">
-                <p className="font-caviar font-bold text-base text-purple-200 dark:text-white-200 mb-2 tab:text-lg pc:text-xl">
+                <p className="font-caviar font-bold text-2xl24 pc:text-xl text-purple-200 dark:text-white-200 mb-2 ">
                     {name}
                 </p>
                 <p className="font-geist text-xs pc:text-sm text-purple-130 dark:text-purple-50 uppercase">

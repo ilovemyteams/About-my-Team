@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import { IconUpVector } from "@/src/components/shared/Icons/IconUpVector";
@@ -11,9 +12,10 @@ interface ReadMoreTextProps {
 
 export const ReadMoreText = ({
     paragraphs,
-    limit = 500,
+    limit = 495,
 }: ReadMoreTextProps) => {
     const [expanded, setExpanded] = useState(false);
+    const t = useTranslations("Buttons");
 
     const fullText = paragraphs.join("\n\n");
     const isLong = fullText.length > limit;
@@ -43,10 +45,11 @@ export const ReadMoreText = ({
                             {isLast && isLong && (
                                 <button
                                     onClick={() => setExpanded(prev => !prev)}
-                                    className="inline-flex items-end align-baseline text-redLight dark:text-red"
+                                    className="inline-flex items-centr align-baseline text-xs tab:text-sm text-redLight dark:text-red"
                                 >
+                                    {expanded ? t("less") : t("more")}
                                     <IconUpVector
-                                        className={`w-[16px] h-[auto] ${expanded ? "rotate-180" : "rotate-0"}`}
+                                        className={`w-[10px] tab:w-[12px] h-[auto] ml-1 ${expanded ? "rotate-180" : "rotate-0"}`}
                                     />
                                 </button>
                             )}

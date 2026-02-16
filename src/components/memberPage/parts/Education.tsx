@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Institution } from "@/types/Education";
 
-import { Title } from "./shared/Title";
+import { Title } from "../shared/Title";
 
 interface EducationType {
     education: Institution[];

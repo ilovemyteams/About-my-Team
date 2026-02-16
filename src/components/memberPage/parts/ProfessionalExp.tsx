@@ -2,8 +2,8 @@ import { getTranslations } from "next-intl/server";
 
 import { ProfessionalExperience } from "@/src/mockedData/membersData";
 
+import { TitleBig } from "../shared/TitleBig";
 import { ProjectExperience } from "./ProjectExperience";
-import { TitleBig } from "./shared/TitleBig";
 interface ProfessionalExperienceProps {
     professionalExperience: ProfessionalExperience[];
 }

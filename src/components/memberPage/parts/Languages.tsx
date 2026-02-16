@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Language } from "@/types/Language";
 
-import { Title } from "./shared/Title";
+import { Title } from "../shared/Title";
 
 interface LanguagesProps {
     languages: Language[];

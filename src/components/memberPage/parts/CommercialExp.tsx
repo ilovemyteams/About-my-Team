@@ -9,7 +9,7 @@ interface CommercialExperienceProps {
     projects: Project[];
 }
 
-import { Title } from "./shared/Title";
+import { Title } from "../shared/Title";
 
 export const CommercialExp = async ({
     commercialExperience,

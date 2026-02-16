@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 import { SliderDots } from "./SliderDots";
 
@@ -6,16 +7,23 @@ interface SliderDotsBoxProps {
     scrollSnaps: number[];
     selectedIndex: number;
     onDotButtonClick: (index: number) => void;
+    className?: string;
 }
 
 export const SliderDotsBox = <T,>({
     scrollSnaps,
     selectedIndex,
     sliders,
+    className,
     onDotButtonClick,
 }: SliderDotsBoxProps & { sliders: T[] }) => {
     return (
-        <div className="tab:hidden embla__dots flex gap-3 items-center">
+        <div
+            className={twMerge(
+                `tab:hidden embla__dots flex gap-3 items-center`,
+                className
+            )}
+        >
             {scrollSnaps.map((_, index) => (
                 <SliderDots
                     key={index}

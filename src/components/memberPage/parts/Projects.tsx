@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { addProtocol, removeProtocol } from "@/src/utils/httpsProtocols";
 
-import { Title } from "./shared/Title";
+import { Title } from "../shared/Title";
 
 interface ProjectsProps {
     projectsExperience: string[];

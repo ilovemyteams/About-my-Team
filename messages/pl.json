@@ -144,7 +144,9 @@
         "showAll": "Pokaż wszystkie",
         "showLess": "Zwiń",
         "allMembers": "Wszyscy uczestnicy",
-        "allTeammates": "Pokaż wszystkie"
+        "allTeammates": "Pokaż wszystkie",
+        "more": "więcej",
+        "less": "mniej"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"
@@ -416,6 +418,7 @@
         "domain": "Domena:",
         "skills": "Skille:",
         "otherMembers": "Inni uczestnicy:",
-        "profExp": "Doświadczenie zawodowe"
+        "profExp": "Doświadczenie zawodowe",
+        "teammates": "Współpraca z"
     }
 }
