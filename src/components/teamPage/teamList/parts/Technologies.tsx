@@ -2,10 +2,10 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { Tools } from "@/types/Tools";
+import { Tool } from "@/types/Tools";
 
 interface TechnologiesProps {
-    tools: Tools[];
+    tools: Tool[];
 }
 
 export const Technologies = ({ tools }: TechnologiesProps) => {

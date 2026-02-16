@@ -1,5 +1,5 @@
-import { Tools } from "@/types/Tools";
-export const MemberTools = ({ tools }: { tools: Tools[] }) => {
+import { Tool } from "@/types/Tools";
+export const MemberTools = ({ tools }: { tools: Tool[] }) => {
     return (
         <ul className="overflow-hidden flex flex-wrap max-h-[80px] ml-3 tab:ml-[6px] tab:mb-10">
             {tools.map((tool, idx) => (
