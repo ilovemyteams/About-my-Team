@@ -1,7 +1,7 @@
 import { Institution } from "@/types/Education";
 import { Language } from "@/types/Language";
 import { Project } from "@/types/Projects";
-import { Tools } from "@/types/Tools";
+import { Tool } from "@/types/Tools";
 
 export type ProfessionalExperience = {
     role: string;
@@ -40,7 +40,7 @@ export type DataType = {
     pricePerHour?: string;
     projectsExperience: string[];
     socialLinks: SocialLinks;
-    tools: Tools[];
+    tools: Tool[];
     isEndInAboutMT?: boolean;
     careerStart: string;
     commercialExperience?: string;
@@ -988,7 +988,6 @@ export const membersData: MemberDataItemType[] = [
                 "protection.in.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "8",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -1008,8 +1007,8 @@ export const membersData: MemberDataItemType[] = [
                 { name: "HTML" },
                 { name: "CSS" },
             ],
-
             careerStart: "2023-07",
+            isEndInAboutMT: true,
         },
         uk: {
             name: "Катерина Рубанік",
@@ -3367,7 +3366,6 @@ export const membersData: MemberDataItemType[] = [
             position: "QA Engineer",
             categoryName: "qa",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/oksana-arpul/",
                 telegram: "https://t.me/ArpulOksana",
@@ -3384,6 +3382,7 @@ export const membersData: MemberDataItemType[] = [
                 { name: "HTML/CSS" },
             ],
             careerStart: "2024-03",
+            isEndInAboutMT: true,
         },
         uk: {
             name: "Оксана Арпуль",
@@ -3644,7 +3643,6 @@ export const membersData: MemberDataItemType[] = [
             position: "UI/UX designer",
             categoryName: "designer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/dianadudnyk",
                 behance: "https://www.behance.net/DudnykDiana",
@@ -3657,6 +3655,7 @@ export const membersData: MemberDataItemType[] = [
                 { name: "Jira" },
             ],
             careerStart: "2025-01",
+            isEndInAboutMT: true,
         },
         uk: {
             name: "Діана Дудник",
