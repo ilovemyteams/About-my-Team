@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -20,45 +21,42 @@ export const ReadMoreText = ({
     const fullText = paragraphs.join("\n\n");
     const isLong = fullText.length > limit;
 
-    const visibleText =
-        expanded || !isLong
-            ? fullText + "\u00A0\u00A0"
-            : fullText.slice(0, limit).trimEnd() + "...\u00A0";
-
-    const parts = visibleText.split("\n\n");
-
     return (
         <div>
             {/* Mobile + Tablet */}
             <div className="pc:hidden">
-                {parts.map((p, i) => {
-                    const isLast = i === parts.length - 1;
-
-                    return (
-                        <p
-                            key={i}
-                            className={`mb-3 leading-[23px] last:mb-0 ${
-                                isLast ? "inline-block" : "block"
-                            }`}
-                        >
+                <motion.div
+                    initial={false}
+                    animate={{ height: expanded ? "auto" : 200 }} // 120 = высота свернутого состояния
+                    transition={{ duration: 0.35, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                >
+                    {paragraphs.map((p, i) => (
+                        <p key={i} className="mb-3 leading-[23px] last:mb-0">
                             {p}
-                            {isLast && isLong && (
-                                <button
-                                    onClick={() => setExpanded(prev => !prev)}
-                                    className="inline-flex items-centr align-baseline text-xs tab:text-sm text-redLight dark:text-red"
-                                >
-                                    {expanded ? t("less") : t("more")}
-                                    <IconUpVector
-                                        className={`w-[10px] tab:w-[12px] h-[auto] ml-1 ${expanded ? "rotate-180" : "rotate-0"}`}
-                                    />
-                                </button>
-                            )}
                         </p>
-                    );
-                })}
+                    ))}
+                </motion.div>
+
+                {isLong && (
+                    <button
+                        onClick={() => setExpanded(prev => !prev)}
+                        className="inline-flex items-center mt-2 text-xs tab:text-sm text-redLight dark:text-red"
+                    >
+                        {expanded ? t("less") : t("more")}
+
+                        <motion.span
+                            animate={{ rotate: expanded ? 180 : 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="ml-1 flex"
+                        >
+                            <IconUpVector className="w-[10px] tab:w-[12px] h-auto" />
+                        </motion.span>
+                    </button>
+                )}
             </div>
 
-            {/* Desktop */}
+            {/* Desktop — без аккордеона */}
             <div className="hidden pc:block">
                 {paragraphs.map((p, i) => (
                     <p key={i} className="mb-3 leading-[23px] last:mb-0">

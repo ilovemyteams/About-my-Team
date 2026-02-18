@@ -30,7 +30,7 @@ export const TeammatesCardList = ({ projects, id }: TeammatesProps) => {
     const contentRef = useRef<HTMLUListElement>(null);
 
     const toggleShowAll = () => {
-        setTimeout(() => setShowAll(prev => !prev), 10);
+        setTimeout(() => setShowAll(prev => !prev), 200);
         setIsAnimated(true);
 
         setTimeout(() => {}, 1000);
@@ -52,11 +52,10 @@ export const TeammatesCardList = ({ projects, id }: TeammatesProps) => {
             initial={{ height: "auto" }}
             animate={{ height: contentHeight }}
             transition={{
-                duration: extraItems.length * 0.04,
+                duration: extraItems.length * 0.05,
                 ease: "easeInOut",
             }}
             onAnimationComplete={() => setIsAnimated(false)}
-            // className="hidden pc:block"
         >
             <ul
                 ref={contentRef}
@@ -86,10 +85,10 @@ export const TeammatesCardList = ({ projects, id }: TeammatesProps) => {
                                 exit={{
                                     opacity: 0,
                                     transition: {
-                                        duration: 0.2,
+                                        duration: 0.3,
                                         delay:
-                                            (extraItems.length - index - 1.5) *
-                                            0.04,
+                                            (extraItems.length - index - 3.5) *
+                                            0.05,
                                         ease: "easeOut",
                                     },
                                 }}

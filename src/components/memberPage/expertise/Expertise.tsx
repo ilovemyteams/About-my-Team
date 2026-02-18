@@ -49,7 +49,10 @@ export const Expertise = ({ tools }: ExpertiseProps) => {
                             `}
                         >
                             {extraTools.map(tool => (
-                                <li key={tool.name}>
+                                <li
+                                    key={tool.name}
+                                    className="first:mt-2 tab:first:mt-4 desk:first:mt-3"
+                                >
                                     <ToolCard tool={tool} />
                                 </li>
                             ))}

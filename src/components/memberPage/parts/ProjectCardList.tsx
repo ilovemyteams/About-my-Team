@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useRef, useState } from "react";
 
@@ -34,19 +35,28 @@ export const ProjectCardList = ({
     const toolNames = tools.map(i => i.name);
     const memberProjects = buildMemberProjects(projects);
 
-    const visibleProjects = showAll
-        ? memberProjects
-        : memberProjects.slice(0, INITIAL_VISIBLE);
+    const initialItems = memberProjects.slice(0, INITIAL_VISIBLE);
+    const extraItems = memberProjects.slice(INITIAL_VISIBLE);
 
     const handleToggle = () => {
         setShowAll(prev => !prev);
+
+        if (!showAll) return;
+
+        if (extraItems.length > 2)
+            requestAnimationFrame(() => {
+                anchorRef.current?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            });
     };
 
     return (
-        <section ref={anchorRef} className="scroll-mt-24 pc:scroll-mt-4">
+        <section ref={anchorRef}>
             <TitleBig>{tMember("projects")}</TitleBig>
-            <ul className="grid grid-cols-1 pc:grid-cols-2 gap-4">
-                {visibleProjects.map(p => (
+            <motion.ul className="grid grid-cols-1 pc:grid-cols-2 gap-4">
+                {initialItems.map(p => (
                     <li key={p.memberData.id}>
                         <ProjectCard
                             id={id}
@@ -56,7 +66,42 @@ export const ProjectCardList = ({
                         />
                     </li>
                 ))}
-            </ul>
+                <AnimatePresence>
+                    {showAll &&
+                        extraItems.map((p, index) => (
+                            <motion.li
+                                layout
+                                key={p.memberData.id}
+                                initial={{ opacity: 0 }}
+                                animate={{
+                                    opacity: 1,
+                                    transition: {
+                                        duration: 0.3,
+                                        delay: 0.1 + index * 0.05,
+                                        ease: "easeOut",
+                                    },
+                                }}
+                                exit={{
+                                    opacity: 0,
+                                    transition: {
+                                        duration: 0.2,
+                                        delay:
+                                            (extraItems.length - index - 1) *
+                                            0.05,
+                                        ease: "easeOut",
+                                    },
+                                }}
+                            >
+                                <ProjectCard
+                                    id={id}
+                                    memberProject={p}
+                                    tools={toolNames}
+                                    position={position}
+                                />
+                            </motion.li>
+                        ))}
+                </AnimatePresence>
+            </motion.ul>
 
             {projects.length > INITIAL_VISIBLE && (
                 <div className="mt-4 flex justify-center">
