@@ -4255,6 +4255,7 @@ export const membersData: MemberDataItemType[] = [
                 { name: "ProtoPie" },
             ],
             careerStart: "2023-04",
+            isEndInAboutMT: true,
         },
         uk: {
             name: "Ірина Андрущенко",
