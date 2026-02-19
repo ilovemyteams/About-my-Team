@@ -43,7 +43,7 @@ export const ProjectCard = ({
         <div
             className={`
                 group relative
-                border-y
+                h-full border-y
                 text-sm font-normal desk:text-base
                 border-purple-strokeLight
                 dark:border-purple-stroke tab:border
@@ -90,7 +90,7 @@ export const ProjectCard = ({
                         )}
                     </div>
                 </div>
-                <p className="pc:line-clamp-4" title={description}>
+                <p className="pc:line-clamp-4 min-h-[68px]" title={description}>
                     {description}
                 </p>
                 <div className="grid grid-cols-[auto_1fr] grid-rows-[repeat(auto)_1fr] gap-y-4 gap-x-4 text-white">

@@ -4081,7 +4081,7 @@ export const membersData: MemberDataItemType[] = [
             projectsExperience: ["ilovemyteam.online"],
             pricePerHour: "5",
             socialLinks: {
-                linkedin: "www.linkedin.com/in/olha-ustymenko/",
+                linkedin: "https://www.linkedin.com/in/olha-ustymenko/",
                 telegram: "https://t.me/olgaus91",
             },
             tools: [
