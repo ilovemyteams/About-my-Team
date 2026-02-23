@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useLocale } from "next-intl";
 import { MouseEvent } from "react";
 
@@ -8,7 +9,7 @@ import { LocaleType } from "@/types/LocaleType";
 
 import { IconLinkedin } from "../../shared/Icons/IconLinkedin";
 import { IconProfile } from "../../shared/Icons/IconProfile";
-import { ImageFromCloud } from "../../shared/ImageFromCloud";
+// import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import { SocialLink } from "../../shared/SocialLink";
 
 export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
@@ -38,8 +39,8 @@ export const MemberCardMain = ({ data }: { data: MemberDataItemType }) => {
             >
                 <div className="relative overflow-hidden pc:aspect-[304/245] dark:bg-CTAGradient bg-CTAGradientLight z-[-2] ">
                     {imageURL ? (
-                        <ImageFromCloud
-                            storage="members"
+                        <Image
+                            // storage="members"
                             src={imageURL}
                             width={600}
                             height={400}

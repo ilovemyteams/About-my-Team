@@ -1,7 +1,8 @@
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 import { IconProfile } from "@/src/components/shared/Icons/IconProfile";
-import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
+// import { ImageFromCloud } from "@/src/components/shared/ImageFromCloud";
 import { SharePopover } from "@/src/components/shared/SharePopover";
 import { MemberDataItemType } from "@/src/mockedData/membersData";
 import { LocaleType } from "@/types/LocaleType";
@@ -41,8 +42,8 @@ export const MemberCardModalBodyTab = ({ data }: MemberCardModalBodyProp) => {
                             <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
                         </div>
                         {imageURL && (
-                            <ImageFromCloud
-                                storage="members"
+                            <Image
+                                // storage="members"
                                 src={imageURL}
                                 width={206}
                                 height={170}

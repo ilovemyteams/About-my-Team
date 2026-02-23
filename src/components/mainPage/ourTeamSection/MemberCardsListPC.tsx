@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 
@@ -11,7 +12,7 @@ import { getPaddedMembers } from "@/src/utils/renderedMembers";
 import { LocaleType } from "@/types/LocaleType";
 
 import { IconProfile } from "../../shared/Icons/IconProfile";
-import { ImageFromCloud } from "../../shared/ImageFromCloud";
+// import { ImageFromCloud } from "../../shared/ImageFromCloud";
 import { MemberCardMain } from "./MemberCardMain";
 import { Skeleton } from "./Skeleton";
 
@@ -82,8 +83,8 @@ export const MemberCardsListPC = ({
                             >
                                 {member.data.imageURL ? (
                                     <div className="group w-full h-full relative min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden">
-                                        <ImageFromCloud
-                                            storage="members"
+                                        <Image
+                                            // storage="members"
                                             src={member.data.imageURL}
                                             width={600}
                                             height={400}
