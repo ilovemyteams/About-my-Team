@@ -9,7 +9,7 @@ export const MAIN_MEMBERS = [
     "iryna-trynkal-fullstack-developer",
     "kateryna-rubanik-qa-engineer",
     "oksana-zhmurko-business-analyst",
-    "diana-dudnyk-ui-ux-designer",
+    "olga-ustymenko-qa",
 ];
 
 export const EMPTY_INDICES = [1, 6, 8, 12]; //Це позиції пустих клітинок в секції команда 2, 7, 9 та 13

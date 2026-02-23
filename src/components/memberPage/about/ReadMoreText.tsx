@@ -13,12 +13,12 @@ interface ReadMoreTextProps {
 
 export const ReadMoreText = ({
     paragraphs,
-    limit = 495,
+    limit = 500,
 }: ReadMoreTextProps) => {
     const [expanded, setExpanded] = useState(false);
     const t = useTranslations("Buttons");
 
-    const fullText = paragraphs.join("\n\n");
+    const fullText = paragraphs.join("\n");
     const isLong = fullText.length > limit;
 
     return (
@@ -27,7 +27,7 @@ export const ReadMoreText = ({
             <div className="pc:hidden">
                 <motion.div
                     initial={false}
-                    animate={{ height: expanded ? "auto" : 200 }} // 120 = высота свернутого состояния
+                    animate={{ height: !expanded && isLong ? 200 : "auto" }}
                     transition={{ duration: 0.35, ease: "easeInOut" }}
                     className="overflow-hidden"
                 >
