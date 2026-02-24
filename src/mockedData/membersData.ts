@@ -602,6 +602,56 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "olga-ustymenko-qa",
+            projectId: ["ilovemyteam-online"],
+
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
+            position: "QA Engineer",
+            categoryName: "qa",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "5",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/olha-ustymenko/",
+                telegram: "",
+            },
+            tools: [
+                "Postman",
+                "Swagger",
+                "Chrome DevTools",
+                "SQL",
+                "Jira",
+                "Trello",
+                "TestRail",
+                "Figma",
+                "HTML/CSS",
+            ],
+            careerStart: "2025-01",
+        },
+        ua: {
+            name: "Ольга Устименко",
+            about: "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
+            services:
+                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
+            team: "I Love My Team",
+        },
+        en: {
+            name: "Olga Ustymenko",
+            about: "I approach testing with enthusiasm, striving to ensure high product quality.",
+            services:
+                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX. I am responsible for requirements analysis, test documentation development, and defect reporting.",
+            team: "I Love My Team",
+        },
+        pl: {
+            name: "Olga Ustymenko",
+            about: "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
+            services:
+                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX. Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
+            team: "I Love My Team",
+        },
+    },
+    {
+        data: {
             id: "kateryna-rubanik-qa-engineer",
             projectId: ["ilovemyteam-online", "protection-in-ua"],
 
@@ -614,7 +664,6 @@ export const membersData: MemberDataItemType[] = [
                 "protection.in.ua",
                 "baza-trainee.tech",
             ],
-            pricePerHour: "8",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/kateryna-rubanik-6133a6224/",
@@ -636,6 +685,7 @@ export const membersData: MemberDataItemType[] = [
             ],
 
             careerStart: "2023-07",
+            isEndInAboutMT: true,
         },
         ua: {
             name: "Катерина Рубанік",
@@ -2220,6 +2270,58 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "dmytro-snitko-frontend-developer",
+            projectId: ["ilovemyteam-online"],
+
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1771926744/dmytro-snitko_wgkooc.jpg",
+            position: "FrontEnd Developer",
+            categoryName: "developer",
+            projectsExperience: ["ilovemyteam.online"],
+
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/snitko-dmitriy/",
+                github: "https://github.com/dmitriy-snitko",
+                telegram: "https://t.me/dmytriysnitko",
+            },
+            tools: [
+                "React",
+                "Next.js",
+                "Typescript",
+                "Tailwind",
+                "Styled Components",
+                "Formik",
+                "Jira",
+                "Trello",
+                "HTML",
+                "CSS",
+            ],
+            careerStart: "2025-03",
+        },
+        ua: {
+            name: "Дмитро Снітко",
+            about: "Складне стає простим, коли деталі на своєму місці.",
+            services:
+                "Розробка та стилізація адаптивних веб-інтерфейсів із використанням сучасного стеку (React, Next.js, TypeScript, Tailwind CSS) з урахуванням семантики, продуктивності та зручності користувача. Забезпечення чистої архітектури, масштабованості та стабільної взаємодії між клієнтською та серверною частинами застосунку.",
+            team: "i love my team",
+        },
+        en: {
+            name: "Dmytro Snitko",
+            about: "Complex things become simple when the details are in their right place.",
+            services:
+                "Development and styling of responsive web interfaces using a modern stack (React, Next.js, TypeScript, Tailwind CSS), with attention to semantics, performance, and user experience. Ensuring clean architecture, scalability, and stable interaction between the client and server sides of the application.",
+            team: "i love my team",
+        },
+        pl: {
+            name: "Dmytro Snitko",
+            about: "Trudne staje się proste, gdy szczegóły są na swoim miejscu.",
+            services:
+                "Tworzenie i stylizacja responsywnych interfejsów webowych z wykorzystaniem nowoczesnego stosu technologicznego (React, Next.js, TypeScript, Tailwind CSS), z uwzględnieniem semantyki, wydajności oraz wygody użytkownika. Zapewnienie czystej architektury, skalowalności i stabilnej komunikacji między częścią kliencką a serwerową aplikacji.",
+            team: "i love my team",
+        },
+    },
+    {
+        data: {
             id: "oleksandr-petrychuk-fullstack-developer",
             projectId: ["ilovemyteam-online"],
 
@@ -2453,6 +2555,7 @@ export const membersData: MemberDataItemType[] = [
                 "HTML/CSS",
             ],
             careerStart: "2024-03",
+            isEndInAboutMT: true,
         },
         ua: {
             name: "Оксана Арпуль",
@@ -2647,6 +2750,7 @@ export const membersData: MemberDataItemType[] = [
             },
             tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Jira"],
             careerStart: "2025-01",
+            isEndInAboutMT: true,
         },
         ua: {
             name: "Діана Дудник",
@@ -3000,56 +3104,6 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
-            id: "olga-ustymenko-qa",
-            projectId: ["ilovemyteam-online"],
-
-            imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1757583644/Olga_Ustymenko_jfbfzp.jpg",
-            position: "QA Engineer",
-            categoryName: "qa",
-            projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "5",
-            socialLinks: {
-                linkedin: "www.linkedin.com/in/olha-ustymenko/",
-                telegram: "",
-            },
-            tools: [
-                "Postman",
-                "Swagger",
-                "Chrome DevTools",
-                "SQL",
-                "Jira",
-                "Trello",
-                "TestRail",
-                "Figma",
-                "HTML/CSS",
-            ],
-            careerStart: "2025-01",
-        },
-        ua: {
-            name: "Ольга Устименко",
-            about: "Підходжу до тестування з ентузіазмом, прагнучи забезпечити високу якість продукту.",
-            services:
-                "Займаюсь комплексним ручним тестуванням програмного забезпечення, включаючи функціональне, нефункціональне, UI/UX. Відповідаю за аналіз вимог, розробку тестової документації та створення звітів про дефекти.",
-            team: "I Love My Team",
-        },
-        en: {
-            name: "Olga Ustymenko",
-            about: "I approach testing with enthusiasm, striving to ensure high product quality.",
-            services:
-                "I am engaged in comprehensive manual software testing, including functional, non-functional, UI/UX. I am responsible for requirements analysis, test documentation development, and defect reporting.",
-            team: "I Love My Team",
-        },
-        pl: {
-            name: "Olga Ustymenko",
-            about: "Podchodzę do testowania z entuzjazmem, dążąc do zapewnienia wysokiej jakości produktu.",
-            services:
-                "Zajmuję się kompleksowym testowaniem manualnym oprogramowania, w tym testami funkcjonalnymi, niefunkcjonalnymi, UI/UX. Jestem odpowiedzialny za analizę wymagań, tworzenie dokumentacji testowej oraz raportowanie defektów.",
-            team: "I Love My Team",
-        },
-    },
-    {
-        data: {
             id: "iryna-andrushchenko-ui-ux-designer",
             projectId: ["ilovemyteam-online"],
 
@@ -3072,6 +3126,7 @@ export const membersData: MemberDataItemType[] = [
                 "ProtoPie",
             ],
             careerStart: "2023-04",
+            isEndInAboutMT: true,
         },
         ua: {
             name: "Ірина Андрущенко",

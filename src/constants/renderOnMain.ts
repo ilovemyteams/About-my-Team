@@ -5,11 +5,11 @@ export const MAIN_MEMBERS = [
     "tetiana-seletska-project-manager-scrum-master",
     "iryna-stoliarova-ui-ux-designer",
     "anna-prutnik-frontend-developer",
-    "oksana-arpul-qa-engineer",
+    "dmytro-snitko-frontend-developer",
     "iryna-trynkal-fullstack-developer",
     "kateryna-rubanik-qa-engineer",
     "oksana-zhmurko-business-analyst",
-    "diana-dudnyk-ui-ux-designer",
+    "olga-ustymenko-qa",
 ];
 
 export const EMPTY_INDICES = [1, 6, 8, 12]; //Це позиції пустих клітинок в секції команда 2, 7, 9 та 13
