@@ -18,6 +18,12 @@ export const OurTeamSection = () => {
     const defaultMembersData = membersData.filter(member => {
         return member.data.projectId.includes("ilovemyteam-online");
     });
+    const sortedMembers = defaultMembersData.sort((a, b) => {
+        if (a.data.isEndInAboutMT === b.data.isEndInAboutMT) {
+            return 0;
+        }
+        return a.data.isEndInAboutMT ? 1 : -1;
+    });
     const membersForMainFromTab = MAIN_MEMBERS.map(id =>
         membersData.find(member => member.data.id === id)
     ).filter((member): member is MemberDataItemType => Boolean(member));
@@ -31,7 +37,7 @@ export const OurTeamSection = () => {
             <Title />
             <div className="relative">
                 <div className="relative flex flex-col gap-3 tab:flex-row tab:justify-between">
-                    <MemberCardsList membersData={defaultMembersData} />
+                    <MemberCardsList membersData={sortedMembers} />
                     <MemberCardsListTab membersData={membersForMainFromTab} />
                     <MemberCardsListPC membersData={membersForMainFromTab} />
                 </div>

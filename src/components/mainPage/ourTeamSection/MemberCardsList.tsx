@@ -32,7 +32,7 @@ export const MemberCardsList = ({
                     {membersData.map(data => (
                         <li
                             key={data.data.id}
-                            className={`embla__slide  flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
+                            className={`embla__slide flex-[0_0_50%] w-teamMob border border-purple-strokeLight dark:border-purple-stroke ${lastBorder} even:ml-[-1px]`}
                         >
                             <MemberCard data={data} />
                         </li>
