@@ -2223,8 +2223,7 @@ export const membersData: MemberDataItemType[] = [
             id: "dmytro-snitko-frontend-developer",
             projectId: ["ilovemyteam-online"],
 
-            imageURL:
-                "https://drive.google.com/uc?export=view&id=1WnJ3gq5UXtQyr1hv_RQxbGmEkBZk2xrJ",
+            imageURL: "/images/dmytro-snitko.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
