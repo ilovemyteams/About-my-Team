@@ -125,16 +125,16 @@ export const MemberCardsListPC = ({
                                 layoutId={`member-${displayedMember.data.id}`}
                                 layout
                                 className="absolute inset-0"
-                                initial={{ opacity: 0, scale: 0.96, x: 32 }}
-                                animate={{ opacity: 1, scale: 1, x: 0 }}
-                                exit={{ opacity: 0, scale: 0.98, x: 32 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
                                 transition={{
                                     layout: {
                                         type: "spring",
                                         stiffness: 240,
                                         damping: 30,
                                     },
-                                    opacity: { duration: 0.2 },
+                                    opacity: { duration: 0.5 },
                                 }}
                             >
                                 <MemberCardMain data={displayedMember} />
