@@ -2224,7 +2224,7 @@ export const membersData: MemberDataItemType[] = [
             projectId: ["ilovemyteam-online"],
 
             imageURL:
-                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1771926744/dmytro-snitko_wgkooc.jpg",
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1772013711/dmytro-snitko_ccultb.jpg",
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
@@ -2639,7 +2639,6 @@ export const membersData: MemberDataItemType[] = [
             position: "Business Analyst",
             categoryName: "business-analyst",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "7",
             socialLinks: {
                 linkedin:
                     "https://www.linkedin.com/in/oksana-zhmurko-9521b8266",
