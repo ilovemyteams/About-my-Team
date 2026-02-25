@@ -1,4 +1,5 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import { useLocale } from "next-intl";
 import { useState } from "react";
 
@@ -38,18 +39,22 @@ export const MemberCardsListPC = ({
     );
     const [hoveredId, setHoveredId] = useState<string | null>(null);
     const activeMember = paddedMembers.find(m => m?.data.id === activeId);
+    const hoveredMember = paddedMembers.find(m => m?.data.id === hoveredId);
+
+    const displayedMember = hoveredMember || activeMember;
 
     const onClickCard = (id: string) => {
-        if (id === activeId) {
-            setPreviousURL(`back`);
+        setHoveredId(null);
+        setActiveId(id);
+
+        requestAnimationFrame(() => {
+            setPreviousURL("back");
             router.push(`/member/${id}`);
-        } else {
-            setActiveId(id);
-        }
+        });
     };
     return (
         <div className="hidden pc:flex justify-between">
-            <ul className="pc:grid pc:grid-cols-5 pc:gap-4 w-full pc:w-[63.3%] desk:w-[61%] hidden tab:border-0">
+            <ul className="pc:grid pc:grid-cols-5 w-full pc:w-[63.3%] desk:w-[61%] hidden tab:border-0">
                 {isLoading || !visibleMembers ? (
                     <ul className="hidden pc:grid flex-[0_0_100%] w-full border-0 pc:grid-cols-5 ">
                         <Skeleton number={11} />
@@ -58,9 +63,9 @@ export const MemberCardsListPC = ({
                     paddedMembers.map((member, idx) => {
                         if (!member) {
                             return (
-                                <div
+                                <li
                                     key={`empty-${idx}`}
-                                    className="min-w-[124px] aspect-[124/148]"
+                                    className="pc:p-2 min-w-[124px] aspect-[124/148]"
                                 />
                             );
                         }
@@ -71,9 +76,9 @@ export const MemberCardsListPC = ({
                         const shouldHideGradient = isHovered || isActive;
 
                         return (
-                            <div
+                            <li
                                 key={member.data.id}
-                                className="relative min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden"
+                                className="relative pc:p-2 min-w-[124px] aspect-[124/148] desk:aspect-[150/180] overflow-hidden"
                                 onClick={() => onClickCard(member.data.id)}
                                 onMouseEnter={() =>
                                     setHoveredId(member.data.id)
@@ -106,20 +111,36 @@ export const MemberCardsListPC = ({
                                         <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
                                     </div>
                                 )}
-                            </div>
+                            </li>
                         );
                     })
                 )}
             </ul>
             <div className="pc:w-[31.11%] desk:w-[30.5%]">
-                <div className="">
-                    {activeMember ? (
-                        <MemberCardMain data={activeMember} />
-                    ) : (
-                        <div className="flex items-end justify-center h-full w-full bg-memberMenuGradientLight dark:bg-memberMenuGradientDark">
-                            <IconProfile className="w-[80%] tab:w-[59%] h-auto text-purple-strokeLight dark:text-purple-stroke" />
-                        </div>
-                    )}
+                <div className="relative h-full">
+                    <AnimatePresence mode="popLayout">
+                        {displayedMember && (
+                            <motion.div
+                                key={displayedMember.data.id}
+                                layoutId={`member-${displayedMember.data.id}`}
+                                layout
+                                className="absolute inset-0"
+                                initial={{ opacity: 0, scale: 0.96, x: 32 }}
+                                animate={{ opacity: 1, scale: 1, x: 0 }}
+                                exit={{ opacity: 0, scale: 0.98, x: 32 }}
+                                transition={{
+                                    layout: {
+                                        type: "spring",
+                                        stiffness: 240,
+                                        damping: 30,
+                                    },
+                                    opacity: { duration: 0.2 },
+                                }}
+                            >
+                                <MemberCardMain data={displayedMember} />
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </div>
