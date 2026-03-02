@@ -5,7 +5,7 @@ export const MAIN_MEMBERS = [
     "tetiana-seletska-project-manager-scrum-master",
     "iryna-stoliarova-ui-ux-designer",
     "anna-prutnik-frontend-developer",
-    "oksana-arpul-qa-engineer",
+    "dmytro-snitko-frontend-developer",
     "iryna-trynkal-fullstack-developer",
     "kateryna-rubanik-qa-engineer",
     "oksana-zhmurko-business-analyst",
