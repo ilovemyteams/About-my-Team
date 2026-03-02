@@ -3128,7 +3128,7 @@ export const membersData: MemberDataItemType[] = [
             position: "FrontEnd Developer",
             categoryName: "developer",
             projectsExperience: ["ilovemyteam.online"],
-            pricePerHour: "7",
+            pricePerHour: "5",
             socialLinks: {
                 linkedin: "https://www.linkedin.com/in/snitko-dmitriy/",
                 github: "https://github.com/dmitriy-snitko",
