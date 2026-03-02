@@ -3107,6 +3107,216 @@ export const membersData: MemberDataItemType[] = [
     },
     {
         data: {
+            id: "dmytro-snitko-frontend-developer",
+            projects: [
+                {
+                    id: "ilovemyteam-online",
+                    startDate: "2025-10",
+                    role: "Frontend-developer",
+                    skills: [
+                        "React",
+                        "Next.js",
+                        "JavaScript",
+                        "TypeScript",
+                        "Tailwind CSS",
+                    ],
+                },
+            ],
+
+            imageURL:
+                "https://res.cloudinary.com/dw4ne3oi5/image/upload/v1772013711/dmytro-snitko_ccultb.jpg",
+            position: "FrontEnd Developer",
+            categoryName: "developer",
+            projectsExperience: ["ilovemyteam.online"],
+            pricePerHour: "7",
+            socialLinks: {
+                linkedin: "https://www.linkedin.com/in/snitko-dmitriy/",
+                github: "https://github.com/dmitriy-snitko",
+                telegram: "https://t.me/dmytriysnitko",
+            },
+            tools: [
+                { name: "JavaScript" },
+                { name: "React" },
+                { name: "Typescript" },
+                { name: "Next.js" },
+                { name: "Node.js" },
+                { name: "MongoDB" },
+                { name: "Tailwind" },
+                { name: "Chrome DevTools" },
+                { name: "Github" },
+                { name: "VSCode" },
+                { name: "Formik" },
+                { name: "Jira" },
+                { name: "HTML" },
+                { name: "CSS" },
+                { name: "Figma" },
+            ],
+            careerStart: "2025-03",
+        },
+        uk: {
+            name: "Дмитро Снтко",
+            about: [
+                "Як frontend-розробнику, мені важливо, щоб код був чистим, зрозумілим і підтримуваним, тому я приділяю багато уваги архітектурі компонентів і повторному використанню логіки. Умію аналізувати та рефакторити чужий код, спрощувати складні існуючі рішення без втрати функціональності.",
+                "Основний стек — Next.js, React, TypeScript, Tailwind CSS.",
+                "Загалом для мене важливо не просто закривати задачі, а розуміти, навіщо вони виконуються і як рішення вплине на продукт і користувача.",
+            ],
+            shortQuote: "Складне стає простим, коли деталі на своєму місці.",
+            services: [
+                "Розробка інтерфейсів",
+                "Адаптивна верстка сторінок",
+                "Кросбраузерна сумісність",
+                "Компонентна архітектура",
+                "Інтеграція з API",
+                "Підтримка UI/UX рішень",
+            ],
+            team: "i love my team",
+            languages: [
+                { name: "Українська", level: "Рідна" },
+                { name: "Англійська", level: "Середній" },
+            ],
+            education: [
+                {
+                    institution: "Полтавський університет економіки і торгівлі",
+                    degree: 'Повна вища освіта за спеціальністю "Менеджмент організацій"',
+                    yearStart: 2000,
+                    yearEnd: 2005,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2020,
+                    yearEnd: 2021,
+                },
+                {
+                    institution: "STEP IT Academy",
+                    degree: "WEB Design",
+                    yearStart: 2006,
+                    yearEnd: 2008,
+                },
+            ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "2025-10",
+                    description:
+                        "Займався розробкою адаптивних інтерфейсів з використанням Next.js, JavaScript, TypeScript та Tailwind. Забезпечував коректне відображення сайту на різних пристроях, враховуючи як світлу, так і темну теми, а також багатомовність із підтримкою польської, української та англійської мов, що дозволило зробити продукт доступним для широкої аудиторії.",
+                },
+            ],
+        },
+        en: {
+            name: "Dmytro Snitko",
+            about: [
+                "As a frontend developer, it is important to me that the code is clean, readable, and maintainable, so I pay a lot of attention to component architecture and logic reusability. I am able to analyze and refactor existing code, simplifying complex solutions without losing functionality.",
+                "My main stack is Next.js, React, TypeScript, and Tailwind CSS.",
+                "Overall, it is important for me not just to complete tasks, but to understand why they are being done and how the solution will impact the product and the user.",
+            ],
+            shortQuote:
+                "Complex things become simple when the details are in their right place.",
+            services: [
+                "Interface design",
+                "Responsive page layout",
+                "Cross-browser compatibility",
+                "Component-based architecture",
+                "API integration",
+                "Support for UI/UX solutions",
+            ],
+            team: "i love my team",
+            languages: [
+                { name: "Ukrainian", level: "Native" },
+                { name: "English", level: "Intermediate" },
+            ],
+            education: [
+                {
+                    institution: "Poltava University of Economics and Trade",
+                    degree: "Master's degree of Organization Management",
+                    yearStart: 2000,
+                    yearEnd: 2005,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2020,
+                    yearEnd: 2021,
+                },
+                {
+                    institution: "STEP IT Academy",
+                    degree: "WEB Design",
+                    yearStart: 2006,
+                    yearEnd: 2008,
+                },
+            ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "2025-08",
+                    description:
+                        "I worked on developing responsive interfaces using Next.js, JavaScript, TypeScript, and Tailwind. I ensured correct display of the website across various devices, taking into account both light and dark themes, as well as multilingual support for Polish, Ukrainian, and English, making the product accessible to a wide audience.",
+                },
+            ],
+        },
+        pl: {
+            name: "Dmytro Snitko",
+            about: [
+                "Jako frontend developer ważne jest dla mnie, aby kod był czysty, czytelny i łatwy w utrzymaniu, dlatego dużą uwagę poświęcam architekturze komponentów oraz ponownemu wykorzystaniu logiki. Potrafię analizować i refaktoryzować istniejący kod, upraszczając złożone rozwiązania bez utraty funkcjonalności.",
+                "Mój główny stack to Next.js, React, TypeScript i Tailwind CSS.",
+                "Ogólnie ważne jest dla mnie nie tylko realizowanie zadań, ale także rozumienie, po co są wykonywane i jaki wpływ rozwiązanie będzie miało na produkt oraz użytkownika.",
+            ],
+            shortQuote:
+                "Trudne staje się proste, gdy szczegóły są na swoim miejscu.",
+            services: [
+                "Projektowanie interfejsów",
+                "Responsywne tworzenie stron",
+                "Kompatybilność między przeglądarkami",
+                "Architektura oparta na komponentach",
+                "Integracja z API",
+                "Wsparcie rozwiązań UI/UX",
+            ],
+            team: "i love my team",
+            languages: [
+                { name: "Ukraiński", level: "Ojczysty" },
+                { name: "Angielski", level: "Średni" },
+            ],
+            education: [
+                {
+                    institution: "Poltava University of Economics and Trade",
+                    degree: "Master's degree of Organization Management",
+                    yearStart: 2000,
+                    yearEnd: 2005,
+                },
+            ],
+            certificates: [
+                {
+                    institution: "GoIT",
+                    degree: "Full Stack Developer",
+                    yearStart: 2020,
+                    yearEnd: 2021,
+                },
+                {
+                    institution: "STEP IT Academy",
+                    degree: "WEB Design",
+                    yearStart: 2006,
+                    yearEnd: 2008,
+                },
+            ],
+            professionalExperience: [
+                {
+                    role: "Frontend-developer",
+                    name: "I love my team",
+                    startDate: "2025-08",
+                    description:
+                        "Zajmowałem się tworzeniem responsywnych interfejsów przy użyciu Next.js, JavaScript, TypeScript i Tailwind. Zapewniałem poprawne wyświetlanie strony na różnych urządzeniach, uwzględniając zarówno tryb jasny, jak i ciemny, a także obsługę wielu języków, w tym polskiego, ukraińskiego i angielskiego, co pozwoliło uczynić produkt dostępnym dla szerokiego grona odbiorców.",
+                },
+            ],
+        },
+    },
+    {
+        data: {
             id: "oleksandr-petrychuk-fullstack-developer",
             projects: [
                 {
