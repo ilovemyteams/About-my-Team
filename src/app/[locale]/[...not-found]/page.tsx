@@ -1,11 +1,8 @@
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
-export async function generateMetadata({
-    params: { locale },
-}: {
-    params: { locale: string };
-}) {
+export async function generateMetadata() {
+    const locale = await getLocale();
     const getTranslation = await getTranslations({
         locale,
         namespace: "NotFound",

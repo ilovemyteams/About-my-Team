@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+    scrollbar-gutter: stable;
+
     --color-grey: #d4d4d4;
     --font-geist: Geist;
 }
@@ -14,7 +16,6 @@
 /* styles for root element when modal open */
 :root:has(.no-doc-scroll) {
     overflow: hidden;
-    /* padding-right: 17px; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,7 +130,6 @@ body {
 
     .disabled-bg-member-card {
         background: linear-gradient(0deg, #e3e3e3, #e3e3e3), #fbf8ff;
-
         @media (prefers-color-scheme: dark) {
             background:
                 linear-gradient(

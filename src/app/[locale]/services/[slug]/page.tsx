@@ -1,23 +1,24 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { getLocale } from "next-intl/server";
 import React from "react";
 
 import { Service } from "@/src/components/someServicePage/Service";
 import { servicesData, ServiceType } from "@/src/mockedData/servicesData";
 import { LocaleType } from "@/types/LocaleType";
+import { RouteSlugParams } from "@/types/RoutesType";
 
 interface ServicePageProps {
-    params: {
-        slug: string;
-        locale: string;
-    };
+    params: RouteSlugParams;
 }
 
 export async function generateMetadata({
     params,
 }: ServicePageProps): Promise<Metadata> {
+    const locale = await getLocale();
+    const { slug } = await params;
     const displayedService: ServiceType | undefined = servicesData.find(
-        service => service.slug === params.slug
+        service => service.slug === slug
     );
 
     if (!displayedService) {
@@ -27,7 +28,7 @@ export async function generateMetadata({
         };
     }
 
-    const localization = displayedService[params.locale as LocaleType];
+    const localization = displayedService[locale as LocaleType];
     const normalizedTitle =
         localization.name[0].toUpperCase() + localization.name.slice(1);
 
@@ -41,8 +42,9 @@ export async function generateMetadata({
     };
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-    const currentService = servicesData.find(item => item.slug === params.slug);
+export default async function ServicePage({ params }: ServicePageProps) {
+    const { slug } = await params;
+    const currentService = servicesData.find(item => item.slug === slug);
 
     if (!currentService) {
         return notFound();

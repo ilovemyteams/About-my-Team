@@ -10,16 +10,17 @@ import {
     type StructureResolver,
 } from "sanity/structure";
 
-import { getClient } from "../lib/client";
+import { writeToken } from "../env";
+import { client } from "../lib/client";
 import { getEnglishTitleFromIntArrays } from "../utils/getEnglishTitleFromIntArrays";
 
 async function nestedContentPageList(
     id: string,
     S: StructureBuilder
 ): Promise<DocumentListBuilder | DocumentBuilder> {
-    const previewClient = getClient(
-        process.env.NEXT_PUBLIC_SANITY_API_WRITE_TOKEN || ""
-    );
+    const previewClient = client.withConfig({
+        token: writeToken,
+    });
 
     const page = await previewClient.fetch(
         `*[_id == $id || _id == "drafts.${id}"][0] { title, _id, _type }`,

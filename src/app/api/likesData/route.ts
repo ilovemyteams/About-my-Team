@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
         try {
             await saveLikes(data);
             return NextResponse.json({ message: "Data appended successfully" });
-        } catch (error) {
+        } catch (_error) {
             return NextResponse.json(
                 { error: "Failed to append data to the file" },
                 { status: 500 }
@@ -27,7 +27,7 @@ export async function DELETE(request: NextRequest) {
         try {
             await removedLikes(questionSlug, userId);
             return NextResponse.json({ message: "Data deleted successfully" });
-        } catch (error) {
+        } catch (_error) {
             return NextResponse.json(
                 { error: "Failed to delete data from the file" },
                 { status: 500 }

@@ -1,6 +1,6 @@
 import "server-only";
 
-import { getClient } from "@/sanity/lib/client";
+import { client } from "@/sanity/lib/client";
 import {
     CTAQueryResult,
     FooterQueryResult,
@@ -15,7 +15,7 @@ import {
     SettingsQueryResult,
 } from "@/types/sanity.types";
 
-import { readToken } from "../lib/api";
+import { readToken } from "../env";
 import {
     CTAQuery,
     footerQuery,
@@ -30,11 +30,11 @@ import {
     settingsQuery,
 } from "../lib/queries";
 
-const client = getClient(readToken || "");
+const sanityClient = client.withConfig({ token: readToken || "" });
 
 export async function loadQuery<T>(query: string, params = {}, options = {}) {
     try {
-        const data = await client.fetch<T>(query, params, options);
+        const data = await sanityClient.fetch<T>(query, params, options);
         return data;
     } catch (error) {
         console.error("Error fetching data:", error);

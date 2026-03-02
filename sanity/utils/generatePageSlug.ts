@@ -1,10 +1,10 @@
-import { getClient } from "@/sanity/lib/client";
+import { client } from "@/sanity/lib/client";
 import { InternationalizedArrayString, Page } from "@/types/sanity.types";
 
 import { getEnglishTitleFromIntArrays } from "./getEnglishTitleFromIntArrays";
 
 const getParentSlug = async (parentPageId: string) => {
-    const parentPage = await getClient().fetch(
+    const parentPage = await client.fetch(
         `*[_id == $id || _id == "drafts.${parentPageId}"][0] { pageSlug }`,
         { id: parentPageId }
     );
