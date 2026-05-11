@@ -3,7 +3,7 @@ export interface ServiceType {
     icon: string;
     image: string;
 
-    ua: ServiceLocalizationDataType;
+    uk: ServiceLocalizationDataType;
     en: ServiceLocalizationDataType;
     pl: ServiceLocalizationDataType;
 }
@@ -49,7 +49,7 @@ export const servicesData: ServiceType[] = [
         icon: "analysis",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559370/service-ba_ievdfg.jpg",
 
-        ua: {
+        uk: {
             name: "бізнес-аналіз",
             shortDescription:
                 "Аналітика допомагає бізнесу будувати роботу та розвиватись на фактах, а не на здогадах чи інтуїції.",
@@ -325,7 +325,7 @@ export const servicesData: ServiceType[] = [
 
         icon: "design",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559375/services-design_mod90s.jpg",
-        ua: {
+        uk: {
             name: "дизайн",
             shortDescription:
                 "Дизайнер відмальовує прототип кожної сторінки, на якому схематично зображує розташування блоків, розміщення ілюстрацій і тексту. Тільки після затвердження прототипу із замовником ми приступаємо до створення дизайну сайту.",
@@ -611,7 +611,7 @@ export const servicesData: ServiceType[] = [
 
         icon: "dev",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559378/services-development_v5tp8u.jpg",
-        ua: {
+        uk: {
             name: "розробка",
             shortDescription:
                 "На етапі розробки прототип сайту оживає та набуває потрібного функціоналу, підключаются бази даних та втілюються можливості оплати та наповнення сайту контентом.",
@@ -851,7 +851,7 @@ export const servicesData: ServiceType[] = [
         icon: "test",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559533/services-testing_reuzdb.jpg",
 
-        ua: {
+        uk: {
             name: "тестування",
             shortDescription:
                 "На етапі тестування перевіряється працездатність сайту і його відповідність вимогам. Оцінюється робота функціоналу, зручність використання, оптимізація під різні браузери та розміри екранів та швидкість завантаження.",
@@ -1105,7 +1105,7 @@ export const servicesData: ServiceType[] = [
         icon: "support",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559465/services-support_fxestj.jpg",
 
-        ua: {
+        uk: {
             name: "підтримка",
             shortDescription:
                 "Представник команди навчає співробітників клієнта роботі із сайтом, щоб надалі клієнт міг самостійно оновлювати контент на своєму сайті.",
@@ -1420,7 +1420,7 @@ export const servicesData: ServiceType[] = [
         icon: "complex",
 
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559371/service-comprehensive_ejoysc.jpg",
-        ua: {
+        uk: {
             name: "комплексна послуга",
             shortDescription:
                 "Комплексний та системний підхід з єдиним менеджментом проєкту (замовнику не треба шукати виконавців для окремих завдань – все робиться одним підрядником, включно з пошуком чи рекомендацією субпідрядників).",
@@ -1720,7 +1720,7 @@ export const servicesData: ServiceType[] = [
         icon: "landing",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559374/service-landing_ii1w34.jpg",
 
-        ua: {
+        uk: {
             name: "Лендінг ",
             shortDescription:
                 "Лендінг – односторінковий сайт, для швидкого залучення клієнтів і досягнення однієї конкретної мети. Розробляється прототип, затверджується, створюється унікальний дизайн, що відповідає потребам і приваблює користувачів.",
@@ -1984,7 +1984,7 @@ export const servicesData: ServiceType[] = [
         icon: "website",
 
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559595/services-websites_hdzzeu.jpg",
-        ua: {
+        uk: {
             name: "Вебсайт",
             shortDescription:
                 "Вебсайт – багатосторінковий ресурс, для презентації бізнесу в інтернеті. Створюється зручна структура, розробляється унікальний дизайн, та забезпечується функціонал, що відповідає вашим цілям і очікуванням клієнтів.",
@@ -2575,7 +2575,7 @@ export const servicesData: ServiceType[] = [
         icon: "store",
         image: "https://res.cloudinary.com/dvfu5vhjx/image/upload/v1742559399/services-internet-store_nqt841.jpg",
 
-        ua: {
+        uk: {
             name: "Інтернет-магазин",
             shortDescription:
                 "Інтернет-магазин – потужний інструмент для онлайн-продажів. Розробляється сайт зі зручною навігацією, адаптивним дизайном і функціями для управління товарами, кошиком і оплатою, для ефективної роботи вашого бізнесу.",

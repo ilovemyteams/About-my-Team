@@ -17,7 +17,7 @@ export type DataType = {
 };
 export type FeedbackDataItemType = {
     data: DataType;
-    ua: FeedbackDataItemTranslation;
+    uk: FeedbackDataItemTranslation;
     en: FeedbackDataItemTranslation;
     pl: FeedbackDataItemTranslation;
 };
@@ -31,7 +31,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             slug: "batatfarm-com",
             feedbackLink: "https://www.facebook.com/share/p/SK1k7ViB8P5mCS4B",
         },
-        ua: {
+        uk: {
             siteName: "Смачно! на селі",
             siteView: "інтернет магазин",
             reviewer: "Сергій Марченко",
@@ -63,7 +63,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteLink: "protection.in.ua",
             slug: "protection-in-ua",
         },
-        ua: {
+        uk: {
             siteName: "Міграційний Адвокат",
             siteView: "вебсайт",
             reviewer: "Антоній Курц",
@@ -96,7 +96,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             slug: "theatermag-com-ua",
             feedbackLink: "https://www.youtube.com/watch?v=ccMpW9b2c2s",
         },
-        ua: {
+        uk: {
             siteName: "Український театр",
             siteView: "вебсайт",
             reviewer: "Ганна Шерман",
@@ -128,7 +128,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             siteLink: "viktoriia-recruiting.com.ua",
             slug: "viktoriia-zabara",
         },
-        ua: {
+        uk: {
             siteName: "Вікторія Забара",
             siteView: "лендінг",
             reviewer: "Вікторія Забара",
@@ -162,7 +162,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             feedbackLink:
                 "https://www.linkedin.com/posts/chudov_choodov-wonderintheuniverse-activity-7312176808714518529-EcwB/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABeq2koBgxsJlDrPNdqlrtKYrDg7EYdDKTU",
         },
-        ua: {
+        uk: {
             siteName: "Алекс Чудов",
             siteView: "лендінг",
             reviewer: "Алекс Чудов",
@@ -196,7 +196,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             feedbackLink:
                 "https://www.linkedin.com/posts/career-coach-liudmyla-hoida_%D1%80%D1%96%D0%BA-%D0%BF%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B7%D0%BD%D0%BE-%D1%81%D1%82%D1%96%D0%BB%D1%8C%D0%BA%D0%B8-%D1%87%D0%B0%D1%81%D1%83-%D1%8F-%D0%BD%D0%B0%D0%BC%D0%B0%D0%B3%D0%B0%D0%BB%D0%B0%D1%81%D1%8F-activity-7351175632237604864-yM7H?utm_source=share&utm_medium=member_desktop&rcm=ACoAADkfVTsBkmOpxPEM4MnW9E2pily_Cdy9Btw",
         },
-        ua: {
+        uk: {
             siteName: "Людмила Гойда",
             siteView: "лендінг",
             reviewer: "Людмила Гойда",
@@ -230,7 +230,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             feedbackLink:
                 "https://www.linkedin.com/posts/anna-balabushko_qa-менторство-та-підтримка-лідерів-activity-7356931958112739329-gkkh?utm_source=share&utm_medium=member_android&rcm=ACoAABeq2koBgxsJlDrPNdqlrtKYrDg7EYdDKTU",
         },
-        ua: {
+        uk: {
             siteName: "Анна Балабушко",
             siteView: "лендінг",
             reviewer: "Анна Балабушко",
@@ -263,7 +263,7 @@ export const feedbackData: FeedbackDataItemType[] = [
             slug: "willow-motion",
             feedbackLink: "https://youtube.com/shorts/Bi_4N-Qewv4",
         },
-        ua: {
+        uk: {
             siteName: "Willow Motion",
             siteView: "лендінг",
             reviewer: "Ольга Сердюк",

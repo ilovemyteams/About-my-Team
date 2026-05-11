@@ -15,9 +15,9 @@ import { Title } from "./Title";
 export const OurTeamSection = () => {
     const getTranslation = useTranslations("Buttons");
     const router = useRouter();
-    const defaultMembersData = membersData.filter(member => {
-        return member.data.projectId.includes("ilovemyteam-online");
-    });
+    const defaultMembersData = membersData.filter(({ data }) =>
+        data.projects.some(p => p.id === "ilovemyteam-online")
+    );
     const sortedMembers = defaultMembersData.sort(
         (a, b) =>
             (a.data.isEndInAboutMT ? 1 : 0) - (b.data.isEndInAboutMT ? 1 : 0)

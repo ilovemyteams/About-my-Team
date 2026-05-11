@@ -31,12 +31,14 @@ export const TeamList = ({
 
     // ToDo: view only ilovemyteam member -> then need remove this array and change to filteredMembers
     const memberForPagination = filteredMembers
-        .filter(member => member.data.projectId.includes("ilovemyteam-online"))
-        .toSorted((a, b) => {
-            const isLeftA = a.data.isEndInAboutMT ? 1 : 0;
-            const isLeftB = b.data.isEndInAboutMT ? 1 : 0;
-            return isLeftA - isLeftB;
-        });
+        .filter(({ data }) =>
+            data.projects.some(p => p.id === "ilovemyteam-online")
+        )
+        .toSorted(
+            (a, b) =>
+                Number(!!a.data.isEndInAboutMT) -
+                Number(!!b.data.isEndInAboutMT)
+        );
 
     const {
         dataSlice: visibleList,

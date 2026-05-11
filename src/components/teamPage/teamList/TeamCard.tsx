@@ -2,7 +2,6 @@ import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
 import { MemberDataItemType } from "@/src/mockedData/membersData";
-import { portfolioData } from "@/src/mockedData/portfolioData";
 import { LocaleType } from "@/types/LocaleType";
 
 // import { IconLike } from "../../shared/Icons/IconLike";
@@ -39,19 +38,9 @@ export const TeamCard = ({ member }: MemberCardProps) => {
         tools,
         id,
         isEndInAboutMT,
-
         careerStart,
-        projectId,
+        projects,
     } = member.data;
-
-    const memberDomainList = new Set(
-        portfolioData
-            .filter(project => {
-                return projectId.includes(project.data.slug);
-            })
-            .map(project => project.data.domains)
-            .flat()
-    );
 
     const status = generateRandomStatus();
 
@@ -84,7 +73,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                 </div>
                 <div className="h-[40px] tab:h-[44px] w-full">
                     <p className="text-center text-sm tab:text-base grow w-full line-clamp-2">
-                        {langData.about}
+                        {langData.shortQuote}
                     </p>
                 </div>
 
@@ -94,7 +83,7 @@ export const TeamCard = ({ member }: MemberCardProps) => {
                     careerStart={careerStart}
                 />
                 <Technologies tools={tools} />
-                <Domains domains={memberDomainList} />
+                <Domains projects={projects} />
                 <div className="grow w-full flex items-center justify-center">
                     {isEndInAboutMT ? (
                         <p className="font-caviar font-bold text-lg lowercase">

@@ -141,7 +141,10 @@
         "websites": "Website",
         "showAll": "Show all",
         "showLess": "Show less",
-        "allMembers": "All participants"
+        "allMembers": "All participants",
+        "allTeammates": "Show all",
+        "more": "more",
+        "less": "less"
     },
     "Badges": {
         "readTime": "{readTime, plural, =1 {# min read} other {# mins read}}"
@@ -284,7 +287,8 @@
         "breadcrumbItemServices": "Services",
         "breadcrumbItemIvents": "Events",
         "breadcrumbItemPortfolio": "Portfolio",
-        "breadcrumbItemTeam": "Team"
+        "breadcrumbItemTeam": "Team",
+        "breadcrumbItemMember": "Memeber"
     },
     "FaqPage": {
         "titleSEO": "Answers to your questions in one place",
@@ -397,6 +401,23 @@
         "statProjects": "projects: {projects}",
         "leftProject": "Out of project",
         "joinUsTitle": "Your photo can be here",
-        "joinUsText": "Join a team of like-minded \nindividuals"
+        "joinUsText": "Join a team of like-minded \nindividuals",
+        "projects": "Projects",
+        "about": "About me",
+        "languages": "Languages",
+        "education": "Education",
+        "certificates": "Certificates",
+        "services": "Main skills",
+        "commercialExp": "Commercial experience",
+        "year": "{experience, plural, =1 {1 yr.} other {# yrs.}}",
+        "month": "{experience, plural, one {# month} other {# months}}",
+        "expertise": "Expertise in",
+        "untilNow": "until now",
+        "role": "Role:",
+        "domain": "Domain:",
+        "skills": "Skills:",
+        "otherMembers": "Other members:",
+        "profExp": "Professional experience",
+        "teammates": "Collaboration With"
     }
 }

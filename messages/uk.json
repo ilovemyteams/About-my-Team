@@ -140,7 +140,10 @@
         "websites": "Вебсайт",
         "showAll": "Показати всі",
         "showLess": "Згорнути",
-        "allMembers": "Всі учасники"
+        "allMembers": "Всі учасники",
+        "allTeammates": "Показати всіх",
+        "more": "більше",
+        "less": "менше"
     },
     "Badges": {
         "readTime": "{readTime} хв читати"
@@ -280,7 +283,8 @@
         "breadcrumbItemServices": "Послуги",
         "breadcrumbItemIvents": "Події",
         "breadcrumbItemPortfolio": "Портфоліо",
-        "breadcrumbItemTeam": "Команда"
+        "breadcrumbItemTeam": "Команда",
+        "breadcrumbItemMember": "Учасник"
     },
     "FaqPage": {
         "titleSEO": "Відповіді на актуальні питання в одному місці",
@@ -392,6 +396,23 @@
         "statProjects": "проєкти: {projects}",
         "leftProject": "Поза проєктом",
         "joinUsTitle": "Тут може бути ваше фото",
-        "joinUsText": "Долучайся до команди \nоднодумців"
+        "joinUsText": "Долучайся до команди \nоднодумців",
+        "projects": "Проєкти",
+        "about": "Про мене",
+        "languages": "Мови",
+        "education": "Освіта",
+        "certificates": "Сертифікати",
+        "services": "Основні навички",
+        "commercialExp": "Комерційний досвід",
+        "year": "{experience, plural, one {# рік} few {# роки} many {# років} other {# роки}}",
+        "month": "{experience, plural, one {# місяц} few {# місяці} many {# місяців} other {# місяця}}",
+        "expertise": "Експертиза в",
+        "untilNow": "дотепер",
+        "role": "Роль:",
+        "domain": "Домен:",
+        "skills": "Навички:",
+        "otherMembers": "Інші учасники:",
+        "profExp": "Професійний досвід",
+        "teammates": "Співпраця з"
     }
 }

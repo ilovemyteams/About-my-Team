@@ -143,7 +143,10 @@
         "websites": "Strona internetowa",
         "showAll": "Pokaż wszystkie",
         "showLess": "Zwiń",
-        "allMembers": "Wszyscy uczestnicy"
+        "allMembers": "Wszyscy uczestnicy",
+        "allTeammates": "Pokaż wszystkie",
+        "more": "więcej",
+        "less": "mniej"
     },
     "Badges": {
         "readTime": "{readTime} min czytania"
@@ -285,7 +288,8 @@
         "breadcrumbItemServices": "Usługi",
         "breadcrumbItemIvents": "Wydarzenia",
         "breadcrumbItemPortfolio": "Wdrożone",
-        "breadcrumbItemTeam": "Zespół"
+        "breadcrumbItemTeam": "Zespół",
+        "breadcrumbItemMember": "Członek"
     },
     "FaqPage": {
         "titleSEO": "Odpowiedzi na najczęściej zadawane pytania w jednym miejscu",
@@ -398,6 +402,23 @@
         "statProjects": "projekty: {projects}",
         "leftProject": "poza projektem",
         "joinUsTitle": "Twoje zdjęcie może być tutaj",
-        "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach"
+        "joinUsText": "Dołącz do zespołu ludzi o wspólnych \nwartościach",
+        "projects": "Projekty",
+        "about": "O mnie",
+        "languages": "Języki",
+        "education": "Edukacja",
+        "certificates": "Certyfikaty",
+        "services": "Główne umiejętności",
+        "commercialExp": "Dośw. handlowe",
+        "year": "{experience, plural, =1 {1 rok} =2 {2 lata} =3 {3 lata} =4 {4 lata} other {# lat}}",
+        "month": "{experience, plural, one {# miesiąc} few {# miesiące} many {# miesięcy} other {# miesiąca}}",
+        "expertise": "Ekspertyza w",
+        "untilNow": "do tej pory",
+        "role": "Rola:",
+        "domain": "Domena:",
+        "skills": "Skille:",
+        "otherMembers": "Inni uczestnicy:",
+        "profExp": "Doświadczenie zawodowe",
+        "teammates": "Współpraca z"
     }
 }
